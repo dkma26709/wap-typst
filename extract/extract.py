@@ -57,6 +57,12 @@ def sha256(path: Path) -> str:
 
 def span_role(span: dict) -> str:
     """Classify a span by font family and size."""
+    # Whitespace carries no meaning from its font, and these books do set the
+    # odd inter-word space in the display face. Classifying such a span as a
+    # field label files it on the wrong side of a `LABEL: value` split and welds
+    # the value's words together.
+    if not span["text"].strip():
+        return "space"
     font, size = span["font"], span["size"]
     if DISPLAY_FONT in font:
         if size >= SIZE_CHAPTER:
@@ -188,6 +194,15 @@ def coalesce(runs: list[tuple[str, str]]) -> list[dict]:
             out[k - 1]["text"] += lead
 
     out = [r for r in out if r["text"].strip() or r["text"] == " "]
+
+    # Two separators can end up adjacent — a synthetic space closing a
+    # positioned gap next to a real one from the source — and would render as a
+    # visible double space.
+    for k, run in enumerate(out):
+        run["text"] = re.sub(r" {2,}", " ", run["text"])
+        if k and out[k - 1]["text"].endswith(" ") and run["text"].startswith(" "):
+            run["text"] = run["text"].lstrip()
+
     if out:
         out[0]["text"] = out[0]["text"].lstrip()
         out[-1]["text"] = out[-1]["text"].rstrip()
