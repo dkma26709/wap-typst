@@ -1,0 +1,5764 @@
+{
+  "source": {
+    "file": "Warhammer - Amazons 3.0.pdf",
+    "pages": 28,
+    "sha256": "230e0095e5b0e9d679b64f4b7aa724dd40d87f7a2d4628a98f73035d705fd865",
+    "toc_entries": 48
+  },
+  "slug": "amazons",
+  "image_dir": "images/amazons",
+  "cover": "img-0024.png",
+  "background": "img-0005.png",
+  "images": {
+    "5": {
+      "file": "img-0005.png",
+      "first_page": 1,
+      "background": true,
+      "width": 1580,
+      "height": 2170
+    },
+    "24": {
+      "file": "img-0024.png",
+      "first_page": 1,
+      "background": false,
+      "width": 628,
+      "height": 788
+    },
+    "110": {
+      "file": "img-0110.png",
+      "first_page": 3,
+      "background": true,
+      "width": 1580,
+      "height": 2170
+    },
+    "131": {
+      "file": "img-0131.png",
+      "first_page": 9,
+      "background": true,
+      "width": 1580,
+      "height": 2170
+    }
+  },
+  "front_matter_pages": [
+    1,
+    2
+  ],
+  "chapters": [
+    {
+      "title": "ARMY SPECIAL RULES",
+      "page": 3,
+      "entries": [],
+      "intro": [
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "This section of the book describes all the different units used in an Amazon army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the "
+            },
+            {
+              "emph": "italic",
+              "text": "Warhammer"
+            },
+            {
+              "emph": "",
+              "text": " rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Amazon units, and these are detailed here."
+            }
+          ],
+          "text": "This section of the book describes all the different units used in an Amazon army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Amazon units, and these are detailed here."
+        },
+        {
+          "type": "namecost",
+          "name": "SACRIFICIAL HUNT",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "All models with this special rule may re-roll the distance they pursue a broken enemy from combat."
+            }
+          ],
+          "text": "All models with this special rule may re-roll the distance they pursue a broken enemy from combat."
+        },
+        {
+          "type": "namecost",
+          "name": "GUERRILLA WARFARE",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "The following applies to models with this special rule:"
+            }
+          ],
+          "text": "The following applies to models with this special rule:"
+        },
+        {
+          "type": "namecost",
+          "name": "Serpent's Strike",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Models with this rule gain the Devastating Charge special rule. In any turn in which they successfully charge an enemy unit in the flank or rear, they may re- roll 1's To Hit and To Wound."
+            }
+          ],
+          "text": "Models with this rule gain the Devastating Charge special rule. In any turn in which they successfully charge an enemy unit in the flank or rear, they may re- roll 1's To Hit and To Wound."
+        },
+        {
+          "type": "namecost",
+          "name": "Predator's Feint",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "In the first round of close combat in which a unit with this special rule does not win the combat or the enemy passes their Break test, it may choose to disengage from combat instead of taking a Break test or making a combat reform. Units affected by Frenzy cannot attempt to disengage from combat."
+            }
+          ],
+          "text": "In the first round of close combat in which a unit with this special rule does not win the combat or the enemy passes their Break test, it may choose to disengage from combat instead of taking a Break test or making a combat reform. Units affected by Frenzy cannot attempt to disengage from combat."
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "If the unit chooses to disengage, it makes a Flee move as if it had broken from combat. However, this does not cause Panic for breaking within 6\" of friendly units. The enemy unit may only choose to pursue if they won the combat."
+            }
+          ],
+          "text": "If the unit chooses to disengage, it makes a Flee move as if it had broken from combat. However, this does not cause Panic for breaking within 6\" of friendly units. The enemy unit may only choose to pursue if they won the combat."
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "In addition, whenever a unit with this rule chooses Flee as a charge reaction or to disengage from combat, it gains +1 to its Flee distance."
+            }
+          ],
+          "text": "In addition, whenever a unit with this rule chooses Flee as a charge reaction or to disengage from combat, it gains +1 to its Flee distance."
+        },
+        {
+          "type": "namecost",
+          "name": "Hunter's Step",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Unless it charged, marched or fled during the Movement phase of its turn, a unit with the Fast Cavalry or Skirmishers special rules armed with missile weapons may move up to its Movement value directly backwards after resolving its missile attacks in its Shooting phase."
+            }
+          ],
+          "text": "Unless it charged, marched or fled during the Movement phase of its turn, a unit with the Fast Cavalry or Skirmishers special rules armed with missile weapons may move up to its Movement value directly backwards after resolving its missile attacks in its Shooting phase."
+        },
+        {
+          "type": "namecost",
+          "name": "KOKA",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Models with this upgrade gain the Frenzy special rule, and they do not lose Frenzy by losing a round of combat."
+            }
+          ],
+          "text": "Models with this upgrade gain the Frenzy special rule, and they do not lose Frenzy by losing a round of combat."
+        },
+        {
+          "type": "namecost",
+          "name": "CLAW OF THE OLD ONES",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Claws of the Old Ones are hand weapons with the following profile:"
+            }
+          ],
+          "text": "Claws of the Old Ones are hand weapons with the following profile:"
+        },
+        {
+          "type": "minitable",
+          "columns": [
+            "Range",
+            "Strength",
+            "Special Rules"
+          ],
+          "row": {
+            "Range": "Combat",
+            "Strength": "+1",
+            "Special Rules": "Armour Piercing (2), Magical Attacks"
+          }
+        },
+        {
+          "type": "namecost",
+          "name": "PAIRED CLAWS OF THE OLD ONES",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Paired Claws of the Old Ones have the following profile:"
+            }
+          ],
+          "text": "Paired Claws of the Old Ones have the following profile:"
+        },
+        {
+          "type": "minitable",
+          "columns": [
+            "Range",
+            "Strength",
+            "Special Rules"
+          ],
+          "row": {
+            "Range": "Combat",
+            "Strength": "+1",
+            "Special Rules": "Armour Piercing (2), Magical Attacks, Requires Two Hands, Parry (6+)"
+          }
+        },
+        {
+          "type": "para",
+          "style": "italic",
+          "runs": [
+            {
+              "emph": "italic",
+              "text": "A model with paired Claws of the Old Ones gains +1 Attack."
+            }
+          ],
+          "text": "A model with paired Claws of the Old Ones gains +1 Attack."
+        },
+        {
+          "type": "namecost",
+          "name": "SUN GAUNTLET",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Sun Gauntlets have the following profile:"
+            }
+          ],
+          "text": "Sun Gauntlets have the following profile:"
+        },
+        {
+          "type": "minitable",
+          "columns": [
+            "Range",
+            "Strength",
+            "Special Rules"
+          ],
+          "row": {
+            "Range": "8/12\"",
+            "Strength": "4",
+            "Special Rules": "Armour Piercing (2), Magical Attacks, Quick to Fire"
+          }
+        },
+        {
+          "type": "namecost",
+          "name": "SUNSTAFF",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "Sunstaffs have the following profile:"
+            }
+          ],
+          "text": "Sunstaffs have the following profile:"
+        },
+        {
+          "type": "minitable",
+          "columns": [
+            "Range",
+            "Strength",
+            "Special Rules"
+          ],
+          "row": {
+            "Range": "18/24\"",
+            "Strength": "4",
+            "Special Rules": "Armour Piercing (2), Magical Attacks, Quick to Fire"
+          }
+        },
+        {
+          "type": "namecost",
+          "name": "AMULET OF THE MOON",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "All missile and close combat attacks targeting a model with an Amulet of the Moon suffer -1 to Hit."
+            }
+          ],
+          "text": "All missile and close combat attacks targeting a model with an Amulet of the Moon suffer -1 to Hit."
+        },
+        {
+          "type": "namecost",
+          "name": "ENCHANTED CHARMS",
+          "cost": ""
+        },
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "",
+              "text": "A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1) special rules."
+            }
+          ],
+          "text": "A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1) special rules."
+        }
+      ]
+    },
+    {
+      "title": "MAGIC ITEMS",
+      "page": 4,
+      "entries": [
+        {
+          "name": "MAGIC WEAPONS",
+          "page": 4,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "STAR SWORD",
+              "cost": "60 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The Star Sword gives the wielder the Always Strikes First, Ignores Armour saves, and Parry (6+) special rules."
+                }
+              ],
+              "text": "The Star Sword gives the wielder the Always Strikes First, Ignores Armour saves, and Parry (6+) special rules."
+            },
+            {
+              "type": "namecost",
+              "name": "ARC CLAWS",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Two hand weapons. Attacks made with the Arc Claws have the Lightning Attacks special rule, and the wielder may reroll any failed To Wound rolls in close combat."
+                }
+              ],
+              "text": "Two hand weapons. Attacks made with the Arc Claws have the Lightning Attacks special rule, and the wielder may reroll any failed To Wound rolls in close combat."
+            },
+            {
+              "type": "namecost",
+              "name": "HAND OF RIGG",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "All attacks made with the Hand of Rigg are resolved at Strength 8 and have the Always Strikes Last special rule."
+                }
+              ],
+              "text": "All attacks made with the Hand of Rigg are resolved at Strength 8 and have the Always Strikes Last special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "BRIGHT STAFF",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Sunstaff. The Bright Staff has a range of 30\" and the Multiple Shots (D6) special rule."
+                }
+              ],
+              "text": "Sunstaff. The Bright Staff has a range of 30\" and the Multiple Shots (D6) special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "JAGUAR MACE",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The wielder gains the Armour Piercing (1) special rule, and enemies attacking the wielder in close combat suffer -1 To Hit."
+                }
+              ],
+              "text": "The wielder gains the Armour Piercing (1) special rule, and enemies attacking the wielder in close combat suffer -1 To Hit."
+            },
+            {
+              "type": "namecost",
+              "name": "SKYPIERCER",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Bow. All shots from Skypiercer are resolved at Strength 5 with the Flaming Attacks special rule. Each shot penetrates ranks like a bolt thrower, but does not suffer any Strength penalties for each rank."
+                }
+              ],
+              "text": "Bow. All shots from Skypiercer are resolved at Strength 5 with the Flaming Attacks special rule. Each shot penetrates ranks like a bolt thrower, but does not suffer any Strength penalties for each rank."
+            },
+            {
+              "type": "namecost",
+              "name": "METEOR SPEAR",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Light lance/spear. Attacks made with the Meteor Spear have the Flaming Attacks special rule. When charging, all attacks made with it have +1 Strength with the Armour Piercing (1) and Multiple Wounds (D3) special rules."
+                }
+              ],
+              "text": "Light lance/spear. Attacks made with the Meteor Spear have the Flaming Attacks special rule. When charging, all attacks made with it have +1 Strength with the Armour Piercing (1) and Multiple Wounds (D3) special rules."
+            },
+            {
+              "type": "namecost",
+              "name": "ROAR OF CHOTEC",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Sun Gauntlet. Shots from the Roar of Chotec have Strength 6. When firing the Roar of Chotec, you may choose to overcharge it, making the shot have Strength 7 and the Multiple Wounds (2) special rule. If you do so, on a To Hit roll of 1 the wielder suffers one automatic hit from the weapon, using the normal profile, even if you can reroll the initial To Hit roll of 1."
+                }
+              ],
+              "text": "Sun Gauntlet. Shots from the Roar of Chotec have Strength 6. When firing the Roar of Chotec, you may choose to overcharge it, making the shot have Strength 7 and the Multiple Wounds (2) special rule. If you do so, on a To Hit roll of 1 the wielder suffers one automatic hit from the weapon, using the normal profile, even if you can reroll the initial To Hit roll of 1."
+            },
+            {
+              "type": "namecost",
+              "name": "MOONBLADE",
+              "cost": "20 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Additional hand weapon. This weapon gives the wielder the Parry (6+) special rule. In addition, for every successful Parry save they make, the model that struck the blow suffers a Strength 4 Hit."
+                }
+              ],
+              "text": "Additional hand weapon. This weapon gives the wielder the Parry (6+) special rule. In addition, for every successful Parry save they make, the model that struck the blow suffers a Strength 4 Hit."
+            }
+          ]
+        },
+        {
+          "name": "MAGIC ARMOUR",
+          "page": 4,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "SHIELD OF FEATHER IRON",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Shield. All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule."
+                }
+              ],
+              "text": "Shield. All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "CRYSTALLINE ARMOUR",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Light armour. For every spell successfully cast upon the bearer or the unit they are with, the Amazon player gains an additional Power Dice or Dispel dice to their current pool."
+                }
+              ],
+              "text": "Light armour. For every spell successfully cast upon the bearer or the unit they are with, the Amazon player gains an additional Power Dice or Dispel dice to their current pool."
+            },
+            {
+              "type": "namecost",
+              "name": "ARMOUR OF THE SWAMP DRAKE",
+              "cost": "10 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Light armour. The wearer gains the Aquatic and Natural Armour (6+) special rule."
+                }
+              ],
+              "text": "Light armour. The wearer gains the Aquatic and Natural Armour (6+) special rule."
+            }
+          ]
+        },
+        {
+          "name": "TALISMANS",
+          "page": 4,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "MAGIC FEATHERS OF NATALINA",
+              "cost": "45 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Enemies must re-roll successful rolls To Hit in close combat and with missile weapons against the wearer. In addition, they gain a Magical Ward (6+)."
+                }
+              ],
+              "text": "Enemies must re-roll successful rolls To Hit in close combat and with missile weapons against the wearer. In addition, they gain a Magical Ward (6+)."
+            },
+            {
+              "type": "namecost",
+              "name": "ASPECT OF AXLBERYN",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Model on foot only. The wearer gains Ethereal special rules, but cannot join any units."
+                }
+              ],
+              "text": "Model on foot only. The wearer gains Ethereal special rules, but cannot join any units."
+            },
+            {
+              "type": "namecost",
+              "name": "SHIELD AMULET",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "For every Wound the wearer suffers, roll a D6. If this number is equal to or higher than the Strength of the Attack, the Wound is nullified."
+                }
+              ],
+              "text": "For every Wound the wearer suffers, roll a D6. If this number is equal to or higher than the Strength of the Attack, the Wound is nullified."
+            },
+            {
+              "type": "namecost",
+              "name": "SIGN OF POTEC",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The wearer has Magic Resistance (1) special rule. Additionally, models with the Daemonic, Undead and Vampiric special rules must reroll successful To Hit rolls made against the wearer in close combat."
+                }
+              ],
+              "text": "The wearer has Magic Resistance (1) special rule. Additionally, models with the Daemonic, Undead and Vampiric special rules must reroll successful To Hit rolls made against the wearer in close combat."
+            },
+            {
+              "type": "namecost",
+              "name": "MIRAGE OF AMAXONIA",
+              "cost": "20 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The wearer gains Dodge (5+) special rule."
+                }
+              ],
+              "text": "The wearer gains Dodge (5+) special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "ITZL'S BEAST-WARD",
+              "cost": "15 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Any unit containing Warbeasts, Monstrous Beasts, Monsters, Cavalry, Monstrous Cavalry and Chariots that wants to declare a charge at the character bearing this amulet or their unit must first pass a Leadership test. If failed, the unit may choose a different target for their charge or to not make a charge."
+                }
+              ],
+              "text": "Any unit containing Warbeasts, Monstrous Beasts, Monsters, Cavalry, Monstrous Cavalry and Chariots that wants to declare a charge at the character bearing this amulet or their unit must first pass a Leadership test. If failed, the unit may choose a different target for their charge or to not make a charge."
+            }
+          ]
+        },
+        {
+          "name": "ARCANE ITEMS",
+          "page": 5,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "BRIGHT WAND OF XOLOC",
+              "cost": "35 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Bound Spell (Level 3, cast on 10+). The Bright Wand of Xoloc contains a "
+                },
+                {
+                  "emph": "bold",
+                  "text": "magic missile"
+                },
+                {
+                  "emph": "",
+                  "text": " with a range of 24\" that is resolved like a hit from a bolt thrower with the Flaming Attacks special rule."
+                }
+              ],
+              "text": "Bound Spell (Level 3, cast on 10+). The Bright Wand of Xoloc contains a magic missile with a range of 24\" that is resolved like a hit from a bolt thrower with the Flaming Attacks special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "LOCKET OF RIGG",
+              "cost": "35 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Bound Spell. This item contains a random spell from the Lore of Light (Level 1-2). At the start of the game, roll a D6 to determine which spell the result correspond to – you may replace the rolled spell with "
+                },
+                {
+                  "emph": "italic",
+                  "text": "Shem's Burning Gaze"
+                },
+                {
+                  "emph": "",
+                  "text": " if you wish."
+                }
+              ],
+              "text": "Bound Spell. This item contains a random spell from the Lore of Light (Level 1-2). At the start of the game, roll a D6 to determine which spell the result correspond to – you may replace the rolled spell with Shem's Burning Gaze if you wish."
+            },
+            {
+              "type": "namecost",
+              "name": "THE COBRA STAFF",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Bound Spell (Level 2, cast on 7+). The Cobra Staff contains a "
+                },
+                {
+                  "emph": "bold",
+                  "text": "magic missile"
+                },
+                {
+                  "emph": "",
+                  "text": " with a range of 18\" that causes 2D6 hits. These hits always Wound on a 4+ with the Armour Piercing (2) special rule."
+                }
+              ],
+              "text": "Bound Spell (Level 2, cast on 7+). The Cobra Staff contains a magic missile with a range of 18\" that causes 2D6 hits. These hits always Wound on a 4+ with the Armour Piercing (2) special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "TIARA OF SERENA",
+              "cost": "20 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer may attempt to cast the same spell twice in each Magic phase if the first attempt was either unsuccessful or dispelled."
+                }
+              ],
+              "text": "The bearer may attempt to cast the same spell twice in each Magic phase if the first attempt was either unsuccessful or dispelled."
+            }
+          ]
+        },
+        {
+          "name": "ENCHANTED ITEMS",
+          "page": 5,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "ELIXIR OF LIFE",
+              "cost": "50 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer of the Elixir of Life gains the Regeneration (6+) special rule, and automatically heals one Wound suffered earlier in the game at the start of each turn."
+                }
+              ],
+              "text": "The bearer of the Elixir of Life gains the Regeneration (6+) special rule, and automatically heals one Wound suffered earlier in the game at the start of each turn."
+            },
+            {
+              "type": "namecost",
+              "name": "FIERY WINGS",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Model on foot only. The wearer has the Fly (10) and Impact Hits (1) special rules."
+                }
+              ],
+              "text": "Model on foot only. The wearer has the Fly (10) and Impact Hits (1) special rules."
+            },
+            {
+              "type": "namecost",
+              "name": "PLAQUE OF THE OLD ONES",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer becomes a Level 1 Wizard who can use any of the eight Winds of Magic from the "
+                },
+                {
+                  "emph": "italic",
+                  "text": "Warhammer Rulebook"
+                },
+                {
+                  "emph": "",
+                  "text": ". However, they do not get any bonus to casting or dispelling and cannot channel dice."
+                }
+              ],
+              "text": "The bearer becomes a Level 1 Wizard who can use any of the eight Winds of Magic from the Warhammer Rulebook. However, they do not get any bonus to casting or dispelling and cannot channel dice."
+            },
+            {
+              "type": "namecost",
+              "name": "BLUE STUMP BREW",
+              "cost": "20 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "One use only. The brew may be drunk at any time. Roll a D6; this is the number of points the character may increase her characteristics by. She may freely divide them between several different characteristics if she wishes. The effects of the brew last until the start of the character’s next turn."
+                }
+              ],
+              "text": "One use only. The brew may be drunk at any time. Roll a D6; this is the number of points the character may increase her characteristics by. She may freely divide them between several different characteristics if she wishes. The effects of the brew last until the start of the character’s next turn."
+            },
+            {
+              "type": "namecost",
+              "name": "EYE OF TZCALLI",
+              "cost": "20 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer gains the Sniper special rule."
+                }
+              ],
+              "text": "The bearer gains the Sniper special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "EMERALD OF THE MOON",
+              "cost": "15 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer gains the Armour Piercing (1) and Poisoned Attacks special rules."
+                }
+              ],
+              "text": "The bearer gains the Armour Piercing (1) and Poisoned Attacks special rules."
+            },
+            {
+              "type": "namecost",
+              "name": "AUGUR SKULL",
+              "cost": "10 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Enemy units deploying with the Scout special rule cannot be set up closer than 18\" away from the bearer of this item."
+                }
+              ],
+              "text": "Enemy units deploying with the Scout special rule cannot be set up closer than 18\" away from the bearer of this item."
+            },
+            {
+              "type": "namecost",
+              "name": "DEATH WHISTLE",
+              "cost": "10 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Any enemy unit that is charged by the bearer of this item must take a Terror test."
+                }
+              ],
+              "text": "Any enemy unit that is charged by the bearer of this item must take a Terror test."
+            },
+            {
+              "type": "namecost",
+              "name": "STATUE OF SOTEK",
+              "cost": "10 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "All Skink units in base contact with the bearer are subject to the Always Strikes Last and Hatred special rules."
+                }
+              ],
+              "text": "All Skink units in base contact with the bearer are subject to the Always Strikes Last and Hatred special rules."
+            },
+            {
+              "type": "namecost",
+              "name": "WARRIOR'S SUN RING",
+              "cost": "10 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The bearer can reroll one failed To Wound roll in each of their combat phases."
+                }
+              ],
+              "text": "The bearer can reroll one failed To Wound roll in each of their combat phases."
+            },
+            {
+              "type": "namecost",
+              "name": "HUANCHI'S JAGUAR HEADDRESS",
+              "cost": "5 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "Infantry or Cavalry only. The wearer gains the Ambushers special rule."
+                }
+              ],
+              "text": "Infantry or Cavalry only. The wearer gains the Ambushers special rule."
+            }
+          ]
+        },
+        {
+          "name": "MAGIC STANDARDS",
+          "page": 5,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "BANNER OF THE FIRST QUEEN",
+              "cost": "55 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The range of the bearer’s Hold Your Ground special rule is increased by 6\". Additionally, the bearer of this standard and any unit accompanying them has the Strider special rule and are Stubborn in the first round of close combat."
+                }
+              ],
+              "text": "The range of the bearer’s Hold Your Ground special rule is increased by 6\". Additionally, the bearer of this standard and any unit accompanying them has the Strider special rule and are Stubborn in the first round of close combat."
+            },
+            {
+              "type": "namecost",
+              "name": "JAGUAR STANDARD",
+              "cost": "45 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The unit carrying the Jaguar Standard gain the Strength Bonus (1) special rule and have the Cold-blooded special rule when taking Break Tests."
+                }
+              ],
+              "text": "The unit carrying the Jaguar Standard gain the Strength Bonus (1) special rule and have the Cold-blooded special rule when taking Break Tests."
+            },
+            {
+              "type": "namecost",
+              "name": "EAGLE BANNER",
+              "cost": "40 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The unit carrying this standard gains the Swiftstride special rule and may reroll any 1's for their Charge distance roll."
+                }
+              ],
+              "text": "The unit carrying this standard gains the Swiftstride special rule and may reroll any 1's for their Charge distance roll."
+            },
+            {
+              "type": "namecost",
+              "name": "PIRANHA TOTEM",
+              "cost": "30 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The unit carrying this standard gains the Killing Blow special rule."
+                }
+              ],
+              "text": "The unit carrying this standard gains the Killing Blow special rule."
+            },
+            {
+              "type": "namecost",
+              "name": "PENNANT OF SERENA",
+              "cost": "25 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "The unit carrying this standard automatically passes Leadership tests to disengage from combat when using Guerrilla Warfare, and may choose to move normally in the Remaining Moves phase after rallying, even if they are not Skirmishers or Fast Cavalry."
+                }
+              ],
+              "text": "The unit carrying this standard automatically passes Leadership tests to disengage from combat when using Guerrilla Warfare, and may choose to move normally in the Remaining Moves phase after rallying, even if they are not Skirmishers or Fast Cavalry."
+            },
+            {
+              "type": "namecost",
+              "name": "TAPESTRY OF INHAMEX",
+              "cost": "15 points"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "If a friendly unit within 6\" is destroyed or involuntarily flees, the unit carrying this standard may re-roll 1's when rolling To Hit and To Wound in their next close combat phase."
+                }
+              ],
+              "text": "If a friendly unit within 6\" is destroyed or involuntarily flees, the unit carrying this standard may re-roll 1's when rolling To Hit and To Wound in their next close combat phase."
+            }
+          ]
+        }
+      ],
+      "intro": [
+        {
+          "type": "para",
+          "style": "body",
+          "runs": [
+            {
+              "emph": "bold",
+              "text": "This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook."
+            }
+          ],
+          "text": "This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook."
+        }
+      ]
+    },
+    {
+      "title": "CHARACTERS",
+      "page": 6,
+      "entries": [
+        {
+          "name": "MATRIACHS",
+          "page": 6,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Matriarch",
+                  "values": {
+                    "M": "4",
+                    "WS": "6",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "3",
+                    "I": "6",
+                    "A": "4",
+                    "Ld": "9",
+                    "Points": "90"
+                  }
+                },
+                {
+                  "name": "Mistress",
+                  "values": {
+                    "M": "4",
+                    "WS": "5",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "2",
+                    "I": "5",
+                    "A": "3",
+                    "Ld": "8",
+                    "Points": "50"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Spear +3 points"
+                        }
+                      ],
+                      "text": "Spear +3 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Additional hand weapon +5 points"
+                        }
+                      ],
+                      "text": "Additional hand weapon +5 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Light lance +5 points"
+                        }
+                      ],
+                      "text": "Light lance +5 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Polearm +10 points"
+                        }
+                      ],
+                      "text": "Polearm +10 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Great weapon +15 points"
+                        }
+                      ],
+                      "text": "Great weapon +15 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Claw of the Old Ones +25 points"
+                        }
+                      ],
+                      "text": "Claw of the Old Ones +25 points"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Shortbow +4 points"
+                        }
+                      ],
+                      "text": "Shortbow +4 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Javelins +5 points"
+                        }
+                      ],
+                      "text": "Javelins +5 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sun Gauntlet +10 points"
+                        }
+                      ],
+                      "text": "Sun Gauntlet +10 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sunstaff +10 points"
+                        }
+                      ],
+                      "text": "Sunstaff +10 points"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take light armour +3 points"
+                    }
+                  ],
+                  "text": "May take light armour +3 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take a shield +5 points"
+                    }
+                  ],
+                  "text": "May take a shield +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take an Amulet of the Moon +25 points"
+                    }
+                  ],
+                  "text": "May take an Amulet of the Moon +25 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +15 points"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +15 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +10 points"
+                    }
+                  ],
+                  "text": "May take Koka +10 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May be mounted on one of the following:"
+                    }
+                  ],
+                  "text": "May be mounted on one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Jaguar +15 points"
+                        }
+                      ],
+                      "text": "Jaguar +15 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Culchan +20 points"
+                        }
+                      ],
+                      "text": "Culchan +20 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Cold One +25 points"
+                        }
+                      ],
+                      "text": "Cold One +25 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Terradon +35 points"
+                        }
+                      ],
+                      "text": "Terradon +35 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Stegadon (Matriarch only, replacing one of the crew) +215 points"
+                        }
+                      ],
+                      "text": "Stegadon (Matriarch only, replacing one of the crew) +215 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Great Wyrm (Matriarch only) +260 points"
+                        }
+                      ],
+                      "text": "Great Wyrm (Matriarch only) +260 points"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "One Mistress may carry the Battle Standard +25 points"
+                    }
+                  ],
+                  "text": "One Mistress may carry the Battle Standard +25 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "A Mistress may take Magic Items up to a total of 50 points"
+                    }
+                  ],
+                  "text": "A Mistress may take Magic Items up to a total of 50 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "A Matriarch may take Magic Items up to a total of 100 points"
+                    }
+                  ],
+                  "text": "A Matriarch may take Magic Items up to a total of 100 points",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "NOTES",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have."
+                    }
+                  ],
+                  "text": "The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SERPENT PRIESTESSES",
+          "page": 7,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Serpent High Priestess",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "3",
+                    "I": "4",
+                    "A": "2",
+                    "Ld": "8",
+                    "Points": "160"
+                  }
+                },
+                {
+                  "name": "Serpent Priestess",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "2",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "65"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC",
+              "value": "A Serpent Priestess is a Level 1 Wizard. A Serpent High Priestess is a Level 3 Wizard. They use one of the following Lores of Magic:"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Beasts"
+                    }
+                  ],
+                  "text": "Beasts",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Death"
+                    }
+                  ],
+                  "text": "Death",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Heavens"
+                    }
+                  ],
+                  "text": "Heavens",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Fire"
+                    }
+                  ],
+                  "text": "Fire",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Life"
+                    }
+                  ],
+                  "text": "Life",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Light"
+                    }
+                  ],
+                  "text": "Light",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Metal"
+                    }
+                  ],
+                  "text": "Metal",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Shadow"
+                    }
+                  ],
+                  "text": "Shadow",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take an additional Wizard Level +35 points"
+                    }
+                  ],
+                  "text": "May take an additional Wizard Level +35 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take a Claw of the Old Ones +10 points"
+                    }
+                  ],
+                  "text": "May take a Claw of the Old Ones +10 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sun Gauntlet +8 points"
+                        }
+                      ],
+                      "text": "Sun Gauntlet +8 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sunstaff +8 points"
+                        }
+                      ],
+                      "text": "Sunstaff +8 points"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take an Amulet of the Moon +25 points"
+                    }
+                  ],
+                  "text": "May take an Amulet of the Moon +25 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +15 points"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +15 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +5 points"
+                    }
+                  ],
+                  "text": "May take Koka +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May be mounted on one of the following:"
+                    }
+                  ],
+                  "text": "May be mounted on one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Jaguar +15 points"
+                        }
+                      ],
+                      "text": "Jaguar +15 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Culchan +20 points"
+                        }
+                      ],
+                      "text": "Culchan +20 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Cold One +25 points"
+                        }
+                      ],
+                      "text": "Cold One +25 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Terradon +35 points"
+                        }
+                      ],
+                      "text": "Terradon +35 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Stegadon (High Priestess only, replacing one of the crew) +215 points"
+                        }
+                      ],
+                      "text": "Stegadon (High Priestess only, replacing one of the crew) +215 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Great Wyrm (High Priestess only) +260 points"
+                        }
+                      ],
+                      "text": "Great Wyrm (High Priestess only) +260 points"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "A Serpent Priestess may take Magic Items up to a total of 50 points"
+                    }
+                  ],
+                  "text": "A Serpent Priestess may take Magic Items up to a total of 50 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "A Serpent High Priestess may take Magic Items up to a total of 100 points"
+                    }
+                  ],
+                  "text": "A Serpent High Priestess may take Magic Items up to a total of 100 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CHARACTER MOUNTS",
+      "page": 8,
+      "entries": [
+        {
+          "name": "JAGUAR",
+          "page": 8,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Jaguar",
+                  "values": {
+                    "M": "9",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "5",
+                    "Points": "-"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Beast (Feline)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Mighty Blow (1)"
+            }
+          ]
+        },
+        {
+          "name": "CULCHAN",
+          "page": 8,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Culchan",
+                  "values": {
+                    "M": "8",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "5",
+                    "Points": "-"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Beast (Phorusrhacid)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Armour Piercing (1), Forest Strider"
+            }
+          ]
+        },
+        {
+          "name": "COLD ONE",
+          "page": 8,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Cold One",
+                  "values": {
+                    "M": "7",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "4",
+                    "W": "1",
+                    "I": "2",
+                    "A": "2",
+                    "Ld": "3",
+                    "Points": "-"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Beast (Saurian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50 or 30x60"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fear, Forest Strider, Natural Armour (6+), Stupidity"
+            }
+          ]
+        },
+        {
+          "name": "TERRADON",
+          "page": 9,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Terradon",
+                  "values": {
+                    "M": "2",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "3",
+                    "W": "2",
+                    "I": "2",
+                    "A": "1",
+                    "Ld": "3",
+                    "Points": "-"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Beast (Saurian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fear, Fly (9), Forest Strider"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Drop Rocks:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks."
+                    }
+                  ],
+                  "text": "Drop Rocks: Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GREAT WYRM",
+          "page": 9,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Great Wyrm",
+                  "values": {
+                    "M": "6",
+                    "WS": "4",
+                    "BS": "0",
+                    "S": "6",
+                    "T": "6",
+                    "W": "6",
+                    "I": "3",
+                    "A": "5",
+                    "Ld": "6",
+                    "Points": "-"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monster (Ophidian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "50x100 or 100x150"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fly (7), Natural Armour (4+)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CORE UNITS",
+      "page": 10,
+      "entries": [
+        {
+          "name": "WARRIORS",
+          "page": 10,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Warrior",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "4"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "15-45"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace shields with additional hand weapons free"
+                        }
+                      ],
+                      "text": "Replace shields with additional hand weapons free"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Spears +0.5 point/model"
+                        }
+                      ],
+                      "text": "Spears +0.5 point/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Warrior to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Warrior to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Warrior to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Warrior to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Warrior to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Warrior to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 25 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 25 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ARCHERS",
+          "page": 10,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Archer",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "5"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, shortbow"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Archer to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Archer to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Archer to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Archer to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Archer to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Archer to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 25 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 25 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SKIRMISHERS",
+          "page": 11,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Skirmisher",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, javelins"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace javelins with slings free"
+                        }
+                      ],
+                      "text": "Replace javelins with slings free"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace javelins with blowpipes free"
+                        }
+                      ],
+                      "text": "Replace javelins with blowpipes free"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Upgrade javelins to have Poisoned Attacks +2 points/model"
+                        }
+                      ],
+                      "text": "Upgrade javelins to have Poisoned Attacks +2 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take shields (unless armed with blowpipes) +1 point/model"
+                    }
+                  ],
+                  "text": "May take shields (unless armed with blowpipes) +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Skirmisher to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Skirmisher to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Skirmisher to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Skirmisher to a Musician +5 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HUNTRESSES",
+          "page": 12,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Huntress",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "13"
+                  }
+                },
+                {
+                  "name": "Jaguar",
+                  "values": {
+                    "M": "9",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "5"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "5-15"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Cavalry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "MOUNT",
+              "value": "Jaguar (Feline)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Light lance"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fast Cavalry, Forest Strider, Guerrilla Warfare, Mighty Blow (1) (Jaguar only), Sacrificial"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "bold",
+                  "text": "Hunt"
+                }
+              ],
+              "text": "Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May replace light lances with one of the following:"
+                    }
+                  ],
+                  "text": "May replace light lances with one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Shortbows free"
+                        }
+                      ],
+                      "text": "Shortbows free"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Javelins +1 point/model"
+                        }
+                      ],
+                      "text": "Javelins +1 point/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take shields (unless armed with shortbows) +1 point/model"
+                    }
+                  ],
+                  "text": "May take shields (unless armed with shortbows) +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Huntress to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Huntress to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Huntress to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Huntress to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Huntress to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Huntress to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 25 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 25 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "JAGUAR HUNTING PACK",
+          "page": 12,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Jaguar",
+                  "values": {
+                    "M": "9",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "5",
+                    "Points": "7"
+                  }
+                },
+                {
+                  "name": "Beastmistress",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "10"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "5-15"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Beast (Feline)"
+            },
+            {
+              "type": "field",
+              "label": "HANDLER",
+              "value": "Beastmistress (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x25 or 25x50 (Jaguar), 20x20 or 25x25 (Beastmistress)"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Two hand weapons (Beastmistress only)"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare (Beastmistress only), Mighty Blow (1), Mixed Unit, Skirmishers"
+            },
+            {
+              "type": "field",
+              "label": "NOTES",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "One Beastmistress must be included for every five Jaguars in the unit."
+                    }
+                  ],
+                  "text": "One Beastmistress must be included for every five Jaguars in the unit.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SNAKE SWARMS",
+          "page": 13,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Snake Swarm",
+                  "values": {
+                    "M": "5",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "2",
+                    "T": "2",
+                    "W": "6",
+                    "I": "1",
+                    "A": "6",
+                    "Ld": "3",
+                    "Points": "30"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "3-9"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Swarm (Ophidian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Aquatic, Cold-Blooded, Poisoned Attacks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SPECIAL UNITS",
+      "page": 14,
+      "entries": [
+        {
+          "name": "PIRANHA WARRIORS",
+          "page": 14,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Piranha Warrior",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "8"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, javelins"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Upgrade javelins to have Poisoned Attacks +2 points/model"
+                        }
+                      ],
+                      "text": "Upgrade javelins to have Poisoned Attacks +2 points/model"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace javelins with Sun Gauntlets +2 points/model"
+                        }
+                      ],
+                      "text": "Replace javelins with Sun Gauntlets +2 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take shields +1 point/model"
+                    }
+                  ],
+                  "text": "May take shields +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Piranha Warrior to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Piranha Warrior to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Piranha Warrior to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Piranha Warrior to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Piranha Warrior to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Piranha Warrior to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EAGLE WARRIORS",
+          "page": 15,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Eagle Warrior",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "8"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Spear, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt, Vanguard"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May replace spears with Sunstaffs +6 points/model"
+                    }
+                  ],
+                  "text": "May replace spears with Sunstaffs +6 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +1 point/model"
+                    }
+                  ],
+                  "text": "May take Koka +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Eagle Warrior to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Eagle Warrior to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Eagle Warrior to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Eagle Warrior to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Eagle Warrior to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Eagle Warrior to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "JAGUAR WARRIORS",
+          "page": 16,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Jaguar Warrior",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "7"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Ambushers, Forest Strider, Guerrilla Warfare, Mighty Blow (1), Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Claws of the Old Ones +3 points/model"
+                        }
+                      ],
+                      "text": "Claws of the Old Ones +3 points/model"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace shields with paired Claws of the Old Ones +3 points/model"
+                        }
+                      ],
+                      "text": "Replace shields with paired Claws of the Old Ones +3 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +1 point/model"
+                    }
+                  ],
+                  "text": "May take Koka +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Jaguar Warrior to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Jaguar Warrior to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Jaguar Warrior to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Jaguar Warrior to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Jaguar Warrior to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Jaguar Warrior to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PYTHON WARRIORS",
+          "page": 16,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Python Warrior",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "12"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "5-15"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, shortbow"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Poisoned Attacks, Rapid Fire, Sacrificial Hunt, Scouts, Skirmishers"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take additional hand weapons +1 point/model"
+                    }
+                  ],
+                  "text": "May take additional hand weapons +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Python Warrior to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Python Warrior to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Python Warrior to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Python Warrior to a Musician +5 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CULCHAN RIDERS",
+          "page": 17,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Culchan Rider",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "17"
+                  }
+                },
+                {
+                  "name": "Culchan",
+                  "values": {
+                    "M": "8",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "5"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "5-15"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Cavalry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "MOUNT",
+              "value": "Culchan (Phorusrhacid)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Light lance, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Armour Piercing (1) (Culchan only), Fast Cavalry, Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace light lances & shields with shortbows free"
+                        }
+                      ],
+                      "text": "Replace light lances & shields with shortbows free"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Replace light lances with javelins +2 points/model"
+                        }
+                      ],
+                      "text": "Replace light lances with javelins +2 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Culchan Rider to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Culchan Rider to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Culchan Rider to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Culchan Rider to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Culchan Rider to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Culchan Rider to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "COLD ONE RIDERS",
+          "page": 18,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Noblewoman",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "20"
+                  }
+                },
+                {
+                  "name": "Cold One",
+                  "values": {
+                    "M": "7",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "4",
+                    "W": "1",
+                    "I": "2",
+                    "A": "2",
+                    "Ld": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "5-15"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Cavalry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "MOUNT",
+              "value": "Cold One (Saurian)"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fear, Forest Strider, Guerrilla Warfare, Natural Armour (6+), Sacrificial Hunt, Stupidity"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take light lances +1 point/model"
+                    }
+                  ],
+                  "text": "May take light lances +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take light armour +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take light armour +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +1 point/model"
+                    }
+                  ],
+                  "text": "May take Koka +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Noblewoman to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Noblewoman to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Noblewoman to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Noblewoman to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Noblewoman to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Noblewoman to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TERRADON RIDERS",
+          "page": 19,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Terradon Rider",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "7",
+                    "Points": "27"
+                  }
+                },
+                {
+                  "name": "Terradon",
+                  "values": {
+                    "M": "2",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "3",
+                    "W": "2",
+                    "I": "2",
+                    "A": "1",
+                    "Ld": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "3-9"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Cavalry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "MOUNT",
+              "value": "Terradon (Saurian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapons"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fast Cavalry, Fear, Fly (9), Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Drop Rocks:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks."
+                    }
+                  ],
+                  "text": "Drop Rocks: Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Light lances +1 point/model"
+                        }
+                      ],
+                      "text": "Light lances +1 point/model"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Shortbows +1 point/model"
+                        }
+                      ],
+                      "text": "Shortbows +1 point/model"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Javelins +2 points/model"
+                        }
+                      ],
+                      "text": "Javelins +2 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take shields +2 points/model"
+                    }
+                  ],
+                  "text": "May take shields +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Terradon Rider to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Terradon Rider to a Leader +5 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GOROLS",
+          "page": 19,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Gorol",
+                  "values": {
+                    "M": "6",
+                    "WS": "4",
+                    "BS": "0",
+                    "S": "5",
+                    "T": "4",
+                    "W": "3",
+                    "I": "4",
+                    "A": "3",
+                    "Ld": "6",
+                    "Points": "30"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "3-9"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monstrous Infantry (Hominid)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take great weapons +6 points/model"
+                    }
+                  ],
+                  "text": "May take great weapons +6 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take light armour +3 points/model"
+                    }
+                  ],
+                  "text": "May take light armour +3 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Gorol to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Gorol to a Leader +5 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RARE UNITS",
+      "page": 20,
+      "entries": [
+        {
+          "name": "SERPENT GUARD",
+          "page": 20,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Serpent Guard",
+                  "values": {
+                    "M": "4",
+                    "WS": "5",
+                    "BS": "4",
+                    "S": "4",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "1",
+                    "Ld": "8",
+                    "Points": "12"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "10-30"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Polearm, light armour, shield"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Stubborn"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May replace polearms with Claws of the Old Ones +2 points/model"
+                    }
+                  ],
+                  "text": "May replace polearms with Claws of the Old Ones +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose one of the following:"
+                    }
+                  ],
+                  "text": "May choose one of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sun Gauntlets +3 points/model"
+                        }
+                      ],
+                      "text": "Sun Gauntlets +3 points/model"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sunstaffs +5 points/model"
+                        }
+                      ],
+                      "text": "Sunstaffs +5 points/model"
+                    }
+                  ]
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Enchanted Charms +1.5 points/model"
+                    }
+                  ],
+                  "text": "May take Enchanted Charms +1.5 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Amulets of the Moon +2 points/model"
+                    }
+                  ],
+                  "text": "May take Amulets of the Moon +2 points/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take Koka +1 point/model"
+                    }
+                  ],
+                  "text": "May take Koka +1 point/model",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Serpent Guard to a Leader +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Serpent Guard to a Leader +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Serpent Guard to a Musician +5 points"
+                    }
+                  ],
+                  "text": "May upgrade one Serpent Guard to a Musician +5 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May upgrade one Serpent Guard to a Standard Bearer +10 points"
+                    }
+                  ],
+                  "text": "May upgrade one Serpent Guard to a Standard Bearer +10 points",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "May take a Magic Standard worth up to 50 points"
+                        }
+                      ],
+                      "text": "May take a Magic Standard worth up to 50 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BOLT THROWER",
+          "page": 21,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Bolt Thrower",
+                  "values": {
+                    "M": "-",
+                    "WS": "-",
+                    "BS": "-",
+                    "S": "-",
+                    "T": "7",
+                    "W": "-",
+                    "I": "-",
+                    "A": "-",
+                    "Ld": "-",
+                    "Points": "35"
+                  }
+                },
+                {
+                  "name": "Crew",
+                  "values": {
+                    "M": "4",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "3",
+                    "W": "1",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "7"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "War Machine"
+            },
+            {
+              "type": "field",
+              "label": "CREW",
+              "value": "3 Crew (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "50x50 (Bolt Thrower), 20x20 or 25x25 (Crew)"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, bolt thrower"
+            },
+            {
+              "type": "field",
+              "label": "NOTES",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "You may take 1-2 Bolt Throwers as a single Rare choice."
+                    }
+                  ],
+                  "text": "You may take 1-2 Bolt Throwers as a single Rare choice.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ANCIENT SENTINELS",
+          "page": 21,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Ancient Sentinel",
+                  "values": {
+                    "M": "6",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "5",
+                    "T": "5",
+                    "W": "3",
+                    "I": "1",
+                    "A": "3",
+                    "Ld": "10",
+                    "Points": "50"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "UNIT SIZE",
+              "value": "3+"
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monstrous Infantry (Animated Construct)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Animated Construct, Magical Attacks, Magic Resistance (2), Natural Armour (4+)"
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take great weapons +6 points/model"
+                    }
+                  ],
+                  "text": "May take great weapons +6 points/model",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "STEGADON",
+          "page": 22,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Stegadon",
+                  "values": {
+                    "M": "6",
+                    "WS": "3",
+                    "BS": "0",
+                    "S": "5",
+                    "T": "6",
+                    "W": "5",
+                    "I": "2",
+                    "A": "4",
+                    "Ld": "6",
+                    "Points": "215"
+                  }
+                },
+                {
+                  "name": "Crew",
+                  "values": {
+                    "M": "-",
+                    "WS": "3",
+                    "BS": "3",
+                    "S": "3",
+                    "T": "-",
+                    "W": "-",
+                    "I": "3",
+                    "A": "1",
+                    "Ld": "8"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monster (Saurian)"
+            },
+            {
+              "type": "field",
+              "label": "CREW",
+              "value": "3 Crew (Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "50x100 or 60x100"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Giant Bow (Stegadon only), javelins (Crew only)"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Giant Bow:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Instead of firing another missile weapon in the Shooting phase, one of the Crew may fire the giant bow. This is a bolt thrower with the following profile:"
+                    }
+                  ],
+                  "text": "Giant Bow: Instead of firing another missile weapon in the Shooting phase, one of the Crew may fire the giant bow. This is a bolt thrower with the following profile:",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "minitable",
+              "columns": [
+                "Range",
+                "Strength",
+                "Special Rules"
+              ],
+              "row": {
+                "Range": "28/42\"",
+                "Strength": "5",
+                "Special Rules": "Cumbersome, Multiple Wounds (D3)"
+              }
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Cold-Blooded, Sacrificial Hunt, Immunity (Psychology), Impact Hits (D6+1), Natural"
+            },
+            {
+              "type": "para",
+              "style": "body",
+              "runs": [
+                {
+                  "emph": "bold",
+                  "text": "Armour (4+), Stubborn"
+                }
+              ],
+              "text": "Armour (4+), Stubborn"
+            },
+            {
+              "type": "field",
+              "label": "UPGRADES",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Gyroscope of Eternal Radiance:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Arcane Item. Bound spell (Level 3, cast on 9+). This is an "
+                    },
+                    {
+                      "emph": "bold",
+                      "text": "augment"
+                    },
+                    {
+                      "emph": "",
+                      "text": " spell with a range of 12\". The target unit immediately makes a move with the Fly (10) special rule as if it were the Remaining Moves sub-phase."
+                    }
+                  ],
+                  "text": "Gyroscope of Eternal Radiance: Arcane Item. Bound spell (Level 3, cast on 9+). This is an augment spell with a range of 12\". The target unit immediately makes a move with the Fly (10) special rule as if it were the Remaining Moves sub-phase.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Sharpened Horns:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " The Stegadon's its Impact Hits gains the Multiple Wounds (D3) special rule."
+                    }
+                  ],
+                  "text": "Sharpened Horns: The Stegadon's its Impact Hits gains the Multiple Wounds (D3) special rule.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Unstoppable Stampede:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " The Stegadon gains the Devastating Charge special rule."
+                    }
+                  ],
+                  "text": "Unstoppable Stampede: The Stegadon gains the Devastating Charge special rule.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May replace javelins with bows free"
+                    }
+                  ],
+                  "text": "May replace javelins with bows free",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May replace giant bow with a Gyroscope of Eternal Radiance +20 points"
+                    }
+                  ],
+                  "text": "May replace giant bow with a Gyroscope of Eternal Radiance +20 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May choose any of the following:"
+                    }
+                  ],
+                  "text": "May choose any of the following:",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Unstoppable Stampede +10 points"
+                        }
+                      ],
+                      "text": "Unstoppable Stampede +10 points"
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "",
+                          "text": "Sharpened Horns +20 points"
+                        }
+                      ],
+                      "text": "Sharpened Horns +20 points"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AMAXON SWAMP PYTHON",
+          "page": 23,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Amaxon Swamp Python",
+                  "values": {
+                    "M": "8",
+                    "WS": "4",
+                    "BS": "0",
+                    "S": "6",
+                    "T": "6",
+                    "W": "6",
+                    "I": "4",
+                    "A": "5",
+                    "Ld": "7",
+                    "Points": "210"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monster (Ophidian)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "50x100, 60x100 or 100x100"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Aquatic, Cold-Blooded, Natural Armour (4+)"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Constrict:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " This is a special attack that can be used instead of Stomp (even against units that are normally immune to Stomp). Choose one model in base contact. The model must pass a Toughness test or suffer D6 Wounds which Ignores Armour saves."
+                    }
+                  ],
+                  "text": "Constrict: This is a special attack that can be used instead of Stomp (even against units that are normally immune to Stomp). Choose one model in base contact. The model must pass a Toughness test or suffer D6 Wounds which Ignores Armour saves.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AVATAR OF RIGG",
+          "page": 23,
+          "blocks": [
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Avatar of Rigg",
+                  "values": {
+                    "M": "6",
+                    "WS": "6",
+                    "BS": "5",
+                    "S": "5",
+                    "T": "5",
+                    "W": "4",
+                    "I": "6",
+                    "A": "5",
+                    "Ld": "10",
+                    "Points": "260"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Monstrous Infantry (Deity)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "40x40 or 50x50"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Magical Attacks, Magical Ward (4+), Terror, Unstable"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Blessings of Rigg:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " At the start of the Amazon turn, the Avatar of Rigg may choose one of the following Blessings to bestow. Each blessing affects all friendly Human units within 12\", and lasts until the start of the next Amazon turn."
+                    }
+                  ],
+                  "text": "Blessings of Rigg: At the start of the Amazon turn, the Avatar of Rigg may choose one of the following Blessings to bestow. Each blessing affects all friendly Human units within 12\", and lasts until the start of the next Amazon turn.",
+                  "sub": [
+                    {
+                      "runs": [
+                        {
+                          "emph": "bold",
+                          "text": "Blood:"
+                        },
+                        {
+                          "emph": "",
+                          "text": " The units gain the Hatred special rule."
+                        }
+                      ],
+                      "text": "Blood: The units gain the Hatred special rule."
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "bold",
+                          "text": "Violent Death:"
+                        },
+                        {
+                          "emph": "",
+                          "text": " The units gain the Killing blow special rule."
+                        }
+                      ],
+                      "text": "Violent Death: The units gain the Killing blow special rule."
+                    },
+                    {
+                      "runs": [
+                        {
+                          "emph": "bold",
+                          "text": "Warfare:"
+                        },
+                        {
+                          "emph": "",
+                          "text": " The units may re-roll all failed charge distances."
+                        }
+                      ],
+                      "text": "Warfare: The units may re-roll all failed charge distances."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "NOTES",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "You may only have one Avatar of Rigg included in your army."
+                    }
+                  ],
+                  "text": "You may only have one Avatar of Rigg included in your army.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SPECIAL CHARACTERS",
+      "page": 24,
+      "entries": [
+        {
+          "name": "THALESTRIS",
+          "page": 24,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "Queen of the Amazons",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Thalestris",
+                  "values": {
+                    "M": "4",
+                    "WS": "7",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "3",
+                    "I": "6",
+                    "A": "5",
+                    "Ld": "10",
+                    "Points": "300"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Sword of Rigg:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. All attacks with this sword have the Ignore Armour saves and Multiple Wounds (D3) special rules. If the opponent carries a magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s magic weapon is destroyed."
+                    }
+                  ],
+                  "text": "Sword of Rigg: Magic Weapon. All attacks with this sword have the Ignore Armour saves and Multiple Wounds (D3) special rules. If the opponent carries a magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s magic weapon is destroyed.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Crown of the Amazon Queen:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Talisman. The crown gives the wearer a Magical Ward (4+)."
+                    }
+                  ],
+                  "text": "Crown of the Amazon Queen: Talisman. The crown gives the wearer a Magical Ward (4+).",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Pendant of Delmair:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Enchanted Item. If the wearer loses a round of combat they may choose to transform into a were-jaguar for the duration of the next turn. While in were-jaguar form the wearer's Strength and Toughness are increased by 1 and they gain the Fear, Hatred and Frenzy special rules. However, they cannot use any weapon or shield while in this form."
+                    }
+                  ],
+                  "text": "Pendant of Delmair: Enchanted Item. If the wearer loses a round of combat they may choose to transform into a were-jaguar for the duration of the next turn. While in were-jaguar form the wearer's Strength and Toughness are increased by 1 and they gain the Fear, Hatred and Frenzy special rules. However, they cannot use any weapon or shield while in this form.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Queen of the Amazons:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Thalestris, and all friendly Amazon units within 12\" her gain the Immunity (Psychology) special rule. However, if she is removed as a casualty, all Amazon break tests are taken at -1 for the rest of the game."
+                    }
+                  ],
+                  "text": "Queen of the Amazons: Thalestris, and all friendly Amazon units within 12\" her gain the Immunity (Psychology) special rule. However, if she is removed as a casualty, all Amazon break tests are taken at -1 for the rest of the game.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "OPTIONS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take a shortbow +4 points"
+                    }
+                  ],
+                  "text": "May take a shortbow +4 points",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "May take a shield +5 points"
+                    }
+                  ],
+                  "text": "May take a shield +5 points",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AZURA",
+          "page": 24,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "The Ice Maiden",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Azura",
+                  "values": {
+                    "M": "4",
+                    "WS": "6",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "2",
+                    "I": "6",
+                    "A": "3",
+                    "Ld": "9",
+                    "Points": "185"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Azure Fire:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. Claw of the Old Ones. Enemies attacking the wielder in close combat suffer -1 to Hit. In the shooting phase, Azure Fire follows the rules for Sunstaffs with Strength 5 and Multiple Shots (D3) special rules."
+                    }
+                  ],
+                  "text": "Azure Fire: Magic Weapon. Claw of the Old Ones. Enemies attacking the wielder in close combat suffer -1 to Hit. In the shooting phase, Azure Fire follows the rules for Sunstaffs with Strength 5 and Multiple Shots (D3) special rules.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "The Talisman of Rendar:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Talisman. The Talisman of Rendar gives the wearer a Magical Ward (5+) and the Immunity (Flaming Attacks) special rule."
+                    }
+                  ],
+                  "text": "The Talisman of Rendar: Talisman. The Talisman of Rendar gives the wearer a Magical Ward (5+) and the Immunity (Flaming Attacks) special rule.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Mesmerising Dance:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " All models in base contact with Azura must take a Psychology test at the start of each close combat phase. If they fail they cannot attack this round."
+                    }
+                  ],
+                  "text": "Mesmerising Dance: All models in base contact with Azura must take a Psychology test at the start of each close combat phase. If they fail they cannot attack this round.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MELANDRA HAWKEYE",
+          "page": 25,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "The Adventuress",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Melandra Hawkeye",
+                  "values": {
+                    "M": "4",
+                    "WS": "5",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "2",
+                    "I": "6",
+                    "A": "3",
+                    "Ld": "8",
+                    "Points": "125"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Bow, Amulet of the Moon"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Blade of the Hawk:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. This blade gives the wielder +1 Attack and +1 to Hit."
+                    }
+                  ],
+                  "text": "Blade of the Hawk: Magic Weapon. This blade gives the wielder +1 Attack and +1 to Hit.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Pendant of the Old Ones:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Enchanted Item. Unless the model has charged or is fleeing, they may teleport anywhere on the battlefield (facing any direction) in the Remaining Moves sub-phase instead of moving, but they may not be placed within 1\" of enemy models."
+                    }
+                  ],
+                  "text": "Pendant of the Old Ones: Enchanted Item. Unless the model has charged or is fleeing, they may teleport anywhere on the battlefield (facing any direction) in the Remaining Moves sub-phase instead of moving, but they may not be placed within 1\" of enemy models.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Dodge (5+), Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Scouts"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Evasion:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " At the end of each combat Melandra is in, before Break tests are taken, she may choose to move out of combat. Place her anywhere within 1\" of the enemy unit she was fighting. She may move as normal in her next turn."
+                    }
+                  ],
+                  "text": "Evasion: At the end of each combat Melandra is in, before Break tests are taken, she may choose to move out of combat. Place her anywhere within 1\" of the enemy unit she was fighting. She may move as normal in her next turn.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PENTHESILEA",
+          "page": 25,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "The Mark of the Serpent",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Penthesilea",
+                  "values": {
+                    "M": "4",
+                    "WS": "6",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "2",
+                    "I": "6",
+                    "A": "3",
+                    "Ld": "8",
+                    "Points": "150"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon."
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Throatcutter:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. Additional hand weapon. This dagger gives the wielder the Poisoned Attacks and Killing Blow special rules."
+                    }
+                  ],
+                  "text": "Throatcutter: Magic Weapon. Additional hand weapon. This dagger gives the wielder the Poisoned Attacks and Killing Blow special rules.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Frenzy, Hatred, Guerrilla Warfare, Sacrificial Hunt"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Mark of the Serpent:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Penthesilea has the Always Strike First rule. Enemy models attacking her must re-roll successful rolls to Hit in Close Combat."
+                    }
+                  ],
+                  "text": "Mark of the Serpent: Penthesilea has the Always Strike First rule. Enemy models attacking her must re-roll successful rolls to Hit in Close Combat.",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LYSIPPE",
+          "page": 26,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "The Mounted Avenger",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Lysippe",
+                  "values": {
+                    "M": "4",
+                    "WS": "5",
+                    "BS": "5",
+                    "S": "4",
+                    "T": "4",
+                    "W": "2",
+                    "I": "5",
+                    "A": "3",
+                    "Ld": "8",
+                    "Points": "130"
+                  }
+                },
+                {
+                  "name": "Blackfang",
+                  "values": {
+                    "M": "8",
+                    "WS": "4",
+                    "BS": "0",
+                    "S": "4",
+                    "T": "3",
+                    "W": "1",
+                    "I": "4",
+                    "A": "2",
+                    "Ld": "7"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Cavalry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "25x50"
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon, light armour"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Lizard Bane:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. Light lance. All attacks with this weapon always Hit on a 2+. Against Lizardmen, it always Wounds on at least a 3+."
+                    }
+                  ],
+                  "text": "Lizard Bane: Magic Weapon. Light lance. All attacks with this weapon always Hit on a 2+. Against Lizardmen, it always Wounds on at least a 3+.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Lysippe's Horned Helmet:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Armour. This helmet gives Lysippe a 6+ armour save. In addition, she becomes subject to Frenzy."
+                    }
+                  ],
+                  "text": "Lysippe's Horned Helmet: Magic Armour. This helmet gives Lysippe a 6+ armour save. In addition, she becomes subject to Frenzy.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Fast Cavalry, Forest Strider, Guerrilla Warfare, Hatred (Lizardmen), Mighty Blow (1)"
+            },
+            {
+              "type": "para",
+              "runs": [
+                {
+                  "emph": "",
+                  "text": "(Blackfang only)"
+                },
+                {
+                  "emph": "bold",
+                  "text": ", Sacrificial Hunt"
+                }
+              ],
+              "text": "(Blackfang only), Sacrificial Hunt"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Lysippe's War Cry:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Whenever Lysippe charges, she causes Fear. In addition, any unit charged suffers -1 to their Weapon Skill and Ballistic Skill when being charged by her. This has no effect on models with Immunity (Fear)."
+                    }
+                  ],
+                  "text": "Lysippe's War Cry: Whenever Lysippe charges, she causes Fear. In addition, any unit charged suffers -1 to their Weapon Skill and Ballistic Skill when being charged by her. This has no effect on models with Immunity (Fear).",
+                  "sub": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LWAXANA",
+          "page": 27,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "Curse Witch of Blue Stumps",
+              "cost": ""
+            },
+            {
+              "type": "statblock",
+              "label": "Profile",
+              "columns": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "W",
+                "I",
+                "A",
+                "Ld",
+                "Points"
+              ],
+              "rows": [
+                {
+                  "name": "Lwaxana",
+                  "values": {
+                    "M": "4",
+                    "WS": "4",
+                    "BS": "4",
+                    "S": "3",
+                    "T": "3",
+                    "W": "3",
+                    "I": "4",
+                    "A": "2",
+                    "Ld": "8",
+                    "Points": "305"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "TROOP TYPE",
+              "value": "Infantry (Special Character, Human)"
+            },
+            {
+              "type": "field",
+              "label": "BASE SIZE",
+              "value": "20x20 or 25x25"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC",
+              "value": "Lwaxana is a Level 4 Wizard who uses one of the following Lores of Magic:"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Death"
+                    }
+                  ],
+                  "text": "Death",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "",
+                      "text": "Shadow"
+                    }
+                  ],
+                  "text": "Shadow",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "EQUIPMENT",
+              "value": "Hand weapon"
+            },
+            {
+              "type": "field",
+              "label": "MAGIC ITEMS",
+              "value": ""
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Blue Nightshade Dagger:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Magic Weapon. All close combat attacks with this dagger have the Poisoned Attacks special rule. In addition, these attacks automatically Wound on a To Hit roll of 5+."
+                    }
+                  ],
+                  "text": "Blue Nightshade Dagger: Magic Weapon. All close combat attacks with this dagger have the Poisoned Attacks special rule. In addition, these attacks automatically Wound on a To Hit roll of 5+.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Staff of Retribution:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Arcane Item. Bound Spell (Level 2, cast on 7+). The Staff of Retribution contains a "
+                    },
+                    {
+                      "emph": "bold",
+                      "text": "magic missile"
+                    },
+                    {
+                      "emph": "",
+                      "text": " with a range of 24\" that causes D6 Strength 5 hits. Roll a D6 each time the Staff has been used. On a roll of a 1, the staff can no longer be used for the rest of the battle."
+                    }
+                  ],
+                  "text": "Staff of Retribution: Arcane Item. Bound Spell (Level 2, cast on 7+). The Staff of Retribution contains a magic missile with a range of 24\" that causes D6 Strength 5 hits. Roll a D6 each time the Staff has been used. On a roll of a 1, the staff can no longer be used for the rest of the battle.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Voodoo Dolls:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Enchanted Item. Instead of attacking normally, the bearer may nominate a single enemy model in base contact and make a To Hit roll. If successful, that model is marked. At the start of each of the bearer’s Magic phases, the marked model must take a Strength test. If failed, it suffers D3 Wounds with no saves of any kind allowed."
+                    }
+                  ],
+                  "text": "Voodoo Dolls: Enchanted Item. Instead of attacking normally, the bearer may nominate a single enemy model in base contact and make a To Hit roll. If successful, that model is marked. At the start of each of the bearer’s Magic phases, the marked model must take a Strength test. If failed, it suffers D3 Wounds with no saves of any kind allowed.",
+                  "sub": []
+                },
+                {
+                  "runs": [
+                    {
+                      "emph": "bold",
+                      "text": "Amulet of the Great Toad:"
+                    },
+                    {
+                      "emph": "",
+                      "text": " Talisman. Any spell cast at the wearer of this Amulet or any unit they are with is automatically dispelled on a 4+. Roll before making any normal dispel attempt."
+                    }
+                  ],
+                  "text": "Amulet of the Great Toad: Talisman. Any spell cast at the wearer of this Amulet or any unit they are with is automatically dispelled on a 4+. Roll before making any normal dispel attempt.",
+                  "sub": []
+                }
+              ]
+            },
+            {
+              "type": "field",
+              "label": "SPECIAL RULES",
+              "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CREDITS",
+      "page": 28,
+      "entries": [
+        {
+          "name": "Written & Edited by:",
+          "page": 28,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "Mathias Eliasson",
+              "cost": ""
+            },
+            {
+              "type": "namecost",
+              "name": "Based on Warhammer Fantasy by Games-Workshop",
+              "cost": ""
+            }
+          ]
+        },
+        {
+          "name": "Additional Material:",
+          "page": 28,
+          "blocks": [
+            {
+              "type": "namecost",
+              "name": "Antti Sinivuori",
+              "cost": ""
+            },
+            {
+              "type": "namecost",
+              "name": "Special thanks to all the people that have contributed with feedback and ideas",
+              "cost": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

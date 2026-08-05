@@ -19,7 +19,12 @@ import pymupdf
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-WORD = re.compile(r"[^\W_]+(?:['’][^\W_]+)*", re.UNICODE)
+# Split on apostrophes rather than keeping them inside a token. The source
+# routinely sets a possessive or infix as its own span ("Sotek" + "'s",
+# "K" + "'daai"); this pipeline rejoins them, which is correct but would other-
+# wise read as two missing words and one unexpected one in every book. Splitting
+# both sides identically leaves any genuine loss as the only thing left to see.
+WORD = re.compile(r"[^\W_]+", re.UNICODE)
 
 
 def words(text: str) -> list[str]:
@@ -102,10 +107,11 @@ def main() -> None:
     ap.add_argument("pdf", type=Path)
     ap.add_argument("json", type=Path)
     ap.add_argument("-n", "--show", type=int, default=40)
-    ap.add_argument("--tolerance", type=float, default=0.001,
-                    help="fail above this fraction of missing words "
-                         "(default 0.1%%; a handful of tokens differ only in "
-                         "how the source splits apostrophes across spans)")
+    ap.add_argument("--tolerance", type=float, default=0.0,
+                    help="fail above this fraction of missing words. Defaults "
+                         "to zero: all thirty books currently extract with no "
+                         "missing words at all, so anything above it is worth "
+                         "reading rather than tolerating")
     args = ap.parse_args()
 
     data = json.loads(args.json.read_text(encoding="utf-8"))

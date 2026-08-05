@@ -5,5 +5,6 @@ __pycache__/
 out/
 _site/
 
-# Extracted artwork lands here before being promoted into assets/.
+# Per-book extracted artwork. Covers are promoted into assets/covers/, and the
+# parchment background into assets/images/; the rest is not used.
 build/images/

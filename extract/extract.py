@@ -604,7 +604,7 @@ def extract_images(doc: pymupdf.Document, outdir: Path) -> dict[int, dict]:
     return seen
 
 
-def build(pdf: Path, outdir: Path) -> dict:
+def build(pdf: Path, outdir: Path, slug: str) -> dict:
     doc = pymupdf.open(pdf)
     toc = doc.get_toc()
 
@@ -614,7 +614,10 @@ def build(pdf: Path, outdir: Path) -> dict:
         if lvl == 2:
             entry_names[pg].append(title)
 
-    images = extract_images(doc, outdir / "images")
+    # Images are named by PDF xref, and the books reuse the same xrefs — the
+    # cover is number 24 in nearly all of them — so each book needs its own
+    # directory or they overwrite one another.
+    images = extract_images(doc, outdir / "images" / slug)
     content_pages = {}
 
     for pno, page in enumerate(doc, start=1):
@@ -647,6 +650,12 @@ def build(pdf: Path, outdir: Path) -> dict:
             else:
                 current.setdefault("intro", []).append(block)
 
+    # Every book opens with one illustration over the parchment; that is the
+    # cover, and the full-page image is the parchment itself.
+    cover = next((v["file"] for v in images.values()
+                  if not v["background"] and v["first_page"] == 1), None)
+    background = next((v["file"] for v in images.values() if v["background"]), None)
+
     return {
         "source": {
             "file": pdf.name,
@@ -654,6 +663,10 @@ def build(pdf: Path, outdir: Path) -> dict:
             "sha256": sha256(pdf),
             "toc_entries": len(toc),
         },
+        "slug": slug,
+        "image_dir": f"images/{slug}",
+        "cover": cover,
+        "background": background,
         "images": {str(k): v for k, v in images.items()},
         "front_matter_pages": front_matter,
         "chapters": chapters,
@@ -664,12 +677,14 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("pdf", type=Path)
     ap.add_argument("-o", "--outdir", type=Path, default=Path("build"))
+    ap.add_argument("--slug", help="output name; defaults to the PDF stem")
     args = ap.parse_args()
 
+    slug = args.slug or args.pdf.stem.replace(" ", "-").lower()
     args.outdir.mkdir(parents=True, exist_ok=True)
-    data = build(args.pdf, args.outdir)
+    data = build(args.pdf, args.outdir, slug)
 
-    target = args.outdir / (args.pdf.stem.replace(" ", "-").lower() + ".json")
+    target = args.outdir / f"{slug}.json"
     target.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
     stats = sum(

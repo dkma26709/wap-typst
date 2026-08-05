@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# The extracted JSON and generated Typst are committed, so this job needs only
-# the Typst compiler — no Python, and never the source PDFs.
+# The extracted JSON, the generated Typst and the cover art are all committed, so
+# this job needs only the Typst compiler — no Python, and never the source PDFs.
 permissions:
   contents: read
   pages: write
@@ -24,18 +24,24 @@ jobs:
 
       - uses: typst-community/setup-typst@v5
 
-      - name: Compile the books
+      - name: Compile every book in the manifest
         run: |
           mkdir -p _site
-          # Bundled fonts only, so the CI render matches the local one exactly.
-          typst compile --ignore-system-fonts --root . \
-            src/book.typ _site/lizardmen.pdf
-          typst compile --ignore-system-fonts --root . \
-            --format png --ppi 90 --pages 1 \
-            src/book.typ '_site/cover-{p}.png'
-
-      - name: Assemble the site
-        run: cp site/index.html _site/index.html
+          count=0
+          for slug in $(jq -r '.books[].slug' build/books.json); do
+            echo "::group::$slug"
+            # Bundled fonts only, so the CI render matches the local one exactly.
+            typst compile --ignore-system-fonts --root . \
+              "src/$slug.typ" "_site/$slug.pdf"
+            if [ -f "assets/covers/$slug.png" ]; then
+              cp "assets/covers/$slug.png" "_site/$slug-cover.png"
+            fi
+            count=$((count + 1))
+            echo "::endgroup::"
+          done
+          cp site/index.html _site/index.html
+          echo "compiled $count books"
+          du -sh _site
 
       - uses: actions/upload-pages-artifact@v4
         with:

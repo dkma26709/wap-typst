@@ -5,6 +5,10 @@
     "sha256": "83ef218afebc2ffcffd98b7762f6eae86a810431eefd8e80e1d7a5237a3dafa4",
     "toc_entries": 65
   },
+  "slug": "lizardmen",
+  "image_dir": "images/lizardmen",
+  "cover": "img-0024.png",
+  "background": "img-0005.png",
   "images": {
     "5": {
       "file": "img-0005.png",
