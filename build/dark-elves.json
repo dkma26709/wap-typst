@@ -8,10 +8,10 @@
   "slug": "dark-elves",
   "image_dir": "images/dark-elves",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 815
     },
     "148": {
-      "file": "img-0148.png",
+      "file": "img-0148.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "159": {
-      "file": "img-0159.png",
+      "file": "img-0159.jpg",
       "first_page": 6,
       "background": true,
       "width": 1580,
@@ -957,6 +957,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1318,11 +1319,13 @@
               ],
               "text": "Additional hand weapon. The Dagger of Hotek gives the wielder the Always Strikes First special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1420,11 +1423,13 @@
               ],
               "text": "Shield. The Shield of Ghrond causes all Hits on the model to be resolved with -1 Strength."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1634,11 +1639,13 @@
               ],
               "text": "Any dispel attempt made against enemy spells targeting the model carrying this item, or any unit they are with, gains a +3 dispel bonus."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1840,11 +1847,13 @@
               ],
               "text": "Relic. The bearer of this item may choose to attempt to cast one spell twice per Magic phase. However, every time they choose to do so, roll a D6 first. On the roll of a 1, the model suffers a Wound which Ignores Armour saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2158,11 +2167,13 @@
               ],
               "text": "Enemy units attempting to target the unit carrying this standard with missile attacks or spells must pass a Leadership test. If failed, they must choose another target. If no other target is available, they cannot choose to cast that spell this turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2276,7 +2287,8 @@
               ],
               "text": "Cold One Knights only. The unit carrying this banner are not subject to Stupidity caused by Cold Ones."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2300,6 +2312,7 @@
         {
           "name": "COMMANDERS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2627,11 +2640,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SORCERESSES",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2917,11 +2932,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HAGS OF KHAINE",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3100,11 +3117,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLACK ARK FLEETMASTER",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3261,11 +3280,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BEASTMASTER",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3446,11 +3467,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DISCIPLE OF KHAINE",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3637,11 +3660,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHAINITE ASSASSIN",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3776,11 +3801,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HIGH GLADIATRIX",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3970,11 +3997,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MELUSAI IRONSCALE",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4163,7 +4192,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4174,6 +4204,7 @@
         {
           "name": "DARK STEED",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4238,11 +4269,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4312,11 +4345,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DARK PEGASUS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4385,11 +4420,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANTICORE",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4555,11 +4592,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLACK DRAGON",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4628,7 +4667,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4639,6 +4679,7 @@
         {
           "name": "DREADSPEARS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4748,11 +4789,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLEAKSWORDS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4862,11 +4905,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DARKSHARDS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4976,11 +5021,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLACK ARK CORSAIRS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5129,11 +5176,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WITCH ELVES",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5253,11 +5302,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DARK RIDERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5416,11 +5467,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLAVES",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5539,11 +5592,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HARPIES",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5618,7 +5673,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5629,6 +5685,7 @@
         {
           "name": "HAR GANETH EXECUTIONERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5738,11 +5795,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLOOD HAGS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5852,11 +5911,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SISTERS OF SLAUGHTER",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6009,11 +6070,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHADES",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6113,11 +6176,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE KNIGHTS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6246,11 +6311,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE CHARIOT",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6363,11 +6430,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SCOURGERUNNER CHARIOT",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6503,11 +6572,13 @@
               "label": "SPECIAL RULES",
               "value": "Elven Grace, Hatred (High Elves), Murderous Prowess"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "REAPER BOLT THROWER",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6601,11 +6672,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MELUSAI",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6738,11 +6811,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHINERAI",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6851,11 +6926,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLOODWRACK MEDUSA",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6977,7 +7054,8 @@
               ],
               "text": "When rolling To Wound, substitute the target's Toughness with its Initiative value. This attack does not suffer any To Hit penalties."
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6988,6 +7066,7 @@
         {
           "name": "BLACK GUARD OF NAGGAROND",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7097,11 +7176,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHADOWSTALKERS",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7224,11 +7305,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DOOMFIRE WARLOCKS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7396,11 +7479,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CAULDRON OF BLOOD",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7591,11 +7676,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLOODWRACK SHRINE",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7784,11 +7871,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR HYDRA",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8153,11 +8242,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHARIBDYSS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8286,11 +8377,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AVATAR OF KHAINE",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8378,7 +8471,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8389,6 +8483,7 @@
         {
           "name": "MALEKITH",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8653,11 +8748,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORATHI",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8885,11 +8982,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MALUS DARKBLADE",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9068,11 +9167,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CRONE HELLEBRON",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9247,11 +9348,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAKARTH",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9418,11 +9521,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KRETHUSA THE CRONESEER",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9560,11 +9665,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KOURAN DARKHAND",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9676,11 +9783,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TULLARIS DREADBRINGER",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9807,11 +9916,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOKHIR FELLHEART",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9956,11 +10067,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHADOWBLADE",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10092,7 +10205,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10103,6 +10217,7 @@
         {
           "name": "Written & Edited by:",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10119,7 +10234,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

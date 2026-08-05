@@ -18,7 +18,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 SUSPECT = [
-    ("punctuation not followed by a space", re.compile(r"[,;:]\S")),
+    # A thousands separator is a comma against a digit, so require a non-digit.
+    ("punctuation not followed by a space", re.compile(r"[,;:](?!\d)\S")),
     ("closing bracket against a letter", re.compile(r"\)[A-Za-z]")),
     ("lower-case running into upper-case", re.compile(r"[a-z]{2}[A-Z][a-z]")),
     ("digit running into a letter", re.compile(r"\d[A-Z][a-z]{2}")),
@@ -45,6 +46,9 @@ def texts(data: dict):
             yield block["name"]
         elif kind == "minitable":
             yield from block["row"].values()
+        elif kind == "chart":
+            for row in block["rows"]:
+                yield from row
         elif kind == "statblock":
             for row in block["rows"]:
                 yield row["name"]

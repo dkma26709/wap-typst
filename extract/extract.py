@@ -35,6 +35,7 @@ HEADER_Y = 115.0           # running chapter title lives above this
 
 DISPLAY_FONT = "CaslonAntique"
 SIZE_CHAPTER = 24.0        # and above: chapter titles / cover type
+SIZE_SECTION = 18.0        # 20pt nominal — only the core rulebook uses this tier
 SIZE_ENTRY = 15.0          # 16pt nominal
 SIZE_FIELD = 11.5          # 12pt nominal
 
@@ -67,6 +68,8 @@ def span_role(span: dict) -> str:
     if DISPLAY_FONT in font:
         if size >= SIZE_CHAPTER:
             return "chapter"
+        if size >= SIZE_SECTION:
+            return "section"
         if size >= SIZE_ENTRY:
             return "entry"
         if size >= SIZE_FIELD:
@@ -438,6 +441,16 @@ def parse_lines(lines: list[dict]) -> list[dict]:
     while i < len(lines):
         line = lines[i]
 
+        if line["role"] == "chart":
+            out.append({"type": "chart", "rows": line["chart"]})
+            i += 1
+            continue
+
+        if line["role"] == "figure":
+            out.append({"type": "figure", **line["figure"]})
+            i += 1
+            continue
+
         anchors = stat_header(line)
         if anchors:
             rows = []
@@ -501,8 +514,10 @@ def parse_lines(lines: list[dict]) -> list[dict]:
             i = j
             continue
 
-        if line["role"] == "entry":
-            out.append({"type": "entry", "name": line["text"]})
+        if line["role"] in ("section", "entry"):
+            out.append({
+                "type": "entry", "name": line["text"], "band": line["role"],
+            })
             i += 1
             continue
 
@@ -572,6 +587,86 @@ def parse_lines(lines: list[dict]) -> list[dict]:
     return out
 
 
+def page_charts(page: pymupdf.Page) -> list[dict]:
+    """Ruled tables on the page.
+
+    The core rulebook draws its charts — to-hit, to-wound, armour saves — as
+    genuinely bordered tables, so they can be read directly instead of being
+    reconstructed from x-coordinates the way the army books' stat lines are.
+    Without this the rows arrive as display-font lines and get mistaken for
+    run-in headings, which preserves the numbers but destroys the grid.
+    """
+    charts = []
+    for table in page.find_tables().tables:
+        if table.row_count < 2 or table.col_count < 2:
+            continue  # single-row boxes are diagram captions, not charts
+        rows = [[(cell or "").strip() for cell in row] for row in table.extract()]
+        if not any(any(c for c in row) for row in rows):
+            continue
+        charts.append({"bbox": tuple(table.bbox), "rows": rows})
+    return charts
+
+
+def chart_at(line: dict, charts: list[dict]) -> int | None:
+    """Index of the chart whose area this line falls inside, if any."""
+    for i, chart in enumerate(charts):
+        x0, y0, x1, y1 = chart["bbox"]
+        cy = line["y0"]
+        if y0 - 2 <= cy <= y1 + 2 and x0 - 4 <= line["x0"] <= x1 + 4:
+            return i
+    return None
+
+
+def chart_line(chart: dict) -> dict:
+    """A stand-in line so the chart keeps its place in the reading order."""
+    return {
+        "spans": [], "flow": [], "text": "", "roles": [], "role": "chart",
+        "x0": chart["bbox"][0], "y0": chart["bbox"][1], "chart": chart["rows"],
+    }
+
+
+# Marks a synthetic block in the reading-order stream. PyMuPDF uses 0 for text
+# and 1 for images, so this cannot collide.
+FIGURE_BLOCK = 9
+SOURCE_MARGIN = 56.6       # the books' own left margin, in points
+
+
+def page_figures(page: pymupdf.Page, images: dict[int, dict]) -> list[dict]:
+    """Non-background images as pseudo-blocks, so that the same banding which
+    orders the text also decides where each diagram belongs.
+
+    Widths are recorded as a fraction of the source's text measure rather than in
+    points: the rendered books use different margins, and a diagram should keep
+    its proportion of the column rather than its absolute size.
+    """
+    pw, ph = page.rect.width, page.rect.height
+    measure = pw - 2 * SOURCE_MARGIN
+    out = []
+    for info in page.get_image_info(xrefs=True):
+        x0, y0, x1, y1 = info["bbox"]
+        if (x1 - x0) > 0.92 * pw and (y1 - y0) > 0.92 * ph:
+            continue
+        record = images.get(info.get("xref", 0))
+        if not record:
+            continue
+        out.append({
+            "type": FIGURE_BLOCK,
+            "bbox": (x0, y0, x1, y1),
+            "file": record["file"],
+            "fraction": round(min(1.0, (x1 - x0) / measure), 3),
+        })
+    return out
+
+
+def figure_line(blk: dict) -> dict:
+    """A stand-in line so the diagram keeps its place in the reading order."""
+    return {
+        "spans": [], "flow": [], "text": "", "roles": [], "role": "figure",
+        "x0": blk["bbox"][0], "y0": blk["bbox"][1],
+        "figure": {"file": blk["file"], "fraction": blk["fraction"]},
+    }
+
+
 def extract_images(doc: pymupdf.Document, outdir: Path) -> dict[int, dict]:
     """Save each distinct image once. Full-page images are flagged as page
     furniture (the parchment backgrounds) rather than content."""
@@ -585,21 +680,23 @@ def extract_images(doc: pymupdf.Document, outdir: Path) -> dict[int, dict]:
                 continue
             x0, y0, x1, y1 = info["bbox"]
             covers_page = (x1 - x0) > 0.92 * pw and (y1 - y0) > 0.92 * ph
-            name = f"img-{xref:04d}.png"
+            # Take the embedded bytes as they are rather than re-encoding via a
+            # pixmap: these are already JPEG or PNG, and round-tripping them
+            # through lossless PNG inflated one book from 5 MB to 38 MB.
             try:
-                pix = pymupdf.Pixmap(doc, xref)
-                if pix.n - pix.alpha >= 4:       # CMYK -> RGB
-                    pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
-                pix.save(outdir / name)
+                raw = doc.extract_image(xref)
             except Exception as exc:             # noqa: BLE001 - report and skip
                 print(f"  ! image xref {xref} failed: {exc}")
                 continue
+            ext = (raw.get("ext") or "png").lower()
+            name = f"img-{xref:04d}.{'jpg' if ext == 'jpeg' else ext}"
+            (outdir / name).write_bytes(raw["image"])
             seen[xref] = {
                 "file": name,
                 "first_page": pno,
                 "background": covers_page,
-                "width": pix.width,
-                "height": pix.height,
+                "width": raw.get("width", 0),
+                "height": raw.get("height", 0),
             }
     return seen
 
@@ -621,10 +718,27 @@ def build(pdf: Path, outdir: Path, slug: str) -> dict:
     content_pages = {}
 
     for pno, page in enumerate(doc, start=1):
+        charts = page_charts(page)
+        emitted = [False] * len(charts)
         blocks = [b for b in page.get_text("dict")["blocks"] if b["type"] == 0]
+        blocks += page_figures(page, images)
         lines: list[dict] = []
         for blk in ordered_blocks(blocks):
-            lines.extend(l for l in merged_lines(blk) if not is_furniture(l))
+            if blk.get("type") == FIGURE_BLOCK:
+                lines.append(figure_line(blk))
+                continue
+            for line in merged_lines(blk):
+                if is_furniture(line):
+                    continue
+                hit = chart_at(line, charts)
+                if hit is None:
+                    lines.append(line)
+                    continue
+                # Replace the chart's own lines with one marker at the position
+                # of the first, so the grid lands where the text expected it.
+                if not emitted[hit]:
+                    emitted[hit] = True
+                    lines.append(chart_line(charts[hit]))
         content_pages[pno] = parse_lines(lines)
 
     # Fold pages into chapters, and chapters into named entries.
@@ -643,12 +757,23 @@ def build(pdf: Path, outdir: Path, slug: str) -> dict:
         for block in content_pages[pno]:
             if block["type"] == "entry":
                 current["entries"].append({
-                    "name": block["name"], "page": pno, "blocks": [],
+                    "name": block["name"], "page": pno,
+                    "band": block.get("band", "entry"), "blocks": [],
                 })
             elif current["entries"]:
                 current["entries"][-1]["blocks"].append(block)
             else:
                 current.setdefault("intro", []).append(block)
+
+    # Heading depth is normalised per book rather than fixed to a font size. The
+    # army books use one tier below the chapter, so that tier is level 2; the
+    # core rulebook uses two, so its larger tier takes level 2 and the smaller
+    # drops to level 3.
+    bands = {e["band"] for ch in chapters for e in ch["entries"]}
+    tiered = "section" in bands
+    for chapter in chapters:
+        for entry in chapter["entries"]:
+            entry["level"] = 2 if (not tiered or entry["band"] == "section") else 3
 
     # Every book opens with one illustration over the parchment; that is the
     # cover, and the full-page image is the parchment itself.

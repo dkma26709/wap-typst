@@ -8,10 +8,10 @@
   "slug": "chaos-dwarfs",
   "image_dir": "images/chaos-dwarfs",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 574
     },
     "157": {
-      "file": "img-0157.png",
+      "file": "img-0157.jpg",
       "first_page": 9,
       "background": true,
       "width": 1580,
@@ -404,51 +404,33 @@
           "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Treachery test and must roll on the Treachery table below:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1 Traitor!"
-            },
-            {
-              "emph": "",
-              "text": " If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "2 We'll get a better view from further back!"
-            },
-            {
-              "emph": "",
-              "text": " The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "3-4 We Stayz 'Ere!"
-            },
-            {
-              "emph": "",
-              "text": " The unit may not voluntarily move this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "5 Bloody Murder!"
-            },
-            {
-              "emph": "",
-              "text": " The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. "
-            },
-            {
-              "emph": "bold",
-              "text": "6 Cut 'em good!"
-            },
-            {
-              "emph": "",
-              "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-            }
-          ],
-          "text": "D6 Result 1 Traitor! If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. 2 We'll get a better view from further back! The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. 3-4 We Stayz 'Ere! The unit may not voluntarily move this turn. 5 Bloody Murder! The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. 6 Cut 'em good! Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Traitor! If the unit is armed with missile\nweapons, they will immediately resolve a\nround of shooting against the nearest friendly\nunit within Line of Sight. If the unit does not\nhave any missile weapons or if there are no\nfriendly units within Line of Sight, they will\ninflict D3 Strength 3 Hits for every complete\nrank the unit has on themselves instead (any\nWounds suffered will not cause a Panic test).\nThe unit may not move, shoot or cast spells\nthis turn."
+            ],
+            [
+              "2",
+              "We'll get a better view from further back!\nThe unit must immediately take a Panic test.\nIf it's passed, the unit may not voluntarily\nmove this turn."
+            ],
+            [
+              "3-4",
+              "We Stayz 'Ere! The unit may not voluntarily\nmove this turn."
+            ],
+            [
+              "5",
+              "Bloody Murder! The unit suffers D3\nStrength 3 Hits for every complete rank the\nunit has (any Wounds suffered will not cause\na Panic test). The unit may move as normal\nafterwards."
+            ],
+            [
+              "6",
+              "Cut 'em good! Pivot the unit on the spot to\nface the nearest visible enemy unit, and then\nmake a full normal move in a straight line\ntowards it. If there is no visible enemy, the\nunit must move straight ahead instead. If it is\nimpossible for the unit to pivot to face the\nclosest enemy, it will pivot towards it as far\nas it can, and will then move as far forward\nas it can while still keeping the enemy within\nits forward arc. After the move is complete\nthe unit must declare a charge against the\nclosest visible enemy unit, if it is possible to\ndo so. If the unit cannot declare a charge then\nit may carry on with the rest of its turn\nnormally, as if it had not yet moved this turn."
+            ]
+          ]
         },
         {
           "type": "namecost",
@@ -533,35 +515,25 @@
           "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Animosity test and must roll on the Animosity table below:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1 Get 'Em:"
-            },
-            {
-              "emph": "",
-              "text": " For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority on the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. "
-            },
-            {
-              "emph": "bold",
-              "text": "2-4 Squabble:"
-            },
-            {
-              "emph": "",
-              "text": " If it is possible to do so, the unit must declare a charge against the closest enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "5-6 We'll Show 'Em:"
-            },
-            {
-              "emph": "",
-              "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-            }
-          ],
-          "text": "D6 Result 1 Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority on the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. 2-4 Squabble: If it is possible to do so, the unit must declare a charge against the closest enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. 5-6 We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Get 'Em: For every complete rank the unit\nhas, it suffers D3 hits at the Strength\ncharacteristic of the majority on the models\nin the unit. The unit may not voluntarily\nmove or shoot this turn. Wounds caused by\nthe Get 'Em result never cause Panic tests."
+            ],
+            [
+              "2-4",
+              "Squabble: If it is possible to do so, the unit\nmust declare a charge against the closest\nenemy unit. If the unit is unable to declare a\ncharge, the unit may not move in the\nMovement phase or shoot this turn."
+            ],
+            [
+              "5-6",
+              "We'll Show 'Em: Pivot the unit on the spot\nto face the nearest visible enemy unit, and\nthen make a full normal move in a straight\nline towards it. If there is no visible enemy,\nthe unit must move straight ahead instead. If\nit is impossible for the unit to pivot to face\nthe closest enemy, it will pivot towards it as\nfar as it can, and will then move as far\nforward as it can while still keeping the\nenemy within its forward arc. After the move\nis complete the unit must declare a charge\nagainst the closest visible enemy unit, if it is\npossible to do so. If the unit cannot declare a\ncharge then it may carry on with the rest of\nits turn normally, as if it had not yet moved\nthis turn."
+            ]
+          ]
         }
       ]
     },
@@ -1033,6 +1005,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1099,26 +1072,37 @@
               "text": "The wielder of this weapon gains a bonus for each different type of magic item in any enemy unit they are in base contact with. Additional magic items of the same type have no effect."
             },
             {
-              "type": "minitable",
-              "columns": [
-                "Item Type",
-                "Effect"
-              ],
-              "row": {
-                "Item Type": "Magic Weapon",
-                "Effect": "Parry (6+)"
-              }
-            },
-            {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "",
-                  "text": "Magic Armour Armour Piercing (1) Talisman +1 To Wound Arcane Item Magic Resistance (1) Enchanted Item +1 To Hit Magic Standard +1 Combat Resolution"
-                }
-              ],
-              "text": "Magic Armour Armour Piercing (1) Talisman +1 To Wound Arcane Item Magic Resistance (1) Enchanted Item +1 To Hit Magic Standard +1 Combat Resolution"
+              "type": "chart",
+              "rows": [
+                [
+                  "Item Type:",
+                  "Effect:"
+                ],
+                [
+                  "Magic Weapon",
+                  "Parry (6+)"
+                ],
+                [
+                  "Magic Armour",
+                  "Armour Piercing (1)"
+                ],
+                [
+                  "Talisman",
+                  "+1 To Wound"
+                ],
+                [
+                  "Arcane Item",
+                  "Magic Resistance (1)"
+                ],
+                [
+                  "Enchanted Item",
+                  "+1 To Hit"
+                ],
+                [
+                  "Magic Standard",
+                  "+1 Combat Resolution"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -1204,11 +1188,13 @@
               ],
               "text": "Fireglaive. Close combat attacks made with this weapon have the Armour Piercing (1) special rule. Missile attacks with this weapon have Strength 5."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1327,11 +1313,13 @@
               ],
               "text": "Shield. For each natural 6 rolled when making armour and Parry saves, the wearer causes an automatic Hit against the attacker with the same Strength and special rules as the attack."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1420,11 +1408,13 @@
               ],
               "text": "The wearer gains the Magic Resistance (1) special rule, and any unit they are with gains a Magical Ward (4+) against non-physical Flaming Attacks."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1543,11 +1533,13 @@
               ],
               "text": "Charm. One use only. This item can be used at the start of any of your Magic phases. Once used, one friendly unit within 12\" gains +1 Toughness for until the start of your next Magic phase."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1749,11 +1741,13 @@
               ],
               "text": "Enemy models suffer a -1 penalty to their armour saves and Magical Ward saves against Wounds caused by the bearer of this item in close combat."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1915,7 +1909,8 @@
               ],
               "text": "The unit carrying this standard gains the Hatred (Dwarfs) special rule."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1939,6 +1934,7 @@
         {
           "name": "SORCERERS OF HASHUT",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2212,11 +2208,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DESPOTS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2514,11 +2512,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DAEMONSMITH",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2743,11 +2743,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BULL CENTAUR TAUR'RUK",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2910,11 +2912,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOBGOBLIN CHIEFTAIN",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3097,7 +3101,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3108,6 +3113,7 @@
         {
           "name": "GIANT WOLF",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3152,11 +3158,13 @@
               "label": "BASE SIZE",
               "value": "25x50"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PALANQUIN",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3226,11 +3234,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT TAURUS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3367,11 +3377,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BALE TAURUS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3508,11 +3520,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALTAR OF HASHUT",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3633,7 +3647,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3644,6 +3659,7 @@
         {
           "name": "WARRIORS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3792,11 +3808,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAZERS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3945,11 +3963,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CUTTHROATS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -4071,11 +4091,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -4177,11 +4199,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF RAIDERS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4360,11 +4384,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORC SLAVES",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4564,11 +4590,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOBLIN SLAVES",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4735,7 +4763,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4746,6 +4775,7 @@
         {
           "name": "INFERNAL GUARD",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4884,11 +4914,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZEALOT BERZERKERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5008,11 +5040,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEVASTATORS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5226,11 +5260,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BULL CENTAURS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5389,11 +5425,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WHIRLWIND/TENDERISER",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5520,11 +5558,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNEAKY GITS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5643,11 +5683,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOLT THROWA",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5760,11 +5802,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLACK ORCS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5997,11 +6041,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRE SLAVES",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6166,11 +6212,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "K'DAAI FIREBORN",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6269,11 +6317,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRON DAEMON",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6491,11 +6541,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGMA CANNON",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6631,11 +6683,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEATHSHRIEKER ROCKET LAUNCHER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6771,7 +6825,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6782,6 +6837,7 @@
         {
           "name": "IMMORTALS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6891,11 +6947,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BULL CENTAUR RENDERS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7044,11 +7102,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LAMMASU",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7235,11 +7295,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DREADQUAKE MORTAR",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7434,11 +7496,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELLCANNON",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7551,59 +7615,37 @@
               "text": "Any unit that suffers one or more casualties from this weapon must take a Panic test. If the unit suffered Heavy Casualties, it takes the test at -1 Leadership. Should the artillery dice roll a misfire, roll a D6 on the following table:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Free at last!"
-                },
-                {
-                  "emph": "",
-                  "text": " Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew from play. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Schlurp:"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove the crew from play. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Thzzzz:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast table. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Grrr:"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove D3 Handlers. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Blooood!"
-                },
-                {
-                  "emph": "",
-                  "text": " Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement special rule and it was the Compulsory Movement sub-phase. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Boom!"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The Hellcannon cannot fire for the rest of the game."
-                }
-              ],
-              "text": "D6 Result 1 Free at last! Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew from play. 2 Schlurp: Remove the crew from play. 3 Thzzzz: All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast table. 4 Grrr: Remove D3 Handlers. 5 Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement special rule and it was the Compulsory Movement sub-phase. 6 Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The Hellcannon cannot fire for the rest of the game."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Free at last! Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew\nfrom play."
+                ],
+                [
+                  "2",
+                  "Schlurp: Remove the crew from play."
+                ],
+                [
+                  "3",
+                  "Thzzzz: All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast\ntable."
+                ],
+                [
+                  "4",
+                  "Grrr: Remove D3 Handlers."
+                ],
+                [
+                  "5",
+                  "Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement\nspecial rule and it was the Compulsory Movement sub-phase."
+                ],
+                [
+                  "6",
+                  "Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The\nHellcannon cannot fire for the rest of the game."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -7663,11 +7705,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JUGGERNAUT SIEGE TOWER",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7838,11 +7882,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KOLOSSUS",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8050,11 +8096,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "K'DAAI DESTROYER",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8274,11 +8322,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SIEGE GIANT",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8459,18 +8509,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-3 Flail and Crush 4-6 Ripping Blades"
+                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2-3 Flail and Crush 4-6 Ripping Blades"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-3",
+                  "Flail and Crush"
+                ],
+                [
+                  "4-6",
+                  "Ripping Blades"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -8482,18 +8545,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Legbreaker 2-4 Smash with Pick 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Legbreaker 2-4 Smash with Pick 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Legbreaker"
+                ],
+                [
+                  "2-4",
+                  "Smash with Pick"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -8618,7 +8694,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8629,6 +8706,7 @@
         {
           "name": "ASTRAGOTH IRONHAND",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8818,11 +8896,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAZHOATH THE ASHEN",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9041,11 +9121,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZHATAN THE BLACK",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9199,11 +9281,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RYKARTH THE UNBREAKABLE",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9302,11 +9386,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHAR'TOR THE EXECUTIONER",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9487,11 +9573,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GORDUZ BACKSTABBER",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9634,7 +9722,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9645,17 +9734,20 @@
         {
           "name": "Written & Edited by:",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
               "name": "Mathias Eliasson",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9672,7 +9764,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

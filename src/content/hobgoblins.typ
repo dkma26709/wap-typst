@@ -2,7 +2,6 @@
 #import "../template.typ": *
 
 #heading(level: 1, "ARMY SPECIAL RULES")
-#columns(2)[
 #para(((emph: "", text: "This section of the book describes all the different units used in a Hobgoblin army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the "), (emph: "italic", text: "Warhammer"), (emph: "", text: " rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Hobgoblin units, and these are detailed here.")))
 #namecost("BACKSTABBERS", "")
 #para(((emph: "", text: "A unit with this special rule that successfully restrains from pursuing after breaking an enemy unit in close combat causes D6 Strength 3 hits on the fleeing unit for every complete rank the Hobgoblin unit has (up to a maximum of 3). Resolve any casualties before moving the fleeing unit."),))
@@ -20,8 +19,39 @@
 #para(((emph: "", text: "Units with this special rule must test for Treachery in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Treachery, unless any of the following applies:"),))
 #items(((runs: ((emph: "", text: "The unit has less than 5 models."),), sub: ()), (runs: ((emph: "", text: "The unit has declared a charge this turn."),), sub: ()), (runs: ((emph: "", text: "The unit is engaged in close combat."),), sub: ()), (runs: ((emph: "", text: "The unit is garrisoning a building."),), sub: ()), (runs: ((emph: "", text: "The unit is fleeing or currently off the battlefield."),), sub: ())))
 #para(((emph: "", text: "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Treachery test and must roll on the Treachery table below:"),))
-#para(((emph: "bold", text: "D6 Result 1 Traitor!"), (emph: "", text: " If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. "), (emph: "bold", text: "2 We'll get a better view from further back!"), (emph: "", text: " The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. "), (emph: "bold", text: "3-4 We Stayz 'Ere!"), (emph: "", text: " The unit may not voluntarily move this turn. "), (emph: "bold", text: "5 Bloody Murder!"), (emph: "", text: " The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. "), (emph: "bold", text: "6 Cut 'em good!"), (emph: "", text: " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn.")))
-]
+#chart((("D6", "Result"), ("1", "Traitor! If the unit is armed with missile
+weapons, they will immediately resolve a
+round of shooting against the nearest friendly
+unit within Line of Sight. If the unit does not
+have any missile weapons or if there are no
+friendly units within Line of Sight, they will
+inflict D3 Strength 3 Hits for every complete
+rank the unit has on themselves instead (any
+Wounds suffered will not cause a Panic test).
+The unit may not move, shoot or cast spells
+this turn."), ("2", "We'll get a better view from further back!
+The unit must immediately take a Panic test.
+If it's passed, the unit may not voluntarily
+move this turn."), ("3-4", "We Stayz 'Ere! The unit may not voluntarily
+move this turn."), ("5", "Bloody Murder! The unit suffers D3
+Strength 3 Hits for every complete rank the
+unit has (any Wounds suffered will not cause
+a Panic test). The unit may move as normal
+afterwards."), ("6", "Cut 'em good! Pivot the unit on the spot to
+face the nearest visible enemy unit, and then
+make a full normal move in a straight line
+towards it. If there is no visible enemy, the
+unit must move straight ahead instead. If it is
+impossible for the unit to pivot to face the
+closest enemy, it will pivot towards it as far
+as it can, and will then move as far forward
+as it can while still keeping the enemy within
+its forward arc. After the move is complete
+the unit must declare a charge against the
+closest visible enemy unit, if it is possible to
+do so. If the unit cannot declare a charge then
+it may carry on with the rest of its turn
+normally, as if it had not yet moved this turn.")))
 
 #heading(level: 1, "LORE OF DA HIIYAAARRGHH!")
 #columns(2)[
@@ -140,7 +170,14 @@
 #para(((emph: "", text: "One use only. This item can be used in the enemy's Charge sub-phase. When used, all enemy units within charge range of the bearer must pass a Leadership test or be forced to declare charge against them."),))
 #namecost("BAG O' SNEAKY TRICKS", "20 points")
 #para(((emph: "", text: "At the start of the game, roll a D6 and consult the following chart to determine what the item retrieved for that battle actually does:"),))
-#para(((emph: "bold", text: "D6 Result 1 Worthless Scrap:"), (emph: "", text: " The item does nothing. "), (emph: "bold", text: "2 Red Gem:"), (emph: "", text: " The item grants the bearer the Flaming Attacks and Immunity (Flaming Attacks) special rules. "), (emph: "bold", text: "3 Protective Amulet:"), (emph: "", text: " The item grants a Ward save (6+). "), (emph: "bold", text: "4 Obsidian Bracelet:"), (emph: "", text: " The item grants the Magic Resistance (2) special rule. "), (emph: "bold", text: "5 Trollbone Torc:"), (emph: "", text: " The item grants the Regeneration (4+) special rule. "), (emph: "bold", text: "6 Daemon Skull:"), (emph: "", text: " The item grants the bearer +1 Strength as well as the Magical Attacks and Magical Ward (5+) special rules.")))
+#chart((("D6", "Result"), ("1", "Worthless Scrap: The item does nothing."), ("2", "Red Gem: The item grants the bearer the
+Flaming Attacks and Immunity (Flaming
+Attacks) special rules."), ("3", "Protective Amulet: The item grants a Ward
+save (6+)."), ("4", "Obsidian Bracelet: The item grants the Magic
+Resistance (2) special rule."), ("5", "Trollbone Torc: The item grants the
+Regeneration (4+) special rule."), ("6", "Daemon Skull: The item grants the bearer +1
+Strength as well as the Magical Attacks and
+Magical Ward (5+) special rules.")))
 #namecost("THE HIDDEN SHEATH", "20 points")
 #para(((emph: "", text: "On any turn that the model equipped with the Hidden Sheath enters a challenge, they get to make one extra round of attacks against their opponent before all other attacks are made."),))
 #namecost("YATZSUP'S THUMB RING", "10 points")
@@ -439,10 +476,20 @@
 #para(((emph: "", text: "To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically. To determine in which direction the Giant falls, roll a scatter dice. Place the small round template in base contact with the Giant in the direction of the scatter dice, measured from the centre of the Giant's base. A model hit by a falling Giant suffers a Strength 6 Hit with the Multiple Wounds (D3) special rule. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result. A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this Wound counts towards combat resolution."),))
 #para(((emph: "", text: "Once on the ground, a Giant may get up in his following Movement phase, but may not move in the Movement phase that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he's on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up."),))
 #items(((runs: ((emph: "bold", text: "Giant Special Attacks:"), (emph: "", text: " To determine what a Giant does in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the following tables. Which table you use depends on the size of the Giant's victim. If no suitable target is in base contact, roll again on the chart until you get another result.")), sub: ()),))
-#para(((emph: "bold", text: "MAN-SIZED THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. "), (emph: "bold", text: "D6 Result"), (emph: "", text: " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club")))
-#para(((emph: "bold", text: "BIG THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "), (emph: "bold", text: "D6 Result"), (emph: "", text: " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt")))
+#para(((emph: "bold", text: "MAN-SIZED THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms.")))
+#chart((("D6", "Result"), ("1", "Yell and Bawl"), ("2", "Jump Up and Down"), ("3", "Pick Up and..."), ("4-6", "Swing with Club")))
+#para(((emph: "bold", text: "BIG THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines.")))
+#chart((("D6", "Result"), ("1", "Yell and Bawl"), ("2-4", "Thump with Club"), ("5-6", "'Eadbutt")))
 #para(((emph: "bold", text: "- 'Eadbutt:"), (emph: "", text: " The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. "), (emph: "bold", text: "- Jump Up and Down:"), (emph: "", text: " The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. Otherwise, it will instead use the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. "), (emph: "bold", text: "- Swing with Club:"), (emph: "", text: " The Giant fights using the Random Attacks (2D6) special rule this round. "), (emph: "bold", text: "- Thump with Club:"), (emph: "", text: " The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. "), (emph: "bold", text: "- Yell and Bawl:"), (emph: "", text: " Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. "), (emph: "bold", text: "- Pick Up and...:"), (emph: "", text: " The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:")))
-#para(((emph: "bold", text: "D6 Result 1 Stuff into Bag:"), (emph: "", text: " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "), (emph: "bold", text: "2 Throw Back into Combat:"), (emph: "", text: " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "), (emph: "bold", text: "3 Hurl:"), (emph: "", text: " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "), (emph: "bold", text: "4-5 Squash or Eat:"), (emph: "", text: " The model is removed as a casualty. "), (emph: "bold", text: "6 Pick Another:"), (emph: "", text: " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.")))
+#chart((("D6", "Result"), ("1", "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the
+bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the
+battle, and no longer counts as casualties."), ("2", "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The
+victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are
+inflicted on the unit (save as normal)."), ("3", "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine
+which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved
+Wounds from these hits count towards the Giant's combat result. If no enemy units are in range,
+treat this as a Throw Back into Combat result instead."), ("4-5", "Squash or Eat: The model is removed as a casualty."), ("6", "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and
+then choose another victim. Roll again on this table to see what the Giant does with it.")))
 
 #heading(level: 1, "SPECIAL CHARACTERS")
 
@@ -480,7 +527,7 @@
 #field("EQUIPMENT", "Light lance, shortbow, medium armour, shield")
 #field("MAGIC ITEMS", "")
 #items(((runs: ((emph: "bold", text: "Trickster's Quiver:"), (emph: "", text: " Enchanted Item. At the start of your Shooting phase, roll a D6 and consult the table below to see what sort of arrow the bearer has access to this turn:")), sub: ()),))
-#para(((emph: "bold", text: "D6 Result 1 Flame Arrows:"), (emph: "", text: " All shots have the Flaming Attacks special rule. "), (emph: "bold", text: "2 Bodkin Arrows:"), (emph: "", text: " All shots have the Armour Piercing (1) special rule. "), (emph: "bold", text: "3 Poisoned Arrows:"), (emph: "", text: " All shots have the Poisoned Attacks special rule. "), (emph: "bold", text: "4 Burst Arrows:"), (emph: "", text: " All shots have the Multiple Wounds (D3) special rule. "), (emph: "bold", text: "5 Storm Arrows:"), (emph: "", text: " All shots have the Lightning Attacks special rule. "), (emph: "bold", text: "6 Frost Arrows:"), (emph: "", text: " All shots have the Ice Attacks special rule.")))
+#chart((("D6", "Result"), ("1", "Flame Arrows: All shots have the Flaming Attacks special rule."), ("2", "Bodkin Arrows: All shots have the Armour Piercing (1) special rule."), ("3", "Poisoned Arrows: All shots have the Poisoned Attacks special rule."), ("4", "Burst Arrows: All shots have the Multiple Wounds (D3) special rule."), ("5", "Storm Arrows: All shots have the Lightning Attacks special rule."), ("6", "Frost Arrows: All shots have the Ice Attacks special rule.")))
 #field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Ded Shooty, Sniper, Hiiyaaarrghh!, Inspiring Presence")
 #para(((emph: "bold", text: "(6), Quell Treachery"),))
 #field("OPTIONS", "")

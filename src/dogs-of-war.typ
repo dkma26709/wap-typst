@@ -6,7 +6,7 @@
 #cover(
   title: "Dogs of War",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "../assets/covers/dogs-of-war.png",
+  art: "/assets/covers/dogs-of-war.png",
 )
 
 #colophon((

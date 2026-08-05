@@ -8,10 +8,10 @@
   "slug": "kingdoms-of-ind",
   "image_dir": "images/kingdoms-of-ind",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 778
     },
     "158": {
-      "file": "img-0158.png",
+      "file": "img-0158.jpg",
       "first_page": 10,
       "background": true,
       "width": 1580,
@@ -151,6 +151,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -333,11 +334,13 @@
               ],
               "text": "Light lance/spear. Attacks made with this weapon have the Armor Piercing (1) special rule, and will always wound on a roll of 3+, unless they would normally need a lower result. Against models from armies belonging to the Forces of Destruction, it wounds automatically instead."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -435,11 +438,13 @@
               ],
               "text": "Shield. The wielder starts the game with Good Karma."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -537,11 +542,13 @@
               ],
               "text": "The wearer gains the Immunity (Killing Blow, Multiple Wounds) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -631,11 +638,13 @@
               ],
               "text": "Before each attempt to cast a spell, the bearer may take a Leadership test using their own unmodified characteristic. If passed, they gain a +1 casting bonus this turn until they fail to cast a spell or their casting attempt is dispelled. The bonus is cumulative."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -733,11 +742,13 @@
               ],
               "text": "Sadhu only. The bearer of this item gain +1 Leadership when using Prayers of the Deva."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -824,7 +835,8 @@
               ],
               "text": "Enemies do not receive any combat resolution bonuses for attacking the flanks or rear of the unit carrying this standard."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -848,6 +860,7 @@
         {
           "name": "RAJAHS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1166,11 +1179,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANTRIKS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1380,11 +1395,13 @@
               "label": "SPECIAL RULES",
               "value": "Karma"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SADHU",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1546,11 +1563,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VISHKANYA",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1644,11 +1663,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BEASTMASTER",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1845,11 +1866,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AVATAR OF BRAHAMBHU",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1958,11 +1981,13 @@
               "label": "SPECIAL RULES",
               "value": "Deva"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AVATAR OF VISHYANA",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2052,11 +2077,13 @@
               "label": "SPECIAL RULES",
               "value": "Deva"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AVATAR OF SHIDRA",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2146,7 +2173,8 @@
               "label": "SPECIAL RULES",
               "value": "Deva"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2157,6 +2185,7 @@
         {
           "name": "WARHORSE",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2221,11 +2250,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THRONEBEARERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2295,11 +2326,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BENGAL TIGER",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2349,11 +2382,13 @@
               "label": "SPECIAL RULES",
               "value": "Mighty Blow (1), Forest Strider"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROYAL ELEPHANT",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2596,7 +2631,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2607,6 +2643,7 @@
         {
           "name": "WARRIORS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -2756,11 +2793,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2880,11 +2919,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SEPOYS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2994,11 +3035,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "URUMI SWORDSMEN",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3107,11 +3150,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKIRMISHERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3268,11 +3313,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PINDARIS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3449,11 +3496,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SOWARS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3659,11 +3708,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAJPUTS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3831,11 +3882,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNAKE SWARMS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3924,7 +3977,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3935,6 +3989,7 @@
         {
           "name": "MAIDEN GUARD",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4093,11 +4148,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ETERNALS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4207,11 +4264,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZAMBURAKS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4391,11 +4450,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROYAL CHARIOT",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4553,11 +4614,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BENGAL RIDERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4724,11 +4787,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR ELEPHANT",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5090,11 +5155,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAKSHASHAS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5194,11 +5261,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VANARAS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5317,11 +5386,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GARUDAS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5411,11 +5482,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GANESHAS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5563,11 +5636,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NAGAS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5657,11 +5732,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KALARATRIS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5771,11 +5848,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARUTS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5885,7 +5964,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5896,6 +5976,7 @@
         {
           "name": "GREAT CANNON",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5984,11 +6065,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR ROCKET",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6077,11 +6160,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TEMPLE CHARIOT",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6184,11 +6269,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VIMANA CHARIOT",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6314,11 +6401,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "YAKSHAS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6428,11 +6517,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAKARA",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6482,11 +6573,13 @@
               "label": "SPECIAL RULES",
               "value": "Aquatic, Multiple Wounds (D3), Natural Armour (4+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "YALI",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6536,11 +6629,13 @@
               "label": "SPECIAL RULES",
               "value": "Immunity (Psychology), Impact Hits (D6), Natural Armour (5+), Stubborn"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHESHA",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6622,7 +6717,8 @@
                 "Special Rules": "Multiple Shots (5), Poisoned Attacks, Rapid Fire"
               }
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6633,6 +6729,7 @@
         {
           "name": "DARAHMA",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6778,11 +6875,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KARISHNA",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6915,11 +7014,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "URJANA",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7050,11 +7151,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PARASHURUMA",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7166,11 +7269,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MHOGLI",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7277,7 +7382,8 @@
               "label": "SPECIAL RULES",
               "value": "Beastmaster (see Beastmasters), Karma, Independent, Terror"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7288,6 +7394,7 @@
         {
           "name": "Written & Edited by:",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7299,11 +7406,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7315,7 +7424,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

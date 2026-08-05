@@ -6,7 +6,7 @@
 #cover(
   title: "Grand Cathay",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/grand-cathay.png",
+  art: "/assets/covers/grand-cathay.png",
 )
 
 #colophon((

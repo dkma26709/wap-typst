@@ -4,12 +4,12 @@ Re-typesets the [Warhammer Armies Project](https://www.warhammerarmiesproject.co
 army books from their published PDFs into [Typst](https://typst.app), and
 publishes the result to GitHub Pages.
 
-**30 army books · 1,746 unit entries · 1,972 typeset pages**
+**30 army books and the core rulebook · 1,746 unit entries · 2,136 typeset pages**
 
 The point is the *book*: proper stat tables, styled headings, real paragraph
 structure — not a scrape. Extraction is verified against the source word by word,
-and every one of the thirty books currently extracts with **no missing words at
-all**.
+and every one of the thirty-one books currently extracts with **no missing words
+at all**.
 
 ## Attribution
 
@@ -95,6 +95,12 @@ source routinely sets a possessive or infix as its own span (`Sotek` + `'s`,
 a space rather than a word. Three separate instances of this bug reached the
 rendered page before the check existed.
 
+Both checks walk chart cells too. They did not at first, and that mattered: a
+chart of dice scores is nearly invisible to a word count, because tokenising
+`6+/2+` yields `6` and `2` — digits that occur in abundance elsewhere and cancel
+out. The rulebook's to-hit chart was being rendered as a row of bold headings
+while coverage reported nothing missing.
+
 ```bash
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json
 python extract/welds.py build/lizardmen.json
@@ -104,17 +110,35 @@ Deliberately dropped: each book's cover and its own contents page, recorded in
 the JSON as `front_matter_pages`. The rendered books generate their own outline
 from the headings.
 
+## Two layouts
+
+Chosen from the content, not configured per title: a book with stat blocks is an
+army book, and one without is the rulebook.
+
+| | army books | core rulebook |
+|---|---|---|
+| pagination | every entry opens its own page | sections flow |
+| hierarchy | chapter → entry | chapter → section → subsection |
+| columns | per entry (see below) | single, with wider margins |
+| tables | stat lines, rebuilt from x-coordinates | ruled charts, read directly |
+| diagrams | none (the art is vector) | 46, placed in the flow |
+
+Heading depth is normalised per book rather than fixed to a font size. The army
+books use one display tier below the chapter, so that tier becomes level 2; the
+rulebook uses two (20pt and 16pt), so its larger tier takes level 2 and the
+smaller drops to level 3.
+
 ## Known gaps
 
-- **Interior artwork is not carried over.** The illustrations are vector
-  drawings, not raster images — 13,708 drawing operations in Lizardmen 3.0 alone
-  — of which only the parchment background and the cover are extractable images.
-  Re-exporting the vector regions is not implemented. Covers *are* carried, into
-  `assets/covers/`, where they serve as both Typst cover art and landing-page
-  thumbnails.
-- **The core rulebook is not included.** *The Game of Fantasy Battles 9th Edition*
-  is prose-heavy with no unit entries, so it does not inherit the army-book
-  structure and needs its own work.
+- **The army books' interior artwork is not carried over.** Their illustrations
+  are vector drawings, not raster images — 13,708 drawing operations in Lizardmen
+  3.0 alone — of which only the parchment background and the cover are
+  extractable. Re-exporting the vector regions is not implemented. Covers *are*
+  carried, into `assets/covers/`. The core rulebook is different: its diagrams
+  are raster with known bounding boxes, so all 46 are placed in the flow at their
+  original proportion of the measure.
+- A multi-line diagram legend in the rulebook merges into one paragraph, since
+  the source separates its lines without a blank line between them.
 - `SACRIFICIAL HEART` in Lizardmen 3.0 has no description. That is a defect in
   the source PDF, faithfully reproduced.
 

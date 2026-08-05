@@ -8,10 +8,10 @@
   "slug": "dogs-of-war",
   "image_dir": "images/dogs-of-war",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 624
     },
     "211": {
-      "file": "img-0211.png",
+      "file": "img-0211.jpg",
       "first_page": 35,
       "background": true,
       "width": 1580,
@@ -174,35 +174,25 @@
           "text": "Every time a unit with this special rule fails a Break test, roll on the Mercenary Loyalty table below and apply the results. This rule has no effect on a unit that is joined by the Army General or Paymaster."
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1-3 Wavering Loyalty:"
-            },
-            {
-              "emph": "",
-              "text": " The unit flees as normal, and all models in the unit suffer a -1 modifier to their Leadership for the rest of the battle. "
-            },
-            {
-              "emph": "bold",
-              "text": "4-5 Soldier On:"
-            },
-            {
-              "emph": "",
-              "text": " The unit flees as normal. "
-            },
-            {
-              "emph": "bold",
-              "text": "6 Stand Fast!"
-            },
-            {
-              "emph": "",
-              "text": " The unit has the Disciplined special rule on their next Rally test."
-            }
-          ],
-          "text": "D6 Result 1-3 Wavering Loyalty: The unit flees as normal, and all models in the unit suffer a -1 modifier to their Leadership for the rest of the battle. 4-5 Soldier On: The unit flees as normal. 6 Stand Fast! The unit has the Disciplined special rule on their next Rally test."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1-3",
+              "Wavering Loyalty: The unit flees as normal,\nand all models in the unit suffer a -1 modifier\nto their Leadership for the rest of the battle."
+            ],
+            [
+              "4-5",
+              "Soldier On: The unit flees as normal."
+            ],
+            [
+              "6",
+              "Stand Fast! The unit has the Disciplined\nspecial rule on their next Rally test."
+            ]
+          ]
         },
         {
           "type": "namecost",
@@ -1796,6 +1786,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2105,11 +2096,13 @@
               ],
               "text": "A monster or character that suffers unsaved wounds from Warrior Bane permanently loses one Attack for each unsaved wound (to a minimum of 1 Attack)."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2251,11 +2244,13 @@
               ],
               "text": "Model on foot only. Shield. The wielder may use this shield and a weapon that Requires Two Hands at the same time."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2413,11 +2408,13 @@
               ],
               "text": "The model gains the Immunity (Killing Blow/Poisoned Attacks/Lore of Death) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2703,11 +2700,13 @@
               ],
               "text": "Charm. One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy Wizard, roll a D6. On a 4+, that Wizard suffers a Wound which Ignores Armour Saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2941,11 +2940,13 @@
               ],
               "text": "Model on foot only. The bearer gains the Random Movement (2D6) Special Rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3066,7 +3067,8 @@
               ],
               "text": "The unit carrying this standard can re-roll the result on the Mercenaries table."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -3090,6 +3092,7 @@
         {
           "name": "MERCENARY COMMANDERS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3424,11 +3427,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HIRELING WIZARDS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3676,11 +3681,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PAYMASTER",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4002,11 +4009,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ASSASSINS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4138,11 +4147,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DWARF CAPTAINS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4323,11 +4334,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELF CAPTAINS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4517,11 +4530,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HALFLING CAPTAINS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4739,11 +4754,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRE CAPTAINS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4904,11 +4921,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORC CAPTAINS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5051,11 +5070,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOBGOBLIN CAPTAINS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5246,7 +5267,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5257,6 +5279,7 @@
         {
           "name": "WARHORSE",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5321,11 +5344,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEGASUS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5443,11 +5468,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIFFON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5565,11 +5592,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PAYCHEST",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5644,11 +5673,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PAYCART",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5752,7 +5783,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5763,6 +5795,7 @@
         {
           "name": "PIKEMEN",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5921,11 +5954,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CROSSBOWMEN",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6095,11 +6130,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SELLSWORDS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6363,11 +6400,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DUELLISTS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6514,11 +6553,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STRADIOTS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6734,7 +6775,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6745,6 +6787,7 @@
         {
           "name": "PAYMASTER'S BODYGUARD",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6923,11 +6966,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FREELANCERS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7086,11 +7131,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GLADIATORS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7247,11 +7294,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NORSEMEN",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7491,11 +7540,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DWARFS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7693,11 +7744,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELVES",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7924,11 +7977,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HALFLINGS",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8106,11 +8161,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRES",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8306,11 +8363,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORCS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8447,35 +8506,25 @@
               "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Animosity test and must roll on the Animosity table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Get 'Em:"
-                },
-                {
-                  "emph": "",
-                  "text": " For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 Squabble:"
-                },
-                {
-                  "emph": "",
-                  "text": " If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 We'll Show 'Em:"
-                },
-                {
-                  "emph": "",
-                  "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-                }
-              ],
-              "text": "D6 Result 1 Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. 2-4 Squabble: If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. 5-6 We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the\nmajority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds\ncaused by the Get 'Em result never cause Panic tests."
+                ],
+                [
+                  "2-4",
+                  "Squabble: If it is possible to do so, the unit must declare a charge against the closest viable enemy\nunit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot\nthis turn."
+                ],
+                [
+                  "5-6",
+                  "We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a\nfull normal move in a straight line towards it. If there is no visible enemy, the unit must move straight\nahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it\nas far as it can, and will then move as far forward as it can while still keeping the enemy within its\nforward arc. After the move is complete the unit must declare a charge against the closest visible\nenemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the\nrest of its turn normally, as if it had not yet moved this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8604,11 +8653,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOBGOBLINS",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8765,51 +8816,33 @@
               "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Treachery test and must roll on the Treachery table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Traitor!"
-                },
-                {
-                  "emph": "",
-                  "text": " If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 We'll get a better view from further back!"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 We Stayz 'Ere!"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit may not voluntarily move this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Bloody Murder!"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Cut 'em good!"
-                },
-                {
-                  "emph": "",
-                  "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-                }
-              ],
-              "text": "D6 Result 1 Traitor! If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. 2 We'll get a better view from further back! The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. 3-4 We Stayz 'Ere! The unit may not voluntarily move this turn. 5 Bloody Murder! The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. 6 Cut 'em good! Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Traitor! If the unit is armed with missile weapons, they will immediately resolve a round of shooting\nagainst the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons\nor if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every\ncomplete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test).\nThe unit may not move, shoot or cast spells this turn."
+                ],
+                [
+                  "2",
+                  "We'll get a better view from further back!\nThe unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this\nturn."
+                ],
+                [
+                  "3-4",
+                  "We Stayz 'Ere! The unit may not voluntarily move this turn."
+                ],
+                [
+                  "5",
+                  "Bloody Murder! The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any\nWounds suffered will not cause a Panic test). The unit may move as normal afterwards."
+                ],
+                [
+                  "6",
+                  "Cut 'em good! Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full\nnormal move in a straight line towards it. If there is no visible enemy, the unit must move straight\nahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it\nas far as it can, and will then move as far forward as it can while still keeping the enemy within its\nforward arc. After the move is complete the unit must declare a charge against the closest visible\nenemy unit, if it is possible to do so. If the unit cannot declare a charge it may carry on with the rest\nof its turn normally, as if it had not yet moved this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8911,11 +8944,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BALLISTA",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9014,11 +9049,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SCORPION",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9159,7 +9196,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9170,6 +9208,7 @@
         {
           "name": "MANEATERS",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9412,11 +9451,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SERPENTINE",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9515,11 +9556,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ONAGER",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9618,11 +9661,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RIBAULT",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9721,11 +9766,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOT POT",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9826,11 +9873,13 @@
                 "Special Rules": "Cumbersome, Ignores Armour Saves, Multiple Wounds (D3)"
               }
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10015,18 +10064,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Thump with Club"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -10084,57 +10146,41 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim suffers one or more unsaved Wounds, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Otherwise, it will attack using the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Swing with Club: The Giant fights using the Random Attacks (2D6) special rule this round. - Thump with Club: The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on their unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on their unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim suffers D3 Strength 6 Hits which Ignores Armour saves,\nand D6 Strength 3 hits are inflicted on their unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARIENBURG LAND SHIP",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10331,43 +10377,29 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Abandon Ship!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Land Ship is destroyed but left on the table as an area of impassable terrain. Any unit in base contact when this happens suffers D6 Strength 6 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Arrrrgh!"
-                },
-                {
-                  "emph": "",
-                  "text": " The ship moves the rolled distance and an additional D6\", as well as suffering D3 Wounds which Ignores Armour Saves. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 All hands to the Wheel!"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll a Scatter dice and move the ship the rolled distance in the direction shown on the dice. If a ‘Hit’ is rolled, the Land Ship remains stationary. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Boom!"
-                },
-                {
-                  "emph": "",
-                  "text": " All units within D6\" of the Land Ship’s hull suffers D6 Strength 6 Hits and the Land Ship is destroyed and removed from play."
-                }
-              ],
-              "text": "D6 Result 1 Abandon Ship! The Land Ship is destroyed but left on the table as an area of impassable terrain. Any unit in base contact when this happens suffers D6 Strength 6 hits. 2-3 Arrrrgh! The ship moves the rolled distance and an additional D6\", as well as suffering D3 Wounds which Ignores Armour Saves. 4-5 All hands to the Wheel! Roll a Scatter dice and move the ship the rolled distance in the direction shown on the dice. If a ‘Hit’ is rolled, the Land Ship remains stationary. 6 Boom! All units within D6\" of the Land Ship’s hull suffers D6 Strength 6 Hits and the Land Ship is destroyed and removed from play."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Abandon Ship! The Land Ship is destroyed but left on the table as an area of impassable\nterrain. Any unit in base contact when this happens suffers D6 Strength 6 hits."
+                ],
+                [
+                  "2-3",
+                  "Arrrrgh! The ship moves the rolled distance and an additional D6\", as well as suffering\nD3 Wounds which Ignores Armour Saves."
+                ],
+                [
+                  "4-5",
+                  "All hands to the Wheel! Roll a Scatter dice and move the ship the rolled distance in the\ndirection shown on the dice. If a ‘Hit’ is rolled, the Land Ship remains stationary."
+                ],
+                [
+                  "6",
+                  "Boom! All units within D6\" of the Land Ship’s hull suffers D6 Strength 6 Hits and the\nLand Ship is destroyed and removed from play."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -10410,7 +10442,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10421,6 +10454,7 @@
         {
           "name": "BORGIO THE BESIEGER",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10584,11 +10618,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUCREZZIA BELLADONNA",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10760,11 +10796,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LORENZO LUPO",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10918,19 +10956,29 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Pursuit Effect"
-                },
-                {
-                  "emph": "",
-                  "text": " 1-2 Running +1 Toughness 3-4 Wrestling +1 Attack 5-6 Rowing +1 Strength"
-                }
-              ],
-              "text": "D6 Pursuit Effect 1-2 Running +1 Toughness 3-4 Wrestling +1 Attack 5-6 Rowing +1 Strength"
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Pursuit",
+                  "Effect"
+                ],
+                [
+                  "1-2",
+                  "Running",
+                  "+1 Toughness"
+                ],
+                [
+                  "3-4",
+                  "Wrestling",
+                  "+1 Attack"
+                ],
+                [
+                  "5-6",
+                  "Rowing",
+                  "+1 Strength"
+                ]
+              ]
             },
             {
               "type": "field",
@@ -10952,11 +11000,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARCO COLOMBO",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11131,11 +11181,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LIETPOLD THE BLACK",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11271,11 +11323,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHAZAK KHAN",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11439,11 +11493,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MYDAS THE MEAN",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11556,35 +11612,25 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1-2 A bonus for all my loyal and trusty henchmen!"
-                },
-                {
-                  "emph": "",
-                  "text": " Until the start of your next turn, Mydas' Bodyguards gain +1 to hit in close combat. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 The paychest is safe with me lads!"
-                },
-                {
-                  "emph": "",
-                  "text": " Until the start of your next turn, all friendly units within 12\" of Mydas are Stubborn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 If we win the battle, all mercenaries will receive a bonus!"
-                },
-                {
-                  "emph": "",
-                  "text": " Until the start of your next turn, all friendly units within 12\" of Mydas add +1 to their combat resolution."
-                }
-              ],
-              "text": "D6 Result: 1-2 A bonus for all my loyal and trusty henchmen! Until the start of your next turn, Mydas' Bodyguards gain +1 to hit in close combat. 3-4 The paychest is safe with me lads! Until the start of your next turn, all friendly units within 12\" of Mydas are Stubborn. 5-6 If we win the battle, all mercenaries will receive a bonus! Until the start of your next turn, all friendly units within 12\" of Mydas add +1 to their combat resolution."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1-2",
+                  "A bonus for all my loyal and trusty henchmen! Until the start of your next turn, Mydas'\nBodyguards gain +1 to hit in close combat."
+                ],
+                [
+                  "3-4",
+                  "The paychest is safe with me lads! Until the start of your next turn, all friendly units within 12\" of\nMydas are Stubborn."
+                ],
+                [
+                  "5-6",
+                  "If we win the battle, all mercenaries will receive a bonus! Until the start of your next turn, all\nfriendly units within 12\" of Mydas add +1 to their combat resolution."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -11610,11 +11656,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LEONARDO DA MIRAGLIANO",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11796,11 +11844,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ULLI & MARQUAND",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11948,11 +11998,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NICODEMUS",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12037,11 +12089,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SIMIUS GANTT",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12199,11 +12253,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JOHANN THE KNIFE",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12310,11 +12366,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AENUR",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12417,11 +12475,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARIANNA CHEVAUX",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12572,7 +12632,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -12583,6 +12644,7 @@
         {
           "name": "Written & Edited by:",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12594,11 +12656,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12610,7 +12674,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

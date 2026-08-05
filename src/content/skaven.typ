@@ -119,7 +119,11 @@
 #namecost("PLAGUE", "")
 #namecost("Level 4 Cast on 15+", "")
 #para(((emph: "italic", text: "Plague"), (emph: "", text: " is a "), (emph: "bold", text: "direct damage"), (emph: "", text: " spell with a range of 18\" that may be cast on units in close combat. All models in the target unit must pass a Toughness test or suffer a Wound with the Ignores Armour save special rule. If cast on a unit engaged in close combat, all units in base contact (friend and foe) will be affected. After working out the effects of the spell and removing casualties, roll a D6 and consult the chart below and continue to apply the results until the spell ends or there are no more viable targets. A unit can only be the target of Plague once per Magic phase.")))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " Your opponent can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague. "), (emph: "bold", text: "2-4"), (emph: "", text: " The spell ends. "), (emph: "bold", text: "5-6"), (emph: "", text: " The casting player can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague.")))
+#chart((("D6", "Result"), ("1", "Your opponent can decide to end the spell or
+choose any one unit within 6\" of a previous
+target to be affected by Plague."), ("2-4", "The spell ends."), ("5-6", "The casting player can decide to end the spell
+or choose any one unit within 6\" of a
+previous target to be affected by Plague.")))
 ]
 
 #heading(level: 1, "THE LORE OF STEALTH")
@@ -263,11 +267,21 @@
 #para(((emph: "", text: "Clan Skryre only. One use only. A Doomrocket is a rocket launcher that uses the small template with the following profile:"),))
 #minitable(("Range", "Strength", "Special Rules"), ("12-36\"", "5", "Slow to Fire"))
 #para(((emph: "", text: "In case a Misfire is rolled, roll a D6 and consult the Doomrocket Misfire chart."),))
-#namecost("DOOMROCKET MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result: 1 Thoooooom:"), (emph: "", text: " Place the template over the model that fired the rocket and resolve the blast as normal. "), (emph: "bold", text: "2-5 Stabilising Fin Lost:"), (emph: "", text: " The template scatters 3D6\" from its original position. Resolve any hits as normal. "), (emph: "bold", text: "6 It's a Dud:"), (emph: "", text: " Resolve the shot as normal, but do not place the template. Any model directly below the impact spot suffers a single Strength 5 hit.")))
+#chartlabel("DOOMROCKET MISFIRE CHART")
+#chart((("D6", "Result:"), ("1", "Thoooooom: Place the template over the model
+that fired the rocket and resolve the blast as
+normal."), ("2-5", "Stabilising Fin Lost: The template scatters
+3D6\" from its original position. Resolve any
+hits as normal."), ("6", "It's a Dud: Resolve the shot as normal, but do
+not place the template. Any model directly
+below the impact spot suffers a single Strength
+5 hit.")))
 #namecost("FLESHGIFT VIAL", "30 points")
 #para(((emph: "", text: "Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:"),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The bearer suffers 1 Wound with no saves allowed. "), (emph: "bold", text: "2-4"), (emph: "", text: " One enemy unit in base contact suffer D3 Wounds with no saves allowed. "), (emph: "bold", text: "5-6"), (emph: "", text: " One enemy unit in base contact suffer D6 Wounds with no saves allowed.")))
+#chart((("D6", "Result"), ("1", "The bearer suffers 1 Wound with no saves
+allowed."), ("2-4", "One enemy unit in base contact suffer D3
+Wounds with no saves allowed."), ("5-6", "One enemy unit in base contact suffer D6
+Wounds with no saves allowed.")))
 #namecost("INFERNAL BOMB", "30 points")
 #para(((emph: "", text: "Clan Eshin only. One use only. As long as they are not Hidden, the bearer can place an Infernal Bomb anywhere along their Movement path during the Remaining Movement phase. Place a marker where the bomb is placed. You may choose to detonate the bomb at the start of any Movement sub-phase by rolling a D6. On a roll of 1, nothing happens. On a 2+, the bomb will explode; place the large round template centred on the marker. Any model at the template's centre takes a single Strength 10 Hit with the Multiple Wounds (D6) special rule. Any models touched by the template suffer a Strength 3 hit with the Armour Piercing (1) special rule."),))
 #namecost("SKALM", "30 points")
@@ -276,7 +290,15 @@
 #para(((emph: "", text: "All enemy units within 6\" of the bearer of this item must roll an additional D6 when taking Leadership tests and discard the lowest result."),))
 #namecost("SKAVENBREW", "30 points")
 #para(((emph: "", text: "One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:"),))
-#para(((emph: "bold", text: "D6 Result 1 Gone Bad:"), (emph: "", text: " The unit takes D6 Strength 3 automatic hits with the Ignores Armour save special rule. The Skavenbrew has no additional effect. "), (emph: "bold", text: "2-3 Inspired Hatred:"), (emph: "", text: " The unit gains the Hatred special rule. "), (emph: "bold", text: "4-5 Frenzied:"), (emph: "", text: " The unit gains the Frenzy special rule. "), (emph: "bold", text: "6 Rabid:"), (emph: "", text: " The unit gains the Frenzy and Hatred special rules. At the start of each of your subsequent turns, the unit suffers D6 automatic Wounds.")))
+#chart((("D6", "Result"), ("1", "Gone Bad: The unit takes D6 Strength 3
+automatic hits with the Ignores Armour save
+special rule. The Skavenbrew has no
+additional effect."), ("2-3", "Inspired Hatred: The unit gains the Hatred
+special rule."), ("4-5", "Frenzied: The unit gains the Frenzy special
+rule."), ("6", "Rabid: The unit gains the Frenzy and Hatred
+special rules. At the start of each of your
+subsequent turns, the unit suffers D6
+automatic Wounds.")))
 #namecost("DEATH GLOBE", "25 points")
 #para(((emph: "", text: "Clan Skryre only. One use only. Place the small round template with its centre anywhere within 6\" of the character and in his line of sight. The template then scatters D3\". All models touched by the template must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. If a 1 is rolled, centre the template on the model throwing the globe."),))
 #namecost("PIPES OF PIEBALD", "25 points")
@@ -483,8 +505,12 @@
 #field("BASE SIZE", "50x100 or 60x100")
 #field("SPECIAL RULES", "Fear, Frenzy, Magic Resistance (2)")
 #items(((runs: ((emph: "bold", text: "Altar of the Horned Rat:"), (emph: "", text: " This model and any unit it joins has the Stubborn special rule.")), sub: ()), (runs: ((emph: "bold", text: "Billowing Death:"), (emph: "", text: " Billowing Death follows the rules for Breath Weapons, but can be used in every turn. All models Hit must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for this test.")), sub: ()), (runs: ((emph: "bold", text: "Wrecker Attack:"), (emph: "", text: " The Plague Furnace may inflict a special attack after all other attacks have been resolved, inflicting an Artillery dice's worth of Strength 5 Hits against a single enemy unit to their front. A roll of a Misfire means something has gone wrong; roll a D6 on the Plague Furnace Mishap chart below.")), sub: ())))
-#namecost("PLAGUE FURNACE MISHAP CHART", "")
-#para(((emph: "bold", text: "D6 Result: 1-2 Crunch:"), (emph: "", text: " The Plague Furnace immediately suffers D3 Wounds and the unit pushing it takes D6 Strength 5 hits. "), (emph: "bold", text: "3-5 Bilious Cloud:"), (emph: "", text: " Immediately work out a special Billowing Death attack that causes 2D6 hits on any unit pushing the Plague Furnace. "), (emph: "bold", text: "6 Maddening Fumes:"), (emph: "", text: " Any unit pushing the Plague Furnace makes an additional full round of close combat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any casualties caused count towards combat resolution.")))
+#chartlabel("PLAGUE FURNACE MISHAP CHART")
+#chart((("D6", "Result:"), ("1-2", "Crunch: The Plague Furnace immediately suffers D3 Wounds and the unit pushing it takes D6
+Strength 5 hits."), ("3-5", "Bilious Cloud: Immediately work out a special Billowing Death attack that causes 2D6 hits on any
+unit pushing the Plague Furnace."), ("6", "Maddening Fumes: Any unit pushing the Plague Furnace makes an additional full round of close
+combat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any
+casualties caused count towards combat resolution.")))
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Plague Furnace has a Line of Sight value of 5."),), sub: ()),))
 
@@ -497,7 +523,23 @@
 #field("BASE SIZE", "50x100 or 60x100")
 #field("SPECIAL RULES", "Fear, Magical Ward (4+), Magic Resistance (2)")
 #items(((runs: ((emph: "bold", text: "Altar of the Horned Rat:"), (emph: "", text: " This model and any unit it joins has the Stubborn special rule.")), sub: ()), (runs: ((emph: "bold", text: "Tolling the Bell:"), (emph: "", text: " In your Magic phase, immediately after generating power dice, you can choose to ring the Screaming Bell. The owning player can choose to roll between 1-3 D6's and consult the table below to see what effect it has. If any doubles are rolled, the unit pushing the Screaming Bell immediately takes D6 Strength 4 Hits in addition to the result on the chart. If a triple is rolled, the unit pushing the Bell immediately suffers 2D6 Strength 5 hits, and the Screaming Bell itself suffer a single Strength 5 hit in addition to the result on the chart. If the Screaming Bell suffers one or more wounds inflicted by a shooting attack with a Strength of 5 or more, it will immediately ring once using one D6, even if it is destroyed as a result of the attack.")), sub: ())))
-#para(((emph: "bold", text: "Dice Result Effect 1 Not yet in stride:"), (emph: "", text: " No effect. "), (emph: "bold", text: "2-4 Unholy Clamour:"), (emph: "", text: " The unit pushing the Bell immediately moves using the Random Movement (D6) special rule. "), (emph: "bold", text: "5-8 Emboldened:"), (emph: "", text: " All friendly Skaven within 24\" of the Bell can re-roll failed Leadership tests until the start of your next turn. "), (emph: "bold", text: "9-10 Scorch:"), (emph: "", text: " The Bell itself (not the Grey Seer) immediately casts the "), (emph: "italic", text: "Scorch"), (emph: "", text: " spell from the "), (emph: "italic", text: "Lore of Ruin"), (emph: "", text: " with a Casting Value of 5 (this requires no power dice and cannot be increased in any way). "), (emph: "bold", text: "11-12 Deafening Peals:"), (emph: "", text: " All enemy Chariots, Shrines and War Machines with Toughness 7 or more that are within 18\" of the Screaming Bell immediately take a Wound with the Multiple Wounds (D3) special rule. Roll a D6 for each building within 18\" of the Bell – each collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the "), (emph: "italic", text: "Cracks Call"), (emph: "", text: " spell from the Lore of Ruin. "), (emph: "bold", text: "13 A Stirring Beyond the Veil:"), (emph: "", text: " All enemy units within 12\" of the Bell take D6 Strength 4 hits (as from shooting). Additionally, if the unit pushing the Screaming Bell is in combat, it gains the Fight in Extra Ranks (1) special rule for the remainder of the turn. "), (emph: "bold", text: "14-16 Wall of Unholy Sound:"), (emph: "", text: " All models in each friendly unit within 12\" of the Screaming Bell gain +1 Attack until the end of the player turn. Roll a D6 for each building within 24\" - each collapses on a roll of 4+ (see Deafening Peals). "), (emph: "bold", text: "17 Avalanche of Energy:"), (emph: "", text: " All friendly models within 12\" of the Bell gain +1 Attack and may re-roll failed To Hit and To Wound rolls until the end of the player turn. Any friendly Skaven units within 12\" of the Screaming Bell and not in close combat can immediately move using the Random Movement (D6) special rule. "), (emph: "bold", text: "18 Apocalyptic Doom:"), (emph: "", text: " The Screaming Bell is destroyed. All models within 12\" take a Strength 4 hit with the Ignores Armour saves special rule.")))
+#chart((("Dice Result", "Effect"), ("1", "Not yet in stride: No effect."), ("2-4", "Unholy Clamour: The unit pushing the Bell immediately moves using the Random
+Movement (D6) special rule."), ("5-8", "Emboldened: All friendly Skaven within 24\" of the Bell can re-roll failed Leadership tests
+until the start of your next turn."), ("9-10", "Scorch: The Bell itself (not the Grey Seer) immediately casts the Scorch spell from the Lore
+of Ruin with a Casting Value of 5 (this requires no power dice and cannot be increased in
+any way)."), ("11-12", "Deafening Peals: All enemy Chariots, Shrines and War Machines with Toughness 7 or more
+that are within 18\" of the Screaming Bell immediately take a Wound with the Multiple
+Wounds (D3) special rule. Roll a D6 for each building within 18\" of the Bell – each
+collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the
+Cracks Call spell from the Lore of Ruin."), ("13", "A Stirring Beyond the Veil: All enemy units within 12\" of the Bell take D6 Strength 4 hits
+(as from shooting). Additionally, if the unit pushing the Screaming Bell is in combat, it gains
+the Fight in Extra Ranks (1) special rule for the remainder of the turn."), ("14-16", "Wall of Unholy Sound: All models in each friendly unit within 12\" of the Screaming Bell
+gain +1 Attack until the end of the player turn. Roll a D6 for each building within 24\" - each
+collapses on a roll of 4+ (see Deafening Peals)."), ("17", "Avalanche of Energy: All friendly models within 12\" of the Bell gain +1 Attack and may
+re-roll failed To Hit and To Wound rolls until the end of the player turn. Any friendly Skaven
+units within 12\" of the Screaming Bell and not in close combat can immediately move using
+the Random Movement (D6) special rule."), ("18", "Apocalyptic Doom: The Screaming Bell is destroyed. All models within 12\" take a Strength
+4 hit with the Ignores Armour saves special rule.")))
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Screaming Bell has a Line of Sight value of 5."),), sub: ()),))
 
@@ -666,8 +708,11 @@
 #items(((runs: ((emph: "bold", text: "Warpfire Thrower:"), (emph: "", text: " A warpfire thrower is a fire thrower with the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Armour Piercing (1), Cumbersome, Flaming Attacks, Magical Attacks, Multiple Wounds (D3)"))
 #para(((emph: "", text: "In case a Misfire is rolled, roll a D6 and consult the Warpfire Thrower Misfire chart."),))
-#namecost("WARPFIRE THROWER MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Whompfff:"), (emph: "", text: " Place the large round template over the Warpfire Thrower. Any model touched by the template suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from play as a casualty. "), (emph: "bold", text: "3-4 Fuel Leak:"), (emph: "", text: " The Weapon Team flees in random direction as decided by the scatter dice before exploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above. "), (emph: "bold", text: "5-6 Pppphhtt:"), (emph: "", text: " The Warpfire Thrower may not fire this turn.")))
+#chartlabel("WARPFIRE THROWER MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Whompfff: Place the large round template over the Warpfire Thrower. Any model touched by the
+template suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from
+play as a casualty."), ("3-4", "Fuel Leak: The Weapon Team flees in random direction as decided by the scatter dice before
+exploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above."), ("5-6", "Pppphhtt: The Warpfire Thrower may not fire this turn.")))
 #field("SPECIAL RULES", "Scurry Away, Weapon Team")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units."),), sub: ()),))
@@ -680,8 +725,12 @@
 #items(((runs: ((emph: "bold", text: "Ratling Gun:"), (emph: "", text: " A ratling gun is an organ gun with the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "4", "Armour Piercing (1), Magical Attacks, Multiple Shots (Artillery Dice), Rapid Fire, Ponderous"))
 #para(((emph: "", text: "After the first Artillery Dice is rolled, you can now decide whether to stop or to roll an additional Artillery Dice, and repeat the process up to a maximum of 3 Artillery Dice. In case a Misfire is rolled, roll a D6 and consult the Ratling Gun Misfire chart, no further Artillery Dice may be rolled."),))
-#namecost("RATLING GUN MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Slam:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun is removed from play as a casualty. "), (emph: "bold", text: "3-4 Spins Wildly:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun fires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to in all directions from the Ratling Gun. "), (emph: "bold", text: "5-6 Bbbbrrrrrttt:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored.")))
+#chartlabel("RATLING GUN MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun is
+removed from play as a casualty."), ("3-4", "Spins Wildly: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun
+fires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to
+in all directions from the Ratling Gun."), ("5-6", "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is
+ignored.")))
 #field("SPECIAL RULES", "Scurry Away, Weapon Team")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units."),), sub: ()),))
@@ -694,8 +743,11 @@
 #items(((runs: ((emph: "bold", text: "Warpvolt Scourger:"), (emph: "", text: " A warpvolt scourger is an artillery weapon with the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "6", "Lightning Attacks, Magical Attacks, Multiple Shots (D6), Ponderous"))
 #para(((emph: "", text: "If you roll a 1 when determining the number of shots fired, the Warpvolt Scourger has Misfired. Roll a D6 and consult the Warpvolt Scourger Misfire chart."),))
-#namecost("WARPVOLT SCOURGER MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Electric Surge:"), (emph: "", text: " Place the large round template over the Warpvolt Scourger. Any model touched by the template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed from play as a casualty. "), (emph: "bold", text: "3-4 Short Circuit:"), (emph: "", text: " All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt Scourger suffers 1 Hit. "), (emph: "bold", text: "5-6 Power Outage:"), (emph: "", text: " The Warpvolt Scourger does not fire this turn.")))
+#chartlabel("WARPVOLT SCOURGER MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Electric Surge: Place the large round template over the Warpvolt Scourger. Any model touched by
+the template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed
+from play as a casualty."), ("3-4", "Short Circuit: All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt
+Scourger suffers 1 Hit."), ("5-6", "Power Outage: The Warpvolt Scourger does not fire this turn.")))
 #field("SPECIAL RULES", "Scurry Away, Weapon Team")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units."),), sub: ()),))
@@ -708,8 +760,10 @@
 #items(((runs: ((emph: "bold", text: "Poisoned Wind Mortar:"), (emph: "", text: " A poisoned wind mortar is a mortar that uses the small template and the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("12-36\"", "n/a", "Cumbersome, Ignores Armour Saves, Magical Attacks"))
 #para(((emph: "", text: "Models hit by a Poisoned Wind Mortar must pass a Toughness test or suffer a Wound. If the Poisoned Wind Mortar moves and fires in the same turn, the shot will always be fired indirectly. In case a Misfire is rolled, roll a D6 and consult the Poisoned Wind Mortar Misfire chart."),))
-#namecost("POISONED WIND MORTAR MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Foomph:"), (emph: "", text: " Place the large round template over the Poisoned Wind Mortar. Any model touched by the template suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is removed from play as a casualty. "), (emph: "bold", text: "3-4 Clogged:"), (emph: "", text: " The Poisoned Wind Mortar may not fire this turn. "), (emph: "bold", text: "5-6 Wildly off Target:"), (emph: "", text: " The template scatters 3D6\" from its original position. Resolve any hits as normal.")))
+#chartlabel("POISONED WIND MORTAR MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Foomph: Place the large round template over the Poisoned Wind Mortar. Any model touched by the
+template suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is
+removed from play as a casualty."), ("3-4", "Clogged: The Poisoned Wind Mortar may not fire this turn."), ("5-6", "Wildly off Target: The template scatters 3D6\" from its original position. Resolve any hits as normal.")))
 #field("SPECIAL RULES", "Scurry Away, Weapon Team")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units."),), sub: ()),))
@@ -727,8 +781,14 @@
 #para(((emph: "", text: "Roll a scatter dice and an artillery dice. If you roll a Hit on the scatter dice, the marker stays in place. If you roll an arrow, move the marker the number, in inches, indicated by the artillery dice in the direction shown. If the marker is under a friendly unit, impassable terrain or a building, place it 1\" away from the closest edge of the unit/terrain."),))
 #para(((emph: "", text: "Once the final position of the marker is established, place the Warpgrinder and their unit in a legal formation such that it touches the marker, facing any direction. If the marker is under an enemy unit, you may place your unit into base contact with the enemy unit in their front arc; your unit will counts as charging this turn."),))
 #para(((emph: "", text: "If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the Warpgrinder and their unit do not emerge. Instead, remove the marker and roll on the Warp-grinder Misfire table. If they emerge successfully, they may act normally this turn."),))
-#namecost("WARP-GRINDER MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Cave-in:"), (emph: "", text: " The Warp-grinder and any unit deploying with it are removed as casualties. "), (emph: "bold", text: "3-4 Partial Collapse:"), (emph: "", text: " Make a Strength test for each model in the parent unit, if passed the model is placed as normal. Models that fail are removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. After this, the Warp- grinder is removed from play as a casualty. "), (emph: "bold", text: "5-6 Should Have Taken That Left Turn:"), (emph: "", text: " Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Warp-grinder and any unit deploying with it emerge. They cannot move or charge on the turn they emerge.")))
+#chartlabel("WARP-GRINDER MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Cave-in: The Warp-grinder and any unit deploying with it are removed as casualties."), ("3-4", "Partial Collapse: Make a Strength test for each model in the parent unit, if passed the model is
+placed as normal. Models that fail are removed as casualties. Any models that survive may not move
+or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat
+they have the Always Strikes Last special rule for the remainder of the turn. After this, the Warp-
+grinder is removed from play as a casualty."), ("5-6", "Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18\" of the
+original position on the table and this is where the Warp-grinder and any unit deploying with it
+emerge. They cannot move or charge on the turn they emerge.")))
 #field("SPECIAL RULES", "Scurry Away, Weapon Team")
 
 #entry("DOOM-FLAYER")
@@ -739,8 +799,11 @@
 #field("EQUIPMENT", "Hand weapon, light armour")
 #field("SPECIAL RULES", "Scurry Away")
 #items(((runs: ((emph: "bold", text: "The Best Defence:"), (emph: "", text: " The Doom-flayer gains +2 to its armour save against all models attacking it from the front.")), sub: ()), (runs: ((emph: "bold", text: "Whirling Death:"), (emph: "", text: " Doom-flayers only inflict Impact Hits (D3) on the charge. In addition, instead of attacking normally, the Doom-flayer causes one artillery dice worth of Impact Hits at the start of each close combat phase. In case a Misfire is rolled, roll a D6 and consult the Doom-flayer Mishap chart.")), sub: ())))
-#namecost("DOOM-FLAYER MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Ba-Blam:"), (emph: "", text: " Place the large round template over the Doom-flayer. Any model touched by the template suffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is removed from play as a casualty. "), (emph: "bold", text: "3-5 ZZZZzap:"), (emph: "", text: " The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning Attacks special rule. "), (emph: "bold", text: "6 Power Failure:"), (emph: "", text: " The Doom-flayer may not attack or use The Best Defence this turn.")))
+#chartlabel("DOOM-FLAYER MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Ba-Blam: Place the large round template over the Doom-flayer. Any model touched by the template
+suffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is
+removed from play as a casualty."), ("3-5", "ZZZZzap: The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning
+Attacks special rule."), ("6", "Power Failure: The Doom-flayer may not attack or use The Best Defence this turn.")))
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take an additional crew +5 points"),), sub: ()),))
 
@@ -816,14 +879,21 @@
 #field("BASE SIZE", "60x100")
 #field("SPECIAL RULES", "Impact Hits (D6), Immunity (Psychology), Random Movement (3D6), Regeneration (4+), Stubborn")
 #items(((runs: ((emph: "bold", text: "Shambling Horror:"), (emph: "", text: " If two or more 1's or any triples are rolled when the Abomination is making its Random Movement, do not move the Hell Pit Abomination; instead roll a D6 on the Berserk Abomination chart.")), sub: ()),))
-#namecost("BERSERK ABOMINATION CHART", "")
-#para(((emph: "bold", text: "D6 Result 1 Grinding Halt:"), (emph: "", text: " The beast does not move this turn. "), (emph: "bold", text: "2-5 Blind Fury:"), (emph: "", text: " The model moves the distance rolled in a random direction determined by a scatter dice. "), (emph: "bold", text: "6 Fluid Injected:"), (emph: "", text: " The Hell Pit Abomination moves as normal, and will increase its Strength by +1 for the remainder of the game. Further Berserk Abomination rolls of 6 will not increase the beast’s profile, but will instead immediately inflict D6 wounds on it.")))
+#chartlabel("BERSERK ABOMINATION CHART")
+#chart((("D6", "Result"), ("1", "Grinding Halt: The beast does not move this turn."), ("2-5", "Blind Fury: The model moves the distance rolled in a random direction determined by a scatter
+dice."), ("6", "Fluid Injected: The Hell Pit Abomination moves as normal, and will increase its Strength by +1
+for the remainder of the game. Further Berserk Abomination rolls of 6 will not increase the beast’s
+profile, but will instead immediately inflict D6 wounds on it.")))
 #items(((runs: ((emph: "bold", text: "Special Close Combat Attacks:"), (emph: "", text: " Abominations do not attack in the same way as other creatures. Roll a D6 when it is the Hell Pit Abomination's turn to attack to see what the mutated beast does:")), sub: ()),))
-#namecost("CLOSE COMBAT ATTACKS CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Feed:"), (emph: "", text: " All enemy models in base contact suffer an automatic Strength 6 hit with the Multiple Wounds (D3) special rules. "), (emph: "bold", text: "3-4 Flailing Fists:"), (emph: "", text: " The Hell Pit Abomination attacks using the Random Attacks (2D6) special rule. "), (emph: "bold", text: "5-6 Avalanche of Flesh:"), (emph: "", text: " Every enemy model in base contact with the Abomination must pass an Initiative test or suffer an automatic Strength 6 hit. Additionally, the Hell Pit Abomination attacks using the Random Attacks (D6) special rule.")))
+#chartlabel("CLOSE COMBAT ATTACKS CHART")
+#chart((("D6", "Result"), ("1-2", "Feed: All enemy models in base contact suffer an automatic Strength 6 hit with the Multiple
+Wounds (D3) special rules."), ("3-4", "Flailing Fists: The Hell Pit Abomination attacks using the Random Attacks (2D6) special rule."), ("5-6", "Avalanche of Flesh: Every enemy model in base contact with the Abomination must pass an
+Initiative test or suffer an automatic Strength 6 hit. Additionally, the Hell Pit Abomination attacks
+using the Random Attacks (D6) special rule.")))
 #items(((runs: ((emph: "bold", text: "Too Horrible to Die:"), (emph: "", text: " As soon as the Hell Pit Abomination loses its last Wound, roll a D6 and check the Too Horrible to Die chart:")), sub: ()),))
-#namecost("TOO HORRIBLE TO DIE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-3 Dead:"), (emph: "", text: " The Hell Pit Abomination is removed from play as casualty. "), (emph: "bold", text: "4-5 The Rats Emerge:"), (emph: "", text: " All units in base contact with the Abomination take 2D6 Strength 2 Hits. The Hell Pit Abomination is then removed from play as a casualty. "), (emph: "bold", text: "6 It's Alive:"), (emph: "", text: " The Hell Pit Abomination remains alive with D3 Wounds left.")))
+#chartlabel("TOO HORRIBLE TO DIE CHART")
+#chart((("D6", "Result"), ("1-3", "Dead: The Hell Pit Abomination is removed from play as casualty."), ("4-5", "The Rats Emerge: All units in base contact with the Abomination take 2D6 Strength 2 Hits. The
+Hell Pit Abomination is then removed from play as a casualty."), ("6", "It's Alive: The Hell Pit Abomination remains alive with D3 Wounds left.")))
 #field("UPGRADES", "")
 #items(((runs: ((emph: "bold", text: "Warpstone Spikes:"), (emph: "", text: " The Hell Pit Abomination gains the Magical Attacks and Magic Resistance (1) special rules.")), sub: ()),))
 #field("OPTIONS", "")
@@ -838,8 +908,9 @@
 #items(((runs: ((emph: "bold", text: "Plagueclaw Catapult:"), (emph: "", text: " A plagueclaw catapult is a stone thrower that uses the large round temple and the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "2", "Ignores Armour Saves"))
 #para(((emph: "", text: "Any unit that takes one or more wounds must immediately take a Panic test. In case a Misfire is rolled, roll a D6 and consult the Plagueclaw Misfire chart."),))
-#namecost("PLAGUECLAW MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Twang:"), (emph: "", text: " The war machine is destroyed and is removed from the battle. "), (emph: "bold", text: "3-5 Suspiciously Off Target:"), (emph: "", text: " The opposing player may reposition the template anywhere within 3D6\" of the intended target position. "), (emph: "bold", text: "6 Accident:"), (emph: "", text: " The Plagueclaw Catapult cannot fire this turn.")))
+#chartlabel("PLAGUECLAW MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Twang: The war machine is destroyed and is removed from the battle."), ("3-5", "Suspiciously Off Target: The opposing player may reposition the template anywhere within 3D6\" of
+the intended target position."), ("6", "Accident: The Plagueclaw Catapult cannot fire this turn.")))
 #field("SPECIAL RULES", "Frenzy")
 
 #entry("WARP LIGHTNING CANNON")
@@ -855,8 +926,11 @@
 #para(((emph: "", text: "The Warp Lightning Cannon fires like the normal cannon, with the following exceptions. A roll of a Misfire on the bounce means no hits at all are suffered. If a number is rolled, centre the small round template where the shot first lands before the bounce, to represent the crackling and exploding ball of energy. The shot then bounces like a normal cannon ball."),))
 #para(((emph: "", text: "All models touched by the template or the bounce suffer a hit at a Strength equal to the result on the Artillery Dice for the bounce roll. Note that only the model under the centre of the template and the bounce itself suffers Multiple Wounds."),))
 #para(((emph: "", text: "The Warp Lightning Cannon cannot fire grapeshot."),))
-#namecost("WARP LIGHTNING MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Meltdown:"), (emph: "", text: " The Warp Lightning Cannon is removed from play as a casualty. "), (emph: "bold", text: "3-5 Energy Overload:"), (emph: "", text: " Roll the scatter dice and turn the cannon to face the direction rolled. Resolve a shot at maximum Strength (10) that emanates from the barrel and travels along the ground in a straight line 4D6\" before terminating in a large round template. "), (emph: "bold", text: "6 Spluttering Fizzle:"), (emph: "", text: " The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next turn.")))
+#chartlabel("WARP LIGHTNING MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Meltdown: The Warp Lightning Cannon is removed from play as a casualty."), ("3-5", "Energy Overload: Roll the scatter dice and turn the cannon to face the direction rolled. Resolve a
+shot at maximum Strength (10) that emanates from the barrel and travels along the ground in a
+straight line 4D6\" before terminating in a large round template."), ("6", "Spluttering Fizzle: The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next
+turn.")))
 
 #entry("RATLING WARPBLASTER")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ratling Warpblaster", "-", "-", "-", "-", "7", "-", "-", "-", "-", "100"), ("Crew", "5", "3", "3", "3", "3", "1", "4", "1", "5", "")))
@@ -868,8 +942,12 @@
 #items(((runs: ((emph: "bold", text: "Ratling Warpblaster:"), (emph: "", text: " A Ratling Warpblaster is an organ gun with the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("15/30\"", "5", "Armour Piercing (1), Magical Attacks, Multiple Shots (Artillery Dice), Rapid Fire"))
 #para(((emph: "", text: "After the first Artillery Dice is rolled, you can now decide whether to stop or to roll an additional Artillery Dice, and repeat the process up to a maximum of 3 Artillery Dice. In case a Misfire is rolled, roll a D6 and consult the Warpblaster Misfire chart, no further Artillery Dice may be rolled."),))
-#namecost("WARPBLASTER MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Slam:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster is removed from play as a casualty. "), (emph: "bold", text: "3-4 Uncontrollable Recoil:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front arc that you can draw Line of Sight to. "), (emph: "bold", text: "5-6 Bbbbrrrrrttt:"), (emph: "", text: " Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored.")))
+#chartlabel("WARPBLASTER MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster is
+removed from play as a casualty."), ("3-4", "Uncontrollable Recoil: Resolve the shots from the previous Artillery Dice rolled. After this, the
+Ratling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front
+arc that you can draw Line of Sight to."), ("5-6", "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is
+ignored.")))
 
 #entry("DOOMWHEEL")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Doomwheel", "*", "-", "-", "6", "6", "5", "-", "-", "-", "175"), ("Warlock Engineer", "-", "3", "3", "3", "-", "-", "4", "1", "7", "")))
@@ -885,8 +963,13 @@
 #para(((emph: "", text: "Roll an Artillery dice to determine the Strength for the bolts, measuring from the Doomwheel's base. If the closest unit dies from the first bolt, the second bolt hits the next closest unit in range, and so on. If two targets are equidistant, the owning player may choose which unit is struck."),))
 #para(((emph: "", text: "If you roll a misfire result something has gone awry. No more shots are fired this turn and you must immediately roll a D6 and consult the Doomwheel Mishap chart."),))
 #para(((emph: "", text: "Dice"),))
-#namecost("DOOMWHEEL MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Disaster:"), (emph: "", text: " The Doomwheel immediately takes D6 Strength 6 hits. In addition, from now on roll one less D6 for the Doomwheel's movement. If reduced to zero dice the Doomwheel is removed as a casualty. "), (emph: "bold", text: "3-5 Out of Control:"), (emph: "", text: " If the Doomwheel is unengaged, it immediately moves in a random direction determined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits as normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a friendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\". "), (emph: "bold", text: "6 Burst of Speed:"), (emph: "", text: " The Doomwheel gains the Random Movement (4D6) special rule.")))
+#chartlabel("DOOMWHEEL MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "Disaster: The Doomwheel immediately takes D6 Strength 6 hits. In addition, from now on roll one
+less D6 for the Doomwheel's movement. If reduced to zero dice the Doomwheel is removed as a
+casualty."), ("3-5", "Out of Control: If the Doomwheel is unengaged, it immediately moves in a random direction
+determined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits
+as normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a
+friendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\"."), ("6", "Burst of Speed: The Doomwheel gains the Random Movement (4D6) special rule.")))
 
 #heading(level: 1, "SPECIAL CHARACTERS")
 
@@ -1080,7 +1163,9 @@
 #field("MAGIC", "Lord Skrolk is a Level 2 Wizard who uses the Lore of Plague.")
 #field("MAGIC ITEMS", "")
 #items(((runs: ((emph: "bold", text: "Rod of Corruption:"), (emph: "", text: " Magic Weapon. Plague Censer. Models hit by the rod must pass a single Toughness test (regardless of the number of hits) or instantly be removed as a casualty with no saves allowed. If the victim passes the Toughness test, roll To Wound as normal.")), sub: ()), (runs: ((emph: "bold", text: "The Liber Bubonicus:"), (emph: "", text: " Arcane Item. Relic. Bound Spell (Level 3, cast on 9+). The Liber Bubonicus contains a "), (emph: "bold", text: "direct damage"), (emph: "", text: " spell with a range of 24\". When cast, roll a D6 to see the effect:")), sub: ())))
-#para(((emph: "bold", text: "D6 Result 1 Squeaking, Squealing Nonsense:"), (emph: "", text: " No effect. "), (emph: "bold", text: "2-4 A Withering Pox:"), (emph: "", text: " Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves special rule. "), (emph: "bold", text: "5-6 Death Plague:"), (emph: "", text: " Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special rule.")))
+#chart((("D6", "Result"), ("1", "Squeaking, Squealing Nonsense: No effect."), ("2-4", "A Withering Pox: Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves
+special rule."), ("5-6", "Death Plague: Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special
+rule.")))
 #field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers, Terror")
 #items(((runs: ((emph: "bold", text: "Aura of Pestilence:"), (emph: "", text: " Any units in base contact with Lord Skrolk that are not part of Clan Pestilens suffer -1 To Hit.")), sub: ()),))
 
@@ -1103,8 +1188,9 @@
 #para(((emph: "", text: "Warlock Engineers)"),))
 #field("MAGIC ITEMS", "")
 #items(((runs: ((emph: "bold", text: "Storm Daemon:"), (emph: "", text: " Magic Weapon. Polearm. Attacks with this weapon have the Lightning Attacks special rule. In addition, the Storm Daemon contains a Bound Spell (Level 4, cast on 12+). This is a "), (emph: "bold", text: "magic missile"), (emph: "", text: " with a range of 24\" that causes an artillery dice worth of Strength 5 hits with the Lightning Attacks special rule. In the case of a misfire, no shots are fired, but instead, roll a D6 and consult the Storm Daemon Misfire Chart.")), sub: ()),))
-#namecost("STORM DAEMON MISFIRE CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 ZZZzark:"), (emph: "", text: " Ikit Claw and every model in base contact with him suffer a Strength 5 hit. "), (emph: "bold", text: "3-5 Disruption:"), (emph: "", text: " Ikit may not cast spells for the rest of this Skaven Magic phase while he sorts his power cables out. "), (emph: "bold", text: "6 Full Power:"), (emph: "", text: " Ikit may immediately add D3 power dice to the pool for the current Magic phase.")))
+#chartlabel("STORM DAEMON MISFIRE CHART")
+#chart((("D6", "Result"), ("1-2", "ZZZzark: Ikit Claw and every model in base contact with him suffer a Strength 5 hit."), ("3-5", "Disruption: Ikit may not cast spells for the rest of this Skaven Magic phase while he sorts his power
+cables out."), ("6", "Full Power: Ikit may immediately add D3 power dice to the pool for the current Magic phase.")))
 #items(((runs: ((emph: "bold", text: "Iron Frame:"), (emph: "", text: " Magic Armour. Medium armour. The suit gives Ikit +1 Strength (included in his profile) and a Magical Ward (5+). Once per game, Ikit can fire the warpfire projector housed in the device. This is Strength 5 Breath Weapon attack with the Flaming Attacks, Magical Attacks and Multiple Wounds (D3) special rules.")), sub: ()),))
 #field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
 

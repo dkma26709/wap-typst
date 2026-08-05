@@ -8,10 +8,10 @@
   "slug": "beastmen",
   "image_dir": "images/beastmen",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 709
     },
     "145": {
-      "file": "img-0145.png",
+      "file": "img-0145.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "174": {
-      "file": "img-0174.png",
+      "file": "img-0174.jpg",
       "first_page": 19,
       "background": true,
       "width": 1580,
@@ -117,35 +117,25 @@
           "text": "Roll a D6 for each unit containing models with this special rule at the beginning of each of their turns and consult the table below to see what effect they have until the start of their next turn:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1-2 Drunken Stupor:"
-            },
-            {
-              "emph": "",
-              "text": " The unit is subject to the Stupidity special rule. "
-            },
-            {
-              "emph": "bold",
-              "text": "3-4 Drunken Frenzy:"
-            },
-            {
-              "emph": "",
-              "text": " The unit is subject to the Frenzy special rule. "
-            },
-            {
-              "emph": "bold",
-              "text": "5-6 Drunken Bravado:"
-            },
-            {
-              "emph": "",
-              "text": " The unit is subject to the Stubborn special rule."
-            }
-          ],
-          "text": "D6 Result 1-2 Drunken Stupor: The unit is subject to the Stupidity special rule. 3-4 Drunken Frenzy: The unit is subject to the Frenzy special rule. 5-6 Drunken Bravado: The unit is subject to the Stubborn special rule."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1-2",
+              "Drunken Stupor: The unit is subject to the\nStupidity special rule."
+            ],
+            [
+              "3-4",
+              "Drunken Frenzy: The unit is subject to the\nFrenzy special rule."
+            ],
+            [
+              "5-6",
+              "Drunken Bravado: The unit is subject to the\nStubborn special rule."
+            ]
+          ]
         },
         {
           "type": "namecost",
@@ -2911,6 +2901,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3184,11 +3175,13 @@
               ],
               "text": "All To Wound rolls of 6 with the Scimitar of Skultar have the Ignores Armour Saves special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3270,11 +3263,13 @@
               ],
               "text": "Medium armour. At the end of each round of close combat, roll a D6 for each magic weapon that Hit the wearer of the armour. On the result of a 2+, the enemy item loses its special rules and ceases to count as a magic weapon. Instead it will count as a normal weapon of its type for the remainder of the battle."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3404,11 +3399,13 @@
               ],
               "text": "The Pelt of the Dark Young gives the wearer the Magic Resistance (1) and Natural Armour (6+) special rules."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3554,11 +3551,13 @@
               ],
               "text": "Relic. Choose an enemy unit within 24\" at the start of each Magic phase. Any failed To Wound rolls made during the Magic phase against that unit may be re- rolled."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3792,11 +3791,13 @@
               ],
               "text": "At the start of each of your turns, the bearer of this item may choose one enemy unit within Line of Sight. That unit must reveal any Hidden models, upgrades and magic items it might have."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3958,7 +3959,8 @@
               ],
               "text": "The unit carrying this standard automatically enters the battlefield when using the Ambushers special rule (no roll is needed)."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -3982,6 +3984,7 @@
         {
           "name": "CHIEFTAINS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4312,11 +4315,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BRAY-SHAMANS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4574,11 +4579,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MINOTAUR CHAMPIONS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4823,11 +4830,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARHOOFS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5085,11 +5094,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HALFHORNS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5262,7 +5273,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5273,6 +5285,7 @@
         {
           "name": "GOR HERD",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5402,11 +5415,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOR RAIDERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5536,11 +5551,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNGOR HERD",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5670,11 +5687,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNGOR RAIDERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5784,11 +5803,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNGOR ARCHERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5918,11 +5939,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MUTANTS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6002,65 +6025,45 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1 Pincer Hand:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Armour Piercing (1) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Scales:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Natural Armour (6+) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Animalistic Legs:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Movement. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Tentacle-like Arms:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Attack. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Hulking:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Strength. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Grossly Fat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Toughness."
-                }
-              ],
-              "text": "D6 Result: 1 Pincer Hand: The unit gains the Armour Piercing (1) special rule. 2 Scales: The unit gains the Natural Armour (6+) special rule. 3 Animalistic Legs: The unit gains +1 Movement. 4 Tentacle-like Arms: The unit gains +1 Attack. 5 Hulking: The unit gains +1 Strength. 6 Grossly Fat: The unit gains +1 Toughness."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "Pincer Hand: The unit gains the Armour Piercing (1) special rule."
+                ],
+                [
+                  "2",
+                  "Scales: The unit gains the Natural Armour (6+) special rule."
+                ],
+                [
+                  "3",
+                  "Animalistic Legs: The unit gains +1 Movement."
+                ],
+                [
+                  "4",
+                  "Tentacle-like Arms: The unit gains +1 Attack."
+                ],
+                [
+                  "5",
+                  "Hulking: The unit gains +1 Strength."
+                ],
+                [
+                  "6",
+                  "Grossly Fat: The unit gains +1 Toughness."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARHOUNDS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6140,11 +6143,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HARPIES",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6219,7 +6224,8 @@
               "label": "SPECIAL RULES",
               "value": "Expendable, Independent, Fly (10)"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6230,6 +6236,7 @@
         {
           "name": "BESTIGORS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6482,11 +6489,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MINOTAURS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6682,11 +6691,13 @@
               "label": "SPECIAL RULES",
               "value": "Bloodgreed, Impact Hits (1)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CENTIGORS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6884,11 +6895,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TUSKGOR CHARIOT",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7063,11 +7076,13 @@
               "label": "SPECIAL RULES",
               "value": "Natural Armour (6+), Primal Fury, Tusker Charge (Tuskgor only)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAZORGORS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7122,11 +7137,13 @@
               "label": "SPECIAL RULES",
               "value": "Impact Hits (D3), Natural Armour (6+), Tusker Charge"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BALEWOLVES",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7181,11 +7198,13 @@
               "label": "SPECIAL RULES",
               "value": "Killing Blow, Natural Armour (5+), Regeneration (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TROLLS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7313,11 +7332,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPAWN OF CHAOS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7515,11 +7536,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PREYTON",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7694,11 +7717,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COCKATRICE",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7791,11 +7816,13 @@
               ],
               "text": "When rolling To Wound, substitute the target's Toughness with its Initiative value. This attack does not suffer any To Hit penalties."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANTICORE",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7961,7 +7988,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7972,6 +8000,7 @@
         {
           "name": "DRAGON OGRES",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8138,11 +8167,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON OGRE SHAGGOTH",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8281,11 +8312,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHORGON",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8368,11 +8401,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CYGOR",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8497,11 +8532,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JABBERSLYTHE",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8684,11 +8721,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HAG TREE",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8795,11 +8834,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SPAWN OF CHAOS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8972,11 +9013,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHIMERA",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9166,11 +9209,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAMHORN",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9244,11 +9289,13 @@
               "label": "SPECIAL RULES",
               "value": "Frenzy, Impact Hits (D6+2), Natural Armour (4+), Primal Fury (Bestigors only), Stubborn, Tusker Charge"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9410,18 +9457,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4-6",
+                  "Swing with Club"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -9433,18 +9497,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Thump with Club"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -9502,53 +9579,36 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. Otherwise, it will instead use the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Swing with Club: The Giant fights using the Random Attacks (2D6) special rule this round. - Thump with Club: The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result. If no enemy units are in range,\ntreat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9559,6 +9619,7 @@
         {
           "name": "GORTHOR THE CRUEL",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9765,11 +9826,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHAZRAK ONE-EYE",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9938,11 +10001,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORGHUR THE SHADOWGAVE",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10115,11 +10180,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MALAGOR THE DARK OMEN",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10296,11 +10363,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KRALMAW",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10468,11 +10537,13 @@
               ],
               "text": "Note that the Leering Spirit marker is ignored for the purposes of movement, combat and line of sight, as if it was not there. Should the presence of it interfere with the position of units, simply make note of its position and move it aside, replacing it when convenient to do so."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOLOKH SLUGTONGUE",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10581,11 +10652,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TAUROX THE BRASS BULL",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10702,11 +10775,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHORROS WARHOOF",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10837,11 +10912,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNGROL FOUR-HORN",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10944,11 +11021,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOONCLAW, SON OF MORRSLIEB",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11104,7 +11183,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -11115,6 +11195,7 @@
         {
           "name": "Written & Edited by:",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11126,11 +11207,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11142,7 +11225,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

@@ -6,7 +6,7 @@
 #cover(
   title: "Kislev",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "../assets/covers/kislev.png",
+  art: "/assets/covers/kislev.png",
 )
 
 #colophon((

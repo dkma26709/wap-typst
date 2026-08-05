@@ -8,10 +8,10 @@
   "slug": "pirates-of-sartosa",
   "image_dir": "images/pirates-of-sartosa",
   "cover": "img-0026.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 537
     },
     "130": {
-      "file": "img-0130.png",
+      "file": "img-0130.jpg",
       "first_page": 4,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "135": {
-      "file": "img-0135.png",
+      "file": "img-0135.jpg",
       "first_page": 6,
       "background": true,
       "width": 1580,
@@ -756,6 +756,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -917,11 +918,13 @@
               ],
               "text": "Additional hand weapon. Attacks made with this weapon have the Armour Piercing (1) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1019,11 +1022,13 @@
               ],
               "text": "Buckler. The wielder may reroll failed Parry saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1153,11 +1158,13 @@
               ],
               "text": "The bearer of this item gains the Dodge (6+) special rule. Additionally, they may freely change their position in the front rank of their unit at the beginning of every close combat phase, unless in a challenge."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -1254,11 +1261,13 @@
               ],
               "text": "The bearer may reroll failed To Wound rolls caused by the Kiss of the Deep Lore Attribute when casting spells from the Lore of the Deep."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1504,11 +1513,13 @@
               ],
               "text": "The unit carrying this standard may re-roll their Pursuit distance. In addition, they inflict twice the number of casualties when pursuing enemy units than normal."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1558,7 +1569,8 @@
               ],
               "text": "The unit carrying this standard gains +1 To Hit with missile weapons."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1582,6 +1594,7 @@
         {
           "name": "CAPTAINS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1803,11 +1816,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SORCERERS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2007,11 +2022,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "QUARTERMASTER",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2258,11 +2275,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PRIEST OF STROMFELS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2478,7 +2497,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2489,6 +2509,7 @@
         {
           "name": "DECKHANDS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -2675,11 +2696,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GUNNERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2865,11 +2888,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BUCCANEERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2998,11 +3023,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HARPOONERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3112,11 +3139,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SWABBIES",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3285,7 +3314,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3296,6 +3326,7 @@
         {
           "name": "SEADOGS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3528,11 +3559,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "POWDER MONKEYS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3708,11 +3741,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROG LUBBERS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3806,51 +3841,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Three Sheets to the Wind:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grog Lubbers are subject to Stupidity. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Pirate Grog:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grog Lubbers gain the Immunity (Psychology) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Norse Mead:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grog Lubbers gain the Frenzy special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Dwarf Brew:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grog Lubbers gain +1 to their Toughness. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Lustrian Wine:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grog Lubbers gain +1 to their Strength."
-                }
-              ],
-              "text": "D6 Result 1-2 Three Sheets to the Wind: The Grog Lubbers are subject to Stupidity. 3 Pirate Grog: The Grog Lubbers gain the Immunity (Psychology) special rule. 4 Norse Mead: The Grog Lubbers gain the Frenzy special rule. 5 Dwarf Brew: The Grog Lubbers gain +1 to their Toughness. 6 Lustrian Wine: The Grog Lubbers gain +1 to their Strength."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Three Sheets to the Wind: The Grog Lubbers are subject to Stupidity."
+                ],
+                [
+                  "3",
+                  "Pirate Grog: The Grog Lubbers gain the Immunity (Psychology) special rule."
+                ],
+                [
+                  "4",
+                  "Norse Mead: The Grog Lubbers gain the Frenzy special rule."
+                ],
+                [
+                  "5",
+                  "Dwarf Brew: The Grog Lubbers gain +1 to their Toughness."
+                ],
+                [
+                  "6",
+                  "Lustrian Wine: The Grog Lubbers gain +1 to their Strength."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -3911,11 +3928,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DWARF PRIVATEERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4142,11 +4161,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORC FREEBOOTERZ",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4283,35 +4304,25 @@
               "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Animosity test and must roll on the Animosity table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Get 'Em:"
-                },
-                {
-                  "emph": "",
-                  "text": " For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 Squabble:"
-                },
-                {
-                  "emph": "",
-                  "text": " If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 We'll Show 'Em:"
-                },
-                {
-                  "emph": "",
-                  "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-                }
-              ],
-              "text": "D6 Result 1 Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. 2-4 Squabble: If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. 5-6 We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the\nmajority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds\ncaused by the Get 'Em result never cause Panic tests."
+                ],
+                [
+                  "2-4",
+                  "Squabble: If it is possible to do so, the unit must declare a charge against the closest viable enemy\nunit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot\nthis turn."
+                ],
+                [
+                  "5-6",
+                  "We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a\nfull normal move in a straight line towards it. If there is no visible enemy, the unit must move straight\nahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it\nas far as it can, and will then move as far forward as it can while still keeping the enemy within its\nforward arc. After the move is complete the unit must declare a charge against the closest visible\nenemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the\nrest of its turn normally, as if it had not yet moved this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -4428,11 +4439,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRE SCALLYWAGS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4732,11 +4745,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WERESHARKS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4845,11 +4860,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DECK GUNNERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4948,11 +4965,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CARRONADE",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5142,11 +5161,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORTAR",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5250,7 +5271,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5261,6 +5283,7 @@
         {
           "name": "DARK MAIDENS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5339,11 +5362,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AIRSKIFF",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5475,11 +5500,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SEA ELEMENTAL",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5534,11 +5561,13 @@
               "label": "SPECIAL RULES",
               "value": "Aquatic, Ethereal, Immunity (Flaming Attacks), Unstable"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SEA GIANT",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5612,11 +5641,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TURTIGON",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5747,11 +5778,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELL-HAMMER CANNON",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5868,11 +5901,13 @@
               "label": "SPECIAL RULES",
               "value": "Dirty Fighting, Sea Legs"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRONFIST MORTAR",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5989,7 +6024,8 @@
               "label": "SPECIAL RULES",
               "value": "Dirty Fighting, Sea Legs"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6000,6 +6036,7 @@
         {
           "name": "CARMEN SICILIERI",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6116,11 +6153,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JAEGO ROTH",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6308,11 +6347,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARANESSA SALTSPITE",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6439,11 +6480,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIACCHINO DE FALCO",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6589,65 +6632,45 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Aaaarrrrgggghhhh!"
-                },
-                {
-                  "emph": "",
-                  "text": ": Giacchino and the unit he is with counts as having failed a Stupidity test this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Bring a Spring Upon 'er:"
-                },
-                {
-                  "emph": "",
-                  "text": " Giacchino and any unit he is with must take a Leadership test. If failed, they must immediately make a swift reform or combat reform so they are facing a random direction as determined by the scatter dice. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Shiver Me Timbers!"
-                },
-                {
-                  "emph": "",
-                  "text": " Giacchino and any unit he is with must re-roll successful Leadership tests until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Avast Ye!"
-                },
-                {
-                  "emph": "",
-                  "text": " Giacchino and any unit he is with may re-roll failed Leadership tests until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Batten Down the Hatches!"
-                },
-                {
-                  "emph": "",
-                  "text": " Giacchino and any unit he is with gain the Stubborn special rule until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Send 'em to Stromfels!"
-                },
-                {
-                  "emph": "",
-                  "text": " Giacchino and any unit he is with must immediately declare a charge against the nearest enemy unit if possible. In addition, they may re-roll their charge distance and gain the Devastating Charge special rule until the start of your next turn."
-                }
-              ],
-              "text": "D6 Result 1 Aaaarrrrgggghhhh!: Giacchino and the unit he is with counts as having failed a Stupidity test this turn. 2 Bring a Spring Upon 'er: Giacchino and any unit he is with must take a Leadership test. If failed, they must immediately make a swift reform or combat reform so they are facing a random direction as determined by the scatter dice. 3 Shiver Me Timbers! Giacchino and any unit he is with must re-roll successful Leadership tests until the start of your next turn. 4 Avast Ye! Giacchino and any unit he is with may re-roll failed Leadership tests until the start of your next turn. 5 Batten Down the Hatches! Giacchino and any unit he is with gain the Stubborn special rule until the start of your next turn. 6 Send 'em to Stromfels! Giacchino and any unit he is with must immediately declare a charge against the nearest enemy unit if possible. In addition, they may re-roll their charge distance and gain the Devastating Charge special rule until the start of your next turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Aaaarrrrgggghhhh!: Giacchino and the unit he is with counts as having failed a Stupidity test this\nturn."
+                ],
+                [
+                  "2",
+                  "Bring a Spring Upon 'er: Giacchino and any unit he is with must take a Leadership test. If failed,\nthey must immediately make a swift reform or combat reform so they are facing a random direction as\ndetermined by the scatter dice."
+                ],
+                [
+                  "3",
+                  "Shiver Me Timbers! Giacchino and any unit he is with must re-roll successful Leadership tests until\nthe start of your next turn."
+                ],
+                [
+                  "4",
+                  "Avast Ye! Giacchino and any unit he is with may re-roll failed Leadership tests until the start of your\nnext turn."
+                ],
+                [
+                  "5",
+                  "Batten Down the Hatches! Giacchino and any unit he is with gain the Stubborn special rule until the\nstart of your next turn."
+                ],
+                [
+                  "6",
+                  "Send 'em to Stromfels! Giacchino and any unit he is with must immediately declare a charge against\nthe nearest enemy unit if possible. In addition, they may re-roll their charge distance and gain the\nDevastating Charge special rule until the start of your next turn."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WILHELM SCHWARZ",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6812,11 +6835,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLEUR AND ESTELLA",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6988,11 +7013,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KRUSHER THE ANCHORMAN",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7129,7 +7156,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7140,6 +7168,7 @@
         {
           "name": "Written & Edited by:",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7151,11 +7180,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7172,7 +7203,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

@@ -6,7 +6,7 @@
 #cover(
   title: "Hobgoblins",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/hobgoblins.png",
+  art: "/assets/covers/hobgoblins.png",
 )
 
 #colophon((

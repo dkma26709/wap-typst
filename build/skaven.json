@@ -8,10 +8,10 @@
   "slug": "skaven",
   "image_dir": "images/skaven",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 583
     },
     "28": {
-      "file": "img-0028.png",
+      "file": "img-0028.jpg",
       "first_page": 2,
       "background": true,
       "width": 1580,
@@ -1157,35 +1157,25 @@
           "text": "Plague is a direct damage spell with a range of 18\" that may be cast on units in close combat. All models in the target unit must pass a Toughness test or suffer a Wound with the Ignores Armour save special rule. If cast on a unit engaged in close combat, all units in base contact (friend and foe) will be affected. After working out the effects of the spell and removing casualties, roll a D6 and consult the chart below and continue to apply the results until the spell ends or there are no more viable targets. A unit can only be the target of Plague once per Magic phase."
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1"
-            },
-            {
-              "emph": "",
-              "text": " Your opponent can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague. "
-            },
-            {
-              "emph": "bold",
-              "text": "2-4"
-            },
-            {
-              "emph": "",
-              "text": " The spell ends. "
-            },
-            {
-              "emph": "bold",
-              "text": "5-6"
-            },
-            {
-              "emph": "",
-              "text": " The casting player can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague."
-            }
-          ],
-          "text": "D6 Result 1 Your opponent can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague. 2-4 The spell ends. 5-6 The casting player can decide to end the spell or choose any one unit within 6\" of a previous target to be affected by Plague."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Your opponent can decide to end the spell or\nchoose any one unit within 6\" of a previous\ntarget to be affected by Plague."
+            ],
+            [
+              "2-4",
+              "The spell ends."
+            ],
+            [
+              "5-6",
+              "The casting player can decide to end the spell\nor choose any one unit within 6\" of a\nprevious target to be affected by Plague."
+            ]
+          ]
         }
       ]
     },
@@ -1595,6 +1585,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1926,11 +1917,13 @@
               ],
               "text": "Clan Skryre only. A Warpforged Blade gives the wielder the Ignores Armour Saves special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1980,11 +1973,13 @@
               ],
               "text": "Medium armour. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the Wound is discounted, but the armour is completely destroyed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2114,11 +2109,13 @@
               ],
               "text": "The Warpscale Pendant gives the bearer the Immunity (Flaming Attacks, Lightning Attacks) and Magic Resistance (2) special rules. However, at the beginning of the game, the bearer must pass a Toughness test or suffer a Wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2256,11 +2253,13 @@
               ],
               "text": "Charm. One use only. Multiples of this item may be taken by a single model. The model can choose to use one or more tokens whenever they cast a spell. For each token consumed, they add add an additional power dice to their casting attempt. This allows them to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2356,35 +2355,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1 Thoooooom:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the template over the model that fired the rocket and resolve the blast as normal. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-5 Stabilising Fin Lost:"
-                },
-                {
-                  "emph": "",
-                  "text": " The template scatters 3D6\" from its original position. Resolve any hits as normal. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 It's a Dud:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shot as normal, but do not place the template. Any model directly below the impact spot suffers a single Strength 5 hit."
-                }
-              ],
-              "text": "D6 Result: 1 Thoooooom: Place the template over the model that fired the rocket and resolve the blast as normal. 2-5 Stabilising Fin Lost: The template scatters 3D6\" from its original position. Resolve any hits as normal. 6 It's a Dud: Resolve the shot as normal, but do not place the template. Any model directly below the impact spot suffers a single Strength 5 hit."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "Thoooooom: Place the template over the model\nthat fired the rocket and resolve the blast as\nnormal."
+                ],
+                [
+                  "2-5",
+                  "Stabilising Fin Lost: The template scatters\n3D6\" from its original position. Resolve any\nhits as normal."
+                ],
+                [
+                  "6",
+                  "It's a Dud: Resolve the shot as normal, but do\nnot place the template. Any model directly\nbelow the impact spot suffers a single Strength\n5 hit."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -2403,35 +2392,25 @@
               "text": "Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer suffers 1 Wound with no saves allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4"
-                },
-                {
-                  "emph": "",
-                  "text": " One enemy unit in base contact suffer D3 Wounds with no saves allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " One enemy unit in base contact suffer D6 Wounds with no saves allowed."
-                }
-              ],
-              "text": "D6 Result 1 The bearer suffers 1 Wound with no saves allowed. 2-4 One enemy unit in base contact suffer D3 Wounds with no saves allowed. 5-6 One enemy unit in base contact suffer D6 Wounds with no saves allowed."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "The bearer suffers 1 Wound with no saves\nallowed."
+                ],
+                [
+                  "2-4",
+                  "One enemy unit in base contact suffer D3\nWounds with no saves allowed."
+                ],
+                [
+                  "5-6",
+                  "One enemy unit in base contact suffer D6\nWounds with no saves allowed."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -2498,43 +2477,29 @@
               "text": "One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Gone Bad:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit takes D6 Strength 3 automatic hits with the Ignores Armour save special rule. The Skavenbrew has no additional effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Inspired Hatred:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Hatred special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Frenzied:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Frenzy special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Rabid:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Frenzy and Hatred special rules. At the start of each of your subsequent turns, the unit suffers D6 automatic Wounds."
-                }
-              ],
-              "text": "D6 Result 1 Gone Bad: The unit takes D6 Strength 3 automatic hits with the Ignores Armour save special rule. The Skavenbrew has no additional effect. 2-3 Inspired Hatred: The unit gains the Hatred special rule. 4-5 Frenzied: The unit gains the Frenzy special rule. 6 Rabid: The unit gains the Frenzy and Hatred special rules. At the start of each of your subsequent turns, the unit suffers D6 automatic Wounds."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Gone Bad: The unit takes D6 Strength 3\nautomatic hits with the Ignores Armour save\nspecial rule. The Skavenbrew has no\nadditional effect."
+                ],
+                [
+                  "2-3",
+                  "Inspired Hatred: The unit gains the Hatred\nspecial rule."
+                ],
+                [
+                  "4-5",
+                  "Frenzied: The unit gains the Frenzy special\nrule."
+                ],
+                [
+                  "6",
+                  "Rabid: The unit gains the Frenzy and Hatred\nspecial rules. At the start of each of your\nsubsequent turns, the unit suffers D6\nautomatic Wounds."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -2799,11 +2764,13 @@
               ],
               "text": "Clan Skryre only. At the start of each of your Remaining Moves sub-phases, you may pick one friendly War Machine within 12\" of the bearer. This War Machine may march this turn or move and shoot. However, if they do so, all remaining crew must pass a Toughness test or suffer a Wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3041,7 +3008,8 @@
               ],
               "text": "The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -3065,6 +3033,7 @@
         {
           "name": "GREY SEER",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3243,11 +3212,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COMMANDERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3587,11 +3558,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VERMINLORD",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4066,11 +4039,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ASSASSINS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4238,11 +4213,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SORCERERS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4357,11 +4334,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTER MOULDERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4636,11 +4615,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PLAGUE PRIESTS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4821,11 +4802,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARLOCK ENGINEERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5202,7 +5185,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5213,6 +5197,7 @@
         {
           "name": "WAR-LITTER",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5282,11 +5267,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT POX RAT",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5355,11 +5342,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GNAW-BEAST",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5409,11 +5398,13 @@
               "label": "SPECIAL RULES",
               "value": "Scurry Away"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAT OGRE BONEBREAKER",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5463,11 +5454,13 @@
               "label": "SPECIAL RULES",
               "value": "Scurry Away"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PLAGUE FURNACE",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5589,35 +5582,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1-2 Crunch:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Plague Furnace immediately suffers D3 Wounds and the unit pushing it takes D6 Strength 5 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Bilious Cloud:"
-                },
-                {
-                  "emph": "",
-                  "text": " Immediately work out a special Billowing Death attack that causes 2D6 hits on any unit pushing the Plague Furnace. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Maddening Fumes:"
-                },
-                {
-                  "emph": "",
-                  "text": " Any unit pushing the Plague Furnace makes an additional full round of close combat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any casualties caused count towards combat resolution."
-                }
-              ],
-              "text": "D6 Result: 1-2 Crunch: The Plague Furnace immediately suffers D3 Wounds and the unit pushing it takes D6 Strength 5 hits. 3-5 Bilious Cloud: Immediately work out a special Billowing Death attack that causes 2D6 hits on any unit pushing the Plague Furnace. 6 Maddening Fumes: Any unit pushing the Plague Furnace makes an additional full round of close combat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any casualties caused count towards combat resolution."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1-2",
+                  "Crunch: The Plague Furnace immediately suffers D3 Wounds and the unit pushing it takes D6\nStrength 5 hits."
+                ],
+                [
+                  "3-5",
+                  "Bilious Cloud: Immediately work out a special Billowing Death attack that causes 2D6 hits on any\nunit pushing the Plague Furnace."
+                ],
+                [
+                  "6",
+                  "Maddening Fumes: Any unit pushing the Plague Furnace makes an additional full round of close\ncombat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any\ncasualties caused count towards combat resolution."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -5639,7 +5622,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5650,6 +5634,7 @@
         {
           "name": "SCREAMING BELL",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5752,107 +5737,49 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Dice Result Effect 1 Not yet in stride:"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 Unholy Clamour:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit pushing the Bell immediately moves using the Random Movement (D6) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-8 Emboldened:"
-                },
-                {
-                  "emph": "",
-                  "text": " All friendly Skaven within 24\" of the Bell can re-roll failed Leadership tests until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "9-10 Scorch:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Bell itself (not the Grey Seer) immediately casts the "
-                },
-                {
-                  "emph": "italic",
-                  "text": "Scorch"
-                },
-                {
-                  "emph": "",
-                  "text": " spell from the "
-                },
-                {
-                  "emph": "italic",
-                  "text": "Lore of Ruin"
-                },
-                {
-                  "emph": "",
-                  "text": " with a Casting Value of 5 (this requires no power dice and cannot be increased in any way). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "11-12 Deafening Peals:"
-                },
-                {
-                  "emph": "",
-                  "text": " All enemy Chariots, Shrines and War Machines with Toughness 7 or more that are within 18\" of the Screaming Bell immediately take a Wound with the Multiple Wounds (D3) special rule. Roll a D6 for each building within 18\" of the Bell – each collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the "
-                },
-                {
-                  "emph": "italic",
-                  "text": "Cracks Call"
-                },
-                {
-                  "emph": "",
-                  "text": " spell from the Lore of Ruin. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "13 A Stirring Beyond the Veil:"
-                },
-                {
-                  "emph": "",
-                  "text": " All enemy units within 12\" of the Bell take D6 Strength 4 hits (as from shooting). Additionally, if the unit pushing the Screaming Bell is in combat, it gains the Fight in Extra Ranks (1) special rule for the remainder of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "14-16 Wall of Unholy Sound:"
-                },
-                {
-                  "emph": "",
-                  "text": " All models in each friendly unit within 12\" of the Screaming Bell gain +1 Attack until the end of the player turn. Roll a D6 for each building within 24\" - each collapses on a roll of 4+ (see Deafening Peals). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "17 Avalanche of Energy:"
-                },
-                {
-                  "emph": "",
-                  "text": " All friendly models within 12\" of the Bell gain +1 Attack and may re-roll failed To Hit and To Wound rolls until the end of the player turn. Any friendly Skaven units within 12\" of the Screaming Bell and not in close combat can immediately move using the Random Movement (D6) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "18 Apocalyptic Doom:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Screaming Bell is destroyed. All models within 12\" take a Strength 4 hit with the Ignores Armour saves special rule."
-                }
-              ],
-              "text": "Dice Result Effect 1 Not yet in stride: No effect. 2-4 Unholy Clamour: The unit pushing the Bell immediately moves using the Random Movement (D6) special rule. 5-8 Emboldened: All friendly Skaven within 24\" of the Bell can re-roll failed Leadership tests until the start of your next turn. 9-10 Scorch: The Bell itself (not the Grey Seer) immediately casts the Scorch spell from the Lore of Ruin with a Casting Value of 5 (this requires no power dice and cannot be increased in any way). 11-12 Deafening Peals: All enemy Chariots, Shrines and War Machines with Toughness 7 or more that are within 18\" of the Screaming Bell immediately take a Wound with the Multiple Wounds (D3) special rule. Roll a D6 for each building within 18\" of the Bell – each collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the Cracks Call spell from the Lore of Ruin. 13 A Stirring Beyond the Veil: All enemy units within 12\" of the Bell take D6 Strength 4 hits (as from shooting). Additionally, if the unit pushing the Screaming Bell is in combat, it gains the Fight in Extra Ranks (1) special rule for the remainder of the turn. 14-16 Wall of Unholy Sound: All models in each friendly unit within 12\" of the Screaming Bell gain +1 Attack until the end of the player turn. Roll a D6 for each building within 24\" - each collapses on a roll of 4+ (see Deafening Peals). 17 Avalanche of Energy: All friendly models within 12\" of the Bell gain +1 Attack and may re-roll failed To Hit and To Wound rolls until the end of the player turn. Any friendly Skaven units within 12\" of the Screaming Bell and not in close combat can immediately move using the Random Movement (D6) special rule. 18 Apocalyptic Doom: The Screaming Bell is destroyed. All models within 12\" take a Strength 4 hit with the Ignores Armour saves special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "Dice Result",
+                  "Effect"
+                ],
+                [
+                  "1",
+                  "Not yet in stride: No effect."
+                ],
+                [
+                  "2-4",
+                  "Unholy Clamour: The unit pushing the Bell immediately moves using the Random\nMovement (D6) special rule."
+                ],
+                [
+                  "5-8",
+                  "Emboldened: All friendly Skaven within 24\" of the Bell can re-roll failed Leadership tests\nuntil the start of your next turn."
+                ],
+                [
+                  "9-10",
+                  "Scorch: The Bell itself (not the Grey Seer) immediately casts the Scorch spell from the Lore\nof Ruin with a Casting Value of 5 (this requires no power dice and cannot be increased in\nany way)."
+                ],
+                [
+                  "11-12",
+                  "Deafening Peals: All enemy Chariots, Shrines and War Machines with Toughness 7 or more\nthat are within 18\" of the Screaming Bell immediately take a Wound with the Multiple\nWounds (D3) special rule. Roll a D6 for each building within 18\" of the Bell – each\ncollapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the\nCracks Call spell from the Lore of Ruin."
+                ],
+                [
+                  "13",
+                  "A Stirring Beyond the Veil: All enemy units within 12\" of the Bell take D6 Strength 4 hits\n(as from shooting). Additionally, if the unit pushing the Screaming Bell is in combat, it gains\nthe Fight in Extra Ranks (1) special rule for the remainder of the turn."
+                ],
+                [
+                  "14-16",
+                  "Wall of Unholy Sound: All models in each friendly unit within 12\" of the Screaming Bell\ngain +1 Attack until the end of the player turn. Roll a D6 for each building within 24\" - each\ncollapses on a roll of 4+ (see Deafening Peals)."
+                ],
+                [
+                  "17",
+                  "Avalanche of Energy: All friendly models within 12\" of the Bell gain +1 Attack and may\nre-roll failed To Hit and To Wound rolls until the end of the player turn. Any friendly Skaven\nunits within 12\" of the Screaming Bell and not in close combat can immediately move using\nthe Random Movement (D6) special rule."
+                ],
+                [
+                  "18",
+                  "Apocalyptic Doom: The Screaming Bell is destroyed. All models within 12\" take a Strength\n4 hit with the Ignores Armour saves special rule."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -5874,11 +5801,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CLANRATS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6018,11 +5947,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STORMVERMIN",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6181,11 +6112,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKAVENSLAVES",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6371,11 +6304,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAT SWARMS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6469,11 +6404,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NIGHT RUNNERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6622,11 +6559,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT RATS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6736,11 +6675,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PLAGUE MONKS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6870,7 +6811,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6881,6 +6823,7 @@
         {
           "name": "GUTTER RUNNERS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7048,11 +6991,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF RATS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7207,11 +7152,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAT OGRES",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7480,11 +7427,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PLAGUE CENSER BEARERS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7583,11 +7532,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARPLOCK JEZZAILS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7718,11 +7669,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "POISONED WIND GLOBADIERS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7855,11 +7808,13 @@
               "label": "SPECIAL RULES",
               "value": "Scurry Away, Skirmishers, Strength in Numbers"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARPFIRE THROWER",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7958,35 +7913,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Whompfff:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the large round template over the Warpfire Thrower. Any model touched by the template suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Fuel Leak:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Weapon Team flees in random direction as decided by the scatter dice before exploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Pppphhtt:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Warpfire Thrower may not fire this turn."
-                }
-              ],
-              "text": "D6 Result 1-2 Whompfff: Place the large round template over the Warpfire Thrower. Any model touched by the template suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from play as a casualty. 3-4 Fuel Leak: The Weapon Team flees in random direction as decided by the scatter dice before exploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above. 5-6 Pppphhtt: The Warpfire Thrower may not fire this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Whompfff: Place the large round template over the Warpfire Thrower. Any model touched by the\ntemplate suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from\nplay as a casualty."
+                ],
+                [
+                  "3-4",
+                  "Fuel Leak: The Weapon Team flees in random direction as decided by the scatter dice before\nexploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above."
+                ],
+                [
+                  "5-6",
+                  "Pppphhtt: The Warpfire Thrower may not fire this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8013,11 +7958,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RATLING GUN",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8116,35 +8063,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Slam:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Spins Wildly:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun fires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to in all directions from the Ratling Gun. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Bbbbrrrrrttt:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored."
-                }
-              ],
-              "text": "D6 Result 1-2 Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun is removed from play as a casualty. 3-4 Spins Wildly: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun fires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to in all directions from the Ratling Gun. 5-6 Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun is\nremoved from play as a casualty."
+                ],
+                [
+                  "3-4",
+                  "Spins Wildly: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Gun\nfires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to\nin all directions from the Ratling Gun."
+                ],
+                [
+                  "5-6",
+                  "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is\nignored."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8171,11 +8108,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARPVOLT SCOURGER",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8274,35 +8213,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Electric Surge:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the large round template over the Warpvolt Scourger. Any model touched by the template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Short Circuit:"
-                },
-                {
-                  "emph": "",
-                  "text": " All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt Scourger suffers 1 Hit. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Power Outage:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Warpvolt Scourger does not fire this turn."
-                }
-              ],
-              "text": "D6 Result 1-2 Electric Surge: Place the large round template over the Warpvolt Scourger. Any model touched by the template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed from play as a casualty. 3-4 Short Circuit: All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt Scourger suffers 1 Hit. 5-6 Power Outage: The Warpvolt Scourger does not fire this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Electric Surge: Place the large round template over the Warpvolt Scourger. Any model touched by\nthe template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed\nfrom play as a casualty."
+                ],
+                [
+                  "3-4",
+                  "Short Circuit: All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt\nScourger suffers 1 Hit."
+                ],
+                [
+                  "5-6",
+                  "Power Outage: The Warpvolt Scourger does not fire this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8329,11 +8258,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "POISONED WIND MORTAR",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8432,35 +8363,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Foomph:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the large round template over the Poisoned Wind Mortar. Any model touched by the template suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Clogged:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Poisoned Wind Mortar may not fire this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Wildly off Target:"
-                },
-                {
-                  "emph": "",
-                  "text": " The template scatters 3D6\" from its original position. Resolve any hits as normal."
-                }
-              ],
-              "text": "D6 Result 1-2 Foomph: Place the large round template over the Poisoned Wind Mortar. Any model touched by the template suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is removed from play as a casualty. 3-4 Clogged: The Poisoned Wind Mortar may not fire this turn. 5-6 Wildly off Target: The template scatters 3D6\" from its original position. Resolve any hits as normal."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Foomph: Place the large round template over the Poisoned Wind Mortar. Any model touched by the\ntemplate suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is\nremoved from play as a casualty."
+                ],
+                [
+                  "3-4",
+                  "Clogged: The Poisoned Wind Mortar may not fire this turn."
+                ],
+                [
+                  "5-6",
+                  "Wildly off Target: The template scatters 3D6\" from its original position. Resolve any hits as normal."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8487,11 +8408,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARP-GRINDER",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8645,46 +8568,38 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Cave-in:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Warp-grinder and any unit deploying with it are removed as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Partial Collapse:"
-                },
-                {
-                  "emph": "",
-                  "text": " Make a Strength test for each model in the parent unit, if passed the model is placed as normal. Models that fail are removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. After this, the Warp- grinder is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Should Have Taken That Left Turn:"
-                },
-                {
-                  "emph": "",
-                  "text": " Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Warp-grinder and any unit deploying with it emerge. They cannot move or charge on the turn they emerge."
-                }
-              ],
-              "text": "D6 Result 1-2 Cave-in: The Warp-grinder and any unit deploying with it are removed as casualties. 3-4 Partial Collapse: Make a Strength test for each model in the parent unit, if passed the model is placed as normal. Models that fail are removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. After this, the Warp- grinder is removed from play as a casualty. 5-6 Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Warp-grinder and any unit deploying with it emerge. They cannot move or charge on the turn they emerge."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Cave-in: The Warp-grinder and any unit deploying with it are removed as casualties."
+                ],
+                [
+                  "3-4",
+                  "Partial Collapse: Make a Strength test for each model in the parent unit, if passed the model is\nplaced as normal. Models that fail are removed as casualties. Any models that survive may not move\nor charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat\nthey have the Always Strikes Last special rule for the remainder of the turn. After this, the Warp-\ngrinder is removed from play as a casualty."
+                ],
+                [
+                  "5-6",
+                  "Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18\" of the\noriginal position on the table and this is where the Warp-grinder and any unit deploying with it\nemerge. They cannot move or charge on the turn they emerge."
+                ]
+              ]
             },
             {
               "type": "field",
               "label": "SPECIAL RULES",
               "value": "Scurry Away, Weapon Team"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DOOM-FLAYER",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8797,35 +8712,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Ba-Blam:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the large round template over the Doom-flayer. Any model touched by the template suffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 ZZZZzap:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning Attacks special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Power Failure:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom-flayer may not attack or use The Best Defence this turn."
-                }
-              ],
-              "text": "D6 Result 1-2 Ba-Blam: Place the large round template over the Doom-flayer. Any model touched by the template suffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is removed from play as a casualty. 3-5 ZZZZzap: The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning Attacks special rule. 6 Power Failure: The Doom-flayer may not attack or use The Best Defence this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Ba-Blam: Place the large round template over the Doom-flayer. Any model touched by the template\nsuffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is\nremoved from play as a casualty."
+                ],
+                [
+                  "3-5",
+                  "ZZZZzap: The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning\nAttacks special rule."
+                ],
+                [
+                  "6",
+                  "Power Failure: The Doom-flayer may not attack or use The Best Defence this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8847,7 +8752,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8858,6 +8764,7 @@
         {
           "name": "ESHIN TRIAD",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8947,11 +8854,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STORMFIEND",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9399,11 +9308,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BROOD HORROR",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9595,11 +9506,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BROOD TERROR",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9716,11 +9629,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELL PIT ABOMINATION",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9795,34 +9710,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Grinding Halt:"
-                },
-                {
-                  "emph": "",
-                  "text": " The beast does not move this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-5 Blind Fury:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model moves the distance rolled in a random direction determined by a scatter dice. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Fluid Injected:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Hell Pit Abomination moves as normal, and will increase its Strength by +1 for the remainder of the game. Further Berserk Abomination rolls of 6 will not increase the beast’s profile, but will instead immediately inflict D6 wounds on it."
-                }
-              ],
-              "text": "D6 Result 1 Grinding Halt: The beast does not move this turn. 2-5 Blind Fury: The model moves the distance rolled in a random direction determined by a scatter dice. 6 Fluid Injected: The Hell Pit Abomination moves as normal, and will increase its Strength by +1 for the remainder of the game. Further Berserk Abomination rolls of 6 will not increase the beast’s profile, but will instead immediately inflict D6 wounds on it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Grinding Halt: The beast does not move this turn."
+                ],
+                [
+                  "2-5",
+                  "Blind Fury: The model moves the distance rolled in a random direction determined by a scatter\ndice."
+                ],
+                [
+                  "6",
+                  "Fluid Injected: The Hell Pit Abomination moves as normal, and will increase its Strength by +1\nfor the remainder of the game. Further Berserk Abomination rolls of 6 will not increase the beast’s\nprofile, but will instead immediately inflict D6 wounds on it."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -9849,34 +9755,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Feed:"
-                },
-                {
-                  "emph": "",
-                  "text": " All enemy models in base contact suffer an automatic Strength 6 hit with the Multiple Wounds (D3) special rules. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Flailing Fists:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Hell Pit Abomination attacks using the Random Attacks (2D6) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Avalanche of Flesh:"
-                },
-                {
-                  "emph": "",
-                  "text": " Every enemy model in base contact with the Abomination must pass an Initiative test or suffer an automatic Strength 6 hit. Additionally, the Hell Pit Abomination attacks using the Random Attacks (D6) special rule."
-                }
-              ],
-              "text": "D6 Result 1-2 Feed: All enemy models in base contact suffer an automatic Strength 6 hit with the Multiple Wounds (D3) special rules. 3-4 Flailing Fists: The Hell Pit Abomination attacks using the Random Attacks (2D6) special rule. 5-6 Avalanche of Flesh: Every enemy model in base contact with the Abomination must pass an Initiative test or suffer an automatic Strength 6 hit. Additionally, the Hell Pit Abomination attacks using the Random Attacks (D6) special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Feed: All enemy models in base contact suffer an automatic Strength 6 hit with the Multiple\nWounds (D3) special rules."
+                ],
+                [
+                  "3-4",
+                  "Flailing Fists: The Hell Pit Abomination attacks using the Random Attacks (2D6) special rule."
+                ],
+                [
+                  "5-6",
+                  "Avalanche of Flesh: Every enemy model in base contact with the Abomination must pass an\nInitiative test or suffer an automatic Strength 6 hit. Additionally, the Hell Pit Abomination attacks\nusing the Random Attacks (D6) special rule."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -9903,35 +9800,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-3 Dead:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Hell Pit Abomination is removed from play as casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 The Rats Emerge:"
-                },
-                {
-                  "emph": "",
-                  "text": " All units in base contact with the Abomination take 2D6 Strength 2 Hits. The Hell Pit Abomination is then removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 It's Alive:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Hell Pit Abomination remains alive with D3 Wounds left."
-                }
-              ],
-              "text": "D6 Result 1-3 Dead: The Hell Pit Abomination is removed from play as casualty. 4-5 The Rats Emerge: All units in base contact with the Abomination take 2D6 Strength 2 Hits. The Hell Pit Abomination is then removed from play as a casualty. 6 It's Alive: The Hell Pit Abomination remains alive with D3 Wounds left."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-3",
+                  "Dead: The Hell Pit Abomination is removed from play as casualty."
+                ],
+                [
+                  "4-5",
+                  "The Rats Emerge: All units in base contact with the Abomination take 2D6 Strength 2 Hits. The\nHell Pit Abomination is then removed from play as a casualty."
+                ],
+                [
+                  "6",
+                  "It's Alive: The Hell Pit Abomination remains alive with D3 Wounds left."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -9977,11 +9864,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PLAGUECLAW CATAPULT",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10099,46 +9988,38 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Twang:"
-                },
-                {
-                  "emph": "",
-                  "text": " The war machine is destroyed and is removed from the battle. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Suspiciously Off Target:"
-                },
-                {
-                  "emph": "",
-                  "text": " The opposing player may reposition the template anywhere within 3D6\" of the intended target position. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Accident:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Plagueclaw Catapult cannot fire this turn."
-                }
-              ],
-              "text": "D6 Result 1-2 Twang: The war machine is destroyed and is removed from the battle. 3-5 Suspiciously Off Target: The opposing player may reposition the template anywhere within 3D6\" of the intended target position. 6 Accident: The Plagueclaw Catapult cannot fire this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Twang: The war machine is destroyed and is removed from the battle."
+                ],
+                [
+                  "3-5",
+                  "Suspiciously Off Target: The opposing player may reposition the template anywhere within 3D6\" of\nthe intended target position."
+                ],
+                [
+                  "6",
+                  "Accident: The Plagueclaw Catapult cannot fire this turn."
+                ]
+              ]
             },
             {
               "type": "field",
               "label": "SPECIAL RULES",
               "value": "Frenzy"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARP LIGHTNING CANNON",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10300,41 +10181,33 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Meltdown:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Warp Lightning Cannon is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Energy Overload:"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll the scatter dice and turn the cannon to face the direction rolled. Resolve a shot at maximum Strength (10) that emanates from the barrel and travels along the ground in a straight line 4D6\" before terminating in a large round template. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Spluttering Fizzle:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next turn."
-                }
-              ],
-              "text": "D6 Result 1-2 Meltdown: The Warp Lightning Cannon is removed from play as a casualty. 3-5 Energy Overload: Roll the scatter dice and turn the cannon to face the direction rolled. Resolve a shot at maximum Strength (10) that emanates from the barrel and travels along the ground in a straight line 4D6\" before terminating in a large round template. 6 Spluttering Fizzle: The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Meltdown: The Warp Lightning Cannon is removed from play as a casualty."
+                ],
+                [
+                  "3-5",
+                  "Energy Overload: Roll the scatter dice and turn the cannon to face the direction rolled. Resolve a\nshot at maximum Strength (10) that emanates from the barrel and travels along the ground in a\nstraight line 4D6\" before terminating in a large round template."
+                ],
+                [
+                  "6",
+                  "Spluttering Fizzle: The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next\nturn."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RATLING WARPBLASTER",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10457,41 +10330,33 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Slam:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster is removed from play as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Uncontrollable Recoil:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front arc that you can draw Line of Sight to. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Bbbbrrrrrttt:"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored."
-                }
-              ],
-              "text": "D6 Result 1-2 Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster is removed from play as a casualty. 3-4 Uncontrollable Recoil: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front arc that you can draw Line of Sight to. 5-6 Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is ignored."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Slam: Resolve the shots from the previous Artillery Dice rolled. After this, the Ratling Warpblaster is\nremoved from play as a casualty."
+                ],
+                [
+                  "3-4",
+                  "Uncontrollable Recoil: Resolve the shots from the previous Artillery Dice rolled. After this, the\nRatling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front\narc that you can draw Line of Sight to."
+                ],
+                [
+                  "5-6",
+                  "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is\nignored."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DOOMWHEEL",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10686,37 +10551,28 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Disaster:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doomwheel immediately takes D6 Strength 6 hits. In addition, from now on roll one less D6 for the Doomwheel's movement. If reduced to zero dice the Doomwheel is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Out of Control:"
-                },
-                {
-                  "emph": "",
-                  "text": " If the Doomwheel is unengaged, it immediately moves in a random direction determined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits as normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a friendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\". "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Burst of Speed:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doomwheel gains the Random Movement (4D6) special rule."
-                }
-              ],
-              "text": "D6 Result 1-2 Disaster: The Doomwheel immediately takes D6 Strength 6 hits. In addition, from now on roll one less D6 for the Doomwheel's movement. If reduced to zero dice the Doomwheel is removed as a casualty. 3-5 Out of Control: If the Doomwheel is unengaged, it immediately moves in a random direction determined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits as normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a friendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\". 6 Burst of Speed: The Doomwheel gains the Random Movement (4D6) special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Disaster: The Doomwheel immediately takes D6 Strength 6 hits. In addition, from now on roll one\nless D6 for the Doomwheel's movement. If reduced to zero dice the Doomwheel is removed as a\ncasualty."
+                ],
+                [
+                  "3-5",
+                  "Out of Control: If the Doomwheel is unengaged, it immediately moves in a random direction\ndetermined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits\nas normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a\nfriendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\"."
+                ],
+                [
+                  "6",
+                  "Burst of Speed: The Doomwheel gains the Random Movement (4D6) special rule."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10727,6 +10583,7 @@
         {
           "name": "THANQUOL",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10926,11 +10783,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BONERIPPER",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11177,11 +11036,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "QUEEK HEADTAKER",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11321,11 +11182,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KRITTOK FOULBLADE",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11462,11 +11325,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPINETAIL",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11603,11 +11468,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TRETCH CRAVENTAIL",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11724,11 +11591,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKREECH VERMINKING",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11937,11 +11806,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VIZZIK SKOUR",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12141,11 +12012,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEATHMASTER SNIKCH",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12251,11 +12124,13 @@
               "label": "SPECIAL RULES",
               "value": "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Scurry Away, Sensei (see Master Assassin)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VESKIT",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12366,11 +12241,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THROT THE UNCLEAN",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12520,11 +12397,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKWEEL GNAWTOOTH",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12672,11 +12551,13 @@
               ],
               "text": "D6 Result 1-2 Poisoned Attacks: The Giant Rats have the Poisoned Attacks special rule. 3-4 Additional Attacks. The Giant Rats have +1 Attack. 5-6 Regenerate: The Giant Rats have the Regeneration (4+) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHORITCH",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12760,11 +12641,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NURGLITCH",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12980,11 +12863,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LORD SKROLK",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13086,35 +12971,25 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Squeaking, Squealing Nonsense:"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 A Withering Pox:"
-                },
-                {
-                  "emph": "",
-                  "text": " Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Death Plague:"
-                },
-                {
-                  "emph": "",
-                  "text": " Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special rule."
-                }
-              ],
-              "text": "D6 Result 1 Squeaking, Squealing Nonsense: No effect. 2-4 A Withering Pox: Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves special rule. 5-6 Death Plague: Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Squeaking, Squealing Nonsense: No effect."
+                ],
+                [
+                  "2-4",
+                  "A Withering Pox: Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves\nspecial rule."
+                ],
+                [
+                  "5-6",
+                  "Death Plague: Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special\nrule."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -13140,11 +13015,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORBUS SANGUIS",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13251,11 +13128,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IKIT CLAW",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13364,34 +13243,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 ZZZzark:"
-                },
-                {
-                  "emph": "",
-                  "text": " Ikit Claw and every model in base contact with him suffer a Strength 5 hit. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Disruption:"
-                },
-                {
-                  "emph": "",
-                  "text": " Ikit may not cast spells for the rest of this Skaven Magic phase while he sorts his power cables out. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Full Power:"
-                },
-                {
-                  "emph": "",
-                  "text": " Ikit may immediately add D3 power dice to the pool for the current Magic phase."
-                }
-              ],
-              "text": "D6 Result 1-2 ZZZzark: Ikit Claw and every model in base contact with him suffer a Strength 5 hit. 3-5 Disruption: Ikit may not cast spells for the rest of this Skaven Magic phase while he sorts his power cables out. 6 Full Power: Ikit may immediately add D3 power dice to the pool for the current Magic phase."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "ZZZzark: Ikit Claw and every model in base contact with him suffer a Strength 5 hit."
+                ],
+                [
+                  "3-5",
+                  "Disruption: Ikit may not cast spells for the rest of this Skaven Magic phase while he sorts his power\ncables out."
+                ],
+                [
+                  "6",
+                  "Full Power: Ikit may immediately add D3 power dice to the pool for the current Magic phase."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -13417,11 +13287,13 @@
               "label": "SPECIAL RULES",
               "value": "Scurry Away, Strength in Numbers, Verminous Valour"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KLAWMUNKAST",
           "page": 58,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13546,7 +13418,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -13557,6 +13430,7 @@
         {
           "name": "Written & Edited by:",
           "page": 59,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13573,7 +13447,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

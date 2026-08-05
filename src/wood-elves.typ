@@ -6,7 +6,7 @@
 #cover(
   title: "Wood Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "../assets/covers/wood-elves.png",
+  art: "/assets/covers/wood-elves.png",
 )
 
 #colophon((

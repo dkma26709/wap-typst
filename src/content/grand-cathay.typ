@@ -548,8 +548,10 @@
 #field("UPGRADES", "")
 #items(((runs: ((emph: "bold", text: "Sky Bombs:"), (emph: "", text: " During the Remaining Moves sub-phase, models with this upgrade may drop a bomb unless they are fleeing or have declared a charge that turn. To make a bombing run, select one unengaged enemy unit that the Sky-junk moved over in that turn and place the large round template anywhere over the target unit; it scatters D3\". If a natural 1 is rolled, use the Bomb Misfire chart below. Sky bombs have the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "4(6)", "Multiple Wounds (D3)"))
-#namecost("BOMB MISFIRE TABLE", "")
-#para(((emph: "bold", text: "D6 Result 1 Premature Detonation:"), (emph: "", text: " The Sky Lantern suffers a Strength 6 hit with the and Multiple Wounds (D3) special rule. "), (emph: "bold", text: "2-3 Jammed Release."), (emph: "", text: " Centre the 3\" template over the Sky Lantern before scattering it and resolving damage as normal. "), (emph: "bold", text: "4-6 Dud."), (emph: "", text: " Only the model under the template's central hole is hit, suffering a single Strength 4 hit.")))
+#chartlabel("BOMB MISFIRE TABLE")
+#chart((("D6", "Result"), ("1", "Premature Detonation: The Sky Lantern suffers a Strength 6 hit with the and Multiple Wounds (D3)
+special rule."), ("2-3", "Jammed Release. Centre the 3\" template over the Sky Lantern before scattering it and resolving
+damage as normal."), ("4-6", "Dud. Only the model under the template's central hole is hit, suffering a single Strength 4 hit.")))
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace crane guns with blunderbusses & gunpowder bombs free"),), sub: ()), (runs: ((emph: "", text: "May take sky bombs +15 points"),), sub: ())))
 #field("NOTES", "")

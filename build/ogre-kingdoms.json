@@ -8,10 +8,10 @@
   "slug": "ogre-kingdoms",
   "image_dir": "images/ogre-kingdoms",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 838
     },
     "138": {
-      "file": "img-0138.png",
+      "file": "img-0138.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "148": {
-      "file": "img-0148.png",
+      "file": "img-0148.jpg",
       "first_page": 5,
       "background": true,
       "width": 1580,
@@ -1178,6 +1178,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1384,11 +1385,13 @@
               ],
               "text": "Butcher or Slaughtermaster only. Every time the wielder causes an unsaved wound with the Splatter- cleaver, they gain +1 Leadership for the duration of the close combat round."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1541,11 +1544,13 @@
               ],
               "text": "Ironfist. Any hits made with the Skullplucker have the Killing Blow special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1564,59 +1569,37 @@
               "text": "A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the following table when the model is deployed to see if the Thiefstone has helped them to 'find' any useful items. Note that this may result in the bearer of the Thiefstone having two or more Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that the slain character might have had, as long as the bearer does not already have a magic item of that type. The model with the Thiefstone may then use that item itself for the rest of the battle."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " Nothing "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " Lucky Trinket "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3"
-                },
-                {
-                  "emph": "",
-                  "text": " Talisman of Protection "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4"
-                },
-                {
-                  "emph": "",
-                  "text": " Crown of Command "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5"
-                },
-                {
-                  "emph": "",
-                  "text": " The Ruby Ring of Ruin "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " Talisman of Preservation"
-                }
-              ],
-              "text": "D6 Result 1 Nothing 2 Lucky Trinket 3 Talisman of Protection 4 Crown of Command 5 The Ruby Ring of Ruin 6 Talisman of Preservation"
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Nothing"
+                ],
+                [
+                  "2",
+                  "Lucky Trinket"
+                ],
+                [
+                  "3",
+                  "Talisman of Protection"
+                ],
+                [
+                  "4",
+                  "Crown of Command"
+                ],
+                [
+                  "5",
+                  "The Ruby Ring of Ruin"
+                ],
+                [
+                  "6",
+                  "Talisman of Preservation"
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -1810,11 +1793,13 @@
               ],
               "text": "The wearer of the Wyrdstone Necklace gains a Magical Ward (5+). However, they must pass a Toughness test at the start of each of their turns or suffer a wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1973,11 +1958,13 @@
               ],
               "text": "Wizard with the Lore of the Great Maw only. Relic. At the start of each of your Magic phases, the bearer of this item can pick one additional spell from the Lore of the Great Maw of those normally available to them and cast it this turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2299,11 +2286,13 @@
               ],
               "text": "At the beginning of each Ogre turn, pick one unit in the line of sight of the bearer of the Rock Eye. The opposing player must announce the presence of all Magic Items, Hidden models and the like that unit might have."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2401,7 +2390,8 @@
               ],
               "text": "The unit carrying this standard has the Cold-blooded special rule when taking Panic tests."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2425,6 +2415,7 @@
         {
           "name": "CHIEFTAINS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2746,11 +2737,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BUTCHERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3000,11 +2993,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTMASTER",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3261,11 +3256,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIREBELLY",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3413,11 +3410,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RIMESPEAKER",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3604,11 +3603,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HONCHO",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3780,7 +3781,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3791,6 +3793,7 @@
         {
           "name": "MOURNFANG",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3860,11 +3863,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIMHORN RHINOX",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3934,11 +3939,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT MAWPOT",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4052,7 +4059,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4063,6 +4071,7 @@
         {
           "name": "BULLS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4210,11 +4219,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRONGUTS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4352,11 +4363,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROINBITERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4495,11 +4508,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PIGBACK RIDERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4599,11 +4614,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLINGERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4703,7 +4720,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4714,6 +4732,7 @@
         {
           "name": "LEADBELCHERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4864,11 +4883,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4958,11 +4979,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANEATERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5267,11 +5290,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOURNFANG CAVALRY",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5495,11 +5520,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "YHETEES",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5579,11 +5606,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GORGERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5687,11 +5716,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SABRETUSKS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5794,11 +5825,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CRAGBEASTS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5853,11 +5886,13 @@
               "label": "SPECIAL RULES",
               "value": "Natural Armour (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RHINOX CHARIOT",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5970,11 +6005,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TRAPPERS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6073,11 +6110,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SCRAPLAUNCHER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6209,43 +6248,29 @@
               "text": "If a misfire is rolled, roll a D6 and consult the Scraplauncher Misfire chart."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Kerrr-unch!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Scraplauncher is destroyed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Groink?!?"
-                },
-                {
-                  "emph": "",
-                  "text": " The Scraplauncher may not shoot this turn, and from now on it has the Random Movement (2D6) special rule, and will move in a random direction. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Splang!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this turn or in the controlling player's next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 It's Mine!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Scraplauncher may not fire this turn."
-                }
-              ],
-              "text": "D6 Result 1 Kerrr-unch! The Scraplauncher is destroyed. 2 Groink?!? The Scraplauncher may not shoot this turn, and from now on it has the Random Movement (2D6) special rule, and will move in a random direction. 3-4 Splang! The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this turn or in the controlling player's next turn. 5-6 It's Mine! The Scraplauncher may not fire this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Kerrr-unch! The Scraplauncher is destroyed."
+                ],
+                [
+                  "2",
+                  "Groink?!? The Scraplauncher may not shoot this turn, and from now on it has the Random\nMovement (2D6) special rule, and will move in a random direction."
+                ],
+                [
+                  "3-4",
+                  "Splang! The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this\nturn or in the controlling player's next turn."
+                ],
+                [
+                  "5-6",
+                  "It's Mine! The Scraplauncher may not fire this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -6272,11 +6297,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKEWERSLINGER",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6408,35 +6435,25 @@
               "text": "The Skewerslinger does not suffer To Hit penalties for moving and shooting. If you roll two or more 1's when rolling To Hit with the Skewerslinger, roll a D6 and consult the Skewerslinger Misfire chart below."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Kerrr-unch!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Skewerslinger is destroyed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Groink?!?"
-                },
-                {
-                  "emph": "",
-                  "text": " The Skewerslinger may not shoot this turn, and from now on it has the Random Movement (2D6) special rule, and will move in a random direction. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-6 Splang!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Skewerslinger suffers one Wound which Ignores Armour Saves."
-                }
-              ],
-              "text": "D6 Result 1 Kerrr-unch! The Skewerslinger is destroyed. 2 Groink?!? The Skewerslinger may not shoot this turn, and from now on it has the Random Movement (2D6) special rule, and will move in a random direction. 3-6 Splang! The Skewerslinger suffers one Wound which Ignores Armour Saves."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Kerrr-unch! The Skewerslinger is destroyed."
+                ],
+                [
+                  "2",
+                  "Groink?!? The Skewerslinger may not shoot this turn, and from now on it has the Random\nMovement (2D6) special rule, and will move in a random direction."
+                ],
+                [
+                  "3-6",
+                  "Splang! The Skewerslinger suffers one Wound which Ignores Armour Saves."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -6463,7 +6480,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6474,6 +6492,7 @@
         {
           "name": "CLEAVERS",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6587,11 +6606,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIMHORN RHINOX RIDERS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6807,11 +6828,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRONBLASTER",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6957,43 +6980,29 @@
               "text": "When rolling to determine the bounce distance for a cannon of the Sky-titans, roll the artillery dice twice and use the highest roll. The cannonballs will fail to bounce only if both dice roll a misfire result. Grapeshot fired by a cannon of the Sky-titans has a Strength of 10. If a misfire is rolled, roll a D6 and consult the Ironblaster Misfire chart."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Krakabooom!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Ironblaster is destroyed and all units within D6\" take 2D6 Strength 5 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Krrack!"
-                },
-                {
-                  "emph": "",
-                  "text": " The cannon may not be fired for the rest of the battle. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Squelch!"
-                },
-                {
-                  "emph": "",
-                  "text": " The cannon may not fire this turn or next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Lurch!"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll a scatter dice and turn the Ironblaster to face the direction rolled. The cannon may not shoot this turn."
-                }
-              ],
-              "text": "D6 Result 1 Krakabooom! The Ironblaster is destroyed and all units within D6\" take 2D6 Strength 5 hits. 2 Krrack! The cannon may not be fired for the rest of the battle. 3-4 Squelch! The cannon may not fire this turn or next turn. 5-6 Lurch! Roll a scatter dice and turn the Ironblaster to face the direction rolled. The cannon may not shoot this turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Krakabooom! The Ironblaster is destroyed and all units within D6\" take 2D6 Strength 5 hits."
+                ],
+                [
+                  "2",
+                  "Krrack! The cannon may not be fired for the rest of the battle."
+                ],
+                [
+                  "3-4",
+                  "Squelch! The cannon may not fire this turn or next turn."
+                ],
+                [
+                  "5-6",
+                  "Lurch! Roll a scatter dice and turn the Ironblaster to face the direction rolled. The cannon may not\nshoot this turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -7020,11 +7029,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STONEHORN",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7277,11 +7288,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THUNDERTUSK",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7558,11 +7571,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ICE MAMMOTH",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7770,34 +7785,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Attack Type 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " Butt "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5"
-                },
-                {
-                  "emph": "",
-                  "text": " Gore "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " Bellow"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Attack Type 1-2 Butt 3-5 Gore 6 Bellow"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Attack Type"
+                ],
+                [
+                  "1-2",
+                  "Butt"
+                ],
+                [
+                  "3-5",
+                  "Gore"
+                ],
+                [
+                  "6",
+                  "Bellow"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -7859,43 +7871,29 @@
               "text": "- Trample: A single enemy unit in base contact suffers D6 Strength 7 hits, plus an additional D3 Hits for each rank of five or more models it has. - Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The Mammoth automatically wins the combat by a minimum of 3 points. This result has no effect against Animated Constructs. - Butt: The Mammoth inflicts D3 Strength 7 automatic Hits with the Multiple Wounds (D3) special rule against one model in base contact (your choice). - Stomp: The Mammoth has the Stomp (2D6) special rule this turn. - Gore: The Mammoth makes 2D6 attacks against a chosen unit in close combat with the Heroic Killing Blow special rule. - Pick up and...: The Mammoth grabs a Character from the target unit (Mammoth player's choice). Roll a D6 to see what unfortunate fate befalls the victim."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on their unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Squash and Grab Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
-                }
-              ],
-              "text": "D6 Result 1-2 Throw Back into Combat: The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on their unit (save as normal). 3-4 Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. 5 Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. 6 Squash and Grab Another: The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Throw Back into Combat: The victim suffers D3 Strength 6 Hits which Ignores Armour saves,\nand D6 Strength 3 hits are inflicted on their unit (save as normal)."
+                ],
+                [
+                  "3-4",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly\ndetermine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits.\nUnsaved Wounds from these hits count towards the Mammoth's combat result."
+                ],
+                [
+                  "5",
+                  "Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a\nsingle Wound it has lost previously in the game."
+                ],
+                [
+                  "6",
+                  "Squash and Grab Another: The model is removed as a casualty and the Mammoth then picks\nanother victim. Roll again on this table to see what happens."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -7927,11 +7925,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLAVE GIANT",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8116,18 +8116,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Throttle with Chain 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Throttle with Chain 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Throttle with Chain"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -8185,53 +8198,36 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim suffers one or more unsaved Wounds, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Flail with Chain: The Giant inflicts D6 Hits this round. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Otherwise, it will attack using the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Throttle with Chain: Both the Slave Giant and the target roll a D6 and add their respective Strength values. If the Slave Giant's roll is higher than the target's, the target suffers D6 Wounds which Ignore Armour Saves. If the Slave Giant's roll is 1 during the roll-off, they cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result. If no enemy units are in range,\ntreat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8242,6 +8238,7 @@
         {
           "name": "GREASUS GOLDTOOTH",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8386,11 +8383,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHARK IRONSKIN",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8546,11 +8545,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKRAG THE SLAUGHTERER",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8635,54 +8636,47 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Models Killed Effect on Skrag Effect on Gorgers 1+"
-                },
-                {
-                  "emph": "",
-                  "text": " Skrag gains Regeneration (4+). All Gorgers that have not entered play do so in their next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5+"
-                },
-                {
-                  "emph": "",
-                  "text": " Skrag gains +1 Attack. All Gorgers gain +1 Attack. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "10+"
-                },
-                {
-                  "emph": "",
-                  "text": " Skrag gains Hatred. All Gorgers gain Hatred. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "15+"
-                },
-                {
-                  "emph": "",
-                  "text": " Skrag becomes Unbreakable. All Gorgers gain Regeneration (4+)."
-                }
-              ],
-              "text": "Models Killed Effect on Skrag Effect on Gorgers 1+ Skrag gains Regeneration (4+). All Gorgers that have not entered play do so in their next turn. 5+ Skrag gains +1 Attack. All Gorgers gain +1 Attack. 10+ Skrag gains Hatred. All Gorgers gain Hatred. 15+ Skrag becomes Unbreakable. All Gorgers gain Regeneration (4+)."
+              "type": "chart",
+              "rows": [
+                [
+                  "Models Killed",
+                  "Effect on Skrag",
+                  "Effect on Gorgers"
+                ],
+                [
+                  "1+",
+                  "Skrag gains Regeneration (4+).",
+                  "All Gorgers that have not entered play do so in their\nnext turn."
+                ],
+                [
+                  "5+",
+                  "Skrag gains +1 Attack.",
+                  "All Gorgers gain +1 Attack."
+                ],
+                [
+                  "10+",
+                  "Skrag gains Hatred.",
+                  "All Gorgers gain Hatred."
+                ],
+                [
+                  "15+",
+                  "Skrag becomes Unbreakable.",
+                  "All Gorgers gain Regeneration (4+)."
+                ]
+              ]
             },
             {
               "type": "field",
               "label": "SPECIAL RULES",
               "value": "Frenzy, Immunity (Poisoned Attacks), Killing Blow, Natural Armour (6+), Ogre Charge, Terror"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROTH ONEFINGER",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8844,11 +8838,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORG MAGMABORN",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8974,11 +8970,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BRAGG THE GUTSMAN",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9082,11 +9080,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BRAUGH SLAVELORD",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9212,11 +9212,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JHARED THE RED",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9339,7 +9341,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9350,6 +9353,7 @@
         {
           "name": "Written & Edited by:",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9361,11 +9365,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9377,7 +9383,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

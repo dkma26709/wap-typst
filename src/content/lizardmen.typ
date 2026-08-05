@@ -209,7 +209,10 @@
 #para(((emph: "", text: "Skink character on foot only. This item gives the wearer the Fly (10) and Magic Resistance (1) special rules."),))
 #namecost("THE EGG OF QUANGO", "30 points")
 #para(((emph: "", text: "One use only. This item can be used at the start of any Close Combat phase. Nominate one enemy unit in base contact with the bearer or his unit, roll a D6 and consult the table below to find out what happens. Any Wounds inflicted count towards combat results."),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The enemy unit immediately suffers D6 Strength 3 hits. "), (emph: "bold", text: "2-3"), (emph: "", text: " The enemy unit immediately suffers D6 Strength 4 hits. "), (emph: "bold", text: "4-6"), (emph: "", text: " The enemy unit immediately suffers 2D6 Strength 5 hits.")))
+#chart((("D6", "Result"), ("1", "The enemy unit immediately suffers D6
+Strength 3 hits."), ("2-3", "The enemy unit immediately suffers D6
+Strength 4 hits."), ("4-6", "The enemy unit immediately suffers 2D6
+Strength 5 hits.")))
 #namecost("THE HORN OF KYGOR", "25 points")
 #para(((emph: "", text: "One use only. The bearer of this item can sound it at the start of any of his Movement phases. If they do so, all friendly mounts, War Beasts, Monstrous Beasts and Monsters within 12\" of the bearer have the Frenzy special rule until the start of their next Movement phase."),))
 #namecost("GLEAMING PENDANT OF CHOTEC", "30 points")
@@ -596,7 +599,8 @@
 #minitable(("Range", "Strength", "Special Rules"), ("D6\"", "2", "-"))
 #para(((emph: "", text: "The Ark of Sotek can be activated in any friendly Shooting phase, even if the Bastiladon has marched, charged or is engaged in close combat. When activated, all enemy units within D6\" immediately take 2D6 Strength 2 hits, distributed as for shooting."),))
 #items(((runs: ((emph: "bold", text: "Revivification Crystal:"), (emph: "", text: " All friendly units with the Cold-blooded special rule within 6\" of one or more Bastiladons with a Revivification Crystal gains the Regeneration (6+) special rule.")), sub: ()), (runs: ((emph: "bold", text: "Solar Engine:"), (emph: "", text: " Arcane Item. All friendly units with the Cold-blooded special rule that are within 6\" of one or more Bastiladons with a Solar Engine gain +1 Initiative. In addition, it contains a Bound Spell (Level 1, cast on 6+). "), (emph: "italic", text: "Beam of Chotec"), (emph: "", text: " is a "), (emph: "bold", text: "magic missile"), (emph: "", text: " with a range of 24\". If successfully cast, roll a D6 and consult the table below to determine the Strength and number of hits (as well as any other effects) caused by this spell. All hits caused by Beam of Chotec are Flaming Attacks.")), sub: ())))
-#para(((emph: "bold", text: "D6 Number of Hits: 1"), (emph: "", text: " D3 Strength 3 hits. "), (emph: "bold", text: "2-3"), (emph: "", text: " D6 Strength 4 hits. "), (emph: "bold", text: "4-5"), (emph: "", text: " 2D6 Strength 5 hits. "), (emph: "bold", text: "6"), (emph: "", text: " 2D6 Strength 6 hits. In addition, the target suffers a -1 penalty to their Weapon Skill and Ballistic Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase.")))
+#chart((("D6", "Number of Hits:"), ("1", "D3 Strength 3 hits."), ("2-3", "D6 Strength 4 hits."), ("4-5", "2D6 Strength 5 hits."), ("6", "2D6 Strength 6 hits. In addition, the target suffers a -1 penalty to their Weapon Skill and Ballistic
+Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase.")))
 #field("SPECIAL RULES", "Cold-blooded, Natural Armour (2+), Stubborn")
 #items(((runs: ((emph: "bold", text: "Impervious Defence:"), (emph: "", text: " For the purposes of calculating combat result bonuses, a Bastiladon counts as having no flanks or rear.")), sub: ()), (runs: ((emph: "bold", text: "Thunderous Bludgeon:"), (emph: "", text: " Before rolling To Hit, nominate one of the Bastiladon's Attacks as the Thunderous Bludgeon (a different coloured dice works best). This Attack is resolved at Strength 10 and receives a +1 To Hit bonus against models in the creature's rear arc.")), sub: ())))
 #field("OPTIONS", "")

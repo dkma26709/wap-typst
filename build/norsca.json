@@ -8,10 +8,10 @@
   "slug": "norsca",
   "image_dir": "images/norsca",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -230,6 +230,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -423,11 +424,13 @@
               ],
               "text": "Additional hand weapon. The wielder gains the Poisoned Attacks special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -564,11 +567,13 @@
               ],
               "text": "Model on foot only. This armour gives the wearer a 6+ armour save and the Ambushers special rule. In addition, any enemy unit that gets destroyed by them in close combat or from pursuit is worth +100 Victory Points."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -651,11 +656,13 @@
               ],
               "text": "IDUNN'S APPLE 15 points The bearer gains the Regeneration (4+) special rule. If owner rolls a 1 when making their Regeneration save, they lose this special rule for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -705,11 +712,13 @@
               ],
               "text": "Charm. One use only. The Wizard may use this item at the start of any Magic phase. To do so, roll a D6; on a 2+, they gain D3 Power or Dispel dice. If a 1 is rolled, they lose one Wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -807,11 +816,13 @@
               ],
               "text": "The model gains the Devastating Charge special rule. However, they must always pursue a fleeing enemy."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -908,7 +919,8 @@
               ],
               "text": "The unit carrying this standard gains the Vanguard special rule."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -932,6 +944,7 @@
         {
           "name": "WARLEADERS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1233,11 +1246,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHAMANS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1456,11 +1471,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKALD",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1722,11 +1739,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BEASTMASTER",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1908,11 +1927,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VALKYRIE",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2047,11 +2068,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ULFJARL",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2141,7 +2164,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2152,6 +2176,7 @@
         {
           "name": "WARHORSE",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2196,7 +2221,8 @@
               "label": "BASE SIZE",
               "value": "25x50 or 30x60"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2207,6 +2233,7 @@
         {
           "name": "BONDSMEN",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2346,11 +2373,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOWMEN",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2500,11 +2529,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2691,11 +2722,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "REAVERS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2845,11 +2878,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WHALERS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2949,11 +2984,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Rage, Skirmishers"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HORSEMEN",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3179,11 +3216,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THRALLS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3339,11 +3378,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR WOLVES",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3393,7 +3434,8 @@
               "label": "BASE SIZE",
               "value": "25x50"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3404,6 +3446,7 @@
         {
           "name": "HUSCARLS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3572,11 +3615,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BERSERKERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3725,11 +3770,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHIELDMAIDENS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3888,11 +3935,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4002,11 +4051,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR WOLF CHARIOT",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4159,11 +4210,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Rage"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ULFWERENAR",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4248,11 +4301,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKIN WOLVES",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4327,11 +4382,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ICE WOLVES",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4386,11 +4443,13 @@
               "label": "SPECIAL RULES",
               "value": "Ice Attacks, Natural Armour (6+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNOW TROLLS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4508,7 +4567,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4519,6 +4579,7 @@
         {
           "name": "WEREBEAST",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4703,11 +4764,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FROST GIANT",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4839,11 +4902,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CURSED ETTIN",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5097,11 +5162,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ICE DRAKE",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5170,11 +5237,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR MAMMOTH",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5324,34 +5393,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Attack Type 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " Butt "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5"
-                },
-                {
-                  "emph": "",
-                  "text": " Gore "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " Bellow"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Attack Type 1-2 Butt 3-5 Gore 6 Bellow"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Attack Type"
+                ],
+                [
+                  "1-2",
+                  "Butt"
+                ],
+                [
+                  "3-5",
+                  "Gore"
+                ],
+                [
+                  "6",
+                  "Bellow"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -5413,43 +5479,29 @@
               "text": "- Trample: A single enemy unit in base contact suffers D6 Strength 7 hits, plus an additional D3 Hits for each rank of five or more models it has. - Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The Mammoth automatically wins the combat by 3 points or more. This result has no effect against Animated Constructs. - Butt: The Mammoth inflicts one automatic hit against one model in base contact (your choice), causing D3 Strength 7 hits with the Multiple Wounds (D3) special rule - Stomp: The Mammoth inflicts 3D6 Hits with its Stomp Attack this turn. - Gore: The Mammoth makes D6 attacks against a chosen unit in close combat with the Heroic Killing Blow special rule. - Pick up and...: The Mammoth grabs a Character from the target unit (Mammoth player's choice). Roll a D6 to see what unfortunate fate befalls the victim."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Throw back into combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled back into their own unit like a missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Squash and grab another:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
-                }
-              ],
-              "text": "D6 Result 1-2 Throw back into combat: The victim is hurled back into their own unit like a missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3-4 Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 5 Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. 6 Squash and grab another: The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Throw back into combat: The victim is hurled back into their own unit like a missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3-4",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly\ndetermine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits.\nUnsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy\nunits are in range, treat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "5",
+                  "Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a\nsingle Wound it has lost previously in the game."
+                ],
+                [
+                  "6",
+                  "Squash and grab another: The model is removed as a casualty and the Mammoth then picks\nanother victim. Roll again on this table to see what happens."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -5491,7 +5543,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5502,6 +5555,7 @@
         {
           "name": "ERIK REDAXE",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5614,11 +5668,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KEORL THUNDERHAND",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5716,11 +5772,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Rage, Saga of the Beastslayer (see Sagas)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLOKI 'LOSTSON'",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5884,11 +5942,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRENOK JOHANSEN",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5986,11 +6046,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Rage, Saga of the Relentless Warrior (see Sagas)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SIGRUN THE PROUD",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6121,11 +6183,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NJAL TROELSON",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6223,11 +6287,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Rage, Hatred (Empire), Saga of the Glorious Hunter (see Sagas), Scouts, Sniper"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JORA AND BJORN",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6376,11 +6442,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STURMJARL",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6516,11 +6584,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BRAGI STURLUSON",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6636,11 +6706,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE RAVENSWYRD",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6799,11 +6871,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FENRIR WOLFCLAW",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6915,11 +6989,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STYRMIR RIMEFROST",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7031,7 +7107,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7042,6 +7119,7 @@
         {
           "name": "Written & Edited by:",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7053,11 +7131,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7069,7 +7149,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

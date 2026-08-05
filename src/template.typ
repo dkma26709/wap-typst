@@ -5,6 +5,7 @@
 // below take dictionaries rather than content blocks.
 
 #let ink = rgb(38, 28, 18)
+#let muted = rgb(104, 88, 66)
 #let hair = rgb(126, 108, 84)
 #let tint = rgb(126, 108, 84, 42)
 #let stripe = rgb(255, 255, 255, 26)
@@ -123,6 +124,33 @@
   },
 )
 
+// A ruled chart — to-hit, to-wound, armour saves. Unlike a stat line these are
+// drawn as real tables in the source, so they keep visible rules here too. Both
+// the first row and the first column are treated as headers, which is the shape
+// of every cross-referencing chart in the book.
+#let chart(rows) = block(above: 0.95em, below: 0.5em, width: 100%, align(center, table(
+  columns: rows.at(0).len(),
+  align: center + horizon,
+  stroke: 0.4pt + hair,
+  inset: (x: 4pt, y: 3.5pt),
+  fill: (x, y) => if y == 0 or x == 0 { tint },
+  ..rows.flatten().map(c => text(size: 9pt, c)),
+)))
+
+// A diagram lifted from the source. Named `diagram` rather than `figure` so it
+// does not shadow Typst's own. The width is a fraction of the measure, so a
+// half-column diagram stays half a column whatever the margins are.
+#let diagram(path, fraction) = block(above: 1em, below: 1em, width: 100%,
+  align(center, image(path, width: fraction * 100%)),
+)
+
+// The axis labels around a chart. In the source the row axis is set vertically
+// beside the grid; read in flow order it arrives after it, so both axes are set
+// as captions rather than as the headings their display face would suggest.
+#let chartlabel(name) = block(above: 0.3em, below: 0.3em, align(center,
+  text(size: 8.5pt, weight: "bold", tracking: 0.12em, fill: muted)[#upper(name)],
+))
+
 // --- front matter -----------------------------------------------------------
 
 // `page(..)` with a body is used rather than `set page(..)`, so the suppressed
@@ -155,12 +183,15 @@
 
 // --- document ---------------------------------------------------------------
 
-#let book(title: "", body) = {
+// `side` widens the margins for the core rulebook, which is set in one column:
+// at the army books' measure a page of continuous prose runs to ~90 characters a
+// line, which is too long to read comfortably.
+#let book(title: "", side: 2.4cm, body) = {
   set document(title: title)
   set page(
     paper: "a4",
-    margin: (x: 2.4cm, top: 2.2cm, bottom: 1.9cm),
-    background: image("../assets/images/parchment.png", width: 100%, height: 100%),
+    margin: (x: side, top: 2.2cm, bottom: 1.9cm),
+    background: image("/assets/images/parchment.jpg", width: 100%, height: 100%),
     footer: context align(center, text(size: 9.5pt, fill: ink)[
       #counter(page).display()
     ]),
@@ -187,6 +218,13 @@
     #v(-0.52em)
     #line(length: 100%, stroke: 0.6pt + hair)
   ]
+
+  // Third tier, used only by the core rulebook: no rule beneath it, so the
+  // hierarchy stays legible against the level-2 headings.
+  show heading.where(level: 3): it => block(
+    above: 1.1em, below: 0.35em, sticky: true,
+    text(size: 11.5pt, weight: "bold", tracking: 0.04em)[#upper(it.body)],
+  )
 
   body
 }

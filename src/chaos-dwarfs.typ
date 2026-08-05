@@ -6,7 +6,7 @@
 #cover(
   title: "Chaos Dwarfs",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/chaos-dwarfs.png",
+  art: "/assets/covers/chaos-dwarfs.png",
 )
 
 #colophon((

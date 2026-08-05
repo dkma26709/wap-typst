@@ -8,10 +8,10 @@
   "slug": "orcs-goblins",
   "image_dir": "images/orcs-goblins",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 748
     },
     "204": {
-      "file": "img-0204.png",
+      "file": "img-0204.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "218": {
-      "file": "img-0218.png",
+      "file": "img-0218.jpg",
       "first_page": 6,
       "background": true,
       "width": 1580,
@@ -151,35 +151,25 @@
           "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Animosity test and must roll on the Animosity table below:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1 Get 'Em:"
-            },
-            {
-              "emph": "",
-              "text": " For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. "
-            },
-            {
-              "emph": "bold",
-              "text": "2-4 Squabble:"
-            },
-            {
-              "emph": "",
-              "text": " If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "5-6 We'll Show 'Em:"
-            },
-            {
-              "emph": "",
-              "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-            }
-          ],
-          "text": "D6 Result 1 Get 'Em: For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority of the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. 2-4 Squabble: If it is possible to do so, the unit must declare a charge against the closest viable enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. 5-6 We'll Show 'Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Get 'Em: For every complete rank the unit\nhas, it suffers D3 hits at the Strength\ncharacteristic of the majority of the models in\nthe unit. The unit may not voluntarily move\nor shoot this turn. Wounds caused by the Get\n'Em result never cause Panic tests."
+            ],
+            [
+              "2-4",
+              "Squabble: If it is possible to do so, the unit\nmust declare a charge against the closest\nviable enemy unit. If the unit is unable to\ndeclare a charge, the unit may not move in\nthe Movement phase or shoot this turn."
+            ],
+            [
+              "5-6",
+              "We'll Show 'Em: Pivot the unit on the spot\nto face the nearest visible enemy unit, and\nthen make a full normal move in a straight\nline towards it. If there is no visible enemy,\nthe unit must move straight ahead instead. If\nit is impossible for the unit to pivot to face\nthe closest enemy, it will pivot towards it as\nfar as it can, and will then move as far\nforward as it can while still keeping the\nenemy within its forward arc. After the move\nis complete the unit must declare a charge\nagainst the closest visible enemy unit, if it is\npossible to do so. If the unit cannot declare a\ncharge then it may carry on with the rest of\nits turn normally, as if it had not yet moved\nthis turn."
+            ]
+          ]
         },
         {
           "type": "namecost",
@@ -358,67 +348,37 @@
           "text": "If an Orc or Goblin Wizard rolls a Miscast, they roll on the following table instead of the normal Miscast Table used by other wizards:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1-3 FZZZZZZAP!"
-            },
-            {
-              "emph": "",
-              "text": " Resolve the effects as if the Wizard had cast the "
-            },
-            {
-              "emph": "italic",
-              "text": "Gaze of Mork"
-            },
-            {
-              "emph": "",
-              "text": " spell and then deduct D3 dice from the power pool. "
-            },
-            {
-              "emph": "bold",
-              "text": "4-5 \"Yuuurgh!\""
-            },
-            {
-              "emph": "",
-              "text": " The Wizard is subject to the Frenzy and Stupidity special rules for the rest of the game, although he may never lose his Frenzy. He may cast no further spells this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "6-7 \"I've Forgot!\""
-            },
-            {
-              "emph": "",
-              "text": " The Wizard permanently reduces his Wizard Level by 1 and may not cast any further spells this phase. "
-            },
-            {
-              "emph": "bold",
-              "text": "8-9 \"Me 'Ead 'Urts!\""
-            },
-            {
-              "emph": "",
-              "text": " All Orcs and Goblins (friend or foe) within 12\" that are capable of channelling power or dispel dice suffer a Strength 4 hit which Ignores Armour saves. In addition, D3 dice are lost from the pool. "
-            },
-            {
-              "emph": "bold",
-              "text": "10-11 \"I Fink I'm Gonna…\":"
-            },
-            {
-              "emph": "",
-              "text": " The Wizard suffers a Strength 10 hit and all Orc and Goblin units (friend or foe) within 12\" suffer D6 Strength 5 hits which Ignores Armour saves. In addition, D3 dice are lost from the pool. "
-            },
-            {
-              "emph": "bold",
-              "text": "12+ 'EADBANG!"
-            },
-            {
-              "emph": "",
-              "text": " Place the large round template over the Wizard. Any model under the template must pass a Toughness test or also be killed outright with no armour saves allowed. After resolving hits from this template, removing the Wizard as casualty with no saves allowed. In addition, D3 dice are lost from the power pool."
-            }
-          ],
-          "text": "D6 Result 1-3 FZZZZZZAP! Resolve the effects as if the Wizard had cast the Gaze of Mork spell and then deduct D3 dice from the power pool. 4-5 \"Yuuurgh!\" The Wizard is subject to the Frenzy and Stupidity special rules for the rest of the game, although he may never lose his Frenzy. He may cast no further spells this turn. 6-7 \"I've Forgot!\" The Wizard permanently reduces his Wizard Level by 1 and may not cast any further spells this phase. 8-9 \"Me 'Ead 'Urts!\" All Orcs and Goblins (friend or foe) within 12\" that are capable of channelling power or dispel dice suffer a Strength 4 hit which Ignores Armour saves. In addition, D3 dice are lost from the pool. 10-11 \"I Fink I'm Gonna…\": The Wizard suffers a Strength 10 hit and all Orc and Goblin units (friend or foe) within 12\" suffer D6 Strength 5 hits which Ignores Armour saves. In addition, D3 dice are lost from the pool. 12+ 'EADBANG! Place the large round template over the Wizard. Any model under the template must pass a Toughness test or also be killed outright with no armour saves allowed. After resolving hits from this template, removing the Wizard as casualty with no saves allowed. In addition, D3 dice are lost from the power pool."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1-3",
+              "FZZZZZZAP! Resolve the effects as if the\nWizard had cast the Gaze of Mork spell and\nthen deduct D3 dice from the power pool."
+            ],
+            [
+              "4-5",
+              "\"Yuuurgh!\" The Wizard is subject to the\nFrenzy and Stupidity special rules for the\nrest of the game, although he may never\nlose his Frenzy. He may cast no further\nspells this turn."
+            ],
+            [
+              "6-7",
+              "\"I've Forgot!\" The Wizard permanently\nreduces his Wizard Level by 1 and may not\ncast any further spells this phase."
+            ],
+            [
+              "8-9",
+              "\"Me 'Ead 'Urts!\" All Orcs and Goblins\n(friend or foe) within 12\" that are capable\nof channelling power or dispel dice suffer a\nStrength 4 hit which Ignores Armour saves.\nIn addition, D3 dice are lost from the pool."
+            ],
+            [
+              "10-11",
+              "\"I Fink I'm Gonna…\": The Wizard\nsuffers a Strength 10 hit and all Orc and\nGoblin units (friend or foe) within 12\"\nsuffer D6 Strength 5 hits which Ignores\nArmour saves. In addition, D3 dice are lost\nfrom the pool."
+            ],
+            [
+              "12+",
+              "'EADBANG! Place the large round\ntemplate over the Wizard. Any model under\nthe template must pass a Toughness test or\nalso be killed outright with no armour saves\nallowed. After resolving hits from this\ntemplate, removing the Wizard as casualty\nwith no saves allowed. In addition, D3 dice\nare lost from the power pool."
+            ]
+          ]
         }
       ]
     },
@@ -882,35 +842,25 @@
           "text": "Foot of Gork is a direct damage area spell with a range of 24\" that uses the small round template. All models hit by the template suffer a Strength 5 hit with the Multiple Wounds (D3) special rule. After resolving the effects of the spell, roll a D6 and consult the following table:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1"
-            },
-            {
-              "emph": "",
-              "text": " Your opponent places the template anywhere on the table and resolves the effect of the spell again. The spell then ends. "
-            },
-            {
-              "emph": "bold",
-              "text": "2-3"
-            },
-            {
-              "emph": "",
-              "text": " The spell ends without further effect. "
-            },
-            {
-              "emph": "bold",
-              "text": "4-6"
-            },
-            {
-              "emph": "",
-              "text": " Place the template and resolve the effect of the spell again. After resolving the effects of this stomp, roll again on this table."
-            }
-          ],
-          "text": "D6 Result 1 Your opponent places the template anywhere on the table and resolves the effect of the spell again. The spell then ends. 2-3 The spell ends without further effect. 4-6 Place the template and resolve the effect of the spell again. After resolving the effects of this stomp, roll again on this table."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Your opponent places the template anywhere\non the table and resolves the effect of the\nspell again. The spell then ends."
+            ],
+            [
+              "2-3",
+              "The spell ends without further effect."
+            ],
+            [
+              "4-6",
+              "Place the template and resolve the effect of\nthe spell again. After resolving the effects of\nthis stomp, roll again on this table."
+            ]
+          ]
         }
       ]
     },
@@ -2036,19 +1986,25 @@
           "text": "Remains in Play. Curse of da Bad Moon is a magical vortex that uses the small round template. Any model touched by the template at any point during its move must pass a Characteristic test or suffer a Wound which Ignores Armour Saves. The type of Characteristic test is determined by rolling on the following chart. Roll once each Magic phase, just before moving the template, and apply the result to all models affected by the curse in that Magic phase."
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Characteristic"
-            },
-            {
-              "emph": "",
-              "text": " 1-2 Initiative 3-4 Strength 5-6 Toughness"
-            }
-          ],
-          "text": "D6 Characteristic 1-2 Initiative 3-4 Strength 5-6 Toughness"
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Characteristic"
+            ],
+            [
+              "1-2",
+              "Initiative"
+            ],
+            [
+              "3-4",
+              "Strength"
+            ],
+            [
+              "5-6",
+              "Toughness"
+            ]
+          ]
         }
       ]
     },
@@ -2638,6 +2594,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3233,11 +3190,13 @@
               ],
               "text": "An Infantry Character model which suffers an unsaved Wound (but is not slain) by Owzat's Club of Smackin' is immediately knocked clean out of combat and suffers a Strength 4 Hit. Move the model D6\" backwards (measure from the back of any unit it is in), stopping at least 1\" away from other units or impassable terrain."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3399,11 +3358,13 @@
               ],
               "text": "Goblins only. Shield. For each To Hit roll of a 1 against the bearer in close combat, the Spiteful Shield inflicts a Strength 5 Hit against the model that struck the blow."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3682,11 +3643,13 @@
               ],
               "text": "This item gives the bearer the Magical Ward (5+) special rule. At the end of each phase in which the model suffered 1 or more Wounds, roll a D6 for each failed Ward save roll they made. On the roll a 1, the Glowy Howzit cannot be used for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3977,41 +3940,33 @@
               "text": "Savage Orcs only. Charm. One use only. This item can be used at the start of any of your Magic phases. Roll a D6 and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer suffers a Strength 5 Hit. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer gains +1 Power dice. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer gains +D3 Power dice."
-                }
-              ],
-              "text": "D6 Result: 1 The bearer suffers a Strength 5 Hit. 2-4 The bearer gains +1 Power dice. 5-6 The bearer gains +D3 Power dice."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "The bearer suffers a Strength 5 Hit."
+                ],
+                [
+                  "2-4",
+                  "The bearer gains +1 Power dice."
+                ],
+                [
+                  "5-6",
+                  "The bearer gains +D3 Power dice."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4347,35 +4302,25 @@
               "text": "Goblins only. One use only. This item can be used at the start of any close combat phase. When used, roll a D6 and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer and their unit suffer -1 To Hit in close combat this phase. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-6"
-                },
-                {
-                  "emph": "",
-                  "text": " All enemy units in base contact with the bearer suffer -1 To Hit in close combat this phase."
-                }
-              ],
-              "text": "D6 Result: 1 The bearer and their unit suffer -1 To Hit in close combat this phase. 2 No effect 3-6 All enemy units in base contact with the bearer suffer -1 To Hit in close combat this phase."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "The bearer and their unit suffer -1 To Hit in\nclose combat this phase."
+                ],
+                [
+                  "2",
+                  "No effect"
+                ],
+                [
+                  "3-6",
+                  "All enemy units in base contact with the\nbearer suffer -1 To Hit in close combat this\nphase."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -4394,35 +4339,25 @@
               "text": "Roll a D6 for the bearer of Guzzla's Battle Brew at the start of the game and consult the table below to see what effect it has:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The model gains the Stupidity special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4"
-                },
-                {
-                  "emph": "",
-                  "text": " The model gains the Hatred special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " The model gains the Hatred and Frenzy special rule."
-                }
-              ],
-              "text": "D6 Result: 1 The model gains the Stupidity special rule. 2-4 The model gains the Hatred special rule. 5-6 The model gains the Hatred and Frenzy special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "The model gains the Stupidity special rule."
+                ],
+                [
+                  "2-4",
+                  "The model gains the Hatred special rule."
+                ],
+                [
+                  "5-6",
+                  "The model gains the Hatred and Frenzy\nspecial rule."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -4584,11 +4519,13 @@
               ],
               "text": "Forest Goblins only. Enemy units in base contact with the bearer of this item roll one dice less for their flee moves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4810,7 +4747,8 @@
               ],
               "text": "The unit carrying this standard may re-roll failed Dangerous Terrain tests."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -4834,6 +4772,7 @@
         {
           "name": "ORC BOSSES",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5199,11 +5138,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORC SHAMANS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5401,11 +5342,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOBLIN BOSSES",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5781,11 +5724,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOBLIN SHAMANS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6034,11 +5979,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT RIVER TROLL HAG",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6204,18 +6151,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Suck out its Marrow 2-3 Pick up and… 4-5 Crush with Stump 6 Grind its Bones"
+                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "TIDDLERS TABLE Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Suck out its Marrow 2-3 Pick up and… 4-5 Crush with Stump 6 Grind its Bones"
+              "text": "TIDDLERS TABLE Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Suck out its Marrow"
+                ],
+                [
+                  "2-3",
+                  "Pick up and…"
+                ],
+                [
+                  "4-5",
+                  "Crush with Stump"
+                ],
+                [
+                  "6",
+                  "Grind its Bones"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -6227,18 +6191,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1-2 Smother 3-4 Mother 5-6 Mither"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "WHOPPERS TABLE Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1-2 Smother 3-4 Mother 5-6 Mither"
+              "text": "WHOPPERS TABLE Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Smother"
+                ],
+                [
+                  "3-4",
+                  "Mother"
+                ],
+                [
+                  "5-6",
+                  "Mither"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -6264,57 +6241,42 @@
               "text": "- Suck out its Marrow: The unit suffers D6 Strength 5 hits. For every wound the target loses, the Troll Hag gains one, up to its starting number. - Pick up and…: The Troll Hag stoops down and grabs a single Character in base contact from the target unit (Troll Hag's choice). The Troll Hag grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Net: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Troll Hag should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Toss Back: The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6\nStrength 3 hits are inflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Send Packing: The Troll Hag will attempt to throw the victim in the nearest water feature (such\nas a river, marsh or swamp) within 12\". The victim is automatically removed as a casualty\nunless they have the Aquatic special rule in which case the model lands unharmed in the water.\nIf no water feature is in range, treat this as a Toss Back result instead."
+                ],
+                [
+                  "4",
+                  "Squish: The model is removed as a casualty."
+                ],
+                [
+                  "5",
+                  "Gobble: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Troll Hag had rolled the Stuff into Net result, and then\nchoose another victim. Roll again on this table to see what the Troll Hag does with it."
+                ]
+              ]
+            },
+            {
               "type": "para",
               "style": "body",
               "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Net:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Troll Hag should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Toss Back:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Send Packing:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Troll Hag will attempt to throw the victim in the nearest water feature (such as a river, marsh or swamp) within 12\". The victim is automatically removed as a casualty unless they have the Aquatic special rule in which case the model lands unharmed in the water. If no water feature is in range, treat this as a Toss Back result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Squish:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Gobble:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Troll Hag had rolled the Stuff into Net result, and then choose another victim. Roll again on this table to see what the Troll Hag does with it. "
-                },
                 {
                   "emph": "bold",
                   "text": "- Crush with Stump:"
@@ -6356,13 +6318,15 @@
                   "text": " Neither the Troll Hag nor the target actually fight if they have not already done so this round. The Troll Hag automatically wins the combat by 2 points or more. In addition, the target has its Weapon Skill reduced to 1 until the end of the next turn. This result has no effect against Animated Constructs."
                 }
               ],
-              "text": "D6 Result 1 Stuff into Net: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Troll Hag should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Toss Back: The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Send Packing: The Troll Hag will attempt to throw the victim in the nearest water feature (such as a river, marsh or swamp) within 12\". The victim is automatically removed as a casualty unless they have the Aquatic special rule in which case the model lands unharmed in the water. If no water feature is in range, treat this as a Toss Back result instead. 4 Squish: The model is removed as a casualty. 5 Gobble: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Troll Hag had rolled the Stuff into Net result, and then choose another victim. Roll again on this table to see what the Troll Hag does with it. - Crush with Stump: All models in base contact, friend or foe, suffer a Strength 6 hit. - Grind its Bones: The Troll Hag may target a single model in base contact. This model suffers a single Strength 6 hit with the Multiple Wounds (D3) special rule. - Smother: The target suffers D3 Wounds which Ignores Armour saves. This has no effect on Animated Constructs. In addition, the target may not make any attacks until the Troll Hag is either slain or rolls a different result on its special attack table. - Mother: The target takes a single Strength 6 hit with the Multiple Wounds (D3) special rule. If the target survives the attack, it may not attack until the start of your next turn. - Mither: Neither the Troll Hag nor the target actually fight if they have not already done so this round. The Troll Hag automatically wins the combat by 2 points or more. In addition, the target has its Weapon Skill reduced to 1 until the end of the next turn. This result has no effect against Animated Constructs."
+              "text": "- Crush with Stump: All models in base contact, friend or foe, suffer a Strength 6 hit. - Grind its Bones: The Troll Hag may target a single model in base contact. This model suffers a single Strength 6 hit with the Multiple Wounds (D3) special rule. - Smother: The target suffers D3 Wounds which Ignores Armour saves. This has no effect on Animated Constructs. In addition, the target may not make any attacks until the Troll Hag is either slain or rolls a different result on its special attack table. - Mother: The target takes a single Strength 6 hit with the Multiple Wounds (D3) special rule. If the target survives the attack, it may not attack until the start of your next turn. - Mither: Neither the Troll Hag nor the target actually fight if they have not already done so this round. The Troll Hag automatically wins the combat by 2 points or more. In addition, the target has its Weapon Skill reduced to 1 until the end of the next turn. This result has no effect against Animated Constructs."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARCHANTER",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6593,11 +6557,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SQUIGBOSS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6783,11 +6749,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DANKHOLD TROLLBOSS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6910,7 +6878,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6921,6 +6890,7 @@
         {
           "name": "WAR BOAR",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6990,11 +6960,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRUNTA",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7064,11 +7036,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WYVERN",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7118,11 +7092,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (8), Natural Armour (4+), Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAW-KRUSHA",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7172,11 +7148,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (5), Impact Hits (D6), Natural Armour (3+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT WOLF",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7241,11 +7219,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNARLFANG",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7309,11 +7289,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT CAVE SQUIG",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7363,11 +7345,13 @@
               "label": "SPECIAL RULES",
               "value": "Immunity (Psychology), Random Movement (3D6), Vanguard"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SPIDER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7436,11 +7420,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIGANTIC SPIDER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7490,7 +7476,8 @@
               "label": "SPECIAL RULES",
               "value": "Natural Armour (5+), Poisoned Attacks, Wall-crawler"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7501,6 +7488,7 @@
         {
           "name": "ORC BOYZ",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7787,11 +7775,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOAR BOYZ",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8045,11 +8035,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARRER BOYZ",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8203,11 +8195,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOBLIN GITZ",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8334,34 +8328,25 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1 Oh Dear!"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit the jester is attached to suffers -1 To Hit in close combat this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Nothing Happens:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Jester has no effect this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-6 You Annoying Little…!"
-                },
-                {
-                  "emph": "",
-                  "text": " All enemy units in base contact with the Jester's unit suffer -1 To Hit in close combat this turn. This has no effect on units with Immunity (Psychology)."
-                }
-              ],
-              "text": "D6 Result: 1 Oh Dear! The unit the jester is attached to suffers -1 To Hit in close combat this turn. 2-3 Nothing Happens: The Jester has no effect this turn. 4-6 You Annoying Little…! All enemy units in base contact with the Jester's unit suffer -1 To Hit in close combat this turn. This has no effect on units with Immunity (Psychology)."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "Oh Dear! The unit the jester is attached to suffers -1 To Hit in close combat this turn."
+                ],
+                [
+                  "2-3",
+                  "Nothing Happens: The Jester has no effect this turn."
+                ],
+                [
+                  "4-6",
+                  "You Annoying Little…! All enemy units in base contact with the Jester's unit suffer -1 To Hit in\nclose combat this turn. This has no effect on units with Immunity (Psychology)."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -8606,11 +8591,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FANATICS",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8851,11 +8838,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF RIDERS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9032,11 +9021,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPIDER RIDERS",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9236,11 +9227,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPIDER SWARMS",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9295,11 +9288,13 @@
               "label": "SPECIAL RULES",
               "value": "Poisoned Attacks, Wall-crawler"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNOTLINGS",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9430,7 +9425,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9441,6 +9437,7 @@
         {
           "name": "BRUTES",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9568,11 +9565,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOAR CHARIOT",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9726,11 +9725,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLACK ORCS",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9944,11 +9945,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NASTY SKULKERS",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10061,11 +10064,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNARLFANG RIDERS",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10214,11 +10219,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF CHARIOT",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10386,11 +10393,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPEAR CHUKKA",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10561,11 +10570,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROCK LOBBA",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10697,11 +10708,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SQUIG HUNTERS",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10838,11 +10851,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNEAKY SNUFFLERS",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10949,11 +10964,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SQUIG HERD",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11082,11 +11099,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SQUIG HOPPERS",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11205,11 +11224,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIGANTIC SPIDER RIDERS",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11376,11 +11397,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TROLLS",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11565,11 +11588,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRES",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11765,7 +11790,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -11776,6 +11802,7 @@
         {
           "name": "BRUTE RAGERZ",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11937,11 +11964,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GORE-GRUNTAS",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12101,11 +12130,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAW-GRUNTA",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12199,11 +12230,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DOOM DIVER CATAPULT",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12327,43 +12360,29 @@
               "text": "Should the artillery dice roll a misfire, roll a D6 and consult the Doom Diver Misfire table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Destroyed!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom Diver Catapult is destroyed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Disabled:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom Diver Catapult cannot shoot this turn or in the controlling player's next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Skidmarks:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom Diver will hit the first thing along the path towards his chosen target point. If this is a piece of terrain he is removed immediately and inflicts no damage. If this is a unit (friend or foe) he will inflict D6 Strength 5 hits, before being removed. The catapult may be fired next turn as normal. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Wild Shot!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Doom Diver is fired D6x10\" in a random direction. This roll determines the impact point for the Doom Diver – he is unable to move the impact point D6\" in this case. The catapult may be fired next turn as normal."
-                }
-              ],
-              "text": "D6 Result 1-2 Destroyed! The Doom Diver Catapult is destroyed. 3-4 Disabled: The Doom Diver Catapult cannot shoot this turn or in the controlling player's next turn. 5 Skidmarks: The Doom Diver will hit the first thing along the path towards his chosen target point. If this is a piece of terrain he is removed immediately and inflicts no damage. If this is a unit (friend or foe) he will inflict D6 Strength 5 hits, before being removed. The catapult may be fired next turn as normal. 6 Wild Shot! The Doom Diver is fired D6x10\" in a random direction. This roll determines the impact point for the Doom Diver – he is unable to move the impact point D6\" in this case. The catapult may be fired next turn as normal."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Destroyed! The Doom Diver Catapult is destroyed."
+                ],
+                [
+                  "3-4",
+                  "Disabled: The Doom Diver Catapult cannot shoot this turn or in the controlling player's next turn."
+                ],
+                [
+                  "5",
+                  "Skidmarks: The Doom Diver will hit the first thing along the path towards his chosen target point. If this\nis a piece of terrain he is removed immediately and inflicts no damage. If this is a unit (friend or foe) he\nwill inflict D6 Strength 5 hits, before being removed. The catapult may be fired next turn as normal."
+                ],
+                [
+                  "6",
+                  "Wild Shot! The Doom Diver is fired D6x10\" in a random direction. This roll determines the impact point\nfor the Doom Diver – he is unable to move the impact point D6\" in this case. The catapult may be fired\nnext turn as normal."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -12414,11 +12433,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANGLER SQUIGS",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12591,11 +12612,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SQUIG GOBBA",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12689,42 +12712,29 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Total Result 3-4 Acid Guts:"
-                },
-                {
-                  "emph": "",
-                  "text": " Every model within 6\" of the Squig Gobba (including the Night Goblin Tenders) takes a Strength 2 Hit which Ignores Armour saves. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Stomach Rumblings:"
-                },
-                {
-                  "emph": "",
-                  "text": " Nothing happens this turn, but you must instead roll 4D6 when firing the Squig Gobba next shooting phase. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "7-17 Squig Torrent:"
-                },
-                {
-                  "emph": "",
-                  "text": " This is resolved as a shot from a Stone Thrower that uses the large round template with a range of 36\". Any model covered by the template suffers a Strength 4 hit. If a misfire is rolled, the Squig Gobba suffers D3 Wounds and the shot is wasted. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "18+ Intestinal Explosion:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Squig Gobba immediately makes a Breath Weapon Attack at Strength 6. After the attack has been resolved, the Squig Gobba suffers D3 Wounds."
-                }
-              ],
-              "text": "Total Result 3-4 Acid Guts: Every model within 6\" of the Squig Gobba (including the Night Goblin Tenders) takes a Strength 2 Hit which Ignores Armour saves. 5-6 Stomach Rumblings: Nothing happens this turn, but you must instead roll 4D6 when firing the Squig Gobba next shooting phase. 7-17 Squig Torrent: This is resolved as a shot from a Stone Thrower that uses the large round template with a range of 36\". Any model covered by the template suffers a Strength 4 hit. If a misfire is rolled, the Squig Gobba suffers D3 Wounds and the shot is wasted. 18+ Intestinal Explosion: The Squig Gobba immediately makes a Breath Weapon Attack at Strength 6. After the attack has been resolved, the Squig Gobba suffers D3 Wounds."
+              "type": "chart",
+              "rows": [
+                [
+                  "Total",
+                  "Result"
+                ],
+                [
+                  "3-4",
+                  "Acid Guts: Every model within 6\" of the Squig Gobba (including the Night Goblin Tenders) takes a\nStrength 2 Hit which Ignores Armour saves."
+                ],
+                [
+                  "5-6",
+                  "Stomach Rumblings: Nothing happens this turn, but you must instead roll 4D6 when firing the\nSquig Gobba next shooting phase."
+                ],
+                [
+                  "7-17",
+                  "Squig Torrent: This is resolved as a shot from a Stone Thrower that uses the large round template\nwith a range of 36\". Any model covered by the template suffers a Strength 4 hit. If a misfire is\nrolled, the Squig Gobba suffers D3 Wounds and the shot is wasted."
+                ],
+                [
+                  "18+",
+                  "Intestinal Explosion: The Squig Gobba immediately makes a Breath Weapon Attack at Strength 6.\nAfter the attack has been resolved, the Squig Gobba suffers D3 Wounds."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -12745,11 +12755,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLOSSAL SQUIG",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12832,11 +12844,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARACHNAROK SPIDER",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13030,11 +13044,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PUMP WAGON",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13307,11 +13323,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DANKHOLD TROLL",
           "page": 58,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13424,11 +13442,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROGUE IDOL OF GORK",
           "page": 58,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13511,11 +13531,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT",
           "page": 59,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13677,18 +13699,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4-6",
+                  "Swing with Club"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -13700,18 +13739,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Thump with Club"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -13769,51 +13821,33 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. Otherwise, it will instead use the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Swing with Club: The Giant fights using the Random Attacks (2D6) special rule this round. - Thump with Club: The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result. If no enemy units are in range,\ntreat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -13835,11 +13869,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BONEGRINDER GIANT",
           "page": 61,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14001,18 +14037,43 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4 Vomit 5 Kick 6 Crush"
+                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4 Vomit 5 Kick 6 Crush"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4",
+                  "Vomit"
+                ],
+                [
+                  "5",
+                  "Kick"
+                ],
+                [
+                  "6",
+                  "Crush"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -14024,18 +14085,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club (see Giants, but using the Random Attacks (3D6) special rule)"
+                  "text": "Use this chart when fighting Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club (see Giants, but using the Random Attacks (3D6) special rule)"
+              "text": "BIG THINGS CHART Use this chart when fighting Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4-6",
+                  "Swing with Club (see Giants, but using the Random Attacks (3D6) special rule)"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -14047,18 +14125,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters and Monstrous Creatures. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-3 Thump with Club 4-5 'Eadbutt 6 Grapple and..."
+                  "text": "Use this chart when fighting Monsters and Monstrous Creatures."
                 }
               ],
-              "text": "BIGGER THINGS CHART Use this chart when fighting Monsters and Monstrous Creatures. D6 Result 1 Yell and Bawl 2-3 Thump with Club 4-5 'Eadbutt 6 Grapple and..."
+              "text": "BIGGER THINGS CHART Use this chart when fighting Monsters and Monstrous Creatures."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-3",
+                  "Thump with Club"
+                ],
+                [
+                  "4-5",
+                  "'Eadbutt"
+                ],
+                [
+                  "6",
+                  "Grapple and..."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -14151,51 +14246,33 @@
               "text": "result – all other models (friendly and enemy) under the template suffer an automatic hit of this Strength. If the roll is a: misfire, the Giant manages to miss the rest of the unit. - Grapple and...: Roll a D6 and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Knobbly Knee:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim immediately suffers D3 Wounds which Ignores Armour Saves and has their Weapon Skill and Initiative reduced to 1 until the end of the next player turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Slam:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim immediately suffers 2D3 Wounds which Ignores Armour Saves. If there is another enemy unit in base contact with the Bonegrinder Giant, that unit also suffers 2D3 Wounds which Ignores Armour Saves. If there are two or more other enemy units in base contact with the Bonegrinder Giant, randomise to see which is slammed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Bear Hug:"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and adds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as a casualty with no saves of any kind allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Fall Over:"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and adds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as a casualty with no saves of any kind allowed. Then continue to resolve the Bonegrinder Giant falling over, in the direction of the target. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Punch, and...:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim suffers D3 Wounds which Ignores Armour Saves, then roll again on this table."
-                }
-              ],
-              "text": "D6 Result 1-2 Knobbly Knee: The victim immediately suffers D3 Wounds which Ignores Armour Saves and has their Weapon Skill and Initiative reduced to 1 until the end of the next player turn. 3 Slam: The victim immediately suffers 2D3 Wounds which Ignores Armour Saves. If there is another enemy unit in base contact with the Bonegrinder Giant, that unit also suffers 2D3 Wounds which Ignores Armour Saves. If there are two or more other enemy units in base contact with the Bonegrinder Giant, randomise to see which is slammed. 4 Bear Hug: Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and adds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as a casualty with no saves of any kind allowed. 5 Fall Over: Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and adds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as a casualty with no saves of any kind allowed. Then continue to resolve the Bonegrinder Giant falling over, in the direction of the target. 6 Punch, and...: The victim suffers D3 Wounds which Ignores Armour Saves, then roll again on this table."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Knobbly Knee: The victim immediately suffers D3 Wounds which Ignores Armour Saves and\nhas their Weapon Skill and Initiative reduced to 1 until the end of the next player turn."
+                ],
+                [
+                  "3",
+                  "Slam: The victim immediately suffers 2D3 Wounds which Ignores Armour Saves. If there is\nanother enemy unit in base contact with the Bonegrinder Giant, that unit also suffers 2D3\nWounds which Ignores Armour Saves. If there are two or more other enemy units in base\ncontact with the Bonegrinder Giant, randomise to see which is slammed."
+                ],
+                [
+                  "4",
+                  "Bear Hug: Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and\nadds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as\na casualty with no saves of any kind allowed."
+                ],
+                [
+                  "5",
+                  "Fall Over: Roll 2D6 and add the Bonegrinder Giant's Strength. Your opponent rolls 2D6 and\nadds the victim's Toughness. If the Bonegrinder Giant's score is higher, the victim is removed as\na casualty with no saves of any kind allowed. Then continue to resolve the Bonegrinder Giant\nfalling over, in the direction of the target."
+                ],
+                [
+                  "6",
+                  "Punch, and...: The victim suffers D3 Wounds which Ignores Armour Saves, then roll again on\nthis table."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -14213,51 +14290,33 @@
               "text": "- Pick Up and...: The Bonegrinder Giant stoops down and grabs a single Character in base contact from the target unit (Bonegrinder Giant player's choice). The Bonegrinder Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Bonegrinder Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 8 Hits which Ignores Armour saves, and D6 Strength 5 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Bonegrinder Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 5 hits. Unsaved Wounds from these hits count towards the Bonegrinder Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Bonegrinder Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Bonegrinder Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 8 Hits which Ignores Armour saves, and D6 Strength 5 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Bonegrinder Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 5 hits. Unsaved Wounds from these hits count towards the Bonegrinder Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Bonegrinder Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Bonegrinder Giant should be slain, any enemy trapped in its bag are freed at the\nend of the battle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 8 Hits which Ignores Armour saves, and D6 Strength 5 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Bonegrinder Giant – randomly\ndetermine which. The victim is removed as a casualty, and the unit takes D6 Strength 5 hits.\nUnsaved Wounds from these hits count towards the Bonegrinder Giant's combat result. If no\nenemy units are in range, treat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Bonegrinder Giant had rolled the Stuff into Bag result,\nabove, and then choose another victim. Roll again on this table to see what the Giant does with\nit."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -14299,7 +14358,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -14310,6 +14370,7 @@
         {
           "name": "GORBAD IRONCLAW",
           "page": 64,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14459,11 +14520,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AZHAG THE SLAUGHTERER",
           "page": 65,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14632,11 +14695,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRUMLOK & GAZBAG",
           "page": 65,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14754,11 +14819,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIMGOR IRONHIDE",
           "page": 66,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14912,11 +14979,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BORGUT FACEBEATER",
           "page": 67,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15056,11 +15125,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BADRUK 'EADSPLITTA",
           "page": 67,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15163,11 +15234,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZOGGROK ANVILSMASHA",
           "page": 68,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15298,11 +15371,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGDRUZ SWAMPDIGGA",
           "page": 68,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15452,11 +15527,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WURRZAG UD URA ZAHUBU",
           "page": 69,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15650,11 +15727,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROM THE PAUNCH",
           "page": 70,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15853,11 +15932,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KIKNIK TOOFSNATCHA",
           "page": 71,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16027,11 +16108,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GITILLA DA HUNTER",
           "page": 72,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16200,11 +16283,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKARSNIK",
           "page": 73,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16397,11 +16482,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKITGIT",
           "page": 74,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16585,11 +16672,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKRAGROTT",
           "page": 75,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16728,11 +16817,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNAGLA GROBSPIT",
           "page": 76,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16911,11 +17002,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TRUGG THE TROLL KING",
           "page": 77,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -16990,59 +17083,37 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Glyph of Shyish:"
-                },
-                {
-                  "emph": "",
-                  "text": " Trugg suffers 1 Wound with no saves allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Glyph of Aqshy:"
-                },
-                {
-                  "emph": "",
-                  "text": " Trugg gains the Flaming Attacks and Multiple Wounds (D3) special rules until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Glyph of Ghur:"
-                },
-                {
-                  "emph": "",
-                  "text": " Trugg gains +1 Attack until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Glyph of Hysh:"
-                },
-                {
-                  "emph": "",
-                  "text": " Trugg gains +1 Leadership until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Glyph of Ulgu:"
-                },
-                {
-                  "emph": "",
-                  "text": " Enemy shooting and close combat attacks suffer -1 To Hit Trugg until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Glyph of Chamon:"
-                },
-                {
-                  "emph": "",
-                  "text": " Trugg gains a 3+ armour save until the start of your next turn."
-                }
-              ],
-              "text": "D6 Result 1 Glyph of Shyish: Trugg suffers 1 Wound with no saves allowed. 2 Glyph of Aqshy: Trugg gains the Flaming Attacks and Multiple Wounds (D3) special rules until the start of your next turn. 3 Glyph of Ghur: Trugg gains +1 Attack until the start of your next turn. 4 Glyph of Hysh: Trugg gains +1 Leadership until the start of your next turn. 5 Glyph of Ulgu: Enemy shooting and close combat attacks suffer -1 To Hit Trugg until the start of your next turn. 6 Glyph of Chamon: Trugg gains a 3+ armour save until the start of your next turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Glyph of Shyish: Trugg suffers 1 Wound with no saves allowed."
+                ],
+                [
+                  "2",
+                  "Glyph of Aqshy: Trugg gains the Flaming Attacks and Multiple Wounds (D3) special rules until the\nstart of your next turn."
+                ],
+                [
+                  "3",
+                  "Glyph of Ghur: Trugg gains +1 Attack until the start of your next turn."
+                ],
+                [
+                  "4",
+                  "Glyph of Hysh: Trugg gains +1 Leadership until the start of your next turn."
+                ],
+                [
+                  "5",
+                  "Glyph of Ulgu: Enemy shooting and close combat attacks suffer -1 To Hit Trugg until the start of your\nnext turn."
+                ],
+                [
+                  "6",
+                  "Glyph of Chamon: Trugg gains a 3+ armour save until the start of your next turn."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -17110,7 +17181,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -17121,6 +17193,7 @@
         {
           "name": "Written & Edited by:",
           "page": 78,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17137,7 +17210,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

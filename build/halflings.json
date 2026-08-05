@@ -8,10 +8,10 @@
   "slug": "halflings",
   "image_dir": "images/halflings",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,21 +25,21 @@
       "height": 651
     },
     "28": {
-      "file": "img-0028.png",
+      "file": "img-0028.jpg",
       "first_page": 2,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "110": {
-      "file": "img-0110.png",
+      "file": "img-0110.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "124": {
-      "file": "img-0124.png",
+      "file": "img-0124.jpg",
       "first_page": 5,
       "background": true,
       "width": 1580,
@@ -164,6 +164,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -370,11 +371,13 @@
               ],
               "text": "Great Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -488,11 +491,13 @@
               ],
               "text": "Buckler. The wielder may re-roll failed Parry saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -654,11 +659,13 @@
               ],
               "text": "This item grants the bearer a Magical Ward (4+) against Wounds caused in close combat by models that have the Fly special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -738,59 +745,37 @@
               "text": "At the start of the game, roll a D6 and consult the table below to see what effect the Magic Arrows have on any shortbows carried by the bearer and any unit they are with the remainder of the game:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots gain the Armour Piercing (1) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " Any enemy unit suffering 1 or more casualties must take a Panic test. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit ignores all Shooting Modifiers that are not caused by magic items or spells. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit may fire Multiple Shots even if they have marched this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots gain the Poisoned Attacks special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " You may choose any one of the results above."
-                }
-              ],
-              "text": "D6 Result 1 All shots gain the Armour Piercing (1) special rule. 2 Any enemy unit suffering 1 or more casualties must take a Panic test. 3 The unit ignores all Shooting Modifiers that are not caused by magic items or spells. 4 The unit may fire Multiple Shots even if they have marched this turn. 5 All shots gain the Poisoned Attacks special rule. 6 You may choose any one of the results above."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "All shots gain the Armour Piercing (1)\nspecial rule."
+                ],
+                [
+                  "2",
+                  "Any enemy unit suffering 1 or more\ncasualties must take a Panic test."
+                ],
+                [
+                  "3",
+                  "The unit ignores all Shooting Modifiers that\nare not caused by magic items or spells."
+                ],
+                [
+                  "4",
+                  "The unit may fire Multiple Shots even if they\nhave marched this turn."
+                ],
+                [
+                  "5",
+                  "All shots gain the Poisoned Attacks special\nrule."
+                ],
+                [
+                  "6",
+                  "You may choose any one of the results above."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -809,51 +794,33 @@
               "text": "The bearer may use this item at the start of each round of close combat they are involved in. Roll a D6 and consult the chart below to see what effect it has:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer immediately suffers a wound, with no saves of any kind allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer gains +1 Weapon Skill, Initiative and Attack. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer gains +1 Strength and +1 Toughness. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " The bearer immediately makes a Strength 5 Breath Weapon attack with the Ignores Armour Saves special rule and then loses any statistics bonuses previously gained from this item."
-                }
-              ],
-              "text": "D6 Result 1 The bearer immediately suffers a wound, with no saves of any kind allowed. 2-3 No effect. 4 The bearer gains +1 Weapon Skill, Initiative and Attack. 5 The bearer gains +1 Strength and +1 Toughness. 6 The bearer immediately makes a Strength 5 Breath Weapon attack with the Ignores Armour Saves special rule and then loses any statistics bonuses previously gained from this item."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "The bearer immediately suffers a wound,\nwith no saves of any kind allowed."
+                ],
+                [
+                  "2-3",
+                  "No effect."
+                ],
+                [
+                  "4",
+                  "The bearer gains +1 Weapon Skill, Initiative\nand Attack."
+                ],
+                [
+                  "5",
+                  "The bearer gains +1 Strength and +1\nToughness."
+                ],
+                [
+                  "6",
+                  "The bearer immediately makes a Strength 5\nBreath Weapon attack with the Ignores\nArmour Saves special rule and then loses any\nstatistics bonuses previously gained from this\nitem."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -904,35 +871,25 @@
               "text": "Bound Spell. The Thingimabob contains the Signature spell from one of the eight Winds of Magic in the Warhammer Rulebook. Roll a D6 at the start of the game and consult the table below to see which:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " Your opponent chooses the Lore of Magic. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-5"
-                },
-                {
-                  "emph": "",
-                  "text": " Randomly determine the Lore of Magic. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " You may choose the Lore of Magic."
-                }
-              ],
-              "text": "D6 Result 1 Your opponent chooses the Lore of Magic. 2-5 Randomly determine the Lore of Magic. 6 You may choose the Lore of Magic."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Your opponent chooses the Lore of Magic."
+                ],
+                [
+                  "2-5",
+                  "Randomly determine the Lore of Magic."
+                ],
+                [
+                  "6",
+                  "You may choose the Lore of Magic."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -1110,11 +1067,13 @@
               ],
               "text": "One use only. This item may be used as a charge reaction by the bearer. When used, the bearer and any unit they are with gain the Feigned Flight (see Fast Cavalry/Skirmishers) and Immunity (Psychology) special rules for the duration of the turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1260,7 +1219,8 @@
               ],
               "text": "The unit carrying this standard causes Terror in models with the Fly special rule."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1284,6 +1244,7 @@
         {
           "name": "OFFICIALS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1603,11 +1564,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTER CHEF",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1841,11 +1804,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HERBALIST",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2006,11 +1971,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTER THIEF",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2099,51 +2066,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is caught and killed outright. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is chased back and may not attack this round. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is not noticed but fails to steal anything. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5"
-                },
-                {
-                  "emph": "",
-                  "text": " The model succeeds in stealing a random magic item. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " The model succeeds in stealing a magic item of their choice."
-                }
-              ],
-              "text": "D6 Result 1 The model is caught and killed outright. 2 The model is chased back and may not attack this round. 3-4 The model is not noticed but fails to steal anything. 5 The model succeeds in stealing a random magic item. 6 The model succeeds in stealing a magic item of their choice."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "The model is caught and killed outright."
+                ],
+                [
+                  "2",
+                  "The model is chased back and may not attack this round."
+                ],
+                [
+                  "3-4",
+                  "The model is not noticed but fails to steal anything."
+                ],
+                [
+                  "5",
+                  "The model succeeds in stealing a random magic item."
+                ],
+                [
+                  "6",
+                  "The model succeeds in stealing a magic item of their choice."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -2262,7 +2211,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2273,6 +2223,7 @@
         {
           "name": "FARM ANIMAL",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2337,11 +2288,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SWAN",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2391,11 +2344,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (9)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRE BODYGUARD",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2556,7 +2511,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2567,6 +2523,7 @@
         {
           "name": "MILITIA",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2725,11 +2682,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2839,11 +2798,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIELDWARDENS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2953,11 +2914,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOBILARS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3134,7 +3097,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3145,6 +3109,7 @@
         {
           "name": "DEPUTIES",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -3295,11 +3260,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOUSEWIVES",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3419,11 +3386,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GAMEKEEPERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3513,11 +3482,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THIEVES",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3597,51 +3568,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is caught and killed outright. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is chased back and may not attack this round. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is not noticed but fails to steal anything. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5"
-                },
-                {
-                  "emph": "",
-                  "text": " The model succeeds in stealing a random magic item. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " The model succeeds in stealing a magic item of their choice."
-                }
-              ],
-              "text": "D6 Result 1 The model is caught and killed outright. 2 The model is chased back and may not attack this round. 3-4 The model is not noticed but fails to steal anything. 5 The model succeeds in stealing a random magic item. 6 The model succeeds in stealing a magic item of their choice."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "The model is caught and killed outright."
+                ],
+                [
+                  "2",
+                  "The model is chased back and may not attack this round."
+                ],
+                [
+                  "3-4",
+                  "The model is not noticed but fails to steal anything."
+                ],
+                [
+                  "5",
+                  "The model succeeds in stealing a random magic item."
+                ],
+                [
+                  "6",
+                  "The model succeeds in stealing a magic item of their choice."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -3740,11 +3693,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BEEKEEPERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3847,11 +3802,13 @@
               "label": "SPECIAL RULES",
               "value": "Duck & Weave, Homesteaders, Skirmishers"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SWAN RIDERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4029,11 +3986,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "REAPER",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4146,11 +4105,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHUCK WAGON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4263,58 +4224,37 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stale Rations:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit suffer -1 to its Leadership but gains the Hatred special rule until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Rich Stew:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit suffer -1 to its Movement value but gains the Stubborn special rule until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Sugary Sweets:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Frenzy special rule until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Spicy Chicken:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Strength Bonus (1) special rule until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Oxtail Soup:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Combat Resolution until the start of your next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Chef's Special:"
-                },
-                {
-                  "emph": "",
-                  "text": " You may choose which of the options above that apply to the unit."
-                }
-              ],
-              "text": "D6 Result 1 Stale Rations: The unit suffer -1 to its Leadership but gains the Hatred special rule until the start of your next turn. 2 Rich Stew: The unit suffer -1 to its Movement value but gains the Stubborn special rule until the start of your next turn. 3 Sugary Sweets: The unit gains the Frenzy special rule until the start of your next turn. 4 Spicy Chicken: The unit gains the Strength Bonus (1) special rule until the start of your next turn. 5 Oxtail Soup: The unit gains +1 Combat Resolution until the start of your next turn. 6 Chef's Special: You may choose which of the options above that apply to the unit."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stale Rations: The unit suffer -1 to its Leadership but gains the Hatred special rule until the start of\nyour next turn."
+                ],
+                [
+                  "2",
+                  "Rich Stew: The unit suffer -1 to its Movement value but gains the Stubborn special rule until the start\nof your next turn."
+                ],
+                [
+                  "3",
+                  "Sugary Sweets: The unit gains the Frenzy special rule until the start of your next turn."
+                ],
+                [
+                  "4",
+                  "Spicy Chicken: The unit gains the Strength Bonus (1) special rule until the start of your next turn."
+                ],
+                [
+                  "5",
+                  "Oxtail Soup: The unit gains +1 Combat Resolution until the start of your next turn."
+                ],
+                [
+                  "6",
+                  "Chef's Special: You may choose which of the options above that apply to the unit."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -4355,11 +4295,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOOT OGRES",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4536,7 +4478,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4547,6 +4490,7 @@
         {
           "name": "HOT POT",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4672,11 +4616,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIREWORKS CART",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4802,11 +4748,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHEARER",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4939,11 +4887,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREEMAN",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5012,7 +4962,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5023,6 +4974,7 @@
         {
           "name": "HISME STOUTHEART",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5139,35 +5091,25 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " Any unit the bearer is with may re-roll 1's To Hit in close combat. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4"
-                },
-                {
-                  "emph": "",
-                  "text": " Any unit the bearer is with may re-roll 1's To Wound in close combat. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " Any unit the bearer is with gains +1 to their combat resolution."
-                }
-              ],
-              "text": "D6 Result 1-2 Any unit the bearer is with may re-roll 1's To Hit in close combat. 3-4 Any unit the bearer is with may re-roll 1's To Wound in close combat. 5-6 Any unit the bearer is with gains +1 to their combat resolution."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Any unit the bearer is with may re-roll 1's To Hit in close combat."
+                ],
+                [
+                  "3-4",
+                  "Any unit the bearer is with may re-roll 1's To Wound in close combat."
+                ],
+                [
+                  "5-6",
+                  "Any unit the bearer is with gains +1 to their combat resolution."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -5243,11 +5185,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NICHOLAS WARFOOT",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5393,11 +5337,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CLEGG THE INDOMITABLE",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5481,11 +5427,13 @@
               "label": "SPECIAL RULES",
               "value": "Ambushers, Deft Hands (see Master Thieves), Duck & Weave, Dodge (5+), Hidden, Homesteaders, Light-fingered (see Master Thieves), Snatch and Grab (see Master Thieves)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GABBO FLUGBEND",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5602,11 +5550,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUMPIN CROOP",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5719,11 +5669,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGGLETHORPE BULNHELM",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5855,11 +5807,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JOLLY BOLBOTTOM",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5976,7 +5930,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5987,6 +5942,7 @@
         {
           "name": "Written & Edited by:",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5998,11 +5954,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6014,7 +5972,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

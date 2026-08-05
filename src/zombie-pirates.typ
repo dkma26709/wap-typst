@@ -6,7 +6,7 @@
 #cover(
   title: "Zombie Pirates",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/zombie-pirates.png",
+  art: "/assets/covers/zombie-pirates.png",
 )
 
 #colophon((

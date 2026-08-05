@@ -77,6 +77,10 @@ def json_words(data: dict) -> Counter:
                 eat(col)
             for value in block["row"].values():
                 eat(value)
+        elif kind == "chart":
+            for row in block["rows"]:
+                for cell in row:
+                    eat(cell)
         elif kind == "field":
             eat(block["label"])
             eat(block["value"])

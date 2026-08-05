@@ -91,15 +91,27 @@
 #namecost("TERRANCE CHUBBLY'S", "")
 #namecost("ENCHANTED ARROWS", "40 points")
 #para(((emph: "", text: "At the start of the game, roll a D6 and consult the table below to see what effect the Magic Arrows have on any shortbows carried by the bearer and any unit they are with the remainder of the game:"),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " All shots gain the Armour Piercing (1) special rule. "), (emph: "bold", text: "2"), (emph: "", text: " Any enemy unit suffering 1 or more casualties must take a Panic test. "), (emph: "bold", text: "3"), (emph: "", text: " The unit ignores all Shooting Modifiers that are not caused by magic items or spells. "), (emph: "bold", text: "4"), (emph: "", text: " The unit may fire Multiple Shots even if they have marched this turn. "), (emph: "bold", text: "5"), (emph: "", text: " All shots gain the Poisoned Attacks special rule. "), (emph: "bold", text: "6"), (emph: "", text: " You may choose any one of the results above.")))
+#chart((("D6", "Result"), ("1", "All shots gain the Armour Piercing (1)
+special rule."), ("2", "Any enemy unit suffering 1 or more
+casualties must take a Panic test."), ("3", "The unit ignores all Shooting Modifiers that
+are not caused by magic items or spells."), ("4", "The unit may fire Multiple Shots even if they
+have marched this turn."), ("5", "All shots gain the Poisoned Attacks special
+rule."), ("6", "You may choose any one of the results above.")))
 #namecost("THE BEEFUP BAUBLE", "35 points")
 #para(((emph: "", text: "The bearer may use this item at the start of each round of close combat they are involved in. Roll a D6 and consult the chart below to see what effect it has:"),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The bearer immediately suffers a wound, with no saves of any kind allowed. "), (emph: "bold", text: "2-3"), (emph: "", text: " No effect. "), (emph: "bold", text: "4"), (emph: "", text: " The bearer gains +1 Weapon Skill, Initiative and Attack. "), (emph: "bold", text: "5"), (emph: "", text: " The bearer gains +1 Strength and +1 Toughness. "), (emph: "bold", text: "6"), (emph: "", text: " The bearer immediately makes a Strength 5 Breath Weapon attack with the Ignores Armour Saves special rule and then loses any statistics bonuses previously gained from this item.")))
+#chart((("D6", "Result"), ("1", "The bearer immediately suffers a wound,
+with no saves of any kind allowed."), ("2-3", "No effect."), ("4", "The bearer gains +1 Weapon Skill, Initiative
+and Attack."), ("5", "The bearer gains +1 Strength and +1
+Toughness."), ("6", "The bearer immediately makes a Strength 5
+Breath Weapon attack with the Ignores
+Armour Saves special rule and then loses any
+statistics bonuses previously gained from this
+item.")))
 #namecost("CLOAK OF ILLUSION", "35 points")
 #para(((emph: "", text: "Bound spell (Level 1, cast on 5+). This is an "), (emph: "bold", text: "augment"), (emph: "", text: " spell that targets the wearer and any unit they are with. All enemy missile attacks must re-roll successful rolls to Hit against this unit until the start of your next Magic phase.")))
 #namecost("DARCIE'S MAGICAL THINGIMABOB", "35 points")
 #para(((emph: "", text: "Bound Spell. The Thingimabob contains the Signature spell from one of the eight Winds of Magic in the "), (emph: "italic", text: "Warhammer Rulebook"), (emph: "", text: ". Roll a D6 at the start of the game and consult the table below to see which:")))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " Your opponent chooses the Lore of Magic. "), (emph: "bold", text: "2-5"), (emph: "", text: " Randomly determine the Lore of Magic. "), (emph: "bold", text: "6"), (emph: "", text: " You may choose the Lore of Magic.")))
+#chart((("D6", "Result"), ("1", "Your opponent chooses the Lore of Magic."), ("2-5", "Randomly determine the Lore of Magic."), ("6", "You may choose the Lore of Magic.")))
 #namecost("THE EMERALD LODE", "35 points")
 #para(((emph: "", text: "Bound Spell (Level 2, cast on 6+). This is a "), (emph: "bold", text: "hex"), (emph: "", text: " spell with a range of 24\". The target unit cannot use of any kind of invulnerable save until the start of your next Magic phase.")))
 #namecost("JADE SICKLE", "35 points")
@@ -182,7 +194,7 @@
 #field("EQUIPMENT", "Hand weapon")
 #field("SPECIAL RULES", "Ambushers, Duck & Weave, Dodge (5+), Hidden, Homesteaders, Trinkets")
 #items(((runs: ((emph: "bold", text: "Deft Hands:"), (emph: "", text: " Models with this special rule may re-roll the result on the Light-fingered chart below.")), sub: ()), (runs: ((emph: "bold", text: "Light-fingered:"), (emph: "", text: " Whenever a model with this special rule is in base contact with an enemy character who is not a Monster they may attempt to steal a Talisman, Arcane Item or Enchanted Item (excluding mounts) at the start of each Close Combat round. Roll a D6 for each item they wish to steal and consult the chart below:")), sub: ())))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The model is caught and killed outright. "), (emph: "bold", text: "2"), (emph: "", text: " The model is chased back and may not attack this round. "), (emph: "bold", text: "3-4"), (emph: "", text: " The model is not noticed but fails to steal anything. "), (emph: "bold", text: "5"), (emph: "", text: " The model succeeds in stealing a random magic item. "), (emph: "bold", text: "6"), (emph: "", text: " The model succeeds in stealing a magic item of their choice.")))
+#chart((("D6", "Result"), ("1", "The model is caught and killed outright."), ("2", "The model is chased back and may not attack this round."), ("3-4", "The model is not noticed but fails to steal anything."), ("5", "The model succeeds in stealing a random magic item."), ("6", "The model succeeds in stealing a magic item of their choice.")))
 #para(((emph: "", text: "Each stolen Magic Item is removed from play. Each stolen item is worth 25 Victory Points."),))
 #items(((runs: ((emph: "bold", text: "Snatch and Grab:"), (emph: "", text: " Before Break Tests are taken, models with this special rule may choose to leave combat willingly. They will flee from the enemy as normal, but will rally automatically and may not be pursued. In addition, they do not cause Panic to friendly units while doing so.")), sub: ()),))
 #field("OPTIONS", "")
@@ -299,7 +311,7 @@
 #field("EQUIPMENT", "Hand weapon")
 #field("SPECIAL RULES", "Ambushers, Duck & Weave, Dodge (6+), Homesteaders, Skirmishers")
 #items(((runs: ((emph: "bold", text: "Light-fingered:"), (emph: "", text: " Whenever a model with this special rule is in base contact with an enemy character who is not a Monster he may attempt to steal a Talisman, Arcane Item or Enchanted Item (excluding mounts) at the start of each Close Combat round. Roll a D6 for each item they wish to steal and consult the chart below:")), sub: ()),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The model is caught and killed outright. "), (emph: "bold", text: "2"), (emph: "", text: " The model is chased back and may not attack this round. "), (emph: "bold", text: "3-4"), (emph: "", text: " The model is not noticed but fails to steal anything. "), (emph: "bold", text: "5"), (emph: "", text: " The model succeeds in stealing a random magic item. "), (emph: "bold", text: "6"), (emph: "", text: " The model succeeds in stealing a magic item of their choice.")))
+#chart((("D6", "Result"), ("1", "The model is caught and killed outright."), ("2", "The model is chased back and may not attack this round."), ("3-4", "The model is not noticed but fails to steal anything."), ("5", "The model succeeds in stealing a random magic item."), ("6", "The model succeeds in stealing a magic item of their choice.")))
 #para(((emph: "", text: "Each stolen Magic Item is removed from play. Each stolen item is worth 25 Victory Points."),))
 #items(((runs: ((emph: "bold", text: "Snatch and Grab:"), (emph: "", text: " Before Break Tests are taken, models with this special rule may choose to leave combat willingly. They will flee from the enemy as normal, but will rally automatically and may not be pursued. In addition, they do not cause Panic to friendly units while doing so.")), sub: ()),))
 #field("OPTIONS", "")
@@ -347,7 +359,9 @@
 #field("EQUIPMENT", "Hand weapon")
 #field("SPECIAL RULES", "Homesteaders")
 #items(((runs: ((emph: "bold", text: "Field Provisions:"), (emph: "", text: " At the start of any of your turns, the Chuck Wagon may provide provisions to one non- fleeing friendly Halfling or Ogre unit within 6\". If they do so, roll a D6 and consult the table below to see what effect it has. Note that each unit can only be affected by one Field Provision at a time, any additional Field Provisions have no effect.")), sub: ()),))
-#para(((emph: "bold", text: "D6 Result 1 Stale Rations:"), (emph: "", text: " The unit suffer -1 to its Leadership but gains the Hatred special rule until the start of your next turn. "), (emph: "bold", text: "2 Rich Stew:"), (emph: "", text: " The unit suffer -1 to its Movement value but gains the Stubborn special rule until the start of your next turn. "), (emph: "bold", text: "3 Sugary Sweets:"), (emph: "", text: " The unit gains the Frenzy special rule until the start of your next turn. "), (emph: "bold", text: "4 Spicy Chicken:"), (emph: "", text: " The unit gains the Strength Bonus (1) special rule until the start of your next turn. "), (emph: "bold", text: "5 Oxtail Soup:"), (emph: "", text: " The unit gains +1 Combat Resolution until the start of your next turn. "), (emph: "bold", text: "6 Chef's Special:"), (emph: "", text: " You may choose which of the options above that apply to the unit.")))
+#chart((("D6", "Result"), ("1", "Stale Rations: The unit suffer -1 to its Leadership but gains the Hatred special rule until the start of
+your next turn."), ("2", "Rich Stew: The unit suffer -1 to its Movement value but gains the Stubborn special rule until the start
+of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special rule until the start of your next turn."), ("4", "Spicy Chicken: The unit gains the Strength Bonus (1) special rule until the start of your next turn."), ("5", "Oxtail Soup: The unit gains +1 Combat Resolution until the start of your next turn."), ("6", "Chef's Special: You may choose which of the options above that apply to the unit.")))
 #items(((runs: ((emph: "bold", text: "Irresistible Aroma:"), (emph: "", text: " All friendly fleeing Halfling units within 12\" of a Chuck Wagon have the Cold-blooded special rule when taking Rally tests.")), sub: ()),))
 #field("NOTE", "")
 #items(((runs: ((emph: "", text: "A Master Chef mounted on a Chuck Wagon handing out Field Provisions may add their Special Spices to the effect."),), sub: ()),))
@@ -418,7 +432,7 @@
 #field("BASE SIZE", "20x20 or 25x25")
 #field("MAGIC ITEMS", "")
 #items(((runs: ((emph: "bold", text: "Goblin Slayer:"), (emph: "", text: " Magic Weapon. The wielder gains +1 Strength and +1 Attack if they are in base contact with one or more enemies with Toughness 3 or lower.")), sub: ()), (runs: ((emph: "bold", text: "Buckler of the Red Rooster:"), (emph: "", text: " Magic Armour. Buckler. The bearer ignores the first Hit suffered each close combat phase.")), sub: ()), (runs: ((emph: "bold", text: "Brooch of Stoutheart:"), (emph: "", text: " Talisman. The wearer of this talisman gains a Magical Ward (5+) which may be re- rolled.")), sub: ()), (runs: ((emph: "bold", text: "Hisme's Book of Sage Advice:"), (emph: "", text: " Enchanted Item. At the start of each of your turns, roll a D6 and consult the table below:")), sub: ())))
-#para(((emph: "bold", text: "D6 Result 1-2"), (emph: "", text: " Any unit the bearer is with may re-roll 1's To Hit in close combat. "), (emph: "bold", text: "3-4"), (emph: "", text: " Any unit the bearer is with may re-roll 1's To Wound in close combat. "), (emph: "bold", text: "5-6"), (emph: "", text: " Any unit the bearer is with gains +1 to their combat resolution.")))
+#chart((("D6", "Result"), ("1-2", "Any unit the bearer is with may re-roll 1's To Hit in close combat."), ("3-4", "Any unit the bearer is with may re-roll 1's To Wound in close combat."), ("5-6", "Any unit the bearer is with gains +1 to their combat resolution.")))
 #field("SPECIAL RULES", "Duck & Weave, Homesteaders")
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May choose one of the following:"),), sub: (((emph: "", text: "Light armour +3 points"),), ((emph: "", text: "Medium armour +9 points"),))), (runs: ((emph: "", text: "May be mounted on a Farm Animal +10 points"),), sub: ())))

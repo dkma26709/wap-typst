@@ -8,10 +8,10 @@
   "slug": "amazons",
   "image_dir": "images/amazons",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 788
     },
     "110": {
-      "file": "img-0110.png",
+      "file": "img-0110.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "131": {
-      "file": "img-0131.png",
+      "file": "img-0131.jpg",
       "first_page": 9,
       "background": true,
       "width": 1580,
@@ -354,6 +354,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -499,11 +500,13 @@
               ],
               "text": "Additional hand weapon. This weapon gives the wielder the Parry (6+) special rule. In addition, for every successful Parry save they make, the model that struck the blow suffers a Strength 4 Hit."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -553,11 +556,13 @@
               ],
               "text": "Light armour. The wearer gains the Aquatic and Natural Armour (6+) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -655,11 +660,13 @@
               ],
               "text": "Any unit containing Warbeasts, Monstrous Beasts, Monsters, Cavalry, Monstrous Cavalry and Chariots that wants to declare a charge at the character bearing this amulet or their unit must first pass a Leadership test. If failed, the unit may choose a different target for their charge or to not make a charge."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -749,11 +756,13 @@
               ],
               "text": "The bearer may attempt to cast the same spell twice in each Magic phase if the first attempt was either unsuccessful or dispelled."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -939,11 +948,13 @@
               ],
               "text": "Infantry or Cavalry only. The wearer gains the Ambushers special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1041,7 +1052,8 @@
               ],
               "text": "If a friendly unit within 6\" is destroyed or involuntarily flees, the unit carrying this standard may re-roll 1's when rolling To Hit and To Wound in their next close combat phase."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1065,6 +1077,7 @@
         {
           "name": "MATRIACHS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1421,11 +1434,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SERPENT PRIESTESSES",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1759,7 +1774,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -1770,6 +1786,7 @@
         {
           "name": "JAGUAR",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1819,11 +1836,13 @@
               "label": "SPECIAL RULES",
               "value": "Forest Strider, Mighty Blow (1)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CULCHAN",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1873,11 +1892,13 @@
               "label": "SPECIAL RULES",
               "value": "Armour Piercing (1), Forest Strider"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1927,11 +1948,13 @@
               "label": "SPECIAL RULES",
               "value": "Fear, Forest Strider, Natural Armour (6+), Stupidity"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRADON",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2000,11 +2023,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT WYRM",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2054,7 +2079,8 @@
               "label": "SPECIAL RULES",
               "value": "Fly (7), Natural Armour (4+)"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2065,6 +2091,7 @@
         {
           "name": "WARRIORS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2203,11 +2230,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2317,11 +2346,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKIRMISHERS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2459,11 +2490,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTRESSES",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2642,11 +2675,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JAGUAR HUNTING PACK",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2746,11 +2781,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNAKE SWARMS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2805,7 +2842,8 @@
               "label": "SPECIAL RULES",
               "value": "Aquatic, Cold-Blooded, Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2816,6 +2854,7 @@
         {
           "name": "PIRANHA WARRIORS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2984,11 +3023,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "EAGLE WARRIORS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3138,11 +3179,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JAGUAR WARRIORS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3311,11 +3354,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PYTHON WARRIORS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3435,11 +3480,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CULCHAN RIDERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3617,11 +3664,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE RIDERS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3800,11 +3849,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRADON RIDERS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3970,11 +4021,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOROLS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4074,7 +4127,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4085,6 +4139,7 @@
         {
           "name": "SERPENT GUARD",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4263,11 +4318,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOLT THROWER",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4356,11 +4413,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ANCIENT SENTINELS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4440,11 +4499,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STEGADON",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4680,11 +4741,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AMAXON SWAMP PYTHON",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4753,11 +4816,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AVATAR OF RIGG",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4891,7 +4956,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4902,6 +4968,7 @@
         {
           "name": "THALESTRIS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5057,11 +5124,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AZURA",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5173,11 +5242,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MELANDRA HAWKEYE",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5294,11 +5365,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PENTHESILEA",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5401,11 +5474,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LYSIPPE",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5550,11 +5625,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LWAXANA",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5718,7 +5795,8 @@
               "label": "SPECIAL RULES",
               "value": "Forest Strider, Guerrilla Warfare, Sacrificial Hunt"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5729,6 +5807,7 @@
         {
           "name": "Written & Edited by:",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5740,11 +5819,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5756,7 +5837,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

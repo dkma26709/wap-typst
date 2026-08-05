@@ -6,7 +6,7 @@
 #cover(
   title: "Tomb Kings",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "../assets/covers/tomb-kings.png",
+  art: "/assets/covers/tomb-kings.png",
 )
 
 #colophon((

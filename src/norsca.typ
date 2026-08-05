@@ -6,7 +6,7 @@
 #cover(
   title: "Norsca",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/norsca.png",
+  art: "/assets/covers/norsca.png",
 )
 
 #colophon((

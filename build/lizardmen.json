@@ -8,10 +8,10 @@
   "slug": "lizardmen",
   "image_dir": "images/lizardmen",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -1020,6 +1020,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1252,11 +1253,13 @@
                 "Special Rules": "Multiple Wounds (D3), Poisoned Attacks"
               }
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1354,11 +1357,13 @@
               ],
               "text": "Shield. All close combat attacks directed against the bearer of this shield must re-roll successful rolls To Hit."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1456,11 +1461,13 @@
               ],
               "text": "One use only. If this model would be removed as a casualty, immediately roll a D6. On a 3+, the model remains with 1 Wound, and any additional Wounds suffered are ignored."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1667,11 +1674,13 @@
               ],
               "text": "Charm. One use only. This item can be used at the start of any of your Magic phases. When used, the bearer may attempt to cast any one spell from any Lore of Magic normally available to them."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1754,35 +1763,25 @@
               "text": "One use only. This item can be used at the start of any Close Combat phase. Nominate one enemy unit in base contact with the bearer or his unit, roll a D6 and consult the table below to find out what happens. Any Wounds inflicted count towards combat results."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit immediately suffers D6 Strength 3 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit immediately suffers D6 Strength 4 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-6"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit immediately suffers 2D6 Strength 5 hits."
-                }
-              ],
-              "text": "D6 Result 1 The enemy unit immediately suffers D6 Strength 3 hits. 2-3 The enemy unit immediately suffers D6 Strength 4 hits. 4-6 The enemy unit immediately suffers 2D6 Strength 5 hits."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "The enemy unit immediately suffers D6\nStrength 3 hits."
+                ],
+                [
+                  "2-3",
+                  "The enemy unit immediately suffers D6\nStrength 4 hits."
+                ],
+                [
+                  "4-6",
+                  "The enemy unit immediately suffers 2D6\nStrength 5 hits."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -2015,11 +2014,13 @@
               ],
               "text": "If both players have models with the Scouts special rule, the Lizardmen player adds +1 to their dice roll when rolling to see who deploys their Scouts first."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2133,7 +2134,8 @@
               ],
               "text": "Skinks only. The unit carrying this standard may re-roll failed rolls To Wound on any turn it charges."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2157,6 +2159,7 @@
         {
           "name": "SLANN MAGE-PRIEST",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2479,11 +2482,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SAURUS LEADERS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2746,11 +2751,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKINK CHIEFS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3041,11 +3048,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKINK PRIESTS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3301,11 +3310,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KROXIGOR ANCIENT",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3420,11 +3431,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHAMELEON STALKER",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3548,7 +3561,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3559,6 +3573,7 @@
         {
           "name": "TEMPLE GUARD PALANQUIN",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3628,11 +3643,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAPTADON",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3682,11 +3699,13 @@
               "label": "SPECIAL RULES",
               "value": "Cold-Blooded"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3736,11 +3755,13 @@
               "label": "SPECIAL RULES",
               "value": "Cold-Blooded, Fear, Natural Armour (6+), Stupidity"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HORNED ONE",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3790,11 +3811,13 @@
               "label": "SPECIAL RULES",
               "value": "Cold-Blooded, Fear, Natural Armour (6+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRADON",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3844,11 +3867,13 @@
               "label": "SPECIAL RULES",
               "value": "Fear, Fly (9), Forest Strider"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RIPPERDACTYL",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3909,11 +3934,13 @@
               ],
               "text": "Riders)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AGGRADON",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3963,11 +3990,13 @@
               "label": "SPECIAL RULES",
               "value": "Blood Frenzy, Cold-Blooded, Natural Armour (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CARNOSAUR",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4094,7 +4123,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4105,6 +4135,7 @@
         {
           "name": "SAURUS WARRIORS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4234,11 +4265,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKINK COHORT",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4406,11 +4439,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKINK SKIRMISHERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4568,11 +4603,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAPTADON RIDERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4731,11 +4768,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JUNGLE SWARMS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4790,11 +4829,13 @@
               "label": "SPECIAL RULES",
               "value": "Aquatic, Cold-blooded, Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRAWINGS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4849,7 +4890,8 @@
               "label": "SPECIAL RULES",
               "value": "Cold-blooded, Fly (10), Forest Strider"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4860,6 +4902,7 @@
         {
           "name": "TEMPLE GUARD",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5037,11 +5080,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COLD ONE RIDERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5190,11 +5235,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KROXIGORS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5294,11 +5341,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHAMELEON SKINKS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5418,11 +5467,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HORNED ONE RIDERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5561,11 +5612,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRADON RIDERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5813,11 +5866,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RIPPERDACTYL RIDERS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5967,11 +6022,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SALAMANDER",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6106,11 +6163,13 @@
               ],
               "text": "If the artillery dice result is a misfire, no shots are fired and D3 Skink handlers are removed as casualties. If all Skink handlers are removed, the Salamander is subject to Frenzy for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAZORDON",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6259,7 +6318,8 @@
               ],
               "text": "If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as casualties. If all Skink handlers are removed, the Razordon is subject to Stupidity for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6270,6 +6330,7 @@
         {
           "name": "AGGRADON RIDERS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6418,11 +6479,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ANCIENT SALAMANDER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6565,11 +6628,13 @@
               ],
               "text": "If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as casualties. If all Skink handlers are removed, the Ancient Salamander is subject to Frenzy for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BASTILADON",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6730,43 +6795,29 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Number of Hits: 1"
-                },
-                {
-                  "emph": "",
-                  "text": " D3 Strength 3 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3"
-                },
-                {
-                  "emph": "",
-                  "text": " D6 Strength 4 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5"
-                },
-                {
-                  "emph": "",
-                  "text": " 2D6 Strength 5 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " 2D6 Strength 6 hits. In addition, the target suffers a -1 penalty to their Weapon Skill and Ballistic Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
-                }
-              ],
-              "text": "D6 Number of Hits: 1 D3 Strength 3 hits. 2-3 D6 Strength 4 hits. 4-5 2D6 Strength 5 hits. 6 2D6 Strength 6 hits. In addition, the target suffers a -1 penalty to their Weapon Skill and Ballistic Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Number of Hits:"
+                ],
+                [
+                  "1",
+                  "D3 Strength 3 hits."
+                ],
+                [
+                  "2-3",
+                  "D6 Strength 4 hits."
+                ],
+                [
+                  "4-5",
+                  "2D6 Strength 5 hits."
+                ],
+                [
+                  "6",
+                  "2D6 Strength 6 hits. In addition, the target suffers a -1 penalty to their Weapon Skill and Ballistic\nSkill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -6865,11 +6916,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STEGADON",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7221,11 +7274,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANADON",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7357,11 +7412,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TROGLODON",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7522,11 +7579,13 @@
                 "Special Rules": "Multiple Wounds (D3), Poisoned Attacks, Quick Shot"
               }
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COATL",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7637,11 +7696,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DREAD SAURIAN",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7861,7 +7922,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7872,6 +7934,7 @@
         {
           "name": "LORD MAZDAMUNDI",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8121,11 +8184,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LORD KROAK",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8398,11 +8463,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KROQ-GAR",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8582,11 +8649,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TEHENHAUIN",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8776,11 +8845,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TETTO'EKO",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8949,11 +9020,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHAKAX",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9098,11 +9171,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOR-ROK",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9224,11 +9299,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NAKAI THE WANDERER",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9326,11 +9403,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TIKTAQ'TO",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9461,11 +9540,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OXYOTL",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9611,7 +9692,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9622,6 +9704,7 @@
         {
           "name": "Written & Edited by:",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9638,7 +9721,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

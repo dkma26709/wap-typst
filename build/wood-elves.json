@@ -8,10 +8,10 @@
   "slug": "wood-elves",
   "image_dir": "images/wood-elves",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -1308,6 +1308,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1617,11 +1618,13 @@
               ],
               "text": "Two hand weapons. Rageth's Wildfire Blades give the wielder the Flaming Attacks special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1735,11 +1738,13 @@
               ],
               "text": "Light armour. The bearer's armour save can never be reduced below a 6+."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1901,11 +1906,13 @@
               ],
               "text": "Model on foot only. If the wearer is in cover and is at their starting number of Wounds, enemy missile attacks targeting them suffer -1 To Hit. If the wearer is in cover and has suffered one or more Wounds during the game, they cannot be targeted by missile attacks at all."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2147,11 +2154,13 @@
               ],
               "text": "Charm. One use only. This item may be used after making a casting roll. When used, it adds a +3 casting bonus."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2427,11 +2436,13 @@
               ],
               "text": "Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Dragontooth Arrows gains the Stupidity special rule for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2630,7 +2641,8 @@
               ],
               "text": "The unit carrying this standard ignores To Hit penalties for shooting at enemies in cover."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2654,6 +2666,7 @@
         {
           "name": "HIGHBORNS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3009,11 +3022,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPELLSINGERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3250,11 +3265,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHADOWDANCER",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3393,11 +3410,13 @@
               ],
               "text": "Resistance (1), Shadow Dances of Loec"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WILD HUNTER",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3540,11 +3559,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAYSTALKER",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3704,11 +3725,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCH-REVENANT",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3802,11 +3825,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARSONG REVENANT",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3930,11 +3955,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREELORD ANCIENT",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4107,11 +4134,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROVE GUARDIAN",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4219,11 +4248,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BRANCHWRAITH",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4359,7 +4390,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4370,6 +4402,7 @@
         {
           "name": "ELVEN STEED",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4414,11 +4447,13 @@
               "label": "BASE SIZE",
               "value": "25x50 or 30x60"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STEED OF KURNOUS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4463,11 +4498,13 @@
               "label": "BASE SIZE",
               "value": "25x50 or 30x60"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNICORN",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4536,11 +4573,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARHAWK",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4590,11 +4629,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (10)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT STAG",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4644,7 +4685,8 @@
               "label": "SPECIAL RULES",
               "value": "Forest Strider, Impact Hits (D3)"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4655,6 +4697,7 @@
         {
           "name": "GLADE GUARD",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4764,11 +4807,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GLADE ARCHERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4943,11 +4988,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEEPWOOD SCOUTS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5152,11 +5199,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GLADE RIDERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5409,11 +5458,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRYADS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5498,11 +5549,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPITE SWARMS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5557,7 +5610,8 @@
               "label": "SPECIAL RULES",
               "value": "Forest Spirit"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5568,6 +5622,7 @@
         {
           "name": "ETERNAL GUARD",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5726,11 +5781,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WILDWOOD RANGERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5859,11 +5916,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARDANCERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6002,11 +6061,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALTERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6153,11 +6214,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WILD RIDERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6330,11 +6393,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARHAWK RIDERS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6518,11 +6583,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MEADOW CHARIOT",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6655,11 +6722,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREE REVENANTS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6788,11 +6857,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPITE REVENANTS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6886,11 +6957,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREE KIN",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7003,11 +7076,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREEMAN",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7057,7 +7132,8 @@
               "label": "SPECIAL RULES",
               "value": "Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree Whack"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7068,6 +7144,7 @@
         {
           "name": "WAYWATCHERS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7152,51 +7229,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Spikes:"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit suffers D6 Strength 3 hits. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Snares:"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit deducts D3\" from the charge distance. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Nets:"
-                },
-                {
-                  "emph": "",
-                  "text": " D3 models in the enemy unit suffer -1 Attacks. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Camouflaged Pit:"
-                },
-                {
-                  "emph": "",
-                  "text": " The enemy unit counts as moving through Dangerous Terrain. If the unit would already treat the forest as Dangerous Terrain, they instead fail the test on a 1-2. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Impaler:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined by the Wood Elf player."
-                }
-              ],
-              "text": "D6 Result 1-2 Spikes: The enemy unit suffers D6 Strength 3 hits. 3 Snares: The enemy unit deducts D3\" from the charge distance. 4 Nets: D3 models in the enemy unit suffer -1 Attacks. 5 Camouflaged Pit: The enemy unit counts as moving through Dangerous Terrain. If the unit would already treat the forest as Dangerous Terrain, they instead fail the test on a 1-2. 6 Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined by the Wood Elf player."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Spikes: The enemy unit suffers D6 Strength 3 hits."
+                ],
+                [
+                  "3",
+                  "Snares: The enemy unit deducts D3\" from the charge distance."
+                ],
+                [
+                  "4",
+                  "Nets: D3 models in the enemy unit suffer -1 Attacks."
+                ],
+                [
+                  "5",
+                  "Camouflaged Pit: The enemy unit counts as moving through Dangerous Terrain. If the unit would\nalready treat the forest as Dangerous Terrain, they instead fail the test on a 1-2."
+                ],
+                [
+                  "6",
+                  "Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined\nby the Wood Elf player."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -7313,11 +7372,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SISTERS OF THE THORN",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7505,11 +7566,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT STAG KNIGHTS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7658,11 +7721,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT EAGLE",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7785,11 +7850,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GOSSAMID ARCHERS",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7902,11 +7969,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPITERIDER REVENANTS",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8056,11 +8125,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZOAT",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8173,11 +8244,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TREELORD",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8284,11 +8357,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FOREST DRAGON",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8357,7 +8432,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8368,6 +8444,7 @@
         {
           "name": "ORION",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8601,11 +8678,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARIEL",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8802,11 +8881,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NAESTRA & ARAHAN",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9088,11 +9169,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARALOTH THE BOLD",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9287,11 +9370,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SCARLOC",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9460,11 +9545,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NAIETH THE PROPHETESS",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9572,11 +9659,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WYCHWETHYL",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9688,11 +9777,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKAW",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9844,11 +9935,13 @@
               ],
               "text": "In close combat, the falcons give Skaw an additional 3 Attacks that are resolved at Weapon Skill 4, Strength 3 and Initiative 4. These attacks no not benefit from any special rules or items that Skaw might have."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRUARTH",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10013,11 +10106,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DURTHU OAKHEART",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10164,11 +10259,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BELTHANOS",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10285,11 +10382,13 @@
               "label": "SPECIAL RULES",
               "value": "Flammable, Fly (7), Forest Spirit, Natural Armour (3+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE LADY OF VINES",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10428,11 +10527,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRYCHA",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10608,7 +10709,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10619,6 +10721,7 @@
         {
           "name": "Written & Edited by:",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10635,7 +10738,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

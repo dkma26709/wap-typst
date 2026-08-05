@@ -6,7 +6,7 @@
 #cover(
   title: "Warriors of Chaos",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/warriors-of-chaos.png",
+  art: "/assets/covers/warriors-of-chaos.png",
 )
 
 #colophon((

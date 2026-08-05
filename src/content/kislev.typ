@@ -211,7 +211,10 @@
 #para(((emph: "", text: "Ice Witch or Frost Maiden only. Relic. Every time an enemy model causes an unsaved Wound on the bearer or any unit they are with, the enemy model suffers a Strength 3 Hit."),))
 #namecost("YAKOV'S KVAS", "25 points")
 #para(((emph: "", text: "One use only. The kvas may be distributed to one unit joined by the character with Yakov’s Kvas at the start of any turn. Roll a D6 and consult the chart below:"),))
-#para(((emph: "bold", text: "D6 Result"), (emph: "", text: " 1-2 The character and unit suffer from Stupidity for the rest of the game. 3-4 The character and unit are subject to Frenzy for the rest of the game. 5-6 The character and unit are subject to Hatred for the rest of the game.")))
+#chart((("D6", "Result"), ("1-2", "The character and unit suffer from Stupidity
+for the rest of the game."), ("3-4", "The character and unit are subject to Frenzy
+for the rest of the game."), ("5-6", "The character and unit are subject to Hatred
+for the rest of the game.")))
 #namecost("STEPPE HUNTER'S HORN", "20 points")
 #para(((emph: "", text: "One use only. The Steppe Hunter's Horn may be sounded at the start of any phase. Once used, the bearer and any unit they are with gain the Multiple Wounds (D3) special rule for the remainder of the turn."),))
 #namecost("DAZH'S FLINT", "5 points")
@@ -480,7 +483,7 @@
 #minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "4", "Flaming Attacks (non-physical), Ignores Armour Saves, March & Shoot, Quick Shot"))
 #field("SPECIAL RULES", "By Our Blood, Hatred (Chaos), Skirmishers")
 #items(((runs: ((emph: "bold", text: "Drunken Stupor:"), (emph: "", text: " At the start of each Kislev turn, roll a D6 for each unit of Kvassnics and consult the following table:")), sub: ()),))
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " The Kvassnics are subject to Stupidity until the start of your next turn. "), (emph: "bold", text: "2-4"), (emph: "", text: " The Kvassnics act as normal until the start of your next turn. "), (emph: "bold", text: "5-6"), (emph: "", text: " The Kvassnics are subject to Frenzy until the start of your next turn.")))
+#chart((("D6", "Result"), ("1", "The Kvassnics are subject to Stupidity until the start of your next turn."), ("2-4", "The Kvassnics act as normal until the start of your next turn."), ("5-6", "The Kvassnics are subject to Frenzy until the start of your next turn.")))
 
 #compact-entry("LIGHT WAR SLED")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Light War Sled", "7", "-", "-", "5", "4", "4", "-", "-", "-", "70"), ("Crew", "-", "3", "3", "3", "-", "-", "3", "1", "7", ""), ("Warhorse", "-", "3", "0", "3", "-", "-", "3", "1", "5", "")))

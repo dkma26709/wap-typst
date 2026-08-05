@@ -8,10 +8,10 @@
   "slug": "araby",
   "image_dir": "images/araby",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 851
     },
     "122": {
-      "file": "img-0122.png",
+      "file": "img-0122.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "146": {
-      "file": "img-0146.png",
+      "file": "img-0146.jpg",
       "first_page": 9,
       "background": true,
       "width": 1580,
@@ -101,6 +101,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -301,11 +302,13 @@
               ],
               "text": "The wielder gains the Frenzy special rule. For every 6 rolled To Hit, they gain +1 Attack. These additional Attacks can also generate additional Attacks. However, every time the wielder rolls a 1 To Hit, they must resolve a Hit against themselves instead."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -403,11 +406,13 @@
               ],
               "text": "Light armour. The wearer has the Natural Armour (5+) and Poisoned Attacks special rules."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -505,11 +510,13 @@
               ],
               "text": "One use only. The first time the wielder or their unit is targeted by an enemy spell, it is automatically dispelled."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -639,11 +646,13 @@
               ],
               "text": "One use only. The bearer can use the Windglass immediately after your opponent has rolled the dice for the Winds of Magic. If they do so, your opponent must re-roll the result."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -829,11 +838,13 @@
               ],
               "text": "Model on foot only. The bearer may use this item at the start of their Remaining Moves phase instead of moving normally, as long as they are not in base contact with an enemy model or has moved previously this turn. The model can move to any location on the battlefield, but must be placed at least 1\" away from enemy units and impassable terrain."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -963,7 +974,8 @@
               ],
               "text": "Cavalry only. The unit carrying this standard gains +D3 to their charge and pursuit distances."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -987,6 +999,7 @@
         {
           "name": "COMMANDERS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1296,11 +1309,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SORCERERS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1547,11 +1562,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CLERIC OF THE ONE",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1738,11 +1755,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HASHISHIN",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1847,7 +1866,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -1858,6 +1878,7 @@
         {
           "name": "ARABYAN STEED",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1922,11 +1943,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CAMEL",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1995,11 +2018,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLYING CARPET",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2048,11 +2073,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (10)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RADIANT PEGASUS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2121,11 +2148,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GENIES",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2330,7 +2359,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2341,6 +2371,7 @@
         {
           "name": "WARRIORS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2470,11 +2501,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOWMEN",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2614,11 +2647,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TRIBAL SKIRMISHERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2738,11 +2773,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CORSAIRS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2901,11 +2938,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLAVE LEVIES",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3054,11 +3093,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SIPAHIS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3217,11 +3258,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DESERT RIDERS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3390,11 +3433,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CAMEL RIDERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3582,7 +3627,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3593,6 +3639,7 @@
         {
           "name": "PALACE GUARD",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3702,11 +3749,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JANISSARIES",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3892,11 +3941,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAMELUKES",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4055,11 +4106,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SILENT GUARD",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4169,11 +4222,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLADEDANCERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4362,11 +4417,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WHIRLING DERVISHES",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4446,11 +4503,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NAFFATUN",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4605,11 +4664,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NOMAD SCOUTS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4689,11 +4750,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLYING CARPET RIDERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4772,7 +4835,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4783,6 +4847,7 @@
         {
           "name": "PEGASUS GUARD",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4940,11 +5005,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR ELEPHANT",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5174,11 +5241,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CANNON",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5272,11 +5341,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MONSTER BOMBARD",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5413,11 +5484,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "QAMAR SANDGLASS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5598,11 +5671,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROC",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5682,7 +5757,8 @@
               ],
               "text": "If the model is successfully picked up, it is then either dropped to the ground, or it may be dropped over another unengaged enemy unit that the Roc moves over afterwards during their Fly move. That target unit immediately suffers D6 hits with a Strength equal to the Unit Strength of the picked-up model plus 2, distributed as Hits from shooting. The dropped model is automatically removed as a casualty with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5693,6 +5769,7 @@
         {
           "name": "KHALIL AL-ZAHIR",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5862,11 +5939,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SALAH AD-DIN",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6012,11 +6091,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LAYLA BINT SURAYA",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6147,11 +6228,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MEHMED AGHA",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6268,11 +6351,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SINDABAD",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6384,11 +6469,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SULTAN JAFFAR",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6530,11 +6617,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE GOLDEN MAGUS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6716,11 +6805,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ABDUL ALHAZRED",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6876,11 +6967,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MALIK IBN LA'AHAD",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6983,11 +7076,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KASSIM",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7099,11 +7194,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHAR-MEL",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7265,7 +7362,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7276,6 +7374,7 @@
         {
           "name": "Written & Edited by:",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7287,11 +7386,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7308,7 +7409,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

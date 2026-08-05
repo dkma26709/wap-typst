@@ -17,9 +17,16 @@
 #para(((emph: "", text: "If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the unit does not emerge. Instead, remove the marker and roll on the Mishap table. If a unit emerges successfully, it may act normally this turn."),))
 #para(((emph: "", text: "If you have several units Entombed Beneath the Sands, then repeat this process, one unit at a time."),))
 #namecost("ENTOMBED BENEATH THE SANDS", "")
-#namecost("MISHAP TABLE", "")
-#para(((emph: "bold", text: "1-2 Reclaimed by the Desert:"), (emph: "", text: " The entire unit is destroyed and treated as casualties. "), (emph: "bold", text: "3-4 Buried Too Deep:"), (emph: "", text: " The unit is delayed and does not emerge – but you'll be able to try again next turn to see if it arrives, following the same process. "), (emph: "bold", text: "5-6 Shifting Sands:"), (emph: "", text: " The unit enters the battlefield from any point on a randomly determined board edge, moving on using the rules for reinforcements.")))
-#namecost("THE HIEROPHANT", "")
+#chartlabel("MISHAP TABLE")
+#chart((("1-2", "Reclaimed by the Desert: The entire unit is
+destroyed and treated as casualties."), ("3-4", "Buried Too Deep: The unit is delayed and
+does not emerge – but you'll be able to try
+again next turn to see if it arrives, following
+the same process."), ("5-6", "Shifting Sands: The unit enters the
+battlefield from any point on a randomly
+determined board edge, moving on using the
+rules for reinforcements.")))
+#chartlabel("THE HIEROPHANT")
 #para(((emph: "", text: "Your army must include at least one Wizard to be the army's Hierophant. If your army includes several Wizards, this will be the one with the highest Wizard Level. If two or more models have the highest Wizard Level, choose which of them will be the Hierophant. The Hierophant must use the Lore of Nehekhara."),))
 #para(((emph: "", text: "The Hierophant, and all models in the same unit, have the Regeneration (6+) special rule."),))
 #para(((emph: "", text: "At the end of the phase in which the Hierophant is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units (except characters) on the battlefield must take a Leadership test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the Leadership test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack."),))
@@ -546,7 +553,11 @@
 #field("BASE SIZE", "100x150")
 #field("SPECIAL RULES", "Fly (7), Impact Hits (D6), Indomitable, Natural Armour (5+), Undead")
 #items(((runs: ((emph: "bold", text: "Curse of the Fallen:"), (emph: "", text: " If the Khemric Titan is slain by any means, all enemy units within 6\" from it suffer 2D6 Strength 2 hits which Ignores Armour Saves.")), sub: ()), (runs: ((emph: "bold", text: "Khemric Titan Special Attacks:"), (emph: "", text: " In order to determine what happens, each Close Combat phase that the Khemric Titan is in combat, pick a single unit in base contact and roll a D6 on the table below:")), sub: ())))
-#para(((emph: "bold", text: "D6 Result 1-2 Reaping Blades:"), (emph: "", text: " The Khemric Titan inflicts D6 Strength 6 hits on the enemy unit. "), (emph: "bold", text: "3 Flesh-eating Scarabs:"), (emph: "", text: " The Khemric Titan inflicts 3D6 Strength 2 hits on the enemy unit. "), (emph: "bold", text: "4 Breath of Night:"), (emph: "", text: " The Khemric Titan does not attack, but instead automatically wins the combat with a combat resolution of 2 (unless this would be higher from other sources). "), (emph: "bold", text: "5 Devouring Jaws:"), (emph: "", text: " The Khemric Titan inflicts a Strength 6 hit with the Heroic Killing Blow special rule on all enemy models in base contact of the chosen unit. "), (emph: "bold", text: "6 Soul Slaying Hunger:"), (emph: "", text: " The Khemric Titan inflicts 2D6 hits on the enemy unit. Roll a D6 for each hit, on a 5+ it inflicts a Wound with no armour saves allowed and the Multiple Wounds (D3) special rule. This is a Magical Attack.")))
+#chart((("D6", "Result"), ("1-2", "Reaping Blades: The Khemric Titan inflicts D6 Strength 6 hits on the enemy unit."), ("3", "Flesh-eating Scarabs: The Khemric Titan inflicts 3D6 Strength 2 hits on the enemy unit."), ("4", "Breath of Night: The Khemric Titan does not attack, but instead automatically wins the combat with
+a combat resolution of 2 (unless this would be higher from other sources)."), ("5", "Devouring Jaws: The Khemric Titan inflicts a Strength 6 hit with the Heroic Killing Blow special
+rule on all enemy models in base contact of the chosen unit."), ("6", "Soul Slaying Hunger: The Khemric Titan inflicts 2D6 hits on the enemy unit. Roll a D6 for each hit,
+on a 5+ it inflicts a Wound with no armour saves allowed and the Multiple Wounds (D3) special rule.
+This is a Magical Attack.")))
 #items(((runs: ((emph: "bold", text: "Shrine of Eternities:"), (emph: "", text: " Arcane Item. Relic. Once per magic phase the Khemric Titan can attempt to cast one of the following spells:")), sub: (((emph: "bold", text: "The Gaze of Dust:"), (emph: "", text: " Bound Spell (Level 3, cast on 9+). This is a "), (emph: "bold", text: "magic missile"), (emph: "", text: " with a range of 24\". It causes a Strength 6 Hit which penetrates ranks in the same way as a Bolt Thrower.")), ((emph: "bold", text: "Wrath of the Sands:"), (emph: "", text: " Bound Spell (Level 1, cast on 6+). This is a "), (emph: "bold", text: "hex"), (emph: "", text: " spell with a range of 24\". The target suffers -2 To Hit when shooting and -1 to their charge distance rolls until the start of the caster's next Magic phase.")), ((emph: "bold", text: "Reawakening of Ancient Might:"), (emph: "", text: " Bound Spell (Level 1, cast on 5+). This is an "), (emph: "bold", text: "augment"), (emph: "", text: " spell that targets the Khemric Titan itself. When successfully cast, it restores one Wound previously suffered during the battle.")))),))
 
 #heading(level: 1, "SPECIAL CHARACTERS")

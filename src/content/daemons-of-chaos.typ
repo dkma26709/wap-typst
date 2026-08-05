@@ -1267,7 +1267,7 @@
 #field("EQUIPMENT", "Hand weapon")
 #field("SPECIAL RULES", "Daemon of Nurgle, Inspiring Presence (6)")
 #items(((runs: ((emph: "bold", text: "The Tally of Pestilence:"), (emph: "", text: " Whilst Epidemius is alive, keep a count of all unsaved Wounds caused by any unit he is with in close combat (unless he has refused a challenge that turn). At the start of each of your turns, consult the table below to determine the effect of the Tally of Pestilence. Note that these effects are cumulative. If Epidemius is killed or leaves the unit, these effects are immediately lost.")), sub: ()),))
-#para(((emph: "bold", text: "Wounds Effect"), (emph: "", text: " 0-6 No effect. 7+ All models in the unit gain +1 Strength. 14+ All models in the unit gain +1 Toughness. 21+ All models in the unit gain the Killing Blow special rule. 28+ All models in the unit re-roll failed Magical Ward saves.")))
+#chart((("Wounds", "Effect"), ("0-6", "No effect."), ("7+", "All models in the unit gain +1 Strength."), ("14+", "All models in the unit gain +1 Toughness."), ("21+", "All models in the unit gain the Killing Blow special rule."), ("28+", "All models in the unit re-roll failed Magical Ward saves.")))
 
 #entry("HORTICULOUS SLIMUX")
 #namecost("The Grand Cultivator", "")

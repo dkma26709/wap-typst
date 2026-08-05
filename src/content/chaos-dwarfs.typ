@@ -38,12 +38,68 @@
 #para(((emph: "", text: "Units with this special rule must test for Treachery in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Treachery, unless any of the following applies:"),))
 #items(((runs: ((emph: "", text: "The unit has less than 5 models."),), sub: ()), (runs: ((emph: "", text: "The unit has declared a charge this turn."),), sub: ()), (runs: ((emph: "", text: "The unit is engaged in close combat."),), sub: ()), (runs: ((emph: "", text: "The unit is garrisoning a building."),), sub: ()), (runs: ((emph: "", text: "The unit is fleeing or currently off the battlefield."),), sub: ())))
 #para(((emph: "", text: "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Treachery test and must roll on the Treachery table below:"),))
-#para(((emph: "bold", text: "D6 Result 1 Traitor!"), (emph: "", text: " If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. "), (emph: "bold", text: "2 We'll get a better view from further back!"), (emph: "", text: " The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. "), (emph: "bold", text: "3-4 We Stayz 'Ere!"), (emph: "", text: " The unit may not voluntarily move this turn. "), (emph: "bold", text: "5 Bloody Murder!"), (emph: "", text: " The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. "), (emph: "bold", text: "6 Cut 'em good!"), (emph: "", text: " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn.")))
-#namecost("ANIMOSITY", "")
+#chart((("D6", "Result"), ("1", "Traitor! If the unit is armed with missile
+weapons, they will immediately resolve a
+round of shooting against the nearest friendly
+unit within Line of Sight. If the unit does not
+have any missile weapons or if there are no
+friendly units within Line of Sight, they will
+inflict D3 Strength 3 Hits for every complete
+rank the unit has on themselves instead (any
+Wounds suffered will not cause a Panic test).
+The unit may not move, shoot or cast spells
+this turn."), ("2", "We'll get a better view from further back!
+The unit must immediately take a Panic test.
+If it's passed, the unit may not voluntarily
+move this turn."), ("3-4", "We Stayz 'Ere! The unit may not voluntarily
+move this turn."), ("5", "Bloody Murder! The unit suffers D3
+Strength 3 Hits for every complete rank the
+unit has (any Wounds suffered will not cause
+a Panic test). The unit may move as normal
+afterwards."), ("6", "Cut 'em good! Pivot the unit on the spot to
+face the nearest visible enemy unit, and then
+make a full normal move in a straight line
+towards it. If there is no visible enemy, the
+unit must move straight ahead instead. If it is
+impossible for the unit to pivot to face the
+closest enemy, it will pivot towards it as far
+as it can, and will then move as far forward
+as it can while still keeping the enemy within
+its forward arc. After the move is complete
+the unit must declare a charge against the
+closest visible enemy unit, if it is possible to
+do so. If the unit cannot declare a charge then
+it may carry on with the rest of its turn
+normally, as if it had not yet moved this turn.")))
+#chartlabel("ANIMOSITY")
 #para(((emph: "", text: "Units with this special rule must test for Animosity in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Animosity, unless any of the following applies:"),))
 #items(((runs: ((emph: "", text: "The unit has less than 5 models."),), sub: ()), (runs: ((emph: "", text: "The unit has declared a charge this turn."),), sub: ()), (runs: ((emph: "", text: "The unit is engaged in close combat."),), sub: ()), (runs: ((emph: "", text: "The unit is garrisoning a building."),), sub: ()), (runs: ((emph: "", text: "The unit is fleeing or currently off the battlefield."),), sub: ())))
 #para(((emph: "", text: "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Animosity test and must roll on the Animosity table below:"),))
-#para(((emph: "bold", text: "D6 Result 1 Get 'Em:"), (emph: "", text: " For every complete rank the unit has, it suffers D3 hits at the Strength characteristic of the majority on the models in the unit. The unit may not voluntarily move or shoot this turn. Wounds caused by the Get 'Em result never cause Panic tests. "), (emph: "bold", text: "2-4 Squabble:"), (emph: "", text: " If it is possible to do so, the unit must declare a charge against the closest enemy unit. If the unit is unable to declare a charge, the unit may not move in the Movement phase or shoot this turn. "), (emph: "bold", text: "5-6 We'll Show 'Em:"), (emph: "", text: " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn.")))
+#chart((("D6", "Result"), ("1", "Get 'Em: For every complete rank the unit
+has, it suffers D3 hits at the Strength
+characteristic of the majority on the models
+in the unit. The unit may not voluntarily
+move or shoot this turn. Wounds caused by
+the Get 'Em result never cause Panic tests."), ("2-4", "Squabble: If it is possible to do so, the unit
+must declare a charge against the closest
+enemy unit. If the unit is unable to declare a
+charge, the unit may not move in the
+Movement phase or shoot this turn."), ("5-6", "We'll Show 'Em: Pivot the unit on the spot
+to face the nearest visible enemy unit, and
+then make a full normal move in a straight
+line towards it. If there is no visible enemy,
+the unit must move straight ahead instead. If
+it is impossible for the unit to pivot to face
+the closest enemy, it will pivot towards it as
+far as it can, and will then move as far
+forward as it can while still keeping the
+enemy within its forward arc. After the move
+is complete the unit must declare a charge
+against the closest visible enemy unit, if it is
+possible to do so. If the unit cannot declare a
+charge then it may carry on with the rest of
+its turn normally, as if it had not yet moved
+this turn.")))
 ]
 
 #heading(level: 1, "THE LORE OF HASHUT")
@@ -104,8 +160,7 @@
 #para(((emph: "", text: "The wielder gains the Multiple Wounds (D3) special rule. Whenever the wielder of this item causes one or more unsaved Wounds during a round of close combat, they regain 1 Wound lost earlier during the game."),))
 #namecost("HASHUT'S BLADE OF GREED", "25 points")
 #para(((emph: "", text: "The wielder of this weapon gains a bonus for each different type of magic item in any enemy unit they are in base contact with. Additional magic items of the same type have no effect."),))
-#minitable(("Item Type", "Effect"), ("Magic Weapon", "Parry (6+)"))
-#para(((emph: "", text: "Magic Armour Armour Piercing (1) Talisman +1 To Wound Arcane Item Magic Resistance (1) Enchanted Item +1 To Hit Magic Standard +1 Combat Resolution"),))
+#chart((("Item Type:", "Effect:"), ("Magic Weapon", "Parry (6+)"), ("Magic Armour", "Armour Piercing (1)"), ("Talisman", "+1 To Wound"), ("Arcane Item", "Magic Resistance (1)"), ("Enchanted Item", "+1 To Hit"), ("Magic Standard", "+1 Combat Resolution")))
 #para(((emph: "label", text: "ZZHARG MADEYE"), (emph: "", text: "'"), (emph: "label", text: "S BLUNDERBUSS 25 points"), (emph: "", text: " Daemonsmith only. Blunderbuss. This weapon may be used in the Shooting phase like a Breath Weapon with the following profile:")))
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Armour Piercing (1), Cumbersome"))
 #namecost("LASH OF SHURZZHAK", "20 points")
@@ -606,7 +661,11 @@
 #items(((runs: ((emph: "bold", text: "Doomfire:"), (emph: "", text: " Doomfire is a stone thrower with the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("12-60\"", "5(10)", "Cumbersome, Flaming Attacks, Move or Fire, Multiple Wounds (D6)"))
 #para(((emph: "", text: "Any unit that suffers one or more casualties from this weapon must take a Panic test. If the unit suffered Heavy Casualties, it takes the test at -1 Leadership. Should the artillery dice roll a misfire, roll a D6 on the following table:"),))
-#para(((emph: "bold", text: "D6 Result 1 Free at last!"), (emph: "", text: " Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew from play. "), (emph: "bold", text: "2 Schlurp:"), (emph: "", text: " Remove the crew from play. "), (emph: "bold", text: "3 Thzzzz:"), (emph: "", text: " All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast table. "), (emph: "bold", text: "4 Grrr:"), (emph: "", text: " Remove D3 Handlers. "), (emph: "bold", text: "5 Blooood!"), (emph: "", text: " Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement special rule and it was the Compulsory Movement sub-phase. "), (emph: "bold", text: "6 Boom!"), (emph: "", text: " Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The Hellcannon cannot fire for the rest of the game.")))
+#chart((("D6", "Result"), ("1", "Free at last! Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew
+from play."), ("2", "Schlurp: Remove the crew from play."), ("3", "Thzzzz: All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast
+table."), ("4", "Grrr: Remove D3 Handlers."), ("5", "Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement
+special rule and it was the Compulsory Movement sub-phase."), ("6", "Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The
+Hellcannon cannot fire for the rest of the game.")))
 #field("SPECIAL RULES", "Daemonic, Mixed Unit, Natural Armour (4+)")
 #items(((runs: ((emph: "bold", text: "Caged Fury:"), (emph: "", text: " At the beginning of your turn, if the Hellcannon is not in combat, take a Leadership test. If the test is failed, the Hellcannon is then subject to the Random Movement (3D6) special rule until the beginning of the next turn, and must move towards the nearest enemy unit. If the Hellcannon would get destroyed as a result of Daemonic Instability, treat this as rolling a 1 on the table above.")), sub: ()), (runs: ((emph: "bold", text: "Spew Ichor:"), (emph: "", text: " The Hellcannon has a Strength 5 Breath Weapon. Any unit that suffers one or more casualties from Spew Ichor must take a Panic test with a -1 penalty to their Leadership.")), sub: ())))
 #field("OPTIONS", "")
@@ -664,8 +723,10 @@
 #para(((emph: "", text: "To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically. To determine in which direction the Giant falls, roll a scatter dice. Place the small template in base contact with the Giant in the direction of the scatter dice, measured from the centre of the Giant's base. A model hit by a falling Giant suffers a Strength 6 Hit with the Multiple Wounds (D3) special rule. If the unit is in combat and the Giant has fallen over whilst attempting to Flail and Crush, wounds inflicted by a falling Giant count towards the combat result. A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this Wound counts towards combat resolution."),))
 #para(((emph: "", text: "Once on the ground, a Giant may get up in his following Movement phase, but may not move in the Movement phase that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain – the enemy swarm over him and cut him to pieces. If the Giant gets the opportunity to pursue his foes whilst he's on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up."),))
 #items(((runs: ((emph: "bold", text: "*Siege Giant Special Attacks:"), (emph: "", text: " Giants do not attack in the same way as other creatures. They are far too large and fractious to take orders and much too scatter-brained to have any sort of coherent plan. To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the following tables. Which table you use depends on the size of the Giant's victim. If no suitable target is in base contact, roll again on the chart until you get another result.")), sub: ()),))
-#para(((emph: "bold", text: "MAN-SIZED THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. "), (emph: "bold", text: "D6 Result"), (emph: "", text: " 1 Yell and Bawl 2-3 Flail and Crush 4-6 Ripping Blades")))
-#para(((emph: "bold", text: "BIG THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "), (emph: "bold", text: "D6 Result"), (emph: "", text: " 1 Legbreaker 2-4 Smash with Pick 5-6 'Eadbutt")))
+#para(((emph: "bold", text: "MAN-SIZED THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms.")))
+#chart((("D6", "Result"), ("1", "Yell and Bawl"), ("2-3", "Flail and Crush"), ("4-6", "Ripping Blades")))
+#para(((emph: "bold", text: "BIG THINGS CHART "), (emph: "italic", text: "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines.")))
+#chart((("D6", "Result"), ("1", "Legbreaker"), ("2-4", "Smash with Pick"), ("5-6", "'Eadbutt")))
 #para(((emph: "bold", text: "- Yell and Bawl:"), (emph: "", text: " Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points or more. This result has no effect against Animated Constructs. "), (emph: "bold", text: "- Legbreaker:"), (emph: "", text: " The Giant targets a single enemy model in the target unit that is in base contact. The Giant and its victim both roll a D6 and add their Strength, and for each point by which the Giant beats its victim’s score, it inflicts D3 automatic wounds with the Ignores Armour saves special rule. In addition, regardless of the result, any models other than the Giant inflicting the attack in base contact with the victim must pass an Initiative test to get out of the way or suffer an automatic wound from the struggling beasts! "), (emph: "bold", text: "- Smash with Pick:"), (emph: "", text: " The Giant chooses a single target model from the enemy unit that it is in base contact with. The target may attempt to avoid the blow by passing an Initiative test. If the test is failed, the model suffers 2D3 wounds with the Ignores Armour saves special rule. If a double is rolled, the Giant cannot attack at all in the following round of the same combat. "), (emph: "bold", text: "- Flail and Crush:"), (emph: "", text: " First test to see if the Giant falls over (see previously), with any wounds caused if they do counting towards the combat result. If the Giant remains on its feet, select a target unit in base contact. That unit sustains 2D6 Strength 6 automatic hits as the armoured bulk of the Giant batters them into the ground. "), (emph: "bold", text: "- Ripping Blades:"), (emph: "", text: " The Giant fights using the Random Attacks (2D6) special rule this round. If a double is rolled when determining the number of Attacks, the Giant must immediately test to see if it falls over. Any further damage done in this way counts towards combat resolution. "), (emph: "bold", text: "- 'Eadbutt:"), (emph: "", text: " The Giant targets a single enemy model from the target unit that is in base contact, automatically inflicting D3 wounds with the Ignores Armour saves special rule. If the victim is wounded but not slain, then the victim is dazed and loses their subsequent attacks. If the victim has not yet attacked in the combat round, they lose their attacks this round, or if they have already attacked, then they lose all their attacks in the next round instead.")))
 #field("UPGRADES", "")
 #items(((runs: ((emph: "bold", text: "Runes of Hate:"), (emph: "", text: " A Giant with Runes of Hate becomes subject to the Berserk Rage rule from Frenzy. In addition, whenever the Giant is called upon to roll for a random number of attacks, this may be re-rolled.")), sub: ()), (runs: ((emph: "bold", text: "Scaling Spikes:"), (emph: "", text: " If a Giant with this upgrade perishes and falls over an obstacle such as a moat, ditch or wall, mark the obstacle, which now may be crossed as open terrain. Additionally, if the Giant dies at the foot of a building or fortification, models assaulting any garrison across the location of its body gain a special +1 bonus to their Combat Resolution.")), sub: ())))

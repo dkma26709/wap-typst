@@ -8,10 +8,10 @@
   "slug": "warriors-of-chaos",
   "image_dir": "images/warriors-of-chaos",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 875
     },
     "28": {
-      "file": "img-0028.png",
+      "file": "img-0028.jpg",
       "first_page": 2,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "275": {
-      "file": "img-0275.png",
+      "file": "img-0275.jpg",
       "first_page": 5,
       "background": true,
       "width": 1580,
@@ -265,59 +265,37 @@
           "text": "A model can have several Gifts of the Gods, but can only have each Gift once. If a Gift cannot be applied, the roll has no effect."
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 5 points. "
-            },
-            {
-              "emph": "bold",
-              "text": "2"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 10 points. "
-            },
-            {
-              "emph": "bold",
-              "text": "3"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 15 points. "
-            },
-            {
-              "emph": "bold",
-              "text": "4"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 20 points. "
-            },
-            {
-              "emph": "bold",
-              "text": "5"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 25 points. "
-            },
-            {
-              "emph": "bold",
-              "text": "6"
-            },
-            {
-              "emph": "",
-              "text": " Pick one Gift of the Gods worth 30 points."
-            }
-          ],
-          "text": "D6 Result 1 Pick one Gift of the Gods worth 5 points. 2 Pick one Gift of the Gods worth 10 points. 3 Pick one Gift of the Gods worth 15 points. 4 Pick one Gift of the Gods worth 20 points. 5 Pick one Gift of the Gods worth 25 points. 6 Pick one Gift of the Gods worth 30 points."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Pick one Gift of the Gods worth 5 points."
+            ],
+            [
+              "2",
+              "Pick one Gift of the Gods worth 10 points."
+            ],
+            [
+              "3",
+              "Pick one Gift of the Gods worth 15 points."
+            ],
+            [
+              "4",
+              "Pick one Gift of the Gods worth 20 points."
+            ],
+            [
+              "5",
+              "Pick one Gift of the Gods worth 25 points."
+            ],
+            [
+              "6",
+              "Pick one Gift of the Gods worth 30 points."
+            ]
+          ]
         },
         {
           "type": "namecost",
@@ -3155,6 +3133,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3332,11 +3311,13 @@
               ],
               "text": "Any model that suffers an unsaved Wound from this weapon must pass a Toughness test or suffer an additional wound with no saves allowed. This additional wound does not cause an additional Toughness test."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3618,11 +3599,13 @@
               ],
               "text": "Barding. The bearer's mount gains the Devastating Charge special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3661,11 +3644,13 @@
               ],
               "text": "The Gaze of the Gods gives the wearer a Magical Ward (4+). However, if the model flees for any reason, the model is turned into a Chaos Spawn with the same number of wounds remaining as the character had, after working out the Flee move. If you do not have a Spawn model to replace the character then he simply counts as slain. For Victory Points purposes, the character is not counted as slain or below half Wounds unless the Spawn he has turned into is slain or is below half Wounds."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3771,11 +3756,13 @@
               ],
               "text": "The bearer of this item gains the Loremaster special rule. However, they may only attempt to cast a number of spells equal to their Wizard Level each Magic phase."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -3874,59 +3861,37 @@
               "text": "One use only. The bearer of the Chalice of Chaos may drink from it at the start of any phase. If they choose to do so, roll a D6 and consult the table below."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1 Unworthy Fool:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character immediately suffers a Wound, with no saves of any kind allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Daemonic Strength:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character gains the Killing Blow special rule until the end of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Regenerating Flesh:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character gains the Regeneration (5+) special rule until the end of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Inhuman Speed:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character gains the Always Strikes First special rule until the end of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Dark Fortune:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character may re-roll failed armour and invulnerable saves until the end of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Divine Greatness:"
-                },
-                {
-                  "emph": "",
-                  "text": " The character gains the Magical Ward (4+) and Stubborn special rules until the end of the turn."
-                }
-              ],
-              "text": "D6 Result: 1 Unworthy Fool: The character immediately suffers a Wound, with no saves of any kind allowed. 2 Daemonic Strength: The character gains the Killing Blow special rule until the end of the turn. 3 Regenerating Flesh: The character gains the Regeneration (5+) special rule until the end of the turn. 4 Inhuman Speed: The character gains the Always Strikes First special rule until the end of the turn. 5 Dark Fortune: The character may re-roll failed armour and invulnerable saves until the end of the turn. 6 Divine Greatness: The character gains the Magical Ward (4+) and Stubborn special rules until the end of the turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "Unworthy Fool: The character immediately\nsuffers a Wound, with no saves of any kind\nallowed."
+                ],
+                [
+                  "2",
+                  "Daemonic Strength: The character gains the\nKilling Blow special rule until the end of the\nturn."
+                ],
+                [
+                  "3",
+                  "Regenerating Flesh: The character gains the\nRegeneration (5+) special rule until the end of\nthe turn."
+                ],
+                [
+                  "4",
+                  "Inhuman Speed: The character gains the\nAlways Strikes First special rule until the end\nof the turn."
+                ],
+                [
+                  "5",
+                  "Dark Fortune: The character may re-roll\nfailed armour and invulnerable saves until the\nend of the turn."
+                ],
+                [
+                  "6",
+                  "Divine Greatness: The character gains the\nMagical Ward (4+) and Stubborn special rules\nuntil the end of the turn."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -3960,11 +3925,13 @@
               ],
               "text": "The bearer gains a +1 bonus when rolling on the Eye of the Gods table."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4070,7 +4037,8 @@
               ],
               "text": "All enemy missile fire targeting the unit carrying this standard suffer -1 To Hit."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -4094,6 +4062,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4191,11 +4160,13 @@
               ],
               "text": "For every unsaved Wound caused by the Blade of Blood, the wielder may take a Strength test. If passed, the wielder regains 1 Wound previously lost during the game. However, if the test is failed, the wielder loses 1 Wound with no saves allowed instead."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4245,11 +4216,13 @@
               ],
               "text": "This item gives the wearer a 6+ armour save. All enemy units within 6\" of the wearer must re-roll successful Break tests."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4283,11 +4256,13 @@
               ],
               "text": "The wearer of this item gains a 2+ invulnerable save against spells."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4353,11 +4328,13 @@
               ],
               "text": "One use only. The Black Tongue can be used whenever an enemy Wizard fails to cast a spell. When used, the spell counts as having been Miscast. The model bearing the Black Tongue then suffers a wound with no saves allowed."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4391,7 +4368,8 @@
               ],
               "text": "The unit carrying the Banner of Rage can never lose their Frenzy. In addition, it may re-roll failed Break Tests."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -4415,6 +4393,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4464,11 +4443,13 @@
               ],
               "text": "Polearm. Every unsaved Wound caused by the Glaive of Putrefaction against Characters, Monstrous Creatures or Monsters makes the victim suffer -1 to their Strength and Toughness for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -4525,11 +4506,13 @@
               ],
               "text": "Shield. The bearer of this shield may re-roll failed armour saves if the Strength of the attack is equal to or higher than the bearer's modified armour save (for example, if the bearer is Hit by a Strength 4 Attack and their modified armour save is 4+)."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4563,11 +4546,13 @@
               ],
               "text": "All close combat attacks targeting the wearer of this item suffer -1 To Hit."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4593,11 +4578,13 @@
               ],
               "text": "Bound Spell (Level 1, cast on 5+). The Rod of Corruption contains a direct damage spell with a range of 24\". The target unit suffers D6 Strength 2 Hits with the Ignores Armour Saves special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4679,11 +4666,13 @@
               ],
               "text": "One use only. This item can be used at the start of any of your turns. Roll a D6, on a 2+, the model immediately recovers all Wounds (ignoring any additional Wounds from mounts) up to their starting value. On the roll of a 1, the bearer gains the Stupidity special rule for the remainder of the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4717,7 +4706,8 @@
               ],
               "text": "Mark of Nurgle only. All enemy units in base contact with this standard counts the armour save modifier from their Strength or Armour Piercing attacks as being 1 point worse than normal."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -4741,6 +4731,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4838,11 +4829,13 @@
               ],
               "text": "Each time an enemy Character, Monstrous Creature or Monster is Hit by this weapon, they suffer -1 Attack for the duration of this round of close combat."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4892,11 +4885,13 @@
               ],
               "text": "The bearer of this item and any unit they are with gain the Cold-blooded special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -4922,11 +4917,13 @@
               ],
               "text": "Bound Spell. The Sceptre of Domination contains the Pavane of Slaanesh spell from the Lore of Slaanesh."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5008,11 +5005,13 @@
               ],
               "text": "No other character may join the same unit as the bearer and he cannot join units that already contain a character. For each unsaved Wound the bearer suffers, he gains +1 Attack for the rest of the battle."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5062,7 +5061,8 @@
               ],
               "text": "The unit carrying this standard and any enemy unit in base contact with them gain +1 To Hit in close combat."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -5086,6 +5086,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5135,11 +5136,13 @@
               ],
               "text": "The wielder of this weapon can re-roll all failed rolls To Wound."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5157,11 +5160,13 @@
               ],
               "text": "Shield. This shield gives the bearer the Parry (5+) special rule even while mount. However, the bearer must re-roll successful armour saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5195,11 +5200,13 @@
               ],
               "text": "Infantry or Cavalry only. The bearer of this item may re-roll failed Ward saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5281,11 +5288,13 @@
               ],
               "text": "The bearer of the Blood of Tzeentch may re-roll one casting dice per turn, provided it was not originally a roll of a 1."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5351,11 +5360,13 @@
               ],
               "text": "One use only. This item may be used after the wearer has made all their normal close combat attacks. When used, they may fight an additional time."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5389,7 +5400,8 @@
               ],
               "text": "All enemy units within 12\" of the bearer of this standard suffer -1 Leadership when taking Break tests."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -5413,6 +5425,7 @@
         {
           "name": "CHAMPIONS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5846,11 +5859,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SORCERERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6200,11 +6215,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DAEMON PRINCE",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6522,11 +6539,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDER CHIEFTAIN",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6849,7 +6868,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6860,6 +6880,7 @@
         {
           "name": "WARHORSE",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6904,11 +6925,13 @@
               "label": "BASE SIZE",
               "value": "25x50 or 30x60"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARSTEED",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6973,11 +6996,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DAEMONIC STEED",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7047,11 +7072,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KARKADRAK",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7121,11 +7148,13 @@
               "label": "SPECIAL RULES",
               "value": "Impact Hits (D3), Natural Armour (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANTICORE",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7291,11 +7320,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHAOS DRAGON",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7378,7 +7409,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7389,6 +7421,7 @@
         {
           "name": "WARRIORS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7602,11 +7635,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDERS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7883,11 +7918,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDER HUNTERS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8073,11 +8110,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDER HORSEMEN",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8393,11 +8432,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARHOUNDS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8477,11 +8518,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CULTISTS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8610,7 +8653,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8621,6 +8665,7 @@
         {
           "name": "CHOSEN",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8862,11 +8907,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FORSAKEN",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8946,59 +8993,37 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Slug Brains:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit is subject to the Always Strikes Last special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Lashing Tentacles:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit gain +2 to their Initiative. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Razor Talons:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit have the Armour Piercing (1) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Decapitating Claws:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit have the Killing Blow special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Healing Flesh:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit have the Regeneration (6+) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Venomous Fangs:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Forsaken in the unit have the Poisoned Attacks special rule."
-                }
-              ],
-              "text": "D6 Result 1 Slug Brains: All Forsaken in the unit is subject to the Always Strikes Last special rule. 2 Lashing Tentacles: All Forsaken in the unit gain +2 to their Initiative. 3 Razor Talons: All Forsaken in the unit have the Armour Piercing (1) special rule. 4 Decapitating Claws: All Forsaken in the unit have the Killing Blow special rule. 5 Healing Flesh: All Forsaken in the unit have the Regeneration (6+) special rule. 6 Venomous Fangs: All Forsaken in the unit have the Poisoned Attacks special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Slug Brains: All Forsaken in the unit is subject to the Always Strikes Last special rule."
+                ],
+                [
+                  "2",
+                  "Lashing Tentacles: All Forsaken in the unit gain +2 to their Initiative."
+                ],
+                [
+                  "3",
+                  "Razor Talons: All Forsaken in the unit have the Armour Piercing (1) special rule."
+                ],
+                [
+                  "4",
+                  "Decapitating Claws: All Forsaken in the unit have the Killing Blow special rule."
+                ],
+                [
+                  "5",
+                  "Healing Flesh: All Forsaken in the unit have the Regeneration (6+) special rule."
+                ],
+                [
+                  "6",
+                  "Venomous Fangs: All Forsaken in the unit have the Poisoned Attacks special rule."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -9057,11 +9082,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KNIGHTS",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9285,11 +9312,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAUDER CHARIOT",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9464,11 +9493,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR CHARIOT",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9715,11 +9746,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLAYERKIN",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9818,11 +9851,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKIN WOLVES",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9944,11 +9979,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRES",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10172,11 +10209,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TROLLS",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10351,11 +10390,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPAWN",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10553,11 +10594,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FOMOROID CRUSHER",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10655,11 +10698,13 @@
               ],
               "text": "If a misfire is rolled, the Fomoroid Crusher suffers 1 Wound which Ignores Armour Saves."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WILDERFIEND",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10795,7 +10840,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10806,6 +10852,7 @@
         {
           "name": "VARANGUARD",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11010,11 +11057,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARSHRINE",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11291,11 +11340,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON OGRES",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11462,11 +11513,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON OGRE SHAGGOTH",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11605,11 +11658,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SPINEHOUND",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11782,11 +11837,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SPAWN",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -11959,11 +12016,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHIMERA",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12153,11 +12212,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARPFIRE DRAGON",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12282,11 +12343,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELLCANNON",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12399,59 +12462,37 @@
               "text": "Any unit that suffers one or more casualties from Doomfire must take a Panic test with a -1 penalty to their Leadership. Should the artillery dice roll a misfire, roll a D6 on the following table:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Free at last!"
-                },
-                {
-                  "emph": "",
-                  "text": " Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew from play. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Schlurp:"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove the crew from play. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Thzzzz:"
-                },
-                {
-                  "emph": "",
-                  "text": " All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast table. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Grrr:"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove D3 Handlers. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Blooood!"
-                },
-                {
-                  "emph": "",
-                  "text": " Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement special rule and it was the Compulsory Movement sub-phase. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Boom!"
-                },
-                {
-                  "emph": "",
-                  "text": " Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The Hellcannon cannot fire for the rest of the game."
-                }
-              ],
-              "text": "D6 Result 1 Free at last! Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew from play. 2 Schlurp: Remove the crew from play. 3 Thzzzz: All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast table. 4 Grrr: Remove D3 Handlers. 5 Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement special rule and it was the Compulsory Movement sub-phase. 6 Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The Hellcannon cannot fire for the rest of the game."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Free at last! Every unit within 6\" takes D6 Strength 5 hits. Then remove the Hellcannon and its crew\nfrom play."
+                ],
+                [
+                  "2",
+                  "Schlurp: Remove the crew from play."
+                ],
+                [
+                  "3",
+                  "Thzzzz: All Wizards within 24\" must immediately pass a Leadership test or roll 2D6 on the Miscast\ntable."
+                ],
+                [
+                  "4",
+                  "Grrr: Remove D3 Handlers."
+                ],
+                [
+                  "5",
+                  "Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement\nspecial rule and it was the Compulsory Movement sub-phase."
+                ],
+                [
+                  "6",
+                  "Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The\nHellcannon cannot fire for the rest of the game."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -12511,11 +12552,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -12676,18 +12719,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+                  "text": "Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4-6",
+                  "Swing with Club"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -12699,18 +12759,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Thump with Club"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -12768,51 +12841,33 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. Otherwise, it will instead use the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Swing with Club: The Giant fights using the Random Attacks (2D6) special rule this round. - Thump with Club: The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result. If no enemy units are in range,\ntreat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -12937,11 +12992,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR MAMMOTH",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13091,34 +13148,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Attack Type 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " Butt "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5"
-                },
-                {
-                  "emph": "",
-                  "text": " Gore "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6"
-                },
-                {
-                  "emph": "",
-                  "text": " Bellow"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Attack Type 1-2 Butt 3-5 Gore 6 Bellow"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Attack Type"
+                ],
+                [
+                  "1-2",
+                  "Butt"
+                ],
+                [
+                  "3-5",
+                  "Gore"
+                ],
+                [
+                  "6",
+                  "Bellow"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -13180,43 +13234,29 @@
               "text": "- Trample: A single enemy unit in base contact suffers D6 Strength 7 hits, plus an additional D3 Hits for each rank of five or more models it has. - Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The Mammoth automatically wins the combat by 3 points or more. This result has no effect against Animated Constructs. - Butt: The Mammoth inflicts one automatic hit against one model in base contact (your choice), causing D3 Strength 7 hits with the Multiple Wounds (D3) special rule - Stomp: The Mammoth inflicts 3D6 Hits with its Stomp Attack this turn. - Gore: The Mammoth makes D6 attacks against a chosen unit in close combat with the Heroic Killing Blow special rule. - Pick up and...: The Mammoth grabs a Character from the target unit (Mammoth player's choice). Roll a D6 to see what unfortunate fate befalls the victim."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Throw back into combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled back into their own unit like a missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Squash and grab another:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
-                }
-              ],
-              "text": "D6 Result 1-2 Throw back into combat: The victim is hurled back into their own unit like a missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3-4 Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 5 Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a single Wound it has lost previously in the game. 6 Squash and grab another: The model is removed as a casualty and the Mammoth then picks another victim. Roll again on this table to see what happens."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Throw back into combat: The victim is hurled back into their own unit like a missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3-4",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Mammoth – randomly\ndetermine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits.\nUnsaved Wounds from these hits count towards the Mammoth's combat result. If no enemy\nunits are in range, treat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "5",
+                  "Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a\nsingle Wound it has lost previously in the game."
+                ],
+                [
+                  "6",
+                  "Squash and grab another: The model is removed as a casualty and the Mammoth then picks\nanother victim. Roll again on this table to see what happens."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -13258,7 +13298,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -13269,6 +13310,7 @@
         {
           "name": "SLAUGHTERPRIEST OF KHORNE",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13465,7 +13507,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -13476,6 +13519,7 @@
         {
           "name": "JUGGERNAUT OF KHORNE",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13525,11 +13569,13 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Khorne, Natural Armour (6+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PALANQUIN OF NURGLE",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13579,11 +13625,13 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Nurgle, Inspiring Presence (6)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROT BEAST OF NURGLE",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13633,11 +13681,13 @@
               "label": "SPECIAL RULES",
               "value": "Poisoned Attacks, Regeneration (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROT FLY OF NURGLE",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13686,11 +13736,13 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Nurgle, Fly (6), Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STEED OF SLAANESH",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13740,11 +13792,13 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Slaanesh, Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SERPENT OF SLAANESH",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13794,11 +13848,13 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Slaanesh, Poisoned Attacks"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DISC OF TZEENTCH",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13848,7 +13904,8 @@
               "label": "SPECIAL RULES",
               "value": "Daemon of Tzeentch, Fly (9)"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -13859,6 +13916,7 @@
         {
           "name": "SKULLREAPERS",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -13968,11 +14026,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PUTRID BLIGHTKINGS",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14101,11 +14161,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELLSTRIDERS",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14250,35 +14312,25 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Rounds won Bonus 1 Fuelled by Pain:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains +1 Attack (not including mounts). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Insensible to Agony:"
-                },
-                {
-                  "emph": "",
-                  "text": " All successful To Wound rolls against the unit must be re-rolled. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Intoxicating Delirium:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Unbreakable special rule."
-                }
-              ],
-              "text": "Rounds won Bonus 1 Fuelled by Pain: The unit gains +1 Attack (not including mounts). 2 Insensible to Agony: All successful To Wound rolls against the unit must be re-rolled. 3 Intoxicating Delirium: The unit gains the Unbreakable special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "Rounds won",
+                  "Bonus"
+                ],
+                [
+                  "1",
+                  "Fuelled by Pain: The unit gains +1 Attack (not including mounts)."
+                ],
+                [
+                  "2",
+                  "Insensible to Agony: All successful To Wound rolls against the unit must be re-rolled."
+                ],
+                [
+                  "3",
+                  "Intoxicating Delirium: The unit gains the Unbreakable special rule."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -14340,11 +14392,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MINDSTEALER SPHIRANX",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14413,7 +14467,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -14424,6 +14479,7 @@
         {
           "name": "WRATHMONGERS",
           "page": 58,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14555,11 +14611,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKULLCRUSHERS",
           "page": 59,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14748,11 +14806,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLAUGHTERBRUTE",
           "page": 60,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -14890,11 +14950,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROT KNIGHTS",
           "page": 61,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15086,11 +15148,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PUSGOYLE BLIGHTLORDS",
           "page": 62,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15265,11 +15329,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TOAD DRAGON",
           "page": 62,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15366,11 +15432,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLICKBLADE SEEKERS",
           "page": 63,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15479,11 +15547,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FATEMASTERS",
           "page": 64,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15649,11 +15719,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MUTALITH VORTEX BEAST",
           "page": 65,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -15723,61 +15795,40 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Hideous Disfigurements:"
-                },
-                {
-                  "emph": "",
-                  "text": " The target must take D6 Toughness tests, and gains the Fear special rule for the rest of the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Trollbrains:"
-                },
-                {
-                  "emph": "",
-                  "text": " The target must take D6 Toughness tests, and gains the Stupidity special rule for the rest of the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Gift of Mutations:"
-                },
-                {
-                  "emph": "",
-                  "text": " The target must take D6 Toughness tests. After resolving these tests, one of the unit’s characteristics (roll a D6 to randomly select between M, WS, BS, S, T, or A) is increased by 1 (to a maximum of 10) and one of their characteristics (roll another D6 to randomly select between M, WS, BS, S, T or A) is decreased by 1 (to a minimum of 1) for the rest of the game. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Tide of Transformation:"
-                },
-                {
-                  "emph": "",
-                  "text": " The target must take D6 Toughness tests. Once the tests have been resolved, roll a D6: on a 3+, choose another unit within 6\" of the initial target – it must take D6 Toughness tests. Keep rolling for further victims (each within 6\" of the last target struck), until you roll a 1-2 or there are no more viable targets. A unit can only be the target of Tide of Transformation once per turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Maelstrom of Change:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the small round template over the target – it scatters it D3\". Every model underneath the template must take a Toughness test. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Spawnchange:"
-                },
-                {
-                  "emph": "",
-                  "text": " Every model in the target unit must take a Toughness test. If the target suffers one or more unsaved Wounds, you can immediately place a new Chaos Spawn anywhere within 6\" of the target unit that is at least 1\" from any unit and impassable terrain. If the target suffered no unsaved Wounds, if you do not have a spare Chaos Spawn model, or if it cannot be placed, then no Chaos Spawn is created."
-                }
-              ],
-              "text": "D6 Result 1 Hideous Disfigurements: The target must take D6 Toughness tests, and gains the Fear special rule for the rest of the game. 2 Trollbrains: The target must take D6 Toughness tests, and gains the Stupidity special rule for the rest of the game. 3 Gift of Mutations: The target must take D6 Toughness tests. After resolving these tests, one of the unit’s characteristics (roll a D6 to randomly select between M, WS, BS, S, T, or A) is increased by 1 (to a maximum of 10) and one of their characteristics (roll another D6 to randomly select between M, WS, BS, S, T or A) is decreased by 1 (to a minimum of 1) for the rest of the game. 4 Tide of Transformation: The target must take D6 Toughness tests. Once the tests have been resolved, roll a D6: on a 3+, choose another unit within 6\" of the initial target – it must take D6 Toughness tests. Keep rolling for further victims (each within 6\" of the last target struck), until you roll a 1-2 or there are no more viable targets. A unit can only be the target of Tide of Transformation once per turn. 5 Maelstrom of Change: Place the small round template over the target – it scatters it D3\". Every model underneath the template must take a Toughness test. 6 Spawnchange: Every model in the target unit must take a Toughness test. If the target suffers one or more unsaved Wounds, you can immediately place a new Chaos Spawn anywhere within 6\" of the target unit that is at least 1\" from any unit and impassable terrain. If the target suffered no unsaved Wounds, if you do not have a spare Chaos Spawn model, or if it cannot be placed, then no Chaos Spawn is created."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Hideous Disfigurements: The target must take D6 Toughness tests, and gains the Fear special rule\nfor the rest of the game."
+                ],
+                [
+                  "2",
+                  "Trollbrains: The target must take D6 Toughness tests, and gains the Stupidity special rule for the rest\nof the game."
+                ],
+                [
+                  "3",
+                  "Gift of Mutations: The target must take D6 Toughness tests. After resolving these tests, one of the\nunit’s characteristics (roll a D6 to randomly select between M, WS, BS, S, T, or A) is increased by 1\n(to a maximum of 10) and one of their characteristics (roll another D6 to randomly select between M,\nWS, BS, S, T or A) is decreased by 1 (to a minimum of 1) for the rest of the game."
+                ],
+                [
+                  "4",
+                  "Tide of Transformation: The target must take D6 Toughness tests. Once the tests have been\nresolved, roll a D6: on a 3+, choose another unit within 6\" of the initial target – it must take D6\nToughness tests. Keep rolling for further victims (each within 6\" of the last target struck), until you\nroll a 1-2 or there are no more viable targets. A unit can only be the target of Tide of Transformation\nonce per turn."
+                ],
+                [
+                  "5",
+                  "Maelstrom of Change: Place the small round template over the target – it scatters it D3\". Every\nmodel underneath the template must take a Toughness test."
+                ],
+                [
+                  "6",
+                  "Spawnchange: Every model in the target unit must take a Toughness test. If the target suffers one or\nmore unsaved Wounds, you can immediately place a new Chaos Spawn anywhere within 6\" of the\ntarget unit that is at least 1\" from any unit and impassable terrain. If the target suffered no unsaved\nWounds, if you do not have a spare Chaos Spawn model, or if it cannot be placed, then no Chaos\nSpawn is created."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -15788,6 +15839,7 @@
         {
           "name": "ARCHAON THE EVERCHOSEN",
           "page": 66,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -15999,11 +16051,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VARDEK CROM",
           "page": 67,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16130,11 +16184,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ABRAXIA",
           "page": 68,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16233,42 +16289,29 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Uncontrollable Power:"
-                },
-                {
-                  "emph": "",
-                  "text": " Abraxia suffers a Wound with no saves allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 The Spear Slumbers:"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 White-hot Varanite:"
-                },
-                {
-                  "emph": "",
-                  "text": " Abraxia gains +1 Strength. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Rampant Mutation:"
-                },
-                {
-                  "emph": "",
-                  "text": " Abraxia gains +1 Strength. In addition, for each natural To Hit roll of 6 made with this weapon, the enemy unit suffers D3 Wounds with no saves allowed, distributed as Hits from shooting."
-                }
-              ],
-              "text": "D6 Result 1 Uncontrollable Power: Abraxia suffers a Wound with no saves allowed. 2-3 The Spear Slumbers: No effect. 4-5 White-hot Varanite: Abraxia gains +1 Strength. 6 Rampant Mutation: Abraxia gains +1 Strength. In addition, for each natural To Hit roll of 6 made with this weapon, the enemy unit suffers D3 Wounds with no saves allowed, distributed as Hits from shooting."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Uncontrollable Power: Abraxia suffers a Wound with no saves allowed."
+                ],
+                [
+                  "2-3",
+                  "The Spear Slumbers: No effect."
+                ],
+                [
+                  "4-5",
+                  "White-hot Varanite: Abraxia gains +1 Strength."
+                ],
+                [
+                  "6",
+                  "Rampant Mutation: Abraxia gains +1 Strength. In addition, for each natural To Hit roll of 6 made\nwith this weapon, the enemy unit suffers D3 Wounds with no saves allowed, distributed as Hits from\nshooting."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -16327,11 +16370,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "COUNT MORDREK",
           "page": 69,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16467,11 +16512,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ATARUS",
           "page": 70,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16603,11 +16650,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WULFRIK THE WANDERER",
           "page": 71,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -16758,11 +16807,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FRYDAAL THE CHAINMAKER",
           "page": 72,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -16888,11 +16939,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HARALD HAMMERSTORM",
           "page": 73,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17018,11 +17071,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SAYL THE FAITHLESS",
           "page": 74,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17243,11 +17298,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARAKARR BLOOD-SKY",
           "page": 75,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17384,11 +17441,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOKJAR BJOERGIR",
           "page": 75,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -17534,11 +17593,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHOLEK SUNEATER",
           "page": 76,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17688,11 +17749,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THROGG WINTERTOOTH",
           "page": 76,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17809,7 +17872,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -17820,6 +17884,7 @@
         {
           "name": "VALKIA THE BLOODY",
           "page": 77,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -17969,11 +18034,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKARR BLOODWRATH",
           "page": 78,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18076,11 +18143,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHORGOS KHUL",
           "page": 79,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18239,11 +18308,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHAZEK",
           "page": 80,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18447,11 +18518,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VORGAROTH THE SCARRED",
           "page": 81,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18610,11 +18683,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARBAAL THE UNDEFEATED",
           "page": 82,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18750,11 +18825,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SCYLA ANFINGRIMM",
           "page": 83,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -18833,7 +18910,8 @@
               "label": "SPECIAL RULES",
               "value": "Hatred, Mark of Khorne, Natural Armour (5+), *Random Attacks (D6+2), Unbreakable"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -18844,6 +18922,7 @@
         {
           "name": "TAMURKHAN",
           "page": 84,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -19081,11 +19160,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE GLOTTKIN",
           "page": 85,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -19225,11 +19306,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE MAGGOTH LORDS",
           "page": 86,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -19549,11 +19632,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GUTROT SPUME",
           "page": 87,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -19671,11 +19756,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KAYZK THE BEFOULED",
           "page": 87,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -19820,11 +19907,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VALNIR THE REAPER",
           "page": 88,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -19937,41 +20026,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-3 The Red Plague:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit suffers D6 Strength 3 hits which Ignores Armour saves. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Brain Fever:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit suffers -2 to their Leadership until the start of the next round. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Black Rot:"
-                },
-                {
-                  "emph": "",
-                  "text": " All the members of the unit suffer a -1 Toughness penalty until the start of the next round."
-                }
-              ],
-              "text": "D6 Result 1-3 The Red Plague: The unit suffers D6 Strength 3 hits which Ignores Armour saves. 4-5 Brain Fever: The unit suffers -2 to their Leadership until the start of the next round. 6 Black Rot: All the members of the unit suffer a -1 Toughness penalty until the start of the next round."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-3",
+                  "The Red Plague: The unit suffers D6 Strength 3 hits which Ignores Armour saves."
+                ],
+                [
+                  "4-5",
+                  "Brain Fever: The unit suffers -2 to their Leadership until the start of the next round."
+                ],
+                [
+                  "6",
+                  "Black Rot: All the members of the unit suffer a -1 Toughness penalty until the start of the next\nround."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FESTUS THE LEECHLORD",
           "page": 89,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -20155,11 +20236,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GELGUS PUST",
           "page": 90,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -20281,7 +20364,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -20292,6 +20376,7 @@
         {
           "name": "SIGVALD THE MAGNIFICENT",
           "page": 91,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -20450,11 +20535,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GLUTOS ORSCOLLION",
           "page": 92,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -20668,53 +20755,33 @@
               ]
             },
             {
-              "type": "minitable",
-              "columns": [
-                "Turn",
-                "Power"
-              ],
-              "row": {
-                "Turn": "1",
-                "Power": "Aperitif: All friendly units with the Mark of Slaanesh within 6\" of Glutos gain +1 Leadership."
-              }
-            },
-            {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "2 Starter:"
-                },
-                {
-                  "emph": "",
-                  "text": " All friendly units with the Mark of Slaanesh within 6\" of Glutos may re-roll failed charge rolls. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Main Course:"
-                },
-                {
-                  "emph": "",
-                  "text": " All friendly units with the Mark of Slaanesh within 6\" of Glutos are Unbreakable. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Dessert:"
-                },
-                {
-                  "emph": "",
-                  "text": " Glutos gains one additional spell, chosen as normal. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Digestif:"
-                },
-                {
-                  "emph": "",
-                  "text": " Glutos may re-roll casting and dispel results."
-                }
-              ],
-              "text": "2 Starter: All friendly units with the Mark of Slaanesh within 6\" of Glutos may re-roll failed charge rolls. 3 Main Course: All friendly units with the Mark of Slaanesh within 6\" of Glutos are Unbreakable. 4 Dessert: Glutos gains one additional spell, chosen as normal. 5 Digestif: Glutos may re-roll casting and dispel results."
+              "type": "chart",
+              "rows": [
+                [
+                  "Turn:",
+                  "Power:"
+                ],
+                [
+                  "1",
+                  "Aperitif: All friendly units with the Mark of Slaanesh within 6\" of Glutos gain +1 Leadership."
+                ],
+                [
+                  "2",
+                  "Starter: All friendly units with the Mark of Slaanesh within 6\" of Glutos may re-roll failed charge\nrolls."
+                ],
+                [
+                  "3",
+                  "Main Course: All friendly units with the Mark of Slaanesh within 6\" of Glutos are Unbreakable."
+                ],
+                [
+                  "4",
+                  "Dessert: Glutos gains one additional spell, chosen as normal."
+                ],
+                [
+                  "5",
+                  "Digestif: Glutos may re-roll casting and dispel results."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -20749,11 +20816,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DECHALA",
           "page": 93,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -20896,11 +20965,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STYRKAAR OF THE SORTSVINAER",
           "page": 94,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -21084,7 +21155,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -21095,6 +21167,7 @@
         {
           "name": "VILITCH THE CURSELING",
           "page": 95,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -21188,11 +21261,13 @@
               "label": "SPECIAL RULES",
               "value": "Chaos Armour, Eye of the Gods, Loremaster (Lore of Tzeentch), Mark of Tzeentch, Will of Chaos"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "EGRIMM VAN HORSTMANN",
           "page": 96,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -21342,11 +21417,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AEKOLD HELBRASS",
           "page": 97,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -21421,35 +21498,25 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " Aekold gains the Fly (10) special rule until the start of his next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4"
-                },
-                {
-                  "emph": "",
-                  "text": " Aekold gains the Always Strikes First special rule until the start of his next turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " Aekold may throw the Windblade as a missile attack with a range of 12\" and the Quick to Fire special rule. If the unit is hit it suffers D3 Strength 5 hits."
-                }
-              ],
-              "text": "D6 Result 1-2 Aekold gains the Fly (10) special rule until the start of his next turn. 3-4 Aekold gains the Always Strikes First special rule until the start of his next turn. 5-6 Aekold may throw the Windblade as a missile attack with a range of 12\" and the Quick to Fire special rule. If the unit is hit it suffers D3 Strength 5 hits."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Aekold gains the Fly (10) special rule until the start of his next turn."
+                ],
+                [
+                  "3-4",
+                  "Aekold gains the Always Strikes First special rule until the start of his next turn."
+                ],
+                [
+                  "5-6",
+                  "Aekold may throw the Windblade as a missile attack with a range of 12\" and the Quick to Fire\nspecial rule. If the unit is hit it suffers D3 Strength 5 hits."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -21475,11 +21542,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GALRAUCH",
           "page": 97,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -21572,7 +21641,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -21583,6 +21653,7 @@
         {
           "name": "Written & Edited by:",
           "page": 98,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -21599,7 +21670,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

@@ -8,10 +8,10 @@
   "slug": "hobgoblins",
   "image_dir": "images/hobgoblins",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -233,51 +233,33 @@
           "text": "Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit behaves normally this turn. If the roll is a 1, however, the unit has failed its Treachery test and must roll on the Treachery table below:"
         },
         {
-          "type": "para",
-          "style": "body",
-          "runs": [
-            {
-              "emph": "bold",
-              "text": "D6 Result 1 Traitor!"
-            },
-            {
-              "emph": "",
-              "text": " If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "2 We'll get a better view from further back!"
-            },
-            {
-              "emph": "",
-              "text": " The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "3-4 We Stayz 'Ere!"
-            },
-            {
-              "emph": "",
-              "text": " The unit may not voluntarily move this turn. "
-            },
-            {
-              "emph": "bold",
-              "text": "5 Bloody Murder!"
-            },
-            {
-              "emph": "",
-              "text": " The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. "
-            },
-            {
-              "emph": "bold",
-              "text": "6 Cut 'em good!"
-            },
-            {
-              "emph": "",
-              "text": " Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
-            }
-          ],
-          "text": "D6 Result 1 Traitor! If the unit is armed with missile weapons, they will immediately resolve a round of shooting against the nearest friendly unit within Line of Sight. If the unit does not have any missile weapons or if there are no friendly units within Line of Sight, they will inflict D3 Strength 3 Hits for every complete rank the unit has on themselves instead (any Wounds suffered will not cause a Panic test). The unit may not move, shoot or cast spells this turn. 2 We'll get a better view from further back! The unit must immediately take a Panic test. If it's passed, the unit may not voluntarily move this turn. 3-4 We Stayz 'Ere! The unit may not voluntarily move this turn. 5 Bloody Murder! The unit suffers D3 Strength 3 Hits for every complete rank the unit has (any Wounds suffered will not cause a Panic test). The unit may move as normal afterwards. 6 Cut 'em good! Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full normal move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn."
+          "type": "chart",
+          "rows": [
+            [
+              "D6",
+              "Result"
+            ],
+            [
+              "1",
+              "Traitor! If the unit is armed with missile\nweapons, they will immediately resolve a\nround of shooting against the nearest friendly\nunit within Line of Sight. If the unit does not\nhave any missile weapons or if there are no\nfriendly units within Line of Sight, they will\ninflict D3 Strength 3 Hits for every complete\nrank the unit has on themselves instead (any\nWounds suffered will not cause a Panic test).\nThe unit may not move, shoot or cast spells\nthis turn."
+            ],
+            [
+              "2",
+              "We'll get a better view from further back!\nThe unit must immediately take a Panic test.\nIf it's passed, the unit may not voluntarily\nmove this turn."
+            ],
+            [
+              "3-4",
+              "We Stayz 'Ere! The unit may not voluntarily\nmove this turn."
+            ],
+            [
+              "5",
+              "Bloody Murder! The unit suffers D3\nStrength 3 Hits for every complete rank the\nunit has (any Wounds suffered will not cause\na Panic test). The unit may move as normal\nafterwards."
+            ],
+            [
+              "6",
+              "Cut 'em good! Pivot the unit on the spot to\nface the nearest visible enemy unit, and then\nmake a full normal move in a straight line\ntowards it. If there is no visible enemy, the\nunit must move straight ahead instead. If it is\nimpossible for the unit to pivot to face the\nclosest enemy, it will pivot towards it as far\nas it can, and will then move as far forward\nas it can while still keeping the enemy within\nits forward arc. After the move is complete\nthe unit must declare a charge against the\nclosest visible enemy unit, if it is possible to\ndo so. If the unit cannot declare a charge then\nit may carry on with the rest of its turn\nnormally, as if it had not yet moved this turn."
+            ]
+          ]
         }
       ]
     },
@@ -745,6 +727,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -874,11 +857,13 @@
               ],
               "text": "Attacks made with this weapon have the Strength Bonus (1) and Armour Piercing (1) special rules, and their effects are doubled on turns during which the wielder successfully charges an enemy in the flank or rear."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -981,11 +966,13 @@
               ],
               "text": "These gauntlets give the bearer a 6+ armour save and the Devastating Charge special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1067,11 +1054,13 @@
               ],
               "text": "The wearer gains a Magical Ward (3+) against missile attacks with Strength 4 or lower."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1169,11 +1158,13 @@
               ],
               "text": "One use only. The wizard can reroll a single dice when casting or dispelling a spell."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1240,59 +1231,37 @@
               "text": "At the start of the game, roll a D6 and consult the following chart to determine what the item retrieved for that battle actually does:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Worthless Scrap:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item does nothing. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Red Gem:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item grants the bearer the Flaming Attacks and Immunity (Flaming Attacks) special rules. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Protective Amulet:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item grants a Ward save (6+). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Obsidian Bracelet:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item grants the Magic Resistance (2) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Trollbone Torc:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item grants the Regeneration (4+) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Daemon Skull:"
-                },
-                {
-                  "emph": "",
-                  "text": " The item grants the bearer +1 Strength as well as the Magical Attacks and Magical Ward (5+) special rules."
-                }
-              ],
-              "text": "D6 Result 1 Worthless Scrap: The item does nothing. 2 Red Gem: The item grants the bearer the Flaming Attacks and Immunity (Flaming Attacks) special rules. 3 Protective Amulet: The item grants a Ward save (6+). 4 Obsidian Bracelet: The item grants the Magic Resistance (2) special rule. 5 Trollbone Torc: The item grants the Regeneration (4+) special rule. 6 Daemon Skull: The item grants the bearer +1 Strength as well as the Magical Attacks and Magical Ward (5+) special rules."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Worthless Scrap: The item does nothing."
+                ],
+                [
+                  "2",
+                  "Red Gem: The item grants the bearer the\nFlaming Attacks and Immunity (Flaming\nAttacks) special rules."
+                ],
+                [
+                  "3",
+                  "Protective Amulet: The item grants a Ward\nsave (6+)."
+                ],
+                [
+                  "4",
+                  "Obsidian Bracelet: The item grants the Magic\nResistance (2) special rule."
+                ],
+                [
+                  "5",
+                  "Trollbone Torc: The item grants the\nRegeneration (4+) special rule."
+                ],
+                [
+                  "6",
+                  "Daemon Skull: The item grants the bearer +1\nStrength as well as the Magical Attacks and\nMagical Ward (5+) special rules."
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -1342,11 +1311,13 @@
               ],
               "text": "One use only. This item may be used whenever the bearer and any unit they are with fails a Treacherous Gits test. Roll a D6; on a 2+ they pass the Treacherous Gits test."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1513,7 +1484,8 @@
               ],
               "text": "The unit carrying this standard may re-roll its Flee distance (before your opponent rolls their Charge/Pursuit distance)."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1537,6 +1509,7 @@
         {
           "name": "WARLORDS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1809,11 +1782,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHAMANS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1976,11 +1951,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THROAT-SLASHER",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2050,7 +2027,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2061,6 +2039,7 @@
         {
           "name": "GIANT WOLF",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2125,11 +2104,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNARLFANG",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2194,7 +2175,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2205,6 +2187,7 @@
         {
           "name": "CUTTHROATS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -2326,11 +2309,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -2432,11 +2417,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF RAIDERS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2615,11 +2602,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KHARASH",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2758,11 +2747,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HOBHOUNDS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2862,7 +2853,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2873,6 +2865,7 @@
         {
           "name": "KHESHIG WOLF RIDERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3050,11 +3043,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RAVAGERS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3193,11 +3188,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MANGUDAI",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3365,11 +3362,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SNEAKY GITS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3488,11 +3487,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WOLF CHARIOT",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3664,11 +3665,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOLT THROWA",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3761,11 +3764,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALMASLAR",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3820,11 +3825,13 @@
               "label": "SPECIAL RULES",
               "value": "Armour Piercing (1), Frenzy, Regeneration (5+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SCORPIONS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3923,7 +3930,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3934,6 +3942,7 @@
         {
           "name": "KHESHIG SNARLFANG RIDERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4111,11 +4120,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR WAGON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4289,11 +4300,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROKKIT LAUNCHA",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4362,11 +4375,13 @@
               "label": "EQUIPMENT",
               "value": "Hand weapon, rocket launcher"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WIND DAEMONS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4440,11 +4455,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CORPSERIPPER VULTURE",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4527,11 +4544,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DREAD MAW",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4777,11 +4796,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4943,18 +4964,35 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+                  "text": "Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
                 }
               ],
-              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms. D6 Result 1 Yell and Bawl 2 Jump Up and Down 3 Pick Up and... 4-6 Swing with Club"
+              "text": "MAN-SIZED THINGS CHART Use this chart when fighting Infantry, Large Infantry, Cavalry, War Beasts or Swarms."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2",
+                  "Jump Up and Down"
+                ],
+                [
+                  "3",
+                  "Pick Up and..."
+                ],
+                [
+                  "4-6",
+                  "Swing with Club"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -4966,18 +5004,31 @@
                 },
                 {
                   "emph": "italic",
-                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "D6 Result"
-                },
-                {
-                  "emph": "",
-                  "text": " 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+                  "text": "Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
                 }
               ],
-              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines. D6 Result 1 Yell and Bawl 2-4 Thump with Club 5-6 'Eadbutt"
+              "text": "BIG THINGS CHART Use this chart when fighting Monsters, Monstrous Creatures, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines."
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Yell and Bawl"
+                ],
+                [
+                  "2-4",
+                  "Thump with Club"
+                ],
+                [
+                  "5-6",
+                  "'Eadbutt"
+                ]
+              ]
             },
             {
               "type": "para",
@@ -5035,53 +5086,36 @@
               "text": "- 'Eadbutt: The Giant automatically inflicts D3 Wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round's attacks. - Jump Up and Down: The Giant must test to determine if it falls over (see previous page). If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. Otherwise, it will instead use the Stomp (2D6) special rule this turn instead of its normal Stomp. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends. - Swing with Club: The Giant fights using the Random Attacks (2D6) special rule this round. - Thump with Club: The Giant chooses a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an Initiative test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 Wounds which Ignores Armour Saves. If a double is rolled the Giant cannot attack at all in the following round of the same combat. - Yell and Bawl: Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points. - Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player's choice). The Giant grabs the model and the player rolls a D6 to see what happens next:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Stuff into Bag:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Throw Back into Combat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Hurl:"
-                },
-                {
-                  "emph": "",
-                  "text": " The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Squash or Eat:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model is removed as a casualty. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Pick Another:"
-                },
-                {
-                  "emph": "",
-                  "text": " Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
-                }
-              ],
-              "text": "D6 Result 1 Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties. 2 Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are inflicted on the unit (save as normal). 3 Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved Wounds from these hits count towards the Giant's combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead. 4-5 Squash or Eat: The model is removed as a casualty. 6 Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the\nbag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the\nbattle, and no longer counts as casualties."
+                ],
+                [
+                  "2",
+                  "Throw Back into Combat: The victim is hurled into its own unit like a living missile. The\nvictim suffers D3 Strength 6 Hits which Ignores Armour saves, and D6 Strength 3 hits are\ninflicted on the unit (save as normal)."
+                ],
+                [
+                  "3",
+                  "Hurl: The victim is hurled into an enemy unit within 12\" of the Giant – randomly determine\nwhich. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved\nWounds from these hits count towards the Giant's combat result. If no enemy units are in range,\ntreat this as a Throw Back into Combat result instead."
+                ],
+                [
+                  "4-5",
+                  "Squash or Eat: The model is removed as a casualty."
+                ],
+                [
+                  "6",
+                  "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and\nthen choose another victim. Roll again on this table to see what the Giant does with it."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5092,6 +5126,7 @@
         {
           "name": "HOBGOBLA KHAN",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5284,11 +5319,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GHAZAK KHAN",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5424,11 +5461,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGLAH KHAN",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5527,59 +5566,37 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Flame Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Flaming Attacks special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Bodkin Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Armour Piercing (1) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Poisoned Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Poisoned Attacks special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Burst Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Multiple Wounds (D3) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Storm Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Lightning Attacks special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Frost Arrows:"
-                },
-                {
-                  "emph": "",
-                  "text": " All shots have the Ice Attacks special rule."
-                }
-              ],
-              "text": "D6 Result 1 Flame Arrows: All shots have the Flaming Attacks special rule. 2 Bodkin Arrows: All shots have the Armour Piercing (1) special rule. 3 Poisoned Arrows: All shots have the Poisoned Attacks special rule. 4 Burst Arrows: All shots have the Multiple Wounds (D3) special rule. 5 Storm Arrows: All shots have the Lightning Attacks special rule. 6 Frost Arrows: All shots have the Ice Attacks special rule."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Flame Arrows: All shots have the Flaming Attacks special rule."
+                ],
+                [
+                  "2",
+                  "Bodkin Arrows: All shots have the Armour Piercing (1) special rule."
+                ],
+                [
+                  "3",
+                  "Poisoned Arrows: All shots have the Poisoned Attacks special rule."
+                ],
+                [
+                  "4",
+                  "Burst Arrows: All shots have the Multiple Wounds (D3) special rule."
+                ],
+                [
+                  "5",
+                  "Storm Arrows: All shots have the Lightning Attacks special rule."
+                ],
+                [
+                  "6",
+                  "Frost Arrows: All shots have the Ice Attacks special rule."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -5617,11 +5634,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SOBUTAI",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -5796,11 +5815,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "NERGUI",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6005,7 +6026,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6016,6 +6038,7 @@
         {
           "name": "Written & Edited by:",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6027,11 +6050,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6048,7 +6073,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

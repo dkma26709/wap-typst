@@ -8,10 +8,10 @@
   "slug": "grand-cathay",
   "image_dir": "images/grand-cathay",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -735,6 +735,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1002,11 +1003,13 @@
               ],
               "text": "Light lance/spear. The wielder of this weapon gains the Flaming Attacks special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1136,11 +1139,13 @@
               ],
               "text": "Shield. The bearer gains +2 armour save against all attacks to their front in the first round of close combat."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1294,11 +1299,13 @@
               ],
               "text": "The bearer of this item gains a 4+ invulnerable save against all enemy spells."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1428,11 +1435,13 @@
               ],
               "text": "Dragon-Blooded Shugengan or Dragon Descendant only. Relic. The bearer of this item may choose spells from both the Lore of Yin and Yang in addition to the spells from their other lore."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1706,11 +1715,13 @@
               ],
               "text": "One use only. This item can be used at the start of any phase. The character gains the Poisoned Attacks special rule until the end of the turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1973,7 +1984,8 @@
               ],
               "text": "Enemy units cannot choose to Stand & Shoot against the unit carrying this banner."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1997,6 +2009,7 @@
         {
           "name": "CELESTIAL COMMANDERS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2359,11 +2372,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON-BLOODED SHUGENGAN",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2734,11 +2749,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON DESCENDANT",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3050,11 +3067,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALCHEMISTS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3189,11 +3208,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ASTROMANCERS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3347,11 +3368,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GATE MASTERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3648,11 +3671,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGISTRATES",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3860,11 +3885,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BLADEMASTER",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4044,7 +4071,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4055,6 +4083,7 @@
         {
           "name": "WARHORSE",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4119,11 +4148,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JADE LONGMA",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4192,11 +4223,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT SPIRIT LONGMA",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4265,7 +4298,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4276,6 +4310,7 @@
         {
           "name": "PEASANT MILITIA",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4433,11 +4468,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEASANT BOWMEN",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4585,11 +4622,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEASANT HORSEMEN",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4775,11 +4814,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JADE WARRIORS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -4929,11 +4970,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JADE BOWMEN",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5091,11 +5134,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JADE HORSEMEN",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5309,11 +5354,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRON HAIL GUNNERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5462,11 +5509,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HILL TRIBESMEN",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -5625,11 +5674,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MONKEY WARRIORS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5738,7 +5789,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5749,6 +5801,7 @@
         {
           "name": "CELESTIAL DRAGON GUARD",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5939,11 +5992,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CELESTIAL DRAGON LANCERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6140,11 +6195,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CELESTIAL DRAGON MONKS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6338,11 +6395,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CRANE GUNNERS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6461,11 +6520,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRENADIERS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6597,11 +6658,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLAMETHROWER",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6708,11 +6771,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR CHARIOT",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6890,11 +6955,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKY LANTERN",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7030,35 +7097,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Premature Detonation:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Sky Lantern suffers a Strength 6 hit with the and Multiple Wounds (D3) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Jammed Release."
-                },
-                {
-                  "emph": "",
-                  "text": " Centre the 3\" template over the Sky Lantern before scattering it and resolving damage as normal. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-6 Dud."
-                },
-                {
-                  "emph": "",
-                  "text": " Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
-                }
-              ],
-              "text": "D6 Result 1 Premature Detonation: The Sky Lantern suffers a Strength 6 hit with the and Multiple Wounds (D3) special rule. 2-3 Jammed Release. Centre the 3\" template over the Sky Lantern before scattering it and resolving damage as normal. 4-6 Dud. Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Premature Detonation: The Sky Lantern suffers a Strength 6 hit with the and Multiple Wounds (D3)\nspecial rule."
+                ],
+                [
+                  "2-3",
+                  "Jammed Release. Centre the 3\" template over the Sky Lantern before scattering it and resolving\ndamage as normal."
+                ],
+                [
+                  "4-6",
+                  "Dud. Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -7110,11 +7167,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MERCENARY OGRES",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7291,11 +7350,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TEMPLE DOGS",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7350,11 +7411,13 @@
               "label": "SPECIAL RULES",
               "value": "Animated Construct, Fear, Impact Hits (1), Unstable"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRACOTTA WARRIORS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7511,11 +7574,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ONYX CROWMEN",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7614,11 +7679,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STORMHURLER CROSSBOW",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7731,11 +7798,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON CANNON",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7848,11 +7917,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIRE RAIN ROCKET",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8045,7 +8116,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8056,6 +8128,7 @@
         {
           "name": "LONGMA RIDERS",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8233,11 +8306,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRAND CANNON",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8431,11 +8506,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZHANGU WAR DRUM",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8608,11 +8685,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WU XING WAR COMPASS",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8775,11 +8854,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SKY-JUNK",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8925,11 +9006,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CELESTIAL LION",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8979,11 +9062,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (8), Mighty Blow (1), Natural Armour (6+), Yang"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT MOON BIRD",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9052,11 +9137,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERRACOTTA SENTINEL",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9242,11 +9329,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GUARDIAN LION",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9365,7 +9454,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9376,6 +9466,7 @@
         {
           "name": "MIAO YING",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9614,11 +9705,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZHAO MING",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9841,11 +9934,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "YUAN BO",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10015,11 +10110,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUI YUN",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10151,11 +10248,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUA GONGZHU",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10292,11 +10391,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GUAN FEI",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10419,11 +10520,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TIAN SHI",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10610,11 +10713,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ZHUGE YI",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10802,11 +10907,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CHENG LONG",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10979,11 +11086,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SAYTANG THE WATCHER",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11099,11 +11208,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THE MONKEY KING",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11206,7 +11317,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -11217,6 +11329,7 @@
         {
           "name": "Written & Edited by:",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11228,11 +11341,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11244,7 +11359,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

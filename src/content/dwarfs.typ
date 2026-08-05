@@ -407,8 +407,9 @@
 #field("SPECIAL RULES", "Ancestral Grudge, Relentless, Resolute")
 #items(((runs: ((emph: "bold", text: "Anvil of Doom:"), (emph: "", text: " A Runelord with an Anvil of Doom gains the Magical Ward (4+) and Unbreakable special rules. In addition, his troop type changes to War Machine and he counts as being part of the crew. The Runelord can never choose to leave the Anvil during the game. If the Runelord is killed, the whole Anvil is also removed as a casualty.")), sub: ()), (runs: ((emph: "bold", text: "Locus of Power:"), (emph: "", text: " For each friendly Anvil of Doom on the battlefield at the start of any Magic phase, add one dice to your dispel pool.")), sub: ()), (runs: ((emph: "bold", text: "Strike the Runes:"), (emph: "", text: " Instead of using the Runes from their Rune Lore special rule, a model mounted on an Anvil of Doom can use the following Ancestor Runes once each at the start of each of your turns:")), sub: (((emph: "bold", text: "Ancestor Rune of Grungni:"), (emph: "", text: " Choose one friendly Dwarf unit within 24\". Until the start of your next turn, the target gains the Fight in Extra Ranks (1) special rule and may re-roll failed rolls To Hit in close combat and with missile weapons.")), ((emph: "bold", text: "Ancestor Rune of Valaya:"), (emph: "", text: " Choose one friendly Dwarf unit within 24\". The target regains D3+1 Wounds' worth of models slain earlier in the battle, just like a summoning spell.")), ((emph: "bold", text: "Ancestor Rune of Grimnir:"), (emph: "", text: " Choose one unengaged enemy unit within 24\"; that unit suffer 2D6 Strength 4 hits."))))))
 #para(((emph: "", text: "Choose which rune you wish the model to strike. Then the model needs to take a Leadership test on their own unmodified Leadership. If passed, the Rune is struck and take immediate effect. If the Leadership test is failed, roll a D6 and consult the Failed Rune table below:"),))
-#namecost("FAILED RUNE TABLE", "")
-#para(((emph: "bold", text: "D6 Result 1"), (emph: "", text: " Remove the Anvil of Doom, the Runelord and the Anvil Guards as casualties immediately. "), (emph: "bold", text: "2-3"), (emph: "", text: " The rune does not take effect and the Anvil of Doom may not attempt to strike any further runes this turn. "), (emph: "bold", text: "4-6"), (emph: "", text: " The rune does not take effect.")))
+#chartlabel("FAILED RUNE TABLE")
+#chart((("D6", "Result"), ("1", "Remove the Anvil of Doom, the Runelord and the Anvil Guards as casualties immediately."), ("2-3", "The rune does not take effect and the Anvil of Doom may not attempt to strike any further runes this
+turn."), ("4-6", "The rune does not take effect.")))
 
 #heading(level: 1, "CORE UNITS")
 
@@ -458,8 +459,13 @@
 #para(((emph: "", text: "Once the final position of the marker is established, place the emerging unit in a legal formation such that it touches the marker, facing any direction. If the marker is under an enemy unit, you may place your unit into base contact with the enemy unit in their front arc; your unit will counts as charging this turn."),))
 #para(((emph: "", text: "If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the unit does not emerge. Instead, remove the marker and roll on the Underground Mishap table. If a unit emerges successfully, it may act normally this turn."),))
 #para(((emph: "", text: "If you have several units of Miners, then repeat this process, one unit at a time."),))
-#namecost("UNDERGROUND MISHAP CHART", "")
-#para(((emph: "bold", text: "D6 Result 1-2 Cave-in!"), (emph: "", text: " The Miners are instantly killed. "), (emph: "bold", text: "3-5 Partial Collapse."), (emph: "", text: " All models in the unit must pass a Strength test or be removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. "), (emph: "bold", text: "6 Should Have Taken That Left Turn."), (emph: "", text: " Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Miners emerge. They cannot move or charge on the turn they emerge.")))
+#chartlabel("UNDERGROUND MISHAP CHART")
+#chart((("D6", "Result"), ("1-2", "Cave-in! The Miners are instantly killed."), ("3-5", "Partial Collapse. All models in the unit must pass a Strength test or be removed as casualties. Any
+models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the
+models emerge into close combat they have the Always Strikes Last special rule for the remainder of
+the turn."), ("6", "Should Have Taken That Left Turn. Your opponent places the marker anywhere within 18\" of the
+original position on the table and this is where the Miners emerge. They cannot move or charge on
+the turn they emerge.")))
 #field("UPGRADES", "")
 #items(((runs: ((emph: "bold", text: "Miner's Cart:"), (emph: "", text: " A Miner's Cart is a Shrine drawn by a Draft Pony. It may not choose to leave the unit. A unit with a Miner's Cart can use Blasting Charges every turn rather than just once. However, if the Miner's Cart is destroyed from a close combat or missile attack, place the centre of the large round template on top of it before removing it. All models under the template suffer a Strength 4 Hit with the Armour Piercing (1) and Flaming Attacks special rules.")), sub: ()),))
 #field("OPTIONS", "")
@@ -520,8 +526,11 @@
 #field("EQUIPMENT", "Hand weapon")
 #field("SPECIAL RULES", "Ancestral Grudge, Magic Resistance (1), Random Movement (2D6), Resolute")
 #items(((runs: ((emph: "bold", text: "The Best Defence:"), (emph: "", text: " The Deathroller has an armour save of 3+ against all models attacking from the front.")), sub: ()), (runs: ((emph: "bold", text: "Grinding Attack:"), (emph: "", text: " A Deathroller is moved during combat to crush the enemies trying to dodge the heavy machine. In addition to its normal Impact Hits when charging, the Deathroller inflicts D6 Impact Hits at the start of each close combat round. If you roll a 6 when determining the number of Impact Hits, the driver has pushed the boiler beyond his limits. Roll a D6 and consult the Boiler Incident Table.")), sub: ()), (runs: ((emph: "bold", text: "Over-Pressured Boiler:"), (emph: "", text: " If two or more l's are rolled when rolling for its movement, you need to roll another D6 and consult the Boiler Incident Table. The driver can take the risk and increase the pressure of the steam boiler before choosing to move the Deathroller. This gives the Deathroller the Random Movement (3D6) special rule for the rest of this turn.")), sub: ())))
-#namecost("BOILER INCIDENT TABLE", "")
-#para(((emph: "bold", text: "D6 Result: 1"), (emph: "", text: " Remove the Deathroller as a casualty. All units in base contact with the Deathroller suffer D6 Strength 4 Hits with the Armour Piercing special rule. "), (emph: "bold", text: "2-4"), (emph: "", text: " The Deathroller may not move this turn or use its Grinding Attack. If it breaks from combat this round, it is automatically destroyed. "), (emph: "bold", text: "5-6"), (emph: "", text: " The Deathroller may only roll one D6 for each of its Movements this turn (including fleeing and pursuit).")))
+#chartlabel("BOILER INCIDENT TABLE")
+#chart((("D6", "Result:"), ("1", "Remove the Deathroller as a casualty. All units in base contact with the Deathroller suffer D6
+Strength 4 Hits with the Armour Piercing special rule."), ("2-4", "The Deathroller may not move this turn or use its Grinding Attack. If it breaks from combat this
+round, it is automatically destroyed."), ("5-6", "The Deathroller may only roll one D6 for each of its Movements this turn (including fleeing and
+pursuit).")))
 
 #entry("FIRE THROWER")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Fire Thrower", "3", "4", "3", "3", "4", "2", "2", "2", "9", "45"),))
@@ -677,8 +686,10 @@
 #items(((runs: ((emph: "bold", text: "Bombing Run:"), (emph: "", text: " During the Remaining Moves sub-phase, models with this special rule may drop a bomb unless they are fleeing or have declared a charge that turn. To make a Bombing Run, select one unengaged enemy unit that the Gyrobomber moved over in that turn and place the large 5\" template anywhere over the target unit (but note that it cannot cover friendly models) and roll for scatter and damage as for a stone thrower from the Warhammer rulebook. If a misfire is rolled, use the Bomb Misfire chart below. Grudgebuster bombs have the following profile:")), sub: ()),))
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "3(6)", "Armour Piercing (1), Multiple Wounds (D3)"))
 #para(((emph: "", text: "After resolving the damage caused by a Grudgebuster bomb, roll a D6. On a 4+, the bomb scatters D6\" from where it first landed (a Hit! result remains in place). Place the small round (3\") template on the new location and resolve damage using the profile above. It cannot bounce a third time."),))
-#namecost("BOMB MISFIRE TABLE", "")
-#para(((emph: "bold", text: "D6 Result 1 Premature Detonation:"), (emph: "", text: " The Gyrobomber suffers a Strength 6 hit with the Multiple Wounds (D3) special rule. "), (emph: "bold", text: "2-3 Jammed Release:"), (emph: "", text: " Centre the 3\" template over the Gyrobomber before scattering it and resolving damage as normal. This bomb does not bounce. "), (emph: "bold", text: "4-6 Dud:"), (emph: "", text: " Only the model under the template's central hole is hit, suffering a single Strength 4 hit.")))
+#chartlabel("BOMB MISFIRE TABLE")
+#chart((("D6", "Result"), ("1", "Premature Detonation: The Gyrobomber suffers a Strength 6 hit with the Multiple Wounds (D3)
+special rule."), ("2-3", "Jammed Release: Centre the 3\" template over the Gyrobomber before scattering it and resolving
+damage as normal. This bomb does not bounce."), ("4-6", "Dud: Only the model under the template's central hole is hit, suffering a single Strength 4 hit.")))
 #items(((runs: ((emph: "bold", text: "Quick Turn:"), (emph: "", text: " A model with this special rule may pivot on the spot like a Lone Model despite being a chariot.")), sub: ()),))
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace steam gun with one of the following:"),), sub: (((emph: "", text: "Brimstone gun (see Gyrocopters) free"),), ((emph: "", text: "Clattergun (see Gyrocopters) free"),))),))
@@ -700,8 +711,11 @@
 #field("BASE SIZE", "50x50, 50x75 or 50x100")
 #field("SPECIAL RULES", "Animated Construct, Immunity (Poisoned Attacks), Magic Resistance (1), Terror")
 #items(((runs: ((emph: "bold", text: "Steam-pressured Engine:"), (emph: "", text: " The Grudgebreaker follows the rules for Random Movement and Random Attacks. In order to determine the Movement and Attacks value of the Grudgebreaker, roll an Artillery dice rather than a set of D6's (roll separately for Movement and Attacks). Whenever you attempt to move or attack with the Grudgebreaker you may re-roll the Artillery dice if it didn't score a Misfire. If a Misfire is rolled, roll a D6 and consult the Grudgebreaker Incident Table. If a Misfire results on the re-roll it automatically causes a Clunk result.")), sub: ()),))
-#namecost("GRUDGEBREAKER INCIDENT TABLE", "")
-#para(((emph: "bold", text: "D6 Result 1 Catastrophe!"), (emph: "", text: " The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no saves allowed. "), (emph: "bold", text: "2-3 Malfunction:"), (emph: "", text: " The Grudgebreaker does not Move or Attack this turn. "), (emph: "bold", text: "4-5 Clunk:"), (emph: "", text: " The Grudgebreaker counts as having rolled a 1 for its Movement or Attacks value this turn. "), (emph: "bold", text: "6 Overdrive:"), (emph: "", text: " The Grudgebreaker counts as having rolled a 10 for its Movement or Attack value this turn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has performed its Movement or Attacks.")))
+#chartlabel("GRUDGEBREAKER INCIDENT TABLE")
+#chart((("D6", "Result"), ("1", "Catastrophe! The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no
+saves allowed."), ("2-3", "Malfunction: The Grudgebreaker does not Move or Attack this turn."), ("4-5", "Clunk: The Grudgebreaker counts as having rolled a 1 for its Movement or Attacks value this turn."), ("6", "Overdrive: The Grudgebreaker counts as having rolled a 10 for its Movement or Attack value this
+turn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has
+performed its Movement or Attacks.")))
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Grudgebreaker has a Line of Sight value of 5."),), sub: ()),))
 
@@ -807,7 +821,7 @@
 #items(((runs: ((emph: "bold", text: "Ol' Trustworthy:"), (emph: "", text: " Magic Weapon. Ol' Trustworthy is inscribed with two Runes of Cleaving and a Rune of Fury.")), sub: ()), (runs: ((emph: "bold", text: "Bugman's Tankard:"), (emph: "", text: " Enchanted Item. Josef Bugman, or a single model in the same unit, can drink from Bugman’s Tankard at the start of any friendly turn. The imbiber immediately recovers 1 Wound lost previously during the battle.")), sub: ())))
 #field("SPECIAL RULES", "Ancestral Grudge, Gromril Armour, Magic Resistance (1), Relentless, Resolute, Scouts")
 #items(((runs: ((emph: "bold", text: "Bugman's Rangers:"), (emph: "", text: " Josef Bugman must be accompanied by a unit of Rangers chosen from the army list at a cost of 17 points per model. This unit has Strength 4 and are equipped with great weapons, Dwarfen crossbows, medium armour and shields. Josef Bugman may never choose to leave this unit.")), sub: ()), (runs: ((emph: "bold", text: "Liquid Fortification:"), (emph: "", text: " As long as Bugman is alive, roll a D6 at the start of each of your turns and consult the following chart to see what effects his draughts have upon himself and any unit he has currently joined:")), sub: ())))
-#para(((emph: "bold", text: "D6 Result 1 Bad Brew:"), (emph: "", text: " The unit gains the Flammable special rule until the start of the next friendly turn. "), (emph: "bold", text: "2-4 Belligerent:"), (emph: "", text: " The unit gains the Stubborn special rule until the start of the next friendly turn. "), (emph: "bold", text: "5-6 Leathered:"), (emph: "", text: " Each member of the unit gains +1 Toughness until the start of the next friendly turn.")))
+#chart((("D6", "Result"), ("1", "Bad Brew: The unit gains the Flammable special rule until the start of the next friendly turn."), ("2-4", "Belligerent: The unit gains the Stubborn special rule until the start of the next friendly turn."), ("5-6", "Leathered: Each member of the unit gains +1 Toughness until the start of the next friendly turn.")))
 #items(((runs: ((emph: "bold", text: "Stout Courage:"), (emph: "", text: " Bugman and any unit he joins have the Immunity (Fear/Terror) special rule as long as he remains with the unit.")), sub: ()),))
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take a Dwarfen crossbow +7 points"),), sub: ()),))

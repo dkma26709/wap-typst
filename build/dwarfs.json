@@ -8,10 +8,10 @@
   "slug": "dwarfs",
   "image_dir": "images/dwarfs",
   "cover": "img-0026.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -284,6 +284,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -349,11 +350,13 @@
               ],
               "text": "Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any enemy models that suffer one or more unsaved Wounds from it are subject to the Always Strikes Last special rule until the end of the next Close Combat phase."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -424,11 +427,13 @@
               ],
               "text": "This armour gives the wearer a 6+ armour save. In addition, their armour save cannot be worse than a 6+."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -462,11 +467,13 @@
               ],
               "text": "This item allows the wielder to re-roll failed armour saves and invulnerable saves rolls of 1 in any turn they have not moved."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -596,11 +603,13 @@
               ],
               "text": "One use only. This item may be used at the start of any of your turns. Once used, all friendly units within 12\" gain +1 to their Leadership for the duration of the turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -618,7 +627,8 @@
               ],
               "text": "All models in a unit that carries the Banner of Lost Holds can re-roll failed To Wound rolls in close combat."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -642,6 +652,7 @@
         {
           "name": "CREATING A RUNIC ITEM",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -720,11 +731,13 @@
               ],
               "text": "Characters with the Slayer special rule may take Runic Tattoos."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RULES OF THE RUNES",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -781,11 +794,13 @@
               ],
               "text": "4) Apart from the master runes other runes can be combined as you wish, to produce varied or cumulative effects. With the exception of master runes, runes can be used in multiples when specified, although whether their effects are simply added together or combine into a new power will be stated within the rune's rules. The point costs for cumulative runes can be stated as 5/10/20 for example, where the higher numbers are the cost for the second and/or third cumulative rune."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WEAPON RUNES",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1291,11 +1306,13 @@
               ],
               "text": "A weapon engraved with a Rune of Speed grants its wielder +1 Initiative."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARMOUR RUNES",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1501,11 +1518,13 @@
               ],
               "text": "Armour engraved with a Rune of Stone adds +1 to its wearer's armour save."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANIC RUNES",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1732,11 +1751,13 @@
               ],
               "text": "One use only. A model with a Rune of Luck can re-roll a single To Hit roll, To Wound roll, armour save, invulnerable save or characteristic test during the game."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BANNER RUNES",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2054,11 +2075,13 @@
               ],
               "text": "One use only. If the unit carrying a banner with this rune has to take a Break test, the rune is expended. The unit tests as if it were Stubborn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENGINEERING RUNES",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2462,11 +2485,13 @@
               ],
               "text": "A model with this runic tattoo has the Flaming Attacks special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RUNIC TATTOOS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2516,7 +2541,8 @@
               ],
               "text": "A model with this runic tattoo gains +1 Toughness."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2551,6 +2577,7 @@
         {
           "name": "LORDS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2814,11 +2841,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RUNESMITHS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3062,11 +3091,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SLAYERS OF LEGEND",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3349,11 +3380,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BREWMASTER",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3536,11 +3569,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTER ENGINEER",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3739,7 +3774,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3750,6 +3786,7 @@
         {
           "name": "SHIELDBEARERS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3844,11 +3881,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BEER CART",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3936,11 +3975,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ANVIL OF DOOM",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4118,37 +4159,28 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove the Anvil of Doom, the Runelord and the Anvil Guards as casualties immediately. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3"
-                },
-                {
-                  "emph": "",
-                  "text": " The rune does not take effect and the Anvil of Doom may not attempt to strike any further runes this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-6"
-                },
-                {
-                  "emph": "",
-                  "text": " The rune does not take effect."
-                }
-              ],
-              "text": "D6 Result 1 Remove the Anvil of Doom, the Runelord and the Anvil Guards as casualties immediately. 2-3 The rune does not take effect and the Anvil of Doom may not attempt to strike any further runes this turn. 4-6 The rune does not take effect."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Remove the Anvil of Doom, the Runelord and the Anvil Guards as casualties immediately."
+                ],
+                [
+                  "2-3",
+                  "The rune does not take effect and the Anvil of Doom may not attempt to strike any further runes this\nturn."
+                ],
+                [
+                  "4-6",
+                  "The rune does not take effect."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4159,6 +4191,7 @@
         {
           "name": "WARRIORS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4297,11 +4330,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "QUARRELLERS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4460,11 +4495,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THUNDERERS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4623,11 +4660,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MINERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4846,35 +4885,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Cave-in!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Miners are instantly killed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Partial Collapse."
-                },
-                {
-                  "emph": "",
-                  "text": " All models in the unit must pass a Strength test or be removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Should Have Taken That Left Turn."
-                },
-                {
-                  "emph": "",
-                  "text": " Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Miners emerge. They cannot move or charge on the turn they emerge."
-                }
-              ],
-              "text": "D6 Result 1-2 Cave-in! The Miners are instantly killed. 3-5 Partial Collapse. All models in the unit must pass a Strength test or be removed as casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have the Always Strikes Last special rule for the remainder of the turn. 6 Should Have Taken That Left Turn. Your opponent places the marker anywhere within 18\" of the original position on the table and this is where the Miners emerge. They cannot move or charge on the turn they emerge."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Cave-in! The Miners are instantly killed."
+                ],
+                [
+                  "3-5",
+                  "Partial Collapse. All models in the unit must pass a Strength test or be removed as casualties. Any\nmodels that survive may not move or charge on the turn they emerge after a Partial Collapse. If the\nmodels emerge into close combat they have the Always Strikes Last special rule for the remainder of\nthe turn."
+                ],
+                [
+                  "6",
+                  "Should Have Taken That Left Turn. Your opponent places the marker anywhere within 18\" of the\noriginal position on the table and this is where the Miners emerge. They cannot move or charge on\nthe turn they emerge."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -4980,7 +5009,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4991,6 +5021,7 @@
         {
           "name": "LONGBEARDS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5148,11 +5179,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRONBREAKERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5334,11 +5367,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TROLL SLAYERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5487,11 +5522,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RANGERS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5669,11 +5706,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEATHROLLER",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5800,41 +5839,33 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result: 1"
-                },
-                {
-                  "emph": "",
-                  "text": " Remove the Deathroller as a casualty. All units in base contact with the Deathroller suffer D6 Strength 4 Hits with the Armour Piercing special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4"
-                },
-                {
-                  "emph": "",
-                  "text": " The Deathroller may not move this turn or use its Grinding Attack. If it breaks from combat this round, it is automatically destroyed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " The Deathroller may only roll one D6 for each of its Movements this turn (including fleeing and pursuit)."
-                }
-              ],
-              "text": "D6 Result: 1 Remove the Deathroller as a casualty. All units in base contact with the Deathroller suffer D6 Strength 4 Hits with the Armour Piercing special rule. 2-4 The Deathroller may not move this turn or use its Grinding Attack. If it breaks from combat this round, it is automatically destroyed. 5-6 The Deathroller may only roll one D6 for each of its Movements this turn (including fleeing and pursuit)."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "Remove the Deathroller as a casualty. All units in base contact with the Deathroller suffer D6\nStrength 4 Hits with the Armour Piercing special rule."
+                ],
+                [
+                  "2-4",
+                  "The Deathroller may not move this turn or use its Grinding Attack. If it breaks from combat this\nround, it is automatically destroyed."
+                ],
+                [
+                  "5-6",
+                  "The Deathroller may only roll one D6 for each of its Movements this turn (including fleeing and\npursuit)."
+                ]
+              ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIRE THROWER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5929,11 +5960,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BOLT THROWER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6037,11 +6070,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRUDGE THROWER",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6145,11 +6180,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CANNON",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6253,11 +6290,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GYROCOPTER",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6520,7 +6559,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6531,6 +6571,7 @@
         {
           "name": "HAMMERERS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6669,11 +6710,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IRONDRAKES",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6918,11 +6961,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GIANT SLAYERS",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7071,11 +7116,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DOOMSEEKERS",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7178,11 +7225,13 @@
               "label": "SPECIAL RULES",
               "value": "Ancestral Grudge, Deathblow, Magic Resistance (1), Slayer, Relentless, Skirmishers, Unbreakable, Wards of Grimnir"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RUNE GUARDIANS",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7417,11 +7466,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ORGAN GUN",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7525,11 +7576,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLAME CANNON",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7665,11 +7718,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GYROBOMBER",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7792,34 +7847,25 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Premature Detonation:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Gyrobomber suffers a Strength 6 hit with the Multiple Wounds (D3) special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Jammed Release:"
-                },
-                {
-                  "emph": "",
-                  "text": " Centre the 3\" template over the Gyrobomber before scattering it and resolving damage as normal. This bomb does not bounce. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-6 Dud:"
-                },
-                {
-                  "emph": "",
-                  "text": " Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
-                }
-              ],
-              "text": "D6 Result 1 Premature Detonation: The Gyrobomber suffers a Strength 6 hit with the Multiple Wounds (D3) special rule. 2-3 Jammed Release: Centre the 3\" template over the Gyrobomber before scattering it and resolving damage as normal. This bomb does not bounce. 4-6 Dud: Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Premature Detonation: The Gyrobomber suffers a Strength 6 hit with the Multiple Wounds (D3)\nspecial rule."
+                ],
+                [
+                  "2-3",
+                  "Jammed Release: Centre the 3\" template over the Gyrobomber before scattering it and resolving\ndamage as normal. This bomb does not bounce."
+                ],
+                [
+                  "4-6",
+                  "Dud: Only the model under the template's central hole is hit, suffering a single Strength 4 hit."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -7879,11 +7925,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THUNDERBARGE",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8010,11 +8058,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRUDGEBREAKER",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8089,43 +8139,29 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Catastrophe!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no saves allowed. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-3 Malfunction:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grudgebreaker does not Move or Attack this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Clunk:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grudgebreaker counts as having rolled a 1 for its Movement or Attacks value this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Overdrive:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Grudgebreaker counts as having rolled a 10 for its Movement or Attack value this turn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has performed its Movement or Attacks."
-                }
-              ],
-              "text": "D6 Result 1 Catastrophe! The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no saves allowed. 2-3 Malfunction: The Grudgebreaker does not Move or Attack this turn. 4-5 Clunk: The Grudgebreaker counts as having rolled a 1 for its Movement or Attacks value this turn. 6 Overdrive: The Grudgebreaker counts as having rolled a 10 for its Movement or Attack value this turn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has performed its Movement or Attacks."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Catastrophe! The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no\nsaves allowed."
+                ],
+                [
+                  "2-3",
+                  "Malfunction: The Grudgebreaker does not Move or Attack this turn."
+                ],
+                [
+                  "4-5",
+                  "Clunk: The Grudgebreaker counts as having rolled a 1 for its Movement or Attacks value this turn."
+                ],
+                [
+                  "6",
+                  "Overdrive: The Grudgebreaker counts as having rolled a 10 for its Movement or Attack value this\nturn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has\nperformed its Movement or Attacks."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -8147,7 +8183,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -8158,6 +8195,7 @@
         {
           "name": "THORGRIM GRUDGEBEARER",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8344,11 +8382,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALRIK RANULFSSON",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8535,11 +8575,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KAZADOR THUNDERHORN",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8661,11 +8703,13 @@
               ],
               "text": "Clansmen (see Kings)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BELEGAR IRONHAMMER",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8796,11 +8840,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THOREK IRONBROW",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9007,11 +9053,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GROMBRINDAL",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9165,11 +9213,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNGRIM IRONFIST",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9314,11 +9364,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GARAGRIM IRONFIST",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9416,11 +9468,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JOSEF BUGMAN",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9552,34 +9606,25 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Bad Brew:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Flammable special rule until the start of the next friendly turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 Belligerent:"
-                },
-                {
-                  "emph": "",
-                  "text": " The unit gains the Stubborn special rule until the start of the next friendly turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Leathered:"
-                },
-                {
-                  "emph": "",
-                  "text": " Each member of the unit gains +1 Toughness until the start of the next friendly turn."
-                }
-              ],
-              "text": "D6 Result 1 Bad Brew: The unit gains the Flammable special rule until the start of the next friendly turn. 2-4 Belligerent: The unit gains the Stubborn special rule until the start of the next friendly turn. 5-6 Leathered: Each member of the unit gains +1 Toughness until the start of the next friendly turn."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Bad Brew: The unit gains the Flammable special rule until the start of the next friendly turn."
+                ],
+                [
+                  "2-4",
+                  "Belligerent: The unit gains the Stubborn special rule until the start of the next friendly turn."
+                ],
+                [
+                  "5-6",
+                  "Leathered: Each member of the unit gains +1 Toughness until the start of the next friendly turn."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -9620,11 +9665,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BURLOK DAMMINSON",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9840,11 +9887,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIMM BURLOKSSON",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10014,7 +10063,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10025,6 +10075,7 @@
         {
           "name": "Written & Edited by:",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10041,7 +10092,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

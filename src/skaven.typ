@@ -6,7 +6,7 @@
 #cover(
   title: "Skaven",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/skaven.png",
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((

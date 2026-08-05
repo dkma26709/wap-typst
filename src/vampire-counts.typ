@@ -6,7 +6,7 @@
 #cover(
   title: "Vampire Counts",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/vampire-counts.png",
+  art: "/assets/covers/vampire-counts.png",
 )
 
 #colophon((

@@ -33,8 +33,11 @@ jobs:
             # Bundled fonts only, so the CI render matches the local one exactly.
             typst compile --ignore-system-fonts --root . \
               "src/$slug.typ" "_site/$slug.pdf"
-            if [ -f "assets/covers/$slug.png" ]; then
-              cp "assets/covers/$slug.png" "_site/$slug-cover.png"
+            # The cover keeps the source image's own extension.
+            cover=$(jq -r --arg s "$slug" \
+              '.books[] | select(.slug==$s) | .cover // empty' build/books.json)
+            if [ -n "$cover" ] && [ -f "assets/$cover" ]; then
+              cp "assets/$cover" "_site/$slug-cover.${cover##*.}"
             fi
             count=$((count + 1))
             echo "::endgroup::"

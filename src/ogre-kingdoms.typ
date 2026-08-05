@@ -6,7 +6,7 @@
 #cover(
   title: "Ogre Kingdoms",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "../assets/covers/ogre-kingdoms.png",
+  art: "/assets/covers/ogre-kingdoms.png",
 )
 
 #colophon((

@@ -21,6 +21,13 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).parent.parent
 TITLE = re.compile(r"^Warhammer\s*-\s*(.+?)\s+([\d.]+)$", re.I)
 
+# The core rulebook's filename carries its edition, which would otherwise become
+# part of both its title and its slug.
+ALIASES = {
+    "the game of fantasy battles - 9th edition":
+        ("The Game of Fantasy Battles", "rulebook"),
+}
+
 
 def parse_name(pdf: Path) -> tuple[str, str] | None:
     m = TITLE.match(pdf.stem)
@@ -56,6 +63,10 @@ def main() -> None:
     ap.add_argument("--build", type=Path, default=ROOT / "build")
     ap.add_argument("--force", action="store_true",
                     help="re-extract even when the JSON is newer than the PDF")
+    ap.add_argument("--replace", action="store_true",
+                    help="drop books not named in this run. Off by default: the "
+                         "manifest is merged, so adding one book does not "
+                         "silently unpublish the rest")
     args = ap.parse_args()
 
     sources: list[Path] = []
@@ -66,8 +77,9 @@ def main() -> None:
     manifest: list[dict] = []
     failures: list[str] = []
 
-    print(f"{'ARMY':<24} {'VER':<6} {'ENTRIES':>7} {'WORDS':>7} {'MISSING':>16} {'WELDS':>6}")
-    print("-" * 74)
+    print(f"{'ARMY':<24} {'VER':<6} {'ENTRIES':>7} {'WORDS':>7} "
+          f"{'MISSING':>16} {'WELDS':>6} {'FIGS':>5}")
+    print("-" * 80)
 
     for pdf in sources:
         parsed = parse_name(pdf)
@@ -75,7 +87,8 @@ def main() -> None:
             print(f"{pdf.name:<24} -- unrecognised filename, skipped")
             continue
         army, version = parsed
-        slug = slugify(army)
+        alias = ALIASES.get(army.lower())
+        army, slug = alias if alias else (army, slugify(army))
         target = args.build / f"{slug}.json"
 
         if args.force or not target.exists() or target.stat().st_mtime < pdf.stat().st_mtime:
@@ -95,26 +108,18 @@ def main() -> None:
 
         data = json.loads(target.read_text(encoding="utf-8"))
         entries = sum(len(c["entries"]) for c in data["chapters"])
+
+        # An army book is a catalogue of stat lines; the core rulebook has none.
+        # That difference is what decides the layout, so it is read from the
+        # content rather than configured per title.
+        pools = [c.get("intro", []) for c in data["chapters"]]
+        pools += [e["blocks"] for c in data["chapters"] for e in c["entries"]]
+        layout = "army" if any(
+            b["type"] == "statblock" for pool in pools for b in pool
+        ) else "rules"
         words = value(cov, "source words")
         missing = value(cov, "missing")
         welds = value(wel, "suspected welds")
-
-        # Only generate Typst for a book that passed, so a failure cannot quietly
-        # reach the site with the previous run's content still in place.
-        if cov_ok and weld_ok:
-            code, gen = capture([
-                ROOT / "extract" / "to_typst.py", target,
-                "-o", ROOT / "src" / "content" / f"{slug}.typ",
-            ])
-            if code:
-                failures.append(f"{army}: to_typst failed\n{gen}")
-
-        flag = "" if (cov_ok and weld_ok) else "   <-- FAILED"
-        print(f"{army:<24} {version:<6} {entries:>7} {words:>7} {missing:>16} {welds:>6}{flag}")
-        if not cov_ok:
-            failures.append(f"{army}: coverage over tolerance\n{cov}")
-        if not weld_ok:
-            failures.append(f"{army}: welds\n{wel}")
 
         # Promote each book's cover illustration into assets/, where it serves as
         # both the Typst cover art and the landing-page thumbnail. The parchment
@@ -125,13 +130,54 @@ def main() -> None:
             covers.mkdir(parents=True, exist_ok=True)
             src = args.build / data["image_dir"] / data["cover"]
             if src.exists():
-                (covers / f"{slug}.png").write_bytes(src.read_bytes())
-                cover_rel = f"covers/{slug}.png"
+                # Keep the source's own extension: images are copied without
+                # re-encoding, and Typst picks the decoder from the suffix.
+                name = f"{slug}{src.suffix}"
+                (covers / name).write_bytes(src.read_bytes())
+                cover_rel = f"covers/{name}"
 
-        parchment = ROOT / "assets" / "images" / "parchment.png"
-        if not parchment.exists() and data.get("background"):
+        # Diagrams the book actually places, copied out of the extraction
+        # directory so the repository carries only what is rendered.
+        wanted = {
+            b["file"] for c in data["chapters"]
+            for pool in [c.get("intro", [])] + [e["blocks"] for e in c["entries"]]
+            for b in pool if b["type"] == "figure"
+        }
+        figures = 0
+        if wanted:
+            dest = ROOT / "assets" / "figures" / slug
+            dest.mkdir(parents=True, exist_ok=True)
+            for name in sorted(wanted):
+                src = args.build / data["image_dir"] / name
+                if src.exists():
+                    (dest / name).write_bytes(src.read_bytes())
+                    figures += 1
+
+        # Only generate Typst for a book that passed, so a failure cannot quietly
+        # reach the site with the previous run's content still in place.
+        if cov_ok and weld_ok:
+            code, gen = capture([
+                ROOT / "extract" / "to_typst.py", target,
+                "-o", ROOT / "src" / "content" / f"{slug}.typ",
+                "--layout", layout,
+            ])
+            if code:
+                failures.append(f"{army}: to_typst failed\n{gen}")
+
+        flag = "" if (cov_ok and weld_ok) else "   <-- FAILED"
+        print(f"{army:<24} {version:<6} {entries:>7} {words:>7} "
+              f"{missing:>16} {welds:>6} {figures:>5}{flag}")
+        if not cov_ok:
+            failures.append(f"{army}: coverage over tolerance\n{cov}")
+        if not weld_ok:
+            failures.append(f"{army}: welds\n{wel}")
+
+        # The parchment is shared by every book, so it is taken once. The name is
+        # fixed because template.typ refers to it directly.
+        if data.get("background"):
             src = args.build / data["image_dir"] / data["background"]
-            if src.exists():
+            parchment = ROOT / "assets" / "images" / f"parchment{src.suffix}"
+            if src.exists() and not parchment.exists():
                 parchment.parent.mkdir(parents=True, exist_ok=True)
                 parchment.write_bytes(src.read_bytes())
 
@@ -144,10 +190,21 @@ def main() -> None:
             "entries": entries,
             "chapters": len(data["chapters"]),
             "cover": cover_rel,
+            "layout": layout,
+            "figures": figures,
         })
 
+    catalogue = args.build / "books.json"
+    if not args.replace and catalogue.exists():
+        seen = {b["slug"] for b in manifest}
+        kept = [b for b in json.loads(catalogue.read_text(encoding="utf-8"))["books"]
+                if b["slug"] not in seen]
+        if kept:
+            print(f"\nkeeping {len(kept)} book(s) already in the manifest")
+        manifest.extend(kept)
+
     manifest.sort(key=lambda b: b["army"].lower())
-    (args.build / "books.json").write_text(
+    catalogue.write_text(
         json.dumps({"books": manifest}, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )

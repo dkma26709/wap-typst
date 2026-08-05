@@ -6,7 +6,7 @@
 #cover(
   title: "Pirates of Sartosa",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/pirates-of-sartosa.png",
+  art: "/assets/covers/pirates-of-sartosa.png",
 )
 
 #colophon((

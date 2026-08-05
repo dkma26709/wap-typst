@@ -6,7 +6,7 @@
 #cover(
   title: "Bretonnia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "../assets/covers/bretonnia.png",
+  art: "/assets/covers/bretonnia.png",
 )
 
 #colophon((

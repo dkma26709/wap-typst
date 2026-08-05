@@ -8,10 +8,10 @@
   "slug": "estalia",
   "image_dir": "images/estalia",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 865
     },
     "122": {
-      "file": "img-0122.png",
+      "file": "img-0122.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
@@ -46,21 +46,21 @@
       "height": 443
     },
     "138": {
-      "file": "img-0138.png",
+      "file": "img-0138.jpg",
       "first_page": 7,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "156": {
-      "file": "img-0156.png",
+      "file": "img-0156.jpg",
       "first_page": 12,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "158": {
-      "file": "img-0158.png",
+      "file": "img-0158.jpg",
       "first_page": 13,
       "background": true,
       "width": 1580,
@@ -167,6 +167,11 @@
           "text": "All models in the front rank, both flanks and rear may fire in the Shooting phase, even if they have moved this turn. This means that models in the front arc can fire forward, models in the left flank fire to the left, models in the right flank fire to right and models in the rear rank fire to the rear. Each arc may choose to fire at different targets if they wish."
         },
         {
+          "type": "figure",
+          "file": "img-0128.png",
+          "fraction": 0.463
+        },
+        {
           "type": "para",
           "style": "body",
           "runs": [
@@ -176,6 +181,11 @@
             }
           ],
           "text": "All models in the unit's front rank fight using hand weapons and bucklers. The remaining models fight using pikes/polearms. All attacks against the unit's front are resolved against the models armed with hand weapon and bucklers."
+        },
+        {
+          "type": "figure",
+          "file": "img-0130.png",
+          "fraction": 0.385
         },
         {
           "type": "para",
@@ -213,6 +223,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 4,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -448,11 +459,13 @@
               ],
               "text": "The wielder will always wound on a 3+, unless they would normally need a lower result."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -550,11 +563,13 @@
               ],
               "text": "Shield. The wielder has the Fear special rule. In addition, if the wielder rolls a natural 6 when making a Parry save, they inflict an extra Hit using their Strength characteristic back onto the model or unit that struck the blow."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -636,11 +651,13 @@
               ],
               "text": "The bearer has the Immunity (Poisoned Attacks) and Regeneration (6+) special rules. In addition, the wearer causes Fear against Skaven."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 5,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -735,11 +752,13 @@
               ],
               "text": "One use only. The Gem of Taranto can be used whenever you successfully dispel an enemy spell (except Summoning Spells). The bearer of the Gem will be able to cast the spell themselves (limited by their Wizard level as normal) for the remainder of the game, even if it is from a lore not normally available to them."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -930,11 +949,13 @@
               ],
               "text": "Priest of Myrmidia only. All enemy units attempting to charge the bearer or their unit must pass a Psychology test. If they fail, they may not charge that turn."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -953,38 +974,25 @@
               "text": "Each time the unit carrying this standard destroys or breaks an enemy unit, all models in it gain one of the following bonuses for as long as the banner remains in the unit. Each bonus is cumulative."
             },
             {
-              "type": "minitable",
-              "columns": [
-                "Units",
-                "Result"
-              ],
-              "row": {
-                "Units": "1",
-                "Result": "+1 Weapon Skill"
-              }
-            },
-            {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "2"
-                },
-                {
-                  "emph": "",
-                  "text": " +1 Strength "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3"
-                },
-                {
-                  "emph": "",
-                  "text": " +1 Attack"
-                }
-              ],
-              "text": "2 +1 Strength 3 +1 Attack"
+              "type": "chart",
+              "rows": [
+                [
+                  "Units:",
+                  "Result:"
+                ],
+                [
+                  "1",
+                  "+1 Weapon Skill"
+                ],
+                [
+                  "2",
+                  "+1 Strength"
+                ],
+                [
+                  "3",
+                  "+1 Attack"
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -1082,7 +1090,8 @@
               ],
               "text": "The unit carrying this standard may re-roll failed Break tests."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -1106,6 +1115,7 @@
         {
           "name": "COMMANDERS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1433,11 +1443,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGOS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1666,11 +1678,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PRIESTS OF MYRMIDIA",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -1959,11 +1973,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAESTRO",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2189,7 +2205,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2200,6 +2217,7 @@
         {
           "name": "WARHORSE",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2264,11 +2282,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEGASUS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2386,11 +2406,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "AUROCHS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2440,11 +2462,13 @@
               "label": "SPECIAL RULES",
               "value": "Impact Hits (D3), Mighty Blow (1)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIFFON",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2562,11 +2586,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR ALTAR OF MYRMIDIA",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2757,7 +2783,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -2768,6 +2795,7 @@
         {
           "name": "PIKEMEN",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2907,11 +2935,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RODELEROS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3060,11 +3090,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARQUEBUSIERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3184,11 +3216,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CROSSBOWMEN",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3308,11 +3342,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TERCIOS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3442,11 +3478,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DIESTROS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3574,11 +3612,13 @@
               "label": "SPECIAL RULES",
               "value": "Tactical Supremacy, Skirmishers"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HIDALGOS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3727,11 +3767,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GENITORS",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3880,11 +3922,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALMOGAVARS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4058,11 +4102,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR DOGS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4192,7 +4238,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4203,6 +4250,7 @@
         {
           "name": "ROYAL GUARD",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4332,11 +4380,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SISTERS OF FURY",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4446,11 +4496,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KNIGHTS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4695,11 +4747,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CONQUISTADORS",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4857,11 +4911,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MUSKETEERS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5013,11 +5069,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRENADIERS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5136,11 +5194,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOUNTAIN BANDITS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5249,11 +5309,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MERCENARY OGRES",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5521,11 +5583,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FALCONET",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5657,7 +5721,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5668,6 +5733,7 @@
         {
           "name": "KNIGHTS OF THE RAGING BULL",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5806,11 +5872,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FIRE BULLS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5981,11 +6049,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CULVERIN",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6074,11 +6144,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOMBARD",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6199,7 +6271,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6210,6 +6283,7 @@
         {
           "name": "ISABELLA GIOVANNA LUCCELLI",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6349,11 +6423,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JUAN FEDERICO",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6517,11 +6593,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SANTIAGO DE VIVAR",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6657,11 +6735,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FRANCISCO CORTEZ",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -6798,11 +6878,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DIEGO MONTOYA",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6910,11 +6992,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DON LOMENTE",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7021,11 +7105,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARIA DE SALVO",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7142,7 +7228,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7153,6 +7240,7 @@
         {
           "name": "Written & Edited by:",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7164,11 +7252,13 @@
               "name": "Based on Warhammer Fantasy by Games-Workshop",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "Additional Material:",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7180,7 +7270,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

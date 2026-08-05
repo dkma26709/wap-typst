@@ -8,10 +8,10 @@
   "slug": "high-elves",
   "image_dir": "images/high-elves",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,14 +25,14 @@
       "height": 669
     },
     "154": {
-      "file": "img-0154.png",
+      "file": "img-0154.jpg",
       "first_page": 3,
       "background": true,
       "width": 1580,
       "height": 2170
     },
     "190": {
-      "file": "img-0190.png",
+      "file": "img-0190.jpg",
       "first_page": 22,
       "background": true,
       "width": 1580,
@@ -985,6 +985,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1239,11 +1240,13 @@
               ],
               "text": "Elven Longbow. The Bow of Tor Alessi has the Quick Shot special rule. In addition, it may re-roll any failed To Hit rolls."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1405,11 +1408,13 @@
               ],
               "text": "Shield. The bearer of the Shield of the Merwyrm gains the Parry (6+) special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1619,11 +1624,13 @@
               ],
               "text": "The Amulet of Fire gives the wearer the Immunity (Flaming Attacks) and Magic Resistance (1) special rules."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1801,11 +1808,13 @@
               ],
               "text": "Relic. The bearer of this item gains access to a randomly generated Lvl 1 spell (which may be replaced by the Signature Spell) from the Lore of High Magic."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 10,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2121,11 +2130,13 @@
               ],
               "text": "At the start of each of your turns, all enemy units within 12\" must reveal any Hidden models, upgrades and magic items they might have."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2287,7 +2298,8 @@
               ],
               "text": "The unit carrying this standard does not suffer -1 To Hit when using Stand & Shoot as a charge reaction."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2311,6 +2323,7 @@
         {
           "name": "COMMANDERS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2647,11 +2660,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGES",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -2927,11 +2942,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LORDS OF AENARION",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3162,11 +3179,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOREMASTERS OF HOETH",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3295,11 +3314,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PRIESTS OF MATHLANN",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3472,11 +3493,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON MAGES OF CALEDOR",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3656,11 +3679,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HANDMAIDENS OF THE EVERQUEEN",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3794,7 +3819,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -3805,6 +3831,7 @@
         {
           "name": "ELVEN STEED",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3869,11 +3896,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEGASUS",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3923,11 +3952,13 @@
               "label": "SPECIAL RULES",
               "value": "Fly (9)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "UNICORN",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3996,11 +4027,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT EAGLE",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4118,11 +4151,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIFFON",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4240,11 +4275,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SUN DRAGON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4294,11 +4331,13 @@
               "label": "SPECIAL RULES",
               "value": "Fiery Breath, Fly (7), Natural Armour (3+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MOON DRAGON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4348,11 +4387,13 @@
               "label": "SPECIAL RULES",
               "value": "Fiery Breath, Fly (7), Natural Armour (3+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STAR DRAGON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4402,7 +4443,8 @@
               "label": "SPECIAL RULES",
               "value": "Fiery Breath, Fly (7), Natural Armour (2+)"
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4413,6 +4455,7 @@
         {
           "name": "SENTINELS",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4522,11 +4565,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HAWKEYES",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4665,11 +4710,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARDENS",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4779,11 +4826,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOTHERN SEA GUARD",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4893,11 +4942,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "RANGERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5027,11 +5078,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SILVER HELMS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5180,11 +5233,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELLYRIAN REAVERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5353,7 +5408,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5364,6 +5420,7 @@
         {
           "name": "SWORDMASTERS OF HOETH",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5473,11 +5530,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WHITE LIONS OF CHRACE",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5587,11 +5646,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SHADOW WARRIORS",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5691,11 +5752,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAGON PRINCES OF CALEDOR",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5824,11 +5887,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TIRANOC CHARIOT",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5946,11 +6011,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LION CHARIOT OF CHRACE",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6063,11 +6130,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR LIONS OF CHRACE",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6141,11 +6210,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "EAGLE CLAW BOLT THROWER",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6249,7 +6320,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6260,6 +6332,7 @@
         {
           "name": "PHOENIX GUARD",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6388,11 +6461,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SISTERS OF AVELORN",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6512,11 +6587,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LOTHERN SKYCUTTER",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6666,11 +6743,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT EAGLE",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6793,11 +6872,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DRAKEMASTER",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6882,11 +6963,13 @@
               ],
               "text": "(4+), Valour of Ages"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MERWYRM",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6955,11 +7038,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLAMESPYRE PHOENIX",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7043,50 +7128,33 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Score Result 2 Magical Dearth:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Phoenix's suffers a -1 penalty to its Magical Ward. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Ebbing Zephyr:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Phoenix has -1 Strength. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Energising Breeze:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Phoenix has +1 Attack. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Invigorating Winds:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Phoenix has +1 Strength. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Howling Gale:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Phoenix's gains a +1 bonus to its Magical Ward."
-                }
-              ],
-              "text": "Score Result 2 Magical Dearth: The Phoenix's suffers a -1 penalty to its Magical Ward. 3 Ebbing Zephyr: The Phoenix has -1 Strength. 4 Energising Breeze: The Phoenix has +1 Attack. 5 Invigorating Winds: The Phoenix has +1 Strength. 6 Howling Gale: The Phoenix's gains a +1 bonus to its Magical Ward."
+              "type": "chart",
+              "rows": [
+                [
+                  "Score",
+                  "Result"
+                ],
+                [
+                  "2",
+                  "Magical Dearth: The Phoenix's suffers a -1 penalty to its Magical Ward."
+                ],
+                [
+                  "3",
+                  "Ebbing Zephyr: The Phoenix has -1 Strength."
+                ],
+                [
+                  "4",
+                  "Energising Breeze: The Phoenix has +1 Attack."
+                ],
+                [
+                  "5",
+                  "Invigorating Winds: The Phoenix has +1 Strength."
+                ],
+                [
+                  "6",
+                  "Howling Gale: The Phoenix's gains a +1 bonus to its Magical Ward."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -7119,35 +7187,25 @@
               "text": "At the end of the turn roll a D6 for each Phoenix Reborn counter and consult the table below:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2 Dead Embers:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Flamespyre Phoenix is dead, never to return – remove the Phoenix Reborn counter from play. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-5 Flame Kindled:"
-                },
-                {
-                  "emph": "",
-                  "text": " Centre the large round template over the centre of the Phoenix Reborn counter. All models (friend or foe) hit by the template suffer a Strength 4 hit with the Flaming Attacks special rule. This is a non-physical attack. The Phoenix Reborn counter remains in play – roll again at the end of the next turn (yours or your opponent's). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6+ Rise from the Ashes:"
-                },
-                {
-                  "emph": "",
-                  "text": " Place the Flamespyre Phoenix anywhere that is within 6\" of the centre of the Phoenix Reborn counter and at least 1\" away from any unit, and then remove the marker from play. If it is not possible to place the Phoenix due to the aforementioned restrictions, treat this result as a Flame Kindled result instead. Reborn Flamespyre Phoenixes return with D3+2 Wounds. The reborn model suffers no bonuses or penalties incurred from its former existence – i.e. if the model was fleeing or affected by an augment or hex spell at the time of its death, the reborn model will not be."
-                }
-              ],
-              "text": "D6 Result 1-2 Dead Embers: The Flamespyre Phoenix is dead, never to return – remove the Phoenix Reborn counter from play. 3-5 Flame Kindled: Centre the large round template over the centre of the Phoenix Reborn counter. All models (friend or foe) hit by the template suffer a Strength 4 hit with the Flaming Attacks special rule. This is a non-physical attack. The Phoenix Reborn counter remains in play – roll again at the end of the next turn (yours or your opponent's). 6+ Rise from the Ashes: Place the Flamespyre Phoenix anywhere that is within 6\" of the centre of the Phoenix Reborn counter and at least 1\" away from any unit, and then remove the marker from play. If it is not possible to place the Phoenix due to the aforementioned restrictions, treat this result as a Flame Kindled result instead. Reborn Flamespyre Phoenixes return with D3+2 Wounds. The reborn model suffers no bonuses or penalties incurred from its former existence – i.e. if the model was fleeing or affected by an augment or hex spell at the time of its death, the reborn model will not be."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "Dead Embers: The Flamespyre Phoenix is dead, never to return – remove the Phoenix Reborn\ncounter from play."
+                ],
+                [
+                  "3-5",
+                  "Flame Kindled: Centre the large round template over the centre of the Phoenix Reborn counter. All\nmodels (friend or foe) hit by the template suffer a Strength 4 hit with the Flaming Attacks special\nrule. This is a non-physical attack. The Phoenix Reborn counter remains in play – roll again at the\nend of the next turn (yours or your opponent's)."
+                ],
+                [
+                  "6+",
+                  "Rise from the Ashes: Place the Flamespyre Phoenix anywhere that is within 6\" of the centre of the\nPhoenix Reborn counter and at least 1\" away from any unit, and then remove the marker from play. If\nit is not possible to place the Phoenix due to the aforementioned restrictions, treat this result as a\nFlame Kindled result instead. Reborn Flamespyre Phoenixes return with D3+2 Wounds. The reborn\nmodel suffers no bonuses or penalties incurred from its former existence – i.e. if the model was\nfleeing or affected by an augment or hex spell at the time of its death, the reborn model will not be."
+                ]
+              ]
             },
             {
               "type": "para",
@@ -7329,7 +7387,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -7340,6 +7399,7 @@
         {
           "name": "TYRION",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7512,11 +7572,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TECLIS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7672,11 +7734,13 @@
               "label": "SPECIAL RULES",
               "value": "Curse of Aenarion (see Lord of Aenarion), Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FINUBAR THE SEAFARER",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -7793,11 +7857,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALARIELLE THE RADIANT",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8026,11 +8092,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELTHARION THE GRIM",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8195,11 +8263,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELTHARION THE BLIND",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8421,11 +8491,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALITH ANAR",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8584,11 +8656,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IMRIK",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8771,11 +8845,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SEA LORD AISLINN",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -8922,11 +8998,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALTHRAN STORMRIDER",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9087,11 +9165,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BELANNAER THE WISE",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9311,11 +9391,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KORHIL LIONMANE",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9519,11 +9601,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CARADRYAN OF THE FLAME",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9684,11 +9768,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ISHAYA VESS",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9801,11 +9887,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PHYTRION",
           "page": 48,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -9922,11 +10010,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GILEAD & FITHVAEL",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10087,7 +10177,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10098,6 +10189,7 @@
         {
           "name": "Written & Edited by:",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -10114,7 +10206,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }

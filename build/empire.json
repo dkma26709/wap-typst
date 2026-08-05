@@ -8,10 +8,10 @@
   "slug": "empire",
   "image_dir": "images/empire",
   "cover": "img-0024.png",
-  "background": "img-0005.png",
+  "background": "img-0005.jpg",
   "images": {
     "5": {
-      "file": "img-0005.png",
+      "file": "img-0005.jpg",
       "first_page": 1,
       "background": true,
       "width": 1580,
@@ -25,7 +25,7 @@
       "height": 649
     },
     "198": {
-      "file": "img-0198.png",
+      "file": "img-0198.jpg",
       "first_page": 3,
       "background": false,
       "width": 620,
@@ -152,6 +152,11 @@
               "sub": []
             }
           ]
+        },
+        {
+          "type": "figure",
+          "file": "img-0198.jpg",
+          "fraction": 0.463
         },
         {
           "type": "namecost",
@@ -916,6 +921,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 6,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1148,11 +1154,13 @@
               ],
               "text": "The Wyrmslayer Sword makes the wielder Wound on a 4+ or better, and ignores Natural Armour."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1258,11 +1266,13 @@
               ],
               "text": "Shield. At the start of each round of close combat, the Shield of the Gorgon causes one enemy model in base contact of your choosing to suffer a -1 penalty to their Attack characteristic for the remainder of the close combat phase."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 7,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1413,11 +1423,13 @@
               ],
               "text": "Any Monstrous Beast, Monstrous Creature or Monster (including mounts, but not riders) in base contact with the bearer of this item gains the Always Strikes Last special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCANE ITEMS",
           "page": 8,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1563,11 +1575,13 @@
               ],
               "text": "Staff. The bearer can use one more Power dice than they are normally allowed to from their Wizard Level."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 9,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -1996,35 +2010,25 @@
               "text": "At the start of the game, roll a D6 and consult the chart below to determine which effect the Skull Charm has on the wearer."
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1-2"
-                },
-                {
-                  "emph": "",
-                  "text": " +1 Weapon Skill "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3-4"
-                },
-                {
-                  "emph": "",
-                  "text": " +1 Leadership "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6"
-                },
-                {
-                  "emph": "",
-                  "text": " +1 Weapon Skill & Leadership"
-                }
-              ],
-              "text": "D6 Result 1-2 +1 Weapon Skill 3-4 +1 Leadership 5-6 +1 Weapon Skill & Leadership"
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1-2",
+                  "+1 Weapon Skill"
+                ],
+                [
+                  "3-4",
+                  "+1 Leadership"
+                ],
+                [
+                  "5-6",
+                  "+1 Weapon Skill & Leadership"
+                ]
+              ]
             },
             {
               "type": "namecost",
@@ -2233,11 +2237,13 @@
               ],
               "text": "A unit with this standard automatically pass any Rally tests."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 11,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2303,7 +2309,8 @@
               ],
               "text": "All friendly units with the State Troops or Militia special rules within 12\" of this standard gain +1 to their Leadership."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2327,6 +2334,7 @@
         {
           "name": "MAGIC WEAPONS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2367,11 +2375,13 @@
               ],
               "text": "WINTER'S BITE 20 points On a to hit roll of 6, this weapon automatically Wounds with the Ignores Armour saves special rule."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC ARMOUR",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2437,11 +2447,13 @@
               ],
               "text": "6+ armour save. The wearer gains the Fear special rule. Against models from a Skaven army, the wearer causes Terror instead. However, all Skaven gain the Hatred special rule while attacking the wearer."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "TALISMANS",
           "page": 12,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2523,11 +2535,13 @@
               ],
               "text": "Priest of Ulric only. One use only. The Wolfshead Emblem may be used when attempting to dispel an enemy spell. This adds +1 Dispel dice to the attempt."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ENCHANTED ITEMS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2657,11 +2671,13 @@
               ],
               "text": "The wearer may re-roll one failed to wound roll in each Close Combat phase."
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGIC STANDARDS",
           "page": 13,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -2727,7 +2743,8 @@
               ],
               "text": "The unit carrying this banner gains the Immunity (Terror) special rule."
             }
-          ]
+          ],
+          "level": 2
         }
       ],
       "intro": [
@@ -2751,6 +2768,7 @@
         {
           "name": "COMMANDERS",
           "page": 14,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3124,11 +3142,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BATTLE WIZARDS",
           "page": 15,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3388,11 +3408,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTERS OF THE KNIGHTLY ORDERS",
           "page": 16,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3676,11 +3698,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WARRIOR PRIESTS OF SIGMAR",
           "page": 17,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -3979,11 +4003,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WITCH HUNTERS",
           "page": 18,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4252,11 +4278,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MASTER ENGINEER",
           "page": 19,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4350,35 +4378,25 @@
               "text": "This item can be used in addition to any other missile weapon the Master Engineer might have. When a Master Engineer declares they will be using Pigeon Bombs, nominate any enemy model within Line of Sight, roll a D6 and consult the following chart:"
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Oops!"
-                },
-                {
-                  "emph": "",
-                  "text": " Centre the small round template over the Master Engineer and resolve the explosion. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2-4 Boom!"
-                },
-                {
-                  "emph": "",
-                  "text": " The Pigeon Bomb has no effect this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Huzzah!"
-                },
-                {
-                  "emph": "",
-                  "text": " Centre the small round template over the target model and resolve the explosion."
-                }
-              ],
-              "text": "D6 Result 1 Oops! Centre the small round template over the Master Engineer and resolve the explosion. 2-4 Boom! The Pigeon Bomb has no effect this turn. 5-6 Huzzah! Centre the small round template over the target model and resolve the explosion."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Oops! Centre the small round template over the Master Engineer and resolve the explosion."
+                ],
+                [
+                  "2-4",
+                  "Boom! The Pigeon Bomb has no effect this turn."
+                ],
+                [
+                  "5-6",
+                  "Huzzah! Centre the small round template over the target model and resolve the explosion."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -4515,7 +4533,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -4526,6 +4545,7 @@
         {
           "name": "WARHORSE",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4590,11 +4610,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PEGASUS",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4712,11 +4734,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MECHANICAL STEED",
           "page": 20,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4766,11 +4790,13 @@
               "label": "SPECIAL RULES",
               "value": "Impact Hits (D3), Natural Armour (6+)"
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEMIGRYPH",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4840,11 +4866,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GRIFFON",
           "page": 21,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -4962,11 +4990,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "IMPERIAL GRIFFON",
           "page": 22,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5142,11 +5172,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR ALTAR OF SIGMAR",
           "page": 23,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5359,7 +5391,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -5370,6 +5403,7 @@
         {
           "name": "HALBERDIERS",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5528,11 +5562,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SPEARMEN",
           "page": 24,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -5673,11 +5709,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SWORDSMEN",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5807,11 +5845,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HANDGUNNERS",
           "page": 25,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -5971,11 +6011,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CROSSBOWMEN",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6095,11 +6137,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ARCHERS",
           "page": 26,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6229,11 +6273,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FREE COMPANY MILITIA",
           "page": 27,
+          "band": "entry",
           "blocks": [
             {
               "type": "para",
@@ -6440,11 +6486,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "PISTOLIERS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6563,11 +6611,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DEMILANCERS",
           "page": 28,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6716,11 +6766,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTING HOUNDS",
           "page": 29,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6839,7 +6891,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -6850,6 +6903,7 @@
         {
           "name": "GREATSWORDS",
           "page": 30,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -6998,11 +7052,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KNIGHTS",
           "page": 31,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7209,11 +7265,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FOOT KNIGHTS",
           "page": 32,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7410,11 +7468,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OUTRIDERS",
           "page": 33,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7573,11 +7633,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ROADWARDENS",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7725,11 +7787,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HUNTSMEN",
           "page": 34,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -7819,11 +7883,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "SISTERS OF SIGMAR",
           "page": 35,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8072,11 +8138,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "FLAGELLANTS",
           "page": 36,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8147,36 +8215,38 @@
                     },
                     {
                       "emph": "",
-                      "text": " If a unit of Flagellants is in base contact with an enemy unit at the start of any Close Combat phase, the Flagellants may immediately sacrifice D3 Wounds worth of models. Casualties inflicted in this way do not count towards combat resolution. The remaining Flagellants in the unit immediately gain one of the special rules listed below for the duration of the close combat phase, depending on the number of models removed. "
-                    },
-                    {
-                      "emph": "bold",
-                      "text": "Models removed Result 1 Fanatical Fury:"
-                    },
-                    {
-                      "emph": "",
-                      "text": " The Flagellants re-rolls all failed rolls To Hit. "
-                    },
-                    {
-                      "emph": "bold",
-                      "text": "2 Strength of the Penitent:"
-                    },
-                    {
-                      "emph": "",
-                      "text": " The Flagellants re-rolls all failed rolls To Hit and To Wound. "
-                    },
-                    {
-                      "emph": "bold",
-                      "text": "3 Insensible to Pain:"
-                    },
-                    {
-                      "emph": "",
-                      "text": " The Flagellants gains +1 Toughness, and re-rolls all failed rolls To Hit and To Wound."
+                      "text": " If a unit of Flagellants is in base contact with an enemy unit at the start of any Close Combat phase, the Flagellants may immediately sacrifice D3 Wounds worth of models. Casualties inflicted in this way do not count towards combat resolution. The remaining Flagellants in the unit immediately gain one of the special rules listed below for the duration of the close combat phase, depending on the number of models removed."
                     }
                   ],
-                  "text": "The End is Nigh! If a unit of Flagellants is in base contact with an enemy unit at the start of any Close Combat phase, the Flagellants may immediately sacrifice D3 Wounds worth of models. Casualties inflicted in this way do not count towards combat resolution. The remaining Flagellants in the unit immediately gain one of the special rules listed below for the duration of the close combat phase, depending on the number of models removed. Models removed Result 1 Fanatical Fury: The Flagellants re-rolls all failed rolls To Hit. 2 Strength of the Penitent: The Flagellants re-rolls all failed rolls To Hit and To Wound. 3 Insensible to Pain: The Flagellants gains +1 Toughness, and re-rolls all failed rolls To Hit and To Wound.",
+                  "text": "The End is Nigh! If a unit of Flagellants is in base contact with an enemy unit at the start of any Close Combat phase, the Flagellants may immediately sacrifice D3 Wounds worth of models. Casualties inflicted in this way do not count towards combat resolution. The remaining Flagellants in the unit immediately gain one of the special rules listed below for the duration of the close combat phase, depending on the number of models removed.",
                   "sub": []
-                },
+                }
+              ]
+            },
+            {
+              "type": "chart",
+              "rows": [
+                [
+                  "Models removed",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Fanatical Fury: The Flagellants re-rolls all failed rolls To Hit."
+                ],
+                [
+                  "2",
+                  "Strength of the Penitent: The Flagellants re-rolls all failed rolls To Hit and To Wound."
+                ],
+                [
+                  "3",
+                  "Insensible to Pain: The Flagellants gains +1 Toughness, and re-rolls all failed rolls To\nHit and To Wound."
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
                 {
                   "runs": [
                     {
@@ -8276,11 +8346,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "DWARFS",
           "page": 37,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8518,11 +8590,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HALFLINGS",
           "page": 38,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8690,11 +8764,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "OGRES",
           "page": 39,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -8963,11 +9039,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "GREAT CANNON",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9088,11 +9166,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MORTAR",
           "page": 40,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9181,7 +9261,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -9192,6 +9273,7 @@
         {
           "name": "DEMIGRYPH KNIGHTS",
           "page": 41,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9350,11 +9432,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELBLASTER VOLLEY GUN",
           "page": 42,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9530,11 +9614,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HELSTORM ROCKET BATTERY",
           "page": 43,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9642,11 +9728,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "WAR WAGON",
           "page": 44,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -9908,11 +9996,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUMINARK OF HYSH",
           "page": 45,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10096,11 +10186,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "CELESTIAL HURRICANUM",
           "page": 46,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10257,51 +10349,33 @@
               ]
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Sudden Downpour:"
-                },
-                {
-                  "emph": "",
-                  "text": " No effect. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Iceshard Tempest:"
-                },
-                {
-                  "emph": "",
-                  "text": " All models hit by the template suffer a Strength 2 hit with the Ice Attacks special rule. In addition, they suffer a -1 modifier to all To Hit rolls (both shooting and close combat) until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill are unaffected. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Raging Tornado:"
-                },
-                {
-                  "emph": "",
-                  "text": " If a target unit lies beneath the template's central hole and is not engaged in close combat, roll a scatter dice and rotate the unit so that it is facing that direction (if a hit is rolled, the casting player chooses the direction). If, by rotating the unit, it would come within of another unit or impassable terrain, simply stop rotating the unit as soon as it moves to within 1\". "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4-5 Lightning Strike:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model under the template's central hole suffers a Strength 6 hit. Other models hit by the template suffer a Strength 3 hit. This is a Lightning Attack. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Meteor Strike:"
-                },
-                {
-                  "emph": "",
-                  "text": " The model under the template's central hole suffers a Strength 6 hit with the Multiple Wounds (D6) Special rule. All other models hit by the template suffer a Strength 4 hit."
-                }
-              ],
-              "text": "D6 Result 1 Sudden Downpour: No effect. 2 Iceshard Tempest: All models hit by the template suffer a Strength 2 hit with the Ice Attacks special rule. In addition, they suffer a -1 modifier to all To Hit rolls (both shooting and close combat) until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill are unaffected. 3 Raging Tornado: If a target unit lies beneath the template's central hole and is not engaged in close combat, roll a scatter dice and rotate the unit so that it is facing that direction (if a hit is rolled, the casting player chooses the direction). If, by rotating the unit, it would come within of another unit or impassable terrain, simply stop rotating the unit as soon as it moves to within 1\". 4-5 Lightning Strike: The model under the template's central hole suffers a Strength 6 hit. Other models hit by the template suffer a Strength 3 hit. This is a Lightning Attack. 6 Meteor Strike: The model under the template's central hole suffers a Strength 6 hit with the Multiple Wounds (D6) Special rule. All other models hit by the template suffer a Strength 4 hit."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Sudden Downpour: No effect."
+                ],
+                [
+                  "2",
+                  "Iceshard Tempest: All models hit by the template suffer a Strength 2 hit with the Ice Attacks special\nrule. In addition, they suffer a -1 modifier to all To Hit rolls (both shooting and close combat) until\nthe start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill are\nunaffected."
+                ],
+                [
+                  "3",
+                  "Raging Tornado: If a target unit lies beneath the template's central hole and is not engaged in close\ncombat, roll a scatter dice and rotate the unit so that it is facing that direction (if a hit is rolled, the\ncasting player chooses the direction). If, by rotating the unit, it would come within of another unit or\nimpassable terrain, simply stop rotating the unit as soon as it moves to within 1\"."
+                ],
+                [
+                  "4-5",
+                  "Lightning Strike: The model under the template's central hole suffers a Strength 6 hit. Other models\nhit by the template suffer a Strength 3 hit. This is a Lightning Attack."
+                ],
+                [
+                  "6",
+                  "Meteor Strike: The model under the template's central hole suffers a Strength 6 hit with the Multiple\nWounds (D6) Special rule. All other models hit by the template suffer a Strength 4 hit."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -10323,11 +10397,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "STEAM TANK",
           "page": 47,
+          "band": "entry",
           "blocks": [
             {
               "type": "statblock",
@@ -10540,51 +10616,33 @@
               "cost": ""
             },
             {
-              "type": "para",
-              "style": "body",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "Steam Points Result 1-4 Minor Leak:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Steam Tank immediately loses 1 Steam Point. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5-6 Valve Locked:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Steam Tank cannot expend Steam Points in the Steam Engine this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "7-8 Emergency Vent:"
-                },
-                {
-                  "emph": "",
-                  "text": " The Steam Tank immediately loses D3 Steam Points. Any unit in base contact immediately suffers 2D6 Strength 2 hits, distributed as from shooting (roll for each unit). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "9-10 Dangerous Overpressure:"
-                },
-                {
-                  "emph": "",
-                  "text": " Roll a D3. The Steam Tank immediately gains a number of Steam Points and loses a number of Wounds equal to the result. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "11-12 Kaboom:"
-                },
-                {
-                  "emph": "",
-                  "text": " All units within 6\" of the Steam Tank (friend or foe) immediately suffer 2D6 Strength 4 hits, distributed as from shooting (roll for each unit). After resolving any damage, the Steam Tank is removed as a casualty."
-                }
-              ],
-              "text": "Steam Points Result 1-4 Minor Leak: The Steam Tank immediately loses 1 Steam Point. 5-6 Valve Locked: The Steam Tank cannot expend Steam Points in the Steam Engine this turn. 7-8 Emergency Vent: The Steam Tank immediately loses D3 Steam Points. Any unit in base contact immediately suffers 2D6 Strength 2 hits, distributed as from shooting (roll for each unit). 9-10 Dangerous Overpressure: Roll a D3. The Steam Tank immediately gains a number of Steam Points and loses a number of Wounds equal to the result. 11-12 Kaboom: All units within 6\" of the Steam Tank (friend or foe) immediately suffer 2D6 Strength 4 hits, distributed as from shooting (roll for each unit). After resolving any damage, the Steam Tank is removed as a casualty."
+              "type": "chart",
+              "rows": [
+                [
+                  "Steam Points",
+                  "Result"
+                ],
+                [
+                  "1-4",
+                  "Minor Leak: The Steam Tank immediately loses 1 Steam Point."
+                ],
+                [
+                  "5-6",
+                  "Valve Locked: The Steam Tank cannot expend Steam Points in the Steam Engine this\nturn."
+                ],
+                [
+                  "7-8",
+                  "Emergency Vent: The Steam Tank immediately loses D3 Steam Points. Any unit in base\ncontact immediately suffers 2D6 Strength 2 hits, distributed as from shooting (roll for each\nunit)."
+                ],
+                [
+                  "9-10",
+                  "Dangerous Overpressure: Roll a D3. The Steam Tank immediately gains a number of\nSteam Points and loses a number of Wounds equal to the result."
+                ],
+                [
+                  "11-12",
+                  "Kaboom: All units within 6\" of the Steam Tank (friend or foe) immediately suffer 2D6\nStrength 4 hits, distributed as from shooting (roll for each unit). After resolving any\ndamage, the Steam Tank is removed as a casualty."
+                ]
+              ]
             },
             {
               "type": "field",
@@ -10826,7 +10884,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -10837,6 +10896,7 @@
         {
           "name": "KARL FRANZ",
           "page": 49,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11105,11 +11165,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "KURT HELBORG",
           "page": 50,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11283,11 +11345,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUDWIG SCHWARZHELM",
           "page": 51,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11438,11 +11502,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BORIS TODBRINGER",
           "page": 52,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11593,11 +11659,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ALDEBRAND LUDENHOF",
           "page": 53,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11800,11 +11868,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VALMIR VON RAUKOV",
           "page": 54,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -11992,11 +12062,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARIUS LEITDORF",
           "page": 55,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12114,58 +12186,37 @@
               ]
             },
             {
-              "type": "para",
-              "runs": [
-                {
-                  "emph": "bold",
-                  "text": "D6 Result 1 Lunatic Ravings:"
-                },
-                {
-                  "emph": "",
-                  "text": " Marius must immediately roll on the Stupidity special rule. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "2 Berserk Rage:"
-                },
-                {
-                  "emph": "",
-                  "text": " Marius has the Frenzy special rule, and cannot lose it, until he rolls on this table again. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "3 Paranoid Delusions:"
-                },
-                {
-                  "emph": "",
-                  "text": " Marius immediately makes one close combat attack against a randomly chosen friendly model in base contact (if there are none, treat this result as Lunatic Ravings instead). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "4 Tactical Brilliance:"
-                },
-                {
-                  "emph": "",
-                  "text": " Every friendly unit within 12\" of Marius may immediately make a Reform manoeuvre. These units can still move, charge, march and shoot as normal during this turn. "
-                },
-                {
-                  "emph": "bold",
-                  "text": "5 Outrageous Insult:"
-                },
-                {
-                  "emph": "",
-                  "text": " The closest enemy character to Marius has the Hatred (Marius Leitdorf) special rule for the rest of the game. This has no effect on units that have Immunity (Psychology). "
-                },
-                {
-                  "emph": "bold",
-                  "text": "6 Insane Bravado:"
-                },
-                {
-                  "emph": "",
-                  "text": " Marius is treated as having rolled failed a Berserk Rage test (see Frenzy). In addition, he has the Stubborn special rule and must accept any challenge until he rolls on this table again."
-                }
-              ],
-              "text": "D6 Result 1 Lunatic Ravings: Marius must immediately roll on the Stupidity special rule. 2 Berserk Rage: Marius has the Frenzy special rule, and cannot lose it, until he rolls on this table again. 3 Paranoid Delusions: Marius immediately makes one close combat attack against a randomly chosen friendly model in base contact (if there are none, treat this result as Lunatic Ravings instead). 4 Tactical Brilliance: Every friendly unit within 12\" of Marius may immediately make a Reform manoeuvre. These units can still move, charge, march and shoot as normal during this turn. 5 Outrageous Insult: The closest enemy character to Marius has the Hatred (Marius Leitdorf) special rule for the rest of the game. This has no effect on units that have Immunity (Psychology). 6 Insane Bravado: Marius is treated as having rolled failed a Berserk Rage test (see Frenzy). In addition, he has the Stubborn special rule and must accept any challenge until he rolls on this table again."
+              "type": "chart",
+              "rows": [
+                [
+                  "D6",
+                  "Result"
+                ],
+                [
+                  "1",
+                  "Lunatic Ravings: Marius must immediately roll on the Stupidity special rule."
+                ],
+                [
+                  "2",
+                  "Berserk Rage: Marius has the Frenzy special rule, and cannot lose it, until he rolls on this table again."
+                ],
+                [
+                  "3",
+                  "Paranoid Delusions: Marius immediately makes one close combat attack against a randomly chosen\nfriendly model in base contact (if there are none, treat this result as Lunatic Ravings instead)."
+                ],
+                [
+                  "4",
+                  "Tactical Brilliance: Every friendly unit within 12\" of Marius may immediately make a Reform\nmanoeuvre. These units can still move, charge, march and shoot as normal during this turn."
+                ],
+                [
+                  "5",
+                  "Outrageous Insult: The closest enemy character to Marius has the Hatred (Marius Leitdorf) special\nrule for the rest of the game. This has no effect on units that have Immunity (Psychology)."
+                ],
+                [
+                  "6",
+                  "Insane Bravado: Marius is treated as having rolled failed a Berserk Rage test (see Frenzy). In\naddition, he has the Stubborn special rule and must accept any challenge until he rolls on this table\nagain."
+                ]
+              ]
             },
             {
               "type": "list",
@@ -12216,11 +12267,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MARKUS WULFHART",
           "page": 56,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12357,11 +12410,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THEODORE BRUCKNER",
           "page": 57,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12556,11 +12611,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BALTHASAR GELT",
           "page": 58,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12774,11 +12831,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "THYRUS GORMANN",
           "page": 59,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -12948,11 +13007,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "ELSPETH VON DRAKEN",
           "page": 60,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13178,11 +13239,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VOLKMAR THE GRIM",
           "page": 61,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13333,11 +13396,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "LUTHOR HUSS",
           "page": 62,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13501,11 +13566,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "MAGNUS THE PIOUS",
           "page": 63,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13628,11 +13695,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "EMIL VALGEIR",
           "page": 64,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13798,11 +13867,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HANS VON LOWENHACKE",
           "page": 65,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -13953,11 +14024,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "HARALD GEMUNSEN",
           "page": 66,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14127,11 +14200,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "VALTEN",
           "page": 67,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14378,11 +14453,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "BERTHA BESTRAUFRUNG",
           "page": 68,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14589,11 +14666,13 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         },
         {
           "name": "JUBAL FALK",
           "page": 69,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14743,7 +14822,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     },
@@ -14754,6 +14834,7 @@
         {
           "name": "Written & Edited by:",
           "page": 70,
+          "band": "entry",
           "blocks": [
             {
               "type": "namecost",
@@ -14770,7 +14851,8 @@
               "name": "Special thanks to all the people that have contributed with feedback and ideas",
               "cost": ""
             }
-          ]
+          ],
+          "level": 2
         }
       ]
     }
