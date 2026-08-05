@@ -1171,7 +1171,12 @@
             },
             {
               "type": "namecost",
-              "name": "SACRIFICIAL HEART CLOTH OF CHOTEC",
+              "name": "SACRIFICIAL HEART",
+              "cost": ""
+            },
+            {
+              "type": "namecost",
+              "name": "CLOTH OF CHOTEC",
               "cost": "15 points"
             },
             {
@@ -1535,7 +1540,12 @@
             },
             {
               "type": "namecost",
-              "name": "THE TETRAGON OF TECTONIC DISPLACEMENT",
+              "name": "THE TETRAGON OF TECTONIC",
+              "cost": ""
+            },
+            {
+              "type": "namecost",
+              "name": "DISPLACEMENT",
               "cost": "35 points"
             },
             {
@@ -3592,7 +3602,7 @@
             {
               "type": "field",
               "label": "SPECIAL RULES",
-              "value": "Cold-blooded, Inspiring Presence (6),Natural Armour (5+), Predatory Fighter, Stubborn"
+              "value": "Cold-blooded, Inspiring Presence (6), Natural Armour (5+), Predatory Fighter, Stubborn"
             },
             {
               "type": "field",
@@ -9291,7 +9301,7 @@
             {
               "type": "field",
               "label": "SPECIAL RULES",
-              "value": "Aquatic, Blessed Mark of the Old Ones (see Sacred Spawnings),Cold-blooded, Loner, Natural Armour (3+), Regeneration (4+), Predatory Fighter"
+              "value": "Aquatic, Blessed Mark of the Old Ones (see Sacred Spawnings), Cold-blooded, Loner, Natural Armour (3+), Regeneration (4+), Predatory Fighter"
             },
             {
               "type": "list",

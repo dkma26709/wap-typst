@@ -115,10 +115,9 @@
 ]
 
 #heading(level: 1, "MAGIC ITEMS")
-#columns(2)[
 #para(((emph: "bold", text: "This section contains the rules for some of the most iconic and powerful magical artefacts used by the Lizardmen. These may be used in addition to the magic items found in the Warhammer rulebook."),))
 
-#heading(level: 2, "MAGIC WEAPONS")
+#entry("MAGIC WEAPONS")
 #namecost("SCIMITAR OF THE SUN RESPLENDENT", "45 points")
 #para(((emph: "", text: "This weapon gives the wielder +2 Attacks and the Hatred special rule."),))
 #namecost("BLADE OF REALITIES", "40 points")
@@ -137,7 +136,8 @@
 #para(((emph: "", text: "Skink Only. This weapon gives the wielder the Killing Blow special rule. In addition, all models from "), (emph: "italic", text: "Warhammer: Skaven"), (emph: "", text: " treat the model as having the Fear special rule.")))
 #namecost("BURNING BLADE OF CHOTEC", "15 points")
 #para(((emph: "", text: "This weapon gives the wielder the Armour Piercing (2) and Flaming Attacks special rules."),))
-#namecost("SACRIFICIAL HEART CLOTH OF CHOTEC", "15 points")
+#namecost("SACRIFICIAL HEART", "")
+#namecost("CLOTH OF CHOTEC", "15 points")
 #para(((emph: "", text: "Sling. All shots from this weapon have +1 Strength."),))
 #namecost("STAFF OF THE LOST SUN", "15 points")
 #para(((emph: "", text: "Skink Priest or Skink High Priest only. This weapon uses the following profile:"),))
@@ -146,7 +146,7 @@
 #para(((emph: "", text: "Skink Priest or Skink High Priest only. This weapon has the following profile:"),))
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "6", "Multiple Wounds (D3), Poisoned Attacks"))
 
-#heading(level: 2, "MAGIC ARMOUR")
+#entry("MAGIC ARMOUR")
 #namecost("SACRED STEGADON HELM OF ITZA", "40 points")
 #para(((emph: "", text: "This armour gives the wearer a 6+ armour save. In addition, they gain +1 Toughness and the Impact Hits (D3) special rule."),))
 #namecost("HIDE OF THE COLD ONES", "40 points")
@@ -160,7 +160,7 @@
 #namecost("CORONAL SHIELD", "25 points")
 #para(((emph: "", text: "Shield. All close combat attacks directed against the bearer of this shield must re-roll successful rolls To Hit."),))
 
-#heading(level: 2, "TALISMANS")
+#entry("TALISMANS")
 #namecost("AURA OF QUETZL", "25 points")
 #para(((emph: "", text: "This talisman gives the wearer the Magical Ward (4+) special rule against attacks with Strength 5 or more."),))
 #namecost("DIVINE PLAQUE OF PROTECTION", "25 points")
@@ -174,7 +174,7 @@
 #namecost("INCANDESCENT RECTRICES", "10 points")
 #para(((emph: "", text: "One use only. If this model would be removed as a casualty, immediately roll a D6. On a 3+, the model remains with 1 Wound, and any additional Wounds suffered are ignored."),))
 
-#heading(level: 2, "ARCANE ITEMS")
+#entry("ARCANE ITEMS")
 #namecost("CRYSTALLINE SKULL", "60 points")
 #para(((emph: "", text: "Relic. Each time the bearer of this item successfully casts a spell, add +1 Power Dice to the pool (to a maximum of 3 per Magic Phase). In addition, once per battle the bearer may choose to destroy this item at the end of any of your Magic phases. If they do so, pick one enemy unit within 12\". Roll a number of dice equal to the number of Power dice in the pool. For each roll of a 3+, that unit suffer a Wound that Ignores Armour Saves."),))
 #namecost("CUPPED HANDS OF THE OLD ONES", "45 points")
@@ -183,7 +183,8 @@
 #para(((emph: "", text: "Relic. Bound spell (Level 2, cast on 8+). This item contains a "), (emph: "bold", text: "hex aura"), (emph: "", text: " spell with a range of 18\". All enemy Wizards within range have the Stupidity special rule until the start of the caster's next Magic phase.")))
 #namecost("ROD OF THE STORM", "35 points")
 #para(((emph: "", text: "Staff. Bound Spell. This item contains the "), (emph: "italic", text: "Urannon's Thunderbolt"), (emph: "", text: " spell from the Lore of Heavens.")))
-#namecost("THE TETRAGON OF TECTONIC DISPLACEMENT", "35 points")
+#namecost("THE TETRAGON OF TECTONIC", "")
+#namecost("DISPLACEMENT", "35 points")
 #para(((emph: "", text: "Relic. Bound Spell. The Tetragon of Tectonic Displacement contains the "), (emph: "italic", text: "Tectonic Shift"), (emph: "", text: " spell from the Lore of Geomancy.")))
 #namecost("CUBE OF DARKNESS", "30 points")
 #para(((emph: "", text: "Charm. One use only. When an enemy spell has been cast, a Wizard with this item can use it instead of attempting to dispel the spell using dispel dice. If he does so, roll a D6; on the roll of a 2+ the spell is automatically dispelled – otherwise the spell is resolved as normal. In either case, roll a separate D6 for every Remains in Play spell currently in effect; on a 2+ that spell automatically ends."),))
@@ -198,7 +199,8 @@
 #namecost("COATL FAMILIAR", "5 points")
 #para(((emph: "", text: "Charm. One use only. This item can be used at the start of any of your Magic phases. When used, the bearer may attempt to cast any one spell from any Lore of Magic normally available to them."),))
 
-#heading(level: 2, "ENCHANTED ITEMS")
+#entry("ENCHANTED ITEMS")
+#columns(2)[
 #namecost("BLOOD STATUETTE OF SPITE", "35 points")
 #para(((emph: "", text: "Bound Spell (Level 2, cast on 7+). This item contains a "), (emph: "bold", text: "direct damage"), (emph: "", text: " spell with a range of 12\" that targets one enemy model, even in a unit. The target model must pass a Toughness test or suffer a Wound which Ignores Armour Saves. If the model takes a Wound from this spell, it must immediately take another Toughness test, losing another Wound if it fails again. This continues until either the model passes a Toughness test or is slain.")))
 #namecost("PRISM OF AMYNTOK", "35 points")
@@ -235,8 +237,9 @@
 #para(((emph: "", text: "All friendly units within 12\" of the bearer of this item do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units. In addition, they gain +1 Leadership when attempting to Rally."),))
 #namecost("DRAGONFLY OF QUICKSILVER", "5 points")
 #para(((emph: "", text: "If both players have models with the Scouts special rule, the Lizardmen player adds +1 to their dice roll when rolling to see who deploys their Scouts first."),))
+]
 
-#heading(level: 2, "MAGIC STANDARDS")
+#entry("MAGIC STANDARDS")
 #namecost("TOTEM OF PROPHECY", "40 points")
 #para(((emph: "", text: "All enemy units with Line of Sight to this standard suffer a -1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology)."),))
 #namecost("HUANCHI'S BLESSED TOTEM", "35 points")
@@ -249,11 +252,10 @@
 #para(((emph: "", text: "The unit carrying this standard adds D3\" to their charge or pursue distance."),))
 #namecost("SIGN OF SOTEK", "20 points")
 #para(((emph: "", text: "Skinks only. The unit carrying this standard may re-roll failed rolls To Wound on any turn it charges."),))
-]
 
 #heading(level: 1, "CHARACTERS")
 
-#heading(level: 2, "SLANN MAGE-PRIEST")
+#entry("SLANN MAGE-PRIEST", first: true)
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Slann Mage-Priest", "4", "1", "3", "3", "4", "5", "1", "0", "9", "360"), ("Skink Attendant", "-", "2", "3", "3", "-", "-", "4", "1", "-", "")))
 #field("TROOP TYPE", "Monstrous Infantry (Character, Lizardman, Slann)")
 #field("BASE SIZE", "50x50, 60x60 or 75x75")
@@ -269,7 +271,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "bold", text: "Battle Standard:"), (emph: "", text: " The Battle Standard Bearer can have a magic banner with no points limit. However, a Slann carrying a magic standard can only take other magic items and/or Disciplines of the Old Ones up to a total of 50 points. A Slann carrying the Battle Standard may still be the Army General.")), sub: ()),))
 
-#heading(level: 2, "SAURUS LEADERS")
+#entry("SAURUS LEADERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Oldblood", "4", "6", "0", "5", "5", "3", "3", "5", "8", "140"), ("Scar-Veteran", "4", "5", "0", "5", "5", "2", "3", "4", "8", "90")))
 #field("TROOP TYPE", "Infantry (Character, Lizardman, Saurus)")
 #field("BASE SIZE", "25x25 or 30x30")
@@ -280,7 +282,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have."),), sub: ()),))
 
-#heading(level: 2, "SKINK CHIEFS")
+#entry("SKINK CHIEFS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("High Chief", "6", "5", "6", "4", "3", "3", "7", "4", "7", "70"), ("Chief", "6", "4", "5", "4", "3", "2", "6", "3", "6", "35")))
 #field("TROOP TYPE", "Infantry (Character, Lizardman, Skink)")
 #field("BASE SIZE", "20x20 or 25x25")
@@ -291,7 +293,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Skink High Chief mounted on a Stegadon loses their Natural Armour special rule."),), sub: ()),))
 
-#heading(level: 2, "SKINK PRIESTS")
+#entry("SKINK PRIESTS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("High Priest", "6", "3", "3", "3", "2", "3", "5", "2", "6", "165"), ("Priest", "6", "2", "3", "3", "2", "2", "4", "1", "5", "60")))
 #field("TROOP TYPE", "Infantry (Character, Lizardman, Skink)")
 #field("BASE SIZE", "20x20 or 25x25")
@@ -305,7 +307,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Skink High Priest mounted on a Stegadon loses their Natural Armour special rule."),), sub: ()),))
 
-#heading(level: 2, "KROXIGOR ANCIENT")
+#entry("KROXIGOR ANCIENT")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ancient", "6", "5", "0", "6", "5", "4", "2", "5", "8", "170"),))
 #field("TROOP TYPE", "Monstrous Infantry (Character, Lizardman, Kroxigor)")
 #field("BASE SIZE", "40x40 or 50x50")
@@ -316,7 +318,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Kroxigor Ancient may never be the Army General."),), sub: ()),))
 
-#heading(level: 2, "CHAMELEON STALKER")
+#entry("CHAMELEON STALKER")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Stalker", "6", "4", "6", "4", "3", "2", "6", "2", "6", "45"),))
 #field("TROOP TYPE", "Infantry (Character, Lizardman, Skink)")
 #field("BASE SIZE", "20x20 or 25x25")
@@ -329,52 +331,57 @@
 
 #heading(level: 1, "CHARACTER MOUNTS")
 
-#heading(level: 2, "TEMPLE GUARD PALANQUIN")
+#entry("TEMPLE GUARD PALANQUIN", first: true)
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Temple Guard", "4", "4", "0", "4", "-", "-", "2", "8", "8", "-"),))
 #field("TROOP TYPE", "Monstrous Infantry (Lizardman, Saurus)")
 #field("BASE SIZE", "50x75 or 60x90")
-#field("SPECIAL RULES", "Cold-blooded, Inspiring Presence (6),Natural Armour (5+), Predatory Fighter, Stubborn")
+#field("SPECIAL RULES", "Cold-blooded, Inspiring Presence (6), Natural Armour (5+), Predatory Fighter, Stubborn")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Temple Guard Palanquin adds +4 Unit Strength to the model."),), sub: ()),))
 
-#heading(level: 2, "RAPTADON")
+#compact-entry("RAPTADON")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Raptadon", "8", "3", "0", "3", "3", "1", "3", "1", "3", "-"),))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "25x50 or 30x60")
 #field("SPECIAL RULES", "Cold-Blooded")
+]
 
-#heading(level: 2, "COLD ONE")
+#compact-entry("COLD ONE")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Cold One", "7", "3", "0", "4", "4", "1", "2", "2", "3", "-"),))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "25x50 or 30x60")
 #field("SPECIAL RULES", "Cold-Blooded, Fear, Natural Armour (6+), Stupidity")
+]
 
-#heading(level: 2, "HORNED ONE")
+#compact-entry("HORNED ONE")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Horned One", "8", "3", "0", "4", "4", "1", "3", "2", "3", "-"),))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "25x50 or 30x60")
 #field("SPECIAL RULES", "Cold-Blooded, Fear, Natural Armour (6+)")
+]
 
-#heading(level: 2, "TERRADON")
+#compact-entry("TERRADON")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Terradon", "2", "3", "0", "4", "3", "2", "2", "1", "3", "-"),))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Fear, Fly (9), Forest Strider")
+]
 
-#heading(level: 2, "RIPPERDACTYL")
+#entry("RIPPERDACTYL")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ripperdactyl", "2", "3", "0", "4", "3", "2", "3", "2", "3", "-"),))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Armour Piercing (1), Fear, Fly (9), Frenzy, Killing Blow, Toad Rage (see Ripperdactyl")
 #para(((emph: "", text: "Riders)"),))
 
-#heading(level: 2, "AGGRADON")
+#compact-entry("AGGRADON")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Aggradon", "7", "4", "0", "5", "4", "3", "2", "3", "3", "-"),))
 #field("TROOP TYPE", "Monstrous Beast (Saurian)")
 #field("BASE SIZE", "50x75")
 #field("SPECIAL RULES", "Blood Frenzy, Cold-Blooded, Natural Armour (5+)")
+]
 
-#heading(level: 2, "CARNOSAUR")
+#entry("CARNOSAUR")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Carnosaur", "7", "4", "0", "6", "5", "5", "2", "4", "5", "-"),))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("BASE SIZE", "50x75 or 50x100")
@@ -386,7 +393,7 @@
 
 #heading(level: 1, "CORE UNITS")
 
-#heading(level: 2, "SAURUS WARRIORS")
+#entry("SAURUS WARRIORS", first: true)
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Saurus Warrior", "4", "3", "0", "4", "4", "1", "1", "2", "8", "13"),))
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Lizardman, Saurus)")
@@ -396,7 +403,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take spears +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Saurus Warrior to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Saurus Warrior to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Saurus Warrior to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 50 points"),),))))
 
-#heading(level: 2, "SKINK COHORT")
+#entry("SKINK COHORT")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "3"),))
 #field("UNIT SIZE", "20-60")
 #field("TROOP TYPE", "Infantry (Lizardman, Skink)")
@@ -406,7 +413,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May choose one of the following:"),), sub: (((emph: "", text: "Spears +0.5 point/model"),), ((emph: "", text: "Replace shields with shortbows +1 point/model"),), ((emph: "", text: "Javelins +2 points/model"),))), (runs: ((emph: "", text: "May take Firefly Frog Venom +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Skink to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Skink to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Skink to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 25 points"),),))))
 
-#heading(level: 2, "SKINK SKIRMISHERS")
+#entry("SKINK SKIRMISHERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "5"),))
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Lizardman, Skink)")
@@ -417,7 +424,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace blowpipes with one of the following:"),), sub: (((emph: "", text: "Slings & shields +1 point/model"),), ((emph: "", text: "Javelins & shields +1 points/model"),))), (runs: ((emph: "", text: "May take Firefly Frog Venom +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Skink to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Skink to a Musician +5 points"),), sub: ())))
 
-#heading(level: 2, "RAPTADON RIDERS")
+#entry("RAPTADON RIDERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "12"), ("Raptadon", "8", "3", "0", "3", "3", "1", "3", "1", "3", "")))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "Cavalry (Lizardman, Skink)")
@@ -428,23 +435,25 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace light lances with javelins +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May take Firefly Frog Venom +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Raptadon Rider to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Raptadon Rider to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Raptadon Rider to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 25 points"),),))))
 
-#heading(level: 2, "JUNGLE SWARMS")
+#compact-entry("JUNGLE SWARMS")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Jungle Swarm", "5", "3", "0", "2", "2", "6", "1", "6", "3", "30"),))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Swarm (Reptile)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Aquatic, Cold-blooded, Poisoned Attacks")
+]
 
-#heading(level: 2, "TERRAWINGS")
+#compact-entry("TERRAWINGS")[
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Terrawing", "2", "3", "0", "3", "3", "1", "3", "1", "3", "10"),))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("BASE SIZE", "25x25 or 30x30")
 #field("SPECIAL RULES", "Cold-blooded, Fly (10), Forest Strider")
+]
 
 #heading(level: 1, "SPECIAL UNITS")
 
-#heading(level: 2, "TEMPLE GUARD")
+#entry("TEMPLE GUARD", first: true)
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Temple Guard", "4", "4", "0", "4", "4", "1", "2", "2", "8", "17"),))
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Lizardman, Saurus)")
@@ -457,7 +466,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take light armour +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Temple Guard to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Temple Guard to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Temple Guard to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 50 points"),),))))
 
-#heading(level: 2, "COLD ONE RIDERS")
+#entry("COLD ONE RIDERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Saurus", "4", "4", "0", "4", "4", "1", "2", "2", "8", "24"), ("Cold One", "7", "3", "0", "4", "4", "1", "2", "2", "3", "")))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "Cavalry (Lizardman, Saurus)")
@@ -468,7 +477,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take light lances +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Cold One Rider to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Cold One Rider to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Cold One Rider to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 50 points"),),))))
 
-#heading(level: 2, "KROXIGORS")
+#entry("KROXIGORS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Kroxigor", "6", "3", "0", "5", "4", "3", "1", "3", "7", "47"),))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Monstrous Infantry (Lizardman, Kroxigor)")
@@ -478,7 +487,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace great weapons with war gauntlets free"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +3 points/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Kroxigor to a Leader +5 points"),), sub: ())))
 
-#heading(level: 2, "CHAMELEON SKINKS")
+#entry("CHAMELEON SKINKS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Chameleon Skink", "6", "2", "4", "3", "2", "1", "4", "1", "5", "8"),))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "Infantry (Lizardman, Skink)")
@@ -488,7 +497,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May replace blowpipes with slings & shields +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May take Firefly Frog Venom +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Chameleon Skink to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Chameleon Skink to a Musician +5 points"),), sub: ())))
 
-#heading(level: 2, "HORNED ONE RIDERS")
+#entry("HORNED ONE RIDERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Great Crested Skink", "6", "3", "3", "3", "2", "1", "4", "1", "6", "21"), ("Horned One", "8", "3", "0", "4", "4", "1", "3", "2", "3", "")))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "Cavalry (Lizardman, Skink)")
@@ -499,7 +508,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take a Blessed Spawning +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Great Crested Skink to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Great Crested Skink to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Great Crested Skink to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 25 points"),),))))
 
-#heading(level: 2, "TERRADON RIDERS")
+#entry("TERRADON RIDERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "22"), ("Terradon", "2", "3", "0", "4", "3", "2", "2", "1", "3", "")))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Cavalry (Lizardman, Skink)")
@@ -515,7 +524,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Terradon Riders with 2 Skinks have a Unit Strength of 3."),), sub: ()),))
 
-#heading(level: 2, "RIPPERDACTYL RIDERS")
+#entry("RIPPERDACTYL RIDERS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Skink Brave", "6", "3", "3", "3", "2", "1", "4", "1", "6", "30"), ("Ripperdactyl", "2", "3", "0", "4", "3", "2", "3", "2", "3", "")))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Cavalry (Lizardman, Skink)")
@@ -528,7 +537,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take a Blessed Spawning +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Ripperdactyl Rider to a Leader +5 points"),), sub: ())))
 
-#heading(level: 2, "SALAMANDER")
+#entry("SALAMANDER")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Salamander", "6", "3", "3", "4", "4", "2", "4", "2", "4", "70"), ("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "")))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("HANDLER", "3 Skinks (Lizardman, Skink)")
@@ -540,7 +549,7 @@
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Flaming Attacks, Slow to Fire"))
 #para(((emph: "", text: "If the artillery dice result is a misfire, no shots are fired and D3 Skink handlers are removed as casualties. If all Skink handlers are removed, the Salamander is subject to Frenzy for the remainder of the game."),))
 
-#heading(level: 2, "RAZORDON")
+#entry("RAZORDON")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Razordon", "6", "3", "3", "4", "4", "2", "4", "2", "4", "50"), ("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "")))
 #field("TROOP TYPE", "War Beast (Saurian)")
 #field("HANDLER", "3 Skinks (Lizardman, Skink)")
@@ -554,7 +563,7 @@
 
 #heading(level: 1, "RARE UNITS")
 
-#heading(level: 2, "AGGRADON RIDERS")
+#entry("AGGRADON RIDERS", first: true)
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Saurus", "4", "4", "0", "4", "4", "1", "2", "2", "8", "60"), ("Aggradon", "7", "4", "0", "5", "4", "3", "2", "3", "3", "")))
 #field("UNIT SIZE", "3-6")
 #field("TROOP TYPE", "Monstrous Cavalry (Lizardman, Saurus)")
@@ -565,7 +574,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take light lances +2 points/model"),), sub: ()), (runs: ((emph: "", text: "May take a Blessed Spawning +3 points/model"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Aggradon Rider to a Leader +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Aggradon Rider to a Musician +5 points"),), sub: ()), (runs: ((emph: "", text: "May upgrade one Aggradon Rider to a Standard Bearer +10 points"),), sub: (((emph: "", text: "May take a Magic Standard worth up to 50 points"),),))))
 
-#heading(level: 2, "ANCIENT SALAMANDER")
+#entry("ANCIENT SALAMANDER")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ancient Salamander", "6", "3", "3", "5", "4", "3", "4", "3", "4", "110"), ("Skink", "6", "2", "3", "3", "2", "1", "4", "1", "5", "")))
 #field("TROOP TYPE", "Monstrous Beast (Saurian)")
 #field("HANDLER", "3 Skinks (Lizardman, Skink)")
@@ -577,7 +586,7 @@
 #minitable(("Range", "Strength", "Special Rules"), ("6\"", "5", "Flaming Attacks, Slow to Fire"))
 #para(((emph: "", text: "If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as casualties. If all Skink handlers are removed, the Ancient Salamander is subject to Frenzy for the remainder of the game."),))
 
-#heading(level: 2, "BASTILADON")
+#entry("BASTILADON")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Bastiladon", "4", "3", "0", "5", "6", "5", "1", "3", "6", "175"), ("Skink", "-", "2", "3", "3", "-", "-", "4", "1", "5", "")))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("CREW", "3 Skinks (Lizardman, Skink)")
@@ -593,7 +602,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take Firefly Frog Venom +6 points"),), sub: ()), (runs: ((emph: "", text: "May take an additional Skink +3 points"),), sub: ()), (runs: ((emph: "", text: "May replace the Ark of Sotek with one of the following:"),), sub: (((emph: "", text: "Revivification Crystal +10 points"),), ((emph: "", text: "Solar Engine +40 points"),)))))
 
-#heading(level: 2, "STEGADON")
+#entry("STEGADON")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Stegadon", "6", "3", "0", "5", "6", "5", "2", "4", "6", "195"), ("Skink Crew", "-", "2", "3", "3", "-", "-", "4", "1", "5", "")))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("CREW", "5 Skinks (Lizardman, Skink)")
@@ -610,7 +619,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take Firefly Frog Venom +20 points"),), sub: ()), (runs: ((emph: "", text: "May replace giant bow with one of the following:"),), sub: (((emph: "", text: "Giant blowpipes free"),), ((emph: "", text: "Engine of the Gods +50 points"),))), (runs: ((emph: "", text: "May choose any of the following:"),), sub: (((emph: "", text: "Unstoppable Stampede +10 points"),), ((emph: "", text: "Sharpened Horns +20 points"),), ((emph: "", text: "Ancient +30 points"),)))))
 
-#heading(level: 2, "ARCANADON")
+#entry("ARCANADON")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Arcanadon", "6", "2", "0", "5", "6", "6", "1", "3", "6", "210"), ("Skink", "-", "2", "3", "3", "-", "-", "4", "1", "5", "")))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("CREW", "3 Skinks (Lizardman, Skink)")
@@ -622,7 +631,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take Firefly Frog Venom +6 points"),), sub: ()),))
 
-#heading(level: 2, "TROGLODON")
+#entry("TROGLODON")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Troglodon", "7", "3", "4", "5", "5", "5", "2", "3", "5", "155"), ("Oracle", "-", "2", "3", "3", "-", "-", "4", "1", "5", "")))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("CREW", "1 Oracle (Lizardman, Skink)")
@@ -634,7 +643,7 @@
 #items(((runs: ((emph: "bold", text: "Primeval Roar:"), (emph: "", text: " Once per battle, at the start of any friendly Close Combat phase, a Troglodon can unleash its Primeval Roar. This affects all friendly units within 12\". All models with the Predatory Fighter special rule gain an additional Attack on any successful To Hit roll of a 5+ until the end of the phase.")), sub: ()), (runs: ((emph: "bold", text: "Spit Venom:"), (emph: "", text: " A Troglodon can spit its venom as a shooting attack with the following profile:")), sub: ())))
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Multiple Wounds (D3), Poisoned Attacks, Quick Shot"))
 
-#heading(level: 2, "COATL")
+#entry("COATL")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Coatl", "5", "4", "0", "5", "5", "5", "2", "4", "8", "270"),))
 #field("TROOP TYPE", "Monster (Ophidian)")
 #field("BASE SIZE", "50x100 or 100x100")
@@ -644,7 +653,7 @@
 #field("SPECIAL RULES", "Cold-blooded, Fly (8), Magic Resistance (3), Natural Armour (4+)")
 #items(((runs: ((emph: "bold", text: "Magical Storm:"), (emph: "", text: " All missile fire directed at a Coatl suffers a -1 penalty to hit.")), sub: ()),))
 
-#heading(level: 2, "DREAD SAURIAN")
+#entry("DREAD SAURIAN")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Dread Saurian", "7", "4", "0", "8", "7", "10", "1", "6", "6", "365"),))
 #field("TROOP TYPE", "Monster (Saurian)")
 #field("BASE SIZE", "100x150")
@@ -656,7 +665,7 @@
 
 #heading(level: 1, "SPECIAL CHARACTERS")
 
-#heading(level: 2, "LORD MAZDAMUNDI")
+#entry("LORD MAZDAMUNDI", first: true)
 #namecost("Lord of the Solar-City, He That Rides the Horned Beast", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Lord Mazdamundi", "-", "2", "3", "3", "4", "5", "2", "1", "9", "730"), ("Zlaaq (Stegadon)", "6", "3", "0", "6", "6", "5", "1", "3", "6", "")))
 #field("TROOP TYPE", "Monster (Special Character, Lizardman, Slann)")
@@ -670,7 +679,7 @@
 #field("SPECIAL RULES", "Arcane Might (see Slann-Mage Priests), Cold-blooded, Impact Hits (D6+1) (Zlaaq only), Immunity (Psychology), Natural Armour (3+), Stubborn, Telepathic Confabulation (see Slann-Mage Priests), Shield of the Old Ones (see Slann-Mage Priests)")
 #items(((runs: ((emph: "bold", text: "Mage-Lord of Hexoatl:"), (emph: "", text: " Lord Mazdamundi can use one more power dice than normal when casting spells.")), sub: ()),))
 
-#heading(level: 2, "LORD KROAK")
+#entry("LORD KROAK")
 #namecost("Venerable Relic-Priest, Deliverer of Itza", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Lord Kroak", "4", "0", "0", "3", "5", "6", "0", "0", "9", "510"), ("Skink Attendant", "-", "2", "3", "3", "-", "-", "4", "1", "-", "")))
 #field("TROOP TYPE", "Monstrous Infantry (Special Character, Lizardman, Slann)")
@@ -687,7 +696,7 @@
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May have a Skink Attendant +3 points"),), sub: ()),))
 
-#heading(level: 2, "KROQ-GAR")
+#entry("KROQ-GAR")
 #namecost("Ancient Scar-Leader, Last Defender of Xhotl", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Kroq-Gar", "4", "6", "0", "5", "5", "3", "3", "5", "8", "465"), ("Grymloq (Carnosaur)", "7", "4", "0", "6", "5", "5", "2", "5", "5", "")))
 #field("TROOP TYPE", "Monster (Special Character, Lizardman, Saurus)")
@@ -699,7 +708,7 @@
 #field("SPECIAL RULES", "Blood Frenzy (Grymloq only), Cold-blooded, Multiple Wounds (D3) (Grymloq only), Predatory Fighter, Natural Armour (2+)")
 #items(((runs: ((emph: "bold", text: "Army of Kroq-Gar:"), (emph: "", text: " Kroq-Gar must always be the Army General. An army led by Kroq-Gar may include a single unit of Saurus Cold One Riders as a Core choice.")), sub: ()), (runs: ((emph: "bold", text: "Sacred Spawning of Xhotl:"), (emph: "", text: " Kroq-Gar has a Magical Ward (5+). If Kroq-Gar is wounded in close combat and does not pass his Magical Ward save, then whoever struck the blow immediately suffers an automatic Strength 5 hit.")), sub: ()), (runs: ((emph: "bold", text: "Attuned to the Beast:"), (emph: "", text: " Grymloq does not suffer from Berserk Rage.")), sub: ())))
 
-#heading(level: 2, "TEHENHAUIN")
+#entry("TEHENHAUIN")
 #namecost("Prophet of Sotek, Harbinger of the Serpent God", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tehenhauin", "6", "6", "5", "4", "3", "3", "6", "3", "8", "310"),))
 #field("TROOP TYPE", "Infantry (Special Character, Lizardman, Skink)")
@@ -715,7 +724,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "If Tehenhauin is mounted on a Stegadon, he does not add his default Natural Armour save to the model's overall save."),), sub: ()),))
 
-#heading(level: 2, "TETTO'EKO")
+#entry("TETTO'EKO")
 #namecost("Astromancer of the Constellations, the Beholder", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tetto'eko", "6", "2", "3", "2", "2", "3", "4", "1", "6", "225"),))
 #field("TROOP TYPE", "Infantry (Special Character, Lizardman, Skink)")
@@ -729,7 +738,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "Tetto'eko has a Line of Sight value of 2."),), sub: ()),))
 
-#heading(level: 2, "CHAKAX")
+#entry("CHAKAX")
 #namecost("The Eternity Warden, Prime Guardian of Xlanhuapec", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Chakax", "4", "5", "0", "5", "5", "2", "3", "4", "8", "210"),))
 #field("TROOP TYPE", "Infantry (Special Character, Lizardman, Saurus)")
@@ -740,7 +749,7 @@
 #field("SPECIAL RULES", "Cold-blooded, Guardians, Predatory Fighter, Natural Armour (5+), Stubborn")
 #items(((runs: ((emph: "bold", text: "Eternity Warden:"), (emph: "", text: " Chakax must always issue a challenge, and can never refuse one. When fighting in a challenge, Chakax re-rolls all failed rolls To Hit.")), sub: ()), (runs: ((emph: "bold", text: "Ultimate Bodyguard:"), (emph: "", text: " Whilst Chakax is part of a unit that contains both a Slann and Temple Guard, all models in the unit gain the Unbreakable special rule.")), sub: ())))
 
-#heading(level: 2, "GOR-ROK")
+#entry("GOR-ROK")
 #namecost("The Great White Lizard, The Scarred One", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Gor-Rok", "4", "5", "0", "5", "5", "2", "3", "4", "8", "220"),))
 #field("TROOP TYPE", "Infantry (Special Character, Lizardman, Saurus)")
@@ -751,17 +760,17 @@
 #para(((emph: "bold", text: "(Psychology), Predatory Fighter, Natural Armour (5+), Stubborn"),))
 #items(((runs: ((emph: "bold", text: "Resilient:"), (emph: "", text: " Any successful rolls To Wound roll against Gor-Rok must be re-rolled. In addition, Gor-Rok has the Immunity (Killing Blow) special rule.")), sub: ()),))
 
-#heading(level: 2, "NAKAI THE WANDERER")
+#entry("NAKAI THE WANDERER")
 #namecost("Sacred Kroxigor of the First Spawning", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Nakai", "6", "5", "0", "6", "5", "4", "3", "5", "8", "310"),))
 #field("TROOP TYPE", "Monstrous Infantry (Special Character, Lizardman, Kroxigor)")
 #field("BASE SIZE", "40x40 or 50x50")
 #field("MAGIC ITEMS", "")
 #items(((runs: ((emph: "bold", text: "The Sacred Blade of Quetzl:"), (emph: "", text: " Magic Weapon. Great weapon. The Sacred Blade of Quetzl grants Nakai +1 to Hit in close combat, and enemy close combat attacks against him suffer -1 To Hit.")), sub: ()),))
-#field("SPECIAL RULES", "Aquatic, Blessed Mark of the Old Ones (see Sacred Spawnings),Cold-blooded, Loner, Natural Armour (3+), Regeneration (4+), Predatory Fighter")
+#field("SPECIAL RULES", "Aquatic, Blessed Mark of the Old Ones (see Sacred Spawnings), Cold-blooded, Loner, Natural Armour (3+), Regeneration (4+), Predatory Fighter")
 #items(((runs: ((emph: "bold", text: "Jungle Spirit:"), (emph: "", text: " Nakai always appears using the Ambushers special rule, with the following exception; he will always appear from a forest, marshland or river terrain feature rather than the table edge if able to. Any unit that kills Nakai in close combat may not overrun. If Nakai flees from combat, then the victorious unit may not pursue.")), sub: ()),))
 
-#heading(level: 2, "TIKTAQ'TO")
+#entry("TIKTAQ'TO")
 #namecost("Master of Skies, the Eye in the Heavens", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tiktaq'to", "6", "4", "5", "4", "3", "2", "6", "3", "7", "145"), ("Zwup (Terradon)", "2", "3", "0", "4", "3", "2", "2", "1", "3", "")))
 #field("TROOP TYPE", "Cavalry (Special Character, Lizardman, Skink)")
@@ -772,7 +781,7 @@
 #field("SPECIAL RULES", "Ambushers, Cold-blooded, Drop Rocks (see Terradons), Fear, Fly (9), Forest Strider, Natural Armour (6+)")
 #items(((runs: ((emph: "bold", text: "Master of Skies:"), (emph: "", text: " If your army contains Tiktaq'to, one unit of Terradon Riders may deploy using the Ambushers special rule.")), sub: ()),))
 
-#heading(level: 2, "OXYOTL")
+#entry("OXYOTL")
 #namecost("Survivor of Pahuax, the Returned, He That Hunts Unseen", "")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Oxyotl", "6", "4", "6", "4", "3", "2", "6", "3", "7", "100"),))
 #field("TROOP TYPE", "Infantry (Special Character, Lizardman, Skink)")
@@ -789,7 +798,7 @@
 
 #heading(level: 1, "CREDITS")
 
-#heading(level: 2, "Written & Edited by:")
+#entry("Written & Edited by:", first: true)
 #namecost("Mathias Eliasson", "")
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")

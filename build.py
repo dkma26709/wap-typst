@@ -38,6 +38,8 @@ def main() -> None:
 
     if not args.skip_coverage:
         run([ROOT / "extract" / "coverage.py", args.pdf, target, "-n", "15"])
+        # Coverage counts words and so cannot see two of them welded into one.
+        run([ROOT / "extract" / "welds.py", target])
 
     run([
         ROOT / "extract" / "to_typst.py", target,

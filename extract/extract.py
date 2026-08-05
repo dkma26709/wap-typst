@@ -272,9 +272,14 @@ def stat_row(line: dict, anchors: list[tuple[float, str]]) -> dict | None:
 
 
 def field_label(line: dict) -> tuple[str, str] | None:
-    """Split a `LABEL: value` line where the label is set in the display font."""
+    """Split a `LABEL: value` line where the label is set in the display font.
+
+    Reads `flow` rather than `spans`: the value's inter-word spacing is carried by
+    whitespace-only spans, which `spans` discards, welding words together
+    ("Inspiring Presence (6),Natural Armour").
+    """
     labels, rest = [], []
-    for span in line["spans"]:
+    for span in line["flow"]:
         text = span["text"]
         if span_role(span) == "field":
             labels.append(text)
@@ -297,6 +302,12 @@ COST = re.compile(r"^\s*\d+\s*points?\s*$", re.IGNORECASE)
 # The cost is often set in the same display face as the name, so the two arrive
 # as one run and have to be separated again.
 COST_TAIL = re.compile(r"^(.*?)[\s.]+(\d+\s*points?)$", re.IGNORECASE | re.DOTALL)
+# A name only counts as continuing onto the next line if it breaks after a word
+# that cannot end a name. Gluing two real items together would make one of them
+# vanish, whereas leaving a name split merely renders it on two lines, so the
+# test is deliberately conservative.
+DANGLING = re.compile(
+    r"\b(?:of|the|and|or|a|an|in|to|with|from|for|on|at|by)$", re.IGNORECASE)
 
 
 def name_cost(line: dict) -> dict | None:
@@ -494,9 +505,12 @@ def parse_lines(lines: list[dict]) -> list[dict]:
                 i += 1
                 continue
             # A name too long for its column wraps onto the next line, which
-            # carries the cost. Two cost-less names in a row are separate
-            # entries, so requiring a cost here keeps them apart.
-            if not head["cost"] and i + 1 < len(lines):
+            # carries the cost. Requiring both a cost on that next line and a
+            # dangling function word here keeps genuinely separate entries
+            # apart — the source contains at least one orphaned heading with no
+            # description, and merging it would swallow the item that follows.
+            if (not head["cost"] and i + 1 < len(lines)
+                    and DANGLING.search(head["name"])):
                 nxt = name_cost(lines[i + 1])
                 if nxt and nxt["cost"]:
                     head["name"] = f"{head['name']} {nxt['name']}".strip()

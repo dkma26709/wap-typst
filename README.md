@@ -60,11 +60,15 @@ Two details cost the most effort and are worth knowing about:
 
 ## Verification
 
-`extract/coverage.py` compares the word multiset of the source PDF against the
-generated JSON and fails above a 0.1% tolerance:
+Two gates, because they catch different failures. `extract/coverage.py` compares
+the word multiset of the source PDF against the generated JSON and fails above a
+0.1% tolerance. `extract/welds.py` then looks for words *welded together* by a
+lost space — `damagearea`, `(6),Natural` — which a word count cannot see, since
+a weld removes a space rather than a word:
 
 ```bash
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json
+python extract/welds.py build/lizardmen.json
 ```
 
 For Lizardmen 3.0 this reports 2 missing words out of 12,212 (0.02%), both from
@@ -86,8 +90,15 @@ from the headings.
 
 ## Layout
 
-Chapters containing stat blocks are set single-column: an eleven-column stat
-table cannot survive an 8cm measure, and floating it to the top of the page
-would sever it from its unit. Prose chapters above 3,000 characters get proper
-two-column setting; shorter ones stay single-column so the second column is
-never left stranded empty.
+**Every entry opens its own page** — each unit, character and magic-item section
+— so nothing straddles the space left over by whatever preceded it. The one
+exception is an entry consisting of *only* a stat line and a few fields, such as
+a character mount: a page of its own would be almost entirely empty, so these
+share one, set unbreakable so none of them straddles a boundary either.
+
+Entries containing stat blocks are single-column, since an eleven-column table
+cannot survive an 8cm measure and floating it would sever it from its unit.
+Entries above 3,000 characters of prose get two-column setting; shorter ones stay
+single-column so the second column is never left stranded empty. The column
+choice is made per entry rather than per chapter, because each entry now has a
+full page of column height to fill or waste.

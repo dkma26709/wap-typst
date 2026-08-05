@@ -75,30 +75,20 @@ def block_lines(block: dict) -> list[str]:
     return []
 
 
-def chapter_lines(chapter: dict) -> list[str]:
+def blocks_lines(blocks: list[dict]) -> list[str]:
     out: list[str] = []
-    for block in chapter.get("intro", []):
+    for block in blocks:
         out.extend(block_lines(block))
-    for entry in chapter["entries"]:
-        out.append("")
-        out.append(f"#heading(level: 2, {lit(entry['name'])})")
-        for block in entry["blocks"]:
-            out.extend(block_lines(block))
     return out
 
 
-def all_blocks(chapter: dict) -> list[dict]:
-    pools = [chapter.get("intro", [])] + [e["blocks"] for e in chapter["entries"]]
-    return [b for pool in pools for b in pool]
+def has_statblock(blocks: list[dict]) -> bool:
+    return any(b["type"] == "statblock" for b in blocks)
 
 
-def has_statblock(chapter: dict) -> bool:
-    return any(b["type"] == "statblock" for b in all_blocks(chapter))
-
-
-def text_length(chapter: dict) -> int:
+def text_length(blocks: list[dict]) -> int:
     total = 0
-    for block in all_blocks(chapter):
+    for block in blocks:
         kind = block["type"]
         if kind == "para":
             total += len(block["text"])
@@ -114,13 +104,38 @@ def text_length(chapter: dict) -> int:
     return total
 
 
-# Below this much prose a two-column setting leaves the second column stranded
-# empty, which reads as a layout fault rather than a choice.
+# One column of a full A4 page holds roughly this much prose. Below it a
+# two-column setting leaves the second column stranded empty, which reads as a
+# layout fault rather than a choice.
 TWO_COLUMN_MIN = 3000
 
 
-def two_column(chapter: dict) -> bool:
-    return not has_statblock(chapter) and text_length(chapter) >= TWO_COLUMN_MIN
+def two_column(blocks: list[dict]) -> bool:
+    """Decided per entry rather than per chapter, because every entry now starts
+    its own page and so has a full page of column height to fill or waste."""
+    return not has_statblock(blocks) and text_length(blocks) >= TWO_COLUMN_MIN
+
+
+# A stat line plus a handful of fields comes to a couple of hundred characters.
+# The ceiling is a safety margin as much as a threshold: a compact entry is set
+# unbreakable, and content taller than a page cannot be laid out that way.
+COMPACT_MAX = 400
+
+
+def compact(blocks: list[dict]) -> bool:
+    """True for an entry that is only a stat line and fields — nothing to say
+    beyond its profile. These share a page instead of each taking one."""
+    if not has_statblock(blocks):
+        return False
+    if {b["type"] for b in blocks} - {"statblock", "field"}:
+        return False
+    return text_length(blocks) < COMPACT_MAX
+
+
+def wrap(lines: list[str], columns: bool) -> list[str]:
+    if not columns:
+        return lines
+    return ["#columns(2)["] + lines + ["]"]
 
 
 def render(data: dict, template: str) -> str:
@@ -133,14 +148,25 @@ def render(data: dict, template: str) -> str:
     ]
     for chapter in data["chapters"]:
         lines.append(f"#heading(level: 1, {lit(chapter['title'])})")
-        body = chapter_lines(chapter)
-        if two_column(chapter):
-            lines.append("#columns(2)[")
-            lines.extend(body)
-            lines.append("]")
-        else:
-            # Stat tables need the full measure, and short chapters would leave
-            # the second column empty; both stay single column.
+        intro = chapter.get("intro", [])
+        if intro:
+            lines.extend(wrap(blocks_lines(intro), two_column(intro)))
+
+        for n, entry in enumerate(chapter["entries"]):
+            body = wrap(blocks_lines(entry["blocks"]), two_column(entry["blocks"]))
+            lines.append("")
+            if compact(entry["blocks"]):
+                lines.append(f"#compact-entry({lit(entry['name'])})[")
+                lines.extend(body)
+                lines.append("]")
+                continue
+            # The first entry shares the chapter-title page unless an intro has
+            # already claimed it; every later entry opens a page of its own. The
+            # break is emitted here, outside any `columns` container, because
+            # Typst cannot break a page from within one.
+            first = n == 0 and not intro
+            suffix = ", first: true)" if first else ")"
+            lines.append(f"#entry({lit(entry['name'])}{suffix}")
             lines.extend(body)
         lines.append("")
     return "\n".join(lines) + "\n"
@@ -158,9 +184,14 @@ def main() -> None:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(render(data, args.template), encoding="utf-8")
 
-    prose = [c["title"] for c in data["chapters"] if two_column(c)]
+    entries = [e for c in data["chapters"] for e in c["entries"]]
+    twocol = [e["name"] for e in entries if two_column(e["blocks"])]
+    grouped = [e["name"] for e in entries if compact(e["blocks"])]
     print(f"wrote {args.out}")
-    print(f"  two-column prose chapters: {', '.join(prose) or 'none'}")
+    print(f"  entries: {len(entries)}; {len(entries) - len(grouped)} open their "
+          f"own page, {len(grouped)} share")
+    print(f"  two-column entries: {', '.join(twocol) or 'none'}")
+    print(f"  stat-line-only, grouped: {', '.join(grouped) or 'none'}")
 
 
 if __name__ == "__main__":

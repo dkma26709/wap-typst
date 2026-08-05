@@ -102,6 +102,27 @@
   table.hline(stroke: 0.5pt + hair),
 ))
 
+// Each entry — a unit, a character, a magic-item section — opens its own page,
+// so nothing straddles the space left over by whatever preceded it. `weak`
+// keeps the break from firing when the page is already fresh, and `first`
+// suppresses it so an entry can share its chapter-title page.
+#let entry(name, first: false) = {
+  if not first { pagebreak(weak: true) }
+  heading(level: 2, name)
+}
+
+// An entry that is nothing but a stat line and a few fields — a character mount,
+// say — would leave a page of its own almost entirely empty, so these share one.
+// `breakable: false` is what keeps the promise: the entry moves to the next page
+// whole rather than straddling the boundary.
+#let compact-entry(name, body) = block(
+  breakable: false, above: 1.4em, below: 0.5em,
+  {
+    heading(level: 2, name)
+    body
+  },
+)
+
 // --- front matter -----------------------------------------------------------
 
 // `page(..)` with a body is used rather than `set page(..)`, so the suppressed
