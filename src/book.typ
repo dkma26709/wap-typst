@@ -1,0 +1,32 @@
+#import "template.typ": *
+
+#show: book.with(title: "Warhammer Armies Project — Lizardmen 3.0")
+
+#cover(
+  title: "Lizardmen",
+  subtitle: "Warhammer Armies Project · 3.0",
+  art: "../assets/images/cover.png",
+)
+
+#colophon((
+  [
+    An unofficial, non-commercial re-typesetting of *Warhammer Armies Project:
+    Lizardmen*, version 3.0 — written and freely distributed by Mathias
+    Eliasson.
+  ],
+  [
+    All rules text, army design and points values remain the work of their
+    author. This edition changes only the typesetting; the content is
+    reproduced from the freely distributed PDF.
+  ],
+  [
+    Warhammer, Warhammer Fantasy Battle, Lizardmen and all associated names,
+    races and places are trademarks of Games Workshop Limited. This document is
+    unofficial and unaffiliated, and no challenge to their status is intended.
+  ],
+  [Typeset with Typst. Not for sale.],
+))
+
+#outline(title: [Contents], depth: 2)
+
+#include "content/lizardmen.typ"

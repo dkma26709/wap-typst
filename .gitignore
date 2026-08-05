@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Compiled output and the local Pages staging directory; CI rebuilds both.
+out/
+_site/
+
+# Extracted artwork lands here before being promoted into assets/.
+build/images/
