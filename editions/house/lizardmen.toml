@@ -6,8 +6,9 @@
 # across consecutive blocks. Ops: replace, insert-after, insert-before, delete.
 #
 # In `new`, a blank line starts a new block and its first character decides the
-# kind: `- ` a list, `## ` a run-in heading, `@LABEL: value` a profile field, and
-# two `|`-delimited lines a weapon profile — headings, then values.
+# kind: `- ` a list, `## ` a run-in heading, `@LABEL: value` a profile field,
+# `> ` the indented italic note that sits beneath a profile, and two
+# `|`-delimited lines a weapon profile — headings, then values.
 
 book = "lizardmen"
 

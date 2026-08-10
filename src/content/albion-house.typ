@@ -565,7 +565,7 @@ what it was reaching for, and the reference is corrected to the rule the
 rulebook actually carries.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "6-18\" 4(8) Multiple Wounds (D3), Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 6-18\" · Strength 4(8) · Special Rules Multiple Wounds (D3), Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "6-18\" 4(8) Cumbersome, Multiple Wounds (D3)"),))
+#para(((emph: "", text: "Range 6-18\" · Strength 4(8) · Special Rules Cumbersome, Multiple Wounds (D3)"),))
 

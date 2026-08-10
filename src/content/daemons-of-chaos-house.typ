@@ -1427,7 +1427,7 @@ what it was reaching for, and the reference is corrected to the rule the
 rulebook actually carries.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "12-36\" 5 Ignores Armour Saves, Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 12-36\" · Strength 5 · Special Rules Ignores Armour Saves, Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "12-36\" 5 Cumbersome, Ignores Armour Saves"),))
+#para(((emph: "", text: "Range 12-36\" · Strength 5 · Special Rules Cumbersome, Ignores Armour Saves"),))
 

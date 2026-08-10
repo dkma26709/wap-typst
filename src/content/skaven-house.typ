@@ -1222,7 +1222,7 @@ what it was reaching for, and the reference is corrected to the rule the
 rulebook actually carries.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "12-36\" 5 Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 12-36\" · Strength 5 · Special Rules Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "12-36\" 5 Cumbersome"),))
+#para(((emph: "", text: "Range 12-36\" · Strength 5 · Special Rules Cumbersome"),))
 

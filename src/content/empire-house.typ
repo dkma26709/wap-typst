@@ -1204,7 +1204,7 @@ what it was reaching for, and the reference is corrected to the rule the
 rulebook actually carries.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "24\" 4 Armour Piercing (1), Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 24\" · Strength 4 · Special Rules Armour Piercing (1), Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "24\" 4 Armour Piercing (1), Cumbersome"),))
+#para(((emph: "", text: "Range 24\" · Strength 4 · Special Rules Armour Piercing (1), Cumbersome"),))
 

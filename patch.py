@@ -6,6 +6,11 @@ the edition with no changes; a house edition is one with them. Nothing under
 reproduction stays exactly as it was extracted and keeps its own place on the
 site.
 
+An edition may name another in `derives_from`, in which case it patches that
+edition's text rather than the original — a proposal is written against the rules
+as they are actually played, and its book carries both changelogs. The parent is
+always built first, even when only the child was asked for.
+
 Every change anchors on the text it acts upon, quoted verbatim from the book. If
 that text later moves or is reworded upstream, the anchor stops matching and the
 run fails — loudly, and naming the change — rather than landing a house rule on
@@ -18,6 +23,7 @@ the wrong paragraph, which is the kind of fault you would discover mid-game.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import re
 import sys
@@ -77,6 +83,16 @@ def block_text(block: dict) -> str:
     return ""
 
 
+def display(block: dict) -> str:
+    """A block as the changelog quotes it. The same as `block_text`, except that
+    a weapon profile names its columns: a bare row of values cannot be read
+    against the row it replaced once the columns themselves have changed."""
+    if block["type"] == "minitable":
+        return " · ".join(f"{c} {block['row'].get(c, '')}".strip()
+                          for c in block["columns"])
+    return block_text(block)
+
+
 # --- authoring --------------------------------------------------------------
 
 MARKUP = re.compile(r"\*\*(.+?)\*\*|\*(.+?)\*", re.S)
@@ -107,10 +123,19 @@ def para(text: str, style: str = "body") -> dict:
     }
 
 
+def quote(text: str, style: str = "body") -> dict:
+    """A paragraph of the book's own words, for the changelog. Unlike `para`,
+    nothing in it is read as markup — a weapon profile's footnote asterisks are
+    part of the rule, not emphasis around it."""
+    return {"type": "para", "style": style,
+            "runs": [{"emph": "", "text": text}], "text": text}
+
+
 def parse_body(source: str) -> list[dict]:
     """Blank lines separate blocks. A block of `- ` lines is a list, a lone
     `## NAME` line is a run-in heading, `@LABEL: value` is a profile field, two
-    `|`-delimited lines are a weapon profile, and anything else is a paragraph."""
+    `|`-delimited lines are a weapon profile, `> ` lines are the indented italic
+    note the books set beneath a profile, and anything else is a paragraph."""
     blocks: list[dict] = []
     for chunk in re.split(r"\n\s*\n", source.strip()):
         lines = [ln.strip() for ln in chunk.splitlines() if ln.strip()]
@@ -134,6 +159,9 @@ def parse_body(source: str) -> list[dict]:
                                  f"it as `@LABEL: value`")
             blocks.append({"type": "field", "label": label.strip(),
                            "value": value.strip()})
+        elif all(ln.startswith("> ") for ln in lines):
+            blocks.append(para(" ".join(ln[2:].strip() for ln in lines),
+                               style="italic"))
         elif all(ln.startswith("- ") for ln in lines):
             items = []
             for ln in lines:
@@ -221,7 +249,7 @@ def apply(data: dict, change: dict) -> dict:
 
     blocks, where = scope(data, change)
     start, stop = span(blocks, change)
-    was = [block_text(b) for b in blocks[start:stop]]
+    was = [display(b) for b in blocks[start:stop]]
 
     if op == "delete":
         if "new" in change:
@@ -249,7 +277,7 @@ def apply(data: dict, change: dict) -> dict:
         "op": op,
         # The book's own words, not the anchor as it was typed.
         "was": was if op in ("replace", "delete") else [],
-        "now": [block_text(b) for b in fresh],
+        "now": [display(b) for b in fresh],
     }
 
 
@@ -281,11 +309,11 @@ def changelog(records: list[dict], title: str) -> dict:
             intro.append({"type": "field", "label": label, "value": ""})
             # Set as a quotation: the superseded wording is here for reference,
             # and should not be mistaken for a rule still in force.
-            intro.extend(para(t, style="italic") for t in r["was"])
+            intro.extend(quote(t, style="italic") for t in r["was"])
         if r["now"]:
             label = "Now" if r["op"] == "replace" else VERB[r["op"]]
             intro.append({"type": "field", "label": label, "value": ""})
-            intro.extend(para(t) for t in r["now"])
+            intro.extend(quote(t) for t in r["now"])
     return {"title": title, "page": 0, "intro": intro, "entries": []}
 
 
@@ -296,12 +324,41 @@ def load_edition(directory: Path) -> dict:
     meta.setdefault("slug", directory.name)
     meta.setdefault("label", directory.name.title())
     meta.setdefault("changelog_title", "CHANGES FROM THE ORIGINAL")
+    meta.setdefault("derives_from", "")
     meta["dir"] = directory
     return meta
 
 
+def in_build_order(metas: dict[str, dict]) -> list[dict]:
+    """The editions, each preceded by the one it derives from."""
+    order: list[dict] = []
+    done: set[str] = set()
+
+    def visit(slug: str, trail: list[str]) -> None:
+        if slug in done:
+            return
+        if slug in trail:
+            raise PatchError("these editions derive from one another in a "
+                             "circle: " + " -> ".join(trail[trail.index(slug):]
+                                                      + [slug]))
+        meta = metas[slug]
+        parent = meta["derives_from"]
+        if parent:
+            if parent not in metas:
+                raise PatchError(f"{slug!r} derives from {parent!r}, which is "
+                                 f"not an edition. There is: "
+                                 f"{', '.join(sorted(metas))}")
+            visit(parent, trail + [slug])
+        done.add(slug)
+        order.append(meta)
+
+    for slug in sorted(metas):
+        visit(slug, [])
+    return order
+
+
 def build_book(meta: dict, patch_file: Path, manifest: dict,
-               check: bool) -> dict | None:
+               patched: dict[tuple[str, str], dict], write: bool) -> dict:
     spec = tomllib.loads(patch_file.read_text(encoding="utf-8"))
     slug = spec.get("book", patch_file.stem)
 
@@ -309,7 +366,13 @@ def build_book(meta: dict, patch_file: Path, manifest: dict,
     if base is None:
         raise PatchError(f"{patch_file.name}: {slug!r} is not in build/books.json")
 
-    data = json.loads((BUILD / f"{slug}.json").read_text(encoding="utf-8"))
+    # A derived edition starts from its parent's text — but only for the books
+    # the parent actually touches; for the rest the original is the parent.
+    inherited = patched.get((meta["derives_from"], slug))
+    if inherited is None:
+        data = json.loads((BUILD / f"{slug}.json").read_text(encoding="utf-8"))
+    else:
+        data = copy.deepcopy(inherited)
 
     records = []
     for n, change in enumerate(spec.get("change", []), 1):
@@ -326,21 +389,24 @@ def build_book(meta: dict, patch_file: Path, manifest: dict,
     print(f"  {slug}: {len(records)} change(s) applied")
     for r in records:
         print(f"    {r['op']:<13} {r['where']}")
-    if check:
-        return None
 
     data["chapters"].append(changelog(records, meta["changelog_title"]))
+    # Kept even when nothing is written, so that --check tests a derived
+    # edition's anchors against the text it will really be applied to.
+    patched[(meta["slug"], slug)] = data
 
     ident = f"{slug}-{meta['slug']}"
-    # Figures are shared with the book this edition is derived from.
-    to_typst.FIGURE_PREFIX = f"/assets/figures/{slug}"
-    render = to_typst.render_rules if base["layout"] == "rules" else to_typst.render
-    out = ROOT / "src" / "content" / f"{ident}.typ"
-    out.write_text(render(data, "../template.typ"), encoding="utf-8")
+    if write:
+        # Figures are shared with the book this edition is derived from.
+        to_typst.FIGURE_PREFIX = f"/assets/figures/{slug}"
+        render = (to_typst.render_rules if base["layout"] == "rules"
+                  else to_typst.render)
+        out = ROOT / "src" / "content" / f"{ident}.typ"
+        out.write_text(render(data, "../template.typ"), encoding="utf-8")
 
-    (BUILD / "editions" / meta["slug"]).mkdir(parents=True, exist_ok=True)
-    (BUILD / "editions" / meta["slug"] / f"{slug}.json").write_text(
-        json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        (BUILD / "editions" / meta["slug"]).mkdir(parents=True, exist_ok=True)
+        (BUILD / "editions" / meta["slug"] / f"{slug}.json").write_text(
+            json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
     return {
         **base,
@@ -365,21 +431,46 @@ def main() -> None:
     manifest = {b["slug"]: b for b in
                 json.loads((BUILD / "books.json").read_text(encoding="utf-8"))["books"]}
 
-    editions, books = [], []
-    dirs = sorted(d for d in args.editions_dir.iterdir()
-                  if (d / "edition.toml").exists())
-    for directory in dirs:
+    metas: dict[str, dict] = {}
+    for directory in sorted(d for d in args.editions_dir.iterdir()
+                            if (d / "edition.toml").exists()):
         meta = load_edition(directory)
-        if args.edition and meta["slug"] != args.edition:
+        if meta["slug"] in metas:
+            raise PatchError(f"{metas[meta['slug']]['dir'].name}/ and "
+                             f"{directory.name}/ both call themselves "
+                             f"{meta['slug']!r}")
+        metas[meta["slug"]] = meta
+
+    if args.edition and args.edition not in metas:
+        raise PatchError(f"no edition {args.edition!r} under {args.editions_dir}. "
+                         f"There is: {', '.join(sorted(metas))}")
+
+    # An edition asked for by name still needs the ones it derives from built,
+    # since they are the text it is applied to — but they are not reported, and
+    # nothing of theirs is written.
+    report = {args.edition} if args.edition else set(metas)
+    needed = set()
+    for slug in report:
+        while slug:
+            needed.add(slug)
+            slug = metas[slug]["derives_from"]
+
+    editions, books = [], []
+    patched: dict[tuple[str, str], dict] = {}
+    for meta in in_build_order(metas):
+        if meta["slug"] not in needed:
             continue
-        print(f"{meta['label']} ({meta['slug']})")
+        wanted = meta["slug"] in report
+        print(f"{meta['label']} ({meta['slug']})"
+              + ("" if wanted else "  — base only"))
         built = []
-        for patch_file in sorted(directory.glob("*.toml")):
+        for patch_file in sorted(meta["dir"].glob("*.toml")):
             if patch_file.name == "edition.toml":
                 continue
-            record = build_book(meta, patch_file, manifest, args.check)
-            if record:
-                built.append(record)
+            built.append(build_book(meta, patch_file, manifest, patched,
+                                    write=wanted and not args.check))
+        if not wanted:
+            continue
         books.extend(built)
         editions.append({
             "slug": meta["slug"],

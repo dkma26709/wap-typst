@@ -1,0 +1,863 @@
+# Proposals for The Game of Fantasy Battles 3.11.
+#
+# See editions/house/lizardmen.toml for the format. These are applied on top of
+# the House edition, so the anchors quote the text as that edition leaves it.
+#
+# This file holds one proposal, spread across the forty places it touches:
+# Strength stops modifying armour saves, and Armour Piercing becomes a printed
+# value on the attack. Group ids by prefix so a proposal can be lifted out whole.
+
+book = "rulebook"
+
+
+# --- Armour Piercing out of Strength ----------------------------------------
+#
+# The rulebook only. The army books' weapon profiles and monster statlines still
+# have no Armour Piercing value of their own, and until they do a book played
+# under this proposal will find its monsters much less frightening than they were.
+
+[[change]]
+id      = "ap-strength-wounds-only"
+title   = "Strength wounds, and does nothing else"
+chapter = "MODEL PROFILES"
+op      = "replace"
+why     = """
+Every other characteristic answers one question. Weapon Skill decides whether \
+you hit, Toughness whether you are hurt, Initiative who swings first. Strength \
+answers two: it is rolled against Toughness to wound, and it is separately read \
+off a chart to strip armour. That second job is the one nobody chose. A giant \
+tears through plate not because anything about the design said armour should \
+fail against him, but as a by-product of his being strong enough to wound; a \
+sling, which exists to punch armour, has to buy Armour Piercing as a special \
+rule to do the thing that Strength hands out free. Splitting the two makes \
+armour penetration a property somebody decided on and printed, and leaves \
+Strength as a stat of the same shape as the eight beside it.
+"""
+
+original = """This defines how easy it is for a model to inflict damage on their opponent."""
+
+new = """
+This defines how easy it is for a model to inflict damage on their opponent. \
+Strength is rolled against the target's Toughness to wound, in the same way that \
+Weapon Skill is rolled against the target's Weapon Skill to hit, and it does \
+nothing further. It has no bearing on armour saves.
+"""
+
+
+[[change]]
+id      = "ap-printed-in-the-profile"
+title   = "Armour Piercing is printed in the profile"
+chapter = "MODEL PROFILES"
+op      = "insert-before"
+why     = """
+If Strength no longer strips armour, something has to, and it should be a number \
+a designer wrote down rather than one that falls out of a chart. It goes where a \
+reader already looks for the things an attack does: in the profile, under the \
+stat line, beside Equipment and Special Rules.
+"""
+
+original = """CHARACTERISTICS OF ZERO"""
+
+new = """
+## ARMOUR PIERCING (AP)
+
+This is not one of the nine characteristics above. It cannot be tested against, \
+nothing can require a roll under it, and it is not capped at 10. It is simply \
+printed beneath a model's profile, and it gives the negative armour save \
+modifier inflicted by that model's own attacks - its claws, its horns, the \
+weight of a charging beast. A profile that prints no Armour Piercing value has \
+none, and armour stops its attacks like anyone else's.
+
+Attacks made with a weapon use the weapon's Armour Piercing value in place of \
+the model's, exactly as they use the weapon's Strength in place of the model's \
+where one is given. See the Weapons & Armour chapter.
+"""
+
+
+[[change]]
+id      = "ap-shooting-saving-throws"
+title   = "Saving throws are modified by Armour Piercing"
+chapter = "SHOOTING"
+entry   = "MODIFIERS"
+op      = "replace"
+why     = """
+This is the chart the change exists to delete. Note what the cap does to the \
+scale: because no save can ever be better than 2+, Armour Piercing (5) already \
+defeats every save in the game, so the old chart's -6 and -7 were doing nothing \
+that -5 was not. The useful range is 1 to 5, which is a range a designer can \
+hold in their head.
+"""
+
+original = """Some weapons or creatures are so powerful that they can punch right through armour. Such attacks inflict a modifier on the saving throw, just as shooting modifiers affect the To Hit roll."""
+until    = """Strength: Save modifier: 1 - 2 - 3 - 4 -1 5 -2 6 -3 7 -4 8 -5 9 -6 10 -7"""
+
+new = """
+Some weapons or creatures are so powerful that they can punch right through \
+armour. Such attacks inflict a modifier on the saving throw, just as shooting \
+modifiers affect the To Hit roll.
+
+An attack's Armour Piercing value is that modifier: Armour Piercing (2) means -2 \
+to the target's armour save. Strength does not modify armour saves. Note that a \
+model could be hit by an attack whose armour save modifier makes the armour save \
+impossible to pass - in which case, the save is automatically failed.
+
+For example, a model with a 3+ armour save is hit by a handgun, which has Armour \
+Piercing (2). This means the model now only has a 5+ save left to try and save \
+the Wound.
+
+Because no armour save can ever be better than 2+, an attack with Armour \
+Piercing (5) defeats any armour save there is.
+"""
+
+
+[[change]]
+id      = "ap-close-combat-saving-throws"
+title   = "The same in close combat"
+chapter = "CLOSE COMBAT"
+entry   = "TAKE SAVING THROWS"
+op      = "replace"
+why     = """
+The second copy of the same chart, and the reminder that pointed at it.
+"""
+
+original = """As before in the Shooting phase, the enemy player can try to 'save' models that have been wounded by rolling a D6 for each wound suffered by their troops. If they roll equal to or greater than the model's save (after any modifiers have been applied) the wound has been deflected by its armour. See "Saving Throws" of the Shooting Phase if you need a reminder about the different types of save and how they work. Remember that wounds caused by Strength 4 or higher inflict a saving throw modifier on armour saves."""
+until    = """Strength: Save modifier: 1 - 2 - 3 - 4 -1 5 -2 6 -3 7 -4 8 -5 9 -6 10 -7"""
+
+new = """
+As before in the Shooting phase, the enemy player can try to 'save' models that \
+have been wounded by rolling a D6 for each wound suffered by their troops. If \
+they roll equal to or greater than the model's save (after any modifiers have \
+been applied) the wound has been deflected by its armour. See "Saving Throws" of \
+the Shooting Phase if you need a reminder about the different types of save and \
+how they work. Remember that it is the attack's Armour Piercing value that \
+modifies an armour save, and never its Strength.
+"""
+
+
+[[change]]
+id      = "ap-special-rule"
+title   = "The Armour Piercing special rule adds to the printed value"
+chapter = "SPECIAL RULES"
+entry   = "ARMOUR PIERCING"
+op      = "replace"
+why     = """
+The rule survives unchanged in everything it does - it is only that the thing it \
+used to add to has gone. Spells and magic items that grant Armour Piercing, of \
+which there are a dozen, go on working exactly as written.
+"""
+
+original = """Wounds caused by a model with this special rule (or who is attacking with a weapon that has this special rule) inflict a further negative armour save modifier as indicated by the number in the brackets, in addition to those for Strength. Unless specified, Armour Piercing only applies to close combat attacks. This rule is cumulative with other sources of Armour Piercing."""
+
+new = """
+Wounds caused by a model with this special rule (or who is attacking with a \
+weapon that has this special rule) inflict a negative armour save modifier as \
+indicated by the number in the brackets. This is cumulative with the Armour \
+Piercing value printed in the attacker's or the weapon's profile, and with other \
+sources of Armour Piercing. Where the rule is granted by a spell, a magic item \
+or a special rule, it applies only to close combat attacks unless specified.
+"""
+
+
+[[change]]
+id      = "ap-invulnerable-saves"
+title   = "Invulnerable saves are unmodified by Armour Piercing"
+chapter = "SHOOTING"
+entry   = "INVULNERABLE SAVES"
+op      = "replace"
+why     = """
+The sentence exists to draw a line between the two kinds of save, and the line \
+is still there - it has only moved from Strength to Armour Piercing. Left as \
+written it would say that invulnerable saves are unmodified by something that \
+modifies nothing.
+"""
+
+original = """The key difference between invulnerable saves and armour saves is that invulnerable saves are never modified by the Strength of the attack. However, no model may have an invulnerable save better than 4+ by combining multiple invulnerable saves regardless of source. For example, a model that has two 6+ invulnerable saves and a 5+ invulnerable save will be limited to a 4+ invulnerable save, though you may choose which invulnerable saves are used in any given situation."""
+
+new = """
+The key difference between invulnerable saves and armour saves is that \
+invulnerable saves are never modified by the Armour Piercing value of the \
+attack. However, no model may have an invulnerable save better than 4+ by \
+combining multiple invulnerable saves regardless of source. For example, a model \
+that has two 6+ invulnerable saves and a 5+ invulnerable save will be limited to \
+a 4+ invulnerable save, though you may choose which invulnerable saves are used \
+in any given situation.
+"""
+
+
+[[change]]
+id      = "ap-poisoned-attacks"
+title   = "Poisoned Attacks: the reminder points at Armour Piercing"
+chapter = "SPECIAL RULES"
+entry   = "POISONED ATTACKS"
+op      = "replace"
+why     = """
+Poison improves the To Wound roll and was careful to say that it does not \
+therefore improve the armour save modifier, because under the old rule the two \
+were both read off Strength. The caution is now the plain rule, but the sentence \
+still has to name the right thing.
+"""
+
+original = """A model with the Poisoned Attacks special rule gets a +1 modifier to its To Wound rolls. Armour saves are modified by the Strength of the attack as normal."""
+
+new = """
+A model with the Poisoned Attacks special rule gets a +1 modifier to its To Wound \
+rolls. Armour saves are modified by the Armour Piercing value of the attack as \
+normal.
+"""
+
+
+[[change]]
+id      = "ap-impact-hits"
+title   = "Impact Hits use the model's own Armour Piercing"
+chapter = "SPECIAL RULES"
+entry   = "IMPACT HITS"
+op      = "replace"
+why     = """
+Impact Hits are the clearest case of an attack made with no weapon, and the rule \
+already says which of the model's numbers they borrow. It needs to name one more.
+"""
+
+original = """Impact Hits roll to wound using the Strength of the model making the Impact Hits. Any armour saves taken are done using the close combat value of the armour."""
+
+new = """
+Impact Hits roll to wound using the Strength of the model making the Impact Hits, \
+and are modified by the Armour Piercing value printed in that model's profile. \
+Any armour saves taken are done using the close combat value of the armour.
+"""
+
+
+[[change]]
+id      = "ap-stomp"
+title   = "A Stomp likewise"
+chapter = "SPECIAL RULES"
+entry   = "STOMP"
+op      = "replace"
+
+original = """A model with this special rule can make a Stomp in addition to its other close combat attacks (including Breath Weapons). A Stomp has the Always Strikes Last special rule and inflicts a number of automatic hits as indicated in the brackets. These are resolved at the model's Strength against a single enemy unit that consists of models with a Line of Sight value of 1 or less. If the model is a Monster, it may also Stomp models with a Line of Sight value of 3 or less."""
+
+new = """
+A model with this special rule can make a Stomp in addition to its other close \
+combat attacks (including Breath Weapons). A Stomp has the Always Strikes Last \
+special rule and inflicts a number of automatic hits as indicated in the \
+brackets. These are resolved at the model's Strength, and at the Armour Piercing \
+value printed in its profile, against a single enemy unit that consists of models \
+with a Line of Sight value of 1 or less. If the model is a Monster, it may also \
+Stomp models with a Line of Sight value of 3 or less.
+"""
+
+
+[[change]]
+id      = "ap-okkams-mindrazor"
+title   = "Okkam's Mindrazor loses a clause it no longer needs"
+chapter = "THE LORE OF SHADOW"
+op      = "replace"
+why     = """
+The last sentence of the spell is there for one reason: swapping Leadership in \
+for Strength would otherwise have handed the unit an armour save modifier off the \
+back of a stat that had nothing to do with armour. That was the coupling in \
+miniature, and a designer had to write a sentence to undo it. With Strength out \
+of the armour save entirely the clause guards nothing, and left standing it would \
+send a reader to a chart this edition has deleted.
+"""
+
+original = """Okkam's Mindrazor is an augment spell with a range of 18". Until the start of the caster's next Magic phase, the target unit (except mounts) gain the Magical Attacks special rule and use their Leadership instead of Strength when rolling To Wound with all close combat attacks (any Strength bonuses from weapons are ignored). Armour saves are taken and modified by the Attack's actual Strength value."""
+
+new = """
+*Okkam's Mindrazor* is an **augment** spell with a range of 18". Until the start \
+of the caster's next Magic phase, the target unit (except mounts) gain the \
+Magical Attacks special rule and use their Leadership instead of Strength when \
+rolling To Wound with all close combat attacks (any Strength bonuses from weapons \
+are ignored). Armour saves are modified by the Armour Piercing value of the \
+attack as normal, which this spell does not change.
+"""
+
+
+[[change]]
+id      = "ap-weapon-profile-sections"
+title   = "A weapon's profile has four sections"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPON PROFILES"
+op      = "replace"
+
+original = """Each weapon has its own characteristic profile. There are three sections to a weapon's profile: Range, Strength and Special Rules."""
+
+new = """
+Each weapon has its own characteristic profile. There are four sections to a \
+weapon's profile: Range, Strength, AP and Special Rules.
+"""
+
+
+[[change]]
+id      = "ap-weapon-profile-ap-section"
+title   = "AP, in the weapon profile"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPON PROFILES"
+op      = "insert-before"
+why     = """
+The values given to the weapons that follow are calibrated on what each weapon \
+does today in the hands of the troops that usually carry it, so that the ordinary \
+case moves as little as possible: a crossbow is Strength 4 and so strips one \
+point of armour now, and is AP 1 here; a handgun is Strength 5 and strips two, \
+and is AP 2. Where a weapon already had Armour Piercing as a special rule, that \
+is folded into the new value rather than added on top of it - a sling was \
+Strength 3 with Armour Piercing (1), for a net -1, and is AP 1. What moves is the \
+top of the range, and it moves deliberately: a Strength 10 cannonball stripped \
+seven points of armour by arithmetic, and now strips five, which is every point \
+there is to strip.
+"""
+
+original = """Special Rules: Many weapons confer special abilities on the attacks made by the wielder, which are explained in the weapon profile. Note that any characteristics bonuses or penalties from weapons normally apply when the model actually attacks - they cannot be used for characteristic tests or spell effects etc. When a weapon does not say when the characteristic bonus applies, then it only applies when striking, or being struck, in close combat."""
+
+new = """
+**AP:** The weapon's Armour Piercing value: the negative modifier its attacks \
+inflict on the target's armour save. A dash means the weapon does not pierce \
+armour at all, and armour saves against it are unmodified. Where the value is \
+followed by an asterisk it applies only in the circumstances given beneath the \
+profile, and where it is given in the form 1(5) the first number applies to the \
+weapon's ordinary hits and the second to the hit under the centre of its \
+template, in the same way as its Strength.
+"""
+
+
+# --- Close combat weapons ---------------------------------------------------
+
+[[change]]
+id      = "ap-hand-weapon"
+title   = "Hand weapon - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user -"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|-|-
+"""
+
+
+[[change]]
+id      = "ap-two-hand-weapons"
+title   = "Two/additional hand weapons - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user Parry (6+), Requires Two Hands"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|-|Parry (6+), Requires Two Hands
+"""
+
+
+[[change]]
+id      = "ap-polearm"
+title   = "Polearm - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user +1 Requires Two Hands"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user +1|1|Requires Two Hands
+"""
+
+
+[[change]]
+id      = "ap-great-weapon"
+title   = "Great weapon - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+why     = """
+The one weapon whose whole purpose is opening armour, and the clearest case for \
+printing the number: it strips two points now in the first round only, by way of \
+Strength +1 and Mighty Blow, and strips two points here in every round. That is a \
+deliberate gain. A great weapon does not stop being a great weapon on turn two.
+"""
+
+original = """Combat As user +1 Mighty Blow (1), Requires Two Hands"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user +1|2|Mighty Blow (1), Requires Two Hands
+"""
+
+
+[[change]]
+id      = "ap-flail"
+title   = "Flail - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+why     = """
+A flail strips two points in the first round and none thereafter. One point in \
+every round is close to the same weapon over a combat, and it keeps Mighty Blow \
+(2) as what the flail is actually for - a brutal opening swing that wounds, \
+rather than a can-opener.
+"""
+
+original = """Combat As user Mighty Blow (2), Requires Two Hands"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|1|Mighty Blow (2), Requires Two Hands
+"""
+
+
+[[change]]
+id      = "ap-spear"
+title   = "Spear - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user Fight in Extra Ranks (1), Mighty Blow (1)*, Requires Two Hands*"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|-|Fight in Extra Ranks (1), Mighty Blow (1)*, Requires Two Hands*
+"""
+
+
+[[change]]
+id      = "ap-pike"
+title   = "Pike - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user Fight in Extra Ranks (3), Mighty Blow (1)*, Requires Two Hands"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|-|Fight in Extra Ranks (3), Mighty Blow (1)*, Requires Two Hands
+"""
+
+
+[[change]]
+id      = "ap-light-lance"
+title   = "Light lance - AP 1 on the charge"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+why     = """
+A lance is an armour-breaking weapon for exactly one round, and a flat value \
+would quietly hand it the rest of the combat as well. The asterisk it already \
+carries does the work.
+"""
+
+original = """Combat As user Mighty Blow (1)*"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|1*|Mighty Blow (1)*
+"""
+
+
+[[change]]
+id      = "ap-light-lance-note"
+title   = "Light lance: the note covers AP too"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """*Mounted model only. A model with a light lance gains +1 Initiative and Mighty Blow in turns that the model charges, and only against the unit they charged."""
+
+new = """
+> *Mounted model only. A model with a light lance gains +1 Initiative, Mighty \
+Blow and Armour Piercing in turns that the model charges, and only against the \
+unit they charged.
+"""
+
+
+[[change]]
+id      = "ap-heavy-lance"
+title   = "Heavy lance - AP 2 on the charge"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """Combat As user Mighty Blow (2)*"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|Combat|As user|2*|Mighty Blow (2)*
+"""
+
+
+[[change]]
+id      = "ap-heavy-lance-note"
+title   = "Heavy lance: the note covers AP too"
+chapter = "WEAPONS & ARMOUR"
+entry   = "WEAPONS"
+op      = "replace"
+
+original = """*Mounted model only. A model with a heavy lance gains +2 Initiative and Mighty Blow in turns that the model charges, and only against the unit they charged."""
+
+new = """
+> *Mounted model only. A model with a heavy lance gains +2 Initiative, Mighty \
+Blow and Armour Piercing in turns that the model charges, and only against the \
+unit they charged.
+"""
+
+
+# --- Missile weapons --------------------------------------------------------
+
+[[change]]
+id      = "ap-shortbow"
+title   = "Shortbow - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """16/24" 3 March & Shoot, Multiple Shots (2)*, Volley Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|16/24"|3|-|March & Shoot, Multiple Shots (2)*, Volley Fire
+"""
+
+
+[[change]]
+id      = "ap-longbow"
+title   = "Longbow - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """24/36" 3 Multiple Shots (2)*, Volley Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|24/36"|3|-|Multiple Shots (2)*, Volley Fire
+"""
+
+
+[[change]]
+id      = "ap-greatbow"
+title   = "Greatbow - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """28/42" As user +1 Multiple Shots (2)*, Volley Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|28/42"|As user +1|1|Multiple Shots (2)*, Volley Fire
+"""
+
+
+[[change]]
+id      = "ap-crossbow"
+title   = "Crossbow - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """24/36" 4 Ponderous"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|24/36"|4|1|Ponderous
+"""
+
+
+[[change]]
+id      = "ap-handgun"
+title   = "Handgun - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """12/24" 5 Ponderous"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12/24"|5|2|Ponderous
+"""
+
+
+[[change]]
+id      = "ap-sling"
+title   = "Sling - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+why     = """
+The sling stops being a Strength 3 bow with a bolt-on special rule and becomes \
+what it always was: a weapon that does not wound well and does defeat armour. \
+Its Armour Piercing (1) moves out of the special rules and into the column, at \
+the same value - the shot is no better and no worse than it is today.
+"""
+
+original = """15/30" 3 Armour Piercing (1), Volley Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|15/30"|3|1|Volley Fire
+"""
+
+
+[[change]]
+id      = "ap-javelins"
+title   = "Javelins - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """10/15" As user Armour Piercing (1), March & Shoot, Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|10/15"|As user|1|March & Shoot, Quick Shot
+"""
+
+
+[[change]]
+id      = "ap-blowpipe"
+title   = "Blowpipe - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/12" 2 March & Shoot, Multiple Shots (3), Poisoned Attacks"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/12"|2|-|March & Shoot, Multiple Shots (3), Poisoned Attacks
+"""
+
+
+[[change]]
+id      = "ap-pistol"
+title   = "Pistol - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/12" 5 Multiple Shots (2)*, Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/12"|5|2|Multiple Shots (2)*, Quick Shot
+"""
+
+
+[[change]]
+id      = "ap-blunderbuss"
+title   = "Blunderbuss - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/12" 4 Multiple Shots (3), Rapid Fire, Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/12"|4|1|Multiple Shots (3), Rapid Fire, Quick Shot
+"""
+
+
+[[change]]
+id      = "ap-grenades"
+title   = "Grenades - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/9" 4 Armour Piercing (1), March & Shoot, Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/9"|4|2|March & Shoot, Quick Shot
+"""
+
+
+[[change]]
+id      = "ap-throwing-weapons"
+title   = "Throwing weapons - AP -"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/9" As user March & Shoot, Multiple Shots (2), Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/9"|As user|-|March & Shoot, Multiple Shots (2), Quick Shot
+"""
+
+
+[[change]]
+id      = "ap-throwing-axes"
+title   = "Throwing axes - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "MISSILE WEAPONS"
+op      = "replace"
+
+original = """6/9" As user +1 March & Shoot, Quick Shot"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|6/9"|As user +1|1|March & Shoot, Quick Shot
+"""
+
+
+# --- Artillery --------------------------------------------------------------
+
+[[change]]
+id      = "ap-bolt-thrower"
+title   = "Bolt thrower - AP 4"
+chapter = "WEAPONS & ARMOUR"
+entry   = "BOLT THROWERS"
+op      = "replace"
+why     = """
+Strength 6 with Armour Piercing (1) comes to -4 today, and comes to -4 here. The \
+bolt thrower is the weapon this proposal flatters most: what it is for has always \
+been punching a hole through the best-armoured thing on the table, and now the \
+profile says so instead of leaving it to be worked out.
+"""
+
+original = """32/48" 6 Armour Piercing (1), Cumbersome, Multiple Wounds (D3)"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|32/48"|6|4|Cumbersome, Multiple Wounds (D3)
+"""
+
+
+[[change]]
+id      = "ap-repeater-bolt-thrower"
+title   = "Repeater bolt thrower - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "BOLT THROWERS"
+op      = "replace"
+
+original = """32/48" 4 Armour Piercing (1), Cumbersome, Multiple Shots (6), Rapid Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|32/48"|4|2|Cumbersome, Multiple Shots (6), Rapid Fire
+"""
+
+
+[[change]]
+id      = "ap-cannon"
+title   = "Cannon - AP 5"
+chapter = "WEAPONS & ARMOUR"
+entry   = "CANNONS"
+op      = "replace"
+why     = """
+Strength 10 strips seven points of armour today, four of them into a save that \
+had already become impossible. Five is the whole of what there is to strip, so \
+nothing at all is lost: a cannonball is stopped by no armour, before and after.
+"""
+
+original = """12-60" 10 Cumbersome, Multiple Wounds (D6/D3)"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12-60"|10|5|Cumbersome, Multiple Wounds (D6/D3)
+"""
+
+
+[[change]]
+id      = "ap-grapeshot"
+title   = "Grapeshot - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "CANNONS"
+op      = "replace"
+
+original = """12" 5 Cumbersome, Rapid Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12"|5|2|Cumbersome, Rapid Fire
+"""
+
+
+[[change]]
+id      = "ap-fire-thrower"
+title   = "Fire thrower - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "FIRE THROWERS"
+op      = "replace"
+
+original = """- 4 Cumbersome, Flaming Attacks"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|-|4|1|Cumbersome, Flaming Attacks
+"""
+
+
+[[change]]
+id      = "ap-organ-gun"
+title   = "Organ gun - AP 2"
+chapter = "WEAPONS & ARMOUR"
+entry   = "ORGAN GUNS"
+op      = "replace"
+
+original = """12/24" 5 Cumbersome, Multiple Shots (Artillery Dice + 3D6), Rapid Fire"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12/24"|5|2|Cumbersome, Multiple Shots (Artillery Dice + 3D6), Rapid Fire
+"""
+
+
+[[change]]
+id      = "ap-stone-thrower"
+title   = "Stone thrower - AP 1(5)"
+chapter = "WEAPONS & ARMOUR"
+entry   = "TRAJECTORY WEAPONS"
+op      = "replace"
+why     = """
+A trajectory weapon already prints two Strengths, one for the template and one \
+for the model under its hole, so the AP column prints two to match: Strength 4 \
+strips one point today, Strength 8 strips five, and those are the two numbers. \
+The stray comma at the end of the special rules is an artefact of the original \
+typesetting and goes with it.
+"""
+
+original = """12-48" 4(8) Cumbersome, Multiple Wounds (D3),"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12-48"|4(8)|1(5)|Cumbersome, Multiple Wounds (D3)
+"""
+
+
+[[change]]
+id      = "ap-mortar"
+title   = "Mortar - AP 1(4)"
+chapter = "WEAPONS & ARMOUR"
+entry   = "TRAJECTORY WEAPONS"
+op      = "replace"
+
+original = """12-60" 3(6) Armour Piercing (1), Cumbersome, Multiple Wounds (D3)"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12-60"|3(6)|1(4)|Cumbersome, Multiple Wounds (D3)
+"""
+
+
+[[change]]
+id      = "ap-rocket-launcher"
+title   = "Rocket launcher - AP 1"
+chapter = "WEAPONS & ARMOUR"
+entry   = "TRAJECTORY WEAPONS"
+op      = "replace"
+
+original = """12-60" 4 Cumbersome, Flaming Attacks"""
+
+new = """
+|Range|Strength|AP|Special Rules
+|12-60"|4|1|Cumbersome, Flaming Attacks
+"""

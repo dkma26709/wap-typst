@@ -80,6 +80,18 @@ Nothing under `build/<slug>.json` or `src/content/<slug>.typ` is written by
 `patch.py`, so the faithful reproduction stays exactly as it was extracted and
 keeps its own place on the site alongside the amended one.
 
+An edition may name another in `derives_from`, in which case it patches that
+edition's text rather than the original, and its books carry both changelogs.
+`editions/proposal/` does this: it holds rules under discussion, argued against
+the text actually being played rather than against the book they amend. The
+parent is built first even when only the child is asked for, so
+`--edition proposal` still checks its anchors against the house text.
+
+| | |
+|---|---|
+| `editions/house/` | changes agreed and played |
+| `editions/proposal/` | changes under discussion, on top of the house rules |
+
 A change quotes the text it acts on, and that quotation is the anchor:
 
 ```toml
@@ -107,6 +119,7 @@ kind:
 | `- ` | a list, one item per line |
 | `## ` | a run-in heading |
 | `@LABEL: value` | a profile field — `TROOP TYPE`, `SPECIAL RULES`, and so on |
+| `> ` | the indented italic note that sits beneath a profile |
 | `\|` × 2 lines | a weapon profile: headings, then values |
 
 ```toml

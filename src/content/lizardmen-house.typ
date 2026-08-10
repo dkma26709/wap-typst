@@ -821,16 +821,16 @@ Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
 #para(((emph: "", text: "Slow to Fire is named here and defined nowhere in any of the books. Cumbersome — a weapon that cannot be used to Stand and Shoot — is the rule it was reaching for, and the one the rest of the set puts on weapons of this kind.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "n/a 4 Flaming Attacks, Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range n/a · Strength 4 · Special Rules Flaming Attacks, Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "n/a 4 Cumbersome, Flaming Attacks"),))
+#para(((emph: "", text: "Range n/a · Strength 4 · Special Rules Cumbersome, Flaming Attacks"),))
 #namecost("The Ancient's Spout Flames, likewise", "RARE UNITS · ANCIENT SALAMANDER")
 #para(((emph: "", text: "The same weapon on a larger beast, and the same correction.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "6\" 5 Flaming Attacks, Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 6\" · Strength 5 · Special Rules Flaming Attacks, Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "6\" 5 Cumbersome, Flaming Attacks"),))
+#para(((emph: "", text: "Range 6\" · Strength 5 · Special Rules Cumbersome, Flaming Attacks"),))
 #namecost("The Temple Guard Palanquin is armed", "CHARACTER MOUNTS · TEMPLE GUARD PALANQUIN")
 #para(((emph: "", text: "The entry gives the bearers a Weapon Skill, a Strength and eight Attacks, and then never says what they are swinging. Most character mounts list no equipment because they are beasts fighting with what they were born with, but this one is four Temple Guard, and the books arm their counterparts: the Dwarfs' Shieldbearers, who likewise carry a character into battle, are given a hand weapon, as are the Anvil of Doom's crew, the Blood Throne's and the Halfling Ogre Bodyguard.
 "),))

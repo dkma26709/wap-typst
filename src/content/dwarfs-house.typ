@@ -870,7 +870,7 @@ what it was reaching for, and the reference is corrected to the rule the
 rulebook actually carries.
 "),))
 #field("Was", "")
-#para(((emph: "", text: "12/24\" 8 Flaming Attacks, Multiple Wounds (D3), Slow to Fire"),), style: "italic")
+#para(((emph: "", text: "Range 12/24\" · Strength 8 · Special Rules Flaming Attacks, Multiple Wounds (D3), Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "12/24\" 8 Cumbersome, Flaming Attacks, Multiple Wounds (D3)"),))
+#para(((emph: "", text: "Range 12/24\" · Strength 8 · Special Rules Cumbersome, Flaming Attacks, Multiple Wounds (D3)"),))
 
