@@ -124,6 +124,10 @@
   "cover": "covers/zombie-pirates.png"
  },
  {
+  "id": "lizardmen-house",
+  "cover": ""
+ },
+ {
   "id": "rulebook-house",
   "cover": ""
  }

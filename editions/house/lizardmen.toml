@@ -1,0 +1,52 @@
+# Amendments to Lizardmen 3.0.
+#
+# See editions/house/rulebook.toml for the format. `@LABEL: value` in `new`
+# writes a profile field; the rules lists below are fields, not prose.
+
+book = "lizardmen"
+
+
+[[change]]
+id      = "salamander-march-and-shoot"
+title   = "Salamanders may March & Shoot"
+chapter = "SPECIAL UNITS"
+entry   = "SALAMANDER"
+op      = "replace"
+why     = """
+A Skirmishing hunting pack that has to stand still to use its one weapon spends \
+most of a game out of position. March & Shoot lets the pack hunt at the pace the \
+unit is built for, and costs it nothing it was not already paying for in \
+Movement.
+"""
+
+original = """
+SPECIAL RULES: Aquatic, Cold-blooded, Fear, Mixed Unit, Natural Armour (5+) \
+(Salamander only), Natural
+"""
+
+new = """
+@SPECIAL RULES: Aquatic, Cold-blooded, Fear, March & Shoot, Mixed Unit, Natural \
+Armour (5+) (Salamander only), Natural
+"""
+
+
+[[change]]
+id      = "razordon-march-and-shoot"
+title   = "Razordons may March & Shoot"
+chapter = "SPECIAL UNITS"
+entry   = "RAZORDON"
+op      = "replace"
+why     = """
+The same reasoning as the Salamander it hunts beside: a Skirmishing pack whose \
+weapon demands it stand still is a pack that never gets to skirmish.
+"""
+
+original = """
+SPECIAL RULES: Aquatic, Cold-blooded, Fear, Mixed Unit, Natural Armour (5+) \
+(Razordon only), Natural
+"""
+
+new = """
+@SPECIAL RULES: Aquatic, Cold-blooded, Fear, March & Shoot, Mixed Unit, Natural \
+Armour (5+) (Razordon only), Natural
+"""

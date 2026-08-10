@@ -12,11 +12,30 @@
     "Typeset with Typst. Not for sale."
    ],
    "books": [
+    "lizardmen-house",
     "rulebook-house"
    ]
   }
  ],
  "books": [
+  {
+   "slug": "lizardmen",
+   "army": "Lizardmen",
+   "version": "3.0",
+   "source": "Warhammer - Lizardmen 3.0.pdf",
+   "source_pages": 42,
+   "entries": 54,
+   "chapters": 12,
+   "cover": "covers/lizardmen.png",
+   "layout": "army",
+   "figures": 0,
+   "id": "lizardmen-house",
+   "base": "lizardmen",
+   "edition": "house",
+   "edition_label": "House Rules",
+   "edition_version": "2026.1",
+   "changes": 2
+  },
   {
    "slug": "rulebook",
    "army": "The Game of Fantasy Battles",
