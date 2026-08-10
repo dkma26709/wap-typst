@@ -30,9 +30,9 @@ def lit(text: str) -> str:
 # Read from the rulebook rather than kept here as a second list, so the site
 # follows the rules. `cue` matches the sentence introducing each list.
 ALIGNMENTS = (
-    ("order", "Forces of Order", "forces of order"),
-    ("destruction", "Forces of Destruction", "forces of destruction"),
-    ("neutral", "Non-Aligned Forces", "non-aligned"),
+    ("order", "Forces of Order", "forces of order", "Order"),
+    ("destruction", "Forces of Destruction", "forces of destruction", "Destruction"),
+    ("neutral", "Non-Aligned Forces", "non-aligned", "Non-aligned"),
 )
 
 # Two armies are named in that list in a shorter or longer form than the book
@@ -61,7 +61,7 @@ def read_alignments(rulebook: Path) -> dict[str, str]:
     for block in entries[0]["blocks"]:
         if block["type"] == "para":
             lowered = block["text"].casefold()
-            slug = next((s for s, _, cue in ALIGNMENTS if cue in lowered), None)
+            slug = next((s for s, _, cue, _ in ALIGNMENTS if cue in lowered), None)
         elif block["type"] == "list" and slug:
             for item in block["items"]:
                 out[army_key(item["text"])] = slug
@@ -154,26 +154,43 @@ HEAD = """      <li class="head" data-align="{align}">
 SCRIPT = """
 const grid = document.getElementById('armies');
 const controls = document.getElementById('controls');
+const core = document.getElementById('core');
 const cards = [...grid.querySelectorAll('.book')];
 const heads = [...grid.querySelectorAll('.head')];
+const coreCards = core ? [...core.querySelectorAll('.book')] : [];
 const alpha = [...cards].sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
-let filter = 'all', sort = 'grouped';
+const state = { align: 'all', edition: 'all', sort: 'grouped' };
+
+function carries(card, edition) {
+  return edition === 'all' || card.dataset.editions.split(' ').includes(edition);
+}
 
 function apply() {
   for (const card of cards) {
-    card.hidden = filter !== 'all' && card.dataset.align !== filter;
+    card.hidden = !((state.align === 'all' || card.dataset.align === state.align)
+                    && carries(card, state.edition));
     card.style.order = '';
   }
+  // A head is dropped when its group has nothing left to show, rather than when
+  // the alignment filter excludes it — two filters can empty a group between them.
+  // Its count follows the filter too, since a band reading "14 books" above four
+  // of them is worse than no count at all.
   for (const head of heads) {
-    head.hidden = sort === 'alpha' || (filter !== 'all' && head.dataset.align !== filter);
+    const shown = cards.filter(
+      card => !card.hidden && card.dataset.align === head.dataset.align).length;
+    head.hidden = state.sort === 'alpha' || shown === 0;
+    head.querySelector('span').textContent = shown + (shown === 1 ? ' book' : ' books');
   }
-  if (sort === 'alpha') alpha.forEach((card, i) => { card.style.order = i + 1; });
+  if (state.sort === 'alpha') alpha.forEach((card, i) => { card.style.order = i + 1; });
+
+  // The rulebook has no allegiance, so only the edition filter reaches it.
+  for (const card of coreCards) card.hidden = !carries(card, state.edition);
+  if (core) core.hidden = coreCards.every(card => card.hidden);
 }
 
 for (const button of controls.querySelectorAll('button')) {
   button.addEventListener('click', () => {
-    const group = button.dataset.filter ? 'filter' : 'sort';
-    if (group === 'filter') filter = button.dataset.filter; else sort = button.dataset.sort;
+    state[button.dataset.group] = button.dataset.value;
     for (const sibling of button.parentElement.children) {
       sibling.setAttribute('aria-pressed', String(sibling === button));
     }
@@ -184,18 +201,35 @@ controls.hidden = false;
 apply();
 """
 
-CONTROLS = """  <div class="controls" id="controls" hidden>
-    <div class="set" role="group" aria-label="Filter by alignment">
-      <button data-filter="all" aria-pressed="true">All</button>
-      <button data-filter="order" aria-pressed="false">Order</button>
-      <button data-filter="destruction" aria-pressed="false">Destruction</button>
-      <button data-filter="neutral" aria-pressed="false">Non-aligned</button>
-    </div>
-    <div class="set" role="group" aria-label="Order">
-      <button data-sort="grouped" aria-pressed="true">Grouped</button>
-      <button data-sort="alpha" aria-pressed="false">A–Z</button>
-    </div>
-  </div>"""
+BUTTON = ('      <button data-group="{group}" data-value="{value}" '
+          'aria-pressed="{pressed}">{label}</button>')
+
+SET = """    <div class="set" role="group" aria-label="{label}">
+{buttons}
+    </div>"""
+
+
+def button_set(label: str, group: str, options: list[tuple[str, str]]) -> str:
+    buttons = "\n".join(
+        BUTTON.format(group=group, value=value, label=html.escape(text),
+                      pressed="true" if n == 0 else "false")
+        for n, (value, text) in enumerate(options)
+    )
+    return SET.format(label=label, buttons=buttons)
+
+
+def controls(editions: list[dict]) -> str:
+    sets = [button_set("Filter by allegiance", "align",
+                       [("all", "All")] + [(s, short) for s, _, _, short in ALIGNMENTS])]
+    # Only worth offering once there is more than the books' own text to choose.
+    if editions:
+        sets.append(button_set(
+            "Filter by edition", "edition",
+            [("all", "Any edition")] + [(e["slug"], e["label"]) for e in editions]))
+    sets.append(button_set("Order", "sort",
+                           [("grouped", "Grouped"), ("alpha", "A–Z")]))
+    return ('  <div class="controls" id="controls" hidden>\n'
+            + "\n".join(sets) + "\n  </div>")
 
 
 def sort_name(book: dict) -> str:
@@ -219,10 +253,11 @@ def card(book: dict, derived: dict[str, list[dict]], align: str | None) -> str:
         )
         for e in derived.get(book["id"], [])
     )
-    data = ""
+    carried = " ".join(e["edition"] for e in derived.get(book["id"], []))
+    data = f' data-editions="{carried}"'
     if align:
-        data = (f' data-align="{align}" '
-                f'data-name="{html.escape(sort_name(book), quote=True)}"')
+        data += (f' data-align="{align}"'
+                 f' data-name="{html.escape(sort_name(book), quote=True)}"')
     return CARD.format(
         id=book["id"], army=army, thumb=thumb, editions=editions, data=data,
         version=html.escape(book["version"]), entries=book["entries"],
@@ -230,14 +265,14 @@ def card(book: dict, derived: dict[str, list[dict]], align: str | None) -> str:
 
 
 def page(books: list[dict], derived: dict[str, list[dict]],
-         align: dict[str, str], css: str) -> str:
+         align: dict[str, str], editions: list[dict], css: str) -> str:
     rules = [b for b in books if b.get("layout") == "rules"]
     armies = sorted((b for b in books if b.get("layout") != "rules"), key=sort_name)
 
     # Built grouped and in source order, so the page is correct before the
     # script runs; A–Z is a re-ordering of what is already here.
     rows = []
-    for slug, title, _ in ALIGNMENTS:
+    for slug, title, _, _ in ALIGNMENTS:
         group = [b for b in armies if align[b["id"]] == slug]
         rows.append(HEAD.format(align=slug, title=title, count=len(group)))
         rows.extend(card(b, derived, slug) for b in group)
@@ -259,10 +294,12 @@ def page(books: list[dict], derived: dict[str, list[dict]],
     core = ""
     if rules:
         core = f"""
+  <section id="core">
   <h2 class="section">The Rules</h2>
   <ul class="books core">
 {chr(10).join(card(b, derived, None) for b in rules)}
   </ul>
+  </section>
 """
 
     return f"""<!doctype html>
@@ -281,7 +318,7 @@ def page(books: list[dict], derived: dict[str, list[dict]],
 {note}
 {core}
   <h2 class="section">The Armies</h2>
-{CONTROLS}
+{controls(editions)}
   <ul class="books" id="armies">
 {chr(10).join(rows)}
   </ul>
@@ -376,7 +413,7 @@ def main() -> None:
             old.unlink()
             print(f"  removed stale wrapper {old.name}")
 
-    (ROOT / "site" / "index.html").write_text(page(books, derived, align, css),
+    (ROOT / "site" / "index.html").write_text(page(books, derived, align, list(editions.values()), css),
                                               encoding="utf-8")
     (ROOT / "build" / "render.json").write_text(
         json.dumps(render, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

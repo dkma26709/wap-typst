@@ -38,7 +38,9 @@ it. A book that fails cannot reach the site.
 one list the workflow walks, so an edition compiles by the same route as the book
 it derives from. It also reads each army's allegiance out of the rulebook's own
 *Alliance & Alignment* section to group the landing page, rather than keeping a
-second list of thirty armies in step by hand.
+second list of thirty armies in step by hand. The page can be filtered by
+allegiance and by edition, and re-ordered alphabetically; it is built grouped and
+in source order, so it reads correctly before the script runs.
 
 The JSON intermediates and generated Typst are committed, so CI needs only the
 Typst compiler and never the source PDFs.
@@ -68,10 +70,10 @@ amended for one table.
 
 ```
 editions/house/edition.toml     what the edition is called, and its colophon
-editions/house/rulebook.toml    the changes it makes to that book
+editions/house/lizardmen.toml   the changes it makes to that book
       │
       ▼   patch.py
-build/editions/house/rulebook.json ──► src/content/rulebook-house.typ ──► PDF
+build/editions/house/lizardmen.json ──► src/content/lizardmen-house.typ ──► PDF
 ```
 
 Nothing under `build/<slug>.json` or `src/content/<slug>.typ` is written by
@@ -82,14 +84,14 @@ A change quotes the text it acts on, and that quotation is the anchor:
 
 ```toml
 [[change]]
-id       = "panic-cascade-depth"
-title    = "Panic spreads one unit deep"
-chapter  = "PANIC"
-entry    = "PANIC TESTS"          # omit to address the chapter's opening text
+id       = "salamander-spout-flames"
+title    = "Spout Flames: Cumbersome, and fired on the march"
+chapter  = "SPECIAL UNITS"
+entry    = "SALAMANDER"           # omit to address the chapter's opening text
 op       = "replace"              # or insert-after, insert-before, delete
 why      = "..."                  # printed in the changelog, not in the rules
-original = "This is the most destructive form of panic, as one unit can ..."
-new      = "A unit that begins to flee as the result of a failed ..."
+original = "n/a 4 Flaming Attacks, Slow to Fire"
+new      = "..."
 ```
 
 Punctuation and case are folded before matching, so a hyphen typed here finds an

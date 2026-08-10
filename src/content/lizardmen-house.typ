@@ -549,7 +549,7 @@ Strength 5 hits.")))
 #field("SPECIAL RULES", "Aquatic, Cold-blooded, Fear, Mixed Unit, Natural Armour (5+) (Salamander only), Natural")
 #para(((emph: "bold", text: "Armour (6+)"), (emph: "", text: " (Skink Handler only)"), (emph: "bold", text: ", Skirmishers.")))
 #items(((runs: ((emph: "bold", text: "Spout Flames:"), (emph: "", text: " Spout Flames shoots like a fire thrower with the following profile:")), sub: ()),))
-#minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Flaming Attacks, March & Shoot, Slow to Fire"))
+#minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Cumbersome, Flaming Attacks, March & Shoot"))
 #para(((emph: "", text: "If the artillery dice result is a misfire, no shots are fired and D3 Skink handlers are removed as casualties. If all Skink handlers are removed, the Salamander is subject to Frenzy for the remainder of the game."),))
 
 #entry("RAZORDON")
@@ -586,7 +586,7 @@ Strength 5 hits.")))
 #field("SPECIAL RULES", "Aquatic, Armour Piercing (1) (Salamander only), Cold-blooded, Mixed Unit, Natural")
 #para(((emph: "bold", text: "Armour (5+)"), (emph: "", text: " (Salamander only)"), (emph: "bold", text: ", Natural Armour (6+)"), (emph: "", text: " (Skink Handler only)"), (emph: "bold", text: ", Skirmishers.")))
 #items(((runs: ((emph: "bold", text: "Stream of Fire:"), (emph: "", text: " Stream of Fire is a fire thrower with the following profile:")), sub: ()),))
-#minitable(("Range", "Strength", "Special Rules"), ("6\"", "5", "Flaming Attacks, Slow to Fire"))
+#minitable(("Range", "Strength", "Special Rules"), ("6\"", "5", "Cumbersome, Flaming Attacks, March & Shoot"))
 #para(((emph: "", text: "If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as casualties. If all Skink handlers are removed, the Ancient Salamander is subject to Frenzy for the remainder of the game."),))
 
 #entry("BASTILADON")
@@ -809,15 +809,22 @@ Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
 
 #heading(level: 1, "OUR CHANGES")
 #para(((emph: "", text: "This edition is the Warhammer Armies Project text with the changes below applied to it. Everything not listed here is unchanged. Each entry gives the rule as it was written, the rule as it now stands, and why it was changed."),))
-#namecost("Spout Flames gains March & Shoot", "SPECIAL UNITS · SALAMANDER")
-#para(((emph: "", text: "A Skirmishing hunting pack whose one weapon cannot be used in a turn it marched spends most of a game out of position. The rule sits on the weapon rather than the unit, beside Slow to Fire, which is where every other book in the set puts it.
+#namecost("Spout Flames: Cumbersome, and fired on the march", "SPECIAL UNITS · SALAMANDER")
+#para(((emph: "", text: "Two things at once, both on the one profile. Slow to Fire is named here and defined nowhere in any of the books, so it is corrected to Cumbersome — a weapon that cannot be used to Stand and Shoot — which is the rule it was reaching for. March & Shoot is ours: a Skirmishing hunting pack whose only weapon cannot be used in a turn it marched spends most of a game out of position. The two do not overlap; one governs the charge reaction, the other the shooting phase.
 "),))
 #field("Was", "")
 #para(((emph: "", text: "n/a 4 Flaming Attacks, Slow to Fire"),), style: "italic")
 #field("Now", "")
-#para(((emph: "", text: "n/a 4 Flaming Attacks, March & Shoot, Slow to Fire"),))
+#para(((emph: "", text: "n/a 4 Cumbersome, Flaming Attacks, March & Shoot"),))
+#namecost("The Ancient's Spout Flames, likewise", "RARE UNITS · ANCIENT SALAMANDER")
+#para(((emph: "", text: "The same weapon on a larger beast, and it would be strange for the Ancient to be slower to bring its flames to bear than the Salamander it grew out of.
+"),))
+#field("Was", "")
+#para(((emph: "", text: "6\" 5 Flaming Attacks, Slow to Fire"),), style: "italic")
+#field("Now", "")
+#para(((emph: "", text: "6\" 5 Cumbersome, Flaming Attacks, March & Shoot"),))
 #namecost("The Razordon's spines gain March & Shoot", "SPECIAL UNITS · RAZORDON")
-#para(((emph: "", text: "The same reasoning as the Salamander it hunts beside: a Skirmishing pack whose weapon demands it stand still is a pack that never gets to skirmish.
+#para(((emph: "", text: "The same reasoning as the Salamander it hunts beside: a Skirmishing pack whose weapon demands it stand still is a pack that never gets to skirmish. Note that the Razordon's weapon does not carry Cumbersome, since Instinctive Defence requires it to Stand and Shoot when charged.
 "),))
 #field("Was", "")
 #para(((emph: "", text: "18\" 4 Armour Piercing (1), Rapid Fire"),), style: "italic")

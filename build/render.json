@@ -124,11 +124,31 @@
   "cover": "covers/zombie-pirates.png"
  },
  {
+  "id": "albion-house",
+  "cover": ""
+ },
+ {
+  "id": "beastmen-house",
+  "cover": ""
+ },
+ {
+  "id": "daemons-of-chaos-house",
+  "cover": ""
+ },
+ {
+  "id": "dwarfs-house",
+  "cover": ""
+ },
+ {
+  "id": "empire-house",
+  "cover": ""
+ },
+ {
   "id": "lizardmen-house",
   "cover": ""
  },
  {
-  "id": "rulebook-house",
+  "id": "skaven-house",
   "cover": ""
  }
 ]
