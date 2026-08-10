@@ -13,25 +13,44 @@ book = "lizardmen"
 
 
 [[change]]
+id      = "skink-cohort-poisoned-attacks"
+title   = "Skink Cohorts are not poisoned by default"
+chapter = "CORE UNITS"
+entry   = "SKINK COHORT"
+op      = "replace"
+why     = """
+Poisoned Attacks comes from Firefly Frog Venom, which is an upgrade the unit pays \
+two points a model for, and which grants the rule to missile attacks. A Skink \
+Cohort as it comes carries a hand weapon and a shield and has no missile attacks \
+to poison, so the rule sits in its profile doing nothing while implying the \
+upgrade is free. A Cohort that buys shortbows or javelins and then buys the venom \
+gains it, exactly as the Skirmishers and Chameleon Skinks beside it do.
+"""
+
+original = """SPECIAL RULES: Aquatic, Cold-blooded, Natural Armour (6+), Poisoned Attacks ("""
+
+new = """
+@SPECIAL RULES: Aquatic, Cold-blooded, Natural Armour (6+)
+"""
+
+
+[[change]]
 id      = "salamander-spout-flames"
-title   = "Spout Flames: Cumbersome, and fired on the march"
+title   = "Spout Flames is Cumbersome"
 chapter = "SPECIAL UNITS"
 entry   = "SALAMANDER"
 op      = "replace"
 why     = """
-Two things at once, both on the one profile. Slow to Fire is named here and \
-defined nowhere in any of the books, so it is corrected to Cumbersome — a weapon \
-that cannot be used to Stand and Shoot — which is the rule it was reaching for. \
-March & Shoot is ours: a Skirmishing hunting pack whose only weapon cannot be \
-used in a turn it marched spends most of a game out of position. The two do not \
-overlap; one governs the charge reaction, the other the shooting phase.
+Slow to Fire is named here and defined nowhere in any of the books. Cumbersome — \
+a weapon that cannot be used to Stand and Shoot — is the rule it was reaching \
+for, and the one the rest of the set puts on weapons of this kind.
 """
 
 original = """n/a 4 Flaming Attacks, Slow to Fire"""
 
 new = """
 |Range|Strength|Special Rules
-|n/a|4|Cumbersome, Flaming Attacks, March & Shoot
+|n/a|4|Cumbersome, Flaming Attacks
 """
 
 
@@ -42,15 +61,14 @@ chapter = "RARE UNITS"
 entry   = "ANCIENT SALAMANDER"
 op      = "replace"
 why     = """
-The same weapon on a larger beast, and it would be strange for the Ancient to be \
-slower to bring its flames to bear than the Salamander it grew out of.
+The same weapon on a larger beast, and the same correction.
 """
 
 original = """6" 5 Flaming Attacks, Slow to Fire"""
 
 new = """
 |Range|Strength|Special Rules
-|6"|5|Cumbersome, Flaming Attacks, March & Shoot
+|6"|5|Cumbersome, Flaming Attacks
 """
 
 
@@ -74,25 +92,4 @@ original = """BASE SIZE: 50x75 or 60x90"""
 
 new = """
 @EQUIPMENT: Hand weapon
-"""
-
-
-[[change]]
-id      = "razordon-spines"
-title   = "The Razordon's spines gain March & Shoot"
-chapter = "SPECIAL UNITS"
-entry   = "RAZORDON"
-op      = "replace"
-why     = """
-The same reasoning as the Salamander it hunts beside: a Skirmishing pack whose \
-weapon demands it stand still is a pack that never gets to skirmish. Note that \
-the Razordon's weapon does not carry Cumbersome, since Instinctive Defence \
-requires it to Stand and Shoot when charged.
-"""
-
-original = """18" 4 Armour Piercing (1), Rapid Fire"""
-
-new = """
-|Range|Strength|Special Rules
-|18"|4|Armour Piercing (1), March & Shoot, Rapid Fire
 """
