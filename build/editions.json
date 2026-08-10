@@ -1,0 +1,39 @@
+{
+ "editions": [
+  {
+   "slug": "house",
+   "label": "House Rules",
+   "version": "2026.1",
+   "blurb": "The Warhammer Armies Project rules with our own amendments applied.",
+   "colophon": [
+    "This is a MODIFIED edition. The rules text has been altered from the original in the places listed under Our Changes, and those alterations are not marked in the body. Do not take a rule here to be the author's wording without checking that chapter.",
+    "The underlying work is the Warhammer Armies Project, written and freely distributed by Mathias Eliasson. All rules text, army design and points values are his; the amendments are ours alone, made for our own table, and carry no endorsement from him.",
+    "Warhammer, Warhammer Fantasy Battle and all associated names, races and places are trademarks of Games Workshop Limited. This document is unofficial and unaffiliated, and no challenge to their status is intended.",
+    "Typeset with Typst. Not for sale."
+   ],
+   "books": [
+    "rulebook-house"
+   ]
+  }
+ ],
+ "books": [
+  {
+   "slug": "rulebook",
+   "army": "The Game of Fantasy Battles",
+   "version": "3.11",
+   "source": "Warhammer - The Game of Fantasy Battles - 9th Edition 3.11.pdf",
+   "source_pages": 126,
+   "entries": 282,
+   "chapters": 29,
+   "cover": "covers/rulebook.png",
+   "layout": "rules",
+   "figures": 46,
+   "id": "rulebook-house",
+   "base": "rulebook",
+   "edition": "house",
+   "edition_label": "House Rules",
+   "edition_version": "2026.1",
+   "changes": 1
+  }
+ ]
+}

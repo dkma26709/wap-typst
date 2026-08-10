@@ -34,6 +34,12 @@ into it only after that book has passed both checks, and everything downstream �
 the Typst wrappers, the landing page, the publish workflow — is generated from
 it. A book that fails cannot reach the site.
 
+`emit.py` combines it with `build/editions.json` into `build/render.json`, the
+one list the workflow walks, so an edition compiles by the same route as the book
+it derives from. It also reads each army's allegiance out of the rulebook's own
+*Alliance & Alignment* section to group the landing page, rather than keeping a
+second list of thirty armies in step by hand.
+
 The JSON intermediates and generated Typst are committed, so CI needs only the
 Typst compiler and never the source PDFs.
 
@@ -41,7 +47,10 @@ Typst compiler and never the source PDFs.
 # Extract, verify and generate Typst content for a directory of books
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 
-# Generate the per-book Typst documents and the landing page from the manifest
+# Apply each edition's changes to the books it derives from
+python patch.py
+
+# Generate the Typst documents, the landing page and the render list
 python emit.py
 
 # Compile one. Bundled fonts only, so this matches the CI render exactly.
@@ -50,6 +59,60 @@ typst compile --ignore-system-fonts --root . src/lizardmen.typ out/lizardmen.pdf
 
 `batch.py` skips a book whose JSON is newer than its PDF, so re-runs are cheap;
 pass `--force` to re-extract everything.
+
+## Editions
+
+An **edition** is a book plus an ordered set of changes. The extraction is the
+edition with no changes; a *house* edition is one with them — the same rules,
+amended for one table.
+
+```
+editions/house/edition.toml     what the edition is called, and its colophon
+editions/house/rulebook.toml    the changes it makes to that book
+      │
+      ▼   patch.py
+build/editions/house/rulebook.json ──► src/content/rulebook-house.typ ──► PDF
+```
+
+Nothing under `build/<slug>.json` or `src/content/<slug>.typ` is written by
+`patch.py`, so the faithful reproduction stays exactly as it was extracted and
+keeps its own place on the site alongside the amended one.
+
+A change quotes the text it acts on, and that quotation is the anchor:
+
+```toml
+[[change]]
+id       = "panic-cascade-depth"
+title    = "Panic spreads one unit deep"
+chapter  = "PANIC"
+entry    = "PANIC TESTS"          # omit to address the chapter's opening text
+op       = "replace"              # or insert-after, insert-before, delete
+why      = "..."                  # printed in the changelog, not in the rules
+original = "This is the most destructive form of panic, as one unit can ..."
+new      = "A unit that begins to flee as the result of a failed ..."
+```
+
+Punctuation and case are folded before matching, so a hyphen typed here finds an
+en dash in the source, but the words must be exact. `until` extends the anchor
+over consecutive blocks; `occurrence` picks between repeats. In `new`, a blank
+line starts a new paragraph, `- ` a list, `## NAME` a run-in heading, and
+`**bold**` and `*italic*` are the only inline markup.
+
+**A change that no longer matches is a failure, not a warning.** If a book is
+re-extracted and a patched paragraph has moved or been reworded, `patch.py`
+stops and names the change, printing the nearest text it found so the anchor can
+be re-pasted. The alternative — landing a house rule quietly on the wrong
+paragraph — is the kind of fault you would discover mid-game.
+
+```bash
+python patch.py --check    # verify every anchor still matches, write nothing
+```
+
+The changed rules are **not marked in the body**; an amended book is meant to
+read as a book. What each edition changed is set out in a generated chapter at
+the back, quoting the original wording, the new wording and the reason. That
+chapter is built as ordinary blocks and goes through the same renderer as the
+rest of the book, so there is no second output path to keep in step.
 
 ## How the extraction works
 

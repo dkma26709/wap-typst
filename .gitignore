@@ -8,3 +8,8 @@ _site/
 # Per-book extracted artwork. Covers are promoted into assets/covers/, and the
 # parchment background into assets/images/; the rest is not used.
 build/images/
+
+# A patched book is reproducible from the book it derives from and the edition's
+# own TOML, both of which are committed. build/editions.json is not — emit.py
+# reads it, and CI has no Python to regenerate it with.
+build/editions/

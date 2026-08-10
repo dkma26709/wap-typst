@@ -1,0 +1,38 @@
+# Amendments to The Game of Fantasy Battles 3.11.
+#
+# `original` is the anchor: the block's text, quoted from the book. Punctuation
+# and case are folded before matching, so a hyphen typed here will find an en
+# dash in the source, but the words must be exact. `until` extends the anchor
+# across consecutive blocks. Ops: replace, insert-after, insert-before, delete.
+
+book = "rulebook"
+
+
+[[change]]
+id      = "panic-cascade-depth"
+title   = "Panic spreads one unit deep"
+chapter = "PANIC"
+entry   = "PANIC TESTS"
+op      = "replace"
+why     = """
+The book names this the most destructive form of panic and leaves it uncapped, \
+so a single failed test can roll through a battleline and decide a flank before \
+anyone has swung a weapon. Capping the chain keeps the shock of a unit breaking \
+without letting one die throw settle the game.
+"""
+
+original = """
+This is the most destructive form of panic, as one unit can panic and flee \
+through another unit, which in turn might panic and flee through a further \
+unit, and so on until your battleline is reduced to tatters.
+"""
+
+new = """
+A unit that begins to flee as the result of a failed Fled Through test does not \
+itself force Fled Through tests on the units it then moves through. Panic \
+carried this way spreads one unit deep and stops.
+
+Panic caused by any other means is unaffected — a unit that flees for another \
+reason forces Fled Through tests as normal, and a unit already fleeing at the \
+start of the phase does likewise.
+"""

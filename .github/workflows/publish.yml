@@ -24,20 +24,24 @@ jobs:
 
       - uses: typst-community/setup-typst@v5
 
-      - name: Compile every book in the manifest
+      - name: Compile everything on the render list
         run: |
           mkdir -p _site
           count=0
-          for slug in $(jq -r '.books[].slug' build/books.json); do
-            echo "::group::$slug"
+          # emit.py writes build/render.json from the extraction manifest and the
+          # edition manifest together, so this loop covers both without needing
+          # to know which is which.
+          for id in $(jq -r '.[].id' build/render.json); do
+            echo "::group::$id"
             # Bundled fonts only, so the CI render matches the local one exactly.
             typst compile --ignore-system-fonts --root . \
-              "src/$slug.typ" "_site/$slug.pdf"
-            # The cover keeps the source image's own extension.
-            cover=$(jq -r --arg s "$slug" \
-              '.books[] | select(.slug==$s) | .cover // empty' build/books.json)
+              "src/$id.typ" "_site/$id.pdf"
+            # The cover keeps the source image's own extension. An edition shares
+            # the cover of the book it derives from, and so lists none of its own.
+            cover=$(jq -r --arg i "$id" \
+              '.[] | select(.id==$i) | .cover // empty' build/render.json)
             if [ -n "$cover" ] && [ -f "assets/$cover" ]; then
-              cp "assets/$cover" "_site/$slug-cover.${cover##*.}"
+              cp "assets/$cover" "_site/$id-cover.${cover##*.}"
             fi
             count=$((count + 1))
             echo "::endgroup::"

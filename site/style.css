@@ -37,6 +37,45 @@ h1 {
 .sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 .books {
   list-style: none;
   margin: 0;
@@ -45,6 +84,27 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
 }
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
 .book {
   display: grid;
   grid-template-columns: 78px 1fr;
@@ -74,6 +134,24 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 .book h2 a { color: var(--ink); text-decoration: none; }
 .book h2 a:hover { color: var(--accent); }
 .book p { margin: 0; color: var(--muted); font-size: .85rem; }
+/* A modified edition of the book above it: set apart by a rule rather than by
+   colour, so it still reads as separate where the accent is hard to see. */
+.book .editions {
+  margin: .4rem 0 0;
+  padding-top: .35rem;
+  border-top: 1px solid var(--rule);
+  font-size: .8rem;
+}
+.book .editions a { color: var(--accent); text-decoration: none; font-weight: 700; }
+.book .editions a:hover { text-decoration: underline; }
+
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
 
 footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
 footer p { margin: .7rem 0; }
