@@ -94,9 +94,27 @@ new      = "A unit that begins to flee as the result of a failed ..."
 
 Punctuation and case are folded before matching, so a hyphen typed here finds an
 en dash in the source, but the words must be exact. `until` extends the anchor
-over consecutive blocks; `occurrence` picks between repeats. In `new`, a blank
-line starts a new paragraph, `- ` a list, `## NAME` a run-in heading, and
-`**bold**` and `*italic*` are the only inline markup.
+over consecutive blocks; `occurrence` picks between repeats.
+
+In `new`, a blank line starts a new block, and its first character decides what
+kind:
+
+| | |
+|---|---|
+| *anything else* | a paragraph, with `**bold**` and `*italic*` available |
+| `- ` | a list, one item per line |
+| `## ` | a run-in heading |
+| `@LABEL: value` | a profile field — `TROOP TYPE`, `SPECIAL RULES`, and so on |
+| `\|` × 2 lines | a weapon profile: headings, then values |
+
+```toml
+new = """
+@SPECIAL RULES: Aquatic, Cold-blooded, Fear, Mixed Unit
+
+|Range|Strength|Special Rules
+|18"|4|Armour Piercing (1), March & Shoot, Rapid Fire
+"""
+```
 
 **A change that no longer matches is a failure, not a warning.** If a book is
 re-extracted and a patched paragraph has moved or been reworded, `patch.py`

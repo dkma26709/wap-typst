@@ -109,14 +109,25 @@ def para(text: str, style: str = "body") -> dict:
 
 def parse_body(source: str) -> list[dict]:
     """Blank lines separate blocks. A block of `- ` lines is a list, a lone
-    `## NAME` line is a run-in heading, `@LABEL: value` is a profile field, and
-    anything else is a paragraph."""
+    `## NAME` line is a run-in heading, `@LABEL: value` is a profile field, two
+    `|`-delimited lines are a weapon profile, and anything else is a paragraph."""
     blocks: list[dict] = []
     for chunk in re.split(r"\n\s*\n", source.strip()):
         lines = [ln.strip() for ln in chunk.splitlines() if ln.strip()]
         if not lines:
             continue
-        if lines[0].startswith("@"):
+        if lines[0].startswith("|"):
+            rows = [[c.strip() for c in ln.strip("|").split("|")] for ln in lines]
+            if len(rows) != 2:
+                raise PatchError(f"a weapon profile is two `|` lines, headings "
+                                 f"then values; this one has {len(rows)}")
+            columns, values = rows
+            if len(columns) != len(values):
+                raise PatchError(f"the weapon profile has {len(columns)} headings "
+                                 f"but {len(values)} values")
+            blocks.append({"type": "minitable", "columns": columns,
+                           "row": dict(zip(columns, values))})
+        elif lines[0].startswith("@"):
             label, colon, value = " ".join(lines)[1:].partition(":")
             if not colon:
                 raise PatchError(f"the field {label[:40]!r} has no colon; write "
