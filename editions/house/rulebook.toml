@@ -1,0 +1,27 @@
+# Amendments to The Game of Fantasy Battles 3.11.
+#
+# See editions/house/lizardmen.toml for the format.
+
+book = "rulebook"
+
+
+[[change]]
+id      = "spells-known-level-plus-one"
+title   = "Wizards know one spell more than their level"
+chapter = "MAGIC"
+entry   = "WIZARDS & SPELLS"
+op      = "replace"
+why     = """
+A Level 1 Wizard with a single spell is entirely predictable: the opponent knows \
+what is coming, saves a dispel die for it, and the model spends the game as an \
+expensive banner. One spell more gives every Wizard a choice to make in each \
+Magic phase, and the lores can carry it — each has three spells at every level, \
+so even a Level 1 Wizard picking two is choosing rather than taking what is left.
+"""
+
+original = """Each Wizard may choose a number of spells equal to their level."""
+
+new = """
+Each Wizard may choose a number of spells equal to their level plus one. Any \
+Signature spell they know is in addition to these, as described below.
+"""
