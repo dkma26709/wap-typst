@@ -55,6 +55,29 @@ new = """
 
 
 [[change]]
+id      = "temple-guard-palanquin-equipment"
+title   = "The Temple Guard Palanquin is armed"
+chapter = "CHARACTER MOUNTS"
+entry   = "TEMPLE GUARD PALANQUIN"
+op      = "insert-after"
+why     = """
+The entry gives the bearers a Weapon Skill, a Strength and eight Attacks, and \
+then never says what they are swinging. Most character mounts list no equipment \
+because they are beasts fighting with what they were born with, but this one is \
+four Temple Guard, and the books arm their counterparts: the Dwarfs' \
+Shieldbearers, who likewise carry a character into battle, are given a hand \
+weapon, as are the Anvil of Doom's crew, the Blood Throne's and the Halfling \
+Ogre Bodyguard.
+"""
+
+original = """BASE SIZE: 50x75 or 60x90"""
+
+new = """
+@EQUIPMENT: Hand weapon
+"""
+
+
+[[change]]
 id      = "razordon-spines"
 title   = "The Razordon's spines gain March & Shoot"
 chapter = "SPECIAL UNITS"
