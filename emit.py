@@ -133,16 +133,17 @@ def wrapper(book: dict, edition: dict | None) -> str:
 '''
 
 
+# The books' own text is an edition like any other, so that it can be the thing
+# selected rather than the absence of a selection.
+BASE = {"slug": "wap", "label": "WAP v3"}
+
 CARD = """      <li class="book"{data}>
         <a href="{id}.pdf">{thumb}</a>
         <div>
           <h2><a href="{id}.pdf">{army}</a></h2>
-          <p>Version {version} · {entries} entries</p>{editions}
+          <p>{meta}</p>
         </div>
       </li>"""
-
-EDITION_LINE = """
-          <p class="editions"><a href="{id}.pdf">{label}</a> · {changes}</p>"""
 
 HEAD = """      <li class="head" data-align="{align}">
         <h2>{title}</h2><span>{count} books</span>
@@ -159,16 +160,12 @@ const cards = [...grid.querySelectorAll('.book')];
 const heads = [...grid.querySelectorAll('.head')];
 const coreCards = core ? [...core.querySelectorAll('.book')] : [];
 const alpha = [...cards].sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
-const state = { align: 'all', edition: 'all', sort: 'grouped' };
-
-function carries(card, edition) {
-  return edition === 'all' || card.dataset.editions.split(' ').includes(edition);
-}
+const state = { align: 'all', edition: 'wap', sort: 'grouped' };
 
 function apply() {
   for (const card of cards) {
     card.hidden = !((state.align === 'all' || card.dataset.align === state.align)
-                    && carries(card, state.edition));
+                    && card.dataset.edition === state.edition);
     card.style.order = '';
   }
   // A head is dropped when its group has nothing left to show, rather than when
@@ -184,7 +181,7 @@ function apply() {
   if (state.sort === 'alpha') alpha.forEach((card, i) => { card.style.order = i + 1; });
 
   // The rulebook has no allegiance, so only the edition filter reaches it.
-  for (const card of coreCards) card.hidden = !carries(card, state.edition);
+  for (const card of coreCards) card.hidden = card.dataset.edition !== state.edition;
   if (core) core.hidden = coreCards.every(card => card.hidden);
 }
 
@@ -225,7 +222,8 @@ def controls(editions: list[dict]) -> str:
     if editions:
         sets.append(button_set(
             "Filter by edition", "edition",
-            [("all", "Any edition")] + [(e["slug"], e["label"]) for e in editions]))
+            [(BASE["slug"], BASE["label"])]
+            + [(e["slug"], e["label"]) for e in editions]))
     sets.append(button_set("Order", "sort",
                            [("grouped", "Grouped"), ("alpha", "A–Z")]))
     return ('  <div class="controls" id="controls" hidden>\n'
@@ -237,31 +235,37 @@ def sort_name(book: dict) -> str:
     return book["army"].casefold().removeprefix("the ")
 
 
-def card(book: dict, derived: dict[str, list[dict]], align: str | None) -> str:
+def card(book: dict, edition: str, ident: str, meta: str,
+         align: str | None) -> str:
+    """One card is one book in one edition. Exactly one edition is always
+    selected, so a card never has to describe more than the one it is."""
     army = html.escape(book["army"])
-    # Images are copied without re-encoding, so the extension follows the
-    # source rather than being assumed.
+    # An edition shares the cover of the book it derives from, of which the site
+    # holds one copy. Images are copied without re-encoding, so the extension
+    # follows the source rather than being assumed.
     thumb = '<span class="nothumb"></span>'
     if book["cover"]:
         ext = Path(book["cover"]).suffix
         thumb = (f'<img src="{book["id"]}-cover{ext}" '
                  f'alt="{army} cover" loading="lazy">')
-    editions = "".join(
-        EDITION_LINE.format(
-            id=e["id"], label=html.escape(e["edition_label"]),
-            changes=f"{e['changes']} change" + ("s" if e["changes"] != 1 else ""),
-        )
-        for e in derived.get(book["id"], [])
-    )
-    carried = " ".join(e["edition"] for e in derived.get(book["id"], []))
-    data = f' data-editions="{carried}"'
+    data = f' data-edition="{edition}"'
     if align:
         data += (f' data-align="{align}"'
                  f' data-name="{html.escape(sort_name(book), quote=True)}"')
-    return CARD.format(
-        id=book["id"], army=army, thumb=thumb, editions=editions, data=data,
-        version=html.escape(book["version"]), entries=book["entries"],
-    )
+    return CARD.format(id=ident, army=army, thumb=thumb, data=data,
+                       meta=html.escape(meta))
+
+
+def cards_for(book: dict, derived: dict[str, list[dict]],
+              align: str | None) -> list[str]:
+    out = [card(book, BASE["slug"], book["id"],
+                f"Version {book['version']} · {book['entries']} entries", align)]
+    for e in derived.get(book["id"], []):
+        stamp = f" {e['edition_version']}" if e["edition_version"] else ""
+        changes = f"{e['changes']} change" + ("s" if e["changes"] != 1 else "")
+        out.append(card(book, e["edition"], e["id"],
+                        f"{e['edition_label']}{stamp} · {changes}", align))
+    return out
 
 
 def page(books: list[dict], derived: dict[str, list[dict]],
@@ -275,7 +279,8 @@ def page(books: list[dict], derived: dict[str, list[dict]],
     for slug, title, _, _ in ALIGNMENTS:
         group = [b for b in armies if align[b["id"]] == slug]
         rows.append(HEAD.format(align=slug, title=title, count=len(group)))
-        rows.extend(card(b, derived, slug) for b in group)
+        for b in group:
+            rows.extend(cards_for(b, derived, slug))
 
     # The rulebook's entries are sections of prose, not units, so they are not
     # added to a count the line below calls unit entries.
@@ -285,10 +290,10 @@ def page(books: list[dict], derived: dict[str, list[dict]],
     if count:
         note = ("""
   <p class="note">
-    Some books carry a second, <strong>modified</strong> edition alongside the
-    original — our own amendments, made for our own table. Where one exists it is
-    linked beneath the book, and every change it makes is listed in the back of
-    it.
+    Some books exist in a second, <strong>modified</strong> edition alongside the
+    original — our own amendments, made for our own table. Switch between them
+    with the edition control; every change an edition makes is listed in the back
+    of it.
   </p>""")
 
     core = ""
@@ -297,7 +302,7 @@ def page(books: list[dict], derived: dict[str, list[dict]],
   <section id="core">
   <h2 class="section">The Rules</h2>
   <ul class="books core">
-{chr(10).join(card(b, derived, None) for b in rules)}
+{chr(10).join(c for b in rules for c in cards_for(b, derived, None))}
   </ul>
   </section>
 """

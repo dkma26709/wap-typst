@@ -134,17 +134,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 .book h2 a { color: var(--ink); text-decoration: none; }
 .book h2 a:hover { color: var(--accent); }
 .book p { margin: 0; color: var(--muted); font-size: .85rem; }
-/* A modified edition of the book above it: set apart by a rule rather than by
-   colour, so it still reads as separate where the accent is hard to see. */
-.book .editions {
-  margin: .4rem 0 0;
-  padding-top: .35rem;
-  border-top: 1px solid var(--rule);
-  font-size: .8rem;
-}
-.book .editions a { color: var(--accent); text-decoration: none; font-weight: 700; }
-.book .editions a:hover { text-decoration: underline; }
-
 .note {
   margin: -1.2rem 0 2rem;
   padding-left: .9rem;
