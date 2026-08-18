@@ -262,9 +262,13 @@ def cards_for(book: dict, derived: dict[str, list[dict]],
                 f"Version {book['version']} · {book['entries']} entries", align)]
     for e in derived.get(book["id"], []):
         stamp = f" {e['edition_version']}" if e["edition_version"] else ""
-        changes = f"{e['changes']} change" + ("s" if e["changes"] != 1 else "")
+        # An edition may change the rules, propose changes to them, or both.
+        tally = " · ".join(f"{e[k]} {noun}" + ("s" if e[k] != 1 else "")
+                           for k, noun in (("changes", "change"),
+                                           ("proposals", "proposal"))
+                           if e.get(k))
         out.append(card(book, e["edition"], e["id"],
-                        f"{e['edition_label']}{stamp} · {changes}", align))
+                        f"{e['edition_label']}{stamp} · {tally}", align))
     return out
 
 
@@ -290,10 +294,11 @@ def page(books: list[dict], derived: dict[str, list[dict]],
     if count:
         note = ("""
   <p class="note">
-    Some books exist in a second, <strong>modified</strong> edition alongside the
-    original — our own amendments, made for our own table. Switch between them
-    with the edition control; every change an edition makes is listed in the back
-    of it.
+    Some books exist in more than one edition alongside the original: the
+    <strong>house rules</strong> we play, and the <strong>proposals</strong> we
+    are still arguing about. Switch between them with the edition control. What
+    an edition changed — and what it only proposes — is set out in the back of
+    it.
   </p>""")
 
     core = ""

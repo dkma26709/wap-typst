@@ -81,11 +81,11 @@ Nothing under `build/<slug>.json` or `src/content/<slug>.typ` is written by
 keeps its own place on the site alongside the amended one.
 
 An edition may name another in `derives_from`, in which case it patches that
-edition's text rather than the original, and its books carry both changelogs.
-`editions/proposal/` does this: it holds rules under discussion, argued against
-the text actually being played rather than against the book they amend. The
-parent is built first even when only the child is asked for, so
-`--edition proposal` still checks its anchors against the house text.
+edition's text rather than the original and inherits everything it added.
+`editions/proposal/` does this, so a proposal is read against the rules actually
+being played rather than against the book they amend. The parent is built first
+even when only the child is asked for, so `--edition proposal` still checks its
+anchors against the house text.
 
 | | |
 |---|---|
@@ -146,6 +146,30 @@ read as a book. What each edition changed is set out in a generated chapter at
 the back, quoting the original wording, the new wording and the reason. That
 chapter is built as ordinary blocks and goes through the same renderer as the
 rest of the book, so there is no second output path to keep in step.
+
+## Proposals
+
+A `[[proposal]]` is a change described rather than made. It anchors on nothing
+and alters nothing; it is set out in a chapter at the back as what it would
+change, why, what it would cost, and what it would look like at the table — the
+argument to have before anyone writes it into the rules.
+
+```toml
+[[proposal]]
+id       = "armour-piercing-out-of-strength"
+title    = "Take armour penetration out of Strength"
+status   = "under discussion"     # printed beside the title
+summary  = "..."                  # what would change
+why      = "..."                  # why it is worth changing
+cost     = "..."                  # what it would take to do
+examples = ["...", "..."]         # one or two, worked at the table
+```
+
+Every field but `id` and `summary` is optional, and each is a body in the same
+block format as a change's `new`. A file may carry changes, proposals or both;
+they are set out in separate chapters, so what an edition *did* is never mixed
+up with what it is only *considering*. Once a proposal is agreed it is rewritten
+as `[[change]]` entries and deleted from the proposals file.
 
 ## How the extraction works
 

@@ -10,7 +10,7 @@
 )
 
 #colophon((
-  "This is a PROPOSAL edition, and no part of it is in force. The rules text has been altered from the original in the places listed under Our Changes, which we play, and under Proposed Changes, which we do not — those are drafted here so they can be read in context and argued over. None of the alterations are marked in the body. Do not bring this book to a game expecting it to be the one being played.",
+  "The rules in this book are the ones we play. Nothing in the body has been altered by the proposals: they are set out in their own chapter at the back, each as a description of what it would change and why, and none of them is in force. A proposal only becomes a rule once it is agreed, and it will appear under Our Changes when it does.",
   "The underlying work is the Warhammer Armies Project, written and freely distributed by Mathias Eliasson. All rules text, army design and points values are his; the amendments and the proposals are ours alone, made for our own table, and carry no endorsement from him.",
   "Warhammer, Warhammer Fantasy Battle and all associated names, races and places are trademarks of Games Workshop Limited. This document is unofficial and unaffiliated, and no challenge to their status is intended.",
   "Typeset with Typst. Not for sale.",

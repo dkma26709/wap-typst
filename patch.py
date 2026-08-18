@@ -11,6 +11,11 @@ edition's text rather than the original — a proposal is written against the ru
 as they are actually played, and its book carries both changelogs. The parent is
 always built first, even when only the child was asked for.
 
+Beside `[[change]]`, a file may carry `[[proposal]]`: a change described rather
+than made. It anchors on nothing and alters nothing, and is set out at the back
+of the book as what it would change, why, and what it would look like at the
+table — the argument to have before anybody writes it into the rules.
+
 Every change anchors on the text it acts upon, quoted verbatim from the book. If
 that text later moves or is reworded upstream, the anchor stops matching and the
 run fails — loudly, and naming the change — rather than landing a house rule on
@@ -317,6 +322,45 @@ def changelog(records: list[dict], title: str) -> dict:
     return {"title": title, "page": 0, "intro": intro, "entries": []}
 
 
+# --- the prospectus ---------------------------------------------------------
+
+PROSPECTUS_OPENING = (
+    "What follows is not rules. Nothing here has been agreed, nothing here is "
+    "played, and the rules text of this book is untouched by all of it. Each "
+    "proposal sets out what it would change, why it is worth changing, and what "
+    "it would look like at the table — enough to be argued over, and no more. "
+    "Only once one is settled is it written into the book, and it will appear "
+    "under Our Changes when it is."
+)
+
+
+def prospectus(proposals: list[dict], title: str, where: str) -> dict:
+    """A chapter of changes described rather than made."""
+    intro: list[dict] = [para(PROSPECTUS_OPENING)]
+    for n, p in enumerate(proposals, 1):
+        if "id" not in p:
+            raise PatchError(f"{where}: proposal {n} has no id")
+        if not p.get("summary", "").strip():
+            raise PatchError(f"{where} [{p['id']}]: a proposal needs a `summary` "
+                             f"saying what it would change")
+        intro.append({
+            "type": "namecost",
+            "name": p.get("title", p["id"].replace("-", " ").capitalize()),
+            "cost": p.get("status", ""),
+        })
+        intro.extend(parse_body(p["summary"]))
+        for key, label in (("why", "Why"), ("cost", "What it would take")):
+            if p.get(key, "").strip():
+                intro.append({"type": "field", "label": label, "value": ""})
+                intro.extend(parse_body(p[key]))
+        examples = p.get("examples", [])
+        if examples:
+            intro.append({"type": "field", "label": "For example", "value": ""})
+            for example in examples:
+                intro.extend(parse_body(example))
+    return {"title": title, "page": 0, "intro": intro, "entries": []}
+
+
 # --- driving ----------------------------------------------------------------
 
 def load_edition(directory: Path) -> dict:
@@ -324,6 +368,7 @@ def load_edition(directory: Path) -> dict:
     meta.setdefault("slug", directory.name)
     meta.setdefault("label", directory.name.title())
     meta.setdefault("changelog_title", "CHANGES FROM THE ORIGINAL")
+    meta.setdefault("proposals_title", "PROPOSALS")
     meta.setdefault("derives_from", "")
     meta["dir"] = directory
     return meta
@@ -383,14 +428,22 @@ def build_book(meta: dict, patch_file: Path, manifest: dict,
         except PatchError as exc:
             raise PatchError(f"{patch_file.name} [{change['id']}]: {exc}") from None
 
-    if not records:
-        raise PatchError(f"{patch_file.name}: no changes")
+    proposals = spec.get("proposal", [])
+    if not records and not proposals:
+        raise PatchError(f"{patch_file.name}: no changes and no proposals")
 
-    print(f"  {slug}: {len(records)} change(s) applied")
+    print(f"  {slug}: {len(records)} change(s) applied, "
+          f"{len(proposals)} proposal(s)")
     for r in records:
         print(f"    {r['op']:<13} {r['where']}")
+    for pr in proposals:
+        print(f"    {'proposed':<13} {pr.get('title', pr.get('id', '?'))}")
 
-    data["chapters"].append(changelog(records, meta["changelog_title"]))
+    if records:
+        data["chapters"].append(changelog(records, meta["changelog_title"]))
+    if proposals:
+        data["chapters"].append(
+            prospectus(proposals, meta["proposals_title"], patch_file.name))
     # Kept even when nothing is written, so that --check tests a derived
     # edition's anchors against the text it will really be applied to.
     patched[(meta["slug"], slug)] = data
@@ -416,6 +469,7 @@ def build_book(meta: dict, patch_file: Path, manifest: dict,
         "edition_label": meta["label"],
         "edition_version": meta.get("version", ""),
         "changes": len(records),
+        "proposals": len(proposals),
     }
 
 
