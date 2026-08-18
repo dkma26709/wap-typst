@@ -171,6 +171,10 @@ Stomp (D6) and Impact Hits (D6) would stop being flat dice. A model would make \
 target's**, and the same for Impact Hits on the turn it charges. A Monster \
 treading on infantry gets two; treading on monstrous cavalry, one; against \
 another Monster, none at all.
+
+This is one of two answers to the same complaint. The other, which follows it, \
+gives every monster its own printed Stomps instead of deriving them from \
+anything.
 """
 
 why = """
@@ -207,8 +211,10 @@ less fun to roll than a D6, which matters more than it sounds.
 
 cost = """
 The Stomp and Impact Hits special rules, and the Monsters, Monstrous Creatures \
-and Chariots troop types - so this book only, and no army book need change at \
-all. That, and an answer for chariots.
+and Chariots troop types - five places, all of them in this book. Sixteen \
+monsters across the army books print a Stomp value of their own, from 3D6 down \
+to 1, and those would have to be reconciled or dropped; nothing else in an army \
+book need change. That, and an answer for chariots.
 """
 
 examples = [
@@ -240,5 +246,105 @@ whatever makes the Carnosaur a hunter has to come from its profile - Multiple \
 Wounds against the many-wounded, a point of To Hit against Monsters - and never \
 from trampling. The two halves do not overlap, which is exactly what makes them \
 worth having at once.
+""",
+]
+
+
+[[proposal]]
+id     = "every-monster-prints-its-own-stomps"
+title  = "Every monster prints its own Stomps"
+status = "under discussion"
+
+summary = """
+The rival to the proposal above, and the opposite instinct. Rather than deriving \
+the number from anything, each monster would simply print its own: how many \
+Stomps it makes, and against what. A Stegadon might keep D6 against a Line of \
+Sight value of 3 or less; a Carnosaur might make 2, and only against 2 or less. \
+Where a monster wants more than one line, it gets more than one line.
+"""
+
+why = """
+The size gap fixes the flat D6, but look at what it cannot fix. A Carnosaur and a \
+Stegadon are both Monsters, so both have a Line of Sight value of 5, so a rule \
+that reads nothing but the gap gives them **identical Stomps against every target \
+on the table**. The Chimera and the War Hydra come out identical too, and for the \
+same reason. The size gap makes trampling proportionate; it does not make one \
+monster trample differently from another, because it never asks what the monster \
+is - only how big.
+
+Printing the number does ask. A walking fortress that fights by weight keeps the \
+full D6 and keeps it against nearly everything; a predator that fights with its \
+jaws makes a token two, and only against what it can knock down. The difference \
+between them stops being a difference in their statlines and becomes a difference \
+in how they fight, which is the whole complaint.
+
+It also lets a monster be strange. Nothing in a derived rule can say *this one \
+tramples infantry into paste and can barely tread on a horse*; a printed table \
+says it in two lines.
+"""
+
+against = """
+It is 144 numbers to invent with nothing to anchor them to, and no rule to fall \
+back on when a case comes up that the author did not think of. Half of them will \
+be written D6 against 3 or less out of habit, which is the present rule with more \
+ink, and the ones that are not will drift apart across thirty books written over \
+years - the same drift that left Slow to Fire named in eight places across the \
+books and defined in none of them.
+
+It is also the more expensive of the two by a wide margin. The size gap is five \
+places in this book and sixteen printed values to reconcile; this one is an \
+entry in each of 144 monsters across thirty books, and until a book is converted \
+its monsters have no Stomps whatever.
+
+And it is more to look up. One rule you learn once beats a table on every monster \
+in the army.
+"""
+
+cost = """
+The Stomp special rule and the Monsters and Monstrous Creatures troop types here, \
+and then a line - sometimes two - on each of 144 monsters across the thirty army \
+books. Unlike the size gap, this one cannot be done in the rulebook alone.
+
+The two are not exclusive. The most likely settlement is both: the size gap as \
+the default for any monster without a printed table, and a printed table wherever \
+a monster has earned one. That costs the three rules now and the 144 entries only \
+as and when somebody has something to say about a monster.
+"""
+
+examples = [
+  """
+**The two Lizardmen monsters, three pages apart.** One fights by weight and one \
+by tooth, and the tables say so where no derived number could.
+
+## STEGADON: TRAMPLING FEET
+
+|Stomps|Against
+|D6|A Line of Sight value of 3 or less
+
+## CARNOSAUR: RAKING CLAWS
+
+|Stomps|Against
+|2|A Line of Sight value of 2 or less
+
+> The Stegadon keeps precisely what every monster has today, because the walking \
+fortress is the model the rule was written around. The Carnosaur keeps a token \
+amount and loses it entirely against monstrous cavalry and monstrous creatures, \
+so against anything of size it has to fight with its jaws - which, with Multiple \
+Wounds (D3) on them, is exactly what it is for.
+""",
+  """
+**More than one line, where a monster wants it.** A mammoth is not a Stegadon \
+with bigger numbers; it is a thing that flattens men and shoulders horses aside, \
+and those are two different effects rather than one effect at two sizes.
+
+## WAR MAMMOTH: TRAMPLING
+
+|Stomps|Against
+|D6|A Line of Sight value of 1 or less
+|D3|A Line of Sight value of 2 or 3
+
+> Read the first line that applies. Nothing here needs a new rule, a new \
+characteristic or a new roll - it is the Stomp the game already has, with its \
+number and its reach moved out of the troop type and onto the monster.
 """,
 ]
