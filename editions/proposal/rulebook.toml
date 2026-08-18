@@ -84,95 +84,106 @@ the one that was always meant to be the difference: the crossbow wounds better.
 
 
 [[proposal]]
-id     = "monsters-carry-their-own-attacks"
-title  = "Give every monster an attack of its own"
+id     = "monsters-hunt-something-in-particular"
+title  = "Give every monster something it is good against"
 status = "under discussion"
 
 summary = """
-A monster's special attack would be printed in its own profile - a name, a \
-number of hits, a Strength, and what it may be used against - rather than being \
-a bracketed number on one rule shared across the whole game. **Stomp** would \
-become one such attack among several instead of the only template there is, and \
-a monster bred to hunt other monsters would carry an attack that says so. A \
-monster with no printed attack would fight exactly as it does now.
+The blanket **Stomp (D6)** that every Monster receives from its troop type would \
+go. In its place each monster would print a **quarry**: one class of target, and \
+a bonus to the monster's *own* attacks against it - more Attacks against the \
+small, or greater Strength against the large. These are attacks like any other. \
+They roll To Hit, they can be saved, and there is something the other player can \
+do about them.
+
+A monster that is good at one thing and ordinary at everything else is not worth \
+what one that is good at everything costs, so this is also the opening to cut \
+some points, or move a monster out of Rare, or make it genuinely frightening in \
+the one role it is given.
 """
 
 why = """
-Across the thirty army books there are 144 entries whose troop type is Monster. \
-Ninety-one of them have nothing whatever that shapes how they attack: a number \
-of Attacks at a Strength, and that is the whole of it. What separates one from \
-another is which of the numbers is larger.
+A monster does not earn its Stomp; it is issued one. The Monsters troop type \
+reads *Monsters are subject to the following special rules: Independent, Stomp \
+(D6), Terror* - so all 144 Monster entries across the thirty army books have it, \
+at the same value, whatever they are. Monstrous Creatures get Stomp (D3) the \
+same way, and Chariots Impact Hits (D6).
 
-The Chimera and the War Hydra make the point better than any argument. Both are \
-Weapon Skill 4, Strength 5, Toughness 5, 5 Wounds. The Chimera has 6 Attacks and \
-the rule Fly; the Hydra has 8 Attacks and no combat rule of its own at all. A \
-three-headed thing that breathes fire and a winged horror with the heads of a \
-lion, a goat and a dragon fight in precisely the same way, two attacks apart.
+Those D6 automatic hits are most monsters' real output, and they reach anything \
+with a Line of Sight value of 3 or less: infantry, cavalry, chariots, monstrous \
+infantry, monstrous cavalry and monstrous creatures alike. The one thing a Stomp \
+cannot touch is another Monster. So every monster in the game is issued the same \
+anti-everything attack, and none of them is issued anything for the thing it is \
+actually drawn doing.
 
-Two templates do exist, and both of them mean *trample*. Stomp is carried by \
-nineteen monsters - every Giant, both Mammoths, the Colossi - and Impact Hits by \
-twenty-eight. Nothing in the game is an attack aimed upward. Worse, Stomp is \
-anti-everything-but-monsters by construction: used by a Monster it reaches any \
-model with a Line of Sight value of 3 or less, which is infantry, cavalry, \
-chariots, monstrous infantry, monstrous cavalry and monstrous creatures alike. \
-The only thing a Stomp cannot touch is another Monster.
+The Chimera and the War Hydra are both Weapon Skill 4, Strength 5, Toughness 5, \
+5 Wounds - 6 attacks and 8 attacks - and both stomp D6. The Carnosaur and the \
+Stegadon sit in the same book: one an apex predator bred and ridden to hunt, the \
+other a walking fortress with a bolt thrower on its back. Both stomp D6. The \
+Carnosaur's best work is done treading on militia, and the rules offer it nothing \
+whatever against the only kind of target it cannot tread on.
 
-So the one bonus attack in the rules points downward, and there is no way to \
-write a monster that points upward. That is a gap in the vocabulary, not a \
-balance complaint.
+Automatic hits are also the least interesting damage the game can hand out. No To \
+Hit roll is made, so Weapon Skill never enters, and nothing that makes a model \
+hard to hit does anything at all about them.
+
+Eighty-four of the 144 monsters are Rare choices. A monster that is good at \
+everything has to be priced and rationed as though it were; a monster with a \
+quarry can be neither.
 """
 
 against = """
-Stomp's virtue is that you learn it once and it works everywhere, and a hundred \
-bespoke attacks is how a ruleset stops being memorable. There is also a cheaper \
-answer to most of this: give the monsters that need one an existing rule they do \
-not have - Killing Blow, Multiple Wounds, a Breath Weapon - and leave the \
-vocabulary alone. That is worth trying on a handful of monsters before writing a \
-new kind of profile for all of them.
+Stomp is what lets one model fight a regiment at all. Four attacks against twenty \
+men loses combat resolution every round of the game, and the stomps are what keep \
+a monster in the fight long enough to matter - replace them with attacks that can \
+miss and the numbers have to be generous or monsters quietly stop being taken.
+
+One rule for every monster is also one rule to learn. A quarry means checking the \
+target's troop type before every swing, on a model that already has the most \
+special rules on the table.
 """
 
 cost = """
-Nothing already written breaks: Stomp stays exactly as it is for the tramplers, \
-and a monster with no printed attack is unchanged. The work is per monster and \
-there are 144 of them, so the sensible first cut is the ones whose role the book \
-already names in its own artwork and fluff - the Carnosaur, the Hydra, the \
-Chimera - rather than all of them at once.
+The Monsters and Monstrous Creatures troop types in this book, and then a line on \
+each of 144 monsters, none of which can be mechanical - the whole point is that \
+each says something different. Points and army-list slots would want revisiting \
+alongside. The sensible first cut is one book: Lizardmen carries both shapes of \
+the idea, a hunter and a trampler, three pages apart.
 """
 
 examples = [
   """
-**The Carnosaur, which is the case that prompted this.** A Saurian apex \
-predator, bred and ridden to hunt: Weapon Skill 4, Strength 6, Toughness 5, 5 \
-Wounds, 4 Attacks, with Blood Frenzy, Cold-Blooded, Multiple Wounds (D3) and \
-Natural Armour (4+). Nothing there is about hunting monsters. Multiple Wounds is \
-a damage multiplier, not a target: it is wasted entirely against one-wound \
-infantry, and it does nothing to make the Carnosaur better at closing with a \
-Dragon than any other beast with four attacks. Its role lives in the artwork.
+**The Carnosaur, which is the case that prompted this.** Weapon Skill 4, \
+Strength 6, Toughness 5, 5 Wounds, 4 Attacks. Today it also stomps D6 automatic \
+hits at Strength 6 into anything smaller than a Monster, and has nothing at all \
+for anything larger.
 
-It would instead carry an attack of its own, the exact mirror of a Stomp:
+## CARNOSAUR - QUARRY: THE LARGE
 
-## KILLING BITE
+|Bonus to its own attacks|Against
+|+1 Strength, +1 Attack|A model with a Line of Sight value of 3 or more
 
-|Attacks|Strength|Special Rules
-|1|As user|Always Strikes First, Multiple Wounds (D3)
-
-> May only be directed at a model with a Line of Sight value of 4 or more - that \
-is, at a Monster or at a ridden Monstrous Creature. Multiple Wounds would move \
-out of the Carnosaur's own rules and into the bite, so that its four ordinary \
-attacks stop being extra-lethal against everything that happens to have a second \
-wound.
-
-Where a Stomp reaches everything with a Line of Sight value of 3 or less, the \
-bite reaches everything from 4 up. Between them they cover the board, and each \
-monster carries whichever one it is actually for.
+> Against a Stegadon it would swing five times at Strength 7, wounding on a 3+ \
+rather than a 4+. Against a regiment of spearmen it would swing four times at \
+Strength 6, and that would be all - no stomps, and no bonus. It becomes markedly \
+worse at the job it was never meant to have. The numbers are the part to argue \
+about: +2 Strength would wound a Stegadon on a 2+, which is probably a step too \
+far.
 """,
   """
-**What it does to the shape of the rules.** At present a monster's character is \
-carried by its statline, and the statline can only say *how much*. A printed \
-attack can say *what kind*, and the difference between monsters becomes a \
-difference in kind rather than degree - the Giant tramples what is beneath it, \
-the Carnosaur bites what is above it, and the Hydra would get the breath it is \
-drawn with. None of that is expressible today except as a larger number in the \
-Attacks column.
+**The Stegadon keeps what it is for.** A trampler's quarry points the other way, \
+and the arithmetic can be made to land almost exactly where Stomp does now:
+
+## STEGADON - QUARRY: THE SMALL
+
+|Bonus to its own attacks|Against
+|+2D6 Attacks|A model with a Line of Sight value of 1 or less
+
+> Seven extra attacks on average, at Weapon Skill 3 against Weapon Skill 3 \
+infantry, hit on a 4+ - three and a half hits, which is what Stomp (D6) delivers \
+today. The trampler ends up where it started, but its damage now passes through \
+a To Hit roll, so Weapon Skill finally means something on a monster, and every \
+rule that makes a unit hard to hit starts working against the thing it most \
+needed to work against.
 """,
 ]
