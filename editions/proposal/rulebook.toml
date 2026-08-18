@@ -47,6 +47,10 @@ printed, and leaves Strength the same shape as the eight characteristics beside 
 it.
 """
 
+against = """
+Strength doing two jobs is not an accident. It is the one lever that makes a big thing frightening without adding a stat to every profile in the game, and it is one number to learn rather than two. Splitting it buys clarity with paperwork, and the paperwork falls on thirty-one books.
+"""
+
 cost = """
 This is the most invasive change available to the ruleset, and it cannot be \
 applied by halves: until a book is converted, armour is a great deal better \
@@ -75,5 +79,100 @@ that wounds badly and defeats armour. A crossbow is Strength 4 with nothing - \
 and defeats armour exactly as well, for free, as a side effect of wounding \
 better. Both would simply print AP 1, and the difference between them would be \
 the one that was always meant to be the difference: the crossbow wounds better.
+""",
+]
+
+
+[[proposal]]
+id     = "monsters-carry-their-own-attacks"
+title  = "Give every monster an attack of its own"
+status = "under discussion"
+
+summary = """
+A monster's special attack would be printed in its own profile - a name, a \
+number of hits, a Strength, and what it may be used against - rather than being \
+a bracketed number on one rule shared across the whole game. **Stomp** would \
+become one such attack among several instead of the only template there is, and \
+a monster bred to hunt other monsters would carry an attack that says so. A \
+monster with no printed attack would fight exactly as it does now.
+"""
+
+why = """
+Across the thirty army books there are 144 entries whose troop type is Monster. \
+Ninety-one of them have nothing whatever that shapes how they attack: a number \
+of Attacks at a Strength, and that is the whole of it. What separates one from \
+another is which of the numbers is larger.
+
+The Chimera and the War Hydra make the point better than any argument. Both are \
+Weapon Skill 4, Strength 5, Toughness 5, 5 Wounds. The Chimera has 6 Attacks and \
+the rule Fly; the Hydra has 8 Attacks and no combat rule of its own at all. A \
+three-headed thing that breathes fire and a winged horror with the heads of a \
+lion, a goat and a dragon fight in precisely the same way, two attacks apart.
+
+Two templates do exist, and both of them mean *trample*. Stomp is carried by \
+nineteen monsters - every Giant, both Mammoths, the Colossi - and Impact Hits by \
+twenty-eight. Nothing in the game is an attack aimed upward. Worse, Stomp is \
+anti-everything-but-monsters by construction: used by a Monster it reaches any \
+model with a Line of Sight value of 3 or less, which is infantry, cavalry, \
+chariots, monstrous infantry, monstrous cavalry and monstrous creatures alike. \
+The only thing a Stomp cannot touch is another Monster.
+
+So the one bonus attack in the rules points downward, and there is no way to \
+write a monster that points upward. That is a gap in the vocabulary, not a \
+balance complaint.
+"""
+
+against = """
+Stomp's virtue is that you learn it once and it works everywhere, and a hundred \
+bespoke attacks is how a ruleset stops being memorable. There is also a cheaper \
+answer to most of this: give the monsters that need one an existing rule they do \
+not have - Killing Blow, Multiple Wounds, a Breath Weapon - and leave the \
+vocabulary alone. That is worth trying on a handful of monsters before writing a \
+new kind of profile for all of them.
+"""
+
+cost = """
+Nothing already written breaks: Stomp stays exactly as it is for the tramplers, \
+and a monster with no printed attack is unchanged. The work is per monster and \
+there are 144 of them, so the sensible first cut is the ones whose role the book \
+already names in its own artwork and fluff - the Carnosaur, the Hydra, the \
+Chimera - rather than all of them at once.
+"""
+
+examples = [
+  """
+**The Carnosaur, which is the case that prompted this.** A Saurian apex \
+predator, bred and ridden to hunt: Weapon Skill 4, Strength 6, Toughness 5, 5 \
+Wounds, 4 Attacks, with Blood Frenzy, Cold-Blooded, Multiple Wounds (D3) and \
+Natural Armour (4+). Nothing there is about hunting monsters. Multiple Wounds is \
+a damage multiplier, not a target: it is wasted entirely against one-wound \
+infantry, and it does nothing to make the Carnosaur better at closing with a \
+Dragon than any other beast with four attacks. Its role lives in the artwork.
+
+It would instead carry an attack of its own, the exact mirror of a Stomp:
+
+## KILLING BITE
+
+|Attacks|Strength|Special Rules
+|1|As user|Always Strikes First, Multiple Wounds (D3)
+
+> May only be directed at a model with a Line of Sight value of 4 or more - that \
+is, at a Monster or at a ridden Monstrous Creature. Multiple Wounds would move \
+out of the Carnosaur's own rules and into the bite, so that its four ordinary \
+attacks stop being extra-lethal against everything that happens to have a second \
+wound.
+
+Where a Stomp reaches everything with a Line of Sight value of 3 or less, the \
+bite reaches everything from 4 up. Between them they cover the board, and each \
+monster carries whichever one it is actually for.
+""",
+  """
+**What it does to the shape of the rules.** At present a monster's character is \
+carried by its statline, and the statline can only say *how much*. A printed \
+attack can say *what kind*, and the difference between monsters becomes a \
+difference in kind rather than degree - the Giant tramples what is beneath it, \
+the Carnosaur bites what is above it, and the Hydra would get the breath it is \
+drawn with. None of that is expressible today except as a larger number in the \
+Attacks column.
 """,
 ]

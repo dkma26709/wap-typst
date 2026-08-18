@@ -349,7 +349,9 @@ def prospectus(proposals: list[dict], title: str, where: str) -> dict:
             "cost": p.get("status", ""),
         })
         intro.extend(parse_body(p["summary"]))
-        for key, label in (("why", "Why"), ("cost", "What it would take")):
+        for key, label in (("why", "Why"),
+                           ("against", "The argument against"),
+                           ("cost", "What it would take")):
             if p.get(key, "").strip():
                 intro.append({"type": "field", "label": label, "value": ""})
                 intro.extend(parse_body(p[key]))

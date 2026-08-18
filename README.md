@@ -161,6 +161,7 @@ title    = "Take armour penetration out of Strength"
 status   = "under discussion"     # printed beside the title
 summary  = "..."                  # what would change
 why      = "..."                  # why it is worth changing
+against  = "..."                  # the strongest case for leaving it alone
 cost     = "..."                  # what it would take to do
 examples = ["...", "..."]         # one or two, worked at the table
 ```
