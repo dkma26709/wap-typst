@@ -120,7 +120,7 @@ kind:
 | `## ` | a run-in heading |
 | `@LABEL: value` | a profile field — `TROOP TYPE`, `SPECIAL RULES`, and so on |
 | `> ` | the indented italic note that sits beneath a profile |
-| `\|` × 2 lines | a weapon profile: headings, then values |
+| `\|` × 2+ lines | a weapon profile: headings, then one row of values per line |
 
 ```toml
 new = """

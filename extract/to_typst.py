@@ -74,7 +74,8 @@ def block_lines(block: dict) -> list[str]:
 
     if kind == "minitable":
         cols = block["columns"]
-        vals = [lit(block["row"].get(c, "")) for c in cols]
+        rows = block.get("rows") or [block["row"]]
+        vals = [lit(r.get(c, "")) for r in rows for c in cols]
         return [f"#minitable({arr([lit(c) for c in cols])}, {arr(vals)})"]
 
     if kind == "field":

@@ -82,108 +82,163 @@ the one that was always meant to be the difference: the crossbow wounds better.
 """,
 ]
 
-
 [[proposal]]
-id     = "monsters-hunt-something-in-particular"
-title  = "Give every monster something it is good against"
+id     = "monsters-get-a-weapon-profile"
+title  = "Give every monster a weapon profile"
 status = "under discussion"
 
 summary = """
-The blanket **Stomp (D6)** that every Monster receives from its troop type would \
-go. In its place each monster would print a **quarry**: one class of target, and \
-a bonus to the monster's *own* attacks against it - more Attacks against the \
-small, or greater Strength against the large. These are attacks like any other. \
-They roll To Hit, they can be saved, and there is something the other player can \
-do about them.
-
-A monster that is good at one thing and ordinary at everything else is not worth \
-what one that is good at everything costs, so this is also the opening to cut \
-some points, or move a monster out of Rare, or make it genuinely frightening in \
-the one role it is given.
+Every monster would carry a weapon profile of its own, printed in its entry the \
+way a great weapon or a bolt thrower is: how many attacks, at what Strength, and \
+with what special rules. Most of them need nothing invented - the rules the game \
+already has are enough to say what a monster is for, once there is somewhere to \
+print them.
 """
 
 why = """
-A monster does not earn its Stomp; it is issued one. The Monsters troop type \
-reads *Monsters are subject to the following special rules: Independent, Stomp \
-(D6), Terror* - so all 144 Monster entries across the thirty army books have it, \
-at the same value, whatever they are. Monstrous Creatures get Stomp (D3) the \
-same way, and Chariots Impact Hits (D6).
-
-Those D6 automatic hits are most monsters' real output, and they reach anything \
-with a Line of Sight value of 3 or less: infantry, cavalry, chariots, monstrous \
-infantry, monstrous cavalry and monstrous creatures alike. The one thing a Stomp \
-cannot touch is another Monster. So every monster in the game is issued the same \
-anti-everything attack, and none of them is issued anything for the thing it is \
-actually drawn doing.
+Everything else that strikes a blow in this game has a profile for it. A spear \
+prints its Strength, its special rules and when each applies; a mortar prints two \
+Strengths, one for the template and one for the model under the hole. A monster \
+prints a number in the Attacks column, and takes the same Stomp (D6) as every \
+other monster from its troop type. Whatever separates a Carnosaur from a Stegadon \
+has to be taken on trust from the artwork.
 
 The Chimera and the War Hydra are both Weapon Skill 4, Strength 5, Toughness 5, \
-5 Wounds - 6 attacks and 8 attacks - and both stomp D6. The Carnosaur and the \
-Stegadon sit in the same book: one an apex predator bred and ridden to hunt, the \
-other a walking fortress with a bolt thrower on its back. Both stomp D6. The \
-Carnosaur's best work is done treading on militia, and the rules offer it nothing \
-whatever against the only kind of target it cannot tread on.
+5 Wounds - 6 attacks and 8 attacks - and neither has a combat rule of its own. \
+One of them breathes fire in every picture ever drawn of it.
 
-Automatic hits are also the least interesting damage the game can hand out. No To \
-Hit roll is made, so Weapon Skill never enters, and nothing that makes a model \
-hard to hit does anything at all about them.
+What makes this cheap is that the vocabulary already exists. **Multiple Wounds \
+(D3)** is an anti-large rule and always has been: a model cannot suffer more \
+wounds than it has on its profile, so the D3 is wasted entirely against one-wound \
+infantry and doubles or trebles the damage against anything bigger. The Carnosaur \
+already has it. What it lacks is a profile that says so, and somewhere to hang \
+the touch of flavour that makes it a hunter rather than a big lizard - one point \
+of To Hit against Monsters.
 
 Eighty-four of the 144 monsters are Rare choices. A monster that is good at \
-everything has to be priced and rationed as though it were; a monster with a \
-quarry can be neither.
+everything has to be priced and rationed as though it were. One whose profile \
+says what it is for can be cheaper, or Special rather than Rare, or genuinely \
+frightening in the single role it is given.
 """
 
 against = """
-Stomp is what lets one model fight a regiment at all. Four attacks against twenty \
-men loses combat resolution every round of the game, and the stomps are what keep \
-a monster in the fight long enough to matter - replace them with attacks that can \
-miss and the numbers have to be generous or monsters quietly stop being taken.
+If the rules a monster needs already exist, a profile only tidies them - the \
+Carnosaur is already better against big targets than small ones, and printing a \
+box around Multiple Wounds (D3) does not change a die roll anywhere. The honest \
+answer is that the box is for the other 143: it is the place a designer has to \
+look, and having to fill it in is what would stop a Hydra and a Chimera coming \
+out identical.
 
-One rule for every monster is also one rule to learn. A quarry means checking the \
-target's troop type before every swing, on a model that already has the most \
-special rules on the table.
+And it is 144 boxes to fill, on the entries that already carry the most rules on \
+the table.
 """
 
 cost = """
-The Monsters and Monstrous Creatures troop types in this book, and then a line on \
-each of 144 monsters, none of which can be mechanical - the whole point is that \
-each says something different. Points and army-list slots would want revisiting \
-alongside. The sensible first cut is one book: Lizardmen carries both shapes of \
-the idea, a hunter and a trampler, three pages apart.
+A profile on each of 144 monsters, and the discipline not to make them \
+mechanical. Points and army-list slots want revisiting alongside. The sensible \
+first cut is one book: Lizardmen carries a hunter and a trampler three pages \
+apart.
 """
 
 examples = [
   """
 **The Carnosaur, which is the case that prompted this.** Weapon Skill 4, \
-Strength 6, Toughness 5, 5 Wounds, 4 Attacks. Today it also stomps D6 automatic \
-hits at Strength 6 into anything smaller than a Monster, and has nothing at all \
-for anything larger.
+Strength 6, 4 Attacks, Multiple Wounds (D3). Almost everything it needs is \
+already there; none of it is anywhere a reader would look.
 
-## CARNOSAUR - QUARRY: THE LARGE
+## CARNOSAUR: RENDING JAWS
 
-|Bonus to its own attacks|Against
-|+1 Strength, +1 Attack|A model with a Line of Sight value of 3 or more
+|Attacks|Strength|Special Rules
+|4|As user|Multiple Wounds (D3), +1 To Hit against Monsters
 
-> Against a Stegadon it would swing five times at Strength 7, wounding on a 3+ \
-rather than a 4+. Against a regiment of spearmen it would swing four times at \
-Strength 6, and that would be all - no stomps, and no bonus. It becomes markedly \
-worse at the job it was never meant to have. The numbers are the part to argue \
-about: +2 Strength would wound a Stegadon on a 2+, which is probably a step too \
-far.
+> Nothing here is new except the last clause. Multiple Wounds is doing the work \
+it was always doing - wasted against a rank of spearmen, trebling the damage \
+against a Stegadon - and the point of hunting Monsters specifically is worth one \
+point of To Hit, which is flavour rather than arithmetic. What the profile really \
+buys is the question it forces for every other monster: what goes in this box?
+""",
+]
+
+
+[[proposal]]
+id     = "stomps-and-impact-hits-come-from-the-size-gap"
+title  = "Stomps and Impact Hits should come from the size difference"
+status = "under discussion"
+
+summary = """
+Stomp (D6) and Impact Hits (D6) would stop being flat dice. A model would make \
+**one Stomp for every 2 full points by which its Line of Sight value exceeds its \
+target's**, and the same for Impact Hits on the turn it charges. A Monster \
+treading on infantry gets two; treading on monstrous cavalry, one; against \
+another Monster, none at all.
+"""
+
+why = """
+Line of Sight is already this game's ladder of size: 0 for a swarm, 1 for \
+infantry, 2 for cavalry and chariots, 3 for monstrous cavalry and monstrous \
+creatures, 4 for a ridden monstrous creature, 5 for a Monster. Stomp already \
+leans on it - a Monster may Stomp anything with a value of 3 or less - so the \
+scale is trusted to say *what* may be trodden on. It is simply not trusted to say \
+*how much*.
+
+The result is that a Dragon treads on a swarm exactly as hard as it treads on a \
+monstrous creature, and both for D6. Making the number the size gap keeps the \
+idea - big things trample smaller ones - and makes the trampling proportionate to \
+the difference, which is what it was always meant to represent.
+
+It also makes a monster something to be used well rather than merely pointed at \
+a unit. Today every legal target takes the same D6; under this the number falls \
+away as the target grows, so choosing what to charge becomes the whole of the \
+skill of running a monster.
+"""
+
+against = """
+It guts chariots. A chariot's Line of Sight value is 2 and infantry is 1, so a \
+gap-based rule gives it nothing at all, and Impact Hits (D6) is the entire reason \
+a chariot is worth its points. Chariots are about momentum rather than mass, so \
+they probably need to keep a printed number or count as larger for this purpose - \
+either way it is an exception, and the rule is worse for having one.
+
+It is also a cut. Two stomps in place of D6 takes a monster's trampling of \
+infantry from three and a half hits to two, and monsters are not obviously \
+overpriced today. And a die that always comes up 2 is \
+less fun to roll than a D6, which matters more than it sounds.
+"""
+
+cost = """
+The Stomp and Impact Hits special rules, and the Monsters, Monstrous Creatures \
+and Chariots troop types - so this book only, and no army book need change at \
+all. That, and an answer for chariots.
+"""
+
+examples = [
+  """
+**The whole rule, as a table.** Take the attacker's Line of Sight value, subtract \
+the target's, and halve it.
+
+|The gap in Line of Sight|Stomps, or Impact Hits on a charge
+|1 or less|None
+|2 or 3|1
+|4 or 5|2
+
+> A Monster (5) treading on infantry (1) makes 2. On cavalry, chariots or \
+monstrous infantry (2), 1. On monstrous cavalry or a monstrous creature (3), 1. \
+On a ridden monstrous creature (4), none - and none against another Monster, \
+exactly as now. A monstrous creature (3) makes one against infantry and nothing \
+against cavalry.
 """,
   """
-**The Stegadon keeps what it is for.** A trampler's quarry points the other way, \
-and the arithmetic can be made to land almost exactly where Stomp does now:
+**What it does to a Carnosaur.** Today it stomps D6 into a regiment of spearmen, \
+which is its best work and has nothing whatever to do with being a hunter. Under \
+this it makes two. Against the Stegadon it was bred to fight it makes none, \
+exactly as it does now - both are Monsters, and the gap between them is nil.
 
-## STEGADON - QUARRY: THE SMALL
-
-|Bonus to its own attacks|Against
-|+2D6 Attacks|A model with a Line of Sight value of 1 or less
-
-> Seven extra attacks on average, at Weapon Skill 3 against Weapon Skill 3 \
-infantry, hit on a 4+ - three and a half hits, which is what Stomp (D6) delivers \
-today. The trampler ends up where it started, but its damage now passes through \
-a To Hit roll, so Weapon Skill finally means something on a monster, and every \
-rule that makes a unit hard to hit starts working against the thing it most \
-needed to work against.
+That last part is why the two proposals want taking together. A rule built on the \
+size gap can only ever cut what a monster does to things beneath it; by \
+construction it can give a monster nothing at all against its own kind. So \
+whatever makes the Carnosaur a hunter has to come from its profile - Multiple \
+Wounds against the many-wounded, a point of To Hit against Monsters - and never \
+from trampling. The two halves do not overlap, which is exactly what makes them \
+worth having at once.
 """,
 ]

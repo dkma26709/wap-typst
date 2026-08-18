@@ -69,6 +69,12 @@ def norm(text: str) -> str:
     return " ".join("".join(FOLD.get(c, c) for c in text).split()).casefold()
 
 
+def rows_of(block: dict) -> list[dict]:
+    """A profile's value rows. The extraction only ever produces one, so it
+    writes `row`; an authored profile writes `rows` and may have several."""
+    return block.get("rows") or [block["row"]]
+
+
 def block_text(block: dict) -> str:
     kind = block["type"]
     if kind == "para":
@@ -82,7 +88,8 @@ def block_text(block: dict) -> str:
     if kind == "chart":
         return " ".join(cell for row in block["rows"] for cell in row)
     if kind == "minitable":
-        return " ".join(block["row"].get(c, "") for c in block["columns"])
+        return " ".join(r.get(c, "") for r in rows_of(block)
+                        for c in block["columns"])
     if kind == "statblock":
         return block.get("label", "Profile")
     return ""
@@ -93,8 +100,9 @@ def display(block: dict) -> str:
     a weapon profile names its columns: a bare row of values cannot be read
     against the row it replaced once the columns themselves have changed."""
     if block["type"] == "minitable":
-        return " · ".join(f"{c} {block['row'].get(c, '')}".strip()
-                          for c in block["columns"])
+        return " / ".join(
+            " · ".join(f"{c} {r.get(c, '')}".strip() for c in block["columns"])
+            for r in rows_of(block))
     return block_text(block)
 
 
@@ -147,16 +155,17 @@ def parse_body(source: str) -> list[dict]:
         if not lines:
             continue
         if lines[0].startswith("|"):
-            rows = [[c.strip() for c in ln.strip("|").split("|")] for ln in lines]
-            if len(rows) != 2:
-                raise PatchError(f"a weapon profile is two `|` lines, headings "
-                                 f"then values; this one has {len(rows)}")
-            columns, values = rows
-            if len(columns) != len(values):
-                raise PatchError(f"the weapon profile has {len(columns)} headings "
-                                 f"but {len(values)} values")
+            table = [[c.strip() for c in ln.strip("|").split("|")] for ln in lines]
+            if len(table) < 2:
+                raise PatchError("a weapon profile is a line of `|` headings "
+                                 "followed by at least one line of values")
+            columns, values = table[0], table[1:]
+            for row in values:
+                if len(row) != len(columns):
+                    raise PatchError(f"the weapon profile has {len(columns)} "
+                                     f"headings but a row of {len(row)} values")
             blocks.append({"type": "minitable", "columns": columns,
-                           "row": dict(zip(columns, values))})
+                           "rows": [dict(zip(columns, r)) for r in values]})
         elif lines[0].startswith("@"):
             label, colon, value = " ".join(lines)[1:].partition(":")
             if not colon:
