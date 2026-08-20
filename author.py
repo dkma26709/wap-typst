@@ -35,7 +35,7 @@ FIELD_LABELS = {
     "special_rules": "SPECIAL RULES",
 }
 
-BOOK_KEYS = {"slug", "army", "version", "align"}
+BOOK_KEYS = {"slug", "army", "version", "align", "shelf"}
 CHAPTER_KEYS = {"title", "intro", "rules", "entries"}
 RULE_KEYS = {"name", "cost", "text", "items"}
 ENTRY_KEYS = {"name", "profile", "unit_size", "troop_type", "base_size",
@@ -200,6 +200,10 @@ def main() -> None:
             "authored": True,
             "align": meta["align"],
         }
+        # An authored book may file itself on an edition shelf of the site's
+        # edition filter (e.g. "proposal") instead of the base WAP shelf.
+        if meta.get("shelf"):
+            record["shelf"] = meta["shelf"]
         books = [b for b in books if b["slug"] != slug] + [record]
         print(f"{meta['army']:<24} {meta['version']:<6} {entries:>7} entries, "
               f"{len(data['chapters'])} chapters -> {target.name}")

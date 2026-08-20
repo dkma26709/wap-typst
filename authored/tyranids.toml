@@ -13,6 +13,9 @@ slug = "tyranids"
 army = "Tyranids"
 version = "1.0"
 align = "destruction"
+# The whole book is unsettled house material, so it files on the proposals
+# shelf of the site's edition filter rather than presenting as base WAP text.
+shelf = "proposal"
 
 # ---------------------------------------------------------------------------
 

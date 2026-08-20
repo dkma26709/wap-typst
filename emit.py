@@ -90,14 +90,15 @@ BASE_COLOPHON = """(
 
 # An authored book is the opposite claim to the one above: the rules, army
 # design and points are ours, not Eliasson's, and the colophon must say so
-# rather than credit him with work he never did.
+# rather than credit him with work he never did. {extra} takes an optional
+# further paragraph (the proposal note), or an empty string.
 AUTHORED_COLOPHON = """(
   [
     An original, unofficial army book written for use with the *Warhammer
     Armies Project*, Mathias Eliasson's freely distributed fan ruleset. This
     book is not his work: its rules, army design and points values are our
     own house material, version {version}.
-  ],
+  ],{extra}
   [
     Warhammer, Warhammer Fantasy Battle, Warhammer 40,000 and all associated
     names, races and places are trademarks of Games Workshop Limited. This
@@ -106,6 +107,12 @@ AUTHORED_COLOPHON = """(
   ],
   [Typeset with Typst. Not for sale.],
 )"""
+
+AUTHORED_PROPOSAL_NOTE = """
+  [
+    The whole book stands as a proposal: it is being played and argued at our
+    table, and nothing in it — rules or points — is settled yet.
+  ],"""
 
 
 def wrapper(book: dict, edition: dict | None) -> str:
@@ -119,9 +126,13 @@ def wrapper(book: dict, edition: dict | None) -> str:
     depth = 3 if rules else 2
 
     if edition is None and book.get("authored"):
+        proposal = book.get("shelf") == "proposal"
         title = f"{army} {version} — an original army book"
-        subtitle = f"An original army book · for Warhammer Armies Project"
-        colophon = AUTHORED_COLOPHON.format(version=version)
+        subtitle = ("An original army book · a proposal" if proposal
+                    else "An original army book · for Warhammer Armies Project")
+        colophon = AUTHORED_COLOPHON.format(
+            version=version,
+            extra=AUTHORED_PROPOSAL_NOTE if proposal else "")
     elif edition is None:
         title = f"Warhammer Armies Project — {army} {version}"
         subtitle = f"Warhammer Armies Project · {version}"
@@ -281,9 +292,11 @@ def card(book: dict, edition: str, ident: str, meta: str,
 
 def cards_for(book: dict, derived: dict[str, list[dict]],
               align: str | None) -> list[str]:
-    # An authored book's card must not present it as Eliasson's work.
+    # An authored book's card must not present it as Eliasson's work, and it
+    # may file itself on an edition shelf (e.g. the proposals) rather than
+    # presenting as part of the base WAP text.
     label = "Original book" if book.get("authored") else f"Version {book['version']}"
-    out = [card(book, BASE["slug"], book["id"],
+    out = [card(book, book.get("shelf") or BASE["slug"], book["id"],
                 f"{label} · {book['entries']} entries", align)]
     for e in derived.get(book["id"], []):
         stamp = f" {e['edition_version']}" if e["edition_version"] else ""
@@ -404,6 +417,14 @@ def main() -> None:
         editions = {e["slug"]: e for e in data["editions"]}
         for record in data["books"]:
             derived.setdefault(record["base"], []).append(record)
+
+    # A shelf that no edition defines would leave the card invisible under
+    # every filter setting, so it fails loudly here instead.
+    for book in books:
+        shelf = book.get("shelf")
+        if shelf and shelf not in editions:
+            raise SystemExit(f"emit: {book['slug']} files itself on unknown "
+                             f"shelf '{shelf}' — known: {sorted(editions)}")
 
     rulebook = next((b for b in books if b.get("layout") == "rules"), None)
     if rulebook is None:

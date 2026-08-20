@@ -336,7 +336,8 @@
       "layout": "army",
       "figures": 0,
       "authored": true,
-      "align": "destruction"
+      "align": "destruction",
+      "shelf": "proposal"
     },
     {
       "slug": "vampire-counts",

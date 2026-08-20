@@ -5,7 +5,7 @@
 
 #cover(
   title: "Tyranids",
-  subtitle: "An original army book · for Warhammer Armies Project",
+  subtitle: "An original army book · a proposal",
   art: none,
 )
 
@@ -15,6 +15,10 @@
     Armies Project*, Mathias Eliasson's freely distributed fan ruleset. This
     book is not his work: its rules, army design and points values are our
     own house material, version 1.0.
+  ],
+  [
+    The whole book stands as a proposal: it is being played and argued at our
+    table, and nothing in it — rules or points — is settled yet.
   ],
   [
     Warhammer, Warhammer Fantasy Battle, Warhammer 40,000 and all associated
