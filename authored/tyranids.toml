@@ -825,7 +825,7 @@ text = ["""Pack-hunters bred from lictor stock, the leapers range ahead of the s
 
 [[chapters.entries]]
 name = "NEUROLICTOR"
-profile = [["Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "70"]]
+profile = [["Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "80"]]
 unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
@@ -834,6 +834,12 @@ text = ["""The neurolictor conceals not its body but the very idea of itself. So
 
 [[chapters.entries.notes]]
 text = "A Neurolictor never takes Instinctive Behaviour tests."
+
+[[chapters.entries.rules]]
+name = "COGNITIVE VEIL"
+text = [
+    """The closer the prey stands, the less of the Neurolictor its mind can hold. Enemy models within 6" of the Neurolictor suffer an additional -1 To Hit against it, with both shooting and close combat attacks. In addition, enemy units charging the Neurolictor suffer a -1 penalty to their charge distance rolls.""",
+]
 
 [[chapters.entries.rules]]
 name = "BRAIN-FOG AURA"

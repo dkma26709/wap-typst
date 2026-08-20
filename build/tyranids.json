@@ -3633,7 +3633,7 @@
           "I": "6",
           "A": "3",
           "Ld": "8",
-          "Points": "70"
+          "Points": "80"
          }
         }
        ]
@@ -3675,6 +3675,22 @@
          ],
          "text": "A Neurolictor never takes Instinctive Behaviour tests.",
          "sub": []
+        }
+       ]
+      },
+      {
+       "type": "namecost",
+       "name": "COGNITIVE VEIL",
+       "cost": ""
+      },
+      {
+       "type": "para",
+       "style": "body",
+       "text": "The closer the prey stands, the less of the Neurolictor its mind can hold. Enemy models within 6\" of the Neurolictor suffer an additional -1 To Hit against it, with both shooting and close combat attacks. In addition, enemy units charging the Neurolictor suffer a -1 penalty to their charge distance rolls.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The closer the prey stands, the less of the Neurolictor its mind can hold. Enemy models within 6\" of the Neurolictor suffer an additional -1 To Hit against it, with both shooting and close combat attacks. In addition, enemy units charging the Neurolictor suffer a -1 penalty to their charge distance rolls."
         }
        ]
       },

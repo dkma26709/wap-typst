@@ -371,13 +371,15 @@
 
 #entry("NEUROLICTOR")
 #para(((emph: "", text: "The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "70"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "80"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monstrous Infantry (Tyranid)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Neurolictor never takes Instinctive Behaviour tests."),), sub: ()),))
+#namecost("COGNITIVE VEIL", "")
+#para(((emph: "", text: "The closer the prey stands, the less of the Neurolictor its mind can hold. Enemy models within 6\" of the Neurolictor suffer an additional -1 To Hit against it, with both shooting and close combat attacks. In addition, enemy units charging the Neurolictor suffer a -1 penalty to their charge distance rolls."),))
 #namecost("BRAIN-FOG AURA", "")
 #para(((emph: "", text: "Enemy units within 8\" of the Neurolictor suffer a -1 penalty to their Leadership. This penalty is not cumulative with that of other Neurolictors."),))
 
