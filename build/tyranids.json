@@ -157,6 +157,117 @@
     },
     {
      "type": "namecost",
+     "name": "SYNAPTIC ATTUNEMENT",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind."
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Hive Tyrant: The attuned unit has the Hatred special rule."
+        }
+       ],
+       "text": "Hive Tyrant: The attuned unit has the Hatred special rule.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership."
+        }
+       ],
+       "text": "Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat."
+        }
+       ],
+       "text": "Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership."
+        }
+       ],
+       "text": "Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Broodlord: The attuned unit has the Armour Piercing (1) special rule during a turn in which it charged."
+        }
+       ],
+       "text": "Broodlord: The attuned unit has the Armour Piercing (1) special rule during a turn in which it charged.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Zoanthropes: The attuned unit has the Magic Resistance (1) special rule."
+        }
+       ],
+       "text": "Zoanthropes: The attuned unit has the Magic Resistance (1) special rule.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Tervigon: Add +1 to the Wounds recovered when the attuned unit benefits from The Swarm Feeds."
+        }
+       ],
+       "text": "Tervigon: Add +1 to the Wounds recovered when the attuned unit benefits from The Swarm Feeds.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Trygon Prime: The attuned unit has the Swiftstride special rule."
+        }
+       ],
+       "text": "Trygon Prime: The attuned unit has the Swiftstride special rule.",
+       "sub": []
+      },
+      {
+       "runs": [
+        {
+         "emph": "",
+         "text": "Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose."
+        }
+       ],
+       "text": "Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.",
+       "sub": []
+      }
+     ]
+    },
+    {
+     "type": "namecost",
      "name": "INSTINCTIVE BEHAVIOUR",
      "cost": ""
     },
