@@ -179,7 +179,7 @@
 #field("BASE SIZE", "25x25")
 #field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)")
 #namecost("SYNAPTIC NODE", "")
-#para(((emph: "", text: "While the unit is wholly within 12\" of a friendly Synapse creature, friendly Tyranid units within 6\" of the unit count as being within range of that Synapse creature, and may use its Leadership as normal. A unit may not count as in range through more than one Synaptic Node at a time, and a Synaptic Node may not relay through another Synaptic Node."),))
+#para(((emph: "", text: "While the unit is within 6\" of a friendly Synapse creature, friendly Tyranid units within 6\" of the unit count as being within range of that Synapse creature, and may use its Leadership as normal. A unit may not count as in range through more than one Synaptic Node at a time, and a Synaptic Node may not relay through another Synaptic Node."),))
 
 #entry("RIPPER SWARMS")
 #statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ripper Swarm", "5", "2", "0", "2", "2", "6", "3", "6", "3", "35"),))
