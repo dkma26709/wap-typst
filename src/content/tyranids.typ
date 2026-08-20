@@ -48,6 +48,9 @@
 #namecost("BROODLINE UPGRADES", "")
 #para(((emph: "", text: "Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. They are cumulative with other sources of the same special rules as normal:"),))
 #items(((runs: ((emph: "", text: "Toxin sacs: The model has the Poisoned Attacks special rule."),), sub: ()), (runs: ((emph: "", text: "Adrenal glands: The model adds +1 to its Movement characteristic."),), sub: ()), (runs: ((emph: "", text: "Regenerative tissues: The model has the Regeneration (5+) special rule."),), sub: ())))
+#namecost("SWARM SYNCHRONY", "")
+#para(((emph: "", text: "The swarm carries no banners, blows no horns and salutes no champions — when the web holds and the mass is sufficient, a brood simply moves as the fingers of one hand. Tyranid units take no command groups of any kind. Instead, while a Tyranid unit is within range of a friendly Synapse creature and its Unit Strength is greater than the combined Unit Strength of the enemy units in base contact with it, it fights in perfect synchrony: the unit adds +1 to its combat result, and wins drawn rounds of close combat by 1 (this and an enemy Musician cancel each other out)."),))
+#para(((emph: "", text: "Note that a unit within range of a Synapse creature already uses the Synapse creature's Leadership for its Leadership tests, including tests to march near the enemy and to counter-charge or redirect a charge — the web is leader and musician enough."),))
 ]
 
 #heading(level: 1, "HIVE FLEETS")
