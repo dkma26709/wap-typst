@@ -451,12 +451,12 @@
 #heading(level: 1, "SPECIAL CHARACTERS")
 
 #entry("THE RED TERROR", first: true)
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "210"),))
-#field("TROOP TYPE", "Monstrous Beast (Character, Tyranid)")
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "220"),))
+#field("TROOP TYPE", "Monster (Character, Tyranid)")
 #field("BASE SIZE", "50x100 or 100x100")
-#field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)")
+#field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D6)")
 #field("NOTES", "")
-#items(((runs: ((emph: "", text: "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."),), sub: ()), (runs: ((emph: "", text: "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush."),), sub: ())))
+#items(((runs: ((emph: "", text: "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."),), sub: ()),))
 #namecost("SWALLOW WHOLE", "")
 #para(((emph: "", text: "If the Red Terror directs all of its Attacks at a single enemy model with a Line of Sight value of 2 or less, and all of them hit, the victim is seized in its coils and gulped down: the target must immediately pass an Initiative test or be removed as a casualty regardless of its remaining Wounds, with no saves of any kind allowed. A model removed this way counts as having suffered a number of Wounds equal to its remaining Wounds for combat resolution, and the Red Terror immediately regains D3 Wounds lost earlier in the battle as it digests."),))
 

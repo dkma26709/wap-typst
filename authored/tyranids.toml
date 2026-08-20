@@ -942,16 +942,13 @@ title = "SPECIAL CHARACTERS"
 
 [[chapters.entries]]
 name = "THE RED TERROR"
-profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "210"]]
-troop_type = "Monstrous Beast (Character, Tyranid)"
+profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "220"]]
+troop_type = "Monster (Character, Tyranid)"
 base_size = "50x100 or 100x100"
-special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)"
+special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D6)"
 
 [[chapters.entries.notes]]
 text = "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."
-
-[[chapters.entries.notes]]
-text = "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush."
 
 [[chapters.entries.rules]]
 name = "SWALLOW WHOLE"

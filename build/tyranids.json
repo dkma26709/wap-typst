@@ -4249,7 +4249,7 @@
           "I": "6",
           "A": "5",
           "Ld": "7",
-          "Points": "210"
+          "Points": "220"
          }
         }
        ]
@@ -4257,7 +4257,7 @@
       {
        "type": "field",
        "label": "TROOP TYPE",
-       "value": "Monstrous Beast (Character, Tyranid)"
+       "value": "Monster (Character, Tyranid)"
       },
       {
        "type": "field",
@@ -4267,7 +4267,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D6)"
       },
       {
        "type": "field",
@@ -4285,16 +4285,6 @@
           }
          ],
          "text": "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism.",
-         "sub": []
-        },
-        {
-         "runs": [
-          {
-           "emph": "",
-           "text": "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush."
-          }
-         ],
-         "text": "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush.",
          "sub": []
         }
        ]
