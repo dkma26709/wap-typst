@@ -316,7 +316,7 @@ title = "CHARACTERS"
 
 [[chapters.entries]]
 name = "HIVE TYRANT"
-profile = [["Hive Tyrant", "7", "7", "3", "6", "6", "5", "6", "5", "10", "270"]]
+profile = [["Hive Tyrant", "7", "7", "3", "6", "6", "5", "6", "5", "10", "280"]]
 troop_type = "Monster (Character, Tyranid)"
 base_size = "50x50 or 50x100"
 equipment = "Scything talons"
@@ -378,7 +378,7 @@ text = [
 
 [[chapters.entries]]
 name = "TYRANID PRIME"
-profile = [["Tyranid Prime", "5", "6", "3", "5", "5", "3", "5", "4", "9", "120"]]
+profile = [["Tyranid Prime", "5", "6", "3", "5", "5", "3", "5", "4", "9", "130"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 equipment = "Scything talons"
@@ -413,7 +413,7 @@ text = [
 
 [[chapters.entries]]
 name = "BROODLORD"
-profile = [["Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "145"]]
+profile = [["Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "155"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Synapse, Ambushers, Rending Claws, Natural Armour (5+)"
@@ -447,7 +447,7 @@ text = [
 
 [[chapters.entries]]
 name = "NEUROTYRANT"
-profile = [["Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "140"]]
+profile = [["Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "150"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Synapse, Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
@@ -480,7 +480,7 @@ title = "CORE UNITS"
 
 [[chapters.entries]]
 name = "TERMAGANTS"
-profile = [["Termagant", "5", "3", "3", "3", "3", "1", "4", "1", "5", "6"]]
+profile = [["Termagant", "5", "3", "3", "3", "3", "1", "4", "1", "5", "7"]]
 unit_size = "10-40"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -495,7 +495,9 @@ text = "May take toxin sacs +1 point/model"
 text = "May replace fleshborers with devourers +2 points/model"
 
 # Hormagaunts are deliberately priced a point under their anchor (the
-# Daemonette comparison prices the WS4 AP(1) line at ~9): the faction
+# Daemonette comparison prices the WS4 AP(1) line at ~10 once the free
+# army rules (Swarm Synchrony, Attunement, The Swarm Feeds) are counted):
+# the faction
 # identity is numbers and overwhelming tide, bought as a standing discount
 # on the melee chaff rather than a Without Number rule that might never
 # trigger. Statlines across the gaunt line were beefed and minimum brood
@@ -503,7 +505,7 @@ text = "May replace fleshborers with devourers +2 points/model"
 # implies because someone has to paint it.
 [[chapters.entries]]
 name = "HORMAGAUNTS"
-profile = [["Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "8"]]
+profile = [["Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "9"]]
 unit_size = "10-30"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -524,7 +526,7 @@ text = [
 
 [[chapters.entries]]
 name = "GARGOYLES"
-profile = [["Gargoyle", "4", "3", "3", "3", "3", "1", "4", "2", "5", "14"]]
+profile = [["Gargoyle", "4", "3", "3", "3", "3", "1", "4", "2", "5", "15"]]
 unit_size = "6-18"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -537,7 +539,7 @@ text = "May take toxin sacs +1 point/model"
 
 [[chapters.entries]]
 name = "NEUROGAUNTS"
-profile = [["Neurogaunt", "5", "2", "0", "3", "3", "1", "3", "1", "5", "4"]]
+profile = [["Neurogaunt", "5", "2", "0", "3", "3", "1", "3", "1", "5", "5"]]
 unit_size = "8-24"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -552,7 +554,7 @@ text = [
 
 [[chapters.entries]]
 name = "RIPPER SWARMS"
-profile = [["Ripper Swarm", "5", "2", "0", "2", "2", "6", "3", "6", "3", "35"]]
+profile = [["Ripper Swarm", "5", "2", "0", "2", "2", "6", "3", "6", "3", "40"]]
 unit_size = "3-9"
 troop_type = "Swarm (Tyranid)"
 base_size = "40x40"
@@ -575,7 +577,7 @@ title = "SPECIAL UNITS"
 
 [[chapters.entries]]
 name = "TYRANID WARRIORS"
-profile = [["Tyranid Warrior", "5", "4", "3", "4", "4", "3", "4", "3", "9", "40"]]
+profile = [["Tyranid Warrior", "5", "4", "3", "4", "4", "3", "4", "3", "9", "45"]]
 unit_size = "3-9"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
@@ -597,7 +599,7 @@ text = "May take adrenal glands +3 points/model"
 
 [[chapters.entries]]
 name = "GENESTEALER BROOD"
-profile = [["Genestealer", "6", "5", "0", "4", "4", "1", "6", "3", "7", "14"]]
+profile = [["Genestealer", "6", "5", "0", "4", "4", "1", "6", "3", "7", "15"]]
 unit_size = "5-20"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -636,7 +638,7 @@ text = [
 
 [[chapters.entries]]
 name = "RAVENERS"
-profile = [["Ravener", "7", "4", "0", "4", "4", "3", "5", "3", "6", "40"]]
+profile = [["Ravener", "7", "4", "0", "4", "4", "3", "5", "3", "6", "42"]]
 unit_size = "3-9"
 troop_type = "Monstrous Beast (Tyranid)"
 base_size = "40x40"
@@ -651,7 +653,7 @@ text = "May take adrenal glands +3 points/model"
 
 [[chapters.entries]]
 name = "ZOANTHROPES"
-profile = [["Zoanthrope", "4", "2", "3", "3", "4", "3", "3", "1", "9", "60"]]
+profile = [["Zoanthrope", "4", "2", "3", "3", "4", "3", "3", "1", "9", "70"]]
 unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
@@ -760,7 +762,7 @@ text = [
 
 [[chapters.entries]]
 name = "BARBGAUNTS"
-profile = [["Barbgaunt", "4", "2", "3", "4", "4", "1", "2", "1", "5", "9"]]
+profile = [["Barbgaunt", "4", "2", "3", "4", "4", "1", "2", "1", "5", "10"]]
 unit_size = "5-15"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -776,7 +778,7 @@ text = [
 
 [[chapters.entries]]
 name = "VON RYAN'S LEAPERS"
-profile = [["Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "15"]]
+profile = [["Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "16"]]
 unit_size = "3-12"
 troop_type = "War Beast (Tyranid)"
 base_size = "25x25"
@@ -808,7 +810,7 @@ title = "RARE UNITS"
 
 [[chapters.entries]]
 name = "CARNIFEX"
-profile = [["Carnifex", "6", "3", "0", "6", "6", "5", "2", "4", "6", "190"]]
+profile = [["Carnifex", "6", "3", "0", "6", "6", "5", "2", "4", "6", "200"]]
 unit_size = "1-3"
 troop_type = "Monster (Tyranid)"
 base_size = "50x50 or 50x75"
@@ -832,7 +834,7 @@ sub = [
 
 [[chapters.entries]]
 name = "TRYGON"
-profile = [["Trygon", "7", "5", "0", "6", "6", "6", "4", "6", "8", "250"]]
+profile = [["Trygon", "7", "5", "0", "6", "6", "6", "4", "6", "8", "260"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 100x100"
@@ -840,7 +842,7 @@ special_rules = "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Na
 text = ["""The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."""]
 
 [[chapters.entries.options]]
-text = "May be upgraded to a Trygon Prime (Synapse) +40 points"
+text = "May be upgraded to a Trygon Prime (Synapse) +50 points"
 
 [[chapters.entries.options]]
 text = "May be upgraded to a Mawloc (Terror from Below) +30 points"
@@ -868,7 +870,7 @@ text = [
 
 [[chapters.entries]]
 name = "TERVIGON"
-profile = [["Tervigon", "6", "3", "0", "5", "6", "6", "2", "3", "9", "280"]]
+profile = [["Tervigon", "6", "3", "0", "5", "6", "6", "2", "3", "9", "290"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -935,7 +937,7 @@ text = [
 
 [[chapters.entries]]
 name = "HARUSPEX"
-profile = [["Haruspex", "6", "4", "0", "6", "6", "6", "3", "5", "6", "235"]]
+profile = [["Haruspex", "6", "4", "0", "6", "6", "6", "3", "5", "6", "245"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -956,7 +958,7 @@ text = [
 
 [[chapters.entries]]
 name = "TOXICRENE"
-profile = [["Toxicrene", "6", "4", "0", "5", "6", "5", "3", "6", "6", "225"]]
+profile = [["Toxicrene", "6", "4", "0", "5", "6", "5", "3", "6", "6", "235"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -971,7 +973,7 @@ text = [
 
 [[chapters.entries]]
 name = "HARPY"
-profile = [["Harpy", "6", "3", "3", "5", "5", "5", "3", "3", "6", "185"]]
+profile = [["Harpy", "6", "3", "3", "5", "5", "5", "3", "3", "6", "195"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -987,7 +989,7 @@ text = [
 
 [[chapters.entries]]
 name = "HIVE CRONE"
-profile = [["Hive Crone", "6", "4", "3", "5", "5", "5", "4", "4", "6", "210"]]
+profile = [["Hive Crone", "6", "4", "3", "5", "5", "5", "4", "4", "6", "220"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -1008,7 +1010,7 @@ text = [
 
 [[chapters.entries]]
 name = "PSYCHOPHAGE"
-profile = [["Psychophage", "6", "4", "0", "5", "6", "5", "2", "4", "6", "200"]]
+profile = [["Psychophage", "6", "4", "0", "5", "6", "5", "2", "4", "6", "210"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
@@ -1023,7 +1025,7 @@ text = [
 
 [[chapters.entries]]
 name = "NORN EMISSARY"
-profile = [["Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "310"]]
+profile = [["Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "320"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x50 or 50x100"
@@ -1052,7 +1054,7 @@ title = "SPECIAL CHARACTERS"
 
 [[chapters.entries]]
 name = "THE RED TERROR"
-profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "215"]]
+profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "225"]]
 troop_type = "Monster (Character, Tyranid)"
 base_size = "50x100 or 100x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D3)"

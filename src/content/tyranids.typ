@@ -103,7 +103,7 @@
 
 #entry("HIVE TYRANT", first: true)
 #para(((emph: "", text: "A Hive Tyrant is the Hive Mind made flesh: a towering synapse-beast grown to command, its will lashing the broods around it into perfect, silent obedience. Where it strides, the swarm does not merely fight — it thinks."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hive Tyrant", "7", "7", "3", "6", "6", "5", "6", "5", "10", "270"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hive Tyrant", "7", "7", "3", "6", "6", "5", "6", "5", "10", "280"),))
 #field("TROOP TYPE", "Monster (Character, Tyranid)")
 #field("BASE SIZE", "50x50 or 50x100")
 #field("EQUIPMENT", "Scything talons")
@@ -123,7 +123,7 @@
 
 #entry("TYRANID PRIME")
 #para(((emph: "", text: "Grown in the same birthing-vats as the Warriors it shepherds, the Prime is the alpha organism of the melee — the Hive Mind's blade sunk into the centre of the line."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyranid Prime", "5", "6", "3", "5", "5", "3", "5", "4", "9", "120"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyranid Prime", "5", "6", "3", "5", "5", "3", "5", "4", "9", "130"),))
 #field("TROOP TYPE", "Monstrous Infantry (Character, Tyranid)")
 #field("BASE SIZE", "40x40")
 #field("EQUIPMENT", "Scything talons")
@@ -137,7 +137,7 @@
 
 #entry("BROODLORD")
 #para(((emph: "", text: "The patriarch of the hidden broods comes to battle last, after its children have been among the prey for a season — beneath the granaries, under the temples, wearing the dark like a cloak."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "145"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "155"),))
 #field("TROOP TYPE", "Monstrous Infantry (Character, Tyranid)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Tyranid, Synapse, Ambushers, Rending Claws, Natural Armour (5+)")
@@ -152,7 +152,7 @@
 
 #entry("NEUROTYRANT")
 #para(((emph: "", text: "Little more than a vast brain borne up by wasted limbs and naked will, the Neurotyrant pours the Hive Mind's static across the battlefield until wizards choke on their own half-formed spells."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "140"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "150"),))
 #field("TROOP TYPE", "Monstrous Infantry (Character, Tyranid)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Tyranid, Synapse, Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)")
@@ -167,7 +167,7 @@
 
 #entry("TERMAGANTS", first: true)
 #para(((emph: "", text: "The chittering tide. Each termagant is a quick, spiteful rifle-beast, its fleshborer spitting burrowing grubs that chew through mail and bone with equal enthusiasm."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Termagant", "5", "3", "3", "3", "3", "1", "4", "1", "5", "6"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Termagant", "5", "3", "3", "3", "3", "1", "4", "1", "5", "7"),))
 #field("UNIT SIZE", "10-40")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -178,7 +178,7 @@
 
 #entry("HORMAGAUNTS")
 #para(((emph: "", text: "Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "8"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "9"),))
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -190,7 +190,7 @@
 
 #entry("GARGOYLES")
 #para(((emph: "", text: "The swarm's shadow cast across the sky. Gargoyles wheel and dive on membranous wings, washing the ranks below with fleshborer fire in the last breath before the charge lands."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Gargoyle", "4", "3", "3", "3", "3", "1", "4", "2", "5", "14"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Gargoyle", "4", "3", "3", "3", "3", "1", "4", "2", "5", "15"),))
 #field("UNIT SIZE", "6-18")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -201,7 +201,7 @@
 
 #entry("NEUROGAUNTS")
 #para(((emph: "", text: "Hunched beneath the node-organisms fused to their spines, neurogaunts exist only to carry the Hive Mind's voice a little further — living cable in a web of will."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurogaunt", "5", "2", "0", "3", "3", "1", "3", "1", "5", "4"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurogaunt", "5", "2", "0", "3", "3", "1", "3", "1", "5", "5"),))
 #field("UNIT SIZE", "8-24")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -211,7 +211,7 @@
 
 #entry("RIPPER SWARMS")
 #para(((emph: "", text: "Where the swarm has passed, rippers boil out of the earth to strip whatever remains. They are the reclamation made visible: everything that falls is eaten, and everything eaten becomes swarm."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ripper Swarm", "5", "2", "0", "2", "2", "6", "3", "6", "3", "35"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ripper Swarm", "5", "2", "0", "2", "2", "6", "3", "6", "3", "40"),))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Swarm (Tyranid)")
 #field("BASE SIZE", "40x40")
@@ -225,7 +225,7 @@
 
 #entry("TYRANID WARRIORS", first: true)
 #para(((emph: "", text: "The Warriors are the swarm's captains, of a kind — save that no captain of men shares one mind with every soldier under his command, and no company of men fights on after its heart has been told, rather than persuaded, not to break."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyranid Warrior", "5", "4", "3", "4", "4", "3", "4", "3", "9", "40"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyranid Warrior", "5", "4", "3", "4", "4", "3", "4", "3", "9", "45"),))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Monstrous Infantry (Tyranid)")
 #field("BASE SIZE", "40x40")
@@ -236,7 +236,7 @@
 
 #entry("GENESTEALER BROOD")
 #para(((emph: "", text: "The vanguard organism. Genestealers go before the hive fleet by years, seeding the cellars and sewers of doomed cities, and when the swarm descends at last it finds the gates already open."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Genestealer", "6", "5", "0", "4", "4", "1", "6", "3", "7", "14"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Genestealer", "6", "5", "0", "4", "4", "1", "6", "3", "7", "15"),))
 #field("UNIT SIZE", "5-20")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -260,7 +260,7 @@
 
 #entry("RAVENERS")
 #para(((emph: "", text: "Serpentine burrowers that swim through soil as eels through water, raveners erupt beneath the prey's feet in a spray of earth and scything talons."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ravener", "7", "4", "0", "4", "4", "3", "5", "3", "6", "40"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Ravener", "7", "4", "0", "4", "4", "3", "5", "3", "6", "42"),))
 #field("UNIT SIZE", "3-9")
 #field("TROOP TYPE", "Monstrous Beast (Tyranid)")
 #field("BASE SIZE", "40x40")
@@ -270,7 +270,7 @@
 
 #entry("ZOANTHROPES")
 #para(((emph: "", text: "Withered bodies beneath swollen skulls, zoanthropes drift above the ground on a cushion of will, drinking the Winds of Magic dry before the enemy's wizards can call on them."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Zoanthrope", "4", "2", "3", "3", "4", "3", "3", "1", "9", "60"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Zoanthrope", "4", "2", "3", "3", "4", "3", "3", "1", "9", "70"),))
 #field("UNIT SIZE", "1-3")
 #field("TROOP TYPE", "Monstrous Infantry (Tyranid)")
 #field("BASE SIZE", "40x40")
@@ -337,7 +337,7 @@
 
 #entry("BARBGAUNTS")
 #para(((emph: "", text: "The bio-cannon and its bearer are one organism twice enslaved — the parasite gun bonded to the gaunt, and both bonded to the Hive Mind. Its detonating barbs shred legs and shatter shins, and a column so struck stops marching."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Barbgaunt", "4", "2", "3", "4", "4", "1", "2", "1", "5", "9"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Barbgaunt", "4", "2", "3", "4", "4", "1", "2", "1", "5", "10"),))
 #field("UNIT SIZE", "5-15")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -348,7 +348,7 @@
 
 #entry("VON RYAN'S LEAPERS")
 #para(((emph: "", text: "Pack-hunters bred from lictor stock, the leapers range ahead of the swarm on coiled limbs and long balancing tails. The first sign of them is the rear rank of the column going quiet."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "15"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "16"),))
 #field("UNIT SIZE", "3-12")
 #field("TROOP TYPE", "War Beast (Tyranid)")
 #field("BASE SIZE", "25x25")
@@ -370,7 +370,7 @@
 
 #entry("CARNIFEX", first: true)
 #para(((emph: "", text: "A carnifex is not cunning. It is a battering ram that bleeds, grown to break shieldwalls, gates and city walls in that order, and it does all three the same way — by continuing to walk."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Carnifex", "6", "3", "0", "6", "6", "5", "2", "4", "6", "190"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Carnifex", "6", "3", "0", "6", "6", "5", "2", "4", "6", "200"),))
 #field("UNIT SIZE", "1-3")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x50 or 50x75")
@@ -381,13 +381,13 @@
 
 #entry("TRYGON")
 #para(((emph: "", text: "The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Trygon", "7", "5", "0", "6", "6", "6", "4", "6", "8", "250"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Trygon", "7", "5", "0", "6", "6", "6", "4", "6", "8", "260"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 100x100")
 #field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Natural Armour (4+), Stomp (D3)")
 #field("OPTIONS", "")
-#items(((runs: ((emph: "", text: "May be upgraded to a Trygon Prime (Synapse) +40 points"),), sub: ()), (runs: ((emph: "", text: "May be upgraded to a Mawloc (Terror from Below) +30 points"),), sub: ()), (runs: ((emph: "", text: "May take broodline upgrades:"),), sub: (((emph: "", text: "Regenerative tissues +35 points"),), ((emph: "", text: "Toxin sacs +20 points"),), ((emph: "", text: "Adrenal glands +15 points"),)))))
+#items(((runs: ((emph: "", text: "May be upgraded to a Trygon Prime (Synapse) +50 points"),), sub: ()), (runs: ((emph: "", text: "May be upgraded to a Mawloc (Terror from Below) +30 points"),), sub: ()), (runs: ((emph: "", text: "May take broodline upgrades:"),), sub: (((emph: "", text: "Regenerative tissues +35 points"),), ((emph: "", text: "Toxin sacs +20 points"),), ((emph: "", text: "Adrenal glands +15 points"),)))))
 #namecost("SUBTERRANEAN ASSAULT", "")
 #para(((emph: "", text: "The Trygon has the Ambushers special rule. However, instead of deploying like normal Ambushers, it can arrive anywhere on the battlefield. When it emerges, place a marker anywhere on the battlefield and roll 2D6 and the scatter dice. If you roll a hit on the scatter dice, the marker stays in place; if you roll an arrow, move the marker the number of inches indicated by the 2D6 in the direction shown by the arrow. If the marker is moved off the tabletop, the Trygon is lost; treat it as a casualty. Once the final position is established, place the Trygon so it touches the marker. If the marker is under a unit or impassable terrain, place the Trygon next to the closest edge of the unit or terrain. It may face in any direction."),))
 #namecost("TERROR FROM BELOW", "")
@@ -396,7 +396,7 @@
 
 #entry("TERVIGON")
 #para(((emph: "", text: "The broodmother's flanks ripple and split as she walks, spilling fresh termagants into the fight; to slay her is to hear a hundred birth-sacs fall silent at once."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tervigon", "6", "3", "0", "5", "6", "6", "2", "3", "9", "280"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tervigon", "6", "3", "0", "5", "6", "6", "2", "3", "9", "290"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -434,7 +434,7 @@
 
 #entry("HARUSPEX")
 #para(((emph: "", text: "The haruspex is the swarm's appetite distilled: a grasping tongue, a gullet the size of a hay-wain, and precisely enough brain to keep both working."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Haruspex", "6", "4", "0", "6", "6", "6", "3", "5", "6", "235"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Haruspex", "6", "4", "0", "6", "6", "6", "3", "5", "6", "245"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -446,7 +446,7 @@
 
 #entry("TOXICRENE")
 #para(((emph: "", text: "Every surface of the toxicrene weeps venom. It fights from within a strangling garden of its own lashes, and the prey is drowning in its air before a single tentacle closes."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Toxicrene", "6", "4", "0", "5", "6", "5", "3", "6", "6", "225"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Toxicrene", "6", "4", "0", "5", "6", "5", "3", "6", "6", "235"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -456,7 +456,7 @@
 
 #entry("HARPY")
 #para(((emph: "", text: "The harpy rides the night wind on wings the width of a chapel, shrieking as it comes — and the shriek is a mercy, for it means the stranglethorns have not yet fired."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Harpy", "6", "3", "3", "5", "5", "5", "3", "3", "6", "185"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Harpy", "6", "3", "3", "5", "5", "5", "3", "3", "6", "195"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -467,7 +467,7 @@
 
 #entry("HIVE CRONE")
 #para(((emph: "", text: "Where the harpy harries the ground, the crone owns the sky — spitting gouts of burning bile, and harvesting whatever else presumes to fly."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hive Crone", "6", "4", "3", "5", "5", "5", "4", "4", "6", "210"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hive Crone", "6", "4", "3", "5", "5", "5", "4", "4", "6", "220"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -479,7 +479,7 @@
 
 #entry("PSYCHOPHAGE")
 #para(((emph: "", text: "The psychophage devours warriors whole and vents what remains of them as a glittering, corrosive mist. It holds a marked preference for wizards, whose minds burn like tallow."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Psychophage", "6", "4", "0", "5", "6", "5", "2", "4", "6", "200"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Psychophage", "6", "4", "0", "5", "6", "5", "2", "4", "6", "210"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x100 or 60x100")
@@ -489,7 +489,7 @@
 
 #entry("NORN EMISSARY")
 #para(((emph: "", text: "When the Hive Mind requires a personal touch, it grows an emissary: a towering intelligence of muscle, chitin and borrowed brains, sent into the world to do exactly one thing and constitutionally incapable of being turned from it."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "310"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "320"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x50 or 50x100")
@@ -505,7 +505,7 @@
 
 #entry("THE RED TERROR", first: true)
 #para(((emph: "", text: "The deep tunnels have a legend, if hunger can be said to keep legends: a red thing in the dark that swallows knights whole — horse, harness and all — and is always, always still hungry."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "215"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "225"),))
 #field("TROOP TYPE", "Monster (Character, Tyranid)")
 #field("BASE SIZE", "50x100 or 100x100")
 #field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D3)")
