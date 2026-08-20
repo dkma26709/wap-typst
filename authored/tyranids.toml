@@ -20,6 +20,17 @@ shelf = "proposal"
 # ---------------------------------------------------------------------------
 
 [[chapters]]
+title = "THE GREAT DEVOURER"
+intro = [
+    """They came from beyond the stars, or from beneath the world, or out of the Realm of Chaos itself — the scholars of the Old World cannot agree, and the swarm does not care to correct them. The priests name them daemons; the daemons, if they could be asked, would take offence. A daemon at least wants something of you. The Tyranids want only what you are made of.""",
+    """A Tyranid swarm is not an army but a single organism wearing a million bodies. One intellect — the Hive Mind — looks out of every eye at once, and its will runs through the swarm along a living web of synapse creatures: the Tyrants, the Warriors, the swollen-skulled things that drift behind the lines. Within that web, the swarm moves with a single terrible purpose, and no beast in it knows fear, or pain, or the difference between itself and its neighbour. Cut a strand of the web, and the beasts it held fall back on the appetites they were grown from — some feed, some hide, and all are still hungry.""",
+    """An invasion does not begin with the swarm. It begins years before, quietly: pale shapes in the sewers of port cities, hunters standing motionless in the deep woods, prey that walks into the trees and does not walk out. Then the shadow falls. The Winds of Magic gutter like candles in a shut room; wizards wake screaming from dreams of an endless choir; the beasts of the field run mad. Only then does the swarm come, tide upon tide of it, and behind the tide come the feeder-things — the digestion pools, the rippling carpets of the reclamation — until what was a kingdom is bare rock and the swarm has grown by exactly the weight of everything that lived there. Nothing is wasted. Nothing is spared. Nothing is left.""",
+    """The Great Devourer cannot be bargained with, bribed, converted or frightened, and it allies with no one, for the concept of an ally requires the concept of a future in which the other party is still alive. Every battle against it can be won. The war cannot, because the war is not, from the swarm's perspective, a war at all. It is a meal, interrupted.""",
+]
+
+# ---------------------------------------------------------------------------
+
+[[chapters]]
 title = "ARMY SPECIAL RULES"
 intro = [
     """This section of the book describes the different units in a Tyranids army, along with their rules. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring 'army special rules' that apply to several Tyranids units, and these are detailed below.""",
@@ -267,6 +278,7 @@ troop_type = "Monster (Character, Tyranid)"
 base_size = "50x50 or 50x100"
 equipment = "Scything talons"
 special_rules = "Tyranid, Synapse, Synaptic Relay, Terror, Natural Armour (4+), Stomp (D6)"
+text = ["""A Hive Tyrant is the Hive Mind made flesh: a towering synapse-beast grown to command, its will lashing the broods around it into perfect, silent obedience. Where it strides, the swarm does not merely fight — it thinks."""]
 
 [[chapters.entries.options]]
 text = "May replace scything talons with a bonesword & lash whip +25 points"
@@ -319,6 +331,7 @@ troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 equipment = "Scything talons"
 special_rules = "Tyranid, Synapse, Alpha Warrior, Natural Armour (5+)"
+text = ["""Grown in the same birthing-vats as the Warriors it shepherds, the Prime is the alpha organism of the melee — the Hive Mind's blade sunk into the centre of the line."""]
 
 [[chapters.entries.options]]
 text = "May replace scything talons with a bonesword & lash whip (see Hive Tyrant) +20 points"
@@ -352,6 +365,7 @@ profile = [["Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "145"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Synapse, Ambushers, Rending Claws, Natural Armour (5+)"
+text = ["""The patriarch of the hidden broods comes to battle last, after its children have been among the prey for a season — beneath the granaries, under the temples, wearing the dark like a cloak."""]
 
 [[chapters.entries.options]]
 text = "May take broodline upgrades:"
@@ -385,6 +399,7 @@ profile = [["Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "140"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Synapse, Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
+text = ["""Little more than a vast brain borne up by wasted limbs and naked will, the Neurotyrant pours the Hive Mind's static across the battlefield until wizards choke on their own half-formed spells."""]
 
 [[chapters.entries.options]]
 text = "May take broodline upgrades:"
@@ -419,6 +434,7 @@ troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Fleshborer"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)"
+text = ["""The chittering tide. Each termagant is a quick, spiteful rifle-beast, its fleshborer spitting burrowing grubs that chew through mail and bone with equal enthusiasm."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +1 point/model"
@@ -433,6 +449,7 @@ unit_size = "15-45"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Natural Armour (6+)"
+text = ["""Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +1 point/model"
@@ -454,6 +471,7 @@ troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Fleshborer"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Fly (10), Natural Armour (6+)"
+text = ["""The swarm's shadow cast across the sky. Gargoyles wheel and dive on membranous wings, washing the ranks below with fleshborer fire in the last breath before the charge lands."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +1 point/model"
@@ -465,6 +483,7 @@ unit_size = "10-30"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)"
+text = ["""Hunched beneath the node-organisms fused to their spines, neurogaunts exist only to carry the Hive Mind's voice a little further — living cable in a web of will."""]
 
 [[chapters.entries.rules]]
 name = "SYNAPTIC NODE"
@@ -479,6 +498,7 @@ unit_size = "3-9"
 troop_type = "Swarm (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Feed)"
+text = ["""Where the swarm has passed, rippers boil out of the earth to strip whatever remains. They are the reclamation made visible: everything that falls is eaten, and everything eaten becomes swarm."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +3 points/base"
@@ -499,6 +519,7 @@ troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 equipment = "Scything talons"
 special_rules = "Tyranid, Synapse, Natural Armour (5+)"
+text = ["""The Warriors are the swarm's captains, of a kind — save that no captain of men shares one mind with every soldier under his command, and no company of men fights on after its heart has been told, rather than persuaded, not to break."""]
 
 [[chapters.entries.options]]
 text = "May take deathspitters +6 points/model"
@@ -519,6 +540,7 @@ unit_size = "8-24"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Rending Claws, Natural Armour (6+)"
+text = ["""The vanguard organism. Genestealers go before the hive fleet by years, seeding the cellars and sewers of doomed cities, and when the swarm descends at last it finds the gates already open."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +1 point/model"
@@ -533,6 +555,7 @@ unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Ambushers, Skirmishers, Natural Armour (5+)"
+text = ["""A Lictor is the swarm's held breath — a chameleon-skinned assassin that stands motionless among the trees for days, tasting the air for the scent of wizards."""]
 
 [[chapters.entries.notes]]
 text = "A Lictor never takes Instinctive Behaviour tests — the vanguard organism hunts alone by design."
@@ -556,6 +579,7 @@ unit_size = "3-9"
 troop_type = "Monstrous Beast (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)"
+text = ["""Serpentine burrowers that swim through soil as eels through water, raveners erupt beneath the prey's feet in a spray of earth and scything talons."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +3 points/model"
@@ -570,6 +594,7 @@ unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Synapse, Magic Resistance (3), Natural Armour (5+)"
+text = ["""Withered bodies beneath swollen skulls, zoanthropes drift above the ground on a cushion of will, drinking the Winds of Magic dry before the enemy's wizards can call on them."""]
 
 [[chapters.entries.rules]]
 name = "WARP BLAST"
@@ -590,6 +615,7 @@ unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (5+)"
+text = ["""The biovore waddles at the rear of the swarm, dorsal chambers heavy with living mines, and lobs its squirming children over the lines with a wet, satisfied grunt."""]
 
 [[chapters.entries.rules]]
 name = "SPORE MINE LAUNCHER"
@@ -604,6 +630,7 @@ unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (4+)"
+text = ["""Blind, mute and absolutely devoted, Tyrant Guard exist to die in their master's place — walls of chitin that step into the path of arrow, bolt and cannonball without being asked."""]
 
 [[chapters.entries.options]]
 text = "May take toxin sacs +5 points/model"
@@ -625,6 +652,7 @@ troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 equipment = "Impaler cannon"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (4+)"
+text = ["""The impaler cannon has no need to see its prey. Its ammunition hunts by warmth and hate, threading over walls and through smoke to find the marrow."""]
 
 [[chapters.entries.rules]]
 name = "IMPALER CANNON"
@@ -639,6 +667,7 @@ unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Toxin sacs (see Broodline Upgrades), Natural Armour (6+)"
+text = ["""Venomthropes drift with the swarm in a haze of their own spores — a walking fog-bank of poison through which the broods advance half-seen."""]
 
 [[chapters.entries.rules]]
 name = "SPORE CLOUD"
@@ -653,6 +682,7 @@ unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Natural Armour (4+)"
+text = ["""A gut that walks. The pyrovore exists to burn what cannot be eaten and to eat what cannot be burned, and it has never been particular about the order."""]
 
 [[chapters.entries.rules]]
 name = "FLAME GUT"
@@ -674,6 +704,7 @@ troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Barb-launcher"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (5+)"
+text = ["""The bio-cannon and its bearer are one organism twice enslaved — the parasite gun bonded to the gaunt, and both bonded to the Hive Mind. Its detonating barbs shred legs and shatter shins, and a column so struck stops marching."""]
 
 [[chapters.entries.rules]]
 name = "BARB-LAUNCHER"
@@ -688,6 +719,7 @@ unit_size = "5-15"
 troop_type = "War Beast (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Natural Armour (5+)"
+text = ["""Pack-hunters bred from lictor stock, the leapers range ahead of the swarm on coiled limbs and long balancing tails. The first sign of them is the rear rank of the column going quiet."""]
 
 [[chapters.entries]]
 name = "NEUROLICTOR"
@@ -696,6 +728,7 @@ unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Ambushers, Skirmishers, Chameleonic Scales (see Lictor), Natural Armour (5+)"
+text = ["""The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."""]
 
 [[chapters.entries.notes]]
 text = "A Neurolictor never takes Instinctive Behaviour tests."
@@ -719,6 +752,7 @@ troop_type = "Monster (Tyranid)"
 base_size = "50x50 or 50x75"
 equipment = "Scything talons"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Natural Armour (3+), Stomp (D6+1), Impact Hits (D3)"
+text = ["""A carnifex is not cunning. It is a battering ram that bleeds, grown to break shieldwalls, gates and city walls in that order, and it does all three the same way — by continuing to walk."""]
 
 [[chapters.entries.options]]
 text = "May replace scything talons with crushing claws (+1 Strength) +20 points"
@@ -741,6 +775,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 100x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Natural Armour (4+), Stomp (D3)"
+text = ["""The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."""]
 
 [[chapters.entries.options]]
 text = "May be upgraded to a Mawloc (Terror from Below) +30 points"
@@ -772,6 +807,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 special_rules = "Tyranid, Synapse, Natural Armour (4+), Stomp (D6)"
+text = ["""The broodmother's flanks ripple and split as she walks, spilling fresh termagants into the fight; to slay her is to hear a hundred birth-sacs fall silent at once."""]
 
 [[chapters.entries.options]]
 text = "May take broodline upgrades:"
@@ -801,6 +837,7 @@ troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 equipment = "Bio-plasmic cannon"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D3)"
+text = ["""The exocrine is a cannon that grew a body. The symbiote-gun owns the beast's every stride, and halts it mid-step when the firing solution ripens."""]
 
 [[chapters.entries.rules]]
 name = "BIO-PLASMIC CANNON"
@@ -822,6 +859,7 @@ troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 equipment = "Rupture cannon"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D3)"
+text = ["""The heaviest gun-beast of the swarm advances like a fortress under sail, and its rupture cannon speaks with a report that unhorses knights a field away."""]
 
 [[chapters.entries.rules]]
 name = "RUPTURE CANNON"
@@ -836,6 +874,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Natural Armour (4+), Stomp (D6)"
+text = ["""The haruspex is the swarm's appetite distilled: a grasping tongue, a gullet the size of a hay-wain, and precisely enough brain to keep both working."""]
 
 [[chapters.entries.rules]]
 name = "GRASPING TONGUE"
@@ -856,6 +895,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Toxin sacs (see Broodline Upgrades), Natural Armour (4+), Stomp (D3)"
+text = ["""Every surface of the toxicrene weeps venom. It fights from within a strangling garden of its own lashes, and the prey is drowning in its air before a single tentacle closes."""]
 
 [[chapters.entries.rules]]
 name = "CHOKING MIASMA"
@@ -871,6 +911,7 @@ troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 equipment = "Stranglethorn cannon"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D3)"
+text = ["""The harpy rides the night wind on wings the width of a chapel, shrieking as it comes — and the shriek is a mercy, for it means the stranglethorns have not yet fired."""]
 
 [[chapters.entries.rules]]
 name = "STRANGLETHORN CANNON"
@@ -885,6 +926,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D3)"
+text = ["""Where the harpy harries the ground, the crone owns the sky — spitting gouts of burning bile, and harvesting whatever else presumes to fly."""]
 
 [[chapters.entries.rules]]
 name = "FIERY BILE"
@@ -905,6 +947,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Magic Resistance (3), Natural Armour (4+), Stomp (D6)"
+text = ["""The psychophage devours warriors whole and vents what remains of them as a glittering, corrosive mist. It holds a marked preference for wizards, whose minds burn like tallow."""]
 
 [[chapters.entries.rules]]
 name = "PSYCHOPHAGIC HUNGER"
@@ -919,6 +962,7 @@ unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x50 or 50x100"
 special_rules = "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
+text = ["""When the Hive Mind requires a personal touch, it grows an emissary: a towering intelligence of muscle, chitin and borrowed brains, sent into the world to do exactly one thing and constitutionally incapable of being turned from it."""]
 
 [[chapters.entries.options]]
 text = "May be upgraded to a Norn Assimilator +10 points"
@@ -946,6 +990,7 @@ profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "215"
 troop_type = "Monster (Character, Tyranid)"
 base_size = "50x100 or 100x100"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D3)"
+text = ["""The deep tunnels have a legend, if hunger can be said to keep legends: a red thing in the dark that swallows knights whole — horse, harness and all — and is always, always still hungry."""]
 
 [[chapters.entries.notes]]
 text = "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."

@@ -54,8 +54,8 @@ def check_keys(mapping: dict, allowed: set[str], where: str) -> None:
         fail(f"unknown key(s) {sorted(unknown)} in {where}")
 
 
-def para(text: str) -> dict:
-    return {"type": "para", "style": "body", "text": text,
+def para(text: str, style: str = "body") -> dict:
+    return {"type": "para", "style": style, "text": text,
             "runs": [{"emph": "", "text": text}]}
 
 
@@ -99,7 +99,10 @@ def entry_blocks(entry: dict, where: str) -> list[dict]:
     check_keys(entry, ENTRY_KEYS, where)
     if "profile" not in entry:
         fail(f"{where}: every entry needs a profile")
-    blocks: list[dict] = [statblock(entry["profile"], where)]
+    # Flavour text reads ahead of the profile, in italics, as the classic
+    # army books set it — the rules follow the creature, not the reverse.
+    blocks: list[dict] = [para(t, "italic") for t in entry.get("text", [])]
+    blocks.append(statblock(entry["profile"], where))
     for key in FIELD_ORDER:
         if key in entry:
             blocks.append(field(FIELD_LABELS[key], entry[key]))
@@ -114,7 +117,6 @@ def entry_blocks(entry: dict, where: str) -> list[dict]:
             blocks.append(listing(items))
     for rule in entry.get("rules", []):
         blocks.extend(namecost_blocks(rule, f"{where} rule"))
-    blocks.extend(para(t) for t in entry.get("text", []))
     return blocks
 
 

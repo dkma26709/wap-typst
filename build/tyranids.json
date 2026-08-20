@@ -13,6 +13,57 @@
  "front_matter_pages": [],
  "chapters": [
   {
+   "title": "THE GREAT DEVOURER",
+   "page": 0,
+   "entries": [],
+   "intro": [
+    {
+     "type": "para",
+     "style": "body",
+     "text": "They came from beyond the stars, or from beneath the world, or out of the Realm of Chaos itself — the scholars of the Old World cannot agree, and the swarm does not care to correct them. The priests name them daemons; the daemons, if they could be asked, would take offence. A daemon at least wants something of you. The Tyranids want only what you are made of.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "They came from beyond the stars, or from beneath the world, or out of the Realm of Chaos itself — the scholars of the Old World cannot agree, and the swarm does not care to correct them. The priests name them daemons; the daemons, if they could be asked, would take offence. A daemon at least wants something of you. The Tyranids want only what you are made of."
+      }
+     ]
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "A Tyranid swarm is not an army but a single organism wearing a million bodies. One intellect — the Hive Mind — looks out of every eye at once, and its will runs through the swarm along a living web of synapse creatures: the Tyrants, the Warriors, the swollen-skulled things that drift behind the lines. Within that web, the swarm moves with a single terrible purpose, and no beast in it knows fear, or pain, or the difference between itself and its neighbour. Cut a strand of the web, and the beasts it held fall back on the appetites they were grown from — some feed, some hide, and all are still hungry.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "A Tyranid swarm is not an army but a single organism wearing a million bodies. One intellect — the Hive Mind — looks out of every eye at once, and its will runs through the swarm along a living web of synapse creatures: the Tyrants, the Warriors, the swollen-skulled things that drift behind the lines. Within that web, the swarm moves with a single terrible purpose, and no beast in it knows fear, or pain, or the difference between itself and its neighbour. Cut a strand of the web, and the beasts it held fall back on the appetites they were grown from — some feed, some hide, and all are still hungry."
+      }
+     ]
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "An invasion does not begin with the swarm. It begins years before, quietly: pale shapes in the sewers of port cities, hunters standing motionless in the deep woods, prey that walks into the trees and does not walk out. Then the shadow falls. The Winds of Magic gutter like candles in a shut room; wizards wake screaming from dreams of an endless choir; the beasts of the field run mad. Only then does the swarm come, tide upon tide of it, and behind the tide come the feeder-things — the digestion pools, the rippling carpets of the reclamation — until what was a kingdom is bare rock and the swarm has grown by exactly the weight of everything that lived there. Nothing is wasted. Nothing is spared. Nothing is left.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "An invasion does not begin with the swarm. It begins years before, quietly: pale shapes in the sewers of port cities, hunters standing motionless in the deep woods, prey that walks into the trees and does not walk out. Then the shadow falls. The Winds of Magic gutter like candles in a shut room; wizards wake screaming from dreams of an endless choir; the beasts of the field run mad. Only then does the swarm come, tide upon tide of it, and behind the tide come the feeder-things — the digestion pools, the rippling carpets of the reclamation — until what was a kingdom is bare rock and the swarm has grown by exactly the weight of everything that lived there. Nothing is wasted. Nothing is spared. Nothing is left."
+      }
+     ]
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The Great Devourer cannot be bargained with, bribed, converted or frightened, and it allies with no one, for the concept of an ally requires the concept of a future in which the other party is still alive. Every battle against it can be won. The war cannot, because the war is not, from the swarm's perspective, a war at all. It is a meal, interrupted.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "The Great Devourer cannot be bargained with, bribed, converted or frightened, and it allies with no one, for the concept of an ally requires the concept of a future in which the other party is still alive. Every battle against it can be won. The war cannot, because the war is not, from the swarm's perspective, a war at all. It is a meal, interrupted."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "title": "ARMY SPECIAL RULES",
    "page": 0,
    "entries": [],
@@ -688,6 +739,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "A Hive Tyrant is the Hive Mind made flesh: a towering synapse-beast grown to command, its will lashing the broods around it into perfect, silent obedience. Where it strides, the swarm does not merely fight — it thinks.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "A Hive Tyrant is the Hive Mind made flesh: a towering synapse-beast grown to command, its will lashing the broods around it into perfect, silent obedience. Where it strides, the swarm does not merely fight — it thinks."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -915,6 +977,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Grown in the same birthing-vats as the Warriors it shepherds, the Prime is the alpha organism of the melee — the Hive Mind's blade sunk into the centre of the line.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Grown in the same birthing-vats as the Warriors it shepherds, the Prime is the alpha organism of the melee — the Hive Mind's blade sunk into the centre of the line."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1090,6 +1163,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The patriarch of the hidden broods comes to battle last, after its children have been among the prey for a season — beneath the granaries, under the temples, wearing the dark like a cloak.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The patriarch of the hidden broods comes to battle last, after its children have been among the prey for a season — beneath the granaries, under the temples, wearing the dark like a cloak."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1256,6 +1340,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Little more than a vast brain borne up by wasted limbs and naked will, the Neurotyrant pours the Hive Mind's static across the battlefield until wizards choke on their own half-formed spells.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Little more than a vast brain borne up by wasted limbs and naked will, the Neurotyrant pours the Hive Mind's static across the battlefield until wizards choke on their own half-formed spells."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1413,6 +1508,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The chittering tide. Each termagant is a quick, spiteful rifle-beast, its fleshborer spitting burrowing grubs that chew through mail and bone with equal enthusiasm.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The chittering tide. Each termagant is a quick, spiteful rifle-beast, its fleshborer spitting burrowing grubs that chew through mail and bone with equal enthusiasm."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1508,6 +1614,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -1616,6 +1733,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The swarm's shadow cast across the sky. Gargoyles wheel and dive on membranous wings, washing the ranks below with fleshborer fire in the last breath before the charge lands.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The swarm's shadow cast across the sky. Gargoyles wheel and dive on membranous wings, washing the ranks below with fleshborer fire in the last breath before the charge lands."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1702,6 +1830,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Hunched beneath the node-organisms fused to their spines, neurogaunts exist only to carry the Hive Mind's voice a little further — living cable in a web of will.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Hunched beneath the node-organisms fused to their spines, neurogaunts exist only to carry the Hive Mind's voice a little further — living cable in a web of will."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -1778,6 +1917,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "Where the swarm has passed, rippers boil out of the earth to strip whatever remains. They are the reclamation made visible: everything that falls is eaten, and everything eaten becomes swarm.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Where the swarm has passed, rippers boil out of the earth to strip whatever remains. They are the reclamation made visible: everything that falls is eaten, and everything eaten becomes swarm."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -1886,6 +2036,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The Warriors are the swarm's captains, of a kind — save that no captain of men shares one mind with every soldier under his command, and no company of men fights on after its heart has been told, rather than persuaded, not to break.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The Warriors are the swarm's captains, of a kind — save that no captain of men shares one mind with every soldier under his command, and no company of men fights on after its heart has been told, rather than persuaded, not to break."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -2003,6 +2164,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The vanguard organism. Genestealers go before the hive fleet by years, seeding the cellars and sewers of doomed cities, and when the swarm descends at last it finds the gates already open.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The vanguard organism. Genestealers go before the hive fleet by years, seeding the cellars and sewers of doomed cities, and when the swarm descends at last it finds the gates already open."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2093,6 +2265,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "A Lictor is the swarm's held breath — a chameleon-skinned assassin that stands motionless among the trees for days, tasting the air for the scent of wizards.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "A Lictor is the swarm's held breath — a chameleon-skinned assassin that stands motionless among the trees for days, tasting the air for the scent of wizards."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -2207,6 +2390,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Serpentine burrowers that swim through soil as eels through water, raveners erupt beneath the prey's feet in a spray of earth and scything talons.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Serpentine burrowers that swim through soil as eels through water, raveners erupt beneath the prey's feet in a spray of earth and scything talons."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2297,6 +2491,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "Withered bodies beneath swollen skulls, zoanthropes drift above the ground on a cushion of will, drinking the Winds of Magic dry before the enemy's wizards can call on them.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Withered bodies beneath swollen skulls, zoanthropes drift above the ground on a cushion of will, drinking the Winds of Magic dry before the enemy's wizards can call on them."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -2391,6 +2596,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The biovore waddles at the rear of the swarm, dorsal chambers heavy with living mines, and lobs its squirming children over the lines with a wet, satisfied grunt.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The biovore waddles at the rear of the swarm, dorsal chambers heavy with living mines, and lobs its squirming children over the lines with a wet, satisfied grunt."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2467,6 +2683,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "Blind, mute and absolutely devoted, Tyrant Guard exist to die in their master's place — walls of chitin that step into the path of arrow, bolt and cannonball without being asked.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Blind, mute and absolutely devoted, Tyrant Guard exist to die in their master's place — walls of chitin that step into the path of arrow, bolt and cannonball without being asked."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -2575,6 +2802,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The impaler cannon has no need to see its prey. Its ammunition hunts by warmth and hate, threading over walls and through smoke to find the marrow.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The impaler cannon has no need to see its prey. Its ammunition hunts by warmth and hate, threading over walls and through smoke to find the marrow."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2657,6 +2895,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Venomthropes drift with the swarm in a haze of their own spores — a walking fog-bank of poison through which the broods advance half-seen.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Venomthropes drift with the swarm in a haze of their own spores — a walking fog-bank of poison through which the broods advance half-seen."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2733,6 +2982,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "A gut that walks. The pyrovore exists to burn what cannot be eaten and to eat what cannot be burned, and it has never been particular about the order.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "A gut that walks. The pyrovore exists to burn what cannot be eaten and to eat what cannot be burned, and it has never been particular about the order."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -2827,6 +3087,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The bio-cannon and its bearer are one organism twice enslaved — the parasite gun bonded to the gaunt, and both bonded to the Hive Mind. Its detonating barbs shred legs and shatter shins, and a column so struck stops marching.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The bio-cannon and its bearer are one organism twice enslaved — the parasite gun bonded to the gaunt, and both bonded to the Hive Mind. Its detonating barbs shred legs and shatter shins, and a column so struck stops marching."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2909,6 +3180,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Pack-hunters bred from lictor stock, the leapers range ahead of the swarm on coiled limbs and long balancing tails. The first sign of them is the rear rank of the column going quiet.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Pack-hunters bred from lictor stock, the leapers range ahead of the swarm on coiled limbs and long balancing tails. The first sign of them is the rear rank of the column going quiet."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -2969,6 +3251,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -3073,6 +3366,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "A carnifex is not cunning. It is a battering ram that bleeds, grown to break shieldwalls, gates and city walls in that order, and it does all three the same way — by continuing to walk.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "A carnifex is not cunning. It is a battering ram that bleeds, grown to break shieldwalls, gates and city walls in that order, and it does all three the same way — by continuing to walk."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -3207,6 +3511,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -3359,6 +3674,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The broodmother's flanks ripple and split as she walks, spilling fresh termagants into the fight; to slay her is to hear a hundred birth-sacs fall silent at once.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The broodmother's flanks ripple and split as she walks, spilling fresh termagants into the fight; to slay her is to hear a hundred birth-sacs fall silent at once."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -3500,6 +3826,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The exocrine is a cannon that grew a body. The symbiote-gun owns the beast's every stride, and halts it mid-step when the firing solution ripens.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The exocrine is a cannon that grew a body. The symbiote-gun owns the beast's every stride, and halts it mid-step when the firing solution ripens."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -3598,6 +3935,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The heaviest gun-beast of the swarm advances like a fortress under sail, and its rupture cannon speaks with a report that unhorses knights a field away.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The heaviest gun-beast of the swarm advances like a fortress under sail, and its rupture cannon speaks with a report that unhorses knights a field away."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -3679,6 +4027,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The haruspex is the swarm's appetite distilled: a grasping tongue, a gullet the size of a hay-wain, and precisely enough brain to keep both working.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The haruspex is the swarm's appetite distilled: a grasping tongue, a gullet the size of a hay-wain, and precisely enough brain to keep both working."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -3773,6 +4132,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "Every surface of the toxicrene weeps venom. It fights from within a strangling garden of its own lashes, and the prey is drowning in its air before a single tentacle closes.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Every surface of the toxicrene weeps venom. It fights from within a strangling garden of its own lashes, and the prey is drowning in its air before a single tentacle closes."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -3849,6 +4219,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The harpy rides the night wind on wings the width of a chapel, shrieking as it comes — and the shriek is a mercy, for it means the stranglethorns have not yet fired.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The harpy rides the night wind on wings the width of a chapel, shrieking as it comes — and the shriek is a mercy, for it means the stranglethorns have not yet fired."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -3931,6 +4312,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "Where the harpy harries the ground, the crone owns the sky — spitting gouts of burning bile, and harvesting whatever else presumes to fly.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "Where the harpy harries the ground, the crone owns the sky — spitting gouts of burning bile, and harvesting whatever else presumes to fly."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -4025,6 +4417,17 @@
      "level": 2,
      "blocks": [
       {
+       "type": "para",
+       "style": "italic",
+       "text": "The psychophage devours warriors whole and vents what remains of them as a glittering, corrosive mist. It holds a marked preference for wizards, whose minds burn like tallow.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The psychophage devours warriors whole and vents what remains of them as a glittering, corrosive mist. It holds a marked preference for wizards, whose minds burn like tallow."
+        }
+       ]
+      },
+      {
        "type": "statblock",
        "label": "Profile",
        "columns": [
@@ -4101,6 +4504,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "When the Hive Mind requires a personal touch, it grows an emissary: a towering intelligence of muscle, chitin and borrowed brains, sent into the world to do exactly one thing and constitutionally incapable of being turned from it.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "When the Hive Mind requires a personal touch, it grows an emissary: a towering intelligence of muscle, chitin and borrowed brains, sent into the world to do exactly one thing and constitutionally incapable of being turned from it."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
@@ -4221,6 +4635,17 @@
      "band": "entry",
      "level": 2,
      "blocks": [
+      {
+       "type": "para",
+       "style": "italic",
+       "text": "The deep tunnels have a legend, if hunger can be said to keep legends: a red thing in the dark that swallows knights whole — horse, harness and all — and is always, always still hungry.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The deep tunnels have a legend, if hunger can be said to keep legends: a red thing in the dark that swallows knights whole — horse, harness and all — and is always, always still hungry."
+        }
+       ]
+      },
       {
        "type": "statblock",
        "label": "Profile",
