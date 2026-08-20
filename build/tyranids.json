@@ -1838,7 +1838,7 @@
           "I": "5",
           "A": "2",
           "Ld": "5",
-          "Points": "7"
+          "Points": "8"
          }
         }
        ]
@@ -1861,7 +1861,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Natural Armour (6+)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Armour Piercing (1), Natural Armour (6+)"
       },
       {
        "type": "field",

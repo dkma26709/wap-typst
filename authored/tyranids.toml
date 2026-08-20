@@ -488,7 +488,7 @@ text = "May take toxin sacs +1 point/model"
 text = "May replace fleshborers with devourers +2 points/model"
 
 # Hormagaunts are deliberately priced a point under their anchor (the
-# Daemonette comparison prices the beefed WS4 line at ~8): the faction
+# Daemonette comparison prices the WS4 AP(1) line at ~9): the faction
 # identity is numbers and overwhelming tide, bought as a standing discount
 # on the melee chaff rather than a Without Number rule that might never
 # trigger. Statlines across the gaunt line were beefed and minimum brood
@@ -496,11 +496,11 @@ text = "May replace fleshborers with devourers +2 points/model"
 # implies because someone has to paint it.
 [[chapters.entries]]
 name = "HORMAGAUNTS"
-profile = [["Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "7"]]
+profile = [["Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "8"]]
 unit_size = "10-30"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
-special_rules = "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Natural Armour (6+)"
+special_rules = "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Armour Piercing (1), Natural Armour (6+)"
 text = ["""Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks."""]
 
 [[chapters.entries.options]]

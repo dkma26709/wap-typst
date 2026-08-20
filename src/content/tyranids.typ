@@ -175,11 +175,11 @@
 
 #entry("HORMAGAUNTS")
 #para(((emph: "", text: "Bred for the leap and the lunge, hormagaunts come on in scything waves and strike home before the prey has finished forming ranks."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "7"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "8"),))
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Tyranid)")
 #field("BASE SIZE", "25x25")
-#field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Natural Armour (6+)")
+#field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Armour Piercing (1), Natural Armour (6+)")
 #field("OPTIONS", "")
 #items(((runs: ((emph: "", text: "May take toxin sacs +1 point/model"),), sub: ()), (runs: ((emph: "", text: "May take adrenal glands +1 point/model"),), sub: ())))
 #namecost("BOUNDING LEAP", "")
