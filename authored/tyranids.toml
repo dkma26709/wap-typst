@@ -55,16 +55,16 @@ text = [
 [[chapters.rules]]
 name = "SYNAPTIC ATTUNEMENT"
 text = [
-    """Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.""",
+    """Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.""",
 ]
 items = [
     """Hive Tyrant: The attuned unit has the Hatred special rule.""",
     """Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.""",
     """Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.""",
     """Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.""",
-    """Broodlord: The attuned unit has the Armour Piercing (1) special rule during a turn in which it charged.""",
-    """Zoanthropes: The attuned unit has the Magic Resistance (1) special rule.""",
-    """Tervigon: Add +1 to the Wounds recovered when the attuned unit benefits from The Swarm Feeds.""",
+    """Broodlord (Communion): While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty.""",
+    """Zoanthropes (Communion): While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 24".""",
+    """Tervigon (Communion): While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.""",
     """Trygon Prime: The attuned unit has the Swiftstride special rule.""",
     """Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.""",
 ]
