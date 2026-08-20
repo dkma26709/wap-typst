@@ -303,7 +303,7 @@
 
 #entry("TYRANT GUARD")
 #para(((emph: "", text: "Blind, mute and absolutely devoted, Tyrant Guard exist to die in their master's place — walls of chitin that step into the path of arrow, bolt and cannonball without being asked."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyrant Guard", "6", "4", "0", "5", "6", "3", "3", "3", "7", "60"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Tyrant Guard", "6", "3", "0", "5", "6", "3", "2", "2", "7", "50"),))
 #field("UNIT SIZE", "1-3")
 #field("TROOP TYPE", "Monstrous Infantry (Tyranid)")
 #field("BASE SIZE", "40x40")
