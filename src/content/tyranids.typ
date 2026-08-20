@@ -126,7 +126,7 @@
 #namecost("BONESWORD & LASH WHIP", "")
 #para(((emph: "", text: "Close combat attacks made with the bonesword have the Killing Blow special rule. Enemy models in base contact with the lash whip's bearer suffer a -1 penalty to their Attacks, to a minimum of 1."),))
 #namecost("VENOM CANNON", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "6", "Armour Piercing (2), Multiple Wounds (D3)"))
+#minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "6", "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"))
 #namecost("HIVE COMMANDER", "")
 #para(((emph: "", text: "The Tyrant directs the infiltration itself. When you write your army roster, one Core unit of Infantry in the army gains the Ambushers special rule."),))
 

@@ -394,7 +394,7 @@ text = [
 name = "VENOM CANNON"
 range = '12/24"'
 strength = "6"
-special = "Armour Piercing (2), Multiple Wounds (D3)"
+special = "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"
 
 [[chapters.entries.rules]]
 name = "HIVE COMMANDER"
