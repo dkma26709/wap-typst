@@ -451,9 +451,9 @@
 #heading(level: 1, "SPECIAL CHARACTERS")
 
 #entry("THE RED TERROR", first: true)
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "5", "5", "4", "6", "4", "7", "165"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "210"),))
 #field("TROOP TYPE", "Monstrous Beast (Character, Tyranid)")
-#field("BASE SIZE", "40x40")
+#field("BASE SIZE", "50x50")
 #field("SPECIAL RULES", "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."),), sub: ()), (runs: ((emph: "", text: "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush."),), sub: ())))

@@ -942,9 +942,9 @@ title = "SPECIAL CHARACTERS"
 
 [[chapters.entries]]
 name = "THE RED TERROR"
-profile = [["The Red Terror", "7", "5", "0", "5", "5", "4", "6", "4", "7", "165"]]
+profile = [["The Red Terror", "7", "5", "0", "6", "6", "5", "6", "5", "7", "210"]]
 troop_type = "Monstrous Beast (Character, Tyranid)"
-base_size = "40x40"
+base_size = "50x50"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+)"
 
 [[chapters.entries.notes]]
