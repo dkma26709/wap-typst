@@ -70,6 +70,25 @@ text = [
 ]
 
 [[chapters.rules]]
+name = "THE SWARM FEEDS"
+text = [
+    """Nothing the swarm kills is wasted; it is carried down a thousand gullets back into the tide. At the end of any close combat phase in which a Tyranid unit with Instinctive Behaviour (Feed) destroyed an enemy unit, it feeds on the fallen: the unit immediately recovers D3 Wounds' worth of slain rank-and-file models, just like a summoning spell. Characters are never recovered this way.""",
+]
+
+[[chapters.rules]]
+name = "VANGUARD ORGANISMS"
+text = [
+    """The swarm's ambushers follow prey-scent trails laid down by the vanguard years before the invasion breaks. Tyranid units with the Ambushers special rule add +1 to the dice roll that determines whether they arrive.""",
+]
+
+[[chapters.rules]]
+name = "CAPILLARY CLUSTER"
+cost = "50 points"
+text = [
+    """The first towers of the reclamation, grown in the dark before the battle was ever offered. One per army. After deployment zones are determined, but before either army deploys, place a Capillary Cluster — a Mystical Monument up to 3" in diameter — anywhere within your own deployment zone. Friendly Tyranid units within 6" of the Cluster count as being within range of a Synapse creature with Leadership 8. The Cluster is not itself a Synapse creature for the purposes of Shadow in the Warp, and it cannot be attacked, harmed or moved.""",
+]
+
+[[chapters.rules]]
 name = "BIO-WEAPONS"
 text = [
     """Tyranid weapons are living things, grown for a single purpose and bonded to their bearer's flesh. The following weapons are carried by several units in this book:""",

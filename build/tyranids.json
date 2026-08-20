@@ -225,6 +225,54 @@
     },
     {
      "type": "namecost",
+     "name": "THE SWARM FEEDS",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "Nothing the swarm kills is wasted; it is carried down a thousand gullets back into the tide. At the end of any close combat phase in which a Tyranid unit with Instinctive Behaviour (Feed) destroyed an enemy unit, it feeds on the fallen: the unit immediately recovers D3 Wounds' worth of slain rank-and-file models, just like a summoning spell. Characters are never recovered this way.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "Nothing the swarm kills is wasted; it is carried down a thousand gullets back into the tide. At the end of any close combat phase in which a Tyranid unit with Instinctive Behaviour (Feed) destroyed an enemy unit, it feeds on the fallen: the unit immediately recovers D3 Wounds' worth of slain rank-and-file models, just like a summoning spell. Characters are never recovered this way."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
+     "name": "VANGUARD ORGANISMS",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The swarm's ambushers follow prey-scent trails laid down by the vanguard years before the invasion breaks. Tyranid units with the Ambushers special rule add +1 to the dice roll that determines whether they arrive.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "The swarm's ambushers follow prey-scent trails laid down by the vanguard years before the invasion breaks. Tyranid units with the Ambushers special rule add +1 to the dice roll that determines whether they arrive."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
+     "name": "CAPILLARY CLUSTER",
+     "cost": "50 points"
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The first towers of the reclamation, grown in the dark before the battle was ever offered. One per army. After deployment zones are determined, but before either army deploys, place a Capillary Cluster — a Mystical Monument up to 3\" in diameter — anywhere within your own deployment zone. Friendly Tyranid units within 6\" of the Cluster count as being within range of a Synapse creature with Leadership 8. The Cluster is not itself a Synapse creature for the purposes of Shadow in the Warp, and it cannot be attacked, harmed or moved.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "The first towers of the reclamation, grown in the dark before the battle was ever offered. One per army. After deployment zones are determined, but before either army deploys, place a Capillary Cluster — a Mystical Monument up to 3\" in diameter — anywhere within your own deployment zone. Friendly Tyranid units within 6\" of the Cluster count as being within range of a Synapse creature with Leadership 8. The Cluster is not itself a Synapse creature for the purposes of Shadow in the Warp, and it cannot be attacked, harmed or moved."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
      "name": "BIO-WEAPONS",
      "cost": ""
     },
