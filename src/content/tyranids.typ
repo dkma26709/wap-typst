@@ -441,8 +441,12 @@
 #field("TROOP TYPE", "Monster (Tyranid)")
 #field("BASE SIZE", "50x50")
 #field("SPECIAL RULES", "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)")
+#field("OPTIONS", "")
+#items(((runs: ((emph: "", text: "May be upgraded to a Norn Assimilator +10 points"),), sub: ()),))
 #namecost("SINGULAR PURPOSE", "")
 #para(((emph: "", text: "After both armies have deployed, nominate one enemy unit. The Norn Emissary has the Hatred special rule against the nominated unit, and may re-roll failed charge distance rolls when charging it. If the nominated unit is destroyed, the Emissary's purpose is fulfilled: it gains +1 Attack for the rest of the battle."),))
+#namecost("NORN ASSIMILATOR", "")
+#para(((emph: "", text: "A Norn Assimilator loses the Magic Resistance (2) special rule, and gains toxin sacs (see Broodline Upgrades) and Biomass Assimilation: at the end of each close combat phase in which the Assimilator caused one or more unsaved Wounds, it regains 1 Wound lost earlier in the battle."),))
 
 #heading(level: 1, "SPECIAL CHARACTERS")
 
@@ -454,7 +458,7 @@
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "The Red Terror is a Hero choice. It may not select Biomorphs — it is a unique organism."),), sub: ()), (runs: ((emph: "", text: "The Red Terror may join units of Raveners, and may enter play with such a unit from Ambush."),), sub: ())))
 #namecost("SWALLOW WHOLE", "")
-#para(((emph: "", text: "If the Red Terror directs all of its Attacks at a single enemy model with a Line of Sight value of 2 or less, and all of them hit, the victim is seized in its coils and gulped down: the target must immediately pass an Initiative test or be removed as a casualty regardless of its remaining Wounds, with no saves of any kind allowed. A model removed this way counts as having suffered a number of Wounds equal to its remaining Wounds for combat resolution."),))
+#para(((emph: "", text: "If the Red Terror directs all of its Attacks at a single enemy model with a Line of Sight value of 2 or less, and all of them hit, the victim is seized in its coils and gulped down: the target must immediately pass an Initiative test or be removed as a casualty regardless of its remaining Wounds, with no saves of any kind allowed. A model removed this way counts as having suffered a number of Wounds equal to its remaining Wounds for combat resolution, and the Red Terror immediately regains D3 Wounds lost earlier in the battle as it digests."),))
 
 #heading(level: 1, "CREDITS")
 #para(((emph: "", text: "An original army book for our house games, inspired by the Tyranids of Games Workshop's Warhammer 40,000 and built to the conventions of Mathias Eliasson's Warhammer Armies Project. The rules, army design and points values are our own, anchored against the Daemons of Chaos, Beastmen and Lizardmen books, and are expected to move with playtesting."),))
