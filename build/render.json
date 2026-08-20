@@ -108,6 +108,10 @@
   "cover": "covers/tomb-kings.png"
  },
  {
+  "id": "tyranids",
+  "cover": null
+ },
+ {
   "id": "vampire-counts",
   "cover": "covers/vampire-counts.png"
  },

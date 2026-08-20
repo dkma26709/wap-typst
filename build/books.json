@@ -325,6 +325,20 @@
       "figures": 0
     },
     {
+      "slug": "tyranids",
+      "army": "Tyranids",
+      "version": "1.0",
+      "source": "tyranids.toml",
+      "source_pages": 0,
+      "entries": 16,
+      "chapters": 8,
+      "cover": null,
+      "layout": "army",
+      "figures": 0,
+      "authored": true,
+      "align": "destruction"
+    },
+    {
       "slug": "vampire-counts",
       "army": "Vampire Counts",
       "version": "3.0",

@@ -195,10 +195,13 @@ def main() -> None:
         })
 
     catalogue = args.build / "books.json"
-    if not args.replace and catalogue.exists():
+    if catalogue.exists():
         seen = {b["slug"] for b in manifest}
-        kept = [b for b in json.loads(catalogue.read_text(encoding="utf-8"))["books"]
-                if b["slug"] not in seen]
+        prior = json.loads(catalogue.read_text(encoding="utf-8"))["books"]
+        # Authored books (author.py) never come out of a PDF run, so even
+        # --replace keeps them — this script cannot rebuild what it prunes.
+        kept = [b for b in prior if b["slug"] not in seen
+                and (not args.replace or b.get("authored"))]
         if kept:
             print(f"\nkeeping {len(kept)} book(s) already in the manifest")
         manifest.extend(kept)

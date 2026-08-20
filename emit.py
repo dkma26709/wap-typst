@@ -88,6 +88,25 @@ BASE_COLOPHON = """(
   [Typeset with Typst. Not for sale.],
 )"""
 
+# An authored book is the opposite claim to the one above: the rules, army
+# design and points are ours, not Eliasson's, and the colophon must say so
+# rather than credit him with work he never did.
+AUTHORED_COLOPHON = """(
+  [
+    An original, unofficial army book written for use with the *Warhammer
+    Armies Project*, Mathias Eliasson's freely distributed fan ruleset. This
+    book is not his work: its rules, army design and points values are our
+    own house material, version {version}.
+  ],
+  [
+    Warhammer, Warhammer Fantasy Battle, Warhammer 40,000 and all associated
+    names, races and places are trademarks of Games Workshop Limited. This
+    document is unofficial and unaffiliated, and no challenge to their status
+    is intended.
+  ],
+  [Typeset with Typst. Not for sale.],
+)"""
+
 
 def wrapper(book: dict, edition: dict | None) -> str:
     # Root-relative, because `image()` consumes it inside template.typ.
@@ -99,7 +118,11 @@ def wrapper(book: dict, edition: dict | None) -> str:
     side = ", side: 3.1cm" if rules else ""
     depth = 3 if rules else 2
 
-    if edition is None:
+    if edition is None and book.get("authored"):
+        title = f"{army} {version} — an original army book"
+        subtitle = f"An original army book · for Warhammer Armies Project"
+        colophon = AUTHORED_COLOPHON.format(version=version)
+    elif edition is None:
         title = f"Warhammer Armies Project — {army} {version}"
         subtitle = f"Warhammer Armies Project · {version}"
         colophon = BASE_COLOPHON.format(army=army, version=version)
@@ -258,8 +281,10 @@ def card(book: dict, edition: str, ident: str, meta: str,
 
 def cards_for(book: dict, derived: dict[str, list[dict]],
               align: str | None) -> list[str]:
+    # An authored book's card must not present it as Eliasson's work.
+    label = "Original book" if book.get("authored") else f"Version {book['version']}"
     out = [card(book, BASE["slug"], book["id"],
-                f"Version {book['version']} · {book['entries']} entries", align)]
+                f"{label} · {book['entries']} entries", align)]
     for e in derived.get(book["id"], []):
         stamp = f" {e['edition_version']}" if e["edition_version"] else ""
         # An edition may change the rules, propose changes to them, or both.
@@ -385,11 +410,16 @@ def main() -> None:
         raise SystemExit("emit: the manifest has no rulebook to read alignments from")
     listed = read_alignments(ROOT / "build" / f"{rulebook['slug']}.json")
 
+    valid = {s for s, _, _, _ in ALIGNMENTS}
     align, unaligned = {}, []
     for book in books:
         if book.get("layout") == "rules":
             continue
+        # An authored army is not in the rulebook's lists, so its manifest
+        # entry declares its own alignment instead.
         slug = listed.get(army_key(book["army"]))
+        if slug is None and book.get("align") in valid:
+            slug = book["align"]
         if slug is None:
             unaligned.append(book["army"])
         align[book["id"]] = slug
