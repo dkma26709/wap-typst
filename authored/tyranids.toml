@@ -912,6 +912,20 @@ text = [
     """The Psychophage has +1 Attack while within 12" of one or more enemy Wizards. If it kills an enemy Wizard in close combat, it immediately regains D3 Wounds lost earlier in the battle.""",
 ]
 
+[[chapters.entries]]
+name = "NORN EMISSARY"
+profile = [["Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "310"]]
+unit_size = "1"
+troop_type = "Monster (Tyranid)"
+base_size = "50x50"
+special_rules = "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
+
+[[chapters.entries.rules]]
+name = "SINGULAR PURPOSE"
+text = [
+    """After both armies have deployed, nominate one enemy unit. The Norn Emissary has the Hatred special rule against the nominated unit, and may re-roll failed charge distance rolls when charging it. If the nominated unit is destroyed, the Emissary's purpose is fulfilled: it gains +1 Attack for the rest of the battle.""",
+]
+
 # ---------------------------------------------------------------------------
 
 [[chapters]]

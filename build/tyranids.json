@@ -4094,6 +4094,83 @@
        ]
       }
      ]
+    },
+    {
+     "name": "NORN EMISSARY",
+     "page": 0,
+     "band": "entry",
+     "level": 2,
+     "blocks": [
+      {
+       "type": "statblock",
+       "label": "Profile",
+       "columns": [
+        "M",
+        "WS",
+        "BS",
+        "S",
+        "T",
+        "W",
+        "I",
+        "A",
+        "Ld",
+        "Points"
+       ],
+       "rows": [
+        {
+         "name": "Norn Emissary",
+         "values": {
+          "M": "6",
+          "WS": "5",
+          "BS": "0",
+          "S": "6",
+          "T": "7",
+          "W": "6",
+          "I": "3",
+          "A": "5",
+          "Ld": "10",
+          "Points": "310"
+         }
+        }
+       ]
+      },
+      {
+       "type": "field",
+       "label": "UNIT SIZE",
+       "value": "1"
+      },
+      {
+       "type": "field",
+       "label": "TROOP TYPE",
+       "value": "Monster (Tyranid)"
+      },
+      {
+       "type": "field",
+       "label": "BASE SIZE",
+       "value": "50x50"
+      },
+      {
+       "type": "field",
+       "label": "SPECIAL RULES",
+       "value": "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
+      },
+      {
+       "type": "namecost",
+       "name": "SINGULAR PURPOSE",
+       "cost": ""
+      },
+      {
+       "type": "para",
+       "style": "body",
+       "text": "After both armies have deployed, nominate one enemy unit. The Norn Emissary has the Hatred special rule against the nominated unit, and may re-roll failed charge distance rolls when charging it. If the nominated unit is destroyed, the Emissary's purpose is fulfilled: it gains +1 Attack for the rest of the battle.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "After both armies have deployed, nominate one enemy unit. The Norn Emissary has the Hatred special rule against the nominated unit, and may re-roll failed charge distance rolls when charging it. If the nominated unit is destroyed, the Emissary's purpose is fulfilled: it gains +1 Attack for the rest of the battle."
+        }
+       ]
+      }
+     ]
     }
    ],
    "intro": []

@@ -435,6 +435,15 @@
 #namecost("PSYCHOPHAGIC HUNGER", "")
 #para(((emph: "", text: "The Psychophage has +1 Attack while within 12\" of one or more enemy Wizards. If it kills an enemy Wizard in close combat, it immediately regains D3 Wounds lost earlier in the battle."),))
 
+#entry("NORN EMISSARY")
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "310"),))
+#field("UNIT SIZE", "1")
+#field("TROOP TYPE", "Monster (Tyranid)")
+#field("BASE SIZE", "50x50")
+#field("SPECIAL RULES", "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)")
+#namecost("SINGULAR PURPOSE", "")
+#para(((emph: "", text: "After both armies have deployed, nominate one enemy unit. The Norn Emissary has the Hatred special rule against the nominated unit, and may re-roll failed charge distance rolls when charging it. If the nominated unit is destroyed, the Emissary's purpose is fulfilled: it gains +1 Attack for the rest of the battle."),))
+
 #heading(level: 1, "SPECIAL CHARACTERS")
 
 #entry("THE RED TERROR", first: true)
