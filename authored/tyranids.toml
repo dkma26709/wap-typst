@@ -5,7 +5,7 @@
 # Design settled 2026-08-20: synapse/instinct spine borrowed from Daemonic
 # Instability, no Wizards — the army starves the enemy magic phase instead of
 # contesting it — chitin as Natural Armour on the Lizardmen ladder, poison
-# from toxin sacs and the venomous bio-weapon profiles. Points are anchored against the Daemons of
+# only ever from toxin sacs. Points are anchored against the Daemons of
 # Chaos, Beastmen and Lizardmen books and are expected to move with play.
 
 [book]
@@ -115,19 +115,19 @@ text = [
 name = "FLESHBORER"
 range = '6/12"'
 strength = "4"
-special = "March & Shoot, Poisoned Attacks"
+special = "March & Shoot"
 
 [[chapters.rules]]
 name = "DEVOURER"
 range = '9/18"'
 strength = "3"
-special = "Multiple Shots (2), Poisoned Attacks"
+special = "Multiple Shots (2)"
 
 [[chapters.rules]]
 name = "DEATHSPITTER"
 range = '9/18"'
 strength = "4"
-special = "Poisoned Attacks"
+special = "-"
 
 [[chapters.rules]]
 name = "SCYTHING TALONS"
@@ -394,7 +394,7 @@ text = [
 name = "VENOM CANNON"
 range = '12/24"'
 strength = "6"
-special = "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"
+special = "Armour Piercing (2), Multiple Wounds (D3)"
 
 [[chapters.entries.rules]]
 name = "HIVE COMMANDER"

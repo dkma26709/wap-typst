@@ -413,7 +413,7 @@
      "row": {
       "Range": "6/12\"",
       "Strength": "4",
-      "Special Rules": "March & Shoot, Poisoned Attacks"
+      "Special Rules": "March & Shoot"
      }
     },
     {
@@ -431,7 +431,7 @@
      "row": {
       "Range": "9/18\"",
       "Strength": "3",
-      "Special Rules": "Multiple Shots (2), Poisoned Attacks"
+      "Special Rules": "Multiple Shots (2)"
      }
     },
     {
@@ -449,7 +449,7 @@
      "row": {
       "Range": "9/18\"",
       "Strength": "4",
-      "Special Rules": "Poisoned Attacks"
+      "Special Rules": "-"
      }
     },
     {
@@ -1214,7 +1214,7 @@
        "row": {
         "Range": "12/24\"",
         "Strength": "6",
-        "Special Rules": "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"
+        "Special Rules": "Armour Piercing (2), Multiple Wounds (D3)"
        }
       },
       {
