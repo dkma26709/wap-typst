@@ -371,11 +371,11 @@
 
 #entry("NEUROLICTOR")
 #para(((emph: "", text: "The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."),), style: "italic")
-#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "80"),))
+#statblock("Profile", ("M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"), (("Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "90"),))
 #field("UNIT SIZE", "1")
 #field("TROOP TYPE", "Monstrous Infantry (Tyranid)")
 #field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)")
+#field("SPECIAL RULES", "Tyranid, Terror, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)")
 #field("NOTES", "")
 #items(((runs: ((emph: "", text: "A Neurolictor never takes Instinctive Behaviour tests."),), sub: ()),))
 #namecost("COGNITIVE VEIL", "")

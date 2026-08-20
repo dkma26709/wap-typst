@@ -825,11 +825,11 @@ text = ["""Pack-hunters bred from lictor stock, the leapers range ahead of the s
 
 [[chapters.entries]]
 name = "NEUROLICTOR"
-profile = [["Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "80"]]
+profile = [["Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "90"]]
 unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
+special_rules = "Tyranid, Terror, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
 text = ["""The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."""]
 
 [[chapters.entries.notes]]

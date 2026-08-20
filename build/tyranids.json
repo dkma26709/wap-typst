@@ -3633,7 +3633,7 @@
           "I": "6",
           "A": "3",
           "Ld": "8",
-          "Points": "80"
+          "Points": "90"
          }
         }
        ]
@@ -3656,7 +3656,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
+       "value": "Tyranid, Terror, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
       },
       {
        "type": "field",
