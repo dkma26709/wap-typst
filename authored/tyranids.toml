@@ -312,6 +312,9 @@ text = "May take membranous wings (Fly (8)) +40 points"
 text = "May take reinforced chitin (Natural Armour (3+)) +20 points"
 
 [[chapters.entries.options]]
+text = "May be a Hive Commander +25 points"
+
+[[chapters.entries.options]]
 text = "May take broodline upgrades:"
 sub = [
     "Regenerative tissues +35 points",
@@ -341,6 +344,12 @@ text = [
 name = "VENOM CANNON"
 text = [
     """Range 24", Strength 6, Armour Piercing (2), Multiple Wounds (D3).""",
+]
+
+[[chapters.entries.rules]]
+name = "HIVE COMMANDER"
+text = [
+    """The Tyrant directs the infiltration itself. When you write your army roster, one Core unit of Infantry in the army gains the Ambushers special rule.""",
 ]
 
 [[chapters.entries]]
@@ -461,9 +470,13 @@ text = "May take toxin sacs +1 point/model"
 [[chapters.entries.options]]
 text = "May replace fleshborers with devourers +2 points/model"
 
+# Hormagaunts are deliberately priced a point under their anchor (the
+# Daemonette comparison says ~6): the faction identity is numbers and
+# overwhelming tide, bought as a standing discount on the melee chaff
+# rather than a Without Number rule that might never trigger.
 [[chapters.entries]]
 name = "HORMAGAUNTS"
-profile = [["Hormagaunt", "6", "3", "0", "3", "3", "1", "5", "2", "5", "6"]]
+profile = [["Hormagaunt", "6", "3", "0", "3", "3", "1", "5", "2", "5", "5"]]
 unit_size = "15-45"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
@@ -522,6 +535,9 @@ text = ["""Where the swarm has passed, rippers boil out of the earth to strip wh
 [[chapters.entries.options]]
 text = "May take toxin sacs +3 points/base"
 
+[[chapters.entries.options]]
+text = "May take tunnelling claws (Ambushers) +5 points/base"
+
 [[chapters.entries.notes]]
 text = "Ripper Swarms do not count towards the minimum number of Core units."
 
@@ -573,7 +589,7 @@ profile = [["Lictor", "6", "6", "0", "5", "4", "3", "7", "4", "8", "90"]]
 unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Ambushers, Skirmishers, Natural Armour (5+)"
+special_rules = "Tyranid, Ambushers, Skirmishers, Forest Strider, Natural Armour (5+)"
 text = ["""A Lictor is the swarm's held breath — a chameleon-skinned assassin that stands motionless among the trees for days, tasting the air for the scent of wizards."""]
 
 [[chapters.entries.notes]]
@@ -737,7 +753,7 @@ profile = [["Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "15"]]
 unit_size = "5-15"
 troop_type = "War Beast (Tyranid)"
 base_size = "25x25"
-special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Natural Armour (5+)"
+special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Forest Strider, Natural Armour (5+)"
 text = ["""Pack-hunters bred from lictor stock, the leapers range ahead of the swarm on coiled limbs and long balancing tails. The first sign of them is the rear rank of the column going quiet."""]
 
 [[chapters.entries]]
@@ -746,7 +762,7 @@ profile = [["Neurolictor", "6", "5", "0", "4", "4", "3", "6", "3", "8", "70"]]
 unit_size = "1"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Ambushers, Skirmishers, Chameleonic Scales (see Lictor), Natural Armour (5+)"
+special_rules = "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
 text = ["""The neurolictor conceals not its body but the very idea of itself. Soldiers who march near it find orders slipping from memory and courage curdling for reasons none of them can name."""]
 
 [[chapters.entries.notes]]
@@ -797,6 +813,9 @@ special_rules = "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Na
 text = ["""The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."""]
 
 [[chapters.entries.options]]
+text = "May be upgraded to a Trygon Prime (Synapse) +40 points"
+
+[[chapters.entries.options]]
 text = "May be upgraded to a Mawloc (Terror from Below) +30 points"
 
 [[chapters.entries.options]]
@@ -817,6 +836,7 @@ text = [
 name = "TERROR FROM BELOW"
 text = [
     """A Mawloc has the Terror special rule. In addition, each enemy unit within 6" of the Mawloc when it emerges from Subterranean Assault must pass a Panic test or flee.""",
+    """A Mawloc never stops hunting from below: at the start of any of your Remaining Moves sub-phases, if it is not engaged in close combat, it may burrow — remove it from the battlefield. It re-enters play at the start of the Remaining Moves sub-phase of your next turn, emerging as per Subterranean Assault.""",
 ]
 
 [[chapters.entries]]

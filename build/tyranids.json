@@ -902,6 +902,16 @@
          "runs": [
           {
            "emph": "",
+           "text": "May be a Hive Commander +25 points"
+          }
+         ],
+         "text": "May be a Hive Commander +25 points",
+         "sub": []
+        },
+        {
+         "runs": [
+          {
+           "emph": "",
            "text": "May take broodline upgrades:"
           }
          ],
@@ -1013,6 +1023,22 @@
         {
          "emph": "",
          "text": "Range 24\", Strength 6, Armour Piercing (2), Multiple Wounds (D3)."
+        }
+       ]
+      },
+      {
+       "type": "namecost",
+       "name": "HIVE COMMANDER",
+       "cost": ""
+      },
+      {
+       "type": "para",
+       "style": "body",
+       "text": "The Tyrant directs the infiltration itself. When you write your army roster, one Core unit of Infantry in the army gains the Ambushers special rule.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "The Tyrant directs the infiltration itself. When you write your army roster, one Core unit of Infantry in the army gains the Ambushers special rule."
         }
        ]
       }
@@ -1701,7 +1727,7 @@
           "I": "5",
           "A": "2",
           "Ld": "5",
-          "Points": "6"
+          "Points": "5"
          }
         }
        ]
@@ -2046,6 +2072,16 @@
          ],
          "text": "May take toxin sacs +3 points/base",
          "sub": []
+        },
+        {
+         "runs": [
+          {
+           "emph": "",
+           "text": "May take tunnelling claws (Ambushers) +5 points/base"
+          }
+         ],
+         "text": "May take tunnelling claws (Ambushers) +5 points/base",
+         "sub": []
         }
        ]
       },
@@ -2375,7 +2411,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Ambushers, Skirmishers, Natural Armour (5+)"
+       "value": "Tyranid, Ambushers, Skirmishers, Forest Strider, Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -3289,7 +3325,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Natural Armour (5+)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Forest Strider, Natural Armour (5+)"
       }
      ]
     },
@@ -3361,7 +3397,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Ambushers, Skirmishers, Chameleonic Scales (see Lictor), Natural Armour (5+)"
+       "value": "Tyranid, Ambushers, Skirmishers, Forest Strider, Chameleonic Scales (see Lictor), Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -3635,6 +3671,16 @@
          "runs": [
           {
            "emph": "",
+           "text": "May be upgraded to a Trygon Prime (Synapse) +40 points"
+          }
+         ],
+         "text": "May be upgraded to a Trygon Prime (Synapse) +40 points",
+         "sub": []
+        },
+        {
+         "runs": [
+          {
+           "emph": "",
            "text": "May be upgraded to a Mawloc (Terror from Below) +30 points"
           }
          ],
@@ -3710,6 +3756,17 @@
         {
          "emph": "",
          "text": "A Mawloc has the Terror special rule. In addition, each enemy unit within 6\" of the Mawloc when it emerges from Subterranean Assault must pass a Panic test or flee."
+        }
+       ]
+      },
+      {
+       "type": "para",
+       "style": "body",
+       "text": "A Mawloc never stops hunting from below: at the start of any of your Remaining Moves sub-phases, if it is not engaged in close combat, it may burrow — remove it from the battlefield. It re-enters play at the start of the Remaining Moves sub-phase of your next turn, emerging as per Subterranean Assault.",
+       "runs": [
+        {
+         "emph": "",
+         "text": "A Mawloc never stops hunting from below: at the start of any of your Remaining Moves sub-phases, if it is not engaged in close combat, it may burrow — remove it from the battlefield. It re-enters play at the start of the Remaining Moves sub-phase of your next turn, emerging as per Subterranean Assault."
         }
        ]
       }
