@@ -5,7 +5,7 @@
 # Design settled 2026-08-20: synapse/instinct spine borrowed from Daemonic
 # Instability, no Wizards — the army starves the enemy magic phase instead of
 # contesting it — chitin as Natural Armour on the Lizardmen ladder, poison
-# only ever from toxin sacs. Points are anchored against the Daemons of
+# from toxin sacs and the venomous bio-weapon profiles. Points are anchored against the Daemons of
 # Chaos, Beastmen and Lizardmen books and are expected to move with play.
 
 [book]
@@ -55,18 +55,18 @@ text = [
 [[chapters.rules]]
 name = "SYNAPTIC ATTUNEMENT"
 text = [
-    """Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.""",
+    """Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor; each gift is also named in brackets after the Synapse special rule in its creature's entry. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.""",
 ]
 items = [
-    """Hive Tyrant: The attuned unit has the Hatred special rule.""",
-    """Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.""",
-    """Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.""",
-    """Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.""",
-    """Broodlord (Communion): While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty.""",
-    """Zoanthropes (Communion): While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 24".""",
-    """Tervigon (Communion): While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.""",
-    """Trygon Prime: The attuned unit has the Swiftstride special rule.""",
-    """Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.""",
+    """Synapse (Hatred) — Hive Tyrant: The attuned unit has the Hatred special rule.""",
+    """Synapse (Dread) — Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.""",
+    """Synapse (Precision) — Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.""",
+    """Synapse (Discipline) — Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.""",
+    """Synapse (Communion) — Broodlord: While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty.""",
+    """Synapse (Communion) — Zoanthropes: While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 12/24".""",
+    """Synapse (Communion) — Tervigon: While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.""",
+    """Synapse (Swiftstride) — Trygon Prime: The attuned unit has the Swiftstride special rule.""",
+    """Synapse (Purpose) — Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.""",
 ]
 
 [[chapters.rules]]
@@ -75,7 +75,7 @@ text = [
     """Without the Hive Mind's grip, a Tyranid organism falls back on the appetites it was grown from. At the start of each friendly turn, each unit with this special rule that is not within 12" of a friendly Synapse creature and not engaged in close combat must take a Leadership test on its own Leadership. If the test is failed, the unit is governed by its instinct, shown in brackets after the rule, until the start of its next friendly turn:""",
 ]
 items = [
-    """Lurk: The unit is subject to the rules for Stupidity, and counts as having failed its Stupidity test this turn.""",
+    """Lurk: The unit is Unfocused, as the result of the same name on the Stupidity table: it suffers a -1 penalty to its Weapon Skill, Ballistic Skill and Leadership.""",
     """Feed: The unit is subject to the rules for Frenzy (including the extra Attack), and automatically fails any Leadership test to restrain from charging.""",
 ]
 
@@ -113,21 +113,21 @@ text = [
 
 [[chapters.rules]]
 name = "FLESHBORER"
-text = [
-    """Range 12", Strength 4, March & Shoot.""",
-]
+range = '6/12"'
+strength = "4"
+special = "March & Shoot, Poisoned Attacks"
 
 [[chapters.rules]]
 name = "DEVOURER"
-text = [
-    """Range 18", Strength 3, Multiple Shots (2).""",
-]
+range = '9/18"'
+strength = "3"
+special = "Multiple Shots (2), Poisoned Attacks"
 
 [[chapters.rules]]
 name = "DEATHSPITTER"
-text = [
-    """Range 18", Strength 4.""",
-]
+range = '9/18"'
+strength = "4"
+special = "Poisoned Attacks"
 
 [[chapters.rules]]
 name = "SCYTHING TALONS"
@@ -144,12 +144,31 @@ text = [
 [[chapters.rules]]
 name = "BROODLINE UPGRADES"
 text = [
-    """Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. They are cumulative with other sources of the same special rules as normal:""",
+    """Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. Each is a special rule in its own right, cumulative with other sources of the same rule as normal:""",
 ]
-items = [
-    """Toxin sacs: The model has the Poisoned Attacks special rule.""",
-    """Adrenal glands: The model adds +1 to its Movement characteristic.""",
-    """Regenerative tissues: The model has the Regeneration (5+) special rule.""",
+
+[[chapters.rules]]
+name = "TOXIN SACS"
+text = [
+    """The model has the Poisoned Attacks special rule.""",
+]
+
+[[chapters.rules]]
+name = "ADRENAL GLANDS"
+text = [
+    """The model adds +1 to its Movement characteristic.""",
+]
+
+[[chapters.rules]]
+name = "REGENERATIVE TISSUES"
+text = [
+    """The model has the Regeneration (5+) special rule.""",
+]
+
+[[chapters.rules]]
+name = "WARP-STATIC CYSTS"
+text = [
+    """Enemy Wizards within 12" of a unit with warp-static cysts suffer the -1 casting penalty from Shadow in the Warp as if the unit were a Synapse creature. This penalty is not cumulative with any other source of it.""",
 ]
 
 [[chapters.rules]]
@@ -233,6 +252,13 @@ text = [
 ]
 
 [[chapters.rules]]
+name = "SCREAMING CYST"
+cost = "35 points"
+text = [
+    """Synapse creatures only. Enemy Wizards within 12" of the model suffer a -2 casting penalty from Shadow in the Warp, rather than -1.""",
+]
+
+[[chapters.rules]]
 name = "THE HORROR IN THE DARK"
 cost = "30 points"
 text = [
@@ -306,7 +332,7 @@ text = [
 name = "FLESH HOOKS"
 cost = "10 points"
 text = [
-    """The model gains a shooting attack with range 8", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.""",
+    """The model gains a shooting attack: range 4/8", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.""",
 ]
 
 # ---------------------------------------------------------------------------
@@ -320,7 +346,7 @@ profile = [["Hive Tyrant", "7", "7", "3", "6", "6", "5", "6", "5", "10", "280"]]
 troop_type = "Monster (Character, Tyranid)"
 base_size = "50x50 or 50x100"
 equipment = "Scything talons"
-special_rules = "Tyranid, Synapse, Synaptic Relay, Terror, Natural Armour (4+), Stomp (D6)"
+special_rules = "Tyranid, Synapse (Hatred), Synaptic Relay, Terror, Natural Armour (4+), Stomp (D6)"
 text = ["""A Hive Tyrant is the Hive Mind made flesh: a towering synapse-beast grown to command, its will lashing the broods around it into perfect, silent obedience. Where it strides, the swarm does not merely fight — it thinks."""]
 
 [[chapters.entries.options]]
@@ -366,9 +392,9 @@ text = [
 
 [[chapters.entries.rules]]
 name = "VENOM CANNON"
-text = [
-    """Range 24", Strength 6, Armour Piercing (2), Multiple Wounds (D3).""",
-]
+range = '12/24"'
+strength = "6"
+special = "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"
 
 [[chapters.entries.rules]]
 name = "HIVE COMMANDER"
@@ -382,7 +408,7 @@ profile = [["Tyranid Prime", "5", "6", "3", "5", "5", "3", "5", "4", "9", "130"]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
 equipment = "Scything talons"
-special_rules = "Tyranid, Synapse, Alpha Warrior, Natural Armour (5+)"
+special_rules = "Tyranid, Synapse (Precision), Alpha Warrior, Natural Armour (5+)"
 text = ["""Grown in the same birthing-vats as the Warriors it shepherds, the Prime is the alpha organism of the melee — the Hive Mind's blade sunk into the centre of the line."""]
 
 [[chapters.entries.options]]
@@ -416,7 +442,7 @@ name = "BROODLORD"
 profile = [["Broodlord", "6", "7", "0", "5", "5", "3", "7", "4", "9", "155"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Synapse, Ambushers, Rending Claws, Natural Armour (5+)"
+special_rules = "Tyranid, Synapse (Communion), Ambushers, Rending Claws, Natural Armour (5+)"
 text = ["""The patriarch of the hidden broods comes to battle last, after its children have been among the prey for a season — beneath the granaries, under the temples, wearing the dark like a cloak."""]
 
 [[chapters.entries.options]]
@@ -450,7 +476,7 @@ name = "NEUROTYRANT"
 profile = [["Neurotyrant", "5", "3", "0", "4", "5", "3", "3", "2", "10", "150"]]
 troop_type = "Monstrous Infantry (Character, Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Synapse, Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
+special_rules = "Tyranid, Synapse (Dread), Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
 text = ["""Little more than a vast brain borne up by wasted limbs and naked will, the Neurotyrant pours the Hive Mind's static across the battlefield until wizards choke on their own half-formed spells."""]
 
 [[chapters.entries.options]]
@@ -546,6 +572,9 @@ base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)"
 text = ["""Hunched beneath the node-organisms fused to their spines, neurogaunts exist only to carry the Hive Mind's voice a little further — living cable in a web of will."""]
 
+[[chapters.entries.options]]
+text = "May take warp-static cysts +2 points/model"
+
 [[chapters.entries.rules]]
 name = "SYNAPTIC NODE"
 text = [
@@ -582,7 +611,7 @@ unit_size = "3-9"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 equipment = "Scything talons"
-special_rules = "Tyranid, Synapse, Natural Armour (5+)"
+special_rules = "Tyranid, Synapse (Discipline), Natural Armour (5+)"
 text = ["""The Warriors are the swarm's captains, of a kind — save that no captain of men shares one mind with every soldier under his command, and no company of men fights on after its heart has been told, rather than persuaded, not to break."""]
 
 [[chapters.entries.options]]
@@ -657,14 +686,14 @@ profile = [["Zoanthrope", "4", "2", "3", "3", "4", "3", "3", "1", "9", "70"]]
 unit_size = "1-3"
 troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
-special_rules = "Tyranid, Synapse, Magic Resistance (3), Natural Armour (5+)"
+special_rules = "Tyranid, Synapse (Communion), Magic Resistance (3), Natural Armour (5+)"
 text = ["""Withered bodies beneath swollen skulls, zoanthropes drift above the ground on a cushion of will, drinking the Winds of Magic dry before the enemy's wizards can call on them."""]
 
 [[chapters.entries.rules]]
 name = "WARP BLAST"
-text = [
-    """Range 18", Strength 5, Armour Piercing (2).""",
-]
+range = '9/18"'
+strength = "5"
+special = "Armour Piercing (2)"
 
 [[chapters.entries.rules]]
 name = "PSYCHIC DRAIN"
@@ -720,8 +749,11 @@ text = ["""The impaler cannon has no need to see its prey. Its ammunition hunts 
 
 [[chapters.entries.rules]]
 name = "IMPALER CANNON"
+range = '12/24"'
+strength = "5"
+special = "Armour Piercing (2), Multiple Shots (2)"
 text = [
-    """Range 24", Strength 5, Armour Piercing (2), Multiple Shots (2). The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier.""",
+    """The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier.""",
 ]
 
 [[chapters.entries]]
@@ -732,6 +764,9 @@ troop_type = "Monstrous Infantry (Tyranid)"
 base_size = "40x40"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Toxin sacs (see Broodline Upgrades), Natural Armour (6+)"
 text = ["""Venomthropes drift with the swarm in a haze of their own spores — a walking fog-bank of poison through which the broods advance half-seen."""]
+
+[[chapters.entries.options]]
+text = "May take warp-static cysts +15 points/model"
 
 [[chapters.entries.rules]]
 name = "SPORE CLOUD"
@@ -772,8 +807,11 @@ text = ["""The bio-cannon and its bearer are one organism twice enslaved — the
 
 [[chapters.entries.rules]]
 name = "BARB-LAUNCHER"
+range = '9/18"'
+strength = "4"
+special = "See below"
 text = [
-    """Range 18", Strength 4. A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn.""",
+    """A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn.""",
 ]
 
 [[chapters.entries]]
@@ -842,7 +880,7 @@ special_rules = "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Na
 text = ["""The trygon swims through the deep earth trailing a wake of crackling bio-lightning, and surfaces precisely where the prey had agreed among themselves that nothing could ever come."""]
 
 [[chapters.entries.options]]
-text = "May be upgraded to a Trygon Prime (Synapse) +50 points"
+text = "May be upgraded to a Trygon Prime (Synapse (Swiftstride)) +50 points"
 
 [[chapters.entries.options]]
 text = "May be upgraded to a Mawloc (Terror from Below) +30 points"
@@ -874,7 +912,7 @@ profile = [["Tervigon", "6", "3", "0", "5", "6", "6", "2", "3", "9", "290"]]
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x100 or 60x100"
-special_rules = "Tyranid, Synapse, Natural Armour (4+), Stomp (D6)"
+special_rules = "Tyranid, Synapse (Communion), Natural Armour (4+), Stomp (D6)"
 text = ["""The broodmother's flanks ripple and split as she walks, spilling fresh termagants into the fight; to slay her is to hear a hundred birth-sacs fall silent at once."""]
 
 [[chapters.entries.options]]
@@ -909,9 +947,9 @@ text = ["""The exocrine is a cannon that grew a body. The symbiote-gun owns the 
 
 [[chapters.entries.rules]]
 name = "BIO-PLASMIC CANNON"
-text = [
-    """Range 24", Strength 6, Armour Piercing (2), Multiple Shots (3).""",
-]
+range = '12/24"'
+strength = "6"
+special = "Armour Piercing (2), Multiple Shots (3)"
 
 [[chapters.entries.rules]]
 name = "SYMBIOTIC TARGETING"
@@ -931,9 +969,9 @@ text = ["""The heaviest gun-beast of the swarm advances like a fortress under sa
 
 [[chapters.entries.rules]]
 name = "RUPTURE CANNON"
-text = [
-    """Range 36", Strength 8, Armour Piercing (3), Multiple Wounds (D3), Multiple Shots (2).""",
-]
+range = '18/36"'
+strength = "8"
+special = "Armour Piercing (3), Multiple Wounds (D3), Multiple Shots (2)"
 
 [[chapters.entries]]
 name = "HARUSPEX"
@@ -983,9 +1021,9 @@ text = ["""The harpy rides the night wind on wings the width of a chapel, shriek
 
 [[chapters.entries.rules]]
 name = "STRANGLETHORN CANNON"
-text = [
-    """Range 18", Strength 5, Armour Piercing (1), Multiple Shots (2).""",
-]
+range = '9/18"'
+strength = "5"
+special = "Armour Piercing (1), Multiple Shots (2)"
 
 [[chapters.entries]]
 name = "HIVE CRONE"
@@ -1029,7 +1067,7 @@ profile = [["Norn Emissary", "6", "5", "0", "6", "7", "6", "3", "5", "10", "320"
 unit_size = "1"
 troop_type = "Monster (Tyranid)"
 base_size = "50x50 or 50x100"
-special_rules = "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
+special_rules = "Tyranid, Synapse (Purpose), Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
 text = ["""When the Hive Mind requires a personal touch, it grows an emissary: a towering intelligence of muscle, chitin and borrowed brains, sent into the world to do exactly one thing and constitutionally incapable of being turned from it."""]
 
 [[chapters.entries.options]]

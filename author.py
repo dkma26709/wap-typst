@@ -37,7 +37,7 @@ FIELD_LABELS = {
 
 BOOK_KEYS = {"slug", "army", "version", "align", "shelf"}
 CHAPTER_KEYS = {"title", "intro", "rules", "entries"}
-RULE_KEYS = {"name", "cost", "text", "items"}
+RULE_KEYS = {"name", "cost", "text", "items", "range", "strength", "special"}
 ENTRY_KEYS = {"name", "profile", "unit_size", "troop_type", "base_size",
               "equipment", "special_rules", "options", "notes", "rules",
               "text"}
@@ -77,6 +77,14 @@ def namecost_blocks(rule: dict, where: str) -> list[dict]:
     check_keys(rule, RULE_KEYS, where)
     blocks: list[dict] = [{"type": "namecost", "name": rule["name"],
                            "cost": rule.get("cost", "")}]
+    # A rule with a range is a weapon, and weapons print as the rulebook's
+    # missile-weapon minitables: Range (short/long), Strength, Special Rules.
+    if "range" in rule:
+        blocks.append({"type": "minitable",
+                       "columns": ["Range", "Strength", "Special Rules"],
+                       "row": {"Range": rule["range"],
+                               "Strength": rule.get("strength", "-"),
+                               "Special Rules": rule.get("special", "-")}})
     blocks.extend(para(t) for t in rule.get("text", []))
     if rule.get("items"):
         blocks.append(listing([item(i) for i in rule["items"]]))

@@ -163,11 +163,11 @@
     {
      "type": "para",
      "style": "body",
-     "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.",
+     "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor; each gift is also named in brackets after the Synapse special rule in its creature's entry. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.",
      "runs": [
       {
        "emph": "",
-       "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind."
+       "text": "Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor; each gift is also named in brackets after the Synapse special rule in its creature's entry. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind."
       }
      ]
     },
@@ -178,90 +178,90 @@
        "runs": [
         {
          "emph": "",
-         "text": "Hive Tyrant: The attuned unit has the Hatred special rule."
+         "text": "Synapse (Hatred) — Hive Tyrant: The attuned unit has the Hatred special rule."
         }
        ],
-       "text": "Hive Tyrant: The attuned unit has the Hatred special rule.",
+       "text": "Synapse (Hatred) — Hive Tyrant: The attuned unit has the Hatred special rule.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership."
+         "text": "Synapse (Dread) — Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership."
         }
        ],
-       "text": "Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.",
+       "text": "Synapse (Dread) — Neurotyrant: Enemy units in base contact with the attuned unit suffer a -1 penalty to their Leadership.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat."
+         "text": "Synapse (Precision) — Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat."
         }
        ],
-       "text": "Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.",
+       "text": "Synapse (Precision) — Tyranid Prime: The attuned unit may re-roll To Hit rolls of 1 in close combat.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership."
+         "text": "Synapse (Discipline) — Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership."
         }
        ],
-       "text": "Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.",
+       "text": "Synapse (Discipline) — Tyranid Warriors: The attuned unit takes Hive Mind Instability tests as if it were Steadfast, on its unmodified Leadership.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Broodlord (Communion): While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty."
+         "text": "Synapse (Communion) — Broodlord: While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty."
         }
        ],
-       "text": "Broodlord (Communion): While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty.",
+       "text": "Synapse (Communion) — Broodlord: While at least one unit is attuned to the Broodlord, enemy models take the Leadership test against his Hypnotic Gaze with a -1 penalty.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Zoanthropes (Communion): While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 24\"."
+         "text": "Synapse (Communion) — Zoanthropes: While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 12/24\"."
         }
        ],
-       "text": "Zoanthropes (Communion): While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 24\".",
+       "text": "Synapse (Communion) — Zoanthropes: While at least one unit is attuned to the Zoanthropes, their Warp Blast is resolved at Strength 6 with a range of 12/24\".",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Tervigon (Communion): While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor."
+         "text": "Synapse (Communion) — Tervigon: While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor."
         }
        ],
-       "text": "Tervigon (Communion): While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.",
+       "text": "Synapse (Communion) — Tervigon: While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Trygon Prime: The attuned unit has the Swiftstride special rule."
+         "text": "Synapse (Swiftstride) — Trygon Prime: The attuned unit has the Swiftstride special rule."
         }
        ],
-       "text": "Trygon Prime: The attuned unit has the Swiftstride special rule.",
+       "text": "Synapse (Swiftstride) — Trygon Prime: The attuned unit has the Swiftstride special rule.",
        "sub": []
       },
       {
        "runs": [
         {
          "emph": "",
-         "text": "Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose."
+         "text": "Synapse (Purpose) — Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose."
         }
        ],
-       "text": "Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.",
+       "text": "Synapse (Purpose) — Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.",
        "sub": []
       }
      ]
@@ -289,10 +289,10 @@
        "runs": [
         {
          "emph": "",
-         "text": "Lurk: The unit is subject to the rules for Stupidity, and counts as having failed its Stupidity test this turn."
+         "text": "Lurk: The unit is Unfocused, as the result of the same name on the Stupidity table: it suffers a -1 penalty to its Weapon Skill, Ballistic Skill and Leadership."
         }
        ],
-       "text": "Lurk: The unit is subject to the rules for Stupidity, and counts as having failed its Stupidity test this turn.",
+       "text": "Lurk: The unit is Unfocused, as the result of the same name on the Stupidity table: it suffers a -1 penalty to its Weapon Skill, Ballistic Skill and Leadership.",
        "sub": []
       },
       {
@@ -404,15 +404,17 @@
      "cost": ""
     },
     {
-     "type": "para",
-     "style": "body",
-     "text": "Range 12\", Strength 4, March & Shoot.",
-     "runs": [
-      {
-       "emph": "",
-       "text": "Range 12\", Strength 4, March & Shoot."
-      }
-     ]
+     "type": "minitable",
+     "columns": [
+      "Range",
+      "Strength",
+      "Special Rules"
+     ],
+     "row": {
+      "Range": "6/12\"",
+      "Strength": "4",
+      "Special Rules": "March & Shoot, Poisoned Attacks"
+     }
     },
     {
      "type": "namecost",
@@ -420,15 +422,17 @@
      "cost": ""
     },
     {
-     "type": "para",
-     "style": "body",
-     "text": "Range 18\", Strength 3, Multiple Shots (2).",
-     "runs": [
-      {
-       "emph": "",
-       "text": "Range 18\", Strength 3, Multiple Shots (2)."
-      }
-     ]
+     "type": "minitable",
+     "columns": [
+      "Range",
+      "Strength",
+      "Special Rules"
+     ],
+     "row": {
+      "Range": "9/18\"",
+      "Strength": "3",
+      "Special Rules": "Multiple Shots (2), Poisoned Attacks"
+     }
     },
     {
      "type": "namecost",
@@ -436,15 +440,17 @@
      "cost": ""
     },
     {
-     "type": "para",
-     "style": "body",
-     "text": "Range 18\", Strength 4.",
-     "runs": [
-      {
-       "emph": "",
-       "text": "Range 18\", Strength 4."
-      }
-     ]
+     "type": "minitable",
+     "columns": [
+      "Range",
+      "Strength",
+      "Special Rules"
+     ],
+     "row": {
+      "Range": "9/18\"",
+      "Strength": "4",
+      "Special Rules": "Poisoned Attacks"
+     }
     },
     {
      "type": "namecost",
@@ -486,46 +492,75 @@
     {
      "type": "para",
      "style": "body",
-     "text": "Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. They are cumulative with other sources of the same special rules as normal:",
+     "text": "Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. Each is a special rule in its own right, cumulative with other sources of the same rule as normal:",
      "runs": [
       {
        "emph": "",
-       "text": "Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. They are cumulative with other sources of the same special rules as normal:"
+       "text": "Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. Each is a special rule in its own right, cumulative with other sources of the same rule as normal:"
       }
      ]
     },
     {
-     "type": "list",
-     "items": [
+     "type": "namecost",
+     "name": "TOXIN SACS",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The model has the Poisoned Attacks special rule.",
+     "runs": [
       {
-       "runs": [
-        {
-         "emph": "",
-         "text": "Toxin sacs: The model has the Poisoned Attacks special rule."
-        }
-       ],
-       "text": "Toxin sacs: The model has the Poisoned Attacks special rule.",
-       "sub": []
-      },
+       "emph": "",
+       "text": "The model has the Poisoned Attacks special rule."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
+     "name": "ADRENAL GLANDS",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The model adds +1 to its Movement characteristic.",
+     "runs": [
       {
-       "runs": [
-        {
-         "emph": "",
-         "text": "Adrenal glands: The model adds +1 to its Movement characteristic."
-        }
-       ],
-       "text": "Adrenal glands: The model adds +1 to its Movement characteristic.",
-       "sub": []
-      },
+       "emph": "",
+       "text": "The model adds +1 to its Movement characteristic."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
+     "name": "REGENERATIVE TISSUES",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "The model has the Regeneration (5+) special rule.",
+     "runs": [
       {
-       "runs": [
-        {
-         "emph": "",
-         "text": "Regenerative tissues: The model has the Regeneration (5+) special rule."
-        }
-       ],
-       "text": "Regenerative tissues: The model has the Regeneration (5+) special rule.",
-       "sub": []
+       "emph": "",
+       "text": "The model has the Regeneration (5+) special rule."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
+     "name": "WARP-STATIC CYSTS",
+     "cost": ""
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "Enemy Wizards within 12\" of a unit with warp-static cysts suffer the -1 casting penalty from Shadow in the Warp as if the unit were a Synapse creature. This penalty is not cumulative with any other source of it.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "Enemy Wizards within 12\" of a unit with warp-static cysts suffer the -1 casting penalty from Shadow in the Warp as if the unit were a Synapse creature. This penalty is not cumulative with any other source of it."
       }
      ]
     },
@@ -738,6 +773,22 @@
     },
     {
      "type": "namecost",
+     "name": "SCREAMING CYST",
+     "cost": "35 points"
+    },
+    {
+     "type": "para",
+     "style": "body",
+     "text": "Synapse creatures only. Enemy Wizards within 12\" of the model suffer a -2 casting penalty from Shadow in the Warp, rather than -1.",
+     "runs": [
+      {
+       "emph": "",
+       "text": "Synapse creatures only. Enemy Wizards within 12\" of the model suffer a -2 casting penalty from Shadow in the Warp, rather than -1."
+      }
+     ]
+    },
+    {
+     "type": "namecost",
      "name": "THE HORROR IN THE DARK",
      "cost": "30 points"
     },
@@ -904,11 +955,11 @@
     {
      "type": "para",
      "style": "body",
-     "text": "The model gains a shooting attack with range 8\", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.",
+     "text": "The model gains a shooting attack: range 4/8\", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.",
      "runs": [
       {
        "emph": "",
-       "text": "The model gains a shooting attack with range 8\", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle."
+       "text": "The model gains a shooting attack: range 4/8\", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle."
       }
      ]
     }
@@ -986,7 +1037,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Synaptic Relay, Terror, Natural Armour (4+), Stomp (D6)"
+       "value": "Tyranid, Synapse (Hatred), Synaptic Relay, Terror, Natural Armour (4+), Stomp (D6)"
       },
       {
        "type": "field",
@@ -1154,15 +1205,17 @@
        "cost": ""
       },
       {
-       "type": "para",
-       "style": "body",
-       "text": "Range 24\", Strength 6, Armour Piercing (2), Multiple Wounds (D3).",
-       "runs": [
-        {
-         "emph": "",
-         "text": "Range 24\", Strength 6, Armour Piercing (2), Multiple Wounds (D3)."
-        }
-       ]
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "12/24\"",
+        "Strength": "6",
+        "Special Rules": "Armour Piercing (2), Multiple Wounds (D3), Poisoned Attacks"
+       }
       },
       {
        "type": "namecost",
@@ -1250,7 +1303,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Alpha Warrior, Natural Armour (5+)"
+       "value": "Tyranid, Synapse (Precision), Alpha Warrior, Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -1431,7 +1484,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Ambushers, Rending Claws, Natural Armour (5+)"
+       "value": "Tyranid, Synapse (Communion), Ambushers, Rending Claws, Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -1608,7 +1661,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
+       "value": "Tyranid, Synapse (Dread), Synaptic Relay (see Hive Tyrant), Magic Resistance (2), Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -2106,6 +2159,26 @@
        "value": "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)"
       },
       {
+       "type": "field",
+       "label": "OPTIONS",
+       "value": ""
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "runs": [
+          {
+           "emph": "",
+           "text": "May take warp-static cysts +2 points/model"
+          }
+         ],
+         "text": "May take warp-static cysts +2 points/model",
+         "sub": []
+        }
+       ]
+      },
+      {
        "type": "namecost",
        "name": "SYNAPTIC NODE",
        "cost": ""
@@ -2325,7 +2398,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Natural Armour (5+)"
+       "value": "Tyranid, Synapse (Discipline), Natural Armour (5+)"
       },
       {
        "type": "field",
@@ -2775,7 +2848,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Magic Resistance (3), Natural Armour (5+)"
+       "value": "Tyranid, Synapse (Communion), Magic Resistance (3), Natural Armour (5+)"
       },
       {
        "type": "namecost",
@@ -2783,15 +2856,17 @@
        "cost": ""
       },
       {
-       "type": "para",
-       "style": "body",
-       "text": "Range 18\", Strength 5, Armour Piercing (2).",
-       "runs": [
-        {
-         "emph": "",
-         "text": "Range 18\", Strength 5, Armour Piercing (2)."
-        }
-       ]
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "9/18\"",
+        "Strength": "5",
+        "Special Rules": "Armour Piercing (2)"
+       }
       },
       {
        "type": "namecost",
@@ -3098,13 +3173,26 @@
        "cost": ""
       },
       {
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "12/24\"",
+        "Strength": "5",
+        "Special Rules": "Armour Piercing (2), Multiple Shots (2)"
+       }
+      },
+      {
        "type": "para",
        "style": "body",
-       "text": "Range 24\", Strength 5, Armour Piercing (2), Multiple Shots (2). The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier.",
+       "text": "The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier.",
        "runs": [
         {
          "emph": "",
-         "text": "Range 24\", Strength 5, Armour Piercing (2), Multiple Shots (2). The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier."
+         "text": "The impaler cannon may target a unit that is out of sight, provided it is in range, at an additional -1 To Hit modifier."
         }
        ]
       }
@@ -3179,6 +3267,26 @@
        "type": "field",
        "label": "SPECIAL RULES",
        "value": "Tyranid, Instinctive Behaviour (Lurk), Toxin sacs (see Broodline Upgrades), Natural Armour (6+)"
+      },
+      {
+       "type": "field",
+       "label": "OPTIONS",
+       "value": ""
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "runs": [
+          {
+           "emph": "",
+           "text": "May take warp-static cysts +15 points/model"
+          }
+         ],
+         "text": "May take warp-static cysts +15 points/model",
+         "sub": []
+        }
+       ]
       },
       {
        "type": "namecost",
@@ -3383,13 +3491,26 @@
        "cost": ""
       },
       {
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "9/18\"",
+        "Strength": "4",
+        "Special Rules": "See below"
+       }
+      },
+      {
        "type": "para",
        "style": "body",
-       "text": "Range 18\", Strength 4. A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn.",
+       "text": "A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn.",
        "runs": [
         {
          "emph": "",
-         "text": "Range 18\", Strength 4. A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn."
+         "text": "A unit that suffers one or more unsaved Wounds from barb-launchers is slowed by the detonating barbs: it suffers -2 Movement and may not march until the start of the firing player's next turn."
         }
        ]
       }
@@ -3809,10 +3930,10 @@
          "runs": [
           {
            "emph": "",
-           "text": "May be upgraded to a Trygon Prime (Synapse) +50 points"
+           "text": "May be upgraded to a Trygon Prime (Synapse (Swiftstride)) +50 points"
           }
          ],
-         "text": "May be upgraded to a Trygon Prime (Synapse) +50 points",
+         "text": "May be upgraded to a Trygon Prime (Synapse (Swiftstride)) +50 points",
          "sub": []
         },
         {
@@ -3978,7 +4099,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Natural Armour (4+), Stomp (D6)"
+       "value": "Tyranid, Synapse (Communion), Natural Armour (4+), Stomp (D6)"
       },
       {
        "type": "field",
@@ -4143,15 +4264,17 @@
        "cost": ""
       },
       {
-       "type": "para",
-       "style": "body",
-       "text": "Range 24\", Strength 6, Armour Piercing (2), Multiple Shots (3).",
-       "runs": [
-        {
-         "emph": "",
-         "text": "Range 24\", Strength 6, Armour Piercing (2), Multiple Shots (3)."
-        }
-       ]
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "12/24\"",
+        "Strength": "6",
+        "Special Rules": "Armour Piercing (2), Multiple Shots (3)"
+       }
       },
       {
        "type": "namecost",
@@ -4252,15 +4375,17 @@
        "cost": ""
       },
       {
-       "type": "para",
-       "style": "body",
-       "text": "Range 36\", Strength 8, Armour Piercing (3), Multiple Wounds (D3), Multiple Shots (2).",
-       "runs": [
-        {
-         "emph": "",
-         "text": "Range 36\", Strength 8, Armour Piercing (3), Multiple Wounds (D3), Multiple Shots (2)."
-        }
-       ]
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "18/36\"",
+        "Strength": "8",
+        "Special Rules": "Armour Piercing (3), Multiple Wounds (D3), Multiple Shots (2)"
+       }
       }
      ]
     },
@@ -4537,15 +4662,17 @@
        "cost": ""
       },
       {
-       "type": "para",
-       "style": "body",
-       "text": "Range 18\", Strength 5, Armour Piercing (1), Multiple Shots (2).",
-       "runs": [
-        {
-         "emph": "",
-         "text": "Range 18\", Strength 5, Armour Piercing (1), Multiple Shots (2)."
-        }
-       ]
+       "type": "minitable",
+       "columns": [
+        "Range",
+        "Strength",
+        "Special Rules"
+       ],
+       "row": {
+        "Range": "9/18\"",
+        "Strength": "5",
+        "Special Rules": "Armour Piercing (1), Multiple Shots (2)"
+       }
       }
      ]
     },
@@ -4809,7 +4936,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Synapse, Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
+       "value": "Tyranid, Synapse (Purpose), Magic Resistance (2), Natural Armour (3+), Stomp (D6)"
       },
       {
        "type": "field",
