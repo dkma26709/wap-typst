@@ -473,8 +473,8 @@ title = "CORE UNITS"
 
 [[chapters.entries]]
 name = "TERMAGANTS"
-profile = [["Termagant", "5", "2", "3", "3", "3", "1", "4", "1", "5", "5"]]
-unit_size = "20-60"
+profile = [["Termagant", "5", "3", "3", "3", "3", "1", "4", "1", "5", "6"]]
+unit_size = "10-40"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Fleshborer"
@@ -488,13 +488,16 @@ text = "May take toxin sacs +1 point/model"
 text = "May replace fleshborers with devourers +2 points/model"
 
 # Hormagaunts are deliberately priced a point under their anchor (the
-# Daemonette comparison says ~6): the faction identity is numbers and
-# overwhelming tide, bought as a standing discount on the melee chaff
-# rather than a Without Number rule that might never trigger.
+# Daemonette comparison prices the beefed WS4 line at ~8): the faction
+# identity is numbers and overwhelming tide, bought as a standing discount
+# on the melee chaff rather than a Without Number rule that might never
+# trigger. Statlines across the gaunt line were beefed and minimum brood
+# sizes halved on purpose - the swarm is played smaller than the lore
+# implies because someone has to paint it.
 [[chapters.entries]]
 name = "HORMAGAUNTS"
-profile = [["Hormagaunt", "6", "3", "0", "3", "3", "1", "5", "2", "5", "5"]]
-unit_size = "15-45"
+profile = [["Hormagaunt", "6", "4", "0", "3", "3", "1", "5", "2", "5", "7"]]
+unit_size = "10-30"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Bounding Leap, Natural Armour (6+)"
@@ -514,8 +517,8 @@ text = [
 
 [[chapters.entries]]
 name = "GARGOYLES"
-profile = [["Gargoyle", "4", "3", "3", "3", "3", "1", "4", "1", "5", "12"]]
-unit_size = "10-30"
+profile = [["Gargoyle", "4", "3", "3", "3", "3", "1", "4", "2", "5", "14"]]
+unit_size = "6-18"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Fleshborer"
@@ -528,7 +531,7 @@ text = "May take toxin sacs +1 point/model"
 [[chapters.entries]]
 name = "NEUROGAUNTS"
 profile = [["Neurogaunt", "5", "2", "0", "3", "3", "1", "3", "1", "5", "4"]]
-unit_size = "10-30"
+unit_size = "8-24"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (6+)"
@@ -588,7 +591,7 @@ text = "May take adrenal glands +3 points/model"
 [[chapters.entries]]
 name = "GENESTEALER BROOD"
 profile = [["Genestealer", "6", "5", "0", "4", "4", "1", "6", "3", "7", "14"]]
-unit_size = "8-24"
+unit_size = "5-20"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Rending Claws, Natural Armour (6+)"
@@ -751,7 +754,7 @@ text = [
 [[chapters.entries]]
 name = "BARBGAUNTS"
 profile = [["Barbgaunt", "4", "2", "3", "4", "4", "1", "2", "1", "5", "9"]]
-unit_size = "10-20"
+unit_size = "5-15"
 troop_type = "Infantry (Tyranid)"
 base_size = "25x25"
 equipment = "Barb-launcher"
@@ -767,7 +770,7 @@ text = [
 [[chapters.entries]]
 name = "VON RYAN'S LEAPERS"
 profile = [["Leaper", "7", "4", "0", "4", "4", "1", "5", "2", "6", "15"]]
-unit_size = "5-15"
+unit_size = "3-12"
 troop_type = "War Beast (Tyranid)"
 base_size = "25x25"
 special_rules = "Tyranid, Instinctive Behaviour (Feed), Ambushers, Skirmishers, Swiftstride, Forest Strider, Natural Armour (5+)"
