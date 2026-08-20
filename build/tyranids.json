@@ -3129,7 +3129,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Natural Armour (3+), Stomp (D6), Impact Hits (D3)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Natural Armour (3+), Stomp (D6+1), Impact Hits (D3)"
       },
       {
        "type": "field",
@@ -3258,7 +3258,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Natural Armour (4+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Subterranean Assault, Natural Armour (4+), Stomp (D3)"
       },
       {
        "type": "field",
@@ -3555,7 +3555,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D3)"
       },
       {
        "type": "namecost",
@@ -3653,7 +3653,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Lurk), Natural Armour (3+), Stomp (D3)"
       },
       {
        "type": "namecost",
@@ -3823,7 +3823,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Toxin sacs (see Broodline Upgrades), Natural Armour (4+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Toxin sacs (see Broodline Upgrades), Natural Armour (4+), Stomp (D3)"
       },
       {
        "type": "namecost",
@@ -3905,7 +3905,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D3)"
       },
       {
        "type": "namecost",
@@ -3982,7 +3982,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Fly (8), Natural Armour (5+), Stomp (D3)"
       },
       {
        "type": "namecost",
@@ -4249,7 +4249,7 @@
           "I": "6",
           "A": "5",
           "Ld": "7",
-          "Points": "220"
+          "Points": "215"
          }
         }
        ]
@@ -4267,7 +4267,7 @@
       {
        "type": "field",
        "label": "SPECIAL RULES",
-       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D6)"
+       "value": "Tyranid, Instinctive Behaviour (Feed), Ambushers, Natural Armour (5+), Stomp (D3)"
       },
       {
        "type": "field",
