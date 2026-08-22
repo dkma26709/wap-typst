@@ -63,12 +63,24 @@
   }),
 ))
 
+// The indented italic note that sits beneath a profile. The twin of
+// `para(.., style: "italic")` for hand-written books, which pass content rather
+// than runs.
+#let note(body) = block(
+  above: 0.9em, below: 0.9em,
+  inset: (left: 1.1em, right: 1.1em),
+  text(size: 10pt, body),
+)
+
 // --- profiles ---------------------------------------------------------------
 
-#let field(label, value) = block(above: 0.3em, below: 0.3em)[
-  #text(weight: "bold", size: 9pt, tracking: 0.07em)[#upper(label):]
-  #if value != "" [ #value ]
-]
+#let field(label, value) = {
+  [#metadata((kind: "field", label: label, value: value))<meta>]
+  block(above: 0.3em, below: 0.3em)[
+    #text(weight: "bold", size: 9pt, tracking: 0.07em)[#upper(label):]
+    #if value != "" [ #value ]
+  ]
+}
 
 // The stat line: a label column plus one equal column per characteristic.
 #let statblock(label, cols, rows) = block(above: 0.85em, below: 1em, width: 100%, table(
@@ -109,6 +121,7 @@
 // suppresses it so an entry can share its chapter-title page.
 #let entry(name, first: false) = {
   if not first { pagebreak(weak: true) }
+  [#metadata((kind: "entry", name: name))<meta>]
   heading(level: 2, name)
 }
 
@@ -119,6 +132,7 @@
 #let compact-entry(name, body) = block(
   breakable: false, above: 1.4em, below: 0.5em,
   {
+    [#metadata((kind: "entry", name: name))<meta>]
     heading(level: 2, name)
     body
   },
@@ -147,43 +161,23 @@
   (row.name, ..CHARACTERISTICS.map(k => str(row.at(k))))
 }
 
-// A unit entry: its profile, its fields, and whatever prose and profiles follow.
+// The stat line as authored: one dictionary per row, so the keys carry the
+// meaning rather than their position and a characteristic cannot land in the
+// wrong column by being written in the wrong place. Scrambling the order of the
+// keys renders identically. A wrong value against the right key is still
+// writable - nothing here catches that.
 //
-// Fields are an ordered sequence of pairs, not named parameters. There are 23
-// distinct labels across the corpus (including the source's own EQIPMENT typo,
-// reproduced faithfully) and 186 distinct orders, so a fixed set of named
-// parameters would both fail to express some entries and silently relayout the
-// rest into one canonical order.
-//
-// An entry that is nothing but its profile and fields shares a page instead of
-// claiming one, which is what the generated books already do.
-#let unit-entry(name, profile: (), fields: (), first: false, body) = {
-  let where = "unit-entry(" + name + ")"
-  assert(profile.len() > 0, message: where + ": no profile rows")
-  for f in fields {
-    assert(type(f) == array and f.len() == 2,
-      message: where + ": every field must be a (label, value) pair")
-  }
-  let rows = profile.map(r => profile-row(r, where))
-
-  // A label can only be attached in markup mode, hence the brackets.
-  [#metadata((
-    unit: name,
-    profile: profile,
-    fields: fields.map(f => (label: f.at(0), value: f.at(1))),
-  ))<unit>]
-
-  let core = {
-    statblock("Profile", CHARACTERISTICS.map(upper), rows)
-    for f in fields { field(f.at(0), f.at(1)) }
-  }
-  if body == [] {
-    compact-entry(name, core)
-  } else {
-    entry(name, first: first)
-    core
-    body
-  }
+// Deliberately just the profile, not the whole entry. An entry is an ordered
+// sequence, not a record: 886 of the 1,482 entries with a stat line interleave
+// their fields with lists, 341 open with a run-in name before the profile, and
+// 34 open with prose. A call that took `fields:` as one parameter would hoist
+// them together and quietly relayout three fifths of the corpus.
+#let profile(..rows) = {
+  let rows = rows.pos()
+  assert(rows.len() > 0, message: "profile: no rows")
+  let built = rows.map(r => profile-row(r, "profile"))
+  [#metadata((kind: "profile", rows: rows))<meta>]
+  statblock("Profile", CHARACTERISTICS.map(upper), built)
 }
 
 // A ruled chart — to-hit, to-wound, armour saves. Unlike a stat line these are
