@@ -10,7 +10,8 @@
       "chapters": 9,
       "cover": "covers/albion.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "amazons",
@@ -22,7 +23,8 @@
       "chapters": 9,
       "cover": "covers/amazons.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "araby",
@@ -34,7 +36,8 @@
       "chapters": 9,
       "cover": "covers/araby.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "beastmen",
@@ -46,7 +49,8 @@
       "chapters": 14,
       "cover": "covers/beastmen.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "bretonnia",
@@ -58,7 +62,8 @@
       "chapters": 11,
       "cover": "covers/bretonnia.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "chaos-dwarfs",
@@ -70,7 +75,8 @@
       "chapters": 10,
       "cover": "covers/chaos-dwarfs.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "daemons-of-chaos",
@@ -82,7 +88,8 @@
       "chapters": 18,
       "cover": "covers/daemons-of-chaos.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "dark-elves",
@@ -94,7 +101,8 @@
       "chapters": 11,
       "cover": "covers/dark-elves.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "dogs-of-war",
@@ -106,7 +114,8 @@
       "chapters": 11,
       "cover": "covers/dogs-of-war.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "dwarfs",
@@ -118,7 +127,8 @@
       "chapters": 10,
       "cover": "covers/dwarfs.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "estalia",
@@ -130,7 +140,8 @@
       "chapters": 9,
       "cover": "covers/estalia.png",
       "layout": "army",
-      "figures": 2
+      "figures": 2,
+      "hand_written": true
     },
     {
       "slug": "grand-cathay",
@@ -142,7 +153,8 @@
       "chapters": 11,
       "cover": "covers/grand-cathay.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "halflings",
@@ -154,7 +166,8 @@
       "chapters": 9,
       "cover": "covers/halflings.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "high-elves",
@@ -166,7 +179,8 @@
       "chapters": 11,
       "cover": "covers/high-elves.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "hobgoblins",
@@ -178,7 +192,8 @@
       "chapters": 10,
       "cover": "covers/hobgoblins.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "kingdoms-of-ind",
@@ -190,7 +205,8 @@
       "chapters": 9,
       "cover": "covers/kingdoms-of-ind.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "kislev",
@@ -202,7 +218,8 @@
       "chapters": 12,
       "cover": "covers/kislev.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "lizardmen",
@@ -227,7 +244,8 @@
       "chapters": 10,
       "cover": "covers/nippon.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "norsca",
@@ -239,7 +257,8 @@
       "chapters": 10,
       "cover": "covers/norsca.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "ogre-kingdoms",
@@ -251,7 +270,8 @@
       "chapters": 11,
       "cover": "covers/ogre-kingdoms.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "orcs-goblins",
@@ -263,7 +283,8 @@
       "chapters": 15,
       "cover": "covers/orcs-goblins.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "pirates-of-sartosa",
@@ -275,7 +296,8 @@
       "chapters": 9,
       "cover": "covers/pirates-of-sartosa.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "skaven",
@@ -287,7 +309,8 @@
       "chapters": 12,
       "cover": "covers/skaven.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "empire",
@@ -299,7 +322,8 @@
       "chapters": 12,
       "cover": "covers/empire.png",
       "layout": "army",
-      "figures": 1
+      "figures": 1,
+      "hand_written": true
     },
     {
       "slug": "rulebook",
@@ -311,7 +335,8 @@
       "chapters": 29,
       "cover": "covers/rulebook.png",
       "layout": "rules",
-      "figures": 46
+      "figures": 46,
+      "hand_written": true
     },
     {
       "slug": "tomb-kings",
@@ -323,7 +348,8 @@
       "chapters": 10,
       "cover": "covers/tomb-kings.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "tyranids",
@@ -351,7 +377,8 @@
       "chapters": 11,
       "cover": "covers/vampire-counts.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "warriors-of-chaos",
@@ -363,7 +390,8 @@
       "chapters": 26,
       "cover": "covers/warriors-of-chaos.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "wood-elves",
@@ -375,7 +403,8 @@
       "chapters": 11,
       "cover": "covers/wood-elves.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "zombie-pirates",
@@ -387,7 +416,8 @@
       "chapters": 12,
       "cover": "covers/zombie-pirates.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     }
   ]
 }
