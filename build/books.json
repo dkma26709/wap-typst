@@ -337,7 +337,8 @@
       "figures": 0,
       "authored": true,
       "align": "destruction",
-      "shelf": "proposal"
+      "shelf": "proposal",
+      "hand_written": true
     },
     {
       "slug": "vampire-counts",

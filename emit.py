@@ -453,8 +453,19 @@ def main() -> None:
     css = (ROOT / "site" / "style.css").read_text(encoding="utf-8")
     content = ROOT / "src" / "content"
 
-    written, missing, render = [], [], []
+    written, missing, render, owned = [], [], [], []
     for book in books + [b for v in derived.values() for b in v]:
+        # A hand-written book has no wrapper and no generated content: the file
+        # in src/ is the book, and the source of truth. Emit must leave it
+        # alone, but it still belongs on the render list and the landing page.
+        if book.get("hand_written"):
+            if not (ROOT / "src" / f"{book['id']}.typ").exists():
+                raise SystemExit(
+                    f"emit: {book['id']} is marked hand_written but "
+                    f"src/{book['id']}.typ does not exist")
+            owned.append(book["id"])
+            render.append({"id": book["id"], "cover": book["cover"]})
+            continue
         if not (content / f"{book['id']}.typ").exists():
             missing.append(book["id"])
             continue
@@ -468,7 +479,7 @@ def main() -> None:
 
     # Stale wrappers would still be compiled by the workflow, which walks the
     # render list, but leaving them behind makes src/ lie about what is built.
-    live = set(written)
+    live = set(written) | set(owned)
     for old in (ROOT / "src").glob("*.typ"):
         if old.stem not in live and old.name != "template.typ":
             old.unlink()
@@ -482,6 +493,9 @@ def main() -> None:
     count = sum(len(v) for v in derived.values())
     print(f"wrote {len(written)} Typst wrappers into src/ "
           f"({len(books)} books, {count} derived editions)")
+    if owned:
+        print(f"  left {len(owned)} hand-written book(s) untouched: "
+              f"{', '.join(sorted(owned))}")
     print(f"wrote site/index.html and build/render.json")
     if missing:
         print(f"  NO CONTENT for: {', '.join(missing)} "

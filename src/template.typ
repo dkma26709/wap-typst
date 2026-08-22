@@ -56,12 +56,16 @@
   }
 }
 
-#let items(its) = block(above: 0.55em, below: 0.75em, list(
+// No block wrapper of its own: the spacing lives in a `show list` rule in
+// `book()` instead, so a hand-written `- item` and a generated one sit
+// identically. The rule is set on the list element rather than wrapping it, so
+// a nested list does not gain a second helping.
+#let items(its) = list(
   ..its.map(it => {
     runs(it.runs)
     if it.sub.len() > 0 { list(..it.sub.map(s => runs(s))) }
   }),
-))
+)
 
 // The indented italic note that sits beneath a profile. The twin of
 // `para(.., style: "italic")` for hand-written books, which pass content rather
@@ -284,9 +288,15 @@
     ]),
   )
   set text(font: body-font, size: 10.5pt, fill: ink, lang: "en", hyphenate: true)
+  // Off deliberately. Generated books pass their text as string literals, which
+  // Typst never substitutes; a hand-written book passes markup, which it would.
+  // Leaving it on would curl every apostrophe in text the colophon promises is
+  // reproduced, and the word-bag gate cannot see punctuation change.
+  set smartquote(enabled: false)
   set par(justify: true, leading: 0.62em, spacing: 0.72em)
   set heading(numbering: none)
   set list(marker: text(fill: hair)[•], indent: 0.5em, body-indent: 0.45em)
+  show list: set block(above: 0.55em, below: 0.75em)
   set table(gutter: 0pt)
 
   show heading.where(level: 1): it => {
