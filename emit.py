@@ -1,9 +1,13 @@
-"""Turn the book manifest into per-book Typst documents and the landing page.
+"""Build the landing page and the render list from the books themselves.
 
-`extract/batch.py` decides which books passed their gates and writes
-build/books.json; `patch.py` writes build/editions.json for any edition derived
-from them. Everything downstream is generated from those two, so a book cannot
-appear on the site without having been verified.
+src/ is the catalogue. Each book declares what it is in its own `#book-meta`,
+counts its own entries, and an edition names the book it derives from, so this
+reads the books with `typst eval` rather than a manifest that could fall out of
+step with them. The editions' labels and tallies come from editions/, the only
+place they are written down.
+
+Nothing here generates a book: every one is owned by hand and imported once by
+extract/to_book.py.
 """
 
 from __future__ import annotations
@@ -11,6 +15,9 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
+import subprocess
+import tomllib
 import re
 import sys
 from pathlib import Path
@@ -397,85 +404,154 @@ def page(books: list[dict], derived: dict[str, list[dict]],
 """
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
-    ap.add_argument("--editions", type=Path, default=ROOT / "build" / "editions.json")
-    args = ap.parse_args()
+# --- reading the books ------------------------------------------------------
 
-    books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
-    for book in books:
+TYPST = os.environ.get("TYPST", "typst")
+
+# One query per book, answering both questions the landing page has: what the
+# book says it is, and how many entries it holds. Counting headings rather than
+# the markers `entry` drops keeps it layout-agnostic - the rulebook's sections
+# are headings and drop no marker - and it is the book's own tally either way,
+# rather than a number recorded elsewhere and hoped to still be true.
+PROBE = ('(meta: query(<book-meta>).first().value, '
+         'entries: query(heading).filter(h => h.level >= 2).len())')
+
+
+def read_book(path: Path) -> dict:
+    out = subprocess.run([TYPST, "eval", PROBE, "--in", str(path),
+                          "--root", str(ROOT)],
+                         capture_output=True, text=True, cwd=ROOT)
+    if out.returncode != 0:
+        raise SystemExit(f"emit: could not read {path.name}: "
+                         f"{out.stderr.strip().splitlines()[:1]}")
+    probed = json.loads(out.stdout)
+    book = dict(probed["meta"])
+    book["entries"] = probed["entries"]
+    book.setdefault("id", book["slug"])
+    if not book.get("id"):
         book["id"] = book["slug"]
+    return book
 
+
+def read_books() -> tuple[list[dict], dict[str, list[dict]]]:
+    """Every book in src/, and which of them are editions of which.
+
+    src/ is the catalogue now. A book that exists is a book that ships, so there
+    is no manifest to fall out of step with what is on disk.
+    """
+    books, derived = [], {}
+    for path in sorted(ROOT.glob("src/*.typ")):
+        if path.name == "template.typ":
+            continue
+        book = read_book(path)
+        if book.get("edition"):
+            derived.setdefault(book["base"], []).append(book)
+        else:
+            books.append(book)
+    books.sort(key=lambda b: b["army"].casefold())
+    for group in derived.values():
+        group.sort(key=lambda b: (b["edition"], b["id"]))
+    return books, derived
+
+
+def read_editions() -> dict[str, dict]:
+    """The editions' own identity, from the files that are its only source.
+
+    An edition's colophon is set into its books at import time, so only what the
+    landing page shows is read back here: the label, the version, and how many
+    changes or proposals it makes to each book.
+    """
     editions: dict[str, dict] = {}
-    derived: dict[str, list[dict]] = {}
-    if args.editions.exists():
-        data = json.loads(args.editions.read_text(encoding="utf-8"))
-        editions = {e["slug"]: e for e in data["editions"]}
-        for record in data["books"]:
-            derived.setdefault(record["base"], []).append(record)
+    for meta in sorted(ROOT.glob("editions/*/edition.toml")):
+        data = tomllib.loads(meta.read_text(encoding="utf-8"))
+        counts = {}
+        for book in sorted(meta.parent.glob("*.toml")):
+            if book.name == "edition.toml":
+                continue
+            entry = tomllib.loads(book.read_text(encoding="utf-8"))
+            counts[book.stem] = {
+                "changes": len(entry.get("change", [])),
+                "proposals": len(entry.get("proposal", [])),
+            }
+        editions[data["slug"]] = {
+            "slug": data["slug"],
+            "label": data["label"],
+            "version": data.get("version", ""),
+            "blurb": data.get("blurb", ""),
+            "derives_from": data.get("derives_from"),
+            "counts": counts,
+        }
+    return editions
+
+
+def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
+
+    books, derived = read_books()
+    editions = read_editions()
+
+    # Carry the edition's label, version and tallies onto each derived book, so
+    # the card code sees one record per book-in-an-edition as it always has.
+    for base, group in derived.items():
+        for book in group:
+            edition = editions.get(book["edition"])
+            if edition is None:
+                raise SystemExit(f"emit: {book['id']} claims edition "
+                                 f"'{book['edition']}', which no editions/ "
+                                 f"directory defines")
+            counted = edition["counts"].get(base, {})
+            book["edition_label"] = edition["label"]
+            book["edition_version"] = edition["version"]
+            book["changes"] = counted.get("changes", 0)
+            book["proposals"] = counted.get("proposals", 0)
 
     # A shelf that no edition defines would leave the card invisible under
     # every filter setting, so it fails loudly here instead.
     for book in books:
+        # A book that is simply itself says shelf "base"; the shelf of the
+        # books' own text is spelled differently here, so normalise before
+        # checking that any other shelf is one an edition actually defines.
+        if book.get("shelf") in (None, "", "base"):
+            book["shelf"] = None
         shelf = book.get("shelf")
         if shelf and shelf not in editions:
             raise SystemExit(f"emit: {book['slug']} files itself on unknown "
                              f"shelf '{shelf}' — known: {sorted(editions)}")
 
-    rulebook = next((b for b in books if b.get("layout") == "rules"), None)
-    if rulebook is None:
-        raise SystemExit("emit: the manifest has no rulebook to read alignments from")
-    listed = read_alignments(ROOT / "build" / f"{rulebook['slug']}.json")
-
+    # Each book declares its own allegiance, baked in when it was imported from
+    # the rulebook's Alliance & Alignment lists. Reading it here rather than
+    # re-deriving it means the site no longer depends on the rulebook's
+    # extraction JSON, which no longer exists.
     valid = {s for s, _, _, _ in ALIGNMENTS}
     align, unaligned = {}, []
     for book in books:
         if book.get("layout") == "rules":
             continue
-        # An authored army is not in the rulebook's lists, so its manifest
-        # entry declares its own alignment instead.
-        slug = listed.get(army_key(book["army"]))
-        if slug is None and book.get("align") in valid:
-            slug = book["align"]
-        if slug is None:
+        slug = book.get("align")
+        if slug not in valid:
             unaligned.append(book["army"])
+            slug = None
         align[book["id"]] = slug
     if unaligned:
         raise SystemExit(
-            f"emit: not named in the rulebook's alignment lists: "
-            f"{', '.join(sorted(unaligned))}. Add an alias if the book's title "
-            f"differs from the name it is listed under.")
+            f"emit: no allegiance declared by: {', '.join(sorted(unaligned))}. "
+            f"Add `align:` to the book's #book-meta - one of {sorted(valid)}.")
 
     css = (ROOT / "site" / "style.css").read_text(encoding="utf-8")
 
     written, render, owned = [], [], []
-    for book in books + [b for v in derived.values() for b in v]:
-        # A hand-written book has no wrapper and no generated content: the file
-        # in src/ is the book, and the source of truth. Emit must leave it
-        # alone, but it still belongs on the render list and the landing page.
-        if book.get("hand_written"):
-            if not (ROOT / "src" / f"{book['id']}.typ").exists():
-                raise SystemExit(
-                    f"emit: {book['id']} is marked hand_written but "
-                    f"src/{book['id']}.typ does not exist")
-            owned.append(book["id"])
-            # An edition shares the cover art of the book it derives from, which
-            # the site already has, so it lists none of its own.
-            render.append({"id": book["id"],
-                           "cover": "" if book.get("edition") else book["cover"]})
-            continue
-        raise SystemExit(
-            f"emit: {book['id']} is not marked hand_written, but nothing "
-            f"generates a book any more - import it with extract/to_book.py")
+    for book in books + [b for base in sorted(derived) for b in derived[base]]:
+        # src/ is the catalogue: a book that is there is a book that ships.
+        owned.append(book["id"])
+        # An edition shares the cover art of the book it derives from, which
+        # the site already has, so it lists none of its own.
+        render.append({"id": book["id"],
+                       "cover": "" if book.get("edition") else book.get("cover")})
 
-    # Stale wrappers would still be compiled by the workflow, which walks the
-    # render list, but leaving them behind makes src/ lie about what is built.
-    live = set(written) | set(owned)
-    for old in (ROOT / "src").glob("*.typ"):
-        if old.stem not in live and old.name != "template.typ":
-            old.unlink()
-            print(f"  removed stale wrapper {old.name}")
+    # No prune here, deliberately. It existed to clear away wrappers emit.py
+    # had generated and no longer would; now that every book in src/ is owned
+    # by hand, a prune can only ever delete somebody's book. It did exactly
+    # that once, to nine editions, before this comment replaced it.
 
     (ROOT / "site" / "index.html").write_text(page(books, derived, align, list(editions.values()), css),
                                               encoding="utf-8")

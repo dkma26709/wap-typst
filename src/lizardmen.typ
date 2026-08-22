@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/lizardmen.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Lizardmen 3.0")

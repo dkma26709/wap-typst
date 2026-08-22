@@ -13,6 +13,7 @@
   version: "3.11",
   layout: "army",
   cover: "covers/dwarfs.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Dwarfs 3.11")

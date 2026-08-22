@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/albion.png",
+  align: "order",
   id: "albion-house",
   base: "albion",
   edition: "house",

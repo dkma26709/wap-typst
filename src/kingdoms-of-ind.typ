@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/kingdoms-of-ind.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Kingdoms of Ind 3.0")

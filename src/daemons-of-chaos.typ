@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/daemons-of-chaos.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Daemons of Chaos 3.0")

@@ -4,12 +4,14 @@ Re-typesets the [Warhammer Armies Project](https://www.warhammerarmiesproject.co
 army books from their published PDFs into [Typst](https://typst.app), and
 publishes the result to GitHub Pages.
 
-**30 army books and the core rulebook · 1,746 unit entries · 2,136 typeset pages**
+**30 army books, one of our own, and the core rulebook · 1,780 unit entries ·
+2,179 typeset pages**, plus nine amended editions of them.
 
 The point is the *book*: proper stat tables, styled headings, real paragraph
-structure — not a scrape. Extraction is verified against the source word by word,
-and every one of the thirty-one books currently extracts with **no missing words
-at all**.
+structure — not a scrape. Every book was imported with **no missing words at
+all**, verified against its source PDF at the time. That is a fact about the
+import, not a standing property: a book is hand-owned once imported, so it can
+be edited, and an edit is nobody's business but the editor's.
 
 ## Attribution
 
@@ -24,39 +26,48 @@ and no challenge to their status is intended. Not for sale.
 ## Pipeline
 
 ```
-source PDFs ─► build/<slug>.json ─► src/content/<slug>.typ ─► src/<slug>.typ ─► PDF
-            batch.py            to_typst.py              emit.py           typst
-                └─► build/books.json ──────────────────────┘
+source PDF ─► extract ─► verify ─► src/<slug>.typ ─► PDF
+                                   (yours from here on)
+           extract/batch.py + to_book.py            typst
 ```
 
-`build/books.json` is the manifest, and it is the gate: `batch.py` writes a book
-into it only after that book has passed both checks, and everything downstream —
-the Typst wrappers, the landing page, the publish workflow — is generated from
-it. A book that fails cannot reach the site.
+**`src/` is the whole of it.** A book is a single Typst file: its own front
+matter, its own metadata, its own text. Nothing generates it, nothing else holds
+a copy of it, and there is no intermediate representation to keep in step. Adding
+a unit means copying the entry above it and editing the values.
 
-`emit.py` combines it with `build/editions.json` into `build/render.json`, the
-one list the workflow walks, so an edition compiles by the same route as the book
-it derives from. It also reads each army's allegiance out of the rulebook's own
-*Alliance & Alignment* section to group the landing page, rather than keeping a
-second list of thirty armies in step by hand. The page can be filtered by
-allegiance and by edition, and re-ordered alphabetically; it is built grouped and
+A book is imported *once*. `extract/batch.py` reads a PDF, verifies the
+extraction, and stops there — deliberately writing no Typst, because a
+re-extraction that overwrote a book would throw away every edit made since.
+`extract/to_book.py <slug>` is the separate, deliberate step that writes the
+book, escaping the source text as it goes so no PDF prose can be read back as
+Typst syntax.
+
+`emit.py` then reads the books themselves, with `typst eval`, to build the
+landing page and `build/render.json` — the one list the publish workflow walks.
+Each book declares its own allegiance and counts its own entries, so there is no
+manifest to fall out of step with what is on disk. The page can be filtered by
+allegiance and by edition and re-ordered alphabetically; it is built grouped and
 in source order, so it reads correctly before the script runs.
 
-The JSON intermediates and generated Typst are committed, so CI needs only the
-Typst compiler and never the source PDFs.
+Only the Typst and the cover art are committed, so CI needs the Typst compiler
+and nothing else — no Python, and never the source PDFs.
 
 ```bash
-# Extract, verify and generate Typst content for a directory of books
+# Extract and verify a directory of books. Writes no Typst: see below.
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 
-# Apply each edition's changes to the books it derives from
-python patch.py
+# Import one into src/. From here on the file is yours.
+python extract/to_book.py lizardmen
 
-# Generate the Typst documents, the landing page and the render list
+# Rebuild the landing page and the render list from the books
 python emit.py
 
 # Compile one. Bundled fonts only, so this matches the CI render exactly.
 typst compile --ignore-system-fonts --root . src/lizardmen.typ out/lizardmen.pdf
+
+# Check a rendered book still carries every word of its source
+python extract/roundtrip.py lizardmen --source "path/to/Warhammer - Lizardmen 3.0.pdf"
 ```
 
 `batch.py` skips a book whose JSON is newer than its PDF, so re-runs are cheap;
@@ -64,113 +75,50 @@ pass `--force` to re-extract everything.
 
 ## Editions
 
-An **edition** is a book plus an ordered set of changes. The extraction is the
-edition with no changes; a *house* edition is one with them — the same rules,
-amended for one table.
+An **edition** is a book with our own amendments. It is a fork of that book, kept
+in git: `src/lizardmen-house.typ` beside `src/lizardmen.typ`, so what the edition
+changed is `git diff` between the two, and a new upstream version is a three-way
+merge rather than a set of quotations that have to still match.
 
 ```
-editions/house/edition.toml     what the edition is called, and its colophon
-editions/house/lizardmen.toml   the changes it makes to that book
-      │
-      ▼   patch.py
-build/editions/house/lizardmen.json ──► src/content/lizardmen-house.typ ──► PDF
+src/lizardmen.typ  ──fork──►  src/lizardmen-house.typ  ──fork──►  -proposal.typ
+   the book                    the rules we play          what we are arguing about
 ```
 
-Nothing under `build/<slug>.json` or `src/content/<slug>.typ` is written by
-`patch.py`, so the faithful reproduction stays exactly as it was extracted and
-keeps its own place on the site alongside the amended one.
-
-An edition may name another in `derives_from`, in which case it patches that
-edition's text rather than the original and inherits everything it added.
-`editions/proposal/` does this, so a proposal is read against the rules actually
-being played rather than against the book they amend. The parent is built first
-even when only the child is asked for, so `--edition proposal` still checks its
-anchors against the house text.
-
-| | |
-|---|---|
-| `editions/house/` | changes agreed and played |
-| `editions/proposal/` | changes under discussion, on top of the house rules |
-
-A change quotes the text it acts on, and that quotation is the anchor:
-
-```toml
-[[change]]
-id       = "salamander-spout-flames"
-title    = "Spout Flames: Cumbersome, and fired on the march"
-chapter  = "SPECIAL UNITS"
-entry    = "SALAMANDER"           # omit to address the chapter's opening text
-op       = "replace"              # or insert-after, insert-before, delete
-why      = "..."                  # printed in the changelog, not in the rules
-original = "n/a 4 Flaming Attacks, Slow to Fire"
-new      = "..."
-```
-
-Punctuation and case are folded before matching, so a hyphen typed here finds an
-en dash in the source, but the words must be exact. `until` extends the anchor
-over consecutive blocks; `occurrence` picks between repeats.
-
-In `new`, a blank line starts a new block, and its first character decides what
-kind:
-
-| | |
-|---|---|
-| *anything else* | a paragraph, with `**bold**` and `*italic*` available |
-| `- ` | a list, one item per line |
-| `## ` | a run-in heading |
-| `@LABEL: value` | a profile field — `TROOP TYPE`, `SPECIAL RULES`, and so on |
-| `> ` | the indented italic note that sits beneath a profile |
-| `\|` × 2+ lines | a weapon profile: headings, then one row of values per line |
-
-```toml
-new = """
-@SPECIAL RULES: Aquatic, Cold-blooded, Fear, Mixed Unit
-
-|Range|Strength|Special Rules
-|18"|4|Armour Piercing (1), March & Shoot, Rapid Fire
-"""
-```
-
-**A change that no longer matches is a failure, not a warning.** If a book is
-re-extracted and a patched paragraph has moved or been reworded, `patch.py`
-stops and names the change, printing the nearest text it found so the anchor can
-be re-pasted. The alternative — landing a house rule quietly on the wrong
-paragraph — is the kind of fault you would discover mid-game.
-
-```bash
-python patch.py --check    # verify every anchor still matches, write nothing
-```
+The faithful reproduction is untouched and keeps its own place on the site beside
+the amended one. `editions/<slug>/edition.toml` holds the edition's identity —
+its label, its version, and the colophon that is set into its books when they are
+written; `editions/<slug>/<book>.toml` records what each change was and why, for
+the day a new upstream version has to have them re-applied.
 
 The changed rules are **not marked in the body**; an amended book is meant to
-read as a book. What each edition changed is set out in a generated chapter at
-the back, quoting the original wording, the new wording and the reason. That
-chapter is built as ordinary blocks and goes through the same renderer as the
-rest of the book, so there is no second output path to keep in step.
+read as a book. What an edition changed is set out in a chapter at the back,
+quoting the original wording, the new wording and the reason.
+
+That chapter is the only place a reader learns the body was altered, so it had
+better be complete — and since the change and its write-up are no longer produced
+from one record, that is checked rather than assumed:
+
+```bash
+# Every word this edition removes or introduces must appear in its changelog
+python extract/check_editions.py out/lizardmen-house.pdf out/lizardmen.pdf
+
+# A proposal alters nothing, so its body must match its parent exactly
+python extract/check_editions.py out/rulebook-proposal.pdf out/rulebook-house.pdf     --identical-body
+```
 
 ## Proposals
 
-A `[[proposal]]` is a change described rather than made. It anchors on nothing
-and alters nothing; it is set out in a chapter at the back as what it would
-change, why, what it would cost, and what it would look like at the table — the
-argument to have before anyone writes it into the rules.
+A **proposal** is a change described rather than made. It alters nothing; it is
+set out in a chapter at the back as what it would change, why, what it would
+cost, and what it would look like at the table — the argument to have before
+anyone writes it into the rules. Once agreed it is written into the body and moves
+to the changelog chapter.
 
-```toml
-[[proposal]]
-id       = "armour-piercing-out-of-strength"
-title    = "Take armour penetration out of Strength"
-status   = "under discussion"     # printed beside the title
-summary  = "..."                  # what would change
-why      = "..."                  # why it is worth changing
-against  = "..."                  # the strongest case for leaving it alone
-cost     = "..."                  # what it would take to do
-examples = ["...", "..."]         # one or two, worked at the table
-```
-
-Every field but `id` and `summary` is optional, and each is a body in the same
-block format as a change's `new`. A file may carry changes, proposals or both;
-they are set out in separate chapters, so what an edition *did* is never mixed
-up with what it is only *considering*. Once a proposal is agreed it is rewritten
-as `[[change]]` entries and deleted from the proposals file.
+Because a proposal book is a fork of the house book that adds only that chapter,
+the promise its colophon makes — that the rules text is untouched — is checkable,
+and is checked, by the second command above. It currently reports nought words
+differing.
 
 ## How the extraction works
 
@@ -197,17 +145,22 @@ Three details cost the most effort and are worth knowing about:
 - **Whitespace is never classified by font.** The books occasionally set an
   inter-word space in the display face; treating that as a field label files it
   on the wrong side of a `LABEL: value` split and welds the value's words.
-- **Text reaches Typst as string literals, never markup**, so no source text can
-  be reinterpreted as syntax and there is no escaping table to get wrong.
+- **Source text is escaped once, as the book is written.** PDF prose is full of
+  characters Typst reads as markup, so `to_book.py` escapes them at import and
+  the file is trusted from then on, because a person owns it. Two substitutions
+  had to be handled that no word count can see: Typst curls quotes in markup,
+  which would rewrite every apostrophe in text the colophon promises is
+  reproduced, so smart quotes are off; and it turns a hyphen before a digit into
+  a minus sign, which is 1,123 occurrences across the corpus.
 
 ## Verification
 
-Two gates, because they catch different failures.
+Three gates, because they catch different failures.
 
 `extract/coverage.py` compares the word multiset of the source PDF against the
-generated JSON. It defaults to a **zero** tolerance — all thirty books extract
-with no missing words, so anything above zero is worth reading rather than
-tolerating. Apostrophes are tokenised identically on both sides, because the
+extraction. It runs at import time, at a **zero** tolerance — every book was
+imported with no missing words, so anything above zero is worth reading rather
+than tolerating. Apostrophes are tokenised identically on both sides, because the
 source routinely sets a possessive or infix as its own span (`Sotek` + `'s`,
 `K` + `'daai`) which this pipeline rejoins correctly.
 
@@ -216,7 +169,18 @@ source routinely sets a possessive or infix as its own span (`Sotek` + `'s`,
 a space rather than a word. Three separate instances of this bug reached the
 rendered page before the check existed.
 
-Both checks walk chart cells too. They did not at first, and that mattered: a
+`extract/roundtrip.py` closes the loop: the source PDF against the **rendered**
+one, so it sees the finished book rather than a halfway house, and catches what
+the extraction check cannot — broken markup, mangled emphasis, a table that
+quietly lost a column. Reading words back out of our own typesetting needs two
+corrections, both of which otherwise report good work as loss. Typst hyphenates
+at a line break with a soft hyphen, so the halves are rejoined across it. And
+letter-spaced display text comes back with spaces inside it — `ANIMOSITY` arrives
+as `ANIMOSI TY` — which width alone cannot distinguish, since justification
+squeezes real body spaces just as narrow; inside a tracked span, though, the two
+separate cleanly.
+
+All three checks walk chart cells. They did not at first, and that mattered: a
 chart of dice scores is nearly invisible to a word count, because tokenising
 `6+/2+` yields `6` and `2` — digits that occur in abundance elsewhere and cancel
 out. The rulebook's to-hit chart was being rendered as a row of bold headings
@@ -225,11 +189,18 @@ while coverage reported nothing missing.
 ```bash
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json
 python extract/welds.py build/lizardmen.json
+python extract/roundtrip.py lizardmen --source "path/to/book.pdf"
 ```
 
-Deliberately dropped: each book's cover and its own contents page, recorded in
-the JSON as `front_matter_pages`. The rendered books generate their own outline
-from the headings.
+**What none of them can see** is worth stating plainly, because it has bitten
+twice. A word bag notices a word *lost*; it does not notice a word *changed*, and
+it is blind to punctuation entirely. Both markup substitutions described above
+passed it, and so did a list item whose leading hyphen was emitted as a `1` in
+nine books at once. Geometry comparison against the previous render is what
+caught those.
+
+Deliberately dropped from the comparison: each book's cover and its own contents
+page. The rendered books generate their own outline from the headings.
 
 ## Two layouts
 

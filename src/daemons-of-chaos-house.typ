@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/daemons-of-chaos.png",
+  align: "destruction",
   id: "daemons-of-chaos-house",
   base: "daemons-of-chaos",
   edition: "house",

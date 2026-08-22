@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/beastmen.png",
+  align: "destruction",
   id: "beastmen-house",
   base: "beastmen",
   edition: "house",

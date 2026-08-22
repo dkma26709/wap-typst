@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/lizardmen.png",
+  align: "order",
   id: "lizardmen-house",
   base: "lizardmen",
   edition: "house",

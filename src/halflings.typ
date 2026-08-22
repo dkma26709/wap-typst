@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/halflings.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Halflings 3.0")

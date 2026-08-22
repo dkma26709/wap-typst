@@ -335,42 +335,22 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("slug")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
-    ap.add_argument("--edition",
-                    help="import the named edition of this book rather than the "
-                         "book itself, taking its text from "
-                         "build/editions/<edition>/<slug>.json")
-    ap.add_argument("--editions", type=Path,
-                    default=ROOT / "build" / "editions.json")
     ap.add_argument("-o", "--out", type=Path,
                     help="defaults to src/<id>.typ")
     args = ap.parse_args()
 
-    edition = None
-    if args.edition:
-        data_all = json.loads(args.editions.read_text(encoding="utf-8"))
-        edition = next((e for e in data_all["editions"]
-                        if e["slug"] == args.edition), None)
-        if edition is None:
-            raise SystemExit(f"to_book: no edition {args.edition!r}")
-        book = next((b for b in data_all["books"]
-                     if b["base"] == args.slug and b["edition"] == args.edition), None)
-        if book is None:
-            raise SystemExit(
-                f"to_book: {args.edition} has no {args.slug}")
-        source = ROOT / "build" / "editions" / args.edition / f"{args.slug}.json"
-    else:
-        books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
-        book = next((b for b in books if b["slug"] == args.slug), None)
-        if book is None:
-            raise SystemExit(f"to_book: {args.slug} is not in the manifest")
-        book = dict(book, id=book["slug"])
-        source = ROOT / "build" / f"{args.slug}.json"
+    books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
+    book = next((b for b in books if b["slug"] == args.slug), None)
+    if book is None:
+        raise SystemExit(f"to_book: {args.slug} is not in the manifest")
+    book = dict(book, id=book["slug"])
+    source = ROOT / "build" / f"{args.slug}.json"
     if not source.exists():
         raise SystemExit(f"to_book: {source} does not exist")
 
     data = json.loads(source.read_text(encoding="utf-8"))
     out = (args.out or ROOT / "src" / f"{book['id']}.typ").resolve()
-    text = render(data, book, edition)
+    text = render(data, book)
     out.write_text(text, encoding="utf-8", newline=chr(10))
     entries = sum(len(c["entries"]) for c in data["chapters"])
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}  {len(text.splitlines())} lines, "

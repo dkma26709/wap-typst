@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/vampire-counts.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Vampire Counts 3.0")

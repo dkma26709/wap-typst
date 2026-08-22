@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/norsca.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Norsca 3.0")

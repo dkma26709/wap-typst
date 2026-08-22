@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/bretonnia.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Bretonnia 3.0")

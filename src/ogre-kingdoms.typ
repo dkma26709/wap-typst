@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/ogre-kingdoms.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Ogre Kingdoms 3.1")

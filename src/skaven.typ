@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/skaven.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Skaven 3.0")

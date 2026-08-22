@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/empire.png",
+  align: "order",
   id: "empire-house",
   base: "empire",
   edition: "house",

@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/estalia.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Estalia 3.0")

@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/amazons.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Amazons 3.0")

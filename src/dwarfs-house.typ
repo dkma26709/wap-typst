@@ -13,6 +13,7 @@
   version: "3.11",
   layout: "army",
   cover: "covers/dwarfs.png",
+  align: "order",
   id: "dwarfs-house",
   base: "dwarfs",
   edition: "house",

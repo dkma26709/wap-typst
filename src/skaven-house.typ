@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/skaven.png",
+  align: "destruction",
   id: "skaven-house",
   base: "skaven",
   edition: "house",

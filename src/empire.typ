@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/empire.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — The Empire 3.1")

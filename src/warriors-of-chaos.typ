@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/warriors-of-chaos.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Warriors of Chaos 3.0")

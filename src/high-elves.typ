@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/high-elves.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — High Elves 3.1")

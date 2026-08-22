@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/orcs-goblins.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Orcs & Goblins 3.0")

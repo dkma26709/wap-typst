@@ -225,6 +225,10 @@
 #let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored",
                           "id", "base", "edition")
 
+// An extracted book takes its allegiance from the rulebook's Alliance &
+// Alignment lists at import time; anything absent here simply has none.
+#let BOOK_META_DEFAULTS = (shelf: "base", authored: false)
+
 #let book-meta(..named) = {
   assert(named.pos().len() == 0,
     message: "book-meta takes named arguments only")
@@ -238,15 +242,15 @@
       + if unknown.len() > 0 { " unknown " + unknown.join(", ") } else { "" })
   assert(m.layout in ("army", "rules"),
     message: "book-meta: layout must be \"army\" or \"rules\", not \"" + m.layout + "\"")
-  // Defaulted rather than required: an extracted book takes its allegiance from
-  // the rulebook's own Alliance & Alignment section, so it carries none here.
-  [#metadata((
-    slug: m.slug, army: m.army, version: m.version, layout: m.layout,
-    cover: m.at("cover", default: none),
-    align: m.at("align", default: none),
-    shelf: m.at("shelf", default: "base"),
-    authored: m.at("authored", default: false),
-  ))<book-meta>]
+  // Built by walking the known keys rather than listing them a second time.
+  // Naming them twice once meant `id`, `base` and `edition` were accepted here
+  // and then silently dropped from what a reader could query - the assert
+  // passed and the data vanished.
+  let out = (:)
+  for key in known {
+    out.insert(key, m.at(key, default: BOOK_META_DEFAULTS.at(key, default: none)))
+  }
+  [#metadata(out)<book-meta>]
 }
 
 // `page(..)` with a body is used rather than `set page(..)`, so the suppressed

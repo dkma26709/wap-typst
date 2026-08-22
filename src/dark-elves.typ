@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/dark-elves.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Dark Elves 3.1")

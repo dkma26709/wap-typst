@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/chaos-dwarfs.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Chaos Dwarfs 3.0")

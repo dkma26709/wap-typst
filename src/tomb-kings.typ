@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/tomb-kings.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Tomb Kings 3.1")

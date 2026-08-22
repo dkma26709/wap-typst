@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/grand-cathay.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Grand Cathay 3.0")

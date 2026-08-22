@@ -9,7 +9,10 @@ _site/
 # parchment background into assets/images/; the rest is not used.
 build/images/
 
-# A patched book is reproducible from the book it derives from and the edition's
-# own TOML, both of which are committed. build/editions.json is not — emit.py
-# reads it, and CI has no Python to regenerate it with.
-build/editions/
+# The extraction intermediates. A book is imported once into src/ and owned by
+# hand from then on, so keeping its JSON would be keeping a second copy of the
+# same book that nothing reads and nothing keeps in step. Extraction still
+# writes these, on the machine that has the PDFs; they are simply not committed.
+# git history holds the verified ones if a baseline is ever wanted again.
+build/*
+!build/render.json

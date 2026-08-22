@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/albion.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Albion 3.0")

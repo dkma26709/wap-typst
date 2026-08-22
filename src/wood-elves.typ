@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/wood-elves.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Wood Elves 3.1")

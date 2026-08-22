@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/nippon.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Nippon 3.0")

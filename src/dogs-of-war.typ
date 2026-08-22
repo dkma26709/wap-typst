@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/dogs-of-war.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Dogs of War 3.1")

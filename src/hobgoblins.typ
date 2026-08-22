@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/hobgoblins.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Hobgoblins 3.0")

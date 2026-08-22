@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/araby.png",
+  align: "neutral",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Araby 3.0")

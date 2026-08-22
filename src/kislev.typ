@@ -13,6 +13,7 @@
   version: "3.1",
   layout: "army",
   cover: "covers/kislev.png",
+  align: "order",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Kislev 3.1")

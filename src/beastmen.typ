@@ -13,6 +13,7 @@
   version: "3.0",
   layout: "army",
   cover: "covers/beastmen.png",
+  align: "destruction",
 )
 
 #show: book.with(title: "Warhammer Armies Project — Beastmen 3.0")
