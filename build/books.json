@@ -214,7 +214,8 @@
       "chapters": 12,
       "cover": "covers/lizardmen.png",
       "layout": "army",
-      "figures": 0
+      "figures": 0,
+      "hand_written": true
     },
     {
       "slug": "nippon",

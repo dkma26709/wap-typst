@@ -23,6 +23,10 @@
   } else { r.text }
 }).join()
 
+// A rule or item name set as a run-in heading in the display face, inline in
+// running text. The twin of the `label` run kind for hand-written books.
+#let runin(body) = text(weight: "bold", tracking: 0.04em, body)
+
 // A named entry with its points cost set flush right — magic items, upgrades,
 // spells. The cost is optional; several entries carry only a name.
 // `sticky` keeps the name with the rules text that follows, so a heading is
