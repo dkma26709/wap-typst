@@ -152,17 +152,10 @@ def main() -> None:
                 if src.exists():
                     (dest / name).write_bytes(src.read_bytes())
                     figures += 1
-
-        # Only generate Typst for a book that passed, so a failure cannot quietly
-        # reach the site with the previous run's content still in place.
-        if cov_ok and weld_ok:
-            code, gen = capture([
-                ROOT / "extract" / "to_typst.py", target,
-                "-o", ROOT / "src" / "content" / f"{slug}.typ",
-                "--layout", layout,
-            ])
-            if code:
-                failures.append(f"{army}: to_typst failed\n{gen}")
+        # Deliberately no Typst is written here. A book's .typ is owned by hand
+        # once imported, and a re-extraction that overwrote it would throw away
+        # every edit made since. Importing is a separate, deliberate step:
+        # extract/to_book.py <slug>, once the manifest below is up to date.
 
         flag = "" if (cov_ok and weld_ok) else "   <-- FAILED"
         print(f"{army:<24} {version:<6} {entries:>7} {words:>7} "
@@ -198,10 +191,12 @@ def main() -> None:
     if catalogue.exists():
         seen = {b["slug"] for b in manifest}
         prior = json.loads(catalogue.read_text(encoding="utf-8"))["books"]
-        # Authored books (author.py) never come out of a PDF run, so even
-        # --replace keeps them — this script cannot rebuild what it prunes.
+        # A book this script cannot rebuild survives --replace: an authored one
+        # never came out of a PDF run at all, and an imported one now owns its
+        # own Typst, which a re-extraction would not reproduce.
         kept = [b for b in prior if b["slug"] not in seen
-                and (not args.replace or b.get("authored"))]
+                and (not args.replace
+                     or b.get("authored") or b.get("hand_written"))]
         if kept:
             print(f"\nkeeping {len(kept)} book(s) already in the manifest")
         manifest.extend(kept)

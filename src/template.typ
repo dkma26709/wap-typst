@@ -222,7 +222,8 @@
 // `..named` rather than a parameter list, so an unknown key is an error and
 // `align` never shadows Typst's own function inside this scope.
 #let BOOK_META_REQUIRED = ("slug", "army", "version", "layout")
-#let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored")
+#let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored",
+                          "id", "base", "edition")
 
 #let book-meta(..named) = {
   assert(named.pos().len() == 0,

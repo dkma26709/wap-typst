@@ -1,7 +1,7 @@
 """Emit a whole book as hand-editable Typst.
 
-The successor to to_typst.py, which wrote a content fragment full of serialised
-run dictionaries for a generated wrapper to include. This writes the complete
+The successor to the old to_typst.py, which wrote a content fragment full of
+serialised run dictionaries for a generated wrapper to include. This writes the complete
 book - front matter and all - as markup a person can read and extend, and once
 it has run the file is the source of truth and this script is not involved again.
 
@@ -10,9 +10,9 @@ retires the dictionary API: text out of a PDF is hostile, so the sigils are
 escaped as the file is written, and thereafter the file is trusted because a
 person owns it.
 
-Layout decisions - two-column, shared pages, run-in chart labels - are imported
-from to_typst rather than reimplemented, so a converted book paginates exactly as
-the generated one did.
+Layout decisions - two-column, shared pages, run-in chart labels - were carried
+over from the script it replaced rather than rewritten, so an imported book
+paginates exactly as the generated one did.
 """
 
 from __future__ import annotations
@@ -27,7 +27,6 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "extract"))
 
-from to_typst import arr, compact, lit, two_column  # noqa: E402
 import emit  # noqa: E402
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -37,6 +36,75 @@ BS = chr(92)
 
 # Every character Typst reads as markup.
 SPECIAL = set(BS + "#[]*_$<>@~" + chr(96))
+
+# --- carried over from the generator this script replaced -------------------
+# The layout decisions have to stay exactly as they were or a re-import would
+# repaginate a book that has not changed.
+
+def lit(text: str) -> str:
+    return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def arr(items: list[str]) -> str:
+    """A Typst array. Single-element arrays need the trailing comma or they are
+    parsed as a parenthesised expression."""
+    if not items:
+        return "()"
+    if len(items) == 1:
+        return f"({items[0]},)"
+    return "(" + ", ".join(items) + ")"
+
+def has_statblock(blocks: list[dict]) -> bool:
+    return any(b["type"] == "statblock" for b in blocks)
+
+
+def text_length(blocks: list[dict]) -> int:
+    total = 0
+    for block in blocks:
+        kind = block["type"]
+        if kind == "para":
+            total += len(block["text"])
+        elif kind == "field":
+            total += len(block["value"])
+        elif kind == "namecost":
+            total += len(block["name"])
+        elif kind == "list":
+            total += sum(
+                len(it["text"]) + sum(len(s["text"]) for s in it["sub"])
+                for it in block["items"]
+            )
+    return total
+
+
+# One column of a full A4 page holds roughly this much prose. Below it a
+# two-column setting leaves the second column stranded empty, which reads as a
+# layout fault rather than a choice.
+
+# One column of a full A4 page holds roughly this much prose. Below it a
+# two-column setting leaves the second column stranded empty, which reads as a
+# layout fault rather than a choice.
+TWO_COLUMN_MIN = 3000
+
+
+def two_column(blocks: list[dict]) -> bool:
+    """Decided per entry rather than per chapter, because every entry now starts
+    its own page and so has a full page of column height to fill or waste."""
+    return not has_statblock(blocks) and text_length(blocks) >= TWO_COLUMN_MIN
+
+# A stat line plus a handful of fields comes to a couple of hundred characters.
+# The ceiling is a safety margin as much as a threshold: a compact entry is set
+# unbreakable, and content taller than a page cannot be laid out that way.
+COMPACT_MAX = 400
+
+
+def compact(blocks: list[dict]) -> bool:
+    """True for an entry that is only a stat line and fields — nothing to say
+    beyond its profile. These share a page instead of each taking one."""
+    if not has_statblock(blocks):
+        return False
+    if {b["type"] for b in blocks} - {"statblock", "field"}:
+        return False
+    return text_length(blocks) < COMPACT_MAX
 
 STAT_COLUMNS = ["M", "WS", "BS", "S", "T", "W", "I", "A", "Ld", "Points"]
 CHARS = ["m", "ws", "bs", "s", "t", "w", "i", "a", "ld", "points"]
@@ -194,7 +262,7 @@ def wrap(lines: list[str], columns: bool) -> list[str]:
 
 
 META_KEYS = ("slug", "army", "version", "layout", "cover", "align", "shelf",
-             "authored")
+             "authored", "id", "base", "edition")
 
 
 def book_meta(book: dict) -> list[str]:
@@ -202,6 +270,10 @@ def book_meta(book: dict) -> list[str]:
     for key in META_KEYS:
         value = book.get(key)
         if value is None or value is False:
+            continue
+        # For a book that is not an edition these are the same thing, so saying
+        # it twice is noise. A consumer falls back to the slug.
+        if key == "id" and value == book.get("slug"):
             continue
         out.append(f"  {key}: " + ("true" if value is True else lit(str(value))) + ",")
     out.append(")")
@@ -263,21 +335,42 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("slug")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
+    ap.add_argument("--edition",
+                    help="import the named edition of this book rather than the "
+                         "book itself, taking its text from "
+                         "build/editions/<edition>/<slug>.json")
+    ap.add_argument("--editions", type=Path,
+                    default=ROOT / "build" / "editions.json")
     ap.add_argument("-o", "--out", type=Path,
-                    help="defaults to src/<slug>.typ")
+                    help="defaults to src/<id>.typ")
     args = ap.parse_args()
 
-    books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
-    book = next((b for b in books if b["slug"] == args.slug), None)
-    if book is None:
-        raise SystemExit(f"to_book: {args.slug} is not in the manifest")
-    source = ROOT / "build" / f"{args.slug}.json"
+    edition = None
+    if args.edition:
+        data_all = json.loads(args.editions.read_text(encoding="utf-8"))
+        edition = next((e for e in data_all["editions"]
+                        if e["slug"] == args.edition), None)
+        if edition is None:
+            raise SystemExit(f"to_book: no edition {args.edition!r}")
+        book = next((b for b in data_all["books"]
+                     if b["base"] == args.slug and b["edition"] == args.edition), None)
+        if book is None:
+            raise SystemExit(
+                f"to_book: {args.edition} has no {args.slug}")
+        source = ROOT / "build" / "editions" / args.edition / f"{args.slug}.json"
+    else:
+        books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
+        book = next((b for b in books if b["slug"] == args.slug), None)
+        if book is None:
+            raise SystemExit(f"to_book: {args.slug} is not in the manifest")
+        book = dict(book, id=book["slug"])
+        source = ROOT / "build" / f"{args.slug}.json"
     if not source.exists():
-        raise SystemExit(f"to_book: {source.relative_to(ROOT)} does not exist")
+        raise SystemExit(f"to_book: {source} does not exist")
 
     data = json.loads(source.read_text(encoding="utf-8"))
-    out = (args.out or ROOT / "src" / f"{args.slug}.typ").resolve()
-    text = render(data, book)
+    out = (args.out or ROOT / "src" / f"{book['id']}.typ").resolve()
+    text = render(data, book, edition)
     out.write_text(text, encoding="utf-8", newline=chr(10))
     entries = sum(len(c["entries"]) for c in data["chapters"])
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}  {len(text.splitlines())} lines, "
