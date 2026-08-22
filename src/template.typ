@@ -124,6 +124,68 @@
   },
 )
 
+// --- unit entries -----------------------------------------------------------
+
+// The ten characteristics a profile row carries, in printed order. Every stat
+// line in the corpus uses exactly these, under exactly this label.
+#let CHARACTERISTICS = ("m", "ws", "bs", "s", "t", "w", "i", "a", "ld", "points")
+
+// A row arrives as a dictionary rather than a list, so a dropped value is a
+// named error and two transposed values are not expressible at all. Values pass
+// through `str` because a characteristic is not always a number: "-", "As user"
+// and "2D6" all appear.
+#let profile-row(row, where) = {
+  assert("name" in row, message: where + ": a profile row has no name")
+  let missing = CHARACTERISTICS.filter(k => k not in row)
+  let unknown = row.keys().filter(k => k != "name" and k not in CHARACTERISTICS)
+  // Reported together: a mistyped characteristic is one missing and one
+  // unknown, and naming half of that sends you looking for the wrong mistake.
+  assert(missing.len() == 0 and unknown.len() == 0,
+    message: where + " / " + row.name + ":"
+      + if missing.len() > 0 { " missing " + missing.join(", ") } else { "" }
+      + if unknown.len() > 0 { " unknown " + unknown.join(", ") } else { "" })
+  (row.name, ..CHARACTERISTICS.map(k => str(row.at(k))))
+}
+
+// A unit entry: its profile, its fields, and whatever prose and profiles follow.
+//
+// Fields are an ordered sequence of pairs, not named parameters. There are 23
+// distinct labels across the corpus (including the source's own EQIPMENT typo,
+// reproduced faithfully) and 186 distinct orders, so a fixed set of named
+// parameters would both fail to express some entries and silently relayout the
+// rest into one canonical order.
+//
+// An entry that is nothing but its profile and fields shares a page instead of
+// claiming one, which is what the generated books already do.
+#let unit-entry(name, profile: (), fields: (), first: false, body) = {
+  let where = "unit-entry(" + name + ")"
+  assert(profile.len() > 0, message: where + ": no profile rows")
+  for f in fields {
+    assert(type(f) == array and f.len() == 2,
+      message: where + ": every field must be a (label, value) pair")
+  }
+  let rows = profile.map(r => profile-row(r, where))
+
+  // A label can only be attached in markup mode, hence the brackets.
+  [#metadata((
+    unit: name,
+    profile: profile,
+    fields: fields.map(f => (label: f.at(0), value: f.at(1))),
+  ))<unit>]
+
+  let core = {
+    statblock("Profile", CHARACTERISTICS.map(upper), rows)
+    for f in fields { field(f.at(0), f.at(1)) }
+  }
+  if body == [] {
+    compact-entry(name, core)
+  } else {
+    entry(name, first: first)
+    core
+    body
+  }
+}
+
 // A ruled chart — to-hit, to-wound, armour saves. Unlike a stat line these are
 // drawn as real tables in the source, so they keep visible rules here too. Both
 // the first row and the first column are treated as headers, which is the shape
@@ -152,6 +214,37 @@
 ))
 
 // --- front matter -----------------------------------------------------------
+
+// What the site needs to know about a book and cannot read off its pages:
+// where it files, what it is called, and whether it is Eliasson's or ours.
+// `..named` rather than a parameter list, so an unknown key is an error and
+// `align` never shadows Typst's own function inside this scope.
+#let BOOK_META_REQUIRED = ("slug", "army", "version", "layout")
+#let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored")
+
+#let book-meta(..named) = {
+  assert(named.pos().len() == 0,
+    message: "book-meta takes named arguments only")
+  let m = named.named()
+  let known = BOOK_META_REQUIRED + BOOK_META_OPTIONAL
+  let missing = BOOK_META_REQUIRED.filter(k => k not in m)
+  let unknown = m.keys().filter(k => k not in known)
+  assert(missing.len() == 0 and unknown.len() == 0,
+    message: "book-meta:"
+      + if missing.len() > 0 { " missing " + missing.join(", ") } else { "" }
+      + if unknown.len() > 0 { " unknown " + unknown.join(", ") } else { "" })
+  assert(m.layout in ("army", "rules"),
+    message: "book-meta: layout must be \"army\" or \"rules\", not \"" + m.layout + "\"")
+  // Defaulted rather than required: an extracted book takes its allegiance from
+  // the rulebook's own Alliance & Alignment section, so it carries none here.
+  [#metadata((
+    slug: m.slug, army: m.army, version: m.version, layout: m.layout,
+    cover: m.at("cover", default: none),
+    align: m.at("align", default: none),
+    shelf: m.at("shelf", default: "base"),
+    authored: m.at("authored", default: false),
+  ))<book-meta>]
+}
 
 // `page(..)` with a body is used rather than `set page(..)`, so the suppressed
 // footer applies to this page alone instead of leaking into the whole document.
