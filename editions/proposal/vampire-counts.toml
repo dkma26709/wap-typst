@@ -17,14 +17,18 @@ book = "vampire-counts"
 
 
 [[proposal]]
-id     = "army-of-infamy-host-of-blood-keep"
-title  = "An Army of Infamy: the Host of Blood Keep"
+id     = "army-of-infamy-crimson-legion"
+title  = "An Army of Infamy: the Crimson Legion"
 status = "under discussion"
 
 summary = """
-The book's first Army of Infamy: an alternative composition for a Vampire \
-Counts army that gives up every Undead unit, the Necromancers and the Lore of \
-Necromancy, and takes Blood Knights as a Core choice in exchange - one unit \
-for each Blood Dragon Vampire character in the army. Set out in full in the \
-PROPOSALS chapter of src/vampire-counts-proposal.typ.
+The book's first Army of Infamy: an alternative composition for a vampire \
+aristocracy that fights in its own person. Two entries move up one category \
+each (Vargheists to Core, Blood Knights to Special), one new entry is added \
+(Blood Guard - the mounted knight's profile on foot, as a Core choice), all \
+missile weapons come off the table, and units with the Undead special rule \
+stay available and cheap but stop counting towards the minimum an army must \
+spend on Core. Two list rules carry the flavour: the Oath of the Keep, and \
+Dread, not Slaughter. Set out in full in the PROPOSALS chapter of \
+src/vampire-counts-proposal.typ.
 """

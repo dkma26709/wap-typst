@@ -2167,92 +2167,107 @@ against that unit.")))
 
 What follows is not rules. Nothing here has been agreed, nothing here is played, and the rules text of this book is untouched by all of it. Each proposal sets out what it would change, why it is worth changing, and what it would look like at the table — enough to be argued over, and no more. Only once one is settled is it written into the book, and it will appear under Our Changes when it is.
 
-#namecost("An Army of Infamy: the Host of Blood Keep", "under discussion")
+#namecost("An Army of Infamy: the Crimson Legion", "under discussion")
 
-An *Army of Infamy* is a second way to build a force from a book that already exists: the same units at the same points, sorted into different categories, with some of them barred outright and a rule or two laid over the whole army. This book has none, and the first one should be the Blood Dragons — because Vampire Counts is the army named after its Vampires that cannot be built out of them.
+An *Army of Infamy* is a second way to build a force from a book that already exists. The units and their points stay as they are; what changes is which category they are chosen from, what the list requires of you, and one or two rules laid over the whole army.
 
-The *Host of Blood Keep* would give up the entire Undead half of the book. No Skeletons, no Zombies, no Grave Guard, no Terrorgheist, no Necromancers and no Lore of Necromancy. In exchange, Blood Knights become a Core choice.
+The *Crimson Legion* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds one new entry, takes all missile weapons off the table, and stops the Undead rabble from counting towards what an army must spend on Core.
 
 #field("Why", "")
 
-Four units in this book carry the Vampire keyword: Blood Knights, Vargheists, the Varghulf and the Lahmian Handmaidens. Not one of them is a Core choice. The eleven Core entries are six kinds of Undead, two kinds of bat and three kinds of mortal, and every army chosen from this book must spend a quarter of its points among them.
+Four units in this book carry the Vampire keyword: Blood Knights, Vargheists, the Varghulf and the Lahmian Handmaidens. Not one of them is a Core choice. The eleven Core entries are six kinds of Undead, two kinds of bat and three kinds of mortal, and every army chosen from this book must spend a quarter of its points among them. There is barely a rank of vampires to buy. The only Vampiric infantry are three to nine Vargheists, which are Monstrous Infantry, and five to fifteen Lahmian Handmaidens, who are Rare, Skirmishers, locked to one Bloodline and dressed in light armour. The only Vampiric cavalry is Rare and capped at one unit below 3,000 points.
 
-Blood Knights are rationed twice over. They are a Rare choice, so they compete for a quarter of the army with the Terrorgheist and the Black Coach; and the duplicate-choice table allows one Rare unit of a kind below 3,000 points. A Blood Knight army is therefore not a list that can be built badly. It is a list that cannot be built.
+Underneath that there is a deeper split, and it is the real argument. Both of the things that make a Vampire Counts army formidable are attached to the *Undead* special rule, and the Vampires have neither. Undead units are Unstable, and Unstable units are Unbreakable; Vampiric models get Fear, Immunity (Psychology) and \-1 To Wound, and Immunity (Psychology) is not immunity to Break tests — Unbreakable is defined as that immunity *and* passing Break tests, which is the book telling us they are two different things. Invocation of Nehek targets Undead, excluding mounts, so it cannot put a single Blood Knight back in the saddle. The Vampires are the only part of a Vampire Counts army that can be broken, and the only part its magic cannot mend.
 
-Underneath that there is a deeper split, and it is the real argument. Both of the things that make a Vampire Counts army formidable are attached to the *Undead* special rule, and the Vampires have neither. Undead units are Unstable, and Unstable units are Unbreakable; Blood Knights are Vampiric, which is Fear, Immunity (Psychology) and \-1 To Wound — and Immunity (Psychology) is not immunity to Break tests. Invocation of Nehek targets Undead, excluding mounts, so it cannot put a single Blood Knight back in the saddle. The Vampires and their own get are the only part of a Vampire Counts army that can be broken, and the only part its magic cannot mend. They ride at the head of a line that does neither.
-
-The book already knows all this. Walach Harkon, Grand Master of the Blood Knights, carries a rule that reads: *if Walach is included in your army, units of Blood Knights are taken as Special Units instead of Rare Units*. Prince Vhordrai lets Blood Knights within 12" re-roll a failed charge distance. The Flag of Blood Keep is Blood Knights only and requires a Blood Dragon Vampire character; so does the Cursed Pennant of Mousillon. Four separate entries in this book are written for a Blood Knight army, and one of them is the very remedy an Army of Infamy exists to provide — the book simply charges 490 points for half of it, and sells it to one customer.
+The book already knows. Walach Harkon, Grand Master of the Blood Knights, carries a rule that reads: *if Walach is included in your army, units of Blood Knights are taken as Special Units instead of Rare Units*. Prince Vhordrai lets Blood Knights within 12" re-roll a failed charge distance. The Flag of Blood Keep is Blood Knights only and requires a Blood Dragon Vampire character; so does the Cursed Pennant of Mousillon. Four entries are written for an army of vampire knights, and one of them is the very remedy this proposal makes general — the book charges 490 points for half of it and sells it to one customer.
 
 #field("The list", "")
 
-An army chosen from this book may be chosen as a Host of Blood Keep instead. If it is, everything below applies. Nothing else in the book changes: no points value moves and no unit entry is rewritten.
+An army chosen from this book may be chosen as a Crimson Legion instead. Every Bloodline may be taken and every character remains available. Nothing is banned but the missile weapons.
 
-#namecost("THE ORDER", "")
+#namecost("THE LEGION", "")
 
-Every Vampire character in the army must be a Blood Dragon, and no unit or character belonging to another Bloodline may be taken. Of the Special Characters, only Walach Harkon and Prince Vhordrai are available.
+- *Blood Guard* are a Core choice. They are new, and are described below.
+- *Vargheists* are a Core choice instead of a Special choice.
+- *Blood Knights* are a Special choice instead of a Rare choice. The limit on duplicate Special choices applies to them as it does to any other, so three units are available at 2,000 points where one was before.
+- Units with the *Undead* special rule may be taken exactly as the book allows, but *do not count towards the minimum points an army must spend on Core units.* Buy as many as you like; they buy you nothing towards the quarter.
+- No model in the army may take a missile weapon, and the *Skeleton Archers* and *Skeleton Catapult* entries are not available. This removes the bow option from Skeleton Horsemen and the Skeleton Chariot, the longbows and crossbows from the Sylvanian Levy, the crossbows from the Wraithwisps, the throwing weapons from the Strigany and the Lahmian Handmaidens, and the shortbow and throwing weapons from a Lahmian character. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
 
-#namecost("NO SORCERY OF THE TOMB", "")
+#note[_Nothing else moves. The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top._]
 
-No character may be a Wizard except a Blood Dragon Vampire, and no Blood Dragon may use the Lore of Necromancy: one who is a Wizard uses the Lore of Death or the Lore of Shadow. Walach Harkon and Prince Vhordrai are excepted, and keep the Lore of Necromancy their entries give them. Whatever the order preaches, the two who wrote its rules have read the books.
+#namecost("BLOOD GUARD", "")
 
-#namecost("NO UNDEAD", "")
+The knights of the household, who fight on foot because the walls are behind them. The mounted knight's own profile, dismounted.
 
-No unit with the Undead special rule may be taken. Mounts are excepted, exactly as they are everywhere else in this book: the Nightmare, the Hellsteed, the Abyssal Terror and the Zombie Dragon remain available to characters, and Blood Knights ride Nightmares as they always have.
+#profile(
+  (name: "Blood Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 24),
+)
+#field("UNIT SIZE", "10-30")
+#field("TROOP TYPE", "Infantry (Vampire)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
+#field("SPECIAL RULES", "Vampiric")
+#field("OPTIONS", "")
 
-Three of the army special rules fall silent as a result. The Generals of Undeath asks for a Necromancy Wizard only if the army contains Undead units, and this one does not — which incidentally settles a question the book leaves open, since as written it is unclear whether a regiment of Blood Knights counts as an Undead unit on account of its horses. Slain General and Battle Standards both describe what happens to Undead units, and there are none. Nothing in a Host of Blood Keep is Unstable, and so — this is the price — nothing in it is Unbreakable either.
+- May replace shields with great weapons +3 points/model
+- May upgrade one Blood Guard to a Leader +5 points
+- May upgrade one Blood Guard to a Musician +5 points
+- May upgrade one Blood Guard to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
 
-#namecost("BLOOD KNIGHTS ARE A CORE CHOICE", "")
+#note[_One entry, two builds. With the shield it is a 3+ save with Parry (6+) and it holds a line; with the great weapon it is a 4+ save at Strength 6, Strength 7 in the first round through Mighty Blow (1), and \-2 Initiative for the privilege. The price is anchored on the Lahmian Handmaiden, which is 18 points for Infantry (Vampire) with Weapon Skill 5, Strength 4 and two Attacks in light armour. Ours pays six points more for a point of Weapon Skill, a point of Strength and heavy armour with a shield, and gives up Skirmishers, Scouts and Dodge (6+)._]
 
-Blood Knights are taken as Core Units, and are no longer subject to the limit on duplicate Rare choices. In its place: *you may include one unit of Blood Knights for each Blood Dragon Vampire character in your army.* Walach Harkon and Prince Vhordrai each count as one.
+#namecost("THE OATH OF THE KEEP", "")
 
-#namecost("THE LEVY OF THE DOMAIN", "")
+The lord holds his lands by his own hand and answers for them in person.
 
-Sylvanian Levy may be taken without a von Carstein Vampire character. Every Bloodline holds land and every vampire's land holds villages; the restriction is Sylvania's rather than the Levy's. Note that the Levy is Expendable, and that the rulebook requires a Core unit without that rule for every Core unit that has it — the Blood Knights supply it.
+- Every Vampire character in the army has *Martial Honour:* they must always issue and accept challenges when possible. Blood Dragons have this already.
+- A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value. This is in addition to The Red Thirst and applies to a Vampire that does not have it — a Strigoi included.
+- No unit in the army may choose Flee as a Charge Reaction.
+- The Red Thirst may not be claimed for models slain while Fleeing or during a Pursuit. Blood taken from the routed does not count.
 
-#namecost("THE HUNT", "")
+#namecost("DREAD, NOT SLAUGHTER", "")
 
-Units of Blood Knights, and every Blood Dragon character, must always Pursue.
+The point of a vampire is not how many he kills.
 
-#namecost("THE THIRST OF THE ORDER", "")
+- Vampiric models in the army cause *Terror* rather than Fear.
+- An enemy unit taking a Psychology test caused by Terror from this army rolls 3D6 and discards the lowest result.
 
-At the end of each Close Combat phase in which a unit of Blood Knights slew one or more enemy models, roll a D6. On a 5+, one Blood Knight slain earlier in the battle returns to the unit, placed as though gained from a summoning spell. As with The Red Thirst, this does not work against Animated Constructs, Daemons, Forest Spirits or Vampires. Beyond The Red Thirst the characters carry themselves, and the single use of a Grave-Sand Shard, it is the only way anything in a Host of Blood Keep recovers.
+#note[_Neither clause needs new machinery. The rulebook already turns Fear into Terror where a model gets Fear from two sources, and the Grim Garland already makes enemies in base contact roll 3D6 and discard the lowest for Leadership tests. This is narrower than the item, which covers every Leadership test rather than only Terror, so the item keeps its place._]
 
 #chart((
-  ("", "In this book", "In a Host of Blood Keep"),
-  ("Blood Knights", "Rare, one unit below 3,000 points", "Core, one unit per Blood Dragon character"),
-  ("Sylvanian Levy", "Core, von Carstein only", "Core"),
-  ("Crypt Ghouls, Fell Bats, Bat Swarms", "Core", "Core"),
-  ("Crypt Guard, Crypt Horrors, Vargheists, Varghulf", "Special", "Special"),
-  ("Morbheg Knights", "Rare", "Rare"),
-  ("Every unit with the Undead special rule", "Core, Special and Rare", "Not available"),
-  ("Lahmian Handmaidens, Coven Throne", "Rare", "Not available"),
-  ("Strigany", "Core, Strigoi only", "Not available"),
+  ("", "In this book", "In a Crimson Legion"),
+  ("Blood Guard", "Does not exist", "Core, new entry"),
+  ("Vargheists", "Special", "Core"),
+  ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
+  ("Skeletons, Zombies, Wolves, Spirit Hosts", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
+  ("Skeleton Archers, Skeleton Catapult", "Core, Rare", "Not available"),
+  ("Bows, crossbows, throwing weapons", "Options on seven entries", "Not available"),
+  ("Everything else", "Core, Special, Rare", "Unchanged"),
 ))
 
 #field("The argument against", "")
 
-The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon Skill 6, Strength 5, two Attacks and a 2+ armour save, with \-1 To Wound against him and a heavy lance that makes him Strength 7 on the charge. A Black Knight with heavy armour and barding is 26 points for the same save, and the ten points between them buy three points of Weapon Skill, one of Strength, one Attack, two of Initiative, two of Leadership and the whole of Vampiric. The Black Knight buys Killing Blow, Magical Attacks and, being Undead, the fact that it cannot be broken at all, so the two are not the same purchase — but ten points is a thin wall between a Special choice and a Rare one. That is a defensible price for a unit you may take once. Nothing in this proposal touches a points value, and that is the honest weakness in it: the reason Blood Knights cost what they cost is that they are Rare.
+Terror is the part to argue about first, and it is much bigger than it looks. Run for Your Lives! means a unit charged by a Terror-causing model must pass a Psychology test or make a Flee charge reaction, and a unit wishing to charge a Terror-causer must pass one first. Handing that to every Vampiric model in the army — with 3D6 on top, and while the army itself may never Flee — is a morale lock, not a flavour rule. The narrow reading of the rulebook makes it worse rather than better: the exception that lets Fear-causing models treat Terror as mere Fear is written for Terror-causing *monsters*, and a rank of Blood Guard is not a monster.
 
-The Thirst of the Order is invented. Everything else here is a re-sort of text the book already carries; this is a new rule, and it is therefore the part most likely to be wrong. Handing a returning model to a unit with a 2+ save is the strongest kind of rule to write, and the alternative — that the list simply has no healing at all — is cleaner, more honest about the trade, and duller.
+The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon Skill 6, Strength 5, two Attacks and a 2+ armour save, with \-1 To Wound against him and a heavy lance that makes him Strength 7 on the charge. A Black Knight with heavy armour and barding is 26 points for the same save. The Black Knight buys Killing Blow, Magical Attacks and, being Undead, the fact that it cannot be broken at all, so the two are not the same purchase — but ten points is a thin wall, and 36 points is a defensible price for a unit you may take once, not three times.
 
-The Levy exemption widens the book rather than narrowing it, which is not what an Army of Infamy is for.
+Twenty-four points for the Blood Guard is a guess with one comparison behind it. The Handmaiden anchor is the closest thing in the book and it is not close: she is a skirmishing scout and ours is a line unit, so the two are priced for different jobs and the six points between them is arithmetic rather than evidence.
 
-And the Rare category is left almost empty. A Host of Blood Keep may spend a quarter of its points on Rare units and has Morbheg Knights to spend it on, so in practice it plays inside three quarters of the composition space. That is a strange shape, and the obvious fix — moving something up into Rare — starts a second argument.
+The Undead-do-not-count clause is the cleanest thing here and the most likely to be gamed. It says nothing about what the *rest* of the army does, so a list can meet its quarter with the cheapest qualifying Core in the book and then spend everything else on skeletons anyway. Whether that matters depends on whether cheap Undead were ever the problem, or only their compulsoriness.
 
-Losing Unbreakable may simply be more than the list can afford. It is also the part nobody will notice until the third game.
+And taking the missile weapons out is a real loss of options for very little in return. Seven entries lose a line each and one Core entry and one war machine disappear, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
 #field("What it would take", "")
 
-A chapter in this book, and nothing else. No points value moves, no unit entry is rewritten and no other book is touched: nine clauses and two rules, all but one of them pointing at text that already exists.
+A chapter in this book, and one new unit entry. Two category moves, one composition restriction, one equipment restriction, two list rules, and nothing in any other book.
 
-The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment.
+The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment. The one rule that needs a home there rather than here is the Core-minimum clause, since Choosing Your Army is where the quarter is set.
 
 If it holds up, the same shape is waiting twice more in this book. Strigany may only be taken with a Strigoi Vampire character; the Coven Throne is crewed by Lahmians. Both are lists the book is already writing for and cannot field.
 
 #field("For example", "")
 
-*A Host of Blood Keep at 2,000 points.* A Blood Dragon Lord and two Kastellans, all three mounted on Nightmares with heavy lances and shields, come to 520 points — 26% of the army, against a cap of 35%. Three Blood Dragon characters means three units of Blood Knights: eight models each, 288 points a unit, 864 in total. With twenty Crypt Ghouls at 140 that is 1,004 points of Core against a 500-point minimum. A Varghulf at 135 and three Vargheists at 150 fill out the Special allowance, and the last 191 points go on command upgrades and the Flag of Blood Keep.
+*A Crimson Legion at 2,000 points.* Eighteen Blood Guard with shields at 432 and six Vargheists at 300 make 732 points of qualifying Core against a 500-point minimum. Two units of eight Blood Knights at 288 each take 576 of the Special allowance and a Varghulf at 135 finishes it, for 711. A Blood Dragon Lord at 215 and a Kastellan at 100 lead them. That is 1,758 points; thirty Zombies add 75 more, and they count towards nothing at all and are there to die in front of the knights. The last 167 go on champions, standards and the Flag of Blood Keep.
 
-The same 2,000 points spent from the book as written buys one unit of Blood Knights, because one is all the duplicate-choice table allows.
-
-*What is different at the table.* Everything in the army causes Fear and is Immune to Psychology, so it never panics and is never afraid. Nothing in it is Unbreakable, so all of it can be broken and run down. It has no war machines, no Invocation of Nehek, and no shooting at all unless it brings a Levy with crossbows. Nothing mends it but The Red Thirst on its characters and a 5+ after a combat it won. There is no anvil anywhere in the list and no second chance behind it: the Host of Blood Keep either lands its charge or loses.
+*What is different at the table.* Every unit in the legion causes Terror, so the enemy tests to charge it and tests when charged by it, rolling three dice and keeping the worst two. None of it may Flee, and none of it is Unbreakable, so when it does lose a fight it loses the whole unit. The characters must duel whenever a duel is offered and are healed for winning. Nothing shoots. The dead are still there, still cost two and a half points, and no longer excuse the army from buying vampires.
