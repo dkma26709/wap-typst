@@ -2231,9 +2231,9 @@ The lord holds his lands by his own hand and answers for them in person.
 The point of a vampire is not how many he kills.
 
 - Vampiric models in the army cause *Terror* rather than Fear.
-- An enemy unit taking a Psychology test caused by Terror from this army rolls 3D6 and discards the lowest result.
+- All enemy units within 12" of one or more Vampire characters suffer a \-1 penalty to their Leadership. This penalty is cumulative with any other modifiers, the Aura of Dark Majesty included.
 
-#note[_Neither clause needs new machinery. The rulebook already turns Fear into Terror where a model gets Fear from two sources, and the Grim Garland already makes enemies in base contact roll 3D6 and discard the lowest for Leadership tests. This is narrower than the item, which covers every Leadership test rather than only Terror, so the item keeps its place._]
+#note[_Neither clause needs new machinery. The rulebook already turns Fear into Terror where a model gets Fear from two sources, and the second clause is the Aura of Dark Majesty vampiric power with its range doubled and its source widened from a power somebody bought to any Vampire character. The effect itself is that power's own sentence, cumulative clause included. A von Carstein who buys the power still gets something for his thirty points: within 6" of him the two stack to \-2. Note that it follows the power rather than the Hell Banner, which does much the same at 40 points, on Line of Sight rather than a radius, but has no effect on models with Immunity (Psychology). The book is inconsistent about that exemption; a Leadership penalty reaches Break tests, which are not Psychology tests, so the power's reading is the one that makes sense of it._]
 
 #chart((
   ("", "In this book", "In a Crimson Legion"),
@@ -2248,7 +2248,9 @@ The point of a vampire is not how many he kills.
 
 #field("The argument against", "")
 
-Terror is the part to argue about first, and it is much bigger than it looks. Run for Your Lives! means a unit charged by a Terror-causing model must pass a Psychology test or make a Flee charge reaction, and a unit wishing to charge a Terror-causer must pass one first. Handing that to every Vampiric model in the army — with 3D6 on top, and while the army itself may never Flee — is a morale lock, not a flavour rule. The narrow reading of the rulebook makes it worse rather than better: the exception that lets Fear-causing models treat Terror as mere Fear is written for Terror-causing *monsters*, and a rank of Blood Guard is not a monster.
+Terror is the part to argue about first, and it is much bigger than it looks. Run for Your Lives! means a unit charged by a Terror-causing model must pass a Psychology test or make a Flee charge reaction, and a unit wishing to charge a Terror-causer must pass one first. Handing that to every Vampiric model in the army, while the army itself may never Flee, is close to a morale lock on its own. The narrow reading of the rulebook makes it worse rather than better: the exception that lets Fear-causing models treat Terror as mere Fear is written for Terror-causing *monsters*, and a rank of Blood Guard is not a monster.
+
+The Leadership penalty is the gentler of the two ways to sharpen that, which is why it is the one written above. An earlier draft made the enemy roll 3D6 and discard the lowest on the test instead. Against Leadership 8 that takes a unit from passing 72.2% of the time to 47.7%, where \-1 Leadership takes it to 58.3%: the dice trick is worth nearer two points of Leadership than one, and it bites hardest at low Leadership, exactly where a unit is already breaking. What the penalty gives up in exchange is breadth. It applies to every Leadership test taken in the bubble, Break tests included, and not only to Terror.
 
 The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon Skill 6, Strength 5, two Attacks and a 2+ armour save, with \-1 To Wound against him and a heavy lance that makes him Strength 7 on the charge. A Black Knight with heavy armour and barding is 26 points for the same save. The Black Knight buys Killing Blow, Magical Attacks and, being Undead, the fact that it cannot be broken at all, so the two are not the same purchase — but ten points is a thin wall, and 36 points is a defensible price for a unit you may take once, not three times.
 
