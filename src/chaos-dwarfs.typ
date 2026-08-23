@@ -738,7 +738,9 @@ NOTES:
 
 #entry("CUTTHROATS")
 
-*Profile M WS BS S T W I A Ld Points* Cutthroat 4 3 3 3 3 1 2 1 6 3.5
+#profile(
+  (name: "Cutthroat", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 3.5),
+)
 
 #field("UNIT SIZE", "20-60")
 #field("TROOP TYPE", "Infantry (Hobgoblin)")
@@ -757,7 +759,9 @@ NOTES:
 
 #entry("ARCHERS")
 
-*Profile M WS BS S T W I A Ld Points* Archer 4 3 3 3 3 1 2 1 6 4.5
+#profile(
+  (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 4.5),
+)
 
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Hobgoblin)")

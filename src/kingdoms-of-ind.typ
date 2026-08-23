@@ -472,7 +472,9 @@ Enemies do not receive any combat resolution bonuses for attacking the flanks or
 
 #entry("WARRIORS", first: true)
 
-*Profile M WS BS S T W I A Ld Points* Warrior 4 3 3 3 3 1 3 1 7 3.5
+#profile(
+  (name: "Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
+)
 
 #field("UNIT SIZE", "15-45")
 #field("TROOP TYPE", "Infantry (Human)")

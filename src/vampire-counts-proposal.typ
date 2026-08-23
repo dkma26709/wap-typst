@@ -1273,7 +1273,9 @@ The unit carrying this standard suffers one fewer Wound than they normally would
 
 #entry("ZOMBIES")
 
-*Profile M WS BS S T W I A Ld Points* Zombie 4 1 0 3 3 1 1 1 2 2.5
+#profile(
+  (name: "Zombie", m: 4, ws: 1, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 2.5),
+)
 
 #field("UNIT SIZE", "20-60")
 #field("TROOP TYPE", "Infantry (Undead, Zombie)")

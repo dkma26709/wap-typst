@@ -598,7 +598,9 @@ Any enemy unit in base contact with the unit carrying this standard must re-roll
 
 #entry("ZOMBIE DECKHANDS", first: true)
 
-*Profile M WS BS S T W I A Ld Points* Zombie Deckhand 4 2 3 3 3 1 1 1 2 3.5
+#profile(
+  (name: "Zombie Deckhand", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 3.5),
+)
 
 #field("UNIT SIZE", "15-45")
 #field("TROOP TYPE", "Infantry (Undead, Zombie)")

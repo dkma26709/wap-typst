@@ -828,7 +828,9 @@ When transforming, they become a Monster (Draconid) with the Dragon Form profile
 
 #entry("JADE WARRIORS")
 
-*Profile M WS BS S T W I A Ld Points* Jade Warrior 4 3 3 3 3 1 3 1 7 3.5
+#profile(
+  (name: "Jade Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
+)
 
 #field("UNIT SIZE", "15-45")
 #field("TROOP TYPE", "Infantry (Human)")
@@ -918,7 +920,9 @@ When transforming, they become a Monster (Draconid) with the Dragon Form profile
 
 #entry("HILL TRIBESMEN")
 
-*Profile M WS BS S T W I A Ld Points* Hill Tribesman 4 3 3 3 3 1 3 1 6 2.5
+#profile(
+  (name: "Hill Tribesman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 2.5),
+)
 
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Human)")

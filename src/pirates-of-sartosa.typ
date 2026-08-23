@@ -471,7 +471,9 @@ The unit carrying this standard gains +1 To Hit with missile weapons.
 
 #entry("DECKHANDS", first: true)
 
-*Profile M WS BS S T W I A Ld Points* Deckhands 4 3 3 3 3 1 3 1 7 3.5
+#profile(
+  (name: "Deckhands", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
+)
 
 #field("UNIT SIZE", "15-45")
 #field("TROOP TYPE", "Infantry (Human)")

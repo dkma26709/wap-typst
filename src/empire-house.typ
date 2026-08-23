@@ -991,7 +991,9 @@ This item can be used in addition to any other missile weapon the Master Enginee
 
 #entry("SPEARMEN")
 
-*Profile M WS BS S T W I A Ld Points* Spearman 4 3 3 3 3 1 3 1 7 3.5
+#profile(
+  (name: "Spearman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
+)
 
 #field("UNIT SIZE", "20-60")
 #field("TROOP TYPE", "Infantry (Human)")
@@ -1086,7 +1088,9 @@ This item can be used in addition to any other missile weapon the Master Enginee
 
 #entry("FREE COMPANY MILITIA")
 
-*Profile M WS BS S T W I A Ld Points* Militia Fighter 4 3 3 3 3 1 3 1 6 2.5
+#profile(
+  (name: "Militia Fighter", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 2.5),
+)
 
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Human)")

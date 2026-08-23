@@ -558,7 +558,9 @@ Each stolen Magic Item is removed from play. Each stolen item is worth 25 Victor
 
 #entry("DEPUTIES", first: true)
 
-*Profile M WS BS S T W I A Ld Points* Deputy 4 3 4 2 2 1 5 1 8 3.5
+#profile(
+  (name: "Deputy", m: 4, ws: 3, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: 3.5),
+)
 
 #field("UNIT SIZE", "15-45")
 #field("TROOP TYPE", "Infantry (Halfling)")
