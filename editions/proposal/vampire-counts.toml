@@ -24,11 +24,12 @@ status = "under discussion"
 summary = """
 The book's first Army of Infamy: an alternative composition for a vampire \
 aristocracy that fights in its own person. Two entries move up one category \
-each (Vargheists to Core, Blood Knights to Special), one new entry is added \
-(Blood Guard - the mounted knight's profile on foot, as a Core choice), all \
-missile weapons come off the table, and units with the Undead special rule \
-stay available and cheap but stop counting towards the minimum an army must \
-spend on Core. Two list rules carry the flavour: the Oath of the Keep, and \
-Dread, not Slaughter. Set out in full in the PROPOSALS chapter of \
-src/vampire-counts-proposal.typ.
+each (Vargheists to Core, Blood Knights to Special) and two new entries are \
+added - Blood Guard, the mounted knight's own profile on foot as a Core \
+choice, and Blood Wyrms, vampire knights on living drakes as a Rare choice. \
+All missile weapons come off the table, the mounts stop being Undead, and \
+units with the Undead special rule stay available and cheap but stop counting \
+towards the minimum an army must spend on Core. Two list rules carry the \
+flavour: the Oath of the Keep, and Dread, not Slaughter. Set out in full in \
+the PROPOSALS chapter of src/vampire-counts-proposal.typ.
 """

@@ -2171,7 +2171,7 @@ What follows is not rules. Nothing here has been agreed, nothing here is played,
 
 An *Army of Infamy* is a second way to build a force from a book that already exists. The units and their points stay as they are; what changes is which category they are chosen from, what the list requires of you, and one or two rules laid over the whole army.
 
-The *Crimson Legion* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds one new entry, takes all missile weapons off the table, and stops the Undead rabble from counting towards what an army must spend on Core.
+The *Crimson Legion* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds two new entries, takes all missile weapons off the table, unbinds the mounts from the grave, and stops the Undead rabble from counting towards what an army must spend on Core.
 
 #field("Why", "")
 
@@ -2188,12 +2188,16 @@ An army chosen from this book may be chosen as a Crimson Legion instead. Every B
 #namecost("THE LEGION", "")
 
 - *Blood Guard* are a Core choice. They are new, and are described below.
+- *Blood Wyrms* are a Rare choice. They are new, and are described below.
 - *Vargheists* are a Core choice instead of a Special choice.
 - *Blood Knights* are a Special choice instead of a Rare choice. The limit on duplicate Special choices applies to them as it does to any other, so three units are available at 2,000 points where one was before.
 - Units with the *Undead* special rule may be taken exactly as the book allows, but *do not count towards the minimum points an army must spend on Core units.* Buy as many as you like; they buy you nothing towards the quarter.
+- Mounts in the army are not Undead. The Nightmare, the Hellsteed, the Abyssal Terror and the Zombie Dragon are living things bound to their riders, and lose the *Undead* special rule.
 - No model in the army may take a missile weapon, and the *Skeleton Archers* and *Skeleton Catapult* entries are not available. This removes the bow option from Skeleton Horsemen and the Skeleton Chariot, the longbows and crossbows from the Sylvanian Levy, the crossbows from the Wraithwisps, the throwing weapons from the Strigany and the Lahmian Handmaidens, and the shortbow and throwing weapons from a Lahmian character. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
 
-#note[_Nothing else moves. The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top._]
+#note[_Nothing else moves. The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top._
+
+_The mounts clause changes almost nothing at the table, and is worth having anyway. The book already says mounted characters ignore the Undead special rule of their mount, so a Vampire on a Zombie Dragon was never riding a corpse in any way that touched a die roll. What it settles is the sentence above it: The Generals of Undeath asks for a Necromancy Wizard if the army contains any Undead units and, unlike Slain General, does not say excluding mounts — so whether a regiment of Blood Knights owed a Necromancer on account of its horses was genuinely unclear. In a Legion it does not._]
 
 #namecost("BLOOD GUARD", "")
 
@@ -2217,6 +2221,33 @@ The knights of the household, who fight on foot because the walls are behind the
 
 #note[_One entry, two builds. With the shield it is a 3+ save with Parry (6+) and it holds a line; with the great weapon it is a 4+ save at Strength 6, Strength 7 in the first round through Mighty Blow (1), and \-2 Initiative for the privilege. The price is anchored on the Lahmian Handmaiden, which is 18 points for Infantry (Vampire) with Weapon Skill 5, Strength 4 and two Attacks in light armour. Ours pays six points more for a point of Weapon Skill, a point of Strength and heavy armour with a shield, and gives up Skirmishers, Scouts and Dodge (6+)._]
 
+#namecost("BLOOD WYRMS", "")
+
+The Grand Master's own wing. Where a Blood Knight is given a horse, the knights of the inner circle are given something older, and the wyrms are alive.
+
+#profile(
+  (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 75),
+  (name: "Blood Wyrm", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 4, i: 3, a: 3, ld: 4, points: ""),
+)
+#field("UNIT SIZE", "3-6")
+#field("TROOP TYPE", "Monstrous Cavalry (Vampire)")
+#field("MOUNT", "Blood Wyrm (Draconid)")
+#field("BASE SIZE", "50x75")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield")
+#field("SPECIAL RULES", "Devastating Charge, Fly (8), Vampiric")
+#field("OPTIONS", "")
+
+- May upgrade one Wyrm Knight to a Leader +5 points
+- May upgrade one Wyrm Knight to a Musician +5 points
+- May upgrade one Wyrm Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge and Fly (8) are the whole unit, and the book already has both._
+
+_Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror* — so a Blood Wyrm causes Terror without this entry saying so, exactly as a Vargheist already does in the book as printed. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then the Vargheists already in this book do not cause Terror either, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._
+
+_Priced against the Morbheg Knights, the book's other Rare flying Monstrous Cavalry, at 35 points for a worse rider on a weaker mount with Fly (5). Six Blood Wyrms with a full command come to 470 points, which sits inside both the quarter an army may spend on Rare and the quarter no single unit may exceed — so at 2,000 points the list caps itself at one full wing and nothing else Rare._]
+
 #namecost("THE OATH OF THE KEEP", "")
 
 The lord holds his lands by his own hand and answers for them in person.
@@ -2237,11 +2268,13 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
 #chart((
   ("", "In this book", "In a Crimson Legion"),
   ("Blood Guard", "Does not exist", "Core, new entry"),
+  ("Blood Wyrms", "Does not exist", "Rare, new entry"),
   ("Vargheists", "Special", "Core"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
   ("Skeletons, Zombies, Wolves, Spirit Hosts", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
   ("Skeleton Archers, Skeleton Catapult", "Core, Rare", "Not available"),
   ("Bows, crossbows, throwing weapons", "Options on seven entries", "Not available"),
+  ("Nightmare, Hellsteed, Abyssal Terror, Zombie Dragon", "Undead mounts", "Not Undead"),
   ("Everything else", "Core, Special, Rare", "Unchanged"),
 ))
 
@@ -2250,6 +2283,8 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
 The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon Skill 6, Strength 5, two Attacks and a 2+ armour save, with \-1 To Wound against him and a heavy lance that makes him Strength 7 on the charge. A Black Knight with heavy armour and barding is 26 points for the same save. The Black Knight buys Killing Blow, Magical Attacks and, being Undead, the fact that it cannot be broken at all, so the two are not the same purchase — but ten points is a thin wall, and 36 points is a defensible price for a unit you may take once, not three times.
 
 Twenty-four points for the Blood Guard is a guess with one comparison behind it. The Handmaiden anchor is the closest thing in the book and it is not close: she is a skirmishing scout and ours is a line unit, so the two are priced for different jobs and the six points between them is arithmetic rather than evidence.
+
+Four Wounds on a Monstrous Cavalry mount is the number to challenge in the Blood Wyrms. Attacks against the model use the highest Toughness and Wounds from either rider or mount, so a full wing is twenty-four Wounds at Toughness 4 behind a 3+ save, flying eight inches, causing Terror by construction, and striking on the charge with three Attacks from the knight and four from the wyrm once Devastating Charge has raised both. The Morbheg Knights anchor says 35 points for three Wounds and a considerably worse rider; seventy-five is more than twice that for one more Wound and a much better one, which is either about right or nowhere near enough, and one game will say which. What makes it safe to be wrong is the arithmetic around it rather than the number itself. A full wing with command is 470 points, and at 2,000 both the Rare allowance and the ceiling on any single unit are 500, so the list can field one wing and never two.
 
 The Leadership aura is an army-wide version of something a von Carstein pays thirty points for, at twice the range, for nothing. Making it cumulative keeps his purchase worth making — within 6" of him it stacks to \-2 — but it does not answer the objection that the list is handed the effect free. It is also very broad. A 12" radius is a 24" circle, two or three of them overlap across a good deal of ground, and every Break test, Panic test and Psychology test taken inside one is a point worse. A flat modifier is the dullest kind of rule to write, and this one does a great deal of quiet work.
 
@@ -2261,7 +2296,7 @@ And taking the missile weapons out is a real loss of options for very little in 
 
 #field("What it would take", "")
 
-A chapter in this book, and one new unit entry. Two category moves, one composition restriction, one equipment restriction, two list rules, and nothing in any other book.
+A chapter in this book, and two new unit entries. Two category moves, one composition restriction, one equipment restriction, one clause about mounts, two list rules, and nothing in any other book.
 
 The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment. The one rule that needs a home there rather than here is the Core-minimum clause, since Choosing Your Army is where the quarter is set.
 
@@ -2270,5 +2305,7 @@ If it holds up, the same shape is waiting twice more in this book. Strigany may 
 #field("For example", "")
 
 *A Crimson Legion at 2,000 points.* Eighteen Blood Guard with shields at 432 and six Vargheists at 300 make 732 points of qualifying Core against a 500-point minimum. Two units of eight Blood Knights at 288 each take 576 of the Special allowance and a Varghulf at 135 finishes it, for 711. A Blood Dragon Lord at 215 and a Kastellan at 100 lead them. That is 1,758 points; thirty Zombies add 75 more, and they count towards nothing at all and are there to die in front of the knights. The last 167 go on champions, standards and the Flag of Blood Keep.
+
+*Or trade the ground for the air.* Twenty-one Blood Guard, split into two units so that neither breaks the ceiling on a single unit, make the quarter at 504. Two units of eight Blood Knights take 576, a Varghulf 135, and a full wing of six Blood Wyrms with command fills the Rare allowance at 470. With the same Lord and Kastellan at 315 that comes to 2,000 points exactly, with the Rare allowance spent to within thirty points of its ceiling.
 
 *What is different at the table.* The enemy spends the battle a point of Leadership down wherever it comes within 12" of a Vampire character, and the legion may never Flee. None of it is Unbreakable, so when it does lose a fight it loses the whole unit. The characters must duel whenever a duel is offered and are healed for winning. Nothing shoots. The dead are still there, still cost two and a half points, and no longer excuse the army from buying vampires.
