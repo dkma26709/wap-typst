@@ -5,7 +5,7 @@ army books from their published PDFs into [Typst](https://typst.app), and
 publishes the result to GitHub Pages.
 
 **30 army books, one of our own, and the core rulebook · 1,780 unit entries ·
-2,179 typeset pages**, plus nine amended editions of them.
+2,179 typeset pages**, plus ten amended editions of them.
 
 The point is the *book*: proper stat tables, styled headings, real paragraph
 structure — not a scrape. Every book was imported with **no missing words at
@@ -115,10 +115,16 @@ cost, and what it would look like at the table — the argument to have before
 anyone writes it into the rules. Once agreed it is written into the body and moves
 to the changelog chapter.
 
-Because a proposal book is a fork of the house book that adds only that chapter,
-the promise its colophon makes — that the rules text is untouched — is checkable,
-and is checked, by the second command above. It currently reports nought words
-differing.
+Because a proposal book is a fork that adds only that chapter, the promise its
+colophon makes — that the rules text is untouched — is checkable, and is checked,
+by the second command above. It currently reports nought words differing for both
+proposal books. The fork is of the house edition where the book has one, and of
+the book itself where it does not, so the parent passed to `check_editions.py` is
+whichever it was forked from:
+
+```bash
+python extract/check_editions.py out/vampire-counts-proposal.pdf     out/vampire-counts.pdf --chapter PROPOSALS --identical-body
+```
 
 ## How the extraction works
 

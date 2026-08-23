@@ -1,0 +1,30 @@
+# Proposals for Vampire Counts 3.0.
+#
+# The book is the source of truth. Since the re-architecture, a proposal's text
+# lives in src/vampire-counts-proposal.typ and nowhere else; this file records
+# only what the proposal *is*, so the landing page can tally it. Copying the
+# body here as well would put the same words in two places and let them drift,
+# which is the failure mode the whole re-architecture was for.
+#
+# (editions/proposal/rulebook.toml still carries its full text. It was written
+# while the books were generated from these files, and is now the older half of
+# a pair - the rulebook's own PROPOSALS chapter is what ships.)
+#
+# Once a proposal is agreed it is rewritten as [[change]] entries against a
+# House edition of this book and deleted from here.
+
+book = "vampire-counts"
+
+
+[[proposal]]
+id     = "army-of-infamy-host-of-blood-keep"
+title  = "An Army of Infamy: the Host of Blood Keep"
+status = "under discussion"
+
+summary = """
+The book's first Army of Infamy: an alternative composition for a Vampire \
+Counts army that gives up every Undead unit, the Necromancers and the Lore of \
+Necromancy, and takes Blood Knights as a Core choice in exchange - one unit \
+for each Blood Dragon Vampire character in the army. Set out in full in the \
+PROPOSALS chapter of src/vampire-counts-proposal.typ.
+"""
