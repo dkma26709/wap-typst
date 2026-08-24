@@ -2179,6 +2179,8 @@ The *Ordo Draconis* is the army this book is named after and cannot field: a vam
 
 The Ordo Draconis is the household of a single vampire lord, and it does not stay anywhere. It has no lands that appear on a map and no seat that can be visited twice. What it has is a keep that arrives, a household living inside it, a dozen scattered agreements it honours, and a habit of turning up in Bretonnia at moments when Bretonnia would rather it did not. Every account of it that has been written down was written by vampires, and every one of them calls its lord Emmerich.
 
+#runin[The pass]
+
 He was born Aymeric of Montfort, in a duchy whose reason for existing is a pass, and never took the Questing Vow. He looked at the Grail path, which sends a knight out alone for years on the chance of a vision, and took service instead with the Ordo Draconis, a Sigmarite order holding the pass at Blood Keep. His countrymen thought this heresy at best. His view, then and since, was that the Ordo was holding a pass and the Questing Knights were holding nothing.
 
 Twenty years of holding it taught him the arithmetic he has never revised. A pass is held by mortal knights until the mortal knights run short, and the shortfall is always paid for below, in villages, by people nobody asked. Bretonnian armies win their battles with peasants standing in front of the knights, and Bretonnian chivalry is arranged so that no knight need feel the loss. A lord who accepts that is not protecting his people. He is spending them.
@@ -2191,11 +2193,15 @@ He has never claimed this was a good thing to have done. He says only that the a
 
 What came out of the Keep afterwards went two ways. Most of it became a Sylvanian military power under Walach, took a new name for its new purpose, and calls itself the Knights of the Blood Dragon. The remainder left with the man who had made them, on the grounds that nobody had released the Ordo from its oath to the valleys beneath the Keep. That is why they still use the old name: it is a claim about who kept the promise. Sylvania tells the story more simply, and says that Walach Harkon took Blood Keep and founded the order. The vampire counts have little appetite for crediting a lord who will not feed on peasants, will not take land and will not join anything, so the version that survives is the one where the Grand Master did all of it. He gave the blood, so there is something in it. The Ordo has stopped correcting them.
 
+#runin[His names]
+
 His own name went the same way. He was Aymeric of Montfort until Bretonnia first proclaimed him damned, and then he stopped using it, because Bretonnia attaints houses along with men and there were people in Montfort still living inside that name. Since then he has answered to whatever he is called. Sylvania writes and peasants do not, so the accounts that survive give the Imperial wear on the same name and call him Emmerich. The few knights still standing who were at the Keep say Aymeric, and a man of the Ordo can be dated by which of the two he uses.
 
 The other two names were given to him. The villages of six duchies call him the Black Drake, off the banner, and nobody decided it. Bretonnia's proclamations damn the Unblessed and take care to use no name at all, since naming him would concede that he was ever one of theirs. He has corrected none of it. The order's name means the dragon's, and styling a man for the order he serves is older than the order itself. The usage has attached to other lords since, and to at least one who came by it a good deal less honestly.
 
 He signs himself Marshal of the Ordo Draconis. It is the rank he was appointed to before any of the rest of it, and it is not the Master's chair, which he has never claimed and which Sylvania assumes he wants.
+
+#runin[The domain]
 
 Bretonnia has repeated the proclamation twice a generation since. Sylvania decided he was no use. He could have held a keep against either. He could not hold one against both, so the keep stopped standing still. It appears where he requires it, with no approach and no passage, and nobody who has watched it happen has managed to describe it usefully. His household went with it. The domain stayed behind, in eleven or twelve separate pieces.
 
@@ -2205,17 +2211,25 @@ The arrangement is the same everywhere and he invented very little of it. A lord
 
 The reason the arrangement holds is bookkeeping. Grain does not come back once it is eaten. A son does not come back at all. Blood comes back in a month. He is the only lord these places have ever dealt with whose tribute costs them nothing they will still be missing next year. The first visit is never paid for either: he deals with whatever is killing the place, and leaves, and if the village wants him a second time the terms are read out. Several have declined. He has not returned to those, and nothing is known to have happened to them.
 
+#runin[The signal]
+
 The keep works a circuit. Between visits there is a way of asking for it that the villages do not discuss with outsiders. A fire is lit on a hilltop, behind a board cut to the order's device. On a night with low cloud the drake stands on the underside of it, black on grey, and can be read from the next valley. It arrives, the thing that could not be stopped is stopped, and it goes. The peasants of six duchies know the shape of it on the horizon. They do not mention it to visiting knights.
 
 Travellers who have seen the signal from a distance say flatly that the shape is a bat. The villages say drake, because a drake is what is on the banner. The argument has run two hundred years in six duchies with neither side conceding, and nobody has thought to put it to the household.
+
+#runin[The Green Knight]
 
 The comparison Bretonnia will not make aloud is with the Green Knight. Gilles le Breton is also dead, is also kept past his time in the service of something, also appears where the land is being despoiled, and also fights duels as a matter of function. He is in the songs and the poetry. The other one is declared damned. The difference is agreed on all sides to be important, and nobody has explained it satisfactorily.
 
 The Green Knight appears where evil defiles the land. He has never appeared for the Ordo Draconis. In Bretonnia this is held to prove nothing.
 
+#runin[The household]
+
 The Ordo fights as an order of knights and nothing else. Its vampires ride, walk in armour, or take to the air, and the dead march behind them in whatever numbers the season requires. There is no militia. There are no archers, no crossbows, no artillery train. Its lord will not use a weapon that kills at a distance, and the order has lost battles because of it. He accepts every challenge offered him and requires the same of his household, which has cost him two knights he could not replace.
 
 He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who die in the attempt are raised and march with the levy. He does not turn peasants. He leaves his own dead in the ground as well, and has never given a reason for it.
+
+#runin[The drakes]
 
 The drakes are live stock and always have been. The byres are cut into the keep's own rock and the herd goes where the keep goes, and the herdsmen are paid in sheep for the loss of sheep. The oldest of them predates the order, is a dragon where her get are wyrms, and carries nobody but her lord. Vampires who arrive expecting a Zombie Dragon are frequently surprised, and the Ordo has never troubled to find a word for a Nightmare that is alive.
 
@@ -2225,6 +2239,8 @@ The household name their own mounts, in Bretonnian, after the manner of warhorse
 
 Somebody has to raise the dead as well, and he regards that as a chore. He learned enough of it himself to avoid depending on anyone, and the necromancers in his service are kept, paid and not consulted. Blood Dragons hold sorcery in contempt. He holds it in contempt and uses it anyway.
 
+#runin[Other vampires]
+
 Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
 
 #note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
@@ -2233,7 +2249,11 @@ Other vampires do not know what to make of him. The von Carsteins have decided h
 
 The Lahmians have tried three times to place someone in his household, and all three times it was the same woman. Lahmia files her as Ankhara. Bretonnia, where she has worked for two centuries under whatever name the duchy required, knows her by the first cover she ever used and by nothing else: the Widow of Gisoreux. It is the only one of her names that stuck, and it was never hers.
 
+#runin[The assignment]
+
 The assignment cannot be completed, and the reason is structural. A Lahmian is placed beside power that has a location — a court, a seat, a succession, a household with rooms in it. He has no lands that appear on a map and no seat that can be visited twice. There is nothing to be near. She has reported as much three times. Lahmia sends her back, because the alternative is to concede that the assignment was never possible.
+
+#runin[The encounters]
 
 She arrived the first time in the third year of a protectorate in Gisoreux, as a widow with a claim, which is the correct approach to a Bretonnian lord and the wrong one to him. He read the claim, found it sound, and settled it in her favour. She stayed four months. What she could report at the end of it was that he had no court, no succession and no vices, and that the tribute was written down. Lahmia found the report insolent.
 
@@ -2251,7 +2271,11 @@ She took the warrant of his appointment from his own table, in a year he does no
 
 In every meeting where a challenge was possible he has issued one, because he must, and she has refused it, because she may. He has issued four times. She has refused four times. The rules of both their orders permit exactly this and nothing else, and neither has ever been asked to explain why they keep arranging to be in a position to observe them.
 
+#runin[The count]
+
 The Lahmian archive records nine occasions. His household can account for eleven. Neither figure has been corrected. The two that appear in one record and not the other are, inevitably, the two anybody would want.
+
+#runin[What is not written down]
 
 There is more, and none of it is written anywhere that can be read. He keeps ledgers; that is the whole of him. One is the tithe, every village and every season and every measure. One is the byre tally, where the Dam is an entry with a number and a note on temperament. There is a third book. It is neither of those, nobody in the household has read it, nobody has asked to, and it is thicker than the other two together.
 
