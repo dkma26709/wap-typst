@@ -2217,9 +2217,9 @@ The Ordo fights as an order of knights and nothing else. Its vampires ride, walk
 
 He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who die in the attempt are raised and march with the levy. He does not turn peasants. He leaves his own dead in the ground as well, and has never given a reason for it.
 
-The drakes are live stock and always have been. The byres are cut into the keep's own rock and the herd goes where the keep goes, and the herdsmen are paid in sheep for the loss of sheep. The oldest of the wyrms predates the order and carries nobody but her lord. Vampires who arrive expecting a Zombie Dragon are frequently surprised, and the Ordo has never troubled to find a word for a Nightmare that is alive.
+The drakes are live stock and always have been. The byres are cut into the keep's own rock and the herd goes where the keep goes, and the herdsmen are paid in sheep for the loss of sheep. The oldest of them predates the order, is a dragon where her get are wyrms, and carries nobody but her lord. Vampires who arrive expecting a Zombie Dragon are frequently surprised, and the Ordo has never troubled to find a word for a Nightmare that is alive.
 
-She is in the tally book as the Dam, which is what a stockman writes, and every drake the order owns is hers. It is the only document in the world that names her. He does not name animals. Asked once, he said she came with the mountain, and he has held to that for two centuries in a way the household find trying. The villages have never separated her from the rest of it. To them the Black Drake is a man, a device on a banner, a shape on the cloud and an animal, and nobody in six duchies has needed to tell the four apart.
+She is in the tally book as the Dam, which is what a stockman writes, and every drake the order owns is hers and a lesser breed than she is. It is the only document in the world that names her. He does not name animals. Asked once, he said she came with the mountain, and he has held to that for two centuries in a way the household find trying. The villages have never separated her from the rest of it. To them the Black Drake is a man, a device on a banner, a shape on the cloud and an animal, and nobody in six duchies has needed to tell the four apart.
 
 The household name their own mounts, in Bretonnian, after the manner of warhorses. The herdsmen decline to use the names, on the grounds that the animals are numbered. Neither side has given ground, and the argument is older than most of the knights having it.
 
@@ -2246,8 +2246,9 @@ An army chosen from this book may be chosen as a Ordo Draconis instead. Every Bl
 - *Blood Guard* are a Special choice. They are new, and are described below.
 - *Blood Wyrms* and the *Elder Wyrm* are Rare choices. Both are new, and are described below.
 - *Vargheists* are a Core choice instead of a Special choice.
+- *Emmerich, Marshal of the Ordo Draconis* is a Special Character available to this list and to no other. He is new, and is described below.
 - *Blood Knights* are a Special choice instead of a Rare choice. The limit on duplicate Special choices applies to them as it does to any other, so three units are available at 2,000 points where one was before.
-- *For each Blood Dragon Vampire character in the army, one unit of Blood Guard or Blood Knights may be taken as a Core choice* instead of a Special one. Walach Harkon and Prince Vhordrai each allow one.
+- *For each Blood Dragon Vampire character in the army, one unit of Blood Guard or Blood Knights may be taken as a Core choice* instead of a Special one. Walach Harkon and Prince Vhordrai each allow one; Emmerich allows two.
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army.
 - Units with the *Undead* special rule may be taken exactly as the book allows, but *do not count towards the minimum points an army must spend on Core units.* Buy as many as you like; they buy you nothing towards the quarter.
 - No unit in the army may be *Human*. Characters are excepted, because he forbids mortals dying in his line rather than mortals serving him: this bars the *Sylvanian Levy* and the *Strigany*, and leaves the Necromancer, Swain and the Strigany Mystic available.
@@ -2317,7 +2318,7 @@ _The arithmetic then does the rationing without a special rule. Both the Rare al
 
 #namecost("ELDER WYRM", "")
 
-One wyrm that was old before the Bloodlines were, and the knight who talked it into service rather than breaking it.
+One of the Dam's oldest get, old before the Bloodlines were, and the knight who talked it into service rather than breaking it. The Dam herself is not this entry and never will be; she carries one man and appears in his.
 
 #profile(
   (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 210),
@@ -2342,6 +2343,59 @@ _So: ten points over the Drakemaster for a better rider and Vampiric, having giv
 
 _The book can already put a Vampire on an Abyssal Terror for 125 points or a Zombie Dragon for 245, and either is a ridden Monstrous Creature with the same Terror and the same Stomp. That version brings Leadership, challenges and a hundred points of magic items with it. This is the one to take when the characters are already spent, and the overlap is the fair objection to the entry._]
 
+#namecost("EMMERICH", "")
+
+Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in a Ordo Draconis, and he is the only model in this book who may be given the Dam.
+
+#profile(
+  (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
+  (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 6, points: 275),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Vampire, Blood Dragon), or Monster while mounted on the Dam")
+#field("MOUNT", "The Dam (Draconid)")
+#field("BASE SIZE", "20x20 or 25x25, or 50x100 mounted")
+#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
+#field("MAGIC", "Emmerich is a Level 2 Wizard who uses both of the following Lores of Magic:")
+
+- Necromancy
+- Shadow
+
+#field("MAGIC ITEMS", "")
+
+- *The Marshal's Blade:* Magic Weapon. Hand weapon. While Emmerich is fighting in a challenge, the Marshal's Blade has the Heroic Killing Blow special rule. Outside a challenge it is an ordinary hand weapon and does nothing at all.
+- *The Hauberk of the Ordo:* Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).
+
+#field("VAMPIRIC POWERS", "Blademaster, Dread Knight")
+#field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
+
+- *The Household:* If Emmerich is included in your army, two units of Blood Guard or Blood Knights may be taken as Core choices on his account rather than the one a Blood Dragon Vampire character allows. He licenses characters as any other Blood Dragon does.
+- *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
+- *The Arithmetic:* Emmerich may never join a unit with the *Undead* special rule.
+
+#field("OPTIONS", "")
+
+- May be mounted on the Dam +275 points
+
+#field("NOTES", "")
+
+- While mounted on the Dam, Emmerich is a Monster with the *Fly (8)* and *Natural Armour (4+)* special rules. The Dam has no Breath Weapon.
+
+#note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot that is most of the move and he casts and is gone. On the Dam his Line of Sight value is 4 and it is almost nothing. The foot build vanishes and the mounted build does not, and no rule here says so._
+
+_Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in his own person, which is the fiction's claim that he learned enough of it to avoid depending on anyone, costing nothing to write. The same goes for leaving his own dead in the ground: Invocation of Nehek targets Undead excluding mounts, and his household are Vampires, so it could never have raised them._
+
+_The price is the part worth arguing with, and an earlier draft got it wrong by adding up the parts: items, powers and rules came to 435, which is not how this book prices anything. Konrad is 215 for a Magical Ward (5+), a Multiple Wounds (2) weapon and Red Fury. Vlad is 450 for a Level 3 with a Magical Ward (4+), a resurrection on a 2+ and 60 points of Vampiric Powers. Mannfred is 565 for a Level 4 who is a Loremaster in two Lores at once, with four Magic Items, before a 245-point Zombie Dragon is added. Strip the mounts out and Walach's half is about 470, Zacharias's about 475 and Vhordrai's about 370. And in every case the signature army rule is free: Walach's Grand Master, Mannfred's Drakenhof Guard and Vhordrai's Fist of Abhorash are all given away with the character._
+
+_So this follows the book. Three hundred and seventy is 215 for a Blood Dragon Lord, 70 for the second level, 5 for the shield, 30 of Vampiric Powers and 50 of Magic Items - the same purchases a Blood Dragon Lord could make from the army list. The two Lores, the Household, the Pass Held and the Arithmetic are the character, and are not charged for, exactly as they are not charged for on Walach. A Blood Dragon Lord who spends his full 100 points on powers and items reaches 390, so Emmerich is twenty points under the most expensive one you could build. That is the fair objection to the entry, and it is the same objection every special character in the book invites._
+
+_The Marshal's Blade is 25 against Bretonnia's own scale, where the Lance of Artois is 15 points for Killing Blow restricted to turns in which the model charges and the Virtuous Lance is 25 for rather more. The restriction here is narrower than it looks, since Martial Honour puts him in a challenge whenever one can be had, and the Heroic part only earns its keep against a character on a Monster, where ordinary Killing Blow would do nothing. Whether a weapon that is inert outside a challenge is characterful or is a trap laid for the player is the question to settle._
+
+_The Pass Held is the rule that answers this proposal's own argument. The Why section above sets out that Vampiric models are the only part of a Vampire Counts army that can be broken and the only part its magic cannot mend. A re-roll on Break tests for the unit he is standing in fixes precisely that, for precisely one unit, and the Arithmetic then forbids him from doing it for the fodder. The two clauses are one rule read from either end._
+
+_The Dam is priced on this book's scale rather than Ulthuan's. The Zombie Dragon is 245 as a mount at Toughness 6, 6 Wounds, 5 Attacks, Natural Armour (5+) and Fly (7), with a Breath Weapon and Swarm of Flies. She adds a point of Toughness, a Wound, an Attack, an armour tier and a point of Fly, and gives up both of those rules; 275 is the answer. High Elves charge 300 for a Moon Dragon and 390 for a Star Dragon, but they also charge 300 where this book charges 245 for the same chassis, so their numbers set the shape and not the price. Weapon Skill 5 rather than a Star Dragon's 7 because her get are Weapon Skill 4 and these are stock, not the ancients of Caledor. No Breath Weapon, because the Blood Wyrms gave theirs up for the same reason and their rider will not use a weapon that kills at a distance._
+
+_Six hundred and forty-five mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so mounted he wants a game of 2,580 points or larger and on foot he is legal from 1,480. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table._]
+
 #namecost("THE OATH OF THE KEEP", "")
 
 The lord holds his lands by his own hand and answers for them in person.
@@ -2364,6 +2418,7 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
   ("Blood Guard", "Does not exist", "Special, new entry"),
   ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
+  ("Emmerich", "Does not exist", "Special Character, new entry"),
   ("Vargheists", "Special", "Core"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
   ("Skeletons, Zombies, Wolves, Spirit Hosts", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
@@ -2393,6 +2448,10 @@ The Leadership aura is an army-wide version of something a von Carstein pays thi
 An earlier draft paired it with Terror on every Vampiric model in the army, and that is worth recording as the thing this list decided against. Run for Your Lives! would have meant the enemy testing to charge the legion and testing again when charged by it, while the legion itself may never Flee, and the rulebook's escape hatch would not have applied: the exception letting Fear-causing models treat Terror as mere Fear is written for Terror-causing *monsters*, and a rank of Blood Guard is not a monster. That is a morale lock rather than a flavour rule. The dread the list keeps is the one that can be argued with.
 
 The Undead-do-not-count clause is the cleanest thing here and the most likely to be gamed. It says nothing about what the *rest* of the army does, so a list can meet its quarter with the cheapest qualifying Core in the book and then spend everything else on skeletons anyway. Whether that matters depends on whether cheap Undead were ever the problem, or only their compulsoriness.
+
+Emmerich is open to the objection every special character is, and to one that is his own. The first is that he is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, two army rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+) and hands the whole army its Blood Knights. The second is sharper. The Household grants two Core units where a bought Blood Dragon grants one, so he is worth roughly a second character to a list whose Core is rationed by how many Vampires it was willing to buy - and that is the single clause this whole Army of Infamy turns on. A discount on the list's binding constraint is not the same kind of gift as a re-roll.
+
+The Dam has the opposite problem. At 275 she is priced honestly against the Zombie Dragon and she still cannot be fielded below 2,580 points, which means the largest creature this project has written will almost never be seen. Either that is what a centrepiece is, or the ladder should have stopped at a full-grown dragon and left her a wyrm.
 
 And taking the missile weapons out is a real loss of options for very little in return. Seven entries lose a line each and one Core entry and one war machine disappear, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
