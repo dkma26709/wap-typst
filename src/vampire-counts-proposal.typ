@@ -2227,7 +2227,43 @@ Somebody has to raise the dead as well, and he regards that as a chore. He learn
 
 Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
 
-#note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
+#note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
+
+#field("The Lahmian", "")
+
+The Lahmians have tried three times to place someone in his household, and all three times it was the same woman. Lahmia files her as Ankhara. Bretonnia, where she has worked for two centuries under whatever name the duchy required, knows her by the first cover she ever used and by nothing else: the Widow of Gisoreux. It is the only one of her names that stuck, and it was never hers.
+
+The assignment cannot be completed, and the reason is structural. A Lahmian is placed beside power that has a location — a court, a seat, a succession, a household with rooms in it. He has no lands that appear on a map and no seat that can be visited twice. There is nothing to be near. She has reported as much three times. Lahmia sends her back, because the alternative is to concede that the assignment was never possible.
+
+She arrived the first time in the third year of a protectorate in Gisoreux, as a widow with a claim, which is the correct approach to a Bretonnian lord and the wrong one to him. He read the claim, found it sound, and settled it in her favour. She stayed four months. What she could report at the end of it was that he had no court, no succession and no vices, and that the tribute was written down. Lahmia found the report insolent.
+
+She came back as somebody else. He greeted her by the previous name, which was either courtesy or the most pointed thing he has ever done, and there is no way to tell which.
+
+They first fought in a valley in the Grey Mountains, on opposite sides of a war belonging to neither of them. He had her. He put up his sword and said that killing her meant Lahmia sending someone he did not know, and that this one he could predict. Two of his knights heard him say it. Neither has repeated it in his hearing.
+
+A thing came off the moors above a fishing village on a bad coast, and they dealt with it from opposite ends without a word passing between them. She was there because it had eaten the household she was working through, which is to say her cover. They left in opposite directions. That village believes to this day that it was saved twice in one night by two separate parties.
+
+She left a report where he would find it. She has maintained ever since that she was careless.
+
+Lahmia eventually stopped asking for placement and asked for his death. She accepted the commission and has carried it for sixty years, which is well within her orders, since the instruction was to get close to him first.
+
+She took the warrant of his appointment from his own table, in a year he does not discuss. He has never asked for it back. His knights raise it a great deal more often than he does.
+
+In every meeting where a challenge was possible he has issued one, because he must, and she has refused it, because she may. He has issued four times. She has refused four times. The rules of both their orders permit exactly this and nothing else, and neither has ever been asked to explain why they keep arranging to be in a position to observe them.
+
+The Lahmian archive records nine occasions. His household can account for eleven. Neither figure has been corrected. The two that appear in one record and not the other are, inevitably, the two anybody would want.
+
+There is more, and none of it is written anywhere that can be read. He keeps ledgers; that is the whole of him. One is the tithe, every village and every season and every measure. One is the byre tally, where the Dam is an entry with a number and a note on temperament. There is a third book. It is neither of those, nobody in the household has read it, nobody has asked to, and it is thicker than the other two together.
+
+In two hundred years there are two winters in which the Ordo cannot account for its lord and Lahmia cannot account for its agent. They are the same two winters. Both records were checked once, side by side, by a Lahmian clerk with an eye for symmetry, who did not file the observation. Lahmia audits its agents. Twice, her filed expenses cover months her reports do not. The discrepancy was queried both times and answered both times, and both answers are in the file, and they are not the same answer.
+
+The keep has more rooms than the household uses, which is unremarkable in a keep.
+
+One of them is kept aired.
+
+The knights will discuss the warrant, the count and the four refusals, cheerfully and at length. They will not discuss the winters. Nobody made that a rule.
+
+Bretonnia has no view, because Bretonnia does not know. Sylvania has a view and it is wrong. The Ordo stopped correcting them about the order's own name, and it is not going to start with this.
 
 #field("Why", "")
 
@@ -2247,6 +2283,7 @@ An army chosen from this book may be chosen as a Ordo Draconis instead. Every Bl
 - *Blood Wyrms* and the *Elder Wyrm* are Rare choices. Both are new, and are described below.
 - *Vargheists* are a Core choice instead of a Special choice.
 - *Emmerich, Marshal of the Ordo Draconis* is a Special Character available to this list and to no other. He is new, and is described below.
+- *Ankhara, the Widow of Gisoreux* is a Special Character, new below, and unlike Emmerich she is available to any army chosen from this book.
 - *Blood Knights* are a Special choice instead of a Rare choice. The limit on duplicate Special choices applies to them as it does to any other, so three units are available at 2,000 points where one was before.
 - *For each Blood Dragon Vampire character in the army, one unit of Blood Guard or Blood Knights may be taken as a Core choice* instead of a Special one. Walach Harkon and Prince Vhordrai each allow one; Emmerich allows two.
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army.
@@ -2396,6 +2433,42 @@ _The Dam is priced on this book's scale rather than Ulthuan's. The Zombie Dragon
 
 _Six hundred and forty-five mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so mounted he wants a game of 2,580 points or larger and on foot he is legal from 1,480. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table._]
 
+#namecost("ANKHARA", "")
+
+The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
+
+#profile(
+  (name: "Ankhara", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 9, points: 160),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Vampire, Lahmian)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+#field("MAGIC", "Ankhara is a Level 1 Wizard who uses the Lore of Shadow.")
+#field("MAGIC ITEMS", "")
+
+- *The Marshal's Warrant:* Enchanted Item. The document appointing Emmerich to the rank he still uses, taken from his own table. Any friendly unit within 12" of Ankhara may use the Leadership of the army's General as though the General were within 12" of it.
+
+#field("VAMPIRIC POWERS", "Night Creature, Swiftness")
+#field("SPECIAL RULES", "Dodge (6+), The Red Thirst, Vampiric")
+
+- *She Never Swore It:* The Oath of the Keep does not apply to Ankhara. In addition, she may refuse a challenge without the usual penalty. She is moved as the rules for Refusing a Challenge require, but the enemy gains no combat result bonus for the refusal, and she keeps the use of her Leadership and of every special rule and Magic Item she carries for that turn.
+- *Not of the Household:* Ankhara does not count towards the limit on characters who are not Blood Dragons. She was never invited.
+- *The Fourth Attempt:* If Emmerich is also in the army, Ankhara is deployed after every other unit of both armies, anywhere on the table more than 12" from an enemy model.
+
+#note[_Two rules written weeks apart collide here, and the collision is the entry. The Oath of the Keep binds every Vampire character in the army to Martial Honour, so that all of them must issue and accept challenges whenever they can. She never swore it, three attempts having failed to place her in the household that did. He cannot refuse and she cannot be made to accept, which is the whole of the relationship expressed in rules that were not written for it. Refusing normally costs the round's attacks, hands the enemy a point of combat result, and denies the refuser the use of her Leadership and of every bonus she carries; hers costs the attacks and nothing else._
+
+_Weapon Skill 6 and Initiative 8 over the Lahmian Courtesan, and not a point of Strength. She is not a duellist and the profile should not let anyone read her as one._
+
+_The price follows Sekhar exactly, since he is the book's own worked example of what a Lahmian special character costs. Seventy points of Courtesan, 70 for the second level and 50 of Vampiric Powers make 190, and his familiar, his polearm, his medium armour and the Time-Swallower's Maw are all free on top. So 70, 35 for the first level and 30 of powers make 135 here. Isabella supplies the rest of the rate: 70 of Courtesan and 10 for Beguile is 80 against a printed 110, so about 30 buys a shifted statline, a Magic Item and a rule that only works alongside somebody else. One hundred and sixty, which sits where a companion piece belongs - above Isabella at 110 and below Sekhar at 190._
+
+_The Warrant is the number to argue with. Lending the General's Leadership at 12" is a Battle Standard's kind of effect and a Battle Standard is 25 points in this book, so it is most of what she is carrying over the base rate. It is also the one item on her that is not hers, which is the point of it: the woman who has three times failed to join the household is the one holding the document that proves the household has a Marshal at all. Cutting it and dropping her to about 135 is the honest alternative, and Sekhar carries no Magic Items whatsoever._
+
+_Not of the Household is worth more here than it reads. This list rations characters who are not Blood Dragons at one per Blood Dragon, so an exemption is a character's worth of allowance, and the fair objection is that a rule justified entirely by fiction has a real price nobody paid. Against that: she is the only model in the book it could ever apply to._
+
+_She may be taken in a Ordo Draconis and in any other army chosen from this book, which is the asymmetry the fiction asks for. He belongs to one place and she belongs nowhere, and Lahmia goes on sending her wherever it likes. The Fourth Attempt is the only thing on her that needs him, and it does nothing at all when he is absent._
+
+_And the one thing deliberately not copied from Isabella: if Emmerich is slain, Ankhara gains no Hatred, no Frenzy and nothing else whatsoever. Neither of them would call that sentiment. Both would call it correct._]
+
 #namecost("THE OATH OF THE KEEP", "")
 
 The lord holds his lands by his own hand and answers for them in person.
@@ -2419,6 +2492,7 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
   ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
   ("Emmerich", "Does not exist", "Special Character, new entry"),
+  ("Ankhara", "Does not exist", "Special Character, new entry, and available to any army in this book"),
   ("Vargheists", "Special", "Core"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
   ("Skeletons, Zombies, Wolves, Spirit Hosts", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
@@ -2450,6 +2524,8 @@ An earlier draft paired it with Terror on every Vampiric model in the army, and 
 The Undead-do-not-count clause is the cleanest thing here and the most likely to be gamed. It says nothing about what the *rest* of the army does, so a list can meet its quarter with the cheapest qualifying Core in the book and then spend everything else on skeletons anyway. Whether that matters depends on whether cheap Undead were ever the problem, or only their compulsoriness.
 
 Emmerich is open to the objection every special character is, and to one that is his own. The first is that he is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, two army rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+) and hands the whole army its Blood Knights. The second is sharper. The Household grants two Core units where a bought Blood Dragon grants one, so he is worth roughly a second character to a list whose Core is rationed by how many Vampires it was willing to buy - and that is the single clause this whole Army of Infamy turns on. A discount on the list's binding constraint is not the same kind of gift as a re-roll.
+
+Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well, and the sharper one that Not of the Household hands this list a character's worth of allowance for reasons that are entirely fictional. The Warrant is the other place to push: an effect of that kind is a Battle Standard's work and a Battle Standard is 25 points, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190.
 
 The Dam has the opposite problem. At 275 she is priced honestly against the Zombie Dragon and she still cannot be fielded below 2,580 points, which means the largest creature this project has written will almost never be seen. Either that is what a centrepiece is, or the ladder should have stopped at a full-grown dragon and left her a wyrm.
 
