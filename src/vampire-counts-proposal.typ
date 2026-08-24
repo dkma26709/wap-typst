@@ -2169,11 +2169,51 @@ against that unit.")))
 
 What follows is not rules. Nothing here has been agreed, nothing here is played, and the rules text of this book is untouched by all of it. Each proposal sets out what it would change, why it is worth changing, and what it would look like at the table — enough to be argued over, and no more. Only once one is settled is it written into the book, and it will appear under Our Changes when it is.
 
-#namecost("An Army of Infamy: the Crimson Legion", "under discussion")
+#namecost("An Army of Infamy: the Ordo Draconis", "under discussion")
 
 An *Army of Infamy* is a second way to build a force from a book that already exists. The units and their points stay as they are; what changes is which category they are chosen from, what the list requires of you, and one or two rules laid over the whole army.
 
-The *Crimson Legion* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds three new entries, takes all missile weapons off the table, unbinds the mounts from the grave, and stops the Undead rabble from counting towards what an army must spend on Core.
+The *Ordo Draconis* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds three new entries, takes all missile weapons off the table, unbinds the mounts from the grave, and stops the Undead rabble from counting towards what an army must spend on Core.
+
+#field("The order", "")
+
+The Ordo Draconis is the household of a single vampire lord, and it does not stay anywhere. It has no lands that appear on a map and no seat that can be visited twice. What it has is a keep that arrives, a household living inside it, a dozen scattered agreements it honours, and a habit of turning up in Bretonnia at moments when Bretonnia would rather it did not.
+
+He was born Bretonnian and never took the Questing Vow. He looked at the Grail path — a knight riding out alone for years on the chance of a vision — and took service instead with the Ordo Draconis, a Sigmarite order holding the pass at Blood Keep. His countrymen thought this heresy at best. His view, then and since, was that the Ordo was holding a pass and the Questing Knights were holding nothing.
+
+Twenty years of holding it taught him the arithmetic he has never revised. A pass is held by mortal knights until the mortal knights run short, and the shortfall is always paid for below, in villages, by people who were not asked. Bretonnian armies win their battles with peasants standing in front of the knights, and Bretonnian chivalry is arranged so that no knight need feel the loss. A lord who accepts that is not protecting his people. He is spending them.
+
+So he went and found the Blood Dragons on purpose. Not for immortality, and not for power: he wanted a garrison that would not age. Walach Harkon gave him the blood, and it is worth saying plainly that this is the coldest motive on record for seeking vampirism. He did it as a logistics decision.
+
+Then the Keep was going to fall. He came back with the blood and offered it to his brothers while there was still time to choose, and the ones who took it are his household still. The rest are Wights and march behind them. The pass held. He has never claimed this was a good thing to have done, only that the alternative was an open pass, and an open pass is paid for in villages.
+
+What came out of the Keep afterwards went two ways. Most of it became a Sylvanian military power under Walach, took a new name for its new purpose, and calls itself the Knights of the Blood Dragon. The remainder left with the man who had made them, on the grounds that nobody had released the Ordo from its oath to the valleys beneath the Keep. That is why they still use the old name. It is not sentiment. It is a claim about who kept the promise.
+
+Sylvania tells this differently and tells it more simply: Walach Harkon took Blood Keep and founded the order. The vampire counts are not inclined to credit a lord who will not feed on peasants, will not take land and will not join anything, so the version that survives is the one in which the Grand Master did all of it. He gave the blood, so the account is not a lie. It is a rounding-up, and the Ordo has stopped correcting it.
+
+Bretonnia declared him damned and has done so twice a generation since. Sylvania decided he was no use. He could have held a keep against either. He could not hold one against both, so the keep stopped standing still. It appears where he requires it, with no approach and no passage, and nobody who has watched it happen has managed to describe it usefully. His household went with it. What he could not carry was his domain, because his domain is not in one piece.
+
+He holds perhaps a dozen places, and they are scattered on purpose. No two adjoin. Upland hamlets, a fishing village on a bad coast, two valleys in the Grey Mountains, a handful of holdings in duchies that would deny all knowledge of them. A dozen separate arrangements across six duchies draw far less notice than one province would, and none of the parties involved wants notice. What the places have in common is that their own lords cannot reach them in time and have stopped pretending otherwise. He was not the first to notice this. He was the first to do anything about it.
+
+The arrangement is the same everywhere and he invented very little of it. A lord takes tribute and gives protection; that is what a lord is for. The Bretonnian version takes coin, grain, labour, a tenth of everything that grows, and the young men when the levy is called. His version takes blood. Once a season, from adults, by measure, and written down, and no coin, no harvest, no labour and no young men. The villages keep everything they make.
+
+That is why the arrangement holds, and it is bookkeeping rather than sentiment. Grain does not come back once it is eaten. A son does not come back at all. Blood comes back in a month. He is the only lord these places have ever dealt with whose tribute costs them nothing they will still be missing next year. The first visit is never paid for either: he deals with whatever is killing the place, and leaves, and if the village wants him a second time the terms are read out. Several have declined. He has not returned to those, and nothing is known to have happened to them.
+
+Where the keep goes is not random. It works a circuit, and between visits there is a way of asking for it that the villages do not discuss with outsiders. It arrives, the thing that could not be stopped is stopped, and it goes. The peasants of six duchies know the shape of it on the horizon. They do not mention it to visiting knights.
+
+The comparison Bretonnia will not make aloud is with the Green Knight. Gilles le Breton is also dead, is also kept past his time in the service of something, also appears where the land is being despoiled, and also fights duels as a matter of function. He is in the songs and the poetry. The other one is declared damned. The difference is agreed on all sides to be important, and nobody has explained it satisfactorily. The Green Knight appears where evil defiles the land. He has never appeared for the Ordo Draconis. In Bretonnia this is held to prove nothing.
+
+The Ordo fights as an order of knights and nothing else. Its vampires ride, walk in armour, or take to the air, and the dead march behind them in whatever numbers the season requires. There is no militia. There are no archers, no crossbows, no artillery train. Its lord will not use a weapon that kills at a distance, and the order has lost battles because of it. He accepts every challenge offered him and requires the same of his household, which has cost him two knights he could not replace.
+
+He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who die in the attempt are raised and march with the levy. He does not turn peasants. He does not raise his own dead either, and has never given a reason for it.
+
+The drakes are bred, not raised. The byres are cut into the keep's own rock and the herd goes where the keep goes, and the herdsmen are paid in sheep for the loss of sheep. The oldest of the wyrms predates the order and carries nobody but its lord. Vampires who arrive expecting a Zombie Dragon are frequently surprised.
+
+Somebody has to raise the dead, and he regards this as a chore rather than an art. He learned enough of it himself to avoid depending on anyone, and the necromancers in his service are kept, paid and not consulted. Blood Dragons hold sorcery in contempt. He holds it in contempt and uses it anyway.
+
+Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
+
+#note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting rather than to us. What is ours is the lord, his arithmetic, the scattered agreements, the keep that will not stand still, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
 
 #field("Why", "")
 
@@ -2185,7 +2225,7 @@ The book already knows. Walach Harkon, Grand Master of the Blood Knights, carrie
 
 #field("The list", "")
 
-An army chosen from this book may be chosen as a Crimson Legion instead. Every Bloodline may be taken and every character remains available. Nothing is banned but the missile weapons.
+An army chosen from this book may be chosen as a Ordo Draconis instead. Every Bloodline may be taken and every character remains available. Nothing is banned but the missile weapons.
 
 #namecost("THE LEGION", "")
 
@@ -2196,8 +2236,9 @@ An army chosen from this book may be chosen as a Crimson Legion instead. Every B
 - *For each Blood Dragon Vampire character in the army, one unit of Blood Guard or Blood Knights may be taken as a Core choice* instead of a Special one. Walach Harkon and Prince Vhordrai each allow one.
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army.
 - Units with the *Undead* special rule may be taken exactly as the book allows, but *do not count towards the minimum points an army must spend on Core units.* Buy as many as you like; they buy you nothing towards the quarter.
+- No unit in the army may be *Human*. Characters are excepted, because he forbids mortals dying in his line rather than mortals serving him: this bars the *Sylvanian Levy* and the *Strigany*, and leaves the Necromancer, Swain and the Strigany Mystic available.
 - Mounts in the army are not Undead. The Nightmare, the Hellsteed, the Abyssal Terror and the Zombie Dragon are living things bound to their riders, and lose the *Undead* special rule.
-- No model in the army may take a missile weapon, and the *Skeleton Archers* and *Skeleton Catapult* entries are not available. This removes the bow option from Skeleton Horsemen and the Skeleton Chariot, the longbows and crossbows from the Sylvanian Levy, the crossbows from the Wraithwisps, the throwing weapons from the Strigany and the Lahmian Handmaidens, and the shortbow and throwing weapons from a Lahmian character. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
+- No model in the army may take a missile weapon, and the *Skeleton Archers* and *Skeleton Catapult* entries are not available. This removes the bow option from Skeleton Horsemen and the Skeleton Chariot, the crossbows from the Wraithwisps, and the throwing weapons and shortbow from the Lahmian Handmaidens and a Lahmian character. The Sylvanian Levy and the Strigany carried missile options too, and the clause above has already barred them. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
 
 #note[_Nothing else moves. The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top._
 
@@ -2305,7 +2346,7 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
 #note[_This needs no new machinery. It is the Aura of Dark Majesty vampiric power with its range doubled and its source widened from a power somebody bought to any Vampire character. The effect itself is that power's own sentence, cumulative clause included. A von Carstein who buys the power still gets something for his thirty points: within 6" of him the two stack to \-2. Note that it follows the power rather than the Hell Banner, which does much the same at 40 points, on Line of Sight rather than a radius, but has no effect on models with Immunity (Psychology). The book is inconsistent about that exemption; a Leadership penalty reaches Break tests, which are not Psychology tests, so the power's reading is the one that makes sense of it._]
 
 #chart((
-  ("", "In this book", "In a Crimson Legion"),
+  ("", "In this book", "In a Ordo Draconis"),
   ("Blood Guard", "Does not exist", "Special, new entry"),
   ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
@@ -2313,7 +2354,8 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
   ("Skeletons, Zombies, Wolves, Spirit Hosts", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
   ("Skeleton Archers, Skeleton Catapult", "Core, Rare", "Not available"),
-  ("Bows, crossbows, throwing weapons", "Options on seven entries", "Not available"),
+  ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
+  ("Sylvanian Levy, Strigany", "Core, Human", "Not available"),
   ("Nightmare, Hellsteed, Abyssal Terror, Zombie Dragon", "Undead mounts", "Not Undead"),
   ("Everything else", "Core, Special, Rare", "Unchanged"),
 ))
@@ -2324,7 +2366,7 @@ The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon S
 
 Twenty-two points for the Blood Guard is the one number here that is not a guess, because the Depth Guard in *Zombie Pirates of the Vampire Coast* is the same profile digit for digit at that price. What that leaves open is the reverse of the usual worry. If the statline is already published at 22 then the objection is not that it is cheap but that it is *not new* — a Vampire Counts entry that offers a published loadout as an option and adds one build of its own, the shield. And there is a sharper version of it: the Depth Guard is a *Rare* choice in its own book, where this is a Special one that a Blood Dragon can pull into Core. Same profile, same price, considerably easier to field. If 22 was set for a unit you take once, it is being asked to hold for a unit you take as your line.
 
-The two clauses tied to the Blood Dragons are where the list stops being a re-sort and starts being a design. One unit of Blood Guard or Blood Knights as Core per Blood Dragon character, and one non-Blood-Dragon character per Blood Dragon, do a great deal of quiet work between them. Because an army must have a General and no character is allowed without a Blood Dragon to license it, the first character in every Crimson Legion has to be a Blood Dragon: the Bloodline is compulsory without anything being banned. And because the Undead buy nothing towards the quarter, the knights that do have to be paid for in characters, so the size of the line is set by how many Vampires you were willing to buy.
+The two clauses tied to the Blood Dragons are where the list stops being a re-sort and starts being a design. One unit of Blood Guard or Blood Knights as Core per Blood Dragon character, and one non-Blood-Dragon character per Blood Dragon, do a great deal of quiet work between them. Because an army must have a General and no character is allowed without a Blood Dragon to license it, the first character in every Ordo Draconis has to be a Blood Dragon: the Bloodline is compulsory without anything being banned. And because the Undead buy nothing towards the quarter, the knights that do have to be paid for in characters, so the size of the line is set by how many Vampires you were willing to buy.
 
 The fair objection is that this is a lot of machinery to hang on one keyword, and that it punishes the other four Bloodlines for no reason the fiction insists on. A Necrarch who wants a household of vampire foot has to bring a Blood Dragon to sign for it. That is either the point of an Army of Infamy or an accident of one, depending on how much the name is meant to bind.
 
@@ -2350,7 +2392,7 @@ If it holds up, the same shape is waiting twice more in this book. Strigany may 
 
 #field("For example", "")
 
-*A Crimson Legion at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two units as Core and two characters who are not Blood Dragons, neither of which this list takes. Eighteen Blood Guard at 396 and one of the two Blood Knight units at 288 come across as Core, and six Vargheists at 300 join them there: 984 of qualifying Core against a 500-point minimum. The second Blood Knight unit at 288 and a Varghulf at 135 make 423 of the Special allowance. That is 1,722; thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights, and the last 203 go on champions, standards, the Flag of Blood Keep, and the 35 that make the Lord a Level 1 Wizard — because thirty Zombies are an Undead unit, and The Generals of Undeath wants a Necromancer for them. That is what the fodder actually costs.
+*A Ordo Draconis at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two units as Core and two characters who are not Blood Dragons, neither of which this list takes. Eighteen Blood Guard at 396 and one of the two Blood Knight units at 288 come across as Core, and six Vargheists at 300 join them there: 984 of qualifying Core against a 500-point minimum. The second Blood Knight unit at 288 and a Varghulf at 135 make 423 of the Special allowance. That is 1,722; thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights, and the last 203 go on champions, standards, the Flag of Blood Keep, and the 35 that make the Lord a Level 1 Wizard — because thirty Zombies are an Undead unit, and The Generals of Undeath wants a Necromancer for them. That is what the fodder actually costs.
 
 *Or trade the ground for the air.* Eighteen Blood Guard at 396 come across as Core and three Vargheists at 150 join them, which is 546 and clears the quarter with nothing to spare. Both Blood Knight units stay Special at 576, well inside the half. Five Blood Wyrms with a full command take 445 of the Rare allowance, which is as many as 2,000 points will carry. With the same Lord and Kastellan at 315 that is 1,882, and the 118 left over buys command and a Magic Standard but no Varghulf and no Elder Wyrm, while the Rare ceiling forbids a sixth wyrm whatever is left in the purse. It takes no Undead at all, so it owes no Necromancer either, and one of its two Core allowances goes unspent — which is what it costs to put a wing in the air.
 
