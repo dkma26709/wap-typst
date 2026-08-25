@@ -2519,12 +2519,41 @@ All enemy units within 12" of one or more Vampire characters suffer a \-1 penalt
 
 #note[_This needs no new machinery. It is the Aura of Dark Majesty vampiric power with its range doubled and its source widened from a power somebody bought to any Vampire character. The effect itself is that power's own sentence, cumulative clause included. A von Carstein who buys the power still gets something for his thirty points: within 6" of him the two stack to \-2. Note that it follows the power rather than the Hell Banner, which does much the same at 40 points, on Line of Sight rather than a radius, but has no effect on models with Immunity (Psychology). The book is inconsistent about that exemption; a Leadership penalty reaches Break tests, which are not Psychology tests, so the power's reading is the one that makes sense of it._]
 
+#namecost("THE ORDO'S ITEMS", "")
+
+Three Magic Items available only to an army chosen as a Ordo Draconis. Each is bought from a character's Magic Items allowance and follows the rules for its own kind of item.
+
+#namecost("WEATHER OVER THE KEEP", "15 points")
+
+Enchanted Item. Ordo Draconis only. Friendly units with the *Chiropter* keyword within 12" of the bearer may use the bearer's Leadership.
+
+#namecost("THE SIGNAL FIRE", "30 points")
+
+Enchanted Item. Ordo Draconis only. One friendly unit with the *Draconid* keyword may deploy using the *Ambushers* special rule.
+
+#namecost("THE WITNESSED OATH", "25 points")
+
+Talisman. Ordo Draconis only. Vampire only. While the bearer is fighting in a challenge, they have a Magical Ward (5+).
+
+#note[_One item for each of the three keywords this list actually cares about, and all three priced against the book rather than against each other._
+
+_Weather Over the Keep is the Helm of Commandment read the other way round. That item is 25 points to lend the wearer's Weapon Skill to one Undead unit within 12", and in a Ordo Draconis its beneficiaries are the fodder — the list opens a gap exactly where a household item should be. Lending Leadership to one keyword of Leadership 5 chaff is the narrower effect, so 15. It also gives the Chiropter clause something to do at the table rather than only in the list-building: his bats borrow his nerve._
+
+_The Signal Fire is the one number here with nothing underneath it, since the book sells no deployment rule at any price. Thirty is reasoning rather than precedent: above the Pendant of the Fell Wind, which is 25 for a permanent point of Movement on a whole unit, because a wing of Blood Wyrms arriving behind the line is worth more than that, and discounted for the two turns it spends off the table._
+
+_Ambushers rather than Scouts or Vanguard, and the choice is not decorative. A unit made up entirely of models that can Fly uses its Fly value when it Vanguards, so a Vanguard version would put Fly (8) and Devastating Charge eight inches up the table on the first turn, and a Scouts version would put them anywhere outside 12". Ambushers arrives on a 3+ on turn two, a 2+ on turn three and automatically on turn four, from a board edge, having been off the table in the meantime. Random and late is what makes it fair. The rulebook's Ambushers tax — one non-Expendable, non-ambushing Core unit for every Core unit that ambushes — does not bite here, because every Draconid entry in this list is Rare._
+
+_The Witnessed Oath is gated on the one thing this list guarantees. The Oath of the Keep compels every Vampire character to issue and accept, so a ward that works only in a challenge pays out reliably rather than on a condition the opponent controls, and it answers the argument the Why section makes: the vampires are the only part of a Vampire Counts army that dies for good. Twenty-five against the Wristbands of Black Gold, which are 25 for a Magical Ward (3+) that is always on and covers one kind of attack._
+
+_The idea it replaced is worth recording. A Magic Standard granting The Red Thirst to the household does nothing whatsoever: the Red Thirst restores a Wound to a model that has lost one, and a Blood Guard has a single Wound, so it is either unhurt or dead. The rule that reads as the household's own healing turns out to be written for characters._]
+
 #chart((
   ("", "In this book", "In a Ordo Draconis"),
   ("Blood Guard", "Does not exist", "Special, new entry"),
   ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
   ("Emmerich", "Does not exist", "Special Character, new entry"),
+  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath", "Do not exist", "Magic Items, new, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any army in this book"),
   ("Vargheists", "Special", "Core"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
@@ -2567,9 +2596,11 @@ The Dam has the opposite problem. At 275 she is priced honestly against the Zomb
 
 And taking the missile weapons out is a real loss of options for very little in return. Seven entries lose a line each and one Core entry and one war machine disappear, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
+The three items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges — which is either exactly the point of it or a quiet twenty-five-point upgrade for every character in the list. None of the three has a game behind it.
+
 #field("What it would take", "")
 
-A chapter in this book, and three new unit entries. Two category moves, one Core allowance, three composition restrictions, one equipment restriction, one clause about mounts, two list rules, and nothing in any other book.
+A chapter in this book, and three new unit entries. One requirement, two category moves, one Core allowance, three composition restrictions, one equipment restriction, one clause about mounts, two list rules, three Magic Items, and nothing in any other book.
 
 The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment. The one rule that needs a home there rather than here is the Core-minimum clause, since Choosing Your Army is where the quarter is set.
 
