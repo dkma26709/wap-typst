@@ -2251,7 +2251,57 @@ The villages have never counted them at all. Weather is not a thing one reports 
 
 Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
 
-#note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
+#field("The field", "")
+
+The order keeps a record of its engagements, because it keeps a record of everything. It is not a chronicle. It is a ledger, in the same hand as the tally book, giving the place, the season, what was fought and what it cost in knights. Six duchies appear in it constantly. A few other places appear once.
+
+#runin[The realm]
+
+Bretonnia has put an army in his way eleven times, and eleven times the same thing has happened. A Bretonnian host is arranged with peasants in front of the knights, which is the arrangement he left. A Bretonnian knight cannot decline a challenge and remain one, which is the arrangement he kept. So the battle collapses into its middle: the knights come forward because they must, the levy stands where it was put, and the two lines that were meant to grind each other never meet.
+
+He has never given an order to spare the peasants and has never needed to. The household ride past them because the men worth fighting are behind them, and from the other side of the field that is indistinguishable from mercy. The Ordo has not corrected that either.
+
+What the realm has never managed to fit into a proclamation is that he beats them by their own rules and stops the moment they break off.
+
+Eleven times, and not once a pursuit.
+
+#runin[The herds]
+
+Most of the ledger is beastmen. That is what comes down on an upland hamlet in a bad year, and dealing with it is the whole of what the arrangement buys. There is little to record. The household arrive, the herd is broken, the drakes are fed, and the village is told what it already knew about the woods.
+
+The one line worth reading is that a Doombull has never once declined. His oath binds him to issue and to accept, which against most enemies is a liability and has cost him two knights he could not replace; against beastmen it costs nothing, because the beastman wants the same thing he does and will come through his own herd to get it. He has called them the only enemy the Ordo has that is entirely straightforward.
+
+#runin[What will not stand]
+
+The order has lost battles, and the ledger is candid about which. Nearly all of them were to things that shoot and will not stand.
+
+Skaven do both. Their warlords will not meet a challenge, having no notion why they should and no rule anywhere obliging them, so his knights wait at the front of a formation to be met and are shot instead. Under one of the upland holdings the household lost four knights, killed a great many rats, and never found the one that mattered, which by his arithmetic is a defeat: the rats were replaceable and the knights were not.
+
+He has not revised the prohibition on missile weapons and does not argue for it. Asked, he says he has stood on the other side of a volley aimed at a village. That is not an answer to the tactical question and it is the only one he gives.
+
+#runin[The other pass]
+
+Two of the holdings are valleys in the Grey Mountains, so twice he has stood on ground a hold also claims. Neither time came to much. Dwarfs understand a pass held by counting, hold their own by the same arithmetic, and keep books of their own; whether he appears in the better half of anybody's is not a thing he has asked.
+
+They shot at him regardless, thoroughly and at range, and the household have never established whether that was policy or a grudge older than the question. He declined to take it badly. A people who will not spend their own for an easier answer, he said, may shoot at him as much as they like.
+
+#runin[The bad coast]
+
+The fishing village on the bad coast appears in the ledger more often than any holding of its size, a bad coast being one that people arrive on. Norscans come ashore roughly every third year, which the villagers regard as weather and the ledger records as engagements.
+
+These are the only battles in which the Ordo is not the strangest thing on the field. A war-party that has seen the keep on the headland does not usually leave and does not usually run, and their champions issue before he does. The household consider them the best fighting they get. The ledger has no column for that and enters them as ordinary.
+
+#runin[The desert]
+
+Once, and it is known exactly where, the keep arrived in Nehekhara.
+
+Nothing in the order's account explains it. What survives is a stores complaint. The herdsmen filed that the drakes would not fly in the heat, that four were off their feed for a month, and that the byres wanted rewetting daily at a cost they set out in full. Someone has written the date and the place underneath, which is the only reason anyone knows either. The strangest thing that has happened to the Ordo Draconis is documented as a livestock matter.
+
+They were there long enough to be met. A king came out to them in gold, with an army drawn up in ranks that had been drawn up that way before Bretonnia existed, and issued through a herald, correctly, at the proper distance. Emmerich accepted. Neither would break and neither could finish it, and the household's account says the two of them stopped by agreement and did not speak, having no language between them. The order has argued about it ever since, the argument being whether the king had understood who he was fighting; the two knights who stood closest took opposite views and are both still in the household.
+
+He has said only that it was the most courteous army he has ever fought, and that he does not expect to be asked back.
+
+#note[_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, the ledger and every engagement in it, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this proposal holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed elsewhere in this book is contradicted._]
 
 #field("The Lahmian", "")
 
