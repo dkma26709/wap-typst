@@ -2217,6 +2217,20 @@ The keep works a circuit. Between visits there is a way of asking for it that th
 
 Travellers who have seen the signal from a distance say flatly that the shape is a bat. The villages say drake, because a drake is what is on the banner. The argument has run two hundred years in six duchies with neither side conceding, and nobody has thought to put it to the household.
 
+#runin[The reasons]
+
+The keep does not move because it can. The household can give a reason for every journey it has made, and the ledger sets them out in the order they occur.
+
+Most often it answers the signal. A fire on a hilltop, a village that has run out of other ideas, and the thing that could not be stopped is stopped.
+
+Next, and more often each century, it goes out to meet something before that something reaches a holding. This is the arithmetic again. A warband broken in open country costs him knights. The same warband broken in a village costs him knights and the village, and the village is the thing he is paid in. He would sooner fight anything a week early and forty miles away, and says so in terms the household have learned to repeat.
+
+Third, it is seen. The keep stands a day within sight of somebody who was considering something, and then it is not there. Nothing is fought and nothing is said. He holds no border and cannot garrison a dozen scattered places at once, so the ability to arrive is the only defence any of them has, and a lord who has watched it arrive somewhere else tends to revise his plans. The household consider this the dullest duty in the order. He considers it the cheapest thing they do.
+
+Fourth and rarely, one of the scattered agreements is called in. The terms of those are not discussed, including within the household.
+
+Beneath all four is the reason it began. A keep that stands still can be besieged, and he could not hold one against Bretonnia and Sylvania at once.
+
 #runin[The Green Knight]
 
 The comparison Bretonnia will not make aloud is with the Green Knight. Gilles le Breton is also dead, is also kept past his time in the service of something, also appears where the land is being despoiled, and also fights duels as a matter of function. He is in the songs and the poetry. The other one is declared damned. The difference is agreed on all sides to be important, and nobody has explained it satisfactorily.
@@ -2293,11 +2307,13 @@ These are the only battles in which the Ordo is not the strangest thing on the f
 
 #runin[The desert]
 
-Once, and it is known exactly where, the keep arrived in Nehekhara.
+Once, and it is known exactly where and why, the keep arrived in Nehekhara.
 
-Nothing in the order's account explains it. What survives is a stores complaint. The herdsmen filed that the drakes would not fly in the heat, that four were off their feed for a month, and that the byres wanted rewetting daily at a cost they set out in full. Someone has written the date and the place underneath, which is the only reason anyone knows either. The strangest thing that has happened to the Ordo Draconis is documented as a livestock matter.
+Something had come ashore on the bad coast two generations earlier and worked its way inland into one of the holdings, and in the fullness of time a king wanted it back and began assembling to come and take it. Emmerich sent it ahead of the fleet, on the grounds that it was not his and that a war over it would be fought in his villages. A claim once made is met regardless, so the king sailed anyway, and he went out to meet him rather than wait for the landing. It is the second reason at its longest range, and the ledger files it as nothing more than that.
 
-They were there long enough to be met. A king came out to them in gold, with an army drawn up in ranks that had been drawn up that way before Bretonnia existed, and issued through a herald, correctly, at the proper distance. Emmerich accepted. Neither would break and neither could finish it, and the household's account says the two of them stopped by agreement and did not speak, having no language between them. The order has argued about it ever since, the argument being whether the king had understood who he was fighting; the two knights who stood closest took opposite views and are both still in the household.
+How the keep got there is the part the order cannot explain, and the only record of the season and the place is a stores complaint. The herdsmen filed that the drakes would not fly in the heat, that four were off their feed for a month, and that the byres wanted rewetting daily at a cost they set out in full. Somebody has written the season and the place underneath. The furthest the Ordo Draconis has ever travelled is documented as a livestock matter.
+
+They were there long enough to be met. A king came out to them in gold, with an army drawn up in ranks that had been drawn up that way before Bretonnia existed, and issued through a herald, correctly, at the proper distance. Emmerich accepted. Neither would break and neither could finish it, and the household's account says the two of them stopped by agreement and did not speak, having no language between them. The order has argued about it ever since, the argument being whether the king had understood who he was fighting; the two knights who stood closest took opposite views and are both still in the household. Neither disputes that the whole business was a matter of form by the time it was fought.
 
 He has said only that it was the most courteous army he has ever fought, and that he does not expect to be asked back.
 
