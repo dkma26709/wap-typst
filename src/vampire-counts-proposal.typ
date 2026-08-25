@@ -2598,7 +2598,7 @@ _The Aura of Dark Majesty is worth its thirty points again, and worth more than 
 
 #namecost("THE ORDO'S ITEMS", "")
 
-Three Magic Items available only to an army chosen as a Ordo Draconis. Each is bought from a character's Magic Items allowance and follows the rules for its own kind of item.
+Four Magic Items available only to an army chosen as a Ordo Draconis. Each follows the rules for its own kind of item, and the standard is a common item rather than a unique one, so any number of units may carry it.
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
 
@@ -2612,7 +2612,11 @@ Enchanted Item. Ordo Draconis only. One friendly unit with the *Draconid* keywor
 
 Talisman. Ordo Draconis only. Vampire only. While the bearer is fighting in a challenge, they have a Magical Ward (5+).
 
-#note[_One item for each of the three keywords this list actually cares about, and all three priced against the book rather than against each other._
+#namecost("THE DRAKE ON RED*", "15 points")
+
+Magic Standard. Common. Ordo Draconis only. An enemy unit that breaks from close combat with a unit carrying this standard may not attempt to rally in its next turn.
+
+#note[_One item for each of the three keywords this list cares about, a fourth that is not an artefact at all, and every one of them priced against the book rather than against each other._
 
 _Weather Over the Keep is the Helm of Commandment read the other way round. That item is 25 points to lend the wearer's Weapon Skill to one Undead unit within 12", and in a Ordo Draconis its beneficiaries are the fodder — the list opens a gap exactly where a household item should be. Lending Leadership to one keyword of Leadership 5 chaff is the narrower effect, so 15. It also gives the Chiropter clause something to do at the table rather than only in the list-building: his bats borrow his nerve._
 
@@ -2622,7 +2626,13 @@ _Ambushers rather than Scouts or Vanguard, and the choice is not decorative. A u
 
 _The Witnessed Oath is gated on the one thing this list guarantees. The Oath of the Keep compels every Vampire character to issue and accept, so a ward that works only in a challenge pays out reliably rather than on a condition the opponent controls, and it answers the argument the Why section makes: the vampires are the only part of a Vampire Counts army that dies for good. Twenty-five against the Wristbands of Black Gold, which are 25 for a Magical Ward (3+) that is always on and covers one kind of attack._
 
-_The idea it replaced is worth recording. A Magic Standard granting The Red Thirst to the household does nothing whatsoever: the Red Thirst restores a Wound to a model that has lost one, and a Blood Guard has a single Wound, so it is either unhurt or dead. The rule that reads as the household's own healing turns out to be written for characters._]
+_The idea it replaced is worth recording. A Magic Standard granting The Red Thirst to the household does nothing whatsoever: the Red Thirst restores a Wound to a model that has lost one, and a Blood Guard has a single Wound, so it is either unhurt or dead. The rule that reads as the household's own healing turns out to be written for characters._
+
+_The Drake on Red is the order's device rather than an artefact, so it is a common item, which needed no inventing: the rulebook marks common magic items with an asterisk and allows them in multiples, and this is what that mechanism is for. It is priced beside the two common standards the rulebook already sells, the War Banner at 15 points for a point of combat resolution and the Lichbone Pennant at 10 for Magic Resistance (1). Fifteen, on the grounds that a Legion will buy it on everything that can carry it._
+
+_What it is, is the clause left out of Dread, Not Slaughter, made purchasable. That rule gives up the pursuit and a pursuit is where an army does its destroying, so a Legion can break everything in front of it and still finish nothing. Denying the rally answers that, and denying it for one turn to whoever did the breaking answers it at the right size: the broken unit takes two flee moves instead of one, which is often the board edge, and the army pays for it rather than being handed it._
+
+_Two ideas died on the way to this one and are worth recording. A banner re-rolling Panic tests does nothing whatsoever here, because Vampiric grants Immunity (Psychology) and a Panic test is a Psychology test, so every unit in the Legion that can carry a standard is already immune. And anything touching Break tests belongs to Emmerich: the Pass Held is exactly that, it is his signature rule, and the Break test is the only morale lever a Vampiric unit has, so it should stay expensive._]
 
 #chart((
   ("", "In this book", "In a Ordo Draconis"),
@@ -2630,7 +2640,7 @@ _The idea it replaced is worth recording. A Magic Standard granting The Red Thir
   ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
   ("Emmerich", "Does not exist", "Special Character, new entry"),
-  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath", "Do not exist", "Magic Items, new, this list only"),
+  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath, the Drake on Red", "Do not exist", "Magic Items, new, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any army in this book"),
   ("Vargheists", "Special", "Core"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
@@ -2659,7 +2669,7 @@ The Elder Wyrm has a fair objection against it that the entry itself admits: the
 
 Dread, Not Slaughter is the rule most likely to lose the Legion a game it deserved to win. An army that breaks everything in front of it and destroys almost none of it can hold every foot of ground and still be behind on victory points, because a broken unit that rallies is a unit still on the table and still worth what it cost. Against an opponent who is content to feed units in, break off and come back, the list has no way to finish anything except by pushing it off the board edge. Whether that is a flaw or the whole character of the thing depends on what the game is being scored on, and it is worth saying that a scenario with objectives flatters this list and a straight killing match does not.
 
-The fix that was considered and not taken was to deny the enemy his rally: no attempt to rally within 12" of a Vampire character, which would have restored the killing without restoring the chase. It was left out because it is a third clause on a rule that now reads in two, and because two overlapping deployments of Vampire characters would have blanketed most of a table with it. If the list turns out to be unable to close a game, that is the clause to add.
+The answer offered is the Drake on Red, which denies the rally for one turn to whoever did the breaking, at 15 points a unit. That is deliberately a purchase and not an army rule: no attempt to rally within 12" of a Vampire character would have restored the killing without restoring the chase, but it would also have been free and would have blanketed most of a table from two overlapping deployments. This costs a Legion sixty points to put on four units and does nothing on a turn it does not win a fight. Whether fifteen points four times over closes a game that a pursuit would have closed is the open question, and it is the first number to watch.
 
 An earlier draft paired it with Terror on every Vampiric model in the army, and that is worth recording as the thing this list decided against. Run for Your Lives! would have meant the enemy testing to charge the legion and testing again when charged by it, while the legion itself may never Flee, and the rulebook's escape hatch would not have applied: the exception letting Fear-causing models treat Terror as mere Fear is written for Terror-causing *monsters*, and a rank of Blood Guard is not a monster. That is a morale lock rather than a flavour rule. The dread the list keeps is the one that can be argued with.
 
@@ -2679,7 +2689,7 @@ The three items are the newest thing in the chapter and the least tested. Weathe
 
 #field("What it would take", "")
 
-A chapter in this book, and three new unit entries. One requirement, two category moves, one Core allowance, three composition restrictions, one equipment restriction, one clause about mounts, two list rules, three Magic Items, and nothing in any other book.
+A chapter in this book, and three new unit entries. One requirement, two category moves, one Core allowance, three composition restrictions, one equipment restriction, one clause about mounts, two list rules, four Magic Items, and nothing in any other book.
 
 The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment. The one rule that needs a home there rather than here is the Core-minimum clause, since Choosing Your Army is where the quarter is set.
 
