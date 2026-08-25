@@ -2239,6 +2239,14 @@ The household name their own mounts, in Bretonnian, after the manner of warhorse
 
 Somebody has to raise the dead as well, and he regards that as a chore. He learned enough of it himself to avoid depending on anyone, and the necromancers in his service are kept, paid and not consulted. Blood Dragons hold sorcery in contempt. He holds it in contempt and uses it anyway.
 
+#runin[The sky]
+
+The bats are not stock and are not in the tally book. The herdsmen hold that an animal which cannot be counted cannot be kept, and as far as the byres are concerned that settles it; the bats have never applied for the position. They are over the keep regardless, thicker there than anywhere in the six duchies, and they are over it again on the morning after a march that put the keep somewhere else. Whether the bats follow the keep or the keep goes where the bats already are has been argued twice in the household's hearing, and the two men who argued it did not agree.
+
+What nobody disputes is that he knows what has crossed the pass before the riders come in to tell him. The necromancers in his service have a theory and have not been asked for it. It is not sorcery, which is the whole of why he will use it: a Blood Dragon may not stoop to a spell, and no oath yet written forbids a man to look up.
+
+The villages have never counted them at all. Weather is not a thing one reports to a duke.
+
 #runin[Other vampires]
 
 Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
@@ -2303,6 +2311,7 @@ An army chosen from this book may be chosen as a Ordo Draconis instead. Every Bl
 
 #namecost("THE LEGION", "")
 
+- *The army's General must be a Blood Dragon Vampire character.* The licence clauses below already made this true by arithmetic; here it is a requirement rather than a deduction.
 - *Blood Guard* are a Special choice. They are new, and are described below.
 - *Blood Wyrms* and the *Elder Wyrm* are Rare choices. Both are new, and are described below.
 - *Vargheists* are a Core choice instead of a Special choice.
@@ -2534,7 +2543,7 @@ The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon S
 
 Twenty-two points for the Blood Guard is the one number here that is not a guess, because the Depth Guard in *Zombie Pirates of the Vampire Coast* is the same profile digit for digit at that price. What that leaves open is the reverse of the usual worry. If the statline is already published at 22 then the objection is not that it is cheap but that it is *not new* — a Vampire Counts entry that offers a published loadout as an option and adds one build of its own, the shield. And there is a sharper version of it: the Depth Guard is a *Rare* choice in its own book, where this is a Special one that a Blood Dragon can pull into Core. Same profile, same price, considerably easier to field. If 22 was set for a unit you take once, it is being asked to hold for a unit you take as your line.
 
-The two clauses tied to the Blood Dragons are where the list stops being a re-sort and starts being a design. One unit of Blood Guard or Blood Knights as Core per Blood Dragon character, and one non-Blood-Dragon character per Blood Dragon, do a great deal of quiet work between them. Because an army must have a General and no character is allowed without a Blood Dragon to license it, the first character in every Ordo Draconis has to be a Blood Dragon: the Bloodline is compulsory without anything being banned. And because only the vampires and their bats count towards the quarter, the knights that do have to be paid for in characters, so the size of the line is set by how many Vampires you were willing to buy.
+The two clauses tied to the Blood Dragons are where the list stops being a re-sort and starts being a design. One unit of Blood Guard or Blood Knights as Core per Blood Dragon character, and one non-Blood-Dragon character per Blood Dragon, do a great deal of quiet work between them. Because an army must have a General and no character is allowed without a Blood Dragon to license it, the first character in every Ordo Draconis had to be a Blood Dragon before the list ever said so: the Bloodline was compulsory by arithmetic and is now compulsory by instruction, without anything being banned. And because only the vampires and their bats count towards the quarter, the knights that do have to be paid for in characters, so the size of the line is set by how many Vampires you were willing to buy.
 
 The fair objection is that this is a lot of machinery to hang on one keyword, and that it punishes the other four Bloodlines for no reason the fiction insists on. A Necrarch who wants a household of vampire foot has to bring a Blood Dragon to sign for it. That is either the point of an Army of Infamy or an accident of one, depending on how much the name is meant to bind.
 
