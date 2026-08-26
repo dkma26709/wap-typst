@@ -2171,9 +2171,9 @@ What follows is not rules. Nothing here has been agreed, nothing here is played,
 
 #namecost("An Army of Infamy: the Ordo Draconis", "under discussion")
 
-An *Army of Infamy* is a second way to build a force from a book that already exists. The units and their points stay as they are; what changes is which category they are chosen from, what the list requires of you, and one or two rules laid over the whole army.
+An *Army of Infamy* is a second way to build a force from a book that already exists. What changes is which category a unit is chosen from, what the list refuses you, and one or two rules laid over the whole army. This one goes a step further in a single place: the knights it puts in Core are a lesser draft of the printed entry, sold at the printed entry's price, and the printed profile is bought back as an upgrade that leaves Core behind.
 
-The *Ordo Draconis* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It moves two entries up one category each, adds three new entries and an upgrade path, takes all missile weapons off the table, unbinds the mounts from the grave, and lets nothing but the vampires and their bats count towards what an army must spend on Core.
+The *Ordo Draconis* is the army this book is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised — as fodder, and no longer as the backbone. It gives up twenty-one of this book's thirty-three units to do it.
 
 #field("The order", "")
 
@@ -2251,7 +2251,7 @@ She is in the tally book as the Dam, which is what a stockman writes, and every 
 
 The household name their own mounts, in Bretonnian, after the manner of warhorses. The herdsmen decline to use the names, on the grounds that the animals are numbered. Neither side has given ground, and the argument is older than most of the knights having it.
 
-Somebody has to raise the dead as well, and he regards that as a chore. He learned enough of it himself to avoid depending on anyone, and the necromancers in his service are kept, paid and not consulted. Blood Dragons hold sorcery in contempt. He holds it in contempt and uses it anyway.
+Somebody has to raise the dead as well, and he regards that as a chore. He learned enough of it himself to avoid depending on anyone, and the necromancers in his service are kept, paid and not consulted. Blood Dragons hold sorcery in contempt. He holds it in contempt and uses it anyway, drawing a distinction the rest of the Bloodline does not: the vow is against seeking power by it, not against being good at it. Two centuries of needing the thing done have made him better at it than he cares to be told.
 
 #runin[The sky]
 
@@ -2377,35 +2377,68 @@ The book already knows. Walach Harkon, Grand Master of the Blood Knights, carrie
 
 #field("The list", "")
 
-An army chosen from this book may be chosen as a Ordo Draconis instead. Every Bloodline may be taken and every character remains available. Nothing is banned but the missile weapons.
+An army chosen from this book may be chosen as an Ordo Draconis instead. Twelve of this book's thirty-three unit entries survive that choice, along with three of its thirteen character entries and none of its fifteen special characters. What is left is an order of knights.
 
 #namecost("THE LEGION", "")
 
-- *The army's General must be a Blood Dragon Vampire character.* The licence clauses below already made this true by arithmetic; here it is a requirement rather than a deduction.
-- *Blood Guard* are a Special choice. They are new, and are described below.
+- *The army's General must be a Blood Dragon Vampire character.*
+- *Blood Knights* are a Core choice, at the reduced profile given below rather than the one printed in this book, and at the same price.
+- *Blood Guard* are a Core choice. They are new, and are described below.
+- *A unit of Blood Knights or Blood Guard may be upgraded to the Sworn*, who carry the profile this book prints for a Blood Knight. A unit that takes the upgrade is a Special choice rather than a Core one. The Sworn are described below.
 - *Blood Wyrms* and the *Elder Wyrm* are Rare choices. Both are new, and are described below.
-- *Vargheists* are a Core choice instead of a Special choice.
+- *Vargheists* and the *Varghulf* are Rare choices instead of Special ones. They are the feral get of the Bloodlines, kept and fed and not asked to hold a line.
+- *Dire Wolves* are a Special choice instead of a Core one.
 - *Emmerich, Marshal of the Ordo Draconis* is a Special Character available to this list and to no other. He is new, and is described below.
 - *Ankhara, the Widow of Gisoreux* is a Special Character, new below, and unlike Emmerich she is available to any army chosen from this book.
-- *Blood Knights* are a Special choice instead of a Rare choice. The limit on duplicate Special choices applies to them as it does to any other, so three units are available at 2,000 points where one was before.
-- *For each Blood Dragon Vampire character in the army, one unit of Blood Guard or Blood Knights may be taken as a Core choice* instead of a Special one. Walach Harkon and Prince Vhordrai each allow one; Emmerich allows two.
-- *A unit of Blood Knights may be upgraded to the First Sworn*, who are described below. The First Sworn are a Rare choice.
+- *No other Special Character in this book may be taken.* The von Carsteins intend to deal with him in due course, Lahmia has spent two centuries trying to get inside his household, the Strigoi find him funny, and Walach Harkon has never called him back to Blood Keep. None of them is going to stand in his line.
+- The only characters available are the *Blood Dragons*, the *Wight Lords* and the *Necromancers* — his brothers, the brothers who did not survive the offer, and the men he keeps, pays and does not consult. Ankhara is chosen from the Characters section as normal and is the one exception to this.
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army.
-- *Only units with the Vampire or Chiropter keyword count towards the minimum points an army must spend on Core units.* The bats are the lord's own creatures and count as his household does. Every other Core entry may be taken exactly as the book allows — the Undead and the Crypt Ghouls alike — and buys you nothing towards the quarter. Take as many as you like.
-- No unit in the army may be *Human*. Characters are excepted, because he forbids mortals dying in his line rather than mortals serving him: this bars the *Sylvanian Levy* and the *Strigany*, and leaves the Necromancer, Swain and the Strigany Mystic available.
-- Mounts in the army are not Undead. The Nightmare, the Hellsteed, the Abyssal Terror and the Zombie Dragon are living things bound to their riders, and lose the *Undead* special rule.
-- No model in the army may take a missile weapon, and the *Skeleton Archers* and *Skeleton Catapult* entries are not available. This removes the bow option from Skeleton Horsemen and the Skeleton Chariot, the crossbows from the Wraithwisps, and the throwing weapons and shortbow from the Lahmian Handmaidens and a Lahmian character. The Sylvanian Levy and the Strigany carried missile options too, and the clause above has already barred them. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
+- *Only units with the Vampire or Chiropter keyword count towards the minimum points an army must spend on Core units.* The bats are the lord's own creatures and count as his household does. The Skeleton Warriors, the Skeleton Horsemen and the Zombies may be taken exactly as the book allows, in any number Core permits, and buy you nothing towards the quarter.
+- No unit or character in the army may be *Ghoul*, and none may be *Spirit*. The ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both.
+- No unit in the army may be *Human*. Characters are excepted, because he forbids mortals dying in his line rather than mortals serving him.
+- No unit in the army may be a *Chariot*, a *Shrine* or a *War Machine*. An order of knights fields knights; it does not keep an artillery train or a rolling reliquary.
+- The *Flesh Golems*, the *Necrofex Colossus* and the *Zombie Dragon* are not available. The first two are stitched work and the third is a corpse, and the Ordo keeps a byre.
+- The mounts a Vampire may take are not Undead. The Nightmare, the Hellsteed and the Abyssal Terror are living things bound to their riders and lose the *Undead* special rule. The Skeletal Steed is what a Wight rides and is left as the book has it.
+- No model in the army may take a missile weapon, and the *Skeleton Archers* entry is not available. The clauses above have already taken the Skeleton Catapult, the Skeleton Chariot, the Wraithwisps, the Sylvanian Levy, the Strigany and every Lahmian off the table between them, so what is left for this one to do is remove the bow from the Skeleton Horsemen and to say plainly that nothing written later may hand a missile back. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
 
-#note[_Nothing else moves. The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top._
+#note[_The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege — which is the cost of the fodder, and is why it did not need a cap on top. With characters rationed one non-Blood-Dragon to a Blood Dragon, that Necromancer is bought with the same allowance a Wight King would have wanted, and a lord who wants both must be two lords._
 
-_The mounts clause changes almost nothing at the table, and is worth having anyway. The book already says mounted characters ignore the Undead special rule of their mount, so a Vampire on a Zombie Dragon was never riding a corpse in any way that touched a die roll. What it settles is the sentence above it: The Generals of Undeath asks for a Necromancy Wizard if the army contains any Undead units and, unlike Slain General, does not say excluding mounts — so whether a regiment of Blood Knights owed a Necromancer on account of its horses was genuinely unclear. In a Legion it does not._]
+_The mounts clause changes almost nothing at the table, and is worth having anyway. The book already says mounted characters ignore the Undead special rule of their mount, so a Vampire on a Hellsteed was never riding a corpse in any way that touched a die roll. What it settles is the sentence above it: The Generals of Undeath asks for a Necromancy Wizard if the army contains any Undead units and, unlike Slain General, does not say excluding mounts — so whether a regiment of Blood Knights owed a Necromancer on account of its horses was genuinely unclear. In a Legion it does not._]
+
+#namecost("BLOOD KNIGHTS", "")
+
+The knights of the household as the Ordo fields them, which is not as the Bloodlines remember them. Most of a man's power is the years he has had it, and these are the ones who took the blood this century.
+
+#profile(
+  (name: "Blood Knight", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 36),
+  (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: ""),
+)
+#field("UNIT SIZE", "5-15")
+#field("TROOP TYPE", "Cavalry (Vampire)")
+#field("MOUNT", "Nightmare (Equine)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
+#field("SPECIAL RULES", "Vampiric")
+#field("OPTIONS", "")
+
+- May be upgraded to the Sworn +8 points/model
+- May upgrade one Blood Knight to a Leader +5 points
+- May upgrade one Blood Knight to a Musician +5 points
+- May upgrade one Blood Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 75 points
+
+#note[_This is the entry printed in the Rare Units section of this book, less a point of Weapon Skill, a point of Initiative and an Attack, at exactly the price the book charges for the whole thing. That is the proposal, stated plainly: an Ordo Draconis pays 36 points for a Blood Knight and gets less than 36 points buys anywhere else in the book. What it gets instead is the category._
+
+_And the category is the orthodox part. Bretonnia is an army of knightly orders and fields Knights Errant at 21 points and Knights of the Realm at 25 as Core choices, with no cap on duplicates and no obligation to bring a single peasant. Its Foot Knights are Special and its Hippogryph Knights are Rare. Every category in this list sits where its Bretonnian equivalent sits, which is not a coincidence — the man who built the order was raised in that structure and never found a reason to improve on it._
+
+_Against the rest of the game the price holds up better than it does against this book. A Chaos Knight is 28 points for Weapon Skill 5, Strength 4, one Attack, a hand weapon, heavy armour, shield and barding, and is a Special choice in its own book. Eight points buys Strength 5, a heavy lance — Mighty Blow (2) and +2 Initiative in the turn it charges — a point of Toughness on the mount, and the whole of Vampiric in place of Will of Chaos, which is Cold\-blooded on Panic tests and nothing further._]
 
 #namecost("BLOOD GUARD", "")
 
-The knights of the household, who fight on foot because the walls are behind them. The mounted knight's own profile, dismounted.
+The household on foot, who fight that way because the walls are behind them. The same offer, the same century, and no horse.
 
 #profile(
-  (name: "Blood Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 22),
+  (name: "Blood Guard", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 22),
 )
 #field("UNIT SIZE", "10-30")
 #field("TROOP TYPE", "Infantry (Vampire)")
@@ -2414,17 +2447,33 @@ The knights of the household, who fight on foot because the walls are behind the
 #field("SPECIAL RULES", "Vampiric")
 #field("OPTIONS", "")
 
+- May be upgraded to the Sworn +5 points/model
 - May replace shields with two hand weapons free
 - May upgrade one Blood Guard to a Leader +5 points
 - May upgrade one Blood Guard to a Musician +5 points
 - May upgrade one Blood Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
 
-#note[_One entry, two builds, and both of them are already in the corpus. With the shield it is two Attacks behind a 3+ save with Parry (6+), and it holds a line. Replace the shield with two hand weapons and it is three Attacks behind a 4+ save, since two hand weapons grant +1 Attack — which is the Depth Guard, exactly._
+#note[_The same bargain as the knights, and the same anchor. *Zombie Pirates of the Vampire Coast* carries the Depth Guard at 22 points: Infantry (Vampire), Vampiric, unit size 10 to 30, the same base, and Weapon Skill 6, Strength 5, Toughness 4, one Wound, Initiative 5, two Attacks and Leadership 8. This is that entry at that price with a Weapon Skill, an Initiative and an Attack taken off it — and the Depth Guard is a Rare choice in its own book, where this is a Core one._
 
-_That is why the price is not a guess. *Zombie Pirates of the Vampire Coast* carries the Depth Guard at 22 points: Infantry (Vampire), Vampiric, unit size 10 to 30, the same base, and the same Weapon Skill 6, Strength 5, Toughness 4, one Wound, Initiative 5, two Attacks and Leadership 8, with two hand weapons and heavy armour. Not a similar profile. The same one, digit for digit._
+_Two builds, and the swap is free. With the shield it is a 3+ save with Parry (6+) and it holds a line. Two hand weapons instead give +1 Attack behind a 4+ save, which is the whole of what it does on the attack. There is deliberately no two\-handed option: the Depth Guard can buy polearms for Strength and Initiative, and the Blood Guard cannot buy Strength at any price, which keeps it a household guard rather than a hammer._
 
-_So the shield is the only thing this entry really proposes, and the swap between the two builds is free: an Attack against a point of armour and a parry, and the corpus already prices both loadouts at 22. There is deliberately no two-handed option. The Depth Guard can buy polearms at +2 for Strength +1 and a point of Initiative; the Blood Guard cannot buy Strength at any price, which is what keeps it a household guard rather than a hammer._]
+_A Chaos Warrior is 13 points, or 15 with a shield, for Weapon Skill 5, Strength 4, one Attack and heavy armour, and is Core in its own book. Seven points buys two of Movement, a point of Strength, and Vampiric against Will of Chaos._]
+
+#namecost("THE SWORN", "")
+
+The ones who have had it long enough for it to have finished with them. There is no ceremony and no promotion; a knight is simply older one year than he was the last, and at some point the household stops correcting men who assume he was always like that.
+
+- A unit of *Blood Knights* may be upgraded to the *Sworn* at +8 points per model.
+- A unit of *Blood Guard* may be upgraded to the *Sworn* at +5 points per model.
+- The Sworn have Weapon Skill 6, Initiative 5 and 2 Attacks.
+- A unit of the Sworn is a *Special* choice rather than a Core one.
+
+#note[_The upgrade restores precisely what the Core entries give up, which is to say it buys the profile this book already prints for a Blood Knight, and the profile *Zombie Pirates* prints for a Depth Guard. Nothing here is new except the price and the category._
+
+_The price is the Warriors of Chaos ladder. A Chaos Warrior is 13 points and a Chosen is 16 for a point of Weapon Skill, a point of Initiative, an Attack and two special rules — a little under a quarter again. Five points on 22 and eight on 36 are that same premium, charged for the characteristics without the special rules._
+
+_The category is the Empire's. Inner Circle Knights are upgraded at +2 points a model and may not then be taken as Core Units, and this is that clause with the arithmetic changed. It does more work here than it does there, because it is what stops the list upgrading its way out of its own restriction: the Sworn are Special, an army must spend a quarter of its points on Core, and only the vampires and the bats count towards that quarter. Whatever else an Ordo Draconis fields, a quarter of it is knights at Weapon Skill 5 with one Attack. There is no build that avoids it._]
 
 #namecost("BLOOD WYRMS", "")
 
@@ -2480,27 +2529,11 @@ _What each buys with the difference does not net out to nothing, and it does not
 
 _So: ten points over the Drakemaster for a better rider and Vampiric, having given up its ward, its breath and its fire immunity. Below the Terrorgheist at 225 and the Zombie Dragon at 245, above the Coven Throne at 200, and well above the Varghulf at 135, which is this book's other Monstrous Creature (Vampire) and has no rider, no flight and no armour save._
 
-_The book can already put a Vampire on an Abyssal Terror for 125 points or a Zombie Dragon for 245, and either is a ridden Monstrous Creature with the same Terror and the same Stomp. That version brings Leadership, challenges and a hundred points of magic items with it. This is the one to take when the characters are already spent, and the overlap is the fair objection to the entry._]
-
-#namecost("THE FIRST SWORN", "")
-
-The brothers he came back for, who took the blood at the Keep while there was still time to choose. Two centuries later they are the oldest swords in the order, and the only men in it who still call him Aymeric.
-
-- A unit of *Blood Knights* may be upgraded to the *First Sworn* at +2 points per model.
-- The First Sworn have Weapon Skill 7 and Initiative 6.
-- The First Sworn are a Rare choice rather than a Special one.
-
-#note[_An upgrade path rather than an entry, and the Empire's own, transposed. Inner Circle Knights are upgraded one unit per character with Master of Battle, gain +1 Strength and +1 Initiative, cost +2 points per model, and cannot be taken as Core Units. Every part of that shape is reused here, the Core clause included, which is the Empire's wording rather than an invention of this proposal._
-
-_What changed is which characteristics. The Empire buys Strength because an Empire knight needs it. A Blood Knight is already Strength 5 and charges at Strength 7 behind a heavy lance, and the Blood Dragon virtue was never strength. Weapon Skill and Initiative are what two hundred years of practice buy, so the upgrade reads Weapon Skill 7 and Initiative 6._
-
-_Two points per model is the Empire's figure, and it is the honest doubt here, because it is being charged on a 36-point model rather than a twenty-something one and Weapon Skill 7 is above the line where most things in the game stop hitting you on 3s. Three per model is the alternative. Two is printed because this book prices new things off its own worked examples rather than off arithmetic, and the worked example says two._
-
-_The Empire gates its upgrade on a character and then forbids the unit from being Core. This does it in one move instead, by putting the First Sworn in Rare, and the category then does every job the two clauses were doing. Rare is never Core, so the Blood Dragon licence cannot reach them. The duplicate limit on Rare choices is one unit below 3,000 points, so no per-character allowance is needed to keep them singular. And the Rare allowance is a quarter of the army, which the Blood Wyrms and the Elder Wyrm are already competing for: eight First Sworn are 304 points against five Blood Wyrms at 445, and a 2,000-point Legion will not have both. The arithmetic rations them, as it rations everything else here._]
+_In the book as printed this entry would have had an obvious rival, since a Vampire on a Zombie Dragon is a ridden Monstrous Creature with the same Terror and the same Stomp, and brings Leadership, challenges and a hundred points of magic items along with it. An Ordo Draconis does not field the Zombie Dragon, and the Abyssal Terror at 125 points is the only thing left that flies a character. So this is what the list has when the characters are already spent, and it is the only way to put a monster in the air without spending Emmerich._]
 
 #namecost("EMMERICH", "")
 
-Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in a Ordo Draconis, and he is the only model in this book who may be given the Dam.
+Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
 
 #profile(
   (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
@@ -2523,7 +2556,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 #field("VAMPIRIC POWERS", "Blademaster, Dread Knight")
 #field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
 
-- *The Household:* If Emmerich is included in your army, two units of Blood Guard or Blood Knights may be taken as Core choices on his account rather than the one a Blood Dragon Vampire character allows. He licenses characters as any other Blood Dragon does.
+- *The Marshal:* Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.
 - *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
 - *The Arithmetic:* Emmerich may never join a unit with the *Undead* special rule.
 
@@ -2541,7 +2574,11 @@ _Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in
 
 _The price is the part worth arguing with. Adding up the parts — items, powers and rules — comes to 435, and that is not how this book prices anything. Konrad is 215 for a Magical Ward (5+), a Multiple Wounds (2) weapon and Red Fury. Vlad is 450 for a Level 3 with a Magical Ward (4+), a resurrection on a 2+ and 60 points of Vampiric Powers. Mannfred is 565 for a Level 4 who is a Loremaster in two Lores at once, with four Magic Items, before a 245-point Zombie Dragon is added. Strip the mounts out and Walach's half is about 470, Zacharias's about 475 and Vhordrai's about 370. And in every case the signature army rule is free: Walach's Grand Master, Mannfred's Drakenhof Guard and Vhordrai's Fist of Abhorash are all given away with the character._
 
-_So this follows the book. Three hundred and seventy is 215 for a Blood Dragon Lord, 70 for the second level, 5 for the shield, 30 of Vampiric Powers and 50 of Magic Items - the same purchases a Blood Dragon Lord could make from the army list. The two Lores, the Household, the Pass Held and the Arithmetic are the character, and are not charged for, exactly as they are not charged for on Walach. A Blood Dragon Lord who spends his full 100 points on powers and items reaches 390, so Emmerich is twenty points under the most expensive one you could build. That is the fair objection to the entry, and it is the same objection every special character in the book invites._
+_So this follows the book. Three hundred and seventy is 215 for a Blood Dragon Lord, 70 for the second level, 5 for the shield, 30 of Vampiric Powers and 50 of Magic Items - the same purchases a Blood Dragon Lord could make from the army list. The two Lores, the Marshal, the Pass Held and the Arithmetic are the character, and are not charged for, exactly as they are not charged for on Walach. A Blood Dragon Lord who spends his full 100 points on powers and items reaches 390, so Emmerich is twenty points under the most expensive one you could build. That is the fair objection to the entry, and it is the same objection every special character in the book invites._
+
+_The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. Mounted on the Dam his Line of Sight value is 4, and the rulebook adds another six inches at that value, which puts him at twenty\-four and is worth knowing before he is bought._
+
+_What it is worth is set by the same thing the Pass Held answers below. Break tests are not Psychology tests, so Vampiric's Immunity (Psychology) never reaches them, and testing on his Leadership 10 rather than a unit's own 8 is the only general remedy this list has. The Pass Held fixes one unit outright; the Marshal decides how far the lesser version carries._
 
 _The Marshal's Blade is 25 against Bretonnia's own scale, where the Lance of Artois is 15 points for Killing Blow restricted to turns in which the model charges and the Virtuous Lance is 25 for rather more. The restriction here is narrower than it looks, since Martial Honour puts him in a challenge whenever one can be had, and the Heroic part only earns its keep against a character on a Monster, where ordinary Killing Blow would do nothing. Whether a weapon that is inert outside a challenge is characterful or is a trap laid for the player is the question to settle._
 
@@ -2570,7 +2607,6 @@ The Widow of Gisoreux. Sent three times to place herself in a household with no 
 #field("SPECIAL RULES", "Dodge (6+), The Red Thirst, Vampiric")
 
 - *She Never Swore It:* The Oath of the Keep does not apply to Ankhara. In addition, she may refuse a challenge without the usual penalty. She is moved as the rules for Refusing a Challenge require, but the enemy gains no combat result bonus for the refusal, and she keeps the use of her Leadership and of every special rule and Magic Item she carries for that turn.
-- *Not of the Household:* Ankhara does not count towards the limit on characters who are not Blood Dragons. She was never invited.
 - *The Fourth Attempt:* If Emmerich is also in the army, Ankhara is deployed after every other unit of both armies, anywhere on the table more than 12" from an enemy model.
 
 #note[_Two rules written weeks apart collide here, and the collision is the entry. The Oath of the Keep binds every Vampire character in the army to Martial Honour, so that all of them must issue and accept challenges whenever they can. She never swore it, three attempts having failed to place her in the household that did. He cannot refuse and she cannot be made to accept, which is the whole of the relationship expressed in rules that were not written for it. Refusing normally costs the round's attacks, hands the enemy a point of combat result, and denies the refuser the use of her Leadership and of every bonus she carries; hers costs the attacks and nothing else._
@@ -2581,18 +2617,19 @@ _The price follows Sekhar exactly, since he is the book's own worked example of 
 
 _The Warrant is the number to argue with. Lending the General's Leadership at 12" is a Battle Standard's kind of effect and a Battle Standard is 25 points in this book, so it is most of what she is carrying over the base rate. It is also the one item on her that is not hers, which is the point of it: the woman who has three times failed to join the household is the one holding the document that proves the household has a Marshal at all. Cutting it and dropping her to about 135 is the honest alternative, and Sekhar carries no Magic Items whatsoever._
 
-_Not of the Household is worth more here than it reads. This list rations characters who are not Blood Dragons at one per Blood Dragon, so an exemption is a character's worth of allowance, and the fair objection is that a rule justified entirely by fiction has a real price nobody paid. Against that: she is the only model in the book it could ever apply to._
+_She is chosen from the Characters section like anybody else and counts against the ration of one non\-Blood\-Dragon to a Blood Dragon, which is most of what she costs a list. An Ordo Draconis that brings her and one Blood Dragon has spent its allowance and has no Necromancer, so it must find the Necromancy Wizard that The Generals of Undeath asks for in the Blood Dragon himself, or field no Undead at all. The bloodline clause is the one thing she is excepted from, and a permission is not an allowance._
 
-_She may be taken in a Ordo Draconis and in any other army chosen from this book, which is the asymmetry the fiction asks for. He belongs to one place and she belongs nowhere, and Lahmia goes on sending her wherever it likes. The Fourth Attempt is the only thing on her that needs him, and it does nothing at all when he is absent._
+_What the Oath exemption covers is worth setting out, since Martial Honour is not in it. Blood Dragons carry that rule in their own right, so the collision needs no help: he cannot refuse and she cannot be made to accept. What she gives up is the Wound recovered for winning a challenge. What she gains is the right to Flee as a Charge Reaction in an army that has given it up, and to take the Red Thirst from the routed. A Lahmian withdrawing while the household holds is what both orders would have predicted of her._
+
+_She may be taken in an Ordo Draconis and in any other army chosen from this book, which is the asymmetry the fiction asks for. He belongs to one place and she belongs nowhere, and Lahmia goes on sending her wherever it likes. The Fourth Attempt is the only thing on her that needs him, and it does nothing at all when he is absent._
 
 _And the one thing deliberately not copied from Isabella: if Emmerich is slain, Ankhara gains no Hatred, no Frenzy and nothing else whatsoever. Neither of them would call that sentiment. Both would call it correct._]
 
 #namecost("THE OATH OF THE KEEP", "")
 
-The lord holds his lands by his own hand and answers for them in person.
+The lord holds his lands by his own hand and answers for them in person. Every vampire in the order swore it, and every vampire this list permits carries *Martial Honour* already, that being the Blood Dragon rule: they must always issue and accept challenges when possible. The oath adds nothing to it and never had to.
 
-- Every Vampire character in the army has *Martial Honour:* they must always issue and accept challenges when possible. Blood Dragons have this already.
-- A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value. This is in addition to The Red Thirst and applies to a Vampire that does not have it — a Strigoi included.
+- A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value. This is in addition to The Red Thirst.
 - No unit in the army may choose Flee as a Charge Reaction.
 - The Red Thirst may not be claimed for models slain while Fleeing or during a Pursuit. Blood taken from the routed does not count.
 
@@ -2613,7 +2650,7 @@ _The Aura of Dark Majesty is worth its thirty points again, and worth more than 
 
 #namecost("THE ORDO'S ITEMS", "")
 
-Three Magic Items available only to an army chosen as a Ordo Draconis, each following the rules for its own kind of item.
+Four Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
 
@@ -2627,9 +2664,20 @@ Enchanted Item. Ordo Draconis only. One friendly unit with the *Draconid* keywor
 
 Talisman. Ordo Draconis only. Vampire only. While the bearer is fighting in a challenge, they have a Magical Ward (5+).
 
+#namecost("THE BANNER OF THE", "")
+#namecost("FIRST SWORN", "35 points")
+
+Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains +1 Weapon Skill and +1 Initiative.
+
+#note[_The brothers he came back for, who took the blood at the Keep while there was still time to choose. Two centuries later they are the oldest swords in the order and the only men in it who still call him Aymeric, and there are not enough of them left to be an entry in an army list. A standard is the honest shape for them: magic items are unique unless marked with an asterisk, so exactly one unit in any army can be the First Sworn, and no clause is needed to say so._
+
+_Grand Cathay's Revered Banner of the Ancestors is 25 points for +1 Weapon Skill, and Araby's Banner of Holy Fervour is 20 for +1 Movement and +1 Initiative. Thirty\-five for Weapon Skill and Initiative together sits between those and the forty\-point tier the Hell Banner and the Banner of the Barrows occupy. The gating is this book's own, twice over: the Flag of Blood Keep and the Cursed Pennant of Mousillon both name a unit and then ask for a Blood Dragon character behind it._
+
+_And it costs the regiment the other thing a regiment might have carried. A unit has one standard bearer and one Magic Standard, so a company of the Sworn on horse takes either two centuries of practice or the Flag of Blood Keep's ward against missile fire, and being made to choose is the interesting part in an army that cannot shoot back._]
+
 #note[_One item for each of the three keywords this list cares about, each priced against the book rather than against the other two._
 
-_Weather Over the Keep is the Helm of Commandment read the other way round. That item is 25 points to lend the wearer's Weapon Skill to one Undead unit within 12", and in a Ordo Draconis its beneficiaries are the fodder — the list opens a gap exactly where a household item should be. Lending Leadership to one keyword of Leadership 5 chaff is the narrower effect, so 15. It also gives the Chiropter clause something to do at the table rather than only in the list-building: his bats borrow his nerve._
+_Weather Over the Keep is the Helm of Commandment read the other way round. That item is 25 points to lend the wearer's Weapon Skill to one Undead unit within 12", and in an Ordo Draconis its beneficiaries are the fodder — the list opens a gap exactly where a household item should be. Lending Leadership to one keyword of Leadership 5 chaff is the narrower effect, so 15. It also gives the Chiropter clause something to do at the table rather than only in the list-building: his bats borrow his nerve._
 
 _The Signal Fire is the one number here with nothing underneath it, since the book sells no deployment rule at any price. Thirty is reasoning rather than precedent: above the Pendant of the Fell Wind, which is 25 for a permanent point of Movement on a whole unit, because a wing of Blood Wyrms arriving behind the line is worth more than that, and discounted for the two turns it spends off the table._
 
@@ -2639,60 +2687,66 @@ _The Witnessed Oath is gated on the one thing this list guarantees. The Oath of 
 
 
 #chart((
-  ("", "In this book", "In a Ordo Draconis"),
-  ("Blood Guard", "Does not exist", "Special, new entry"),
-  ("A Blood Guard or Blood Knight unit", "Special", "Core, one per Blood Dragon character"),
+  ("", "In this book", "In an Ordo Draconis"),
+  ("Blood Knights", "Rare, one unit below 3,000 points", "Core, at Weapon Skill 5, Initiative 4 and one Attack, for the same 36 points"),
+  ("Blood Guard", "Does not exist", "Core, new entry, 22 points"),
+  ("The Sworn", "Does not exist", "An upgrade to either, carrying this book's printed profile, chosen from Special"),
+  ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new, this list only"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
-  ("Emmerich", "Does not exist", "Special Character, new entry"),
-  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath", "Do not exist", "Magic Items, new, this list only"),
-  ("The First Sworn", "Do not exist", "An upgrade to Blood Knights, chosen from Rare"),
+  ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any army in this book"),
-  ("Vargheists", "Special", "Core"),
-  ("Blood Knights", "Rare, one unit below 3,000 points", "Special, three at 2,000 points"),
-  ("Skeletons, Zombies, Wolves, Spirit Hosts, Crypt Ghouls", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
+  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath", "Do not exist", "Magic Items, new, this list only"),
+  ("Vargheists, the Varghulf", "Special", "Rare"),
+  ("Dire Wolves", "Core", "Special"),
+  ("Skeletons, Skeleton Horsemen, Zombies", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
   ("Fell Bats, Bat Swarms", "Core, and count towards the 25% minimum", "Core, and count towards it still"),
-  ("Skeleton Archers, Skeleton Catapult", "Core, Rare", "Not available"),
+  ("Grave Guard, Black Knights, Terrorgheist", "Special, Special, Rare", "Unchanged"),
+  ("Every Ghoul and every Spirit", "Core, Special and Rare", "Not available"),
+  ("Every Chariot, Shrine and War Machine", "Core, Special and Rare", "Not available"),
+  ("Flesh Golems, Necrofex Colossus, Zombie Dragon", "Special, Rare, Rare", "Not available"),
+  ("Sylvanian Levy, Strigany, Skeleton Archers", "Core", "Not available"),
+  ("Lahmian Handmaidens", "Rare", "Not available"),
+  ("Every Special Character in this book", "Fifteen of them", "Not available"),
+  ("Characters", "Thirteen entries", "Blood Dragons, Wight Lords and Necromancers"),
   ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
-  ("Sylvanian Levy, Strigany", "Core, Human", "Not available"),
-  ("Nightmare, Hellsteed, Abyssal Terror, Zombie Dragon", "Undead mounts", "Not Undead"),
-  ("Everything else", "Core, Special, Rare", "Unchanged"),
+  ("Nightmare, Hellsteed, Abyssal Terror", "Undead mounts", "Not Undead"),
 ))
 
 #field("The argument against", "")
 
-The pricing was never asked to hold up. A Blood Knight is 36 points for Weapon Skill 6, Strength 5, two Attacks and a 2+ armour save, with \-1 To Wound against him and a heavy lance that makes him Strength 7 on the charge. A Black Knight with heavy armour and barding is 26 points for the same save. The Black Knight buys Killing Blow, Magical Attacks and, being Undead, the fact that it cannot be broken at all, so the two are not the same purchase — but ten points is a thin wall, and 36 points is a defensible price for a unit you may take once, not three times.
+The trick at the centre of this list is that its Core entries cost what the book charges for better ones, and somebody is going to point out that paying full price for less is not the same as paying more. They would be right. A Blood Knight at Weapon Skill 5 with one Attack is a worse unit than the Rare entry it is drawn from and costs the same 36 points, which reads as a discount on the category rather than a premium on the model, and the category is the thing under argument. What answers it is the quarter. An Ordo Draconis must spend a quarter of its points on knights that hit on 4s and swing once, in every game, whatever else it buys, and no other army in this book is compelled to buy anything at all.
 
-Twenty-two points for the Blood Guard is the one number here that is not a guess, because the Depth Guard in *Zombie Pirates of the Vampire Coast* is the same profile digit for digit at that price. What that leaves open is the reverse of the usual worry. If the statline is already published at 22 then the objection is not that it is cheap but that it is *not new* — a Vampire Counts entry that offers a published loadout as an option and adds one build of its own, the shield. And there is a sharper version of it: the Depth Guard is a *Rare* choice in its own book, where this is a Special one that a Blood Dragon can pull into Core. Same profile, same price, considerably easier to field. If 22 was set for a unit you take once, it is being asked to hold for a unit you take as your line.
+The prices hold up worse against the rest of the game than against this book. A Chaos Warrior is 13 points, or 15 with a shield, for Weapon Skill 5, Strength 4, one Attack and heavy armour, and it is Core in its own book; the Blood Guard is 22. A Chaos Knight is 28 for those characteristics on a barded steed and it is Special; the Blood Knight is 36 and is Core. Seven and eight points buy a point of Strength, some Movement or a heavy lance, and Vampiric in place of Will of Chaos — which is Fear, Immunity (Psychology) and \-1 To Wound set against Cold\-blooded on Panic tests, and is not a close trade. The honest reading is that this book prices vampires generously to begin with, that pricing new entries off its own worked examples inherits the generosity along with the anchors, and that whoever opens with the Chaos comparison has the better opening.
 
-The two clauses tied to the Blood Dragons are where the list stops being a re-sort and starts being a design. One unit of Blood Guard or Blood Knights as Core per Blood Dragon character, and one non-Blood-Dragon character per Blood Dragon, do a great deal of quiet work between them. Because an army must have a General and no character is allowed without a Blood Dragon to license it, the first character in every Ordo Draconis had to be a Blood Dragon before the list ever said so: the Bloodline was compulsory by arithmetic and is now compulsory by instruction, without anything being banned. And because only the vampires and their bats count towards the quarter, the knights that do have to be paid for in characters, so the size of the line is set by how many Vampires you were willing to buy.
+Bretonnia is the defence and it does not cover everything. Knights of the Realm at 25 points are a Core choice with no cap on duplicates and no obligation to bring a peasant, which settles whether knights belong in the Core of a knightly order; Foot Knights in Special and Hippogryph Knights in Rare settle the rest of the ladder. What it does not settle is the payload. A Knight of the Realm is Weapon Skill 4, Strength 3 and one Attack, with the Lance Formation and the Blessing of the Lady behind him, and this list has no equivalent of either. The structural argument says the category is orthodox. It does not say the two are the same purchase.
 
-The fair objection is that this is a lot of machinery to hang on one keyword, and that it punishes the other four Bloodlines for no reason the fiction insists on. A Necrarch who wants a household of vampire foot has to bring a Blood Dragon to sign for it. That is either the point of an Army of Infamy or an accident of one, depending on how much the name is meant to bind.
+The Sworn leaving Core is load-bearing and it is thin. Everything holding this list down runs through one clause: the upgraded unit is Special, only the vampires and the bats count towards the minimum, and so a quarter of the army is always the lesser profile. Relax the quarter, or let the Sworn stay Core, and the structure comes apart in a sentence.
 
-Four Wounds on a Monstrous Cavalry mount is the number to challenge in the Blood Wyrms. Attacks against the model use the highest Toughness and Wounds from either rider or mount, so a full wing is twenty-four Wounds at Toughness 4 behind a 3+ save, flying eight inches, causing Terror by construction, and striking on the charge with three Attacks from the knight and four from the wyrm once Devastating Charge has raised both. The Morbheg Knights anchor says 35 points for three Wounds and a considerably worse rider, and the High Elf Drakemaster says 200 for one rider on one drake. Eighty-five answers the second and looks generous against the first, which is the right way round to be wrong. What makes it safe either way is the arithmetic rather than the number. Both the Rare allowance and the ceiling on any single unit are a quarter of the army, so at 2,000 points five Blood Wyrms with command are 445 and legal, six are 530 and are not, and a full wing has to wait for a 2,120-point game.
+Twenty-one entries is a great deal to take away, and not all of it is theme. The ghouls, the ghosts and the sorcery-engines each have an argument behind them. The rest is narrowing for its own sake, and a Legion that could still field Crypt Horrors would play differently without playing worse.
 
-The Elder Wyrm has a fair objection against it that the entry itself admits: the book can already put a Vampire on an Abyssal Terror for 125 or a Zombie Dragon for 245, and both are ridden Monstrous Creatures with the same Terror and the same Stomp. What the entry adds is the version without a character in it, for an army whose characters are already spent. The quarter keeps it honest: at 2,000 points the Rare allowance buys either five Blood Wyrms at 445, or an Elder Wyrm and three of them at 485, and in both cases nothing else Rare at all.
+Barring every special character in the book is the same objection at its sharpest. The order's lord was made by Walach Harkon, and this list cannot field Walach Harkon. The fiction supports it, since Sylvania has never called him back and the other Bloodlines have their own plans for him, but a clause that removes fifteen entries on the strength of a story is spending real options to buy consistency. In fairness, Walach's own printed rule moves Blood Knights out of Rare, and would have had nothing to do here in any case.
 
 Dread, Not Slaughter is the rule most likely to lose the Legion a game it deserved to win. An army that breaks everything in front of it and destroys almost none of it can hold every foot of ground and still be behind on victory points, because a broken unit that rallies is a unit still on the table and still worth what it cost. Against an opponent who is content to feed units in, break off and come back, the list has no way to finish anything except by pushing it off the board edge. Whether that is a flaw or the whole character of the thing depends on what the game is being scored on, and it is worth saying that a scenario with objectives flatters this list and a straight killing match does not.
 
-Nothing in the list answers that, and the omission is deliberate. Restoring the kill means restoring the chase in one form or another, and the chase is the thing the rule gives up; an exemption sold to one regiment, or a denial of the enemy's rally laid over the whole table, buys the victory points back by contradicting the rule the list is built on. A Legion takes ground and does not collect bodies. Against an opponent content to break off and come back it will sometimes hold the field and lose on points, and that is the price of the rule rather than an oversight in it.
+Nothing in the list answers that, and the omission is deliberate. Restoring the kill means restoring the chase in one form or another, and the chase is the thing the rule gives up. A Legion takes ground and does not collect bodies.
 
-The Core-minimum clause is the cleanest thing here, and the keywords in it are doing exact work. Crypt Ghouls are Infantry (Ghoul) at 7 points with Toughness 4, two Attacks, Fear and Poisoned Attacks: not Undead, not Human, and a better line unit than the Blood Guard at under a third of the price. Written against the *Undead* special rule instead of against the keyword, the clause would let two ghoul blocks and a flight of bats clear the 500 points a 2,000-point army owes with no vampire in the army at all, and the clause the whole list turns on would buy nothing.
+The Core-minimum clause is the cleanest thing here, and the keywords in it are doing exact work. Written against the *Undead* special rule instead of against *Vampire* and *Chiropter*, it would have let anything still living clear the quarter. As written it leaves one narrow dodge open, because Core carries no cap on duplicates: five units of nine Fell Bats are 540 points and clear the quarter at 2,000 with a single vampire in the army. The difference is that it does not pay. Fell Bats are Leadership 5 at Toughness 3 with no armour save and no Undead rule, so they break and they panic where a knight would have held, and an all-bat Core is legal and bad, which is a different thing from legal and better.
 
-The *Chiropter* keyword is in there on purpose, the bats being the only thing in Core that belongs to the lord rather than to the graveyard, and it reopens a narrower version of the same dodge. Core carries no cap on duplicates, so five units of nine Fell Bats are 540 points and clear the quarter at 2,000 with one vampire in the army. The difference from the ghouls is that it does not pay: Fell Bats are Leadership 5 at Toughness 3 with no armour save and no Undead rule, so they break and panic, where a 7-point ghoul with Poisoned Attacks was a better line unit than the Blood Guard. An all-bat Core is legal and bad, which is a different thing from legal and better. Either way the minimum can only be met from Vargheists, Blood Guard, Blood Knights and the bats, so the shape of a Legion's Core is prescribed even though nothing is banned, and the first Blood Dragon's licence is doing real work at every points value rather than offering an option.
+Emmerich is open to the objection every special character is. He is a better Blood Dragon Lord than the army list can build for less money — 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, three rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+). The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on the Dam is a forty-eight-inch circle, which is the full depth of a standard table — arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
 
-Emmerich is open to the objection every special character is, and to one that is his own. The first is that he is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, two army rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+) and hands the whole army its Blood Knights. The second is sharper. The Household grants two Core units where a bought Blood Dragon grants one, so he is worth roughly a second character to a list whose Core is rationed by how many Vampires it was willing to buy - and that is the single clause this whole Army of Infamy turns on. A discount on the list's binding constraint is not the same kind of gift as a re-roll.
-
-Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well, and the sharper one that Not of the Household hands this list a character's worth of allowance for reasons that are entirely fictional. The Warrant is the other place to push: an effect of that kind is a Battle Standard's work and a Battle Standard is 25 points, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190.
+Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well. The Warrant is the other place to push: lending the General's Leadership at 12" is a Battle Standard's work and a Battle Standard is 25 points in this book, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190. Cutting it and dropping her to about 135 is the honest alternative.
 
 The Dam has the opposite problem. At 275 she is priced honestly against the Zombie Dragon and she still cannot be fielded below 2,580 points, which means the largest creature this project has written will almost never be seen. Either that is what a centrepiece is, or the ladder should have stopped at a full-grown dragon and left her a wyrm.
 
-And taking the missile weapons out is a real loss of options for very little in return. Seven entries lose a line each and one Core entry and one war machine disappear, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
+And taking the missile weapons out is a real loss of options for very little in return. A handful of entries lose a line each, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
-The three items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges — which is either exactly the point of it or a quiet twenty-five-point upgrade for every character in the list. None of the three has a game behind it.
+The four items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges. And the Banner of the First Sworn puts Weapon Skill 7 and Initiative 6 on a regiment for 35 points, which is above the line where most things in the game stop hitting it on 3s; the Cathay and Araby anchors say the price is right, and neither of them was pricing it onto a 44-point model.
+
+None of the four has a game behind it.
 
 #field("What it would take", "")
 
-A chapter in this book, and three new unit entries. One requirement, two category moves, one Core allowance, three composition restrictions, one equipment restriction, one clause about mounts, two list rules, one upgrade path, three Magic Items, and nothing in any other book.
+A chapter in this book, and three new unit entries with an upgrade path shared between two of them. One requirement, four category moves, one reduced profile sold at the printed price, four keyword restrictions, three named exclusions, one equipment restriction, one clause about mounts, one about which characters exist, one about special characters, two list rules, four Magic Items, and nothing in any other book.
 
 The rulebook has no notion of an Army of Infamy, so the first one has to introduce the idea as well as the list. That is one paragraph in Choosing Your Army: a book may offer alternative compositions, and both players should know which is in use before deployment. The one rule that needs a home there rather than here is the Core-minimum clause, since Choosing Your Army is where the quarter is set.
 
@@ -2700,8 +2754,8 @@ If it holds up, the same shape is waiting twice more in this book. Strigany may 
 
 #field("For example", "")
 
-*A Ordo Draconis at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two units as Core and two characters who are not Blood Dragons, neither of which this list takes. Eighteen Blood Guard at 396 and one of the two Blood Knight units at 288 come across as Core, and six Vargheists at 300 join them there: 984 of qualifying Core against a 500-point minimum. The second Blood Knight unit at 288 and a Varghulf at 135 make 423 of the Special allowance. That is 1,722; thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights, and the last 203 go on champions, standards, the Flag of Blood Keep, and the 35 that make the Lord a Level 1 Wizard — because thirty Zombies are an Undead unit, and The Generals of Undeath wants a Necromancer for them. That is what the fodder actually costs.
+*An Ordo Draconis at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two characters who are not Blood Dragons; this one takes a Wight Lord at 100 and leaves the second slot unspent. Twenty-one Blood Guard at 462 and ten Blood Knights at 360 are the Core — 822 of qualifying Core against a 500-point minimum, and neither unit near the ceiling that stops any single unit costing more than a quarter of the army. An Elder Wyrm at 210 and a Varghulf at 135 take 345 of the Rare allowance. That is 1,582. Thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights, and the last 343 go on command groups, the Flag of Blood Keep, powers and items across the three characters, and the 35 that make the Lord a Level 1 Wizard — because thirty Zombies are an Undead unit, and The Generals of Undeath wants a Necromancer for them. The list rations characters one to a Blood Dragon, so that Necromancer is either the Lord himself or the slot the Wight Lord is standing in. The Lord is cheaper.
 
-*Or trade the ground for the air.* Eighteen Blood Guard at 396 come across as Core and three Vargheists at 150 join them, which is 546 and clears the quarter with nothing to spare. Both Blood Knight units stay Special at 576, well inside the half. Five Blood Wyrms with a full command take 445 of the Rare allowance, which is as many as 2,000 points will carry. With the same Lord and Kastellan at 315 that is 1,882, and the 118 left over buys command and a Magic Standard but no Varghulf and no Elder Wyrm, while the Rare ceiling forbids a sixth wyrm whatever is left in the purse. It takes no Undead at all, so it owes no Necromancer either, and one of its two Core allowances goes unspent — which is what it costs to put a wing in the air.
+*Or buy the years instead of the numbers.* Twenty-one Blood Guard at 462 and six Fell Bats at 72 are the Core, which is 534 and clears the quarter with thirty-four points in hand. Ten more Blood Guard upgraded to the Sworn at 270 leave Core to do it and sit in Special, where they are the only models in the army at Weapon Skill 6 with two Attacks. Five Blood Wyrms at 425 take the Rare allowance, and a sixth at 510 would breach that allowance and the ceiling on any single unit in the same instant, both of them being the same quarter. With the Lord and the Kastellan at 315 that is 1,544, and the 456 left over buys command groups, the Banner of the First Sworn, and the full hundred points of powers and items each vampire can carry. It fields no Undead at all, so it owes no Necromancer. It also has no second line, so when the Sworn break there is nothing behind them.
 
-*What is different at the table.* The legion may never Flee and may never pursue: it breaks a unit, lets it go, reforms and holds what it is standing on. Anything in base contact with one of its Vampire characters is two points of Leadership down while it is there. None of it is Unbreakable, so when it does lose a fight it loses the whole unit. The characters must duel whenever a duel is offered and are healed for winning. Nothing shoots. The dead are still there, still cost two and a half points, and no longer excuse the army from buying vampires.
+*What is different at the table.* The legion may never Flee and may never pursue: it breaks a unit, lets it go, reforms and holds what it is standing on. Anything in base contact with one of its Vampire characters is two points of Leadership down while it is there. None of it is Unbreakable, so when it does lose a fight it loses the whole unit. The characters must duel whenever a duel is offered and are healed for winning. Nothing shoots. A quarter of the army is knights at Weapon Skill 5 with a single Attack, and no build avoids it. The dead are still there, still cost two and a half points, and no longer excuse the army from buying vampires.
