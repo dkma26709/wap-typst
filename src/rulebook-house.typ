@@ -2355,7 +2355,7 @@ riders if only the mount has Stupidity."), ("4-6", "Clear-headed: The model acts
 
 When charging, fleeing and pursuing, units entirely made of models with the Swiftstride special rule may re-roll 1's when determining the result of the distance they move.
 
-== TERROR
+=== TERROR
 
 Models that cause Terror also cause Fear. In addition, the following rules apply. Fear-causing models or models with Immunity (Fear) treat Terror-causing monsters as causing Fear, rather than Terror – this is an exception to the rule that makes Fear-causing creatures immune to Fear. Terror-causing models have the Immunity (Fear/Terror) special rule.
 
