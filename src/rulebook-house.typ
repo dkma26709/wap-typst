@@ -4003,6 +4003,14 @@ Unless both players agree to show their army lists to each other before the batt
 
 Always make sure to make it clear to your opponent what unit is which, and what equipment they have if necessary. Note down what additional Magic Items and equipment each unit might have, along with chosen spells other upgrades and where any hidden units might be deployed so this is not forgotten during the battle.
 
+#namecost("ARMIES OF INFAMY", "")
+
+*Some books offer a second way of building a force from them, called an Army of Infamy.*
+
+An Army of Infamy is chosen in place of the book's ordinary list rather than alongside it. It may move entries from one category to another, refuse you entries the book otherwise allows, add entries of its own, and lay one or more rules over the whole army. It may also change which units count towards the minimum an army must spend on Core units. Everything in the book that the Army of Infamy does not change applies as it is written.
+
+Both players should know which composition each army is using before deployment.
+
 #namecost("THE ARMY GENERAL", "")
 
 *An army must always include at least one character to be its Army General.*
@@ -5485,3 +5493,19 @@ A Level 1 Wizard with a single spell is entirely predictable: the opponent knows
 #field("Now", "")
 
 Each Wizard may choose a number of spells equal to their level plus one. Any Signature spell they know is in addition to these, as described below.
+
+#namecost("Armies of Infamy", "CHOOSING YOUR ARMY")
+
+A book that wants to offer a second composition of itself has nowhere to say so, and no words to say it in. Moving an entry between categories, withholding one, adding one, laying a rule over the whole army: the rules already understand every part of what such a list does, and what was missing was permission to do all of it at once. One clause could not have been written in an army book at all. The minimum an army must spend on Core is set here, so only here can a list change what counts towards it.
+
+#field("Was", "")
+
+#note[Nothing. The rulebook had no notion of an alternative composition, so a book offering one had nowhere to define what it was.]
+
+#field("Now", "")
+
+*Some books offer a second way of building a force from them, called an Army of Infamy.*
+
+An Army of Infamy is chosen in place of the book's ordinary list rather than alongside it. It may move entries from one category to another, refuse you entries the book otherwise allows, add entries of its own, and lay one or more rules over the whole army. It may also change which units count towards the minimum an army must spend on Core units. Everything in the book that the Army of Infamy does not change applies as it is written.
+
+Both players should know which composition each army is using before deployment.
