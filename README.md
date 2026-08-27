@@ -4,8 +4,8 @@ Re-typesets the [Warhammer Armies Project](https://www.warhammerarmiesproject.co
 army books from their published PDFs into [Typst](https://typst.app), and
 publishes the result to GitHub Pages.
 
-**30 army books, one of our own, and the core rulebook · 1,780 unit entries ·
-2,179 typeset pages**, plus ten amended editions of them.
+**30 army books, two of our own, and the core rulebook · 1,818 unit entries ·
+2,243 typeset pages**, plus nine amended editions of them.
 
 The point is the *book*: proper stat tables, styled headings, real paragraph
 structure — not a scrape. Every book was imported with **no missing words at
@@ -117,14 +117,18 @@ to the changelog chapter.
 
 Because a proposal book is a fork that adds only that chapter, the promise its
 colophon makes — that the rules text is untouched — is checkable, and is checked,
-by the second command above. It currently reports nought words differing for both
-proposal books. The fork is of the house edition where the book has one, and of
-the book itself where it does not, so the parent passed to `check_editions.py` is
-whichever it was forked from:
+by the second command above, which reports nought words differing. The fork is of
+the house edition where the book has one, and of the book itself where it does
+not, so the parent passed to `check_editions.py` is whichever it was forked from,
+and `--chapter PROPOSALS` names the chapter to stop the comparison at.
 
-```bash
-python extract/check_editions.py out/vampire-counts-proposal.pdf     out/vampire-counts.pdf --chapter PROPOSALS --identical-body
-```
+One proposal has been agreed and is gone from here. *An Army of Infamy: the Ordo
+Draconis* was the only entry in the Vampire Counts proposal book; it is now
+`src/ordo-draconis.typ`, a book of its own on the House Rules shelf, and both the
+proposal book and its record under `editions/proposal/` were deleted when it
+landed. That is what agreeing a proposal looks like — it does not usually mean a
+new book, but this one changed too much of a list to be written as amendments to
+it.
 
 ## How the extraction works
 

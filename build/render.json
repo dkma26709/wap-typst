@@ -104,6 +104,10 @@
   "cover": "covers/rulebook.png"
  },
  {
+  "id": "ordo-draconis",
+  "cover": null
+ },
+ {
   "id": "tomb-kings",
   "cover": "covers/tomb-kings.png"
  },
@@ -161,10 +165,6 @@
  },
  {
   "id": "skaven-house",
-  "cover": ""
- },
- {
-  "id": "vampire-counts-proposal",
   "cover": ""
  }
 ]
