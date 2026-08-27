@@ -1,0 +1,55 @@
+{
+  "_note": "Targets CALIBRATED from prose already accepted into the books, not invented. Regenerate a register with: python extract/prose_gate.py --calibrate <file> --from A --to B. Ranges carry deliberate tolerance around the measured figure; a value outside one is a prompt to look, never an automatic fault.",
+
+  "lore": {
+    "note": "calibrated from vampire-counts-proposal.typ 2178-2330 (The order, The field, The Lahmian) - 55 paragraphs, 14-158 words, ratio 11.3, no em-dashes",
+    "targets": {
+      "word_median": [50, 95],
+      "word_min": [0, 30],
+      "word_ratio": [6.0, 99.0],
+      "sent_median": [11, 19],
+      "em_dash_per_1000": [0.0, 0.5]
+    }
+  },
+
+  "rules": {
+    "note": "calibrated from vampire-counts.typ 40-120 (army special rules) - 18 paragraphs, 24-93 words, ratio 3.9, sentence median 18.5",
+    "targets": {
+      "word_median": [32, 68],
+      "word_max": [0, 110],
+      "word_ratio": [2.0, 6.5],
+      "sent_median": [14, 23],
+      "em_dash_per_1000": [0.0, 0.5]
+    }
+  },
+
+  "argument": {
+    "note": "discursive prose in a rules book - the notes and argument-against. No accepted sample predates this chapter, so targets sit between lore and rules and are the least evidenced of the three. Tighten once a section survives review unedited.",
+    "targets": {
+      "word_median": [55, 100],
+      "word_min": [0, 35],
+      "word_ratio": [4.0, 99.0],
+      "sent_median": [14, 21],
+      "em_dash_per_1000": [0.0, 0.6]
+    }
+  },
+
+  "review": {
+    "note": "PR review comments. Phrase bank and habits live in memory feedback/_global/review/review_voice.md; these are shape targets only. Short, one point per paragraph, a fix sketch alongside the problem.",
+    "targets": {
+      "word_median": [25, 70],
+      "word_max": [0, 130],
+      "sent_median": [12, 22],
+      "em_dash_per_1000": [0.0, 1.0]
+    }
+  },
+
+  "commit": {
+    "note": "commit messages and journal entries. Body wrapped, concrete, no meta-summary; the subject line is not measured here.",
+    "targets": {
+      "word_median": [30, 80],
+      "sent_median": [12, 24],
+      "em_dash_per_1000": [0.0, 1.0]
+    }
+  }
+}
