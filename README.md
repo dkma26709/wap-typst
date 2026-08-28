@@ -4,8 +4,8 @@ Re-typesets the [Warhammer Armies Project](https://www.warhammerarmiesproject.co
 army books from their published PDFs into [Typst](https://typst.app), and
 publishes the result to GitHub Pages.
 
-**30 army books, two of our own, and the core rulebook · 1,818 unit entries ·
-2,243 typeset pages**, plus nine amended editions of them.
+**30 army books, two of our own, and the core rulebook · 1,813 unit entries ·
+2,238 typeset pages**, plus nine amended editions of them.
 
 The point is the *book*: proper stat tables, styled headings, real paragraph
 structure — not a scrape. Every book was imported with **no missing words at

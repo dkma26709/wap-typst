@@ -278,7 +278,9 @@ _What Was Changed_, at the back of this book, sets the whole of it out beside *V
 
 #namecost("MAGIC ITEMS AND VAMPIRIC POWERS", "")
 
-Both chapters are reproduced from *Vampire Counts* 3.0 entire, and a number of the items and powers in them are gated to a Bloodline or to a unit this list does not field. They are printed rather than pruned, so that nothing is quietly altered by leaving it out. An item you cannot take is an item you cannot take.
+Both chapters are reproduced from *Vampire Counts* 3.0, less the parts of them an Ordo Draconis cannot buy. Every Vampire in this list is a Blood Dragon, so the powers belonging to the other four Bloodlines are gone and the Bloodline headings with them: there is one list of powers and every Vampire may take from it. The Magic Items go the same way. An item gated to another Bloodline is gone, and so is one that asks for a character of another Bloodline behind it. An item gated to a Ghoul, a Spirit or a Cairn Wraith is gone, this book fielding none of the three. And the Asp Bow is gone, since no model in this army may carry a missile weapon.
+
+Where a gate still does work it is still printed. A Wight Lord is not a Blood Dragon and a Necromancer is neither, so an item that names one of the three goes on naming it. What is printed is what can be taken.
 
 = ARMY SPECIAL RULES
 
@@ -348,11 +350,11 @@ The lord holds his lands by his own hand and answers for them in person. Every v
 The point of a vampire is not how many he kills.
 
 - No unit in the army may pursue a fleeing enemy. A unit that wins a close combat restrains without taking the Leadership test to do so, and may reform as though it had passed it. This overrides any rule that would compel a pursuit, Frenzy included. Overrunning is untouched: an enemy that has been wiped out has not fled.
-- Enemy units in base contact with one or more Vampire characters suffer a \-2 penalty to their Leadership. This penalty is cumulative with any other modifiers, the Aura of Dark Majesty included.
+- Enemy units in base contact with one or more Vampire characters suffer a \-2 penalty to their Leadership. This penalty is cumulative with any other modifiers, the Hell Banner included.
 
 #note[_What is given up is the killing. A pursuit that catches its quarry inflicts a Wound with no saves of any kind for every point of the pursuer's Unit Strength, which is where a Warhammer army does most of its destroying; a Legion forgoes all of it and takes the ground instead. Some of it comes back as certainty. Restraining normally requires a passed Leadership test and a failed one forces the pursuit, so a unit that never pursues is never dragged into a fresh combat or out of the line it was holding, and it reforms every time._
 
-_The Aura of Dark Majesty is worth its thirty points again, and worth more than it was: within 6" the two stack, and in base contact they stack to \-3. Note also that this follows the power rather than the Hell Banner, which does much the same at 40 points on Line of Sight and has no effect on models with Immunity (Psychology). The book is inconsistent about that exemption; a Leadership penalty reaches Break tests, which are not Psychology tests, so the power's reading is the one that makes sense of it._]
+_Nothing in this list can buy the Aura of Dark Majesty, that power being von Carstein's, so the stacking to watch is with the Hell Banner. It does much the same work at 40 points, on Line of Sight rather than in base contact, and the two together put an enemy at \-3 for as long as it stands in front of a Vampire character. The banner has no effect on models with Immunity (Psychology) and this rule has no such exemption, which is where the two part company. The book is inconsistent about it; a Leadership penalty reaches Break tests, which are not Psychology tests, so the reading without the exemption is the one that makes sense. Spiritual Vortex is a third \-1, within 6" of its template, for a Level 4 caster who has something better to do._]
 ]
 
 = THE LORE OF NECROMANCY
@@ -431,19 +433,11 @@ _Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit
 
 = VAMPIRIC POWERS
 
-*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish. Each Vampire may only take powers from their own Bloodline (unless specified).*
+*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*
 
 #namecost("RED FURY", "30 points")
 
-Blood Dragon or Strigoi only. For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.
-
-#namecost("UNHOLY REGENERATION", "30 points")
-
-Necrarch or Strigoi only. The model gains the Regeneration (4+) special rule.
-
-#namecost("CURSE OF THE REVENANT", "20 points")
-
-Necrarch or Strigoi only. The model has a 3+ invulnerable save when they have a single Wound remaining (if the model suffers multiple Wounds in a single turn, it is reduced to 1 Wound and may then attempt to take this invulnerable save).
+For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.
 
 #namecost("FEAR INCARNATE", "20 points")
 
@@ -453,94 +447,6 @@ All enemy units in base contact with the model must pass a Leadership test at th
 
 Model on foot only. Thе model gains the Fly (10) special rule and may join units of Fell Bats.
 
-#namecost("SUPERNATURAL HORROR", "15 points")
-
-Von Carstein, Necrarch or Strigoi only. The model gains the Terror special rule.
-
-#namecost("TRANSFIX", "15 points")
-
-Von Carstein or Lahmian only. At the beginning of the Close Combat phase, select one model in base contact with the Vampire. The victim must pass a Leadership test or get reduced to Weapon Skill 1 for the duration of this round of Close Combat phase and all attacks directed against the victim will hit automatically.
-
-#namecost("HUNTER IN THE DARK", "10 points")
-
-Lahmian or Strigoi on foot only. The model has the Scouts special rule.
-
-#namecost("UNBENDING WILLPOWER", "10 points")
-
-Von Carstein or Necrarch only. Units of Undead within 6" of one or more models with this power suffer one less Wound than they normally would due to the Unstable special rule or following the death of the army's General. Note that this is not cumulative with the Battle Standard.
-
-#namecost("HONOUR OR DEATH", "5 points")
-
-Von Carstein or Blood Dragon only. After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.
-
-#entry("VON CARSTEIN")
-#namecost("AURA OF DARK MAJESTY", "30 points")
-
-All enemy units within 6" of one or more models with the Aura of Dark Majesty suffer a \-1 penalty to their Leadership. This penalty is cumulative with any other modifiers.
-
-#namecost("SPECTRAL ATTENDANTS", "25 points")
-
-All enemy Wizards within 18" of the model must re- roll successful channelling results.
-
-#namecost("WALKING DEATH", "20 points")
-
-Any unit in base contact with the model must re-roll successful Break tests.
-
-#namecost("CALL WINDS", "10 points")
-
-Bound Spell (Level 3, cast on 9+). _Call Winds_ is a *hex aura* spell with a range of 24". Until the start of caster's next Magic phase, all enemy missile attacks fired from within or at a target within range suffer \-1 To Hit.
-
-#namecost("EARTH BIND", "10 points")
-
-The model and any unit they join gain the Magic Resistance (1) special rule.
-
-#namecost("SUMMON CREATURES", "")
-#namecost("OF THE NIGHT", "10 points")
-
-This Vampire can use the _Invocation of Nehek_ spell to heal and increase units of Dire Wolves, Bat Swarms and Fell Bats beyond their starting size, even though they are not all Undead.
-
-#namecost("WOLF FORM", "10 points")
-
-Model on foot only. The model gains Movement 9 and the Swiftstride special rule. In addition, they may join units of Dire Wolves.
-
-#namecost("WOLF LORD", "10 points")
-
-The model allows all friendly units of Dire Wolves within 24" of it to March.
-
-#entry("NECRARCH")
-#namecost("WELLSPRING OF DARK MAGIC", "50 points")
-
-The model and all friendly Wizards within 12" gain +1 to cast spells from the Lore of Necromancy.
-
-#namecost("SPECTRAL FORM", "40 points")
-
-Model on foot only. The model gains the Ethereal special rule. However, it may not join non-Ethereal units or take any magic items.
-
-#namecost("MASTERY OVER FLESH", "25 points")
-
-When casting the _Invocation of Nehek, Vanhel's Danse Macabre_, _Hellish Vigour_ or _Raise Dead_ spells from the Lore of Necromancy, the model may re-roll all the initial casting dice (unless they have rolled a Miscast).
-
-#namecost("UNHOLY CYNOSURE", "25 points")
-
-Once per Magic phase, the model can re-roll one of the dice rolled to cast a spell. This can be used to negate a Miscast result or could cause an Ultimate Power result.
-
-#namecost("FORBIDDEN LORE", "20 points")
-
-The model has the Loremaster special rule.
-
-#namecost("DARK ACOLYTE", "20 points")
-
-The model adds +1 to the number of Wounds healed (Core Units regain +D3 Wounds) whenever it successfully casts _Invocation of Nehek_.
-
-#namecost("NEHEKHARA'S NOBLE BLOOD", "20 points")
-
-The model adds +6" to the range of all their spells (excluding auras).
-
-#namecost("MASTER OF THE BLACK ARTS", "15 points")
-
-A player using a model with the Master of the Black Arts power can re-roll the result when it is determining the strength of the Winds of Magic in each of your Magic phases.
-
-#entry("BLOOD DRAGON")
 #namecost("DOOMRIDER", "20 points")
 
 Cavalry only. The model and any Cavalry unit it is with can re-roll failed charge distances.
@@ -577,81 +483,9 @@ The model gains the Parry (6+) special rule, even while mounted.
 
 In any turn in which the model makes a successful charge, they have the Ignores Armour saves special rule.
 
-#entry("STRIGOI")
-#namecost("MASSIVE MONSTROSITY", "35 points")
+#namecost("HONOUR OR DEATH", "5 points")
 
-Model on foot only. The model gains +2 Wounds and becomes Monstrous Infantry. It should be placed on a 40x40mm base.
-
-#namecost("LOATHSOME STENCH", "20 points")
-
-All enemy units in base contact with the model suffer \-1 to their Weapon Skill.
-
-#namecost("IRON SINEWS", "15 points")
-
-The model may re-roll failed To Wound roll.
-
-#namecost("TERRIBLE BLOWS", "15 points")
-
-The model gains the Multiple Wounds (D3) special rule.
-
-#namecost("GHOULKIN", "10 points")
-
-One unit of Crypt Ghouls may be deployed as Scouts.
-
-#namecost("INFINITE HATRED", "10 points")
-
-The model's Hatred special rule applies in every close combat round, not just the first.
-
-#namecost("MONSTROUS MASS", "10 points")
-
-The model gains the Immunity (Killing Blow, Multiple Wounds) special rule.
-
-#namecost("RAVENOUS", "10 points")
-
-The model gains the Frenzy special rule.
-
-#namecost("SUMMON GHOULS", "10 points")
-
-The model allows one unit of Crypt Ghouls to deploy as Ambushers.
-
-#entry("LAHMIAN")
-#namecost("SEDUCTION", "25 points")
-
-At the beginning of the Close Combat round, after challenges have been issued and/or accepted, select a model in base contact with the Vampire. The selected model must take a Leadership test with a \-1 modifier. If the test is failed, the victim is controlled by the Vampire player in that Close Combat phase.
-
-The model will direct its attacks against his own side. The model cannot be attacked by either side in that Close Combat phase but, after combat resolution has been worked out, it reverts immediately to the original player's control and can therefore use his Leadership for any Break tests and can be broken and pursued as normal.
-
-If the model has no friendly models in base contact, it is unable to attack in that Close Combat phase and all attacks directed against the victim will hit automatically.
-
-If the Vampire was in a challenge with a model that it takes control of, the challenge ends and both models may attack other targets as normal.
-
-#namecost("LIGHTNING REFLEXES", "25 points")
-
-Enemies must re-roll successful rolls To Hit in close combat against this model.
-
-#namecost("NIGHT CREATURE", "20 points")
-
-Model on foot only. If this model is a lone character, it cannot be targeted by enemy missile attacks or spells unless it is within 12".
-
-#namecost("INNOCENCE LOST", "20 points")
-
-The model has the Always Strikes First special rule.
-
-#namecost("DOMINATION", "15 points")
-
-All enemy units in base contact with this model must re-roll successful Leadership tests (except Break tests).
-
-#namecost("QUICKBLOOD", "15 points")
-
-The model gains the Dodge (5+) special rule.
-
-#namecost("BEGUILE", "10 points")
-
-At the beginning of the Close Combat round, all units in base contact with the model must take a Leadership test with a \-3 modifier. If the test is failed, the Vampire can only be Hit on 6's this turn.
-
-#namecost("SWIFTNESS", "10 points")
-
-Model on foot only. The model gains Movement 10 and the Swiftstride special rule.
+After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.
 
 = MAGIC ITEMS
 
@@ -674,21 +508,9 @@ The wielder of this weapon gains +1 Strength and Attacks at the end of each clos
 
 Heavy lance. All attacks with this weapon automatically Hit.
 
-#namecost("ASP BOW", "25 points")
-
-Bow. All shots from this item are resolved at Strength 4 with the Poisoned Attacks and Sniper special rules.
-
 #namecost("SLITTER", "25 points")
 
 Additional hand weapon. This adds one special attack after the wielder has made their normal attacks. Roll a D3; if the result is higher than the remaining number of Wounds of the target, the target is instantly slain with no saves allowed.
-
-#namecost("KEENING BONE", "20 points")
-
-Strigoi only. Throwing weapon. All shots with this weapon automatically Hit. Characters may take this item despite not normally being allowed to take throwing weapons.
-
-#namecost("REAPER OF SORROWS", "15 points")
-
-Cairn Wraith only. Great weapon. All attacks with this weapon automatically Wound with no saves allowed.
 
 #namecost("SWORD OF KINGS", "15 points")
 
@@ -703,10 +525,6 @@ Heavy lance. This item gives the wielder the Devastating Charge and Flaming Atta
 For every natural 6 rolled To Hit with this weapon, that Attack has the Ignores Armour Saves and Multiple Wounds (D3) special rules.
 
 #entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF NIGHT", "50 points")
-
-Von Carstein model on foot only. Heavy armour. This item causes any missile attacks targeted at the wearer or any unit they are with to suffer \-1 To Hit.
-
 #namecost("THE FLAYED HAUBERK", "45 points")
 
 Model on foot only. Heavy armour. This item gives the wearer a 2+ armour save that cannot be improved by any means.
@@ -761,31 +579,15 @@ All friendly units within 12" of the bearer of this item gain the Magic Resistan
 
 Vampires only. One use only. The Gem of Blood activates when the bearer suffers their first Wound in close combat (before saves). Roll a D6; on a roll of a 1 the wearer suffers the Wound as normal, and an additional Wound with no saves allowed. On a 2+ the Wound is saved, and is rebounded onto the model that caused it with no saves allowed.
 
-#namecost("SPLINTERVANE BROACH", "25 points")
-
-Strigoi only. All enemy Wizards within 18" of the bearer of this item suffer \-1 to casting penalty.
-
 #namecost("WRISTBANDS OF BLACK GOLD", "25 points")
 
 The Wristbands of Black Gold gives the wearer a Magical Ward (3+) against all missile attacks.
-
-#namecost("CHIROPTERAN CLOAK", "15 points")
-
-Von Carstein only. If a model attacking the wearer of this item rolls a natural 1 To Hit in close combat, they suffer a Strength 4 Hit.
-
-#namecost("CLOAK OF THE WAXING MOON", "15 points")
-
-Cairn Wraith only. The wearer of this item can only be Hit on To Hit rolls of natural 6's.
 
 #entry("ARCANE ITEMS")
 #columns(2)[
 #namecost("THE DERMAL ROBE", "70 points")
 
 Relic. The wearer gains a +1 casting and dispel bonus. In addition, they gain +1 to their channelling rolls.
-
-#namecost("STAFF OF RAUKHAMON", "45 points")
-
-Necrarch only. Staff. Bound Spell. This staff contains the _Hellish Vigour_ spell from the Lore of Necromancy. Roll a D6 each time the Staff is used. On a roll of 1, the Staff is temporarily exhausted and cannot cast this bound spell for the rest of the battle. In addition, all enemy units within 6" of the Staff\`s bearer suffer a \-1 penalty on their rolls To Hit in close combat.
 
 #namecost("SCEPTRE DE NOIROT", "40 points")
 
@@ -794,10 +596,6 @@ Staff. The bearer of this item may re-roll one dice of their choice when determi
 #namecost("BOOK OF ARKHAN", "35 points")
 
 Relic. Bound Spell. This item casts the _Vanhel's Danse Macabre_ spell from the Lore of Necromancy.
-
-#namecost("CARRION WAND", "35 points")
-
-Strigoi only. Staff. The wielder counts their Wizard level as being 1 higher than normal.
 
 #namecost("THE CURSED BOOK", "35 points")
 
@@ -825,19 +623,9 @@ Relic. The bearer of this item gains a +2 casting bonus when using the Lore of N
 
 Charm. One use only. This item can be used during any of your Magic phases. Once used, it allows the bearer to cast one of their spells automatically without using any power dice, at its minimum casting value.
 
-#namecost("AMULET OF SCREAMS", "20 points")
-
-Lahmian only. Relic. Roll a D6 every time an enemy Wizard within 18" successfully casts a spell. On a 1, that Wizard suffer 1 Wound which Ignores Armour saves.
-
-#namecost("CRIMSON GEM OF LAHMIA", "20 points")
-
-Lahmian only. Once per magic phase, while casting spells, the bearer of the Crimson Gem of Lahmia can choose to take a Toughness test. If passed, they may re- roll a single power dice of their choice. If failed, they suffer a Wound with no saves allowed.
-
 #namecost("MIDNIGHT TOME", "20 points")
 
 Charm. One use only. This item can be used when the wearer successfully casts a spell with a casting value of 10 or less. When used, the opponent cannot attempt to dispel it.
-
-#runin[MORBHEG]'#runin[S CLAW 20 points] Von Carstein only. Relic. The wearer of this item gains +2 to cast spells if they have not moved that turn or are not engaged in close combat.
 
 #namecost("STAVE OF SUFFERING", "15 points")
 
@@ -862,17 +650,9 @@ All enemy models in base contact with the bearer must pass a Toughness test or s
 
 For each unsaved Wound the bearer of this item inflicts in close combat, one enemy unit in base contact suffer D3 Strength 3 Attacks with the Flaming Attacks special rule after they have resolved their normal attacks.
 
-#namecost("BREATH OF THE VOID MAW", "25 points")
-
-Necrarch only. One use only. This item can be used at the start of any Magic phase. Once used, pick one enemy unit within 6" that is not engaged in close combat. Roll a D6; on a 2+ the target unit suffer a number of Strength 5 Hits equal to the roll.
-
 #namecost("FRAGMENT OF THE KEEP", "25 points")
 
 Blood Dragon only. The bearer gains the Always Strikes First special rule.
-
-#namecost("THE GRIM GARLAND", "25 points")
-
-Strigoi only. Enemy units in base contact with the bearer must roll 3D6 for their Leadership tests and discard the lowest result.
 
 #namecost("LIGHTSHARD OF THE HARVEST MOON", "25 points")
 
@@ -886,10 +666,6 @@ The character and any unit they are with gain +1 Movement.
 
 Vampire only. This item can be used at the start of any round of close combat. When used, the bearer gains +1 To Hit and To Wound. However, for each of their Attacks that does not inflict an unsaved Wound, they must pass a Toughness test or suffer one Wound with no saves allowed at the end of the combat (before Break tests are taken).
 
-#namecost("SIGIL OF THE SANGUINE THRONE", "25 points")
-
-Von Carstein only. The bearer and any friendly Vampire unit within 12" may re-roll one of their charge distance dice.
-
 #namecost("THE FURIOUS CROWN", "20 points")
 
 In any turn in which the bearer of this item makes a successful charge, they gain +1 Attack for every enemy model in base contact, up to a maximum of +3.
@@ -898,21 +674,9 @@ In any turn in which the bearer of this item makes a successful charge, they gai
 
 Blood Dragon only. One use only. This item can be used in any of your Magic phases. Once used, it automatically restores Wounds to any unit they are with following the rules for _Invocation of Nehek_ from the Lore of Necromancy.
 
-#namecost("MEDAL OF MADNESS", "20 points")
-
-Strigoi only. The bearer gains the Inspiring Presence (6) special rule.
-
-#namecost("SOULFIRE RING", "20 points")
-
-Cairn Wraith only. For every unsaved Wound caused in close combat by the bearer, they and/or their unit regain 1 Wound, just like a summoning spell.
-
 #namecost("BLOOD RIVER CHALICE", "15 points")
 
 Vampire only. One use only. This item can be used at the start of the controlling player's turn. The model immediately recovers all lost Wounds (ignoring any additional Wounds from mounts) up to their starting value.
-
-#namecost("BRAZIER OF NAGASHIZZAR", "15 points")
-
-Cairn Wraith only. The bearer and any unit they join may re-roll failed charge and pursuit distances.
 
 #namecost("MIRROR OF ECHOING FAILURES", "15 points")
 
@@ -925,18 +689,6 @@ Master Necromancer or Necromancer only. All friendly units of Skeletons and Zomb
 #namecost("RUBY VIAL", "15 points")
 
 Vampire only. One use only. This item can be used at the start of any of your turns. Until the start of your next turn, all enemy units within 18" of the bearer suffer \-1 to their Movement.
-
-#namecost("SIGNET OF THE FIRST COURT", "15 points")
-
-Strigoi only. The bearer of this item gains the Killing Blow special rule.
-
-#namecost("THE BILIOUS DECANTER", "10 points")
-
-Ghoul or Strigoi only. One use only. This item can be used at the start of any close combat phase. The bearer gains the Frenzy special rule and +1 Attack for the remainder of the game. However, they will automatically fail any Berserk Rage tests and must always Pursue.
-
-#namecost("ORB OF ENCHANTMENT", "10 points")
-
-Lahmian only. One enemy model in base contact (chosen by the bearer) must take a Leadership test at the start of each round of close combat. If failed, they may not attack this turn.
 
 #namecost("TALISMAN OF THE LYCNI", "10 points")
 
@@ -952,10 +704,6 @@ Vampire only. One use only. This item may be used at the start of any round of C
 ]
 
 #entry("MAGIC STANDARDS")
-#namecost("THE DRAKENHOF BANNER", "75 points")
-
-Von Carstein or Wight only. May only be taken if your army includes a von Carstein Vampire Character. All Undead models (excluding mounts) in the unit carrying this standard gain the Regeneration (4+) special rule.
-
 #namecost("THE FLAG OF BLOOD KEEP", "45 points")
 
 Blood Knights only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains a Magical Ward (4+) against missile attacks.
@@ -985,17 +733,9 @@ All Undead models (including mounts) in the unit carrying this standard counts a
 
 Bound Spell. This banner contains the _Flaming Sword of Rhuin_ spell from the Lore of Fire. It can only be cast on the unit carrying this standard.
 
-#namecost("THE FLAYED PENNANT", "25 points")
-
-Strigoi or Ghoul only. The unit carrying this standard gains the Frenzy special rule.
-
 #namecost("INFERNAL STANDARD", "25 points")
 
-Wight King with Battle Standard only. The model carrying this standard gains the Hold Your Ground (6) special rule.
-
-#namecost("ROYAL STANDARD OF STRIGOS", "25 points")
-
-May only be taken if your army includes a Strigoi Vampire Character. Strigoi or Ghoul only. The unit carrying this standard gains the Hatred special rule.
+Wight Lord with Battle Standard only. The model carrying this standard gains the Hold Your Ground (6) special rule.
 
 #namecost("THE SCREAMING BANNER", "25 points")
 
@@ -1004,10 +744,6 @@ Enemy units on base contact with the unit carrying this standard must pass a Lea
 #namecost("ICON OF VENGEANCE", "20 points")
 
 Any Undead model (including mounts) in the unit carrying this standard that is slain in close combat may immediately make an additional Attack, even if they have already attacked this turn.
-
-#namecost("STANDARD OF HELLISH VIGOUR", "15 points")
-
-Undead only. May only be taken if your army includes a Necrarch Vampire Character. The unit carrying this standard may March despite being Animated Constructs.
 
 #namecost("BANNER OF THE ENDLESS", "")
 #namecost("NIGHTMARE", "10 points")
@@ -1468,9 +1204,9 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
   (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
   (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 6, points: 275),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire, Blood Dragon), or Monster while mounted on the Dam")
+#field("TROOP TYPE", "Infantry (Special Character, Vampire, Blood Dragon)")
 #field("MOUNT", "The Dam (Draconid)")
-#field("BASE SIZE", "20x20 or 25x25, or 50x100 mounted")
+#field("BASE SIZE", "20x20 or 25x25, or 50x100 on the Dam")
 #field("EQUIPMENT", "Hand weapon, heavy armour, shield")
 #field("MAGIC", "Emmerich is a Level 2 Wizard who uses both of the following Lores of Magic:")
 
@@ -1491,17 +1227,21 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 
 #field("OPTIONS", "")
 
-- May be mounted on the Dam +275 points
+- May be mounted on one of the following:
+  - Nightmare +20 points
+  - Hellsteed +25 points
+  - Abyssal Terror +125 points
+  - The Dam +275 points
 
 #field("NOTES", "")
 
 - While mounted on the Dam, Emmerich is a Monster with the *Fly (8)* and *Natural Armour (4+)* special rules. The Dam has no Breath Weapon.
 
-#note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot that is most of the move and he casts and is gone. On the Dam his Line of Sight value is 4 and it is almost nothing. The foot build vanishes and the mounted build does not, and no rule here says so._
+#note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot his value is 1 and the move is nine inches: he casts and is gone. On a Nightmare or a Hellsteed it is two and eight, on the Abyssal Terror four and six, and on the Dam, where he is a Monster, five and five. The foot build vanishes and the heavy builds do not, and no rule here says so._
 
 _Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in his own person, which is the fiction's claim that he learned enough of it to avoid depending on anyone, costing nothing to write. The same goes for leaving his own dead in the ground: Invocation of Nehek targets Undead excluding mounts, and his household are Vampires, so it could never have raised them._
 
-_The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. Mounted on the Dam his Line of Sight value is 4, and the rulebook adds another six inches at that value, which puts him at twenty\-four and is worth knowing before he is bought._]
+_The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. The rulebook then adds another six inches to any model whose Line of Sight value is 4 or more, which a ridden Monstrous Creature is and a Monster is, so the Abyssal Terror and the Dam both put him at twenty\-four. That is worth knowing before either is bought._]
 
 #entry("ANKHARA")
 
@@ -1518,7 +1258,11 @@ The Widow of Gisoreux. Sent three times to place herself in a household with no 
 
 - *The Marshal's Warrant:* Enchanted Item. The document appointing Emmerich to the rank he still uses, taken from his own table. Any friendly unit within 12" of Ankhara may use the Leadership of the army's General as though the General were within 12" of it.
 
-#field("VAMPIRIC POWERS", "Night Creature, Swiftness")
+#field("VAMPIRIC POWERS", "")
+
+- *Night Creature:* While Ankhara is a lone character, she may not be targeted by enemy missile attacks or spells from further than 12" away.
+- *Swiftness:* Ankhara has Movement 10 and the Swiftstride special rule.
+
 #field("SPECIAL RULES", "Dodge (6+), The Red Thirst, Vampiric")
 
 - *She Never Swore It:* The Oath of the Keep does not apply to Ankhara. In addition, she may refuse a challenge without the usual penalty. She is moved as the rules for Refusing a Challenge require, but the enemy gains no combat result bonus for the refusal, and she keeps the use of her Leadership and of every special rule and Magic Item she carries for that turn.
@@ -1551,10 +1295,31 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Grave Guard, Black Knights, Terrorgheist", "Reproduced unchanged"),
   ("Skeleton Warriors, Zombies, Fell Bats, Bat Swarms", "Reproduced unchanged"),
   ("Skeletal Steed", "Reproduced unchanged"),
-  ("The Lore of Necromancy, Vampiric Powers", "Reproduced entire, and not a word of either is altered"),
+  ("The Lore of Necromancy", "Reproduced entire, and not a word of it is altered"),
+  ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from"),
   ("Army Special Rules", "Reproduced entire and unaltered, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter"),
-  ("Magic Items", "Reproduced entire and unaltered, with the Ordo's own four added at the end of the chapter"),
+  ("Magic Items", "Twenty-five of the eighty-six are removed, and the Infernal Standard is corrected from Wight King to Wight Lord. The Ordo's own four are added at the end of the chapter"),
 ))
+
+#namecost("THE POWERS AND ITEMS THAT WERE REMOVED", "")
+
+Two chapters lost whole entries rather than lines, and one rule accounts for most of it: a power or an item this army has nobody to give to is not printed. Every Vampire the list lets you buy is a Blood Dragon, so the four other Bloodlines take their powers away with them, and the headings go too. Thirty-nine of the fifty-two powers went on that ground alone, and the thirteen left are one list.
+
+The Magic Items lose twenty-five of eighty-six, and there it is worth being exact about which gate did the work, because three of the four are not the Bloodline clause.
+
+#chart((
+  ("Why it went", "How many", "Which"),
+  ("Gated to a Bloodline this list cannot field", "17", "Armour of Night, Chiropteran Cloak, Morbheg's Claw, the Sigil of the Sanguine Throne, Keening Bone, Splintervane Broach, Carrion Wand, the Grim Garland, Medal of Madness, the Signet of the First Court, the Bilious Decanter, the Flayed Pennant, the Staff of Raukhamon, Breath of the Void Maw, Amulet of Screams, the Crimson Gem of Lahmia, the Orb of Enchantment"),
+  ("Asks for a character of one behind it", "3", "The Drakenhof Banner, the Royal Standard of Strigos, the Standard of Hellish Vigour"),
+  ("Gated to a unit this book does not field", "4", "Reaper of Sorrows, the Cloak of the Waxing Moon, the Soulfire Ring, the Brazier of Nagashizzar, all four of them Cairn Wraith items"),
+  ("A missile weapon", "1", "The Asp Bow"),
+))
+
+The Keening Bone would have gone twice over, being Strigoi's and a throwing weapon.
+
+One item was corrected rather than removed. The Infernal Standard is for a Wight King carrying the Battle Standard, and in that book as in this one no Wight King may carry it: the Wight Lords entry gives the Battle Standard to a Wight Lord. It is printed here with the rank the rule plainly meant.
+
+What stayed is what somebody in this army can still be handed. A gate naming a Vampire, a Blood Dragon, a Wight King, a Wight Lord or a Necromancer is printed as it was, this book fielding all five, and an item that names one of them is refusing the other four.
 
 #namecost("AND BESIDE THE PARENT BOOK", "")
 
@@ -1580,6 +1345,8 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Lahmian Handmaidens", "Rare", "Not in this book"),
   ("Every Special Character in that book", "Fifteen of them", "Not available"),
   ("Characters", "Thirteen entries", "Blood Dragons, Wight Lords and Necromancers"),
+  ("Vampiric Powers", "Fifty-two, in five Bloodline lists", "Thirteen, in one list"),
+  ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own four"),
   ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
   ("Nightmare, Hellsteed, Abyssal Terror", "Undead mounts", "Not Undead"),
 ))
@@ -1660,9 +1427,11 @@ The Marshal's Blade is 25 against Bretonnia's own scale, where the Lance of Arto
 
 The Pass Held is the rule that answers this list's own argument. Why an Army of Infamy, above, sets out that Vampiric models are the only part of a Vampire Counts army that can be broken and the only part its magic cannot mend. A re-roll on Break tests for the unit he is standing in fixes precisely that, for precisely one unit, and the Arithmetic then forbids him from doing it for the fodder. The two clauses are one rule read from either end.
 
+Which unit he can be standing in is settled by the rulebook rather than by his entry, and that is the reason he has a horse at all. A character may not join a unit whose troop type has a higher Unit Strength than his own, and Infantry is 1 where Cavalry is 2, so on foot the Pass Held reaches the Blood Guard and the fodder and never once a regiment of knights. A character who is himself a Monstrous Creature or a Monster may not join anything, so on the Abyssal Terror and on the Dam it reaches nothing whatsoever. The Nightmare at 20 points and the Hellsteed at 25 are what put the rule where this list needs it, which is the front rank of the Blood Knights. Neither costs him the Blood Guard, since a mounted character may still join a unit of lower Unit Strength than his own.
+
 The Dam is priced on the book's scale rather than Ulthuan's. The Zombie Dragon is 245 as a mount at Toughness 6, 6 Wounds, 5 Attacks, Natural Armour (5+) and Fly (7), with a Breath Weapon and Swarm of Flies. She adds a point of Toughness, a Wound, an Attack, an armour tier and a point of Fly, and gives up both of those rules; 275 is the answer. High Elves charge 300 for a Moon Dragon and 390 for a Star Dragon, but they also charge 300 where the book charges 245 for the same chassis, so their numbers set the shape and not the price. Weapon Skill 5 rather than a Star Dragon's 7 because her get are Weapon Skill 4 and these are stock, not the ancients of Caledor. No Breath Weapon, because the Blood Wyrms gave theirs up for the same reason and their rider will not use a weapon that kills at a distance.
 
-Six hundred and forty-five mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so mounted he wants a game of 2,580 points or larger and on foot he is legal from 1,480. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
+Six hundred and forty-five mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so on the Dam he wants a game of 2,580 points or larger, where on foot he is legal from 1,480 and on a Nightmare from 1,560. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
 
 #field("Ankhara", "")
 
@@ -1736,7 +1505,7 @@ The difference is that it does not pay. Fell Bats are Leadership 5 at Toughness 
 
 Emmerich is open to the objection every special character is. He is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, three rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+).
 
-The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on the Dam is a forty-eight-inch circle, arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
+The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on the Dam or the Abyssal Terror is a forty-eight-inch circle, arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
 
 Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well. The Warrant is the other place to push: lending the General's Leadership at 12" is a Battle Standard's work and a Battle Standard is 25 points in the book, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190. Cutting it and dropping her to about 135 is the honest alternative.
 
