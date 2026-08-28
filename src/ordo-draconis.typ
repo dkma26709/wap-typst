@@ -19,7 +19,8 @@
 //
 // Ours: the Order chapter, the list rules, the reduced Blood Knight profile,
 // the Blood Guard, the Sworn, the Blood Wyrms, the Elder Wyrm, Emmerich,
-// Ankhara, the four Ordo items and the closing two chapters. See the colophon.
+// Ankhara, the six Ordo items, the four Ordo powers and the closing two
+// chapters. See the colophon.
 
 #import "template.typ": *
 
@@ -350,9 +351,10 @@ The lord holds his lands by his own hand and answers for them in person. Every v
 The point of a vampire is not how many he kills.
 
 - No unit in the army may pursue a fleeing enemy. A unit that wins a close combat restrains without taking the Leadership test to do so, and may reform as though it had passed it. This overrides any rule that would compel a pursuit, Frenzy included. Overrunning is untouched: an enemy that has been wiped out has not fled.
+- A unit in the army that completes a charge against a fleeing enemy, whether it was already fleeing or fled as its charge reaction, inflicts none of the Wounds it would normally inflict for its Unit Strength. The fleeing unit immediately makes another flee move instead, and the charging unit halts where contact was made and may reform as though it had passed the Leadership test to do so.
 - Enemy units in base contact with one or more Vampire characters suffer a \-2 penalty to their Leadership. This penalty is cumulative with any other modifiers, the Hell Banner included.
 
-#note[_What is given up is the killing. A pursuit that catches its quarry inflicts a Wound with no saves of any kind for every point of the pursuer's Unit Strength, which is where a Warhammer army does most of its destroying; a Legion forgoes all of it and takes the ground instead. Some of it comes back as certainty. Restraining normally requires a passed Leadership test and a failed one forces the pursuit, so a unit that never pursues is never dragged into a fresh combat or out of the line it was holding, and it reforms every time._
+#note[_What is given up is the killing, and it is given up twice over because the rulebook sells it twice. A pursuit that catches its quarry inflicts a Wound with no saves of any kind for every point of the pursuer's Unit Strength, and a charge completed against a fleeing enemy inflicts exactly the same, which is where a Warhammer army does most of its destroying; a Legion forgoes both and takes the ground instead. Without the second clause the first would have cost a turn rather than a massacre. The charge itself is untouched, and worth making: a unit driven into the battlefield edge is removed entire, and driving it there is the only finisher this army owns. Some of it comes back as certainty. Restraining normally requires a passed Leadership test and a failed one forces the pursuit, so a unit that never pursues is never dragged into a fresh combat or out of the line it was holding, and it reforms every time._
 
 _Nothing in this list can buy the Aura of Dark Majesty, that power being von Carstein's, so the stacking to watch is with the Hell Banner. It does much the same work at 40 points, on Line of Sight rather than in base contact, and the two together put an enemy at \-3 for as long as it stands in front of a Vampire character. The banner has no effect on models with Immunity (Psychology) and this rule has no such exemption, which is where the two part company. The book is inconsistent about it; a Leadership penalty reaches Break tests, which are not Psychology tests, so the reading without the exemption is the one that makes sense. Spiritual Vortex is a third \-1, within 6" of its template, for a Level 4 caster who has something better to do._]
 ]
@@ -486,6 +488,26 @@ In any turn in which the model makes a successful charge, they have the Ignores 
 #namecost("HONOUR OR DEATH", "5 points")
 
 After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.
+
+#entry("THE ORDO'S POWERS")
+
+Four Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
+
+#namecost("KEPT GROUND", "25 points")
+
+The model has the Hold Your Ground (6) special rule.
+
+#namecost("ON THE TALLY", "20 points")
+
+May not be the army's General. For as long as the army's General is alive, the model adds +1 to the combat resolution of any close combat they are part of.
+
+#namecost("THE LONG WALK", "15 points")
+
+The model has the Hatred special rule against any enemy unit containing one or more models armed with a missile weapon.
+
+#namecost("OLD ENOUGH", "10 points")
+
+The model gains the Immunity (Killing Blow, Multiple Wounds) special rule.
 
 = MAGIC ITEMS
 
@@ -756,7 +778,7 @@ The unit carrying this standard suffers one fewer Wound than they normally would
 
 #entry("THE ORDO'S ITEMS")
 
-Four Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
+Six Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
 
@@ -766,9 +788,17 @@ Enchanted Item. Ordo Draconis only. Friendly units with the *Chiropter* keyword 
 
 Enchanted Item. Ordo Draconis only. One friendly unit with the *Draconid* keyword may deploy using the *Ambushers* special rule.
 
+#namecost("THE MUSTER ROLL", "15 points")
+
+Enchanted Item. Ordo Draconis only. Friendly units with the *Undead* special rule within 12" of the bearer suffer one fewer Wound than they normally would due to the Unstable special rule, or following the death of the army's General. This is not cumulative with the Battle Standard.
+
 #namecost("THE WITNESSED OATH", "25 points")
 
 Talisman. Ordo Draconis only. Vampire only. While the bearer is fighting in a challenge, they have a Magical Ward (5+).
+
+#namecost("THE ROAD BEHIND", "20 points")
+
+Talisman. Ordo Draconis only. No enemy unit that the bearer, or a unit the bearer has joined, declares a charge against may choose Flee as a Charge Reaction.
 
 #namecost("THE BANNER OF THE", "")
 #namecost("FIRST SWORN", "35 points")
@@ -1296,9 +1326,9 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Skeleton Warriors, Zombies, Fell Bats, Bat Swarms", "Reproduced unchanged"),
   ("Skeletal Steed", "Reproduced unchanged"),
   ("The Lore of Necromancy", "Reproduced entire, and not a word of it is altered"),
-  ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from"),
-  ("Army Special Rules", "Reproduced entire and unaltered, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter"),
-  ("Magic Items", "Twenty-five of the eighty-six are removed, and the Infernal Standard is corrected from Wight King to Wight Lord. The Ordo's own four are added at the end of the chapter"),
+  ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from, with the Ordo's own four added at the end of the chapter"),
+  ("Army Special Rules", "Reproduced entire and unaltered, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter. Dread, not Slaughter denies the Wounds a completed charge inflicts on a fleeing enemy, as well as the pursuit"),
+  ("Magic Items", "Twenty-five of the eighty-six are removed, and the Infernal Standard is corrected from Wight King to Wight Lord. The Ordo's own six are added at the end of the chapter"),
 ))
 
 #namecost("THE POWERS AND ITEMS THAT WERE REMOVED", "")
@@ -1332,7 +1362,8 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
-  ("Weather Over the Keep, the Signal Fire, the Witnessed Oath", "Do not exist", "Magic Items, new"),
+  ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind", "Do not exist", "Magic Items, new"),
+  ("Kept Ground, On the Tally, the Long Walk, Old Enough", "Do not exist", "Vampiric Powers, new"),
   ("Vargheists, the Varghulf", "Special", "Rare"),
   ("Dire Wolves", "Core", "Special"),
   ("Skeletons, Skeleton Horsemen, Zombies", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
@@ -1345,8 +1376,8 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Lahmian Handmaidens", "Rare", "Not in this book"),
   ("Every Special Character in that book", "Fifteen of them", "Not available"),
   ("Characters", "Thirteen entries", "Blood Dragons, Wight Lords and Necromancers"),
-  ("Vampiric Powers", "Fifty-two, in five Bloodline lists", "Thirteen, in one list"),
-  ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own four"),
+  ("Vampiric Powers", "Fifty-two, in five Bloodline lists", "Thirteen, in one list, and the Ordo's own four"),
+  ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own six"),
   ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
   ("Nightmare, Hellsteed, Abyssal Terror", "Undead mounts", "Not Undead"),
 ))
@@ -1447,7 +1478,23 @@ And the one thing deliberately not copied from Isabella: if Emmerich is slain, A
 
 The two clauses are one bargain, and neither is worth writing without the other. Breaking an enemy unit is worth a great deal less to an army that cannot then run it down, so a deeper Leadership penalty costs the opponent less than the same penalty would cost him against anybody else. That is what makes \-2 affordable where the list would not have been given \-1 for nothing.
 
+The pursuit ban was half a rule until the charge clause joined it. Charging a fleeing enemy inflicts one Wound with no saves of any kind for every point of the chargers' Unit Strength, which is not merely the same arithmetic a caught pursuit uses but the same sentence: the rulebook prices a pursuit by saying it works just as when charging a fleeing enemy. A Legion that broke a unit, restrained, and charged it the following turn while it was still running would have collected the entire massacre it had just been forbidden, one turn late and at no cost but patience.
+
+What the clause takes is the catch and not the charge, which is the distinction the whole rule turns on. The knights may still declare against a running enemy and still reach him; they simply arrive without killing anybody, and the enemy runs again for having been reached. That is a real effect and in this army it is the only finisher there is, since a unit driven into the battlefield edge is removed entire. Dread, not Slaughter does not forbid the Legion its kill. It forbids the Legion the knife and leaves it the horse.
+
 Base contact rather than a radius, because that is where dread belongs. A 12" radius is a 24" circle, and two or three of those overlap across most of any battlefield worth deploying on; every Break test, Panic test and Psychology test taken inside one would be a point worse for nothing. In base contact the penalty lands almost entirely on the Break test of the unit actually fighting him, which is the sentence the rule's title is making. The Grim Garland is the book's own grammar for it, being a Strigoi item that works on enemy units in base contact with the bearer.
+
+#field("The Ordo's powers", "")
+
+The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These four are aimed at that, and none of them is new to the game.
+
+Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. That is precisely the hole Why an Army of Infamy digs and then leaves open. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
+
+On the Tally is Bretonnia's Virtue of Duty at Bretonnia's price, down to the clause barring the General from taking it. Combat resolution is the currency this list actually spends: it cannot run down what it breaks, so winning the shove and standing on the ground afterwards is the whole of how it scores.
+
+The Long Walk answers the matchup The Argument Against names as the one this list was built to lose. Bare Hatred is 15 points as a Dogs of War Quirk, and Bretonnia's Virtue of Noble Disdain is 15 for the same against missile troops with a Panic clause bundled in that would be dead here.
+
+Old Enough is Monstrous Mass, which this list cut along with the Strigoi, at the price the Strigoi paid for it. A vampire with three Wounds is not worn down in a challenge it may not refuse; it is removed once, by a Killing Blow or a Multiple Wounds weapon. Bretonnia charges 10 for the Mantle of the Damsel Elena, which is the same rule against Killing Blow and Poisoned Attacks.
 
 #field("The Ordo's items", "")
 
@@ -1466,6 +1513,10 @@ The Signal Fire is the one number here with nothing underneath it, since the boo
 Ambushers rather than Scouts or Vanguard, and the choice is not decorative. A unit made up entirely of models that can Fly uses its Fly value when it Vanguards, so a Vanguard version would put Fly (8) and Devastating Charge eight inches up the table on the first turn, and a Scouts version would put them anywhere outside 12". Ambushers arrives on a 3+ on turn two, a 2+ on turn three and automatically on turn four, from a board edge, having been off the table in the meantime. Random and late is what makes it fair. The rulebook's Ambushers tax, which wants one non-Expendable, non-ambushing Core unit for every Core unit that ambushes, does not bite here, because every Draconid entry in this list is Rare.
 
 The Witnessed Oath is gated on the one thing this list guarantees. The Oath of the Keep compels every Vampire character to issue and accept, so a ward that works only in a challenge pays out reliably rather than on a condition the opponent controls, and it answers the argument the Why section makes: the vampires are the only part of a Vampire Counts army that dies for good. Twenty-five against the Wristbands of Black Gold, which are 25 for a Magical Ward (3+) that is always on and covers one kind of attack.
+
+The Road Behind is the Empire's Bane of the Craven with half of it already paid for. That item is 25 points and does two things: the bearer may never voluntarily flee as a charge reaction, and neither may anything the bearer charges. The first half is the Oath of the Keep, which this army has for nothing, so only the second half is being bought here. It is worth more here than there, because a Legion that can never catch a fleeing enemy needs the enemy not to flee in the first place, and twenty rather than fifteen is the honest answer to owning both rules at once.
+
+The Muster Roll is Unbending Willpower, which went out of the book with the von Carsteins, sold as an item at the Battle Standard's range rather than the power's. That power was 10 points for six inches and the Standard of Everlasting Death is 10 for a single unit, so fifteen for twelve inches is the rate, and it is not cumulative with the Battle Standard, which is the clause the power carried and the reason this is not simply a second banner. It is also the only thing in this book written for the levy rather than the household, which had begun to look like an oversight in a list whose fiction says the two are one order at different ages.
 
 #namecost("THE ARGUMENT AGAINST", "")
 
@@ -1493,7 +1544,7 @@ Barring every special character in the book is the same objection at its sharpes
 
 Dread, Not Slaughter is the rule most likely to lose the Legion a game it deserved to win, and it is worth being exact about how much it actually costs, because the honest figure is smaller than the rule feels. Victory points are not awarded for kills alone. A unit reduced to half its Unit Strength is Decimated and worth half its cost whether it flees, rallies or stands there; a unit still fleeing at the end is worth half again, and one that is both is worth three quarters. Only the last band, Dead or Fled, wants the unit gone, and only the standard bonus explicitly asks for a pursuit.
 
-So a Legion that breaks its enemy and lets it go still scores. What it gives up is the top quarter of the scale and the standards, which is a real handicap and not the ruin it sounds like. The sharper cost is the one nobody totals: a pursuit that catches its quarry inflicts a Wound with no saves of any kind for every point of the pursuer's Unit Strength, and that is where a Warhammer army does most of its killing. Forgoing it does not zero the scoreboard. It slows every fight the Legion is in, and against an opponent content to feed units in, break off and come back, the list has no way to finish anything except by pushing it off the board edge.
+So a Legion that breaks its enemy and lets it go still scores. What it gives up is the top quarter of the scale and the standards, which is a real handicap and not the ruin it sounds like. The sharper cost is the one nobody totals: a pursuit that catches its quarry inflicts a Wound with no saves of any kind for every point of the pursuer's Unit Strength, and that is where a Warhammer army does most of its killing. Forgoing it does not zero the scoreboard. It slows every fight the Legion is in, and against an opponent content to feed units in, break off and come back, the list has no way to finish anything except by pushing it off the board edge. The charge clause was written knowing that, and is why it takes the catch rather than the charge: a Legion barred from riding at a broken enemy would have had no finisher at all, where one that rides at him and drives him another flee move still has the board edge to work with.
 
 The scenario decides how much of that matters, and the scenario is a D6 roll. In The Watchtower the winner is whoever holds the ground within six inches of the tower and points are only the tiebreak, which is the game this army was built to win. In Blood and Glory the winner is whoever breaks the enemy's Fortitude first, and a small army of expensive units carries few standards, which is the game it was built to lose.
 
