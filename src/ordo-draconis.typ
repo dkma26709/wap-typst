@@ -18,7 +18,8 @@
 // reach this file and nothing will tell you: both have to be edited.
 //
 // Ours: the Order chapter, the list rules, the reduced Blood Knight profile,
-// the Blood Guard, the Sworn, the Blood Wyrms, the Elder Wyrm, Emmerich,
+// the Blood Guard, the Sworn, the Blood Wyrms, the Elder Wyrm, the Great Wyrm,
+// Emmerich,
 // Ankhara, the six Ordo items, the four Ordo powers and the closing two
 // chapters. See the colophon.
 
@@ -840,6 +841,9 @@ Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your ar
   - Nightmare +20 points
   - Hellsteed +25 points
   - Abyssal Terror +125 points
+  - Blood Wyrm +125 points
+  - Elder Wyrm +140 points
+  - Great Wyrm (Lord only) +215 points
 - One Kastellan may carry the Battle Standard +25 points
 - A Kastellan may take Vampiric Powers and/or Magic Items up to a total of 50 points
 - A Lord may take Vampiric Powers and/or Magic Items up to a total of 100 points
@@ -943,6 +947,22 @@ Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your ar
 
 - May take Poisonous Tail +10 points
 - May take Sword-claws +5 points
+
+#entry("GREAT WYRM")
+
+The byres are cut into the keep's own rock, and a drake that outgrows its byre
+has to have a new one cut. The ledger records the expense, which is the only
+reason anybody can say how many there are. The Dam never had a byre; she came
+with the mountain.
+
+#profile(
+  (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 5, points: "-"),
+)
+#field("TROOP TYPE", "Monster (Draconid)")
+#field("BASE SIZE", "50x100 or 60x100")
+#field("SPECIAL RULES", "Fly (8), Natural Armour (4+)")
+
+#note[_A wyrm is not a small dragon; it is a dragon that never learned to breathe and was never anything but an animal. The chassis here is the High Elf Sun Dragon's, which is Toughness 5 with 5 Wounds at Weapon Skill 5 and Leadership 7. This one trades the Weapon Skill and most of the Leadership for a point of Strength and a point of Toughness, gives up Fiery Breath entirely, and carries a worse armour tier than any dragon of Ulthuan. The difference between the two kinds is temperament and breath, and has never been size._]
 
 = CORE UNITS
 
@@ -1164,6 +1184,10 @@ The Grand Master's own wing. Where a Blood Knight is given a horse, the knights 
 - May upgrade one Wyrm Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
 
+#field("NOTES", "")
+
+- A Blood Wyrm taken as a character mount is a *Monstrous Beast*, so the character becomes *Monstrous Cavalry* and may join a unit of Blood Wyrms.
+
 #note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge and Fly (8) are the whole unit, and the book already has both. Note which half of the model each reaches: Fly is one of the rules the rulebook extends from rider to mount and Devastating Charge is not, so the wyrm flies and the knight alone gains the Attack on the charge: six between them, not seven._
 
 _Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror*, so a Blood Wyrm causes Terror without this entry saying so, exactly as a Vargheist already does in the book as printed. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then the Vargheists already in this book do not cause Terror either, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._]
@@ -1184,6 +1208,7 @@ One of the Dam's oldest get, old before the Bloodlines were, and the knight who 
 #field("NOTES", "")
 
 - An Elder Wyrm has a Unit Strength of 5 and a Line of Sight value of 4.
+- An Elder Wyrm taken as a character mount is a *Monstrous Creature*, and a character riding one may not join any unit.
 
 #note[_Terror and Stomp (D3) are not written here because the troop type already grants them, and a ridden Monstrous Creature is treated as a Monstrous Creature throughout. Vampiric then adds Fear on top of Terror, which does nothing at all: the model already has the better of the two._]
 
@@ -1232,7 +1257,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 
 #profile(
   (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
-  (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 6, points: 275),
+  (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 6, i: 2, a: 5, ld: 6, points: 320),
 )
 #field("TROOP TYPE", "Infantry (Special Character, Vampire, Blood Dragon)")
 #field("MOUNT", "The Dam (Draconid)")
@@ -1261,17 +1286,20 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
   - Nightmare +20 points
   - Hellsteed +25 points
   - Abyssal Terror +125 points
-  - The Dam +275 points
+  - Blood Wyrm +125 points
+  - Elder Wyrm +140 points
+  - Great Wyrm +215 points
+  - The Dam +320 points
 
 #field("NOTES", "")
 
 - While mounted on the Dam, Emmerich is a Monster with the *Fly (8)* and *Natural Armour (4+)* special rules. The Dam has no Breath Weapon.
 
-#note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot his value is 1 and the move is nine inches: he casts and is gone. On a Nightmare or a Hellsteed it is two and eight, on the Abyssal Terror four and six, and on the Dam, where he is a Monster, five and five. The foot build vanishes and the heavy builds do not, and no rule here says so._
+#note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot his value is 1 and the move is nine inches: he casts and is gone. On a Nightmare or a Hellsteed it is two and eight, on a Blood Wyrm three and seven, on the Abyssal Terror or an Elder Wyrm four and six, and on a Great Wyrm or the Dam, where he is a Monster, five and five. The foot build vanishes and the heavy builds do not, and no rule here says so._
 
 _Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in his own person, which is the fiction's claim that he learned enough of it to avoid depending on anyone, costing nothing to write. The same goes for leaving his own dead in the ground: Invocation of Nehek targets Undead excluding mounts, and his household are Vampires, so it could never have raised them._
 
-_The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. The rulebook then adds another six inches to any model whose Line of Sight value is 4 or more, which a ridden Monstrous Creature is and a Monster is, so the Abyssal Terror and the Dam both put him at twenty\-four. That is worth knowing before either is bought._]
+_The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. The rulebook then adds another six inches to any model whose Line of Sight value is 4 or more, which a ridden Monstrous Creature is and a Monster is, so every mount in his list except the horses and the Blood Wyrm puts him at twenty\-four. That is worth knowing before any of them is bought._]
 
 #entry("ANKHARA")
 
@@ -1316,7 +1344,7 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Entry", "What was done to it"),
   ("Blood Knights", "Weapon Skill 6 to 5, Initiative 5 to 4, Attacks 2 to 1, at the printed price of 36 points. Core rather than Rare, no longer capped at one unit, and the Sworn upgrade added. The Nightmare loses the Undead special rule"),
   ("Skeleton Horsemen", "The option to replace shields with bows is removed. Light lances become an option in their own right rather than one of two"),
-  ("Blood Dragons", "The Zombie Dragon mount option is removed"),
+  ("Blood Dragons", "The Zombie Dragon mount option is removed. The Blood Wyrm, the Elder Wyrm and the Great Wyrm are added as mounts, the last of them a Lord's purchase"),
   ("Necromancers", "The Corpse Cart mount option is removed"),
   ("Wight Lords", "The Barrow Chariot mount option is removed, leaving the Skeletal Steed as a single option rather than one of two"),
   ("Nightmare, Hellsteed, Abyssal Terror", "The Undead special rule is removed, and the keyword with it"),
@@ -1359,7 +1387,8 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Blood Guard", "Does not exist", "Core, new entry, 22 points"),
   ("The Sworn", "Does not exist", "An upgrade to either, carrying the printed Blood Knight profile, chosen from Special"),
   ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new"),
-  ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries"),
+  ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries, and the wyrms are character mounts as well"),
+  ("Great Wyrm", "Does not exist", "Character mount, new, Blood Dragon Lord only"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
   ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind", "Do not exist", "Magic Items, new"),
@@ -1438,13 +1467,23 @@ The arithmetic then does the rationing without a special rule. Both the Rare all
 
 #field("Elder Wyrm", "")
 
-Two hundred and ten points, and the working is worth printing. Set against the High Elf Drakemaster at 200, which is the model it answers. The chassis is now identical: Toughness 5, 4 Wounds, 4 Attacks on both. Four Wounds rather than five is deliberate. Five put it on the road to the Zombie Dragon, which has six and costs 245, and this is a wyrm rather than a dragon.
+Two hundred and ten points, and the working is worth printing. Set against the High Elf Drakemaster at 200, which is the model it answers. The chassis is now identical: Toughness 5, 4 Wounds, 4 Attacks on both. Four Wounds is where this animal sits on the ladder rather than a statement about wyrms in general; the Great Wyrm above it has five and the Dam has six, and none of them breathes.
 
 What each buys with the difference does not net out to nothing, and it does not favour us. Ours has a point of Strength on the mount, two more points of Strength and one more of Toughness on the rider, and the whole of Vampiric: Fear, Immunity (Psychology) and \-1 To Wound against the model. The Drakemaster has Fiery Breath, a point of Initiative and of Leadership on both halves, three racial rules, and much the better armour. Dragon armour is heavy armour with a Magical Ward (6+) and Immunity (Flaming Attacks), and its Natural Armour (4+) combines with that and a shield, so it sits at the 2+ ceiling where ours stops at a 3+ with no ward at all.
 
 So: ten points over the Drakemaster for a better rider and Vampiric, having given up its ward, its breath and its fire immunity. Below the Terrorgheist at 225 and the Zombie Dragon at 245, above the Coven Throne at 200, and well above the Varghulf at 135, which is this book's other Monstrous Creature (Vampire) and has no rider, no flight and no armour save.
 
-In the book as printed this entry would have had an obvious rival, since a Vampire on a Zombie Dragon is a ridden Monstrous Creature with the same Terror and the same Stomp, and brings Leadership, challenges and a hundred points of magic items along with it. An Ordo Draconis does not field the Zombie Dragon, and the Abyssal Terror at 125 points is the only thing left that flies a character. So this is what the list has when the characters are already spent, and it is the only way to put a monster in the air without spending Emmerich.
+In the book as printed this entry would have had an obvious rival, since a Vampire on a Zombie Dragon is a ridden Monstrous Creature with the same Terror and the same Stomp, and brings Leadership, challenges and a hundred points of magic items along with it. An Ordo Draconis does not field the Zombie Dragon, but it now sells the same animal as a mount, so the rival is its own Elder Wyrm with a character on it at 140 points. That is the honest comparison and this entry loses it on paper: the same creature, and the ridden one brings Leadership, challenges and magic items for a hundred and thirty points less than the unit costs. What the unit buys is a body that is not a character, in an army whose characters are rationed one non-Blood-Dragon to a Blood Dragon and whose Rare allowance is the only place a monster fits once the Lords budget is spent.
+
+#field("The drakes as character mounts", "")
+
+The herd was written as three unit entries and no way for a character to ride any of it, which left the Grand Master's own wing with no Grand Master in it. That was not a decision; it was an omission, and the rulebook fixes it without a special rule. A character on a Monstrous Beast is Monstrous Cavalry, a unit of Blood Wyrms is Monstrous Cavalry, both are flyers and neither has the higher Unit Strength, so a character on a Blood Wyrm may join them and a character on anything else in this book may not.
+
+One hundred and twenty-five for the Blood Wyrm, the Abyssal Terror's price, because that is the animal it sits beside: a Toughness worse, an Initiative better, and the troop type is the difference worth paying for. One hundred and forty for the Elder Wyrm, between the Terror at 125 and the Warriors of Chaos Manticore at 150, which is Monstrous Creature and Fly (8) like ours and carries Weapon Skill 5, Initiative 5, Frenzy and Killing Blow on top; ours has a point of Strength and nothing else, so it belongs under it.
+
+Two hundred and fifteen for the Great Wyrm, and this is the new tier. The High Elf Sun Dragon is 235 as a mount for Toughness 5, 5 Wounds, Weapon Skill 5, Leadership 7, Fiery Breath and Natural Armour (3+). Ours trades the Weapon Skill and two of the Leadership for a point of Strength and a point of Toughness, gives up the breath, and drops an armour tier; against the Tomb Kings' Necrolith Bone Dragon, which is 235 for Toughness 6, 6 Wounds, 5 Attacks and no breath either, it is a Wound and an Attack short. Below both, and a Lord's purchase rather than a Kastellan's, which is the gate *Vampire Counts* itself puts on the Zombie Dragon when it writes Count only and Master only.
+
+And the wyrms do not get smaller as they get further from a dragon. The Great Wyrm is a Sun Dragon's size and the Dam is larger than a Moon Dragon; what makes them wyrms is that none of them breathes and none of them is anybody's peer. The Blood Wyrms entry gave up its breath weapon because the Legion does not shoot, and the same sentence turned out to be the whole taxonomy.
 
 #field("Emmerich", "")
 
@@ -1460,9 +1499,13 @@ The Pass Held is the rule that answers this list's own argument. Why an Army of 
 
 Which unit he can be standing in is settled by the rulebook rather than by his entry, and that is the reason he has a horse at all. A character may not join a unit whose troop type has a higher Unit Strength than his own, and Infantry is 1 where Cavalry is 2, so on foot the Pass Held reaches the Blood Guard and the fodder and never once a regiment of knights. A character who is himself a Monstrous Creature or a Monster may not join anything, so on the Abyssal Terror and on the Dam it reaches nothing whatsoever. The Nightmare at 20 points and the Hellsteed at 25 are what put the rule where this list needs it, which is the front rank of the Blood Knights. Neither costs him the Blood Guard, since a mounted character may still join a unit of lower Unit Strength than his own.
 
-The Dam is priced on the book's scale rather than Ulthuan's. The Zombie Dragon is 245 as a mount at Toughness 6, 6 Wounds, 5 Attacks, Natural Armour (5+) and Fly (7), with a Breath Weapon and Swarm of Flies. She adds a point of Toughness, a Wound, an Attack, an armour tier and a point of Fly, and gives up both of those rules; 275 is the answer. High Elves charge 300 for a Moon Dragon and 390 for a Star Dragon, but they also charge 300 where the book charges 245 for the same chassis, so their numbers set the shape and not the price. Weapon Skill 5 rather than a Star Dragon's 7 because her get are Weapon Skill 4 and these are stock, not the ancients of Caledor. No Breath Weapon, because the Blood Wyrms gave theirs up for the same reason and their rider will not use a weapon that kills at a distance.
+The Dam is priced on Ulthuan's ladder rather than this book's, which is a departure and wants defending. The Zombie Dragon at 245 is the natural anchor and it cannot hold her, because a Star Dragon is Strength 7 and Toughness 7 on a flying Monster for 390 and she carries both. She is a Wound and an Attack below that dragon and two armour tiers below it, at Weapon Skill 5 against 7 and Leadership 6 against 9, with no breath at all. That is a long way short of a Star Dragon. It is nothing like a hundred and fifteen points short of a Moon Dragon at 300. Three hundred and twenty is where she belongs: above the Moon Dragon on the chassis that matters, well below the Star Dragon on everything else.
 
-Six hundred and forty-five mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so on the Dam he wants a game of 2,580 points or larger, where on foot he is legal from 1,480 and on a Nightmare from 1,560. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
+Six Wounds and 5 Attacks, one under a Star Dragon on each, so that the distance to Ulthuan's largest is legible on the profile and not only in the price. What is left between her and a Moon Dragon is a point of Strength, a point of Toughness and a point of Fly, against Fiery Breath, an armour tier, a point of Weapon Skill and Initiative, and two of Leadership. Weapon Skill 5 rather than a Star Dragon's 7 because her get are Weapon Skill 4 and these are stock, not the ancients of Caledor. No Breath Weapon, because the Blood Wyrms gave theirs up for the same reason and their rider will not use a weapon that kills at a distance.
+
+Pricing the army's centrepiece up rather than down is deliberate. A list that turns out too cheap is an argument with the other players; a list that turns out too dear is an evening's arithmetic.
+
+Six hundred and ninety mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so on the Dam he wants a game of 2,760 points or larger, where on foot he is legal from 1,480, on a Nightmare from 1,560 and on a Great Wyrm from 2,340. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
 
 #field("Ankhara", "")
 
@@ -1556,11 +1599,11 @@ The difference is that it does not pay. Fell Bats are Leadership 5 at Toughness 
 
 Emmerich is open to the objection every special character is. He is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, three rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+).
 
-The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on the Dam or the Abyssal Terror is a forty-eight-inch circle, arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
+The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on any of the larger mounts is a forty-eight-inch circle, arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
 
 Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well. The Warrant is the other place to push: lending the General's Leadership at 12" is a Battle Standard's work and a Battle Standard is 25 points in the book, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190. Cutting it and dropping her to about 135 is the honest alternative.
 
-The Dam has the opposite problem. At 275 she is priced honestly against the Zombie Dragon and she still cannot be fielded below 2,580 points, which means the largest creature this project has written will almost never be seen. Either that is what a centrepiece is, or the ladder should have stopped at a full-grown dragon and left her a wyrm.
+The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, Emmerich cannot be fielded below 2,760 points, so the largest creature this project has written will almost never be seen. The Great Wyrm is what answers that in practice, being a Lord's mount at 215 that fits from 2,340, and the honest reading is that the Dam has become a trophy for a size of game nobody plays. Either that is what a centrepiece is, or she wanted a price that could reach a table.
 
 And taking the missile weapons out is a real loss of options for very little in return. A handful of entries lose a line each, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
