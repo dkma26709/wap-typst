@@ -121,7 +121,27 @@ There is a smaller thing that the knights of both realms know and neither says a
 
 The Ordo fights as an order of knights and nothing else. Its vampires ride, walk in armour, or take to the air, and the dead march behind them in whatever numbers the season requires. There is no militia. There are no archers, no crossbows, no artillery train. Its lord will not use a weapon that kills at a distance, and the order has lost battles because of it. He accepts every challenge offered him and requires the same of his household, which has cost him two knights he could not replace.
 
-He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who die in the attempt are raised and march with the levy. He does not turn peasants. He leaves his own dead in the ground as well, and has never given a reason for it.
+He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who refuse are asked a second question at the end of their lives, and most of them say yes to that one. Dying is a thing a Bretonnian is brought up to do well. Being of no further use afterwards is not. They are the Wights, and they march behind the men who took the other offer. He does not turn peasants, and a vampire of his own household who is killed stays where he falls. He has never given a reason for the second of those.
+
+#runin[The roll]
+
+Nobody in the six duchies owes the order anything but blood, and a body is not blood. The muster roll is a separate page in the same hand, and it is not part of the terms. A man puts his own name on it while he is alive, at a visit, in front of whoever is doing the writing. Nothing is remitted for it. Nothing is asked of a village that puts nobody down.
+
+Two of the dozen have put nobody down at all.
+
+When the man dies the order comes for him or it does not, according to the season and the need, and if it comes the household read the name off the roll before they lift him. That is the whole of the ceremony. The order is aware that a body cannot object, and has decided that the writing is what makes the difference.
+
+What it costs is the grave. A man on the roll gives up the Lady's rites, which are the one thing the realm has ever given a peasant without charging him for it, and the priests are clear about what that makes him. The villages sign anyway. They do not raise the subject with visiting knights.
+
+The reasons are various and mostly practical. A man who has watched the keep arrive four times in his life puts his name down the way he leaves a tool to his son. A man whose village was saved and whose family was not puts his name down for a different reason and does not always give it. The keep's own herdsmen are on the roll almost to a man, which is why some of the levy rides. Forty years in the byres teaches a man to sit a horse, and the order has never found a reason to waste it.
+
+What comes up on the day is a harder thing, and the order does not pretend otherwise. A holding that has been overrun has dead who were alive that morning, and names that were read out last season, and no time in which to be careful about either. Those are raised where they lie. The ledger gives the engagement and not the number.
+
+Bretonnia reads the roll as a second tribute, and the proclamations say so: that he takes their dead as well as their blood. The villages say they signed. The only copy is in the keep and neither side has seen it.
+
+He does not defend it as mercy. Asked, he gives the arithmetic. A village with thirty names on the roll is a village he can hold with thirty fewer knights, and knights are the thing he cannot replace. He is aware of what that makes his line of battle. A Bretonnian host puts peasants in front of its knights, which is the arrangement he left, and so does he.
+
+He has never argued that the difference is large. He says only that his are already dead, and that nobody's harvest is short for it.
 
 #runin[The drakes]
 
@@ -1597,7 +1617,7 @@ The Witnessed Oath is gated on the one thing this list guarantees. The Oath of t
 
 The Road Behind is the Empire's Bane of the Craven with half of it already paid for. That item is 25 points and does two things: the bearer may never voluntarily flee as a charge reaction, and neither may anything the bearer charges. The first half is the Oath of the Keep, which this army has for nothing, so only the second half is being bought here. It is worth more here than there, because a Legion that can never catch a fleeing enemy needs the enemy not to flee in the first place, and twenty rather than fifteen is the honest answer to owning both rules at once.
 
-The Muster Roll is Unbending Willpower, which went out of the book with the von Carsteins, sold as an item at the Battle Standard's range rather than the power's. That power was 10 points for six inches and the Standard of Everlasting Death is 10 for a single unit, so fifteen for twelve inches is the rate, and it is not cumulative with the Battle Standard, which is the clause the power carried and the reason this is not simply a second banner. It is also the only thing in this book written for the levy rather than the household, which had begun to look like an oversight in a list whose fiction says the two are one order at different ages.
+The Muster Roll is Unbending Willpower, which went out of the book with the von Carsteins, sold as an item at the Battle Standard's range rather than the power's. That power was 10 points for six inches and the Standard of Everlasting Death is 10 for a single unit, so fifteen for twelve inches is the rate, and it is not cumulative with the Battle Standard, which is the clause the power carried and the reason this is not simply a second banner. It is also the only thing in this book written for the levy rather than the household, and the only one named after a document. The household is the order. The levy is the six duchies. An item that steadies the fodder is aimed at the thing the order exists for.
 
 #namecost("THE ARGUMENT AGAINST", "")
 
