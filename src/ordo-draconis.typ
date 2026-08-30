@@ -1299,7 +1299,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 - *The Hauberk of the Ordo:* Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).
 
 #field("VAMPIRIC POWERS", "Blademaster, Dread Knight")
-#field("SPECIAL RULES", "Fly (8) (the Dam only), Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
+#field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
 
 - *The Marshal:* Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.
 - *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
@@ -1318,7 +1318,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 
 #field("NOTES", "")
 
-- While mounted on the Dam, Emmerich is a Monster with the *Fly (8)* and *Natural Armour (4+)* special rules. The Dam has no Breath Weapon.
+- The Dam is a Great Wyrm, and the oldest of them. She is that entry in every respect but the profile printed here, so a mounted Emmerich is a Monster and everything else follows from it.
 
 #note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot his value is 1 and the move is nine inches: he casts and is gone. On a Nightmare or a Hellsteed it is two and eight, on a Blood Wyrm three and seven, on the Abyssal Terror or an Elder Wyrm four and six, and on a Great Wyrm or the Dam, where he is a Monster, five and five. The foot build vanishes and the heavy builds do not, and no rule here says so._
 
