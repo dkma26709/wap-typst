@@ -251,7 +251,7 @@ _Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon
 
 An *Army of Infamy* is a second way to build a force from a book that already exists. What changes is which category a unit is chosen from, what the list refuses you, and one or two rules laid over the whole army. This one goes a step further in a single place: the knights it puts in Core are a lesser draft of the Blood Knight *Vampire Counts* prints, sold at that entry's price, and the printed profile is bought back as an upgrade that leaves Core behind.
 
-The Ordo Draconis is the army *Warhammer Armies Project: Vampire Counts* is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised as fodder, and no longer as the backbone. It gives up twenty-one of that book's thirty-three units to do it.
+The Ordo Draconis is the army *Warhammer Armies Project: Vampire Counts* is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised as fodder, and no longer as the backbone. It gives up twenty-two of that book's thirty-three units to do it.
 
 An Ordo Draconis is chosen from this book and no other. Both players should know which composition is in use before deployment, as _Choosing Your Army_ requires of any Army of Infamy.
 
@@ -272,9 +272,9 @@ _The mounts clause changes almost nothing at the table, and is worth having anyw
 
 #namecost("WHAT THIS BOOK LEAVES OUT", "")
 
-Twelve of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
+Eleven of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
 
-No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre.
+No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. No unit may be a *Vargheist* either: they are the feral get of the Bloodlines, and whoever keeps them, the Ordo does not. The Varghulf stays, because an order may keep a beast and may not put a rank of them in the line and call it a household.
 
 _What Was Changed_, at the back of this book, sets the whole of it out beside *Vampire Counts* 3.0.
 
@@ -1504,6 +1504,14 @@ So: ten points over the Drakemaster for a better rider and Vampiric, having give
 
 In the book as printed this entry would have had an obvious rival, since a Vampire on a Zombie Dragon is a ridden Monstrous Creature with the same Terror and the same Stomp, and brings Leadership, challenges and a hundred points of magic items along with it. An Ordo Draconis does not field the Zombie Dragon, but it now sells the same animal as a mount, so the rival is its own Elder Wyrm with a character on it at 140 points. That is the honest comparison and this entry loses it on paper: the same creature, and the ridden one brings Leadership, challenges and magic items for a hundred and thirty points less than the unit costs. What the unit buys is a body that is not a character, in an army whose characters are rationed one non-Blood-Dragon to a Blood Dragon and whose Rare allowance is the only place a monster fits once the Lords budget is spent.
 
+#field("Blood Heralds", "")
+
+Forty-five is a Sworn Blood Guard at 27, what wings cost elsewhere in the corpus, and Terror. The corpus charges ten to fifteen for flight on a body this size. A Nightmare is 15 against a Hellsteed at 25. A Knight of the Realm is 25 against a Pegasus Knight at 50, and that second pair buys a far better animal along with the wings. Terror is not written on the entry because the troop type already grants it, Monstrous Infantry carrying Fear and Vampiric carrying it again.
+
+Set against the Vargheist this list does not field, which *Vampire Counts* prices at 50 for the same troop type, the same base and the same Fly (8). That one has three Wounds, four Attacks under Frenzy, and no armour at all. This one has a single Wound, three Attacks, a 4+ save, two points of Weapon Skill, one of Initiative, one of Leadership, and a command group. Five points under the beast is the right way round, and the Wounds are the reason.
+
+The novelty is worth stating rather than hiding. No entry in the thirty-one books is Monstrous Infantry with a single Wound; the Ogres, the Trolls and the Crypt Horrors all carry three. Nothing in the rulebook forbids it and nothing here depends on it. But it is the first of its kind, and a reader will notice before we do.
+
 #field("The drakes as character mounts", "")
 
 The herd was written as three unit entries and no way for a character to ride any of it, which left the Grand Master's own wing with no Grand Master in it. That was not a decision; it was an omission, and the rulebook fixes it without a special rule. A character on a Monstrous Beast is Monstrous Cavalry, a unit of Blood Wyrms is Monstrous Cavalry, both are flyers and neither has the higher Unit Strength, so a character on a Blood Wyrm may join them and a character on anything else in this book may not.
@@ -1546,6 +1554,14 @@ The Warrant is the number to argue with. Lending the General's Leadership at 12"
 
 And the one thing deliberately not copied from Isabella: if Emmerich is slain, Ankhara gains no Hatred, no Frenzy and nothing else whatsoever. Neither of them would call that sentiment. Both would call it correct.
 
+#field("The Red Thirst", "")
+
+The rule as *Vampire Counts* prints it does nothing for this army. It recovers a Wound on a 5+, and a model with one Wound that loses it is not there to recover anything. Every rank in this list has one Wound: the Blood Knights, the Blood Guard, the Sworn and the Heralds. That book knew it. The Blood Knights and the Lahmian Handmaidens are its only two Vampiric entries at a single Wound, and the only two it never gave the rule to.
+
+So it is rewritten as something a regiment can hold. A Thirst value rises by one on a phase the unit fed in and falls by one on a phase it did not. At one, two and three it grants Regeneration (6+), (5+) and (4+). It is slow to reach and cannot be held without going on winning. And it is one die beside the unit, not a tally kept model by model. The counterplay is the rulebook's own, since Regeneration is no save at all against Flaming Attacks or Killing Blow.
+
+What the army gives up is the reliable heal on its characters, and Drink Deep sells that back at 15 rather than granting it. The Varghulf pays more than anyone. It carried Regeneration (4+) and The Red Thirst on the same line, and the ceiling of the track is the save it already had. So the new rule would have been dead on the one model in the book most obviously built around feeding. It gives up the printed save and earns the same one over three phases instead. That is worse on the approach, where a Monstrous Creature with no armour save is exactly what a gun line looks for. A hundred and thirty-five becomes a hundred and ten.
+
 #field("The Oath of the Keep, and Dread, not Slaughter", "")
 
 The two clauses are one bargain, and neither is worth writing without the other. Breaking an enemy unit is worth a great deal less to an army that cannot then run it down, so a deeper Leadership penalty costs the opponent less than the same penalty would cost him against anybody else. That is what makes \-2 affordable where the list would not have been given \-1 for nothing.
@@ -1558,7 +1574,7 @@ Base contact rather than a radius, because that is where dread belongs. A 12" ra
 
 #field("The Ordo's powers", "")
 
-The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These four are aimed at that, and none of them is new to the game.
+The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These five are aimed at that, and none of them is new to the game.
 
 Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. That is precisely the hole Why an Army of Infamy digs and then leaves open. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
 
@@ -1568,6 +1584,8 @@ The Long Walk answers the matchup The Argument Against names as the one this lis
 
 Old Enough is Monstrous Mass, which this list cut along with the Strigoi, at the price the Strigoi paid for it. A vampire with three Wounds is not worn down in a challenge it may not refuse; it is removed once, by a Killing Blow or a Multiple Wounds weapon. Bretonnia charges 10 for the Mantle of the Damsel Elena, which is the same rule against Killing Blow and Poisoned Attacks.
 
+Drink Deep is the rule this book took away, sold back to the models it still works for. The Red Thirst now grants Regeneration instead of a Wound, which is worth having on a regiment and worth less on a lord with three Wounds and a challenge he may not refuse. The Scabbing Plate is the anchor at 35 points, being heavy armour and an automatic Wound back on an easier trigger. Fifteen for the same recovery on a 5+, with no armour and nothing else attached, sits where that leaves it.
+
 #field("The Ordo's items", "")
 
 The brothers he came back for, who took the blood at the Keep while there was still time to choose. Two centuries later they are the oldest swords in the order and the only men in it who still call him Aymeric, and there are not enough of them left to be an entry in an army list. A standard is the honest shape for them: magic items are unique unless marked with an asterisk, so exactly one unit in any army can be the First Sworn, and no clause is needed to say so.
@@ -1575,6 +1593,8 @@ The brothers he came back for, who took the blood at the Keep while there was st
 Grand Cathay's Revered Banner of the Ancestors is 25 points for +1 Weapon Skill, and Araby's Banner of Holy Fervour is 20 for +1 Movement and +1 Initiative. Thirty\-five for Weapon Skill and Initiative together sits between those and the forty\-point tier the Hell Banner and the Banner of the Barrows occupy. The gating is this book's own, twice over: the Flag of Blood Keep and the Cursed Pennant of Mousillon both name a unit and then ask for a Blood Dragon character behind it.
 
 And it costs the regiment the other thing a regiment might have carried. A unit has one standard bearer and one Magic Standard, so a company of the Sworn on horse takes either two centuries of practice or the Flag of Blood Keep's ward against missile fire, and being made to choose is the interesting part in an army that cannot shoot back.
+
+The Standing Ration is the household issuing blood the field did not provide. Twenty-five points buys no advance, only the refusal to give ground: a unit carrying it keeps whatever Thirst it has earned. The Banner of Doom is 25 in the chapter before this one for Regeneration (5+) against missile attacks. That one is bought outright and held from the first turn. This one has to be earned before it is worth anything, and is worth nothing at all to a unit that has not fed.
 
 One item for each of the three keywords this list cares about, each priced against the book rather than against the other two.
 
