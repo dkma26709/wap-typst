@@ -1302,6 +1302,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 #field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
 
 - *The Marshal:* Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.
+- *Not in the Tally:* Friendly units with the *Chiropter* keyword may use Emmerich's Inspiring Presence and Hold Your Ground special rules, which the Independent special rule would otherwise forbid them.
 - *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
 - *The Arithmetic:* Emmerich may never join a unit with the *Undead* special rule.
 
@@ -1576,7 +1577,7 @@ Base contact rather than a radius, because that is where dread belongs. A 12" ra
 
 The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These five are aimed at that, and none of them is new to the game.
 
-Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. That is precisely the hole Why an Army of Infamy digs and then leaves open. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
+Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. The bats need Emmerich for it. Independent models may never use Hold Your Ground, and both bat entries carry Independent from their troop type, so without Not in the Tally the one group that wants this power is the one group that cannot be given it. That is precisely the hole Why an Army of Infamy digs and then leaves open. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
 
 On the Tally is Bretonnia's Virtue of Duty at Bretonnia's price, down to the clause barring the General from taking it. Combat resolution is the currency this list actually spends: it cannot run down what it breaks, so winning the shove and standing on the ground afterwards is the whole of how it scores.
 
