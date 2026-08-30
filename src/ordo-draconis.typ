@@ -251,7 +251,7 @@ _Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon
 
 An *Army of Infamy* is a second way to build a force from a book that already exists. What changes is which category a unit is chosen from, what the list refuses you, and one or two rules laid over the whole army. This one goes a step further in a single place: the knights it puts in Core are a lesser draft of the Blood Knight *Vampire Counts* prints, sold at that entry's price, and the printed profile is bought back as an upgrade that leaves Core behind.
 
-The Ordo Draconis is the army *Warhammer Armies Project: Vampire Counts* is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised as fodder, and no longer as the backbone. It gives up twenty-two of that book's thirty-three units to do it.
+The Ordo Draconis is the army *Warhammer Armies Project: Vampire Counts* is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised as fodder, and no longer as the backbone. It gives up twenty-three of that book's thirty-three units to do it.
 
 An Ordo Draconis is chosen from this book and no other. Both players should know which composition is in use before deployment, as _Choosing Your Army_ requires of any Army of Infamy.
 
@@ -272,9 +272,9 @@ _The mounts clause changes almost nothing at the table, and is worth having anyw
 
 #namecost("WHAT THIS BOOK LEAVES OUT", "")
 
-Eleven of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
+Ten of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
 
-No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. No unit may be a *Vargheist* either: they are the feral get of the Bloodlines, and whoever keeps them, the Ordo does not. The Varghulf stays, because an order may keep a beast and may not put a rank of them in the line and call it a household.
+No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. No unit may be a *Vargheist* either: they are the feral get of the Bloodlines, and whoever keeps them, the Ordo does not. The Varghulf stays, because an order may keep a beast and may not put a rank of them in the line and call it a household. The Dire Wolves go for the reason the mounts clause already gives: the animals of this order are alive, and it keeps no dead ones it did not first bury as men.
 
 _What Was Changed_, at the back of this book, sets the whole of it out beside *Vampire Counts* 3.0.
 
@@ -723,7 +723,7 @@ Vampire only. One use only. This item can be used at the start of any of your tu
 
 #namecost("TALISMAN OF THE LYCNI", "10 points")
 
-Vampire only. Model on foot only. The bearer of this item gains +4 to their Movement value and the Swiftstride special rule. In addition, they may join units of Dire Wolves.
+Vampire only. Model on foot only. The bearer of this item gains +4 to their Movement value and the Swiftstride special rule.
 
 #namecost("HEART OF THE GIANT FEAST", "10 points")
 
@@ -1161,17 +1161,15 @@ The ones who have had it long enough for it to have finished with them. There is
 - May upgrade one Black Knight to a Musician +5 points
 - May upgrade one Black Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-#entry("DIRE WOLVES")
+#entry("VARGHULF")
 #profile(
-  (name: "Dire Wolf", m: 9, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: 5),
+  (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "War Beast (Undead, Canine)")
-#field("BASE SIZE", "25x50")
-#field("SPECIAL RULES", "Undead")
-#field("OPTIONS", "")
+#field("TROOP TYPE", "Monstrous Creature (Vampire)")
+#field("BASE SIZE", "50x50 or 50x100")
+#field("SPECIAL RULES", "Hatred, The Red Thirst, Vampiric")
 
-- May upgrade one Dire Wolf to a Leader +5 points
+- *Bestial Fury:* For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.
 
 = RARE UNITS
 
@@ -1248,15 +1246,6 @@ The Sworn the household puts in the air. A keep that arrives where it likes keep
 
 _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs elsewhere in the corpus. A Nightmare is 15 and a Hellsteed 25; a Knight of the Realm is 25 and a Pegasus Knight 50. It sits under the Vargheist that the parent book prices at 50, which is the right way round. Better Weapon Skill, Initiative and Leadership, and a save, against one Wound where the beast has three. No entry in any of the thirty-one books is Monstrous Infantry with a single Wound. This one is, and that is the fair objection to it._]
 
-#entry("VARGHULF")
-#profile(
-  (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
-)
-#field("TROOP TYPE", "Monstrous Creature (Vampire)")
-#field("BASE SIZE", "50x50 or 50x100")
-#field("SPECIAL RULES", "Hatred, The Red Thirst, Vampiric")
-
-- *Bestial Fury:* For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.
 #entry("TERRORGHEIST")
 #profile(
   (name: "Terrorgheist", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 6, i: 3, a: 4, ld: 4, points: 225),
@@ -1374,15 +1363,14 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Necromancers", "The Corpse Cart mount option is removed"),
   ("Wight Lords", "The Barrow Chariot mount option is removed, leaving the Skeletal Steed as a single option rather than one of two"),
   ("Nightmare, Hellsteed, Abyssal Terror", "The Undead special rule is removed, and the keyword with it"),
-  ("Varghulf", "Rare rather than Special, Regeneration (4+) removed, and 135 points to 110"),
-  ("Dire Wolves", "Special rather than Core"),
+  ("Varghulf", "Regeneration (4+) removed, and 135 points to 110. Special, as in that book"),
   ("Grave Guard, Black Knights, Terrorgheist", "Reproduced unchanged"),
   ("Skeleton Warriors, Zombies, Fell Bats, Bat Swarms", "Reproduced unchanged"),
   ("Skeletal Steed", "Reproduced unchanged"),
   ("The Lore of Necromancy", "Reproduced entire, and one clause of one spell is altered: Fountains of Blood now adds to a Thirst value rather than to a roll"),
   ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from, with the Ordo's own five added at the end of the chapter"),
   ("Army Special Rules", "Reproduced entire but for The Red Thirst, which is rewritten as a Thirst value that rises and falls with the feeding, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter. Dread, not Slaughter denies the Wounds a completed charge inflicts on a fleeing enemy, as well as the pursuit"),
-  ("Magic Items", "Twenty-five of the eighty-six are removed, the Infernal Standard is corrected from Wight King to Wight Lord, and the Armour of Blood is repriced from 30 points to 20 and made to require Drink Deep. The Ordo's own seven are added at the end of the chapter"),
+  ("Magic Items", "Twenty-five of the eighty-six are removed, the Infernal Standard is corrected from Wight King to Wight Lord, the Armour of Blood is repriced from 30 points to 20 and made to require Drink Deep, and the Talisman of the Lycni loses the clause letting it join Dire Wolves. The Ordo's own seven are added at the end of the chapter"),
 ))
 
 #namecost("THE POWERS AND ITEMS THAT WERE REMOVED", "")
@@ -1420,10 +1408,10 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
   ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind, the Standing Ration", "Do not exist", "Magic Items, new"),
   ("Kept Ground, On the Tally, the Long Walk, Drink Deep, Old Enough", "Do not exist", "Vampiric Powers, new"),
-  ("The Varghulf", "Special", "Rare, and without Regeneration (4+), at 110 points"),
+  ("The Varghulf", "Special", "Special, without Regeneration (4+), at 110 points"),
   ("The Red Thirst", "A Wound recovered on a 5+", "A Thirst value that rises and falls with the feeding, granting Regeneration (6+) at 1, (5+) at 2 and (4+) at 3"),
   ("The Armour of Blood", "30 points", "20 points, and requires Drink Deep"),
-  ("Dire Wolves", "Core", "Special"),
+  ("Dire Wolves", "Core", "Not in this book"),
   ("Skeletons, Skeleton Horsemen, Zombies", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
   ("Fell Bats, Bat Swarms", "Core, and count towards the 25% minimum", "Core, and count towards it still"),
   ("Grave Guard, Black Knights, Terrorgheist", "Special, Special, Rare", "Unchanged"),
@@ -1667,7 +1655,7 @@ None of the five has a game behind it.
 
 #namecost("WHAT IT TOOK", "")
 
-A chapter of background, four new unit entries with an upgrade path shared between two of them, two special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, three category moves, one reduced profile sold at the printed price, and a paragraph in the rulebook.
+A chapter of background, four new unit entries with an upgrade path shared between two of them, two special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, one category move, one reduced profile sold at the printed price, and a paragraph in the rulebook.
 
 That last is the part that was not about this list at all. The rulebook had no notion of an Army of Infamy, so the first one had to introduce the idea as well as the list, and _Choosing Your Army_ is where it went: a book may offer an alternative composition, both players should know which is in use before deployment, and such a composition may change which units count towards the Core minimum. That last clause is the one this list could not have been written without, since Choosing Your Army is where the quarter is set.
 
@@ -1677,7 +1665,7 @@ The same shape is waiting twice more in *Vampire Counts*. Strigany may only be t
 
 *An Ordo Draconis at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two characters who are not Blood Dragons. This one takes a Wight Lord at 100 and leaves the second slot unspent.
 
-Twenty-one Blood Guard at 462 and ten Blood Knights at 360 are the Core, which is 822 of qualifying Core against a 500-point minimum, with neither unit near the ceiling that stops any single unit costing more than a quarter of the army. An Elder Wyrm at 210 and a Varghulf at 110 take 320 of the Rare allowance.
+Twenty-one Blood Guard at 462 and ten Blood Knights at 360 are the Core, which is 822 of qualifying Core against a 500-point minimum, with neither unit near the ceiling that stops any single unit costing more than a quarter of the army. An Elder Wyrm at 210 takes the Rare allowance and a Varghulf at 110 sits in Special.
 
 That is 1,557. Thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights. The last 368 go on command groups, the Flag of Blood Keep, powers and items across the three characters, and the 35 that make the Lord a Level 1 Wizard, because thirty Zombies are an Undead unit and The Generals of Undeath wants a Necromancer for them.
 
