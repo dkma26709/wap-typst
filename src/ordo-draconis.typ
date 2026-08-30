@@ -335,15 +335,19 @@ Models with the Vampiric special rule have the Fear and Immunity (Psychology) sp
 
 #namecost("THE RED THIRST", "")
 
-Roll a D6 at the end of each Close Combat phase in which one or more models was slain by a Vampire with this special rule. On a 5+, the Vampire recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
+Models with this special rule have a Thirst value, tracked separately for each unit and for each character. It begins the battle at 0, and can never fall below 0 or rise above 3.
+
+At the end of each Close Combat phase, a unit's Thirst value increases by 1 if one or more enemy models were slain by models with this special rule during that phase, and decreases by 1 if none were. While the value is 1 or more, those models have the Regeneration special rule: Regeneration (6+) at 1, Regeneration (5+) at 2 and Regeneration (4+) at 3. This is not cumulative with any other source of Regeneration.
+
+Models slain that are Animated Constructs, Daemons, Forest Spirits or Vampires do not count for this.
 
 #namecost("THE OATH OF THE KEEP", "")
 
 The lord holds his lands by his own hand and answers for them in person. Every vampire in the order swore it, and every vampire this list permits carries *Martial Honour* already, that being the Blood Dragon rule: they must always issue and accept challenges when possible. The oath adds nothing to it and never had to.
 
-- A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value. This is in addition to The Red Thirst.
+- A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value.
 - No unit in the army may choose Flee as a Charge Reaction.
-- The Red Thirst may not be claimed for models slain while Fleeing or during a Pursuit. Blood taken from the routed does not count.
+- Models slain while Fleeing or during a Pursuit do not increase a unit's Thirst value. Blood taken from the routed does not count.
 
 #note[_The clause about Flee is narrower than it reads, and it is worth knowing which half of the army it lands on. Unbreakable models may never choose Flee as a Charge Reaction in any case, and every Undead unit in this list is Unstable and therefore Unbreakable. So the oath binds the vampires, the bats and the living mounts and nothing else, which is to say it binds exactly those who swore it, and asks nothing of the dead that the dead were not already doing._]
 
@@ -391,7 +395,7 @@ _Hellish Vigour_ is an *augment* spell with a range of 18". All Undead models (i
 #namecost("FOUNTAINS OF BLOOD", "")
 #namecost("Level 2 Cast on 7+", "")
 
-_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, Vampires gain a +1 to bonus to any The Red Thirst rolls for Wounds caused against this unit.
+_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, a unit with The Red Thirst that slays one or more models in this unit increases its Thirst value by 2 rather than 1.
 
 #namecost("DEATHLY CABAL", "")
 #namecost("Level 2 Cast on 8+", "")
@@ -492,7 +496,7 @@ After issuing or accepting a challenge with a model with this power, the enemy c
 
 #entry("THE ORDO'S POWERS")
 
-Four Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
+Five Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
 
 #namecost("KEPT GROUND", "25 points")
 
@@ -505,6 +509,10 @@ May not be the army's General. For as long as the army's General is alive, the m
 #namecost("THE LONG WALK", "15 points")
 
 The model has the Hatred special rule against any enemy unit containing one or more models armed with a missile weapon.
+
+#namecost("DRINK DEEP", "15 points")
+
+Roll a D6 at the end of each Close Combat phase in which one or more models was slain by the model. On a 5+, the model recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
 
 #namecost("OLD ENOUGH", "10 points")
 
@@ -564,9 +572,9 @@ Heavy armour. The wearer of this armour automatically restores 1 Wound lost duri
 
 Heavy armour. This item gives the wearer +1 Toughness, but makes them suffer \-1 Weapon Skill and Initiative.
 
-#namecost("THE ARMOUR OF BLOOD", "30 points")
+#namecost("THE ARMOUR OF BLOOD", "20 points")
 
-Blood Dragon only. Heavy armour. This item allows the wielder to automatically regain Wounds through the Red Thirst.
+Blood Dragon only. Heavy armour. The wearer must have the Drink Deep Vampiric Power. This item allows the wearer to automatically regain Wounds through it, rather than on a 5+.
 
 #namecost("THE RED CASKET", "30 points")
 
@@ -779,7 +787,7 @@ The unit carrying this standard suffers one fewer Wound than they normally would
 
 #entry("THE ORDO'S ITEMS")
 
-Six Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
+Seven Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
 
@@ -805,6 +813,10 @@ Talisman. Ordo Draconis only. No enemy unit that the bearer, or a unit the beare
 #namecost("FIRST SWORN", "35 points")
 
 Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains +1 Weapon Skill and +1 Initiative.
+
+#namecost("THE STANDING RATION", "25 points")
+
+Magic Standard. Ordo Draconis only. The unit carrying this standard never reduces its Thirst value.
 
 = CHARACTERS
 
@@ -979,7 +991,7 @@ The knights of the household as the Ordo fields them, which is not as the Bloodl
 #field("MOUNT", "Nightmare (Equine)")
 #field("BASE SIZE", "25x50 or 30x60")
 #field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Vampiric")
+#field("SPECIAL RULES", "The Red Thirst, Vampiric")
 #field("OPTIONS", "")
 
 - May be upgraded to the Sworn +8 points/model
@@ -999,7 +1011,7 @@ The household on foot, who fight that way because the walls are behind them. The
 #field("TROOP TYPE", "Infantry (Vampire)")
 #field("BASE SIZE", "20x20 or 25x25")
 #field("EQUIPMENT", "Hand weapon, heavy armour, shield")
-#field("SPECIAL RULES", "Vampiric")
+#field("SPECIAL RULES", "The Red Thirst, Vampiric")
 #field("OPTIONS", "")
 
 - May be upgraded to the Sworn +5 points/model
@@ -1176,7 +1188,7 @@ The Grand Master's own wing. Where a Blood Knight is given a horse, the knights 
 #field("MOUNT", "Blood Wyrm (Draconid)")
 #field("BASE SIZE", "50x75")
 #field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Devastating Charge, Fly (8), Vampiric")
+#field("SPECIAL RULES", "Devastating Charge, Fly (8), The Red Thirst, Vampiric")
 #field("OPTIONS", "")
 
 - May upgrade one Wyrm Knight to a Leader +5 points
@@ -1190,7 +1202,7 @@ The Grand Master's own wing. Where a Blood Knight is given a horse, the knights 
 
 #note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge and Fly (8) are the whole unit, and the book already has both. Note which half of the model each reaches: Fly is one of the rules the rulebook extends from rider to mount and Devastating Charge is not, so the wyrm flies and the knight alone gains the Attack on the charge: six between them, not seven._
 
-_Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror*, so a Blood Wyrm causes Terror without this entry saying so, exactly as a Vargheist already does in the book as printed. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then the Vargheists already in this book do not cause Terror either, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._]
+_Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror*, so a Blood Wyrm causes Terror without this entry saying so, exactly as the Blood Heralds do. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then neither entry causes Terror, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._]
 
 #entry("ELDER WYRM")
 
@@ -1204,7 +1216,7 @@ One of the Dam's oldest get, old before the Bloodlines were, and the knight who 
 #field("MOUNT", "Elder Wyrm (Draconid)")
 #field("BASE SIZE", "50x75 or 50x100")
 #field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Devastating Charge, Fly (8), Vampiric")
+#field("SPECIAL RULES", "Devastating Charge, Fly (8), The Red Thirst, Vampiric")
 #field("NOTES", "")
 
 - An Elder Wyrm has a Unit Strength of 5 and a Line of Sight value of 4.
@@ -1212,24 +1224,37 @@ One of the Dam's oldest get, old before the Bloodlines were, and the knight who 
 
 #note[_Terror and Stomp (D3) are not written here because the troop type already grants them, and a ridden Monstrous Creature is treated as a Monstrous Creature throughout. Vampiric then adds Fear on top of Terror, which does nothing at all: the model already has the better of the two._]
 
-#entry("VARGHEISTS")
+#entry("BLOOD HERALDS")
+
+The Sworn the household puts in the air. A keep that arrives where it likes keeps no couriers, and an order that will not shoot has no other reach. So the shops that blacken the plate make wings as well. Only a knight the blood has finished with is measured for a set, which is why there are never many.
+
 #profile(
-  (name: "Vargheist", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: 50),
+  (name: "Blood Herald", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 45),
 )
-#field("UNIT SIZE", "3-9")
+#field("UNIT SIZE", "3-6")
 #field("TROOP TYPE", "Monstrous Infantry (Vampire)")
 #field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Fly (8), Frenzy, The Red Thirst, Vampiric")
+#field("EQUIPMENT", "Two hand weapons, heavy armour")
+#field("SPECIAL RULES", "Fly (8), The Red Thirst, Vampiric")
 #field("OPTIONS", "")
 
-- May upgrade one Vargheist to a Leader +5 points
+- May replace the two hand weapons with a hand weapon and shield free
+- May upgrade one Blood Herald to a Leader +5 points
+- May upgrade one Blood Herald to a Musician +5 points
+- May upgrade one Blood Herald to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#note[_Three Attacks behind a 4+ save, or two behind a 3+ with Parry (6+) if the shield goes back on. They are the Blood Guard's own two builds, lifted off the ground. Monstrous Infantry is the troop type, not a modelling convenience. A rank of it is three models wide rather than five, which is the only way a 40mm base ranks up at all. The Fear it carries meets the Fear on Vampiric to make Terror, by the reading the Blood Wyrms already rest on._
+
+_Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs elsewhere in the corpus. A Nightmare is 15 and a Hellsteed 25; a Knight of the Realm is 25 and a Pegasus Knight 50. It sits under the Vargheist that the parent book prices at 50, which is the right way round. Better Weapon Skill, Initiative and Leadership, and a save, against one Wound where the beast has three. No entry in any of the thirty-one books is Monstrous Infantry with a single Wound. This one is, and that is the fair objection to it._]
+
 #entry("VARGHULF")
 #profile(
-  (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 135),
+  (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
 )
 #field("TROOP TYPE", "Monstrous Creature (Vampire)")
 #field("BASE SIZE", "50x50 or 50x100")
-#field("SPECIAL RULES", "Hatred, The Red Thirst, Regeneration (4+), Vampiric")
+#field("SPECIAL RULES", "Hatred, The Red Thirst, Vampiric")
 
 - *Bestial Fury:* For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.
 #entry("TERRORGHEIST")
@@ -1330,7 +1355,7 @@ The Widow of Gisoreux. Sent three times to place herself in a household with no 
 
 _She is chosen from the Characters section like anybody else and counts against the ration of one non\-Blood\-Dragon to a Blood Dragon, which is most of what she costs a list. An Ordo Draconis that brings her and one Blood Dragon has spent its allowance and has no Necromancer, so it must find the Necromancy Wizard that The Generals of Undeath asks for in the Blood Dragon himself, or field no Undead at all. The bloodline clause is the one thing she is excepted from, and a permission is not an allowance._
 
-_What the Oath exemption covers is worth setting out, since Martial Honour is not in it. Blood Dragons carry that rule in their own right, so the collision needs no help: he cannot refuse and she cannot be made to accept. What she gives up is the Wound recovered for winning a challenge. What she gains is the right to Flee as a Charge Reaction in an army that has given it up, and to take the Red Thirst from the routed. A Lahmian withdrawing while the household holds is what both orders would have predicted of her._
+_What the Oath exemption covers is worth setting out, since Martial Honour is not in it. Blood Dragons carry that rule in their own right, so the collision needs no help: he cannot refuse and she cannot be made to accept. What she gives up is the Wound recovered for winning a challenge. What she gains is the right to Flee as a Charge Reaction in an army that has given it up, and to feed her Thirst on the routed. A Lahmian withdrawing while the household holds is what both orders would have predicted of her._
 
 _She may be taken in an Ordo Draconis and in any other army chosen from *Vampire Counts* 3.0, which is the asymmetry the fiction asks for. He belongs to one place and she belongs nowhere, and Lahmia goes on sending her wherever it likes. The Fourth Attempt is the only thing on her that needs him, and it does nothing at all when he is absent._]
 
@@ -1348,15 +1373,15 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Necromancers", "The Corpse Cart mount option is removed"),
   ("Wight Lords", "The Barrow Chariot mount option is removed, leaving the Skeletal Steed as a single option rather than one of two"),
   ("Nightmare, Hellsteed, Abyssal Terror", "The Undead special rule is removed, and the keyword with it"),
-  ("Vargheists, Varghulf", "Rare rather than Special"),
+  ("Varghulf", "Rare rather than Special, Regeneration (4+) removed, and 135 points to 110"),
   ("Dire Wolves", "Special rather than Core"),
   ("Grave Guard, Black Knights, Terrorgheist", "Reproduced unchanged"),
   ("Skeleton Warriors, Zombies, Fell Bats, Bat Swarms", "Reproduced unchanged"),
   ("Skeletal Steed", "Reproduced unchanged"),
-  ("The Lore of Necromancy", "Reproduced entire, and not a word of it is altered"),
-  ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from, with the Ordo's own four added at the end of the chapter"),
-  ("Army Special Rules", "Reproduced entire and unaltered, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter. Dread, not Slaughter denies the Wounds a completed charge inflicts on a fleeing enemy, as well as the pursuit"),
-  ("Magic Items", "Twenty-five of the eighty-six are removed, and the Infernal Standard is corrected from Wight King to Wight Lord. The Ordo's own six are added at the end of the chapter"),
+  ("The Lore of Necromancy", "Reproduced entire, and one clause of one spell is altered: Fountains of Blood now adds to a Thirst value rather than to a roll"),
+  ("Vampiric Powers", "Thirty-nine of the fifty-two are removed and the Bloodline headings with them, leaving one list of thirteen that every Vampire in this army may take from, with the Ordo's own five added at the end of the chapter"),
+  ("Army Special Rules", "Reproduced entire but for The Red Thirst, which is rewritten as a Thirst value that rises and falls with the feeding, with the Oath of the Keep and Dread, not Slaughter added at the end of the chapter. Dread, not Slaughter denies the Wounds a completed charge inflicts on a fleeing enemy, as well as the pursuit"),
+  ("Magic Items", "Twenty-five of the eighty-six are removed, the Infernal Standard is corrected from Wight King to Wight Lord, and the Armour of Blood is repriced from 30 points to 20 and made to require Drink Deep. The Ordo's own seven are added at the end of the chapter"),
 ))
 
 #namecost("THE POWERS AND ITEMS THAT WERE REMOVED", "")
@@ -1388,12 +1413,15 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("The Sworn", "Does not exist", "An upgrade to either, carrying the printed Blood Knight profile, chosen from Special"),
   ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries, and the wyrms are character mounts as well"),
+  ("Blood Heralds", "Does not exist", "Rare, new entry, the Sworn profile winged and on foot, 45 points"),
   ("Great Wyrm", "Does not exist", "Character mount, new, Blood Dragon Lord only"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
-  ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind", "Do not exist", "Magic Items, new"),
-  ("Kept Ground, On the Tally, the Long Walk, Old Enough", "Do not exist", "Vampiric Powers, new"),
-  ("Vargheists, the Varghulf", "Special", "Rare"),
+  ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind, the Standing Ration", "Do not exist", "Magic Items, new"),
+  ("Kept Ground, On the Tally, the Long Walk, Drink Deep, Old Enough", "Do not exist", "Vampiric Powers, new"),
+  ("The Varghulf", "Special", "Rare, and without Regeneration (4+), at 110 points"),
+  ("The Red Thirst", "A Wound recovered on a 5+", "A Thirst value that rises and falls with the feeding, granting Regeneration (6+) at 1, (5+) at 2 and (4+) at 3"),
+  ("The Armour of Blood", "30 points", "20 points, and requires Drink Deep"),
   ("Dire Wolves", "Core", "Special"),
   ("Skeletons, Skeleton Horsemen, Zombies", "Core, and count towards the 25% minimum", "Core, and count towards nothing"),
   ("Fell Bats, Bat Swarms", "Core, and count towards the 25% minimum", "Core, and count towards it still"),
@@ -1402,11 +1430,12 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Every Chariot, Shrine and War Machine", "Core, Special and Rare", "Not in this book"),
   ("Flesh Golems, Necrofex Colossus, Zombie Dragon", "Special, Rare, Rare", "Not in this book"),
   ("Sylvanian Levy, Strigany, Skeleton Archers", "Core", "Not in this book"),
+  ("Vargheists", "Special", "Not in this book"),
   ("Lahmian Handmaidens", "Rare", "Not in this book"),
   ("Every Special Character in that book", "Fifteen of them", "Not available"),
   ("Characters", "Thirteen entries", "Blood Dragons, Wight Lords and Necromancers"),
-  ("Vampiric Powers", "Fifty-two, in five Bloodline lists", "Thirteen, in one list, and the Ordo's own four"),
-  ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own six"),
+  ("Vampiric Powers", "Fifty-two, in five Bloodline lists", "Thirteen, in one list, and the Ordo's own five"),
+  ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own seven"),
   ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
   ("Nightmare, Hellsteed, Abyssal Terror", "Undead mounts", "Not Undead"),
 ))
@@ -1471,7 +1500,7 @@ Two hundred and ten points, and the working is worth printing. Set against the H
 
 What each buys with the difference does not net out to nothing, and it does not favour us. Ours has a point of Strength on the mount, two more points of Strength and one more of Toughness on the rider, and the whole of Vampiric: Fear, Immunity (Psychology) and \-1 To Wound against the model. The Drakemaster has Fiery Breath, a point of Initiative and of Leadership on both halves, three racial rules, and much the better armour. Dragon armour is heavy armour with a Magical Ward (6+) and Immunity (Flaming Attacks), and its Natural Armour (4+) combines with that and a shield, so it sits at the 2+ ceiling where ours stops at a 3+ with no ward at all.
 
-So: ten points over the Drakemaster for a better rider and Vampiric, having given up its ward, its breath and its fire immunity. Below the Terrorgheist at 225 and the Zombie Dragon at 245, above the Coven Throne at 200, and well above the Varghulf at 135, which is this book's other Monstrous Creature (Vampire) and has no rider, no flight and no armour save.
+So: ten points over the Drakemaster for a better rider and Vampiric, having given up its ward, its breath and its fire immunity. Below the Terrorgheist at 225 and the Zombie Dragon at 245, above the Coven Throne at 200, and well above the Varghulf at 110, which is this book's other Monstrous Creature (Vampire) and has no rider, no flight and no armour save.
 
 In the book as printed this entry would have had an obvious rival, since a Vampire on a Zombie Dragon is a ridden Monstrous Creature with the same Terror and the same Stomp, and brings Leadership, challenges and a hundred points of magic items along with it. An Ordo Draconis does not field the Zombie Dragon, but it now sells the same animal as a mount, so the rival is its own Elder Wyrm with a character on it at 140 points. That is the honest comparison and this entry loses it on paper: the same creature, and the ridden one brings Leadership, challenges and magic items for a hundred and thirty points less than the unit costs. What the unit buys is a body that is not a character, in an army whose characters are rationed one non-Blood-Dragon to a Blood Dragon and whose Rare allowance is the only place a monster fits once the Lords budget is spent.
 
@@ -1607,15 +1636,17 @@ The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, 
 
 And taking the missile weapons out is a real loss of options for very little in return. A handful of entries lose a line each, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
-The four items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges.
+The five items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges.
 
 And the Banner of the First Sworn puts Weapon Skill 7 and Initiative 6 on a regiment for 35 points, which is above the line where most things in the game stop hitting it on 3s; the Cathay and Araby anchors say the price is right, and neither of them was pricing it onto a 44-point model.
 
-None of the four has a game behind it.
+The Standing Ration is the one whose worth depends on a rule with no play behind it. Twenty-five points to stop a Thirst value falling is either the difference between Regeneration (6+) and (4+) across a long grind, or it is nothing at all. In a game where the unit is never in combat two phases running it buys nothing.
+
+None of the five has a game behind it.
 
 #namecost("WHAT IT TOOK", "")
 
-A chapter of background, three new unit entries with an upgrade path shared between two of them, two special characters, four Magic Items, one requirement, four category moves, one reduced profile sold at the printed price, and a paragraph in the rulebook.
+A chapter of background, four new unit entries with an upgrade path shared between two of them, two special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, three category moves, one reduced profile sold at the printed price, and a paragraph in the rulebook.
 
 That last is the part that was not about this list at all. The rulebook had no notion of an Army of Infamy, so the first one had to introduce the idea as well as the list, and _Choosing Your Army_ is where it went: a book may offer an alternative composition, both players should know which is in use before deployment, and such a composition may change which units count towards the Core minimum. That last clause is the one this list could not have been written without, since Choosing Your Army is where the quarter is set.
 
@@ -1625,9 +1656,9 @@ The same shape is waiting twice more in *Vampire Counts*. Strigany may only be t
 
 *An Ordo Draconis at 2,000 points.* A Blood Dragon Lord at 215 and a Kastellan at 100 lead it, and being two Blood Dragons they license two characters who are not Blood Dragons. This one takes a Wight Lord at 100 and leaves the second slot unspent.
 
-Twenty-one Blood Guard at 462 and ten Blood Knights at 360 are the Core, which is 822 of qualifying Core against a 500-point minimum, with neither unit near the ceiling that stops any single unit costing more than a quarter of the army. An Elder Wyrm at 210 and a Varghulf at 135 take 345 of the Rare allowance.
+Twenty-one Blood Guard at 462 and ten Blood Knights at 360 are the Core, which is 822 of qualifying Core against a 500-point minimum, with neither unit near the ceiling that stops any single unit costing more than a quarter of the army. An Elder Wyrm at 210 and a Varghulf at 110 take 320 of the Rare allowance.
 
-That is 1,582. Thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights. The last 343 go on command groups, the Flag of Blood Keep, powers and items across the three characters, and the 35 that make the Lord a Level 1 Wizard, because thirty Zombies are an Undead unit and The Generals of Undeath wants a Necromancer for them.
+That is 1,557. Thirty Zombies add 75 more and count towards nothing at all, being there to die in front of the knights. The last 368 go on command groups, the Flag of Blood Keep, powers and items across the three characters, and the 35 that make the Lord a Level 1 Wizard, because thirty Zombies are an Undead unit and The Generals of Undeath wants a Necromancer for them.
 
 The list rations characters one to a Blood Dragon, so that Necromancer is either the Lord himself or the slot the Wight Lord is standing in. The Lord is cheaper.
 
