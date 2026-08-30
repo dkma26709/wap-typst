@@ -1299,7 +1299,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 - *The Hauberk of the Ordo:* Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).
 
 #field("VAMPIRIC POWERS", "Blademaster, Dread Knight")
-#field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
+#field("SPECIAL RULES", "Fly (8) (the Dam only), Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
 
 - *The Marshal:* Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.
 - *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
