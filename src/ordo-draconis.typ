@@ -89,6 +89,26 @@ The arrangement is the same everywhere and he invented very little of it. A lord
 
 The reason the arrangement holds is bookkeeping. Grain does not come back once it is eaten. A son does not come back at all. Blood comes back in a month. He is the only lord these places have ever dealt with whose tribute costs them nothing they will still be missing next year. The first visit is never paid for either: he deals with whatever is killing the place, and leaves, and if the village wants him a second time the terms are read out. Several have declined. He has not returned to those, and nothing is known to have happened to them.
 
+#runin[The mountain]
+
+The keep was built the way anything is built, and the building is in the ledger. It went up above one of the two valleys he holds in the Grey Mountains, which were the first two things he held. Masons were hired and paid, the byres were cut, and every season of it survives as an expenses column in the usual hand.
+
+What the masons found when they cleared the crag is in the ledger too, because a foundation already dressed is a saving and he entered it as one. Courses of old stone squared by nobody, set deeper than anyone cared to dig, in a pattern the master mason declined to comment on. The Dam laired in the upper works then, and the bats were over it then. He took the mountain from nobody. It was nobody's, and it had been nobody's for long enough that no duchy had a word for it.
+
+The keep stood still on that footing until it could not, for the reason already given. How the household learned that it could do otherwise is in no account anyone has produced. The ledger's first evidence is a season of stores accounted at a place the keep had never been, entered without remark.
+
+Two things have been noticed since, and not pursued. Every ground the keep has ever stood on had old stone in it before the keep came — a ring, a marker, a course laid before the duchies had names — and the herdsmen will tell anyone that the drakes graze badly near such stones. And the hold nearest the first valley keeps books older than Bretonnia, and its roads have bent around that mountain since they were laid. Nobody in the order has asked what the books say. If an answer is written anywhere, it is written there, filed under the mountain and not under him.
+
+#runin[The porter]
+
+The gate is where it is because of what stood in it. The foundation's one doorway held a figure of the same stone, man-shaped the way a mountain is man-shaped, with a blade of it in its hands, and the masons' attempt on it is in the ledger as day-wages, hired oxen and two broken shear-legs. The gatehouse was built to fit it instead, which was cheaper.
+
+It is in no book. Not the tally, because the herdsmen count what eats. Not the tithe, because it owes nothing. Not the roll, because the roll is names put down by their owners, and it has none. It is the only thing in the order's service with no entry anywhere, and the household, who name things in Bretonnian, settled it sideways: the man who keeps a gate is a porter. The joke is old enough now to be the name.
+
+When the household rides out it comes down from the gate and walks with them, and it has never once been anywhere the keep was not. Nobody commands it and nobody has needed to. Whether it is a fixture or a tenant has been argued in the household's hearing by two knights who do not agree, and the argument is not close to over. The necromancers do not work within sight of the gate. Asked why, two of them gave three answers, and none has been checked.
+
+Asked whether it came with the mountain, he said what he says about the Dam.
+
 #runin[The signal]
 
 The keep works a circuit. Between visits there is a way of asking for it that the villages do not discuss with outsiders. A fire is lit on a hilltop, behind a board cut to the order's device. On a night with low cloud the drake stands on the underside of it, black on grey, and can be read from the next valley. It arrives, the thing that could not be stopped is stopped, and it goes. The peasants of six duchies know the shape of it on the horizon. They do not mention it to visiting knights.
@@ -265,7 +285,7 @@ The knights will discuss the warrant, the count and the four refusals, cheerfull
 
 Bretonnia has no view, because Bretonnia does not know. Sylvania has a view and it is wrong. The Ordo stopped correcting them about the order's own name, and it is not going to start with this.
 
-_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still, the ledger and every engagement in it, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
+_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
 
 = CHOOSING AN ORDO DRACONIS
 
@@ -1266,6 +1286,29 @@ The Sworn the household puts in the air. A keep that arrives where it likes keep
 
 _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs elsewhere in the corpus. A Nightmare is 15 and a Hellsteed 25; a Knight of the Realm is 25 and a Pegasus Knight 50. It sits under the Vargheist that the parent book prices at 50, which is the right way round. Better Weapon Skill, Initiative and Leadership, and a save, against one Wound where the beast has three. No entry in any of the thirty-one books is Monstrous Infantry with a single Wound. This one is, and that is the fair objection to it._]
 
+#entry("THE PORTER")
+
+It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
+
+#profile(
+  (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: 5, ld: 10, points: 280),
+)
+#field("TROOP TYPE", "Monster (Animated Construct)")
+#field("BASE SIZE", "50x75, 60x100 or 100x150")
+#field("EQUIPMENT", "Polearm, heavy armour")
+#field("SPECIAL RULES", "Animated Construct, Regeneration (6+), Unstable")
+
+- *Granite:* The Porter has +1 to its armour save and the Immunity (Multiple Wounds) special rule.
+- *Obsidian:* The Porter has the Magic Resistance (2) special rule. In addition, enemy Wizards within 12" suffer a \-1 casting penalty.
+
+#field("NOTES", "")
+
+- There is one Porter. No army may include more than one.
+- The Porter is not Undead. The Lore of Necromancy cannot mend it, the battle standard does not lessen what it loses to Unstable, and it owes no Necromancer under The Generals of Undeath.
+- An Animated Construct may never march, and the Porter is no part of the dead, so the General's presence does not lift the restriction.
+
+#note[_Terror, Stomp (D6) and a Line of Sight value of 5 are not written here because the Monster troop type grants all three. This is Grand Cathay's Terracotta Sentinel, printed at that book's prices with the granite and the obsidian bought in and the Yang rule left behind with the army rules that define it. Immunity (Multiple Wounds) is the granite doing what granite does: a cannon that finds it takes a chip rather than a D6 of Wounds, which is the only way something that covers six inches a turn survives owning the ground it stands on. The working is in the design chapter._]
+
 #entry("TERRORGHEIST")
 #profile(
   (name: "Terrorgheist", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 6, i: 3, a: 4, ld: 4, points: 225),
@@ -1423,6 +1466,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries, and the wyrms are character mounts as well"),
   ("Blood Heralds", "Does not exist", "Rare, new entry, the Sworn profile winged and on foot, 45 points"),
+  ("The Porter", "Does not exist", "Rare, Grand Cathay's Terracotta Sentinel with the granite and the obsidian folded in, one only, 280 points"),
   ("Great Wyrm", "Does not exist", "Character mount, new, Blood Dragon Lord only"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
@@ -1520,6 +1564,16 @@ Forty-five is a Sworn Blood Guard at 27, what wings cost elsewhere in the corpus
 Set against the Vargheist this list does not field, which *Vampire Counts* prices at 50 for the same troop type, the same base and the same Fly (8). That one has three Wounds, four Attacks under Frenzy, and no armour at all. This one has a single Wound, three Attacks, a 4+ save, two points of Weapon Skill, one of Initiative, one of Leadership, and a command group. Five points under the beast is the right way round, and the Wounds are the reason.
 
 The novelty is worth stating rather than hiding. No entry in the thirty-one books is Monstrous Infantry with a single Wound; the Ogres, the Trolls and the Crypt Horrors all carry three. Nothing in the rulebook forbids it and nothing here depends on it. But it is the first of its kind, and a reader will notice before we do.
+
+#field("The Porter", "")
+
+Two hundred and eighty is Grand Cathay's numbers: the Terracotta Sentinel at 235, the granite at 25, the obsidian at 20. One thing in the sum is ours, and it should be stated rather than found. That book sells its upgrades one to a sentinel, and this entry buys two and pays for both. The exclusivity there is a catalogue's — pick a variant off the shelf — and the Porter is not a variant of anything: it is one object that is both old granite and unquiet ground for sorcery, so it carries both natures at their full printed prices. The Yang rule stayed in Cathay with the army rules that define it, and so did the rest of the elemental menu — jade and warpstone are a catalogue, and a catalogue implies a workshop this order does not keep.
+
+Priced with Cathay's numbers, and worse off here than they suggest. It is not Undead, so Invocation cannot mend it, the lore attribute passes over it, and the battle standard does not soften its crumble. It may never march, and the exception for the dead is written for the dead. Once wounded, it is wounded. And six inches a turn is a different price in this book than in that one. Grand Cathay shoots, so a sentinel that cannot hurry stands in a line the enemy must come to; the Ordo Draconis is forbidden every missile weapon it might have waited behind, and goes to the enemy at a pace the Porter does not share. The same statline is simply worth less in an army that has to cross the field. The Terrorgheist at 225 flies, screams, and is knit back together every magic phase; fifty-five points over it buy a Toughness, a Strength, an Attack, the granite's immunity and the obsidian's ground, and give up the air, the shriek and every form of repair this book contains. That is the right side of the line to err on for an entry there can only be one of.
+
+Every other entry in this list is a relationship with terms: the household swore, the Wights answered the second question, the levy signed the roll, the herd is bought and paid for in sheep. The Porter agreed to nothing, and is permitted to be the exception because it was never asked — it was there before the order, before the keep, and before anybody now arguing about it. One is a mystery; two would be a product. That is why there is one, and why the prose never uses a plural.
+
+And the borrowing runs in the right direction. The foundation is first-age work, older than the duchies and older than both realms that proclaim against the man living on it, and of the living races only the Lizardmen ever dealt with the hands that laid such courses. Cathay's sentinels are simply the nearest thing any human book prints. The entry is borrowed from *Grand Cathay* because that book printed the right statue, not because the stone is Cathayan.
 
 #field("The drakes as character mounts", "")
 
