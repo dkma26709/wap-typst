@@ -1205,7 +1205,7 @@ The household on foot, who fight that way because the walls are behind them. The
 
 - May upgrade one Zombie to a Musician +5 points
 - May upgrade one Zombie to a Standard Bearer +10 points
-#compact-entry("FELL BATS")[
+#entry("FELL BATS")
 #profile(
   (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 12),
 )
@@ -1213,7 +1213,6 @@ The household on foot, who fight that way because the walls are behind them. The
 #field("TROOP TYPE", "War Beast (Chiropter)")
 #field("BASE SIZE", "40x40")
 #field("SPECIAL RULES", "Fly (9)")
-]
 #entry("BAT SWARMS")
 #profile(
   (name: "Bat Swarm", m: 1, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 3, points: 30),
