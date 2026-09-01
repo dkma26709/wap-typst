@@ -93,11 +93,11 @@ The reason the arrangement holds is bookkeeping. Grain does not come back once i
 
 The keep was built the way anything is built, and the building is in the ledger. It went up above one of the two valleys he holds in the Grey Mountains, which were the first two things he held. Masons were hired and paid, the byres were cut, and every season of it survives as an expenses column in the usual hand.
 
-What the masons found when they cleared the crag is in the ledger too, because a foundation already dressed is a saving and he entered it as one. Courses of old stone squared by nobody, set deeper than anyone cared to dig, in a pattern the master mason declined to comment on. The Dam laired in the upper works then, and the bats were over it then. He took the mountain from nobody. It was nobody's, and it had been nobody's for long enough that no duchy had a word for it.
+What the masons found when they cleared the crag is in the ledger too, because a foundation already dressed is a saving and he entered it as one. Courses of old stone squared by nobody, set deeper than anyone cared to dig. The one description of them in writing is the master mason's invoice, which charges double for dressing stone that would not take his marks. The Dam laired in the upper works then, and the bats were over it then. He took the mountain from nobody. It was nobody's, and it had been nobody's for long enough that no duchy had a word for it.
 
-The keep stood still on that footing until it could not, for the reason already given. How the household learned that it could do otherwise is in no account anyone has produced. The ledger's first evidence is a season of stores accounted at a place the keep had never been, entered without remark.
+The keep stood still on that footing until it could not, for the reason already given. How the household learned it could do otherwise depends on who is telling it. One version has a wight standing at a gate that faced the wrong way at dawn. Another has the Dam leaving first and the keep following her. The knights who were there tell neither. The ledger records a season of stores accounted at a place the keep had never been.
 
-Two things have been noticed since, and not pursued. Every ground the keep has ever stood on had old stone in it before the keep came — a ring, a marker, a course laid before the duchies had names — and the herdsmen will tell anyone that the drakes graze badly near such stones. And the hold nearest the first valley keeps books older than Bretonnia, and its roads have bent around that mountain since they were laid. Nobody in the order has asked what the books say. If an answer is written anywhere, it is written there, filed under the mountain and not under him.
+Two things have been noticed since. Every ground the keep has ever stood on had old stone in it before the keep came — a ring, a marker, a course laid before the duchies had names — and the herdsmen will tell anyone that the drakes graze badly near such stones. And the hold nearest the first valley keeps books older than Bretonnia, and its roads have bent around that mountain since they were laid. Nobody in the order has asked what the books say. If an answer is written anywhere, it is written there, filed under the mountain and not under him.
 
 #runin[The porter]
 
@@ -125,9 +125,13 @@ Next, and more often each century, it goes out to meet something before that som
 
 Third, it is seen. The keep stands a day within sight of somebody who was considering something, and then it is not there. Nothing is fought and nothing is said. He holds no border and cannot garrison a dozen scattered places at once, so the ability to arrive is the only defence any of them has, and a lord who has watched it arrive somewhere else tends to revise his plans. The household consider this the dullest duty in the order. He considers it the cheapest thing they do.
 
-Fourth and rarely, one of the scattered agreements is called in. The terms of those are not discussed, including within the household.
+Fourth and rarely, one of the scattered agreements is called in.
 
 Beneath all four is the reason it began. A keep that stands still can be besieged, and he could not hold one against Bretonnia and Sylvania at once.
+
+#runin[The agreements]
+
+What the agreements are with is better attested than what they say. The villages hold that one of the dozen is a dwarf hold, which would account for a road that bends where no dwarf road should. Sylvania's version names a king in the south, owed something once and paid in full. A third account, Bretonnian, has the oldest of them predating the order and coming down to him with the mountain, made by nobody now alive to keep. No two of the three fit together, and the ledger, which prices everything the order owes, carries no page for any of them.
 
 #runin[The Green Knight]
 
@@ -183,7 +187,7 @@ The villages have never counted them at all. Weather is not a thing one reports 
 
 #runin[Other vampires]
 
-Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
+Other vampires do not know what to make of him. The von Carsteins have decided he is sentimental and will be dealt with in due course; the phrase is attributed to three different counts across a century and a half, and the dealing has yet to begin under any of them. The Lahmians have three times tried to place someone in his household. The Strigoi are said to find him funny. Walach Harkon has never called him back to Blood Keep and has never said why.
 
 #namecost("THE FIELD", "")
 
@@ -199,11 +203,25 @@ What the realm has never managed to fit into a proclamation is that he beats the
 
 Eleven times, and not once a pursuit.
 
+#runin[The other realm]
+
+The Empire's dealings with the order are mostly clerical, which suits both parties. The Cult of Sigmar's rolls list the Ordo Draconis as destroyed at Blood Keep, with honour, in the year the Keep fell. The thing that answers signal fires across the mountains is carried in a separate file, as an imposture trading on a martyred name. The two entries do not refer to one another, and both are maintained.
+
+Twice a witch hunter has crossed the pass to reconcile them. One returned and filed that the imposture rides in the old order's true harness and answers to its true ranks, and was retired the following spring. The other did not file.
+
+What the office cannot do is what Bretonnia did, and proclaim him damned. The order's charter is lawful, the rank on it was lawfully conferred, and the seal on the conferral is the temple's own. The realm that made the order has to hold it destroyed, because the alternative is that it is still in service.
+
 #runin[The herds]
 
 Most of the ledger is beastmen. That is what comes down on an upland hamlet in a bad year, and dealing with it is the whole of what the arrangement buys. There is little to record. The household arrive, the herd is broken, the drakes are fed, and the village is told what it already knew about the woods.
 
 The one line worth reading is that a Doombull has never once declined. His oath binds him to issue and to accept, which against most enemies is a liability and has cost him two knights he could not replace; against beastmen it costs nothing, because the beastman wants the same thing he does and will come through his own herd to get it. He has called them the only enemy the Ordo has that is entirely straightforward.
+
+#runin[The greenskins]
+
+The greenskins of the Grey Mountains keep the only account of the order that approves of it. An orc that comes down on the keep's ground gets what no other enemy is promised: the lord comes out. Every time, in person, at the front, because the oath leaves him no other answer, and the fight is worth the walk. Warbosses have gone past richer ground to get it, and more than one has come back for another go. The ledger enters these engagements in fewer words than any other kind, there being little to say about a thing that went exactly as both sides intended.
+
+The levy they hold to be a swindle. A skeleton neither fears nor tires nor fights back with any conviction, and breaking one is work, not sport. The goblin account calls the household the best scrap in the mountains and the rest of the army a cheat, and the household has heard worse filings from better record-keepers.
 
 #runin[What will not stand]
 
@@ -240,6 +258,12 @@ How the keep got there is the part the order cannot explain, and the only record
 They were there long enough to be met. A king came out to them in gold, with an army drawn up in ranks that had been drawn up that way before Bretonnia existed, and issued through a herald, correctly, at the proper distance. Emmerich accepted, that being the whole purpose of the journey: he had come to answer for the valley in person, and the king had come to be answered. Neither would break and neither could finish it, and the household's account says the two of them stopped by agreement and did not speak, having no language between them. The order has argued about it ever since, the argument being whether the king had understood who he was fighting; the two knights who stood closest took opposite views and are both still in the household.
 
 He has said only that it was the most courteous army he has ever fought, and that he does not expect to be asked back.
+
+#runin[Lustria]
+
+There is one more record, and the order does not know it exists. In Lustria, where the oldest things keep the oldest books, the mountain has an entry. It has had one since before men, and it is not about the keep. What is recorded is the stone underneath: one course of a work laid across the world before the world had anyone to ask, tended in some places, lost in others, holding at the mountain. Whatever sits on it is noted the way weather over a field is noted, and the present notation, rendered approximately, is that the ground is kept and the keeping asks nothing. The slann do not tolerate the dead. They tolerate what tends the stones, and they have never once distinguished between doing a thing and knowing what it is one does.
+
+He has stood on it for two centuries, priced its footing as a saving, and never learned that there is anywhere in the world his ledger is the smaller book.
 
 #namecost("THE LAHMIAN", "")
 
@@ -285,7 +309,7 @@ The knights will discuss the warrant, the count and the four refusals, cheerfull
 
 Bretonnia has no view, because Bretonnia does not know. Sylvania has a view and it is wrong. The Ordo stopped correcting them about the order's own name, and it is not going to start with this.
 
-_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
+_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the files other realms keep on him, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
 
 = CHOOSING AN ORDO DRACONIS
 
