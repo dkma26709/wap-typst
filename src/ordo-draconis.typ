@@ -195,6 +195,34 @@ Other vampires do not know what to make of him. The von Carsteins have decided h
 
 The order keeps a record of its engagements, because it keeps a record of everything. It is not a chronicle. It is a ledger, in the same hand as the tally book, giving the place, the season, what was fought and what it cost in knights. Six duchies appear in it constantly. A few other places appear once.
 
+#runin[The extract]
+
+The ledger dates from its own first page.
+
+*Year 1 — the first valley.* Beastmen, down on the valley in a bad year. Dealt with for nothing, and the terms read out the following spring — blood, by measure, once a season, and nothing else. Taken.
+
+*Year 6 — the crag.* Masons by the season, at day-rates; double for stone that would not take the mason's marks. Moving the figure in the foundation's gate was priced at day-wages, hired oxen and two broken shear-legs, and the gatehouse was built to fit it instead.
+
+*Year 31 — the first proclamation.* Bretonnia proclaims the lord damned, naming nobody. He stops using the name he was born under the same year; there are people in Montfort still living inside it.
+
+*Year 44 — a season of stores.* Stores for a full season accounted at a place the keep had never been. No other record of the journey was made, and none of how.
+
+*Year 52 — the first field.* Bretonnia puts an army in the way, and the battle collapses into its middle, as every one since has. No pursuit is entered, there having been none to enter.
+
+*Year 96 — an orc came down.* The shortest entry in the book: the place, the season, and _settled_.
+
+*Year 117 — under the upland holding.* Four knights, against a great many rats and not the one that mattered. Entered as a defeat, in his own hand.
+
+*Year 139 — the desert.* Four drakes off their feed for a month and the byres rewetted daily, costed in full and filed as a stores complaint. Underneath, in a different hand: the season, and the place.
+
+*Year 163 — a winter.* No engagements are entered. The stores page is in his hand, which is not how stores are kept.
+
+*Year 178 — the bad coast.* Norscans ashore, the third year having come round again. Their champion issued before the lord did, correctly. Entered as ordinary.
+
+*Year 187 — a winter.* The entry is the same.
+
+*Year 200 — the eleventh field.* The same collapse into the middle. Eleven times, and not once a pursuit.
+
 #runin[The realm]
 
 Bretonnia has put an army in his way eleven times, and eleven times the same thing has happened. A Bretonnian host is arranged with peasants in front of the knights, which is the arrangement he left. A Bretonnian knight cannot decline a challenge and remain one, which is the arrangement he kept. So the battle collapses into its middle: the knights come forward because they must, the levy stands where it was put, and the two lines that were meant to grind each other never meet.
@@ -566,21 +594,31 @@ Five Vampiric Powers available only to a Vampire in an army chosen as an Ordo Dr
 
 #namecost("KEPT GROUND", "25 points")
 
+_A lord who cannot garrison a dozen places learned long ago to be the garrison._
+
 The model has the Hold Your Ground (6) special rule.
 
 #namecost("ON THE TALLY", "20 points")
+
+_A knight fights differently when his deeds are being entered, and stops the day the hand stops._
 
 May not be the army's General. For as long as the army's General is alive, the model adds +1 to the combat resolution of any close combat they are part of.
 
 #namecost("THE LONG WALK", "15 points")
 
+_He has stood on the far side of a volley once, and has been crossing that field ever since._
+
 The model has the Hatred special rule against any enemy unit containing one or more models armed with a missile weapon.
 
 #namecost("DRINK DEEP", "15 points")
 
+_The tithe is taken by measure. The field is the one place the measure is waived._
+
 Roll a D6 at the end of each Close Combat phase in which one or more models was slain by the model. On a 5+, the model recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
 
 #namecost("OLD ENOUGH", "10 points")
+
+_The blood finished with him long ago; a lucky stroke finds nothing left to end._
 
 The model gains the Immunity (Killing Blow, Multiple Wounds) special rule.
 
@@ -857,30 +895,44 @@ Seven Magic Items available only to an army chosen as an Ordo Draconis, each fol
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
 
+_The bats have never applied for a position, and keep station over one man anyway._
+
 Enchanted Item. Ordo Draconis only. Friendly units with the *Chiropter* keyword within 12" of the bearer may use the bearer's Leadership.
 
 #namecost("THE SIGNAL FIRE", "30 points")
+
+_A fire behind a cut board, read a valley away off the underside of the cloud — and what answers does not use the roads._
 
 Enchanted Item. Ordo Draconis only. One friendly unit with the *Draconid* keyword may deploy using the *Ambushers* special rule.
 
 #namecost("THE MUSTER ROLL", "15 points")
 
+_A name a man put down himself holds better than anything a necromancer says over him._
+
 Enchanted Item. Ordo Draconis only. Friendly units with the *Undead* special rule within 12" of the bearer suffer one fewer Wound than they normally would due to the Unstable special rule, or following the death of the army's General. This is not cumulative with the Battle Standard.
 
 #namecost("THE WITNESSED OATH", "25 points")
 
+_An oath sworn before witnesses binds both ways: he keeps the terms, and in a challenge the terms keep him._
+
 Talisman. Ordo Draconis only. Vampire only. While the bearer is fighting in a challenge, they have a Magical Ward (5+).
 
 #namecost("THE ROAD BEHIND", "20 points")
+
+_There is no outrunning a thing that arrives instead of travelling._
 
 Talisman. Ordo Draconis only. No enemy unit that the bearer, or a unit the bearer has joined, declares a charge against may choose Flee as a Charge Reaction.
 
 #namecost("THE BANNER OF THE", "")
 #namecost("FIRST SWORN", "35 points")
 
+_The men who follow it took the blood at the Keep, while there was still time to choose, and nothing that has happened since has been new to them._
+
 Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains +1 Weapon Skill and +1 Initiative.
 
 #namecost("THE STANDING RATION", "25 points")
+
+_Once a season, by measure, written down — the household does not run short._
 
 Magic Standard. Ordo Draconis only. The unit carrying this standard never reduces its Thirst value.
 
