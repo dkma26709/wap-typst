@@ -181,6 +181,8 @@ Somebody has to raise the dead as well, and he regards that as a chore. He learn
 
 The bats are not stock and are not in the tally book. The herdsmen hold that an animal which cannot be counted cannot be kept, and as far as the byres are concerned that settles it; the bats have never applied for the position. They are over the keep regardless, thicker there than anywhere in the six duchies, and they are over it again on the morning after a march that put the keep somewhere else. Whether the bats follow the keep or the keep goes where the bats already are has been argued twice in the household's hearing, and the two men who argued it did not agree.
 
+The bats come in sizes, and the six duchies have never agreed whether that is one animal at five ages or five animals. The small kind swarms. The middling kind hunts the passes in dozens. The large kind is the size of a horse and flies like a thrown coat, and the household have learned to put it where the fighting will be rather than ask it to arrive anywhere quickly. Past that the wings stop answering: the extra-large kind walks, the villages call it the fourth size anyway, and the tally book calls it a beast the order keeps. And the huge kind is not alive. A bat of that size cannot be, for reasons a stockman can set out with a slate and a dead calf, and the one in the order's service is the only bat the order has ever raised.
+
 What nobody disputes is that he knows what has crossed the pass before the riders come in to tell him. The necromancers in his service have a theory and have not been asked for it. It is not sorcery, which is the whole of why he will use it: a Blood Dragon may not stoop to a spell, and no oath yet written forbids a man to look up.
 
 The villages have never counted them at all. Weather is not a thing one reports to a duke.
@@ -309,7 +311,7 @@ The knights will discuss the warrant, the count and the four refusals, cheerfull
 
 Bretonnia has no view, because Bretonnia does not know. Sylvania has a view and it is wrong. The Ordo stopped correcting them about the order's own name, and it is not going to start with this.
 
-_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the files other realms keep on him, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
+_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the files other realms keep on him, the sky in five sizes, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
 
 = CHOOSING AN ORDO DRACONIS
 
@@ -338,7 +340,7 @@ _The mounts clause changes almost nothing at the table, and is worth having anyw
 
 Ten of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
 
-No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. No unit may be a *Vargheist* either: they are the feral get of the Bloodlines, and whoever keeps them, the Ordo does not. The Varghulf stays, because an order may keep a beast and may not put a rank of them in the line and call it a household. The Dire Wolves go for the reason the mounts clause already gives: the animals of this order are alive, and it keeps no dead ones it did not first bury as men.
+No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. The *Vargheists* of that book are the feral get of the Bloodlines, and whoever keeps those, the Ordo does not: an order may keep a beast, and may not put a rank of the get in its line and call it a household, which is why the Varghulf stays and the get does not. The Vargheists printed here are a different animal wearing the name — the large kind of the keep's own bats — and vampires who arrive expecting the other thing are frequently surprised. The Dire Wolves go for the reason the mounts clause already gives: the animals of this order are alive, and it keeps no dead ones it did not first bury as men.
 
 _What Was Changed_, at the back of this book, sets the whole of it out beside *Vampire Counts* 3.0.
 
@@ -1225,6 +1227,20 @@ The ones who have had it long enough for it to have finished with them. There is
 - May upgrade one Black Knight to a Musician +5 points
 - May upgrade one Black Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
+#entry("VARGHEISTS")
+
+The large kind of the keep's own bats, horse-sized and ill-tempered, that the household puts where the fighting will be rather than asking it to arrive anywhere in a hurry. They are not the feral get of the Bloodlines that the rest of the world files under the name, and the order has never seen a reason to say so before the charge goes in.
+
+#profile(
+  (name: "Vargheist", m: 2, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 30),
+)
+#field("UNIT SIZE", "3-9")
+#field("TROOP TYPE", "Monstrous Beast (Chiropter)")
+#field("BASE SIZE", "40x40")
+#field("SPECIAL RULES", "Fly (8)")
+
+#note[_The parent book's Vargheist is Monstrous Infantry (Vampire) at 50: Frenzy, The Red Thirst, Vampiric, Weapon Skill 4, Leadership 7 and a walking pace of six. This is what is left when the Blood is taken out of the entry — the animal's Strength, Wounds and wings, a beast's Weapon Skill and Leadership, and a bat's gait, the family walking at one and two and living in the air. Monstrous Beasts carry Fear and Independent on their own account, and Not in the Tally already speaks to the second: the sky answers to Emmerich and nobody else. The working is in the design chapter._]
+
 #entry("VARGHULF")
 #profile(
   (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
@@ -1507,7 +1523,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Every Chariot, Shrine and War Machine", "Core, Special and Rare", "Not in this book"),
   ("Flesh Golems, Necrofex Colossus, Zombie Dragon", "Special, Rare, Rare", "Not in this book"),
   ("Sylvanian Levy, Strigany, Skeleton Archers", "Core", "Not in this book"),
-  ("Vargheists", "Special", "Not in this book"),
+  ("Vargheists", "Special, Monstrous Infantry (Vampire), 50 points", "Special, the keep's own animal — Monstrous Beast (Chiropter), 30 points — sharing nothing but the name"),
   ("Lahmian Handmaidens", "Rare", "Not in this book"),
   ("Every Special Character in that book", "Fifteen of them", "Not available"),
   ("Characters", "Thirteen entries", "Blood Dragons, Wight Lords and Necromancers"),
@@ -1585,9 +1601,13 @@ In the book as printed this entry would have had an obvious rival, since a Vampi
 
 Forty-five is a Sworn Blood Guard at 27, what wings cost elsewhere in the corpus, and Terror. The corpus charges ten to fifteen for flight on a body this size. A Nightmare is 15 against a Hellsteed at 25. A Knight of the Realm is 25 against a Pegasus Knight at 50, and that second pair buys a far better animal along with the wings. Terror is not written on the entry because the troop type already grants it, Monstrous Infantry carrying Fear and Vampiric carrying it again.
 
-Set against the Vargheist this list does not field, which *Vampire Counts* prices at 50 for the same troop type, the same base and the same Fly (8). That one has three Wounds, four Attacks under Frenzy, and no armour at all. This one has a single Wound, three Attacks, a 4+ save, two points of Weapon Skill, one of Initiative, one of Leadership, and a command group. Five points under the beast is the right way round, and the Wounds are the reason.
+Set against the parent book's Vargheist, which *Vampire Counts* prices at 50 for the same troop type, the same base and the same Fly (8). That one has three Wounds, four Attacks under Frenzy, and no armour at all. This one has a single Wound, three Attacks, a 4+ save, two points of Weapon Skill, one of Initiative, one of Leadership, and a command group. Five points under the beast is the right way round, and the Wounds are the reason.
 
 The novelty is worth stating rather than hiding. No entry in the thirty-one books is Monstrous Infantry with a single Wound; the Ogres, the Trolls and the Crypt Horrors all carry three. Nothing in the rulebook forbids it and nothing here depends on it. But it is the first of its kind, and a reader will notice before we do.
+
+#field("Vargheists", "")
+
+Thirty is a Fell Bat grown up, and the working runs from both ends. From below: twelve buys the middling bat, and the large one is a Strength, a Toughness, a Wound, an Attack and Fear over it at two and a half times the price. From above: the parent book's Vargheist is 50, and this entry takes off Vampiric, The Red Thirst, Frenzy's extra Attack, a point of Weapon Skill, two of Leadership and four of walking pace, which is most of what the 50 was buying. What is left is the animal, and the animal is 30 — Leadership 5 and Independent besides, so it panics like an animal too, unless the man the sky answers to is on the field.
 
 #field("The Porter", "")
 
