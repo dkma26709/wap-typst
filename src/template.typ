@@ -31,7 +31,10 @@
 // spells. The cost is optional; several entries carry only a name.
 // `sticky` keeps the name with the rules text that follows, so a heading is
 // never stranded at the foot of a column.
-#let namecost(name, cost) = block(above: 0.9em, below: 0.2em, sticky: true, {
+// `above` is a parameter because a magic item wants a wider gap before its name
+// than a run-in name inside a unit entry does, and the two share this function.
+// The default is what every caller but `magic-item` uses.
+#let namecost(name, cost, above: 0.9em) = block(above: above, below: 0.2em, sticky: true, {
   // Justification would stretch a two-word name across the whole column, so it
   // is switched off here and the name column sized to its content.
   set par(justify: false)
@@ -155,6 +158,13 @@
 // asking what a weapon is gets an answer rather than a blank.
 #let MAGIC_WEAPON_DEFAULT_TYPE = "Hand weapon"
 
+// The gap before an item's name. Wider than the 0.9em a `namecost` takes
+// elsewhere: a magic-item section is a list of sixty short records rather than
+// continuous prose, and at the paragraph gap the eye reads one item's rules as
+// running into the next item's name. Set here rather than in `namecost` so it
+// is the magic items that get the air, and not every run-in name in the corpus.
+#let MAGIC_ITEM_GAP = 1.2em
+
 // `cost` is a number, not "45 points". The unit is the same for every item in
 // every book, so writing it out at each of them only creates somewhere for
 // "15 Points" to differ from its five hundred neighbours - which, in the source
@@ -206,7 +216,8 @@
   // The asterisk is the rulebook's mark for a *common* item - one that may be
   // taken more than once in an army - so it is carried by a flag rather than
   // typed into the name, where it reads as spelling and can be lost to one.
-  namecost(name + if common { "*" } else { "" }, str(cost) + " points")
+  namecost(name + if common { "*" } else { "" }, str(cost) + " points",
+    above: MAGIC_ITEM_GAP)
   // Not wrapped in a block: the qualifiers open the item's first paragraph, as
   // they do on the printed page, rather than standing off from it as a line of
   // their own.
