@@ -47,6 +47,39 @@
   )
 })
 
+// A spell heading: its name, its casting value set flush right where an item's
+// cost would sit, and its level on the line beneath. The source sets these as a
+// name and a subordinate line ("BREATH OF MORK" / "Level 2 Cast on 7+"), which
+// extraction could only render as two `namecost` calls, the second carrying the
+// level and cast as though they were an unpriced item name.
+//
+// Deliberately not a heading. `emit.py` counts level-2 headings as the book's
+// entries, so setting one here would fold every spell in the corpus into a
+// tally the site presents as unit entries.
+//
+// Header only, with the rules text flowing after it, like `namecost` and
+// `entry` - a spell is a sequence, not a record, and its body is often several
+// paragraphs and a chart.
+#let spell(name, level, cast: none) = {
+  [#metadata((kind: "spell", name: name, level: level, cast: cast))<meta>]
+  block(above: 0.9em, below: 0.3em, sticky: true, {
+    // As in `namecost`: justification would stretch a short name across the
+    // column, and the name column is sized to its content.
+    set par(justify: false)
+    grid(
+      columns: (1fr, auto),
+      align: (left + bottom, right + bottom),
+      column-gutter: 0.6em,
+      text(weight: "bold", size: 11pt, tracking: 0.04em, hyphenate: false)[
+        #upper(name)
+      ],
+      if cast != none { text(size: 9.5pt, style: "italic")[Cast on #cast] } else { none },
+    )
+    block(above: 0.35em, below: 0em,
+      text(size: 9pt, weight: "bold", tracking: 0.06em, fill: muted)[#upper(level)])
+  })
+}
+
 #let para(rs, style: "body") = {
   if style == "italic" {
     // Flavour text: inset and a shade smaller than the rules body.
@@ -70,6 +103,66 @@
     if it.sub.len() > 0 { list(..it.sub.map(s => runs(s))) }
   }),
 )
+
+// --- option lists -----------------------------------------------------------
+
+// An option line: description left, cost flush right, dotted leader between, as
+// the source sets them. Extraction can only run the two together as one
+// sentence ("May take a shield +5 points"), which loses the cost as a value.
+//
+// Built as a grid rather than one paragraph, for the same reason `namecost` is.
+// `box(width: 1fr)` swells to take the slack on the line, which is what pushes
+// the cost right and lets `repeat` tile the dots into it - but in a single
+// paragraph a cost that does not fit the last line wraps onto its own, flush
+// left, with the leader left as a stub. Giving the cost its own column keeps it
+// bottom-right of the description however many lines that runs to. It reserves
+// its width on every line, so a long description wraps a line earlier; a price
+// stranded on the wrong side of the column is the worse of the two.
+#let _dotline(desc, cost) = {
+  set par(justify: false)
+  grid(
+    columns: (1fr, auto),
+    align: (left + bottom, right + bottom),
+    column-gutter: 0.6em,
+    [#desc#box(width: 1fr, inset: (x: 2pt), repeat([.], gap: 2.6pt))],
+    cost,
+  )
+}
+
+// `opt` and `optgroup` render nothing - they return tagged dictionaries that
+// `options` renders. The indirection is Typst's: a bullet list has to be built
+// in one `list(..)` call, so the items cannot each emit their own markup.
+#let opt(desc, cost) = (kind: "opt", desc: desc, cost: cost)
+
+// A group is an option that carries its own sub-options, conditional on it -
+// "may upgrade one model to a Standard Bearer" and then what that bearer may
+// carry. `cost` is optional: several groups are only a heading for the lines
+// beneath and have no price of their own.
+#let optgroup(head, cost: none, ..subs) = {
+  let subs = subs.pos()
+  assert(subs.len() > 0, message: "optgroup: no sub-options")
+  for s in subs {
+    assert(type(s) == dictionary and s.at("kind", default: none) == "opt",
+      message: "optgroup: sub-options must each be opt(..)")
+  }
+  (kind: "group", head: head, cost: cost, subs: subs)
+}
+
+#let options(..items) = {
+  let items = items.pos()
+  assert(items.len() > 0, message: "options: no options")
+  for it in items {
+    assert(type(it) == dictionary and it.at("kind", default: none) in ("opt", "group"),
+      message: "options: every item must be opt(..) or optgroup(..)")
+  }
+  list(..items.map(it => if it.kind == "opt" {
+    _dotline(it.desc, it.cost)
+  } else {
+    [#if it.cost != none { _dotline(it.head, it.cost) } else { it.head }
+     #list(marker: text(fill: hair)[--],
+       ..it.subs.map(s => _dotline(s.desc, s.cost)))]
+  }))
+}
 
 // The indented italic note that sits beneath a profile. The twin of
 // `para(.., style: "italic")` for hand-written books, which pass content rather
