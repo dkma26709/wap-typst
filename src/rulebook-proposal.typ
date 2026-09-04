@@ -5814,3 +5814,33 @@ This is a direction rather than an edit, and the bill is every character section
 #minitable(("Rule", "Book", "What it changes"), ("Master of Battle", "Empire", "One unit of Knights per character carrying the rule may be upgraded to Inner Circle", "Big 'Uns", "Orcs & Goblins", "One unit per Warboss may be upgraded, and moves from Core to Special", "Army of Kroq-Gar", "Lizardmen", "A list he leads may take Saurus Cold One Riders as a Core choice", "Prophet of Sotek", "Lizardmen", "Six different unit entries may be upgraded to Red Crested Skinks"))
 
 Three of those four belong to named models. Only the first is available to a list that has not spent its points on a character out of the story, and it is the one worth copying: it keys off a rule rather than a name, so any entry in any book could be given it.
+
+#namecost("Take the common magic items out of the rulebook", "under discussion")
+
+The eighty-two magic items the rulebook offers to every army would go, and each army book's own list would grow to cover the ground they leave. A magic item would then always be something a particular army has, rather than something anybody may buy.
+
+#field("Why", "")
+
+The common list is the reason a Dwarf and a Dark Elf can carry the same sword. Nineteen arcane items, eighteen weapons, fourteen suits of armour, twelve standards, ten talismans and nine enchanted items sit in the rulebook, available to all thirty-two armies at once, and they are the least characterful things any of those armies can spend points on.
+
+The books are already carrying the weight without it. Thirty of them print magic items of their own, seventeen hundred and ten in total, a median of fifty-four to a book. The common list is not filling a gap; it sits on top of lists that were already long enough to choose from.
+
+An item anyone may take cannot say anything about the army taking it, so it competes on efficiency alone and wins on efficiency alone. A faction item competes on what it does for that faction's plan, which is the argument a magic item ought to be having.
+
+#field("The argument against", "")
+
+The common list is the shared vocabulary. A player who has learned what one of those items does has learned it for every game against every opponent, and thirty-two divergent lists is thirty-two things to look up instead of one. Removing it makes every army harder to read across the table.
+
+It is also the safety net under the thinner books, and they are thinner than the median suggests. The Dwarfs print nineteen items of their own against a median of fifty-four, so deleting the common list costs some armies a large share of everything they could buy. This is not one change; it is thirty small commissions.
+
+#field("What it would take", "")
+
+The casualty easiest to miss is the asterisk. Twenty-nine of the eighty-two common items are marked as takeable in multiples, and only fourteen of the thirty books print an asterisked item of their own. Delete the common list as it stands and sixteen armies lose the ability to field any magic item in multiples whatever, so the asterisk has to be redistributed in the same pass.
+
+#field("For example", "")
+
+*Where the items actually are.* Counted from the books themselves:
+
+#minitable(("Source", "Items", "Takeable in multiples"), ("The rulebook, open to every army", "82", "29", "The thirty books' own lists", "1,710", "80", "Dwarfs, the shortest list", "19", "0", "Orcs & Goblins, the longest", "120", "1"))
+
+Sixteen of the thirty books print no asterisked item at all. For those armies, every magic item that may be taken more than once today comes out of the list this proposal deletes, which is why the asterisk cannot be left until afterwards.
