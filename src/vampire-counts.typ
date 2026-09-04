@@ -487,8 +487,7 @@ Vampires only. Heavy armour. This item gives the wearer the Immunity (Killing Bl
 
 Medium armour. When the wearer fails their first armour save (or if they are wounded by an attack which ignores armour saves), the Armour of Bone crumbles to dust and is destroyed, but the Wound is ignored. This armour may be taken by Necromancers despite them normally not being allowed to take armour.
 
-#namecost("THE CURSED SHIELD", "")
-#namecost("OF MOUSILLON", "10 points")
+#namecost("THE CURSED SHIELD OF MOUSILLON", "10 points")
 
 Shield. This item causes one enemy model in base contact of your choice to lose 1 Attack. In addition, the bearer gains the Hatred (Bretonnia) special rule, and all models in _Warhammer: Bretonnia_ have the Hatred special rule against the bearer.
 
@@ -712,8 +711,7 @@ All Wights in the same unit as this standard receive +1 To Hit in close combat. 
 
 All enemy units with Line of Sight to this standard suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).
 
-#namecost("CURSED PENNANT", "")
-#namecost("OF MOUSILLON", "35 points")
+#namecost("CURSED PENNANT OF MOUSILLON", "35 points")
 
 Blood Dragon, Skeletons, Wights or Blood Knights only. May only be taken if your army includes a Blood Dragon Vampire Character. Any enemy unit that is in base contact with the unit carrying this standard must re-roll 6's when rolling To Hit, To Wound and when taking armour saves.
 
@@ -753,8 +751,7 @@ Any Undead model (including mounts) in the unit carrying this standard that is s
 
 Undead only. May only be taken if your army includes a Necrarch Vampire Character. The unit carrying this standard may March despite being Animated Constructs.
 
-#namecost("BANNER OF THE ENDLESS", "")
-#namecost("NIGHTMARE", "10 points")
+#namecost("BANNER OF THE ENDLESS NIGHTMARE", "10 points")
 
 The unit carrying this standard counts as having one more rank than normal for the purpose of combat resolution.
 

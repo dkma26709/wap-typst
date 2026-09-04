@@ -210,8 +210,7 @@ Sadhu only. The bearer of this item gain +1 Leadership when using Prayers of the
 
 All models in the unit carrying this banner gain a Magical Ward (5+) and the Stubborn special rule.
 
-#namecost("STANDARD OF DIVINE", "")
-#namecost("INCANDESCENCE", "45 points")
+#namecost("STANDARD OF DIVINE INCANDESCENCE", "45 points")
 
 Enemies suffer \-1 To Hit with missile weapons against the unit carrying this magic standard. In addition, all models in base contact with the standard suffer a Strength 4 Hit with the Flaming Attacks and Magical Attacks special rules at the beginning of each Close Combat phase. This is increased to Strength 5 against Daemons, Undead and Vampires.
 

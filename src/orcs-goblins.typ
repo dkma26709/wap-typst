@@ -513,18 +513,15 @@ _Acidic Bile_ is a *direct damage area* with a range of 18" that uses the small 
 
 #entry("MAGIC WEAPONS")
 #columns(2)[
-#namecost("BATTLEAXE OF THE LAST BIG", "")
-#namecost("WAAAGH!", "85 points")
+#namecost("BATTLEAXE OF THE LAST BIG WAAAGH!", "85 points")
 
 Orcs only. Roll a D6 at the start of each round of combat – the wielder of this weapon adds that number to both his Attacks and Strength in that round. However, the bearer's Weapon Skill is lowered by an amount equal to half the dice roll (i.e. 1\-2 = \-1 Weapon Skill, 3\-4 = \-2 Weapon Skill, and 5\-6 = \-3 Weapon Skill).
 
-#namecost("WARBOSS IRONCLAW'S WAAAGH!", "")
-#namecost("CLEAVA", "60 points")
+#namecost("WARBOSS IRONCLAW'S WAAAGH! CLEAVA", "60 points")
 
 Common Orcs only. All hits from Warboss Ironclaw's Waaagh! Cleava Wound automatically with the Ignores Armour Saves special rule.
 
-#namecost("BASHAS AXE OF STUNTY", "")
-#namecost("SMASHIN'", "50 points")
+#namecost("BASHAS AXE OF STUNTY SMASHIN'", "50 points")
 
 The wielder of this weapon has the Armour Piercing (1) special rule, and adds +1 to both his Attacks and Strength in close combat. This bonus is doubled if the wielder is in base contact with a Dwarf. In addition, the wielder causes Fear in all Dwarfs.
 
@@ -596,8 +593,7 @@ Ulag's Ak'rit Axe allows the wielder to re-roll any failed To Hit rolls.
 
 Orcs only. Great weapon. This weapon gives the wielder the Killing Blow special rule.
 
-#namecost("KURBOG'S CURMUDGEONLY", "")
-#namecost("CLOBBERA", "20 points")
+#namecost("KURBOG'S CURMUDGEONLY CLOBBERA", "20 points")
 
 Any model Wounded (but not slain) by Kurbog's Curmudgeonly Clobbera may not attack this close combat phase. If they have already attacked this close combat phase, they may not attack in the next close combat phase.
 
@@ -733,8 +729,7 @@ Savage Orcs only. All close combat attacks made against the bearer of the Effigy
 
 Goblins only. One use only. This item may be used at the start of any enemy shooting phase. If they do so, the bearer and all friendly units within 12" gain the Magical Ward (5+) special rule against missile attacks for the duration of this phase.
 
-#namecost("WARBOSS UMM'S BEST BIG", "")
-#namecost("BOSS'S 'AT", "20 points")
+#namecost("WARBOSS UMM'S BEST BIG BOSS'S 'AT", "20 points")
 
 Warboss Umm's Best Big Boss's 'At gives the wearer the Magical Ward (4+) special rule. However, if the wearer fails its Magical Ward save at any point, it will no longer have any effect from the start of the next player turn.
 
@@ -890,8 +885,7 @@ One use only. The horn can be used at the start of any of your turns. When this 
 
 Savage Orc only. Army General only. The bearer of this item and any friendly units of Savage Orcs within 12" gain +1 to their Leadership.
 
-#namecost("EL GROBIS' MASK OF THE FEARSOME", "")
-#namecost("RENOWN", "20 points")
+#namecost("EL GROBIS' MASK OF THE FEARSOME RENOWN", "20 points")
 
 Goblin Bosses only. The bearer gains the Fear and Hidden special rules. In addition, it gains the Always Strikes First and Armour Piercing (1) special rules on the turn that it is revealed or charges into an enemy unit's flank or rear.
 
@@ -987,8 +981,7 @@ The unit carrying this standard gains the Magic Resistance (D6) special rule. Ro
 
 Night Goblins only. The model carrying this standard and any unit they join gains the Stubborn special rule, and enemies suffer \-1 To Hit with missile weapons against them. In addition, any enemy model that charges into base contact with the bearer or their unit must take a Dangerous Terrain test.
 
-#namecost("ROWDY GROTT'S BIG RED RAGGEDY", "")
-#namecost("BANNER", "35 points")
+#namecost("ROWDY GROTT'S BIG RED RAGGEDY BANNER", "35 points")
 
 Common Goblins only. All Goblins within 12" of this standard have the Cold-blooded special rule.
 

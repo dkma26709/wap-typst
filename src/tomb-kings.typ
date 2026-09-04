@@ -325,8 +325,7 @@ Staff. Bound Spell (Level 3, cast on 9+). This item contains a *magic missile* w
 
 Staff. Bound Spell (Level 1, cast on 5+). The Staff of Ravening contains a *magic missile* spell with a range of 18" that causes 3D6 Strength 2 hits.
 
-#namecost("NEFERRA'S SCROLLS OF MIGHTY", "")
-#namecost("INCANTATIONS", "30 points")
+#namecost("NEFERRA'S SCROLLS OF MIGHTY INCANTATIONS", "30 points")
 
 Charm. One use only. A Wizard can declare that he is using Neferra's Scrolls of Mighty Incantations immediately before casting a spell. If he does so, the Wizard must add a number of extra bonus dice, equal to his Wizard level, to the power dice he is going to roll (you still need to roll at least one dice from the power pool). The bonus dice do not count as power dice. However, a roll of any double (except 1's) when initially casting a spell using them will counts as rolling a 6 for the purpose of Ultimate Power.
 
@@ -399,13 +398,11 @@ The unit carrying this standard gains a +D3 Combat Resolution bonus (roll each t
 
 The unit carrying this standard gains the Entombed Beneath the Sands special rule.
 
-#namecost("STANDARD OF THE CURSING", "")
-#namecost("WORD", "25 points")
+#namecost("STANDARD OF THE CURSING WORD", "25 points")
 
 All enemy units in base contact with the unit carrying the Standard of the Cursing Word must pass a Leadership test or suffer D6 Wounds which Ignores Armour Saves at the start of each round of close combat.
 
-#namecost("STANDARD OF THE UNDYING", "")
-#namecost("LEGION", "25 points")
+#namecost("STANDARD OF THE UNDYING LEGION", "25 points")
 
 Bound Spell (Level 1, cast on 6+). This banner contains an *augment* spell that targets the bearer's unit. If successfully cast, the bearer's unit immediately recovers a number of Wounds' worth of models, as described in the Restless Dead.
 

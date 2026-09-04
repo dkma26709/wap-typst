@@ -439,8 +439,7 @@ Relic. A model with the Halfling Cookbook may re-roll one dice (except 1's) per 
 
 Charm. One use only. This item can be used at the start of any of your Magic phases. For the duration of this turn, the bearer may re-roll failed casting attempts.
 
-#namecost("FLASK OF CONGEALED", "")
-#namecost("MAW-JUICES", "20 points")
+#namecost("FLASK OF CONGEALED MAW-JUICES", "20 points")
 
 Model with Great Mawpot only. Charm. One use only. This item can be used at the start of any of your Magic phases. For the duration of this turn, you may add one free power dice to each of the model's casting attempts.
 

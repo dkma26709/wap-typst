@@ -306,8 +306,7 @@ Fireglaive. Close combat attacks made with this weapon have the Armour Piercing 
 
 Heavy armour. The wearer gains a Magical Ward (5+) which may be re-rolled.
 
-#namecost("ARMOUR OF BAZHERAK", "")
-#namecost("THE CRUEL", "50 points")
+#namecost("ARMOUR OF BAZHERAK THE CRUEL", "50 points")
 
 Heavy armour. This armour gives the wearer +2 to their armour save and the Magic Resistance (2) special rule.
 
@@ -351,8 +350,7 @@ The wearer gains a Magical Ward (6+). In addition, they may re-roll failed armou
 The wearer gains the Magic Resistance (1) special rule, and any unit they are with gains a Magical Ward (4+) against non-physical Flaming Attacks.
 
 #entry("ARCANE ITEMS")
-#namecost("CHALICE OF BLOOD", "")
-#namecost("AND DARKNESS", "50 points")
+#namecost("CHALICE OF BLOOD AND DARKNESS", "50 points")
 
 Relic. In the beginning of any Magic phase the bearer may reduce the number of dice held in both sides' dice pools by D3 each. Roll these dice separately, declaring before rolling which dice applies to which side. If one of more natural 1's are rolled then the bearer suffers a Wound which Ignores Armour saves. If one of more natural 6's are rolled the bearer may recover a Wound previously lost in the game.
 
