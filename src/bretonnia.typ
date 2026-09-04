@@ -223,7 +223,7 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("SILVER LANCE OF THE BLESSED", 70, type: "Heavy lance")[If the model has the Blessing of the Lady, then all attacks with the Silver Lance of the Blessed automatically hit. In addition, all successful enemy armour saves and Magical Wards must be re-rolled. However, if the model wielding the lance flees for any reason, he suffers D6 Flaming Strength 4 hits with the Ignores Armour Saves special rule.]
 
 #magic-weapon("DRAGON SLAYING SWORD", 45, type: "Great weapon")[The wielder gains the Multiple Wounds (D6) special rule against Draconids.]
