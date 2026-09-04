@@ -80,6 +80,119 @@
   text(size: 10pt, body),
 )
 
+// --- magic items ------------------------------------------------------------
+
+// A magic item is a record where an entry is a sequence. Every one in the
+// corpus is a name, a cost, a few qualifiers and its rules text, in that order
+// and no other, so unlike a unit it can be written as a single call - and
+// writing it as one is the point. Set by hand as a `namecost` and a paragraph,
+// an item's qualifiers are prose like any other sentence: nothing stops "Great
+// weapon" being written "Great Weapon", the restriction landing after the type
+// rather than before it, the trailing full stop going missing, or the asterisk
+// that marks a common item being dropped from the name it is glued to. Passed
+// as arguments they are checked here, ordered here and punctuated here, so
+// changing how an item is set is a change to this file rather than to several
+// hundred paragraphs.
+
+// `type` is one of the parameters below, and inside that scope it shadows
+// Typst's own `type`. Bound here so the assertions can still ask what a value
+// is - the same shadowing `book-meta` sidesteps by taking `..named`.
+#let _typeof = type
+
+// The six categories, from the rulebook's Balance of Power: a model may carry
+// one item from each.
+#let MAGIC_ITEM_KINDS = ("weapon", "armour", "talisman", "arcane",
+                         "enchanted", "standard")
+
+// What an item of each category may declare itself to be. Weapons and armour
+// name the mundane equipment they stand in for, spelled as the Weapons & Armour
+// chapter spells it; arcane items name one of the three arcane categories. The
+// other three categories have no type at all, and the empty tuple is how that
+// is said - `type:` on a talisman is an error rather than a silent no-op.
+#let MAGIC_ITEM_TYPES = (
+  weapon: ("Hand weapon", "Additional hand weapon", "Polearm", "Great weapon",
+           "Flail", "Spear", "Pike", "Lance", "Light lance", "Heavy lance"),
+  armour: ("Light armour", "Medium armour", "Heavy armour", "Shield",
+           "Buckler", "Barding"),
+  arcane: ("Staff", "Charm", "Relic"),
+  talisman: (),
+  enchanted: (),
+  standard: (),
+)
+
+// A magic weapon that names no type is a hand weapon - the rulebook says so
+// outright, and the books accordingly leave it unsaid. Left off the page too,
+// where the source leaves it off, but resolved into the metadata, so a reader
+// asking what a weapon is gets an answer rather than a blank.
+#let MAGIC_WEAPON_DEFAULT_TYPE = "Hand weapon"
+
+// `cost` is a number, not "45 points". The unit is the same for every item in
+// every book, so writing it out at each of them only creates somewhere for
+// "15 Points" to differ from its five hundred neighbours - which, in the source
+// this book was imported from, it does.
+#let magic-item(name, cost, body,
+                kind: none, type: none, only: none,
+                bound: false, one-use: false, common: false) = {
+  let where = "magic-item " + name
+  assert(kind in MAGIC_ITEM_KINDS, message: where + ": kind must be one of "
+    + MAGIC_ITEM_KINDS.join(", ") + ", not " + repr(kind))
+  assert(_typeof(cost) == int and cost > 0,
+    message: where + ": cost is a number of points, not " + repr(cost))
+
+  // One type, or several worn at once - "Heavy armour and shield". The
+  // vocabulary holds each piece under the single name it is printed by
+  // everywhere else, and the tail is lowered as it is joined, which is how the
+  // source sets the pair.
+  let vocab = MAGIC_ITEM_TYPES.at(kind)
+  let given = if type == none { () } else if _typeof(type) == str { (type,) } else { type }
+  for t in given {
+    assert(t in vocab, message: where + ": " + repr(t) + " is not a " + kind
+      + " type" + if vocab.len() == 0 { " - " + kind + " items have none" }
+                  else { "; expected one of " + vocab.join(", ") })
+  }
+  let typed = if given.len() > 0 {
+    given.enumerate().map(((i, t)) => if i == 0 { t } else { lower(t) })
+      .join(" and ")
+  }
+
+  // Who may carry it, what it is, how it may be used, then what it does - the
+  // order every item in the corpus is written in. Each qualifier is a sentence
+  // of its own and the full stops are supplied here, so an item cannot be
+  // missing one or be punctuated unlike its neighbours.
+  let qualifiers = (
+    if only != none { only + " only" },
+    typed,
+    if bound { "Bound Spell" },
+    if one-use { "One use only" },
+  ).filter(q => q != none).map(q => q + ". ")
+
+  [#metadata((
+    kind: "magic-item", category: kind, name: name, cost: cost,
+    // The resolved type, not the written one: a weapon that named none is a
+    // hand weapon.
+    type: if typed != none { typed }
+      else if kind == "weapon" { MAGIC_WEAPON_DEFAULT_TYPE },
+    only: only, bound: bound, one-use: one-use, common: common,
+  ))<meta>]
+  // The asterisk is the rulebook's mark for a *common* item - one that may be
+  // taken more than once in an army - so it is carried by a flag rather than
+  // typed into the name, where it reads as spelling and can be lost to one.
+  namecost(name + if common { "*" } else { "" }, str(cost) + " points")
+  // Not wrapped in a block: the qualifiers open the item's first paragraph, as
+  // they do on the printed page, rather than standing off from it as a line of
+  // their own.
+  [#qualifiers.join()#body]
+}
+
+// The six, named, so a book states the category by which function it calls and
+// cannot state it as a value that is not one of them.
+#let magic-weapon = magic-item.with(kind: "weapon")
+#let magic-armour = magic-item.with(kind: "armour")
+#let talisman = magic-item.with(kind: "talisman")
+#let arcane-item = magic-item.with(kind: "arcane")
+#let enchanted-item = magic-item.with(kind: "enchanted")
+#let magic-standard = magic-item.with(kind: "standard")
+
 // --- profiles ---------------------------------------------------------------
 
 #let field(label, value) = {
