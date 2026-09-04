@@ -5701,7 +5701,9 @@ The line letting a rider's and a mount's armour saves combine would become two r
 
 The paragraph disagrees with itself in consecutive sentences. One says that when attacking a Cavalry model you always use the highest Weapon Skill, Toughness and Wounds of rider or mount. The next says that if both have armour saves, these may be combined. Three characteristics take the better of the two and the fourth adds them together, and nothing anywhere says why the save is different.
 
-It also reaches the ceiling before the player has bought anything. A Saurus Oldblood has Natural Armour 5+ of his own and a Carnosaur has 4+, and combining those on the reading the armour table implies, where a 6+ is worth one step and a 4+ three, puts an Oldblood who has bought no equipment at all on a 2+ the moment he is mounted. That the book never works this example is half the complaint: it says the saves may be combined as normal and nowhere says what normal is when two save values meet. The light armour and the shield he may then purchase change nothing whatever, because no save can be better than 2+ and he is already there. A rule that makes defensive equipment worthless on precisely the models that can most afford it is not doing the job it was written for.
+It also reaches the ceiling before the player has bought anything. A Saurus Oldblood has Natural Armour 5+ of his own and a Carnosaur has 4+, and combining those on the reading the armour table implies, where a 6+ is worth one step and a 4+ three, puts an Oldblood who has bought no equipment at all on a 2+ the moment he is mounted.
+
+That the book never works this example is half the complaint: it says the saves may be combined as normal and nowhere says what normal is when two save values meet. The light armour and the shield he may then purchase change nothing whatever, because no save can be better than 2+ and he is already there. A rule that makes defensive equipment worthless on precisely the models that can most afford it is not doing the job it was written for.
 
 Half effect keeps the idea and loses the ceiling. A man in armour behind a scaled skull really is better protected than either alone, which is why taking the better of the two and discarding the rest reads badly. Carrying the rider across at half rate says the same thing without letting two hides finish the arithmetic on their own.
 
@@ -5726,3 +5728,31 @@ The points on monster-mounted characters want revisiting afterwards. The saving 
 Every two rider steps improve the mount's Natural Armour by one. The result is capped at 2+, as any save is.
 
 *What it changes.* A Saurus Oldblood on a Carnosaur saves on 2+ today, and still saves on 2+ if he buys nothing, because his own 5+ hide and the Carnosaur's 4+ reach the cap between them. Under this he starts on 3+, since his bare 5+ is two steps and half of that is one. Buying the light armour and the shield takes his foot save to 3+, which is four steps, worth two to the Carnosaur, and he arrives at 2+ having paid for it. Same ceiling, reached by spending rather than by mounting.
+
+#namecost("Cap the To Wound chart at a flat 6+", "under discussion")
+
+The To Wound chart's two-roll boxes would go, and so would its three boxes that permit no roll at all. Anything a model can hurt, it would hurt on a 6. Twenty-eight of the chart's hundred boxes collapse from a 6 followed by a second die to a single 6, and three that currently forbid the attempt become a 6 like the rest.
+
+#field("Why", "")
+
+The second half of the chart quietly switches off every To Wound modifier in the game. In the single-roll band a +1 is worth a sixth of the dice, sixteen and a half points of probability at every step of the chart. In the two-roll band the same +1 is worth one thirty-sixth, under three points, because all it can do is improve a second die that is only reached after a 6.
+
+Poisoned Attacks is a flat +1 To Wound, so it is worth six times less against the tough targets it exists to trouble than against the infantry that never needed poisoning. A rule that pays least exactly where it is meant to matter is not a rule anybody designed on purpose.
+
+It is also the one place the chart asks for a roll it has already decided. Three boxes permit no attempt whatever, so the dice never leave the hand and the modifier on the attack has nothing to modify.
+
+#field("The argument against", "")
+
+Toughness would stop scaling precisely where the largest creatures live. Under this a Strength 2 attack wounds Toughness 4 and Toughness 9 on the same 6, so the gap between a tough monster and an enormous one closes entirely against massed weak attacks, which is the one thing the biggest creatures are least able to answer. The two-roll band is ugly, but it is what currently makes Toughness above 5 worth paying for, and this removes it without putting anything in its place.
+
+#field("What it would take", "")
+
+One chart, with twenty-eight boxes rewritten and three filled in, and the paragraph explaining how a modifier applies to the second roll deleted along with the second roll itself. No other rule changes wording. Monsters priced on being nearly unwoundable by rank and file want revisiting, and that is the real bill.
+
+#field("For example", "")
+
+*What the numbers do.* The three cases that show the range of the change:
+
+#minitable(("Attack", "Today", "Capped"), ("Strength 3 against Toughness 6", "6 then 2+, 13.9%", "6+, 16.7%", "Strength 1 against Toughness 8", "6 then 6+, 2.8%", "6+, 16.7%", "Strength 1 against Toughness 9", "no attempt permitted", "6+, 16.7%"))
+
+And what it does for the modifier: Poisoned Attacks on that Strength 1 attack against Toughness 8 currently buys 2.8 points of probability, taking it from 2.8 to 5.6. Capped, it buys 16.7, taking a flat 6 to a flat 5, which is what the same rule buys everybody else on the table.
