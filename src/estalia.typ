@@ -79,7 +79,7 @@ Units of Crossbowmen, Arquebusiers and Musketeers within 3" of a unit of Tercios
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Estalians. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("SPEAR OF RIGHTEOUSNESS", 55, only: "Priest of Myrmidia", type: "Light lance/spear")[At the start of each round of close combat, roll a D3; the wielder adds this number to their Weapon Skill, Strength, Attacks and Initiative characteristics until the end of the turn.]
 
 #magic-weapon("STAFF OF TOMAS THE PURE", 50, only: "Priest of Myrmidia")[The Staff of Tomas the Pure has the following profile:

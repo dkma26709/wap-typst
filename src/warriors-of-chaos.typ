@@ -614,7 +614,7 @@ The character re-rolls Ward save results of 1.
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("CHAOS DAEMONSWORD", 50)[The wielder of this weapon adds D3 to their Strength and has an extra D3 Attacks, to a maximum of 10 (roll separately for these values at the start of each round). However, every To Wound roll of a 1 made by this character in close combat is resolved against themselves.]
 
 #magic-weapon("RENDING SWORD", 45)[The wielder of this weapon may re-roll failed To Wound rolls and have the Multiple Wounds (D3) special rule.]
@@ -743,7 +743,7 @@ until the end of the turn.")))
 
 #magic-item-chapter(title: "KHORNE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Khorne. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Khorne or Mark of Khorne special rules.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("BANE SPEAR", 30, type: "Spear/light lance")[This weapon gives +1 Strength for each enemy model in base contact with the wielder.]
 
 #magic-weapon("BERSERKER SWORD", 30, only: "Model on foot")[The Berserker Sword gives the wielder +1 Attack for every enemy model in base contact. In a challenge, it only confers +1 Attack.]
@@ -789,7 +789,7 @@ until the end of the turn.")))
 
 #magic-item-chapter(title: "NURGLE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Nurgle. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Nurgle or Mark of Nurgle special rules.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("RUSTFANG", 30)[Any enemy unit in base contact with the wielder of this weapon suffer a \-1 penalty to their armour saves.]
 
 #magic-weapon("FILTH MACE", 20)[Close combat attacks made with the Filth Mace have the Poisoned Attacks special rule. Once the wielder has killed an enemy model in close combat, they immediately gain the Terror special rule and, from the start of the next Close Combat phase (friend or foe), all subsequent Attacks made with the Filth Mace have the Multiple Wounds (D3) special rule.]
@@ -835,7 +835,7 @@ until the end of the turn.")))
 
 #magic-item-chapter(title: "SLAANESH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Slaanesh. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Slaanesh or Mark of Slaanesh special rules.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("GILELLION'S SOULNETTER", 35)[This weapon gives the wielder +2 Attacks. In addition, all enemy units in base contact that fail their break test roll one D6 less than normal for their flee distance.]
 
 #magic-weapon("SLAANESH'S BLADE", 35)[All attacks with this weapon have the Ignores Armour Saves special rule. In addition, the wielder gains the Parry (5+) special rule.]
@@ -883,7 +883,7 @@ until the end of the turn.")))
 
 #magic-item-chapter(title: "TZEENTCH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Tzeentch. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Tzeentch or Mark of Tzeentch special rules.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("SECRET-EATER", 25)[Each time the wielder of this weapon rolls a 6 To Hit, they may re-roll one failed To Hit, To Wound, armour or Ward save this round.]
 
 #magic-weapon("AMBITION'S END", 10)[This weapon has Multiple Wounds (D3) special rule against Characters. In addition, each time they cause an unsaved Wound against a Wizard, that model loses a Wizard level.]

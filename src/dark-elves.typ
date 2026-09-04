@@ -214,7 +214,7 @@ Disciple of Khaine only. One use only. The model may attempt to use two Blood Ri
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dark Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2)[
+#magic-item-section("weapon", columns: 2, first: true)[
 #magic-weapon("DOOMSINGER", 65)[At the beginning of each round of close combat, roll a D3; the result is the number you may increase the wielder's Weapon Skill, Strength and Attacks by.]
 
 #magic-weapon("CHILLBLADE", 50)[Attacks made with the Chillblade wound automatically and have the Ice Attacks special rule. For each unsaved Wound suffered from the Chillblade, the target suffers \-1 to its Attacks characteristic until the end of this Close Combat phase.]

@@ -265,7 +265,7 @@ _Flames of Azgorh_ is a *direct damage area* spell with a range of 12" that uses
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Chaos Dwarfs. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("VOLCANIC HAMMER", 45, type: "Great weapon")[All attacks made with this weapon have the Flaming Attacks special rule. In addition, the wielder may may exchange all of their Attacks to make a special attack. Roll To Hit against the highest enemy Weapon Skill in base contact. If this Attack hits, place the small template anywhere so that it is touching the wielder's base. Any models that lie underneath the template (friend or foe) suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule.]
 
 #magic-weapon("DARK MACE OF DEATH", 40)[Close combat attacks made with this weapon have the Killing Blow special rule. In addition, once per game, at the start of the close combat round, the wielder can inflict an automatic Wound on every model in base contact with the Ignores Armour saves special rule.]

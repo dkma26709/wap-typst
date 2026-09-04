@@ -195,7 +195,7 @@ _Mork-khan Wants Ya!_ is a *direct damage* spell with a range of 12" that target
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Hobgoblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("LIGHTNING SPEAR", 50, type: "Light lance/spear")[All attacks made with this weapon have the Lightning Attacks special rule. On the round that the wielder of the Lightning Spear charges, for each successful Wound made with this weapon it strikes the model behind the hit model with an attack at \-1 Strength. If this attack wounds, then the model behind the second wounded model is struck with an attack at an additional \-1 Strength. This will continue until you fail to wound a model.]
 
 #magic-weapon("AXE HEADROOM", 40, type: "Great weapon")[All attacks made with this weapon have the Killing Blow and Ignores Armour Saves special rule.]

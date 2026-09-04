@@ -295,7 +295,7 @@ _Curse of Sickness_ is a *direct damage* spell with a range of 24". All models i
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kislevites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("HOLY AXE OF MISKA", 65)[Requires two hands. The Holy Axe of Miska gives the wielder +2 Strength. In addition, it has the Multiple Wounds (D3) special rule.]
 
 #magic-weapon("WYRMSPIKE", 40)[All attacks made with the Wyrmspike have the Ice Attacks and Multiple Wounds (D3) special rules.]

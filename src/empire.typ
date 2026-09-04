@@ -211,7 +211,7 @@ The unit is armed with polearms & shields instead of heavy lances. The models (b
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Empire. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("BEAST SLAYER, THE DRAKWALD RUNEFANG", 60, only: "General")[All hits from the Runefang wound automatically and Ignores Armour saves.]
 
 #magic-weapon("DAEMONSLAYER BLADE", 35)[Against Daemons, all attacks made with the Daemonslayer Blade gain +1 To Wound with the Multiple Wounds (D3) special rule.]
@@ -386,7 +386,7 @@ The unit is armed with polearms & shields instead of heavy lances. The models (b
 
 #magic-item-chapter(title: "ULRICAN MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Cult of Ulric. These may only be taken in a Cult of Ulric army. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("STORM HAMMER", 25, type: "Cavalry hammer")[Models Hit in the turn the wielder charges may not attack that turn.]
 
 #magic-weapon("WINTER'S BITE", 20)[On a to hit roll of 6, this weapon automatically Wounds with the Ignores Armour saves special rule.]

@@ -71,7 +71,7 @@ Your army may be associated with one of the Tribes below. Having a Clan Affiliat
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Albionites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("THE LIGHTNING SPEAR", 80, type: "Light lance/spear/javelins")[All close combat and missile attacks with this weapon automatically Hit and have the Lightning Attacks special rule. Any Hits from Shooting penetrates ranks as if it were a Bolt Thrower.]
 
 #magic-weapon("THE BARBED SPEAR", 50, type: "Light lance/spear")[This weapon gives the wielder +1 Strength and the Multiple Wounds (D6) special rule.]

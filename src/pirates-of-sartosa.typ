@@ -160,7 +160,7 @@ _Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Pirates of Sartosa. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("TIDAL BLADE", 40)[Each successful Hit made with this weapon penetrates ranks like a bolt thrower.]
 
 #magic-weapon("STORM TRIDENT", 35, type: "Polearm")[Attacks made with this weapon have the Lightning Attacks special rule. Additionally, all natural To Wound rolls of 6 with the weapon have the Multiple Wounds (D3) special rule.]

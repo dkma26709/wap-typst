@@ -318,7 +318,7 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Zombie Pirates. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("STAR-METAL HARPOON", 50, type: "Polearm")[Attacks made with this weapon have the Heroic Killing Blow special rule. Additionally, they may reroll failed To Wound rolls against models with the Aquatic special rule.]
 
 #magic-weapon("THE BLOODY NORA", 35)[The wielder of this weapon gains D3+2 Extra Attacks on any turn they charge, and gives them +2 Extra Attacks in subsequent rounds.]

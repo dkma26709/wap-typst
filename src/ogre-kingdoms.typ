@@ -273,7 +273,7 @@ The character and any unit they are with gain the Swiftstride special rule when 
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Ogres. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("FROSTFANG", 50)[The bearer gains the Ice Attacks special rule. In addition, at the start of each round of close combat, roll a D6. On a 4+, all attacks made by this weapon are increased by +1 Strength for the duration of the game. This effect is cumulative.]
 
 #magic-weapon("THUNDERMACE", 35, type: "Great weapon")[The wielder may choose to exchange all of his Attacks in close combat to make a single 'Thundercrush Attack'. Roll To Hit against the highest Weapon Skill amongst the enemy models in base contact. If the Thundercrush Attack hits, place the small template anywhere so that it is touching the wielder's base. Any infantry, war beasts or swarm models that lie underneath the template suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule. This has no effect on other troop types.]

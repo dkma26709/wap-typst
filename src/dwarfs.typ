@@ -94,7 +94,7 @@ A model with Wards of Grimnir has the Magical Ward (6+) special rule against mis
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dwarfs. Dwarfs may not use magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("HAMMER OF SMEDNIR", 45)[Each Hit with this weapon is multiplied into D3 Hits.]
 
 #magic-weapon("RED AXE OF KARAK EIGHT PEAKS", 40)[Against all Orcs, Goblins and Skaven, this weapon allows its wielder to re-roll To Hit and To Wound rolls as well as cause Terror.]

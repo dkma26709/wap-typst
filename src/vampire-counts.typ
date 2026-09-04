@@ -399,7 +399,7 @@ Model on foot only. The model gains Movement 10 and the Swiftstride special rule
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Vampire Counts. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("FROSTBLADE", 60)[The wielder gains the Ice Attacks and Multiple Wounds (D6) special rules.]
 
 #magic-weapon("SKABSCRATH", 40)[The bearer has the Devastating Charge and Frenzy special rules, and all close combat attacks made by the bearer have the Flaming Attacks special rule. In addition, the bearer of Skabscrath gains the Death Shriek special rule.]

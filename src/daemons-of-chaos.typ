@@ -724,7 +724,7 @@ The Daemon gain a +1 bonus to all Fires of Change rolls (see Lore of Tzeentch).
 
 #magic-item-chapter(title: "UNDIVIDED MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("THE ETERNAL BLADE", 40, only: "Daemon Prince")[Roll a D3 at the start of each round of combat – the bearer’s Weapon Skill, Strength, Initiative and Attacks are increased by this amount until the end of the phase.]
 ]
 
@@ -755,7 +755,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
 
 #magic-item-chapter(title: "KHORNE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Khorne. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("AXE OF KHORNE", 30)[The wielder receives +1 Attack for each enemy model he is in base contact with, to a maximum of +3 Attacks.]
 
 #magic-weapon("BLADE OF BLOOD", 25)[Attacks made with the Blade of Blood are resolved at +1 Strength and may re-roll failed rolls To Wound.]
@@ -805,7 +805,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
 
 #magic-item-chapter(title: "NURGLE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Nurgle. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("BALESWORD", 25)[Attacks made with the Balesword have the Poisoned Attacks and Multiple Wounds (D3) special rules.]
 
 #magic-weapon("NURGLE'S NAIL", 20)[The wielder of this weapon will automatically Wound on the to Hit roll of a 5+. In addition, at the end of each round of close combat, roll 2D6 for each enemy model that has suffered one or more unsaved Wounds from this weapon. If the result is exactly 7, that model is slain with no saves of any kind allowed.]
@@ -841,7 +841,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
 
 #magic-item-chapter(title: "SLAANESH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Slaanesh. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("ETHERBLADE", 25)[The Etherblade gives the wielder the Ignores Armour Saves special rule. In addition, enemy models Wounded by it must re-roll successful Magical Ward saves.]
 
 #magic-weapon("LASH OF DESPAIR", 25)[The Lash of Despair uses the following profile:
@@ -876,7 +876,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
 
 #magic-item-chapter(title: "TZEENTCH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Tzeentch. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("STAFF OF CHANGE", 25)[Any model that suffers one or more unsaved Wounds from the Staff of Change must immediately pass a Toughness test or suffer an additional D6 Wounds with the Ignores Armour Saves special rule. If a multiple- Wound model loses its last Wound to the Staff of Change, all enemy models within D6" immediately suffer a single Strength 5 hit.]
 
 #magic-weapon("PYROFYRE STAVE", 15)[The wielder of this weapon gains the Flaming Attacks special rule, and may re-roll any To Wound rolls of 1 when casting *magic missiles*. In addition, if a Wizard suffers one or more unsaved Wounds against this weapon, they cannot channel Power or Dispel dice for the rest of the game.]

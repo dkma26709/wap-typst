@@ -165,7 +165,7 @@ _Constellation of the Dragon_ is a *direct damage area* spell with a range of 24
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Cathayans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("JADE BLADE OF THE GREAT FLEET", 35)[The wielder of this weapon gains +1 Strength and the Regeneration (5+) special rule.]
 
 #magic-weapon("NUKU CHO'S CROSSBOW", 35, type: "Repeater crossbow")[This weapon has the following profile:

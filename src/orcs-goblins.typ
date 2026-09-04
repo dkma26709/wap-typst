@@ -509,7 +509,7 @@ _Acidic Bile_ is a *direct damage area* with a range of 18" that uses the small 
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Orcs & Goblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2)[
+#magic-item-section("weapon", columns: 2, first: true)[
 #magic-weapon("BATTLEAXE OF THE LAST BIG WAAAGH!", 85, only: "Orcs")[Roll a D6 at the start of each round of combat – the wielder of this weapon adds that number to both his Attacks and Strength in that round. However, the bearer's Weapon Skill is lowered by an amount equal to half the dice roll (i.e. 1\-2 = \-1 Weapon Skill, 3\-4 = \-2 Weapon Skill, and 5\-6 = \-3 Weapon Skill).]
 
 #magic-weapon("WARBOSS IRONCLAW'S WAAAGH! CLEAVA", 60, only: "Common Orcs")[All hits from Warboss Ironclaw's Waaagh! Cleava Wound automatically with the Ignores Armour Saves special rule.]

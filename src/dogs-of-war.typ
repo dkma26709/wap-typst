@@ -405,7 +405,7 @@ Model with light or medium armour only. The model counts its armour save as bein
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dogs of War. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("HURCIO'S CLUB", 60)[Requires two hands. The wielder of this club adds +1 to his Strength and Attacks at the start of each close combat phase (up to a maximum of +3), for as long as he remains in combat.]
 
 #magic-weapon("CATHAYAN DRAGONSWORD", 45, type: "Oriental longsword")[The Dragonsword gives the wielder +1 Weapon Skill, +1 Initiative as well as the Killing Blow, Armour Piercing (1) and Flaming Attacks special rules.

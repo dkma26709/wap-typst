@@ -65,7 +65,7 @@ A unit with this special rule can benefit from either Good Karma or Bad Karma de
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kingdoms of Ind. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("MACE OF GODLY MIGHT", 60)[The wielder of this weapon gains +2 Strength. Roll a D6 for each initial Attack that Hits. On a 4+, it causes another Hit.]
 
 #magic-weapon("DIVINE THUNDERBOLT", 40, type: "Javelins")[This weapon has the following profile:

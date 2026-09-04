@@ -92,7 +92,7 @@ Model on foot only. After deployment, but before the first turn begins, select a
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Norscans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("KAOSFAENIR", 60, type: "Great weapon")[No Magical Ward saves may be taken against wounds caused by Kaosfaenir. In addition, for each unsaved Wound a model suffers from this weapon, they must pass a Strength test or be instantly slain.]
 
 #magic-weapon("THE SWAYING SPEAR", 55, type: "Spear/javelin")[All close combat and missile attacks made with the Swaying Spear Hit always Hit on a 2+ and have the Heroic Killing Blow special rule.]

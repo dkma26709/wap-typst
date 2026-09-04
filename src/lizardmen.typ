@@ -246,7 +246,7 @@ The Slann Mage-Priest can choose one additional spell.
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Lizardmen. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("SCIMITAR OF THE SUN RESPLENDENT", 45)[This weapon gives the wielder +2 Attacks and the Hatred special rule.]
 
 #magic-weapon("BLADE OF REALITIES", 40)[No armour or Magical Ward saves can be taken against Wounds caused by this weapon.]

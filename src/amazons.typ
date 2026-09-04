@@ -110,7 +110,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("STAR SWORD", 60)[The Star Sword gives the wielder the Always Strikes First, Ignores Armour saves, and Parry (6+) special rules.]
 
 #magic-weapon("ARC CLAWS", 40, type: "Two hand weapons")[Attacks made with the Arc Claws have the Lightning Attacks special rule, and the wielder may reroll any failed To Wound rolls in close combat.]

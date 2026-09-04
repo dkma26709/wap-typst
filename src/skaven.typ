@@ -315,7 +315,7 @@ Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large rou
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2)[
+#magic-item-section("weapon", columns: 2, first: true)[
 #magic-weapon("FELLBLADE", 85, only: "Clawlord")[This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful Magical Ward saves taken against Wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound which Ignores Armour Saves.]
 
 #magic-weapon("ELECTRO-WHIP", 40, only: "Clan Moulder", common: true)[Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.]

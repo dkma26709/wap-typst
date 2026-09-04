@@ -197,7 +197,7 @@ Remains in play. _Sakhmet's Incantation of the Skullstorm_ is a *magical vortex*
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Tomb Kings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("DESTROYER OF ETERNITIES", 60, only: "Tomb King on foot", type: "Great weapon")[Attacks made with the Destroyer of Eternities have the Heroic Killing Blow special rule. In addition, all enemy models in base contact with the wielder suffer a single automatic hit (with Heroic Killing Blow) after resolving the model's normal attacks. In a challenge, only the models engaged in the challenge count as being in base contact with the Tomb King.]
 
 #magic-weapon("SPEAR OF ANTARHAK", 50, type: "Spear/light lance")[For every unsaved Wound inflicted by the Spear of Antarhak, the wielder immediately regains a single Wound lost earlier in the battle. If the bearer is already at their starting number of Wounds and inflicts another unsaved Wound with this weapon, they gain the Regeneration (4+) special rule until the end of the next player turn.]

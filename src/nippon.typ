@@ -124,7 +124,7 @@ Ashigaru only. Models with this Mon gain +1 to their Leadership.
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Nipponese. These may be used in addition to the magic items found in the Warhammer rulebook. Any magic weapon that counts as a hand weapon follow the rules for katanas.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("GRASS-CUTTING SWORD", 60, type: "Great weapon")[Instead of attacking normally, this weapon may automatically inflict a single Hit on all enemy models in the front rank of any unit the wielder is in base contact with.]
 
 #magic-weapon("DRAGON CLAW KATANA", 45, type: "Katana")[The wielder gains one additional Attack for every point of unmodified Leadership that exceeds that of any one enemy model in base contact. In addition, when fighting in challenges, the wielder gains the Killing Blow special rule and may re-roll all failed rolls To Hit and To Wound.]

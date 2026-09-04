@@ -59,7 +59,7 @@ Units with this rule counts as having one rank more than they actually have when
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Arabyans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #runin[MARTYR]'#runin[S SHARD 50 points] If the wielder of this weapon causes an unsaved wound on an enemy model, they may choose to lose D3 of their own Wounds to instantly kill the opponent. No kind of saves may be taken by either side.
 
 #magic-weapon("BEDAYAH", 40)[The wielder of this weapon gains +3 Weapon Skill and the Always Strikes First special rule.]

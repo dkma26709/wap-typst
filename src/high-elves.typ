@@ -222,7 +222,7 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the High Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("DEATHSINGER", 65)[At the beginning of each round of close combat, roll a D3; the result is the number you may increase the wielder's Weapon Skill, Strength and Attacks by.]
 
 #magic-weapon("SWORD OF AGES", 60)[The Sword of Ages gives the wielder +1 To Hit, +2 Strength and +1 Attack.]

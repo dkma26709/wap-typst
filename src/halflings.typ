@@ -71,7 +71,7 @@ Models with this special rule may take up two Talismans and/or Enchanted Items r
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Halflings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon")[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("THE REAPER SCYTHE", 60, type: "Great weapon")[The Reaper Scythe grants the wielder the Killing Blow rule, as well as one extra attack for each enemy infantry model in base contact.]
 
 #magic-weapon("TIMBER AXE OF JONNO THE SLICK", 50)[The wielder treats their Strength to be equal to that of their Initiative in close combat.]
