@@ -5844,3 +5844,75 @@ The casualty easiest to miss is the asterisk. Twenty-nine of the eighty-two comm
 #minitable(("Source", "Items", "Takeable in multiples"), ("The rulebook, open to every army", "82", "29", "The thirty books' own lists", "1,710", "80", "Dwarfs, the shortest list", "19", "0", "Orcs & Goblins, the longest", "120", "1"))
 
 Sixteen of the thirty books print no asterisked item at all. For those armies, every magic item that may be taken more than once today comes out of the list this proposal deletes, which is why the asterisk cannot be left until afterwards.
+
+#namecost("Losing a fight should not always cost the unit", "talking point")
+
+A beaten unit would give ground rather than break: fall back in good order, keep its formation, and fight on. Breaking and being run down would become the exception rather than the ordinary result of losing a round. This is the shape of the change and not a specification, because the text it comes from is not in this project.
+
+#field("Why", "")
+
+As it stands the break test is binary and terminal. Pass and you hold, fail and you flee, and a pursuer who catches you removes the unit from the game. The most decisive moment in a battle is one 2D6 roll against a Leadership already reduced by the combat result.
+
+That makes a lost round and a lost unit the same event. A regiment that was pushed back hard, but was never actually broken in any sense a spectator would recognise, is gone. Giving ground as the normal outcome puts a losing fight back into the game instead of ending it.
+
+#field("The argument against", "")
+
+The current cycle is fast, decisive, and the reason manoeuvre pays. Breaking and pursuing is what makes a flank charge worth setting up and cavalry worth fielding; if losing costs ground rather than the unit, a deep block can simply grind, and the payoff for playing well shrinks.
+
+It also pulls on more threads than it looks. Steadfast exists precisely to stop a big unit breaking, Fear pays out in combat resolution, and victory points are scored for units destroyed and standards taken. Change the consequence of losing and all three want revisiting.
+
+#field("What it would take", "")
+
+Unknown until the source wording is to hand, and that is the honest position. What has to be decided is a short list: how far a beaten unit gives ground, whether the winner may follow up or must, what happens when the fall-back is blocked by friends or terrain, whether breaking survives at all for a badly lost combat, and what becomes of Steadfast once holding the line is no longer the only alternative to routing.
+
+#field("For example", "")
+
+*The numbers this ruleset would reach for.* If it were built from what is already here rather than imported, the distance would be the combat result difference in inches, capped at the unit's Movement, with the winner choosing to follow up or hold. That uses only quantities the combat phase already computes, and it makes a heavy loss push further than a narrow one without adding a roll. Whether it matches the wording being borrowed is exactly the open question.
+
+
+#namecost("Monsters should be designed around a role", "talking point")
+
+The umbrella over the three monster proposals above. Each monster would be given a role, that role would be stated in its rules and its statline, and its points and its army list slot would then follow from the role rather than from being generally alarming.
+
+#field("Why", "")
+
+Eighty-four of the hundred and forty-four monsters are Rare. A monster that is good against everything has to be priced and rationed as though it were, which is why so many of them are never fielded. A monster whose entry says what it is for can be cheaper, or Special rather than Rare, and frightening in the one thing it does.
+
+The three proposals above are the mechanisms and not the change. The weapon profile is where a role gets printed; the two rival stomp proposals are the two ways of stopping every monster trampling identically. What none of them proposes is the second half: once the role is stated, the statline, the price and the slot all move to match it.
+
+#field("The argument against", "")
+
+A hundred and forty-four entries, every one a judgement rather than a calculation, and no way to check the answer except by playing it. It is the largest piece of work on this shelf by a wide margin.
+
+It also cannot be done a book at a time without the corpus contradicting itself for as long as it takes, and a half-converted set of monsters is worse than either end state.
+
+#field("What it would take", "")
+
+Open questions before anything is drafted: whether roles come from a fixed vocabulary or are written freehand per monster, whether the re-stat may touch Wounds and Toughness or only the offensive half, and whether the Rare-to-Special moves happen in the same pass or afterwards. Chariots are out of scope by decision. Monster Impact Hits are in.
+
+#field("For example", "")
+
+*The pair that prompted it.* A Carnosaur and a Stegadon are both Monsters, both sit at Line of Sight 5, and both therefore trample everything on the table for exactly the same D6. One is an ambush predator that hunts big prey and the other is a walking fortress with a crew on its back. Nothing in either entry says so, and no amount of adjusting the stomp number alone will make them play differently.
+
+
+#namecost("The magic phase, in pieces", "talking point")
+
+Not a proposal but a decomposition. Redoing magic is six separable arguments wearing one name, and this sets them out so they can be taken one at a time. Nothing here proposes an answer to any of them.
+
+#field("Why", "")
+
+Bundled together they cannot be voted on. Agreeing with four of the six and objecting to two means voting against the lot, so a single motion to redo magic is a motion that can only fail. Split, each piece is small enough to argue and small enough to try.
+
+The six: how much power a phase has and whether it should be random at all; Wizard Level, which currently sets spells known, spells available, dice per attempt and the casting bonus; whether casting and dispelling stay one opposed roll; Ultimate Power and the miscast, where natural 6s cascade free dice and two 1s roll the same table whatever was being cast; which lores an army reaches and how a spell is chosen; and the items and bound spells that add dice or bonuses on top.
+
+#field("The argument against", "")
+
+Splitting has its own cost. Several of these only mean anything together, and capping the winds while leaving Ultimate Power untouched changes the phase very little. A piecemeal set of votes can arrive at a combination nobody would have designed on purpose.
+
+#field("What it would take", "")
+
+Nothing until a piece is picked, at which point it becomes a proposal of its own with the usual argument on both sides.
+
+#field("For example", "")
+
+*The piece most ready to be written* is Wizard Level, because the argument already exists twice on this shelf. Splitting armour penetration out of Strength and splitting Weapon Skill into attack and defence both say that one number answering several questions can be tuned for none of them. Wizard Level answers four. Whether that makes it the right place to start or merely the easiest is worth deciding before anyone drafts it.
