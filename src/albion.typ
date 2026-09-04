@@ -69,179 +69,101 @@ Your army may be associated with one of the Tribes below. Having a Clan Affiliat
 
 - *Sessair:* Models with this special rule re-roll 1's when rolling To Wound in close combat.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Albionites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Albionites. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("THE LIGHTNING SPEAR", 80, type: "Light lance/spear/javelins")[All close combat and missile attacks with this weapon automatically Hit and have the Lightning Attacks special rule. Any Hits from Shooting penetrates ranks as if it were a Bolt Thrower.]
 
-#entry("MAGIC WEAPONS")
-#namecost("THE LIGHTNING SPEAR", "80 points")
+#magic-weapon("THE BARBED SPEAR", 50, type: "Light lance/spear")[This weapon gives the wielder +1 Strength and the Multiple Wounds (D6) special rule.]
 
-Light lance/spear/javelins. All close combat and missile attacks with this weapon automatically Hit and have the Lightning Attacks special rule. Any Hits from Shooting penetrates ranks as if it were a Bolt Thrower.
+#magic-weapon("THE GREAT STAFF", 35, type: "Great weapon")[For every unsaved Wound caused by this weapon in close combat, you may restore 1 Wounds worth of models in the same unit previously slain during the battle just like a summoning spell.]
 
-#namecost("THE BARBED SPEAR", "50 points")
+#magic-weapon("THE ANSWERER", 30)[This sword has the Ignore Armour Saves special rule, and for every Wound caused, the enemy model must pass a Toughness test or suffer an additional Wound.]
 
-Light lance/spear. This weapon gives the wielder +1 Strength and the Multiple Wounds (D6) special rule.
+#magic-weapon("THE SINGING SWORD", 30)[In any turn in which the wielder causes one or more unsaved Wound with this sword, all enemy units within 12" must immediately take and resolve a Panic Test.]
 
-#namecost("THE GREAT STAFF", "35 points")
+#magic-weapon("SPEAR OF FIACHA", 25, type: "Light lance/spear")[The wielder gains Magic Resistance (2). If a spell is dispelled with the assistance of this item, the Wizard who cast it forgets that spell on the roll of a 4+.]
 
-Great weapon. For every unsaved Wound caused by this weapon in close combat, you may restore 1 Wounds worth of models in the same unit previously slain during the battle just like a summoning spell.
+#magic-weapon("WHITE HILT", 25, type: "Great weapon")[The wielder of this sword gains Flaming Attacks. Against models with Toughness 5 or more, he may re-roll failed rolls To Wound.]
 
-#namecost("THE ANSWERER", "30 points")
+#magic-weapon("YSBADDADAN'S JAVELINS", 15, type: "Javelins")[These weapons have the Multiple Wounds (D3) and Poisoned Attacks special rules.]
 
-This sword has the Ignore Armour Saves special rule, and for every Wound caused, the enemy model must pass a Toughness test or suffer an additional Wound.
+#magic-weapon("SICKLE SWORDS OF HORDEK", 10, only: "Wizard", type: "Two hand weapons")[On any to hit roll of 5+, the weapon automatically wounds.]
+]
 
-#namecost("THE SINGING SWORD", "30 points")
+#magic-item-section("armour")[
+#magic-armour("OGHAM ARMOUR", 35, type: "Light armour")[The wearer gains a Magical Ward (5+) and may re-roll Ward save results of 1.]
 
-In any turn in which the wielder causes one or more unsaved Wound with this sword, all enemy units within 12" must immediately take and resolve a Panic Test.
+#magic-armour("THE EAR OF BEAUTY", 35, type: "Shield")[The wielder gains the Parry (5+) special rule. For every successful Parry save the wielder makes in close combat, he may make an extra attack back immediately against the model/unit that struck the blow.]
 
-#namecost("SPEAR OF FIACHA", "25 points")
+#magic-armour("MOOR ARMOUR", 25, type: "Light armour")[All attacks made against the bearer are resolved at \-1 Strength.]
 
-Light lance/spear. The wielder gains Magic Resistance (2). If a spell is dispelled with the assistance of this item, the Wizard who cast it forgets that spell on the roll of a 4+.
+#magic-armour("SWIFT TO HAND", 20, type: "Shield")[The bearer gains +1 Attack.]
 
-#namecost("WHITE HILT", "25 points")
+#magic-armour("HELM OF PRIDWEN", 15)[This item gives the wearer a 6+ armour save. In addition, the wearer gains the Mighty Blow (1) special rule in any turn in which they make a successful charge.]
 
-Great weapon. The wielder of this sword gains Flaming Attacks. Against models with Toughness 5 or more, he may re-roll failed rolls To Wound.
+#magic-armour("RED-BACKED", 15, type: "Shield")[This shield (but not any other armour the wearer might have) ignores all negative modifiers when taking armour saves.]
 
-#namecost("YSBADDADAN'S JAVELINS", "15 points")
+#magic-armour("FIMIR-SKIN CLOAK", 5)[The wearer of this item gains the Natural Armour (6+) special rule. However, all Fimir models gain the Hatred special rule against the wearer.]
+]
 
-Javelins. These weapons have the Multiple Wounds (D3) and Poisoned Attacks special rules.
+#magic-item-section("talisman")[
+#talisman("THE TRISKELE", 35, only: "Wizard", common: true)[The wearer of the Triskele gains the Magical Ward (5+) and Magic Resistance (2) special rules.]
 
-#namecost("SICKLE SWORDS OF HORDEK", "10 points")
+#talisman("RING OF ELUNED THE FORTUNATE", 30, only: "Model on foot")[The character cannot be targeted by any missile attack.]
 
-Wizard only. Two hand weapons. On any to hit roll of 5+, the weapon automatically wounds.
+#talisman("BRACELET OF PURITY", 25)[The wearer can take a Leadership test at the start of each turn. If passed, they are immediately granted a Magical Ward (4+) for the duration of the turn.]
 
-#entry("MAGIC ARMOUR")
-#namecost("OGHAM ARMOUR", "35 points")
+#talisman("HONOUR BELT OF CONSTITUTION", 25)[The wearer gains +1 to their Toughness.]
+]
 
-Light Armour. The wearer gains a Magical Ward (5+) and may re-roll Ward save results of 1.
+#magic-item-section("arcane")[
+#arcane-item("STAFF OF LIGHT", 40, type: "Staff")[The bearer gains +1 dispel bonus and +1 to all channelling rolls for dispel dice.]
 
-#namecost("THE EAR OF BEAUTY", "35 points")
+#arcane-item("STAFF OF SUMMONING", 40, type: "Staff")[The bearer gains a casting bonus equal to the rank bonus of any unit they are in.]
 
-Shield. The wielder gains the Parry (5+) special rule. For every successful Parry save the wielder makes in close combat, he may make an extra attack back immediately against the model/unit that struck the blow.
+#arcane-item("MAGIC CATCHER", 25, type: "Relic")[Whenever an enemy spell (except *summoning* spells) is successfully cast within 12" of the bearer of this item, roll a D6. On a 4+, that spell can then be cast once as a Bound Spell as a power level equal to the spell's normal casting value in your next Magic phase.]
 
-#namecost("MOOR ARMOUR", "25 points")
+#arcane-item("POTION OF KNOWLEDGE", 15, type: "Charm", one-use: true)[The potion can be used at the start of any of your Magic phases. Once used, the Wizard gains the Loremaster special rule from any one lore normally available to them for the duration of this Magic phase.]
 
-Light armour. All attacks made against the bearer are resolved at \-1 Strength.
+#arcane-item("OGHAM SHARD", 15, type: "Charm", one-use: true)[Any spell that is cast this turn will count the roll of any double (except 1's) as 6's for the purpose of rolling Ultimate Power.]
+]
 
-#namecost("SWIFT TO HAND", "20 points")
+#magic-item-section("enchanted")[
+#enchanted-item("CAULDRON OF REBIRTH", 75)[At the start of each of your Magic phases, you may restore up to D3 Wounds worth of models in the same unit previously slain during the battle, just like a summoning spell. Any friendly character slain in this unit may also be resurrected once in this manner. However, a resurrected character does not bestow his Leadership onto the unit, nor can the unit benefit from his War Cry ability. Resurrected Wizards can no longer cast spells.]
 
-Shield. The bearer gains +1 Attack.
+#enchanted-item("WHETSTONE OF TUDWAL TUDGLYD", 40)[The bearer will automatically Wound with their Close Combat attacks.]
 
-#namecost("HELM OF PRIDWEN", "15 points")
+#enchanted-item("HORN OF BORABU", 25)[One Infantry unit in your army may be given the Ambushers special rule. In addition, that unit may automatically enter the battlefield within 24" of the bearer of this item, instead of rolling to see if they arrive.]
 
-This item gives the wearer a 6+ armour save. In addition, the wearer gains the Mighty Blow (1) special rule in any turn in which they make a successful charge.
+#enchanted-item("ARDAGH CHALICE", 20, one-use: true)[This item may be used at the start of any of your turns. When used, the bearer gains +1 Strength, Toughness and Attacks until the start of your next turn.]
 
-#namecost("RED-BACKED", "15 points")
+#enchanted-item("CHARIOT OF MORGAN MWYNFAWR", 20, only: "Model on Chariot")[The model's Chariot gains the Fly (7) special rule.]
 
-Shield. This shield (but not any other armour the wearer might have) ignores all negative modifiers when taking armour saves.
+#enchanted-item("CRANE-SKIN BAG OF CUMHAIL", 20)[The wearer may choose between any one Magic Weapon from the Main Rulebook worth up to 15 points each turn. They may not take any other Magic Weapon.]
 
-#namecost("FIMIR-SKIN CLOAK", "5 points")
+#enchanted-item("HARP OF DAGDA", 15, bound: (level: 1, cast: "5+"))[This item contains an *augment aura* spell with a range of 12". All fleeing units within range automatically Rally.]
 
-The wearer of this item gains the Natural Armour (6+) special rule. However, all Fimir models gain the Hatred special rule against the wearer.
+#enchanted-item("RORY MOR'S HORN", 15, one-use: true)[At the start of the battle, the bearer may attempt to drink from the Horn by passing a Strength test. If passed, they gain +1 to their Leadership for the remainder of the battle.]
 
-#entry("TALISMANS")
-#namecost("THE TRISKELE*", "35 points")
+#enchanted-item("MAD MARSH WADERS", 10)[The wearer of these magical boots and any unit he joins gain the Swamp Strider special rule, and are always Steadfast when in a marsh.]
+]
 
-Wizard only. The wearer of the Triskele gains the Magical Ward (5+) and Magic Resistance (2) special rules.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF THE SUN KING", 60)[All models in the unit will always Wound enemies on at least a 3+ in close combat. Armour saves are affected by the unit's normal Strength. In addition, the unit receives +D3 to its Combat Resolution bonus in any turn that they charge.]
 
-#namecost("RING OF ELUNED THE FORTUNATE", "30 points")
+#magic-standard("BANNER OF THE ANCIENTS", 50)[All friendly units of Half Giants, Giants, Bonegrinder Giants, Centaurs and Pixies gain a Magical Ward (6+) if they are within 12" of this banner.]
 
-Model on foot only. The character cannot be targeted by any missile attack.
+#magic-standard("VIRIDIAN STANDARD", 30)[The unit carrying this standard gains the Flammable and Natural Armour (6+) special rules.]
 
-#namecost("BRACELET OF PURITY", "25 points")
+#magic-standard("BANNER OF THE MISTS", 30)[Any missile fire directed against the unit carrying this standard suffer \-1 To Hit.]
 
-The wearer can take a Leadership test at the start of each turn. If passed, they are immediately granted a Magical Ward (4+) for the duration of the turn.
+#magic-standard("THE BOG STANDARD", 25)[All models in any unit charging the unit carrying this standard must take a dangerous terrain test as though charging through a marsh.]
 
-#namecost("HONOUR BELT OF CONSTITUTION", "25 points")
+#magic-standard("THE FAIRY FLAG OF DUNVEGAN", 25)[All enemy units within 12" and with line of sight to the unit carrying this standard at the start of their turn must take a Psychology test. If failed, the unit must move straight towards them, following all the rules for Stupidity.]
 
-The wearer gains +1 to their Toughness.
-
-#entry("ARCANE ITEMS")
-#namecost("STAFF OF LIGHT", "40 points")
-
-Staff. The bearer gains +1 dispel bonus and +1 to all channelling rolls for dispel dice.
-
-#namecost("STAFF OF SUMMONING", "40 points")
-
-Staff. The bearer gains a casting bonus equal to the rank bonus of any unit they are in.
-
-#namecost("MAGIC CATCHER", "25 points")
-
-Relic. Whenever an enemy spell (except *summoning* spells) is successfully cast within 12" of the bearer of this item, roll a D6. On a 4+, that spell can then be cast once as a Bound Spell as a power level equal to the spell's normal casting value in your next Magic phase.
-
-#namecost("POTION OF KNOWLEDGE", "15 points")
-
-Charm. One use only. The potion can be used at the start of any of your Magic phases. Once used, the Wizard gains the Loremaster special rule from any one lore normally available to them for the duration of this Magic phase.
-
-#namecost("OGHAM SHARD", "15 points")
-
-Charm. One use only. Any spell that is cast this turn will count the roll of any double (except 1's) as 6's for the purpose of rolling Ultimate Power.
-
-#entry("ENCHANTED ITEMS")
-#namecost("CAULDRON OF REBIRTH", "75 points")
-
-At the start of each of your Magic phases, you may restore up to D3 Wounds worth of models in the same unit previously slain during the battle, just like a summoning spell. Any friendly character slain in this unit may also be resurrected once in this manner. However, a resurrected character does not bestow his Leadership onto the unit, nor can the unit benefit from his War Cry ability. Resurrected Wizards can no longer cast spells.
-
-#namecost("WHETSTONE OF TUDWAL TUDGLYD", "40 points")
-
-The bearer will automatically Wound with their Close Combat attacks.
-
-#namecost("HORN OF BORABU", "25 points")
-
-One Infantry unit in your army may be given the Ambushers special rule. In addition, that unit may automatically enter the battlefield within 24" of the bearer of this item, instead of rolling to see if they arrive.
-
-#namecost("ARDAGH CHALICE", "20 points")
-
-One use only. This item may be used at the start of any of your turns. When used, the bearer gains +1 Strength, Toughness and Attacks until the start of your next turn.
-
-#namecost("CHARIOT OF MORGAN MWYNFAWR", "20 points")
-
-Model on Chariot only. The model's Chariot gains the Fly (7) special rule.
-
-#namecost("CRANE-SKIN BAG OF CUMHAIL", "20 points")
-
-The wearer may choose between any one Magic Weapon from the Main Rulebook worth up to 15 points each turn. They may not take any other Magic Weapon.
-
-#namecost("HARP OF DAGDA", "15 points")
-
-Bound Spell (Level 1, cast on 5+). This item contains an *augment aura* spell with a range of 12". All fleeing units within range automatically Rally.
-
-#namecost("RORY MOR'S HORN", "15 points")
-
-One use only. At the start of the battle, the bearer may attempt to drink from the Horn by passing a Strength test. If passed, they gain +1 to their Leadership for the remainder of the battle.
-
-#namecost("MAD MARSH WADERS", "10 points")
-
-The wearer of these magical boots and any unit he joins gain the Swamp Strider special rule, and are always Steadfast when in a marsh.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF THE SUN KING", "60 points")
-
-All models in the unit will always Wound enemies on at least a 3+ in close combat. Armour saves are affected by the unit's normal Strength. In addition, the unit receives +D3 to its Combat Resolution bonus in any turn that they charge.
-
-#namecost("BANNER OF THE ANCIENTS", "50 points")
-
-All friendly units of Half Giants, Giants, Bonegrinder Giants, Centaurs and Pixies gain a Magical Ward (6+) if they are within 12" of this banner.
-
-#namecost("VIRIDIAN STANDARD", "30 points")
-
-The unit carrying this standard gains the Flammable and Natural Armour (6+) special rules.
-
-#namecost("BANNER OF THE MISTS", "30 points")
-
-Any missile fire directed against the unit carrying this standard suffer \-1 To Hit.
-
-#namecost("THE BOG STANDARD", "25 points")
-
-All models in any unit charging the unit carrying this standard must take a dangerous terrain test as though charging through a marsh.
-
-#namecost("THE FAIRY FLAG OF DUNVEGAN", "25 points")
-
-All enemy units within 12" and with line of sight to the unit carrying this standard at the start of their turn must take a Psychology test. If failed, the unit must move straight towards them, following all the rules for Stupidity.
-
-#namecost("STANDARD OF FIONN MAC CUMHAILL", "25 points")
-
-The unit may re-roll failed rolls to Wound in the first round of Close Combat.
+#magic-standard("STANDARD OF FIONN MAC CUMHAILL", 25)[The unit may re-roll failed rolls to Wound in the first round of Close Combat.]
+]
 
 = CHARACTERS
 

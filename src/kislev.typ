@@ -293,167 +293,99 @@ Remains in play. _Hag's Curse_ is a *hex* spell with a range of 24". The target 
 _Curse of Sickness_ is a *direct damage* spell with a range of 24". All models in the unit must pass a Toughness test or suffer one Wound which Ignores Armour saves.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kislevites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kislevites. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("HOLY AXE OF MISKA", 65)[Requires two hands. The Holy Axe of Miska gives the wielder +2 Strength. In addition, it has the Multiple Wounds (D3) special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("HOLY AXE OF MISKA", "65 points")
+#magic-weapon("WYRMSPIKE", 40)[All attacks made with the Wyrmspike have the Ice Attacks and Multiple Wounds (D3) special rules.]
 
-Requires two hands. The Holy Axe of Miska gives the wielder +2 Strength. In addition, it has the Multiple Wounds (D3) special rule.
+#magic-weapon("FROST SHARD GLAIVE", 35, type: "Polearm", bound: (level: 1, cast: "6+"))[This is a *hex* spell with a range of 18". The target suffers a -D3 penalty to their Movement (to a minimum of 1) until the start of the caster's next turn.]
 
-#namecost("WYRMSPIKE", "40 points")
+#magic-weapon("THE RIME BLADE", 35)[All attacks made with the Rime Blade have the Ice Attacks and the Armour Piercing (2) special rules.]
 
-All attacks made with the Wyrmspike have the Ice Attacks and Multiple Wounds (D3) special rules.
+#magic-weapon("DAZH'S BRAZIER", 25)[All attacks made with Dazh's Brazier have the Flaming Attacks special rule. In addition, the wielder and any unit they are with gain the Regeneration (6+) special rule.]
 
-#namecost("FROST SHARD GLAIVE", "35 points")
+#magic-weapon("PISTOLS OF PRINCE BOYDINOV", 25, type: "Brace of pistols")[All shots fired automatically Hit and may re-roll failed rolls To Wound.]
 
-Polearm. Bound Spell (Level 1, cast on 6+). This is a *hex* spell with a range of 18". The target suffers a -D3 penalty to their Movement (to a minimum of 1) until the start of the caster's next turn.
+#magic-weapon("AXE OF TOR", 20)[All attacks made with this weapon have the Lightning Attacks special rule.]
 
-#namecost("THE RIME BLADE", "35 points")
+#magic-weapon("URSUN'S CLAWS", 20, type: "Two hand weapons")[Attacks made with these weapons have the Armour Piercing (1) special rule. In addition, the wielder gains the Frenzy special rule.]
+]
 
-All attacks made with the Rime Blade have the Ice Attacks and the Armour Piercing (2) special rules.
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF ALEXANDR", 40, type: "Medium armour")[The Armour of Alexandr gives the wearer a Magical Ward (5+). In addition, if an enemy with a Magic Weapon causes a Wound that is saved by either the wearer's armour save or Magical Ward, roll a D6. On a 5+, the opponent's weapon is destroyed.]
 
-#namecost("DAZH'S BRAZIER", "25 points")
+#magic-armour("ICE-ARMOUR OF JEKATERINA", 35, only: "Ice Witches and Frost Maidens")[This armour gives the wearer a 2+ Armour save, which cannot be improved by any means. The armour save can never be reduced below 4+. If the save ever fails the armour is destroyed. This armour may be taken by Wizards despite them not normally being able to take armour.]
 
-All attacks made with Dazh's Brazier have the Flaming Attacks special rule. In addition, the wielder and any unit they are with gain the Regeneration (6+) special rule.
+#magic-armour("IRON ICE ARMOUR", 30, type: "Medium armour")[Enemies in base contact with the wielder are subject to the Always Strikes Last special rule. This has no effect on models with Immunity (Ice Attacks).]
 
-#namecost("PISTOLS OF PRINCE BOYDINOV", "25 points")
+#magic-armour("SHIELD OF SACRIFICE", 30, type: "Shield")[Every time the bearer suffers an unsaved Wound, roll a D6. On a 4+, the Wound is taken by a friendly model in base contact instead.]
 
-Brace of pistols. All shots fired automatically Hit and may re-roll failed rolls To Wound.
+#magic-armour("FROST SHARD ARMOUR", 20, type: "Medium armour")[The bearer gains the Immunity (Ice Attacks) and Magic Resistance (2) special rules.]
 
-#namecost("AXE OF TOR", "20 points")
+#magic-armour("WYRM HARNESS", 20, type: "Medium armour")[The wearer of the Wyrm Harness gains a Magical Ward (6+).]
 
-All attacks made with this weapon have the Lightning Attacks special rule.
+#magic-armour("GREAT BEAR PELT", 15)[The wearer of the Great Bear Belt gains the Natural Armour (5+) special rule.]
+]
 
-#namecost("URSUN'S CLAWS", "20 points")
+#magic-item-section("talisman")[
+#talisman("THE CROWN OF KISLEV", 40)[Enemies must re-roll all successful to Wound rolls against the wearer.]
 
-Two hand weapons. Attacks made with these weapons have the Armour Piercing (1) special rule. In addition, the wielder gains the Frenzy special rule.
+#talisman("BLIZZARD BROACH", 35)[As long as they have not joined a unit, the wearer of the Blizzard Broach cannot be charged or targeted by missile attacks or spells from enemies more than 12" away.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF ALEXANDR", "40 points")
+#talisman("BLOOD OF THE MOTHERLAND", 25)[For every unsaved Wound suffered by the bearer or the unit they are with, they gain +1 to their Leadership for the remainder of the turn.]
 
-Medium armour. The Armour of Alexandr gives the wearer a Magical Ward (5+). In addition, if an enemy with a Magic Weapon causes a Wound that is saved by either the wearer's armour save or Magical Ward, roll a D6. On a 5+, the opponent's weapon is destroyed.
+#talisman("STAR-IRON RING", 20)[The wearer of the Star-Iron Ring gains a Magical Ward (6+) which may be re-rolled.]
+]
 
-#namecost("ICE-ARMOUR OF JEKATERINA", "35 points")
+#magic-item-section("arcane")[
+#arcane-item("SCEPTRE OF SHOIKA", 75, type: "Staff")[The Sceptre of Shoika adds a Power and a Dispel dice to the Kislev army in every phase. Once per battle, the wizard can add +1 to a dice used for casting a spell. This can be used to cause Ultimate Power or prevent a Miscast.]
 
-Ice Witches and Frost Maidens only. This armour gives the wearer a 2+ Armour save, which cannot be improved by any means. The armour save can never be reduced below 4+. If the save ever fails the armour is destroyed. This armour may be taken by Wizards despite them not normally being able to take armour.
+#arcane-item("GASTUVA'S EGG", 50, type: "Charm", one-use: true)[Gastuva's Egg may be used at the start of any turn. Once used, the bearer and any unit they are with gain the Unbreakable special rule and cannot be harmed from any source, but they cannot move for any reason. The effect lasts until the start of your next turn.]
 
-#namecost("IRON ICE ARMOUR", "30 points")
+#arcane-item("SNOWFLAKE PENDANT", 40, type: "Relic")[The bearer of the Snowflake Pendant may re-roll 1's when casting spells.]
 
-Medium armour. Enemies in base contact with the wielder are subject to the Always Strikes Last special rule. This has no effect on models with Immunity (Ice Attacks).
+#arcane-item("MIRROR OF THE ICE QUEEN", 25, only: "Ice Witch or Frost Maiden", type: "Relic")[Every time an enemy model causes an unsaved Wound on the bearer or any unit they are with, the enemy model suffers a Strength 3 Hit.]
 
-#namecost("SHIELD OF SACRIFICE", "30 points")
-
-Shield. Every time the bearer suffers an unsaved Wound, roll a D6. On a 4+, the Wound is taken by a friendly model in base contact instead.
-
-#namecost("FROST SHARD ARMOUR", "20 points")
-
-Medium armour. The bearer gains the Immunity (Ice Attacks) and Magic Resistance (2) special rules.
-
-#namecost("WYRM HARNESS", "20 points")
-
-Medium armour. The wearer of the Wyrm Harness gains a Magical Ward (6+).
-
-#namecost("GREAT BEAR PELT", "15 points")
-
-The wearer of the Great Bear Belt gains the Natural Armour (5+) special rule.
-
-#entry("TALISMANS")
-#namecost("THE CROWN OF KISLEV", "40 points")
-
-Enemies must re-roll all successful to Wound rolls against the wearer.
-
-#namecost("BLIZZARD BROACH", "35 points")
-
-As long as they have not joined a unit, the wearer of the Blizzard Broach cannot be charged or targeted by missile attacks or spells from enemies more than 12" away.
-
-#namecost("BLOOD OF THE MOTHERLAND", "25 points")
-
-For every unsaved Wound suffered by the bearer or the unit they are with, they gain +1 to their Leadership for the remainder of the turn.
-
-#namecost("STAR-IRON RING", "20 points")
-
-The wearer of the Star-Iron Ring gains a Magical Ward (6+) which may be re-rolled.
-
-#entry("ARCANE ITEMS")
-#namecost("SCEPTRE OF SHOIKA", "75 points")
-
-Staff. The Sceptre of Shoika adds a Power and a Dispel dice to the Kislev army in every phase. Once per battle, the wizard can add +1 to a dice used for casting a spell. This can be used to cause Ultimate Power or prevent a Miscast.
-
-#namecost("GASTUVA'S EGG", "50 points")
-
-Charm. One use only. Gastuva's Egg may be used at the start of any turn. Once used, the bearer and any unit they are with gain the Unbreakable special rule and cannot be harmed from any source, but they cannot move for any reason. The effect lasts until the start of your next turn.
-
-#namecost("SNOWFLAKE PENDANT", "40 points")
-
-Relic. The bearer of the Snowflake Pendant may re-roll 1's when casting spells.
-
-#namecost("MIRROR OF THE ICE QUEEN", "25 points")
-
-Ice Witch or Frost Maiden only. Relic. Every time an enemy model causes an unsaved Wound on the bearer or any unit they are with, the enemy model suffers a Strength 3 Hit.
-
-#namecost("YAKOV'S KVAS", "25 points")
-
-One use only. The kvas may be distributed to one unit joined by the character with Yakov’s Kvas at the start of any turn. Roll a D6 and consult the chart below:
+#arcane-item("YAKOV'S KVAS", 25, one-use: true)[The kvas may be distributed to one unit joined by the character with Yakov’s Kvas at the start of any turn. Roll a D6 and consult the chart below:
 
 #chart((("D6", "Result"), ("1-2", "The character and unit suffer from Stupidity
 for the rest of the game."), ("3-4", "The character and unit are subject to Frenzy
 for the rest of the game."), ("5-6", "The character and unit are subject to Hatred
 for the rest of the game.")))
-#namecost("STEPPE HUNTER'S HORN", "20 points")
+]
 
-One use only. The Steppe Hunter's Horn may be sounded at the start of any phase. Once used, the bearer and any unit they are with gain the Multiple Wounds (D3) special rule for the remainder of the turn.
+#arcane-item("STEPPE HUNTER'S HORN", 20, one-use: true)[The Steppe Hunter's Horn may be sounded at the start of any phase. Once used, the bearer and any unit they are with gain the Multiple Wounds (D3) special rule for the remainder of the turn.]
 
-#namecost("DAZH'S FLINT", "5 points")
+#arcane-item("DAZH'S FLINT", 5)[The model bearing Dazh's Flint gains the Flaming Attacks special rule.]
+]
 
-The model bearing Dazh's Flint gains the Flaming Attacks special rule.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF THE ORTHODOXY", 35)[The unit carrying this standard gains the Magical Attacks and Mighty Blow (1) special rules.]
 
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF THE ORTHODOXY", "35 points")
+#magic-standard("BANNER OF PRAAG", 25)[The unit carrying this standard gains the Immunity (Psychology) and Stubborn special rules once it is below Unit Strength 10.]
 
-The unit carrying this standard gains the Magical Attacks and Mighty Blow (1) special rules.
+#magic-standard("HOLY ICON OF MISKA", 25)[The unit carrying this standard gains +1 to Hit in the first round of close combat.]
 
-#namecost("BANNER OF PRAAG", "25 points")
+#magic-standard("NJEVSKI'S SCREECHING BACK BANNERS", 25, only: "Winged Lancers or Gryphon Legion")[Any unit charged by the unit carrying this standard that chooses to Hold as a charge reaction must take a Panic test with a \-1 Leadership modifier.]
 
-The unit carrying this standard gains the Immunity (Psychology) and Stubborn special rules once it is below Unit Strength 10.
+#magic-standard("FATHER NIKLAS' MANTLE", 10)[The unit carrying this standard may re-roll Dangerous Terrain tests.]
 
-#namecost("HOLY ICON OF MISKA", "25 points")
+#magic-standard("STANDARD OF THE EMPTY STEPPE", 10)[The unit carrying this standard gains the Vanguard special rule.]
+]
 
-The unit carrying this standard gains +1 to Hit in the first round of close combat.
+#magic-item-section("enchanted")[
+#enchanted-item("APPLE OF KISLEV", 40, only: "Boyar or Ataman")[The Apple of Kislev increases the Leadership of the owner to 10. In addition, the unit led by the character carrying the Apple can re-roll any Leadership test.]
 
-#namecost("NJEVSKI'S SCREECHING BACK BANNERS", "25 points")
+#enchanted-item("EVER-FULL KOVSH", 35)[The bearer gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.]
 
-Winged Lancers or Gryphon Legion only. Any unit charged by the unit carrying this standard that chooses to Hold as a charge reaction must take a Panic test with a \-1 Leadership modifier.
+#enchanted-item("SAINT ANNUSHKA'S FINGER BONE", 35)[The bearer of Saint Annushka's Finger Bone automatically regains one lost Wound at the start of each turn.]
 
-#namecost("FATHER NIKLAS' MANTLE", "10 points")
+#enchanted-item("BALALAIKA OF THE ARARI", 25)[The bearer and any unit they are with gain +1 to their Weapon Skill.]
 
-The unit carrying this standard may re-roll Dangerous Terrain tests.
-
-#namecost("STANDARD OF THE EMPTY STEPPE", "10 points")
-
-The unit carrying this standard gains the Vanguard special rule.
-
-#entry("ENCHANTED ITEMS")
-#namecost("APPLE OF KISLEV", "40 points")
-
-Boyar or Ataman only. The Apple of Kislev increases the Leadership of the owner to 10. In addition, the unit led by the character carrying the Apple can re-roll any Leadership test.
-
-#namecost("EVER-FULL KOVSH", "35 points")
-
-The bearer gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-
-#namecost("SAINT ANNUSHKA'S FINGER BONE", "35 points")
-
-The bearer of Saint Annushka's Finger Bone automatically regains one lost Wound at the start of each turn.
-
-#namecost("BALALAIKA OF THE ARARI", "25 points")
-
-The bearer and any unit they are with gain +1 to their Weapon Skill.
-
-#namecost("BOOTS OF SEVEN LEAGUES", "25 points")
-
-Model on foot only. These boots increase the wearer's Movement value to 10 and give him the Strider special rule. In addition, he may move as if he had the Fly (10) special rule.
+#enchanted-item("BOOTS OF SEVEN LEAGUES", 25, only: "Model on foot")[These boots increase the wearer's Movement value to 10 and give him the Strider special rule. In addition, he may move as if he had the Fly (10) special rule.]
+]
 
 = CHARACTERS
 

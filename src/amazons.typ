@@ -108,171 +108,97 @@ All missile and close combat attacks targeting a model with an Amulet of the Moo
 
 A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1) special rules.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("STAR SWORD", 60)[The Star Sword gives the wielder the Always Strikes First, Ignores Armour saves, and Parry (6+) special rules.]
 
-#entry("MAGIC WEAPONS")
-#namecost("STAR SWORD", "60 points")
+#magic-weapon("ARC CLAWS", 40, type: "Two hand weapons")[Attacks made with the Arc Claws have the Lightning Attacks special rule, and the wielder may reroll any failed To Wound rolls in close combat.]
 
-The Star Sword gives the wielder the Always Strikes First, Ignores Armour saves, and Parry (6+) special rules.
+#magic-weapon("HAND OF RIGG", 40)[All attacks made with the Hand of Rigg are resolved at Strength 8 and have the Always Strikes Last special rule.]
 
-#namecost("ARC CLAWS", "40 points")
+#magic-weapon("BRIGHT STAFF", 30, type: "Sunstaff")[The Bright Staff has a range of 30" and the Multiple Shots (D6) special rule.]
 
-Two hand weapons. Attacks made with the Arc Claws have the Lightning Attacks special rule, and the wielder may reroll any failed To Wound rolls in close combat.
+#magic-weapon("JAGUAR MACE", 25)[The wielder gains the Armour Piercing (1) special rule, and enemies attacking the wielder in close combat suffer \-1 To Hit.]
 
-#namecost("HAND OF RIGG", "40 points")
+#magic-weapon("SKYPIERCER", 25, type: "Bow")[All shots from Skypiercer are resolved at Strength 5 with the Flaming Attacks special rule. Each shot penetrates ranks like a bolt thrower, but does not suffer any Strength penalties for each rank.]
 
-All attacks made with the Hand of Rigg are resolved at Strength 8 and have the Always Strikes Last special rule.
+#magic-weapon("METEOR SPEAR", 25, type: "Light lance/spear")[Attacks made with the Meteor Spear have the Flaming Attacks special rule. When charging, all attacks made with it have +1 Strength with the Armour Piercing (1) and Multiple Wounds (D3) special rules.]
 
-#namecost("BRIGHT STAFF", "30 points")
+#magic-weapon("ROAR OF CHOTEC", 25, type: "Sun Gauntlet")[Shots from the Roar of Chotec have Strength 6. When firing the Roar of Chotec, you may choose to overcharge it, making the shot have Strength 7 and the Multiple Wounds (2) special rule. If you do so, on a To Hit roll of 1 the wielder suffers one automatic hit from the weapon, using the normal profile, even if you can reroll the initial To Hit roll of 1.]
 
-Sunstaff. The Bright Staff has a range of 30" and the Multiple Shots (D6) special rule.
+#magic-weapon("MOONBLADE", 20, type: "Additional hand weapon")[This weapon gives the wielder the Parry (6+) special rule. In addition, for every successful Parry save they make, the model that struck the blow suffers a Strength 4 Hit.]
+]
 
-#namecost("JAGUAR MACE", "25 points")
+#magic-item-section("armour")[
+#magic-armour("SHIELD OF FEATHER IRON", 40, type: "Shield")[All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule.]
 
-The wielder gains the Armour Piercing (1) special rule, and enemies attacking the wielder in close combat suffer \-1 To Hit.
+#magic-armour("CRYSTALLINE ARMOUR", 30, type: "Light armour")[For every spell successfully cast upon the bearer or the unit they are with, the Amazon player gains an additional Power Dice or Dispel dice to their current pool.]
 
-#namecost("SKYPIERCER", "25 points")
+#magic-armour("ARMOUR OF THE SWAMP DRAKE", 10, type: "Light armour")[The wearer gains the Aquatic and Natural Armour (6+) special rule.]
+]
 
-Bow. All shots from Skypiercer are resolved at Strength 5 with the Flaming Attacks special rule. Each shot penetrates ranks like a bolt thrower, but does not suffer any Strength penalties for each rank.
+#magic-item-section("talisman")[
+#talisman("MAGIC FEATHERS OF NATALINA", 45)[Enemies must re-roll successful rolls To Hit in close combat and with missile weapons against the wearer. In addition, they gain a Magical Ward (6+).]
 
-#namecost("METEOR SPEAR", "25 points")
+#talisman("ASPECT OF AXLBERYN", 40, only: "Model on foot")[The wearer gains Ethereal special rules, but cannot join any units.]
 
-Light lance/spear. Attacks made with the Meteor Spear have the Flaming Attacks special rule. When charging, all attacks made with it have +1 Strength with the Armour Piercing (1) and Multiple Wounds (D3) special rules.
+#talisman("SHIELD AMULET", 40)[For every Wound the wearer suffers, roll a D6. If this number is equal to or higher than the Strength of the Attack, the Wound is nullified.]
 
-#namecost("ROAR OF CHOTEC", "25 points")
+#talisman("SIGN OF POTEC", 30)[The wearer has Magic Resistance (1) special rule. Additionally, models with the Daemonic, Undead and Vampiric special rules must reroll successful To Hit rolls made against the wearer in close combat.]
 
-Sun Gauntlet. Shots from the Roar of Chotec have Strength 6. When firing the Roar of Chotec, you may choose to overcharge it, making the shot have Strength 7 and the Multiple Wounds (2) special rule. If you do so, on a To Hit roll of 1 the wielder suffers one automatic hit from the weapon, using the normal profile, even if you can reroll the initial To Hit roll of 1.
+#talisman("MIRAGE OF AMAXONIA", 20)[The wearer gains Dodge (5+) special rule.]
 
-#namecost("MOONBLADE", "20 points")
+#talisman("ITZL'S BEAST-WARD", 15)[Any unit containing Warbeasts, Monstrous Beasts, Monsters, Cavalry, Monstrous Cavalry and Chariots that wants to declare a charge at the character bearing this amulet or their unit must first pass a Leadership test. If failed, the unit may choose a different target for their charge or to not make a charge.]
+]
 
-Additional hand weapon. This weapon gives the wielder the Parry (6+) special rule. In addition, for every successful Parry save they make, the model that struck the blow suffers a Strength 4 Hit.
+#magic-item-section("arcane")[
+#arcane-item("BRIGHT WAND OF XOLOC", 35, bound: (level: 3, cast: "10+"))[The Bright Wand of Xoloc contains a *magic missile* with a range of 24" that is resolved like a hit from a bolt thrower with the Flaming Attacks special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("SHIELD OF FEATHER IRON", "40 points")
+#arcane-item("LOCKET OF RIGG", 35, bound: true)[This item contains a random spell from the Lore of Light (Level 1\-2). At the start of the game, roll a D6 to determine which spell the result correspond to – you may replace the rolled spell with _Shem's Burning Gaze_ if you wish.]
 
-Shield. All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule.
+#arcane-item("THE COBRA STAFF", 30, bound: (level: 2, cast: "7+"))[The Cobra Staff contains a *magic missile* with a range of 18" that causes 2D6 hits. These hits always Wound on a 4+ with the Armour Piercing (2) special rule.]
 
-#namecost("CRYSTALLINE ARMOUR", "30 points")
+#arcane-item("TIARA OF SERENA", 20)[The bearer may attempt to cast the same spell twice in each Magic phase if the first attempt was either unsuccessful or dispelled.]
+]
 
-Light armour. For every spell successfully cast upon the bearer or the unit they are with, the Amazon player gains an additional Power Dice or Dispel dice to their current pool.
+#magic-item-section("enchanted")[
+#enchanted-item("ELIXIR OF LIFE", 50)[The bearer of the Elixir of Life gains the Regeneration (6+) special rule, and automatically heals one Wound suffered earlier in the game at the start of each turn.]
 
-#namecost("ARMOUR OF THE SWAMP DRAKE", "10 points")
+#enchanted-item("FIERY WINGS", 30, only: "Model on foot")[The wearer has the Fly (10) and Impact Hits (1) special rules.]
 
-Light armour. The wearer gains the Aquatic and Natural Armour (6+) special rule.
+#enchanted-item("PLAQUE OF THE OLD ONES", 25)[The bearer becomes a Level 1 Wizard who can use any of the eight Winds of Magic from the _Warhammer Rulebook_. However, they do not get any bonus to casting or dispelling and cannot channel dice.]
 
-#entry("TALISMANS")
-#namecost("MAGIC FEATHERS OF NATALINA", "45 points")
+#enchanted-item("BLUE STUMP BREW", 20, one-use: true)[The brew may be drunk at any time. Roll a D6; this is the number of points the character may increase her characteristics by. She may freely divide them between several different characteristics if she wishes. The effects of the brew last until the start of the character’s next turn.]
 
-Enemies must re-roll successful rolls To Hit in close combat and with missile weapons against the wearer. In addition, they gain a Magical Ward (6+).
+#enchanted-item("EYE OF TZCALLI", 20)[The bearer gains the Sniper special rule.]
 
-#namecost("ASPECT OF AXLBERYN", "40 points")
+#enchanted-item("EMERALD OF THE MOON", 15)[The bearer gains the Armour Piercing (1) and Poisoned Attacks special rules.]
 
-Model on foot only. The wearer gains Ethereal special rules, but cannot join any units.
+#enchanted-item("AUGUR SKULL", 10)[Enemy units deploying with the Scout special rule cannot be set up closer than 18" away from the bearer of this item.]
 
-#namecost("SHIELD AMULET", "40 points")
+#enchanted-item("DEATH WHISTLE", 10)[Any enemy unit that is charged by the bearer of this item must take a Terror test.]
 
-For every Wound the wearer suffers, roll a D6. If this number is equal to or higher than the Strength of the Attack, the Wound is nullified.
+#enchanted-item("STATUE OF SOTEK", 10)[All Skink units in base contact with the bearer are subject to the Always Strikes Last and Hatred special rules.]
 
-#namecost("SIGN OF POTEC", "30 points")
+#enchanted-item("WARRIOR'S SUN RING", 10)[The bearer can reroll one failed To Wound roll in each of their combat phases.]
 
-The wearer has Magic Resistance (1) special rule. Additionally, models with the Daemonic, Undead and Vampiric special rules must reroll successful To Hit rolls made against the wearer in close combat.
+#enchanted-item("HUANCHI'S JAGUAR HEADDRESS", 5, only: "Infantry or Cavalry")[The wearer gains the Ambushers special rule.]
+]
 
-#namecost("MIRAGE OF AMAXONIA", "20 points")
+#magic-item-section("standard")[
+#magic-standard("BANNER OF THE FIRST QUEEN", 55)[The range of the bearer’s Hold Your Ground special rule is increased by 6". Additionally, the bearer of this standard and any unit accompanying them has the Strider special rule and are Stubborn in the first round of close combat.]
 
-The wearer gains Dodge (5+) special rule.
+#magic-standard("JAGUAR STANDARD", 45)[The unit carrying the Jaguar Standard gain the Strength Bonus (1) special rule and have the Cold-blooded special rule when taking Break Tests.]
 
-#namecost("ITZL'S BEAST-WARD", "15 points")
+#magic-standard("EAGLE BANNER", 40)[The unit carrying this standard gains the Swiftstride special rule and may reroll any 1's for their Charge distance roll.]
 
-Any unit containing Warbeasts, Monstrous Beasts, Monsters, Cavalry, Monstrous Cavalry and Chariots that wants to declare a charge at the character bearing this amulet or their unit must first pass a Leadership test. If failed, the unit may choose a different target for their charge or to not make a charge.
+#magic-standard("PIRANHA TOTEM", 30)[The unit carrying this standard gains the Killing Blow special rule.]
 
-#entry("ARCANE ITEMS")
-#namecost("BRIGHT WAND OF XOLOC", "35 points")
+#magic-standard("PENNANT OF SERENA", 25)[The unit carrying this standard automatically passes Leadership tests to disengage from combat when using Guerrilla Warfare, and may choose to move normally in the Remaining Moves phase after rallying, even if they are not Skirmishers or Fast Cavalry.]
 
-Bound Spell (Level 3, cast on 10+). The Bright Wand of Xoloc contains a *magic missile* with a range of 24" that is resolved like a hit from a bolt thrower with the Flaming Attacks special rule.
-
-#namecost("LOCKET OF RIGG", "35 points")
-
-Bound Spell. This item contains a random spell from the Lore of Light (Level 1\-2). At the start of the game, roll a D6 to determine which spell the result correspond to – you may replace the rolled spell with _Shem's Burning Gaze_ if you wish.
-
-#namecost("THE COBRA STAFF", "30 points")
-
-Bound Spell (Level 2, cast on 7+). The Cobra Staff contains a *magic missile* with a range of 18" that causes 2D6 hits. These hits always Wound on a 4+ with the Armour Piercing (2) special rule.
-
-#namecost("TIARA OF SERENA", "20 points")
-
-The bearer may attempt to cast the same spell twice in each Magic phase if the first attempt was either unsuccessful or dispelled.
-
-#entry("ENCHANTED ITEMS")
-#namecost("ELIXIR OF LIFE", "50 points")
-
-The bearer of the Elixir of Life gains the Regeneration (6+) special rule, and automatically heals one Wound suffered earlier in the game at the start of each turn.
-
-#namecost("FIERY WINGS", "30 points")
-
-Model on foot only. The wearer has the Fly (10) and Impact Hits (1) special rules.
-
-#namecost("PLAQUE OF THE OLD ONES", "25 points")
-
-The bearer becomes a Level 1 Wizard who can use any of the eight Winds of Magic from the _Warhammer Rulebook_. However, they do not get any bonus to casting or dispelling and cannot channel dice.
-
-#namecost("BLUE STUMP BREW", "20 points")
-
-One use only. The brew may be drunk at any time. Roll a D6; this is the number of points the character may increase her characteristics by. She may freely divide them between several different characteristics if she wishes. The effects of the brew last until the start of the character’s next turn.
-
-#namecost("EYE OF TZCALLI", "20 points")
-
-The bearer gains the Sniper special rule.
-
-#namecost("EMERALD OF THE MOON", "15 points")
-
-The bearer gains the Armour Piercing (1) and Poisoned Attacks special rules.
-
-#namecost("AUGUR SKULL", "10 points")
-
-Enemy units deploying with the Scout special rule cannot be set up closer than 18" away from the bearer of this item.
-
-#namecost("DEATH WHISTLE", "10 points")
-
-Any enemy unit that is charged by the bearer of this item must take a Terror test.
-
-#namecost("STATUE OF SOTEK", "10 points")
-
-All Skink units in base contact with the bearer are subject to the Always Strikes Last and Hatred special rules.
-
-#namecost("WARRIOR'S SUN RING", "10 points")
-
-The bearer can reroll one failed To Wound roll in each of their combat phases.
-
-#namecost("HUANCHI'S JAGUAR HEADDRESS", "5 points")
-
-Infantry or Cavalry only. The wearer gains the Ambushers special rule.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF THE FIRST QUEEN", "55 points")
-
-The range of the bearer’s Hold Your Ground special rule is increased by 6". Additionally, the bearer of this standard and any unit accompanying them has the Strider special rule and are Stubborn in the first round of close combat.
-
-#namecost("JAGUAR STANDARD", "45 points")
-
-The unit carrying the Jaguar Standard gain the Strength Bonus (1) special rule and have the Cold-blooded special rule when taking Break Tests.
-
-#namecost("EAGLE BANNER", "40 points")
-
-The unit carrying this standard gains the Swiftstride special rule and may reroll any 1's for their Charge distance roll.
-
-#namecost("PIRANHA TOTEM", "30 points")
-
-The unit carrying this standard gains the Killing Blow special rule.
-
-#namecost("PENNANT OF SERENA", "25 points")
-
-The unit carrying this standard automatically passes Leadership tests to disengage from combat when using Guerrilla Warfare, and may choose to move normally in the Remaining Moves phase after rallying, even if they are not Skirmishers or Fast Cavalry.
-
-#namecost("TAPESTRY OF INHAMEX", "15 points")
-
-If a friendly unit within 6" is destroyed or involuntarily flees, the unit carrying this standard may re-roll 1's when rolling To Hit and To Wound in their next close combat phase.
+#magic-standard("TAPESTRY OF INHAMEX", 15)[If a friendly unit within 6" is destroyed or involuntarily flees, the unit carrying this standard may re-roll 1's when rolling To Hit and To Wound in their next close combat phase.]
+]
 
 = CHARACTERS
 

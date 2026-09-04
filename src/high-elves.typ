@@ -220,323 +220,177 @@ Model on foot only. The model may take no other weapons besides spear, light lan
 
 Model on Tiranoc Chariot only. The model may roll an additional D6 for their Impact Hits and pick the highest result. In addition, they may re-roll failed Dangerous Terrain tests.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the High Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the High Elves. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("DEATHSINGER", 65)[At the beginning of each round of close combat, roll a D3; the result is the number you may increase the wielder's Weapon Skill, Strength and Attacks by.]
 
-#entry("MAGIC WEAPONS")
-#namecost("DEATHSINGER", "65 points")
+#magic-weapon("SWORD OF AGES", 60)[The Sword of Ages gives the wielder +1 To Hit, +2 Strength and +1 Attack.]
 
-At the beginning of each round of close combat, roll a D3; the result is the number you may increase the wielder's Weapon Skill, Strength and Attacks by.
+#magic-weapon("BLADE OF THE PHOENIX", 50)[The Blade of the Phoenix gives the wielder the Ignores Armour Saves special rule. Once per battle, at the start of any close combat phase the wielder can unleash the full power of the sword. For the remainder of that close combat phase, they get the Always Strikes First special rule and +D6 Attacks.]
 
-#namecost("SWORD OF AGES", "60 points")
+#magic-weapon("BOW OF THE SEAFARER", 45, only: "Lothern Sea Helm")[The Bow of the Seafarer is a Bolt Thrower.]
 
-The Sword of Ages gives the wielder +1 To Hit, +2 Strength and +1 Attack.
+#magic-weapon("CLOUDCLEAVER", 45, type: "Polearm")[All attacks made with Cloudcleaver have the Ignores Armour Saves special rule. In addition, it gives the wielder the Fear special rule and against War Beasts and Cavalry, they cause Terror.]
 
-#namecost("BLADE OF THE PHOENIX", "50 points")
+#magic-weapon("SPEAR OF THE SHORES", 40, type: "Light lance/spear")[This weapon gives the wielder +1 Strength and +2 Attacks.]
 
-The Blade of the Phoenix gives the wielder the Ignores Armour Saves special rule. Once per battle, at the start of any close combat phase the wielder can unleash the full power of the sword. For the remainder of that close combat phase, they get the Always Strikes First special rule and +D6 Attacks.
+#magic-weapon("SWORD OF VICTORY", 35)[The Sword of Victory gives the wielder the Always Strikes First and Armour Piercing (1) special rules. In addition, they will always Wound on a 3+ or better.]
 
-#namecost("BOW OF THE SEAFARER", "45 points")
-
-Lothern Sea Helm only. The Bow of the Seafarer is a Bolt Thrower.
-
-#namecost("CLOUDCLEAVER", "45 points")
-
-Polearm. All attacks made with Cloudcleaver have the Ignores Armour Saves special rule. In addition, it gives the wielder the Fear special rule and against War Beasts and Cavalry, they cause Terror.
-
-#namecost("SPEAR OF THE SHORES", "40 points")
-
-Light lance/spear. This weapon gives the wielder +1 Strength and +2 Attacks.
-
-#namecost("SWORD OF VICTORY", "35 points")
-
-The Sword of Victory gives the wielder the Always Strikes First and Armour Piercing (1) special rules. In addition, they will always Wound on a 3+ or better.
-
-#namecost("THE REAVER BOW", "30 points")
-
-Elven shortbow. The Reaver Bow has the following profile:
+#magic-weapon("THE REAVER BOW", 30, type: "Elven shortbow")[The Reaver Bow has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("20/30\"", "5", "Armour Piercing (1), March & Shoot, Multiple Shots (3)"))
-#namecost("THE BLADE OF LEAPING GOLD", "25 points")
-
-The Blade of Leaping Gold grants the wielder +3 Attacks. In addition, any roll of 6 To Wound made with the Blade of Leaping Gold Ignores Armour saves.
-
-#namecost("BLADE OF DARTING STEEL", "25 points")
-
-The Blade of Darting Steel gives the wielder +1 To Hit and the Always Strikes First special rule.
-
-#namecost("SWORD OF HOETH", "20 points")
-
-Great weapon. All hits with the Sword of Hoeth wound automatically. Armour saves are modified by the Strength of the bearer.
-
-#namecost("DRAGONBLADE LANCE", "20 points")
-
-Heavy lance. During turns in which the wielder of the Dragonblade Lance charges, it automatically hits all models in one file that is in base contact rather than fighting normally. Hits are resolved as that from a Bolt Thrower, except the Strength does not decrease for each rank.
-
-#namecost("JADE BOW", "20 points")
-
-Elven Longbow. All shots from the Jade Bow are resolved at Strength 4. In addition, if you successfully Wound your target, you may fire an additional shot against the same target. You may continue to fire additional shots until you fail to Hit, Wound or the target is dead.
-
-#namecost("FOE BANE", "15 points")
-
-Against Monstrous Infantry, Monstrous Cavalry, Monstrous Beasts, Monstrous Creatures and Monsters, this sword will always wound on a 2+.
-
-#namecost("BOW OF TOR ALESSI", "10 points")
-
-Elven Longbow. The Bow of Tor Alessi has the Quick Shot special rule. In addition, it may re-roll any failed To Hit rolls.
-
-#entry("MAGIC ARMOUR")
-#namecost("THE GOLDEN SHIELD", "30 points")
-
-Shield. Infantry or Cavalry only. Enemies must re-roll all successful To Hit rolls against the bearer of the Golden Shield.
-
-#namecost("HELM OF FORTUNE", "30 points")
-
-Infantry or Cavalry only. The Helm of Fortune gives the wearer a 6+ armour save. The wearer may re-roll failed armour saves.
-
-#namecost("ARMOUR OF HEROES", "25 points")
-
-Heavy armour. In order to allocate close combat attacks against the wearer, each enemy model must first pass a Leadership test at the start of each close combat phase. If the test is failed, the model may not attack at all this round.
-
-#namecost("DRAGONSCALE SHIELD", "25 points")
-
-Shield. The Dragonscale Shield adds an additional +1 armour save as well as the Magical Ward (6+) special rule.
-
-#namecost("SHIELD OF ITHINAR", "25 points")
-
-Shield. All close combat attacks against the bearer suffer \-1 To Hit.
-
-#namecost("TEMAKADOR'S GAUNTLETS", "25 points")
-
-Temakador's Gauntlets gives the wearer a 6+ armour save. In addition, they gain the Magical Ward (5+) special rule against attacks of Strength 4 or greater.
-
-#namecost("WYRMSCALE ARMOUR OF THE DEEP", "25 points")
-
-Heavy Armour. The Wyrmscale Armour of the Deep gives the wearer the Aquatic and Immunity (Flaming Attacks) special rules.
-
-#namecost("SHADOW ARMOUR", "20 points")
-
-Model on foot only. Light armour. The wearer gains the Strider special rule. In addition, no enemies can draw Line of Sight to them unless they are within 6".
-
-#namecost("ARMOUR OF STARS", "10 points")
-
-Model on foot only. Light armour. If the wearer of the Armour of Stars suffers an unsaved wound (but is not slain) they can choose to instantly teleport 3D6" in a random direction (placing it at least 1" away from other units or impassable terrain) with its front arc in a direction of your choosing. If the model teleports off the table, then treat this as it having pursued off the table.
-
-#namecost("SHIELD OF THE MERWYRM", "10 points")
-
-Shield. The bearer of the Shield of the Merwyrm gains the Parry (6+) special rule.
-
-#entry("TALISMANS")
-#namecost("PINION OF THE PHOENIX", "55 points")
-
-Model on foot only. The Pinion of the Phoenix gives the wearer the Magical Ward (5+) special rule. If the bearer is slain, the item is destroyed but restores the bearer to their starting Wound total and inflicts a Strength 5 Hit with the Flaming Attacks special rule on all models in base contact.
-
-#namecost("VAMBRACES OF DEFENCE", "55 points")
-
-Infantry or Cavalry only. The bearer gains the Magical Ward (4+) special rule. In addition, they may re-roll failed armour saves.
-
-#namecost("NULL STONE", "50 points")
-
-No model in base contact with the bearer of the Null Stone may cast spells, and all Magic Items lose their effects; treat them as mundane versions of the same type.
-
-#namecost("FOLARIATH'S ROBE", "40 points")
-
-Model on foot only. The wearer of Folariath's Robe gains the Ethereal special rule.
-
-#namecost("GUARDIAN PHOENIX", "30 points")
-
-The Guardian Phoenix gives the wearer the Immunity (Flaming Attacks) and Magical Ward (5+) special rules.
-
-#namecost("LOREMASTER'S CLOAK", "25 points")
-
-The wearer of the Loremaster's Cloak gains the Magical Ward (3+) special rule against missile attacks.
-
-#namecost("THE SIGNET OF ATHINOL", "30 points")
-
-Any attacks made against the bearer suffer a \-1 Strength penalty.
-
-#namecost("SACRED INCENSE", "25 points")
-
-All missile attacks targeted at the bearer of the Sacred Incense or the unit they are with suffer \-1 To Hit.
-
-#namecost("GOLDEN CROWN OF ATRAZAR", "20 points")
-
-The Golden Crown of Atrazar gives the bearer the Magical Ward (4+) and Stupidity special rules. In addition, at the start of each of your turns, they suffer \-1 to their Leadership. This penalty is cumulative.
-
-#namecost("PHOENIX STONE", "20 points")
-
-Infantry or Cavalry only. Every time the bearer of this item rolls a natural 6 on their armour save or invulnerable save roll, they restore 1 Wound suffered earlier during game.
-
-#namecost("TALISMAN OF BLINDING LIGHT", "15 points")
-
-All enemy units in base contact with the bearer suffer \-1 to their Weapon Skill in the first round of close combat.
-
-#namecost("TALISMAN OF SAPHERY", "10 points")
-
-The Talisman of Saphery causes all Magic Weapons of enemy models in base contact to lose all their effects; treat them as mundane weapons of their type.
-
-#namecost("AMULET OF FIRE", "5 points")
-
-The Amulet of Fire gives the wearer the Immunity (Flaming Attacks) and Magic Resistance (1) special rules.
-
-#entry("ARCANE ITEMS")
-#namecost("BOOK OF HOETH", "60 points")
-
-Relic. The Book of Hoeth allows the bearer to re-roll a single dice from each of his casting or dispel attempts. Results of 6 cannot be re-rolled.
-
-#namecost("ANNULIAN CRYSTAL", "55 points")
-
-Relic. During the enemy's Magic phase, the Annulian Crystal allows you to remove one dice from the opponent's Power dice pool and add it to your own Dispel dice pool.
-
-#namecost("SIGIL OF ASURYAN", "55 points")
-
-Charm. One use only. When an enemy cast a spell, the bearer may use this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game (note that this has no effect on Bound spells).
-
-#namecost("SEERSTAFF OF SAPHERY", "30 points")
-
-Staff. The Seerstaff of Saphery gives the bearer the Loremaster special rule.
-
-#namecost("TRICKSTER'S PENDANT", "30 points")
-
-Relic. If an enemy Wizard suffers a Miscast, the bearer of the Trickster's Pendant can choose to make the Wizard re-roll the result on the Miscast table.
-
-#namecost("STARWOOD STAFF", "25 points")
-
-Staff. The Starwood staff gives the bearer a +1 casting bonus. In addition, they may re-roll one failed channelling roll per turn.
-
-#namecost("STAFF OF SOLIDITY", "25 points")
-
-Staff. One use only. The Staff of Solidity makes the Wizard immune to the effects of their first Miscast.
-
-#namecost("JEWEL OF THE DUSK", "20 points")
-
-Relic. The Jewel of the Dusk gives the bearer +1 Power dice in each of your Magic phases. Only they may use this extra dice.
-
-#namecost("VORTEX SHARD", "20 points")
-
-Charm. One use only. The bearer may use the Vortex Shard at the start of any enemy Magic phase. Your opponent must remove D3 power dice from their power pool.
-
-#namecost("SILVER WAND", "10 points")
-
-Staff. The bearer of the Silver Wand may pick a spell one level higher than they are normally allowed.
-
-#namecost("SPELL CROWN OF DUSK", "10 points")
-
-Relic. The bearer of this item gains access to a randomly generated Lvl 1 spell (which may be replaced by the Signature Spell) from the Lore of High Magic.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("RADIANT GEM OF HOETH", "35 points")
-
-The bearer of the Radiant Gem of Hoeth becomes a Level 1 Wizard using the Lore of High Magic.
-
-#namecost("KHAINE'S RING OF FURY", "35 points")
-
-Bound spell. Khaine's Ring of Fury contains the _Fury of Khaine_ spell from the Lore of High Magic.
-
-#namecost("MORANION'S WAYSHARD", "35 points")
-
-Model on foot only. The bearer of Moranion's Wayshard and one friendly Infantry unit they must deploy with has the Ambushers special rule. Instead of arriving as Reinforcements, they may choose to deploy in any non-impassable terrain feature in the turn they arrive.
-
-#namecost("PENDANT OF VENGEANCE", "35 points")
-
-When fighting Dwarfs, the bearer may force a successful Leadership test while using an Anvil of Doom or Rune Lore to be rerolled.
-
-#namecost("RING OF CORIN", "35 points")
-
-Bound spell. The Ring of Corin contains the _Vaul's Unmaking_ spell from the Lore of High Magic.
-
-#namecost("SKY ARROW OF NALOER", "25 points")
-
-Model with non-magical Elven Longbow only. One use only. This item cannot be used with the Sniper special rule. The Sky Arrow of Naloer has the following profile:
-
-#minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "6", "Magical Attacks, Multiple Wounds (D6)"))
-#namecost("SKEINSLIVER", "25 points")
-
-The Skeinsliver allows the controlling player to add +1 to the roll to determine which player can decide whether to take the first turn or not.
-
-#namecost("BLESSED TOME", "25 points")
-
-The model gains the Inspiring Presence (6) special rule.
-
-#namecost("GEM OF SUNFIRE", "25 points")
-
-One use only. At the start of any of your turns, when the Gem of Sunfire is used, all of the bearer's spells, shooting attacks and close combat attacks (and their mount's, if they have one) have a +1 bonus To Wound (rolls of 1 still fail) provided that they also have the Flaming Attacks special rule.
-
-#namecost("HORN OF ISHA", "20 points")
-
-Handmaiden of the Everqueen only. One use only. The Horn of Isha can be used at the start of one of your Movement phases. For the remainder of the turn, all models in the bearer's unit receive a +1 To Hit bonus on all shooting and close combat attacks.
-
-#namecost("AMULET OF THE PURIFYING FLAME", "15 points")
-
-Enemy spells that target the character or the unit they are with suffer a \-3 casting penalty.
-
-#namecost("AMULET OF THE TEMPEST", "15 points")
-
-Storm Weaver or Mist Weaver only. Enemy Wizards within 12" of the bearer do not gain any casting bonus from their Wizard Level.
-
-#namecost("CLOAK OF BEARDS", "15 points")
-
-The wearer of the Cloak of Beards causes Fear. Against Dwarfs_,_ the wearer causes Terror instead. However, all Dwarfs gain the Hatred special rule while attacking the wearer. In addition, at the start of each Close Combat phase, roll a D6 for each magic item carried by each Dwarf that is in base contact with the bearer. On a roll of 4+, that magic or runic item is destroyed and cannot be used for the rest of the battle; it will count as a mundane version of whatever item it is instead. Note that this has no effect on magic items that are mounts, war machines, magic items that contain bound spells that have already miscast during the game, and any magic items labelled as 'one use only' that have already been used during the game – do not roll to see if these magic items are destroyed.
-
-#namecost("AMULET OF LIGHT", "10 points")
-
-All close combat attacks made by the bearer of the Amulet of Light and any unit they are with gain the Magical Attacks special rule.
-
-#namecost("GEM OF COURAGE*", "10 points")
-
-One use only. The bearer of the Gem of Courage and any unit they are with may take any one Leadership test using the Cold-blooded special rule.
-
-#namecost("TALISMAN OF LOEC", "10 points")
-
-One use only. The Talisman of Loec may be used at the start of any close combat phase. Until the end of the phase, the bearer may re-roll all failed rolls To Hit and wound, and any model wounded by their attacks must re-roll all successful armour saves and invulnerable saves. However, at the end of the phase, the bearer loses half of their remaining Wounds (rounding down) with no saves of any kind allowed.
-
-#namecost("STAR RUBY", "10 points")
-
-At the start of each of your turns, all enemy units within 12" must reveal any Hidden models, upgrades and magic items they might have.
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("BATTLE BANNER", "70 points")
+#magic-weapon("THE BLADE OF LEAPING GOLD", 25)[The Blade of Leaping Gold grants the wielder +3 Attacks. In addition, any roll of 6 To Wound made with the Blade of Leaping Gold Ignores Armour saves.]
 
-The unit carrying this standard gains a +D6 Combat Resolution bonus (roll each time it is used).
+#magic-weapon("BLADE OF DARTING STEEL", 25)[The Blade of Darting Steel gives the wielder +1 To Hit and the Always Strikes First special rule.]
 
-#namecost("BANNER OF THE WORLD DRAGON", "40 points")
+#magic-weapon("SWORD OF HOETH", 20, type: "Great weapon")[All hits with the Sword of Hoeth wound automatically. Armour saves are modified by the Strength of the bearer.]
 
-The unit carrying this standard has the Magic Resistance (5) special rule. Furthermore, all Draconids (friend or foe) within 12" of the Banner of the World Dragon have the Stubborn special rule.
+#magic-weapon("DRAGONBLADE LANCE", 20, type: "Heavy lance")[During turns in which the wielder of the Dragonblade Lance charges, it automatically hits all models in one file that is in base contact rather than fighting normally. Hits are resolved as that from a Bolt Thrower, except the Strength does not decrease for each rank.]
 
-#namecost("BANNER OF RESILIENCE", "40 points")
+#magic-weapon("JADE BOW", 20, type: "Elven longbow")[All shots from the Jade Bow are resolved at Strength 4. In addition, if you successfully Wound your target, you may fire an additional shot against the same target. You may continue to fire additional shots until you fail to Hit, Wound or the target is dead.]
 
-The unit carrying this standard gains +1 Toughness.
+#magic-weapon("FOE BANE", 15)[Against Monstrous Infantry, Monstrous Cavalry, Monstrous Beasts, Monstrous Creatures and Monsters, this sword will always wound on a 2+.]
 
-#namecost("STANDARD OF BALANCE", "30 points")
+#magic-weapon("BOW OF TOR ALESSI", 10, type: "Elven longbow")[The Bow of Tor Alessi has the Quick Shot special rule. In addition, it may re-roll any failed To Hit rolls.]
+]
 
-The unit carrying this standard, and any enemy unit in base contact with it, gain the Immunity (Psychology) special rule, and any Frenzy or Hatred special rule have no effect.
+#magic-item-section("armour")[
+#magic-armour("THE GOLDEN SHIELD", 30, type: "Shield")[Infantry or Cavalry only. Enemies must re-roll all successful To Hit rolls against the bearer of the Golden Shield.]
 
-#namecost("BANNER OF SORCERY", "30 points")
+#magic-armour("HELM OF FORTUNE", 30, only: "Infantry or Cavalry")[The Helm of Fortune gives the wearer a 6+ armour save. The wearer may re-roll failed armour saves.]
 
-The unit carrying this standard adds +1 Power dice to your power pool in each of your own Magic phases.
+#magic-armour("ARMOUR OF HEROES", 25, type: "Heavy armour")[In order to allocate close combat attacks against the wearer, each enemy model must first pass a Leadership test at the start of each close combat phase. If the test is failed, the model may not attack at all this round.]
 
-#namecost("BANNER OF ELLYRION", "25 points")
+#magic-armour("DRAGONSCALE SHIELD", 25, type: "Shield")[The Dragonscale Shield adds an additional +1 armour save as well as the Magical Ward (6+) special rule.]
 
-Ellyrian Reavers only. The unit carrying this standard gains +1 Movement and the Strider special rule.
+#magic-armour("SHIELD OF ITHINAR", 25, type: "Shield")[All close combat attacks against the bearer suffer \-1 To Hit.]
 
-#namecost("BANNER OF AVELORN", "10 points")
+#magic-armour("TEMAKADOR'S GAUNTLETS", 25)[Temakador's Gauntlets gives the wearer a 6+ armour save. In addition, they gain the Magical Ward (5+) special rule against attacks of Strength 4 or greater.]
 
-Handmaiden of the Everqueen or Sisters of Avelorn only. Spells from the Lore of Light and the Lore of Life cast by a friendly Wizard that target the unit carrying this standard receive a +2 casting bonus. If Alarielle the Radiant is included in your army and is slain, this ability is immediately lost.
+#magic-armour("WYRMSCALE ARMOUR OF THE DEEP", 25, type: "Heavy armour")[The Wyrmscale Armour of the Deep gives the wearer the Aquatic and Immunity (Flaming Attacks) special rules.]
 
-#namecost("BANNER OF LOTHERN", "10 points")
+#magic-armour("SHADOW ARMOUR", 20, only: "Model on foot", type: "Light armour")[The wearer gains the Strider special rule. In addition, no enemies can draw Line of Sight to them unless they are within 6".]
 
-Lothern Sea Guard only. The unit carrying this standard gains the Fight in Extra Ranks (1) special rule.
+#magic-armour("ARMOUR OF STARS", 10, only: "Model on foot", type: "Light armour")[If the wearer of the Armour of Stars suffers an unsaved wound (but is not slain) they can choose to instantly teleport 3D6" in a random direction (placing it at least 1" away from other units or impassable terrain) with its front arc in a direction of your choosing. If the model teleports off the table, then treat this as it having pursued off the table.]
 
-#namecost("LION STANDARD", "10 points")
+#magic-armour("SHIELD OF THE MERWYRM", 10, type: "Shield")[The bearer of the Shield of the Merwyrm gains the Parry (6+) special rule.]
+]
 
-White Lions of Chrace only. The unit carrying this standard gains the Immunity (Terror) special rule.
+#magic-item-section("talisman")[
+#talisman("PINION OF THE PHOENIX", 55, only: "Model on foot")[The Pinion of the Phoenix gives the wearer the Magical Ward (5+) special rule. If the bearer is slain, the item is destroyed but restores the bearer to their starting Wound total and inflicts a Strength 5 Hit with the Flaming Attacks special rule on all models in base contact.]
 
-#namecost("BANNER OF CONFIDENCE", "5 points")
+#talisman("VAMBRACES OF DEFENCE", 55, only: "Infantry or Cavalry")[The bearer gains the Magical Ward (4+) special rule. In addition, they may re-roll failed armour saves.]
 
-The unit carrying this standard does not suffer \-1 To Hit when using Stand & Shoot as a charge reaction.
+#talisman("NULL STONE", 50)[No model in base contact with the bearer of the Null Stone may cast spells, and all Magic Items lose their effects; treat them as mundane versions of the same type.]
+
+#talisman("FOLARIATH'S ROBE", 40, only: "Model on foot")[The wearer of Folariath's Robe gains the Ethereal special rule.]
+
+#talisman("GUARDIAN PHOENIX", 30)[The Guardian Phoenix gives the wearer the Immunity (Flaming Attacks) and Magical Ward (5+) special rules.]
+
+#talisman("LOREMASTER'S CLOAK", 25)[The wearer of the Loremaster's Cloak gains the Magical Ward (3+) special rule against missile attacks.]
+
+#talisman("THE SIGNET OF ATHINOL", 30)[Any attacks made against the bearer suffer a \-1 Strength penalty.]
+
+#talisman("SACRED INCENSE", 25)[All missile attacks targeted at the bearer of the Sacred Incense or the unit they are with suffer \-1 To Hit.]
+
+#talisman("GOLDEN CROWN OF ATRAZAR", 20)[The Golden Crown of Atrazar gives the bearer the Magical Ward (4+) and Stupidity special rules. In addition, at the start of each of your turns, they suffer \-1 to their Leadership. This penalty is cumulative.]
+
+#talisman("PHOENIX STONE", 20, only: "Infantry or Cavalry")[Every time the bearer of this item rolls a natural 6 on their armour save or invulnerable save roll, they restore 1 Wound suffered earlier during game.]
+
+#talisman("TALISMAN OF BLINDING LIGHT", 15)[All enemy units in base contact with the bearer suffer \-1 to their Weapon Skill in the first round of close combat.]
+
+#talisman("TALISMAN OF SAPHERY", 10)[The Talisman of Saphery causes all Magic Weapons of enemy models in base contact to lose all their effects; treat them as mundane weapons of their type.]
+
+#talisman("AMULET OF FIRE", 5)[The Amulet of Fire gives the wearer the Immunity (Flaming Attacks) and Magic Resistance (1) special rules.]
+]
+
+#magic-item-section("arcane")[
+#arcane-item("BOOK OF HOETH", 60, type: "Relic")[The Book of Hoeth allows the bearer to re-roll a single dice from each of his casting or dispel attempts. Results of 6 cannot be re-rolled.]
+
+#arcane-item("ANNULIAN CRYSTAL", 55, type: "Relic")[During the enemy's Magic phase, the Annulian Crystal allows you to remove one dice from the opponent's Power dice pool and add it to your own Dispel dice pool.]
+
+#arcane-item("SIGIL OF ASURYAN", 55, type: "Charm", one-use: true)[When an enemy cast a spell, the bearer may use this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game (note that this has no effect on Bound spells).]
+
+#arcane-item("SEERSTAFF OF SAPHERY", 30, type: "Staff")[The Seerstaff of Saphery gives the bearer the Loremaster special rule.]
+
+#arcane-item("TRICKSTER'S PENDANT", 30, type: "Relic")[If an enemy Wizard suffers a Miscast, the bearer of the Trickster's Pendant can choose to make the Wizard re-roll the result on the Miscast table.]
+
+#arcane-item("STARWOOD STAFF", 25, type: "Staff")[The Starwood staff gives the bearer a +1 casting bonus. In addition, they may re-roll one failed channelling roll per turn.]
+
+#arcane-item("STAFF OF SOLIDITY", 25, type: "Staff", one-use: true)[The Staff of Solidity makes the Wizard immune to the effects of their first Miscast.]
+
+#arcane-item("JEWEL OF THE DUSK", 20, type: "Relic")[The Jewel of the Dusk gives the bearer +1 Power dice in each of your Magic phases. Only they may use this extra dice.]
+
+#arcane-item("VORTEX SHARD", 20, type: "Charm", one-use: true)[The bearer may use the Vortex Shard at the start of any enemy Magic phase. Your opponent must remove D3 power dice from their power pool.]
+
+#arcane-item("SILVER WAND", 10, type: "Staff")[The bearer of the Silver Wand may pick a spell one level higher than they are normally allowed.]
+
+#arcane-item("SPELL CROWN OF DUSK", 10, type: "Relic")[The bearer of this item gains access to a randomly generated Lvl 1 spell (which may be replaced by the Signature Spell) from the Lore of High Magic.]
+]
+
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("RADIANT GEM OF HOETH", 35)[The bearer of the Radiant Gem of Hoeth becomes a Level 1 Wizard using the Lore of High Magic.]
+
+#enchanted-item("KHAINE'S RING OF FURY", 35, bound: true)[Khaine's Ring of Fury contains the _Fury of Khaine_ spell from the Lore of High Magic.]
+
+#enchanted-item("MORANION'S WAYSHARD", 35, only: "Model on foot")[The bearer of Moranion's Wayshard and one friendly Infantry unit they must deploy with has the Ambushers special rule. Instead of arriving as Reinforcements, they may choose to deploy in any non-impassable terrain feature in the turn they arrive.]
+
+#enchanted-item("PENDANT OF VENGEANCE", 35)[When fighting Dwarfs, the bearer may force a successful Leadership test while using an Anvil of Doom or Rune Lore to be rerolled.]
+
+#enchanted-item("RING OF CORIN", 35, bound: true)[The Ring of Corin contains the _Vaul's Unmaking_ spell from the Lore of High Magic.]
+
+#enchanted-item("SKY ARROW OF NALOER", 25, only: "Model with non-magical Elven Longbow", one-use: true)[This item cannot be used with the Sniper special rule. The Sky Arrow of Naloer has the following profile:
+
+#minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "6", "Magical Attacks, Multiple Wounds (D6)"))
+]
+
+#enchanted-item("SKEINSLIVER", 25)[The Skeinsliver allows the controlling player to add +1 to the roll to determine which player can decide whether to take the first turn or not.]
+
+#enchanted-item("BLESSED TOME", 25)[The model gains the Inspiring Presence (6) special rule.]
+
+#enchanted-item("GEM OF SUNFIRE", 25, one-use: true)[At the start of any of your turns, when the Gem of Sunfire is used, all of the bearer's spells, shooting attacks and close combat attacks (and their mount's, if they have one) have a +1 bonus To Wound (rolls of 1 still fail) provided that they also have the Flaming Attacks special rule.]
+
+#enchanted-item("HORN OF ISHA", 20, only: "Handmaiden of the Everqueen", one-use: true)[The Horn of Isha can be used at the start of one of your Movement phases. For the remainder of the turn, all models in the bearer's unit receive a +1 To Hit bonus on all shooting and close combat attacks.]
+
+#enchanted-item("AMULET OF THE PURIFYING FLAME", 15)[Enemy spells that target the character or the unit they are with suffer a \-3 casting penalty.]
+
+#enchanted-item("AMULET OF THE TEMPEST", 15, only: "Storm Weaver or Mist Weaver")[Enemy Wizards within 12" of the bearer do not gain any casting bonus from their Wizard Level.]
+
+#enchanted-item("CLOAK OF BEARDS", 15)[The wearer of the Cloak of Beards causes Fear. Against Dwarfs_,_ the wearer causes Terror instead. However, all Dwarfs gain the Hatred special rule while attacking the wearer. In addition, at the start of each Close Combat phase, roll a D6 for each magic item carried by each Dwarf that is in base contact with the bearer. On a roll of 4+, that magic or runic item is destroyed and cannot be used for the rest of the battle; it will count as a mundane version of whatever item it is instead. Note that this has no effect on magic items that are mounts, war machines, magic items that contain bound spells that have already miscast during the game, and any magic items labelled as 'one use only' that have already been used during the game – do not roll to see if these magic items are destroyed.]
+
+#enchanted-item("AMULET OF LIGHT", 10)[All close combat attacks made by the bearer of the Amulet of Light and any unit they are with gain the Magical Attacks special rule.]
+
+#enchanted-item("GEM OF COURAGE", 10, one-use: true, common: true)[The bearer of the Gem of Courage and any unit they are with may take any one Leadership test using the Cold-blooded special rule.]
+
+#enchanted-item("TALISMAN OF LOEC", 10, one-use: true)[The Talisman of Loec may be used at the start of any close combat phase. Until the end of the phase, the bearer may re-roll all failed rolls To Hit and wound, and any model wounded by their attacks must re-roll all successful armour saves and invulnerable saves. However, at the end of the phase, the bearer loses half of their remaining Wounds (rounding down) with no saves of any kind allowed.]
+
+#enchanted-item("STAR RUBY", 10)[At the start of each of your turns, all enemy units within 12" must reveal any Hidden models, upgrades and magic items they might have.]
+]
+
+#magic-item-section("standard")[
+#magic-standard("BATTLE BANNER", 70)[The unit carrying this standard gains a +D6 Combat Resolution bonus (roll each time it is used).]
+
+#magic-standard("BANNER OF THE WORLD DRAGON", 40)[The unit carrying this standard has the Magic Resistance (5) special rule. Furthermore, all Draconids (friend or foe) within 12" of the Banner of the World Dragon have the Stubborn special rule.]
+
+#magic-standard("BANNER OF RESILIENCE", 40)[The unit carrying this standard gains +1 Toughness.]
+
+#magic-standard("STANDARD OF BALANCE", 30)[The unit carrying this standard, and any enemy unit in base contact with it, gain the Immunity (Psychology) special rule, and any Frenzy or Hatred special rule have no effect.]
+
+#magic-standard("BANNER OF SORCERY", 30)[The unit carrying this standard adds +1 Power dice to your power pool in each of your own Magic phases.]
+
+#magic-standard("BANNER OF ELLYRION", 25, only: "Ellyrian Reavers")[The unit carrying this standard gains +1 Movement and the Strider special rule.]
+
+#magic-standard("BANNER OF AVELORN", 10, only: "Handmaiden of the Everqueen or Sisters of Avelorn")[Spells from the Lore of Light and the Lore of Life cast by a friendly Wizard that target the unit carrying this standard receive a +2 casting bonus. If Alarielle the Radiant is included in your army and is slain, this ability is immediately lost.]
+
+#magic-standard("BANNER OF LOTHERN", 10, only: "Lothern Sea Guard")[The unit carrying this standard gains the Fight in Extra Ranks (1) special rule.]
+
+#magic-standard("LION STANDARD", 10, only: "White Lions of Chrace")[The unit carrying this standard gains the Immunity (Terror) special rule.]
+
+#magic-standard("BANNER OF CONFIDENCE", 5)[The unit carrying this standard does not suffer \-1 To Hit when using Stand & Shoot as a charge reaction.]
+]
 
 = CHARACTERS
 

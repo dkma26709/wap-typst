@@ -316,161 +316,93 @@ Enemy models in base contact with the model are reduced to Initiative 1.
 At the start of a challenge, the enemy character selected to take on the Vampire must take a Leadership test before any blows are struck. If failed, the enemy model will fight with Weapon Skill 1 for the remainder of the turn.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Zombie Pirates. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Zombie Pirates. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("STAR-METAL HARPOON", 50, type: "Polearm")[Attacks made with this weapon have the Heroic Killing Blow special rule. Additionally, they may reroll failed To Wound rolls against models with the Aquatic special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("STAR-METAL HARPOON", "50 points")
+#magic-weapon("THE BLOODY NORA", 35)[The wielder of this weapon gains D3+2 Extra Attacks on any turn they charge, and gives them +2 Extra Attacks in subsequent rounds.]
 
-Polearm. Attacks made with this weapon have the Heroic Killing Blow special rule. Additionally, they may reroll failed To Wound rolls against models with the Aquatic special rule.
+#magic-weapon("LUCKY LEVI'S HOOK HAND", 35, type: "Additional hand weapon")[All attacks with this hook are made at +2 Strength.]
 
-#namecost("THE BLOODY NORA", "35 points")
+#magic-weapon("SLOPPY CRUICKSHANK'S LONG-LOST CUTLASS", 35)[The first attack directed towards the wielder in each round of Close Combat automatically misses. In addition, they gain +1 to Hit and the Armour Piercing (1) special rule.]
 
-The wielder of this weapon gains D3+2 Extra Attacks on any turn they charge, and gives them +2 Extra Attacks in subsequent rounds.
+#magic-weapon("KRAKEN FANG", 30, type: "Additional hand weapon")[The Kraken Fang gives the wielder the Ice Attacks special rule.]
 
-#namecost("LUCKY LEVI'S HOOK HAND", "35 points")
+#magic-weapon("DIRTY SERPENT", 30)[The Dirty Serpent gives the wielder +1 Strength and the Armour Piercing (3) special rule.]
 
-Additional hand weapon. All attacks with this hook are made at +2 Strength.
+#magic-weapon("PRESS-GANGER'S CUTLASS", 30)[If the wielder is in a unit of Undead Infantry, for each model they slay in close combat, an extra model is added to the unit, just like a summoning spell.]
 
-#namecost("SLOPPY CRUICKSHANK'S LONG-LOST CUTLASS", "35 points")
+#magic-weapon("POSSESSED PISTOL", 10, type: "Pistol")[Shots from this weapon ignore penalties for cover. Additionally, the wielder can shoot at units in close combat as if the target were outside of combat, even when the wielder is in close combat. Normal rules for Line of Sight still apply.]
+]
 
-The first attack directed towards the wielder in each round of Close Combat automatically misses. In addition, they gain +1 to Hit and the Armour Piercing (1) special rule.
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF THE DEPTHS", 50, type: "Medium armour")[The Armour of the Depths gives the wearer the Regeneration (5+) special rule, and enemies attempting to strike them suffer \-1 To Hit in close combat.]
 
-#namecost("KRAKEN FANG", "30 points")
+#magic-armour("BLOODY BILL'S BUCKLER", 35, type: "Buckler")[The wielder gains the Parry (6+) special rule, and any enemy attempting to strike him in Close Combat suffers \-1 To Hit.]
 
-Additional hand weapon. The Kraken Fang gives the wielder the Ice Attacks special rule.
+#magic-armour("HULL-FUSED ARMOUR", 35, only: "Model on foot", type: "Medium armour")[The wearer has a 3+ armour save that cannot be improved by any means, and may reroll failed armour saves. However, they also have the Flammable special rule.]
 
-#namecost("DIRTY SERPENT", "30 points")
+#magic-armour("CRUSTACEAN ARMOUR", 35, type: "Light armour")[The bearer has the Natural Armour save (5+) and the Unbearable Stench special rule (see Rotting Leviathans).]
 
-The Dirty Serpent gives the wielder +1 Strength and the Armour Piercing (3) special rule.
+#magic-armour("SEA DRAGON BUCKLER", 20, type: "Buckler")[The Sea Dragon Buckler gives the wearer a 5+ armour save against missile attacks and the Magical Ward (6+) special rule.]
 
-#namecost("PRESS-GANGER'S CUTLASS", "30 points")
+#magic-armour("CORAL-GROWTH HELMET", 10)[The wearer of this item gains the Natural Armour (6+) special rule. In addition, their armour save can never be reduced to less than 6+.]
+]
 
-If the wielder is in a unit of Undead Infantry, for each model they slay in close combat, an extra model is added to the unit, just like a summoning spell.
+#magic-item-section("talisman")[
+#talisman("PANTELEON'S PENDANT", 45)[The wearer has the Regeneration (6+) special rule. Additionally, if the bearer is killed by a spell, missile or close combat attack, they may take a Leadership test on their own unmodified value. If passed, the model is brought back to life with one Wound remaining.]
 
-#namecost("POSSESSED PISTOL", "10 points")
+#talisman("AMULET OF EVANESCENSE", 40, only: "Model on foot")[The wearer gains the Ethereal special rule. However, it may not join non-Ethereal units or take any weapons or armour.]
 
-Pistol. Shots from this weapon ignore penalties for cover. Additionally, the wielder can shoot at units in close combat as if the target were outside of combat, even when the wielder is in close combat. Normal rules for Line of Sight still apply.
+#talisman("RING OF SEA MIST", 30)[Enemies suffer \-1 To Hit with missile weapons against the bearer and any unit they are with. In addition, all enemy models that charges into base contact with the bearer or their unit must take a Dangerous Terrain test.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF THE DEPTHS", "50 points")
+#talisman("THE RING OF UNDEATH", 25)[The model wearing this item automatically regains one Wound suffered earlier during the game at the start of each of your turns.]
 
-Medium armour. The Armour of the Depths gives the wearer the Regeneration (5+) special rule, and enemies attempting to strike them suffer \-1 To Hit in close combat.
+#talisman("EX-PARROT", 15)[The Ex-Parrot gives the model the Magic Resistance (1) and Magical Ward (6+) special rules.]
+]
 
-#namecost("BLOODY BILL'S BUCKLER", "35 points")
+#magic-item-section("arcane")[
+#arcane-item("CURSED BULLION OF BOGENHAFEN", 35, type: "Relic", bound: true)[This item contains the _Burning Head_ spell from the Lore of Fire.]
 
-Buckler. The wielder gains the Parry (6+) special rule, and any enemy attempting to strike him in Close Combat suffers \-1 To Hit.
+#arcane-item("THE EBONY SKULLS", 35, type: "Relic", bound: true)[This item contains the _Raise Dead_ spell from the Lore of Necromancy.]
 
-#namecost("HULL-FUSED ARMOUR", "35 points")
+#arcane-item("SPELL OF THE NECROMANCER'S APPRENTICE", 35, type: "Relic", bound: true)[This item contains the _Deathly Cabal_ spell from the Lore of Necromancy.]
 
-Model on foot only. Medium armour. The wearer has a 3+ armour save that cannot be improved by any means, and may reroll failed armour saves. However, they also have the Flammable special rule.
+#arcane-item("LUCKY LEVI'S KEEPSAKE", 20, type: "Relic")[The bearer may re-roll the number of models gained when casting summoning spells from the Lore of Necromancy.]
+]
 
-#namecost("CRUSTACEAN ARMOUR", "35 points")
+#magic-item-section("enchanted")[
+#enchanted-item("DOUBLOON OF CASTELO NOVO", 40)[Any enemy unit in base contact with the bearer of this item at the start of each Close Combat phase suffers 2D6 Strength 3 Hits.]
 
-Light armour. The bearer has the Natural Armour save (5+) and the Unbearable Stench special rule (see Rotting Leviathans).
+#enchanted-item("GENTLEMAN JENKIN'S TRUSTY COMPASS", 25, only: "Model on foot")[The character and one unit of your choice that they may join, may deploy as Scouts. In addition, they may re-roll all failed rolls to Reform during the Battle.]
 
-#namecost("SEA DRAGON BUCKLER", "20 points")
+#enchanted-item("PEARL OF THE KRAKEN SEA", 25)[All Undead models in a unit joined by the bearer of this item gain the Frenzy special rule.]
 
-Buckler. The Sea Dragon Buckler gives the wearer a 5+ armour save against missile attacks and the Magical Ward (6+) special rule.
+#enchanted-item("DEAD MAN'S CHEST", 20)[All Undead models in a unit joined by the bearer of this item gain +1 To Hit in the first round of close combat.]
 
-#namecost("CORAL-GROWTH HELMET", "10 points")
+#enchanted-item("MAD MULLET'S SPYIN' GLASS", 20)[This item gives the model the Sniper special rule.]
 
-The wearer of this item gains the Natural Armour (6+) special rule. In addition, their armour save can never be reduced to less than 6+.
+#enchanted-item("VORGO NUGGET", 15, only: "Vampire")[The bearer gains the Immunity (Ice Attacks) special rule. In addition, they gain +2 to their rolls for The Red Thirst. If the bearer has killed one or more models that round of close combat and the enemy unit Breaks, they must pass a Leadership test in order to pursue the enemy; if failed, they may not pursue.]
 
-#entry("TALISMANS")
-#namecost("PANTELEON'S PENDANT", "45 points")
+#enchanted-item("JELLYFISH IN A JAR", 10)[The bearer’s close combat attacks automatically Wound on To Hit rolls of 6.]
+]
 
-The wearer has the Regeneration (6+) special rule. Additionally, if the bearer is killed by a spell, missile or close combat attack, they may take a Leadership test on their own unmodified value. If passed, the model is brought back to life with one Wound remaining.
+#magic-item-section("standard")[
+#magic-standard("BLOODY REAVER COLOURS", 35, only: "Depth Guard")[The unit carrying this standard has a Magical Ward (5+) against missile attacks and the Vanguard special rule.]
 
-#namecost("AMULET OF EVANESCENSE", "40 points")
+#magic-standard("SKULL AND CROSSBONES", 35)[The unit carrying this standard gains the Terror and Vanguard special rules.]
 
-Model on foot only. The wearer gains the Ethereal special rule. However, it may not join non-Ethereal units or take any weapons or armour.
+#magic-standard("BLOODIED BANNER OF SLAYERS", 25)[The unit carrying this standard gains the Multiple Wounds (2) special rule.]
 
-#namecost("RING OF SEA MIST", "30 points")
+#magic-standard("STANDARD OF THE SPITEFUL SHOT", 25)[All Zombies in the unit carrying this standard ignores all To Hit modifiers.]
 
-Enemies suffer \-1 To Hit with missile weapons against the bearer and any unit they are with. In addition, all enemy models that charges into base contact with the bearer or their unit must take a Dangerous Terrain test.
+#magic-standard("WAR STANDARD O' THE CORPSE SURGEONS", 25)[The unit carrying this standard gains the Regeneration (6+) special rule.]
 
-#namecost("THE RING OF UNDEATH", "25 points")
+#magic-standard("FLAG OF ETERNAL SERVICE", 20)[The unit carrying this standard suffers half the number of wounds they normally would due to the Unstable special rule or following the death of the Army General.]
 
-The model wearing this item automatically regains one Wound suffered earlier during the game at the start of each of your turns.
-
-#namecost("EX-PARROT", "15 points")
-
-The Ex-Parrot gives the model the Magic Resistance (1) and Magical Ward (6+) special rules.
-
-#entry("ARCANE ITEMS")
-#namecost("CURSED BULLION OF BOGENHAFEN", "35 points")
-
-Relic. Bound Spell. This item contains the _Burning Head_ spell from the Lore of Fire.
-
-#namecost("THE EBONY SKULLS", "35 points")
-
-Relic. Bound Spell. This item contains the _Raise Dead_ spell from the Lore of Necromancy.
-
-#namecost("SPELL OF THE NECROMANCER'S APPRENTICE", "35 points")
-
-Relic. Bound Spell. This item contains the _Deathly Cabal_ spell from the Lore of Necromancy.
-
-#runin[LUCKY LEVI]'#runin[S KEEPSAKE 20 points] Relic. The bearer may re-roll the number of models gained when casting summoning spells from the Lore of Necromancy.
-
-#entry("ENCHANTED ITEMS")
-#namecost("DOUBLOON OF CASTELO NOVO", "40 points")
-
-Any enemy unit in base contact with the bearer of this item at the start of each Close Combat phase suffers 2D6 Strength 3 Hits.
-
-#namecost("GENTLEMAN JENKIN'S TRUSTY COMPASS", "25 points")
-
-Model on foot only. The character and one unit of your choice that they may join, may deploy as Scouts. In addition, they may re-roll all failed rolls to Reform during the Battle.
-
-#namecost("PEARL OF THE KRAKEN SEA", "25 points")
-
-All Undead models in a unit joined by the bearer of this item gain the Frenzy special rule.
-
-#namecost("DEAD MAN'S CHEST", "20 points")
-
-All Undead models in a unit joined by the bearer of this item gain +1 To Hit in the first round of close combat.
-
-#namecost("MAD MULLET'S SPYIN' GLASS", "20 points")
-
-This item gives the model the Sniper special rule.
-
-#namecost("VORGO NUGGET", "15 points")
-
-Vampire only. The bearer gains the Immunity (Ice Attacks) special rule. In addition, they gain +2 to their rolls for The Red Thirst. If the bearer has killed one or more models that round of close combat and the enemy unit Breaks, they must pass a Leadership test in order to pursue the enemy; if failed, they may not pursue.
-
-#namecost("JELLYFISH IN A JAR", "10 points")
-
-The bearer’s close combat attacks automatically Wound on To Hit rolls of 6.
-
-#entry("MAGIC STANDARDS")
-#namecost("BLOODY REAVER COLOURS", "35 points")
-
-Depth Guard only. The unit carrying this standard has a Magical Ward (5+) against missile attacks and the Vanguard special rule.
-
-#namecost("SKULL AND CROSSBONES", "35 points")
-
-The unit carrying this standard gains the Terror and Vanguard special rules.
-
-#namecost("BLOODIED BANNER OF SLAYERS", "25 points")
-
-The unit carrying this standard gains the Multiple Wounds (2) special rule.
-
-#namecost("STANDARD OF THE SPITEFUL SHOT", "25 points")
-
-All Zombies in the unit carrying this standard ignores all To Hit modifiers.
-
-#namecost("WAR STANDARD O' THE CORPSE SURGEONS", "25 points")
-
-The unit carrying this standard gains the Regeneration (6+) special rule.
-
-#namecost("FLAG OF ETERNAL SERVICE", "20 points")
-
-The unit carrying this standard suffers half the number of wounds they normally would due to the Unstable special rule or following the death of the Army General.
-
-#namecost("SINISTER FIGUREHEAD", "20 points")
-
-Any enemy unit in base contact with the unit carrying this standard must re-roll successful Leadership tests. This has no effect on models with Immunity (Psychology).
+#magic-standard("SINISTER FIGUREHEAD", 20)[Any enemy unit in base contact with the unit carrying this standard must re-roll successful Leadership tests. This has no effect on models with Immunity (Psychology).]
+]
 
 = CHARACTERS
 

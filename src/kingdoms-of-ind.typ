@@ -63,168 +63,101 @@ A unit with this special rule can benefit from either Good Karma or Bad Karma de
 
 - *Bad Karma:* If the unit breaks from combat or flees as a result of a Panic test, all models in it must re-roll 6's To Hit and To Wound in close combat and with missile weapons until they gain Good Karma.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kingdoms of Ind. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kingdoms of Ind. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("MACE OF GODLY MIGHT", 60)[The wielder of this weapon gains +2 Strength. Roll a D6 for each initial Attack that Hits. On a 4+, it causes another Hit.]
 
-#entry("MAGIC WEAPONS")
-#namecost("MACE OF GODLY MIGHT", "60 points")
-
-The wielder of this weapon gains +2 Strength. Roll a D6 for each initial Attack that Hits. On a 4+, it causes another Hit.
-
-#namecost("DIVINE THUNDERBOLT", "40 points")
-
-Javelins. This weapon has the following profile:
+#magic-weapon("DIVINE THUNDERBOLT", 40, type: "Javelins")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "6", "Lightning Attacks, Multiple Shots (D3)"))
-#namecost("FLAIL OF THE DEATH GODDESS", "40 points")
+]
 
-The wielder of this weapon gains +1 Strength as well as the Armour Piercing (1), Mighty Blow (1) and Poisoned Attacks special rules.
+#magic-weapon("FLAIL OF THE DEATH GODDESS", 40)[The wielder of this weapon gains +1 Strength as well as the Armour Piercing (1), Mighty Blow (1) and Poisoned Attacks special rules.]
 
-#namecost("THE PRIMORDIAL SWORD", "40 points")
+#magic-weapon("THE PRIMORDIAL SWORD", 40)[The wielder of this weapon gains +1 To Hit and +1 To Wound, as well as Flaming Attacks. If they roll a natural 6 when rolling To Wound, the attack is done with the Multiple Wounds (D3) special rule.]
 
-The wielder of this weapon gains +1 To Hit and +1 To Wound, as well as Flaming Attacks. If they roll a natural 6 when rolling To Wound, the attack is done with the Multiple Wounds (D3) special rule.
+#magic-weapon("TRIDENT OF DESTRUCTION", 40, type: "Polearm")[All attacks made with this weapon gain the Heroic Killing Blow special rule.]
 
-#namecost("TRIDENT OF DESTRUCTION", "40 points")
+#magic-weapon("GAUNTLETS OF THE FIRE LORD", 30, type: "Two hand weapons")[Every time the wielder inflicts a Hit or makes a Parry save in close combat, they inflict an additional automatic Strength 4 Hit with the Flaming Attacks special rule against the enemy. In addition, the wearer gains the Immunity (Flaming Attacks) special rule.]
 
-Polearm. All attacks made with this weapon gain the Heroic Killing Blow special rule.
-
-#namecost("GAUNTLETS OF THE FIRE LORD", "30 points")
-
-Two hand weapons. Every time the wielder inflicts a Hit or makes a Parry save in close combat, they inflict an additional automatic Strength 4 Hit with the Flaming Attacks special rule against the enemy. In addition, the wearer gains the Immunity (Flaming Attacks) special rule.
-
-#namecost("MAHAKALI'S BOW", "25 points")
-
-Longbow. This weapon has the following profile:
+#magic-weapon("MAHAKALI'S BOW", 25, type: "Longbow")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Multiple Wounds (D3), Ignores Armour saves"))
 
 However, before using it, the wielder must pass a Leadership test or suffer 1 Wound which Ignores Armour Saves instead of being able to shoot with it.
+]
 
-#namecost("SHESHA BLADE", "25 points")
+#magic-weapon("SHESHA BLADE", 25)[The wielder of this weapon gain +D3 Attacks and the Poisoned Attacks special rule.]
 
-The wielder of this weapon gain +D3 Attacks and the Poisoned Attacks special rule.
+#magic-weapon("SPEAR OF VICTORY", 25, type: "Light lance/spear")[Attacks made with this weapon have the Armor Piercing (1) special rule, and will always wound on a roll of 3+, unless they would normally need a lower result. Against models from armies belonging to the Forces of Destruction, it wounds automatically instead.]
+]
 
-#namecost("SPEAR OF VICTORY", "25 points")
+#magic-item-section("armour")[
+#magic-armour("THE KAVACHA", 50, type: "Light armour")[The Kavacha gives the wearer a 2+ armour save, which may be re-rolled. This save cannot be improved by any means.]
 
-Light lance/spear. Attacks made with this weapon have the Armor Piercing (1) special rule, and will always wound on a roll of 3+, unless they would normally need a lower result. Against models from armies belonging to the Forces of Destruction, it wounds automatically instead.
+#magic-armour("KARKADANN ARMOUR", 30, type: "Medium armour")[The wearer gains +1 Toughness and the Immunity (Poisoned Attacks) special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("THE KAVACHA", "50 points")
+#magic-armour("ELEPHANT BREASTPLATE", 25, only: "Model on foot", type: "Light armour")[The wearer gains the Impact Hits (D3) and Natural Armour (5+) special rules. In addition, they can reroll failed To Wound rolls with their Impact Hits.]
 
-Light armour. The Kavacha gives the wearer a 2+ armour save, which may be re-rolled. This save cannot be improved by any means.
+#magic-armour("PADMA ARMOUR", 30, type: "Medium armour")[The wearer can ignore one unsaved Wound per phase by passing a Leadership test using their own unmodified Leadership.]
 
-#namecost("KARKADANN ARMOUR", "30 points")
+#magic-armour("THE CELESTIAL DIADEM", 20)[The wearer gains a 6+ armour save. In addition, they gain a Magical Ward (4+) against missile attacks.]
 
-Medium armour. The wearer gains +1 Toughness and the Immunity (Poisoned Attacks) special rule.
+#magic-armour("SRIVATSA SHIELD", 15, type: "Shield")[The wielder starts the game with Good Karma.]
+]
 
-#namecost("ELEPHANT BREASTPLATE", "25 points")
+#magic-item-section("talisman")[
+#talisman("ASHWATHAMA'S GEM", 50, only: "Infantry or Cavalry")[The wearer gains a Magical Ward (4+) and the Unbreakable special rule. However, they start the game with Bad Karma.]
 
-Model on foot only. Light armour. The wearer gains the Impact Hits (D3) and Natural Armour (5+) special rules. In addition, they can reroll failed To Wound rolls with their Impact Hits.
+#talisman("GARLAND OF VICTORY", 30)[The wearer ignores the first unsaved Wound they suffer. In addition, they add +1 to their Combat resolution.]
 
-#namecost("PADMA ARMOUR", "30 points")
+#talisman("CROWN OF SHAMBHALA", 25)[The wearer gains a Magical Ward (6+). In addition, they may re-roll one failed To Hit, To Wound, Armour or Ward Save roll in each phase.]
 
-Medium armour. The wearer can ignore one unsaved Wound per phase by passing a Leadership test using their own unmodified Leadership.
+#talisman("MAKARA EARRING", 20)[The wearer gains the Aquatic, Magical Ward (6+) and Magic Resistance (2) special rules.]
 
-#namecost("THE CELESTIAL DIADEM", "20 points")
+#talisman("THE STAR JEWEL", 25)[The wearer gains the Dodge (5+) special rule, and automatically passed Characteristic tests.]
 
-The wearer gains a 6+ armour save. In addition, they gain a Magical Ward (4+) against missile attacks.
+#talisman("NECKLACE OF SKULLS", 10)[The wearer gains the Immunity (Killing Blow, Multiple Wounds) special rule.]
+]
 
-#namecost("SRIVATSA SHIELD", "15 points")
+#magic-item-section("arcane")[
+#arcane-item("THE SUN JEWEL", 40)[The bearer gains a +1 casting and dispelling bonus. If they have Good Karma and Miscast, they may ignore the roll on the miscast table on a D6 roll of 4+. However, if they have Bad Karma, they will Miscast on any roll of any double, instead of just double 1's.]
 
-Shield. The wielder starts the game with Good Karma.
+#arcane-item("THE WISH GEM", 40, bound: true)[Choose one spell from any of the eight Winds of Magic and roll a D3. If the roll is higher than the Spell Level (Signature Spells counts as Level 1), it is automatically cast with a power level equal to the normal casting value of the spell, no power dice are required.]
 
-#entry("TALISMANS")
-#namecost("ASHWATHAMA'S GEM", "50 points")
+#arcane-item("STAFF OF BRAHAMBHU", 35, bound: (level: 3, cast: "11+"))[This item contains a *magic missile* with a range of 24" that causes 2D6 Strength 5 Hits with the Flaming Attacks special rule.]
 
-Infantry or Cavalry only. The wearer gains a Magical Ward (4+) and the Unbreakable special rule. However, they start the game with Bad Karma.
+#arcane-item("ORB OF THE DEVA", 30, one-use: true)[This item may be used before casting a spell. If successfully cast, the spell cannot be dispelled. However, if the spell does not reach its minimum casting value, the spell counts as a Miscast.]
 
-#namecost("GARLAND OF VICTORY", "30 points")
+#arcane-item("SKULL-CUP OF TRANSCENDENCE", 30)[Before each attempt to cast a spell, the bearer may take a Leadership test using their own unmodified characteristic. If passed, they gain a +1 casting bonus this turn until they fail to cast a spell or their casting attempt is dispelled. The bonus is cumulative.]
+]
 
-The wearer ignores the first unsaved Wound they suffer. In addition, they add +1 to their Combat resolution.
+#magic-item-section("enchanted")[
+#enchanted-item("NECTAR OF THE GODS", 50, one-use: true)[This item may be used at the start of any phase. When used, the bearer regains all lost Wounds and gains the Regeneration (4+) special rule until the start of your next turn.]
 
-#namecost("CROWN OF SHAMBHALA", "25 points")
+#enchanted-item("MASK OF GOOD FORTUNE", 40)[The wearer of this mask may re-roll failed rolls of 1 when rolling To Hit, To Wound, and when taking armour saves and invulnerable saves.]
 
-The wearer gains a Magical Ward (6+). In addition, they may re-roll one failed To Hit, To Wound, Armour or Ward Save roll in each phase.
+#enchanted-item("BLESSED ANKUSHA", 20, only: "Model on Royal Elephant")[The bearer gains the Cold-Blooded special rule when taking Stampede tests, and can reroll 1's when determining the number of Impact Hits.]
 
-#namecost("MAKARA EARRING", "20 points")
+#enchanted-item("SHANKHA SHELL HORN", 20, one-use: true)[The bearer may use this item at the beginning of your Close Combat phase. For the remainder of the turn, all friendly units within 12" of the bearer gains the Devastating Charge special rule.]
 
-The wearer gains the Aquatic, Magical Ward (6+) and Magic Resistance (2) special rules.
+#enchanted-item("PARIJATA WREATH", 10)[The bearer's characteristics (except Leadership) can never be lowered from their starting value during the course of the game.]
 
-#namecost("THE STAR JEWEL", "25 points")
+#enchanted-item("PRAYER BEADS", 10, only: "Sadhu")[The bearer of this item gain +1 Leadership when using Prayers of the Deva.]
+]
 
-The wearer gains the Dodge (5+) special rule, and automatically passed Characteristic tests.
+#magic-item-section("standard")[
+#magic-standard("HOLY STANDARD OF THE DEVAS", 75)[All models in the unit carrying this banner gain a Magical Ward (5+) and the Stubborn special rule.]
 
-#namecost("NECKLACE OF SKULLS", "10 points")
+#magic-standard("STANDARD OF DIVINE INCANDESCENCE", 45)[Enemies suffer \-1 To Hit with missile weapons against the unit carrying this magic standard. In addition, all models in base contact with the standard suffer a Strength 4 Hit with the Flaming Attacks and Magical Attacks special rules at the beginning of each Close Combat phase. This is increased to Strength 5 against Daemons, Undead and Vampires.]
 
-The wearer gains the Immunity (Killing Blow, Multiple Wounds) special rule.
+#magic-standard("MARUTVANT BANNER", 15)[Whenever a model in the unit carrying this standard rolls a natural 6 To Wound, that Attack has the Lightning Attacks special rule.]
 
-#entry("ARCANE ITEMS")
-#namecost("THE SUN JEWEL", "40 points")
+#magic-standard("PENNANT OF ENDURING KARMA", 10)[When the unit carrying this magic standard receives Bad Karma, roll a D6; on a 2+, the the Bad Karma is ignored.]
 
-The bearer gains a +1 casting and dispelling bonus. If they have Good Karma and Miscast, they may ignore the roll on the miscast table on a D6 roll of 4+. However, if they have Bad Karma, they will Miscast on any roll of any double, instead of just double 1's.
-
-#namecost("THE WISH GEM", "40 points")
-
-Bound Spell. Choose one spell from any of the eight Winds of Magic and roll a D3. If the roll is higher than the Spell Level (Signature Spells counts as Level 1), it is automatically cast with a power level equal to the normal casting value of the spell, no power dice are required.
-
-#namecost("STAFF OF BRAHAMBHU", "35 points")
-
-Bound spell (Level 3, cast on 11+). This item contains a *magic missile* with a range of 24" that causes 2D6 Strength 5 Hits with the Flaming Attacks special rule.
-
-#namecost("ORB OF THE DEVA", "30 points")
-
-One use only. This item may be used before casting a spell. If successfully cast, the spell cannot be dispelled. However, if the spell does not reach its minimum casting value, the spell counts as a Miscast.
-
-#namecost("SKULL-CUP OF TRANSCENDENCE", "30 points")
-
-Before each attempt to cast a spell, the bearer may take a Leadership test using their own unmodified characteristic. If passed, they gain a +1 casting bonus this turn until they fail to cast a spell or their casting attempt is dispelled. The bonus is cumulative.
-
-#entry("ENCHANTED ITEMS")
-#namecost("NECTAR OF THE GODS", "50 points")
-
-One use only. This item may be used at the start of any phase. When used, the bearer regains all lost Wounds and gains the Regeneration (4+) special rule until the start of your next turn.
-
-#namecost("MASK OF GOOD FORTUNE", "40 points")
-
-The wearer of this mask may re-roll failed rolls of 1 when rolling To Hit, To Wound, and when taking armour saves and invulnerable saves.
-
-#namecost("BLESSED ANKUSHA", "20 points")
-
-Model on Royal Elephant only. The bearer gains the Cold-Blooded special rule when taking Stampede tests, and can reroll 1's when determining the number of Impact Hits.
-
-#namecost("SHANKHA SHELL HORN", "20 points")
-
-One use only. The bearer may use this item at the beginning of your Close Combat phase. For the remainder of the turn, all friendly units within 12" of the bearer gains the Devastating Charge special rule.
-
-#namecost("PARIJATA WREATH", "10 points")
-
-The bearer's characteristics (except Leadership) can never be lowered from their starting value during the course of the game.
-
-#namecost("PRAYER BEADS", "10 points")
-
-Sadhu only. The bearer of this item gain +1 Leadership when using Prayers of the Deva.
-
-#entry("MAGIC STANDARDS")
-#namecost("HOLY STANDARD OF THE DEVAS", "75 points")
-
-All models in the unit carrying this banner gain a Magical Ward (5+) and the Stubborn special rule.
-
-#namecost("STANDARD OF DIVINE INCANDESCENCE", "45 points")
-
-Enemies suffer \-1 To Hit with missile weapons against the unit carrying this magic standard. In addition, all models in base contact with the standard suffer a Strength 4 Hit with the Flaming Attacks and Magical Attacks special rules at the beginning of each Close Combat phase. This is increased to Strength 5 against Daemons, Undead and Vampires.
-
-#namecost("MARUTVANT BANNER", "15 points")
-
-Whenever a model in the unit carrying this standard rolls a natural 6 To Wound, that Attack has the Lightning Attacks special rule.
-
-#namecost("PENNANT OF ENDURING KARMA", "10 points")
-
-When the unit carrying this magic standard receives Bad Karma, roll a D6; on a 2+, the the Bad Karma is ignored.
-
-#namecost("TOTEM OF BRAHAMBHU", "10 points")
-
-Enemies do not receive any combat resolution bonuses for attacking the flanks or rear of the unit carrying this standard.
+#magic-standard("TOTEM OF BRAHAMBHU", 10)[Enemies do not receive any combat resolution bonuses for attacking the flanks or rear of the unit carrying this standard.]
+]
 
 = CHARACTERS
 

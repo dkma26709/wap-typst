@@ -507,521 +507,280 @@ _Torrent of Filth_ is a *direct damage* spell. The caster makes a Breath Weapon 
 
 _Acidic Bile_ is a *direct damage area* with a range of 18" that uses the small round template. All models under the template suffer a Strength 4 hit with the Ignores Armour Saves special rule.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Orcs & Goblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Orcs & Goblins. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", columns: 2)[
+#magic-weapon("BATTLEAXE OF THE LAST BIG WAAAGH!", 85, only: "Orcs")[Roll a D6 at the start of each round of combat – the wielder of this weapon adds that number to both his Attacks and Strength in that round. However, the bearer's Weapon Skill is lowered by an amount equal to half the dice roll (i.e. 1\-2 = \-1 Weapon Skill, 3\-4 = \-2 Weapon Skill, and 5\-6 = \-3 Weapon Skill).]
 
-#entry("MAGIC WEAPONS")
-#columns(2)[
-#namecost("BATTLEAXE OF THE LAST BIG WAAAGH!", "85 points")
+#magic-weapon("WARBOSS IRONCLAW'S WAAAGH! CLEAVA", 60, only: "Common Orcs")[All hits from Warboss Ironclaw's Waaagh! Cleava Wound automatically with the Ignores Armour Saves special rule.]
 
-Orcs only. Roll a D6 at the start of each round of combat – the wielder of this weapon adds that number to both his Attacks and Strength in that round. However, the bearer's Weapon Skill is lowered by an amount equal to half the dice roll (i.e. 1\-2 = \-1 Weapon Skill, 3\-4 = \-2 Weapon Skill, and 5\-6 = \-3 Weapon Skill).
+#magic-weapon("BASHAS AXE OF STUNTY SMASHIN'", 50)[The wielder of this weapon has the Armour Piercing (1) special rule, and adds +1 to both his Attacks and Strength in close combat. This bonus is doubled if the wielder is in base contact with a Dwarf. In addition, the wielder causes Fear in all Dwarfs.]
 
-#namecost("WARBOSS IRONCLAW'S WAAAGH! CLEAVA", "60 points")
+#magic-weapon("BASHA'S BLOODAXE", 50, only: "Common Orcs on foot")[The wielder of Basha's Bloodaxe gains the Frenzy rule. However, they get +D6 Attacks (rolled before making their Attacks) rather than +1 and can never lose their Frenzy.]
 
-Common Orcs only. All hits from Warboss Ironclaw's Waaagh! Cleava Wound automatically with the Ignores Armour Saves special rule.
+#magic-weapon("BONEHEAD'S WHACKER", 50, only: "Savage Orcs", type: "Great weapon")[The Whacker gives the wielder the Always Strikes First special rule and allows them to re-roll failed To Wound rolls.]
 
-#namecost("BASHAS AXE OF STUNTY SMASHIN'", "50 points")
+#magic-weapon("SHAGA'S SCREAMING SWORD", 50)[Shaga's Screaming Sword gives the wielder the Fear special rule. In addition, they also gain +1 Strength and +1 Attack for each enemy character model within 12".]
 
-The wielder of this weapon has the Armour Piercing (1) special rule, and adds +1 to both his Attacks and Strength in close combat. This bonus is doubled if the wielder is in base contact with a Dwarf. In addition, the wielder causes Fear in all Dwarfs.
+#magic-weapon("BASHA'S BIG AXE OF BASHIN'", 30)[Basha's Big Axe of Bashin' gives wielder +1 Strength and Attacks.]
 
-#namecost("BASHA'S BLOODAXE", "50 points")
+#magic-weapon("DA CHOPPIEST CHOPPA", 30, only: "Orcs")[This weapon gives the wielder +1 Strength and the Armour Piercing (3) special rule.]
 
-Common Orcs on foot only. The wielder of Basha's Bloodaxe gains the Frenzy rule. However, they get +D6 Attacks (rolled before making their Attacks) rather than +1 and can never lose their Frenzy.
+#magic-weapon("KLEEVA'S CLEAVER OF CLEAVAGE", 30)[All hits with Kleeva's Cleaver of Cleavage Wound automatically. Armour saves are modified by the Strength of the bearer.]
 
-#namecost("BONEHEAD'S WHACKER", "50 points")
+#magic-weapon("MARTOG'S BEST BASHA", 30)[Martog's Best Basha gives the wielder +1 Weapon Skill, +1 Strength and +1 Initiative.]
 
-Savage Orcs only. Great weapon. The Whacker gives the wielder the Always Strikes First special rule and allows them to re-roll failed To Wound rolls.
+#magic-weapon("THE RED FANG", 30, only: "Common Orcs")[The Red Fang gives the wielder +1 Attack and +1 To Hit in close combat.]
 
-#namecost("SHAGA'S SCREAMING SWORD", "50 points")
+#magic-weapon("SNEAKY SKEWERER", 30, only: "Goblins")[The Sneaky Skewerer gives the wielder +1 To Hit and the Killing Blow special rule.]
 
-Shaga's Screaming Sword gives the wielder the Fear special rule. In addition, they also gain +1 Strength and +1 Attack for each enemy character model within 12".
+#magic-weapon("DUFFFA'S CLUB OF DUFFIN'", 25)[Duffa's Club of Duffin' gives the wielder +3 Attacks in the first round of close combat.]
 
-#namecost("BASHA'S BIG AXE OF BASHIN'", "30 points")
+#magic-weapon("FUMPA'S CLUB OF FUMPIN'", 25)[Fumpa's Club of Fumpin' gives the wielder +1 Strength and the Quell Animosity special rule.]
 
-Basha's Big Axe of Bashin' gives wielder +1 Strength and Attacks.
+#magic-weapon("HACKA'S SWORD OF HACKIN'", 25)[Hacka's Sword of Hackin' makes the wielder always hit any opponent on roll of a 2+.]
 
-#namecost("DA CHOPPIEST CHOPPA", "30 points")
+#magic-weapon("THE HUMIE HEWERS", 25, type: "Two hand weapons")[Whenever the wielder's To Hit roll on a D6 is higher than his target's Weapon Skill, the attack will not only hit regardless of the score normally needed to hit, but will also be multiplied into 2 Hits.]
 
-Orcs only. This weapon gives the wielder +1 Strength and the Armour Piercing (3) special rule.
+#magic-weapon("KRUMPA'S CLUB OF CRUMPIN'", 25, type: "Great weapon")[Krumpa's Club of Crumpin' gives the wielder the Ignores Armour Saves special rule.]
 
-#namecost("KLEEVA'S CLEAVER OF CLEAVAGE", "30 points")
+#magic-weapon("PORKO'S PIGSTIKKA", 25, only: "Mounted Orcs", type: "Light lance")[On any turn that they charge, Porko's Pigstikka gives the wielder +1 Attack for each rank that the unit they are attacking has.]
 
-All hits with Kleeva's Cleaver of Cleavage Wound automatically. Armour saves are modified by the Strength of the bearer.
+#magic-weapon("ULAG'S AK'RIT AXE", 25)[Ulag's Ak'rit Axe allows the wielder to re-roll any failed To Hit rolls.]
 
-#namecost("MARTOG'S BEST BASHA", "30 points")
+#magic-weapon("BIGGER, CHOPPIER AXE", 20, only: "Orcs", type: "Great weapon")[This weapon gives the wielder the Killing Blow special rule.]
 
-Martog's Best Basha gives the wielder +1 Weapon Skill, +1 Strength and +1 Initiative.
+#magic-weapon("KURBOG'S CURMUDGEONLY CLOBBERA", 20)[Any model Wounded (but not slain) by Kurbog's Curmudgeonly Clobbera may not attack this close combat phase. If they have already attacked this close combat phase, they may not attack in the next close combat phase.]
 
-#namecost("THE RED FANG", "30 points")
+#magic-weapon("SMASHA AND KUNNIN'", 20, only: "Orcs", type: "Two hand weapons")[When targeting a Wizard in close combat, the wielder may re-roll failed rolls To Hit and gains the Multiple Wounds (D3) special rule. When targeting a Character that is not a Wizard in close combat, the wielder may re-roll failed rolls To Wound and gains the Killing Blow special rule.]
 
-Common Orcs only. The Red Fang gives the wielder +1 Attack and +1 To Hit in close combat.
+#magic-weapon("BACKSTABBER'S BLADE", 15, only: "Goblins")[The Backstabber's Blade gives the wielder the Poisoned Attacks special rule. In addition, they get +1 Strength if they attack the enemy to their flank, or +2 Strength if they attack the enemy in their rear.]
 
-#namecost("SNEAKY SKEWERER", "30 points")
+#magic-weapon("WEEPWOOD BIG SHIV", 15, only: "Savage Orc", type: "Additional hand weapon")[The Strength of this weapon is increased by 1 for the remainder of the game for each unsaved Wound it inflicts on a Monstrous Creature or Monster. Roll to Wound individually against these Troop Types.]
 
-Goblins only. The Sneaky Skewerer gives the wielder +1 To Hit and the Killing Blow special rule.
+#magic-weapon("THE BLACK FANG", 10)[If the bearer rolls a natural 6 To Hit, that Attack automatically Wounds with the Multiple Wounds (D3) special rule.]
 
-#namecost("DUFFFA'S CLUB OF DUFFIN'", "25 points")
+#magic-weapon("CLUB WIV A NAIL IN'", 10, type: "Great weapon")[The wielder gains the Random Attacks (D6) special rule.]
 
-Duffa's Club of Duffin' gives the wielder +3 Attacks in the first round of close combat.
+#magic-weapon("GREATDRAKE TOOF", 10, only: "Savage Orc")[If the bearer rolls a natural 6 To Wound, that Attack has the Multiple Wounds (D6) special rule.]
 
-#namecost("FUMPA'S CLUB OF FUMPIN'", "25 points")
+#magic-weapon("LUCKY'S DIRK", 10, only: "Goblins")[Lucky's Dirk gives the wielder +1 Strength for each enemy Magic Item in base contact.]
 
-Fumpa's Club of Fumpin' gives the wielder +1 Strength and the Quell Animosity special rule.
+#magic-weapon("METALRIPPA'S KLAW", 10, type: "Additional hand weapon")[The wielder gains the Armour Piercing (1) special rule.]
 
-#namecost("HACKA'S SWORD OF HACKIN'", "25 points")
+#magic-weapon("MOONHONED SHIV", 10, only: "Night Goblin")[The wielder gains +1 Attack. In addition, they gain the Feigned Flight ability from the Skirmishers special rule. Each time they use this ability, they gain +1 Attack for the duration of the battle.]
 
-Hacka's Sword of Hackin' makes the wielder always hit any opponent on roll of a 2+.
+#magic-weapon("STABBY'S RUSTY STIKKA", 10, only: "Goblins")[The wielder will automatically Wound on a To Hit roll of a natural 6.]
 
-#namecost("THE HUMIE HEWERS", "25 points")
+#magic-weapon("SWORD OF BORK", 10)[Any unit joined by the bearer of the Sword of Bork that fails their Animosity test may roll 2D6 on the Animosity table and discard the lowest result.]
 
-Two hand weapons. Whenever the wielder's To Hit roll on a D6 is higher than his target's Weapon Skill, the attack will not only hit regardless of the score normally needed to hit, but will also be multiplied into 2 Hits.
+#magic-weapon("WOLLOPA'S ONE HIT WUNDA", 10, one-use: true)[Wollopa's One Hit Wunda may be used at the start of any close combat phase when it is the wielder's turn to attack. The wielder may replace all their normal Attacks with a special attack that is resolved at +3 Strength with the Heroic Killing Blow special rule.]
 
-#namecost("KRUMPA'S CLUB OF CRUMPIN'", "25 points")
+#magic-weapon("BIG SPIRIT STIKK", 5, only: "Savage Orc Wizards")[The wielder of this item gains the Multiple Wounds (D3) special rule. Against Monstrous Creatures and Monsters, they gain the Multiple Wounds (D6) special rule.]
 
-Great weapon. Krumpa's Club of Crumpin' gives the wielder the Ignores Armour Saves special rule.
-
-#namecost("PORKO'S PIGSTIKKA", "25 points")
-
-Mounted Orcs only. Light lance. On any turn that they charge, Porko's Pigstikka gives the wielder +1 Attack for each rank that the unit they are attacking has.
-
-#namecost("ULAG'S AK'RIT AXE", "25 points")
-
-Ulag's Ak'rit Axe allows the wielder to re-roll any failed To Hit rolls.
-
-#namecost("BIGGER, CHOPPIER AXE", "20 points")
-
-Orcs only. Great weapon. This weapon gives the wielder the Killing Blow special rule.
-
-#namecost("KURBOG'S CURMUDGEONLY CLOBBERA", "20 points")
-
-Any model Wounded (but not slain) by Kurbog's Curmudgeonly Clobbera may not attack this close combat phase. If they have already attacked this close combat phase, they may not attack in the next close combat phase.
-
-#namecost("SMASHA AND KUNNIN'", "20 points")
-
-Orcs only. Two hand weapons. When targeting a Wizard in close combat, the wielder may re-roll failed rolls To Hit and gains the Multiple Wounds (D3) special rule. When targeting a Character that is not a Wizard in close combat, the wielder may re-roll failed rolls To Wound and gains the Killing Blow special rule.
-
-#namecost("BACKSTABBER'S BLADE", "15 points")
-
-Goblins only. The Backstabber's Blade gives the wielder the Poisoned Attacks special rule. In addition, they get +1 Strength if they attack the enemy to their flank, or +2 Strength if they attack the enemy in their rear.
-
-#namecost("WEEPWOOD BIG SHIV", "15 points")
-
-Savage Orc only. Additional hand weapon. The Strength of this weapon is increased by 1 for the remainder of the game for each unsaved Wound it inflicts on a Monstrous Creature or Monster. Roll to Wound individually against these Troop Types.
-
-#namecost("THE BLACK FANG", "10 points")
-
-If the bearer rolls a natural 6 To Hit, that Attack automatically Wounds with the Multiple Wounds (D3) special rule.
-
-#namecost("CLUB WIV A NAIL IN'", "10 points")
-
-Great weapon. The wielder gains the Random Attacks (D6) special rule.
-
-#namecost("GREATDRAKE TOOF", "10 points")
-
-Savage Orc only. If the bearer rolls a natural 6 To Wound, that Attack has the Multiple Wounds (D6) special rule.
-
-#namecost("LUCKY'S DIRK", "10 points")
-
-Goblins only. Lucky's Dirk gives the wielder +1 Strength for each enemy Magic Item in base contact.
-
-#runin[METALRIPPA]'#runin[S KLAW 10 points] Additional hand weapon. The wielder gains the Armour Piercing (1) special rule.
-
-#namecost("MOONHONED SHIV", "10 points")
-
-Night Goblin only. The wielder gains +1 Attack. In addition, they gain the Feigned Flight ability from the Skirmishers special rule. Each time they use this ability, they gain +1 Attack for the duration of the battle.
-
-#runin[STABBY]'#runin[S RUSTY STIKKA 10 points] Goblins only. The wielder will automatically Wound on a To Hit roll of a natural 6.
-
-#namecost("SWORD OF BORK", "10 points")
-
-Any unit joined by the bearer of the Sword of Bork that fails their Animosity test may roll 2D6 on the Animosity table and discard the lowest result.
-
-#namecost("WOLLOPA'S ONE HIT WUNDA", "10 points")
-
-One use only. Wollopa's One Hit Wunda may be used at the start of any close combat phase when it is the wielder's turn to attack. The wielder may replace all their normal Attacks with a special attack that is resolved at +3 Strength with the Heroic Killing Blow special rule.
-
-#namecost("BIG SPIRIT STIKK", "5 points")
-
-Savage Orc Wizards only. The wielder of this item gains the Multiple Wounds (D3) special rule. Against Monstrous Creatures and Monsters, they gain the Multiple Wounds (D6) special rule.
-
-#namecost("OWZAT'S CLUB OF SMACKIN'", "5 points")
-
-An Infantry Character model which suffers an unsaved Wound (but is not slain) by Owzat's Club of Smackin' is immediately knocked clean out of combat and suffers a Strength 4 Hit. Move the model D6" backwards (measure from the back of any unit it is in), stopping at least 1" away from other units or impassable terrain.
+#magic-weapon("OWZAT'S CLUB OF SMACKIN'", 5)[An Infantry Character model which suffers an unsaved Wound (but is not slain) by Owzat's Club of Smackin' is immediately knocked clean out of combat and suffers a Strength 4 Hit. Move the model D6" backwards (measure from the back of any unit it is in), stopping at least 1" away from other units or impassable terrain.]
 ]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF GORK", "70 points")
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF GORK", 70, type: "Medium armour")[The wearer has +D3 Toughness. Roll to determine the armour's effectiveness the first time the wearer is hit each turn, and use the result for the rest of the turn. In addition, the wearer has the Impact Hits (D6) special rule.]
 
-Medium Armour. The wearer has +D3 Toughness. Roll to determine the armour's effectiveness the first time the wearer is hit each turn, and use the result for the rest of the turn. In addition, the wearer has the Impact Hits (D6) special rule.
+#magic-armour("BULAK'S BLOODY ARMOUR", 45, only: "Black Orcs", type: "Heavy armour")[This armour gives the wearer the Magical Ward (4+) special rule. However, if they roll a 1 for their Ward save, the number of Wounds suffered is doubled.]
 
-#namecost("BULAK'S BLOODY ARMOUR", "45 points")
+#magic-armour("ARMOUR OF MORK", 30, type: "Medium armour")[The Armour of Mork gives the wearer and any unit they join the Magic Resistance (2) special rule.]
 
-Black Orcs only. Heavy armour. This armour gives the wearer the Magical Ward (4+) special rule. However, if they roll a 1 for their Ward save, the number of Wounds suffered is doubled.
+#magic-armour("ARMOUR OF PROTECTYNESS", 30, type: "Medium armour")[The Armour of Protectyness gives the wearer the Regeneration (5+) special rule.]
 
-#namecost("ARMOUR OF MORK", "30 points")
+#magic-armour("IRONSKIN SHIELD", 30, type: "Shield")[The Ironskin Shield gives the bearer the Magical Ward (5+) special rule.]
 
-Medium armour. The Armour of Mork gives the wearer and any unit they join the Magic Resistance (2) special rule.
+#magic-armour("TROLLHIDE TROUSERS", 25, only: "Common Orcs or Common Goblins")[This armour gives the wearer the Natural Armour (6+) and Regeneration (5+) special rules.]
 
-#namecost("ARMOUR OF PROTECTYNESS", "30 points")
+#magic-armour("UGBRAG'S LUCKY SHIELD", 20, type: "Shield")[Ugbrag's Lucky Shield enables the wearer to ignore the first Wounding Hit (after saves) suffered in the game.]
 
-Medium armour. The Armour of Protectyness gives the wearer the Regeneration (5+) special rule.
+#magic-armour("NOBBLA'S 'ELMET", 15, only: "Common Goblins")[Nobbla's Helmet gives the wearer a 6+ armour save and the Magical Ward (6+) special rule.]
 
-#namecost("IRONSKIN SHIELD", "30 points")
+#magic-armour("THE SPIKY SHOULDER PLATES", 10, only: "Common Orcs on foot")[The bearer gains a 6+ armour save and the Impact Hits (1) special rule.]
 
-Shield. The Ironskin Shield gives the bearer the Magical Ward (5+) special rule.
-
-#namecost("TROLLHIDE TROUSERS", "25 points")
-
-Common Orcs or Common Goblins only. This armour gives the wearer the Natural Armour (6+) and Regeneration (5+) special rules.
-
-#namecost("UGBRAG'S LUCKY SHIELD", "20 points")
-
-Shield. Ugbrag's Lucky Shield enables the wearer to ignore the first Wounding Hit (after saves) suffered in the game.
-
-#namecost("NOBBLA'S 'ELMET", "15 points")
-
-Common Goblins only. Nobbla's Helmet gives the wearer a 6+ armour save and the Magical Ward (6+) special rule.
-
-#namecost("THE SPIKY SHOULDER PLATES", "10 points")
-
-Common Orcs on foot only. The bearer gains a 6+ armour save and the Impact Hits (1) special rule.
-
-#namecost("SPITEFUL SHIELD", "10 points")
-
-Goblins only. Shield. For each To Hit roll of a 1 against the bearer in close combat, the Spiteful Shield inflicts a Strength 5 Hit against the model that struck the blow.
-
-#entry("TALISMANS")
-#columns(2)[
-#namecost("HEADDRESS OF MANY EYES", "30 points")
-
-Forest Goblin on foot only. The wearer can only be hit in close combat on To Hit rolls of a natural 6.
-
-#namecost("AMULET OF PROTECTYNESS", "25 points")
-
-Whenever the bearer of the Amulet of Protectyness suffers a Wound, they count as having the same armour and Ward save as the model that caused the Wound.
-
-#namecost("THE CLAMMY COWL", "25 points")
-
-Night Goblins only. All Close Combat attacks targeting the wearer of this item must re-roll successful rolls To Hit.
-
-#namecost("LUCKY SHRUNKEN HEAD", "25 points")
-
-Savage Orc Wizards only. Any unit joined by the bearer of the Lucky Shrunken head may re-roll 1's when taking Magical Ward saves.
-
-#namecost("MOONSTONE MEDALLION", "25 points")
-
-Night Goblin only. This item gives the bearer the Magical Ward (6+) special rule and may re-roll failed Magical Ward saves.
-
-#namecost("SIZZLA'S SHINY BAUBLES", "25 points")
-
-Sizzla's Shiny Baubles can be used against any successfully cast enemy spell that targets the bearer or the unit they are with. Roll a D6; on 1\-3 nothing happens; on a 4+ the spell is reflected back at the caster and their unit and affects them instead, following all the normal rules for the spell. The original caster may then attempt to dispel their own spell using any remaining power dice.
-
-#namecost("THE COLLAR OF ZORGA", "20 points")
-
-War Beasts, Monstrous Beasts, Monstrous Creatures, Monsters and all mounts require 6's to hit the bearer. In addition, the wearer can attempt to take control of any creatures in base contact mentioned above at the start of each round of Close Combat. Each player rolls a D6 for each beast and add the unmodified Leadership of the wearer of the Collar and each beast he is trying to control. If the Orc player scores equal or higher, he takes control of that beast who will now attack any friendly models in base contact for the remainder of the close combat phase (including Stomps, but not Impact Hits). If there are no friendly models for the beast to attack, it simply makes no attacks this round. If the Orc player scores lower, the beast may act normally this turn.
-
-#namecost("EFFIGY OF MORK", "20 points")
-
-Savage Orcs only. All close combat attacks made against the bearer of the Effigy of Mork suffer \-1 To Hit.
-
-#namecost("MORK'S EYE PEBBLE", "20 points")
-
-Goblins only. One use only. This item may be used at the start of any enemy shooting phase. If they do so, the bearer and all friendly units within 12" gain the Magical Ward (5+) special rule against missile attacks for the duration of this phase.
-
-#namecost("WARBOSS UMM'S BEST BIG BOSS'S 'AT", "20 points")
-
-Warboss Umm's Best Big Boss's 'At gives the wearer the Magical Ward (4+) special rule. However, if the wearer fails its Magical Ward save at any point, it will no longer have any effect from the start of the next player turn.
-
-#namecost("DAUBING OF MORK", "15 points")
-
-Orcs on foot only. Enemy models must re-roll 6's To Wound against the bearer of this item.
-
-#namecost("NECKLACE OF BLESSED TEEF", "15 points")
-
-The bearer of the Necklace of Blessed Teef may re-roll any armour or Ward Save rolls of 1.
-
-#namecost("SPARKLY WIZARD FINDA", "15 points")
-
-The bearer of the Sparkly Wizard Finda has the Hatred (Wizards) and Magic Resistance (3) special rules.
-
-#namecost("DOKK JUICE", "10 points")
-
-Savage Orc Wizards only. One use only. This item may be used at the start of any turn. Once used, the imbiber gains the Regeneration (4+) special rule for the remainder of the turn.
-
-#namecost("GLOWIN' TATTOOZ", "10 points")
-
-Savage Orc only. The bearer of this item may re-roll failed Magical Ward save rolls.
-
-#namecost("GLOWY GREEN AMULET", "10 points")
-
-Instead of making a normal dispel attempt, the wearer of the Glowy Green Amulet may attempt to nullify any enemy spell cast at the bearer or the unit they are with by a rolling a number of dice equal to the number of dice used to cast the spell. As long as no 1's are rolled, the spell is dispelled. However, if two or more 1's are rolled, the spell gets through automatically and the wearer is killed outright (with no saves allowed).
-
-#namecost("GLOWY HOWZIT", "10 points")
-
-This item gives the bearer the Magical Ward (5+) special rule. At the end of each phase in which the model suffered 1 or more Wounds, roll a D6 for each failed Ward save roll they made. On the roll a 1, the Glowy Howzit cannot be used for the remainder of the game.
+#magic-armour("SPITEFUL SHIELD", 10, only: "Goblins", type: "Shield")[For each To Hit roll of a 1 against the bearer in close combat, the Spiteful Shield inflicts a Strength 5 Hit against the model that struck the blow.]
 ]
 
-#entry("ARCANE ITEMS")
-#columns(2)[
-#namecost("STAFF OF SNEAKY STEALIN'", "60 points")
+#magic-item-section("talisman", columns: 2)[
+#talisman("HEADDRESS OF MANY EYES", 30, only: "Forest Goblin on foot")[The wearer can only be hit in close combat on To Hit rolls of a natural 6.]
 
-Goblins only. Staff. At the start of each of your Magic phases, the Staff of Sneaky Stealin' allows you to remove one dice from the opponent's Dispel dice pool and add it to your own Power dice pool.
+#talisman("AMULET OF PROTECTYNESS", 25)[Whenever the bearer of the Amulet of Protectyness suffers a Wound, they count as having the same armour and Ward save as the model that caused the Wound.]
 
-#namecost("SKULL WAND OF KALOTH", "50 points")
+#talisman("THE CLAMMY COWL", 25, only: "Night Goblins")[All Close Combat attacks targeting the wearer of this item must re-roll successful rolls To Hit.]
 
-Staff. The Skull Wand unleashes a curse on a single enemy model that is in base contact with the bearer at the start of the Close Combat phase. The victim must pass a Leadership test (using its own, unmodified, Leadership) or be slain instantly, with no save of any kind allowed. In addition, the bearer of the Skull Wand causes Terror.
+#talisman("LUCKY SHRUNKEN HEAD", 25, only: "Savage Orc Wizards")[Any unit joined by the bearer of the Lucky Shrunken head may re-roll 1's when taking Magical Ward saves.]
 
-#namecost("GREAT GREEN VISIONS", "45 points")
+#talisman("MOONSTONE MEDALLION", 25, only: "Night Goblin")[This item gives the bearer the Magical Ward (6+) special rule and may re-roll failed Magical Ward saves.]
 
-Orcs only. Relic. The bearer of this item may re-roll failed channelling rolls.
+#talisman("SIZZLA'S SHINY BAUBLES", 25)[Sizzla's Shiny Baubles can be used against any successfully cast enemy spell that targets the bearer or the unit they are with. Roll a D6; on 1\-3 nothing happens; on a 4+ the spell is reflected back at the caster and their unit and affects them instead, following all the normal rules for the spell. The original caster may then attempt to dispel their own spell using any remaining power dice.]
 
-#namecost("SPEAKY-SKULL FETISH", "35 points")
+#talisman("THE COLLAR OF ZORGA", 20)[War Beasts, Monstrous Beasts, Monstrous Creatures, Monsters and all mounts require 6's to hit the bearer. In addition, the wearer can attempt to take control of any creatures in base contact mentioned above at the start of each round of Close Combat. Each player rolls a D6 for each beast and add the unmodified Leadership of the wearer of the Collar and each beast he is trying to control. If the Orc player scores equal or higher, he takes control of that beast who will now attack any friendly models in base contact for the remainder of the close combat phase (including Stomps, but not Impact Hits). If there are no friendly models for the beast to attack, it simply makes no attacks this round. If the Orc player scores lower, the beast may act normally this turn.]
 
-Relic. Every time the bearer of this item rolls a 6 on their channelling roll, they gain an extra dice to the pool.
+#talisman("EFFIGY OF MORK", 20, only: "Savage Orcs")[All close combat attacks made against the bearer of the Effigy of Mork suffer \-1 To Hit.]
 
-#namecost("BEAST-LURE GLYPHS", "30 points")
+#talisman("MORK'S EYE PEBBLE", 20, only: "Goblins", one-use: true)[This item may be used at the start of any enemy shooting phase. If they do so, the bearer and all friendly units within 12" gain the Magical Ward (5+) special rule against missile attacks for the duration of this phase.]
 
-Savage Orcs only. Charm. One use only. The caster may cast one of their spells (with a casting value of 10 maximum) without using any power dice. The spell counts as having been cast on their minimum casting value and may be dispelled as normal.
+#talisman("WARBOSS UMM'S BEST BIG BOSS'S 'AT", 20)[Warboss Umm's Best Big Boss's 'At gives the wearer the Magical Ward (4+) special rule. However, if the wearer fails its Magical Ward save at any point, it will no longer have any effect from the start of the next player turn.]
 
-#namecost("IDOL OF MORK", "30 points")
+#talisman("DAUBING OF MORK", 15, only: "Orcs on foot")[Enemy models must re-roll 6's To Wound against the bearer of this item.]
 
-Orcs only. Relic. At the start of your magic phase, the Idol of Mork adds one power dice to your power pool for every friendly Orc unit (any type) with 10 or more Unit Strength in combat within 24" if the bearer. However, it removes one power dice from your power pool for every friendly fleeing Orc (any type) with 10 or more Unit Strength unit within 24" of the bearer.
+#talisman("NECKLACE OF BLESSED TEEF", 15)[The bearer of the Necklace of Blessed Teef may re-roll any armour or Ward Save rolls of 1.]
 
-#namecost("SCUTTLEPOT", "30 points")
+#talisman("SPARKLY WIZARD FINDA", 15)[The bearer of the Sparkly Wizard Finda has the Hatred (Wizards) and Magic Resistance (3) special rules.]
 
-Forest Goblins only. Relic. The bearer of this item gains a +D3 casting bonus. Roll for each casting attempt.
+#talisman("DOKK JUICE", 10, only: "Savage Orc Wizards", one-use: true)[This item may be used at the start of any turn. Once used, the imbiber gains the Regeneration (4+) special rule for the remainder of the turn.]
 
-#namecost("DITTO'S DOUBLE DOIN' DOODAHS", "25 points")
+#talisman("GLOWIN' TATTOOZ", 10, only: "Savage Orc")[The bearer of this item may re-roll failed Magical Ward save rolls.]
 
-Relic. The bearer of Ditto's Double Doin' Doodahs may choose to attempt to cast one of their spells twice per Magic phase.
+#talisman("GLOWY GREEN AMULET", 10)[Instead of making a normal dispel attempt, the wearer of the Glowy Green Amulet may attempt to nullify any enemy spell cast at the bearer or the unit they are with by a rolling a number of dice equal to the number of dice used to cast the spell. As long as no 1's are rolled, the spell is dispelled. However, if two or more 1's are rolled, the spell gets through automatically and the wearer is killed outright (with no saves allowed).]
 
-#namecost("LOONSTONE TALISMAN", "20 points")
+#talisman("GLOWY HOWZIT", 10)[This item gives the bearer the Magical Ward (5+) special rule. At the end of each phase in which the model suffered 1 or more Wounds, roll a D6 for each failed Ward save roll they made. On the roll a 1, the Glowy Howzit cannot be used for the remainder of the game.]
+]
 
-Charm. One use only. Night Goblin Wizard only. This item may be used at the start of any enemy Magic phase. Each time a Wizard with this item dispels an enemy spell this turn, they gain +1 Power Dice that they can use in their next Magic phase (up to a maximum of +3 dice).
+#magic-item-section("arcane", columns: 2)[
+#arcane-item("STAFF OF SNEAKY STEALIN'", 60, only: "Goblins", type: "Staff")[At the start of each of your Magic phases, the Staff of Sneaky Stealin' allows you to remove one dice from the opponent's Dispel dice pool and add it to your own Power dice pool.]
 
-#namecost("BUZGOB'S KNOBBLY STAFF", "20 points")
+#arcane-item("SKULL WAND OF KALOTH", 50, type: "Staff")[The Skull Wand unleashes a curse on a single enemy model that is in base contact with the bearer at the start of the Close Combat phase. The victim must pass a Leadership test (using its own, unmodified, Leadership) or be slain instantly, with no save of any kind allowed. In addition, the bearer of the Skull Wand causes Terror.]
 
-Staff. Buzgob's Knobbly Staff allows the wielder to re- roll all power dice used to cast a spell once per Magic phase (before rolling any Ultimate Power dice). This cannot be used if a miscast is rolled.
+#arcane-item("GREAT GREEN VISIONS", 45, only: "Orcs", type: "Relic")[The bearer of this item may re-roll failed channelling rolls.]
 
-#namecost("MORK'S BONEY BITZ", "20 points")
+#arcane-item("SPEAKY-SKULL FETISH", 35, type: "Relic")[Every time the bearer of this item rolls a 6 on their channelling roll, they gain an extra dice to the pool.]
 
-Savage Orcs only. Relic. The bearer of this item gains +1 to cast for every Monster within 18".
+#arcane-item("BEAST-LURE GLYPHS", 30, only: "Savage Orcs", type: "Charm", one-use: true)[The caster may cast one of their spells (with a casting value of 10 maximum) without using any power dice. The spell counts as having been cast on their minimum casting value and may be dispelled as normal.]
 
-#namecost("SHAMANIC SKULLCAPE", "20 points")
+#arcane-item("IDOL OF MORK", 30, only: "Orcs", type: "Relic")[At the start of your magic phase, the Idol of Mork adds one power dice to your power pool for every friendly Orc unit (any type) with 10 or more Unit Strength in combat within 24" if the bearer. However, it removes one power dice from your power pool for every friendly fleeing Orc (any type) with 10 or more Unit Strength unit within 24" of the bearer.]
 
-Common Orcs only. Relic. The bearer of this item gains a +1 casting bonus. In addition, if they successfully kill an enemy Wizard in close combat or with a spell, you may choose one of the spells they knew at that time. The model may then cast that spell themselves for the remainder of the game.
+#arcane-item("SCUTTLEPOT", 30, only: "Forest Goblins", type: "Relic")[The bearer of this item gains a +D3 casting bonus. Roll for each casting attempt.]
 
-#namecost("STAFF OF BADUUM", "20 points")
+#arcane-item("DITTO'S DOUBLE DOIN' DOODAHS", 25, type: "Relic")[The bearer of Ditto's Double Doin' Doodahs may choose to attempt to cast one of their spells twice per Magic phase.]
 
-Staff. The bearer of this item gains a +2 casting bonus to one of their spells, chosen at the start of the battle. However, in case a Miscast is rolled when casting that spell, add 1 to the result rolled on the Waaagh! Miscast chart.
+#arcane-item("LOONSTONE TALISMAN", 20, type: "Charm", one-use: true)[Night Goblin Wizard only. This item may be used at the start of any enemy Magic phase. Each time a Wizard with this item dispels an enemy spell this turn, they gain +1 Power Dice that they can use in their next Magic phase (up to a maximum of +3 dice).]
 
-#namecost("WAAAGH! PAINT*", "15 points")
+#arcane-item("BUZGOB'S KNOBBLY STAFF", 20, type: "Staff")[Buzgob's Knobbly Staff allows the wielder to re- roll all power dice used to cast a spell once per Magic phase (before rolling any Ultimate Power dice). This cannot be used if a miscast is rolled.]
 
-Savage Orcs only. Relic. If the wearer of the Waaagh! Paint is in close combat at the start of your Magic phase, they gain a +2 to casting bonus.
+#arcane-item("MORK'S BONEY BITZ", 20, only: "Savage Orcs", type: "Relic")[The bearer of this item gains +1 to cast for every Monster within 18".]
 
-#namecost("AMBERBONE HOARD", "10 points")
+#arcane-item("SHAMANIC SKULLCAPE", 20, only: "Common Orcs", type: "Relic")[The bearer of this item gains a +1 casting bonus. In addition, if they successfully kill an enemy Wizard in close combat or with a spell, you may choose one of the spells they knew at that time. The model may then cast that spell themselves for the remainder of the game.]
 
-Orc Wizard only. Relic. The bearer of this item gains +1 Strength and +1 Attack.
+#arcane-item("STAFF OF BADUUM", 20, type: "Staff")[The bearer of this item gains a +2 casting bonus to one of their spells, chosen at the start of the battle. However, in case a Miscast is rolled when casting that spell, add 1 to the result rolled on the Waaagh! Miscast chart.]
 
-#namecost("DA HAG'S BREW", "10 points")
+#arcane-item("WAAAGH! PAINT", 15, only: "Savage Orcs", type: "Relic", common: true)[If the wearer of the Waaagh! Paint is in close combat at the start of your Magic phase, they gain a +2 to casting bonus.]
 
-Relic. In addition to the Lores of Magic they may normally know spells from, the bearer of Da Hag's Brew knows the Signature spell from the Lore of Troll Magic.
+#arcane-item("AMBERBONE HOARD", 10, only: "Orc Wizard", type: "Relic")[The bearer of this item gains +1 Strength and +1 Attack.]
 
-#namecost("DANGLY WOTNOTZ", "10 points")
+#arcane-item("DA HAG'S BREW", 10, type: "Relic")[In addition to the Lores of Magic they may normally know spells from, the bearer of Da Hag's Brew knows the Signature spell from the Lore of Troll Magic.]
 
-Charm. One use only. When casting a spell, the bearer of the Dangly Wotnotz may use it to add +1 to the result of one of the dice rolled. This may cause Ultimate Power or prevent a Miscast.
+#arcane-item("DANGLY WOTNOTZ", 10, type: "Charm", one-use: true)[When casting a spell, the bearer of the Dangly Wotnotz may use it to add +1 to the result of one of the dice rolled. This may cause Ultimate Power or prevent a Miscast.]
 
-#namecost("DA GREAT ZAPPA SQUIG", "5 points")
-
-Savage Orcs only. Charm. One use only. This item can be used at the start of any of your Magic phases. Roll a D6 and consult the table below:
+#arcane-item("DA GREAT ZAPPA SQUIG", 5, only: "Savage Orcs", type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. Roll a D6 and consult the table below:
 
 #chart((("D6", "Result:"), ("1", "The bearer suffers a Strength 5 Hit."), ("2-4", "The bearer gains +1 Power dice."), ("5-6", "The bearer gains +D3 Power dice.")))
 ]
+]
 
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("THE CROWN OF GORK", "40 points")
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("THE CROWN OF GORK", 40, only: "Common Orc")[All friendly units within 12" of the bearer may re-roll failed Animosity tests.]
 
-Common Orc only. All friendly units within 12" of the bearer may re-roll failed Animosity tests.
+#enchanted-item("SQUIGRILER PIPES", 35, only: "Night Goblins")[This item may be used in your Remaining Moves sub-phase. When used, all Squig units within 18" will immediately make a Random Move (using their normal Random Movement) directly towards the bearer of this item. If they get into base contact with the bearer, it is immediately removed as a casualty.]
 
-#namecost("SQUIGRILER PIPES", "35 points")
+#enchanted-item("BIGGED'S 'ED KICKIN' BOOTS", 30, only: "Common Orcs and Black Orcs on foot")[The wearer of Bigged's 'Ed Kickin' Boots gains the Stomp (D3) special rule.]
 
-Night Goblins only. This item may be used in your Remaining Moves sub-phase. When used, all Squig units within 18" will immediately make a Random Move (using their normal Random Movement) directly towards the bearer of this item. If they get into base contact with the bearer, it is immediately removed as a casualty.
+#enchanted-item("IRONBACK BOAR", 30, only: "Common Orcs and Black Orcs")[War Boar. The Ironback Boar has Strength 4 and the Impact Hits (D3) special rule.]
 
-#namecost("BIGGED'S 'ED KICKIN' BOOTS", "30 points")
+#enchanted-item("MOONFACE MOMMET", 30, only: "Night Goblins", one-use: true)[This item can be used against an enemy character (even within a unit) within 12" and Line of Sight during your Shooting phase. The target must take a Panic test. If passed, the model may not voluntarily move in their next turn.]
 
-Common Orcs and Black Orcs on foot only. The wearer of Bigged's 'Ed Kickin' Boots gains the Stomp (D3) special rule.
+#enchanted-item("THE PIPES OF DOOM", 30, only: "Night Goblins", one-use: true)[The Pipes of Doom can be used at the start of the Shooting Phase. All enemy War Beasts (including Mixed Units), Cavalry, Monstrous Beasts, Monstrous Cavalry, Chariots (except those that do not have any mounts pulling them) and Monsters within 12" must take a Panic test.]
 
-#namecost("IRONBACK BOAR", "30 points")
+#enchanted-item("TRICKSY TRINKET", 30, only: "Goblins (of any type)")[No units in base contact with the wearer of the Tricksy Trinket may take Magical Ward saves.]
 
-Common Orcs and Black Orcs only. War Boar. The Ironback Boar has Strength 4 and the Impact Hits (D3) special rule.
+#enchanted-item("DA THINKIN' ORC'S 'AT", 25, only: "Common Orc")[The wearer of Da Thinkin' Orc's 'At gains +1 Initiative. In addition, the wearer and any unit they have joined is not subject to the Animosity special rule.]
 
-#namecost("MOONFACE MOMMET", "30 points")
+#enchanted-item("GLAREFACE'S GRIN", 25, only: "Common Goblins", one-use: true)[This item may be used the start of any of your shooting phases. Pick a point on the battlefield within 6" of the bearer. All enemy units within 12" and with Line of Sight to that point suffers D6 Strength 5 Hits.]
 
-Night Goblins only. One use only. This item can be used against an enemy character (even within a unit) within 12" and Line of Sight during your Shooting phase. The target must take a Panic test. If passed, the model may not voluntarily move in their next turn.
+#enchanted-item("THE HORN OF URGOK", 25, one-use: true)[The horn can be used at the start of any of your turns. When this horn is sounded, all friendly units within 24" receive +1 Leadership and all enemy units within 24" suffer a \-1 penalty to their Leadership until the end of the turn.]
 
-#namecost("THE PIPES OF DOOM", "30 points")
+#enchanted-item("SAVAGE TROPHY", 25, only: "Savage Orc")[Army General only. The bearer of this item and any friendly units of Savage Orcs within 12" gain +1 to their Leadership.]
 
-Night Goblins only. One use only. The Pipes of Doom can be used at the start of the Shooting Phase. All enemy War Beasts (including Mixed Units), Cavalry, Monstrous Beasts, Monstrous Cavalry, Chariots (except those that do not have any mounts pulling them) and Monsters within 12" must take a Panic test.
+#enchanted-item("EL GROBIS' MASK OF THE FEARSOME RENOWN", 20, only: "Goblin Bosses")[The bearer gains the Fear and Hidden special rules. In addition, it gains the Always Strikes First and Armour Piercing (1) special rules on the turn that it is revealed or charges into an enemy unit's flank or rear.]
 
-#namecost("TRICKSY TRINKET", "30 points")
+#enchanted-item("GRISLY TROPHY RACK", 20, only: "Warboss or Big Boss")[All enemy units within 6" of the bearer of the Grisly Trophy Rack suffer \-1 modifier to their Leadership.]
 
-Goblins (of any type) only. No units in base contact with the wearer of the Tricksy Trinket may take Magical Ward saves.
+#enchanted-item("MAD CAP MUSHROOMS", 20, only: "Night Goblins", one-use: true)[If the model bearing the Mad Cap Mushrooms is in a unit containing one or more Night Goblin Fanatics, each Fanatic from this unit inflicts an additional D6 Hits on any unit they move into base contact with this turn.]
 
-#namecost("DA THINKIN' ORC'S 'AT", "25 Points")
+#enchanted-item("NIBBLA'S 'ITTY RING", 20, bound: (power: 4))[Nibbla's 'Itty Ring contains the _Vindictive Glare_ spell from the Lore of the Little Waaagh! Roll a D6 each time it has successfully been cast; on the roll of a 1, the caster suffers a Strength 5 Hit.]
 
-Common Orc only. The wearer of Da Thinkin' Orc's 'At gains +1 Initiative. In addition, the wearer and any unit they have joined is not subject to the Animosity special rule.
+#enchanted-item("SPIKER SEEDS", 20, only: "Goblins", one-use: true)[This item can be used if the bearer is charged and chooses to Hold or Stand & Shoot. All models in the enemy unit must take a Dangerous Terrain test before they begin their charge move (at the same time as any Stand & Shoot reaction is resolved).]
 
-#namecost("GLAREFACE'S GRIN", "25 points")
+#enchanted-item("WARBOSS IMBAD'S IRON GNASHAS", 20, only: "Common Orcs and Black Orcs")[The model wearing Imbad's Iron Gnashas gains +1 Attack with the Killing Blow special rule. This attack does not benefit from any other weapon rules the wearer might have.]
 
-Common Goblins only. One use only. This item may be used the start of any of your shooting phases. Pick a point on the battlefield within 6" of the bearer. All enemy units within 12" and with Line of Sight to that point suffers D6 Strength 5 Hits.
+#enchanted-item("BEASTKILLA SLOP", 15, only: "Goblins", one-use: true)[This item can be used at the start of any close combat phase. One enemy monster in base contact with the bearer of this item must take a number of Toughness tests equal to their starting number of Wounds. Each failed Toughness test causes D3 Wounds with no saves allowed. This has no effect against Daemons or Animated Constructs.]
 
-#namecost("THE HORN OF URGOK", "25 points")
+#enchanted-item("BRIMSTONE BAUBLE", 15, only: "Goblins")[If the bearer of the Brimstone Bauble is slain in close combat (not including pursuit), all units (friends and foe) in base contact suffer D6 Strength 6 Hits, distributed as Hits from shooting. Any Wounds caused count towards combat resolution.]
 
-One use only. The horn can be used at the start of any of your turns. When this horn is sounded, all friendly units within 24" receive +1 Leadership and all enemy units within 24" suffer a \-1 penalty to their Leadership until the end of the turn.
-
-#namecost("SAVAGE TROPHY", "25 points")
-
-Savage Orc only. Army General only. The bearer of this item and any friendly units of Savage Orcs within 12" gain +1 to their Leadership.
-
-#namecost("EL GROBIS' MASK OF THE FEARSOME RENOWN", "20 points")
-
-Goblin Bosses only. The bearer gains the Fear and Hidden special rules. In addition, it gains the Always Strikes First and Armour Piercing (1) special rules on the turn that it is revealed or charges into an enemy unit's flank or rear.
-
-#namecost("GRISLY TROPHY RACK", "20 points")
-
-Warboss or Big Boss only. All enemy units within 6" of the bearer of the Grisly Trophy Rack suffer \-1 modifier to their Leadership.
-
-#namecost("MAD CAP MUSHROOMS", "20 points")
-
-Night Goblins only. One use only. If the model bearing the Mad Cap Mushrooms is in a unit containing one or more Night Goblin Fanatics, each Fanatic from this unit inflicts an additional D6 Hits on any unit they move into base contact with this turn.
-
-#namecost("NIBBLA'S 'ITTY RING", "20 points")
-
-Bound Spell, Power Level 4. Nibbla's 'Itty Ring contains the _Vindictive Glare_ spell from the Lore of the Little Waaagh! Roll a D6 each time it has successfully been cast; on the roll of a 1, the caster suffers a Strength 5 Hit.
-
-#namecost("SPIKER SEEDS", "20 points")
-
-Goblins only. One use only. This item can be used if the bearer is charged and chooses to Hold or Stand & Shoot. All models in the enemy unit must take a Dangerous Terrain test before they begin their charge move (at the same time as any Stand & Shoot reaction is resolved).
-
-#namecost("WARBOSS IMBAD'S IRON GNASHAS", "20 points")
-
-Common Orcs and Black Orcs only. The model wearing Imbad's Iron Gnashas gains +1 Attack with the Killing Blow special rule. This attack does not benefit from any other weapon rules the wearer might have.
-
-#namecost("BEASTKILLA SLOP", "15 points")
-
-Goblins only. One use only. This item can be used at the start of any close combat phase. One enemy monster in base contact with the bearer of this item must take a number of Toughness tests equal to their starting number of Wounds. Each failed Toughness test causes D3 Wounds with no saves allowed. This has no effect against Daemons or Animated Constructs.
-
-#namecost("BRIMSTONE BAUBLE", "15 points")
-
-Goblins only. If the bearer of the Brimstone Bauble is slain in close combat (not including pursuit), all units (friends and foe) in base contact suffer D6 Strength 6 Hits, distributed as Hits from shooting. Any Wounds caused count towards combat resolution.
-
-#namecost("EYE-BITER ASH", "15 points")
-
-Goblins only. One use only. This item can be used at the start of any close combat phase. When used, roll a D6 and consult the table below:
+#enchanted-item("EYE-BITER ASH", 15, only: "Goblins", one-use: true)[This item can be used at the start of any close combat phase. When used, roll a D6 and consult the table below:
 
 #chart((("D6", "Result:"), ("1", "The bearer and their unit suffer -1 To Hit in
 close combat this phase."), ("2", "No effect"), ("3-6", "All enemy units in base contact with the
 bearer suffer -1 To Hit in close combat this
 phase.")))
-#namecost("GUZZLA'S BATTLE BREW", "15 points")
+]
 
-Roll a D6 for the bearer of Guzzla's Battle Brew at the start of the game and consult the table below to see what effect it has:
+#enchanted-item("GUZZLA'S BATTLE BREW", 15)[Roll a D6 for the bearer of Guzzla's Battle Brew at the start of the game and consult the table below to see what effect it has:
 
 #chart((("D6", "Result:"), ("1", "The model gains the Stupidity special rule."), ("2-4", "The model gains the Hatred special rule."), ("5-6", "The model gains the Hatred and Frenzy
 special rule.")))
-#namecost("THE GOLDEN TOOF", "15 points")
-
-Orcs only. The bearer of this item and any unit that they join may roll an additional dice and discard the highest result when taking Break tests. This has no effect if the bearer is a Lone Character.
-
-#namecost("MAAD'S MAP", "15 points")
-
-Model on foot only. Before deployment, roll a D6. On 4+, the bearer of Maad's Map and one unit they must join gains the Scouts special rule. On a 1\-3, the unit has gotten lost and gains the Ambushers special rule instead.
-
-#namecost("ROTTING DANKHOLD SPORES", "15 points")
-
-Dankhold Trollboss only. One use only. This item may be used at the start of any round of Close Combat. All enemy units must pass D6 Toughness tests or suffer a Wound which Ignores Armour Saves for each failed test.
-
-#namecost("'EADBUTTIN' 'AT", "10 points")
-
-Orcs only. The 'Eadbuttin' 'At gives the wearer a special attack in challenges. This attack causes a hit at the wearer Strength with the Multiple Wounds (D3) special rule. This attack does not benefit from any other weapon rules the wearer might have.
-
-#namecost("LOONSTONE TEEFCAPS", "10 points")
-
-Mounted Night Goblins only. The close combat attacks of the bearer's mount have the Armour Piercing (2) special rule.
-
-#namecost("PET GRIBBLY", "10 points")
-
-Dankhold Trollboss only. Every time the bearer of this item suffers an unsaved Wound, roll a D6. On a 1, the Pet Gribbly is squished and removed from the game. When the Pet Gribbly is squished, the bearer gains the Hatred and Frenzy special rule for the remainder of the game.
-
-#namecost("LUCKY BONE", "10 points")
-
-Savage Orc only. The bearer of this item may re-roll a single To Hit or To Wound roll of 1 each close combat phase.
-
-#namecost("CRUNCHY SHINIES", "5 points")
-
-Dankhold Trollboss only. One use only. This item may be used at the start of any of your Movement phases. For the duration of this turn, the bearer gains +2 Movement and +2 Initiative.
-
-#namecost("FUNGUS WINE", "5 points")
-
-Night Goblins only. One use only. This item may be used at the start of any of your turns. Until the start of your next turns, the model and any unit they are with have the Immunity (Psychology) special rule.
-
-#namecost("WEB-STRUNG CLOAK", "5 points")
-
-Forest Goblins only. Enemy units in base contact with the bearer of this item roll one dice less for their flee moves.
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("MORK'S SPIRIT TOTEM", "50 points")
+#enchanted-item("THE GOLDEN TOOF", 15, only: "Orcs")[The bearer of this item and any unit that they join may roll an additional dice and discard the highest result when taking Break tests. This has no effect if the bearer is a Lone Character.]
 
-The unit carrying this standard gains the Magic Resistance (D6) special rule. Roll to determine the effectiveness of the banner every time a spell is cast on the unit carrying it. For example, if a 5 is rolled, the unit with have Magic Resistance (5) against that spell. In addition, all magic items belonging to enemy units that are in base contact with the bearer of Mork's Spirit Totem do not work and will count as mundane versions of the same type.
+#enchanted-item("MAAD'S MAP", 15, only: "Model on foot")[Before deployment, roll a D6. On 4+, the bearer of Maad's Map and one unit they must join gains the Scouts special rule. On a 1\-3, the unit has gotten lost and gains the Ambushers special rule instead.]
 
-#namecost("THE BAD MOON BANNER", "40 points")
+#enchanted-item("ROTTING DANKHOLD SPORES", 15, only: "Dankhold Trollboss", one-use: true)[This item may be used at the start of any round of Close Combat. All enemy units must pass D6 Toughness tests or suffer a Wound which Ignores Armour Saves for each failed test.]
 
-Night Goblins only. The model carrying this standard and any unit they join gains the Stubborn special rule, and enemies suffer \-1 To Hit with missile weapons against them. In addition, any enemy model that charges into base contact with the bearer or their unit must take a Dangerous Terrain test.
+#enchanted-item("'EADBUTTIN' 'AT", 10, only: "Orcs")[The 'Eadbuttin' 'At gives the wearer a special attack in challenges. This attack causes a hit at the wearer Strength with the Multiple Wounds (D3) special rule. This attack does not benefit from any other weapon rules the wearer might have.]
 
-#namecost("ROWDY GROTT'S BIG RED RAGGEDY BANNER", "35 points")
+#enchanted-item("LOONSTONE TEEFCAPS", 10, only: "Mounted Night Goblins")[The close combat attacks of the bearer's mount have the Armour Piercing (2) special rule.]
 
-Common Goblins only. All Goblins within 12" of this standard have the Cold-blooded special rule.
+#enchanted-item("PET GRIBBLY", 10, only: "Dankhold Trollboss")[Every time the bearer of this item suffers an unsaved Wound, roll a D6. On a 1, the Pet Gribbly is squished and removed from the game. When the Pet Gribbly is squished, the bearer gains the Hatred and Frenzy special rule for the remainder of the game.]
 
-#namecost("DA ANGRY LADZ FLAG", "25 points")
+#enchanted-item("LUCKY BONE", 10, only: "Savage Orc")[The bearer of this item may re-roll a single To Hit or To Wound roll of 1 each close combat phase.]
 
-The unit carrying this standard gains the Frenzy special rule.
+#enchanted-item("CRUNCHY SHINIES", 5, only: "Dankhold Trollboss", one-use: true)[This item may be used at the start of any of your Movement phases. For the duration of this turn, the bearer gains +2 Movement and +2 Initiative.]
 
-#namecost("GORK'S WAAAGH! BANNER", "25 points")
+#enchanted-item("FUNGUS WINE", 5, only: "Night Goblins", one-use: true)[This item may be used at the start of any of your turns. Until the start of your next turns, the model and any unit they are with have the Immunity (Psychology) special rule.]
 
-Orcs only. The unit carrying this standard gains D6" to its charge distance. This does not affect the unit's maximum charge range for the purpose of determining mandatory charge declarations. If the charge is failed, the unit will move forward its normal failed charge distance.
+#enchanted-item("WEB-STRUNG CLOAK", 5, only: "Forest Goblins")[Enemy units in base contact with the bearer of this item roll one dice less for their flee moves.]
+]
 
-#namecost("SPIDER BANNER", "25 points")
+#magic-item-section("standard")[
+#magic-standard("MORK'S SPIRIT TOTEM", 50)[The unit carrying this standard gains the Magic Resistance (D6) special rule. Roll to determine the effectiveness of the banner every time a spell is cast on the unit carrying it. For example, if a 5 is rolled, the unit with have Magic Resistance (5) against that spell. In addition, all magic items belonging to enemy units that are in base contact with the bearer of Mork's Spirit Totem do not work and will count as mundane versions of the same type.]
 
-Forest Goblins only. The unit carrying this standard gain the Poisoned Attacks special rule.
+#magic-standard("THE BAD MOON BANNER", 40, only: "Night Goblins")[The model carrying this standard and any unit they join gains the Stubborn special rule, and enemies suffer \-1 To Hit with missile weapons against them. In addition, any enemy model that charges into base contact with the bearer or their unit must take a Dangerous Terrain test.]
 
-#namecost("TOTEM OF THE SPIDER GOD", "20 points")
+#magic-standard("ROWDY GROTT'S BIG RED RAGGEDY BANNER", 35, only: "Common Goblins")[All Goblins within 12" of this standard have the Cold-blooded special rule.]
 
-Forest Goblins only. The unit carrying this standard gains the Multiple Wounds (2) special rule (including mounts).
+#magic-standard("DA ANGRY LADZ FLAG", 25)[The unit carrying this standard gains the Frenzy special rule.]
 
-#namecost("THE EVIL SUN BANNER", "15 points")
+#magic-standard("GORK'S WAAAGH! BANNER", 25, only: "Orcs")[The unit carrying this standard gains D6" to its charge distance. This does not affect the unit's maximum charge range for the purpose of determining mandatory charge declarations. If the charge is failed, the unit will move forward its normal failed charge distance.]
 
-The unit carrying this standard may re-roll any failed Animosity tests.
+#magic-standard("SPIDER BANNER", 25, only: "Forest Goblins")[The unit carrying this standard gain the Poisoned Attacks special rule.]
 
-#namecost("DA BANNER OF DA NOMADZ", "10 points")
+#magic-standard("TOTEM OF THE SPIDER GOD", 20, only: "Forest Goblins")[The unit carrying this standard gains the Multiple Wounds (2) special rule (including mounts).]
 
-Goblin Wolf Riders or Snarlfang Riders only. The unit carrying this standard may re-roll 1's for their charge, flee or pursuit rolls.
+#magic-standard("THE EVIL SUN BANNER", 15)[The unit carrying this standard may re-roll any failed Animosity tests.]
 
-#namecost("THE BASHIN' FLAG OF BORK", "10 points")
+#magic-standard("DA BANNER OF DA NOMADZ", 10, only: "Goblin Wolf Riders or Snarlfang Riders")[The unit carrying this standard may re-roll 1's for their charge, flee or pursuit rolls.]
 
-The unit carrying this standard ignores their first failed Animosity roll of the game – it passes the test instead.
+#magic-standard("THE BASHIN' FLAG OF BORK", 10)[The unit carrying this standard ignores their first failed Animosity roll of the game – it passes the test instead.]
 
-#runin[GUFF]'#runin[S WINDY BANNER 10 points] The unit carrying this standard may re-roll failed Panic tests.
+#magic-standard("GUFF'S WINDY BANNER", 10)[The unit carrying this standard may re-roll failed Panic tests.]
 
-#namecost("NOGG'S BANNER OF BUTCHERY", "10 points")
+#magic-standard("NOGG'S BANNER OF BUTCHERY", 10, one-use: true)[This standard may be used at the start of any close combat phase. All models in the unit (except mounts) gain +1 Attack for the remainder of the close combat phase.]
 
-One use only. This standard may be used at the start of any close combat phase. All models in the unit (except mounts) gain +1 Attack for the remainder of the close combat phase.
-
-#namecost("BANNER OF THE WILDZ", "5 points")
-
-The unit carrying this standard may re-roll failed Dangerous Terrain tests.
+#magic-standard("BANNER OF THE WILDZ", 5)[The unit carrying this standard may re-roll failed Dangerous Terrain tests.]
+]
 
 = CHARACTERS
 

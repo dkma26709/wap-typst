@@ -195,237 +195,131 @@ _Mankara's Incantation of Urgency_ is a *conveyance* spell with a range of 12". 
 Remains in play. _Sakhmet's Incantation of the Skullstorm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit. Any unit that suffers one or more casualties must take an immediate Panic test.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Tomb Kings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Tomb Kings. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("DESTROYER OF ETERNITIES", 60, only: "Tomb King on foot", type: "Great weapon")[Attacks made with the Destroyer of Eternities have the Heroic Killing Blow special rule. In addition, all enemy models in base contact with the wielder suffer a single automatic hit (with Heroic Killing Blow) after resolving the model's normal attacks. In a challenge, only the models engaged in the challenge count as being in base contact with the Tomb King.]
 
-#entry("MAGIC WEAPONS")
-#namecost("DESTROYER OF ETERNITIES", "60 points")
+#magic-weapon("SPEAR OF ANTARHAK", 50, type: "Spear/light lance")[For every unsaved Wound inflicted by the Spear of Antarhak, the wielder immediately regains a single Wound lost earlier in the battle. If the bearer is already at their starting number of Wounds and inflicts another unsaved Wound with this weapon, they gain the Regeneration (4+) special rule until the end of the next player turn.]
 
-Tomb King on foot only. Great weapon. Attacks made with the Destroyer of Eternities have the Heroic Killing Blow special rule. In addition, all enemy models in base contact with the wielder suffer a single automatic hit (with Heroic Killing Blow) after resolving the model's normal attacks. In a challenge, only the models engaged in the challenge count as being in base contact with the Tomb King.
+#magic-weapon("CROOK AND FLAIL OF RADIANCE", 45, type: "Two hand weapons")[These weapons give the wielder the Always Strikes First special rule and a +1 Combat Resolution bonus.]
 
-#namecost("SPEAR OF ANTARHAK", "50 points")
+#magic-weapon("PHAKTH'S BLADES OF JUSTICE", 35, only: "Infantry", type: "Two hand weapons")[The wielder of these weapons gain +1 Attack for each complete rank any one enemy unit in base contact with them has.]
 
-Spear/light lance. For every unsaved Wound inflicted by the Spear of Antarhak, the wielder immediately regains a single Wound lost earlier in the battle. If the bearer is already at their starting number of Wounds and inflicts another unsaved Wound with this weapon, they gain the Regeneration (4+) special rule until the end of the next player turn.
+#magic-weapon("DAGGER OF BOUND SOULS", 30)[No Magical Ward saves can be taken against Wounds caused by this item. In addition, any model that suffers an unsaved Wound from it must pass a Toughness test or suffer an additional Wound with no saves allowed. They must keep taking Toughness tests until they pass or are removed as a casualty.]
 
-#namecost("CROOK AND FLAIL OF RADIANCE", "45 points")
+#magic-weapon("BLADE OF MOURNING", 25)[If a unit suffers at least one unsaved Wound from the Blade of Mourning and loses the combat, any negative modifiers to the unit's Leadership for the subsequent Break test are doubled.]
 
-Two hand weapons. These weapons give the wielder the Always Strikes First special rule and a +1 Combat Resolution bonus.
+#magic-weapon("BLADE OF SETEP", 25)[The Blade of Setep gives the wielder the Ignores Armour Saves special rule. If the enemy model wears magical armour, the first Hit against this model is ignored, but the magical armour is destroyed for the remainder of the battle.]
 
-#runin[PHAKTH]'#runin[S BLADES OF JUSTICE 35 points] Infantry only. Two hand weapons. The wielder of these weapons gain +1 Attack for each complete rank any one enemy unit in base contact with them has.
+#magic-weapon("BLADES OF HONOURABLE DEMISE", 20, type: "Two hand weapons")[The wielder of these weapons gain +1 To Hit in close combat.]
 
-#namecost("DAGGER OF BOUND SOULS", "30 points")
+#magic-weapon("THE CONQUEROR'S BLADE", 20)[The wielder of this weapon gains the Killing Blow special rule. When fighting in a challenge, they may re- roll failed To Wound rolls.]
 
-No Magical Ward saves can be taken against Wounds caused by this item. In addition, any model that suffers an unsaved Wound from it must pass a Toughness test or suffer an additional Wound with no saves allowed. They must keep taking Toughness tests until they pass or are removed as a casualty.
+#magic-weapon("STAFF OF AEONS", 10, only: "Wizard")[If the wielder of this item successfully Hits an enemy unit in close combat, that unit suffers \-1 to their armour saves for the duration of the game. This is not cumulative.]
 
-#namecost("BLADE OF MOURNING", "25 points")
+#magic-weapon("SERPENT STAFF", 5, only: "Wizards")[The Serpent Staff gives the wielder the Poisoned Attacks special rule. In addition, they may re- roll failed rolls To Wound.]
+]
 
-If a unit suffers at least one unsaved Wound from the Blade of Mourning and loses the combat, any negative modifiers to the unit's Leadership for the subsequent Break test are doubled.
+#magic-item-section("armour")[
+#magic-armour("SCORPION ARMOUR", 40, type: "Light armour")[The character can never suffer more than one wound due to combat resolution. If the wearer is with a unit, up to half the wounds suffered due to combat resolution can be allocated against the character, which are then ignored save for the first one.]
 
-#namecost("BLADE OF SETEP", "25 points")
+#magic-armour("ARMOUR OF ETERNITY", 35, only: "Infantry or Cavalry", type: "Light armour")[Enemy models must re-roll successful rolls To Wound against the wearer of this armour.]
 
-The Blade of Setep gives the wielder the Ignores Armour Saves special rule. If the enemy model wears magical armour, the first Hit against this model is ignored, but the magical armour is destroyed for the remainder of the battle.
+#magic-armour("VAMBRACES OF THE SUN", 30)[This item gives the bearer a 6+ armour. In addition, all enemy models that attempt to strike the bearer in close combat suffer \-1 To Hit.]
 
-#namecost("BLADES OF HONOURABLE DEMISE", "20 points")
+#magic-armour("ARMOUR OF THE AGES", 25, type: "Light armour")[When the wearer of this armour is reduced to their last Wound, they gain a Magical Ward (3+). This has no effect if they suffer their last Wound as a result of an attack that causes Multiple Wounds.]
 
-Two hand weapons. The wielder of these weapons gain +1 To Hit in close combat.
+#magic-armour("GAUNTLET OF HRAKLONESH", 25)[This item gives the bearer a 6+ armour save. In addition, they gain +1 Strength and Toughness. However, at the start of each of your turns, they must pass a Toughness test or suffer one Wound with no saves allowed.]
 
-#namecost("THE CONQUEROR'S BLADE", "20 points")
+#magic-armour("SHIELD OF PTRA", 25, type: "Shield")[The bearer of this shield gains the Parry (6+) special rule. If they make a successful Parry save, all models in base contact with them suffer \-1 To Hit for the remainder of the turn, or the next turn if they have already attacked this turn.]
 
-The wielder of this weapon gains the Killing Blow special rule. When fighting in a challenge, they may re- roll failed To Wound rolls.
+#magic-armour("WARDING SPLINT", 20, only: "Wizard", type: "Light armour")[This armour gives the wearer a Magical Ward (5+) in close combat.]
 
-#namecost("STAFF OF AEONS", "10 points")
+#magic-armour("ROYAL MANTLE", 15, common: true)[This item gives the bearer a 6+ armour save and the Inspiring Presence (6) special rule.]
+]
 
-Wizard only. If the wielder of this item successfully Hits an enemy unit in close combat, that unit suffers \-1 to their armour saves for the duration of the game. This is not cumulative.
+#magic-item-section("talisman")[
+#talisman("GOLDEN ANKHRA", 50)[The Ankhra gives the bearer a Magical Ward (4+). In addition, they may re-roll 1's when taking Magical Ward saves.]
 
-#namecost("SERPENT STAFF", "5 points")
+#talisman("AMULET OF PHA-STAH", 30)[All enemy Talismans, Arcane Items and Enchanted Items have no effect while they remain in base contact with the wearer of the Amulet of Pha-Stah.]
 
-Wizards only. The Serpent Staff gives the wielder the Poisoned Attacks special rule. In addition, they may re- roll failed rolls To Wound.
+#talisman("GOLDEN EYE OF RAH-NUTT", 25, only: "Model on Chariot")[The Golden Eye gives the bearer a Magical Ward (3+) against missile attacks.]
 
-#entry("MAGIC ARMOUR")
-#namecost("SCORPION ARMOUR", "40 points")
+#talisman("COLLAR OF SHAPESH", 25)[For each unsaved Wound the bearer suffers (before calculating any Multiple Wounds), roll a D6: on a 4+ the Wound is transferred to any friendly model in base contact of the bearers choosing, with no saves of any kind allowed. These Wounds still count towards combat resolution as normal. If there are no friendly models in base contact, then this rule has no effect.]
 
-Light armour. The character can never suffer more than one wound due to combat resolution. If the wearer is with a unit, up to half the wounds suffered due to combat resolution can be allocated against the character, which are then ignored save for the first one.
+#talisman("ORB OF PTRA", 25)[All missile attacks targeting the bearer of this item or any unit they are with suffer \-1 To Hit.]
 
-#namecost("ARMOUR OF ETERNITY", "35 points")
+#talisman("BLUE KHEPRA", 20)[The Blue Khepra makes the bearer (but not any unit they are with) immune to the effects of all enemy spells.]
 
-Infantry or Cavalry only. Light armour. Enemy models must re-roll successful rolls To Wound against the wearer of this armour.
+#talisman("BROOCH OF THE GREAT DESERT", 15, one-use: true)[This item can be used against any enemy spell cast against the bearer or their unit, before attempting to dispel. When used, the bearer and any unit they are with gain the Magic Resistance (5) special rule for the remainder of the turn.]
 
-#namecost("VAMBRACES OF THE SUN", "30 points")
+#talisman("RELIC OF THE DESERT SUN", 15, common: true)[The bearer of the Relic of the Desert Sun gains a Magical Ward (6+) and Immunity (Flaming Attacks).]
+]
 
-This item gives the bearer a 6+ armour. In addition, all enemy models that attempt to strike the bearer in close combat suffer \-1 To Hit.
+#magic-item-section("arcane")[
+#arcane-item("ENKHIL'S KANOPI", 35, type: "Relic", bound: (level: 1, cast: "5+"))[This is a special *aura* spell with a range of 24". Roll a D6 for every 'remains in play' and active spell that lasts more than one turn within range: on a 2+ that spell is automatically dispelled. For each spell that is ended in this way, add D3 power dice to your power pool.]
 
-#namecost("ARMOUR OF THE AGES", "25 points")
+#arcane-item("PHAZERAKT'S KANOPI", 35, type: "Relic", bound: (level: 3, cast: "12+"))[This item contains an *augment/summoning* spell with a range of 12". You can choose to either summon 2D6+3 Skeleton Warriors to an existing unit or create a new unit. If creating a new unit, the models are only equipped with their default equipment.]
 
-Light armour. When the wearer of this armour is reduced to their last Wound, they gain a Magical Ward (3+). This has no effect if they suffer their last Wound as a result of an attack that causes Multiple Wounds.
+#arcane-item("STAFF OF OSIRIS", 35, type: "Staff", bound: (level: 3, cast: "9+"))[This item contains a *magic missile* with a range of 24". It inflicts a single Strength 6 hit with the Armour Piercing (1) and Multiple Wounds (D3) special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.]
 
-#namecost("GAUNTLET OF HRAKLONESH", "25 points")
+#arcane-item("STAFF OF RAVENING", 35, type: "Staff", bound: (level: 1, cast: "5+"))[The Staff of Ravening contains a *magic missile* spell with a range of 18" that causes 3D6 Strength 2 hits.]
 
-This item gives the bearer a 6+ armour save. In addition, they gain +1 Strength and Toughness. However, at the start of each of your turns, they must pass a Toughness test or suffer one Wound with no saves allowed.
+#arcane-item("NEFERRA'S SCROLLS OF MIGHTY INCANTATIONS", 30, type: "Charm", one-use: true)[A Wizard can declare that he is using Neferra's Scrolls of Mighty Incantations immediately before casting a spell. If he does so, the Wizard must add a number of extra bonus dice, equal to his Wizard level, to the power dice he is going to roll (you still need to roll at least one dice from the power pool). The bonus dice do not count as power dice. However, a roll of any double (except 1's) when initially casting a spell using them will counts as rolling a 6 for the purpose of Ultimate Power.]
 
-#namecost("SHIELD OF PTRA", "25 points")
+#arcane-item("STAFF OF AWAKENING", 25, type: "Staff")[The wielder of the Staff of Awakening may re- roll the amount of Wounds recovered from The Restless Dead when casting spells.]
 
-Shield. The bearer of this shield gains the Parry (6+) special rule. If they make a successful Parry save, all models in base contact with them suffer \-1 To Hit for the remainder of the turn, or the next turn if they have already attacked this turn.
+#arcane-item("CURSE-WEAVER WAND", 20, type: "Staff")[The Curse-weaver Wand gives the bearer a +2 casting bonus when casting *hex* spells.]
 
-#namecost("WARDING SPLINT", "20 points")
+#arcane-item("STAFF OF MASTERY", 20, type: "Staff")[The Staff of Mastery gives the bearer a +1 casting bonus when using the Lore of Light.]
 
-Wizard only. Light armour. This armour gives the wearer a Magical Ward (5+) in close combat.
+#arcane-item("HIERATIC JAR", 15, type: "Charm", one-use: true, common: true)[The Hieratic Jar may be used at the start of any of your Magic phases. The bearer immediately gains +D3 Power dice. Only they may use these extra Power dice.]
 
-#namecost("ROYAL MANTLE*", "15 points")
+#arcane-item("TABLET OF TAHOTH", 10, type: "Charm", one-use: true, common: true)[This item may be used after rolling the Power dice to cast a spell. When used, add a +D3 casting bonus to the roll.]
+]
 
-This item gives the bearer a 6+ armour save and the Inspiring Presence (6) special rule.
+#magic-item-section("enchanted")[
+#enchanted-item("GOLDEN DEATH MASK OF KHARNUTT", 40)[The model wearing this mask causes Terror. In addition, enemy units within 6" of the wearer cannot benefit from the Inspiring Presence or Hold Your Ground special rules.]
 
-#entry("TALISMANS")
-#namecost("GOLDEN ANKHRA", "50 points")
+#enchanted-item("CLOAK OF THE DUNES", 35, only: "Infantry")[The wearer of the Cloak of Dunes has the Fly (10) special rule. In addition, if the bearer moves over an unengaged enemy unit in the Remaining Moves sub-phase, that enemy unit immediately suffers 2D6 Strength 2 hits, resolved as missile attacks against the rear. The bearer can move over several enemy units in the same turn if you wish, causing damage to every unit. The same target unit cannot be affected more than once in the same turn.]
 
-The Ankhra gives the bearer a Magical Ward (4+). In addition, they may re-roll 1's when taking Magical Ward saves.
+#enchanted-item("AMULET OF THE SERPENT", 30)[The bearer of the Amulet of the Serpent and any unit they join gain the Poisoned Attacks special rule in close combat.]
 
-#namecost("AMULET OF PHA-STAH", "30 points")
+#enchanted-item("SCARAB BROOCH", 25)[All models using the Entombed Beneath the Sands special rule may re-roll failed rolls to enter the battlefield and can re-roll the scatter and/or artillery dice when emerging if their marker is within 12" of the bearer of this item.]
 
-All enemy Talismans, Arcane Items and Enchanted Items have no effect while they remain in base contact with the wearer of the Amulet of Pha-Stah.
+#enchanted-item("CROWN OF KINGS", 20, only: "Tomb King")[All friendly units within 6" may make March moves despite being Undead.]
 
-#namecost("GOLDEN EYE OF RAH-NUTT", "25 points")
+#enchanted-item("CHARIOT OF FIRE", 20, only: "Model on Chariot")[The model's Chariot causes 2D6 Impacts Hits with the Flaming Attacks and Magical Attacks special rules.]
 
-Model on Chariot only. The Golden Eye gives the bearer a Magical Ward (3+) against missile attacks.
+#enchanted-item("ICON OF RULERSHIP", 15, only: "Model on Chariot", common: true)[The Icon of Rulership gives the bearer a +1 Combat Resolution bonus.]
 
-#namecost("COLLAR OF SHAPESH", "25 points")
+#enchanted-item("KARITAMEN'S DEATH MASK", 10)[The bearer of this item gains +1 Leadership and the Disciplined special rule.]
 
-For each unsaved Wound the bearer suffers (before calculating any Multiple Wounds), roll a D6: on a 4+ the Wound is transferred to any friendly model in base contact of the bearers choosing, with no saves of any kind allowed. These Wounds still count towards combat resolution as normal. If there are no friendly models in base contact, then this rule has no effect.
+#enchanted-item("ICON OF THE SACRED EYE", 30)[The unit carrying the Icon of the Sacred Eye (including any mounts) may re-roll failed rolls To Hit in the first round of close combat.]
 
-#namecost("ORB OF PTRA", "25 points")
+#enchanted-item("ROYAL STANDARD OF SETTRA", 30)[The unit carrying this standard gains the Hatred (Characters) and Fear special rules.]
 
-All missile attacks targeting the bearer of this item or any unit they are with suffer \-1 To Hit.
+#enchanted-item("TAPESTRY OF CONQUERED LANDS", 30)[The unit carrying this standard gains a +D3 Combat Resolution bonus (roll each time it is used).]
 
-#namecost("BLUE KHEPRA", "20 points")
+#enchanted-item("BANNER OF THE HIDDEN DEAD", 25)[The unit carrying this standard gains the Entombed Beneath the Sands special rule.]
 
-The Blue Khepra makes the bearer (but not any unit they are with) immune to the effects of all enemy spells.
+#enchanted-item("STANDARD OF THE CURSING WORD", 25)[All enemy units in base contact with the unit carrying the Standard of the Cursing Word must pass a Leadership test or suffer D6 Wounds which Ignores Armour Saves at the start of each round of close combat.]
 
-#namecost("BROOCH OF THE GREAT DESERT", "15 points")
+#enchanted-item("STANDARD OF THE UNDYING LEGION", 25, bound: (level: 1, cast: "6+"))[This banner contains an *augment* spell that targets the bearer's unit. If successfully cast, the bearer's unit immediately recovers a number of Wounds' worth of models, as described in the Restless Dead.]
+]
 
-One use only. This item can be used against any enemy spell cast against the bearer or their unit, before attempting to dispel. When used, the bearer and any unit they are with gain the Magic Resistance (5) special rule for the remainder of the turn.
+#magic-item-section("standard")[
+#magic-standard("ICON OF RAKAPH", 50, only: "Tomb Guard or Tomb Herald on foot")[The unit carrying the Icon of Rakaph may make a Turn at the start of their Movement phase instead of the Remaining Moves sub-phase. The unit may then move as normal (including declaring charges).]
 
-#namecost("RELIC OF THE DESERT SUN*", "15 points")
+#magic-standard("SIGIL OF CENTURIES", 50)[All enemy units within 6" of this standard are subject to the Always Strikes Last special rule.]
 
-The bearer of the Relic of the Desert Sun gains a Magical Ward (6+) and Immunity (Flaming Attacks).
+#magic-standard("STANDARD OF THE SANDS", 50, one-use: true)[The Standard of the Sands may be activated at the beginning of any enemy Movement phase. For the remainder of the turn, no models within 24" of the banner may March, and all units attempting to rally suffer \-1 to their Leadership.]
 
-#entry("ARCANE ITEMS")
-#namecost("ENKHIL'S KANOPI", "35 points")
+#magic-standard("BANNER OF THE DESERT WINDS", 40, only: "Infantry")[The unit carrying this standard gains the Swiftstride and Vanguard special rules.]
 
-Relic. Bound spell (Level 1, cast on 5+). This is a special *aura* spell with a range of 24". Roll a D6 for every 'remains in play' and active spell that lasts more than one turn within range: on a 2+ that spell is automatically dispelled. For each spell that is ended in this way, add D3 power dice to your power pool.
-
-#namecost("PHAZERAKT'S KANOPI", "35 points")
-
-Relic. Bound Spell (Level 3, cast on 12+). This item contains an *augment/summoning* spell with a range of 12". You can choose to either summon 2D6+3 Skeleton Warriors to an existing unit or create a new unit. If creating a new unit, the models are only equipped with their default equipment.
-
-#namecost("STAFF OF OSIRIS", "35 points")
-
-Staff. Bound Spell (Level 3, cast on 9+). This item contains a *magic missile* with a range of 24". It inflicts a single Strength 6 hit with the Armour Piercing (1) and Multiple Wounds (D3) special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.
-
-#namecost("STAFF OF RAVENING", "35 points")
-
-Staff. Bound Spell (Level 1, cast on 5+). The Staff of Ravening contains a *magic missile* spell with a range of 18" that causes 3D6 Strength 2 hits.
-
-#namecost("NEFERRA'S SCROLLS OF MIGHTY INCANTATIONS", "30 points")
-
-Charm. One use only. A Wizard can declare that he is using Neferra's Scrolls of Mighty Incantations immediately before casting a spell. If he does so, the Wizard must add a number of extra bonus dice, equal to his Wizard level, to the power dice he is going to roll (you still need to roll at least one dice from the power pool). The bonus dice do not count as power dice. However, a roll of any double (except 1's) when initially casting a spell using them will counts as rolling a 6 for the purpose of Ultimate Power.
-
-#namecost("STAFF OF AWAKENING", "25 points")
-
-Staff. The wielder of the Staff of Awakening may re- roll the amount of Wounds recovered from The Restless Dead when casting spells.
-
-#namecost("CURSE-WEAVER WAND", "20 points")
-
-Staff. The Curse-weaver Wand gives the bearer a +2 casting bonus when casting *hex* spells.
-
-#namecost("STAFF OF MASTERY", "20 points")
-
-Staff. The Staff of Mastery gives the bearer a +1 casting bonus when using the Lore of Light.
-
-#namecost("HIERATIC JAR*", "15 points")
-
-Charm. One use only. The Hieratic Jar may be used at the start of any of your Magic phases. The bearer immediately gains +D3 Power dice. Only they may use these extra Power dice.
-
-#namecost("TABLET OF TAHOTH*", "10 points")
-
-Charm. One use only. This item may be used after rolling the Power dice to cast a spell. When used, add a +D3 casting bonus to the roll.
-
-#entry("ENCHANTED ITEMS")
-#namecost("GOLDEN DEATH MASK OF KHARNUTT", "40 points")
-
-The model wearing this mask causes Terror. In addition, enemy units within 6" of the wearer cannot benefit from the Inspiring Presence or Hold Your Ground special rules.
-
-#namecost("CLOAK OF THE DUNES", "35 points")
-
-Infantry only. The wearer of the Cloak of Dunes has the Fly (10) special rule. In addition, if the bearer moves over an unengaged enemy unit in the Remaining Moves sub-phase, that enemy unit immediately suffers 2D6 Strength 2 hits, resolved as missile attacks against the rear. The bearer can move over several enemy units in the same turn if you wish, causing damage to every unit. The same target unit cannot be affected more than once in the same turn.
-
-#namecost("AMULET OF THE SERPENT", "30 points")
-
-The bearer of the Amulet of the Serpent and any unit they join gain the Poisoned Attacks special rule in close combat.
-
-#namecost("SCARAB BROOCH", "25 points")
-
-All models using the Entombed Beneath the Sands special rule may re-roll failed rolls to enter the battlefield and can re-roll the scatter and/or artillery dice when emerging if their marker is within 12" of the bearer of this item.
-
-#namecost("CROWN OF KINGS", "20 points")
-
-Tomb King only. All friendly units within 6" may make March moves despite being Undead.
-
-#namecost("CHARIOT OF FIRE", "20 points")
-
-Model on Chariot only. The model's Chariot causes 2D6 Impacts Hits with the Flaming Attacks and Magical Attacks special rules.
-
-#namecost("ICON OF RULERSHIP*", "15 points")
-
-Model on Chariot only. The Icon of Rulership gives the bearer a +1 Combat Resolution bonus.
-
-#namecost("KARITAMEN'S DEATH MASK", "10 points")
-
-The bearer of this item gains +1 Leadership and the Disciplined special rule.
-
-#namecost("ICON OF THE SACRED EYE", "30 points")
-
-The unit carrying the Icon of the Sacred Eye (including any mounts) may re-roll failed rolls To Hit in the first round of close combat.
-
-#namecost("ROYAL STANDARD OF SETTRA", "30 points")
-
-The unit carrying this standard gains the Hatred (Characters) and Fear special rules.
-
-#namecost("TAPESTRY OF CONQUERED LANDS", "30 points")
-
-The unit carrying this standard gains a +D3 Combat Resolution bonus (roll each time it is used).
-
-#namecost("BANNER OF THE HIDDEN DEAD", "25 points")
-
-The unit carrying this standard gains the Entombed Beneath the Sands special rule.
-
-#namecost("STANDARD OF THE CURSING WORD", "25 points")
-
-All enemy units in base contact with the unit carrying the Standard of the Cursing Word must pass a Leadership test or suffer D6 Wounds which Ignores Armour Saves at the start of each round of close combat.
-
-#namecost("STANDARD OF THE UNDYING LEGION", "25 points")
-
-Bound Spell (Level 1, cast on 6+). This banner contains an *augment* spell that targets the bearer's unit. If successfully cast, the bearer's unit immediately recovers a number of Wounds' worth of models, as described in the Restless Dead.
-
-#entry("MAGIC STANDARDS")
-#namecost("ICON OF RAKAPH", "50 points")
-
-Tomb Guard or Tomb Herald on foot only. The unit carrying the Icon of Rakaph may make a Turn at the start of their Movement phase instead of the Remaining Moves sub-phase. The unit may then move as normal (including declaring charges).
-
-#namecost("SIGIL OF CENTURIES", "50 points")
-
-All enemy units within 6" of this standard are subject to the Always Strikes Last special rule.
-
-#namecost("STANDARD OF THE SANDS", "50 points")
-
-One use only. The Standard of the Sands may be activated at the beginning of any enemy Movement phase. For the remainder of the turn, no models within 24" of the banner may March, and all units attempting to rally suffer \-1 to their Leadership.
-
-#namecost("BANNER OF THE DESERT WINDS", "40 points")
-
-Infantry only. The unit carrying this standard gains the Swiftstride and Vanguard special rules.
-
-#namecost("MIRAGE STANDARD", "40 points")
-
-The Mirage Standard forces all Hits from missile attacks targeting the unit carrying it to be re-rolled.
+#magic-standard("MIRAGE STANDARD", 40)[The Mirage Standard forces all Hits from missile attacks targeting the unit carrying it to be re-rolled.]
+]
 
 = CHARACTERS
 

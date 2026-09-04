@@ -403,292 +403,168 @@ Pikemen, Sellswords and Stradiots only. The model gains +1 Weapon Skill. This Qu
 Model with light or medium armour only. The model counts its armour save as being 1 point higher than it actually is. This Quirk may be taken once per full 1000 points in your army.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dogs of War. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dogs of War. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("HURCIO'S CLUB", 60)[Requires two hands. The wielder of this club adds +1 to his Strength and Attacks at the start of each close combat phase (up to a maximum of +3), for as long as he remains in combat.]
 
-#entry("MAGIC WEAPONS")
-#namecost("HURCIO'S CLUB", "60 points")
-
-Requires two hands. The wielder of this club adds +1 to his Strength and Attacks at the start of each close combat phase (up to a maximum of +3), for as long as he remains in combat.
-
-#namecost("CATHAYAN DRAGONSWORD", "45 points")
-
-Oriental longsword. The Dragonsword gives the wielder +1 Weapon Skill, +1 Initiative as well as the Killing Blow, Armour Piercing (1) and Flaming Attacks special rules.
+#magic-weapon("CATHAYAN DRAGONSWORD", 45, type: "Oriental longsword")[The Dragonsword gives the wielder +1 Weapon Skill, +1 Initiative as well as the Killing Blow, Armour Piercing (1) and Flaming Attacks special rules.
 
 #runin[DOMINGO]'#runin[S ARBALEST 45 points] Mercenary General or Mercenary Captain only. This is a bolt thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Armour Piercing (1), Multiple Wounds (D3), Ponderous"))
-#namecost("DAWNSTAR SWORD", "35 points")
+]
 
-The wielder of this weapon doubles their Attacks characteristic.
+#magic-weapon("DAWNSTAR SWORD", 35)[The wielder of this weapon doubles their Attacks characteristic.]
 
-#namecost("GRUDGEBRINGER SWORD", "30 points")
+#magic-weapon("GRUDGEBRINGER SWORD", 30)[All attacks made with the Grudgebringer Sword gain +1 To Hit and have the Flaming Attacks special rule. In addition, it contains the _Fireball_ spell from the Lore of Fire as a Bound Spell.]
 
-All attacks made with the Grudgebringer Sword gain +1 To Hit and have the Flaming Attacks special rule. In addition, it contains the _Fireball_ spell from the Lore of Fire as a Bound Spell.
+#magic-weapon("PIKE OF REMAS", 30, only: "Mercenary Captain on foot", type: "Pike")[This weapon inflicts D3 Strength 5 Impact Hits when the wielder is charged to their front. In addition, it has the Heroic Killing Blow special rule against Cavalry and Monstrous Cavalry. This item can be taken despite Mercenary Captains not normally being allowed to take pikes.]
 
-#namecost("PIKE OF REMAS", "30 points")
+#magic-weapon("SWORD OF ANTI-HEROES", 30)[The wielder gains +1 Strength and +1 Attack for every enemy character in base contact with them or their unit. These bonuses are calculated at the start of each round of close combat and last until its end.]
 
-Mercenary Captain on foot only. Pike. This weapon inflicts D3 Strength 5 Impact Hits when the wielder is charged to their front. In addition, it has the Heroic Killing Blow special rule against Cavalry and Monstrous Cavalry. This item can be taken despite Mercenary Captains not normally being allowed to take pikes.
+#magic-weapon("SILVERSTONE AXE", 30, type: "Great weapon")[The wielder always treats their Strength as at least 1 point higher than their opponent's Toughness and has the Multiple Wounds (D3) special rule. In addition, any Wizard that suffers one or more Wounds from this weapon must immediately roll on the Miscast table.]
 
-#namecost("SWORD OF ANTI-HEROES", "30 points")
+#magic-weapon("CACKLING BLADE", 25)[This weapon gives the wielder +D6 Attacks at the start of each round of close combat. However, if they roll a natural 6 when determining the number of Attacks they get, they suffer a Hit at their own Strength value as well.]
 
-The wielder gains +1 Strength and +1 Attack for every enemy character in base contact with them or their unit. These bonuses are calculated at the start of each round of close combat and last until its end.
+#magic-weapon("COLD IRON BLADE", 20)[The Cold Iron Blade gives +1 Strength to the wielder. Against models with the Ethereal special rule, it automatically Wounds.]
 
-#namecost("SILVERSTONE AXE", "30 points")
+#magic-weapon("BLADE OF PRESCIENT PERFECTION", 20)[All attacks with this weapon automatically Hit.]
 
-Great weapon. The wielder always treats their Strength as at least 1 point higher than their opponent's Toughness and has the Multiple Wounds (D3) special rule. In addition, any Wizard that suffers one or more Wounds from this weapon must immediately roll on the Miscast table.
-
-#namecost("CACKLING BLADE", "25 points")
-
-This weapon gives the wielder +D6 Attacks at the start of each round of close combat. However, if they roll a natural 6 when determining the number of Attacks they get, they suffer a Hit at their own Strength value as well.
-
-#namecost("COLD IRON BLADE", "20 points")
-
-The Cold Iron Blade gives +1 Strength to the wielder. Against models with the Ethereal special rule, it automatically Wounds.
-
-#namecost("BLADE OF PRESCIENT PERFECTION", "20 points")
-
-All attacks with this weapon automatically Hit.
-
-#namecost("SWORD OF SORROW", "20 points")
-
-This weapon has the following profile:
+#magic-weapon("SWORD OF SORROW", 20)[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("30\"", "5", "Multiple Wounds (2)"))
 
 No saves are allowed against Wounds caused by this weapon.
-
-#namecost("METEOR HAMMER", "15 points")
-
-Great weapon. This weapon automatically Wounds on the roll of a 2+.
-
-#namecost("BLADE OF LAST RESORT", "10 points")
-
-The wielder must always accept challenges if possible. While they are fighting in a challenge, they gain +D3 to their Weapon Skill, Strength, Toughness, Initiative and Attacks (roll once and apply the result to all characteristics for the duration of the challenge). If the wielder slays their opponent in the challenge, they suffer D3 Wounds themselves with no saves allowed.
-
-#namecost("TORMENTOR SWORD", "5 points")
-
-A monster or character that suffers an unsaved wound from the Tormentor sword has the Stupidity special rule for the rest of the game.
-
-#namecost("WARRIOR BANE", "5 points")
-
-A monster or character that suffers unsaved wounds from Warrior Bane permanently loses one Attack for each unsaved wound (to a minimum of 1 Attack).
-
-#entry("MAGIC ARMOUR")
-#namecost("GIANTKIN HELM", "50 points")
-
-Mercenary General or Mercenary Captain on foot only. One use only. This item gives the wearer a 6+ armour save. In addition, it can be used at the start of any of your turns. When used, the model turns into a Giant (see Rare Units). If they are in a unit, they must be placed 1" to the side, facing the same direction. While transformed, the model cannot cast spells, nor use any equipment or other magic items. If you do not have a suitable model to place, this item has no effect. At the start of each subsequent turn, roll a D6. On a 1, the model is turned back into their normal profile. Any Wounds suffered while in Giant form are retaining, even if this kills the wearer.
-
-#namecost("HELM OF MYRMIDIA", "45 points")
-
-This item gives the wearer a 6+ armour save. Enemies attacking the wearer in Close Combat suffer \-1 to Hit and lose 1 Attack, down to a minimum of 1. In addition, the wearer gains the Hatred (Undead) special rule.
-
-#runin[MAMBRINIO]'#runin[S GOLDEN ARMOUR 45 points] Heavy armour. The wearer gains +2 to their armour save and the Immunity (Multiple Wounds) special rule. However, they suffer \-2 Initiative and a \-1 penalty to Dangerous Terrain tests.
-
-#namecost("HELM OF DISCORD", "20 points")
-
-This item gives the wearer a 6+ armour save. In addition, at the start of each Close Combat phase, choose an enemy character in base contact with the bearer or his unit. That character must immediately take a Leadership test. If the test is failed, the victim cannot make attacks and is hit automatically in this Close Combat round.
-
-#namecost("SHIELD OF PTOLOS", "15 points")
-
-Shield. The bearer has a 2+ armour save against shooting attacks.
-
-#namecost("SHIELD OF STUBBORN REFUSAL", "15 points")
-
-Shield. The bearer is always Steadfast in the first round of combat. In addition, if they are with a unit that would otherwise flee as a result of a failed break test that the bearer would normally pass, the bearer will remain in combat while the rest of the unit flees.
-
-#namecost("HELM OF THE HEADLESS HORSEMAN", "10 points")
-
-This item gives the wearer a 6+ armour save. In addition, the wearer gains the Flaming Attacks and Killing Blow special rules. However, they must roll a D6 at the start of each of your turns. On the roll of a 1, the model suffers a Wound with no saves allowed.
-
-#namecost("LEVITATING SHIELD", "10 points")
-
-Model on foot only. Shield. The wielder may use this shield and a weapon that Requires Two Hands at the same time.
-
-#entry("TALISMANS")
-#namecost("GUARDIAN AMULET", "40 points")
-
-The bearer gains a Magical Ward (2+). Roll separately for every wound suffered. For every successful save you make, the Magical Ward will weaken for the rest of the game, so after one save it will be a 3+, after two saves a 4+ etc. until a minimum of a 6+ save.
-
-#namecost("WARDS OF BATTLE", "30 points")
-
-The bearer has a Magical Ward (4+) against close combat attacks.
-
-#namecost("DASHING CLOAK OF HEROIC RENOWN", "20 points")
-
-The bearer gains the Regeneration (5+) special rule.
-
-#namecost("ICON OF FORTITUDE", "20 points")
-
-The bearer of this item gains +1 Toughness.
-
-#runin[MASTER DUELLIST]'#runin[S MARK 20 points] Mercenary Captain only. The bearer gains the Dodge (6+) and Parry (6+) special rules.
-
-#namecost("HOURGLASS OF MORR", "10 points")
-
-At the beginning of the game, write down a number in secret. This is the turn number when the bearer of this item cannot be reduced below 1 Wound or removed as a casualty, unless they are caught when fleeing.
-
-#namecost("IRONCURSE ICON", "10 points")
-
-The bearer and any unit they are with gain a Magical Ward (6+) against artillery weapons.
-
-#namecost("IRONHIDE TALISMAN", "10 points")
-
-All missile attacks targeting the bearer of this item must re-roll 6's To Wound with missile attacks.
-
-#namecost("SHARD OF MORRSLIEB*", "5 points")
-
-The model gains the Immunity (Killing Blow/Poisoned Attacks/Lore of Death) special rule.
-
-#entry("ARCANE ITEMS")
-#columns(2)[
-#namecost("WINDCATCHER PRISM", "55 points")
-
-Relic. Bound Spell. This item contains the Signature Spells from all the eight Winds of Magic. Note that you may only attempt to cast one each Magic phase.
-
-#namecost("THE WHITE SISTRUM", "50 points")
-
-Relic. The bearer gains +1 Power Dice at the start of your Magic phase. In addition, all enemy units within 6" suffer \-1 to their Leadership.
-
-#namecost("THE CRUCIBLE OF HORRORS", "35 points")
-
-Relic. Bound Spell (Level 3, cast on 9+). This item contains a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a hit with a Strength value of 2D6 (roll once per cast) minus the target's Toughness and the Ignores Armour Saves special rule. However, every time this spell is successfully cast, the bearer must pass a Leadership test on their own unmodified Leadership or suffer a Wound with no saves allowed.
-
-#namecost("ROCKCHARMER'S FLUTE", "35 points")
-
-Relic. Bound Spell (Level 3, cast on 8+). This is special type of spell. Choose a hill within 18". Any unit on it suffers 2D6 Strength 4 Hits. The hill is then moved 2D6" in a direction of your choice, stopping within 1" of any impassable terrain.
-
-#namecost("SIVEJIR'S HEX SCROLL", "35 points")
-
-Charm. One use only. When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell's energy is transformed and redirected at the caster. The enemy wizard can resist the spell's effects by rolling equal to or under his wizard level on a D6. If failed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of their characteristics are reduced to 1 (except for his wounds, which are unaffected). Their controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to their normal form.
-
-#namecost("STAFF OF FICKLE FORTUNE", "35 points")
-
-Staff. At the beginning of each of your magic phases, roll a D6; on a roll of 1 the bearer suffers -D3 to his casting rolls (roll for each spell) for the remainder of the turn; on a roll of 2 nothing happens; on a 3+ however, the wizard gains +D3 to all his casting attempts (roll for each spell) for the remainder of the turn.
-
-#namecost("STAFF OF QUIETUDE", "35 points")
-
-Staff. Bound Spell (Level 2, cast on 7 +). This is a special *aura* spell with a range of 24". If successfully cast, all Remains in Play spells and spells that last more than one turn within range are immediately dispelled and cease to have any effect.
-
-#namecost("BOOK OF ASHUR", "30 points")
-
-Relic. The Wizard gains the Loremaster special rule. This has no effect on models that can choose spells from more than one Lore of Magic at the same time.
-
-#namecost("THE MYSTIC SHIELD OF BRAG", "25 points")
-
-Charm. One use only. The Mystic Shield of Brag may be used against any enemy spell that directly targets any friendly unit within dispel range. The enemy spell has no effect.
-
-#namecost("BECALMING ORB", "20 points")
-
-Relic. All enemy Wizards within 18" of the bearer of this item suffer a \-2 casting penalty.
-
-#namecost("MYSTIC MAZE", "20 points")
-
-Charm. One use only. The Mystic Maze may be used against any enemy spell that directly targets any friendly unit within dispel range. Roll 3D6 measured from the centre of the unit; this is the distance the spell scatters in a random direction. Should the spell end up on another unit, this unit will become the target of the spell; otherwise the spell has no effect.
-
-#namecost("TOME OF SPELLCRAFT", "20 points")
-
-Relic. This item allows the bearer to re-roll one failed casting attempt each Magic phase.
-
-#namecost("HYPNOTIC EYE SCROLL*", "15 points")
-
-Charm. One use only. The Hypnotic Eye Scroll can be used whenever an enemy wizard successfully casts a spell instead of attempting to dispel. The casting wizard must pass a Leadership test; if failed, you may choose the target of the spell just as if you had cast the spell yourself. If no target can be chosen, the spell has no effect. Note that the spell is still cast from the original Wizard as normal.
-
-#namecost("SCROLL OF LYKOS*", "15 points")
-
-Charm. One use only. Bound Spell. This item contains the _Arcane Urgency_ spell from the Lore of Battle Magic_._
-
-#namecost("SCROLL OF DISRUPTION*", "10 points")
-
-Charm. One use only. This item allows the bearer to re- roll failed dispel attempts for the remainder of the Magic phase.
-
-#namecost("TRICKSTER'S SHARD", "10 points")
-
-Charm. One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy Wizard, roll a D6. On a 4+, that Wizard suffers a Wound which Ignores Armour Saves.
 ]
 
-#entry("ENCHANTED ITEMS")
-#namecost("JUSTINTINE'S PAYCHEST", "35 points")
+#magic-weapon("METEOR HAMMER", 15, type: "Great weapon")[This weapon automatically Wounds on the roll of a 2+.]
 
-Paymaster with Pay Chest or Pay Cart only. The Paymaster and any unit they are with gain the Cold- blooded special rule.
+#magic-weapon("BLADE OF LAST RESORT", 10)[The wielder must always accept challenges if possible. While they are fighting in a challenge, they gain +D3 to their Weapon Skill, Strength, Toughness, Initiative and Attacks (roll once and apply the result to all characteristics for the duration of the challenge). If the wielder slays their opponent in the challenge, they suffer D3 Wounds themselves with no saves allowed.]
 
-#namecost("LIFESTONE OF ASHRAAZ", "30 points")
+#magic-weapon("TORMENTOR SWORD", 5)[A monster or character that suffers an unsaved wound from the Tormentor sword has the Stupidity special rule for the rest of the game.]
 
-One use only. The Lifestone of Ashraaz can be used at the start of any close combat phase. The bearer can swap his current number Wounds with the current number of Wounds of any one enemy model in base contact. The effect lasts the remainder of the game.
+#magic-weapon("WARRIOR BANE", 5)[A monster or character that suffers unsaved wounds from Warrior Bane permanently loses one Attack for each unsaved wound (to a minimum of 1 Attack).]
+]
 
-#namecost("THE OTHER TRICKSTER'S SHARD", "25 points")
+#magic-item-section("armour")[
+#magic-armour("GIANTKIN HELM", 50, only: "Mercenary General or Mercenary Captain on foot", one-use: true)[This item gives the wearer a 6+ armour save. In addition, it can be used at the start of any of your turns. When used, the model turns into a Giant (see Rare Units). If they are in a unit, they must be placed 1" to the side, facing the same direction. While transformed, the model cannot cast spells, nor use any equipment or other magic items. If you do not have a suitable model to place, this item has no effect. At the start of each subsequent turn, roll a D6. On a 1, the model is turned back into their normal profile. Any Wounds suffered while in Giant form are retaining, even if this kills the wearer.]
 
-The bearer, and all units in base contact with them (friend and foe) must re-roll successful invulnerable saves.
+#magic-armour("HELM OF MYRMIDIA", 45)[This item gives the wearer a 6+ armour save. Enemies attacking the wearer in Close Combat suffer \-1 to Hit and lose 1 Attack, down to a minimum of 1. In addition, the wearer gains the Hatred (Undead) special rule.]
 
-#namecost("ARCH-LIGHTNING ROD", "20 points")
+#magic-armour("MAMBRINIO'S GOLDEN ARMOUR", 45, type: "Heavy armour")[The wearer gains +2 to their armour save and the Immunity (Multiple Wounds) special rule. However, they suffer \-2 Initiative and a \-1 penalty to Dangerous Terrain tests.]
 
-One use only. This item may be used at the start of any enemy Movement phase. Once used, no units within 24" of the bearer may use the Fly special rule this turn.
+#magic-armour("HELM OF DISCORD", 20)[This item gives the wearer a 6+ armour save. In addition, at the start of each Close Combat phase, choose an enemy character in base contact with the bearer or his unit. That character must immediately take a Leadership test. If the test is failed, the victim cannot make attacks and is hit automatically in this Close Combat round.]
 
-#namecost("RING OF LIFE", "20 points")
+#magic-armour("SHIELD OF PTOLOS", 15, type: "Shield")[The bearer has a 2+ armour save against shooting attacks.]
 
-Bound Spell (Level 1, cast on 5+). Choose a friendly model within 12" and roll a D6. On a roll of a 1 that model loses one Wound with no saves allowed, on a roll of a 2 nothing happens, on a roll of a 3\-5 that model regains one Wound up to the models starting value, and on a roll of a 6 that model regains all lost wounds.
+#magic-armour("SHIELD OF STUBBORN REFUSAL", 15, type: "Shield")[The bearer is always Steadfast in the first round of combat. In addition, if they are with a unit that would otherwise flee as a result of a failed break test that the bearer would normally pass, the bearer will remain in combat while the rest of the unit flees.]
 
-#namecost("SINISTER CONTRACT", "20 points")
+#magic-armour("HELM OF THE HEADLESS HORSEMAN", 10)[This item gives the wearer a 6+ armour save. In addition, the wearer gains the Flaming Attacks and Killing Blow special rules. However, they must roll a D6 at the start of each of your turns. On the roll of a 1, the model suffers a Wound with no saves allowed.]
 
-One use only. When the bearer and any unit they join fail the first Break test during the game, instead treat them as having the Unstable special rule until the end of the turn.
+#magic-armour("LEVITATING SHIELD", 10, only: "Model on foot", type: "Shield")[The wielder may use this shield and a weapon that Requires Two Hands at the same time.]
+]
 
-#namecost("WYSSAN'S WEIGHTED DICE", "20 points")
+#magic-item-section("talisman")[
+#talisman("GUARDIAN AMULET", 40)[The bearer gains a Magical Ward (2+). Roll separately for every wound suffered. For every successful save you make, the Magical Ward will weaken for the rest of the game, so after one save it will be a 3+, after two saves a 4+ etc. until a minimum of a 6+ save.]
 
-One use only. This item may be used at the start of any close combat phase in which they are involved in. When used, choose two numbers from 1 to 6. For the remainder of this round, all dice rolls of the first number are treated as the second number. This applies to both you and your opponent's dice.
+#talisman("WARDS OF BATTLE", 30)[The bearer has a Magical Ward (4+) against close combat attacks.]
 
-#namecost("THE TERRIFYING MASK OF EEE!", "15 points")
+#talisman("DASHING CLOAK OF HEROIC RENOWN", 20)[The bearer gains the Regeneration (5+) special rule.]
 
-The wearer of this mask causes Terror. However, other models can never use their Leadership.
+#talisman("ICON OF FORTITUDE", 20)[The bearer of this item gains +1 Toughness.]
 
-#namecost("EYE OF THE TILEAN MUR", "10 points")
+#talisman("MASTER DUELLIST'S MARK", 20, only: "Mercenary Captain")[The bearer gains the Dodge (6+) and Parry (6+) special rules.]
 
-The bearer has the Always Strikes First and Armour Piercing (1) special rules in any turn they successfully charge an enemy in the flank or rear.
+#talisman("HOURGLASS OF MORR", 10)[At the beginning of the game, write down a number in secret. This is the turn number when the bearer of this item cannot be reduced below 1 Wound or removed as a casualty, unless they are caught when fleeing.]
 
-#namecost("THE LAST CHANCE*", "10 points")
+#talisman("IRONCURSE ICON", 10)[The bearer and any unit they are with gain a Magical Ward (6+) against artillery weapons.]
 
-One use only. This item can be used in the shooting phase with the model's missile weapon. If the shot hits, it will automatically Wound with the Ignores Armour Saves special rule.
+#talisman("IRONHIDE TALISMAN", 10)[All missile attacks targeting the bearer of this item must re-roll 6's To Wound with missile attacks.]
 
-#namecost("PAYMASTER'S COIN*", "10 points")
+#talisman("SHARD OF MORRSLIEB", 5, common: true)[The model gains the Immunity (Killing Blow/Poisoned Attacks/Lore of Death) special rule.]
+]
 
-The model may re-roll one dice when rolling To Hit or To Wound each round of close combat.
+#magic-item-section("arcane", columns: 2)[
+#arcane-item("WINDCATCHER PRISM", 55, type: "Relic", bound: true)[This item contains the Signature Spells from all the eight Winds of Magic. Note that you may only attempt to cast one each Magic phase.]
+
+#arcane-item("THE WHITE SISTRUM", 50, type: "Relic")[The bearer gains +1 Power Dice at the start of your Magic phase. In addition, all enemy units within 6" suffer \-1 to their Leadership.]
+
+#arcane-item("THE CRUCIBLE OF HORRORS", 35, type: "Relic", bound: (level: 3, cast: "9+"))[This item contains a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a hit with a Strength value of 2D6 (roll once per cast) minus the target's Toughness and the Ignores Armour Saves special rule. However, every time this spell is successfully cast, the bearer must pass a Leadership test on their own unmodified Leadership or suffer a Wound with no saves allowed.]
+
+#arcane-item("ROCKCHARMER'S FLUTE", 35, type: "Relic", bound: (level: 3, cast: "8+"))[This is special type of spell. Choose a hill within 18". Any unit on it suffers 2D6 Strength 4 Hits. The hill is then moved 2D6" in a direction of your choice, stopping within 1" of any impassable terrain.]
+
+#arcane-item("SIVEJIR'S HEX SCROLL", 35, type: "Charm", one-use: true)[When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell's energy is transformed and redirected at the caster. The enemy wizard can resist the spell's effects by rolling equal to or under his wizard level on a D6. If failed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of their characteristics are reduced to 1 (except for his wounds, which are unaffected). Their controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to their normal form.]
+
+#arcane-item("STAFF OF FICKLE FORTUNE", 35, type: "Staff")[At the beginning of each of your magic phases, roll a D6; on a roll of 1 the bearer suffers -D3 to his casting rolls (roll for each spell) for the remainder of the turn; on a roll of 2 nothing happens; on a 3+ however, the wizard gains +D3 to all his casting attempts (roll for each spell) for the remainder of the turn.]
+
+#arcane-item("STAFF OF QUIETUDE", 35, type: "Staff")[Bound Spell (Level 2, cast on 7 +). This is a special *aura* spell with a range of 24". If successfully cast, all Remains in Play spells and spells that last more than one turn within range are immediately dispelled and cease to have any effect.]
+
+#arcane-item("BOOK OF ASHUR", 30, type: "Relic")[The Wizard gains the Loremaster special rule. This has no effect on models that can choose spells from more than one Lore of Magic at the same time.]
+
+#arcane-item("THE MYSTIC SHIELD OF BRAG", 25, type: "Charm", one-use: true)[The Mystic Shield of Brag may be used against any enemy spell that directly targets any friendly unit within dispel range. The enemy spell has no effect.]
+
+#arcane-item("BECALMING ORB", 20, type: "Relic")[All enemy Wizards within 18" of the bearer of this item suffer a \-2 casting penalty.]
+
+#arcane-item("MYSTIC MAZE", 20, type: "Charm", one-use: true)[The Mystic Maze may be used against any enemy spell that directly targets any friendly unit within dispel range. Roll 3D6 measured from the centre of the unit; this is the distance the spell scatters in a random direction. Should the spell end up on another unit, this unit will become the target of the spell; otherwise the spell has no effect.]
+
+#arcane-item("TOME OF SPELLCRAFT", 20, type: "Relic")[This item allows the bearer to re-roll one failed casting attempt each Magic phase.]
+
+#arcane-item("HYPNOTIC EYE SCROLL", 15, type: "Charm", one-use: true, common: true)[The Hypnotic Eye Scroll can be used whenever an enemy wizard successfully casts a spell instead of attempting to dispel. The casting wizard must pass a Leadership test; if failed, you may choose the target of the spell just as if you had cast the spell yourself. If no target can be chosen, the spell has no effect. Note that the spell is still cast from the original Wizard as normal.]
+
+#arcane-item("SCROLL OF LYKOS", 15, type: "Charm", one-use: true, common: true)[Bound Spell. This item contains the _Arcane Urgency_ spell from the Lore of Battle Magic_._]
+
+#arcane-item("SCROLL OF DISRUPTION", 10, type: "Charm", one-use: true, common: true)[This item allows the bearer to re- roll failed dispel attempts for the remainder of the Magic phase.]
+
+#arcane-item("TRICKSTER'S SHARD", 10, type: "Charm", one-use: true)[Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy Wizard, roll a D6. On a 4+, that Wizard suffers a Wound which Ignores Armour Saves.]
+]
+
+#magic-item-section("enchanted")[
+#enchanted-item("JUSTINTINE'S PAYCHEST", 35, only: "Paymaster with Pay Chest or Pay Cart")[The Paymaster and any unit they are with gain the Cold- blooded special rule.]
+
+#enchanted-item("LIFESTONE OF ASHRAAZ", 30, one-use: true)[The Lifestone of Ashraaz can be used at the start of any close combat phase. The bearer can swap his current number Wounds with the current number of Wounds of any one enemy model in base contact. The effect lasts the remainder of the game.]
+
+#enchanted-item("THE OTHER TRICKSTER'S SHARD", 25)[The bearer, and all units in base contact with them (friend and foe) must re-roll successful invulnerable saves.]
+
+#enchanted-item("ARCH-LIGHTNING ROD", 20, one-use: true)[This item may be used at the start of any enemy Movement phase. Once used, no units within 24" of the bearer may use the Fly special rule this turn.]
+
+#enchanted-item("RING OF LIFE", 20, bound: (level: 1, cast: "5+"))[Choose a friendly model within 12" and roll a D6. On a roll of a 1 that model loses one Wound with no saves allowed, on a roll of a 2 nothing happens, on a roll of a 3\-5 that model regains one Wound up to the models starting value, and on a roll of a 6 that model regains all lost wounds.]
+
+#enchanted-item("SINISTER CONTRACT", 20, one-use: true)[When the bearer and any unit they join fail the first Break test during the game, instead treat them as having the Unstable special rule until the end of the turn.]
+
+#enchanted-item("WYSSAN'S WEIGHTED DICE", 20, one-use: true)[This item may be used at the start of any close combat phase in which they are involved in. When used, choose two numbers from 1 to 6. For the remainder of this round, all dice rolls of the first number are treated as the second number. This applies to both you and your opponent's dice.]
+
+#enchanted-item("THE TERRIFYING MASK OF EEE!", 15)[The wearer of this mask causes Terror. However, other models can never use their Leadership.]
+
+#enchanted-item("EYE OF THE TILEAN MUR", 10)[The bearer has the Always Strikes First and Armour Piercing (1) special rules in any turn they successfully charge an enemy in the flank or rear.]
+
+#enchanted-item("THE LAST CHANCE", 10, one-use: true, common: true)[This item can be used in the shooting phase with the model's missile weapon. If the shot hits, it will automatically Wound with the Ignores Armour Saves special rule.]
+
+#enchanted-item("PAYMASTER'S COIN", 10, common: true)[The model may re-roll one dice when rolling To Hit or To Wound each round of close combat.
 
 #runin[MASTRO VIVETTI]’#runin[S MAGNIFICENT]
+]
 
-#namecost("MACROSCOPE", "5 points")
+#enchanted-item("MACROSCOPE", 5)[No enemy units may deploy using the Scouts special rule within Line of Sight of the bearer of this item. In addition, you opponent must reveal any Hidden models in units within Line of Sight at the start of the game.]
 
-No enemy units may deploy using the Scouts special rule within Line of Sight of the bearer of this item. In addition, you opponent must reveal any Hidden models in units within Line of Sight at the start of the game.
+#enchanted-item("SCALED BOOTS OF DELAYED ALACRITY", 5, only: "Model on foot")[The bearer gains the Random Movement (2D6) Special Rule.]
+]
 
-#namecost("SCALED BOOTS OF DELAYED ALACRITY", "5 points")
+#magic-item-section("standard")[
+#magic-standard("BANNER OF MIGHT", 25)[A unit with this standard gains +1 To Hit in the first round of close combat.]
 
-Model on foot only. The bearer gains the Random Movement (2D6) Special Rule.
+#magic-standard("BANNER OF SWIRLING WIND", 25)[All enemy missile fire targeting the unit carrying this standard suffer \-1 To Hit.]
 
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF MIGHT", "25 points")
+#magic-standard("BANNER OF MONTE CASTELLO", 25, only: "Humans")[The unit carrying this standard gains the Cold-blooded special rule.]
 
-A unit with this standard gains +1 To Hit in the first round of close combat.
+#magic-standard("EAGLE BANNER", 15, only: "Humans")[Enemies can never get the Outnumber, Flank or Rear combat resolution bonus against the unit carrying this standard.]
 
-#namecost("BANNER OF SWIRLING WIND", "25 points")
+#magic-standard("ENSIGN OF THE REMAN LEGION", 15, only: "Human Infantry")[A unit carrying this magic standard has the Fight in Extra Ranks (1) special rule.]
 
-All enemy missile fire targeting the unit carrying this standard suffer \-1 To Hit.
+#magic-standard("MONSTER HUNTER'S TAPESTRY", 5)[The unit carrying this standard gains the Immunity (Stomps) special rule.]
 
-#namecost("BANNER OF MONTE CASTELLO", "25 points")
-
-Humans only. The unit carrying this standard gains the Cold-blooded special rule.
-
-#namecost("EAGLE BANNER", "15 points")
-
-Humans only. Enemies can never get the Outnumber, Flank or Rear combat resolution bonus against the unit carrying this standard.
-
-#namecost("ENSIGN OF THE REMAN LEGION", "15 points")
-
-Human Infantry only. A unit carrying this magic standard has the Fight in Extra Ranks (1) special rule.
-
-#runin[MONSTER HUNTER]'#runin[S TAPESTRY 5 points] The unit carrying this standard gains the Immunity (Stomps) special rule.
-
-#namecost("PENNANT OF LOYALTY", "5 points")
-
-The unit carrying this standard can re-roll the result on the Mercenaries table.
+#magic-standard("PENNANT OF LOYALTY", 5)[The unit carrying this standard can re-roll the result on the Mercenaries table.]
+]
 
 = CHARACTERS
 

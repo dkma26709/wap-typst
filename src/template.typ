@@ -223,8 +223,12 @@
       // dice may be thrown at it.
       assert("level" in bound and "cast" in bound, message: where
         + ": bound: give level and cast together, or power on its own")
-      "Bound Spell (Level " + str(bound.level) + ", cast on "
-        + str(bound.cast) + ")"
+      // Bound to locals first: in a code block an expression ends at the line
+      // break, so a continuation line opening with `+` is read as a unary plus
+      // on the term after it, not as the sum it looks like.
+      let level = str(bound.level)
+      let cast = str(bound.cast)
+      "Bound Spell (Level " + level + ", cast on " + cast + ")"
     }
   } else {
     assert(false, message: where + ": bound: must be true, (level: .., cast: ..)"

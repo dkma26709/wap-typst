@@ -92,90 +92,55 @@ Models with this special rule always Wound on a To Wound roll of 4+ in close com
 
 A model with Wards of Grimnir has the Magical Ward (6+) special rule against missile attacks and the Magic Resistance (2) special rule.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dwarfs. Dwarfs may not use magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dwarfs. Dwarfs may not use magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("HAMMER OF SMEDNIR", 45)[Each Hit with this weapon is multiplied into D3 Hits.]
 
-#entry("MAGIC WEAPONS")
-#namecost("HAMMER OF SMEDNIR", "45 points")
+#magic-weapon("RED AXE OF KARAK EIGHT PEAKS", 40)[Against all Orcs, Goblins and Skaven, this weapon allows its wielder to re-roll To Hit and To Wound rolls as well as cause Terror.]
 
-Each Hit with this weapon is multiplied into D3 Hits.
+#magic-weapon("KRAGGIS' ANCESTRAL PICKAXE", 25, type: "Great weapon")[The wielder of this weapon has the Armour Piercing (1) and Underground Advance (see Miners) special rules.]
 
-#namecost("RED AXE OF KARAK EIGHT PEAKS", "40 points")
+#magic-weapon("HAMMER OF KARAK DRAZH", 20)[Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any enemy models that suffer one or more unsaved Wounds from it are subject to the Always Strikes Last special rule until the end of the next Close Combat phase.]
+]
 
-Against all Orcs, Goblins and Skaven, this weapon allows its wielder to re-roll To Hit and To Wound rolls as well as cause Terror.
+#magic-item-section("armour")[
+#magic-armour("MAGNIFICENT ARMOUR OF BOREK BEETLEBROW", 35, type: "Heavy armour")[This armour gives the wearer a Magical Ward (3+) against all attacks of Strength 6 or higher.]
 
-#namecost("KRAGGIS' ANCESTRAL PICKAXE", "25 points")
+#magic-armour("EVER-BURNING HELMET OF GRUNGNI", 30)[This armour gives the wearer a 6+ armour save. All close combat attacks directed against the wearer must re-roll To Hit.]
 
-Great weapon. The wielder of this weapon has the Armour Piercing (1) and Underground Advance (see Miners) special rules.
+#magic-armour("RUNIC BRACERS OF SKAVOR", 25)[This armour gives the wearer a 6+ armour save. The wearer gains the Regeneration (5+) special rule.]
 
-#namecost("HAMMER OF KARAK DRAZH", "20 points")
+#magic-armour("HELMET OF THE ANVIL", 10)[This armour gives the wearer a 6+ armour save. In addition, their armour save cannot be worse than a 6+.]
+]
 
-Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any enemy models that suffer one or more unsaved Wounds from it are subject to the Always Strikes Last special rule until the end of the next Close Combat phase.
+#magic-item-section("talisman")[
+#talisman("GOLDEN BANDS OF GRIMNIR", 45)[This item gives the wearer +1 Wound and the Magic Resistance (3) special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("MAGNIFICENT ARMOUR OF BOREK BEETLEBROW", "35 points")
+#talisman("HEAVY METAL INGOT", 30)[This item allows the wielder to re-roll failed armour saves and invulnerable saves rolls of 1 in any turn they have not moved.]
+]
 
-Heavy armour. This armour gives the wearer a Magical Ward (3+) against all attacks of Strength 6 or higher.
+#magic-item-section("enchanted")[
+#enchanted-item("FOCAL LENS OF MORGRIM", 40)[The bearer and any unit they join gain +1 To Hit with missile weapons.]
 
-#namecost("EVER-BURNING HELMET OF GRUNGNI", "30 points")
+#enchanted-item("FIERY RING OF THORI", 35)[The Fiery Ring of Thori gives its bearer a Strength 4 Breath Weapon with the Flaming Attacks special rule.]
 
-This armour gives the wearer a 6+ armour save. All close combat attacks directed against the wearer must re-roll To Hit.
+#enchanted-item("GOLDEN SCEPTRE OF NORGRIM", 30)[The bearer and any unit they are with may re-roll 1's To Hit and To Wound in close combat.]
 
-#namecost("RUNIC BRACERS OF SKAVOR", "25 points")
+#enchanted-item("RUNIC TABLET OF THUNGNI", 30)[The bearer and any unit they join gain the Armour Piercing (1) special rule.]
 
-This armour gives the wearer a 6+ armour save. The wearer gains the Regeneration (5+) special rule.
+#enchanted-item("SILVER HORN OF VENGEANCE", 30, one-use: true)[The Silver Horn of Vengeance can be used at the start of any friendly turn. Its wielder, and any friendly units within 6", have the Devastating Charge special rule until the start of their following turn. Additionally, once used, the blower of the Silver Horn of Vengeance, and any unit he joins, cause Fear in all Elves for the rest of the game.]
 
-#namecost("HELMET OF THE ANVIL", "10 points")
+#enchanted-item("TEARDROP OF GRUNGNI", 20, one-use: true)[This item is a missile attack with a 6" range. The target automatically suffers D3 Strength 6 Hits. In addition, if the target is a lone model, it must halve all its Movement until the start of your next turn.]
 
-This armour gives the wearer a 6+ armour save. In addition, their armour save cannot be worse than a 6+.
+#enchanted-item("HEALING SALVE OF VALAYA", 15, one-use: true)[This item can be used at the start of the controlling player's turn. The model immediately recovers D3 Wounds up to their starting value.]
 
-#entry("TALISMANS")
-#namecost("GOLDEN BANDS OF GRIMNIR", "45 points")
+#enchanted-item("RESOUNDING GROMRIL HORN", 10, one-use: true)[This item may be used at the start of any of your turns. Once used, all friendly units within 12" gain +1 to their Leadership for the duration of the turn.]
+]
 
-This item gives the wearer +1 Wound and the Magic Resistance (3) special rule.
-
-#namecost("HEAVY METAL INGOT", "30 points")
-
-This item allows the wielder to re-roll failed armour saves and invulnerable saves rolls of 1 in any turn they have not moved.
-
-#entry("ENCHANTED ITEMS")
-#namecost("FOCAL LENS OF MORGRIM", "40 points")
-
-The bearer and any unit they join gain +1 To Hit with missile weapons.
-
-#namecost("FIERY RING OF THORI", "35 points")
-
-The Fiery Ring of Thori gives its bearer a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-
-#namecost("GOLDEN SCEPTRE OF NORGRIM", "30 points")
-
-The bearer and any unit they are with may re-roll 1's To Hit and To Wound in close combat.
-
-#namecost("RUNIC TABLET OF THUNGNI", "30 points")
-
-The bearer and any unit they join gain the Armour Piercing (1) special rule.
-
-#namecost("SILVER HORN OF VENGEANCE", "30 points")
-
-One use only. The Silver Horn of Vengeance can be used at the start of any friendly turn. Its wielder, and any friendly units within 6", have the Devastating Charge special rule until the start of their following turn. Additionally, once used, the blower of the Silver Horn of Vengeance, and any unit he joins, cause Fear in all Elves for the rest of the game.
-
-#namecost("TEARDROP OF GRUNGNI", "20 points")
-
-One use only. This item is a missile attack with a 6" range. The target automatically suffers D3 Strength 6 Hits. In addition, if the target is a lone model, it must halve all its Movement until the start of your next turn.
-
-#namecost("HEALING SALVE OF VALAYA", "15 points")
-
-One use only. This item can be used at the start of the controlling player's turn. The model immediately recovers D3 Wounds up to their starting value.
-
-#namecost("RESOUNDING GROMRIL HORN", "10 points")
-
-One use only. This item may be used at the start of any of your turns. Once used, all friendly units within 12" gain +1 to their Leadership for the duration of the turn.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF LOST HOLDS", "60 points")
-
-All models in a unit that carries the Banner of Lost Holds can re-roll failed To Wound rolls in close combat.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF LOST HOLDS", 60)[All models in a unit that carries the Banner of Lost Holds can re-roll failed To Wound rolls in close combat.]
+]
 
 = RUNIC ITEMS
 

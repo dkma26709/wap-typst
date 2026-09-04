@@ -266,325 +266,179 @@ A Murder of Spites is a close combat attack that can be used in addition to the 
 
 A Resplendence of Luminescents gives the character and any unit they join Magical Attacks.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Wood Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Wood Elves. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", columns: 2)[
+#magic-weapon("THE SPIRIT SWORD", 50)[Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy single model unit or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective Leadership values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded.]
 
-#entry("MAGIC WEAPONS")
-#columns(2)[
-#namecost("THE SPIRIT SWORD", "50 points")
+#magic-weapon("DAITH'S REAPER", 50)[All failed To Hit and To Wound rolls made with Daith's Reaper must be re-rolled, as must all successful armour saves taken against Wounds caused by this weapon.]
 
-Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy single model unit or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective Leadership values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded.
+#magic-weapon("DAWNSPEAR", 35, type: "Light lance/spear")[If the wielder of the Dawnspear causes an unsaved wound on an enemy, then all enemy models in that unit that have not yet attacked suffer \-1 To Hit in this round of close combat.]
 
-#runin[DAITH]'#runin[S REAPER 50 points] All failed To Hit and To Wound rolls made with Daith's Reaper must be re-rolled, as must all successful armour saves taken against Wounds caused by this weapon.
+#magic-weapon("CALLACH'S CLAW", 25)[Any unit suffering one or more unsaved wounds from the Callach's Claw suffers a \-2 penalty to their Leadership for the remainder of the Combat phase.]
 
-#namecost("DAWNSPEAR", "35 points")
+#magic-weapon("THE HUNTER'S TALON", 25, type: "Elven longbow")[The Hunter's Talon gives the wielder the Sniper special rule.]
 
-Light lance/spear. If the wielder of the Dawnspear causes an unsaved wound on an enemy, then all enemy models in that unit that have not yet attacked suffer \-1 To Hit in this round of close combat.
+#magic-weapon("SPEAR OF DAITH", 25, type: "Light lance/spear")[The Spear of Daith gives the wielder the Parry (5+) special rule.]
 
-#namecost("CALLACH'S CLAW", "25 points")
+#magic-weapon("THE BOW OF LOREN", 20, type: "Elven longbow")[All shots from the Bow of Loren are resolved at Strength 4 with Multiple Shots (A) special rule. Multiple Shots (A) means the bow fires a number of shots equal to the wielder’s Attacks characteristic. It cannot fire enchanted arrows.]
 
-Any unit suffering one or more unsaved wounds from the Callach's Claw suffers a \-2 penalty to their Leadership for the remainder of the Combat phase.
+#magic-weapon("BLADES OF LOEC", 20, only: "Shadowdancer", type: "Two hand weapons")[The Blades of Loec allow the wielder to re-roll failed rolls To Wound.]
 
-#namecost("THE HUNTER'S TALON", "25 points")
+#magic-weapon("GREENWOOD GLADIUS", 20)[The wielder of this item gains +D3 Attacks, rolled at the start of each round of close combat.]
 
-Elven longbow. The Hunter's Talon gives the wielder the Sniper special rule.
+#magic-weapon("HUNT MASTER'S PRIDE", 20, only: "Wild Hunter", type: "Light lance")[All attacks with this weapon have the Multiple Wounds (D3) special rule.]
 
-#namecost("SPEAR OF DAITH", "25 points")
+#magic-weapon("SPEAR OF TWILIGHT", 20, type: "Light lance/spear")[The Spear of Twilight gives the wielder the Killing Blow special rule.]
 
-Light lance/spear. The Spear of Daith gives the wielder the Parry (5+) special rule.
+#magic-weapon("SWORD OF A THOUSAND WINTERS", 20)[The Sword of a Thousand Winters gives the bearer the Ice Attacks special rule. In addition, Characters and Monsters must take a Toughness test for each unsaved wound suffered by the Sword of a Thousand Winters. For every test failed, they suffer \-1 Strength, Initiative and Attacks for the remainder of the game.]
 
-#namecost("THE BOW OF LOREN", "20 points")
-
-Elven longbow. All shots from the Bow of Loren are resolved at Strength 4 with Multiple Shots (A) special rule. Multiple Shots (A) means the bow fires a number of shots equal to the wielder’s Attacks characteristic. It cannot fire enchanted arrows.
-
-#namecost("BLADES OF LOEC", "20 points")
-
-Shadowdancer only. Two hand weapons. The Blades of Loec allow the wielder to re-roll failed rolls To Wound.
-
-#namecost("GREENWOOD GLADIUS", "20 points")
-
-The wielder of this item gains +D3 Attacks, rolled at the start of each round of close combat.
-
-#namecost("HUNT MASTER'S PRIDE", "20 points")
-
-Wild Hunter only. Light lance. All attacks with this weapon have the Multiple Wounds (D3) special rule.
-
-#namecost("SPEAR OF TWILIGHT", "20 points")
-
-Light lance/spear. The Spear of Twilight gives the wielder the Killing Blow special rule.
-
-#namecost("SWORD OF A THOUSAND WINTERS", "20 points")
-
-The Sword of a Thousand Winters gives the bearer the Ice Attacks special rule. In addition, Characters and Monsters must take a Toughness test for each unsaved wound suffered by the Sword of a Thousand Winters. For every test failed, they suffer \-1 Strength, Initiative and Attacks for the remainder of the game.
-
-#namecost("VAUL'S WRATH", "20 points")
-
-Elven longbow. This weapon has the following profile:
+#magic-weapon("VAUL'S WRATH", 20, type: "Elven longbow")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Armour Piercing (1), Multiple Shots (2), Multiple Wounds (2) Volley Fire"))
-#namecost("SPEAR OF THE HUNT", "15 points")
-
-Wild Hunter only. Light lance. This item gives the wielder the Armour Piercing (1) special rule. In addition, they and any unit they are with may re-roll 1's for their charge distance.
-
-#namecost("SPLINTERBIRCH BLADE", "15 points")
-
-Whenever an enemy model makes a successful save against Wounds caused by this blade, they suffer an additional D6 Strength 1 Hits.
-
-#namecost("STARCASTER LONGBOW", "15 points")
-
-Elven longbow. All shots from this bow have the Multiple Wounds (D3) special rule. On a To Wound roll of a natural 6, that shot has the Multiple Wounds (D6) special rule instead.
-
-#namecost("ASYENDI'S BANE", "10 points")
-
-Elven longbow. This weapon allows the wielder to re- roll all failed rolls To Hit. However, if the shot still misses after this re-roll, then they suffer a Strength 3 hit.
-
-#namecost("RAGETH'S WILDFIRE BLADES", "10 points")
-
-Two hand weapons. Rageth's Wildfire Blades give the wielder the Flaming Attacks special rule.
 ]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF THE FEY", "30 points")
+#magic-weapon("SPEAR OF THE HUNT", 15, only: "Wild Hunter", type: "Light lance")[This item gives the wielder the Armour Piercing (1) special rule. In addition, they and any unit they are with may re-roll 1's for their charge distance.]
 
-Light armour. The Armour of the Fey gives the bearer the Magical Ward (4+) special rule against Magical Attacks.
+#magic-weapon("SPLINTERBIRCH BLADE", 15)[Whenever an enemy model makes a successful save against Wounds caused by this blade, they suffer an additional D6 Strength 1 Hits.]
 
-#namecost("THE OAKEN ARMOUR", "30 points")
+#magic-weapon("STARCASTER LONGBOW", 15, type: "Elven longbow")[All shots from this bow have the Multiple Wounds (D3) special rule. On a To Wound roll of a natural 6, that shot has the Multiple Wounds (D6) special rule instead.]
 
-Light armour. The Oaken Armour gives the wearer the Regeneration (4+) special rule.
+#magic-weapon("ASYENDI'S BANE", 10, type: "Elven longbow")[This weapon allows the wielder to re- roll all failed rolls To Hit. However, if the shot still misses after this re-roll, then they suffer a Strength 3 hit.]
 
-#namecost("CLOAK OF TUMBLING LEAVES", "25 points")
+#magic-weapon("RAGETH'S WILDFIRE BLADES", 10, type: "Two hand weapons")[Rageth's Wildfire Blades give the wielder the Flaming Attacks special rule.]
+]
 
-Model on foot only. Light armour. The bearer's gains the Fly (10) special rule.
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF THE FEY", 30, type: "Light armour")[The Armour of the Fey gives the bearer the Magical Ward (4+) special rule against Magical Attacks.]
 
-#namecost("BRIARSHEATH", "15 points")
+#magic-armour("THE OAKEN ARMOUR", 30, type: "Light armour")[The Oaken Armour gives the wearer the Regeneration (4+) special rule.]
 
-Model on foot only. Light armour. The Briarsheath causes any missile attacks targeted at the wearer to suffer \-1 To Hit, or \-2 To Hit if the wearer is in a forest.
+#magic-armour("CLOAK OF TUMBLING LEAVES", 25, only: "Model on foot", type: "Light armour")[The bearer's gains the Fly (10) special rule.]
 
-#namecost("THE HELM OF THE HUNT", "15 points")
+#magic-armour("BRIARSHEATH", 15, only: "Model on foot", type: "Light armour")[The Briarsheath causes any missile attacks targeted at the wearer to suffer \-1 To Hit, or \-2 To Hit if the wearer is in a forest.]
 
-Wild Hunter only. This item gives the wearer a 6+ armour save. In addition, they may re-roll To Hit in turns that they successfully charge into combat.
+#magic-armour("THE HELM OF THE HUNT", 15, only: "Wild Hunter")[This item gives the wearer a 6+ armour save. In addition, they may re-roll To Hit in turns that they successfully charge into combat.]
 
-#namecost("RAILARIAN'S MANTLE", "15 points")
+#magic-armour("RAILARIAN'S MANTLE", 15, type: "Light armour")[Railarian's Mantle gives the wearer a Magical Ward (5+) if they are within 6" of a forest.]
 
-Light armour. Railarian's Mantle gives the wearer a Magical Ward (5+) if they are within 6" of a forest.
+#magic-armour("AMBER ARMOUR", 10, type: "Light armour")[The bearer's armour save can never be reduced below a 6+.]
+]
 
-#namecost("AMBER ARMOUR", "10 points")
+#magic-item-section("talisman")[
+#talisman("RHYMER'S HARP", 60)[The Rhymer's Harp gives the bearer and any unit they join the Magical Ward (5+) and Strider special rules.]
 
-Light armour. The bearer's armour save can never be reduced below a 6+.
+#talisman("GLAMOURWEAVE BROOCH", 35)[The Glamourweave Brooch gives the bearer the Magical Ward (4+) special rule against missile attacks. In addition, any model attempting to strike the bearer in close combat must first pass a Leadership test or require 6's To Hit the bearer during that Combat phase.]
 
-#entry("TALISMANS")
-#namecost("RHYMER'S HARP", "60 points")
+#talisman("AMARANTHINE BROOCH", 30)[The Amaranthine Brooch gives the wearer the Magical Ward (4+) special rule against non-Magical Attacks.]
 
-The Rhymer's Harp gives the bearer and any unit they join the Magical Ward (5+) and Strider special rules.
+#talisman("STONE OF THE CRYSTAL MERE", 30)[The Stone of the Crystal Mere gives the bearer the Magical Ward (3+) special rule. However, if this Ward Save is ever failed, the Magical Ward is lost for the rest of the game.]
 
-#namecost("GLAMOURWEAVE BROOCH", "35 points")
+#talisman("AMBER PENDANT", 25)[The Amber Pendant causes all enemy units in base contact with the wearer to be subject to the Always Strikes Last special rule.]
 
-The Glamourweave Brooch gives the bearer the Magical Ward (4+) special rule against missile attacks. In addition, any model attempting to strike the bearer in close combat must first pass a Leadership test or require 6's To Hit the bearer during that Combat phase.
+#talisman("FIMBULWINTER SHARD", 25)[The Fimbulwinter Shard causes enemies attacking the bearer in close combat to suffer \-1 To Hit. However, all models with the Forest Spirit special rule (including the bearer) suffer from Stupidity while the bearer is within 6".]
 
-#namecost("AMARANTHINE BROOCH", "30 points")
+#talisman("TALISMAN OF QWARR", 20)[Models targeting the bearer with missile attacks must re-roll successful rolls To Hit.]
 
-The Amaranthine Brooch gives the wearer the Magical Ward (4+) special rule against non-Magical Attacks.
+#talisman("STONE OF REBIRTH", 15, one-use: true)[If the bearer of the Stone of Rebirth is killed, roll a D6. On a 2+, the model is brought back to life with one Wound remaining. This has no effect if the wearer was killed as a result of being pursued down.]
 
-#namecost("STONE OF THE CRYSTAL MERE", "30 points")
+#talisman("MERCIW'S LOCUS", 15)[Merciw's Locus causes the bearer and any model attacking them to lose all Strength bonuses from any weapon they might carry.]
 
-The Stone of the Crystal Mere gives the bearer the Magical Ward (3+) special rule. However, if this Ward Save is ever failed, the Magical Ward is lost for the rest of the game.
+#talisman("DEEPMIRE CLOAK", 10, only: "Model on foot")[If the wearer is in cover and is at their starting number of Wounds, enemy missile attacks targeting them suffer \-1 To Hit. If the wearer is in cover and has suffered one or more Wounds during the game, they cannot be targeted by missile attacks at all.]
+]
 
-#namecost("AMBER PENDANT", "25 points")
+#magic-item-section("arcane")[
+#arcane-item("ORB OF MIDSUMMER", 40, type: "Relic")[The bearer of this item may re-roll failed casting attempts, unless a Miscast has been rolled.]
 
-The Amber Pendant causes all enemy units in base contact with the wearer to be subject to the Always Strikes Last special rule.
+#arcane-item("RANU'S HEARTSTIONE", 40, type: "Relic")[Once per Magic phase, the bearer of this item may re-roll one of the dice when casting or dispelling a spell. This can be used to prevent a miscast or to cause Ultimate Power.]
 
-#namecost("FIMBULWINTER SHARD", "25 points")
+#arcane-item("VESPERAL GEM", 40, type: "Charm", one-use: true)[This item can be used at the start of your Magic phase. Once used, the Wizard can automatically cast any one of their spells from the Lore of Athel Loren without using any power dice this turn. This spell cannot be dispelled. After resolving the effects of the spell, roll a D6. On a 1, the bearer suffers 1 Wound with no saves allowed.]
 
-The Fimbulwinter Shard causes enemies attacking the bearer in close combat to suffer \-1 To Hit. However, all models with the Forest Spirit special rule (including the bearer) suffer from Stupidity while the bearer is within 6".
+#arcane-item("OAKEN STAVE", 35, type: "Staff")[The bearer of this item may roll an extra D6 when dispelling and discard the lowest result.]
 
-#namecost("TALISMAN OF QWARR", "20 points")
+#arcane-item("SILVERWOOD CIRCLET", 30, type: "Relic")[The bearer of this item adds +12" to the range of all their spells (excluding auras).]
 
-Models targeting the bearer with missile attacks must re-roll successful rolls To Hit.
+#arcane-item("VIRIDESCENT SHAWL", 30, type: "Relic")[This item gives the bearer a +1 casting bonus. In addition, all enemy missile attacks targeting the bearer suffer \-1 To Hit.]
 
-#namecost("STONE OF REBIRTH", "15 points")
+#arcane-item("DIVINATION ORB", 25, type: "Relic")[If an opponent uses more than three power dice (from any source) when casting any spell, the bearer of the Divination Orb may add an extra free Dispel dice into the attempt to dispel that spell.]
 
-One use only. If the bearer of the Stone of Rebirth is killed, roll a D6. On a 2+, the model is brought back to life with one Wound remaining. This has no effect if the wearer was killed as a result of being pursued down.
+#arcane-item("DEEPWOOD SPHERE", 20, type: "Relic")[Any enemy unit that enters a forest within 18" of the bearer of the Deepwood Sphere suffers D6 Strength 4 Hits as soon as they have finished their move. They continue to suffer D6 Strength 4 Hits at the start of any of their Movement phases for as long as they remain in the forest and the bearer of the item remains within range.]
 
-#namecost("MERCIW'S LOCUS", "15 points")
+#arcane-item("ELF CHARM", 20, type: "Relic")[When casting spells from the Lore of Life, the wizard may add a +D3 casting bonus once per Magic phase.]
 
-Merciw's Locus causes the bearer and any model attacking them to lose all Strength bonuses from any weapon they might carry.
+#arcane-item("CALAINGOR'S STAVE", 15, type: "Staff")[When casting the _Tree Singing_ spell from the Lore of Athel Loren, the bearer may re-roll the distance the forest moves.]
 
-#namecost("DEEPMIRE CLOAK", "10 points")
+#arcane-item("HEARTWOOD PENDANT", 10, type: "Relic")[The bearer of this item may choose their spells from the Lore of Athel Loren in addition to one other spell lore.]
 
-Model on foot only. If the wearer is in cover and is at their starting number of Wounds, enemy missile attacks targeting them suffer \-1 To Hit. If the wearer is in cover and has suffered one or more Wounds during the game, they cannot be targeted by missile attacks at all.
+#arcane-item("WARSONG STAVE", 10, type: "Staff")[The bearer of this item knows the _Tree Singing_ spell from the Lore of Athel Loren in addition to their other spells.]
 
-#entry("ARCANE ITEMS")
-#namecost("ORB OF MIDSUMMER", "40 points")
+#arcane-item("WENDING WAND", 5, type: "Staff")[Any friendly unit that pursued off the table can enter the table from any point of any table edge of their choice in their next turn, as long as it is within 24" of the bearer of this item.]
 
-Relic. The bearer of this item may re-roll failed casting attempts, unless a Miscast has been rolled.
+#arcane-item("SIGIL OF THE MAGE QUEEN", 5, type: "Charm", one-use: true, common: true)[This item may be used after making a casting roll. When used, it adds a +3 casting bonus.]
+]
 
-#namecost("RANU'S HEARTSTIONE", "40 points")
+#magic-item-section("enchanted")[
+#enchanted-item("CROWN OF FELL BOWERS", 40)[The wearer and any unit they are with gain +1 To Wound in close combat.]
 
-Relic. Once per Magic phase, the bearer of this item may re-roll one of the dice when casting or dispelling a spell. This can be used to prevent a miscast or to cause Ultimate Power.
+#enchanted-item("WARDROTH HORN", 40, one-use: true)[This item may be used at the start of any close combat phase. Once used, all friendly units (excluding mounts) within 12" gain +1 Attack for the duration of this turn.]
 
-#namecost("VESPERAL GEM", "40 points")
+#enchanted-item("MOONSTONE OF THE HIDDEN WAYS", 35)[If the bearer’s unit is wholly within a forest at the end of your Movement phase, and is not in close combat, it can forestwalk. If it does so, remove it from the battlefield and immediately replace it, wholly within any forest on the battlefield, just like a summoning spell. A unit that forestwalks counts as having marched in the Movement phase.]
 
-Charm. One use only. This item can be used at the start of your Magic phase. Once used, the Wizard can automatically cast any one of their spells from the Lore of Athel Loren without using any power dice this turn. This spell cannot be dispelled. After resolving the effects of the spell, roll a D6. On a 1, the bearer suffers 1 Wound with no saves allowed.
-
-#namecost("OAKEN STAVE", "35 points")
-
-Staff. The bearer of this item may roll an extra D6 when dispelling and discard the lowest result.
-
-#namecost("SILVERWOOD CIRCLET", "30 points")
-
-Relic. The bearer of this item adds +12" to the range of all their spells (excluding auras).
-
-#namecost("VIRIDESCENT SHAWL", "30 points")
-
-Relic. This item gives the bearer a +1 casting bonus. In addition, all enemy missile attacks targeting the bearer suffer \-1 To Hit.
-
-#namecost("DIVINATION ORB", "25 points")
-
-Relic. If an opponent uses more than three power dice (from any source) when casting any spell, the bearer of the Divination Orb may add an extra free Dispel dice into the attempt to dispel that spell.
-
-#namecost("DEEPWOOD SPHERE", "20 points")
-
-Relic. Any enemy unit that enters a forest within 18" of the bearer of the Deepwood Sphere suffers D6 Strength 4 Hits as soon as they have finished their move. They continue to suffer D6 Strength 4 Hits at the start of any of their Movement phases for as long as they remain in the forest and the bearer of the item remains within range.
-
-#namecost("ELF CHARM", "20 points")
-
-Relic. When casting spells from the Lore of Life, the wizard may add a +D3 casting bonus once per Magic phase.
-
-#namecost("CALAINGOR'S STAVE", "15 points")
-
-Staff. When casting the _Tree Singing_ spell from the Lore of Athel Loren, the bearer may re-roll the distance the forest moves.
-
-#namecost("HEARTWOOD PENDANT", "10 points")
-
-Relic. The bearer of this item may choose their spells from the Lore of Athel Loren in addition to one other spell lore.
-
-#namecost("WARSONG STAVE", "10 points")
-
-Staff. The bearer of this item knows the _Tree Singing_ spell from the Lore of Athel Loren in addition to their other spells.
-
-#namecost("WENDING WAND", "5 points")
-
-Staff. Any friendly unit that pursued off the table can enter the table from any point of any table edge of their choice in their next turn, as long as it is within 24" of the bearer of this item.
-
-#namecost("SIGIL OF THE MAGE QUEEN*", "5 points")
-
-Charm. One use only. This item may be used after making a casting roll. When used, it adds a +3 casting bonus.
-
-#entry("ENCHANTED ITEMS")
-#namecost("CROWN OF FELL BOWERS", "40 points")
-
-The wearer and any unit they are with gain +1 To Wound in close combat.
-
-#namecost("WARDROTH HORN", "40 points")
-
-One use only. This item may be used at the start of any close combat phase. Once used, all friendly units (excluding mounts) within 12" gain +1 Attack for the duration of this turn.
-
-#namecost("MOONSTONE OF THE HIDDEN WAYS", "35 points")
-
-If the bearer’s unit is wholly within a forest at the end of your Movement phase, and is not in close combat, it can forestwalk. If it does so, remove it from the battlefield and immediately replace it, wholly within any forest on the battlefield, just like a summoning spell. A unit that forestwalks counts as having marched in the Movement phase.
-
-#namecost("HAIL OF DOOM ARROW", "35 points")
-
-One use only. Model with Elven longbow only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Elven longbow, though it cannot be used with the Sniper rule. Declare that the Hail of Doom Arrow is being used before any dice are rolled.
+#enchanted-item("HAIL OF DOOM ARROW", 35, one-use: true)[Model with Elven longbow only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Elven longbow, though it cannot be used with the Sniper rule. Declare that the Hail of Doom Arrow is being used before any dice are rolled.
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Multiple Shots (3D6)"))
-#namecost("FORGET-ME-KNOT", "25 points")
+]
 
-One use only. This item can be used against one enemy model in base contact at the start of any round of close combat. For the duration of that round, the target may not Attack or Stomp.
+#enchanted-item("FORGET-ME-KNOT", 25, one-use: true)[This item can be used against one enemy model in base contact at the start of any round of close combat. For the duration of that round, the target may not Attack or Stomp.]
 
-#namecost("HORN OF THE ASRAI", "25 points")
+#enchanted-item("HORN OF THE ASRAI", 25, one-use: true)[The Horn of the Asrai can be used at the beginning of any enemy Movement phase. When used, all enemies able to declare a charge against the bearer of this item must take a Psychology test. If they fail, they must declare a charge against the bearer this turn.]
 
-One use only. The Horn of the Asrai can be used at the beginning of any enemy Movement phase. When used, all enemies able to declare a charge against the bearer of this item must take a Psychology test. If they fail, they must declare a charge against the bearer this turn.
+#enchanted-item("WAYSTALKER'S CLOAK", 25)[The Waystalker's Cloak gives the wearer the Forest Stalker and Scouts special rules.]
 
-#namecost("WAYSTALKER'S CLOAK", "25 points")
+#enchanted-item("WRAITHSTONE", 25)[All enemy units within 6" of the bearer of the Wraithstone suffer a \-1 penalty to their Leadership.]
 
-The Waystalker's Cloak gives the wearer the Forest Stalker and Scouts special rules.
+#enchanted-item("ELYNETT'S BROOCH", 20)[Elynett's Brooch allows the wearer and any unit they are with to re-roll failed Psychology tests.]
 
-#namecost("WRAITHSTONE", "25 points")
+#enchanted-item("WAILING ARROWS", 15, common: true)[Enchanted Arrows. Any unit that suffers an unsaved wound from these arrows must make a Panic test.]
 
-All enemy units within 6" of the bearer of the Wraithstone suffer a \-1 penalty to their Leadership.
+#enchanted-item("ARROWS OF POTENCY", 10, common: true)[Enchanted Arrows. Any shots made with the Arrows of Potency have the Multiple Wounds (2) special rule.]
 
-#namecost("ELYNETT'S BROOCH", "20 points")
+#enchanted-item("BLIGHT-TIPPED ARROWS", 10, common: true)[Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Blight- Tipped Arrows must pass a Toughness test at the start of each turn for the remainder of the game or suffer an additional Wound which Ignores Armour Saves.]
 
-Elynett's Brooch allows the wearer and any unit they are with to re-roll failed Psychology tests.
+#enchanted-item("CROWN OF ANTLERS", 10)[The bearer of this item gains the Impact Hits (D3) special rule. The Impact Hits are Armour Piercing (1).]
 
-#namecost("WAILING ARROWS*", "15 points")
+#enchanted-item("ORION'S FAVOUR", 10, one-use: true, common: true)[The bearer can re-roll any failed rolls To Hit and/or To Wound made during either the Shooting or Close Combat phase.]
 
-Enchanted Arrows. Any unit that suffers an unsaved wound from these arrows must make a Panic test.
+#enchanted-item("GWYTHERC'S HORN", 5)[All friendly units within 12" of the bearer of Gwytherc's Horn gain +1 to their Leadership when attempting to Rally.]
 
-#namecost("ARROWS OF POTENCY*", "10 points")
+#enchanted-item("DRAGONTOOTH ARROWS", 5, common: true)[Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Dragontooth Arrows gains the Stupidity special rule for the remainder of the game.]
+]
 
-Enchanted Arrows. Any shots made with the Arrows of Potency have the Multiple Wounds (2) special rule.
+#magic-item-section("standard")[
+#magic-standard("BATTLE STANDARD OF ATHEL LOREN", 75)[Whenever an enemy spell is cast at a friendly unit within 12" of this standard, roll a D6; on a 5+, the spell is automatically dispelled.]
 
-#namecost("BLIGHT-TIPPED ARROWS*", "10 points")
+#magic-standard("BANNER OF THE WILDWOOD", 40)[All enemy units with Line of Sight to this banner suffer \-1 to their Leadership.]
 
-Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Blight- Tipped Arrows must pass a Toughness test at the start of each turn for the remainder of the game or suffer an additional Wound which Ignores Armour Saves.
+#magic-standard("BANNER OF THE ETERNAL QUEEN", 35)[The unit carrying this standard has the Magic Resistance (3) special rule. In addition, it gains +1 combat resolution bonus if it is within 6" of a forest.]
 
-#namecost("CROWN OF ANTLERS", "10 points")
+#magic-standard("BANNER OF THE HUNTER KING", 30, only: "Wild Riders")[The unit carrying this standard add +D6" to their charge range.]
 
-The bearer of this item gains the Impact Hits (D3) special rule. The Impact Hits are Armour Piercing (1).
+#magic-standard("GAEMRATH, THE BANNER OF MIDWINTER", 25, one-use: true)[Gaemrath, the Banner of Midwinter may be used at the start of any close combat phase. Until the start of your next Movement phase, the unit carrying the banner may not move and gains the Unbreakable special rule.]
 
-#namecost("ORION'S FAVOUR*", "10 points")
+#magic-standard("FAOGHIR, THE BANNER OF DWINDLING", 25)[Enemies that attempt to charge or flee from the unit carrying Faoghir, the Banner of Dwindling roll one dice fewer than normal to determine their charge/flee distance.]
 
-One use only. The bearer can re-roll any failed rolls To Hit and/or To Wound made during either the Shooting or Close Combat phase.
+#magic-standard("SAEMRATH, THE BANNER OF ZENITH", 25)[Enemy units within 12" of the unit carrying Saemrath, the Banner of the Zenith at the start of their Movement phase may not March.]
 
-#namecost("GWYTHERC'S HORN", "5 points")
+#magic-standard("STANDARD OF MORNING'S CHILL", 25)[All missile attacks targeting the unit carrying this standard suffer \-1 To Hit.]
 
-All friendly units within 12" of the bearer of Gwytherc's Horn gain +1 to their Leadership when attempting to Rally.
+#magic-standard("TAPESTRY OF TALSYN", 25)[The unit carrying this standard gains the Hold Your Ground (6) special rule.]
 
-#namecost("DRAGONTOOTH ARROWS*", "5 points")
+#magic-standard("BANNER OF THE WILD HUNT", 20, only: "Wild Riders")[The unit carrying this standard gains +1 Combat Resolution and may re-roll failed pursuit rolls.]
 
-Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Dragontooth Arrows gains the Stupidity special rule for the remainder of the game.
+#magic-standard("AECH, THE BANNER OF SPRINGTIDE", 10)[The unit carrying Aech, the Banner of Springtide gains the Quick Shot special rule and may fire Multiple Shots with their bows when choosing Stand & Shoot as a charge reaction.]
 
-#entry("MAGIC STANDARDS")
-#namecost("BATTLE STANDARD OF ATHEL LOREN", "75 points")
-
-Whenever an enemy spell is cast at a friendly unit within 12" of this standard, roll a D6; on a 5+, the spell is automatically dispelled.
-
-#namecost("BANNER OF THE WILDWOOD", "40 points")
-
-All enemy units with Line of Sight to this banner suffer \-1 to their Leadership.
-
-#namecost("BANNER OF THE ETERNAL QUEEN", "35 points")
-
-The unit carrying this standard has the Magic Resistance (3) special rule. In addition, it gains +1 combat resolution bonus if it is within 6" of a forest.
-
-#namecost("BANNER OF THE HUNTER KING", "30 points")
-
-Wild Riders only. The unit carrying this standard add +D6" to their charge range.
-
-#namecost("GAEMRATH, THE BANNER OF MIDWINTER", "25 points")
-
-One use only. Gaemrath, the Banner of Midwinter may be used at the start of any close combat phase. Until the start of your next Movement phase, the unit carrying the banner may not move and gains the Unbreakable special rule.
-
-#namecost("FAOGHIR, THE BANNER OF DWINDLING", "25 points")
-
-Enemies that attempt to charge or flee from the unit carrying Faoghir, the Banner of Dwindling roll one dice fewer than normal to determine their charge/flee distance.
-
-#namecost("SAEMRATH, THE BANNER OF ZENITH", "25 points")
-
-Enemy units within 12" of the unit carrying Saemrath, the Banner of the Zenith at the start of their Movement phase may not March.
-
-#namecost("STANDARD OF MORNING'S CHILL", "25 points")
-
-All missile attacks targeting the unit carrying this standard suffer \-1 To Hit.
-
-#namecost("TAPESTRY OF TALSYN", "25 points")
-
-The unit carrying this standard gains the Hold Your Ground (6) special rule.
-
-#namecost("BANNER OF THE WILD HUNT", "20 points")
-
-Wild Riders only. The unit carrying this standard gains +1 Combat Resolution and may re-roll failed pursuit rolls.
-
-#namecost("AECH, THE BANNER OF SPRINGTIDE", "10 points")
-
-The unit carrying Aech, the Banner of Springtide gains the Quick Shot special rule and may fire Multiple Shots with their bows when choosing Stand & Shoot as a charge reaction.
-
-#namecost("BANNER OF MIDSUMMER'S EVE", "10 points")
-
-The unit carrying this standard ignores To Hit penalties for shooting at enemies in cover.
+#magic-standard("BANNER OF MIDSUMMER'S EVE", 10)[The unit carrying this standard ignores To Hit penalties for shooting at enemies in cover.]
+]
 
 = CHARACTERS
 

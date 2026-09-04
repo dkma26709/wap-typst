@@ -193,130 +193,74 @@ _The Great Green Spite_ is a *direct damage* spell with a range of 24". The targ
 _Mork-khan Wants Ya!_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 10 hits.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Hobgoblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Hobgoblins. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("LIGHTNING SPEAR", 50, type: "Light lance/spear")[All attacks made with this weapon have the Lightning Attacks special rule. On the round that the wielder of the Lightning Spear charges, for each successful Wound made with this weapon it strikes the model behind the hit model with an attack at \-1 Strength. If this attack wounds, then the model behind the second wounded model is struck with an attack at an additional \-1 Strength. This will continue until you fail to wound a model.]
 
-#entry("MAGIC WEAPONS")
-#namecost("LIGHTNING SPEAR", "50 points")
+#magic-weapon("AXE HEADROOM", 40, type: "Great weapon")[All attacks made with this weapon have the Killing Blow and Ignores Armour Saves special rule.]
 
-Light lance/spear. All attacks made with this weapon have the Lightning Attacks special rule. On the round that the wielder of the Lightning Spear charges, for each successful Wound made with this weapon it strikes the model behind the hit model with an attack at \-1 Strength. If this attack wounds, then the model behind the second wounded model is struck with an attack at an additional \-1 Strength. This will continue until you fail to wound a model.
+#magic-weapon("THE BLACK BOW", 35, type: "Bow")[This weapon gives the wielder the Sniper special rule. Any model hit by the Black Bow must re-roll successful armour saves.]
 
-#namecost("AXE HEADROOM", "40 points")
+#magic-weapon("COMET BOW", 25, type: "Bow")[Each time the wielder of this bow Hits their target, all other friendly units targeting the same unit this Shooting phase receive +1 To Hit.]
 
-Great weapon. All attacks made with this weapon have the Killing Blow and Ignores Armour Saves special rule.
+#magic-weapon("SERPENT'S FANG", 25)[All attacks made with this weapon are considered to be made at 1 Strength higher than the target’s Toughness. This also affects armour saves.]
 
-#namecost("THE BLACK BOW", "35 points")
+#magic-weapon("WARPSTONE SCIMITAR", 25)[This weapon gives the wielder Poisoned Attacks. In addition, any enemy model in base contact with the wielder at the end of the close combat phase must pass a Toughness test or suffer a single Wound which Ignores Armour save. However, the wielder must roll a D6 at the start of each of their turns. On a roll of 1 they suffer a Wound which Ignores Armour saves.]
 
-Bow. This weapon gives the wielder the Sniper special rule. Any model hit by the Black Bow must re-roll successful armour saves.
+#magic-weapon("ZANZILL'S THREE-SECTION STAFF", 25, type: "Polearm")[This weapon gives the wielder +2 Attacks. However, if a 1 is rolled To Hit, the hit is resolved against the wielder rather than the opponent.]
 
-#namecost("COMET BOW", "25 points")
+#magic-weapon("OUTRIDER'S MACE", 20)[Attacks made with this weapon have the Strength Bonus (1) and Armour Piercing (1) special rules, and their effects are doubled on turns during which the wielder successfully charges an enemy in the flank or rear.]
+]
 
-Bow. Each time the wielder of this bow Hits their target, all other friendly units targeting the same unit this Shooting phase receive +1 To Hit.
+#magic-item-section("armour")[
+#magic-armour("WOLF-HOWL HELM", 45)[The Helm gives the bearer a 6+ armour save and the Fear special rule. In addition, enemies must re-roll successful To Hit roll against the wearer in close combat.]
 
-#namecost("SERPENT'S FANG", "25 points")
+#magic-armour("ARMOUR OF THE WIND FORTRESS", 30, type: "Medium armour")[Once each turn, at any time during the turn, including before or after moving, the wearer of the Armour of the Wind Fortress may be placed anywhere within 6" of their initial position. The model may be placed facing any direction at its new location. This ability may not be used to enter or leave combat.]
 
-All attacks made with this weapon are considered to be made at 1 Strength higher than the target’s Toughness. This also affects armour saves.
+#magic-armour("SHIELD OF THE INHOSPITABLE STEPPES", 30, type: "Shield")[Enemy models attempting to strike the bearer in close combat suffer a \-1 penalty to their Weapon Skill and Strength.]
 
-#namecost("WARPSTONE SCIMITAR", "25 points")
+#magic-armour("HIDE OF THE FALLEN TYRANT", 20, type: "Light armour")[The wearer of this armour gains +1 to their Toughness.]
 
-This weapon gives the wielder Poisoned Attacks. In addition, any enemy model in base contact with the wielder at the end of the close combat phase must pass a Toughness test or suffer a single Wound which Ignores Armour save. However, the wielder must roll a D6 at the start of each of their turns. On a roll of 1 they suffer a Wound which Ignores Armour saves.
+#magic-armour("SCORPION SHIELD", 15, type: "Shield")[Enemy models suffer a Strength 4 hit with the Poisoned Attacks and Killing Blow special rules for each To Hit roll of 1 against the bearer in close combat.]
 
-#namecost("ZANZILL'S THREE-SECTION STAFF", "25 points")
+#magic-armour("SABRETUSK CLAW GAUNTLETS", 10)[These gauntlets give the bearer a 6+ armour save and the Devastating Charge special rule.]
+]
 
-Polearm. This weapon gives the wielder +2 Attacks. However, if a 1 is rolled To Hit, the hit is resolved against the wielder rather than the opponent.
+#magic-item-section("talisman")[
+#talisman("LUCKY'S PAW", 45)[The bearer of Lucky’s Paw may re-roll failed Armour and Ward saves.]
 
-#namecost("OUTRIDER'S MACE", "20 points")
+#talisman("CRIMSON JADE PENDANT", 30)[All enemies targeting the wearer in close combat suffer -D3 to their Attacks (to a minimum of 0).]
 
-Attacks made with this weapon have the Strength Bonus (1) and Armour Piercing (1) special rules, and their effects are doubled on turns during which the wielder successfully charges an enemy in the flank or rear.
+#talisman("WYRDSTONE CROWN", 20)[The Wyrdstone Crown grants the wearer a Magical Ward (4+). If the result is a 1 when rolling the save, the bearer suffers a permanent \-1 penalty to his Leadership.]
 
-#entry("MAGIC ARMOUR")
-#namecost("WOLF-HOWL HELM", "45 points")
+#talisman("SPIRIT AMULET", 15)[The wearer of this amulet gains a Magical Ward (5+) after suffering their first Wound. This has no effect against Attacks that would instantly kill the wearer.]
 
-The Helm gives the bearer a 6+ armour save and the Fear special rule. In addition, enemies must re-roll successful To Hit roll against the wearer in close combat.
+#talisman("SPIDER SILK SHIRT", 10)[The wearer gains a Magical Ward (3+) against missile attacks with Strength 4 or lower.]
+]
 
-#namecost("ARMOUR OF THE WIND FORTRESS", "30 points")
+#magic-item-section("arcane")[
+#arcane-item("FENDRIZZ' ORB OF THEFT", 50)[The bearer of this Orb can remove 1 of the enemy’s Power dice and add it to their own Dispel dice pool.]
 
-Medium armour. Once each turn, at any time during the turn, including before or after moving, the wearer of the Armour of the Wind Fortress may be placed anywhere within 6" of their initial position. The model may be placed facing any direction at its new location. This ability may not be used to enter or leave combat.
+#arcane-item("SPIRIT TOTEM STAFF", 40)[The bearer may re-roll failed channelling rolls.]
 
-#namecost("SHIELD OF THE INHOSPITABLE STEPPES", "30 points")
+#arcane-item("CLOAK OF SORCERY", 35)[The wearer of the Cloak of Sorcery gains +1 Power Dice. In addition, there is no limit on the maximum amount of dice they are allowed to use to cast spells.]
 
-Shield. Enemy models attempting to strike the bearer in close combat suffer a \-1 penalty to their Weapon Skill and Strength.
+#arcane-item("STEALER OF THUNDER", 25)[Whenever the Wizard carrying this item successfully dispels a spell, they may immediately attempt to channel Dispel Dice equal to the number of dice used to cast the spell (including any bonus dice used).]
 
-#namecost("HIDE OF THE FALLEN TYRANT", "20 points")
+#arcane-item("VAZZAK'S STAFF OF PROCRASTINATION", 20)[At the end of each Magic phase the wielder can choose to save 1 unused Power or Dispel dice and use in the next turn.]
 
-Light armour. The wearer of this armour gains +1 to their Toughness.
+#arcane-item("TELLING BONES", 10, one-use: true)[The wizard can reroll a single dice when casting or dispelling a spell.]
+]
 
-#namecost("SCORPION SHIELD", "15 points")
+#magic-item-section("enchanted")[
+#enchanted-item("EVERSHIFTING MAP", 30)[The model carrying the Evershifting Map and one unit they must be assigned to can deploy as Scouts.]
 
-Shield. Enemy models suffer a Strength 4 hit with the Poisoned Attacks and Killing Blow special rules for each To Hit roll of 1 against the bearer in close combat.
+#enchanted-item("DEATHSEEKER GEM", 25)[The model carrying this item gains the Frenzy special rule. They can never lose their Frenzy, and gain+D3 Attacks rather than just 1.]
 
-#namecost("SABRETUSK CLAW GAUNTLETS", "10 points")
+#enchanted-item("SCROLL OF TAUNTS", 25, one-use: true)[This item can be used in the enemy's Charge sub-phase. When used, all enemy units within charge range of the bearer must pass a Leadership test or be forced to declare charge against them.]
 
-These gauntlets give the bearer a 6+ armour save and the Devastating Charge special rule.
-
-#entry("TALISMANS")
-#namecost("LUCKY'S PAW", "45 points")
-
-The bearer of Lucky’s Paw may re-roll failed Armour and Ward saves.
-
-#namecost("CRIMSON JADE PENDANT", "30 points")
-
-All enemies targeting the wearer in close combat suffer -D3 to their Attacks (to a minimum of 0).
-
-#namecost("WYRDSTONE CROWN", "20 points")
-
-The Wyrdstone Crown grants the wearer a Magical Ward (4+). If the result is a 1 when rolling the save, the bearer suffers a permanent \-1 penalty to his Leadership.
-
-#namecost("SPIRIT AMULET", "15 points")
-
-The wearer of this amulet gains a Magical Ward (5+) after suffering their first Wound. This has no effect against Attacks that would instantly kill the wearer.
-
-#namecost("SPIDER SILK SHIRT", "10 points")
-
-The wearer gains a Magical Ward (3+) against missile attacks with Strength 4 or lower.
-
-#entry("ARCANE ITEMS")
-#namecost("FENDRIZZ' ORB OF THEFT", "50 points")
-
-The bearer of this Orb can remove 1 of the enemy’s Power dice and add it to their own Dispel dice pool.
-
-#namecost("SPIRIT TOTEM STAFF", "40 points")
-
-The bearer may re-roll failed channelling rolls.
-
-#namecost("CLOAK OF SORCERY", "35 points")
-
-The wearer of the Cloak of Sorcery gains +1 Power Dice. In addition, there is no limit on the maximum amount of dice they are allowed to use to cast spells.
-
-#namecost("STEALER OF THUNDER", "25 points")
-
-Whenever the Wizard carrying this item successfully dispels a spell, they may immediately attempt to channel Dispel Dice equal to the number of dice used to cast the spell (including any bonus dice used).
-
-#namecost("VAZZAK'S STAFF OF PROCRASTINATION", "20 points")
-
-At the end of each Magic phase the wielder can choose to save 1 unused Power or Dispel dice and use in the next turn.
-
-#namecost("TELLING BONES", "10 points")
-
-One use only. The wizard can reroll a single dice when casting or dispelling a spell.
-
-#entry("ENCHANTED ITEMS")
-#namecost("EVERSHIFTING MAP", "30 points")
-
-The model carrying the Evershifting Map and one unit they must be assigned to can deploy as Scouts.
-
-#namecost("DEATHSEEKER GEM", "25 points")
-
-The model carrying this item gains the Frenzy special rule. They can never lose their Frenzy, and gain+D3 Attacks rather than just 1.
-
-#namecost("SCROLL OF TAUNTS", "25 points")
-
-One use only. This item can be used in the enemy's Charge sub-phase. When used, all enemy units within charge range of the bearer must pass a Leadership test or be forced to declare charge against them.
-
-#namecost("BAG O' SNEAKY TRICKS", "20 points")
-
-At the start of the game, roll a D6 and consult the following chart to determine what the item retrieved for that battle actually does:
+#enchanted-item("BAG O' SNEAKY TRICKS", 20)[At the start of the game, roll a D6 and consult the following chart to determine what the item retrieved for that battle actually does:
 
 #chart((("D6", "Result"), ("1", "Worthless Scrap: The item does nothing."), ("2", "Red Gem: The item grants the bearer the
 Flaming Attacks and Immunity (Flaming
@@ -326,58 +270,36 @@ Resistance (2) special rule."), ("5", "Trollbone Torc: The item grants the
 Regeneration (4+) special rule."), ("6", "Daemon Skull: The item grants the bearer +1
 Strength as well as the Magical Attacks and
 Magical Ward (5+) special rules.")))
-#namecost("THE HIDDEN SHEATH", "20 points")
+]
 
-On any turn that the model equipped with the Hidden Sheath enters a challenge, they get to make one extra round of attacks against their opponent before all other attacks are made.
+#enchanted-item("THE HIDDEN SHEATH", 20)[On any turn that the model equipped with the Hidden Sheath enters a challenge, they get to make one extra round of attacks against their opponent before all other attacks are made.]
 
-#namecost("YATZSUP'S THUMB RING", "10 points")
+#enchanted-item("YATZSUP'S THUMB RING", 10)[The wearer ignores all To Hit penalties with missile weapons.]
 
-The wearer ignores all To Hit penalties with missile weapons.
+#enchanted-item("BLOOD DEBT TOKEN", 5, one-use: true)[This item may be used whenever the bearer and any unit they are with fails a Treacherous Gits test. Roll a D6; on a 2+ they pass the Treacherous Gits test.]
+]
 
-#namecost("BLOOD DEBT TOKEN", "5 points")
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF THE GREAT KHAN", 55)[The unit carrying this standard gains +D3 to its combat resolution. In addition, all Hobgoblins within 12" of this banner may re-roll failed Treacherous Gits tests.]
 
-One use only. This item may be used whenever the bearer and any unit they are with fails a Treacherous Gits test. Roll a D6; on a 2+ they pass the Treacherous Gits test.
+#magic-standard("SPIRIT BANNER", 50, one-use: true)[The banner may be activated at the start of any of your turns. For the remainder of the turn, all models in the unit gains the Ethereal special rule.]
 
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF THE GREAT KHAN", "55 points")
+#magic-standard("LAUGHING SKULL BANNER", 40)[All enemy units within 12" of this standard suffer \-1 to their Leadership.]
 
-The unit carrying this standard gains +D3 to its combat resolution. In addition, all Hobgoblins within 12" of this banner may re-roll failed Treacherous Gits tests.
+#magic-standard("WAR BANNER OF MORK-KHAN", 40)[A unit carrying this magic standard has the Hatred and Fear special rules.]
 
-#namecost("SPIRIT BANNER", "50 points")
+#magic-standard("TAUNTING EFFIGY", 35)[All enemy units within charge range of this unit at the start of their Compulsory Moves sub-phase must pass a Leadership test or be forced to declare a charge against it. This has no effect on models with Immunity (Psychology).]
 
-One use only. The banner may be activated at the start of any of your turns. For the remainder of the turn, all models in the unit gains the Ethereal special rule.
+#magic-standard("STANDARD OF THE DEVOURING WOLF", 30)[The unit carrying this standard gains the Devastating Charge special rule.]
 
-#namecost("LAUGHING SKULL BANNER", "40 points")
+#magic-standard("WINDRIDER BANNER", 30)[The unit carrying this standard gains a Magical Ward (4+) against all missile attacks with Strength 4 or less.]
 
-All enemy units within 12" of this standard suffer \-1 to their Leadership.
+#magic-standard("STANDARD OF THE OPEN STEPPE", 25)[The unit carrying this standard may add +D6" to their charge range.]
 
-#namecost("WAR BANNER OF MORK-KHAN", "40 points")
+#magic-standard("BANNER OF THE GREAT WOLF", 25)[All mounts in a unit carrying this banner gain +1 to their Strength.]
 
-A unit carrying this magic standard has the Hatred and Fear special rules.
-
-#namecost("TAUNTING EFFIGY", "35 points")
-
-All enemy units within charge range of this unit at the start of their Compulsory Moves sub-phase must pass a Leadership test or be forced to declare a charge against it. This has no effect on models with Immunity (Psychology).
-
-#namecost("STANDARD OF THE DEVOURING WOLF", "30 points")
-
-The unit carrying this standard gains the Devastating Charge special rule.
-
-#namecost("WINDRIDER BANNER", "30 points")
-
-The unit carrying this standard gains a Magical Ward (4+) against all missile attacks with Strength 4 or less.
-
-#namecost("STANDARD OF THE OPEN STEPPE", "25 points")
-
-The unit carrying this standard may add +D6" to their charge range.
-
-#namecost("BANNER OF THE GREAT WOLF", "25 points")
-
-All mounts in a unit carrying this banner gain +1 to their Strength.
-
-#namecost("CRAVEN BANNER", "10 points")
-
-The unit carrying this standard may re-roll its Flee distance (before your opponent rolls their Charge/Pursuit distance).
+#magic-standard("CRAVEN BANNER", 10)[The unit carrying this standard may re-roll its Flee distance (before your opponent rolls their Charge/Pursuit distance).]
+]
 
 = Characters
 

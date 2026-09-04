@@ -397,367 +397,197 @@ At the beginning of the Close Combat round, all units in base contact with the m
 
 Model on foot only. The model gains Movement 10 and the Swiftstride special rule.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Vampire Counts. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Vampire Counts. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon")[
+#magic-weapon("FROSTBLADE", 60)[The wielder gains the Ice Attacks and Multiple Wounds (D6) special rules.]
 
-#entry("MAGIC WEAPONS")
-#namecost("FROSTBLADE", "60 points")
+#magic-weapon("SKABSCRATH", 40)[The bearer has the Devastating Charge and Frenzy special rules, and all close combat attacks made by the bearer have the Flaming Attacks special rule. In addition, the bearer of Skabscrath gains the Death Shriek special rule.]
 
-The wielder gains the Ice Attacks and Multiple Wounds (D6) special rules.
+#magic-weapon("SLAKING BLADE", 40)[The wielder of this weapon gains +1 Strength and Attacks at the end of each close combat phase in which they have inflicted at least 1 unsaved Wound (up to a maximum of +3). This bonus lasts for the remainder of the game.]
 
-#namecost("SKABSCRATH", "40 points")
+#magic-weapon("DREADLANCE", 35, type: "Heavy lance")[All attacks with this weapon automatically Hit.]
 
-The bearer has the Devastating Charge and Frenzy special rules, and all close combat attacks made by the bearer have the Flaming Attacks special rule. In addition, the bearer of Skabscrath gains the Death Shriek special rule.
+#magic-weapon("ASP BOW", 25, type: "Bow")[All shots from this item are resolved at Strength 4 with the Poisoned Attacks and Sniper special rules.]
 
-#namecost("SLAKING BLADE", "40 points")
+#magic-weapon("SLITTER", 25, type: "Additional hand weapon")[This adds one special attack after the wielder has made their normal attacks. Roll a D3; if the result is higher than the remaining number of Wounds of the target, the target is instantly slain with no saves allowed.]
 
-The wielder of this weapon gains +1 Strength and Attacks at the end of each close combat phase in which they have inflicted at least 1 unsaved Wound (up to a maximum of +3). This bonus lasts for the remainder of the game.
+#magic-weapon("KEENING BONE", 20, only: "Strigoi")[Throwing weapon. All shots with this weapon automatically Hit. Characters may take this item despite not normally being allowed to take throwing weapons.]
 
-#namecost("DREADLANCE", "35 points")
+#magic-weapon("REAPER OF SORROWS", 15, only: "Cairn Wraith", type: "Great weapon")[All attacks with this weapon automatically Wound with no saves allowed.]
 
-Heavy lance. All attacks with this weapon automatically Hit.
+#magic-weapon("SWORD OF KINGS", 15, only: "Wight Kings")[This item makes the model's Killing Blow special rule take effect on a 5+.]
 
-#namecost("ASP BOW", "25 points")
+#magic-weapon("THE BALEFIRE SPIKE", 15, type: "Heavy lance")[This item gives the wielder the Devastating Charge and Flaming Attacks special rules.]
 
-Bow. All shots from this item are resolved at Strength 4 with the Poisoned Attacks and Sniper special rules.
+#magic-weapon("SHADOW'S EDGE", 10)[For every natural 6 rolled To Hit with this weapon, that Attack has the Ignores Armour Saves and Multiple Wounds (D3) special rules.]
+]
 
-#namecost("SLITTER", "25 points")
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF NIGHT", 50, only: "Von Carstein model on foot", type: "Heavy armour")[This item causes any missile attacks targeted at the wearer or any unit they are with to suffer \-1 To Hit.]
 
-Additional hand weapon. This adds one special attack after the wielder has made their normal attacks. Roll a D3; if the result is higher than the remaining number of Wounds of the target, the target is instantly slain with no saves allowed.
+#magic-armour("THE FLAYED HAUBERK", 45, only: "Model on foot", type: "Heavy armour")[This item gives the wearer a 2+ armour save that cannot be improved by any means.]
 
-#namecost("KEENING BONE", "20 points")
+#magic-armour("HELM OF COMMANDMENT", 25)[This item gives the wearer a 6+ armour save. If the wearer is not engaged in close combat at the start of the Close Combat phase, one friendly Undead unit (including mounts) within 12" may use the wearer's unmodified Weapon Skill instead of their own that round.]
 
-Strigoi only. Throwing weapon. All shots with this weapon automatically Hit. Characters may take this item despite not normally being allowed to take throwing weapons.
+#magic-armour("THE SCABBING PLATE", 35, type: "Heavy armour")[The wearer of this armour automatically restores 1 Wound lost during the battle at the end of each round of close combat in which it has inflicted one or more unsaved Wounds.]
 
-#namecost("REAPER OF SORROWS", "15 points")
+#magic-armour("THE ACCURSED ARMOUR", 30, type: "Heavy armour")[This item gives the wearer +1 Toughness, but makes them suffer \-1 Weapon Skill and Initiative.]
 
-Cairn Wraith only. Great weapon. All attacks with this weapon automatically Wound with no saves allowed.
+#magic-armour("THE ARMOUR OF BLOOD", 30, only: "Blood Dragon", type: "Heavy armour")[This item allows the wielder to automatically regain Wounds through the Red Thirst.]
 
-#namecost("SWORD OF KINGS", "15 points")
+#magic-armour("THE RED CASKET", 30, only: "Blood Dragon", type: "Heavy armour")[The wearer of this armour gains the Frenzy special rule.]
 
-Wight Kings only. This item makes the model's Killing Blow special rule take effect on a 5+.
+#magic-armour("WAILING HELM", 25)[This item gives the wearer a 6+ armour save and the Terror special rule.]
 
-#namecost("THE BALEFIRE SPIKE", "15 points")
+#magic-armour("THE CADAVEROUS CUIRASS", 25, only: "Vampires", type: "Heavy armour")[This item gives the wearer the Immunity (Killing Blow) special rule.]
 
-Heavy lance. This item gives the wielder the Devastating Charge and Flaming Attacks special rules.
+#magic-armour("ARMOUR OF BONE", 15, type: "Medium armour")[When the wearer fails their first armour save (or if they are wounded by an attack which ignores armour saves), the Armour of Bone crumbles to dust and is destroyed, but the Wound is ignored. This armour may be taken by Necromancers despite them normally not being allowed to take armour.]
 
-#namecost("SHADOW'S EDGE", "10 points")
+#magic-armour("THE CURSED SHIELD OF MOUSILLON", 10, type: "Shield")[This item causes one enemy model in base contact of your choice to lose 1 Attack. In addition, the bearer gains the Hatred (Bretonnia) special rule, and all models in _Warhammer: Bretonnia_ have the Hatred special rule against the bearer.]
+]
 
-For every natural 6 rolled To Hit with this weapon, that Attack has the Ignores Armour Saves and Multiple Wounds (D3) special rules.
+#magic-item-section("talisman")[
+#talisman("NIGHTSHROUD", 50, only: "Infantry or Cavalry")[Enemy models in base contact with the wearer lose all Strength bonuses conferred from normal and magical weapons, and are subject to the Always Strikes Last special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF NIGHT", "50 points")
+#talisman("TALISMAN OF THE NADIR", 30)[All friendly units within 12" of the bearer of this item gain the Magic Resistance (1) special rule.]
 
-Von Carstein model on foot only. Heavy armour. This item causes any missile attacks targeted at the wearer or any unit they are with to suffer \-1 To Hit.
+#talisman("THE GEM OF BLOOD", 25, only: "Vampires", one-use: true)[The Gem of Blood activates when the bearer suffers their first Wound in close combat (before saves). Roll a D6; on a roll of a 1 the wearer suffers the Wound as normal, and an additional Wound with no saves allowed. On a 2+ the Wound is saved, and is rebounded onto the model that caused it with no saves allowed.]
 
-#namecost("THE FLAYED HAUBERK", "45 points")
+#talisman("SPLINTERVANE BROACH", 25, only: "Strigoi")[All enemy Wizards within 18" of the bearer of this item suffer \-1 to casting penalty.]
 
-Model on foot only. Heavy armour. This item gives the wearer a 2+ armour save that cannot be improved by any means.
+#talisman("WRISTBANDS OF BLACK GOLD", 25)[The Wristbands of Black Gold gives the wearer a Magical Ward (3+) against all missile attacks.]
 
-#namecost("HELM OF COMMANDMENT", "25 points")
+#talisman("CHIROPTERAN CLOAK", 15, only: "Von Carstein")[If a model attacking the wearer of this item rolls a natural 1 To Hit in close combat, they suffer a Strength 4 Hit.]
 
-This item gives the wearer a 6+ armour save. If the wearer is not engaged in close combat at the start of the Close Combat phase, one friendly Undead unit (including mounts) within 12" may use the wearer's unmodified Weapon Skill instead of their own that round.
+#talisman("CLOAK OF THE WAXING MOON", 15, only: "Cairn Wraith")[The wearer of this item can only be Hit on To Hit rolls of natural 6's.]
+]
 
-#namecost("THE SCABBING PLATE", "35 points")
+#magic-item-section("arcane", columns: 2)[
+#arcane-item("THE DERMAL ROBE", 70, type: "Relic")[The wearer gains a +1 casting and dispel bonus. In addition, they gain +1 to their channelling rolls.]
 
-Heavy armour. The wearer of this armour automatically restores 1 Wound lost during the battle at the end of each round of close combat in which it has inflicted one or more unsaved Wounds.
+#arcane-item("STAFF OF RAUKHAMON", 45, only: "Necrarch", type: "Staff", bound: true)[This staff contains the _Hellish Vigour_ spell from the Lore of Necromancy. Roll a D6 each time the Staff is used. On a roll of 1, the Staff is temporarily exhausted and cannot cast this bound spell for the rest of the battle. In addition, all enemy units within 6" of the Staff\`s bearer suffer a \-1 penalty on their rolls To Hit in close combat.]
 
-#namecost("THE ACCURSED ARMOUR", "30 points")
+#arcane-item("SCEPTRE DE NOIROT", 40, type: "Staff")[The bearer of this item may re-roll one dice of their choice when determining the number of Zombies or Skeletons raised with the _Invocation of Nehek_ and _Raise Dead_ spells from the Lore of Necromancy.]
 
-Heavy armour. This item gives the wearer +1 Toughness, but makes them suffer \-1 Weapon Skill and Initiative.
+#arcane-item("BOOK OF ARKHAN", 35, type: "Relic", bound: true)[This item casts the _Vanhel's Danse Macabre_ spell from the Lore of Necromancy.]
 
-#namecost("THE ARMOUR OF BLOOD", "30 points")
+#arcane-item("CARRION WAND", 35, only: "Strigoi", type: "Staff")[The wielder counts their Wizard level as being 1 higher than normal.]
 
-Blood Dragon only. Heavy armour. This item allows the wielder to automatically regain Wounds through the Red Thirst.
-
-#namecost("THE RED CASKET", "30 points")
-
-Blood Dragon only. Heavy armour. The wearer of this armour gains the Frenzy special rule.
-
-#namecost("WAILING HELM", "25 points")
-
-This item gives the wearer a 6+ armour save and the Terror special rule.
-
-#namecost("THE CADAVEROUS CUIRASS", "25 points")
-
-Vampires only. Heavy armour. This item gives the wearer the Immunity (Killing Blow) special rule.
-
-#namecost("ARMOUR OF BONE", "15 points")
-
-Medium armour. When the wearer fails their first armour save (or if they are wounded by an attack which ignores armour saves), the Armour of Bone crumbles to dust and is destroyed, but the Wound is ignored. This armour may be taken by Necromancers despite them normally not being allowed to take armour.
-
-#namecost("THE CURSED SHIELD OF MOUSILLON", "10 points")
-
-Shield. This item causes one enemy model in base contact of your choice to lose 1 Attack. In addition, the bearer gains the Hatred (Bretonnia) special rule, and all models in _Warhammer: Bretonnia_ have the Hatred special rule against the bearer.
-
-#entry("TALISMANS")
-#namecost("NIGHTSHROUD", "50 points")
-
-Infantry or Cavalry only. Enemy models in base contact with the wearer lose all Strength bonuses conferred from normal and magical weapons, and are subject to the Always Strikes Last special rule.
-
-#namecost("TALISMAN OF THE NADIR", "30 points")
-
-All friendly units within 12" of the bearer of this item gain the Magic Resistance (1) special rule.
-
-#namecost("THE GEM OF BLOOD", "25 points")
-
-Vampires only. One use only. The Gem of Blood activates when the bearer suffers their first Wound in close combat (before saves). Roll a D6; on a roll of a 1 the wearer suffers the Wound as normal, and an additional Wound with no saves allowed. On a 2+ the Wound is saved, and is rebounded onto the model that caused it with no saves allowed.
-
-#namecost("SPLINTERVANE BROACH", "25 points")
-
-Strigoi only. All enemy Wizards within 18" of the bearer of this item suffer \-1 to casting penalty.
-
-#namecost("WRISTBANDS OF BLACK GOLD", "25 points")
-
-The Wristbands of Black Gold gives the wearer a Magical Ward (3+) against all missile attacks.
-
-#namecost("CHIROPTERAN CLOAK", "15 points")
-
-Von Carstein only. If a model attacking the wearer of this item rolls a natural 1 To Hit in close combat, they suffer a Strength 4 Hit.
-
-#namecost("CLOAK OF THE WAXING MOON", "15 points")
-
-Cairn Wraith only. The wearer of this item can only be Hit on To Hit rolls of natural 6's.
-
-#entry("ARCANE ITEMS")
-#columns(2)[
-#namecost("THE DERMAL ROBE", "70 points")
-
-Relic. The wearer gains a +1 casting and dispel bonus. In addition, they gain +1 to their channelling rolls.
-
-#namecost("STAFF OF RAUKHAMON", "45 points")
-
-Necrarch only. Staff. Bound Spell. This staff contains the _Hellish Vigour_ spell from the Lore of Necromancy. Roll a D6 each time the Staff is used. On a roll of 1, the Staff is temporarily exhausted and cannot cast this bound spell for the rest of the battle. In addition, all enemy units within 6" of the Staff\`s bearer suffer a \-1 penalty on their rolls To Hit in close combat.
-
-#namecost("SCEPTRE DE NOIROT", "40 points")
-
-Staff. The bearer of this item may re-roll one dice of their choice when determining the number of Zombies or Skeletons raised with the _Invocation of Nehek_ and _Raise Dead_ spells from the Lore of Necromancy.
-
-#namecost("BOOK OF ARKHAN", "35 points")
-
-Relic. Bound Spell. This item casts the _Vanhel's Danse Macabre_ spell from the Lore of Necromancy.
-
-#namecost("CARRION WAND", "35 points")
-
-Strigoi only. Staff. The wielder counts their Wizard level as being 1 higher than normal.
-
-#namecost("THE CURSED BOOK", "35 points")
-
-Relic. At the beginning of the bearer's Magic phase, the bearer may choose to sacrifice one power dice from the pool. If they do so, roll a D6 on the following chart. Assuming there is a viable target for the indicated spell, that spell is automatically cast at its minimum casting value, requiring no power dice. A dispel attempt can be made as normal.
+#arcane-item("THE CURSED BOOK", 35, type: "Relic")[At the beginning of the bearer's Magic phase, the bearer may choose to sacrifice one power dice from the pool. If they do so, roll a D6 on the following chart. Assuming there is a viable target for the indicated spell, that spell is automatically cast at its minimum casting value, requiring no power dice. A dispel attempt can be made as normal.
 
 #chart((("D6", "Spell Cast"), ("1", "Melkoth's Mystifying Miasma (Lore of
 Shadow)"), ("2", "The Enfeebling Foe (Lore of Shadow)"), ("3", "The Withering (Lore of Shadow)"), ("4", "Portent of Doom (Lore of Heavens)"), ("5", "Doom and Darkness (Lore of Death)"), ("6", "Soulblight (Lore of Death)")))
-#namecost("ROD OF FLAMING DEATH", "35 points")
-
-Bound Spell. Staff. This item casts the _Fulminating Flame Cage_ spell from the Lore of Fire.
-
-#namecost("STAFF OF DAMNATION", "35 points")
-
-Staff. Bound Spell (Level 2, cast on 8+). If cast successfully, this item casts an *augment* spell. All Undead models (including mounts) in friendly units within 6" of the bearer gain +1 Attack until the start of the bearer's next Magic phase.
-
-#namecost("BLACK PERIAPT", "30 points")
-
-Relic. The Black Periapt allows the bearer to save up to two of his army's unused power dice or dispel dice at the end of any Magic phase, and then add them to his side's power or dispel dice pool at the start of the next Magic phase.
-
-#namecost("BLASPHEMOUS TOME", "30 points")
-
-Relic. The bearer of this item gains a +2 casting bonus when using the Lore of Necromancy. However, if they Miscast, they must roll on additional D6 on the Miscast table and discard the lowest result.
-
-#namecost("WYCHLIGHT LANTERN", "30 points")
-
-Charm. One use only. This item can be used during any of your Magic phases. Once used, it allows the bearer to cast one of their spells automatically without using any power dice, at its minimum casting value.
-
-#namecost("AMULET OF SCREAMS", "20 points")
-
-Lahmian only. Relic. Roll a D6 every time an enemy Wizard within 18" successfully casts a spell. On a 1, that Wizard suffer 1 Wound which Ignores Armour saves.
-
-#namecost("CRIMSON GEM OF LAHMIA", "20 points")
-
-Lahmian only. Once per magic phase, while casting spells, the bearer of the Crimson Gem of Lahmia can choose to take a Toughness test. If passed, they may re- roll a single power dice of their choice. If failed, they suffer a Wound with no saves allowed.
-
-#namecost("MIDNIGHT TOME", "20 points")
-
-Charm. One use only. This item can be used when the wearer successfully casts a spell with a casting value of 10 or less. When used, the opponent cannot attempt to dispel it.
-
-#runin[MORBHEG]'#runin[S CLAW 20 points] Von Carstein only. Relic. The wearer of this item gains +2 to cast spells if they have not moved that turn or are not engaged in close combat.
-
-#namecost("STAVE OF SUFFERING", "15 points")
-
-Staff. The bearer of this item gains a +1 casting bonus for each spell that has successfully inflicted one or more unsaved Wounds the same Magic Phase. This bonus is cumulative.
 ]
 
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("MIDNIGHT AMULET", "40 points")
+#arcane-item("ROD OF FLAMING DEATH", 35, bound: true)[Staff. This item casts the _Fulminating Flame Cage_ spell from the Lore of Fire.]
 
-One use only. This item can be used in any of your Magic phases. Pick one enemy unit within 12"; that unit suffers D6 Strength 4 Hits multiplied by the number of the current game turn.
+#arcane-item("STAFF OF DAMNATION", 35, type: "Staff", bound: (level: 2, cast: "8+"))[If cast successfully, this item casts an *augment* spell. All Undead models (including mounts) in friendly units within 6" of the bearer gain +1 Attack until the start of the bearer's next Magic phase.]
 
-#namecost("THE CASKET OF AGES", "35 points")
+#arcane-item("BLACK PERIAPT", 30, type: "Relic")[The Black Periapt allows the bearer to save up to two of his army's unused power dice or dispel dice at the end of any Magic phase, and then add them to his side's power or dispel dice pool at the start of the next Magic phase.]
 
-Bound Spell (Level 1, cast on 6+). The Casket of Ages contains a *direct damage* spell that targets one enemy model in base contact. The target model suffers one Wound which Ignores Armour Saves. If the Wound is not saved, the victim must pass a Toughness test or suffer an additional Wound with no saves allowed.
+#arcane-item("BLASPHEMOUS TOME", 30, type: "Relic")[The bearer of this item gains a +2 casting bonus when using the Lore of Necromancy. However, if they Miscast, they must roll on additional D6 on the Miscast table and discard the lowest result.]
 
-#namecost("TALON OF DEATH", "35 points")
+#arcane-item("WYCHLIGHT LANTERN", 30, type: "Charm", one-use: true)[This item can be used during any of your Magic phases. Once used, it allows the bearer to cast one of their spells automatically without using any power dice, at its minimum casting value.]
 
-All enemy models in base contact with the bearer must pass a Toughness test or suffer a Wound which Ignores Armour saves at the start of each round of combat.
+#arcane-item("AMULET OF SCREAMS", 20, only: "Lahmian", type: "Relic")[Roll a D6 every time an enemy Wizard within 18" successfully casts a spell. On a 1, that Wizard suffer 1 Wound which Ignores Armour saves.]
 
-#namecost("DREADBOLT RING", "30 points")
+#arcane-item("CRIMSON GEM OF LAHMIA", 20, only: "Lahmian")[Once per magic phase, while casting spells, the bearer of the Crimson Gem of Lahmia can choose to take a Toughness test. If passed, they may re- roll a single power dice of their choice. If failed, they suffer a Wound with no saves allowed.]
 
-For each unsaved Wound the bearer of this item inflicts in close combat, one enemy unit in base contact suffer D3 Strength 3 Attacks with the Flaming Attacks special rule after they have resolved their normal attacks.
+#arcane-item("MIDNIGHT TOME", 20, type: "Charm", one-use: true)[This item can be used when the wearer successfully casts a spell with a casting value of 10 or less. When used, the opponent cannot attempt to dispel it.]
 
-#namecost("BREATH OF THE VOID MAW", "25 points")
+#arcane-item("MORBHEG'S CLAW", 20, only: "Von Carstein", type: "Relic")[The wearer of this item gains +2 to cast spells if they have not moved that turn or are not engaged in close combat.]
 
-Necrarch only. One use only. This item can be used at the start of any Magic phase. Once used, pick one enemy unit within 6" that is not engaged in close combat. Roll a D6; on a 2+ the target unit suffer a number of Strength 5 Hits equal to the roll.
-
-#namecost("FRAGMENT OF THE KEEP", "25 points")
-
-Blood Dragon only. The bearer gains the Always Strikes First special rule.
-
-#namecost("THE GRIM GARLAND", "25 points")
-
-Strigoi only. Enemy units in base contact with the bearer must roll 3D6 for their Leadership tests and discard the lowest result.
-
-#namecost("LIGHTSHARD OF THE HARVEST MOON", "25 points")
-
-One use only. This item can be used at the start of any close combat phase. The bearer and any unit they are with may re-roll failed rolls To Hit for the duration of the turn.
-
-#namecost("PENDANT OF THE FELL WIND", "25 points")
-
-The character and any unit they are with gain +1 Movement.
-
-#namecost("THE SACCHARINE GOBLET", "25 points")
-
-Vampire only. This item can be used at the start of any round of close combat. When used, the bearer gains +1 To Hit and To Wound. However, for each of their Attacks that does not inflict an unsaved Wound, they must pass a Toughness test or suffer one Wound with no saves allowed at the end of the combat (before Break tests are taken).
-
-#namecost("SIGIL OF THE SANGUINE THRONE", "25 points")
-
-Von Carstein only. The bearer and any friendly Vampire unit within 12" may re-roll one of their charge distance dice.
-
-#namecost("THE FURIOUS CROWN", "20 points")
-
-In any turn in which the bearer of this item makes a successful charge, they gain +1 Attack for every enemy model in base contact, up to a maximum of +3.
-
-#namecost("GRAVE-SAND SHARD", "20 points")
-
-Blood Dragon only. One use only. This item can be used in any of your Magic phases. Once used, it automatically restores Wounds to any unit they are with following the rules for _Invocation of Nehek_ from the Lore of Necromancy.
-
-#namecost("MEDAL OF MADNESS", "20 points")
-
-Strigoi only. The bearer gains the Inspiring Presence (6) special rule.
-
-#namecost("SOULFIRE RING", "20 points")
-
-Cairn Wraith only. For every unsaved Wound caused in close combat by the bearer, they and/or their unit regain 1 Wound, just like a summoning spell.
-
-#namecost("BLOOD RIVER CHALICE", "15 points")
-
-Vampire only. One use only. This item can be used at the start of the controlling player's turn. The model immediately recovers all lost Wounds (ignoring any additional Wounds from mounts) up to their starting value.
-
-#namecost("BRAZIER OF NAGASHIZZAR", "15 points")
-
-Cairn Wraith only. The bearer and any unit they join may re-roll failed charge and pursuit distances.
-
-#namecost("MIRROR OF ECHOING FAILURES", "15 points")
-
-Any Wizard within 18" of the bearer that fails a spellcasting attempt (not including dispels) suffers one Wound which Ignores Armour Saves.
-
-#namecost("NATHMAR'S SKULL", "15 points")
-
-Master Necromancer or Necromancer only. All friendly units of Skeletons and Zombies within 12" of the bearer may March despite being Undead.
-
-#namecost("RUBY VIAL", "15 points")
-
-Vampire only. One use only. This item can be used at the start of any of your turns. Until the start of your next turn, all enemy units within 18" of the bearer suffer \-1 to their Movement.
-
-#namecost("SIGNET OF THE FIRST COURT", "15 points")
-
-Strigoi only. The bearer of this item gains the Killing Blow special rule.
-
-#namecost("THE BILIOUS DECANTER", "10 points")
-
-Ghoul or Strigoi only. One use only. This item can be used at the start of any close combat phase. The bearer gains the Frenzy special rule and +1 Attack for the remainder of the game. However, they will automatically fail any Berserk Rage tests and must always Pursue.
-
-#namecost("ORB OF ENCHANTMENT", "10 points")
-
-Lahmian only. One enemy model in base contact (chosen by the bearer) must take a Leadership test at the start of each round of close combat. If failed, they may not attack this turn.
-
-#namecost("TALISMAN OF THE LYCNI", "10 points")
-
-Vampire only. Model on foot only. The bearer of this item gains +4 to their Movement value and the Swiftstride special rule. In addition, they may join units of Dire Wolves.
-
-#namecost("HEART OF THE GIANT FEAST", "10 points")
-
-Vampire only. One use only. This item can be used at the start of any close combat phase. The bearer can re- roll failed To Wound rolls for the duration of the turn.
-
-#namecost("SHARD OF NIGHT", "5 points")
-
-Vampire only. One use only. This item may be used at the start of any round of Close Combat. When it is, the bearer suffers 1 Wound with no saves allowed. In exchange, they gain +2 Strength for the duration of this round of close combat.
+#arcane-item("STAVE OF SUFFERING", 15, type: "Staff")[The bearer of this item gains a +1 casting bonus for each spell that has successfully inflicted one or more unsaved Wounds the same Magic Phase. This bonus is cumulative.]
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("THE DRAKENHOF BANNER", "75 points")
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("MIDNIGHT AMULET", 40, one-use: true)[This item can be used in any of your Magic phases. Pick one enemy unit within 12"; that unit suffers D6 Strength 4 Hits multiplied by the number of the current game turn.]
 
-Von Carstein or Wight only. May only be taken if your army includes a von Carstein Vampire Character. All Undead models (excluding mounts) in the unit carrying this standard gain the Regeneration (4+) special rule.
+#enchanted-item("THE CASKET OF AGES", 35, bound: (level: 1, cast: "6+"))[The Casket of Ages contains a *direct damage* spell that targets one enemy model in base contact. The target model suffers one Wound which Ignores Armour Saves. If the Wound is not saved, the victim must pass a Toughness test or suffer an additional Wound with no saves allowed.]
 
-#namecost("THE FLAG OF BLOOD KEEP", "45 points")
+#enchanted-item("TALON OF DEATH", 35)[All enemy models in base contact with the bearer must pass a Toughness test or suffer a Wound which Ignores Armour saves at the start of each round of combat.]
 
-Blood Knights only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains a Magical Ward (4+) against missile attacks.
+#enchanted-item("DREADBOLT RING", 30)[For each unsaved Wound the bearer of this item inflicts in close combat, one enemy unit in base contact suffer D3 Strength 3 Attacks with the Flaming Attacks special rule after they have resolved their normal attacks.]
 
-#namecost("BANNER OF THE BARROWS", "40 points")
+#enchanted-item("BREATH OF THE VOID MAW", 25, only: "Necrarch", one-use: true)[This item can be used at the start of any Magic phase. Once used, pick one enemy unit within 6" that is not engaged in close combat. Roll a D6; on a 2+ the target unit suffer a number of Strength 5 Hits equal to the roll.]
 
-All Wights in the same unit as this standard receive +1 To Hit in close combat. This does not apply to mounts.
+#enchanted-item("FRAGMENT OF THE KEEP", 25, only: "Blood Dragon")[The bearer gains the Always Strikes First special rule.]
 
-#namecost("HELL BANNER", "40 points")
+#enchanted-item("THE GRIM GARLAND", 25, only: "Strigoi")[Enemy units in base contact with the bearer must roll 3D6 for their Leadership tests and discard the lowest result.]
 
-All enemy units with Line of Sight to this standard suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).
+#enchanted-item("LIGHTSHARD OF THE HARVEST MOON", 25, one-use: true)[This item can be used at the start of any close combat phase. The bearer and any unit they are with may re-roll failed rolls To Hit for the duration of the turn.]
 
-#namecost("CURSED PENNANT OF MOUSILLON", "35 points")
+#enchanted-item("PENDANT OF THE FELL WIND", 25)[The character and any unit they are with gain +1 Movement.]
 
-Blood Dragon, Skeletons, Wights or Blood Knights only. May only be taken if your army includes a Blood Dragon Vampire Character. Any enemy unit that is in base contact with the unit carrying this standard must re-roll 6's when rolling To Hit, To Wound and when taking armour saves.
+#enchanted-item("THE SACCHARINE GOBLET", 25, only: "Vampire")[This item can be used at the start of any round of close combat. When used, the bearer gains +1 To Hit and To Wound. However, for each of their Attacks that does not inflict an unsaved Wound, they must pass a Toughness test or suffer one Wound with no saves allowed at the end of the combat (before Break tests are taken).]
 
-#namecost("BANNER OF DOOM", "25 points")
+#enchanted-item("SIGIL OF THE SANGUINE THRONE", 25, only: "Von Carstein")[The bearer and any friendly Vampire unit within 12" may re-roll one of their charge distance dice.]
 
-All Undead models (excluding mounts) in the unit carrying this standard gains the Regeneration (5+) special rule against missile attacks.
+#enchanted-item("THE FURIOUS CROWN", 20)[In any turn in which the bearer of this item makes a successful charge, they gain +1 Attack for every enemy model in base contact, up to a maximum of +3.]
 
-#namecost("BANNER OF THE DEAD LEGION", "25 points")
+#enchanted-item("GRAVE-SAND SHARD", 20, only: "Blood Dragon", one-use: true)[This item can be used in any of your Magic phases. Once used, it automatically restores Wounds to any unit they are with following the rules for _Invocation of Nehek_ from the Lore of Necromancy.]
 
-All Undead models (including mounts) in the unit carrying this standard counts as having twice their actual Unit Strength in close combat.
+#enchanted-item("MEDAL OF MADNESS", 20, only: "Strigoi")[The bearer gains the Inspiring Presence (6) special rule.]
 
-#namecost("BANNER OF HELLFIRE", "25 points")
+#enchanted-item("SOULFIRE RING", 20, only: "Cairn Wraith")[For every unsaved Wound caused in close combat by the bearer, they and/or their unit regain 1 Wound, just like a summoning spell.]
 
-Bound Spell. This banner contains the _Flaming Sword of Rhuin_ spell from the Lore of Fire. It can only be cast on the unit carrying this standard.
+#enchanted-item("BLOOD RIVER CHALICE", 15, only: "Vampire", one-use: true)[This item can be used at the start of the controlling player's turn. The model immediately recovers all lost Wounds (ignoring any additional Wounds from mounts) up to their starting value.]
 
-#namecost("THE FLAYED PENNANT", "25 points")
+#enchanted-item("BRAZIER OF NAGASHIZZAR", 15, only: "Cairn Wraith")[The bearer and any unit they join may re-roll failed charge and pursuit distances.]
 
-Strigoi or Ghoul only. The unit carrying this standard gains the Frenzy special rule.
+#enchanted-item("MIRROR OF ECHOING FAILURES", 15)[Any Wizard within 18" of the bearer that fails a spellcasting attempt (not including dispels) suffers one Wound which Ignores Armour Saves.]
 
-#namecost("INFERNAL STANDARD", "25 points")
+#enchanted-item("NATHMAR'S SKULL", 15, only: "Master Necromancer or Necromancer")[All friendly units of Skeletons and Zombies within 12" of the bearer may March despite being Undead.]
 
-Wight King with Battle Standard only. The model carrying this standard gains the Hold Your Ground (6) special rule.
+#enchanted-item("RUBY VIAL", 15, only: "Vampire", one-use: true)[This item can be used at the start of any of your turns. Until the start of your next turn, all enemy units within 18" of the bearer suffer \-1 to their Movement.]
 
-#namecost("ROYAL STANDARD OF STRIGOS", "25 points")
+#enchanted-item("SIGNET OF THE FIRST COURT", 15, only: "Strigoi")[The bearer of this item gains the Killing Blow special rule.]
 
-May only be taken if your army includes a Strigoi Vampire Character. Strigoi or Ghoul only. The unit carrying this standard gains the Hatred special rule.
+#enchanted-item("THE BILIOUS DECANTER", 10, only: "Ghoul or Strigoi", one-use: true)[This item can be used at the start of any close combat phase. The bearer gains the Frenzy special rule and +1 Attack for the remainder of the game. However, they will automatically fail any Berserk Rage tests and must always Pursue.]
 
-#namecost("THE SCREAMING BANNER", "25 points")
+#enchanted-item("ORB OF ENCHANTMENT", 10, only: "Lahmian")[One enemy model in base contact (chosen by the bearer) must take a Leadership test at the start of each round of close combat. If failed, they may not attack this turn.]
 
-Enemy units on base contact with the unit carrying this standard must pass a Leadership test at the start of each close combat phase. If failed, they require 6’s To Hit for the duration of the phase.
+#enchanted-item("TALISMAN OF THE LYCNI", 10, only: "Vampire")[Model on foot only. The bearer of this item gains +4 to their Movement value and the Swiftstride special rule. In addition, they may join units of Dire Wolves.]
 
-#namecost("ICON OF VENGEANCE", "20 points")
+#enchanted-item("HEART OF THE GIANT FEAST", 10, only: "Vampire", one-use: true)[This item can be used at the start of any close combat phase. The bearer can re- roll failed To Wound rolls for the duration of the turn.]
 
-Any Undead model (including mounts) in the unit carrying this standard that is slain in close combat may immediately make an additional Attack, even if they have already attacked this turn.
+#enchanted-item("SHARD OF NIGHT", 5, only: "Vampire", one-use: true)[This item may be used at the start of any round of Close Combat. When it is, the bearer suffers 1 Wound with no saves allowed. In exchange, they gain +2 Strength for the duration of this round of close combat.]
+]
 
-#namecost("STANDARD OF HELLISH VIGOUR", "15 points")
+#magic-item-section("standard")[
+#magic-standard("THE DRAKENHOF BANNER", 75, only: "Von Carstein or Wight")[May only be taken if your army includes a von Carstein Vampire Character. All Undead models (excluding mounts) in the unit carrying this standard gain the Regeneration (4+) special rule.]
 
-Undead only. May only be taken if your army includes a Necrarch Vampire Character. The unit carrying this standard may March despite being Animated Constructs.
+#magic-standard("THE FLAG OF BLOOD KEEP", 45, only: "Blood Knights")[May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains a Magical Ward (4+) against missile attacks.]
 
-#namecost("BANNER OF THE ENDLESS NIGHTMARE", "10 points")
+#magic-standard("BANNER OF THE BARROWS", 40)[All Wights in the same unit as this standard receive +1 To Hit in close combat. This does not apply to mounts.]
 
-The unit carrying this standard counts as having one more rank than normal for the purpose of combat resolution.
+#magic-standard("HELL BANNER", 40)[All enemy units with Line of Sight to this standard suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).]
 
-#namecost("STANDARD OF EVERLASTING DEATH", "10 points")
+#magic-standard("CURSED PENNANT OF MOUSILLON", 35, only: "Blood Dragon, Skeletons, Wights or Blood Knights")[May only be taken if your army includes a Blood Dragon Vampire Character. Any enemy unit that is in base contact with the unit carrying this standard must re-roll 6's when rolling To Hit, To Wound and when taking armour saves.]
 
-The unit carrying this standard suffers one fewer Wound than they normally would due to the Unstable special rule.
+#magic-standard("BANNER OF DOOM", 25)[All Undead models (excluding mounts) in the unit carrying this standard gains the Regeneration (5+) special rule against missile attacks.]
+
+#magic-standard("BANNER OF THE DEAD LEGION", 25)[All Undead models (including mounts) in the unit carrying this standard counts as having twice their actual Unit Strength in close combat.]
+
+#magic-standard("BANNER OF HELLFIRE", 25, bound: true)[This banner contains the _Flaming Sword of Rhuin_ spell from the Lore of Fire. It can only be cast on the unit carrying this standard.]
+
+#magic-standard("THE FLAYED PENNANT", 25, only: "Strigoi or Ghoul")[The unit carrying this standard gains the Frenzy special rule.]
+
+#magic-standard("INFERNAL STANDARD", 25, only: "Wight King with Battle Standard")[The model carrying this standard gains the Hold Your Ground (6) special rule.]
+
+#magic-standard("ROYAL STANDARD OF STRIGOS", 25)[May only be taken if your army includes a Strigoi Vampire Character. Strigoi or Ghoul only. The unit carrying this standard gains the Hatred special rule.]
+
+#magic-standard("THE SCREAMING BANNER", 25)[Enemy units on base contact with the unit carrying this standard must pass a Leadership test at the start of each close combat phase. If failed, they require 6’s To Hit for the duration of the phase.]
+
+#magic-standard("ICON OF VENGEANCE", 20)[Any Undead model (including mounts) in the unit carrying this standard that is slain in close combat may immediately make an additional Attack, even if they have already attacked this turn.]
+
+#magic-standard("STANDARD OF HELLISH VIGOUR", 15, only: "Undead")[May only be taken if your army includes a Necrarch Vampire Character. The unit carrying this standard may March despite being Animated Constructs.]
+
+#magic-standard("BANNER OF THE ENDLESS NIGHTMARE", 10)[The unit carrying this standard counts as having one more rank than normal for the purpose of combat resolution.]
+
+#magic-standard("STANDARD OF EVERLASTING DEATH", 10)[The unit carrying this standard suffers one fewer Wound than they normally would due to the Unstable special rule.]
+]
 
 = CHARACTERS
 
