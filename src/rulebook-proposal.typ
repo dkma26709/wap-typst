@@ -5735,11 +5735,11 @@ The To Wound chart's two-roll boxes would go, and so would its three boxes that 
 
 #field("Why", "")
 
-The second half of the chart quietly switches off every To Wound modifier in the game. In the single-roll band a +1 is worth a sixth of the dice, sixteen and a half points of probability at every step of the chart. In the two-roll band the same +1 is worth one thirty-sixth, under three points, because all it can do is improve a second die that is only reached after a 6.
+Poisoned Attacks is a +1 To Wound modifier, and its own rule adds that armour saves are still modified by the Strength of the attack as normal. A +1 Strength bonus moves the same single step on this chart and improves the armour modifier as well, so the poison is a Strength bonus with the useful half taken out. Counted across the chart there is nowhere it is the better of the two: in eighty-eight boxes the two are identical for wounding, in two the poison is worse, and in none is it better.
 
-Poisoned Attacks is a flat +1 To Wound, so it is worth six times less against the tough targets it exists to trouble than against the infantry that never needed poisoning. A rule that pays least exactly where it is meant to matter is not a rule anybody designed on purpose.
+Capping the chart is what gives it somewhere to be the right answer. Once the high-Toughness boxes are a flat 6, another point of Strength stops improving the roll there while a To Wound modifier still does, and the poison becomes the better buy in twenty-eight of them. Those twenty-eight are exactly the corner where a thing is too tough for weight of blow to matter, which is what poison was always supposed to be for.
 
-It is also the one place the chart asks for a roll it has already decided. Three boxes permit no attempt whatever, so the dice never leave the hand and the modifier on the attack has nothing to modify.
+The chart's other oddity is that it asks for a roll it has already decided. Three boxes permit no attempt whatever, so the dice never leave the hand and the modifier on the attack has nothing to modify.
 
 #field("The argument against", "")
 
@@ -5755,7 +5755,7 @@ One chart, with twenty-eight boxes rewritten and three filled in, and the paragr
 
 #minitable(("Attack", "Today", "Capped"), ("Strength 3 against Toughness 6", "6 then 2+, 13.9%", "6+, 16.7%", "Strength 1 against Toughness 8", "6 then 6+, 2.8%", "6+, 16.7%", "Strength 1 against Toughness 9", "no attempt permitted", "6+, 16.7%"))
 
-And what it does for the modifier: Poisoned Attacks on that Strength 1 attack against Toughness 8 currently buys 2.8 points of probability, taking it from 2.8 to 5.6. Capped, it buys 16.7, taking a flat 6 to a flat 5, which is what the same rule buys everybody else on the table.
+And what it does for the modifier: as the chart stands there is no target anywhere against which Poisoned Attacks is a better buy than a point of Strength. Capped, it becomes the better buy in twenty-eight boxes, every one of them in the corner where another point of Strength has stopped helping.
 
 #namecost("Swiftstride should extend the charge, not only insure it", "under discussion")
 
@@ -5763,9 +5763,9 @@ Swiftstride would roll an additional D6 and discard the lowest, in place of re-r
 
 #field("Why", "")
 
-As written the rule is insurance rather than speed, and it is already good at the insurance. Re-rolling 1s lifts a 2D6 charge from a mean of 7 to 7.8 and cuts a hopeless roll of 4 or less from one charge in six to one in seventeen.
+Re-rolling 1s is two throws pretending to be one. You roll, look for 1s, pick those dice back up and throw again, and the charge is not settled until the second throw lands. Rolling three dice and setting the lowest aside is one throw and one glance, nothing conditional about it, and the same motion every time. That is the whole of the case for it.
 
-What it does not do is let a fast thing reach further than a slow one. The long charge of 9 inches or more goes from 27.8 to 37.8 per cent, where discarding the lowest of three dice takes it past half. A unit whose whole identity is closing the gap should threaten ground its neighbours cannot, not merely fail less often over the same ground.
+It also does more of what the rule is named for. Re-rolling 1s has all but removed the hopeless charge already, but it barely moves the long one; discarding the lowest of three lifts a charge of 9 inches or more from a third of the time to better than half, so a fast unit threatens ground its neighbours cannot.
 
 The other half is a trap the book has already patched once and only once. Swiftstride is never issued by a troop type, only by a unit's own entry, so a fast regiment loses the rule outright the moment a character without it joins. The Mixed Unit rule saw this coming and says that Expendable, Swiftstride and Vanguard carry across to a unit's handlers. Nothing extends the same courtesy to a joined character, who is the far commoner case.
 
