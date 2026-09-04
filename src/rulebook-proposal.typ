@@ -5756,3 +5756,31 @@ One chart, with twenty-eight boxes rewritten and three filled in, and the paragr
 #minitable(("Attack", "Today", "Capped"), ("Strength 3 against Toughness 6", "6 then 2+, 13.9%", "6+, 16.7%", "Strength 1 against Toughness 8", "6 then 6+, 2.8%", "6+, 16.7%", "Strength 1 against Toughness 9", "no attempt permitted", "6+, 16.7%"))
 
 And what it does for the modifier: Poisoned Attacks on that Strength 1 attack against Toughness 8 currently buys 2.8 points of probability, taking it from 2.8 to 5.6. Capped, it buys 16.7, taking a flat 6 to a flat 5, which is what the same rule buys everybody else on the table.
+
+#namecost("Swiftstride should extend the charge, not only insure it", "under discussion")
+
+Swiftstride would roll an additional D6 and discard the lowest, in place of re-rolling 1s. The clause requiring every model in the unit to have the rule would also ignore joined characters, so an attached character stops switching it off for the regiment he is trying to help.
+
+#field("Why", "")
+
+As written the rule is insurance rather than speed, and it is already good at the insurance. Re-rolling 1s lifts a 2D6 charge from a mean of 7 to 7.8 and cuts a hopeless roll of 4 or less from one charge in six to one in seventeen.
+
+What it does not do is let a fast thing reach further than a slow one. The long charge of 9 inches or more goes from 27.8 to 37.8 per cent, where discarding the lowest of three dice takes it past half. A unit whose whole identity is closing the gap should threaten ground its neighbours cannot, not merely fail less often over the same ground.
+
+The other half is a trap the book has already patched once and only once. Swiftstride is never issued by a troop type, only by a unit's own entry, so a fast regiment loses the rule outright the moment a character without it joins. The Mixed Unit rule saw this coming and says that Expendable, Swiftstride and Vanguard carry across to a unit's handlers. Nothing extends the same courtesy to a joined character, who is the far commoner case.
+
+#field("The argument against", "")
+
+The measured gap is two thirds of an inch on the mean, which is not obviously worth changing a rule that thirty-two books already print, and it puts a third die on the table for every charge a fast unit makes. The character clause also wants care rather than deletion: ignoring joined characters is right, but a rule that simply asked whether any model in the unit had Swiftstride would let one attached rider make a regiment of infantry fleet, which is a worse trap than the one being fixed.
+
+#field("What it would take", "")
+
+Two sentences in one special rule, and nothing else in the rulebook. Every Swiftstride unit in the corpus charges about two thirds of an inch further on average and reaches a long charge half the time rather than a third, so cavalry-forward lists get a slightly surer opening strike and want watching before anything is repriced.
+
+#field("For example", "")
+
+*The three charges compared.* A 2D6 charge roll, before the unit's Movement is added:
+
+#minitable(("Charge roll", "Mean", "4 or less", "9 or more"), ("Ordinary charge, 2D6", "7.0", "16.7%", "27.8%", "Swiftstride as written", "7.8", "6.0%", "37.8%", "Extra die, lowest discarded", "8.5", "5.1%", "52.3%"))
+
+The middle row is why this is a change of purpose rather than a fix. Re-rolling 1s has all but solved the disastrous roll already, and the column it leaves alone is the one that decides whether a fast unit gets to pick its fight.
