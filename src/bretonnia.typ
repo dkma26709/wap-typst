@@ -221,11 +221,9 @@ If the Knight is not the army's General, models with the Peasant's Duty within 1
 All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.*
-
-#entry("MAGIC WEAPONS")
+#magic-item-section("weapon")[
 #magic-weapon("SILVER LANCE OF THE BLESSED", 70, type: "Heavy lance")[If the model has the Blessing of the Lady, then all attacks with the Silver Lance of the Blessed automatically hit. In addition, all successful enemy armour saves and Magical Wards must be re-rolled. However, if the model wielding the lance flees for any reason, he suffers D6 Flaming Strength 4 hits with the Ignores Armour Saves special rule.]
 
 #magic-weapon("DRAGON SLAYING SWORD", 45, type: "Great weapon")[The wielder gains the Multiple Wounds (D6) special rule against Draconids.]
@@ -253,8 +251,9 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #magic-weapon("SWORD OF THE LADY'S CHAMPION", 15, only: "Character with the Grail Vow")[The character always counts their Strength as one higher than their target's Toughness, unless their Strength would normally be more than this.]
 
 #magic-weapon("SWORD OF THE STOUT HEARTED", 10, type: "Great weapon")[This weapon gives the wielder the Immunity (Psychology) special rule.]
+]
 
-#entry("MAGIC ARMOUR")
+#magic-item-section("armour")[
 #magic-armour("ARMOUR OF THE MIDSUMMER SUN", 50, type: "Heavy armour")[Opponents suffer a \-1 penalty To Hit the wearer of the Armour of the Midsummer Sun with both missile and close combat attacks.]
 
 #magic-armour("ARMOUR OF AGILULF", 40, type: ("Heavy armour", "Shield"))[The wearer of the Armour of Agilulf gains Weapon Skill 10, but may not use a weapon that Requires Two Hands.]
@@ -274,8 +273,9 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #magic-armour("ORCBANE SHIELD", 15, type: "Shield")[Any Orc or Goblin unit within 12" of the model with the Orcbane Shield that must take an Animosity test fails it on a 1\-2 instead of a 1.]
 
 #magic-armour("IRONSPIKE SHIELD", 10, type: "Shield")[Whenever an enemy model rolls a natural 1 To Hit against the bearer of this shield, they immediately suffer a Strength 3 Hit with the Armour Piercing (1) special rule.]
+]
 
-#entry("TALISMANS")
+#magic-item-section("talisman")[
 #talisman("SIRIENNE'S LOCKET", 65, only: "Baron")[A model with Sirienne's Locket has Immunity (Killing Blow, Multiple Wounds) and can never suffer more than one wound in any one phase. After the first wound in that phase is suffered, all subsequent wounds suffered during that phase are ignored. The bearer can still be run down by pursuing enemies as normal, and may still be affected as normal by other "instant kill" attacks.]
 
 #talisman("HOLY ICON", 50)[The Holy Icon gives the bearer and any unit they are with the Immunity (Psychology) and Magic Resistance (3) special rules.]
@@ -289,8 +289,9 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #talisman("MANTLE OF THE DAMSEL ELENA", 10)[The wearer of the Mantle of the Damsel Elena gains the Immunity (Killing Blow, Poisoned Attacks) special rule.]
 
 #talisman("GRAIL PENDANT", 10, only: "Models with the Grail Vow", one-use: true, common: true)[When the wearer of the Grail Pendant loses their last Wound, roll a D6. On a roll of 2+, the Wound is not lost.]
+]
 
-#entry("ARCANE ITEMS")
+#magic-item-section("arcane")[
 #arcane-item("SACRAMENT OF THE LADY", 50, type: "Relic")[The bearer may use the Sacrament of the Lady at the start of any Bretonnian Magic phase. The model adds 2D3 Power Dice to your power pool, but may not cast any spells that turn.]
 
 #arcane-item("THE SILVER MIRROR", 45, type: "Charm", one-use: true)[When used, the bearer of the Silver Mirror deflects a spell cast at them or the unit they are with back at the enemy caster. The enemy can try to dispel their own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit they are with.]
@@ -308,8 +309,9 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #arcane-item("POTION SACRE", 10, type: "Charm", one-use: true, common: true)[The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.]
 
 #arcane-item("DIADEM OF POWER", 10, type: "Relic")[The bearer of this item gains a +1 casting bonus when casting magical missiles, direct damage or magical vortex spells.]
+]
 
-#entry("ENCHANTED ITEMS")
+#magic-item-section("enchanted")[
 #enchanted-item("THE MANE OF THE PUREBREED", 30, only: "Model on Warhorse")[The Mane of the Purebreed gives +1 Strength to all Warhorses in the unit the model is with.]
 
 #enchanted-item("THE RUBY GOBLET", 25)[This magic item will start to take effect at the end of the first phase during which the bearer or their unit suffers an unsaved wound. From that moment on, the bearer and any unit they are with cannot be wounded on better than a 3+ from any non-magical source.]
@@ -331,8 +333,9 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #enchanted-item("GAUNTLET OF THE DUEL", 10, only: "Baron or Paladin")[Any challenge issued by the bearer of the Gauntlet of the Duel cannot be refused.]
 
 #enchanted-item("TRESS OF ISOULDE", 10, one-use: true)[Nominate one enemy Character, Monstrous Creature or Monster in base contact at the beginning of any Close Combat phase (after challenges). The bearer automatically hits that model that Close Combat round, regardless of other modifiers.]
+]
 
-#entry("MAGIC STANDARDS")
+#magic-item-section("standard")[
 #magic-standard("BANNER OF THE LADY'S GRACE", 50)[The unit carrying the Banner of the Lady’s Grace ignores all negative modifiers to its Leadership characteristic.]
 
 #magic-standard("THE GRAIL BANNER", 50)[All friendly units within 12" of this standard gain +1 Leadership.]
@@ -356,6 +359,7 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #magic-standard("BANNER OF THE ZEALOUS KNIGHT", 15)[The unit carrying the Banner of the Zealous Knight gains the Vanguard special rule.]
 
 #magic-standard("BANNERS OF CHALONS", 10)[Enemy units cannot choose Stand & Shoot as a charge reaction against the unit carrying the Banner of Chalons.]
+]
 
 = CHARACTERS
 

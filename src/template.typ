@@ -80,6 +80,31 @@
   text(size: 10pt, body),
 )
 
+// --- entries ----------------------------------------------------------------
+
+// Each entry — a unit, a character, a magic-item section — opens its own page,
+// so nothing straddles the space left over by whatever preceded it. `weak`
+// keeps the break from firing when the page is already fresh, and `first`
+// suppresses it so an entry can share its chapter-title page.
+#let entry(name, first: false) = {
+  if not first { pagebreak(weak: true) }
+  [#metadata((kind: "entry", name: name))<meta>]
+  heading(level: 2, name)
+}
+
+// An entry that is nothing but a stat line and a few fields — a character mount,
+// say — would leave a page of its own almost entirely empty, so these share one.
+// `breakable: false` is what keeps the promise: the entry moves to the next page
+// whole rather than straddling the boundary.
+#let compact-entry(name, body) = block(
+  breakable: false, above: 1.4em, below: 0.5em,
+  {
+    [#metadata((kind: "entry", name: name))<meta>]
+    heading(level: 2, name)
+    body
+  },
+)
+
 // --- magic items ------------------------------------------------------------
 
 // A magic item is a record where an entry is a sequence. Every one in the
@@ -98,6 +123,10 @@
 // Typst's own `type`. Bound here so the assertions can still ask what a value
 // is - the same shadowing `book-meta` sidesteps by taking `..named`.
 #let _typeof = type
+
+// And `columns` is a parameter of `magic-item-section`, which shadows Typst's
+// own the same way. Same remedy.
+#let _columns = columns
 
 // The six categories, from the rulebook's Balance of Power: a model may carry
 // one item from each.
@@ -193,6 +222,92 @@
 #let enchanted-item = magic-item.with(kind: "enchanted")
 #let magic-standard = magic-item.with(kind: "standard")
 
+// --- magic items: the chapter they sit in -----------------------------------
+
+// What each category's section is titled. The corpus already agrees - 54 of the
+// books title their weapon section MAGIC WEAPONS, and 54 their standards MAGIC
+// STANDARDS - so the agreement is written down once here rather than retyped,
+// and relied on to be retyped correctly, in every book. `name:` is for the two
+// that genuinely differ: the Dwarfs call their talismans TALISMANIC RUNES.
+//
+// Set in capitals rather than left to the display face, which uppercases every
+// heading anyway. The face is not the only reader: a book generates its own
+// contents page from its headings, and an outline takes the heading's text and
+// not the show rule's rendering of it. Title case here sets the six of them in
+// a contents page whose every other line is capitals.
+#let MAGIC_ITEM_SECTIONS = (
+  weapon: "MAGIC WEAPONS",
+  armour: "MAGIC ARMOUR",
+  talisman: "TALISMANS",
+  arcane: "ARCANE ITEMS",
+  enchanted: "ENCHANTED ITEMS",
+  standard: "MAGIC STANDARDS",
+)
+
+// The chapter's head: its title, and the standing paragraph that introduces it.
+// Header only, like `entry` and `namecost` - the sections flow after it - since
+// a chapter owns only its heading and its intro, and neither needs to enclose
+// what follows.
+//
+// The intro is set `strong` rather than in the italic register `note` uses,
+// because that is what the source sets it in and pulling a layer into the
+// template is not the moment to change what reaches the page. Set here, though,
+// so it is one edit from being something else in every book at once, instead of
+// forty-five paragraphs whose emphasis was typed by hand.
+#let magic-item-chapter(title: "MAGIC ITEMS", intro: none) = {
+  heading(level: 1, title)
+  // Not wrapped in a block: a block takes `block.spacing` where a paragraph
+  // takes `par.spacing`, and this is a paragraph.
+  if intro != none { strong(intro) }
+}
+
+// A section: its page break, its heading, and - the layer that has never had an
+// owner at all - the number of columns its items set in.
+//
+// That number was decided once, at import, by counting characters: `to_book.py`
+// gave a section two columns at 3,000 characters of prose and one below it, and
+// wrote the answer into the book as a bare `#columns(2)[`. Nothing has owned it
+// since. It is why a chapter of six short sections and a chapter of the same
+// quantity of material in one long section come out set differently - a
+// difference in how they were once measured, not in how they read.
+//
+// Measured here instead, and in the geometry the rule is actually about rather
+// than a character count standing in for it: `layout` gives the page's measure,
+// `measure` the height these items would take set across the whole of it.
+// Taller than the page and there is material enough to fill two columns;
+// shorter and the second column stands part-empty, which reads as a fault
+// rather than a choice. Margins and type size are in the answer because they
+// are in the question, which is what the character count could never manage -
+// it was calibrated for one page geometry and every book has since been free to
+// choose its own.
+//
+// `columns:` overrides the rule where an editor knows better. It is not how the
+// books should be set; it is there so that disagreeing with the rule does not
+// mean going back to writing `#columns(2)[` into a book by hand.
+#let magic-item-section(kind, name: auto, columns: auto, first: false, body) = {
+  assert(kind in MAGIC_ITEM_KINDS,
+    message: "magic-item-section: kind must be one of "
+      + MAGIC_ITEM_KINDS.join(", ") + ", not " + repr(kind))
+  assert(columns in (auto, 1, 2),
+    message: "magic-item-section: columns must be auto, 1 or 2, not "
+      + repr(columns))
+  // `entry` rather than a heading of its own, so a magic-item section breaks
+  // and heads exactly as a unit entry does - one definition, not two that have
+  // to be kept saying the same thing.
+  entry(if name == auto { MAGIC_ITEM_SECTIONS.at(kind) } else { name },
+        first: first)
+  if columns == 1 {
+    body
+  } else if columns == 2 {
+    _columns(2, body)
+  } else {
+    layout(size => {
+      let tall = measure(block(width: size.width, body)).height >= size.height
+      if tall { _columns(2, body) } else { body }
+    })
+  }
+}
+
 // --- profiles ---------------------------------------------------------------
 
 #let field(label, value) = {
@@ -235,29 +350,6 @@
   ..vals,
   table.hline(stroke: 0.5pt + hair),
 ))
-
-// Each entry — a unit, a character, a magic-item section — opens its own page,
-// so nothing straddles the space left over by whatever preceded it. `weak`
-// keeps the break from firing when the page is already fresh, and `first`
-// suppresses it so an entry can share its chapter-title page.
-#let entry(name, first: false) = {
-  if not first { pagebreak(weak: true) }
-  [#metadata((kind: "entry", name: name))<meta>]
-  heading(level: 2, name)
-}
-
-// An entry that is nothing but a stat line and a few fields — a character mount,
-// say — would leave a page of its own almost entirely empty, so these share one.
-// `breakable: false` is what keeps the promise: the entry moves to the next page
-// whole rather than straddling the boundary.
-#let compact-entry(name, body) = block(
-  breakable: false, above: 1.4em, below: 0.5em,
-  {
-    [#metadata((kind: "entry", name: name))<meta>]
-    heading(level: 2, name)
-    body
-  },
-)
 
 // --- unit entries -----------------------------------------------------------
 
