@@ -179,13 +179,11 @@ Model on foot only. This armour gives the wearer a 6+ armour save and the Ambush
 
 A model equipped with the Gleaming Torc adds +1 to their leadership. In addition, all enemy models in base contact with the wearer must pass a Leadership test at the start of each close combat phase. If failed, they will be unable to attack this turn.
 
-#namecost("TALISMAN OF THE CARRION", "")
-#namecost("CROW", "30 points")
+#namecost("TALISMAN OF THE CARRION CROW", "30 points")
 
 The bearer of the Talisman of the Carrion Crow has the Regeneration (5+) and Poisoned Attacks special rules.
 
-#namecost("TALISMAN OF THE SOARING", "")
-#namecost("EAGLE", "20 points")
+#namecost("TALISMAN OF THE SOARING EAGLE", "20 points")
 
 The bearer of the Talisman of the Soaring Eagle has the Magic Resistance (2) special rule. In addition, the bearer has a 5+ invulnerable save against Magical Attacks.
 

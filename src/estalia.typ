@@ -195,8 +195,7 @@ The bearer gains +1 bonus when channelling Dispel Dice. Additionally, for each n
 
 The bearer of this item may re-roll one Power Dice when casting spells once per Magic phase.
 
-#namecost("RING OF THE SANCTIONED", "")
-#namecost("THAUMATURGE", "10 points")
+#namecost("RING OF THE SANCTIONED THAUMATURGE", "10 points")
 
 The Wizard may choose their spells from a combination of Lores of Magic available to them, but may only choose Level 1 spells.
 
@@ -213,8 +212,7 @@ Grand Commander only. This item gives the wearer the Inspiring Presence (6) spec
 
 Priest of Myrmidia only. Bound Spell (Level 3, cast on 9+). This item contains a *direct damage* spell that may be cast while in combat. Place the small round template anywhere in base contact with the bearer. All models, covered by the template suffer a Strength 4 hit with the Magical Attacks special rule. Against models with the Daemonic, Undead and Vampiric special rules, as well as Wizards, the Strength is increased to 5.
 
-#namecost("MONSTRANCE OF DIVINE", "")
-#namecost("PRONOUNCEMENT", "35 points")
+#namecost("MONSTRANCE OF DIVINE PRONOUNCEMENT", "35 points")
 
 Priest of Myrmidia only. Bound Spell (Level 2, cast on 8+). This item contains a *hex* spell with a range of 24". The target must immediately take a Panic test with a negative modifier equal to the difference of the Leadership between the caster and the target.
 

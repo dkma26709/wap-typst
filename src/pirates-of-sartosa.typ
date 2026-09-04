@@ -310,8 +310,7 @@ One use only. This item can be used at the start of any of your turns. When used
 
 The model has the Immunity (Psychology) special rule. In addition, any unit they join may reroll failed Panic tests.
 
-#namecost("BLACK BUCKTHORN'S TREASURE", "")
-#namecost("MAP", "10 points")
+#namecost("BLACK BUCKTHORN'S TREASURE MAP", "10 points")
 
 Black Buckthorn's Treasure Map adds +1 to the dice rolled when determining which side to deploy on.
 

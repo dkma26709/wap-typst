@@ -480,8 +480,7 @@ The wearer and any unit they are with gain +1 To Wound in close combat.
 
 One use only. This item may be used at the start of any close combat phase. Once used, all friendly units (excluding mounts) within 12" gain +1 Attack for the duration of this turn.
 
-#namecost("MOONSTONE OF THE HIDDEN", "")
-#namecost("WAYS", "35 points")
+#namecost("MOONSTONE OF THE HIDDEN WAYS", "35 points")
 
 If the bearer’s unit is wholly within a forest at the end of your Movement phase, and is not in close combat, it can forestwalk. If it does so, remove it from the battlefield and immediately replace it, wholly within any forest on the battlefield, just like a summoning spell. A unit that forestwalks counts as having marched in the Movement phase.
 
@@ -539,8 +538,7 @@ All friendly units within 12" of the bearer of Gwytherc's Horn gain +1 to their 
 Enchanted Arrows. Any Character, Monstrous Creature or Monster that suffers an unsaved Wound by Dragontooth Arrows gains the Stupidity special rule for the remainder of the game.
 
 #entry("MAGIC STANDARDS")
-#namecost("BATTLE STANDARD OF ATHEL", "")
-#namecost("LOREN", "75 points")
+#namecost("BATTLE STANDARD OF ATHEL LOREN", "75 points")
 
 Whenever an enemy spell is cast at a friendly unit within 12" of this standard, roll a D6; on a 5+, the spell is automatically dispelled.
 

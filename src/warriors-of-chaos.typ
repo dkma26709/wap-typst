@@ -731,8 +731,7 @@ Shield. If the bearer of this shield makes a successful Parry save, they immedia
 Barding. The bearer's mount gains the Devastating Charge special rule.
 
 #entry("TALISMANS")
-#namecost("CROWN OF EVERLASTING", "")
-#namecost("CONQUEST", "50 points")
+#namecost("CROWN OF EVERLASTING CONQUEST", "50 points")
 
 The wearer of the Crown of Everlasting Conquest gains the Inspiring Presence (6) and Regeneration (4+) special rules.
 
