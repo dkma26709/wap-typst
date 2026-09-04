@@ -1570,7 +1570,7 @@ The rulebook also takes every Leadership test on the highest value present in th
 
 #field("What it would take", "")
 
-One rule and one option line on the Skink Cohort entry, and two edits to the earlier text. Its "mixed unit" becomes "combined unit", because Mixed Unit is a named rule in this rulebook and comes with handlers. Its Stomp clause gains a few words, because a Stomp here may only target a unit consisting of models with a Line of Sight value of 1 or less, and a single Kroxigor would otherwise lift the whole Cohort beyond a Monstrous Creature's reach.
+One rule and one option line on the Skink Cohort entry, and two edits to the earlier text. Its "mixed unit" becomes "combined unit", because Mixed Unit is a named rule in this rulebook and comes with handlers. Its Stomp clause gains a clause, because a Stomp here may only target a unit consisting of models with a Line of Sight value of 1 or less, and a single Kroxigor would otherwise lift the whole Cohort beyond a Monstrous Creature's reach.
 
 Nothing else in the book moves.
 
@@ -1589,3 +1589,33 @@ And among its options:
 - May include one Kroxigor for every eight Skinks in the unit +47 points/model
 
 *At the table.* Twenty-four Skinks and three Kroxigor come to 213 points. The Kroxigor stand six Skinks wide in the second rank, so the front rank is six, and the eighteen Skinks behind them make three more. Counted as if the big bases were Skinks the unit is six ranks deep: full rank bonus, and Steadfast against all but the deepest blocks. Six Skinks strike from the front rank and nine Kroxigor attacks come over their heads, at Strength 7 in the first round and 6 after, each 6 To Hit breeding another under Predatory Fighter. Against that, every missile hit lands on a Kroxigor on a 5 or 6, and the whole Cohort takes the Kroxigor's penalty when it tries to restrain a pursuit.
+
+#namecost("The Slann keeps its full allowance when it carries the standard", "under discussion")
+
+A Slann Mage-Priest carrying the Battle Standard would keep all 100 points of Magic Items and Disciplines of the Old Ones and take a magic standard besides, in the wording the rest of the corpus uses. The sentence halving that allowance to 50 would go. The permission for the Slann to remain Army General would stay.
+
+#field("Why", "")
+
+The corpus has one sentence for this, and 46 of its 51 Battle Standard clauses use it, across 29 books: the bearer "can have a Magic Standard with no points limit in addition to any other Magic Items they might have". Our own Ordo Draconis uses it twice.
+
+Five entries instead make the banner cost the bearer its items, and the Slann is the only one of the five that gives up 50 points. The Bloodmaster, the Hatamoto, the Crypt Ghast and the Gunnery Wight each give up 25, in a sentence the four of them share word for word. The Slann is also the only wizard among them.
+
+The same book puts the other wording in the very next entry: a Scar-Veteran carrying the standard keeps its 50 points and takes the banner on top. The restriction also turns on the standard being magical rather than on the office. A Slann carrying a plain battle standard keeps all 100, so the Totem of Prophecy, at 40 points, costs a Slann 90.
+
+#field("The argument against", "")
+
+Measured across the corpus, 50 points is not a penalty but the going rate. Every other Battle Standard option carries 50 points of magic items or fewer, and where a book pairs a Lord with a Hero it is the Hero who takes the standard: the Paladin rather than the Bretonnian Lord, the Acolyte rather than the Necrarch Master, the Scar-Veteran rather than the Oldblood. The Slann is the only bearer in the corpus whose own allowance is 100, and the halving is what brings it level with the rest. Removing it would give one model twice the magic items of any other bearer in the game.
+
+It is also the only generic character permitted to be Army General while carrying the standard; the one other instance in the corpus is Walach, a special character, through a named banner. Army General, Battle Standard, a Level 4 wizard with +1 to cast and dispel, Inspiring Presence (6) and Hold Your Ground (12), all on one model. Fifty points reads less like an oversight than like the price of that concentration, and this proposal hands it back and asks nothing for it.
+
+#field("What it would take", "")
+
+One sentence in the Slann's Notes, of which only the middle clause goes. The first stays, so the banner is still unlimited, and the last stays, so the Slann may still be the Army General. What replaces the middle is the corpus's own wording, which puts the Slann's note in the same words as the Scar-Veteran's in the entry that follows.
+
+Nothing else in the book moves.
+
+#field("For example", "")
+
+*As the note would read.* Battle Standard: The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have. A Slann carrying the Battle Standard may still be the Army General.
+
+*What it buys.* A Slann that takes the Totem of Prophecy today has 50 points left, which covers Focus of Mystery and the Harrowing Scrutiny. Under this proposal it keeps 100: the Cupped Hands of the Old Ones at 45, Focus of Mystery at 30 and Becalming Cogitation at 25. The banner is the same in both cases, and no points limit stays a generous phrase for a shelf whose dearest entry is the Totem at 40, with the common standards stopping at 25.
