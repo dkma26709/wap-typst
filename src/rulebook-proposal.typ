@@ -5692,3 +5692,37 @@ The rules that reconcile two profiles want rewriting rather than adjusting. Cava
 *What the chart becomes.* Today it crosses Weapon Skill with Weapon Skill: equal numbers hit on 4+, an advantage hits on 3+, and more than double hits on 2+. Under this it crosses Melee Attack with Melee Defence and reads exactly the same way. What changes is that the two numbers are drawn from different columns of the profile, so a model may be good at one and poor at the other.
 
 *Where it pays.* A Skink is Weapon Skill 2 and a Saurus Warrior Weapon Skill 3, and the difference is meant to be that the Saurus was spawned to fight and the Skink was not. Today that also makes the Skink easier to hit, which is not what anybody was describing. Give it a low Melee Attack and a respectable Melee Defence and it becomes the thing the artwork shows: quick, hard to pin down, and feeble when it does connect.
+
+#namecost("Rider and mount should not add their hides together", "under discussion")
+
+The line letting a rider's and a mount's armour saves combine would become two rules. On Cavalry and Monstrous Cavalry the model would take the better of the two base saves and add equipment to it as normal. On a ridden monster the mount's Natural Armour would be the base, and the rider's own protection would carry over at half rate: one step of improvement for every two steps the rider would have on foot.
+
+#field("Why", "")
+
+The paragraph disagrees with itself in consecutive sentences. One says that when attacking a Cavalry model you always use the highest Weapon Skill, Toughness and Wounds of rider or mount. The next says that if both have armour saves, these may be combined. Three characteristics take the better of the two and the fourth adds them together, and nothing anywhere says why the save is different.
+
+It also reaches the ceiling before the player has bought anything. A Saurus Oldblood has Natural Armour 5+ of his own and a Carnosaur has 4+, and combining those on the reading the armour table implies, where a 6+ is worth one step and a 4+ three, puts an Oldblood who has bought no equipment at all on a 2+ the moment he is mounted. That the book never works this example is half the complaint: it says the saves may be combined as normal and nowhere says what normal is when two save values meet. The light armour and the shield he may then purchase change nothing whatever, because no save can be better than 2+ and he is already there. A rule that makes defensive equipment worthless on precisely the models that can most afford it is not doing the job it was written for.
+
+Half effect keeps the idea and loses the ceiling. A man in armour behind a scaled skull really is better protected than either alone, which is why taking the better of the two and discarding the rest reads badly. Carrying the rider across at half rate says the same thing without letting two hides finish the arithmetic on their own.
+
+#field("The argument against", "")
+
+It is a conversion table where there is currently one sentence, and it lands on the entries that already take longest to write down. Every monster-mounted character in the game would have a small sum to do at list-building time.
+
+It is also a quiet reduction to every such character in thirty-two books at once, and those entries were priced with the stacked save in place. Taking the save down a step without revisiting the points takes value off models nobody complained about.
+
+#field("What it would take", "")
+
+One sentence in the Cavalry troop-type rules replaced by two, and a six-row conversion table beside them. Monstrous Cavalry and Chariots read the same sentence, so they are covered by the first of the two rules and want checking rather than rewriting.
+
+The points on monster-mounted characters want revisiting afterwards. The saving throw is most of what those models are paying for.
+
+#field("For example", "")
+
+*The conversion, for a ridden monster.* Work out what the rider's save would be on foot, count its steps, and give the mount one step of Natural Armour for every two, rounding down.
+
+#minitable(("Rider's save on foot", "Steps"), ("No save", "0", "6+", "1", "5+", "2", "4+", "3", "3+", "4", "2+", "5"))
+
+Every two rider steps improve the mount's Natural Armour by one. The result is capped at 2+, as any save is.
+
+*What it changes.* A Saurus Oldblood on a Carnosaur saves on 2+ today, and still saves on 2+ if he buys nothing, because his own 5+ hide and the Carnosaur's 4+ reach the cap between them. Under this he starts on 3+, since his bare 5+ is two steps and half of that is one. Buying the light armour and the shield takes his foot save to 3+, which is four steps, worth two to the Carnosaur, and he arrives at 2+ having paid for it. Same ceiling, reached by spending rather than by mounting.
