@@ -5784,3 +5784,33 @@ Two sentences in one special rule, and nothing else in the rulebook. Every Swift
 #minitable(("Charge roll", "Mean", "4 or less", "9 or more"), ("Ordinary charge, 2D6", "7.0", "16.7%", "27.8%", "Swiftstride as written", "7.8", "6.0%", "37.8%", "Extra die, lowest discarded", "8.5", "5.1%", "52.3%"))
 
 The middle row is why this is a change of purpose rather than a fix. Re-rolling 1s has all but solved the disastrous roll already, and the column it leaves alone is the one that decides whether a fast unit gets to pick its fight.
+
+#namecost("Characters should shape the army, not only fight in it", "under discussion")
+
+Generic characters would carry more rules that change what the army may take and how the units around them behave, and lean correspondingly less on their own combat characteristics and magic item allowance. The mechanisms all exist already. They are simply reserved almost entirely for special characters, and this would move the family down to the entries that every list actually buys.
+
+#field("Why", "")
+
+The reservation is near total, and it measures cleanly. Rules that let a character change the composition of a list, by unlocking a unit or moving a choice between Core, Special and Rare, appear twenty-seven times in the Special Characters chapters of the thirty-two army books and once in all their generic character sections put together.
+
+The exception is the Empire's Masters of the Knightly Orders, whose Master of Battle rule upgrades one unit of Knights for each character carrying it. Everywhere else, buying a named model reshapes the army and buying a generic lord buys a statline and a shopping allowance.
+
+That is the wrong way round, because the generic lord is the one nearly every list fields. He is also the reason lists of different armies play alike: strip the special characters out and what remains is a fighter with items, whose presence changes where the damage lands and nothing else about how the army is built.
+
+#field("The argument against", "")
+
+Composition rules are where list-building degenerates fastest, and the special characters are gated precisely because those rules are strong. Spreading them across every generic entry multiplies the combinations by the number of lords in each book rather than by the handful of named ones, and each is a licence somebody will optimise.
+
+There is also an opposite failure waiting. A character bought purely for an aura, parked behind a hill and never risked, is duller than a character bought to fight. Shifting weight from the statline to the effect has to keep him worth putting in front of something.
+
+#field("What it would take", "")
+
+This is a direction rather than an edit, and the bill is every character section in thirty-two books, with the points moving on all of them. Nothing needs inventing: the shapes are already written and only need spreading.
+
+#field("For example", "")
+
+*The four shapes already in the books.* Every one of these is a character rule that changes something other than the character:
+
+#minitable(("Rule", "Book", "What it changes"), ("Master of Battle", "Empire", "One unit of Knights per character carrying the rule may be upgraded to Inner Circle", "Big 'Uns", "Orcs & Goblins", "One unit per Warboss may be upgraded, and moves from Core to Special", "Army of Kroq-Gar", "Lizardmen", "A list he leads may take Saurus Cold One Riders as a Core choice", "Prophet of Sotek", "Lizardmen", "Six different unit entries may be upgraded to Red Crested Skinks"))
+
+Three of those four belong to named models. Only the first is available to a list that has not spent its points on a character out of the story, and it is the one worth copying: it keys off a rule rather than a name, so any entry in any book could be given it.
