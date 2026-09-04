@@ -75,8 +75,13 @@
       ],
       if cast != none { text(size: 9.5pt, style: "italic")[Cast on #cast] } else { none },
     )
+    // Tracked no wider than a `namecost` name, and for a reason beyond taste:
+    // at 0.06em a PDF text extractor reads the letter gaps in LORE ATTRIBUTE as
+    // a word break and reports it as two words. The page was always right; the
+    // gate that reads the page back was not.
     block(above: 0.35em, below: 0em,
-      text(size: 9pt, weight: "bold", tracking: 0.06em, fill: muted)[#upper(level)])
+      text(size: 9pt, weight: "bold", tracking: 0.04em, fill: muted,
+        hyphenate: false)[#upper(level)])
   })
 }
 
