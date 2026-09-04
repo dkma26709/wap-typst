@@ -182,8 +182,7 @@ Charm. One use only. Any spell that is cast this turn will count the roll of any
 
 At the start of each of your Magic phases, you may restore up to D3 Wounds worth of models in the same unit previously slain during the battle, just like a summoning spell. Any friendly character slain in this unit may also be resurrected once in this manner. However, a resurrected character does not bestow his Leadership onto the unit, nor can the unit benefit from his War Cry ability. Resurrected Wizards can no longer cast spells.
 
-#namecost("WHETSTONE OF TUDWAL", "")
-#namecost("TUDGLYD", "40 points")
+#namecost("WHETSTONE OF TUDWAL TUDGLYD", "40 points")
 
 The bearer will automatically Wound with their Close Combat attacks.
 
@@ -195,8 +194,7 @@ One Infantry unit in your army may be given the Ambushers special rule. In addit
 
 One use only. This item may be used at the start of any of your turns. When used, the bearer gains +1 Strength, Toughness and Attacks until the start of your next turn.
 
-#namecost("CHARIOT OF MORGAN", "")
-#namecost("MWYNFAWR", "20 points")
+#namecost("CHARIOT OF MORGAN MWYNFAWR", "20 points")
 
 Model on Chariot only. The model's Chariot gains the Fly (7) special rule.
 
@@ -241,8 +239,7 @@ All models in any unit charging the unit carrying this standard must take a dang
 
 All enemy units within 12" and with line of sight to the unit carrying this standard at the start of their turn must take a Psychology test. If failed, the unit must move straight towards them, following all the rules for Stupidity.
 
-#namecost("STANDARD OF FIONN MAC", "")
-#namecost("CUMHAILL", "25 points")
+#namecost("STANDARD OF FIONN MAC CUMHAILL", "25 points")
 
 The unit may re-roll failed rolls to Wound in the first round of Close Combat.
 

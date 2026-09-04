@@ -468,8 +468,7 @@ One use only. At the start of any of your turns, when the Gem of Sunfire is used
 
 Handmaiden of the Everqueen only. One use only. The Horn of Isha can be used at the start of one of your Movement phases. For the remainder of the turn, all models in the bearer's unit receive a +1 To Hit bonus on all shooting and close combat attacks.
 
-#namecost("AMULET OF THE PURIFYING", "")
-#namecost("FLAME", "15 points")
+#namecost("AMULET OF THE PURIFYING FLAME", "15 points")
 
 Enemy spells that target the character or the unit they are with suffer a \-3 casting penalty.
 

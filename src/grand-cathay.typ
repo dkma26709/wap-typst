@@ -439,8 +439,7 @@ The unit carrying this banner gains the Cold-blooded special rule.
 
 One use only. This item can be used at the start of any enemy Movement phase. Until the start of your next turn, no enemy unit within 24" of this banner can use the Fly special rule.
 
-#namecost("BANNER OF THE DRAGON'S", "")
-#namecost("WRATH", "20 points")
+#namecost("BANNER OF THE DRAGON'S WRATH", "20 points")
 
 The unit carrying this banner gains the Flaming Attacks and Impact Hits (1) special rules.
 

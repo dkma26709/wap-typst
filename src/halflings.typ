@@ -203,8 +203,7 @@ The wearer is treated as being a Level 2 Wizard who can use a randomly chosen sp
 
 Bound spell. This item contains both _The Enfeebling Foe_ and _The Withering_ spells from the Lore of Shadows. However, you may only attempt to cast one of these spells once per Magic phase.
 
-#namecost("TERRANCE CHUBBLY'S", "")
-#namecost("ENCHANTED ARROWS", "40 points")
+#namecost("TERRANCE CHUBBLY'S ENCHANTED ARROWS", "40 points")
 
 At the start of the game, roll a D6 and consult the table below to see what effect the Magic Arrows have on any shortbows carried by the bearer and any unit they are with the remainder of the game:
 
