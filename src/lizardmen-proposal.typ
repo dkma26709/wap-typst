@@ -1602,11 +1602,15 @@ Five entries instead make the banner cost the bearer its items, and the Slann is
 
 The same book puts the other wording in the very next entry: a Scar-Veteran carrying the standard keeps its 50 points and takes the banner on top. The restriction also turns on the standard being magical rather than on the office. A Slann carrying a plain battle standard keeps all 100, so the Totem of Prophecy, at 40 points, costs a Slann 90.
 
+What makes it an outlier is the shape of the rule and not the size of the number. Everywhere else the Battle Standard adds a banner and leaves the bearer's own allowance where it found it: a Paladin keeps a Paladin's 50, a Necrarch Acolyte keeps an Acolyte's 50. Only in these five entries does the standard reach back and cut what the entry had already granted. That a Slann's grant is 100 is a fact about a 360-point Lord rather than a fact about the Battle Standard, and only the second of those is what this proposal touches.
+
+Nor is the model cheap for what it does. At 360 points it is the dearest generic character in the corpus to arrive with Level 4 already on it, against the Liche Lord's 290 and the Grey Seer's 190, and it pays a further 25 to carry the standard at all. A model already paying at the top of its class is a poor place to collect a second, unstated charge.
+
 #field("The argument against", "")
 
-Measured across the corpus, 50 points is not a penalty but the going rate. Every other Battle Standard option carries 50 points of magic items or fewer, and where a book pairs a Lord with a Hero it is the Hero who takes the standard: the Paladin rather than the Bretonnian Lord, the Acolyte rather than the Necrarch Master, the Scar-Veteran rather than the Oldblood. The Slann is the only bearer in the corpus whose own allowance is 100, and the halving is what brings it level with the rest. Removing it would give one model twice the magic items of any other bearer in the game.
+The rule would be uniform and the outcome would not. Every other Battle Standard option in the corpus carries 50 points of magic items or fewer, because the office falls to the Hero of a pair rather than the Lord beside him: the Paladin rather than the Bretonnian Lord, the Acolyte rather than the Necrarch Master, the Scar-Veteran rather than the Oldblood. The Slann is the only bearer anywhere whose own allowance is 100, so applying the common wording to it produces the best-equipped standard bearer in the game by double. Whether that is the rule working or a hole in it turns on whether you read the clause or the total.
 
-It is also the only generic character permitted to be Army General while carrying the standard; the one other instance in the corpus is Walach, a special character, through a named banner. Army General, Battle Standard, a Level 4 wizard with +1 to cast and dispel, Inspiring Presence (6) and Hold Your Ground (12), all on one model. Fifty points reads less like an oversight than like the price of that concentration, and this proposal hands it back and asks nothing for it.
+It is also the only generic character permitted to be Army General while carrying the standard; the one other instance in the corpus is Walach, a special character, through a named banner. Army General, Battle Standard, a Level 4 wizard with +1 to cast and dispel, Inspiring Presence (6) and Hold Your Ground (12), all on one model. If the halving was ever the price of that concentration rather than an oversight, this removes the price and leaves the concentration standing.
 
 #field("What it would take", "")
 
