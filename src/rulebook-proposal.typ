@@ -5658,3 +5658,37 @@ The two are not exclusive. The most likely settlement is both: the size gap as t
 #minitable(("Stomps", "Against"), ("D6", "A Line of Sight value of 1 or less", "D3", "A Line of Sight value of 2 or 3"))
 
 #note[Read the first line that applies. Nothing here needs a new rule, a new characteristic or a new roll - it is the Stomp the game already has, with its number and its reach moved out of the troop type and onto the monster.]
+
+#namecost("Split Weapon Skill into attack and defence", "under discussion")
+
+Weapon Skill would become two characteristics: one for how well a model lands a blow, and one for how hard the model is to hit. The To Hit chart would cross the attacker's *Melee Attack* against the defender's *Melee Defence*, rather than crossing a single number with itself.
+
+#field("Why", "")
+
+One number is answering two questions, and they are not the same question. A halberdier drilled to hold a line and a duellist trained to kill are both Weapon Skill 3, and there is no way to say that one is hard to hit while the other is good at hitting. Every model in the game is exactly as good at defending itself as it is at attacking, because one digit does both jobs.
+
+The book already describes the stat in both roles without remarking on it. Weapon Skill "defines how skilled a model is to fight in close combat", and a model at Weapon Skill 0 "is unable to attack with its normal attacks or defend itself in close combat". Two jobs, named in one sentence, carried by one number.
+
+The seam shows wherever two profiles meet. When a Cavalry model is attacked the rules say to use the highest Weapon Skill of rider or mount, so a knight is defended by whichever of the two is better at swinging a weapon. With a defensive value printed, the model would simply have one.
+
+This is the same argument as taking armour penetration out of Strength, and it deserves to be accepted or refused for the same reasons. A characteristic that answers two questions cannot be tuned for either of them.
+
+#field("The argument against", "")
+
+It is a new column on every profile in the game and a rewrite of the chart at the centre of the combat phase. Thirty-two books, and every statline in them.
+
+The single stat is not only economy, it is a constraint that has kept close combat legible. One number, one comparison, and a player who knows their own Weapon Skill knows both halves of the fight. Splitting it doubles what has to be held in mind at the moment a player is already holding Strength, Toughness and Initiative.
+
+And unlike the armour penetration split, there is nothing for the second value to be inherited from. That proposal can read most of its numbers off the chart it replaces, so almost nothing moves on the table. This one asks somebody to decide, for every profile in the game, which half of its Weapon Skill it keeps and what the other half becomes.
+
+#field("What it would take", "")
+
+A second characteristic on every profile in thirty-two books, and a new To Hit chart to cross the two. Every rule that reads or alters Weapon Skill then has to say which of them it means: Melkoth's Mystifying Miasma reduces it, Big 'Uns and Red Crested Skinks add to it, and each of those becomes a choice rather than a copy.
+
+The rules that reconcile two profiles want rewriting rather than adjusting. Cavalry take the highest Weapon Skill of rider and mount; war machine crews use their own. Both get simpler once a defensive number is printed, and both must be visited.
+
+#field("For example", "")
+
+*What the chart becomes.* Today it crosses Weapon Skill with Weapon Skill: equal numbers hit on 4+, an advantage hits on 3+, and more than double hits on 2+. Under this it crosses Melee Attack with Melee Defence and reads exactly the same way. What changes is that the two numbers are drawn from different columns of the profile, so a model may be good at one and poor at the other.
+
+*Where it pays.* A Skink is Weapon Skill 2 and a Saurus Warrior Weapon Skill 3, and the difference is meant to be that the Saurus was spawned to fight and the Skink was not. Today that also makes the Skink easier to hit, which is not what anybody was describing. Give it a low Melee Attack and a respectable Melee Defence and it becomes the thing the artwork shows: quick, hard to pin down, and feeble when it does connect.

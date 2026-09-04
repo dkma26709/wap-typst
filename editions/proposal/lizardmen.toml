@@ -100,3 +100,50 @@ examples = [
 **What it buys.** A Slann that takes the Totem of Prophecy today has 50 points left, which covers Focus of Mystery and the Harrowing Scrutiny. Under this proposal it keeps 100: the Cupped Hands of the Old Ones at 45, Focus of Mystery at 30 and Becalming Cogitation at 25. The banner is the same in both cases, and no points limit stays a generous phrase for a shelf whose dearest entry is the Totem at 40, with the common standards stopping at 25.
 """,
 ]
+
+
+[[proposal]]
+id     = "red-crested-skinks-without-tehenhauin"
+title  = "Red Crested Skinks without the prophet"
+status = "under discussion"
+
+summary = """
+A Skink Cohort could take the red crest without Tehenhauin in the army. The crest grants +1 Weapon Skill, Hatred (Skaven) and Immunity (Poisoned Attacks); the unit must take the Blessed Spawning of Sotek, which supplies the Devastating Charge the printed version bundles into the same upgrade; and it may replace its shields with great weapons. The total is the price the book already charges. Only Skink Cohorts are covered, not the five other units the printed rule reaches.
+"""
+
+why = """
+The rule is written already, and priced. Tehenhauin's Prophet of Sotek makes Red Crested Skinks of Skink Cohorts, Skink Skirmishers, Raptadon Riders, Horned One Riders, Terradon Riders and Ripperdactyl Riders, gives them +1 Weapon Skill with Devastating Charge, Hatred (Skaven) and Immunity (Poisoned Attacks) for two points a model, and lets Cohorts swap shields for great weapons at two more. Nothing here is invented. What goes is the requirement to field a named character to reach any of it.
+
+Requiring the Blessed Spawning of Sotek ties the crest to the god rather than to the man, and it does real work rather than standing as flavour. The Spawning is what grants Devastating Charge, so the crest itself no longer has to, and the Cohort pays the book's own rate of one point a model for a Spawning. One Spawning leaves the unit Core, which is what the Blessed Spawnings chapter allows.
+
+The printed rule bars Red Crested Skinks from taking any Spawning at all, and that is the one clause here being reversed rather than lifted. The bar makes sense as printed, because the crest already carried Devastating Charge and Sotek's Spawning would only have duplicated it. Moving the grant to the Spawning removes the reason for the bar.
+"""
+
+against = """
+Prophet of Sotek is a good part of what Tehenhauin is for. An army-wide rule is most of what a special character sells, and handing it to every list without him takes that away without giving him anything back.
+
+The unit is cheap for what it does. Seven points buys a Weapon Skill 3 model striking at Strength 5 in the first round under Mighty Blow, in a Core block that may be sixty strong. Toughness 2 and a 6+ Natural Armour are all that hold it, but that many great weapon attacks will have settled most combats before the answer lands.
+"""
+
+cost = """
+One rule and one option line on the Skink Cohort entry, and one clause of Tehenhauin's rule reversed for Cohorts. Prophet of Sotek stays exactly as printed for the five other units it covers, so a list that fields him loses nothing.
+
+Nothing else in the book moves.
+"""
+
+examples = [
+  """
+**As the entry would read.** Beneath the Skink Cohort's special rules:
+
+- **Red Crested Skinks:** A Skink Cohort may be upgraded to Red Crested Skinks. Red Crested Skinks have +1 Weapon Skill and the Hatred (Skaven) and Immunity (Poisoned Attacks) special rules. They must take the Blessed Spawning of Sotek and may take no other Blessed Spawning. In addition, they may replace their shields with great weapons.
+
+And among its options:
+
+- May be upgraded to Red Crested Skinks +1 point/model
+- Must take the Blessed Spawning of Sotek +1 point/model
+- May replace shields with great weapons +2 points/model
+""",
+  """
+**At the table.** Thirty Red Crested Skinks with great weapons come to 210 points, which is seven a model: three for the Skink, one for the crest, one for Sotek's Spawning and two for the weapon. Crest and Spawning together come to the same two points Tehenhauin's version charges for the crest alone, and the weapon to the same two. They fight at Weapon Skill 3 and Strength 5 in the first round, Strength 4 after it, with Toughness 2 and a 6+ save to keep them standing.
+""",
+]
