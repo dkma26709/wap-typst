@@ -16,7 +16,8 @@
   align: "order",
 )
 
-#show: book.with(title: "Warhammer Armies Project — Bretonnia 3.0")
+#show: book.with(title: "Warhammer Armies Project — Bretonnia 3.0",
+  side: 2.0cm, size: 11.5pt)
 
 #cover(
   title: "Bretonnia",
