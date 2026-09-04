@@ -1661,3 +1661,59 @@ And among its options:
 - May replace shields with great weapons +2 points/model
 
 *At the table.* Thirty Red Crested Skinks with great weapons come to 210 points, which is seven a model: three for the Skink, one for the crest, one for Sotek's Spawning and two for the weapon. Crest and Spawning together come to the same two points Tehenhauin's version charges for the crest alone, and the weapon to the same two. They fight at Weapon Skill 3 and Strength 5 in the first round, Strength 4 after it, with Toughness 2 and a 6+ save to keep them standing.
+
+#namecost("Saurus Warriors and Kroxigors strike at Initiative 2", "under discussion")
+
+Saurus Warriors and Kroxigors would move from Initiative 1 to Initiative 2. Nothing else on either profile changes. The reason is that neither is meant to be slow-witted; they are deliberate, and the book already says so everywhere except on these two entries.
+
+#field("Why", "")
+
+Both sit a step below every other model of their own kind. Every Saurus profile in the book except the Core warrior is Initiative 2 or better, and that includes the same Saurus when he is sitting on a Cold One or an Aggradon. A Saurus does not learn to move faster by being handed a mount.
+
+The Kroxigor case is starker still, because the comparison is inside one creature type. A Kroxigor Ancient strikes at Initiative 2 and the Kroxigors he leads strike at 1, with nothing between them but age and a bigger stat line.
+
+#field("The argument against", "")
+
+Initiative 1 is doing real characterisation work elsewhere, and the principle behind this reaches a great deal further than two entries. Forty-three living profiles across the corpus sit at Initiative 1 or below, nine of them in this book, including the Slann Mage-Priest at 1 and Lord Kroak at 0.
+
+So there are two different proposals hiding here. Raising every living creature off Initiative 1 is a sweep across thirty-two books that would also quicken trolls, giants and mammoths, which are slow on purpose. Raising these two is a judgement about Saurus and Kroxigor specifically. Both are defensible; they should not be argued as if they were one.
+
+#field("What it would take", "")
+
+Two digits, and a glance at whether the pair are still priced correctly afterwards. The Kroxigors will feel it, since much of what they fight is also slow. The Saurus Warriors barely will, because most of what they meet already strikes at 3 or 4 and will continue to strike first.
+
+#field("For example", "")
+
+*The ladder as the book prints it.* Every Saurus and Kroxigor profile in the army, in the order the army list puts them:
+
+#minitable(("Model", "Where", "WS", "I"), ("Saurus Oldblood", "Characters", "6", "3", "Saurus Scar-Veteran", "Characters", "5", "3", "Kroxigor Ancient", "Characters", "5", "2", "Saurus Warrior", "Core", "3", "1", "Temple Guard", "Special", "4", "2", "Saurus on a Cold One", "Special", "4", "2", "Kroxigor", "Special", "3", "1", "Saurus on an Aggradon", "Rare", "4", "2"))
+
+Two rows in that table are Initiative 1, and they are the two the rank and file actually stand in.
+
+#namecost("Saurus Warriors should be Weapon Skill 4", "under discussion")
+
+Saurus Warriors would go from Weapon Skill 3 to Weapon Skill 4, at a point more per model. Every other Saurus in the book already fights at 4 or better, including the identical creature mounted on a Cold One.
+
+#field("Why", "")
+
+The book contradicts itself on one creature. A Saurus on foot in a Core unit is Weapon Skill 3; the same Saurus riding a Cold One in Special is 4, riding an Aggradon in Rare is 4, and standing in the Temple Guard is 4. Only the version a list actually builds around is worse at fighting, and nothing in the book explains what the mount teaches him.
+
+The price is the easy part, because the corpus keeps quoting it. A point of Weapon Skill bundled with a second benefit costs two points a model in the Empire's Inner Circle Knights, in Orc Big 'Uns, in Goblin Little Big 'Uns and in this book's own Red Crested Skinks. On its own it is worth about one, which puts a Saurus Warrior at fourteen.
+
+#field("The argument against", "")
+
+The gap is what Temple Guard are sold on. At 17 points they currently buy a point of Weapon Skill, a point of Initiative, a polearm, Stubborn and the two Slann rules over a 13-point Saurus Warrior. Close the Weapon Skill and, if the Initiative proposal also passes, the Initiative, and four points is buying a polearm and Stubborn.
+
+A Core block at Weapon Skill 4, Strength 4, Toughness 4, two Attacks, Predatory Fighter and a 5+ Natural Armour for fourteen points is also simply very good, and this army already has no trouble winning the fights it chooses.
+
+#field("What it would take", "")
+
+One digit and one price. If the Initiative proposal is agreed as well then the two want pricing together rather than separately, because a fourteen-point Saurus Warrior at Weapon Skill 4 and Initiative 2 is a different unit from the one being amended twice.
+
+#field("For example", "")
+
+*What separates the two Saurus infantry entries.* As printed, and as this proposal would leave them:
+
+#minitable(("Entry", "Points", "WS", "I", "Also carries"), ("Saurus Warrior, as printed", "13", "3", "1", "Hand weapon", "Saurus Warrior, proposed", "14", "4", "1", "Hand weapon", "Temple Guard", "17", "4", "2", "Polearm, Stubborn, Slann rules"))
+
+The four points would still buy a polearm, Stubborn and the two rules that tie the unit to a Slann, which is a fair sale. Whether it is a four-point sale is the argument.
