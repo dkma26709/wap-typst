@@ -1710,6 +1710,8 @@ The price is the easy part, because the corpus keeps quoting it. A point of Weap
 
 The human yardstick says the same. Of the 137 plain human infantry entries across the corpus, 66 fight at Weapon Skill 3 and 50 at 4, so a Saurus Warrior currently fights exactly as well as an ordinary man with a spear and no better. Weapon Skill 4 puts him among the better human troops rather than above them, which is a modest claim for something spawned fully grown and knowing how to fight.
 
+Four is deliberately the smaller of the two readings. The lore argues for five, since a Saurus is hatched knowing how to fight and spends its life doing nothing else, but five is where the Scar-Veteran stands, and rank and file should not match their own hero. Four is also the number the rest of the book already gives every other Saurus, which makes it the change that needs arguing for least.
+
 #field("The argument against", "")
 
 The gap is what Temple Guard are sold on. At 17 points they currently buy a point of Weapon Skill, a point of Initiative, a polearm, Stubborn and the two Slann rules over a 13-point Saurus Warrior. Close the Weapon Skill and, if the Initiative proposal also passes, the Initiative, and four points is buying a polearm and Stubborn.
