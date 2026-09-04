@@ -524,13 +524,30 @@
   show list: set block(above: 0.55em, below: 0.75em)
   set table(gutter: 0pt)
 
+  // `width: 100%` is what makes `align(center)` mean the page. A block sizes to
+  // its content unless told otherwise, so this one shrank to its widest child -
+  // the rule beneath the title - and centred the title within that, hard
+  // against the left margin; a title wider than the rule pushed the box wider
+  // still and set itself flush left. Every chapter opening in the corpus was
+  // centred on 189pt of a 595pt page. The rule takes the whole measure, as the
+  // one beneath a level-2 heading does.
   show heading.where(level: 1): it => {
     pagebreak(weak: true)
-    block(below: 1.1em, align(center)[
-      #text(size: 25pt, weight: "bold", tracking: 0.11em)[#upper(it.body)]
-      #v(-0.3em)
-      #line(length: 55%, stroke: 1pt + hair)
-    ])
+    block(width: 100%, below: 1.1em, {
+      // Both off for the reasons `namecost` has them off, which a chapter title
+      // needed just as much and never had. Justification would space a title
+      // that runs to two lines right across the measure, VIRTUES OF THE
+      // CHIVALRIC / KNIGHT set as though it were a paragraph. And hyphenation
+      // breaks a display title mid-word: three of Warriors of Chaos's chapters
+      // opened KHORNE SPECIAL CHARAC- / TERS. Off, a title too long for the
+      // measure breaks at a space, where a reader would break it.
+      set par(justify: false)
+      align(center)[
+        #text(size: 25pt, weight: "bold", tracking: 0.11em, hyphenate: false)[#upper(it.body)]
+        #v(-0.3em)
+        #line(length: 100%, stroke: 1pt + hair)
+      ]
+    })
   }
 
   show heading.where(level: 2): it => block(
