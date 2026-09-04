@@ -1672,11 +1672,13 @@ Both sit a step below every other model of their own kind. Every Saurus profile 
 
 The Kroxigor case is starker still, because the comparison is inside one creature type. A Kroxigor Ancient strikes at Initiative 2 and the Kroxigors he leads strike at 1, with nothing between them but age and a bigger stat line.
 
+Look outside the army and it reads worse. A Skeleton Warrior is a corpse held upright by necromancy and strikes at Initiative 2; a Sylvanian peasant, two points and no training whatever, strikes at 3. A Saurus Warrior costs thirteen, was spawned for nothing but war, and goes after both. The company the book keeps him in at Initiative 1 is zombies, trolls and mammoths.
+
 #field("The argument against", "")
 
 Initiative 1 is doing real characterisation work elsewhere, and the principle behind this reaches a great deal further than two entries. Forty-three living profiles across the corpus sit at Initiative 1 or below, nine of them in this book, including the Slann Mage-Priest at 1 and Lord Kroak at 0.
 
-So there are two different proposals hiding here. Raising every living creature off Initiative 1 is a sweep across thirty-two books that would also quicken trolls, giants and mammoths, which are slow on purpose. Raising these two is a judgement about Saurus and Kroxigor specifically. Both are defensible; they should not be argued as if they were one.
+So there are two different proposals hiding here. Raising every living creature off Initiative 1 is a sweep across thirty-two books that would also quicken trolls and mammoths, which are slow on purpose, and the Slann, who is meant to be contemplating something else. Giants are not in that company, whatever their reputation: the ordinary Giant strikes at Initiative 3 and only the Bonegrinder variety is at 1. Raising these two instead is a judgement about Saurus and Kroxigor. Both are defensible, and they should not be argued as though they were one.
 
 #field("What it would take", "")
 
@@ -1689,6 +1691,10 @@ Two digits, and a glance at whether the pair are still priced correctly afterwar
 #minitable(("Model", "Where", "WS", "I"), ("Saurus Oldblood", "Characters", "6", "3", "Saurus Scar-Veteran", "Characters", "5", "3", "Kroxigor Ancient", "Characters", "5", "2", "Saurus Warrior", "Core", "3", "1", "Temple Guard", "Special", "4", "2", "Saurus on a Cold One", "Special", "4", "2", "Kroxigor", "Special", "3", "1", "Saurus on an Aggradon", "Rare", "4", "2"))
 
 Two rows in that table are Initiative 1, and they are the two the rank and file actually stand in.
+
+*And here is what already strikes before them.* Every one of these is dead:
+
+#minitable(("Model", "Book", "Points", "I"), ("Sylvanian peasant", "Vampire Counts", "2", "3", "Skeleton Warrior", "Vampire Counts", "3", "2", "Skeleton Warrior", "Tomb Kings", "4", "2", "Crypt Ghoul", "Vampire Counts", "7", "3", "Saurus Warrior", "Lizardmen", "13", "1", "Kroxigor", "Lizardmen", "47", "1"))
 
 #namecost("Saurus Warriors should be Weapon Skill 4", "under discussion")
 
