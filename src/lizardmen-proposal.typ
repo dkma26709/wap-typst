@@ -1717,3 +1717,33 @@ One digit and one price. If the Initiative proposal is agreed as well then the t
 #minitable(("Entry", "Points", "WS", "I", "Also carries"), ("Saurus Warrior, as printed", "13", "3", "1", "Hand weapon", "Saurus Warrior, proposed", "14", "4", "1", "Hand weapon", "Temple Guard", "17", "4", "2", "Polearm, Stubborn, Slann rules"))
 
 The four points would still buy a polearm, Stubborn and the two rules that tie the unit to a Slann, which is a fair sale. Whether it is a four-point sale is the argument.
+
+#namecost("Kroxigor think better with Skinks about", "under discussion")
+
+A Kroxigor would cost three points less, at 44, and be subject to Stupidity in any turn it starts with no friendly Skink unit within 6 inches. Standing near Skinks it behaves exactly as it does today.
+
+#field("Why", "")
+
+The book pairs the two everywhere except in the rules. Skink Skirmishers carry Skirmish Screen, written for no reason but to let Kroxigor walk through them, and those are the only two entries in the army that name each other at all.
+
+The mechanism needs no inventing either, because the corpus has written it twice. The Snotlings' Mimic keys off a friendly Orc or Goblin unit within 6 inches, and our own Tyranids' Synapse penalises any unit that is not within 12 inches of the right friendly model.
+
+What the discount buys is freedom of movement rather than a coin flip. The drawback is switched off by standing near a unit the list was always going to bring, so what it really costs is Kroxigor that must travel with their handlers instead of going where they please. The rulebook checks Stupidity only outside close combat, so it never bites once they arrive: this is entirely a rule about the approach.
+
+#field("The argument against", "")
+
+The discount is anchored on unconditional Stupidity, which is not what this is. The corpus prices Stupidity away at three points a model, on the Skaven Rat Ogre's Brain Transplant, and that model is Stupid wherever it stands. A version a competent player switches off by keeping Skinks within six inches is worth less than the full three, so 44 is the generous reading and 45 the cautious one.
+
+It also collides with the Spawn-kin proposal at the front of this chapter. A Kroxigor standing inside a Skink Cohort is an inch from a Skink and would never test at all, taking the discount for nothing. That may be the intention, since it drives Kroxigor into the Cohort where the theme wants them, but the two cannot then be priced apart.
+
+#field("What it would take", "")
+
+A points value and one clause on the Kroxigors entry, plus a decision about whether the Kroxigor Ancient shares it. Worth knowing before agreeing it: Cold-blooded will not help. Stupidity here is a flat D6 against a table rather than a Leadership test, and Immunity (Psychology) covers only Panic, Fear and Terror, so the army's usual answer to wobbling does nothing at all against this.
+
+#field("For example", "")
+
+*What the roll actually does,* in any turn no Skinks are close enough:
+
+#minitable(("D6", "What happens"), ("1", "Lurches D6 inches straight forward, may only Hold if charged, no combat reform", "2-3", "Minus one to Weapon Skill, Ballistic Skill, Leadership and casting", "4-6", "Nothing at all"))
+
+Half the rolls do nothing, one in six is a real accident, and none of it is rolled at all while a Skink unit stands within six inches.
