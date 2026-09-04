@@ -141,11 +141,42 @@
 // chapter spells it; arcane items name one of the three arcane categories. The
 // other three categories have no type at all, and the empty tuple is how that
 // is said - `type:` on a talisman is an error rather than a silent no-op.
+//
+// Two lists in one, per category: what the rulebook arms and armours everybody
+// with, and then the equipment particular armies bring - a Nipponese katana, an
+// Ogre gut-plate, a Lizardman's tail weapon. The second list is longer than it
+// looks like it should be because the books write one piece of equipment more
+// than one way, and the spelling here is the one they are all read as: the
+// corpus has "Elven longbow" beside "Elven Longbow" and "Brace of pistols"
+// beside "Brace of Pistols".
+//
+// Not everything a book prints before an item's rules belongs here. "Requires
+// two hands" and "This item adds a 6+ armour save" are rules about the item,
+// not the equipment it is, and they stay in the rules text where they were
+// written - an unlisted phrase is not an error, it is simply prose.
 #let MAGIC_ITEM_TYPES = (
-  weapon: ("Hand weapon", "Additional hand weapon", "Polearm", "Great weapon",
-           "Flail", "Spear", "Pike", "Lance", "Light lance", "Heavy lance"),
-  armour: ("Light armour", "Medium armour", "Heavy armour", "Shield",
-           "Buckler", "Barding"),
+  weapon: (
+    // Close combat, from the rulebook.
+    "Hand weapon", "Additional hand weapon", "Two hand weapons", "Polearm",
+    "Great weapon", "Flail", "Spear", "Pike", "Lance", "Light lance",
+    "Heavy lance",
+    // Missile, from the rulebook.
+    "Shortbow", "Longbow", "Greatbow", "Bow", "Crossbow", "Handgun", "Sling",
+    "Javelins", "Blowpipe", "Pistol", "Blunderbuss", "Throwing weapons",
+    "Throwing axes",
+    // What particular armies carry.
+    "Light lance/spear", "Light lance/spear/javelins", "Spear/light lance",
+    "Spear/javelin", "Two hand weapons & tail weapon", "Elven longbow",
+    "Elven shortbow", "Repeater crossbow", "Deathrain crossbow",
+    "Hochland long rifle", "Brace of pistols", "Brace of Ogre Pistols",
+    "Cavalry hammer", "Katana", "Oriental longsword", "Celestial Blade",
+    "Fireglaive", "Sunstaff", "Sun Gauntlet",
+  ),
+  armour: (
+    "Light armour", "Medium armour", "Heavy armour", "Shield", "Buckler",
+    "Barding",
+    "Gut-plate", "Ironfist", "Sea Dragon Cloak",
+  ),
   arcane: ("Staff", "Charm", "Relic"),
   talisman: (),
   enchanted: (),
@@ -157,6 +188,49 @@
 // where the source leaves it off, but resolved into the metadata, so a reader
 // asking what a weapon is gets an answer rather than a blank.
 #let MAGIC_WEAPON_DEFAULT_TYPE = "Hand weapon"
+
+// A bound spell is an item that casts. Where the spell is not one from a Lore,
+// the rulebook has the item's description carry its level and casting value, and
+// the corpus writes that six ways - "Bound Spell (Level 2, cast on 7+)", "Bound
+// Spell, (Level 3, cast on 9+)", "Bound Spell, Power Level 4", "Bound Spell
+// (Power Level 4)", "Bound Spell (power level 3)", and a bare "Bound Spell",
+// which is also written "Bound spell". Passed as values there is one way, and
+// the level and the casting value are numbers a reader can ask for rather than
+// punctuation inside a sentence:
+//
+//   bound: true                     Bound Spell.
+//   bound: (level: 2, cast: "7+")   Bound Spell (Level 2, cast on 7+).
+//   bound: (power: 4)               Bound Spell (Power Level 4).
+//
+// `cast` is a string because a casting value is written "7+", not 7.
+#let _bound-phrase(bound, where) = {
+  if bound == none or bound == false {
+    none
+  } else if bound == true {
+    "Bound Spell"
+  } else if _typeof(bound) == dictionary {
+    let unknown = bound.keys().filter(k => k not in ("level", "cast", "power"))
+    assert(unknown.len() == 0, message: where + ": bound: has no key "
+      + unknown.join(", ") + "; expected level, cast or power")
+    if "power" in bound {
+      assert("level" not in bound and "cast" not in bound, message: where
+        + ": bound: a spell has a power level, or a level and a casting value,"
+        + " not both")
+      "Bound Spell (Power Level " + str(bound.power) + ")"
+    } else {
+      // Neither is any use without the other: a level with no casting value
+      // cannot be cast, and a casting value with no level cannot say how many
+      // dice may be thrown at it.
+      assert("level" in bound and "cast" in bound, message: where
+        + ": bound: give level and cast together, or power on its own")
+      "Bound Spell (Level " + str(bound.level) + ", cast on "
+        + str(bound.cast) + ")"
+    }
+  } else {
+    assert(false, message: where + ": bound: must be true, (level: .., cast: ..)"
+      + " or (power: ..), not " + repr(bound))
+  }
+}
 
 // The gap before an item's name. Wider than the 0.9em a `namecost` takes
 // elsewhere: a magic-item section is a list of sixty short records rather than
@@ -171,7 +245,7 @@
 // this book was imported from, it does.
 #let magic-item(name, cost, body,
                 kind: none, type: none, only: none,
-                bound: false, one-use: false, common: false) = {
+                bound: none, one-use: false, common: false) = {
   let where = "magic-item " + name
   assert(kind in MAGIC_ITEM_KINDS, message: where + ": kind must be one of "
     + MAGIC_ITEM_KINDS.join(", ") + ", not " + repr(kind))
@@ -201,7 +275,7 @@
   let qualifiers = (
     if only != none { only + " only" },
     typed,
-    if bound { "Bound Spell" },
+    _bound-phrase(bound, where),
     if one-use { "One use only" },
   ).filter(q => q != none).map(q => q + ". ")
 
