@@ -1674,6 +1674,8 @@ The Kroxigor case is starker still, because the comparison is inside one creatur
 
 Look outside the army and it reads worse. A Skeleton Warrior is a corpse held upright by necromancy and strikes at Initiative 2; a Sylvanian peasant, two points and no training whatever, strikes at 3. A Saurus Warrior costs thirteen, was spawned for nothing but war, and goes after both. The company the book keeps him in at Initiative 1 is zombies, trolls and mammoths.
 
+Anatomy is a fair objection, and measured against the human yardstick it argues for Initiative 2 rather than against it. Of the 137 plain human infantry entries in the Core and Special sections of the corpus, 86 strike at Initiative 3 and not one strikes at 1. A Saurus is heavier and more deliberate than a man, so a step below him is right. Two steps below him, level with a zombie and a mammoth, is not anatomy. It is an oversight.
+
 #field("The argument against", "")
 
 Initiative 1 is doing real characterisation work elsewhere, and the principle behind this reaches a great deal further than two entries. Forty-three living profiles across the corpus sit at Initiative 1 or below, nine of them in this book, including the Slann Mage-Priest at 1 and Lord Kroak at 0.
@@ -1705,6 +1707,8 @@ Saurus Warriors would go from Weapon Skill 3 to Weapon Skill 4, at a point more 
 The book contradicts itself on one creature. A Saurus on foot in a Core unit is Weapon Skill 3; the same Saurus riding a Cold One in Special is 4, riding an Aggradon in Rare is 4, and standing in the Temple Guard is 4. Only the version a list actually builds around is worse at fighting, and nothing in the book explains what the mount teaches him.
 
 The price is the easy part, because the corpus keeps quoting it. A point of Weapon Skill bundled with a second benefit costs two points a model in the Empire's Inner Circle Knights, in Orc Big 'Uns, in Goblin Little Big 'Uns and in this book's own Red Crested Skinks. On its own it is worth about one, which puts a Saurus Warrior at fourteen.
+
+The human yardstick says the same. Of the 137 plain human infantry entries across the corpus, 66 fight at Weapon Skill 3 and 50 at 4, so a Saurus Warrior currently fights exactly as well as an ordinary man with a spear and no better. Weapon Skill 4 puts him among the better human troops rather than above them, which is a modest claim for something spawned fully grown and knowing how to fight.
 
 #field("The argument against", "")
 
