@@ -93,7 +93,6 @@ Models with this special rule do not suffer any movement penalties for being bar
 
 = THE LORE OF THE LADY
 
-#columns(2)[
 #spell("FAVOUR OF THE LADY", "Lore Attribute")
 
 If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Magical Ward rolls of 1 until the start of the next Bretonnian Magic phase.
@@ -135,7 +134,6 @@ At the start of each enemy turn, the transformed model must take a Leadership te
 #spell("CHIVALRIC ONSLAUGHT", "Level 4", cast: "12+")
 
 _Chivalric Onslaught_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.
-]
 
 = VIRTUES OF THE CHIVALRIC KNIGHT
 
