@@ -469,14 +469,42 @@
   let named = if _typeof(level) == int { "Level " + str(level) } else { level }
 
   [#metadata((kind: "spell", name: name, level: level, cast: cast))<meta>]
-  // The casting value sits where an item's cost sits, because it is the same
-  // thing: what the spell asks of the player before it does anything.
-  namecost(name, if cast != none { "Cast on " + cast } else { "" },
-    above: RECORD_GAP)
-  // The level opens the rules paragraph, as an item's "Talisman. One use only."
-  // does, rather than standing off on a line of its own. The full stop is
-  // supplied here, so a spell cannot be missing one.
-  [#named. #body]
+  // The name on its own line; the level and the casting value on the next,
+  // one at each end of it.
+  //
+  // Every spell breaks the same way, whether or not the name would have fitted
+  // beside its level. Letting it depend on the length meant a lore where a few
+  // spells ran to two lines and the rest to one, and the eye read that ragged
+  // difference as meaning something - which it did not. Two lines always is one
+  // shape a reader can learn.
+  //
+  // No dotted leader, though the grid is otherwise the one an option line uses.
+  // A leader is there to carry the eye across a column of prices to the one
+  // number on its row; a spell has a single value on the right, and the dots
+  // joined two things that were already touching.
+  block(above: RECORD_GAP, below: 0em, sticky: true, {
+    // As in `namecost`, and for its reasons: justification would stretch a
+    // short name across the column.
+    set par(justify: false)
+    block(below: 0em,
+      text(weight: "bold", size: 11pt, tracking: 0.04em, hyphenate: false,
+        upper(name)))
+    // Italic and a shade smaller, as the casting value opposite it is: the two
+    // numbers a player needs are the two things here that are not upright body
+    // text, and they sit at either end of one line.
+    block(above: 0.1em, below: 0em, grid(
+      columns: (1fr, auto),
+      align: (left + bottom, right + bottom),
+      column-gutter: 0.6em,
+      text(size: 9.5pt, style: "italic", fill: muted)[(#named)],
+      if cast != none { text(size: 9.5pt, style: "italic")[Cast on #cast] }
+      else { none },
+    ))
+  })
+  // Block spacing is the larger of the two sides it falls between, and a
+  // paragraph brings 0.72em of its own - a full paragraph break between a
+  // spell's name and the rules under it. Set from both sides instead.
+  block(above: 0.28em, body)
 }
 
 // A lore: its chapter title and its spells, always in two columns.
