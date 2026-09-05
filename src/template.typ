@@ -857,7 +857,12 @@
     [#metadata((kind: "entry", name: name))<meta>]
     block(
       breakable: args.at("breakable", default: false),
-      above: 1.6em, below: 0.6em,
+      // Entries share a page now, so the gap between two of them is the only
+      // thing telling a reader where one unit stops and the next starts. At the
+      // old 1.6em that gap measured 12pt against the 10pt *inside* an entry,
+      // between a profile and its fields - which read as one long entry rather
+      // than two. 3.2em puts about three line-heights between them.
+      above: 3.2em, below: 0.6em,
       {
         heading(level: 2, name)
         body
