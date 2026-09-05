@@ -110,25 +110,14 @@
 
 // --- magic items ------------------------------------------------------------
 
-// A magic item is a record where an entry is a sequence. Every one in the
-// corpus is a name, a cost, a few qualifiers and its rules text, in that order
-// and no other, so unlike a unit it can be written as a single call - and
-// writing it as one is the point. Set by hand as a `namecost` and a paragraph,
-// an item's qualifiers are prose like any other sentence: nothing stops "Great
-// weapon" being written "Great Weapon", the restriction landing after the type
-// rather than before it, the trailing full stop going missing, or the asterisk
-// that marks a common item being dropped from the name it is glued to. Passed
-// as arguments they are checked here, ordered here and punctuated here, so
-// changing how an item is set is a change to this file rather than to several
-// hundred paragraphs.
+// A magic item is one call: name, cost, qualifiers, rules text - the order
+// every item in the corpus is written in. Passed as arguments, the qualifiers
+// are checked, ordered and punctuated here, instead of being typed by hand into
+// several hundred paragraphs and left free to differ.
 
-// `type` is one of the parameters below, and inside that scope it shadows
-// Typst's own `type`. Bound here so the assertions can still ask what a value
-// is - the same shadowing `book-meta` sidesteps by taking `..named`.
+// `type` and `columns` are parameter names below, and inside those scopes they
+// shadow Typst's own. Bound here so the code can still reach both.
 #let _typeof = type
-
-// And `columns` is a parameter of `magic-item-section`, which shadows Typst's
-// own the same way. Same remedy.
 #let _columns = columns
 
 // The six categories, from the rulebook's Balance of Power: a model may carry
@@ -136,24 +125,22 @@
 #let MAGIC_ITEM_KINDS = ("weapon", "armour", "talisman", "arcane",
                          "enchanted", "standard")
 
-// What an item of each category may declare itself to be. Weapons and armour
-// name the mundane equipment they stand in for, spelled as the Weapons & Armour
-// chapter spells it; arcane items name one of the three arcane categories. The
-// other three categories have no type at all, and the empty tuple is how that
-// is said - `type:` on a talisman is an error rather than a silent no-op.
+#let _assert-kind(kind, where) = assert(kind in MAGIC_ITEM_KINDS,
+  message: where + ": kind must be one of " + MAGIC_ITEM_KINDS.join(", ")
+    + ", not " + repr(kind))
+
+// What an item of each category may declare itself to be: the mundane equipment
+// a weapon or armour stands in for, spelled as the Weapons & Armour chapter
+// spells it, or one of the three arcane categories. The other three categories
+// have no type at all, and the empty tuple is how that is said - `type:` on a
+// talisman is an error rather than a silent no-op.
 //
-// Two lists in one, per category: what the rulebook arms and armours everybody
-// with, and then the equipment particular armies bring - a Nipponese katana, an
-// Ogre gut-plate, a Lizardman's tail weapon. The second list is longer than it
-// looks like it should be because the books write one piece of equipment more
-// than one way, and the spelling here is the one they are all read as: the
-// corpus has "Elven longbow" beside "Elven Longbow" and "Brace of pistols"
-// beside "Brace of Pistols".
+// Per category, what the rulebook arms everybody with and then the equipment
+// particular armies bring. One spelling per piece, the one they are all read
+// as, since the books write several of them more than one way.
 //
-// Not everything a book prints before an item's rules belongs here. "Requires
-// two hands" and "This item adds a 6+ armour save" are rules about the item,
-// not the equipment it is, and they stay in the rules text where they were
-// written - an unlisted phrase is not an error, it is simply prose.
+// Rules about an item - "Requires two hands" - are not equipment it is, and
+// stay in the rules text. An unlisted phrase is prose, not an error.
 #let MAGIC_ITEM_TYPES = (
   weapon: (
     // Close combat, from the rulebook.
@@ -183,20 +170,16 @@
   standard: (),
 )
 
-// A magic weapon that names no type is a hand weapon - the rulebook says so
-// outright, and the books accordingly leave it unsaid. Left off the page too,
-// where the source leaves it off, but resolved into the metadata, so a reader
-// asking what a weapon is gets an answer rather than a blank.
+// A magic weapon that names no type is a hand weapon - the rulebook says so,
+// and the books accordingly leave it unsaid. Left off the page too, but
+// resolved into the metadata, so a reader asking what a weapon is gets an
+// answer.
 #let MAGIC_WEAPON_DEFAULT_TYPE = "Hand weapon"
 
 // A bound spell is an item that casts. Where the spell is not one from a Lore,
-// the rulebook has the item's description carry its level and casting value, and
-// the corpus writes that six ways - "Bound Spell (Level 2, cast on 7+)", "Bound
-// Spell, (Level 3, cast on 9+)", "Bound Spell, Power Level 4", "Bound Spell
-// (Power Level 4)", "Bound Spell (power level 3)", and a bare "Bound Spell",
-// which is also written "Bound spell". Passed as values there is one way, and
-// the level and the casting value are numbers a reader can ask for rather than
-// punctuation inside a sentence:
+// the item carries its own level and casting value, which the corpus writes six
+// ways. Passed as values there is one way, and the numbers can be asked for
+// rather than read out of a sentence:
 //
 //   bound: true                     Bound Spell.
 //   bound: (level: 2, cast: "7+")   Bound Spell (Level 2, cast on 7+).
@@ -218,14 +201,12 @@
         + " not both")
       "Bound Spell (Power Level " + str(bound.power) + ")"
     } else {
-      // Neither is any use without the other: a level with no casting value
-      // cannot be cast, and a casting value with no level cannot say how many
-      // dice may be thrown at it.
+      // Neither number is any use without the other: a level cannot be cast,
+      // and a casting value cannot say how many dice may be thrown at it.
       assert("level" in bound and "cast" in bound, message: where
         + ": bound: give level and cast together, or power on its own")
-      // Bound to locals first: in a code block an expression ends at the line
-      // break, so a continuation line opening with `+` is read as a unary plus
-      // on the term after it, not as the sum it looks like.
+      // Bound to locals first: an expression ends at the line break, so a
+      // continuation line cannot carry the rest of the sum.
       let level = str(bound.level)
       let cast = str(bound.cast)
       "Bound Spell (Level " + level + ", cast on " + cast + ")"
@@ -236,11 +217,11 @@
   }
 }
 
-// The gap before an item's name. Wider than the 0.9em a `namecost` takes
-// elsewhere: a magic-item section is a list of sixty short records rather than
-// continuous prose, and at the paragraph gap the eye reads one item's rules as
-// running into the next item's name. Set here rather than in `namecost` so it
-// is the magic items that get the air, and not every run-in name in the corpus.
+// The gap before an item's name, wider than the 0.9em a `namecost` takes
+// elsewhere: a section is sixty short records rather than continuous prose, and
+// at the paragraph gap one item's rules read as running into the next item's
+// name. Set here so it is the magic items that get the air, not every run-in
+// name in the corpus.
 #let MAGIC_ITEM_GAP = 1.2em
 
 // `cost` is a number, not "45 points". The unit is the same for every item in
@@ -251,31 +232,34 @@
                 kind: none, type: none, only: none,
                 bound: none, one-use: false, common: false) = {
   let where = "magic-item " + name
-  assert(kind in MAGIC_ITEM_KINDS, message: where + ": kind must be one of "
-    + MAGIC_ITEM_KINDS.join(", ") + ", not " + repr(kind))
+  _assert-kind(kind, where)
   assert(_typeof(cost) == int and cost > 0,
     message: where + ": cost is a number of points, not " + repr(cost))
 
-  // One type, or several worn at once - "Heavy armour and shield". The
-  // vocabulary holds each piece under the single name it is printed by
-  // everywhere else, and the tail is lowered as it is joined, which is how the
-  // source sets the pair.
+  // One type, or several worn at once - "Heavy armour and shield".
   let vocab = MAGIC_ITEM_TYPES.at(kind)
-  let given = if type == none { () } else if _typeof(type) == str { (type,) } else { type }
+  let given = if type == none {
+    ()
+  } else if _typeof(type) == str {
+    (type,)
+  } else {
+    type
+  }
   for t in given {
     assert(t in vocab, message: where + ": " + repr(t) + " is not a " + kind
       + " type" + if vocab.len() == 0 { " - " + kind + " items have none" }
                   else { "; expected one of " + vocab.join(", ") })
   }
+  // The vocabulary holds each piece under the one name it is printed by, so the
+  // tail is lowered as it is joined - which is how the source sets the pair.
   let typed = if given.len() > 0 {
     given.enumerate().map(((i, t)) => if i == 0 { t } else { lower(t) })
       .join(" and ")
   }
 
   // Who may carry it, what it is, how it may be used, then what it does - the
-  // order every item in the corpus is written in. Each qualifier is a sentence
-  // of its own and the full stops are supplied here, so an item cannot be
-  // missing one or be punctuated unlike its neighbours.
+  // order every item in the corpus is written in. Each qualifier is a sentence,
+  // and the full stops are supplied here, so an item cannot be missing one.
   let qualifiers = (
     if only != none { only + " only" },
     typed,
@@ -291,18 +275,18 @@
       else if kind == "weapon" { MAGIC_WEAPON_DEFAULT_TYPE },
     only: only, bound: bound, one-use: one-use, common: common,
   ))<meta>]
-  // The asterisk is the rulebook's mark for a *common* item - one that may be
-  // taken more than once in an army - so it is carried by a flag rather than
-  // typed into the name, where it reads as spelling and can be lost to one.
+  // The asterisk marks a *common* item - one that may be taken more than once -
+  // so it is carried by a flag rather than typed into the name, where it reads
+  // as spelling and can be lost to one.
   namecost(name + if common { "*" } else { "" }, str(cost) + " points",
     above: MAGIC_ITEM_GAP)
   // Not wrapped in a block: the qualifiers open the item's first paragraph, as
-  // they do on the printed page, rather than standing off from it as a line of
-  // their own.
+  // they do on the printed page, rather than standing off as a line of their
+  // own.
   [#qualifiers.join()#body]
 }
 
-// The six, named, so a book states the category by which function it calls and
+// The six, named, so a book states the category by the function it calls and
 // cannot state it as a value that is not one of them.
 #let magic-weapon = magic-item.with(kind: "weapon")
 #let magic-armour = magic-item.with(kind: "armour")
@@ -314,16 +298,14 @@
 // --- magic items: the chapter they sit in -----------------------------------
 
 // What each category's section is titled. The corpus already agrees - 54 of the
-// books title their weapon section MAGIC WEAPONS, and 54 their standards MAGIC
-// STANDARDS - so the agreement is written down once here rather than retyped,
-// and relied on to be retyped correctly, in every book. `name:` is for the two
-// that genuinely differ: the Dwarfs call their talismans TALISMANIC RUNES.
+// books title their weapon section MAGIC WEAPONS - so the agreement is written
+// down once here rather than retyped in every book. `name:` is for the two that
+// genuinely differ: the Dwarfs call their talismans TALISMANIC RUNES.
 //
 // Set in capitals rather than left to the display face, which uppercases every
-// heading anyway. The face is not the only reader: a book generates its own
-// contents page from its headings, and an outline takes the heading's text and
-// not the show rule's rendering of it. Title case here sets the six of them in
-// a contents page whose every other line is capitals.
+// heading anyway. The face is not the only reader: a contents page takes the
+// heading's text and not the show rule's rendering of it, so title case here
+// would set six odd lines in a page whose every other line is capitals.
 #let MAGIC_ITEM_SECTIONS = (
   weapon: "MAGIC WEAPONS",
   armour: "MAGIC ARMOUR",
@@ -333,16 +315,12 @@
   standard: "MAGIC STANDARDS",
 )
 
-// The chapter's head: its title, and the standing paragraph that introduces it.
-// Header only, like `entry` and `namecost` - the sections flow after it - since
-// a chapter owns only its heading and its intro, and neither needs to enclose
-// what follows.
+// The chapter's head: its title and the standing paragraph that introduces it.
+// Header only, like `entry` and `namecost` - the sections flow after it.
 //
-// The intro is set `strong` rather than in the italic register `note` uses,
-// because that is what the source sets it in and pulling a layer into the
-// template is not the moment to change what reaches the page. Set here, though,
-// so it is one edit from being something else in every book at once, instead of
-// forty-five paragraphs whose emphasis was typed by hand.
+// The intro is set `strong` because that is what the source sets it in; set
+// here, though, so it is one edit from being something else in every book at
+// once, instead of forty-five paragraphs whose emphasis was typed by hand.
 #let magic-item-chapter(title: "MAGIC ITEMS", intro: none) = {
   heading(level: 1, title)
   // Not wrapped in a block: a block takes `block.spacing` where a paragraph
@@ -353,47 +331,40 @@
 // A section: its page break, its heading, and - the layer that has never had an
 // owner at all - the number of columns its items set in.
 //
-// That number was decided once, at import, by counting characters: `to_book.py`
-// gave a section two columns at 3,000 characters of prose and one below it, and
-// wrote the answer into the book as a bare `#columns(2)[`. Nothing has owned it
-// since. It is why a chapter of six short sections and a chapter of the same
-// quantity of material in one long section come out set differently - a
-// difference in how they were once measured, not in how they read.
+// That number used to be decided at import by counting characters: two columns
+// at 3,000 of them, one below, written into the book as a bare `#columns(2)[`.
+// It is why a chapter of six short sections and a chapter of the same material
+// in one long section come out set differently.
 //
-// Measured here instead, and in the geometry the rule is actually about rather
-// than a character count standing in for it: `layout` gives the page's measure,
-// `measure` the height these items would take set across the whole of it.
-// Taller than the page and there is material enough to fill two columns;
-// shorter and the second column stands part-empty, which reads as a fault
-// rather than a choice. Margins and type size are in the answer because they
-// are in the question, which is what the character count could never manage -
-// it was calibrated for one page geometry and every book has since been free to
-// choose its own.
+// Measured here instead, in the geometry the rule is actually about: `layout`
+// gives the page's measure, `measure` the height these items would take set
+// across the whole of it. Taller than the page and there is material enough to
+// fill two columns; shorter and the second stands part-empty, which reads as a
+// fault rather than a choice. Margins and type size are in the answer because
+// they are in the question - which a character count, calibrated for one page
+// geometry every book has since been free to depart from, could never manage.
 //
 // `columns:` overrides the rule where an editor knows better. It is not how the
-// books should be set; it is there so that disagreeing with the rule does not
-// mean going back to writing `#columns(2)[` into a book by hand.
+// books should be set; it is there so that disagreeing does not mean going back
+// to writing `#columns(2)[` into a book by hand.
 #let magic-item-section(kind, name: auto, columns: auto, first: false, body) = {
-  assert(kind in MAGIC_ITEM_KINDS,
-    message: "magic-item-section: kind must be one of "
-      + MAGIC_ITEM_KINDS.join(", ") + ", not " + repr(kind))
+  _assert-kind(kind, "magic-item-section")
   assert(columns in (auto, 1, 2),
     message: "magic-item-section: columns must be auto, 1 or 2, not "
       + repr(columns))
   // `entry` rather than a heading of its own, so a magic-item section breaks
-  // and heads exactly as a unit entry does - one definition, not two that have
-  // to be kept saying the same thing.
+  // and heads exactly as a unit entry does - one definition, not two.
   entry(if name == auto { MAGIC_ITEM_SECTIONS.at(kind) } else { name },
         first: first)
-  if columns == 1 {
-    body
-  } else if columns == 2 {
-    _columns(2, body)
-  } else {
+  if columns == auto {
     layout(size => {
       let tall = measure(block(width: size.width, body)).height >= size.height
       if tall { _columns(2, body) } else { body }
     })
+  } else if columns == 2 {
+    _columns(2, body)
+  } else {
+    body
   }
 }
 
