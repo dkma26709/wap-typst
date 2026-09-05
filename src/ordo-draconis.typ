@@ -1290,6 +1290,7 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
 = SPECIAL CHARACTERS
 
 #unit("EMMERICH",
+  solo: true,
   first: true,
   before: [
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
@@ -1342,6 +1343,7 @@ _The Marshal is the book's own grammar for a general and is written the way four
 )
 
 #unit("ANKHARA",
+  solo: true,
   before: [
 The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
 

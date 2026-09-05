@@ -840,6 +840,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 = SPECIAL CHARACTERS
 
 #unit("KHALIL AL-ZAHIR",
+  solo: true,
   first: true,
   subtitle: "Great Sultan of Araby",
   profiles: (
@@ -865,6 +866,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("SALAH AD-DIN",
+  solo: true,
   subtitle: "The Sword of The One",
   profiles: (
     (name: "Salâh ad-Dîn", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 265),
@@ -887,6 +889,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("LAYLA BINT SURAYA",
+  solo: true,
   subtitle: "Princess of Araby",
   profiles: (
     (name: "Layla bint Suraya", m: 4, ws: 5, bs: 3, s: 4, t: 3, w: 2, i: 5, a: 3, ld: 8, points: 130),
@@ -906,6 +909,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("MEHMED AGHA",
+  solo: true,
   subtitle: "Commander of the First Division",
   profiles: (
     (name: "Mehmed Agha", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 120),
@@ -924,6 +928,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("SINDABAD",
+  solo: true,
   subtitle: "Corsair Captain of Lashiek",
   profiles: (
     (name: "Sindabad", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 150),
@@ -941,6 +946,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("SULTAN JAFFAR",
+  solo: true,
   subtitle: "Despot of Araby",
   profiles: (
     (name: "Jaffar", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 9, points: 325),
@@ -963,6 +969,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("THE GOLDEN MAGUS",
+  solo: true,
   subtitle: "Sultan of the Seas",
   profiles: (
     (name: "The Golden Magus", m: 4, ws: 4, bs: 2, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 365),
@@ -989,6 +996,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("ABDUL ALHAZRED",
+  solo: true,
   subtitle: "The Mad Sorcerer",
   profiles: (
     (name: "Abdul Alhazred", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 8, points: 160),
@@ -1013,6 +1021,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("MALIK IBN LA'AHAD",
+  solo: true,
   subtitle: "Master Assassin",
   profiles: (
     (name: "Malik Ibn La'Ahad", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 185),
@@ -1030,6 +1039,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("KASSIM",
+  solo: true,
   subtitle: "The Prince of Thieves",
   profiles: (
     (name: "Kassim", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 165),
@@ -1047,6 +1057,7 @@ If the model is successfully picked up, it is then either dropped to the ground,
 )
 
 #unit("KHAR-MEL",
+  solo: true,
   subtitle: "The Desert Wind",
   profiles: (
     (name: "Khar-mel", m: 6, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 3, ld: 7, points: 145),

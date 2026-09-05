@@ -914,6 +914,7 @@ If the Picador(s) are killed before they have lit the bulls, the bulls simply wa
 = SPECIAL CHARACTERS
 
 #unit("ISABELLA GIOVANNA LUCCELLI",
+  solo: true,
   first: true,
   subtitle: "La Aguila Ultima, Head of the Order of the Eagle",
   profiles: (
@@ -935,6 +936,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("JUAN FEDERICO",
+  solo: true,
   subtitle: "El Lider Glorioso, Grand Master of the Order of the Righteous Spear",
   profiles: (
     (name: "Juan Federico", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 205),
@@ -957,6 +959,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("SANTIAGO DE VIVAR",
+  solo: true,
   subtitle: "Champion of Estalia, Scourge of Araby",
   profiles: (
     (name: "Santiago de Vivar", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 9, points: 275),
@@ -977,6 +980,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("FRANCISCO CORTEZ",
+  solo: true,
   subtitle: "Conqueror of the New World",
   profiles: (
     (name: "Francisco Cortez", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 115),
@@ -999,6 +1003,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("DIEGO MONTOYA",
+  solo: true,
   profiles: (
     (name: "Diego Montoya", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 130),
   ),
@@ -1017,6 +1022,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("DON LOMENTE",
+  solo: true,
   profiles: (
     (name: "Don Lomente", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 2, ld: 10, points: 100),
     (name: "Rocinante (Warhorse)", m: 7, ws: 2, bs: 0, s: 2, t: 2, w: 1, i: 2, a: 1, ld: 4, points: ""),
@@ -1033,6 +1039,7 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
 )
 
 #unit("MARIA DE SALVO",
+  solo: true,
   subtitle: "Sister Assassin of the Order of the Eagle",
   profiles: (
     (name: "Maria de Salvo", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 150),

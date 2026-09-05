@@ -1009,6 +1009,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 = SPECIAL CHARACTERS
 
 #unit("LOUEN LEONCOEUR",
+  solo: true,
   first: true,
   subtitle: "King of Bretonnia",
   profiles: (
@@ -1044,6 +1045,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("BOHEMUND THE BEASTSLAYER",
+  solo: true,
   subtitle: "Duke of Bastonne",
   profiles: (
     (name: "Bohemond the Beastslayer", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 300),
@@ -1066,6 +1068,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("TANCRED II",
+  solo: true,
   subtitle: "Duke of Quenelles",
   profiles: (
     (name: "Tancred II", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 250),
@@ -1087,6 +1090,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("ALBERIC OF BORDELEAUX",
+  solo: true,
   subtitle: "Duke of Bordeleaux",
   profiles: (
     (name: "Alberic of Bordeleaux", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
@@ -1113,6 +1117,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("CECIL GASTONNE",
+  solo: true,
   subtitle: "The Wyrm Slayer",
   profiles: (
     (name: "Cecil Gastonne", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 190),
@@ -1131,6 +1136,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("REPANSE OF LYONESSE",
+  solo: true,
   subtitle: "Damsel of War",
   profiles: (
     (name: "Repanse of Lyonesse", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 185),
@@ -1155,6 +1161,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("TRISTAN THE TROBADOUR",
+  solo: true,
   profiles: (
     (name: "Tristan the Trobadour", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 145),
     (name: "Jules the Jester", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 30),
@@ -1181,6 +1188,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("ODO OF OUTREMER",
+  solo: true,
   subtitle: "Hero of the Crusades",
   profiles: (
     (name: "Odo of Outremer", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
@@ -1204,6 +1212,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("THE HERMIT KNIGHT OF MALMONT",
+  solo: true,
   profiles: (
     (name: "The Hermit Knight", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 170),
   ),
@@ -1218,6 +1227,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("MORGIANA THE FAY",
+  solo: true,
   subtitle: "The Fay Enchantress",
   profiles: (
     (name: "Morgiana the Fay", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 2, ld: 9, points: 420),
@@ -1253,6 +1263,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("LADY ELISE DUCHARD",
+  solo: true,
   subtitle: "Prophetess of the Duke of Brionne",
   profiles: (
     (name: "Élise Duchard", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 295),
@@ -1279,6 +1290,7 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 )
 
 #unit("THE GREEN KNIGHT",
+  solo: true,
   subtitle: "Guardian of the Sacred Sites",
   profiles: (
     (name: "The Green Knight", m: 4, ws: 7, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 240),
@@ -1306,6 +1318,7 @@ During the game, the Green Knight may disappear at will and reappear in another 
 )
 
 #unit("BERTRAND THE BRIGAND",
+  solo: true,
   subtitle: "Leader of the Bowmen of Bergerac",
   profiles: (
     (name: "Bertrand", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 90),

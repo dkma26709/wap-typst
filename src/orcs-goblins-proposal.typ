@@ -980,6 +980,7 @@ Little Waaagh!
 )
 
 #unit("GIANT RIVER TROLL HAG",
+  breakable: true,
   profiles: (
     (name: "Giant River Troll Hag", m: 5, ws: 3, bs: 1, s: 6, t: 5, w: 6, i: 1, a: "*", ld: 6, points: 270),
   ),
@@ -1288,6 +1289,7 @@ choose another victim. Roll again on this table to see what the Troll Hag does w
 )
 
 #unit("GOBLIN GITZ",
+  breakable: true,
   profiles: (
     (name: "Goblin", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 2),
     (name: "Nasty Skulker", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
@@ -2033,6 +2035,7 @@ Any unit hit by a Flinger suffer \-1 to its Movement, Weapon Skill, Ballistic Sk
 )
 
 #unit("GIANT",
+  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -2079,6 +2082,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("BONEGRINDER GIANT",
+  breakable: true,
   profiles: (
     (name: "Bonegrinder Giant", m: 10, ws: 3, bs: 3, s: 8, t: 8, w: 10, i: 1, a: "*", ld: 10, points: 385),
   ),
@@ -2151,6 +2155,7 @@ it.")))
 = SPECIAL CHARACTERS
 
 #unit("GORBAD IRONCLAW",
+  solo: true,
   first: true,
   subtitle: "Da Great Leader, Warboss of the Ironclaw Tribe",
   profiles: (
@@ -2173,6 +2178,7 @@ it.")))
 )
 
 #unit("AZHAG THE SLAUGHTERER",
+  solo: true,
   subtitle: "Warboss of the Bonerattlaz",
   profiles: (
     (name: "Azhag the Slaughterer", m: 4, ws: 7, bs: 3, s: 5, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 460),
@@ -2196,6 +2202,7 @@ it.")))
 )
 
 #unit("GRUMLOK & GAZBAG",
+  solo: true,
   subtitle: "Warboss of the Bloody Sun Boyz",
   profiles: (
     (name: "Grumlok", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 300),
@@ -2215,6 +2222,7 @@ it.")))
 )
 
 #unit("GRIMGOR IRONHIDE",
+  solo: true,
   subtitle: "The Green Slaughterer, Harbinger of Gork",
   profiles: (
     (name: "Grimgor Ironhide", m: 4, ws: 8, bs: 1, s: 5, t: 5, w: 3, i: 5, a: 5, ld: 9, points: 310),
@@ -2235,6 +2243,7 @@ it.")))
 )
 
 #unit("BORGUT FACEBEATER",
+  solo: true,
   subtitle: "Champion of Grimgor Ironhide",
   profiles: (
     (name: "Borgut Facebeater", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 2, i: 3, a: 3, ld: 9, points: 175),
@@ -2254,6 +2263,7 @@ it.")))
 )
 
 #unit("BADRUK 'EADSPLITTA",
+  solo: true,
   subtitle: "Scourge of the Grey Dwarfs of Karak Norn",
   profiles: (
     (name: "Badruk 'Eadsplitta", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 2, i: 3, a: 3, ld: 8, points: 140),
@@ -2271,6 +2281,7 @@ it.")))
 )
 
 #unit("ZOGGROK ANVILSMASHA",
+  solo: true,
   subtitle: "Legendary Orc Smith",
   profiles: (
     (name: "Zoggrok Anvilsmasha", m: 4, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 3, ld: 8, points: 100),
@@ -2290,6 +2301,7 @@ it.")))
 )
 
 #unit("OGDRUZ SWAMPDIGGA",
+  solo: true,
   subtitle: "Da Troll Calla",
   profiles: (
     (name: "Ogdruz Swampdigga", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 3, i: 3, a: 2, ld: 8, points: 235),
@@ -2311,6 +2323,7 @@ it.")))
 )
 
 #unit("WURRZAG UD URA ZAHUBU",
+  solo: true,
   subtitle: "The Great Green Prophet, Great Shaman of the Bone Nose Tribe",
   profiles: (
     (name: "Wurrzag", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 3, i: 3, a: 2, ld: 8, points: 310),
@@ -2335,6 +2348,7 @@ it.")))
 )
 
 #unit("GROM THE PAUNCH",
+  solo: true,
   subtitle: "Warboss of the Misty Mountain",
   profiles: (
     (name: "Grom", m: "-", ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 4, a: 4, ld: 8, points: 140),
@@ -2362,6 +2376,7 @@ it.")))
 )
 
 #unit("KIKNIK TOOFSNATCHA",
+  solo: true,
   subtitle: "Goblin Warboss",
   profiles: (
     (name: "Kiknik Toofsnatcha", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 3, i: 4, a: 4, ld: 8, points: 145),
@@ -2386,6 +2401,7 @@ it.")))
 )
 
 #unit("GITILLA DA HUNTER",
+  solo: true,
   subtitle: "Big Boss of da Drippin' Fangs",
   profiles: (
     (name: "Gitilla da Hunter", m: 4, ws: 4, bs: 6, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 65),
@@ -2411,6 +2427,7 @@ it.")))
 )
 
 #unit("SKARSNIK",
+  solo: true,
   subtitle: "Warboss of the Eight Peaks",
   profiles: (
     (name: "Skarsnik", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 200),
@@ -2437,6 +2454,7 @@ it.")))
 )
 
 #unit("SKITGIT",
+  solo: true,
   subtitle: "The Black Gobbo",
   profiles: (
     (name: "Skitgit", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 145),
@@ -2462,6 +2480,7 @@ it.")))
 )
 
 #unit("SKRAGROTT",
+  solo: true,
   subtitle: "The Moon King",
   profiles: (
     (name: "Skragrott", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 3, i: 2, a: 2, ld: 7, points: 310),
@@ -2481,6 +2500,7 @@ it.")))
 )
 
 #unit("SNAGLA GROBSPIT",
+  solo: true,
   subtitle: "Leader of the Deff Creepers",
   profiles: (
     (name: "Snagla Grobspit", m: 4, ws: 4, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 80),
@@ -2508,6 +2528,7 @@ it.")))
 )
 
 #unit("TRUGG THE TROLL KING",
+  solo: true,
   profiles: (
     (name: "Trugg the Troll King", m: 6, ws: 5, bs: 1, s: 7, t: 6, w: 6, i: 1, a: 6, ld: 7, points: 375),
   ),

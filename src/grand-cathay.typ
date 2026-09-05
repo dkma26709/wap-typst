@@ -1313,6 +1313,7 @@ damage as normal."), ("4-6", "Dud. Only the model under the template's central h
 = SPECIAL CHARACTERS
 
 #unit("MIAO YING",
+  solo: true,
   first: true,
   subtitle: "The Storm Dragon, Master of the Storm Winds, Supreme Matriarch of Nan-Gau",
   profiles: (
@@ -1342,6 +1343,7 @@ number of spells from those lores with spells from the Lore of Yin. In addition,
 )
 
 #unit("ZHAO MING",
+  solo: true,
   subtitle: "The Iron Dragon, Lord of Shang-Yang",
   profiles: (
     (name: "Human Form", m: 4, ws: 7, bs: 4, s: 5, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 480),
@@ -1371,6 +1373,7 @@ number of spells from those lores with spells from the Lore of Yang. In addition
 )
 
 #unit("YUAN BO",
+  solo: true,
   subtitle: "The Jade Dragon, Master of the Meteor Winds, Lord of the Jade Court",
   profiles: (
     (name: "Human Form", m: 4, ws: 7, bs: 4, s: 5, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 455),
@@ -1396,6 +1399,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("LUI YUN",
+  solo: true,
   subtitle: "Lord of War",
   profiles: (
     (name: "Liu Yun", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
@@ -1416,6 +1420,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("HUA GONGZHU",
+  solo: true,
   subtitle: "General of the Army of the Lady",
   profiles: (
     (name: "Hua Gongzhu", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
@@ -1437,6 +1442,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("GUAN FEI",
+  solo: true,
   subtitle: "Captain of the Celestial Dragon Guard",
   profiles: (
     (name: "Guan Fei", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
@@ -1457,6 +1463,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("TIAN SHI",
+  solo: true,
   subtitle: "Master of the Heavens, Sage of the Stars",
   profiles: (
     (name: "Tian Shi", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 335),
@@ -1482,6 +1489,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("ZHUGE YI",
+  solo: true,
   subtitle: "Master of Tactics",
   profiles: (
     (name: "Zhuge Yi", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 210),
@@ -1509,6 +1517,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("CHENG LONG",
+  solo: true,
   subtitle: "Grand Master of the Celestial Dragon Monks",
   profiles: (
     (name: "Cheng Long", m: 5, ws: 7, bs: 7, s: 4, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 190),
@@ -1530,6 +1539,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("SAYTANG THE WATCHER",
+  solo: true,
   subtitle: "Sentinel of the Heavens",
   profiles: (
     (name: "Saytang the Watcher", m: 6, ws: 4, bs: 4, s: 6, t: 6, w: 6, i: 1, a: 5, ld: 10, points: 295),
@@ -1549,6 +1559,7 @@ may also replace any number of spells from those lores with spells from the Lore
 )
 
 #unit("THE MONKEY KING",
+  solo: true,
   subtitle: "The Great Trickster",
   profiles: (
     (name: "The Monkey King", m: 5, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 155),

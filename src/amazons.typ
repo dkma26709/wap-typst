@@ -752,6 +752,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 = SPECIAL CHARACTERS
 
 #unit("THALESTRIS",
+  solo: true,
   first: true,
   subtitle: "Queen of the Amazons",
   profiles: (
@@ -775,6 +776,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 )
 
 #unit("AZURA",
+  solo: true,
   subtitle: "The Ice Maiden",
   profiles: (
     (name: "Azura", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 185),
@@ -792,6 +794,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 )
 
 #unit("MELANDRA HAWKEYE",
+  solo: true,
   subtitle: "The Adventuress",
   profiles: (
     (name: "Melandra Hawkeye", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 125),
@@ -810,6 +813,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 )
 
 #unit("PENTHESILEA",
+  solo: true,
   subtitle: "The Mark of the Serpent",
   profiles: (
     (name: "Penthesilea", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 150),
@@ -827,6 +831,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 )
 
 #unit("LYSIPPE",
+  solo: true,
   subtitle: "The Mounted Avenger",
   profiles: (
     (name: "Lysippe", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
@@ -848,6 +853,7 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 )
 
 #unit("LWAXANA",
+  solo: true,
   subtitle: "Curse Witch of Blue Stumps",
   profiles: (
     (name: "Lwaxana", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 305),

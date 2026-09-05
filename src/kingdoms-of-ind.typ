@@ -1001,6 +1001,7 @@ If a Misfire is rolled, the War Elephant suffers D3 Wounds which Ignores Armour 
 = SPECIAL CHARACTERS
 
 #unit("DARAHMA",
+  solo: true,
   first: true,
   subtitle: "God-Hero of Ind",
   profiles: (
@@ -1025,6 +1026,7 @@ Roll a D6 for each initial unsaved Wound caused. On a 5+, the target takes anoth
 )
 
 #unit("KARISHNA",
+  solo: true,
   subtitle: "The Current Avatara",
   profiles: (
     (name: "Karishna", m: 4, ws: 7, bs: 6, s: 5, t: 5, w: 3, i: 7, a: 4, ld: 9, points: 290),
@@ -1048,6 +1050,7 @@ If the attack hits, place the 3" template over the target model. Roll a D6 and t
 )
 
 #unit("URJANA",
+  solo: true,
   subtitle: "Master of the Bow",
   profiles: (
     (name: "Urjana", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 160),
@@ -1068,6 +1071,7 @@ If the attack hits, place the 3" template over the target model. Roll a D6 and t
 )
 
 #unit("PARASHURUMA",
+  solo: true,
   subtitle: "The Holy Slayer",
   profiles: (
     (name: "Parashuruma", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 190),
@@ -1085,6 +1089,7 @@ If the attack hits, place the 3" template over the target model. Roll a D6 and t
 )
 
 #unit("MHOGLI",
+  solo: true,
   subtitle: "The Beastmaster",
   profiles: (
     (name: "Mhogli", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 220),

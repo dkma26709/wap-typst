@@ -1814,6 +1814,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 = SPECIAL CHARACTERS
 
 #unit("BE'LAKOR",
+  solo: true,
   first: true,
   subtitle: "The Dark Master",
   profiles: (
@@ -1834,6 +1835,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("SKARBRAND",
+  solo: true,
   subtitle: "The Exiled One",
   profiles: (
     (name: "Skarbrand", m: 8, ws: 10, bs: 5, s: 6, t: 6, w: 6, i: 9, a: 6, ld: 9, points: 480),
@@ -1854,6 +1856,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("MAZARALL THE BUTCHER",
+  solo: true,
   subtitle: "Daemon Prince of Khorne",
   profiles: (
     (name: "Mazarall the Butcher", m: 8, ws: 8, bs: 5, s: 7, t: 6, w: 6, i: 8, a: 6, ld: 9, points: 430),
@@ -1873,6 +1876,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("U'ZHUL THE SKULLTAKER",
+  solo: true,
   subtitle: "Khorne's Champion",
   profiles: (
     (name: "Skulltaker", m: 5, ws: 8, bs: 5, s: 5, t: 4, w: 2, i: 7, a: 4, ld: 8, points: 170),
@@ -1898,6 +1902,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("KARANAK",
+  solo: true,
   subtitle: "Hound of Vengeance",
   profiles: (
     (name: "Karanak", m: 8, ws: 7, bs: 0, s: 5, t: 5, w: 2, i: 6, a: 4, ld: 8, points: 125),
@@ -1918,6 +1923,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("SKAARAC THE BLOODBORN",
+  solo: true,
   subtitle: "Great Bloodbeast of Khorne",
   profiles: (
     (name: "Skaarac", m: 7, ws: 5, bs: 0, s: 6, t: 6, w: 6, i: 4, a: 6, ld: 7, points: 325),
@@ -1937,6 +1943,7 @@ Each Hit from a Death Head is multiplied into D6 Hits.
 )
 
 #unit("KU'GATH PLAGUEFATHER",
+  solo: true,
   subtitle: "Fetid Brewmaster",
   profiles: (
     (name: "Ku'gath Plaguefather", m: 4, ws: 6, bs: 3, s: 6, t: 7, w: 7, i: 4, a: 6, ld: 9, points: 480),
@@ -1960,6 +1967,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("ROTIGUS",
+  solo: true,
   subtitle: "The Generous One",
   profiles: (
     (name: "Rotigus", m: 6, ws: 6, bs: 3, s: 6, t: 7, w: 7, i: 4, a: 5, ld: 9, points: 570),
@@ -1980,6 +1988,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("EPIDEMUS",
+  solo: true,
   subtitle: "Nurgle's Tallyman",
   profiles: (
     (name: "Epidemius", m: 4, ws: 6, bs: 5, s: 5, t: 5, w: 2, i: 4, a: 3, ld: 8, points: 190),
@@ -1998,6 +2007,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("HORTICULOUS SLIMUX",
+  solo: true,
   subtitle: "The Grand Cultivator",
   profiles: (
     (name: "Horticulous", m: 4, ws: 6, bs: 5, s: 5, t: 5, w: 2, i: 4, a: 3, ld: 8, points: 235),
@@ -2016,6 +2026,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("N'KARI",
+  solo: true,
   subtitle: "The Arch-tempter",
   profiles: (
     (name: "N'Kari", m: 10, ws: 8, bs: 5, s: 6, t: 6, w: 6, i: 9, a: 6, ld: 9, points: 625),
@@ -2035,6 +2046,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("SHALAXI HELBANE",
+  solo: true,
   subtitle: "Monarch of the Hunt",
   profiles: (
     (name: "Shalaxi Helbane", m: 10, ws: 9, bs: 5, s: 6, t: 6, w: 6, i: 10, a: 6, ld: 9, points: 525),
@@ -2055,6 +2067,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("AZAZEL",
+  solo: true,
   subtitle: "Prince of Damnation",
   profiles: (
     (name: "Azazel", m: 8, ws: 8, bs: 5, s: 6, t: 5, w: 5, i: 9, a: 5, ld: 10, points: 425),
@@ -2074,6 +2087,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("SYLL'ESSKE",
+  solo: true,
   subtitle: "The Vengeful Allegiance",
   profiles: (
     (name: "Syll", m: "-", ws: 7, bs: 6, s: 4, t: "-", w: "-", i: 8, a: 4, ld: 8, points: 350),
@@ -2099,6 +2113,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("DEXCESSA",
+  solo: true,
   subtitle: "The Talon of Slaanesh",
   profiles: (
     (name: "Dexcessa", m: 8, ws: 9, bs: 5, s: 6, t: 5, w: 5, i: 8, a: 5, ld: 9, points: 390),
@@ -2117,6 +2132,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("SYNESSA",
+  solo: true,
   subtitle: "The Voice of Slaanesh",
   profiles: (
     (name: "Synessa", m: 8, ws: 6, bs: 5, s: 5, t: 5, w: 5, i: 7, a: 3, ld: 9, points: 480),
@@ -2138,6 +2154,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("THE MASQUE OF SLAANESH",
+  solo: true,
   subtitle: "Eternal Dancer",
   profiles: (
     (name: "Masque of Slaanesh", m: 10, ws: 7, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 5, ld: 8, points: 160),
@@ -2158,6 +2175,7 @@ In the event of a misfire, the shot has no effect.
 )
 
 #unit("KAIROS FATEWEAVER",
+  solo: true,
   subtitle: "Oracle of Tzeentch",
   profiles: (
     (name: "Kairos Fateweaver", m: 8, ws: 1, bs: 0, s: 5, t: 5, w: 6, i: 1, a: 1, ld: 9, points: 415),
@@ -2196,6 +2214,7 @@ At the start of each Magic phase, decide which head Kairos is using this turn. H
 )
 
 #unit("AMON 'CHAKAI",
+  solo: true,
   subtitle: "Lord of Change",
   profiles: (
     (name: "Amon 'Chakai", m: 8, ws: 6, bs: 5, s: 6, t: 6, w: 6, i: 6, a: 5, ld: 9, points: 570),
@@ -2214,6 +2233,7 @@ At the start of each Magic phase, decide which head Kairos is using this turn. H
 )
 
 #unit("THE BLUE SCRIBES",
+  solo: true,
   subtitle: "Azure Arcanologists",
   profiles: (
     (name: "The Blue Scribes", m: "-", ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 7, points: 80),
@@ -2235,6 +2255,7 @@ At the start of each Magic phase, decide which head Kairos is using this turn. H
 )
 
 #unit("THE CHANGELING",
+  solo: true,
   subtitle: "Tzeentch's Trickster",
   profiles: (
     (name: "The Changeling", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 8, points: 130),

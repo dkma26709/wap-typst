@@ -889,6 +889,7 @@ turn."), ("4-6", "The rune does not take effect.")))
 )
 
 #unit("MINERS",
+  breakable: true,
   profiles: (
     (name: "Miner", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 11),
     (name: "Miner's Cart", m: 6, ws: "-", bs: "-", s: 4, t: 4, w: 3, i: "-", a: "-", ld: "-", points: ""),
@@ -1402,6 +1403,7 @@ performed its Movement or Attacks.")))
 = SPECIAL CHARACTERS
 
 #unit("THORGRIM GRUDGEBEARER",
+  solo: true,
   first: true,
   subtitle: "High King of Karaz-a-Karak",
   profiles: (
@@ -1427,6 +1429,7 @@ performed its Movement or Attacks.")))
 )
 
 #unit("ALRIK RANULFSSON",
+  solo: true,
   subtitle: "King of Karak Hirn",
   profiles: (
     (name: "Alrik Ranulfsson", m: 3, ws: 7, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 345),
@@ -1450,6 +1453,7 @@ performed its Movement or Attacks.")))
 )
 
 #unit("KAZADOR THUNDERHORN",
+  solo: true,
   subtitle: "King of Karak Azul",
   profiles: (
     (name: "Kazador", m: 3, ws: 7, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 280),
@@ -1468,6 +1472,7 @@ performed its Movement or Attacks.")))
 )
 
 #unit("BELEGAR IRONHAMMER",
+  solo: true,
   subtitle: "True King of the Eight Peaks",
   profiles: (
     (name: "Belegar Ironhammer", m: 3, ws: 8, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 290),
@@ -1488,6 +1493,7 @@ Kings)*, Stubborn*
 )
 
 #unit("THOREK IRONBROW",
+  solo: true,
   subtitle: "Master Runelord of Karak Azul",
   profiles: (
     (name: "Thorek Ironbrow", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 3, i: 3, a: 3, ld: 10, points: 310),
@@ -1515,6 +1521,7 @@ Thorek can re-roll a single dice on a failed attempt to Strike the Runes. If thi
 )
 
 #unit("GROMBRINDAL",
+  solo: true,
   subtitle: "The White Dwarf",
   profiles: (
     (name: "Grombrindal", m: 3, ws: 7, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 450),
@@ -1535,6 +1542,7 @@ Thorek can re-roll a single dice on a failed attempt to Strike the Runes. If thi
 )
 
 #unit("UNGRIM IRONFIST",
+  solo: true,
   subtitle: "Last Slayer King of Karak Kadrin",
   profiles: (
     (name: "Ungrim Ironfist", m: 3, ws: 8, bs: 4, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 10, points: 325),
@@ -1555,6 +1563,7 @@ Thorek can re-roll a single dice on a failed attempt to Strike the Runes. If thi
 )
 
 #unit("GARAGRIM IRONFIST",
+  solo: true,
   subtitle: "War-mourner of Karak Kadrin",
   profiles: (
     (name: "Garagrim Ironfist", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 10, points: 185),
@@ -1571,6 +1580,7 @@ Thorek can re-roll a single dice on a failed attempt to Strike the Runes. If thi
 )
 
 #unit("JOSEF BUGMAN",
+  solo: true,
   subtitle: "Mysterious Master Brewer",
   profiles: (
     (name: "Josef Bugman", m: 3, ws: 6, bs: 5, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 9, points: 185),
@@ -1597,6 +1607,7 @@ Thorek can re-roll a single dice on a failed attempt to Strike the Runes. If thi
 )
 
 #unit("BURLOK DAMMINSON",
+  solo: true,
   subtitle: "Engineer Guildmaster",
   profiles: (
     (name: "Burlok Damminson", m: 3, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 120),
@@ -1627,6 +1638,7 @@ Engineers)*, Magic Resistance (1), Relentless, Resolute, "Stand Back Sir!"* (see
 )
 
 #unit("GRIMM BURLOKSSON",
+  solo: true,
   subtitle: "Upstart Master Engineer",
   profiles: (
     (name: "Grimm Burloksson", m: 3, ws: 4, bs: 5, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 95),

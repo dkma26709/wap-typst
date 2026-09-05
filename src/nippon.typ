@@ -1043,6 +1043,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 = SPECIAL CHARACTERS
 
 #unit("TOKUDAIRA IEYASU",
+  solo: true,
   first: true,
   subtitle: "Shogun of Nippon",
   profiles: (
@@ -1069,6 +1070,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("ODARI NOBUHIDE",
+  solo: true,
   subtitle: "The Daemon King, Daimyo of the Odari Clan",
   profiles: (
     (name: "Odari Nobuhide", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 200),
@@ -1094,6 +1096,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("TAKAI KATSUYORI",
+  solo: true,
   subtitle: "The Red Tiger, Daimyo of the Takai Clan",
   profiles: (
     (name: "Takai Katsuyori", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 225),
@@ -1123,6 +1126,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("DAWATE TADAMUNE",
+  solo: true,
   subtitle: "The One-Eyed Dragon, Daimyo of the Dawate Clan",
   profiles: (
     (name: "Dawate Tadamune", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 180),
@@ -1148,6 +1152,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("UESIGO NORIMASA",
+  solo: true,
   subtitle: "Avatar of Bishamonten, Daimyo of the Uesigo Clan",
   profiles: (
     (name: "Uesigo Norimasa", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 170),
@@ -1173,6 +1178,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("SANADA NAOMASA",
+  solo: true,
   subtitle: "The Red Oni, Leader of the Red Devils",
   profiles: (
     (name: "Sanada Naomasa", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 185),
@@ -1192,6 +1198,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("HITOMI GOZEN",
+  solo: true,
   subtitle: "Lady of War, the First Onna Bushi",
   profiles: (
     (name: "Hitomi Gozen", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 90),
@@ -1212,6 +1219,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("EMPRESS HIMIKO",
+  solo: true,
   subtitle: "Daughter of Amaterasu",
   profiles: (
     (name: "Empress Himiko", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 3, i: 3, a: 1, ld: 9, points: 370),
@@ -1233,6 +1241,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("AKASHI SHO",
+  solo: true,
   subtitle: "Pillar of Tradition, Grand Yokozuna of Nippon",
   profiles: (
     (name: "Akashi Sho", m: 4, ws: 6, bs: 5, s: 5, t: 5, w: 3, i: 5, a: 3, ld: 8, points: 200),
@@ -1249,6 +1258,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("MINAMOTO KENSHIN",
+  solo: true,
   subtitle: "Wandering Kensai, Legendary Ronin",
   profiles: (
     (name: "Minamoto Kenshin", m: 4, ws: 8, bs: 5, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 8, points: 210),
@@ -1270,6 +1280,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("SARUTORI HANZO",
+  solo: true,
   subtitle: "Shinobi Assassin",
   profiles: (
     (name: "Sarutori Hanzo", m: 5, ws: 8, bs: 6, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 9, points: 200),
@@ -1287,6 +1298,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 )
 
 #unit("O-SAYUMI",
+  solo: true,
   subtitle: "Legendary Geisha",
   profiles: (
     (name: "O-Sayumi", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 7, points: 140),

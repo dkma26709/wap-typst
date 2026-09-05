@@ -1234,6 +1234,7 @@ Siege Cannons do not suffer any penalties To Hit for moving and shooting. If you
 )
 
 #unit("SIEGE GIANT",
+  breakable: true,
   profiles: (
     (name: "Siege Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 200),
   ),
@@ -1280,6 +1281,7 @@ Once on the ground, a Giant may get up in his following Movement phase, but may 
 = SPECIAL CHARACTERS
 
 #unit("ASTRAGOTH IRONHAND",
+  solo: true,
   first: true,
   subtitle: "High Priest of Hashut",
   profiles: (
@@ -1307,6 +1309,7 @@ Once on the ground, a Giant may get up in his following Movement phase, but may 
 )
 
 #unit("DRAZHOATH THE ASHEN",
+  solo: true,
   subtitle: "Lord of the Black Fortress",
   profiles: (
     (name: "Drazhoath the Ashen", m: 3, ws: 5, bs: 4, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 9, points: 560),
@@ -1335,6 +1338,7 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 )
 
 #unit("ZHATAN THE BLACK",
+  solo: true,
   subtitle: "Commander of the Tower of Zharr",
   profiles: (
     (name: "Zhatan the Black", m: 3, ws: 8, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 275),
@@ -1355,6 +1359,7 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 )
 
 #unit("RYKARTH THE UNBREAKABLE",
+  solo: true,
   subtitle: "Captain of the Immortals",
   profiles: (
     (name: "Rykarth", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 10, points: 125),
@@ -1372,6 +1377,7 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 )
 
 #unit("SHAR'TOR THE EXECUTIONER",
+  solo: true,
   subtitle: "Lord of the Ba'hal",
   profiles: (
     (name: "Shar'tor the Executioner", m: 7, ws: 6, bs: 2, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 9, points: 265),
@@ -1395,6 +1401,7 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 )
 
 #unit("GORDUZ BACKSTABBER",
+  solo: true,
   subtitle: "Scourge of the Dark Lands",
   profiles: (
     (name: "Gorduz Backstabber", m: 4, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 7, points: 90),

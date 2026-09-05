@@ -742,6 +742,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 = SPECIAL CHARACTERS
 
 #unit("HISME STOUTHEART",
+  solo: true,
   first: true,
   subtitle: "Elector Count/Elder of the Moot",
   profiles: (
@@ -770,6 +771,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("NICHOLAS WARFOOT",
+  solo: true,
   subtitle: "Defender of the Moot",
   profiles: (
     (name: "Nicholas Warfoot", m: 4, ws: 6, bs: 7, s: 3, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 175),
@@ -790,6 +792,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("CLEGG THE INDOMITABLE",
+  solo: true,
   subtitle: "Master Thief",
   profiles: (
     (name: "Clegg", m: 4, ws: 5, bs: 7, s: 3, t: 3, w: 3, i: 8, a: 3, ld: 9, points: 110),
@@ -804,6 +807,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("GABBO FLUGBEND",
+  solo: true,
   subtitle: "Halfling Adventurer",
   profiles: (
     (name: "Gabbo Flugbend", m: 4, ws: 5, bs: 7, s: 3, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 130),
@@ -822,6 +826,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("LUMPIN CROOP",
+  solo: true,
   subtitle: "Leader of the Fighting Cocks",
   profiles: (
     (name: "Lumpin Croop", m: 4, ws: 3, bs: 5, s: 3, t: 3, w: 2, i: 6, a: 3, ld: 9, points: 40),
@@ -840,6 +845,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("OGGLETHORPE BULNHELM",
+  solo: true,
   subtitle: "Travelling Master Chef",
   profiles: (
     (name: "Ogglethorpe Bulnhelm", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 6, a: 2, ld: 9, points: 85),
@@ -860,6 +866,7 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
 )
 
 #unit("JOLLY BOLBOTTOM",
+  solo: true,
   subtitle: "Innkeeper of the Sow's Ear",
   profiles: (
     (name: "Jolly Bolbottom", m: 4, ws: 3, bs: 6, s: 3, t: 3, w: 2, i: 7, a: 2, ld: 9, points: 50),

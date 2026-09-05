@@ -1155,6 +1155,7 @@ spell:
 = SPECIAL CHARACTERS
 
 #unit("LORD MAZDAMUNDI",
+  solo: true,
   first: true,
   subtitle: "Lord of the Solar-City, He That Rides the Horned Beast",
   profiles: (
@@ -1189,6 +1190,7 @@ spell:
 )
 
 #unit("LORD KROAK",
+  solo: true,
   subtitle: "Venerable Relic-Priest, Deliverer of Itza",
   profiles: (
     (name: "Lord Kroak", m: 4, ws: 0, bs: 0, s: 3, t: 5, w: 6, i: 0, a: 0, ld: 9, points: 510),
@@ -1221,6 +1223,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("KROQ-GAR",
+  solo: true,
   subtitle: "Ancient Scar-Leader, Last Defender of Xhotl",
   profiles: (
     (name: "Kroq-Gar", m: 4, ws: 6, bs: 0, s: 5, t: 5, w: 3, i: 3, a: 5, ld: 8, points: 465),
@@ -1243,6 +1246,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("TEHENHAUIN",
+  solo: true,
   subtitle: "Prophet of Sotek, Harbinger of the Serpent God",
   profiles: (
     (name: "Tehenhauin", m: 6, ws: 6, bs: 5, s: 4, t: 3, w: 3, i: 6, a: 3, ld: 8, points: 310),
@@ -1270,6 +1274,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("TETTO'EKO",
+  solo: true,
   subtitle: "Astromancer of the Constellations, the Beholder",
   profiles: (
     (name: "Tetto'eko", m: 6, ws: 2, bs: 3, s: 2, t: 2, w: 3, i: 4, a: 1, ld: 6, points: 225),
@@ -1294,6 +1299,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("CHAKAX",
+  solo: true,
   subtitle: "The Eternity Warden, Prime Guardian of Xlanhuapec",
   profiles: (
     (name: "Chakax", m: 4, ws: 5, bs: 0, s: 5, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 210),
@@ -1314,6 +1320,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("GOR-ROK",
+  solo: true,
   subtitle: "The Great White Lizard, The Scarred One",
   profiles: (
     (name: "Gor-Rok", m: 4, ws: 5, bs: 0, s: 5, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 220),
@@ -1333,6 +1340,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("NAKAI THE WANDERER",
+  solo: true,
   subtitle: "Sacred Kroxigor of the First Spawning",
   profiles: (
     (name: "Nakai", m: 6, ws: 5, bs: 0, s: 6, t: 5, w: 4, i: 3, a: 5, ld: 8, points: 310),
@@ -1349,6 +1357,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("TIKTAQ'TO",
+  solo: true,
   subtitle: "Master of Skies, the Eye in the Heavens",
   profiles: (
     (name: "Tiktaq'to", m: 6, ws: 4, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 3, ld: 7, points: 145),
@@ -1368,6 +1377,7 @@ lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately rem
 )
 
 #unit("OXYOTL",
+  solo: true,
   subtitle: "Survivor of Pahuax, the Returned, He That Hunts Unseen",
   profiles: (
     (name: "Oxyotl", m: 6, ws: 4, bs: 6, s: 4, t: 3, w: 2, i: 6, a: 3, ld: 7, points: 100),

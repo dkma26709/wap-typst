@@ -1636,6 +1636,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 = SPECIAL CHARACTERS
 
 #unit("VLAD VON CARSTEIN",
+  solo: true,
   first: true,
   subtitle: "First Count of Sylvania",
   profiles: (
@@ -1657,6 +1658,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("ISABELLA VON CARSTEIN",
+  solo: true,
   subtitle: "Beloved of Vlad",
   profiles: (
     (name: "Isabella von Carstein", m: 6, ws: 6, bs: 4, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 110),
@@ -1675,6 +1677,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("KONRAD VON CARSTEIN",
+  solo: true,
   subtitle: "The Mad Blood Count",
   profiles: (
     (name: "Konrad von Carstein", m: 6, ws: 7, bs: 4, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 215),
@@ -1694,6 +1697,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("MANNFRED VON CARSTEIN",
+  solo: true,
   subtitle: "Last of the Von Carsteins",
   profiles: (
     (name: "Mannfred von Carstein", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 565),
@@ -1727,6 +1731,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("ZACHARIAS THE EVERLIVING",
+  solo: true,
   profiles: (
     (name: "Zacharias the Everliving", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 3, i: 6, a: 3, ld: 9, points: 720),
     (name: "Zombie Dragon", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 4, points: ""),
@@ -1761,6 +1766,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("MELKHIOR THE ANCIENT",
+  solo: true,
   profiles: (
     (name: "Melkhior", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 3, i: 6, a: 3, ld: 9, points: 455),
     (name: "Abyssal Terror", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 3, ld: 4, points: ""),
@@ -1779,6 +1785,7 @@ Horde only)*, Regeneration (4+), Spectral Steeds, Terror, Undead*
 )
 
 #unit("NEFERATA",
+  solo: true,
   subtitle: "The Queen of Mysteries and Shadows",
   profiles: (
     (name: "Neferata", m: 6, ws: 7, bs: 5, s: 5, t: 5, w: 3, i: 9, a: 5, ld: 10, points: 510),
@@ -1819,6 +1826,7 @@ In addition, she knows the following spell:
 )
 
 #unit("SEKHAR",
+  solo: true,
   subtitle: "The Fang of Lahmia",
   profiles: (
     (name: "Sekhar", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 190),
@@ -1844,6 +1852,7 @@ In addition, she knows the following spell:
 )
 
 #unit("WALACH HARKON",
+  solo: true,
   subtitle: "Grand Master of the Blood Knights",
   profiles: (
     (name: "Walach Harkon", m: 6, ws: 9, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 490),
@@ -1874,6 +1883,7 @@ In addition, she knows the following spell:
 )
 
 #unit("PRINCE VHORDRAI",
+  solo: true,
   subtitle: "Lord of Crimson Keep",
   profiles: (
     (name: "Prince Vhordrai", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 615),
@@ -1899,6 +1909,7 @@ In addition, she knows the following spell:
 )
 
 #unit("USHORAN",
+  solo: true,
   subtitle: "The Carrion King",
   profiles: (
     (name: "Ushoran", m: 6, ws: 7, bs: 3, s: 7, t: 7, w: 4, i: 7, a: 5, ld: 10, points: 590),
@@ -1924,6 +1935,7 @@ In addition, she knows the following spell:
 )
 
 #unit("GORMAYNE",
+  solo: true,
   subtitle: "Grand Justice",
   profiles: (
     (name: "Gormayne", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 2, i: 6, a: 4, ld: 8, points: 170),
@@ -1944,6 +1956,7 @@ against that unit.")))
 )
 
 #unit("HEINRICH KEMMLER",
+  solo: true,
   subtitle: "The Lichemaster",
   profiles: (
     (name: "Heinrich Kemmler", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 325),
@@ -1960,6 +1973,7 @@ against that unit.")))
 )
 
 #unit("HELMAN GHORST",
+  solo: true,
   profiles: (
     (name: "Helman Ghorst", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 165),
   ),
@@ -1983,6 +1997,7 @@ against that unit.")))
 )
 
 #unit("KRELL",
+  solo: true,
   subtitle: "Lord of Undeath",
   profiles: (
     (name: "Krell", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 9, points: 235),

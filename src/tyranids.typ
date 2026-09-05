@@ -1036,6 +1036,7 @@ A Norn Assimilator loses the Magic Resistance (2) special rule, and gains toxin 
 = SPECIAL CHARACTERS
 
 #unit("THE RED TERROR",
+  solo: true,
   first: true,
   before: [
 #note[The deep tunnels have a legend, if hunger can be said to keep legends: a red thing in the dark that swallows knights whole — horse, harness and all — and is always, always still hungry.]

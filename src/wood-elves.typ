@@ -1235,6 +1235,7 @@ by the Wood Elf player.")))
 = SPECIAL CHARACTERS
 
 #unit("ORION",
+  solo: true,
   first: true,
   subtitle: "The King in the Woods",
   profiles: (
@@ -1268,6 +1269,7 @@ by the Wood Elf player.")))
 )
 
 #unit("ARIEL",
+  solo: true,
   subtitle: "Mage Queen of Athel Loren",
   profiles: (
     (name: "Ariel", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 5, i: 7, a: 0, ld: 10, points: 380),
@@ -1293,6 +1295,7 @@ by the Wood Elf player.")))
 )
 
 #unit("NAESTRA & ARAHAN",
+  solo: true,
   subtitle: "Sisters of Twillight",
   profiles: (
     (name: "Naestra", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 90),
@@ -1329,6 +1332,7 @@ If an attack from the Talon of Dawn causes one or more unsaved Wounds, they rega
 )
 
 #unit("ARALOTH THE BOLD",
+  solo: true,
   subtitle: "Lord of Talsyn",
   profiles: (
     (name: "Araloth", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 5, ld: 10, points: 185),
@@ -1358,6 +1362,7 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("SCARLOC",
+  solo: true,
   subtitle: "The Hooded One, Mistwalker of Athel Loren",
   profiles: (
     (name: "Scarloc", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 100),
@@ -1382,6 +1387,7 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("NAIETH THE PROPHETESS",
+  solo: true,
   subtitle: "High Seer of Athel Loren",
   profiles: (
     (name: "Naieth", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 100),
@@ -1400,6 +1406,7 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("WYCHWETHYL",
+  solo: true,
   profiles: (
     (name: "Wychwethyl", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 8, a: 4, ld: 8, points: 110),
   ),
@@ -1417,6 +1424,7 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("SKAW",
+  solo: true,
   subtitle: "The Falconer",
   profiles: (
     (name: "Skaw", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 80),
@@ -1441,6 +1449,7 @@ In close combat, the falcons give Skaw an additional 3 Attacks that are resolved
 )
 
 #unit("GRUARTH",
+  solo: true,
   subtitle: "The Beastmaster",
   profiles: (
     (name: "Gruarth", m: 8, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 75),
@@ -1466,6 +1475,7 @@ If a target has Unit Strength 3 or less and is Hit, but not slain, then it is te
 )
 
 #unit("DURTHU OAKHEART",
+  solo: true,
   subtitle: "Eldest of Ancients",
   profiles: (
     (name: "Durthu", m: 5, ws: 6, bs: 6, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 10, points: 320),
@@ -1490,6 +1500,7 @@ Any enemy units that suffer Wounds from any of these attacks suffer \-1 To Hit a
 )
 
 #unit("BELTHANOS",
+  solo: true,
   subtitle: "First Thorn of Kurnoth",
   profiles: (
     (name: "Belthanos", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 4, i: 7, a: 5, ld: 9, points: 400),
@@ -1507,6 +1518,7 @@ Any enemy units that suffer Wounds from any of these attacks suffer \-1 To Hit a
 )
 
 #unit("THE LADY OF VINES",
+  solo: true,
   profiles: (
     (name: "The Lady of Vines", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 5, i: 7, a: 5, ld: 9, points: 390),
   ),
@@ -1526,6 +1538,7 @@ Any enemy units that suffer Wounds from any of these attacks suffer \-1 To Hit a
 )
 
 #unit("DRYCHA",
+  solo: true,
   subtitle: "Briarmaiden of Woe",
   profiles: (
     (name: "Drycha", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 185),

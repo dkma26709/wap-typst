@@ -150,11 +150,22 @@ four entries EQIPMENT); `before:`/`after:` for prose that sits outside the
 fields. `#entry`/`#field` remain as primitives for the prose and design-notes
 chapters, where a field is a bare mini-heading rather than a unit field.
 
-Layout is derived, not configured: every entry opens its own page, a book with
-stat blocks is an army book and one without is the rulebook, and
-`magic-item-section` measures whether the material fills two columns rather than
-counting characters. Prefer fixing a rule in the template over writing an
-override into a book.
+Layout is derived, not configured: a book with stat blocks is an army book and
+one without is the rulebook, and `magic-item-section` measures whether the
+material fills two columns rather than counting characters. Prefer fixing a rule
+in the template over writing an override into a book.
+
+**How an entry meets the page** is the entry's own declaration, and there are
+three answers. By default it **flows**: entries run one after another down the
+page and a new page starts when the last one is full, in an unbreakable block so
+an entry that does not fit moves whole rather than straddling. `solo: true` gives
+it a page of its own — every entry under `= SPECIAL CHARACTERS`, where the entry
+is the spread. `compact: true` is the character mount, a stat line and two fields
+that would leave a page of its own empty. `breakable: true` lifts the no-split
+rule for the 28 entries taller than a page, which have to break somewhere and
+would otherwise overflow and lose their tail silently — so **never mark an entry
+`breakable: false` by hand without checking it fits**; the gate is a word-bag
+compare of the rendered PDF, which is what catches an overflow.
 
 ## Commits
 

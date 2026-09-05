@@ -1152,6 +1152,7 @@ another victim. Roll again on this table to see what happens.")))
 )
 
 #unit("SLAVE GIANT",
+  breakable: true,
   profiles: (
     (name: "Slave Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 155),
   ),
@@ -1195,6 +1196,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 = SPECIAL CHARACTERS
 
 #unit("GREASUS GOLDTOOTH",
+  solo: true,
   first: true,
   subtitle: "Overtyrant of the Ogre Kingdoms",
   profiles: (
@@ -1216,6 +1218,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("GHARK IRONSKIN",
+  solo: true,
   subtitle: "Tyrant of the Ironskin Tribe",
   profiles: (
     (name: "Ghark Ironskin", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 5, i: 5, a: 6, ld: 9, points: 400),
@@ -1239,6 +1242,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("SKRAG THE SLAUGHTERER",
+  solo: true,
   subtitle: "Prophet of the Great Maw",
   profiles: (
     (name: "Skrag the Slaughterer", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 5, i: 3, a: 4, ld: 9, points: 440),
@@ -1257,6 +1261,7 @@ next turn."), ("5+", "Skrag gains +1 Attack.", "All Gorgers gain +1 Attack."), (
 )
 
 #unit("GROTH ONEFINGER",
+  solo: true,
   subtitle: "First Prophet of the Great Maw",
   profiles: (
     (name: "Groth Onefinger", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 340),
@@ -1281,6 +1286,7 @@ Names)*, Natural Armour (6+), Ogre Charge, Terror*
 )
 
 #unit("MORG MAGMABORN",
+  solo: true,
   subtitle: "Avatar of the Fire Mouth",
   profiles: (
     (name: "Morg Magmaborn", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 320),
@@ -1301,6 +1307,7 @@ Names)*, Natural Armour (6+), Ogre Charge, Terror*
 )
 
 #unit("BRAGG THE GUTSMAN",
+  solo: true,
   subtitle: "Champion Executioner of Ogrekind",
   profiles: (
     (name: "Bragg the Gutsman", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 170),
@@ -1318,6 +1325,7 @@ Names)*, Natural Armour (6+), Ogre Charge, Terror*
 )
 
 #unit("BRAUGH SLAVELORD",
+  solo: true,
   subtitle: "The Corpse-Slaver",
   profiles: (
     (name: "Braugh Slavelord", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 215),
@@ -1336,6 +1344,7 @@ Names)*, Natural Armour (6+), Ogre Charge, Terror*
 )
 
 #unit("JHARED THE RED",
+  solo: true,
   subtitle: "Longstrider, Hunt-father",
   profiles: (
     (name: "Jhared the Red", m: 7, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 9, points: 160),

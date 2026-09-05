@@ -1696,6 +1696,7 @@ Hellcannon cannot fire for the rest of the game.")))
 )
 
 #unit("GIANT",
+  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 175),
   ),
@@ -2185,6 +2186,7 @@ Spawn is created.")))
 = SPECIAL CHARACTERS
 
 #unit("ARCHAON THE EVERCHOSEN",
+  solo: true,
   first: true,
   subtitle: "Lord of the End Times, The Three-Eyed King, The Anointed, Favoured Son of Chaos, Scourge of the World",
   profiles: (
@@ -2213,6 +2215,7 @@ Spawn is created.")))
 )
 
 #unit("VARDEK CROM",
+  solo: true,
   subtitle: "The Conqueror, Herald of Archaon, Harbinger of the End Times",
   profiles: (
     (name: "Vardek Crom", m: 4, ws: 9, bs: 3, s: 5, t: 5, w: 3, i: 8, a: 5, ld: 9, points: 250),
@@ -2232,6 +2235,7 @@ Spawn is created.")))
 )
 
 #unit("ABRAXIA",
+  solo: true,
   subtitle: "Spear of the Everchosen",
   profiles: (
     (name: "Abraxia", m: 4, ws: 8, bs: 3, s: 5, t: 5, w: 3, i: 6, a: 5, ld: 9, points: 420),
@@ -2258,6 +2262,7 @@ shooting.")))
 )
 
 #unit("COUNT MORDREK",
+  solo: true,
   subtitle: "The Damned",
   profiles: (
     (name: "Mordrek", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 7, a: 1, ld: 9, points: 265),
@@ -2278,6 +2283,7 @@ shooting.")))
 )
 
 #unit("ATARUS",
+  solo: true,
   subtitle: "Blade of the First Prince",
   profiles: (
     (name: "Atarus", m: 4, ws: 8, bs: 3, s: 5, t: 4, w: 2, i: 7, a: 4, ld: 9, points: 195),
@@ -2299,6 +2305,7 @@ shooting.")))
 )
 
 #unit("WULFRIK THE WANDERER",
+  solo: true,
   subtitle: "Worldwalker, The Eternal Challenger, Inescapable One",
   profiles: (
     (name: "Wulfrik", m: 4, ws: 8, bs: 3, s: 5, t: 5, w: 2, i: 7, a: 4, ld: 8, points: 205),
@@ -2321,6 +2328,7 @@ shooting.")))
 )
 
 #unit("FRYDAAL THE CHAINMAKER",
+  solo: true,
   profiles: (
     (name: "Frydaal", m: 4, ws: 7, bs: 3, s: 5, t: 5, w: 3, i: 6, a: 4, ld: 9, points: 215),
   ),
@@ -2339,6 +2347,7 @@ shooting.")))
 )
 
 #unit("HARALD HAMMERSTORM",
+  solo: true,
   subtitle: "Harry the Hammer",
   profiles: (
     (name: "Harald Hammerstorm", m: 4, ws: 7, bs: 3, s: 5, t: 5, w: 2, i: 8, a: 4, ld: 8, points: 210),
@@ -2357,6 +2366,7 @@ shooting.")))
 )
 
 #unit("SAYL THE FAITHLESS",
+  solo: true,
   subtitle: "Twisted Seer of the Wastes",
   profiles: (
     (name: "Sayl the Faithless", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 5, a: 2, ld: 9, points: 295),
@@ -2386,6 +2396,7 @@ In addition, he knows the following spell:
 )
 
 #unit("MARAKARR BLOOD-SKY",
+  solo: true,
   subtitle: "Marauder Warqueen",
   profiles: (
     (name: "Marakarr Blood-Sky", m: 4, ws: 7, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 180),
@@ -2407,6 +2418,7 @@ In addition, he knows the following spell:
 )
 
 #unit("LOKJAR BJOERGIR",
+  solo: true,
   profiles: (
     (name: "Lokjar Bjoergir", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 135),
   ),
@@ -2428,6 +2440,7 @@ In addition, he knows the following spell:
 )
 
 #unit("KHOLEK SUNEATER",
+  solo: true,
   subtitle: "Bringer of Darkness, Tempest Incarnate, The Mountain God",
   profiles: (
     (name: "Kholek Suneater", m: 8, ws: 8, bs: 3, s: 7, t: 6, w: 8, i: 1, a: 7, ld: 9, points: 475),
@@ -2450,6 +2463,7 @@ Ogre Shaggoth), *Storm Rage* (see Dragon Ogres)
 )
 
 #unit("THROGG WINTERTOOTH",
+  solo: true,
   subtitle: "King of Trolls, The Bitter Beast, Lord of the Monstrous Horde",
   profiles: (
     (name: "Throgg Wintertooth", m: 6, ws: 5, bs: 2, s: 6, t: 5, w: 4, i: 2, a: 5, ld: 8, points: 265),

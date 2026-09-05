@@ -702,7 +702,7 @@
 
 // The settings that are the entry itself rather than one of its fields.
 #let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
-                      "before", "after", "labels")
+                      "before", "after", "labels", "solo", "breakable")
 
 // A named rule bullet - the `- *Impetuous:* ...` the corpus writes by hand - as a
 // record, the shape `magic-item` and `spell` already have. 872 entries carry one
@@ -831,11 +831,38 @@
     if "after" in args { args.after }
   }
 
+  // Three ways an entry meets the page, and the entry says which it is.
+  //
+  // `compact` is the character mount: a stat line and two fields, which would
+  // leave a page of its own empty, so it shares one.
+  //
+  // `solo` opens a page of its own. Reserved for special characters, where the
+  // entry is the spread - a named lord with his own art, his own magic items and
+  // half a page of rules - and starting him halfway down a page under someone
+  // else's options loses that.
+  //
+  // Everything else flows. Entries follow one another down the page and a new
+  // page starts when the last one is full, which is how the source sets its
+  // ordinary units and how a reader looks two of them up side by side. The block
+  // is unbreakable so an entry that does not fit moves whole rather than
+  // straddling; `breakable` lifts that for the entries taller than a page, which
+  // have to split somewhere and would otherwise overflow the page and lose their
+  // tail silently.
   if args.at("compact", default: false) {
     compact-entry(name, body)
-  } else {
+  } else if args.at("solo", default: false) {
     entry(name, first: args.at("first", default: false))
     body
+  } else {
+    [#metadata((kind: "entry", name: name))<meta>]
+    block(
+      breakable: args.at("breakable", default: false),
+      above: 1.6em, below: 0.6em,
+      {
+        heading(level: 2, name)
+        body
+      },
+    )
   }
 }
 

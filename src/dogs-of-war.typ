@@ -1448,6 +1448,7 @@ of its turn normally, as if it had not yet moved this turn.")))
 )
 
 #unit("GIANT",
+  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -1528,6 +1529,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 = SPECIAL CHARACTERS
 
 #unit("BORGIO THE BESIEGER",
+  solo: true,
   first: true,
   subtitle: "Merchant Prince of Miragliano",
   profiles: (
@@ -1551,6 +1553,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("LUCREZZIA BELLADONNA",
+  solo: true,
   subtitle: "Merchant Princess of Pavona",
   profiles: (
     (name: "Lucrezzia Belladonna", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 300),
@@ -1578,6 +1581,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("LORENZO LUPO",
+  solo: true,
   subtitle: "Merchant Prince of Luccini",
   profiles: (
     (name: "Lorenzo Lupo", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 210),
@@ -1602,6 +1606,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("MARCO COLOMBO",
+  solo: true,
   subtitle: "Merchant Prince of Trantio",
   profiles: (
     (name: "Marco Colombo", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 160),
@@ -1625,6 +1630,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("LIETPOLD THE BLACK",
+  solo: true,
   subtitle: "The Thrice-Cursed, the Coin-bought Prince",
   profiles: (
     (name: "Lietpold the Black", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 215),
@@ -1645,6 +1651,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("GHAZAK KHAN",
+  solo: true,
   subtitle: "Terror of the East",
   profiles: (
     (name: "Ghazak Khan", m: 4, ws: 7, bs: 6, s: 5, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 205),
@@ -1667,6 +1674,7 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 )
 
 #unit("MYDAS THE MEAN",
+  solo: true,
   subtitle: "Notorious Paymaster",
   profiles: (
     (name: "Mydas the Mean", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 210),
@@ -1693,6 +1701,7 @@ friendly units within 12\" of Mydas add +1 to their combat resolution.")))
 )
 
 #unit("LEONARDO DA MIRAGLIANO",
+  solo: true,
   subtitle: "Scientific Genius",
   profiles: (
     (name: "Leonardo da Miragliano", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 2, i: 2, a: 1, ld: 7, points: 75),
@@ -1718,6 +1727,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("ULLI & MARQUAND",
+  solo: true,
   subtitle: "A Pair of Rogues",
   profiles: (
     (name: "Marquand", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 70),
@@ -1740,6 +1750,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("NICODEMUS",
+  solo: true,
   subtitle: "The Cursed Pilgrim",
   profiles: (
     (name: "Nicodemus", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 1, ld: 8, points: 155),
@@ -1755,6 +1766,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("SIMIUS GANTT",
+  solo: true,
   subtitle: "The Crow Master",
   profiles: (
     (name: "Simius Gantt", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 135),
@@ -1776,6 +1788,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("JOHANN THE KNIFE",
+  solo: true,
   subtitle: "Knife Fighter Extraordinaire",
   profiles: (
     (name: "Johann the Knife", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 135),
@@ -1792,6 +1805,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("AENUR",
+  solo: true,
   subtitle: "The Sword of Twilight",
   profiles: (
     (name: "Aenur", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 120),
@@ -1809,6 +1823,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 )
 
 #unit("MARIANNA CHEVAUX",
+  solo: true,
   subtitle: "Vampire Hunter",
   profiles: (
     (name: "Marianna Chevaux", m: 6, ws: 6, bs: 6, s: 5, t: 4, w: 2, i: 9, a: 3, ld: 9, points: 180),

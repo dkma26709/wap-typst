@@ -819,6 +819,7 @@ another victim. Roll again on this table to see what happens.")))
 = SPECIAL CHARACTERS
 
 #unit("ERIK REDAXE",
+  solo: true,
   first: true,
   subtitle: "High King of the Norse",
   profiles: (
@@ -839,6 +840,7 @@ Sagas)
 )
 
 #unit("KEORL THUNDERHAND",
+  solo: true,
   subtitle: "The Dragon Slayer, King of the Stormraven Clan",
   profiles: (
     (name: "Keorl Thunderhand", m: 4, ws: 7, bs: 4, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 210),
@@ -854,6 +856,7 @@ Sagas)
 )
 
 #unit("FLOKI 'LOSTSON'",
+  solo: true,
   subtitle: "Peerless Adventurer, Descendant of Losteriksson",
   profiles: (
     (name: "Flóki 'Lostson'", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 140),
@@ -876,6 +879,7 @@ Sagas)
 )
 
 #unit("DRENOK JOHANSEN",
+  solo: true,
   subtitle: "Wielder of the Great Axe",
   profiles: (
     (name: "Drenok Johansen", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 135),
@@ -891,6 +895,7 @@ Sagas)
 )
 
 #unit("SIGRUN THE PROUD",
+  solo: true,
   subtitle: "The Defiant, She Who Stands Firm",
   profiles: (
     (name: "Sigrun the Proud", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 175),
@@ -910,6 +915,7 @@ Sagas)
 )
 
 #unit("NJAL TROELSON",
+  solo: true,
   subtitle: "Relentless Strider, The Savage Hunter",
   profiles: (
     (name: "Njal Troelson", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 155),
@@ -925,6 +931,7 @@ Sagas)
 )
 
 #unit("JORA AND BJORN",
+  solo: true,
   subtitle: "The Maiden and the Bear",
   profiles: (
     (name: "Jora", m: 4, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 85),
@@ -949,6 +956,7 @@ Bjorn)
 )
 
 #unit("STURMJARL",
+  solo: true,
   subtitle: "Shaman Lord of Ejsgard",
   profiles: (
     (name: "Sturmjarl", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 5, a: 2, ld: 8, points: 315),
@@ -969,6 +977,7 @@ Bjorn)
 )
 
 #unit("BRAGI STURLUSON",
+  solo: true,
   subtitle: "The Ever-Skald, Poet of Legends",
   profiles: (
     (name: "Bragi Sturluson", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 130),
@@ -988,6 +997,7 @@ Bjorn)
 )
 
 #unit("THE RAVENSWYRD",
+  solo: true,
   subtitle: "Chosen of the Gods",
   profiles: (
     (name: "Ravenswyrd", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 10, points: 145),
@@ -1013,6 +1023,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
 )
 
 #unit("FENRIR WOLFCLAW",
+  solo: true,
   subtitle: "The Shackled King, First Among the Werekin",
   profiles: (
     (name: "Fenrir Wolfclaw", m: 7, ws: 7, bs: 0, s: 5, t: 5, w: 5, i: 6, a: 5, ld: 9, points: 235),
@@ -1030,6 +1041,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
 )
 
 #unit("STYRMIR RIMEFROST",
+  solo: true,
   subtitle: "King of the Frost Giants",
   profiles: (
     (name: "Styrmir Rimefrost", m: 6, ws: 6, bs: 3, s: 7, t: 6, w: 7, i: 3, a: 6, ld: 10, points: 460),

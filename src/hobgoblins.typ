@@ -737,6 +737,7 @@ If you roll a misfire, or if for any reason some of the models in the unit canno
 )
 
 #unit("GIANT",
+  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -782,6 +783,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 = SPECIAL CHARACTERS
 
 #unit("HOBGOBLA KHAN",
+  solo: true,
   first: true,
   subtitle: "Scourge of the Steppes",
   profiles: (
@@ -809,6 +811,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("GHAZAK KHAN",
+  solo: true,
   subtitle: "Terror of the East",
   profiles: (
     (name: "Ghazak Khan", m: 4, ws: 7, bs: 6, s: 5, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 205),
@@ -829,6 +832,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("MAGLAH KHAN",
+  solo: true,
   subtitle: "The Eagle Eye",
   profiles: (
     (name: "Maglah Khan", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 110),
@@ -853,6 +857,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("SOBUTAI",
+  solo: true,
   subtitle: "The Crossed Knife",
   profiles: (
     (name: "Sobutai", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 100),
@@ -878,6 +883,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("NERGUI",
+  solo: true,
   subtitle: "Great Shaman of the Steppes",
   profiles: (
     (name: "Nergui", m: 4, ws: 4, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 7, points: 300),

@@ -686,6 +686,7 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("GIANT",
+  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -741,6 +742,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("BONEGRINDER GIANT",
+  breakable: true,
   profiles: (
     (name: "Bonegrinder Giant", m: 10, ws: 3, bs: 3, s: 8, t: 8, w: 10, i: 1, a: "*", ld: 10, points: 380),
   ),
@@ -803,6 +805,7 @@ it.")))
 = SPECIAL CHARACTERS
 
 #unit("GWENLAEN",
+  solo: true,
   first: true,
   subtitle: "The Warrior Queen",
   profiles: (
@@ -831,6 +834,7 @@ it.")))
 )
 
 #unit("CORMAC CHATH",
+  solo: true,
   subtitle: "Hero of Albion",
   profiles: (
     (name: "Cormac Chath", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 150),
@@ -849,6 +853,7 @@ it.")))
 )
 
 #unit("CONOR MAC FEUD",
+  solo: true,
   subtitle: "The Highlander",
   profiles: (
     (name: "Conor Mac Feud", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 175),
@@ -866,6 +871,7 @@ it.")))
 )
 
 #unit("ROTH MAC LYR",
+  solo: true,
   subtitle: "Champion of Danu",
   profiles: (
     (name: "Roth Mac Lyr", m: 4, ws: 6, bs: 5, s: 5, t: 4, w: 3, i: 6, a: 4, ld: 8, points: 185),
@@ -881,6 +887,7 @@ it.")))
 )
 
 #unit("AMANTHAS",
+  solo: true,
   subtitle: "The Huntress",
   profiles: (
     (name: "Amanthas", m: 4, ws: 4, bs: 6, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: 115),
@@ -900,6 +907,7 @@ it.")))
 )
 
 #unit("AMANTHAS",
+  solo: true,
   subtitle: "The Huntress",
   profiles: (
     (name: "Amanthas", m: 4, ws: 4, bs: 6, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: 115),
@@ -919,6 +927,7 @@ it.")))
 )
 
 #unit("DURAL DURAK",
+  solo: true,
   subtitle: "Leader of the Council of Druids",
   profiles: (
     (name: "Dural Durak", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 3, i: 3, a: 1, ld: 9, points: 285),
@@ -954,6 +963,7 @@ In addition, he knows the _Elemental Power_ spell (see Druid Elders) and the fol
 )
 
 #unit("MORRIGAN",
+  solo: true,
   subtitle: "The Phantom Queen",
   profiles: (
     (name: "Morrigan", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 9, points: 295),
@@ -978,6 +988,7 @@ She always knows _The Flock of Doom_ spell from the Lore of Beasts in addition t
 )
 
 #unit("AGUM THE WATCHER",
+  solo: true,
   subtitle: "Guardian of the Coast",
   profiles: (
     (name: "Agum the Watcher", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 250),

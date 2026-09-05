@@ -1029,6 +1029,7 @@ Signature Spells from the Winds of Magic.
 )
 
 #unit("FLAMESPYRE PHOENIX",
+  breakable: true,
   profiles: (
     (name: "Flamespyre Phoenix", m: 2, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 8, points: 235),
     (name: "Frostheart Phoenix", m: 2, ws: 6, bs: 0, s: 5, t: 6, w: 5, i: 3, a: 3, ld: 9, points: ""),
@@ -1081,6 +1082,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
 = SPECIAL CHARACTERS
 
 #unit("TYRION",
+  solo: true,
   first: true,
   subtitle: "Defender of Ulthuan, Heir of Aenarion, Champion of the Everqueen",
   profiles: (
@@ -1104,6 +1106,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
 )
 
 #unit("TECLIS",
+  solo: true,
   subtitle: "High Loremaster of Hoeth, Warden of the White Tower",
   profiles: (
     (name: "Teclis", m: 5, ws: 3, bs: 3, s: 2, t: 2, w: 3, i: 5, a: 1, ld: 10, points: 460),
@@ -1126,6 +1129,7 @@ each of the eight Winds of Magic.
 )
 
 #unit("FINUBAR THE SEAFARER",
+  solo: true,
   subtitle: "Phoenix King of Ulthuan",
   profiles: (
     (name: "Finubar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 365),
@@ -1144,6 +1148,7 @@ each of the eight Winds of Magic.
 )
 
 #unit("ALARIELLE THE RADIANT",
+  solo: true,
   subtitle: "Everqueen of Avelorn",
   profiles: (
     (name: "Alarielle", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 10, points: 400),
@@ -1174,6 +1179,7 @@ She can choose all of her spells from the same lore, or from two or more of the 
 )
 
 #unit("ELTHARION THE GRIM",
+  solo: true,
   subtitle: "Warden of Tor Yvresse",
   profiles: (
     (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 330),
@@ -1201,6 +1207,7 @@ She can choose all of her spells from the same lore, or from two or more of the 
 )
 
 #unit("ELTHARION THE BLIND",
+  solo: true,
   subtitle: "Bladelord of Hoeth",
   profiles: (
     (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 245),
@@ -1228,6 +1235,7 @@ She can choose all of her spells from the same lore, or from two or more of the 
 )
 
 #unit("ALITH ANAR",
+  solo: true,
   subtitle: "The Shadow King, Prince of Nagarythe",
   profiles: (
     (name: "Alith Anar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 265),
@@ -1252,6 +1260,7 @@ Any unit of Dark Elves that suffers one or more casualties from the Moonbow must
 )
 
 #unit("IMRIK",
+  solo: true,
   subtitle: "Lord of Dragons, Prince of Caledor",
   profiles: (
     (name: "Imrik", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 600),
@@ -1276,6 +1285,7 @@ Any unit of Dark Elves that suffers one or more casualties from the Moonbow must
 )
 
 #unit("SEA LORD AISLINN",
+  solo: true,
   subtitle: "Master of the Mists, Herald of Mathlann",
   profiles: (
     (name: "Sea Lord Aislinn", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
@@ -1298,6 +1308,7 @@ Any unit of Dark Elves that suffers one or more casualties from the Moonbow must
 )
 
 #unit("ALTHRAN STORMRIDER",
+  solo: true,
   subtitle: "Elven Prince",
   profiles: (
     (name: "Althran Stormrider", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
@@ -1321,6 +1332,7 @@ Any unit of Dark Elves that suffers one or more casualties from the Moonbow must
 )
 
 #unit("BELANNAER THE WISE",
+  solo: true,
   subtitle: "Loremaster of the White Tower",
   profiles: (
     (name: "Belannaer the Wise", m: 5, ws: 6, bs: 5, s: 4, t: 3, w: 3, i: 9, a: 3, ld: 10, points: 405),
@@ -1350,6 +1362,7 @@ Spells from the Winds of Magic.
 )
 
 #unit("KORHIL LIONMANE",
+  solo: true,
   subtitle: "Charandis-bane, Hunter Captain of the White Lions",
   profiles: (
     (name: "Korhil", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
@@ -1377,6 +1390,7 @@ Spells from the Winds of Magic.
 )
 
 #unit("CARADRYAN OF THE FLAME",
+  solo: true,
   subtitle: "Chosen of Asuryan, Captain of the Phoenix Guard",
   profiles: (
     (name: "Caradryan", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
@@ -1401,6 +1415,7 @@ Spells from the Winds of Magic.
 )
 
 #unit("ISHAYA VESS",
+  solo: true,
   subtitle: "Sentinel of the Silent Isle",
   profiles: (
     (name: "Ishaya Vess", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 145),
@@ -1420,6 +1435,7 @@ Spells from the Winds of Magic.
 )
 
 #unit("PHYTRION",
+  solo: true,
   subtitle: "Chosen of Tor Yvresse",
   profiles: (
     (name: "Phytrion", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 120),
@@ -1438,6 +1454,7 @@ Spells from the Winds of Magic.
 )
 
 #unit("GILEAD & FITHVAEL",
+  solo: true,
   subtitle: "Last of Tor Anrok",
   profiles: (
     (name: "Gilead", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 170),
