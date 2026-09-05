@@ -92,49 +92,31 @@ Models with the Peasant's Duty treat all friendly models with a Chivalrous Vow a
 Models with this special rule do not suffer any movement penalties for being barded.
 ]
 
-= THE LORE OF THE LADY
+#lore("THE LORE OF THE LADY")[
 
-#spell("FAVOUR OF THE LADY", "Lore Attribute")
+#spell("FAVOUR OF THE LADY", "Lore Attribute")[If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Magical Ward rolls of 1 until the start of the next Bretonnian Magic phase.]
 
-If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Magical Ward rolls of 1 until the start of the next Bretonnian Magic phase.
+#spell("THE LADY'S GIFT", "Signature Spell", cast: "6+")[Remains in Play. _The Lady's Gift_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. While this spell is in effect, the target unit has the Regeneration (6+) special rule.]
 
-#spell("THE LADY'S GIFT", "Signature Spell", cast: "6+")
+#spell("MIST OF CHALONS", 1, cast: "5+")[_Mist of Châlons_ is an *augment* spell with a range of 18". All missile attacks targeting the unit suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.]
 
-Remains in Play. _The Lady's Gift_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. While this spell is in effect, the target unit has the Regeneration (6+) special rule.
+#spell("BEGUILEMENT OF BLONDEL", 1, cast: "6+")[Remains in Play. _Beguilement of Blondel_ is a *hex* spell with a range of 24". While the spell is in effect, the target is subject to the Stupidity special rule.]
 
-#spell("MIST OF CHALONS", "Level 1", cast: "5+")
+#spell("DOOM OF DOL", 2, cast: "7+")[Remains in play. _Doom of Dol_ is a *hex* spell with a range of 24" that targets a single enemy Character (even a character in a unit) or Lone Model. Choose one friendly character with any Chivalrous Vow in your army. While the spell is active, the chosen Knight will Hit and Wound that enemy model on a 2+ with the Ignores Armour Saves special rule.]
 
-_Mist of Châlons_ is an *augment* spell with a range of 18". All missile attacks targeting the unit suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.
+#spell("STEED OF THE LADY", 2, cast: "7+")[_Steed of the Lady_ is a *conveyance* spell with a range of 18" that targets Cavalry or Monstrous Cavalry with a Chivalrous Vow. The target may immediately make a normal move as if it were the Remaining Moves sub- phase.]
 
-#spell("BEGUILEMENT OF BLONDEL", "Level 1", cast: "6+")
+#spell("THE LADY'S WRATH", 3, cast: "9+")[_The Lady's Wrath_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit gains +1 Strength (excluding mounts) and the Armour Piercing (1) special rule until the start of your next Magic phase.]
 
-Remains in Play. _Beguilement of Blondel_ is a *hex* spell with a range of 24". While the spell is in effect, the target is subject to the Stupidity special rule.
+#spell("SHIELD OF THE LADY", 3, cast: "10+")[_Shield of the Lady_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit may re-roll failed armour saves until the start of your next Magic phase.]
 
-#spell("DOOM OF DOL", "Level 2", cast: "7+")
+#spell("THE CURSE OF THE LADY", 4, cast: "11+")[_The Curse of the Lady_ is a *hex* spell with a range of 12" that targets a single model (even a character in a unit). If the spell is successfully cast, the enemy is turned into a frog. Replace the model with a frog familiar or similar marker. This marker cannot be damaged and does not interfere with other units, simply move it so it is 1" away from all units and impassable terrain in a random direction if needed.
 
-Remains in play. _Doom of Dol_ is a *hex* spell with a range of 24" that targets a single enemy Character (even a character in a unit) or Lone Model. Choose one friendly character with any Chivalrous Vow in your army. While the spell is active, the chosen Knight will Hit and Wound that enemy model on a 2+ with the Ignores Armour Saves special rule.
+At the start of each enemy turn, the transformed model must take a Leadership test; if successful it is transformed back into its original shape, facing in a random direction. If the test is failed, move the marker D6" in a random direction, stopping within 1" of other units or impassable terrain. If the model is still in its frog form at the end of the game, it is treated as a casualty.]
 
-#spell("STEED OF THE LADY", "Level 2", cast: "7+")
+#spell("CHIVALRIC ONSLAUGHT", 4, cast: "12+")[_Chivalric Onslaught_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.]
 
-_Steed of the Lady_ is a *conveyance* spell with a range of 18" that targets Cavalry or Monstrous Cavalry with a Chivalrous Vow. The target may immediately make a normal move as if it were the Remaining Moves sub- phase.
-
-#spell("THE LADY'S WRATH", "Level 3", cast: "9+")
-
-_The Lady's Wrath_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit gains +1 Strength (excluding mounts) and the Armour Piercing (1) special rule until the start of your next Magic phase.
-
-#spell("SHIELD OF THE LADY", "Level 3", cast: "10+")
-
-_Shield of the Lady_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit may re-roll failed armour saves until the start of your next Magic phase.
-
-#spell("THE CURSE OF THE LADY", "Level 4", cast: "11+")
-
-_The Curse of the Lady_ is a *hex* spell with a range of 12" that targets a single model (even a character in a unit). If the spell is successfully cast, the enemy is turned into a frog. Replace the model with a frog familiar or similar marker. This marker cannot be damaged and does not interfere with other units, simply move it so it is 1" away from all units and impassable terrain in a random direction if needed.
-
-At the start of each enemy turn, the transformed model must take a Leadership test; if successful it is transformed back into its original shape, facing in a random direction. If the test is failed, move the marker D6" in a random direction, stopping within 1" of other units or impassable terrain. If the model is still in its frog form at the end of the game, it is treated as a casualty.
-
-#spell("CHIVALRIC ONSLAUGHT", "Level 4", cast: "12+")
-
-_Chivalric Onslaught_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.
+]
 
 = VIRTUES OF THE CHIVALRIC KNIGHT
 

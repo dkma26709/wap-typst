@@ -50,44 +50,6 @@
   )
 })
 
-// A spell heading: its name, its casting value set flush right where an item's
-// cost would sit, and its level on the line beneath. The source sets these as a
-// name and a subordinate line ("BREATH OF MORK" / "Level 2 Cast on 7+"), which
-// extraction could only render as two `namecost` calls, the second carrying the
-// level and cast as though they were an unpriced item name.
-//
-// Deliberately not a heading. `emit.py` counts level-2 headings as the book's
-// entries, so setting one here would fold every spell in the corpus into a
-// tally the site presents as unit entries.
-//
-// Header only, with the rules text flowing after it, like `namecost` and
-// `entry` - a spell is a sequence, not a record, and its body is often several
-// paragraphs and a chart.
-#let spell(name, level, cast: none) = {
-  [#metadata((kind: "spell", name: name, level: level, cast: cast))<meta>]
-  block(above: 0.9em, below: 0.3em, sticky: true, {
-    // As in `namecost`: justification would stretch a short name across the
-    // column, and the name column is sized to its content.
-    set par(justify: false)
-    grid(
-      columns: (1fr, auto),
-      align: (left + bottom, right + bottom),
-      column-gutter: 0.6em,
-      text(weight: "bold", size: 11pt, tracking: 0.04em, hyphenate: false)[
-        #upper(name)
-      ],
-      if cast != none { text(size: 9.5pt, style: "italic")[Cast on #cast] } else { none },
-    )
-    // Tracked no wider than a `namecost` name, and for a reason beyond taste:
-    // at 0.06em a PDF text extractor reads the letter gaps in LORE ATTRIBUTE as
-    // a word break and reports it as two words. The page was always right; the
-    // gate that reads the page back was not.
-    block(above: 0.35em, below: 0em,
-      text(size: 9pt, weight: "bold", tracking: 0.04em, fill: muted,
-        hyphenate: false)[#upper(level)])
-  })
-}
-
 #let para(rs, style: "body") = {
   if style == "italic" {
     // Flavour text: inset and a shade smaller than the rules body.
@@ -315,12 +277,14 @@
   }
 }
 
-// The gap before an item's name, wider than the 0.9em a `namecost` takes
+// The gap before a record's name, wider than the 0.9em a `namecost` takes
 // elsewhere: a section is sixty short records rather than continuous prose, and
-// at the paragraph gap one item's rules read as running into the next item's
-// name. Set here so it is the magic items that get the air, not every run-in
-// name in the corpus.
-#let MAGIC_ITEM_GAP = 1.2em
+// at the paragraph gap one record's rules read as running into the next one's
+// name. Shared by magic items and spells - they are the same kind of material,
+// and a lore set to a hair less air than a magic-item section would be a
+// difference a reader could see and no one had decided. Set here so it is those
+// records that get the air, not every run-in name in the corpus.
+#let RECORD_GAP = 1.2em
 
 // `cost` is a number, not "45 points". The unit is the same for every item in
 // every book, so writing it out at each of them only creates somewhere for
@@ -377,7 +341,7 @@
   // so it is carried by a flag rather than typed into the name, where it reads
   // as spelling and can be lost to one.
   namecost(name + if common { "*" } else { "" }, str(cost) + " points",
-    above: MAGIC_ITEM_GAP)
+    above: RECORD_GAP)
   // Not wrapped in a block: the qualifiers open the item's first paragraph, as
   // they do on the printed page, rather than standing off as a line of their
   // own.
@@ -464,6 +428,75 @@
   } else {
     body
   }
+}
+
+// --- spells -----------------------------------------------------------------
+
+// A spell is a magic item by another name: a named record with a number the
+// player pays to use it, a line of qualifiers, and a paragraph of rules. So it
+// is set as one, through the same `namecost` and the same `RECORD_GAP`, and a
+// lore reads down the page exactly as a magic-item section does.
+//
+// It did not used to. The name sat in a grid of its own and the level stood on
+// a muted line beneath it, which made a lore look like a third kind of thing in
+// a book that only has two - and cost the corpus a tracking hack, because a PDF
+// extractor read the letter gaps in LORE ATTRIBUTE as a word break.
+//
+// The two spells that carry no number - the lore attribute, which is always in
+// play, and the signature spell every wizard in the lore knows - are named
+// rather than numbered.
+#let SPELL_UNNUMBERED = ("Lore Attribute", "Signature Spell")
+
+// `level` is a number and `cast` the value it is cast on, written as the source
+// writes it - the same pair, in the same types, that a bound magic item takes
+// in `bound: (level: 2, cast: "7+")`. One spell stated two ways in one book was
+// exactly the sort of drift the vocabulary exists to stop.
+#let spell(name, level, body, cast: none) = {
+  let where = "spell " + name
+  assert((_typeof(level) == int and level > 0) or level in SPELL_UNNUMBERED,
+    message: where + ": level is a number, or one of "
+      + SPELL_UNNUMBERED.join(", ") + " - not " + repr(level))
+  assert(cast == none or _typeof(cast) == str,
+    message: where + ": cast is written as the source writes it, \"7+\", not "
+      + repr(cast))
+  // A numbered spell that cannot be cast is a spell with no way into play, and
+  // an unnumbered one is in play already; either way the pair travels together.
+  if _typeof(level) == int {
+    assert(cast != none, message: where + ": a numbered spell needs a casting"
+      + " value")
+  }
+
+  let named = if _typeof(level) == int { "Level " + str(level) } else { level }
+
+  [#metadata((kind: "spell", name: name, level: level, cast: cast))<meta>]
+  // The casting value sits where an item's cost sits, because it is the same
+  // thing: what the spell asks of the player before it does anything.
+  namecost(name, if cast != none { "Cast on " + cast } else { "" },
+    above: RECORD_GAP)
+  // The level opens the rules paragraph, as an item's "Talisman. One use only."
+  // does, rather than standing off on a line of its own. The full stop is
+  // supplied here, so a spell cannot be missing one.
+  [#named. #body]
+}
+
+// A lore: its chapter title and its spells, always in two columns.
+//
+// Not measured, as a magic-item section is. That rule exists because a chapter
+// of six sections can leave one of them with four items in it, and four items
+// do not fill two columns. A lore is not built that way - it is eight or nine
+// spells that arrive together and always run past the page - so measuring it
+// would only be an expensive way of answering two every time.
+//
+// The title is a level-1 heading, which is what the corpus already sets a lore
+// as, so it takes its own page and its centred rule from the chapter show rule.
+// It stays level 1 for a second reason: `emit.py` counts level-2 headings as
+// the book's entries, and a lore is not a unit.
+#let lore(title, intro: none, body) = {
+  heading(level: 1, title)
+  // Not wrapped in a block, as `magic-item-chapter`'s intro is not: a block
+  // takes `block.spacing` where a paragraph takes `par.spacing`.
+  if intro != none { strong(intro) }
+  _columns(2, body)
 }
 
 // --- profiles ---------------------------------------------------------------
