@@ -161,17 +161,17 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 
 = CHARACTERS
 
-#entry("RAJAHS", first: true)
-#profile(
-  (name: "Maharajah", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
-  (name: "Rajah", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Karma")
-#field("OPTIONS", "")
-
+#unit("RAJAHS",
+  first: true,
+  profiles: (
+    (name: "Maharajah", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
+    (name: "Rajah", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Karma",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -195,21 +195,22 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - One Rajah may carry the Battle Standard +25 points
 - A Rajah may take Magic Items up to a total of 50 points
 - A Maharajah may take Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("MANTRIKS")
-#profile(
-  (name: "Mantrik Lord", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
-  (name: "Mantrik", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Mantrik is a Level 1 Wizard. A Mantrik Lord is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("MANTRIKS",
+  profiles: (
+    (name: "Mantrik Lord", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
+    (name: "Mantrik", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Mantrik is a Level 1 Wizard. A Mantrik Lord is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Death
 - Heavens
@@ -218,65 +219,67 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - Life
 - Metal
 - Shadow
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional Wizard Level +35 points
 - May be mounted on a Warhorse +15 points
 - A Mantrik may take Magic Items up to a total of 50 points
 - A Mantrik Lord may take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Karma")
-
-#entry("SADHU")
-#profile(
-  (name: "Sadhu", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 0, ld: 7, points: 70),
+  ],
+  special-rules: "Karma",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Karma, Magic Resistance (1)")
 
+#unit("SADHU",
+  profiles: (
+    (name: "Sadhu", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 0, ld: 7, points: 70),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Karma, Magic Resistance (1)",
+  special-rules-body: [
 - *Tantric Discipline:* The model and any unit they are currently in have the Cold-blooded and Disciplined special rules.
 - *Pacifist:* A Sadhu may be placed in the second rank of any Infantry unit they join, rather than the first.
 - *Prayers of the Deva:* A model with this special rule knows the three Prayers listed below. Unless fleeing, they may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and takes immediate effect. A friendly unit can only be under the effect of one Prayer at a time.
   - *Wrath of Shidra:* The model and any unit they are with gain the Hatred special rule until the start of your next turn.
   - *Shield of Vishyana:* The model and any unit they are with gain the Magical Ward (6+) special rule until the start of your next turn.
   - *Creation of Brahambhu:* The model's unit gain D3 Wounds worth of models slain earlier in the battle, just like a summoning spell.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("VISHKANYA")
-#profile(
-  (name: "Vishkanya", m: 5, ws: 7, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 95),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Karma, Natural Armour (6+), Poisoned Attacks, Scouts")
 
-- *Poisoned Blood:* Roll a D6 whenever the Vishkanya loses a Wound in Close Combat. On a 6, the model who inflicted the Wound suffers a Wound themselves.
-
-#field("OPTIONS", "")
-
+#unit("VISHKANYA",
+  profiles: (
+    (name: "Vishkanya", m: 5, ws: 7, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 95),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  special-rules: "Dodge (5+), Hidden, Karma, Natural Armour (6+), Poisoned Attacks, Scouts",
+  special-rules-body: (
+    rule("Poisoned Blood")[Roll a D6 whenever the Vishkanya loses a Wound in Close Combat. On a 6, the model who inflicted the Wound suffers a Wound themselves.],
+  ),
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("BEASTMASTER")
-#profile(
-  (name: "Beastmaster", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 30),
-  (name: "Tiger", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: 20),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human), War Beast (Feline)")
-#field("BASE SIZE", "20x20 or 25x25 (Beastmaster), 25x50 or 30x60 (Tiger)")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Karma, Independent, Mixed Unit, Mighty Blow (1) (Tiger only), Forest Strider")
 
-- *Beastmaster:* Any friendly War Beast, Monstrous Beast, Monstrous Cavalry or Monster (except Devas) within 6" of a Beastmaster may re-roll failed Leadership tests and gain the Stubborn special rule.
-
-#field("OPTIONS", "")
-
+#unit("BEASTMASTER",
+  profiles: (
+    (name: "Beastmaster", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 30),
+    (name: "Tiger", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: 20),
+  ),
+  troop-type: "Infantry (Character, Human), War Beast (Feline)",
+  base-size: "20x20 or 25x25 (Beastmaster), 25x50 or 30x60 (Tiger)",
+  equipment: "Hand weapon",
+  special-rules: "Karma, Independent, Mixed Unit, Mighty Blow (1) (Tiger only), Forest Strider",
+  special-rules-body: (
+    rule("Beastmaster")[Any friendly War Beast, Monstrous Beast, Monstrous Cavalry or Monster (except Devas) within 6" of a Beastmaster may re-roll failed Leadership tests and gain the Stubborn special rule.],
+  ),
+  options: [
 - May take an additional hand weapon +2 points
 - May choose one of the following:
   - Bow +4 points
@@ -284,112 +287,118 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
   - Javelins +5 points
 - May be mounted on a Bengal Tiger +50 points
 - May take Magic Items up to a total of 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Beastmaster may be accompanied by up to a total of 5 Tigers.
 - A Beastmaster may never be the Army General.
-
-#entry("AVATAR OF BRAHAMBHU")
-#profile(
-  (name: "Avatar of Brahambhu", m: 6, ws: 5, bs: 5, s: 6, t: 6, w: 5, i: 6, a: 4, ld: 9, points: 350),
+  ],
 )
-#field("TROOP TYPE", "Monster (Character, Deva)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "An Avatar of Brahambhu is a Level 2 Wizard who uses the Lore of Life.")
-#field("OPTIONS", "")
 
+#unit("AVATAR OF BRAHAMBHU",
+  profiles: (
+    (name: "Avatar of Brahambhu", m: 6, ws: 5, bs: 5, s: 6, t: 6, w: 5, i: 6, a: 4, ld: 9, points: 350),
+  ),
+  troop-type: "Monster (Character, Deva)",
+  base-size: "50x50",
+  equipment: "Hand weapon",
+  magic: "An Avatar of Brahambhu is a Level 2 Wizard who uses the Lore of Life.",
+  options: [
 - May be upgraded to one of the following:
   - Level 3 Wizard +35 points
   - Level 4 Wizard +70 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Deva")
-
-#entry("AVATAR OF VISHYANA")
-#profile(
-  (name: "Avatar of Vishyana", m: 6, ws: 7, bs: 6, s: 6, t: 6, w: 6, i: 6, a: 5, ld: 9, points: 365),
+  ],
+  special-rules: "Deva",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Monster (Character, Deva)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "An Avatar of Vishyana is a Level 1 Wizard who uses the Lore of Light.")
-#field("OPTIONS", "")
 
+#unit("AVATAR OF VISHYANA",
+  profiles: (
+    (name: "Avatar of Vishyana", m: 6, ws: 7, bs: 6, s: 6, t: 6, w: 6, i: 6, a: 5, ld: 9, points: 365),
+  ),
+  troop-type: "Monster (Character, Deva)",
+  base-size: "50x50",
+  equipment: "Hand weapon",
+  magic: "An Avatar of Vishyana is a Level 1 Wizard who uses the Lore of Light.",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Deva")
-
-#entry("AVATAR OF SHIDRA")
-#profile(
-  (name: "Avatar of Shidra", m: 8, ws: 9, bs: 6, s: 6, t: 6, w: 5, i: 9, a: 6, ld: 9, points: 365),
+  ],
+  special-rules: "Deva",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Monster (Character, Deva)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "An Avatar of Shidra is a Level 1 Wizard who uses the Lore of Fire.")
-#field("OPTIONS", "")
 
+#unit("AVATAR OF SHIDRA",
+  profiles: (
+    (name: "Avatar of Shidra", m: 8, ws: 9, bs: 6, s: 6, t: 6, w: 5, i: 9, a: 6, ld: 9, points: 365),
+  ),
+  troop-type: "Monster (Character, Deva)",
+  base-size: "50x50",
+  equipment: "Hand weapon",
+  magic: "An Avatar of Shidra is a Level 1 Wizard who uses the Lore of Fire.",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Deva")
+  ],
+  special-rules: "Deva",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
+)
 
 = CHARACTER MOUNTS
 
-#entry("WARHORSE", first: true)
-#profile(
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
-
+#unit("WARHORSE",
+  first: true,
+  profiles: (
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take barding +5 points
-
-#entry("THRONEBEARERS")
-#profile(
-  (name: "Thronebearers", m: 4, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 4, a: 4, ld: 8, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Inspiring Presence (6)")
-#field("NOTES", "")
 
+#unit("THRONEBEARERS",
+  profiles: (
+    (name: "Thronebearers", m: 4, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 4, a: 4, ld: 8, points: "-"),
+  ),
+  troop-type: "Infantry (Human)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Inspiring Presence (6)",
+  notes: [
 - Thronebearers have a Line of Sight value of 2 and add +4 to the model's Unit Strength.
-
-#compact-entry("BENGAL TIGER")[
-#profile(
-  (name: "Bengal Tiger", m: 9, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 5, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Beast (Feline)")
-#field("BASE SIZE", "50x75")
-#field("SPECIAL RULES", "Mighty Blow (1), Forest Strider")
-]
 
-#entry("ROYAL ELEPHANT")
-#profile(
-  (name: "Royal Elephant", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 2, a: 4, ld: 6, points: "-"),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+#unit("BENGAL TIGER",
+  compact: true,
+  profiles: (
+    (name: "Bengal Tiger", m: 9, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Feline)",
+  base-size: "50x75",
+  special-rules: "Mighty Blow (1), Forest Strider",
 )
-#field("TROOP TYPE", "Monstrous Creature (Elephantine)")
-#field("CREW", "1 (Human)")
-#field("BASE SIZE", "50x75 or 50x100")
-#field("EQUIPMENT", "Light lance (Crew only)")
-#field("SPECIAL RULES", "Impact Hits (D3+1), Natural Armour (5+), Karma (Crew only)")
 
-- *Stampede:* If a War Elephant suffers a wound from a missile attack, it must immediately take a Panic test. Any time a War Elephant fails a Panic or Break test it will Flee in a random direction, as determined by the Scatter dice. If it flees through any unit, it inflicts D6+1 Strength 5 hits.
-
-#field("UPGRADES", "")
-
-- *Mahout Expert:* The War Elephant may re-roll failed Stampede tests.
-- *Spike Chain:* The War Elephant gains the Impact Hits (D6+1) special rule.
-- *Spiked Tusks:* The War Elephant gains +1 Strength to its Attacks.
-
-#field("OPTIONS", "")
-
+#unit("ROYAL ELEPHANT",
+  profiles: (
+    (name: "Royal Elephant", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 2, a: 4, ld: 6, points: "-"),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Monstrous Creature (Elephantine)",
+  crew: "1 (Human)",
+  base-size: "50x75 or 50x100",
+  equipment: "Light lance (Crew only)",
+  special-rules: "Impact Hits (D3+1), Natural Armour (5+), Karma (Crew only)",
+  special-rules-body: (
+    rule("Stampede")[If a War Elephant suffers a wound from a missile attack, it must immediately take a Panic test. Any time a War Elephant fails a Panic or Break test it will Flee in a random direction, as determined by the Scatter dice. If it flees through any unit, it inflicts D6+1 Strength 5 hits.],
+  ),
+  upgrades: (
+    rule("Mahout Expert")[The War Elephant may re-roll failed Stampede tests.],
+    rule("Spike Chain")[The War Elephant gains the Impact Hits (D6+1) special rule.],
+    rule("Spiked Tusks")[The War Elephant gains +1 Strength to its Attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Shortbows +1 point/Crew
   - Longbows +1 point/Crew
@@ -399,22 +408,22 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May take Mahout Expert +10 points
 - May take Spike Chains +15 points
 - May take Spiked Tusks +15 points
+  ],
+)
 
 = CORE UNITS
 
-#entry("WARRIORS", first: true)
-
-#profile(
-  (name: "Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
-)
-
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Karma")
-#field("OPTIONS", "")
-
+#unit("WARRIORS",
+  first: true,
+  profiles: (
+    (name: "Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3.5),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Karma",
+  options: [
 - May choose one of the following:
   - Replace bucklers with additional hand weapons +0.5 point/model
   - Spears +0.5 point/model
@@ -425,68 +434,72 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Warrior to a Musician +5 points
 - May upgrade one Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ARCHERS")
-#profile(
-  (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 7),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("SPECIAL RULES", "Karma")
-#field("OPTIONS", "")
 
+#unit("ARCHERS",
+  profiles: (
+    (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 7),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, longbow",
+  special-rules: "Karma",
+  options: [
 - May take bucklers +0.5 point/model
 - May upgrade one Archer to a Leader +5 points
 - May upgrade one Archer to a Musician +5 points
 - May upgrade one Archer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("SEPOYS")
-#profile(
-  (name: "Sepoy", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, handgun")
-#field("SPECIAL RULES", "Karma")
-#field("OPTIONS", "")
 
+#unit("SEPOYS",
+  profiles: (
+    (name: "Sepoy", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, handgun",
+  special-rules: "Karma",
+  options: [
 - May upgrade one Sepoy to a Leader +5 points
 - May upgrade one Sepoy to a Musician +5 points
 - May upgrade one Sepoy to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("URUMI SWORDSMEN")
-#profile(
-  (name: "Urumi Swordsman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Urumi sword")
 
-- *Urumi Sword:* Hand weapon. A model using an Urimi Sword gain +2 Attacks but suffer \-1 to their Strength.
-
-#field("SPECIAL RULES", "Karma, Skirmishers")
-#field("OPTIONS", "")
-
+#unit("URUMI SWORDSMEN",
+  profiles: (
+    (name: "Urumi Swordsman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Urumi sword",
+  equipment-body: (
+    rule("Urumi Sword")[Hand weapon. A model using an Urimi Sword gain +2 Attacks but suffer \-1 to their Strength.],
+  ),
+  special-rules: "Karma, Skirmishers",
+  options: [
 - May take bucklers +0.5 point/model
 - May upgrade one Urumi Swordsman to a Leader +5 points
-
-#entry("SKIRMISHERS")
-#profile(
-  (name: "Skirmisher", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, throwing weapons")
-#field("SPECIAL RULES", "Karma, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("SKIRMISHERS",
+  profiles: (
+    (name: "Skirmisher", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, throwing weapons",
+  special-rules: "Karma, Skirmishers",
+  options: [
 - May replace throwing weapons one of the following:
   - Javelins +1 point/model
   - Shortbows +1 point/model
@@ -496,20 +509,21 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
   - Shields +1 point/model
 - May upgrade one Skirmisher to a Leader +5 points
 - May upgrade one Skirmisher to a Musician +5 points
-
-#entry("PINDARIS")
-#profile(
-  (name: "Pindari", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 11),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Fast Cavalry, Karma")
-#field("OPTIONS", "")
 
+#unit("PINDARIS",
+  profiles: (
+    (name: "Pindari", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 11),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Fast Cavalry, Karma",
+  options: [
 - May choose one of the following:
   - Replace buckler with shortbows +0.5 point/model
   - Light lances +1 point/model
@@ -519,23 +533,24 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Pindari to a Musician +5 points
 - May upgrade one Pindari to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("SOWARS")
-#profile(
-  (name: "Sowar", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 12),
-  (name: "Camel", m: 7, ws: 3, bs: 0, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Camel (Camelid)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Fast Cavalry, Karma")
 
-- *Scare Horses:* Models with this special rule have the Fear special rule when fighting Equines.
-
-#field("OPTIONS", "")
-
+#unit("SOWARS",
+  profiles: (
+    (name: "Sowar", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 12),
+    (name: "Camel", m: 7, ws: 3, bs: 0, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Camel (Camelid)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Fast Cavalry, Karma",
+  special-rules-body: (
+    rule("Scare Horses")[Models with this special rule have the Fear special rule when fighting Equines.],
+  ),
+  options: [
 - May choose one of the following:
   - Replace shields with shortbows free
   - Light lances +1 point/model
@@ -546,20 +561,21 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Sowar to a Musician +5 points
 - May upgrade one Sowar to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("RAJPUTS")
-#profile(
-  (name: "Rajput", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 15),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, medium armour, buckler")
-#field("SPECIAL RULES", "Fast Cavalry, Karma")
-#field("OPTIONS", "")
 
+#unit("RAJPUTS",
+  profiles: (
+    (name: "Rajput", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 15),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, medium armour, buckler",
+  special-rules: "Fast Cavalry, Karma",
+  options: [
 - May choose one of the following:
   - Light lances +1 point/model
   - Replace buckler with flails +1.5 points/model
@@ -568,32 +584,36 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Rajput to a Musician +5 points
 - May upgrade one Rajput to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("SNAKE SWARMS")
-#profile(
-  (name: "Snake Swarm", m: 4, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 1, a: 6, ld: 3, points: 35),
-  (name: "Snake Charmer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Swarm (Ophidian)")
-#field("HANDLER", "1 Snake Charmer (Human)")
-#field("SPECIAL RULES", "Cold-blooded, Poisoned Attacks, Mixed Unit")
 
-- *Snake Charmer:* You must include one Snake Charmer for every 3 Snake Swarms. Each Snake Charmer can only control 3 Snake Swarms each. If a Snake Charmer is killed, the Snake Swarms he controlled are automatically removed as casualties as soon as the unit is out of close combat.
+#unit("SNAKE SWARMS",
+  profiles: (
+    (name: "Snake Swarm", m: 4, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 1, a: 6, ld: 3, points: 35),
+    (name: "Snake Charmer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "3-9",
+  troop-type: "Swarm (Ophidian)",
+  handler: "1 Snake Charmer (Human)",
+  special-rules: "Cold-blooded, Poisoned Attacks, Mixed Unit",
+  special-rules-body: (
+    rule("Snake Charmer")[You must include one Snake Charmer for every 3 Snake Swarms. Each Snake Charmer can only control 3 Snake Swarms each. If a Snake Charmer is killed, the Snake Swarms he controlled are automatically removed as casualties as soon as the unit is out of close combat.],
+  ),
+)
 
 = SPECIAL UNITS
 
-#entry("MAIDEN GUARD", first: true)
-#profile(
-  (name: "Maiden Guard", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 7),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Karma, Stubborn")
-#field("OPTIONS", "")
-
+#unit("MAIDEN GUARD",
+  first: true,
+  profiles: (
+    (name: "Maiden Guard", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 7),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Karma, Stubborn",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Replace bucklers with polearms +1.5 points/model
@@ -603,82 +623,87 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Maiden Guard to a Musician +5 points
 - May upgrade one Maiden Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("ETERNALS")
-#profile(
-  (name: "Eternals", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 13),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, medium armour")
-#field("SPECIAL RULES", "Immunity (Psychology), Karma, Magical Attacks, Magic Resistance (1)")
-#field("OPTIONS", "")
 
+#unit("ETERNALS",
+  profiles: (
+    (name: "Eternals", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 13),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, medium armour",
+  special-rules: "Immunity (Psychology), Karma, Magical Attacks, Magic Resistance (1)",
+  options: [
 - May upgrade one Eternal to a Leader +5 points
 - May upgrade one Eternal to a Musician +5 points
 - May upgrade one Eternal to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("ZAMBURAKS")
-#profile(
-  (name: "Zamburak", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 15),
-  (name: "Camel", m: 7, ws: 3, bs: 0, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Camel (Camelid)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, shaturnal")
 
+#unit("ZAMBURAKS",
+  profiles: (
+    (name: "Zamburak", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 15),
+    (name: "Camel", m: 7, ws: 3, bs: 0, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Camel (Camelid)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, shaturnal",
+  equipment-body: [
 - *Shaturnal:* Shaturnals have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18/36\"", "6", "Ponderous"))
-#field("SPECIAL RULES", "Fast Cavalry, Karma")
-
-- *Scare Horses:* Models with this special rule have the Fear special rule when fighting Equines.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Fast Cavalry, Karma",
+  special-rules-body: (
+    rule("Scare Horses")[Models with this special rule have the Fear special rule when fighting Equines.],
+  ),
+  options: [
 - May upgrade one Zamburak to a Leader +5 points
 - May upgrade one Zamburak to a Musician +5 points
 - May upgrade one Zamburak to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ROYAL CHARIOT")
-#profile(
-  (name: "Royal Chariot", m: 7, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
-  (name: "Charioteer", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
-  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 (Human)")
-#field("DRAWN BY", "2 Warhorses (Equine)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Light lance, bow")
-#field("SPECIAL RULES", "Karma")
-#field("OPTIONS", "")
 
+#unit("ROYAL CHARIOT",
+  profiles: (
+    (name: "Royal Chariot", m: 7, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
+    (name: "Charioteer", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
+    (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "1-3",
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 (Human)",
+  drawn-by: "2 Warhorses (Equine)",
+  base-size: "50x100 or 60x100",
+  equipment: "Light lance, bow",
+  special-rules: "Karma",
+  options: [
 - May replace bows with javelins +free
 - May take light armour +4 points/model
 - May take up to three additional Crew +6 points/Crew
 - May take two additional Warhorses +6 points
 - May upgrade one Royal Chariot to a standard bearer +10 points
-
-#entry("BENGAL RIDERS")
-#profile(
-  (name: "Bengal Rider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 36),
-  (name: "Bengal Tiger", m: 9, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Human)")
-#field("MOUNT", "Bengal Tiger (Feline)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider, Karma, Loner, Mighty Blow (1) (Bengal Tiger only)")
-#field("OPTIONS", "")
 
+#unit("BENGAL RIDERS",
+  profiles: (
+    (name: "Bengal Rider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 36),
+    (name: "Bengal Tiger", m: 9, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: "-", points: ""),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Human)",
+  mount: "Bengal Tiger (Feline)",
+  base-size: "50x75",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider, Karma, Loner, Mighty Blow (1) (Bengal Tiger only)",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +1 point/model
   - Light lances +1 point/model
@@ -687,18 +712,20 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 - May upgrade one Bengal Rider to a Musician +5 points
 - May upgrade one Bengal Rider to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("WAR ELEPHANT")
-#profile(
-  (name: "War Elephant", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 6, points: 100),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Monstrous Creature (Elephantine)")
-#field("CREW", "3 (Human)")
-#field("BASE SIZE", "50x75 or 50x100")
-#field("EQUIPMENT", "Light lance (Crew only)")
 
+#unit("WAR ELEPHANT",
+  profiles: (
+    (name: "War Elephant", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 6, points: 100),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ),
+  unit-size: "1-3",
+  troop-type: "Monstrous Creature (Elephantine)",
+  crew: "3 (Human)",
+  base-size: "50x75 or 50x100",
+  equipment: "Light lance (Crew only)",
+  equipment-body: [
 - *Giant Bow:* Instead of firing another missile weapon in the Shooting phase, one of the crew may fire the giant bow. Giant bows are bolt throwers with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "5", "Cumbersome, Multiple Wounds (D3)"))
@@ -708,19 +735,17 @@ However, before using it, the wielder must pass a Leadership test or suffer 1 Wo
 #minitable(("Range", "Strength", "Special Rules"), ("24/48\"", "7", "Cumbersome, Multiple Wounds (D3)"))
 
 If a Misfire is rolled, the War Elephant suffers D3 Wounds which Ignores Armour Saves.
-
-#field("SPECIAL RULES", "Impact Hits (D3), Karma, Natural Armour (5+)")
-
-- *Stampede:* If a War Elephant suffers a wound from a missile attack, it must immediately take a Panic test. Any time a War Elephant fails a Panic or Break test it will Flee in a random direction, as determined by the Scatter dice. If it flees through any unit, it inflicts D6+1 Strength 5 hits.
-
-#field("UPGRADES", "")
-
-- *Mahout Expert:* The War Elephant may re-roll failed Stampede tests.
-- *Spike Chain:* The War Elephant gains the Impact Hits (D6) special rule.
-- *Spiked Tusks:* The War Elephant gains +1 Strength to its Attacks.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Impact Hits (D3), Karma, Natural Armour (5+)",
+  special-rules-body: (
+    rule("Stampede")[If a War Elephant suffers a wound from a missile attack, it must immediately take a Panic test. Any time a War Elephant fails a Panic or Break test it will Flee in a random direction, as determined by the Scatter dice. If it flees through any unit, it inflicts D6+1 Strength 5 hits.],
+  ),
+  upgrades: (
+    rule("Mahout Expert")[The War Elephant may re-roll failed Stampede tests.],
+    rule("Spike Chain")[The War Elephant gains the Impact Hits (D6) special rule.],
+    rule("Spiked Tusks")[The War Elephant gains +1 Strength to its Attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Shortbows +1 point/Crew
   - Longbows +1 point/Crew
@@ -734,64 +759,68 @@ If a Misfire is rolled, the War Elephant suffers D3 Wounds which Ignores Armour 
 - May take Mahout Expert +10 points/model
 - May take Spike Chains +15 points/model
 - May take Spiked Tusks +15 points/model
-
-#entry("RAKSHASHAS")
-#profile(
-  (name: "Rakshasa", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 4, a: 1, ld: 7, points: 11),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Beastman)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Ambushers, Forest Striders, Hatred, Independent, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("RAKSHASHAS",
+  profiles: (
+    (name: "Rakshasa", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 4, a: 1, ld: 7, points: 11),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Beastman)",
+  base-size: "25x25 or 30x30",
+  equipment: "Two hand weapons",
+  special-rules: "Ambushers, Forest Striders, Hatred, Independent, Skirmishers",
+  options: [
 - May replace hand weapons with great weapons +2 points/model
 - May upgrade one Rakshasa to a Leader +5 points
 - May upgrade one Rakshasa to a Musician +5 points
-
-#entry("VANARAS")
-#profile(
-  (name: "Vanara", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Beastman)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Dodge (6+), Forest Strider, Independent, Obstacle Strider, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("VANARAS",
+  profiles: (
+    (name: "Vanara", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Beastman)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  special-rules: "Dodge (6+), Forest Strider, Independent, Obstacle Strider, Scouts, Skirmishers",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +1 point/model
   - Blowpipes +3 points/model
 - May upgrade one Vanara to a Leader +5 points
 - May upgrade one Vanara to a Musician +5 points
-
-#entry("GARUDAS")
-#profile(
-  (name: "Garuda", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 2, ld: 7, points: 11),
+  ],
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Infantry (Beastman)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Fly (10), Independent")
-#field("OPTIONS", "")
 
+#unit("GARUDAS",
+  profiles: (
+    (name: "Garuda", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 2, ld: 7, points: 11),
+  ),
+  unit-size: "5+",
+  troop-type: "Infantry (Beastman)",
+  base-size: "25x25 or 30x30",
+  equipment: "Two hand weapons",
+  special-rules: "Fly (10), Independent",
+  options: [
 - May take bows +2 points/model
 - May upgrade one Garuda to a Leader +5 points
-
-#entry("GANESHAS")
-#profile(
-  (name: "Ganesha", m: 6, ws: 4, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 8, points: 36),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Beastman)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Impact Hits (1), Independent, Natural Armour (5+)")
-#field("OPTIONS", "")
 
+#unit("GANESHAS",
+  profiles: (
+    (name: "Ganesha", m: 6, ws: 4, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 8, points: 36),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Beastman)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Impact Hits (1), Independent, Natural Armour (5+)",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 point/model
   - Shields +3 points/model
@@ -800,172 +829,187 @@ If a Misfire is rolled, the War Elephant suffers D3 Wounds which Ignores Armour 
 - May upgrade one Ganesha to a Musician +5 points
 - May upgrade one Ganesha to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("NAGAS")
-#profile(
-  (name: "Naga", m: 7, ws: 4, bs: 4, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 40),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Beast (Beastman)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Aquatic, Loner, Poisoned Attacks, Natural Armour (6+)")
-#field("OPTIONS", "")
 
+#unit("NAGAS",
+  profiles: (
+    (name: "Naga", m: 7, ws: 4, bs: 4, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 40),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Beast (Beastman)",
+  base-size: "50x50 or 50x75",
+  equipment: "Two hand weapons",
+  special-rules: "Aquatic, Loner, Poisoned Attacks, Natural Armour (6+)",
+  options: [
 - May take great bows +10 points/model
 - May upgrade one Naga to a Leader +5 points
-
-#entry("KALARATRIS")
-#profile(
-  (name: "Kalaratri", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 3, ld: 7, points: 12),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Deva)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Deva")
-#field("OPTIONS", "")
 
+#unit("KALARATRIS",
+  profiles: (
+    (name: "Kalaratri", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 3, ld: 7, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Deva)",
+  base-size: "25x25 or 30x30",
+  equipment: "Two hand weapons",
+  special-rules: "Deva",
+  options: [
 - May upgrade one Kalaratri to a Leader +5 points
 - May upgrade one Kalaratri to a Musician +5 points
 - May upgrade one Kalaratri to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("MARUTS")
-#profile(
-  (name: "Marut", m: 4, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 1, ld: 7, points: 14),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Deva)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon, medium armour, shield")
-#field("SPECIAL RULES", "Deva, Lightning Attacks")
-#field("OPTIONS", "")
 
+#unit("MARUTS",
+  profiles: (
+    (name: "Marut", m: 4, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 1, ld: 7, points: 14),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Deva)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon, medium armour, shield",
+  special-rules: "Deva, Lightning Attacks",
+  options: [
 - May upgrade one Marut to a Leader +5 points
 - May upgrade one Marut to a Musician +5 points
 - May upgrade one Marut to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("GREAT CANNON", first: true)
-#profile(
-  (name: "Great Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
-)
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x75 (Great Cannon), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, great cannon")
-#field("OPTIONS", "")
-
+#unit("GREAT CANNON",
+  first: true,
+  profiles: (
+    (name: "Great Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x75 (Great Cannon), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, great cannon",
+  options: [
 - May take an additional Crew +5 points
-
-#entry("WAR ROCKET")
-#profile(
-  (name: "War Rocket", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x75 (War Rocket), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, rocket launcher")
-#field("OPTIONS", "")
 
+#unit("WAR ROCKET",
+  profiles: (
+    (name: "War Rocket", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x75 (War Rocket), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, rocket launcher",
+  options: [
 - May take an additional Crew +5 points
-
-#entry("TEMPLE CHARIOT")
-#profile(
-  (name: "Temple Chariot", m: 4, ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 200),
+  ],
 )
-#field("TROOP TYPE", "Shrine (Armour Save 5+)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "")
 
-- *Totem of the Devas:* A Temple Chariot has a Magical Ward (5+). For each friendly Temple Chariot on the battlefield at the start of your magic phase, add 1 dice to your power pool. In addition, any unit joined by a Temple Chariot gains the Unbreakable special rule.
-- *Unstoppable Force:* A Temple Chariot inflicts D6 Impact Hits at the start of each round of close combat.
-
-#field("NOTES", "")
-
+#unit("TEMPLE CHARIOT",
+  profiles: (
+    (name: "Temple Chariot", m: 4, ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 200),
+  ),
+  troop-type: "Shrine (Armour Save 5+)",
+  base-size: "50x100 or 60x100",
+  special-rules: (
+    rule("Totem of the Devas")[A Temple Chariot has a Magical Ward (5+). For each friendly Temple Chariot on the battlefield at the start of your magic phase, add 1 dice to your power pool. In addition, any unit joined by a Temple Chariot gains the Unbreakable special rule.],
+    rule("Unstoppable Force")[A Temple Chariot inflicts D6 Impact Hits at the start of each round of close combat.],
+  ),
+  notes: [
 - A Temple Chariot has a Line of Sight value of 5.
-
-#entry("VIMANA CHARIOT")
-#profile(
-  (name: "Vimana Chariot", m: "-", ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
-  (name: "Charioteer", m: "-", ws: 4, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 5+)")
-#field("CREW", "3 (Human)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Light lance, bow, light armour")
 
+#unit("VIMANA CHARIOT",
+  profiles: (
+    (name: "Vimana Chariot", m: "-", ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
+    (name: "Charioteer", m: "-", ws: 4, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 5+)",
+  crew: "3 (Human)",
+  base-size: "50x100 or 60x100",
+  equipment: "Light lance, bow, light armour",
+  equipment-body: [
 - *Giant Bow:* Instead of firing another missile weapon in the Shooting phase, one of the crew may fire the giant bow. Giant bows are bolt throwers with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "5", "Cumbersome, Multiple Wounds (D3)"))
-#field("SPECIAL RULES", "Fly (7), Karma")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Fly (7), Karma",
+  options: [
 - May take a giant bow +20 points
-
-#entry("YAKSHAS")
-#profile(
-  (name: "Yaksha", m: 6, ws: 4, bs: 2, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 50),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Deva)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Great weapon, light armour")
-#field("SPECIAL RULES", "Deva")
-#field("OPTIONS", "")
 
+#unit("YAKSHAS",
+  profiles: (
+    (name: "Yaksha", m: 6, ws: 4, bs: 2, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 50),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Deva)",
+  base-size: "40x40 or 50x50",
+  equipment: "Great weapon, light armour",
+  special-rules: "Deva",
+  options: [
 - May upgrade one Yaksha to a Leader +5 points
 - May upgrade one Yaksha to a Musician +5 points
 - May upgrade one Yaksha to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#compact-entry("MAKARA")[
-#profile(
-  (name: "Makara", m: 6, ws: 4, bs: 0, s: 6, t: 5, w: 5, i: 3, a: 5, ld: 7, points: 175),
+  ],
 )
-#field("TROOP TYPE", "Monster (Chimeric)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Aquatic, Multiple Wounds (D3), Natural Armour (4+)")
-]
 
-#compact-entry("YALI")[
-#profile(
-  (name: "Yali", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: 185),
+#unit("MAKARA",
+  compact: true,
+  profiles: (
+    (name: "Makara", m: 6, ws: 4, bs: 0, s: 6, t: 5, w: 5, i: 3, a: 5, ld: 7, points: 175),
+  ),
+  troop-type: "Monster (Chimeric)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Aquatic, Multiple Wounds (D3), Natural Armour (4+)",
 )
-#field("TROOP TYPE", "Monster (Chimeric)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Immunity (Psychology), Impact Hits (D6), Natural Armour (5+), Stubborn")
-]
 
-#entry("SHESHA")
-#profile(
-  (name: "Shesha", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 5, i: 4, a: 7, ld: 7, points: 210),
+#unit("YALI",
+  compact: true,
+  profiles: (
+    (name: "Yali", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: 185),
+  ),
+  troop-type: "Monster (Chimeric)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Immunity (Psychology), Impact Hits (D6), Natural Armour (5+), Stubborn",
 )
-#field("TROOP TYPE", "Monster (Ophidian)")
-#field("BASE SIZE", "50x100, 60x100, 100x100")
-#field("SPECIAL RULES", "Cold-Blooded, Natural Armour (4+), Poisoned Attacks")
 
+#unit("SHESHA",
+  profiles: (
+    (name: "Shesha", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 5, i: 4, a: 7, ld: 7, points: 210),
+  ),
+  troop-type: "Monster (Ophidian)",
+  base-size: "50x100, 60x100, 100x100",
+  special-rules: "Cold-Blooded, Natural Armour (4+), Poisoned Attacks",
+  special-rules-body: [
 - *Spit Poison:* Spit Poison has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "3", "Multiple Shots (5), Poisoned Attacks, Rapid Fire"))
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("DARAHMA", first: true)
-#namecost("God-Hero of Ind", "")
-#profile(
-  (name: "Darahma", m: 4, ws: 6, bs: 6, s: 5, t: 5, w: 3, i: 6, a: 4, ld: 9, points: 300),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Deva)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
-
+#unit("DARAHMA",
+  first: true,
+  subtitle: "God-Hero of Ind",
+  profiles: (
+    (name: "Darahma", m: 4, ws: 6, bs: 6, s: 5, t: 5, w: 3, i: 6, a: 4, ld: 9, points: 300),
+  ),
+  troop-type: "Infantry (Special Character, Deva)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic-items: [
 - *Kodandam:* Magic Weapon. Kodandam has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Flaming Attacks, Multiple Shots (4)"))
@@ -973,91 +1017,101 @@ If a Misfire is rolled, the War Elephant suffers D3 Wounds which Ignores Armour 
 Roll a D6 for each initial unsaved Wound caused. On a 5+, the target takes another D6 Strength 4 hits.
 
 - *The Brahmastra Arrow:* Enchanted Item. One use only. When fired, this arrow automatically Hits. Place the large template with the hole centred on the target model. Any model under the template takes a Strength 6 Hit with the Multiple Wounds (D3) rule.
-
-#field("SPECIAL RULES", "Deva")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Deva",
+  options: [
 - May be mounted on a Royal Chariot (replacing one of the crew) +70 points
-
-#entry("KARISHNA")
-#namecost("The Current Avatara", "")
-#profile(
-  (name: "Karishna", m: 4, ws: 7, bs: 6, s: 5, t: 5, w: 3, i: 7, a: 4, ld: 9, points: 290),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Deva)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Karishna is a Level 2 Wizard who uses spells from the Lore of Light.")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("MAGIC ITEMS", "")
 
+#unit("KARISHNA",
+  subtitle: "The Current Avatara",
+  profiles: (
+    (name: "Karishna", m: 4, ws: 7, bs: 6, s: 5, t: 5, w: 3, i: 7, a: 4, ld: 9, points: 290),
+  ),
+  troop-type: "Infantry (Special Character, Deva)",
+  base-size: "20x20 or 25x25",
+  magic: "Karishna is a Level 2 Wizard who uses spells from the Lore of Light.",
+  equipment: "Hand weapon, light armour",
+  magic-items: [
 - *Sudarshana Chakram*: Sudarshana Chakram has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/18\"", "3", "Armour Piercing (1), Quick Shot"))
 
 If the attack hits, place the 3" template over the target model. Roll a D6 and the Scatter dice to determine in which direction Sudarshana Chakram moves. Any model passed over by the template suffers a hit.
-
-#field("SPECIAL RULES", "Deva")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Deva",
+  options: [
 - May be mounted on a Royal Chariot (replacing one of the crew) +70 points
-
-#entry("URJANA")
-#namecost("Master of the Bow", "")
-#profile(
-  (name: "Urjana", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 160),
+  ],
+  order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules", "options"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
+#unit("URJANA",
+  subtitle: "Master of the Bow",
+  profiles: (
+    (name: "Urjana", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 160),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: [
 - *Gandvia:* Magic Weapon. Gandvia has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Flaming Attacks, Killing Blow"))
 
 - *Kaustubha:* Talisman. Any Close Combat attack targeted against the wearer will only ever hit him on the roll of a natural 6.
-
-#field("SPECIAL RULES", "Karma, Sniper")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Karma, Sniper",
+  options: [
 - May be mounted on a Royal Chariot (replacing one of the crew) +70 points
-
-#entry("PARASHURUMA")
-#namecost("The Holy Slayer", "")
-#profile(
-  (name: "Parashuruma", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 190),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Parashu of Shidra:* Magic Weapon. This weapon gives the wielder +2 Strength. In addition, they gain the Killing Blow special rule, which takes effect on a 5+ rather than a 6+.
-- *Pinaka:* Longbow. Shots fired from this bow automatically hit and ignore Dodge saves.
-
-#field("SPECIAL RULES", "Hatred, Immunity (Psychology), Karma, Regeneration (4+)")
-
-- *Head-taker:* Each time a model is slain by a Killing Blow, Parashuruma gains an additional +1 Combat Resolution bonus.
-
-#entry("MHOGLI")
-#namecost("The Beastmaster", "")
-#profile(
-  (name: "Mhogli", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 220),
-  (name: "Sher Khana", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: ""),
+#unit("PARASHURUMA",
+  subtitle: "The Holy Slayer",
+  profiles: (
+    (name: "Parashuruma", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 190),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Parashu of Shidra")[Magic Weapon. This weapon gives the wielder +2 Strength. In addition, they gain the Killing Blow special rule, which takes effect on a 5+ rather than a 6+.],
+    rule("Pinaka")[Longbow. Shots fired from this bow automatically hit and ignore Dodge saves.],
+  ),
+  special-rules: "Hatred, Immunity (Psychology), Karma, Regeneration (4+)",
+  special-rules-body: (
+    rule("Head-taker")[Each time a model is slain by a Killing Blow, Parashuruma gains an additional +1 Combat Resolution bonus.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Cavalry (Special Character, Human)")
-#field("BASE SIZE", "50x75")
-#field("MAGIC ITEMS", "")
 
-- *Beast's Bane:* Magic Weapon. Light lance. All attacks made by this weapon have the Armour Piercing (1) and Multiple Wounds (D6) special rules.
-- *Helmet of the Dark Beast:* Magic Armour. This helmet gives the wearer a 6+ armour save. Enemies must re- roll successful Panic, Fear and Terror tests caused by the wearer.
-
-#field("SPECIAL RULES", "Beastmaster (see Beastmasters), Karma, Independent, Terror")
+#unit("MHOGLI",
+  subtitle: "The Beastmaster",
+  profiles: (
+    (name: "Mhogli", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 220),
+    (name: "Sher Khana", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: ""),
+  ),
+  troop-type: "Monstrous Cavalry (Special Character, Human)",
+  base-size: "50x75",
+  magic-items: (
+    rule("Beast's Bane")[Magic Weapon. Light lance. All attacks made by this weapon have the Armour Piercing (1) and Multiple Wounds (D6) special rules.],
+    rule("Helmet of the Dark Beast")[Magic Armour. This helmet gives the wearer a 6+ armour save. Enemies must re- roll successful Panic, Fear and Terror tests caused by the wearer.],
+  ),
+  special-rules: "Beastmaster (see Beastmasters), Karma, Independent, Terror",
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Antti Sinivuori", "")
+#unit("Additional Material:",
+  subtitle: "Antti Sinivuori",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

@@ -344,17 +344,17 @@ Lifetaker ignores all To Hit modifiers.
 
 = CHARACTERS
 
-#entry("COMMANDERS", first: true)
-#profile(
-  (name: "Dreadlord", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 125),
-  (name: "Dreadmaster", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
-)
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
-
+#unit("COMMANDERS",
+  first: true,
+  profiles: (
+    (name: "Dreadlord", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 125),
+    (name: "Dreadmaster", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -379,21 +379,22 @@ Lifetaker ignores all To Hit modifiers.
 - One Dreadmaster may carry the Battle Standard +25 points
 - A Dreadmaster may take Magic Items up to a total of 50 points
 - A Dreadlord may take Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("SORCERESSES")
-#profile(
-  (name: "Supreme Sorceress", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
-  (name: "Sorceress", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Sorceress is a Level 1 Wizard. A Supreme Sorceress is a Level 3 Wizard. They use one of the following")
 
+#unit("SORCERESSES",
+  profiles: (
+    (name: "Supreme Sorceress", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
+    (name: "Sorceress", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Sorceress is a Level 1 Wizard. A Supreme Sorceress is a Level 3 Wizard. They use one of the following",
+  magic-body: [
 Lores of Magic:
 
 - Beasts
@@ -405,10 +406,9 @@ Lores of Magic:
 - Life
 - Metal
 - Shadow
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Hekarti's Blessing, Murderous Prowess")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Elven Grace, Hatred (High Elves), Hekarti's Blessing, Murderous Prowess",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take light armour +3 points
 - May be mounted on one of the following:
@@ -419,18 +419,19 @@ Lores of Magic:
   - Black Dragon (Supreme Sorceress only) +300 points
 - A Sorceress may take Magic Items up to a total of 50 points
 - A Supreme Sorceress may take Magic Items up to a total of 100 points
-
-#entry("HAGS OF KHAINE")
-#profile(
-  (name: "Hag Queen", m: 5, ws: 7, bs: 5, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 140),
-  (name: "Death Hag", m: 5, ws: 6, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks")
-#field("OPTIONS", "")
 
+#unit("HAGS OF KHAINE",
+  profiles: (
+    (name: "Hag Queen", m: 5, ws: 7, bs: 5, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 140),
+    (name: "Death Hag", m: 5, ws: 6, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Polearm +10 points
@@ -439,45 +440,46 @@ Lores of Magic:
 - One Death Hag may carry the Battle Standard +25 points
 - A Death Hag may take Magic Items and/or Gifts of Khaine up to a total of 50 points
 - A Hag Queen may take Magic Items and/or Gifts of Khaine up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("BLACK ARK FLEETMASTER")
-#profile(
-  (name: "Fleetmaster", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Ambushers, Elven Grace, Hatred (High Elves), Murderous Prowess")
 
-- *At Them, You Curs!:* If a Black Ark Fleetmaster joins a unit of Black Ark Corsairs, they may both re-roll failed To Hit rolls of 1 in close combat.
-- *Show no Weakness:* Each unsaved Wound caused by a Fleetmaster counts as two Wounds when calculating combat resolution. In addition, a Fleetmaster must always accept challenges. While fighting challenges, the Fleetmaster may re-roll all failed rolls To Hit.
-
-#field("OPTIONS", "")
-
+#unit("BLACK ARK FLEETMASTER",
+  profiles: (
+    (name: "Fleetmaster", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Ambushers, Elven Grace, Hatred (High Elves), Murderous Prowess",
+  special-rules-body: (
+    rule("At Them, You Curs!")[If a Black Ark Fleetmaster joins a unit of Black Ark Corsairs, they may both re-roll failed To Hit rolls of 1 in close combat.],
+    rule("Show no Weakness")[Each unsaved Wound caused by a Fleetmaster counts as two Wounds when calculating combat resolution. In addition, a Fleetmaster must always accept challenges. While fighting challenges, the Fleetmaster may re-roll all failed rolls To Hit.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Repeater handbow +5 points
 - May take light armour +3 points
 - May take a Sea Dragon Cloak +3 points
 - May take Magic Items up to a total of 50 points
-
-#entry("BEASTMASTER")
-#profile(
-  (name: "Beastmaster", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 45),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
 
-- *Beastslaver:* Unless they are mounted, a Beastmaster can join units of Monsters with the Mixed Unit special rule. A Monster that is joined by one or more Beastmasters, or a Monstrous Creature mounted by a Beastmaster, gains +D3 Attacks.
-
-#field("OPTIONS", "")
-
+#unit("BEASTMASTER",
+  profiles: (
+    (name: "Beastmaster", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 45),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  special-rules-body: (
+    rule("Beastslaver")[Unless they are mounted, a Beastmaster can join units of Monsters with the Mixed Unit special rule. A Monster that is joined by one or more Beastmasters, or a Monstrous Creature mounted by a Beastmaster, gains +D3 Attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Spear free
   - Additional hand weapon +5 points
@@ -488,268 +490,285 @@ Lores of Magic:
   - Scourgerunner Chariot (replacing one of the crew) +50 points
   - Manticore +150 points
 - May take Magic Items up to a total of 50 points
-
-#entry("DISCIPLE OF KHAINE")
-#profile(
-  (name: "Disciple of Khaine", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 9, points: 105),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Khainite, Magical Attacks, Magic Resistance (1), Murderous Prowess")
 
+#unit("DISCIPLE OF KHAINE",
+  profiles: (
+    (name: "Disciple of Khaine", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 9, points: 105),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Hatred (High Elves), Khainite, Magical Attacks, Magic Resistance (1), Murderous Prowess",
+  special-rules-body: [
 - *Orgy of Slaughter:* The model and any unit they join gain the Hatred special rule.
 - *Blood Rites:* A model with this special rule knows the three Blood Rites listed below. Unless fleeing, they may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and takes immediate effect. Each Blood Rite lasts until the start of your next turn. A friendly unit can only be under the effect of one Blood Rite at a time.
   - *Catechism of Murder:* Whenever a model in the unit causes an unsaved Wound close combat, they may immediately make an additional Attack (including supporting attacks). This additional Attack cannot generate further Attacks.
   - *Crimson Rejuvenation:* All models in the unit gain the Regeneration (6+) special rule.
   - *Sacrament of Blood:* All models in the unit gain the Swiftstride special rule.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional hand weapon +5 points
 - May choose one of the following:
   - Light armour +3 points
   - Medium armour +9 points
 - May take Magic Items and/or Gifts of Khaine up to a total of 50 points
-
-#entry("KHAINITE ASSASSIN")
-#profile(
-  (name: "Khainite Assassin", m: 5, ws: 9, bs: 9, s: 4, t: 3, w: 2, i: 10, a: 3, ld: 9, points: 105),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Dodge (5+), Hatred (High Elves), Hidden, Immunity (Psychology), Khainite, Murderous")
 
+#unit("KHAINITE ASSASSIN",
+  profiles: (
+    (name: "Khainite Assassin", m: 5, ws: 9, bs: 9, s: 4, t: 3, w: 2, i: 10, a: 3, ld: 9, points: 105),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Dodge (5+), Hatred (High Elves), Hidden, Immunity (Psychology), Khainite, Murderous",
+  special-rules-body: [
 *Prowess, Poisoned Attacks, Scouts*
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional hand weapon +5 points
 - May choose one of the following:
   - Repeater handbow +5 points
   - Throwing weapons +5 points
 - May take light armour +3 points
 - May take Magic Items and/or Gifts of Khaine up to a total of 50 points
-
-#entry("HIGH GLADIATRIX")
-#profile(
-  (name: "High Gladiatrix", m: 5, ws: 8, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 4, ld: 9, points: 145),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Hatred (High Elves), Immunity (Fear), Killing Blow, Murderous Prowess")
 
-- *Dance of Death:* Models with this special rule have the Dodge (5+) special rule in close combat and can re- roll failed Dodge saves. In addition, at the start of each round of close combat, each unit with this special rule chooses one enemy unit in base contact. That unit gains no Rank Bonus and cannot make Parry saves this turn.
-- *Paragon of Slaughter:* A High Gladiatrix and all Sisters of Slaughter in a unit that is joined by one or more High Gladiatrixes gain the Armour Piercing (1) special rule.
-- *The Trial of Blades:* Models with this rule receive +1 To Hit and To Wound if at least one enemy model in base contact with the unit has a Weapon Skill characteristic of 5+ and/or a Strength characteristic of 4+.
-
-#field("OPTIONS", "")
-
+#unit("HIGH GLADIATRIX",
+  profiles: (
+    (name: "High Gladiatrix", m: 5, ws: 8, bs: 5, s: 4, t: 3, w: 2, i: 7, a: 4, ld: 9, points: 145),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Hatred (High Elves), Immunity (Fear), Killing Blow, Murderous Prowess",
+  special-rules-body: (
+    rule("Dance of Death")[Models with this special rule have the Dodge (5+) special rule in close combat and can re- roll failed Dodge saves. In addition, at the start of each round of close combat, each unit with this special rule chooses one enemy unit in base contact. That unit gains no Rank Bonus and cannot make Parry saves this turn.],
+    rule("Paragon of Slaughter")[A High Gladiatrix and all Sisters of Slaughter in a unit that is joined by one or more High Gladiatrixes gain the Armour Piercing (1) special rule.],
+    rule("The Trial of Blades")[Models with this rule receive +1 To Hit and To Wound if at least one enemy model in base contact with the unit has a Weapon Skill characteristic of 5+ and/or a Strength characteristic of 4+.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Buckler +5 points
   - Polearm +10 points
 - May take light armour +3 points
 - May take Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A High Gladiatrix may never be the Army General.
-
-#entry("MELUSAI IRONSCALE")
-#profile(
-  (name: "Melusai Ironscale", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 180),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dark Elf)")
-#field("BASE SIZE", "30x30 or 40x40")
-#field("EQUIPMENT", "Keldrisaíth")
 
+#unit("MELUSAI IRONSCALE",
+  profiles: (
+    (name: "Melusai Ironscale", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 180),
+  ),
+  troop-type: "Infantry (Character, Dark Elf)",
+  base-size: "30x30 or 40x40",
+  equipment: "Keldrisaíth",
+  equipment-body: [
 - *Keldrisaíth:* Polearm. A Keldrisaíth gives the wielder the Killing Blow and Magical Attacks special rules. A Keldrisaíth can also fire in the shooting phase using the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "4", "Killing Blow, Magical Attacks, Multiple Shots (2), Quick Shot"))
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Khainite, Magic Resistance (1), Murderous Prowess, Natural Armour (6+), Swiftstride, Vanguard")
-
-- *Gory Offering:* If any enemy models are slain by a Melusai Ironscale in close combat, any Melusai in the same unit as her gain the Frenzy special rule for the remainder of the close combat phase.
-- *Wrath of the Melusai:* Any unit of Melusai joined by a Melusai Ironscale can re-roll failed charge and pursue distances.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Elven Grace, Hatred (High Elves), Khainite, Magic Resistance (1), Murderous Prowess, Natural Armour (6+), Swiftstride, Vanguard",
+  special-rules-body: (
+    rule("Gory Offering")[If any enemy models are slain by a Melusai Ironscale in close combat, any Melusai in the same unit as her gain the Frenzy special rule for the remainder of the close combat phase.],
+    rule("Wrath of the Melusai")[Any unit of Melusai joined by a Melusai Ironscale can re-roll failed charge and pursue distances.],
+  ),
+  options: [
 - May choose one of the following:
   - Light armour +3 points
   - Medium armour +9 points
 - May take Magic Items and/or Gifts of Khaine up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Melusai Ironscale may never be the Army General.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#entry("DARK STEED", first: true)
-#profile(
-  (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
-
+#unit("DARK STEED",
+  first: true,
+  profiles: (
+    (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take barding +5 points
-
-#entry("COLD ONE")
-#profile(
-  (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Saurian)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fear, Natural Armour (6+), Stupidity")
-#field("OPTIONS", "")
 
+#unit("COLD ONE",
+  profiles: (
+    (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Saurian)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fear, Natural Armour (6+), Stupidity",
+  options: [
 - May take barding +5 points
-
-#entry("DARK PEGASUS")
-#profile(
-  (name: "Dark Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fly (9)")
 
-- *Impale:* A Dark Pegasus gains the Mighty Blow (1) special rule in any turn that it charges.
-
-#entry("MANTICORE")
-#profile(
-  (name: "Manticore", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 5, points: "-"),
+#unit("DARK PEGASUS",
+  profiles: (
+    (name: "Dark Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fly (9)",
+  special-rules-body: (
+    rule("Impale")[A Dark Pegasus gains the Mighty Blow (1) special rule in any turn that it charges.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (8), Frenzy, Killing Blow")
-#field("UPGRADES", "")
 
-- *Bloodrage:* The Manticore gains the Hatred special rule.
-- *Iron-hard Skin:* The Manticore gains the Natural Armour (5+) special rule.
-- *Rending Fangs:* The Manticore gains the Armour Piercing (1) special rule.
-- *Venom Tail:* The Manticore gains an additional Attack that has the Poisoned Attacks special rule.
-
-#field("OPTIONS", "")
-
+#unit("MANTICORE",
+  profiles: (
+    (name: "Manticore", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fly (8), Frenzy, Killing Blow",
+  upgrades: (
+    rule("Bloodrage")[The Manticore gains the Hatred special rule.],
+    rule("Iron-hard Skin")[The Manticore gains the Natural Armour (5+) special rule.],
+    rule("Rending Fangs")[The Manticore gains the Armour Piercing (1) special rule.],
+    rule("Venom Tail")[The Manticore gains an additional Attack that has the Poisoned Attacks special rule.],
+  ),
+  options: [
 - May take Rending Fangs +5 points
 - May take Bloodrage +15 points
 - May take Iron-hard Skin +15 points
 - May take Venom Tail +15 points
-
-#entry("BLACK DRAGON")
-#profile(
-  (name: "Black Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (7), Natural Armour (3+).")
 
-- *Noxious Breath:* A Black Dragon has a Strength 3 Breath Weapon. All models in a unit that has suffered one or more casualties from the attack suffer a \-1 penalty to their Weapon Skill and Ballistic Skill until the end of the following turn.
+#unit("BLACK DRAGON",
+  profiles: (
+    (name: "Black Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: "-"),
+  ),
+  troop-type: "Monster (Draconid)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fly (7), Natural Armour (3+).",
+  special-rules-body: (
+    rule("Noxious Breath")[A Black Dragon has a Strength 3 Breath Weapon. All models in a unit that has suffered one or more casualties from the attack suffer a \-1 penalty to their Weapon Skill and Ballistic Skill until the end of the following turn.],
+  ),
+)
 
 = CORE UNITS
 
-#entry("DREADSPEARS", first: true)
-#profile(
-  (name: "Dreadspear", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 10),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
-
+#unit("DREADSPEARS",
+  first: true,
+  profiles: (
+    (name: "Dreadspear", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 10),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, medium armour, shield",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May upgrade one Dreadspear to a Leader +5 points
 - May upgrade one Dreadspear to a Musician +5 points
 - May upgrade one Dreadspear to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("BLEAKSWORDS")
-#profile(
-  (name: "Bleaksword", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
 
+#unit("BLEAKSWORDS",
+  profiles: (
+    (name: "Bleaksword", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour, shield",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May upgrade one Bleaksword to a Leader +5 points
 - May upgrade one Bleaksword to a Musician +5 points
 - May upgrade one Bleaksword to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("DARKSHARDS")
-#profile(
-  (name: "Darkshard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 13),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Deathrain crossbow, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
 
+#unit("DARKSHARDS",
+  profiles: (
+    (name: "Darkshard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 13),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Deathrain crossbow, medium armour",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May upgrade one Darkshard to a Leader +5 points
 - May upgrade one Darkshard to a Musician +5 points
 - May upgrade one Darkshard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("BLACK ARK CORSAIRS")
-#profile(
-  (name: "Corsair", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, light armour, Sea Dragon Cloak")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess, Skirmishers")
 
-- *Slavers:* Whenever a unit containing at least 5 models with this special rule breaks an enemy unit in close combat and pursues them, the fleeing unit must re-roll the highest result on their flee roll.
-
-#field("OPTIONS", "")
-
+#unit("BLACK ARK CORSAIRS",
+  profiles: (
+    (name: "Corsair", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, light armour, Sea Dragon Cloak",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess, Skirmishers",
+  special-rules-body: (
+    rule("Slavers")[Whenever a unit containing at least 5 models with this special rule breaks an enemy unit in close combat and pursues them, the fleeing unit must re-roll the highest result on their flee roll.],
+  ),
+  options: [
 - May replace one hand weapon with repeater handbows +1 point/model
 - May be upgraded to Ambushers +1 point/model
 - May upgrade one Corsair to a Leader +5 points
 - May upgrade one Corsair to a Musician +5 points
 - May upgrade one Corsair to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("WITCH ELVES")
-#profile(
-  (name: "Witch Elf", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 10),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks")
-#field("OPTIONS", "")
 
+#unit("WITCH ELVES",
+  profiles: (
+    (name: "Witch Elf", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 10),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  special-rules: "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks",
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Witch Elf to a Leader +5 points
 - May upgrade one Witch Elf to a Musician +5 points
 - May upgrade one Witch Elf to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("DARK RIDERS")
-#profile(
-  (name: "Dark Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
-  (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Dark Elf)")
-#field("MOUNT", "Dark Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light lance, light armour")
-#field("SPECIAL RULES", "Elven Grace, Fast Cavalry, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
 
+#unit("DARK RIDERS",
+  profiles: (
+    (name: "Dark Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
+    (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Dark Elf)",
+  mount: "Dark Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light lance, light armour",
+  special-rules: "Elven Grace, Fast Cavalry, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May take Deathrain crossbows +3 points/model
 - May take shields +1 point/model
 - May take barding free
@@ -757,220 +776,235 @@ Lores of Magic:
 - May upgrade one Dark Rider to a Musician +5 points
 - May upgrade one Dark Rider to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("SLAVES")
-#profile(
-  (name: "Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 4, points: 2),
-  (name: "Slavemaster", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("HANDLER", "Slavemaster (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapons")
-#field("SPECIAL RULES", "Elven Grace (Slave Master only), Expendable, Hatred (High Elves) (Slave Master only), Mixed Unit, Murderous Prowess (Slave Master only), Vanguard")
 
-- *Slavemaster:* Each unit of Slaves must take a leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits for each Slavemaster in the unit.
-
-#field("NOTES", "")
-
+#unit("SLAVES",
+  profiles: (
+    (name: "Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 4, points: 2),
+    (name: "Slavemaster", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Human)",
+  handler: "Slavemaster (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapons",
+  special-rules: "Elven Grace (Slave Master only), Expendable, Hatred (High Elves) (Slave Master only), Mixed Unit, Murderous Prowess (Slave Master only), Vanguard",
+  special-rules-body: (
+    rule("Slavemaster")[Each unit of Slaves must take a leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits for each Slavemaster in the unit.],
+  ),
+  notes: [
 - You must include one Slave Master for every 20 Slaves in the unit.
-
-#entry("HARPIES")
-#profile(
-  (name: "Harpy", m: 5, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 6, points: 11),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Harpy)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("SPECIAL RULES", "Expendable, Independent, Fly (10)")
-#field("OPTIONS", "")
 
+#unit("HARPIES",
+  profiles: (
+    (name: "Harpy", m: 5, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 6, points: 11),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Harpy)",
+  base-size: "20x20 or 25x25",
+  special-rules: "Expendable, Independent, Fly (10)",
+  options: [
 - May upgrade one Harpy to a Leader +5 points
+  ],
+)
 
 = SPECIAL UNITS
 
-#entry("HAR GANETH EXECUTIONERS", first: true)
-#profile(
-  (name: "Executioner", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, heavy armour")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Killing Blow, Khainite, Murderous Prowess")
-#field("OPTIONS", "")
-
+#unit("HAR GANETH EXECUTIONERS",
+  first: true,
+  profiles: (
+    (name: "Executioner", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, heavy armour",
+  special-rules: "Elven Grace, Hatred (High Elves), Killing Blow, Khainite, Murderous Prowess",
+  options: [
 - May upgrade one Executioner to a Leader +5 points
 - May upgrade one Executioner to a Musician +5 points
 - May upgrade one Executioner to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("BLOOD HAGS")
-#profile(
-  (name: "Blood Hag", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 15),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, throwing weapons, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks")
-#field("OPTIONS", "")
 
+#unit("BLOOD HAGS",
+  profiles: (
+    (name: "Blood Hag", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 15),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, throwing weapons, medium armour",
+  special-rules: "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks",
+  options: [
 - May upgrade one Blood Hag to a Leader +5 points
 - May upgrade one Blood Hag to a Musician +5 points
 - May upgrade one Blood Hag to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("SISTERS OF SLAUGHTER")
-#profile(
-  (name: "Sister of Slaughter", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 15),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Hatred (High Elves), Immunity (Fear), Murderous Prowess")
 
-- *Dance of Death:* Models with this special rule have the Dodge (5+) special rule in close combat and can re- roll failed Dodge saves. In addition, at the start of each round of close combat, each unit with this special rule chooses one enemy unit in base contact. That unit gains no Rank Bonus and cannot make Parry saves this turn.
-- *The Trial of Blades:* Models with this rule receive +1 To Hit and To Wound if at least one enemy model in base contact with the unit has a Weapon Skill characteristic of 5+ and/or a Strength characteristic of 4+.
-
-#field("OPTIONS", "")
-
+#unit("SISTERS OF SLAUGHTER",
+  profiles: (
+    (name: "Sister of Slaughter", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 15),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Hatred (High Elves), Immunity (Fear), Murderous Prowess",
+  special-rules-body: (
+    rule("Dance of Death")[Models with this special rule have the Dodge (5+) special rule in close combat and can re- roll failed Dodge saves. In addition, at the start of each round of close combat, each unit with this special rule chooses one enemy unit in base contact. That unit gains no Rank Bonus and cannot make Parry saves this turn.],
+    rule("The Trial of Blades")[Models with this rule receive +1 To Hit and To Wound if at least one enemy model in base contact with the unit has a Weapon Skill characteristic of 5+ and/or a Strength characteristic of 4+.],
+  ),
+  options: [
 - May be upgraded to Skirmishers +1 point/model
 - May upgrade one Sister of Slaughter to a Leader +5 points
 - May upgrade one Sister of Slaughter to a Musician +5 points
 - May upgrade one Sister of Slaughter to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("SHADES")
-#profile(
-  (name: "Shade", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Deathrain crossbow")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Independent, Murderous Prowess, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("SHADES",
+  profiles: (
+    (name: "Shade", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Deathrain crossbow",
+  special-rules: "Elven Grace, Hatred (High Elves), Independent, Murderous Prowess, Scouts, Skirmishers",
+  options: [
 - May take additional hand weapons +1 point/model
 - May take light armour +0.5 point/model
 - May upgrade one Shade to a Leader +5 points
-
-#entry("COLD ONE KNIGHTS")
-#profile(
-  (name: "Cold One Knight", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 6, a: 1, ld: 9, points: 32),
-  (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Dark Elf)")
-#field("MOUNT", "Cold One (Saurian)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Fear, Hatred (High Elves), Murderous Prowess, Natural Armour (6+), Stupidity")
-#field("OPTIONS", "")
 
+#unit("COLD ONE KNIGHTS",
+  profiles: (
+    (name: "Cold One Knight", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 6, a: 1, ld: 9, points: 32),
+    (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Dark Elf)",
+  mount: "Cold One (Saurian)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield",
+  special-rules: "Elven Grace, Fear, Hatred (High Elves), Murderous Prowess, Natural Armour (6+), Stupidity",
+  options: [
 - May upgrade one Cold One Knight to a Leader +5 points
 - May upgrade one Cold One Knight to a Musician +5 points
 - May upgrade one Cold One Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("COLD ONE CHARIOT")
-#profile(
-  (name: "Cold One Chariot", m: 6, ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
-  (name: "Charioteer", m: "-", ws: 5, bs: 4, s: 4, t: "-", w: "-", i: 6, a: 1, ld: 9, points: ""),
-  (name: "Cold One", m: "-", ws: 3, bs: 0, s: 4, t: "-", w: "-", i: 2, a: 2, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 Charioteers (Dark Elf)")
-#field("DRAWN BY", "2 Cold Ones (Saurian)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Light lance, Deathrain crossbow, heavy armour, scythes")
-#field("SPECIAL RULES", "Elven Grace, Fear, Hatred (High Elves), Murderous Prowess, Natural Armour (6+), Stupidity")
-#field("OPTIONS", "")
 
+#unit("COLD ONE CHARIOT",
+  profiles: (
+    (name: "Cold One Chariot", m: 6, ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
+    (name: "Charioteer", m: "-", ws: 5, bs: 4, s: 4, t: "-", w: "-", i: 6, a: 1, ld: 9, points: ""),
+    (name: "Cold One", m: "-", ws: 3, bs: 0, s: 4, t: "-", w: "-", i: 2, a: 2, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 Charioteers (Dark Elf)",
+  drawn-by: "2 Cold Ones (Saurian)",
+  base-size: "50x100",
+  equipment: "Light lance, Deathrain crossbow, heavy armour, scythes",
+  special-rules: "Elven Grace, Fear, Hatred (High Elves), Murderous Prowess, Natural Armour (6+), Stupidity",
+  options: [
 - May be upgraded to a standard bearer +10 points
-
-#entry("SCOURGERUNNER CHARIOT")
-#profile(
-  (name: "Scourgerunner Chariot", m: 8, ws: "-", bs: "-", s: 4, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
-  (name: "Beastmaster Crew", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
-  (name: "Dark Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 Beastmaster Crew (Dark Elf)")
-#field("DRAWN BY", "2 Dark Steeds (Equine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Light lance, Deathrain crossbow, Ravager Harpoon, Sea Dragon Cloak")
 
+#unit("SCOURGERUNNER CHARIOT",
+  profiles: (
+    (name: "Scourgerunner Chariot", m: 8, ws: "-", bs: "-", s: 4, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
+    (name: "Beastmaster Crew", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
+    (name: "Dark Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 Beastmaster Crew (Dark Elf)",
+  drawn-by: "2 Dark Steeds (Equine)",
+  base-size: "50x100",
+  equipment: "Light lance, Deathrain crossbow, Ravager Harpoon, Sea Dragon Cloak",
+  equipment-body: [
 - *Ravager Harpoon:* A Ravager Harpoon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Armour Piercing (1), Multiple Wounds (D3)"))
 
 If a Monstrous Creature or Monster is Hit by this weapon but survives, it must immediately turn and move D6" towards the Scourgerunner Chariot, stopping within 1" of other units or impassable terrain. In its following turn, the target may choose to either suffer 1 Wound with no saves allowed or be forced to keep moving D6" towards the Scourgerunner Chariot instead of moving normally.
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-
-#entry("REAPER BOLT THROWER")
-#profile(
-  (name: "Reaper Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 60),
-  (name: "Crew", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ],
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "2 (Dark Elf)")
-#field("BASE SIZE", "50x50 (Reaper Bolt Thrower), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, repeater bolt thrower, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Murderous Prowess")
-#field("OPTIONS", "")
 
+#unit("REAPER BOLT THROWER",
+  profiles: (
+    (name: "Reaper Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 60),
+    (name: "Crew", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "2 (Dark Elf)",
+  base-size: "50x50 (Reaper Bolt Thrower), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, repeater bolt thrower, medium armour",
+  special-rules: "Elven Grace, Hatred (High Elves), Murderous Prowess",
+  options: [
 - May take an additional Crew 10 points
-
-#entry("MELUSAI")
-#profile(
-  (name: "Melusai", m: 6, ws: 5, bs: 5, s: 3, t: 4, w: 2, i: 5, a: 2, ld: 8, points: 26),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "30x30 or 40x40")
-#field("EQUIPMENT", "Heartshard Glaive, light armour")
 
-- *Heartshard Glaive:* Polearm. All attacks made with this weapon have the Magical Attacks and Killing Blow special rules.
-- *Heartseeker Bows:* Longbow. All attacks made with this weapon have the Magical Attacks and Killing Blow special rules.
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Khainite, Murderous Prowess, Natural Armour (6+), Swiftstride, Vanguard")
-#field("OPTIONS", "")
-
+#unit("MELUSAI",
+  profiles: (
+    (name: "Melusai", m: 6, ws: 5, bs: 5, s: 3, t: 4, w: 2, i: 5, a: 2, ld: 8, points: 26),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "30x30 or 40x40",
+  equipment: "Heartshard Glaive, light armour",
+  equipment-body: (
+    rule("Heartshard Glaive")[Polearm. All attacks made with this weapon have the Magical Attacks and Killing Blow special rules.],
+    rule("Heartseeker Bows")[Longbow. All attacks made with this weapon have the Magical Attacks and Killing Blow special rules.],
+  ),
+  special-rules: "Elven Grace, Hatred (High Elves), Khainite, Murderous Prowess, Natural Armour (6+), Swiftstride, Vanguard",
+  options: [
 - May take medium armour +2 points/model
 - May replace Heartshard Glaives with Heartseeker Bows free
 - May upgrade one Melusai to a Leader +5 points
-
-#entry("KHINERAI")
-#profile(
-  (name: "Khinerai", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 15),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon, light armour, shield")
-#field("SPECIAL RULES", "Ambushers, Elven Grace, Fly (10), Hatred (High Elves), Khainite, Murderous Prowess")
 
-- *Fight and Flight:* In any close combat phase in which a unit with this special rule does not break or break their enemy, it may choose to disengage from combat instead of doing a combat reform (if the unit lost the combat they must pass a Leadership test just like when attempting to Reform from Defeat). If the unit manages to disengage from combat, the unit will make a Flee move as if it had broken from combat. This Flee move follows the rules for Feigned Flight. After finishing its move, the unit rallies automatically. The enemy unit is not allowed to Pursue, but may make a Combat Reform as normal.
-
-#field("OPTIONS", "")
-
+#unit("KHINERAI",
+  profiles: (
+    (name: "Khinerai", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 15),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon, light armour, shield",
+  special-rules: "Ambushers, Elven Grace, Fly (10), Hatred (High Elves), Khainite, Murderous Prowess",
+  special-rules-body: (
+    rule("Fight and Flight")[In any close combat phase in which a unit with this special rule does not break or break their enemy, it may choose to disengage from combat instead of doing a combat reform (if the unit lost the combat they must pass a Leadership test just like when attempting to Reform from Defeat). If the unit manages to disengage from combat, the unit will make a Flee move as if it had broken from combat. This Flee move follows the rules for Feigned Flight. After finishing its move, the unit rallies automatically. The enemy unit is not allowed to Pursue, but may make a Combat Reform as normal.],
+  ),
+  options: [
 - May take javelins +2 points/model
 - May upgrade one Khinerai to a Leader +5 points
-
-#entry("BLOODWRACK MEDUSA")
-#profile(
-  (name: "Bloodwrack Medusa", m: 6, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 7, points: 55),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Beast (Dark Elf)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Polearm")
-#field("SPECIAL RULES", "Elven Grace, Frenzy, Hatred (High Elves), Independent, Murderous Prowess, Natural")
 
+#unit("BLOODWRACK MEDUSA",
+  profiles: (
+    (name: "Bloodwrack Medusa", m: 6, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 7, points: 55),
+  ),
+  troop-type: "Monstrous Beast (Dark Elf)",
+  base-size: "40x40",
+  equipment: "Polearm",
+  special-rules: "Elven Grace, Frenzy, Hatred (High Elves), Independent, Murderous Prowess, Natural",
+  special-rules-body: [
 *Armour (6+)*
 
 - *Avert Your Gaze:* At the start of each Close Combat phase, before challenges are issued, enemy models in base contact with this model suffer a Strength 4 hit with the Ignores Armour Saves, Magical Attacks and Killing Blow special rules. When rolling To Wound, substitute the target's Toughness with its Initiative value.
@@ -979,80 +1013,87 @@ If a Monstrous Creature or Monster is Hit by this weapon but survives, it must i
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Ignores Armour saves, Killing Blow, Magical Attacks, Multiple Shots (5), Quick Shot"))
 
 When rolling To Wound, substitute the target's Toughness with its Initiative value. This attack does not suffer any To Hit penalties.
+  ],
+)
 
 = RARE UNITS
 
-#entry("BLACK GUARD OF NAGGAROND", first: true)
-#profile(
-  (name: "Black Guard", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 18),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, heavy armour")
-#field("SPECIAL RULES", "Elven Grace, Eternal Hatred, Immunity (Psychology), Murderous Prowess, Stubborn")
-#field("OPTIONS", "")
-
+#unit("BLACK GUARD OF NAGGAROND",
+  first: true,
+  profiles: (
+    (name: "Black Guard", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 18),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, heavy armour",
+  special-rules: "Elven Grace, Eternal Hatred, Immunity (Psychology), Murderous Prowess, Stubborn",
+  options: [
 - May upgrade one Black Guard to a Leader +5 points
 - May upgrade one Black Guard to a Musician +5 points
 - May upgrade one Black Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 75 points
-
-#entry("SHADOWSTALKERS")
-#profile(
-  (name: "Shadowstalker", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 16),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Khainite, Murderous Prowess, Poisoned Attacks, Scouts, Skirmishers")
 
-- *Harness Shadow:* Missile attacks targeting a unit containing one or more models with this special rule suffer \-1 To Hit.
-- *Shadowleap:* Instead of moving normally in the Remaining Moves sub-phase, this unit may make a Fly (6) move.
-
-#field("OPTIONS", "")
-
+#unit("SHADOWSTALKERS",
+  profiles: (
+    (name: "Shadowstalker", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 16),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  special-rules: "Elven Grace, Hatred (High Elves), Khainite, Murderous Prowess, Poisoned Attacks, Scouts, Skirmishers",
+  special-rules-body: (
+    rule("Harness Shadow")[Missile attacks targeting a unit containing one or more models with this special rule suffer \-1 To Hit.],
+    rule("Shadowleap")[Instead of moving normally in the Remaining Moves sub-phase, this unit may make a Fly (6) move.],
+  ),
+  options: [
 - May replace throwing weapons with repeater handbows +2 points/model
 - May upgrade one Shadowstalker to a Leader +5 points
-
-#entry("DOOMFIRE WARLOCKS")
-#profile(
-  (name: "Doomfire Warlock", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
-  (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Dark Elf)")
-#field("MOUNT", "Dark Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A unit of Doomfire Warlocks is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:")
 
+#unit("DOOMFIRE WARLOCKS",
+  profiles: (
+    (name: "Doomfire Warlock", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
+    (name: "Dark Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Dark Elf)",
+  mount: "Dark Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon",
+  magic: "A unit of Doomfire Warlocks is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:",
+  magic-body: [
 - Dark
 - Death
 - Shadow
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take barding free
 - May upgrade one Doomfire Warlock to a Leader +5 points
-
-#field("SPECIAL RULES", "Elven Grace, Fast Cavalry, Hatred (High Elves), Hekarti's Blessing, Magical Ward (4+), Murderous Prowess, Poisoned Attacks")
-
-- *Cursed Coven:* The unit receives an additional +1 casting bonus for every 5 five models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Doomfire Warlock as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Doomfire Warlock unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.
-
-#entry("CAULDRON OF BLOOD")
-#profile(
-  (name: "Cauldron of Blood", m: 5, ws: "-", bs: "-", s: 5, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 165),
-  (name: "Keeper of the Cauldron", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 6, a: 2, ld: 8, points: ""),
-  (name: "Guardian", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 6, a: 1, ld: 8, points: ""),
+  ],
+  special-rules: "Elven Grace, Fast Cavalry, Hatred (High Elves), Hekarti's Blessing, Magical Ward (4+), Murderous Prowess, Poisoned Attacks",
+  special-rules-body: (
+    rule("Cursed Coven")[The unit receives an additional +1 casting bonus for every 5 five models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Doomfire Warlock as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Doomfire Warlock unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.],
+  ),
+  order: ("unit-size", "troop-type", "mount", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Shrine (Armour Save 6+)")
-#field("CREW", "1 Keeper of the Cauldron and 2 Guardians (Dark Elf)")
-#field("BASE SIZE", "60x100")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Frenzy, Impact Hits (D3), Khainite, Murderous")
 
+#unit("CAULDRON OF BLOOD",
+  profiles: (
+    (name: "Cauldron of Blood", m: 5, ws: "-", bs: "-", s: 5, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 165),
+    (name: "Keeper of the Cauldron", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 6, a: 2, ld: 8, points: ""),
+    (name: "Guardian", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 6, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "Shrine (Armour Save 6+)",
+  crew: "1 Keeper of the Cauldron and 2 Guardians (Dark Elf)",
+  base-size: "60x100",
+  equipment: "Two hand weapons",
+  special-rules: "Elven Grace, Hatred (High Elves), Frenzy, Impact Hits (D3), Khainite, Murderous",
+  special-rules-body: [
 *Prowess, Poisoned Attacks, Terror*
 
 - *Altar of Khaine:* The Cauldron of Blood has the Magical Ward (6+) special rule. In addition, any unit joined by it gains the Stubborn special rule.
@@ -1060,23 +1101,24 @@ When rolling To Wound, substitute the target's Toughness with its Initiative val
   - *Bloodshield of Khaine:* All affected units gain the Magical Ward (6+) special rule.
   - *Fury of Khaine:* All affected units gain the Frenzy special rule.
   - *Strength of Khaine:* All affected units re-roll failed To Wound rolls in close combat.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Cauldron of Blood has a Line of Sight value of 5.
-
-#entry("BLOODWRACK SHRINE")
-#profile(
-  (name: "Bloodwrack Shrine", m: 5, ws: "-", bs: "-", s: 5, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 135),
-  (name: "Shrinekeeper", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
-  (name: "Bloodwrack Medusa", m: "-", ws: 5, bs: 5, s: 4, t: "-", w: "-", i: 5, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Shrine (Armour Save 6+)")
-#field("CREW", "1 Bloodwrack Medusa and 2 Shrinekeepers (Dark Elf)")
-#field("BASE SIZE", "60x100")
-#field("EQUIPMENT", "Polearm")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Impact Hits (D3), Murderous Prowess, Natural Armour")
 
+#unit("BLOODWRACK SHRINE",
+  profiles: (
+    (name: "Bloodwrack Shrine", m: 5, ws: "-", bs: "-", s: 5, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 135),
+    (name: "Shrinekeeper", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
+    (name: "Bloodwrack Medusa", m: "-", ws: 5, bs: 5, s: 4, t: "-", w: "-", i: 5, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Shrine (Armour Save 6+)",
+  crew: "1 Bloodwrack Medusa and 2 Shrinekeepers (Dark Elf)",
+  base-size: "60x100",
+  equipment: "Polearm",
+  special-rules: "Elven Grace, Hatred (High Elves), Impact Hits (D3), Murderous Prowess, Natural Armour",
+  special-rules-body: [
 *(6+), Terror*
 
 - *Aura of Agony:* Enemy units within 6" suffer a \-1 penalty to their Weapon Skill, Initiative and Leadership (to a minimum of 1).
@@ -1086,28 +1128,28 @@ When rolling To Wound, substitute the target's Toughness with its Initiative val
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Ignores Armour Saves, Killing Blow, Magical Attacks, Multiple Shots (5), Quick Shot"))
 
 When rolling To Wound, substitute the target's Toughness with its Initiative value. This attack does not suffer any To Hit penalties.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Bloodwrack Shrine has a Line of Sight value of 5.
-
-#entry("WAR HYDRA")
-#profile(
-  (name: "War Hydra", m: 6, ws: 4, bs: 4, s: 5, t: 5, w: 5, i: 2, a: 8, ld: 6, points: 200),
-  (name: "Beastmaster Apprentice", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Hydra)")
-#field("HANDLERS", "2 Beastmaster Apprentices (Dark Elf)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Two hand weapons (Beastmaster Apprentices only)")
-#field("SPECIAL RULES", "Elven Grace (Beastmaster Apprentice only), Hatred (High Elves) (Beastmaster Apprentice")
 
+#unit("WAR HYDRA",
+  profiles: (
+    (name: "War Hydra", m: 6, ws: 4, bs: 4, s: 5, t: 5, w: 5, i: 2, a: 8, ld: 6, points: 200),
+    (name: "Beastmaster Apprentice", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "Monster (Hydra)",
+  handlers: "2 Beastmaster Apprentices (Dark Elf)",
+  base-size: "50x100",
+  equipment: "Two hand weapons (Beastmaster Apprentices only)",
+  special-rules: "Elven Grace (Beastmaster Apprentice only), Hatred (High Elves) (Beastmaster Apprentice",
+  special-rules-body: [
 only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*, Natural Armour (4+), Regeneration (4+)*
 
 - *Loss of Heads:* For each unsaved Wound the War Hydra has lost during the battle, it loses one Attack.
-
-#field("UPGRADES", "")
-
+  ],
+  upgrades: [
 - *Acid Breath:* The model gains a Strength 2 Breath Weapon with the Ignores Armour Saves special rule.
 - *Armour Plates:* The model gains the Natural Armour (6+) special rule.
 - *Battle Lover:* The model gains the Vanguard special rule.
@@ -1120,9 +1162,8 @@ only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*, Natural A
 #minitable(("Range", "Strength", "Special Rules"), ("8/12\"", "*", "Flaming Attacks, Multiple Shots (*), Quick Shot, Rapid Fire"))
 
 \*The Strength and Multiple Shots value of this attack is equal to the War Hydra's remaining number of Wounds.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May choose one of the following:
   - Spit Fire +10 points
   - Fiery Breath +20 points
@@ -1133,268 +1174,285 @@ only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*, Natural A
   - Battle Lover +10 points
   - Chameleon Skin +10 points
   - Armour Plates +15 points
-
-#entry("KHARIBDYSS")
-#profile(
-  (name: "Kharibdyss", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 4, a: 5, ld: 6, points: 210),
-  (name: "Beastmaster Apprentice", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Sea Creature)")
-#field("HANDLERS", "2 Beastmaster Apprentices (Dark Elf)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Two hand weapons (Beastmaster Apprentices only)")
-#field("SPECIAL RULES", "Aquatic, Elven Grace (Beastmaster Apprentice only), Hatred (High Elves) (Beastmaster")
 
+#unit("KHARIBDYSS",
+  profiles: (
+    (name: "Kharibdyss", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 4, a: 5, ld: 6, points: 210),
+    (name: "Beastmaster Apprentice", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "Monster (Sea Creature)",
+  handlers: "2 Beastmaster Apprentices (Dark Elf)",
+  base-size: "50x100",
+  equipment: "Two hand weapons (Beastmaster Apprentices only)",
+  special-rules: "Aquatic, Elven Grace (Beastmaster Apprentice only), Hatred (High Elves) (Beastmaster",
+  special-rules-body: [
 Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*, Multiple Wounds (D3), Natural Armour (4+), Poisoned Attacks*
 
 - *Abyssal Howl:* Enemy units that are in base contact with a Kharibdyss must re-roll successful Leadership tests. This has no effect on models that have Immunity (Fear/Terror/Psychology).
 - *Feast of Bones:* Roll a D6 for each unsaved Wound caused by this model with its normal Attacks. On the roll of a 6+, the Kharibdyss immediately regains 1 Wound lost previously during the game.
-
-#entry("AVATAR OF KHAINE")
-#profile(
-  (name: "Avatar of Khaine", m: 6, ws: 6, bs: 0, s: 6, t: 7, w: 5, i: 3, a: 5, ld: 10, points: 265),
+  ],
 )
-#field("TROOP TYPE", "Monster (Animated Construct)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("SPECIAL RULES", "Animated Construct, Hatred, Killing Blow, Magical Ward (5+), Unstable")
 
-- *Idol of Worship:* All friendly Dark Elves within 12" of an Avatar of Khaine gain +1 Leadership.
-- *Wrath of Khaine:* For each successful Killing Blow scored (before any saves), the Avatar of Khaine immediately gets to make an additional Attack.
+#unit("AVATAR OF KHAINE",
+  profiles: (
+    (name: "Avatar of Khaine", m: 6, ws: 6, bs: 0, s: 6, t: 7, w: 5, i: 3, a: 5, ld: 10, points: 265),
+  ),
+  troop-type: "Monster (Animated Construct)",
+  base-size: "50x50",
+  equipment: "Hand weapon, heavy armour",
+  special-rules: "Animated Construct, Hatred, Killing Blow, Magical Ward (5+), Unstable",
+  special-rules-body: (
+    rule("Idol of Worship")[All friendly Dark Elves within 12" of an Avatar of Khaine gain +1 Leadership.],
+    rule("Wrath of Khaine")[For each successful Killing Blow scored (before any saves), the Avatar of Khaine immediately gets to make an additional Attack.],
+  ),
+)
 
 = SPECIAL CHARACTERS
 
-#entry("MALEKITH", first: true)
-#namecost("The Witch King of Naggaroth", "")
-#profile(
-  (name: "Malekith", m: 5, ws: 8, bs: 7, s: 5, t: 4, w: 3, i: 8, a: 4, ld: 10, points: 495),
-  (name: "Seraphon (Black Dragon)", m: 6, ws: 7, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 6, ld: 8, points: ""),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Malekith is a Level 4 Wizard who chooses spells from the Lore of Dark Magic.")
-#field("MAGIC ITEMS", "")
-
-- *Destroyer:* Magic Weapon. At the start of every Close Combat phase, all enemy models in base contact with Malekith must reveal their magic items. Furthermore, if Malekith scores one or more hits against a model with any magic items, roll a D6; on a 4+, one randomly determined magic item is immediately destroyed and cannot be used further in this game. Do not include Magic items that are mounts, magic items that contain bound spells that miscast earlier in the game, or any magic items labelled as 'one use only' that have been used. In addition, if a Wizard suffers one or more unsaved Wounds from Destroyer, roll a D6; on a 4+, the Wizard immediately loses a Wizard level.
-- *Hand of Khaine:* Magic Weapon. The Hand of Khaine gives Malekith an extra Attack at Strength 6 which Ignores armour saves.
-- *Armour of Midnight:* Magic Armour. Heavy armour. The Armour of Midnight grants Malekith a 2+ invulnerable save against all non-magical attacks and the Immunity (Killing Blow/Multiple Wounds) special rule.
-- *Supreme Spellshield:* Magic Armour. Shield. This item grants Malekith the Magic Resistance (2) special rule. If Malekith is ever the target of an enemy spell that he successfully dispels, the caster's unit immediately suffers D6 magical Strength 6 hits.
-- *Circlet of Iron:* Arcane Item. Relic. Once per Magic phase, Malekith can use the Circlet of Iron to add a single bonus dice to any of his failed casting or dispel attempts. This bonus dice can contribute to Ultimate Power or Miscast as normal.
-
-#field("SPECIAL RULES", "Elven Grace, Fear, Eternal Hatred, Hekarti's Blessing, Immunity (Psychology), Murderous")
-
+#unit("MALEKITH",
+  first: true,
+  subtitle: "The Witch King of Naggaroth",
+  profiles: (
+    (name: "Malekith", m: 5, ws: 8, bs: 7, s: 5, t: 4, w: 3, i: 8, a: 4, ld: 10, points: 495),
+    (name: "Seraphon (Black Dragon)", m: 6, ws: 7, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 6, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  magic: "Malekith is a Level 4 Wizard who chooses spells from the Lore of Dark Magic.",
+  magic-items: (
+    rule("Destroyer")[Magic Weapon. At the start of every Close Combat phase, all enemy models in base contact with Malekith must reveal their magic items. Furthermore, if Malekith scores one or more hits against a model with any magic items, roll a D6; on a 4+, one randomly determined magic item is immediately destroyed and cannot be used further in this game. Do not include Magic items that are mounts, magic items that contain bound spells that miscast earlier in the game, or any magic items labelled as 'one use only' that have been used. In addition, if a Wizard suffers one or more unsaved Wounds from Destroyer, roll a D6; on a 4+, the Wizard immediately loses a Wizard level.],
+    rule("Hand of Khaine")[Magic Weapon. The Hand of Khaine gives Malekith an extra Attack at Strength 6 which Ignores armour saves.],
+    rule("Armour of Midnight")[Magic Armour. Heavy armour. The Armour of Midnight grants Malekith a 2+ invulnerable save against all non-magical attacks and the Immunity (Killing Blow/Multiple Wounds) special rule.],
+    rule("Supreme Spellshield")[Magic Armour. Shield. This item grants Malekith the Magic Resistance (2) special rule. If Malekith is ever the target of an enemy spell that he successfully dispels, the caster's unit immediately suffers D6 magical Strength 6 hits.],
+    rule("Circlet of Iron")[Arcane Item. Relic. Once per Magic phase, Malekith can use the Circlet of Iron to add a single bonus dice to any of his failed casting or dispel attempts. This bonus dice can contribute to Ultimate Power or Miscast as normal.],
+  ),
+  special-rules: "Elven Grace, Fear, Eternal Hatred, Hekarti's Blessing, Immunity (Psychology), Murderous",
+  special-rules-body: [
 *Prowess*
 
 - *Absolute Power:* If you take Malekith, he must be your Army General. Malekith has the Inspiring Presence (6) special rule.
 - *Black Guard:* If your army includes Malekith, units of Black Guard are taken as Special Units instead of Rare units.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on one of the following:
   - Cold One +20 points
   - Cold One Chariot (replacing one of the crew) +100 points
   - Seraphon (Black Dragon) +320 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - At the start of each close combat, you must choose whether Malekith uses the Hand of Khaine or the Supreme Spellshield.
-
-#entry("MORATHI")
-#namecost("The Hag Sorceress of Ghrond", "")
-#profile(
-  (name: "Morathi", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 335),
-  (name: "Sulephet (Dark Pegasus)", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Morathi is a Level 4 Wizard who uses the following Lores of Magic:")
 
+#unit("MORATHI",
+  subtitle: "The Hag Sorceress of Ghrond",
+  profiles: (
+    (name: "Morathi", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 335),
+    (name: "Sulephet (Dark Pegasus)", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 6, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  magic: "Morathi is a Level 4 Wizard who uses the following Lores of Magic:",
+  magic-body: [
 - Dark
 - Death
 - Shadow
-
-#field("MAGIC ITEMS", "")
-
-- *Heartrender and the Darksword:* Magic Weapon. Light lance. Hits from this weapon have the Killing Blow special rule in the turn Morathi charges. In addition, for each Hit a Monstrous Creature, Monster or character suffers from these weapons they suffer \-1 to their Strength, Toughness and Attack characteristics (to a minimum of 1) for the remainder of the close combat phase.
-- *Amber Amulet:* Talisman. This item restores 1 Wound lost during the game to Morathi at the start of each or your turns.
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Hekarti's Blessing, Khainite, Murderous Prowess")
-
-- *A Thousand and One Dark Blessings:* Morathi has the Magical Ward (6+) special rule and the Magic Resistance (2) special rule.
-- *Beloved of Khaine:* All Khainite models always treat Morathi as the Army's General for all purposes, regardless of what character is the Army General.
-- *Enchanting Beauty:* All models suffer \-1 To Hit against Morathi in close combat. This has no effect on models with the Immunity (Psychology) special rule.
-- *The First Sorceress:* Morathi has a +2 casting bonus. In addition, she can choose her spells from all the Lores of Magic available to her, in any combination she wishes. Note that she always has the Doombolt of Kharaidon as her Signature Spell.
-
-#field("OPTIONS", "")
-
+  ],
+  magic-items: (
+    rule("Heartrender and the Darksword")[Magic Weapon. Light lance. Hits from this weapon have the Killing Blow special rule in the turn Morathi charges. In addition, for each Hit a Monstrous Creature, Monster or character suffers from these weapons they suffer \-1 to their Strength, Toughness and Attack characteristics (to a minimum of 1) for the remainder of the close combat phase.],
+    rule("Amber Amulet")[Talisman. This item restores 1 Wound lost during the game to Morathi at the start of each or your turns.],
+  ),
+  special-rules: "Elven Grace, Hatred (High Elves), Hekarti's Blessing, Khainite, Murderous Prowess",
+  special-rules-body: (
+    rule("A Thousand and One Dark Blessings")[Morathi has the Magical Ward (6+) special rule and the Magic Resistance (2) special rule.],
+    rule("Beloved of Khaine")[All Khainite models always treat Morathi as the Army's General for all purposes, regardless of what character is the Army General.],
+    rule("Enchanting Beauty")[All models suffer \-1 To Hit against Morathi in close combat. This has no effect on models with the Immunity (Psychology) special rule.],
+    rule("The First Sorceress")[Morathi has a +2 casting bonus. In addition, she can choose her spells from all the Lores of Magic available to her, in any combination she wishes. Note that she always has the Doombolt of Kharaidon as her Signature Spell.],
+  ),
+  options: [
 - May be mounted on Sulephet (Dark Pegasus) +40 points
-
-#entry("MALUS DARKBLADE")
-#namecost("Scion of Hag Graef", "")
-#profile(
-  (name: "Malus Darkblade", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 210),
-  (name: "Spite", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 3, ld: 4, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour, Sea Dragon Cloak")
-#field("MAGIC ITEMS", "")
 
-- *Warpsword of Khaine:* Magic Weapon. The Warpsword of Khaine allows Malus to re-roll failed rolls To Wound and Ignores Armour saves.
-
-#field("SPECIAL RULES", "Elven Grace, Eternal Hatred, Murderous Prowess")
-
+#unit("MALUS DARKBLADE",
+  subtitle: "Scion of Hag Graef",
+  profiles: (
+    (name: "Malus Darkblade", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 210),
+    (name: "Spite", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 3, ld: 4, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour, Sea Dragon Cloak",
+  magic-items: (
+    rule("Warpsword of Khaine")[Magic Weapon. The Warpsword of Khaine allows Malus to re-roll failed rolls To Wound and Ignores Armour saves.],
+  ),
+  special-rules: "Elven Grace, Eternal Hatred, Murderous Prowess",
+  special-rules-body: [
 - *Tz'arkan:* Malus Darkblade may unleash the power of Tz'arkan at the start of any friendly Movement phase. Once the Daemon is released, he cannot be bound back during the battle. If Malus releases Tz'arkan, the following rules apply for the rest of the game:
   - Malus Darkblade immediately gains the Frenzy and Magical Ward (5+) special rules, but loses Elven Grace, Eternal Hatred and Murderous Prowess.
   - Malus Darkblade gains +1 Weapon Skill, +1 Strength, +2 Toughness and +1 Initiative. However, friendly units can no longer use his Leadership.
   - Each time Malus Darkblade makes a To Hit roll of 1, a friendly model in base contact (of your choice) is struck by the attack instead. Roll to Wound as normal.
 - *Not Just a Dumb Brute:* Any unit of Cold One Knights joined by Spite are not subject to their normal Stupidity.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on Spite (Cold One) +50 points
-
-#entry("CRONE HELLEBRON")
-#namecost("The Blood Queen of Har Ganeth", "")
-#profile(
-  (name: "Crone Hellebron", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 280),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Deathsword and the Cursed Blade:* Magic Weapon. Two hand weapons. Hits from Deathsword and the Cursed Blade are resolved at Strength 10. If a model rolls a 1 To Hit whilst attacking Hellebron in close combat, it suffers an automatic Strength 4 hit for each 1 rolled.
-- *Amulet of Dark Fire:* Talisman. Dispel attempts made against spells that target Hellebron or her unit receive a +5 dispel bonus.
-
-#field("GIFTS OF KHAINE", "Cry of War, Rune of Khaine, Witchbrew")
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks")
-
-- *Queen of Khaine:* Crone Hellebron has the Inspiring Presence (6) special rules affecting Khainite units.
-- *'Sisters of the Singing Doom:* If Crone Hellebron is included in your army, you may upgrade one unit of Witch Elves to the Sisters of the Singing Doom for a cost of +1 point per model. This unit gains the Fear special rule.
-
-#field("OPTIONS", "")
-
+#unit("CRONE HELLEBRON",
+  subtitle: "The Blood Queen of Har Ganeth",
+  profiles: (
+    (name: "Crone Hellebron", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 280),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Deathsword and the Cursed Blade")[Magic Weapon. Two hand weapons. Hits from Deathsword and the Cursed Blade are resolved at Strength 10. If a model rolls a 1 To Hit whilst attacking Hellebron in close combat, it suffers an automatic Strength 4 hit for each 1 rolled.],
+    rule("Amulet of Dark Fire")[Talisman. Dispel attempts made against spells that target Hellebron or her unit receive a +5 dispel bonus.],
+  ),
+  gifts-of-khaine: "Cry of War, Rune of Khaine, Witchbrew",
+  special-rules: "Elven Grace, Hatred (High Elves), Frenzy, Khainite, Murderous Prowess, Poisoned Attacks",
+  special-rules-body: (
+    rule("Queen of Khaine")[Crone Hellebron has the Inspiring Presence (6) special rules affecting Khainite units.],
+    rule("'Sisters of the Singing Doom")[If Crone Hellebron is included in your army, you may upgrade one unit of Witch Elves to the Sisters of the Singing Doom for a cost of +1 point per model. This unit gains the Fear special rule.],
+  ),
+  options: [
 - May be mounted on one of the following:
   - Manticore +150 points
   - Cauldron of Blood (replacing the Keeper of the Cauldron) +160 points
-
-#entry("RAKARTH")
-#namecost("Beastlord of Clar Karond", "")
-#profile(
-  (name: "Rakarth", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 445),
-  (name: "Bracchus (Black Dragon)", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Special Character, Dark Elf)")
-#field("MOUNT", "Bracchus (Dragon)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("MAGIC ITEMS", "")
 
-- *Whip of Agony:* Magic Weapon. The Whip of Agony gives Rakarth +1 Strength. In addition, Rakarth may make a special attack with the Always Strikes First rule. If this attack causes an unsaved Wound but does not kill the target, it is overcome with pain and must roll 6's to Hit in that round of close combat.
-- *Beast Armour of Clar Karond:* Magic Armour. Heavy armour. This armour allows Rakarth to re-roll failed armour saves.
-
-#field("SPECIAL RULES", "Beastslaver (see Beastmaster), Hatred (High Elves), Fly (7), Murderous Prowess, Natural")
-
+#unit("RAKARTH",
+  subtitle: "Beastlord of Clar Karond",
+  profiles: (
+    (name: "Rakarth", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 445),
+    (name: "Bracchus (Black Dragon)", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
+  ),
+  troop-type: "Monster (Special Character, Dark Elf)",
+  mount: "Bracchus (Dragon)",
+  base-size: "50x50, 50x100 or 60x100",
+  magic-items: (
+    rule("Whip of Agony")[Magic Weapon. The Whip of Agony gives Rakarth +1 Strength. In addition, Rakarth may make a special attack with the Always Strikes First rule. If this attack causes an unsaved Wound but does not kill the target, it is overcome with pain and must roll 6's to Hit in that round of close combat.],
+    rule("Beast Armour of Clar Karond")[Magic Armour. Heavy armour. This armour allows Rakarth to re-roll failed armour saves.],
+  ),
+  special-rules: "Beastslaver (see Beastmaster), Hatred (High Elves), Fly (7), Murderous Prowess, Natural",
+  special-rules-body: [
 *Armour (3+)*, *Noxious Breath* (see Black Dragon)
 
 - *Beastlord:* Any friendly Monster within 12" of Rakarth treat him as having the Hold Your Ground! special rule. In addition, his Beastslaver special rule affects Bracchus.
 - *Ravagers of Rakarth:* If Rakarth is included in your army, you may upgrade any Scourgerunner Chariots to the Ravagers of Rakarth for a cost of +5 points per model. These models gain the Poisoned Attacks special rule.
-
-#entry("KRETHUSA THE CRONESEER")
-#namecost("Prophetess of Morai-Heg", "")
-#profile(
-  (name: "Krethusa", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 295),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Krethusa is a Level 3 Wizard who uses the Lore of Shadow. In addition, she knows the knows the Flock of Doom spell from the Lore of Beasts.")
-#field("SPECIAL RULES", "Elven Grace, Fly (10), Hatred (High Elves), Hekarti's Blessing, Murderous Prowess")
 
+#unit("KRETHUSA THE CRONESEER",
+  subtitle: "Prophetess of Morai-Heg",
+  profiles: (
+    (name: "Krethusa", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 295),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "50x50",
+  equipment: "Hand weapon",
+  magic: "Krethusa is a Level 3 Wizard who uses the Lore of Shadow. In addition, she knows the knows the Flock of Doom spell from the Lore of Beasts.",
+  special-rules: "Elven Grace, Fly (10), Hatred (High Elves), Hekarti's Blessing, Murderous Prowess",
+  special-rules-body: [
 - *Burnt Offerings:* Krethusa knows the three prophecies listed below. She may attempt to use one at the start of each of your Magic phases by taking a Leadership test on her own unmodified Leadership If passed, the prophecy is fulfilled and takes immediate effect. Each prophecy targets one friendly unit within 12".
   - *Prophecy of Silence:* Enemy units within 6" of the unit cannot benefit from the Inspiring Presence, Hold Your Ground or Command Group bonuses.
   - *Prophecy of Dark Wings:* The unit may immediately make an additional move as if it were the Remaining Moves sub-phase.
   - *Prophecy of Reclamation:* Enemy units in base contact with the unit do not gain Combat Resolution bonuses from anything except the number of Wounds inflicted unless they contain at least one character.
 - *Foresight of Morai-Heg:* Krethusa has a 4+ invulnerable save.
-
-#entry("KOURAN DARKHAND")
-#namecost("Captain of the Black Guard", "")
-#profile(
-  (name: "Kouran Darkhand", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 140),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Crimson Death:* Magic Weapon. Polearm. Close combat attacks made with the Crimson Death are resolved at an additional +1 Strength.
-- *The Armour of Grief:* Magic Armour. Heavy armour. Each time a model makes a successful To Hit roll against Kouran Darkhand in close combat, the model that struck the blow immediately suffers a Strength 5 hit.
-
-#field("SPECIAL RULES", "Elven Grace, Eternal Hatred, Immunity (Psychology), Murderous Prowess, Stubborn")
-
-- *The Right Hand of Darkness:* If Kouran Darkhand is in a unit of Black Guard, he and all models in that unit have the Unbreakable special rule.
-
-#entry("TULLARIS DREADBRINGER")
-#namecost("The Hand of Khaine", "")
-#profile(
-  (name: "Tullaris Dreadbringer", m: 5, ws: 7, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 130),
+#unit("KOURAN DARKHAND",
+  subtitle: "Captain of the Black Guard",
+  profiles: (
+    (name: "Kouran Darkhand", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 140),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Crimson Death")[Magic Weapon. Polearm. Close combat attacks made with the Crimson Death are resolved at an additional +1 Strength.],
+    rule("The Armour of Grief")[Magic Armour. Heavy armour. Each time a model makes a successful To Hit roll against Kouran Darkhand in close combat, the model that struck the blow immediately suffers a Strength 5 hit.],
+  ),
+  special-rules: "Elven Grace, Eternal Hatred, Immunity (Psychology), Murderous Prowess, Stubborn",
+  special-rules-body: (
+    rule("The Right Hand of Darkness")[If Kouran Darkhand is in a unit of Black Guard, he and all models in that unit have the Unbreakable special rule.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *The First Draich:* Magic Weapon. Great weapon. Tullaris' Killing Blow special rule takes effect on a 5+, rather than a 6.
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (High Elves), Fear, Frenzy, Khainite, Killing Blow, Murderous")
-
+#unit("TULLARIS DREADBRINGER",
+  subtitle: "The Hand of Khaine",
+  profiles: (
+    (name: "Tullaris Dreadbringer", m: 5, ws: 7, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 130),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("The First Draich")[Magic Weapon. Great weapon. Tullaris' Killing Blow special rule takes effect on a 5+, rather than a 6.],
+  ),
+  special-rules: "Elven Grace, Hatred (High Elves), Fear, Frenzy, Khainite, Killing Blow, Murderous",
+  special-rules-body: [
 *Prowess*
 
 - *Blades of the Blood Queen:* Tullaris must be accompanied by a unit of Har Ganeth Executioners chosen from the army list at a cost of +1 point per model. This unit has the Frenzy special rule. Tullaris may never choose to leave this unit.
 - *Khaine's Sacred Slaughterer:* Each time Tullaris inflicts a successful Killing Blow, he and his unit gain a +1 bonus to their combat resolution score, in addition to any wounds inflicted by him.
-
-#entry("LOKHIR FELLHEART")
-#namecost("Krakenlord of Karond Kar", "")
-#profile(
-  (name: "Lokhir Fellheart", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 150),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Medium armour, Sea Dragon Cloak")
-#field("MAGIC ITEMS", "")
 
-- *The Red Blades:* Magic Weapon. Two hand weapons. Any hits made by the Red Blades re-roll any failed To Wound roll.
-- *Helm of the Kraken:* Magic Armour. The Helm of the Kraken grants Lokhir Fellheart a 6+ armour save, +1 Toughness, as well as the Regeneration (6+) and Terror special rules.
-
-#field("SPECIAL RULES", "Ambushers, At them, you Curs! (see Black Ark Fleetmaster), Elven Grace, Hatred (High")
-
+#unit("LOKHIR FELLHEART",
+  subtitle: "Krakenlord of Karond Kar",
+  profiles: (
+    (name: "Lokhir Fellheart", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 150),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Medium armour, Sea Dragon Cloak",
+  magic-items: (
+    rule("The Red Blades")[Magic Weapon. Two hand weapons. Any hits made by the Red Blades re-roll any failed To Wound roll.],
+    rule("Helm of the Kraken")[Magic Armour. The Helm of the Kraken grants Lokhir Fellheart a 6+ armour save, +1 Toughness, as well as the Regeneration (6+) and Terror special rules.],
+  ),
+  special-rules: "Ambushers, At them, you Curs! (see Black Ark Fleetmaster), Elven Grace, Hatred (High",
+  special-rules-body: [
 *Elves), Murderous Prowess, Show no Weakness* (see Black Ark Fleetmaster)
 
 - *Murderous Swashbuckler:* If Lokhir makes a successful Parry save, he may immediately make an additional Attack back against the model that struck the blow.
 - *Merciless Slaver:* If an enemy unit breaks from a close combat that includes Lokhir Fellheart, all units taking Panic tests as a result of that unit breaking suffer a \-1 penalty to their Leadership value for that test.
-
-#entry("SHADOWBLADE")
-#namecost("Master of Assassins, the Death that Walks Unseen", "")
-#profile(
-  (name: "Shadowblade", m: 6, ws: 10, bs: 10, s: 4, t: 3, w: 2, i: 10, a: 3, ld: 9, points: 220),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dark Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("MAGIC ITEMS", "")
 
-- *Heart of Woe:* Enchanted Item. If Shadowblade is ever slain, centre the small round template over him before removing the model as a casualty. Every model touched by the template immediately suffers a Strength 3 hit. After any damage has been resolved, remove Shadowblade as a casualty as normal.
-- *Potion of Diabolic Strength:* Enchanted Item. One use only. The Potion of Diabolic Strength can be drunk at the start of any player's Close Combat phase, after any Hidden models have revealed that they are hiding in a unit. Shadowblade gains +3 Strength until the end of the turn.
-
-#field("GIFTS OF KHAINE", "Black Lotus, Dance of Doom, Dark Venom, Hand of Khaine, Manbane, Touch of Death")
-#field("SPECIAL RULES", "Dodge (5+), Hatred (High Elves), Hidden, Immunity (Psychology), Khainite, Murderous")
-
+#unit("SHADOWBLADE",
+  subtitle: "Master of Assassins, the Death that Walks Unseen",
+  profiles: (
+    (name: "Shadowblade", m: 6, ws: 10, bs: 10, s: 4, t: 3, w: 2, i: 10, a: 3, ld: 9, points: 220),
+  ),
+  troop-type: "Infantry (Special Character, Dark Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  magic-items: (
+    rule("Heart of Woe")[Enchanted Item. If Shadowblade is ever slain, centre the small round template over him before removing the model as a casualty. Every model touched by the template immediately suffers a Strength 3 hit. After any damage has been resolved, remove Shadowblade as a casualty as normal.],
+    rule("Potion of Diabolic Strength")[Enchanted Item. One use only. The Potion of Diabolic Strength can be drunk at the start of any player's Close Combat phase, after any Hidden models have revealed that they are hiding in a unit. Shadowblade gains +3 Strength until the end of the turn.],
+  ),
+  gifts-of-khaine: "Black Lotus, Dance of Doom, Dark Venom, Hand of Khaine, Manbane, Touch of Death",
+  special-rules: "Dodge (5+), Hatred (High Elves), Hidden, Immunity (Psychology), Khainite, Murderous",
+  special-rules-body: [
 *Prowess, Poisoned Attacks, Scouts*
 
 - *Master of Disguise:* Shadowblade can deploy using the Hidden special rule like an Assassin. If he does so, he can change which unit he is hiding in at the start of any Movement or Close Combat phase – keep a note of where Shadowblade is each time you change your mind. If an opponent has an ability that forces you to state that there are 'hidden' models within a unit, you only need to say that Shadowblade is hiding within a unit, but not which unit he is currently in.
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

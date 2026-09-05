@@ -318,24 +318,24 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 
 = CHARACTERS
 
-#entry("VAMPIRE CAPTAINS", first: true)
-#profile(
-  (name: "Fleet Admiral", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 190),
-  (name: "Fleet Captain", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 80),
-)
-#field("TROOP TYPE", "Infantry (Character, Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Vampire who is a Wizard uses one of the following Lores of Magic:")
-
+#unit("VAMPIRE CAPTAINS",
+  first: true,
+  profiles: (
+    (name: "Fleet Admiral", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 190),
+    (name: "Fleet Captain", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 80),
+  ),
+  troop-type: "Infantry (Character, Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Vampire who is a Wizard uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Deep
 - Necromancy
 - Shadow
-
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "The Red Thirst, Vampiric",
+  options: [
 - May be upgraded to one of the following:
   - Level 1 Wizard +35 points
   - Level 2 Wizard +70 points
@@ -353,22 +353,22 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 - May be mounted on a Rotting Promethean +45 points
 - A Fleet Captain may take Vampiric Powers and/or Magic Items up to a total of 50 points
 - A Fleet Admiral may take Vampiric Powers and/or Magic Items up to a total of 100 points
-
-#entry("GUNNERY WIGHT")
-#profile(
-  (name: "Gunnery Wight", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 8, points: 40),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Undead, Wight)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("UPGRADES", "")
 
-- *Battle Standard:* The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.
-- *Master Gunner:* A model with this upgrade allows any friendly Undead unit they join to re-roll 1's To Hit with missile weapons. Alternatively, one war machine that is within 3" of a Master Gunner can use their Ballistic Skill or re-roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of the Gunnery Wight are fired.
-
-#field("OPTIONS", "")
-
+#unit("GUNNERY WIGHT",
+  profiles: (
+    (name: "Gunnery Wight", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 8, points: 40),
+  ),
+  troop-type: "Infantry (Character, Undead, Wight)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Undead, Waterlogged Weapons",
+  upgrades: (
+    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.],
+    rule("Master Gunner")[A model with this upgrade allows any friendly Undead unit they join to re-roll 1's To Hit with missile weapons. Alternatively, one war machine that is within 3" of a Master Gunner can use their Ballistic Skill or re-roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of the Gunnery Wight are fired.],
+  ),
+  options: [
 - May choose one of the following:
   - Buckler +3 points
   - Additional hand weapon +5 points
@@ -383,19 +383,20 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 - May be upgraded to a Master Gunner +30 points
 - One Gunnery Wight may carry the Battle Standard +25 points
 - May take Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("PIRATE WARLOCK")
-#profile(
-  (name: "Pirate Warlock", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Pirate Warlock is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:")
 
+#unit("PIRATE WARLOCK",
+  profiles: (
+    (name: "Pirate Warlock", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  equipment: "Hand weapon",
+  magic: "A Pirate Warlock is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Deep
 - Fire
@@ -403,70 +404,72 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 - Metal
 - Necromancy
 - Shadow
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional Wizard Level +35 points
 - May take Magic Items up to a total of 50 points
-
-#entry("SYREEN")
-#profile(
-  (name: "Syreen", m: 6, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 5, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Undead, Spirit)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("SPECIAL RULES", "Ethereal, Fly (6), Independent, Terror, Undead")
 
-- *Syreen's Call:* At the beginning of each enemy Movement phase, all enemy units that are within 12" and have Line of Sight to the Syreen must pass a Leadership test or move directly towards her using the Random Movement (2D6) this turn, as well as suffer \-1 to their Leadership until the start of their next Movement phase.
-
-#field("NOTES", "")
-
+#unit("SYREEN",
+  profiles: (
+    (name: "Syreen", m: 6, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 5, points: 70),
+  ),
+  troop-type: "Infantry (Character, Undead, Spirit)",
+  base-size: "20x20 or 25x25",
+  special-rules: "Ethereal, Fly (6), Independent, Terror, Undead",
+  special-rules-body: (
+    rule("Syreen's Call")[At the beginning of each enemy Movement phase, all enemy units that are within 12" and have Line of Sight to the Syreen must pass a Leadership test or move directly towards her using the Random Movement (2D6) this turn, as well as suffer \-1 to their Leadership until the start of their next Movement phase.],
+  ),
+  notes: [
 - A Syreen may never be the Army General.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#compact-entry("ROTTING PROMETHEAN")[
-#profile(
-  (name: "Rotting Promethean", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 2, points: "-"),
+#unit("ROTTING PROMETHEAN",
+  compact: true,
+  profiles: (
+    (name: "Rotting Promethean", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 2, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Undead, Crustacean)",
+  base-size: "50x50",
+  special-rules: "Aquatic, Killing Blow, Natural Armour (4+), Undead",
 )
-#field("TROOP TYPE", "Monstrous Beast (Undead, Crustacean)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Aquatic, Killing Blow, Natural Armour (4+), Undead")
-]
 
 = CORE UNITS
 
-#entry("ZOMBIE DECKHANDS", first: true)
-
-#profile(
-  (name: "Zombie Deckhand", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 3.5),
-)
-
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Undead, Zombie)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Undead")
-#field("OPTIONS", "")
-
+#unit("ZOMBIE DECKHANDS",
+  first: true,
+  profiles: (
+    (name: "Zombie Deckhand", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 3.5),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Undead, Zombie)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Undead",
+  options: [
 - May replace bucklers with one of the following:
   - Additional hand weapons +0.5 point/model
   - Polearms +1.5 points/model
 - May upgrade one Zombie Deckhand to a Musician +5 points
 - May upgrade one Zombie Deckhand to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ZOMBIE GUNNERS")
-#profile(
-  (name: "Zombie Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Undead, Zombie)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol")
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("OPTIONS", "")
 
+#unit("ZOMBIE GUNNERS",
+  profiles: (
+    (name: "Zombie Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Undead, Zombie)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol",
+  special-rules: "Undead, Waterlogged Weapons",
+  options: [
 - May replace pistols with one of the following:
   - Grenades +1 point/model
   - Blunderbusses +2 points/model
@@ -475,196 +478,214 @@ At the start of a challenge, the enemy character selected to take on the Vampire
 - May upgrade one Zombie Deckhand to a Musician +5 points
 - May upgrade one Zombie Deckhand to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("BLOATED CORPSE")
-#profile(
-  (name: "Bloated Corpse", m: 4, ws: 2, bs: 1, s: 3, t: 4, w: 2, i: 1, a: 1, ld: 2, points: 25),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Undead, Zombie)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("SPECIAL RULES", "Expendable, Poisoned Attacks, Undead")
 
-- *Gaseous Demise:* When a Bloated Corpse is slain, centre the small template on the model. Any model under the template must pass a Toughness test or suffer one Wound which Ignores Armour Saves.
-
-#field("NOTES", "")
-
+#unit("BLOATED CORPSE",
+  profiles: (
+    (name: "Bloated Corpse", m: 4, ws: 2, bs: 1, s: 3, t: 4, w: 2, i: 1, a: 1, ld: 2, points: 25),
+  ),
+  troop-type: "Infantry (Undead, Zombie)",
+  base-size: "25x25 or 30x30",
+  special-rules: "Expendable, Poisoned Attacks, Undead",
+  special-rules-body: (
+    rule("Gaseous Demise")[When a Bloated Corpse is slain, centre the small template on the model. Any model under the template must pass a Toughness test or suffer one Wound which Ignores Armour Saves.],
+  ),
+  notes: [
 - You may take 1\-2 Bloated Corpses as a single Core choice.
-
-#compact-entry("SCURVY DOGS")[
-#profile(
-  (name: "Scurvy Dog", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "War Beast (Undead, Canine)")
-#field("BASE SIZE", "25x25 or 25x50")
-#field("SPECIAL RULES", "Undead")
-]
 
-#compact-entry("RAZORTOOTH RATS")[
-#profile(
-  (name: "Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 30),
+#unit("SCURVY DOGS",
+  compact: true,
+  profiles: (
+    (name: "Scurvy Dog", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "War Beast (Undead, Canine)",
+  base-size: "25x25 or 25x50",
+  special-rules: "Undead",
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Swarm (Undead, Rodent)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Undead")
-]
+
+#unit("RAZORTOOTH RATS",
+  compact: true,
+  profiles: (
+    (name: "Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 30),
+  ),
+  unit-size: "3-9",
+  troop-type: "Swarm (Undead, Rodent)",
+  base-size: "40x40",
+  special-rules: "Undead",
+)
 
 = SPECIAL UNITS
 
-#entry("DECK DROPPERS", first: true)
-#profile(
-  (name: "Deck Dropper", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 17),
-  (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 3, points: ""),
-)
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Cavalry (Undead, Zombie)")
-#field("MOUNT", "Fell Bat (Undead, Chiropter)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon, pistol")
-#field("SPECIAL RULES", "Fly (9), Undead, Waterlogged Weapons")
-#field("OPTIONS", "")
-
+#unit("DECK DROPPERS",
+  first: true,
+  profiles: (
+    (name: "Deck Dropper", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 17),
+    (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 3, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Cavalry (Undead, Zombie)",
+  mount: "Fell Bat (Undead, Chiropter)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon, pistol",
+  special-rules: "Fly (9), Undead, Waterlogged Weapons",
+  options: [
 - May replace pistols with one of the following:
   - Grenades free
   - Brace of pistols +1 point/model
   - Handguns +1 point/model
-
-#entry("DECK GUNNERS")
-#profile(
-  (name: "Deck Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 12),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Infantry (Undead, Zombie)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, swivel gun")
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("OPTIONS", "")
 
+#unit("DECK GUNNERS",
+  profiles: (
+    (name: "Deck Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 12),
+  ),
+  unit-size: "3-9",
+  troop-type: "Infantry (Undead, Zombie)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, swivel gun",
+  special-rules: "Undead, Waterlogged Weapons",
+  options: [
 - May replace swivel guns with volley guns +2 points/model
-
-#entry("ANIMATED HULK")
-#profile(
-  (name: "Animated Hulk", m: 6, ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 1, a: "*", ld: 2, points: 30),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Undead, Zombie)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("OPTIONS", "")
 
+#unit("ANIMATED HULK",
+  profiles: (
+    (name: "Animated Hulk", m: 6, ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 1, a: "*", ld: 2, points: 30),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Undead, Zombie)",
+  base-size: "40x40 or 50x50",
+  options: [
 - May take one of the following:
   - Pincer Claws +3 points/model
   - Salvaged Hulls +3 points/model
   - Tentacles +3 points/model
   - Wreckers +3 points/model
-
-#field("SPECIAL RULES", "Random Attacks (D6), Undead")
-#field("UPGRADES", "")
-
-- *Pincer Claws:* The model gains the Armour Piercing (1) special rule.
-- *Salvaged Hulls:* The model gains the Natural Armour (5+) special rule.
-- *Tentacles:* One enemy model in base contact suffer \-1 Attack.
-- *Wreckers:* The model gains the Mighty Blow (1) special rule.
-
-#entry("ROTTING PROMETHEANS")
-#profile(
-  (name: "Rotting Promethean", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 2, points: 45),
-  (name: "Deck Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ],
+  special-rules: "Random Attacks (D6), Undead",
+  upgrades: (
+    rule("Pincer Claws")[The model gains the Armour Piercing (1) special rule.],
+    rule("Salvaged Hulls")[The model gains the Natural Armour (5+) special rule.],
+    rule("Tentacles")[One enemy model in base contact suffer \-1 Attack.],
+    rule("Wreckers")[The model gains the Mighty Blow (1) special rule.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Beast (Undead, Crustacean)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Aquatic, Killing Blow, Natural Armour (4+), Undead")
-#field("UPGRADES", "")
 
-- *Gunnery Mob:* A unit with this upgrade follows the Split Profile rules for Monsters. It includes two Deck Gunners (Undead, Zombie) riders armed with handguns with the Waterlogged Weapons special rule.
-
-#field("OPTIONS", "")
-
+#unit("ROTTING PROMETHEANS",
+  profiles: (
+    (name: "Rotting Promethean", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 2, points: 45),
+    (name: "Deck Gunner", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Beast (Undead, Crustacean)",
+  base-size: "50x50",
+  special-rules: "Aquatic, Killing Blow, Natural Armour (4+), Undead",
+  upgrades: (
+    rule("Gunnery Mob")[A unit with this upgrade follows the Split Profile rules for Monsters. It includes two Deck Gunners (Undead, Zombie) riders armed with handguns with the Waterlogged Weapons special rule.],
+  ),
+  options: [
 - May take a Gunnery Mob +10 points/model
-
-#entry("CARRONADE")
-#profile(
-  (name: "Carronade", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
-  (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Zombie Crew (Undead, Zombie)")
-#field("BASE SIZE", "50x75 (Carronade), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, cannon")
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("OPTIONS", "")
 
+#unit("CARRONADE",
+  profiles: (
+    (name: "Carronade", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
+    (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Zombie Crew (Undead, Zombie)",
+  base-size: "50x75 (Carronade), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, cannon",
+  special-rules: "Undead, Waterlogged Weapons",
+  options: [
 - May take an additional crew +5 points
-
-#entry("MORTAR")
-#profile(
-  (name: "Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Zombie Crew (Undead, Zombie)")
-#field("BASE SIZE", "50x75 (Mortar), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, mortar")
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("OPTIONS", "")
 
+#unit("MORTAR",
+  profiles: (
+    (name: "Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Zombie Crew (Undead, Zombie)",
+  base-size: "50x75 (Mortar), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, mortar",
+  special-rules: "Undead, Waterlogged Weapons",
+  options: [
 - May take an additional crew +5 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("DEPTH GUARD", first: true)
-#profile(
-  (name: "Depth Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 22),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, heavy armour")
-#field("SPECIAL RULES", "Vampiric")
-#field("OPTIONS", "")
-
+#unit("DEPTH GUARD",
+  first: true,
+  profiles: (
+    (name: "Depth Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 22),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, heavy armour",
+  special-rules: "Vampiric",
+  options: [
 - May replace hand weapons with polearms +2 points/model
 - May upgrade one Depth Guard to a Leader +5 points
 - May upgrade one Depth Guard to a Musician +5 points
 - May upgrade one Depth Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 75 points
-
-#entry("ROTTING LEVIATHAN")
-#profile(
-  (name: "Rotting Leviathan", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 5, ld: 2, points: 250),
-  (name: "Zombie Gunner", m: "-", ws: 2, bs: 3, s: 3, t: "-", w: "-", i: 1, a: 1, ld: 2, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Undead, Crustacean)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("CREW", "5 Zombie Gunners (Undead, Zombie)")
-#field("EQUIPMENT", "Handguns (Zombie Gunners only)")
-#field("SPECIAL RULES", "Aquatic, Killing Blow, Natural Armour (2+), Undead, Waterlogged Weapons")
 
-- *Unbearable Stench:* Enemy units in base contact with a model with this special rule suffer \-1 to their Weapon Skill. This has no effect on Animated Constructs.
-
-#entry("BONE HYDRA")
-#profile(
-  (name: "Bone Hydra", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 6, ld: 2, points: 200),
+#unit("ROTTING LEVIATHAN",
+  profiles: (
+    (name: "Rotting Leviathan", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 5, ld: 2, points: 250),
+    (name: "Zombie Gunner", m: "-", ws: 2, bs: 3, s: 3, t: "-", w: "-", i: 1, a: 1, ld: 2, points: ""),
+  ),
+  troop-type: "Monster (Undead, Crustacean)",
+  base-size: "50x100 or 60x100",
+  crew: "5 Zombie Gunners (Undead, Zombie)",
+  equipment: "Handguns (Zombie Gunners only)",
+  special-rules: "Aquatic, Killing Blow, Natural Armour (2+), Undead, Waterlogged Weapons",
+  special-rules-body: (
+    rule("Unbearable Stench")[Enemy units in base contact with a model with this special rule suffer \-1 to their Weapon Skill. This has no effect on Animated Constructs.],
+  ),
+  order: ("troop-type", "base-size", "crew", "equipment", "special-rules"),
 )
-#field("TROOP TYPE", "Monster (Undead, Hydra)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Aquatic, Undead")
 
-- *Poison Breath:* A Bone Hydra has a Strength 3 Breath Weapon with the Poisoned Attacks special rule.
-
-#entry("NECROFEX COLOSSUS")
-#profile(
-  (name: "Necrofex Colossus", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: "*", ld: 8, points: 270),
+#unit("BONE HYDRA",
+  profiles: (
+    (name: "Bone Hydra", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 6, ld: 2, points: 200),
+  ),
+  troop-type: "Monster (Undead, Hydra)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Aquatic, Undead",
+  special-rules-body: (
+    rule("Poison Breath")[A Bone Hydra has a Strength 3 Breath Weapon with the Poisoned Attacks special rule.],
+  ),
 )
-#field("TROOP TYPE", "Monster (Undead, Animated Construct)")
-#field("BASE SIZE", "50x100 or 100x150")
-#field("EQUIPMENT", "Cannon Arm")
 
-- *Cannon Arm:* A Necrofex Colossus may make shooting attacks like a Cannon, even if it has moved (but not marched). If a Misfire is rolled, the Necrofex Colossus suffers D3 Wounds. Note that it cannot fire Grapeshot.
-
-#field("SPECIAL RULES", "Regeneration (4+), Undead")
-
+#unit("NECROFEX COLOSSUS",
+  profiles: (
+    (name: "Necrofex Colossus", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: "*", ld: 8, points: 270),
+  ),
+  troop-type: "Monster (Undead, Animated Construct)",
+  base-size: "50x100 or 100x150",
+  equipment: "Cannon Arm",
+  equipment-body: (
+    rule("Cannon Arm")[A Necrofex Colossus may make shooting attacks like a Cannon, even if it has moved (but not marched). If a Misfire is rolled, the Necrofex Colossus suffers D3 Wounds. Note that it cannot fire Grapeshot.],
+  ),
+  special-rules: "Regeneration (4+), Undead",
+  special-rules-body: [
 - *Vortex of Death:* Any Wizard attempting to cast spells from the Lore of Death or Lore of Necromancy within 12" of the Necrofex Colossus gain a +1 casting bonus.
 - *Necrofex Colossus Special Attacks:* A creature of nightmarish power and massive stature, a Necrofex Colossus can make one of a number of attacks in close combat. When it is the Necrofex Colossus' turn to strike in close combat, roll a D6 and consult the table below to determine what kind of attack it will make:
 
@@ -673,225 +694,243 @@ Initiative test or suffer a Strength 7 Hit with the Multiple Wounds (D6) special
 resolve a Death Shriek, roll 2D6+3. For each point by which the result exceeds the target unit's
 Leadership, the target unit suffers 1 Wound which Ignores Armour Saves. Death Shriek is a non-
 physical Magical Attack and Wounds suffered from it are distributed as if from shooting.")))
-#field("UPGRADES", "")
-
-- *Corpse Killers:* After resolving its regular attacks, all enemy units in base contact with the Necrofex Colossus suffer D6 Strength 2 hits.
-- *Dark Soul:* The Necrofex Colossus becomes a Level 1 Wizard who uses spells from the Lore of Death or Lore of Necromancy. However, should the Necrofex Colossus suffer a miscast, in addition to any other effect, the Necrofex Colossus permanently has its Toughness value reduced by 1, as the backlash of the miscast damages the very fabric that holds the horror together.
-- *Scythes and Barbs:* The Necrofex Colossus' number of Random Attacks and Stomp hits may be re-rolled.
-- *Vampire Blood:* The Necrofex Colossus gains the Regeneration (3+) special rule, but is also subject to the Berserk Rage part of Frenzy.
-
-#field("OPTIONS", "")
-
+  ],
+  upgrades: (
+    rule("Corpse Killers")[After resolving its regular attacks, all enemy units in base contact with the Necrofex Colossus suffer D6 Strength 2 hits.],
+    rule("Dark Soul")[The Necrofex Colossus becomes a Level 1 Wizard who uses spells from the Lore of Death or Lore of Necromancy. However, should the Necrofex Colossus suffer a miscast, in addition to any other effect, the Necrofex Colossus permanently has its Toughness value reduced by 1, as the backlash of the miscast damages the very fabric that holds the horror together.],
+    rule("Scythes and Barbs")[The Necrofex Colossus' number of Random Attacks and Stomp hits may be re-rolled.],
+    rule("Vampire Blood")[The Necrofex Colossus gains the Regeneration (3+) special rule, but is also subject to the Berserk Rage part of Frenzy.],
+  ),
+  options: [
 - May take Scythes and Barbs +10 points
 - May take Vampire Blood +10 points
 - May take Corpse Killers +20 points
 - May take Dark Soul +45 points
-
-#entry("QUEEN BESS")
-#profile(
-  (name: "Queen Bess", m: "-", ws: "-", bs: "-", s: "-", t: 10, w: "-", i: "-", a: "-", ld: "-", points: 250),
-  (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "5 Zombie Crew (Undead, Zombie)")
-#field("BASE SIZE", "60x100 or 100x150 (Queen Bess), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon")
 
+#unit("QUEEN BESS",
+  profiles: (
+    (name: "Queen Bess", m: "-", ws: "-", bs: "-", s: "-", t: 10, w: "-", i: "-", a: "-", ld: "-", points: 250),
+    (name: "Zombie Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "5 Zombie Crew (Undead, Zombie)",
+  base-size: "60x100 or 100x150 (Queen Bess), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon",
+  equipment-body: [
 - *Queen Bess:* Queen Bess is a cannon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-72\"", "10", "Multiple Wounds (D6+1)"))
 
 Place the small template where the cannon ball lands; then move the template the distance the cannon ball bounces. Any model under the hole suffers a Strength 10 Hit with the Multiple Wounds (D6+1) special rule. Other models touched by the template suffer a Strength 5 Hit.
-
-#field("SPECIAL RULES", "Undead, Waterlogged Weapons")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Undead, Waterlogged Weapons",
+  notes: [
 - You may not take more than 1 Queen Bess in your Army.
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("LUTHOR HARKON", first: true)
-#namecost("Arch-Grand Commodore, Pirate King of the Vampire Coast, Emperor of Lustria", "")
-#profile(
-  (name: "Luthor Harkon", m: 6, ws: 8, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 320),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, brace of pistols, heavy armour")
-#field("MAGIC ITEMS", "")
-
-- *Slann Gold:* Talisman. The Slann Gold gives Luthor Harkon the Magic Resistance (3) special rule. However, all Lizardmen have the Hatred special rule against him.
-
-#field("VAMPIRIC POWERS", "Curse of the Revenant, Hornswaggle, Transfix, Unbending Willpower")
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-
+#unit("LUTHOR HARKON",
+  first: true,
+  subtitle: "Arch-Grand Commodore, Pirate King of the Vampire Coast, Emperor of Lustria",
+  profiles: (
+    (name: "Luthor Harkon", m: 6, ws: 8, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 320),
+  ),
+  troop-type: "Infantry (Special Character, Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, brace of pistols, heavy armour",
+  magic-items: (
+    rule("Slann Gold")[Talisman. The Slann Gold gives Luthor Harkon the Magic Resistance (3) special rule. However, all Lizardmen have the Hatred special rule against him.],
+  ),
+  vampiric-powers: "Curse of the Revenant, Hornswaggle, Transfix, Unbending Willpower",
+  special-rules: "The Red Thirst, Vampiric",
+  special-rules-body: [
 - *Magical Void:* Luthor Harkon channels dispel dice like a Level 4 Wizard. In addition, he does so on a 4+ rather than a 6.
 - *Split Personality:* At the start of each of the Vampire player's turns and whenever Luthor suffers a Wound, roll a D6 to determine which personality is in control. Each effect lasts until a new result is generated from this table.
 
 #chart((("D6", "Result"), ("1", "Brainlock: Luthor has the Stupidity special rule, and his Inspiring Presence has no effect."), ("2", "The Coward: Luthor cannot issue or accept challenges and must roll an additional D6 when taking
 Leadership tests. In addition, his Inspiring Presence is lowered by 6."), ("3", "The Mad: Luthor gains the Frenzy special rule."), ("4", "The Bad: Luthor gains the Hatred special rule."), ("5", "The Narcissist: Luthor must issue and accept challenges when possible. While in a challenge, he
 gains +1 To Hit and To Wound."), ("6", "The Pirate King: Luthor gains the Inspiring Presence (6) special rule.")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Luthor Harkon must be the Army General.
-
-#entry("COUNT NOCTILUS")
-#namecost("Captain of the Bloody Reaver, Admiral of the Dreadfleet", "")
-#profile(
-  (name: "Count Noctilus", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 330),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, heavy armour")
-#field("MAGIC", "Count Noctilus is a Level 3 Wizard who uses spells from the following Lores of Magic:")
 
+#unit("COUNT NOCTILUS",
+  subtitle: "Captain of the Bloody Reaver, Admiral of the Dreadfleet",
+  profiles: (
+    (name: "Count Noctilus", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 330),
+  ),
+  troop-type: "Infantry (Special Character, Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, heavy armour",
+  magic: "Count Noctilus is a Level 3 Wizard who uses spells from the following Lores of Magic:",
+  magic-body: [
 - Necromancy
 - Shadow
 
 He may choose spells from both Lores in any combination as he wishes.
-
-#field("MAGIC ITEMS", "")
-
-- *The Stone of Schwartzhafen:* Arcane Item. Relic. This item gives Noctilus a +1 casting bonus for every friendly unit within 6".
-
-#field("VAMPIRIC POWERS", "Fear Incarnate")
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-
+  ],
+  magic-items: (
+    rule("The Stone of Schwartzhafen")[Arcane Item. Relic. This item gives Noctilus a +1 casting bonus for every friendly unit within 6".],
+  ),
+  vampiric-powers: "Fear Incarnate",
+  special-rules: "The Red Thirst, Vampiric",
+  special-rules-body: [
 - *The Bloody Reaver Deck Guard:* If Count Noctilus is your Army General, you may upgrade one unit of Depth Guard to The Bloody Reaver Deck Guard for a cost of +2 points per model. This unit has the Hatred special rule.
 - *Wraith Storm*: Bound spell (Level 2, cast on 8+). _Wraith Storm_ is a *direct damage area* spell with a range of 18" that uses the large template. Any model touched by the template takes a Strength 3 hit.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on a Necrofex Colossus +270 points
 - May take Magic Items up to a total of 75 points
-
-#entry("CYLOSTRA DIREFIN")
-#namecost("Siren of the Storm", "")
-#profile(
-  (name: "Cylostra Direfin", m: 6, ws: 3, bs: 0, s: 4, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 260),
-  (name: "Damned Knight", m: 4, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 12),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Undead, Spirit)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Cylosta Direfin is a Level 3 Wizard who uses the Lore of the Deep.")
-#field("MAGIC ITEMS", "")
 
-- *The Bordeleaux Flabellum:* Arcane Item. Relic. This item allows Cylostra to roll one additional dice when channelling Power and Dispel dice. In addition, if Cylostra rolls a Miscast, she may re-roll the result on the Miscast table.
-
-#field("SPECIAL RULES", "Ethereal, Fly (6), Terror, Undead")
-
-- *Song of Enthrallment:* At the beginning of each enemy Movement phase, all enemy units that are within 18" and have Line of Sight to Cylostra Direfin must pass a Leadership test or move directly towards her using the Random Movement (2D6) this turn, as well as suffer \-2 to their Leadership until the start of their next Movement phase.
-- *Ghosts of the Past:* If Cylostra Direfin is in your army, you may include an Infantry (Undead) unit of 10+ Damned Knights as a Special Unit. This unit has the Ethereal and Undead special rule, and are armed with hand weapons, shields and heavy armour.
-
-#entry("CAPTAIN DREKLA")
-#namecost("The Silver Hook of Sartosa", "")
-#profile(
-  (name: "Captain Drekla", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 135),
+#unit("CYLOSTRA DIREFIN",
+  subtitle: "Siren of the Storm",
+  profiles: (
+    (name: "Cylostra Direfin", m: 6, ws: 3, bs: 0, s: 4, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 260),
+    (name: "Damned Knight", m: 4, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 12),
+  ),
+  troop-type: "Infantry (Special Character, Undead, Spirit)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "Cylosta Direfin is a Level 3 Wizard who uses the Lore of the Deep.",
+  magic-items: (
+    rule("The Bordeleaux Flabellum")[Arcane Item. Relic. This item allows Cylostra to roll one additional dice when channelling Power and Dispel dice. In addition, if Cylostra rolls a Miscast, she may re-roll the result on the Miscast table.],
+  ),
+  special-rules: "Ethereal, Fly (6), Terror, Undead",
+  special-rules-body: (
+    rule("Song of Enthrallment")[At the beginning of each enemy Movement phase, all enemy units that are within 18" and have Line of Sight to Cylostra Direfin must pass a Leadership test or move directly towards her using the Random Movement (2D6) this turn, as well as suffer \-2 to their Leadership until the start of their next Movement phase.],
+    rule("Ghosts of the Past")[If Cylostra Direfin is in your army, you may include an Infantry (Undead) unit of 10+ Damned Knights as a Special Unit. This unit has the Ethereal and Undead special rule, and are armed with hand weapons, shields and heavy armour.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol, light armour")
-#field("MAGIC ITEMS", "")
 
-- *The Silver Hook:* Magic Weapon. Additional hand weapon. This weapon gives Drekla the Always Strikes First and Armour Piercing (1) special rules.
-- *Skull of King Kalhazzar:* Talisman. This item gives Drekla a Magical Ward (6+).
-
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-
-- *Right Hand of the Pirate King:* If Drekla is in base contact with Luthor Harkon, Luthor gains a 3+ 'Look Out, Sir!' save in close combat with any Hits being allocated against Drekla instead. If Luthor Harkon is slain, Drekla will be subject to the Hatred and Frenzy special rules for the remainder of the game.
-
-#entry("BLACK JENS")
-#namecost("Chief Courtier and Chancellor to Luthor Harkon", "")
-#profile(
-  (name: "Black Jens", m: 4, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 3, ld: 7, points: 60),
+#unit("CAPTAIN DREKLA",
+  subtitle: "The Silver Hook of Sartosa",
+  profiles: (
+    (name: "Captain Drekla", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 135),
+  ),
+  troop-type: "Infantry (Special Character, Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol, light armour",
+  magic-items: (
+    rule("The Silver Hook")[Magic Weapon. Additional hand weapon. This weapon gives Drekla the Always Strikes First and Armour Piercing (1) special rules.],
+    rule("Skull of King Kalhazzar")[Talisman. This item gives Drekla a Magical Ward (6+).],
+  ),
+  special-rules: "The Red Thirst, Vampiric",
+  special-rules-body: (
+    rule("Right Hand of the Pirate King")[If Drekla is in base contact with Luthor Harkon, Luthor gains a 3+ 'Look Out, Sir!' save in close combat with any Hits being allocated against Drekla instead. If Luthor Harkon is slain, Drekla will be subject to the Hatred and Frenzy special rules for the remainder of the game.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Ghoul)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Fear, Poisoned Attacks")
 
-- *Chief Courtier:* If Luthor Harkon is slain or currently subject to Brainlock, Black Jens will count as the Army General.
-
-#field("OPTIONS", "")
-
+#unit("BLACK JENS",
+  subtitle: "Chief Courtier and Chancellor to Luthor Harkon",
+  profiles: (
+    (name: "Black Jens", m: 4, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 3, ld: 7, points: 60),
+  ),
+  troop-type: "Infantry (Special Character, Ghoul)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Fear, Poisoned Attacks",
+  special-rules-body: (
+    rule("Chief Courtier")[If Luthor Harkon is slain or currently subject to Brainlock, Black Jens will count as the Army General.],
+  ),
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("VANGHEIST")
-#namecost("Captain of the Shadewraith", "")
-#profile(
-  (name: "Vangheist", m: 6, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 170),
-  (name: "Damned Crew", m: 6, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 4, points: 12),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Undead, Ghost)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("MAGIC ITEMS", "")
 
-- *The Traitor's Shot:* Pistol. Shots with this weapon always Hits on a 4+ and has the Sniper special rule. In addition, it has the Multiple Shots (3) special rule.
-- *Von Zeich's Last Ingot:* Talisman. This item allows Vangheist to re-roll failed Ward saves against Magical Attacks.
-- *The Liber Malefic Nautica:* Enchanted Item. This item gives Vangheist and his unit the Ambushers special rule.
-
-#field("SPECIAL RULES", "Ethereal, Terror, Undead")
-
-- *Damned Crew:* Vangheist must be accompanied by an Infantry (Undead, Ghost) unit of 10\-30 Damned Crew as a Special Unit. This unit has the Ethereal and Undead special rules, and are armed with two hand weapons. Vangheist is the unit's Leader and may never choose to leave this unit.
-
-#entry("SKRETCH HALF-DEAD")
-#namecost("Captain of the Skabrus", "")
-#profile(
-  (name: "Skretch Half-Dead", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 5, points: 80),
-  (name: "Verminous Crew", m: 5, ws: 2, bs: 1, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 2, points: 5),
+#unit("VANGHEIST",
+  subtitle: "Captain of the Shadewraith",
+  profiles: (
+    (name: "Vangheist", m: 6, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 170),
+    (name: "Damned Crew", m: 6, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 4, points: 12),
+  ),
+  troop-type: "Infantry (Special Character, Undead, Ghost)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  magic-items: (
+    rule("The Traitor's Shot")[Pistol. Shots with this weapon always Hits on a 4+ and has the Sniper special rule. In addition, it has the Multiple Shots (3) special rule.],
+    rule("Von Zeich's Last Ingot")[Talisman. This item allows Vangheist to re-roll failed Ward saves against Magical Attacks.],
+    rule("The Liber Malefic Nautica")[Enchanted Item. This item gives Vangheist and his unit the Ambushers special rule.],
+  ),
+  special-rules: "Ethereal, Terror, Undead",
+  special-rules-body: (
+    rule("Damned Crew")[Vangheist must be accompanied by an Infantry (Undead, Ghost) unit of 10\-30 Damned Crew as a Special Unit. This unit has the Ethereal and Undead special rules, and are armed with two hand weapons. Vangheist is the unit's Leader and may never choose to leave this unit.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Undead, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol")
 
-- *Warp-cage Heart:* Talisman. Skretch has the Magic Resistance (1) and Regeneration (5+) special rules. In addition, at the start of each round of Close Combat, all enemy models in base contact with Skretch must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules.
-
-#field("SPECIAL RULES", "Undead")
-
-- *Verminous Crew:* Skretch Half-Dead must be accompanied by an Infantry (Undead, Skaven) unit of 20+ Verminous Crew as a Core Unit. This unit has the Undead special rule, and are armed with two hand weapons. Skretch Half-Dead is the unit's Leader and may never choose to leave this unit.
-
-#entry("RED HENRI")
-#namecost("Captain of the Butcher Ship", "")
-#profile(
-  (name: "Red Henri", m: 4, ws: 4, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 3, points: 90),
+#unit("SKRETCH HALF-DEAD",
+  subtitle: "Captain of the Skabrus",
+  profiles: (
+    (name: "Skretch Half-Dead", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 5, points: 80),
+    (name: "Verminous Crew", m: 5, ws: 2, bs: 1, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 2, points: 5),
+  ),
+  troop-type: "Infantry (Special Character, Undead, Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol",
+  equipment-body: (
+    rule("Warp-cage Heart")[Talisman. Skretch has the Magic Resistance (1) and Regeneration (5+) special rules. In addition, at the start of each round of Close Combat, all enemy models in base contact with Skretch must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules.],
+  ),
+  special-rules: "Undead",
+  special-rules-body: (
+    rule("Verminous Crew")[Skretch Half-Dead must be accompanied by an Infantry (Undead, Skaven) unit of 20+ Verminous Crew as a Core Unit. This unit has the Undead special rule, and are armed with two hand weapons. Skretch Half-Dead is the unit's Leader and may never choose to leave this unit.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Undead, Zombie)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, light armour")
-#field("MAGIC ITEMS", "")
 
-- *Cursed Morion Helm:* Magic Armour. This item gives Red Henri a 6+ armour save.
-
-#field("SPECIAL RULES", "Gaseous Demise (see Bloated Corpses), Undead")
-#field("OPTIONS", "")
-
+#unit("RED HENRI",
+  subtitle: "Captain of the Butcher Ship",
+  profiles: (
+    (name: "Red Henri", m: 4, ws: 4, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 3, points: 90),
+  ),
+  troop-type: "Infantry (Special Character, Undead, Zombie)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, light armour",
+  magic-items: (
+    rule("Cursed Morion Helm")[Magic Armour. This item gives Red Henri a 6+ armour save.],
+  ),
+  special-rules: "Gaseous Demise (see Bloated Corpses), Undead",
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#entry("KETERLYN, THE BRINE WIFE")
-#namecost("The Syreen of the Cape Ruin", "")
-#profile(
-  (name: "The Brine Wife", m: 6, ws: 4, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 6, points: 140),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Undead, Ghost)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "The Brine Wife is a Level 1 Wizard who uses spells from Lore of the Deep.")
-#field("SPECIAL RULES", "Ethereal, Fly (6), Terror, Undead")
 
-- *Alluring Song:* The Brine Wife has the Syreen's Call (see Syreens) special rule. In addition, enemy units must re-roll successful Leadership tests for this special rule.
+#unit("KETERLYN, THE BRINE WIFE",
+  subtitle: "The Syreen of the Cape Ruin",
+  profiles: (
+    (name: "The Brine Wife", m: 6, ws: 4, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 6, points: 140),
+  ),
+  troop-type: "Infantry (Special Character, Undead, Ghost)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "The Brine Wife is a Level 1 Wizard who uses spells from Lore of the Deep.",
+  special-rules: "Ethereal, Fly (6), Terror, Undead",
+  special-rules-body: (
+    rule("Alluring Song")[The Brine Wife has the Syreen's Call (see Syreens) special rule. In addition, enemy units must re-roll successful Leadership tests for this special rule.],
+  ),
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Antti Sinivuori", "")
+#unit("Additional Material:",
+  subtitle: "Antti Sinivuori",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

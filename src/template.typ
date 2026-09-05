@@ -697,8 +697,8 @@
 }
 
 // The settings that are the entry itself rather than one of its fields.
-#let _UNIT_SETTINGS = ("first", "compact", "profiles", "order", "before", "after",
-                      "labels")
+#let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
+                      "before", "after", "labels")
 
 // A named rule bullet - the `- *Impetuous:* ...` the corpus writes by hand - as a
 // record, the shape `magic-item` and `spell` already have. 872 entries carry one
@@ -811,6 +811,11 @@
   }
 
   let body = {
+    // The run-in line under a special character's name - "High King of
+    // Karaz-a-Karak" - which 463 entries set between the name and the profile.
+    // It is `namecost` with no cost, the same call a magic item's name is set
+    // with, so a subtitle and an item head sit on the same baseline.
+    if "subtitle" in args { namecost(args.subtitle, "") }
     if "profiles" in args { profile(..args.profiles) }
     if "before" in args { args.before }
     for k in order {

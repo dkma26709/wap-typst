@@ -336,26 +336,26 @@ this turn.")))
 
 = CHARACTERS
 
-#entry("SORCERERS OF HASHUT", first: true)
-#profile(
-  (name: "Sorcerer-Prophet", m: 3, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 9, points: 195),
-  (name: "Sorcerer-Priest", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 2, a: 1, ld: 9, points: 80),
-)
-#field("TROOP TYPE", "Infantry (Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Sorcerer-Priest is a Level 1 Wizard. A Sorcerer-Prophet is a Level 3 Wizard. They use one of the following")
-
+#unit("SORCERERS OF HASHUT",
+  first: true,
+  profiles: (
+    (name: "Sorcerer-Prophet", m: 3, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 9, points: 195),
+    (name: "Sorcerer-Priest", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 2, a: 1, ld: 9, points: 80),
+  ),
+  troop-type: "Infantry (Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Sorcerer-Priest is a Level 1 Wizard. A Sorcerer-Prophet is a Level 3 Wizard. They use one of the following",
+  magic-body: [
 Lores of Magic:
 
 - Death
 - Fire
 - Hashut
 - Metal
-
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Relentless, Resolute, Sorcerer's Curse")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Blackshard Armour, Contempt, Relentless, Resolute, Sorcerer's Curse",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take Naptha Bombs +10 points
 - May choose one of the following:
@@ -370,21 +370,22 @@ Lores of Magic:
   - Bale Taurus (Sorcerer-Prophet only) +175 points
 - A Sorcerer-Priest may take Magic Items up to a total of 50 points
 - A Sorcerer-Prophet may take Magic Items up to a total of 100 points
-
-#entry("DESPOTS")
-#profile(
-  (name: "Overlord", m: 3, ws: 7, bs: 4, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 10, points: 125),
-  (name: "Overseer", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 9, points: 60),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Relentless, Resolute")
 
-- *Infernal Cohort:* You may upgrade one unit of Warriors with heavy armour for +1.5 points/model for each model with this special rule in your army.
-
-#field("OPTIONS", "")
-
+#unit("DESPOTS",
+  profiles: (
+    (name: "Overlord", m: 3, ws: 7, bs: 4, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 10, points: 125),
+    (name: "Overseer", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 9, points: 60),
+  ),
+  troop-type: "Infantry (Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Blackshard Armour, Contempt, Relentless, Resolute",
+  special-rules-body: (
+    rule("Infernal Cohort")[You may upgrade one unit of Warriors with heavy armour for +1.5 points/model for each model with this special rule in your army.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Fireglaive +15 points
@@ -407,26 +408,27 @@ Lores of Magic:
 NOTES:
 
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("DAEMONSMITH")
-#profile(
-  (name: "Daemonsmith", m: 3, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 60),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Daemonsmith who is a Wizard uses one of the following Lores of Magic:")
 
+#unit("DAEMONSMITH",
+  profiles: (
+    (name: "Daemonsmith", m: 3, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 60),
+  ),
+  troop-type: "Infantry (Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Daemonsmith who is a Wizard uses one of the following Lores of Magic:",
+  magic-body: [
 - Fire
 - Metal
-
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Relentless, Resolute, Sorcerer's Curse")
-
+  ],
+  special-rules: "Blackshard Armour, Contempt, Relentless, Resolute, Sorcerer's Curse",
+  special-rules-body: [
 - *Infernal Engineer:* One war machine or Hellcannon that is within 3" of a Daemonsmith can use their Ballistic Skill or re-roll one artillery dice or scatter dice during each Shooting phase. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of the Daemonsmith are fired.
 - *"Stand Back Sir!":* A model with this special rule that is within 3" of a war machine is allowed to take a "Look Out Sir!" roll just as if he was within 3" of a unit of five or more models of the same troop type as himself. If the roll is successful, the hit is resolved instead against the nearest friendly war machine.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be upgraded to a Level 1 Wizard +50 points
 - May choose one of the following:
   - Pistol +5 points
@@ -437,17 +439,18 @@ NOTES:
   - Light armour +3 points
   - Medium armour +9 points
 - May take Magic Items up to a total of 50 points
-
-#entry("BULL CENTAUR TAUR'RUK")
-#profile(
-  (name: "Bull Centaur Taur'ruk", m: 7, ws: 5, bs: 2, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 9, points: 140),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Cavalry (Character, Chaos Dwarf, Bull Centaur)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Contempt, Natural Armour (5+)")
-#field("OPTIONS", "")
 
+#unit("BULL CENTAUR TAUR'RUK",
+  profiles: (
+    (name: "Bull Centaur Taur'ruk", m: 7, ws: 5, bs: 2, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 9, points: 140),
+  ),
+  troop-type: "Monstrous Cavalry (Character, Chaos Dwarf, Bull Centaur)",
+  base-size: "50x75",
+  equipment: "Hand weapon",
+  special-rules: "Contempt, Natural Armour (5+)",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +4 points
   - Great weapon +12 points
@@ -456,21 +459,21 @@ NOTES:
   - Medium armour +9 points
 - May take a shield +5 points
 - May take Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Bull Centaur Taur'ruk may not be the Army General.
-
-#entry("HOBGOBLIN CHIEFTAIN")
-#profile(
-  (name: "Hobgoblin Chieftain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 40),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Hobgoblin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers")
-#field("OPTIONS", "")
 
+#unit("HOBGOBLIN CHIEFTAIN",
+  profiles: (
+    (name: "Hobgoblin Chieftain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 40),
+  ),
+  troop-type: "Infantry (Character, Hobgoblin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Backstabbers, Cowardly Despoilers",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Light lance +5 points
@@ -481,100 +484,104 @@ NOTES:
 - May take a shield +5 points
 - May be mounted on a Giant Wolf +15 points
 - May take Magic Items up to a total of 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Hobgoblin Chieftain may not be the Army General.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#compact-entry("GIANT WOLF")[
-#profile(
-  (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: "-"),
+#unit("GIANT WOLF",
+  compact: true,
+  profiles: (
+    (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Canine)",
+  base-size: "25x50",
 )
-#field("TROOP TYPE", "War Beast (Canine)")
-#field("BASE SIZE", "25x50")
-]
 
-#entry("PALANQUIN")
-#profile(
-  (name: "Palanquin", m: 3, ws: 5, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 4, ld: "-", points: "-"),
-)
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Contempt, Inspiring Presence (6), Relentless, Resolute")
-#field("NOTES", "")
-
+#unit("PALANQUIN",
+  profiles: (
+    (name: "Palanquin", m: 3, ws: 5, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 4, ld: "-", points: "-"),
+  ),
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Contempt, Inspiring Presence (6), Relentless, Resolute",
+  notes: [
 - A Palanquin adds +1 Line of Sight value and +4 to the Unit Strength of any model mounted on it.
-
-#entry("GREAT TAURUS")
-#profile(
-  (name: "Great Taurus", m: 6, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Beast (Chaos Beast, Bovine)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Blazing Body, Fly (8), Mighty Blow (1)")
 
-- *Fuelled by Fire:* If a model with this special rule is Hit by Flaming Attack, it immediately regains 1 Wound lost earlier in the battle on the roll of a 5+.
-
-#field("UPGRADES", "")
-
-- *Flaming Breath:* The model gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-- *Bloodrage:* The model gains the Frenzy and Hatred special rules.
-
-#field("OPTIONS", "")
-
+#unit("GREAT TAURUS",
+  profiles: (
+    (name: "Great Taurus", m: 6, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 6, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Chaos Beast, Bovine)",
+  base-size: "50x50",
+  special-rules: "Blazing Body, Fly (8), Mighty Blow (1)",
+  special-rules-body: (
+    rule("Fuelled by Fire")[If a model with this special rule is Hit by Flaming Attack, it immediately regains 1 Wound lost earlier in the battle on the roll of a 5+.],
+  ),
+  upgrades: (
+    rule("Flaming Breath")[The model gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.],
+    rule("Bloodrage")[The model gains the Frenzy and Hatred special rules.],
+  ),
+  options: [
 - May take Bloodrage +30 points
 - May take Flaming Breath +30 points
-
-#entry("BALE TAURUS")
-#profile(
-  (name: "Bale Taurus", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monster (Chaos Beast, Bovine)")
-#field("BASE SIZE", "50x100")
-#field("SPECIAL RULES", "Blazing Body, Fly (8)")
 
-- *Fuelled by Fire:* If a model with this special rule is the target of a non-physical Flaming Attack, it immediately regains 1 Wound lost earlier in the battle.
-
-#field("UPGRADES", "")
-
-- *Flaming Breath:* This gives the Taurus a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-- *Bloodrage:* This gives the Taurus the Frenzy and Hatred special rules.
-
-#field("OPTIONS", "")
-
+#unit("BALE TAURUS",
+  profiles: (
+    (name: "Bale Taurus", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 6, points: "-"),
+  ),
+  troop-type: "Monster (Chaos Beast, Bovine)",
+  base-size: "50x100",
+  special-rules: "Blazing Body, Fly (8)",
+  special-rules-body: (
+    rule("Fuelled by Fire")[If a model with this special rule is the target of a non-physical Flaming Attack, it immediately regains 1 Wound lost earlier in the battle.],
+  ),
+  upgrades: (
+    rule("Flaming Breath")[This gives the Taurus a Strength 4 Breath Weapon with the Flaming Attacks special rule.],
+    rule("Bloodrage")[This gives the Taurus the Frenzy and Hatred special rules.],
+  ),
+  options: [
 - May take Bloodrage +30 points
 - May take Flaming Breath +30 points
-
-#entry("ALTAR OF HASHUT")
-#profile(
-  (name: "Altar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: "-"),
-  (name: "Altar Guard", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "2 Altar Guards (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, heavy armour")
-#field("SPECIAL RULES", "")
 
+#unit("ALTAR OF HASHUT",
+  profiles: (
+    (name: "Altar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: "-"),
+    (name: "Altar Guard", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "2 Altar Guards (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, heavy armour",
+  special-rules: [
 - *Altar of Hashut*: A Sorcerer-Prophet with an Altar of Hashut gains the Magical Ward (4+) and Unbreakable special rules. In addition, their troop type changes to War Machine and they count as being part of the crew. Randomise any missile hits between the Sorcerer-Prophet and the crew. The Sorcerer-Prophet can never choose to leave the Altar during the game. If the Sorcerer-Prophet is killed, the whole Altar is also removed as a casualty.
 - *Blessing of Hashut:* A Sorcerer-Prophet on an Altar of Hashut add +12" to the range of their spells.
 - *Sacrifices to Hashut:* Once per Magic phase, the Sorcerer-Prophet may sacrifice one of the slaves chained to the Altar to Hashut before they attempt to cast a spell. Roll a D6 and add the result to the casting result of the spell. However, if a 1 is rolled, the Sorcerer-Prophet instead suffers a Wound with no saves of any kind possible.
+  ],
+)
 
 = CORE UNITS
 
-#entry("WARRIORS", first: true)
-#profile(
-  (name: "Warrior", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 7),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("SPECIAL RULES", "Contempt, Relentless, Resolute")
-#field("OPTIONS", "")
-
+#unit("WARRIORS",
+  first: true,
+  profiles: (
+    (name: "Warrior", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 7),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  special-rules: "Contempt, Relentless, Resolute",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Great weapons +3 points/model
@@ -583,18 +590,19 @@ NOTES:
 - May upgrade one Warrior to a Musician +5 points
 - May upgrade one Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("RAZERS")
-#profile(
-  (name: "Razer", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 11),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, blunderbuss, light armour")
-#field("SPECIAL RULES", "Contempt, Relentless, Resolute")
-#field("OPTIONS", "")
 
+#unit("RAZERS",
+  profiles: (
+    (name: "Razer", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 11),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, blunderbuss, light armour",
+  special-rules: "Contempt, Relentless, Resolute",
+  options: [
 - May replace blunderbusses with one of the following:
   - Crossbows free
   - Flamehurlers free
@@ -603,20 +611,19 @@ NOTES:
 - May upgrade one Blunderbusser to a Musician +5 points
 - May upgrade one Blunderbusser to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("CUTTHROATS")
-
-#profile(
-  (name: "Cutthroat", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 3.5),
+  ],
 )
 
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Hobgoblin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Treacherous Gits")
-#field("OPTIONS", "")
-
+#unit("CUTTHROATS",
+  profiles: (
+    (name: "Cutthroat", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 3.5),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Hobgoblin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Backstabbers, Cowardly Despoilers, Treacherous Gits",
+  options: [
 - May take spears +0.5 point/model
 - May take throwing weapons +1 point/model
 - May take light armour +0.5 point/model
@@ -624,39 +631,39 @@ NOTES:
 - May upgrade one Cutthroat to a Musician +5 points
 - May upgrade one Cutthroat to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ARCHERS")
-
-#profile(
-  (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 4.5),
+  ],
 )
 
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Hobgoblin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shortbow")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Treacherous Gits")
-#field("OPTIONS", "")
-
+#unit("ARCHERS",
+  profiles: (
+    (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 4.5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Hobgoblin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shortbow",
+  special-rules: "Backstabbers, Cowardly Despoilers, Treacherous Gits",
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Archer to a Leader +5 points
 - May upgrade one Archer to a Musician +5 points
 - May upgrade one Archer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("WOLF RAIDERS")
-#profile(
-  (name: "Wolf Raider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 9),
-  (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Hobgoblin)")
-#field("MOUNT", "Giant Wolf (Canine)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Fast Cavalry, Treacherous Gits")
-#field("OPTIONS", "")
 
+#unit("WOLF RAIDERS",
+  profiles: (
+    (name: "Wolf Raider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 9),
+    (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Hobgoblin)",
+  mount: "Giant Wolf (Canine)",
+  base-size: "25x50",
+  equipment: "Hand weapon",
+  special-rules: "Backstabbers, Cowardly Despoilers, Fast Cavalry, Treacherous Gits",
+  options: [
 - May take light lances +1 point/model
 - May take shortbows +1 point/model
 - May take light armour +1 point/model
@@ -666,72 +673,74 @@ NOTES:
 - May upgrade one Wolf Raider to a Musician +5 points
 - May upgrade one Wolf Raider to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ORC SLAVES")
-#profile(
-  (name: "Orc Slave", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 4, points: 6),
-  (name: "Overseer", m: 4, ws: 3, bs: 3, s: 4, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Orc)")
-#field("HANDLER", "Overseer (Hobgoblin)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Animosity, Expendable, Independent, Mixed Unit")
 
-- *Hobgoblin Overseer:* The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.
-- *Ignore Goblin Panic:* Orcs treat Goblins as Expendable.
-
-#field("OPTIONS", "")
-
+#unit("ORC SLAVES",
+  profiles: (
+    (name: "Orc Slave", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 4, points: 6),
+    (name: "Overseer", m: 4, ws: 3, bs: 3, s: 4, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Orc)",
+  handler: "Overseer (Hobgoblin)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  special-rules: "Animosity, Expendable, Independent, Mixed Unit",
+  special-rules-body: (
+    rule("Hobgoblin Overseer")[The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.],
+    rule("Ignore Goblin Panic")[Orcs treat Goblins as Expendable.],
+  ),
+  options: [
 - May choose one of the following:
   - Spears +0.5 points/model
   - Additional hand weapons +1 point/model
   - Great weapons +3 points/model
 - May take shields (unless armed with additional hand weapons or great weapons) +1 point/model
 - May include one Hobgoblin Overseer +20 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not have more units of Orc Slaves than you have units of Hobgoblin Cutthroats or Hobgoblin Archers in your army.
-
-#entry("GOBLIN SLAVES")
-#profile(
-  (name: "Goblin Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: 2),
-  (name: "Overseer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Goblin)")
-#field("HANDLER", "Overseer (Hobgoblin)")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Animosity, Expendable, Independent, Mixed Unit")
 
-- *Fear Elves:* Models with this special rule treat all Elves as causing Fear against them.
-- *Hobgoblin Overseer:* The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.
-
-#field("OPTIONS", "")
-
+#unit("GOBLIN SLAVES",
+  profiles: (
+    (name: "Goblin Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: 2),
+    (name: "Overseer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Goblin)",
+  handler: "Overseer (Hobgoblin)",
+  equipment: "Hand weapon",
+  special-rules: "Animosity, Expendable, Independent, Mixed Unit",
+  special-rules-body: (
+    rule("Fear Elves")[Models with this special rule treat all Elves as causing Fear against them.],
+    rule("Hobgoblin Overseer")[The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.],
+  ),
+  options: [
 - May take spears +0.5 points/model
 - May take shields +1 point/model
 - May include one Hobgoblin Overseer +20 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not have more units of Goblin Slaves than you have units of Hobgoblin Cutthroats or Hobgoblin Archers in your army.
+  ],
+)
 
 = SPECIAL UNITS
 
-#entry("INFERNAL GUARD", first: true)
-#profile(
-  (name: "Infernal Guard", m: 3, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 11),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour, shields")
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Relentless, Resolute")
-#field("OPTIONS", "")
-
+#unit("INFERNAL GUARD",
+  first: true,
+  profiles: (
+    (name: "Infernal Guard", m: 3, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 11),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour, shields",
+  special-rules: "Blackshard Armour, Contempt, Relentless, Resolute",
+  options: [
 - May replace shields with one of the following:
   - Great weapons +2 points/model
   - Fireglaives +3 points/model
@@ -739,31 +748,34 @@ NOTES:
 - May upgrade one Infernal Guard to a Musician +5 points
 - May upgrade one Infernal Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("ZEALOT BERZERKERS")
-#profile(
-  (name: "Zealot Berzerker", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 9, points: 12),
+  ],
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, light armour")
-#field("SPECIAL RULES", "Contempt, Frenzy, Hatred, Relentless, Resolute, Vanguard")
-#field("OPTIONS", "")
 
+#unit("ZEALOT BERZERKERS",
+  profiles: (
+    (name: "Zealot Berzerker", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 9, points: 12),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, light armour",
+  special-rules: "Contempt, Frenzy, Hatred, Relentless, Resolute, Vanguard",
+  options: [
 - May be upgraded to Skirmishers +1 point/model
 - May upgrade one Zealot Berzerker to a Leader +5 points
 - May upgrade one Zealot Berzerker to a Musician +5 points
 - May upgrade one Zealot Berzerker to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("DEVASTATORS")
-#profile(
-  (name: "Devastator", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 25),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("EQUIPMENT", "Hand weapon, medium armour")
 
+#unit("DEVASTATORS",
+  profiles: (
+    (name: "Devastator", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 2, a: 2, ld: 9, points: 25),
+  ),
+  troop-type: "Infantry (Chaos Dwarf)",
+  equipment: "Hand weapon, medium armour",
+  equipment-body: [
 - *Bazuka:* A bazuka is an artillery weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "7", "Cumbersome, Flaming Attacks, Multiple Wounds (D3), Ponderous"))
@@ -775,29 +787,29 @@ NOTES:
 - *Inferno Gun:* An inferno gun is an organ gun with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (Artillery Dice), Ponderous, Rapid Fire"))
-#field("SPECIAL RULES", "Contempt, Relentless, Resolute, Weapon Team")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Contempt, Relentless, Resolute, Weapon Team",
+  options: [
 - Must choose one of the following:
   - Bazuka free
   - Inferno Gun +25 points
   - Earthshaker Mortar +40 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Devastators have a Unit Strength of 2.
-
-#entry("BULL CENTAURS")
-#profile(
-  (name: "Bull Centaur", m: 7, ws: 4, bs: 2, s: 4, t: 4, w: 1, i: 3, a: 2, ld: 8, points: 18),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Chaos Dwarf, Bull Centaur)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "Contempt, Natural Armour (6+)")
-#field("OPTIONS", "")
 
+#unit("BULL CENTAURS",
+  profiles: (
+    (name: "Bull Centaur", m: 7, ws: 4, bs: 2, s: 4, t: 4, w: 1, i: 3, a: 2, ld: 8, points: 18),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Chaos Dwarf, Bull Centaur)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, light armour",
+  special-rules: "Contempt, Natural Armour (6+)",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +2 points/model
   - Great weapons +4 points/model
@@ -807,74 +819,77 @@ NOTES:
 - May upgrade one Bull Centaur to a Musician +5 points
 - May upgrade one Bull Centaur to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("WHIRLWIND/TENDERISER")
-#profile(
-  (name: "Whirlwind/Tenderizer", m: 6, ws: "-", bs: "-", s: 4, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
-  (name: "Bull Centaur", m: "-", ws: 4, bs: 2, s: 4, t: "-", w: "-", i: 3, a: 2, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 6+)")
-#field("CREW", "1 Bull Centaur (Chaos Dwarf, Bull Centaur)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "Contempt, Natural Armour (6+)")
 
-- *Tenderizer:* In addition to its normal Impact Hits, the Tenderizer causes D3 Impact Hits at Strength 6 with the Multiple Wounds (D3) special rule at the start of each round of close combat. Note that this only applies when fighting to the Tenderizer's front. The Bull Centaur may only attack when fighting to the Tenderizer's flank or rear.
-- *Whirlwind:* In addition to its normal Impact Hits, the Whirlwind causes D6 Impact Hits at Strength 5 at the start of each round of close combat. Note that this only applies when fighting to the Whirlwind's front. The Bull Centaur may only attack when fighting to the Whirlwind's flank or rear.
-
-#field("NOTES", "")
-
+#unit("WHIRLWIND/TENDERISER",
+  profiles: (
+    (name: "Whirlwind/Tenderizer", m: 6, ws: "-", bs: "-", s: 4, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 100),
+    (name: "Bull Centaur", m: "-", ws: 4, bs: 2, s: 4, t: "-", w: "-", i: 3, a: 2, ld: 8, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 6+)",
+  crew: "1 Bull Centaur (Chaos Dwarf, Bull Centaur)",
+  base-size: "50x100",
+  equipment: "Hand weapon, light armour",
+  special-rules: "Contempt, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Tenderizer")[In addition to its normal Impact Hits, the Tenderizer causes D3 Impact Hits at Strength 6 with the Multiple Wounds (D3) special rule at the start of each round of close combat. Note that this only applies when fighting to the Tenderizer's front. The Bull Centaur may only attack when fighting to the Tenderizer's flank or rear.],
+    rule("Whirlwind")[In addition to its normal Impact Hits, the Whirlwind causes D6 Impact Hits at Strength 5 at the start of each round of close combat. Note that this only applies when fighting to the Whirlwind's front. The Bull Centaur may only attack when fighting to the Whirlwind's flank or rear.],
+  ),
+  notes: [
 - You must choose whether or not the model is a Whirlwind or a Tenderizer while making your army list.
-
-#entry("SNEAKY GITS")
-#profile(
-  (name: "Sneaky Git", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Hobgoblin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Poisoned Attacks, Treacherous Gits")
 
-- *Dirty, Rotten, Sneaky:* After each round of combat is fought, the Sneaky Gits may Fight in an Extra Rank each turn for as long as they are in combat with that enemy. So, after one turn, they fight in one additional rank, after two turns they fight in two additional ranks, and so on.
-
-#field("OPTIONS", "")
-
+#unit("SNEAKY GITS",
+  profiles: (
+    (name: "Sneaky Git", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Hobgoblin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  special-rules: "Backstabbers, Cowardly Despoilers, Poisoned Attacks, Treacherous Gits",
+  special-rules-body: (
+    rule("Dirty, Rotten, Sneaky")[After each round of combat is fought, the Sneaky Gits may Fight in an Extra Rank each turn for as long as they are in combat with that enemy. So, after one turn, they fight in one additional rank, after two turns they fight in two additional ranks, and so on.],
+  ),
+  options: [
 - May be upgraded to Scouts +1 point/model
 - May be upgraded to Skirmishers +1 point/model
 - May upgrade one Sneaky Git to a Leader +5 points
-
-#entry("BOLT THROWA")
-#profile(
-  (name: "Bolt Throwa", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: 3, i: "-", a: "-", ld: "-", points: 35),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Hobgoblins (Hobgoblin)")
-#field("BASE SIZE", "50x50 (Bolt Throwa), 20x20 or 25x25 (Hobgoblin)")
-#field("EQUIPMENT", "Hand weapon, bolt thrower")
-#field("SPECIAL RULES", "")
 
-- *Slipshod:* If the To Hit roll for a shooting attack made by a Bolt Throwa is a 1 (before any modifiers are applied), then it misfires. Roll on the Stone Thrower Misfire table in the Warhammer rulebook and apply the result to the Bolt Throwa.
-
-#field("NOTES", "")
-
+#unit("BOLT THROWA",
+  profiles: (
+    (name: "Bolt Throwa", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: 3, i: "-", a: "-", ld: "-", points: 35),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Hobgoblins (Hobgoblin)",
+  base-size: "50x50 (Bolt Throwa), 20x20 or 25x25 (Hobgoblin)",
+  equipment: "Hand weapon, bolt thrower",
+  special-rules: (
+    rule("Slipshod")[If the To Hit roll for a shooting attack made by a Bolt Throwa is a 1 (before any modifiers are applied), then it misfires. Roll on the Stone Thrower Misfire table in the Warhammer rulebook and apply the result to the Bolt Throwa.],
+  ),
+  notes: [
 - You may take 1\-2 Bolt Throwas as a single Special choice.
-
-#entry("BLACK ORCS")
-#profile(
-  (name: "Black Orc", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 8, points: 12),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Black Orc)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("SPECIAL RULES", "Immunity (Psychology), Independent, Mighty Blow (1)")
 
-- *Armed to da Teef:* If a model with this special rule has more than one weapon and/or a shield, they may choose which weapon combination they want to use at the start of each round of close combat.
-
-#field("OPTIONS", "")
-
+#unit("BLACK ORCS",
+  profiles: (
+    (name: "Black Orc", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Black Orc)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon, medium armour",
+  special-rules: "Immunity (Psychology), Independent, Mighty Blow (1)",
+  special-rules-body: (
+    rule("Armed to da Teef")[If a model with this special rule has more than one weapon and/or a shield, they may choose which weapon combination they want to use at the start of each round of close combat.],
+  ),
+  options: [
 - Must take one of the following:
   - Shields free
   - Spears free
@@ -890,143 +905,152 @@ NOTES:
 - May upgrade one Black Orc to a Musician +5 points
 - May upgrade one Black Orc to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("OGRE SLAVES")
-#profile(
-  (name: "Ogre Slave", m: 4, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 4, points: 24),
-  (name: "Hobgoblin Overseer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Expendable, Independent, Mixed Unit")
 
-- *Hobgoblin Overseer:* The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.
-- *Ogre Charge:* Ogres have the Impact Hits (1) special rule. A unit of Ogres adds its current Rank Bonus to the Strength of any Impact Hits they inflict.
-
-#field("OPTIONS", "")
-
+#unit("OGRE SLAVES",
+  profiles: (
+    (name: "Ogre Slave", m: 4, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 4, points: 24),
+    (name: "Hobgoblin Overseer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 2, ld: 6, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Expendable, Independent, Mixed Unit",
+  special-rules-body: (
+    rule("Hobgoblin Overseer")[The Hobgoblin Overseer follows the rules for normal Leaders; with the following exceptions: the Hobgoblin Overseer is always placed in the rear rank of the unit, and may be the only model in that rank. In addition, the unit must take a Leadership test at the start of each of their turns. If failed, the unit will suffer D6 Strength 3 Hits.],
+    rule("Ogre Charge")[Ogres have the Impact Hits (1) special rule. A unit of Ogres adds its current Rank Bonus to the Strength of any Impact Hits they inflict.],
+  ),
+  options: [
 - May choose one of the following:
   - Bucklers +3 points/model
   - Additional hand weapons +3 points/model
   - Great weapons +6 points/model
 - May include one Hobgoblin Overseer +20 points
-
-#entry("K'DAAI FIREBORN")
-#profile(
-  (name: "K'daai Fireborn", m: 6, ws: 4, bs: 2, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: 50),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Daemon)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "Blazing Body, Daemonic, Independent")
 
-- *Burning Bright:* From the second game turn onwards, at the start of each of your turns a Toughness test must be made for each K'daai unit. If this is failed, it suffers D3 Wounds with no saves allowed.
-
-#field("OPTIONS", "")
-
+#unit("K'DAAI FIREBORN",
+  profiles: (
+    (name: "K'daai Fireborn", m: 6, ws: 4, bs: 2, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: 50),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Daemon)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon, light armour",
+  special-rules: "Blazing Body, Daemonic, Independent",
+  special-rules-body: (
+    rule("Burning Bright")[From the second game turn onwards, at the start of each of your turns a Toughness test must be made for each K'daai unit. If this is failed, it suffers D3 Wounds with no saves allowed.],
+  ),
+  options: [
 - May upgrade one K'daai Fireborn to a Leader +5 points
-
-#entry("IRON DAEMON")
-#profile(
-  (name: "Iron Daemon", m: 6, ws: "-", bs: "-", s: 6, t: 6, w: 6, i: "-", a: "-", ld: "-", points: 190),
-  (name: "Crew", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 4+)")
-#field("CREW", "3 Crew (Chaos Dwarf)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, steam cannonade, light armour")
 
+#unit("IRON DAEMON",
+  profiles: (
+    (name: "Iron Daemon", m: 6, ws: "-", bs: "-", s: 6, t: 6, w: 6, i: "-", a: "-", ld: "-", points: 190),
+    (name: "Crew", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 4+)",
+  crew: "3 Crew (Chaos Dwarf)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon, steam cannonade, light armour",
+  equipment-body: [
 - *Steam Cannonade:* A steam cannonade is an organ gun with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (Artillery Dice + D6), Rapid Fire"))
 
 If a Destroyed! result is rolled on the Blackpowder Misfire chart, the Steam Cannonade is destroyed and may not be used again. In addition, the Iron Daemon it is mounted on suffers D6 wounds with no saves allowed.
-
-#field("SPECIAL RULES", "Impact hits (D6+1), Relentless, Terror, Unbreakable")
-
-- *Demolition:* Iron Daemons ignore terrain classified as Obstacles and ignores damage from Dangerous Terrain, except Rivers and Marshland, which are treated as Impassable terrain.
-- *Grind Attack:* The Iron Daemon has the Stomp (D6) special rule like a Monster in any turn it does not charge, but only against units to its front.
-- *Lumbering and Unstoppable:* When charging, the Iron Daemon does not use the Swiftstride special rule. If a double 1 is rolled for its charge distance, the Iron Daemon does not move at all this turn. Iron Daemons cannot overrun or pursue in combat if they destroy or rout their foes.
-
-#field("UPGRADES", "")
-
-- *Skullcracker:* The Iron Daemon gains the Impact Hits (2D6) special rule and its Grind Attack inflicts 2D6 hits instead of D6. In addition, its Stomp works against all models regardless of their Line of Sight value.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Impact hits (D6+1), Relentless, Terror, Unbreakable",
+  special-rules-body: (
+    rule("Demolition")[Iron Daemons ignore terrain classified as Obstacles and ignores damage from Dangerous Terrain, except Rivers and Marshland, which are treated as Impassable terrain.],
+    rule("Grind Attack")[The Iron Daemon has the Stomp (D6) special rule like a Monster in any turn it does not charge, but only against units to its front.],
+    rule("Lumbering and Unstoppable")[When charging, the Iron Daemon does not use the Swiftstride special rule. If a double 1 is rolled for its charge distance, the Iron Daemon does not move at all this turn. Iron Daemons cannot overrun or pursue in combat if they destroy or rout their foes.],
+  ),
+  upgrades: (
+    rule("Skullcracker")[The Iron Daemon gains the Impact Hits (2D6) special rule and its Grind Attack inflicts 2D6 hits instead of D6. In addition, its Stomp works against all models regardless of their Line of Sight value.],
+  ),
+  options: [
 - May replace Steam Cannonade with a Skullcracker +30 points
 - May be given the Hellbound special rule +30 points
-
-#entry("MAGMA CANNON")
-#profile(
-  (name: "Magma Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Chaos Dwarf)")
-#field("BASE SIZE", "50x100 (Magma Cannon), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, magma cannon, light armour")
 
+#unit("MAGMA CANNON",
+  profiles: (
+    (name: "Magma Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Chaos Dwarf)",
+  base-size: "50x100 (Magma Cannon), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, magma cannon, light armour",
+  equipment-body: [
 - *Magma Cannon:* A magma cannon is a fire thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6\"", "5", "Flaming Attacks, Multiple Wounds (D3)"))
-#field("SPECIAL RULES", "Contempt, Resolute")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Contempt, Resolute",
+  options: [
 - May take medium armour +3 points
 - May be given the Hellbound special rule +30 points
-
-#entry("DEATHSHRIEKER ROCKET LAUNCHER")
-#profile(
-  (name: "Rocket Launcher", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 95),
-  (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Chaos Dwarf)")
-#field("BASE SIZE", "50x75 (Rocket Launcher), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, rocket launcher, demolition rocket, light armour")
 
+#unit("DEATHSHRIEKER ROCKET LAUNCHER",
+  profiles: (
+    (name: "Rocket Launcher", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 95),
+    (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Chaos Dwarf)",
+  base-size: "50x75 (Rocket Launcher), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, rocket launcher, demolition rocket, light armour",
+  equipment-body: [
 - *Demolition Rocket:* Instead of firing normally, a Fire Rain Rocket may fire a demolition rocket. Demolition rockets are rocket launchers that do not fire indirectly by default, and uses the small template with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "4(8)", "Flaming Attacks, Multiple Wounds (D3)"))
-#field("SPECIAL RULES", "Contempt, Resolute")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Contempt, Resolute",
+  options: [
 - May take medium armour +3 points
 - May be given the Hellbound special rule +30 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("IMMORTALS", first: true)
-#profile(
-  (name: "Immortal", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 9, points: 16),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, heavy armour")
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Relentless, Stubborn")
-#field("OPTIONS", "")
-
+#unit("IMMORTALS",
+  first: true,
+  profiles: (
+    (name: "Immortal", m: 3, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 9, points: 16),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, heavy armour",
+  special-rules: "Blackshard Armour, Contempt, Relentless, Stubborn",
+  options: [
 - May upgrade one Immortal to a Leader +5 points
 - May upgrade one Immortal to a Musician +5 points
 - May upgrade one Immortal to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 75 points
-
-#entry("BULL CENTAUR RENDERS")
-#profile(
-  (name: "Bull Centaur Render", m: 7, ws: 4, bs: 2, s: 4, t: 5, w: 3, i: 3, a: 3, ld: 8, points: 50),
+  ],
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Chaos Dwarf, Bull Centaur)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Hand weapon, light armour, shield")
-#field("SPECIAL RULES", "Contempt, Natural Armour (5+)")
-#field("OPTIONS", "")
 
+#unit("BULL CENTAUR RENDERS",
+  profiles: (
+    (name: "Bull Centaur Render", m: 7, ws: 4, bs: 2, s: 4, t: 5, w: 3, i: 3, a: 3, ld: 8, points: 50),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Chaos Dwarf, Bull Centaur)",
+  base-size: "50x75",
+  equipment: "Hand weapon, light armour, shield",
+  special-rules: "Contempt, Natural Armour (5+)",
+  options: [
 - May replace shields with one of the following:
   - Additional hand weapons free
   - Great weapons +6 points/model
@@ -1035,72 +1059,75 @@ If a Destroyed! result is rolled on the Blackpowder Misfire chart, the Steam Can
 - May upgrade one Bull Centaur Render to a Musician +5 points
 - May upgrade one Bull Centaur Render to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("LAMMASU")
-#profile(
-  (name: "Lammasu", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 1, a: 2, ld: 8, points: 155),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Chaos Beast)")
-#field("MAGIC", "A Lammasu is a Level 1 Wizard that uses one of the following Lores of Magic:")
 
+#unit("LAMMASU",
+  profiles: (
+    (name: "Lammasu", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 1, a: 2, ld: 8, points: 155),
+  ),
+  troop-type: "Monstrous Creature (Chaos Beast)",
+  magic: "A Lammasu is a Level 1 Wizard that uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Fire
 - Shadow
-
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Fly (8), Magic Resistance (3)")
-
-- *Sorcerous Miasma:* Magic Weapons lose all of their magical properties and are treated as a mundane weapon of the same type while the models remain in base contact with the Lammasu (including the rider of the Lammasu itself).
-
-#field("UPGRADES", "")
-
-- *Mace Tail:* The Lammasu gains +1 Attack.
-- *Sorcerous Exhalation:* This gives the Lammasu a Strength 3 Breath Weapon with the Magical Attacks special rule.
-
-#field("OPTIONS", "")
-
+  ],
+  base-size: "50x50 or 50x75",
+  special-rules: "Fly (8), Magic Resistance (3)",
+  special-rules-body: (
+    rule("Sorcerous Miasma")[Magic Weapons lose all of their magical properties and are treated as a mundane weapon of the same type while the models remain in base contact with the Lammasu (including the rider of the Lammasu itself).],
+  ),
+  upgrades: (
+    rule("Mace Tail")[The Lammasu gains +1 Attack.],
+    rule("Sorcerous Exhalation")[This gives the Lammasu a Strength 3 Breath Weapon with the Magical Attacks special rule.],
+  ),
+  options: [
 - May take an additional Wizard Level +35 points
 - May take Mace Tail +15 points
 - May take Sorcerous Exhalation +20 points
-
-#entry("DREADQUAKE MORTAR")
-#profile(
-  (name: "Dreadquake Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 130),
-  (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
-  (name: "Ogre Slave", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: ""),
+  ],
+  order: ("troop-type", "magic", "base-size", "special-rules", "upgrades", "options"),
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Chaos Dwarf)")
-#field("BASE SIZE", "50x75 or 100x150 (Dreadquake Mortar), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, dreadquake mortar, light armour")
 
+#unit("DREADQUAKE MORTAR",
+  profiles: (
+    (name: "Dreadquake Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 130),
+    (name: "Crew", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+    (name: "Ogre Slave", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Chaos Dwarf)",
+  base-size: "50x75 or 100x150 (Dreadquake Mortar), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, dreadquake mortar, light armour",
+  equipment-body: [
 - *Dreadquake Mortar:* A dreadquake mortar is a mortar that uses the large round template with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-72\"", "4(8)", "Armour Piercing (1), Multiple Wounds (D6)"))
 
 All models in a unit suffering casualties from a Dreadquake Mortar in the previous turn must pass a test exactly as if they were moving through dangerous terrain if they wish to move (including charging, reforming, characters leaving the unit, etc) and suffer \-1 To Hit with missile weapons. War machines can only fire on a 4+ on a D6. If the Dreadquake Mortar rolls a misfire it suffers an additional \-1 modifier to the result.
-
-#field("SPECIAL RULES", "Contempt, Resolute")
-#field("UPGRADES", "")
-
-- *Ogre Slave:* An Ogre Slave has the Fear and Natural Armour (6+) special rule. In addition, it increases the Unit Strength of the war machine by 3 rather than 1 and gives it Line of Sight (2).
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Contempt, Resolute",
+  upgrades: (
+    rule("Ogre Slave")[An Ogre Slave has the Fear and Natural Armour (6+) special rule. In addition, it increases the Unit Strength of the war machine by 3 rather than 1 and gives it Line of Sight (2).],
+  ),
+  options: [
 - May take medium armour +3 points
 - May take a Slave Ogre +20 points
 - May be given the Hellbound special rule +30 points
-
-#entry("HELLCANNON")
-#profile(
-  (name: "Hellcannon", m: 3, ws: 4, bs: 3, s: 5, t: 6, w: 5, i: 1, a: 5, ld: 4, points: 190),
-  (name: "Chaos Dwarf Handler", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Daemon)")
-#field("HANDLER", "3 (Chaos Dwarf)")
-#field("BASE SIZE", "100x150 (Hellcannon), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, doomfire, light armour (Handlers only)")
 
+#unit("HELLCANNON",
+  profiles: (
+    (name: "Hellcannon", m: 3, ws: 4, bs: 3, s: 5, t: 6, w: 5, i: 1, a: 5, ld: 4, points: 190),
+    (name: "Chaos Dwarf Handler", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "Monster (Daemon)",
+  handler: "3 (Chaos Dwarf)",
+  base-size: "100x150 (Hellcannon), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, doomfire, light armour (Handlers only)",
+  equipment-body: [
 - *Doomfire:* Doomfire is a stone thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-60\"", "5(10)", "Cumbersome, Flaming Attacks, Move or Fire, Multiple Wounds (D6)"))
@@ -1112,109 +1139,112 @@ from play."), ("2", "Schlurp: Remove the crew from play."), ("3", "Thzzzz: All W
 table."), ("4", "Grrr: Remove D3 Handlers."), ("5", "Blooood! Move the Hellcannon 3D6\" directly forward as if it was subject to the Random Movement
 special rule and it was the Compulsory Movement sub-phase."), ("6", "Boom! Resolve the Doomfire shot as if it were a direct hit, doubling the Strength of any hit. The
 Hellcannon cannot fire for the rest of the game.")))
-#field("SPECIAL RULES", "Daemonic, Mixed Unit, Natural Armour (4+)")
-
-- *Caged Fury:* At the beginning of your turn, if the Hellcannon is not in combat, take a Leadership test. If the test is failed, the Hellcannon is then subject to the Random Movement (3D6) special rule until the beginning of the next turn, and must move towards the nearest enemy unit. If the Hellcannon would get destroyed as a result of Daemonic Instability, treat this as rolling a 1 on the table above.
-- *Spew Ichor:* The Hellcannon has a Strength 5 Breath Weapon. Any unit that suffers one or more casualties from Spew Ichor must take a Panic test with a \-1 penalty to their Leadership.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Daemonic, Mixed Unit, Natural Armour (4+)",
+  special-rules-body: (
+    rule("Caged Fury")[At the beginning of your turn, if the Hellcannon is not in combat, take a Leadership test. If the test is failed, the Hellcannon is then subject to the Random Movement (3D6) special rule until the beginning of the next turn, and must move towards the nearest enemy unit. If the Hellcannon would get destroyed as a result of Daemonic Instability, treat this as rolling a 1 on the table above.],
+    rule("Spew Ichor")[The Hellcannon has a Strength 5 Breath Weapon. Any unit that suffers one or more casualties from Spew Ichor must take a Panic test with a \-1 penalty to their Leadership.],
+  ),
+  options: [
 - May take medium armour (Handlers only) +3 points
-
-#entry("JUGGERNAUT SIEGE TOWER")
-#profile(
-  (name: "Juggernaut Siege Tower", m: 6, ws: "-", bs: "-", s: 5, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 230),
-  (name: "Crew", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 5+)")
-#field("CREW", "3 Crew (Chaos Dwarf)")
-#field("BASE SIZE", "50x75, 50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, crossbow, medium armour")
-#field("OPTIONS", "")
 
+#unit("JUGGERNAUT SIEGE TOWER",
+  profiles: (
+    (name: "Juggernaut Siege Tower", m: 6, ws: "-", bs: "-", s: 5, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 230),
+    (name: "Crew", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 9, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 5+)",
+  crew: "3 Crew (Chaos Dwarf)",
+  base-size: "50x75, 50x100 or 60x100",
+  equipment: "Hand weapon, crossbow, medium armour",
+  options: [
 - May take up to 7 additional Crew +6 points/Crew
-
-#field("SPECIAL RULES", "Terror, Unbreakable")
-
+  ],
+  special-rules: "Terror, Unbreakable",
+  special-rules-body: [
 - *Siege Tower:* The Juggernaut may never march. When charging, the Juggernaut can only do so in a straight line forward, with no wheeling allowed, and it does not use the Swiftstride special rule. Juggernauts cannot overrun or pursue in combat. The crew of the Juggernaut do not suffer penalties for moving and shooting.
 - *Siege Cannons:* Siege Cannons are bolt throwers with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/48\"", "7", "Cumbersome, Multiple Shots (2), Multiple Wounds (D3), Rapid Fire"))
 
 Siege Cannons do not suffer any penalties To Hit for moving and shooting. If you roll one or more natural 1's on the Hit roll when firing them, the Juggernaut suffers a Wound with no saves allowed.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Juggernaut Siege Tower has a Line of Sight value of 8.
-
-#entry("KOLOSSUS")
-#profile(
-  (name: "Kolossus", m: 6, ws: 4, bs: 3, s: 6, t: 7, w: 6, i: 1, a: 5, ld: 10, points: 250),
+  ],
+  order: ("troop-type", "crew", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Monster (Animated Construct)")
-#field("BASE SIZE", "75x50 or 100x100")
-#field("EQUIPMENT", "Bane maces, heavy armour")
 
+#unit("KOLOSSUS",
+  profiles: (
+    (name: "Kolossus", m: 6, ws: 4, bs: 3, s: 6, t: 7, w: 6, i: 1, a: 5, ld: 10, points: 250),
+  ),
+  troop-type: "Monster (Animated Construct)",
+  base-size: "75x50 or 100x100",
+  equipment: "Bane maces, heavy armour",
+  equipment-body: [
 - *Bane Maces:* Bane maces have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "Armour Piercing (1), Flaming Attacks"))
 
 - *Immolation Cannons:* Immolation Cannons are fire throwers that may fire up two times in shooting phase. If a misfire is rolled, the Kolossus loses one Wound with no saves allowed.
-
-#field("SPECIAL RULES", "Animated Construct, Hellbound")
-#field("UPGRADES", "")
-
-- *Breath of Contempt:* The Kolossus gains a Strength 2 Breath Weapon with the Armour Piercing (2) special rule that can be used in close combat.
-- *Greed Pistons:* The Kolossus gains +1 Movement.
-- *Overdrive Switch:* The Kolossus may choose to add +D3 Attacks in each round of close combat when it is its turn to attack. However, if it does so, it suffers a Strength 6 Hit for every natural To Hit roll of 1 it makes.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Animated Construct, Hellbound",
+  upgrades: (
+    rule("Breath of Contempt")[The Kolossus gains a Strength 2 Breath Weapon with the Armour Piercing (2) special rule that can be used in close combat.],
+    rule("Greed Pistons")[The Kolossus gains +1 Movement.],
+    rule("Overdrive Switch")[The Kolossus may choose to add +D3 Attacks in each round of close combat when it is its turn to attack. However, if it does so, it suffers a Strength 6 Hit for every natural To Hit roll of 1 it makes.],
+  ),
+  options: [
 - May replace bane maces with immolation cannons +40 points
 - May take Greed Pistons +10 points
 - May take Breath of Contempt +15 points
 - May take Overdrive Switch +20 points
-
-#entry("K'DAAI DESTROYER")
-#profile(
-  (name: "K'daai Destroyer", m: 6, ws: 5, bs: 3, s: 7, t: 6, w: 6, i: 5, a: 5, ld: 7, points: 265),
+  ],
 )
-#field("TROOP TYPE", "Monster (Daemon)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("SPECIAL RULES", "Blazing Body, Daemonic, Frenzy")
 
-- *Burning Bright:* From the second game turn onwards, at the start of each of your turns a Toughness test must be made for each K'daai unit. If this is failed, it suffers D3 Wounds with no saves allowed.
-
-#field("UPGRADES", "")
-
-- *Brazen Wings:* The model gains the Fly (7) special rule.
-- *Dark Colossus:* The model gains +1 Wound.
-- *Flaming Breath:* The model gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-- *Gore Blades:* When attacking the model in close combat, all 'To Hit' rolls of 1 by the enemy inflicts a Strength 3 hit on the attacking model(s).
-- *Razor Horns:* The model gains the Impact Hits (D6) special rule.
-
-#field("OPTIONS", "")
-
+#unit("K'DAAI DESTROYER",
+  profiles: (
+    (name: "K'daai Destroyer", m: 6, ws: 5, bs: 3, s: 7, t: 6, w: 6, i: 5, a: 5, ld: 7, points: 265),
+  ),
+  troop-type: "Monster (Daemon)",
+  base-size: "100x150",
+  equipment: "Hand weapon, medium armour",
+  special-rules: "Blazing Body, Daemonic, Frenzy",
+  special-rules-body: (
+    rule("Burning Bright")[From the second game turn onwards, at the start of each of your turns a Toughness test must be made for each K'daai unit. If this is failed, it suffers D3 Wounds with no saves allowed.],
+  ),
+  upgrades: (
+    rule("Brazen Wings")[The model gains the Fly (7) special rule.],
+    rule("Dark Colossus")[The model gains +1 Wound.],
+    rule("Flaming Breath")[The model gains a Strength 4 Breath Weapon with the Flaming Attacks special rule.],
+    rule("Gore Blades")[When attacking the model in close combat, all 'To Hit' rolls of 1 by the enemy inflicts a Strength 3 hit on the attacking model(s).],
+    rule("Razor Horns")[The model gains the Impact Hits (D6) special rule.],
+  ),
+  options: [
 - May take up to two of the following:
   - Gore Blades +10 points
   - Dark Colossus +20 points
   - Brazen Wings +30 points
   - Flaming Breath +30 points
   - Razor Horns +35 points
-
-#entry("SIEGE GIANT")
-#profile(
-  (name: "Siege Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 200),
+  ],
 )
-#field("TROOP TYPE", "Monster (Giant)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Hand weapon, siege armour")
 
-- *Siege Armour:* Medium armour. Siege Armour gives the wearer +2 armour save against missile attacks to its front.
-
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Stubborn")
-
+#unit("SIEGE GIANT",
+  profiles: (
+    (name: "Siege Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 200),
+  ),
+  troop-type: "Monster (Giant)",
+  base-size: "50x75",
+  equipment: "Hand weapon, siege armour",
+  equipment-body: (
+    rule("Siege Armour")[Medium armour. Siege Armour gives the wearer +2 armour save against missile attacks to its front.],
+  ),
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Stubborn",
+  special-rules-body: [
 - *Fall Over:* A Giant must test to see whether it falls over if any of the following apply:
   - If it is beaten in close combat. Test once results are established but before taking a Break test.
   - If it is fleeing at the start of the Movement phase.
@@ -1236,158 +1266,168 @@ Once on the ground, a Giant may get up in his following Movement phase, but may 
 #chart((("D6", "Result"), ("1", "Legbreaker"), ("2-4", "Smash with Pick"), ("5-6", "'Eadbutt")))
 
 *\- Yell and Bawl:* Neither the Giant nor models in contact with it fight if they have not already done so this round. The Giant automatically wins the combat by 2 points or more. This result has no effect against Animated Constructs. *\- Legbreaker:* The Giant targets a single enemy model in the target unit that is in base contact. The Giant and its victim both roll a D6 and add their Strength, and for each point by which the Giant beats its victim’s score, it inflicts D3 automatic wounds with the Ignores Armour saves special rule. In addition, regardless of the result, any models other than the Giant inflicting the attack in base contact with the victim must pass an Initiative test to get out of the way or suffer an automatic wound from the struggling beasts! *\- Smash with Pick:* The Giant chooses a single target model from the enemy unit that it is in base contact with. The target may attempt to avoid the blow by passing an Initiative test. If the test is failed, the model suffers 2D3 wounds with the Ignores Armour saves special rule. If a double is rolled, the Giant cannot attack at all in the following round of the same combat. *\- Flail and Crush:* First test to see if the Giant falls over (see previously), with any wounds caused if they do counting towards the combat result. If the Giant remains on its feet, select a target unit in base contact. That unit sustains 2D6 Strength 6 automatic hits as the armoured bulk of the Giant batters them into the ground. *\- Ripping Blades:* The Giant fights using the Random Attacks (2D6) special rule this round. If a double is rolled when determining the number of Attacks, the Giant must immediately test to see if it falls over. Any further damage done in this way counts towards combat resolution. *\- 'Eadbutt:* The Giant targets a single enemy model from the target unit that is in base contact, automatically inflicting D3 wounds with the Ignores Armour saves special rule. If the victim is wounded but not slain, then the victim is dazed and loses their subsequent attacks. If the victim has not yet attacked in the combat round, they lose their attacks this round, or if they have already attacked, then they lose all their attacks in the next round instead.
-
-#field("UPGRADES", "")
-
-- *Runes of Hate:* A Giant with Runes of Hate becomes subject to the Berserk Rage rule from Frenzy. In addition, whenever the Giant is called upon to roll for a random number of attacks, this may be re-rolled.
-- *Scaling Spikes:* If a Giant with this upgrade perishes and falls over an obstacle such as a moat, ditch or wall, mark the obstacle, which now may be crossed as open terrain. Additionally, if the Giant dies at the foot of a building or fortification, models assaulting any garrison across the location of its body gain a special +1 bonus to their Combat Resolution.
-
-#field("OPTIONS", "")
-
+  ],
+  upgrades: (
+    rule("Runes of Hate")[A Giant with Runes of Hate becomes subject to the Berserk Rage rule from Frenzy. In addition, whenever the Giant is called upon to roll for a random number of attacks, this may be re-rolled.],
+    rule("Scaling Spikes")[If a Giant with this upgrade perishes and falls over an obstacle such as a moat, ditch or wall, mark the obstacle, which now may be crossed as open terrain. Additionally, if the Giant dies at the foot of a building or fortification, models assaulting any garrison across the location of its body gain a special +1 bonus to their Combat Resolution.],
+  ),
+  options: [
 - May take Runes of Hates +25 points
 - May take Scaling Spikes +10 points
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("ASTRAGOTH IRONHAND", first: true)
-#namecost("High Priest of Hashut", "")
-#profile(
-  (name: "Astragoth Ironhand", m: 6, ws: 5, bs: 4, s: 4, t: 4, w: 3, i: 1, a: 2, ld: 10, points: 290),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Astragoth Ironhand is a Level 4 Wizard who uses one of the following Lores of Magic:")
-
+#unit("ASTRAGOTH IRONHAND",
+  first: true,
+  subtitle: "High Priest of Hashut",
+  profiles: (
+    (name: "Astragoth Ironhand", m: 6, ws: 5, bs: 4, s: 4, t: 4, w: 3, i: 1, a: 2, ld: 10, points: 290),
+  ),
+  troop-type: "Infantry (Special Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  magic: "Astragoth Ironhand is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Fire
 - Hashut
 - Metal
-
-#field("MAGIC ITEMS", "")
-
-- *The Black Hammer of Hashut:* Magic Weapon. Close combat attacks made with this weapon are at +2 Strength. Any Flammable model successfully wounded is killed outright.
-- *Stone Mantle:* Talisman. The bearer of this item gains +1 Toughness.
-
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Resolute, Sorcerer's Curse")
-
-- *The Granite Guard:* If Astragoth Ironhand is included in your army, you may upgrade one unit of Razers to the Granite Guard for a cost of +2 points per model. The unit must be equipped with blunderbusses. This unit always counts as fighting behind a defended obstacle in the first round of close combat, and do not suffer \-1 To Hit when choosing Stand & Shoot as a charge reaction.
-- *Mechanical Body:* Astragoth may never march or charge longer than his Movement value. He will still pursue and flee at a normal speed.
-- *Overdrive:* If Astragoth successfully Hits with 3 or more Attacks in Close Combat, he can immediately make an additional 3 Attacks. These attacks may not generate any further additional attacks.
-
-#entry("DRAZHOATH THE ASHEN")
-#namecost("Lord of the Black Fortress", "")
-#profile(
-  (name: "Drazhoath the Ashen", m: 3, ws: 5, bs: 4, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 9, points: 560),
-  (name: "Cinderbreath (Bale Taurus)", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 6, points: ""),
+  ],
+  magic-items: (
+    rule("The Black Hammer of Hashut")[Magic Weapon. Close combat attacks made with this weapon are at +2 Strength. Any Flammable model successfully wounded is killed outright.],
+    rule("Stone Mantle")[Talisman. The bearer of this item gains +1 Toughness.],
+  ),
+  special-rules: "Blackshard Armour, Contempt, Resolute, Sorcerer's Curse",
+  special-rules-body: (
+    rule("The Granite Guard")[If Astragoth Ironhand is included in your army, you may upgrade one unit of Razers to the Granite Guard for a cost of +2 points per model. The unit must be equipped with blunderbusses. This unit always counts as fighting behind a defended obstacle in the first round of close combat, and do not suffer \-1 To Hit when choosing Stand & Shoot as a charge reaction.],
+    rule("Mechanical Body")[Astragoth may never march or charge longer than his Movement value. He will still pursue and flee at a normal speed.],
+    rule("Overdrive")[If Astragoth successfully Hits with 3 or more Attacks in Close Combat, he can immediately make an additional 3 Attacks. These attacks may not generate any further additional attacks.],
+  ),
 )
-#field("TROOP TYPE", "Monster (Special Character, Chaos Dwarf)")
-#field("MOUNT", "Cinderbreath (Bovine, Chaos Beast)")
-#field("BASE SIZE", "50x100")
-#field("MAGIC", "Drazhoath the Ashen is a Level 4 Wizard who uses spells from the Lore of Hashut.")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *The Graven Sceptre:* Magic Weapon. Attacks made with this weapon always Wound on a 4+ or better.
-- *Hellshard Amulet:* Talisman. This item gives the wearer a Magical Ward (5+). In addition, for every failed Ward save the wielder suffers in close combat, a Strength 2 hit is automatically inflicted on the model that caused the Wound.
-- *Daemonspite Crucible:* Arcane Item. Relic. This item gives the bearer a +1 casting bonus. In addition, every time the bearer kills an enemy Wizard in close combat, the bonus increases by +1.
-
-#field("SPECIAL RULES", "Blackshard Armour, Blazing Body, Contempt, Flaming Attacks, Flaming Breath (see Bale")
-
+#unit("DRAZHOATH THE ASHEN",
+  subtitle: "Lord of the Black Fortress",
+  profiles: (
+    (name: "Drazhoath the Ashen", m: 3, ws: 5, bs: 4, s: 3, t: 4, w: 3, i: 3, a: 2, ld: 9, points: 560),
+    (name: "Cinderbreath (Bale Taurus)", m: 6, ws: 5, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 6, points: ""),
+  ),
+  troop-type: "Monster (Special Character, Chaos Dwarf)",
+  mount: "Cinderbreath (Bovine, Chaos Beast)",
+  base-size: "50x100",
+  magic: "Drazhoath the Ashen is a Level 4 Wizard who uses spells from the Lore of Hashut.",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("The Graven Sceptre")[Magic Weapon. Attacks made with this weapon always Wound on a 4+ or better.],
+    rule("Hellshard Amulet")[Talisman. This item gives the wearer a Magical Ward (5+). In addition, for every failed Ward save the wielder suffers in close combat, a Strength 2 hit is automatically inflicted on the model that caused the Wound.],
+    rule("Daemonspite Crucible")[Arcane Item. Relic. This item gives the bearer a +1 casting bonus. In addition, every time the bearer kills an enemy Wizard in close combat, the bonus increases by +1.],
+  ),
+  special-rules: "Blackshard Armour, Blazing Body, Contempt, Flaming Attacks, Flaming Breath (see Bale",
+  special-rules-body: [
 Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attacks), Relentless, Resolute*
 
 - *Dark Renown:* All friendly Chaos Dwarfs within 12" add +1 to their combat resolution result.
 - *The Ironsworn:* If Drazhoath the Ashen is included in your army, you may upgrade one unit of Infernal Guard to the Ironsworn for a cost of +2 points per model. This unit has Weapon Skill 5, as well as the Armour Piercing (1) and Magical Attacks special rules. The unit must be equipped with hand weapons and shields.
 - *Master of the Legion of Azgorh:* If Drazhoath the Ashen is your Army General, units of Infernal Guard (but not Ironsworn) may be taken as Core Units instead of Special Units.
 - *Sorcerer's Curse:* Whenever a model with this special rule suffers a Miscast during the game, after resolving the effects of the Miscast on them normally, they must pass a Toughness test or suffer a Wound with no saves allowed.
-
-#entry("ZHATAN THE BLACK")
-#namecost("Commander of the Tower of Zharr", "")
-#profile(
-  (name: "Zhatan the Black", m: 3, ws: 8, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 275),
+  ],
+  order: ("troop-type", "mount", "base-size", "magic", "equipment", "magic-items", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *The Obsidian Axe:* Magic Weapon. This weapon gives the wielder +1 Strength and the Armour Piercing (3) special rule.
-- *Armour of Gazrakh:* Magic Armour. Medium armour. Enemy attacks must re-roll successful To Wound rolls against the wearer. In addition, the armour save is increased by +1 for every Wound the model has suffered during the game.
-- *Chaos Runeshield:* Magic Armour. Shield. This item gives the wearer the Magical Ward (6+) and Magic Resistance (2) special rules.
-
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Infernal Cohort (see Overlord), Relentless, Resolute")
-
-- *The Blazing Beards of Bazherak:* If Zhatan the Black is included in your army, you may upgrade one unit of Warriors to The Blazing Beards of Bazherak for a cost of +1.5 points per model. This unit has the Flaming Attacks and Frenzy special rules.
-- *Boundless Cruelty:* All enemy units within 6" of Zhatan suffer \-1 to their Leadership. This has no effect on models with Immunity (Psychology).
-- *Slave Tyrant:* Friendly units of Hobgoblins within 12" of Zhatan ignore the Treacherous Gits special rule. In addition, Zhatan causes Terror in all enemy units of Orcs, Goblins, Hobgoblins and Gnoblars.
-
-#entry("RYKARTH THE UNBREAKABLE")
-#namecost("Captain of the Immortals", "")
-#profile(
-  (name: "Rykarth", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 10, points: 125),
+#unit("ZHATAN THE BLACK",
+  subtitle: "Commander of the Tower of Zharr",
+  profiles: (
+    (name: "Zhatan the Black", m: 3, ws: 8, bs: 4, s: 4, t: 5, w: 3, i: 4, a: 4, ld: 10, points: 275),
+  ),
+  troop-type: "Infantry (Special Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("The Obsidian Axe")[Magic Weapon. This weapon gives the wielder +1 Strength and the Armour Piercing (3) special rule.],
+    rule("Armour of Gazrakh")[Magic Armour. Medium armour. Enemy attacks must re-roll successful To Wound rolls against the wearer. In addition, the armour save is increased by +1 for every Wound the model has suffered during the game.],
+    rule("Chaos Runeshield")[Magic Armour. Shield. This item gives the wearer the Magical Ward (6+) and Magic Resistance (2) special rules.],
+  ),
+  special-rules: "Blackshard Armour, Contempt, Infernal Cohort (see Overlord), Relentless, Resolute",
+  special-rules-body: (
+    rule("The Blazing Beards of Bazherak")[If Zhatan the Black is included in your army, you may upgrade one unit of Warriors to The Blazing Beards of Bazherak for a cost of +1.5 points per model. This unit has the Flaming Attacks and Frenzy special rules.],
+    rule("Boundless Cruelty")[All enemy units within 6" of Zhatan suffer \-1 to their Leadership. This has no effect on models with Immunity (Psychology).],
+    rule("Slave Tyrant")[Friendly units of Hobgoblins within 12" of Zhatan ignore the Treacherous Gits special rule. In addition, Zhatan causes Terror in all enemy units of Orcs, Goblins, Hobgoblins and Gnoblars.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Chaos Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, heavy armour")
-#field("SPECIAL RULES", "Blackshard Armour, Contempt, Hold Your Ground (6), Relentless")
 
-- *Captain of the Immortals:* Rykarth must be accompanied by a unit of Immortals, and he may not leave this unit. As long as he remains in it, he and his unit are Unbreakable.
-
-#field("OPTIONS", "")
-
+#unit("RYKARTH THE UNBREAKABLE",
+  subtitle: "Captain of the Immortals",
+  profiles: (
+    (name: "Rykarth", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 10, points: 125),
+  ),
+  troop-type: "Infantry (Special Character, Chaos Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, heavy armour",
+  special-rules: "Blackshard Armour, Contempt, Hold Your Ground (6), Relentless",
+  special-rules-body: (
+    rule("Captain of the Immortals")[Rykarth must be accompanied by a unit of Immortals, and he may not leave this unit. As long as he remains in it, he and his unit are Unbreakable.],
+  ),
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("SHAR'TOR THE EXECUTIONER")
-#namecost("Lord of the Ba'hal", "")
-#profile(
-  (name: "Shar'tor the Executioner", m: 7, ws: 6, bs: 2, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 9, points: 265),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Cavalry (Special Character, Chaos Dwarf, Bull Centaur)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Darktide Axe:* Magic Weapon. Great weapon. Every time the wielder of this weapon rolls a 6 when rolling To Wound in close combat, that attack has the Multiple Wounds (2) special rule.
-- *The Mask of the Executioner:* Enchanted Item. At the start of your Magic phase, you can target one enemy unit within 8" of this model and roll a D6. On a 1 or 2 nothing happens. On a 3\-5 that enemy unit suffers D3 wounds which Ignores Armour saves. On a 6, that enemy unit suffers D6 wounds which Ignores Armour saves.
-
-#field("SPECIAL RULES", "Contempt, Impact Hits (D3), Natural Armour (4+)")
-
-- *Hashut's Dark Ravagers:* If Shar'tor the Executioner is included in your army, you may upgrade one unit of Bull Centaur Renders to Hashut's Dark Ravagers for a cost of +5 points per model. This unit has the Devastating Charge special rule. It must be equipped with additional hand weapons and also carries throwing axes.
-- *Lord of the Ba'hal:* All Bull Centaur units within 12" of Shar'tor may re-roll failed charge rolls.
-- *Prayers of Malice:* Bound Spell (Level 1, cast on 6+). _Prayers of Malice_ is an *augment* spell with a range of 12". The target unit gains a Magical Ward (6+) until the start of your next Magic phase.
-
-#field("NOTES", "")
-
+#unit("SHAR'TOR THE EXECUTIONER",
+  subtitle: "Lord of the Ba'hal",
+  profiles: (
+    (name: "Shar'tor the Executioner", m: 7, ws: 6, bs: 2, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 9, points: 265),
+  ),
+  troop-type: "Monstrous Cavalry (Special Character, Chaos Dwarf, Bull Centaur)",
+  base-size: "50x75",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Darktide Axe")[Magic Weapon. Great weapon. Every time the wielder of this weapon rolls a 6 when rolling To Wound in close combat, that attack has the Multiple Wounds (2) special rule.],
+    rule("The Mask of the Executioner")[Enchanted Item. At the start of your Magic phase, you can target one enemy unit within 8" of this model and roll a D6. On a 1 or 2 nothing happens. On a 3\-5 that enemy unit suffers D3 wounds which Ignores Armour saves. On a 6, that enemy unit suffers D6 wounds which Ignores Armour saves.],
+  ),
+  special-rules: "Contempt, Impact Hits (D3), Natural Armour (4+)",
+  special-rules-body: (
+    rule("Hashut's Dark Ravagers")[If Shar'tor the Executioner is included in your army, you may upgrade one unit of Bull Centaur Renders to Hashut's Dark Ravagers for a cost of +5 points per model. This unit has the Devastating Charge special rule. It must be equipped with additional hand weapons and also carries throwing axes.],
+    rule("Lord of the Ba'hal")[All Bull Centaur units within 12" of Shar'tor may re-roll failed charge rolls.],
+    rule("Prayers of Malice")[Bound Spell (Level 1, cast on 6+). _Prayers of Malice_ is an *augment* spell with a range of 12". The target unit gains a Magical Ward (6+) until the start of your next Magic phase.],
+  ),
+  notes: [
 - Shar'tor the Executioner may not be your Army General.
-
-#entry("GORDUZ BACKSTABBER")
-#namecost("Scourge of the Dark Lands", "")
-#profile(
-  (name: "Gorduz Backstabber", m: 4, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 7, points: 90),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Hobgoblin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Medium armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *Blade of Malice:* Magic Weapon. The bearer of this weapon gains the Armour Piercing (2) and Hatred special rules.
-
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers")
-
+#unit("GORDUZ BACKSTABBER",
+  subtitle: "Scourge of the Dark Lands",
+  profiles: (
+    (name: "Gorduz Backstabber", m: 4, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 7, points: 90),
+  ),
+  troop-type: "Infantry (Special Character, Hobgoblin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Medium armour, shield",
+  magic-items: (
+    rule("Blade of Malice")[Magic Weapon. The bearer of this weapon gains the Armour Piercing (2) and Hatred special rules.],
+  ),
+  special-rules: "Backstabbers, Cowardly Despoilers",
+  special-rules-body: [
 - *Fated\.\.\. Lucky\.\.\. Sneaky!* When Gorduz is reduced to his last Wound, he gains a 4+ invulnerable save.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on a Giant Wolf +15 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Gorduz Backstabber may not be the Army General.
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+)
 
-#entry("Additional Material:")
-#namecost("Antti Sinivuori", "")
+#unit("Additional Material:",
+  subtitle: "Antti Sinivuori",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

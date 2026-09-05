@@ -124,12 +124,33 @@ section before hand-writing markup. It validates rather than trusting: unknown
 the six categories are exposed as named functions (`magic-weapon`, `talisman`,
 …) so a book states its category by the function it calls.
 
-A unit entry is `#entry(NAME)`, then `#profile(..)` rows of the ten
-characteristics, then `#field(LABEL, VALUE)` lines, then markup. Layout is
-derived, not configured: every entry opens its own page, a book with stat blocks
-is an army book and one without is the rulebook, and `magic-item-section`
-measures whether the material fills two columns rather than counting characters.
-Prefer fixing a rule in the template over writing an override into a book.
+A unit entry is one `#unit(NAME, ..)` call: `profiles:` rows of the ten
+characteristics as dictionaries, then the entry's fields as named arguments —
+`troop-type:`, `equipment:`, `special-rules:` and the rest, listed in
+`UNIT_FIELDS`. **The vocabulary is closed**: an unknown field is a compile error
+naming the entry, which is what keeps EQIPMENT and HANDLER/HANDLERS from drifting
+back in. Fields render in `UNIT_FIELDS` order whatever order they are written.
+
+A field's value says by its type what shape it takes. A string is the label with
+its value on the same line. A list of `rule("Name")[body]` records is the label
+over named bullets; a list of `opt(..)`/`optgroup(..)` is the label over priced
+option lines. Markup content is the label over that content verbatim. A field
+needing both — SPECIAL RULES naming four rules inline and then explaining a fifth
+— passes the string and puts the block in the companion `<field>-body`.
+
+Four escape hatches, each used deliberately and each greppable: `subtitle:` for
+the run-in line under a special character's name; `order:` for the ~98 entries
+whose source genuinely deviates from the canonical field order; `labels:` where
+the source misprints a label and the book reproduces it (Daemons of Chaos heads
+four entries EQIPMENT); `before:`/`after:` for prose that sits outside the
+fields. `#entry`/`#field` remain as primitives for the prose and design-notes
+chapters, where a field is a bare mini-heading rather than a unit field.
+
+Layout is derived, not configured: every entry opens its own page, a book with
+stat blocks is an army book and one without is the rulebook, and
+`magic-item-section` measures whether the material fills two columns rather than
+counting characters. Prefer fixing a rule in the template over writing an
+override into a book.
 
 ## Commits
 

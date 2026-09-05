@@ -334,55 +334,54 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 
 = CHARACTERS
 
-#entry("LORDS", first: true)
-#profile(
-  (name: "Baron", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 100),
-  (name: "Paladin", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation")
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May choose one of the following:",
+#unit("LORDS",
+  first: true,
+  profiles: (
+    (name: "Baron", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 100),
+    (name: "Paladin", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Blessing of the Lady, The Knight's Vow, Lance Formation",
+  options: (
+    optgroup("May choose one of the following:",
     opt("Heavy lance", "+10 points"),
     opt("Polearm (on foot only)", "+10 points"),
     opt("Great weapon", "+15 points"),
   ),
-  opt("May take heavy armour", "+18 points"),
-  opt("May take a shield", "+5 points"),
-  optgroup("May be mounted on one of the following:",
+    opt("May take heavy armour", "+18 points"),
+    opt("May take a shield", "+5 points"),
+    optgroup("May be mounted on one of the following:",
     opt("Warhorse", "+15 points"),
     opt("Pegasus", "+25 points"),
     opt("Royal Pegasus", "+40 points"),
     opt("Royal Hippogryph (Baron only)", "+150 points"),
   ),
-  optgroup("May replace the Knights Vow with one of the following:",
+    optgroup("May replace the Knights Vow with one of the following:",
     opt("The Crusader's Vow", "+15 points"),
     opt("The Questing Vow", "+15 points"),
     opt("The Grail Vow", "+45 points"),
   ),
-  opt("One Paladin may carry the Battle Standard", "+25 points"),
-  opt("A Paladin may take one Virtue and/or Magic Items up to a total of", "50 points"),
-  opt("A Baron may take one Virtue and/or Magic Items up to a total of", "100 points"),
-)
-
-#field("NOTES", "")
-
+    opt("One Paladin may carry the Battle Standard", "+25 points"),
+    opt("A Paladin may take one Virtue and/or Magic Items up to a total of", "50 points"),
+    opt("A Baron may take one Virtue and/or Magic Items up to a total of", "100 points"),
+  ),
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("HANDMAIDENS OF THE LADY")
-#profile(
-  (name: "Prophetess", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 170),
-  (name: "Grail Damsel", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 75),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Grail Damsel is a Level 1 Wizard. A Prophetess is a Level 3 Wizard. They use one of the following Lores")
 
+#unit("HANDMAIDENS OF THE LADY",
+  profiles: (
+    (name: "Prophetess", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 170),
+    (name: "Grail Damsel", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 75),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Grail Damsel is a Level 1 Wizard. A Prophetess is a Level 3 Wizard. They use one of the following Lores",
+  magic-body: [
 of Magic:
 
 - Beasts
@@ -390,985 +389,953 @@ of Magic:
 - Lady
 - Light
 - Life
-
-#field("SPECIAL RULES", "Blessing of the Lady, Magic Resistance (1)")
-#field("OPTIONS", "")
-
-#options(
-  opt("May take an additional Wizard Level", "+35 points"),
-  optgroup("May be mounted on one of the following:",
+  ],
+  special-rules: "Blessing of the Lady, Magic Resistance (1)",
+  options: (
+    opt("May take an additional Wizard Level", "+35 points"),
+    optgroup("May be mounted on one of the following:",
     opt("Warhorse", "+15 points"),
     opt("Pegasus", "+25 points"),
     opt("Unicorn (Prophetess only)", "+25 points"),
   ),
-  opt("A Grail Damsel may take Magic Items up to a total of", "50 points"),
-  opt("A Prophetess may take Magic Items up to a total of", "100 points"),
+    opt("A Grail Damsel may take Magic Items up to a total of", "50 points"),
+    opt("A Prophetess may take Magic Items up to a total of", "100 points"),
+  ),
 )
 
-#entry("SERGEANTS-AT-ARMS")
-#profile(
-  (name: "Sergeant-at-Arms", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "The Peasant's Duty")
-
-- *Yeomen Guard:* You may upgrade one unit of Men-at-Arms with medium armour for +1 point/model for each Sergeant-At-Arms in your army.
-
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May choose one of the following:",
+#unit("SERGEANTS-AT-ARMS",
+  profiles: (
+    (name: "Sergeant-at-Arms", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "The Peasant's Duty",
+  special-rules-body: (
+    rule("Yeomen Guard")[You may upgrade one unit of Men-at-Arms with medium armour for +1 point/model for each Sergeant-At-Arms in your army.],
+  ),
+  options: (
+    optgroup("May choose one of the following:",
     opt("Light lance", "+5 points"),
     opt("Polearm (on foot only)", "+5 points"),
     opt("Great weapon", "+10 points"),
   ),
-  optgroup("May choose one of the following:",
+    optgroup("May choose one of the following:",
     opt("Shortbow", "+3 points"),
     opt("Longbow", "+5 points"),
     opt("Crossbow", "+6 points"),
   ),
-  optgroup("May choose one of the following:",
+    optgroup("May choose one of the following:",
     opt("Light armour", "+5 points"),
     opt("Medium armour", "+10 points"),
   ),
-  opt("May take a shield", "+5 points"),
-  opt("May be mounted on a Horse", "+15 points"),
-)
-
-#field("NOTES", "")
-
+    opt("May take a shield", "+5 points"),
+    opt("May be mounted on a Horse", "+15 points"),
+  ),
+  notes: [
 - A Sergeant-at-Arms may never be the Army General.
-
-#entry("FACELESS")
-#profile(
-  (name: "Faceless", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("SPECIAL RULES", "Independent, Scouts, Sniper")
-#field("OPTIONS", "")
-
-#options(
-  opt("May take an additional hand weapon", "+5 points"),
-  opt("May take light armour", "+5 points"),
+  ],
 )
 
-#field("NOTES", "")
-
+#unit("FACELESS",
+  profiles: (
+    (name: "Faceless", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, longbow",
+  special-rules: "Independent, Scouts, Sniper",
+  options: (
+    opt("May take an additional hand weapon", "+5 points"),
+    opt("May take light armour", "+5 points"),
+  ),
+  notes: [
 - A Faceless may never be the Army General.
-
-#entry("PRIESTESSES OF SHALLYA")
-#profile(
-  (name: "Priestess of Shallya", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 2, i: 3, a: 0, ld: 7, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("SPECIAL RULES", "Magic Resistance (1)")
 
+#unit("PRIESTESSES OF SHALLYA",
+  profiles: (
+    (name: "Priestess of Shallya", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 2, i: 3, a: 0, ld: 7, points: 70),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  special-rules: "Magic Resistance (1)",
+  special-rules-body: [
 - *Healing Hands:* A Priestess of Shallya may only join units with the Peasant's Duty special rule. She may be placed in the second rank of any Infantry unit she joins, rather than the first. In addition, any unit the Priestess is with (but not herself) gains the Regeneration (6+) special rule.
 - *Prayers of Shallya:* A Priestess of Shallya knows the three Prayers listed below. They may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and take immediate effect. Each prayer lasts until the start of your next turn. A friendly unit can only be under the effect of one Prayer at a time.
   - *Shallya's Endurance:* The Priestess' unit (but not herself) gains +1 to its Toughness.
   - *Compassionate Mind:* The Priestess' unit (but not herself) gains the Immunity (Psychology) special rule.
   - *Purify:* All Hex spells effecting friendly units within 12" are automatically dispelled. In addition, any units with the Daemonic, Vampiric or Undead special rules in base contact with the Priestess or the unit she is with suffer D6 Strength 4 hits.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Magic Items up to a total of", "50 points"),
-)
-
-#field("NOTES", "")
-
+  ],
+  options: (
+    opt("May take Magic Items up to a total of", "50 points"),
+  ),
+  notes: [
 - A Priestess of Shallya may never be the Army General.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#compact-entry("HORSE")[
-#profile(
-  (name: "Horse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50")
-]
-
-#entry("WARHORSE")
-#profile(
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Purebred Warhorse")
-#field("OPTIONS", "")
-
-#options(
-  opt("May take barding", "+5 points"),
+#unit("HORSE",
+  compact: true,
+  profiles: (
+    (name: "Horse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50",
 )
 
-#entry("UNICORN")
-#profile(
-  (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 50x50")
-#field("SPECIAL RULES", "Impale, Magical Attacks, Magic Resistance (2)")
-
-- *Impale:* A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.
-
-#entry("PEGASUS")
-#profile(
-  (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
-
-- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
-- *Swift as the Wind:* A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Iron-hard Hooves", "+5 points"),
-  opt("May take Swift as the Wind", "+5 points"),
-  opt("May take barding", "+5 points"),
+#unit("WARHORSE",
+  profiles: (
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Purebred Warhorse",
+  options: (
+    opt("May take barding", "+5 points"),
+  ),
 )
 
-#entry("ROYAL PEGASUS")
-#profile(
-  (name: "Royal Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: "-"),
-)
-#field("TROOP TYPE", "Monstrous Beast (Equine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
-
-- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
-- *Swift as the Wind:* A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Iron-hard Hooves", "+5 points"),
-  opt("May take Swift as the Wind", "+5 points"),
-  opt("May take barding", "+5 points"),
+#unit("UNICORN",
+  profiles: (
+    (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 50x50",
+  special-rules: "Impale, Magical Attacks, Magic Resistance (2)",
+  special-rules-body: (
+    rule("Impale")[A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.],
+  ),
 )
 
-#entry("ROYAL HIPPOGRYPH")
-#profile(
-  (name: "Royal Hippogryph", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: "-"),
+#unit("PEGASUS",
+  profiles: (
+    (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Iron-hard Hooves")[A Pegasus with this upgrade re-roils failed To Wound rolls.],
+    rule("Swift as the Wind")[A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.],
+  ),
+  options: (
+    opt("May take Iron-hard Hooves", "+5 points"),
+    opt("May take Swift as the Wind", "+5 points"),
+    opt("May take barding", "+5 points"),
+  ),
 )
-#field("TROOP TYPE", "Monstrous Creature (Avian-Equine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Fly (8)")
-#field("UPGRADES", "")
 
-- *Bloodrage:* The Hippogryph is subject to Frenzy and Hatred.
-- *Serrated Maw:* The Hippogryph gains the Multiple Wounds (2) special rule.
-- *Shredding Talons:* The Hippogryph gains the Armour Piercing (1) rule.
-- *Swooping Strike:* The Hippogryph gains the Devastating Charge and Mighty Blow (1) special rules when charging.
+#unit("ROYAL PEGASUS",
+  profiles: (
+    (name: "Royal Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Equine)",
+  base-size: "50x50 or 50x75",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Iron-hard Hooves")[A Pegasus with this upgrade re-roils failed To Wound rolls.],
+    rule("Swift as the Wind")[A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.],
+  ),
+  options: (
+    opt("May take Iron-hard Hooves", "+5 points"),
+    opt("May take Swift as the Wind", "+5 points"),
+    opt("May take barding", "+5 points"),
+  ),
+)
 
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Shredding Talons", "+5 points"),
-  opt("May take Serrated Maw", "+15 points"),
-  opt("May take Swooping Strike", "+15 points"),
-  opt("May take Bloodrage", "+30 points"),
-  opt("May take barding", "+5 points"),
+#unit("ROYAL HIPPOGRYPH",
+  profiles: (
+    (name: "Royal Hippogryph", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Avian-Equine)",
+  base-size: "50x50 or 50x75",
+  special-rules: "Fly (8)",
+  upgrades: (
+    rule("Bloodrage")[The Hippogryph is subject to Frenzy and Hatred.],
+    rule("Serrated Maw")[The Hippogryph gains the Multiple Wounds (2) special rule.],
+    rule("Shredding Talons")[The Hippogryph gains the Armour Piercing (1) rule.],
+    rule("Swooping Strike")[The Hippogryph gains the Devastating Charge and Mighty Blow (1) special rules when charging.],
+  ),
+  options: (
+    opt("May take Shredding Talons", "+5 points"),
+    opt("May take Serrated Maw", "+15 points"),
+    opt("May take Swooping Strike", "+15 points"),
+    opt("May take Bloodrage", "+30 points"),
+    opt("May take barding", "+5 points"),
+  ),
 )
 
 = CORE UNITS
 
-#entry("KNIGHTS ERRANT", first: true)
-#profile(
-  (name: "Knight Errant", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 21),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse")
-
-- *Impetuous:* A unit containing one or more models with this special rule follow the rules for Berserk Rage from Frenzy. If the test is passed, it may move normally. In addition, whenever a unit of Knights Errant charge, they have Immunity (Psychology) and may re-roll one of their charge distance dice.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
-  opt("May upgrade one Knight Errant to a Leader", "+5 points"),
-  opt("May upgrade one Knight Errant to a Musician", "+5 points"),
-  optgroup("May upgrade one Knight Errant to a Standard Bearer", cost: "+10 points",
+#unit("KNIGHTS ERRANT",
+  first: true,
+  profiles: (
+    (name: "Knight Errant", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 21),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse",
+  special-rules-body: (
+    rule("Impetuous")[A unit containing one or more models with this special rule follow the rules for Berserk Rage from Frenzy. If the test is passed, it may move normally. In addition, whenever a unit of Knights Errant charge, they have Immunity (Psychology) and may re-roll one of their charge distance dice.],
+  ),
+  options: (
+    opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+    opt("May upgrade one Knight Errant to a Leader", "+5 points"),
+    opt("May upgrade one Knight Errant to a Musician", "+5 points"),
+    optgroup("May upgrade one Knight Errant to a Standard Bearer", cost: "+10 points",
     opt("May take a Magic Standard worth up to", "25 points"),
   ),
-)
-
-#entry("KNIGHT OF THE REALM")
-#profile(
-  (name: "Knight of the Realm", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 25),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse")
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
-  opt("May upgrade one Knight of the Realm to a Leader", "+5 points"),
-  opt("May upgrade one Knight of the Realm to a Musician", "+5 points"),
-  optgroup("May upgrade one Knight of the Realm to a Standard Bearer", cost: "+10 points",
-    opt("May take a Magic Standard worth up to", "50 points"),
   ),
 )
 
-#entry("MEN-AT-ARMS")
-#profile(
-  (name: "Man-at-Arms", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+#unit("KNIGHT OF THE REALM",
+  profiles: (
+    (name: "Knight of the Realm", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 25),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse",
+  options: (
+    opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+    opt("May upgrade one Knight of the Realm to a Leader", "+5 points"),
+    opt("May upgrade one Knight of the Realm to a Musician", "+5 points"),
+    optgroup("May upgrade one Knight of the Realm to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+  ),
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("UPGRADES", "")
 
-- *Grail Monk:* A Grail Monk counts as being part of the unit's Command Group. A unit with a Grail Monk counts as having one more rank than they actually do for the purpose of determining if the unit is Steadfast.
-
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May choose one of the following:",
+#unit("MEN-AT-ARMS",
+  profiles: (
+    (name: "Man-at-Arms", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  special-rules: "The Peasant's Duty",
+  upgrades: (
+    rule("Grail Monk")[A Grail Monk counts as being part of the unit's Command Group. A unit with a Grail Monk counts as having one more rank than they actually do for the purpose of determining if the unit is Steadfast.],
+  ),
+  options: (
+    optgroup("May choose one of the following:",
     opt("Spears", "+0.5 point/model"),
     opt("Polearms", "+2 points/model"),
   ),
-  opt("May take shields", "+1 point/model"),
-  opt("May upgrade one Man-at-Arms to a Grail Monk", "+5 points"),
-  opt("May upgrade one Man-at-Arms to a Leader", "+5 points"),
-  opt("May upgrade one Man-at-Arms to a Musician", "+5 points"),
-  opt("May upgrade one Man-at-Arms to a Standard Bearer", "+10 points"),
+    opt("May take shields", "+1 point/model"),
+    opt("May upgrade one Man-at-Arms to a Grail Monk", "+5 points"),
+    opt("May upgrade one Man-at-Arms to a Leader", "+5 points"),
+    opt("May upgrade one Man-at-Arms to a Musician", "+5 points"),
+    opt("May upgrade one Man-at-Arms to a Standard Bearer", "+10 points"),
+  ),
 )
 
-#entry("LONGBOWMEN")
-#profile(
-  (name: "Longbowman", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("UPGRADES", "")
-
+#unit("LONGBOWMEN",
+  profiles: (
+    (name: "Longbowman", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, longbow",
+  special-rules: "The Peasant's Duty",
+  upgrades: [
 - *Braziers:* A unit with this upgrade gains the Flaming Attack special rule for their longbows.
 - *Defensive Stakes:* Set up the stakes at the start of the game when the unit is deployed. Every model in the front rank has a stake base placed in front of it (these stakes must also be set up within the army's deployment zone).
 
 Defensive Stakes are treated as Defended Obstacles and remain on the table during the game. All Troop Types apart from Infantry and Swarms suffer D6 Strength 4 hits on the turn that they charge a unit behind Defensive stakes. In addition, enemy models in base contact with the Defensive Stakes suffer \-1 to Hit in the first round of close combat. These rules only apply when fighting the unit’s front.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take light armour", "+0.5 point/model"),
-  opt("May take bucklers", "+0.5 point/model"),
-  opt("May take braziers", "+0.5 point/model"),
-  opt("May take defensive stakes", "+1 point/model"),
-  opt("May upgrade one Longbowman to a Leader", "+5 points"),
-  opt("May upgrade one Longbowman to a Musician", "+5 points"),
-  opt("May upgrade one Longbowman to a Standard Bearer", "+10 points"),
+  ],
+  options: (
+    opt("May take light armour", "+0.5 point/model"),
+    opt("May take bucklers", "+0.5 point/model"),
+    opt("May take braziers", "+0.5 point/model"),
+    opt("May take defensive stakes", "+1 point/model"),
+    opt("May upgrade one Longbowman to a Leader", "+5 points"),
+    opt("May upgrade one Longbowman to a Musician", "+5 points"),
+    opt("May upgrade one Longbowman to a Standard Bearer", "+10 points"),
+  ),
 )
 
-#entry("PEASANT MOB")
-#profile(
-  (name: "Peasant", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 4, points: 2),
-)
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May choose one of the following:",
+#unit("PEASANT MOB",
+  profiles: (
+    (name: "Peasant", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 4, points: 2),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "The Peasant's Duty",
+  options: (
+    optgroup("May choose one of the following:",
     opt("Spears", "+0.5 point/model"),
     opt("Flails", "+2 points/model"),
     opt("Polearms", "+2 points/model"),
   ),
-  opt("May take shields (if armed with spears)", "+1 point/model"),
-  opt("May upgrade one Peasant to a Leader", "+5 points"),
-  opt("May upgrade one Peasant to a Musician", "+5 points"),
-  opt("May upgrade one Peasant to a Standard Bearer", "+10 points"),
+    opt("May take shields (if armed with spears)", "+1 point/model"),
+    opt("May upgrade one Peasant to a Leader", "+5 points"),
+    opt("May upgrade one Peasant to a Musician", "+5 points"),
+    opt("May upgrade one Peasant to a Standard Bearer", "+10 points"),
+  ),
 )
 
-#entry("BIDOWERS")
-#profile(
-  (name: "Bidower", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 5),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, javelin")
-#field("SPECIAL RULES", "The Peasant's Duty, Skirmishers")
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace javelins with slings", "free"),
-  opt("May take bucklers", "+0.5 point/model"),
-  opt("May upgrade one Bidower to a Leader", "+5 points"),
-  opt("May upgrade one Bidower to a Musician", "+5 points"),
+#unit("BIDOWERS",
+  profiles: (
+    (name: "Bidower", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, javelin",
+  special-rules: "The Peasant's Duty, Skirmishers",
+  options: (
+    opt("May replace javelins with slings", "free"),
+    opt("May take bucklers", "+0.5 point/model"),
+    opt("May upgrade one Bidower to a Leader", "+5 points"),
+    opt("May upgrade one Bidower to a Musician", "+5 points"),
+  ),
 )
 
 = SPECIAL UNITS
 
-#entry("QUESTING KNIGHTS", first: true)
-#profile(
-  (name: "Questing Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 26),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Great weapon, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Blessing of the Lady, The Questing Vow, Lance Formation, Purebred Warhorse")
-#field("OPTIONS", "")
-
-#options(
-  opt("May upgrade one Questing Knight to a Leader", "+5 points"),
-  opt("May upgrade one Questing Knight to a Musician", "+5 points"),
-  optgroup("May upgrade one Questing Knight to a Standard Bearer", cost: "+10 points",
+#unit("QUESTING KNIGHTS",
+  first: true,
+  profiles: (
+    (name: "Questing Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 26),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Great weapon, heavy armour, shield, barding",
+  special-rules: "Blessing of the Lady, The Questing Vow, Lance Formation, Purebred Warhorse",
+  options: (
+    opt("May upgrade one Questing Knight to a Leader", "+5 points"),
+    opt("May upgrade one Questing Knight to a Musician", "+5 points"),
+    optgroup("May upgrade one Questing Knight to a Standard Bearer", cost: "+10 points",
     opt("May take a Magic Standard worth up to", "50 points"),
+  ),
   ),
 )
 
-#entry("PEGASUS KNIGHTS")
-#profile(
-  (name: "Pegasus Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 50),
-  (name: "Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
-)
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Pegasus (Equine)")
-#field("BASE SIZE", "40x40 or 40x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Blessing of the Lady, Fly (9), The Knight's Vow")
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace the Knight's Vow with the Crusader's Vow", "+2 points/model"),
-  opt("May upgrade one Pegasus Knight to a Leader", "+5 points"),
-  opt("May upgrade one Pegasus Knight to a Musician", "+5 points"),
-  optgroup("May upgrade one Pegasus Knight to a Standard Bearer", cost: "+10 points",
+#unit("PEGASUS KNIGHTS",
+  profiles: (
+    (name: "Pegasus Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 50),
+    (name: "Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Cavalry (Human)",
+  mount: "Pegasus (Equine)",
+  base-size: "40x40 or 40x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "Blessing of the Lady, Fly (9), The Knight's Vow",
+  options: (
+    opt("May replace the Knight's Vow with the Crusader's Vow", "+2 points/model"),
+    opt("May upgrade one Pegasus Knight to a Leader", "+5 points"),
+    opt("May upgrade one Pegasus Knight to a Musician", "+5 points"),
+    optgroup("May upgrade one Pegasus Knight to a Standard Bearer", cost: "+10 points",
     opt("May take a Magic Standard worth up to", "50 points"),
+  ),
   ),
 )
 
-#entry("FOOT KNIGHTS")
-#profile(
-  (name: "Foot Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 9),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
-  optgroup("May choose one of the following:",
+#unit("FOOT KNIGHTS",
+  profiles: (
+    (name: "Foot Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour",
+  special-rules: "Blessing of the Lady, The Knight's Vow",
+  options: (
+    opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+    optgroup("May choose one of the following:",
     opt("Spears", "+0.5 point/model"),
     opt("Polearms", "+2 points/model"),
     opt("Great weapons", "+3 points/model"),
   ),
-  opt("May take shields", "+1 point/model"),
-  opt("May upgrade one Foot Knight to a Leader", "+5 points"),
-  opt("May upgrade one Foot Knight to a Musician", "+5 points"),
-  optgroup("May upgrade one Foot Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take shields", "+1 point/model"),
+    opt("May upgrade one Foot Knight to a Leader", "+5 points"),
+    opt("May upgrade one Foot Knight to a Musician", "+5 points"),
+    optgroup("May upgrade one Foot Knight to a Standard Bearer", cost: "+10 points",
     opt("May take a Magic Standard worth up to", "50 points"),
+  ),
   ),
 )
 
-#entry("SQUIRES")
-#profile(
-  (name: "Squire", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 7),
-  (name: "Hunting Hound", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 7),
+#unit("SQUIRES",
+  profiles: (
+    (name: "Squire", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 7),
+    (name: "Hunting Hound", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 7),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25 (Squire), 20x20, 25x25 (Hunting Hound)",
+  equipment: "Hand weapon, longbow",
+  special-rules: "The Peasant's Duty, Skirmishers",
+  special-rules-body: (
+    rule("Hunting Hounds")[Hunting Hounds are War Beasts (Canine). A unit of Squires with Hunting Hounds follows the rules for Mixed Units, with the Squires being the handlers. You may include up to two Hunting Hounds per Squire in the unit.],
+  ),
+  options: (
+    opt("May take light armour", "+0.5 point/model"),
+    opt("May take bucklers", "+0.5 point/model"),
+    opt("May upgrade one Squire to a Leader", "+5 points"),
+    opt("May upgrade one Squire to a Musician", "+5 points"),
+    opt("May upgrade one Squire to a Standard Bearer", "+10 points"),
+  ),
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25 (Squire), 20x20, 25x25 (Hunting Hound)")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("SPECIAL RULES", "The Peasant's Duty, Skirmishers")
 
-- *Hunting Hounds:* Hunting Hounds are War Beasts (Canine). A unit of Squires with Hunting Hounds follows the rules for Mixed Units, with the Squires being the handlers. You may include up to two Hunting Hounds per Squire in the unit.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take light armour", "+0.5 point/model"),
-  opt("May take bucklers", "+0.5 point/model"),
-  opt("May upgrade one Squire to a Leader", "+5 points"),
-  opt("May upgrade one Squire to a Musician", "+5 points"),
-  opt("May upgrade one Squire to a Standard Bearer", "+10 points"),
-)
-
-#entry("YEOMEN")
-#profile(
-  (name: "Yeoman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 10),
-  (name: "Horse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Horse (Equine)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Fast Cavalry, The Peasant's Duty")
-#field("OPTIONS", "")
-
-#options(
-  opt("May take light lances", "+1 point/model"),
-  optgroup("May choose one of the following:",
+#unit("YEOMEN",
+  profiles: (
+    (name: "Yeoman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 10),
+    (name: "Horse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Horse (Equine)",
+  base-size: "25x50",
+  equipment: "Hand weapon",
+  special-rules: "Fast Cavalry, The Peasant's Duty",
+  options: (
+    opt("May take light lances", "+1 point/model"),
+    optgroup("May choose one of the following:",
     opt("Shortbows", "+1 point/model"),
     opt("Crossbows", "+2 points/model"),
   ),
-  optgroup("May choose one of the following:",
+    optgroup("May choose one of the following:",
     opt("Light armour", "+0.5 points/model"),
     opt("Medium armour", "+1.5 points/model"),
   ),
-  opt("May take shields", "+1 point/model"),
-  opt("May upgrade one Yeoman to a Leader", "+5 points"),
-  opt("May upgrade one Yeoman to a Musician", "+5 points"),
-  opt("May upgrade one Yeoman to a Standard Bearer", "+10 points"),
+    opt("May take shields", "+1 point/model"),
+    opt("May upgrade one Yeoman to a Leader", "+5 points"),
+    opt("May upgrade one Yeoman to a Musician", "+5 points"),
+    opt("May upgrade one Yeoman to a Standard Bearer", "+10 points"),
+  ),
 )
 
-#entry("BATTLE PILGRIMS")
-#profile(
-  (name: "Battle Pilgrim", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 7),
-  (name: "Grail Reliquae", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 6, i: 3, a: 4, ld: 8, points: ""),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Hatred, Loner, The Peasant's Duty, Stubborn")
-#field("UPGRADES", "")
-
-- *Grail Reliquae:* Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrims in the unit (except the Command Group) are removed does the Reliquae itself start taking wounds. In addition, the presence of the Grail Reliquae means that the entire unit will be affected by the Blessing of the Lady.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take light armour", "+0.5 point/model"),
-  opt("May upgrade one Battle Pilgrim to a Leader", "+5 points"),
-  opt("May upgrade one Battle Pilgrim to a Musician", "+5 points"),
-  opt("May upgrade one Battle Pilgrim to a Standard Bearer", "+10 points"),
-  opt("May upgrade six Battle Pilgrim to a Grail Reliquae", "+30 points"),
+#unit("BATTLE PILGRIMS",
+  profiles: (
+    (name: "Battle Pilgrim", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 7),
+    (name: "Grail Reliquae", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 6, i: 3, a: 4, ld: 8, points: ""),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Hatred, Loner, The Peasant's Duty, Stubborn",
+  upgrades: (
+    rule("Grail Reliquae")[Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrims in the unit (except the Command Group) are removed does the Reliquae itself start taking wounds. In addition, the presence of the Grail Reliquae means that the entire unit will be affected by the Blessing of the Lady.],
+  ),
+  options: (
+    opt("May take light armour", "+0.5 point/model"),
+    opt("May upgrade one Battle Pilgrim to a Leader", "+5 points"),
+    opt("May upgrade one Battle Pilgrim to a Musician", "+5 points"),
+    opt("May upgrade one Battle Pilgrim to a Standard Bearer", "+10 points"),
+    opt("May upgrade six Battle Pilgrim to a Grail Reliquae", "+30 points"),
+  ),
 )
 
-#entry("HERRIMAULTS")
-#profile(
-  (name: "Herrimault", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 7),
+#unit("HERRIMAULTS",
+  profiles: (
+    (name: "Herrimault", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 7),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, longbow",
+  special-rules: "Independent, Scouts, Skirmishers",
+  options: (
+    opt("May take light armour", "+0.5 point/model"),
+    opt("May upgrade one Herrimault to a Leader", "+5 points"),
+    opt("May upgrade one Herrimault to a Musician", "+5 points"),
+  ),
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("SPECIAL RULES", "Independent, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
-#options(
-  opt("May take light armour", "+0.5 point/model"),
-  opt("May upgrade one Herrimault to a Leader", "+5 points"),
-  opt("May upgrade one Herrimault to a Musician", "+5 points"),
-)
-
-#entry("BRIGANDS")
-#profile(
-  (name: "Brigand", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, light armour")
-#field("SPECIAL RULES", "Independent")
-#field("OPTIONS", "")
-
-#options(
-  opt("May be upgraded to Ambushers (unless armed with missile weapons)", "+1 point/model"),
-  optgroup("May replace great weapons with one of the following:",
+#unit("BRIGANDS",
+  profiles: (
+    (name: "Brigand", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, light armour",
+  special-rules: "Independent",
+  options: (
+    opt("May be upgraded to Ambushers (unless armed with missile weapons)", "+1 point/model"),
+    optgroup("May replace great weapons with one of the following:",
     opt("Crossbows", "+2 points/model"),
     opt("Handguns", "+2 points/model"),
   ),
-  opt("May take medium armour", "+1 point/model"),
-  opt("May upgrade one Brigand to a Leader", "+5 points"),
-  opt("May upgrade one Brigand to a Musician", "+5 points"),
-  opt("May upgrade one Brigand to a Standard Bearer", "+10 points"),
+    opt("May take medium armour", "+1 point/model"),
+    opt("May upgrade one Brigand to a Leader", "+5 points"),
+    opt("May upgrade one Brigand to a Musician", "+5 points"),
+    opt("May upgrade one Brigand to a Standard Bearer", "+10 points"),
+  ),
 )
 
 = RARE UNITS
 
-#entry("GRAIL KNIGHTS", first: true)
-#profile(
-  (name: "Grail Knight", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 9, points: 38),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse")
-#field("OPTIONS", "")
-
-#options(
-  opt("May upgrade one Grail Knight to a Leader", "+5 points"),
-  opt("May upgrade one Grail Knight to a Musician", "+5 points"),
-  optgroup("May upgrade one Grail Knight to a Standard Bearer", cost: "+10 points",
+#unit("GRAIL KNIGHTS",
+  first: true,
+  profiles: (
+    (name: "Grail Knight", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 9, points: 38),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse",
+  options: (
+    opt("May upgrade one Grail Knight to a Leader", "+5 points"),
+    opt("May upgrade one Grail Knight to a Musician", "+5 points"),
+    optgroup("May upgrade one Grail Knight to a Standard Bearer", cost: "+10 points",
     opt("May take a Magic Standard worth up to", "75 points"),
   ),
-)
-
-#entry("HIPPOGRYPH KNIGHTS")
-#profile(
-  (name: "Hippogryph Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 75),
-  (name: "Hippogryph", m: 8, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: ""),
-)
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Human)")
-#field("MOUNT", "Hippogryph (Avian-Equine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Blessing of the Lady, Fly (8), The Knight's Vow")
-#field("OPTIONS", "")
-
-#options(
-  opt("May replace the Knight's Vow with the Crusader's Vow", "+3 points/model"),
-  opt("May take barding", "+3 points/model"),
-  opt("May upgrade one Hippogryph Knight to a Leader", "+5 points"),
-  opt("May upgrade one Hippogryph Knight to a Musician", "+5 points"),
-  optgroup("May upgrade one Hippogryph Knight to a Standard Bearer", cost: "+10 points",
-    opt("May take a Magic Standard worth up to", "50 points"),
   ),
 )
 
-#entry("BALLISTA")
-#profile(
-  (name: "Ballista", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 30),
-  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+#unit("HIPPOGRYPH KNIGHTS",
+  profiles: (
+    (name: "Hippogryph Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 75),
+    (name: "Hippogryph", m: 8, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: ""),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Human)",
+  mount: "Hippogryph (Avian-Equine)",
+  base-size: "50x50 or 50x75",
+  equipment: "Heavy lance, heavy armour, shield",
+  special-rules: "Blessing of the Lady, Fly (8), The Knight's Vow",
+  options: (
+    opt("May replace the Knight's Vow with the Crusader's Vow", "+3 points/model"),
+    opt("May take barding", "+3 points/model"),
+    opt("May upgrade one Hippogryph Knight to a Leader", "+5 points"),
+    opt("May upgrade one Hippogryph Knight to a Musician", "+5 points"),
+    optgroup("May upgrade one Hippogryph Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+  ),
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Peasant Crew (Human)")
-#field("BASE SIZE", "50x50 (Ballista), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, bolt thrower")
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("UPGRADES", "")
 
-- *Wall Warden:* A Ballista with a Wall Warden may re-roll one failed To Hit roll once per game.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take an additional Peasant Crew", "+5 points"),
-  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
-)
-
-#field("NOTES", "")
-
+#unit("BALLISTA",
+  profiles: (
+    (name: "Ballista", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 30),
+    (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+    (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Peasant Crew (Human)",
+  base-size: "50x50 (Ballista), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, bolt thrower",
+  special-rules: "The Peasant's Duty",
+  upgrades: (
+    rule("Wall Warden")[A Ballista with a Wall Warden may re-roll one failed To Hit roll once per game.],
+  ),
+  options: (
+    opt("May take an additional Peasant Crew", "+5 points"),
+    opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+  ),
+  notes: [
 - You may take 1\-2 Ballistas as a single Rare choice.
-
-#entry("FIELD TREBUCHET")
-#profile(
-  (name: "Field Trebuchet", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Peasant Crew (Human)")
-#field("BASE SIZE", "50x100 (Field Trebuchet), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, field trebuchet")
 
+#unit("FIELD TREBUCHET",
+  profiles: (
+    (name: "Field Trebuchet", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+    (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Peasant Crew (Human)",
+  base-size: "50x100 (Field Trebuchet), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, field trebuchet",
+  equipment-body: [
 - *Field Trebuchet:* A field trebuchet is a stone thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-60\"", "5(10)", "Multiple Wounds (D6)"))
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("UPGRADES", "")
-
-- *Wall Warden:* A Field Trebuchet with a Wall Warden may re-roll one Artillery dice once per game.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take an additional Peasant Crew", "+5 points"),
-  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+  ],
+  special-rules: "The Peasant's Duty",
+  upgrades: (
+    rule("Wall Warden")[A Field Trebuchet with a Wall Warden may re-roll one Artillery dice once per game.],
+  ),
+  options: (
+    opt("May take an additional Peasant Crew", "+5 points"),
+    opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+  ),
 )
 
-#entry("BOMBARD")
-#profile(
-  (name: "Bombard", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 90),
-  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
-)
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Peasant Crew (Human)")
-#field("BASE SIZE", "50x75 (Bombard), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon")
-
+#unit("BOMBARD",
+  profiles: (
+    (name: "Bombard", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 90),
+    (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+    (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Peasant Crew (Human)",
+  base-size: "50x75 (Bombard), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon",
+  equipment-body: [
 - *Bombard:* A Bombard is a cannon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "10", "Multiple Wounds (D6)"))
 
 If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but subtract 1 from the result.
-
-#field("SPECIAL RULES", "The Peasant's Duty")
-#field("UPGRADES", "")
-
-- *Wall Warden:* A Bombard with a Wall Warden may re-roll one Artillery dice once per game.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take an additional Peasant Crew", "+5 points"),
-  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+  ],
+  special-rules: "The Peasant's Duty",
+  upgrades: (
+    rule("Wall Warden")[A Bombard with a Wall Warden may re-roll one Artillery dice once per game.],
+  ),
+  options: (
+    opt("May take an additional Peasant Crew", "+5 points"),
+    opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+  ),
 )
 
 = SPECIAL CHARACTERS
 
-#entry("LOUEN LEONCOEUR", first: true)
-#namecost("King of Bretonnia", "")
-#profile(
-  (name: "Louen Leoncoeur", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 7, a: 5, ld: 10, points: 385),
-  (name: "Beaquis (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 6, a: 4, ld: 8, points: ""),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
-
-- *Sword of Couronne:* Magic Weapon. The sword allows Louen to re-roll failed rolls to Hit. In addition, any enemy models in base contact with Louen at the beginning of any Close Combat phase must take an Initiative test. If this is failed, that model may make no attacks this round and will be hit automatically.
-- *The Lion Lance:* Magic Weapon. Lance. Each successful Hit with the Lion Lance is multiplied into 2 Hits. The lance can only be used when charging; in other rounds of combat, Louen will use the Sword of Couronne.
-- *Armour of Brilliance:* Magic Armour. Heavy armour. Opponents suffer a \-1 penalty to all rolls To Hit the wearer with missile weapons and in close combat.
-- *The Lion's Shield:* Magic Armour. Shield. The Lion’s Shield gives Louen a Magic Resistance equal to the total number of dice used in the casting of the enemy spell, to a maximum of 3.
-- *The Tabard of Kings:* Talisman. Any enemy spell that targets Louen or the unit he is with and is successfully cast inflicts D3 Strength 4 Hits on the Wizard that cast the spell.
-- *The Crown of Bretonnia:* Enchanted Item. This item gives Louen the Inspiring Presence (6) special rule. In addition, all friendly units that may use Louen’s Leadership have Immunity (Panic).
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation")
-
-- *The Virtue of the Lionheart:* Roll a D3 in the beginning of each close combat phase and add the score to Louen's Strength for the duration of that phase.
-- *The Lady’s Champion:* Louen gains a Magical Ward (4+) from the Blessing of the Lady. However, if he loses the Blessing, he will immediately lose a Wound with no saves allowed.
-
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May be mounted on one of the following:",
+#unit("LOUEN LEONCOEUR",
+  first: true,
+  subtitle: "King of Bretonnia",
+  profiles: (
+    (name: "Louen Leoncoeur", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 7, a: 5, ld: 10, points: 385),
+    (name: "Beaquis (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 6, a: 4, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Sword of Couronne")[Magic Weapon. The sword allows Louen to re-roll failed rolls to Hit. In addition, any enemy models in base contact with Louen at the beginning of any Close Combat phase must take an Initiative test. If this is failed, that model may make no attacks this round and will be hit automatically.],
+    rule("The Lion Lance")[Magic Weapon. Lance. Each successful Hit with the Lion Lance is multiplied into 2 Hits. The lance can only be used when charging; in other rounds of combat, Louen will use the Sword of Couronne.],
+    rule("Armour of Brilliance")[Magic Armour. Heavy armour. Opponents suffer a \-1 penalty to all rolls To Hit the wearer with missile weapons and in close combat.],
+    rule("The Lion's Shield")[Magic Armour. Shield. The Lion’s Shield gives Louen a Magic Resistance equal to the total number of dice used in the casting of the enemy spell, to a maximum of 3.],
+    rule("The Tabard of Kings")[Talisman. Any enemy spell that targets Louen or the unit he is with and is successfully cast inflicts D3 Strength 4 Hits on the Wizard that cast the spell.],
+    rule("The Crown of Bretonnia")[Enchanted Item. This item gives Louen the Inspiring Presence (6) special rule. In addition, all friendly units that may use Louen’s Leadership have Immunity (Panic).],
+  ),
+  special-rules: "Blessing of the Lady, The Grail Vow, Lance Formation",
+  special-rules-body: (
+    rule("The Virtue of the Lionheart")[Roll a D3 in the beginning of each close combat phase and add the score to Louen's Strength for the duration of that phase.],
+    rule("The Lady’s Champion")[Louen gains a Magical Ward (4+) from the Blessing of the Lady. However, if he loses the Blessing, he will immediately lose a Wound with no saves allowed.],
+  ),
+  options: (
+    optgroup("May be mounted on one of the following:",
     opt("Warhorse", "+18 points"),
     opt("Pegasus", "+30 points"),
     opt("Royal Pegasus", "+45 points"),
     opt("Beaquis", "+155 points"),
   ),
-)
-
-#field("NOTES", "")
-
+  ),
+  notes: [
 - Louen Leoncoeur must be the Army General.
-
-#entry("BOHEMUND THE BEASTSLAYER")
-#namecost("Duke of Bastonne", "")
-#profile(
-  (name: "Bohemond the Beastslayer", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 300),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, barding")
-#field("MAGIC ITEMS", "")
 
-- *The Beast Mace of Bastonne:* Magic Weapon. The Beast Mace adds +2 to Bohemond’s Strength and has the Multiple Wounds (2) special rule.
-- *Bohemond's Shield:* Magic Armour. Shield. Should an enemy strike Bohemond with a Magic Weapon, roll a D6 for each hit. On a roll of 6, the enemy weapon is destroyed. Resolve enemy hits that are not destroyed by the shield in the normal way but once the weapon is broken all further hits from that weapon are ignored.
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Hatred (Beastmen, Goblins, Orcs, Skaven), Lance")
-
+#unit("BOHEMUND THE BEASTSLAYER",
+  subtitle: "Duke of Bastonne",
+  profiles: (
+    (name: "Bohemond the Beastslayer", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 300),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, barding",
+  magic-items: (
+    rule("The Beast Mace of Bastonne")[Magic Weapon. The Beast Mace adds +2 to Bohemond’s Strength and has the Multiple Wounds (2) special rule.],
+    rule("Bohemond's Shield")[Magic Armour. Shield. Should an enemy strike Bohemond with a Magic Weapon, roll a D6 for each hit. On a roll of 6, the enemy weapon is destroyed. Resolve enemy hits that are not destroyed by the shield in the normal way but once the weapon is broken all further hits from that weapon are ignored.],
+  ),
+  special-rules: "Blessing of the Lady, The Grail Vow, Hatred (Beastmen, Goblins, Orcs, Skaven), Lance",
+  special-rules-body: [
 *Formation, Purebred Warhorse, Virtue of Heroism*
 
 - *The Beastslayers of Bastonne:* If Bohemond the Beastslayer is included in your army, you may upgrade one unit of Foot Knights to the Beastslayers of Bastonne for a cost of +1 point per model. This unit gains the Multiple Wounds (2) special rule. The unit must be equipped with polearms.
-
-#entry("TANCRED II")
-#namecost("Duke of Quenelles", "")
-#profile(
-  (name: "Tancred II", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 250),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, barding")
-#field("MAGIC ITEMS", "")
 
-- *The Blade of Banishment:* Magic Weapon. This Sword automatically Wounds models with the Undead special rule, with the Ignores Armour Saves special rule. In addition, the bearer and any unit he is leading have Immunity (Terror) caused by Undead.
-- *The Grail Shield:* Magic Armour. Shield. Models from the Forces of Destruction in base contact with Tancred suffer a \-1 To Hit penalty in close combat.
-- *Blessed Draught:* Enchanted Item. One use only. Tancred may drink the potion at the beginning of any player's turn. For the duration of that turn, the potion increases Tancred's Strength by D6.
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse, Virtue of Purity")
-
-- *The Companions of Quenelles:* If Tancred II is included in your army, you may upgrade one unit of Knights of the Realm to the Companions of Quenelles for a cost of +1 point per model. This unit gains the Immunity (Psychology) special rule and a Magical Ward (6+) against Flaming Attacks.
-
-#entry("ALBERIC OF BORDELEAUX")
-#namecost("Duke of Bordeleaux", "")
-#profile(
-  (name: "Alberic of Bordeleaux", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
-  (name: "Tempete (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: ""),
+#unit("TANCRED II",
+  subtitle: "Duke of Quenelles",
+  profiles: (
+    (name: "Tancred II", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 250),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, barding",
+  magic-items: (
+    rule("The Blade of Banishment")[Magic Weapon. This Sword automatically Wounds models with the Undead special rule, with the Ignores Armour Saves special rule. In addition, the bearer and any unit he is leading have Immunity (Terror) caused by Undead.],
+    rule("The Grail Shield")[Magic Armour. Shield. Models from the Forces of Destruction in base contact with Tancred suffer a \-1 To Hit penalty in close combat.],
+    rule("Blessed Draught")[Enchanted Item. One use only. Tancred may drink the potion at the beginning of any player's turn. For the duration of that turn, the potion increases Tancred's Strength by D6.],
+  ),
+  special-rules: "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse, Virtue of Purity",
+  special-rules-body: (
+    rule("The Companions of Quenelles")[If Tancred II is included in your army, you may upgrade one unit of Knights of the Realm to the Companions of Quenelles for a cost of +1 point per model. This unit gains the Immunity (Psychology) special rule and a Magical Ward (6+) against Flaming Attacks.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *Trident of Manann:* Magic Weapon. Polearm. The Trident of Manann contains a Bound Spell (Level 1, cast on 5+). This is a *magic missile* with a range of 24" that causes 2D6 Strength 3 hits.
-- *Braid of Bordeleaux:* Enchanted Item. The bearer of the Braid of Bordeleaux and any unit they are with gain the Aquatic special rule.
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse, Virtue of Discipline")
-
-- *Spirit of the Tempest:* Alberic, and any models in the same unit, may re-roll 1's to Hit in close combat.
-
-#field("OPTIONS", "")
-
-#options(
-  optgroup("May be mounted on one of the following:",
+#unit("ALBERIC OF BORDELEAUX",
+  subtitle: "Duke of Bordeleaux",
+  profiles: (
+    (name: "Alberic of Bordeleaux", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
+    (name: "Tempete (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour, shield",
+  magic-items: (
+    rule("Trident of Manann")[Magic Weapon. Polearm. The Trident of Manann contains a Bound Spell (Level 1, cast on 5+). This is a *magic missile* with a range of 24" that causes 2D6 Strength 3 hits.],
+    rule("Braid of Bordeleaux")[Enchanted Item. The bearer of the Braid of Bordeleaux and any unit they are with gain the Aquatic special rule.],
+  ),
+  special-rules: "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse, Virtue of Discipline",
+  special-rules-body: (
+    rule("Spirit of the Tempest")[Alberic, and any models in the same unit, may re-roll 1's to Hit in close combat.],
+  ),
+  options: (
+    optgroup("May be mounted on one of the following:",
     opt("Warhorse", "+18 points"),
     opt("Tempete", "+150 points"),
   ),
-  opt("May take Magic Items up to a total of", "25 points"),
+    opt("May take Magic Items up to a total of", "25 points"),
+  ),
 )
 
-#entry("CECIL GASTONNE")
-#namecost("The Wyrm Slayer", "")
-#profile(
-  (name: "Cecil Gastonne", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 190),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour, shield")
-#field("MAGIC ITEMS", "")
-
-- *Sorrow's End:* Magic Weapon. This weapon gives the wielder the +1 Strength and the Multiple Wounds (2) special rule.
-- *Dragonhide Cloak:* This item gives the wearer the Immunity (Flaming Attacks, Killing Blow/Multiple Wounds) and Natural Armour (5+) special rules.
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
-
-- *The Wyrm Slayer:* If Cecil Gastonne kills an enemy Monstrous Infantry, Monstrous Cavalry, Monstrous Beast, Monstrous Creature or Monster model in close combat, he gains the Terror special rule for the remainder of the game.
-
-#entry("REPANSE OF LYONESSE")
-#namecost("Damsel of War", "")
-#profile(
-  (name: "Repanse of Lyonesse", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 185),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
-
-- *Sword of Lyonesse:* Magic Weapon. All magic items belonging to enemy models in base contact with Repanse lose their magical properties and will count as mundane items of their type.
-- *The Fleur de Lys Banner:* Magic Standard. This is the army's Battle Standard. In the magic phase, the Bretonnian player may remove one Power Dice from the enemy and add it to their Dispel Pool.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take a heavy lance", "+4 points"),
-  opt("May take a shield", "+2 points"),
-  opt("May be mounted on a Warhorse", "+12 points"),
+#unit("CECIL GASTONNE",
+  subtitle: "The Wyrm Slayer",
+  profiles: (
+    (name: "Cecil Gastonne", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 190),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour, shield",
+  magic-items: (
+    rule("Sorrow's End")[Magic Weapon. This weapon gives the wielder the +1 Strength and the Multiple Wounds (2) special rule.],
+    rule("Dragonhide Cloak")[This item gives the wearer the Immunity (Flaming Attacks, Killing Blow/Multiple Wounds) and Natural Armour (5+) special rules.],
+  ),
+  special-rules: "Blessing of the Lady, The Knight's Vow",
+  special-rules-body: (
+    rule("The Wyrm Slayer")[If Cecil Gastonne kills an enemy Monstrous Infantry, Monstrous Cavalry, Monstrous Beast, Monstrous Creature or Monster model in close combat, he gains the Terror special rule for the remainder of the game.],
+  ),
 )
 
-#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, Magic Resistance (3), The Knight’s Vow, Purebred")
-
+#unit("REPANSE OF LYONESSE",
+  subtitle: "Damsel of War",
+  profiles: (
+    (name: "Repanse of Lyonesse", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 185),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("Sword of Lyonesse")[Magic Weapon. All magic items belonging to enemy models in base contact with Repanse lose their magical properties and will count as mundane items of their type.],
+    rule("The Fleur de Lys Banner")[Magic Standard. This is the army's Battle Standard. In the magic phase, the Bretonnian player may remove one Power Dice from the enemy and add it to their Dispel Pool.],
+  ),
+  options: (
+    opt("May take a heavy lance", "+4 points"),
+    opt("May take a shield", "+2 points"),
+    opt("May be mounted on a Warhorse", "+12 points"),
+  ),
+  special-rules: "Blessing of the Lady, Lance Formation, Magic Resistance (3), The Knight’s Vow, Purebred",
+  special-rules-body: [
 *Warhorse, Terror*
-
-#entry("TRISTAN THE TROBADOUR")
-#profile(
-  (name: "Tristan the Trobadour", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 145),
-  (name: "Jules the Jester", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 30),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60 (Tristan), 20x20 or 25x25 (Jules)")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding (Tristan)")
-#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, The Questing Vow, Purebred Warhorse, Virtue of Noble Disdain")
 
+#unit("TRISTAN THE TROBADOUR",
+  profiles: (
+    (name: "Tristan the Trobadour", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 145),
+    (name: "Jules the Jester", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 30),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60 (Tristan), 20x20 or 25x25 (Jules)",
+  equipment: "Heavy lance, heavy armour, shield, barding (Tristan)",
+  special-rules: "Blessing of the Lady, Lance Formation, The Questing Vow, Purebred Warhorse, Virtue of Noble Disdain",
+  special-rules-body: [
 - *Jules the Jester:* Jules is an Infantry model armed with a hand weapon. Jules must deploy within 6" of Tristan at the start of the game but may move freely after this. He has the Dodge (2+) and The Peasant’s Duty special rule. In addition, all enemy units within 6" of Jules suffer a \-1 penalty to Hit rolls in close combat.
 - *Valorous Ballads:* Tristan knows the three songs listed below. He may choose to use one of them at the start of each round of close combat.
   - *The Anthem of the Uniter:* Tristan and any unit he has joined have the Stubborn special rule this turn.
   - *The Battle-hymn of Quenelles:* Tristan gains +D3 Combat Resolution bonus this turn.
   - *The Grail Chorale:* The Magical Ward save from the Blessing of the Lady is increased by +1 for Tristan and any unit he has joined this turn.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Magic Items up to a total of", "25 points"),
-)
-
-#field("NOTES", "")
-
+  ],
+  options: (
+    opt("May take Magic Items up to a total of", "25 points"),
+  ),
+  notes: [
 - Tristan the Trobadour may use a heavy lance despite having the Questing Vow.
-
-#entry("ODO OF OUTREMER")
-#namecost("Hero of the Crusades", "")
-#profile(
-  (name: "Odo of Outremer", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
-  (name: "Suliman the Saracen", m: 5, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 85),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy armour, shield, barding")
-#field("MAGIC ITEMS", "")
-
-- *Morning Star of Fracasse:* Magic Weapon. This morning star gives the bearer the Mighty Blow (2) special rule. For each Hit he scores on an enemy model with a Magic Weapon, roll a D6. On a 4+, the enemy's weapon is destroyed.
-
-#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, The Crusader's Vow, Purebred Warhorse, Virtue of Confidence")
-
-- *Warrior of the Sands:* Odo of Outremer is included in your army then Suliman the Saracen may also be included. Suliman is a Cavalry model and is armed with a great weapon, light armour and shield. Suliman causes Fear in any turn in which he charges. Odo and Suliman always move and fight together as a unit and may join a unit if you wish. Suliman may never be the Army General.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May take Magic Items up to a total of", "25 points"),
+  ],
 )
 
-#entry("THE HERMIT KNIGHT OF MALMONT")
-#profile(
-  (name: "The Hermit Knight", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 170),
+#unit("ODO OF OUTREMER",
+  subtitle: "Hero of the Crusades",
+  profiles: (
+    (name: "Odo of Outremer", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
+    (name: "Suliman the Saracen", m: 5, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 85),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy armour, shield, barding",
+  magic-items: (
+    rule("Morning Star of Fracasse")[Magic Weapon. This morning star gives the bearer the Mighty Blow (2) special rule. For each Hit he scores on an enemy model with a Magic Weapon, roll a D6. On a 4+, the enemy's weapon is destroyed.],
+  ),
+  special-rules: "Blessing of the Lady, Lance Formation, The Crusader's Vow, Purebred Warhorse, Virtue of Confidence",
+  special-rules-body: (
+    rule("Warrior of the Sands")[Odo of Outremer is included in your army then Suliman the Saracen may also be included. Suliman is a Cavalry model and is armed with a great weapon, light armour and shield. Suliman causes Fear in any turn in which he charges. Odo and Suliman always move and fight together as a unit and may join a unit if you wish. Suliman may never be the Army General.],
+  ),
+  options: (
+    opt("May take Magic Items up to a total of", "25 points"),
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *Sword of Virtue:* Magic Weapon. Great weapon. The Sword of Virtue allows the Hermit Knight to re-roll failed rolls of 1 To Hit and to Wound. In addition, it has the Multiple Wounds (D3) special rule.
-- *Flask of Sangdragon:* Enchanted Item. One use only. The Hermit Knight may use this item at the beginning of any round of Close Combat. When used, his Strength is then increased by D3 for the duration of this turn.
-
-#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow (included in profile), Virtue of the Penitent")
-
-#entry("MORGIANA THE FAY")
-#namecost("The Fay Enchantress", "")
-#profile(
-  (name: "Morgiana the Fay", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 2, ld: 9, points: 420),
-  (name: "Silvaron (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
+#unit("THE HERMIT KNIGHT OF MALMONT",
+  profiles: (
+    (name: "The Hermit Knight", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 170),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("Sword of Virtue")[Magic Weapon. Great weapon. The Sword of Virtue allows the Hermit Knight to re-roll failed rolls of 1 To Hit and to Wound. In addition, it has the Multiple Wounds (D3) special rule.],
+    rule("Flask of Sangdragon")[Enchanted Item. One use only. The Hermit Knight may use this item at the beginning of any round of Close Combat. When used, his Strength is then increased by D3 for the duration of this turn.],
+  ),
+  special-rules: "Blessing of the Lady, The Grail Vow (included in profile), Virtue of the Penitent",
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Morgiana le Fay is a Level 4 Wizard who uses one of the following Lores of Magic:")
 
+#unit("MORGIANA THE FAY",
+  subtitle: "The Fay Enchantress",
+  profiles: (
+    (name: "Morgiana the Fay", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 2, ld: 9, points: 420),
+    (name: "Silvaron (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic: "Morgiana le Fay is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Heavens
 - Lady
 - Light
 - Life
-
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
-
-- *The Girdle of Gold:* Talisman. The Girdle gives Morgiana the Fay the Magical Ward (6+) special rule.
-- *The Chalice of Potions:* Arcane Item. Relic. At the start of your Magic phase, you may roll a D3 (using a D6). The number refers to the number of Power dice you may add to your army pool. However, if a natural 6 is rolled, the Chalice cannot be used again for the remainder of the game.
-- *Morgiana's Mirror:* Arcane Item. Relic. At the start of the enemy Magic phase, Morgiana the Fay may choose one enemy Wizard on the battlefield; against this Wizard, she will get a +2 dispel bonus for the remainder of this turn.
-- *Toad Familiar:* Arcane Item. Relic. The Toad Familiar gives Morgiana the Fay a +1 casting bonus.
-
-#field("SPECIAL RULES", "Fear, Magic Resistance (1)")
-
-- *Supreme Aura of the Lady:* Any unit joined by Morgiana the Fay gains the Magical Attacks special rule. In addition, she causes Terror against Beastmen, Skaven, Goblins and Orcs.
-- *Favour of the Fay:* One friendly character with Chivalrous Vow may be given the Favour of the Fay before the game starts but after deployment is finished. This model receives +1 To Hit in close combat. However, if the model loses the Blessing of the Lady, then both the Favoured model and Morgiana the Fay suffer a Wound with no saves allowed.
-- *Supreme Blessing of the Lady:* Morgiana the Fay has the Blessing of the Lady. In addition, the Magical Ward save gained from the Blessing of the Lady is increased by +1 for any unit that is joined by her.
-
-#field("OPTIONS", "")
-
-#options(
-  opt("May be mounted on Silvaron (Unicorn)", "+25 points"),
+  ],
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("The Girdle of Gold")[Talisman. The Girdle gives Morgiana the Fay the Magical Ward (6+) special rule.],
+    rule("The Chalice of Potions")[Arcane Item. Relic. At the start of your Magic phase, you may roll a D3 (using a D6). The number refers to the number of Power dice you may add to your army pool. However, if a natural 6 is rolled, the Chalice cannot be used again for the remainder of the game.],
+    rule("Morgiana's Mirror")[Arcane Item. Relic. At the start of the enemy Magic phase, Morgiana the Fay may choose one enemy Wizard on the battlefield; against this Wizard, she will get a +2 dispel bonus for the remainder of this turn.],
+    rule("Toad Familiar")[Arcane Item. Relic. The Toad Familiar gives Morgiana the Fay a +1 casting bonus.],
+  ),
+  special-rules: "Fear, Magic Resistance (1)",
+  special-rules-body: (
+    rule("Supreme Aura of the Lady")[Any unit joined by Morgiana the Fay gains the Magical Attacks special rule. In addition, she causes Terror against Beastmen, Skaven, Goblins and Orcs.],
+    rule("Favour of the Fay")[One friendly character with Chivalrous Vow may be given the Favour of the Fay before the game starts but after deployment is finished. This model receives +1 To Hit in close combat. However, if the model loses the Blessing of the Lady, then both the Favoured model and Morgiana the Fay suffer a Wound with no saves allowed.],
+    rule("Supreme Blessing of the Lady")[Morgiana the Fay has the Blessing of the Lady. In addition, the Magical Ward save gained from the Blessing of the Lady is increased by +1 for any unit that is joined by her.],
+  ),
+  options: (
+    opt("May be mounted on Silvaron (Unicorn)", "+25 points"),
+  ),
+  order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules", "options"),
 )
 
-#entry("LADY ELISE DUCHARD")
-#namecost("Prophetess of the Duke of Brionne", "")
-#profile(
-  (name: "Élise Duchard", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 295),
-  (name: "Ariandir (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
-)
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Ariandir (Equine)")
-#field("BASE SIZE", "40x60 or 50x50")
-#field("MAGIC", "Élise Duchard is a Level 3 Wizard who uses one of the following Lores of Magic:")
-
+#unit("LADY ELISE DUCHARD",
+  subtitle: "Prophetess of the Duke of Brionne",
+  profiles: (
+    (name: "Élise Duchard", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 295),
+    (name: "Ariandir (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Ariandir (Equine)",
+  base-size: "40x60 or 50x50",
+  magic: "Élise Duchard is a Level 3 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Heavens
 - Life
-
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
-
-- *The Staff of the Elements:* Arcane Item. Staff. This item allows Élise Duchard to use the Signature Spell from either the Lore of Life or Heavens in addition to her other chosen spells.
-- *Chalice Of Brionne:* Enchanted Item. All enemy units within 12" suffer a \-2 Leadership penalty when attempting to use Inspiring Presence, Hold Your Ground, Rally, March, Redirecting a Charge, Reforming from Defeat, Restraining from Pursuit or Swift Reform.
-
-#field("SPECIAL RULES", "Aura of the Lady, Impale (Ariandir only, see Unicorns), Magical Attacks (Ariandir only), Magic Resistance (1)")
-
-- *Arcane Backlash:* Élise Duchard has a +1 dispel bonus. In addition, if she rolls any natural double when dispelling, treat this has having rolled Ultimate Power. If a spell is dispelled by her rolling two or more natural 6's, the casting Wizard also suffer a Wound which Ignores Armour saves.
-
-#entry("THE GREEN KNIGHT")
-#namecost("Guardian of the Sacred Sites", "")
-#profile(
-  (name: "The Green Knight", m: 4, ws: 7, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 240),
-  (name: "The Shadow Steed", m: 9, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 6, points: ""),
+  ],
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("The Staff of the Elements")[Arcane Item. Staff. This item allows Élise Duchard to use the Signature Spell from either the Lore of Life or Heavens in addition to her other chosen spells.],
+    rule("Chalice Of Brionne")[Enchanted Item. All enemy units within 12" suffer a \-2 Leadership penalty when attempting to use Inspiring Presence, Hold Your Ground, Rally, March, Redirecting a Charge, Reforming from Defeat, Restraining from Pursuit or Swift Reform.],
+  ),
+  special-rules: "Aura of the Lady, Impale (Ariandir only, see Unicorns), Magical Attacks (Ariandir only), Magic Resistance (1)",
+  special-rules-body: (
+    rule("Arcane Backlash")[Élise Duchard has a +1 dispel bonus. In addition, if she rolls any natural double when dispelling, treat this has having rolled Ultimate Power. If a spell is dispelled by her rolling two or more natural 6's, the casting Wizard also suffer a Wound which Ignores Armour saves.],
+  ),
+  order: ("troop-type", "mount", "base-size", "magic", "equipment", "magic-items", "special-rules"),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Spirit)")
-#field("MOUNT", "The Shadow Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *The Dolorous Blade:* Magic Weapon. The Dolorous Blade may be used in one of two ways. Either the Green Knight can use the Blade to gain +D6 Attacks, or it can be used to add +2 to his Strength. The Green Knight may change which method he is using to attack with in each Close Combat phase if he wishes to.
-
-#field("SPECIAL RULES", "Ethereal, Terror, Unstable")
-
+#unit("THE GREEN KNIGHT",
+  subtitle: "Guardian of the Sacred Sites",
+  profiles: (
+    (name: "The Green Knight", m: 4, ws: 7, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 240),
+    (name: "The Shadow Steed", m: 9, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 6, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Spirit)",
+  mount: "The Shadow Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy armour, shield",
+  magic-items: (
+    rule("The Dolorous Blade")[Magic Weapon. The Dolorous Blade may be used in one of two ways. Either the Green Knight can use the Blade to gain +D6 Attacks, or it can be used to add +2 to his Strength. The Green Knight may change which method he is using to attack with in each Close Combat phase if he wishes to.],
+  ),
+  special-rules: "Ethereal, Terror, Unstable",
+  special-rules-body: [
 - *Aura of the Fey:* If the Green Knight's Wounds value is ever reduced to zero, remove him from play as normal. However, in the Remaining Moves part of the following Bretonnian Movement phase, the Bretonnian player may attempt to reawaken the Green Knight as described in Guardian of the Sacred Sites below, following all the same rules. However, each time the Green Knight is slain, a \-1 is suffered on the next dice roll made to awaken him (e.g., after he is slain for the first time, he will awaken the following turn on a 4+ rather than a 3+. After the second time, he awakens on a 5+, etc). If he does not appear, a test may be taken during each following Bretonnian Remaining Moves phase to see if he returns. For calculating Victory Points, the enemy only gets full Victory Points for the Green Knight if he is not on the table at the end of the game.
 - *Guardian of the Sacred Sites:* The Green Knight is not deployed with the rest of the army, but follows the entry rules for Ambushers instead, with the following exception that he may appear in the first turn instead of the second.
 
 When the Green Knight is awoken, he must be placed in either a forest or a water terrain piece anywhere on the table, but otherwise follows the rules for Ambushers as normal. If no forest of water feature is present, he may enter from any table edge using the normal rules.
 
 During the game, the Green Knight may disappear at will and reappear in another location completely. If the Green Knight is within (or moves into) a forest or water terrain piece during the Remaining Moves phase, then he may instantly be removed from the table and replaced anywhere on the table within another forest or water terrain piece, facing in any direction. He may not move any further that turn. Note that he still may not end his move within impassable terrain.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Green Knight may never be the Army General.
-
-#entry("BERTRAND THE BRIGAND")
-#namecost("Leader of the Bowmen of Bergerac", "")
-#profile(
-  (name: "Bertrand", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 90),
-  (name: "Little Hugo", m: 4, ws: 4, bs: 4, s: 5, t: 4, w: 1, i: 4, a: 2, ld: 7, points: ""),
-  (name: "Gui the Great", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, longbow")
-#field("MAGIC ITEMS", "")
 
+#unit("BERTRAND THE BRIGAND",
+  subtitle: "Leader of the Bowmen of Bergerac",
+  profiles: (
+    (name: "Bertrand", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 90),
+    (name: "Little Hugo", m: 4, ws: 4, bs: 4, s: 5, t: 4, w: 1, i: 4, a: 2, ld: 7, points: ""),
+    (name: "Gui the Great", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, longbow",
+  magic-items: [
 - *The Black Arrow:* Enchanted Item. One use only. The Black Arrow has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "10", "Killing Blow"))
-#field("SPECIAL RULES", "Loner, Scouts, Skirmisher, Sniper")
-
-- *The Bowmen of Bergerac:* Bertrand must be accompanied by a unit of Herrimaults chosen from the army list at a cost of 9 points per model. This unit has +1 Ballistic Skill. Little Hugo and Gui the Great are part of the unit's Command Group and must be upgraded at no additional cost. Bertrand is the unit's Leader and may never choose to leave this unit.
-- *Marksman:* Bertrand may re-roll failed to Hit rolls with missile weapons.
-- *Hugo le Petit:* Little Hugo is armed with a warbow instead of a longbow.
-- *Gui le Gros:* As long as Gui the Great is alive, the unit he is with may re-roll failed Leadership tests.
+  ],
+  special-rules: "Loner, Scouts, Skirmisher, Sniper",
+  special-rules-body: (
+    rule("The Bowmen of Bergerac")[Bertrand must be accompanied by a unit of Herrimaults chosen from the army list at a cost of 9 points per model. This unit has +1 Ballistic Skill. Little Hugo and Gui the Great are part of the unit's Command Group and must be upgraded at no additional cost. Bertrand is the unit's Leader and may never choose to leave this unit.],
+    rule("Marksman")[Bertrand may re-roll failed to Hit rolls with missile weapons.],
+    rule("Hugo le Petit")[Little Hugo is armed with a warbow instead of a longbow.],
+    rule("Gui le Gros")[As long as Gui the Great is alive, the unit he is with may re-roll failed Leadership tests.],
+  ),
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

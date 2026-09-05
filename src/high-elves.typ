@@ -350,17 +350,17 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 
 = CHARACTERS
 
-#entry("COMMANDERS", first: true)
-#profile(
-  (name: "Prince", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 125),
-  (name: "Noble", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
-)
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
-
+#unit("COMMANDERS",
+  first: true,
+  profiles: (
+    (name: "Prince", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 125),
+    (name: "Noble", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -386,21 +386,22 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 - One Noble may carry the Battle Standard +25 points
 - A Noble may take one Elven Honour and Magic Items up to a total of 50 points
 - A Prince may take one Elven Honour and Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("MAGES")
-#profile(
-  (name: "Arch Mage", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
-  (name: "Mage", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Mage is a Level 1 Wizard. An Arch Mage is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("MAGES",
+  profiles: (
+    (name: "Arch Mage", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
+    (name: "Mage", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Mage is a Level 1 Wizard. An Arch Mage is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Death
 - Heavens
@@ -410,10 +411,9 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 - Life
 - Metal
 - Shadow
-
-#field("SPECIAL RULES", "Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take light armour +3 points
 - May be mounted on one of the following:
@@ -424,21 +424,22 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
   - Moon Dragon (Arch Mage only) +300 points
 - A Mage may take Magic Items up to a total of 50 points
 - An Arch Mage may take Magic Items up to a total of 100 points
-
-#entry("LORDS OF AENARION")
-#profile(
-  (name: "Lord of Aenarion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 5, ld: 10, points: 175),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Frenzy, Hatred (Forces of Destruction), Martial Prowess, Valour of Ages")
 
-- *Battle Trance:* If a Lord of Aenarion is in base contact with a friendly unit, he must pass a Leadership test at the start of any round of combat a he is involved in. If failed, he will make one Attack on every model in base contact instead of attacking normally. Roll to Hit as normal.
-- *Curse of Aenarion:* As soon as a model with this special rule is reduced to 1 Wound they gain a 3+ invulnerable save for the rest of the battle. This has no effect on attacks that would outright kill them before they are reduced to 1 Wound, like a spell or attack with the Multiple Wounds special rule. If they were to suffer multiple Wounds in a single phase, roll one save at a time (if they have any) for each Wound suffered until the invulnerable save takes effect.
-
-#field("OPTIONS", "")
-
+#unit("LORDS OF AENARION",
+  profiles: (
+    (name: "Lord of Aenarion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 5, ld: 10, points: 175),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Frenzy, Hatred (Forces of Destruction), Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Battle Trance")[If a Lord of Aenarion is in base contact with a friendly unit, he must pass a Leadership test at the start of any round of combat a he is involved in. If failed, he will make one Attack on every model in base contact instead of attacking normally. Roll to Hit as normal.],
+    rule("Curse of Aenarion")[As soon as a model with this special rule is reduced to 1 Wound they gain a 3+ invulnerable save for the rest of the battle. This has no effect on attacks that would outright kill them before they are reduced to 1 Wound, like a spell or attack with the Multiple Wounds special rule. If they were to suffer multiple Wounds in a single phase, roll one save at a time (if they have any) for each Wound suffered until the invulnerable save takes effect.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -453,216 +454,229 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 - May take a shield +5 points
 - May be mounted on an Elven Steed +15 points
 - May take Magic Items up to a total of 100 points
-
-#entry("LOREMASTERS OF HOETH")
-#profile(
-  (name: "Loremaster", m: 5, ws: 6, bs: 4, s: 4, t: 3, w: 3, i: 7, a: 3, ld: 9, points: 220),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon")
-#field("MAGIC", "A Loremaster of Hoeth is a Level 3 Wizard. Instead of choosing spells normally, they always know the eight")
 
+#unit("LOREMASTERS OF HOETH",
+  profiles: (
+    (name: "Loremaster", m: 5, ws: 6, bs: 4, s: 4, t: 3, w: 3, i: 7, a: 3, ld: 9, points: 220),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon",
+  magic: "A Loremaster of Hoeth is a Level 3 Wizard. Instead of choosing spells normally, they always know the eight",
+  magic-body: [
 Signature Spells from the Winds of Magic.
-
-#field("SPECIAL RULES", "Elven Grace, Lileath's Blessing, Martial Prowess, Swordmaster, Valour of Ages")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Elven Grace, Lileath's Blessing, Martial Prowess, Swordmaster, Valour of Ages",
+  options: [
 - May choose one of the following:
   - Light armour +3 points
   - Medium armour +9 points
   - Heavy armour +18 points
 - May take Magic Items up to a total of 100 points
-
-#entry("PRIESTS OF MATHLANN")
-#profile(
-  (name: "Storm Weaver", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 120),
-  (name: "Mist Weaver", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 75),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Magic Resistance (1), Martial Prowess, Valour of Ages")
 
+#unit("PRIESTS OF MATHLANN",
+  profiles: (
+    (name: "Storm Weaver", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 120),
+    (name: "Mist Weaver", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 75),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Magic Resistance (1), Martial Prowess, Valour of Ages",
+  special-rules-body: [
 - *Eye of the Storm:* The model may re-roll failed Leadership tests for their Prayers as long as they are not engaged in close combat.
 - *Prayers of Mathlann:* A model with this special rule knows the three Prayers listed below. Unless fleeing, they may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and takes immediate effect. A friendly unit can only be under the effect of one Prayer at a time.
   - *Armour of Mathlann:* The model and any unit they are with gain the Magical Ward (6+) special rule until the start of your next turn.
   - *Mistress of the Deep:* Until the start of your next turn, any enemy unit attempting to charge the model or any unit they are with must pass a Leadership test with a \-2 modifier, otherwise the charge will automatically fail.
   - *The Writhing Mists:* All missile attacks targeting the model or any unit they are with suffer a \-1 To Hit penalty until the start of your next turn.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - A Mist Weaver may take Magic Items up to a total of 50 points
 - A Storm Weaver may take Magic Items up to a total of 100 points
-
-#entry("DRAGON MAGES OF CALEDOR")
-#profile(
-  (name: "Dragon Mage", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 300),
-  (name: "Sun Dragon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Character, High Elf)")
-#field("MOUNT", "Sun Dragon (Draconid)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Dragon Mage is a Level 1 Wizard who uses spells from the Lore of Fire.")
-#field("MAGIC ITEMS", "")
 
-- *Sunstaff:* Arcane Item. Staff. Bound Spell (Level 1, cast on 4+). This item contains an *augment* spell can be cast on the Wizard themselves. Until the start of their next Magic phase, the Wizard gains +1 Attack, +3 Strength, the Flaming Attacks special rule and always Hits on the roll of a 2+ in close combat.
-
-#field("SPECIAL RULES", "Elven Grace, Fiery Breath, Fly (7), Lileath's Blessing, Martial Prowess, Natural Armour")
-
+#unit("DRAGON MAGES OF CALEDOR",
+  profiles: (
+    (name: "Dragon Mage", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 300),
+    (name: "Sun Dragon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Character, High Elf)",
+  mount: "Sun Dragon (Draconid)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon",
+  magic: "A Dragon Mage is a Level 1 Wizard who uses spells from the Lore of Fire.",
+  magic-items: (
+    rule("Sunstaff")[Arcane Item. Staff. Bound Spell (Level 1, cast on 4+). This item contains an *augment* spell can be cast on the Wizard themselves. Until the start of their next Magic phase, the Wizard gains +1 Attack, +3 Strength, the Flaming Attacks special rule and always Hits on the roll of a 2+ in close combat.],
+  ),
+  special-rules: "Elven Grace, Fiery Breath, Fly (7), Lileath's Blessing, Martial Prowess, Natural Armour",
+  special-rules-body: [
 *(3+), Valour of Ages*
 
 - *Reckless:* When a Dragon Mage casts a spell, a 'free' Power dice is added to the casting attempt. This extra dice counts towards Ultimate Power and can cause a Miscast as normal, and allows the Dragon Mage to roll more dice than they are normally allowed to.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional Wizard Level +35 points
 - May take light armour +25 points
 - May take Magic Items up to a total of 50 points
-
-#entry("HANDMAIDENS OF THE EVERQUEEN")
-#profile(
-  (name: "Handmaiden", m: 5, ws: 5, bs: 6, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 9, points: 45),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, Bow of Avelorn")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
 
-- *Quicksilver Shot:* A Handmaiden and any unit of Sistern of Avelorn that they join gain the Quick Shot special rule, and can move and shoot without losing Multiple Shots.
-
-#field("OPTIONS", "")
-
+#unit("HANDMAIDENS OF THE EVERQUEEN",
+  profiles: (
+    (name: "Handmaiden", m: 5, ws: 5, bs: 6, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 9, points: 45),
+  ),
+  troop-type: "Infantry (Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, Bow of Avelorn",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Quicksilver Shot")[A Handmaiden and any unit of Sistern of Avelorn that they join gain the Quick Shot special rule, and can move and shoot without losing Multiple Shots.],
+  ),
+  options: [
 - May take light armour +3 points
 - One Handmaiden may carry the Battle Standard +25 points
 - May take Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#entry("ELVEN STEED", first: true)
-#profile(
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
-
+#unit("ELVEN STEED",
+  first: true,
+  profiles: (
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take Ithilmar barding +10 points
-
-#compact-entry("PEGASUS")[
-#profile(
-  (name: "Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fly (9)")
-]
 
-#entry("UNICORN")
-#profile(
-  (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: "-"),
+#unit("PEGASUS",
+  compact: true,
+  profiles: (
+    (name: "Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fly (9)",
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Forest Strider, Magical Attacks, Magic Resistance (2)")
 
-- *Impale:* A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.
-
-#entry("GREAT EAGLE")
-#profile(
-  (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: "-"),
+#unit("UNICORN",
+  profiles: (
+    (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Forest Strider, Magical Attacks, Magic Resistance (2)",
+  special-rules-body: (
+    rule("Impale")[A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Beast (Avian)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
 
-- *Swiftsense:* The model gains the Always Strikes First special rule in any turn that they charge.
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-
-#field("OPTIONS", "")
-
+#unit("GREAT EAGLE",
+  profiles: (
+    (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Avian)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Swiftsense")[The model gains the Always Strikes First special rule in any turn that they charge.],
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+  ),
+  options: [
 - May take Shredding Talons +5 points
 - May take Swiftsense +5 points
-
-#entry("GRIFFON")
-#profile(
-  (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (8)")
-#field("UPGRADES", "")
 
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-- *Swooping Strike:* The model gains the Devastating Charge special rule.
-
-#field("OPTIONS", "")
-
+#unit("GRIFFON",
+  profiles: (
+    (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fly (8)",
+  upgrades: (
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+    rule("Swooping Strike")[The model gains the Devastating Charge special rule.],
+  ),
+  options: [
 - May take Shredding Talons +5 points
 - May take Swooping Strike +5 points
-
-#compact-entry("SUN DRAGON")[
-#profile(
-  (name: "Sun Dragon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fiery Breath, Fly (7), Natural Armour (3+)")
-]
 
-#compact-entry("MOON DRAGON")[
-#profile(
-  (name: "Moon Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: "-"),
+#unit("SUN DRAGON",
+  compact: true,
+  profiles: (
+    (name: "Sun Dragon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 7, points: "-"),
+  ),
+  troop-type: "Monster (Draconid)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fiery Breath, Fly (7), Natural Armour (3+)",
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fiery Breath, Fly (7), Natural Armour (3+)")
-]
 
-#compact-entry("STAR DRAGON")[
-#profile(
-  (name: "Star Dragon", m: 6, ws: 7, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 9, points: "-"),
+#unit("MOON DRAGON",
+  compact: true,
+  profiles: (
+    (name: "Moon Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: "-"),
+  ),
+  troop-type: "Monster (Draconid)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fiery Breath, Fly (7), Natural Armour (3+)",
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fiery Breath, Fly (7), Natural Armour (2+)")
-]
+
+#unit("STAR DRAGON",
+  compact: true,
+  profiles: (
+    (name: "Star Dragon", m: 6, ws: 7, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 9, points: "-"),
+  ),
+  troop-type: "Monster (Draconid)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fiery Breath, Fly (7), Natural Armour (2+)",
+)
 
 = CORE UNITS
 
-#entry("SENTINELS", first: true)
-#profile(
-  (name: "Sentinel", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 10),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
-
+#unit("SENTINELS",
+  first: true,
+  profiles: (
+    (name: "Sentinel", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 10),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, medium armour, shield",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May upgrade one Sentinel to a Leader +5 points
 - May upgrade one Sentinel to a Musician +5 points
 - May upgrade one Sentinel to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("HAWKEYES")
-#profile(
-  (name: "Hawkeye", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven longbow")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("HAWKEYES",
+  profiles: (
+    (name: "Hawkeye", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven longbow",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May choose one of the following:
   - Light armour +0.5 point/model
   - Medium armour +1.5 points/model
@@ -670,90 +684,95 @@ Signature Spells from the Winds of Magic.
 - May upgrade one Hawkeye to a Musician +5 points
 - May upgrade one Hawkeye to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("WARDENS")
-#profile(
-  (name: "Warden", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("WARDENS",
+  profiles: (
+    (name: "Warden", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour, shield",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May upgrade one Warden to a Leader +5 points
 - May upgrade one Warden to a Musician +5 points
 - May upgrade one Warden to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("LOTHERN SEA GUARD")
-#profile(
-  (name: "Sea Guard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 14),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, Elven shortbow, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("LOTHERN SEA GUARD",
+  profiles: (
+    (name: "Sea Guard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 14),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, Elven shortbow, medium armour, shield",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May upgrade one Sea Guard to a Leader +5 points
 - May upgrade one Sea Guard to a Musician +5 points
 - May upgrade one Sea Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("RANGERS")
-#profile(
-  (name: "Ranger", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, light armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Skirmishers, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("RANGERS",
+  profiles: (
+    (name: "Ranger", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, light armour",
+  special-rules: "Elven Grace, Martial Prowess, Skirmishers, Valour of Ages",
+  options: [
 - May replace two hand weapons with great weapons +2 points/model
 - May take Elven shortbows +4 points/model
 - May upgrade one Ranger to a Leader +5 points
 - May upgrade one Ranger to a Musician +5 points
 - May upgrade one Ranger to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("SILVER HELMS")
-#profile(
-  (name: "Silver Helm", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 18),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (High Elf)")
-#field("MOUNT", "Elven Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, medium armour, shield")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("SILVER HELMS",
+  profiles: (
+    (name: "Silver Helm", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 18),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (High Elf)",
+  mount: "Elven Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, medium armour, shield",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May take heavy armour +2.5 points/model
 - May take ithilmar barding +2.5 points/model
 - May upgrade one Silver Helm to a Leader +5 points
 - May upgrade one Silver Helm to a Musician +5 points
 - May upgrade one Silver Helm to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("ELLYRIAN REAVERS")
-#profile(
-  (name: "Reaver", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (High Elf)")
-#field("MOUNT", "Elven Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light lance, light armour")
-#field("SPECIAL RULES", "Elven Grace, Fast Cavalry, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("ELLYRIAN REAVERS",
+  profiles: (
+    (name: "Reaver", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 15),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (High Elf)",
+  mount: "Elven Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light lance, light armour",
+  special-rules: "Elven Grace, Fast Cavalry, Martial Prowess, Valour of Ages",
+  options: [
 - May take Elven shortbows +3 points/model
 - May take medium armour +1.5 points/model
 - May take shields +1 points/model
@@ -762,242 +781,262 @@ Signature Spells from the Winds of Magic.
 - May upgrade one Reaver to a Musician +5 points
 - May upgrade one Reaver to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
+  ],
+)
 
 = SPECIAL UNITS
 
-#entry("SWORDMASTERS OF HOETH", first: true)
-#profile(
-  (name: "Swordmaster", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 16),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, heavy armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Swordmaster, Valour of Ages")
-#field("OPTIONS", "")
-
+#unit("SWORDMASTERS OF HOETH",
+  first: true,
+  profiles: (
+    (name: "Swordmaster", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 16),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, heavy armour",
+  special-rules: "Elven Grace, Martial Prowess, Swordmaster, Valour of Ages",
+  options: [
 - May upgrade one Swordmaster to a Leader +5 points
 - May upgrade one Swordmaster to a Musician +5 points
 - May upgrade one Swordmaster to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("WHITE LIONS OF CHRACE")
-#profile(
-  (name: "White Lion", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 16),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, lion cloak, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Martial Prowess, Multiple Wounds (2), Stubborn, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("WHITE LIONS OF CHRACE",
+  profiles: (
+    (name: "White Lion", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 16),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, lion cloak, medium armour",
+  special-rules: "Elven Grace, Forest Strider, Martial Prowess, Multiple Wounds (2), Stubborn, Valour of Ages",
+  options: [
 - May upgrade one White Lion to a Leader +5 points
 - May upgrade one White Lion to a Musician +5 points
 - May upgrade one White Lion to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("SHADOW WARRIORS")
-#profile(
-  (name: "Shadow Warrior", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 15),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven shortbow, light armour")
-#field("SPECIAL RULES", "Elven Grace, Hatred (Dark Elves), Independent, Martial Prowess, Scouts, Skirmishers, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("SHADOW WARRIORS",
+  profiles: (
+    (name: "Shadow Warrior", m: 5, ws: 5, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 15),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven shortbow, light armour",
+  special-rules: "Elven Grace, Hatred (Dark Elves), Independent, Martial Prowess, Scouts, Skirmishers, Valour of Ages",
+  options: [
 - May take additional hand weapons +1 point/model
 - May replace Elven shortbows with Elven longbows +1 point/model
 - May upgrade one Shadow Warrior to a Leader +5 points
-
-#entry("DRAGON PRINCES OF CALEDOR")
-#profile(
-  (name: "Dragon Prince", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 9, points: 28),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (High Elf)")
-#field("MOUNT", "Elven Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, dragon armour, shield, ithilmar barding")
-#field("SPECIAL RULES", "Devastating Charge, Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("DRAGON PRINCES OF CALEDOR",
+  profiles: (
+    (name: "Dragon Prince", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 9, points: 28),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (High Elf)",
+  mount: "Elven Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, dragon armour, shield, ithilmar barding",
+  special-rules: "Devastating Charge, Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May upgrade one Dragon Prince to a Leader +5 points
 - May upgrade one Dragon Prince to a Musician +5 points
 - May upgrade one Dragon Prince to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("TIRANOC CHARIOT")
-#profile(
-  (name: "Tiranoc Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
-  (name: "Charioteer", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
-  (name: "Elven Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 Charioteers (High Elf)")
-#field("DRAWN BY", "2 Elven Steeds (Equine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Light lance, Elven shortbow, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("TIRANOC CHARIOT",
+  profiles: (
+    (name: "Tiranoc Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
+    (name: "Charioteer", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
+    (name: "Elven Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ),
+  unit-size: "1-3",
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 Charioteers (High Elf)",
+  drawn-by: "2 Elven Steeds (Equine)",
+  base-size: "50x100",
+  equipment: "Light lance, Elven shortbow, medium armour",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - One Tiranoc Chariot may be upgraded to a standard bearer +10 points
-
-#entry("LION CHARIOT OF CHRACE")
-#profile(
-  (name: "Lion Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 100),
-  (name: "White Lion", m: "-", ws: 5, bs: 4, s: 4, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
-  (name: "War Lion", m: "-", ws: 4, bs: 0, s: 4, t: "-", w: "-", i: 4, a: 2, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 White Lions (High Elf)")
-#field("DRAWN BY", "2 War Lions (Feline)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Great weapon, lion cloak, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Fear, Martial Prowess, Mighty Blow (1) (War Lion only), Multiple Wounds (2), Stubborn, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("LION CHARIOT OF CHRACE",
+  profiles: (
+    (name: "Lion Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 100),
+    (name: "White Lion", m: "-", ws: 5, bs: 4, s: 4, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
+    (name: "War Lion", m: "-", ws: 4, bs: 0, s: 4, t: "-", w: "-", i: 4, a: 2, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 White Lions (High Elf)",
+  drawn-by: "2 War Lions (Feline)",
+  base-size: "50x100",
+  equipment: "Great weapon, lion cloak, medium armour",
+  special-rules: "Elven Grace, Fear, Martial Prowess, Mighty Blow (1) (War Lion only), Multiple Wounds (2), Stubborn, Valour of Ages",
+  options: [
 - May be upgraded to a standard bearer +10 points
-
-#entry("WAR LIONS OF CHRACE")
-#profile(
-  (name: "War Lion", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: 24),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "War Beast (Feline)")
-#field("BASE SIZE", "25x50")
-#field("SPECIAL RULES", "Fear, Mighty Blow (1)")
 
-- *Lion Coat:* The model has the Natural Armour (6+) special rule against missile attacks.
-
-#entry("EAGLE CLAW BOLT THROWER")
-#profile(
-  (name: "Eagle Claw Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 60),
-  (name: "Crew", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+#unit("WAR LIONS OF CHRACE",
+  profiles: (
+    (name: "War Lion", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: 24),
+  ),
+  unit-size: "5-15",
+  troop-type: "War Beast (Feline)",
+  base-size: "25x50",
+  special-rules: "Fear, Mighty Blow (1)",
+  special-rules-body: (
+    rule("Lion Coat")[The model has the Natural Armour (6+) special rule against missile attacks.],
+  ),
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "2 Crew (High Elf)")
-#field("BASE SIZE", "50x50 (Eagle Claw Bolt Thrower), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, repeater bolt thrower, light armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("EAGLE CLAW BOLT THROWER",
+  profiles: (
+    (name: "Eagle Claw Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 60),
+    (name: "Crew", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "2 Crew (High Elf)",
+  base-size: "50x50 (Eagle Claw Bolt Thrower), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, repeater bolt thrower, light armour",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May take medium armour +1 point/Crew
 - May take an additional Crew 10 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("PHOENIX GUARD", first: true)
-#profile(
-  (name: "Phoenix Guard", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 18),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, heavy armour")
-#field("SPECIAL RULES", "Elven Grace, Immunity (Psychology), Martial Prowess, Valour of Ages")
-
-- *Witness to Destiny:* A model with this special rule has a 4+ invulnerable save.
-
-#field("OPTIONS", "")
-
+#unit("PHOENIX GUARD",
+  first: true,
+  profiles: (
+    (name: "Phoenix Guard", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 18),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, heavy armour",
+  special-rules: "Elven Grace, Immunity (Psychology), Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Witness to Destiny")[A model with this special rule has a 4+ invulnerable save.],
+  ),
+  options: [
 - May upgrade one Phoenix Guard to a Leader +5 points
 - May upgrade one Phoenix Guard to a Musician +5 points
 - May upgrade one Phoenix Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 75 points
-
-#entry("SISTERS OF AVELORN")
-#profile(
-  (name: "Sister of Avelorn", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 19),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Bow of Avelorn, light armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-#field("OPTIONS", "")
 
+#unit("SISTERS OF AVELORN",
+  profiles: (
+    (name: "Sister of Avelorn", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 8, points: 19),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Bow of Avelorn, light armour",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  options: [
 - May take spears +0.5 point/model
 - May upgrade one Sister of Avelorn to a Leader +5 points
 - May upgrade one Sister of Avelorn to a Musician +5 points
 - May upgrade one Sister of Avelorn to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("LOTHERN SKYCUTTER")
-#profile(
-  (name: "Lothern Skycutter", m: "-", ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 80),
-  (name: "Sea Guard", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
-  (name: "Swiftfeather Roc", m: "-", ws: 5, bs: 0, s: 4, t: "-", w: "-", i: 4, a: 2, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "3 Sea Guards (High Elf)")
-#field("DRAWN BY", "1 Swiftfeather Roc (Avian)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Light lance, Elven shortbow, medium armour")
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages, Fly (8)")
-#field("UPGRADES", "")
 
+#unit("LOTHERN SKYCUTTER",
+  profiles: (
+    (name: "Lothern Skycutter", m: "-", ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 80),
+    (name: "Sea Guard", m: "-", ws: 4, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 8, points: ""),
+    (name: "Swiftfeather Roc", m: "-", ws: 5, bs: 0, s: 4, t: "-", w: "-", i: 4, a: 2, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "3 Sea Guards (High Elf)",
+  drawn-by: "1 Swiftfeather Roc (Avian)",
+  base-size: "50x100 or 60x100",
+  equipment: "Light lance, Elven shortbow, medium armour",
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages, Fly (8)",
+  upgrades: [
 - *Eagle Eye Bolt Thrower:* The Eagle Eye Bolt Thrower is a bolt thrower with the following profile, and can be fired by one of the Skycutter's crew instead of their own missile weapon.
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "5", "Armour Piercing (1), Cumbersome, Multiple Wounds (D3)"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May replace one Sea Guard crew with an Eagle Eye Bolt Thrower +25 points
-
-#entry("GREAT EAGLE")
-#profile(
-  (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: 50),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Monstrous Beast (Avian)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
 
-- *Swiftsense:* The model gains the Always Strikes First special rule in any turn that they charge.
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-
-#field("OPTIONS", "")
-
+#unit("GREAT EAGLE",
+  profiles: (
+    (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: 50),
+  ),
+  unit-size: "1-3",
+  troop-type: "Monstrous Beast (Avian)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Swiftsense")[The model gains the Always Strikes First special rule in any turn that they charge.],
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+  ),
+  options: [
 - May take Shredding Talons +5 points
 - May take Swiftsense +5 points
-
-#entry("DRAKEMASTER")
-#profile(
-  (name: "Drakemaster", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 200),
-  (name: "Drake", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (High Elf)")
-#field("MOUNT", "Drake (Draconid)")
-#field("BASE SIZE", "50x50, 50x75 or 50x100")
-#field("EQUIPMENT", "Heavy lance, dragon armour, shield")
-#field("SPECIAL RULES", "Devastating Charge, Elven Grace, Fiery Breath, Fly (8), Martial Prowess, Natural Armour")
 
+#unit("DRAKEMASTER",
+  profiles: (
+    (name: "Drakemaster", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 9, points: 200),
+    (name: "Drake", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: ""),
+  ),
+  troop-type: "Monstrous Creature (High Elf)",
+  mount: "Drake (Draconid)",
+  base-size: "50x50, 50x75 or 50x100",
+  equipment: "Heavy lance, dragon armour, shield",
+  special-rules: "Devastating Charge, Elven Grace, Fiery Breath, Fly (8), Martial Prowess, Natural Armour",
+  special-rules-body: [
 *(4+), Valour of Ages*
-
-#entry("MERWYRM")
-#profile(
-  (name: "Merwyrm", m: 6, ws: 6, bs: 0, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 7, points: 205),
+  ],
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Aquatic, Natural Armour (3+), Regeneration (4+)")
 
-- *Powerful Tail:* The Merwyrm may make one extra Attack at Strength 7 and Initiative 1.
-
-#entry("FLAMESPYRE PHOENIX")
-#profile(
-  (name: "Flamespyre Phoenix", m: 2, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 8, points: 235),
-  (name: "Frostheart Phoenix", m: 2, ws: 6, bs: 0, s: 5, t: 6, w: 5, i: 3, a: 3, ld: 9, points: ""),
+#unit("MERWYRM",
+  profiles: (
+    (name: "Merwyrm", m: 6, ws: 6, bs: 0, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 7, points: 205),
+  ),
+  troop-type: "Monster (Draconid)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Aquatic, Natural Armour (3+), Regeneration (4+)",
+  special-rules-body: (
+    rule("Powerful Tail")[The Merwyrm may make one extra Attack at Strength 7 and Initiative 1.],
+  ),
 )
-#field("TROOP TYPE", "Monster (Avian)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Flaming Attacks, Immunity (Flaming Attacks), Fly (8)")
 
+#unit("FLAMESPYRE PHOENIX",
+  profiles: (
+    (name: "Flamespyre Phoenix", m: 2, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 8, points: 235),
+    (name: "Frostheart Phoenix", m: 2, ws: 6, bs: 0, s: 5, t: 6, w: 5, i: 3, a: 3, ld: 9, points: ""),
+  ),
+  troop-type: "Monster (Avian)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Flaming Attacks, Immunity (Flaming Attacks), Fly (8)",
+  special-rules-body: [
 - *Attuned to Magic:* A model with this special rule has the Magical Attacks and Magical Ward (5+) special rules. After rolling for the Winds of Magics each turn, divide the result by the number of 1000 points played, rounding up (so at 2000 or more points, divide the result by 2; at 3000 or more points, divide the result by 3; and so on). Then consult the table below to see what effect it will have until the start of the next Magic phase:
 
 #chart((("Score", "Result"), ("2", "Magical Dearth: The Phoenix's suffers a -1 penalty to its Magical Ward."), ("3", "Ebbing Zephyr: The Phoenix has -1 Strength."), ("4", "Energising Breeze: The Phoenix has +1 Attack."), ("5", "Invigorating Winds: The Phoenix has +1 Strength."), ("6", "Howling Gale: The Phoenix's gains a +1 bonus to its Magical Ward.")))
@@ -1022,151 +1061,158 @@ If a Flamespyre Phoenix has a rider when it loses its last Wound, both monster a
 At the end of the game, remove all Phoenix Reborn counters from the board – these Flamespyre Phoenixes and any riders they had count as casualties.
 
 - *Wake of Fire:* If a Flamespyre Phoenix moves over an unengaged enemy unit in the Remaining Moves sub- phase, it suffers D6 Strength 4 hits with the Flaming Attacks special rule, distributed like hits from shooting from the rear. This is a non-physical attack.
-
-#field("UPGRADES", "")
-
-- *Blessings of Asuryan:* The model gains the Always Strikes First special rule.
-- *Cleansing Flames:* All the model's attacks (including Flame Kindled and Wake of Fire) gain +1 Strength against Daemons and Undead.
-- *Frostheart Phoenix:* A Frostheart Phoenix loses the Flaming Attacks, Immunity (Flaming Attacks), Phoenix Reborn and Wake of Fire special rules. Instead, it gains the Ice Attacks and Natural Armour (5+) special rules. In addition, any enemy unit in base contact with one or more Frostheart Phoenixes suffers \-1 to its Strength (to a minimum of 1). This has no effect on models with Immunity (Ice Attacks).
-- *Omen of Hope:* The model gains the Hold Your Ground (12) special rule.
-- *Omen of Sacrifice:* All friendly units of Elves within 6" gain the Hatred special rule. However, they also suffer D6 Strength 3 Hits at the end of each round of close combat they are involved in (before Break tests are taken).
-
-#field("OPTIONS", "")
-
+  ],
+  upgrades: (
+    rule("Blessings of Asuryan")[The model gains the Always Strikes First special rule.],
+    rule("Cleansing Flames")[All the model's attacks (including Flame Kindled and Wake of Fire) gain +1 Strength against Daemons and Undead.],
+    rule("Frostheart Phoenix")[A Frostheart Phoenix loses the Flaming Attacks, Immunity (Flaming Attacks), Phoenix Reborn and Wake of Fire special rules. Instead, it gains the Ice Attacks and Natural Armour (5+) special rules. In addition, any enemy unit in base contact with one or more Frostheart Phoenixes suffers \-1 to its Strength (to a minimum of 1). This has no effect on models with Immunity (Ice Attacks).],
+    rule("Omen of Hope")[The model gains the Hold Your Ground (12) special rule.],
+    rule("Omen of Sacrifice")[All friendly units of Elves within 6" gain the Hatred special rule. However, they also suffer D6 Strength 3 Hits at the end of each round of close combat they are involved in (before Break tests are taken).],
+  ),
+  options: [
 - May be upgraded to a Frostheart Phoenix +5 points
 - May take Cleansing Flames (Flamespyre Phoenix only) +15 points
 - May take Blessings of Asuryan +25 points
 - May take Omen of Hope +25 points
 - May take Omen of Sacrifice +25 points
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("TYRION", first: true)
-#namecost("Defender of Ulthuan, Heir of Aenarion, Champion of the Everqueen", "")
-#profile(
-  (name: "Tyrion", m: 5, ws: 9, bs: 7, s: 4, t: 3, w: 3, i: 10, a: 5, ld: 10, points: 400),
-  (name: "Malhandir (Elven Steed)", m: 10, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 7, points: ""),
+#unit("TYRION",
+  first: true,
+  subtitle: "Defender of Ulthuan, Heir of Aenarion, Champion of the Everqueen",
+  profiles: (
+    (name: "Tyrion", m: 5, ws: 9, bs: 7, s: 4, t: 3, w: 3, i: 10, a: 5, ld: 10, points: 400),
+    (name: "Malhandir (Elven Steed)", m: 10, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 7, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, High Elf)",
+  mount: "Malhandir (Equine)",
+  base-size: "25x50, 30x60, 50x50",
+  magic-items: (
+    rule("Sunfang")[Magic Weapon. Hits from Sunfang are resolved at +3 Strength and have the Flaming Attacks special rule. In addition, Sunfang's bearer can make a Strength 3 Breath Weapon attack once per game. Hits from this attack are magical, and have the Flaming Attacks special rule.],
+    rule("Dragon Armour of Aenarion")[Magic Armour. Heavy armour. The Dragon Armour of Aenarion grants Tyrion a 2+ armour save as well as the Immunity (Flaming Attacks) and Magical Ward (6+) special rule.],
+    rule("Heart of Avelorn")[Talisman. The Heart of Avelorn gives Tyrion the Magic Resistance (2) special rule. In addition, if Tyrion suffers an unsaved Wound that would kill him (including unsaved Wounds that killed him as a result of the Killing Blow, Heroic Killing Blow or Multiple Wounds special rules), roll a D6 before removing him as a casualty; on a 2+ Tyrion negates the Wound and the Heart of Avelorn is destroyed. Otherwise, Tyrion is removed as a casualty as normal.],
+  ),
+  special-rules: "Curse of Aenarion (see Lord of Aenarion), Elven Grace, Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Defender of Ulthuan")[If Tyrion is your Army's General, he has the Inspiring Presence (18) special rule in total.],
+    rule("Feint")[Tyrion may re-roll any failed rolls to Hit in Close Combat.],
+    rule("Riposte")[Tyrion has the Parry (6+) special rule, even while mounted. For each successful Parry made, he may immediately make an additional Attack back at the model who struck the blow.],
+  ),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, High Elf)")
-#field("MOUNT", "Malhandir (Equine)")
-#field("BASE SIZE", "25x50, 30x60, 50x50")
-#field("MAGIC ITEMS", "")
 
-- *Sunfang:* Magic Weapon. Hits from Sunfang are resolved at +3 Strength and have the Flaming Attacks special rule. In addition, Sunfang's bearer can make a Strength 3 Breath Weapon attack once per game. Hits from this attack are magical, and have the Flaming Attacks special rule.
-- *Dragon Armour of Aenarion:* Magic Armour. Heavy armour. The Dragon Armour of Aenarion grants Tyrion a 2+ armour save as well as the Immunity (Flaming Attacks) and Magical Ward (6+) special rule.
-- *Heart of Avelorn:* Talisman. The Heart of Avelorn gives Tyrion the Magic Resistance (2) special rule. In addition, if Tyrion suffers an unsaved Wound that would kill him (including unsaved Wounds that killed him as a result of the Killing Blow, Heroic Killing Blow or Multiple Wounds special rules), roll a D6 before removing him as a casualty; on a 2+ Tyrion negates the Wound and the Heart of Avelorn is destroyed. Otherwise, Tyrion is removed as a casualty as normal.
-
-#field("SPECIAL RULES", "Curse of Aenarion (see Lord of Aenarion), Elven Grace, Martial Prowess, Valour of Ages")
-
-- *Defender of Ulthuan:* If Tyrion is your Army's General, he has the Inspiring Presence (18) special rule in total.
-- *Feint:* Tyrion may re-roll any failed rolls to Hit in Close Combat.
-- *Riposte:* Tyrion has the Parry (6+) special rule, even while mounted. For each successful Parry made, he may immediately make an additional Attack back at the model who struck the blow.
-
-#entry("TECLIS")
-#namecost("High Loremaster of Hoeth, Warden of the White Tower", "")
-#profile(
-  (name: "Teclis", m: 5, ws: 3, bs: 3, s: 2, t: 2, w: 3, i: 5, a: 1, ld: 10, points: 460),
-)
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC", "Teclis is a Level 4 Wizard. He can either choose all of the spells in the Lore of High Magic, or one spell from")
-
+#unit("TECLIS",
+  subtitle: "High Loremaster of Hoeth, Warden of the White Tower",
+  profiles: (
+    (name: "Teclis", m: 5, ws: 3, bs: 3, s: 2, t: 2, w: 3, i: 5, a: 1, ld: 10, points: 460),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic: "Teclis is a Level 4 Wizard. He can either choose all of the spells in the Lore of High Magic, or one spell from",
+  magic-body: [
 each of the eight Winds of Magic.
-
-#field("MAGIC ITEMS", "")
-
-- *Sword of Teclis:* Magic Weapon. All hits from the Sword of Teclis wound on a 2+, and Wounds caused by it Ignores Armour saves.
-- *Potion of Inner Strength:* Enchanted Item. One use only. This item can be used at the start of any turn. When Teclis does so, he will increase his Weapon Skill and Initiative to 6, and Strength, Toughness and Attacks to 3 for the remainder of the turn.
-- *Moon Staff of Lileath:* Arcane Item. Staff. The staff gives Teclis 1 extra Power and Dispel dice in each Magic phase. Once per game, The Moon Staff of Lileath can unleash its full power. It can either be used at the start of any of Teclis' Magic phases, in which case a bonus power dice is added to every casting attempt Teclis makes that phase (at least one normal Power dice must be used), or if Teclis suffers a miscast he can choose to ignore it (before any roll on the Miscast table is made). In either case, his staff will cease to provide any additional dice for the rest of the battle.
-- *Scroll of Hoeth:* Arcane Item. Charm. One use only. When an enemy cast a spell, the bearer may use this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, immediately after the dispel has been resolved, both Teclis and the caster must roll a D6; if Teclis scores higher, the caster immediately forgets the spell; otherwise, nothing else happens.
-- *War Crown of Saphery:* Arcane Item. Relic. The War Crown of Saphery allows Teclis to re-roll the result of any randomised spell effects (such as the number of hits inflicted by a magic missile).
-
-#field("SPECIAL RULES", "Curse of Aenarion (see Lord of Aenarion), Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages")
-
-#entry("FINUBAR THE SEAFARER")
-#namecost("Phoenix King of Ulthuan", "")
-#profile(
-  (name: "Finubar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 365),
+  ],
+  magic-items: (
+    rule("Sword of Teclis")[Magic Weapon. All hits from the Sword of Teclis wound on a 2+, and Wounds caused by it Ignores Armour saves.],
+    rule("Potion of Inner Strength")[Enchanted Item. One use only. This item can be used at the start of any turn. When Teclis does so, he will increase his Weapon Skill and Initiative to 6, and Strength, Toughness and Attacks to 3 for the remainder of the turn.],
+    rule("Moon Staff of Lileath")[Arcane Item. Staff. The staff gives Teclis 1 extra Power and Dispel dice in each Magic phase. Once per game, The Moon Staff of Lileath can unleash its full power. It can either be used at the start of any of Teclis' Magic phases, in which case a bonus power dice is added to every casting attempt Teclis makes that phase (at least one normal Power dice must be used), or if Teclis suffers a miscast he can choose to ignore it (before any roll on the Miscast table is made). In either case, his staff will cease to provide any additional dice for the rest of the battle.],
+    rule("Scroll of Hoeth")[Arcane Item. Charm. One use only. When an enemy cast a spell, the bearer may use this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, immediately after the dispel has been resolved, both Teclis and the caster must roll a D6; if Teclis scores higher, the caster immediately forgets the spell; otherwise, nothing else happens.],
+    rule("War Crown of Saphery")[Arcane Item. Relic. The War Crown of Saphery allows Teclis to re-roll the result of any randomised spell effects (such as the number of hits inflicted by a magic missile).],
+  ),
+  special-rules: "Curse of Aenarion (see Lord of Aenarion), Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages",
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *Royal Sceptre of Ulthuan:* Magic Weapon. Additional hand weapon. The Royal Sceptre gives Finubar +1 Strength and the Flaming Attacks special rule. In addition, it contains a Bound Spell (Level 1, cast on 3+). When cast, all enemy models in base contact suffer a Strength 5 Hit with the Flaming Attacks and Multiple Wounds (D3) special rules.
-- *Crown of the Phoenix King:* Talisman. Enemy missile attacks suffer a \-1 To Hit penalty when firing at Finubar or any unit he is with. In addition, it makes Finubar and any unit of White Lions of Chrace that he joins Unbreakable. Finally, all friendly units within 6" of Finubar are Stubborn.
-
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-
-- *Phoenix King:* Finubar has a 4+ invulnerable save and the Immunity (Flaming Attacks, Psychology) special rule. In addition, if Finubar is included in your army, Phoenix Guard are taken as Special Units instead of Rare units.
-
-#entry("ALARIELLE THE RADIANT")
-#namecost("Everqueen of Avelorn", "")
-#profile(
-  (name: "Alarielle", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 10, points: 400),
+#unit("FINUBAR THE SEAFARER",
+  subtitle: "Phoenix King of Ulthuan",
+  profiles: (
+    (name: "Finubar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 365),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour",
+  magic-items: (
+    rule("Royal Sceptre of Ulthuan")[Magic Weapon. Additional hand weapon. The Royal Sceptre gives Finubar +1 Strength and the Flaming Attacks special rule. In addition, it contains a Bound Spell (Level 1, cast on 3+). When cast, all enemy models in base contact suffer a Strength 5 Hit with the Flaming Attacks and Multiple Wounds (D3) special rules.],
+    rule("Crown of the Phoenix King")[Talisman. Enemy missile attacks suffer a \-1 To Hit penalty when firing at Finubar or any unit he is with. In addition, it makes Finubar and any unit of White Lions of Chrace that he joins Unbreakable. Finally, all friendly units within 6" of Finubar are Stubborn.],
+  ),
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Phoenix King")[Finubar has a 4+ invulnerable save and the Immunity (Flaming Attacks, Psychology) special rule. In addition, if Finubar is included in your army, Phoenix Guard are taken as Special Units instead of Rare units.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Alarielle the Radiant is a Level 4 Wizard who uses the following Lores of Magic:")
 
+#unit("ALARIELLE THE RADIANT",
+  subtitle: "Everqueen of Avelorn",
+  profiles: (
+    (name: "Alarielle", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 10, points: 400),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  magic: "Alarielle the Radiant is a Level 4 Wizard who uses the following Lores of Magic:",
+  magic-body: [
 - High
 - Light
 - Life
 
 She can choose all of her spells from the same lore, or from two or more of the above lores in any combination.
-
-#field("MAGIC ITEMS", "")
-
+  ],
+  magic-items: [
 - *The Shieldstone of Isha*: Talisman. The Shieldstone of Isha grants Alarielle the Radiant and her unit the Magical Ward (5+) special rule.
 - *Stave of Avelorn*: Arcane Item. Staff. One use only. The Stave of Avelorn is used in the Magic phase. When used, it allows Alarielle to immediately attempt to cast a spell she has already cast that phase, even if the casting attempt failed, or was miscast. The spell is otherwise cast according to the normal rules.
 - *Star of Avelorn*: Enchanted Item. At the start of your Movement phase, nominate a single friendly character within 12" – that model immediately regains a single Wound lost earlier in the battle. Alarielle can only restore her own Wounds if there is no other viable target within range.
-
-#field("SPECIAL RULES", "Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages")
-
+  ],
+  special-rules: "Elven Grace, Lileath's Blessing, Martial Prowess, Valour of Ages",
+  special-rules-body: [
 - *Boon of Isha:* All attacks made by models in Alarielle's unit gain +1 To Hit in close combat. In addition, all models in her unit have the Immunity (Fear, Terror) and Magical Attacks special rules.
 - *Chaos Bane:* At the start of each of Alarielle's Magic phases, before rolling for the Winds of Magic, every unit with the Daemonic special rule within 12" of Alarielle the Radiant suffers D6 Strength 4 hits, distributed as for shooting attacks. However, Alarielle suffers a
   - D3 penalty to her casting attempts if there is one or more models with the Daemonic special rule within 12" of her.
 - *Everqueen's Court Guards:* If Alarielle is with a unit of Sisters of Avelorn, the whole unit gains the Stubborn special rule. In addition, if Alarielle is included in your army, Sisters of Avelorn are taken as Special Units instead of Rare units.
 - *Touch of the Everqueen:* If Alarielle makes a successful roll To Hit in close combat, the target model is reduced to Weapon Skill 1 for the remainder of that phase.
-
-#entry("ELTHARION THE GRIM")
-#namecost("Warden of Tor Yvresse", "")
-#profile(
-  (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 330),
-  (name: "Stormwing (Griffon)", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Light lance/spear, Elven shortbow, heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *Fangsword of Athel Tamarha:* Magic Weapon. Attacks made with the Fangsword are resolved at +2 Strength and Ignores Armour saves.
-- *Helm of Yvresse:* Magic Armour. 6+ armour save. The Helm of Yvresse grants Eltharion the Magical Ward (5+) special rule. In addition, Eltharion may re-roll any failed Leadership test.
-- *Talisman of Hoeth:* Talisman. This item grants Eltharion the Magic Resistance (1) special rule. The Talisman of Hoeth also makes Eltharion a Level 2 Wizard, who uses spells from one of the eight Winds of Magic.
-
-#field("SPECIAL RULES", "Guardian of Yvresse (see Elven Honours), Hatred (Orcs & Goblins), Martial Prowess, Valour of Ages")
-
-- *Silverin Guard:* If Eltharion the Grim is your Army General, you may upgrade one unit of Sentinels to Silverin Guard for a cost of +2 points per model. This unit has heavy armour and the Magic Resistance (1) special rule.
-
-#field("MAGIC ITEMS", "")
-
+#unit("ELTHARION THE GRIM",
+  subtitle: "Warden of Tor Yvresse",
+  profiles: (
+    (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 330),
+    (name: "Stormwing (Griffon)", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "50x50",
+  equipment: "Light lance/spear, Elven shortbow, heavy armour",
+  magic-items: (
+    rule("Fangsword of Athel Tamarha")[Magic Weapon. Attacks made with the Fangsword are resolved at +2 Strength and Ignores Armour saves.],
+    rule("Helm of Yvresse")[Magic Armour. 6+ armour save. The Helm of Yvresse grants Eltharion the Magical Ward (5+) special rule. In addition, Eltharion may re-roll any failed Leadership test.],
+    rule("Talisman of Hoeth")[Talisman. This item grants Eltharion the Magic Resistance (1) special rule. The Talisman of Hoeth also makes Eltharion a Level 2 Wizard, who uses spells from one of the eight Winds of Magic.],
+  ),
+  special-rules: "Guardian of Yvresse (see Elven Honours), Hatred (Orcs & Goblins), Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Silverin Guard")[If Eltharion the Grim is your Army General, you may upgrade one unit of Sentinels to Silverin Guard for a cost of +2 points per model. This unit has heavy armour and the Magic Resistance (1) special rule.],
+  ),
+  // The source heads this second block MAGIC ITEMS too, over what is plainly a
+  // mounting option. Reproduced as printed, and named here so the mislabelling
+  // is visible rather than buried in a repeated field.
+  options: [
 - May be mounted on Stormwing +115 points
-
-#entry("ELTHARION THE BLIND")
-#namecost("Bladelord of Hoeth", "")
-#profile(
-  (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 245),
+  ],
+  labels: (options: "MAGIC ITEMS"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *The White Sword:* Magic Weapon. Great weapon. This weapon gives Eltharion the Killing Blow special rule.
-
-#field("SPECIAL RULES", "Bladelord (see Elven Honours), Hatred (Dark Elves, Orcs & Goblins), Immunity")
-
+#unit("ELTHARION THE BLIND",
+  subtitle: "Bladelord of Hoeth",
+  profiles: (
+    (name: "Eltharion", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 245),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic-items: (
+    rule("The White Sword")[Magic Weapon. Great weapon. This weapon gives Eltharion the Killing Blow special rule.],
+  ),
+  special-rules: "Bladelord (see Elven Honours), Hatred (Dark Elves, Orcs & Goblins), Immunity",
+  special-rules-body: [
 *(Psychology), Martial Prowess, Valour of Ages*
 
 - *The Dark Within:* Eltharion and any unit he joins is subject to the Berserk Rage part of the Frenzy special rule.
@@ -1178,17 +1224,18 @@ She can choose all of her spells from the same lore, or from two or more of the 
   - *Way of the Winter Breeze:* Eltharion gains +1 To Hit and ignores Parry saves.
   - *Way of the Swooping Eagle:* Eltharion may re-roll failed To Wound rolls and gains the Armour Piercing (1) special rule.
   - *Way of the Breaking Storm:* Eltharion gains +1 Attack.
-
-#entry("ALITH ANAR")
-#namecost("The Shadow King, Prince of Nagarythe", "")
-#profile(
-  (name: "Alith Anar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 265),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("MAGIC ITEMS", "")
 
+#unit("ALITH ANAR",
+  subtitle: "The Shadow King, Prince of Nagarythe",
+  profiles: (
+    (name: "Alith Anar", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 265),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  magic-items: [
 - *The Moonbow:* Magic Weapon. The Moonbow is a bolt thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "7", "Armour Piercing (1), Multiple Wounds (D3)"))
@@ -1197,92 +1244,94 @@ Any unit of Dark Elves that suffers one or more casualties from the Moonbow must
 
 - *Stone of Midnight:* Talisman. The Stone of Midnight grants Alith Anar the Magical Ward (4+) special rule. In addition, enemies suffer \-1 To Hit when shooting at Alith Anar or any unit he has joined.
 - *The Shadow Crown:* Enchanted Item. Alith Anar and any unit he joins have the Swiftstride special rule.
-
-#field("SPECIAL RULES", "Elven Grace, Hatred (Dark Elves), Martial Prowess, Shadow Stalker (see Elven Honours), Valour of Ages")
-
-- *The Grey:* If Alith Anar is included in your army, you may upgrade one unit of Shadow Warriors to The Grey for a cost of +1 point per model. If this unit is wholly within a terrain feature, enemies cannot draw Line of Sight to them unless they are within 12".
-
-#entry("IMRIK")
-#namecost("Lord of Dragons, Prince of Caledor", "")
-#profile(
-  (name: "Imrik", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 600),
-  (name: "Minaithnir (Star Dragon)", m: 6, ws: 7, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 9, points: ""),
+  ],
+  special-rules: "Elven Grace, Hatred (Dark Elves), Martial Prowess, Shadow Stalker (see Elven Honours), Valour of Ages",
+  special-rules-body: (
+    rule("The Grey")[If Alith Anar is included in your army, you may upgrade one unit of Shadow Warriors to The Grey for a cost of +1 point per model. If this unit is wholly within a terrain feature, enemies cannot draw Line of Sight to them unless they are within 12".],
+  ),
 )
-#field("TROOP TYPE", "Monster (Special Character, High Elf)")
-#field("MOUNT", "Minaithnir (Draconid)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("MAGIC ITEMS", "")
 
-- *Star Lance:* Magic Weapon. Heavy lance. Imrik gains the Mighty Blow (1) and Ignores Armour saves special rules when charging.
-- *Armour of Caledor:* Magic Armour. Heavy armour. The Armour of Caledor grants the Immunity (Flaming Attacks) and Magical Ward (5+) special rules.
-- *Dragonhorn:* Enchanted Item. One use only. At the start of any of his own turns, Imrik may sound the Dragonhorn. This fills his army with pride, and all friendly High Elf units may re-roll any failed Rally and Psychology tests until the start of their next turn.
-
-#field("SPECIAL RULES", "Blood of Caledor (see Elven Honours), Fiery Breath, Fly (7), Martial Prowess, Natural")
-
+#unit("IMRIK",
+  subtitle: "Lord of Dragons, Prince of Caledor",
+  profiles: (
+    (name: "Imrik", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 600),
+    (name: "Minaithnir (Star Dragon)", m: 6, ws: 7, bs: 0, s: 7, t: 7, w: 7, i: 2, a: 6, ld: 9, points: ""),
+  ),
+  troop-type: "Monster (Special Character, High Elf)",
+  mount: "Minaithnir (Draconid)",
+  base-size: "50x50, 50x100 or 60x100",
+  magic-items: (
+    rule("Star Lance")[Magic Weapon. Heavy lance. Imrik gains the Mighty Blow (1) and Ignores Armour saves special rules when charging.],
+    rule("Armour of Caledor")[Magic Armour. Heavy armour. The Armour of Caledor grants the Immunity (Flaming Attacks) and Magical Ward (5+) special rules.],
+    rule("Dragonhorn")[Enchanted Item. One use only. At the start of any of his own turns, Imrik may sound the Dragonhorn. This fills his army with pride, and all friendly High Elf units may re-roll any failed Rally and Psychology tests until the start of their next turn.],
+  ),
+  special-rules: "Blood of Caledor (see Elven Honours), Fiery Breath, Fly (7), Martial Prowess, Natural",
+  special-rules-body: [
 *Armour (2+), Valour of Ages*
 
 - *Dragon Kin:* No Draconids will fight Imrik. If they are in base contact with other models (and not in a challenge) then they fight them instead, otherwise they may do nothing. Their riders (if they have any) still fight as normal.
 - *The Fireborn:* If Imrik is your Army General, you may upgrade one unit of Dragon Princes of Caledor to The Fireborn for a cost of +2 points per model. This unit has the Flaming Attacks and Multiple Wounds (2) special rules.
 - *Loyal Bond:* Whenever Imrik suffers an unsaved Wound, Minaithnir will become subject to Hatred against the model or unit that inflicted the Wound for the remainder of the turn.
-
-#entry("SEA LORD AISLINN")
-#namecost("Master of the Mists, Herald of Mathlann", "")
-#profile(
-  (name: "Sea Lord Aislinn", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, medium armour")
-#field("MAGIC ITEMS", "")
 
-- *Mask of the Merlord:* Magic Armour. This mask confers a 6+ armour save. In addition, the wearer and any unit they join gains the River Strider special rule and counts as being in soft cover while in any river.
-
-#field("SPECIAL RULES", "Elven Grace, Lothern Sea Helm (see Elven Honours), Martial Prowess, Valour of Ages")
-
-- *Master of the Mists:* If Sea Lord Aislinn is in your army, all friendly units of Lothern Sea Guard may deploy using the Vanguard special rule. In addition, immediately after both armies have been fully deployed (including Scouts), each unit of Lothern Sea Guards and Eagle Claw Bolt Throwers in your army gets to fire as if it was the Shooting phase.
-- *The Storm Riders:* If Sea Lord Aislinn is your Army General, you may upgrade one unit of Lothern Sea Guard to Storm Riders for a cost of +1 point per model. This unit has the Hatred special rule, and causes Fear in all Dark Elves.
-
-#field("OPTIONS", "")
-
+#unit("SEA LORD AISLINN",
+  subtitle: "Master of the Mists, Herald of Mathlann",
+  profiles: (
+    (name: "Sea Lord Aislinn", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, medium armour",
+  magic-items: (
+    rule("Mask of the Merlord")[Magic Armour. This mask confers a 6+ armour save. In addition, the wearer and any unit they join gains the River Strider special rule and counts as being in soft cover while in any river.],
+  ),
+  special-rules: "Elven Grace, Lothern Sea Helm (see Elven Honours), Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Master of the Mists")[If Sea Lord Aislinn is in your army, all friendly units of Lothern Sea Guard may deploy using the Vanguard special rule. In addition, immediately after both armies have been fully deployed (including Scouts), each unit of Lothern Sea Guards and Eagle Claw Bolt Throwers in your army gets to fire as if it was the Shooting phase.],
+    rule("The Storm Riders")[If Sea Lord Aislinn is your Army General, you may upgrade one unit of Lothern Sea Guard to Storm Riders for a cost of +1 point per model. This unit has the Hatred special rule, and causes Fear in all Dark Elves.],
+  ),
+  options: [
 - May be mounted on a Lothern Skycutter (replacing one of the crew) +65 points
 - May take Magic Items up to a total of 75 points
-
-#entry("ALTHRAN STORMRIDER")
-#namecost("Elven Prince", "")
-#profile(
-  (name: "Althran Stormrider", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
-  (name: "Sharpclaw (Griffon)", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Shield")
-#field("MAGIC ITEMS", "")
 
-- *The Stormrider's Sword:* Magic Weapon. This weapon gives Althran the Multiple Wounds (2) special rule.
-- *Armour of Protection:* Magic Armour. Heavy armour. This armour grants Althran the Magical Ward (5+) special rule.
-
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Valour of Ages")
-
-- *Glory of the Elves:* Once per game, declared at the start of any close combat phase, Althran and all friendly units with the Martial Prowess special rule within 6" of him gain +1 To Hit for the duration of that phase.
-
-#field("OPTIONS", "")
-
+#unit("ALTHRAN STORMRIDER",
+  subtitle: "Elven Prince",
+  profiles: (
+    (name: "Althran Stormrider", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 200),
+    (name: "Sharpclaw (Griffon)", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Shield",
+  magic-items: (
+    rule("The Stormrider's Sword")[Magic Weapon. This weapon gives Althran the Multiple Wounds (2) special rule.],
+    rule("Armour of Protection")[Magic Armour. Heavy armour. This armour grants Althran the Magical Ward (5+) special rule.],
+  ),
+  special-rules: "Elven Grace, Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Glory of the Elves")[Once per game, declared at the start of any close combat phase, Althran and all friendly units with the Martial Prowess special rule within 6" of him gain +1 To Hit for the duration of that phase.],
+  ),
+  options: [
 - May be mounted on Sharpclaw +125 points
 - May take Magic Items up to a total of 50 points
-
-#entry("BELANNAER THE WISE")
-#namecost("Loremaster of the White Tower", "")
-#profile(
-  (name: "Belannaer the Wise", m: 5, ws: 6, bs: 5, s: 4, t: 3, w: 3, i: 9, a: 3, ld: 10, points: 405),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Belannaer is a Level 3 Wizard. Instead of choosing spells normally, he always knows the eight Signature")
 
+#unit("BELANNAER THE WISE",
+  subtitle: "Loremaster of the White Tower",
+  profiles: (
+    (name: "Belannaer the Wise", m: 5, ws: 6, bs: 5, s: 4, t: 3, w: 3, i: 9, a: 3, ld: 10, points: 405),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  magic: "Belannaer is a Level 3 Wizard. Instead of choosing spells normally, he always knows the eight Signature",
+  magic-body: [
 Spells from the Winds of Magic.
-
-#field("MAGIC ITEMS", "")
-
+  ],
+  magic-items: [
 - *Blade of Bel-Korhadris*: Magic Weapon. Non-magical armour saves cannot be taken against Wounds caused by this weapon. In addition, once per battle, at the beginning of any close combat phase, Belannaer can choose to gain +D6 Attacks and the Flaming Attacks special rule that turn.
 - *Cloak of Stars*: Talisman. All shooting and close combat Attacks that strike Belannaer will be resolved at \-1 Strength (with a minimum of 1).
 - *Staff of Cyeos:* Arcane Item. Staff. Belannaer may add an additional free Power Dice to one spell attempt each turn.
@@ -1290,123 +1339,132 @@ Spells from the Winds of Magic.
   - *The Verse of Destruction:* This verse will double Belannaer's Strength characteristic.
   - *The Verse of Flame Eternal:* This verse will allow Belannaer to automatically cast one of his spells without using any power dice once per Magic phase. It can still be dispelled as normal, at a Power Level of 5.
   - *The Verse of Rebirth:* The first time Belannaer is killed, he causes a Flaming Strength 6 hit on each model, friend or foe, in base-to-base contact with him, and remain alive with D3 wounds. This does not apply if Belannaer is caught in pursuit.
-
-#field("SPECIAL RULES", "Elven Grace, Martial Prowess, Swordmaster, Valour of Ages")
-
-- *Glamour of Hoeth:* Enemies who declare a charge against Belannaer or his unit must re-roll successful charge distance rolls.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Elven Grace, Martial Prowess, Swordmaster, Valour of Ages",
+  special-rules-body: (
+    rule("Glamour of Hoeth")[Enemies who declare a charge against Belannaer or his unit must re-roll successful charge distance rolls.],
+  ),
+  options: [
 - May take light armour +3 points
-
-#entry("KORHIL LIONMANE")
-#namecost("Charandis-bane, Hunter Captain of the White Lions", "")
-#profile(
-  (name: "Korhil", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("MAGIC ITEMS", "")
 
+#unit("KORHIL LIONMANE",
+  subtitle: "Charandis-bane, Hunter Captain of the White Lions",
+  profiles: (
+    (name: "Korhil", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour",
+  magic-items: [
 - *Chayal:* Magic Weapon. Two hand weapons. Close combat attacks made with Chayal are resolved at +2 Strength and have the Killing Blow special rule.
 - *Pelt of Charandis:* Magic Armour. The Pelt of Charandis has the following armour profile:
 
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+2/5+", "Immunity (Poisoned Attacks)"))
-#field("SPECIAL RULES", "Chracian Hunter (see Elven Honours), Elven Grace, Forest Strider, Martial Prowess, Mighty Blow (1), Valour of Ages")
-
+  ],
+  special-rules: "Chracian Hunter (see Elven Honours), Elven Grace, Forest Strider, Martial Prowess, Mighty Blow (1), Valour of Ages",
+  special-rules-body: [
 - *Hunter Captain:* Korhil may use one the following abilities in close combat in the situations described below:
   - *Lion Rampant:* Lion Rampant can be used in a turn when choosing Hold as a charge reaction. Korhil gains the Parry (6+) special rule for the duration of the close combat phase.
   - *Lion Leaping:* Lion Leaping can be used in a turn when Korhil is charging. Enemy models in base contact are subject to the Always Strikes Last special rule for the duration of the close combat phase.
   - *Lion Claw:* Lion Claw can be used fighting against Monstrous Infantry, Monstrous Beasts and Monstrous Cavalry. Against these Troop Types, Korhil has the Heroic Killing Blow special rule in the first turn of close combat.
 - *The Puremane Company:* Unless Korhil is mounted on a Lion Chariot of Chrace, he must be accompanied by a unit of White Lions of Chrace chosen from the army list as normal. This unit has the Immunity (Fear) special rule. Korhil may never choose to leave this unit.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on a Lion Chariot of Chrace (replacing one of the crew) +95 points
-
-#entry("CARADRYAN OF THE FLAME")
-#namecost("Chosen of Asuryan, Captain of the Phoenix Guard", "")
-#profile(
-  (name: "Caradryan", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
-  (name: "Ashtari (Frostheart Phoenix)", m: 2, ws: 6, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 9, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *The Phoenix Blade:* Magic Weapon. Polearm. Close combat attacks made with the Phoenix Blade have the Flaming Attacks and Multiple Wounds (D3) special rules.
-
-#field("SPECIAL RULES", "Anointed of Asuryan (see Elven Honours), Elven Grace, Immunity (Psychology), Magic")
-
+#unit("CARADRYAN OF THE FLAME",
+  subtitle: "Chosen of Asuryan, Captain of the Phoenix Guard",
+  profiles: (
+    (name: "Caradryan", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 180),
+    (name: "Ashtari (Frostheart Phoenix)", m: 2, ws: 6, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 9, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour",
+  magic-items: (
+    rule("The Phoenix Blade")[Magic Weapon. Polearm. Close combat attacks made with the Phoenix Blade have the Flaming Attacks and Multiple Wounds (D3) special rules.],
+  ),
+  special-rules: "Anointed of Asuryan (see Elven Honours), Elven Grace, Immunity (Psychology), Magic",
+  special-rules-body: [
 *Resistance (1), Martial Prowess, Valour of Ages,*
 
 - *Mark of Asuryan:* If Caradryan is slain in close combat, the unit that killed him immediately suffers D3 Wounds which Ignores Armour Saves. If Caradryan is killed in a challenge, then only his opponent takes these Wounds – any excess Wounds caused by the Mark of Asuryan count towards overkill.
 - *Keepers of the Flame:* Unless Caradryan is mounted on Ashtari, he must be accompanied by a unit of Phoenix Guard chosen from the army list as normal. This unit has the Magical Attacks special rule. Caradryan may never choose to leave this unit.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on Ashtari +260 points
-
-#entry("ISHAYA VESS")
-#namecost("Sentinel of the Silent Isle", "")
-#profile(
-  (name: "Ishaya Vess", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 145),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Elven shortbow, medium armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *Mathlann's Ire:* Magic Weapon. Spear. This weapon gives Ishaya Vess +1 Strength and the Armour Piercing (1) special rule. In addition, enemies must re-roll successful To Hit rolls against her in close combat.
-
-#field("SPECIAL RULES", "Elven Grace, Inspiring Presence (6), Lothern Sea Helm (see Elven Honours), Martial")
-
+#unit("ISHAYA VESS",
+  subtitle: "Sentinel of the Silent Isle",
+  profiles: (
+    (name: "Ishaya Vess", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 145),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Elven shortbow, medium armour, shield",
+  magic-items: (
+    rule("Mathlann's Ire")[Magic Weapon. Spear. This weapon gives Ishaya Vess +1 Strength and the Armour Piercing (1) special rule. In addition, enemies must re-roll successful To Hit rolls against her in close combat.],
+  ),
+  special-rules: "Elven Grace, Inspiring Presence (6), Lothern Sea Helm (see Elven Honours), Martial",
+  special-rules-body: [
 *Prowess, Valour of Ages*
 
 - *Precision Strikes:* Any Lothern Sea Guard unit joined by Ishaya Vess gains the Armour Piercing (1) special rule.
-
-#entry("PHYTRION")
-#namecost("Chosen of Tor Yvresse", "")
-#profile(
-  (name: "Phytrion", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 120),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Shield")
-#field("MAGIC ITEMS", "")
 
-- *Sword of Retaliation:* Magic Weapon. All enemy models from the Forces of Destruction suffer \-1 To Hit Phytrion in close combat.
-- *Moonshade Armour:* Magic Armour. Heavy armour. The Moonshade Armour gives Phytrion the Magical Ward (5+) special rule.
-
-#field("SPECIAL RULES", "Elven Grace, Guardian of Yvresse (see Elven Honours), Hatred (Warriors of Chaos), Martial Prowess, Valour of Ages")
-
-- *Favour of Destiny:* Roll a D3 at the start of the game; this is the number of dice that Phytrion may re-roll of either To Hit, To Wound, armour saves or invulnerable saves during the course of the game.
-
-#entry("GILEAD & FITHVAEL")
-#namecost("Last of Tor Anrok", "")
-#profile(
-  (name: "Gilead", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 170),
-  (name: "Shadowfast", m: 8, ws: 10, bs: 6, s: 4, t: 3, w: 3, i: 10, a: 8, ld: 10, points: "-"),
-  (name: "Fithvael", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+#unit("PHYTRION",
+  subtitle: "Chosen of Tor Yvresse",
+  profiles: (
+    (name: "Phytrion", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 120),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Shield",
+  magic-items: (
+    rule("Sword of Retaliation")[Magic Weapon. All enemy models from the Forces of Destruction suffer \-1 To Hit Phytrion in close combat.],
+    rule("Moonshade Armour")[Magic Armour. Heavy armour. The Moonshade Armour gives Phytrion the Magical Ward (5+) special rule.],
+  ),
+  special-rules: "Elven Grace, Guardian of Yvresse (see Elven Honours), Hatred (Warriors of Chaos), Martial Prowess, Valour of Ages",
+  special-rules-body: (
+    rule("Favour of Destiny")[Roll a D3 at the start of the game; this is the number of dice that Phytrion may re-roll of either To Hit, To Wound, armour saves or invulnerable saves during the course of the game.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, High Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven longbow, light armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *Blade of Galeth:* Magic Weapon. All attacks made by Gilead with the Blade of Galeth have the Armour Piercing (1) special rule.
-
-#field("SPECIAL RULES", "Elven Grace, Independent, Martial Prowess, Multiple Shots (3) (Fithvael only), Skirmishers, Valour of Ages")
-
+#unit("GILEAD & FITHVAEL",
+  subtitle: "Last of Tor Anrok",
+  profiles: (
+    (name: "Gilead", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 170),
+    (name: "Shadowfast", m: 8, ws: 10, bs: 6, s: 4, t: 3, w: 3, i: 10, a: 8, ld: 10, points: "-"),
+    (name: "Fithvael", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 70),
+  ),
+  troop-type: "Infantry (Special Character, High Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven longbow, light armour, shield",
+  magic-items: (
+    rule("Blade of Galeth")[Magic Weapon. All attacks made by Gilead with the Blade of Galeth have the Armour Piercing (1) special rule.],
+  ),
+  special-rules: "Elven Grace, Independent, Martial Prowess, Multiple Shots (3) (Fithvael only), Skirmishers, Valour of Ages",
+  special-rules-body: [
 - *Doom-saga:* At the beginning of the battle, after deployment, nominate one enemy character on the battlefield. Against this particular target, Gilead re-rolls all failed rolls To Hit and To Wound.
 - *Melancholic Distractions*: At the start of each of his turns, Gilead must take a Leadership test, unless he is engaged in combat. If this test is failed, roll a D6. On a 1\-3 Gilead cannot move that turn. On a 4\-6 Gilead must move his full movement for that turn towards the closest table edge. If he leaves the table, he is treated as a casualty and will not return. If Gilead is engaged in combat, he will fight as normal.
 - *Shadowfast*: Once per game, at the start of any of the High Elf player's movement phase, Gilead may enter Shadowfast. Until the start of his next turn, Gilead's stat line will change to his Shadowfast characteristics. In addition, while Shadowfast, Gilead also gains the Always Strikes First and Dodge (4+) special rules.
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

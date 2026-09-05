@@ -398,17 +398,17 @@ A Resplendence of Luminescents gives the character and any unit they join Magica
 
 = CHARACTERS
 
-#entry("HIGHBORNS", first: true)
-#profile(
-  (name: "Glade Lord", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 120),
-  (name: "Glade Captain", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
-)
-#field("TROOP TYPE", "Infantry (Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider")
-#field("OPTIONS", "")
-
+#unit("HIGHBORNS",
+  first: true,
+  profiles: (
+    (name: "Glade Lord", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 120),
+    (name: "Glade Captain", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
+  ),
+  troop-type: "Infantry (Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -436,21 +436,22 @@ A Resplendence of Luminescents gives the character and any unit they join Magica
 - One Glade Captain may carry the Battle Standard +25 points
 - A Glade Captain may take one Spite and/or Magic Items up to a total of 50 points
 - A Glade Lord may take one Spite and/or Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("SPELLSINGERS")
-#profile(
-  (name: "Spellweaver", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
-  (name: "Spellsinger", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Spellsinger is a Level 1 Wizard. A Spellweaver is a Level 3 Wizard. They use one of the following Lores")
 
+#unit("SPELLSINGERS",
+  profiles: (
+    (name: "Spellweaver", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 195),
+    (name: "Spellsinger", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 85),
+  ),
+  troop-type: "Infantry (Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Spellsinger is a Level 1 Wizard. A Spellweaver is a Level 3 Wizard. They use one of the following Lores",
+  magic-body: [
 of Magic:
 
 - Athel Loren
@@ -459,10 +460,9 @@ of Magic:
 - Light
 - Life
 - Shadow
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Elven Grace, Forest Strider")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Blessings of the Ancients, Elven Grace, Forest Strider",
+  options: [
 - May take an additional Wizard Level +35 points
 - May be mounted on one of the following:
   - Elven Steed +15 points
@@ -471,57 +471,62 @@ of Magic:
   - Great Eagle +40 points
 - A Spellsinger may take one Spite and/or Magic Items up to a total of 50 points
 - A Spellweaver take one Spite and/or Magic Items up to a total of 100 points
-
-#entry("SHADOWDANCER")
-#profile(
-  (name: "Shadowdancer", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 8, a: 4, ld: 8, points: 100),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Shadowdancer who is a Wizard who chooses spells from the Lore of Shadow.")
-#field("OPTIONS", "")
 
+#unit("SHADOWDANCER",
+  profiles: (
+    (name: "Shadowdancer", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 8, a: 4, ld: 8, points: 100),
+  ),
+  troop-type: "Infantry (Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Shadowdancer who is a Wizard who chooses spells from the Lore of Shadow.",
+  options: [
 - May be upgraded to a Level 1 Wizard +35 points
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Saerath +5 points
   - Great weapon +15 points
 - May take one Spite and/or Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Elven Grace, Forest Strider, Magical Ward (6+), Magic")
-
+  ],
+  special-rules: "Blessings of the Ancients, Elven Grace, Forest Strider, Magical Ward (6+), Magic",
+  special-rules-body: [
 *Resistance (1), Shadow Dances of Loec*
-
-#entry("WILD HUNTER")
-#profile(
-  (name: "Wild Hunter", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 110),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Cavalry (Character, Wood Elf)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("MOUNT", "Elven Steed (Equine)")
-#field("EQUIPMENT", "Light lance")
-#field("SPECIAL RULES", "Devastating Charge, Elven Grace, Forest Spirit, Frenzy")
-#field("OPTIONS", "")
 
+#unit("WILD HUNTER",
+  profiles: (
+    (name: "Wild Hunter", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 110),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Character, Wood Elf)",
+  base-size: "25x50 or 30x60",
+  mount: "Elven Steed (Equine)",
+  equipment: "Light lance",
+  special-rules: "Devastating Charge, Elven Grace, Forest Spirit, Frenzy",
+  options: [
 - May take a shield +5 points
 - May take light armour +3 points
 - May replace Elven Steed with one of the following:
   - Steed of Kurnous +5 points
   - Great Stag +25 points
 - May take one Spite and/or Magic Items up to a total of 50 points
-
-#entry("WAYSTALKER")
-#profile(
-  (name: "Waystalker", m: 5, ws: 6, bs: 7, s: 4, t: 3, w: 2, i: 7, a: 2, ld: 8, points: 90),
+  ],
+  order: ("troop-type", "base-size", "mount", "equipment", "special-rules", "options"),
 )
-#field("TROOP TYPE", "Infantry (Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven shortbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider, Forest Stalker, Lethal Shot, Scouts, Sniper")
-#field("OPTIONS", "")
 
+#unit("WAYSTALKER",
+  profiles: (
+    (name: "Waystalker", m: 5, ws: 6, bs: 7, s: 4, t: 3, w: 2, i: 7, a: 2, ld: 8, points: 90),
+  ),
+  troop-type: "Infantry (Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven shortbow",
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider, Forest Stalker, Lethal Shot, Scouts, Sniper",
+  options: [
 - May take an additional hand weapon +3 points
 - May replace Elven shortbow with Elven longbow +2 points
 - May choose one of the following:
@@ -532,182 +537,196 @@ of Magic:
   - Swiftshiver Shards +2 points
   - Trueflight Arrows +2 points
 - May take one Spite and/or Magic Items up to a total of 50 points
-
-#entry("ARCH-REVENANT")
-#profile(
-  (name: "Arch-Revenant", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 160),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Polearm, shield")
-#field("SPECIAL RULES", "Fly (10), Forest Spirit, Natural Armour (6+)")
 
-- *Call to Battle:* All friendly units with the Forest Spirit special rule within 6" of the Arch-Revenant are subject to the Frenzy special rule as long as they remain within range, and do not lose Frenzy even if losing combat.
-
-#field("OPTIONS", "")
-
+#unit("ARCH-REVENANT",
+  profiles: (
+    (name: "Arch-Revenant", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 160),
+  ),
+  troop-type: "Infantry (Character, Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  equipment: "Polearm, shield",
+  special-rules: "Fly (10), Forest Spirit, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Call to Battle")[All friendly units with the Forest Spirit special rule within 6" of the Arch-Revenant are subject to the Frenzy special rule as long as they remain within range, and do not lose Frenzy even if losing combat.],
+  ),
+  options: [
 - May take one Spite and/or Magic Items up to a total of 100 points
-
-#entry("WARSONG REVENANT")
-#profile(
-  (name: "Warsong Revenant", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 1, ld: 9, points: 250),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Forest Spirit)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Warsong Revenant is a Level 3 Wizard who uses one of the following Lores of Magic:")
 
+#unit("WARSONG REVENANT",
+  profiles: (
+    (name: "Warsong Revenant", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 1, ld: 9, points: 250),
+  ),
+  troop-type: "Infantry (Character, Forest Spirit)",
+  base-size: "50x75",
+  equipment: "Hand weapon",
+  magic: "A Warsong Revenant is a Level 3 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Athel Loren
 - Life
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Fly (5), Forest Spirit, Regeneration (5+), Natural Armour (6+)")
-
-- *Song of Athel Loren:* Friendly models within 12" of one or more Warsong Revenants gain +1 to their Leadership. Enemy models within 12" of one or more Warsong Revenants suffer \-1 to their Leadership.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Blessings of the Ancients, Fly (5), Forest Spirit, Regeneration (5+), Natural Armour (6+)",
+  special-rules-body: (
+    rule("Song of Athel Loren")[Friendly models within 12" of one or more Warsong Revenants gain +1 to their Leadership. Enemy models within 12" of one or more Warsong Revenants suffer \-1 to their Leadership.],
+  ),
+  options: [
 - May take one Spite and/or Magic Items up to a total of 100 points
-
-#entry("TREELORD ANCIENT")
-#profile(
-  (name: "Treelord Ancient", m: 5, ws: 4, bs: 4, s: 6, t: 6, w: 6, i: 2, a: 3, ld: 10, points: 250),
+  ],
 )
-#field("TROOP TYPE", "Monster (Character, Forest Spirit)")
-#field("BASE SIZE", "75x50 or 100x100")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Treelord Ancient is a Level 1 Wizard who uses one of the following Lores of Magic:")
 
+#unit("TREELORD ANCIENT",
+  profiles: (
+    (name: "Treelord Ancient", m: 5, ws: 4, bs: 4, s: 6, t: 6, w: 6, i: 2, a: 3, ld: 10, points: 250),
+  ),
+  troop-type: "Monster (Character, Forest Spirit)",
+  base-size: "75x50 or 100x100",
+  equipment: "Hand weapon",
+  magic: "A Treelord Ancient is a Level 1 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Athel Loren
 - Life
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree")
-
+  ],
+  special-rules: "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree",
+  special-rules-body: [
 *Whack*
-
-#field("UPGRADES", "")
-
+  ],
+  upgrades: [
 - *Strangleroots:* Strangleroots have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Multiple Shots (D6+1), Quick Shot, Rapid Fire"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be upgraded to a Level 2 Wizard +35 points
 - May take Strangleroots +10 points
 - May take Spites up to a total of 100 points
-
-#entry("GROVE GUARDIAN")
-#profile(
-  (name: "Grove Guardian", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 170),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Forest Spirit)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Great weapon")
-#field("SPECIAL RULES", "Flammable, Forest Spirit, Hatred, Natural Armour (6+)")
 
-- *Regenesis:* All friendly units of Forest Spirits within 6" of a Grove Guardian gain the Regeneration (6+) special rule.
-- *Soulshriek:* Each time a model with the Forest Spirit special rule is removed as a casualty in close combat within 12" of a Grove Guardian, roll a D6. On a 5+, the enemy model that struck the blow suffers one Wound which Ignores Armour Saves.
-
-#field("OPTIONS", "")
-
+#unit("GROVE GUARDIAN",
+  profiles: (
+    (name: "Grove Guardian", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 170),
+  ),
+  troop-type: "Infantry (Character, Forest Spirit)",
+  base-size: "50x100 or 60x100",
+  equipment: "Great weapon",
+  special-rules: "Flammable, Forest Spirit, Hatred, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Regenesis")[All friendly units of Forest Spirits within 6" of a Grove Guardian gain the Regeneration (6+) special rule.],
+    rule("Soulshriek")[Each time a model with the Forest Spirit special rule is removed as a casualty in close combat within 12" of a Grove Guardian, roll a D6. On a 5+, the enemy model that struck the blow suffers one Wound which Ignores Armour Saves.],
+  ),
+  options: [
 - May take Spites up to a total of 100 points
-
-#entry("BRANCHWRAITH")
-#profile(
-  (name: "Branchwraith", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 4, ld: 9, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Branchwraith who is a Wizard chooses spells from one of the following Lores of Magic:")
 
+#unit("BRANCHWRAITH",
+  profiles: (
+    (name: "Branchwraith", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 4, ld: 9, points: 85),
+  ),
+  troop-type: "Infantry (Character, Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  magic: "A Branchwraith who is a Wizard chooses spells from one of the following Lores of Magic:",
+  magic-body: [
 - Athel Loren
 - Life
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Flammable, Forest Spirit, Hatred, Natural Armour (6+), Tree")
-
+  ],
+  special-rules: "Blessings of the Ancients, Flammable, Forest Spirit, Hatred, Natural Armour (6+), Tree",
+  special-rules-body: [
 *Aspects*
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be upgraded to a Level 1 Wizard +35 points
 - May take a great weapon +15 points
 - May take Spites up to a total of 50 points
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#compact-entry("ELVEN STEED")[
-#profile(
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+#unit("ELVEN STEED",
+  compact: true,
+  profiles: (
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-]
 
-#compact-entry("STEED OF KURNOUS")[
-#profile(
-  (name: "Steed of Kurnous", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+#unit("STEED OF KURNOUS",
+  compact: true,
+  profiles: (
+    (name: "Steed of Kurnous", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Cervine)",
+  base-size: "25x50 or 30x60",
 )
-#field("TROOP TYPE", "War Beast (Cervine)")
-#field("BASE SIZE", "25x50 or 30x60")
-]
 
-#entry("UNICORN")
-#profile(
-  (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: "-"),
+#unit("UNICORN",
+  profiles: (
+    (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 8, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Forest Strider, Magical Attacks, Magic Resistance (2)",
+  special-rules-body: (
+    rule("Impale")[A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.],
+  ),
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Forest Strider, Magical Attacks, Magic Resistance (2)")
 
-- *Impale:* A Unicorn gains the Mighty Blow (1) special rule in any turn that it charges.
-
-#compact-entry("WARHAWK")[
-#profile(
-  (name: "Warhawk", m: 2, ws: 4, bs: 0, s: 4, t: 3, w: 2, i: 5, a: 2, ld: 5, points: "-"),
+#unit("WARHAWK",
+  compact: true,
+  profiles: (
+    (name: "Warhawk", m: 2, ws: 4, bs: 0, s: 4, t: 3, w: 2, i: 5, a: 2, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Avian)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Fly (10)",
 )
-#field("TROOP TYPE", "War Beast (Avian)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Fly (10)")
-]
 
-#compact-entry("GREAT STAG")[
-#profile(
-  (name: "Great Stag", m: 9, ws: 5, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 2, ld: 7, points: "-"),
+#unit("GREAT STAG",
+  compact: true,
+  profiles: (
+    (name: "Great Stag", m: 9, ws: 5, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 2, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Cervine)",
+  base-size: "50x50",
+  special-rules: "Forest Strider, Impact Hits (D3)",
 )
-#field("TROOP TYPE", "Monstrous Beast (Cervine)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Forest Strider, Impact Hits (D3)")
-]
 
 = CORE UNITS
 
-#entry("GLADE GUARD", first: true)
-#profile(
-  (name: "Glade Guard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 7),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, shield")
-#field("SPECIAL RULES", "Elven Grace, Forest Strider")
-#field("OPTIONS", "")
-
+#unit("GLADE GUARD",
+  first: true,
+  profiles: (
+    (name: "Glade Guard", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 7),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, shield",
+  special-rules: "Elven Grace, Forest Strider",
+  options: [
 - May upgrade one Glade Guard to a Leader +5 points
 - May upgrade one Glade Guard to a Musician +5 points
 - May upgrade one Glade Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up 25 points
-
-#entry("GLADE ARCHERS")
-#profile(
-  (name: "Glade Archer", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven longbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider")
-#field("OPTIONS", "")
 
+#unit("GLADE ARCHERS",
+  profiles: (
+    (name: "Glade Archer", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven longbow",
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider",
+  options: [
 - May choose one of the following:
   - Arcane Bodkins +1 point/model
   - Moonfire Shot +1 point/model
@@ -719,18 +738,19 @@ of Magic:
 - May upgrade one Glade Archer to a Musician +5 points
 - May upgrade one Glade Archer to a Standard Bearer +10 points
   - May take a Magic Standard worth up 25 points
-
-#entry("DEEPWOOD SCOUTS")
-#profile(
-  (name: "Deepwood Scout", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven shortbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("DEEPWOOD SCOUTS",
+  profiles: (
+    (name: "Deepwood Scout", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven shortbow",
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider, Scouts, Skirmishers",
+  options: [
 - May replace Elven shortbows with Elven longbows +1 points/model
 - May choose one of the following:
   - Arcane Bodkins +1 point/model
@@ -743,24 +763,24 @@ of Magic:
 - May upgrade one Deepwood Scout to a Musician +5 points
 - May upgrade one Deepwood Scout to a Standard Bearer +10 points
   - May take a Magic Standard worth up 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not have more units of Deepwood Scouts than you have units of Glade Archers.
-
-#entry("GLADE RIDERS")
-#profile(
-  (name: "Glade Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 13),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Wood Elf)")
-#field("MOUNT", "Elven Steed (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Fast Cavalry, Forest Strider")
-#field("OPTIONS", "")
 
+#unit("GLADE RIDERS",
+  profiles: (
+    (name: "Glade Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 13),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Wood Elf)",
+  mount: "Elven Steed (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon",
+  special-rules: "Asrai Archery, Elven Grace, Fast Cavalry, Forest Strider",
+  options: [
 - May take light lances +1 point/model
 - May choose one of the following:
   - Elven longbows +3 points/model
@@ -778,86 +798,91 @@ of Magic:
 - May upgrade one Glade Rider to a Musician +5 points
 - May upgrade one Glade Rider to a Standard Bearer +10 points
   - May take a Magic Standard worth up 25 points
-
-#entry("DRYADS")
-#profile(
-  (name: "Dryad", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 11),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("SPECIAL RULES", "Flammable, Forest Spirit, Hatred, Natural Armour (6+), Tree Aspects")
-#field("OPTIONS", "")
 
+#unit("DRYADS",
+  profiles: (
+    (name: "Dryad", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 11),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  special-rules: "Flammable, Forest Spirit, Hatred, Natural Armour (6+), Tree Aspects",
+  options: [
 - May be upgraded to Skirmishers +1 point/model
 - May upgrade one Dryad to a Leader +5 points
-
-#compact-entry("SPITE SWARMS")[
-#profile(
-  (name: "Spite Swarm", m: 5, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 6, points: 35),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Swarm (Forest Spirit)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Forest Spirit")
-]
+
+#unit("SPITE SWARMS",
+  compact: true,
+  profiles: (
+    (name: "Spite Swarm", m: 5, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 6, points: 35),
+  ),
+  unit-size: "3-9",
+  troop-type: "Swarm (Forest Spirit)",
+  base-size: "40x40",
+  special-rules: "Forest Spirit",
+)
 
 = SPECIAL UNITS
 
-#entry("ETERNAL GUARD", first: true)
-#profile(
-  (name: "Eternal Guard", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 10),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Saearath, light armour")
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Stubborn")
-
-- *Fortress of Boughs:* A unit where the majority of the models have this special rule counts as fighting behind a defended obstacle.
-
-#field("OPTIONS", "")
-
+#unit("ETERNAL GUARD",
+  first: true,
+  profiles: (
+    (name: "Eternal Guard", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 10),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Saearath, light armour",
+  special-rules: "Elven Grace, Forest Strider, Stubborn",
+  special-rules-body: (
+    rule("Fortress of Boughs")[A unit where the majority of the models have this special rule counts as fighting behind a defended obstacle.],
+  ),
+  options: [
 - May take shields +1 point/model
 - May upgrade one Eternal Guard to a Leader +5 points
 - May upgrade one Eternal Guard to a Musician +5 points
 - May upgrade one Eternal Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may take one unit of Eternal Guard as a Core Unit instead of a Special Unit for every Glade Lord in your army.
-
-#entry("WILDWOOD RANGERS")
-#profile(
-  (name: "Wildwood Ranger", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 13),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, light armour")
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Immunity (Psychology)")
 
-- *Guardians of the Wildwood:* If a model with this special rule is in base contact with at least one enemy model with either the Fear or Terror special rule, it gains +1 Attack.
-
-#field("OPTIONS", "")
-
+#unit("WILDWOOD RANGERS",
+  profiles: (
+    (name: "Wildwood Ranger", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 13),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, light armour",
+  special-rules: "Elven Grace, Forest Strider, Immunity (Psychology)",
+  special-rules-body: (
+    rule("Guardians of the Wildwood")[If a model with this special rule is in base contact with at least one enemy model with either the Fear or Terror special rule, it gains +1 Attack.],
+  ),
+  options: [
 - May upgrade one Wildwood Ranger to a Leader +5 points
 - May upgrade one Wildwood Ranger to a Musician +5 points
 - May upgrade one Wildwood Ranger to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("WARDANCERS")
-#profile(
-  (name: "Wardancer", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 13),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Magical Ward (6+), Magic Resistance (1), Shadow Dances of Loec, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("WARDANCERS",
+  profiles: (
+    (name: "Wardancer", m: 5, ws: 6, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 13),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Forest Strider, Magical Ward (6+), Magic Resistance (1), Shadow Dances of Loec, Skirmishers",
+  options: [
 - Must choose at least one of the following:
   - Saeraths +0.5 point/model
   - Additional hand weapons +1 point/model
@@ -865,40 +890,42 @@ of Magic:
 - May upgrade one Wardancer to a Musician +5 points
 - May upgrade one Wardancer to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("ALTERS")
-#profile(
-  (name: "Alter", m: 8, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 14),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("SPECIAL RULES", "Ambushers, Elven Grace, Fear, Forest Strider, Skirmishers, Swiftstride")
 
+#unit("ALTERS",
+  profiles: (
+    (name: "Alter", m: 8, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 2, ld: 8, points: 14),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  special-rules: "Ambushers, Elven Grace, Fear, Forest Strider, Skirmishers, Swiftstride",
+  special-rules-body: [
 - *Animal Form*: Models with this special rule may choose one of the following Animal Forms at the start of each round of close combat. This is done before Impact Hits are resolved. All models in the same unit must choose the same Animal Form. The effect of each Animal Form lasts until the end of that turn or until a new Animal Form is chosen. Models cannot choose the Animal Form in two consecutive rounds of combat.
   - *Bear:* The model gains +1 Strength.
   - *Boar:* The model gains +1 Toughness.
   - *Wolf:* The model gains +1 Attack and the Armour Piercing (1) special rule.
   - *Stag:* The model gains the Impact Hits (1) special rule with Mighty Blow (1).
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May upgrade one Alter to a Leader +5 points
-
-#entry("WILD RIDERS")
-#profile(
-  (name: "Wild Rider", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 24),
-  (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
-  (name: "Steed of Kurnous", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Wood Elf)")
-#field("MOUNT", "Elven Steed (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light lance")
-#field("SPECIAL RULES", "Devastating Charge, Elven Grace, Fast Cavalry, Forest Spirit, Frenzy")
-#field("OPTIONS", "")
 
+#unit("WILD RIDERS",
+  profiles: (
+    (name: "Wild Rider", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 24),
+    (name: "Elven Steed", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+    (name: "Steed of Kurnous", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Wood Elf)",
+  mount: "Elven Steed (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light lance",
+  special-rules: "Devastating Charge, Elven Grace, Fast Cavalry, Forest Spirit, Frenzy",
+  options: [
 - May take light armour +1.5 point/model
 - May take shields +1 point/model
 - May replace Elven Steeds with Steeds of Kurnous +2 points/model
@@ -906,20 +933,21 @@ of Magic:
 - May upgrade one Wild Rider to a Musician +5 points
 - May upgrade one Wild Rider to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("WARHAWK RIDERS")
-#profile(
-  (name: "Warhawk Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 24),
-  (name: "Warhawk", m: 2, ws: 4, bs: 0, s: 4, t: 3, w: 2, i: 5, a: 2, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Cavalry (Wood Elf)")
-#field("MOUNT", "Warhawk (Avian)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Light lance, Elven shortbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Fast Cavalry, Fly (10)")
-#field("OPTIONS", "")
 
+#unit("WARHAWK RIDERS",
+  profiles: (
+    (name: "Warhawk Rider", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 24),
+    (name: "Warhawk", m: 2, ws: 4, bs: 0, s: 4, t: 3, w: 2, i: 5, a: 2, ld: 5, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Cavalry (Wood Elf)",
+  mount: "Warhawk (Avian)",
+  base-size: "40x40 or 50x50",
+  equipment: "Light lance, Elven shortbow",
+  special-rules: "Asrai Archery, Elven Grace, Fast Cavalry, Fly (10)",
+  options: [
 - May replace Elven shortbows with Elven longbows free
 - May take shields +2 points/model
 - May choose one of the following:
@@ -930,104 +958,111 @@ of Magic:
   - Swiftshiver Shards +2 points/model
   - Trueflight Arrows +2 points/model
 - May upgrade one Warhawk Rider to a Leader +5 points
-
-#entry("MEADOW CHARIOT")
-#profile(
-  (name: "Meadow Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
-  (name: "Charioteer", m: "-", ws: 5, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 9, points: ""),
-  (name: "Elven Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "2 Charioteers (Wood Elf)")
-#field("DRAWN BY", "2 Elven Steeds (Equine)")
-#field("BASE SIZE", "50x100 or 100x100")
-#field("EQUIPMENT", "Light lance, Elven shortbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace")
-#field("OPTIONS", "")
 
+#unit("MEADOW CHARIOT",
+  profiles: (
+    (name: "Meadow Chariot", m: 8, ws: "-", bs: "-", s: 5, t: 4, w: 4, i: "-", a: "-", ld: "-", points: 70),
+    (name: "Charioteer", m: "-", ws: 5, bs: 4, s: 3, t: "-", w: "-", i: 5, a: 1, ld: 9, points: ""),
+    (name: "Elven Steed", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "2 Charioteers (Wood Elf)",
+  drawn-by: "2 Elven Steeds (Equine)",
+  base-size: "50x100 or 100x100",
+  equipment: "Light lance, Elven shortbow",
+  special-rules: "Asrai Archery, Elven Grace",
+  options: [
 - May replace Elven shortbows with Elven longbows free
 - May take two additional Elven Steeds +5 points
 - May take two additional Charioteers +10 points
-
-#entry("TREE REVENANTS")
-#profile(
-  (name: "Tree Revenant", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 15),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Spirit, Martial Memories, Natural Armour (6+)")
 
-- *Spirit-walk:* Instead of moving normally, the unit can walk the spirit paths during the Remaining Moves sub- phase. Remove it from play and set it up so that the centre of the unit is within any wood on the table.
-
-#field("OPTIONS", "")
-
+#unit("TREE REVENANTS",
+  profiles: (
+    (name: "Tree Revenant", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 15),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  special-rules: "Forest Spirit, Martial Memories, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Spirit-walk")[Instead of moving normally, the unit can walk the spirit paths during the Remaining Moves sub- phase. Remove it from play and set it up so that the centre of the unit is within any wood on the table.],
+  ),
+  options: [
 - May upgrade one Tree Revenant to a Leader +5 points
 - May upgrade one Tree Revenant to a Musician +5 points
 - May upgrade one Tree Revenant to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("SPITE REVENANTS")
-#profile(
-  (name: "Spite Revenant", m: 5, ws: 4, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 14),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("SPECIAL RULES", "Forest Spirit, Hatred, Natural Armour (6+), Scouts, Skirmishers")
 
-- *Unbridled Malice:* Spite Revenants' Hatred special rule applies in all rounds of close combat, not just the first. In addition, enemy units in base contact with them must re-roll successful Leadership tests. This has no effect on units that have Immunity (Psychology).
-
-#field("OPTIONS", "")
-
+#unit("SPITE REVENANTS",
+  profiles: (
+    (name: "Spite Revenant", m: 5, ws: 4, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 14),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  special-rules: "Forest Spirit, Hatred, Natural Armour (6+), Scouts, Skirmishers",
+  special-rules-body: (
+    rule("Unbridled Malice")[Spite Revenants' Hatred special rule applies in all rounds of close combat, not just the first. In addition, enemy units in base contact with them must re-roll successful Leadership tests. This has no effect on units that have Immunity (Psychology).],
+  ),
+  options: [
 - May upgrade one Spite Revenant to a Leader +5 points
-
-#entry("TREE KIN")
-#profile(
-  (name: "Tree Kin", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 45),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Forest Spirit)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Flammable, Forest Spirit, Natural Armour (4+), Stubborn")
-#field("OPTIONS", "")
 
+#unit("TREE KIN",
+  profiles: (
+    (name: "Tree Kin", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 45),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Forest Spirit)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Flammable, Forest Spirit, Natural Armour (4+), Stubborn",
+  options: [
 - May choose one of the following:
   - Greatbows +6 points/model
   - Polearms +6 points/model
   - Great weapons +9 points/model
 - May upgrade one Tree Kin to a Leader +5 points
-
-#compact-entry("TREEMAN")[
-#profile(
-  (name: "Treeman", m: 5, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 9, points: 155),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Forest Spirit)")
-#field("BASE SIZE", "50x50 or 75x50")
-#field("SPECIAL RULES", "Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree Whack")
-]
+
+#unit("TREEMAN",
+  compact: true,
+  profiles: (
+    (name: "Treeman", m: 5, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 9, points: 155),
+  ),
+  troop-type: "Monstrous Creature (Forest Spirit)",
+  base-size: "50x50 or 75x50",
+  special-rules: "Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree Whack",
+)
 
 = RARE UNITS
 
-#entry("WAYWATCHERS", first: true)
-#profile(
-  (name: "Waywatcher", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 19),
-)
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Elven shortbow")
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider, Forest Stalker, Lethal Shot, Scouts, Skirmishers")
-#field("UPGRADES", "")
-
+#unit("WAYWATCHERS",
+  first: true,
+  profiles: (
+    (name: "Waywatcher", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 19),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Elven shortbow",
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider, Forest Stalker, Lethal Shot, Scouts, Skirmishers",
+  upgrades: [
 - *Traps:* A Waywatcher unit that is within a forest is automatically assumed to set traps around its positions. Any enemy charging the unit through the forest will activate the traps as soon as the enemy unit touches the forest. If the chargers are already inside the forest when the charge is declared the traps are activated as soon as the charge is declared. Roll a D6 to determine the type and effect of the trap.
 
 #chart((("D6", "Result"), ("1-2", "Spikes: The enemy unit suffers D6 Strength 3 hits."), ("3", "Snares: The enemy unit deducts D3\" from the charge distance."), ("4", "Nets: D3 models in the enemy unit suffer -1 Attacks."), ("5", "Camouflaged Pit: The enemy unit counts as moving through Dangerous Terrain. If the unit would
 already treat the forest as Dangerous Terrain, they instead fail the test on a 1-2."), ("6", "Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined
 by the Wood Elf player.")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May replace Elven shortbows with Elven longbows +1 point/model
 - May take additional hand weapons +1 point/model
 - May take traps +15 points
@@ -1039,166 +1074,176 @@ by the Wood Elf player.")))
   - Swiftshiver Shards +2 points/model
   - Trueflight Arrows +2 points/model
 - May upgrade one Waywatcher to a Leader +5 points
-
-#entry("SISTERS OF THE THORN")
-#profile(
-  (name: "Sister of the Thorn", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
-  (name: "Steed of Isha", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Wood Elf)")
-#field("MOUNT", "Steed of Isha (Cervine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, javelins, light armour")
-#field("MAGIC", "A unit of Sisters of the Thorn is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:")
 
+#unit("SISTERS OF THE THORN",
+  profiles: (
+    (name: "Sister of the Thorn", m: 5, ws: 4, bs: 5, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 25),
+    (name: "Steed of Isha", m: 9, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Wood Elf)",
+  mount: "Steed of Isha (Cervine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, javelins, light armour",
+  magic: "A unit of Sisters of the Thorn is a Level 1 Wizard who chooses spells from one of the following Lores of Magic:",
+  magic-body: [
 - Athel Loren
 - Beasts
 - Life
-
-#field("SPECIAL RULES", "Asrai Archery, Blessings of the Ancients, Elven Grace, Fast Cavalry, Forest Strider, Magical Ward (4+), Poisoned Attacks")
-
-- *Deepwood Coven:* The unit receives an additional +1 casting bonus for every 5 five models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Asrai Archery, Blessings of the Ancients, Elven Grace, Fast Cavalry, Forest Strider, Magical Ward (4+), Poisoned Attacks",
+  special-rules-body: (
+    rule("Deepwood Coven")[The unit receives an additional +1 casting bonus for every 5 five models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.],
+  ),
+  options: [
 - May upgrade one Sister of the Thorn to a Leader +5 points
 - May upgrade one Sister of the Thorn to a Musician +5 points
 - May upgrade one Sister of the Thorn to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("GREAT STAG KNIGHTS")
-#profile(
-  (name: "Wild Rider", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 58),
-  (name: "Great Stag", m: 9, ws: 5, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 2, ld: 7, points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Wood Elf)")
-#field("MOUNT", "Great Stag (Cervine)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Light lance")
-#field("SPECIAL RULES", "Devastating Charge, Elven Grace, Forest Spirit, Forest Strider, Frenzy, Impact Hits (D3)")
-#field("OPTIONS", "")
 
+#unit("GREAT STAG KNIGHTS",
+  profiles: (
+    (name: "Wild Rider", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 1, ld: 9, points: 58),
+    (name: "Great Stag", m: 9, ws: 5, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 2, ld: 7, points: ""),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Wood Elf)",
+  mount: "Great Stag (Cervine)",
+  base-size: "50x50",
+  equipment: "Light lance",
+  special-rules: "Devastating Charge, Elven Grace, Forest Spirit, Forest Strider, Frenzy, Impact Hits (D3)",
+  options: [
 - May take light armour +3 points/model
 - May take shields +3 points/model
 - May upgrade one Great Stag Knight to a Leader +5 points
 - May upgrade one Great Stag Knight to a Musician +5 points
 - May upgrade one Great Stag Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("GREAT EAGLE")
-#profile(
-  (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: 50),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Monstrous Beast (Avian)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
 
-- *Swiftsense:* The model gains the Always Strikes First special rule in any turn that they charge.
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-
-#field("OPTIONS", "")
-
+#unit("GREAT EAGLE",
+  profiles: (
+    (name: "Great Eagle", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 8, points: 50),
+  ),
+  unit-size: "1-3",
+  troop-type: "Monstrous Beast (Avian)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Swiftsense")[The model gains the Always Strikes First special rule in any turn that they charge.],
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+  ),
+  options: [
 - May take Shredding Talons +5 points
 - May take Swiftsense +5 points
-
-#entry("GOSSAMID ARCHERS")
-#profile(
-  (name: "Gossamid Archer", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 23),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon, Elven longbow")
-#field("SPECIAL RULES", "Fly (10), Forest Spirit, Martial Memories, Natural Armour (6+).")
 
-- *Larval Shafts:* If a model with this special rule rolls a natural 6 To Hit with their bows, that Attack automatically Wounds with the Multiple Wounds (D3) special rule.
-- *Zephyrspites:* After a unit where the majority of the models with this special rule has resolved all their missile attacks and is within 6" of an enemy unit; they may move directly backwards D6", keeping the same unit facing.
-
-#field("OPTIONS", "")
-
+#unit("GOSSAMID ARCHERS",
+  profiles: (
+    (name: "Gossamid Archer", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 23),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon, Elven longbow",
+  special-rules: "Fly (10), Forest Spirit, Martial Memories, Natural Armour (6+).",
+  special-rules-body: (
+    rule("Larval Shafts")[If a model with this special rule rolls a natural 6 To Hit with their bows, that Attack automatically Wounds with the Multiple Wounds (D3) special rule.],
+    rule("Zephyrspites")[After a unit where the majority of the models with this special rule has resolved all their missile attacks and is within 6" of an enemy unit; they may move directly backwards D6", keeping the same unit facing.],
+  ),
+  options: [
 - May upgrade one Gossamid Archer to a Leader +5 points
-
-#entry("SPITERIDER REVENANTS")
-#profile(
-  (name: "Spiterider Revenant", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 60),
-  (name: "Dragonspite", m: 3, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Cavalry (Forest Spirit)")
-#field("MOUNT", "Dragonspite (Insectoid, Forest Spirit)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon, shields")
-#field("SPECIAL RULES", "Devastating Charge, Fast Cavalry, Fly (9), Forest Spirit, Martial Memories, Natural")
 
+#unit("SPITERIDER REVENANTS",
+  profiles: (
+    (name: "Spiterider Revenant", m: 5, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 8, points: 60),
+    (name: "Dragonspite", m: 3, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
+  ),
+  unit-size: "3-6",
+  troop-type: "Cavalry (Forest Spirit)",
+  mount: "Dragonspite (Insectoid, Forest Spirit)",
+  base-size: "50x50 or 50x75",
+  equipment: "Hand weapon, shields",
+  special-rules: "Devastating Charge, Fast Cavalry, Fly (9), Forest Spirit, Martial Memories, Natural",
+  special-rules-body: [
 *Armour (5+), Regeneration (5+)*
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take light lances +2 points/model
 - May upgrade one Spiterider Revenant to a Leader +5 points
 - May upgrade one Spiterider Revenant to a Musician +5 points
 - May upgrade one Spiterider Revenant to a Standard Bearer +10 points
   - May take a Magic Standard worth up 50 points
-
-#entry("ZOAT")
-#profile(
-  (name: "Zoat", m: 8, ws: 4, bs: 3, s: 4, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 130),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Beast (Zoat)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Great weapon")
-#field("MAGIC", "A Zoat is a Level 1 Wizard that can use spells from the Lore of Life.")
-#field("SPECIAL RULES", "Cold-blooded, Forest Strider, Magic Resistance (1), Natural Armour (4+)")
 
-- *Master of the Vengeful Forest:* If a Zoat is wholly within a forest, all enemy models treat that forest as Dangerous Terrain and will fail their Dangerous Terrain tests on a roll of a 1 or 2.
-- *The Power of the Deepwoods:* If a Zoat is wholly within a forest, it gets a +2 casting bonus.
-
-#field("OPTIONS", "")
-
+#unit("ZOAT",
+  profiles: (
+    (name: "Zoat", m: 8, ws: 4, bs: 3, s: 4, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 130),
+  ),
+  troop-type: "Monstrous Beast (Zoat)",
+  base-size: "50x75",
+  equipment: "Great weapon",
+  magic: "A Zoat is a Level 1 Wizard that can use spells from the Lore of Life.",
+  special-rules: "Cold-blooded, Forest Strider, Magic Resistance (1), Natural Armour (4+)",
+  special-rules-body: (
+    rule("Master of the Vengeful Forest")[If a Zoat is wholly within a forest, all enemy models treat that forest as Dangerous Terrain and will fail their Dangerous Terrain tests on a roll of a 1 or 2.],
+    rule("The Power of the Deepwoods")[If a Zoat is wholly within a forest, it gets a +2 casting bonus.],
+  ),
+  options: [
 - May be upgraded to a Level 2 Wizard +35 points
-
-#entry("TREELORD")
-#profile(
-  (name: "Treelord", m: 5, ws: 6, bs: 6, s: 6, t: 6, w: 6, i: 2, a: 6, ld: 9, points: 260),
+  ],
 )
-#field("TROOP TYPE", "Monster (Forest Spirit)")
-#field("BASE SIZE", "75x50 or 100x100")
-#field("SPECIAL RULES", "Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree Whack")
-#field("UPGRADES", "")
 
+#unit("TREELORD",
+  profiles: (
+    (name: "Treelord", m: 5, ws: 6, bs: 6, s: 6, t: 6, w: 6, i: 2, a: 6, ld: 9, points: 260),
+  ),
+  troop-type: "Monster (Forest Spirit)",
+  base-size: "75x50 or 100x100",
+  special-rules: "Flammable, Forest Spirit, Natural Armour (3+), Stubborn, Tree Whack",
+  upgrades: [
 - *Strangleroots:* Strangleroots have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "5", "Multiple Shots (D6+1), Quick Shot, Rapid Fire"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Strangleroots +20 points
-
-#entry("FOREST DRAGON")
-#profile(
-  (name: "Forest Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: 325),
+  ],
 )
-#field("TROOP TYPE", "Monster (Draconid, Forest Spirit)")
-#field("BASE SIZE", "50x50 or 50x100")
-#field("SPECIAL RULES", "Fly (7), Forest Spirit, Natural Armour (3+)")
 
-- *Soporific Breath:* A Forest Dragon has a Strength 2 Breath Weapon. Armour saves taken against Wounds caused by Soporific Breath suffer a \-3 penalty. All models in a unit that suffers one or more hits from Soporific Breath gain the Stupidity special rule for the remainder of the game.
+#unit("FOREST DRAGON",
+  profiles: (
+    (name: "Forest Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: 325),
+  ),
+  troop-type: "Monster (Draconid, Forest Spirit)",
+  base-size: "50x50 or 50x100",
+  special-rules: "Fly (7), Forest Spirit, Natural Armour (3+)",
+  special-rules-body: (
+    rule("Soporific Breath")[A Forest Dragon has a Strength 2 Breath Weapon. Armour saves taken against Wounds caused by Soporific Breath suffer a \-3 penalty. All models in a unit that suffers one or more hits from Soporific Breath gain the Stupidity special rule for the remainder of the game.],
+  ),
+)
 
 = SPECIAL CHARACTERS
 
-#entry("ORION", first: true)
-#namecost("The King in the Woods", "")
-#profile(
-  (name: "Orion", m: 9, ws: 8, bs: 8, s: 5, t: 5, w: 5, i: 9, a: 5, ld: 10, points: 420),
-  (name: "Hound of Orion", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 4, a: 1, ld: 6, points: ""),
-)
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Forest Spirit)")
-#field("BASE SIZE", "40x40 or 50x50 (Orion), 25x50 (Hound of Orion)")
-#field("MAGIC ITEMS", "")
-
+#unit("ORION",
+  first: true,
+  subtitle: "The King in the Woods",
+  profiles: (
+    (name: "Orion", m: 9, ws: 8, bs: 8, s: 5, t: 5, w: 5, i: 9, a: 5, ld: 10, points: 420),
+    (name: "Hound of Orion", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 4, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Forest Spirit)",
+  base-size: "40x40 or 50x50 (Orion), 25x50 (Hound of Orion)",
+  magic-items: [
 - *Spear of Kurnous:* Magic Weapon. Spear. The Spear of Kurnous gives Orion +1 Strength, as well as the Armour Piercing (1) and Multiple Wounds (D3) special rules. In addition, it can be used to make shooting attacks using the same rules as a bolt thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/18\"", "As user +1", "Armour Piercing (1), Multiple Wounds (D3)"))
@@ -1209,56 +1254,56 @@ by the Wood Elf player.")))
 
 - *Cloak of Isha:* Talisman. The Cloak of Isha grants Orion a Magical Ward (6+) and the Magic Resistance (2) special rule. At the start of each of your turns, roll a D6. On a score of 6, Orion regains a Wound lost earlier in the battle.
 - *Horn of the Wild Hunt:* Enchanted Item. One use only. At the start of any turn, the Horn of the Wild Hunt may be sounded. Once it has, Orion and all friendly units within 18" gain the Devastating Charge and Fear special rules for the remainder of the turn.
-
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Spirit, Frenzy, Terror, Unbreakable")
-
-- *The Wild Hunt:* Orion must be the Army General. In addition, Wild Riders counts as Core Units instead of Special Units. An army led by Orion must include at least one unit of Wild Riders.
-
-#field("UPGRADES", "")
-
-- *Orion's Equerries:* The Hounds of Orion are War Beasts (Canine, Forest Spirit) with the Frenzy, Forest Spirit and Unbreakable special rules. They must be deployed as a unit with Orion. Orion cannot leave this unit, and cannot join other units.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Asrai Archery, Elven Grace, Forest Spirit, Frenzy, Terror, Unbreakable",
+  special-rules-body: (
+    rule("The Wild Hunt")[Orion must be the Army General. In addition, Wild Riders counts as Core Units instead of Special Units. An army led by Orion must include at least one unit of Wild Riders.],
+  ),
+  upgrades: (
+    rule("Orion's Equerries")[The Hounds of Orion are War Beasts (Canine, Forest Spirit) with the Frenzy, Forest Spirit and Unbreakable special rules. They must be deployed as a unit with Orion. Orion cannot leave this unit, and cannot join other units.],
+  ),
+  options: [
 - May take two Hounds of Orion +20 points
-
-#entry("ARIEL")
-#namecost("Mage Queen of Athel Loren", "")
-#profile(
-  (name: "Ariel", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 5, i: 7, a: 0, ld: 10, points: 380),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Forest Spirit)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("MAGIC", "Ariel is a level 4 Wizard who uses spells from the Lore of Athel Loren.")
-#field("MAGIC ITEMS", "")
 
-- *The Dart of Doom:* Magic Weapon. One use only. The Dart of Doom has a range of 12". If the dart hits a model it causes 1 automatic Wound which Ignores Armour saves. If the wound is not saved the dart sucks energy out of the victim, draining their Strength characteristic by D3 to a minimum of 1.
-- *The Heartstone of Athel Loren:* Talisman. If Ariel successfully dispels a spell targeted at her, the casting Wizard must immediately take a Leadership test. If he fails, he immediately loses a Wizard level and may not cast that spell for the remainder of the game.
-- *The Wand of Wych Elm:* Arcane Item. This staff allows any failed Dispel attempt to be re-rolled.
-- *The Berry Wine:* Enchanted Item. One use only. The wine can be drunk at the start of any phase. Ariel will immediately regain up to D3 Wounds previously lost during the battle.
-- *The Acorn of Ages:* Enchanted Item. One use only. At the start of the game, after the battlefield has been set up, but before deployment begins, place a forest, no more than 12" in diameter, on the battlefield. This forest can be placed anywhere at least 1" away from another terrain feature and the edge of the battle field. Once the forest have been placed, it scatters 2D6". If this scatter causes a forest to end up within 1" (or on top of) other terrain, or within 1" of the battle field edge, reduce or increase the scatter by the smallest amount necessary to avoid the obstruction. When this has been done, declare which type of forest you want it to be from those available in the Main Rulebook.
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Fly (9), Forest Spirit, Loremaster (Lore of Athel Loren), Magic")
-
+#unit("ARIEL",
+  subtitle: "Mage Queen of Athel Loren",
+  profiles: (
+    (name: "Ariel", m: 5, ws: 5, bs: 5, s: 4, t: 4, w: 5, i: 7, a: 0, ld: 10, points: 380),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Forest Spirit)",
+  base-size: "40x40 or 50x50",
+  magic: "Ariel is a level 4 Wizard who uses spells from the Lore of Athel Loren.",
+  magic-items: (
+    rule("The Dart of Doom")[Magic Weapon. One use only. The Dart of Doom has a range of 12". If the dart hits a model it causes 1 automatic Wound which Ignores Armour saves. If the wound is not saved the dart sucks energy out of the victim, draining their Strength characteristic by D3 to a minimum of 1.],
+    rule("The Heartstone of Athel Loren")[Talisman. If Ariel successfully dispels a spell targeted at her, the casting Wizard must immediately take a Leadership test. If he fails, he immediately loses a Wizard level and may not cast that spell for the remainder of the game.],
+    rule("The Wand of Wych Elm")[Arcane Item. This staff allows any failed Dispel attempt to be re-rolled.],
+    rule("The Berry Wine")[Enchanted Item. One use only. The wine can be drunk at the start of any phase. Ariel will immediately regain up to D3 Wounds previously lost during the battle.],
+    rule("The Acorn of Ages")[Enchanted Item. One use only. At the start of the game, after the battlefield has been set up, but before deployment begins, place a forest, no more than 12" in diameter, on the battlefield. This forest can be placed anywhere at least 1" away from another terrain feature and the edge of the battle field. Once the forest have been placed, it scatters 2D6". If this scatter causes a forest to end up within 1" (or on top of) other terrain, or within 1" of the battle field edge, reduce or increase the scatter by the smallest amount necessary to avoid the obstruction. When this has been done, declare which type of forest you want it to be from those available in the Main Rulebook.],
+  ),
+  special-rules: "Blessings of the Ancients, Fly (9), Forest Spirit, Loremaster (Lore of Athel Loren), Magic",
+  special-rules-body: [
 *Resistance (3)*
 
 - *Aura of the Fey Queen:* All friendly units within 6" of Ariel have the Immunity (Panic) special rule.
 - *Earthbind:* Any units declaring a charge on Ariel count as moving through Dangerous Terrain for the duration of the turn. In addition, if Ariel flees from combat, any enemies attempting to pursue her roll an extra D6 when determining their pursuit distance and discard the highest result.
 - *Screech:* Ariel may use Screech when it would normally be her time to attack in close combat. This is a special attack that automatically Hits all enemy models in base contact at Strength 4 with the Ignores Armour special rule.
-
-#entry("NAESTRA & ARAHAN")
-#namecost("Sisters of Twillight", "")
-#profile(
-  (name: "Naestra", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 90),
-  (name: "Arahan", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 90),
-  (name: "Ceithin-Har (Forest Dragon)", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
-  (name: "Gwindalor (Great Eagle)", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 4, i: 4, a: 3, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "40x40 or 50x50 (Gwindalor), 50x50 or 50x100 (Ceithin-Har)")
-#field("EQUIPMENT", "Shield")
-#field("MAGIC ITEMS", "")
 
+#unit("NAESTRA & ARAHAN",
+  subtitle: "Sisters of Twillight",
+  profiles: (
+    (name: "Naestra", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 90),
+    (name: "Arahan", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 90),
+    (name: "Ceithin-Har (Forest Dragon)", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
+    (name: "Gwindalor (Great Eagle)", m: 2, ws: 5, bs: 0, s: 4, t: 4, w: 4, i: 4, a: 3, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "40x40 or 50x50 (Gwindalor), 50x50 or 50x100 (Ceithin-Har)",
+  equipment: "Shield",
+  magic-items: [
 - *Talon of Dawn:* Magic Weapon. The Talon of Dawn is a missile weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Armour Piercing (1), Flaming Attacks, Multiple Wounds (D6)"))
@@ -1268,33 +1313,34 @@ If an attack from the Talon of Dawn causes one or more unsaved Wounds, they rega
 - *Talon of Dusk:* Magic Weapon. The Talon of Dusk is a missile weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "2", "Armour Piercing (1), Multiple Shots (2D6), Poisoned Attacks, Rapid Fire"))
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace.")
-
-- *Conjoined Destiny:* Naestra and Arahan counts as a single model for all purposes. If they have been reduced to less than 4 Wounds at the end of any turn, they will be restored to 4 Wounds.
-- *Impetuous:* If Ceithin-Har can declare a Charge during the Charge sub-phase, he must do so unless he passes a Leadership test.
-- *Hunter’s Mount:* When mounted on Gwindalor, Naestra and Arahan re-roll all failed To Hit rolls when making shooting attacks.
-- *Sisters of Twilight:* Naestra’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Destruction. Arahan’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Order.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Asrai Archery, Elven Grace.",
+  special-rules-body: (
+    rule("Conjoined Destiny")[Naestra and Arahan counts as a single model for all purposes. If they have been reduced to less than 4 Wounds at the end of any turn, they will be restored to 4 Wounds.],
+    rule("Impetuous")[If Ceithin-Har can declare a Charge during the Charge sub-phase, he must do so unless he passes a Leadership test.],
+    rule("Hunter’s Mount")[When mounted on Gwindalor, Naestra and Arahan re-roll all failed To Hit rolls when making shooting attacks.],
+    rule("Sisters of Twilight")[Naestra’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Destruction. Arahan’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Order.],
+  ),
+  options: [
 - Must be mounted on one of the following:
   - Gwindalor +100 points
   - Ceithin-Har +320 points
-
-#entry("ARALOTH THE BOLD")
-#namecost("Lord of Talsyn", "")
-#profile(
-  (name: "Araloth", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 5, ld: 10, points: 185),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *Spear of Talsyn:* Magic Weapon. Spear. This weapon has the Armour Piercing (1) special rule.
-
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Magical Ward (5+)")
-
+#unit("ARALOTH THE BOLD",
+  subtitle: "Lord of Talsyn",
+  profiles: (
+    (name: "Araloth", m: 5, ws: 8, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 5, ld: 10, points: 185),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour, shield",
+  magic-items: (
+    rule("Spear of Talsyn")[Magic Weapon. Spear. This weapon has the Armour Piercing (1) special rule.],
+  ),
+  special-rules: "Elven Grace, Forest Strider, Magical Ward (5+)",
+  special-rules-body: [
 - *Boldest of the Bold:* Whilst Araloth is a lone character, he has the Unbreakable special rule.
 - *Guardians of Talsyn:* If Araloth is included in your army, you may upgrade one unit of Eternal Guard to the Guardians of Talsyn for a cost of +1 point per model. This unit has +1 Attack.
 - *Skaryn the Eye Thief:* Skaryn the Eye Thief uses the following profile:
@@ -1302,30 +1348,28 @@ If an attack from the Talon of Dawn causes one or more unsaved Wounds, they rega
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "3", "Sniper"))
 
 Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon Skill test to avoid being Hit. If the Wound is unsaved, and the To Wound roll was a 6, the model suffers a \-5 penalty to Weapon Skill, Ballistics Skill, and Initiative (to a minimum of 1) for the rest of the game. A model can only suffer this penalty once.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take one Spite and/or Magic Items up to a total of 75 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may take one unit of Eternal Guard as a Core Unit instead of a Special Unit if Araloth is included in your army.
-
-#entry("SCARLOC")
-#namecost("The Hooded One, Mistwalker of Athel Loren", "")
-#profile(
-  (name: "Scarloc", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 100),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Elven longbow")
-#field("MAGIC ITEMS", "")
 
-- *Runesword of Darkwood:* Magic Weapon. This weapon gives Skarloc the Always Strikes First and Armour Piercing (1) special rules.
-
-#field("SPECIAL RULES", "Asrai Archery, Elven Grace, Forest Strider, Scouts")
-#field("OPTIONS", "")
-
+#unit("SCARLOC",
+  subtitle: "The Hooded One, Mistwalker of Athel Loren",
+  profiles: (
+    (name: "Scarloc", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 100),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Elven longbow",
+  magic-items: (
+    rule("Runesword of Darkwood")[Magic Weapon. This weapon gives Skarloc the Always Strikes First and Armour Piercing (1) special rules.],
+  ),
+  special-rules: "Asrai Archery, Elven Grace, Forest Strider, Scouts",
+  options: [
 - May choose one of the following:
   - Arcane Bodkins +1 point
   - Moonfire Shot +1 point
@@ -1334,55 +1378,58 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
   - Swiftshiver Shards +2 points
   - Trueflight Arrows +2 points
 - May take one Spite and/or Magic Items up to a total of 25 points
-
-#entry("NAIETH THE PROPHETESS")
-#namecost("High Seer of Athel Loren", "")
-#profile(
-  (name: "Naieth", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 100),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Naieth is a Level 2 Wizard who uses the Lore of Heavens.")
-#field("MAGIC ITEMS", "")
 
-- *The Rod of Divination:* Arcane Items. The Rod of Divination gives Naieth an extra Power dice at the start of each Magic phase.
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Elven Grace, Forest Strider")
-
-- *Othu the Owl:* Othu may settle on any unit of Wood Elves with a Standard Bearer at the start of the shooting phase. This unit may then re-roll To Hit rolls of 1 with missile attacks this turn. The owl never settles on the same unit twice in succession. Othu is not vulnerable to weapons, missiles or magic, but if Naieth is removed from play Othu flies away.
-
-#entry("WYCHWETHYL")
-#profile(
-  (name: "Wychwethyl", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 8, a: 4, ld: 8, points: 110),
+#unit("NAIETH THE PROPHETESS",
+  subtitle: "High Seer of Athel Loren",
+  profiles: (
+    (name: "Naieth", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 8, points: 100),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "Naieth is a Level 2 Wizard who uses the Lore of Heavens.",
+  magic-items: (
+    rule("The Rod of Divination")[Arcane Items. The Rod of Divination gives Naieth an extra Power dice at the start of each Magic phase.],
+  ),
+  special-rules: "Blessings of the Ancients, Elven Grace, Forest Strider",
+  special-rules-body: (
+    rule("Othu the Owl")[Othu may settle on any unit of Wood Elves with a Standard Bearer at the start of the shooting phase. This unit may then re-roll To Hit rolls of 1 with missile attacks this turn. The owl never settles on the same unit twice in succession. Othu is not vulnerable to weapons, missiles or magic, but if Naieth is removed from play Othu flies away.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
 
-- *The Drum of Orcskin:* Enchanted Item. The Drum of Orcskin gives Wychwethyl and any unit he joins the Swiftstride special rule when they roll their charge distance.
-
-#field("SPECIAL RULES", "Elven Grace, Forest Strider, Magical Ward (6+), Magic Resistance (1), Shadow Dances of Loec")
-
-- *Choose Opponent:* In close combat, Wychwethyl can choose to attack any enemy model in the enemy unit (excluding Challenges), not just the models in base contact with him.
-- *Dance of Doom:* Wychwethyl can use the Dance of Doom instead of his normal Shadow Dances. If he does so, he gains +1 Attack for every enemy model in base contact with him.
-
-#entry("SKAW")
-#namecost("The Falconer", "")
-#profile(
-  (name: "Skaw", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 80),
+#unit("WYCHWETHYL",
+  profiles: (
+    (name: "Wychwethyl", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 8, a: 4, ld: 8, points: 110),
+  ),
+  troop-type: "Infantry (Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("The Drum of Orcskin")[Enchanted Item. The Drum of Orcskin gives Wychwethyl and any unit he joins the Swiftstride special rule when they roll their charge distance.],
+  ),
+  special-rules: "Elven Grace, Forest Strider, Magical Ward (6+), Magic Resistance (1), Shadow Dances of Loec",
+  special-rules-body: (
+    rule("Choose Opponent")[In close combat, Wychwethyl can choose to attack any enemy model in the enemy unit (excluding Challenges), not just the models in base contact with him.],
+    rule("Dance of Doom")[Wychwethyl can use the Dance of Doom instead of his normal Shadow Dances. If he does so, he gains +1 Attack for every enemy model in base contact with him.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
 
-- *The Lash of Claws:* Magic Weapon. The Lash of Claws gives Skaw the Always Strikes First and Mighty Blow (1) special rules. In addition, if the victim is hit but not wounded, it loses 1 Attack for the duration of the turn.
-- *The Cape of Feathers:* Magic Armour. This armour gives Skaw a Magical Ward (6+). In addition, he gains the Natural Armour (4+) special rule against missile attacks.
-
-#field("SPECIAL RULES", "Elven Grace, Forest Strider")
-
+#unit("SKAW",
+  subtitle: "The Falconer",
+  profiles: (
+    (name: "Skaw", m: 5, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 80),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("The Lash of Claws")[Magic Weapon. The Lash of Claws gives Skaw the Always Strikes First and Mighty Blow (1) special rules. In addition, if the victim is hit but not wounded, it loses 1 Attack for the duration of the turn.],
+    rule("The Cape of Feathers")[Magic Armour. This armour gives Skaw a Magical Ward (6+). In addition, he gains the Natural Armour (4+) special rule against missile attacks.],
+  ),
+  special-rules: "Elven Grace, Forest Strider",
+  special-rules-body: [
 - *Falcons*: The falcons use the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "3", "Multiple Shots (3)"))
@@ -1390,118 +1437,127 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon Skill test to avoid being Hit.
 
 In close combat, the falcons give Skaw an additional 3 Attacks that are resolved at Weapon Skill 4, Strength 3 and Initiative 4. These attacks no not benefit from any special rules or items that Skaw might have.
-
-#entry("GRUARTH")
-#namecost("The Beastmaster", "")
-#profile(
-  (name: "Gruarth", m: 8, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 75),
-  (name: "Fang", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
-  (name: "Claw", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Wood Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
 
+#unit("GRUARTH",
+  subtitle: "The Beastmaster",
+  profiles: (
+    (name: "Gruarth", m: 8, ws: 5, bs: 5, s: 4, t: 3, w: 2, i: 6, a: 2, ld: 8, points: 75),
+    (name: "Fang", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
+    (name: "Claw", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 5, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Wood Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic-items: [
 - *The Binding Bolas:* Magic Weapon. The Binding Bolas is a missile weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18\"", "1", "Armour Piercing (1), Multiple Shots (2), Sniper"))
 
 If a target has Unit Strength 3 or less and is Hit, but not slain, then it is temporarily entangled and cannot move in their next Movement phase. Entangled enemies may be left behind, counting as casualties, or in the case of a Character, as if they had left the unit.
-
-#field("SPECIAL RULES", "Animal Form (Gruarth only, see Alters), Elven Grace (Gruarth only), Forest Strider, Mixed")
-
+  ],
+  special-rules: "Animal Form (Gruarth only, see Alters), Elven Grace (Gruarth only), Forest Strider, Mixed",
+  special-rules-body: [
 *Unit, Natural Armour (6+), Skirmishers*
 
 - *Beastmaster:* Fang and Claw are War Beasts (Canine) and Gruarth is their Handler. If Gruath is slain, Fang and Claw become subject to Frenzy. If both Fang and Claw are slain, Gruarth becomes subject to Hatred.
-
-#entry("DURTHU OAKHEART")
-#namecost("Eldest of Ancients", "")
-#profile(
-  (name: "Durthu", m: 5, ws: 6, bs: 6, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 10, points: 320),
+  ],
 )
-#field("TROOP TYPE", "Monster (Special Character, Forest Spirit)")
-#field("BASE SIZE", "75x50")
-#field("MAGIC", "Durthu is a Level 1 Wizard who uses the Lore of Beasts.")
-#field("MAGIC ITEMS", "")
 
-- *Sword of Daith:* Magic Weapon. This sword gives Durthu the Hatred special rule. In addition, he can never lose his Frenzy special rule.
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Flammable, Forest Spirit, Frenzy, Hatred, Natural Armour (3+), Strangleroots (see Treeman Ancient), Stubborn, Tree Whack")
-
+#unit("DURTHU OAKHEART",
+  subtitle: "Eldest of Ancients",
+  profiles: (
+    (name: "Durthu", m: 5, ws: 6, bs: 6, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 10, points: 320),
+  ),
+  troop-type: "Monster (Special Character, Forest Spirit)",
+  base-size: "75x50",
+  magic: "Durthu is a Level 1 Wizard who uses the Lore of Beasts.",
+  magic-items: (
+    rule("Sword of Daith")[Magic Weapon. This sword gives Durthu the Hatred special rule. In addition, he can never lose his Frenzy special rule.],
+  ),
+  special-rules: "Blessings of the Ancients, Flammable, Forest Spirit, Frenzy, Hatred, Natural Armour (3+), Strangleroots (see Treeman Ancient), Stubborn, Tree Whack",
+  special-rules-body: [
 - *Unburden of Thieflings:* An Unburden of Thieflings is a close combat attack that can be used in addition to Durthu's other attacks. It has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "2", "Magical Attacks, Poisoned Attacks, Random Attacks (D6)"))
 
 Any enemy units that suffer Wounds from any of these attacks suffer \-1 To Hit and To Wound as well as \-1 to their armour saves until the start of your next turn.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take one Spite and/or Magic Items up to a total of 50 points
-
-#entry("BELTHANOS")
-#namecost("First Thorn of Kurnoth", "")
-#profile(
-  (name: "Belthanos", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 4, i: 7, a: 5, ld: 9, points: 400),
-  (name: "Carnelian Greatspite", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 3, a: 4, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Special Character, Forest Spirit)")
-#field("MOUNT", "Carnelian Greatspite (Forest Spirit)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Polearm")
-#field("MAGIC ITEMS", "")
 
-- *Mantle of Leaves:* Talisman. This item allows Belthanos to re-roll failed Magical Ward saves.
-- *War-horn of Kurnous:* Enchanted Item. One use only. At the start of any turn, the War-horn of Kurnous may be sounded. All friendly units within 12" may re-roll failed charge distances this turn.
-
-#field("SPECIAL RULES", "Flammable, Fly (7), Forest Spirit, Natural Armour (3+)")
-
-#entry("THE LADY OF VINES")
-#profile(
-  (name: "The Lady of Vines", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 5, i: 7, a: 5, ld: 9, points: 390),
+#unit("BELTHANOS",
+  subtitle: "First Thorn of Kurnoth",
+  profiles: (
+    (name: "Belthanos", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 4, i: 7, a: 5, ld: 9, points: 400),
+    (name: "Carnelian Greatspite", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 3, a: 4, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Special Character, Forest Spirit)",
+  mount: "Carnelian Greatspite (Forest Spirit)",
+  base-size: "100x150",
+  equipment: "Polearm",
+  magic-items: (
+    rule("Mantle of Leaves")[Talisman. This item allows Belthanos to re-roll failed Magical Ward saves.],
+    rule("War-horn of Kurnous")[Enchanted Item. One use only. At the start of any turn, the War-horn of Kurnous may be sounded. All friendly units within 12" may re-roll failed charge distances this turn.],
+  ),
+  special-rules: "Flammable, Fly (7), Forest Spirit, Natural Armour (3+)",
 )
-#field("TROOP TYPE", "Monstrous Creature (Special Character, Forest Spirit)")
-#field("BASE SIZE", "50x50")
-#field("MAGIC", "The Lady of Vines is a Level 2 Wizard who uses the Lore of Athel Loren.")
-#field("MAGIC ITEMS", "")
 
-- *Kurnotheal's Wrath:* Magic Weapon. Spear/javelin. All attacks (both shooting and close combat) made with this weapon may re-roll failed rolls To Hit and have the Multiple Wounds (D3) special rule.
-- *Verdian Crown:* Talisman. All friendly units with the Forest Spirit special rule within 6" of the Lady of Vines count as being in soft cover.
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (5+)")
-
+#unit("THE LADY OF VINES",
+  profiles: (
+    (name: "The Lady of Vines", m: 5, ws: 7, bs: 6, s: 5, t: 5, w: 5, i: 7, a: 5, ld: 9, points: 390),
+  ),
+  troop-type: "Monstrous Creature (Special Character, Forest Spirit)",
+  base-size: "50x50",
+  magic: "The Lady of Vines is a Level 2 Wizard who uses the Lore of Athel Loren.",
+  magic-items: (
+    rule("Kurnotheal's Wrath")[Magic Weapon. Spear/javelin. All attacks (both shooting and close combat) made with this weapon may re-roll failed rolls To Hit and have the Multiple Wounds (D3) special rule.],
+    rule("Verdian Crown")[Talisman. All friendly units with the Forest Spirit special rule within 6" of the Lady of Vines count as being in soft cover.],
+  ),
+  special-rules: "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (5+)",
+  special-rules-body: [
 - *Writhing Vines:* At the start of each round of close combat, the Lady of Vines can choose one of the following effects:
   - *Protective Barrier:* Enemy units targeting the Lady of Vines or any unit she is with suffer \-1 To Hit this round of close combat.
   - *Ensnare Foes:* The Lady of Vines and any unit she is with gain +1 To Hit this round of close combat.
-
-#entry("DRYCHA")
-#namecost("Briarmaiden of Woe", "")
-#profile(
-  (name: "Drycha", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 185),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Forest Spirit)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("MAGIC", "Drycha is a Level 2 Wizard who uses one of the following Lores of Magic:")
 
+#unit("DRYCHA",
+  subtitle: "Briarmaiden of Woe",
+  profiles: (
+    (name: "Drycha", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 9, points: 185),
+  ),
+  troop-type: "Infantry (Special Character, Forest Spirit)",
+  base-size: "25x25 or 30x30",
+  magic: "Drycha is a Level 2 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Athel Loren
 - Life
 - Shadow
-
-#field("SPECIAL RULES", "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (6+), Spirit-walk (see")
-
+  ],
+  special-rules: "Blessings of the Ancients, Flammable, Forest Spirit, Natural Armour (6+), Spirit-walk (see",
+  special-rules-body: [
 Tree-Revenants)*, Tree Aspects*
 
 - *Eternal Rage:* Drycha has the Hatred special rule which applies in every round of close combat, not just the first.
 - *Fanatical Resolve:* If Drycha is reduced to 1 Wound, she gains the Frenzy special rule. She automatically loses Frenzy if she is healed back to her starting number of Wounds.
 - *Roused to Wrath:* You may choose up to D3 units with the Forest Spirit special rule to deploy as Ambushers. When these unit would normally enter the battlefield, instead place them so that all models in the unit are wholly within a forest, and at least 1" away from other units and impassable terrain. Units that cannot be deployed this way enter the board as normal Ambushers instead. This rule cannot be used if there are no forests on the battlefield when it is time to deploy your army.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Spites up to a total of 50 points
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)
