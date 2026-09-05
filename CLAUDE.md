@@ -28,6 +28,10 @@ python emit.py
 # Import a new book (one-off, needs the source PDF; see "Never re-import").
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 python extract/to_book.py lizardmen
+# to_book.py still writes the #entry/#field sequence form. This rewrites those
+# entries as #unit(..) records; it renders identically, so the check is a
+# byte-compare of the PDF before and after.
+python extract/to_records.py src/lizardmen.typ
 
 # The three verification gates. Zero tolerance on all of them.
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json   # words lost
