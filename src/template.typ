@@ -529,10 +529,14 @@
 
 // --- profiles ---------------------------------------------------------------
 
+// The label sits on the same line as the value it introduces, so it is set at
+// the body size rather than under it - at 9pt against 10.5pt the two halves of
+// one line read as two different registers. `1em` rather than a fixed 10.5pt so
+// the label follows whatever size `book()` is given.
 #let field(label, value) = {
   [#metadata((kind: "field", label: label, value: value))<meta>]
   block(above: 0.3em, below: 0.3em)[
-    #text(weight: "bold", size: 9pt, tracking: 0.07em)[#upper(label):]
+    #text(weight: "bold", size: 1em, tracking: 0.07em)[#upper(label):]
     #if value != "" [ #value ]
   ]
 }
