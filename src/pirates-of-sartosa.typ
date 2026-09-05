@@ -158,197 +158,111 @@ Remains in Play. _Kraken's Pull_ is a *magical vortex* that uses the small round
 _Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Pirates of Sartosa. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Pirates of Sartosa. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("TIDAL BLADE", 40)[Each successful Hit made with this weapon penetrates ranks like a bolt thrower.]
 
-#entry("MAGIC WEAPONS")
-#namecost("TIDAL BLADE", "40 points")
+#magic-weapon("STORM TRIDENT", 35, type: "Polearm")[Attacks made with this weapon have the Lightning Attacks special rule. Additionally, all natural To Wound rolls of 6 with the weapon have the Multiple Wounds (D3) special rule.]
 
-Each successful Hit made with this weapon penetrates ranks like a bolt thrower.
+#magic-weapon("SERPENT CUTLASS", 25)[Attacks made with this weapon are made with +1 Strength and have the Poisoned Attacks special rule.]
 
-#namecost("STORM TRIDENT", "35 points")
+#magic-weapon("SQUALL SABRE", 25)[This weapon grants its wielder a Strength 3 Breath Weapon and Immunity (Flaming Attacks). Enemy units hit by this Breath Weapon lose the Flaming Attacks special rule until the beginning of the wielder’s next turn.]
 
-Polearm. Attacks made with this weapon have the Lightning Attacks special rule. Additionally, all natural To Wound rolls of 6 with the weapon have the Multiple Wounds (D3) special rule.
+#magic-weapon("WAVECUTTER", 20, type: "Great weapon")[This weapon does not suffer the normal Initiative penalties for being a great weapon. Additionally, the wielder can choose to exchange all of their Attacks to make a special attack. If they do so, all enemy models in base contact with the wielder suffer a single automatic hit. In a challenge, only the model engaged in the challenge count as being in base contact with the wielder.]
 
-#namecost("SERPENT CUTLASS", "25 points")
+#magic-weapon("BLOODY BOARDING AXE", 15, only: "Model on foot", type: "Additional hand weapon")[The wielder gains the Mighty Blow (1) special rule. In addition, they suffer no penalties when attacking units that are garrisoned or defending an obstacle.]
 
-Attacks made with this weapon are made with +1 Strength and have the Poisoned Attacks special rule.
+#magic-weapon("CROW'S FEET", 15, type: "Throwing weapons")[After resolving a Stand and Shoot charge reaction with this weapon against a non-Flying charging unit, the unit must immediately take 2D6 dangerous terrain tests, up to the number of models in the unit. For each failed test, the enemy unit suffers \-1 to their charge distance roll against the wielder’s unit.]
 
-#namecost("SQUALL SABRE", "25 points")
+#magic-weapon("PISTOLS OF KING DEATH", 15, type: "Brace of pistols")[All failed To Hit and To Wound rolls with missile attacks from these weapons may be re- rolled.]
 
-This weapon grants its wielder a Strength 3 Breath Weapon and Immunity (Flaming Attacks). Enemy units hit by this Breath Weapon lose the Flaming Attacks special rule until the beginning of the wielder’s next turn.
+#magic-weapon("STROMFEL'S FIN", 15)[Attacks made with this weapon have the Killing Blow special rule, and may reroll failed To Wound rolls when attacking a unit or model containing one or more models that have suffered one or more Wounds (excluding slain models).]
 
-#namecost("WAVECUTTER", "20 points")
+#magic-weapon("EL CADAVO'S HOOK-HAND", 10, type: "Additional hand weapon")[Attacks made with this weapon have the Armour Piercing (1) special rule.]
+]
 
-Great Weapon. This weapon does not suffer the normal Initiative penalties for being a great weapon. Additionally, the wielder can choose to exchange all of their Attacks to make a special attack. If they do so, all enemy models in base contact with the wielder suffer a single automatic hit. In a challenge, only the model engaged in the challenge count as being in base contact with the wielder.
+#magic-item-section("armour")[
+#magic-armour("STORMRIDER ARMOUR", 15, type: "Light armour")[The wearer’s armour save can never be reduced to less than 6+, and they have the Immunity (Lightning Attacks) special rule. Additionally, any time the wearer makes a successful armour save in close combat, they inflict a Strength 4 Hit with the Lightning Attacks special rule on the attacker.]
 
-#namecost("BLOODY BOARDING AXE", "15 points")
+#magic-armour("BARNACLE COAT", 15, type: "Light armour")[The wearer gains the Regeneration (6+) special rule.]
 
-Model on foot only. Additional hand weapon. The wielder gains the Mighty Blow (1) special rule. In addition, they suffer no penalties when attacking units that are garrisoned or defending an obstacle.
+#magic-armour("MEGALADON HELMET", 15)[The wearer gains a 6+ armour save and the Frenzy special rule.]
 
-#namecost("CROW'S FEET", "15 points")
+#magic-armour("KRAKEN COAT", 15, type: "Light armour")[At the start of each round of close combat, the Kraken Cloak causes one enemy model in base contact of your choosing to suffer a \-1 penalty to their Attack characteristic for the remainder of the close combat phase.]
 
-Throwing weapons. After resolving a Stand and Shoot charge reaction with this weapon against a non-Flying charging unit, the unit must immediately take 2D6 dangerous terrain tests, up to the number of models in the unit. For each failed test, the enemy unit suffers \-1 to their charge distance roll against the wielder’s unit.
+#magic-armour("SEA SERPENT SCALES", 15, type: "Light armour")[The wearer has the Immunity (Poisoned Attacks) and Natural Armour (6+) special rules.]
 
-#namecost("PISTOLS OF KING DEATH", "15 points")
+#magic-armour("BLACK BARNABUS' BUCKLER", 10, type: "Buckler")[The wielder may reroll failed Parry saves.]
+]
 
-Brace of Pistols. All failed To Hit and To Wound rolls with missile attacks from these weapons may be re- rolled.
+#magic-item-section("talisman")[
+#talisman("COIN OF THE BETRAYER", 40)[The bearer gains a 3+ Ward save. However, for every roll of a natural 1 when taking Ward saves, they suffer D3 Wounds instead of 1.]
 
-#namecost("STROMFEL'S FIN", "15 points")
+#talisman("THE BLACK SPOT", 30)[The bearer of this item gains the Fear special rule. In addition, enemies attacking the bearer in close combat suffer \-1 To Hit.]
 
-Attacks made with this weapon have the Killing Blow special rule, and may reroll failed To Wound rolls when attacking a unit or model containing one or more models that have suffered one or more Wounds (excluding slain models).
+#talisman("WHALEBONE CHARM", 30, one-use: true)[When used, enemies must re-roll successful rolls To Wound against the wearer for the duration of the turn. In addition, whenever the wearer would normally lose their last Wound, this is automatically negated on a 2+.]
 
-#namecost("EL CADAVO'S HOOK-HAND", "10 points")
+#talisman("THE GUNNARSSON KRON", 20)[The bearer of this item gains +1 Toughness.]
 
-Additional hand weapon. Attacks made with this weapon have the Armour Piercing (1) special rule.
+#talisman("POLLY THE PARROT", 20)[All enemies attempting to strike the bearer of this item must re-roll 6's To Hit in close combat. In addition, the bearer gains a 3+ Ward save against War Machines.]
 
-#entry("MAGIC ARMOUR")
-#namecost("STORMRIDER ARMOUR", "15 points")
+#talisman("SHARKTOOTH NECKLACE", 20)[The model has the Immunity (Killing Blow, Multiple Wounds) special rule. Additionally, enemies must reroll To Wound rolls of 6's against them.]
 
-Light armour. The wearer’s armour save can never be reduced to less than 6+, and they have the Immunity (Lightning Attacks) special rule. Additionally, any time the wearer makes a successful armour save in close combat, they inflict a Strength 4 Hit with the Lightning Attacks special rule on the attacker.
+#talisman("LUCKY GOLDEN TOOTH", 15)[The bearer of this item may re-roll failed armour and Ward saves.]
 
-#namecost("BARNACLE COAT", "15 points")
+#talisman("SWASHBUCKLER'S BOOTS", 10)[The bearer of this item gains the Dodge (6+) special rule. Additionally, they may freely change their position in the front rank of their unit at the beginning of every close combat phase, unless in a challenge.]
+]
 
-Light armour. The wearer gains the Regeneration (6+) special rule.
-
-#namecost("MEGALADON HELMET", "15 points")
-
-The wearer gains a 6+ armour save and the Frenzy special rule.
-
-#namecost("KRAKEN COAT", "15 points")
-
-Light armour. At the start of each round of close combat, the Kraken Cloak causes one enemy model in base contact of your choosing to suffer a \-1 penalty to their Attack characteristic for the remainder of the close combat phase.
-
-#namecost("SEA SERPENT SCALES", "15 points")
-
-Light armour. The wearer has the Immunity (Poisoned Attacks) and Natural Armour (6+) special rules.
-
-#namecost("BLACK BARNABUS' BUCKLER", "10 points")
-
-Buckler. The wielder may reroll failed Parry saves.
-
-#entry("TALISMANS")
-#namecost("COIN OF THE BETRAYER", "40 points")
-
-The bearer gains a 3+ Ward save. However, for every roll of a natural 1 when taking Ward saves, they suffer D3 Wounds instead of 1.
-
-#namecost("THE BLACK SPOT", "30 points")
-
-The bearer of this item gains the Fear special rule. In addition, enemies attacking the bearer in close combat suffer \-1 To Hit.
-
-#namecost("WHALEBONE CHARM", "30 points")
-
-One use only. When used, enemies must re-roll successful rolls To Wound against the wearer for the duration of the turn. In addition, whenever the wearer would normally lose their last Wound, this is automatically negated on a 2+.
-
-#namecost("THE GUNNARSSON KRON", "20 points")
-
-The bearer of this item gains +1 Toughness.
-
-#namecost("POLLY THE PARROT", "20 points")
-
-All enemies attempting to strike the bearer of this item must re-roll 6's To Hit in close combat. In addition, the bearer gains a 3+ Ward save against War Machines.
-
-#namecost("SHARKTOOTH NECKLACE", "20 points")
-
-The model has the Immunity (Killing Blow, Multiple Wounds) special rule. Additionally, enemies must reroll To Wound rolls of 6's against them.
-
-#namecost("LUCKY GOLDEN TOOTH", "15 points")
-
-The bearer of this item may re-roll failed armour and Ward saves.
-
-#namecost("SWASHBUCKLER'S BOOTS", "10 points")
-
-The bearer of this item gains the Dodge (6+) special rule. Additionally, they may freely change their position in the front rank of their unit at the beginning of every close combat phase, unless in a challenge.
-
-#entry("ARCANE ITEMS")
-
+#magic-item-section("arcane")[
 #runin[GRAND NAVIGATOR]'#runin[S STAFF 35 points] The bearer gains a +1 casting bonus when casting spells from the Lore of Heavens. Additionally, they may reroll 1's when channelling Power and Dispel dice.
 
-#namecost("ARCANE ASTROLABE", "40 points")
+#arcane-item("ARCANE ASTROLABE", 40, one-use: true)[When used, the model bearing this item may re-roll the result from the Winds of Magic in your turn.]
 
-One use only. When used, the model bearing this item may re-roll the result from the Winds of Magic in your turn.
+#arcane-item("GROUNDING LODESTONE", 20)[Whenever the bearer of this item must roll on the Miscast table, subtract 1 from the result.]
 
-#namecost("GROUNDING LODESTONE", "20 points")
+#arcane-item("AETHYRIC ANCHOR", 20, one-use: true)[The Wizard may ignore their first miscast. If they do so, they cannot voluntarily move until the beginning of their next Magic phase.]
 
-Whenever the bearer of this item must roll on the Miscast table, subtract 1 from the result.
+#arcane-item("DROWNING EFFIGY", 15)[The bearer may reroll failed To Wound rolls caused by the _Kiss of the Deep_ Lore Attribute when casting spells from the Lore of the Deep.]
+]
 
-#namecost("AETHYRIC ANCHOR", "20 points")
+#magic-item-section("enchanted")[
+#enchanted-item("HELLFIRE POWDER", 35)[The bearer of this item, and any unit they join, add +1 Strength to all their missile attacks (except javelins, harpoon launchers and throwing weapons). However, every To Hit roll of 1 with their missile attacks inflicts a Hit from the weapon on the shooter instead.]
 
-One use only. The Wizard may ignore their first miscast. If they do so, they cannot voluntarily move until the beginning of their next Magic phase.
+#enchanted-item("STORM IN A BOTTLE", 35, bound: (power: 6))[This item contains the _Storm of Cronos_ spell from the Lore of Heavens.]
 
-#namecost("DROWNING EFFIGY", "15 points")
+#enchanted-item("REYNO BLOODLOCK'S HAT", 25)[The bearer of this item gains the Inspiring Presence (6) special rule.]
 
-The bearer may reroll failed To Wound rolls caused by the _Kiss of the Deep_ Lore Attribute when casting spells from the Lore of the Deep.
+#enchanted-item("BLACKEYE PEARL", 20)[The Blackeye Pearl gives the model the Sniper special rule. In addition, the bearer may pick one enemy unit within Line of Sight at the start of each of your turns. Your opponent must reveal all Magic Items, Hidden models and the like that unit might have.]
 
-#entry("ENCHANTED ITEMS")
-#namecost("HELLFIRE POWDER", "35 points")
+#enchanted-item("FIREWATER", 20, one-use: true)[The Firewater may be used at the start of any Shooting or Close Combat phase. The model gains a Strength 3 Breath Weapon with the Flaming Attacks special rule for the remainder of the phase.]
 
-The bearer of this item, and any unit they join, add +1 Strength to all their missile attacks (except javelins, harpoon launchers and throwing weapons). However, every To Hit roll of 1 with their missile attacks inflicts a Hit from the weapon on the shooter instead.
+#enchanted-item("CURSED MOONSHINE", 15, one-use: true)[This item can be used at the start of any of your turns. When used, the bearer gains the Frenzy and Terror special rules until the beginning of your next turn.]
 
-#namecost("STORM IN A BOTTLE", "35 points")
+#enchanted-item("SALTY SKIPPER'S PIPE", 15)[The model has the Immunity (Psychology) special rule. In addition, any unit they join may reroll failed Panic tests.]
 
-Bound Spell, power level 6. This item contains the _Storm of Cronos_ spell from the Lore of Heavens.
+#enchanted-item("BLACK BUCKTHORN'S TREASURE MAP", 10)[Black Buckthorn's Treasure Map adds +1 to the dice rolled when determining which side to deploy on.]
 
-#namecost("REYNO BLOODLOCK'S HAT", "25 points")
+#enchanted-item("WILLEM LONGTOOTH'S PEG LEG", 10)[The bearer of this item gains the Stomp (1) special rule.]
 
-The bearer of this item gains the Inspiring Presence (6) special rule.
+#enchanted-item("THE SMUGGLER'S SATCHEL", 10)[The bearer of this item may take an additional Talisman, Arcane Item or Enchanted Item.]
 
-#namecost("BLACKEYE PEARL", "20 points")
+#enchanted-item("MAELSTROM BANNER", 25)[At the beginning of each of your turns, enemy units within 12" of the standard are ‘pulled’ directly towards the unit by D3” (they do not change facing). If the target unit comes into contact with another unit or impassable terrain, it stops 1" away. Additionally, any enemy unit fleeing from combat while in base contact with the unit suffers a -D3 penalty to their Flee distance.]
 
-The Blackeye Pearl gives the model the Sniper special rule. In addition, the bearer may pick one enemy unit within Line of Sight at the start of each of your turns. Your opponent must reveal all Magic Items, Hidden models and the like that unit might have.
+#enchanted-item("BANNER OF BOUNTIFUL TREASURE", 20)[Each enemy standard captured by the unit carrying this standard gives them an addition +1 to their combat resolution score. In addition, any captured standards by this unit are worth twice their normal Victory Points.]
 
-#namecost("FIREWATER", "20 points")
+#enchanted-item("BOATSWAIN'S BURGEES", 20)[The unit carrying this standard gains +1 to their Leadership.]
 
-One use only. The Firewater may be used at the start of any Shooting or Close Combat phase. The model gains a Strength 3 Breath Weapon with the Flaming Attacks special rule for the remainder of the phase.
+#enchanted-item("PRESS-GANGER STANDARD", 15)[The unit carrying this standard may re-roll their Pursuit distance. In addition, they inflict twice the number of casualties when pursuing enemy units than normal.]
+]
 
-#namecost("CURSED MOONSHINE", "15 points")
+#magic-item-section("standard")[
+#magic-standard("SKULL AND CROSSBONES", 35)[The unit carrying this standard gains the Terror and Vanguard special rules.]
 
-One use only. This item can be used at the start of any of your turns. When used, the bearer gains the Frenzy and Terror special rules until the beginning of your next turn.
+#magic-standard("BLOODY JACK'S FLAG", 25)[The unit carrying this standard may re-roll failed To Wound rolls in close combat.]
 
-#namecost("SALTY SKIPPER'S PIPE", "15 points")
-
-The model has the Immunity (Psychology) special rule. In addition, any unit they join may reroll failed Panic tests.
-
-#namecost("BLACK BUCKTHORN'S TREASURE", "")
-#namecost("MAP", "10 points")
-
-Black Buckthorn's Treasure Map adds +1 to the dice rolled when determining which side to deploy on.
-
-#namecost("WILLEM LONGTOOTH'S PEG LEG", "10 points")
-
-The bearer of this item gains the Stomp (1) special rule.
-
-#runin[THE SMUGGLER]'#runin[S SATCHEL 10 points] The bearer of this item may take an additional Talisman, Arcane Item or Enchanted Item.
-
-#namecost("MAELSTROM BANNER", "25 points")
-
-At the beginning of each of your turns, enemy units within 12" of the standard are ‘pulled’ directly towards the unit by D3” (they do not change facing). If the target unit comes into contact with another unit or impassable terrain, it stops 1" away. Additionally, any enemy unit fleeing from combat while in base contact with the unit suffers a -D3 penalty to their Flee distance.
-
-#namecost("BANNER OF BOUNTIFUL TREASURE", "20 points")
-
-Each enemy standard captured by the unit carrying this standard gives them an addition +1 to their combat resolution score. In addition, any captured standards by this unit are worth twice their normal Victory Points.
-
-#namecost("BOATSWAIN'S BURGEES", "20 points")
-
-The unit carrying this standard gains +1 to their Leadership.
-
-#namecost("PRESS-GANGER STANDARD", "15 points")
-
-The unit carrying this standard may re-roll their Pursuit distance. In addition, they inflict twice the number of casualties when pursuing enemy units than normal.
-
-#entry("MAGIC STANDARDS")
-#namecost("SKULL AND CROSSBONES", "35 points")
-
-The unit carrying this standard gains the Terror and Vanguard special rules.
-
-#namecost("BLOODY JACK'S FLAG", "25 points")
-
-The unit carrying this standard may re-roll failed To Wound rolls in close combat.
-
-#namecost("GONFALON O' THE GREEN HANDS", "25 points")
-
-The unit carrying this standard gains +1 To Hit with missile weapons.
+#magic-standard("GONFALON O' THE GREEN HANDS", 25)[The unit carrying this standard gains +1 To Hit with missile weapons.]
+]
 
 = CHARACTERS
 

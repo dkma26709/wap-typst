@@ -244,260 +244,151 @@ Roll a D3 at the start of each enemy Magic phase; the Slann Mage-Priest has the 
 The Slann Mage-Priest can choose one additional spell.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Lizardmen. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Lizardmen. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("SCIMITAR OF THE SUN RESPLENDENT", 45)[This weapon gives the wielder +2 Attacks and the Hatred special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("SCIMITAR OF THE SUN RESPLENDENT", "45 points")
+#magic-weapon("BLADE OF REALITIES", 40)[No armour or Magical Ward saves can be taken against Wounds caused by this weapon.]
 
-This weapon gives the wielder +2 Attacks and the Hatred special rule.
+#magic-weapon("BLADE OF REVERED TZUNKI", 35)[This weapon gives the wielder +1 Strength and the Ignores Armour Saves special rule.]
 
-#namecost("BLADE OF REALITIES", "40 points")
+#magic-weapon("STEGADON WAR-SPEAR", 35, only: "Skink High Chief on Stegadon", type: "Light lance")[This weapon gives the bearer's mount the Impact Hits (2D6+1) special rule.]
 
-No armour or Magical Ward saves can be taken against Wounds caused by this weapon.
+#magic-weapon("THE LASH OF ITZAOTYL", 30)[This weapon gives the wielder the Always Strikes First special rule. In addition, any Monster successfully Hit by this weapon one or more times in a single round must pass a Leadership test. If failed, it cannot Attack this close combat phase.]
 
-#namecost("BLADE OF REVERED TZUNKI", "35 points")
+#magic-weapon("SWORD OF THE HORNET", 25)[This weapon allows the wielder to re-roll 1's To Hit, and enemies must re-roll 6's To Hit against them.]
 
-This weapon gives the wielder +1 Strength and the Ignores Armour Saves special rule.
+#magic-weapon("THE PIRANHA BLADE", 20)[The wielder has the Multiple Wounds (D3) and Armour Piercing special rules (1).]
 
-#namecost("STEGADON WAR-SPEAR", "35 points")
+#magic-weapon("DAGGER OF SOTEK", 15, only: "Skink")[This weapon gives the wielder the Killing Blow special rule. In addition, all models from _Warhammer: Skaven_ treat the model as having the Fear special rule.]
 
-Skink High Chief on Stegadon only. Light lance. This weapon gives the bearer's mount the Impact Hits (2D6+1) special rule.
-
-#namecost("THE LASH OF ITZAOTYL", "30 points")
-
-This weapon gives the wielder the Always Strikes First special rule. In addition, any Monster successfully Hit by this weapon one or more times in a single round must pass a Leadership test. If failed, it cannot Attack this close combat phase.
-
-#namecost("SWORD OF THE HORNET", "25 points")
-
-This weapon allows the wielder to re-roll 1's To Hit, and enemies must re-roll 6's To Hit against them.
-
-#namecost("THE PIRANHA BLADE", "20 points")
-
-The wielder has the Multiple Wounds (D3) and Armour Piercing special rules (1).
-
-#namecost("DAGGER OF SOTEK", "15 points")
-
-Skink Only. This weapon gives the wielder the Killing Blow special rule. In addition, all models from _Warhammer: Skaven_ treat the model as having the Fear special rule.
-
-#namecost("BURNING BLADE OF CHOTEC", "15 points")
-
-This weapon gives the wielder the Armour Piercing (2) and Flaming Attacks special rules.
+#magic-weapon("BURNING BLADE OF CHOTEC", 15)[This weapon gives the wielder the Armour Piercing (2) and Flaming Attacks special rules.]
 
 #namecost("SACRIFICIAL HEART", "")
-#namecost("CLOTH OF CHOTEC", "15 points")
 
-Sling. All shots from this weapon have +1 Strength.
+#magic-weapon("CLOTH OF CHOTEC", 15, type: "Sling")[All shots from this weapon have +1 Strength.]
 
-#namecost("STAFF OF THE LOST SUN", "15 points")
-
-Skink Priest or Skink High Priest only. This weapon uses the following profile:
+#magic-weapon("STAFF OF THE LOST SUN", 15, only: "Skink Priest or Skink High Priest")[This weapon uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18\"", "5", "Multiple Shots (3)"))
-#namecost("STAFF OF SOTEK", "10 points")
+]
 
-Skink Priest or Skink High Priest only. This weapon has the following profile:
+#magic-weapon("STAFF OF SOTEK", 10, only: "Skink Priest or Skink High Priest")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "6", "Multiple Wounds (D3), Poisoned Attacks"))
+]
+]
 
-#entry("MAGIC ARMOUR")
-#namecost("SACRED STEGADON HELM OF ITZA", "40 points")
+#magic-item-section("armour")[
+#magic-armour("SACRED STEGADON HELM OF ITZA", 40)[This armour gives the wearer a 6+ armour save. In addition, they gain +1 Toughness and the Impact Hits (D3) special rule.]
 
-This armour gives the wearer a 6+ armour save. In addition, they gain +1 Toughness and the Impact Hits (D3) special rule.
+#magic-armour("HIDE OF THE COLD ONES", 40, only: "Oldblood or Scar-veteran on foot")[The wearer of this armour gains +1 Toughness as well as the Fear, Natural Armour (5+) and Stupidity special rules.]
 
-#namecost("HIDE OF THE COLD ONES", "40 points")
+#magic-armour("SHIELD OF CHAQUA", 30, type: "Shield")[All missile attacks targeting the bearer of this shield or any unit they are with suffer \-1 To Wound.]
 
-Oldblood or Scar-veteran on foot only. The wearer of this armour gains +1 Toughness as well as the Fear, Natural Armour (5+) and Stupidity special rules.
+#magic-armour("THE MAIMING SHIELD", 20, type: "Shield")[This armour gives the bearer +1 Attack and the Magical Attacks special rule.]
 
-#namecost("SHIELD OF CHAQUA", "30 points")
+#magic-armour("SHIELD OF THE MIRRORED POOL", 20, type: "Shield")[Any magic missile that strikes the bearer of this armour or any unit they are with is reflected on the roll of 2+ on a D6. If the spell is reflected, the results of the magic missile are resolved against the caster of the spell and any unit they are with.]
 
-Shield. All missile attacks targeting the bearer of this shield or any unit they are with suffer \-1 To Wound.
+#magic-armour("CORONAL SHIELD", 25, type: "Shield")[All close combat attacks directed against the bearer of this shield must re-roll successful rolls To Hit.]
+]
 
-#namecost("THE MAIMING SHIELD", "20 points")
+#magic-item-section("talisman")[
+#talisman("AURA OF QUETZL", 25)[This talisman gives the wearer the Magical Ward (4+) special rule against attacks with Strength 5 or more.]
 
-Shield. This armour gives the bearer +1 Attack and the Magical Attacks special rule.
+#talisman("DIVINE PLAQUE OF PROTECTION", 25, only: "Slann Mage-Priest")[This talisman gives the wearer and any unit they are with the Magical Ward (5+) special rule against missile attacks.]
 
-#namecost("SHIELD OF THE MIRRORED POOL", "20 points")
+#talisman("GLYPH NECKLACE", 20)[All close combat attacks directed against the bearer of this talisman suffer \-1 To Hit.]
 
-Shield. Any magic missile that strikes the bearer of this armour or any unit they are with is reflected on the roll of 2+ on a D6. If the spell is reflected, the results of the magic missile are resolved against the caster of the spell and any unit they are with.
+#talisman("AMULET OF ITZL", 20, one-use: true)[This talisman automatically ignores the first unsaved Wound suffered.]
 
-#namecost("CORONAL SHIELD", "25 points")
+#talisman("ZOETIC DIAL", 20)[The bearer of this item may re-roll 1's when taking armour saves.]
 
-Shield. All close combat attacks directed against the bearer of this shield must re-roll successful rolls To Hit.
+#talisman("INCANDESCENT RECTRICES", 10, one-use: true)[If this model would be removed as a casualty, immediately roll a D6. On a 3+, the model remains with 1 Wound, and any additional Wounds suffered are ignored.]
+]
 
-#entry("TALISMANS")
-#namecost("AURA OF QUETZL", "25 points")
+#magic-item-section("arcane")[
+#arcane-item("CRYSTALLINE SKULL", 60, type: "Relic")[Each time the bearer of this item successfully casts a spell, add +1 Power Dice to the pool (to a maximum of 3 per Magic Phase). In addition, once per battle the bearer may choose to destroy this item at the end of any of your Magic phases. If they do so, pick one enemy unit within 12". Roll a number of dice equal to the number of Power dice in the pool. For each roll of a 3+, that unit suffer a Wound that Ignores Armour Saves.]
 
-This talisman gives the wearer the Magical Ward (4+) special rule against attacks with Strength 5 or more.
+#arcane-item("CUPPED HANDS OF THE OLD ONES", 45, only: "Slann Mage-Priest", type: "Charm", one-use: true)[If the bearer of this item miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored. In addition, any enemy Wizards within line of sight of the Slann Mage-Priest will count as having rolled a 7 on the Miscast table.]
 
-#namecost("DIVINE PLAQUE OF PROTECTION", "25 points")
+#arcane-item("PLAQUE OF DOMINION", 35, type: "Relic", bound: (level: 2, cast: "8+"))[This item contains a *hex aura* spell with a range of 18". All enemy Wizards within range have the Stupidity special rule until the start of the caster's next Magic phase.]
 
-Slann Mage-Priest only. This talisman gives the wearer and any unit they are with the Magical Ward (5+) special rule against missile attacks.
+#arcane-item("ROD OF THE STORM", 35, type: "Staff", bound: true)[This item contains the _Urannon's Thunderbolt_ spell from the Lore of Heavens.]
 
-#namecost("GLYPH NECKLACE", "20 points")
+#arcane-item("THE TETRAGON OF TECTONIC DISPLACEMENT", 35, type: "Relic", bound: true)[The Tetragon of Tectonic Displacement contains the _Tectonic Shift_ spell from the Lore of Geomancy.]
 
-All close combat attacks directed against the bearer of this talisman suffer \-1 To Hit.
+#arcane-item("CUBE OF DARKNESS", 30, type: "Charm", one-use: true)[When an enemy spell has been cast, a Wizard with this item can use it instead of attempting to dispel the spell using dispel dice. If he does so, roll a D6; on the roll of a 2+ the spell is automatically dispelled – otherwise the spell is resolved as normal. In either case, roll a separate D6 for every Remains in Play spell currently in effect; on a 2+ that spell automatically ends.]
 
-#namecost("AMULET OF ITZL", "20 points")
+#arcane-item("PLAQUE OF XOLOC", 30, type: "Charm")[Once use only. This item may be used before attempting to cast any spell with a casting value of 10 maximum. Once used, the spell is cast automatically without using any Power dice. It may be dispelled as normal on its minimum casting value.]
 
-One use only. This talisman automatically ignores the first unsaved Wound suffered.
+#arcane-item("DIADEM OF POWER", 20, type: "Relic")[This item allows you to save up to two unused Power dice at the end of your Magic phase and add them to your side's Dispel dice pool in the next enemy Magic phase.]
 
-#namecost("ZOETIC DIAL", "20 points")
+#arcane-item("PLAQUE OF TEPEE", 15, type: "Relic")[Every time an enemy spell targets the wearer or their unit, roll a D6. On a 5+, the spell is dispelled and has no effect. If the roll is failed, you may attempt to dispel the spell as normal.]
 
-The bearer of this item may re-roll 1's when taking armour saves.
+#arcane-item("PLAQUE OF TEPOK", 10, only: "Slann Mage-Priest", type: "Relic")[The model bearing this item can choose an additional spell from another Lore of Magic than the one they have chosen.]
 
-#namecost("INCANDESCENT RECTRICES", "10 points")
+#arcane-item("COATL FAMILIAR", 5, type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. When used, the bearer may attempt to cast any one spell from any Lore of Magic normally available to them.]
+]
 
-One use only. If this model would be removed as a casualty, immediately roll a D6. On a 3+, the model remains with 1 Wound, and any additional Wounds suffered are ignored.
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("BLOOD STATUETTE OF SPITE", 35, bound: (level: 2, cast: "7+"))[This item contains a *direct damage* spell with a range of 12" that targets one enemy model, even in a unit. The target model must pass a Toughness test or suffer a Wound which Ignores Armour Saves. If the model takes a Wound from this spell, it must immediately take another Toughness test, losing another Wound if it fails again. This continues until either the model passes a Toughness test or is slain.]
 
-#entry("ARCANE ITEMS")
-#namecost("CRYSTALLINE SKULL", "60 points")
+#enchanted-item("PRISM OF AMYNTOK", 35, only: "Slann", bound: (level: 2, cast: "8+"))[This item contains a *direct damage area* spell that uses the line template. Place it 12" in length, directly away from the caster's front arc. Each model in the way suffers a Strength 6 Hit with the Flaming Attacks special rule. This has a +1 bonus To Wound against Daemons, Undead and Vampires.]
 
-Relic. Each time the bearer of this item successfully casts a spell, add +1 Power Dice to the pool (to a maximum of 3 per Magic Phase). In addition, once per battle the bearer may choose to destroy this item at the end of any of your Magic phases. If they do so, pick one enemy unit within 12". Roll a number of dice equal to the number of Power dice in the pool. For each roll of a 3+, that unit suffer a Wound that Ignores Armour Saves.
+#enchanted-item("THE CLOAK OF FEATHERS", 30, only: "Skink character on foot")[This item gives the wearer the Fly (10) and Magic Resistance (1) special rules.]
 
-#namecost("CUPPED HANDS OF THE OLD ONES", "45 points")
-
-Slann Mage-Priest only. Charm. One use only. If the bearer of this item miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored. In addition, any enemy Wizards within line of sight of the Slann Mage-Priest will count as having rolled a 7 on the Miscast table.
-
-#namecost("PLAQUE OF DOMINION", "35 points")
-
-Relic. Bound spell (Level 2, cast on 8+). This item contains a *hex aura* spell with a range of 18". All enemy Wizards within range have the Stupidity special rule until the start of the caster's next Magic phase.
-
-#namecost("ROD OF THE STORM", "35 points")
-
-Staff. Bound Spell. This item contains the _Urannon's Thunderbolt_ spell from the Lore of Heavens.
-
-#namecost("THE TETRAGON OF TECTONIC", "")
-#namecost("DISPLACEMENT", "35 points")
-
-Relic. Bound Spell. The Tetragon of Tectonic Displacement contains the _Tectonic Shift_ spell from the Lore of Geomancy.
-
-#namecost("CUBE OF DARKNESS", "30 points")
-
-Charm. One use only. When an enemy spell has been cast, a Wizard with this item can use it instead of attempting to dispel the spell using dispel dice. If he does so, roll a D6; on the roll of a 2+ the spell is automatically dispelled – otherwise the spell is resolved as normal. In either case, roll a separate D6 for every Remains in Play spell currently in effect; on a 2+ that spell automatically ends.
-
-#namecost("PLAQUE OF XOLOC", "30 points")
-
-Charm. Once use only. This item may be used before attempting to cast any spell with a casting value of 10 maximum. Once used, the spell is cast automatically without using any Power dice. It may be dispelled as normal on its minimum casting value.
-
-#namecost("DIADEM OF POWER", "20 points")
-
-Relic. This item allows you to save up to two unused Power dice at the end of your Magic phase and add them to your side's Dispel dice pool in the next enemy Magic phase.
-
-#namecost("PLAQUE OF TEPEE", "15 points")
-
-Relic. Every time an enemy spell targets the wearer or their unit, roll a D6. On a 5+, the spell is dispelled and has no effect. If the roll is failed, you may attempt to dispel the spell as normal.
-
-#namecost("PLAQUE OF TEPOK", "10 points")
-
-Slann Mage-Priest only. Relic. The model bearing this item can choose an additional spell from another Lore of Magic than the one they have chosen.
-
-#namecost("COATL FAMILIAR", "5 points")
-
-Charm. One use only. This item can be used at the start of any of your Magic phases. When used, the bearer may attempt to cast any one spell from any Lore of Magic normally available to them.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("BLOOD STATUETTE OF SPITE", "35 points")
-
-Bound Spell (Level 2, cast on 7+). This item contains a *direct damage* spell with a range of 12" that targets one enemy model, even in a unit. The target model must pass a Toughness test or suffer a Wound which Ignores Armour Saves. If the model takes a Wound from this spell, it must immediately take another Toughness test, losing another Wound if it fails again. This continues until either the model passes a Toughness test or is slain.
-
-#namecost("PRISM OF AMYNTOK", "35 points")
-
-Slann only. Bound spell (Level 2, cast on 8+). This item contains a *direct damage area* spell that uses the line template. Place it 12" in length, directly away from the caster's front arc. Each model in the way suffers a Strength 6 Hit with the Flaming Attacks special rule. This has a +1 bonus To Wound against Daemons, Undead and Vampires.
-
-#namecost("THE CLOAK OF FEATHERS", "30 points")
-
-Skink character on foot only. This item gives the wearer the Fly (10) and Magic Resistance (1) special rules.
-
-#namecost("THE EGG OF QUANGO", "30 points")
-
-One use only. This item can be used at the start of any Close Combat phase. Nominate one enemy unit in base contact with the bearer or his unit, roll a D6 and consult the table below to find out what happens. Any Wounds inflicted count towards combat results.
+#enchanted-item("THE EGG OF QUANGO", 30, one-use: true)[This item can be used at the start of any Close Combat phase. Nominate one enemy unit in base contact with the bearer or his unit, roll a D6 and consult the table below to find out what happens. Any Wounds inflicted count towards combat results.
 
 #chart((("D6", "Result"), ("1", "The enemy unit immediately suffers D6
 Strength 3 hits."), ("2-3", "The enemy unit immediately suffers D6
 Strength 4 hits."), ("4-6", "The enemy unit immediately suffers 2D6
 Strength 5 hits.")))
-#namecost("THE HORN OF KYGOR", "25 points")
-
-One use only. The bearer of this item can sound it at the start of any of his Movement phases. If they do so, all friendly mounts, War Beasts, Monstrous Beasts and Monsters within 12" of the bearer have the Frenzy special rule until the start of their next Movement phase.
-
-#namecost("GLEAMING PENDANT OF CHOTEC", "30 points")
-
-One use only. This item may be used at the start of any close combat phase. For the remainder of the phase, all enemy units in base contact with the wearer or the unit it is with gain the Always Strikes Last special rule.
-
-#namecost("STAR TABLET", "30 points")
-
-Infantry only. Before deployment, the bearer of this item and one unit they must join gains the Scouts special rule.
-
-#namecost("THE INCANTATION OF XETLIPOCUTZL", "25 points")
-
-One use only. The bearer can use this item at the start of any of your Magic phases. All enemy units within 12" must immediately take a Panic test using an additional D6, discarding the lowest result.
-
-#namecost("THRONE OF THE LOST GODS", "20 points")
-
-Slann Mage-Priest only. The model gains +1 Wound and the Fly (8) special rule.
-
-#namecost("CHARM OF THE JAGUAR WARRIOR", "15 points")
-
-Saurus on foot only. This item gives the bearer Movement 8 and the Scouts special rule.
-
-#namecost("CURSE-CHARM OF TEPOK", "15 points")
-
-One use only. When an enemy Wizard rolls on the Miscast table, the bearer of this item may force them to re-roll the result.
-
-#namecost("BANE HEAD", "10 points")
-
-The bearer of this item gains the Multiple Wounds (2) special rule against one enemy model, nominated at the start of the battle.
-
-#namecost("CARNOSAUR PENDANT", "10 points")
-
-Saurus Oldblood or Scar-Veteran. The bearer of this item gains the Blood Frenzy special rule.
-
-#namecost("PLAQUE OF FATE", "10 points")
-
-The bearer of this item may re-roll one roll To Hit, To Wound, armour or invulnerable save per turn.
-
-#namecost("RELOCATION ORB", "10 points")
-
-Slann only. One use only. If the bearer of this item has suffered any unsaved Wounds at the end of any phase, they may be moved anywhere within 12" just like a summoning spell, even if they are in combat.
-
-#runin[SOTEK]'#runin[S GAZE 10 points] Skink only. This item gives the wearer the Fear special rule
-
-#namecost("WAR DRUM OF XAHUTEC", "10 points")
-
-All friendly units within 12" of the bearer of this item do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units. In addition, they gain +1 Leadership when attempting to Rally.
-
-#namecost("DRAGONFLY OF QUICKSILVER", "5 points")
-
-If both players have models with the Scouts special rule, the Lizardmen player adds +1 to their dice roll when rolling to see who deploys their Scouts first.
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("TOTEM OF PROPHECY", "40 points")
+#enchanted-item("THE HORN OF KYGOR", 25, one-use: true)[The bearer of this item can sound it at the start of any of his Movement phases. If they do so, all friendly mounts, War Beasts, Monstrous Beasts and Monsters within 12" of the bearer have the Frenzy special rule until the start of their next Movement phase.]
 
-All enemy units with Line of Sight to this standard suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).
+#enchanted-item("GLEAMING PENDANT OF CHOTEC", 30, one-use: true)[This item may be used at the start of any close combat phase. For the remainder of the phase, all enemy units in base contact with the wearer or the unit it is with gain the Always Strikes Last special rule.]
 
-#namecost("HUANCHI'S BLESSED TOTEM", "35 points")
+#enchanted-item("STAR TABLET", 30, only: "Infantry")[Before deployment, the bearer of this item and one unit they must join gains the Scouts special rule.]
 
-Bound Spell, (Level 3, cast on 9+). This standard contains a *conveyance* spell that targets the unit carrying it. The unit may immediately make a move directly forward using the Random Movement (2D6) special rule.
+#enchanted-item("THE INCANTATION OF XETLIPOCUTZL", 25, one-use: true)[The bearer can use this item at the start of any of your Magic phases. All enemy units within 12" must immediately take a Panic test using an additional D6, discarding the lowest result.]
 
-#namecost("SUN STANDARD OF CHOTEC", "35 points")
+#enchanted-item("THRONE OF THE LOST GODS", 20, only: "Slann Mage-Priest")[The model gains +1 Wound and the Fly (8) special rule.]
 
-All missile attacks targeted at the unit carrying this standard from within 12" suffer \-2 To Hit, or \-1 To Hit if fired from over 12" away.
+#enchanted-item("CHARM OF THE JAGUAR WARRIOR", 15, only: "Saurus on foot")[This item gives the bearer Movement 8 and the Scouts special rule.]
 
-#namecost("SKAVENPELT BANNER", "30 points")
+#enchanted-item("CURSE-CHARM OF TEPOK", 15, one-use: true)[When an enemy Wizard rolls on the Miscast table, the bearer of this item may force them to re-roll the result.]
 
-The unit carrying this standard gains the Frenzy and Hatred (Skaven) special rules. However, all models from _Warhammer: Skaven_ gain the Hatred special rule against the unit carrying the banner.
+#enchanted-item("BANE HEAD", 10)[The bearer of this item gains the Multiple Wounds (2) special rule against one enemy model, nominated at the start of the battle.]
 
-#namecost("THE JAGUAR STANDARD", "25 points")
+#enchanted-item("CARNOSAUR PENDANT", 10)[Saurus Oldblood or Scar-Veteran. The bearer of this item gains the Blood Frenzy special rule.]
 
-The unit carrying this standard adds D3" to their charge or pursue distance.
+#enchanted-item("PLAQUE OF FATE", 10)[The bearer of this item may re-roll one roll To Hit, To Wound, armour or invulnerable save per turn.]
 
-#namecost("SIGN OF SOTEK", "20 points")
+#enchanted-item("RELOCATION ORB", 10, only: "Slann", one-use: true)[If the bearer of this item has suffered any unsaved Wounds at the end of any phase, they may be moved anywhere within 12" just like a summoning spell, even if they are in combat.]
 
-Skinks only. The unit carrying this standard may re-roll failed rolls To Wound on any turn it charges.
+#enchanted-item("SOTEK'S GAZE", 10, only: "Skink")[This item gives the wearer the Fear special rule]
+
+#enchanted-item("WAR DRUM OF XAHUTEC", 10)[All friendly units within 12" of the bearer of this item do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units. In addition, they gain +1 Leadership when attempting to Rally.]
+
+#enchanted-item("DRAGONFLY OF QUICKSILVER", 5)[If both players have models with the Scouts special rule, the Lizardmen player adds +1 to their dice roll when rolling to see who deploys their Scouts first.]
+]
+
+#magic-item-section("standard")[
+#magic-standard("TOTEM OF PROPHECY", 40)[All enemy units with Line of Sight to this standard suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).]
+
+#magic-standard("HUANCHI'S BLESSED TOTEM", 35, bound: (level: 3, cast: "9+"))[This standard contains a *conveyance* spell that targets the unit carrying it. The unit may immediately make a move directly forward using the Random Movement (2D6) special rule.]
+
+#magic-standard("SUN STANDARD OF CHOTEC", 35)[All missile attacks targeted at the unit carrying this standard from within 12" suffer \-2 To Hit, or \-1 To Hit if fired from over 12" away.]
+
+#magic-standard("SKAVENPELT BANNER", 30)[The unit carrying this standard gains the Frenzy and Hatred (Skaven) special rules. However, all models from _Warhammer: Skaven_ gain the Hatred special rule against the unit carrying the banner.]
+
+#magic-standard("THE JAGUAR STANDARD", 25)[The unit carrying this standard adds D3" to their charge or pursue distance.]
+
+#magic-standard("SIGN OF SOTEK", 20, only: "Skinks")[The unit carrying this standard may re-roll failed rolls To Wound on any turn it charges.]
+]
 
 = CHARACTERS
 

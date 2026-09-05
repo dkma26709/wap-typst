@@ -16,7 +16,8 @@
   align: "order",
 )
 
-#show: book.with(title: "Warhammer Armies Project — Bretonnia 3.0")
+#show: book.with(title: "Warhammer Armies Project — Bretonnia 3.0",
+  side: 2.0cm, size: 11.5pt)
 
 #cover(
   title: "Bretonnia",
@@ -209,264 +210,145 @@ If the Knight is not the army's General, models with the Peasant's Duty within 1
 All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("SILVER LANCE OF THE BLESSED", 70, type: "Heavy lance")[If the model has the Blessing of the Lady, then all attacks with the Silver Lance of the Blessed automatically hit. In addition, all successful enemy armour saves and Magical Wards must be re-rolled. However, if the model wielding the lance flees for any reason, he suffers D6 Flaming Strength 4 hits with the Ignores Armour Saves special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("SILVER LANCE OF THE BLESSED", "70 points")
+#magic-weapon("DRAGON SLAYING SWORD", 45, type: "Great weapon")[The wielder gains the Multiple Wounds (D6) special rule against Draconids.]
 
-Heavy lance. If the model has the Blessing of the Lady, then all attacks with the Silver Lance of the Blessed automatically hit. In addition, all successful enemy armour saves and Magical Wards must be re-rolled. However, if the model wielding the lance flees for any reason, he suffers D6 Flaming Strength 4 hits with the Ignores Armour Saves special rule.
+#magic-weapon("CRUSADER'S LANCE", 30, type: "Heavy lance")[This weapon gives the wielder the Devastating Charge and Hatred special rules.]
 
-#namecost("DRAGON SLAYING SWORD", "45 points")
+#magic-weapon("SWORD OF HEROES", 30)[Against enemies that have Toughness 5 or greater, the bearer gets +2 Strength and the Multiple Wounds (D3) special rule.]
 
-Great weapon. The wielder gains the Multiple Wounds (D6) special rule against Draconids.
+#magic-weapon("WYRMLANCE", 30, type: "Heavy lance")[The wielder of the Wyrmlance gains a Strength 3 Breath Weapon with the Flaming Attacks special rule. In addition, all attacks made with the Wyrmlance have the Flaming Attacks special rule.]
 
-#namecost("CRUSADER'S LANCE", "30 points")
+#magic-weapon("BIRTH-SWORD OF CARCASSONNE", 25)[The Birth-sword of Carcassonne gives +1 Strength to the wielder. Enemies wounded by the sword must re- roll successful armour saves.]
 
-Heavy lance. This weapon gives the wielder the Devastating Charge and Hatred special rules.
+#magic-weapon("SWORD OF THE QUEST", 25, only: "Questing Vow")[The Sword of the Quest may be used as either a hand weapon or a great weapon, decided at the start of each round combat. All attacks made by the Sword of the Quest have the Ignores Armour Saves special rule.]
 
-#namecost("SWORD OF HEROES", "30 points")
+#magic-weapon("HEARTWOOD LANCE", 25, type: "Heavy lance")[The Heartwood Lance allows the bearer to re-roll all failed rolls to wound.]
 
-Against enemies that have Toughness 5 or greater, the bearer gets +2 Strength and the Multiple Wounds (D3) special rule.
+#magic-weapon("FRONTIER AXE", 25, type: "Great weapon")[All attacks made with this weapon have the Multiple Wounds (2) special rule.]
 
-#namecost("WYRMLANCE", "30 points")
+#magic-weapon("THE VIRTUOUS LANCE", 25, type: "Heavy lance")[This lance gives the wielder the Mighty Blow (1) and Multiple Wounds (D3) special rules when charging. When fighting Monstrous Creatures and Monsters, once you have established how many wounds have been inflicted, roll a D6 and add the number of wounds caused to the score. If the total is equal to 6 or more, remove the model as a casualty. Note that the wielder must cause at least one unsaved Wound for this rule to take effect.]
 
-Heavy lance. The wielder of the Wyrmlance gains a Strength 3 Breath Weapon with the Flaming Attacks special rule. In addition, all attacks made with the Wyrmlance have the Flaming Attacks special rule.
+#magic-weapon("FOEBREAKER", 20)[This weapon gives the wielder +1 Strength. Any enemy Character or Lone Model that suffers one or more unsaved wounds from the Foebreaker suffer a \-1 penalty Weapon Skill and Attacks (to a minimum of 1) until the end of the next round of Close Combat.]
 
-#namecost("BIRTH-SWORD OF CARCASSONNE", "25 points")
+#magic-weapon("LANCE OF ARTOIS", 15, type: "Heavy lance")[The Lance of Artois gives the wielder the Killing Blow special rule on turns in which the character charges.]
 
-The Birth-sword of Carcassonne gives +1 Strength to the wielder. Enemies wounded by the sword must re- roll successful armour saves.
+#magic-weapon("SWORD OF THE LADY'S CHAMPION", 15, only: "Character with the Grail Vow")[The character always counts their Strength as one higher than their target's Toughness, unless their Strength would normally be more than this.]
 
-#namecost("SWORD OF THE QUEST", "25 points")
+#magic-weapon("SWORD OF THE STOUT HEARTED", 10, type: "Great weapon")[This weapon gives the wielder the Immunity (Psychology) special rule.]
+]
 
-Questing Vow only. The Sword of the Quest may be used as either a hand weapon or a great weapon, decided at the start of each round combat. All attacks made by the Sword of the Quest have the Ignores Armour Saves special rule.
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF THE MIDSUMMER SUN", 50, type: "Heavy armour")[Opponents suffer a \-1 penalty To Hit the wearer of the Armour of the Midsummer Sun with both missile and close combat attacks.]
 
-#namecost("HEARTWOOD LANCE", "25 points")
+#magic-armour("ARMOUR OF AGILULF", 40, type: ("Heavy armour", "Shield"))[The wearer of the Armour of Agilulf gains Weapon Skill 10, but may not use a weapon that Requires Two Hands.]
 
-Heavy lance. The Heartwood Lance allows the bearer to re-roll all failed rolls to wound.
+#magic-armour("CUIRASS OF FORTUNE", 40, type: "Heavy armour")[The Knight may re-roll 1's when rolling To Hit, To Wound and when making armour saves.]
 
-#namecost("FRONTIER AXE", "25 points")
+#magic-armour("ANOINTED ARMOUR", 35, only: "Infantry or Cavalry", type: "Heavy armour")[The wearer of this armour may re-roll failed Magical Ward saves as long as they have the Blessing of the Lady.]
 
-Great weapon. All attacks made with this weapon have the Multiple Wounds (2) special rule.
+#magic-armour("GROMRIL GREAT HELM", 35, only: "Infantry or Cavalry")[The Gromril Great Helm gives the wearer a 6+ armour save and allows them to re-roll failed armour saves.]
 
-#namecost("THE VIRTUOUS LANCE", "25 points")
+#magic-armour("GILDED CUIRASS", 30, only: "Grail Vow", type: "Heavy armour")[The wearer of the Gilded Cuirass gains the Regeneration (6+) special rule.]
 
-Heavy Lance. This lance gives the wielder the Mighty Blow (1) and Multiple Wounds (D3) special rules when charging. When fighting Monstrous Creatures and Monsters, once you have established how many wounds have been inflicted, roll a D6 and add the number of wounds caused to the score. If the total is equal to 6 or more, remove the model as a casualty. Note that the wielder must cause at least one unsaved Wound for this rule to take effect.
+#magic-armour("HELM OF THE DRAGON SLAYER", 20)[This armour gives the wearer a 6+ armour save. In addition, the Ward Save from the Blessing of the Lady is increased to 5+ against close combat attacks and the wearer gains the Immunity (Flaming Attacks) special rule.]
 
-#namecost("FOEBREAKER", "20 points")
+#magic-armour("THE GRAIL SHIELD", 15, only: "Grail Vow", type: "Shield")[The wearer gains +1 to the Magical Ward save gained from the Blessing of the Lady.]
 
-This weapon gives the wielder +1 Strength. Any enemy Character or Lone Model that suffers one or more unsaved wounds from the Foebreaker suffer a \-1 penalty Weapon Skill and Attacks (to a minimum of 1) until the end of the next round of Close Combat.
+#magic-armour("ORCBANE SHIELD", 15, type: "Shield")[Any Orc or Goblin unit within 12" of the model with the Orcbane Shield that must take an Animosity test fails it on a 1\-2 instead of a 1.]
 
-#namecost("LANCE OF ARTOIS", "15 points")
+#magic-armour("IRONSPIKE SHIELD", 10, type: "Shield")[Whenever an enemy model rolls a natural 1 To Hit against the bearer of this shield, they immediately suffer a Strength 3 Hit with the Armour Piercing (1) special rule.]
+]
 
-Heavy lance. The Lance of Artois gives the wielder the Killing Blow special rule on turns in which the character charges.
+#magic-item-section("talisman")[
+#talisman("SIRIENNE'S LOCKET", 65, only: "Baron")[A model with Sirienne's Locket has Immunity (Killing Blow, Multiple Wounds) and can never suffer more than one wound in any one phase. After the first wound in that phase is suffered, all subsequent wounds suffered during that phase are ignored. The bearer can still be run down by pursuing enemies as normal, and may still be affected as normal by other "instant kill" attacks.]
 
-#runin[SWORD OF THE LADY]'#runin[S CHAMPION 15 points] Character with the Grail Vow only. The character always counts their Strength as one higher than their target's Toughness, unless their Strength would normally be more than this.
+#talisman("HOLY ICON", 50)[The Holy Icon gives the bearer and any unit they are with the Immunity (Psychology) and Magic Resistance (3) special rules.]
 
-#namecost("SWORD OF THE STOUT HEARTED", "10 points")
+#talisman("INSIGNIA OF THE QUEST", 25, only: "Questing Vow")[If the bearer of the Insignia of the Quest is ever reduced to 1 Wound, then the Knight instantly gains a Magical Ward Save (3+) as long as they remain at 1 Wound. If the character suffers an attack that would kill him before he has gained this Ward save (such as Killing Blow or Multiple Wounds), he will be reduced to 1 Wound, then may attempt his Magical Ward (3+) save to stay alive and nullify any further wounds caused by the same hit.]
 
-Great weapon. This weapon gives the wielder the Immunity (Psychology) special rule.
+#talisman("TOKEN OF THE DAMSEL", 20, only: "Baron or Paladin", one-use: true, common: true)[The wearer of the Token of the Damsel ignores the first wounding Hit (after saves) suffered during the game.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF THE MIDSUMMER SUN", "50 points")
+#talisman("LUCKY HEIRLOOM", 15, common: true)[Once per Close Combat phase, the bearer of the Lucky Heirloom can re-roll a single failed roll To Hit or To Wound, or re-roll a failed armour save or Magical Ward save roll.]
 
-Heavy armour. Opponents suffer a \-1 penalty To Hit the wearer of the Armour of the Midsummer Sun with both missile and close combat attacks.
+#talisman("MANTLE OF THE DAMSEL ELENA", 10)[The wearer of the Mantle of the Damsel Elena gains the Immunity (Killing Blow, Poisoned Attacks) special rule.]
 
-#namecost("ARMOUR OF AGILULF", "40 points")
+#talisman("GRAIL PENDANT", 10, only: "Models with the Grail Vow", one-use: true, common: true)[When the wearer of the Grail Pendant loses their last Wound, roll a D6. On a roll of 2+, the Wound is not lost.]
+]
 
-Heavy armour and shield. The wearer of the Armour of Agilulf gains Weapon Skill 10, but may not use a weapon that Requires Two Hands.
+#magic-item-section("arcane")[
+#arcane-item("SACRAMENT OF THE LADY", 50, type: "Relic")[The bearer may use the Sacrament of the Lady at the start of any Bretonnian Magic phase. The model adds 2D3 Power Dice to your power pool, but may not cast any spells that turn.]
 
-#namecost("CUIRASS OF FORTUNE", "40 points")
+#arcane-item("THE SILVER MIRROR", 45, type: "Charm", one-use: true)[When used, the bearer of the Silver Mirror deflects a spell cast at them or the unit they are with back at the enemy caster. The enemy can try to dispel their own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit they are with.]
 
-Heavy armour. The Knight may re-roll 1's when rolling To Hit, To Wound and when making armour saves.
+#arcane-item("PRAYER ICON OF QUENELLES", 45, type: "Relic")[The bearer of Prayer Icon of Quenelles and the unit they are with gain a +1 bonus to the Magical Ward save from the Blessing of the Lady.]
 
-#namecost("ANOINTED ARMOUR", "35 points")
+#arcane-item("THE VERDANT HEART", 40, type: "Relic")[The Verdant Heart gives the bearer a +D3 casting bonus when using the Lore of Life. Roll for each spell casting attempt.]
 
-Infantry or Cavalry only. Heavy armour. The wearer of this armour may re-roll failed Magical Ward saves as long as they have the Blessing of the Lady.
+#arcane-item("FLAMESTRIKE WAND", 35, type: "Relic", bound: true)[This item contains the _Fires of U'Zhul_ spell from the Lore of Fire.]
 
-#namecost("GROMRIL GREAT HELM", "35 points")
+#arcane-item("HEART OF THE WILDS", 20, type: "Relic")[The bearer of this item gains a +2 casting bonus if they are wholly within a forest or water terrain feature.]
 
-Infantry or Cavalry only. The Gromril Great Helm gives the wearer a 6+ armour save and allows them to re-roll failed armour saves.
+#arcane-item("CHALICE OF MALFLEUR", 15, type: "Relic")[At the start of the opponent's Magic phase, the bearer may drink from the Chalice. If they do so, on the roll of a 1 she suffers a wound with no saves allowed, including invulnerable saves. On a roll of 2\-6, an extra Dispel dice is added to the player's pool.]
 
-#namecost("GILDED CUIRASS", "30 points")
+#arcane-item("POTION SACRE", 10, type: "Charm", one-use: true, common: true)[The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.]
 
-Grail Vow only. Heavy armour. The wearer of the Gilded Cuirass gains the Regeneration (6+) special rule.
+#arcane-item("DIADEM OF POWER", 10, type: "Relic")[The bearer of this item gains a +1 casting bonus when casting magical missiles, direct damage or magical vortex spells.]
+]
 
-#namecost("HELM OF THE DRAGON SLAYER", "20 points")
+#magic-item-section("enchanted")[
+#enchanted-item("THE MANE OF THE PUREBREED", 30, only: "Model on Warhorse")[The Mane of the Purebreed gives +1 Strength to all Warhorses in the unit the model is with.]
 
-This armour gives the wearer a 6+ armour save. In addition, the Ward Save from the Blessing of the Lady is increased to 5+ against close combat attacks and the wearer gains the Immunity (Flaming Attacks) special rule.
+#enchanted-item("THE RUBY GOBLET", 25)[This magic item will start to take effect at the end of the first phase during which the bearer or their unit suffers an unsaved wound. From that moment on, the bearer and any unit they are with cannot be wounded on better than a 3+ from any non-magical source.]
 
-#namecost("THE GRAIL SHIELD", "15 points")
+#enchanted-item("FALCON-HORN OF FREDEMUND", 20, one-use: true)[The Horn may be sounded at the start of any Bretonnian turn. Until the start of your next turn, no enemy unit may use the Fly special rule.]
 
-Grail Vow only. Shield. The wearer gains +1 to the Magical Ward save gained from the Blessing of the Lady.
+#enchanted-item("THE SEAL OF PARRAVON", 20)[The bearer of the Seal of Parravon will always Hit on a 2+ in close combat.]
 
-#namecost("ORCBANE SHIELD", "15 points")
+#enchanted-item("WYRMBREATH VIAL", 20, one-use: true)[The bearer gains a Breath Weapon attack with Strength 4 and Flaming Attacks and Magical Attacks special rules.]
 
-Shield. Any Orc or Goblin unit within 12" of the model with the Orcbane Shield that must take an Animosity test fails it on a 1\-2 instead of a 1.
+#enchanted-item("BATTLE STONE OF THE MARQUIS", 15, one-use: true)[The Battle Stone may be used at the start of any close combat phase. The bearer (but not any mount) gains +3 Attacks for this round of close combat.]
 
-#namecost("IRONSPIKE SHIELD", "10 points")
+#enchanted-item("CRUSADER'S CLARION", 15, only: "Cavalry with the Crusader's Vow")[On a turn in which the bearer of the Crusader's Clarion charge, their mount and all mounts in the unit they have joined may re-roll failed rolls To Wound (including Impact Hits)]
 
-Shield. Whenever an enemy model rolls a natural 1 To Hit against the bearer of this shield, they immediately suffer a Strength 3 Hit with the Armour Piercing (1) special rule.
+#enchanted-item("ANTLERS OF THE GREAT HUNT", 10, only: "Baron or Paladin", common: true)[The model wearing the Antlers of the Great Hunt and any unit they are with roll an additional dice when pursuing and discard the lowest result.]
 
-#entry("TALISMANS")
-#namecost("SIRIENNE'S LOCKET", "65 points")
+#enchanted-item("CLAW OF MALGRIMACE", 10)[When fighting Monstrous Creatures and Monsters, the bearer may deduct D3 Attacks from his opponent (not including any rider), to a minimum of 1.]
 
-Baron only. A model with Sirienne's Locket has Immunity (Killing Blow, Multiple Wounds) and can never suffer more than one wound in any one phase. After the first wound in that phase is suffered, all subsequent wounds suffered during that phase are ignored. The bearer can still be run down by pursuing enemies as normal, and may still be affected as normal by other "instant kill" attacks.
+#enchanted-item("GAUNTLET OF THE DUEL", 10, only: "Baron or Paladin")[Any challenge issued by the bearer of the Gauntlet of the Duel cannot be refused.]
 
-#namecost("HOLY ICON", "50 points")
+#enchanted-item("TRESS OF ISOULDE", 10, one-use: true)[Nominate one enemy Character, Monstrous Creature or Monster in base contact at the beginning of any Close Combat phase (after challenges). The bearer automatically hits that model that Close Combat round, regardless of other modifiers.]
+]
 
-The Holy Icon gives the bearer and any unit they are with the Immunity (Psychology) and Magic Resistance (3) special rules.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF THE LADY'S GRACE", 50)[The unit carrying the Banner of the Lady’s Grace ignores all negative modifiers to its Leadership characteristic.]
 
-#namecost("INSIGNIA OF THE QUEST", "25 points")
+#magic-standard("THE GRAIL BANNER", 50)[All friendly units within 12" of this standard gain +1 Leadership.]
 
-Questing Vow only. If the bearer of the Insignia of the Quest is ever reduced to 1 Wound, then the Knight instantly gains a Magical Ward Save (3+) as long as they remain at 1 Wound. If the character suffers an attack that would kill him before he has gained this Ward save (such as Killing Blow or Multiple Wounds), he will be reduced to 1 Wound, then may attempt his Magical Ward (3+) save to stay alive and nullify any further wounds caused by the same hit.
+#magic-standard("BANNER OF THE LADY", 40)[All enemy units in base contact with the bearer of the Banner of the Lady get no combat resolution bonus for ranks.]
 
-#namecost("TOKEN OF THE DAMSEL*", "20 points")
+#magic-standard("CRUSADER'S TAPESTRY", 40, only: "Crusader's Vow")[The unit carrying the Crusader’s Tapestry gains the Frenzy special rule.]
 
-Baron or Paladin only. One use only. The wearer of the Token of the Damsel ignores the first wounding Hit (after saves) suffered during the game.
+#magic-standard("BANNER OF DEFENCE", 25)[The unit carrying this standard may re-roll failed Magical Ward saves from the Blessing of the Lady against missile attacks.]
 
-#namecost("LUCKY HEIRLOOM*", "15 Points")
+#magic-standard("CONQUEROR'S TAPESTRY", 25)[The unit carrying the Conqueror's Tapestry gains +1 Combat Resolution Bonus for the remainder of the game for every enemy unit destroyed in close combat or through pursuit.]
 
-Once per Close Combat phase, the bearer of the Lucky Heirloom can re-roll a single failed roll To Hit or To Wound, or re-roll a failed armour save or Magical Ward save roll.
+#magic-standard("ERRANTRY BANNER", 25, only: "Knights Errant")[All Knights Errant in the unit get a +1 Strength bonus on any turn they charge. However, a unit with this banner suffers \-2 to its Ld for any Impetuous tests.]
 
-#namecost("MANTLE OF THE DAMSEL ELENA", "10 points")
+#magic-standard("TWILIGHT BANNER", 25, one-use: true)[The Twilight Banner can be used at the start of any of your Movement phases. For the remainder of the Movement phase, the unit gains the Ethereal special rule.]
 
-The wearer of the Mantle of the Damsel Elena gains the Immunity (Killing Blow, Poisoned Attacks) special rule.
+#magic-standard("VALOROUS STANDARD", 25)[A unit carrying the Valorous Standard gains the Cold- Blooded special rule.]
 
-#namecost("GRAIL PENDANT*", "10 points")
+#magic-standard("BANNER OF HONOURABLE WARFARE", 15)[A unit carrying the Banner of Honourable Warfare may re-roll any failed rolls To Hit during the first round of close combat when engaged with an enemy equipped with any missile weapons.]
 
-Models with the Grail Vow only. One use only. When the wearer of the Grail Pendant loses their last Wound, roll a D6. On a roll of 2+, the Wound is not lost.
+#magic-standard("BANNER OF THE ZEALOUS KNIGHT", 15)[The unit carrying the Banner of the Zealous Knight gains the Vanguard special rule.]
 
-#entry("ARCANE ITEMS")
-#namecost("SACRAMENT OF THE LADY", "50 points")
-
-Relic. The bearer may use the Sacrament of the Lady at the start of any Bretonnian Magic phase. The model adds 2D3 Power Dice to your power pool, but may not cast any spells that turn.
-
-#namecost("THE SILVER MIRROR", "45 points")
-
-Charm. One use only. When used, the bearer of the Silver Mirror deflects a spell cast at them or the unit they are with back at the enemy caster. The enemy can try to dispel their own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit they are with.
-
-#namecost("PRAYER ICON OF QUENELLES", "45 points")
-
-Relic. The bearer of Prayer Icon of Quenelles and the unit they are with gain a +1 bonus to the Magical Ward save from the Blessing of the Lady.
-
-#namecost("THE VERDANT HEART", "40 points")
-
-Relic. The Verdant Heart gives the bearer a +D3 casting bonus when using the Lore of Life. Roll for each spell casting attempt.
-
-#namecost("FLAMESTRIKE WAND", "35 points")
-
-Relic. Bound Spell. This item contains the _Fires of U'Zhul_ spell from the Lore of Fire.
-
-#namecost("HEART OF THE WILDS", "20 points")
-
-Relic. The bearer of this item gains a +2 casting bonus if they are wholly within a forest or water terrain feature.
-
-#namecost("CHALICE OF MALFLEUR", "15 points")
-
-Relic. At the start of the opponent's Magic phase, the bearer may drink from the Chalice. If they do so, on the roll of a 1 she suffers a wound with no saves allowed, including invulnerable saves. On a roll of 2\-6, an extra Dispel dice is added to the player's pool.
-
-#namecost("POTION SACRE*", "10 points")
-
-Charm. One use only. The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.
-
-#namecost("DIADEM OF POWER", "10 points")
-
-Relic. The bearer of this item gains a +1 casting bonus when casting magical missiles, direct damage or magical vortex spells.
-
-#entry("ENCHANTED ITEMS")
-#namecost("THE MANE OF THE PUREBREED", "30 points")
-
-Model on Warhorse only. The Mane of the Purebreed gives +1 Strength to all Warhorses in the unit the model is with.
-
-#namecost("THE RUBY GOBLET", "25 points")
-
-This magic item will start to take effect at the end of the first phase during which the bearer or their unit suffers an unsaved wound. From that moment on, the bearer and any unit they are with cannot be wounded on better than a 3+ from any non-magical source.
-
-#namecost("FALCON-HORN OF FREDEMUND", "20 points")
-
-One use only. The Horn may be sounded at the start of any Bretonnian turn. Until the start of your next turn, no enemy unit may use the Fly special rule.
-
-#namecost("THE SEAL OF PARRAVON", "20 points")
-
-The bearer of the Seal of Parravon will always Hit on a 2+ in close combat.
-
-#namecost("WYRMBREATH VIAL", "20 points")
-
-One use only. The bearer gains a Breath Weapon attack with Strength 4 and Flaming Attacks and Magical Attacks special rules.
-
-#namecost("BATTLE STONE OF THE MARQUIS", "15 points")
-
-One use only. The Battle Stone may be used at the start of any close combat phase. The bearer (but not any mount) gains +3 Attacks for this round of close combat.
-
-#namecost("CRUSADER'S CLARION", "15 points")
-
-Cavalry with the Crusader's Vow only. On a turn in which the bearer of the Crusader's Clarion charge, their mount and all mounts in the unit they have joined may re-roll failed rolls To Wound (including Impact Hits)
-
-#namecost("ANTLERS OF THE GREAT HUNT*", "10 points")
-
-Baron or Paladin only. The model wearing the Antlers of the Great Hunt and any unit they are with roll an additional dice when pursuing and discard the lowest result.
-
-#namecost("CLAW OF MALGRIMACE", "10 points")
-
-When fighting Monstrous Creatures and Monsters, the bearer may deduct D3 Attacks from his opponent (not including any rider), to a minimum of 1.
-
-#namecost("GAUNTLET OF THE DUEL", "10 points")
-
-Baron or Paladin only. Any challenge issued by the bearer of the Gauntlet of the Duel cannot be refused.
-
-#namecost("TRESS OF ISOULDE", "10 points")
-
-One use only. Nominate one enemy Character, Monstrous Creature or Monster in base contact at the beginning of any Close Combat phase (after challenges). The bearer automatically hits that model that Close Combat round, regardless of other modifiers.
-
-#entry("MAGIC STANDARDS")
-
-#runin[BANNER OF THE LADY]'#runin[S GRACE 50 points] The unit carrying the Banner of the Lady’s Grace ignores all negative modifiers to its Leadership characteristic.
-
-#namecost("THE GRAIL BANNER", "50 points")
-
-All friendly units within 12" of this standard gain +1 Leadership.
-
-#namecost("BANNER OF THE LADY", "40 points")
-
-All enemy units in base contact with the bearer of the Banner of the Lady get no combat resolution bonus for ranks.
-
-#namecost("CRUSADER'S TAPESTRY", "40 points")
-
-Crusader's Vow only. The unit carrying the Crusader’s Tapestry gains the Frenzy special rule.
-
-#namecost("BANNER OF DEFENCE", "25 points")
-
-The unit carrying this standard may re-roll failed Magical Ward saves from the Blessing of the Lady against missile attacks.
-
-#namecost("CONQUEROR'S TAPESTRY", "25 points")
-
-The unit carrying the Conqueror's Tapestry gains +1 Combat Resolution Bonus for the remainder of the game for every enemy unit destroyed in close combat or through pursuit.
-
-#namecost("ERRANTRY BANNER", "25 points")
-
-Knights Errant only. All Knights Errant in the unit get a +1 Strength bonus on any turn they charge. However, a unit with this banner suffers \-2 to its Ld for any Impetuous tests.
-
-#namecost("TWILIGHT BANNER", "25 points")
-
-One use only. The Twilight Banner can be used at the start of any of your Movement phases. For the remainder of the Movement phase, the unit gains the Ethereal special rule.
-
-#namecost("VALOROUS STANDARD", "25 points")
-
-A unit carrying the Valorous Standard gains the Cold- Blooded special rule.
-
-#namecost("BANNER OF HONOURABLE WARFARE", "15 points")
-
-A unit carrying the Banner of Honourable Warfare may re-roll any failed rolls To Hit during the first round of close combat when engaged with an enemy equipped with any missile weapons.
-
-#namecost("BANNER OF THE ZEALOUS KNIGHT", "15 points")
-
-The unit carrying the Banner of the Zealous Knight gains the Vanguard special rule.
-
-#namecost("BANNERS OF CHALONS", "10 points")
-
-Enemy units cannot choose Stand & Shoot as a charge reaction against the unit carrying the Banner of Chalons.
+#magic-standard("BANNERS OF CHALONS", 10)[Enemy units cannot choose Stand & Shoot as a charge reaction against the unit carrying the Banner of Chalons.]
+]
 
 = CHARACTERS
 

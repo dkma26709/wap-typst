@@ -69,144 +69,81 @@ Models with this upgrade gain the Fight in Extra Ranks (1) special rule.
 
 Models with this special rule may take up two Talismans and/or Enchanted Items rather than just one of each.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Halflings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Halflings. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("THE REAPER SCYTHE", 60, type: "Great weapon")[The Reaper Scythe grants the wielder the Killing Blow rule, as well as one extra attack for each enemy infantry model in base contact.]
 
-#entry("MAGIC WEAPONS")
-#namecost("THE REAPER SCYTHE", "60 points")
+#magic-weapon("TIMBER AXE OF JONNO THE SLICK", 50)[The wielder treats their Strength to be equal to that of their Initiative in close combat.]
 
-Great weapon. The Reaper Scythe grants the wielder the Killing Blow rule, as well as one extra attack for each enemy infantry model in base contact.
-
-#namecost("TIMBER AXE OF JONNO THE SLICK", "50 points")
-
-The wielder treats their Strength to be equal to that of their Initiative in close combat.
-
-#namecost("BOW OF APPLE OAK", "30 points")
-
-Shortbow. This weapon has the following profile:
+#magic-weapon("BOW OF APPLE OAK", 30, type: "Shortbow")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "4", "March & Shoot, Multiple Shots (4)"))
-#namecost("THE EPIC FLAIL", "30 points")
+]
 
-Flail. The wielder of this weapon may re-roll failed rolls To Hit and To Wound. However, they must always pursue a fleeing enemy.
+#magic-weapon("THE EPIC FLAIL", 30, type: "Flail")[The wielder of this weapon may re-roll failed rolls To Hit and To Wound. However, they must always pursue a fleeing enemy.]
 
-#namecost("GILDED LADLE", "30 points")
+#magic-weapon("GILDED LADLE", 30, only: "Master Chef")[The wielder gains +1 Strength. In your Magic Phase, the Master Chef may attempt to heal one Wound lost previously during the game on themselves or another friendly Character in base contact. Roll a D6; on a 4+ the Wound is restored.]
 
-Master Chef only. The wielder gains +1 Strength. In your Magic Phase, the Master Chef may attempt to heal one Wound lost previously during the game on themselves or another friendly Character in base contact. Roll a D6; on a 4+ the Wound is restored.
+#magic-weapon("KNEECAPPING HAMMER", 30)[All attacks made with this weapon may re-roll to Wound. In addition, if a 6 is rolled on the To Wound roll, the target may not Attack this round of close combat.]
 
-#namecost("KNEECAPPING HAMMER", "30 points")
+#magic-weapon("SPEAR OF JUSTICE", 30, type: "Light lance/spear")[A model carrying the Spear of Justice gains +1 to their Weapon Skill, Strength and Initiative characteristics.]
 
-All attacks made with this weapon may re-roll to Wound. In addition, if a 6 is rolled on the To Wound roll, the target may not Attack this round of close combat.
+#magic-weapon("OLD HOPEFUL", 25, type: "Sling")[Any shots fired with this weapon have the Heroic Killing Blow rule.]
 
-#namecost("SPEAR OF JUSTICE", "30 points")
+#magic-weapon("THE BLADDERWHACK", 20, type: "Flail")[Roll a D6 at start of each close combat the Bladderwhack is used. On a 6, all attacks made by it will be resolved at Strength 10 with the Multiple Wounds (D6) special rule.]
 
-Light lance/spear. A model carrying the Spear of Justice gains +1 to their Weapon Skill, Strength and Initiative characteristics.
+#magic-weapon("BOW OF CORNGOLD", 20, type: "Shortbow")[The Bow of Corngold gives the wielder the Sniper special rule.]
 
-#namecost("OLD HOPEFUL", "25 points")
+#magic-weapon("TERRY'S EYE-POKING STICK", 20, type: "Spear")[On the To Hit roll of a 6, the target is reduced to Weapon Skill 1 for the duration of the close combat round.]
 
-Sling. Any shots fired with this weapon have the Heroic Killing Blow rule.
+#magic-weapon("WAR CLUB OF ELDER BANDO", 25, type: "Great weapon")[Attacks made with this weapon have the Multiple Wounds (D3) special rule.]
+]
 
-#namecost("THE BLADDERWHACK", "20 points")
+#magic-item-section("armour")[
+#magic-armour("THE WHEATSHIELD", 40, type: "Shield")[The Wheatshield confers the Regeneration (5+) special rule to its wielder. If the bearer is reduced to his final Wound, this is increased to Regeneration (3+) instead as long as he remains at 1 Wound.]
 
-Flail. Roll a D6 at start of each close combat the Bladderwhack is used. On a 6, all attacks made by it will be resolved at Strength 10 with the Multiple Wounds (D6) special rule.
+#magic-armour("TRICKSTER'S ARMOUR", 30, type: "Light armour")[Whenever an enemy model rolls a natural 6 To Hit or To Wound against the wearer of this armour, the Hit/Wound is ignored.]
 
-#namecost("BOW OF CORNGOLD", "20 points")
+#magic-armour("THE OAKGNARL", 25, type: "Medium armour")[The Oakgnarl confers +1 Toughness upon the wearer. However, the wearer also becomes Flammable.]
 
-Shortbow. The Bow of Corngold gives the wielder the Sniper special rule.
+#magic-armour("TRAILBLAZER'S HAUBERK", 20, only: "Model on foot", type: "Medium armour")[The wearer of this armour gains the Scouts and Strider special rule.]
 
-#namecost("TERRY'S EYE-POKING STICK", "20 points")
+#magic-armour("LARGO'S LEATHER JERKIN", 20, type: "Light armour")[All enemy attacks targeting the wearer must re-roll successful rolls To Wound.]
 
-Spear. On the To Hit roll of a 6, the target is reduced to Weapon Skill 1 for the duration of the close combat round.
+#magic-armour("COOKING POT HELM", 10, only: "Master Chef")[The Cooking Pot Helm confers a 6+ armour save. In addition, the wearer gains the Immunity (Killing Blow) special rule.]
 
-#namecost("WAR CLUB OF ELDER BANDO", "25 points")
+#magic-armour("PARRYING POT LID", 5, type: "Buckler")[The wielder may re-roll failed Parry saves.]
+]
 
-Great Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule.
+#magic-item-section("talisman")[
+#talisman("LUCKY'S COLLAR", 45)[The wearer gains a Magical Ward (2+). However, every time the wearer successfully passes his Ward save, one friendly model in base contact immediately suffers the Wound instead, with no saves of any kind allowed. If there are no eligible models to redirect the Wound onto, then this save may not be taken.]
 
-#entry("MAGIC ARMOUR")
-#namecost("THE WHEATSHIELD", "40 points")
+#talisman("RABBIT'S FOOT", 40)[The bearer can only be Hit on the roll of a 6 in close combat. This has no effect on Attacks that Hit automatically.]
 
-Shield. The Wheatshield confers the Regeneration (5+) special rule to its wielder. If the bearer is reduced to his final Wound, this is increased to Regeneration (3+) instead as long as he remains at 1 Wound.
+#talisman("AMULET OF HOKERY-POKERY", 35)[When an enemy spell has been cast, a model with this item can use it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that are Remains in Play. After it has been used, roll a D6. On a 4+, you may use the item again as described above.]
 
-#namecost("TRICKSTER'S ARMOUR", "30 points")
+#talisman("ESMERALDA'S LOCKET", 30)[This item may be used when attempting to dispel an enemy spell. The first time it is used, you may add +3 Dispel dice to the dispel roll. The second time you may add +2 dice. The third time you may add +1 dice. After it has been used three times during the battle, the item has run out of power and has no further effect.]
 
-Light armour. Whenever an enemy model rolls a natural 6 To Hit or To Wound against the wearer of this armour, the Hit/Wound is ignored.
+#talisman("RING OF INVISIBILITY", 25, one-use: true)[The wearer may use this item at the start of any of their turns. Once they do so, they cannot be directly targeted by any kind of attack until the start of their next turn. However, no friendly unit may use their Leadership during this time.]
 
-#namecost("THE OAKGNARL", "25 points")
+#talisman("BLACK PEPPER SPRAY", 20)[All enemy models in base contact with the bearer of the black pepper spray must re-roll all successful rolls to Hit in the first round of close combat.]
 
-Medium armour. The Oakgnarl confers +1 Toughness upon the wearer. However, the wearer also becomes Flammable.
+#talisman("SAM'S SPELLPOUCH", 10)[Whenever an enemy spell is cast at the bearer or any unit they are with, roll a D6. On a 6, the spell is automatically dispelled.]
 
-#namecost("TRAILBLAZER'S HAUBERK", "20 points")
+#talisman("DRAGONBANE GEM", 5)[The bearer gains the Immunity (Flaming Attacks) special rule.]
 
-Model on foot only. Medium armour. The wearer of this armour gains the Scouts and Strider special rule.
+#talisman("LUCKY CHARM", 5, one-use: true, common: true)[The Halfling player may reroll any dice roll directly affecting the bearer of the Lucky Charm.]
 
-#namecost("LARGO'S LEATHER JERKIN", "20 points")
+#talisman("PIDGEON PLUCKER PENDANT", 5)[This item grants the bearer a Magical Ward (4+) against Wounds caused in close combat by models that have the Fly special rule.]
+]
 
-Light armour. All enemy attacks targeting the wearer must re-roll successful rolls To Wound.
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("WIZARDING HAT", 50)[The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore from any of the Winds of Magic from the _Warhammer Rulebook_ at the start of the game. However, they also have the Stupidity special rule. Note that they may not choose any Arcane Items.]
 
-#namecost("COOKING POT HELM", "10 points")
+#enchanted-item("OLORIN THE GREY'S KNICKKNACK", 45, bound: true)[This item contains both _The Enfeebling Foe_ and _The Withering_ spells from the Lore of Shadows. However, you may only attempt to cast one of these spells once per Magic phase.]
 
-Master Chef only. The Cooking Pot Helm confers a 6+ armour save. In addition, the wearer gains the Immunity (Killing Blow) special rule.
-
-#namecost("PARRYING POT LID", "5 points")
-
-Buckler. The wielder may re-roll failed Parry saves.
-
-#entry("TALISMANS")
-#namecost("LUCKY'S COLLAR", "45 points")
-
-The wearer gains a Magical Ward (2+). However, every time the wearer successfully passes his Ward save, one friendly model in base contact immediately suffers the Wound instead, with no saves of any kind allowed. If there are no eligible models to redirect the Wound onto, then this save may not be taken.
-
-#namecost("RABBIT'S FOOT", "40 points")
-
-The bearer can only be Hit on the roll of a 6 in close combat. This has no effect on Attacks that Hit automatically.
-
-#namecost("AMULET OF HOKERY-POKERY", "35 points")
-
-When an enemy spell has been cast, a model with this item can use it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that are Remains in Play. After it has been used, roll a D6. On a 4+, you may use the item again as described above.
-
-#namecost("ESMERALDA'S LOCKET", "30 points")
-
-This item may be used when attempting to dispel an enemy spell. The first time it is used, you may add +3 Dispel dice to the dispel roll. The second time you may add +2 dice. The third time you may add +1 dice. After it has been used three times during the battle, the item has run out of power and has no further effect.
-
-#namecost("RING OF INVISIBILITY", "25 points")
-
-One use only. The wearer may use this item at the start of any of their turns. Once they do so, they cannot be directly targeted by any kind of attack until the start of their next turn. However, no friendly unit may use their Leadership during this time.
-
-#namecost("BLACK PEPPER SPRAY", "20 points")
-
-All enemy models in base contact with the bearer of the black pepper spray must re-roll all successful rolls to Hit in the first round of close combat.
-
-#namecost("SAM'S SPELLPOUCH", "10 points")
-
-Whenever an enemy spell is cast at the bearer or any unit they are with, roll a D6. On a 6, the spell is automatically dispelled.
-
-#namecost("DRAGONBANE GEM", "5 points")
-
-The bearer gains the Immunity (Flaming Attacks) special rule.
-
-#namecost("LUCKY CHARM*", "5 points")
-
-One use only. The Halfling player may reroll any dice roll directly affecting the bearer of the Lucky Charm.
-
-#namecost("PIDGEON PLUCKER PENDANT", "5 points")
-
-This item grants the bearer a Magical Ward (4+) against Wounds caused in close combat by models that have the Fly special rule.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("WIZARDING HAT", "50 points")
-
-The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore from any of the Winds of Magic from the _Warhammer Rulebook_ at the start of the game. However, they also have the Stupidity special rule. Note that they may not choose any Arcane Items.
-
-#namecost("OLORIN THE GREY'S KNICKKNACK", "45 points")
-
-Bound spell. This item contains both _The Enfeebling Foe_ and _The Withering_ spells from the Lore of Shadows. However, you may only attempt to cast one of these spells once per Magic phase.
-
-#namecost("TERRANCE CHUBBLY'S", "")
-#namecost("ENCHANTED ARROWS", "40 points")
-
-At the start of the game, roll a D6 and consult the table below to see what effect the Magic Arrows have on any shortbows carried by the bearer and any unit they are with the remainder of the game:
+#enchanted-item("TERRANCE CHUBBLY'S ENCHANTED ARROWS", 40)[At the start of the game, roll a D6 and consult the table below to see what effect the Magic Arrows have on any shortbows carried by the bearer and any unit they are with the remainder of the game:
 
 #chart((("D6", "Result"), ("1", "All shots gain the Armour Piercing (1)
 special rule."), ("2", "Any enemy unit suffering 1 or more
@@ -214,9 +151,9 @@ casualties must take a Panic test."), ("3", "The unit ignores all Shooting Modif
 are not caused by magic items or spells."), ("4", "The unit may fire Multiple Shots even if they
 have marched this turn."), ("5", "All shots gain the Poisoned Attacks special
 rule."), ("6", "You may choose any one of the results above.")))
-#namecost("THE BEEFUP BAUBLE", "35 points")
+]
 
-The bearer may use this item at the start of each round of close combat they are involved in. Roll a D6 and consult the chart below to see what effect it has:
+#enchanted-item("THE BEEFUP BAUBLE", 35)[The bearer may use this item at the start of each round of close combat they are involved in. Roll a D6 and consult the chart below to see what effect it has:
 
 #chart((("D6", "Result"), ("1", "The bearer immediately suffers a wound,
 with no saves of any kind allowed."), ("2-3", "No effect."), ("4", "The bearer gains +1 Weapon Skill, Initiative
@@ -226,92 +163,55 @@ Breath Weapon attack with the Ignores
 Armour Saves special rule and then loses any
 statistics bonuses previously gained from this
 item.")))
-#namecost("CLOAK OF ILLUSION", "35 points")
-
-Bound spell (Level 1, cast on 5+). This is an *augment* spell that targets the wearer and any unit they are with. All enemy missile attacks must re-roll successful rolls to Hit against this unit until the start of your next Magic phase.
-
-#namecost("DARCIE'S MAGICAL THINGIMABOB", "35 points")
-
-Bound Spell. The Thingimabob contains the Signature spell from one of the eight Winds of Magic in the _Warhammer Rulebook_. Roll a D6 at the start of the game and consult the table below to see which:
-
-#chart((("D6", "Result"), ("1", "Your opponent chooses the Lore of Magic."), ("2-5", "Randomly determine the Lore of Magic."), ("6", "You may choose the Lore of Magic.")))
-#namecost("THE EMERALD LODE", "35 points")
-
-Bound Spell (Level 2, cast on 6+). This is a *hex* spell with a range of 24". The target unit cannot use of any kind of invulnerable save until the start of your next Magic phase.
-
-#namecost("JADE SICKLE", "35 points")
-
-Bound spell. This item contains the Regrowth spell from the Lore of Life.
-
-#namecost("FOUR-LEAF CLOVER", "30 points")
-
-The wearer may re-roll 1's To Hit and To Wound in close combat and with missile attacks.
-
-#namecost("ENCHANTED HONING STEEL", "25 points")
-
-Master Chef only. The bearer and any unit they are with gains the Armour Piercing (1) special rule.
-
-#namecost("COCKERELL SCROLL", "20 points")
-
-One use only. Bound Spell (Level 1, cast on 5+). This is a *hex* spell with a range of 24" that targets a single character, even if within a unit. Until the start of your next Magic phase, the target has all their characteristics reduced to 1 and may not channel, cast spells, use any equipment, magic items or special rules they might have.
-
-#namecost("DIMMINU'S LOCKPICK", "20 points")
-
-Master Thief only. The bearer may roll 2D6 on the Light-fingered chart and choose the highest result.
-
-#namecost("OUTLANDISH UNIFORM", "20 points")
-
-The model gains the Inspiring Presence (6) special rule. However, they may never refuse a challenge.
-
-#namecost("EVERLASTING SCRUMPING BASKET", "10 points")
-
-The bearer may take an additional 50 points of Magic Items.
-
-#namecost("THE GLOVE OF SNEAKY PINCHING", "10 points")
-
-Master Thief only. If the wearer of this glove is fighting in a challenge, their opponent must take an Initiative test at the start of each close combat phase. If failed, they may only use their hand weapon this round.
-
-#namecost("HORN OF RIBALD TOMFOOLERY", "10 points")
-
-One use only. This item may be used as a charge reaction by the bearer. When used, the bearer and any unit they are with gain the Feigned Flight (see Fast Cavalry/Skirmishers) and Immunity (Psychology) special rules for the duration of the turn.
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF THE MOOT", "55 points")
+#enchanted-item("CLOAK OF ILLUSION", 35, bound: (level: 1, cast: "5+"))[This is an *augment* spell that targets the wearer and any unit they are with. All enemy missile attacks must re-roll successful rolls to Hit against this unit until the start of your next Magic phase.]
 
-The unit carrying this standard and all friendly units within 12" have the Cold-blooded special rule when taking Break tests.
+#enchanted-item("DARCIE'S MAGICAL THINGIMABOB", 35, bound: true)[The Thingimabob contains the Signature spell from one of the eight Winds of Magic in the _Warhammer Rulebook_. Roll a D6 at the start of the game and consult the table below to see which:
 
-#namecost("SPELLBINDING STANDARD", "50 points")
+#chart((("D6", "Result"), ("1", "Your opponent chooses the Lore of Magic."), ("2-5", "Randomly determine the Lore of Magic."), ("6", "You may choose the Lore of Magic.")))
+]
 
-The unit carrying this standard generate +1 Dispel dice for every point of rank bonus they currently have.
+#enchanted-item("THE EMERALD LODE", 35, bound: (level: 2, cast: "6+"))[This is a *hex* spell with a range of 24". The target unit cannot use of any kind of invulnerable save until the start of your next Magic phase.]
 
-#namecost("HONEYCOMB BANNER", "45 points")
+#enchanted-item("JADE SICKLE", 35, bound: true)[This item contains the Regrowth spell from the Lore of Life.]
 
-The unit carrying this standard gains +1 Strength and the Frenzy special rule.
+#enchanted-item("FOUR-LEAF CLOVER", 30)[The wearer may re-roll 1's To Hit and To Wound in close combat and with missile attacks.]
 
-#namecost("THE BANNER OF THE JOLLY HALFLING", "25 points")
+#enchanted-item("ENCHANTED HONING STEEL", 25, only: "Master Chef")[The bearer and any unit they are with gains the Armour Piercing (1) special rule.]
 
-The unit carrying this standard gains +1 to its Toughness and the Stupidity special rule.
+#enchanted-item("COCKERELL SCROLL", 20, one-use: true)[Bound Spell (Level 1, cast on 5+). This is a *hex* spell with a range of 24" that targets a single character, even if within a unit. Until the start of your next Magic phase, the target has all their characteristics reduced to 1 and may not channel, cast spells, use any equipment, magic items or special rules they might have.]
 
-#namecost("MIDSUMMER POLE", "25 points")
+#enchanted-item("DIMMINU'S LOCKPICK", 20, only: "Master Thief")[The bearer may roll 2D6 on the Light-fingered chart and choose the highest result.]
 
-The unit carrying this standard gains the Regeneration (6+) special rule.
+#enchanted-item("OUTLANDISH UNIFORM", 20)[The model gains the Inspiring Presence (6) special rule. However, they may never refuse a challenge.]
 
-#namecost("PENNANT OF THE HOPPING HORSE", "15 points")
+#enchanted-item("EVERLASTING SCRUMPING BASKET", 10)[The bearer may take an additional 50 points of Magic Items.]
 
-Cavalry only. The unit carrying this standard may re- roll 1's for their Movement distance when charging and pursuing.
+#enchanted-item("THE GLOVE OF SNEAKY PINCHING", 10, only: "Master Thief")[If the wearer of this glove is fighting in a challenge, their opponent must take an Initiative test at the start of each close combat phase. If failed, they may only use their hand weapon this round.]
 
-#namecost("WASHING LINE", "15 points")
+#enchanted-item("HORN OF RIBALD TOMFOOLERY", 10, one-use: true)[This item may be used as a charge reaction by the bearer. When used, the bearer and any unit they are with gain the Feigned Flight (see Fast Cavalry/Skirmishers) and Immunity (Psychology) special rules for the duration of the turn.]
+]
 
-Housewives only. Roll a D6 at the start of every round of close combat after the first. On a 4+, all Housewives in the unit may re-roll failed To Hit rolls this round as well.
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF THE MOOT", 55)[The unit carrying this standard and all friendly units within 12" have the Cold-blooded special rule when taking Break tests.]
 
-#namecost("FLAMING PINWHEEL", "10 points")
+#magic-standard("SPELLBINDING STANDARD", 50)[The unit carrying this standard generate +1 Dispel dice for every point of rank bonus they currently have.]
 
-Both the unit carrying this standard and any units in base contact must re-roll successful rolls To Hit in the first round of close combat.
+#magic-standard("HONEYCOMB BANNER", 45)[The unit carrying this standard gains +1 Strength and the Frenzy special rule.]
 
-#namecost("SCARECROW BANNER", "5 points")
+#magic-standard("THE BANNER OF THE JOLLY HALFLING", 25)[The unit carrying this standard gains +1 to its Toughness and the Stupidity special rule.]
 
-The unit carrying this standard causes Terror in models with the Fly special rule.
+#magic-standard("MIDSUMMER POLE", 25)[The unit carrying this standard gains the Regeneration (6+) special rule.]
+
+#magic-standard("PENNANT OF THE HOPPING HORSE", 15, only: "Cavalry")[The unit carrying this standard may re- roll 1's for their Movement distance when charging and pursuing.]
+
+#magic-standard("WASHING LINE", 15, only: "Housewives")[Roll a D6 at the start of every round of close combat after the first. On a 4+, all Housewives in the unit may re-roll failed To Hit rolls this round as well.]
+
+#magic-standard("FLAMING PINWHEEL", 10)[Both the unit carrying this standard and any units in base contact must re-roll successful rolls To Hit in the first round of close combat.]
+
+#magic-standard("SCARECROW BANNER", 5)[The unit carrying this standard causes Terror in models with the Fly special rule.]
+]
 
 = CHARACTERS
 

@@ -533,265 +533,143 @@ Model on foot only. Enemy models targeting the character with missile attacks su
 
 The character gains +2 Initiative.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Beastmen. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Beastmen. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", columns: 2, first: true)[
+#magic-weapon("AXES OF KHORGOR", 40, type: "Two hand weapons")[The bearer may re-roll all failed rolls To Hit and To Wound in close combat. In addition, he gains the Armour Piercing (1) special rule.]
 
-#entry("MAGIC WEAPONS")
-#columns(2)[
-#namecost("AXES OF KHORGOR", "40 points")
+#magic-weapon("AXE OF MEN", 40)[The Axe of Men gives the wielder the Killing Blow special rule. In addition, if the bearer kills an enemy character in a challenge, they and any unit they are with gain the Stubborn and Terror special rule for as long as they remain with the unit.]
 
-Two hand weapons. The bearer may re-roll all failed rolls To Hit and To Wound in close combat. In addition, he gains the Armour Piercing (1) special rule.
+#magic-weapon("THE BLACK MAUL", 40)[The Black Maul adds +2 to the bearer's Strength and gives him the Frenzy special rule. In addition, the weapon ignores any rules that would otherwise destroy the weapon.]
 
-#namecost("AXE OF MEN", "40 points")
+#magic-weapon("SLAUGHTERER'S BLADE", 40, only: "Model on foot", type: "Great weapon")[For each wound inflicted with the Slaughterer's Blade, roll a D6 immediately. Each roll of a 4+ heals one lost Wound to the bearer (up to their starting Wounds total). Wounds regained in this way do not count towards combat resolution.]
 
-The Axe of Men gives the wielder the Killing Blow special rule. In addition, if the bearer kills an enemy character in a challenge, they and any unit they are with gain the Stubborn and Terror special rule for as long as they remain with the unit.
+#magic-weapon("HUNTING SPEAR", 35, type: "Spear")[The Hunting Spear can be thrown following the rules for javelins with a range of 24" each Shooting phase. Resolve each hit like a Hit from a bolt thrower.]
 
-#namecost("THE BLACK MAUL", "40 points")
+#magic-weapon("THE STEEL-CLAWS", 35, type: "Two hand weapons")[The Steel-Claws confer an extra D3 Attacks to the wielder rather than 1 (roll at the beginning of each round of close combat). If a natural 6 is rolled when determining the number of attacks, all the bearer's attacks that round gain the Ignores Armour Saves special rule.]
 
-The Black Maul adds +2 to the bearer's Strength and gives him the Frenzy special rule. In addition, the weapon ignores any rules that would otherwise destroy the weapon.
+#magic-weapon("THE BRASS CLEAVER", 30)[The Brass Cleaver gives the wielder +1 Attack for each enemy model in base contact. In a challenge, it only confers +1 Attack.]
 
-#namecost("SLAUGHTERER'S BLADE", "40 points")
+#magic-weapon("MANGELDER", 30)[The bearer gains the Terror special rule. In addition, any model wounded by this weapon loses 1 point of Leadership for each Wound it suffers.]
 
-Model on foot only. Great weapon. For each wound inflicted with the Slaughterer's Blade, roll a D6 immediately. Each roll of a 4+ heals one lost Wound to the bearer (up to their starting Wounds total). Wounds regained in this way do not count towards combat resolution.
+#magic-weapon("PRIMEVAL CLUB", 30)[When rolling To Wound, the owner's Strength is treated as equal to the unmodified Leadership value of the target model. This affects any armour saves the model might be required to take as well.]
 
-#namecost("HUNTING SPEAR", "35 points")
+#magic-weapon("GREAT FANG", 25)[The wielder of Great Fang gain +1 To Wound, and enemies must re-roll successful Armour saves.]
 
-Spear. The Hunting Spear can be thrown following the rules for javelins with a range of 24" each Shooting phase. Resolve each hit like a Hit from a bolt thrower.
+#magic-weapon("HERDSTONE AXE", 25)[If the wielder of this weapon successfully Wounds an enemy model, roll a D6 after resolving all their attacks. On a 5+, that model is automatically slain with no saves allowed.]
 
-#namecost("THE STEEL-CLAWS", "35 points")
+#magic-weapon("STONECRUSHER MACE", 25, type: "Great weapon")[The Mace always wounds on a 2+. Armour saves are taken using the wielder's normal Strength. Against Buildings, Chariots, Shrines and War Machines, the wielder has the Multiple Wounds (D6) special rule.]
 
-Two hand weapons. The Steel-Claws confer an extra D3 Attacks to the wielder rather than 1 (roll at the beginning of each round of close combat). If a natural 6 is rolled when determining the number of attacks, all the bearer's attacks that round gain the Ignores Armour Saves special rule.
+#magic-weapon("VOLCANIC AXE", 20)[The wielder of this weapon gains the Flaming Attacks special rule. In addition, each time you roll a natural 6 To Hit with this weapon, that attack automatically Wounds with the Multiple Wounds (D3) special rule.]
 
-#namecost("THE BRASS CLEAVER", "30 points")
+#magic-weapon("AXE OF MORGHUR", 15)[No Magical Ward saves can be taken against Wounds caused by this weapon.]
 
-The Brass Cleaver gives the wielder +1 Attack for each enemy model in base contact. In a challenge, it only confers +1 Attack.
+#magic-weapon("EVERBLEED", 15)[Every time an enemy model suffers an unsaved wound from Everbleed, roll a D6. On the result of a 4+, the enemy loses an additional wound, with no saves of any kind allowed, and you must roll again. Keep on rolling as long as the result is a 4+.]
 
-#namecost("MANGELDER", "30 points")
+#magic-weapon("JAGGED DAGGER", 10, only: "Wizard")[Every enemy model killed in close combat by the bearer of the Jagged Dagger generates an additional Power or Dispel dice that can be used in the next Magic phase.]
 
-The bearer gains the Terror special rule. In addition, any model wounded by this weapon loses 1 point of Leadership for each Wound it suffers.
-
-#namecost("PRIMEVAL CLUB", "30 points")
-
-When rolling To Wound, the owner's Strength is treated as equal to the unmodified Leadership value of the target model. This affects any armour saves the model might be required to take as well.
-
-#namecost("GREAT FANG", "25 points")
-
-The wielder of Great Fang gain +1 To Wound, and enemies must re-roll successful Armour saves.
-
-#namecost("HERDSTONE AXE", "25 points")
-
-If the wielder of this weapon successfully Wounds an enemy model, roll a D6 after resolving all their attacks. On a 5+, that model is automatically slain with no saves allowed.
-
-#namecost("STONECRUSHER MACE", "25 points")
-
-Great weapon. The Mace always wounds on a 2+. Armour saves are taken using the wielder's normal Strength. Against Buildings, Chariots, Shrines and War Machines, the wielder has the Multiple Wounds (D6) special rule.
-
-#namecost("VOLCANIC AXE", "20 points")
-
-The wielder of this weapon gains the Flaming Attacks special rule. In addition, each time you roll a natural 6 To Hit with this weapon, that attack automatically Wounds with the Multiple Wounds (D3) special rule.
-
-#namecost("AXE OF MORGHUR", "15 points")
-
-No Magical Ward saves can be taken against Wounds caused by this weapon.
-
-#namecost("EVERBLEED", "15 points")
-
-Every time an enemy model suffers an unsaved wound from Everbleed, roll a D6. On the result of a 4+, the enemy loses an additional wound, with no saves of any kind allowed, and you must roll again. Keep on rolling as long as the result is a 4+.
-
-#namecost("JAGGED DAGGER", "10 points")
-
-Wizard only. Every enemy model killed in close combat by the bearer of the Jagged Dagger generates an additional Power or Dispel dice that can be used in the next Magic phase.
-
-#namecost("SCIMITAR OF SKULTAR", "5 points")
-
-All To Wound rolls of 6 with the Scimitar of Skultar have the Ignores Armour Saves special rule.
+#magic-weapon("SCIMITAR OF SKULTAR", 5)[All To Wound rolls of 6 with the Scimitar of Skultar have the Ignores Armour Saves special rule.]
 ]
 
-#entry("MAGIC ARMOUR")
-#namecost("TROLLHIDE ARMOUR", "35 points")
+#magic-item-section("armour")[
+#magic-armour("TROLLHIDE ARMOUR", 35, type: "Light armour")[Trollhide Armour gives the wearer the Regeneration (4+) special rule.]
 
-Light armour. Trollhide Armour gives the wearer the Regeneration (4+) special rule.
+#magic-armour("SLITHERWRACK HELM", 30)[6+ armour save. All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule in the first round of Close Combat.]
 
-#namecost("SLITHERWRACK HELM", "30 points")
+#magic-armour("RAMHORN HELM", 15)[6+ armour save. For every armour save the wearer passes, the bearer may immediately make a bonus attack at his basic Strength.]
 
-6+ armour save. All enemy units in base contact with the bearer are subject to the Always Strikes Last special rule in the first round of Close Combat.
+#magic-armour("BLACKENED PLATE", 15, type: "Medium armour")[The wearer of the Blackened Plate gains the Immunity (Flaming Attacks) special rule. Any unit he joins gains a Magical Ward (4+) against non- physical Flaming Attacks.]
 
-#namecost("RAMHORN HELM", "15 points")
+#magic-armour("BLADE-BLUNTER ARMOUR", 15, type: "Medium armour")[At the end of each round of close combat, roll a D6 for each magic weapon that Hit the wearer of the armour. On the result of a 2+, the enemy item loses its special rules and ceases to count as a magic weapon. Instead it will count as a normal weapon of its type for the remainder of the battle.]
+]
 
-6+ armour save. For every armour save the wearer passes, the bearer may immediately make a bonus attack at his basic Strength.
+#magic-item-section("talisman")[
+#talisman("BLACKENED TALISMAN OF CHAOS", 50)[Whenever an enemy spell is casting within 12" of the bearer of this item, deduct the highest roll from the result.]
 
-#namecost("BLACKENED PLATE", "15 points")
+#talisman("THE FESTERPELT", 40)[At the start of each turn, the bearer of this item automatically restores 1 Wound suffered earlier during game.]
 
-Medium armour. The wearer of the Blackened Plate gains the Immunity (Flaming Attacks) special rule. Any unit he joins gains a Magical Ward (4+) against non- physical Flaming Attacks.
+#talisman("FUR OF SHARRGU", 35)[This Fur gives the wearer the Magical Ward (5+). In addition, they gain the Natural Armour (6+) special rule against missile attacks.]
 
-#namecost("BLADE-BLUNTER ARMOUR", "15 points")
+#talisman("PELT OF THE SHADOWGAVE", 30)[All shooting attacks directed at the bearer or the unit he is with suffer \-1 To Hit. Enemy spells that target the bearer or the unit he is with suffer \-2 to cast.]
 
-Medium armour. At the end of each round of close combat, roll a D6 for each magic weapon that Hit the wearer of the armour. On the result of a 2+, the enemy item loses its special rules and ceases to count as a magic weapon. Instead it will count as a normal weapon of its type for the remainder of the battle.
+#talisman("RUINOUS ICON", 30)[Each time an enemy spell is cast on the bearer of this item or their unit, roll a D6. On a 4+, the spell is automatically dispelled.]
 
-#entry("TALISMANS")
-#namecost("BLACKENED TALISMAN OF CHAOS", "50 points")
+#talisman("EYE OF NIGHT", 25)[The Eye of Night gives the bearer and any unit they join the Magic Resistance (2) special rule. In addition, if an enemy Wizard within 24" suffers a Miscast, you may force them to re-roll the result on the Miscast table.]
 
-Whenever an enemy spell is casting within 12" of the bearer of this item, deduct the highest roll from the result.
+#talisman("GLYPH-ETCHED TALISMAN", 20)[The bearer of this item channels dispel dice in the same manner as a Level 2 Wizard. This has no effect on a model that already is a Wizard.]
 
-#namecost("THE FESTERPELT", "40 points")
+#talisman("PELT OF THE DARK YOUNG", 10)[The Pelt of the Dark Young gives the wearer the Magic Resistance (1) and Natural Armour (6+) special rules.]
+]
 
-At the start of each turn, the bearer of this item automatically restores 1 Wound suffered earlier during game.
+#magic-item-section("arcane")[
+#arcane-item("SHARD OF THE HERD STONE", 50, type: "Charm", one-use: true)[This item may be used at the start of any of your Magic phases. When used, place a Herdstone (see Mystical Monuments in the _Warhammer Rulebook_), no more than 3" in diameter, within 6" of the Wizard. Beastmen units within 6" of a Herdstone have the Armour Piercing (1) special rule. Each friendly Beastman Wizard within 12" of the herdstone generates an additional power dice.]
 
-#namecost("FUR OF SHARRGU", "35 points")
+#arcane-item("SKULL OF RARKOS", 40, type: "Relic")[All friendly Beastman Wizards within 12" (including the bearer himself) gain a +1 casting bonus.]
 
-This Fur gives the wearer the Magical Ward (5+). In addition, they gain the Natural Armour (6+) special rule against missile attacks.
+#arcane-item("CHALICE OF DARK RAIN", 35, type: "Charm", one-use: true)[At the beginning of the enemy Shooting phase, the bearer can summon a storm of mud and worms with which to blind his enemies. For the rest of the phase, all enemy missile units are at \-1 To Hit. Weapons or attacks that do not use Ballistic Skill may only fire on the roll of a 4+.]
 
-#namecost("PELT OF THE SHADOWGAVE", "30 points")
+#arcane-item("STAFF OF DARKOTH", 35, type: "Staff", bound: true)[The Staff of Darkoth contains the _Viletide_ spell from the Lore of the Wild.]
 
-All shooting attacks directed at the bearer or the unit he is with suffer \-1 To Hit. Enemy spells that target the bearer or the unit he is with suffer \-2 to cast.
+#arcane-item("BLEATING GNARLSTAFF", 25, type: "Staff")[At the start of each of your Magic phases, pick one terrain feature within 18" of the bearer. Any enemy unit within 6" of that terrain feature suffer D6 Strength 4 Hits.]
 
-#namecost("RUINOUS ICON", "30 points")
+#arcane-item("DAEMON HEART", 25, type: "Charm", one-use: true)[This item may be used when attempting to dispel. It automatically gives you a number of dispel dice equal to the amount of power dice used to cast the spell.]
 
-Each time an enemy spell is cast on the bearer of this item or their unit, roll a D6. On a 4+, the spell is automatically dispelled.
+#arcane-item("THE PLAGUE CHALICE", 20, type: "Relic")[Mark of Nurgle only. The Shaman may drink from the Plague Chalice at the start of his Magic phase. He suffers an immediate Strength 4 hit that ignores all saves. For the remainder of that Magic phase, any spell casting attempt by the Shaman that includes any double (except 1's) on the initial roll gives the caster another free power dice to the casting attempt.]
 
-#namecost("EYE OF NIGHT", "25 points")
+#arcane-item("HAGTREE FETISH", 20, type: "Relic")[Choose an enemy unit within 24" at the start of each Magic phase. Any failed To Wound rolls made during the Magic phase against that unit may be re- rolled.]
+]
 
-The Eye of Night gives the bearer and any unit they join the Magic Resistance (2) special rule. In addition, if an enemy Wizard within 24" suffers a Miscast, you may force them to re-roll the result on the Miscast table.
+#magic-item-section("enchanted")[
+#enchanted-item("TANGLEHORN FAMILIARS", 40, one-use: true)[This can be used at the start of any enemy Magic phase. Pick one Wizard within 18", that Wizard cannot cast any spells this turn.]
 
-#namecost("GLYPH-ETCHED TALISMAN", "20 points")
+#enchanted-item("HORN OF THE FIRST BEAST", 35, only: "Beastlords and Wargors")[All friendly units within 12" of the bearer of the Horn of the Great Beast may re-roll failed Primal Fury tests.]
 
-The bearer of this item channels dispel dice in the same manner as a Level 2 Wizard. This has no effect on a model that already is a Wizard.
+#enchanted-item("HORN OF THE GREAT HUNT", 35, bound: (power: 4))[The Horn of the Great Hunt contains the _Bestial Surge_ spell from the Lore of the Wild.]
 
-#namecost("PELT OF THE DARK YOUNG", "10 points")
+#enchanted-item("CORNUCOPIA OF CORPULENCE", 30)[All enemy models in base contact with the bearer must pass a Toughness test at the start of each round of close combat or suffer one Wound which Ignores Armour Saves.]
 
-The Pelt of the Dark Young gives the wearer the Magic Resistance (1) and Natural Armour (6+) special rules.
+#enchanted-item("THE DARK HEART", 30)[The character and any unit led by him adds +D3" to their charge move. Roll after declaring charges – if the charge is failed, the models move their normal failed charge distance.]
 
-#entry("ARCANE ITEMS")
-#namecost("SHARD OF THE HERD STONE", "50 points")
+#enchanted-item("STONE OF SPITE", 25, one-use: true)[Bound spell (Power Level 5). Every Arcane Item within 18" is immediately destroyed (friend and foe), and each bearer of an Arcane Item suffers D6 Strength 4 hits per item lost.]
 
-Charm. One use only. This item may be used at the start of any of your Magic phases. When used, place a Herdstone (see Mystical Monuments in the _Warhammer Rulebook_), no more than 3" in diameter, within 6" of the Wizard. Beastmen units within 6" of a Herdstone have the Armour Piercing (1) special rule. Each friendly Beastman Wizard within 12" of the herdstone generates an additional power dice.
+#enchanted-item("THE GORETOOTH", 25)[The Goretooth gives the bearer the Hatred and Bloodgreed special rules.]
 
-#namecost("SKULL OF RARKOS", "40 points")
+#enchanted-item("BRAYBLAST TRUMPET", 20, one-use: true)[This item may be used at the start of the Remaining Moves sub-phase on your second turn. When used, all friendly units with the Ambushers special rule gain a +1 bonus when rolling to see if they enter the battlefield that turn.]
 
-Relic. All friendly Beastman Wizards within 12" (including the bearer himself) gain a +1 casting bonus.
+#enchanted-item("CHAMPION'S DOOMCLOAK", 15)[The bearer of this item may re-roll failed Primal Fury tests.]
 
-#namecost("CHALICE OF DARK RAIN", "35 points")
+#enchanted-item("SKIN OF MAN", 15, only: "Infantry")[The bearer of the Skin of Man gains the Scouts special rule.]
 
-Charm. One use only. At the beginning of the enemy Shooting phase, the bearer can summon a storm of mud and worms with which to blind his enemies. For the rest of the phase, all enemy missile units are at \-1 To Hit. Weapons or attacks that do not use Ballistic Skill may only fire on the roll of a 4+.
+#enchanted-item("BLOODHUNT HORN", 10, one-use: true)[Once per battle, the bearer can force a fleeing enemy unit within 12" to automatically fail their Rally test. This must be declared before the test is made.]
 
-#namecost("STAFF OF DARKOTH", "35 points")
+#enchanted-item("CACOPHONOUS DIRGE", 10)[Enemy musicians within 12" of the bearer of the Cacophonous Dirge have no effect.]
 
-Staff. Bound spell. The Staff of Darkoth contains the _Viletide_ spell from the Lore of the Wild.
+#enchanted-item("GILDED HORNS", 10, only: "Model on foot")[The bearer of this item gains the Impact Hits (D3) special rule.]
 
-#namecost("BLEATING GNARLSTAFF", "25 points")
+#enchanted-item("THE KNOWING EYE", 10)[At the start of each of your turns, the bearer of this item may choose one enemy unit within Line of Sight. That unit must reveal any Hidden models, upgrades and magic items it might have.]
+]
 
-Staff. At the start of each of your Magic phases, pick one terrain feature within 18" of the bearer. Any enemy unit within 6" of that terrain feature suffer D6 Strength 4 Hits.
+#magic-item-section("standard")[
+#magic-standard("THE BEAST BANNER", 60)[The unit carrying this standard gain a +1 bonus to their Strength.]
 
-#namecost("DAEMON HEART", "25 points")
+#magic-standard("THE FLESH BANNER", 35)[At the start of each close combat phase, all enemy units in base contact with the unit carrying this standard suffers D6 Strength 4 hits, distributed as Hits from shooting. Any wounds caused by the Flesh Banner counts towards combat resolution.]
 
-Charm. One use only. This item may be used when attempting to dispel. It automatically gives you a number of dispel dice equal to the amount of power dice used to cast the spell.
+#magic-standard("VITRIOLIC TOTEM", 25)[The unit carrying this standard gains the Poisoned Attacks special rule.]
 
-#namecost("THE PLAGUE CHALICE", "20 points")
+#magic-standard("MANBANE STANDARD", 25)[All enemy units within 6" of the unit carrying this standard suffer \-1 to their Leadership characteristic.]
 
-Relic. Mark of Nurgle only. The Shaman may drink from the Plague Chalice at the start of his Magic phase. He suffers an immediate Strength 4 hit that ignores all saves. For the remainder of that Magic phase, any spell casting attempt by the Shaman that includes any double (except 1's) on the initial roll gives the caster another free power dice to the casting attempt.
+#magic-standard("BANNER OF OUTRAGE", 25)[The unit carrying this standard automatically pass all Primal Fury and counts as having rolled doubles for it. However, all enemy units gain the Hatred special rule against the unit.]
 
-#namecost("HAGTREE FETISH", "20 points")
+#magic-standard("TOTEM OF WRATH", 25)[In any turn that they charge, the unit carrying this standard gains the Armour Piercing (1) special rule and may re-roll 1's To Wound.]
 
-Relic. Choose an enemy unit within 24" at the start of each Magic phase. Any failed To Wound rolls made during the Magic phase against that unit may be re- rolled.
+#magic-standard("BANNER OF THE WARPED MOON", 20)[The unit carrying this standard may take a Leadership test at the start of any of your Movement phases. If the test is passed, no units within 24" may use the Fly special rule until the start of your next turn.]
 
-#entry("ENCHANTED ITEMS")
-#namecost("TANGLEHORN FAMILIARS", "40 points")
+#magic-standard("THE GORE BANNER", 20)[The unit carrying this standard may re-roll failed Psychology tests.]
 
-One use only. This can be used at the start of any enemy Magic phase. Pick one Wizard within 18", that Wizard cannot cast any spells this turn.
+#magic-standard("TOTEM OF RUST", 15)[All units (friend or foe) in base contact with the unit carrying this standard treat their armour save as 1 point worse than it actually is. The Totem of Rust has no effect on Natural Armour.]
 
-#namecost("HORN OF THE FIRST BEAST", "35 points")
-
-Beastlords and Wargors only. All friendly units within 12" of the bearer of the Horn of the Great Beast may re-roll failed Primal Fury tests.
-
-#namecost("HORN OF THE GREAT HUNT", "35 points")
-
-Bound Spell (Power Level 4). The Horn of the Great Hunt contains the _Bestial Surge_ spell from the Lore of the Wild.
-
-#namecost("CORNUCOPIA OF CORPULENCE", "30 points")
-
-All enemy models in base contact with the bearer must pass a Toughness test at the start of each round of close combat or suffer one Wound which Ignores Armour Saves.
-
-#namecost("THE DARK HEART", "30 points")
-
-The character and any unit led by him adds +D3" to their charge move. Roll after declaring charges – if the charge is failed, the models move their normal failed charge distance.
-
-#namecost("STONE OF SPITE", "25 points")
-
-One use only. Bound spell (Power Level 5). Every Arcane Item within 18" is immediately destroyed (friend and foe), and each bearer of an Arcane Item suffers D6 Strength 4 hits per item lost.
-
-#namecost("THE GORETOOTH", "25 points")
-
-The Goretooth gives the bearer the Hatred and Bloodgreed special rules.
-
-#namecost("BRAYBLAST TRUMPET", "20 points")
-
-One use only. This item may be used at the start of the Remaining Moves sub-phase on your second turn. When used, all friendly units with the Ambushers special rule gain a +1 bonus when rolling to see if they enter the battlefield that turn.
-
-#namecost("CHAMPION'S DOOMCLOAK", "15 points")
-
-The bearer of this item may re-roll failed Primal Fury tests.
-
-#namecost("SKIN OF MAN", "15 points")
-
-Infantry only. The bearer of the Skin of Man gains the Scouts special rule.
-
-#namecost("BLOODHUNT HORN", "10 points")
-
-One Use Only. Once per battle, the bearer can force a fleeing enemy unit within 12" to automatically fail their Rally test. This must be declared before the test is made.
-
-#namecost("CACOPHONOUS DIRGE", "10 points")
-
-Enemy musicians within 12" of the bearer of the Cacophonous Dirge have no effect.
-
-#namecost("GILDED HORNS", "10 points")
-
-Model on foot only. The bearer of this item gains the Impact Hits (D3) special rule.
-
-#namecost("THE KNOWING EYE", "10 points")
-
-At the start of each of your turns, the bearer of this item may choose one enemy unit within Line of Sight. That unit must reveal any Hidden models, upgrades and magic items it might have.
-
-#entry("MAGIC STANDARDS")
-#namecost("THE BEAST BANNER", "60 points")
-
-The unit carrying this standard gain a +1 bonus to their Strength.
-
-#namecost("THE FLESH BANNER", "35 points")
-
-At the start of each close combat phase, all enemy units in base contact with the unit carrying this standard suffers D6 Strength 4 hits, distributed as Hits from shooting. Any wounds caused by the Flesh Banner counts towards combat resolution.
-
-#namecost("VITRIOLIC TOTEM", "25 points")
-
-The unit carrying this standard gains the Poisoned Attacks special rule.
-
-#namecost("MANBANE STANDARD", "25 points")
-
-All enemy units within 6" of the unit carrying this standard suffer \-1 to their Leadership characteristic.
-
-#namecost("BANNER OF OUTRAGE", "25 points")
-
-The unit carrying this standard automatically pass all Primal Fury and counts as having rolled doubles for it. However, all enemy units gain the Hatred special rule against the unit.
-
-#namecost("TOTEM OF WRATH", "25 points")
-
-In any turn that they charge, the unit carrying this standard gains the Armour Piercing (1) special rule and may re-roll 1's To Wound.
-
-#namecost("BANNER OF THE WARPED MOON", "20 points")
-
-The unit carrying this standard may take a Leadership test at the start of any of your Movement phases. If the test is passed, no units within 24" may use the Fly special rule until the start of your next turn.
-
-#namecost("THE GORE BANNER", "20 points")
-
-The unit carrying this standard may re-roll failed Psychology tests.
-
-#namecost("TOTEM OF RUST", "15 points")
-
-All units (friend or foe) in base contact with the unit carrying this standard treat their armour save as 1 point worse than it actually is. The Totem of Rust has no effect on Natural Armour.
-
-#namecost("PREYSEEKER", "10 points")
-
-The unit carrying this standard automatically enters the battlefield when using the Ambushers special rule (no roll is needed).
+#magic-standard("PREYSEEKER", 10)[The unit carrying this standard automatically enters the battlefield when using the Ambushers special rule (no roll is needed).]
+]
 
 = CHARACTERS
 

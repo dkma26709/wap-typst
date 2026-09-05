@@ -612,183 +612,100 @@ Wizard only. Once per turn, the character may choose to add +D3 to his casting r
 The character re-rolls Ward save results of 1.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("CHAOS DAEMONSWORD", 50)[The wielder of this weapon adds D3 to their Strength and has an extra D3 Attacks, to a maximum of 10 (roll separately for these values at the start of each round). However, every To Wound roll of a 1 made by this character in close combat is resolved against themselves.]
 
-#entry("MAGIC WEAPONS")
-#namecost("CHAOS DAEMONSWORD", "50 points")
+#magic-weapon("RENDING SWORD", 45)[The wielder of this weapon may re-roll failed To Wound rolls and have the Multiple Wounds (D3) special rule.]
 
-The wielder of this weapon adds D3 to their Strength and has an extra D3 Attacks, to a maximum of 10 (roll separately for these values at the start of each round). However, every To Wound roll of a 1 made by this character in close combat is resolved against themselves.
+#magic-weapon("VAMPIRIC AXE", 40, type: "Great weapon")[For each unsaved Wound the wielder inflicts with this weapon, they regain one Wound lost earlier during the game.]
 
-#namecost("RENDING SWORD", "45 points")
+#magic-weapon("HELLFIRE SWORD", 35)[The wielder of this weapon have the Flaming Attacks and Ignores Armour Saves special rules. After all close combat blows have been struck, roll a D6 for every foe slain by the Hellfire Sword – on the roll of a 6, the slain foe’s body explodes, inflicting an additional D6 Strength 4 hits on the enemy unit with the Flaming Attacks special rule. Unsaved Wounds inflicted in this way count towards the combat result. At the end of each of the wielder’s turns, roll a D6; on the roll of a 1, they suffer one Wound with the Ignores Armour Saves special rule.]
 
-The wielder of this weapon may re-roll failed To Wound rolls and have the Multiple Wounds (D3) special rule.
+#magic-weapon("OBSIDIAN DREAD-GLAIVE", 25, type: "Polearm")[The wielder of this weapon gains the Killing Blow special rule.]
 
-#namecost("VAMPIRIC AXE", "40 points")
+#magic-weapon("TASKMASTER'S SCOURGE", 25, only: "Infantry", type: "Additional hand weapon")[If the wielder of this weapon joins a unit, that unit may re-roll failed charge and pursuit rolls.]
 
-Great weapon. For each unsaved Wound the wielder inflicts with this weapon, they regain one Wound lost earlier during the game.
+#magic-weapon("AETHERSWORD", 20)[The Aethersword gives the wielder the Ignores Armour Saves special rule. In addition, no Parry saves from shields may be taken against it either.]
 
-#namecost("HELLFIRE SWORD", "35 points")
+#magic-weapon("DAGGER OF THE DARK PANTHEON", 20, only: "Wizard")[For each unsaved Wound the wielder causes in close combat, they gain +1 Power Dice or Dispel in the next Magic phase.]
 
-The wielder of this weapon have the Flaming Attacks and Ignores Armour Saves special rules. After all close combat blows have been struck, roll a D6 for every foe slain by the Hellfire Sword – on the roll of a 6, the slain foe’s body explodes, inflicting an additional D6 Strength 4 hits on the enemy unit with the Flaming Attacks special rule. Unsaved Wounds inflicted in this way count towards the combat result. At the end of each of the wielder’s turns, roll a D6; on the roll of a 1, they suffer one Wound with the Ignores Armour Saves special rule.
+#magic-weapon("THE FATHER OF BLADES", 20)[All To Hit rolls of 1 directed against the wielder of this weapon in close combat instead hit the attacking model.]
 
-#namecost("OBSIDIAN DREAD-GLAIVE", "25 points")
+#magic-weapon("DOOMBRINGER BLADE", 20)[After deployment is complete, choose one enemy Character or Monster. All friendly units gain +1 To Wound in close combat against the chosen model.]
 
-Polearm. The wielder of this weapon gains the Killing Blow special rule.
+#magic-weapon("SOUL CLEAVER", 5)[Any model that suffers an unsaved Wound from this weapon must pass a Toughness test or suffer an additional wound with no saves allowed. This additional wound does not cause an additional Toughness test.]
+]
 
-#namecost("TASKMASTER'S SCOURGE", "25 points")
+#magic-item-section("armour")[
+#magic-armour("VOID ARMOUR", 70, only: "Model on foot", type: "Heavy armour")[The wearer gains the Ethereal special rule. However, they may take no other Magic Items.]
 
-Infantry only. Additional hand weapon. If the wielder of this weapon joins a unit, that unit may re-roll failed charge and pursuit rolls.
+#magic-armour("ARMOUR OF MORRSLIEB", 55, type: "Heavy armour")[The Armour of Morrslieb gives the wearer a 4+ invulnerable save against non-Magical Attacks.]
 
-#namecost("AETHERSWORD", "20 points")
+#magic-armour("ARMOUR OF THE DAMNED", 45, type: "Heavy armour")[Enemy models must re-roll successful To Hit rolls in close combat against the wearer of this armour.]
 
-The Aethersword gives the wielder the Ignores Armour Saves special rule. In addition, no Parry saves from shields may be taken against it either.
+#magic-armour("BRONZE ARMOUR OF ZHRAKK", 45, type: "Heavy armour")[The Bronze Armour of Zhrakk gives the wearer the Unbreakable special rule. However, no other model may use the model's Leadership.]
 
-#namecost("DAGGER OF THE DARK PANTHEON", "20 points")
+#magic-armour("IDOLATROUS PLACKART", 45, type: "Heavy armour")[The wearer of this armour have a Magical Ward (5+).]
 
-Wizard only. For each unsaved Wound the wielder causes in close combat, they gain +1 Power Dice or Dispel in the next Magic phase.
+#magic-armour("NULL PLATE", 45, type: "Heavy armour")[All close combat and missile attacks targeting the wearer of this armour suffer \-1 To Hit.]
 
-#namecost("THE FATHER OF BLADES", "20 points")
+#magic-armour("SKINHIDDEN PLATE", 45, type: "Heavy armour")[The Skinhidden Plate gives the wearer the Natural Armour (5+) special rule.]
 
-All To Hit rolls of 1 directed against the wielder of this weapon in close combat instead hit the attacking model.
+#magic-armour("CRIMSON ARMOUR OF DARGAN", 40, type: "Heavy armour")[The wearer of the Crimson Armour of Dargan gains the Immunity (Killing Blow/Multiple Wounds) special rule against close combat attacks and a Magical Ward (6+).]
 
-#namecost("DOOMBRINGER BLADE", "20 points")
+#magic-armour("ARMOUR OF TORTURED SOULS", 35, type: "Heavy armour")[The Armour of Tortured Souls gives the wearer +1 Toughness against non-Magical Attacks.]
 
-After deployment is complete, choose one enemy Character or Monster. All friendly units gain +1 To Wound in close combat against the chosen model.
+#magic-armour("HELM OF THE OPPRESSOR", 35)[This item gives the wearer a 6+ armour save. All enemy units in base contact the wearer of this helmet must roll an additional D6 when taking Leadership tests and discard the lowest result.]
 
-#namecost("SOUL CLEAVER", "5 points")
+#magic-armour("WEIRD PLATE", 30, type: "Heavy armour")[All models attempting to strike the wearer of this armour suffer \-1 Attack (to a minimum of 1).]
 
-Any model that suffers an unsaved Wound from this weapon must pass a Toughness test or suffer an additional wound with no saves allowed. This additional wound does not cause an additional Toughness test.
+#magic-armour("DESECRATOR GAUNTLETS", 20)[This item gives the wearer a 6+ armour save. All enemy Wizards within 12" of the wearer of these gauntlets suffer a \-2 casting penalty. In addition, the wearer gains +1 To Wound against Wizards in close combat.]
 
-#entry("MAGIC ARMOUR")
-#namecost("VOID ARMOUR", "70 points")
+#magic-armour("HELM OF MANY EYES", 20)[This item gives the wearer a 6+ armour save. The wearer gains the Always Strikes First and Stupidity special rules.]
 
-Model on foot only. Heavy armour. The wearer gains the Ethereal special rule. However, they may take no other Magic Items.
+#magic-armour("FUSED ARMOUR", 25, type: "Heavy armour")[The wearer of this armour automatically passes all Characteristic tests (except Leadership tests).]
 
-#namecost("ARMOUR OF MORRSLIEB", "55 points")
+#magic-armour("HELM OF ELDRITCH COMMAND", 10, only: "Wizard")[This item gives the wearer a 6+ armour save. Whenever the wearer successfully dispels an enemy spell (except *summoning* spells), they may attempt to cast that spell themselves (limited by their Wizard level as normal) in their next Magic phase.]
 
-Heavy armour. The Armour of Morrslieb gives the wearer a 4+ invulnerable save against non-Magical Attacks.
+#magic-armour("SHIELD OF TEETH", 5, type: "Shield")[If the bearer of this shield makes a successful Parry save, they immediately get to make an additional Attack.]
 
-#namecost("ARMOUR OF THE DAMNED", "45 points")
+#magic-armour("DAEMON-FORGED BARDING", 5, type: "Barding")[The bearer's mount gains the Devastating Charge special rule.]
+]
 
-Heavy armour. Enemy models must re-roll successful To Hit rolls in close combat against the wearer of this armour.
+#magic-item-section("talisman")[
+#talisman("CROWN OF EVERLASTING CONQUEST", 50)[The wearer of the Crown of Everlasting Conquest gains the Inspiring Presence (6) and Regeneration (4+) special rules.]
 
-#namecost("BRONZE ARMOUR OF ZHRAKK", "45 points")
+#talisman("GAZE OF THE GODS", 25)[The Gaze of the Gods gives the wearer a Magical Ward (4+). However, if the model flees for any reason, the model is turned into a Chaos Spawn with the same number of wounds remaining as the character had, after working out the Flee move. If you do not have a Spawn model to replace the character then he simply counts as slain. For Victory Points purposes, the character is not counted as slain or below half Wounds unless the Spawn he has turned into is slain or is below half Wounds.]
+]
 
-Heavy armour. The Bronze Armour of Zhrakk gives the wearer the Unbreakable special rule. However, no other model may use the model's Leadership.
+#magic-item-section("arcane")[
+#arcane-item("THE BOOK OF SECRETS", 40)[The Book of Secrets allows the Wizard to choose an additional spell from each of the Lores of Fire, Shadow and Death, following the normal rules for choosing spells. This does not give them any additional access to any Signature spells. In addition, they get +1 to channel power dice, but do not channel any dispel dice. If the bearer ever miscasts, roll 2D6 on the Miscast table and choose the highest result.]
 
-#namecost("IDOLATROUS PLACKART", "45 points")
+#arcane-item("INFERNAL PUPPET", 35)[Whenever any Wizard on the battlefield miscasts while casting a spell, the bearer of the Infernal Puppet may choose to modify any rolls on the Miscast table made by that Wizard by up to D3 each time.]
 
-Heavy armour. The wearer of this armour have a Magical Ward (5+).
+#arcane-item("ROD OF THE DAMNED", 35, bound: true)[This item contains _The Summoning_ spell from the Lore of Chaos.]
 
-#namecost("NULL PLATE", "45 points")
+#arcane-item("SCEPTRE OF POWER", 30)[The bearer gains a +1 casting and dispelling bonus. However, if they roll any natural double when casting or dispelling, they suffer a Strength 3 Hit which Ignores Armour Saves after the effects of the roll have been resolved.]
 
-Heavy armour. All close combat and missile attacks targeting the wearer of this armour suffer \-1 To Hit.
+#arcane-item("TOME OF THE DARK GODS", 20)[This item may not be taken by a model with a Mark of Chaos. The bearer of this item may choose their spells from a combination of the Lore of Chaos, Nurgle, Slaanesh and Tzeentch.]
 
-#namecost("SKINHIDDEN PLATE", "45 points")
+#arcane-item("GRIMOIRE OF OGVOLD", 15)[The bearer of this item gains the Loremaster special rule. However, they may only attempt to cast a number of spells equal to their Wizard Level each Magic phase.]
+]
 
-Heavy armour. The Skinhidden Plate gives the wearer the Natural Armour (5+) special rule.
+#magic-item-section("enchanted")[
+#enchanted-item("BLASPHEMOUS AMULET", 35)[At the start of every close combat phase, all enemy models in base contact with the bearer of the Blasphemous Amulet must pass a Toughness test or suffer one Wound which Ignores Armour Saves. This has no effect against Animated Constructs.]
 
-#namecost("CRIMSON ARMOUR OF DARGAN", "40 points")
+#enchanted-item("FAITHLESS CHARM", 30)[The Faithless Charm gives the bearer the Always Strike First and Killing Blow special rules. However, if they fail any Leadership test, they lose Always Strike First and gain Frenzy and Always Strikes Last instead. The bearer cannot lose their Frenzy.]
 
-Heavy armour. The wearer of the Crimson Armour of Dargan gains the Immunity (Killing Blow/Multiple Wounds) special rule against close combat attacks and a Magical Ward (6+).
+#enchanted-item("MARK OF THE ALL-FAVOURED", 25)[At the start of each of your turns, the bearer of this item can choose one Mark of Chaos, whose effects lasts until the start of your next turn. This has no effect on a model that already has a Mark of Chaos.]
 
-#namecost("ARMOUR OF TORTURED SOULS", "35 points")
+#enchanted-item("REALMWARPER'S TWIST-RUNE", 20)[At the start of any of your turns, choose one terrain feature within 12" of the bearer. All enemy models within 1" of that terrain feature must take a Dangerous Terrain test, which fails on a 1\-2.]
 
-Heavy armour. The Armour of Tortured Souls gives the wearer +1 Toughness against non-Magical Attacks.
+#enchanted-item("STAR OF CHAOS", 15)[The bearer of this item may re-roll one failed To Hit, To Wound, armour or invulnerable save roll in each phase.]
 
-#namecost("HELM OF THE OPPRESSOR", "35 points")
-
-This item gives the wearer a 6+ armour save. All enemy units in base contact the wearer of this helmet must roll an additional D6 when taking Leadership tests and discard the lowest result.
-
-#namecost("WEIRD PLATE", "30 points")
-
-Heavy armour. All models attempting to strike the wearer of this armour suffer \-1 Attack (to a minimum of 1).
-
-#namecost("DESECRATOR GAUNTLETS", "20 points")
-
-This item gives the wearer a 6+ armour save. All enemy Wizards within 12" of the wearer of these gauntlets suffer a \-2 casting penalty. In addition, the wearer gains +1 To Wound against Wizards in close combat.
-
-#namecost("HELM OF MANY EYES", "20 points")
-
-This item gives the wearer a 6+ armour save. The wearer gains the Always Strikes First and Stupidity special rules.
-
-#namecost("FUSED ARMOUR", "25 points")
-
-Heavy armour. The wearer of this armour automatically passes all Characteristic tests (except Leadership tests).
-
-#namecost("HELM OF ELDRITCH COMMAND", "10 points")
-
-Wizard only. This item gives the wearer a 6+ armour save. Whenever the wearer successfully dispels an enemy spell (except *summoning* spells), they may attempt to cast that spell themselves (limited by their Wizard level as normal) in their next Magic phase.
-
-#namecost("SHIELD OF TEETH", "5 points")
-
-Shield. If the bearer of this shield makes a successful Parry save, they immediately get to make an additional Attack.
-
-#namecost("DAEMON-FORGED BARDING", "5 points")
-
-Barding. The bearer's mount gains the Devastating Charge special rule.
-
-#entry("TALISMANS")
-#namecost("CROWN OF EVERLASTING", "")
-#namecost("CONQUEST", "50 points")
-
-The wearer of the Crown of Everlasting Conquest gains the Inspiring Presence (6) and Regeneration (4+) special rules.
-
-#namecost("GAZE OF THE GODS", "25 points")
-
-The Gaze of the Gods gives the wearer a Magical Ward (4+). However, if the model flees for any reason, the model is turned into a Chaos Spawn with the same number of wounds remaining as the character had, after working out the Flee move. If you do not have a Spawn model to replace the character then he simply counts as slain. For Victory Points purposes, the character is not counted as slain or below half Wounds unless the Spawn he has turned into is slain or is below half Wounds.
-
-#entry("ARCANE ITEMS")
-#namecost("THE BOOK OF SECRETS", "40 points")
-
-The Book of Secrets allows the Wizard to choose an additional spell from each of the Lores of Fire, Shadow and Death, following the normal rules for choosing spells. This does not give them any additional access to any Signature spells. In addition, they get +1 to channel power dice, but do not channel any dispel dice. If the bearer ever miscasts, roll 2D6 on the Miscast table and choose the highest result.
-
-#namecost("INFERNAL PUPPET", "35 points")
-
-Whenever any Wizard on the battlefield miscasts while casting a spell, the bearer of the Infernal Puppet may choose to modify any rolls on the Miscast table made by that Wizard by up to D3 each time.
-
-#namecost("ROD OF THE DAMNED", "35 points")
-
-Bound spell. This item contains _The Summoning_ spell from the Lore of Chaos.
-
-#namecost("SCEPTRE OF POWER", "30 points")
-
-The bearer gains a +1 casting and dispelling bonus. However, if they roll any natural double when casting or dispelling, they suffer a Strength 3 Hit which Ignores Armour Saves after the effects of the roll have been resolved.
-
-#namecost("TOME OF THE DARK GODS", "20 points")
-
-This item may not be taken by a model with a Mark of Chaos. The bearer of this item may choose their spells from a combination of the Lore of Chaos, Nurgle, Slaanesh and Tzeentch.
-
-#namecost("GRIMOIRE OF OGVOLD", "15 points")
-
-The bearer of this item gains the Loremaster special rule. However, they may only attempt to cast a number of spells equal to their Wizard Level each Magic phase.
-
-#entry("ENCHANTED ITEMS")
-#namecost("BLASPHEMOUS AMULET", "35 points")
-
-At the start of every close combat phase, all enemy models in base contact with the bearer of the Blasphemous Amulet must pass a Toughness test or suffer one Wound which Ignores Armour Saves. This has no effect against Animated Constructs.
-
-#namecost("FAITHLESS CHARM", "30 points")
-
-The Faithless Charm gives the bearer the Always Strike First and Killing Blow special rules. However, if they fail any Leadership test, they lose Always Strike First and gain Frenzy and Always Strikes Last instead. The bearer cannot lose their Frenzy.
-
-#namecost("MARK OF THE ALL-FAVOURED", "25 points")
-
-At the start of each of your turns, the bearer of this item can choose one Mark of Chaos, whose effects lasts until the start of your next turn. This has no effect on a model that already has a Mark of Chaos.
-
-#namecost("REALMWARPER'S TWIST-RUNE", "20 points")
-
-At the start of any of your turns, choose one terrain feature within 12" of the bearer. All enemy models within 1" of that terrain feature must take a Dangerous Terrain test, which fails on a 1\-2.
-
-#namecost("STAR OF CHAOS", "15 points")
-
-The bearer of this item may re-roll one failed To Hit, To Wound, armour or invulnerable save roll in each phase.
-
-#namecost("CHALICE OF CHAOS", "10 points")
-
-One use only. The bearer of the Chalice of Chaos may drink from it at the start of any phase. If they choose to do so, roll a D6 and consult the table below.
+#enchanted-item("CHALICE OF CHAOS", 10, one-use: true)[The bearer of the Chalice of Chaos may drink from it at the start of any phase. If they choose to do so, roll a D6 and consult the table below.
 
 #chart((("D6", "Result:"), ("1", "Unworthy Fool: The character immediately
 suffers a Wound, with no saves of any kind
@@ -803,347 +720,214 @@ failed armour and invulnerable saves until the
 end of the turn."), ("6", "Divine Greatness: The character gains the
 Magical Ward (4+) and Stubborn special rules
 until the end of the turn.")))
-#namecost("PENDANT OF DAMNATION", "10 points")
+]
 
-Infantry or Cavalry only. The bearer of this item gains +1 Attack for every Wound they suffer during the game. If their lost Wounds are restored, this bonus is lost.
+#enchanted-item("PENDANT OF DAMNATION", 10, only: "Infantry or Cavalry")[The bearer of this item gains +1 Attack for every Wound they suffer during the game. If their lost Wounds are restored, this bonus is lost.]
 
-#namecost("FAVOUR OF THE GODS", "5 points")
+#enchanted-item("FAVOUR OF THE GODS", 5)[The bearer gains a +1 bonus when rolling on the Eye of the Gods table.]
+]
 
-The bearer gains a +1 bonus when rolling on the Eye of the Gods table.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF THE GODS", 55)[The bearer of the Banner of the Gods causes Terror, and any unit joined by them gains the Unbreakable special rule.]
 
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF THE GODS", "55 points")
+#magic-standard("BANNER OF THE DEMAGOGUE", 40)[All friendly units within 12" of this standard gain +1 Leadership.]
 
-The bearer of the Banner of the Gods causes Terror, and any unit joined by them gains the Unbreakable special rule.
+#magic-standard("DOOM TOTEM", 40)[All enemy units with Line of Sight to the Doom Totem suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).]
 
-#namecost("BANNER OF THE DEMAGOGUE", "40 points")
+#magic-standard("BLASPHEMOUS ICON", 30)[Enemy units in base contact with this standard must roll an additional dice when taking Leadership tests and discard the lowest result.]
 
-All friendly units within 12" of this standard gain +1 Leadership.
+#magic-standard("BANNER OF WRATH", 25, bound: (level: 2, cast: "7+"))[The Banner of Wrath contains a *magic missile* with a range of 24". If cast, it causes D6 Strength 4 hits with the Lightning Attacks special rule.]
 
-#namecost("DOOM TOTEM", "40 points")
+#magic-standard("ICON OF DARKNESS", 25)[All enemy missile fire targeting the unit carrying this standard suffer \-1 To Hit.]
+]
 
-All enemy units with Line of Sight to the Doom Totem suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).
+#magic-item-chapter(title: "KHORNE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Khorne. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Khorne or Mark of Khorne special rules.])
 
-#namecost("BLASPHEMOUS ICON", "30 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("BANE SPEAR", 30, type: "Spear/light lance")[This weapon gives +1 Strength for each enemy model in base contact with the wielder.]
 
-Enemy units in base contact with this standard must roll an additional dice when taking Leadership tests and discard the lowest result.
+#magic-weapon("BERSERKER SWORD", 30, only: "Model on foot")[The Berserker Sword gives the wielder +1 Attack for every enemy model in base contact. In a challenge, it only confers +1 Attack.]
 
-#namecost("BANNER OF WRATH", "25 points")
+#magic-weapon("BLADE OF ENDLESS BLOODSHED", 30)[Whenever the wielder of this weapon causes an unsaved Wound, they may make an additional Attack (up to a maximum of +3). These attacks can generate additional Attacks.]
 
-Bound Spell (Level 2, cast on 7+). The Banner of Wrath contains a *magic missile* with a range of 24". If cast, it causes D6 Strength 4 hits with the Lightning Attacks special rule.
+#magic-weapon("AXE OF KHORNE", 25)[This axe confers +1 Strength and the Killing Blow special rule upon the bearer.]
 
-#namecost("ICON OF DARKNESS", "25 points")
+#magic-weapon("GORECLEAVER", 20)[The wielder of this weapon gains the Armour Piercing (1) and Multiple Wounds (2) special rules.]
 
-All enemy missile fire targeting the unit carrying this standard suffer \-1 To Hit.
+#magic-weapon("BLADE OF BLOOD", 15)[For every unsaved Wound caused by the Blade of Blood, the wielder may take a Strength test. If passed, the wielder regains 1 Wound previously lost during the game. However, if the test is failed, the wielder loses 1 Wound with no saves allowed instead.]
+]
 
-= KHORNE MAGIC ITEMS
+#magic-item-section("armour")[
+#magic-armour("SPELLEATER SHIELD", 30, type: "Shield")[The Spelleater Shield gives the bearer the Magic Resistance (2) special rule. In addition, roll a D6 each time a spell is cast at the bearer of the Spelleater Shield and is dispelled. On the roll of a 4+, the spell is destroyed and the enemy Wizard may not cast it for the rest of the battle.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Khorne. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Khorne or Mark of Khorne special rules.*
+#magic-armour("THE BLOOD-FORGED ARMOUR", 30, type: "Heavy armour")[The wearer of this item cannot have their armour reduced below 4+.]
 
-#entry("MAGIC WEAPONS")
-#namecost("BANE SPEAR", "30 points")
+#magic-armour("THE SKULL-HELM OF KHORNE", 25)[This item gives the wearer a 6+ armour save. All enemy units within 6" of the wearer must re-roll successful Break tests.]
+]
 
-Spear/light lance. This weapon gives +1 Strength for each enemy model in base contact with the wielder.
+#magic-item-section("talisman")[
+#talisman("BLOODSKULL PENDANT", 20)[Instead of making his normal attacks for that round, the bearer of the Bloodskull Pendant may choose to inflict an automatic Strength 8 Hit with the Killing Blow special rule on every enemy model in base contact.]
 
-#namecost("BERSERKER SWORD", "30 points")
+#talisman("THE BRAZEN RUNE", 15)[The wearer of this item gains a 2+ invulnerable save against spells.]
+]
 
-Model on foot only. The Berserker Sword gives the wielder +1 Attack for every enemy model in base contact. In a challenge, it only confers +1 Attack.
+#magic-item-section("enchanted")[
+#enchanted-item("MARK OF THE DESTROYER", 50)[The wielder doubles their number of Attacks (to a maximum of 10). However, if the wearer fails to kill at least one model each close combat phase in which they are part of, they are automatically turned into a Spawn of Khorne at the end of that close combat phase. Remove the model as a casualty, and place a Spawn of Chaos model within 1" of their last position. This Spawn is under your control for the rest of the game, and is not worth any additional Victory Points. If no Spawn model can be placed, the model is only removed as a casualty.]
 
-#namecost("BLADE OF ENDLESS BLOODSHED", "30 points")
+#enchanted-item("BLOOD RUNE", 25)[All wounds caused in close combat by the bearer of this item counts as double for the purpose of combat resolution, up to a maximum of +3.]
 
-Whenever the wielder of this weapon causes an unsaved Wound, they may make an additional Attack (up to a maximum of +3). These attacks can generate additional Attacks.
+#enchanted-item("TALISMAN OF BURNING BLOOD", 15)[The wearer of this item and any unit they are with gains the Vanguard special rule.]
 
-#namecost("AXE OF KHORNE", "25 points")
+#enchanted-item("THE BLACK TONGUE", 10, one-use: true)[The Black Tongue can be used whenever an enemy Wizard fails to cast a spell. When used, the spell counts as having been Miscast. The model bearing the Black Tongue then suffers a wound with no saves allowed.]
+]
 
-This axe confers +1 Strength and the Killing Blow special rule upon the bearer.
+#magic-item-section("standard")[
+#magic-standard("BANNER OF BLOOD", 25)[The unit carrying this standard may re-roll failed charge distances.]
 
-#namecost("GORECLEAVER", "20 points")
+#magic-standard("BANNER OF RAGE", 25)[The unit carrying the Banner of Rage can never lose their Frenzy. In addition, it may re-roll failed Break Tests.]
+]
 
-The wielder of this weapon gains the Armour Piercing (1) and Multiple Wounds (2) special rules.
+#magic-item-chapter(title: "NURGLE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Nurgle. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Nurgle or Mark of Nurgle special rules.])
 
-#namecost("BLADE OF BLOOD", "15 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("RUSTFANG", 30)[Any enemy unit in base contact with the wielder of this weapon suffer a \-1 penalty to their armour saves.]
 
-For every unsaved Wound caused by the Blade of Blood, the wielder may take a Strength test. If passed, the wielder regains 1 Wound previously lost during the game. However, if the test is failed, the wielder loses 1 Wound with no saves allowed instead.
+#magic-weapon("FILTH MACE", 20)[Close combat attacks made with the Filth Mace have the Poisoned Attacks special rule. Once the wielder has killed an enemy model in close combat, they immediately gain the Terror special rule and, from the start of the next Close Combat phase (friend or foe), all subsequent Attacks made with the Filth Mace have the Multiple Wounds (D3) special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("SPELLEATER SHIELD", "30 points")
+#magic-weapon("GLAIVE OF PUTREFACTION", 15, type: "Polearm")[Every unsaved Wound caused by the Glaive of Putrefaction against Characters, Monstrous Creatures or Monsters makes the victim suffer \-1 to their Strength and Toughness for the remainder of the game.]
+]
 
-Shield. The Spelleater Shield gives the bearer the Magic Resistance (2) special rule. In addition, roll a D6 each time a spell is cast at the bearer of the Spelleater Shield and is dispelled. On the roll of a 4+, the spell is destroyed and the enemy Wizard may not cast it for the rest of the battle.
-
-#namecost("THE BLOOD-FORGED ARMOUR", "30 points")
-
-Heavy armour. The wearer of this item cannot have their armour reduced below 4+.
-
-#namecost("THE SKULL-HELM OF KHORNE", "25 points")
-
-This item gives the wearer a 6+ armour save. All enemy units within 6" of the wearer must re-roll successful Break tests.
-
-#entry("TALISMANS")
-#namecost("BLOODSKULL PENDANT", "20 points")
-
-Instead of making his normal attacks for that round, the bearer of the Bloodskull Pendant may choose to inflict an automatic Strength 8 Hit with the Killing Blow special rule on every enemy model in base contact.
-
-#namecost("THE BRAZEN RUNE", "15 points")
-
-The wearer of this item gains a 2+ invulnerable save against spells.
-
-#entry("ENCHANTED ITEMS")
-#namecost("MARK OF THE DESTROYER", "50 points")
-
-The wielder doubles their number of Attacks (to a maximum of 10). However, if the wearer fails to kill at least one model each close combat phase in which they are part of, they are automatically turned into a Spawn of Khorne at the end of that close combat phase. Remove the model as a casualty, and place a Spawn of Chaos model within 1" of their last position. This Spawn is under your control for the rest of the game, and is not worth any additional Victory Points. If no Spawn model can be placed, the model is only removed as a casualty.
-
-#namecost("BLOOD RUNE", "25 points")
-
-All wounds caused in close combat by the bearer of this item counts as double for the purpose of combat resolution, up to a maximum of +3.
-
-#namecost("TALISMAN OF BURNING BLOOD", "15 points")
-
-The wearer of this item and any unit they are with gains the Vanguard special rule.
-
-#namecost("THE BLACK TONGUE", "10 points")
-
-One use only. The Black Tongue can be used whenever an enemy Wizard fails to cast a spell. When used, the spell counts as having been Miscast. The model bearing the Black Tongue then suffers a wound with no saves allowed.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF BLOOD", "25 points")
-
-The unit carrying this standard may re-roll failed charge distances.
-
-#namecost("BANNER OF RAGE", "25 points")
-
-The unit carrying the Banner of Rage can never lose their Frenzy. In addition, it may re-roll failed Break Tests.
-
-= NURGLE MAGIC ITEMS
-
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Nurgle. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Nurgle or Mark of Nurgle special rules.*
-
-#entry("MAGIC WEAPONS")
-#namecost("RUSTFANG", "30 points")
-
-Any enemy unit in base contact with the wielder of this weapon suffer a \-1 penalty to their armour saves.
-
-#namecost("FILTH MACE", "20 points")
-
-Close combat attacks made with the Filth Mace have the Poisoned Attacks special rule. Once the wielder has killed an enemy model in close combat, they immediately gain the Terror special rule and, from the start of the next Close Combat phase (friend or foe), all subsequent Attacks made with the Filth Mace have the Multiple Wounds (D3) special rule.
-
-#namecost("GLAIVE OF PUTREFACTION", "15 points")
-
-Polearm. Every unsaved Wound caused by the Glaive of Putrefaction against Characters, Monstrous Creatures or Monsters makes the victim suffer \-1 to their Strength and Toughness for the remainder of the game.
-
-#entry("MAGIC ARMOUR")
-
+#magic-item-section("armour")[
 #runin[SUBLUCUS]' #runin[STENCHPLATE 40 points] Heavy armour. At the start of each round of close combat, all enemy models in base contact with the bearer must pass a Toughness test or suffer a Wound which Ignores Armour Saves.
 
-#namecost("THE SPLITHORN HELM", "35 points")
+#magic-armour("THE SPLITHORN HELM", 35)[This item gives the wearer a 6+ armour save. Enemy models suffer \-1 To Wound against this wearer in close combat and with missile attacks.]
 
-This item gives the wearer a 6+ armour save. Enemy models suffer \-1 To Wound against this wearer in close combat and with missile attacks.
+#magic-armour("THE SHIELD OF GROWTHS", 10, type: "Shield")[The bearer of this shield may re-roll failed armour saves if the Strength of the attack is equal to or higher than the bearer's modified armour save (for example, if the bearer is Hit by a Strength 4 Attack and their modified armour save is 4+).]
+]
 
-#namecost("THE SHIELD OF GROWTHS", "10 points")
+#magic-item-section("talisman")[
+#talisman("SPORE CENSER", 25)[All missile attacks targeting the wearer or the unit they are with suffer \-1 To Hit.]
 
-Shield. The bearer of this shield may re-roll failed armour saves if the Strength of the attack is equal to or higher than the bearer's modified armour save (for example, if the bearer is Hit by a Strength 4 Attack and their modified armour save is 4+).
+#talisman("THE FOETID SHROUD", 20)[All close combat attacks targeting the wearer of this item suffer \-1 To Hit.]
+]
 
-#entry("TALISMANS")
-#namecost("SPORE CENSER", "25 points")
+#magic-item-section("arcane")[
+#arcane-item("ROD OF CORRUPTION", 35, bound: (level: 1, cast: "5+"))[The Rod of Corruption contains a *direct damage* spell with a range of 24". The target unit suffers D6 Strength 2 Hits with the Ignores Armour Saves special rule.]
+]
 
-All missile attacks targeting the wearer or the unit they are with suffer \-1 To Hit.
+#magic-item-section("enchanted")[
+#enchanted-item("FLESH PEALER", 30)[At the start of your Magic phase, all enemy units within 6" of the bearer of this item suffer D6 Strength 3 Hits which Ignores Armour saves.]
 
-#namecost("THE FOETID SHROUD", "20 points")
+#enchanted-item("THE BILEHEART", 15)[Every time the bearer of this item suffers an unsaved Wound, the model that struck the blow suffer a Strength 5 Hit which Ignores Armour Saves.]
 
-All close combat attacks targeting the wearer of this item suffer \-1 To Hit.
+#enchanted-item("THE EYE OF NURGLE", 15)[This item can be used at the start of any round of close combat. Roll 2D6, if the result is 7, then one model in base contact of your choosing suffers D3 Wounds which Ignores Armour Saves.]
 
-#entry("ARCANE ITEMS")
-#namecost("ROD OF CORRUPTION", "35 points")
+#enchanted-item("THE CARRION DIRGE", 15, one-use: true)[This item may be used at the start of any of your turns. Once used, all enemy units within 12" suffer \-2 to their Leadership for the duration of the turn.]
 
-Bound Spell (Level 1, cast on 5+). The Rod of Corruption contains a *direct damage* spell with a range of 24". The target unit suffers D6 Strength 2 Hits with the Ignores Armour Saves special rule.
+#enchanted-item("THE FECUND FLASK", 10, one-use: true)[This item can be used at the start of any of your turns. Roll a D6, on a 2+, the model immediately recovers all Wounds (ignoring any additional Wounds from mounts) up to their starting value. On the roll of a 1, the bearer gains the Stupidity special rule for the remainder of the game.]
+]
 
-#entry("ENCHANTED ITEMS")
-#namecost("FLESH PEALER", "30 points")
+#magic-item-section("standard")[
+#magic-standard("FESTERING SHROUD", 40)[All units in base contact with the unit carrying the Festering Shroud must re-roll successful rolls To Wound. This standard has no effect on models with the Mark of Nurgle or Animated Constructs.]
 
-At the start of your Magic phase, all enemy units within 6" of the bearer of this item suffer D6 Strength 3 Hits which Ignores Armour saves.
+#magic-standard("ERODING ICON", 25, only: "Mark of Nurgle")[All enemy units in base contact with this standard counts the armour save modifier from their Strength or Armour Piercing attacks as being 1 point worse than normal.]
+]
 
-#namecost("THE BILEHEART", "15 points")
+#magic-item-chapter(title: "SLAANESH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Slaanesh. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Slaanesh or Mark of Slaanesh special rules.])
 
-Every time the bearer of this item suffers an unsaved Wound, the model that struck the blow suffer a Strength 5 Hit which Ignores Armour Saves.
+#magic-item-section("weapon", first: true)[
+#magic-weapon("GILELLION'S SOULNETTER", 35)[This weapon gives the wielder +2 Attacks. In addition, all enemy units in base contact that fail their break test roll one D6 less than normal for their flee distance.]
 
-#namecost("THE EYE OF NURGLE", "15 points")
+#magic-weapon("SLAANESH'S BLADE", 35)[All attacks with this weapon have the Ignores Armour Saves special rule. In addition, the wielder gains the Parry (5+) special rule.]
 
-This item can be used at the start of any round of close combat. Roll 2D6, if the result is 7, then one model in base contact of your choosing suffers D3 Wounds which Ignores Armour Saves.
+#magic-weapon("WHIP OF PLEASURE", 30, only: "Mark of Slaanesh")[The Whip of Pleasure gives the wielder +1 Attack. In addition, the wielder gains the Always Strikes First special rule in the first round of close combat.]
 
-#namecost("THE CARRION DIRGE", "15 points")
+#magic-weapon("WHIP OF SUBVERSION", 25, only: "Mark of Slaanesh")[If an enemy Character, Monstrous Creature or Monster takes an unsaved wound from the Whip of Subversion and that model has not yet made its attacks for that round, then you may force it to allocate its attacks upon itself or other models from its own side.]
 
-One use only. This item may be used at the start of any of your turns. Once used, all enemy units within 12" suffer \-2 to their Leadership for the duration of the turn.
+#magic-weapon("BLADE OF ECSTASY", 20, only: "Mark of Slaanesh")[Each time the Blade of Ecstasy inflicts an unsaved wound on a model, that model must pass a Strength test or be removed from the game.]
 
-#namecost("THE FECUND FLASK", "10 points")
+#magic-weapon("BREATHTAKER", 10)[Each time an enemy Character, Monstrous Creature or Monster is Hit by this weapon, they suffer \-1 Attack for the duration of this round of close combat.]
+]
 
-One use only. This item can be used at the start of any of your turns. Roll a D6, on a 2+, the model immediately recovers all Wounds (ignoring any additional Wounds from mounts) up to their starting value. On the roll of a 1, the bearer gains the Stupidity special rule for the remainder of the game.
+#magic-item-section("talisman")[
+#talisman("JEWEL OF DENIAL", 30)[The bearer of this item gains a Magical Ward (5+). In addition, each time they make a successful Ward save in close combat, they gain +1 combat resolution bonus.]
 
-#entry("MAGIC STANDARDS")
-#namecost("FESTERING SHROUD", "40 points")
+#talisman("THE BEGUILING GEM", 20)[At the start of each round of close combat, all enemy models in base contact with the wielder must pass a Psychology test or lose 1 Attack.]
 
-All units in base contact with the unit carrying the Festering Shroud must re-roll successful rolls To Wound. This standard has no effect on models with the Mark of Nurgle or Animated Constructs.
+#talisman("CAMEO OF THE DARK PRINCE", 10)[The bearer of this item and any unit they are with gain the Cold-blooded special rule.]
+]
 
-#namecost("ERODING ICON", "25 points")
+#magic-item-section("arcane")[
+#arcane-item("SCEPTRE OF DOMINATION", 35, bound: true)[The Sceptre of Domination contains the _Pavane of Slaanesh_ spell from the Lore of Slaanesh.]
+]
 
-Mark of Nurgle only. All enemy units in base contact with this standard counts the armour save modifier from their Strength or Armour Piercing attacks as being 1 point worse than normal.
+#magic-item-section("enchanted")[
+#enchanted-item("BINDINGS OF SLAANESH", 25)[Enemies cannot refuse challenges issued by the wearer of the Bindings of Slaanesh. In addition, they are subject to the Always Strikes Last special rule in challenges (including mounts).]
 
-= SLAANESH MAGIC ITEMS
+#enchanted-item("RING OF SENSATION", 15)[The bearer of this item gains +1 Attack for every enemy spell that is successfully cast within 12". The effect lasts until the start of the enemy's next Magic phase.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Slaanesh. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Slaanesh or Mark of Slaanesh special rules.*
+#enchanted-item("THE ROD OF MISRULE", 10)[The bearer of this item gains the Inspiring Presence (6) and Stupidity special rules.]
 
-#entry("MAGIC WEAPONS")
-#namecost("GILELLION'S SOULNETTER", "35 points")
+#enchanted-item("THE CROWN OF DARK SECRETS", 10)[After deployment, choose one enemy Character. The bearer of this item may re-roll failed To Hit rolls against that model for the duration of the game.]
 
-This weapon gives the wielder +2 Attacks. In addition, all enemy units in base contact that fail their break test roll one D6 less than normal for their flee distance.
+#enchanted-item("PENDANT OF SLAANESH", 5)[No other character may join the same unit as the bearer and he cannot join units that already contain a character. For each unsaved Wound the bearer suffers, he gains +1 Attack for the rest of the battle.]
+]
 
-#namecost("SLAANESH'S BLADE", "35 points")
+#magic-item-section("standard")[
+#magic-standard("BANNER OF SCREAMING FLESH", 30)[The unit carrying this standard gains the Devastating Charge special rule.]
 
-All attacks with this weapon have the Ignores Armour Saves special rule. In addition, the wielder gains the Parry (5+) special rule.
+#magic-standard("RAPTUROUS STANDARD", 25)[The unit carrying the Rapturous Standard gains the Unbreakable special rule.]
 
-#namecost("WHIP OF PLEASURE", "30 points")
+#magic-standard("ICON OF INFINITE EXCESS", 20)[The unit carrying this standard and any enemy unit in base contact with them gain +1 To Hit in close combat.]
+]
 
-Mark of Slaanesh only. The Whip of Pleasure gives the wielder +1 Attack. In addition, the wielder gains the Always Strikes First special rule in the first round of close combat.
+#magic-item-chapter(title: "TZEENTCH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Tzeentch. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Tzeentch or Mark of Tzeentch special rules.])
 
-#namecost("WHIP OF SUBVERSION", "25 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("SECRET-EATER", 25)[Each time the wielder of this weapon rolls a 6 To Hit, they may re-roll one failed To Hit, To Wound, armour or Ward save this round.]
 
-Mark of Slaanesh only. If an enemy Character, Monstrous Creature or Monster takes an unsaved wound from the Whip of Subversion and that model has not yet made its attacks for that round, then you may force it to allocate its attacks upon itself or other models from its own side.
+#magic-weapon("AMBITION'S END", 10)[This weapon has Multiple Wounds (D3) special rule against Characters. In addition, each time they cause an unsaved Wound against a Wizard, that model loses a Wizard level.]
 
-#namecost("BLADE OF ECSTASY", "20 points")
+#magic-weapon("WICKED SHARD", 10)[The wielder of this weapon can re-roll all failed rolls To Wound.]
+]
 
-Mark of Slaanesh only. Each time the Blade of Ecstasy inflicts an unsaved wound on a model, that model must pass a Strength test or be removed from the game.
+#magic-item-section("armour")[
+#magic-armour("PARADOXICAL SHIELD", 10, type: "Shield")[This shield gives the bearer the Parry (5+) special rule even while mount. However, the bearer must re-roll successful armour saves.]
+]
 
-#namecost("BREATHTAKER", "10 points")
+#magic-item-section("talisman")[
+#talisman("GOLDEN EYE OF TZEENTCH", 25)[The bearer gains a Magical Ward (3+) against all missile attacks.]
 
-Each time an enemy Character, Monstrous Creature or Monster is Hit by this weapon, they suffer \-1 Attack for the duration of this round of close combat.
+#talisman("CRYSTAL PENDANT", 25, only: "Infantry or Cavalry")[The bearer of this item may re-roll failed Ward saves.]
+]
 
-#entry("TALISMANS")
-#namecost("JEWEL OF DENIAL", "30 points")
+#magic-item-section("arcane")[
+#arcane-item("STAFF OF CHANGE", 65)[The bearer can re-roll any dice of their choice when casting or dispelling. However, if the bearer casts a spell with Ultimate Power using the staff's re-roll ability, the staff will cease working for the rest of the battle.]
 
-The bearer of this item gains a Magical Ward (5+). In addition, each time they make a successful Ward save in close combat, they gain +1 combat resolution bonus.
+#arcane-item("SOULDRAUGHT", 30, one-use: true)[This item may be used at the start of any Magic phase. For the duration of this Magic phase, roll an additional D6 when casting or dispelling spells and discard the lowest result.]
 
-#namecost("THE BEGUILING GEM", "20 points")
+#arcane-item("MIRROR OF KNOWLEDGE", 5)[The bearer can pick any enemy unit within 24" at the beginning of each of his Magic phases. The opponent must reveal all Magic Items and Hidden models in it.]
 
-At the start of each round of close combat, all enemy models in base contact with the wielder must pass a Psychology test or lose 1 Attack.
+#arcane-item("NEXUS STAFF", 10, only: "Wizard")[For each unsaved Wound caused by the wielder in close combat, they gain a +1 casting bonus in their next Magic phase.]
 
-#namecost("CAMEO OF THE DARK PRINCE", "10 points")
+#arcane-item("BLOOD OF TZEENTCH", 10)[The bearer of the Blood of Tzeentch may re-roll one casting dice per turn, provided it was not originally a roll of a 1.]
+]
 
-The bearer of this item and any unit they are with gain the Cold-blooded special rule.
+#magic-item-section("enchanted")[
+#enchanted-item("WARP MIRROR", 50)[All bonuses that are not from Magic Items, spells or mounts that occur in the first round of close combat (such as Charge Bonus, Mighty Blow, Devastating Charge, Impact Hits etc.) are swapped between the bearer of this item (and any unit they are with) and any enemy unit in base contact with the bearer.]
 
-#entry("ARCANE ITEMS")
-#namecost("SCEPTRE OF DOMINATION", "35 points")
+#enchanted-item("FRACTURED CLASP", 35)[All enemy units in base contact with the bearer of this item suffer \-1 to their Weapon Skill and Leadership.]
 
-Bound Spell. The Sceptre of Domination contains the _Pavane of Slaanesh_ spell from the Lore of Slaanesh.
+#enchanted-item("DAEMONHEART", 25, one-use: true)[This item may be used at the start of any round of close combat. Once used, the wielder gains +2 Strength and +2 Attacks. Roll a D6 after resolving all attacks; on the roll of 1, the bearer suffer a Wound which Ignores Armour Saves.]
 
-#entry("ENCHANTED ITEMS")
-#namecost("BINDINGS OF SLAANESH", "25 points")
+#enchanted-item("TIMESLIP PENDANT", 20, one-use: true)[This item may be used after the wearer has made all their normal close combat attacks. When used, they may fight an additional time.]
+]
 
-Enemies cannot refuse challenges issued by the wearer of the Bindings of Slaanesh. In addition, they are subject to the Always Strikes Last special rule in challenges (including mounts).
+#magic-item-section("standard")[
+#magic-standard("BLASTED STANDARD", 25)[Each time the unit carrying the Blasted Standard suffers a hit from a shooting attack, roll a D6 immediately before rolling To Wound. On the roll of 2+, the Strength of that hit is halved. However, if the result is a 1, the Strength of that hit is instead doubled. Attacks that do not roll To Wound, or that wound automatically, are not affected by the Blasted Standard.]
 
-#namecost("RING OF SENSATION", "15 points")
-
-The bearer of this item gains +1 Attack for every enemy spell that is successfully cast within 12". The effect lasts until the start of the enemy's next Magic phase.
-
-#namecost("THE ROD OF MISRULE", "10 points")
-
-The bearer of this item gains the Inspiring Presence (6) and Stupidity special rules.
-
-#namecost("THE CROWN OF DARK SECRETS", "10 points")
-
-After deployment, choose one enemy Character. The bearer of this item may re-roll failed To Hit rolls against that model for the duration of the game.
-
-#namecost("PENDANT OF SLAANESH", "5 points")
-
-No other character may join the same unit as the bearer and he cannot join units that already contain a character. For each unsaved Wound the bearer suffers, he gains +1 Attack for the rest of the battle.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF SCREAMING FLESH", "30 points")
-
-The unit carrying this standard gains the Devastating Charge special rule.
-
-#namecost("RAPTUROUS STANDARD", "25 points")
-
-The unit carrying the Rapturous Standard gains the Unbreakable special rule.
-
-#namecost("ICON OF INFINITE EXCESS", "20 points")
-
-The unit carrying this standard and any enemy unit in base contact with them gain +1 To Hit in close combat.
-
-= TZEENTCH MAGIC ITEMS
-
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Warriors of Tzeentch. These may be used in addition to the magic items found in the Warhammer rulebook. They may only be chosen by models with the Daemon of Tzeentch or Mark of Tzeentch special rules.*
-
-#entry("MAGIC WEAPONS")
-#namecost("SECRET-EATER", "25 points")
-
-Each time the wielder of this weapon rolls a 6 To Hit, they may re-roll one failed To Hit, To Wound, armour or Ward save this round.
-
-#namecost("AMBITION'S END", "10 points")
-
-This weapon has Multiple Wounds (D3) special rule against Characters. In addition, each time they cause an unsaved Wound against a Wizard, that model loses a Wizard level.
-
-#namecost("WICKED SHARD", "10 points")
-
-The wielder of this weapon can re-roll all failed rolls To Wound.
-
-#entry("MAGIC ARMOUR")
-#namecost("PARADOXICAL SHIELD", "10 points")
-
-Shield. This shield gives the bearer the Parry (5+) special rule even while mount. However, the bearer must re-roll successful armour saves.
-
-#entry("TALISMANS")
-#namecost("GOLDEN EYE OF TZEENTCH", "25 points")
-
-The bearer gains a Magical Ward (3+) against all missile attacks.
-
-#namecost("CRYSTAL PENDANT", "25 points")
-
-Infantry or Cavalry only. The bearer of this item may re-roll failed Ward saves.
-
-#entry("ARCANE ITEMS")
-#namecost("STAFF OF CHANGE", "65 points")
-
-The bearer can re-roll any dice of their choice when casting or dispelling. However, if the bearer casts a spell with Ultimate Power using the staff's re-roll ability, the staff will cease working for the rest of the battle.
-
-#namecost("SOULDRAUGHT", "30 points")
-
-One use only. This item may be used at the start of any Magic phase. For the duration of this Magic phase, roll an additional D6 when casting or dispelling spells and discard the lowest result.
-
-#namecost("MIRROR OF KNOWLEDGE", "5 points")
-
-The bearer can pick any enemy unit within 24" at the beginning of each of his Magic phases. The opponent must reveal all Magic Items and Hidden models in it.
-
-#namecost("NEXUS STAFF", "10 points")
-
-Wizard only. For each unsaved Wound caused by the wielder in close combat, they gain a +1 casting bonus in their next Magic phase.
-
-#namecost("BLOOD OF TZEENTCH", "10 points")
-
-The bearer of the Blood of Tzeentch may re-roll one casting dice per turn, provided it was not originally a roll of a 1.
-
-#entry("ENCHANTED ITEMS")
-#namecost("WARP MIRROR", "50 points")
-
-All bonuses that are not from Magic Items, spells or mounts that occur in the first round of close combat (such as Charge Bonus, Mighty Blow, Devastating Charge, Impact Hits etc.) are swapped between the bearer of this item (and any unit they are with) and any enemy unit in base contact with the bearer.
-
-#namecost("FRACTURED CLASP", "35 points")
-
-All enemy units in base contact with the bearer of this item suffer \-1 to their Weapon Skill and Leadership.
-
-#namecost("DAEMONHEART", "25 points")
-
-One use only. This item may be used at the start of any round of close combat. Once used, the wielder gains +2 Strength and +2 Attacks. Roll a D6 after resolving all attacks; on the roll of 1, the bearer suffer a Wound which Ignores Armour Saves.
-
-#namecost("TIMESLIP PENDANT", "20 points")
-
-One use only. This item may be used after the wearer has made all their normal close combat attacks. When used, they may fight an additional time.
-
-#entry("MAGIC STANDARDS")
-#namecost("BLASTED STANDARD", "25 points")
-
-Each time the unit carrying the Blasted Standard suffers a hit from a shooting attack, roll a D6 immediately before rolling To Wound. On the roll of 2+, the Strength of that hit is halved. However, if the result is a 1, the Strength of that hit is instead doubled. Attacks that do not roll To Wound, or that wound automatically, are not affected by the Blasted Standard.
-
-#namecost("GLAMOUR FETISH", "20 points")
-
-All enemy units within 12" of the bearer of this standard suffer \-1 Leadership when taking Break tests.
+#magic-standard("GLAMOUR FETISH", 20)[All enemy units within 12" of the bearer of this standard suffer \-1 Leadership when taking Break tests.]
+]
 
 = CHARACTERS
 
