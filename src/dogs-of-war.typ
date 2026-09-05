@@ -139,80 +139,36 @@ A Pavise has the following armour profile:
 #note[_\*Only applies to missile attacks in the front arc._]
 ]
 
-= LORE OF BATTLE MAGIC
+#lore("LORE OF BATTLE MAGIC")[
 
-#columns(2)[
-#namecost("VOLATILE WIZARDRY", "")
-#namecost("Lore Attribute", "")
+#spell("VOLATILE WIZARDRY", "Lore Attribute")[Whenever a Wizard successfully casts a spell from this lore, they gain a +1 casting bonus for the remainder of the Magic phase. This bonus is cumulative. However, if they Miscast, they must add this casting bonus to the result rolled on the Miscast table.]
 
-Whenever a Wizard successfully casts a spell from this lore, they gain a +1 casting bonus for the remainder of the Magic phase. This bonus is cumulative. However, if they Miscast, they must add this casting bonus to the result rolled on the Miscast table.
+#spell("HAMMERHAND", "Signature Spell", cast: "5+")[_Hammerhand_ is a *direct damage* spell that causes 2D6 Strength 4 hits on one enemy unit in base contact with the caster.]
 
-#namecost("HAMMERHAND", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("FLIGHT OF ZIMMERAN", 1, cast: "5+")[_Flight of Zimmeran_ is a *conveyance* spell with a range of 18". One friendly Character may immediately make a move using the Fly (10) special rule as if it were the Remaining Moves sub-phase.]
 
-_Hammerhand_ is a *direct damage* spell that causes 2D6 Strength 4 hits on one enemy unit in base contact with the caster.
+#spell("MAGICAL MIGHT", 1, cast: "5+")[_Magical Might_ is an *augment* spell with a range of 18". The target gains the Mighty Blow (1) special rule until the start of the caster's next Magic phase.]
 
-#namecost("FLIGHT OF ZIMMERAN", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("CURSE OF COWARDLY FLIGHT", 1, cast: "6+")[_Curse of Cowardly Flight_ is a *hex* spell with a range of 18". The target must immediately take a Panic test with a \-1 Leadership modifier.]
 
-_Flight of Zimmeran_ is a *conveyance* spell with a range of 18". One friendly Character may immediately make a move using the Fly (10) special rule as if it were the Remaining Moves sub-phase.
+#spell("DREAD OF ARAMAR", 1, cast: "6+")[_Dread of Aramar_ is a *hex aura* spell with a range of 12". The target units treat all enemy units in base contact as causing Fear until the start of the caster's next Magic phase.]
 
-#namecost("MAGICAL MIGHT", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("ARCANE URGENCY", 2, cast: "7+")[_Arcane Urgency_ is a *conveyance* spell with a range of 18". The target may immediately make a move as if it were the Remaining Moves sub-phase.]
 
-_Magical Might_ is an *augment* spell with a range of 18". The target gains the Mighty Blow (1) special rule until the start of the caster's next Magic phase.
+#spell("DEATHLY SHARDS", 2, cast: "7+")[_Deathly Shards_ is a *magic missile* with a range of 24" that causes D6 Strength 4 Hits with the Armour Piercing (1) special rule.]
 
-#namecost("CURSE OF COWARDLY FLIGHT", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("HANDS OF KARKORA", 2, cast: "7+")[_Hands of Karkora_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all close combat attacks targeting the unit will always Hit on a 3+ or better, and all models in the unit can only Hit on a 4+ or worse themselves.]
 
-_Curse of Cowardly Flight_ is a *hex* spell with a range of 18". The target must immediately take a Panic test with a \-1 Leadership modifier.
+#spell("SWORD OF REZHEBEL", 2, cast: "7+")[Remains in Play. _Sword of Rezhebel_ is an *augment* spell with a range of 18" that can be cast on a friendly Character. While the spell is in effect, the model gains +1 To Hit, +2 Strength, +1 Attack as well as the Flaming Attacks and Magical Attacks special rules to their close combat attacks.]
 
-#namecost("DREAD OF ARAMAR", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("ARROW STORM", 3, cast: "8+")[_Arrow Storm_ is an *augment* spell with a range of 18". The target gains the Multiple Shot (2) special rule until the start of the caster's next Magic phase. Weapons that already fire Multiple Shots instead fire an additional shot. This has no effect on Magic Items or artillery weapons.]
 
-_Dread of Aramar_ is a *hex aura* spell with a range of 12". The target units treat all enemy units in base contact as causing Fear until the start of the caster's next Magic phase.
+#spell("CRIMSON BANDS", 3, cast: "8+")[_Crimson Bands_ is a *hex* spell with a range of 24". All models in the target unit suffer a \-1 penalty to their Attacks until the start of the caster's next Magic phase.]
 
-#namecost("ARCANE URGENCY", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("GLEAMING ARROW", 3, cast: "8+")[_Gleaming Arrow_ is a *magical missile* with a range of 24" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 4 Hits.]
 
-_Arcane Urgency_ is a *conveyance* spell with a range of 18". The target may immediately make a move as if it were the Remaining Moves sub-phase.
-
-#namecost("DEATHLY SHARDS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Deathly Shards_ is a *magic missile* with a range of 24" that causes D6 Strength 4 Hits with the Armour Piercing (1) special rule.
-
-#namecost("HANDS OF KARKORA", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Hands of Karkora_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all close combat attacks targeting the unit will always Hit on a 3+ or better, and all models in the unit can only Hit on a 4+ or worse themselves.
-
-#namecost("SWORD OF REZHEBEL", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in Play. _Sword of Rezhebel_ is an *augment* spell with a range of 18" that can be cast on a friendly Character. While the spell is in effect, the model gains +1 To Hit, +2 Strength, +1 Attack as well as the Flaming Attacks and Magical Attacks special rules to their close combat attacks.
-
-#namecost("ARROW STORM", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Arrow Storm_ is an *augment* spell with a range of 18". The target gains the Multiple Shot (2) special rule until the start of the caster's next Magic phase. Weapons that already fire Multiple Shots instead fire an additional shot. This has no effect on Magic Items or artillery weapons.
-
-#namecost("CRIMSON BANDS", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Crimson Bands_ is a *hex* spell with a range of 24". All models in the target unit suffer a \-1 penalty to their Attacks until the start of the caster's next Magic phase.
-
-#namecost("GLEAMING ARROW", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Gleaming Arrow_ is a *magical missile* with a range of 24" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 4 Hits.
-
-#namecost("MANACLE OF CALOE", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Manacle of Caloe_ is a *hex* spell with a range of 24". The target unit has all its movement halved until the start of the caster's next Magic phase.
+#spell("MANACLE OF CALOE", 3, cast: "8+")[_Manacle of Caloe_ is a *hex* spell with a range of 24". The target unit has all its movement halved until the start of the caster's next Magic phase.]
 ]
-
 = QUIRKS OF CHARACTER
 
 #columns(2)[

@@ -105,141 +105,61 @@ A unit with Smoke Bombs may use them at the end of any Close Combat phase in whi
 A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.
 ]
 
-= THE LORE OF RUIN
+#lore("THE LORE OF RUIN")[
 
-#columns(2)[
-#namecost("MUSK OF FEAR", "")
-#namecost("Lore Attribute", "")
+#spell("MUSK OF FEAR", "Lore Attribute")[If one or more spells from the Lore of Ruin affects an enemy unit, the target suffers \-1 to their Leadership (to a minimum of 1) until the start of the caster's next magic phase.]
 
-If one or more spells from the Lore of Ruin affects an enemy unit, the target suffers \-1 to their Leadership (to a minimum of 1) until the start of the caster's next magic phase.
+#spell("WARP LIGHTNING", "Signature Spell", cast: "5+")[_Warp Lightning_ is a *magic missile* with a range of 24" that causes D3 Strength 5 hits with the Lightning Attacks special rule. If the number of hits rolled is a natural 1 (using a D6), then the caster suffers a Strength 5 hit instead of the target.]
 
-#namecost("WARP LIGHTNING", "")
-#namecost("Signature spell Cast on 5+", "")
+#spell("DEATH FRENZY", 1, cast: "6+")[_Death Frenzy_ is an *augment* spell with a range of 18". The target unit gains the Frenzy special rule for the remainder of the game, though it can be lost as normal. This spell can be cast multiple times on the same target. If the unit already has the Frenzy special rule, it also suffers D3 Wounds with the Ignores Armour save special rule at the end of each Magic phase.]
 
-_Warp Lightning_ is a *magic missile* with a range of 24" that causes D3 Strength 5 hits with the Lightning Attacks special rule. If the number of hits rolled is a natural 1 (using a D6), then the caster suffers a Strength 5 hit instead of the target.
+#spell("WARP POWER", 1, cast: "6+")[_Warp Power_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Hit and To Wound until the start of the caster's next Magic phase. However, the target unit suffer D3 Wounds with the Ignores Armour save special rule when the spell ends.]
 
-#namecost("DEATH FRENZY", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("WARP SHIELD", 1, cast: "6+")[_Warp Shield_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit ignores a number of Hits from missile attacks equal to the casting result (to a maximum of 10). However, if the unit suffer more Hits than that, the spell ends after resolving the Hits and the unit suffers D6 Strength 3 Hits.]
 
-_Death Frenzy_ is an *augment* spell with a range of 18". The target unit gains the Frenzy special rule for the remainder of the game, though it can be lost as normal. This spell can be cast multiple times on the same target. If the unit already has the Frenzy special rule, it also suffers D3 Wounds with the Ignores Armour save special rule at the end of each Magic phase.
+#spell("HOWLING WARPGALE", 2, cast: "7+")[_Howling Warpgale_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, no units within range may use the Fly special rule, and all non-magical missile attacks suffer \-1 To Hit.]
 
-#namecost("WARP POWER", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("SPLINTER", 2, cast: "7+")[_Splinter_ is a *direct damage aura* spell with a range of 6". All target units within range must pass a Leadership test or suffer one Wound that Ignores Armour Saves for every point they failed the Leadership test by.]
 
-_Warp Power_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Hit and To Wound until the start of the caster's next Magic phase. However, the target unit suffer D3 Wounds with the Ignores Armour save special rule when the spell ends.
+#spell("PIT OF THE UNDERWORLD", 2, cast: "9+")[_Pit of the Underworld_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the Pit cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a 4+, the Pit opens. Place the large round template over the centre of the marker. All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. After any casualties have been resolved the spell ends.]
 
-#namecost("WARP SHIELD", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("FLENSING RUIN", 3, cast: "10+")[_Flensing Ruin_ is a *direct damage* spell with a range of 12" that targets a single model (even a character in a unit). The target suffers D3 Strength 6 Hits with the Lightning Attacks special rule.]
 
-_Warp Shield_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit ignores a number of Hits from missile attacks equal to the casting result (to a maximum of 10). However, if the unit suffer more Hits than that, the spell ends after resolving the Hits and the unit suffers D6 Strength 3 Hits.
+#spell("MADNESS", 3, cast: "10+")[_Madness_ is a *hex* spell with a range of 24" that can be cast on an unengaged unit. The target unit will immediately turn on the spot and move 2D6" in a random direction as determined by the scatter dice. They will stop within 1" of any unit or impassable terrain.]
 
-#namecost("HOWLING WARPGALE", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("WARPSTORM", 3, cast: "10+")[_Warpstorm_ is a *direct damage aura* spell with a range of 12". Roll a D6 for each unit within range; enemy units are affected on a 3+, friendly units are affected on a 6. Each unit that is affected suffers D6 Strength 5 hits with the Lightning Attacks special rule. Roll separately for each unit.]
 
-_Howling Warpgale_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, no units within range may use the Fly special rule, and all non-magical missile attacks suffer \-1 To Hit.
+#spell("CRACKS CALL", 4, cast: "13+")[_Cracks Call_ is *a direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Each model in the way must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores armour saves and Regeneration.]
 
-#namecost("SPLINTER", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Splinter_ is a *direct damage aura* spell with a range of 6". All target units within range must pass a Leadership test or suffer one Wound that Ignores Armour Saves for every point they failed the Leadership test by.
-
-#namecost("PIT OF THE UNDERWORLD", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Pit of the Underworld_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the Pit cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a 4+, the Pit opens. Place the large round template over the centre of the marker. All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. After any casualties have been resolved the spell ends.
-
-#namecost("FLENSING RUIN", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Flensing Ruin_ is a *direct damage* spell with a range of 12" that targets a single model (even a character in a unit). The target suffers D3 Strength 6 Hits with the Lightning Attacks special rule.
-
-#namecost("MADNESS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Madness_ is a *hex* spell with a range of 24" that can be cast on an unengaged unit. The target unit will immediately turn on the spot and move 2D6" in a random direction as determined by the scatter dice. They will stop within 1" of any unit or impassable terrain.
-
-#namecost("WARPSTORM", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Warpstorm_ is a *direct damage aura* spell with a range of 12". Roll a D6 for each unit within range; enemy units are affected on a 3+, friendly units are affected on a 6. Each unit that is affected suffers D6 Strength 5 hits with the Lightning Attacks special rule. Roll separately for each unit.
-
-#namecost("CRACKS CALL", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Cracks Call_ is *a direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Each model in the way must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores armour saves and Regeneration.
-
-#namecost("SCORCH", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Scorch_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models under the template suffer a Strength 4 hit with the Flaming Attacks special rule. A unit that suffers one or more casualties from Scorch must take a Panic test.
+#spell("SCORCH", 4, cast: "15+")[_Scorch_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models under the template suffer a Strength 4 hit with the Flaming Attacks special rule. A unit that suffers one or more casualties from Scorch must take a Panic test.]
 ]
+#lore("THE LORE OF PLAGUE")[
 
-= THE LORE OF PLAGUE
+#spell("PLAGUE RASH", "Lore Attribute")[If one or more spells from the Lore of Plague affects an enemy unit, the target suffers \-1 to their Weapon Skill and Initiative (to a minimum of 1) until the start of the caster's next magic phase.]
 
-#columns(2)[
-#namecost("PLAGUE RASH", "")
-#namecost("Lore Attribute", "")
+#spell("PESTILENT BREATH", "Signature Spell", cast: "5+")[_Pestilent Breath_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.]
 
-If one or more spells from the Lore of Plague affects an enemy unit, the target suffers \-1 to their Weapon Skill and Initiative (to a minimum of 1) until the start of the caster's next magic phase.
+#spell("BLESS WITH FILTH", 1, cast: "5+")[_Bless with Filth_ is an *augment* spell with a range of 18". The target gets the Poisoned Attacks special rule until the start of the caster's next Magic phase.]
 
-#namecost("PESTILENT BREATH", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("MANTLE OF CONTAGION", 1, cast: "5+")[_Mantle of Contagion_ is an *augment* spell with a range of 18". The target unit and any units in base contact with it suffer 2D6 Strength 3 hits with the Ignores Armour Saves special rule.]
 
-_Pestilent Breath_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.
+#spell("VEIL OF FLIES", 1, cast: "5+")[_Veil of Flies_ is an *augment* spell with a range of 18". All enemy units in base contact with the target unit suffer \-1 To Hit until the start of the caster's next Magic phase.]
 
-#namecost("BLESS WITH FILTH", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("VERMINTIDE", 2, cast: "7+")[Remains in play. _Vermintide_ is a *magical vortex* that uses the large round template. Any model touched by the template suffers a Strength 1 hit.]
 
-_Bless with Filth_ is an *augment* spell with a range of 18". The target gets the Poisoned Attacks special rule until the start of the caster's next Magic phase.
+#spell("WEEPING WOUNDS", 2, cast: "8+")[Remains in play. _Weeping Wounds_ is a *hex* spell with a range of 24". The target unit suffer D6 Strength 2 hits with the Ignores Armour Saves special rule. While the spell is in effect, the target unit suffers an additional D6 Strength 2 hits with the Ignores Armour Saves special rule at the start of each subsequent Magic phase.]
 
-#namecost("MANTLE OF CONTAGION", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("PURULENT WORLD SORES", 2, cast: "9+")[_Purulent World Sores_ is a *summoning* spell with a range of 18". This summons a normal marshland no more than 6" in diameter. In addition, all models within the marsh when it is summoned or who enter later suffer a Strength 1 Hit with the Ignores Armour Saves special rule.]
 
-_Mantle of Contagion_ is an *augment* spell with a range of 18". The target unit and any units in base contact with it suffer 2D6 Strength 3 hits with the Ignores Armour Saves special rule.
+#spell("PUTREFY", 3, cast: "11+")[_Putrefy_ is a *hex* spell with a range of 18". The target suffers \-1 to their Strength for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.]
 
-#namecost("VEIL OF FLIES", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("WITHER", 3, cast: "11+")[_Wither_ is a *hex* spell with a range of 18". The target suffers \-1 to their Toughness for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.]
 
-_Veil of Flies_ is an *augment* spell with a range of 18". All enemy units in base contact with the target unit suffer \-1 To Hit until the start of the caster's next Magic phase.
+#spell("AIR OF PESTILENCE", 3, cast: "12+")[_Air of Pestilence_ is a *direct damage aura* spell with a range of 12". Roll a D6 for each unit within range; enemy units are affected on a 2+, friendly units are affected on a 4+, and models from Clan Pestilens (friend or foe) are affected on a roll of 5+. Each unit that is affected suffers 2D6 Strength 3 hits with the Ignores Armour save special rule. Roll separately for each unit.]
 
-#namecost("VERMINTIDE", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("CLOUD OF CORRUPTION", 4, cast: "12+")[_Cloud of Corruption_ is a *direct damage area* spell with a range of 24" that uses the large template. All models touched by the template suffer a Strength 2 Hit with the Ignores Armour Saves special rule.]
 
-Remains in play. _Vermintide_ is a *magical vortex* that uses the large round template. Any model touched by the template suffers a Strength 1 hit.
-
-#namecost("WEEPING WOUNDS", "")
-#namecost("Level 2 Cast on 8+", "")
-
-Remains in play. _Weeping Wounds_ is a *hex* spell with a range of 24". The target unit suffer D6 Strength 2 hits with the Ignores Armour Saves special rule. While the spell is in effect, the target unit suffers an additional D6 Strength 2 hits with the Ignores Armour Saves special rule at the start of each subsequent Magic phase.
-
-#namecost("PURULENT WORLD SORES", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Purulent World Sores_ is a *summoning* spell with a range of 18". This summons a normal marshland no more than 6" in diameter. In addition, all models within the marsh when it is summoned or who enter later suffer a Strength 1 Hit with the Ignores Armour Saves special rule.
-
-#namecost("PUTREFY", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Putrefy_ is a *hex* spell with a range of 18". The target suffers \-1 to their Strength for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.
-
-#namecost("WITHER", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Wither_ is a *hex* spell with a range of 18". The target suffers \-1 to their Toughness for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.
-
-#namecost("AIR OF PESTILENCE", "")
-#namecost("Level 3 Cast on 12+", "")
-
-_Air of Pestilence_ is a *direct damage aura* spell with a range of 12". Roll a D6 for each unit within range; enemy units are affected on a 2+, friendly units are affected on a 4+, and models from Clan Pestilens (friend or foe) are affected on a roll of 5+. Each unit that is affected suffers 2D6 Strength 3 hits with the Ignores Armour save special rule. Roll separately for each unit.
-
-#namecost("CLOUD OF CORRUPTION", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Cloud of Corruption_ is a *direct damage area* spell with a range of 24" that uses the large template. All models touched by the template suffer a Strength 2 Hit with the Ignores Armour Saves special rule.
-
-#namecost("PLAGUE", "")
-#namecost("Level 4 Cast on 15+", "")
-
+#spell("PLAGUE", 4, cast: "15+")[
 _Plague_ is a *direct damage* spell with a range of 18" that may be cast on units in close combat. All models in the target unit must pass a Toughness test or suffer a Wound with the Ignores Armour save special rule. If cast on a unit engaged in close combat, all units in base contact (friend and foe) will be affected. After working out the effects of the spell and removing casualties, roll a D6 and consult the chart below and continue to apply the results until the spell ends or there are no more viable targets. A unit can only be the target of Plague once per Magic phase.
 
 #chart((("D6", "Result"), ("1", "Your opponent can decide to end the spell or
@@ -248,71 +168,33 @@ target to be affected by Plague."), ("2-4", "The spell ends."), ("5-6", "The cas
 or choose any one unit within 6\" of a
 previous target to be affected by Plague.")))
 ]
-
-= THE LORE OF STEALTH
-
-#columns(2)[
-#namecost("TOXIC RAIN", "")
-#namecost("Lore Attribute", "")
-
-If one or more spells from the Lore of Stealth affects an enemy unit, the target suffers a \-1 penalty to their armour saves until the start of the caster's next magic phase.
-
-#namecost("WARP STARS", "")
-#namecost("Signature Spell Cast on 6+", "")
-
-_Warp Stars_ is a *magic missile* with a range of 18" that causes D6 Strength 4 hits with the Armour Piercing (1) and Poisoned Attacks special rule.
-
-#namecost("STICKYPAWS", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Stickypaws_ is an *augment* spell with a range of 18" that can be cast on an Infantry unit. The target unit treats cliffs and buildings as open ground (note that it may not end its move within 1" of it as normal) until the start of the caster's next Magic phase.
-
-#namecost("ARMOUR OF DARKNESS", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Armour of Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next turn, the caster and their unit gain a 6+ armour save and all missile fire directed at them suffer \-1 To Hit.
-
-#namecost("MARKED FOR DEATH", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Marked for Death_ is a *hex* spell with a range of 24". All attacks against the target gain +1 To Hit until the start of the caster's next Magic phase.
-
-#namecost("BRITTLE BONE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Brittle Bone_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target unit must take a Dangerous Terrain test every time they attempt to charge, march, flee or pursue. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.
-
-#namecost("PELT OF THE ASSASSIN", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in play. _Pelt of the Assassin_ is an *augment* spell with a range of 18". While the spell is in effect, no units can draw line of sight to this unit unless they are within 12" of it. However, if the target unit moves for any reason, the spell is immediately dispelled.
-
-#namecost("SHADOW STRIKE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Shadow Strike_ is a *direct damage* spell with a range of 24". The target unit must take 3D6 Weapon Skill tests. For every test that is failed, the unit suffers a Strength 4 Hit.
-
-#namecost("SWIFTSCAMPER", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Swiftscamper_ is an *augment* spell with a range of 18". The target unit doubles its Movement rate (to a maximum of 10) and can re-roll their Charge, Flee and Pursuit results until the start of the caster's next Magic phase.
-
-#namecost("SKITTERLEAP", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Skitterleap_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.
-
-#namecost("BLACK WHIRLWIND", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Black Whirlwind_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 3 hit. The unit then suffers \-1 to its Weapon Skill, Ballistic Skill and Initiative until the start of the caster's next Magic phase.
-
-#namecost("VEIL OF SHADOWS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large round template. Any model touched by the template takes a Strength 4 hit, and the unit will count as being Disrupted for the remainder of the turn.
 ]
+#lore("THE LORE OF STEALTH")[
 
+#spell("TOXIC RAIN", "Lore Attribute")[If one or more spells from the Lore of Stealth affects an enemy unit, the target suffers a \-1 penalty to their armour saves until the start of the caster's next magic phase.]
+
+#spell("WARP STARS", "Signature Spell", cast: "6+")[_Warp Stars_ is a *magic missile* with a range of 18" that causes D6 Strength 4 hits with the Armour Piercing (1) and Poisoned Attacks special rule.]
+
+#spell("STICKYPAWS", 1, cast: "5+")[_Stickypaws_ is an *augment* spell with a range of 18" that can be cast on an Infantry unit. The target unit treats cliffs and buildings as open ground (note that it may not end its move within 1" of it as normal) until the start of the caster's next Magic phase.]
+
+#spell("ARMOUR OF DARKNESS", 1, cast: "6+")[_Armour of Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next turn, the caster and their unit gain a 6+ armour save and all missile fire directed at them suffer \-1 To Hit.]
+
+#spell("MARKED FOR DEATH", 1, cast: "6+")[_Marked for Death_ is a *hex* spell with a range of 24". All attacks against the target gain +1 To Hit until the start of the caster's next Magic phase.]
+
+#spell("BRITTLE BONE", 2, cast: "7+")[_Brittle Bone_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target unit must take a Dangerous Terrain test every time they attempt to charge, march, flee or pursue. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.]
+
+#spell("PELT OF THE ASSASSIN", 2, cast: "7+")[Remains in play. _Pelt of the Assassin_ is an *augment* spell with a range of 18". While the spell is in effect, no units can draw line of sight to this unit unless they are within 12" of it. However, if the target unit moves for any reason, the spell is immediately dispelled.]
+
+#spell("SHADOW STRIKE", 2, cast: "7+")[_Shadow Strike_ is a *direct damage* spell with a range of 24". The target unit must take 3D6 Weapon Skill tests. For every test that is failed, the unit suffers a Strength 4 Hit.]
+
+#spell("SWIFTSCAMPER", 3, cast: "9+")[_Swiftscamper_ is an *augment* spell with a range of 18". The target unit doubles its Movement rate (to a maximum of 10) and can re-roll their Charge, Flee and Pursuit results until the start of the caster's next Magic phase.]
+
+#spell("SKITTERLEAP", 3, cast: "10+")[_Skitterleap_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.]
+
+#spell("BLACK WHIRLWIND", 3, cast: "10+")[_Black Whirlwind_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 3 hit. The unit then suffers \-1 to its Weapon Skill, Ballistic Skill and Initiative until the start of the caster's next Magic phase.]
+
+#spell("VEIL OF SHADOWS", 4, cast: "15+")[Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large round template. Any model touched by the template takes a Strength 4 hit, and the unit will count as being Disrupted for the remainder of the turn.]
+]
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", columns: 2, first: true)[

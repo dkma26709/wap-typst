@@ -108,300 +108,126 @@ Characters without a Mark of Chaos may not join units that have one.
 Models with this special rule have the Cold-blooded special rule when taking Panic tests.
 ]
 
-= THE LORE OF CHAOS
+#lore("THE LORE OF CHAOS")[
 
-#namecost("BOON OF CHAOS", "")
-#namecost("Lore Attribute", "")
+#spell("BOON OF CHAOS", "Lore Attribute")[Whenever a Wizard successfully cast a spell from the Lore of Chaos, the Wizard’s Weapon Skill, Toughness and Leadership are increased by 1 until the start of their next Magic phase.]
 
-Whenever a Wizard successfully cast a spell from the Lore of Chaos, the Wizard’s Weapon Skill, Toughness and Leadership are increased by 1 until the start of their next Magic phase.
+#spell("THE SUMMONING", "Signature Spell", cast: "6+")[_The Summoning_ is a *magic missile* with a range of 18" that causes 2D6 Strength 3 hits with the Armour Piercing (1) special rule.]
 
-#namecost("THE SUMMONING", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("DAEMONIC FAMILIARS", 1, cast: "5+")[_Daemonic Familiars_ is a *hex* spell that targets one unit in base contact with the Wizard. The target suffer 2D6 Strength 2 hits with the Ignores Armour saves special rule.]
 
-_The Summoning_ is a *magic missile* with a range of 18" that causes 2D6 Strength 3 hits with the Armour Piercing (1) special rule.
+#spell("GIFT OF CHAOS", 1, cast: "6+")[_Gift of Chaos_ is a *direct damage aura* spell with a range of 12". Each target suffers D6 Strength 3 Hits.]
 
-#namecost("DAEMONIC FAMILIARS", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("VEIL OF GLOOM", 1, cast: "6+")[_Veil of Gloom_ is an *augment* spell with a range of 18". The target unit gains a Magical Ward (5+) against missile attacks until the start of your next Magic phase.]
 
-_Daemonic Familiars_ is a *hex* spell that targets one unit in base contact with the Wizard. The target suffer 2D6 Strength 2 hits with the Ignores Armour saves special rule.
+#spell("VISION OF TORMENT", 2, cast: "7+")[_Vision of Torment_ is a *hex* spell with a range of 24". The target must pass a Psychology test or be unable to voluntarily move or shoot until the start of the caster's next turn.]
 
-#namecost("GIFT OF CHAOS", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("WINDS OF CHAOS", 2, cast: "7+")[_Winds of Chaos_ is a *hex* spell with a range of 24". The target suffers \-2 to their Movement until the start of the caster's next turn.]
 
-_Gift of Chaos_ is a *direct damage aura* spell with a range of 12". Each target suffers D6 Strength 3 Hits.
+#spell("BINDING DAMNATION", 2, cast: "9+")[_Binding Damnation_ is a *hex* spell with a range of 24". The target suffers \-3 to their Weapon Skill and Ballistic Skill (to a minimum of 1) until the start of the caster's next turn.]
 
-#namecost("VEIL OF GLOOM", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("MASK OF DARKNESS", 3, cast: "9+")[_Mask of Darkness_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.]
 
-_Veil of Gloom_ is an *augment* spell with a range of 18". The target unit gains a Magical Ward (5+) against missile attacks until the start of your next Magic phase.
+#spell("VEIL OF CORRUPTION", 3, cast: "9+")[_Veil of Corruption_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models hit by the template suffer a Strength 3 hit.]
 
-#namecost("VISION OF TORMENT", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("RUINOUS VIGOUR", 3, cast: "10+")[_Ruinous Vigour_ is an *augment* spell with a range of 18". The target gains +1 Movement, Toughness and Initiative until the start of the caster’s next Magic phase.]
 
-_Vision of Torment_ is a *hex* spell with a range of 24". The target must pass a Psychology test or be unable to voluntarily move or shoot until the start of the caster's next turn.
+#spell("CHAOTIC CONDUIT", 4, cast: "10+")[_Chaotic Conduit_ is an *augment* spell with a range of 18". The target gains +1 To Hit and To Wound in close combat until the start of the caster’s next Magic phase.]
 
-#namecost("WINDS OF CHAOS", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("SPITE-TONGUE CURSE", 4, cast: "12+")[_Spite-tongue Curse_ is a *direct damage* spell with a range of 12" that causes 3D6 Strength 5 hits. However, if the spell fails to reach its casting value, the caster suffers 1 Wound which Ignores Armour Saves.]
 
-_Winds of Chaos_ is a *hex* spell with a range of 24". The target suffers \-2 to their Movement until the start of the caster's next turn.
-
-#namecost("BINDING DAMNATION", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Binding Damnation_ is a *hex* spell with a range of 24". The target suffers \-3 to their Weapon Skill and Ballistic Skill (to a minimum of 1) until the start of the caster's next turn.
-
-#namecost("MASK OF DARKNESS", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Mask of Darkness_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.
-
-#namecost("VEIL OF CORRUPTION", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Veil of Corruption_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models hit by the template suffer a Strength 3 hit.
-
-#namecost("RUINOUS VIGOUR", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Ruinous Vigour_ is an *augment* spell with a range of 18". The target gains +1 Movement, Toughness and Initiative until the start of the caster’s next Magic phase.
-
-#namecost("CHAOTIC CONDUIT", "")
-#namecost("Level 4 Cast on 10+", "")
-
-_Chaotic Conduit_ is an *augment* spell with a range of 18". The target gains +1 To Hit and To Wound in close combat until the start of the caster’s next Magic phase.
-
-#namecost("SPITE-TONGUE CURSE", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Spite-tongue Curse_ is a *direct damage* spell with a range of 12" that causes 3D6 Strength 5 hits. However, if the spell fails to reach its casting value, the caster suffers 1 Wound which Ignores Armour Saves.
-
-#namecost("VORTEX OF CHAOS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Vortex Of Chaos_ is a *magical vortex* that uses the large round template. Any model touched by the template at any point during its move suffer a Strength 4 hit.
-
-= THE LORE OF NURGLE
-
-#columns(2)[
-#namecost("BLOATED WITH DISEASE", "")
-#namecost("Lore Attribute", "")
-
-Whenever a Wizard successfully casts a spell from the Lore of Nurgle, roll a D6 after resolving the spell's effect(s). On the roll of a 6, the Wizard or one friendly Character within 6" gain +1 Wound for the remainder of the game.
-
-#namecost("STREAM OF CORRUPTION", "")
-#namecost("Signature Spell Cast on 7+", "")
-
-_Stream of Corruption_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit must pass a Toughness test or suffer a Wound with the Ignores Armour saves special rule.
-
-#namecost("MIASMA OF PESTILENCE", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Miasma of Pestilence_ is an *augment* spell with a range of 18". Until the start of the caster’s next Magic phase, all enemy units in base contact with the target unit reduce their Weapon Skill and Initiative by 1 (to a minimum of 1).
-
-#namecost("BLADES OF PUTREFACTION", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Blades of Putrefaction_ is an *augment* spell with a range of 18". The target unit’s close combat attacks gain the Poisoned Attacks special rule until the start of the caster’s next Magic phase.
-
-#namecost("MAGNIFICENT BUBOUES", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Magnificent Buboes_ is a *magic missile* with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers one Wound which Ignores Armour saves.
-
-#namecost("CURSE OF THE LEPER", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Curse of the Leper_ is an *augment/hex* spell with a range of 24". If cast on a friendly unit, it increases the target unit’s Toughness by 1 until the start of the caster's next Magic phase. If cast on an enemy unit, it reduces the target unit’s Toughness by 1 (to a minimum of 1) until the start of the caster’s next Magic phase.
-
-#namecost("PLAGUE SQUALL", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Plague Squall_ is a *direct damage area* spell with a range of 24" that uses the large round template; it scatters like a stone thrower. If a misfire is rolled, the caster suffers 1 Wound which Ignores Armour Saves. Any model hit suffers a Strength 1 Hit with the Ignores Armour Saves special rule.
-
-#namecost("RANCID VISITATIONS", "")
-#namecost("Level 2 Cast on 10+", "")
-
-_Rancid Visitations_ is a *magic missile* with a range of 18" that inflicts D6 Strength 5 hits. The target unit must then immediately pass a Toughness test or suffer a further D6 hits. The target must keep taking Toughness tests until it passes, or is removed as a casualty.
-
-#namecost("ROTBOMB", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Rotbomb_ is a *hex* spell with a range of 24". The target's armour save is lowered by two points for the rest of the game. Rotbomb can be repeatedly cast on the same target, reducing its armour save by a further \-2 each time.
-
-#namecost("CLOYING QUAGMIRE", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Cloying Quagmire_ is a *direct damage* spell with a range of 24". All models in the unit must take an Initiative test. Those that fail must then take an armour save. If passed, they are removed as casualties, with no saves allowed. Models without armour count as passing on a 6. This spell has no effect on models with the Fly, Ethereal or Strider special rules.
-
-#namecost("FLESHY ABUNDANCE", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Fleshy Abundance_ is an *augment* spell with a range of 18". Until the start of the caster’s next Magic phase, the target has the Regeneration (5+) special rule (to a maximum of a 3+ save for Daemons of Nurgle).
-
-#namecost("GRANDFATHER NURGLE'S CIRCLE OF LIFE", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Grandfather Nurgle's Circle of Life_ is a *direct damage* spell with a range of 24" that causes D6 hits that wound on a 4+ with the Ignores Armour Saves special rule. For each unsaved Wound caused, one friendly unit within 6" of the caster instantly recovers 1 Wounds' worth of models slain earlier in the battle, just like a summoning spell.
-
-#namecost("PLAGUE WIND", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in play. _Plague Wind_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must pass a Toughness test or suffer a single Wound with the Ignores Armour Saves special rule.
-
-#namecost("ROT, GLORIOUS ROT", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Rot, Glorious Rot_ is a *direct damage aura* spell with a range of 18". Each target suffers D6 Strength 3 Hits with the Ignores Armour Saves special rule.
+#spell("VORTEX OF CHAOS", 4, cast: "15+")[Remains in play. _Vortex Of Chaos_ is a *magical vortex* that uses the large round template. Any model touched by the template at any point during its move suffer a Strength 4 hit.]
 ]
+#lore("THE LORE OF NURGLE")[
 
-= THE LORE OF SLAANESH
+#spell("BLOATED WITH DISEASE", "Lore Attribute")[Whenever a Wizard successfully casts a spell from the Lore of Nurgle, roll a D6 after resolving the spell's effect(s). On the roll of a 6, the Wizard or one friendly Character within 6" gain +1 Wound for the remainder of the game.]
 
-#columns(2)[
-#namecost("BLISS IN TORMENT", "")
-#namecost("Lore Attribute", "")
+#spell("STREAM OF CORRUPTION", "Signature Spell", cast: "7+")[_Stream of Corruption_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit must pass a Toughness test or suffer a Wound with the Ignores Armour saves special rule.]
 
-Whenever a Wizard successfully casts a spell from the Lore of Slaanesh on an enemy unit, the target suffers D6 Strength 3 Hits after resolving all effects of the spell.
+#spell("MIASMA OF PESTILENCE", 1, cast: "5+")[_Miasma of Pestilence_ is an *augment* spell with a range of 18". Until the start of the caster’s next Magic phase, all enemy units in base contact with the target unit reduce their Weapon Skill and Initiative by 1 (to a minimum of 1).]
 
-#namecost("LASH OF SLAANESH", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("BLADES OF PUTREFACTION", 1, cast: "5+")[_Blades of Putrefaction_ is an *augment* spell with a range of 18". The target unit’s close combat attacks gain the Poisoned Attacks special rule until the start of the caster’s next Magic phase.]
 
-_Lash of Slaanesh_ is a *direct damage* spell. Extend a straight line, 24" in length, within the caster’s forward arc and directly from their base. Each model in the way (determined using the line template) suffers a Strength 4 hit with the Armour Piercing (1) special rule. Any unit that suffers a casualty from this spell may not march in its next Movement phase.
+#spell("MAGNIFICENT BUBOUES", 1, cast: "6+")[_Magnificent Buboes_ is a *magic missile* with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers one Wound which Ignores Armour saves.]
 
-#namecost("HYSTERICAL FRENZY", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("CURSE OF THE LEPER", 2, cast: "7+")[_Curse of the Leper_ is an *augment/hex* spell with a range of 24". If cast on a friendly unit, it increases the target unit’s Toughness by 1 until the start of the caster's next Magic phase. If cast on an enemy unit, it reduces the target unit’s Toughness by 1 (to a minimum of 1) until the start of the caster’s next Magic phase.]
 
-Remains in play. _Hysterical Frenzy_ is an *augment/hex* spell with a range of 24". While the spell is in effect, the target gains the Frenzy special rule (which is not lost if the unit is defeated in close combat) and suffers D6 Strength 3 hits at the end of each of the caster’s Magic phases.
+#spell("PLAGUE SQUALL", 2, cast: "8+")[_Plague Squall_ is a *direct damage area* spell with a range of 24" that uses the large round template; it scatters like a stone thrower. If a misfire is rolled, the caster suffers 1 Wound which Ignores Armour Saves. Any model hit suffers a Strength 1 Hit with the Ignores Armour Saves special rule.]
 
-#namecost("PAVANE OF SLAANESH", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("RANCID VISITATIONS", 2, cast: "10+")[_Rancid Visitations_ is a *magic missile* with a range of 18" that inflicts D6 Strength 5 hits. The target unit must then immediately pass a Toughness test or suffer a further D6 hits. The target must keep taking Toughness tests until it passes, or is removed as a casualty.]
 
-_Pavane of Slaanesh_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). If successfully cast, the target must pass a Leadership test on their own unmodified Leadership or suffer 1 Wound which Ignores Armour Saves for every point they failed the test by.
+#spell("ROTBOMB", 3, cast: "10+")[_Rotbomb_ is a *hex* spell with a range of 24". The target's armour save is lowered by two points for the rest of the game. Rotbomb can be repeatedly cast on the same target, reducing its armour save by a further \-2 each time.]
 
-#namecost("SUCCOUR OF CHAOS", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("CLOYING QUAGMIRE", 3, cast: "11+")[_Cloying Quagmire_ is a *direct damage* spell with a range of 24". All models in the unit must take an Initiative test. Those that fail must then take an armour save. If passed, they are removed as casualties, with no saves allowed. Models without armour count as passing on a 6. This spell has no effect on models with the Fly, Ethereal or Strider special rules.]
 
-_Succour of Chaos_ is an *augment* spell with a range of 18". The target gains the Always Strikes First special rule until the start of the caster's next Magic phase.
+#spell("FLESHY ABUNDANCE", 3, cast: "11+")[_Fleshy Abundance_ is an *augment* spell with a range of 18". Until the start of the caster’s next Magic phase, the target has the Regeneration (5+) special rule (to a maximum of a 3+ save for Daemons of Nurgle).]
 
-#namecost("TITILLATING DELUSIONS", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("GRANDFATHER NURGLE'S CIRCLE OF LIFE", 4, cast: "11+")[_Grandfather Nurgle's Circle of Life_ is a *direct damage* spell with a range of 24" that causes D6 hits that wound on a 4+ with the Ignores Armour Saves special rule. For each unsaved Wound caused, one friendly unit within 6" of the caster instantly recovers 1 Wounds' worth of models slain earlier in the battle, just like a summoning spell.]
 
-Remains in Play. Titillating Delusions is a *hex* spell with a range of 24". Place a marker (this has a Line of Sight value of 1) within 24". While the spell is in effect, the target must pass a Leadership test at the start of each of their Movement phases or be forced to move towards the target as quickly as possible. The spell is automatically dispelled as soon as the unit reaches the marker or loses Line of Sight to it.
+#spell("PLAGUE WIND", 4, cast: "12+")[Remains in play. _Plague Wind_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must pass a Toughness test or suffer a single Wound with the Ignores Armour Saves special rule.]
 
-#namecost("SLOTHFUL STUPOR", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Slothful Stupor_ is a *hex* spell with a range of 24". The target suffers \-2 Leadership and gains the Stupidity special rule until the start of the caster’s next Magic phase.
-
-#namecost("ACQUIESCENCE", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Acquiescence_ is a *hex* spell with a range of 24". The target unit is subject to the Always Strikes Last and Random Movement (D6) special rules until the start of the caster’s next Magic phase.
-
-#namecost("DELICIOUS EXCRUCIATION", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Delicious Excruciation_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target are automatically Hit in close combat and gain the Unbreakable special rule.
-
-#namecost("SLICING SHARDS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Slicing Shards_ is a *magic missile* with a range of 24" that inflicts D6 Strength 4 hits with the Armour Piercing (1) special rule. The target must then immediately pass a Leadership test or suffer a further D6 hits. The target must keep taking Leadership tests until it passes, or is removed as a casualty.
-
-#namecost("PHANTASMAGORIA", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Phantasmagoria_ is a *hex* spell with a range of 24". Until the start of the caster’s next Magic phase, the target unit must roll an additional D6 whenever it takes a Leadership test, discarding the lowest result rolled.
-
-#namecost("CACOPHONIC CHOIR", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Cacophonic Choir_ is a *hex* spell with a range of 12". The target takes 3D6 hits that wound on a 4+ which Ignores Armour saves. If at least one unsaved Wound is caused, the target is subject to the Always Strikes Last and Random Movement (D6) special rules until the start of the caster’s next Magic phase.
-
-#namecost("ECSTATIC SEIZURES", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Ecstatic Seizures_ is a *direct damage* spell with a range of 12". All models in the target unit must pass a Strength test or suffer 1 Wound which Ignores Armour Saves.
-
-#namecost("SONG OF SEDUCTION", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Song of Seduction_ is a *hex* spell with a range of 24". While the spell is in effect, this unit is wholly under the caster's control. It may move and shoot (but not charge, cast spells or channel dice) during the enemy's turn as if it were your own unit. At the end of each subsequent Magic phase, the unit must take a Leadership test. If passed, the spell is dispelled. The spell is immediately dispelled if the unit becomes engaged in close combat.
+#spell("ROT, GLORIOUS ROT", 4, cast: "13+")[_Rot, Glorious Rot_ is a *direct damage aura* spell with a range of 18". Each target suffers D6 Strength 3 Hits with the Ignores Armour Saves special rule.]
 ]
+#lore("THE LORE OF SLAANESH")[
 
-= THE LORE OF TZEENTCH
+#spell("BLISS IN TORMENT", "Lore Attribute")[Whenever a Wizard successfully casts a spell from the Lore of Slaanesh on an enemy unit, the target suffers D6 Strength 3 Hits after resolving all effects of the spell.]
 
-#columns(2)[
-#namecost("BOON OF MAGIC", "")
-#namecost("Lore Attribute", "")
+#spell("LASH OF SLAANESH", "Signature Spell", cast: "6+")[_Lash of Slaanesh_ is a *direct damage* spell. Extend a straight line, 24" in length, within the caster’s forward arc and directly from their base. Each model in the way (determined using the line template) suffers a Strength 4 hit with the Armour Piercing (1) special rule. Any unit that suffers a casualty from this spell may not march in its next Movement phase.]
 
-When a spell from the Lore of Tzeentch is successfully cast you may add a Power Dice to your pool for each natural 6 that was rolled to cast the spell, after resolving the spell's effect(s).
+#spell("HYSTERICAL FRENZY", 1, cast: "6+")[Remains in play. _Hysterical Frenzy_ is an *augment/hex* spell with a range of 24". While the spell is in effect, the target gains the Frenzy special rule (which is not lost if the unit is defeated in close combat) and suffers D6 Strength 3 hits at the end of each of the caster’s Magic phases.]
 
-#namecost("BLUE FIRE OF TZEENTCH", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("PAVANE OF SLAANESH", 1, cast: "6+")[_Pavane of Slaanesh_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). If successfully cast, the target must pass a Leadership test on their own unmodified Leadership or suffer 1 Wound which Ignores Armour Saves for every point they failed the test by.]
 
-_Blue Fire of Tzeentch_ is a *magic missile* with a range of 24" that causes D6 Strength D6+1 hits with the Flaming Attacks special rule.
+#spell("SUCCOUR OF CHAOS", 1, cast: "6+")[_Succour of Chaos_ is an *augment* spell with a range of 18". The target gains the Always Strikes First special rule until the start of the caster's next Magic phase.]
 
-#namecost("BALEFUL TRANSMOGRIFICATION", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("TITILLATING DELUSIONS", 2, cast: "7+")[Remains in Play. Titillating Delusions is a *hex* spell with a range of 24". Place a marker (this has a Line of Sight value of 1) within 24". While the spell is in effect, the target must pass a Leadership test at the start of each of their Movement phases or be forced to move towards the target as quickly as possible. The spell is automatically dispelled as soon as the unit reaches the marker or loses Line of Sight to it.]
 
-_Baleful Transmogrification_ is a *direct damage* spell with a range of 24". The target suffers D3 Strength D6 Hits which Ignores Armour Saves. If a 3 is rolled for the number of Hits, it suffers an additional D3 hits.
+#spell("SLOTHFUL STUPOR", 2, cast: "8+")[_Slothful Stupor_ is a *hex* spell with a range of 24". The target suffers \-2 Leadership and gains the Stupidity special rule until the start of the caster’s next Magic phase.]
 
-#namecost("BOON OF TZEENTCH", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("ACQUIESCENCE", 2, cast: "9+")[_Acquiescence_ is a *hex* spell with a range of 24". The target unit is subject to the Always Strikes Last and Random Movement (D6) special rules until the start of the caster’s next Magic phase.]
 
-_Boon of Tzeentch_ is an *augment* spell that is cast on the Wizard itself. The Wizard immediately gains D3+1 Power dice, that only they may use.
+#spell("DELICIOUS EXCRUCIATION", 3, cast: "9+")[_Delicious Excruciation_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target are automatically Hit in close combat and gain the Unbreakable special rule.]
 
-#namecost("PANDEMONIUM", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("SLICING SHARDS", 3, cast: "10+")[_Slicing Shards_ is a *magic missile* with a range of 24" that inflicts D6 Strength 4 hits with the Armour Piercing (1) special rule. The target must then immediately pass a Leadership test or suffer a further D6 hits. The target must keep taking Leadership tests until it passes, or is removed as a casualty.]
 
-_Pandemonium_ is a *hex* spell with a range of 24". Until the start of the caster’s next Magic phase, the target unit must use the lowest Leadership value in the unit (including that of mounts) and cannot benefit from the Inspiring Presence or Hold Your Ground! abilities.
+#spell("PHANTASMAGORIA", 3, cast: "10+")[_Phantasmagoria_ is a *hex* spell with a range of 24". Until the start of the caster’s next Magic phase, the target unit must roll an additional D6 whenever it takes a Leadership test, discarding the lowest result rolled.]
 
-#namecost("PINK FIRE OF TZEENTCH", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("CACOPHONIC CHOIR", 4, cast: "15+")[_Cacophonic Choir_ is a *hex* spell with a range of 12". The target takes 3D6 hits that wound on a 4+ which Ignores Armour saves. If at least one unsaved Wound is caused, the target is subject to the Always Strikes Last and Random Movement (D6) special rules until the start of the caster’s next Magic phase.]
 
-_Pink Fire of Tzeentch_ is a *direct damage* spell. Place the teardrop-shaped template with its narrow end touching the front of the Wizard’s base and the large end aimed at the target. Roll 2D6 and move the template directly forwards the number of inches indicated. All models underneath the template suffer a Strength D6+1 hit (roll once and apply the result to all models) with the Flaming Attacks special rule.
+#spell("ECSTATIC SEIZURES", 4, cast: "15+")[_Ecstatic Seizures_ is a *direct damage* spell with a range of 12". All models in the target unit must pass a Strength test or suffer 1 Wound which Ignores Armour Saves.]
 
-#namecost("BOLT OF CHANGE", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Bolt of Change_ is a *magic missile* with a range of 24". It inflicts a single Strength D6+4 hit with the Multiple Wounds (D3), Ignores Armour Saves and Flaming Attacks special rules, and then penetrates ranks in the same manner as a shot from a bolt thrower.
-
-#namecost("SHIELD OF FATE", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Shield of Fate_ is an *augment* spell with a range of 18". The target may re-roll armour and Ward save rolls of 1 until the start of the caster’s next Magic phase.
-
-#namecost("FOLD REALITY", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Fold Reality_ is an *augment* spell with a range of 18". The target unit instantly recovers D3+1 Wounds' worth of models slain earlier in the battle, just like a summoning spell. However, if a 1 is rolled, the target suffers D3+1 Wounds with no saves allowed instead.
-
-#namecost("GLEAN MAGIC", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Glean Magic_ is a *hex* spell that targets a single enemy Wizard within 18". The caster and the target both roll a D6 and add their Wizard level to the score. If the caster rolls higher, the target suffers a Strength 4 hit with the Flaming Attacks special rule and loses one Wizard level (along with one spell). The caster gains access to this spell (unless it is a *summoning* spell) and can cast it themselves for the remainder of the game (using Boon of Magic as the Lore Attribute).
-
-#namecost("TZEENTCH'S FIRESTORM", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Tzeentch's Firestorm_ is a *direct damage area* with a range of 30" that uses the small round template. All models hit by the template suffer a Strength D6+1 hit (roll once and apply the result to all models) with the Flaming Attacks special rule.
-
-#namecost("DAEMONFIRE VORTEX", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in play. _Daemonfire Vortex_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength D6+1 hit (roll once for each unit and apply the result to all models in that unit) with the Flaming Attacks special rule.
-
-#namecost("TREASON OF TZEENTCH", "")
-#namecost("Level 4 Cast on 14+", "")
-
-_Treason of Tzeentch_ is a *hex* spell with a range of 24". All models in the unit immediately make a number of close combat attacks equal to the models' Attack characteristic (in addition to any extra Attacks from weapons) against the unit itself. Roll To Hit, To Wound and take saves as normal. The caster may choose which of the unit's weapons is used for these attacks. Parry or Dodge save does not apply, and neither do any special rules that only applies in the first round of close combat.
-
-#namecost("INFERNAL GATEWAY", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Infernal Gateway_ is a *direct damage* spell with a range of 24". The target suffers 2D6 Strength 2D6 hits with the Flaming Attacks special rule. Roll for the Strength first. If an 11 or 12 is rolled when determining the spell’s Strength value, the hits are resolved at Strength 10, and the unit suffers 3D6 hits rather than 2D6.
+#spell("SONG OF SEDUCTION", 4, cast: "15+")[Remains in play. _Song of Seduction_ is a *hex* spell with a range of 24". While the spell is in effect, this unit is wholly under the caster's control. It may move and shoot (but not charge, cast spells or channel dice) during the enemy's turn as if it were your own unit. At the end of each subsequent Magic phase, the unit must take a Leadership test. If passed, the spell is dispelled. The spell is immediately dispelled if the unit becomes engaged in close combat.]
 ]
+#lore("THE LORE OF TZEENTCH")[
 
+#spell("BOON OF MAGIC", "Lore Attribute")[When a spell from the Lore of Tzeentch is successfully cast you may add a Power Dice to your pool for each natural 6 that was rolled to cast the spell, after resolving the spell's effect(s).]
+
+#spell("BLUE FIRE OF TZEENTCH", "Signature Spell", cast: "6+")[_Blue Fire of Tzeentch_ is a *magic missile* with a range of 24" that causes D6 Strength D6+1 hits with the Flaming Attacks special rule.]
+
+#spell("BALEFUL TRANSMOGRIFICATION", 1, cast: "6+")[_Baleful Transmogrification_ is a *direct damage* spell with a range of 24". The target suffers D3 Strength D6 Hits which Ignores Armour Saves. If a 3 is rolled for the number of Hits, it suffers an additional D3 hits.]
+
+#spell("BOON OF TZEENTCH", 1, cast: "6+")[_Boon of Tzeentch_ is an *augment* spell that is cast on the Wizard itself. The Wizard immediately gains D3+1 Power dice, that only they may use.]
+
+#spell("PANDEMONIUM", 1, cast: "7+")[_Pandemonium_ is a *hex* spell with a range of 24". Until the start of the caster’s next Magic phase, the target unit must use the lowest Leadership value in the unit (including that of mounts) and cannot benefit from the Inspiring Presence or Hold Your Ground! abilities.]
+
+#spell("PINK FIRE OF TZEENTCH", 2, cast: "8+")[_Pink Fire of Tzeentch_ is a *direct damage* spell. Place the teardrop-shaped template with its narrow end touching the front of the Wizard’s base and the large end aimed at the target. Roll 2D6 and move the template directly forwards the number of inches indicated. All models underneath the template suffer a Strength D6+1 hit (roll once and apply the result to all models) with the Flaming Attacks special rule.]
+
+#spell("BOLT OF CHANGE", 2, cast: "8+")[_Bolt of Change_ is a *magic missile* with a range of 24". It inflicts a single Strength D6+4 hit with the Multiple Wounds (D3), Ignores Armour Saves and Flaming Attacks special rules, and then penetrates ranks in the same manner as a shot from a bolt thrower.]
+
+#spell("SHIELD OF FATE", 2, cast: "8+")[_Shield of Fate_ is an *augment* spell with a range of 18". The target may re-roll armour and Ward save rolls of 1 until the start of the caster’s next Magic phase.]
+
+#spell("FOLD REALITY", 3, cast: "8+")[_Fold Reality_ is an *augment* spell with a range of 18". The target unit instantly recovers D3+1 Wounds' worth of models slain earlier in the battle, just like a summoning spell. However, if a 1 is rolled, the target suffers D3+1 Wounds with no saves allowed instead.]
+
+#spell("GLEAN MAGIC", 3, cast: "8+")[_Glean Magic_ is a *hex* spell that targets a single enemy Wizard within 18". The caster and the target both roll a D6 and add their Wizard level to the score. If the caster rolls higher, the target suffers a Strength 4 hit with the Flaming Attacks special rule and loses one Wizard level (along with one spell). The caster gains access to this spell (unless it is a *summoning* spell) and can cast it themselves for the remainder of the game (using Boon of Magic as the Lore Attribute).]
+
+#spell("TZEENTCH'S FIRESTORM", 3, cast: "11+")[_Tzeentch's Firestorm_ is a *direct damage area* with a range of 30" that uses the small round template. All models hit by the template suffer a Strength D6+1 hit (roll once and apply the result to all models) with the Flaming Attacks special rule.]
+
+#spell("DAEMONFIRE VORTEX", 4, cast: "12+")[Remains in play. _Daemonfire Vortex_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength D6+1 hit (roll once for each unit and apply the result to all models in that unit) with the Flaming Attacks special rule.]
+
+#spell("TREASON OF TZEENTCH", 4, cast: "14+")[_Treason of Tzeentch_ is a *hex* spell with a range of 24". All models in the unit immediately make a number of close combat attacks equal to the models' Attack characteristic (in addition to any extra Attacks from weapons) against the unit itself. Roll To Hit, To Wound and take saves as normal. The caster may choose which of the unit's weapons is used for these attacks. Parry or Dodge save does not apply, and neither do any special rules that only applies in the first round of close combat.]
+
+#spell("INFERNAL GATEWAY", 4, cast: "15+")[_Infernal Gateway_ is a *direct damage* spell with a range of 24". The target suffers 2D6 Strength 2D6 hits with the Flaming Attacks special rule. Roll for the Strength first. If an 11 or 12 is rolled when determining the spell’s Strength value, the hits are resolved at Strength 10, and the unit suffers 3D6 hits rather than 2D6.]
+]
 = GIFTS OF THE GODS
 
 #columns(2)[
