@@ -529,10 +529,14 @@
 
 // --- profiles ---------------------------------------------------------------
 
+// The label sits on the same line as the value it introduces, so it is set at
+// the body size rather than under it - at 9pt against 10.5pt the two halves of
+// one line read as two different registers. `1em` rather than a fixed 10.5pt so
+// the label follows whatever size `book()` is given.
 #let field(label, value) = {
   [#metadata((kind: "field", label: label, value: value))<meta>]
   block(above: 0.3em, below: 0.3em)[
-    #text(weight: "bold", size: 9pt, tracking: 0.07em)[#upper(label):]
+    #text(weight: "bold", size: 1em, tracking: 0.07em)[#upper(label):]
     #if value != "" [ #value ]
   ]
 }
@@ -638,6 +642,234 @@
 #let chartlabel(name) = block(above: 0.3em, below: 0.3em, align(center,
   text(size: 8.5pt, weight: "bold", tracking: 0.12em, fill: muted)[#upper(name)],
 ))
+
+// --- unit entries as records ------------------------------------------------
+
+// A unit entry written as one call instead of as a run of primitives. It renders
+// *through* those primitives - `entry`, `profile`, `field`, `options` - and emits
+// exactly what the hand-written form emits, so adopting it changes the source and
+// not a glyph of the page.
+//
+// What it buys is a closed vocabulary. `#field` takes any string, and across 45
+// books the labels drifted: EQIPMENT in Daemons of Chaos, HANDLER beside
+// HANDLERS, UPGRADE beside UPGRADES, NOTE beside NOTES. Here every field is a
+// named argument, so each of those is a compile error naming the entry it is in.
+// It also retires the 2,306 `#field("OPTIONS", "")` calls whose whole job was to
+// print a label for the list beneath them: the label comes from the parameter.
+//
+// `#field` itself stays unchecked. The design-notes chapters use it as a bare
+// mini-heading - `#field("Blood Knights", "")` over a paragraph of pricing
+// argument - which is not a unit field and should not be validated as one.
+
+// Authoring key and printed label, in the order the corpus sets them. 1,912 of
+// the 2,009 entries with a stat line already run in exactly this order; the 97
+// that do not pass `order:` and say so, which is better than the sequence form,
+// where the deviation is invisible.
+#let UNIT_FIELDS = (
+  (key: "unit-size", label: "UNIT SIZE"),
+  (key: "troop-type", label: "TROOP TYPE"),
+  (key: "mount", label: "MOUNT"),
+  (key: "crew", label: "CREW"),
+  (key: "handler", label: "HANDLER"),
+  (key: "handlers", label: "HANDLERS"),
+  (key: "drawn-by", label: "DRAWN BY"),
+  (key: "base-size", label: "BASE SIZE"),
+  (key: "equipment", label: "EQUIPMENT"),
+  (key: "magic", label: "MAGIC"),
+  // Book-specific lists of innate powers. Named rather than left free-form
+  // because each is a fixed printed label recurring across a book's special
+  // characters, and a free slot would admit a typo in the one place the
+  // vocabulary exists to catch one. All five sit between MAGIC and SPECIAL
+  // RULES, three of them ahead of MAGIC ITEMS and two behind it.
+  (key: "daemonic-gifts", label: "DAEMONIC GIFTS"),
+  (key: "disciplines-of-the-old-ones", label: "DISCIPLINES OF THE OLD ONES"),
+  (key: "gifts-of-the-gods", label: "GIFTS OF THE GODS"),
+  (key: "magic-items", label: "MAGIC ITEMS"),
+  (key: "gifts-of-khaine", label: "GIFTS OF KHAINE"),
+  (key: "vampiric-powers", label: "VAMPIRIC POWERS"),
+  (key: "special-rules", label: "SPECIAL RULES"),
+  (key: "upgrades", label: "UPGRADES"),
+  (key: "options", label: "OPTIONS"),
+  (key: "notes", label: "NOTES"),
+)
+
+#let _UNIT_KEYS = UNIT_FIELDS.map(f => f.key)
+#let _UNIT_LABELS = {
+  let d = (:)
+  for f in UNIT_FIELDS { d.insert(f.key, f.label) }
+  d
+}
+
+// The settings that are the entry itself rather than one of its fields.
+#let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
+                      "before", "after", "labels", "solo", "breakable")
+
+// A named rule bullet - the `- *Impetuous:* ...` the corpus writes by hand - as a
+// record, the shape `magic-item` and `spell` already have. 872 entries carry one
+// or more; as data they can be read out of a book by the query that reads an item
+// out of it, instead of being markup that only renders.
+#let rule(name, body) = (kind: "rule", name: name, body: body)
+
+#let _rule-bullets(rs, where) = {
+  for r in rs {
+    assert(_typeof(r) == dictionary and r.at("kind", default: none) == "rule",
+      message: where + ": every item must be rule(..)")
+  }
+  [#metadata((kind: "rules", names: rs.map(r => r.name)))<meta>]
+  list(..rs.map(r => [*#r.name:* #r.body]))
+}
+
+// A field's value says by its type what shape the field takes, because the corpus
+// only ever writes two shapes: a label with its value on the same line, and a
+// label standing over a block of its own. A string is the first. Content, or a
+// list of `rule`/`opt` records, is the second - the label prints with nothing
+// after it, exactly as the `#field(LABEL, "")` header it replaces, and the block
+// follows. A field that needs both - SPECIAL RULES naming four rules inline and
+// then explaining a fifth - passes the inline value here and the block as the
+// companion `<field>-body`.
+// The block that stands under a field's label: either content, written as
+// markup, or a list of records - `rule(..)` for named rules, `opt(..)` and
+// `optgroup(..)` for priced options - which render as the bullets and dotted
+// leader lines the hand-written form spells out by hand.
+#let _unit-block(value, where) = {
+  if _typeof(value) != array { return value }
+  assert(value.len() > 0, message: where + ": empty list")
+  let first = value.first()
+  let kind = if _typeof(first) == dictionary { first.at("kind", default: none) } else { none }
+  if kind == "rule" {
+    _rule-bullets(value, where)
+  } else if kind in ("opt", "group") {
+    options(..value)
+  } else {
+    assert(false, message: where + ": a list must hold rule(..), or opt(..)/optgroup(..)")
+  }
+}
+
+// A field's value says by its type what shape the field takes. A string is the
+// label with its value on the same line. Anything else is the label standing
+// over a block of its own - printed exactly as the `#field(LABEL, "")` header it
+// replaces, with the block beneath.
+#let _unit-field(key, value, labels) = {
+  let label = labels.at(key, default: _UNIT_LABELS.at(key))
+  if _typeof(value) == str {
+    field(label, value)
+  } else {
+    field(label, "")
+    _unit-block(value, "unit field " + key)
+  }
+}
+
+// One unit, one call. `name` is the only positional argument; everything else is
+// named, so a value can never land in the wrong field by being written in the
+// wrong place - the same reason `profile` takes dictionaries rather than rows.
+//
+// The fields render in `UNIT_FIELDS` order whatever order they are written in,
+// so the 171 orderings the sequence form let through collapse to one. `order:`
+// re-sets it for an entry whose source genuinely deviates, and must name exactly
+// the fields the entry sets, so it cannot silently drop one.
+#let unit(name, ..named) = {
+  let where = "unit " + name
+  assert(named.pos().len() == 0,
+    message: where + ": fields are named, not positional")
+  let args = named.named()
+
+  let unknown = args.keys().filter(k => {
+    if k in _UNIT_SETTINGS or k in _UNIT_KEYS { false }
+    else if k.ends-with("-body") { k.slice(0, -5) not in _UNIT_KEYS }
+    else { true }
+  })
+  assert(unknown.len() == 0,
+    message: where + ": unknown field " + unknown.join(", ")
+      + " (known: " + _UNIT_KEYS.join(", ") + ")")
+
+  // A `<field>-body` with no field above it would print a block under no label.
+  let orphan = args.keys()
+    .filter(k => k.ends-with("-body") and k.slice(0, -5) in _UNIT_KEYS)
+    .filter(k => k.slice(0, -5) not in args)
+  assert(orphan.len() == 0,
+    message: where + ": " + orphan.join(", ") + " set without the field it belongs under")
+
+  let present = _UNIT_KEYS.filter(k => k in args)
+  let order = if "order" in args {
+    let o = args.order
+    let missing = present.filter(k => k not in o)
+    let extra = o.filter(k => k not in present)
+    assert(missing.len() == 0 and extra.len() == 0,
+      message: where + ": order"
+        + if missing.len() > 0 { " omits " + missing.join(", ") } else { "" }
+        + if extra.len() > 0 { " names unset " + extra.join(", ") } else { "" })
+    o
+  } else { present }
+
+  // A field whose printed label is not the one the vocabulary gives it. Used
+  // where the source misprints a label and the book reproduces it: Daemons of
+  // Chaos heads four entries EQIPMENT. Naming the override here keeps the field
+  // a known one, and keeps the misprint deliberate and greppable rather than a
+  // fifth spelling loose in the vocabulary.
+  let labels = args.at("labels", default: (:))
+  for (k, v) in labels {
+    assert(k in args,
+      message: where + ": labels names " + k + ", which the entry does not set")
+    assert(_typeof(v) == str,
+      message: where + ": label for " + k + " must be a string")
+  }
+
+  let body = {
+    // The run-in line under a special character's name - "High King of
+    // Karaz-a-Karak" - which 463 entries set between the name and the profile.
+    // It is `namecost` with no cost, the same call a magic item's name is set
+    // with, so a subtitle and an item head sit on the same baseline.
+    if "subtitle" in args { namecost(args.subtitle, "") }
+    if "profiles" in args { profile(..args.profiles) }
+    if "before" in args { args.before }
+    for k in order {
+      _unit-field(k, args.at(k), labels)
+      if k + "-body" in args {
+        _unit-block(args.at(k + "-body"), "unit field " + k + "-body")
+      }
+    }
+    if "after" in args { args.after }
+  }
+
+  // Three ways an entry meets the page, and the entry says which it is.
+  //
+  // `compact` is the character mount: a stat line and two fields, which would
+  // leave a page of its own empty, so it shares one.
+  //
+  // `solo` opens a page of its own. Reserved for special characters, where the
+  // entry is the spread - a named lord with his own art, his own magic items and
+  // half a page of rules - and starting him halfway down a page under someone
+  // else's options loses that.
+  //
+  // Everything else flows. Entries follow one another down the page and a new
+  // page starts when the last one is full, which is how the source sets its
+  // ordinary units and how a reader looks two of them up side by side. The block
+  // is unbreakable so an entry that does not fit moves whole rather than
+  // straddling; `breakable` lifts that for the entries taller than a page, which
+  // have to split somewhere and would otherwise overflow the page and lose their
+  // tail silently.
+  if args.at("compact", default: false) {
+    compact-entry(name, body)
+  } else if args.at("solo", default: false) {
+    entry(name, first: args.at("first", default: false))
+    body
+  } else {
+    [#metadata((kind: "entry", name: name))<meta>]
+    block(
+      breakable: args.at("breakable", default: false),
+      // Entries share a page now, so the gap between two of them is the only
+      // thing telling a reader where one unit stops and the next starts. At the
+      // old 1.6em that gap measured 12pt against the 10pt *inside* an entry,
+      // between a profile and its fields - which read as one long entry rather
+      // than two. 3.2em puts about three line-heights between them.
+      above: 3.2em, below: 0.6em,
+      {
+        heading(level: 2, name)
+        body
+      },
+    )
+  }
+}
 
 // --- front matter -----------------------------------------------------------
 

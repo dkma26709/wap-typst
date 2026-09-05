@@ -568,17 +568,17 @@ The unit carrying this standard automatically enters the battlefield when using 
 
 = CHARACTERS
 
-#entry("CHIEFTAINS", first: true)
-#profile(
-  (name: "Beastlord", m: 5, ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 125),
-  (name: "Wargor", m: 5, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 8, points: 85),
-)
-#field("TROOP TYPE", "Infantry (Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider, Primal Fury")
-#field("OPTIONS", "")
-
+#unit("CHIEFTAINS",
+  first: true,
+  profiles: (
+    (name: "Beastlord", m: 5, ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 125),
+    (name: "Wargor", m: 5, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 4, a: 3, ld: 8, points: 85),
+  ),
+  troop-type: "Infantry (Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider, Primal Fury",
+  options: [
 - May choose one of the following:
   - Spear +3 points
   - Additional hand weapon +5 points
@@ -603,21 +603,22 @@ The unit carrying this standard automatically enters the battlefield when using 
 - One Wargor may carry the Battle Standard +25 points
 - A Wargor may take Mutations & Traits and/or Magic Items up to a total of 50 points
 - A Beastlord may take Mutations & Traits and/or Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("BRAY-SHAMANS")
-#profile(
-  (name: "Great Bray-Shaman", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 180),
-  (name: "Bray-Shaman", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 1, ld: 7, points: 75),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Bray-Shaman is a Level 1 Wizard. A Great Bray-Shaman is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("BRAY-SHAMANS",
+  profiles: (
+    (name: "Great Bray-Shaman", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 180),
+    (name: "Bray-Shaman", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 1, ld: 7, points: 75),
+  ),
+  troop-type: "Infantry (Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  magic: "A Bray-Shaman is a Level 1 Wizard. A Great Bray-Shaman is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Chaos
 - Death
@@ -625,10 +626,9 @@ The unit carrying this standard automatically enters the battlefield when using 
 - Wild
 
 A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh must use the Lore of Tzeentch, Nurgle, or Slaanesh, respectively.
-
-#field("SPECIAL RULES", "Forest Strider, Primal Fury")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Forest Strider, Primal Fury",
+  options: [
 - May take an additional Wizard Level +35 points
 - May have the Ambushers special rule (model on foot only) +5 points
 - May choose one of the following:
@@ -640,18 +640,19 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
   - Ramhorn (replacing one of the crew) +250 points
 - A Bray-Shaman may take Mutations & Traits and/or Magic Items up to a total of 50 points
 - A Great Bray-Shaman may take Mutations & Traits and/or Magic Items up to a total of 100 points
-
-#entry("MINOTAUR CHAMPIONS")
-#profile(
-  (name: "Doombull", m: 6, ws: 6, bs: 3, s: 6, t: 5, w: 5, i: 5, a: 6, ld: 8, points: 240),
-  (name: "Gorebull", m: 6, ws: 5, bs: 3, s: 6, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 180),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Beastman, Minotaur)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Bloodgreed, Impact Hits (1)")
-#field("OPTIONS", "")
 
+#unit("MINOTAUR CHAMPIONS",
+  profiles: (
+    (name: "Doombull", m: 6, ws: 6, bs: 3, s: 6, t: 5, w: 5, i: 5, a: 6, ld: 8, points: 240),
+    (name: "Gorebull", m: 6, ws: 5, bs: 3, s: 6, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 180),
+  ),
+  troop-type: "Monstrous Infantry (Character, Beastman, Minotaur)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Bloodgreed, Impact Hits (1)",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Great weapon +10 points
@@ -667,21 +668,21 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
 - One Gorebull may carry the Battle Standard +25 points
 - A Gorebull may take Mutations & Traits and/or Magic Items up to a total of 50 points
 - A Doombull may take Mutations & Traits and/or Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("WARHOOFS")
-#profile(
-  (name: "Warhoof", m: 8, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 120),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Character, Beastman, Centigor)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "Drunken, Forest Strider, Primal Fury")
-#field("OPTIONS", "")
 
+#unit("WARHOOFS",
+  profiles: (
+    (name: "Warhoof", m: 8, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 120),
+  ),
+  troop-type: "Cavalry (Character, Beastman, Centigor)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, light armour",
+  special-rules: "Drunken, Forest Strider, Primal Fury",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +2 points
   - Light lance +4 points
@@ -700,21 +701,21 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
   - Mark of Nurgle +20 points
   - Mark of Tzeentch +20 points
 - May take Mutations & Traits and/or Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Warhoof may never be the Army General.
-
-#entry("HALFHORNS")
-#profile(
-  (name: "Halfhorn", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 30),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Beastman, Ungor)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider, Primal Fury")
-#field("OPTIONS", "")
 
+#unit("HALFHORNS",
+  profiles: (
+    (name: "Halfhorn", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 30),
+  ),
+  troop-type: "Infantry (Character, Beastman, Ungor)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider, Primal Fury",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +2 points
   - Spear +2 points
@@ -724,154 +725,164 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
 - May take light armour +2 points
 - May take a shield +2 points
 - May take Mutations & Traits and/or Magic Items up to a total of 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Halfhorn may never be the Army General.
+  ],
+)
 
 = CORE UNITS
 
-#entry("GOR HERD", first: true)
-#profile(
-  (name: "Gor", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 8),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Beastmen, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Forest Strider, Primal Fury, Unruly")
-#field("OPTIONS", "")
-
+#unit("GOR HERD",
+  first: true,
+  profiles: (
+    (name: "Gor", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Beastmen, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon, shield",
+  special-rules: "Forest Strider, Primal Fury, Unruly",
+  options: [
 - May take replace shields with additional hand weapons free
 - May take light armour +0.5 point/model
 - May upgrade one Gor to a Leader +5 points
 - May upgrade one Gor to a Musician +5 points
 - May upgrade one Gor to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("GOR RAIDERS")
-#profile(
-  (name: "Gor Raider", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 9),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Beastmen, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly")
-#field("OPTIONS", "")
 
+#unit("GOR RAIDERS",
+  profiles: (
+    (name: "Gor Raider", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 9),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Beastmen, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Two hand weapons",
+  special-rules: "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly",
+  options: [
 - May replace one hand weapon with shields free
 - May take throwing axes +2 points/model
 - May upgrade one Gor Raider to a Leader +5 points
 - May upgrade one Gor Raider to a Musician +5 points
 - May upgrade one Gor Raider to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("UNGOR HERD")
-#profile(
-  (name: "Ungor", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Beastmen, Ungor)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider, Primal Fury, Unruly")
-#field("OPTIONS", "")
 
+#unit("UNGOR HERD",
+  profiles: (
+    (name: "Ungor", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Beastmen, Ungor)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider, Primal Fury, Unruly",
+  options: [
 - May take spears +0.5 point/model
 - May take shields +1 point/model
 - May upgrade one Ungor to a Leader +5 points
 - May upgrade one Ungor to a Musician +5 points
 - May upgrade one Ungor to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("UNGOR RAIDERS")
-#profile(
-  (name: "Ungor Raider", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Beastmen, Ungor)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly")
-#field("OPTIONS", "")
 
+#unit("UNGOR RAIDERS",
+  profiles: (
+    (name: "Ungor Raider", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Beastmen, Ungor)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly",
+  options: [
 - May take throwing weapons +1 point/model
 - May upgrade one Ungor to a Leader +5 points
 - May upgrade one Ungor to a Musician +5 points
 - May upgrade one Ungor to a Standard Bearer +10 points
-
-#entry("UNGOR ARCHERS")
-#profile(
-  (name: "Ungor Archers", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 6),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Beastmen, Ungor)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shortbow")
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly")
-#field("OPTIONS", "")
 
+#unit("UNGOR ARCHERS",
+  profiles: (
+    (name: "Ungor Archers", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 6),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Beastmen, Ungor)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shortbow",
+  special-rules: "Ambushers, Forest Strider, Primal Fury, Skirmishers, Unruly",
+  options: [
 - May be upgraded to Scouts +1 point/model
 - May replace shortbows with javelins & shields +1 point/model
 - May upgrade one Ungor Raider to a Leader +5 points
 - May upgrade one Ungor Raider to a Musician +5 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not have more units of Ungor Archers than you have units of Ungor Herds or Ungor Raiders.
-
-#entry("MUTANTS")
-#profile(
-  (name: "Mutant", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Beastmen)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Expendable")
 
+#unit("MUTANTS",
+  profiles: (
+    (name: "Mutant", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 3),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Beastmen)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Expendable",
+  special-rules-body: [
 - *Mutations & Traits:* Roll a D6 at the start of the game and consult the table below to determine which mutation is the most prominent for the remainder of the game:
 
 #chart((("D6", "Result:"), ("1", "Pincer Hand: The unit gains the Armour Piercing (1) special rule."), ("2", "Scales: The unit gains the Natural Armour (6+) special rule."), ("3", "Animalistic Legs: The unit gains +1 Movement."), ("4", "Tentacle-like Arms: The unit gains +1 Attack."), ("5", "Hulking: The unit gains +1 Strength."), ("6", "Grossly Fat: The unit gains +1 Toughness.")))
-
-#entry("WARHOUNDS")
-#profile(
-  (name: "Warhound", m: 8, ws: 4, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "War Beast (Canine)")
-#field("BASE SIZE", "25x50")
-#field("OPTIONS", "")
 
+#unit("WARHOUNDS",
+  profiles: (
+    (name: "Warhound", m: 8, ws: 4, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ),
+  unit-size: "10-30",
+  troop-type: "War Beast (Canine)",
+  base-size: "25x50",
+  options: [
 - May have Natural Armour (6+) +0.5 point/model
 - May have Poisoned Attacks +1 point/model
-
-#entry("HARPIES")
-#profile(
-  (name: "Harpy", m: 5, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 6, points: 11),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Harpy)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("OPTIONS", "")
 
+#unit("HARPIES",
+  profiles: (
+    (name: "Harpy", m: 5, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 5, a: 2, ld: 6, points: 11),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Harpy)",
+  base-size: "20x20 or 25x25",
+  options: [
 - May upgrade one Harpy to a Leader +5 points
-
-#field("SPECIAL RULES", "Expendable, Independent, Fly (10)")
+  ],
+  special-rules: "Expendable, Independent, Fly (10)",
+  order: ("unit-size", "troop-type", "base-size", "options", "special-rules"),
+)
 
 = SPECIAL UNITS
 
-#entry("BESTIGORS", first: true)
-#profile(
-  (name: "Bestigor", m: 5, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 10),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Beastmen, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
-
+#unit("BESTIGORS",
+  first: true,
+  profiles: (
+    (name: "Bestigor", m: 5, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 7, points: 10),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Beastmen, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  options: [
 - May choose one of the following:
   - Mark of Khorne +2 points/model
   - Mark of Tzeentch +2 points/model
@@ -889,21 +900,23 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
 - May upgrade one Bestigor to a Musician +5 points
 - May upgrade one Bestigor to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("SPECIAL RULES", "Devastating Charge, Forest Strider, Primal Fury")
-
-- *Despoilers:* Each enemy standard bearer that is removed as a result of a successful pursuit move or slain in combat by a unit of Bestigors adds +1 to their future Combat Resolution. If the unit flees for any reason, they will lose this bonus.
-
-#entry("MINOTAURS")
-#profile(
-  (name: "Minotaur", m: 6, ws: 4, bs: 3, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 7, points: 39),
+  ],
+  special-rules: "Devastating Charge, Forest Strider, Primal Fury",
+  special-rules-body: (
+    rule("Despoilers")[Each enemy standard bearer that is removed as a result of a successful pursuit move or slain in combat by a unit of Bestigors adds +1 to their future Combat Resolution. If the unit flees for any reason, they will lose this bonus.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Beastmen, Minotaur)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("OPTIONS", "")
 
+#unit("MINOTAURS",
+  profiles: (
+    (name: "Minotaur", m: 6, ws: 4, bs: 3, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 7, points: 39),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Beastmen, Minotaur)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon, shield",
+  options: [
 - May choose one of the following:
   - Mark of Khorne +4.5 points/model
   - Mark of Tzeentch +4.5 points/model
@@ -917,19 +930,20 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
 - May upgrade one Minotaur to a Musician +5 points
 - May upgrade one Minotaur to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("SPECIAL RULES", "Bloodgreed, Impact Hits (1)")
-
-#entry("CENTIGORS")
-#profile(
-  (name: "Centigor", m: 8, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 7, points: 18),
+  ],
+  special-rules: "Bloodgreed, Impact Hits (1)",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Cavalry (Beastmen, Centigor)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light lance, buckler")
-#field("OPTIONS", "")
 
+#unit("CENTIGORS",
+  profiles: (
+    (name: "Centigor", m: 8, ws: 4, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 7, points: 18),
+  ),
+  unit-size: "5+",
+  troop-type: "Cavalry (Beastmen, Centigor)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light lance, buckler",
+  options: [
 - May choose one of the following:
   - Replace bucklers with shields +0.5 point/model
   - Replace light lance and bucklers with great weapons +1 point/model
@@ -941,224 +955,237 @@ A Bray-Shaman or Great Bray-Shaman with the Mark of Tzeentch, Nurgle or Slaanesh
 - May upgrade one Centigor to a Musician +5 points
 - May upgrade one Centigor to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Drunken, Forest Strider, Primal Fury")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Drunken, Forest Strider, Primal Fury",
+  notes: [
 - If a Centigor character is included in your army, one unit of Centigors may deploy with the Ambushers special rule.
-
-#entry("TUSKGOR CHARIOT")
-#profile(
-  (name: "Tuskgor Chariot", m: 6, ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 75),
-  (name: "Bestigor", m: "-", ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
-  (name: "Gor", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
-  (name: "Tuskgor", m: "-", ws: 3, bs: "-", s: 3, t: "-", w: "-", i: 2, a: 1, ld: "-", points: ""),
-  (name: "Razorgor", m: "-", ws: 3, bs: "-", s: 4, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "1 Gor & 1 Bestigor (Beastmen, Gor)")
-#field("DRAWN BY", "2 Tuskgors (Porcine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Light lance (Gor only), great weapon (Bestigor only), light armour")
-#field("UPGRADES", "")
 
-- *Razorgor:* A Razorgor (Porcine) replaces the Tuskgors and uses the Razorgor profile above. A Razorgor has the Fear and Tusker Charge special rules.
-
-#field("OPTIONS", "")
-
+#unit("TUSKGOR CHARIOT",
+  profiles: (
+    (name: "Tuskgor Chariot", m: 6, ws: "-", bs: "-", s: 5, t: 5, w: 4, i: "-", a: "-", ld: "-", points: 75),
+    (name: "Bestigor", m: "-", ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+    (name: "Gor", m: "-", ws: 4, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+    (name: "Tuskgor", m: "-", ws: 3, bs: "-", s: 3, t: "-", w: "-", i: 2, a: 1, ld: "-", points: ""),
+    (name: "Razorgor", m: "-", ws: 3, bs: "-", s: 4, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "1 Gor & 1 Bestigor (Beastmen, Gor)",
+  drawn-by: "2 Tuskgors (Porcine)",
+  base-size: "50x100",
+  equipment: "Light lance (Gor only), great weapon (Bestigor only), light armour",
+  upgrades: (
+    rule("Razorgor")[A Razorgor (Porcine) replaces the Tuskgors and uses the Razorgor profile above. A Razorgor has the Fear and Tusker Charge special rules.],
+  ),
+  options: [
 - May replace Tuskgors with Razorgor +20 points
 - May be upgraded to a standard bearer +10 points
-
-#field("SPECIAL RULES", "Natural Armour (6+), Primal Fury, Tusker Charge (Tuskgor only)")
-
-#compact-entry("RAZORGORS")[
-#profile(
-  (name: "Razorgor", m: 7, ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 6, points: 42),
+  ],
+  special-rules: "Natural Armour (6+), Primal Fury, Tusker Charge (Tuskgor only)",
+  order: ("troop-type", "crew", "drawn-by", "base-size", "equipment", "upgrades", "options", "special-rules"),
 )
-#field("UNIT SIZE", "1-6")
-#field("TROOP TYPE", "Monstrous Beast (Porcine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Impact Hits (D3), Natural Armour (6+), Tusker Charge")
-]
 
-#compact-entry("BALEWOLVES")[
-#profile(
-  (name: "Balewolf", m: 8, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 7, points: 60),
+#unit("RAZORGORS",
+  compact: true,
+  profiles: (
+    (name: "Razorgor", m: 7, ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 6, points: 42),
+  ),
+  unit-size: "1-6",
+  troop-type: "Monstrous Beast (Porcine)",
+  base-size: "50x50 or 50x75",
+  special-rules: "Impact Hits (D3), Natural Armour (6+), Tusker Charge",
 )
-#field("UNIT SIZE", "1-6")
-#field("TROOP TYPE", "Monstrous Beast (Canine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Killing Blow, Natural Armour (5+), Regeneration (5+)")
-]
 
-#entry("TROLLS")
-#profile(
-  (name: "Troll", m: 6, ws: 3, bs: 1, s: 5, t: 4, w: 3, i: 1, a: 3, ld: 6, points: 46),
+#unit("BALEWOLVES",
+  compact: true,
+  profiles: (
+    (name: "Balewolf", m: 8, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 7, points: 60),
+  ),
+  unit-size: "1-6",
+  troop-type: "Monstrous Beast (Canine)",
+  base-size: "50x50 or 50x75",
+  special-rules: "Killing Blow, Natural Armour (5+), Regeneration (5+)",
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Troll)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Independent, Natural Armour (6+), Regeneration (4+), Stupidity")
 
-- *Troll Vomit:* In addition to their normal Attacks, models with this special rule inflicts one automatic Strength 4 hit which Ignores Armour Saves after resolving all their normal Attacks. This cannot be used with supporting attacks.
-
-#field("OPTIONS", "")
-
+#unit("TROLLS",
+  profiles: (
+    (name: "Troll", m: 6, ws: 3, bs: 1, s: 5, t: 4, w: 3, i: 1, a: 3, ld: 6, points: 46),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Troll)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Independent, Natural Armour (6+), Regeneration (4+), Stupidity",
+  special-rules-body: (
+    rule("Troll Vomit")[In addition to their normal Attacks, models with this special rule inflicts one automatic Strength 4 hit which Ignores Armour Saves after resolving all their normal Attacks. This cannot be used with supporting attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
   - Great weapons +6 points/model
 - May take light armour +3 points/model
-
-#entry("SPAWN OF CHAOS")
-#profile(
-  (name: "Spawn of Chaos", m: "*", ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 2, a: "*", ld: 10, points: 40),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Monstrous Beast (Chaos Beast)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Random Attacks (D6+1), Random Movement (2D6), Unbreakable")
-#field("UPGRADES", "")
 
-- *Spawn of Khorne:* A Spawn of Khorne has +1 Strength.
-- *Spawn of Nurgle:* A Spawn of Nurgle has the Poisoned Attacks special rule.
-- *Spawn of Slaanesh:* A Spawn of Slaanesh rolls an additional D6 for their Random Movement result.
-- *Spawn of Tzeentch:* A Spawn of Tzeentch has a Strength 3 Breath Weapon that has the Flaming Attacks special rule.
-
-#field("OPTIONS", "")
-
+#unit("SPAWN OF CHAOS",
+  profiles: (
+    (name: "Spawn of Chaos", m: "*", ws: 3, bs: 0, s: 4, t: 5, w: 3, i: 2, a: "*", ld: 10, points: 40),
+  ),
+  unit-size: "1-3",
+  troop-type: "Monstrous Beast (Chaos Beast)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Random Attacks (D6+1), Random Movement (2D6), Unbreakable",
+  upgrades: (
+    rule("Spawn of Khorne")[A Spawn of Khorne has +1 Strength.],
+    rule("Spawn of Nurgle")[A Spawn of Nurgle has the Poisoned Attacks special rule.],
+    rule("Spawn of Slaanesh")[A Spawn of Slaanesh rolls an additional D6 for their Random Movement result.],
+    rule("Spawn of Tzeentch")[A Spawn of Tzeentch has a Strength 3 Breath Weapon that has the Flaming Attacks special rule.],
+  ),
+  options: [
 - May choose one of the following:
   - Spawn of Nurgle +10 points
   - Spawn of Slaanesh +10 points
   - Spawn of Khorne +15 points
   - Spawn of Tzeentch +20 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may take 1\-2 lone Spawn of Chaos as a single Special choice.
-
-#entry("PREYTON")
-#profile(
-  (name: "Preyton", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 5, a: 3, ld: 6, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Beast (Cervine)")
-#field("BASE SIZE", "50x50 or 75x50")
-#field("SPECIAL RULES", "Fly (8), Forest Strider, Impact Hits (D3)")
 
-- *Consuming Hatred:* A Preyton has the Hatred special rule. Any wounds it suffers during close combat are included in its player's own Combat result score as well as that of their opponent's.
-- *Endless Malice:* If the Preyton has killed one or more models that round of close combat and the enemy unit Breaks, it may not pursue. All enemy units within 12" and with line of sight to the Preyton must immediately take a Panic test after the broken unit has finished their Flee move.
-
-#field("UPGRADES", "")
-
-- *Filth-Encrusted Scales:* The Preyton gains the Natual Armour (5+) special rule.
-- *Forest Stalker:* The Preyton gains the Ambushers special rule.
-- *Insane Bloodlust:* The Preyton gains the Frenzy special rule.
-
-#field("OPTIONS", "")
-
+#unit("PREYTON",
+  profiles: (
+    (name: "Preyton", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 5, a: 3, ld: 6, points: 70),
+  ),
+  troop-type: "Monstrous Beast (Cervine)",
+  base-size: "50x50 or 75x50",
+  special-rules: "Fly (8), Forest Strider, Impact Hits (D3)",
+  special-rules-body: (
+    rule("Consuming Hatred")[A Preyton has the Hatred special rule. Any wounds it suffers during close combat are included in its player's own Combat result score as well as that of their opponent's.],
+    rule("Endless Malice")[If the Preyton has killed one or more models that round of close combat and the enemy unit Breaks, it may not pursue. All enemy units within 12" and with line of sight to the Preyton must immediately take a Panic test after the broken unit has finished their Flee move.],
+  ),
+  upgrades: (
+    rule("Filth-Encrusted Scales")[The Preyton gains the Natual Armour (5+) special rule.],
+    rule("Forest Stalker")[The Preyton gains the Ambushers special rule.],
+    rule("Insane Bloodlust")[The Preyton gains the Frenzy special rule.],
+  ),
+  options: [
 - May take Forest Stalker +5 points
 - May take Filth-Encrusted Scales +10 points
 - May take Insane Bloodlust +15 points
-
-#entry("COCKATRICE")
-#profile(
-  (name: "Cockatrice", m: 4, ws: 4, bs: 5, s: 5, t: 5, w: 4, i: 6, a: 4, ld: 6, points: 165),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Fly (8), Natural Armour (4+)")
 
+#unit("COCKATRICE",
+  profiles: (
+    (name: "Cockatrice", m: 4, ws: 4, bs: 5, s: 5, t: 5, w: 4, i: 6, a: 4, ld: 6, points: 165),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50",
+  special-rules: "Fly (8), Natural Armour (4+)",
+  special-rules-body: [
 - *Petrifying Gaze:* Petrifying Gaze has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Ignores Armour saves, Heroic Killing Blow, Magical Attacks, Multiple Shots (2), Quick to Fire"))
 
 When rolling To Wound, substitute the target's Toughness with its Initiative value. This attack does not suffer any To Hit penalties.
-
-#entry("MANTICORE")
-#profile(
-  (name: "Manticore", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 5, points: 150),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (8), Frenzy, Killing Blow")
-#field("OPTIONS", "")
 
+#unit("MANTICORE",
+  profiles: (
+    (name: "Manticore", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 5, points: 150),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50, 50x100 or 60x100",
+  special-rules: "Fly (8), Frenzy, Killing Blow",
+  options: [
 - May take Rending Fangs +5 points
 - May take Bloodrage +15 points
 - May take Iron-hard Skin +15 points
 - May take Venom Tail +15 points
-
-#field("UPGRADES", "")
-
-- *Bloodrage:* The Manticore gains the Hatred special rule.
-- *Iron-hard Skin:* The Manticore gains the Natural Armour (5+) special rule.
-- *Rending Fangs:* The Manticore gains the Armour Piercing (1) special rule.
-- *Venom Tail:* The Manticore gains an additional Attack that has the Poisoned Attacks special rule.
+  ],
+  upgrades: (
+    rule("Bloodrage")[The Manticore gains the Hatred special rule.],
+    rule("Iron-hard Skin")[The Manticore gains the Natural Armour (5+) special rule.],
+    rule("Rending Fangs")[The Manticore gains the Armour Piercing (1) special rule.],
+    rule("Venom Tail")[The Manticore gains an additional Attack that has the Poisoned Attacks special rule.],
+  ),
+  order: ("troop-type", "base-size", "special-rules", "options", "upgrades"),
+)
 
 = RARE UNITS
 
-#entry("DRAGON OGRES", first: true)
-#profile(
-  (name: "Dragon Ogre", m: 7, ws: 4, bs: 2, s: 5, t: 5, w: 4, i: 2, a: 3, ld: 8, points: 55),
-)
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Dragon Ogre)")
-#field("BASE SIZE", "40x40, 50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("OPTIONS", "")
-
+#unit("DRAGON OGRES",
+  first: true,
+  profiles: (
+    (name: "Dragon Ogre", m: 7, ws: 4, bs: 2, s: 5, t: 5, w: 4, i: 2, a: 3, ld: 8, points: 55),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Dragon Ogre)",
+  base-size: "40x40, 50x50 or 50x75",
+  equipment: "Hand weapon, light armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +4 points/model
   - Polearm +6 points/model
   - Great weapons +9 points/model
 - May take medium armour +8 points/model
 - May upgrade one Dragon Ogre to a Leader +5 points
-
-#field("SPECIAL RULES", "Independent, Natural Armour (5+)")
-
-- *Storm Rage:* Dragon Ogres have the Immunity (Lightning Attacks) special rule. In addition, if they are hit with a Lightning Attack, they immediately gain the Frenzy special rule.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Independent, Natural Armour (5+)",
+  special-rules-body: (
+    rule("Storm Rage")[Dragon Ogres have the Immunity (Lightning Attacks) special rule. In addition, if they are hit with a Lightning Attack, they immediately gain the Frenzy special rule.],
+  ),
+  notes: [
 - You may take one unit of Dragon Ogres as a Special Unit instead of a Rare Unit for every Dragon Ogre Shaggoth in your army.
-
-#entry("DRAGON OGRE SHAGGOTH")
-#profile(
-  (name: "Dragon Ogre Shaggoth", m: 7, ws: 6, bs: 3, s: 6, t: 6, w: 6, i: 4, a: 5, ld: 9, points: 235),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Monster (Dragon Ogre)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("OPTIONS", "")
 
+#unit("DRAGON OGRE SHAGGOTH",
+  profiles: (
+    (name: "Dragon Ogre Shaggoth", m: 7, ws: 6, bs: 3, s: 6, t: 6, w: 6, i: 4, a: 5, ld: 9, points: 235),
+  ),
+  troop-type: "Monster (Dragon Ogre)",
+  base-size: "50x50 or 50x75",
+  equipment: "Hand weapon, light armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +6 points
   - Great weapons +15 points
 - May take medium armour +12 points
-
-#field("SPECIAL RULES", "Impact Hits (D3), Natural Armour (5+), Storm Rage (see Dragon Ogres)")
-
-- *Storm Call:* Innate Bound Spell, power level 4. _Storm Call_ is a *direct damage* spell that targets all units within a 6" radius (friend or foe). The target units suffer D3 Strength 4 Hits with the Lightning Attacks special rule.
-
-#entry("GHORGON")
-#profile(
-  (name: "Ghorgon", m: 7, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 8, ld: 10, points: 240),
+  ],
+  special-rules: "Impact Hits (D3), Natural Armour (5+), Storm Rage (see Dragon Ogres)",
+  special-rules-body: (
+    rule("Storm Call")[Innate Bound Spell, power level 4. _Storm Call_ is a *direct damage* spell that targets all units within a 6" radius (friend or foe). The target units suffer D3 Strength 4 Hits with the Lightning Attacks special rule.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Monster (Beastman)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Bloodgreed, Frenzy, Immunity (Psychology), Stubborn")
 
-- *Strength from Flesh:* Each time a Ghorgon causes a Killing Blow with its Swallow Whole special rule, it regains 1 Wound that it has lost earlier in the battle
-- *Swallow Whole:* In addition to its normal attacks, the Ghorgon may make an additional special attack at an Initiative of 1. This attack has the Killing Blow special rule, but To Wound rolls of a 4+ act as Killing Blow attacks, instead of just rolls of 6.
-
-#entry("CYGOR")
-#profile(
-  (name: "Cygor", m: 7, ws: 2, bs: 1, s: 6, t: 6, w: 6, i: 3, a: 4, ld: 8, points: 180),
+#unit("GHORGON",
+  profiles: (
+    (name: "Ghorgon", m: 7, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 8, ld: 10, points: 240),
+  ),
+  troop-type: "Monster (Beastman)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Bloodgreed, Frenzy, Immunity (Psychology), Stubborn",
+  special-rules-body: (
+    rule("Strength from Flesh")[Each time a Ghorgon causes a Killing Blow with its Swallow Whole special rule, it regains 1 Wound that it has lost earlier in the battle],
+    rule("Swallow Whole")[In addition to its normal attacks, the Ghorgon may make an additional special attack at an Initiative of 1. This attack has the Killing Blow special rule, but To Wound rolls of a 4+ act as Killing Blow attacks, instead of just rolls of 6.],
+  ),
 )
-#field("TROOP TYPE", "Monster (Beastman)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Immunity (Psychology), Magic Resistance (2), Stubborn")
 
+#unit("CYGOR",
+  profiles: (
+    (name: "Cygor", m: 7, ws: 2, bs: 1, s: 6, t: 6, w: 6, i: 3, a: 4, ld: 8, points: 180),
+  ),
+  troop-type: "Monster (Beastman)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Immunity (Psychology), Magic Resistance (2), Stubborn",
+  special-rules-body: [
 - *Ghostsight:* The Cygor may re-roll any failed To Hit when fighting Undead, Wizards, models with Magical Attacks, Magical Ward saves or any sort of magic item.
 - *Hurl Attack:* This is a missile attack that fires like a Stone Thrower with the following profile:
 
@@ -1167,112 +1194,120 @@ When rolling To Wound, substitute the target's Toughness with its Initiative val
 If the target unit contains one or more models mentioned in Ghostsight, you may re-roll the scatter dice. If a misfire is rolled, the Cygor suffers a Wound which Ignores Armour Saves.
 
 - *Soul-eater:* Enemy Wizards within 24" of one or more Cygors must take a Leadership test at the beginning of the Magic phase. If the test is failed, any spell that Wizard fails to reach the attempted casting value of will result in a miscast.
-
-#entry("JABBERSLYTHE")
-#profile(
-  (name: "Jabberslythe", m: 8, ws: 4, bs: 4, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 9, points: 175),
+  ],
 )
-#field("TROOP TYPE", "Monster (Chimeric)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("OPTIONS", "")
 
+#unit("JABBERSLYTHE",
+  profiles: (
+    (name: "Jabberslythe", m: 8, ws: 4, bs: 4, s: 5, t: 5, w: 5, i: 3, a: 5, ld: 9, points: 175),
+  ),
+  troop-type: "Monster (Chimeric)",
+  base-size: "50x100 or 60x100",
+  options: [
 - May take Lash Tail +10 points
 - May take Sinisterly Skulking +15 points
-
-#field("SPECIAL RULES", "Fly (5), Forest Strider, Immunity (Psychology), Natural Armour (4+), Poisoned Attacks")
-
+  ],
+  special-rules: "Fly (5), Forest Strider, Immunity (Psychology), Natural Armour (4+), Poisoned Attacks",
+  special-rules-body: [
 - *Aura of Madness:* Each enemy unit within 12" of one or more Jabberslythes at the beginning of the Beastmen Magic phase must take a Leadership test. For every point by which a unit fails its test, it suffers a wound which Ignores Armour Saves. This has no effect on units with Immunity (Psychology).
 - *Slythey Tongue:* This is a shooting attack with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "5", "Poisoned Attacks"))
 
 - *Spurting Bile-blood:* For every unsaved wound caused on a Jabberslythe in close combat, the attacking unit immediately suffers a Strength 5 hit.
-
-#field("UPGRADES", "")
-
-- *Lash Tail:* The Jabberslythe gains +1 Attack.
-- *Sinisterly Skulking:* The Jabberslythe gains the Ambushers special rule.
-
-#entry("HAG TREE")
-#profile(
-  (name: "Hag Tree", m: 5, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: "*", ld: 7, points: 190),
+  ],
+  upgrades: (
+    rule("Lash Tail")[The Jabberslythe gains +1 Attack.],
+    rule("Sinisterly Skulking")[The Jabberslythe gains the Ambushers special rule.],
+  ),
+  order: ("troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Monster (Chaos Beast)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Flammable, Forest Strider, Immunity (Psychology), Random Attacks (D6+2), Natural")
 
+#unit("HAG TREE",
+  profiles: (
+    (name: "Hag Tree", m: 5, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: "*", ld: 7, points: 190),
+  ),
+  troop-type: "Monster (Chaos Beast)",
+  base-size: "50x50",
+  special-rules: "Flammable, Forest Strider, Immunity (Psychology), Random Attacks (D6+2), Natural",
+  special-rules-body: [
 *Armour (3+), Stubborn*
 
 - *Constant Wailing:* Enemy units within 6" of this model suffer \-1 to their Leadership. This has no effect on units with the Immunity (Psychology) special rule.
 - *Flailing Appendages:* A Hag Tree counts as having no Flanks or Rear for the purposes of Combat Resolution.
 - *Regenerative Snacking:* For every model killed in close combat by the Hag Tree, roll a D6. On a 4+, the Hag Tree regains one wound previously lost in battle.
-
-#entry("GIANT SPAWN OF CHAOS")
-#profile(
-  (name: "Giant Spawn of Chaos", m: "*", ws: 4, bs: 0, s: 5, t: 6, w: 5, i: 2, a: "*", ld: 10, points: 195),
+  ],
 )
-#field("TROOP TYPE", "Monster (Chaos Beast)")
-#field("BASE SIZE", "50x100, 60x100 or 100x150")
-#field("SPECIAL RULES", "Random Attacks (2D6), Random Movement (3D6), Unbreakable")
-#field("UPGRADES", "")
 
-- *Spawn of Khorne:* A Spawn of Khorne has +1 Strength.
-- *Spawn of Nurgle:* A Spawn of Nurgle has the Poisoned Attacks special rule.
-- *Spawn of Slaanesh:* A Spawn of Slaanesh rolls an additional D6 for their Random Movement result.
-- *Spawn of Tzeentch:* A Spawn of Tzeentch has a Strength 3 Breath Weapon that has the Flaming Attacks special rule.
-
-#field("OPTIONS", "")
-
+#unit("GIANT SPAWN OF CHAOS",
+  profiles: (
+    (name: "Giant Spawn of Chaos", m: "*", ws: 4, bs: 0, s: 5, t: 6, w: 5, i: 2, a: "*", ld: 10, points: 195),
+  ),
+  troop-type: "Monster (Chaos Beast)",
+  base-size: "50x100, 60x100 or 100x150",
+  special-rules: "Random Attacks (2D6), Random Movement (3D6), Unbreakable",
+  upgrades: (
+    rule("Spawn of Khorne")[A Spawn of Khorne has +1 Strength.],
+    rule("Spawn of Nurgle")[A Spawn of Nurgle has the Poisoned Attacks special rule.],
+    rule("Spawn of Slaanesh")[A Spawn of Slaanesh rolls an additional D6 for their Random Movement result.],
+    rule("Spawn of Tzeentch")[A Spawn of Tzeentch has a Strength 3 Breath Weapon that has the Flaming Attacks special rule.],
+  ),
+  options: [
 - May choose one of the following:
   - Spawn of Nurgle +10 points
   - Spawn of Slaanesh +15 points
   - Spawn of Khorne +15 points
   - Spawn of Tzeentch +20 points
-
-#entry("CHIMERA")
-#profile(
-  (name: "Chimera", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 5, i: 2, a: 6, ld: 5, points: 190),
+  ],
 )
-#field("TROOP TYPE", "Monster (Chimeric)")
-#field("BASE SIZE", "50x50, 50x100 or 60x100")
-#field("OPTIONS", "")
 
+#unit("CHIMERA",
+  profiles: (
+    (name: "Chimera", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 5, i: 2, a: 6, ld: 5, points: 190),
+  ),
+  troop-type: "Monster (Chimeric)",
+  base-size: "50x50, 50x100 or 60x100",
+  options: [
 - May take Venomous Ooze +10 points
 - May take Fiend Tail +15 points
 - May take Iron-hard Skin +25 points
 - May take Flaming Breath +30 points
 - May take Regenerating Flesh +40 points
-
-#field("SPECIAL RULES", "Fly (8)")
-#field("UPGRADES", "")
-
-- *Fiend Tail:* The Chimera gains +1 Attack.
-- *Flaming Breath:* The Chimera gains a Strength 4 Breath Weapon which has the Flaming Attacks special rule.
-- *Iron-hard Skin:* The Chimera gains the Natural Armour (4+) special rule.
-- *Regenerating Flesh:* The Chimera gains the Regeneration (4+) special rule.
-- *Venomous Ooze:* The Chimera gains the Poisoned Attacks special rule.
-
-#compact-entry("RAMHORN")[
-#profile(
-  (name: "Ramhorn", m: 8, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 5, ld: 6, points: 240),
-  (name: "Bestigor Crew", m: "-", ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ],
+  special-rules: "Fly (8)",
+  upgrades: (
+    rule("Fiend Tail")[The Chimera gains +1 Attack.],
+    rule("Flaming Breath")[The Chimera gains a Strength 4 Breath Weapon which has the Flaming Attacks special rule.],
+    rule("Iron-hard Skin")[The Chimera gains the Natural Armour (4+) special rule.],
+    rule("Regenerating Flesh")[The Chimera gains the Regeneration (4+) special rule.],
+    rule("Venomous Ooze")[The Chimera gains the Poisoned Attacks special rule.],
+  ),
+  order: ("troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Monster (Porcine)")
-#field("CREW", "4 Bestigor Crew (Beastmen, Gor)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Great weapon (Bestigor Crew only)")
-#field("SPECIAL RULES", "Frenzy, Impact Hits (D6+2), Natural Armour (4+), Primal Fury (Bestigors only), Stubborn, Tusker Charge")
-]
 
-#entry("GIANT")
-#profile(
-  (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
+#unit("RAMHORN",
+  compact: true,
+  profiles: (
+    (name: "Ramhorn", m: 8, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: 5, ld: 6, points: 240),
+    (name: "Bestigor Crew", m: "-", ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Porcine)",
+  crew: "4 Bestigor Crew (Beastmen, Gor)",
+  base-size: "100x150",
+  equipment: "Great weapon (Bestigor Crew only)",
+  special-rules: "Frenzy, Impact Hits (D6+2), Natural Armour (4+), Primal Fury (Bestigors only), Stubborn, Tusker Charge",
 )
-#field("TROOP TYPE", "Monster (Giant)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Stubborn")
 
+#unit("GIANT",
+  breakable: true,
+  profiles: (
+    (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
+  ),
+  troop-type: "Monster (Giant)",
+  base-size: "50x50 or 50x75",
+  equipment: "Hand weapon",
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Stubborn",
+  special-rules-body: [
 - *Fall Over:* A Giant must test to see whether it falls over if any of the following apply:
   - If it is beaten in close combat. Test once results are established but before taking a Break test.
   - If it is fleeing at the start of the Movement phase.
@@ -1304,226 +1339,256 @@ which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hit
 Wounds from these hits count towards the Giant's combat result. If no enemy units are in range,
 treat this as a Throw Back into Combat result instead."), ("4-5", "Squash or Eat: The model is removed as a casualty."), ("6", "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and
 then choose another victim. Roll again on this table to see what the Giant does with it.")))
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("GORTHOR THE CRUEL", first: true)
-#namecost("The Favoured of Chaos, Scion of the Dark Gods", "")
-#profile(
-  (name: "Gorthor the Cruel", m: 5, ws: 7, bs: 3, s: 5, t: 5, w: 3, i: 5, a: 5, ld: 9, points: 300),
-  (name: "Bagrar the Tamer", m: 5, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 4, a: 2, ld: 7, points: ""),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Light lance (Bagrar only)")
-#field("MAGIC ITEMS", "")
-
-- *The Impaler:* Magic Weapon. Light lance/spear. The Impaler gives Gorthor the Multiple Wounds (D3) special rule. If Gorthor rolls any doubles or triples of successful rolls To Hit, these attacks automatically Wound.
-- *Skull of Mugrar:* Enchanted Item. Chariot only. When rolling for the chariot's impact hits, the Skull of Mugrar allows an extra dice to be rolled, and the highest result to be chosen. In addition, it gives Gorthor the Immunity (Multiple Wounds) special rule.
-- *Cloak of the Beastlord:* Talisman. The Cloak of the Beastlord gives Gorthor a Ward save equal to the Strength of the attack that hit him, to a minimum of 6+. For example, a Strength 3 hit would grant a Magical Ward (3+) and a Strength 5 hit would grant a Magical Ward (5+). Against Attacks that do not have a Strength value, it provides a Ward Save (6+). In addition, he gains the Inspiring Presence (6) special rule.
-
-#field("SPECIAL RULES", "Forest Strider, Primal Fury")
-
-- *Bagrar the Tamer:* If Gorthor is mounted on a Chariot, he may re-roll all Charge, Flee and Pursuit distance rolls. If Gorthor is on foot, Bagrar is not included in the game.
-- *Chariot Master:* If Gorthor is included in your army, you may take Tuskgor Chariots as Core Units instead of Special Units.
-- *The Favoured of Chaos:* Gorthor must be the Army General. Gorthor, and any unit he joins, may re-roll failed Psychology and Break tests.
-- *Scion of the Dark Gods:* At the start of each friendly Magic phase, randomly generate a spell from the Lore of Chaos up to Level 2. Gorthor may use this spell during this Magic phase as a Bound Spell, with a Power Level equal to half the casting value of the spell, rounding up.
-
-#field("OPTIONS", "")
-
+#unit("GORTHOR THE CRUEL",
+  solo: true,
+  first: true,
+  subtitle: "The Favoured of Chaos, Scion of the Dark Gods",
+  profiles: (
+    (name: "Gorthor the Cruel", m: 5, ws: 7, bs: 3, s: 5, t: 5, w: 3, i: 5, a: 5, ld: 9, points: 300),
+    (name: "Bagrar the Tamer", m: 5, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 4, a: 2, ld: 7, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Light lance (Bagrar only)",
+  magic-items: (
+    rule("The Impaler")[Magic Weapon. Light lance/spear. The Impaler gives Gorthor the Multiple Wounds (D3) special rule. If Gorthor rolls any doubles or triples of successful rolls To Hit, these attacks automatically Wound.],
+    rule("Skull of Mugrar")[Enchanted Item. Chariot only. When rolling for the chariot's impact hits, the Skull of Mugrar allows an extra dice to be rolled, and the highest result to be chosen. In addition, it gives Gorthor the Immunity (Multiple Wounds) special rule.],
+    rule("Cloak of the Beastlord")[Talisman. The Cloak of the Beastlord gives Gorthor a Ward save equal to the Strength of the attack that hit him, to a minimum of 6+. For example, a Strength 3 hit would grant a Magical Ward (3+) and a Strength 5 hit would grant a Magical Ward (5+). Against Attacks that do not have a Strength value, it provides a Ward Save (6+). In addition, he gains the Inspiring Presence (6) special rule.],
+  ),
+  special-rules: "Forest Strider, Primal Fury",
+  special-rules-body: (
+    rule("Bagrar the Tamer")[If Gorthor is mounted on a Chariot, he may re-roll all Charge, Flee and Pursuit distance rolls. If Gorthor is on foot, Bagrar is not included in the game.],
+    rule("Chariot Master")[If Gorthor is included in your army, you may take Tuskgor Chariots as Core Units instead of Special Units.],
+    rule("The Favoured of Chaos")[Gorthor must be the Army General. Gorthor, and any unit he joins, may re-roll failed Psychology and Break tests.],
+    rule("Scion of the Dark Gods")[At the start of each friendly Magic phase, randomly generate a spell from the Lore of Chaos up to Level 2. Gorthor may use this spell during this Magic phase as a Bound Spell, with a Power Level equal to half the casting value of the spell, rounding up.],
+  ),
+  options: [
 - May be mounted on a Tuskgor Chariot (replacing the Bestigor) +75 points
-
-#entry("KHAZRAK ONE-EYE")
-#profile(
-  (name: "Khazrak One-Eye", m: 5, ws: 7, bs: 1, s: 5, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 250),
-  (name: "Redmaw (Chaos Warhound)", m: 7, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor). Redmaw is a War Beast (Chaos Beast)")
-#field("BASE SIZE", "25x25 or 30x30 (Khazrak), 25x50 (Redmaw)")
-#field("MAGIC ITEMS", "")
 
-- *Scourge:* Magic Weapon. Two hand weapons. Each enemy model in base contact with Khazrak gives him an additional Attack. This has no effect in a challenge.
-- *The Dark Mail:* Magic Armour. Medium armour. The Dark Mail gives Khazrak an additional +3 to his armour save. In addition, it negates the power of any magic or runic weapons carried by models in base contact – treat them as ordinary non-magical weapons of their type.
-
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury")
-
-- *Bestial Cunning:* All units using the Ambushers special rule in the same army as Khazrak may choose to re- roll the dice to see when they enter play.
-- *Packmaster:* All Warhounds in an army led by Khazrak have +1 Leadership and the Ambushers special rule.
-- *Redmaw:* If Redmaw is included in your army he forms a unit with Khazrak, though they may both join other units as normal. If Khazrak is slain, Redmaw is subject to Hatred and Frenzy for the remainder of the game.
-
-#field("OPTIONS", "")
-
+#unit("KHAZRAK ONE-EYE",
+  solo: true,
+  profiles: (
+    (name: "Khazrak One-Eye", m: 5, ws: 7, bs: 1, s: 5, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 250),
+    (name: "Redmaw (Chaos Warhound)", m: 7, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor). Redmaw is a War Beast (Chaos Beast)",
+  base-size: "25x25 or 30x30 (Khazrak), 25x50 (Redmaw)",
+  magic-items: (
+    rule("Scourge")[Magic Weapon. Two hand weapons. Each enemy model in base contact with Khazrak gives him an additional Attack. This has no effect in a challenge.],
+    rule("The Dark Mail")[Magic Armour. Medium armour. The Dark Mail gives Khazrak an additional +3 to his armour save. In addition, it negates the power of any magic or runic weapons carried by models in base contact – treat them as ordinary non-magical weapons of their type.],
+  ),
+  special-rules: "Ambushers, Forest Strider, Primal Fury",
+  special-rules-body: (
+    rule("Bestial Cunning")[All units using the Ambushers special rule in the same army as Khazrak may choose to re- roll the dice to see when they enter play.],
+    rule("Packmaster")[All Warhounds in an army led by Khazrak have +1 Leadership and the Ambushers special rule.],
+    rule("Redmaw")[If Redmaw is included in your army he forms a unit with Khazrak, though they may both join other units as normal. If Khazrak is slain, Redmaw is subject to Hatred and Frenzy for the remainder of the game.],
+  ),
+  options: [
 - May be accompanied by Redmaw +15 points
-
-#entry("MORGHUR THE SHADOWGAVE")
-#namecost("Master of Skulls", "")
-#profile(
-  (name: "Morghur", m: "*", ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 335),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
 
-- *Bray-Staff of Morghur & the Stones of the Skull Cave:* Arcane Item. If any Wizard (friend or foe) within 12" of Morghur rolls a 6 when rolling on the Miscast table, then the unfortunate Wizard is instantly turned into a Spawn of Chaos under the control of the Beastmen player, and the rolled result on the Miscast table is ignored. The Spawn has as many wounds as the Wizard did when he Miscast. If you do not have a Spawn model to replace the Wizard then he simply counts as slain. If the Wizard is within an enemy unit, follow the same rules described under the Spirit-Essence of Chaos, above. This newly created unit does not award Victory points. In addition, Morghur generates two Dispel dice to be added to the Beastmen player's Dispel dice pool.
-- *Skull-Weave:* Talisman. Morghur causes Terror. Any model attempting to attack Morghur in close combat suffers \-1 to Hit.
-
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury, Random Movement (2D6), Unbreakable")
-
-- *Aura of Transmutation:* Morghur cannot be harmed in any way by missile attacks or spells, unless the model which is the source of the attack is within 12" of him. Furthermore, at the beginning of each round of close combat, all enemy models in base contact take a Strength 3 hit with no armour save allowed.
-- *The Beast-Roar:* All friendly Beastmen models within 12" of Morghur may re-roll failed Rally Tests.
-- *The Hordes of Morghur:* A Beastmen army containing Morghur must re-roll all successful Unruly tests. In addition, you may upgrade any Gor Herds or Gor Raiders to Warped Gors for +1 point per model. Warped Gors have the Mutations & Traits special rule (see Mutants).
-- *Spirit-essence of Chaos:* At the beginning of your Magic phase, all units within 8" of Morghur must pass a Leadership test or suffer D6 Strength 4 Hits which Ignores Armour Saves. If one or more Wounds are inflicted, you may place a Chaos Spawn within 3" of the spot vacated, provided there is space, and you have the appropriate model available. When the Spawn appears it must be placed more than 1" away from other models.
-- *The Taint:* If Morghur is within 12" of a forest, all enemy units even partially within that forest suffer \-1 to their Leadership.
-
-#entry("MALAGOR THE DARK OMEN")
-#namecost("Crowfather, Despoiler of the Sacred, Harbinger of Disaster", "")
-#profile(
-  (name: "Malagor", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 320),
+#unit("MORGHUR THE SHADOWGAVE",
+  solo: true,
+  subtitle: "Master of Skulls",
+  profiles: (
+    (name: "Morghur", m: "*", ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 335),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("Bray-Staff of Morghur & the Stones of the Skull Cave")[Arcane Item. If any Wizard (friend or foe) within 12" of Morghur rolls a 6 when rolling on the Miscast table, then the unfortunate Wizard is instantly turned into a Spawn of Chaos under the control of the Beastmen player, and the rolled result on the Miscast table is ignored. The Spawn has as many wounds as the Wizard did when he Miscast. If you do not have a Spawn model to replace the Wizard then he simply counts as slain. If the Wizard is within an enemy unit, follow the same rules described under the Spirit-Essence of Chaos, above. This newly created unit does not award Victory points. In addition, Morghur generates two Dispel dice to be added to the Beastmen player's Dispel dice pool.],
+    rule("Skull-Weave")[Talisman. Morghur causes Terror. Any model attempting to attack Morghur in close combat suffers \-1 to Hit.],
+  ),
+  special-rules: "Ambushers, Forest Strider, Primal Fury, Random Movement (2D6), Unbreakable",
+  special-rules-body: (
+    rule("Aura of Transmutation")[Morghur cannot be harmed in any way by missile attacks or spells, unless the model which is the source of the attack is within 12" of him. Furthermore, at the beginning of each round of close combat, all enemy models in base contact take a Strength 3 hit with no armour save allowed.],
+    rule("The Beast-Roar")[All friendly Beastmen models within 12" of Morghur may re-roll failed Rally Tests.],
+    rule("The Hordes of Morghur")[A Beastmen army containing Morghur must re-roll all successful Unruly tests. In addition, you may upgrade any Gor Herds or Gor Raiders to Warped Gors for +1 point per model. Warped Gors have the Mutations & Traits special rule (see Mutants).],
+    rule("Spirit-essence of Chaos")[At the beginning of your Magic phase, all units within 8" of Morghur must pass a Leadership test or suffer D6 Strength 4 Hits which Ignores Armour Saves. If one or more Wounds are inflicted, you may place a Chaos Spawn within 3" of the spot vacated, provided there is space, and you have the appropriate model available. When the Spawn appears it must be placed more than 1" away from other models.],
+    rule("The Taint")[If Morghur is within 12" of a forest, all enemy units even partially within that forest suffer \-1 to their Leadership.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Malagor is a Level 4 Wizard who uses one of the following Lores of Magic:")
 
+#unit("MALAGOR THE DARK OMEN",
+  solo: true,
+  subtitle: "Crowfather, Despoiler of the Sacred, Harbinger of Disaster",
+  profiles: (
+    (name: "Malagor", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 320),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  magic: "Malagor is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Chaos
 - Death
 - Shadow
 - Wild
-
-#field("MAGIC ITEMS", "")
-
-- *Icons of Vilification:* Enchanted Item. All friendly units within 6" of Malagor may re-roll failed Primal Fury tests.
-
-#field("SPECIAL RULES", "Forest Strider, Fly (10), Primal Fury")
-
-- *Something Wicked This Way Comes:* Enemy units within 6" of Malagor may not use the Inspiring Presence special rule.
-- *Unholy Power:* Malagor has a dread agenda given unto him by the Dark Gods themselves, and every spell Malagor casts brings his unholy mission that much closer to fruition. For every spell Malagor casts that is not dispelled he gets a cumulative +1 on subsequent casting attempts for the rest of the Magic phase.
-
-#entry("KRALMAW")
-#namecost("The Prophet of Ruin", "")
-#profile(
-  (name: "Kralmaw", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 295),
+  ],
+  magic-items: (
+    rule("Icons of Vilification")[Enchanted Item. All friendly units within 6" of Malagor may re-roll failed Primal Fury tests.],
+  ),
+  special-rules: "Forest Strider, Fly (10), Primal Fury",
+  special-rules-body: (
+    rule("Something Wicked This Way Comes")[Enemy units within 6" of Malagor may not use the Inspiring Presence special rule.],
+    rule("Unholy Power")[Malagor has a dread agenda given unto him by the Dark Gods themselves, and every spell Malagor casts brings his unholy mission that much closer to fruition. For every spell Malagor casts that is not dispelled he gets a cumulative +1 on subsequent casting attempts for the rest of the Magic phase.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Kralmaw is a Level 4 Wizard who uses one of the following Lores of Magic:")
 
+#unit("KRALMAW",
+  solo: true,
+  subtitle: "The Prophet of Ruin",
+  profiles: (
+    (name: "Kralmaw", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 295),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  magic: "Kralmaw is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Chaos
 - Wild
-
-#field("MAGIC ITEMS", "")
-
-- *Grisly Totem:* Arcane Item. Relic. All enemy units within 12" of Kralmaw suffer a \-1 modifier to their Leadership.
-
-#field("SPECIAL RULES", "Forest Strider, Primal Fury")
-
+  ],
+  magic-items: (
+    rule("Grisly Totem")[Arcane Item. Relic. All enemy units within 12" of Kralmaw suffer a \-1 modifier to their Leadership.],
+  ),
+  special-rules: "Forest Strider, Primal Fury",
+  special-rules-body: [
 - *Future Sight:* Kralmaw has a 4+ invulnerable save.
 - *Leering Spirit:* When Kralmaw is deployed, place a Leering Spirit marker anywhere on the battlefield that is not within 12" of an enemy unit. Once placed, a Leering Spirit marker does not move but has a 360° line of sight. The marker cannot be charged, targeted or attacked in any way. However, if Kralmaw is removed from play as a casualty, the Leering Spirit marker is also removed from play. During the Shooting phase of each of Kralmaw’s turns, the Leering Spirit marker may cast the Devolve spell from the Lore of the Wild as a Bound Spell, Power Level 3.
 
 Note that the Leering Spirit marker is ignored for the purposes of movement, combat and line of sight, as if it was not there. Should the presence of it interfere with the position of units, simply make note of its position and move it aside, replacing it when convenient to do so.
-
-#entry("MOLOKH SLUGTONGUE")
-#namecost("The Famine-Fiend, the Barren One, Lord of the Black Harvest", "")
-#profile(
-  (name: "Molokh Slugtongue", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 1, ld: 7, points: 190),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Gor)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Molokh Slugtongue is a Level 2 Wizard who uses one of the following Lores of Magic:")
 
+#unit("MOLOKH SLUGTONGUE",
+  solo: true,
+  subtitle: "The Famine-Fiend, the Barren One, Lord of the Black Harvest",
+  profiles: (
+    (name: "Molokh Slugtongue", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 1, ld: 7, points: 190),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Gor)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  magic: "Molokh Slugtongue is a Level 2 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Wild
-
-#field("SPECIAL RULES", "Forest Strider, Poisoned Attacks, Primal Fury, Regeneration (4+)")
-
-- *Curse of the Famine-fiend:* At the start of each of your turns, all enemy units within 18" of Slugtongue must pass D3 Toughness tests or suffer a Wound which Ignores Armour Saves for every failed Toughness test.
-
-#entry("TAUROX THE BRASS BULL")
-#namecost("Slaughterhorn, Bloodbeast, The Brazen One", "")
-#profile(
-  (name: "Taurox", m: 6, ws: 6, bs: 3, s: 6, t: 6, w: 5, i: 5, a: 6, ld: 8, points: 325),
+  ],
+  special-rules: "Forest Strider, Poisoned Attacks, Primal Fury, Regeneration (4+)",
+  special-rules-body: (
+    rule("Curse of the Famine-fiend")[At the start of each of your turns, all enemy units within 18" of Slugtongue must pass D3 Toughness tests or suffer a Wound which Ignores Armour Saves for every failed Toughness test.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Minotaur)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Rune-tortured Axes:* Magic Weapon. Two hand weapons. Attacks with these weapons have the Ignore Armour Saves and Flaming Attacks special rules.
-
-#field("SPECIAL RULES", "Bloodgreed, Frenzy, Impact Hits (1)")
-
-- *Brass Body:* Taurox has a 3+ armour save. However, if Taurox suffers an unsaved Wound from an attack that rolls a natural 6 To Hit and then a natural 6 To Wound then he will be slain outright.
-- *Slaughterer's Call:* Any friendly unit of Minotaurs that is joined by Taurox gains the Frenzy special rule. In addition, if Taurox is included in your army, you may take one unit of Minotaurs as a Core Unit instead of a Special Unit.
-
-#entry("GHORROS WARHOOF")
-#namecost("Sire of a Thousand Young", "")
-#profile(
-  (name: "Ghorros Warhoof", m: 8, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 160),
+#unit("TAUROX THE BRASS BULL",
+  solo: true,
+  subtitle: "Slaughterhorn, Bloodbeast, The Brazen One",
+  profiles: (
+    (name: "Taurox", m: 6, ws: 6, bs: 3, s: 6, t: 6, w: 5, i: 5, a: 6, ld: 8, points: 325),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Minotaur)",
+  base-size: "40x40 or 50x50",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Rune-tortured Axes")[Magic Weapon. Two hand weapons. Attacks with these weapons have the Ignore Armour Saves and Flaming Attacks special rules.],
+  ),
+  special-rules: "Bloodgreed, Frenzy, Impact Hits (1)",
+  special-rules-body: (
+    rule("Brass Body")[Taurox has a 3+ armour save. However, if Taurox suffers an unsaved Wound from an attack that rolls a natural 6 To Hit and then a natural 6 To Wound then he will be slain outright.],
+    rule("Slaughterer's Call")[Any friendly unit of Minotaurs that is joined by Taurox gains the Frenzy special rule. In addition, if Taurox is included in your army, you may take one unit of Minotaurs as a Core Unit instead of a Special Unit.],
+  ),
 )
-#field("TROOP TYPE", "Cavalry (Character, Beastman, Centigor)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Mansmasher:* Magic Weapon. The Mansmasher gives Ghorros the Multiple Wounds (D3) special rule.
-- *Skull of the Unicorn Lord:* Talisman. The Skull gives Ghorros Magic Resistance (2). However, all Wood Elves and Forest Spirits have the Hatred special rule against Ghorros and his unit.
-
-#field("SPECIAL RULES", "Drunken, Forest Strider, Primal Fury")
-
-- *Father of Beasts:* Should Ghorros be killed, all Beastmen units in the army receive a +1 bonus to their Leadership when taking Primal Fury tests.
-- *The Sons of Ghorros:* Ghorros must be accompanied by a unit of Centigors chosen from the army list at a cost of +1 point per model. This unit has +1 Weapon Skill. Ghorros can always use the 'Look Out, Sir!' rule as long as there is at least one other Centigor in his unit still alive.
-
-#entry("UNGROL FOUR-HORN")
-#namecost("Blackheart, Hornsthief, the Spurned One", "")
-#profile(
-  (name: "Ungrol Four-horn", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 70),
+#unit("GHORROS WARHOOF",
+  solo: true,
+  subtitle: "Sire of a Thousand Young",
+  profiles: (
+    (name: "Ghorros Warhoof", m: 8, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 160),
+  ),
+  troop-type: "Cavalry (Character, Beastman, Centigor)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Mansmasher")[Magic Weapon. The Mansmasher gives Ghorros the Multiple Wounds (D3) special rule.],
+    rule("Skull of the Unicorn Lord")[Talisman. The Skull gives Ghorros Magic Resistance (2). However, all Wood Elves and Forest Spirits have the Hatred special rule against Ghorros and his unit.],
+  ),
+  special-rules: "Drunken, Forest Strider, Primal Fury",
+  special-rules-body: (
+    rule("Father of Beasts")[Should Ghorros be killed, all Beastmen units in the army receive a +1 bonus to their Leadership when taking Primal Fury tests.],
+    rule("The Sons of Ghorros")[Ghorros must be accompanied by a unit of Centigors chosen from the army list at a cost of +1 point per model. This unit has +1 Weapon Skill. Ghorros can always use the 'Look Out, Sir!' rule as long as there is at least one other Centigor in his unit still alive.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Beastman, Ungor)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("MAGIC ITEMS", "")
 
-- *The Stolen Crowns:* Enchanted Item. Take a Leadership test for Ungrol at the beginning of each of his turns. If he passes the test, he gains +2 Weapon Skill and +1 Strength until the start of his next turn. If he fails he is treated as a Level 1 Wizard instead – roll a D3 to randomly generate a Level 1 spell from the Lore of the Wild each time.
-
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Primal Fury")
-
-- *Bruised and Bitter:* Ungrol must deploy with a unit of Ungors, and may never leave it. Ungrol and his unit may re-roll failed Primal Fury tests when in combat against Humans and Beastmen. However, Ungrol's unit may not use the Army General's Leadership, and no other characters may join the unit.
-
-#entry("MOONCLAW, SON OF MORRSLIEB")
-#namecost("The Lunatic Prince, Child of the Gravid Orb", "")
-#profile(
-  (name: "Moonclaw", m: 5, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 200),
-  (name: "Umbralok", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 3, a: 3, ld: 6, points: ""),
+#unit("UNGROL FOUR-HORN",
+  solo: true,
+  subtitle: "Blackheart, Hornsthief, the Spurned One",
+  profiles: (
+    (name: "Ungrol Four-horn", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 70),
+  ),
+  troop-type: "Infantry (Special Character, Beastman, Ungor)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  magic-items: (
+    rule("The Stolen Crowns")[Enchanted Item. Take a Leadership test for Ungrol at the beginning of each of his turns. If he passes the test, he gains +2 Weapon Skill and +1 Strength until the start of his next turn. If he fails he is treated as a Level 1 Wizard instead – roll a D3 to randomly generate a Level 1 spell from the Lore of the Wild each time.],
+  ),
+  special-rules: "Ambushers, Forest Strider, Primal Fury",
+  special-rules-body: (
+    rule("Bruised and Bitter")[Ungrol must deploy with a unit of Ungors, and may never leave it. Ungrol and his unit may re-roll failed Primal Fury tests when in combat against Humans and Beastmen. However, Ungrol's unit may not use the Army General's Leadership, and no other characters may join the unit.],
+  ),
 )
-#field("TROOP TYPE", "Cavalry (Character, Beastman)")
-#field("MOUNT", "Umbralok (Chaos Beast)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Moonclaw is a Level 1 Wizard who uses one of the following Lores of Magic:")
 
+#unit("MOONCLAW, SON OF MORRSLIEB",
+  solo: true,
+  subtitle: "The Lunatic Prince, Child of the Gravid Orb",
+  profiles: (
+    (name: "Moonclaw", m: 5, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 200),
+    (name: "Umbralok", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 3, a: 3, ld: 6, points: ""),
+  ),
+  troop-type: "Cavalry (Character, Beastman)",
+  mount: "Umbralok (Chaos Beast)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon",
+  magic: "Moonclaw is a Level 1 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Shadow
 - Wild
-
-#field("SPECIAL RULES", "Forest Strider, Independent, Primal Fury")
-
-- *Unholy Zenith:* At the beginning of the game, secretly roll a D3 and record the number. In the turn that corresponds to this number, Moonclaw has a +2 casting bonus. In addition, he may make D3 shooting attacks as if he were a Stone Thrower for that turn only (even if he moved or marched during the Movement phase). Any results of a misfire cause a single wound upon Moonclaw with no saves allowed.
-- *Ward of Morrslieb:* Moonclaw has the Magical Ward (5+) and Magic Resistance (2) special rules.
-- *Wave of Insanity:* Every enemy unit within 12" of Moonclaw must take a Stupidity test at the start of their turn.
+  ],
+  special-rules: "Forest Strider, Independent, Primal Fury",
+  special-rules-body: (
+    rule("Unholy Zenith")[At the beginning of the game, secretly roll a D3 and record the number. In the turn that corresponds to this number, Moonclaw has a +2 casting bonus. In addition, he may make D3 shooting attacks as if he were a Stone Thrower for that turn only (even if he moved or marched during the Movement phase). Any results of a misfire cause a single wound upon Moonclaw with no saves allowed.],
+    rule("Ward of Morrslieb")[Moonclaw has the Magical Ward (5+) and Magic Resistance (2) special rules.],
+    rule("Wave of Insanity")[Every enemy unit within 12" of Moonclaw must take a Stupidity test at the start of their turn.],
+  ),
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Stefan Wolf", "")
+#unit("Additional Material:",
+  subtitle: "Stefan Wolf",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)
 
 = OUR CHANGES
 

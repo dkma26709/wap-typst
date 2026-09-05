@@ -524,17 +524,17 @@ No saves are allowed against Wounds caused by this weapon.
 
 = CHARACTERS
 
-#entry("MERCENARY COMMANDERS", first: true)
-#profile(
-  (name: "Mercenary General", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
-  (name: "Mercenary Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
-
+#unit("MERCENARY COMMANDERS",
+  first: true,
+  profiles: (
+    (name: "Mercenary General", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
+    (name: "Mercenary Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Mercenaries",
+  options: [
 - May choose one of the following:
   - Spear free
   - Additional hand weapon +5 points
@@ -562,17 +562,19 @@ No saves are allowed against Wounds caused by this weapon.
   - Griffon (Mercenary General only) +125 points
 - A Mercenary Captain may take Quirks of Character and/or Magic Items up to a total of 50 points
 - A Mercenary General may take Quirks of Character and/or Magic Items up to a total of 100 points
-
-#entry("HIRELING WIZARDS")
-#profile(
-  (name: "Hireling Wizard Lord", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
-  (name: "Hireling Wizard", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Hireling Wizard is a Level 1 Wizard. A Hireling Wizard Lord is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("HIRELING WIZARDS",
+  profiles: (
+    (name: "Hireling Wizard Lord", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
+    (name: "Hireling Wizard", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Hireling Wizard is a Level 1 Wizard. A Hireling Wizard Lord is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Battle Magic
 - Beasts
 - Death
@@ -582,10 +584,9 @@ No saves are allowed against Wounds caused by this weapon.
 - Life
 - Metal
 - Shadow
-
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Mercenaries",
+  options: [
 - May take an additional Wizard Level +35 points
 - May be mounted on one of the following:
   - Warhorse +15 points
@@ -593,22 +594,23 @@ No saves are allowed against Wounds caused by this weapon.
   - Griffon (Hireling Wizard Lord only) +125 points
 - A Hireling Wizard may take Quirks of Character and/or Magic Items up to a total of 50 points
 - A Hireling Wizard Lord may take Quirks of Character and/or Magic Items up to a total of 100 points
-
-#entry("PAYMASTER")
-#profile(
-  (name: "Paymaster", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 45),
-  (name: "Money Lender", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Mercenaries")
 
-- *Money Lender:* The Money Lender must be placed in base contact with the Paymaster, but may not otherwise be targeted separately from the unit. They are only armed with a hand weapon. If a Paymaster is accompanied by a Money Lender, any unit using their Hold Your Ground special rule adds +1 to their Leadership.
-- *Paymaster:* You must include one (and only one) Paymaster in the army. The Paymaster follows all the rules for Battle Standard Bearers. A Paymaster with a Paychest or Paycart can have a magic banner with no points limit. If the Paymaster is slain, all friendly units suffer \-1 to their Leadership for the remainder of the game and gain the Hatred special rule against the enemy unit or model that killed the Paymaster.
-
-#field("OPTIONS", "")
-
+#unit("PAYMASTER",
+  profiles: (
+    (name: "Paymaster", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 45),
+    (name: "Money Lender", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Mercenaries",
+  special-rules-body: (
+    rule("Money Lender")[The Money Lender must be placed in base contact with the Paymaster, but may not otherwise be targeted separately from the unit. They are only armed with a hand weapon. If a Paymaster is accompanied by a Money Lender, any unit using their Hold Your Ground special rule adds +1 to their Leadership.],
+    rule("Paymaster")[You must include one (and only one) Paymaster in the army. The Paymaster follows all the rules for Battle Standard Bearers. A Paymaster with a Paychest or Paycart can have a magic banner with no points limit. If the Paymaster is slain, all friendly units suffer \-1 to their Leadership for the remainder of the game and gain the Hatred special rule against the enemy unit or model that killed the Paymaster.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Polearm +5 points
@@ -631,17 +633,18 @@ No saves are allowed against Wounds caused by this weapon.
   - Paychest +30 points
   - Paycart +60 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("ASSASSINS")
-#profile(
-  (name: "Assassin", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Mercenaries, Scouts")
-#field("OPTIONS", "")
 
+#unit("ASSASSINS",
+  profiles: (
+    (name: "Assassin", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 85),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Dodge (5+), Hidden, Mercenaries, Scouts",
+  options: [
 - May choose any of the following:
   - Additional hand weapon +5 points
   - Throwing weapons +5 points
@@ -649,17 +652,18 @@ No saves are allowed against Wounds caused by this weapon.
   - Crossbow +8 points
 - May take light armour +3 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("DWARF CAPTAINS")
-#profile(
-  (name: "Dwarf Captain", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 3, a: 3, ld: 10, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Hatred (Goblins, Orcs, Skaven), Magic Resistance (1), Mercenaries, Relentless, Resolute")
-#field("OPTIONS", "")
 
+#unit("DWARF CAPTAINS",
+  profiles: (
+    (name: "Dwarf Captain", m: 3, ws: 6, bs: 4, s: 4, t: 5, w: 2, i: 3, a: 3, ld: 10, points: 65),
+  ),
+  troop-type: "Infantry (Character, Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Hatred (Goblins, Orcs, Skaven), Magic Resistance (1), Mercenaries, Relentless, Resolute",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Great weapon +15 points
@@ -672,17 +676,18 @@ No saves are allowed against Wounds caused by this weapon.
   - Heavy armour +18 points
 - May take a shield +5 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("ELF CAPTAINS")
-#profile(
-  (name: "Elf Captain", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Mercenaries")
-#field("OPTIONS", "")
 
+#unit("ELF CAPTAINS",
+  profiles: (
+    (name: "Elf Captain", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 55),
+  ),
+  troop-type: "Infantry (Character, Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Mercenaries",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -696,20 +701,21 @@ No saves are allowed against Wounds caused by this weapon.
   - Heavy armour +18 points
 - May take a shield +5 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("HALFLING CAPTAINS")
-#profile(
-  (name: "Halfling Captain", m: 4, ws: 4, bs: 6, s: 3, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 35),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Halfling)")
-#field("BASE SIZE", "20x25 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Duck & Weave, Mercenaries")
 
-- *Trinkets:* Models with this special rule may take up two Talismans and/or Enchanted Items rather than just one of each.
-
-#field("OPTIONS", "")
-
+#unit("HALFLING CAPTAINS",
+  profiles: (
+    (name: "Halfling Captain", m: 4, ws: 4, bs: 6, s: 3, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 35),
+  ),
+  troop-type: "Infantry (Character, Halfling)",
+  base-size: "20x25 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Duck & Weave, Mercenaries",
+  special-rules-body: (
+    rule("Trinkets")[Models with this special rule may take up two Talismans and/or Enchanted Items rather than just one of each.],
+  ),
+  options: [
 - May choose one of the following:
   - Spear free
   - Additional hand weapon +5 points
@@ -724,17 +730,18 @@ No saves are allowed against Wounds caused by this weapon.
   - Buckler +3 points
   - Shield +5 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("OGRE CAPTAINS")
-#profile(
-  (name: "Ogre Captain", m: 6, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 8, points: 135),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Natural Armour (6+), Mercenaries, Ogre Charge")
-#field("OPTIONS", "")
 
+#unit("OGRE CAPTAINS",
+  profiles: (
+    (name: "Ogre Captain", m: 6, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 8, points: 135),
+  ),
+  troop-type: "Monstrous Infantry (Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Natural Armour (6+), Mercenaries, Ogre Charge",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -745,17 +752,18 @@ No saves are allowed against Wounds caused by this weapon.
   - Brace of Ogre pistols +9 points
 - May take light armour +12 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("ORC CAPTAINS")
-#profile(
-  (name: "Orc Captain", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 2, i: 3, a: 3, ld: 8, points: 70),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Orc)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
 
+#unit("ORC CAPTAINS",
+  profiles: (
+    (name: "Orc Captain", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 2, i: 3, a: 3, ld: 8, points: 70),
+  ),
+  troop-type: "Infantry (Character, Orc)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  special-rules: "Mercenaries",
+  options: [
 - May choose any of the following:
   - Additional hand weapon +5 points
   - Great weapon +15 points
@@ -764,22 +772,23 @@ No saves are allowed against Wounds caused by this weapon.
   - Medium armour +9 points
 - May take a shield +5 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
-
-#entry("HOBGOBLIN CAPTAINS")
-#profile(
-  (name: "Hobgoblin Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 50),
-  (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Character, Hobgoblin)")
-#field("MOUNT", "Giant Wolf (Canine)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Cunning Retreat, Ded Shooty, Mercenaries")
 
-- *Quell Treachery:* Any friendly unit joined by a model with this special rule may re-roll failed Treachery tests.
-
-#field("OPTIONS", "")
-
+#unit("HOBGOBLIN CAPTAINS",
+  profiles: (
+    (name: "Hobgoblin Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 4, a: 3, ld: 7, points: 50),
+    (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ),
+  troop-type: "Cavalry (Character, Hobgoblin)",
+  mount: "Giant Wolf (Canine)",
+  base-size: "25x50",
+  equipment: "Hand weapon",
+  special-rules: "Backstabbers, Cowardly Despoilers, Cunning Retreat, Ded Shooty, Mercenaries",
+  special-rules-body: (
+    rule("Quell Treachery")[Any friendly unit joined by a model with this special rule may re-roll failed Treachery tests.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Light lance +5 points
@@ -789,93 +798,99 @@ No saves are allowed against Wounds caused by this weapon.
   - Medium armour +9 points
 - May take a shield +5 points
 - May take Quirks of Character and/or Magic Items up to a total of 50 points
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#entry("WARHORSE", first: true)
-#profile(
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
-
+#unit("WARHORSE",
+  first: true,
+  profiles: (
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take barding +5 points
-
-#entry("PEGASUS")
-#profile(
-  (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
 
-- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
-- *Swift as the Wind:* A Pegasus with this upgrade gains the Swiftstride special rule.
-
-#field("OPTIONS", "")
-
+#unit("PEGASUS",
+  profiles: (
+    (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Iron-hard Hooves")[A Pegasus with this upgrade re-roils failed To Wound rolls.],
+    rule("Swift as the Wind")[A Pegasus with this upgrade gains the Swiftstride special rule.],
+  ),
+  options: [
 - May take Iron-hard Hooves +5 points
 - May take Swift as the Wind +5 points
-
-#entry("GRIFFON")
-#profile(
-  (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Fly (8)")
-#field("UPGRADES", "")
 
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-- *Swooping Strike:* The model gains the Devastating Charge special rule.
-
-#field("OPTIONS", "")
-
+#unit("GRIFFON",
+  profiles: (
+    (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50",
+  special-rules: "Fly (8)",
+  upgrades: (
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+    rule("Swooping Strike")[The model gains the Devastating Charge special rule.],
+  ),
+  options: [
 - May take Shredding Talons +5 points
 - May take Swooping Strike +5 points
-
-#entry("PAYCHEST")
-#profile(
-  (name: "Paychest Bodyguards", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 2, i: 4, a: 2, ld: 8, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Polearm")
-#field("SPECIAL RULES", "Hold Your Ground (6)")
-#field("NOTES", "")
 
+#unit("PAYCHEST",
+  profiles: (
+    (name: "Paychest Bodyguards", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 2, i: 4, a: 2, ld: 8, points: "-"),
+  ),
+  troop-type: "Infantry (Human)",
+  base-size: "40x40 or 50x50",
+  equipment: "Polearm",
+  special-rules: "Hold Your Ground (6)",
+  notes: [
 - A Paymaster with a Paychest may either be modelled on top of it, or placed next to it on the table. It must remain in base contact with the Paymaster at all times.
-
-#entry("PAYCART")
-#profile(
-  (name: "Paycart", m: 7, ws: "-", bs: "-", s: 4, t: 4, w: 3, i: "-", a: "-", ld: "-", points: "-"),
-  (name: "Mule", m: "-", ws: 2, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Shrine (Armour save 6+)")
-#field("DRAWN BY", "1 Mule (Animal)")
-#field("BASE SIZE", "40x80, 50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Hold Your Ground (12)")
-#field("NOTES", "")
 
+#unit("PAYCART",
+  profiles: (
+    (name: "Paycart", m: 7, ws: "-", bs: "-", s: 4, t: 4, w: 3, i: "-", a: "-", ld: "-", points: "-"),
+    (name: "Mule", m: "-", ws: 2, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: "-", points: ""),
+  ),
+  troop-type: "Shrine (Armour save 6+)",
+  drawn-by: "1 Mule (Animal)",
+  base-size: "40x80, 50x100 or 60x100",
+  equipment: "Hand weapon",
+  special-rules: "Hold Your Ground (12)",
+  notes: [
 - A Paymaster with a Paycart may either be modelled on top of it, or placed next to it on the table. It must remain in base contact with the Paymaster at all times.
 - A Paycart has a Line of Sight value of 2.
+  ],
+)
 
 = CORE UNITS
 
-#entry("PIKEMEN", first: true)
-#profile(
-  (name: "Pikeman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
-)
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Pike")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
-
+#unit("PIKEMEN",
+  first: true,
+  profiles: (
+    (name: "Pikeman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Pike",
+  special-rules: "Mercenaries",
+  options: [
 - May choose one of the following:
   - Light armour +0.5 point/model
   - Medium armour +1.5 points/model
@@ -885,18 +900,19 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Pikeman to a Musician +5 points
 - May upgrade one Pikeman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("CROSSBOWMEN")
-#profile(
-  (name: "Crossbowman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, crossbow")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
 
+#unit("CROSSBOWMEN",
+  profiles: (
+    (name: "Crossbowman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, crossbow",
+  special-rules: "Mercenaries",
+  options: [
 - May replace crossbows with handguns free
 - May take light armour +0.5 point/model
 - May take pavises +1 point/model
@@ -905,22 +921,22 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Crossbowman to a Musician +5 points
 - May upgrade one Crossbowman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Your army may not contain more units armed with handguns than crossbows.
-
-#entry("SELLSWORDS")
-#profile(
-  (name: "Sellsword", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3),
+  ],
 )
-#field("UNIT SIZE", "10-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
 
+#unit("SELLSWORDS",
+  profiles: (
+    (name: "Sellsword", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 3),
+  ),
+  unit-size: "10-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Mercenaries",
+  options: [
 - May choose one of the following:
   - Spears free
   - Additional hand weapons +1 point/model
@@ -939,22 +955,22 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Sellsword to a Musician +5 points
 - May upgrade one Sellsword to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Each unit of Sellswords must pick at least one weapon option and/or shields.
-
-#entry("DUELLISTS")
-#profile(
-  (name: "Duellist", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 4),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Mercenaries, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("DUELLISTS",
+  profiles: (
+    (name: "Duellist", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 4),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Mercenaries, Skirmishers",
+  options: [
 - May choose one of the following:
   - Bucklers +0.5 point/model
   - Additional hand weapons +1 point/model
@@ -963,20 +979,21 @@ No saves are allowed against Wounds caused by this weapon.
 - May take throwing weapons +1 point/model
 - May take Quirks of Character no points limit
 - May upgrade one Duellist to a Leader +5 points
-
-#entry("STRADIOTS")
-#profile(
-  (name: "Stradiot", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 10),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Fast Cavalry, Mercenaries")
-#field("OPTIONS", "")
 
+#unit("STRADIOTS",
+  profiles: (
+    (name: "Stradiot", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 10),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon",
+  special-rules: "Fast Cavalry, Mercenaries",
+  options: [
 - May take light lances +1 point/model
 - May choose one of the following:
   - Shortbows +1 point/model
@@ -990,23 +1007,25 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Stradiot to a Musician +5 points
 - May upgrade one Stradiot to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
+  ],
+)
 
 = SPECIAL UNITS
 
-#entry("PAYMASTER'S BODYGUARD", first: true)
-#profile(
-  (name: "Paymaster's Bodyguard", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, medium armour")
-#field("SPECIAL RULES", "Mercenaries")
-
-- *Bodyguard:* When a Paymaster (including any Money Lender, Paychest and/or Paycart it might have) joins a unit whose front rank contains five or more models with the Bodyguard special rule, they may be placed in the second rank, rather than the first. If the unit's front rank is ever reduced to four or fewer models with the Bodyguard special rule, the Paymaster must immediately move to the front rank (displacing rank and file models if necessary). As long as the Paymaster is alive, the unit is Stubborn.
-
-#field("OPTIONS", "")
-
+#unit("PAYMASTER'S BODYGUARD",
+  first: true,
+  profiles: (
+    (name: "Paymaster's Bodyguard", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, medium armour",
+  special-rules: "Mercenaries",
+  special-rules-body: (
+    rule("Bodyguard")[When a Paymaster (including any Money Lender, Paychest and/or Paycart it might have) joins a unit whose front rank contains five or more models with the Bodyguard special rule, they may be placed in the second rank, rather than the first. If the unit's front rank is ever reduced to four or fewer models with the Bodyguard special rule, the Paymaster must immediately move to the front rank (displacing rank and file models if necessary). As long as the Paymaster is alive, the unit is Stubborn.],
+  ),
+  options: [
 - May take heavy armour +1.5 points/model
 - May take shields +1 point/model
 - May take Quirks of Character no points limit
@@ -1014,24 +1033,24 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Paymaster's Bodyguard to a Musician +5 points
 - May upgrade one Paymaster's Bodyguard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not include more than one unit of Paymaster's Bodyguard in your army.
-
-#entry("FREELANCERS")
-#profile(
-  (name: "Freelancer", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 17),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, medium armour, shield")
-#field("SPECIAL RULES", "Mercenaries")
-#field("OPTIONS", "")
 
+#unit("FREELANCERS",
+  profiles: (
+    (name: "Freelancer", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 17),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, medium armour, shield",
+  special-rules: "Mercenaries",
+  options: [
 - May take heavy armour +2 points/model
 - May take barding +1.5 points/model
 - May take Quirks of Character no points limit
@@ -1039,21 +1058,22 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Freelancer to a Musician +5 points
 - May upgrade one Freelancer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("GLADIATORS")
-#profile(
-  (name: "Gladiator", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 8, points: 9),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, buckler")
-#field("SPECIAL RULES", "Immunity (Fear), Mercenaries, Skirmishers")
 
-- *Net Fighters:* At the start of each round of close combat, a unit containing nets must attempt to entangle one of the units they are fighting in their front arc. Roll a D6 for each model with nets in your unit; for every 4+, an enemy model has become entangled (distributed as hits from shooting, but only affecting models that are allowed to strike). A model that has been entangled suffers a \-1 penalty to their Attacks (this does not apply to mounts) until the end of the close combat round.
-
-#field("OPTIONS", "")
-
+#unit("GLADIATORS",
+  profiles: (
+    (name: "Gladiator", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 8, points: 9),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, buckler",
+  special-rules: "Immunity (Fear), Mercenaries, Skirmishers",
+  special-rules-body: (
+    rule("Net Fighters")[At the start of each round of close combat, a unit containing nets must attempt to entangle one of the units they are fighting in their front arc. Roll a D6 for each model with nets in your unit; for every 4+, an enemy model has become entangled (distributed as hits from shooting, but only affecting models that are allowed to strike). A model that has been entangled suffers a \-1 penalty to their Attacks (this does not apply to mounts) until the end of the close combat round.],
+  ),
+  options: [
 - May replace bucklers with one of the following:
   - Shields +0.5 point/model
   - Additional hand weapons +0.5 point/model
@@ -1061,25 +1081,25 @@ No saves are allowed against Wounds caused by this weapon.
 - May take Quirks of Character no points limit
 - May take light armour +0.5 point/model
 - May upgrade one Gladiator to a Leader +5 points
-
-#entry("NORSEMEN")
-#profile(
-  (name: "Norseman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Mercenaries")
 
-- *Blood Rage:* Whenever a model with this special rule makes a successful charge (including Counter-Charge, Pursuit and Overrun), they are subject to Frenzy in the following round of close combat and count each of their ranks as double for the purpose of Steadfast.
-
-#field("UPGRADES", "")
-
-- *Fur Cloak:* A fur cloak gives the wearer the Natural Armour (6+) special rule against missile attacks.
-
-#field("OPTIONS", "")
-
+#unit("NORSEMEN",
+  profiles: (
+    (name: "Norseman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Mercenaries",
+  special-rules-body: (
+    rule("Blood Rage")[Whenever a model with this special rule makes a successful charge (including Counter-Charge, Pursuit and Overrun), they are subject to Frenzy in the following round of close combat and count each of their ranks as double for the purpose of Steadfast.],
+  ),
+  upgrades: (
+    rule("Fur Cloak")[A fur cloak gives the wearer the Natural Armour (6+) special rule against missile attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Replace shields with additional hand weapons free
   - Spears +0.5 point/model
@@ -1093,18 +1113,19 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Norseman to a Musician +5 points
 - May upgrade one Norseman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("DWARFS")
-#profile(
-  (name: "Dwarf", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 6),
+  ],
 )
-#field("UNIT SIZE", "10-45")
-#field("TROOP TYPE", "Infantry (Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("SPECIAL RULES", "Hatred (Goblins, Orcs, Skaven), Magic Resistance (1), Mercenaries, Relentless, Resolute")
-#field("OPTIONS", "")
 
+#unit("DWARFS",
+  profiles: (
+    (name: "Dwarf", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 6),
+  ),
+  unit-size: "10-45",
+  troop-type: "Infantry (Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  special-rules: "Hatred (Goblins, Orcs, Skaven), Magic Resistance (1), Mercenaries, Relentless, Resolute",
+  options: [
 - May choose one of the following:
   - Spears +1 point/model
   - Great weapons +3 points/model
@@ -1118,18 +1139,19 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Dwarf to a Musician +5 points
 - May upgrade one Dwarf to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ELVES")
-#profile(
-  (name: "Elves", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 6),
+  ],
 )
-#field("UNIT SIZE", "10-45")
-#field("TROOP TYPE", "Infantry (Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Elven Grace, Mercenaries")
-#field("OPTIONS", "")
 
+#unit("ELVES",
+  profiles: (
+    (name: "Elves", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 8, points: 6),
+  ),
+  unit-size: "10-45",
+  troop-type: "Infantry (Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Elven Grace, Mercenaries",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Additional hand weapons +1 point/model
@@ -1146,18 +1168,19 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Elf to a Musician +5 points
 - May upgrade one Elf to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("HALFLINGS")
-#profile(
-  (name: "Halfling", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: 3),
+  ],
 )
-#field("UNIT SIZE", "10-45")
-#field("TROOP TYPE", "Infantry (Halfling)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Duck & Weave, Mercenaries")
-#field("OPTIONS", "")
 
+#unit("HALFLINGS",
+  profiles: (
+    (name: "Halfling", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: 3),
+  ),
+  unit-size: "10-45",
+  troop-type: "Infantry (Halfling)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Duck & Weave, Mercenaries",
+  options: [
 - May choose one of the following:
   - Spears free
   - Shortbows +3 points/model
@@ -1169,18 +1192,19 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Halfling to a Musician +5 points
 - May upgrade one Halfling to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("OGRES")
-#profile(
-  (name: "Ogre", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 27),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapons")
-#field("SPECIAL RULES", "Natural Armour (6+), Mercenaries, Ogre Charge")
-#field("OPTIONS", "")
 
+#unit("OGRES",
+  profiles: (
+    (name: "Ogre", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 27),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapons",
+  special-rules: "Natural Armour (6+), Mercenaries, Ogre Charge",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
   - Ironfists +3 points/model
@@ -1194,17 +1218,18 @@ No saves are allowed against Wounds caused by this weapon.
 - May upgrade one Ogre to a Musician +5 points
 - May upgrade one Ogre to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ORCS")
-#profile(
-  (name: "Orc", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 7, points: 6),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Common Orc)")
-#field("BASE SIZE", "25x25 or 30x30")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "")
 
+#unit("ORCS",
+  profiles: (
+    (name: "Orc", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 7, points: 6),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Common Orc)",
+  base-size: "25x25 or 30x30",
+  equipment: "Hand weapon",
+  special-rules: [
 - *Animosity:* Units with this special rule must test for Animosity in the Charge sub-phase after all normal charges have been declared during each of your turns, unless any of the following applies:
   - The unit has fewer than 5 models.
   - The unit has declared a charge this turn.
@@ -1225,8 +1250,8 @@ as far as it can, and will then move as far forward as it can while still keepin
 forward arc. After the move is complete the unit must declare a charge against the closest visible
 enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the
 rest of its turn normally, as if it had not yet moved this turn.")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May choose one of the following:
   - Additional hand weapons +1 point/model
   - Spears +1 point/model
@@ -1239,19 +1264,21 @@ rest of its turn normally, as if it had not yet moved this turn.")))
 - May upgrade one Orc to a Musician +5 points
 - May upgrade one Orc to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("HOBGOBLINS")
-#profile(
-  (name: "Hobgoblin", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 9),
-  (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Hobgoblin)")
-#field("MOUNT", "Giant Wolf (Canine)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Cunning Retreat, Ded Shooty, Fast Cavalry, Mercenaries")
 
+#unit("HOBGOBLINS",
+  profiles: (
+    (name: "Hobgoblin", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 9),
+    (name: "Giant Wolf", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Hobgoblin)",
+  mount: "Giant Wolf (Canine)",
+  base-size: "25x50",
+  equipment: "Hand weapon",
+  special-rules: "Backstabbers, Cowardly Despoilers, Cunning Retreat, Ded Shooty, Fast Cavalry, Mercenaries",
+  special-rules-body: [
 - *Treacherous Gits:* Units with this special rule must test for Treachery in the Charge sub-phase after all normal charges have been declared during each of your turns, by every unit that is subject to Treachery, unless any of the following applies:
 
 *\-* The unit has less than 5 models. *\-* The unit has declared a charge this turn. *\-* The unit is engaged in close combat. *\-* The unit is garrisoning a building. *\-* The unit is fleeing or currently off the battlefield.
@@ -1272,8 +1299,8 @@ as far as it can, and will then move as far forward as it can while still keepin
 forward arc. After the move is complete the unit must declare a charge against the closest visible
 enemy unit, if it is possible to do so. If the unit cannot declare a charge it may carry on with the rest
 of its turn normally, as if it had not yet moved this turn.")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take light lances +1 point/model
 - May take shortbows +1 point/model
 - May take light armour +0.5 point/model
@@ -1283,58 +1310,62 @@ of its turn normally, as if it had not yet moved this turn.")))
 - May upgrade one Hobgoblin to a Musician +5 points
 - May upgrade one Hobgoblin to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("BALLISTA")
-#profile(
-  (name: "Ballista", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 40),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "40x40 or 50x50 (Ballista), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, bolt thrower")
-#field("OPTIONS", "")
 
+#unit("BALLISTA",
+  profiles: (
+    (name: "Ballista", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 40),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "40x40 or 50x50 (Ballista), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, bolt thrower",
+  options: [
 - May take light armour +0.5 point/crew
 - May take an additional crew +5 points
-
-#entry("SCORPION")
-#profile(
-  (name: "Scorpion", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 25),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "2 Crew (Human)")
-#field("BASE SIZE", "25x25 or 30x30 (Scorpion), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, scorpion")
 
+#unit("SCORPION",
+  profiles: (
+    (name: "Scorpion", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 25),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "2 Crew (Human)",
+  base-size: "25x25 or 30x30 (Scorpion), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, scorpion",
+  equipment-body: [
 - *Scorpion:* A scorpion is a bolt thrower that uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "5", "-"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take light armour +0.5 point/crew
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may take 1\-2 Scorpions as a single Special choice.
+  ],
+)
 
 = RARE UNITS
 
-#entry("MANEATERS", first: true)
-#profile(
-  (name: "Maneater", m: 6, ws: 4, bs: 4, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 43),
-)
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn")
-
-- *Motley Crew:* The models in a unit of Maneaters can have a variety of different weapons and special rules. If they do, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.
-
-#field("OPTIONS", "")
-
+#unit("MANEATERS",
+  first: true,
+  profiles: (
+    (name: "Maneater", m: 6, ws: 4, bs: 4, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 43),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn",
+  special-rules-body: (
+    rule("Motley Crew")[The models in a unit of Maneaters can have a variety of different weapons and special rules. If they do, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.],
+  ),
+  options: [
 - Any model may be armed with one of the following (different models may have different weapons):
   - Additional hand weapons +3 points/model
   - Ironfists +3 points/model
@@ -1349,76 +1380,83 @@ of its turn normally, as if it had not yet moved this turn.")))
 - May upgrade one Maneater to a Musician +5 points
 - May upgrade one Maneater to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Each Maneater can choose a separate Quirk of Character.
-
-#entry("SERPENTINE")
-#profile(
-  (name: "Serpentine", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x75 (Serpentine), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, cannon")
-#field("OPTIONS", "")
 
+#unit("SERPENTINE",
+  profiles: (
+    (name: "Serpentine", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x75 (Serpentine), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, cannon",
+  options: [
 - May take light armour +0.5 point/crew
 - May take an additional crew +5 points
-
-#entry("ONAGER")
-#profile(
-  (name: "Onager", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x75 (Onager), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, stone thrower")
-#field("OPTIONS", "")
 
+#unit("ONAGER",
+  profiles: (
+    (name: "Onager", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x75 (Onager), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, stone thrower",
+  options: [
 - May take light armour +0.5 point/crew
 - May take an additional crew +5 points
-
-#entry("RIBAULT")
-#profile(
-  (name: "Ribault", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x75 (Ribault), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, organ gun")
-#field("OPTIONS", "")
 
+#unit("RIBAULT",
+  profiles: (
+    (name: "Ribault", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 85),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x75 (Ribault), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, organ gun",
+  options: [
 - May take light armour +0.5 point/crew
 - May take an additional crew +5 points
-
-#entry("HOT POT")
-#profile(
-  (name: "Hot Pot", m: "-", ws: "-", bs: "-", s: "-", t: 5, w: "-", i: "-", a: "-", ld: "-", points: 70),
-  (name: "Crew", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Halfling)")
-#field("BASE SIZE", "20x20, 25x25 or 50x50 (Hot Pot), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, hot pot")
 
+#unit("HOT POT",
+  profiles: (
+    (name: "Hot Pot", m: "-", ws: "-", bs: "-", s: "-", t: 5, w: "-", i: "-", a: "-", ld: "-", points: 70),
+    (name: "Crew", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Halfling)",
+  base-size: "20x20, 25x25 or 50x50 (Hot Pot), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, hot pot",
+  equipment-body: [
 - *Hot Pot:* A hot pot is a stone thrower that uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-36\"", "3(6)", "Cumbersome, Ignores Armour Saves, Multiple Wounds (D3)"))
-
-#entry("GIANT")
-#profile(
-  (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
+  ],
 )
-#field("TROOP TYPE", "Monster (Giant)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Stubborn")
 
+#unit("GIANT",
+  breakable: true,
+  profiles: (
+    (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
+  ),
+  troop-type: "Monster (Giant)",
+  base-size: "50x50 or 50x75",
+  equipment: "Hand weapon",
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Stubborn",
+  special-rules-body: [
 - *Fall Over:* A Giant must test to see whether it falls over if any of the following apply:
   - If it is beaten in close combat. Test once results are established but before taking a Break test.
   - If it is fleeing at the start of the Movement phase.
@@ -1446,25 +1484,27 @@ and D6 Strength 3 hits are inflicted on their unit (save as normal)."), ("3", "H
 which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hits. Unsaved
 Wounds from these hits count towards the Giant's combat result."), ("4-5", "Squash or Eat: The model is removed as a casualty."), ("6", "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and
 then choose another victim. Roll again on this table to see what the Giant does with it.")))
-
-#entry("MARIENBURG LAND SHIP")
-#profile(
-  (name: "Land Ship", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 250),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 3+)")
-#field("CREW", "6 Crew (Human)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, handgun, chase gun")
 
+#unit("MARIENBURG LAND SHIP",
+  profiles: (
+    (name: "Land Ship", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 250),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 3+)",
+  crew: "6 Crew (Human)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon, handgun, chase gun",
+  equipment-body: [
 - *Chase Gun:* A chase gun is a cannon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "7", "Cumbersome, Multiple Wounds (D3)"))
 
 It can fire grape shot which is resolved at Strength 4. If the weapon is destroyed by a Misfire result, the Land Ship also immediately suffers D3 Wounds which Ignores Armour Saves.
-
-#field("SPECIAL RULES", "Terror, Unbreakable")
-
+  ],
+  special-rules: "Terror, Unbreakable",
+  special-rules-body: [
 - *Grind Attack:* In any turn in which the Land Ship does not charge, it inflicts D6 Stomps like a Monster.
 - *Stable Platform:* The crew ignores the rules for Ponderous when moving and shooting.
 - *The Wonder of the Age:* The Land Ship, has two modes of movement: slow and full power. The player must declare which they are using before the Land Ship is moved each turn. Note that the Land Ship cannot pursue.
@@ -1479,162 +1519,172 @@ direction shown on the dice. If a ‘Hit’ is rolled, the Land Ship remains sta
 Land Ship is destroyed and removed from play.")))
 
 When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers the effects of the Abandon Ship! result on the Land Ship Calamity table and on a 6 the Boom! result. On any other roll, the Land Ship is removed as normal.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Land Ship has a Line of Sight value of 5.
 - You may not have more than 3 Marienburg Land Ships in your army.
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("BORGIO THE BESIEGER", first: true)
-#namecost("Merchant Prince of Miragliano", "")
-#profile(
-  (name: "Borgio the Besieger", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 200),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
-)
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Shield, barding")
-#field("MAGIC ITEMS", "")
-
+#unit("BORGIO THE BESIEGER",
+  solo: true,
+  first: true,
+  subtitle: "Merchant Prince of Miragliano",
+  profiles: (
+    (name: "Borgio the Besieger", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 200),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Shield, barding",
+  magic-items: [
 - *Mace of Might:* Magic Weapon. If Borgio rolls a 6 To Hit with this weapon, this hit will be resolved at Strength 10.
 - *Armour of Brazen Bronze:* Magic Armour. Heavy armour. The Armour of Brazen Bronze gives Borgio a Magical Ward (5+).
 - *Monstrous Mask Helm*: Magic Armour. 6+ armour save. The wearer of the Monstrous Mask gains the Fear special rule.
-
-#field("SPECIAL RULES", "Hold the Line, Immunity (Psychology)")
-
+  ],
+  special-rules: "Hold the Line, Immunity (Psychology)",
+  special-rules-body: [
 - *Difficult to Slay:* If Borgio is reduced to zero wounds, roll a D6. On a 1\-3, he is removed as a casualty as normal. On a 4+, he stands back up again with a single wound remaining. Note that this ability cannot be used against attacks that kill the model outright.
 - *Master of Siegecraft*: If Borgio is your General, you may take one more duplicate War Machine unit than normal at the points value played.
-
-#entry("LUCREZZIA BELLADONNA")
-#namecost("Merchant Princess of Pavona", "")
-#profile(
-  (name: "Lucrezzia Belladonna", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 300),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Two hand weapons, phial of poison")
 
-- *Phial of Poison:* Nominate D3 enemy characters at the beginning of the battle. Roll a D6 for each; a roll of 4+ means that the character has been poisoned and starts the battle with one Wound less than normal, with no saves allowed. This has no effect against models with the Immunity (Poisoned Attacks) or Daemonic special rules.
-
-#field("MAGIC", "Lucrezzia Belladonna is a Level 4 Wizard who uses one of the following Lores of Magic:")
-
+#unit("LUCREZZIA BELLADONNA",
+  solo: true,
+  subtitle: "Merchant Princess of Pavona",
+  profiles: (
+    (name: "Lucrezzia Belladonna", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 300),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Two hand weapons, phial of poison",
+  equipment-body: (
+    rule("Phial of Poison")[Nominate D3 enemy characters at the beginning of the battle. Roll a D6 for each; a roll of 4+ means that the character has been poisoned and starts the battle with one Wound less than normal, with no saves allowed. This has no effect against models with the Immunity (Poisoned Attacks) or Daemonic special rules.],
+  ),
+  magic: "Lucrezzia Belladonna is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Shadow
-
-#field("MAGIC ITEMS", "")
-
-- *Potion of Pavona:* Enchanted Item. At the beginning of the battle, Lucrezzia may give the potion to any friendly character or take it herself. Roll a D6; on roll 2+, choose that number of the chosen model's characteristics to improve by +1. For example, if you roll a 4 you could choose to improve the model's WS, T, W, and I by +1. You cannot apply this bonus to a model's Leadership and cannot increase a characteristic by more than one. If you roll a 1, the model suffers a Wound with no saves allowed.
-
-#field("SPECIAL RULES", "Poisoned Attacks")
-#field("OPTIONS", "")
-
+  ],
+  magic-items: (
+    rule("Potion of Pavona")[Enchanted Item. At the beginning of the battle, Lucrezzia may give the potion to any friendly character or take it herself. Roll a D6; on roll 2+, choose that number of the chosen model's characteristics to improve by +1. For example, if you roll a 4 you could choose to improve the model's WS, T, W, and I by +1. You cannot apply this bonus to a model's Leadership and cannot increase a characteristic by more than one. If you roll a 1, the model suffers a Wound with no saves allowed.],
+  ),
+  special-rules: "Poisoned Attacks",
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("LORENZO LUPO")
-#namecost("Merchant Prince of Luccini", "")
-#profile(
-  (name: "Lorenzo Lupo", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 210),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Sword of Lucan:* Magic Weapon. Attacks made with the Sword of Lucan have the Ignores Armour Saves special rule.
-- *Shield of Myrmidia:* Magic Armour. Shield. All enemy models in base contact with Lorenzo lose one Attack each.
-- *Ring of Luccina:* Enchanted Item. Bound Spell (Level 1, cast on 3+). The Ring of Luccina contains an *augment aura* spell with a range of 12". If successfully cast, all fleeing troops within range will Rally automatically.
-
-#field("SPECIAL RULES", "")
-
+#unit("LORENZO LUPO",
+  solo: true,
+  subtitle: "Merchant Prince of Luccini",
+  profiles: (
+    (name: "Lorenzo Lupo", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 210),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Sword of Lucan")[Magic Weapon. Attacks made with the Sword of Lucan have the Ignores Armour Saves special rule.],
+    rule("Shield of Myrmidia")[Magic Armour. Shield. All enemy models in base contact with Lorenzo lose one Attack each.],
+    rule("Ring of Luccina")[Enchanted Item. Bound Spell (Level 1, cast on 3+). The Ring of Luccina contains an *augment aura* spell with a range of 12". If successfully cast, all fleeing troops within range will Rally automatically.],
+  ),
+  special-rules: [
 - *Fights on Foot*: Any Infantry unit joined by Lorenzo Lupo add +1 to their combat resolution bonus.
 - *Mighty Athlete*: Roll a D6 at the start of the battle to determine which pursuit he has been following prior to joining the army.
 
 #chart((("D6", "Pursuit", "Effect"), ("1-2", "Running", "+1 Toughness"), ("3-4", "Wrestling", "+1 Attack"), ("5-6", "Rowing", "+1 Strength")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#entry("MARCO COLOMBO")
-#namecost("Merchant Prince of Trantio", "")
-#profile(
-  (name: "Marco Colombo", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 160),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20, 25x25, 40x40 or 50x50")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Gem of Lustria:* Talisman. The Gem of Lustria gives Marco a Magical Ward (4+).
-- *Gourd of Lustrian Wine:* Enchanted Item. One use only. Marco may drink the wine at start of any close combat phase and it lasts until the start of the next player’s turn. While in effect, the Gourd of Lustrian Wine grants +D3 Strength.
-- *Scroll of Araby:* Arcane Item. Charm. One use only. The Scroll of Araby can be used at the start of any player's turn. Until the start your next turn, Marco and any unit he is with gain the Magic Resistance (3) special rule. Marco may use this item despite not being a Wizard.
-
-#field("SPECIAL RULES", "")
-
-- *Crossbow Hunter:* Marco ignores the Ponderous special rule when using crossbows.
-- *Navigator's Telescope:* All enemy units within Line of Sight and 24" to Marco must reveal any Hidden models they might contain at the start of unit of your turns.
-
-#field("OPTIONS", "")
-
+#unit("MARCO COLOMBO",
+  solo: true,
+  subtitle: "Merchant Prince of Trantio",
+  profiles: (
+    (name: "Marco Colombo", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 160),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20, 25x25, 40x40 or 50x50",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Gem of Lustria")[Talisman. The Gem of Lustria gives Marco a Magical Ward (4+).],
+    rule("Gourd of Lustrian Wine")[Enchanted Item. One use only. Marco may drink the wine at start of any close combat phase and it lasts until the start of the next player’s turn. While in effect, the Gourd of Lustrian Wine grants +D3 Strength.],
+    rule("Scroll of Araby")[Arcane Item. Charm. One use only. The Scroll of Araby can be used at the start of any player's turn. Until the start your next turn, Marco and any unit he is with gain the Magic Resistance (3) special rule. Marco may use this item despite not being a Wizard.],
+  ),
+  special-rules: (
+    rule("Crossbow Hunter")[Marco ignores the Ponderous special rule when using crossbows.],
+    rule("Navigator's Telescope")[All enemy units within Line of Sight and 24" to Marco must reveal any Hidden models they might contain at the start of unit of your turns.],
+  ),
+  options: [
 - May take a crossbow +7 points
 - May take Magic Items up to a total of 50 points
-
-#entry("LIETPOLD THE BLACK")
-#namecost("The Thrice-Cursed, the Coin-bought Prince", "")
-#profile(
-  (name: "Lietpold the Black", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 215),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy armour, barding")
-#field("MAGIC ITEMS", "")
 
-- *Gore Prow:* Magic Weapon. Great weapon. All attacks made with Gore Prow have the Multiple Wounds (D3) and Always Strikes First special rules.
-
-#field("SPECIAL RULES", "Mercenaries")
-
-- *Blessings of Lethe:* Lietpold has a Magical Ward (3+), but should he fail this save, then from Lietpold's next turn onward the save no longer applies and Lietpold suffers a \-1 penalty to his Toughness and Leadership characteristics.
-- *Murderous Charge:* Lietpold and any unit he has joined gain the Devastating Charge special rule.
-
-#entry("GHAZAK KHAN")
-#namecost("Terror of the East", "")
-#profile(
-  (name: "Ghazak Khan", m: 4, ws: 7, bs: 6, s: 5, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 205),
-  (name: "Warghan (Giant Wolf)", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 4, a: 2, ld: 5, points: ""),
+#unit("LIETPOLD THE BLACK",
+  solo: true,
+  subtitle: "The Thrice-Cursed, the Coin-bought Prince",
+  profiles: (
+    (name: "Lietpold the Black", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 215),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy armour, barding",
+  magic-items: (
+    rule("Gore Prow")[Magic Weapon. Great weapon. All attacks made with Gore Prow have the Multiple Wounds (D3) and Always Strikes First special rules.],
+  ),
+  special-rules: "Mercenaries",
+  special-rules-body: (
+    rule("Blessings of Lethe")[Lietpold has a Magical Ward (3+), but should he fail this save, then from Lietpold's next turn onward the save no longer applies and Lietpold suffers a \-1 penalty to his Toughness and Leadership characteristics.],
+    rule("Murderous Charge")[Lietpold and any unit he has joined gain the Devastating Charge special rule.],
+  ),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Hobgoblin)")
-#field("MOUNT", "Warghan (Canine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Shortbow, medium armour, shield")
-#field("MAGIC ITEMS", "")
 
-- *The Red Scimitar:* Magic Weapon. All Attacks made with this weapon have the Armour Piercing (3) and Multiple Wounds (D3) special rules.
-- *Daemonhead Helmet:* Magic Armour. 6+ armour save. As soon as Ghazak suffers his first wound in battle, the Daemon of the helmet awakens and gives Ghazak a Magical Ward (4+) the and Magic Resistance (1) special rule for the remainder of the battle. In addition, his Strength is doubled when fighting against the model or unit which caused the Wound.
-
-#field("SPECIAL RULES", "Backstabbers, Cowardly Despoilers, Ded Shooty, Fear, Mercenaries, Quell Treachery")
-
+#unit("GHAZAK KHAN",
+  solo: true,
+  subtitle: "Terror of the East",
+  profiles: (
+    (name: "Ghazak Khan", m: 4, ws: 7, bs: 6, s: 5, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 205),
+    (name: "Warghan (Giant Wolf)", m: 9, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 4, a: 2, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Hobgoblin)",
+  mount: "Warghan (Canine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Shortbow, medium armour, shield",
+  magic-items: (
+    rule("The Red Scimitar")[Magic Weapon. All Attacks made with this weapon have the Armour Piercing (3) and Multiple Wounds (D3) special rules.],
+    rule("Daemonhead Helmet")[Magic Armour. 6+ armour save. As soon as Ghazak suffers his first wound in battle, the Daemon of the helmet awakens and gives Ghazak a Magical Ward (4+) the and Magic Resistance (1) special rule for the remainder of the battle. In addition, his Strength is doubled when fighting against the model or unit which caused the Wound.],
+  ),
+  special-rules: "Backstabbers, Cowardly Despoilers, Ded Shooty, Fear, Mercenaries, Quell Treachery",
+  special-rules-body: [
 - *Commander of the Black Wolves:* Ghazak Khan may be the Army General despite not being Human. If Ghazak Khan is your Army General, you may take units of Hobgoblins and Orcs as Core Units instead of Special Units.
 - *Hiiyaaarrghh!* If Ghazak Khan is your Army General, then once per game he may call a Hiiyaaarrghh! The Hiiyaaarrghh! may only be called if the model first declares a charge, and must be announced immediately after making the charge declaration, before any charge reaction takes place. In the turn a Hiiyaaarrghh! is called, every friendly Hobgoblin unit within 12" adds +D3" to their charge move this turn. Ghazak Khan himself, and any unit he joins, adds +D6 to their charge move instead. In addition, every friendly unit within 12" of Ghazak Khan add their rank bonus to the result rolled on the Treacherous Gits table.
 - *War Cry of the Steppes:* Any unit that Ghazak Khan charges will not be able to Stand and Shoot or Flee as a Charge Reaction. This does not affect units that have Immunity (Psychology).
-
-#entry("MYDAS THE MEAN")
-#namecost("Notorious Paymaster", "")
-#profile(
-  (name: "Mydas the Mean", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 210),
-  (name: "Sheikh Yadosh", m: "-", ws: 2, bs: 2, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25 (Mydas), 50x100 (Paycart)")
-#field("MOUNT", "Paycart (Sheikh Yadosh only)")
-#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
-#field("MAGIC ITEMS", "")
 
+#unit("MYDAS THE MEAN",
+  solo: true,
+  subtitle: "Notorious Paymaster",
+  profiles: (
+    (name: "Mydas the Mean", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 210),
+    (name: "Sheikh Yadosh", m: "-", ws: 2, bs: 2, s: 3, t: "-", w: "-", i: 2, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25 (Mydas), 50x100 (Paycart)",
+  mount: "Paycart (Sheikh Yadosh only)",
+  equipment: "Hand weapon, heavy armour, shield",
+  magic-items: [
 - *The Crest of Mydas:* Talisman. Mydas and all models in the same unit gains the Magical Attacks special rule.
 - *Treasure Map:* Enchanted Item. At the start of each of your turns, roll a D6 and consult the table below to see what effect the promises of Mydas' Treasure Map have:
 
@@ -1642,19 +1692,24 @@ When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers 
 Bodyguards gain +1 to hit in close combat."), ("3-4", "The paychest is safe with me lads! Until the start of your next turn, all friendly units within 12\" of
 Mydas are Stubborn."), ("5-6", "If we win the battle, all mercenaries will receive a bonus! Until the start of your next turn, all
 friendly units within 12\" of Mydas add +1 to their combat resolution.")))
-#field("SPECIAL RULES", "Mercenaries, Paymaster")
-
-- *Sheikh Yadosh the Money Lender:* Sheikh Yadosh rides alone on the Paycart. He otherwise follows the rules for regular Money Lenders, except that the Leadership modifier is increased to +D3 rather than +1.
-
-#entry("LEONARDO DA MIRAGLIANO")
-#namecost("Scientific Genius", "")
-#profile(
-  (name: "Leonardo da Miragliano", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 2, i: 2, a: 1, ld: 7, points: 75),
+  ],
+  special-rules: "Mercenaries, Paymaster",
+  special-rules-body: (
+    rule("Sheikh Yadosh the Money Lender")[Sheikh Yadosh rides alone on the Paycart. He otherwise follows the rules for regular Money Lenders, except that the Leadership modifier is increased to +D3 rather than +1.],
+  ),
+  order: ("troop-type", "base-size", "mount", "equipment", "magic-items", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Sphere of Alchemy, Prism of Power, Compass of Meteoric Silver")
 
+#unit("LEONARDO DA MIRAGLIANO",
+  solo: true,
+  subtitle: "Scientific Genius",
+  profiles: (
+    (name: "Leonardo da Miragliano", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 2, i: 2, a: 1, ld: 7, points: 75),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Sphere of Alchemy, Prism of Power, Compass of Meteoric Silver",
+  equipment-body: [
 - *Sphere of Alchemy:* One use only. The Sphere has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "3", "Armour Piercing (2), Quick Shot"))
@@ -1663,128 +1718,146 @@ If the attacks hits, it inflicts 2D6 Hits.
 
 - *Prism of Power:* The Prism of Power may be used in any of your opponent's Magic phases after determining the Winds of Magic and channelling rolls for that turn. Roll a D6; on a 4+, Leonardo may remove 1 Power dice from the opponent's pool.
 - *Compass of Meteoric Silver:* At the start of the battle, your opponent must tell which of their units contains the highest number of magic items.
-
-#field("SPECIAL RULES", "")
-
-- *Artillery Accuracy:* One war machine that is within 3" of Leonardo can use his Ballistic Skill or re-roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of Leonardo are fired.
-- *Battle Strategy:* If Leonardo is included in your army, you may add +1 to the result when determining which side to deploy on.
-- *Crossbow Accuracy:* As long as Leonardo is with a unit armed with crossbows, the unit may re-roll all failed rolls of 1 To Hit in the Shooting phase.
-
-#entry("ULLI & MARQUAND")
-#namecost("A Pair of Rogues", "")
-#profile(
-  (name: "Marquand", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 70),
-  (name: "Ulli", m: 4, ws: 5, bs: 4, s: 5, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
+  ],
+  special-rules: (
+    rule("Artillery Accuracy")[One war machine that is within 3" of Leonardo can use his Ballistic Skill or re-roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of Leonardo are fired.],
+    rule("Battle Strategy")[If Leonardo is included in your army, you may add +1 to the result when determining which side to deploy on.],
+    rule("Crossbow Accuracy")[As long as Leonardo is with a unit armed with crossbows, the unit may re-roll all failed rolls of 1 To Hit in the Shooting phase.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, great weapon (Ulli only), light armour")
-#field("SPECIAL RULES", "Devastating Charge (Ulli only), Dodge (6+) (Marquand only), Mercenaries, Parry (6+)")
 
+#unit("ULLI & MARQUAND",
+  solo: true,
+  subtitle: "A Pair of Rogues",
+  profiles: (
+    (name: "Marquand", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 70),
+    (name: "Ulli", m: 4, ws: 5, bs: 4, s: 5, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, great weapon (Ulli only), light armour",
+  special-rules: "Devastating Charge (Ulli only), Dodge (6+) (Marquand only), Mercenaries, Parry (6+)",
+  special-rules-body: [
 (Marquand only)
 
 - *A Fistful of Crowns:* Whenever Ulli and Marquand roll a natural 1 on the Mercenary Loyalty table, they have decided to switch sides, and will be under the control of your opponent from then on. If they are inside a unit, they will immediately leave it and should be placed 1" away from their former unit, in any direction of your opponent's choice.
 - *Inseparable:* Ulli and Marquand must remain with each other at all times, forming their own unit, though they may still join other units as normal.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - Marquand may take Magic Items up to a total of 50 points
 - Ulli may take Magic Items up to a total of 50 points
-
-#entry("NICODEMUS")
-#namecost("The Cursed Pilgrim", "")
-#profile(
-  (name: "Nicodemus", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 1, ld: 8, points: 155),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Nicodemus is a Level 2 Wizard who uses the Lore of Battle Magic.")
-#field("SPECIAL RULES", "Fear, Loremaster (Lore of Battle Magic), Mercenaries")
-#field("OPTIONS", "")
 
+#unit("NICODEMUS",
+  solo: true,
+  subtitle: "The Cursed Pilgrim",
+  profiles: (
+    (name: "Nicodemus", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 1, ld: 8, points: 155),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "Nicodemus is a Level 2 Wizard who uses the Lore of Battle Magic.",
+  special-rules: "Fear, Loremaster (Lore of Battle Magic), Mercenaries",
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#entry("SIMIUS GANTT")
-#namecost("The Crow Master", "")
-#profile(
-  (name: "Simius Gantt", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 135),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Simius Gantt is a Level 2 Wizard who uses the Lore of Death.")
-#field("MAGIC ITEMS", "")
 
-- *Mantle of Crows:* Enchanted Item. Any enemy model in base contact with Simius at the start of the close combat phase suffers a single Impact Hit at Strength 2.
-
-#field("SPECIAL RULES", "")
-
-- *Decay of Ages:* Bound Spell (Level 2, cast on 7+). Remains in play. _Decay of Ages_ is a *hex* spell with a range of 12". The target unit must pass an immediate Toughness test or lose \-1 to their Movement, Weapon Skill, Ballistic Skill, Strength, Toughness and Initiative. They must keep testing at the start of each subsequent Magic Phase until they pass the Toughness test, the spell is dispelled or the unit is removed as a casualty. If the spell is dispelled or the unit passes the Toughness test, the unit is restored to their original characteristics.
-- *Needle and Thread:* If Simius rolls a 6 when rolling To Wound against a Character in close combat, he sews up the mouth of his enemy. The model cannot then lend their Leadership to any friendly units and Wizards are unable to cast spells for the remainder of the battle.
-
-#field("OPTIONS", "")
-
+#unit("SIMIUS GANTT",
+  solo: true,
+  subtitle: "The Crow Master",
+  profiles: (
+    (name: "Simius Gantt", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 135),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "Simius Gantt is a Level 2 Wizard who uses the Lore of Death.",
+  magic-items: (
+    rule("Mantle of Crows")[Enchanted Item. Any enemy model in base contact with Simius at the start of the close combat phase suffers a single Impact Hit at Strength 2.],
+  ),
+  special-rules: (
+    rule("Decay of Ages")[Bound Spell (Level 2, cast on 7+). Remains in play. _Decay of Ages_ is a *hex* spell with a range of 12". The target unit must pass an immediate Toughness test or lose \-1 to their Movement, Weapon Skill, Ballistic Skill, Strength, Toughness and Initiative. They must keep testing at the start of each subsequent Magic Phase until they pass the Toughness test, the spell is dispelled or the unit is removed as a casualty. If the spell is dispelled or the unit passes the Toughness test, the unit is restored to their original characteristics.],
+    rule("Needle and Thread")[If Simius rolls a 6 when rolling To Wound against a Character in close combat, he sews up the mouth of his enemy. The model cannot then lend their Leadership to any friendly units and Wizards are unable to cast spells for the remainder of the battle.],
+  ),
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#entry("JOHANN THE KNIFE")
-#namecost("Knife Fighter Extraordinaire", "")
-#profile(
-  (name: "Johann the Knife", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 135),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Mercenaries, Poisoned Attacks, Scouts")
 
-- *Black Lotus:* If Johann rolls a natural 6 on his To Hit rolls, that attack will automatically Wound. Armour saves are taken as normal.
-- *Crimson Shade:* One use only. Johan may use the Crimson Shade at the start of any of your turns. If he does so, he will gain +1 Movement, Strength, Initiative and Attacks for the duration of the turn.
-- *Knife Fighter Extraordinaire:* Johann has the Multiple Shots (3) special rule, which is increased to Multiple Shots (6) if he has not moved earlier this turn.
-
-#entry("AENUR")
-#namecost("The Sword of Twilight", "")
-#profile(
-  (name: "Aenur", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 120),
+#unit("JOHANN THE KNIFE",
+  solo: true,
+  subtitle: "Knife Fighter Extraordinaire",
+  profiles: (
+    (name: "Johann the Knife", m: 5, ws: 6, bs: 6, s: 4, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 135),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  special-rules: "Dodge (5+), Hidden, Mercenaries, Poisoned Attacks, Scouts",
+  special-rules-body: (
+    rule("Black Lotus")[If Johann rolls a natural 6 on his To Hit rolls, that attack will automatically Wound. Armour saves are taken as normal.],
+    rule("Crimson Shade")[One use only. Johan may use the Crimson Shade at the start of any of your turns. If he does so, he will gain +1 Movement, Strength, Initiative and Attacks for the duration of the turn.],
+    rule("Knife Fighter Extraordinaire")[Johann has the Multiple Shots (3) special rule, which is increased to Multiple Shots (6) if he has not moved earlier this turn.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Elf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Ienh-Khain:* Magic Weapon. This sword gives Aenur +1 Strength as well as the Killing Blow and Parry (6+) special rules.
-
-#field("SPECIAL RULES", "Elven Grace, Mercenaries")
-
-- *Invincible Swordsman:* Aenur always hits his opponents on a roll of 2+ in close combat.
-
-#entry("MARIANNA CHEVAUX")
-#namecost("Vampire Hunter", "")
-#profile(
-  (name: "Marianna Chevaux", m: 6, ws: 6, bs: 6, s: 5, t: 4, w: 2, i: 9, a: 3, ld: 9, points: 180),
+#unit("AENUR",
+  solo: true,
+  subtitle: "The Sword of Twilight",
+  profiles: (
+    (name: "Aenur", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 8, points: 120),
+  ),
+  troop-type: "Infantry (Special Character, Elf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Ienh-Khain")[Magic Weapon. This sword gives Aenur +1 Strength as well as the Killing Blow and Parry (6+) special rules.],
+  ),
+  special-rules: "Elven Grace, Mercenaries",
+  special-rules-body: (
+    rule("Invincible Swordsman")[Aenur always hits his opponents on a roll of 2+ in close combat.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, throwing weapon, crossbow")
-#field("MAGIC ITEMS", "")
 
-- *The Noctu:* Talisman. All shooting attacks directed against Marianna or any unit she is with suffer \-1 To Hit.
-
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Mercenaries, Poisoned Attacks, Scouts")
-
-- *The Red Thirst:* Whenever Marianna kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the model recovers a single Wound lost earlier in the battle. This does not work against Animated Constructs, Daemons, Spirits or Vampires.
-- *Vampire Hunter:* All enemy Vampires have the Hatred special rule again Marianna. In addition, Marianna counts as having the Poisoned Attacks special rule against Vampires.
-- *Vampiric:* Marianna Chevaux has the Fear and Immunity (Psychology) special rules. In addition, models suffer a \-1 penalty To Wound rolls against her, unless they are using Magical Attacks or Flaming Attacks. However, she treats all rivers as Deadly Terrain.
-
-#field("NOTES", "")
-
+#unit("MARIANNA CHEVAUX",
+  solo: true,
+  subtitle: "Vampire Hunter",
+  profiles: (
+    (name: "Marianna Chevaux", m: 6, ws: 6, bs: 6, s: 5, t: 4, w: 2, i: 9, a: 3, ld: 9, points: 180),
+  ),
+  troop-type: "Infantry (Special Character, Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, throwing weapon, crossbow",
+  magic-items: (
+    rule("The Noctu")[Talisman. All shooting attacks directed against Marianna or any unit she is with suffer \-1 To Hit.],
+  ),
+  special-rules: "Dodge (5+), Hidden, Mercenaries, Poisoned Attacks, Scouts",
+  special-rules-body: (
+    rule("The Red Thirst")[Whenever Marianna kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the model recovers a single Wound lost earlier in the battle. This does not work against Animated Constructs, Daemons, Spirits or Vampires.],
+    rule("Vampire Hunter")[All enemy Vampires have the Hatred special rule again Marianna. In addition, Marianna counts as having the Poisoned Attacks special rule against Vampires.],
+    rule("Vampiric")[Marianna Chevaux has the Fear and Immunity (Psychology) special rules. In addition, models suffer a \-1 penalty To Wound rolls against her, unless they are using Magical Attacks or Flaming Attacks. However, she treats all rivers as Deadly Terrain.],
+  ),
+  notes: [
 - Marianna Chevaux may join units of Humans despite being a Vampire.
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Antti Sinivuori", "")
+#unit("Additional Material:",
+  subtitle: "Antti Sinivuori",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

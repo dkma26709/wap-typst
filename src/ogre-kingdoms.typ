@@ -387,17 +387,17 @@ The character and any unit they are with gain the Swiftstride special rule when 
 
 = CHARACTERS
 
-#entry("CHIEFTAINS", first: true)
-#profile(
-  (name: "Tyrant", m: 6, ws: 6, bs: 4, s: 5, t: 5, w: 5, i: 5, a: 6, ld: 9, points: 210),
-  (name: "Bruiser", m: 6, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 150),
-)
-#field("TROOP TYPE", "Monstrous Infantry (Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge")
-#field("OPTIONS", "")
-
+#unit("CHIEFTAINS",
+  first: true,
+  profiles: (
+    (name: "Tyrant", m: 6, ws: 6, bs: 4, s: 5, t: 5, w: 5, i: 5, a: 6, ld: 9, points: 210),
+    (name: "Bruiser", m: 6, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 150),
+  ),
+  troop-type: "Monstrous Infantry (Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Natural Armour (6+), Ogre Charge",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -420,22 +420,23 @@ The character and any unit they are with gain the Swiftstride special rule when 
 - One Bruiser may carry the Battle Standard +25 points
 - A Bruiser may take Big Names and/or Magic Items up to a total of 50 points
 - A Tyrant may take Big Names and/or Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Tyrant or Bruiser mounted on a Rhinox Chariot loses the Natural Armour (6+) special rule.
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("BUTCHERS")
-#profile(
-  (name: "Slaughtermaster", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 235),
-  (name: "Butcher", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 4, i: 2, a: 3, ld: 7, points: 110),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Butcher is a Level 1 Wizard. A Slaughtermaster is a Level 3 Wizard. They use one of the following Lores")
 
+#unit("BUTCHERS",
+  profiles: (
+    (name: "Slaughtermaster", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 235),
+    (name: "Butcher", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 4, i: 2, a: 3, ld: 7, points: 110),
+  ),
+  troop-type: "Monstrous Infantry (Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  magic: "A Butcher is a Level 1 Wizard. A Slaughtermaster is a Level 3 Wizard. They use one of the following Lores",
+  magic-body: [
 of Magic:
 
 - Beasts
@@ -444,10 +445,9 @@ of Magic:
 - Heavens
 
 At least one of them must choose their spells from the Lore of the Great Maw.
-
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge, Immunity (Poisoned Attacks)")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Natural Armour (6+), Ogre Charge, Immunity (Poisoned Attacks)",
+  options: [
 - May take an additional Wizard Level +35 points
 - May choose one of the following:
   - Additional hand weapon +5 points
@@ -458,20 +458,21 @@ At least one of them must choose their spells from the Lore of the Great Maw.
 - May take a Great Mawpot (Slaughtermaster only) +100 points
 - A Butcher may take Magic Items up to a total of 50 points
 - A Slaughtermaster may take Magic Items up to a total of 100 points
-
-#entry("HUNTMASTER")
-#profile(
-  (name: "Huntmaster", m: 6, ws: 4, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 9, points: 140),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Independent, Natural Armour (6+), Ogre Charge, Scouts")
 
-- *Their Master's Voice:* Models with this special rule can join units of War Beasts and Monstrous Beasts.
-
-#field("OPTIONS", "")
-
+#unit("HUNTMASTER",
+  profiles: (
+    (name: "Huntmaster", m: 6, ws: 4, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 9, points: 140),
+  ),
+  troop-type: "Monstrous Infantry (Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Independent, Natural Armour (6+), Ogre Charge, Scouts",
+  special-rules-body: (
+    rule("Their Master's Voice")[Models with this special rule can join units of War Beasts and Monstrous Beasts.],
+  ),
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Spear +5 points
@@ -487,68 +488,69 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   - Thundertusk (replacing the Beast Rider) +210 points
   - Stonehorn (replacing the Beast Rider) +225 points
 - May take Big Names and/or Magic Items up to a total of 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Huntmaster may never be the Army General.
 - A Huntmaster mounted on a Stonehorn or Thundertusk has Unit Strength 14 and a Line of Sight value of 6. However, they lose the Natural Armour (6+) and Scouts special rules. They may not take any additional Beast Riders.
-
-#entry("FIREBELLY")
-#profile(
-  (name: "Firebelly", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 4, i: 2, a: 3, ld: 7, points: 125),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Firebelly is a Level 1 Wizard who uses the Lore of Fire.")
-#field("SPECIAL RULES", "Flaming Attacks, Immunity (Flaming Attacks), Natural Armour (6+), Ogre Charge")
 
-- *Fire Breath:* A model with this special rule has a Strength 3 Breath Weapon with the Flaming Attacks special rule.
-
-#field("OPTIONS", "")
-
+#unit("FIREBELLY",
+  profiles: (
+    (name: "Firebelly", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 4, i: 2, a: 3, ld: 7, points: 125),
+  ),
+  troop-type: "Monstrous Infantry (Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  magic: "A Firebelly is a Level 1 Wizard who uses the Lore of Fire.",
+  special-rules: "Flaming Attacks, Immunity (Flaming Attacks), Natural Armour (6+), Ogre Charge",
+  special-rules-body: (
+    rule("Fire Breath")[A model with this special rule has a Strength 3 Breath Weapon with the Flaming Attacks special rule.],
+  ),
+  options: [
 - May take an additional Wizard Level +35 points
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Great weapon +15 points
 - May take a gut-plate +5 points
 - May take Magic Items up to a total of 50 points
-
-#entry("RIMESPEAKER")
-#profile(
-  (name: "Rimespeaker", m: 7, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 8, points: 185),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Character, Yhetee)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Flammable, Forest Strider, Hill Strider, Ice Attacks, Independent, Magical Attacks")
 
+#unit("RIMESPEAKER",
+  profiles: (
+    (name: "Rimespeaker", m: 7, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 8, points: 185),
+  ),
+  troop-type: "Monstrous Infantry (Character, Yhetee)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  special-rules: "Flammable, Forest Strider, Hill Strider, Ice Attacks, Independent, Magical Attacks",
+  special-rules-body: [
 - *Ice Breath:* Rimespeakers have a Strength 3 Breath Weapon with the Ice Attacks and Magical Attacks special rules.
 - *Everwinter Prayers:* A model with this special rule knows the three Prayers listed below. They may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the Prayers is answered and take immediate effect. A unit can only be under the effect of one Prayer at a time.
   - *Call of the Blizzard:* All missile fire targeting the Rimespeaker and their unit suffer \-1 to Hit until the start of your next turn.
   - *Keening Gale:* The Rimespeaker and their unit gains +3 Movement until the start of your next turn.
   - *Pulverising Hailstorm:* All enemy units in base contact with the Rimespeaker suffer D6 Strength 4 Hits.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Great weapon +10 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Rimespeaker may never be the Army General.
-
-#entry("HONCHO")
-#profile(
-  (name: "Honcho", m: 4, ws: 4, bs: 5, s: 3, t: 4, w: 2, i: 5, a: 3, ld: 6, points: 25),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Gnoblar)")
-#field("BASE SIZE", "20x20")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Beneath Contempt, Bicker")
-#field("OPTIONS", "")
 
+#unit("HONCHO",
+  profiles: (
+    (name: "Honcho", m: 4, ws: 4, bs: 5, s: 3, t: 4, w: 2, i: 5, a: 3, ld: 6, points: 25),
+  ),
+  troop-type: "Infantry (Character, Gnoblar)",
+  base-size: "20x20",
+  equipment: "Hand weapon",
+  special-rules: "Beneath Contempt, Bicker",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Shield +5 points
@@ -558,62 +560,66 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   - Sling +5 points
 - May take light armour +3 points
 - May take Magic Items up to a total of 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Honcho may never be the Army General.
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#entry("MOURNFANG", first: true)
-#profile(
-  (name: "Mournfang", m: 8, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "Monstrous Beast (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("SPECIAL RULES", "Impale, Natural Armour (6+)")
-#field("NOTES", "")
-
+#unit("MOURNFANG",
+  first: true,
+  profiles: (
+    (name: "Mournfang", m: 8, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Rhinocerine)",
+  base-size: "50x100",
+  special-rules: "Impale, Natural Armour (6+)",
+  notes: [
 - A model mounted on a Mournfang has a Unit Strength and Line of Sight value of 4.
-
-#entry("GRIMHORN RHINOX")
-#profile(
-  (name: "Grimhorn Rhinox", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 5, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("SPECIAL RULES", "Frenzy, Impale, Natural Armour (6+)")
-#field("NOTES", "")
 
+#unit("GRIMHORN RHINOX",
+  profiles: (
+    (name: "Grimhorn Rhinox", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Rhinocerine)",
+  base-size: "50x100",
+  special-rules: "Frenzy, Impale, Natural Armour (6+)",
+  notes: [
 - A model mounted on a Grimhorn Rhinox has a Unit Strength and Line of Sight value of 5.
-
-#entry("GREAT MAWPOT")
-#profile(
-  (name: "Great Mawpot", m: "-", ws: "-", bs: "-", s: "-", t: 6, w: "-", i: "-", a: "-", ld: "-", points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("SPECIAL RULES", "")
 
-- *Battlebroth:* Whenever the Slaughtermaster casts an *augment* spell, the target unit regains 1 Wound's worth of models, just like a *summoning* spell.
-- *Vessel of the Gulping God:* A Slaughtermaster with a Great Mawpot gains the Inspiring Presence (6), Magical Ward (4+) and Stubborn special rules. In addition, he gains a +1 casting bonus and adds +6" to the range of his spells. Finally, his troop type changes to War Machine and he counts as being the crew. The Slaughtermaster can never choose to leave the Great Mawpot during the game. If the Slaughtermaster is killed, the Great Mawpot is also removed as a casualty.
-
-#field("NOTES", "")
-
+#unit("GREAT MAWPOT",
+  profiles: (
+    (name: "Great Mawpot", m: "-", ws: "-", bs: "-", s: "-", t: 6, w: "-", i: "-", a: "-", ld: "-", points: "-"),
+  ),
+  troop-type: "War Machine",
+  special-rules: (
+    rule("Battlebroth")[Whenever the Slaughtermaster casts an *augment* spell, the target unit regains 1 Wound's worth of models, just like a *summoning* spell.],
+    rule("Vessel of the Gulping God")[A Slaughtermaster with a Great Mawpot gains the Inspiring Presence (6), Magical Ward (4+) and Stubborn special rules. In addition, he gains a +1 casting bonus and adds +6" to the range of his spells. Finally, his troop type changes to War Machine and he counts as being the crew. The Slaughtermaster can never choose to leave the Great Mawpot during the game. If the Slaughtermaster is killed, the Great Mawpot is also removed as a casualty.],
+  ),
+  notes: [
 - A Slaughtermaster with a Mawpot has a Unit Strength and Line of Sight value of 2.
+  ],
+)
 
 = CORE UNITS
 
-#entry("BULLS", first: true)
-#profile(
-  (name: "Bull", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 29),
-)
-#field("UNIT SIZE", "3-12")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge")
-#field("OPTIONS", "")
-
+#unit("BULLS",
+  first: true,
+  profiles: (
+    (name: "Bull", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 29),
+  ),
+  unit-size: "3-12",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Natural Armour (6+), Ogre Charge",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
   - Ironfists +3 points/model
@@ -622,38 +628,40 @@ At least one of them must choose their spells from the Lore of the Great Maw.
 - May upgrade one Bull to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("IRONGUTS")
-#profile(
-  (name: "Irongut", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 8, points: 43),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Great weapon, light armour, gut-plate")
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge")
 
-- *Down to the Ironguts:* If a friendly unit of Ogres within 6" of an Irongut unit breaks from combat, the Ironguts may re-roll 1's when rolling To Hit and To Wound in close combat this turn.
-
-#field("OPTIONS", "")
-
+#unit("IRONGUTS",
+  profiles: (
+    (name: "Irongut", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 8, points: 43),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Great weapon, light armour, gut-plate",
+  special-rules: "Natural Armour (6+), Ogre Charge",
+  special-rules-body: (
+    rule("Down to the Ironguts")[If a friendly unit of Ogres within 6" of an Irongut unit breaks from combat, the Ironguts may re-roll 1's when rolling To Hit and To Wound in close combat this turn.],
+  ),
+  options: [
 - May upgrade one Irongut to a Leader +5 points
 - May upgrade one Irongut to a Musician +5 points
 - May upgrade one Irongut to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("GROINBITERS")
-#profile(
-  (name: "Groinbiter", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 2),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Gnoblar)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Beneath Contempt, Bicker")
-#field("OPTIONS", "")
 
+#unit("GROINBITERS",
+  profiles: (
+    (name: "Groinbiter", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 2),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Gnoblar)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Beneath Contempt, Bicker",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +1 point/model
   - Shields +1 point/model
@@ -661,88 +669,95 @@ At least one of them must choose their spells from the Lore of the Great Maw.
 - May upgrade one Groinbiter to a Leader +5 points
 - May upgrade one Groinbiter to a Musician +5 points
 - May upgrade one Groinbiter to a Standard Bearer +10 points
-
-#entry("PIGBACK RIDERS")
-#profile(
-  (name: "Pigback Rider", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 5),
+  ],
 )
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Gnoblar)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, shield")
-#field("SPECIAL RULES", "Beneath Contempt, Bicker")
-#field("OPTIONS", "")
 
+#unit("PIGBACK RIDERS",
+  profiles: (
+    (name: "Pigback Rider", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 5),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Gnoblar)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, shield",
+  special-rules: "Beneath Contempt, Bicker",
+  options: [
 - May upgrade one Pigback Rider to a Leader +5 points
 - May upgrade one Pigback Rider to a Musician +5 points
 - May upgrade one Pigback Rider to a Standard Bearer +10 points
-
-#entry("FLINGERS")
-#profile(
-  (name: "Flinger", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 4),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Gnoblar)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, sling")
-#field("SPECIAL RULES", "Beneath Contempt, Bicker")
-#field("OPTIONS", "")
 
+#unit("FLINGERS",
+  profiles: (
+    (name: "Flinger", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 4),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Gnoblar)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, sling",
+  special-rules: "Beneath Contempt, Bicker",
+  options: [
 - May be upgraded to Skirmishers +1 point/model
 - May upgrade one Flinger to a Leader +5 points
 - May upgrade one Groinbiter to a Musician +5 points
+  ],
+)
 
 = SPECIAL UNITS
 
-#entry("LEADBELCHERS", first: true)
-#profile(
-  (name: "Leadbelcher", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 42),
-)
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, leadbelcher gun, gut-plate")
-
+#unit("LEADBELCHERS",
+  first: true,
+  profiles: (
+    (name: "Leadbelcher", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 42),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, leadbelcher gun, gut-plate",
+  equipment-body: [
 - *Leadbelcher Gun:* Leadbelcher guns have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Cumbersome, Multiple Shots (D6), Rapid Fire"))
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Natural Armour (6+), Ogre Charge",
+  options: [
 - May upgrade one Leadbelcher to a Leader +5 points
 - May upgrade one Leadbelcher to a Musician +5 points
 - May upgrade one Leadbelcher to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("HUNTERS")
-#profile(
-  (name: "Hunter", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 8, points: 44),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, harpoon launcher, gut-plate")
-#field("SPECIAL RULES", "Independent, Natural Armour (6+), Ogre Charge, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("HUNTERS",
+  profiles: (
+    (name: "Hunter", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 8, points: 44),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, harpoon launcher, gut-plate",
+  special-rules: "Independent, Natural Armour (6+), Ogre Charge, Scouts, Skirmishers",
+  options: [
 - May upgrade one Hunter to a Leader +5 points
   - May take a Blood Vulture +4 points
-
-#entry("MANEATERS")
-#profile(
-  (name: "Maneater", m: 6, ws: 4, bs: 4, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 43),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn")
 
-- *Motley Crew:* The models in a unit of Maneaters can have a variety of different weapons and special rules. If they do, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.
-
-#field("OPTIONS", "")
-
+#unit("MANEATERS",
+  profiles: (
+    (name: "Maneater", m: 6, ws: 4, bs: 4, s: 5, t: 4, w: 3, i: 3, a: 3, ld: 8, points: 43),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn",
+  special-rules-body: (
+    rule("Motley Crew")[The models in a unit of Maneaters can have a variety of different weapons and special rules. If they do, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.],
+  ),
+  options: [
 - Any model may be armed with one of the following (different models may have different weapons):
   - Additional hand weapons +3 points/model
   - Ironfists +3 points/model
@@ -766,20 +781,21 @@ At least one of them must choose their spells from the Lore of the Great Maw.
 - May upgrade one Maneater to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("MOURNFANG CAVALRY")
-#profile(
-  (name: "Ogre", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 68),
-  (name: "Mournfang", m: 8, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Ogre)")
-#field("MOUNT", "Mournfang (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, light armour, gut-plate")
-#field("SPECIAL RULES", "Impale, Natural Armour (5+)")
-#field("OPTIONS", "")
 
+#unit("MOURNFANG CAVALRY",
+  profiles: (
+    (name: "Ogre", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 68),
+    (name: "Mournfang", m: 8, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 2, a: 3, ld: 5, points: ""),
+  ),
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Ogre)",
+  mount: "Mournfang (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, light armour, gut-plate",
+  special-rules: "Impale, Natural Armour (5+)",
+  options: [
 - May choose one of the following:
   - Ironfists +3 points/model
   - Light lances +3 points/model
@@ -792,108 +808,115 @@ At least one of them must choose their spells from the Lore of the Great Maw.
 - May upgrade one Ogre to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Mournfang Cavalry have a Unit Strength and Line of Sight value of 4.
-
-#entry("YHETEES")
-#profile(
-  (name: "Yhetee", m: 7, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: 38),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Yhetee)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Two hand weapons")
-#field("SPECIAL RULES", "Flammable, Forest Strider, Hill Strider, Ice Attacks, Independent, Magical Attacks")
-#field("OPTIONS", "")
 
+#unit("YHETEES",
+  profiles: (
+    (name: "Yhetee", m: 7, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: 38),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Yhetee)",
+  base-size: "40x40",
+  equipment: "Two hand weapons",
+  special-rules: "Flammable, Forest Strider, Hill Strider, Ice Attacks, Independent, Magical Attacks",
+  options: [
 - May upgrade one Yhetee to a Leader +5 points
-
-#entry("GORGERS")
-#profile(
-  (name: "Gorger", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 2, a: 4, ld: 8, points: 42),
+  ],
 )
-#field("UNIT SIZE", "1-5")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Ambushers, Frenzy, Killing Blow, Natural Armour (6+), Skirmishers, Unbreakable")
-#field("OPTIONS", "")
 
+#unit("GORGERS",
+  profiles: (
+    (name: "Gorger", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 2, a: 4, ld: 8, points: 42),
+  ),
+  unit-size: "1-5",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Ambushers, Frenzy, Killing Blow, Natural Armour (6+), Skirmishers, Unbreakable",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
   - Great weapons +10 points/model
 - May upgrade one Gorger to a Leader +5 points
-
-#entry("SABRETUSKS")
-#profile(
-  (name: "Sabretusk", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 3, a: 2, ld: 4, points: 19),
+  ],
 )
-#field("UNIT SIZE", "2-10")
-#field("TROOP TYPE", "War Beast (Feline)")
-#field("BASE SIZE", "25x50")
-#field("SPECIAL RULES", "Fear, Natural Armour (6+)")
-#field("OPTIONS", "")
 
+#unit("SABRETUSKS",
+  profiles: (
+    (name: "Sabretusk", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 3, a: 2, ld: 4, points: 19),
+  ),
+  unit-size: "2-10",
+  troop-type: "War Beast (Feline)",
+  base-size: "25x50",
+  special-rules: "Fear, Natural Armour (6+)",
+  options: [
 - May choose one of the following:
   - Ambushers +1 point/model
   - Killing Blow +1 point/model
   - Scouts +1 point/model
-
-#compact-entry("CRAGBEASTS")[
-#profile(
-  (name: "Cragbeast", m: 7, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 3, a: 4, ld: 4, points: 46),
+  ],
 )
-#field("UNIT SIZE", "1-6")
-#field("TROOP TYPE", "Monstrous Beast (Ursine)")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("SPECIAL RULES", "Natural Armour (5+)")
-]
 
-#entry("RHINOX CHARIOT")
-#profile(
-  (name: "Rhinox Chariot", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 100),
-  (name: "Charioteer", m: "-", ws: 3, bs: 2, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
-  (name: "Young Rhinox", m: "-", ws: 3, bs: "-", s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+#unit("CRAGBEASTS",
+  compact: true,
+  profiles: (
+    (name: "Cragbeast", m: 7, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 3, a: 4, ld: 4, points: 46),
+  ),
+  unit-size: "1-6",
+  troop-type: "Monstrous Beast (Ursine)",
+  base-size: "50x50 or 50x75",
+  special-rules: "Natural Armour (5+)",
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "1 Charioteer (Ogre)")
-#field("DRAWN BY", "1 Young Rhinox (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("SPECIAL RULES", "Fear, Impale, Natural Armour (5+)")
-#field("NOTES", "")
 
+#unit("RHINOX CHARIOT",
+  profiles: (
+    (name: "Rhinox Chariot", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 100),
+    (name: "Charioteer", m: "-", ws: 3, bs: 2, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
+    (name: "Young Rhinox", m: "-", ws: 3, bs: "-", s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "1 Charioteer (Ogre)",
+  drawn-by: "1 Young Rhinox (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, gut-plate",
+  special-rules: "Fear, Impale, Natural Armour (5+)",
+  notes: [
 - A Rhinox Chariot has a Line of Sight value of 4.
-
-#entry("TRAPPERS")
-#profile(
-  (name: "Trapper", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Gnoblar)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, throwing weapons")
-#field("SPECIAL RULES", "Beneath Contempt, Bicker, Scouts, Skirmishers")
 
-- *Trappers:* Enemy units that successfully charge a unit of Trappers' front must take 1 Dangerous Terrain test for each Trapper in the unit as soon as the charge is completed.
-
-#field("OPTIONS", "")
-
+#unit("TRAPPERS",
+  profiles: (
+    (name: "Trapper", m: 4, ws: 2, bs: 3, s: 2, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Gnoblar)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, throwing weapons",
+  special-rules: "Beneath Contempt, Bicker, Scouts, Skirmishers",
+  special-rules-body: (
+    rule("Trappers")[Enemy units that successfully charge a unit of Trappers' front must take 1 Dangerous Terrain test for each Trapper in the unit as soon as the charge is completed.],
+  ),
+  options: [
 - May upgrade one Trapper to a Leader +5 points
-
-#entry("SCRAPLAUNCHER")
-#profile(
-  (name: "Scraplauncher", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 130),
-  (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
-  (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "7 Scrappers (Gnoblar)")
-#field("DRAWN BY", "1 Young Rhinox (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, Scraplauncher Catapult")
 
+#unit("SCRAPLAUNCHER",
+  profiles: (
+    (name: "Scraplauncher", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 130),
+    (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+    (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "7 Scrappers (Gnoblar)",
+  drawn-by: "1 Young Rhinox (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, Scraplauncher Catapult",
+  equipment-body: [
 - *Scraplauncher Catapult:* A scraplauncher catapult is a stone thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "3(3)", "Cumbersome, Killing Blow"))
@@ -903,23 +926,25 @@ If a misfire is rolled, roll a D6 and consult the Scraplauncher Misfire chart.
 #chart((("D6", "Result"), ("1", "Kerrr-unch! The Scraplauncher is destroyed."), ("2", "Groink?!? The Scraplauncher may not shoot this turn, and from now on it has the Random
 Movement (2D6) special rule, and will move in a random direction."), ("3-4", "Splang! The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this
 turn or in the controlling player's next turn."), ("5-6", "It's Mine! The Scraplauncher may not fire this turn.")))
-#field("SPECIAL RULES", "Fear, Impale, Natural Armour (6+)")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Fear, Impale, Natural Armour (6+)",
+  notes: [
 - A Scraplauncher has a Line of Sight value of 4.
-
-#entry("SKEWERSLINGER")
-#profile(
-  (name: "Skewerslinger", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 90),
-  (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
-  (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "7 Scrappers (Gnoblar)")
-#field("DRAWN BY", "1 Young Rhinox (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, Skewerslinger Bolt Thrower")
 
+#unit("SKEWERSLINGER",
+  profiles: (
+    (name: "Skewerslinger", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 90),
+    (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+    (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "7 Scrappers (Gnoblar)",
+  drawn-by: "1 Young Rhinox (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, Skewerslinger Bolt Thrower",
+  equipment-body: [
 - *Skewerslinger Bolt Thrower:* A skewerslinger is a Bolt Thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36/48\"", "6", "Cumbersome, Multiple Shots (D3), Multiple Wounds (D3), Rapid Fire"))
@@ -928,44 +953,47 @@ The Skewerslinger does not suffer To Hit penalties for moving and shooting. If y
 
 #chart((("D6", "Result"), ("1", "Kerrr-unch! The Skewerslinger is destroyed."), ("2", "Groink?!? The Skewerslinger may not shoot this turn, and from now on it has the Random
 Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Splang! The Skewerslinger suffers one Wound which Ignores Armour Saves.")))
-#field("SPECIAL RULES", "Fear, Impale, Natural Armour (6+)")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Fear, Impale, Natural Armour (6+)",
+  notes: [
 - A Skewerslinger has a Line of Sight value of 4.
+  ],
+)
 
 = RARE UNITS
 
-#entry("CLEAVERS", first: true)
-#profile(
-  (name: "Cleaver", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 7, points: 25),
-)
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("MAGIC", "A unit of Cleavers is a Level 1 Wizard who chooses spells from the Lore of Gut Magic.")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn")
-
-- *Gutseers:* The unit receives an additional +1 casting bonus for every 3 models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Cleaver as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Cleaver unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.
-
-#field("OPTIONS", "")
-
+#unit("CLEAVERS",
+  first: true,
+  profiles: (
+    (name: "Cleaver", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 3, a: 3, ld: 7, points: 25),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, gut-plate",
+  magic: "A unit of Cleavers is a Level 1 Wizard who chooses spells from the Lore of Gut Magic.",
+  special-rules: "Immunity (Psychology), Natural Armour (6+), Ogre Charge, Stubborn",
+  special-rules-body: (
+    rule("Gutseers")[The unit receives an additional +1 casting bonus for every 3 models in the unit with this special rule. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Cleaver as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Cleaver unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.],
+  ),
+  options: [
 - May take additional hand weapons +3 points/model
 - May upgrade one Cleaver to a Leader +5 points
-
-#entry("GRIMHORN RHINOX RIDERS")
-#profile(
-  (name: "Ogre", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 100),
-  (name: "Grimhorn Rhinox", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "1-3")
-#field("TROOP TYPE", "Monstrous Creature (Ogre)")
-#field("MOUNT", "Grimhorn Rhinox (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, light armour, gut-plate")
-#field("SPECIAL RULES", "Frenzy (Grimhorn Rhinox only), Impale, Natural Armour (5+)")
-#field("OPTIONS", "")
 
+#unit("GRIMHORN RHINOX RIDERS",
+  profiles: (
+    (name: "Ogre", m: 6, ws: 3, bs: 2, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 100),
+    (name: "Grimhorn Rhinox", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 4, ld: 5, points: ""),
+  ),
+  unit-size: "1-3",
+  troop-type: "Monstrous Creature (Ogre)",
+  mount: "Grimhorn Rhinox (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, light armour, gut-plate",
+  special-rules: "Frenzy (Grimhorn Rhinox only), Impale, Natural Armour (5+)",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
   - Ironfists +3 points/model
@@ -976,25 +1004,26 @@ Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Sp
 - May upgrade one Ogre to a Standard Bearer +10 points
   - May take a Look-out Gnoblar 5 points
   - May take a Magic Standard worth up to 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - Grimhorn Rhinox Riders have a Unit Strength and Line of Sight value of 5.
 - Grimhorn Rhinox Riders follow the rules for Ranks and Supporting Attacks from Monstrous Cavalry.
-
-#entry("IRONBLASTER")
-#profile(
-  (name: "Ironblaster", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 180),
-  (name: "Leadbelcher", m: "-", ws: 3, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
-  (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
-  (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour Save 6+)")
-#field("CREW", "1 Leadbelcher (Ogre), 1 Scrapper (Gnoblar)")
-#field("DRAWN BY", "1 Young Rhinox (Rhinocerine)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, Cannon of the Sky-titans, gut-plate")
 
+#unit("IRONBLASTER",
+  profiles: (
+    (name: "Ironblaster", m: 5, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 180),
+    (name: "Leadbelcher", m: "-", ws: 3, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
+    (name: "Scrapper", m: "-", ws: 2, bs: 3, s: 2, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+    (name: "Young Rhinox", m: "-", ws: 3, bs: 0, s: 5, t: "-", w: "-", i: 2, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Chariot (Armour Save 6+)",
+  crew: "1 Leadbelcher (Ogre), 1 Scrapper (Gnoblar)",
+  drawn-by: "1 Young Rhinox (Rhinocerine)",
+  base-size: "50x100",
+  equipment: "Hand weapon, Cannon of the Sky-titans, gut-plate",
+  equipment-body: [
 - *Cannon of the Sky-titans:* A cannon of the Sky-titans is a cannon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-72\"", "10", "Cumbersome, Multiple Wounds (D6)"))
@@ -1003,32 +1032,32 @@ When rolling to determine the bounce distance for a cannon of the Sky-titans, ro
 
 #chart((("D6", "Result"), ("1", "Krakabooom! The Ironblaster is destroyed and all units within D6\" take 2D6 Strength 5 hits."), ("2", "Krrack! The cannon may not be fired for the rest of the battle."), ("3-4", "Squelch! The cannon may not fire this turn or next turn."), ("5-6", "Lurch! Roll a scatter dice and turn the Ironblaster to face the direction rolled. The cannon may not
 shoot this turn.")))
-#field("SPECIAL RULES", "Fear, Natural Armour (5+)")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Fear, Natural Armour (5+)",
+  notes: [
 - An Ironblaster has a Line of Sight value of 4.
-
-#entry("STONEHORN")
-#profile(
-  (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 235),
-  (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Rhinocerine)")
-#field("CREW", "1 Beast Rider (Ogre)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Light lance, gut-plate (Beast Rider only)")
-#field("SPECIAL RULES", "Frenzy (Stonehorn only), Natural Armour (3+)")
 
-- *Earth-shattering Charge:* A Stonehorn has the Devastating Charge and Mighty Blow (1) special rules in any turn that it charges.
-- *Stone Skeleton:* If an attack with the Multiple Wounds special rule successfully wounds a Stonehorn, halve the number of Wounds inflicted (rounding up)
-
-#field("UPGRADES", "")
-
-- *Belligerent Charger:* The Stonehorn may re-roll failed charge distances.
-- *Rockmane Elder:* All attacks targeting the Stonehorn suffer \-1 To Wound.
-
-#field("OPTIONS", "")
-
+#unit("STONEHORN",
+  profiles: (
+    (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 235),
+    (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Rhinocerine)",
+  crew: "1 Beast Rider (Ogre)",
+  base-size: "100x150",
+  equipment: "Light lance, gut-plate (Beast Rider only)",
+  special-rules: "Frenzy (Stonehorn only), Natural Armour (3+)",
+  special-rules-body: (
+    rule("Earth-shattering Charge")[A Stonehorn has the Devastating Charge and Mighty Blow (1) special rules in any turn that it charges.],
+    rule("Stone Skeleton")[If an attack with the Multiple Wounds special rule successfully wounds a Stonehorn, halve the number of Wounds inflicted (rounding up)],
+  ),
+  upgrades: (
+    rule("Belligerent Charger")[The Stonehorn may re-roll failed charge distances.],
+    rule("Rockmane Elder")[All attacks targeting the Stonehorn suffer \-1 To Wound.],
+  ),
+  options: [
 - Each Beast Rider may replace light lance with one of the following:
   - Chaintrap +2 points
   - Blood Vulture +4 points
@@ -1036,37 +1065,36 @@ shoot this turn.")))
 - May take an additional Beast Rider +10 points
 - May take Belligerent Charger +15 points
 - May take Rockmane Elder +25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Stonehorn has Unit Strength 14 and a Line of Sight value of 6. An additional Beast Rider adds +2 Unit Strength.
 - Each Beast Rider may have different equipment.
-
-#entry("THUNDERTUSK")
-#profile(
-  (name: "Thundertusk", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 4, ld: 5, points: 220),
-  (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Elephantine)")
-#field("CREW", "1 Beast Rider (Ogre)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Light lance, gut-plate (Beast Rider only)")
-#field("SPECIAL RULES", "Immunity (Ice Attacks), Natural Armour (4+)")
 
+#unit("THUNDERTUSK",
+  profiles: (
+    (name: "Thundertusk", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 4, ld: 5, points: 220),
+    (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Elephantine)",
+  crew: "1 Beast Rider (Ogre)",
+  base-size: "100x150",
+  equipment: "Light lance, gut-plate (Beast Rider only)",
+  special-rules: "Immunity (Ice Attacks), Natural Armour (4+)",
+  special-rules-body: [
 - *Numbing Chill:* Any enemy unit within 6" of a Thundertusk has the Always Strikes Last special rule. This has no effect on models with Immunity (Ice Attacks).
 - *Sphere of Frost-wreathed Ice:* The Thundertusk can make a stone thrower shooting attack with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6-24\"", "3(6)", "Ice Attacks, Multiple Wounds (D3)"))
 
 Do not use the Stone Thrower Misfire chart if the sphere of frost-wreathed ice suffers a misfire. Instead, a misfire means that the sphere does not fire this turn, though it may still fire as normal next turn.
-
-#field("UPGRADES", "")
-
-- *Fleshgreed:* Whenever the Thundertusk inflicts an unsaved Wound in close combat, roll a D6; on a natural 6, they regain one Wound lost previously during the game. This has no effect against Animated Constructs, Daemons, Spirits, Undead or Vampires.
-- *Rimefrost Hide:* The Thundertusk gains the Natural Armour (6+) special rule.
-
-#field("OPTIONS", "")
-
+  ],
+  upgrades: (
+    rule("Fleshgreed")[Whenever the Thundertusk inflicts an unsaved Wound in close combat, roll a D6; on a natural 6, they regain one Wound lost previously during the game. This has no effect against Animated Constructs, Daemons, Spirits, Undead or Vampires.],
+    rule("Rimefrost Hide")[The Thundertusk gains the Natural Armour (6+) special rule.],
+  ),
+  options: [
 - Each Beast Rider may replace light lance with one of the following:
   - Chaintrap +2 points
   - Blood Vulture +4 points
@@ -1074,31 +1102,31 @@ Do not use the Stone Thrower Misfire chart if the sphere of frost-wreathed ice s
 - May take an additional Beast Rider +10 points
 - May take Fleshgreed +15 points
 - May take Rimefrost Hide +15 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Thundertusk has Unit Strength 14 and a Line of Sight value of 6. An additional Beast Rider adds +2 Unit Strength.
 - Each Beast Rider may have different equipment.
-
-#entry("ICE MAMMOTH")
-#profile(
-  (name: "Ice Mammoth", m: 8, ws: 3, bs: 0, s: 7, t: 6, w: 10, i: 1, a: "*", ld: 5, points: 320),
-  (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Elephantine)")
-#field("CREW", "2 Beast Riders (Ogre)")
-#field("BASE SIZE", "100x150")
-#field("EQUIPMENT", "Gut-plate (Beast Riders only)")
-#field("OPTIONS", "")
 
+#unit("ICE MAMMOTH",
+  profiles: (
+    (name: "Ice Mammoth", m: 8, ws: 3, bs: 0, s: 7, t: 6, w: 10, i: 1, a: "*", ld: 5, points: 320),
+    (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: "-", w: "-", i: 2, a: 3, ld: 7, points: ""),
+  ),
+  troop-type: "Monster (Elephantine)",
+  crew: "2 Beast Riders (Ogre)",
+  base-size: "100x150",
+  equipment: "Gut-plate (Beast Riders only)",
+  options: [
 - Each Beast Rider may choose one of the following:
   - Chaintrap +2 points
   - Blood Vulture +4 points
   - Harpoon launcher +6 points
 - May take an additional Beast Rider +10 points
-
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (4+)")
-
+  ],
+  special-rules: "Immunity (Psychology), Natural Armour (4+)",
+  special-rules-body: [
 - *Mammoth Attacks:* When the Ice Mammoth attacks, roll on the appropriate following table to determine its action. If no suitable target is in base contact, roll again on the chart until you get another result.
 
 *MAN-SIZED THINGS CHART *_Use this chart when fighting Infantry, Cavalry, War Beasts or Swarms. _*D6 Attack Type 1\-2* Trample *3\-4* Stomp *5* Bellow *6* Pick up and\.\.\.
@@ -1115,20 +1143,24 @@ determine which. The victim is removed as a casualty, and the unit takes D6 Stre
 Unsaved Wounds from these hits count towards the Mammoth's combat result."), ("5", "Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a
 single Wound it has lost previously in the game."), ("6", "Squash and Grab Another: The model is removed as a casualty and the Mammoth then picks
 another victim. Roll again on this table to see what happens.")))
-#field("NOTES", "")
-
+  ],
+  notes: [
 - An Ice Mammoth has Unit Strength 24 and a Line of Sight value of 10. An additional Beast Rider adds +2 Unit Strength.
 - Each Beast Rider may have different equipment.
-
-#entry("SLAVE GIANT")
-#profile(
-  (name: "Slave Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 155),
+  ],
+  order: ("troop-type", "crew", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Monster (Giant).")
-#field("BASE SIZE", "50x50 or 50x75")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Immunity (Psychology), Natural Armour (6+)")
 
+#unit("SLAVE GIANT",
+  breakable: true,
+  profiles: (
+    (name: "Slave Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 155),
+  ),
+  troop-type: "Monster (Giant).",
+  base-size: "50x50 or 50x75",
+  equipment: "Hand weapon",
+  special-rules: "Immunity (Psychology), Natural Armour (6+)",
+  special-rules-body: [
 - *Fall Over:* A Giant must test to see whether it falls over if any of the following apply:
   - If it is beaten in close combat. Test once results are established but before taking a Break test.
   - If it is fleeing at the start of the Movement phase.
@@ -1158,169 +1190,193 @@ which. The victim is removed as a casualty, and the unit takes D6 Strength 3 hit
 Wounds from these hits count towards the Giant's combat result. If no enemy units are in range,
 treat this as a Throw Back into Combat result instead."), ("4-5", "Squash or Eat: The model is removed as a casualty."), ("6", "Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and
 then choose another victim. Roll again on this table to see what the Giant does with it.")))
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("GREASUS GOLDTOOTH", first: true)
-#namecost("Overtyrant of the Ogre Kingdoms", "")
-#profile(
-  (name: "Greasus Goldtooth", m: 4, ws: 6, bs: 3, s: 5, t: 6, w: 6, i: 1, a: 3, ld: 9, points: 365),
+#unit("GREASUS GOLDTOOTH",
+  solo: true,
+  first: true,
+  subtitle: "Overtyrant of the Ogre Kingdoms",
+  profiles: (
+    (name: "Greasus Goldtooth", m: 4, ws: 6, bs: 3, s: 5, t: 6, w: 6, i: 1, a: 3, ld: 9, points: 365),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre)",
+  base-size: "40x80 or 50x100",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Sceptre of the Titans")[Magic Weapon. Any friendly Ogre Kingdoms unit that is fleeing at the beginning of the Ogre player's turn, and is within 12" from Greasus, rallies automatically. All close combat attacks made with this weapon have a Strength of 10 and the Multiple Wounds (D3) special rule.],
+    rule("Overtyrant's Crown")[Talisman. The Overtyrant's Crown gives Greasus a Magical Ward (4+). In addition, Greasus and any unit he joins have the Immunity (Psychology) special rule.],
+  ),
+  special-rules: "Natural Armour (6+)",
+  special-rules-body: (
+    rule("Everyone Has Their Price")[At the start of each enemy turn you can nominate D3 enemy units that are within 18" of Greasus to have the Stupidity special rule for the remainder of the turn. This ability has no effect on units that have Immunity (Psychology).],
+    rule("The Goldtooth Tribe")[At least one unit of Ironguts must be included in an army led by Greasus.],
+    rule("Hoardmaster")[Unless Greasus is fleeing, all friendly units within 18" of Greasus (including the Overtyrant himself), add +1 to their combat result scores.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre)")
-#field("BASE SIZE", "40x80 or 50x100")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Sceptre of the Titans:* Magic Weapon. Any friendly Ogre Kingdoms unit that is fleeing at the beginning of the Ogre player's turn, and is within 12" from Greasus, rallies automatically. All close combat attacks made with this weapon have a Strength of 10 and the Multiple Wounds (D3) special rule.
-- *Overtyrant's Crown:* Talisman. The Overtyrant's Crown gives Greasus a Magical Ward (4+). In addition, Greasus and any unit he joins have the Immunity (Psychology) special rule.
-
-#field("SPECIAL RULES", "Natural Armour (6+)")
-
-- *Everyone Has Their Price:* At the start of each enemy turn you can nominate D3 enemy units that are within 18" of Greasus to have the Stupidity special rule for the remainder of the turn. This ability has no effect on units that have Immunity (Psychology).
-- *The Goldtooth Tribe:* At least one unit of Ironguts must be included in an army led by Greasus.
-- *Hoardmaster:* Unless Greasus is fleeing, all friendly units within 18" of Greasus (including the Overtyrant himself), add +1 to their combat result scores.
-
-#entry("GHARK IRONSKIN")
-#namecost("Tyrant of the Ironskin Tribe", "")
-#profile(
-  (name: "Ghark Ironskin", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 5, i: 5, a: 6, ld: 9, points: 400),
-  (name: "Iron Rhinox", m: 7, ws: 4, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 5, ld: "-", points: ""),
-)
-#field("TROOP TYPE", "Monstrous Creature (Special Character, Ogre)")
-#field("MOUNT", "Iron Rhinox (Daemon)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, gut-plate")
-#field("MAGIC ITEMS", "")
-
-- *Ironskin Armor:* Magic Armour. Medium armour. The Ironskin Armor gives Ghark a Magical Ward (6+).
-
-#field("SPECIAL RULES", "Frenzy (Iron Rhinox only), Impale (Iron Rhinox only), Natural Armour (3+)")
-
-- *Iron Rhinox:* The Iron Rhinox has a Strength 2 Breath Weapon with the Armour Piercing (2) special rule.
-- *The Ironskin Tribe:* If Ghark is the Army General, Leadbelchers count as a Core Units instead of Special Units and Grimhorn Rhinox Riders count as a Special Units instead of Rare Units.
-
-#field("OPTIONS", "")
-
+#unit("GHARK IRONSKIN",
+  solo: true,
+  subtitle: "Tyrant of the Ironskin Tribe",
+  profiles: (
+    (name: "Ghark Ironskin", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 5, i: 5, a: 6, ld: 9, points: 400),
+    (name: "Iron Rhinox", m: 7, ws: 4, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 5, ld: "-", points: ""),
+  ),
+  troop-type: "Monstrous Creature (Special Character, Ogre)",
+  mount: "Iron Rhinox (Daemon)",
+  base-size: "50x100",
+  equipment: "Hand weapon, gut-plate",
+  magic-items: (
+    rule("Ironskin Armor")[Magic Armour. Medium armour. The Ironskin Armor gives Ghark a Magical Ward (6+).],
+  ),
+  special-rules: "Frenzy (Iron Rhinox only), Impale (Iron Rhinox only), Natural Armour (3+)",
+  special-rules-body: (
+    rule("Iron Rhinox")[The Iron Rhinox has a Strength 2 Breath Weapon with the Armour Piercing (2) special rule.],
+    rule("The Ironskin Tribe")[If Ghark is the Army General, Leadbelchers count as a Core Units instead of Special Units and Grimhorn Rhinox Riders count as a Special Units instead of Rare Units.],
+  ),
+  options: [
 - May take Magic Items up to a total of 75 points
-
-#entry("SKRAG THE SLAUGHTERER")
-#namecost("Prophet of the Great Maw", "")
-#profile(
-  (name: "Skrag the Slaughterer", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 5, i: 3, a: 4, ld: 9, points: 440),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre, Slaughtermaster)")
-#field("BASE SIZE", "40x80 or 50x100")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC", "Skrag is a Level 4 Wizard that uses spells from the Lore of the Great Maw.")
-#field("MAGIC ITEMS", "")
 
+#unit("SKRAG THE SLAUGHTERER",
+  solo: true,
+  subtitle: "Prophet of the Great Maw",
+  profiles: (
+    (name: "Skrag the Slaughterer", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 5, i: 3, a: 4, ld: 9, points: 440),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre, Slaughtermaster)",
+  base-size: "40x80 or 50x100",
+  equipment: "Light armour",
+  magic: "Skrag is a Level 4 Wizard that uses spells from the Lore of the Great Maw.",
+  magic-items: [
 - *Cauldron of the Great Maw:* Enchanted Item. Skrag and all Gorgers in the army receive the blessings of their ever-hungry god according to the table below. The 'Models Killed' column refers to models killed by Skrag in close combat. Models killed by spells or that were pursued and caught when fleeing do not count towards this total. When a new level is reached, bonuses take effect immediately and are cumulative.
 
 #chart((("Models Killed", "Effect on Skrag", "Effect on Gorgers"), ("1+", "Skrag gains Regeneration (4+).", "All Gorgers that have not entered play do so in their
 next turn."), ("5+", "Skrag gains +1 Attack.", "All Gorgers gain +1 Attack."), ("10+", "Skrag gains Hatred.", "All Gorgers gain Hatred."), ("15+", "Skrag becomes Unbreakable.", "All Gorgers gain Regeneration (4+).")))
-#field("SPECIAL RULES", "Frenzy, Immunity (Poisoned Attacks), Killing Blow, Natural Armour (6+), Ogre Charge, Terror")
-
-#entry("GROTH ONEFINGER")
-#namecost("First Prophet of the Great Maw", "")
-#profile(
-  (name: "Groth Onefinger", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 340),
+  ],
+  special-rules: "Frenzy, Immunity (Poisoned Attacks), Killing Blow, Natural Armour (6+), Ogre Charge, Terror",
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre, Slaughtermaster)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Groth Onefinger is a Level 4 Wizard who uses the Lore of the Great Maw.")
-#field("SPECIAL RULES", "Immunity (Poisoned Attacks), Loremaster (Lore of the Great Maw), Mawseeker (see Big")
 
+#unit("GROTH ONEFINGER",
+  solo: true,
+  subtitle: "First Prophet of the Great Maw",
+  profiles: (
+    (name: "Groth Onefinger", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 340),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre, Slaughtermaster)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  magic: "Groth Onefinger is a Level 4 Wizard who uses the Lore of the Great Maw.",
+  special-rules: "Immunity (Poisoned Attacks), Loremaster (Lore of the Great Maw), Mawseeker (see Big",
+  special-rules-body: [
 Names)*, Natural Armour (6+), Ogre Charge, Terror*
 
 - *The First Butcher:* Once per turn, Groth may re-roll a dice when casting a spell or when trying to dispel an enemy spell.
 - *The Lazarghs:* Choose one unit of Ogre Bulls or Ironguts in an army including Groth. This unit causes Terror instead of Fear.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take up to 2 Scalp-Gnoblars +5 points/Gnoblar
 - May take up to 2 Tooth-Gnoblars +5 points/Gnoblar
 - May take a Great Mawpot +100 points
 - May take Magic Items up to a total of 75 points
-
-#entry("MORG MAGMABORN")
-#namecost("Avatar of the Fire Mouth", "")
-#profile(
-  (name: "Morg Magmaborn", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 320),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Gut-plate")
-#field("MAGIC", "Morg Magmaborn is a Level 3 Wizard who uses the Lore of Fire.")
-#field("MAGIC ITEMS", "")
 
-- *The Basalt Staff:* Magic Weapon. Morg’s close combat attacks have the Armour Piercing (1) special rule. In addition, the Staff contains the _Fireball_ spell from the Lore of Fire as a Bound Spell.
-
-#field("SPECIAL RULES", "Fire Breath (see Firebellies), Flaming Attacks, Immunity (Flaming Attacks), Natural")
-
+#unit("MORG MAGMABORN",
+  solo: true,
+  subtitle: "Avatar of the Fire Mouth",
+  profiles: (
+    (name: "Morg Magmaborn", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 5, i: 3, a: 4, ld: 8, points: 320),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Gut-plate",
+  magic: "Morg Magmaborn is a Level 3 Wizard who uses the Lore of Fire.",
+  magic-items: (
+    rule("The Basalt Staff")[Magic Weapon. Morg’s close combat attacks have the Armour Piercing (1) special rule. In addition, the Staff contains the _Fireball_ spell from the Lore of Fire as a Bound Spell.],
+  ),
+  special-rules: "Fire Breath (see Firebellies), Flaming Attacks, Immunity (Flaming Attacks), Natural",
+  special-rules-body: [
 *Armour (6+), Ogre Charge*
 
 - *Avatar of the Fire Mouth:* When Morg suffers an unsaved wound in close combat, enemy models in base contact suffer a Strength 4 Hit with the Flaming Attacks special rule. When Morg is slain, center the small template above him. All models underneath the template suffer a Strength 4 hit with the Flaming Attacks special rule.
-
-#entry("BRAGG THE GUTSMAN")
-#namecost("Champion Executioner of Ogrekind", "")
-#profile(
-  (name: "Bragg the Gutsman", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 170),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Gut-plate")
-#field("MAGIC ITEMS", "")
 
-- *Great Gutgouger:* Magic Weapon. Flail. While Bragg is involved in a challenge, he gains the Heroic Killing Blow special rule. In addition, if Bragg slays his foe in a challenge, any enemy units in base contact with him are Disrupted for the remainder of the turn.
-
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge")
-#field("OPTIONS", "")
-
+#unit("BRAGG THE GUTSMAN",
+  solo: true,
+  subtitle: "Champion Executioner of Ogrekind",
+  profiles: (
+    (name: "Bragg the Gutsman", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 170),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Gut-plate",
+  magic-items: (
+    rule("Great Gutgouger")[Magic Weapon. Flail. While Bragg is involved in a challenge, he gains the Heroic Killing Blow special rule. In addition, if Bragg slays his foe in a challenge, any enemy units in base contact with him are Disrupted for the remainder of the turn.],
+  ),
+  special-rules: "Natural Armour (6+), Ogre Charge",
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#entry("BRAUGH SLAVELORD")
-#namecost("The Corpse-Slaver", "")
-#profile(
-  (name: "Braugh Slavelord", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 215),
-  (name: "Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre). Slaves are Infantry (Human).")
-#field("BASE SIZE", "40x80")
-#field("MAGIC ITEMS", "")
 
-- *Soul-binder Chains:* Magic Weapon. Two hand weapons. At the beginning of each close combat phase, Braugh may nominate one enemy model in base contact. That model loses D3 Attacks for that phase. In the case of a mounted model, choose either the rider(s) or the mount.
-- *The Great Bullplate:* Magic Armour. Gut-plate. The Bullplate gives Braugh and his unit the Swiftstride special rule when charging.
-
-#field("SPECIAL RULES", "Natural Armour (6+), Ogre Charge, Stubborn")
-
-- *Slavelord:* Braugh begins the game with 12 slaves, these must form up with Braugh placed in the centre of the unit's front rank. Braugh benefits from "Look Out, Sir!" as long as there are at least 5 slaves in the unit. He may not voluntarily leave the unit under any circumstances. In addition, as long as Braugh is alive, all slaves have the Regeneration (5+) and Stubborn special rules.
-
-#entry("JHARED THE RED")
-#namecost("Longstrider, Hunt-father", "")
-#profile(
-  (name: "Jhared the Red", m: 7, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 9, points: 160),
+#unit("BRAUGH SLAVELORD",
+  solo: true,
+  subtitle: "The Corpse-Slaver",
+  profiles: (
+    (name: "Braugh Slavelord", m: 6, ws: 5, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 8, points: 215),
+    (name: "Slave", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre). Slaves are Infantry (Human).",
+  base-size: "40x80",
+  magic-items: (
+    rule("Soul-binder Chains")[Magic Weapon. Two hand weapons. At the beginning of each close combat phase, Braugh may nominate one enemy model in base contact. That model loses D3 Attacks for that phase. In the case of a mounted model, choose either the rider(s) or the mount.],
+    rule("The Great Bullplate")[Magic Armour. Gut-plate. The Bullplate gives Braugh and his unit the Swiftstride special rule when charging.],
+  ),
+  special-rules: "Natural Armour (6+), Ogre Charge, Stubborn",
+  special-rules-body: (
+    rule("Slavelord")[Braugh begins the game with 12 slaves, these must form up with Braugh placed in the centre of the unit's front rank. Braugh benefits from "Look Out, Sir!" as long as there are at least 5 slaves in the unit. He may not voluntarily leave the unit under any circumstances. In addition, as long as Braugh is alive, all slaves have the Regeneration (5+) and Stubborn special rules.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon, javelins, gut-plate")
-#field("SPECIAL RULES", "Independent, Ogre Charge, Natural Armour (6+), Scouts, Their Master's Voice (see")
 
+#unit("JHARED THE RED",
+  solo: true,
+  subtitle: "Longstrider, Hunt-father",
+  profiles: (
+    (name: "Jhared the Red", m: 7, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 9, points: 160),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapon, javelins, gut-plate",
+  special-rules: "Independent, Ogre Charge, Natural Armour (6+), Scouts, Their Master's Voice (see",
+  special-rules-body: [
 Huntmaster)
 
 - *Hunt-father:* Jhared may re-roll To Hit and to Wound rolls of 1 against War Beasts, Monstrous Beasts, Monstrous Cavalry, Monstrous Creatures and Monsters with both missile attacks and in close combat. In addition, he ignores Terror caused by Monstrous Creatures and Monsters.
 - *Running with the Pack:* If Jhared deploys as part of a Sabretusk pack, then both he and the pack have the Vanguard special rule. In addition, the entire unit may re-roll failed charge distances.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Magic Items up to a total of 50 points
+  ],
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Stefan Wolf", "")
+#unit("Additional Material:",
+  subtitle: "Stefan Wolf",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)
