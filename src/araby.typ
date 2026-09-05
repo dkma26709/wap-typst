@@ -57,218 +57,121 @@ Models with this rule may re-roll the lowest dice roll for their flee distance w
 
 Units with this rule counts as having one rank more than they actually have when determining if they are Steadfast. In addition, they have the Cold-blooded special rule for any Break tests taken in the first round of combat.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Arabyans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Arabyans. These may be used in addition to the magic items found in the Warhammer rulebook.*
-
-#entry("MAGIC WEAPONS")
-
+#magic-item-section("weapon", first: true)[
 #runin[MARTYR]'#runin[S SHARD 50 points] If the wielder of this weapon causes an unsaved wound on an enemy model, they may choose to lose D3 of their own Wounds to instantly kill the opponent. No kind of saves may be taken by either side.
 
-#namecost("BEDAYAH", "40 points")
+#magic-weapon("BEDAYAH", 40)[The wielder of this weapon gains +3 Weapon Skill and the Always Strikes First special rule.]
 
-The wielder of this weapon gains +3 Weapon Skill and the Always Strikes First special rule.
+#magic-weapon("DHAMI, THE BLACK SWORD OF ANTAR", 40)[The wielder gains +1 To Wound and the Lightning Attacks special rule.]
 
-#namecost("DHAMI, THE BLACK SWORD OF ANTAR", "40 points")
+#magic-weapon("SUNSPEAR", 40, type: "Light lance/spear")[The wielder of this weapon gains +1 To Hit and may re-roll failed rolls To Wound.]
 
-The wielder gains +1 To Wound and the Lightning Attacks special rule.
+#magic-weapon("BLADE OF HOLY WRATH", 30)[The wielder gains a Strength bonus equal to the Wound characteristics of any enemy model he Hits in close combat.]
 
-#namecost("SUNSPEAR", "40 points")
+#magic-weapon("FIRE EATER", 30)[The wielder of this item gains a Breath Weapon with Strength 4 and the Flaming Attack special rule. In addition, they gain the Immunity (Flaming Attacks) special rule.]
 
-Light lance/spear. The wielder of this weapon gains +1 To Hit and may re-roll failed rolls To Wound.
+#magic-weapon("BOW OF SEEKING", 25, type: "Bow")[Shots fired with this weapon are resolved at Strength 4 and have the Sniper special rule.]
 
-#namecost("BLADE OF HOLY WRATH", "30 points")
+#magic-weapon("EBONY BOW", 25, type: "Shortbow")[Shots fired with this weapon are resolved at Strength 5 and have the Multiple Wounds (D3) special rule.]
 
-The wielder gains a Strength bonus equal to the Wound characteristics of any enemy model he Hits in close combat.
+#magic-weapon("EFREET'S BLADE", 25, one-use: true)[This weapon can be activated at the start of any round of Close Combat. For the remainder of the round, the model gains +3 Strength and Attacks as well as the Flaming Attacks and Multiple Wounds (D3) special rules.]
 
-#namecost("FIRE EATER", "30 points")
+#magic-weapon("HORN OF THE AL-MIRAJ", 25, type: "Light lance/spear")[The wielder of this weapon gains the Killing Blow and Terror and special rules against War Beasts, Cavalry, Monstrous Infantry, Monstrous Cavalry and Chariots.]
 
-The wielder of this item gains a Breath Weapon with Strength 4 and the Flaming Attack special rule. In addition, they gain the Immunity (Flaming Attacks) special rule.
+#magic-weapon("THE DAGGER OF THE GRAND MASTER", 20, only: "Hashishin", type: "Additional hand weapon")[Nominate one enemy character at the start of the battle. The wielder of the Dagger will wound that model on a 2+. In addition, that model must re-roll successful armour saves against Wounds caused by this weapon.]
 
-#namecost("BOW OF SEEKING", "25 points")
+#magic-weapon("THE THIRSTING BLADE", 20)[The wielder gains the Frenzy special rule. For every 6 rolled To Hit, they gain +1 Attack. These additional Attacks can also generate additional Attacks. However, every time the wielder rolls a 1 To Hit, they must resolve a Hit against themselves instead.]
+]
 
-Bow. Shots fired with this weapon are resolved at Strength 4 and have the Sniper special rule.
+#magic-item-section("armour")[
+#magic-armour("SHIELD OF FAITH", 45, type: "Shield")[The bearer gains a Ward save (5+). If the bearer is wounded by an enemy with a magical weapon but passes their Ward save, the enemies weapon is destroyed.]
 
-#namecost("EBONY BOW", "25 points")
+#magic-armour("SCALES OF AL-TINNIN", 40, type: "Medium armour")[The wearer gains the Natural Armour (6+) and Terror special rules.]
 
-Shortbow. Shots fired with this weapon are resolved at Strength 5 and have the Multiple Wounds (D3) special rule.
+#magic-armour("ARMOUR OF DEFLECTION", 25, type: "Medium armour")[For every successful armour save the wearer of this item makes in close combat, the attacking model suffers back a Hit using the same Strength and special rules as they used to attack.]
 
-#namecost("EFREET'S BLADE", "25 points")
+#magic-armour("HELM OF THE SUN'S WRATH", 25)[This item adds a 6+ armour save. This item gives the wearer the Immunity (Flaming Attacks) and Hatred special rules.]
 
-One use only. This weapon can be activated at the start of any round of Close Combat. For the remainder of the round, the model gains +3 Strength and Attacks as well as the Flaming Attacks and Multiple Wounds (D3) special rules.
+#magic-armour("BRACERS OF THE SNAKE", 20)[This item adds a 6+ armour save. One enemy model in base contact, chosen by the bearer, suffer \-1 penalty to their Attack characteristic.]
 
-#namecost("HORN OF THE AL-MIRAJ", "25 points")
+#magic-armour("SCORPION ARMOUR", 20, type: "Light armour")[The wearer has the Natural Armour (5+) and Poisoned Attacks special rules.]
+]
 
-Light lance/spear. The wielder of this weapon gains the Killing Blow and Terror and special rules against War Beasts, Cavalry, Monstrous Infantry, Monstrous Cavalry and Chariots.
+#magic-item-section("talisman")[
+#talisman("RING OF DIVINE HEALING", 40)[At the start of each player’s turn, the ring will restore one lost Wound suffered earlier in the game, up to the model's starting value.]
 
-#namecost("THE DAGGER OF THE GRAND MASTER", "20 points")
+#talisman("ORB OF ILLUSION", 40, only: "Hashishin")[Roll a D6 for every Hit the bearer suffers in close combat. On a 1\-3, the Hit is ignored.]
 
-Hashishin only. Additional hand weapon. Nominate one enemy character at the start of the battle. The wielder of the Dagger will wound that model on a 2+. In addition, that model must re-roll successful armour saves against Wounds caused by this weapon.
+#talisman("TALISMANIC TUNIC OF THE ONE", 40)[This item gives the wearer a 5+ Ward save. In addition, the wearer may re-roll armour save rolls of 1.]
 
-#namecost("THE THIRSTING BLADE", "20 points")
+#talisman("HABOOB CLOAK", 35)[All close combat attacks against the wearer suffer \-1 To Hit. In addition, the wearer and any unit they join always counts as being in soft cover.]
 
-The wielder gains the Frenzy special rule. For every 6 rolled To Hit, they gain +1 Attack. These additional Attacks can also generate additional Attacks. However, every time the wielder rolls a 1 To Hit, they must resolve a Hit against themselves instead.
+#talisman("HAND OF FATIMA", 20)[This item gives the bearer the Magic Resistance (1) special rule. In addition, they may re-roll one roll To Hit, To Wound or when taking armour or Ward saves per turn.]
 
-#entry("MAGIC ARMOUR")
-#namecost("SHIELD OF FAITH", "45 points")
+#talisman("NAZAR AMULET", 20, one-use: true)[The first time the wielder or their unit is targeted by an enemy spell, it is automatically dispelled.]
+]
 
-Shield. The bearer gains a Ward save (5+). If the bearer is wounded by an enemy with a magical weapon but passes their Ward save, the enemies weapon is destroyed.
+#magic-item-section("arcane")[
+#arcane-item("THE SUN OF KNOWLEDGE", 50)[The bearer of this item gain a +D3 casting bonus to each of their spell casting attempts and the Loremaster special rule. However, if they roll a Miscast, they must add their casting bonus from this item to the result on the Miscast table.]
 
-#namecost("SCALES OF AL-TINNIN", "40 points")
+#arcane-item("BOOK OF HIDDEN THINGS", 40)[The bearer of this item may re-roll any failed Dispel attempts.]
 
-Medium armour. The wearer gains the Natural Armour (6+) and Terror special rules.
+#arcane-item("THE AIM OF THE SAGE", 35)[The bearer of this item may roll an additional free dice when casting spells from the Lore of the Heavens, and discard one dice of their choice.]
 
-#namecost("ARMOUR OF DEFLECTION", "25 points")
+#arcane-item("ENCHANTED PUZZLEBOX", 25)[The Puzzlebox has an effect based on the Winds of Magic roll. If the total rolled for the Winds of Magic is an odd number, add 1 dice to your power pool. If it is an even number, the bearer gains a +1 casting bonus this Magic phase.]
 
-Medium armour. For every successful armour save the wearer of this item makes in close combat, the attacking model suffers back a Hit using the same Strength and special rules as they used to attack.
+#arcane-item("ABODE OF DJINN", 20)[The bearer of this item may re-roll one Power Dice each spellcasting attempt. However, they also suffer a \-1 casting penalty.]
 
-#namecost("HELM OF THE SUN'S WRATH", "25 points")
+#arcane-item("TOME OF OMENS", 20)[The wielder of this item may re-roll 1's when channelling power and dispel dice.]
 
-This item adds a 6+ armour save. This item gives the wearer the Immunity (Flaming Attacks) and Hatred special rules.
+#arcane-item("BOOK OF IDOLS", 15)[The bearer may reroll failed attempts of Genie Binding, and may summon them up to 12" away instead of 6".]
 
-#namecost("BRACERS OF THE SNAKE", "20 points")
+#arcane-item("ARCANE WINDGLASS", 10, one-use: true)[The bearer can use the Windglass immediately after your opponent has rolled the dice for the Winds of Magic. If they do so, your opponent must re-roll the result.]
+]
 
-This item adds a 6+ armour save. One enemy model in base contact, chosen by the bearer, suffer \-1 penalty to their Attack characteristic.
+#magic-item-section("enchanted")[
+#enchanted-item("SCROLLS OF RUQYAH", 30, bound: (power: 3))[This item contains the spell _Healing Energy_ from the Lore of Light.]
 
-#namecost("SCORPION ARMOUR", "20 points")
+#enchanted-item("CROWN OF SULTAN SHADDAD", 25, only: "Army General")[The wearer of this item gains the Inspiring Presence (6) special rule.]
 
-Light armour. The wearer has the Natural Armour (5+) and Poisoned Attacks special rules.
+#enchanted-item("THE GOLDEN CARAFE", 25)[Enemy armours lose all magical bonuses against any close combat attacks made by the bearer; they count as mundane armours of their type. In addition, any successful enemy Ward saves must be re-rolled.]
 
-#entry("TALISMANS")
-#namecost("RING OF DIVINE HEALING", "40 points")
+#enchanted-item("LAMP OF ALA UD-DIN", 25, one-use: true)[At the start of any of his turns, the bearer of this item may choose to summon a Genie of any type. The Genie must be placed within 6" of the bearer, at least 1" away from any units or impassable terrain. This Genie lasts until the start of the bearer's next turn.]
 
-At the start of each player’s turn, the ring will restore one lost Wound suffered earlier in the game, up to the model's starting value.
+#enchanted-item("MASK OF THE FAITH", 25)[This item gives the wearer the Terror special rule. In addition, Undead models treat this model as causing Fear against them, even though they are normally immune to Fear.]
 
-#namecost("ORB OF ILLUSION", "40 points")
+#enchanted-item("CHALICE OF PAIN", 20)[If the bearer of this item rolls a 5 or 6 To Hit with either close combat or missile weapons that Attack automatically Wounds.]
 
-Hashishin only. Roll a D6 for every Hit the bearer suffers in close combat. On a 1\-3, the Hit is ignored.
+#enchanted-item("CLOAK OF SHADOWS", 20, only: "Hashishin")[Enemy missile attacks suffer \-2 to hit to the wearer of this item.]
 
-#namecost("TALISMANIC TUNIC OF THE ONE", "40 points")
+#enchanted-item("ECHO OF THE HATIF", 20)[At the beginning of each of your turns, choose one friendly unit with the Zealotry special rule within 24" of the bearer. Until the beginning of your next turn, the chosen has the same Leadership Characteristic as the bearer of this item.]
 
-This item gives the wearer a 5+ Ward save. In addition, the wearer may re-roll armour save rolls of 1.
+#enchanted-item("HORN OF SHADHAVAR", 20, one-use: true)[This item can be used at the start of any of your turns. Until the start of your next turn, all friendly units within 12" gain +1 Leadership.]
 
-#namecost("HABOOB CLOAK", "35 points")
+#enchanted-item("RING OF ALI AL-MAWLA", 20)[The wearer and any unit they have joined gain the Immunity (Fear, Panic) special rule.]
 
-All close combat attacks against the wearer suffer \-1 To Hit. In addition, the wearer and any unit they join always counts as being in soft cover.
+#enchanted-item("ROPE OF KADIZAR", 20, only: "Model on foot")[The bearer may use this item at the start of their Remaining Moves phase instead of moving normally, as long as they are not in base contact with an enemy model or has moved previously this turn. The model can move to any location on the battlefield, but must be placed at least 1" away from enemy units and impassable terrain.]
+]
 
-#namecost("HAND OF FATIMA", "20 points")
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF AL-HAIKK", 75)[The unit carrying this standard gains the Fear special rule. In addition, all friendly units within 12" gains +1 to their Combat Resolution bonus.]
 
-This item gives the bearer the Magic Resistance (1) special rule. In addition, they may re-roll one roll To Hit, To Wound or when taking armour or Ward saves per turn.
+#magic-standard("BANNER OF THE DESERT", 50)[Enemies firing at the unit must re-roll successful To Hit rolls with their missile weapons. In addition, enemy units in base contact with the unit carrying this standard suffer \-1 to their Weapon Skill.]
 
-#namecost("NAZAR AMULET", "20 points")
+#magic-standard("BANNER OF THE JEWELLED OASIS", 35)[The unit carrying this standard gains the Vanguard special rule. In addition, they may re-roll failed rolls To Hit in close combat on any turn that they charge.]
 
-One use only. The first time the wielder or their unit is targeted by an enemy spell, it is automatically dispelled.
+#magic-standard("BANNER OF THE DJINN", 35)[The unit carrying this standard counts as being Ethereal for the purposes of Movement.]
 
-#entry("ARCANE ITEMS")
-#namecost("THE SUN OF KNOWLEDGE", "50 points")
+#magic-standard("ICON OF THE BLESSED WALI", 25)[The unit carrying this standard gains a 6+ Ward save against non-Magical Attacks.]
 
-The bearer of this item gain a +D3 casting bonus to each of their spell casting attempts and the Loremaster special rule. However, if they roll a Miscast, they must add their casting bonus from this item to the result on the Miscast table.
+#magic-standard("STANDARD OF BEL-ALIAD", 25)[At the start of each close combat phase, all enemy units in base contact with the unit carrying this standard suffer D6 Strength 3 Hits.]
 
-#namecost("BOOK OF HIDDEN THINGS", "40 points")
+#magic-standard("BANNER OF HOLY FERVOUR", 20)[The unit carrying this standard gains +1 to their Movement and Initiative characteristics.]
 
-The bearer of this item may re-roll any failed Dispel attempts.
-
-#namecost("THE AIM OF THE SAGE", "35 points")
-
-The bearer of this item may roll an additional free dice when casting spells from the Lore of the Heavens, and discard one dice of their choice.
-
-#namecost("ENCHANTED PUZZLEBOX", "25 points")
-
-The Puzzlebox has an effect based on the Winds of Magic roll. If the total rolled for the Winds of Magic is an odd number, add 1 dice to your power pool. If it is an even number, the bearer gains a +1 casting bonus this Magic phase.
-
-#namecost("ABODE OF DJINN", "20 points")
-
-The bearer of this item may re-roll one Power Dice each spellcasting attempt. However, they also suffer a \-1 casting penalty.
-
-#namecost("TOME OF OMENS", "20 points")
-
-The wielder of this item may re-roll 1's when channelling power and dispel dice.
-
-#namecost("BOOK OF IDOLS", "15 points")
-
-The bearer may reroll failed attempts of Genie Binding, and may summon them up to 12" away instead of 6".
-
-#namecost("ARCANE WINDGLASS", "10 points")
-
-One use only. The bearer can use the Windglass immediately after your opponent has rolled the dice for the Winds of Magic. If they do so, your opponent must re-roll the result.
-
-#entry("ENCHANTED ITEMS")
-#namecost("SCROLLS OF RUQYAH", "30 points")
-
-Bound Spell (power level 3). This item contains the spell _Healing Energy_ from the Lore of Light.
-
-#namecost("CROWN OF SULTAN SHADDAD", "25 points")
-
-Army General only. The wearer of this item gains the Inspiring Presence (6) special rule.
-
-#namecost("THE GOLDEN CARAFE", "25 points")
-
-Enemy armours lose all magical bonuses against any close combat attacks made by the bearer; they count as mundane armours of their type. In addition, any successful enemy Ward saves must be re-rolled.
-
-#namecost("LAMP OF ALA UD-DIN", "25 points")
-
-One use only. At the start of any of his turns, the bearer of this item may choose to summon a Genie of any type. The Genie must be placed within 6" of the bearer, at least 1" away from any units or impassable terrain. This Genie lasts until the start of the bearer's next turn.
-
-#namecost("MASK OF THE FAITH", "25 points")
-
-This item gives the wearer the Terror special rule. In addition, Undead models treat this model as causing Fear against them, even though they are normally immune to Fear.
-
-#namecost("CHALICE OF PAIN", "20 points")
-
-If the bearer of this item rolls a 5 or 6 To Hit with either close combat or missile weapons that Attack automatically Wounds.
-
-#namecost("CLOAK OF SHADOWS", "20 points")
-
-Hashishin only. Enemy missile attacks suffer \-2 to hit to the wearer of this item.
-
-#namecost("ECHO OF THE HATIF", "20 points")
-
-At the beginning of each of your turns, choose one friendly unit with the Zealotry special rule within 24" of the bearer. Until the beginning of your next turn, the chosen has the same Leadership Characteristic as the bearer of this item.
-
-#namecost("HORN OF SHADHAVAR", "20 points")
-
-One use only. This item can be used at the start of any of your turns. Until the start of your next turn, all friendly units within 12" gain +1 Leadership.
-
-#namecost("RING OF ALI AL-MAWLA", "20 points")
-
-The wearer and any unit they have joined gain the Immunity (Fear, Panic) special rule.
-
-#namecost("ROPE OF KADIZAR", "20 points")
-
-Model on foot only. The bearer may use this item at the start of their Remaining Moves phase instead of moving normally, as long as they are not in base contact with an enemy model or has moved previously this turn. The model can move to any location on the battlefield, but must be placed at least 1" away from enemy units and impassable terrain.
-
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF AL-HAIKK", "75 points")
-
-The unit carrying this standard gains the Fear special rule. In addition, all friendly units within 12" gains +1 to their Combat Resolution bonus.
-
-#namecost("BANNER OF THE DESERT", "50 points")
-
-Enemies firing at the unit must re-roll successful To Hit rolls with their missile weapons. In addition, enemy units in base contact with the unit carrying this standard suffer \-1 to their Weapon Skill.
-
-#namecost("BANNER OF THE JEWELLED OASIS", "35 points")
-
-The unit carrying this standard gains the Vanguard special rule. In addition, they may re-roll failed rolls To Hit in close combat on any turn that they charge.
-
-#namecost("BANNER OF THE DJINN", "35 points")
-
-The unit carrying this standard counts as being Ethereal for the purposes of Movement.
-
-#namecost("ICON OF THE BLESSED WALI", "25 points")
-
-The unit carrying this standard gains a 6+ Ward save against non-Magical Attacks.
-
-#namecost("STANDARD OF BEL-ALIAD", "25 points")
-
-At the start of each close combat phase, all enemy units in base contact with the unit carrying this standard suffer D6 Strength 3 Hits.
-
-#namecost("BANNER OF HOLY FERVOUR", "20 points")
-
-The unit carrying this standard gains +1 to their Movement and Initiative characteristics.
-
-#namecost("STANDARD OF THE STEED", "15 points")
-
-Cavalry only. The unit carrying this standard gains +D3 to their charge and pursuit distances.
+#magic-standard("STANDARD OF THE STEED", 15, only: "Cavalry")[The unit carrying this standard gains +D3 to their charge and pursuit distances.]
+]
 
 = CHARACTERS
 

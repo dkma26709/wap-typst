@@ -271,294 +271,163 @@ Monstrous Creatures and Monsters cannot use Stomp against this character or thei
 
 The character and any unit they are with gain the Swiftstride special rule when charging or pureeing enemy War Beasts and Cavalry.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Ogres. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Ogres. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("FROSTFANG", 50)[The bearer gains the Ice Attacks special rule. In addition, at the start of each round of close combat, roll a D6. On a 4+, all attacks made by this weapon are increased by +1 Strength for the duration of the game. This effect is cumulative.]
 
-#entry("MAGIC WEAPONS")
-#namecost("FROSTFANG", "50 points")
+#magic-weapon("THUNDERMACE", 35, type: "Great weapon")[The wielder may choose to exchange all of his Attacks in close combat to make a single 'Thundercrush Attack'. Roll To Hit against the highest Weapon Skill amongst the enemy models in base contact. If the Thundercrush Attack hits, place the small template anywhere so that it is touching the wielder's base. Any infantry, war beasts or swarm models that lie underneath the template suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule. This has no effect on other troop types.]
 
-The bearer gains the Ice Attacks special rule. In addition, at the start of each round of close combat, roll a D6. On a 4+, all attacks made by this weapon are increased by +1 Strength for the duration of the game. This effect is cumulative.
+#magic-weapon("SIEGEBREAKER", 30, type: "Great weapon")[Roll To Hit against the enemy's Initiative instead of his Weapon Skill, and no Parry saves are allowed – it is impossible to deflect a blow from the weapon. In addition, when assaulting models in a building, the wielder can make a 'Siegebreaker Attack' instead of attacking normally in the Close Combat phase. A Siegebreaker Attack inflicts D6 hits with a Strength equal to the height of the building in inches, up to a maximum Strength of 10 (so, for example, models in a building that is 6 inches high would suffer D6 Strength 6 hits). Measure from the base of the building to its highest point.]
 
-#namecost("THUNDERMACE", "35 points")
+#magic-weapon("THE TENDERISER", 30, type: "Great weapon")[The Tenderiser gives the wielder the Multiple Wounds (D3) special rule.]
 
-Great weapon. The wielder may choose to exchange all of his Attacks in close combat to make a single 'Thundercrush Attack'. Roll To Hit against the highest Weapon Skill amongst the enemy models in base contact. If the Thundercrush Attack hits, place the small template anywhere so that it is touching the wielder's base. Any infantry, war beasts or swarm models that lie underneath the template suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule. This has no effect on other troop types.
+#magic-weapon("BLOODCLEAVER", 30, only: "Butcher or Slaughtermaster")[Every time the wielder causes an unsaved wound with the Bloodcleaver, he may regain one wound he lost earlier in the battle.]
 
-#namecost("SIEGEBREAKER", "30 points")
+#magic-weapon("THE FANG OF GHUR", 25)[The wielder of this weapon gains the Frenzy special rule. In addition, no Magical Ward saves can be taken against it.]
 
-Great weapon. Roll To Hit against the enemy's Initiative instead of his Weapon Skill, and no Parry saves are allowed – it is impossible to deflect a blow from the weapon. In addition, when assaulting models in a building, the wielder can make a 'Siegebreaker Attack' instead of attacking normally in the Close Combat phase. A Siegebreaker Attack inflicts D6 hits with a Strength equal to the height of the building in inches, up to a maximum Strength of 10 (so, for example, models in a building that is 6 inches high would suffer D6 Strength 6 hits). Measure from the base of the building to its highest point.
+#magic-weapon("FROSTSHARD JAVELINS", 20, only: "Hunter", type: "Javelins")[Attacks made with this weapon have the Ice Attacks special rule.]
 
-#namecost("THE TENDERISER", "30 points")
-
-Great weapon. The Tenderiser gives the wielder the Multiple Wounds (D3) special rule.
-
-#namecost("BLOODCLEAVER", "30 points")
-
-Butcher or Slaughtermaster only. Every time the wielder causes an unsaved wound with the Bloodcleaver, he may regain one wound he lost earlier in the battle.
-
-#namecost("THE FANG OF GHUR", "25 points")
-
-The wielder of this weapon gains the Frenzy special rule. In addition, no Magical Ward saves can be taken against it.
-
-#namecost("FROSTSHARD JAVELINS", "20 points")
-
-Hunter only. Javelins. Attacks made with this weapon have the Ice Attacks special rule.
-
-#namecost("SKY-TITAN SCATTER PISTOLS", "20 points")
-
-Brace of Ogre Pistols. These weapons have the following profile:
+#magic-weapon("SKY-TITAN SCATTER PISTOLS", 20, type: "Brace of Ogre Pistols")[These weapons have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Armour Piercing (1), Multiple Shots (2D3), Quick Shot"))
-#namecost("BELLOWING BLADE", "15 points")
-
-The wielder of this weapon may re-roll one failed To Hit or To Wound roll each round of close combat for every enemy Character within 12".
-
-#namecost("BLADE OF ALL-FROST", "15 points")
-
-For every successful Wound this weapon inflicts on an enemy Character, Monstrous Creature or Monster, that model suffers \-1 Strength and Toughness for the remainder of the game.
-
-#namecost("HEADSMASHER", "15 points")
-
-Great weapon. Headsmasher gives the wielder the Killing Blow special rule.
-
-#namecost("SPLATTER-CLEAVER", "10 points")
-
-Butcher or Slaughtermaster only. Every time the wielder causes an unsaved wound with the Splatter- cleaver, they gain +1 Leadership for the duration of the close combat round.
-
-#entry("MAGIC ARMOUR")
-#namecost("GREEDY FIST", "35 points")
-
-Ironfist. The wearer gains +1 Strength and a Magical Ward (6+). If a Magic Weapon inflicts a Wound that is saved by the model's Parry save, it is then treated as a normal, non-magical weapon of the same type for the remainder of the game. In addition, an enemy Wizard loses a Wizard level and a randomly selected spell each time they suffer an unsaved Wound by an Ogre wearing the Greedy Fist.
-
-#namecost("MASTODON ARMOUR", "30 points")
-
-Light armour. If the wearer is killed by an attack that is not made in close combat, roll a D6; on a 2+, they will remain in play with one Wound remaining.
-
-#namecost("GUT MAW", "25 points")
-
-Gut-plate. An Ogre wearing the Gut Maw has the Terror special rule. In addition, he recovers one lost Wound (up to his starting number) for each unsaved Wound he causes in a challenge.
-
-#namecost("BULLGUT*", "15 points")
-
-Model on foot only. Gut-plate. The Bullgut gives the wearer the Impact Hits (D3) special rule, and all Impact Hits have the Armour Piercing (1) special rule.
-
-#namecost("KATTANAK BROWPLATE*", "15 points")
-
-Gut-plate. The wearer gains +1 Leadership. In addition, all War Beasts and Monstrous Beasts suffer \-1 To Hit against him.
-
-#namecost("GREATSKULL", "10 points")
-
-Gut-plate. Any Wizard that targets the bearer with a spell will miscast on any roll of any double.
-
-#runin[GRAWL]'#runin[S GUT-PLATE 10 points] Gut-plate. The bearer of this item and any unit they are with adds +D3" to their charge distance while within 18" of any enemy unit.
-
-#namecost("ICE MAMMOTH SKULL PLATE*", "10 points")
-
-Gut-plate. The wearer may re-roll failed armour saves.
-
-#namecost("SKULLPLUCKER", "10 points")
-
-Ironfist. Any hits made with the Skullplucker have the Killing Blow special rule.
-
-#entry("TALISMANS")
-#namecost("GNOBLAR THIEFSTONE", "30 points")
-
-A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the following table when the model is deployed to see if the Thiefstone has helped them to 'find' any useful items. Note that this may result in the bearer of the Thiefstone having two or more Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that the slain character might have had, as long as the bearer does not already have a magic item of that type. The model with the Thiefstone may then use that item itself for the rest of the battle.
-
-#chart((("D6", "Result"), ("1", "Nothing"), ("2", "Lucky Trinket"), ("3", "Talisman of Protection"), ("4", "Crown of Command"), ("5", "The Ruby Ring of Ruin"), ("6", "Talisman of Preservation")))
-#namecost("GREYBACK PELT", "30 points")
-
-Hunter only. The Greyback Pelt gives the bearer the Forest Strider, Hill Strider, Ice Attacks, and Magical Attacks special rules.
-
-#namecost("SPANGLESHARD", "30 points")
-
-For each Wound the bearer of the Spangleshard suffers, roll a D6. If this roll is higher than the result of the To Wound roll, that wound is ignored.
-
-#namecost("CATHAYAN JET PENDANT", "25 points")
-
-The bearer of the Cathayan Jet and any unit they join gains the Magic Resistance (3) special rule. This has no effect on spells from the Lore of Yin and Yang.
-
-#namecost("THE PELT OF CHARNGAR", "25 points")
-
-Hunter only. The bearer of this item gains the Natural Armour (6+) and Regeneration (5+) special rules.
-
-#namecost("THE PURPLE ROCK", "25 points")
-
-Honcho only. This item may be used once in each enemy Magic phase. When the enemy casts a successful spell, instead of attempting to dispel it the bearer may activate the Purple Rock. Roll a D6, on the result of a 4+ the spell is automatically dispelled. On the result of a 1\-3 the spell goes through as normal and the bearer of the Purple Rock suffers a Strength 3 hit.
-
-#namecost("THE RIME SHROUD", "25 points")
-
-All successful To Hit rolls with missile attacks targeting the bearer of this item must be re-rolled.
-
-#namecost("RED STONE", "20 points")
-
-Honcho only. The bearer gains a Magical Ward (6+) and the Magic Resistance (1) special rule.
-
-#namecost("BATTERED TALISMAN", "20 points")
-
-The bearer of this item gains a Magical Ward (4+) against Attacks with Strength 5 or more.
-
-#namecost("FUNNY TRINKET*", "15 points")
-
-Honcho only. The bearer of this item may re-roll failed armour saves and invulnerable saves.
-
-#namecost("GRUBBI'S DICE BAG", "15 points")
-
-Honcho only. One use only. When the bearer of this item suffers a Wound, roll a D6. On a 2+, the Wound is ignored, as are all subsequent Wounds that turn. On the result of a 1 the bearer is slain outright regardless of the number of Wounds inflicted.
-
-#namecost("SHRUNKEN PRIEST HEAD*", "15 points")
-
-Butcher or Slaughtermaster only. The bearer of this item gains a Magical Ward (5+) against the first wounding Hit each phase.
-
-#namecost("WYRDSTONE NECKLACE*", "15 points")
-
-The wearer of the Wyrdstone Necklace gains a Magical Ward (5+). However, they must pass a Toughness test at the start of each of their turns or suffer a wound with no saves allowed.
-
-#entry("ARCANE ITEMS")
-#namecost("HELLHEART", "50 points")
-
-Charm. One Use Only. The Hellheart can be used at the start of one of the opposing side's Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12" of the bearer must roll 2D6 on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the Miscasts, add an extra dispel dice to the Ogre's dispel pool for each enemy Wizard that was forced to roll on the Miscast table.
-
-#namecost("BANGSTICK", "35 points")
-
-Relic. Bound Spell (Level 3, cast on 8+). The Bangstick contains a *magic missile* with a range of 24" that causes 2D6 Strength 4 Hits with the Flaming Attacks special rule.
-
-#namecost("GRUT'S SICKLE", "30 points")
-
-Relic. At the start of the Ogre Magic phase, the bearer of Grut's Sickle can inflict a single Wound on any unit he has joined. If he does so, then he adds +2 to all casting rolls he makes during that Magic phase. A Wound inflicted by Grut's Sickle is distributed as a shooting attack, and may not be saved in any way. Roll 2D6 at the end of each Magic phase where Grut's Sickle is used; on a roll of 3 or more nothing happens, but on a roll of double 1 the unit turns upon and slays the wielder of Grut's Sickle, and he is removed as a casualty with no saves of any kind allowed.
-
-#namecost("THE HUNGRY MAW", "30 points")
-
-Charm. One use only. The Hungry Maw can be used after successfully dispelling an enemy spell. When used, the enemy caster can no longer use this spell for the remainder of the game.
-
-#namecost("HALFLING COOKBOOK", "25 points")
-
-Relic. A model with the Halfling Cookbook may re-roll one dice (except 1's) per casting roll when using the Lore of the Great Maw.
-
-#namecost("DRAGON HEART", "20 points")
-
-Charm. One use only. This item can be used at the start of any of your Magic phases. For the duration of this turn, the bearer may re-roll failed casting attempts.
-
-#namecost("FLASK OF CONGEALED", "")
-#namecost("MAW-JUICES", "20 points")
-
-Model with Great Mawpot only. Charm. One use only. This item can be used at the start of any of your Magic phases. For the duration of this turn, you may add one free power dice to each of the model's casting attempts.
-
-#namecost("BLOODROCK TALISMAN", "20 points")
-
-Relic. The bearer of this item gains a +2 dispel bonus if they are within 12" of the casting Wizard.
-
-#namecost("WIZARDFLESH APRON", "20 points")
-
-Wizard with the Lore of the Great Maw only. Relic. At the start of each of your Magic phases, the bearer of this item can pick one additional spell from the Lore of the Great Maw of those normally available to them and cast it this turn.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("TOKENS OF THE EVERWINTER", "30 points")
-
-One use only. This can be used at the start of any round of close combat. For the duration of this turn, the model (but not any mount) gains +1 Strength as well as the Always Strikes First and Natural Armour (5+) special rules.
-
-#namecost("BRAND OF THE SVARD", "25 points")
-
-Mounted model only. The bearer's mount gain +1 To Hit in close combat.
-
-#namecost("THE SEAT OF ALVAGR", "25 points")
-
-Mounted model only. The model may make double their normal amount of Stomps.
-
-#namecost("BLEEDING SKULL OF DRAGAAR", "20 points")
-
-Tyrant, Bruiser or Hunter only. The bearer of this item can channel dispel dice in the same manner as a Level 2 Wizard.
-
-#namecost("GNOBLAR BLAST KEG*", "20 points")
-
-Tyrant or Bruiser only. One use only. This item can be used during any of your Shooting phases. Place the small round template anywhere within 6" – it scatters D3". Any model touched by the template suffers a Strength 3 Hit with the Armour Piercing (1) special rule. The model under the hole suffers a Strength 6 Hit with the Armour Piercing (1) and Multiple Wounds (D3) special rules.
-
-#namecost("GRUESOME TROPHY RACK*", "20 points")
-
-Tyrant only. Any unit joined by this model may re-roll 1's To Hit in close combat.
-
-#namecost("SHATTERSTONE", "20 points")
-
-All enemy units within 12" of the bearer of this item treat all terrain features as Dangerous Terrain. Terrain that is already Dangerous Terrain makes them fail the test on a 1\-2 instead of just a 1.
-
-#namecost("BRAHMIR STATUE*", "15 points")
-
-Any Psychology tests caused by the bearer of the Brahmir Statue (or any unit they are with) on any Beastmen unit are taken with a \-3 Leadership penalty.
-
-#namecost("ALVAGR RUNE-TOKENS*", "15 points")
-
-One use only. This item can be used at the start of any round of close combat. The wielder gains the Ice Attacks special rule for the duration of this round.
-
-#namecost("CARVALOX FLANK*", "15 points")
-
-All friendly units of Yhetees within 12" of the bearer gain +2 to their Movement.
-
-#namecost("ELIXIR OF THE FROSTWYRM*", "15 points")
-
-One use only. The bearer gains a Strength 4 Breath Weapon attack with the Ice Attacks special rule. However, after using it they will automatically suffer a Wound with no saves allowed.
-
-#namecost("FROST-TALON SHARDBOLTS*", "15 points")
-
-Hunter with Harpoon Launcher only. All shots fired by their weapon have the Ice Attacks and Magical Attacks special rules.
-
-#namecost("GREASE-SMEARED TUSKS*", "15 points")
-
-Butcher or Slaughtermaster only. All friendly Monstrous Beasts, Monstrous Creatures and Monsters within 12" gain +1 to their Movement.
-
-#namecost("JADE LION*", "15 points")
-
-The bearer of the Jade Lion and any unit they are with may re-roll any failed Psychology tests. If the unit flees for any reason, this benefit is lost for the remainder of the game.
-
-#namecost("BATTLE BREW*", "10 points")
-
-One use only. The bearer may use this item at the start of any of your turns. If they do so, they gain +1 To Hit and To Wound in Close Combat this turn. However, at the end of that round of close combat (before break tests are taken), they must pass a Toughness test or suffer a Wound with no saves allowed.
-
-#namecost("FLASK OF STONEHORN BLOOD*", "10 points")
-
-One use only. The bearer may use this item at the start of any of your turns. If they do so, all attacks targeting them must re-roll successful rolls To Wound for the duration of this turn.
-
-#namecost("OGRE TOOTH*", "10 points")
-
-Honcho only. One use only. This item may be used at the start of any of your turns. Roll a D6; on the result of a 1 the bearer is immediately removed as a casualty. On the result of a 2+, the character and any Gnoblar unit within 6" gains the Immunity (Psychology) special rule until the start of your next turn.
-
-#namecost("SKULLMANTLE*", "10 points")
-
-Butcher or Slaughtermaster only. Any enemy unit forced to take any Leadership tests due to the bearer or a unit they have joined suffers a \-1 penalty to their Leadership.
-
-#namecost("FISTFUL OF LAURELS*", "5 points")
-
-One use only. The model with the Fistful of Laurels and any unit they are with may re-roll their first failed Break test in the game using an additional D6 and discard the highest result.
-
-#namecost("ROCK EYE*", "5 points")
-
-At the beginning of each Ogre turn, pick one unit in the line of sight of the bearer of the Rock Eye. The opposing player must announce the presence of all Magic Items, Hidden models and the like that unit might have.
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("DRAGONHIDE BANNER", "50 points")
+#magic-weapon("BELLOWING BLADE", 15)[The wielder of this weapon may re-roll one failed To Hit or To Wound roll each round of close combat for every enemy Character within 12".]
 
-The unit carrying this standard can re-roll all To Hit, To Wound and saving throw rolls of 1 on the turn they make a successful charge. In addition, the bearer of the banner can use it to unleash an icy blast. This is a Strength 3 Breath Weapon with the Ice Attacks special rule.
+#magic-weapon("BLADE OF ALL-FROST", 15)[For every successful Wound this weapon inflicts on an enemy Character, Monstrous Creature or Monster, that model suffers \-1 Strength and Toughness for the remainder of the game.]
 
-#namecost("BANNER OF THE GREAT MAW", "25 points")
+#magic-weapon("HEADSMASHER", 15, type: "Great weapon")[Headsmasher gives the wielder the Killing Blow special rule.]
 
-The unit carrying this standard gains the Killing Blow special rule.
+#magic-weapon("SPLATTER-CLEAVER", 10, only: "Butcher or Slaughtermaster")[Every time the wielder causes an unsaved wound with the Splatter- cleaver, they gain +1 Leadership for the duration of the close combat round.]
+]
 
-#namecost("CANNIBAL TOTEM", "25 points")
+#magic-item-section("armour")[
+#magic-armour("GREEDY FIST", 35, type: "Ironfist")[The wearer gains +1 Strength and a Magical Ward (6+). If a Magic Weapon inflicts a Wound that is saved by the model's Parry save, it is then treated as a normal, non-magical weapon of the same type for the remainder of the game. In addition, an enemy Wizard loses a Wizard level and a randomly selected spell each time they suffer an unsaved Wound by an Ogre wearing the Greedy Fist.]
 
-If the unit carrying this standard is in base contact with an enemy Troop Type with the same or higher Unit Strength as them, all models in the unit re-roll failed To Hit and To Wound rolls in the first round of that combat. However, they may not Overrun and must Pursue the enemy if possible.
+#magic-armour("MASTODON ARMOUR", 30, type: "Light armour")[If the wearer is killed by an attack that is not made in close combat, roll a D6; on a 2+, they will remain in play with one Wound remaining.]
 
-#namecost("RUNE MAW", "25 points")
+#magic-armour("GUT MAW", 25, type: "Gut-plate")[An Ogre wearing the Gut Maw has the Terror special rule. In addition, he recovers one lost Wound (up to his starting number) for each unsaved Wound he causes in a challenge.]
 
-When any enemy spell targeting a unit with this standard is successfully cast, roll a D6. On a roll of 2+, the caster must choose a new target for the spell. If no other target is available (because no other target is in range or all eligible units have already been targeted, for example), then the spell is wasted but still counts as having been cast. Spells that do not specifically target the unit are not affected by the Rune Maw.
+#magic-armour("BULLGUT", 15, only: "Model on foot", type: "Gut-plate", common: true)[The Bullgut gives the wearer the Impact Hits (D3) special rule, and all Impact Hits have the Armour Piercing (1) special rule.]
 
-#namecost("BULL STANDARD", "15 points")
+#magic-armour("KATTANAK BROWPLATE", 15, type: "Gut-plate", common: true)[The wearer gains +1 Leadership. In addition, all War Beasts and Monstrous Beasts suffer \-1 To Hit against him.]
 
-The unit carrying this standard re-rolls failed To Wound rolls for their Impact Hits.
+#magic-armour("GREATSKULL", 10, type: "Gut-plate")[Any Wizard that targets the bearer with a spell will miscast on any roll of any double.]
 
-#namecost("RAGBANNER", "15 points")
+#magic-armour("GRAWL'S GUT-PLATE", 10, type: "Gut-plate")[The bearer of this item and any unit they are with adds +D3" to their charge distance while within 18" of any enemy unit.]
 
-The unit carrying this standard has the Cold-blooded special rule when taking Panic tests.
+#magic-armour("ICE MAMMOTH SKULL PLATE", 10, type: "Gut-plate", common: true)[The wearer may re-roll failed armour saves.]
+
+#magic-armour("SKULLPLUCKER", 10, type: "Ironfist")[Any hits made with the Skullplucker have the Killing Blow special rule.]
+]
+
+#magic-item-section("talisman")[
+#talisman("GNOBLAR THIEFSTONE", 30)[A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the following table when the model is deployed to see if the Thiefstone has helped them to 'find' any useful items. Note that this may result in the bearer of the Thiefstone having two or more Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that the slain character might have had, as long as the bearer does not already have a magic item of that type. The model with the Thiefstone may then use that item itself for the rest of the battle.
+
+#chart((("D6", "Result"), ("1", "Nothing"), ("2", "Lucky Trinket"), ("3", "Talisman of Protection"), ("4", "Crown of Command"), ("5", "The Ruby Ring of Ruin"), ("6", "Talisman of Preservation")))
+]
+
+#talisman("GREYBACK PELT", 30, only: "Hunter")[The Greyback Pelt gives the bearer the Forest Strider, Hill Strider, Ice Attacks, and Magical Attacks special rules.]
+
+#talisman("SPANGLESHARD", 30)[For each Wound the bearer of the Spangleshard suffers, roll a D6. If this roll is higher than the result of the To Wound roll, that wound is ignored.]
+
+#talisman("CATHAYAN JET PENDANT", 25)[The bearer of the Cathayan Jet and any unit they join gains the Magic Resistance (3) special rule. This has no effect on spells from the Lore of Yin and Yang.]
+
+#talisman("THE PELT OF CHARNGAR", 25, only: "Hunter")[The bearer of this item gains the Natural Armour (6+) and Regeneration (5+) special rules.]
+
+#talisman("THE PURPLE ROCK", 25, only: "Honcho")[This item may be used once in each enemy Magic phase. When the enemy casts a successful spell, instead of attempting to dispel it the bearer may activate the Purple Rock. Roll a D6, on the result of a 4+ the spell is automatically dispelled. On the result of a 1\-3 the spell goes through as normal and the bearer of the Purple Rock suffers a Strength 3 hit.]
+
+#talisman("THE RIME SHROUD", 25)[All successful To Hit rolls with missile attacks targeting the bearer of this item must be re-rolled.]
+
+#talisman("RED STONE", 20, only: "Honcho")[The bearer gains a Magical Ward (6+) and the Magic Resistance (1) special rule.]
+
+#talisman("BATTERED TALISMAN", 20)[The bearer of this item gains a Magical Ward (4+) against Attacks with Strength 5 or more.]
+
+#talisman("FUNNY TRINKET", 15, only: "Honcho", common: true)[The bearer of this item may re-roll failed armour saves and invulnerable saves.]
+
+#talisman("GRUBBI'S DICE BAG", 15, only: "Honcho", one-use: true)[When the bearer of this item suffers a Wound, roll a D6. On a 2+, the Wound is ignored, as are all subsequent Wounds that turn. On the result of a 1 the bearer is slain outright regardless of the number of Wounds inflicted.]
+
+#talisman("SHRUNKEN PRIEST HEAD", 15, only: "Butcher or Slaughtermaster", common: true)[The bearer of this item gains a Magical Ward (5+) against the first wounding Hit each phase.]
+
+#talisman("WYRDSTONE NECKLACE", 15, common: true)[The wearer of the Wyrdstone Necklace gains a Magical Ward (5+). However, they must pass a Toughness test at the start of each of their turns or suffer a wound with no saves allowed.]
+]
+
+#magic-item-section("arcane")[
+#arcane-item("HELLHEART", 50, type: "Charm", one-use: true)[The Hellheart can be used at the start of one of the opposing side's Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12" of the bearer must roll 2D6 on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the Miscasts, add an extra dispel dice to the Ogre's dispel pool for each enemy Wizard that was forced to roll on the Miscast table.]
+
+#arcane-item("BANGSTICK", 35, type: "Relic", bound: (level: 3, cast: "8+"))[The Bangstick contains a *magic missile* with a range of 24" that causes 2D6 Strength 4 Hits with the Flaming Attacks special rule.]
+
+#arcane-item("GRUT'S SICKLE", 30, type: "Relic")[At the start of the Ogre Magic phase, the bearer of Grut's Sickle can inflict a single Wound on any unit he has joined. If he does so, then he adds +2 to all casting rolls he makes during that Magic phase. A Wound inflicted by Grut's Sickle is distributed as a shooting attack, and may not be saved in any way. Roll 2D6 at the end of each Magic phase where Grut's Sickle is used; on a roll of 3 or more nothing happens, but on a roll of double 1 the unit turns upon and slays the wielder of Grut's Sickle, and he is removed as a casualty with no saves of any kind allowed.]
+
+#arcane-item("THE HUNGRY MAW", 30, type: "Charm", one-use: true)[The Hungry Maw can be used after successfully dispelling an enemy spell. When used, the enemy caster can no longer use this spell for the remainder of the game.]
+
+#arcane-item("HALFLING COOKBOOK", 25, type: "Relic")[A model with the Halfling Cookbook may re-roll one dice (except 1's) per casting roll when using the Lore of the Great Maw.]
+
+#arcane-item("DRAGON HEART", 20, type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. For the duration of this turn, the bearer may re-roll failed casting attempts.]
+
+#arcane-item("FLASK OF CONGEALED MAW-JUICES", 20, only: "Model with Great Mawpot", type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. For the duration of this turn, you may add one free power dice to each of the model's casting attempts.]
+
+#arcane-item("BLOODROCK TALISMAN", 20, type: "Relic")[The bearer of this item gains a +2 dispel bonus if they are within 12" of the casting Wizard.]
+
+#arcane-item("WIZARDFLESH APRON", 20, only: "Wizard with the Lore of the Great Maw", type: "Relic")[At the start of each of your Magic phases, the bearer of this item can pick one additional spell from the Lore of the Great Maw of those normally available to them and cast it this turn.]
+]
+
+#magic-item-section("enchanted", columns: 2)[
+#enchanted-item("TOKENS OF THE EVERWINTER", 30, one-use: true)[This can be used at the start of any round of close combat. For the duration of this turn, the model (but not any mount) gains +1 Strength as well as the Always Strikes First and Natural Armour (5+) special rules.]
+
+#enchanted-item("BRAND OF THE SVARD", 25, only: "Mounted model")[The bearer's mount gain +1 To Hit in close combat.]
+
+#enchanted-item("THE SEAT OF ALVAGR", 25, only: "Mounted model")[The model may make double their normal amount of Stomps.]
+
+#enchanted-item("BLEEDING SKULL OF DRAGAAR", 20, only: "Tyrant, Bruiser or Hunter")[The bearer of this item can channel dispel dice in the same manner as a Level 2 Wizard.]
+
+#enchanted-item("GNOBLAR BLAST KEG", 20, only: "Tyrant or Bruiser", one-use: true, common: true)[This item can be used during any of your Shooting phases. Place the small round template anywhere within 6" – it scatters D3". Any model touched by the template suffers a Strength 3 Hit with the Armour Piercing (1) special rule. The model under the hole suffers a Strength 6 Hit with the Armour Piercing (1) and Multiple Wounds (D3) special rules.]
+
+#enchanted-item("GRUESOME TROPHY RACK", 20, only: "Tyrant", common: true)[Any unit joined by this model may re-roll 1's To Hit in close combat.]
+
+#enchanted-item("SHATTERSTONE", 20)[All enemy units within 12" of the bearer of this item treat all terrain features as Dangerous Terrain. Terrain that is already Dangerous Terrain makes them fail the test on a 1\-2 instead of just a 1.]
+
+#enchanted-item("BRAHMIR STATUE", 15, common: true)[Any Psychology tests caused by the bearer of the Brahmir Statue (or any unit they are with) on any Beastmen unit are taken with a \-3 Leadership penalty.]
+
+#enchanted-item("ALVAGR RUNE-TOKENS", 15, one-use: true, common: true)[This item can be used at the start of any round of close combat. The wielder gains the Ice Attacks special rule for the duration of this round.]
+
+#enchanted-item("CARVALOX FLANK", 15, common: true)[All friendly units of Yhetees within 12" of the bearer gain +2 to their Movement.]
+
+#enchanted-item("ELIXIR OF THE FROSTWYRM", 15, one-use: true, common: true)[The bearer gains a Strength 4 Breath Weapon attack with the Ice Attacks special rule. However, after using it they will automatically suffer a Wound with no saves allowed.]
+
+#enchanted-item("FROST-TALON SHARDBOLTS", 15, only: "Hunter with Harpoon Launcher", common: true)[All shots fired by their weapon have the Ice Attacks and Magical Attacks special rules.]
+
+#enchanted-item("GREASE-SMEARED TUSKS", 15, only: "Butcher or Slaughtermaster", common: true)[All friendly Monstrous Beasts, Monstrous Creatures and Monsters within 12" gain +1 to their Movement.]
+
+#enchanted-item("JADE LION", 15, common: true)[The bearer of the Jade Lion and any unit they are with may re-roll any failed Psychology tests. If the unit flees for any reason, this benefit is lost for the remainder of the game.]
+
+#enchanted-item("BATTLE BREW", 10, one-use: true, common: true)[The bearer may use this item at the start of any of your turns. If they do so, they gain +1 To Hit and To Wound in Close Combat this turn. However, at the end of that round of close combat (before break tests are taken), they must pass a Toughness test or suffer a Wound with no saves allowed.]
+
+#enchanted-item("FLASK OF STONEHORN BLOOD", 10, one-use: true, common: true)[The bearer may use this item at the start of any of your turns. If they do so, all attacks targeting them must re-roll successful rolls To Wound for the duration of this turn.]
+
+#enchanted-item("OGRE TOOTH", 10, only: "Honcho", one-use: true, common: true)[This item may be used at the start of any of your turns. Roll a D6; on the result of a 1 the bearer is immediately removed as a casualty. On the result of a 2+, the character and any Gnoblar unit within 6" gains the Immunity (Psychology) special rule until the start of your next turn.]
+
+#enchanted-item("SKULLMANTLE", 10, only: "Butcher or Slaughtermaster", common: true)[Any enemy unit forced to take any Leadership tests due to the bearer or a unit they have joined suffers a \-1 penalty to their Leadership.]
+
+#enchanted-item("FISTFUL OF LAURELS", 5, one-use: true, common: true)[The model with the Fistful of Laurels and any unit they are with may re-roll their first failed Break test in the game using an additional D6 and discard the highest result.]
+
+#enchanted-item("ROCK EYE", 5, common: true)[At the beginning of each Ogre turn, pick one unit in the line of sight of the bearer of the Rock Eye. The opposing player must announce the presence of all Magic Items, Hidden models and the like that unit might have.]
+]
+
+#magic-item-section("standard")[
+#magic-standard("DRAGONHIDE BANNER", 50)[The unit carrying this standard can re-roll all To Hit, To Wound and saving throw rolls of 1 on the turn they make a successful charge. In addition, the bearer of the banner can use it to unleash an icy blast. This is a Strength 3 Breath Weapon with the Ice Attacks special rule.]
+
+#magic-standard("BANNER OF THE GREAT MAW", 25)[The unit carrying this standard gains the Killing Blow special rule.]
+
+#magic-standard("CANNIBAL TOTEM", 25)[If the unit carrying this standard is in base contact with an enemy Troop Type with the same or higher Unit Strength as them, all models in the unit re-roll failed To Hit and To Wound rolls in the first round of that combat. However, they may not Overrun and must Pursue the enemy if possible.]
+
+#magic-standard("RUNE MAW", 25)[When any enemy spell targeting a unit with this standard is successfully cast, roll a D6. On a roll of 2+, the caster must choose a new target for the spell. If no other target is available (because no other target is in range or all eligible units have already been targeted, for example), then the spell is wasted but still counts as having been cast. Spells that do not specifically target the unit are not affected by the Rune Maw.]
+
+#magic-standard("BULL STANDARD", 15)[The unit carrying this standard re-rolls failed To Wound rolls for their Impact Hits.]
+
+#magic-standard("RAGBANNER", 15)[The unit carrying this standard has the Cold-blooded special rule when taking Panic tests.]
+]
 
 = CHARACTERS
 

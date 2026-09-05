@@ -163,306 +163,169 @@ _Might of Heaven & Earth_ is an *augment* spell with a range of 18". The target 
 
 _Constellation of the Dragon_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 5 Hit with the Multiple Wounds (D3) special rule.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Cathayans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Cathayans. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("JADE BLADE OF THE GREAT FLEET", 35)[The wielder of this weapon gains +1 Strength and the Regeneration (5+) special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("JADE BLADE OF THE GREAT FLEET", "35 points")
-
-The wielder of this weapon gains +1 Strength and the Regeneration (5+) special rule.
-
-#namecost("NUKU CHO'S CROSSBOW", "35 points")
-
-Repeater crossbow. This weapon has the following profile:
+#magic-weapon("NUKU CHO'S CROSSBOW", 35, type: "Repeater crossbow")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18/24\"", "3", "Multiple Shots (6), Rapid Fire"))
-#namecost("SILVER MOON BOW", "30 points")
+]
 
-Longbow. This weapon has the following profile:
+#magic-weapon("SILVER MOON BOW", 30, type: "Longbow")[This weapon has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Armour Piercing (3), Multiple Shots (3)"))
-#namecost("SPIRIT LONGMA SPEAR", "30 points")
+]
 
-Light lance/spear. The wielder of this weapon gains the Ignores Armour saves special rule.
+#magic-weapon("SPIRIT LONGMA SPEAR", 30, type: "Light lance/spear")[The wielder of this weapon gains the Ignores Armour saves special rule.]
 
-#namecost("VORPAL SHARD", "30 points")
+#magic-weapon("VORPAL SHARD", 30)[The wielder of this weapon always Wounds on a 2+.]
 
-The wielder of this weapon always Wounds on a 2+.
+#magic-weapon("THE BRAZEN BLADE", 25)[This weapon has the Multiple Wounds (2) special rule. In addition, Ward saves (except Dodge and Parry) cannot be taken against Wounds caused by it.]
 
-#namecost("THE BRAZEN BLADE", "25 points")
+#magic-weapon("DAWN GLAIVE", 25, type: "Polearm")[All enemy attacks against the wielder of this weapon suffer \-1 To Hit in close combat.]
 
-This weapon has the Multiple Wounds (2) special rule. In addition, Ward saves (except Dodge and Parry) cannot be taken against Wounds caused by it.
+#magic-weapon("THE SWORD OF REASON", 25, type: "Great weapon")[This weapon has the Killing Blow special rules, which takes effect on a 5+ rather than a 6.]
 
-#namecost("DAWN GLAIVE", "25 points")
+#magic-weapon("ASCENDANT CELESTIAL BLADE", 20, type: "Celestial Blade")[The wielder of this weapon gains +1 Strength.]
 
-Polearm. All enemy attacks against the wielder of this weapon suffer \-1 To Hit in close combat.
+#magic-weapon("BLADE OF XEN WU", 20)[The wielder of this weapon gains +1 Strength and +1 Attack. However, any unit joined by them cannot use their Leadership.]
 
-#namecost("THE SWORD OF REASON", "25 points")
+#magic-weapon("SERPENT FANG", 20)[The wielder of this weapon gains the Armour Piercing (2) and Poisoned Attacks special rules.]
 
-Great weapon. This weapon has the Killing Blow special rules, which takes effect on a 5+ rather than a 6.
+#magic-weapon("SWORD OF NAN-GAU", 20)[The wielder of this weapon gains the Armour Piercing (3) and Hatred (Chaos) special rules.]
 
-#namecost("ASCENDANT CELESTIAL BLADE", "20 points")
+#magic-weapon("VERMILLION BLADE", 20)[The wielder of this weapon gains +1 To Hit and the Flaming Attacks special rule.]
 
-Celestial Blade. The wielder of this weapon gains +1 Strength.
+#magic-weapon("SUN & MOON BLADES", 15, type: "Two hand weapons")[These weapons have the Armour Piercing (1) and Immunity (Killing Blow) special rules.]
 
-#namecost("BLADE OF XEN WU", "20 points")
+#magic-weapon("WRATH OF XEN YANG", 10, type: "Light lance/spear")[The wielder of this weapon gains the Flaming Attacks special rule.]
+]
 
-The wielder of this weapon gains +1 Strength and +1 Attack. However, any unit joined by them cannot use their Leadership.
+#magic-item-section("armour")[
+#magic-armour("JADE ARMOUR OF BEICHAI", 55, type: "Heavy armour")[The wearer of this armour gains a Magical Ward (5+) and the Magic Resistance (2) special rule.]
 
-#namecost("SERPENT FANG", "20 points")
+#magic-armour("QUICKSILVER ARMOUR", 35, type: "Medium armour")[The wearer of this armour gains the Always Strikes First special rule.]
 
-The wielder of this weapon gains the Armour Piercing (2) and Poisoned Attacks special rules.
+#magic-armour("SCALES OF THE CELESTIAL COURT", 35, type: "Medium armour")[The wearer of this armour gains the Natural Armour (5+) and Strider special rules.]
 
-#namecost("SWORD OF NAN-GAU", "20 points")
+#magic-armour("ARMOUR OF THE WARBIRD", 30, only: "Infantry", type: "Medium armour")[The wearer of this armour gains the Fly (10) and Independent special rules.]
 
-The wielder of this weapon gains the Armour Piercing (3) and Hatred (Chaos) special rules.
+#magic-armour("ASCENDANT CELESTIAL ARMOUR", 25, type: "Heavy armour")[The wearer of this armour is immune to penalties to any of their characteristics and automatically passes all characteristics tests.]
 
-#namecost("VERMILLION BLADE", "20 points")
+#magic-armour("LAMINATE SHIELD", 10, type: "Shield")[Every time the bearer of this shield makes a successful Parry save, they may immediately make an additional Attack back against the model that struck the blow.]
 
-The wielder of this weapon gains +1 To Hit and the Flaming Attacks special rule.
+#magic-armour("MANTLE OF HEAVEN", 10)[The wearer of this armour gains a 5+ armour save against non-magical missile attacks.]
 
-#namecost("SUN & MOON BLADES", "15 points")
+#magic-armour("SHIELD OF NAN-GAU", 10, type: "Shield")[The bearer gains +2 armour save against all attacks to their front in the first round of close combat.]
+]
 
-Two hand weapons. These weapons have the Armour Piercing (1) and Immunity (Killing Blow) special rules.
+#magic-item-section("talisman")[
+#talisman("GUARDIAN FENG SHI BO", 40)[All close combat and missile attacks targeting the bearer of this item must re-roll successful To Hit rolls.]
 
-#namecost("WRATH OF XEN YANG", "10 points")
+#talisman("ROBES OF SHANG YANG", 40, bound: true)[This item contains the _Wall of Wind & Fire_ spell from the Lore of Yang. In addition, the bearer gains a Magical Ward (6+) against missile attacks.]
 
-Light lance/spear. The wielder of this weapon gains the Flaming Attacks special rule.
+#talisman("CRYSTAL OF KUNLAN", 30)[The bearer of this item gains a Magical Ward (5+). In addition, for each successful Ward save they make in close combat, the enemy that struck the blow immediately suffers a Strength 3 Hit with the Flaming Attacks special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("JADE ARMOUR OF BEICHAI", "55 points")
+#talisman("JET AMULET", 25)[The bearer of this item and any unit they join gain the Magic Resistance (2) special rule. In addition, they may re-roll any failed dispel attempts against spells directly targeting them or their unit.]
 
-Heavy armour. The wearer of this armour gains a Magical Ward (5+) and the Magic Resistance (2) special rule.
+#talisman("SIGIL OF SMOKE & POWDER", 25)[All missile attacks targeting the bearer of this item or any unit they are with suffer \-1 To Hit.]
 
-#namecost("QUICKSILVER ARMOUR", "35 points")
+#talisman("JADE BLOOD PENDANT", 20)[Whenever the bearer kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the bearer recovers a single Wound lost earlier in the battle.]
 
-Medium armour. The wearer of this armour gains the Always Strikes First special rule.
+#talisman("JAR OF ALL SOULS", 20, one-use: true)[If the bearer of this item is killed, immediately roll a D6. On a 2+, they come back to life with 1 Wound remaining.]
 
-#namecost("SCALES OF THE CELESTIAL COURT", "35 points")
+#talisman("CELESTIAL SILK ROBE", 15, common: true)[The wearer of this item gains the Magical Ward (6+) and Magic Resistance (1) special rules.]
 
-Medium armour. The wearer of this armour gains the Natural Armour (5+) and Strider special rules.
+#talisman("CROWN OF JADE", 10, common: true)[The bearer of this item gains a 4+ invulnerable save against all enemy spells.]
+]
 
-#namecost("ARMOUR OF THE WARBIRD", "30 points")
+#magic-item-section("arcane")[
+#arcane-item("CLOAK OF PO MEI", 40, type: "Relic")[The bearer of this item gains a +1 casting and dispelling bonus.]
 
-Infantry only. Medium armour. The wearer of this armour gains the Fly (10) and Independent special rules.
+#arcane-item("CLOCKWORK COMPASS", 35, type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. Once used, all Remains in Play spells within 24" of the bearer that are currently in play are automatically dispelled, and the effects of all other spells within 24" of the bearer immediately come to an end.]
 
-#namecost("ASCENDANT CELESTIAL ARMOUR", "25 points")
+#arcane-item("JADE AMULET", 35, type: "Relic")[The bearer of this item may re-roll failed channelling attempts.]
 
-Heavy armour. The wearer of this armour is immune to penalties to any of their characteristics and automatically passes all characteristics tests.
+#arcane-item("SCROLLS OF ASTROMANCY", 35, type: "Relic")[Astromancer only. The bearer can re-roll all of the dice rolled to cast or dispel a spell once per Magic phase. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.]
 
-#namecost("LAMINATE SHIELD", "10 points")
+#arcane-item("STAFF OF WU XING", 25, type: "Staff")[The bearer of this staff can choose to re-roll all the Winds of Magic dice each Magic phase.]
 
-Shield. Every time the bearer of this shield makes a successful Parry save, they may immediately make an additional Attack back against the model that struck the blow.
+#arcane-item("SCROLLS OF WEI-JIN", 20, type: "Relic")[The bearer of this item gains the Loremaster special rule. However, they may only attempt to cast a number of spells equal to their Wizard Level.]
 
-#namecost("MANTLE OF HEAVEN", "10 points")
+#arcane-item("MAW SHARD", 15, type: "Charm", one-use: true)[The Maw Shard may be used in any of your Magic phases. Once used, any double (except double 1's) rolled when the bearer casts spells counts towards Ultimate Power this turn.]
 
-The wearer of this armour gains a 5+ armour save against non-magical missile attacks.
+#arcane-item("SEAL OF XING PO", 5, only: "Dragon-Blooded Shugengan or Dragon Descendant", type: "Relic", common: true)[The bearer of this item may choose spells from both the Lore of Yin and Yang in addition to the spells from their other lore.]
+]
 
-#namecost("SHIELD OF NAN-GAU", "10 points")
+#magic-item-section("enchanted")[
+#enchanted-item("ALCHEMIST'S MASK", 35, bound: true)[This item contains the _Transmutation of Lead_ spell from the Lore of Metal.]
 
-Shield. The bearer gains +2 armour save against all attacks to their front in the first round of close combat.
+#enchanted-item("ICON OF THE SPIRIT DRAGON", 35, bound: true)[This item contains the _Ancestral Warriors_ spell from the Lore of Yin.]
 
-#entry("TALISMANS")
-#namecost("GUARDIAN FENG SHI BO", "40 points")
+#enchanted-item("KITE OF THE UTTERMOST AIRS", 35)[The bearer can use this item in the Shooting phase. Choose one enemy unit with the Fly special rule within 12" that is not in close combat; they suffer D6 Strength 4 automatic Hits.]
 
-All close combat and missile attacks targeting the bearer of this item must re-roll successful To Hit rolls.
+#enchanted-item("CLEANSING WATER", 30)[The bearer of this item and unit they join gains the Mighty Blow (1) special rule in turns that they charge.]
 
-#namecost("ROBES OF SHANG YANG", "40 points")
+#enchanted-item("CRACKLEBLAZE", 30, one-use: true)[This item can be used in the Shooting phase. Place the small 3" template with the hole anywhere within 6". It scatters D3". Any model under the template suffer a Strength 4 hits with the Flaming Attacks and Ignores Armour saves special rule.]
 
-Bound Spell. This item contains the _Wall of Wind & Fire_ spell from the Lore of Yang. In addition, the bearer gains a Magical Ward (6+) against missile attacks.
+#enchanted-item("SPIRIT LANTERN", 30)[The bearer of this item gains the Terror special rule. In addition, they may re-roll To Wound rolls of 1 against Daemons, Undead and Vampires.]
 
-#namecost("CRYSTAL OF KUNLAN", "30 points")
+#enchanted-item("CATALYTIC KILN", 25)[All enemy models in base contact with the bearer of this item suffer a Strength 3 Hit with the Flaming Attacks special rule at the start of each close combat phase. Models with Immunity (Flaming Attacks) suffer a Strength 2 Hit.]
 
-The bearer of this item gains a Magical Ward (5+). In addition, for each successful Ward save they make in close combat, the enemy that struck the blow immediately suffers a Strength 3 Hit with the Flaming Attacks special rule.
+#enchanted-item("ASTROMANCER'S SPYGLASS", 20)[The bearer of this item gives you +1 to choose which side of the table to deploy on, choosing the first turn and rolling for Ambushers to arrive. In addition, all enemy units within 30" must reveal all Hidden models and magic items they might have.]
 
-#namecost("JET AMULET", "25 points")
+#enchanted-item("FAN OF THE MAGISTER", 20, only: "Lord Magistrate or Magistrate")[The bearer of this item allows friendly units to re-roll failed Leadership tests when attempting to use the Tactician special rule. In addition, enemy units within 12" must re-roll successful tests to march, counter-charge, redirect charges, restrain from pursuit and reform.]
 
-The bearer of this item and any unit they join gain the Magic Resistance (2) special rule. In addition, they may re-roll any failed dispel attempts against spells directly targeting them or their unit.
+#enchanted-item("FIRES OF NAN-GAU", 15, one-use: true, common: true)[The bearer of this item gains a Breath Weapon with Strength 4 and the Flaming Attacks special rule.]
 
-#namecost("SIGIL OF SMOKE & POWDER", "25 points")
+#enchanted-item("GOLDEN LION", 15, common: true)[The bearer of this item and any unit they are with may re-roll failed Psychology tests.]
 
-All missile attacks targeting the bearer of this item or any unit they are with suffer \-1 To Hit.
+#enchanted-item("VERMILLION QUILLS", 15, one-use: true, common: true)[This item can be used at the start of close combat. The bearer of this item can re-roll all failed To Hit and To Wound rolls this turn.]
 
-#namecost("JADE BLOOD PENDANT", "20 points")
+#enchanted-item("ALCHEMIST'S ELIXIR OF IRON SKIN", 10, one-use: true, common: true)[This item can be used at the start of any phase. The character gains the Natural Armour save (3+) special rule until the end of the turn.]
 
-Whenever the bearer kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the bearer recovers a single Wound lost earlier in the battle.
+#enchanted-item("ALCHEMIST'S ELIXIR OF PUISSANCE", 10, one-use: true, common: true)[This item can be used at the start of any phase. The character gains +1 Strength and Attacks until the end of the turn.]
 
-#namecost("JAR OF ALL SOULS", "20 points")
+#enchanted-item("CLOAK OF THE MOON WIND", 10, only: "Model on foot")[The bearer of this item gains the Scouts special rule.]
 
-One use only. If the bearer of this item is killed, immediately roll a D6. On a 2+, they come back to life with 1 Wound remaining.
+#enchanted-item("ALCHEMIST'S ELIXIR OF VENOM", 5, one-use: true, common: true)[This item can be used at the start of any phase. The character gains the Poisoned Attacks special rule until the end of the turn.]
+]
 
-#namecost("CELESTIAL SILK ROBE*", "15 points")
+#magic-item-section("standard")[
+#magic-standard("FLAG OF GRAND CATHAY", 55)[The bearer gains the Hold Your Ground (6) special rule. In addition, friendly units within 18" count as being in Harmony if within 6" of eligible Yin/Yang units rather than 3".]
 
-The wearer of this item gains the Magical Ward (6+) and Magic Resistance (1) special rules.
+#magic-standard("THE GREAT CELESTIAL BANNER", 50)[The unit carrying this banner gains the Magical Ward (5+) special rule.]
 
-#namecost("CROWN OF JADE*", "10 points")
+#magic-standard("JADE BANNER", 30)[The unit carrying this banner gains +2 combat resolution bonus.]
 
-The bearer of this item gains a 4+ invulnerable save against all enemy spells.
+#magic-standard("STANDARD OF WEI JIN", 30)[The unit carrying this banner gains +1 to their Leadership, and enemy units in base contact suffer \-1 to their Leadership.]
 
-#entry("ARCANE ITEMS")
-#namecost("CLOAK OF PO MEI", "40 points")
+#magic-standard("BANNER OF FENG SHI", 25)[The unit carrying this banner gains the Immunity (Psychology) and Magical Attacks special rules.]
 
-Relic. The bearer of this item gains a +1 casting and dispelling bonus.
+#magic-standard("BANNER OF THE EMPRESS' EYE", 25)[The unit carrying this banner gains +1 to Hit with missile weapons.]
 
-#namecost("CLOCKWORK COMPASS", "35 points")
+#magic-standard("BANNER OF THE MOON EMPRESS", 25, only: "Infantry")[The unit carrying this banner gains the Scouts special rule.]
 
-Charm. One use only. This item can be used at the start of any of your Magic phases. Once used, all Remains in Play spells within 24" of the bearer that are currently in play are automatically dispelled, and the effects of all other spells within 24" of the bearer immediately come to an end.
+#magic-standard("REVERED BANNER OF THE ANCESTORS", 25)[The unit carrying this banner gains +1 Weapon Skill.]
 
-#namecost("JADE AMULET", "35 points")
+#magic-standard("SERENE CLOUD PRAYER FLAG", 25)[The unit carrying this banner gains the Cold-blooded special rule.]
 
-Relic. The bearer of this item may re-roll failed channelling attempts.
+#magic-standard("STANDARD OF HEAVENLY FURY", 25, one-use: true)[This item can be used at the start of any enemy Movement phase. Until the start of your next turn, no enemy unit within 24" of this banner can use the Fly special rule.]
 
-#namecost("SCROLLS OF ASTROMANCY", "35 points")
+#magic-standard("BANNER OF THE DRAGON'S WRATH", 20)[The unit carrying this banner gains the Flaming Attacks and Impact Hits (1) special rules.]
 
-Relic. Astromancer only. The bearer can re-roll all of the dice rolled to cast or dispel a spell once per Magic phase. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.
+#magic-standard("STANDARD OF SHANG-YANG", 20)[The unit carrying this banner may re-roll 1's when taking armour saves.]
 
-#namecost("STAFF OF WU XING", "25 points")
+#magic-standard("DRAGON'S EYE BANNER", 15)[Whenever the unit carrying this standard is the target of an enemy spell, roll a D6. On a 3+, the enemy Wizard must choose another target. If no other target is available, the spell cannot be cast.]
 
-Staff. The bearer of this staff can choose to re-roll all the Winds of Magic dice each Magic phase.
+#magic-standard("BASTION STANDARD", 15)[The unit carrying this banner only suffer half (rounding up) their normal Leadership penalty when taking Break tests and may re-roll failed Break tests.]
 
-#namecost("SCROLLS OF WEI-JIN", "20 points")
+#magic-standard("STANDARD OF NAN-GAU", 10)[The unit carrying this banner gains 6" to the effective range of their missile weapons.]
 
-Relic. The bearer of this item gains the Loremaster special rule. However, they may only attempt to cast a number of spells equal to their Wizard Level.
-
-#namecost("MAW SHARD", "15 points")
-
-Charm. One use only. The Maw Shard may be used in any of your Magic phases. Once used, any double (except double 1's) rolled when the bearer casts spells counts towards Ultimate Power this turn.
-
-#namecost("SEAL OF XING PO*", "5 points")
-
-Dragon-Blooded Shugengan or Dragon Descendant only. Relic. The bearer of this item may choose spells from both the Lore of Yin and Yang in addition to the spells from their other lore.
-
-#entry("ENCHANTED ITEMS")
-#namecost("ALCHEMIST'S MASK", "35 points")
-
-Bound spell. This item contains the _Transmutation of Lead_ spell from the Lore of Metal.
-
-#namecost("ICON OF THE SPIRIT DRAGON", "35 points")
-
-Bound spell. This item contains the _Ancestral Warriors_ spell from the Lore of Yin.
-
-#namecost("KITE OF THE UTTERMOST AIRS", "35 points")
-
-The bearer can use this item in the Shooting phase. Choose one enemy unit with the Fly special rule within 12" that is not in close combat; they suffer D6 Strength 4 automatic Hits.
-
-#namecost("CLEANSING WATER", "30 points")
-
-The bearer of this item and unit they join gains the Mighty Blow (1) special rule in turns that they charge.
-
-#namecost("CRACKLEBLAZE", "30 points")
-
-One use only. This item can be used in the Shooting phase. Place the small 3" template with the hole anywhere within 6". It scatters D3". Any model under the template suffer a Strength 4 hits with the Flaming Attacks and Ignores Armour saves special rule.
-
-#namecost("SPIRIT LANTERN", "30 points")
-
-The bearer of this item gains the Terror special rule. In addition, they may re-roll To Wound rolls of 1 against Daemons, Undead and Vampires.
-
-#namecost("CATALYTIC KILN", "25 points")
-
-All enemy models in base contact with the bearer of this item suffer a Strength 3 Hit with the Flaming Attacks special rule at the start of each close combat phase. Models with Immunity (Flaming Attacks) suffer a Strength 2 Hit.
-
-#namecost("ASTROMANCER'S SPYGLASS", "20 points")
-
-The bearer of this item gives you +1 to choose which side of the table to deploy on, choosing the first turn and rolling for Ambushers to arrive. In addition, all enemy units within 30" must reveal all Hidden models and magic items they might have.
-
-#namecost("FAN OF THE MAGISTER", "20 points")
-
-Lord Magistrate or Magistrate only. The bearer of this item allows friendly units to re-roll failed Leadership tests when attempting to use the Tactician special rule. In addition, enemy units within 12" must re-roll successful tests to march, counter-charge, redirect charges, restrain from pursuit and reform.
-
-#namecost("FIRES OF NAN-GAU*", "15 points")
-
-One use only. The bearer of this item gains a Breath Weapon with Strength 4 and the Flaming Attacks special rule.
-
-#namecost("GOLDEN LION*", "15 points")
-
-The bearer of this item and any unit they are with may re-roll failed Psychology tests.
-
-#namecost("VERMILLION QUILLS*", "15 points")
-
-One use only. This item can be used at the start of close combat. The bearer of this item can re-roll all failed To Hit and To Wound rolls this turn.
-
-#namecost("ALCHEMIST'S ELIXIR OF IRON SKIN*", "10 points")
-
-One use only. This item can be used at the start of any phase. The character gains the Natural Armour save (3+) special rule until the end of the turn.
-
-#namecost("ALCHEMIST'S ELIXIR OF PUISSANCE*", "10 points")
-
-One use only. This item can be used at the start of any phase. The character gains +1 Strength and Attacks until the end of the turn.
-
-#namecost("CLOAK OF THE MOON WIND", "10 points")
-
-Model on foot only. The bearer of this item gains the Scouts special rule.
-
-#namecost("ALCHEMIST'S ELIXIR OF VENOM*", "5 points")
-
-One use only. This item can be used at the start of any phase. The character gains the Poisoned Attacks special rule until the end of the turn.
-
-#entry("MAGIC STANDARDS")
-#namecost("FLAG OF GRAND CATHAY", "55 points")
-
-The bearer gains the Hold Your Ground (6) special rule. In addition, friendly units within 18" count as being in Harmony if within 6" of eligible Yin/Yang units rather than 3".
-
-#namecost("THE GREAT CELESTIAL BANNER", "50 points")
-
-The unit carrying this banner gains the Magical Ward (5+) special rule.
-
-#namecost("JADE BANNER", "30 points")
-
-The unit carrying this banner gains +2 combat resolution bonus.
-
-#namecost("STANDARD OF WEI JIN", "30 points")
-
-The unit carrying this banner gains +1 to their Leadership, and enemy units in base contact suffer \-1 to their Leadership.
-
-#namecost("BANNER OF FENG SHI", "25 points")
-
-The unit carrying this banner gains the Immunity (Psychology) and Magical Attacks special rules.
-
-#namecost("BANNER OF THE EMPRESS' EYE", "25 points")
-
-The unit carrying this banner gains +1 to Hit with missile weapons.
-
-#namecost("BANNER OF THE MOON EMPRESS", "25 points")
-
-Infantry only. The unit carrying this banner gains the Scouts special rule.
-
-#namecost("REVERED BANNER OF THE ANCESTORS", "25 points")
-
-The unit carrying this banner gains +1 Weapon Skill.
-
-#namecost("SERENE CLOUD PRAYER FLAG", "25 points")
-
-The unit carrying this banner gains the Cold-blooded special rule.
-
-#namecost("STANDARD OF HEAVENLY FURY", "25 points")
-
-One use only. This item can be used at the start of any enemy Movement phase. Until the start of your next turn, no enemy unit within 24" of this banner can use the Fly special rule.
-
-#namecost("BANNER OF THE DRAGON'S", "")
-#namecost("WRATH", "20 points")
-
-The unit carrying this banner gains the Flaming Attacks and Impact Hits (1) special rules.
-
-#namecost("STANDARD OF SHANG-YANG", "20 points")
-
-The unit carrying this banner may re-roll 1's when taking armour saves.
-
-#namecost("DRAGON'S EYE BANNER", "15 points")
-
-Whenever the unit carrying this standard is the target of an enemy spell, roll a D6. On a 3+, the enemy Wizard must choose another target. If no other target is available, the spell cannot be cast.
-
-#namecost("BASTION STANDARD", "15 points")
-
-The unit carrying this banner only suffer half (rounding up) their normal Leadership penalty when taking Break tests and may re-roll failed Break tests.
-
-#namecost("STANDARD OF NAN-GAU", "10 points")
-
-The unit carrying this banner gains 6" to the effective range of their missile weapons.
-
-#namecost("BANNER OF XEN WUN", "10 points")
-
-Enemy units cannot choose to Stand & Shoot against the unit carrying this banner.
+#magic-standard("BANNER OF XEN WUN", 10)[Enemy units cannot choose to Stand & Shoot against the unit carrying this banner.]
+]
 
 = CHARACTERS
 

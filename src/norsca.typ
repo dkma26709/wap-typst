@@ -90,163 +90,95 @@ Once this model is reduced to 0 Wounds, roll a D6; on a 4+ the model remains fig
 
 Model on foot only. After deployment, but before the first turn begins, select a single character or monster in your opponent’s army. This is the character’s primary quarry. The character may re-roll all failed To Hit and To Wound rolls against his primary quarry in close combat and with missile attacks.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Norscans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Norscans. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("KAOSFAENIR", 60, type: "Great weapon")[No Magical Ward saves may be taken against wounds caused by Kaosfaenir. In addition, for each unsaved Wound a model suffers from this weapon, they must pass a Strength test or be instantly slain.]
 
-#entry("MAGIC WEAPONS")
-#namecost("KAOSFAENIR", "60 points")
+#magic-weapon("THE SWAYING SPEAR", 55, type: "Spear/javelin")[All close combat and missile attacks made with the Swaying Spear Hit always Hit on a 2+ and have the Heroic Killing Blow special rule.]
 
-Great Weapon. No Magical Ward saves may be taken against wounds caused by Kaosfaenir. In addition, for each unsaved Wound a model suffers from this weapon, they must pass a Strength test or be instantly slain.
+#magic-weapon("THE CRUSHER", 50)[Attacks made with the Crusher have the Lightning Attacks and Multiple Wounds (D6) special rules.]
 
-#namecost("THE SWAYING SPEAR", "55 points")
+#magic-weapon("SKAR'S KRAKEN-KILLER", 40)[This weapon gives the wielder the Armour Piercing (3) special rule. In addition; once per game, at the start of any round of close combat, the bearer can choose to ignore all damage suffered for the duration of this close combat phase, as long as they do not flee from combat.]
 
-Spear/javelin. All close combat and missile attacks made with the Swaying Spear Hit always Hit on a 2+ and have the Heroic Killing Blow special rule.
+#magic-weapon("TYRFANG", 40)[Tyrfang gives it wielder +1 To Hit in close combat, and the Ignores Armour Saves and Flaming Attacks special rules. If the wielder does not kill at least one opponent in each round of close combat he is in, they suffer 1 Wound which Ignores Armour saves and Regeneration saves as the sword strikes its wielder instead.]
 
-#namecost("THE CRUSHER", "50 points")
+#magic-weapon("NAEGLING", 30)[The wielder of Naegling gains the Mighty Blow (2) special rule and gains +2 Attacks in the first round of Combat.]
 
-Attacks made with the Crusher have the Lightning Attacks and Multiple Wounds (D6) special rules.
+#magic-weapon("FLAMING AXE OF CORMAC", 25)[This weapon gives the wielder +1 Strength, +1 Attack and the Flaming Attacks special rule. However, if they ever flee during the battle, the weapon loses all its effects.]
 
-#namecost("SKAR'S KRAKEN-KILLER", "40 points")
+#magic-weapon("CHIEFTAIN'S BLADE", 20)[This weapon gives the wielder +1 Strength. In addition, they gain +1 To Hit while fighting in a challenge.]
 
-This weapon gives the wielder the Armour Piercing (3) special rule. In addition; once per game, at the start of any round of close combat, the bearer can choose to ignore all damage suffered for the duration of this close combat phase, as long as they do not flee from combat.
+#magic-weapon("GARMR & GORMR", 20, type: "Two hand weapons")[One enemy model of your choice in base contact with the wielder loses 1 Attack. In addition, a challenge issued by the wielder cannot be refused.]
 
-#namecost("TYRFANG", "40 points")
+#magic-weapon("SWORD OF RAGE", 20)[This weapon gives the wielder the Frenzy special rule. For every natural 6 when rolling To Hit, the wielder may immediately make an additional Attack.]
 
-Tyrfang gives it wielder +1 To Hit in close combat, and the Ignores Armour Saves and Flaming Attacks special rules. If the wielder does not kill at least one opponent in each round of close combat he is in, they suffer 1 Wound which Ignores Armour saves and Regeneration saves as the sword strikes its wielder instead.
+#magic-weapon("ARMOUR-RIPPER OF SKORLM", 15, type: "Great weapon")[Enemies wounded by this weapon must re-roll successful armour saves.]
 
-#namecost("NAEGLING", "30 points")
+#magic-weapon("TROLL-FANG DAGGER", 15, type: "Additional hand weapon")[The wielder gains the Poisoned Attacks special rule.]
+]
 
-The wielder of Naegling gains the Mighty Blow (2) special rule and gains +2 Attacks in the first round of Combat.
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF BEOWULF", 50, type: "Medium armour")[The wearer of this armour gains +1 Wound and the Regeneration (4+) special rule]
 
-#namecost("FLAMING AXE OF CORMAC", "25 points")
+#magic-armour("BERSERKER HELM", 45, only: "Model on foot")[This armour gives the wearer a 6+ armour save and the Frenzy special rule. In additional, enemy models must re-roll successful To Wound rolls against them.]
 
-This weapon gives the wielder +1 Strength, +1 Attack and the Flaming Attacks special rule. However, if they ever flee during the battle, the weapon loses all its effects.
+#magic-armour("ANCIENT FROST-WYRM SCALE", 40, type: "Medium armour")[The wearer of this armour gains the Ice Attacks special rule.]
 
-#namecost("CHIEFTAIN'S BLADE", "20 points")
+#magic-armour("MIGHTY SERPENT'S SCALEMAIL", 35, type: "Medium armour")[The wearer of this armour gains the Always Strike First special rule.]
 
-This weapon gives the wielder +1 Strength. In addition, they gain +1 To Hit while fighting in a challenge.
+#magic-armour("GJERMUNDBU MAIL SHIRT", 30, only: "Model on foot", type: "Light armour")[All attacks against the wearer of this armour cannot exceed Strength 4, any excess Strength is Ignored.]
 
-#namecost("GARMR & GORMR", "20 points")
+#magic-armour("HUSKARL PLATES", 30, type: "Medium armour")[The wearer of this armour gains +1 Toughness.]
 
-Two hand weapons. One enemy model of your choice in base contact with the wielder loses 1 Attack. In addition, a challenge issued by the wielder cannot be refused.
+#magic-armour("SHIELD OF SVALINN", 20, type: "Shield")[For each successful armour save or Parry save roll of a natural 6 that the bearer makes, all models attacking suffer \-1 To Hit until the end of the next turn. In addition, the bearer gains the Immunity (Flaming Attacks) special rule.]
 
-#namecost("SWORD OF RAGE", "20 points")
+#magic-armour("REAVER'S HELM", 15, only: "Model on foot")[This armour gives the wearer a 6+ armour save and the Ambushers special rule. In addition, any enemy unit that gets destroyed by them in close combat or from pursuit is worth +100 Victory Points.]
+]
 
-This weapon gives the wielder the Frenzy special rule. For every natural 6 when rolling To Hit, the wielder may immediately make an additional Attack.
+#magic-item-section("talisman")[
+#talisman("THE GLEAMING TORC", 30)[A model equipped with the Gleaming Torc adds +1 to their leadership. In addition, all enemy models in base contact with the wearer must pass a Leadership test at the start of each close combat phase. If failed, they will be unable to attack this turn.]
 
-#namecost("ARMOUR-RIPPER OF SKORLM", "15 points")
+#talisman("TALISMAN OF THE CARRION CROW", 30)[The bearer of the Talisman of the Carrion Crow has the Regeneration (5+) and Poisoned Attacks special rules.]
 
-Great weapon. Enemies wounded by this weapon must re-roll successful armour saves.
+#talisman("TALISMAN OF THE SOARING EAGLE", 20)[The bearer of the Talisman of the Soaring Eagle has the Magic Resistance (2) special rule. In addition, the bearer has a 5+ invulnerable save against Magical Attacks.]
 
-#namecost("TROLL-FANG DAGGER", "15 points")
+#talisman("IDUNN'S APPLE", 15)[The bearer gains the Regeneration (4+) special rule. If owner rolls a 1 when making their Regeneration save, they lose this special rule for the remainder of the game.]
+]
 
-Additional hand weapon. The wielder gains the Poisoned Attacks special rule.
+#magic-item-section("arcane")[
+#arcane-item("THE WEB OF WYRD", 25, type: "Relic")[The Wizard may re-roll any single D6 when casting or dispelling once per turn.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF BEOWULF", "50 points")
+#arcane-item("BONE OF ULLR", 10, type: "Relic")[At the start of each of your Magic phases, choose any of the eight Winds of Magic and roll 2D6; the result is the spell they receive and may use for the remainder of this Magic phase, even if this spell would normally be unavailable to them.]
 
-Medium armour. The wearer of this armour gains +1 Wound and the Regeneration (4+) special rule
+#arcane-item("HENBANE POTION", 10, type: "Charm", one-use: true)[The Wizard may use this item at the start of any Magic phase. To do so, roll a D6; on a 2+, they gain D3 Power or Dispel dice. If a 1 is rolled, they lose one Wound with no saves allowed.]
+]
 
-#namecost("BERSERKER HELM", "45 points")
+#magic-item-section("enchanted")[
+#enchanted-item("GIRDLE OF MIGHT", 50)[The Girdle of Might doubles the Strength characteristic of anyone wearing it.]
 
-Model on foot only. This armour gives the wearer a 6+ armour save and the Frenzy special rule. In additional, enemy models must re-roll successful To Wound rolls against them.
+#enchanted-item("THE HOLLERING HORN", 50, one-use: true)[The Horn can be used at the start of any of your turns. When the Horn is sounded, all enemy units within 12" must take an immediate Panic test. After this, all friendly units with the Blood Rage special rule within 12" will move towards the nearest foe using the Random Movement (D6) rule.]
 
-#namecost("ANCIENT FROST-WYRM SCALE", "40 points")
+#enchanted-item("HRUNGNIR'S HEART", 25)[This item can be used at the start of each round of close combat. Take a Leadership test; if successful the bearer and all models in their unit gain +1 To Hit this turn. Alternatively, you can force one enemy unit in base contact to take a Leadership test; if failed that unit suffer \-1 To Hit this turn.]
 
-Medium armour. The wearer of this armour gains the Ice Attacks special rule.
+#enchanted-item("VEGVISIR", 25)[The bearer and any unit they join may re-roll failed charge and pursuit distances.]
 
-#runin[MIGHTY SERPENT]'#runin[S SCALEMAIL 35 points] Medium armour. The wearer of this armour gains the Always Strike First special rule.
+#enchanted-item("VIAL OF TROLL BLOOD", 15, one-use: true)[This item may be used at the start of any round of close combat. The bearer gains the Unbreakable special rule for the duration of the turn. If they are in a unit, the unit may still break and flee as normal, while the model remains in combat.]
 
-#namecost("GJERMUNDBU MAIL SHIRT", "30 points")
+#enchanted-item("WOLF-TEETH AMULET", 5)[The model gains the Devastating Charge special rule. However, they must always pursue a fleeing enemy.]
+]
 
-Model on foot only. Light armour. All attacks against the wearer of this armour cannot exceed Strength 4, any excess Strength is Ignored.
+#magic-item-section("standard")[
+#magic-standard("RAVEN BANNER", 50)[All friendly units within 12" of this standard gain the Immunity (Fear/Panic) special rule.]
 
-#namecost("HUSKARL PLATES", "30 points")
+#magic-standard("SKALLAGRIM'S BANNER", 30)[The unit carrying this standard gains the Mighty Blow (1) special rule when charging or counter-charging. In addition, enemy units cannot get the Outnumber bonus against them.]
 
-Medium armour. The wearer of this armour gains +1 Toughness.
+#magic-standard("BANNER OF THE VALKYRIE", 25, only: "Infantry", bound: (level: 3, cast: "9+"))[This item contains a *conveyance* spell that targets the unit carrying this standard. The unit may immediately make a Fly (10) move as if it were the Remaining Moves sub-phase.]
 
-#namecost("SHIELD OF SVALINN", "20 points")
+#magic-standard("SEA RAIDER'S CREST", 25, only: "Reavers")[The unit carrying this standard gains the the Fear special rule. If the unit charges an enemy unit into their flank or rear, it gains the Terror special rule against their target for the duration of the turn.]
 
-Shield. For each successful armour save or Parry save roll of a natural 6 that the bearer makes, all models attacking suffer \-1 To Hit until the end of the next turn. In addition, the bearer gains the Immunity (Flaming Attacks) special rule.
-
-#namecost("REAVER'S HELM", "15 points")
-
-Model on foot only. This armour gives the wearer a 6+ armour save and the Ambushers special rule. In addition, any enemy unit that gets destroyed by them in close combat or from pursuit is worth +100 Victory Points.
-
-#entry("TALISMANS")
-#namecost("THE GLEAMING TORC", "30 points")
-
-A model equipped with the Gleaming Torc adds +1 to their leadership. In addition, all enemy models in base contact with the wearer must pass a Leadership test at the start of each close combat phase. If failed, they will be unable to attack this turn.
-
-#namecost("TALISMAN OF THE CARRION", "")
-#namecost("CROW", "30 points")
-
-The bearer of the Talisman of the Carrion Crow has the Regeneration (5+) and Poisoned Attacks special rules.
-
-#namecost("TALISMAN OF THE SOARING", "")
-#namecost("EAGLE", "20 points")
-
-The bearer of the Talisman of the Soaring Eagle has the Magic Resistance (2) special rule. In addition, the bearer has a 5+ invulnerable save against Magical Attacks.
-
-#runin[IDUNN]'#runin[S APPLE 15 points] The bearer gains the Regeneration (4+) special rule. If owner rolls a 1 when making their Regeneration save, they lose this special rule for the remainder of the game.
-
-#entry("ARCANE ITEMS")
-#namecost("THE WEB OF WYRD", "25 points")
-
-Relic. The Wizard may re-roll any single D6 when casting or dispelling once per turn.
-
-#namecost("BONE OF ULLR", "10 points")
-
-Relic. At the start of each of your Magic phases, choose any of the eight Winds of Magic and roll 2D6; the result is the spell they receive and may use for the remainder of this Magic phase, even if this spell would normally be unavailable to them.
-
-#namecost("HENBANE POTION", "10 points")
-
-Charm. One use only. The Wizard may use this item at the start of any Magic phase. To do so, roll a D6; on a 2+, they gain D3 Power or Dispel dice. If a 1 is rolled, they lose one Wound with no saves allowed.
-
-#entry("ENCHANTED ITEMS")
-#namecost("GIRDLE OF MIGHT", "50 points")
-
-The Girdle of Might doubles the Strength characteristic of anyone wearing it.
-
-#namecost("THE HOLLERING HORN", "50 points")
-
-One use only. The Horn can be used at the start of any of your turns. When the Horn is sounded, all enemy units within 12" must take an immediate Panic test. After this, all friendly units with the Blood Rage special rule within 12" will move towards the nearest foe using the Random Movement (D6) rule.
-
-#namecost("HRUNGNIR'S HEART", "25 points")
-
-This item can be used at the start of each round of close combat. Take a Leadership test; if successful the bearer and all models in their unit gain +1 To Hit this turn. Alternatively, you can force one enemy unit in base contact to take a Leadership test; if failed that unit suffer \-1 To Hit this turn.
-
-#namecost("VEGVISIR", "25 points")
-
-The bearer and any unit they join may re-roll failed charge and pursuit distances.
-
-#namecost("VIAL OF TROLL BLOOD", "15 points")
-
-One use only. This item may be used at the start of any round of close combat. The bearer gains the Unbreakable special rule for the duration of the turn. If they are in a unit, the unit may still break and flee as normal, while the model remains in combat.
-
-#namecost("WOLF-TEETH AMULET", "5 points")
-
-The model gains the Devastating Charge special rule. However, they must always pursue a fleeing enemy.
-
-#entry("MAGIC STANDARDS")
-#namecost("RAVEN BANNER", "50 points")
-
-All friendly units within 12" of this standard gain the Immunity (Fear/Panic) special rule.
-
-#namecost("SKALLAGRIM'S BANNER", "30 points")
-
-The unit carrying this standard gains the Mighty Blow (1) special rule when charging or counter-charging. In addition, enemy units cannot get the Outnumber bonus against them.
-
-#namecost("BANNER OF THE VALKYRIE", "25 points")
-
-Infantry only. Bound Spell (Level 3, cast on 9+). This item contains a *conveyance* spell that targets the unit carrying this standard. The unit may immediately make a Fly (10) move as if it were the Remaining Moves sub-phase.
-
-#runin[SEA RAIDER]'#runin[S CREST 25 points] Reavers only. The unit carrying this standard gains the the Fear special rule. If the unit charges an enemy unit into their flank or rear, it gains the Terror special rule against their target for the duration of the turn.
-
-#namecost("BANNER OF THE BAYING HOUND", "15 points")
-
-The unit carrying this standard gains the Vanguard special rule.
+#magic-standard("BANNER OF THE BAYING HOUND", 15)[The unit carrying this standard gains the Vanguard special rule.]
+]
 
 = CHARACTERS
 

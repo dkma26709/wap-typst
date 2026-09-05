@@ -263,208 +263,120 @@ _Lava Storm_ is a *direct damage area* spell with a range of 12". Place D3 small
 _Flames of Azgorh_ is a *direct damage area* spell with a range of 12" that uses the large round template. All models touched by the template suffer a Strength 5 hit with the Flaming Attacks and the Multiple Wounds (D3) special rules.
 ]
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Chaos Dwarfs. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Chaos Dwarfs. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("VOLCANIC HAMMER", 45, type: "Great weapon")[All attacks made with this weapon have the Flaming Attacks special rule. In addition, the wielder may may exchange all of their Attacks to make a special attack. Roll To Hit against the highest enemy Weapon Skill in base contact. If this Attack hits, place the small template anywhere so that it is touching the wielder's base. Any models that lie underneath the template (friend or foe) suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule.]
 
-#entry("MAGIC WEAPONS")
-#namecost("VOLCANIC HAMMER", "45 points")
+#magic-weapon("DARK MACE OF DEATH", 40)[Close combat attacks made with this weapon have the Killing Blow special rule. In addition, once per game, at the start of the close combat round, the wielder can inflict an automatic Wound on every model in base contact with the Ignores Armour saves special rule.]
 
-Great weapon. All attacks made with this weapon have the Flaming Attacks special rule. In addition, the wielder may may exchange all of their Attacks to make a special attack. Roll To Hit against the highest enemy Weapon Skill in base contact. If this Attack hits, place the small template anywhere so that it is touching the wielder's base. Any models that lie underneath the template (friend or foe) suffer a single Strength 3 hit. The model under the template's central hole instead suffers a single Strength 9 hit with the Multiple Wounds (D3) special rule.
+#magic-weapon("LIFE BANE BLADE", 35)[The wielder gains the Multiple Wounds (D3) special rule. Whenever the wielder of this item causes one or more unsaved Wounds during a round of close combat, they regain 1 Wound lost earlier during the game.]
 
-#namecost("DARK MACE OF DEATH", "40 points")
-
-Close combat attacks made with this weapon have the Killing Blow special rule. In addition, once per game, at the start of the close combat round, the wielder can inflict an automatic Wound on every model in base contact with the Ignores Armour saves special rule.
-
-#namecost("LIFE BANE BLADE", "35 points")
-
-The wielder gains the Multiple Wounds (D3) special rule. Whenever the wielder of this item causes one or more unsaved Wounds during a round of close combat, they regain 1 Wound lost earlier during the game.
-
-#namecost("HASHUT'S BLADE OF GREED", "25 points")
-
-The wielder of this weapon gains a bonus for each different type of magic item in any enemy unit they are in base contact with. Additional magic items of the same type have no effect.
+#magic-weapon("HASHUT'S BLADE OF GREED", 25)[The wielder of this weapon gains a bonus for each different type of magic item in any enemy unit they are in base contact with. Additional magic items of the same type have no effect.
 
 #chart((("Item Type:", "Effect:"), ("Magic Weapon", "Parry (6+)"), ("Magic Armour", "Armour Piercing (1)"), ("Talisman", "+1 To Wound"), ("Arcane Item", "Magic Resistance (1)"), ("Enchanted Item", "+1 To Hit"), ("Magic Standard", "+1 Combat Resolution")))
 
 #runin[ZZHARG MADEYE]'#runin[S BLUNDERBUSS 25 points] Daemonsmith only. Blunderbuss. This weapon may be used in the Shooting phase like a Breath Weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "4", "Armour Piercing (1), Cumbersome"))
-#namecost("LASH OF SHURZZHAK", "20 points")
+]
 
-Instead of fighting normally, the wielder may make a special attack. If this attack hits, all models in one column in base contact with the wielder are automatically Hit.
+#magic-weapon("LASH OF SHURZZHAK", 20)[Instead of fighting normally, the wielder may make a special attack. If this attack hits, all models in one column in base contact with the wielder are automatically Hit.]
 
-#namecost("OBSIDIAN BLADE", "20 points")
+#magic-weapon("OBSIDIAN BLADE", 20)[The wielder gains the Ignores Armour Saves special rule.]
 
-The wielder gains the Ignores Armour Saves special rule.
+#magic-weapon("INFERNO GLAIVE OF HASHUT", 15, type: "Fireglaive")[Close combat attacks made with this weapon have the Armour Piercing (1) special rule. Missile attacks with this weapon have Strength 5.]
+]
 
-#namecost("INFERNO GLAIVE OF HASHUT", "15 points")
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF THE FORGE", 60, type: "Heavy armour")[The wearer gains a Magical Ward (5+) which may be re-rolled.]
 
-Fireglaive. Close combat attacks made with this weapon have the Armour Piercing (1) special rule. Missile attacks with this weapon have Strength 5.
+#magic-armour("ARMOUR OF BAZHERAK THE CRUEL", 50, type: "Heavy armour")[This armour gives the wearer +2 to their armour save and the Magic Resistance (2) special rule.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF THE FORGE", "60 points")
+#magic-armour("MAGMA ARMOUR", 50, type: "Heavy armour")[For each failed To Wound roll against the bearer in close combat, the Magma Armour inflicts a Strength 4 Hit with the Flaming Attacks special rule against the model that struck the blow.]
 
-Heavy armour. The wearer gains a Magical Ward (5+) which may be re-rolled.
+#magic-armour("THE MASK OF THE FURNACE", 45)[6+ armour save. The wearer gains the Fear, Immunity (Flaming Attacks) and Magical Ward (5+) special rules.]
 
-#namecost("ARMOUR OF BAZHERAK", "")
-#namecost("THE CRUEL", "50 points")
+#magic-armour("DAEMONBINDER ARMOUR", 35, only: "Daemonsmith", type: "Medium armour")[The wearer gains the Hellbound special rule.]
 
-Heavy armour. This armour gives the wearer +2 to their armour save and the Magic Resistance (2) special rule.
+#magic-armour("OBSIDIAN VAMBRACES", 25)[The wearer gains a 6+ armour save, +1 Strength and the Magic Resistance (1) special rule. However, if they roll two or more natural 1's when making a roll To Hit in close combat, the item can no longer be used for the remainder of the game.]
 
-#namecost("MAGMA ARMOUR", "50 points")
+#magic-armour("SHIELD OF CONTEMPT", 15, type: "Shield")[For each natural 6 rolled when making armour and Parry saves, the wearer causes an automatic Hit against the attacker with the same Strength and special rules as the attack.]
+]
 
-Heavy armour. For each failed To Wound roll against the bearer in close combat, the Magma Armour inflicts a Strength 4 Hit with the Flaming Attacks special rule against the model that struck the blow.
+#magic-item-section("talisman")[
+#talisman("INFERNAL CHARM", 40)[The bearer gains a Magical Ward (5+). In addition, once per game at the start of any of your turns, the full power of this item can be activated. When it does, the wearer ignores all damage from magic, shooting and close combat attacks for the duration of the turn.]
 
-#namecost("THE MASK OF THE FURNACE", "45 points")
+#talisman("TALISMAN OF OBSIDIAN", 35)[All Magic Items equipped by models in base contact with the bearer of this item lose their magical properties and counts as mundane version of their type.]
 
-6+ armour save. The wearer gains the Fear, Immunity (Flaming Attacks) and Magical Ward (5+) special rules.
+#talisman("HELLFORGED AMULET", 25)[The wearer gains a Magical Ward (6+). In addition, they may re-roll failed armour save rolls of 1.]
 
-#namecost("DAEMONBINDER ARMOUR", "35 points")
+#talisman("CROWN OF THE K'DAAI", 15)[The wearer gains the Blazing Body and Magical Ward (6+) special rules. However, from the second game turn onwards, at the start of each of your turns they must pass a Toughness test or suffer one Wound with no saves allowed.]
 
-Daemonsmith only. Medium armour. The wearer gains the Hellbound special rule.
+#talisman("GIFT OF HASHUT", 15, common: true)[The wearer gains the Magic Resistance (1) special rule, and any unit they are with gains a Magical Ward (4+) against non-physical Flaming Attacks.]
+]
 
-#namecost("OBSIDIAN VAMBRACES", "25 points")
+#magic-item-section("arcane")[
+#arcane-item("CHALICE OF BLOOD AND DARKNESS", 50, type: "Relic")[In the beginning of any Magic phase the bearer may reduce the number of dice held in both sides' dice pools by D3 each. Roll these dice separately, declaring before rolling which dice applies to which side. If one of more natural 1's are rolled then the bearer suffers a Wound which Ignores Armour saves. If one of more natural 6's are rolled the bearer may recover a Wound previously lost in the game.]
 
-The wearer gains a 6+ armour save, +1 Strength and the Magic Resistance (1) special rule. However, if they roll two or more natural 1's when making a roll To Hit in close combat, the item can no longer be used for the remainder of the game.
+#arcane-item("DWEOMER LEACH ORB", 40, type: "Relic")[Whenever the bearer of this item dispels an enemy spell, they add +1 Power Dice to their Power Pool in their next Magic phase, to a maximum of +3.]
 
-#namecost("SHIELD OF CONTEMPT", "15 points")
+#arcane-item("SPELL-WROUGHT SCEPTRE", 35, type: "Staff")[The bearer of this item may re-roll failed channelling results.]
 
-Shield. For each natural 6 rolled when making armour and Parry saves, the wearer causes an automatic Hit against the attacker with the same Strength and special rules as the attack.
+#arcane-item("VIAL OF LAMMASU BLOOD", 35, type: "Charm", one-use: true)[A Wizard may use this item instead of making a dispel attempt. If they do so, the spell is automatically dispelled with no Dispel roll required.]
 
-#entry("TALISMANS")
-#namecost("INFERNAL CHARM", "40 points")
+#arcane-item("SCROLL OF BINDING", 30, type: "Charm", one-use: true)[A Wizard may use this scroll when attempting to cast a spell. If they do so, they may add +1 Power Dice to every casting roll they attempt this Magic Phase.]
 
-The bearer gains a Magical Ward (5+). In addition, once per game at the start of any of your turns, the full power of this item can be activated. When it does, the wearer ignores all damage from magic, shooting and close combat attacks for the duration of the turn.
+#arcane-item("BLOOD OF HASHUT", 20, type: "Charm", one-use: true)[The Blood of Hashut can be used in close combat instead of attacking normally that turn. It targets a single model in base contact. The attack works on a 2+. If a 1 is rolled, the Blood of Hashut is wasted. If the attack is successful, then D6 automatic hits are inflicted on the target. The To Wound score of these hits is always equal to the unmodified close combat armour save of the target (excluding Natural Armour). For example, a model with a 3+ save is wounded on a 3+ and so on. Attacks from the Blood of Hashut have the Ignores Armour Saves, Flaming Attacks and Magical Attacks special rules.]
 
-#namecost("TALISMAN OF OBSIDIAN", "35 points")
+#arcane-item("SCROLL OF PETRIFICATION", 20, type: "Charm", one-use: true)[This item can be used at the start of any of your Magic phases. Once used, one friendly unit within 12" gains +1 Toughness for until the start of your next Magic phase.]
+]
 
-All Magic Items equipped by models in base contact with the bearer of this item lose their magical properties and counts as mundane version of their type.
+#magic-item-section("enchanted")[
+#enchanted-item("DAEMON FLASK OF ASHAK", 100, one-use: true)[This effect takes place at the start of the player's Movement phase before charges are declared. All enemy units within 18" suffer a Panic test. Buildings, Chariots and War Machines within this range suffer D6 automatic wounds.]
 
-#namecost("HELLFORGED AMULET", "25 points")
+#enchanted-item("MALIGNANT TOTEM", 45, bound: true)[This item contains the _Breath of Hatred_ spell from the Lore of Hashut. In addition, all enemy units in base contact with the bearer suffer \-1 to their Leadership.]
 
-The wearer gains a Magical Ward (6+). In addition, they may re-roll failed armour save rolls of 1.
+#enchanted-item("FURNACE BLAST GEM", 35, bound: true)[This item contains the _Hell Hammer_ spell from the Lore of Hashut.]
 
-#runin[CROWN OF THE K]'#runin[DAAI 15 points] The wearer gains the Blazing Body and Magical Ward (6+) special rules. However, from the second game turn onwards, at the start of each of your turns they must pass a Toughness test or suffer one Wound with no saves allowed.
+#enchanted-item("GAUNTLETS OF PUNISHMENT", 35, bound: (level: 3, cast: "9+"))[This item contains a *magic missile* with a range of 12" that causes D6 Hits Strength 5 Hits with the Ignores Armour Saves special rule.]
 
-#namecost("GIFT OF HASHUT*", "15 points")
+#enchanted-item("BLACK GEM OF GNAR", 25, one-use: true)[This item can be activated at the beginning of either player's Close Combat phase, after challenges are issued and accepted. The bearer and one model in base contact (bearer’s choice) may not attack or be attacked for the duration of that phase. Work out combat resolution as normal.]
 
-The wearer gains the Magic Resistance (1) special rule, and any unit they are with gains a Magical Ward (4+) against non-physical Flaming Attacks.
+#enchanted-item("BREATH OF HASHUT", 25, one-use: true)[This is a Breath Weapon Attack with Strength 4, Flaming Attacks and Magical Attacks special rules.]
 
-#entry("ARCANE ITEMS")
-#namecost("CHALICE OF BLOOD", "")
-#namecost("AND DARKNESS", "50 points")
+#enchanted-item("CRUCIBLE OF SPITE", 25, one-use: true)[This item can be used at the start of any round of Close Combat. The bearer gains +D3 Weapon Skill, Strength, Initiative and Attacks for the duration of this round.]
 
-Relic. In the beginning of any Magic phase the bearer may reduce the number of dice held in both sides' dice pools by D3 each. Roll these dice separately, declaring before rolling which dice applies to which side. If one of more natural 1's are rolled then the bearer suffers a Wound which Ignores Armour saves. If one of more natural 6's are rolled the bearer may recover a Wound previously lost in the game.
+#enchanted-item("POSSESSED AMULET", 25)[In Close Combat, the bearer Wounds on a 2+ regardless of the target's Toughness. However, if a '1' is rolled on the To Wound dice, a further wound is inflicted on the bearer instead, with no armours saves allowed.]
 
-#namecost("DWEOMER LEACH ORB", "40 points")
+#enchanted-item("GAUNTLETS OF GAZRAKH", 20)[The wearer gains +1 Strength. If the wearer rolls a 1 to hit, this blow strikes a random friendly model in base contact instead. If there are no friendly models in base contact, the Hit is resolved against the character itself.]
 
-Relic. Whenever the bearer of this item dispels an enemy spell, they add +1 Power Dice to their Power Pool in their next Magic phase, to a maximum of +3.
+#enchanted-item("VISAGE OF THE GREAT BULL", 20)[The bearer of this item and any unit that they join gain +D3" to their charge distance.]
 
-#namecost("SPELL-WROUGHT SCEPTRE", "35 points")
+#enchanted-item("DAEMONIC FAMILIAR", 15, common: true)[Enemy models suffer a \-1 penalty to their armour saves and Magical Ward saves against Wounds caused by the bearer of this item in close combat.]
+]
 
-Staff. The bearer of this item may re-roll failed channelling results.
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF ZHARR", 75)[The unit carrying this standard gains +1 to their armour saves and the Unbreakable special rule.]
 
-#namecost("VIAL OF LAMMASU BLOOD", "35 points")
+#magic-standard("EYE OF HASHUT", 50)[The unit carrying this standard gains the Terror and Armour Piercing (1) special rule.]
 
-Charm. One use only. A Wizard may use this item instead of making a dispel attempt. If they do so, the spell is automatically dispelled with no Dispel roll required.
+#magic-standard("HELLBOUND STANDARD", 50)[The unit carrying this standard gains the Hellbound special rule.]
 
-#namecost("SCROLL OF BINDING", "30 points")
+#magic-standard("THE LAMMASU'S BEARD", 50)[All friendly units within 6" of this standard gain a Magical Ward (6+) against missile attacks and the Magic Resistance (1) special rule.]
 
-Charm. One use only. A Wizard may use this scroll when attempting to cast a spell. If they do so, they may add +1 Power Dice to every casting roll they attempt this Magic Phase.
+#magic-standard("OATH OF CONTEMPT", 35)[All close combat attacks against models in a unit carrying this Standard suffer \-1 To Wound in the first round of close combat.]
 
-#namecost("BLOOD OF HASHUT", "20 points")
+#magic-standard("BANNER OF SLAVERY", 30)[All friendly models with the Animosity rule (as well as Spear Chukkas) within 12" gain the Immunity (Panic) special rule.]
 
-Charm. One use only. The Blood of Hashut can be used in close combat instead of attacking normally that turn. It targets a single model in base contact. The attack works on a 2+. If a 1 is rolled, the Blood of Hashut is wasted. If the attack is successful, then D6 automatic hits are inflicted on the target. The To Wound score of these hits is always equal to the unmodified close combat armour save of the target (excluding Natural Armour). For example, a model with a 3+ save is wounded on a 3+ and so on. Attacks from the Blood of Hashut have the Ignores Armour Saves, Flaming Attacks and Magical Attacks special rules.
+#magic-standard("ASHEN BANNER", 25)[Any enemy model that targets a unit carrying the Ashen Banner during the Shooting phase suffers an additional \-1 To Hit modifier.]
 
-#namecost("SCROLL OF PETRIFICATION", "20 points")
+#magic-standard("BANNER OF THE KHANATE", 25, only: "Hobgoblins")[The unit carrying this standard gains the Frenzy special rule.]
 
-Charm. One use only. This item can be used at the start of any of your Magic phases. Once used, one friendly unit within 12" gains +1 Toughness for until the start of your next Magic phase.
+#magic-standard("OVERSEER'S SIGIL", 25)[All friendly Orc and Goblin units within 12" of this standard treats it as having the Inspiring Presence (12) special rule.]
 
-#entry("ENCHANTED ITEMS")
-#namecost("DAEMON FLASK OF ASHAK", "100 points")
-
-One use only. This effect takes place at the start of the player's Movement phase before charges are declared. All enemy units within 18" suffer a Panic test. Buildings, Chariots and War Machines within this range suffer D6 automatic wounds.
-
-#namecost("MALIGNANT TOTEM", "45 points")
-
-Bound Spell. This item contains the _Breath of Hatred_ spell from the Lore of Hashut. In addition, all enemy units in base contact with the bearer suffer \-1 to their Leadership.
-
-#namecost("FURNACE BLAST GEM", "35 points")
-
-Bound Spell. This item contains the _Hell Hammer_ spell from the Lore of Hashut.
-
-#namecost("GAUNTLETS OF PUNISHMENT", "35 points")
-
-Bound Spell (Level 3, cast on 9+). This item contains a *magic missile* with a range of 12" that causes D6 Hits Strength 5 Hits with the Ignores Armour Saves special rule.
-
-#namecost("BLACK GEM OF GNAR", "25 points")
-
-One use only. This item can be activated at the beginning of either player's Close Combat phase, after challenges are issued and accepted. The bearer and one model in base contact (bearer’s choice) may not attack or be attacked for the duration of that phase. Work out combat resolution as normal.
-
-#namecost("BREATH OF HASHUT", "25 points")
-
-One use only. This is a Breath Weapon Attack with Strength 4, Flaming Attacks and Magical Attacks special rules.
-
-#namecost("CRUCIBLE OF SPITE", "25 points")
-
-One use only. This item can be used at the start of any round of Close Combat. The bearer gains +D3 Weapon Skill, Strength, Initiative and Attacks for the duration of this round.
-
-#namecost("POSSESSED AMULET", "25 points")
-
-In Close Combat, the bearer Wounds on a 2+ regardless of the target's Toughness. However, if a '1' is rolled on the To Wound dice, a further wound is inflicted on the bearer instead, with no armours saves allowed.
-
-#namecost("GAUNTLETS OF GAZRAKH", "20 points")
-
-The wearer gains +1 Strength. If the wearer rolls a 1 to hit, this blow strikes a random friendly model in base contact instead. If there are no friendly models in base contact, the Hit is resolved against the character itself.
-
-#namecost("VISAGE OF THE GREAT BULL", "20 points")
-
-The bearer of this item and any unit that they join gain +D3" to their charge distance.
-
-#namecost("DAEMONIC FAMILIAR*", "15 points")
-
-Enemy models suffer a \-1 penalty to their armour saves and Magical Ward saves against Wounds caused by the bearer of this item in close combat.
-
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF ZHARR", "75 points")
-
-The unit carrying this standard gains +1 to their armour saves and the Unbreakable special rule.
-
-#namecost("EYE OF HASHUT", "50 points")
-
-The unit carrying this standard gains the Terror and Armour Piercing (1) special rule.
-
-#namecost("HELLBOUND STANDARD", "50 points")
-
-The unit carrying this standard gains the Hellbound special rule.
-
-#namecost("THE LAMMASU'S BEARD", "50 points")
-
-All friendly units within 6" of this standard gain a Magical Ward (6+) against missile attacks and the Magic Resistance (1) special rule.
-
-#namecost("OATH OF CONTEMPT", "35 points")
-
-All close combat attacks against models in a unit carrying this Standard suffer \-1 To Wound in the first round of close combat.
-
-#namecost("BANNER OF SLAVERY", "30 points")
-
-All friendly models with the Animosity rule (as well as Spear Chukkas) within 12" gain the Immunity (Panic) special rule.
-
-#namecost("ASHEN BANNER", "25 points")
-
-Any enemy model that targets a unit carrying the Ashen Banner during the Shooting phase suffers an additional \-1 To Hit modifier.
-
-#namecost("BANNER OF THE KHANATE", "25 points")
-
-Hobgoblins only. The unit carrying this standard gains the Frenzy special rule.
-
-#namecost("OVERSEER'S SIGIL", "25 points")
-
-All friendly Orc and Goblin units within 12" of this standard treats it as having the Inspiring Presence (12) special rule.
-
-#namecost("SHROUD OF THE ANCESTOR", "10 points")
-
-The unit carrying this standard gains the Hatred (Dwarfs) special rule.
+#magic-standard("SHROUD OF THE ANCESTOR", 10)[The unit carrying this standard gains the Hatred (Dwarfs) special rule.]
+]
 
 = CHARACTERS
 
