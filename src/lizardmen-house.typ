@@ -63,80 +63,36 @@ In addition, a unit that contains one or more models with this special rule that
 
 #note[_A model with war gauntlets gains +1 Attack._]
 
-= THE LORE OF GEOMANCY
+#lore("THE LORE OF GEOMANCY")[
 
-#columns(2)[
-#namecost("EARTH TREMORS", "")
-#namecost("Lore Attribute", "")
+#spell("EARTH TREMORS", "Lore Attribute")[Every time a spell from the Lore of Geomancy is successfully cast on an enemy unit or a unit suffers one or more unsaved Wounds from it, that unit suffers \-1 to its Movement value until the start of the caster's next Magic phase. This has no effect on models with the Fly or Strider special rules.]
 
-Every time a spell from the Lore of Geomancy is successfully cast on an enemy unit or a unit suffers one or more unsaved Wounds from it, that unit suffers \-1 to its Movement value until the start of the caster's next Magic phase. This has no effect on models with the Fly or Strider special rules.
+#spell("EARTH LINE", "Signature Spell", cast: "8+")[_Earth Line_ is a direct damage area spell that uses the line template. Place it from one of the battlefield corners directly to the caster. Each model (friend and foe) in the way must pass a Toughness test or suffer a Wound with the Ignores Armour Saves special rule.]
 
-#namecost("EARTH LINE", "")
-#namecost("Signature Spell Cast on 8+", "")
+#spell("EMPOWERED OBSINITE", 1, cast: "8+")[_Empowered Obsinite_ is an *augment* spell with a range of 18". The target unit gains the Armour Piercing (2) special rule until the start of the caster's next Magic phase.]
 
-_Earth Line_ is a direct damage area spell that uses the line template. Place it from one of the battlefield corners directly to the caster. Each model (friend and foe) in the way must pass a Toughness test or suffer a Wound with the Ignores Armour Saves special rule.
+#spell("TECTONIC SHIFT", 1, cast: "8+")[_Tectonic Shift_ is a special type of spell. Choose one piece of terrain within 24". You may move the target up to 2D3" in any direction while still retaining its original facing, stopping within 1" of any other terrain. Unless it is in combat, any unit in that terrain piece is moved with it, stopping within 1" of other units. In addition, the unit is subject to Earth Tremors.]
 
-#namecost("EMPOWERED OBSINITE", "")
-#namecost("Level 1 Cast on 8+", "")
+#spell("EARTHEN RAMPARTS", 1, cast: "9+")[Remains in play. _Earthen Ramparts_ is an *augment* spell with a range of 18". While the spell is in effect, the target counts as being behind a wall (a defended obstacle that gives hard cover and a \-1 To Hit modifier to charging models in base contact with them) on all sides. The spell is immediately dispelled if the unit moves for any reason.]
 
-_Empowered Obsinite_ is an *augment* spell with a range of 18". The target unit gains the Armour Piercing (2) special rule until the start of the caster's next Magic phase.
+#spell("ENTOMB", 2, cast: "9+")[Remains in play. _Entomb_ is a *hex* with a range of 24" that can be cast on an unengaged unit. While the spell is in effect, the target cannot move, use missile attacks or be damaged in any way (except by the Lore of Geomancy) and is treated as impassable terrain for all purposes.]
 
-#namecost("TECTONIC SHIFT", "")
-#namecost("Level 1 Cast on 8+", "")
+#spell("UPROOT THE MOUNTAINS", 2, cast: "9+")[_Uproot the Mountains_ is a *summoning* spell with a range of 18" that summons a hill with one level, no more than 6" in diameter. Alternatively, the caster can target an existing hill within 18" and remove it from play. Any unit on or under the hill when the spell is cast are subject to Earth Tremors.]
 
-_Tectonic Shift_ is a special type of spell. Choose one piece of terrain within 24". You may move the target up to 2D3" in any direction while still retaining its original facing, stopping within 1" of any other terrain. Unless it is in combat, any unit in that terrain piece is moved with it, stopping within 1" of other units. In addition, the unit is subject to Earth Tremors.
+#spell("CAVERNOUS CREVASSE", 2, cast: "10+")[_Cavernous Crevasse_ is a *direct damage area* spell that uses the line template. Place it 12" in length, with its starting point anywhere within 18" from the caster. Each model in the way must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
 
-#namecost("EARTHEN RAMPARTS", "")
-#namecost("Level 1 Cast on 9+", "")
+#spell("SEISMIC UPHEAVAL", 3, cast: "10+")[_Seismic Upheaval_ is a *hex* with a range of 24". All models in the unit must take a Dangerous Terrain test and suffer a \-1 To Hit penalty in close combat and with missile weapons until the start of the caster's next Magic phase.]
 
-Remains in play. _Earthen Ramparts_ is an *augment* spell with a range of 18". While the spell is in effect, the target counts as being behind a wall (a defended obstacle that gives hard cover and a \-1 To Hit modifier to charging models in base contact with them) on all sides. The spell is immediately dispelled if the unit moves for any reason.
+#spell("TELEPATHIC SUMMONS", 3, cast: "10+")[_Telepathic Summons_ is a *conveyance* spell that targets a friendly unit within 24". The target is immediately picked up and may be moved to any position on the battlefield within 12" of the caster, just like a summoning spell.]
 
-#namecost("ENTOMB", "")
-#namecost("Level 2 Cast on 9+", "")
+#spell("ASSAULT OF STONE", 3, cast: "12+")[_Assault of Stone_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models under the template suffer a Strength 5 hit.]
 
-Remains in play. _Entomb_ is a *hex* with a range of 24" that can be cast on an unengaged unit. While the spell is in effect, the target cannot move, use missile attacks or be damaged in any way (except by the Lore of Geomancy) and is treated as impassable terrain for all purposes.
+#spell("GRAVITIC REDIRECTION", 4, cast: "12+")[_Gravitic Redirection_ is a *direct damage* spell with a range of 12". Roll a D6 for each model in the target unit; for each result of 4+, they suffer a Wound which Ignores Armour Saves.]
 
-#namecost("UPROOT THE MOUNTAINS", "")
-#namecost("Level 2 Cast on 9+", "")
+#spell("RUINATION OF CITIES", 4, cast: "13+")[_Ruination of Cities_ is a *direct damage* spell with a range of 18". The target unit suffers 2D6 Strength 5 hits. A unit that suffers any wounds from this spell will have all its movement halved (rounding up) in its next Movement phase. Units inside a building take 3D6 Strength 5 hits.]
 
-_Uproot the Mountains_ is a *summoning* spell with a range of 18" that summons a hill with one level, no more than 6" in diameter. Alternatively, the caster can target an existing hill within 18" and remove it from play. Any unit on or under the hill when the spell is cast are subject to Earth Tremors.
-
-#namecost("CAVERNOUS CREVASSE", "")
-#namecost("Level 2 Cast on 10+", "")
-
-_Cavernous Crevasse_ is a *direct damage area* spell that uses the line template. Place it 12" in length, with its starting point anywhere within 18" from the caster. Each model in the way must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.
-
-#namecost("SEISMIC UPHEAVAL", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Seismic Upheaval_ is a *hex* with a range of 24". All models in the unit must take a Dangerous Terrain test and suffer a \-1 To Hit penalty in close combat and with missile weapons until the start of the caster's next Magic phase.
-
-#namecost("TELEPATHIC SUMMONS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Telepathic Summons_ is a *conveyance* spell that targets a friendly unit within 24". The target is immediately picked up and may be moved to any position on the battlefield within 12" of the caster, just like a summoning spell.
-
-#namecost("ASSAULT OF STONE", "")
-#namecost("Level 3 Cast on 12+", "")
-
-_Assault of Stone_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models under the template suffer a Strength 5 hit.
-
-#namecost("GRAVITIC REDIRECTION", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Gravitic Redirection_ is a *direct damage* spell with a range of 12". Roll a D6 for each model in the target unit; for each result of 4+, they suffer a Wound which Ignores Armour Saves.
-
-#namecost("RUINATION OF CITIES", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Ruination of Cities_ is a *direct damage* spell with a range of 18". The target unit suffers 2D6 Strength 5 hits. A unit that suffers any wounds from this spell will have all its movement halved (rounding up) in its next Movement phase. Units inside a building take 3D6 Strength 5 hits.
-
-#namecost("THE GREAT LEVELLER", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_The Great Leveller_ is a *direct damage aura* spell with a range of 12". All units (friend and foe, except the caster) within range (even if they are engaged in close combat) suffer 3D6 Strength 5 Hits.
+#spell("THE GREAT LEVELLER", 4, cast: "15+")[_The Great Leveller_ is a *direct damage aura* spell with a range of 12". All units (friend and foe, except the caster) within range (even if they are engaged in close combat) suffer 3D6 Strength 5 Hits.]
 ]
-
 = BLESSED SPAWNINGS
 
 *Characters and units that can take Blessed Spawnings are detailed in the army list. The cost below only applies to characters. Lords may take up to 3 Blessed Spawnings. Heroes, Core and Special units may take up to 2 Sacred Spawnings. Core units that take more than one Blessed Spawning count as Special units, and Special units counts as Rare units.*
@@ -1304,10 +1260,7 @@ spell:
 
 lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately remember it again and, if applicable, the Wizard that swapped or stole it will immediately forget it.
 
-#namecost("THE DELIVERANCE OF ITZA", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_The Deliverance of Itza_ is a *direct damage* spell that targets all enemy units within 12" of the caster's front arc. Each target suffers 2D6 Strength 4 hits. If a target has the Daemonic, Undead or Vampiric special rules, it suffers 3D6 hits instead. Lord Kroak can choose to extend the range of this spell to 18"; if he does so, the casting value is increased to 18+. Alternatively, Lord Kroak can choose to extend the range of this spell to 24", in which case the casting value is increased to 24+.
+#spell("THE DELIVERANCE OF ITZA", 4, cast: "12+")[_The Deliverance of Itza_ is a *direct damage* spell that targets all enemy units within 12" of the caster's front arc. Each target suffers 2D6 Strength 4 hits. If a target has the Daemonic, Undead or Vampiric special rules, it suffers 3D6 hits instead. Lord Kroak can choose to extend the range of this spell to 18"; if he does so, the casting value is increased to 18+. Alternatively, Lord Kroak can choose to extend the range of this spell to 24", in which case the casting value is increased to 24+.]
 
 #field("MAGIC ITEMS", "")
 

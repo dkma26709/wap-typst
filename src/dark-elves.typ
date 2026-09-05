@@ -84,81 +84,36 @@ Repeater handbows have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("8/12\"", "2", "Multiple Shots (3), Quick Shot, Rapid Fire"))
 
-= THE LORE OF DARK MAGIC
+#lore("THE LORE OF DARK MAGIC")[
 
-#columns(2)[
-#namecost("SPITEFUL CONJURATION", "")
-#namecost("Lore Attribute", "")
+#spell("SPITEFUL CONJURATION", "Lore Attribute")[When a Wizard successfully casts a *hex*, *magic missile* or *direct damage* spell from this lore, and the casting roll contains any double, the spell's target unit suffers 2D6 Strength 2 hits after the spell has been resolved. If the casting roll contains any treble, the spell's target unit instead suffers 3D6 hits instead.]
 
-When a Wizard successfully casts a *hex*, *magic missile* or *direct damage* spell from this lore, and the casting roll contains any double, the spell's target unit suffers 2D6 Strength 2 hits after the spell has been resolved. If the casting roll contains any treble, the spell's target unit instead suffers 3D6 hits instead.
+#spell("DOOMBOLT OF KHARAIDON", "Signature Spell", cast: "6+")[_Doombolt of Kharaidon_ is a *magic missile* with a range of 18" that causes D6 Strength 5 hits.]
 
-#namecost("DOOMBOLT OF KHARAIDON", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("DEATH SPASM", 1, cast: "5+")[_Death Spasm_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target must take D3 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves. In addition, all models in base contact with the target suffer a Hit at the target's base Strength.]
 
-_Doombolt of Kharaidon_ is a *magic missile* with a range of 18" that causes D6 Strength 5 hits.
+#spell("NAGAELYTHE THE CHILLWIND", 1, cast: "5+")[_Nagaelythe the Chillwind_ is a *magic missile* with a range of 24" that causes 2D6 Strength 2 hits. If the target suffers any unsaved Wounds, all models in the unit suffer a \-1 penalty to their Ballistic Skill characteristic until the start of the caster's next Magic phase.]
 
-#namecost("DEATH SPASM", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("SHADOW DAGGERS", 1, cast: "5+")[_Shadow Daggers_ is a *magic missile* with a range of 12" that causes D6 Strength 3 Hits with the Armour Piercing (1) special rule on all enemy units in the caster's front arc.]
 
-_Death Spasm_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target must take D3 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves. In addition, all models in base contact with the target suffer a Hit at the target's base Strength.
+#spell("SAP STRENGTH", 2, cast: "6+")[_Sap Strength_ is a *hex* spell with a range of 24". All models in the target unit suffer \-1 to their Strength (to a minimum of 1) until the start of the caster's next Magic phase.]
 
-#namecost("NAGAELYTHE THE CHILLWIND", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("BLADEWIND", 2, cast: "7+")[_Bladewind_ is a *direct damage area* spell with a range of 18" that uses the large round template. All models hit by the template must pass a Weapon Skill test or suffer a Strength 4 hit.]
 
-_Nagaelythe the Chillwind_ is a *magic missile* with a range of 24" that causes 2D6 Strength 2 hits. If the target suffers any unsaved Wounds, all models in the unit suffer a \-1 penalty to their Ballistic Skill characteristic until the start of the caster's next Magic phase.
+#spell("POWER OF DARKNESS", 2, cast: "8+")[_Power of Darkness_ is an *augment* spell with a range of 18". All models in the target unit gain +1 Strength until the start of the caster's next Magic phase. In addition, add D3 power dice to your power pool. If a natural 6 is rolled when generating these power dice, the caster suffers a Wound which Ignores Armour saves.]
 
-#namecost("SHADOW DAGGERS", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("TENEBRAEL BLADES", 3, cast: "8+")[_Tenebrael Blades_ is an *augment* spell with a range of 18". The target gains the Armour Piercing (2) and Magical Attacks special rule until the start of the caster's next Magic phase.]
 
-_Shadow Daggers_ is a *magic missile* with a range of 12" that causes D6 Strength 3 Hits with the Armour Piercing (1) special rule on all enemy units in the caster's front arc.
+#spell("CHROESH – WORD OF PAIN", 3, cast: "9+")[_Chroesh – Word of Pain_ is a *hex* spell with a range of 24". The target unit gains the Always Strikes Last special rule until the start of the caster's next Magic phase.]
 
-#namecost("SAP STRENGTH", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("SHROUD OF DESPAIR", 3, cast: "10+")[Remains in play. _Shroud of Despair_ is a *hex aura* with a range of 12". While the spell is in effect, the affected units cannot benefit from the Hold Your Ground or Inspiring Presence special rules. In addition, whenever an affected unit fails a Break, Panic or Terror test, all target units suffer \-1 to their Leadership (this effect is cumulative).]
 
-_Sap Strength_ is a *hex* spell with a range of 24". All models in the target unit suffer \-1 to their Strength (to a minimum of 1) until the start of the caster's next Magic phase.
+#spell("OBLIVION", 4, cast: "12+")[_Oblivion_ is a *direct damage aura* spell with a range of 6". Each model (friend and foe, except the caster) within range (even if they are engaged in close combat) suffers a Strength 5 Hit.]
 
-#namecost("BLADEWIND", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("ANCHAN-ROGAR THE SOUL STEALER", 4, cast: "14+")[_Anchan-Rogar the Soul Stealer_ is a *direct damage* spell with a range of 24". All models in the unit suffer a Wound on the roll of a 5+ which Ignores Armour Saves. Roll a D6 for each unsaved Wound inflicted by this spell_._ For each roll of 5+, the caster immediately gains a single Wound (to a maximum of 10).]
 
-_Bladewind_ is a *direct damage area* spell with a range of 18" that uses the large round template. All models hit by the template must pass a Weapon Skill test or suffer a Strength 4 hit.
-
-#namecost("POWER OF DARKNESS", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Power of Darkness_ is an *augment* spell with a range of 18". All models in the target unit gain +1 Strength until the start of the caster's next Magic phase. In addition, add D3 power dice to your power pool. If a natural 6 is rolled when generating these power dice, the caster suffers a Wound which Ignores Armour saves.
-
-#namecost("TENEBRAEL BLADES", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Tenebrael Blades_ is an *augment* spell with a range of 18". The target gains the Armour Piercing (2) and Magical Attacks special rule until the start of the caster's next Magic phase.
-
-#runin[CHROESH] – #runin[WORD OF PAIN]
-
-#namecost("Level 3 Cast on 9+", "")
-
-_Chroesh – Word of Pain_ is a *hex* spell with a range of 24". The target unit gains the Always Strikes Last special rule until the start of the caster's next Magic phase.
-
-#namecost("SHROUD OF DESPAIR", "")
-#namecost("Level 3 Cast on 10+", "")
-
-Remains in play. _Shroud of Despair_ is a *hex aura* with a range of 12". While the spell is in effect, the affected units cannot benefit from the Hold Your Ground or Inspiring Presence special rules. In addition, whenever an affected unit fails a Break, Panic or Terror test, all target units suffer \-1 to their Leadership (this effect is cumulative).
-
-#namecost("OBLIVION", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Oblivion_ is a *direct damage aura* spell with a range of 6". Each model (friend and foe, except the caster) within range (even if they are engaged in close combat) suffers a Strength 5 Hit.
-
-#namecost("ANCHAN-ROGAR THE SOUL STEALER", "")
-#namecost("Level 4 Cast on 14+", "")
-
-_Anchan-Rogar the Soul Stealer_ is a *direct damage* spell with a range of 24". All models in the unit suffer a Wound on the roll of a 5+ which Ignores Armour Saves. Roll a D6 for each unsaved Wound inflicted by this spell_._ For each roll of 5+, the caster immediately gains a single Wound (to a maximum of 10).
-
-#namecost("ARNZIPAL'S BLACK HORROR", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Arnzipal's Black Horror_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must pass a Strength test per Wound on their profile or suffer a Wound which Ignores Armour Saves and Regeneration.
+#spell("ARNZIPAL'S BLACK HORROR", 4, cast: "15+")[Remains in play. _Arnzipal's Black Horror_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must pass a Strength test per Wound on their profile or suffer a Wound which Ignores Armour Saves and Regeneration.]
 ]
-
 = GIFTS OF KHAINE
 
 *Characters may choose Gifts of Khaine as detailed in the army list. A model may not have multiples of the same upgrade, but an upgrade can be taken by more than one model in the army.*

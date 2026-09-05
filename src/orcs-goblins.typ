@@ -158,77 +158,35 @@ with no saves allowed. In addition, D3 dice
 are lost from the power pool.")))
 ]
 
-= LORE OF DA BIG WAAAGH!
+#lore("LORE OF DA BIG WAAAGH!")[
 
-#columns(2)[
-#namecost("POWER OF DA WAAAGH!", "")
-#namecost("Lore Attribute", "")
+#spell("POWER OF DA WAAAGH!", "Lore Attribute")[A Wizard using this lore gains +1 to cast spells for each friendly Orc unit within 24" that is in close combat and has a Unit Strength of 10 of more. Conversely, a Wizard using this lore suffers \-1 to cast spells for each friendly Orc unit within 24" that is fleeing and has a Unit Strength of 10 or more.]
 
-A Wizard using this lore gains +1 to cast spells for each friendly Orc unit within 24" that is in close combat and has a Unit Strength of 10 of more. Conversely, a Wizard using this lore suffers \-1 to cast spells for each friendly Orc unit within 24" that is fleeing and has a Unit Strength of 10 or more.
+#spell("WRATH OF GORK", "Signature Spell", cast: "5+")[_Wrath of Gork_ is a *magic missile* with a range of 24" that inflicts D3+1 Strength 4 hits for every friendly unit of 10 or more Orc models within 6" of the caster.]
 
-#namecost("WRATH OF GORK", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("BASH 'EM LADZ", 1, cast: "6+")[_Bash 'em Ladz_ is an *augment* spell with a range of 18". The target unit may re-roll To Hit rolls in close combat until the start of the caster's next Magic phase.]
 
-_Wrath of Gork_ is a *magic missile* with a range of 24" that inflicts D3+1 Strength 4 hits for every friendly unit of 10 or more Orc models within 6" of the caster.
+#spell("FISTS OF GORK", 1, cast: "6+")[Remains in play. _Fists of Gork_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard gains +2 Strength and +3 Attacks.]
 
-#namecost("BASH 'EM LADZ", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("'ARD AS NAILS", 1, cast: "7+")[_'Ard as Nails_ is an *augment* spell with a range of 18". All successful To Wound rolls against the target must be re-rolled until the start of the caster's next Magic phase.]
 
-_Bash 'em Ladz_ is an *augment* spell with a range of 18". The target unit may re-roll To Hit rolls in close combat until the start of the caster's next Magic phase.
+#spell("BIG GREEN CHOPPA", 2, cast: "7+")[_Big Green Choppa_ is an *augment* spell with a range of 18". The target unit gains +1 Strength until the start of the caster's next Magic phase.]
 
-#namecost("FISTS OF GORK", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("'ERE WE GO!", 2, cast: "7+")[_'Ere We Go!_ is a *conveyance aura* spell with a range of 12" that targets Orc units. The targets add +D6" to their charge distance until the start of the caster's next Magic phase.]
 
-Remains in play. _Fists of Gork_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard gains +2 Strength and +3 Attacks.
+#spell("GREEN PUKE", 2, cast: "7+")[_Green Puke_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models hit suffer a Strength 3 hit with the Armour Piercing (2) special rule.]
 
-#namecost("'ARD AS NAILS", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("GAZE OF MORK", 3, cast: "8+")[_Gaze of Mork_ is a *direct damage area* spell that uses the line template. Place it 30" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 5 hit.]
 
-_'Ard as Nails_ is an *augment* spell with a range of 18". All successful To Wound rolls against the target must be re-rolled until the start of the caster's next Magic phase.
+#spell("'EADBUTT", 3, cast: "9+")[_'Eadbutt_ is a *direct damage* spell with a range of 12". Choose a single enemy model, even a character in a unit ("Look Out, Sir!" cannot be used). The target suffers a Strength 4 hit with the Ignores Armour Saves and Multiple Wounds (D3) special rules.]
 
-#namecost("BIG GREEN CHOPPA", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("RAISE GREAT IDOL", 3, cast: "10+")[_Raise Great Idol_ is *summoning* spell with a range of 18". This spell summons an Idol of Gork (or possibly Mork). Units that start the turn within 6" of the Idol can re-roll failed charge distance rolls. In addition, friendly units of Orcs within 6" may reroll failed To Hit rolls.]
 
-_Big Green Choppa_ is an *augment* spell with a range of 18". The target unit gains +1 Strength until the start of the caster's next Magic phase.
+#spell("WAAAGH!", 4, cast: "13+")[_WAAAGH!_ is a *conveyance* spell that targets all Orc units within 12". The target units will immediately make a move using the Random Movement (2D6) special rule towards the nearest enemy unit within each unit's Line of Sight. If no enemy units are within Line of Sight, they will move directly forward instead.]
 
-#namecost("'ERE WE GO!", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("WALLOPIN' KRUNCH", 4, cast: "14+")[_Wallopin' Krunch_ is a *direct damage area* spell with a range of 18" that uses the small round template. All models hit by the template suffer a Strength 6 hit with the Multiple Wounds (D3) special rule. In addition, all units within 3" of the template suffer D6 Strength 3 hits.]
 
-_'Ere We Go!_ is a *conveyance aura* spell with a range of 12" that targets Orc units. The targets add +D6" to their charge distance until the start of the caster's next Magic phase.
-
-#namecost("GREEN PUKE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Green Puke_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models hit suffer a Strength 3 hit with the Armour Piercing (2) special rule.
-
-#namecost("GAZE OF MORK", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Gaze of Mork_ is a *direct damage area* spell that uses the line template. Place it 30" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 5 hit.
-
-#namecost("'EADBUTT", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_'Eadbutt_ is a *direct damage* spell with a range of 12". Choose a single enemy model, even a character in a unit ("Look Out, Sir!" cannot be used). The target suffers a Strength 4 hit with the Ignores Armour Saves and Multiple Wounds (D3) special rules.
-
-#namecost("RAISE GREAT IDOL", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Raise Great Idol_ is *summoning* spell with a range of 18". This spell summons an Idol of Gork (or possibly Mork). Units that start the turn within 6" of the Idol can re-roll failed charge distance rolls. In addition, friendly units of Orcs within 6" may reroll failed To Hit rolls.
-
-#namecost("WAAAGH!", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_WAAAGH!_ is a *conveyance* spell that targets all Orc units within 12". The target units will immediately make a move using the Random Movement (2D6) special rule towards the nearest enemy unit within each unit's Line of Sight. If no enemy units are within Line of Sight, they will move directly forward instead.
-
-#namecost("WALLOPIN' KRUNCH", "")
-#namecost("Level 4 Cast on 14+", "")
-
-_Wallopin' Krunch_ is a *direct damage area* spell with a range of 18" that uses the small round template. All models hit by the template suffer a Strength 6 hit with the Multiple Wounds (D3) special rule. In addition, all units within 3" of the template suffer D6 Strength 3 hits.
-
-#namecost("FOOT OF GORK", "")
-#namecost("Level 4 Cast on 15+", "")
-
+#spell("FOOT OF GORK", 4, cast: "15+")[
 _Foot of Gork_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models hit by the template suffer a Strength 5 hit with the Multiple Wounds (D3) special rule. After resolving the effects of the spell, roll a D6 and consult the following table:
 
 #chart((("D6", "Result"), ("1", "Your opponent places the template anywhere
@@ -237,276 +195,123 @@ spell again. The spell then ends."), ("2-3", "The spell ends without further eff
 the spell again. After resolving the effects of
 this stomp, roll again on this table.")))
 ]
-
-= LORE OF DA SAVAGE WAAAGH!
-
-#namecost("POWER OF DA WAAAGH!", "")
-#namecost("Lore Attribute", "")
-
-A Wizard using this lore gains +1 to cast spells for each friendly Orc unit within 24" that is in close combat and has a Unit Strength of 10 of more. Conversely, a Wizard using this lore suffers \-1 to cast spells for each friendly Orc unit within 24" that is fleeing and has a Unit Strength of 10 or more.
-
-#namecost("BRUTAL BEAST SPIRITS", "")
-#namecost("Signature Spell Cast on 6+", "")
-
-_Brutal Beast Spirits_ is an *augment* spell with a range of 18" that targets Orcs. The unit gains +1 To Hit in close combat and may re-roll their pursuit distance until the start of the caster's next Magic phase.
-
-#namecost("KUNNIN' BEAST SPIRITS", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Kunnin' Beast Spirits_ is an *augment* spell with a range of 18" that targets Orcs. Your opponent must re-roll all To Hit rolls of 6 that target the unit with missile attacks and in close combat until the start of the caster's next Magic phase.
-
-#namecost("GLOWY GREEN TUSKS", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Glowy Green Tusks_ is an *augment* spell with a range of 18" that targets Orcs and their mounts. The target gains the Frenzy and Magical Attacks special rules until the start of the caster's next Magic phase.
-
-#namecost("BREATH OF MORK", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Breath of Mork_ is a *conveyance* spell with a range of 18". The target immediately makes a normal Fly (10) move (not march) as if it was the Remaining Moves phase.
-
-#namecost("FALLIN' FISTS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Fallin' Fists_ is a *direct damage* spell with a range of 24". The target unit suffers 3D6 Attacks with Weapon Skill 3 and Strength 4, resolved as close combat attacks.
-
-#namecost("BONE KRUSHA", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Bone Krusha_ is a *magic missile* with a range of 24". The closer the target is to the caster, the more powerful the attack will be: if the target is within 12" of the caster, it suffers 2D6 Strength 5 Hits; if the target is between 12" and 18" away, it instead suffers D6 Strength 5 Hits; if the target is more than 18" away, it only suffers D3 Strength 5 Hits.
-
-#namecost("SQUIGGLY CURSE", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Squiggly Curse_ is a *direct damage* spell with a range of 12" and targets a single enemy model (even a character in a unit). Roll a D6; on a 1 it has no effect, on a 2 to 3 that model suffers one Wound, on a 4 to 5 it suffers D3 Wounds and on a 6 it suffers D6 Wounds. These Wounds have the Ignores Armour Saves special rule. Each time a model is slain by Squiggly Curse, you can add +2 to any further casting attempts made by the caster this Magic Phase.
-
-#namecost("GORK'S WAR CRY", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Gork's War Cry_ is a *direct damage* spell with a range of 18". The target suffers D6 Strength 5 which Ignores Armour Saves. In addition, the target halves all their Movement and is subject to the Always Strikes Last special rule until the start of the caster's next Magic phase.
-
-#namecost("THE EVIL SUN", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _The Evil Sun_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit. In addition, friendly units of Savage Orcs within 6" of the Evil Sun template may re-roll To Hit rolls of 1.
-
-= LORE OF DA LITTLE WAAAGH!
-
-#columns(2)[
-#namecost("SNEAKY STEALIN'", "")
-#namecost("Lore Attribute", "")
-
-When a Spell of da Little Waaagh! is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.
-
-#namecost("VINDICTIVE GLARE", "")
-#namecost("Signature Spell Cast on 6+", "")
-
-_Vindictive Glare_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits.
-
-#namecost("OI! GERROFF!", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Oi! Gerroff!_ is a *magic missile* with a range of 18". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain or another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.
-
-#namecost("SNEAKY STABBIN'", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Sneaky Stabbin'_ is an *augment* spell with a range of 24" that targets Goblins. The target unit's close combat attacks have the Armour Piercing (1) special rule until the start of the caster's next Magic phase. In addition, while the spell is in effect, they can re-roll all failed To Hit and To Wound rolls when attacking in close combat against an enemy's flank or rear.
-
-#namecost("BRAIN BURSTA", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Brain Bursta_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers a Strength 5 hit.
-
-#namecost("MORK SAVE UZ!", "")
-#namecost("Level 2 Cast on 6+", "")
-
-_Mork Save Uz!_ is an *augment* spell with a range of 24" that targets Orcs or Goblins. The target unit gains the Magic Resistance (5) special rule until the start of the caster's next Magic phase.
-
-#namecost("GAZE OF GORK", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Gaze of Gork_ is a *direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 3 hit with the Ignores Armour Saves special rule.
-
-#namecost("GORK'LL FIX IT", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Gork'll Fix It_ is a *hex* spell with a range of 24". The target unit must re-roll any of its To Hit, To Wound and armour save rolls of 6 (in shooting and close combat) until the start of the caster's next Magic phase.
-
-#namecost("THE HAND OF GORK", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_The Hand of Gork_ is a *conveyance* spell with a range of 24". The target is immediately picked up and may be moved to any point on the battlefield within 4D6" of its original position, just like a summoning spell.
-
-#namecost("ITCHY NUISANCE", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Itchy Nuisance_ is a *hex* spell with a range of 24". Roll a D6. The target unit immediately reduces its Movement and Initiative by this number (to a minimum of 1), until the start of the caster's next Magic phase.
-
-#namecost("SNEAKY DISTRACTION", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Sneaky Distraction_ is a *hex aura* with a range of 12". The targets suffer \-1 To Hit with missile attacks and in close combat until the start of the caster's next Magic phase.
-
-#namecost("NIKKIT! NIKKIT!", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Nikkit! Nikkit!_ is a *direct damage* spell with a range of 12" that targets a single enemy character (even a character in a unit). If the target has one or more magic items, randomly select one of them and roll a D6 – that item is stolen on a 3+. If the caster does not already have a magic item of this type they can now use it, otherwise it is destroyed. In addition, the target suffers D3 Strength 4 Hits which Ignores Armour Saves.
-
-#namecost("THE GREAT GREEN SPITE", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_The Great Green Spite_ is a *direct damage* spell with a range of 24". The target enemy unit suffers D6 Strength 4 hits with the Armour Piercing (1) special rule for every 10 points of Unit Strength the Wizard and any unit they are with have, up to a maximum of 4D6.
-
-#namecost("MORK WANTS YA!", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Mork Wants Ya!_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 10 hits.
 ]
+#lore("LORE OF DA SAVAGE WAAAGH!")[
 
-= LORE OF DA BAD MOON
+#spell("POWER OF DA WAAAGH!", "Lore Attribute")[A Wizard using this lore gains +1 to cast spells for each friendly Orc unit within 24" that is in close combat and has a Unit Strength of 10 of more. Conversely, a Wizard using this lore suffers \-1 to cast spells for each friendly Orc unit within 24" that is fleeing and has a Unit Strength of 10 or more.]
 
-#namecost("SNEAKY STEALIN'", "")
-#namecost("Lore Attribute", "")
+#spell("BRUTAL BEAST SPIRITS", "Signature Spell", cast: "6+")[_Brutal Beast Spirits_ is an *augment* spell with a range of 18" that targets Orcs. The unit gains +1 To Hit in close combat and may re-roll their pursuit distance until the start of the caster's next Magic phase.]
 
-When a Spell of da Bad Moon is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.
+#spell("KUNNIN' BEAST SPIRITS", 1, cast: "5+")[_Kunnin' Beast Spirits_ is an *augment* spell with a range of 18" that targets Orcs. Your opponent must re-roll all To Hit rolls of 6 that target the unit with missile attacks and in close combat until the start of the caster's next Magic phase.]
 
-#namecost("SPORE MAWS", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("GLOWY GREEN TUSKS", 1, cast: "6+")[_Glowy Green Tusks_ is an *augment* spell with a range of 18" that targets Orcs and their mounts. The target gains the Frenzy and Magical Attacks special rules until the start of the caster's next Magic phase.]
 
-Remains in play. _Spore Maws_ is an *augment* spell with a range of 18". Each enemy unit in base contact with the target unit immediately suffers 3D6 Strength 3 hits at the end of each Magic phase.
+#spell("BREATH OF MORK", 2, cast: "7+")[_Breath of Mork_ is a *conveyance* spell with a range of 18". The target immediately makes a normal Fly (10) move (not march) as if it was the Remaining Moves phase.]
 
-#namecost("SQUIG LURE", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("FALLIN' FISTS", 2, cast: "7+")[_Fallin' Fists_ is a *direct damage* spell with a range of 24". The target unit suffers 3D6 Attacks with Weapon Skill 3 and Strength 4, resolved as close combat attacks.]
 
-_Squig Lure_ is a *conveyance* spell with a range of 24" that targets Squigs. The target immediately makes a Random Move (2D6) straight forward.
+#spell("BONE KRUSHA", 3, cast: "8+")[_Bone Krusha_ is a *magic missile* with a range of 24". The closer the target is to the caster, the more powerful the attack will be: if the target is within 12" of the caster, it suffers 2D6 Strength 5 Hits; if the target is between 12" and 18" away, it instead suffers D6 Strength 5 Hits; if the target is more than 18" away, it only suffers D3 Strength 5 Hits.]
 
-#namecost("MESMERISE", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("SQUIGGLY CURSE", 3, cast: "9+")[_Squiggly Curse_ is a *direct damage* spell with a range of 12" and targets a single enemy model (even a character in a unit). Roll a D6; on a 1 it has no effect, on a 2 to 3 that model suffers one Wound, on a 4 to 5 it suffers D3 Wounds and on a 6 it suffers D6 Wounds. These Wounds have the Ignores Armour Saves special rule. Each time a model is slain by Squiggly Curse, you can add +2 to any further casting attempts made by the caster this Magic Phase.]
 
-_Mesmerise_ is a *magic missile* with a range of 24". The target cannot choose to charge, cast spells or shoot at the Wizard or any unit they are with until the start of the caster's next Magic phase.
+#spell("GORK'S WAR CRY", 4, cast: "11+")[_Gork's War Cry_ is a *direct damage* spell with a range of 18". The target suffers D6 Strength 5 which Ignores Armour Saves. In addition, the target halves all their Movement and is subject to the Always Strikes Last special rule until the start of the caster's next Magic phase.]
 
-#namecost("NIK MAGIC", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("THE EVIL SUN", 4, cast: "15+")[Remains in play. _The Evil Sun_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit. In addition, friendly units of Savage Orcs within 6" of the Evil Sun template may re-roll To Hit rolls of 1.]
+]
+#lore("LORE OF DA LITTLE WAAAGH!")[
 
-_Nik Magic_ is a *hex* spell with a range of 24" that targets a single Wizard, even if in a unit. Choose one spell the target knows and roll a D6; on 1\-4 they cannot use that spell in their next Magic Phase, on a 5\-6 they cannot attempt to cast this spell for the remainder of the game.
+#spell("SNEAKY STEALIN'", "Lore Attribute")[When a Spell of da Little Waaagh! is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.]
 
-#namecost("FACE OF DA BAD MOON", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("VINDICTIVE GLARE", "Signature Spell", cast: "6+")[_Vindictive Glare_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits.]
 
-Remains in play. _Face of da Bad Moon_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard gains the Terror special rule and all enemy units with Line of Sight to it suffer \-1 Leadership.
+#spell("OI! GERROFF!", 1, cast: "5+")[_Oi! Gerroff!_ is a *magic missile* with a range of 18". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain or another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.]
 
-#namecost("BAD MOON RIZIN'", "")
-#namecost("Level 3 Cast on 8+", "")
+#spell("SNEAKY STABBIN'", 1, cast: "5+")[_Sneaky Stabbin'_ is an *augment* spell with a range of 24" that targets Goblins. The target unit's close combat attacks have the Armour Piercing (1) special rule until the start of the caster's next Magic phase. In addition, while the spell is in effect, they can re-roll all failed To Hit and To Wound rolls when attacking in close combat against an enemy's flank or rear.]
 
-_Bad Moon Rizin'_ is a *hex* spell with a range of 24". The target unit is subject to the Always Strikes Last special rule until the start of the caster's next Magic phase.
+#spell("BRAIN BURSTA", 1, cast: "6+")[_Brain Bursta_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers a Strength 5 hit.]
 
-#namecost("CALL DA MOON", "")
-#namecost("Level 3 Cast on 10+", "")
+#spell("MORK SAVE UZ!", 2, cast: "6+")[_Mork Save Uz!_ is an *augment* spell with a range of 24" that targets Orcs or Goblins. The target unit gains the Magic Resistance (5) special rule until the start of the caster's next Magic phase.]
 
-_Call da Moon_ is a *direct damage area* spell with a range of 36" that uses the small round template; it scatters and inflicts damage like a Stone Thrower. If a misfire is rolled, centre the template over the caster instead.
+#spell("GAZE OF GORK", 2, cast: "8+")[_Gaze of Gork_ is a *direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 3 hit with the Ignores Armour Saves special rule.]
 
-#namecost("NIGHT SHROUD", "")
-#namecost("Level 4 Cast on 12+", "")
+#spell("GORK'LL FIX IT", 2, cast: "8+")[_Gork'll Fix It_ is a *hex* spell with a range of 24". The target unit must re-roll any of its To Hit, To Wound and armour save rolls of 6 (in shooting and close combat) until the start of the caster's next Magic phase.]
 
-_Night Shroud_ is an *augment aura* spell with a range of 12". All missile attacks targeted against friendly units within range suffer a \-1 penalty To Hit until the start of the caster's next Magic phase. In addition, all models in any enemy unit that charges into base contact with the Wizard or the unit they are with while the spell is in effect must take a Dangerous Terrain test.
+#spell("THE HAND OF GORK", 3, cast: "8+")[_The Hand of Gork_ is a *conveyance* spell with a range of 24". The target is immediately picked up and may be moved to any point on the battlefield within 4D6" of its original position, just like a summoning spell.]
 
-#namecost("CURSE OF DA BAD MOON", "")
-#namecost("Level 4 Cast on 15+", "")
+#spell("ITCHY NUISANCE", 3, cast: "8+")[_Itchy Nuisance_ is a *hex* spell with a range of 24". Roll a D6. The target unit immediately reduces its Movement and Initiative by this number (to a minimum of 1), until the start of the caster's next Magic phase.]
 
+#spell("SNEAKY DISTRACTION", 3, cast: "8+")[_Sneaky Distraction_ is a *hex aura* with a range of 12". The targets suffer \-1 To Hit with missile attacks and in close combat until the start of the caster's next Magic phase.]
+
+#spell("NIKKIT! NIKKIT!", 4, cast: "11+")[_Nikkit! Nikkit!_ is a *direct damage* spell with a range of 12" that targets a single enemy character (even a character in a unit). If the target has one or more magic items, randomly select one of them and roll a D6 – that item is stolen on a 3+. If the caster does not already have a magic item of this type they can now use it, otherwise it is destroyed. In addition, the target suffers D3 Strength 4 Hits which Ignores Armour Saves.]
+
+#spell("THE GREAT GREEN SPITE", 4, cast: "12+")[_The Great Green Spite_ is a *direct damage* spell with a range of 24". The target enemy unit suffers D6 Strength 4 hits with the Armour Piercing (1) special rule for every 10 points of Unit Strength the Wizard and any unit they are with have, up to a maximum of 4D6.]
+
+#spell("MORK WANTS YA!", 4, cast: "13+")[_Mork Wants Ya!_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 10 hits.]
+]
+#lore("LORE OF DA BAD MOON")[
+
+#spell("SNEAKY STEALIN'", "Lore Attribute")[When a Spell of da Bad Moon is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.]
+
+#spell("SPORE MAWS", "Signature Spell", cast: "5+")[Remains in play. _Spore Maws_ is an *augment* spell with a range of 18". Each enemy unit in base contact with the target unit immediately suffers 3D6 Strength 3 hits at the end of each Magic phase.]
+
+#spell("SQUIG LURE", 1, cast: "5+")[_Squig Lure_ is a *conveyance* spell with a range of 24" that targets Squigs. The target immediately makes a Random Move (2D6) straight forward.]
+
+#spell("MESMERISE", 1, cast: "6+")[_Mesmerise_ is a *magic missile* with a range of 24". The target cannot choose to charge, cast spells or shoot at the Wizard or any unit they are with until the start of the caster's next Magic phase.]
+
+#spell("NIK MAGIC", 2, cast: "6+")[_Nik Magic_ is a *hex* spell with a range of 24" that targets a single Wizard, even if in a unit. Choose one spell the target knows and roll a D6; on 1\-4 they cannot use that spell in their next Magic Phase, on a 5\-6 they cannot attempt to cast this spell for the remainder of the game.]
+
+#spell("FACE OF DA BAD MOON", 2, cast: "7+")[Remains in play. _Face of da Bad Moon_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard gains the Terror special rule and all enemy units with Line of Sight to it suffer \-1 Leadership.]
+
+#spell("BAD MOON RIZIN'", 3, cast: "8+")[_Bad Moon Rizin'_ is a *hex* spell with a range of 24". The target unit is subject to the Always Strikes Last special rule until the start of the caster's next Magic phase.]
+
+#spell("CALL DA MOON", 3, cast: "10+")[_Call da Moon_ is a *direct damage area* spell with a range of 36" that uses the small round template; it scatters and inflicts damage like a Stone Thrower. If a misfire is rolled, centre the template over the caster instead.]
+
+#spell("NIGHT SHROUD", 4, cast: "12+")[_Night Shroud_ is an *augment aura* spell with a range of 12". All missile attacks targeted against friendly units within range suffer a \-1 penalty To Hit until the start of the caster's next Magic phase. In addition, all models in any enemy unit that charges into base contact with the Wizard or the unit they are with while the spell is in effect must take a Dangerous Terrain test.]
+
+#spell("CURSE OF DA BAD MOON", 4, cast: "15+")[
 Remains in Play. _Curse of da Bad Moon_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must pass a Characteristic test or suffer a Wound which Ignores Armour Saves. The type of Characteristic test is determined by rolling on the following chart. Roll once each Magic phase, just before moving the template, and apply the result to all models affected by the curse in that Magic phase.
 
 #chart((("D6", "Characteristic"), ("1-2", "Initiative"), ("3-4", "Strength"), ("5-6", "Toughness")))
+]
+]
+#lore("LORE OF DA SPIDER GOD")[
 
-= LORE OF DA SPIDER GOD
+#spell("SNEAKY STEALIN'", "Lore Attribute")[When a Spell of da Spider God is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.]
 
-#namecost("SNEAKY STEALIN'", "")
-#namecost("Lore Attribute", "")
+#spell("VENOMOUS SPIDERLINGS", "Signature Spell", cast: "5+")[_Venomous Spiderlings_ is a *direct damage* spell with a range of 24". The target suffers 2D6 Strength 1 Hits with the Poisoned Attacks special rule.]
 
-When a Spell of da Spider God is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.
+#spell("CHITINOUS ARMOUR", 1, cast: "5+")[_Chitinous Armour_ is an *augment* spell with a range of 18". The target gains the Natural Armour (6+) special rule until the start of the caster's next magic phase. If the target is a Forest Goblin, they gain Natural Armour (5+) instead.]
 
-#namecost("VENOMOUS SPIDERLINGS", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("SPEED OF DA SPIDER GOD", 1, cast: "6+")[_Speed of da Spider God_ is an *augment* spell with a range of 18" that targets Goblins. The target gains the Always Strikes First and Wall-crawler special rules until the start of the caster's next Magic phase. If the target already has the Wall-crawler special rule, they gain +1 Movement instead.]
 
-_Venomous Spiderlings_ is a *direct damage* spell with a range of 24". The target suffers 2D6 Strength 1 Hits with the Poisoned Attacks special rule.
+#spell("DEADLY WEBBING", 2, cast: "7+")[_Deadly Webbing_ is a *hex* spell with a range of 24". The target treats all terrain as Dangerous Terrain for all Movement and cannot march until the start of the caster's next Magic phase.]
 
-#namecost("CHITINOUS ARMOUR", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("SCUTTLING TERRORS", 3, cast: "7+")[_Scuttling Terrors_ is a *conveyance* spell with a range of 18" that targets Goblins. The target unit may immediately make a Move as if it were the Remaining Moves phase.]
 
-_Chitinous Armour_ is an *augment* spell with a range of 18". The target gains the Natural Armour (6+) special rule until the start of the caster's next magic phase. If the target is a Forest Goblin, they gain Natural Armour (5+) instead.
+#spell("WEB OF FEAR", 3, cast: "7+")[_Web of Fear_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, the targets treats all Ararchnids as causing Fear, and must re-roll successful Terror tests from Arachnarok Spiders.]
 
-#namecost("SPEED OF DA SPIDER GOD", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("GIFT OF DA SPIDER GOD", 3, cast: "10+")[_Gift of da Spider God_ is an *augment* spell with a range of 18" that targets Goblins and their mounts. The target gains the Poisoned Attacks and Regeneration (6+) special rules until the start of the caster's next Magic phase.]
 
-_Speed of da Spider God_ is an *augment* spell with a range of 18" that targets Goblins. The target gains the Always Strikes First and Wall-crawler special rules until the start of the caster's next Magic phase. If the target already has the Wall-crawler special rule, they gain +1 Movement instead.
+#spell("CURSE OF DA SPIDER GOD", 4, cast: "11+")[_Curse of da Spider God_ is a *hex* spell with a range of 24". The target must re-roll successful To Hit rolls (in shooting and close combat) and armour saves until the start of the caster's next Magic phase.]
 
-#namecost("DEADLY WEBBING", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("SCUTTLETIDE", 4, cast: "12+")[Remains in Play. _Scuttletide_ is a *magical vortex* that uses the large round template. Any model touched by the template at any point during its move suffers a Strength 2 Hit with the Poisoned Attacks special rule.]
+]
+#lore("LORE OF TROLL MAGIC")[
 
-_Deadly Webbing_ is a *hex* spell with a range of 24". The target treats all terrain as Dangerous Terrain for all Movement and cannot march until the start of the caster's next Magic phase.
+#spell("BIG SMARTZ", "Signature Spell", cast: "5+")[Remains in play. _Big Smartz_ is an *augment aura* spell with a range of 12". While the spell is in effect, all friendly units of Trolls within range may re-roll failed Stupidity tests.]
 
-#namecost("SCUTTLING TERRORS", "")
-#namecost("Level 3 Cast on 7+", "")
+#spell("TROLL BRAINZ", 1, cast: "6+")[Remains in play. _Troll Brainz_ is a *hex* spell with a range of 24". While the spell is in effect, the target unit gains the Stupidity special rule and suffers \-1 to its Leadership.]
 
-_Scuttling Terrors_ is a *conveyance* spell with a range of 18" that targets Goblins. The target unit may immediately make a Move as if it were the Remaining Moves phase.
+#spell("FOETID WHIRLPOOL", 1, cast: "7+")[Remains in play. _Foetid Whirlpool_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must take a Dangerous Terrain test.]
 
-#namecost("WEB OF FEAR", "")
-#namecost("Level 3 Cast on 7+", "")
+#spell("RAVENOUS RECOURSE", 2, cast: "7+")[_Ravenous Recourse_ is an *augment aura* spell with a range of 12". All friendly units of Trolls within range gain +2 to their Movement until the start of the caster's next Magic phase.]
 
-_Web of Fear_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, the targets treats all Ararchnids as causing Fear, and must re-roll successful Terror tests from Arachnarok Spiders.
+#spell("RAPID REGENERATION", 2, cast: "10+")[_Rapid Regeneration_ is an *augment* spell with a range of 18". The target unit gains the Regeneration (5+) special rule until the start of the caster's next Magic phase. Models that already have Regeneration (4+) or better may instead re-roll failed Regeneration saves.]
 
-#namecost("GIFT OF DA SPIDER GOD", "")
-#namecost("Level 3 Cast on 10+", "")
+#spell("TORRENT OF FILTH", 3, cast: "10+")[_Torrent of Filth_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 hit with the Ignores Armour Saves special rule.]
 
-_Gift of da Spider God_ is an *augment* spell with a range of 18" that targets Goblins and their mounts. The target gains the Poisoned Attacks and Regeneration (6+) special rules until the start of the caster's next Magic phase.
-
-#namecost("CURSE OF DA SPIDER GOD", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Curse of da Spider God_ is a *hex* spell with a range of 24". The target must re-roll successful To Hit rolls (in shooting and close combat) and armour saves until the start of the caster's next Magic phase.
-
-#namecost("SCUTTLETIDE", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in Play. _Scuttletide_ is a *magical vortex* that uses the large round template. Any model touched by the template at any point during its move suffers a Strength 2 Hit with the Poisoned Attacks special rule.
-
-= LORE OF TROLL MAGIC
-
-#namecost("BIG SMARTZ", "")
-#namecost("Signature Spell Cast on 5+", "")
-
-Remains in play. _Big Smartz_ is an *augment aura* spell with a range of 12". While the spell is in effect, all friendly units of Trolls within range may re-roll failed Stupidity tests.
-
-#namecost("TROLL BRAINZ", "")
-#namecost("Level 1 Cast on 6+", "")
-
-Remains in play. _Troll Brainz_ is a *hex* spell with a range of 24". While the spell is in effect, the target unit gains the Stupidity special rule and suffers \-1 to its Leadership.
-
-#namecost("FOETID WHIRLPOOL", "")
-#namecost("Level 1 Cast on 7+", "")
-
-Remains in play. _Foetid Whirlpool_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must take a Dangerous Terrain test.
-
-#namecost("RAVENOUS RECOURSE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Ravenous Recourse_ is an *augment aura* spell with a range of 12". All friendly units of Trolls within range gain +2 to their Movement until the start of the caster's next Magic phase.
-
-#namecost("RAPID REGENERATION", "")
-#namecost("Level 2 Cast on 10+", "")
-
-_Rapid Regeneration_ is an *augment* spell with a range of 18". The target unit gains the Regeneration (5+) special rule until the start of the caster's next Magic phase. Models that already have Regeneration (4+) or better may instead re-roll failed Regeneration saves.
-
-#namecost("TORRENT OF FILTH", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Torrent of Filth_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 hit with the Ignores Armour Saves special rule.
-
-#namecost("ACIDIC BILE", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Acidic Bile_ is a *direct damage area* with a range of 18" that uses the small round template. All models under the template suffer a Strength 4 hit with the Ignores Armour Saves special rule.
-
+#spell("ACIDIC BILE", 3, cast: "11+")[_Acidic Bile_ is a *direct damage area* with a range of 18" that uses the small round template. All models under the template suffer a Strength 4 hit with the Ignores Armour Saves special rule.]
+]
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Orcs & Goblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", columns: 2, first: true)[

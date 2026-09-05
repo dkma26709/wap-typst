@@ -133,80 +133,36 @@ For each Name-Gnoblar an Ogre has, he can choose an additional Big Name.
 One use only. A Butcher with a Scalp-Gnoblar may re- roll a single dice when attempting to cast a spell from the Lore of the Great Maw.
 ]
 
-= THE LORE OF THE GREAT MAW
+#lore("THE LORE OF THE GREAT MAW")[
 
-#columns(2)[
-#namecost("BLOODGRUEL", "")
-#namecost("Lore Attribute", "")
+#spell("BLOODGRUEL", "Lore Attribute")[Roll a D6 immediately after resolving the effects of a successfully cast spell from the Lore of the Great Maw. On a roll of 2\-6, the Wizard that cast the spell recovers one lost Wound (up to his starting number of Wounds), and adds +1 to the total rolled on the dice the next time he attempts to cast or dispel a spell. On a roll of 1 the Wizard that cast the spell suffers a Strength 6 hit.]
 
-Roll a D6 immediately after resolving the effects of a successfully cast spell from the Lore of the Great Maw. On a roll of 2\-6, the Wizard that cast the spell recovers one lost Wound (up to his starting number of Wounds), and adds +1 to the total rolled on the dice the next time he attempts to cast or dispel a spell. On a roll of 1 the Wizard that cast the spell suffers a Strength 6 hit.
+#spell("SPINEMARROW", "Signature Spell", cast: "5+")[_Spinemarrow_ is an *augment* spell with a range of 18". The target has the Stubborn special rule until the start of the caster's next Magic phase.]
 
-#namecost("SPINEMARROW", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("BILEBREW", 1, cast: "6+")[_Bilebrew_ is an *augment* spell with a range of 18". The target gains the Hatred special rule until the start of the caster's next Magic phase.]
 
-_Spinemarrow_ is an *augment* spell with a range of 18". The target has the Stubborn special rule until the start of the caster's next Magic phase.
+#spell("BLOOD FEAST", 1, cast: "6+")[_Blood Feast_ is an *augment* spell with a range of 18". The target gains the Frenzy special rule until the start of the caster's next Magic phase.]
 
-#namecost("BILEBREW", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("BULLGORGER", 1, cast: "6+")[_Bullgorger_ is an *augment* spell with a range of 18". The target gains +1 Strength until the start of the caster's next Magic phase.]
 
-_Bilebrew_ is an *augment* spell with a range of 18". The target gains the Hatred special rule until the start of the caster's next Magic phase.
+#spell("BONECRUSHER", 2, cast: "7+")[_Bonecrusher_ is a *magic missile* with a range of 18" that causes 2D6 Strength 2 hits which Ignores Armour Saves.]
 
-#namecost("BLOOD FEAST", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("BRAINGOBBLER", 2, cast: "7+")[_Braingobbler_ is a *hex* spell with a range of 18". The target must take a Panic test. If the test is passed, the unit gains the Stupidity special rule until the start of the caster's next Magic phase.]
 
-_Blood Feast_ is an *augment* spell with a range of 18". The target gains the Frenzy special rule until the start of the caster's next Magic phase.
+#spell("GREASY DELUGE", 2, cast: "7+")[_Greasy Deluge_ is a *hex* spell with a range of 24". The target suffer \-1 To Hit in close combat and with missile weapons until the start of the caster's next Magic phase.]
 
-#namecost("BULLGORGER", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("ROCKCHOMPER", 3, cast: "7+")[_Rockchomper_ is an *augment* spell with a range of 18". The target gains the Armour Piercing (1) and Killing Blow special rules until the start of the caster's next Magic phase.]
 
-_Bullgorger_ is an *augment* spell with a range of 18". The target gains +1 Strength until the start of the caster's next Magic phase.
+#spell("TOOTHCRACKER", 3, cast: "7+")[_Toothcracker_ is an *augment* spell with a range of 18". The target gains +1 Toughness until the start of the caster's next Magic phase.]
 
-#namecost("BONECRUSHER", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("FEAST OF THE FALLEN", 3, cast: "10+")[Remains in play. _Feast of the Fallen_ is an *augment* spell with a range of 18" that targets Monstrous Infantry. While the spell is in effect, at the end of each round of close combat (before break tests are taken), the target unit regains a Wound suffered earlier during the game for every unsaved Wound they caused in close combat. Wounds are restored in the same manner as a *summoning* spell.]
 
-_Bonecrusher_ is a *magic missile* with a range of 18" that causes 2D6 Strength 2 hits which Ignores Armour Saves.
+#spell("VORACIOUS MAW", 4, cast: "11+")[_Voracious Maw_ is a *summoning area* spell with a range of 24" that uses the large round template (it does not scatter). The template is considered Dangerous Terrain for all models, except that all tests fail on a 1\-2 rather than a 1. If the Voracious Maw inflicts five or more unsaved Wounds in a single phase, or the spell is successfully cast again, the spell ends and the template is removed.]
 
-#namecost("BRAINGOBBLER", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("TROLLGUTS", 4, cast: "12+")[_Trollguts_ is an *augment* spell with a range of 18". The target has the Regeneration (4+) special rule until the start of the caster's next Magic phase.]
 
-_Braingobbler_ is a *hex* spell with a range of 18". The target must take a Panic test. If the test is passed, the unit gains the Stupidity special rule until the start of the caster's next Magic phase.
-
-#namecost("GREASY DELUGE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Greasy Deluge_ is a *hex* spell with a range of 24". The target suffer \-1 To Hit in close combat and with missile weapons until the start of the caster's next Magic phase.
-
-#namecost("ROCKCHOMPER", "")
-#namecost("Level 3 Cast on 7+", "")
-
-_Rockchomper_ is an *augment* spell with a range of 18". The target gains the Armour Piercing (1) and Killing Blow special rules until the start of the caster's next Magic phase.
-
-#namecost("TOOTHCRACKER", "")
-#namecost("Level 3 Cast on 7+", "")
-
-_Toothcracker_ is an *augment* spell with a range of 18". The target gains +1 Toughness until the start of the caster's next Magic phase.
-
-#namecost("FEAST OF THE FALLEN", "")
-#namecost("Level 3 Cast on 10+", "")
-
-Remains in play. _Feast of the Fallen_ is an *augment* spell with a range of 18" that targets Monstrous Infantry. While the spell is in effect, at the end of each round of close combat (before break tests are taken), the target unit regains a Wound suffered earlier during the game for every unsaved Wound they caused in close combat. Wounds are restored in the same manner as a *summoning* spell.
-
-#namecost("VORACIOUS MAW", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Voracious Maw_ is a *summoning area* spell with a range of 24" that uses the large round template (it does not scatter). The template is considered Dangerous Terrain for all models, except that all tests fail on a 1\-2 rather than a 1. If the Voracious Maw inflicts five or more unsaved Wounds in a single phase, or the spell is successfully cast again, the spell ends and the template is removed.
-
-#namecost("TROLLGUTS", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Trollguts_ is an *augment* spell with a range of 18". The target has the Regeneration (4+) special rule until the start of the caster's next Magic phase.
-
-#namecost("THE GREAT MAW AWAKENS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _The Great Maw Awakens_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must take an Initiative test. Models that pass the test suffer a Strength 3 hit. Models that fail the test suffer a Strength 7 hit with the Multiple Wounds (D6) special rule.
+#spell("THE GREAT MAW AWAKENS", 4, cast: "15+")[Remains in play. _The Great Maw Awakens_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must take an Initiative test. Models that pass the test suffer a Strength 3 hit. Models that fail the test suffer a Strength 7 hit with the Multiple Wounds (D6) special rule.]
 ]
-
 = BIG NAMES OF THE OGRES
 
 *Certain models are able to spend points on Big Names, as detailed in the army list. Each model may only take a single Big Name, unless specified. No big name may be taken more than once in the same army.*
