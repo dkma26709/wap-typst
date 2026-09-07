@@ -39,9 +39,18 @@ python extract/welds.py build/lizardmen.json                         # words wel
 python extract/roundtrip.py lizardmen --source "path/to/book.pdf"    # rendered PDF vs source
 
 # Edition promises, checked against rendered PDFs (compile both first).
+# A Proposals edition derives from the House book where one exists, so that is
+# the parent to compare it against — not the base book.
 python extract/check_editions.py out/lizardmen-house.pdf out/lizardmen.pdf
 python extract/check_editions.py out/rulebook-proposal.pdf out/rulebook-house.pdf \
   --identical-body --chapter PROPOSALS
+
+# Did a change move anything it should not have? These read only two renders —
+# no source PDFs — so unlike the three gates above, anyone can run them. Render
+# the corpus before and after the change into two directories, then:
+python extract/render_text.py out-before out-after     # no word lost or gained
+python extract/render_glyphs.py out-before out-after   # no glyph moved at all
+python extract/render_artefacts.py out-after/*.pdf --against out-before  # leaked markup
 ```
 
 `batch.py` skips a book whose JSON is newer than its PDF; `--force` re-extracts.
@@ -111,10 +120,22 @@ assumed:
 - Changed a book or `template.typ` → compile the affected book(s) with the two
   flags above and confirm exit 0. A template change affects all 44 books, so
   compile more than one.
-- Changed `#book-meta`, or added/removed/renamed a book → `python emit.py`, and
-  commit the resulting `site/index.html` and `build/render.json`.
-- Changed an edition's body → recompile it and its parent, then run
-  `check_editions.py` on the two PDFs.
+- Restated something without meaning to change it → render the corpus before and
+  after, then `render_text.py` on the two directories, and `render_glyphs.py` too
+  where the page is meant to be untouched. Both are blind to a change that renders
+  identically and means something else; a structural claim wants
+  `typst query <meta>`, not the page.
+- Changed extracted prose or any escaping → `render_artefacts.py --against` the
+  previous render. Without `--against` it reports the corpus's own footnote
+  asterisks and teaches you to ignore it.
+- Changed `#book-meta`, added/removed/renamed a book **or an entry, or edited an
+  `editions/*/<book>.toml`** → `python emit.py`, and commit `site/index.html` and
+  `build/render.json`. The page counts entries out of the books and change tallies
+  out of those TOMLs, so both move with no book added.
+- Changed an edition's body → recompile it and its parent and run
+  `check_editions.py`. A House edition's parent is its base book; a Proposals
+  edition's is the House book where one exists. Every change also needs its
+  `OUR CHANGES` entry, which is what that gate checks.
 - Changed anything under `extract/` → the gates need the source PDFs, which are
   not in the repo. If you don't have them, say so rather than reporting the
   change as verified.
