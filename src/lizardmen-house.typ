@@ -377,7 +377,7 @@ Strength 5 hits.")))
 - May take Magic Items and/or Disciplines of the Old Ones up to a total of 100 points
   ],
   notes: (
-    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit. However, a Slann carrying a magic standard can only take other magic items and/or Disciplines of the Old Ones up to a total of 50 points. A Slann carrying the Battle Standard may still be the Army General.],
+    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit in addition to any other magic items and/or Disciplines of the Old Ones they might have. A Slann carrying the Battle Standard may still be the Army General.],
   ),
 )
 
@@ -623,7 +623,7 @@ Riders)
 #unit("SAURUS WARRIORS",
   first: true,
   profiles: (
-    (name: "Saurus Warrior", m: 4, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 2, ld: 8, points: 13),
+    (name: "Saurus Warrior", m: 4, ws: 4, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 2, ld: 8, points: 14),
   ),
   unit-size: "10-30",
   troop-type: "Infantry (Lizardman, Saurus)",
@@ -1017,7 +1017,7 @@ Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
 
 #unit("STEGADON",
   profiles: (
-    (name: "Stegadon", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: 4, ld: 6, points: 195),
+    (name: "Stegadon", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: 4, ld: 6, points: 200),
     (name: "Skink Crew", m: "-", ws: 2, bs: 3, s: 3, t: "-", w: "-", i: 4, a: 1, ld: 5, points: ""),
   ),
   troop-type: "Monster (Saurian)",
@@ -1068,7 +1068,7 @@ Skill (to a minimum of 1) until the start of the Bastiladon's next Magic phase."
   equipment-body: (
     rule("Power of the Ancients")[Arcane Item. Bound Spell. This item contains the _Fiery Blast_ spell from the Lore of Fire.],
   ),
-  special-rules: "Cold-blooded, Immunity (Psychology), Impact Hits (D6+1), Jungle Poisons, Natural",
+  special-rules: "Cold-blooded, Immunity (Psychology), Jungle Poisons, Natural",
   special-rules-body: [
 *Armour (4+), Stubborn*
   ],
@@ -1451,3 +1451,47 @@ The entry gives the bearers a Weapon Skill, a Strength and eight Attacks, and th
 #field("Added after", "")
 
 EQUIPMENT: Hand weapon
+
+#namecost("A Slann keeps its full allowance behind the Battle Standard", "CHARACTERS · SLANN MAGE-PRIEST")
+
+The Scar-Veteran, three entries later in the same chapter, may carry the Battle Standard with a Magic Standard of no points limit _in addition to any other Magic Items they might have_. The Slann alone paid for the privilege, halving its hundred points to fifty, which left the army's most expensive character as the one that could least afford to carry its banner. The two entries now read the same way.
+
+#field("Was", "")
+
+#note[However, a Slann carrying a magic standard can only take other magic items and/or Disciplines of the Old Ones up to a total of 50 points.]
+
+#field("Now", "")
+
+The Battle Standard Bearer can have a magic banner with no points limit in addition to any other magic items and/or Disciplines of the Old Ones they might have.
+
+#namecost("Saurus Warriors strike as well as they are built", "CORE UNITS · SAURUS WARRIORS")
+
+Weapon Skill 3 put a Saurus Warrior on the same footing as a militiaman, which sits oddly beside Strength 4, Toughness 4 and two Attacks. A point a model pays for the difference.
+
+#field("Was", "")
+
+#note[Saurus Warrior · WS 3 · 13 points]
+
+#field("Now", "")
+
+Saurus Warrior · WS 4 · 14 points
+
+#namecost("A Stegadon costs five points more", "RARE UNITS · STEGADON")
+
+Impact Hits (D6+1) on a Monster with four Attacks and Stubborn is worth more than the book charged for it.
+
+#field("Was", "")
+
+#note[Stegadon · 195 points]
+
+#field("Now", "")
+
+Stegadon · 200 points
+
+#namecost("An Arcanadon does not trample", "RARE UNITS · ARCANADON")
+
+The Arcanadon carries a bound spell and a crew of Skinks, and is priced as a platform rather than as a charge. Impact Hits belong to the Stegadon beside it, which is the entry built to run into things.
+
+#field("Removed", "")
+
+#note[SPECIAL RULES: … Impact Hits (D6+1) …]
