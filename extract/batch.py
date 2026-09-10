@@ -49,6 +49,28 @@ ALIASES = {
 }
 
 
+def flat(path: Path) -> bool:
+    """One colour, so it carries nothing.
+
+    What these books offer as a cover is a black mask over vector art that is
+    not extractable, and all 34 covers taken before this check went in are a
+    single colour at 100%. Taking one gains a black rectangle on the page and a
+    black square on the landing page, where the blank plate reads better.
+    """
+    if not path.exists():
+        return False
+    import pymupdf                                          # noqa: PLC0415
+
+    pix = pymupdf.Pixmap(str(path))
+    if pix.alpha or pix.n > 3:
+        pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
+    step = max(1, min(pix.width, pix.height) // 40)
+    seen = {pix.pixel(x, y)
+            for y in range(0, pix.height, step)
+            for x in range(0, pix.width, step)}
+    return len(seen) <= 1
+
+
 def parse_name(pdf: Path) -> tuple[str, str] | None:
     m = TITLE.match(pdf.stem)
     if not m:
@@ -171,7 +193,8 @@ def main() -> None:
         # both the Typst cover art and the landing-page thumbnail. The parchment
         # background is shared by the whole series, so it is only taken once.
         cover_rel = None
-        if art and data.get("cover"):
+        if art and data.get("cover") and not flat(
+                args.build / data["image_dir"] / data["cover"]):
             covers = ROOT / "assets" / "covers"
             covers.mkdir(parents=True, exist_ok=True)
             src = args.build / data["image_dir"] / data["cover"]
