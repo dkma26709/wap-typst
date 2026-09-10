@@ -173,6 +173,8 @@ Distances between models and all other objects are always measured from closest 
 
 Sometimes the rules will call upon a unit to move directly towards another unit, or some other feature on the battlefield. Where this is the case, draw an imaginary line between the centre of the unit and its destination, and move the unit forward along this line a number of inches equal to the distance stated.
 
+#diagram("/assets/figures/rulebook/2.32/img-0428.jpg", 0.463)
+
 #note[_The distance between the blue unit and the red unit is 6". We therefore say that the Goblins are within 6"._]
 
 #note[_The distance between the blue unit and the red monster is 3". We therefore say that the monster is within 3"._]
@@ -246,6 +248,8 @@ If an arrow is rolled, move the object in the direction of the arrow and the dis
 
 Some rules require that you choose a random direction. To do so, roll the scatter dice, and use the direction indicated by the direction of the arrow. If you roll a Hit!, use the arrow shown on the Hit! symbol to determine the direction.
 
+#diagram("/assets/figures/rulebook/2.32/img-0438.jpg", 0.463)
+
 === CHARACTERISTIC TESTS
 
 *A model will sometimes be called upon to take a characteristic test (see characteristics for more info). Such a test could be applied against any characteristic the model has, save Leadership. A Toughness test is a characteristic test, as is a Strength test or an Initiative test, and so on.*
@@ -288,6 +292,8 @@ A unit may not have more complete ranks than they have files, e.g. if the unit i
 
 In some cases, you will see the rules talking about models in 'base contact'. Note that for whatever reason, a model is never considered to be in base contact with itself, only other models.
 
+#diagram("/assets/figures/rulebook/2.32/img-0441.jpg", 0.463)
+
 #note[_Here you can see examples of correct and incorrect formations._]
 
 === REMOVING CASUALTIES
@@ -301,6 +307,9 @@ If a model has to be removed from a fighting rank as there are no others to repl
 A model has a forward, flank and rear arc based on the direction that it is facing. We'll be using this later to work out what the model can attack, as well as calculating which side of the model an enemy will be able to charge as the game goes on.
 
 A model's forward (or 'front'), flank and rear arcs extend out from its corners at 45° angles, forming four 90° quadrants. A unit's facings therefore are determined by the facing of its constituent models.
+
+#diagram("/assets/figures/rulebook/2.32/img-0443.jpg", 0.463)
+#diagram("/assets/figures/rulebook/2.32/img-0445.jpg", 0.463)
 
 === UNIT STRENGTH
 
@@ -464,6 +473,8 @@ Remember that individual models are not permitted to leave their units and so a 
 
 Models (and units) must move forward in a straight line, unless performing a manoeuvre, which we'll discuss in a moment.
 
+#diagram("/assets/figures/rulebook/2.32/img-0453.jpg", 0.463)
+
 #note[_When moving models it is a common mistake to measure the distance from the front of the base and then place the model so the back of its base is on the far side of the tape measure. This is incorrect, as it adds the entire length of the model's base (or the unit's bases) to the distance moved. Always use a common measuring point – in this example, the front of the first rank._]
 
 #namecost("1\" APART", "")
@@ -486,11 +497,14 @@ When a unit is wheeling, you measure the distance moved by the outside corner of
 
 When performing a wheel, the leading edge of the formation moves forward, pivoting round one of the front corners. The unit swings round like the spoke of a turning wheel and completes the manoeuvre facing a different direction. During the Remaining Moves sub- phase, wheels are measured as follows:
 
+#diagram("/assets/figures/rulebook/2.32/img-0455.jpg", 0.999)
 #namecost("REFORM", "")
 
 Keeping the centre point of the unit the same, arrange the unit into a new formation of as many ranks as you please, facing whichever direction you wish. Remember that none of the models in the unit can move more than twice their Movement rate. _To wheel, one corner of the formation is moved forward while leaving the opposite corner stationary to act as a pivot. The unit swings round the wheel and completes the manoeuvre facing a different direction. Here we see a unit making three wheels to move round a rock._
 
 A reform prevents the unit from moving any further that turn, and also stops it from firing missile weapons in the Shooting phase.
+
+#diagram("/assets/figures/rulebook/2.32/img-0456.jpg", 1.0)
 
 #note[_When a unit reforms, it can change its number of ranks or files (A), the direction it is facing (B), or both (C)._]
 
@@ -578,6 +592,8 @@ If a unit chooses a Flee reaction, for whatever reason, use the following proced
 
 It should be noted that a Flee reaction does not guarantee escape from oncoming chargers. If the fleeing unit rolls poorly and the chargers roll well, the fleeing unit might yet be caught, as we'll discuss later.
 
+#diagram("/assets/figures/rulebook/2.32/img-0464.jpg", 0.999)
+
 #note[_(1) The blue unit flees from the red unit. It pivots around its centre until it is facing directly away from the centre of the red unit. (2) It then flees straight forward a distance equal to its Flee! roll (in this case 3+3=6")._]
 
 #namecost("REDIRECTING THE CHARGE", "")
@@ -622,6 +638,8 @@ With the unit's charge range established, measure the distance between the charg
 
 If a unit makes a failed charge it moves directly towards the target a distance equal to the highest score result rolled on the charge roll (for example, if the dice showed 2 and 5, the failed charge move would be 5"), wheeling around impassable terrain and units, both friends and enemies, by the shortest route.
 
+#diagram("/assets/figures/rulebook/2.32/img-0467.jpg", 0.463)
+
 #note[_The blue unit has declared a charge against the red unit. The blue unit's normal move is 4", and it manages a roll of 3, for a total charge range of 7". However, the red unit is 8" away — the charge has failed. The blue unit must now move 3" (the highest result of the two dice they rolled), wheeling to face directly towards the red unit._]
 
 #namecost("MOVE CHARGERS", "")
@@ -640,6 +658,8 @@ Once the charging unit contacts the enemy unit, it must perform a second, bonus 
 
 The only exception to the charger aligning to the target is if a unit with less than Unit Strength 5 is charged by a unit with Unit Strength 10 or more. In this case, the charged unit will align to the charging unit, rather than the other way around.
 
+#diagram("/assets/figures/rulebook/2.32/img-0470.jpg", 1.0)
+
 #note[_1\. Declare Charge. 2. Wheel to maximize models in contact. 3. Move in. 4. Close the door._]
 
 #namecost("FLANK AND REAR CHARGES", "")
@@ -651,6 +671,8 @@ A charging unit's position when the charge is declared determines whether it cha
 As units generally begin the game facing each other, this is the most common situation that will arise. However, if the charging unit comes from the flank zone, it charges into the side; if in the rear zone, it charges into the rear. Whether a charger is in the front, flank or rear of its intended target is determined before charges are declared, so make sure you check before charge reactions are declared.
 
 If a charging unit straddles two zones, then the unit is considered to be in the zone where the majority of the models in its front rank are. If there is no clear majority, roll a dice.
+
+#diagram("/assets/figures/rulebook/2.32/img-0472.jpg", 0.463)
 
 #note[_1\. This unit is wholly within the blue unit's forward arc, so charge the front of the enemy unit._]
 
@@ -667,6 +689,8 @@ There is one important principle that you should always keep in mind when chargi
 #namecost("UNUSUAL SITUATIONS", "")
 
 Sometimes a charging unit can move into contact with its target, but cannot close the door because something else lies in the way, normally another unit or a piece of terrain. Where this happens, the charging player should attempt to complete the charge in such a manner as to avoid the obstruction. This can normally be achieved by increasing or decreasing the amount the charging unit wheels as it moves, or changing how the charging unit closes the door.
+
+#diagram("/assets/figures/rulebook/2.32/img-0474.jpg", 0.999)
 
 #note[_1\. The red unit declares a charge. 2. It wheels to maximise and avoid terrain. 3. It moves into contact with the enemy. 4. The charging unit cannot close the door, because a rock is in the way, so the blue unit does instead._]
 
@@ -686,6 +710,7 @@ If multiple units have declared a charge against a unit that has chosen a Flee C
 
 On occasion, exceptional dice rolls from charging units might mean that more units can complete the charge than can fit in base contact with the target. When this happens, the controlling player of the charging units must nominate which units complete the charge. Those units that cannot complete the charge against the target are counted as having made a failed charge.
 
+#diagram("/assets/figures/rulebook/2.32/img-0476.jpg", 0.999)
 #chart((("", "2. The red player must now use the free wheel and alignment moves
 to bring an equal number of models from both his units (or as near
 as possible) into contact with the blue unit."), ("1. Both red units have declared charges against the blue unit and
@@ -724,6 +749,8 @@ If a unit continues to flee, it will continue its headlong flight for safety, mo
 Fleeing troops ignore obstacles of any kind as they retreat. Fleeing troops move through other units (friend or foe) and impassable terrain. If the flee move would result in the fleeing unit ending up 'on top' of or within 1" of another unit or impassable terrain, then it carries on fleeing straight forward until it is 1" past the obstruction, and will then halt.
 
 Each fleeing model must pass a Dangerous Terrain test for each area of impassable terrain that it flees through. More information on Dangerous Terrain tests and impassable terrain can be found in the Battlefield Terrain chapter.
+
+#diagram("/assets/figures/rulebook/2.32/img-0478.jpg", 0.463)
 
 #note[_As the blue unit is fleeing through the impassable terrain, any fleeing models that move through it (marked here in white) must take a Dangerous Terrain test. Two fail and are removed as casualties._]
 
@@ -1500,6 +1527,8 @@ However, you may always direct attacks against normal rank and file models, as l
 
 If a model has more than one Attack and find itself in base contact with two or more enemies with different characteristic profiles, it must choose which one to attack when its turn to strike comes (before any dice are rolled).
 
+#diagram("/assets/figures/rulebook/2.32/img-0496.jpg", 0.463)
+
 #note[_These two blue models are in contact with both a cavalry and an infantry model, so can choose to direct their attacks at either unit. Models in base contact with an enemy, even just corner-to-corner, can attack (marked white)._]
 
 #namecost("SUPPORTING ATTACKS", "")
@@ -1518,7 +1547,11 @@ Supporting attacks are made against models in base contact with the front rank m
 
 For most troops this will normally be 1, although bonuses for additional hand weapons, spells or special rules can raise or lower the total. More powerful models will often have 2, 3, 4 or even more Attacks.
 
+#diagram("/assets/figures/rulebook/2.32/img-0498.jpg", 0.999)
+
 #note[_Models (marked with dotted line) can make supporting attacks as they are directly behind a model attacking normally (marked with full line). The models in base contact are fighting to their flank, so no supporting attacks can be made by these two models._]
+
+#diagram("/assets/figures/rulebook/2.32/img-0500.jpg", 1.0)
 
 #note[_The models in the incomplete rank are moved to be in contact with their enemies._]
 
@@ -1527,6 +1560,8 @@ For most troops this will normally be 1, although bonuses for additional hand we
 *Gaps where models are missing from a rank do not prevent models from fighting.*
 
 If a unit is fighting to its flank, the models in the incomplete rank are moved into contact with the enemy, there to fight and be fought normally. If the unit is fighting to its rear (or fighting to both flanks) some enemy models might not end up in base contact because of the models in the incomplete rear rank. In this specific situation, the models can fight across the gap, even if not physically in base-to-base contact. Treat these models as being in base contact with the enemy.
+
+#diagram("/assets/figures/rulebook/2.32/img-0501.jpg", 0.463)
 
 #note[_Full lines = Attacks normally Dotted lines = Can make a supporting attack If casualties inflicted on the red unit causes the unit to be separated, move the blue unit forward to maximise contact._]
 
@@ -1778,6 +1813,7 @@ If the fleeing unit rolls higher than the pursuers, or has not been pursued at a
 
 To resolve the flee move, turn the unit around about its centre so that it is facing directly away from the enemy unit (rather than the enemy unit's centre).
 
+#diagram("/assets/figures/rulebook/2.32/img-0509.jpg", 0.999)
 #chart((("1. The red unit rolls its flee distance and the blue unit
 rolls its pursuit. The red unit has rolled higher and
 escape.", "2. The red unit pivots around its centre until it is facing
@@ -1815,6 +1851,7 @@ If a pursuit move would take the pursuer into contact with an enemy unit, then t
 
 Carry out the charge as you would in the Movement phase, following all the normal restrictions. However, you do not need to roll for the charge range – we
 
+#diagram("/assets/figures/rulebook/2.32/img-0511.jpg", 0.999)
 #chart((("1. The red unit has rolled high enough to escape their
 pursuers, and move through a friendly red unit as they
 flee.", "2. The blue unit's pursuit move would take them into
@@ -1879,6 +1916,9 @@ Note that if a unit is Disrupted from any source, it may not count its rank bonu
 
 Units on the losing side are Steadfast as per the normal rules as long as the combined Unit Strength of all friendly units is higher than that of the combined Unit Strength of all enemy units in the close combat. Note that currently Disrupted units do not contribute to the overall Unit Strength for those units that can be Steadfast.
 
+#diagram("/assets/figures/rulebook/2.32/img-0520.jpg", 0.463)
+#diagram("/assets/figures/rulebook/2.32/img-0521.jpg", 0.463)
+
 === MULTIPLE COMBATS AND
 
 === PURSUIT
@@ -1903,7 +1943,11 @@ Each fleeing unit pivots about its centre (ignoring enemy units) so that it is f
 
 You may find that this involves the fleeing unit turning so that it overlaps one or more other units in the fight. If this happens, simply estimate the unit's new position as best you can by holding it above the rest of the units in the fight.
 
+#diagram("/assets/figures/rulebook/2.32/img-0523.jpg", 0.463)
+
 #note[_The red unit turns to face directly away from the enemy unit with the largest Unit Strength, and flee. As the unit has fled through an enemy unit with Unit Strength 10 it suffers 10 Wounds with no saves, so the red unit would get destroyed as a result._]
+
+#diagram("/assets/figures/rulebook/2.32/img-0525.jpg", 0.463)
 
 #note[_The red unit has lost the combat and failed its Break test. It has rolled high enough to escape, and make its flee move of 7". The blue player decides to move his smaller unit first. The unit pivots to face the fleeing red unit and starts its pursuit move of 6". Because of its position, this move would bring it back into contact with the red unit, so it has to stop 1" away. The larger blue unit then makes its pursuit move, but must stop 1" away from its comrades._]
 
@@ -1980,6 +2024,8 @@ If a unit fails a Panic test:
 
 Providing that the panicked unit doesn't carry itself off the board with its first flee move, you'll have a chance to rally it in later turns.
 
+#diagram("/assets/figures/rulebook/2.32/img-0529.jpg", 1.0)
+
 #note[_The middle blue unit has been destroyed in close combat. All friendly units within 6" must immediately test for Panic — the destroyed unit is left in place until the tests are made to ensure an accurate measurement._]
 
 = SPECIAL RULES
@@ -2037,6 +2083,8 @@ Note that Breath Weapons are not physical attacks, and certain models may be Imm
 Provided the model is not in close combat, it can use its Breath Weapon during its Shooting phase. A Breath Weapon shooting attack can be made even if the model marched or reformed during the same turn, but it cannot be used as a Stand and Shoot charge reaction.
 
 To perform the attack, place the flame template so that it lies entirely within the model's forward arc, with the narrow end touching the model's base, and so that it is not touching any friendly units or enemy units that are in close combat. All models that are even partially under the template are automatically hit, following the normal rules for the flame template. The Strength and any special effects of the creature's Breath Weapon will be covered in its rules.
+
+#diagram("/assets/figures/rulebook/2.32/img-0532.jpg", 0.463)
 
 #note[_The teardrop-shaped template is placed with the thin end at the model's base and the wide end over the target unit. In this example 9 models are under the template and so are hit automatically._]
 
@@ -2448,6 +2496,7 @@ Skirmishers have the following rules:
 
 Skirmishers are deployed in a 'loose' formation, where the models are not placed in base contact, but are positioned roughly 1/2" apart. The models in the unit must still face the same direction and the unit will still have a front, two flanks and a rear – essentially the only difference is that the models are slightly spaced out. This dispersed formation allows Skirmishers to move and shoot with greater freedom than other troop types. All Skirmishers in a unit do not count as blocking each other’s Line of Sight (note that they still count as blocking Line of Sight for other units). As long as you can draw a Line of Sight from the front rank to the target, the second and subsequent ranks may fire too.
 
+#diagram("/assets/figures/rulebook/2.32/img-0543.jpg", 0.463)
 #namecost("Skirmishers & Charging", "")
 
 If skirmishers declare a charge (or a charge reaction that does not involve fleeing) they tighten their loose formation into a 'normal' formation after the charge distance is rolled and the chargers are moved. This happens 'for free' at the moment both units move into base contact. The unit immediately forms up in base contact around the centremost model in the front rank (the Skirmishers' controlling player can choose which if the front rank has an even number of models) that is also in base contact with the enemy.
@@ -2455,6 +2504,8 @@ If skirmishers declare a charge (or a charge reaction that does not involve flee
 The number of ranks, files and the formation's facing do not alter as the Skirmishers tighten up – all that happens is that models that were previously spaced out are now in base contact with one another. This has the effect of rendering the Skirmishers' loose formation into a regular shape so that other units can fight them in the normal way.
 
 If the Skirmishers are not in base contact with an enemy in the Remaining Moves sub-phase, the controlling player must move them apart so that they readopt their loose formation.
+
+#diagram("/assets/figures/rulebook/2.32/img-0546.jpg", 0.463)
 
 #note[_1\. Skirmishers form up to make or receive a charge as soon as they get into base contact with the enemy. 2. After ranking up, resolve the combat as normal._]
 
@@ -2928,6 +2979,8 @@ War machines can never charge or march. If charged, a war machine can only choos
 
 Even though most war machines do not have bases, units charging a war machine must still attempt to 'close the door' to align to the centre of the war machine's body.
 
+#diagram("/assets/figures/rulebook/2.32/img-0555.jpg", 0.463)
+
 #note[_The red unit has charged so they are touching the war machine and so can fight it in the ensuing combat._]
 
 #namecost("SHOOTING AT WAR MACHINES", "")
@@ -2943,6 +2996,8 @@ When firing a war machine's weapon, ranges are measured from the muzzle of the g
 Line of sight is always taken from the chosen firing point (i.e. its muzzle or crossbar, in the same way as for its range). Unlike other lone models, pivoting the war machine during the Movement phase counts as moving for war machines, and thus they cannot fire in turns they do so. Before you fire the war machine, pivot it to face your chosen target in the Shooting phase so the war machine faces it directly in a straight line – note that the target must be within the war machine's forward arc as normal.
 
 For war machine weapons that require Ballistic Skill, use the highest Ballistic Skill amongst the crew to resolve the shot. Unless specified, War Machines do not suffer To Hit penalties for Moving and Shooting or firing Multiple Shots.
+
+#diagram("/assets/figures/rulebook/2.32/img-0557.jpg", 0.463)
 
 #note[_Unit A is outside of the cannon's line of sight and therefore cannot be targeted unless it moves during the Movement phase, but then cannot fire this turn. Unit B is within line of sight and thus the cannon can pivot on the spot in the shooting phase and still fire on them this turn._]
 
@@ -3125,6 +3180,8 @@ If the rank hit by the bolt is made entirely of characters, or if the total numb
 
 Note that repeating bolts do not pierce ranks.
 
+#diagram("/assets/figures/rulebook/2.32/img-0564.jpg", 0.463)
+
 #note[_Up to four models can be killed by the shot of this bolt thrower. The Strength that each rank is hit at is shown next to it. As the bolt thrower is in their flank arc, up to five models can be killed by its shot. The bolt thrower can see the cavalry unit, and so it can fire against them (with the hard cover modifier). If it hits, it will skewer the flank of the unit, as shown in the diagram, as it is in the knights' flank arc._]
 
 === CANNONS
@@ -3157,6 +3214,7 @@ machine model round or place a marker of
 some kind to indicate this."), ("5-6", "May not Shoot: The war machine is
 unharmed and can shoot as normal again in
 the controlling player's next turn.")))
+#diagram("/assets/figures/rulebook/2.32/img-0566.jpg", 0.999)
 #chart((("The cannon targets the model, as marked by the dot. After
 that, the player rolls the artillery and scatter dice to find out
 whether or not the shot lands on target.", "The artillery dice did not roll a 'Hit'; and as such the
@@ -3180,6 +3238,8 @@ The bounce of the cannonball is determined using the line template. On most occa
 #namecost("Direct Hit", "")
 
 Damage is resolved differently depending on whether or not the cannon ball hits a model directly or not. Normal Cannons have both the Multiple Wounds (D6) and (D3) special rules. It inflicts D6 Wounds only if the cannon ball lands directly on a model (that is, where the marker is placed after the first artillery and scatter dice are rolled), models hit by the bounce only suffer D3 Wounds. Great Cannons on the other hand, inflicts D6 Wounds on both direct hits and the bounce.
+
+#diagram("/assets/figures/rulebook/2.32/img-0568.jpg", 0.999)
 
 #note[_Initial position The cannonball lands right on target. The following bounce goes through all three ranks of the unit, scoring 3 hits. Initial position The cannonball strikes the large model, but does not kill it, so the shot does not go through the unit behind._]
 
@@ -3257,6 +3317,8 @@ The model (if there is one) under the template's central hole take an automatic 
 Other models wholly or partially beneath the template are hit automatically at the stone thrower's lower Strength (normally 4).
 
 The stone thrower's Multiple Wounds (D3) special rule applies only to the high-Strength hit caused against the model under the template's central hole – unsaved wounds from the low Strength hit are not multiplied.
+
+#diagram("/assets/figures/rulebook/2.32/img-0571.jpg", 0.463)
 
 #note[_As the rock blocks line of sight to the centre of the unit, the template is instead placed to the side of the unit, as centrally as possible. Here, 11 models are hit, with the model under the hole suffering a Strength 8 hit rather than Strength 4._]
 
@@ -3372,6 +3434,8 @@ Characters can change position inside a unit as part of a normal move, as long a
 
 If a unit containing one or more characters has had its Movement Allowance altered, this will affect a character leaving the unit, including if they try to charge out of it, but for that move only.
 
+#diagram("/assets/figures/rulebook/2.32/img-0576.jpg", 0.463)
+
 #note[_This model is riding on a mount and has a 25mm x 50mm footprint. He can still join the infantry unit, but will displace two models as the infantry models have a 25mm x 25mm footprint. The two infantry models that are displaced are moved to the rear rank. All the units shown below have three complete ranks, and therefore a rank bonus of +2. This character's base footprint does not fit neatly into the unit, so it is placed at the side instead. The character is ignored for the purpose of calculating rank bonus._]
 
 #namecost("SHOOTING", "")
@@ -3397,6 +3461,8 @@ In the Close Combat phase, enemy models in base contact with both the character 
 At the start of the combat (before Impact Hits are resolved), if a character's unit is in combat, but the character is not in base contact with the enemy, the controlling player can swap his position with another model that is in base contact. You can exchange him with rank-and-file model(s), including the command group, that are in base contact with the enemy. If there are one or more stranded characters on both sides, the players roll off and the winner decides which character makes his Make Way! first. Players then alternate choosing characters to do their Make Way! moves. Only characters whose footprint is compatible with the unit's rank and file can do this.
 
 Note that Make Way can only be used to move the character to another position in the front rank; it cannot be used to move the character to a rank in the flank or rear.
+
+#diagram("/assets/figures/rulebook/2.32/img-0579.jpg", 0.463)
 
 #note[_The character is not in base contact with the enemy at the start of the combat, and so is allowed to perform a Make Way move to get into contact._]
 
@@ -3429,6 +3495,7 @@ When leaving a unit, the character reverts to their normal rules for movement. T
 
 As soon as the last model from the unit has been removed, any remaining characters will count as a new unit. Note that this will cause Panic tests to all friendly units within 6" (including the newly formed unit of character(s)) as the unit has been destroyed.
 
+#diagram("/assets/figures/rulebook/2.32/img-0581.jpg", 0.999)
 #chart((("1. The character charges out of the unit in the Charge sub-
 phase, or moves out of the unit in the Remaining Moves sub-
 phase.", ""), ("", "2. The unit then moves off in the Remaining Moves sub-
@@ -3443,6 +3510,8 @@ Characters that are Infantry follow the rules for Skirmishers. Characters that a
 #namecost("SHOOTING AT LONE CHARACTERS", "")
 
 If a lone character is hit by a missile attack (remember the modifier for shooting at Lone Models) a "Look Out, Sir!" roll can be attempted, provided there is a friendly unit consisting of five or more rank and file models of the character's troop type within 3". Roll a D6. On a roll of 4+, the hit is transferred to a model in the friendly unit (if there is more than one eligible unit within 3", the controlling player can decide which). Otherwise, the hit is resolved against the character as normal.
+
+#diagram("/assets/figures/rulebook/2.32/img-0583.jpg", 0.463)
 
 #note[_1\. This model has a different Troop Type than the unit, and therefore receives no protection from the unit. 2. This model is too far away to gain any benefit from near the unit. 3. This model has the same Troop Type as the unit and is close enough to receive a 4+ "Look Out, Sir!" against missile attacks._]
 
@@ -4258,6 +4327,8 @@ Use victory points to determine the winner of the battle.
 
 None.
 
+#diagram("/assets/figures/rulebook/2.32/img-0600.jpg", 0.762)
+
 == DAWN ATTACK
 #namecost("THE ARMIES", "")
 
@@ -4305,6 +4376,8 @@ Use victory points to determine the winner of the battle.
 
 None.
 
+#diagram("/assets/figures/rulebook/2.32/img-0602.jpg", 0.754)
+
 == BATTLE FOR THE PASS
 #namecost("THE ARMIES", "")
 
@@ -4337,6 +4410,8 @@ Use victory points to determine the winner of the battle.
 #namecost("SCENARIO SPECIAL RULES", "")
 
 *Bottleneck:* The battle is being fought in a narrow pass enclosed by high cliffs. Because of this, the long table edges count as impassable terrain. Following the normal rules, fleeing units can force a way through the impassable terrain and disappear from the table. Other units (including reinforcements) may not enter or leave via a long table edge unless they are Ethereal or a Flyer. This means that pursuing or overrunning units, other than Ethereals and Flyers, must stop 1" away from the long table edges.
+
+#diagram("/assets/figures/rulebook/2.32/img-0604.jpg", 0.759)
 
 == BLOOD AND GLORY
 #namecost("THE ARMIES", "")
@@ -4373,6 +4448,8 @@ The first army to break the enemy wins the battle (see above). If neither army h
 
 For example, a 2,000 point army (breaking point 2) has three unit standards, a battle standard, and a General, giving it a starting fortitude of six (3 + 1 + 2=6). It would break as soon as its fortitude was reduced to two.
 
+#diagram("/assets/figures/rulebook/2.32/img-0606.jpg", 0.75)
+
 == MEETING ENGAGEMENT
 #namecost("THE ARMIES", "")
 
@@ -4406,6 +4483,8 @@ Use victory points to determine the winner of the battle.
 
 *Reserves:* Reserves are not deployed at the start of the battle. Instead they can enter play on any turn of their player's choosing, using the reinforcements rules. They may enter at any point on the long table edge of their deployment zone.
 
+#diagram("/assets/figures/rulebook/2.32/img-0608.jpg", 0.762)
+
 == THE WATCHTOWER
 #namecost("THE ARMIES", "")
 
@@ -4436,6 +4515,8 @@ At the end of the battle, the side that controls the watchtower is the winner. T
 #namecost("SCENARIO SPECIAL RULES", "")
 
 None.
+
+#diagram("/assets/figures/rulebook/2.32/img-0610.jpg", 0.756)
 
 = MAGIC ITEMS
 

@@ -25,14 +25,26 @@ and no challenge to their status is intended. Not for sale.
 
 **No illustration is taken out of a source PDF.** The rules text is Eliasson's
 and freely distributed; the artwork in the older books is neither his nor ours to
-republish, and this repository is public. So `batch.py` promotes no raster image
-into `assets/` unless `--art` asks it to, and refuses even then above eighty
-images in a book. An army book on the line imported here holds two to eight —
-a parchment background, a flat block, at most one diagram of unit bases — and the
-rulebook holds 49, because its diagrams of movement and charge arcs are its own
-and it places 46 of them. The illustrated editions of the same armies hold 126 to
-529 by the same count. A book whose diagrams are therefore absent says so at
-import rather than leaving it to be noticed.
+republish, and this repository is public.
+
+A **diagram** is a different thing and does come across: a board, unit bases as
+coloured rectangles, measurement arrows — the rulebook's charge arcs and the
+Empire's formation diagram are these. So `batch.py` promotes no raster image into
+`assets/` unless `--art` asks it to, which is what a book with diagrams is
+imported with, and refuses even then above eighty images in a book. An army book
+on the line imported here holds two to eight — a parchment background, a flat
+block, at most one diagram — and the rulebook holds 49, because it places 46
+diagrams of its own. The illustrated editions of the same armies hold 126 to 529
+by the same count.
+
+Two things follow, both of which the numbers alone would not give:
+
+- **A one-colour image is not taken at all.** What these books offer as a cover
+  is a black mask over vector art that is not extractable, so all 34 covers
+  taken before that check existed are a single colour at 100%, and the blank
+  plate reads better than a black square.
+- **A book whose diagrams are absent says so at import**, rather than leaving a
+  difference from the source to be noticed later.
 
 ## Pipeline
 
