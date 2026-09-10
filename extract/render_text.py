@@ -60,16 +60,34 @@ def context(a: str, b: str, width: int = 40) -> str:
             f"      after : …{b[start:i + width]}…")
 
 
-def pairs(before: Path, after: Path) -> list[tuple[str, Path, Path]]:
-    """One (name, before, after) per book, whether given files or directories."""
+def books_under(root: Path) -> dict[str, Path]:
+    """Every render below a directory, keyed by its path under that directory.
+
+    Recursive, and keyed on the path rather than the file name, because a book
+    renders to `lizardmen/3.0.pdf` now and not `lizardmen.pdf`. A flat glob
+    finds nothing whatever in that tree, and a key of `3.0.pdf` would be the
+    name of half the corpus at once.
+    """
+    return {p.relative_to(root).as_posix(): p for p in root.rglob("*.pdf")}
+
+
+def pairs(before: Path,
+          after: Path) -> tuple[list[tuple[str, Path, Path]], list[str]]:
+    """One (name, before, after) per book, plus the books only one side has.
+
+    The corpus is compared against a render made before part of it existed
+    often enough that dropping the difference in silence would let the tally
+    read as coverage it does not have.
+    """
     if before.is_dir() != after.is_dir():
         sys.exit("render_text: give two PDFs or two directories, not one of each")
     if not before.is_dir():
-        return [(before.stem, before, after)]
-    names = sorted({p.name for p in before.glob("*.pdf")} & {p.name for p in after.glob("*.pdf")})
+        return [(before.stem, before, after)], []
+    a, b = books_under(before), books_under(after)
+    names = sorted(a.keys() & b.keys())
     if not names:
         sys.exit("render_text: the two directories share no PDF names")
-    return [(n[:-4], before / n, after / n) for n in names]
+    return [(n[:-4], a[n], b[n]) for n in names], sorted(a.keys() ^ b.keys())
 
 
 def main() -> None:
@@ -80,7 +98,7 @@ def main() -> None:
     args = ap.parse_args()
 
     moved = 0
-    books = pairs(args.before, args.after)
+    books, unpaired = pairs(args.before, args.after)
     for name, a, b in books:
         sa, sb = stream(a), stream(b)
         if sa == sb:
@@ -89,6 +107,9 @@ def main() -> None:
         print(f"  {name}: {len(sa)} letters -> {len(sb)}")
         print(context(sa, sb))
 
+    if unpaired:
+        print(f"\n{len(unpaired)} book(s) on one side only, not compared: "
+              f"{', '.join(n[:-4] for n in unpaired)}")
     print(f"\nbooks whose text moved: {moved}/{len(books)}")
     sys.exit(1 if moved else 0)
 

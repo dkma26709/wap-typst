@@ -56,6 +56,25 @@ def hits(pdf: Path) -> list[tuple[str, int, str]]:
     return found
 
 
+def baseline_for(pdf: Path, index: dict[str, Path]) -> Path | None:
+    """The baseline render of the same book, matched on the longest path tail.
+
+    Not on the file name, which stopped identifying a book when the books moved
+    into folders: `lizardmen/3.0.pdf` has the name `3.0.pdf`, so the old lookup
+    went to `<baseline>/3.0.pdf` and found nothing at all for any of the corpus
+    - the sweep could not run against a baseline. A bare version is also the
+    name of most of the books at once, so it is the wrong key even where it
+    does resolve. Trying the longest tail first means a nested render finds its
+    own army's book, and a tail that is nowhere in the baseline comes back
+    empty rather than pointing at another army.
+    """
+    parts = pdf.as_posix().split("/")
+    for i in range(len(parts)):
+        if (key := "/".join(parts[i:])) in index:
+            return index[key]
+    return None
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -64,19 +83,25 @@ def main() -> None:
                     help="a directory of baseline renders; report only new hits")
     args = ap.parse_args()
 
+    index = ({p.relative_to(args.against).as_posix(): p
+              for p in args.against.rglob("*.pdf")} if args.against else {})
+
     total = 0
     for pdf in args.pdf:
         found = hits(pdf)
         if args.against:
-            baseline = args.against / pdf.name
-            if not baseline.exists():
-                sys.exit(f"render_artefacts: no baseline for {pdf.name} in {args.against}")
+            baseline = baseline_for(pdf, index)
+            if baseline is None:
+                sys.exit(f"render_artefacts: no baseline for {pdf} in {args.against}")
             # Compare on label and fragment, never on page number: a hit that
             # merely moved pages is the same hit.
             known = {(label, fragment) for label, _, fragment in hits(baseline)}
             found = [h for h in found if (h[0], h[2]) not in known]
+        # The army and the version, not the stem: on the folder layout the stem
+        # alone is `3.0` for most of the corpus and names no book at all.
+        book = f"{pdf.parent.name}/{pdf.stem}" if pdf.parent.name else pdf.stem
         for label, pno, fragment in found:
-            print(f"  {pdf.stem} p{pno} [{label}] …{fragment}…")
+            print(f"  {book} p{pno} [{label}] …{fragment}…")
         total += len(found)
 
     kind = "new artefacts" if args.against else "artefacts"
