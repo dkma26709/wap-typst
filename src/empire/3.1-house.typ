@@ -68,6 +68,10 @@ Each Hit from a grenade launching blunderbuss is multiplied into D6 Hits.
 
 #note[_A repeater pistol can be used in combination with a regular pistol as a brace of pistols, in which case they fire Multiple Shots (4), but do not have Rapid Fire._]
 
+#namecost("FULL PLATE", "")
+
+Models with heavy armor only. The model gains a +1 modifier to their armour save.
+
 = THE CULT OF ULRIC
 
 #columns(2)[
@@ -665,6 +669,7 @@ The unit carrying this banner gains the Immunity (Terror) special rule.
   - Medium armour +9 points
   - Heavy armour +18 points
 - May take a shield +5 points
+- May be upgraded with the Full Plate special rule for +6 points.
 - May be mounted on one of the following:
   - Warhorse +15 points
   - Pegasus +25 points
