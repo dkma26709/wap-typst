@@ -79,10 +79,6 @@ A chaintrap has the following profile:
 
 A model with a gut-plate gains a 6+ armour save against attacks to the front.
 
-#namecost("IMPALE", "")
-
-A mount with this special rule has the Mighty Blow (1) special rule in any turn that it charges.
-
 #namecost("IRONFIST", "")
 
 Buckler. If a model with an ironfist rolls a natural 6 when making a Parry save, it automatically inflicts an extra Hit back onto the model or unit that struck the blow.
@@ -575,7 +571,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   ),
   troop-type: "Monstrous Beast (Rhinocerine)",
   base-size: "50x100",
-  special-rules: "Impale, Natural Armour (6+)",
+  special-rules: "Impact Hits (D3), Natural Armour (6+)",
   notes: [
 - A model mounted on a Mournfang has a Unit Strength and Line of Sight value of 4.
   ],
@@ -587,7 +583,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   ),
   troop-type: "Monstrous Creature (Rhinocerine)",
   base-size: "50x100",
-  special-rules: "Frenzy, Impale, Natural Armour (6+)",
+  special-rules: "Frenzy, Impact Hits (D3), Natural Armour (6+)",
   notes: [
 - A model mounted on a Grimhorn Rhinox has a Unit Strength and Line of Sight value of 5.
   ],
@@ -794,7 +790,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   mount: "Mournfang (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, light armour, gut-plate",
-  special-rules: "Impale, Natural Armour (5+)",
+  special-rules: "Impact Hits (D3), Natural Armour (5+)",
   options: [
 - May choose one of the following:
   - Ironfists +3 points/model
@@ -882,7 +878,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   drawn-by: "1 Young Rhinox (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, gut-plate",
-  special-rules: "Fear, Impale, Natural Armour (5+)",
+  special-rules: "Fear, Impact Hits (D3), Natural Armour (5+)",
   notes: [
 - A Rhinox Chariot has a Line of Sight value of 4.
   ],
@@ -927,7 +923,7 @@ If a misfire is rolled, roll a D6 and consult the Scraplauncher Misfire chart.
 Movement (2D6) special rule, and will move in a random direction."), ("3-4", "Splang! The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this
 turn or in the controlling player's next turn."), ("5-6", "It's Mine! The Scraplauncher may not fire this turn.")))
   ],
-  special-rules: "Fear, Impale, Natural Armour (6+)",
+  special-rules: "Fear, Impact Hits (D3), Natural Armour (6+)",
   notes: [
 - A Scraplauncher has a Line of Sight value of 4.
   ],
@@ -954,7 +950,7 @@ The Skewerslinger does not suffer To Hit penalties for moving and shooting. If y
 #chart((("D6", "Result"), ("1", "Kerrr-unch! The Skewerslinger is destroyed."), ("2", "Groink?!? The Skewerslinger may not shoot this turn, and from now on it has the Random
 Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Splang! The Skewerslinger suffers one Wound which Ignores Armour Saves.")))
   ],
-  special-rules: "Fear, Impale, Natural Armour (6+)",
+  special-rules: "Fear, Impact Hits (D3), Natural Armour (6+)",
   notes: [
 - A Skewerslinger has a Line of Sight value of 4.
   ],
@@ -992,7 +988,7 @@ Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Sp
   mount: "Grimhorn Rhinox (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, light armour, gut-plate",
-  special-rules: "Frenzy (Grimhorn Rhinox only), Impale, Natural Armour (5+)",
+  special-rules: "Frenzy (Grimhorn Rhinox only), Impact Hits (D3), Natural Armour (5+)",
   options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
@@ -1041,7 +1037,7 @@ shoot this turn.")))
 
 #unit("STONEHORN",
   profiles: (
-    (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 235),
+    (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 260),
     (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
   ),
   troop-type: "Monster (Rhinocerine)",
@@ -1050,7 +1046,7 @@ shoot this turn.")))
   equipment: "Light lance, gut-plate (Beast Rider only)",
   special-rules: "Frenzy (Stonehorn only), Natural Armour (3+)",
   special-rules-body: (
-    rule("Earth-shattering Charge")[A Stonehorn has the Devastating Charge and Mighty Blow (1) special rules in any turn that it charges.],
+    rule("Earth-shattering Charge")[A Stonehorn has the Impact Hits (D6) special rule. When a Stonehorn makes a successful charge, you may roll 2D6 when determining the number of Impact Hits, and choose the highest result.],
     rule("Stone Skeleton")[If an attack with the Multiple Wounds special rule successfully wounds a Stonehorn, halve the number of Wounds inflicted (rounding up)],
   ),
   upgrades: (
@@ -1231,7 +1227,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
   magic-items: (
     rule("Ironskin Armor")[Magic Armour. Medium armour. The Ironskin Armor gives Ghark a Magical Ward (6+).],
   ),
-  special-rules: "Frenzy (Iron Rhinox only), Impale (Iron Rhinox only), Natural Armour (3+)",
+  special-rules: "Frenzy (Iron Rhinox only), Impact Hits (D3) (Iron Rhinox only), Natural Armour (3+)",
   special-rules-body: (
     rule("Iron Rhinox")[The Iron Rhinox has a Strength 2 Breath Weapon with the Armour Piercing (2) special rule.],
     rule("The Ironskin Tribe")[If Ghark is the Army General, Leadbelchers count as a Core Units instead of Special Units and Grimhorn Rhinox Riders count as a Special Units instead of Rare Units.],
