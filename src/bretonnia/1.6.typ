@@ -1,0 +1,1486 @@
+// Bretonnia 1.6 - re-typeset from the Warhammer Armies Project PDF.
+// Imported once by extract/to_book.py; this file is the source of truth
+// now, so edit it directly. Nothing regenerates it.
+//
+// Rules text, army design and points values are Mathias Eliasson's work.
+// Only the typesetting differs here - see the colophon below.
+
+#import "../template.typ": *
+
+#book-meta(
+  slug: "bretonnia",
+  army: "Bretonnia",
+  version: "1.6",
+  layout: "army",
+  align: "order",
+)
+
+#show: book.with(title: "Warhammer Armies Project — Bretonnia 1.6")
+
+#cover(
+  title: "Bretonnia",
+  subtitle: "Warhammer Armies Project · 1.6",
+  art: none,
+)
+
+#colophon((
+  [
+    An unofficial, non-commercial re-typesetting of *Warhammer Armies Project:
+    Bretonnia*, version 1.6 — written and freely distributed by Mathias
+    Eliasson.
+  ],
+  [
+    All rules text, army design and points values remain the work of their
+    author. This edition changes only the typesetting; the content is
+    reproduced from the freely distributed PDF.
+  ],
+  [
+    Warhammer, Warhammer Fantasy Battle and all associated names, races and
+    places are trademarks of Games Workshop Limited. This document is
+    unofficial and unaffiliated, and no challenge to their status is intended.
+  ],
+  [Typeset with Typst. Not for sale.],
+))
+
+#outline(title: [Contents], depth: 2)
+
+= ARMY SPECIAL RULES
+
+#columns(2)[
+This section of the book describes all the different units used in a Bretonnian army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Bretonnian units, and these are detailed here.
+
+#namecost("THE LANCE FORMATION", "")
+
+Any Cavalry unit with this special rule may deploy in the Lance Formation and/or reform into it during the game. A unit in Lance Formation follow the rules for Ranks that apply to Monstrous Cavalry. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance Formation. Note that if a unit is ever wider than three models, it no longer counts as being in Lance Formation. In addition to this, the unit may form a unit up to 5 ranks deep.
+
+A Wizard may be placed in the centre of the second rank of the Lance Formation rather than the front rank, as the Knights form up protectively around her. Note that she remains fully in play even if she is not in the front rank (so the unit may use her Leadership, she may cast magic, etc.). If a second Wizard joins the unit, she may be placed in the centre of the third rank. If the rank in front of the Wizard ever falls below three models, she will move forward to take up the empty space. A Wizard in the second rank still counts as having line of sight for the purpose of casting spells.
+
+On a turn that a unit in Lance Formation makes a successful charge, all models with this special rule gain the Fight in Extra Ranks (1) special rule, and every rider that gets to fight can make up to 3 Supporting Attacks rather than 1. In addition, they add their current Rank Bonus to the Strength of the Impact Hits they inflict.
+
+#namecost("THE BLESSING OF THE LADY", "")
+
+Models with this special rule have a 6+ Ward save. This is increased to a 5+ Ward save against missile attacks. Models with the Grail Vow always have a 5+ Ward save. Models with the Blessing of the Lady will lose it if they flee for any reason or refuse a challenge.
+
+#namecost("CHIVALROUS VOWS", "")
+
+Your Army General must always be a model with one of the Chivalrous Vows below.
+
+\- *The Knight's Vow:* Models with the Knight's Vow have Immunity (Panic) caused by friendly models without a Chivalrous Vow. In addition, they may only join units with the Knight's Vow.
+
+\- *The Crusader's Vow:* Models with the Crusader's Vow have Immunity (Panic) caused by friendly models without a Chivalrous Vow and may re-roll failed Panic tests. In addition, they may only join units with the Knight's Vow or the Crusader's Vow. Furthermore, a character with the Crusader Vow allows any unit they join to roll an additional D6 for their charge distance roll and discard the lowest result.
+
+\- *The Questing Vow:* Models with the Questing's Vow have Immunity (Panic) caused by friendly models without a Chivalrous Vow and may re-roll failed Psychology tests. In addition, they may only join units with the Knight's Vow, the Crusader's Vow or the Questing Vow. Furthermore, they ignore Initiative penalties from using great weapons in any turn that they charge, but they may not use a heavy lance (unless specified).
+
+\- *The Grail Vow:* Models with the Grail Vow have the Immunity (Psychology) and Magical Attacks special rules. In addition, they may only join units with the Knight's Vow, the Crusader's Vow, the Questing Vow or the Grail Vow. Furthermore, characters with the Grail Vow add +1 to their Leadership.
+
+#namecost("THE PEASANT'S DUTY", "")
+
+Models with the Peasant's Duty treat all friendly models with a Chivalrous Vow as having the Inspiring Presence (6) special rule. In addition, unit standards in units with the Peasant’s Duty do not confer any additional victory points if captured. Characters with the Peasant's Duty may not join units that have a Chivalrous Vow.
+
+#namecost("PUREBRED WARHORSE", "")
+
+Models with this special rule do not suffer any movement penalties for being barded.
+]
+
+= THE LORE OF THE LADY
+
+#columns(2)[
+#namecost("FAVOUR OF THE LADY", "")
+#namecost("Lore Attribute", "")
+
+If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Ward save rolls of 1 until the start of the next Bretonnian Magic phase.
+
+#namecost("STEED OF THE LADY", "")
+#namecost("Signature Spell Cast on 7+", "")
+
+_Steed of the Lady_ is a *conveyance* spell with a range of 18" that targets Cavalry or Monstrous Cavalry with a Chivalrous Vow. The target may immediately make a normal move as if it were the Remaining Moves sub- phase.
+
+#namecost("MIST OF CHALONS", "")
+#namecost("Level 1 Cast on 5+", "")
+
+_Mist of Châlons_ is an *augment* spell with a range of 18". All missile attacks targeting the unit suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.
+
+#namecost("THE LADY'S GIFT", "")
+#namecost("Level 1 Cast on 6+", "")
+
+Remains in Play. _The Lady's Gift_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. While this spell is in effect, the target unit has the Regeneration (6+) special rule.
+
+#namecost("BEGUILEMENT OF BLONDEL", "")
+#namecost("Level 1 Cast on 6+", "")
+
+Remains in Play. _Beguilement of Blondel_ is a *hex* spell with a range of 24". While the spell is in effect, the target is subject to the Stupidity special rule.
+
+#namecost("DOOM OF DOL", "")
+#namecost("Level 2 Cast on 7+", "")
+
+Remains in play. _Doom of Dol_ is a *hex* spell with a range of 24" that targets a single enemy Character (even a character in a unit) or Lone Model. Choose one friendly character with any Chivalrous Vow in your army. While the spell is active, the chosen Knight will Hit and Wound that enemy model on a 2+ with the Ignores Armour Saves special rule.
+
+#namecost("SACRED LIGHTNING", "")
+#namecost("Level 2 Cast on 7+", "")
+
+_Sacred Lightning_ is a *magic missile* with a range of 24" that causes D6 Strength 3 Hits with the Lightning Attacks special rule.
+
+#namecost("BURNING GAZE", "")
+#namecost("Level 2 Cast on 8+", "")
+
+_Burning Gaze_ is a *direct damage* spell. Extend a straight line, 30" in length, within the caster's forward arc and directly away from their base. Any model whose base falls under the line suffers a Strength 5 hit with the Flaming Attacks special rule.
+
+#namecost("THE CURSE OF THE LADY", "")
+#namecost("Level 3 Cast on 9+", "")
+
+_The Curse of the Lady_ is a *hex* spell with a range of 24". The target must pass a Leadership test with a \-2 modifier or suffer \-1 Weapon Skill, Initiative and Leadership for every point they fail the test by (down to a minimum of 1).
+
+#namecost("THE LADY'S WRATH", "")
+#namecost("Level 3 Cast on 9+", "")
+
+_The Lady's Wrath_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit gains +1 Strength (excluding mounts) and the Armour Piercing (1) special rule until the start of your next Magic phase.
+
+#namecost("SHIELD OF THE LADY", "")
+#namecost("Level 3 Cast on 10+", "")
+
+_Shield of the Lady_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit may re-roll failed armour saves until the start of your next Magic phase.
+
+#namecost("SPITEFUL GLANCE", "")
+#namecost("Level 4 Cast on 11+", "")
+
+_Spiteful Glance_ is a *hex* spell with a range of 12" that targets a single model (even a character in a unit). If the spell is successfully cast, the enemy is turned into a frog. Replace the model with a frog familiar or similar marker. This marker cannot be damaged and does not interfere with other units, simply move it so it is 1" away from all units and impassable terrain in a random direction if needed.
+
+At the start of each enemy turn, the transformed model must take a Leadership test; if successful it is transformed back into its original shape, facing in a random direction. If the test is failed, move the marker D6" in a random direction, stopping within 1" of other units or impassable terrain. If the model is still in its frog form at the end of the game, it is treated as a casualty.
+
+#runin[THE LADY]'#runin[S VIRTUE OF VALOUR]
+
+#namecost("Level 4 Cast on 12+", "")
+
+_The Lady’s Virtue of Valour_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.
+
+#namecost("SUMMONING THE FAY", "")
+#namecost("Level 4 Cast on 15+", "")
+
+_Summoning the Fay_ is a *summoning* spell with a range of 18" that brings a unit of Spirits of the Fay into play. Roll D6+4. This is how many models comprise the new unit.
+]
+
+= VIRTUES OF THE CHIVALRIC KNIGHT
+
+#columns(2)[
+*This section contains the rules for different Virtues used by the Bretonnians. More than one character can have the same Virtue, but to represent the rarity of this, any character that takes a Virtue another character already has must pay double the points listed below. If a third character takes the same Virtue they must pay triple, and so on.*
+
+#namecost("VIRTUE OF HEROISM", "35 points")
+
+The Knight has the Heroic Killing Blow special rule.
+
+#namecost("VIRTUE OF STOICISM", "35 points")
+
+The Knight (and any unit he has joined) gains the Cold-Blooded special rule.
+
+#namecost("VIRTUE OF THE IDEAL", "30 points")
+
+The Knight gains the following bonuses to his profile: +2 Weapon Skill, +1 Initiative, +1 Attack. He may not be the army's General and any friendly unit (including other Knightly characters, or units using a Knight's Leadership) taking any form of Leadership test within 6" of this model suffers a \-1 penalty to their Leadership.
+
+#namecost("VIRTUE OF THE IMPETUOUS", "")
+#namecost("KNIGHT", "30 points")
+
+The Knight, and any mounted unit he is with, adds +D3" to their charge distance.
+
+#namecost("VIRTUE OF KNIGHTLY ARDOUR", "30 points")
+
+The Knight and unit he is with may respond to a charge to his unit’s front by counter charging if he can pass a Leadership test and roll higher than the enemy for the charge distance. If he succeeds, count the enemy’s charge as a failed one and move the Knight's unit as per a normal charge.
+
+#namecost("VIRTUE OF AUDACITY", "30 points")
+
+Against enemies with a higher Strength than himself (before modifications from weapons etc), the Knight may re-roll any failed rolls to hit and to wound.
+
+#namecost("VIRTUE OF CONFIDENCE", "25 points")
+
+The Knight must always issue challenges, and will always accept them if possible. In challenges, the Knight may re-roll all failed rolls to hit and to wound.
+
+#namecost("VIRTUE OF KNIGHTLY TEMPER", "25 points")
+
+For each attack that the Knight hits and wounds with on the charge (after Saves), he may make an additional attack. Extra attacks are not generated if these additional attacks also hit and wound.
+
+#namecost("VIRTUE OF DEVOTION", "20 points")
+
+The Knight is completely immune to the effects of all enemy spells.
+
+#namecost("VIRTUE OF DUTY", "20 points")
+
+For as long as the General is alive, the model with this Virtue adds +1 to the combat resolution of any fight of which he is a part. May not be taken by the General.
+
+#namecost("VIRTUE OF THE PENITENT", "20 points")
+
+The Knight has the Stubborn special rule, though he may never join any friendly units.
+
+#namecost("VIRTUE OF THE JOUST", "20 points")
+
+The Knight may re-roll failed rolls to hit when charging and/or using a lance (including magical lances).
+
+#namecost("VIRTUE OF UTTER SERENTIY", "20 points")
+
+All enemy Wizards within 12" of this Knight suffer \-1 to their casting result.
+
+#namecost("VIRTUE OF DISCIPLINE", "15 points")
+
+Enemies can never claim the Outnumber bonus against the Knight and any unit he is with.
+
+#namecost("VIRTUE OF NOBLE DISDAIN", "15 points")
+
+The Knight Hates all enemies using missile weapons including war machine crews. In addition, any unit the Knight has joined never takes Panic tests caused by suffering 25% casualties from Shooting or Magic.
+
+#namecost("VIRTUE OF PURITY", "15 points")
+
+The Knight gains a +1 bonus to their Ward save from the Blessing of the Lady.
+
+#namecost("VIRTUE OF EMPATHY", "10 points")
+
+If the Knight is not the army's General, models with the Peasant's Duty within 12" of him treat him as having the Inspiring Presence rule. If he is the army’s General, his Inspiring Presence rule is instead increased to 18" for models with the Peasant's Duty. In addition, he may join units with the Peasant's Duty.
+]
+
+= MAGIC ITEMS
+
+*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Bretonnians. These may be used in addition to the magic items found in the Warhammer rulebook. Bretonnian characters equipped with a normal lance and a magic weapon may use their lance when charging and then use the magic weapon in the second and subsequent turns of a close combat.*
+
+#entry("MAGIC WEAPONS")
+#namecost("SILVER LANCE OF THE BLESSED", "70 points")
+
+Heavy lance. If the model has the Blessing of the Lady, then all attacks with the Silver Lance of the Blessed automatically hit. In addition, all successful enemy armour saves and Ward saves must be re-rolled. However, if the model wielding the lance flees for any reason, he suffers D6 Flaming Strength 4 hits with the Ignores Armour Saves special rule.
+
+#namecost("CRUSADER'S LANCE", "30 points")
+
+Heavy lance. This weapon gives the wielder the Devastating Charge and Hatred special rules.
+
+#namecost("SWORD OF HEROES", "30 points")
+
+Against enemies that have Toughness 5 or greater, the bearer gets +2 Strength and the Multiple Wounds (D3) special rule.
+
+#namecost("WYRMLANCE", "30 points")
+
+Heavy lance. The wielder of the Wyrmlance gains a Strength 3 Breath Weapon with the Flaming Attacks special rule. In addition, all attacks made with the Wyrmlance have the Flaming Attacks special rule.
+
+#namecost("BIRTH-SWORD OF CARCASSONNE", "25 points")
+
+The Birth-sword of Carcassonne gives +1 Strength to the wielder. Enemies wounded by the sword must re- roll any successful Armour saves.
+
+#namecost("SWORD OF THE QUEST", "25 points")
+
+Questing Vow only. The Sword of the Quest may be used as either a hand weapon or a great weapon, decided at the start of each round combat. All attacks made by the Sword of the Quest have the Ignores Armour Saves special rule.
+
+#namecost("HEARTWOOD LANCE", "25 points")
+
+Heavy lance. The Heartwood Lance allows the bearer to re-roll all failed rolls to wound.
+
+#namecost("FRONTIER AXE", "25 points")
+
+Great weapon. All attacks made with this weapon have the Multiple Wounds (2) special rule.
+
+#namecost("THE VIRTUOUS LANCE", "25 points")
+
+Heavy Lance. This lance gives the wielder the Mighty Blow (1) and Multiple Wounds (D3) special rules when charging.. When fighting Monstrous Creatures and Monsters, once you have established how many wounds have been inflicted, roll a D6 and add the number of wounds caused to the score. If the total is equal to 6 or more, remove the model as a casualty. Note that the wielder must cause at least one unsaved Wound for this rule to take effect.
+
+#namecost("FOEBREAKER", "20 points")
+
+This weapon gives the wielder +1 Strength. Any enemy Character or Lone Model that suffers one or more unsaved wounds from the Foebreaker suffer a \-1 penalty Weapon Skill and Attacks (to a minimum of 1) until the end of the next round of Close Combat.
+
+#namecost("LANCE OF ARTOIS", "15 points")
+
+Heavy lance. The Lance of Artois gives the wielder the Killing Blow special rule on turns in which the character charges.
+
+#runin[SWORD OF THE LADY]'#runin[S CHAMPION 15 points] Character with the Grail Vow only. The character always counts their Strength as one higher than their target's Toughness, unless their Strength would normally be more than this.
+
+#namecost("SWORD OF THE STOUT HEARTED", "10 points")
+
+Great weapon. This weapon gives the wielder the Immunity (Psychology) special rule.
+
+#entry("MAGIC ARMOUR")
+#namecost("ARMOUR OF THE MIDSUMMER SUN", "35 points")
+
+Heavy armour. Opponents suffer a \-1 penalty To Hit the wearer of the Armour of the Midsummer Sun with both missile and close combat attacks.
+
+#namecost("GROMRIL GREAT HELM", "30 points")
+
+The Gromril Great Helm gives the wearer a 6+ armour save and allows them to re-roll failed armour saves.
+
+#namecost("ARMOUR OF AGILULF", "25 points")
+
+Heavy armour and shield (shield must be used at all times). The wearer of the Armour of Agilulf gains Weapon Skill 10.
+
+#namecost("CUIRASS OF FORTUNE", "25 points")
+
+Heavy armour. The Knight may re-roll 1's when rolling To Hit, To Wound and when making armour saves.
+
+#namecost("ANOINTED ARMOUR", "15 points")
+
+Infantry or Cavalry only. Heavy armour. The wearer of this armour may re-roll failed Ward saves as long as they have the Blessing of the Lady.
+
+#namecost("THE GRAIL SHIELD", "15 points")
+
+Grail Vow only. Shield. The wearer gains +1 to the Ward save gained from the Blessing of the Lady.
+
+#namecost("HELM OF THE DRAGON SLAYER", "15 points")
+
+This armour gives the wearer a 6+ armour save. In addition, the Ward Save from the Blessing of the Lady is increased to 5+ against close combat attacks and the wearer gains the Immunity (Flaming Attacks) special rule.
+
+#namecost("ORCBANE SHIELD", "15 points")
+
+Shield. Any Orc or Goblin unit within 12" of the model with the Orcbane Shield that must take an Animosity test fails it on a 1\-2 instead of a 1.
+
+#namecost("GILDED CUIRASS", "10 points")
+
+Grail Vow only. Heavy armour. The wearer of the Gilded Cuirass gains the Regeneration (6+) special rule.
+
+#namecost("IRONSPIKE SHIELD", "5 points")
+
+Shield. Whenever an enemy model rolls a natural 1 To Hit against the bearer of this shield, they immediately suffer a Strength 3 Hit with the Armour Piercing (1) special rule.
+
+#entry("TALISMANS")
+#namecost("SIRIENNE'S LOCKET", "55 points")
+
+Bretonnian Lord only. A model with Sirienne's Locket has Immunity (Killing Blow, Multiple Wounds) and can never suffer more than one wound in any one phase. After the first wound in that phase is suffered, all subsequent wounds suffered during that phase are ignored. The bearer can still be run down by pursuing enemies as normal, and may still be affected as normal by other "instant kill" attacks.
+
+#namecost("HOLY ICON", "50 points")
+
+The Holy Icon gives the bearer and any unit they are with the Immunity (Psychology) and Magic Resistance (3) special rules.
+
+#namecost("INSIGNIA OF THE QUEST", "25 points")
+
+Questing Vow only. If the bearer of the Insignia of the Quest is ever reduced to 1 Wound, then the Knight instantly gains a Ward Save (3+) as long as they remain at 1 Wound. If the character suffers an attack that would kill him before he has gained this Ward save (such as Killing Blow or Multiple Wounds), he will be reduced to 1 Wound, then may attempt his Ward Save (3+) to stay alive and nullify any further wounds caused by the same hit.
+
+#namecost("TOKEN OF THE DAMSEL", "20 points")
+
+Lord or Paladin only. One use only. The wearer of the Token of the Damsel ignores the first wounding Hit (after saves) suffered during the game.
+
+#namecost("LUCKY HEIRLOOM", "15 Points")
+
+Once per Close Combat phase, the bearer of the Lucky Heirloom can re-roll a single failed roll To Hit or To Wound, or re-roll a failed Armour Save or Ward Save roll.
+
+#namecost("MANTLE OF THE DAMSEL ELENA", "10 points")
+
+The wearer of the Mantle of the Damsel Elena gains the Immunity (Killing Blow, Poisoned Attacks) special rule.
+
+#namecost("GRAIL PENDANT", "10 points")
+
+Models with the Grail Vow only. One use only. When the wearer of the Grail Pendant loses their last Wound, roll a D6. On a roll of 2+, the Wound is not lost.
+
+#entry("ARCANE ITEMS")
+#namecost("SACRAMENT OF THE LADY", "50 points")
+
+The bearer may use the Sacrament of the Lady at the start of any Bretonnian Magic phase. The model adds 2D3 Power Dice to your power pool, but may not cast any spells that turn.
+
+#namecost("THE SILVER MIRROR", "45 points")
+
+One use only. When used, the bearer of the Silver Mirror deflects a spell cast at them or the unit they are with back at the enemy caster. The enemy can try to dispel their own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit they are with.
+
+#namecost("PRAYER ICON OF QUENELLES", "45 points")
+
+The bearer of Prayer Icon of Quenelles and the unit they are with gain a +1 bonus to the Ward Save from the Blessing of the Lady.
+
+#namecost("THE VERDANT HEART", "40 points")
+
+The Verdant Heart gives the bearer a +D3 bonus to the result of their spell casting attempts from the Lore of Life. Roll for each spell casting attempt.
+
+#namecost("FLAMESTRIKE WAND", "35 points")
+
+Bound Spell, power level 4. This item contains the _Fires of U'Zhul_ spell from the Lore of Fire.
+
+#namecost("HEART OF THE WILDS", "20 points")
+
+The bearer of this item gains a +2 Casting bonus if they are wholly within a forest or water terrain feature.
+
+#namecost("CHALICE OF MALFLEUR", "15 points")
+
+At the start of the opponent's Magic phase, the bearer may drink from the Chalice. If they do so, on the roll of a 1 she suffers a wound with no saves allowed, including Ward saves. On a roll of 2\-6, an extra Dispel dice is added to the player's pool.
+
+#namecost("POTION SACRE", "10 points")
+
+One use only. The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.
+
+#namecost("DIADEM OF POWER", "10 points")
+
+The bearer of this item gains a +1 Casting bonus when casting magical missiles, direct damage or magical vortex spells.
+
+#entry("ENCHANTED ITEMS")
+#namecost("THE MANE OF THE PUREBREED", "30 points")
+
+Model on Warhorse only. The Mane of the Purebreed gives +1 Strength to all Warhorses in the unit the model is with.
+
+#namecost("THE RUBY GOBLET", "25 points")
+
+This magic item will start to take effect at the end of the first phase during which the bearer or their unit suffers an unsaved wound. From that moment on, the bearer and any unit they are with cannot be wounded on better than a 3+ from any non-magical source.
+
+#namecost("FALCON-HORN OF FREDEMUND", "20 points")
+
+One use only. The Horn may be sounded at the start of any Bretonnian turn. Until the start of your next turn, no enemy unit may use the Fly special rule.
+
+#namecost("THE SEAL OF PARRAVON", "20 points")
+
+The bearer of the Seal of Parravon will always Hit on a 2+ in close combat.
+
+#namecost("WYRMBREATH VIAL", "20 points")
+
+One use only. The bearer gains a Breath Weapon attack with Strength 4 and Flaming Attacks and Magical Attacks special rules.
+
+#namecost("BATTLE STONE OF THE MARQUIS", "15 points")
+
+One use only. The Battle Stone may be used at the start of any close combat phase. The bearer (but not any mount) gains +3 Attacks for this round of close combat.
+
+#namecost("CRUSADER'S CLARION", "15 points")
+
+Cavalry only. On a turn in which the bearer of the Crusader’s Clarion charge, their mount and all mounts in the unit they have joined may re-roll failed rolls To Wound (including Impact Hits)
+
+#namecost("ANTLERS OF THE GREAT HUNT", "10 points")
+
+Lord or Paladin only. The model wearing the Antlers of the Great Hunt and any unit they are with roll an additional dice when pursuing and discard the lowest result.
+
+#namecost("CLAW OF MALGRIMACE", "10 points")
+
+When fighting Monstrous Creatures and Monsters, the bearer may deduct D3 Attacks from his opponent (not including any rider), to a minimum of 1.
+
+#namecost("GAUNTLET OF THE DUEL", "10 points")
+
+Lord or Paladin only. Any challenge issued by the bearer of the Gauntlet of the Duel cannot be refused.
+
+#namecost("TRESS OF ISOULDE", "10 points")
+
+One use only. Nominate one enemy Character, Monstrous Creature or Monster in base contact at the beginning of any Close Combat phase (after challenges). The bearer automatically hits that model that Close Combat round, regardless of other modifiers.
+
+#entry("MAGIC STANDARDS")
+
+#runin[BANNER OF THE LADY]'#runin[S GRACE 50 points] The unit carrying the Banner of the Lady’s Grace ignores all negative modifiers to its Leadership characteristic.
+
+#namecost("BANNER OF THE LADY", "40 points")
+
+All enemy units in base contact with the bearer of the Banner of the Lady get no combat bonus for ranks.
+
+#namecost("CRUSADER'S TAPESTRY", "40 points")
+
+Crusader's Vow only. The unit carrying the Crusader’s Tapestry gains the Frenzy special rule.
+
+#namecost("BANNER OF DEFENCE", "25 points")
+
+As long as the unit is affected by the Blessing of the Lady, all models in a unit with the Banner gain a 6+ Ward save against missile attacks. If the Blessing of the Lady is lost, then the Banner loses this ability.
+
+#namecost("CONQUEROR'S TAPESTRY", "25 points")
+
+The unit carrying the Conqueror's Tapestry gains +1 Combat Resolution Bonus for the remainder of the game for every enemy unit destroyed in close combat or through pursuit.
+
+#namecost("ERRANTRY BANNER", "25 points")
+
+Knights Errant only. All Knights Errant in the unit get a +1 Strength bonus on any turn they charge. However, a unit with this banner suffers \-2 to its Ld for any Impetuous tests.
+
+#namecost("TWILIGHT BANNER", "25 points")
+
+One use only. The Twilight Banner can be used at the start of any of your Movement phases. For the remainder of the Movement phase, the unit gains the Ethereal special rule.
+
+#namecost("VALOROUS STANDARD", "25 points")
+
+A unit carrying the Valorous Standard gains the Cold- Blooded special rule.
+
+#namecost("BANNER OF HONOURABLE", "")
+#namecost("WARFARE", "15 points")
+
+A unit carrying the Banner of Honourable Warfare may re-roll any failed rolls To Hit during the first round of close combat when engaged with an enemy equipped with any missile weapons.
+
+#namecost("BANNER OF THE ZEALOUS KNIGHT", "15 points")
+
+The unit carrying the Banner of the Zealous Knight gains the Vanguard special rule.
+
+#namecost("BANNERS OF CHALONS", "10 points")
+
+Enemy units cannot choose Stand & Shoot as a charge reaction against the unit carrying the Banner of Chalons.
+
+= LORDS
+
+#entry("BRETONNIAN LORD", first: true)
+#profile(
+  (name: "Bretonnian Lord", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 110),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, heavy armour")
+#field("OPTIONS", "")
+
+- May replace the Knights Vow with one of the following:
+  - The Crusader's Vow +15 points
+  - The Questing Vow +15 points
+  - The Grail Vow +30 points
+- May choose one of the following:
+  - Heavy lance +8 points
+  - Polearm (on foot only) +8 points
+  - Great weapon +12 points
+- May take a shield +3 points
+- May be mounted on one of the following:
+  - Warhorse +18 points
+  - Pegasus +30 points
+  - Royal Pegasus +45 points
+  - Royal Hippogryph +150 points
+- May take one Virtue and/or Magic Items up to a total of 100 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation")
+
+#entry("PROPHETESS OF THE LADY")
+#profile(
+  (name: "Prophetess of the Lady", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 3, i: 3, a: 1, ld: 8, points: 165),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+#field("MAGIC", "A Prophetess of the Lady is a Level 3 Wizard which can use spells from the Lore of Life, Beasts, Heavens, Light or the Lady.")
+#field("OPTIONS", "")
+
+- May be upgraded to a Level 4 Wizard +35 points
+- May be mounted on one of the following:
+  - Warhorse +18 points
+  - Pegasus +30 points
+  - Unicorn +42 points
+  - Sacrosanctum of the Lady (replacing the Grail Damsel) +120 points
+- May take Magic Items up to a total of 100 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, Magic Resistance (1)")
+
+= HEROES
+
+#entry("PALADIN", first: true)
+#profile(
+  (name: "Paladin", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, heavy armour")
+#field("OPTIONS", "")
+
+- One Paladin may carry the Battle Standard +25 points
+- May replace the Knights Vow with one of the following:
+  - The Crusader's Vow +10 points
+  - The Questing Vow +10 points
+  - The Grail Vow +20 points
+- May choose one of the following:
+  - Heavy lance +6 points
+  - Polearm (on foot only) +6 points
+  - Great weapon +9 points
+- May take a shield +2 points
+- May be mounted on one of the following:
+  - Warhorse +12 points
+  - Pegasus +20 points
+  - Royal Pegasus +30 points
+- May take one Virtue and/or Magic Items up to a total of 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation")
+#field("UPGRADES", "")
+
+- *Battle Standard:* The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.
+
+#entry("DAMSEL OF THE LADY")
+#profile(
+  (name: "Damsel of the Lady", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 80),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+#field("MAGIC", "A Damsel of the Lady is a Level 1 Wizard which can use spells from the Lore of Life, Beasts, Heavens, Light or the Lady.")
+#field("OPTIONS", "")
+
+- May be upgraded to a Level 2 Wizard +35 points
+- May be mounted on one of the following:
+  - Warhorse +12 points
+  - Pegasus +20 points
+- May take Magic Items up to a total of 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, Magic Resistance (1)")
+
+#entry("SERGEANT-AT-ARMS")
+#profile(
+  (name: "Sergeant-at-Arms", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, light armour")
+#field("OPTIONS", "")
+
+- May choose one of the following:
+  - Light lance +6 points
+  - Polearm (on foot only) +6 points
+  - Great weapon +9 points
+- May choose one of the following:
+  - Bow +4 points
+  - Longbow +5 points
+  - Crossbow +6 points
+- May take medium armour +4 points
+- May take a shield +2 points
+- May be mounted on a Horse +12 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+
+- *Yeomen Guard:* You may upgrade one unit of Men-at-Arms with medium armour for +1 point/model for each Sergeant-At-Arms in your army.
+
+#entry("FACELESS")
+#profile(
+  (name: "Faceless", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 40),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, longbow")
+#field("OPTIONS", "")
+
+- May take an additional hand weapon +2 points
+- May take light armour +2 points
+
+#field("SPECIAL RULES", "Loner, Scouts, Sniper")
+
+#entry("PRIESTESS OF SHALLYA")
+#profile(
+  (name: "Priestess of Shallya", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 2, i: 3, a: 0, ld: 7, points: 75),
+)
+#field("TROOP TYPE", "Infantry (Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("OPTIONS", "")
+
+- May take Magic Items up to a total of 50 points
+
+#field("SPECIAL RULES", "Magic Resistance (1)")
+
+- *Healing Hands:* A Priestess of Shallya may only join units with the Peasant's Duty special rule. She may be placed in the second rank of any Infantry unit she joins, rather than the first. In addition, any unit the Priestess is with (but not herself) gains the Regeneration (6+) special rule.
+- *Prayers of Shallya:* A Priestess of Shallya knows the three Prayers listed below. They may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and take immediate effect. Each prayer lasts until the start of your next turn. A friendly unit can only be under the effect of one Prayer at a time.
+  - *Shallya's Endurance:* The Priestess' unit (but not herself) gains +1 to its Toughness.
+  - *Compassionate Mind:* The Priestess' unit (but not herself) gains the Immunity (Psychology) special rule.
+  - *Purify:* All Hex spells effecting friendly units within 12" are automatically dispelled. In addition, any units with the Daemonic, Vampiric or Undead special rules in base contact with the Priestess or the unit she is with suffer D6 Strength 4 hits.
+
+= CHARACTER MOUNTS
+
+#compact-entry("HORSE")[
+#profile(
+  (name: "Horse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+)
+#field("TROOP TYPE", "War Beast (Animal)")
+#field("BASE SIZE", "25x50")
+]
+
+#entry("WARHORSE")
+#profile(
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+)
+#field("TROOP TYPE", "War Beast (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("OPTIONS", "")
+
+- May take barding +5 points
+
+#field("SPECIAL RULES", "Purebred Warhorse")
+
+#entry("UNICORN")
+#profile(
+  (name: "Unicorn", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: "-"),
+)
+#field("TROOP TYPE", "War Beast (Forest Spirit)")
+#field("BASE SIZE", "25x50 or 50x50")
+#field("SPECIAL RULES", "Impale, Magical Attacks, Magic Resistance (2)")
+
+- *Impale:* Unicorns gain +1 Strength to their Impact Hits.
+
+#entry("PEGASUS")
+#profile(
+  (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+)
+#field("TROOP TYPE", "War Beast (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("OPTIONS", "")
+
+- May take Iron-hard Hooves +5 points
+- May take Swift as the Wind +5 points
+- May take barding +5 points
+
+#field("SPECIAL RULES", "Fly (9)")
+#field("UPGRADES", "")
+
+- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
+- *Swift as the Wind:* A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.
+
+#entry("ROYAL PEGASUS")
+#profile(
+  (name: "Royal Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: "-"),
+)
+#field("TROOP TYPE", "Monstrous Beast (Animal)")
+#field("BASE SIZE", "50x50 or 50x75")
+#field("OPTIONS", "")
+
+- May take Iron-hard Hooves +5 points
+- May take Swift as the Wind +5 points
+- May take barding +5 points
+
+#field("SPECIAL RULES", "Fly (9)")
+#field("UPGRADES", "")
+
+- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
+- *Swift as the Wind:* A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.
+
+#entry("ROYAL HIPPOGRYPH")
+#profile(
+  (name: "Royal Hippogryph", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: "-"),
+)
+#field("TROOP TYPE", "Monstrous Creature (Animal)")
+#field("BASE SIZE", "50x50 or 50x75")
+#field("SPECIAL RULES", "Fly (8)")
+#field("OPTIONS", "")
+
+- May take Shredding Talons +5 points
+- May take Serrated Maw +15 points
+- May take Swooping Strike +15 points
+- May take Bloodrage +30 points
+- May take barding +5 points
+
+#field("UPGRADES", "")
+
+- *Bloodrage:* The Hippogryph is subject to Frenzy and Hatred.
+- *Serrated Maw:* The Hippogryph gains the Multiple Wounds (2) special rule.
+- *Shredding Talons:* The Hippogryph gains the Armour Piercing (1) rule.
+- *Swooping Strike:* The Hippogryph gains the Devastating Charge and Mighty Blow (1) special rules when charging.
+
+= CORE UNITS
+
+#entry("KNIGHTS ERRANT", first: true)
+#profile(
+  (name: "Knight Errant", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 21),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
+#field("OPTIONS", "")
+
+- May replace the Knight's Vow with the Crusader's Vow +1 point/model
+- May upgrade one Knight Errant to a Leader +5 points
+- May upgrade one Knight Errant to a Musician +5 points
+- May upgrade one Knight Errant to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 25 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse")
+
+- *Impetuous:* After charges have been declared, if any unit containing one or more models with the Impetuous special rule did not declare a charge but are within charge range of an enemy, then they must take a Leadership test to restrain from charging. If this test is failed, the unit must declare a charge. If the test is passed, it may move normally. In addition, whenever a unit of Knights Errant charge, they have Immunity (Psychology) and may re-roll one of their charge distance dice.
+
+#entry("KNIGHT OF THE REALM")
+#profile(
+  (name: "Knight of the Realm", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 25),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
+#field("OPTIONS", "")
+
+- May replace the Knight's Vow with the Crusader's Vow +1 point/model
+- May upgrade one Knight of the Realm to a Leader +5 points
+- May upgrade one Knight of the Realm to a Musician +5 points
+- May upgrade one Knight of the Realm to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse")
+
+#entry("MEN-AT-ARMS")
+#profile(
+  (name: "Man-at-Arms", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 4),
+)
+#field("UNIT SIZE", "10+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, light armour")
+#field("OPTIONS", "")
+
+- May choose one of the following:
+  - Spears +0.5 point/model
+  - Polearms +2 points/model
+- May take shields +1 point/model
+- May upgrade one Man-at-Arms to a Grail Monk +5 points
+- May upgrade one Man-at-Arms to a Leader +5 points
+- May upgrade one Man-at-Arms to a Musician +5 points
+- May upgrade one Man-at-Arms to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Grail Monk:* A Grail Monk counts as being part of the unit's Command Group. A unit with a Grail Monk counts as having one more rank than they actually do for the purpose of determining if the unit is Steadfast.
+
+#entry("BIDOWERS")
+#profile(
+  (name: "Bidower", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 5),
+)
+#field("UNIT SIZE", "20+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, javelin")
+#field("OPTIONS", "")
+
+- May replace javelins with slings +1 point/model
+- May take bucklers +0.5 point/model
+- May upgrade one Bidower to a Leader +5 points
+- May upgrade one Bidower to a Musician +5 points
+
+#field("SPECIAL RULES", "The Peasant's Duty, Skirmishers")
+
+#entry("LONGBOWMEN")
+#profile(
+  (name: "Longbowman", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+)
+#field("UNIT SIZE", "10+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, longbow")
+#field("OPTIONS", "")
+
+- May take light armour +0.5 point/model
+- May take bucklers +0.5 point/model
+- May take Braziers +0.5 point/model
+- May take Defensive Stakes +1 point/model
+- May upgrade one Longbowman to a Leader +5 points
+- May upgrade one Longbowman to a Musician +5 points
+- May upgrade one Longbowman to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Braziers:* A unit with this upgrade gain the Flaming Attack special rule for their longbows.
+- *Defensive Stakes:* Set up the stakes at the start of the game when the unit is deployed. Every model in the front rank has a stake base placed in front of it (these stakes must also be set up within the army's deployment zone).
+
+Defensive Stakes are treated as Defended Obstacles, and remain on the table during the game. All Troop Types apart from Infantry and Swarms suffer D6 Strength 4 hits on the turn that they charge a unit behind Defensive stakes. In addition, enemy models in base contact with the Defensive Stakes suffer \-1 to Hit in the first round of close combat. These rules only apply when fighting the unit’s front.
+
+#entry("PEASANT MOB")
+#profile(
+  (name: "Peasant", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 4, points: 2),
+  (name: "Truffle Hound", m: 7, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 3, points: ""),
+)
+#field("UNIT SIZE", "20+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+#field("OPTIONS", "")
+
+- May choose one of the following:
+  - Spears +0.5 point/model
+  - Flails +2 points/model
+  - Polearms +2 points/model
+- May take one include one Truffle Hound for every 10 models in the unit +7 points/Truffle Hound
+- May upgrade one Peasant to a Leader +5 points
+- May upgrade one Peasant to a Musician +5 points
+- May upgrade one Peasant to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Truffle Hound:* Truffle Hounds have the Frenzy special rule. A unit with one or more Truffle Hounds must place them in the front rank of the unit along with any command group models and/or characters. They may be attacked separately from any other models in the unit.
+
+If the unit they are with did not themselves declare a charge this turn, the Truffle Hounds may be released in the Charge sub-phase of the Movement Phase, and do not need to test for Berserk Rage. The Truffle Hounds must then declare a charge as if they had failed their Berserk Rage test. After they have been released, they will automatically form their own unit of Skirmishers. From that point, they will keep having to declare charges as if they had failed their Berserk Rage whenever possible for the rest of the game.
+
+Your opponent will only receive Victory Points for Truffle Hounds if the unit they were bought with is destroyed.
+
+= SPECIAL UNITS
+
+#entry("QUESTING KNIGHTS", first: true)
+#profile(
+  (name: "Questing Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 26),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Great weapon, heavy armour, shield, barding")
+#field("OPTIONS", "")
+
+- May upgrade one Questing Knight to a Leader +5 points
+- May upgrade one Questing Knight to a Musician +5 points
+- May upgrade one Questing Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Questing Vow, Lance Formation, Purebred Warhorse")
+
+#entry("PEGASUS KNIGHTS")
+#profile(
+  (name: "Pegasus Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 50),
+  (name: "Pegasus", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+)
+#field("UNIT SIZE", "3-10")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Pegasus (Animal)")
+#field("BASE SIZE", "40x40 or 40x60")
+#field("EQUIPMENT", "Heavy armour, shield, barding")
+#field("OPTIONS", "")
+
+- May replace the Knight's Vow with the Crusader's Vow +2 points/model
+- May upgrade one Pegasus Knight to a Leader +5 points
+- May upgrade one Pegasus Knight to a Musician +5 points
+- May upgrade one Pegasus Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
+
+#entry("FOOT KNIGHTS")
+#profile(
+  (name: "Foot Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 9),
+)
+#field("UNIT SIZE", "10+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, heavy armour")
+#field("OPTIONS", "")
+
+- May replace the Knight's Vow with the Crusader's Vow +1 point/model
+- May choose one of the following:
+  - Spears +0.5 point/model
+  - Polearms +2 points/model
+  - Great weapons +3 points/model
+- May take shields +1 point/model
+- May upgrade one Foot Knight to a Leader +5 points
+- May upgrade one Foot Knight to a Musician +5 points
+- May upgrade one Foot Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
+
+#entry("SQUIRES")
+#profile(
+  (name: "Squire", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 7),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, longbow")
+#field("OPTIONS", "")
+
+- May take light armour +0.5 point/model
+- May take bucklers +0.5 point/model
+- May upgrade one Squire to a Leader +5 points
+- May upgrade one Squire to a Musician +5 points
+- May upgrade one Squire to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty, Skirmishers")
+
+#entry("YEOMEN")
+#profile(
+  (name: "Yeoman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 10),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50")
+#field("EQUIPMENT", "Hand weapon")
+#field("OPTIONS", "")
+
+- May take light lances +1 point/model
+- May choose one of the following:
+  - Bows +2 points/model
+  - Crossbows +3 points/model
+- May choose one of the following:
+  - Light armour +0.5 points/model
+  - Medium armour +1.5 points/model
+- May take shields +1 point/model
+- May upgrade one Yeoman to a Leader +5 points
+- May upgrade one Yeoman to a Musician +5 points
+- May upgrade one Yeoman to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "Fast Cavalry, The Peasant's Duty")
+
+#entry("BATTLE PILGRIMS")
+#profile(
+  (name: "Battle Pilgrim", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 7),
+  (name: "Grail Reliquae", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 6, i: 3, a: 4, ld: 8, points: ""),
+)
+#field("UNIT SIZE", "10+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, shield")
+#field("OPTIONS", "")
+
+- May take light armour +1 point/model
+- May upgrade one Battle Pilgrim to a Leader +5 points
+- May upgrade one Battle Pilgrim to a Musician +5 points
+- May upgrade one Battle Pilgrim to a Standard Bearer +10 points
+- May upgrade six Battle Pilgrim to a Grail Reliquae +30 points
+
+#field("SPECIAL RULES", "Hatred, Loner, The Peasant's Duty, Stubborn")
+#field("UPGRADES", "")
+
+- *Grail Reliquae:* Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrims in the unit (except the Command Group) are removed does the Reliquae itself start taking wounds. In addition, the presence of the Grail Reliquae means that the entire unit will be affected by the Blessing of the Lady.
+
+#entry("HERRIMAULTS")
+#profile(
+  (name: "Herrimault", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 8),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, longbow")
+#field("OPTIONS", "")
+
+- May take light armour +0.5 point/model
+- May upgrade one Herrimault to a Leader +5 points
+- May upgrade one Herrimault to a Musician +5 points
+
+#field("SPECIAL RULES", "Loner, Scouts, Skirmishers")
+
+#entry("BRIGANDS")
+#profile(
+  (name: "Brigand", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: 5),
+)
+#field("UNIT SIZE", "10+")
+#field("TROOP TYPE", "Infantry (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Great weapon, light armour")
+#field("OPTIONS", "")
+
+- May be upgraded to Ambushers (unless armed with missile weapons) free
+- May replace great weapons with one of the following:
+  - Crossbows +3 points/model
+  - Handguns +3 points/model
+- May take medium armour +1 point/model
+- May upgrade one Brigand to a Leader +5 points
+- May upgrade one Brigand to a Musician +5 points
+- May upgrade one Brigand to a Standard Bearer +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+
+= RARE UNITS
+
+#entry("GRAIL KNIGHTS", first: true)
+#profile(
+  (name: "Grail Knight", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 9, points: 38),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("UNIT SIZE", "5+")
+#field("TROOP TYPE", "Cavalry (Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
+#field("OPTIONS", "")
+
+- May upgrade one Grail Knight to a Leader +5 points
+- May upgrade one Grail Knight to a Musician +5 points
+- May upgrade one Grail Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 75 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse")
+
+#entry("HIPPOGRYPH KNIGHTS")
+#profile(
+  (name: "Hippogryph Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 75),
+  (name: "Hippogryph", m: 8, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 7, points: ""),
+)
+#field("UNIT SIZE", "2+")
+#field("TROOP TYPE", "Monstrous Cavalry (Human)")
+#field("MOUNT", "Hippogryph (Animal)")
+#field("BASE SIZE", "50x50 or 50x75")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield,")
+#field("OPTIONS", "")
+
+- May replace the Knight's Vow with the Crusader's Vow +3 points/model
+- May take barding +3 points/model
+- May upgrade one Hippogryph Knight to a Leader +5 points
+- May upgrade one Hippogryph Knight to a Musician +5 points
+- May upgrade one Hippogryph Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
+
+#entry("SPIRITS OF THE FAY")
+#profile(
+  (name: "Fay Spirits", m: 6, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 10, points: 15),
+)
+#field("UNIT SIZE", "5-30")
+#field("TROOP TYPE", "Infantry (Spirit)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
+#field("SPECIAL RULES", "Ethereal, Fear, Unstable")
+
+- *Guardians of Sacred Sites:* Spirits of the Fay are not deployed with the rest of the army, but follow the entry rules for Ambushers instead.
+
+When they appear, they must be placed in either a forest or a water feature anywhere on the table, but otherwise follows the rules for Ambushers as normal. If no forest of water feature is present, they may enter from any table edge using the normal rules.
+
+As long as a unit of Spirits of the Fay remain partially within one of these terrain features, they may replace up to D3 Wounds lost earlier in to game at the end of each Close Combat phase.
+
+#entry("SACROSANCTUM OF THE LADY")
+#profile(
+  (name: "Sacrosanctum", m: 7, ws: "-", bs: "-", s: 4, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 125),
+  (name: "Grail Damsel", m: "-", ws: 2, bs: 2, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+)
+#field("TROOP TYPE", "Chariot (Armour Save 5+)")
+#field("CREW", "1 Grail Damsel (Human)")
+#field("DRAWN BY", "2 Warhorses (Animal)")
+#field("BASE SIZE", "50x100")
+#field("EQUIPMENT", "Hand weapon")
+#field("SPECIAL RULES", "Immunity (Psychology), Magic Resistance (2), Ward Save (4+)")
+
+- *Blessed Sanctum:* A Sacrosanctum knows the three Blessings listed below. Blessings are innate Bound Spells (power level 5). For each friendly Sacrosanctum on the battlefield at the start of your magic phase, add 1 dice to your power pool.
+  - *Shield of Faith: *_Shield of Faith_ is an *augment* spell that affects all friendly units with the Blessing of the Lady special rule within 12". Until the start of your next turn, the targets have their Ward save from the Blessing of the Lady increased by +1.
+  - *Radiant Light: *_Radiant Light_ is a *hex* spell that affects all enemy units within 12". Until the start of your next turn, the targets suffer \-1 to their Weapon Skill and Ballistic Skill.
+  - *Renewed Valour: *_Renewed Valour_ is an *augment* spell that affects all friendly units with the Blessing of the Lady special rule within 12". The target units will rally automatically (if they were fleeing) and regain the Blessing of the Lady (if they have lost it).
+
+#entry("BALLISTA")
+#profile(
+  (name: "Ballista", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 30),
+  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+)
+#field("TROOP TYPE", "War Machine (Bolt Thrower)")
+#field("CREW", "3 Peasant Crew (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+#field("OPTIONS", "")
+
+- May take an additional Peasant Crew +5 points
+- May upgrade one Peasant Crew to a Wall Warden +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Wall Warden:* A Ballista with a Wall Warden may re-roll one failed To Hit roll once per game.
+
+#field("NOTES", "")
+
+- You may take 1\-2 Ballistas as a single Rare choice.
+
+#entry("FIELD TREBUCHET")
+#profile(
+  (name: "Field Trebuchet", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+)
+#field("TROOP TYPE", "War Machine (Stone Thrower)")
+#field("CREW", "3 Peasant Crew (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+
+- *Field Trebuchet:* A Field Trebuchet uses the following profile:
+
+#minitable(("Range", "Strength", "Special Rules"), ("12-60\"", "5(10)", "Multiple Wounds (D6)"))
+#field("OPTIONS", "")
+
+- May take an additional Peasant Crew +5 points
+- May upgrade one Peasant Crew to a Wall Warden +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Wall Warden:* A Field Trebuchet with a Wall Warden may re-roll one Artillery dice once per game.
+
+#entry("BOMBARD")
+#profile(
+  (name: "Bombard", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+  (name: "Peasant Crew", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  (name: "Wall Warden", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
+)
+#field("TROOP TYPE", "War Machine (Great Cannon)")
+#field("CREW", "3 Peasant Crew (Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon")
+
+- *Bombard:* A Bombard uses the following profile:
+
+#minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "10", "Multiple Wounds (D6)"))
+
+If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but subtract 1 from the result.
+
+#field("OPTIONS", "")
+
+- May take an additional Peasant Crew +5 points
+- May upgrade one Peasant Crew to a Wall Warden +10 points
+
+#field("SPECIAL RULES", "The Peasant's Duty")
+#field("UPGRADES", "")
+
+- *Wall Warden:* A Bombard with a Wall Warden may re-roll one Artillery dice once per game.
+
+= SPECIAL CHARACTERS (LORDS)
+
+#entry("LOUEN LEONCOEUR", first: true)
+#namecost("King of Bretonnia", "")
+#profile(
+  (name: "Louen Leoncoeur", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 7, a: 5, ld: 10, points: 385),
+  (name: "Beaquis (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 6, a: 4, ld: 8, points: ""),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("MAGIC ITEMS", "")
+
+- *Sword of Couronne:* Magic Weapon. The sword allows Louen to re-roll failed rolls to Hit. In addition, any enemy models in base contact with Louen at the beginning of any Close Combat phase must take an Initiative test. If this is failed, that model may make no attacks this round and will be hit automatically.
+- *The Lion Lance:* Magic Weapon. Lance. Each successful Hit with the Lion Lance is multiplied into 2 Hits. The lance can only be used when charging; in other rounds of combat, Louen will use the Sword of Couronne.
+- *Armour of Brilliance:* Magic Armour. Heavy armour. Opponents suffer a \-1 penalty to all rolls To Hit the wearer with missile weapons and in close combat.
+- *The Lion's Shield:* Magic Armour. Shield. The Lion’s Shield gives Louen a Magic Resistance equal to the total number of dice used in the casting of the enemy spell, to a maximum of 3.
+- *The Tabard of Kings:* Talisman. Any enemy spell that targets Louen or the unit he is with and is successfully cast inflicts D3 Strength 4 Hits on the Wizard that cast the spell.
+- *The Crown of Bretonnia:* Enchanted Item. This item gives Louen the Inspiring Presence (6) special rule. In addition, all friendly units that may use Louen’s Leadership have Immunity (Panic).
+
+#field("OPTIONS", "")
+
+- May be mounted on one of the following:
+  - Warhorse +18 points
+  - Pegasus +30 points
+  - Royal Pegasus +45 points
+  - Beaquis +155 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation")
+
+- *The Virtue of the Lionheart:* Roll a D3 in the beginning of each close combat phase and add the score to Louen's Strength for the duration of that phase.
+- *The Lady’s Champion:* Louen gains a Ward Save (4+) from the Blessing of the Lady. However, if he loses the Blessing, he will immediately lose a Wound with no saves allowed.
+
+#field("NOTES", "")
+
+- Louen Leoncoeur must be the Army General.
+
+#entry("BOHEMUND THE BEASTSLAYER")
+#namecost("Duke of Bastonne", "")
+#profile(
+  (name: "Bohemond the Beastslayer", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 285),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, barding")
+#field("MAGIC ITEMS", "")
+
+- *The Beast Mace of Bastonne:* Magic Weapon. The Beast Mace adds +2 to Bohemond’s Strength and has the Multiple Wounds (2) special rule.
+- *Bohemond's Shield:* Magic Armour. Shield. Should an enemy strike Bohemond with a Magic Weapon, roll a D6 for each hit. On a roll of 6, the enemy weapon is destroyed. Resolve enemy hits that are not destroyed by the shield in the normal way but once the weapon is broken all further hits from that weapon are ignored.
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse, Virtue of Heroism")
+
+- *Beastslayer:* Bohemond has the Hatred (Beastmen, Goblins, Orcs, Skaven) special rule, and may re-roll failed rolls To Wound when fighting against such enemies.
+
+#entry("TANCRED II")
+#namecost("Duke of Quenelles", "")
+#profile(
+  (name: "Tancred II", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 235),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy lance, heavy armour, barding")
+#field("MAGIC ITEMS", "")
+
+- *The Blade of Banishment:* Magic Weapon. This Sword automatically Wounds models with the Undead special rule, with the Ignores Armour Saves special rule. In addition, the bearer and any unit he is leading have Immunity (Terror) caused by Undead.
+- *The Grail Shield:* Magic Armour. Shield. Models from the Forces of Destruction in base contact with Tancred suffer a \-1 To Hit penalty in close combat.
+- *Blessed Draught:* Enchanted Item. One use only. Tancred may drink the potion at the beginning of any player's turn. For the duration of that turn, the potion increases Tancred's Strength by D6.
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse, Virtue of Purity")
+
+#entry("ALBERIC OF BORDELEAUX")
+#namecost("Duke of Bordeleaux", "")
+#profile(
+  (name: "Alberic of Bordeleaux", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
+  (name: "Tempete (Royal Hippogryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 8, points: ""),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Heavy armour, shield")
+#field("MAGIC ITEMS", "")
+
+- *Trident of Manann:* Magic Weapon. Polearm. The Trident of Manann contains a Bound Spell, power level 4. This is a *magic missile* with a range of 24" that causes 2D6 Strength 3 hits.
+- *Braid of Bordeleaux:* Enchanted Item. The bearer of the Braid of Bordeleaux and any unit they are with gain the Aquatic special rule.
+
+#field("OPTIONS", "")
+
+- May be mounted on one of the following:
+  - Warhorse +18 points
+  - Tempete +150 points
+- May take Magic Items up to a total of 25 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse, Virtue of Discipline")
+
+- *Spirit of the Tempest:* Alberic, and any models in the same unit, may re-roll 1's to Hit in close combat.
+
+#entry("CECIL GASTONNE")
+#namecost("The Wyrm Slayer", "")
+#profile(
+  (name: "Cecil Gastonne", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 4, ld: 9, points: 190),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Heavy armour, shield")
+#field("MAGIC ITEMS", "")
+
+- *Sorrow's End:* Magic Weapon. This weapon gives the wielder the +1 Strength and the Multiple Wounds (2) special rule.
+- *Dragonhide Cloak:* This item gives the wearer the Immunity (Flaming Attacks, Killing Blow/Multiple Wounds) and Natural Armour (5+) special rules.
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
+
+- *The Wyrm Slayer:* If Cecil Gastonne kills an enemy Monstrous Infantry, Monstrous Cavalry, Monstrous Beast, Monstrous Creature or Monster model in close combat, he gains the Terror special rule for the remainder of the game.
+
+#entry("MORGIANA THE FAY")
+#namecost("The Fay Enchantress", "")
+#profile(
+  (name: "Morgiana the Fay", m: 5, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 5, a: 1, ld: 9, points: 430),
+  (name: "Silvaron (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("MAGIC", "Morgiana le Fay is a Level 4 Wizard who uses spells from the Lore of Life, Beasts, Heavens, Light or the Lady.")
+#field("EQUIPMENT", "Hand weapon")
+#field("MAGIC ITEMS", "")
+
+- *The Girdle of Gold:* Talisman. The Girdle gives Morgiana the Fay a 4+ Ward save.
+- *The Chalice of Potions:* Arcane Item. At the start of your Magic phase, you may roll a D3 (using a D6). The number refers to the number of Power dice you may add to your army pool. However, if a natural 6 is rolled, the Chalice cannot be used again for the remainder of the game.
+- *Morgiana's Mirror:* Arcane Item. At the start of the enemy Magic phase, Morgiana the Fay may choose one enemy Wizard on the battlefield; against this Wizard, she will get a +2 Dispel bonus for the remainder of this turn.
+- *Toad Familiar:* Arcane Item. The Toad Familiar gives Morgiana the Fay a +1 Casting bonus.
+
+#field("OPTIONS", "")
+
+- May be mounted on Silvaron +42 points
+
+#field("SPECIAL RULES", "Fear, Magic Resistance (1)")
+
+- *Supreme Aura of the Lady:* Any unit joined by Morgiana the Fay gains the Magical Attacks special rule. In addition, she causes Terror against Beastmen, Skaven, Goblins and Orcs.
+- *Favour of the Fay:* One friendly character with Chivalrous Vow may be given the Favour of the Fay before the game starts but after deployment is finished. This model receives +1 To Hit in close combat. However, if the model loses the Blessing of the Lady, then both the Favoured model and Morgiana the Fay suffer a Wound with no saves allowed.
+- *Supreme Blessing of the Lady:* Morgiana the Fay has the Blessing of the Lady. In addition, the Ward Save gained from the Blessing of the Lady is increased by +1 for any unit that is joined by her.
+
+#entry("LADY ELISE DUCHARD")
+#namecost("Prophetess of the Duke of Brionne", "")
+#profile(
+  (name: "Élise Duchard", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 3, i: 3, a: 1, ld: 8, points: 285),
+  (name: "Ariandir (Unicorn)", m: 10, ws: 5, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 8, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Human)")
+#field("MOUNT", "Ariandir (Forest Spirit)")
+#field("BASE SIZE", "40x60 or 50x50")
+#field("MAGIC", "Élise Duchard is a Level 3 Wizard who uses spells from the Lore of Life or Heavens.")
+#field("EQUIPMENT", "Hand weapon")
+#field("MAGIC ITEMS", "")
+
+- *Chalice Of Brionne:* Enchanted Item. All enemy units within 12" suffer a \-2 Leadership penalty when attempting to use Inspiring Presence, Hold Your Ground, Rally, March, Redirecting a Charge, Reforming from Defeat, Restraining from Pursuit or Swift Reform.
+- *The Staff of the Elements:* This item allows Élise Duchard to use the Signature Spell from either the Lore of Life or Heavens in addition to her other chosen spells.
+
+#field("SPECIAL RULES", "Aura of the Lady, Impale (Ariandir only, see Unicorns), Magical Attacks (Ariandir only), Magic Resistance (1)")
+
+- *Arcane Backlash:* Élise Duchard has a +1 Dispel bonus. In addition, if she rolls any natural double when dispelling, treat this has having rolled Ultimate Power. If a spell is dispelled by her rolling two or more natural 6's, the casting Wizard also suffer a Wound which Ignores Armour saves.
+
+#entry("THE GREEN KNIGHT")
+#namecost("Guardian of the Sacred Sites", "")
+#profile(
+  (name: "The Green Knight", m: 4, ws: 7, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 240),
+  (name: "The Shadow Steed", m: 9, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 6, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Spirit)")
+#field("MOUNT", "The Shadow Steed (Spirit)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy armour, shield")
+#field("MAGIC ITEMS", "")
+
+- *The Dolorous Blade:* Magic Weapon. The Dolorous Blade may be used in one of two ways. Either the Green Knight can use the Blade to gain +D6 Attacks, or it can be used to add +2 to his Strength. The Green Knight may change which method he is using to attack with in each Close Combat phase if he wishes to.
+
+#field("SPECIAL RULES", "Ethereal, Terror, Unstable")
+
+- *Aura of the Fey:* If the Green Knight's Wounds value is ever reduced to zero, remove him from play as normal. However, in the Remaining Moves part of the following Bretonnian Movement phase, the Bretonnian player may attempt to reawaken the Green Knight as described in Guardian of the Sacred Sites below, following all the same rules. However, each time the Green Knight is slain, a \-1 is suffered on the next dice roll made to awaken him (e.g., after he is slain for the first time, he will awaken the following turn on a 4+ rather than a 3+. After the second time, he awakens on a 5+, etc). If he does not appear, a test may be taken during each following Bretonnian Remaining Moves phase to see if he returns. For calculating Victory Points, the enemy only gets full Victory Points for the Green Knight if he is not on the table at the end of the game.
+- *Guardian of the Sacred Sites:* The Green Knight is not deployed with the rest of the army, but follows the entry rules for Ambushers instead, with the following exception that he may appear in the first turn instead of the second.
+
+When the Green Knight is awoken, he must be placed in either a forest or a water terrain piece anywhere on the table, but otherwise follows the rules for Ambushers as normal. If no forest of water feature is present, he may enter from any table edge using the normal rules.
+
+During the game, the Green Knight may disappear at will and reappear in another location completely. If the Green Knight is within (or moves into) a forest or water terrain piece during the Remaining Moves phase, then he may instantly be removed from the table and replaced anywhere on the table within another forest or water terrain piece, facing in any direction. He may not move any further that turn. Note that he still may not end his move within impassable terrain.
+
+= SPECIAL CHARACTERS (HEROES)
+
+#entry("REPANSE OF LYONESSE", first: true)
+#namecost("Damsel of War", "")
+#profile(
+  (name: "Repanse de Lyonesse", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 185),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Heavy armour")
+#field("MAGIC ITEMS", "")
+
+- *Sword of Lyonesse:* Magic Weapon. All magic items belonging to enemy models in base contact with Repanse lose their magical properties and will counts as mundane items of their type.
+- *The Fleur de Lys Banner:* Magic Standard. This is the army's Battle Standard. In the magic phase, the Bretonnian player may remove one Power Dice from the enemy and add it to their Dispel Pool.
+
+#field("OPTIONS", "")
+
+- May take a heavy lance +4 points
+- May take a shield +2 points
+- May be mounted on a Warhorse +12 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, Magic Resistance (3), The Knight’s Vow, Purebred")
+
+*Warhorse, Terror*
+
+#entry("TRISTAN THE TROBADOUR")
+#profile(
+  (name: "Tristan the Trobadour", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 145),
+  (name: "Jules the Jester", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: 30),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60 (Tristan), 20x20 or 25x25 (Jules)")
+#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding (Tristan)")
+#field("OPTIONS", "")
+
+- May take Magic Items up to a total of 25 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, The Questing Vow, Purebred Warhorse, Virtue of Noble Disdain")
+
+- *Jules the Jester:* Jules is an Infantry model armed with a hand weapon. Jules must deploy within 6" of Tristan at the start of the game but may move freely after this. He has the Dodge (2+) and The Peasant’s Duty special rule. In addition, all enemy units within 6" of Jules suffer a \-1 penalty to Hit rolls in close combat.
+- *Valorous Ballads:* Tristan knows the three songs listed below. He may choose to use one of them at the start of each round of close combat.
+  - *The Anthem of the Uniter:* Tristan and any unit he has joined have the Stubborn special rule this turn.
+  - *The Battle-hymn of Quenelles:* Tristan gains +D3 Combat Resolution bonus this turn.
+  - *The Grail Chorale:* The Ward save from the Blessing of the Lady is increased by +1 for Tristan and any unit he has joined this turn.
+
+#field("NOTES", "")
+
+- Tristan the Trobadour may use a heavy lance despite having the Questing Vow.
+
+#entry("ODO OF OUTREMER")
+#namecost("Hero of the Crusades", "")
+#profile(
+  (name: "Odo of Outremer", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
+  (name: "Suliman the Saracen", m: 5, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 85),
+  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+)
+#field("TROOP TYPE", "Cavalry (Special Character, Human)")
+#field("MOUNT", "Warhorse (Animal)")
+#field("BASE SIZE", "25x50 or 30x60")
+#field("EQUIPMENT", "Heavy armour, shield, barding")
+#field("MAGIC ITEMS", "")
+
+- *Morning Star of Fracasse:* Magic Weapon. This morning star gives the bearer the Mighty Blow (2) special rule. For each Hit he scores on an enemy model with a Magic Weapon, roll a D6. On a 4+, the enemy's weapon is destroyed.
+
+#field("OPTIONS", "")
+
+- May take Magic Items up to a total of 25 points
+
+#field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, The Crusader's Vow, Purebred Warhorse, Virtue of Confidence")
+
+- *Warrior of the Sands:* Odo of Outremer is included in your army then Suliman the Saracen may also be included. Suliman is a Cavalry model and is armed with a great weapon, light armour and shield. Suliman causes Fear in any turn in which he charges. Odo and Suliman always move and fight together as a unit and may join a unit if you wish.
+
+#entry("THE HERMIT KNIGHT OF MALMONT")
+#profile(
+  (name: "The Hermit Knight", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 160),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Heavy armour")
+#field("MAGIC ITEMS", "")
+
+- *The Sword of Virtue:* Magic Weapon. Great weapon. The Sword of Virtue allows the Hermit Knight to re-roll failed rolls of 1 To Hit and to Wound. In addition, it has the Multiple Wounds (D3) special rule.
+- *The Flask of Sangdragon:* Enchanted Item. One use only. The Hermit Knight may use this item at the beginning of any round of Close Combat. When used, his Strength is then increased by D3 for the duration of this turn.
+
+#field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow (included in profile), Virtue of the Penitent")
+
+#entry("BERTRAND THE BRIGAND")
+#namecost("Leader of the Bowmen of Bergerac", "")
+#profile(
+  (name: "Bertrand", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 90),
+  (name: "Little Hugo", m: 4, ws: 4, bs: 4, s: 5, t: 4, w: 1, i: 4, a: 2, ld: 7, points: ""),
+  (name: "Gui the Great", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 6, points: ""),
+)
+#field("TROOP TYPE", "Infantry (Special Character, Human)")
+#field("BASE SIZE", "20x20 or 25x25")
+#field("EQUIPMENT", "Hand weapon, longbow")
+#field("MAGIC ITEMS", "")
+
+- *The Black Arrow:* Enchanted Item. One use only. The Black Arrow has the following profile:
+
+#minitable(("Range", "Strength", "Special Rules"), ("36\"", "10", "Killing Blow"))
+#field("SPECIAL RULES", "Loner, Scouts, Skirmisher, Sniper")
+
+- *Bowmen of Bergerac:* Bertrand must be accompanied by a unit of Herrimaults chosen from the army list at a cost of 9 points per model. This unit has +1 Ballistic Skill. Little Hugo and Gui the Great are part of the unit's Command Group and must be upgraded at no additional cost. Bertrand is the unit's Leader and may never choose to leave this unit.
+- *Marksman:* Bertrand may re-roll failed to Hit rolls with missile weapons.
+- *Hugo le Petit:* Hugo le Petit is armed with a warbow instead of a longbow.
+- *Gui le Gros:* As long as Gui le Gros is alive, the unit he is with may re-roll failed Leadership tests.

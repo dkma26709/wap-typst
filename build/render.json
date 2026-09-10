@@ -12,8 +12,16 @@
   "cover": "covers/araby/3.0.png"
  },
  {
+  "id": "beastmen/1.7",
+  "cover": null
+ },
+ {
   "id": "beastmen/3.0",
   "cover": "covers/beastmen/3.0.png"
+ },
+ {
+  "id": "bretonnia/1.6",
+  "cover": null
  },
  {
   "id": "bretonnia/3.0",
@@ -24,8 +32,16 @@
   "cover": "covers/chaos-dwarfs/3.0.png"
  },
  {
+  "id": "daemons-of-chaos/1.71",
+  "cover": null
+ },
+ {
   "id": "daemons-of-chaos/3.0",
   "cover": "covers/daemons-of-chaos/3.0.png"
+ },
+ {
+  "id": "dark-elves/1.71",
+  "cover": null
  },
  {
   "id": "dark-elves/3.1",
@@ -34,6 +50,10 @@
  {
   "id": "dogs-of-war/3.1",
   "cover": "covers/dogs-of-war/3.1.png"
+ },
+ {
+  "id": "dwarfs/1.6",
+  "cover": null
  },
  {
   "id": "dwarfs/3.11",
@@ -52,6 +72,10 @@
   "cover": "covers/halflings/3.0.png"
  },
  {
+  "id": "high-elves/1.6",
+  "cover": null
+ },
+ {
   "id": "high-elves/3.1",
   "cover": "covers/high-elves/3.1.png"
  },
@@ -66,6 +90,14 @@
  {
   "id": "kislev/3.1",
   "cover": "covers/kislev/3.1.png"
+ },
+ {
+  "id": "lizardmen/1.6",
+  "cover": null
+ },
+ {
+  "id": "lizardmen/1.61",
+  "cover": null
  },
  {
   "id": "lizardmen/1.62",
@@ -92,8 +124,16 @@
   "cover": "covers/norsca/3.0.png"
  },
  {
+  "id": "ogre-kingdoms/1.6",
+  "cover": null
+ },
+ {
   "id": "ogre-kingdoms/3.1",
   "cover": "covers/ogre-kingdoms/3.1.png"
+ },
+ {
+  "id": "orcs-goblins/1.6",
+  "cover": null
  },
  {
   "id": "orcs-goblins/3.0",
@@ -104,12 +144,24 @@
   "cover": "covers/pirates-of-sartosa/3.0.png"
  },
  {
+  "id": "skaven/1.9",
+  "cover": null
+ },
+ {
   "id": "skaven/3.0",
   "cover": "covers/skaven/3.0.png"
  },
  {
+  "id": "empire/1.6",
+  "cover": null
+ },
+ {
   "id": "empire/3.1",
   "cover": "covers/empire/3.1.png"
+ },
+ {
+  "id": "rulebook/2.32",
+  "cover": null
  },
  {
   "id": "rulebook/3.11",
@@ -117,6 +169,10 @@
  },
  {
   "id": "ordo-draconis/2026.1",
+  "cover": null
+ },
+ {
+  "id": "tomb-kings/1.6",
   "cover": null
  },
  {
@@ -128,12 +184,24 @@
   "cover": null
  },
  {
+  "id": "vampire-counts/1.71",
+  "cover": null
+ },
+ {
   "id": "vampire-counts/3.0",
   "cover": "covers/vampire-counts/3.0.png"
  },
  {
+  "id": "warriors-of-chaos/1.6",
+  "cover": null
+ },
+ {
   "id": "warriors-of-chaos/3.0",
   "cover": "covers/warriors-of-chaos/3.0.png"
+ },
+ {
+  "id": "wood-elves/1.61",
+  "cover": null
  },
  {
   "id": "wood-elves/3.1",
