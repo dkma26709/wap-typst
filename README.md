@@ -26,15 +26,30 @@ and no challenge to their status is intended. Not for sale.
 ## Pipeline
 
 ```
-source PDF ─► extract ─► verify ─► src/<slug>.typ ─► PDF
+source PDF ─► extract ─► verify ─► src/<army>/<version>.typ ─► PDF
                                    (yours from here on)
-           extract/batch.py + to_book.py            typst
+           extract/batch.py + to_book.py                      typst
 ```
 
 **`src/` is the whole of it.** A book is a single Typst file: its own front
 matter, its own metadata, its own text. Nothing generates it, nothing else holds
 a copy of it, and there is no intermediate representation to keep in step. Adding
 a unit means copying the entry above it and editing the values.
+
+**A book's identity is its path.** The army is the folder and the version is the
+file, so the same army at two versions is two books that cannot write over each
+other, and `ls src/lizardmen/` is the list of what we hold of it:
+
+```
+src/lizardmen/3.0.typ  3.0-house.typ  3.0-proposal.typ  1.64.typ
+```
+
+That path, minus the extension, is the book's **id** — `lizardmen/3.0` — and it
+is the one name the whole project uses: the file the publish workflow compiles,
+the URL the site links, the cover art under `assets/covers/<army>/<version>`, the
+figures under `assets/figures/<army>/<version>/`, and the record an edition keeps
+at `editions/<shelf>/<army>/<version>.toml`. No book states its own id, because
+where it sits already says it.
 
 A book is imported *once*. `extract/batch.py` reads a PDF, verifies the
 extraction, and stops there — deliberately writing no Typst, because a
@@ -64,7 +79,10 @@ python extract/to_book.py lizardmen
 python emit.py
 
 # Compile one. Bundled fonts only, so this matches the CI render exactly.
-typst compile --ignore-system-fonts --root . src/lizardmen.typ out/lizardmen.pdf
+# Render into a tree mirroring src/ — check_editions.py finds a book's source
+# from the folder its PDF is in.
+typst compile --ignore-system-fonts --root . \
+  src/lizardmen/3.0.typ out/lizardmen/3.0.pdf
 
 # Check a rendered book still carries every word of its source
 python extract/roundtrip.py lizardmen --source "path/to/Warhammer - Lizardmen 3.0.pdf"
@@ -76,20 +94,23 @@ pass `--force` to re-extract everything.
 ## Editions
 
 An **edition** is a book with our own amendments. It is a fork of that book, kept
-in git: `src/lizardmen-house.typ` beside `src/lizardmen.typ`, so what the edition
-changed is `git diff` between the two, and a new upstream version is a three-way
-merge rather than a set of quotations that have to still match.
+in git: `src/lizardmen/3.0-house.typ` beside `src/lizardmen/3.0.typ`, so what the
+edition changed is `git diff` between the two, and a new upstream version is a
+three-way merge rather than a set of quotations that have to still match.
 
 ```
-src/lizardmen.typ  ──fork──►  src/lizardmen-house.typ  ──fork──►  -proposal.typ
-   the book                    the rules we play          what we are arguing about
+src/lizardmen/3.0.typ  ──fork──►  3.0-house.typ  ──fork──►  3.0-proposal.typ
+      the book                  the rules we play      what we are arguing about
 ```
 
 The faithful reproduction is untouched and keeps its own place on the site beside
 the amended one. `editions/<slug>/edition.toml` holds the edition's identity —
 its label, its version, and the colophon that is set into its books when they are
-written; `editions/<slug>/<book>.toml` records what each change was and why, for
-the day a new upstream version has to have them re-applied.
+written; `editions/<slug>/<army>/<version>.toml` records what each change was and
+why, for the day a new upstream version has to have them re-applied. That path is
+the book's own id, so a record and the book it is about are named the same thing
+by construction; `emit.py` refuses to build a page for an edition whose record is
+missing, since the tally it would print is "changes nothing".
 
 The changed rules are **not marked in the body**; an amended book is meant to
 read as a book. What an edition changed is set out in a chapter at the back,
@@ -101,10 +122,11 @@ from one record, that is checked rather than assumed:
 
 ```bash
 # Every word this edition removes or introduces must appear in its changelog
-python extract/check_editions.py out/lizardmen-house.pdf out/lizardmen.pdf
+python extract/check_editions.py out/lizardmen/3.0-house.pdf out/lizardmen/3.0.pdf
 
 # A proposal alters nothing, so its body must match its parent exactly
-python extract/check_editions.py out/rulebook-proposal.pdf out/rulebook-house.pdf     --identical-body
+python extract/check_editions.py out/rulebook/3.11-proposal.pdf \
+  out/rulebook/3.11-house.pdf --identical-body --chapter PROPOSALS
 ```
 
 ## Proposals
@@ -124,7 +146,7 @@ and `--chapter PROPOSALS` names the chapter to stop the comparison at.
 
 One proposal has been agreed and is gone from here. *An Army of Infamy: the Ordo
 Draconis* was the only entry in the Vampire Counts proposal book; it is now
-`src/ordo-draconis.typ`, a book of its own on the House Rules shelf, and both the
+`src/ordo-draconis/2026.1.typ`, a book of its own on the House Rules shelf, and both the
 proposal book and its record under `editions/proposal/` were deleted when it
 landed. That is what agreeing a proposal looks like — it does not usually mean a
 new book, but this one changed too much of a list to be written as amendments to

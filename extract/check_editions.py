@@ -129,9 +129,19 @@ def main() -> None:
     # window - a tamper test proved exactly that. Nothing belongs there in a
     # book this project emits, so the source is held to it directly.
     for pdf in (args.edition_pdf, args.parent_pdf):
-        source = ROOT / "src" / f"{pdf.stem}.typ"
+        # A book's id is its path under src/ - `lizardmen/3.0-house` - and a
+        # render mirrors that, so the PDF's own folder names the army. Failing
+        # to find the source is not a reason to skip: this check reports a pass
+        # either way, so a missing source would quietly retire it.
+        source = ROOT / "src" / pdf.parent.name / f"{pdf.stem}.typ"
         if not source.exists():
-            continue
+            flat = ROOT / "src" / f"{pdf.stem}.typ"
+            if not flat.exists():
+                raise SystemExit(
+                    f"check_editions: no source found for {pdf.name} - looked "
+                    f"for {source.relative_to(ROOT).as_posix()}. Render into a "
+                    f"tree mirroring src/, so out/<army>/<version>.pdf")
+            source = flat
         text = source.read_text(encoding="utf-8")
         if "#outline(" not in text:
             continue

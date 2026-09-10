@@ -18,17 +18,31 @@ What is hand-written: the `## Traps` section, which the generator reads back out
     python extract/rule_nodes.py --out <dir> --dry    # report only
 """
 import argparse
+import glob
 import os
 import re
 import sys
 
-RULEBOOK = "src/rulebook.typ"
+# The rulebook lives at src/rulebook/<version>.typ, with its House and Proposals
+# forks beside it. Those declare an edition in their own #book-meta, so the one
+# that does not is the rulebook's own text.
+RULEBOOKS = os.path.join("src", "rulebook", "*.typ")
+EDITION_RE = re.compile(r'^\s*edition:\s*"', re.M)
 TRAPS_RE = re.compile(r"\n## Traps\n(.*?)(?=\n## |\Z)", re.S)
 NAMECOST = re.compile(r'^#namecost\("([^"]+)",\s*""\)\s*$')
 PLACEHOLDER = "_None recorded. Add one the first time this rule surprises you._"
 
 # `== NAME` headings inside SPECIAL RULES that are sub-chapter titles, not rules.
 SUBCHAPTER = {"DEPLOYMENT SPECIAL", "FORMATION SPECIAL", "RULES"}
+
+
+def base_rulebook():
+    found = [p for p in sorted(glob.glob(RULEBOOKS))
+             if not EDITION_RE.search(open(p, encoding="utf-8").read())]
+    if len(found) != 1:
+        raise SystemExit("rule_nodes: expected one rulebook in %s, found %s"
+                         % (RULEBOOKS, found or "none"))
+    return found[0]
 
 
 def slug(name):
@@ -160,8 +174,11 @@ def main():
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
 
-    rules = load_rules(RULEBOOK)
-    types, transfers = load_troop_types(RULEBOOK)
+    rulebook = base_rulebook()
+    # Cited in every node it generates, so a node says which version it read.
+    source = rulebook.replace(os.sep, "/")
+    rules = load_rules(rulebook)
+    types, transfers = load_troop_types(rulebook)
     names = {r["name"] for r in rules}
 
     def base_of(s):
@@ -239,9 +256,9 @@ def main():
                                                        (r["subs"][0]["body"] if r["subs"] else []))),
              "type: reference"],
             "> **Bucket:** `references/wap-typst/rules/` · **Hub:** "
-            "[[wap_rules_gotchas]] · **Source:** `src/rulebook.typ:%d` — "
+            "[[wap_rules_gotchas]] · **Source:** `%s:%d` — "
             "generated, do not hand-edit above the Traps heading.\n\n# %s"
-            % (r["line"], title),
+            % (source, r["line"], title),
             body, fields, a.dry)
         counts["rule"] += 1
 
@@ -258,9 +275,9 @@ def main():
                  % (s["name"], title, one_line(s["body"])),
                  "type: reference"],
                 "> **Bucket:** `references/wap-typst/rules/` · **Hub:** "
-                "[[wap_rules_gotchas]] · **Source:** `src/rulebook.typ:%d` — "
+                "[[wap_rules_gotchas]] · **Source:** `%s:%d` — "
                 "generated, do not hand-edit above the Traps heading.\n\n# %s"
-                % (s["line"], s["name"]),
+                % (source, s["line"], s["name"]),
                 s["body"], sf, a.dry)
             counts["sub"] += 1
 
@@ -281,9 +298,9 @@ def main():
              "description: Troop type %s — %s" % (title, one_line(t["body"])),
              "type: reference"],
             "> **Bucket:** `references/wap-typst/rules/` · **Hub:** "
-            "[[wap_rules_gotchas]] · **Source:** `src/rulebook.typ:%d` — "
+            "[[wap_rules_gotchas]] · **Source:** `%s:%d` — "
             "generated, do not hand-edit above the Traps heading.\n\n"
-            "# Troop type: %s" % (t["line"], title),
+            "# Troop type: %s" % (source, t["line"], title),
             t["body"], fields, a.dry)
         counts["troop"] += 1
 
