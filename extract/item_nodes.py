@@ -33,6 +33,12 @@ import re
 import sys
 
 SRC = "src"
+# A book lives at src/<army>/<version>.typ, so the army is its folder and the
+# version its name. A fork of another book - the House rules, or the Proposals -
+# declares an edition in its own #book-meta, which is a surer signal than the
+# suffix on its filename.
+BOOKS = os.path.join(SRC, "*", "*.typ")
+EDITION_RE = re.compile(r'^\s*edition:\s*"', re.M)
 TRAPS_RE = re.compile(r"\n## Traps\n(.*?)(?=\n## |\Z)", re.S)
 PLACEHOLDER = "_None recorded. Add one the first time this item surprises you._"
 PRICED = re.compile(r'^#namecost\("([^"]+)",\s*"(\d+(?:\.\d+)?) points"\)')
@@ -109,22 +115,42 @@ def fmt(c):
     return "%d" % c if c == int(c) else ("%.1f" % c)
 
 
+def is_edition(path):
+    return bool(EDITION_RE.search(open(path, encoding="utf-8").read()))
+
+
+def base_book(army):
+    """The reproduced text of one army, whichever version is on the shelf.
+
+    Its forks sit in the same folder, so the one declaring no edition is it.
+    """
+    found = [p for p in sorted(glob.glob(os.path.join(SRC, army, "*.typ")))
+             if not is_edition(p)]
+    if len(found) != 1:
+        raise SystemExit("item_nodes: expected one %s book in %s/, found %s"
+                         % (army, os.path.join(SRC, army), found or "none"))
+    return found[0]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
 
-    common = [i for i in parse_items(os.path.join(SRC, "rulebook.typ"))
+    common = [i for i in parse_items(base_book("rulebook"))
               if i["cat"] in COMMON_CATS]
-    books = {}
-    for p in sorted(glob.glob(os.path.join(SRC, "*.typ"))):
-        b = os.path.basename(p)[:-4]
-        if b.endswith(("-house", "-proposal")) or b in ("rulebook", "template"):
+    books, sources = {}, {}
+    for p in sorted(glob.glob(BOOKS)):
+        army = os.path.basename(os.path.dirname(p))
+        if army == "rulebook" or is_edition(p):
             continue
         found = parse_items(p)
         if found:
-            books[b] = found
+            # Keyed by army: a node is one army's items, and the version it came
+            # from is recorded in the source line rather than in the node's name.
+            books[army] = found
+            sources[army] = p.replace(os.sep, "/")
 
     if not a.dry:
         os.makedirs(a.out, exist_ok=True)
@@ -163,9 +189,10 @@ def main():
                   re.sub(r"\s+", " ", it["body"][0])[:150] if it["body"] else ""),
                "type: reference"],
               "> **Bucket:** `references/wap-typst/items/` · **Hub:** "
-              "[[wap_points_anchors]] · **Source:** `src/rulebook.typ:%d` — "
+              "[[wap_points_anchors]] · **Source:** `%s:%d` — "
               "generated, do not hand-edit above the Traps heading.\n\n# %s"
-              % (it["line"], it["name"].title()),
+              % (base_book("rulebook").replace(os.sep, "/"), it["line"],
+                 it["name"].title()),
               body)
 
     # 2. an index per army book
@@ -181,8 +208,8 @@ def main():
                % (book_title(b), len(items), len({i["cat"] for i in items})),
                "type: reference"],
               "> **Bucket:** `references/wap-typst/items/` · **Hub:** "
-              "[[wap_points_anchors]] · **Source:** `src/%s.typ` — generated.\n\n"
-              "# Magic items: %s" % (b, book_title(b)),
+              "[[wap_points_anchors]] · **Source:** `%s` — generated.\n\n"
+              "# Magic items: %s" % (sources[b], book_title(b)),
               rows + ["", "**Price index across all books:** [[items_by_price]]"])
 
     # 3. the cross-book price index

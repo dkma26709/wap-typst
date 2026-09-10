@@ -33,6 +33,9 @@ jobs:
           # to know which is which.
           for id in $(jq -r '.[].id' build/render.json); do
             echo "::group::$id"
+            # An id is the book's path under src/ - `lizardmen/3.0` - so the
+            # published tree mirrors the source tree and needs its folders.
+            mkdir -p "$(dirname "_site/$id.pdf")"
             # Bundled fonts only, so the CI render matches the local one exactly.
             typst compile --ignore-system-fonts --root . \
               "src/$id.typ" "_site/$id.pdf"

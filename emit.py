@@ -427,9 +427,12 @@ def read_book(path: Path) -> dict:
     probed = json.loads(out.stdout)
     book = dict(probed["meta"])
     book["entries"] = probed["entries"]
-    book.setdefault("id", book["slug"])
-    if not book.get("id"):
-        book["id"] = book["slug"]
+    # A book's identity is where it sits: the army is the folder and the version
+    # is the file, so `src/lizardmen/3.0-house.typ` is `lizardmen/3.0-house`.
+    # The publish workflow compiles `src/<id>.typ` and the site links `<id>.pdf`,
+    # both of which this already was for every book; taking it from the path
+    # rather than the metadata leaves nothing to disagree with the filesystem.
+    book["id"] = path.relative_to(ROOT / "src").with_suffix("").as_posix()
     return book
 
 
@@ -440,7 +443,7 @@ def read_books() -> tuple[list[dict], dict[str, list[dict]]]:
     is no manifest to fall out of step with what is on disk.
     """
     books, derived = [], {}
-    for path in sorted(ROOT.glob("src/*.typ")):
+    for path in sorted(ROOT.glob("src/**/*.typ")):
         if path.name == "template.typ":
             continue
         book = read_book(path)
@@ -465,11 +468,14 @@ def read_editions() -> dict[str, dict]:
     for meta in sorted(ROOT.glob("editions/*/edition.toml")):
         data = tomllib.loads(meta.read_text(encoding="utf-8"))
         counts = {}
-        for book in sorted(meta.parent.glob("*.toml")):
+        # A record is keyed by the book it is about, which is that book's id -
+        # `lizardmen/3.0` - so the record sits at `lizardmen/3.0.toml` and the
+        # two are the same string by construction rather than by convention.
+        for book in sorted(meta.parent.rglob("*.toml")):
             if book.name == "edition.toml":
                 continue
             entry = tomllib.loads(book.read_text(encoding="utf-8"))
-            counts[book.stem] = {
+            counts[book.relative_to(meta.parent).with_suffix("").as_posix()] = {
                 "changes": len(entry.get("change", [])),
                 "proposals": len(entry.get("proposal", [])),
             }
@@ -490,6 +496,18 @@ def main() -> None:
     books, derived = read_books()
     editions = read_editions()
 
+    # An edition names the book it derives from, and a base naming no book would
+    # not fail of its own accord: the card code nests an edition beneath its
+    # base, so the edition would simply never be rendered anywhere. Both of
+    # these cross-references are ids, which are paths, so a book that moves
+    # without them is exactly the mistake worth catching here.
+    known = {b["id"] for b in books}
+    for base, group in sorted(derived.items()):
+        if base not in known:
+            raise SystemExit(
+                f"emit: {', '.join(b['id'] for b in group)} derives from "
+                f"'{base}', which is no book in src/")
+
     # Carry the edition's label, version and tallies onto each derived book, so
     # the card code sees one record per book-in-an-edition as it always has.
     for base, group in derived.items():
@@ -499,7 +517,14 @@ def main() -> None:
                 raise SystemExit(f"emit: {book['id']} claims edition "
                                  f"'{book['edition']}', which no editions/ "
                                  f"directory defines")
-            counted = edition["counts"].get(base, {})
+            # A missing record reads as nought changes, which is a claim on the
+            # page rather than an absence of one, so it is not tolerated.
+            if base not in edition["counts"]:
+                raise SystemExit(
+                    f"emit: {book['id']} is an edition of '{base}' but "
+                    f"editions/{book['edition']}/{base}.toml does not exist, "
+                    f"so the page would say it changes nothing")
+            counted = edition["counts"][base]
             book["edition_label"] = edition["label"]
             book["edition_version"] = edition["version"]
             book["changes"] = counted.get("changes", 0)

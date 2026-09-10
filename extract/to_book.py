@@ -261,8 +261,10 @@ def wrap(lines: list[str], columns: bool) -> list[str]:
     return ["#columns(2)["] + inner + ["]"]
 
 
+# No `id`: a book's id is its path under src/, so stating it in the metadata
+# could only ever disagree with where the file actually is.
 META_KEYS = ("slug", "army", "version", "layout", "cover", "align", "shelf",
-             "authored", "id", "base", "edition")
+             "authored", "base", "edition")
 
 
 def book_meta(book: dict) -> list[str]:
@@ -270,10 +272,6 @@ def book_meta(book: dict) -> list[str]:
     for key in META_KEYS:
         value = book.get(key)
         if value is None or value is False:
-            continue
-        # For a book that is not an edition these are the same thing, so saying
-        # it twice is noise. A consumer falls back to the slug.
-        if key == "id" and value == book.get("slug"):
             continue
         out.append(f"  {key}: " + ("true" if value is True else lit(str(value))) + ",")
     out.append(")")
@@ -291,12 +289,13 @@ HEAD = [
 
 
 def render(data: dict, book: dict, edition: dict | None = None) -> str:
-    figures = f"/assets/figures/{book['slug']}"
+    figures = f"/assets/figures/{book['slug']}/{book['version']}"
     rules = book.get("layout") == "rules"
 
     lines = [line.format(army=book["army"], version=book["version"])
              for line in HEAD]
-    lines += ["", '#import "template.typ": *', ""]
+    # A book sits one folder down, at src/<army>/<version>.typ.
+    lines += ["", '#import "../template.typ": *', ""]
     lines += book_meta(book)
     lines += ["", emit.front_matter(book, edition).rstrip()]
 
@@ -336,20 +335,23 @@ def main() -> None:
     ap.add_argument("slug")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
     ap.add_argument("-o", "--out", type=Path,
-                    help="defaults to src/<id>.typ")
+                    help="defaults to src/<army>/<version>.typ")
     args = ap.parse_args()
 
     books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
     book = next((b for b in books if b["slug"] == args.slug), None)
     if book is None:
         raise SystemExit(f"to_book: {args.slug} is not in the manifest")
-    book = dict(book, id=book["slug"])
     source = ROOT / "build" / f"{args.slug}.json"
     if not source.exists():
         raise SystemExit(f"to_book: {source} does not exist")
 
     data = json.loads(source.read_text(encoding="utf-8"))
-    out = (args.out or ROOT / "src" / f"{book['id']}.typ").resolve()
+    # The army is the folder and the version is the file, so importing a second
+    # version of a book lands beside the first rather than on top of it.
+    out = (args.out or ROOT / "src" / book["slug"] / f"{book['version']}.typ")
+    out = out.resolve()
+    out.parent.mkdir(parents=True, exist_ok=True)
     text = render(data, book)
     out.write_text(text, encoding="utf-8", newline=chr(10))
     entries = sum(len(c["entries"]) for c in data["chapters"])
