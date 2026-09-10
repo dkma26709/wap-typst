@@ -350,7 +350,8 @@ def inherited_align(slug: str) -> str | None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("slug")
+    ap.add_argument("book", help="a book's id, `lizardmen/1.64`, or just the "
+                                 "army where the manifest holds one version")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
     ap.add_argument("-o", "--out", type=Path,
                     help="defaults to src/<army>/<version>.typ")
@@ -360,10 +361,24 @@ def main() -> None:
     args = ap.parse_args()
 
     books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
-    book = next((b for b in books if b["slug"] == args.slug), None)
+    for entry in books:
+        entry.setdefault("id", f"{entry['slug']}/{entry['version']}")
+
+    # An army names its book while we hold one version of it, which is most of
+    # them; once we hold more it does not, and answering with whichever came
+    # first in the file would import the wrong book under the right name.
+    book = next((b for b in books if b["id"] == args.book), None)
     if book is None:
-        raise SystemExit(f"to_book: {args.slug} is not in the manifest")
-    source = ROOT / "build" / f"{args.slug}.json"
+        matches = [b for b in books if b["slug"] == args.book]
+        if len(matches) > 1:
+            raise SystemExit(
+                f"to_book: {args.book} is {len(matches)} books in the manifest - "
+                f"name one: {', '.join(sorted(b['id'] for b in matches))}")
+        if not matches:
+            raise SystemExit(f"to_book: {args.book} is not in the manifest")
+        book = matches[0]
+
+    source = ROOT / "build" / f"{book['id']}.json"
     if not source.exists():
         raise SystemExit(f"to_book: {source} does not exist")
 

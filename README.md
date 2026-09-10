@@ -94,7 +94,7 @@ and nothing else — no Python, and never the source PDFs.
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 
 # Import one into src/. From here on the file is yours.
-python extract/to_book.py lizardmen
+python extract/to_book.py lizardmen/3.0
 
 # Rebuild the landing page and the render list from the books
 python emit.py
@@ -106,8 +106,14 @@ typst compile --ignore-system-fonts --root . \
   src/lizardmen/3.0.typ out/lizardmen/3.0.pdf
 
 # Check a rendered book still carries every word of its source
-python extract/roundtrip.py lizardmen --source "path/to/Warhammer - Lizardmen 3.0.pdf"
+python extract/roundtrip.py lizardmen/3.0 --source "path/to/Warhammer - Lizardmen 3.0.pdf"
 ```
+
+Every one of those names the book by its **id** — `lizardmen/3.0` — which is
+also where its extraction, its render and its Typst all sit, so none of these
+paths has to be assembled. `to_book.py` will still take a bare army name while
+the manifest holds one version of it; once it holds more, it says which ids it
+found rather than picking one.
 
 `batch.py` skips a book whose JSON is newer than its PDF, so re-runs are cheap;
 pass `--force` to re-extract everything.
@@ -259,9 +265,9 @@ weapon table are legitimate — without it the sweep reports two dozen hits on a
 untouched corpus and teaches you to ignore it.
 
 ```bash
-python extract/coverage.py "path/to/book.pdf" build/lizardmen.json
-python extract/welds.py build/lizardmen.json
-python extract/roundtrip.py lizardmen --source "path/to/book.pdf"
+python extract/coverage.py "path/to/book.pdf" build/lizardmen/3.0.json
+python extract/welds.py build/lizardmen/3.0.json
+python extract/roundtrip.py lizardmen/3.0 --source "path/to/book.pdf"
 ```
 
 A fourth gate is about the site rather than a book. `check_site.py` walks a

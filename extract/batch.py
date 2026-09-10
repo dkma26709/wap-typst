@@ -89,12 +89,19 @@ def main() -> None:
         army, version = parsed
         alias = ALIASES.get(army.lower())
         army, slug = alias if alias else (army, slugify(army))
-        target = args.build / f"{slug}.json"
+        # A book's id is its army and its version together, as it is everywhere
+        # else. Keyed on the army alone, three versions of Lizardmen shared one
+        # extraction: the mtime skip below then found a JSON newer than the next
+        # PDF and never re-extracted, so 1.63 and 1.64 were checked against
+        # 1.62's text - and the manifest still gained an entry for each.
+        book_id = f"{slug}/{version}"
+        target = args.build / f"{book_id}.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
 
         if args.force or not target.exists() or target.stat().st_mtime < pdf.stat().st_mtime:
             code, out = capture([
                 ROOT / "extract" / "extract.py", pdf,
-                "-o", args.build, "--slug", slug,
+                "-o", args.build, "--slug", book_id,
             ])
             if code:
                 failures.append(f"{army}: extract failed\n{out}")
@@ -178,6 +185,7 @@ def main() -> None:
                 parchment.write_bytes(src.read_bytes())
 
         manifest.append({
+            "id": book_id,
             "slug": slug,
             "army": army,
             "version": version,
@@ -192,12 +200,15 @@ def main() -> None:
 
     catalogue = args.build / "books.json"
     if catalogue.exists():
-        seen = {b["slug"] for b in manifest}
+        # Merged on the id, not the army: two versions of one book are two
+        # entries, and a fresh run of 1.64 must not displace 3.0's.
+        seen = {b["id"] for b in manifest}
         prior = json.loads(catalogue.read_text(encoding="utf-8"))["books"]
         # A book this script cannot rebuild survives --replace: an authored one
         # never came out of a PDF run at all, and an imported one now owns its
         # own Typst, which a re-extraction would not reproduce.
-        kept = [b for b in prior if b["slug"] not in seen
+        kept = [b for b in prior
+                if b.get("id", f"{b['slug']}/{b['version']}") not in seen
                 and (not args.replace
                      or b.get("authored") or b.get("hand_written"))]
         if kept:
