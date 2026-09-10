@@ -97,6 +97,39 @@ def body_start(pdf: Path) -> int:
     return doc.page_count
 
 
+# The template's bottom margin, which the folio is set inside. Measured on the
+# corpus: the folio's line sits at y=801.9 of an 841.9pt page while the lowest
+# body line ends at 785.1, so the band holds the page number and nothing else.
+FOOTER_BAND = 1.9 * 28.3465  # 1.9cm, from `book()` in src/template.typ
+
+
+def page_words(page: pymupdf.Page) -> list[str]:
+    """Every word a reader sees on the page, except the folio.
+
+    The folio has to go, because an edition that adds a page to its base does
+    not thereby differ from it by a word. Every body page carries its own
+    number, so an edition one page longer contributes exactly one token its
+    base has not got, and `71` was reported against the Empire House book as an
+    undocumented addition on that basis alone.
+
+    Dropped on two signals rather than one. Position would do on its own today,
+    but the clearance between the band and the lowest body line is 3pt, and a
+    bare number is exactly what half the cells of a weapon profile hold - so a
+    line goes only if it is inside the bottom margin AND is nothing but digits.
+    """
+    band = page.rect.height - FOOTER_BAND
+    kept: list[str] = []
+    for block in page.get_text("dict")["blocks"]:
+        if block["type"] != 0:
+            continue
+        for line in block["lines"]:
+            text = "".join(span["text"] for span in line["spans"])
+            if line["bbox"][1] >= band and text.strip().isdigit():
+                continue
+            kept.extend(words(text.replace(SOFT, "")))
+    return kept
+
+
 def bag(pdf: Path, pages: range | None = None) -> Counter:
     doc = pymupdf.open(pdf)
     out: Counter = Counter()
@@ -104,7 +137,7 @@ def bag(pdf: Path, pages: range | None = None) -> Counter:
     for pno, page in enumerate(doc):
         if pno not in wanted:
             continue
-        out.update(words(page.get_text("text").replace(SOFT, "")))
+        out.update(page_words(page))
     return out
 
 
