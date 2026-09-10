@@ -94,3 +94,52 @@ original = """BASE SIZE: 50x75 or 60x90"""
 new = """
 @EQUIPMENT: Hand weapon
 """
+
+[[change]]
+id      = "slann-battle-standard-full-allowance"
+title   = "A Slann keeps its full allowance behind the Battle Standard"
+chapter = "CHARACTERS"
+entry   = "SLANN MAGE-PRIEST"
+op      = "replace"
+why     = """
+The Scar-Veteran, three entries later in the same chapter, may carry the Battle \
+Standard with a Magic Standard of no points limit in addition to any other Magic \
+Items they might have. The Slann alone paid for the privilege, halving its hundred \
+points to fifty, which left the army's most expensive character as the one that \
+could least afford to carry its banner. The two entries now read the same way.
+"""
+
+[[change]]
+id      = "saurus-warriors-weapon-skill-4"
+title   = "Saurus Warriors strike as well as they are built"
+chapter = "CORE UNITS"
+entry   = "SAURUS WARRIORS"
+op      = "replace"
+why     = """
+Weapon Skill 3 put a Saurus Warrior on the same footing as a militiaman, which sits \
+oddly beside Strength 4, Toughness 4 and two Attacks. A point a model pays for the \
+difference.
+"""
+
+[[change]]
+id      = "stegadon-200-points"
+title   = "A Stegadon costs five points more"
+chapter = "RARE UNITS"
+entry   = "STEGADON"
+op      = "replace"
+why     = """
+Impact Hits (D6+1) on a Monster with four Attacks and Stubborn is worth more than the \
+book charged for it.
+"""
+
+[[change]]
+id      = "arcanadon-no-impact-hits"
+title   = "An Arcanadon does not trample"
+chapter = "RARE UNITS"
+entry   = "ARCANADON"
+op      = "replace"
+why     = """
+The Arcanadon carries a bound spell and a crew of Skinks, and is priced as a platform \
+rather than as a charge. Impact Hits belong to the Stegadon beside it, which is the \
+entry built to run into things.
+"""
