@@ -21,6 +21,26 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).parent.parent
 TITLE = re.compile(r"^Warhammer\s*-\s*(.+?)\s+([\d.]+)$", re.I)
 
+# No raster image is taken out of a source PDF unless --art asks for it, and not
+# even then from a book that carries a quantity of them. The rules text is
+# Eliasson's and freely distributed; the illustrations in the older books are
+# neither his nor ours to republish, and this repository is public.
+#
+# The number is measured, not guessed, and the two ends are closer than they
+# look. An army book on the line this project imports holds two to eight images:
+# a parchment background repeated once per section, a flat black block, and at
+# most one diagram of unit bases. The rulebook holds 49, because its diagrams of
+# movement and charge arcs are its own and it places 46 of them - so a limit set
+# by the army books would refuse the one book whose pictures we do want.
+#
+# Above them, the illustrated editions of the same armies, counted the same way:
+# 126 for Norse 8th, 313 for Nippon 8th, 529 for Dwarfs 9th. So the gap to clear
+# is 49 to 126, and 80 sits between the two with about 1.6x in either direction.
+# --art being off by default is the protection; this is the backstop for the day
+# a directory holds both kinds of book, which is exactly what the source
+# directory holds.
+ART_LIMIT = 80
+
 # The core rulebook's filename carries its edition, which would otherwise become
 # part of both its title and its slug.
 ALIASES = {
@@ -67,6 +87,11 @@ def main() -> None:
                     help="drop books not named in this run. Off by default: the "
                          "manifest is merged, so adding one book does not "
                          "silently unpublish the rest")
+    ap.add_argument("--art", action="store_true",
+                    help="promote the book's raster images into assets/. OFF BY "
+                         "DEFAULT, and refused outright above "
+                         f"{ART_LIMIT} images in a book: the illustrations in "
+                         "these PDFs are not ours to republish")
     args = ap.parse_args()
 
     sources: list[Path] = []
@@ -128,11 +153,25 @@ def main() -> None:
         missing = value(cov, "missing")
         welds = value(wel, "suspected welds")
 
+        # Nothing raster leaves the PDF without --art, and a book carrying more
+        # images than any book on this line does is refused even with it. The
+        # count is of what the extraction found, so it sees the whole PDF rather
+        # than only the images a page places.
+        art = args.art
+        if art and len(data.get("images", {})) > ART_LIMIT:
+            art = False
+            failures.append(
+                f"{army} {version}: --art refused - {len(data['images'])} images "
+                f"in the PDF, over the limit of {ART_LIMIT}. An army book on "
+                f"this line carries eight at most and the rulebook 49; this many "
+                f"means illustrations, which are not ours to republish. The book "
+                f"itself imported without them.")
+
         # Promote each book's cover illustration into assets/, where it serves as
         # both the Typst cover art and the landing-page thumbnail. The parchment
         # background is shared by the whole series, so it is only taken once.
         cover_rel = None
-        if data.get("cover"):
+        if art and data.get("cover"):
             covers = ROOT / "assets" / "covers"
             covers.mkdir(parents=True, exist_ok=True)
             src = args.build / data["image_dir"] / data["cover"]
@@ -154,7 +193,7 @@ def main() -> None:
             for b in pool if b["type"] == "figure"
         }
         figures = 0
-        if wanted:
+        if art and wanted:
             dest = ROOT / "assets" / "figures" / slug / version
             dest.mkdir(parents=True, exist_ok=True)
             for name in sorted(wanted):
@@ -177,7 +216,7 @@ def main() -> None:
 
         # The parchment is shared by every book, so it is taken once. The name is
         # fixed because template.typ refers to it directly.
-        if data.get("background"):
+        if art and data.get("background"):
             src = args.build / data["image_dir"] / data["background"]
             parchment = ROOT / "assets" / "images" / f"parchment{src.suffix}"
             if src.exists() and not parchment.exists():

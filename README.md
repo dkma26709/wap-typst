@@ -23,6 +23,17 @@ Warhammer, Warhammer Fantasy Battle and all associated names, races and places
 are trademarks of Games Workshop Limited. This project is unaffiliated with both
 and no challenge to their status is intended. Not for sale.
 
+**No illustration is taken out of a source PDF.** The rules text is Eliasson's
+and freely distributed; the artwork in the older books is neither his nor ours to
+republish, and this repository is public. So `batch.py` promotes no raster image
+into `assets/` unless `--art` asks it to, and refuses even then above eighty
+images in a book. An army book on the line imported here holds two to eight —
+a parchment background, a flat block, at most one diagram of unit bases — and the
+rulebook holds 49, because its diagrams of movement and charge arcs are its own
+and it places 46 of them. The illustrated editions of the same armies hold 126 to
+529 by the same count. A book whose diagrams are therefore absent says so at
+import rather than leaving it to be noticed.
+
 ## Pipeline
 
 ```
