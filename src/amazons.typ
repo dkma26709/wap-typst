@@ -202,17 +202,17 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 
 = CHARACTERS
 
-#entry("MATRIACHS", first: true)
-#profile(
-  (name: "Matriarch", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
-  (name: "Mistress", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-#field("OPTIONS", "")
-
+#unit("MATRIACHS",
+  first: true,
+  profiles: (
+    (name: "Matriarch", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 90),
+    (name: "Mistress", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 50),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  options: [
 - May choose one of the following:
   - Spear +3 points
   - Additional hand weapon +5 points
@@ -240,21 +240,22 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - One Mistress may carry the Battle Standard +25 points
 - A Mistress may take Magic Items up to a total of 50 points
 - A Matriarch may take Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-
-#entry("SERPENT PRIESTESSES")
-#profile(
-  (name: "Serpent High Priestess", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
-  (name: "Serpent Priestess", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Serpent Priestess is a Level 1 Wizard. A Serpent High Priestess is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("SERPENT PRIESTESSES",
+  profiles: (
+    (name: "Serpent High Priestess", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
+    (name: "Serpent Priestess", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Serpent Priestess is a Level 1 Wizard. A Serpent High Priestess is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Beasts
 - Death
 - Heavens
@@ -263,10 +264,9 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - Light
 - Metal
 - Shadow
-
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  options: [
 - May take an additional Wizard Level +35 points
 - May take a Claw of the Old Ones +10 points
 - May choose one of the following:
@@ -284,68 +284,76 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
   - Great Wyrm (High Priestess only) +260 points
 - A Serpent Priestess may take Magic Items up to a total of 50 points
 - A Serpent High Priestess may take Magic Items up to a total of 100 points
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#compact-entry("JAGUAR")[
-#profile(
-  (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+#unit("JAGUAR",
+  compact: true,
+  profiles: (
+    (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Feline)",
+  base-size: "25x50",
+  special-rules: "Forest Strider, Mighty Blow (1)",
 )
-#field("TROOP TYPE", "War Beast (Feline)")
-#field("BASE SIZE", "25x50")
-#field("SPECIAL RULES", "Forest Strider, Mighty Blow (1)")
-]
 
-#compact-entry("CULCHAN")[
-#profile(
-  (name: "Culchan", m: 8, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+#unit("CULCHAN",
+  compact: true,
+  profiles: (
+    (name: "Culchan", m: 8, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Phorusrhacid)",
+  base-size: "25x50",
+  special-rules: "Armour Piercing (1), Forest Strider",
 )
-#field("TROOP TYPE", "War Beast (Phorusrhacid)")
-#field("BASE SIZE", "25x50")
-#field("SPECIAL RULES", "Armour Piercing (1), Forest Strider")
-]
 
-#compact-entry("COLD ONE")[
-#profile(
-  (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: "-"),
+#unit("COLD ONE",
+  compact: true,
+  profiles: (
+    (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Saurian)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fear, Forest Strider, Natural Armour (6+), Stupidity",
 )
-#field("TROOP TYPE", "War Beast (Saurian)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fear, Forest Strider, Natural Armour (6+), Stupidity")
-]
 
-#entry("TERRADON")
-#profile(
-  (name: "Terradon", m: 2, ws: 3, bs: 0, s: 4, t: 3, w: 2, i: 2, a: 1, ld: 3, points: "-"),
+#unit("TERRADON",
+  profiles: (
+    (name: "Terradon", m: 2, ws: 3, bs: 0, s: 4, t: 3, w: 2, i: 2, a: 1, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Saurian)",
+  base-size: "40x40",
+  special-rules: "Fear, Fly (9), Forest Strider",
+  special-rules-body: (
+    rule("Drop Rocks")[Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.],
+  ),
 )
-#field("TROOP TYPE", "War Beast (Saurian)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Fear, Fly (9), Forest Strider")
 
-- *Drop Rocks:* Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.
-
-#compact-entry("GREAT WYRM")[
-#profile(
-  (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 6, points: "-"),
+#unit("GREAT WYRM",
+  compact: true,
+  profiles: (
+    (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 6, points: "-"),
+  ),
+  troop-type: "Monster (Ophidian)",
+  base-size: "50x100 or 100x150",
+  special-rules: "Fly (7), Natural Armour (4+)",
 )
-#field("TROOP TYPE", "Monster (Ophidian)")
-#field("BASE SIZE", "50x100 or 100x150")
-#field("SPECIAL RULES", "Fly (7), Natural Armour (4+)")
-]
 
 = CORE UNITS
 
-#entry("WARRIORS", first: true)
-#profile(
-  (name: "Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 4),
-)
-#field("UNIT SIZE", "15-45")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-#field("OPTIONS", "")
-
+#unit("WARRIORS",
+  first: true,
+  profiles: (
+    (name: "Warrior", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 4),
+  ),
+  unit-size: "15-45",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  options: [
 - May choose one of the following:
   - Replace shields with additional hand weapons free
   - Spears +0.5 point/model
@@ -353,34 +361,36 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Warrior to a Musician +5 points
 - May upgrade one Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("ARCHERS")
-#profile(
-  (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shortbow")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-#field("OPTIONS", "")
 
+#unit("ARCHERS",
+  profiles: (
+    (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shortbow",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  options: [
 - May upgrade one Archer to a Leader +5 points
 - May upgrade one Archer to a Musician +5 points
 - May upgrade one Archer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("SKIRMISHERS")
-#profile(
-  (name: "Skirmisher", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 6),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, javelins")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("SKIRMISHERS",
+  profiles: (
+    (name: "Skirmisher", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 6),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, javelins",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers",
+  options: [
 - May choose one of the following:
   - Replace javelins with slings free
   - Replace javelins with blowpipes free
@@ -388,23 +398,24 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May take shields (unless armed with blowpipes) +1 point/model
 - May upgrade one Skirmisher to a Leader +5 points
 - May upgrade one Skirmisher to a Musician +5 points
-
-#entry("HUNTRESSES")
-#profile(
-  (name: "Huntress", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 13),
-  (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Jaguar (Feline)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Light lance")
-#field("SPECIAL RULES", "Fast Cavalry, Forest Strider, Guerrilla Warfare, Mighty Blow (1) (Jaguar only), Sacrificial")
 
+#unit("HUNTRESSES",
+  profiles: (
+    (name: "Huntress", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 13),
+    (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Jaguar (Feline)",
+  base-size: "25x50",
+  equipment: "Light lance",
+  special-rules: "Fast Cavalry, Forest Strider, Guerrilla Warfare, Mighty Blow (1) (Jaguar only), Sacrificial",
+  special-rules-body: [
 *Hunt*
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May replace light lances with one of the following:
   - Shortbows free
   - Javelins +1 point/model
@@ -413,45 +424,49 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Huntress to a Musician +5 points
 - May upgrade one Huntress to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#entry("JAGUAR HUNTING PACK")
-#profile(
-  (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 7),
-  (name: "Beastmistress", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 10),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "War Beast (Feline)")
-#field("HANDLER", "Beastmistress (Human)")
-#field("BASE SIZE", "25x25 or 25x50 (Jaguar), 20x20 or 25x25 (Beastmistress)")
-#field("EQUIPMENT", "Two hand weapons (Beastmistress only)")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare (Beastmistress only), Mighty Blow (1), Mixed Unit, Skirmishers")
-#field("NOTES", "")
 
+#unit("JAGUAR HUNTING PACK",
+  profiles: (
+    (name: "Jaguar", m: 9, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 7),
+    (name: "Beastmistress", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 10),
+  ),
+  unit-size: "5-15",
+  troop-type: "War Beast (Feline)",
+  handler: "Beastmistress (Human)",
+  base-size: "25x25 or 25x50 (Jaguar), 20x20 or 25x25 (Beastmistress)",
+  equipment: "Two hand weapons (Beastmistress only)",
+  special-rules: "Forest Strider, Guerrilla Warfare (Beastmistress only), Mighty Blow (1), Mixed Unit, Skirmishers",
+  notes: [
 - One Beastmistress must be included for every five Jaguars in the unit.
-
-#compact-entry("SNAKE SWARMS")[
-#profile(
-  (name: "Snake Swarm", m: 5, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 1, a: 6, ld: 3, points: 30),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Swarm (Ophidian)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Aquatic, Cold-Blooded, Poisoned Attacks")
-]
+
+#unit("SNAKE SWARMS",
+  compact: true,
+  profiles: (
+    (name: "Snake Swarm", m: 5, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 1, a: 6, ld: 3, points: 30),
+  ),
+  unit-size: "3-9",
+  troop-type: "Swarm (Ophidian)",
+  base-size: "40x40",
+  special-rules: "Aquatic, Cold-Blooded, Poisoned Attacks",
+)
 
 = SPECIAL UNITS
 
-#entry("PIRANHA WARRIORS", first: true)
-#profile(
-  (name: "Piranha Warrior", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 8),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, javelins")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers")
-#field("OPTIONS", "")
-
+#unit("PIRANHA WARRIORS",
+  first: true,
+  profiles: (
+    (name: "Piranha Warrior", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 8),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, javelins",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Skirmishers",
+  options: [
 - May choose one of the following:
   - Upgrade javelins to have Poisoned Attacks +2 points/model
   - Replace javelins with Sun Gauntlets +2 points/model
@@ -462,18 +477,19 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Piranha Warrior to a Musician +5 points
 - May upgrade one Piranha Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("EAGLE WARRIORS")
-#profile(
-  (name: "Eagle Warrior", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 8),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear, shield")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt, Vanguard")
-#field("OPTIONS", "")
 
+#unit("EAGLE WARRIORS",
+  profiles: (
+    (name: "Eagle Warrior", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 8),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear, shield",
+  special-rules: "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt, Vanguard",
+  options: [
 - May replace spears with Sunstaffs +6 points/model
 - May take Enchanted Charms +1.5 points/model
 - May take Amulets of the Moon +2 points/model
@@ -482,18 +498,19 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Eagle Warrior to a Musician +5 points
 - May upgrade one Eagle Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("JAGUAR WARRIORS")
-#profile(
-  (name: "Jaguar Warrior", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 7),
+  ],
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Ambushers, Forest Strider, Guerrilla Warfare, Mighty Blow (1), Sacrificial Hunt")
-#field("OPTIONS", "")
 
+#unit("JAGUAR WARRIORS",
+  profiles: (
+    (name: "Jaguar Warrior", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 7),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  special-rules: "Ambushers, Forest Strider, Guerrilla Warfare, Mighty Blow (1), Sacrificial Hunt",
+  options: [
 - May choose one of the following:
   - Claws of the Old Ones +3 points/model
   - Replace shields with paired Claws of the Old Ones +3 points/model
@@ -504,37 +521,39 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Jaguar Warrior to a Musician +5 points
 - May upgrade one Jaguar Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("PYTHON WARRIORS")
-#profile(
-  (name: "Python Warrior", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shortbow")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Poisoned Attacks, Rapid Fire, Sacrificial Hunt, Scouts, Skirmishers")
-#field("OPTIONS", "")
 
+#unit("PYTHON WARRIORS",
+  profiles: (
+    (name: "Python Warrior", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "5-15",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shortbow",
+  special-rules: "Forest Strider, Guerrilla Warfare, Poisoned Attacks, Rapid Fire, Sacrificial Hunt, Scouts, Skirmishers",
+  options: [
 - May take additional hand weapons +1 point/model
 - May take Enchanted Charms +1.5 points/model
 - May take Amulets of the Moon +2 points/model
 - May upgrade one Python Warrior to a Leader +5 points
 - May upgrade one Python Warrior to a Musician +5 points
-
-#entry("CULCHAN RIDERS")
-#profile(
-  (name: "Culchan Rider", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 17),
-  (name: "Culchan", m: 8, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Culchan (Phorusrhacid)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Light lance, shield")
-#field("SPECIAL RULES", "Armour Piercing (1) (Culchan only), Fast Cavalry, Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-#field("OPTIONS", "")
 
+#unit("CULCHAN RIDERS",
+  profiles: (
+    (name: "Culchan Rider", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 17),
+    (name: "Culchan", m: 8, ws: 3, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  mount: "Culchan (Phorusrhacid)",
+  base-size: "25x50",
+  equipment: "Light lance, shield",
+  special-rules: "Armour Piercing (1) (Culchan only), Fast Cavalry, Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  options: [
 - May choose one of the following:
   - Replace light lances & shields with shortbows free
   - Replace light lances with javelins +2 points/model
@@ -544,20 +563,21 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Culchan Rider to a Musician +5 points
 - May upgrade one Culchan Rider to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("COLD ONE RIDERS")
-#profile(
-  (name: "Noblewoman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 20),
-  (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("BASE SIZE", "25x50")
-#field("MOUNT", "Cold One (Saurian)")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Fear, Forest Strider, Guerrilla Warfare, Natural Armour (6+), Sacrificial Hunt, Stupidity")
-#field("OPTIONS", "")
 
+#unit("COLD ONE RIDERS",
+  profiles: (
+    (name: "Noblewoman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 20),
+    (name: "Cold One", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 2, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Human)",
+  base-size: "25x50",
+  mount: "Cold One (Saurian)",
+  equipment: "Hand weapon, shield",
+  special-rules: "Fear, Forest Strider, Guerrilla Warfare, Natural Armour (6+), Sacrificial Hunt, Stupidity",
+  options: [
 - May take light lances +1 point/model
 - May take light armour +1.5 points/model
 - May take Enchanted Charms +1.5 points/model
@@ -567,58 +587,63 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Noblewoman to a Musician +5 points
 - May upgrade one Noblewoman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("TERRADON RIDERS")
-#profile(
-  (name: "Terradon Rider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 27),
-  (name: "Terradon", m: 2, ws: 3, bs: 0, s: 4, t: 3, w: 2, i: 2, a: 1, ld: 3, points: ""),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "mount", "equipment", "special-rules", "options"),
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Terradon (Saurian)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapons")
-#field("SPECIAL RULES", "Fast Cavalry, Fear, Fly (9), Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
 
-- *Drop Rocks:* Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.
-
-#field("OPTIONS", "")
-
+#unit("TERRADON RIDERS",
+  profiles: (
+    (name: "Terradon Rider", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 27),
+    (name: "Terradon", m: 2, ws: 3, bs: 0, s: 4, t: 3, w: 2, i: 2, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "3-9",
+  troop-type: "Cavalry (Human)",
+  mount: "Terradon (Saurian)",
+  base-size: "40x40",
+  equipment: "Hand weapons",
+  special-rules: "Fast Cavalry, Fear, Fly (9), Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  special-rules-body: (
+    rule("Drop Rocks")[Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time. To drop rocks, select one unengaged enemy unit that the Terradons moved over in that turn. That target immediately suffers D3 Strength 4 hits for each Terradon in the unit, distributed as for shooting attacks.],
+  ),
+  options: [
 - May choose one of the following:
   - Light lances +1 point/model
   - Shortbows +1 point/model
   - Javelins +2 points/model
 - May take shields +2 points/model
 - May upgrade one Terradon Rider to a Leader +5 points
-
-#entry("GOROLS")
-#profile(
-  (name: "Gorol", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 6, points: 30),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Infantry (Hominid)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Forest Strider")
-#field("OPTIONS", "")
 
+#unit("GOROLS",
+  profiles: (
+    (name: "Gorol", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 6, points: 30),
+  ),
+  unit-size: "3-9",
+  troop-type: "Monstrous Infantry (Hominid)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  special-rules: "Forest Strider",
+  options: [
 - May take great weapons +6 points/model
 - May take light armour +3 points/model
 - May upgrade one Gorol to a Leader +5 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("SERPENT GUARD", first: true)
-#profile(
-  (name: "Serpent Guard", m: 4, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm, light armour, shield")
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Stubborn")
-#field("OPTIONS", "")
-
+#unit("SERPENT GUARD",
+  first: true,
+  profiles: (
+    (name: "Serpent Guard", m: 4, ws: 5, bs: 4, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 12),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm, light armour, shield",
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Stubborn",
+  options: [
 - May replace polearms with Claws of the Old Ones +2 points/model
 - May choose one of the following:
   - Sun Gauntlets +3 points/model
@@ -630,213 +655,240 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
 - May upgrade one Serpent Guard to a Musician +5 points
 - May upgrade one Serpent Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("BOLT THROWER")
-#profile(
-  (name: "Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 35),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x50 (Bolt Thrower), 20x20 or 25x25 (Crew)")
-#field("EQUIPMENT", "Hand weapon, bolt thrower")
-#field("NOTES", "")
 
+#unit("BOLT THROWER",
+  profiles: (
+    (name: "Bolt Thrower", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 35),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine",
+  crew: "3 Crew (Human)",
+  base-size: "50x50 (Bolt Thrower), 20x20 or 25x25 (Crew)",
+  equipment: "Hand weapon, bolt thrower",
+  notes: [
 - You may take 1\-2 Bolt Throwers as a single Rare choice.
-
-#entry("ANCIENT SENTINELS")
-#profile(
-  (name: "Ancient Sentinel", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 10, points: 50),
+  ],
 )
-#field("UNIT SIZE", "3+")
-#field("TROOP TYPE", "Monstrous Infantry (Animated Construct)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Animated Construct, Magical Attacks, Magic Resistance (2), Natural Armour (4+)")
-#field("OPTIONS", "")
 
+#unit("ANCIENT SENTINELS",
+  profiles: (
+    (name: "Ancient Sentinel", m: 6, ws: 3, bs: 0, s: 5, t: 5, w: 3, i: 1, a: 3, ld: 10, points: 50),
+  ),
+  unit-size: "3+",
+  troop-type: "Monstrous Infantry (Animated Construct)",
+  base-size: "40x40",
+  equipment: "Hand weapon",
+  special-rules: "Animated Construct, Magical Attacks, Magic Resistance (2), Natural Armour (4+)",
+  options: [
 - May take great weapons +6 points/model
-
-#entry("STEGADON")
-#profile(
-  (name: "Stegadon", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: 4, ld: 6, points: 215),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Monster (Saurian)")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Giant Bow (Stegadon only), javelins (Crew only)")
 
+#unit("STEGADON",
+  profiles: (
+    (name: "Stegadon", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 5, i: 2, a: 4, ld: 6, points: 215),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 8, points: ""),
+  ),
+  troop-type: "Monster (Saurian)",
+  crew: "3 Crew (Human)",
+  base-size: "50x100 or 60x100",
+  equipment: "Giant Bow (Stegadon only), javelins (Crew only)",
+  equipment-body: [
 - *Giant Bow:* Instead of firing another missile weapon in the Shooting phase, one of the Crew may fire the giant bow. This is a bolt thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "5", "Cumbersome, Multiple Wounds (D3)"))
-#field("SPECIAL RULES", "Cold-Blooded, Sacrificial Hunt, Immunity (Psychology), Impact Hits (D6+1), Natural")
-
+  ],
+  special-rules: "Cold-Blooded, Sacrificial Hunt, Immunity (Psychology), Impact Hits (D6+1), Natural",
+  special-rules-body: [
 *Armour (4+), Stubborn*
-
-#field("UPGRADES", "")
-
-- *Gyroscope of Eternal Radiance:* Arcane Item. Bound spell (Level 3, cast on 9+). This is an *augment* spell with a range of 12". The target unit immediately makes a move with the Fly (10) special rule as if it were the Remaining Moves sub-phase.
-- *Sharpened Horns:* The Stegadon's its Impact Hits gains the Multiple Wounds (D3) special rule.
-- *Unstoppable Stampede:* The Stegadon gains the Devastating Charge special rule.
-
-#field("OPTIONS", "")
-
+  ],
+  upgrades: (
+    rule("Gyroscope of Eternal Radiance")[Arcane Item. Bound spell (Level 3, cast on 9+). This is an *augment* spell with a range of 12". The target unit immediately makes a move with the Fly (10) special rule as if it were the Remaining Moves sub-phase.],
+    rule("Sharpened Horns")[The Stegadon's its Impact Hits gains the Multiple Wounds (D3) special rule.],
+    rule("Unstoppable Stampede")[The Stegadon gains the Devastating Charge special rule.],
+  ),
+  options: [
 - May replace javelins with bows free
 - May replace giant bow with a Gyroscope of Eternal Radiance +20 points
 - May choose any of the following:
   - Unstoppable Stampede +10 points
   - Sharpened Horns +20 points
-
-#entry("AMAXON SWAMP PYTHON")
-#profile(
-  (name: "Amaxon Swamp Python", m: 8, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 4, a: 5, ld: 7, points: 210),
+  ],
 )
-#field("TROOP TYPE", "Monster (Ophidian)")
-#field("BASE SIZE", "50x100, 60x100 or 100x100")
-#field("SPECIAL RULES", "Aquatic, Cold-Blooded, Natural Armour (4+)")
 
-- *Constrict:* This is a special attack that can be used instead of Stomp (even against units that are normally immune to Stomp). Choose one model in base contact. The model must pass a Toughness test or suffer D6 Wounds which Ignores Armour saves.
-
-#entry("AVATAR OF RIGG")
-#profile(
-  (name: "Avatar of Rigg", m: 6, ws: 6, bs: 5, s: 5, t: 5, w: 4, i: 6, a: 5, ld: 10, points: 260),
+#unit("AMAXON SWAMP PYTHON",
+  profiles: (
+    (name: "Amaxon Swamp Python", m: 8, ws: 4, bs: 0, s: 6, t: 6, w: 6, i: 4, a: 5, ld: 7, points: 210),
+  ),
+  troop-type: "Monster (Ophidian)",
+  base-size: "50x100, 60x100 or 100x100",
+  special-rules: "Aquatic, Cold-Blooded, Natural Armour (4+)",
+  special-rules-body: (
+    rule("Constrict")[This is a special attack that can be used instead of Stomp (even against units that are normally immune to Stomp). Choose one model in base contact. The model must pass a Toughness test or suffer D6 Wounds which Ignores Armour saves.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Infantry (Deity)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Magical Attacks, Magical Ward (4+), Terror, Unstable")
 
+#unit("AVATAR OF RIGG",
+  profiles: (
+    (name: "Avatar of Rigg", m: 6, ws: 6, bs: 5, s: 5, t: 5, w: 4, i: 6, a: 5, ld: 10, points: 260),
+  ),
+  troop-type: "Monstrous Infantry (Deity)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Magical Attacks, Magical Ward (4+), Terror, Unstable",
+  special-rules-body: [
 - *Blessings of Rigg:* At the start of the Amazon turn, the Avatar of Rigg may choose one of the following Blessings to bestow. Each blessing affects all friendly Human units within 12", and lasts until the start of the next Amazon turn.
   - *Blood:* The units gain the Hatred special rule.
   - *Violent Death:* The units gain the Killing blow special rule.
   - *Warfare:* The units may re-roll all failed charge distances.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may only have one Avatar of Rigg included in your army.
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("THALESTRIS", first: true)
-#namecost("Queen of the Amazons", "")
-#profile(
-  (name: "Thalestris", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 300),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
-
-- *Sword of Rigg:* Magic Weapon. All attacks with this sword have the Ignore Armour saves and Multiple Wounds (D3) special rules. If the opponent carries a magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s magic weapon is destroyed.
-- *Crown of the Amazon Queen:* Talisman. The crown gives the wearer a Magical Ward (4+).
-- *Pendant of Delmair:* Enchanted Item. If the wearer loses a round of combat they may choose to transform into a were-jaguar for the duration of the next turn. While in were-jaguar form the wearer's Strength and Toughness are increased by 1 and they gain the Fear, Hatred and Frenzy special rules. However, they cannot use any weapon or shield while in this form.
-
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
-
-- *Queen of the Amazons:* Thalestris, and all friendly Amazon units within 12" her gain the Immunity (Psychology) special rule. However, if she is removed as a casualty, all Amazon break tests are taken at \-1 for the rest of the game.
-
-#field("OPTIONS", "")
-
+#unit("THALESTRIS",
+  solo: true,
+  first: true,
+  subtitle: "Queen of the Amazons",
+  profiles: (
+    (name: "Thalestris", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 5, ld: 10, points: 300),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Sword of Rigg")[Magic Weapon. All attacks with this sword have the Ignore Armour saves and Multiple Wounds (D3) special rules. If the opponent carries a magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s magic weapon is destroyed.],
+    rule("Crown of the Amazon Queen")[Talisman. The crown gives the wearer a Magical Ward (4+).],
+    rule("Pendant of Delmair")[Enchanted Item. If the wearer loses a round of combat they may choose to transform into a were-jaguar for the duration of the next turn. While in were-jaguar form the wearer's Strength and Toughness are increased by 1 and they gain the Fear, Hatred and Frenzy special rules. However, they cannot use any weapon or shield while in this form.],
+  ),
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  special-rules-body: (
+    rule("Queen of the Amazons")[Thalestris, and all friendly Amazon units within 12" her gain the Immunity (Psychology) special rule. However, if she is removed as a casualty, all Amazon break tests are taken at \-1 for the rest of the game.],
+  ),
+  options: [
 - May take a shortbow +4 points
 - May take a shield +5 points
-
-#entry("AZURA")
-#namecost("The Ice Maiden", "")
-#profile(
-  (name: "Azura", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 185),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Azure Fire:* Magic Weapon. Claw of the Old Ones. Enemies attacking the wielder in close combat suffer \-1 to Hit. In the shooting phase, Azure Fire follows the rules for Sunstaffs with Strength 5 and Multiple Shots (D3) special rules.
-- *The Talisman of Rendar:* Talisman. The Talisman of Rendar gives the wearer a Magical Ward (5+) and the Immunity (Flaming Attacks) special rule.
-
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt")
-
-- *Mesmerising Dance:* All models in base contact with Azura must take a Psychology test at the start of each close combat phase. If they fail they cannot attack this round.
-
-#entry("MELANDRA HAWKEYE")
-#namecost("The Adventuress", "")
-#profile(
-  (name: "Melandra Hawkeye", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 125),
+#unit("AZURA",
+  solo: true,
+  subtitle: "The Ice Maiden",
+  profiles: (
+    (name: "Azura", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 185),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Azure Fire")[Magic Weapon. Claw of the Old Ones. Enemies attacking the wielder in close combat suffer \-1 to Hit. In the shooting phase, Azure Fire follows the rules for Sunstaffs with Strength 5 and Multiple Shots (D3) special rules.],
+    rule("The Talisman of Rendar")[Talisman. The Talisman of Rendar gives the wearer a Magical Ward (5+) and the Immunity (Flaming Attacks) special rule.],
+  ),
+  special-rules: "Forest Strider, Guerrilla Warfare, Immunity (Psychology), Sacrificial Hunt",
+  special-rules-body: (
+    rule("Mesmerising Dance")[All models in base contact with Azura must take a Psychology test at the start of each close combat phase. If they fail they cannot attack this round.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Bow, Amulet of the Moon")
-#field("MAGIC ITEMS", "")
 
-- *Blade of the Hawk:* Magic Weapon. This blade gives the wielder +1 Attack and +1 to Hit.
-- *Pendant of the Old Ones:* Enchanted Item. Unless the model has charged or is fleeing, they may teleport anywhere on the battlefield (facing any direction) in the Remaining Moves sub-phase instead of moving, but they may not be placed within 1" of enemy models.
-
-#field("SPECIAL RULES", "Dodge (5+), Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Scouts")
-
-- *Evasion:* At the end of each combat Melandra is in, before Break tests are taken, she may choose to move out of combat. Place her anywhere within 1" of the enemy unit she was fighting. She may move as normal in her next turn.
-
-#entry("PENTHESILEA")
-#namecost("The Mark of the Serpent", "")
-#profile(
-  (name: "Penthesilea", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 150),
+#unit("MELANDRA HAWKEYE",
+  solo: true,
+  subtitle: "The Adventuress",
+  profiles: (
+    (name: "Melandra Hawkeye", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 125),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Bow, Amulet of the Moon",
+  magic-items: (
+    rule("Blade of the Hawk")[Magic Weapon. This blade gives the wielder +1 Attack and +1 to Hit.],
+    rule("Pendant of the Old Ones")[Enchanted Item. Unless the model has charged or is fleeing, they may teleport anywhere on the battlefield (facing any direction) in the Remaining Moves sub-phase instead of moving, but they may not be placed within 1" of enemy models.],
+  ),
+  special-rules: "Dodge (5+), Forest Strider, Guerrilla Warfare, Sacrificial Hunt, Scouts",
+  special-rules-body: (
+    rule("Evasion")[At the end of each combat Melandra is in, before Break tests are taken, she may choose to move out of combat. Place her anywhere within 1" of the enemy unit she was fighting. She may move as normal in her next turn.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon.")
-#field("MAGIC ITEMS", "")
 
-- *Throatcutter:* Magic Weapon. Additional hand weapon. This dagger gives the wielder the Poisoned Attacks and Killing Blow special rules.
-
-#field("SPECIAL RULES", "Forest Strider, Frenzy, Hatred, Guerrilla Warfare, Sacrificial Hunt")
-
-- *Mark of the Serpent:* Penthesilea has the Always Strike First rule. Enemy models attacking her must re-roll successful rolls to Hit in Close Combat.
-
-#entry("LYSIPPE")
-#namecost("The Mounted Avenger", "")
-#profile(
-  (name: "Lysippe", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
-  (name: "Blackfang", m: 8, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 7, points: ""),
+#unit("PENTHESILEA",
+  solo: true,
+  subtitle: "The Mark of the Serpent",
+  profiles: (
+    (name: "Penthesilea", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 150),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon.",
+  magic-items: (
+    rule("Throatcutter")[Magic Weapon. Additional hand weapon. This dagger gives the wielder the Poisoned Attacks and Killing Blow special rules.],
+  ),
+  special-rules: "Forest Strider, Frenzy, Hatred, Guerrilla Warfare, Sacrificial Hunt",
+  special-rules-body: (
+    rule("Mark of the Serpent")[Penthesilea has the Always Strike First rule. Enemy models attacking her must re-roll successful rolls to Hit in Close Combat.],
+  ),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("MAGIC ITEMS", "")
 
-- *Lizard Bane:* Magic Weapon. Light lance. All attacks with this weapon always Hit on a 2+. Against Lizardmen, it always Wounds on at least a 3+.
-- *Lysippe's Horned Helmet:* Magic Armour. This helmet gives Lysippe a 6+ armour save. In addition, she becomes subject to Frenzy.
-
-#field("SPECIAL RULES", "Fast Cavalry, Forest Strider, Guerrilla Warfare, Hatred (Lizardmen), Mighty Blow (1)")
-
+#unit("LYSIPPE",
+  solo: true,
+  subtitle: "The Mounted Avenger",
+  profiles: (
+    (name: "Lysippe", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 130),
+    (name: "Blackfang", m: 8, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 2, ld: 7, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  base-size: "25x50",
+  equipment: "Hand weapon, light armour",
+  magic-items: (
+    rule("Lizard Bane")[Magic Weapon. Light lance. All attacks with this weapon always Hit on a 2+. Against Lizardmen, it always Wounds on at least a 3+.],
+    rule("Lysippe's Horned Helmet")[Magic Armour. This helmet gives Lysippe a 6+ armour save. In addition, she becomes subject to Frenzy.],
+  ),
+  special-rules: "Fast Cavalry, Forest Strider, Guerrilla Warfare, Hatred (Lizardmen), Mighty Blow (1)",
+  special-rules-body: [
 (Blackfang only)*, Sacrificial Hunt*
 
 - *Lysippe's War Cry:* Whenever Lysippe charges, she causes Fear. In addition, any unit charged suffers \-1 to their Weapon Skill and Ballistic Skill when being charged by her. This has no effect on models with Immunity (Fear).
-
-#entry("LWAXANA")
-#namecost("Curse Witch of Blue Stumps", "")
-#profile(
-  (name: "Lwaxana", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 305),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Lwaxana is a Level 4 Wizard who uses one of the following Lores of Magic:")
 
+#unit("LWAXANA",
+  solo: true,
+  subtitle: "Curse Witch of Blue Stumps",
+  profiles: (
+    (name: "Lwaxana", m: 4, ws: 4, bs: 4, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 305),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic: "Lwaxana is a Level 4 Wizard who uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Shadow
-
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
-
-- *Blue Nightshade Dagger:* Magic Weapon. All close combat attacks with this dagger have the Poisoned Attacks special rule. In addition, these attacks automatically Wound on a To Hit roll of 5+.
-- *Staff of Retribution:* Arcane Item. Bound Spell (Level 2, cast on 7+). The Staff of Retribution contains a *magic missile* with a range of 24" that causes D6 Strength 5 hits. Roll a D6 each time the Staff has been used. On a roll of a 1, the staff can no longer be used for the rest of the battle.
-- *Voodoo Dolls:* Enchanted Item. Instead of attacking normally, the bearer may nominate a single enemy model in base contact and make a To Hit roll. If successful, that model is marked. At the start of each of the bearer’s Magic phases, the marked model must take a Strength test. If failed, it suffers D3 Wounds with no saves of any kind allowed.
-- *Amulet of the Great Toad:* Talisman. Any spell cast at the wearer of this Amulet or any unit they are with is automatically dispelled on a 4+. Roll before making any normal dispel attempt.
-
-#field("SPECIAL RULES", "Forest Strider, Guerrilla Warfare, Sacrificial Hunt")
+  ],
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("Blue Nightshade Dagger")[Magic Weapon. All close combat attacks with this dagger have the Poisoned Attacks special rule. In addition, these attacks automatically Wound on a To Hit roll of 5+.],
+    rule("Staff of Retribution")[Arcane Item. Bound Spell (Level 2, cast on 7+). The Staff of Retribution contains a *magic missile* with a range of 24" that causes D6 Strength 5 hits. Roll a D6 each time the Staff has been used. On a roll of a 1, the staff can no longer be used for the rest of the battle.],
+    rule("Voodoo Dolls")[Enchanted Item. Instead of attacking normally, the bearer may nominate a single enemy model in base contact and make a To Hit roll. If successful, that model is marked. At the start of each of the bearer’s Magic phases, the marked model must take a Strength test. If failed, it suffers D3 Wounds with no saves of any kind allowed.],
+    rule("Amulet of the Great Toad")[Talisman. Any spell cast at the wearer of this Amulet or any unit they are with is automatically dispelled on a 4+. Roll before making any normal dispel attempt.],
+  ),
+  special-rules: "Forest Strider, Guerrilla Warfare, Sacrificial Hunt",
+  order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules"),
+)
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
+  ],
+)
 
-#entry("Additional Material:")
-#namecost("Antti Sinivuori", "")
+#unit("Additional Material:",
+  subtitle: "Antti Sinivuori",
+  before: [
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
+  ],
+)

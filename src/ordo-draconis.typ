@@ -545,7 +545,6 @@ In any turn in which the model makes a successful charge, they have the Ignores 
 After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.
 
 #entry("THE ORDO'S POWERS")
-
 Five Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
 
 #namecost("KEPT GROUND", "25 points")
@@ -721,7 +720,6 @@ Shadow)"), ("2", "The Enfeebling Foe (Lore of Shadow)"), ("3", "The Withering (L
 ]
 
 #entry("THE ORDO'S ITEMS")
-
 Seven Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
 
 #namecost("WEATHER OVER THE KEEP", "15 points")
@@ -769,26 +767,26 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 
 = CHARACTERS
 
-#entry("BLOOD DRAGONS", first: true)
-#profile(
-  (name: "Lord", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 215),
-  (name: "Kastellan", m: 6, ws: 7, bs: 3, s: 5, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 100),
-)
-#field("TROOP TYPE", "Infantry (Character, Vampire, Blood Dragon)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour")
-#field("MAGIC", "A Blood Dragon who is a Wizard uses one of the following Lores of Magic:")
-
+#unit("BLOOD DRAGONS",
+  first: true,
+  profiles: (
+    (name: "Lord", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 215),
+    (name: "Kastellan", m: 6, ws: 7, bs: 3, s: 5, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 100),
+  ),
+  troop-type: "Infantry (Character, Vampire, Blood Dragon)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour",
+  magic: "A Blood Dragon who is a Wizard uses one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Necromancy
 - Shadow
-
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-
-- *Martial Honour:* The Vampire must always issue and accept challenges when possible.
-
-#field("OPTIONS", "")
-
+  ],
+  special-rules: "The Red Thirst, Vampiric",
+  special-rules-body: (
+    rule("Martial Honour")[The Vampire must always issue and accept challenges when possible.],
+  ),
+  options: [
 - May be upgraded to one of the following:
   - Level 1 Wizard +35 points
   - Level 2 Wizard (Lord only) +70 points
@@ -808,21 +806,22 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 - One Kastellan may carry the Battle Standard +25 points
 - A Kastellan may take Vampiric Powers and/or Magic Items up to a total of 50 points
 - A Lord may take Vampiric Powers and/or Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-#entry("WIGHT LORDS")
-#profile(
-  (name: "Wight King", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 9, points: 140),
-  (name: "Wight Lord", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 100),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Undead, Wight)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Killing Blow, Magical Attacks, Spectral Steeds, Undead")
-#field("OPTIONS", "")
 
+#unit("WIGHT LORDS",
+  profiles: (
+    (name: "Wight King", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 9, points: 140),
+    (name: "Wight Lord", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 100),
+  ),
+  troop-type: "Infantry (Character, Undead, Wight)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Killing Blow, Magical Attacks, Spectral Steeds, Undead",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +5 points
   - Heavy lance +10 points
@@ -835,25 +834,26 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 - One Wight Lord may carry the Battle Standard +25 points
 - A Wight Lord may take Magic Items up to a total of 50 points
 - A Wight King may take Magic Items up to a total of 100 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Battle Standard Bearer can have a Magic Standard with no points limit in addition to any other Magic Items they might have.
-#entry("NECROMANCERS")
-#profile(
-  (name: "Master Necromancer", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
-  (name: "Necromancer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Necromancer is a Level 1 Wizard. A Master Necromancer is a Level 3 Wizard. They use one of the following Lores of Magic:")
 
+#unit("NECROMANCERS",
+  profiles: (
+    (name: "Master Necromancer", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
+    (name: "Necromancer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Necromancer is a Level 1 Wizard. A Master Necromancer is a Level 3 Wizard. They use one of the following Lores of Magic:",
+  magic-body: [
 - Death
 - Necromancy
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional Wizard Level +35 points
 - May be upgraded to a Master of the Dead +20 points
 - May be mounted on one of the following:
@@ -862,55 +862,64 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
   - Abyssal Terror (Master Necromancer only) +125 points
 - A Necromancer may take Magic Items up to a total of 50 points
 - A Master Necromancer may take Magic Items up to a total of 100 points
+  ],
+)
 
 = CHARACTER MOUNTS
 
-#entry("SKELETAL STEED", first: true)
-#profile(
-  (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Undead, Skeleton)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Undead")
-#field("OPTIONS", "")
-
+#unit("SKELETAL STEED",
+  first: true,
+  profiles: (
+    (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Undead, Skeleton)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Undead",
+  options: [
 - May take barding +5 points
-#entry("NIGHTMARE")
-#profile(
-  (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
 
+#unit("NIGHTMARE",
+  profiles: (
+    (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take barding +5 points
-#compact-entry("HELLSTEED")[
-#profile(
-  (name: "Hellsteed", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 3, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Fly (9)")
-]
-#entry("ABYSSAL TERROR")
-#profile(
-  (name: "Abyssal Terror", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 3, ld: 4, points: "-"),
+
+#unit("HELLSTEED",
+  compact: true,
+  profiles: (
+    (name: "Hellsteed", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 2, a: 2, ld: 3, points: "-"),
+  ),
+  troop-type: "War Beast (Equine)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Fly (9)",
 )
-#field("TROOP TYPE", "Monstrous Creature (Chimeric)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Fly (8)")
-#field("UPGRADES", "")
 
-- *Poisonous Tail:* The Abyssal Terror gains the Poisoned Attacks special rule.
-- *Sword-claws:* The Abyssal Terror gains the Armour Piercing (1) special rule.
-
-#field("OPTIONS", "")
-
+#unit("ABYSSAL TERROR",
+  profiles: (
+    (name: "Abyssal Terror", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 4, i: 2, a: 3, ld: 4, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Chimeric)",
+  base-size: "50x50",
+  special-rules: "Fly (8)",
+  upgrades: (
+    rule("Poisonous Tail")[The Abyssal Terror gains the Poisoned Attacks special rule.],
+    rule("Sword-claws")[The Abyssal Terror gains the Armour Piercing (1) special rule.],
+  ),
+  options: [
 - May take Poisonous Tail +10 points
 - May take Sword-claws +5 points
+  ],
+)
 
-#entry("GREAT WYRM")
-
+#unit("GREAT WYRM",
+  before: [
 The byres are cut into the keep's own rock, and a drake that outgrows its byre
 has to have a new one cut. The ledger records the expense, which is the only
 reason anybody can say how many there are. The Dam never had a byre; she came
@@ -919,50 +928,56 @@ with the mountain.
 #profile(
   (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 5, points: "-"),
 )
-#field("TROOP TYPE", "Monster (Draconid)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (8), Natural Armour (4+)")
-
+  ],
+  troop-type: "Monster (Draconid)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Fly (8), Natural Armour (4+)",
+  special-rules-body: [
 #note[_A wyrm is not a small dragon; it is a dragon that never learned to breathe and was never anything but an animal. The chassis here is the High Elf Sun Dragon's, which is Toughness 5 with 5 Wounds at Weapon Skill 5 and Leadership 7. This one trades the Weapon Skill and most of the Leadership for a point of Strength and a point of Toughness, gives up Fiery Breath entirely, and carries a worse armour tier than any dragon of Ulthuan. The difference between the two kinds is temperament and breath, and has never been size._]
+  ],
+)
 
 = CORE UNITS
 
-#entry("BLOOD KNIGHTS", first: true)
-
+#unit("BLOOD KNIGHTS",
+  first: true,
+  before: [
 The knights of the household as the Ordo fields them, which is not as the Bloodlines remember them. Most of a man's power is the years he has had it, and these are the ones who took the blood this century.
 
 #profile(
   (name: "Blood Knight", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 36),
   (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: ""),
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Vampire)")
-#field("MOUNT", "Nightmare (Equine)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield, barding")
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "5-15",
+  troop-type: "Cavalry (Vampire)",
+  mount: "Nightmare (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "The Red Thirst, Vampiric",
+  options: [
 - May be upgraded to the Sworn +8 points/model
 - May upgrade one Blood Knight to a Leader +5 points
 - May upgrade one Blood Knight to a Musician +5 points
 - May upgrade one Blood Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 75 points
+  ],
+)
 
-#entry("BLOOD GUARD")
-
+#unit("BLOOD GUARD",
+  before: [
 The household on foot, who fight that way because the walls are behind them. The same offer, the same century, and no horse.
 
 #profile(
   (name: "Blood Guard", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 22),
 )
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Vampire)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
-#field("SPECIAL RULES", "The Red Thirst, Vampiric")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "10-30",
+  troop-type: "Infantry (Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour, shield",
+  special-rules: "The Red Thirst, Vampiric",
+  options: [
 - May be upgraded to the Sworn +5 points/model
 - May replace shields with two hand weapons free
 - May upgrade one Blood Guard to a Leader +5 points
@@ -971,18 +986,19 @@ The household on foot, who fight that way because the walls are behind them. The
   - May take a Magic Standard worth up to 50 points
 
 #note[_Two builds, and the swap is free. With the shield it is a 3+ save with Parry (6+) and it holds a line. Two hand weapons instead give +1 Attack behind a 4+ save, which is the whole of what it does on the attack. There is deliberately no two\-handed option: the Depth Guard can buy polearms for Strength and Initiative, and the Blood Guard cannot buy Strength at any price, which keeps it a household guard rather than a hammer._]
-
-#entry("SKELETON WARRIORS")
-#profile(
-  (name: "Skeleton Warrior", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 3),
+  ],
 )
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Undead, Skeleton)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Undead")
-#field("OPTIONS", "")
 
+#unit("SKELETON WARRIORS",
+  profiles: (
+    (name: "Skeleton Warrior", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 3),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Undead, Skeleton)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Undead",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Polearms +2 points/model
@@ -995,74 +1011,80 @@ The household on foot, who fight that way because the walls are behind them. The
 - May upgrade one Skeleton Warrior to a Musician +5 points
 - May upgrade one Skeleton Warrior to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-#entry("SKELETON HORSEMEN")
-#profile(
-  (name: "Skeleton Horseman", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 9),
-  (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Undead, Skeleton)")
-#field("MOUNT", "Skeletal Steed (Undead, Skeleton)")
-#field("BASE SIZE", "25x50")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("SPECIAL RULES", "Fast Cavalry, Undead")
-#field("OPTIONS", "")
 
+#unit("SKELETON HORSEMEN",
+  profiles: (
+    (name: "Skeleton Horseman", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 9),
+    (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Undead, Skeleton)",
+  mount: "Skeletal Steed (Undead, Skeleton)",
+  base-size: "25x50",
+  equipment: "Hand weapon, shield",
+  special-rules: "Fast Cavalry, Undead",
+  options: [
 - May take light lances +1 point/model
 - May take light armour +1 point/model
 - May upgrade one Skeleton Horseman to a Leader +5 points
 - May upgrade one Skeleton Horseman to a Musician +5 points
 - May upgrade one Skeleton Horseman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not have more units of Skeleton Horsemen than Skeleton Warriors.
-#entry("ZOMBIES")
-
-#profile(
-  (name: "Zombie", m: 4, ws: 1, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 2.5),
+  ],
 )
 
-#field("UNIT SIZE", "20-60")
-#field("TROOP TYPE", "Infantry (Undead, Zombie)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Undead")
-
-- *The Newly Dead:* Zombie units can be increased beyond their starting size by spells and effects that add models to an existing unit. In addition, when Zombie units are successfully targeted by the _Invocation of Nehek_ spell from the Lore of Necromancy, they regain an extra D6 Wounds. However, they also suffer D3 more casualties than normal due to being Unstable.
-
-#field("OPTIONS", "")
-
+#unit("ZOMBIES",
+  profiles: (
+    (name: "Zombie", m: 4, ws: 1, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 2.5),
+  ),
+  unit-size: "20-60",
+  troop-type: "Infantry (Undead, Zombie)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  special-rules: "Undead",
+  special-rules-body: (
+    rule("The Newly Dead")[Zombie units can be increased beyond their starting size by spells and effects that add models to an existing unit. In addition, when Zombie units are successfully targeted by the _Invocation of Nehek_ spell from the Lore of Necromancy, they regain an extra D6 Wounds. However, they also suffer D3 more casualties than normal due to being Unstable.],
+  ),
+  options: [
 - May upgrade one Zombie to a Musician +5 points
 - May upgrade one Zombie to a Standard Bearer +10 points
-#entry("FELL BATS")
-#profile(
-  (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 12),
+  ],
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "War Beast (Chiropter)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Fly (9)")
-#entry("BAT SWARMS")
-#profile(
-  (name: "Bat Swarm", m: 1, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 3, points: 30),
+
+#unit("FELL BATS",
+  profiles: (
+    (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 12),
+  ),
+  unit-size: "3-9",
+  troop-type: "War Beast (Chiropter)",
+  base-size: "40x40",
+  special-rules: "Fly (9)",
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Swarm (Chiropter)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Fly (6)")
 
-- *Cloud of Horror:* An enemy unit that is attacked in the flank or rear by one or more Bat Swarms is automatically Disrupted.
-
-#field("NOTES", "")
-
+#unit("BAT SWARMS",
+  profiles: (
+    (name: "Bat Swarm", m: 1, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 3, points: 30),
+  ),
+  unit-size: "3-9",
+  troop-type: "Swarm (Chiropter)",
+  base-size: "40x40",
+  special-rules: "Fly (6)",
+  special-rules-body: (
+    rule("Cloud of Horror")[An enemy unit that is attacked in the flank or rear by one or more Bat Swarms is automatically Disrupted.],
+  ),
+  notes: [
 - Bat Swarms have a Line of Sight value of 1.
+  ],
+)
 
 = SPECIAL UNITS
 
 #entry("THE SWORN", first: true)
-
 The ones who have had it long enough for it to have finished with them. There is no ceremony and no promotion; a knight is simply older one year than he was the last, and at some point the household stops correcting men who assume he was always like that.
 
 - A unit of *Blood Knights* may be upgraded to the *Sworn* at +8 points per model.
@@ -1070,17 +1092,16 @@ The ones who have had it long enough for it to have finished with them. There is
 - The Sworn have Weapon Skill 6, Initiative 5 and 2 Attacks.
 - A unit of the Sworn is a *Special* choice rather than a Core one.
 
-#entry("GRAVE GUARD")
-#profile(
-  (name: "Grave Guard", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 10),
-)
-#field("UNIT SIZE", "10-30")
-#field("TROOP TYPE", "Infantry (Undead, Wight)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("SPECIAL RULES", "Killing Blow, Magical Attacks, Undead")
-#field("OPTIONS", "")
-
+#unit("GRAVE GUARD",
+  profiles: (
+    (name: "Grave Guard", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 10),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Undead, Wight)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  special-rules: "Killing Blow, Magical Attacks, Undead",
+  options: [
 - May choose one of the following:
   - Polearms +2 points/model
   - Great weapons +3 points/model
@@ -1090,114 +1111,128 @@ The ones who have had it long enough for it to have finished with them. There is
 - May upgrade one Grave Guard to a Musician +5 points
 - May upgrade one Grave Guard to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-#entry("BLACK KNIGHTS")
-#profile(
-  (name: "Black Knight", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 22),
-  (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ],
 )
-#field("UNIT SIZE", "5-15")
-#field("TROOP TYPE", "Cavalry (Undead, Wight)")
-#field("MOUNT", "Skeletal Steed (Undead, Skeleton)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, medium armour, shield")
-#field("SPECIAL RULES", "Killing Blow, Magical Attacks, Spectral Steeds, Undead")
-#field("OPTIONS", "")
 
+#unit("BLACK KNIGHTS",
+  profiles: (
+    (name: "Black Knight", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 22),
+    (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Undead, Wight)",
+  mount: "Skeletal Steed (Undead, Skeleton)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, medium armour, shield",
+  special-rules: "Killing Blow, Magical Attacks, Spectral Steeds, Undead",
+  options: [
 - May take heavy armour +2 points/model
 - May take barding +2 points/model
 - May upgrade one Black Knight to a Leader +5 points
 - May upgrade one Black Knight to a Musician +5 points
 - May upgrade one Black Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-#entry("VARGHEISTS")
+  ],
+)
 
+#unit("VARGHEISTS",
+  before: [
 The large kind of the keep's own bats, horse-sized and ill-tempered, that the household puts where the fighting will be rather than asking it to arrive anywhere in a hurry. They are not the feral get of the Bloodlines that the rest of the world files under the name, and the order has never seen a reason to say so before the charge goes in.
 
 #profile(
   (name: "Vargheist", m: 2, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 30),
 )
-#field("UNIT SIZE", "3-9")
-#field("TROOP TYPE", "Monstrous Beast (Chiropter)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Fly (8)")
-
+  ],
+  unit-size: "3-9",
+  troop-type: "Monstrous Beast (Chiropter)",
+  base-size: "40x40",
+  special-rules: "Fly (8)",
+  special-rules-body: [
 #note[_The parent book's Vargheist is Monstrous Infantry (Vampire) at 50: Frenzy, The Red Thirst, Vampiric, Weapon Skill 4, Leadership 7 and a walking pace of six. This is what is left when the Blood is taken out of the entry — the animal's Strength, Wounds and wings, a beast's Weapon Skill and Leadership, and a bat's gait, the family walking at one and two and living in the air. Monstrous Beasts carry Fear and Independent on their own account, and Not in the Tally already speaks to the second: the sky answers to Emmerich and nobody else. The working is in the design chapter._]
-
-#entry("VARGHULF")
-#profile(
-  (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Creature (Vampire)")
-#field("BASE SIZE", "50x50 or 50x100")
-#field("SPECIAL RULES", "Hatred, The Red Thirst, Vampiric")
 
-- *Bestial Fury:* For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.
+#unit("VARGHULF",
+  profiles: (
+    (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
+  ),
+  troop-type: "Monstrous Creature (Vampire)",
+  base-size: "50x50 or 50x100",
+  special-rules: "Hatred, The Red Thirst, Vampiric",
+  special-rules-body: (
+    rule("Bestial Fury")[For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.],
+  ),
+)
 
 = RARE UNITS
 
-#entry("BLOOD WYRMS", first: true)
-
+#unit("BLOOD WYRMS",
+  first: true,
+  before: [
 The Grand Master's own wing. Where a Blood Knight is given a horse, the knights of the inner circle are given something older, and the wyrms are alive.
 
 #profile(
   (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 85),
   (name: "Blood Wyrm", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 4, i: 3, a: 3, ld: 4, points: ""),
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Cavalry (Vampire)")
-#field("MOUNT", "Blood Wyrm (Draconid)")
-#field("BASE SIZE", "50x75")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Devastating Charge, Fly (8), The Red Thirst, Vampiric")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "3-6",
+  troop-type: "Monstrous Cavalry (Vampire)",
+  mount: "Blood Wyrm (Draconid)",
+  base-size: "50x75",
+  equipment: "Heavy lance, heavy armour, shield",
+  special-rules: "Devastating Charge, Fly (8), The Red Thirst, Vampiric",
+  options: [
 - May upgrade one Wyrm Knight to a Leader +5 points
 - May upgrade one Wyrm Knight to a Musician +5 points
 - May upgrade one Wyrm Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Blood Wyrm taken as a character mount is a *Monstrous Beast*, so the character becomes *Monstrous Cavalry* and may join a unit of Blood Wyrms.
 
 #note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge and Fly (8) are the whole unit, and the book already has both. Note which half of the model each reaches: Fly is one of the rules the rulebook extends from rider to mount and Devastating Charge is not, so the wyrm flies and the knight alone gains the Attack on the charge: six between them, not seven._
 
 _Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror*, so a Blood Wyrm causes Terror without this entry saying so, exactly as the Blood Heralds do. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then neither entry causes Terror, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._]
+  ],
+)
 
-#entry("ELDER WYRM")
-
+#unit("ELDER WYRM",
+  before: [
 One of the Dam's oldest get, old before the Bloodlines were, and the knight who talked it into service rather than breaking it. The Dam herself is not this entry and never will be; she carries one man and appears in his.
 
 #profile(
   (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 210),
   (name: "Elder Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 5, w: 4, i: 3, a: 4, ld: 5, points: ""),
 )
-#field("TROOP TYPE", "Monstrous Creature (Vampire)")
-#field("MOUNT", "Elder Wyrm (Draconid)")
-#field("BASE SIZE", "50x75 or 50x100")
-#field("EQUIPMENT", "Heavy lance, heavy armour, shield")
-#field("SPECIAL RULES", "Devastating Charge, Fly (8), The Red Thirst, Vampiric")
-#field("NOTES", "")
-
+  ],
+  troop-type: "Monstrous Creature (Vampire)",
+  mount: "Elder Wyrm (Draconid)",
+  base-size: "50x75 or 50x100",
+  equipment: "Heavy lance, heavy armour, shield",
+  special-rules: "Devastating Charge, Fly (8), The Red Thirst, Vampiric",
+  notes: [
 - An Elder Wyrm has a Unit Strength of 5 and a Line of Sight value of 4.
 - An Elder Wyrm taken as a character mount is a *Monstrous Creature*, and a character riding one may not join any unit.
 
 #note[_Terror and Stomp (D3) are not written here because the troop type already grants them, and a ridden Monstrous Creature is treated as a Monstrous Creature throughout. Vampiric then adds Fear on top of Terror, which does nothing at all: the model already has the better of the two._]
+  ],
+)
 
-#entry("BLOOD HERALDS")
-
+#unit("BLOOD HERALDS",
+  before: [
 The Sworn the household puts in the air. A keep that arrives where it likes keeps no couriers, and an order that will not shoot has no other reach. So the shops that blacken the plate make wings as well. Only a knight the blood has finished with is measured for a set, which is why there are never many.
 
 #profile(
   (name: "Blood Herald", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 45),
 )
-#field("UNIT SIZE", "3-6")
-#field("TROOP TYPE", "Monstrous Infantry (Vampire)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Two hand weapons, heavy armour")
-#field("SPECIAL RULES", "Fly (8), The Red Thirst, Vampiric")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "3-6",
+  troop-type: "Monstrous Infantry (Vampire)",
+  base-size: "40x40",
+  equipment: "Two hand weapons, heavy armour",
+  special-rules: "Fly (8), The Red Thirst, Vampiric",
+  options: [
 - May replace the two hand weapons with a hand weapon and shield free
 - May upgrade one Blood Herald to a Leader +5 points
 - May upgrade one Blood Herald to a Musician +5 points
@@ -1207,81 +1242,86 @@ The Sworn the household puts in the air. A keep that arrives where it likes keep
 #note[_Three Attacks behind a 4+ save, or two behind a 3+ with Parry (6+) if the shield goes back on. They are the Blood Guard's own two builds, lifted off the ground. Monstrous Infantry is the troop type, not a modelling convenience. A rank of it is three models wide rather than five, which is the only way a 40mm base ranks up at all. The Fear it carries meets the Fear on Vampiric to make Terror, by the reading the Blood Wyrms already rest on._
 
 _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs elsewhere in the corpus. A Nightmare is 15 and a Hellsteed 25; a Knight of the Realm is 25 and a Pegasus Knight 50. It sits under the Vargheist that the parent book prices at 50, which is the right way round. Better Weapon Skill, Initiative and Leadership, and a save, against one Wound where the beast has three. No entry in any of the thirty-one books is Monstrous Infantry with a single Wound. This one is, and that is the fair objection to it._]
+  ],
+)
 
-#entry("THE PORTER")
-
+#unit("THE PORTER",
+  before: [
 It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
 
 #profile(
   (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: 5, ld: 10, points: 280),
 )
-#field("TROOP TYPE", "Monster (Animated Construct)")
-#field("BASE SIZE", "50x75, 60x100 or 100x150")
-#field("EQUIPMENT", "Polearm, heavy armour")
-#field("SPECIAL RULES", "Animated Construct, Regeneration (6+), Unstable")
-
-- *Granite:* The Porter has +1 to its armour save and the Immunity (Multiple Wounds) special rule.
-- *Obsidian:* The Porter has the Magic Resistance (2) special rule. In addition, enemy Wizards within 12" suffer a \-1 casting penalty.
-
-#field("NOTES", "")
-
+  ],
+  troop-type: "Monster (Animated Construct)",
+  base-size: "50x75, 60x100 or 100x150",
+  equipment: "Polearm, heavy armour",
+  special-rules: "Animated Construct, Regeneration (6+), Unstable",
+  special-rules-body: (
+    rule("Granite")[The Porter has +1 to its armour save and the Immunity (Multiple Wounds) special rule.],
+    rule("Obsidian")[The Porter has the Magic Resistance (2) special rule. In addition, enemy Wizards within 12" suffer a \-1 casting penalty.],
+  ),
+  notes: [
 - There is one Porter. No army may include more than one.
 - The Porter is not Undead. The Lore of Necromancy cannot mend it, the battle standard does not lessen what it loses to Unstable, and it owes no Necromancer under The Generals of Undeath.
 - An Animated Construct may never march, and the Porter is no part of the dead, so the General's presence does not lift the restriction.
 
 #note[_Terror, Stomp (D6) and a Line of Sight value of 5 are not written here because the Monster troop type grants all three. This is Grand Cathay's Terracotta Sentinel, printed at that book's prices with the granite and the obsidian bought in and the Yang rule left behind with the army rules that define it. Immunity (Multiple Wounds) is the granite doing what granite does: a cannon that finds it takes a chip rather than a D6 of Wounds, which is the only way something that covers six inches a turn survives owning the ground it stands on. The working is in the design chapter._]
-
-#entry("TERRORGHEIST")
-#profile(
-  (name: "Terrorgheist", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 6, i: 3, a: 4, ld: 4, points: 225),
+  ],
 )
-#field("TROOP TYPE", "Monster (Undead, Chiropter)")
-#field("BASE SIZE", "100x150")
-#field("SPECIAL RULES", "Death Shriek, Fly (7), Regeneration (6+), Undead")
-#field("UPGRADES", "")
 
-- *Infested:* When a Terrorgheist with this upgrade is removed as a casualty, all units that were in base contact (friend or foe) take 3D6 Strength 2 hits.
-- *Rancid Maw:* Attacks made by a Terrorgheist with this upgrade have the Poisoned Attacks special rule.
-
-#field("OPTIONS", "")
-
+#unit("TERRORGHEIST",
+  profiles: (
+    (name: "Terrorgheist", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 6, i: 3, a: 4, ld: 4, points: 225),
+  ),
+  troop-type: "Monster (Undead, Chiropter)",
+  base-size: "100x150",
+  special-rules: "Death Shriek, Fly (7), Regeneration (6+), Undead",
+  upgrades: (
+    rule("Infested")[When a Terrorgheist with this upgrade is removed as a casualty, all units that were in base contact (friend or foe) take 3D6 Strength 2 hits.],
+    rule("Rancid Maw")[Attacks made by a Terrorgheist with this upgrade have the Poisoned Attacks special rule.],
+  ),
+  options: [
 - May take Infested +10 points
 - May take Rancid Maw +10 points
+  ],
+)
 
 = SPECIAL CHARACTERS
 
-#entry("EMMERICH", first: true)
-
+#unit("EMMERICH",
+  solo: true,
+  first: true,
+  before: [
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
 
 #profile(
   (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
   (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 6, i: 2, a: 5, ld: 6, points: 320),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire, Blood Dragon)")
-#field("MOUNT", "The Dam (Draconid)")
-#field("BASE SIZE", "20x20 or 25x25, or 50x100 on the Dam")
-#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
-#field("MAGIC", "Emmerich is a Level 2 Wizard who uses both of the following Lores of Magic:")
-
+  ],
+  troop-type: "Infantry (Special Character, Vampire, Blood Dragon)",
+  mount: "The Dam (Draconid)",
+  base-size: "20x20 or 25x25, or 50x100 on the Dam",
+  equipment: "Hand weapon, heavy armour, shield",
+  magic: "Emmerich is a Level 2 Wizard who uses both of the following Lores of Magic:",
+  magic-body: [
 - Necromancy
 - Shadow
-
-#field("MAGIC ITEMS", "")
-
-- *The Marshal's Blade:* Magic Weapon. Hand weapon. While Emmerich is fighting in a challenge, the Marshal's Blade has the Heroic Killing Blow special rule. Outside a challenge it is an ordinary hand weapon and does nothing at all.
-- *The Hauberk of the Ordo:* Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).
-
-#field("VAMPIRIC POWERS", "Blademaster, Dread Knight")
-#field("SPECIAL RULES", "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric")
-
-- *The Marshal:* Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.
-- *Not in the Tally:* Friendly units with the *Chiropter* keyword may use Emmerich's Inspiring Presence and Hold Your Ground special rules, which the Independent special rule would otherwise forbid them.
-- *The Pass Held:* Emmerich, and any unit he has joined, may re-roll failed Break tests.
-- *The Arithmetic:* Emmerich may never join a unit with the *Undead* special rule.
-
-#field("OPTIONS", "")
-
+  ],
+  magic-items: (
+    rule("The Marshal's Blade")[Magic Weapon. Hand weapon. While Emmerich is fighting in a challenge, the Marshal's Blade has the Heroic Killing Blow special rule. Outside a challenge it is an ordinary hand weapon and does nothing at all.],
+    rule("The Hauberk of the Ordo")[Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).],
+  ),
+  vampiric-powers: "Blademaster, Dread Knight",
+  special-rules: "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric",
+  special-rules-body: (
+    rule("The Marshal")[Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.],
+    rule("Not in the Tally")[Friendly units with the *Chiropter* keyword may use Emmerich's Inspiring Presence and Hold Your Ground special rules, which the Independent special rule would otherwise forbid them.],
+    rule("The Pass Held")[Emmerich, and any unit he has joined, may re-roll failed Break tests.],
+    rule("The Arithmetic")[Emmerich may never join a unit with the *Undead* special rule.],
+  ),
+  options: [
 - May be mounted on one of the following:
   - Nightmare +20 points
   - Hellsteed +25 points
@@ -1290,9 +1330,8 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
   - Elder Wyrm +140 points
   - Great Wyrm +215 points
   - The Dam +320 points
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - The Dam is a Great Wyrm, and the oldest of them. She is that entry in every respect but the profile printed here, so a mounted Emmerich is a Monster and everything else follows from it.
 
 #note[_Two lores at once is Mannfred's wording, and it needs no special pleading here: a Blood Dragon may already choose Death, Necromancy or Shadow, so both of these are in the Bloodline as printed. What it buys is not raw power at Level 2 but a second way to play him, and the rulebook supplies that without a line of flavour text. Shadow's Lore Attribute, Steed of Shadows, lets the caster make a Fly move after any Shadow spell resolves, equal to 10 minus the model's Line of Sight value. On foot his value is 1 and the move is nine inches: he casts and is gone. On a Nightmare or a Hellsteed it is two and eight, on a Blood Wyrm three and seven, on the Abyssal Terror or an Elder Wyrm four and six, and on a Great Wyrm or the Dam, where he is a Monster, five and five. The foot build vanishes and the heavy builds do not, and no rule here says so._
@@ -1300,29 +1339,31 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 _Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in his own person, which is the fiction's claim that he learned enough of it to avoid depending on anyone, costing nothing to write. The same goes for leaving his own dead in the ground: Invocation of Nehek targets Undead excluding mounts, and his household are Vampires, so it could never have raised them._
 
 _The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. The rulebook then adds another six inches to any model whose Line of Sight value is 4 or more, which a ridden Monstrous Creature is and a Monster is, so every mount in his list except the horses and the Blood Wyrm puts him at twenty\-four. That is worth knowing before any of them is bought._]
+  ],
+)
 
-#entry("ANKHARA")
-
+#unit("ANKHARA",
+  solo: true,
+  before: [
 The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
 
 #profile(
   (name: "Ankhara", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 9, points: 160),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Vampire, Lahmian)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "Ankhara is a Level 1 Wizard who uses the Lore of Shadow.")
-#field("MAGIC ITEMS", "")
-
-- *The Marshal's Warrant:* Enchanted Item. The document appointing Emmerich to the rank he still uses, taken from his own table. Any friendly unit within 12" of Ankhara may use the Leadership of the army's General as though the General were within 12" of it.
-
-#field("VAMPIRIC POWERS", "")
-
-- *Night Creature:* While Ankhara is a lone character, she may not be targeted by enemy missile attacks or spells from further than 12" away.
-- *Swiftness:* Ankhara has Movement 10 and the Swiftstride special rule.
-
-#field("SPECIAL RULES", "Dodge (6+), The Red Thirst, Vampiric")
-
+  ],
+  troop-type: "Infantry (Special Character, Vampire, Lahmian)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "Ankhara is a Level 1 Wizard who uses the Lore of Shadow.",
+  magic-items: (
+    rule("The Marshal's Warrant")[Enchanted Item. The document appointing Emmerich to the rank he still uses, taken from his own table. Any friendly unit within 12" of Ankhara may use the Leadership of the army's General as though the General were within 12" of it.],
+  ),
+  vampiric-powers: (
+    rule("Night Creature")[While Ankhara is a lone character, she may not be targeted by enemy missile attacks or spells from further than 12" away.],
+    rule("Swiftness")[Ankhara has Movement 10 and the Swiftstride special rule.],
+  ),
+  special-rules: "Dodge (6+), The Red Thirst, Vampiric",
+  special-rules-body: [
 - *She Never Swore It:* The Oath of the Keep does not apply to Ankhara. In addition, she may refuse a challenge without the usual penalty. She is moved as the rules for Refusing a Challenge require, but the enemy gains no combat result bonus for the refusal, and she keeps the use of her Leadership and of every special rule and Magic Item she carries for that turn.
 - *The Fourth Attempt:* If Emmerich is also in the army, Ankhara is deployed after every other unit of both armies, anywhere on the table more than 12" from an enemy model.
 
@@ -1333,6 +1374,8 @@ _She is chosen from the Characters section like anybody else and counts against 
 _What the Oath exemption covers is worth setting out, since Martial Honour is not in it. Blood Dragons carry that rule in their own right, so the collision needs no help: he cannot refuse and she cannot be made to accept. What she gives up is the Wound recovered for winning a challenge. What she gains is the right to Flee as a Charge Reaction in an army that has given it up, and to feed her Thirst on the routed. A Lahmian withdrawing while the household holds is what both orders would have predicted of her._
 
 _She may be taken in an Ordo Draconis and in any other army chosen from *Vampire Counts* 3.0, which is the asymmetry the fiction asks for. He belongs to one place and she belongs nowhere, and Lahmia goes on sending her wherever it likes. The Fourth Attempt is the only thing on her that needs him, and it does nothing at all when he is absent._]
+  ],
+)
 
 = WHAT WAS CHANGED
 
@@ -1687,8 +1730,10 @@ The dead are still there, still cost two and a half points, and no longer excuse
 
 = CREDITS
 
-#entry("Written & Edited by:", first: true)
-#namecost("Mathias Eliasson", "")
+#unit("Written & Edited by:",
+  first: true,
+  subtitle: "Mathias Eliasson",
+  before: [
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
 
@@ -1697,3 +1742,5 @@ The dead are still there, still cost two and a half points, and no longer excuse
 #namecost("The Ordo Draconis", "")
 
 An Army of Infamy written for our own table, on top of Mathias Eliasson's *Vampire Counts* 3.0. Unofficial, non-commercial, and carrying no endorsement from him.
+  ],
+)
