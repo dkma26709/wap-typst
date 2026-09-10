@@ -234,6 +234,13 @@ def block_lines(block: dict, neighbours: tuple, figures: str) -> list[str]:
         return [f"#chart({arr(rows)})"]
 
     if kind == "figure":
+        # An import takes no pictures out of the PDF unless batch.py was asked
+        # for them, so the file this would place may not be in the repository at
+        # all - and Typst fails on a missing image rather than leaving a gap.
+        # The rules text is unaffected: what these place are diagrams of unit
+        # bases, and the words explaining them are in the prose either way.
+        if not (ROOT / figures.lstrip("/") / block["file"]).exists():
+            return []
         return [f"#diagram({lit(figures + '/' + block['file'])}, {block['fraction']})"]
 
     raise SystemExit(f"to_book: unhandled block type {kind!r}")
@@ -409,7 +416,22 @@ def main() -> None:
     entries = sum(len(c["entries"]) for c in data["chapters"])
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}  {len(text.splitlines())} lines, "
           f"{len(data['chapters'])} chapters, {entries} entries")
-    print(f"allegiance: {align or 'NONE - add align: to the book, emit.py will refuse it'}")
+    # The rulebook has no allegiance and is not asked for one, so saying it is
+    # missing would be a false alarm on the one book that cannot have it.
+    if align:
+        print(f"allegiance: {align}")
+    elif book.get("layout") != "rules":
+        print("allegiance: NONE - add align: to the book, emit.py will refuse it")
+
+    # Said rather than left to be noticed: a diagram the source places and this
+    # book does not is a visible difference from the PDF, whatever the reason.
+    wanted = sum(1 for c in data["chapters"]
+                 for pool in [c.get("intro", [])] + [e["blocks"] for e in c["entries"]]
+                 for b in pool if b["type"] == "figure")
+    dropped = wanted - text.count("#diagram(")
+    if dropped:
+        print(f"diagrams: {dropped} of {wanted} not placed - their images are "
+              f"not in assets/. Re-run batch.py --art to take them.")
 
 
 if __name__ == "__main__":
