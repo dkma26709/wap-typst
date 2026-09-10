@@ -42,6 +42,14 @@ h1 {
   font-weight: 700;
 }
 .sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 
 .section {
@@ -156,38 +164,25 @@ footer p { margin: .7rem 0; }
 <body>
 <main>
   <h1>Warhammer Armies Project</h1>
-  <p class="sub">32 army books and the core rulebook, 1,816 unit entries, re-typeset with Typst.</p>
+  <p class="sub">32 armies and the core rulebook, 33 books
+  between them, 1,816 unit entries, re-typeset with Typst.</p>
 
   <p class="note">
-    Some books exist in more than one edition alongside the original: the
+    Some books have an edition of our own beside the original: the
     <strong>house rules</strong> we play, and the <strong>proposals</strong> we
-    are still arguing about. Switch between them with the edition control. What
-    an edition changed — and what it only proposes — is set out in the back of
-    it.
+    are still arguing about. There are 11 of them, on
+    <a href="house/">a shelf of their own</a>. What an edition changed - and
+    what it only proposes - is set out in the back of it.
   </p>
 
   <section id="core">
   <h2 class="section">The Rules</h2>
   <ul class="books core">
-      <li class="book" data-edition="wap">
-        <a href="rulebook/3.11.pdf"><img src="rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
+      <li class="book">
+        <a href="rulebook/"><img src="rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
         <div>
-          <h2><a href="rulebook/3.11.pdf">The Game of Fantasy Battles</a></h2>
-          <p>Version 3.11 · 282 entries</p>
-        </div>
-      </li>
-      <li class="book" data-edition="house">
-        <a href="rulebook/3.11-house.pdf"><img src="rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
-        <div>
-          <h2><a href="rulebook/3.11-house.pdf">The Game of Fantasy Battles</a></h2>
-          <p>House Rules 2026.1 · 2 changes</p>
-        </div>
-      </li>
-      <li class="book" data-edition="proposal">
-        <a href="rulebook/3.11-proposal.pdf"><img src="rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
-        <div>
-          <h2><a href="rulebook/3.11-proposal.pdf">The Game of Fantasy Battles</a></h2>
-          <p>Proposals 2026.1 · 13 proposals</p>
+          <h2><a href="rulebook/">The Game of Fantasy Battles</a></h2>
+          <p>Version 3.11 · 282 sections</p>
         </div>
       </li>
   </ul>
@@ -201,310 +196,242 @@ footer p { margin: .7rem 0; }
       <button data-group="align" data-value="destruction" aria-pressed="false">Destruction</button>
       <button data-group="align" data-value="neutral" aria-pressed="false">Non-aligned</button>
     </div>
-    <div class="set" role="group" aria-label="Filter by edition">
-      <button data-group="edition" data-value="wap" aria-pressed="true">WAP v3</button>
-      <button data-group="edition" data-value="house" aria-pressed="false">House Rules</button>
-      <button data-group="edition" data-value="proposal" aria-pressed="false">Proposals</button>
-    </div>
     <div class="set" role="group" aria-label="Order">
       <button data-group="sort" data-value="grouped" aria-pressed="true">Grouped</button>
-      <button data-group="sort" data-value="alpha" aria-pressed="false">A–Z</button>
+      <button data-group="sort" data-value="alpha" aria-pressed="false">A-Z</button>
     </div>
   </div>
   <ul class="books" id="armies">
       <li class="head" data-align="order">
         <h2>Forces of Order</h2><span>14 books</span>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="albion">
-        <a href="albion/3.0.pdf"><img src="albion/3.0-cover.png" alt="Albion cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="albion">
+        <a href="albion/"><img src="albion/3.0-cover.png" alt="Albion cover" loading="lazy"></a>
         <div>
-          <h2><a href="albion/3.0.pdf">Albion</a></h2>
+          <h2><a href="albion/">Albion</a></h2>
           <p>Version 3.0 · 43 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="order" data-name="albion">
-        <a href="albion/3.0-house.pdf"><img src="albion/3.0-cover.png" alt="Albion cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="amazons">
+        <a href="amazons/"><img src="amazons/3.0-cover.png" alt="Amazons cover" loading="lazy"></a>
         <div>
-          <h2><a href="albion/3.0-house.pdf">Albion</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="amazons">
-        <a href="amazons/3.0.pdf"><img src="amazons/3.0-cover.png" alt="Amazons cover" loading="lazy"></a>
-        <div>
-          <h2><a href="amazons/3.0.pdf">Amazons</a></h2>
+          <h2><a href="amazons/">Amazons</a></h2>
           <p>Version 3.0 · 41 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="bretonnia">
-        <a href="bretonnia/3.0.pdf"><img src="bretonnia/3.0-cover.png" alt="Bretonnia cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="bretonnia">
+        <a href="bretonnia/"><img src="bretonnia/3.0-cover.png" alt="Bretonnia cover" loading="lazy"></a>
         <div>
-          <h2><a href="bretonnia/3.0.pdf">Bretonnia</a></h2>
+          <h2><a href="bretonnia/">Bretonnia</a></h2>
           <p>Version 3.0 · 50 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="dwarfs">
-        <a href="dwarfs/3.11.pdf"><img src="dwarfs/3.11-cover.png" alt="Dwarfs cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="dwarfs">
+        <a href="dwarfs/"><img src="dwarfs/3.11-cover.png" alt="Dwarfs cover" loading="lazy"></a>
         <div>
-          <h2><a href="dwarfs/3.11.pdf">Dwarfs</a></h2>
+          <h2><a href="dwarfs/">Dwarfs</a></h2>
           <p>Version 3.11 · 57 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="order" data-name="dwarfs">
-        <a href="dwarfs/3.11-house.pdf"><img src="dwarfs/3.11-cover.png" alt="Dwarfs cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="empire">
+        <a href="empire/"><img src="empire/3.1-cover.png" alt="The Empire cover" loading="lazy"></a>
         <div>
-          <h2><a href="dwarfs/3.11-house.pdf">Dwarfs</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="empire">
-        <a href="empire/3.1.pdf"><img src="empire/3.1-cover.png" alt="The Empire cover" loading="lazy"></a>
-        <div>
-          <h2><a href="empire/3.1.pdf">The Empire</a></h2>
+          <h2><a href="empire/">The Empire</a></h2>
           <p>Version 3.1 · 76 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="order" data-name="empire">
-        <a href="empire/3.1-house.pdf"><img src="empire/3.1-cover.png" alt="The Empire cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="estalia">
+        <a href="estalia/"><img src="estalia/3.0-cover.png" alt="Estalia cover" loading="lazy"></a>
         <div>
-          <h2><a href="empire/3.1-house.pdf">The Empire</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="estalia">
-        <a href="estalia/3.0.pdf"><img src="estalia/3.0-cover.png" alt="Estalia cover" loading="lazy"></a>
-        <div>
-          <h2><a href="estalia/3.0.pdf">Estalia</a></h2>
+          <h2><a href="estalia/">Estalia</a></h2>
           <p>Version 3.0 · 47 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="grand cathay">
-        <a href="grand-cathay/3.0.pdf"><img src="grand-cathay/3.0-cover.png" alt="Grand Cathay cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="grand cathay">
+        <a href="grand-cathay/"><img src="grand-cathay/3.0-cover.png" alt="Grand Cathay cover" loading="lazy"></a>
         <div>
-          <h2><a href="grand-cathay/3.0.pdf">Grand Cathay</a></h2>
+          <h2><a href="grand-cathay/">Grand Cathay</a></h2>
           <p>Version 3.0 · 63 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="halflings">
-        <a href="halflings/3.0.pdf"><img src="halflings/3.0-cover.png" alt="Halflings cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="halflings">
+        <a href="halflings/"><img src="halflings/3.0-cover.png" alt="Halflings cover" loading="lazy"></a>
         <div>
-          <h2><a href="halflings/3.0.pdf">Halflings</a></h2>
+          <h2><a href="halflings/">Halflings</a></h2>
           <p>Version 3.0 · 38 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="high elves">
-        <a href="high-elves/3.1.pdf"><img src="high-elves/3.1-cover.png" alt="High Elves cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="high elves">
+        <a href="high-elves/"><img src="high-elves/3.1-cover.png" alt="High Elves cover" loading="lazy"></a>
         <div>
-          <h2><a href="high-elves/3.1.pdf">High Elves</a></h2>
+          <h2><a href="high-elves/">High Elves</a></h2>
           <p>Version 3.1 · 60 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="kingdoms of ind">
-        <a href="kingdoms-of-ind/3.0.pdf"><img src="kingdoms-of-ind/3.0-cover.png" alt="Kingdoms of Ind cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="kingdoms of ind">
+        <a href="kingdoms-of-ind/"><img src="kingdoms-of-ind/3.0-cover.png" alt="Kingdoms of Ind cover" loading="lazy"></a>
         <div>
-          <h2><a href="kingdoms-of-ind/3.0.pdf">Kingdoms of Ind</a></h2>
+          <h2><a href="kingdoms-of-ind/">Kingdoms of Ind</a></h2>
           <p>Version 3.0 · 55 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="kislev">
-        <a href="kislev/3.1.pdf"><img src="kislev/3.1-cover.png" alt="Kislev cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="kislev">
+        <a href="kislev/"><img src="kislev/3.1-cover.png" alt="Kislev cover" loading="lazy"></a>
         <div>
-          <h2><a href="kislev/3.1.pdf">Kislev</a></h2>
+          <h2><a href="kislev/">Kislev</a></h2>
           <p>Version 3.1 · 53 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="lizardmen">
-        <a href="lizardmen/3.0.pdf"><img src="lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="lizardmen">
+        <a href="lizardmen/"><img src="lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
         <div>
-          <h2><a href="lizardmen/3.0.pdf">Lizardmen</a></h2>
+          <h2><a href="lizardmen/">Lizardmen</a></h2>
           <p>Version 3.0 · 54 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="order" data-name="lizardmen">
-        <a href="lizardmen/3.0-house.pdf"><img src="lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="nippon">
+        <a href="nippon/"><img src="nippon/3.0-cover.png" alt="Nippon cover" loading="lazy"></a>
         <div>
-          <h2><a href="lizardmen/3.0-house.pdf">Lizardmen</a></h2>
-          <p>House Rules 2026.1 · 4 changes</p>
-        </div>
-      </li>
-      <li class="book" data-edition="proposal" data-align="order" data-name="lizardmen">
-        <a href="lizardmen/3.0-proposal.pdf"><img src="lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
-        <div>
-          <h2><a href="lizardmen/3.0-proposal.pdf">Lizardmen</a></h2>
-          <p>Proposals 2026.1 · 6 proposals</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="nippon">
-        <a href="nippon/3.0.pdf"><img src="nippon/3.0-cover.png" alt="Nippon cover" loading="lazy"></a>
-        <div>
-          <h2><a href="nippon/3.0.pdf">Nippon</a></h2>
+          <h2><a href="nippon/">Nippon</a></h2>
           <p>Version 3.0 · 58 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="order" data-name="wood elves">
-        <a href="wood-elves/3.1.pdf"><img src="wood-elves/3.1-cover.png" alt="Wood Elves cover" loading="lazy"></a>
+      <li class="book" data-align="order" data-name="wood elves">
+        <a href="wood-elves/"><img src="wood-elves/3.1-cover.png" alt="Wood Elves cover" loading="lazy"></a>
         <div>
-          <h2><a href="wood-elves/3.1.pdf">Wood Elves</a></h2>
+          <h2><a href="wood-elves/">Wood Elves</a></h2>
           <p>Version 3.1 · 61 entries</p>
         </div>
       </li>
       <li class="head" data-align="destruction">
         <h2>Forces of Destruction</h2><span>11 books</span>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="beastmen">
-        <a href="beastmen/3.0.pdf"><img src="beastmen/3.0-cover.png" alt="Beastmen cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="beastmen">
+        <a href="beastmen/"><img src="beastmen/3.0-cover.png" alt="Beastmen cover" loading="lazy"></a>
         <div>
-          <h2><a href="beastmen/3.0.pdf">Beastmen</a></h2>
+          <h2><a href="beastmen/">Beastmen</a></h2>
           <p>Version 3.0 · 52 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="destruction" data-name="beastmen">
-        <a href="beastmen/3.0-house.pdf"><img src="beastmen/3.0-cover.png" alt="Beastmen cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="chaos dwarfs">
+        <a href="chaos-dwarfs/"><img src="chaos-dwarfs/3.0-cover.png" alt="Chaos Dwarfs cover" loading="lazy"></a>
         <div>
-          <h2><a href="beastmen/3.0-house.pdf">Beastmen</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="chaos dwarfs">
-        <a href="chaos-dwarfs/3.0.pdf"><img src="chaos-dwarfs/3.0-cover.png" alt="Chaos Dwarfs cover" loading="lazy"></a>
-        <div>
-          <h2><a href="chaos-dwarfs/3.0.pdf">Chaos Dwarfs</a></h2>
+          <h2><a href="chaos-dwarfs/">Chaos Dwarfs</a></h2>
           <p>Version 3.0 · 53 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="daemons of chaos">
-        <a href="daemons-of-chaos/3.0.pdf"><img src="daemons-of-chaos/3.0-cover.png" alt="Daemons of Chaos cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="daemons of chaos">
+        <a href="daemons-of-chaos/"><img src="daemons-of-chaos/3.0-cover.png" alt="Daemons of Chaos cover" loading="lazy"></a>
         <div>
-          <h2><a href="daemons-of-chaos/3.0.pdf">Daemons of Chaos</a></h2>
+          <h2><a href="daemons-of-chaos/">Daemons of Chaos</a></h2>
           <p>Version 3.0 · 102 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="destruction" data-name="daemons of chaos">
-        <a href="daemons-of-chaos/3.0-house.pdf"><img src="daemons-of-chaos/3.0-cover.png" alt="Daemons of Chaos cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="dark elves">
+        <a href="dark-elves/"><img src="dark-elves/3.1-cover.png" alt="Dark Elves cover" loading="lazy"></a>
         <div>
-          <h2><a href="daemons-of-chaos/3.0-house.pdf">Daemons of Chaos</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="dark elves">
-        <a href="dark-elves/3.1.pdf"><img src="dark-elves/3.1-cover.png" alt="Dark Elves cover" loading="lazy"></a>
-        <div>
-          <h2><a href="dark-elves/3.1.pdf">Dark Elves</a></h2>
+          <h2><a href="dark-elves/">Dark Elves</a></h2>
           <p>Version 3.1 · 58 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="orcs &amp; goblins">
-        <a href="orcs-goblins/3.0.pdf"><img src="orcs-goblins/3.0-cover.png" alt="Orcs &amp; Goblins cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="orcs &amp; goblins">
+        <a href="orcs-goblins/"><img src="orcs-goblins/3.0-cover.png" alt="Orcs &amp; Goblins cover" loading="lazy"></a>
         <div>
-          <h2><a href="orcs-goblins/3.0.pdf">Orcs &amp; Goblins</a></h2>
+          <h2><a href="orcs-goblins/">Orcs &amp; Goblins</a></h2>
           <p>Version 3.0 · 78 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="proposal" data-align="destruction" data-name="orcs &amp; goblins">
-        <a href="orcs-goblins/3.0-proposal.pdf"><img src="orcs-goblins/3.0-cover.png" alt="Orcs &amp; Goblins cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="ordo draconis">
+        <a href="ordo-draconis/"><span class="nothumb"></span></a>
         <div>
-          <h2><a href="orcs-goblins/3.0-proposal.pdf">Orcs &amp; Goblins</a></h2>
-          <p>Proposals 2026.1 · 1 proposal</p>
-        </div>
-      </li>
-      <li class="book" data-edition="house" data-align="destruction" data-name="ordo draconis">
-        <a href="ordo-draconis/2026.1.pdf"><span class="nothumb"></span></a>
-        <div>
-          <h2><a href="ordo-draconis/2026.1.pdf">The Ordo Draconis</a></h2>
+          <h2><a href="ordo-draconis/">The Ordo Draconis</a></h2>
           <p>Original book · 36 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="skaven">
-        <a href="skaven/3.0.pdf"><img src="skaven/3.0-cover.png" alt="Skaven cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="skaven">
+        <a href="skaven/"><img src="skaven/3.0-cover.png" alt="Skaven cover" loading="lazy"></a>
         <div>
-          <h2><a href="skaven/3.0.pdf">Skaven</a></h2>
+          <h2><a href="skaven/">Skaven</a></h2>
           <p>Version 3.0 · 67 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="house" data-align="destruction" data-name="skaven">
-        <a href="skaven/3.0-house.pdf"><img src="skaven/3.0-cover.png" alt="Skaven cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="tyranids">
+        <a href="tyranids/"><span class="nothumb"></span></a>
         <div>
-          <h2><a href="skaven/3.0-house.pdf">Skaven</a></h2>
-          <p>House Rules 2026.1 · 1 change</p>
-        </div>
-      </li>
-      <li class="book" data-edition="proposal" data-align="destruction" data-name="tyranids">
-        <a href="tyranids/1.0.pdf"><span class="nothumb"></span></a>
-        <div>
-          <h2><a href="tyranids/1.0.pdf">Tyranids</a></h2>
+          <h2><a href="tyranids/">Tyranids</a></h2>
           <p>Original book · 34 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="vampire counts">
-        <a href="vampire-counts/3.0.pdf"><img src="vampire-counts/3.0-cover.png" alt="Vampire Counts cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="vampire counts">
+        <a href="vampire-counts/"><img src="vampire-counts/3.0-cover.png" alt="Vampire Counts cover" loading="lazy"></a>
         <div>
-          <h2><a href="vampire-counts/3.0.pdf">Vampire Counts</a></h2>
+          <h2><a href="vampire-counts/">Vampire Counts</a></h2>
           <p>Version 3.0 · 78 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="warriors of chaos">
-        <a href="warriors-of-chaos/3.0.pdf"><img src="warriors-of-chaos/3.0-cover.png" alt="Warriors of Chaos cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="warriors of chaos">
+        <a href="warriors-of-chaos/"><img src="warriors-of-chaos/3.0-cover.png" alt="Warriors of Chaos cover" loading="lazy"></a>
         <div>
-          <h2><a href="warriors-of-chaos/3.0.pdf">Warriors of Chaos</a></h2>
+          <h2><a href="warriors-of-chaos/">Warriors of Chaos</a></h2>
           <p>Version 3.0 · 125 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="destruction" data-name="zombie pirates">
-        <a href="zombie-pirates/3.0.pdf"><img src="zombie-pirates/3.0-cover.png" alt="Zombie Pirates cover" loading="lazy"></a>
+      <li class="book" data-align="destruction" data-name="zombie pirates">
+        <a href="zombie-pirates/"><img src="zombie-pirates/3.0-cover.png" alt="Zombie Pirates cover" loading="lazy"></a>
         <div>
-          <h2><a href="zombie-pirates/3.0.pdf">Zombie Pirates</a></h2>
+          <h2><a href="zombie-pirates/">Zombie Pirates</a></h2>
           <p>Version 3.0 · 38 entries</p>
         </div>
       </li>
       <li class="head" data-align="neutral">
         <h2>Non-Aligned Forces</h2><span>7 books</span>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="araby">
-        <a href="araby/3.0.pdf"><img src="araby/3.0-cover.png" alt="Araby cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="araby">
+        <a href="araby/"><img src="araby/3.0-cover.png" alt="Araby cover" loading="lazy"></a>
         <div>
-          <h2><a href="araby/3.0.pdf">Araby</a></h2>
+          <h2><a href="araby/">Araby</a></h2>
           <p>Version 3.0 · 51 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="dogs of war">
-        <a href="dogs-of-war/3.1.pdf"><img src="dogs-of-war/3.1-cover.png" alt="Dogs of War cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="dogs of war">
+        <a href="dogs-of-war/"><img src="dogs-of-war/3.1-cover.png" alt="Dogs of War cover" loading="lazy"></a>
         <div>
-          <h2><a href="dogs-of-war/3.1.pdf">Dogs of War</a></h2>
+          <h2><a href="dogs-of-war/">Dogs of War</a></h2>
           <p>Version 3.1 · 61 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="hobgoblins">
-        <a href="hobgoblins/3.0.pdf"><img src="hobgoblins/3.0-cover.png" alt="Hobgoblins cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="hobgoblins">
+        <a href="hobgoblins/"><img src="hobgoblins/3.0-cover.png" alt="Hobgoblins cover" loading="lazy"></a>
         <div>
-          <h2><a href="hobgoblins/3.0.pdf">Hobgoblins</a></h2>
+          <h2><a href="hobgoblins/">Hobgoblins</a></h2>
           <p>Version 3.0 · 38 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="norsca">
-        <a href="norsca/3.0.pdf"><img src="norsca/3.0-cover.png" alt="Norsca cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="norsca">
+        <a href="norsca/"><img src="norsca/3.0-cover.png" alt="Norsca cover" loading="lazy"></a>
         <div>
-          <h2><a href="norsca/3.0.pdf">Norsca</a></h2>
+          <h2><a href="norsca/">Norsca</a></h2>
           <p>Version 3.0 · 49 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="ogre kingdoms">
-        <a href="ogre-kingdoms/3.1.pdf"><img src="ogre-kingdoms/3.1-cover.png" alt="Ogre Kingdoms cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="ogre kingdoms">
+        <a href="ogre-kingdoms/"><img src="ogre-kingdoms/3.1-cover.png" alt="Ogre Kingdoms cover" loading="lazy"></a>
         <div>
-          <h2><a href="ogre-kingdoms/3.1.pdf">Ogre Kingdoms</a></h2>
+          <h2><a href="ogre-kingdoms/">Ogre Kingdoms</a></h2>
           <p>Version 3.1 · 49 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="pirates of sartosa">
-        <a href="pirates-of-sartosa/3.0.pdf"><img src="pirates-of-sartosa/3.0-cover.png" alt="Pirates of Sartosa cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="pirates of sartosa">
+        <a href="pirates-of-sartosa/"><img src="pirates-of-sartosa/3.0-cover.png" alt="Pirates of Sartosa cover" loading="lazy"></a>
         <div>
-          <h2><a href="pirates-of-sartosa/3.0.pdf">Pirates of Sartosa</a></h2>
+          <h2><a href="pirates-of-sartosa/">Pirates of Sartosa</a></h2>
           <p>Version 3.0 · 41 entries</p>
         </div>
       </li>
-      <li class="book" data-edition="wap" data-align="neutral" data-name="tomb kings">
-        <a href="tomb-kings/3.1.pdf"><img src="tomb-kings/3.1-cover.png" alt="Tomb Kings cover" loading="lazy"></a>
+      <li class="book" data-align="neutral" data-name="tomb kings">
+        <a href="tomb-kings/"><img src="tomb-kings/3.1-cover.png" alt="Tomb Kings cover" loading="lazy"></a>
         <div>
-          <h2><a href="tomb-kings/3.1.pdf">Tomb Kings</a></h2>
+          <h2><a href="tomb-kings/">Tomb Kings</a></h2>
           <p>Version 3.1 · 50 entries</p>
         </div>
       </li>
@@ -533,26 +460,21 @@ footer p { margin: .7rem 0; }
   </footer>
 </main>
 <script>
-
 const grid = document.getElementById('armies');
 const controls = document.getElementById('controls');
-const core = document.getElementById('core');
 const cards = [...grid.querySelectorAll('.book')];
 const heads = [...grid.querySelectorAll('.head')];
-const coreCards = core ? [...core.querySelectorAll('.book')] : [];
 const alpha = [...cards].sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
-const state = { align: 'all', edition: 'wap', sort: 'grouped' };
+const state = { align: 'all', sort: 'grouped' };
 
 function apply() {
   for (const card of cards) {
-    card.hidden = !((state.align === 'all' || card.dataset.align === state.align)
-                    && card.dataset.edition === state.edition);
+    card.hidden = !(state.align === 'all' || card.dataset.align === state.align);
     card.style.order = '';
   }
-  // A head is dropped when its group has nothing left to show, rather than when
-  // the alignment filter excludes it — two filters can empty a group between them.
-  // Its count follows the filter too, since a band reading "14 books" above four
-  // of them is worse than no count at all.
+  // A head is dropped when its group has nothing left to show. Its count
+  // follows the filter too, since a band reading "14 books" above four of them
+  // is worse than no count at all.
   for (const head of heads) {
     const shown = cards.filter(
       card => !card.hidden && card.dataset.align === head.dataset.align).length;
@@ -560,10 +482,6 @@ function apply() {
     head.querySelector('span').textContent = shown + (shown === 1 ? ' book' : ' books');
   }
   if (state.sort === 'alpha') alpha.forEach((card, i) => { card.style.order = i + 1; });
-
-  // The rulebook has no allegiance, so only the edition filter reaches it.
-  for (const card of coreCards) card.hidden = card.dataset.edition !== state.edition;
-  if (core) core.hidden = coreCards.every(card => card.hidden);
 }
 
 for (const button of controls.querySelectorAll('button')) {

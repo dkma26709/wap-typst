@@ -49,8 +49,17 @@ jobs:
             count=$((count + 1))
             echo "::endgroup::"
           done
-          cp site/index.html _site/index.html
-          echo "compiled $count books"
+          # One page per army, landing in the folder its PDFs are already in,
+          # plus the overview and the editions' shelf. emit.py writes them under
+          # site/ in the shape they publish in, so the tree is copied across
+          # rather than one file. Only the HTML: style.css is read into each
+          # page at build time and is not served.
+          find site -name '*.html' | while IFS= read -r page; do
+            target="_site/${page#site/}"
+            mkdir -p "$(dirname "$target")"
+            cp "$page" "$target"
+          done
+          echo "compiled $count books, $(find _site -name '*.html' | wc -l) pages"
           du -sh _site
 
       - uses: actions/upload-pages-artifact@v4

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ours — Warhammer Armies Project</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <p class="back"><a href="../">All books</a></p>
+  <h1>Ours</h1>
+  <p class="sub">11 books we have altered or proposed altering.
+  Everything else on this site reproduces its source exactly.</p>
+
+  <h2 class="section">House Rules</h2>
+  <p class="note">The Warhammer Armies Project rules with our own amendments applied.</p>
+  <ul class="books core">
+      <li class="book">
+        <a href="../albion/3.0-house.pdf"><img src="../albion/3.0-cover.png" alt="Albion cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../albion/3.0-house.pdf">Albion</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../beastmen/3.0-house.pdf"><img src="../beastmen/3.0-cover.png" alt="Beastmen cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../beastmen/3.0-house.pdf">Beastmen</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../daemons-of-chaos/3.0-house.pdf"><img src="../daemons-of-chaos/3.0-cover.png" alt="Daemons of Chaos cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../daemons-of-chaos/3.0-house.pdf">Daemons of Chaos</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../dwarfs/3.11-house.pdf"><img src="../dwarfs/3.11-cover.png" alt="Dwarfs cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../dwarfs/3.11-house.pdf">Dwarfs</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../empire/3.1-house.pdf"><img src="../empire/3.1-cover.png" alt="The Empire cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../empire/3.1-house.pdf">The Empire</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../rulebook/3.11-house.pdf"><img src="../rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../rulebook/3.11-house.pdf">The Game of Fantasy Battles</a></h2>
+          <p>House Rules 2026.1 · 2 changes</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../lizardmen/3.0-house.pdf"><img src="../lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../lizardmen/3.0-house.pdf">Lizardmen</a></h2>
+          <p>House Rules 2026.1 · 4 changes</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../skaven/3.0-house.pdf"><img src="../skaven/3.0-cover.png" alt="Skaven cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../skaven/3.0-house.pdf">Skaven</a></h2>
+          <p>House Rules 2026.1 · 1 change</p>
+        </div>
+      </li>
+  </ul>
+
+  <h2 class="section">Proposals</h2>
+  <p class="note">The house rules, with the changes we are still arguing about set out in the back.</p>
+  <ul class="books core">
+      <li class="book">
+        <a href="../rulebook/3.11-proposal.pdf"><img src="../rulebook/3.11-cover.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../rulebook/3.11-proposal.pdf">The Game of Fantasy Battles</a></h2>
+          <p>Proposals 2026.1 · 13 proposals</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../lizardmen/3.0-proposal.pdf"><img src="../lizardmen/3.0-cover.png" alt="Lizardmen cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../lizardmen/3.0-proposal.pdf">Lizardmen</a></h2>
+          <p>Proposals 2026.1 · 6 proposals</p>
+        </div>
+      </li>
+      <li class="book">
+        <a href="../orcs-goblins/3.0-proposal.pdf"><img src="../orcs-goblins/3.0-cover.png" alt="Orcs &amp; Goblins cover" loading="lazy"></a>
+        <div>
+          <h2><a href="../orcs-goblins/3.0-proposal.pdf">Orcs &amp; Goblins</a></h2>
+          <p>Proposals 2026.1 · 1 proposal</p>
+        </div>
+      </li>
+  </ul>
+
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>
