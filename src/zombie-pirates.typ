@@ -333,8 +333,7 @@ The wielder of this weapon gains D3+2 Extra Attacks on any turn they charge, and
 
 Additional hand weapon. All attacks with this hook are made at +2 Strength.
 
-#namecost("SLOPPY CRUICKSHANK'S LONG-LOST", "")
-#namecost("CUTLASS", "35 points")
+#namecost("SLOPPY CRUICKSHANK'S LONG-LOST CUTLASS", "35 points")
 
 The first attack directed towards the wielder in each round of Close Combat automatically misses. In addition, they gain +1 to Hit and the Armour Piercing (1) special rule.
 
@@ -409,8 +408,7 @@ Relic. Bound Spell. This item contains the _Burning Head_ spell from the Lore of
 
 Relic. Bound Spell. This item contains the _Raise Dead_ spell from the Lore of Necromancy.
 
-#namecost("SPELL OF THE NECROMANCER'S", "")
-#namecost("APPRENTICE", "35 points")
+#namecost("SPELL OF THE NECROMANCER'S APPRENTICE", "35 points")
 
 Relic. Bound Spell. This item contains the _Deathly Cabal_ spell from the Lore of Necromancy.
 
@@ -421,8 +419,7 @@ Relic. Bound Spell. This item contains the _Deathly Cabal_ spell from the Lore o
 
 Any enemy unit in base contact with the bearer of this item at the start of each Close Combat phase suffers 2D6 Strength 3 Hits.
 
-#namecost("GENTLEMAN JENKIN'S TRUSTY", "")
-#namecost("COMPASS", "25 points")
+#namecost("GENTLEMAN JENKIN'S TRUSTY COMPASS", "25 points")
 
 Model on foot only. The character and one unit of your choice that they may join, may deploy as Scouts. In addition, they may re-roll all failed rolls to Reform during the Battle.
 
@@ -463,8 +460,7 @@ The unit carrying this standard gains the Multiple Wounds (2) special rule.
 
 All Zombies in the unit carrying this standard ignores all To Hit modifiers.
 
-#namecost("WAR STANDARD O' THE CORPSE", "")
-#namecost("SURGEONS", "25 points")
+#namecost("WAR STANDARD O' THE CORPSE SURGEONS", "25 points")
 
 The unit carrying this standard gains the Regeneration (6+) special rule.
 
