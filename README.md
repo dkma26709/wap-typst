@@ -256,6 +256,25 @@ chart of dice scores is nearly invisible to a word count, because tokenising
 out. The rulebook's to-hit chart was being rendered as a row of bold headings
 while coverage reported nothing missing.
 
+All three also need the source PDFs, which are not in this repository, so they
+answer "is this book faithful to what it came from" and can only be run by
+someone holding the originals. A different question arises far more often once a
+book is in: **did this change move anything it should not have?** Three further
+checks answer that from two renders and nothing else.
+
+`extract/render_text.py` reduces each book to one stream of letters — case
+folded, soft hyphens gone, words rejoined across the line breaks hyphenation put
+in them, every digit and mark discarded — and compares the two. Equality means no
+word moved. The obvious instrument, a word bag, is the wrong one: hyphenation
+shifts with pagination, so an untouched Bretonnia reports 36 words lost and 34
+gained, each of them half of a real word. `extract/render_glyphs.py` asks the
+stronger question, hashing every character's origin, size and font page by page,
+for a change that claims to be invisible on paper. `extract/render_artefacts.py`
+hunts markup that leaked onto the page, and takes `--against` a baseline render
+because the asterisk marking a common item and the footnote markers under a
+weapon table are legitimate — without it the sweep reports two dozen hits on an
+untouched corpus and teaches you to ignore it.
+
 ```bash
 python extract/coverage.py "path/to/book.pdf" build/lizardmen/3.0.json
 python extract/welds.py build/lizardmen/3.0.json
@@ -279,6 +298,14 @@ it is blind to punctuation entirely. Both markup substitutions described above
 passed it, and so did a list item whose leading hyphen was emitted as a `1` in
 nine books at once. Geometry comparison against the previous render is what
 caught those.
+
+Nor can any of them see a change that renders identically and *means* something
+else. Text equality is not structural equality, and neither is glyph equality: an
+item name read as a section's subtitle keeps every word in place, at the same
+coordinates, in the same font, and only the record beneath it is wrong. That has
+happened too — `BEAST SLAYER, THE DRAKWALD` became a subtitle of Empire's
+`MAGIC WEAPONS` heading with `RUNEFANG` orphaned beside it, and every check
+above passed. A claim about structure wants `typst query <meta>`, not the page.
 
 Deliberately dropped from the comparison: each book's cover and its own contents
 page. The rendered books generate their own outline from the headings.
