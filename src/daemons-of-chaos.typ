@@ -722,321 +722,199 @@ At the start of each of your Magic Phases, you may pick one enemy unit within 24
 
 The Daemon gain a +1 bonus to all Fires of Change rolls (see Lore of Tzeentch).
 
-= UNDIVIDED MAGIC ITEMS
+#magic-item-chapter(title: "UNDIVIDED MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Chaos. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("THE ETERNAL BLADE", 40, only: "Daemon Prince")[Roll a D3 at the start of each round of combat – the bearer’s Weapon Skill, Strength, Initiative and Attacks are increased by this amount until the end of the phase.]
+]
 
-#entry("MAGIC WEAPONS")
-#namecost("THE ETERNAL BLADE", "40 points")
+#magic-item-section("arcane")[
+#arcane-item("ABHORRENT LODESTONE", 50)[Any enemy Wizard within 12" of the bearer of this item that rolls any double counts as having rolled a Miscast.]
+]
 
-Daemon Prince only. Roll a D3 at the start of each round of combat – the bearer’s Weapon Skill, Strength, Initiative and Attacks are increased by this amount until the end of the phase.
+#magic-item-section("enchanted")[
+#enchanted-item("THE PORTALGLYPH", 25)[All friendly units attempting to deploy using the Summoned from Beyond special rule within 12" of the bearer of this item may re-roll the dice to determine if they arrive this turn.]
 
-#entry("ARCANE ITEMS")
-#namecost("ABHORRENT LODESTONE", "50 points")
-
-Any enemy Wizard within 12" of the bearer of this item that rolls any double counts as having rolled a Miscast.
-
-#entry("ENCHANTED ITEMS")
-#namecost("THE PORTALGLYPH", "25 points")
-
-All friendly units attempting to deploy using the Summoned from Beyond special rule within 12" of the bearer of this item may re-roll the dice to determine if they arrive this turn.
-
-#namecost("THE ROCK OF INEVITABILITY", "25 points")
-
-One use only. The bearer of the Rock of Inevitability can use it at the end of any Movement phase. Place a cursed bulwark (an obstacle that provides hard cover up to 8" long) anywhere within 6" of the bearer. It cannot be placed on top of (or within 1" of) a unit, or placed on a terrain feature other than a hill. At the end of each of your turns, roll a D6. On a score of 1\-3 nothing happens. On a score of 4\-5 place a further cursed bulwark (this does not require the character to be within 6"). On a score of 6 place a cursed tower (a two story-building up to 6" in diameter).
+#enchanted-item("THE ROCK OF INEVITABILITY", 25, one-use: true)[The bearer of the Rock of Inevitability can use it at the end of any Movement phase. Place a cursed bulwark (an obstacle that provides hard cover up to 8" long) anywhere within 6" of the bearer. It cannot be placed on top of (or within 1" of) a unit, or placed on a terrain feature other than a hill. At the end of each of your turns, roll a D6. On a score of 1\-3 nothing happens. On a score of 4\-5 place a further cursed bulwark (this does not require the character to be within 6"). On a score of 6 place a cursed tower (a two story-building up to 6" in diameter).
 
 Cursed terrain features placed in this way must be positioned touching an existing cursed terrain feature, and cannot be placed on top of a unit, or a terrain feature other than a hill or forest. If the terrain feature cannot be placed, or you don’t have the relevant terrain feature, then nothing is placed. Any unit from the Forces of Order within 6" of a cursed tower or cursed bulwark suffers a \-2 penalty to their Initiative.
+]
+]
 
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF CHAOS GLORY", "60 points")
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF CHAOS GLORY", 60)[The Standard of Chaos Glory allows all friendly units of Daemons within 12" to roll an additional dice for their Daemonic Instability tests and discard the highest result.]
 
-The Standard of Chaos Glory allows all friendly units of Daemons within 12" to roll an additional dice for their Daemonic Instability tests and discard the highest result.
+#magic-standard("GREAT STANDARD OF SUNDERING", 50)[All enemy Wizards targeting friendly units within 12" of this standard suffer a \-1 casting penalty, and will miscast on the roll of both double 1's and 2's.]
 
-#namecost("GREAT STANDARD OF SUNDERING", "50 points")
+#magic-standard("GREAT ICON OF DESPAIR", 40)[All enemy units with Line of Sight to the Great Icon of Despair suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).]
 
-All enemy Wizards targeting friendly units within 12" of this standard suffer a \-1 casting penalty, and will miscast on the roll of both double 1's and 2's.
+#magic-standard("BANNER OF UNHOLY VICTORY", 40)[The unit carrying the Banner of Unholy Victory gains a +D3 combat resolution bonus.]
 
-#namecost("GREAT ICON OF DESPAIR", "40 points")
+#magic-standard("BANNER OF INFERNAL FIRE", 25, bound: (power: 5))[The Banner of Infernal Fire contains a *direct damage* spell that targets all enemy units within 6" (including units in close combat). The target units suffer D6 Strength 5 Hits with the Flaming Attacks special rule.]
+]
 
-All enemy units with Line of Sight to the Great Icon of Despair suffer a \-1 penalty to their Leadership. This standard has no effect on models with Immunity (Psychology).
+#magic-item-chapter(title: "KHORNE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Khorne. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#namecost("BANNER OF UNHOLY VICTORY", "40 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("AXE OF KHORNE", 30)[The wielder receives +1 Attack for each enemy model he is in base contact with, to a maximum of +3 Attacks.]
 
-The unit carrying the Banner of Unholy Victory gains a +D3 combat resolution bonus.
+#magic-weapon("BLADE OF BLOOD", 25)[Attacks made with the Blade of Blood are resolved at +1 Strength and may re-roll failed rolls To Wound.]
 
-#namecost("BANNER OF INFERNAL FIRE", "25 points")
+#magic-weapon("FIRESTORM BLADE", 25)[The Firestorm Blade gives the wielder the Flaming Attacks special rule and allows them to re-roll failed rolls To Wound.]
 
-Bound Spell, Power Level 5. The Banner of Infernal Fire contains a *direct damage* spell that targets all enemy units within 6" (including units in close combat). The target units suffer D6 Strength 5 Hits with the Flaming Attacks special rule.
+#magic-weapon("HARVESTER OF SKULLS", 20, only: "Bloodthirster or Bloodmaster")[This weapon makes the model's Killing Blow special rule take effect on a 4+.]
 
-= KHORNE MAGIC ITEMS
+#magic-weapon("AR'GATH, THE KING OF BLADES", 15)[The wielder of this weapon always automatically Hits enemy characters.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Khorne. These may be used in addition to the magic weapons found in the Warhammer rulebook.*
+#magic-weapon("BEHEMOTH'S BANE", 15)[The wielder of this weapon may re-roll failed rolls To Wound and get the Multiple Wounds (D3) special rule against Monsters.]
 
-#entry("MAGIC WEAPONS")
-#namecost("AXE OF KHORNE", "30 points")
+#magic-weapon("DEATHDEALER", 10)[Every time a model with this weapon causes an unsaved Wound, the enemy model must pass a Toughness test or suffer an additional Wound with no saves allowed.]
 
-The wielder receives +1 Attack for each enemy model he is in base contact with, to a maximum of +3 Attacks.
+#magic-weapon("KHARTOTH THE BLOODHUNGER", 10)[If a model suffers an unsaved Wound against this weapon, that model is subject to the Always Strikes Last special rule for the remainder of the close combat phase.]
+]
 
-#namecost("BLADE OF BLOOD", "25 points")
+#magic-item-section("armour")[
+#magic-armour("ARMOUR OF KHORNE", 25, type: "Medium armour")[Magic weapons carried by enemy models lose all their magical abilities whilst the bearer remains in contact with the Daemon.]
 
-Attacks made with the Blade of Blood are resolved at +1 Strength and may re-roll failed rolls To Wound.
+#magic-armour("ARMOUR OF SCORN", 10, type: "Light armour")[The wearer gains a Magical Ward (6+).]
+]
 
-#namecost("FIRESTORM BLADE", "25 points")
+#magic-item-section("talisman")[
+#talisman("THE BLOODY SHACKLE", 15, one-use: true)[The Bloody Shackle may be used at the start of any phase. Until the end of that turn, the wearer gains the Regeneration (4+) special rule.]
 
-The Firestorm Blade gives the wielder the Flaming Attacks special rule and allows them to re-roll failed rolls To Wound.
+#talisman("CRIMSON SOULSTONE", 5)[The bearer regains 1 Wound lost earlier during the game each time they slay an enemy character in close combat.]
+]
 
-#namecost("HARVESTER OF SKULLS", "20 points")
+#magic-item-section("enchanted")[
+#enchanted-item("BLOODSTONE", 50, one-use: true)[Keep a tally of the number of models slain by the bearer in close combat during the game. At the start of any of your Magic phases, you may choose to use the Bloodstone. When you do so, you may summon a unit of Bloodletters equal in size to the number of models slain by the bearer anywhere within 12", facing in a direction of your choice. This unit does not have any upgrades, and do not award any Victory Points.]
 
-Bloodthirster or Bloodmaster only. This weapon makes the model's Killing Blow special rule take effect on a 4+.
+#enchanted-item("MARK OF THE SLAYER", 30)[The bearer and any unit they join may re-roll 1's To Hit in close combat. In addition, they may re-roll 1's To Wound in close combat during turns that they charge.]
 
-#namecost("AR'GATH, THE KING OF BLADES", "15 points")
+#enchanted-item("MARK OF THE BLOODREAPER", 15)[Each close combat phase that the bearer inflicts 3 or more unsaved Wounds, they gain +D3 to their close combat resolution.]
 
-The wielder of this weapon always automatically Hits enemy characters.
+#enchanted-item("THE CRIMSON CROWN", 10)[For each To Hit roll of 6 they make in close combat, the wearer gets to make an additional Attack. These additional attacks do not generate further attacks.]
+]
 
-#namecost("BEHEMOTH'S BANE", "15 points")
+#magic-item-section("standard")[
+#magic-standard("ICON OF ENDLESS WAR", 25)[The unit carrying this standard adds D3" to its charge move.]
 
-The wielder of this weapon may re-roll failed rolls To Wound and get the Multiple Wounds (D3) special rule against Monsters.
+#magic-standard("STANDARD OF ETERNAL WRATH", 25)[The unit carrying this standard gains the Hatred special rule.]
 
-#namecost("DEATHDEALER", "10 points")
+#magic-standard("SKULL TOTEM", 15)[The unit carrying this standard gain +1 to its Movement when they make March moves and do not need to test to be able to March due to nearby enemies.]
+]
 
-Every time a model with this weapon causes an unsaved Wound, the enemy model must pass a Toughness test or suffer an additional Wound with no saves allowed.
+#magic-item-chapter(title: "NURGLE MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Nurgle. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#namecost("KHARTOTH THE BLOODHUNGER", "10 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("BALESWORD", 25)[Attacks made with the Balesword have the Poisoned Attacks and Multiple Wounds (D3) special rules.]
 
-If a model suffers an unsaved Wound against this weapon, that model is subject to the Always Strikes Last special rule for the remainder of the close combat phase.
+#magic-weapon("NURGLE'S NAIL", 20)[The wielder of this weapon will automatically Wound on the to Hit roll of a 5+. In addition, at the end of each round of close combat, roll 2D6 for each enemy model that has suffered one or more unsaved Wounds from this weapon. If the result is exactly 7, that model is slain with no saves of any kind allowed.]
 
-#entry("MAGIC ARMOUR")
-#namecost("ARMOUR OF KHORNE", "25 points")
+#magic-weapon("THE VIRULENT BLADE", 15)[If the wielder of this weapon rolls a natural 5 or 6 on their To Wound roll, that Attack has the Multiple Wounds (D6) special rule.]
 
-Medium armour. Magic weapons carried by enemy models lose all their magical abilities whilst the bearer remains in contact with the Daemon.
+#magic-weapon("PLAGUE FLAIL", 10)[This weapon gives the wielder the Mighty Blow (1) special rule. Any model that suffers one or more unsaved Wounds from the Plague Flail must immediately pass a Toughness test or suffer another Wound with the Ignores Armour Saves special rule.]
 
-#namecost("ARMOUR OF SCORN", "10 points")
+#magic-weapon("BILEBLADE", 5, only: "Great Unclean One")[At the start of each of your Magic phases, the bearer can choose to suffer one Wound with no saves allowed. If they do so, they gain +1 Power Dice for the remainder of this Magic phase.]
+]
 
-Light armour. The wearer gains a Magical Ward (6+).
+#magic-item-section("arcane")[
+#arcane-item("DOOMSDAY BELL", 35, type: "Relic", bound: (level: 3, cast: "8+"))[The Doomsday Bell contains a *summoning* spell with a range of 18" that can target units of Plague Bearers, Nurglings or Plague Toads. The target unit immediately gains D6 Wounds worth of models.]
 
-#entry("TALISMANS")
-#namecost("THE BLOODY SHACKLE", "15 points")
+#arcane-item("STAFF OF NURGLE", 35, type: "Staff", bound: true)[The Staff of Nurgle contains the _Rancid Visitation_ spell from the Lore of Nurgle.]
 
-One use only. The Bloody Shackle may be used at the start of any phase. Until the end of that turn, the wearer gains the Regeneration (4+) special rule.
+#arcane-item("TOME OF A THOUSAND POXES", 30, type: "Relic")[The bearer of this item gains a +1 casting bonus. This bonus increases by +1 for each subsequent spell successfully cast by the bearer on the same target during the current Magic phase.]
+]
 
-#namecost("CRIMSON SOULSTONE", "5 points")
+#magic-item-section("enchanted")[
+#enchanted-item("FLESH PEELER", 30)[The Flesh Peeler may be used at the start of your shooting phase as long as the wearer is not in close combat. When used, all enemy units within 12" take D6 Hits. Each Hit automatically Wounds on a 5+ which Ignores Armour saves.]
 
-The bearer regains 1 Wound lost earlier during the game each time they slay an enemy character in close combat.
+#enchanted-item("THE WITHERSTAVE", 25)[Enemy units in base contact with the bearer of this item must re-roll 6's To Hit in close combat.]
+]
 
-#entry("ENCHANTED ITEMS")
-#namecost("BLOODSTONE", "50 points")
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF FECUNDITY", 25)[The unit carrying this standard gains the Regeneration (6+) special rule.]
 
-One use only. Keep a tally of the number of models slain by the bearer in close combat during the game. At the start of any of your Magic phases, you may choose to use the Bloodstone. When you do so, you may summon a unit of Bloodletters equal in size to the number of models slain by the bearer anywhere within 12", facing in a direction of your choice. This unit does not have any upgrades, and do not award any Victory Points.
+#magic-standard("STANDARD OF SEEPING DECAY", 25)[If any model in the unit carrying this standard rolls a natural 6 To Hit in close combat, the target immediately suffers an additional automatic hit resolved at Strength 4.]
 
-#namecost("MARK OF THE SLAYER", "30 points")
+#magic-standard("ICON OF ETERNAL VIRULENCE", 20)[Each unsaved Wound caused by the unit carrying this standard when rolling a natural 6 on the To Wound roll add an extra point of Combat Resolution in the first round of close combat. In the second round of close combat it takes effect on To Wound rolls of 5+, and in the third round of close combat on To Wounds rolls of 4+, and so on. The effect resets if the unit leaves combat.]
+]
 
-The bearer and any unit they join may re-roll 1's To Hit in close combat. In addition, they may re-roll 1's To Wound in close combat during turns that they charge.
+#magic-item-chapter(title: "SLAANESH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Slaanesh. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#namecost("MARK OF THE BLOODREAPER", "15 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("ETHERBLADE", 25)[The Etherblade gives the wielder the Ignores Armour Saves special rule. In addition, enemy models Wounded by it must re-roll successful Magical Ward saves.]
 
-Each close combat phase that the bearer inflicts 3 or more unsaved Wounds, they gain +D3 to their close combat resolution.
-
-#namecost("THE CRIMSON CROWN", "10 points")
-
-For each To Hit roll of 6 they make in close combat, the wearer gets to make an additional Attack. These additional attacks do not generate further attacks.
-
-#entry("MAGIC STANDARDS")
-#namecost("ICON OF ENDLESS WAR", "25 points")
-
-The unit carrying this standard adds D3" to its charge move.
-
-#namecost("STANDARD OF ETERNAL WRATH", "25 points")
-
-The unit carrying this standard gains the Hatred special rule.
-
-#namecost("SKULL TOTEM", "15 points")
-
-The unit carrying this standard gain +1 to its Movement when they make March moves and do not need to test to be able to March due to nearby enemies.
-
-= NURGLE MAGIC ITEMS
-
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Nurgle. These may be used in addition to the magic weapons found in the Warhammer rulebook.*
-
-#entry("MAGIC WEAPONS")
-#namecost("BALESWORD", "25 points")
-
-Attacks made with the Balesword have the Poisoned Attacks and Multiple Wounds (D3) special rules.
-
-#namecost("NURGLE'S NAIL", "20 points")
-
-The wielder of this weapon will automatically Wound on the to Hit roll of a 5+. In addition, at the end of each round of close combat, roll 2D6 for each enemy model that has suffered one or more unsaved Wounds from this weapon. If the result is exactly 7, that model is slain with no saves of any kind allowed.
-
-#namecost("THE VIRULENT BLADE", "15 points")
-
-If the wielder of this weapon rolls a natural 5 or 6 on their To Wound roll, that Attack has the Multiple Wounds (D6) special rule.
-
-#namecost("PLAGUE FLAIL", "10 points")
-
-This weapon gives the wielder the Mighty Blow (1) special rule. Any model that suffers one or more unsaved Wounds from the Plague Flail must immediately pass a Toughness test or suffer another Wound with the Ignores Armour Saves special rule.
-
-#namecost("BILEBLADE", "5 points")
-
-Great Unclean One only. At the start of each of your Magic phases, the bearer can choose to suffer one Wound with no saves allowed. If they do so, they gain +1 Power Dice for the remainder of this Magic phase.
-
-#entry("ARCANE ITEMS")
-#namecost("DOOMSDAY BELL", "35 points")
-
-Relic. Bound Spell (Level 3, cast on 8+). The Doomsday Bell contains a *summoning* spell with a range of 18" that can target units of Plague Bearers, Nurglings or Plague Toads. The target unit immediately gains D6 Wounds worth of models.
-
-#namecost("STAFF OF NURGLE", "35 points")
-
-Staff. Bound Spell. The Staff of Nurgle contains the _Rancid Visitation_ spell from the Lore of Nurgle.
-
-#namecost("TOME OF A THOUSAND POXES", "30 points")
-
-Relic. The bearer of this item gains a +1 casting bonus. This bonus increases by +1 for each subsequent spell successfully cast by the bearer on the same target during the current Magic phase.
-
-#entry("ENCHANTED ITEMS")
-#namecost("FLESH PEELER", "30 points")
-
-The Flesh Peeler may be used at the start of your shooting phase as long as the wearer is not in close combat. When used, all enemy units within 12" take D6 Hits. Each Hit automatically Wounds on a 5+ which Ignores Armour saves.
-
-#namecost("THE WITHERSTAVE", "25 points")
-
-Enemy units in base contact with the bearer of this item must re-roll 6's To Hit in close combat.
-
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF FECUNDITY", "25 points")
-
-The unit carrying this standard gains the Regeneration (6+) special rule.
-
-#namecost("STANDARD OF SEEPING DECAY", "25 points")
-
-If any model in the unit carrying this standard rolls a natural 6 To Hit in close combat, the target immediately suffers an additional automatic hit resolved at Strength 4.
-
-#namecost("ICON OF ETERNAL VIRULENCE", "20 points")
-
-Each unsaved Wound caused by the unit carrying this standard when rolling a natural 6 on the To Wound roll add an extra point of Combat Resolution in the first round of close combat. In the second round of close combat it takes effect on To Wound rolls of 5+, and in the third round of close combat on To Wounds rolls of 4+, and so on. The effect resets if the unit leaves combat.
-
-= SLAANESH MAGIC ITEMS
-
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Slaanesh. These may be used in addition to the magic weapons found in the Warhammer rulebook.*
-
-#entry("MAGIC WEAPONS")
-#namecost("ETHERBLADE", "25 points")
-
-The Etherblade gives the wielder the Ignores Armour Saves special rule. In addition, enemy models Wounded by it must re-roll successful Magical Ward saves.
-
-#namecost("LASH OF DESPAIR", "25 points")
-
-The Lash of Despair uses the following profile:
+#magic-weapon("LASH OF DESPAIR", 25)[The Lash of Despair uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "As user", "Quick to Fire, Multiple Shots (D6)"))
-#namecost("TORMENT BLADE", "10 points")
+]
 
-A model that suffers one or more unsaved wound from the Torment Blade must pass a Leadership test. If failed, they may not attack that close combat phase.
+#magic-weapon("TORMENT BLADE", 10)[A model that suffers one or more unsaved wound from the Torment Blade must pass a Leadership test. If failed, they may not attack that close combat phase.]
+]
 
-#entry("ENCHANTED ITEMS")
-#namecost("ENRAPTURING CIRCLET", "40 points")
+#magic-item-section("enchanted")[
+#enchanted-item("ENRAPTURING CIRCLET", 40)[All enemy models in base contact with the bearer of this item suffer \-1 to their Attacks. In addition, any unit in base contact with the bearer suffer \-2 to any Flee rolls they make.]
 
-All enemy models in base contact with the bearer of this item suffer \-1 to their Attacks. In addition, any unit in base contact with the bearer suffer \-2 to any Flee rolls they make.
+#enchanted-item("THRENODY VOICEBOX", 35)[Any enemy unit in base contact with the bearer of this item is subject to the Always Strikes Last special rule.]
 
-#namecost("THRENODY VOICEBOX", "35 points")
+#enchanted-item("FALLACIOUS GIFT", 20)[At the start of the game, after deployment, nominate one enemy Character on the table. That Character suffers a Strength 4 Hit at the end of each close combat phase in which they have made one or more Attacks.]
 
-Any enemy unit in base contact with the bearer of this item is subject to the Always Strikes Last special rule.
+#enchanted-item("MASK OF SPITEFUL BEAUTY", 20)[Any enemy unit in base contact with the bearer of this item suffer \-1 to their Leadership.]
 
-#namecost("FALLACIOUS GIFT", "20 points")
+#enchanted-item("GIRDLE OF THE REALM-RACER", 15, only: "Mounted model")[The wearer gains the Fly (10) and Strider special rules.]
+]
 
-At the start of the game, after deployment, nominate one enemy Character on the table. That Character suffers a Strength 4 Hit at the end of each close combat phase in which they have made one or more Attacks.
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF BEGUILEMENT", 35)[Any enemy unit in base contact with the unit carrying this standard gains the Always Strikes Last special rule.]
 
-#namecost("MASK OF SPITEFUL BEAUTY", "20 points")
+#magic-standard("BANNER OF ECSTASY", 25)[The unit carrying this standard gains the Stubborn special rule.]
 
-Any enemy unit in base contact with the bearer of this item suffer \-1 to their Leadership.
+#magic-standard("SIREN STANDARD", 25)[Any enemy unit charged by the unit carrying this standard can only choose Hold as a charge reaction. This standard has no effect on models with the Immunity (Psychology) special rule.]
 
-#namecost("GIRDLE OF THE REALM-RACER", "15 points")
+#magic-standard("STANDARD OF TWISTED GRACE", 25)[The unit carrying this standard gains the Vanguard special rule, and automatically pass Dangerous Terrain tests, "Look Out Sir!" tests and characteristic tests (but not Leadership tests).]
+]
 
-Mounted model only. The wearer gains the Fly (10) and Strider special rules.
+#magic-item-chapter(title: "TZEENTCH MAGIC ITEMS", intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Tzeentch. These may be used in addition to the magic weapons found in the Warhammer rulebook.])
 
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF BEGUILEMENT", "35 points")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("STAFF OF CHANGE", 25)[Any model that suffers one or more unsaved Wounds from the Staff of Change must immediately pass a Toughness test or suffer an additional D6 Wounds with the Ignores Armour Saves special rule. If a multiple- Wound model loses its last Wound to the Staff of Change, all enemy models within D6" immediately suffer a single Strength 5 hit.]
 
-Any enemy unit in base contact with the unit carrying this standard gains the Always Strikes Last special rule.
+#magic-weapon("PYROFYRE STAVE", 15)[The wielder of this weapon gains the Flaming Attacks special rule, and may re-roll any To Wound rolls of 1 when casting *magic missiles*. In addition, if a Wizard suffers one or more unsaved Wounds against this weapon, they cannot channel Power or Dispel dice for the rest of the game.]
 
-#namecost("BANNER OF ECSTASY", "25 points")
+#magic-weapon("BLADE OF FATE", 10)[For every 6 rolled when rolling To Hit, the wielder may re-roll a failed To Hit, To Wound or invulnerable save roll of their choosing this close combat phase.]
 
-The unit carrying this standard gains the Stubborn special rule.
+#magic-weapon("WARPFIRE BLADE", 10)[If the wielder of this weapon rolls a 6's To Hit, that Attack automatically Wounds with the Multiple Wounds (2) and Flaming Attacks special rules.]
 
-#namecost("SIREN STANDARD", "25 points")
+#magic-weapon("WARPTONGUE BLADE", 10)[If a Warptongue Blade causes an unsaved Wound in close combat, the target must pass a Leadership test or be removed as casualty, with no saves allowed.]
 
-Any enemy unit charged by the unit carrying this standard can only choose Hold as a charge reaction. This standard has no effect on models with the Immunity (Psychology) special rule.
+#magic-weapon("WAND OF WHIMSY", 30)[Staff. Whenever the bearer successfully casts or dispels a spell, roll a D6 – the Wand of Whimsy gains a charge token on a roll of 5+. The Wand of Whimsy grants the bearer a bonus to both Strength and Attacks equal to the number of charge tokens for the remainder of the game.]
 
-#namecost("STANDARD OF TWISTED GRACE", "25 points")
+#magic-weapon("THE CHROMATIC TOME", 10)[Relic. You can choose to re-roll the Winds of Magic dice in your turn. However, if you do so, your opponent can also re-roll the Winds of Magic dice in their next turn if they wish. In either case, all of the Winds of Magic dice must be re-rolled.]
+]
 
-The unit carrying this standard gains the Vanguard special rule, and automatically pass Dangerous Terrain tests, "Look Out Sir!" tests and characteristic tests (but not Leadership tests).
+#magic-item-section("enchanted")[
+#enchanted-item("BEACON OF MUTABILITY", 40)[All friendly Daemon of Tzeentch units within 6" of the bearer gain +1 To Wound in close combat.]
 
-= TZEENTCH MAGIC ITEMS
+#enchanted-item("THE ETERNAL SHROUD", 15)[The wearer can add or subtract 1 from any dice roll that directly affects it once per turn, including when casting spells or rolling on the miscast table.]
+]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Daemons of Tzeentch. These may be used in addition to the magic weapons found in the Warhammer rulebook.*
+#magic-item-section("standard")[
+#magic-standard("STANDARD OF CONJURATION", 35)[Any spells cast by the unit carrying this standard are resolved at +1 Strength.]
 
-#entry("MAGIC WEAPONS")
-#namecost("STAFF OF CHANGE", "25 points")
+#magic-standard("BANNER OF CHANGE", 25, bound: (power: 4))[The Banner of Change contains a *hex* spell that targets all enemy units in base contact. The target units suffer 2D6 Strength 3 Hits.]
 
-Any model that suffers one or more unsaved Wounds from the Staff of Change must immediately pass a Toughness test or suffer an additional D6 Wounds with the Ignores Armour Saves special rule. If a multiple- Wound model loses its last Wound to the Staff of Change, all enemy models within D6" immediately suffer a single Strength 5 hit.
+#magic-standard("ICON OF SORCERY", 25)[The unit carrying this standard gains a +1 casting bonus.]
 
-#namecost("PYROFYRE STAVE", "15 points")
+#magic-standard("STANDARD OF TRANSMOGRIFICATION", 10)[When a model with the Split special rule in the unit carrying this standard is slain, you may re-roll dice results of 1\-3 to see if it turns into two Blue Horrors.]
+]
 
-The wielder of this weapon gains the Flaming Attacks special rule, and may re-roll any To Wound rolls of 1 when casting *magic missiles*. In addition, if a Wizard suffers one or more unsaved Wounds against this weapon, they cannot channel Power or Dispel dice for the rest of the game.
+#magic-item-section("talisman")[
+#talisman("DAEMONIC ROBES", 25)[The Daemon can never be wounded on better than a 4+.]
+]
 
-#namecost("BLADE OF FATE", "10 points")
-
-For every 6 rolled when rolling To Hit, the wielder may re-roll a failed To Hit, To Wound or invulnerable save roll of their choosing this close combat phase.
-
-#namecost("WARPFIRE BLADE", "10 points")
-
-If the wielder of this weapon rolls a 6's To Hit, that Attack automatically Wounds with the Multiple Wounds (2) and Flaming Attacks special rules.
-
-#namecost("WARPTONGUE BLADE", "10 points")
-
-If a Warptongue Blade causes an unsaved Wound in close combat, the target must pass a Leadership test or be removed as casualty, with no saves allowed.
-
-#namecost("WAND OF WHIMSY", "30 points")
-
-Staff. Whenever the bearer successfully casts or dispels a spell, roll a D6 – the Wand of Whimsy gains a charge token on a roll of 5+. The Wand of Whimsy grants the bearer a bonus to both Strength and Attacks equal to the number of charge tokens for the remainder of the game.
-
-#namecost("THE CHROMATIC TOME", "10 points")
-
-Relic. You can choose to re-roll the Winds of Magic dice in your turn. However, if you do so, your opponent can also re-roll the Winds of Magic dice in their next turn if they wish. In either case, all of the Winds of Magic dice must be re-rolled.
-
-#entry("ENCHANTED ITEMS")
-#namecost("BEACON OF MUTABILITY", "40 points")
-
-All friendly Daemon of Tzeentch units within 6" of the bearer gain +1 To Wound in close combat.
-
-#namecost("THE ETERNAL SHROUD", "15 points")
-
-The wearer can add or subtract 1 from any dice roll that directly affects it once per turn, including when casting spells or rolling on the miscast table.
-
-#entry("MAGIC STANDARDS")
-#namecost("STANDARD OF CONJURATION", "35 points")
-
-Any spells cast by the unit carrying this standard are resolved at +1 Strength.
-
-#namecost("BANNER OF CHANGE", "25 points")
-
-Bound Spell, Power Level 4. The Banner of Change contains a *hex* spell that targets all enemy units in base contact. The target units suffer 2D6 Strength 3 Hits.
-
-#namecost("ICON OF SORCERY", "25 points")
-
-The unit carrying this standard gains a +1 casting bonus.
-
-#namecost("STANDARD OF TRANSMOGRIFICATION", "10 points")
-
-When a model with the Split special rule in the unit carrying this standard is slain, you may re-roll dice results of 1\-3 to see if it turns into two Blue Horrors.
-
-#entry("TALISMANS")
-#namecost("DAEMONIC ROBES", "25 points")
-
-The Daemon can never be wounded on better than a 4+.
-
-#entry("ARCANE ITEMS")
-#namecost("NINE-EYED TOME", "30 points")
-
-Relic. The bearer can re-roll one casting or dispel attempt each Magic phase.
+#magic-item-section("arcane")[
+#arcane-item("NINE-EYED TOME", 30, type: "Relic")[The bearer can re-roll one casting or dispel attempt each Magic phase.]
+]
 
 = CHARACTERS
 

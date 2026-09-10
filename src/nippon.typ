@@ -122,177 +122,102 @@ War Machines only. War Machines with this Clan Mon may re-roll one failed To Hit
 
 Ashigaru only. Models with this Mon gain +1 to their Leadership.
 
-= MAGIC ITEMS
+#magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Nipponese. These may be used in addition to the magic items found in the Warhammer rulebook. Any magic weapon that counts as a hand weapon follow the rules for katanas.])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Nipponese. These may be used in addition to the magic items found in the Warhammer rulebook. Any magic weapon that counts as a hand weapon follow the rules for katanas.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("GRASS-CUTTING SWORD", 60, type: "Great weapon")[Instead of attacking normally, this weapon may automatically inflict a single Hit on all enemy models in the front rank of any unit the wielder is in base contact with.]
 
-#entry("MAGIC WEAPONS")
-#namecost("GRASS-CUTTING SWORD", "60 points")
+#magic-weapon("DRAGON CLAW KATANA", 45, type: "Katana")[The wielder gains one additional Attack for every point of unmodified Leadership that exceeds that of any one enemy model in base contact. In addition, when fighting in challenges, the wielder gains the Killing Blow special rule and may re-roll all failed rolls To Hit and To Wound.]
 
-Great weapon. Instead of attacking normally, this weapon may automatically inflict a single Hit on all enemy models in the front rank of any unit the wielder is in base contact with.
+#magic-weapon("DIVINE SLASHING BLADE", 20, type: "Katana")[All hits with this weapon automatically Wound. Armour saves are taken as normal.]
 
-#namecost("DRAGON CLAW KATANA", "45 points")
+#magic-weapon("CRESENT MOON BLADE", 35, type: "Katana")[The wielder always counts their Strength characteristic at least one higher than that of any enemy models in base contact. In addition, they have the Multiple Wounds (D3) special rule.]
 
-Katana. The wielder gains one additional Attack for every point of unmodified Leadership that exceeds that of any one enemy model in base contact. In addition, when fighting in challenges, the wielder gains the Killing Blow special rule and may re-roll all failed rolls To Hit and To Wound.
+#magic-weapon("HEAVENLY NAGINATA", 35, type: "Polearm")[This weapon gives the wielder +1 to Hit in close combat and Flaming Attacks. In addition, on a To Hit roll of a 6, that attack is multiplied into D3 hits.]
 
-#namecost("DIVINE SLASHING BLADE", "20 points")
+#magic-weapon("MASAMUNE'S WAKIZASHI", 35, type: "Additional hand weapon")[The wielder gains the Always Strike First special rule. In addition, they may re-roll failed Parry saves.]
 
-Katana. All hits with this weapon automatically Wound. Armour saves are taken as normal.
+#magic-weapon("AUTUMN RAIN", 20, type: "Longbow")[The wielder may fire as many shots as they have Attacks on their profile and ignore all shooting modifiers.]
 
-#namecost("CRESENT MOON BLADE", "35 points")
+#magic-weapon("DAEMON CUTTER", 20, type: "Katana")[No Magical Ward saves can be taken against attacks made by this weapon.]
 
-Katana. The wielder always counts their Strength characteristic at least one higher than that of any enemy models in base contact. In addition, they have the Multiple Wounds (D3) special rule.
+#magic-weapon("YARI OF RIGHTEOUSNESS", 15, type: "Light lance/spear")[Only one enemy model in base contact may attack the wielder in Close Combat. The attacking player chooses which model may attack. In addition, no enemy unit can claim the Outnumber bonus against the wearer and any unit they are with.]
+]
 
-#namecost("HEAVENLY NAGINATA", "35 points")
+#magic-item-section("armour")[
+#magic-armour("YORITOMO'S ARMOUR", 55, type: "Heavy armour")[The wearer gains a Magical Ward (5+). In addition, if there are one or more friendly characters within 12" of the wearer, the wearer also gains +1 Strength.]
 
-Polearm. This weapon gives the wielder +1 to Hit in close combat and Flaming Attacks. In addition, on a To Hit roll of a 6, that attack is multiplied into D3 hits.
+#magic-armour("ARMOUR OF IMPERIAL RULE", 40, type: "Heavy armour")[Enemies must re-roll 6’s when rolling To Wound against the wearer. Enemies who fail their rolls To Wound suffer a Strength 4 hit.]
 
-#namecost("MASAMUNE'S WAKIZASHI", "35 points")
+#magic-armour("ARMOUR OF OSANO-WO", 25, type: "Medium armour")[The wearer is completely immune to all effects from spells.]
 
-Additional hand weapon. The wielder gains the Always Strike First special rule. In addition, they may re-roll failed Parry saves.
+#magic-armour("IKOMA'S WARFAN", 25, type: "Buckler")[All enemies attacking the wielder in close combat suffer a \-1 To Hit penalty.]
 
-#namecost("AUTUMN RAIN", "20 points")
+#magic-armour("MEMPO OF HONOUR", 20)[This item gives the wearer a 6+ armour save. Enemies attacking the wearer in close combat must re-roll successful rolls To Hit. However, if the wearer flees for any reason, they are immediately removed as a casualty after making their flee move.]
 
-Longbow. The wielder may fire as many shots as they have Attacks on their profile and ignore all shooting modifiers.
+#magic-armour("ISAWA'S HELM", 15)[This item gives the wearer a 6+ armour save. In addition, the wearer may re-roll 1's when taking armour saves.]
+]
 
-#namecost("DAEMON CUTTER", "20 points")
+#magic-item-section("talisman")[
+#talisman("BRONZE TOKEN", 35)[The wearer gains a 4+ invulnerable save against Magical Attacks. In addition, the wearer may re-roll one failed armour save each turn.]
 
-Katana. No Magical Ward saves can be taken against attacks made by this weapon.
+#talisman("HAKAMA OF THE IDE FAMILY", 25)[Enemies attempting to strike the bearer in Close Combat must first pass a Leadership test. If failed, they may not attack this turn.]
 
-#namecost("YARI OF RIGHTEOUSNESS", "15 points")
+#talisman("THE RAINBOW CLOAK", 25)[Enemies shooting at the bearer or any unit they are with suffer \-1 to hit.]
 
-Light lance/spear. Only one enemy model in base contact may attack the wielder in Close Combat. The attacking player chooses which model may attack. In addition, no enemy unit can claim the Outnumber bonus against the wearer and any unit they are with.
+#talisman("HENSHIN'S AMULET", 20)[This item gives the wearer a Magical Ward (6+). In addition, they may re-roll one dice to Hit, to Wound or a failed armour save each turn.]
+]
 
-#entry("MAGIC ARMOUR")
-#namecost("YORITOMO'S ARMOUR", "55 points")
-
-Heavy armour. The wearer gains a Magical Ward (5+). In addition, if there are one or more friendly characters within 12" of the wearer, the wearer also gains +1 Strength.
-
-#namecost("ARMOUR OF IMPERIAL RULE", "40 points")
-
-Heavy armour. Enemies must re-roll 6’s when rolling To Wound against the wearer. Enemies who fail their rolls To Wound suffer a Strength 4 hit.
-
-#namecost("ARMOUR OF OSANO-WO", "25 points")
-
-Medium armour. The wearer is completely immune to all effects from spells.
-
-#namecost("IKOMA'S WARFAN", "25 points")
-
-Buckler. All enemies attacking the wielder in close combat suffer a \-1 To Hit penalty.
-
-#namecost("MEMPO OF HONOUR", "20 points")
-
-This item gives the wearer a 6+ armour save. Enemies attacking the wearer in close combat must re-roll successful rolls To Hit. However, if the wearer flees for any reason, they are immediately removed as a casualty after making their flee move.
-
-#namecost("ISAWA'S HELM", "15 points")
-
-This item gives the wearer a 6+ armour save. In addition, the wearer may re-roll 1's when taking armour saves.
-
-#entry("TALISMANS")
-#namecost("BRONZE TOKEN", "35 points")
-
-The wearer gains a 4+ invulnerable save against Magical Attacks. In addition, the wearer may re-roll one failed armour save each turn.
-
-#namecost("HAKAMA OF THE IDE FAMILY", "25 points")
-
-Enemies attempting to strike the bearer in Close Combat must first pass a Leadership test. If failed, they may not attack this turn.
-
-#namecost("THE RAINBOW CLOAK", "25 points")
-
-Enemies shooting at the bearer or any unit they are with suffer \-1 to hit.
-
-#namecost("HENSHIN'S AMULET", "20 points")
-
-This item gives the wearer a Magical Ward (6+). In addition, they may re-roll one dice to Hit, to Wound or a failed armour save each turn.
-
-#entry("ARCANE ITEMS")
-#namecost("CANDLE OF THE VOID", "30 points")
-
-The Candle of the Void may be placed within 12" of the caster at the start of the game (use a small marker on a round 25mm base), but it may not be moved during the game and counts as impassable terrain.
+#magic-item-section("arcane")[
+#arcane-item("CANDLE OF THE VOID", 30)[The Candle of the Void may be placed within 12" of the caster at the start of the game (use a small marker on a round 25mm base), but it may not be moved during the game and counts as impassable terrain.
 
 The caster can choose to cast any spell through the candle rather than themselves. If they do so, measure the spell's range from the candle. The candle can draw Line of Sight in any direction and has a Line of Sight value of 1. The caster can use this to cast any spell type even if they are engaged in close combat. If a spell cast through the candle is miscast, the result of the miscast is applied to the caster as normal.
+]
 
-#namecost("INCENSE OF CONCENTRATION", "25 points")
+#arcane-item("INCENSE OF CONCENTRATION", 25)[The model carrying this item may adjust the dice roll of one power dice by 1 (either up or down) when casting spells once per turn.]
 
-The model carrying this item may adjust the dice roll of one power dice by 1 (either up or down) when casting spells once per turn.
+#arcane-item("CHIME OF HARMONY", 25)[The bearer of this item may re-roll failed casting rolls, as long as they are not in Close Combat or have not moved earlier in that turn.]
 
-#namecost("CHIME OF HARMONY", "25 points")
+#arcane-item("SACRED MAGATAMA", 15)[This item allows the bearer to attempt to cast the same spell twice in a single turn if the first attempt fails or is dispelled.]
+]
 
-The bearer of this item may re-roll failed casting rolls, as long as they are not in Close Combat or have not moved earlier in that turn.
+#magic-item-section("enchanted")[
+#enchanted-item("CURSE OF THE MIDNIGHT FLIES", 35, one-use: true)[The character may use the Curse of the Midnight Flies in the Shooting phase. It has a range of 24" and causes 3D6 automatic Strength 3 hits.]
 
-#namecost("SACRED MAGATAMA", "15 points")
+#enchanted-item("FAN OF COMMAND", 35, only: "Daimyo or Taisho")[Once per game, the bearer and any unit they are with may make a free reform in the beginning of the Movement phase. In addition, they automatically pass any test to reform, march and restrain from pursuit.]
 
-This item allows the bearer to attempt to cast the same spell twice in a single turn if the first attempt fails or is dispelled.
+#enchanted-item("DRAGON PEARL", 25)[At the start of the close combat phase, the bearer may transform this item into an exact copy of any enemy magic item in base contact, retaining all of its abilities for as long as it stays in base contact.]
 
-#entry("ENCHANTED ITEMS")
-#namecost("CURSE OF THE MIDNIGHT FLIES", "35 points")
+#enchanted-item("DRUM OF WATER", 25)[The bearer and any unit they are with gains the Devastating Charge special rule.]
 
-One use only. The character may use the Curse of the Midnight Flies in the Shooting phase. It has a range of 24" and causes 3D6 automatic Strength 3 hits.
+#enchanted-item("SERENITY LANTERNS", 25)[The bearer and any unit in base contact with them gains the Immunity (Psychology) special rule. In addition, they lose any Hatred or Frenzy special rule they might have while they remain in base contact.]
 
-#namecost("FAN OF COMMAND", "35 points")
+#enchanted-item("JADE MIRROR", 20)[The bearer gains the Inspiring Presence (6) special rule. However, if they flee for any reason, other friendly units may not use their Leadership at all for the remainder of the game.]
 
-Daimyo or Taisho only. Once per game, the bearer and any unit they are with may make a free reform in the beginning of the Movement phase. In addition, they automatically pass any test to reform, march and restrain from pursuit.
+#enchanted-item("MANTLE OF FIRE", 20)[The wearer gains +1 To Wound with their Close Combat attacks.]
 
-#namecost("DRAGON PEARL", "25 points")
+#enchanted-item("MEISHODO AMULET", 20)[At the start of each of your turns, the bearer of this item may increase one characteristic of their choosing by +1 by passing a Leadership test. This bonus lasts until the start of your next turn.]
 
-At the start of the close combat phase, the bearer may transform this item into an exact copy of any enemy magic item in base contact, retaining all of its abilities for as long as it stays in base contact.
+#enchanted-item("BONSAI PINE OF IUCHI RAMATSU", 10)[This item may be used at the start of any of your turns. When activated, the bearer and any unit they are with halve their Line of Sight value (rounded down, to a minimum of 1). They may return to their normal Line of Sight value at the start of any of your turns.]
 
-#namecost("DRUM OF WATER", "25 points")
+#enchanted-item("BRASS GONG OF OTAKU MASERO", 10)[All friendly units within 12" of the bearer gain +1 to their Leadership when taking Rally tests.]
+]
 
-The bearer and any unit they are with gains the Devastating Charge special rule.
+#magic-item-section("standard")[
+#magic-standard("IMPERIAL STANDARD", 55)[The bearer gains the Hold Your Ground (6) special rule. In addition, the unit carrying it gains +D3 to their combat resolution.]
 
-#namecost("SERENITY LANTERNS", "25 points")
+#magic-standard("MIRUMOTO'S BATTLE STANDARD", 50)[The unit carrying this standard adds +1 To Hit and To Wound in the first round of close combat.]
 
-The bearer and any unit in base contact with them gains the Immunity (Psychology) special rule. In addition, they lose any Hatred or Frenzy special rule they might have while they remain in base contact.
+#magic-standard("ANCESTRAL WAR STANDARD", 40)[All combats with at least one friendly unit involved within 6" of the unit carrying the banner receive +1 to their combat resolution bonus.]
 
-#namecost("JADE MIRROR", "20 points")
+#magic-standard("BANNER OF AMATERASU", 35)[The unit carrying this standard take all Break tests using a single D6. This cannot be combined with Death Before Dishonour.]
 
-The bearer gains the Inspiring Presence (6) special rule. However, if they flee for any reason, other friendly units may not use their Leadership at all for the remainder of the game.
+#magic-standard("STANDARD OF THE VERMILLION BIRD", 30)[All friendly Wizards within 12" of this standard gain +1 to cast spells.]
 
-#namecost("MANTLE OF FIRE", "20 points")
+#magic-standard("STANDARD OF THE IRON CRANE", 30)[The unit carrying this standard gains the Dodge (6+) special rule.]
 
-The wearer gains +1 To Wound with their Close Combat attacks.
-
-#namecost("MEISHODO AMULET", "20 points")
-
-At the start of each of your turns, the bearer of this item may increase one characteristic of their choosing by +1 by passing a Leadership test. This bonus lasts until the start of your next turn.
-
-#namecost("BONSAI PINE OF IUCHI RAMATSU", "10 points")
-
-This item may be used at the start of any of your turns. When activated, the bearer and any unit they are with halve their Line of Sight value (rounded down, to a minimum of 1). They may return to their normal Line of Sight value at the start of any of your turns.
-
-#namecost("BRASS GONG OF OTAKU MASERO", "10 points")
-
-All friendly units within 12" of the bearer gain +1 to their Leadership when taking Rally tests.
-
-#entry("MAGIC STANDARDS")
-#namecost("IMPERIAL STANDARD", "55 points")
-
-The bearer gains the Hold Your Ground (6) special rule. In addition, the unit carrying it gains +D3 to their combat resolution.
-
-#namecost("MIRUMOTO'S BATTLE STANDARD", "50 points")
-
-The unit carrying this standard adds +1 To Hit and To Wound in the first round of close combat.
-
-#namecost("ANCESTRAL WAR STANDARD", "40 points")
-
-All combats with at least one friendly unit involved within 6" of the unit carrying the banner receive +1 to their combat resolution bonus.
-
-#namecost("BANNER OF AMATERASU", "35 points")
-
-The unit carrying this standard take all Break tests using a single D6. This cannot be combined with Death Before Dishonour.
-
-#namecost("STANDARD OF THE VERMILLION BIRD", "30 points")
-
-All friendly Wizards within 12" of this standard gain +1 to cast spells.
-
-#namecost("STANDARD OF THE IRON CRANE", "30 points")
-
-The unit carrying this standard gains the Dodge (6+) special rule.
-
-#namecost("BANNER OF THE ROARING TEMPEST", "15 points")
-
-The unit carrying this standard counts as having one more rank than normal for the purposes of rank bonus. Note that the unit must have at least one complete rank.
+#magic-standard("BANNER OF THE ROARING TEMPEST", 15)[The unit carrying this standard counts as having one more rank than normal for the purposes of rank bonus. Note that the unit must have at least one complete rank.]
+]
 
 = CHARACTERS
 
