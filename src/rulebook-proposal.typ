@@ -5370,3 +5370,227 @@ The rules that reconcile two profiles want rewriting rather than adjusting. Cava
 *What the chart becomes.* Today it crosses Weapon Skill with Weapon Skill: equal numbers hit on 4+, an advantage hits on 3+, and more than double hits on 2+. Under this it crosses Melee Attack with Melee Defence and reads exactly the same way. What changes is that the two numbers are drawn from different columns of the profile, so a model may be good at one and poor at the other.
 
 *Where it pays.* A Skink is Weapon Skill 2 and a Saurus Warrior Weapon Skill 3, and the difference is meant to be that the Saurus was spawned to fight and the Skink was not. Today that also makes the Skink easier to hit, which is not what anybody was describing. Give it a low Melee Attack and a respectable Melee Defence and it becomes the thing the artwork shows: quick, hard to pin down, and feeble when it does connect.
+
+#namecost("Rider and mount should not add their hides together", "under discussion")
+
+The line letting a rider's and a mount's armour saves combine would become two rules. On Cavalry and Monstrous Cavalry the model would take the better of the two base saves and add equipment to it as normal. On a ridden monster the mount's Natural Armour would be the base, and the rider's own protection would carry over at half rate: one step of improvement for every two steps the rider would have on foot.
+
+#field("Why", "")
+
+The paragraph disagrees with itself in consecutive sentences. One says that when attacking a Cavalry model you always use the highest Weapon Skill, Toughness and Wounds of rider or mount. The next says that if both have armour saves, these may be combined. Three characteristics take the better of the two and the fourth adds them together, and nothing anywhere says why the save is different.
+
+It also reaches the ceiling before the player has bought anything. A Saurus Oldblood has Natural Armour 5+ of his own and a Carnosaur has 4+, and combining those on the reading the armour table implies, where a 6+ is worth one step and a 4+ three, puts an Oldblood who has bought no equipment at all on a 2+ the moment he is mounted.
+
+That the book never works this example is half the complaint: it says the saves may be combined as normal and nowhere says what normal is when two save values meet. The light armour and the shield he may then purchase change nothing whatever, because no save can be better than 2+ and he is already there. A rule that makes defensive equipment worthless on precisely the models that can most afford it is not doing the job it was written for.
+
+Half effect keeps the idea and loses the ceiling. A man in armour behind a scaled skull really is better protected than either alone, which is why taking the better of the two and discarding the rest reads badly. Carrying the rider across at half rate says the same thing without letting two hides finish the arithmetic on their own.
+
+#field("The argument against", "")
+
+It is a conversion table where there is currently one sentence, and it lands on the entries that already take longest to write down. Every monster-mounted character in the game would have a small sum to do at list-building time.
+
+It is also a quiet reduction to every such character in thirty-two books at once, and those entries were priced with the stacked save in place. Taking the save down a step without revisiting the points takes value off models nobody complained about.
+
+#field("What it would take", "")
+
+One sentence in the Cavalry troop-type rules replaced by two, and a six-row conversion table beside them. Monstrous Cavalry and Chariots read the same sentence, so they are covered by the first of the two rules and want checking rather than rewriting.
+
+The points on monster-mounted characters want revisiting afterwards. The saving throw is most of what those models are paying for.
+
+#field("For example", "")
+
+*The conversion, for a ridden monster.* Work out what the rider's save would be on foot, count its steps, and give the mount one step of Natural Armour for every two, rounding down.
+
+#minitable(("Rider's save on foot", "Steps"), ("No save", "0", "6+", "1", "5+", "2", "4+", "3", "3+", "4", "2+", "5"))
+
+Every two rider steps improve the mount's Natural Armour by one. The result is capped at 2+, as any save is.
+
+*What it changes.* A Saurus Oldblood on a Carnosaur saves on 2+ today, and still saves on 2+ if he buys nothing, because his own 5+ hide and the Carnosaur's 4+ reach the cap between them. Under this he starts on 3+, since his bare 5+ is two steps and half of that is one. Buying the light armour and the shield takes his foot save to 3+, which is four steps, worth two to the Carnosaur, and he arrives at 2+ having paid for it. Same ceiling, reached by spending rather than by mounting.
+
+#namecost("Cap the To Wound chart at a flat 6+", "under discussion")
+
+The To Wound chart's two-roll boxes would go, and so would its three boxes that permit no roll at all. Anything a model can hurt, it would hurt on a 6. Twenty-eight of the chart's hundred boxes collapse from a 6 followed by a second die to a single 6, and three that currently forbid the attempt become a 6 like the rest.
+
+#field("Why", "")
+
+Poisoned Attacks is a +1 To Wound modifier, and its own rule adds that armour saves are still modified by the Strength of the attack as normal. A +1 Strength bonus moves the same single step on this chart and improves the armour modifier as well, so the poison is a Strength bonus with the useful half taken out. Counted across the chart there is nowhere it is the better of the two: in eighty-eight boxes the two are identical for wounding, in two the poison is worse, and in none is it better.
+
+Capping the chart is what gives it somewhere to be the right answer. Once the high-Toughness boxes are a flat 6, another point of Strength stops improving the roll there while a To Wound modifier still does, and the poison becomes the better buy in twenty-eight of them. Those twenty-eight are exactly the corner where a thing is too tough for weight of blow to matter, which is what poison was always supposed to be for.
+
+The chart's other oddity is that it asks for a roll it has already decided. Three boxes permit no attempt whatever, so the dice never leave the hand and the modifier on the attack has nothing to modify.
+
+#field("The argument against", "")
+
+Toughness would stop scaling precisely where the largest creatures live. Under this a Strength 2 attack wounds Toughness 4 and Toughness 9 on the same 6, so the gap between a tough monster and an enormous one closes entirely against massed weak attacks, which is the one thing the biggest creatures are least able to answer. The two-roll band is ugly, but it is what currently makes Toughness above 5 worth paying for, and this removes it without putting anything in its place.
+
+#field("What it would take", "")
+
+One chart, with twenty-eight boxes rewritten and three filled in, and the paragraph explaining how a modifier applies to the second roll deleted along with the second roll itself. No other rule changes wording. Monsters priced on being nearly unwoundable by rank and file want revisiting, and that is the real bill.
+
+#field("For example", "")
+
+*What the numbers do.* The three cases that show the range of the change:
+
+#minitable(("Attack", "Today", "Capped"), ("Strength 3 against Toughness 6", "6 then 2+, 13.9%", "6+, 16.7%", "Strength 1 against Toughness 8", "6 then 6+, 2.8%", "6+, 16.7%", "Strength 1 against Toughness 9", "no attempt permitted", "6+, 16.7%"))
+
+And what it does for the modifier: as the chart stands there is no target anywhere against which Poisoned Attacks is a better buy than a point of Strength. Capped, it becomes the better buy in twenty-eight boxes, every one of them in the corner where another point of Strength has stopped helping.
+
+#namecost("Swiftstride should extend the charge, not only insure it", "under discussion")
+
+Swiftstride would roll an additional D6 and discard the lowest, in place of re-rolling 1s. The clause requiring every model in the unit to have the rule would also ignore joined characters, so an attached character stops switching it off for the regiment he is trying to help.
+
+#field("Why", "")
+
+Re-rolling 1s is two throws pretending to be one. You roll, look for 1s, pick those dice back up and throw again, and the charge is not settled until the second throw lands. Rolling three dice and setting the lowest aside is one throw and one glance, nothing conditional about it, and the same motion every time. That is the whole of the case for it.
+
+It also does more of what the rule is named for. Re-rolling 1s has all but removed the hopeless charge already, but it barely moves the long one; discarding the lowest of three lifts a charge of 9 inches or more from a third of the time to better than half, so a fast unit threatens ground its neighbours cannot.
+
+The other half is a trap the book has already patched once and only once. Swiftstride is never issued by a troop type, only by a unit's own entry, so a fast regiment loses the rule outright the moment a character without it joins. The Mixed Unit rule saw this coming and says that Expendable, Swiftstride and Vanguard carry across to a unit's handlers. Nothing extends the same courtesy to a joined character, who is the far commoner case.
+
+#field("The argument against", "")
+
+The measured gap is two thirds of an inch on the mean, which is not obviously worth changing a rule that thirty-two books already print, and it puts a third die on the table for every charge a fast unit makes. The character clause also wants care rather than deletion: ignoring joined characters is right, but a rule that simply asked whether any model in the unit had Swiftstride would let one attached rider make a regiment of infantry fleet, which is a worse trap than the one being fixed.
+
+#field("What it would take", "")
+
+Two sentences in one special rule, and nothing else in the rulebook. Every Swiftstride unit in the corpus charges about two thirds of an inch further on average and reaches a long charge half the time rather than a third, so cavalry-forward lists get a slightly surer opening strike and want watching before anything is repriced.
+
+#field("For example", "")
+
+*The three charges compared.* A 2D6 charge roll, before the unit's Movement is added:
+
+#minitable(("Charge roll", "Mean", "4 or less", "9 or more"), ("Ordinary charge, 2D6", "7.0", "16.7%", "27.8%", "Swiftstride as written", "7.8", "6.0%", "37.8%", "Extra die, lowest discarded", "8.5", "5.1%", "52.3%"))
+
+The middle row is why this is a change of purpose rather than a fix. Re-rolling 1s has all but solved the disastrous roll already, and the column it leaves alone is the one that decides whether a fast unit gets to pick its fight.
+
+#namecost("Characters should shape the army, not only fight in it", "under discussion")
+
+Generic characters would carry more rules that change what the army may take and how the units around them behave, and lean correspondingly less on their own combat characteristics and magic item allowance. The mechanisms all exist already. They are simply reserved almost entirely for special characters, and this would move the family down to the entries that every list actually buys.
+
+#field("Why", "")
+
+The reservation is near total, and it measures cleanly. Rules that let a character change the composition of a list, by unlocking a unit or moving a choice between Core, Special and Rare, appear twenty-seven times in the Special Characters chapters of the thirty-two army books and once in all their generic character sections put together.
+
+The exception is the Empire's Masters of the Knightly Orders, whose Master of Battle rule upgrades one unit of Knights for each character carrying it. Everywhere else, buying a named model reshapes the army and buying a generic lord buys a statline and a shopping allowance.
+
+That is the wrong way round, because the generic lord is the one nearly every list fields. He is also the reason lists of different armies play alike: strip the special characters out and what remains is a fighter with items, whose presence changes where the damage lands and nothing else about how the army is built.
+
+#field("The argument against", "")
+
+Composition rules are where list-building degenerates fastest, and the special characters are gated precisely because those rules are strong. Spreading them across every generic entry multiplies the combinations by the number of lords in each book rather than by the handful of named ones, and each is a licence somebody will optimise.
+
+There is also an opposite failure waiting. A character bought purely for an aura, parked behind a hill and never risked, is duller than a character bought to fight. Shifting weight from the statline to the effect has to keep him worth putting in front of something.
+
+#field("What it would take", "")
+
+This is a direction rather than an edit, and the bill is every character section in thirty-two books, with the points moving on all of them. Nothing needs inventing: the shapes are already written and only need spreading.
+
+#field("For example", "")
+
+*The four shapes already in the books.* Every one of these is a character rule that changes something other than the character:
+
+#minitable(("Rule", "Book", "What it changes"), ("Master of Battle", "Empire", "One unit of Knights per character carrying the rule may be upgraded to Inner Circle", "Big 'Uns", "Orcs & Goblins", "One unit per Warboss may be upgraded, and moves from Core to Special", "Army of Kroq-Gar", "Lizardmen", "A list he leads may take Saurus Cold One Riders as a Core choice", "Prophet of Sotek", "Lizardmen", "Six different unit entries may be upgraded to Red Crested Skinks"))
+
+Three of those four belong to named models. Only the first is available to a list that has not spent its points on a character out of the story, and it is the one worth copying: it keys off a rule rather than a name, so any entry in any book could be given it.
+
+#namecost("Take the common magic items out of the rulebook", "under discussion")
+
+The eighty-two magic items the rulebook offers to every army would go, and each army book's own list would grow to cover the ground they leave. A magic item would then always be something a particular army has, rather than something anybody may buy.
+
+#field("Why", "")
+
+The common list is the reason a Dwarf and a Dark Elf can carry the same sword. Nineteen arcane items, eighteen weapons, fourteen suits of armour, twelve standards, ten talismans and nine enchanted items sit in the rulebook, available to all thirty-two armies at once, and they are the least characterful things any of those armies can spend points on.
+
+The books are already carrying the weight without it. Thirty of them print magic items of their own, seventeen hundred and ten in total, a median of fifty-four to a book. The common list is not filling a gap; it sits on top of lists that were already long enough to choose from.
+
+An item anyone may take cannot say anything about the army taking it, so it competes on efficiency alone and wins on efficiency alone. A faction item competes on what it does for that faction's plan, which is the argument a magic item ought to be having.
+
+#field("The argument against", "")
+
+The common list is the shared vocabulary. A player who has learned what one of those items does has learned it for every game against every opponent, and thirty-two divergent lists is thirty-two things to look up instead of one. Removing it makes every army harder to read across the table.
+
+It is also the safety net under the thinner books, and they are thinner than the median suggests. The Dwarfs print nineteen items of their own against a median of fifty-four, so deleting the common list costs some armies a large share of everything they could buy. This is not one change; it is thirty small commissions.
+
+#field("What it would take", "")
+
+The casualty easiest to miss is the asterisk. Twenty-nine of the eighty-two common items are marked as takeable in multiples, and only fourteen of the thirty books print an asterisked item of their own. Delete the common list as it stands and sixteen armies lose the ability to field any magic item in multiples whatever, so the asterisk has to be redistributed in the same pass.
+
+#field("For example", "")
+
+*Where the items actually are.* Counted from the books themselves:
+
+#minitable(("Source", "Items", "Takeable in multiples"), ("The rulebook, open to every army", "82", "29", "The thirty books' own lists", "1,710", "80", "Dwarfs, the shortest list", "19", "0", "Orcs & Goblins, the longest", "120", "1"))
+
+Sixteen of the thirty books print no asterisked item at all. For those armies, every magic item that may be taken more than once today comes out of the list this proposal deletes, which is why the asterisk cannot be left until afterwards.
+
+#namecost("Losing a fight should not always cost the unit", "talking point")
+
+A beaten unit would give ground rather than break: fall back in good order, keep its formation, and fight on. Breaking and being run down would become the exception rather than the ordinary result of losing a round. This is the shape of the change and not a specification, because the text it comes from is not in this project.
+
+#field("Why", "")
+
+As it stands the break test is binary and terminal. Pass and you hold, fail and you flee, and a pursuer who catches you removes the unit from the game. The most decisive moment in a battle is one 2D6 roll against a Leadership already reduced by the combat result.
+
+That makes a lost round and a lost unit the same event. A regiment that was pushed back hard, but was never actually broken in any sense a spectator would recognise, is gone. Giving ground as the normal outcome puts a losing fight back into the game instead of ending it.
+
+#field("The argument against", "")
+
+The current cycle is fast, decisive, and the reason manoeuvre pays. Breaking and pursuing is what makes a flank charge worth setting up and cavalry worth fielding; if losing costs ground rather than the unit, a deep block can simply grind, and the payoff for playing well shrinks.
+
+It also pulls on more threads than it looks. Steadfast exists precisely to stop a big unit breaking, Fear pays out in combat resolution, and victory points are scored for units destroyed and standards taken. Change the consequence of losing and all three want revisiting.
+
+#field("What it would take", "")
+
+Unknown until the source wording is to hand, and that is the honest position. What has to be decided is a short list: how far a beaten unit gives ground, whether the winner may follow up or must, what happens when the fall-back is blocked by friends or terrain, whether breaking survives at all for a badly lost combat, and what becomes of Steadfast once holding the line is no longer the only alternative to routing.
+
+#field("For example", "")
+
+*The numbers this ruleset would reach for.* If it were built from what is already here rather than imported, the distance would be the combat result difference in inches, capped at the unit's Movement, with the winner choosing to follow up or hold. That uses only quantities the combat phase already computes, and it makes a heavy loss push further than a narrow one without adding a roll. Whether it matches the wording being borrowed is exactly the open question.
+
+
+#namecost("Monsters should be designed around a role", "talking point")
+
+The umbrella over the three monster proposals above. Each monster would be given a role, that role would be stated in its rules and its statline, and its points and its army list slot would then follow from the role rather than from being generally alarming.
+
+#field("Why", "")
+
+Eighty-four of the hundred and forty-four monsters are Rare. A monster that is good against everything has to be priced and rationed as though it were, which is why so many of them are never fielded. A monster whose entry says what it is for can be cheaper, or Special rather than Rare, and frightening in the one thing it does.
+
+The three proposals above are the mechanisms and not the change. The weapon profile is where a role gets printed; the two rival stomp proposals are the two ways of stopping every monster trampling identically. What none of them proposes is the second half: once the role is stated, the statline, the price and the slot all move to match it.
+
+#field("The argument against", "")
+
+A hundred and forty-four entries, every one a judgement rather than a calculation, and no way to check the answer except by playing it. It is the largest piece of work on this shelf by a wide margin.
+
+It also cannot be done a book at a time without the corpus contradicting itself for as long as it takes, and a half-converted set of monsters is worse than either end state.
+
+#field("What it would take", "")
+
+Open questions before anything is drafted: whether roles come from a fixed vocabulary or are written freehand per monster, whether the re-stat may touch Wounds and Toughness or only the offensive half, and whether the Rare-to-Special moves happen in the same pass or afterwards. Chariots are out of scope by decision. Monster Impact Hits are in.
+
+#field("For example", "")
+
+*The pair that prompted it.* A Carnosaur and a Stegadon are both Monsters, both sit at Line of Sight 5, and both therefore trample everything on the table for exactly the same D6. One is an ambush predator that hunts big prey and the other is a walking fortress with a crew on its back. Nothing in either entry says so, and no amount of adjusting the stomp number alone will make them play differently.
+
+
+#namecost("The magic phase, in pieces", "talking point")
+
+Not a proposal but a decomposition. Redoing magic is six separable arguments wearing one name, and this sets them out so they can be taken one at a time. Nothing here proposes an answer to any of them.
+
+#field("Why", "")
+
+Bundled together they cannot be voted on. Agreeing with four of the six and objecting to two means voting against the lot, so a single motion to redo magic is a motion that can only fail. Split, each piece is small enough to argue and small enough to try.
+
+The six: how much power a phase has and whether it should be random at all; Wizard Level, which currently sets spells known, spells available, dice per attempt and the casting bonus; whether casting and dispelling stay one opposed roll; Ultimate Power and the miscast, where natural 6s cascade free dice and two 1s roll the same table whatever was being cast; which lores an army reaches and how a spell is chosen; and the items and bound spells that add dice or bonuses on top.
+
+#field("The argument against", "")
+
+Splitting has its own cost. Several of these only mean anything together, and capping the winds while leaving Ultimate Power untouched changes the phase very little. A piecemeal set of votes can arrive at a combination nobody would have designed on purpose.
+
+#field("What it would take", "")
+
+Nothing until a piece is picked, at which point it becomes a proposal of its own with the usual argument on both sides.
+
+#field("For example", "")
+
+*The piece most ready to be written* is Wizard Level, because the argument already exists twice on this shelf. Splitting armour penetration out of Strength and splitting Weapon Skill into attack and defence both say that one number answering several questions can be tuned for none of them. Wizard Level answers four. Whether that makes it the right place to start or merely the easiest is worth deciding before anyone drafts it.
