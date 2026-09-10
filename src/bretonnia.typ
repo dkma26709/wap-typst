@@ -164,8 +164,7 @@ The Knight (and any unit he has joined) gains the Cold-Blooded special rule.
 
 The Knight gains the following bonuses to his profile: +2 Weapon Skill, +1 Initiative, +1 Attack. He may not be the army's General and any friendly unit (including other Knightly characters, or units using a Knight's Leadership) taking any form of Leadership test within 6" of this model suffers a \-1 penalty to their Leadership.
 
-#namecost("VIRTUE OF THE IMPETUOUS", "")
-#namecost("KNIGHT", "30 points")
+#namecost("VIRTUE OF THE IMPETUOUS KNIGHT", "30 points")
 
 The Knight, and any mounted unit he is with, adds +D3" to their charge distance.
 
@@ -469,8 +468,7 @@ One use only. The Twilight Banner can be used at the start of any of your Moveme
 
 A unit carrying the Valorous Standard gains the Cold- Blooded special rule.
 
-#namecost("BANNER OF HONOURABLE", "")
-#namecost("WARFARE", "15 points")
+#namecost("BANNER OF HONOURABLE WARFARE", "15 points")
 
 A unit carrying the Banner of Honourable Warfare may re-roll any failed rolls To Hit during the first round of close combat when engaged with an enemy equipped with any missile weapons.
 

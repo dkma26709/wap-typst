@@ -239,8 +239,7 @@ The Helm gives the bearer a 6+ armour save and the Fear special rule. In additio
 
 Medium armour. Once each turn, at any time during the turn, including before or after moving, the wearer of the Armour of the Wind Fortress may be placed anywhere within 6" of their initial position. The model may be placed facing any direction at its new location. This ability may not be used to enter or leave combat.
 
-#namecost("SHIELD OF THE INHOSPITABLE", "")
-#namecost("STEPPES", "30 points")
+#namecost("SHIELD OF THE INHOSPITABLE STEPPES", "30 points")
 
 Shield. Enemy models attempting to strike the bearer in close combat suffer a \-1 penalty to their Weapon Skill and Strength.
 
@@ -360,8 +359,7 @@ A unit carrying this magic standard has the Hatred and Fear special rules.
 
 All enemy units within charge range of this unit at the start of their Compulsory Moves sub-phase must pass a Leadership test or be forced to declare a charge against it. This has no effect on models with Immunity (Psychology).
 
-#namecost("STANDARD OF THE DEVOURING", "")
-#namecost("WOLF", "30 points")
+#namecost("STANDARD OF THE DEVOURING WOLF", "30 points")
 
 The unit carrying this standard gains the Devastating Charge special rule.
 

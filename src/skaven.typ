@@ -605,8 +605,7 @@ All enemy units within 12" of this standard suffer a \-1 penalty to their Leader
 
 One use only. This standard can be activated at the beginning of any player's turn. Within 24" of this standard, no model may use the Fly special rule and units are at \-2 to be Hit with non-magical missile attacks. All non-magical missile attacks that do not use Ballistics Skill to hit need to roll a 4+ on a D6 before they can attempt to fire if they are within 24" of the banner. Roll a D6 at the beginning of each following player turn – the effects of the banner will end on a D6 roll of 4+.
 
-#namecost("ICON OF GREAT-TOTAL", "")
-#namecost("SUPREMACY", "35 points")
+#namecost("ICON OF GREAT-TOTAL SUPREMACY", "35 points")
 
 At the start of each of your turns, the unit carrying this standard regains D3 Infantry models slain previously during the game, just like a *summoning* spell.
 
@@ -614,8 +613,7 @@ At the start of each of your turns, the unit carrying this standard regains D3 I
 
 The unit carrying this standard gains a Magical Ward (4+) against non-magical missiles with Strength 4 or less.
 
-#namecost("GRAND BANNER OF CLAN", "")
-#namecost("SUPERIORITY", "30 points")
+#namecost("GRAND BANNER OF CLAN SUPERIORITY", "30 points")
 
 The unit carrying this standard gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.
 
@@ -643,13 +641,11 @@ The unit carrying this standard gains the Hatred special rule against all Dwarfs
 
 The unit carrying this standard gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.
 
-#namecost("BANNER OF THE FOUR BLACK", "")
-#namecost("WINDS", "10 points")
+#namecost("BANNER OF THE FOUR BLACK WINDS", "10 points")
 
 Enemies cannot use the Fly special rule to charge the unit carrying this standard.
 
-#namecost("BANNER OF VERMINOUS", "")
-#namecost("SCURRYING", "10 points")
+#namecost("BANNER OF VERMINOUS SCURRYING", "10 points")
 
 The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move.
 

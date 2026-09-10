@@ -214,8 +214,7 @@ The unit is armed with polearms & shields instead of heavy lances. The models (b
 *This section contains the rules for some of the most iconic and powerful magical artefacts used by the Empire. These may be used in addition to the magic items found in the Warhammer rulebook.*
 
 #entry("MAGIC WEAPONS")
-#namecost("BEAST SLAYER, THE DRAKWALD", "")
-#namecost("RUNEFANG", "60 points")
+#namecost("BEAST SLAYER, THE DRAKWALD RUNEFANG", "60 points")
 
 General only. All hits from the Runefang wound automatically and Ignores Armour saves.
 
@@ -235,8 +234,7 @@ At the beginning of the battle, nominate one enemy Character, Monstrous Creature
 
 This weapon gives the wielder the Hatred (Undead, Vampires) special rule. In addition, no Undead or Vampires may take armour or Regeneration saves against it.
 
-#namecost("VON TRICKSCHOTTE'S WONDROUS", "")
-#namecost("ARQUEBUS", "30 points")
+#namecost("VON TRICKSCHOTTE'S WONDROUS ARQUEBUS", "30 points")
 
 Hochland long rifle. This weapon has the following profile:
 
@@ -299,8 +297,7 @@ Shield. At the start of each round of close combat, the Shield of the Gorgon cau
 
 Sigmarite only. This item gives the bearer the Magical Ward (5+) special rule. In addition, they and any unit they join gain the Immunity (Fear, Terror) and Magic Resistance (2) special rules.
 
-#namecost("AMULET OF THRICE-BLESSED", "")
-#namecost("COPPER", "35 points")
+#namecost("AMULET OF THRICE-BLESSED COPPER", "35 points")
 
 All enemy attacks targeting the model wearing the Amulet of Thrice-Blessed Copper suffer \-1 To Wound. In addition, the bearer gains the Immunity (Poisoned Attacks) special rule.
 
@@ -451,13 +448,11 @@ Model on foot only. The model wearing the Boots of Boova gains the Stomp (D3) sp
 
 Sigmarite only. The Icon of Magnus gives the bearer and any unit they are with the Immunity (Terror) special rule.
 
-#namecost("POWDERS OF THRICE-DAMNED", "")
-#namecost("OSSK*", "15 points")
+#namecost("POWDERS OF THRICE-DAMNED OSSK*", "15 points")
 
 Witch Hunter only. One use only. The Powders may be used immediately when an enemy Wizard miscasts. The Wizard must roll twice on the Miscast table, and you pick which result is used.
 
-#namecost("RELIQUARY OF LECTOR", "")
-#namecost("OSTRANALD", "15 points")
+#namecost("RELIQUARY OF LECTOR OSTRANALD", "15 points")
 
 Sigmarite only. Each time the bearer's unit suffers unsaved Wounds from a spell, the first D3 unsaved Wounds are absorbed by the Reliquary and have no effect (unsaved Wounds with the Multiple Wounds special rule still only count as one).
 
@@ -475,8 +470,7 @@ At the start of the game, roll a D6 and consult the chart below to determine whi
 
 Master Engineer only. The bearer may re-roll failed rolls To Hit with missile weapons (excluding artillery).
 
-#namecost("VON MECKLENBURG'S", "")
-#namecost("ENCHANTED SHOT*", "10 points")
+#namecost("VON MECKLENBURG'S ENCHANTED SHOT*", "10 points")
 
 Witch Hunter with pistol(s) or handgun only. Any shots fired from the bearer's weapons have the Magical Attacks special rule and automatically Wounds.
 
@@ -496,8 +490,7 @@ At the end of any close combat in which a Monstrous Infantry, Monstrous Beast, M
 
 Witch Hunter with pistol(s) or handgun only. Any shots fired from the bearer's weapons have the Multiple Wounds (D3) special rule against Daemons, Undead and Vampires.
 
-#namecost("BANNER OF THE KNIGHTS", "")
-#namecost("PANTHER", "40 points")
+#namecost("BANNER OF THE KNIGHTS PANTHER", "40 points")
 
 Knights with the Knights Panther upgrade only. A unit with this standard gains the Unbreakable special rule.
 
