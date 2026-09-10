@@ -171,14 +171,15 @@ def front_matter(book: dict, edition: dict | None) -> str:
 '''
 
 
-# The books' own text is an edition like any other, so that it can be the thing
-# selected rather than the absence of a selection.
-BASE = {"slug": "wap", "label": "WAP v3"}
+# --- the pages --------------------------------------------------------------
 
+# One card is one thing a reader can open: an army, one version of it, or one
+# edition. `href` is page-relative, so each page states its own prefix once and
+# no card has to know where it sits.
 CARD = """      <li class="book"{data}>
-        <a href="{id}.pdf">{thumb}</a>
+        <a href="{href}">{thumb}</a>
         <div>
-          <h2><a href="{id}.pdf">{army}</a></h2>
+          <h2><a href="{href}">{title}</a></h2>
           <p>{meta}</p>
         </div>
       </li>"""
@@ -187,29 +188,34 @@ HEAD = """      <li class="head" data-align="{align}">
         <h2>{title}</h2><span>{count} books</span>
       </li>"""
 
-# Re-orders and filters the army grid. The page is built grouped and in source
-# order, so with this switched off it still reads correctly — which is why the
-# controls are revealed here rather than being present in the markup.
-SCRIPT = """
+BUTTON = ('      <button data-group="{group}" data-value="{value}" '
+          'aria-pressed="{pressed}">{label}</button>')
+
+SET = """    <div class="set" role="group" aria-label="{label}">
+{buttons}
+    </div>"""
+
+# Re-orders and filters the army grid, which only the overview has. The page is
+# built grouped and in source order, so with this switched off it still reads
+# correctly - which is why the controls are revealed here rather than being
+# present in the markup. There is no edition control any more: an army's
+# versions are on its own page and the editions have a shelf of their own.
+SCRIPT = """<script>
 const grid = document.getElementById('armies');
 const controls = document.getElementById('controls');
-const core = document.getElementById('core');
 const cards = [...grid.querySelectorAll('.book')];
 const heads = [...grid.querySelectorAll('.head')];
-const coreCards = core ? [...core.querySelectorAll('.book')] : [];
 const alpha = [...cards].sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
-const state = { align: 'all', edition: 'wap', sort: 'grouped' };
+const state = { align: 'all', sort: 'grouped' };
 
 function apply() {
   for (const card of cards) {
-    card.hidden = !((state.align === 'all' || card.dataset.align === state.align)
-                    && card.dataset.edition === state.edition);
+    card.hidden = !(state.align === 'all' || card.dataset.align === state.align);
     card.style.order = '';
   }
-  // A head is dropped when its group has nothing left to show, rather than when
-  // the alignment filter excludes it — two filters can empty a group between them.
-  // Its count follows the filter too, since a band reading "14 books" above four
-  // of them is worse than no count at all.
+  // A head is dropped when its group has nothing left to show. Its count
+  // follows the filter too, since a band reading "14 books" above four of them
+  // is worse than no count at all.
   for (const head of heads) {
     const shown = cards.filter(
       card => !card.hidden && card.dataset.align === head.dataset.align).length;
@@ -217,10 +223,6 @@ function apply() {
     head.querySelector('span').textContent = shown + (shown === 1 ? ' book' : ' books');
   }
   if (state.sort === 'alpha') alpha.forEach((card, i) => { card.style.order = i + 1; });
-
-  // The rulebook has no allegiance, so only the edition filter reaches it.
-  for (const card of coreCards) card.hidden = card.dataset.edition !== state.edition;
-  if (core) core.hidden = coreCards.every(card => card.hidden);
 }
 
 for (const button of controls.querySelectorAll('button')) {
@@ -234,151 +236,10 @@ for (const button of controls.querySelectorAll('button')) {
 }
 controls.hidden = false;
 apply();
+</script>
 """
 
-BUTTON = ('      <button data-group="{group}" data-value="{value}" '
-          'aria-pressed="{pressed}">{label}</button>')
-
-SET = """    <div class="set" role="group" aria-label="{label}">
-{buttons}
-    </div>"""
-
-
-def button_set(label: str, group: str, options: list[tuple[str, str]]) -> str:
-    buttons = "\n".join(
-        BUTTON.format(group=group, value=value, label=html.escape(text),
-                      pressed="true" if n == 0 else "false")
-        for n, (value, text) in enumerate(options)
-    )
-    return SET.format(label=label, buttons=buttons)
-
-
-def controls(editions: list[dict]) -> str:
-    sets = [button_set("Filter by allegiance", "align",
-                       [("all", "All")] + [(s, short) for s, _, _, short in ALIGNMENTS])]
-    # Only worth offering once there is more than the books' own text to choose.
-    if editions:
-        sets.append(button_set(
-            "Filter by edition", "edition",
-            [(BASE["slug"], BASE["label"])]
-            + [(e["slug"], e["label"]) for e in editions]))
-    sets.append(button_set("Order", "sort",
-                           [("grouped", "Grouped"), ("alpha", "A–Z")]))
-    return ('  <div class="controls" id="controls" hidden>\n'
-            + "\n".join(sets) + "\n  </div>")
-
-
-def sort_name(book: dict) -> str:
-    """`The Empire` files under E, as it would on a shelf."""
-    return book["army"].casefold().removeprefix("the ")
-
-
-def card(book: dict, edition: str, ident: str, meta: str,
-         align: str | None) -> str:
-    """One card is one book in one edition. Exactly one edition is always
-    selected, so a card never has to describe more than the one it is."""
-    army = html.escape(book["army"])
-    # An edition shares the cover of the book it derives from, of which the site
-    # holds one copy. Images are copied without re-encoding, so the extension
-    # follows the source rather than being assumed.
-    thumb = '<span class="nothumb"></span>'
-    if book["cover"]:
-        ext = Path(book["cover"]).suffix
-        thumb = (f'<img src="{book["id"]}-cover{ext}" '
-                 f'alt="{army} cover" loading="lazy">')
-    data = f' data-edition="{edition}"'
-    if align:
-        data += (f' data-align="{align}"'
-                 f' data-name="{html.escape(sort_name(book), quote=True)}"')
-    return CARD.format(id=ident, army=army, thumb=thumb, data=data,
-                       meta=html.escape(meta))
-
-
-def cards_for(book: dict, derived: dict[str, list[dict]],
-              align: str | None) -> list[str]:
-    # An authored book's card must not present it as Eliasson's work, and it
-    # may file itself on an edition shelf (e.g. the proposals) rather than
-    # presenting as part of the base WAP text.
-    label = "Original book" if book.get("authored") else f"Version {book['version']}"
-    out = [card(book, book.get("shelf") or BASE["slug"], book["id"],
-                f"{label} · {book['entries']} entries", align)]
-    for e in derived.get(book["id"], []):
-        stamp = f" {e['edition_version']}" if e["edition_version"] else ""
-        # An edition may change the rules, propose changes to them, or both.
-        tally = " · ".join(f"{e[k]} {noun}" + ("s" if e[k] != 1 else "")
-                           for k, noun in (("changes", "change"),
-                                           ("proposals", "proposal"))
-                           if e.get(k))
-        out.append(card(book, e["edition"], e["id"],
-                        f"{e['edition_label']}{stamp} · {tally}", align))
-    return out
-
-
-def page(books: list[dict], derived: dict[str, list[dict]],
-         align: dict[str, str], editions: list[dict], css: str) -> str:
-    rules = [b for b in books if b.get("layout") == "rules"]
-    armies = sorted((b for b in books if b.get("layout") != "rules"), key=sort_name)
-
-    # Built grouped and in source order, so the page is correct before the
-    # script runs; A–Z is a re-ordering of what is already here.
-    rows = []
-    for slug, title, _, _ in ALIGNMENTS:
-        group = [b for b in armies if align[b["id"]] == slug]
-        rows.append(HEAD.format(align=slug, title=title, count=len(group)))
-        for b in group:
-            rows.extend(cards_for(b, derived, slug))
-
-    # The rulebook's entries are sections of prose, not units, so they are not
-    # added to a count the line below calls unit entries.
-    total = sum(b["entries"] for b in armies)
-    count = sum(len(v) for v in derived.values())
-    note = ""
-    if count:
-        note = ("""
-  <p class="note">
-    Some books exist in more than one edition alongside the original: the
-    <strong>house rules</strong> we play, and the <strong>proposals</strong> we
-    are still arguing about. Switch between them with the edition control. What
-    an edition changed — and what it only proposes — is set out in the back of
-    it.
-  </p>""")
-
-    core = ""
-    if rules:
-        core = f"""
-  <section id="core">
-  <h2 class="section">The Rules</h2>
-  <ul class="books core">
-{chr(10).join(c for b in rules for c in cards_for(b, derived, None))}
-  </ul>
-  </section>
-"""
-
-    return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Warhammer Armies Project — typeset editions</title>
-<style>
-{css}</style>
-</head>
-<body>
-<main>
-  <h1>Warhammer Armies Project</h1>
-  <p class="sub">{len(armies)} army books and the core rulebook, {total:,} unit entries, re-typeset with Typst.</p>
-{note}
-{core}
-  <h2 class="section">The Armies</h2>
-{controls(editions)}
-  <ul class="books" id="armies">
-{chr(10).join(rows)}
-  </ul>
-
-  <hr>
-
-  <footer>
-    <p>
+FOOTER = """    <p>
       These are unofficial, non-commercial re-typesettings of the
       <strong>Warhammer Armies Project</strong> army books, written and freely
       distributed by Mathias Eliasson. All rules text, army design and points
@@ -394,14 +255,268 @@ def page(books: list[dict], derived: dict[str, list[dict]],
       places are trademarks of Games Workshop Limited. This site is unofficial
       and unaffiliated, and no challenge to their status is intended.
     </p>
-    <p>Built from Typst sources. Not for sale.</p>
+    <p>Built from Typst sources. Not for sale.</p>"""
+
+PAGE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+{css}</style>
+</head>
+<body>
+<main>
+{body}
+  <hr>
+
+  <footer>
+{footer}
   </footer>
 </main>
-<script>
-{SCRIPT}</script>
-</body>
+{script}</body>
 </html>
 """
+
+
+def button_set(label: str, group: str, options: list[tuple[str, str]]) -> str:
+    buttons = "\n".join(
+        BUTTON.format(group=group, value=value, label=html.escape(text),
+                      pressed="true" if n == 0 else "false")
+        for n, (value, text) in enumerate(options)
+    )
+    return SET.format(label=label, buttons=buttons)
+
+
+def controls() -> str:
+    sets = [button_set("Filter by allegiance", "align",
+                       [("all", "All")] + [(s, short) for s, _, _, short in ALIGNMENTS]),
+            button_set("Order", "sort",
+                       [("grouped", "Grouped"), ("alpha", "A-Z")])]
+    return ('  <div class="controls" id="controls" hidden>\n'
+            + "\n".join(sets) + "\n  </div>")
+
+
+def sort_name(book: dict) -> str:
+    """`The Empire` files under E, as it would on a shelf."""
+    return book["army"].casefold().removeprefix("the ")
+
+
+def version_key(version: str) -> tuple:
+    """Newest first, comparing dotted parts as numbers.
+
+    A string sort puts 3.11 below 3.1, which is wrong for exactly the versions
+    this corpus holds. A part that is not a number sorts below one that is,
+    rather than stopping the build over a version nobody has published yet.
+    """
+    return tuple((int(p), "") if p.isdigit() else (-1, p)
+                 for p in version.split("."))
+
+
+def label_of(book: dict) -> str:
+    """What a version calls itself. Ours are not versions of anybody's book."""
+    return "Original book" if book.get("authored") else f"Version {book['version']}"
+
+
+def plural(n: int, one: str, many: str = "") -> str:
+    """`entrys` reached the page before this took the plural as an argument."""
+    return f"{n} {one if n == 1 else (many or one + 's')}"
+
+
+def card(href: str, title: str, meta: str, cover: str | None,
+         prefix: str = "", data: str = "", alt: str = "") -> str:
+    """`cover` is an id, which is also where its art sits beside its PDF.
+
+    `alt` describes the art, which is the army's, and so is not always what the
+    card is titled - an edition's card is headed by the edition.
+    """
+    thumb = '<span class="nothumb"></span>'
+    if cover:
+        thumb = (f'<img src="{prefix}{cover}" '
+                 f'alt="{html.escape(alt or title)} cover" loading="lazy">')
+    return CARD.format(href=f"{prefix}{href}", title=html.escape(title),
+                       meta=html.escape(meta), thumb=thumb, data=data)
+
+
+def cover_of(book: dict) -> str | None:
+    """The art beside a book's PDF, which CI copies as `<id>-cover<ext>`."""
+    if not book.get("cover"):
+        return None
+    return f'{book["id"]}-cover{Path(book["cover"]).suffix}'
+
+
+def edition_label(book: dict) -> str:
+    """An edition's own version names the set of changes, not the text."""
+    stamp = f" {book['edition_version']}" if book["edition_version"] else ""
+    return f"{book['edition_label']}{stamp}"
+
+
+def edition_tally(book: dict) -> str:
+    """An edition may change the rules, propose changes to them, or both."""
+    return " · ".join(plural(book[k], noun)
+                      for k, noun in (("changes", "change"),
+                                      ("proposals", "proposal"))
+                      if book.get(k))
+
+
+def shell(title: str, body: str, css: str, script: str = "") -> str:
+    return PAGE.format(title=title, body=body, css=css, footer=FOOTER,
+                       script=script)
+
+
+def overview(armies: dict[str, list[dict]], rules: dict[str, list[dict]],
+             align: dict[str, str], derived: dict[str, list[dict]],
+             css: str) -> str:
+    """One card per army, whatever number of versions we hold of it.
+
+    Which is the current one is read from the version numbers rather than
+    declared, so a newly imported book takes its place without being announced.
+    """
+    rows = []
+    for slug, title, _, _ in ALIGNMENTS:
+        group = sorted((v for v in armies.values() if align[v[0]["id"]] == slug),
+                       key=lambda v: sort_name(v[0]))
+        rows.append(HEAD.format(align=slug, title=title, count=len(group)))
+        for versions in group:
+            current = versions[0]
+            meta = (f"{label_of(current)} · "
+                    f"{plural(current['entries'], 'entry', 'entries')}")
+            if len(versions) > 1:
+                meta += f" · {plural(len(versions), 'version')}"
+            rows.append(card(
+                f"{current['slug']}/", current["army"], meta, cover_of(current),
+                data=f' data-align="{slug}"'
+                     f' data-name="{html.escape(sort_name(current), quote=True)}"'))
+
+    core = ""
+    if rules:
+        cards = []
+        for versions in rules.values():
+            current = versions[0]
+            meta = f"{label_of(current)} · {plural(current['entries'], 'section')}"
+            if len(versions) > 1:
+                meta += f" · {plural(len(versions), 'version')}"
+            cards.append(card(f"{current['slug']}/", current["army"], meta,
+                              cover_of(current)))
+        core = f"""
+  <section id="core">
+  <h2 class="section">The Rules</h2>
+  <ul class="books core">
+{chr(10).join(cards)}
+  </ul>
+  </section>
+"""
+
+    ours = sum(len(v) for v in derived.values())
+    shelf = ""
+    if ours:
+        shelf = f"""
+  <p class="note">
+    Some books have an edition of our own beside the original: the
+    <strong>house rules</strong> we play, and the <strong>proposals</strong> we
+    are still arguing about. There are {ours} of them, on
+    <a href="house/">a shelf of their own</a>. What an edition changed - and
+    what it only proposes - is set out in the back of it.
+  </p>"""
+
+    held = sum(len(v) for v in list(armies.values()) + list(rules.values()))
+    entries = sum(v[0]["entries"] for v in armies.values())
+    body = f"""  <h1>Warhammer Armies Project</h1>
+  <p class="sub">{len(armies)} armies and the core rulebook, {held} books
+  between them, {entries:,} unit entries, re-typeset with Typst.</p>
+{shelf}
+{core}
+  <h2 class="section">The Armies</h2>
+{controls()}
+  <ul class="books" id="armies">
+{chr(10).join(rows)}
+  </ul>
+"""
+    return shell("Warhammer Armies Project — typeset editions", body, css,
+                 SCRIPT)
+
+
+def army_page(versions: list[dict], derived: dict[str, list[dict]],
+              css: str) -> str:
+    """Every version of one army, newest first, and our editions of them."""
+    army = versions[0]["army"]
+    kind = (("section", "sections") if versions[0].get("layout") == "rules"
+            else ("entry", "entries"))
+    cards = [card(f'{v["id"]}.pdf', label_of(v), plural(v["entries"], *kind),
+                  cover_of(v), prefix="../", alt=army)
+             for v in versions]
+
+    ours = []
+    for v in versions:
+        for e in derived.get(v["id"], []):
+            after = f" · after {label_of(v).lower()}" if len(versions) > 1 else ""
+            # An edition shares the cover of the book it derives from, of which
+            # the site holds one copy.
+            ours.append(card(f'{e["id"]}.pdf', edition_label(e),
+                             edition_tally(e) + after, cover_of(v),
+                             prefix="../", alt=army))
+    editions = ""
+    if ours:
+        editions = f"""
+  <h2 class="section">Ours</h2>
+  <ul class="books core">
+{chr(10).join(ours)}
+  </ul>
+"""
+
+    order = ", newest first" if len(versions) > 1 else ""
+    body = f"""  <p class="back"><a href="../">All books</a></p>
+  <h1>{html.escape(army)}</h1>
+  <p class="sub">{plural(len(versions), 'version')} re-typeset with Typst{order}.</p>
+
+  <h2 class="section">Versions</h2>
+  <ul class="books core">
+{chr(10).join(cards)}
+  </ul>
+{editions}"""
+    return shell(f"{army} — Warhammer Armies Project", body, css)
+
+
+def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
+               editions: list[dict], css: str) -> str:
+    """Our own editions, on the one page, because they are what we play from.
+
+    A shelf is a section here rather than a filter: there is one version of each
+    of these, so nothing about them wants choosing between.
+    """
+    by_shelf: dict[str, list[tuple[dict, dict]]] = {}
+    for base, group in derived.items():
+        for book in group:
+            by_shelf.setdefault(book["edition"], []).append((book, bases[base]))
+
+    sections = []
+    total = 0
+    for edition in editions:
+        group = sorted(by_shelf.get(edition["slug"], []),
+                       key=lambda pair: sort_name(pair[0]))
+        if not group:
+            continue
+        total += len(group)
+        blurb = f'\n  <p class="note">{html.escape(edition["blurb"])}</p>' if edition.get("blurb") else ""
+        # An edition shares the cover of the book it derives from.
+        cards = [card(f'{b["id"]}.pdf', b["army"],
+                      f"{edition_label(b)} · {edition_tally(b)}",
+                      cover_of(base), prefix="../", alt=b["army"])
+                 for b, base in group]
+        sections.append(f"""
+  <h2 class="section">{html.escape(edition["label"])}</h2>{blurb}
+  <ul class="books core">
+{chr(10).join(cards)}
+  </ul>
+""")
+
+    body = f"""  <p class="back"><a href="../">All books</a></p>
+  <h1>Ours</h1>
+  <p class="sub">{plural(total, 'book')} we have altered or proposed altering.
+  Everything else on this site reproduces its source exactly.</p>
+{"".join(sections)}"""
+    return shell("Ours — Warhammer Armies Project", body, css)
 
 
 # --- reading the books ------------------------------------------------------
@@ -564,7 +679,21 @@ def main() -> None:
 
     css = (ROOT / "site" / "style.css").read_text(encoding="utf-8")
 
-    written, render, owned = [], [], []
+    # An army is the unit the site presents, and a version of it is one book on
+    # that army's own page. Which version is current is read from the numbers
+    # rather than declared, so an imported book takes its place unannounced.
+    armies: dict[str, list[dict]] = {}
+    rules: dict[str, list[dict]] = {}
+    for book in books:
+        shelf = rules if book.get("layout") == "rules" else armies
+        shelf.setdefault(book["slug"], []).append(book)
+    for group in list(armies.values()) + list(rules.values()):
+        group.sort(key=lambda b: version_key(b["version"]), reverse=True)
+
+    # A book's own record, by id, so an edition's card can borrow its cover.
+    bases = {b["id"]: b for b in books}
+
+    render, owned = [], []
     for book in books + [b for base in sorted(derived) for b in derived[base]]:
         # src/ is the catalogue: a book that is there is a book that ships.
         owned.append(book["id"])
@@ -578,15 +707,34 @@ def main() -> None:
     # by hand, a prune can only ever delete somebody's book. It did exactly
     # that once, to nine editions, before this comment replaced it.
 
-    (ROOT / "site" / "index.html").write_text(page(books, derived, align, list(editions.values()), css),
-                                              encoding="utf-8")
+    # One page per army, at the folder its books already publish into, so
+    # /lizardmen/ sits beside /lizardmen/3.0.pdf and the URL says what it holds.
+    pages = {Path("index.html"): overview(armies, rules, align, derived, css)}
+    for group in list(armies.values()) + list(rules.values()):
+        pages[Path(group[0]["slug"]) / "index.html"] = army_page(group, derived, css)
+    if derived:
+        pages[Path("house") / "index.html"] = house_page(
+            derived, bases, list(editions.values()), css)
+
+    # An army called `house` would take the shelf's own address. None is, and
+    # this is the only place that could go unnoticed.
+    clash = set(armies) & {"house"}
+    if clash:
+        raise SystemExit(f"emit: {clash.pop()} collides with the editions shelf "
+                         f"at /house/ - one of them needs a different slug")
+
+    for path, text in pages.items():
+        target = ROOT / "site" / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(text, encoding="utf-8", newline="\n")
+
     (ROOT / "build" / "render.json").write_text(
         json.dumps(render, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     count = sum(len(v) for v in derived.values())
     print(f"{len(owned)} book(s) own their own Typst and were left alone "
           f"({len(books)} books, {count} derived editions)")
-    print("wrote site/index.html and build/render.json")
+    print(f"wrote {len(pages)} page(s) under site/ and build/render.json")
 
 
 if __name__ == "__main__":

@@ -58,12 +58,33 @@ re-extraction that overwrote a book would throw away every edit made since.
 book, escaping the source text as it goes so no PDF prose can be read back as
 Typst syntax.
 
-`emit.py` then reads the books themselves, with `typst eval`, to build the
-landing page and `build/render.json` — the one list the publish workflow walks.
-Each book declares its own allegiance and counts its own entries, so there is no
-manifest to fall out of step with what is on disk. The page can be filtered by
-allegiance and by edition and re-ordered alphabetically; it is built grouped and
-in source order, so it reads correctly before the script runs.
+`emit.py` then reads the books themselves, with `typst eval`, to build the site
+and `build/render.json` — the one list the publish workflow walks. Each book
+declares its own allegiance and counts its own entries, so there is no manifest
+to fall out of step with what is on disk.
+
+## The site
+
+Three kinds of page, because an army is the thing a reader is looking for and a
+version of it is not:
+
+| | holds | address |
+|---|---|---|
+| the overview | one card per army, at its current version | `/` |
+| an army's page | every version of it we hold, newest first, and our editions of them | `/lizardmen/` |
+| the editions' shelf | the house rules and the proposals, all armies together | `/house/` |
+
+An army's page sits in the folder its own books publish into, so `/lizardmen/`
+is beside `/lizardmen/3.0.pdf` and the address says what it holds. Which version
+is the current one is read from the version numbers rather than declared, so an
+imported book takes its place without being announced — `3.11` above `3.1`, which
+a string sort gets backwards.
+
+The overview can be filtered by allegiance and re-ordered alphabetically; it is
+built grouped and in source order, so it reads correctly before the script runs.
+There is no edition filter any more: an army's versions are on its own page, and
+the editions have a shelf of their own, since there is one version of each of
+those and nothing about them wants choosing between.
 
 Only the Typst and the cover art are committed, so CI needs the Typst compiler
 and nothing else — no Python, and never the source PDFs.
@@ -241,6 +262,17 @@ untouched corpus and teaches you to ignore it.
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json
 python extract/welds.py build/lizardmen.json
 python extract/roundtrip.py lizardmen --source "path/to/book.pdf"
+```
+
+A fourth gate is about the site rather than a book. `check_site.py` walks a
+built tree and checks two directions: that every internal link resolves, and
+that every PDF is linked from somewhere. The second is the one worth having —
+a book that compiles and publishes but is named by no page has shipped into a
+corner nobody can reach, which no link check going the other way would notice.
+It cannot see a link that resolves to the *wrong* page.
+
+```bash
+python check_site.py _site
 ```
 
 **What none of them can see** is worth stating plainly, because it has bitten
