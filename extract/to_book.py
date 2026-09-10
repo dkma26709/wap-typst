@@ -330,12 +330,33 @@ def render(data: dict, book: dict, edition: dict | None = None) -> str:
     return chr(10).join(out).strip() + chr(10)
 
 
+ALIGN = re.compile(r'^\s*align:\s*"([^"]+)"', re.M)
+
+
+def inherited_align(slug: str) -> str | None:
+    """The allegiance another version of this army was given.
+
+    A book's allegiance comes from the rulebook's Alliance & Alignment lists
+    rather than from its own text, so a PDF cannot supply it and emit.py refuses
+    a book without one. Where we already hold a version of the army, the answer
+    has been settled once and need not be typed again.
+    """
+    for sibling in sorted((ROOT / "src" / slug).glob("*.typ")):
+        found = ALIGN.search(sibling.read_text(encoding="utf-8"))
+        if found:
+            return found.group(1)
+    return None
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("slug")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
     ap.add_argument("-o", "--out", type=Path,
                     help="defaults to src/<army>/<version>.typ")
+    ap.add_argument("--force", action="store_true",
+                    help="overwrite a book that is already imported, discarding "
+                         "every edit made to it since")
     args = ap.parse_args()
 
     books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
@@ -351,12 +372,29 @@ def main() -> None:
     # version of a book lands beside the first rather than on top of it.
     out = (args.out or ROOT / "src" / book["slug"] / f"{book['version']}.typ")
     out = out.resolve()
+
+    # A book is imported once and owned by hand from then on, so this is the
+    # one command in the pipeline that can destroy work. It used to write
+    # whatever was there.
+    if out.exists() and not args.force:
+        where = out.relative_to(ROOT).as_posix() if out.is_relative_to(ROOT) else out
+        raise SystemExit(
+            f"to_book: {where} is already imported. Every edit made to it since "
+            f"would be lost, so this refuses rather than asks. Import a "
+            f"different version, or pass --force if overwriting is the intent.")
+
+    # Another version of the same army has already been given its allegiance.
+    align = book.get("align") or inherited_align(book["slug"])
+    if align:
+        book = dict(book, align=align)
+
     out.parent.mkdir(parents=True, exist_ok=True)
     text = render(data, book)
     out.write_text(text, encoding="utf-8", newline=chr(10))
     entries = sum(len(c["entries"]) for c in data["chapters"])
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}  {len(text.splitlines())} lines, "
           f"{len(data['chapters'])} chapters, {entries} entries")
+    print(f"allegiance: {align or 'NONE - add align: to the book, emit.py will refuse it'}")
 
 
 if __name__ == "__main__":
