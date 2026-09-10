@@ -368,8 +368,7 @@ Relic. Bound spell (Level 2, cast on 8+). This item contains a *hex aura* spell 
 
 Staff. Bound Spell. This item contains the _Urannon's Thunderbolt_ spell from the Lore of Heavens.
 
-#namecost("THE TETRAGON OF TECTONIC", "")
-#namecost("DISPLACEMENT", "35 points")
+#namecost("THE TETRAGON OF TECTONIC DISPLACEMENT", "35 points")
 
 Relic. Bound Spell. The Tetragon of Tectonic Displacement contains the _Tectonic Shift_ spell from the Lore of Geomancy.
 

@@ -422,8 +422,7 @@ The unit carrying this standard gains the Immunity (Psychology) and Stubborn spe
 
 The unit carrying this standard gains +1 to Hit in the first round of close combat.
 
-#namecost("NJEVSKI'S SCREECHING", "")
-#namecost("BACK BANNERS", "25 points")
+#namecost("NJEVSKI'S SCREECHING BACK BANNERS", "25 points")
 
 Winged Lancers or Gryphon Legion only. Any unit charged by the unit carrying this standard that chooses to Hold as a charge reaction must take a Panic test with a \-1 Leadership modifier.
 

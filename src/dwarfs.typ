@@ -118,8 +118,7 @@ Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any en
 
 Heavy armour. This armour gives the wearer a Magical Ward (3+) against all attacks of Strength 6 or higher.
 
-#namecost("EVER-BURNING HELMET", "")
-#namecost("OF GRUNGNI", "30 points")
+#namecost("EVER-BURNING HELMET OF GRUNGNI", "30 points")
 
 This armour gives the wearer a 6+ armour save. All close combat attacks directed against the wearer must re-roll To Hit.
 

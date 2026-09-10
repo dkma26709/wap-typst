@@ -498,8 +498,7 @@ Shield. The bearer has a 2+ armour save against shooting attacks.
 
 Shield. The bearer is always Steadfast in the first round of combat. In addition, if they are with a unit that would otherwise flee as a result of a failed break test that the bearer would normally pass, the bearer will remain in combat while the rest of the unit flees.
 
-#namecost("HELM OF THE HEADLESS", "")
-#namecost("HORSEMAN", "10 points")
+#namecost("HELM OF THE HEADLESS HORSEMAN", "10 points")
 
 This item gives the wearer a 6+ armour save. In addition, the wearer gains the Flaming Attacks and Killing Blow special rules. However, they must roll a D6 at the start of each of your turns. On the roll of a 1, the model suffers a Wound with no saves allowed.
 
@@ -516,8 +515,7 @@ The bearer gains a Magical Ward (2+). Roll separately for every wound suffered. 
 
 The bearer has a Magical Ward (4+) against close combat attacks.
 
-#namecost("DASHING CLOAK OF HEROIC", "")
-#namecost("RENOWN", "20 points")
+#namecost("DASHING CLOAK OF HEROIC RENOWN", "20 points")
 
 The bearer gains the Regeneration (5+) special rule.
 
@@ -661,8 +659,7 @@ The model may re-roll one dice when rolling To Hit or To Wound each round of clo
 
 No enemy units may deploy using the Scouts special rule within Line of Sight of the bearer of this item. In addition, you opponent must reveal any Hidden models in units within Line of Sight at the start of the game.
 
-#namecost("SCALED BOOTS OF DELAYED", "")
-#namecost("ALACRITY", "5 points")
+#namecost("SCALED BOOTS OF DELAYED ALACRITY", "5 points")
 
 Model on foot only. The bearer gains the Random Movement (2D6) Special Rule.
 
