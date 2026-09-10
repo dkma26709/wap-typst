@@ -2030,7 +2030,7 @@ If the model with this special rule is in close combat, it can use the Breath We
 
 === COLD-BLOODED
 
-Whenever a unit where the majority of the models have this special rule takes a Psychology or Break test, it rolls an additional dice and discards the highest result.
+Whenever a unit where the majority of the models have this special rule takes a Leadership test, it rolls an additional dice and discards the highest result.
 
 === CUMBERSOME
 
@@ -5175,3 +5175,15 @@ A book that wants to offer a second composition of itself has nowhere to say so,
 An Army of Infamy is chosen in place of the book's ordinary list rather than alongside it. It may move entries from one category to another, refuse you entries the book otherwise allows, add entries of its own, and lay one or more rules over the whole army. It may also change which units count towards the minimum an army must spend on Core units. Everything in the book that the Army of Infamy does not change applies as it is written.
 
 Both players should know which composition each army is using before deployment.
+
+#namecost("Cold-Blooded works on any Leadership test", "SPECIAL RULES · COLD-BLOODED")
+
+The rule named two kinds of test where it meant the category both belong to. A Psychology test is _a form of Leadership test_ by this book's own definition, and a Break test is one as well — the Break Test section opens "the losing unit in a combat must pass a Leadership test or flee". Naming members of a set invites the question of what happens at the ones left unnamed, so the rule now names the set.
+
+#field("Was", "")
+
+#note[takes a Psychology or Break test]
+
+#field("Now", "")
+
+takes a Leadership test
