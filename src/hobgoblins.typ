@@ -119,80 +119,36 @@ do so. If the unit cannot declare a charge then
 it may carry on with the rest of its turn
 normally, as if it had not yet moved this turn.")))
 
-= LORE OF DA HIIYAAARRGHH!
+#lore("LORE OF DA HIIYAAARRGHH!")[
 
-#columns(2)[
-#namecost("SNEAKY STEALIN'", "")
-#namecost("Lore Attribute", "")
+#spell("SNEAKY STEALIN'", "Lore Attribute")[When a Spell of da Little Waaagh! is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.]
 
-When a Spell of da Little Waaagh! is successfully cast, and after its effects have been resolved, roll a D6. On a 6 you may take one dispel dice from the opponent's dispel pool and add it to your power pool. If there are no dice left in the opponent's dispel pool, then this lore attribute has no effect.
+#spell("VINDICTIVE GLARE", "Signature Spell", cast: "6+")[_Vindictive Glare_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits.]
 
-#namecost("VINDICTIVE GLARE", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("OI! GERROFF!", 1, cast: "5+")[_Oi! Gerroff!_ is a *magic missile* with a range of 18". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain or another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.]
 
-_Vindictive Glare_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits.
+#spell("SNEAKY STABBIN'", 1, cast: "5+")[_Sneaky Stabbin'_ is an *augment* spell with a range of 24" that targets Hobgoblins. The target unit's close combat attacks have the Armour Piercing (1) special rule until the start of the caster's next Magic phase. In addition, while the spell is in effect, they can re-roll all failed To Hit and To Wound rolls when attacking in close combat against an enemy's flank or rear.]
 
-#namecost("OI! GERROFF!", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("BRAIN BURSTA", 1, cast: "6+")[_Brain Bursta_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers a Strength 5 hit.]
 
-_Oi! Gerroff!_ is a *magic missile* with a range of 18". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain or another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.
+#spell("MORK-KHAN SAVE UZ!", 2, cast: "6+")[_Mork-khan Save Uz!_ is an *augment* spell with a range of 24" that targets Hobgoblins. The target unit gains the Magic Resistance (5) special rule until the start of the caster's next Magic phase.]
 
-#namecost("SNEAKY STABBIN'", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("GAZE OF GORK-KHAN", 2, cast: "8+")[_Gaze of Gork_ is a *direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 3 hit with the Ignores Armour Saves special rule.]
 
-_Sneaky Stabbin'_ is an *augment* spell with a range of 24" that targets Hobgoblins. The target unit's close combat attacks have the Armour Piercing (1) special rule until the start of the caster's next Magic phase. In addition, while the spell is in effect, they can re-roll all failed To Hit and To Wound rolls when attacking in close combat against an enemy's flank or rear.
+#spell("GORK-KHAN'LL FIX IT", 2, cast: "8+")[_Gork-khan'll Fix It_ is a *hex* spell with a range of 24". The target unit must re-roll any of its To Hit, To Wound and armour save rolls of 6 (in shooting and close combat) until the start of the caster's next Magic phase.]
 
-#namecost("BRAIN BURSTA", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("THE HAND OF GORK-KHAN", 3, cast: "8+")[_The Hand of Gork-khan_ is a *conveyance* spell with a range of 24". The target is immediately picked up and may be moved to any point on the battlefield within 4D6" of its original position, just like a summoning spell.]
 
-_Brain Bursta_ is a *direct damage* spell with a range of 18" that targets a single enemy model (even a character in a unit). The target suffers a Strength 5 hit.
+#spell("ITCHY NUISANCE", 3, cast: "8+")[_Itchy Nuisance_ is a *hex* spell with a range of 24". Roll a D6. The target unit immediately reduces its Movement and Initiative by this number (to a minimum of 1), until the start of the caster's next Magic phase.]
 
-#namecost("MORK-KHAN SAVE UZ!", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("SNEAKY DISTRACTION", 3, cast: "8+")[_Sneaky Distraction_ is a *hex aura* with a range of 12". The targets suffer \-1 To Hit with missile attacks and in close combat until the start of the caster's next Magic phase.]
 
-_Mork-khan Save Uz!_ is an *augment* spell with a range of 24" that targets Hobgoblins. The target unit gains the Magic Resistance (5) special rule until the start of the caster's next Magic phase.
+#spell("NIKKIT! NIKKIT!", 4, cast: "11+")[_Nikkit! Nikkit!_ is a *direct damage* spell with a range of 12" that targets a single enemy character (even a character in a unit). If the target has one or more magic items, randomly select one of them and roll a D6 – that item is stolen on a 3+. If the caster does not already have a magic item of this type they can now use it, otherwise it is destroyed. In addition, the target suffers D3 Strength 4 Hits which Ignores Armour Saves.]
 
-#namecost("GAZE OF GORK-KHAN", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("THE GREAT GREEN SPITE", 4, cast: "12+")[_The Great Green Spite_ is a *direct damage* spell with a range of 24". The target enemy unit suffers D6 Strength 4 hits with the Armour Piercing (1) special rule for every 10 points of Unit Strength the Wizard and any unit they are with have, up to a maximum of 4D6.]
 
-_Gaze of Gork_ is a *direct damage area* spell that uses the line template. Place it 24" in length, directly away from the caster's front arc. Any model whose base falls under the line suffers a Strength 3 hit with the Ignores Armour Saves special rule.
-
-#namecost("GORK-KHAN'LL FIX IT", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Gork-khan'll Fix It_ is a *hex* spell with a range of 24". The target unit must re-roll any of its To Hit, To Wound and armour save rolls of 6 (in shooting and close combat) until the start of the caster's next Magic phase.
-
-#namecost("THE HAND OF GORK-KHAN", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_The Hand of Gork-khan_ is a *conveyance* spell with a range of 24". The target is immediately picked up and may be moved to any point on the battlefield within 4D6" of its original position, just like a summoning spell.
-
-#namecost("ITCHY NUISANCE", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Itchy Nuisance_ is a *hex* spell with a range of 24". Roll a D6. The target unit immediately reduces its Movement and Initiative by this number (to a minimum of 1), until the start of the caster's next Magic phase.
-
-#namecost("SNEAKY DISTRACTION", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Sneaky Distraction_ is a *hex aura* with a range of 12". The targets suffer \-1 To Hit with missile attacks and in close combat until the start of the caster's next Magic phase.
-
-#namecost("NIKKIT! NIKKIT!", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Nikkit! Nikkit!_ is a *direct damage* spell with a range of 12" that targets a single enemy character (even a character in a unit). If the target has one or more magic items, randomly select one of them and roll a D6 – that item is stolen on a 3+. If the caster does not already have a magic item of this type they can now use it, otherwise it is destroyed. In addition, the target suffers D3 Strength 4 Hits which Ignores Armour Saves.
-
-#namecost("THE GREAT GREEN SPITE", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_The Great Green Spite_ is a *direct damage* spell with a range of 24". The target enemy unit suffers D6 Strength 4 hits with the Armour Piercing (1) special rule for every 10 points of Unit Strength the Wizard and any unit they are with have, up to a maximum of 4D6.
-
-#namecost("MORK-KHAN WANTS YA!", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Mork-khan Wants Ya!_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 10 hits.
+#spell("MORK-KHAN WANTS YA!", 4, cast: "13+")[_Mork-khan Wants Ya!_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D3 Strength 10 hits.]
 ]
-
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Hobgoblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[

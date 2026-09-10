@@ -145,80 +145,36 @@ Models with this rule may choose one of the following Tree Aspects at the start 
 A model with this rule can choose to make a single Tree Whack in place of making their normal close combat attacks. To resolve a Tree Whack, nominate an enemy model in base contact. That model must pass an Initiative test or suffer D6 Wounds which Ignores Armour Saves.
 ]
 
-= THE LORE OF ATHEL LOREN
+#lore("THE LORE OF ATHEL LOREN")[
 
-#columns(2)[
-#namecost("GLAMOURWEAVING", "")
-#namecost("Lore Attribute", "")
+#spell("GLAMOURWEAVING", "Lore Attribute")[Whenever a spell from the Lore of Athel Loren is successfully cast, all enemy units suffer a \-3" penalty to their spell and maximum weapon ranges in their next turn when targeting any friendly units within 6" of the Wizard. This is a cumulative effect.]
 
-Whenever a spell from the Lore of Athel Loren is successfully cast, all enemy units suffer a \-3" penalty to their spell and maximum weapon ranges in their next turn when targeting any friendly units within 6" of the Wizard. This is a cumulative effect.
+#spell("TREE SINGING", "Signature Spell", cast: "6+")[_Tree Singing_ is a special type of spell which targets a single forest within 24" of the caster. The target immediately moves up to D6+1" in a direction of your choice. A forest cannot move to within 1" of other terrain features.]
 
-#namecost("TREE SINGING", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("FURY OF THE FOREST", 1, cast: "5+")[_Fury of the Forest_ is a *direct damage* spell with a range of 18". If the target is within 6" of a forest it suffers 2D6 Strength 4 hits. If the target is partially or wholly within a forest it suffers 3D6 Strength 4 hits.]
 
-_Tree Singing_ is a special type of spell which targets a single forest within 24" of the caster. The target immediately moves up to D6+1" in a direction of your choice. A forest cannot move to within 1" of other terrain features.
+#spell("DURTHU'S WRATH", 1, cast: "6+")[_Durthu's Wrath_ is a *direct damage* spell that can be cast in close combat. All models in the front rank of any unit in base contact with the caster must pass an Initiative test or suffer a Strength 4 hit with the Ignores Armour Saves and Multiple Wounds (D3) special rules.]
 
-#namecost("FURY OF THE FOREST", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("THE TWILIGHT HOST", 1, cast: "6+")[_The Twilight Host_ is an *augment* spell with a range of 18". The target gains the Fear special rule until the start of the caster's next Magic phase. In addition, the target will count as having twice the Unit Strength and number of ranks it really has for the purpose of determining Outnumber and Steadfast.]
 
-_Fury of the Forest_ is a *direct damage* spell with a range of 18". If the target is within 6" of a forest it suffers 2D6 Strength 4 hits. If the target is partially or wholly within a forest it suffers 3D6 Strength 4 hits.
+#spell("THE HIDDEN PATH", 2, cast: "7+")[_The Hidden Path_ is an *augment* spell with a range of 18". The unit gains the Ethereal special rule until the start of the caster's next Magic phase. If the unit becomes engaged in close combat, the spell instantly ends.]
 
-#namecost("DURTHU'S WRATH", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("SPITEFUL TORRENT", 2, cast: "8+")[Remains in play. _Spiteful Torrent_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 2 hit with the Armour Piercing (1) special rule.]
 
-_Durthu's Wrath_ is a *direct damage* spell that can be cast in close combat. All models in the front rank of any unit in base contact with the caster must pass an Initiative test or suffer a Strength 4 hit with the Ignores Armour Saves and Multiple Wounds (D3) special rules.
+#spell("ASPECT OF ATHEL LOREN", 2, cast: "9+")[_Aspect of Athel Loren_ is an *augment aura* with a range of 12". Until the start of the caster's next Magic phase, all affected units gain the Magical Ward (6+) special rule.]
 
-#namecost("THE TWILIGHT HOST", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("MADRIGAL OF GREENING", 3, cast: "9+")[_Madrigal of Greening_ is a *summoning* spell with a range of 18". This summons a forest of your choosing no more than 12" in diameter.]
 
-_The Twilight Host_ is an *augment* spell with a range of 18". The target gains the Fear special rule until the start of the caster's next Magic phase. In addition, the target will count as having twice the Unit Strength and number of ranks it really has for the purpose of determining Outnumber and Steadfast.
+#spell("CAGE OF THORNS", 3, cast: "10+")[Remains in play. _Cage of Thorns_ is a *hex* spell with a range of 24". While the spell is in effect, the target unit halves all their Movement (rounding up). In addition, the target suffer D6 Strength 3 Hits any time it moves.]
 
-#namecost("THE HIDDEN PATH", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("SAPPING BLIGHT", 3, cast: "10+")[Remains in Play. _Sapping Blight_ is a *hex* spell with a range of 18". While the spell is in effect, the target has \-1 Strength and \-1 Toughness (to a minimum of 1).]
 
-_The Hidden Path_ is an *augment* spell with a range of 18". The unit gains the Ethereal special rule until the start of the caster's next Magic phase. If the unit becomes engaged in close combat, the spell instantly ends.
+#spell("THE CALL OF THE HUNT", 4, cast: "11+")[_The Call of the Hunt_ is a *conveyance* spell with a range of 18". The target immediately moves forward towards the closest enemy unit within line of sight using the Random Movement (2D6) special rule. If no enemy unit is in line of sight, the unit will move directly forwards. In addition, the unit gains +1 Attack (except mounts) until the start of the caster’s next Magic phase.]
 
-#namecost("SPITEFUL TORRENT", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("VERDUROUS HARMONY", 4, cast: "12+")[_Verdurous Harmony_ is an *augment aura* with a range of 12". All targets instantly recover D3 Wounds' worth of models slain earlier in the battle, just like a summoning spell.]
 
-Remains in play. _Spiteful Torrent_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 2 hit with the Armour Piercing (1) special rule.
-
-#namecost("ASPECT OF ATHEL LOREN", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Aspect of Athel Loren_ is an *augment aura* with a range of 12". Until the start of the caster's next Magic phase, all affected units gain the Magical Ward (6+) special rule.
-
-#namecost("MADRIGAL OF GREENING", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Madrigal of Greening_ is a *summoning* spell with a range of 18". This summons a forest of your choosing no more than 12" in diameter.
-
-#namecost("CAGE OF THORNS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-Remains in play. _Cage of Thorns_ is a *hex* spell with a range of 24". While the spell is in effect, the target unit halves all their Movement (rounding up). In addition, the target suffer D6 Strength 3 Hits any time it moves.
-
-#namecost("SAPPING BLIGHT", "")
-#namecost("Level 3 Cast on 10+", "")
-
-Remains in Play. _Sapping Blight_ is a *hex* spell with a range of 18". While the spell is in effect, the target has \-1 Strength and \-1 Toughness (to a minimum of 1).
-
-#namecost("THE CALL OF THE HUNT", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_The Call of the Hunt_ is a *conveyance* spell with a range of 18". The target immediately moves forward towards the closest enemy unit within line of sight using the Random Movement (2D6) special rule. If no enemy unit is in line of sight, the unit will move directly forwards. In addition, the unit gains +1 Attack (except mounts) until the start of the caster’s next Magic phase.
-
-#namecost("VERDUROUS HARMONY", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Verdurous Harmony_ is an *augment aura* with a range of 12". All targets instantly recover D3 Wounds' worth of models slain earlier in the battle, just like a summoning spell.
-
-#namecost("ARIEL'S BLESSING", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Ariel's Blessing_ is an *augment* spell with a range of 18". The target gains the Regeneration (4+) special rule until the start of the caster's next Magic phase.
+#spell("ARIEL'S BLESSING", 4, cast: "13+")[_Ariel's Blessing_ is an *augment* spell with a range of 18". The target gains the Regeneration (4+) special rule until the start of the caster's next Magic phase.]
 ]
-
 = FOREST SPITES
 
 *Characters may choose Spites as detailed in the army list. Each Spite may only be chosen once per army.*

@@ -92,60 +92,30 @@ Models with the Peasant's Duty treat all friendly models with a Chivalrous Vow a
 Models with this special rule do not suffer any movement penalties for being barded.
 ]
 
-= THE LORE OF THE LADY
+#lore("THE LORE OF THE LADY")[
 
-#columns(2)[
-#namecost("FAVOUR OF THE LADY", "")
-#namecost("Lore Attribute", "")
+#spell("FAVOUR OF THE LADY", "Lore Attribute")[If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Magical Ward rolls of 1 until the start of the next Bretonnian Magic phase.]
 
-If a spell from the Lore of the Lady is successfully cast on a friendly unit that has the Blessing of the Lady, it may re-roll Magical Ward rolls of 1 until the start of the next Bretonnian Magic phase.
+#spell("THE LADY'S GIFT", "Signature Spell", cast: "6+")[Remains in Play. _The Lady's Gift_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. While this spell is in effect, the target unit has the Regeneration (6+) special rule.]
 
-#namecost("THE LADY'S GIFT", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("MIST OF CHALONS", 1, cast: "5+")[_Mist of Châlons_ is an *augment* spell with a range of 18". All missile attacks targeting the unit suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.]
 
-Remains in Play. _The Lady's Gift_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. While this spell is in effect, the target unit has the Regeneration (6+) special rule.
+#spell("BEGUILEMENT OF BLONDEL", 1, cast: "6+")[Remains in Play. _Beguilement of Blondel_ is a *hex* spell with a range of 24". While the spell is in effect, the target is subject to the Stupidity special rule.]
 
-#namecost("MIST OF CHALONS", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("DOOM OF DOL", 2, cast: "7+")[Remains in play. _Doom of Dol_ is a *hex* spell with a range of 24" that targets a single enemy Character (even a character in a unit) or Lone Model. Choose one friendly character with any Chivalrous Vow in your army. While the spell is active, the chosen Knight will Hit and Wound that enemy model on a 2+ with the Ignores Armour Saves special rule.]
 
-_Mist of Châlons_ is an *augment* spell with a range of 18". All missile attacks targeting the unit suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.
+#spell("STEED OF THE LADY", 2, cast: "7+")[_Steed of the Lady_ is a *conveyance* spell with a range of 18" that targets Cavalry or Monstrous Cavalry with a Chivalrous Vow. The target may immediately make a normal move as if it were the Remaining Moves sub- phase.]
 
-#namecost("BEGUILEMENT OF BLONDEL", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("THE LADY'S WRATH", 3, cast: "9+")[_The Lady's Wrath_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit gains +1 Strength (excluding mounts) and the Armour Piercing (1) special rule until the start of your next Magic phase.]
 
-Remains in Play. _Beguilement of Blondel_ is a *hex* spell with a range of 24". While the spell is in effect, the target is subject to the Stupidity special rule.
+#spell("SHIELD OF THE LADY", 3, cast: "10+")[_Shield of the Lady_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit may re-roll failed armour saves until the start of your next Magic phase.]
 
-#namecost("DOOM OF DOL", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("THE CURSE OF THE LADY", 4, cast: "11+")[_The Curse of the Lady_ is a *hex* spell with a range of 12" that targets a single model (even a character in a unit). If the spell is successfully cast, the enemy is turned into a frog. Replace the model with a frog familiar or similar marker. This marker cannot be damaged and does not interfere with other units, simply move it so it is 1" away from all units and impassable terrain in a random direction if needed.
 
-Remains in play. _Doom of Dol_ is a *hex* spell with a range of 24" that targets a single enemy Character (even a character in a unit) or Lone Model. Choose one friendly character with any Chivalrous Vow in your army. While the spell is active, the chosen Knight will Hit and Wound that enemy model on a 2+ with the Ignores Armour Saves special rule.
+At the start of each enemy turn, the transformed model must take a Leadership test; if successful it is transformed back into its original shape, facing in a random direction. If the test is failed, move the marker D6" in a random direction, stopping within 1" of other units or impassable terrain. If the model is still in its frog form at the end of the game, it is treated as a casualty.]
 
-#namecost("STEED OF THE LADY", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("CHIVALRIC ONSLAUGHT", 4, cast: "12+")[_Chivalric Onslaught_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.]
 
-_Steed of the Lady_ is a *conveyance* spell with a range of 18" that targets Cavalry or Monstrous Cavalry with a Chivalrous Vow. The target may immediately make a normal move as if it were the Remaining Moves sub- phase.
-
-#namecost("THE LADY'S WRATH", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_The Lady's Wrath_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit gains +1 Strength (excluding mounts) and the Armour Piercing (1) special rule until the start of your next Magic phase.
-
-#namecost("SHIELD OF THE LADY", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Shield of the Lady_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. The target unit may re-roll failed armour saves until the start of your next Magic phase.
-
-#namecost("THE CURSE OF THE LADY", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_The Curse of the Lady_ is a *hex* spell with a range of 12" that targets a single model (even a character in a unit). If the spell is successfully cast, the enemy is turned into a frog. Replace the model with a frog familiar or similar marker. This marker cannot be damaged and does not interfere with other units, simply move it so it is 1" away from all units and impassable terrain in a random direction if needed.
-
-At the start of each enemy turn, the transformed model must take a Leadership test; if successful it is transformed back into its original shape, facing in a random direction. If the test is failed, move the marker D6" in a random direction, stopping within 1" of other units or impassable terrain. If the model is still in its frog form at the end of the game, it is treated as a casualty.
-
-#namecost("CHIVALRIC ONSLAUGHT", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Chivalric Onslaught_ is an *augment* spell with a range of 18" that targets a unit with a Chivalrous Vow. Until the start of the caster's next Magic phase, all models in the unit (excluding mounts) gain +1 To Hit and the Devastating Charge special rule.
 ]
 
 = VIRTUES OF THE CHIVALRIC KNIGHT
@@ -375,24 +345,29 @@ All enemy Wizards within 12" of this Knight suffer \-1 casting penalty.
 #field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation")
 #field("OPTIONS", "")
 
-- May choose one of the following:
-  - Heavy lance +10 points
-  - Polearm (on foot only) +10 points
-  - Great weapon +15 points
-- May take heavy armour +18 points
-- May take a shield +5 points
-- May be mounted on one of the following:
-  - Warhorse +15 points
-  - Pegasus +25 points
-  - Royal Pegasus +40 points
-  - Royal Hippogryph (Baron only) +150 points
-- May replace the Knights Vow with one of the following:
-  - The Crusader's Vow +15 points
-  - The Questing Vow +15 points
-  - The Grail Vow +45 points
-- One Paladin may carry the Battle Standard +25 points
-- A Paladin may take one Virtue and/or Magic Items up to a total of 50 points
-- A Baron may take one Virtue and/or Magic Items up to a total of 100 points
+#options(
+  optgroup("May choose one of the following:",
+    opt("Heavy lance", "+10 points"),
+    opt("Polearm (on foot only)", "+10 points"),
+    opt("Great weapon", "+15 points"),
+  ),
+  opt("May take heavy armour", "+18 points"),
+  opt("May take a shield", "+5 points"),
+  optgroup("May be mounted on one of the following:",
+    opt("Warhorse", "+15 points"),
+    opt("Pegasus", "+25 points"),
+    opt("Royal Pegasus", "+40 points"),
+    opt("Royal Hippogryph (Baron only)", "+150 points"),
+  ),
+  optgroup("May replace the Knights Vow with one of the following:",
+    opt("The Crusader's Vow", "+15 points"),
+    opt("The Questing Vow", "+15 points"),
+    opt("The Grail Vow", "+45 points"),
+  ),
+  opt("One Paladin may carry the Battle Standard", "+25 points"),
+  opt("A Paladin may take one Virtue and/or Magic Items up to a total of", "50 points"),
+  opt("A Baron may take one Virtue and/or Magic Items up to a total of", "100 points"),
+)
 
 #field("NOTES", "")
 
@@ -419,13 +394,16 @@ of Magic:
 #field("SPECIAL RULES", "Blessing of the Lady, Magic Resistance (1)")
 #field("OPTIONS", "")
 
-- May take an additional Wizard Level +35 points
-- May be mounted on one of the following:
-  - Warhorse +15 points
-  - Pegasus +25 points
-  - Unicorn (Prophetess only) +25 points
-- A Grail Damsel may take Magic Items up to a total of 50 points
-- A Prophetess may take Magic Items up to a total of 100 points
+#options(
+  opt("May take an additional Wizard Level", "+35 points"),
+  optgroup("May be mounted on one of the following:",
+    opt("Warhorse", "+15 points"),
+    opt("Pegasus", "+25 points"),
+    opt("Unicorn (Prophetess only)", "+25 points"),
+  ),
+  opt("A Grail Damsel may take Magic Items up to a total of", "50 points"),
+  opt("A Prophetess may take Magic Items up to a total of", "100 points"),
+)
 
 #entry("SERGEANTS-AT-ARMS")
 #profile(
@@ -440,19 +418,24 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May choose one of the following:
-  - Light lance +5 points
-  - Polearm (on foot only) +5 points
-  - Great weapon +10 points
-- May choose one of the following:
-  - Shortbow +3 points
-  - Longbow +5 points
-  - Crossbow +6 points
-- May choose one of the following:
-  - Light armour +5 points
-  - Medium armour +10 points
-- May take a shield +5 points
-- May be mounted on a Horse +15 points
+#options(
+  optgroup("May choose one of the following:",
+    opt("Light lance", "+5 points"),
+    opt("Polearm (on foot only)", "+5 points"),
+    opt("Great weapon", "+10 points"),
+  ),
+  optgroup("May choose one of the following:",
+    opt("Shortbow", "+3 points"),
+    opt("Longbow", "+5 points"),
+    opt("Crossbow", "+6 points"),
+  ),
+  optgroup("May choose one of the following:",
+    opt("Light armour", "+5 points"),
+    opt("Medium armour", "+10 points"),
+  ),
+  opt("May take a shield", "+5 points"),
+  opt("May be mounted on a Horse", "+15 points"),
+)
 
 #field("NOTES", "")
 
@@ -468,8 +451,10 @@ of Magic:
 #field("SPECIAL RULES", "Independent, Scouts, Sniper")
 #field("OPTIONS", "")
 
-- May take an additional hand weapon +5 points
-- May take light armour +5 points
+#options(
+  opt("May take an additional hand weapon", "+5 points"),
+  opt("May take light armour", "+5 points"),
+)
 
 #field("NOTES", "")
 
@@ -491,7 +476,9 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May take Magic Items up to a total of 50 points
+#options(
+  opt("May take Magic Items up to a total of", "50 points"),
+)
 
 #field("NOTES", "")
 
@@ -516,7 +503,9 @@ of Magic:
 #field("SPECIAL RULES", "Purebred Warhorse")
 #field("OPTIONS", "")
 
-- May take barding +5 points
+#options(
+  opt("May take barding", "+5 points"),
+)
 
 #entry("UNICORN")
 #profile(
@@ -542,9 +531,11 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May take Iron-hard Hooves +5 points
-- May take Swift as the Wind +5 points
-- May take barding +5 points
+#options(
+  opt("May take Iron-hard Hooves", "+5 points"),
+  opt("May take Swift as the Wind", "+5 points"),
+  opt("May take barding", "+5 points"),
+)
 
 #entry("ROYAL PEGASUS")
 #profile(
@@ -560,9 +551,11 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May take Iron-hard Hooves +5 points
-- May take Swift as the Wind +5 points
-- May take barding +5 points
+#options(
+  opt("May take Iron-hard Hooves", "+5 points"),
+  opt("May take Swift as the Wind", "+5 points"),
+  opt("May take barding", "+5 points"),
+)
 
 #entry("ROYAL HIPPOGRYPH")
 #profile(
@@ -580,11 +573,13 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May take Shredding Talons +5 points
-- May take Serrated Maw +15 points
-- May take Swooping Strike +15 points
-- May take Bloodrage +30 points
-- May take barding +5 points
+#options(
+  opt("May take Shredding Talons", "+5 points"),
+  opt("May take Serrated Maw", "+15 points"),
+  opt("May take Swooping Strike", "+15 points"),
+  opt("May take Bloodrage", "+30 points"),
+  opt("May take barding", "+5 points"),
+)
 
 = CORE UNITS
 
@@ -604,11 +599,14 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May replace the Knight's Vow with the Crusader's Vow +1 point/model
-- May upgrade one Knight Errant to a Leader +5 points
-- May upgrade one Knight Errant to a Musician +5 points
-- May upgrade one Knight Errant to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 25 points
+#options(
+  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+  opt("May upgrade one Knight Errant to a Leader", "+5 points"),
+  opt("May upgrade one Knight Errant to a Musician", "+5 points"),
+  optgroup("May upgrade one Knight Errant to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "25 points"),
+  ),
+)
 
 #entry("KNIGHT OF THE REALM")
 #profile(
@@ -623,11 +621,14 @@ of Magic:
 #field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow, Lance Formation, Purebred Warhorse")
 #field("OPTIONS", "")
 
-- May replace the Knight's Vow with the Crusader's Vow +1 point/model
-- May upgrade one Knight of the Realm to a Leader +5 points
-- May upgrade one Knight of the Realm to a Musician +5 points
-- May upgrade one Knight of the Realm to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 50 points
+#options(
+  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+  opt("May upgrade one Knight of the Realm to a Leader", "+5 points"),
+  opt("May upgrade one Knight of the Realm to a Musician", "+5 points"),
+  optgroup("May upgrade one Knight of the Realm to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+)
 
 #entry("MEN-AT-ARMS")
 #profile(
@@ -644,14 +645,17 @@ of Magic:
 
 #field("OPTIONS", "")
 
-- May choose one of the following:
-  - Spears +0.5 point/model
-  - Polearms +2 points/model
-- May take shields +1 point/model
-- May upgrade one Man-at-Arms to a Grail Monk +5 points
-- May upgrade one Man-at-Arms to a Leader +5 points
-- May upgrade one Man-at-Arms to a Musician +5 points
-- May upgrade one Man-at-Arms to a Standard Bearer +10 points
+#options(
+  optgroup("May choose one of the following:",
+    opt("Spears", "+0.5 point/model"),
+    opt("Polearms", "+2 points/model"),
+  ),
+  opt("May take shields", "+1 point/model"),
+  opt("May upgrade one Man-at-Arms to a Grail Monk", "+5 points"),
+  opt("May upgrade one Man-at-Arms to a Leader", "+5 points"),
+  opt("May upgrade one Man-at-Arms to a Musician", "+5 points"),
+  opt("May upgrade one Man-at-Arms to a Standard Bearer", "+10 points"),
+)
 
 #entry("LONGBOWMEN")
 #profile(
@@ -671,13 +675,15 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 
 #field("OPTIONS", "")
 
-- May take light armour +0.5 point/model
-- May take bucklers +0.5 point/model
-- May take braziers +0.5 point/model
-- May take defensive stakes +1 point/model
-- May upgrade one Longbowman to a Leader +5 points
-- May upgrade one Longbowman to a Musician +5 points
-- May upgrade one Longbowman to a Standard Bearer +10 points
+#options(
+  opt("May take light armour", "+0.5 point/model"),
+  opt("May take bucklers", "+0.5 point/model"),
+  opt("May take braziers", "+0.5 point/model"),
+  opt("May take defensive stakes", "+1 point/model"),
+  opt("May upgrade one Longbowman to a Leader", "+5 points"),
+  opt("May upgrade one Longbowman to a Musician", "+5 points"),
+  opt("May upgrade one Longbowman to a Standard Bearer", "+10 points"),
+)
 
 #entry("PEASANT MOB")
 #profile(
@@ -690,14 +696,17 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "The Peasant's Duty")
 #field("OPTIONS", "")
 
-- May choose one of the following:
-  - Spears +0.5 point/model
-  - Flails +2 points/model
-  - Polearms +2 points/model
-- May take shields (if armed with spears) +1 point/model
-- May upgrade one Peasant to a Leader +5 points
-- May upgrade one Peasant to a Musician +5 points
-- May upgrade one Peasant to a Standard Bearer +10 points
+#options(
+  optgroup("May choose one of the following:",
+    opt("Spears", "+0.5 point/model"),
+    opt("Flails", "+2 points/model"),
+    opt("Polearms", "+2 points/model"),
+  ),
+  opt("May take shields (if armed with spears)", "+1 point/model"),
+  opt("May upgrade one Peasant to a Leader", "+5 points"),
+  opt("May upgrade one Peasant to a Musician", "+5 points"),
+  opt("May upgrade one Peasant to a Standard Bearer", "+10 points"),
+)
 
 #entry("BIDOWERS")
 #profile(
@@ -710,10 +719,12 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "The Peasant's Duty, Skirmishers")
 #field("OPTIONS", "")
 
-- May replace javelins with slings free
-- May take bucklers +0.5 point/model
-- May upgrade one Bidower to a Leader +5 points
-- May upgrade one Bidower to a Musician +5 points
+#options(
+  opt("May replace javelins with slings", "free"),
+  opt("May take bucklers", "+0.5 point/model"),
+  opt("May upgrade one Bidower to a Leader", "+5 points"),
+  opt("May upgrade one Bidower to a Musician", "+5 points"),
+)
 
 = SPECIAL UNITS
 
@@ -730,10 +741,13 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Blessing of the Lady, The Questing Vow, Lance Formation, Purebred Warhorse")
 #field("OPTIONS", "")
 
-- May upgrade one Questing Knight to a Leader +5 points
-- May upgrade one Questing Knight to a Musician +5 points
-- May upgrade one Questing Knight to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 50 points
+#options(
+  opt("May upgrade one Questing Knight to a Leader", "+5 points"),
+  opt("May upgrade one Questing Knight to a Musician", "+5 points"),
+  optgroup("May upgrade one Questing Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+)
 
 #entry("PEGASUS KNIGHTS")
 #profile(
@@ -748,11 +762,14 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Blessing of the Lady, Fly (9), The Knight's Vow")
 #field("OPTIONS", "")
 
-- May replace the Knight's Vow with the Crusader's Vow +2 points/model
-- May upgrade one Pegasus Knight to a Leader +5 points
-- May upgrade one Pegasus Knight to a Musician +5 points
-- May upgrade one Pegasus Knight to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 50 points
+#options(
+  opt("May replace the Knight's Vow with the Crusader's Vow", "+2 points/model"),
+  opt("May upgrade one Pegasus Knight to a Leader", "+5 points"),
+  opt("May upgrade one Pegasus Knight to a Musician", "+5 points"),
+  optgroup("May upgrade one Pegasus Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+)
 
 #entry("FOOT KNIGHTS")
 #profile(
@@ -765,16 +782,20 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Blessing of the Lady, The Knight's Vow")
 #field("OPTIONS", "")
 
-- May replace the Knight's Vow with the Crusader's Vow +1 point/model
-- May choose one of the following:
-  - Spears +0.5 point/model
-  - Polearms +2 points/model
-  - Great weapons +3 points/model
-- May take shields +1 point/model
-- May upgrade one Foot Knight to a Leader +5 points
-- May upgrade one Foot Knight to a Musician +5 points
-- May upgrade one Foot Knight to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 50 points
+#options(
+  opt("May replace the Knight's Vow with the Crusader's Vow", "+1 point/model"),
+  optgroup("May choose one of the following:",
+    opt("Spears", "+0.5 point/model"),
+    opt("Polearms", "+2 points/model"),
+    opt("Great weapons", "+3 points/model"),
+  ),
+  opt("May take shields", "+1 point/model"),
+  opt("May upgrade one Foot Knight to a Leader", "+5 points"),
+  opt("May upgrade one Foot Knight to a Musician", "+5 points"),
+  optgroup("May upgrade one Foot Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+)
 
 #entry("SQUIRES")
 #profile(
@@ -791,11 +812,13 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 
 #field("OPTIONS", "")
 
-- May take light armour +0.5 point/model
-- May take bucklers +0.5 point/model
-- May upgrade one Squire to a Leader +5 points
-- May upgrade one Squire to a Musician +5 points
-- May upgrade one Squire to a Standard Bearer +10 points
+#options(
+  opt("May take light armour", "+0.5 point/model"),
+  opt("May take bucklers", "+0.5 point/model"),
+  opt("May upgrade one Squire to a Leader", "+5 points"),
+  opt("May upgrade one Squire to a Musician", "+5 points"),
+  opt("May upgrade one Squire to a Standard Bearer", "+10 points"),
+)
 
 #entry("YEOMEN")
 #profile(
@@ -810,17 +833,21 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Fast Cavalry, The Peasant's Duty")
 #field("OPTIONS", "")
 
-- May take light lances +1 point/model
-- May choose one of the following:
-  - Shortbows +1 point/model
-  - Crossbows +2 points/model
-- May choose one of the following:
-  - Light armour +0.5 points/model
-  - Medium armour +1.5 points/model
-- May take shields +1 point/model
-- May upgrade one Yeoman to a Leader +5 points
-- May upgrade one Yeoman to a Musician +5 points
-- May upgrade one Yeoman to a Standard Bearer +10 points
+#options(
+  opt("May take light lances", "+1 point/model"),
+  optgroup("May choose one of the following:",
+    opt("Shortbows", "+1 point/model"),
+    opt("Crossbows", "+2 points/model"),
+  ),
+  optgroup("May choose one of the following:",
+    opt("Light armour", "+0.5 points/model"),
+    opt("Medium armour", "+1.5 points/model"),
+  ),
+  opt("May take shields", "+1 point/model"),
+  opt("May upgrade one Yeoman to a Leader", "+5 points"),
+  opt("May upgrade one Yeoman to a Musician", "+5 points"),
+  opt("May upgrade one Yeoman to a Standard Bearer", "+10 points"),
+)
 
 #entry("BATTLE PILGRIMS")
 #profile(
@@ -838,11 +865,13 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 
 #field("OPTIONS", "")
 
-- May take light armour +0.5 point/model
-- May upgrade one Battle Pilgrim to a Leader +5 points
-- May upgrade one Battle Pilgrim to a Musician +5 points
-- May upgrade one Battle Pilgrim to a Standard Bearer +10 points
-- May upgrade six Battle Pilgrim to a Grail Reliquae +30 points
+#options(
+  opt("May take light armour", "+0.5 point/model"),
+  opt("May upgrade one Battle Pilgrim to a Leader", "+5 points"),
+  opt("May upgrade one Battle Pilgrim to a Musician", "+5 points"),
+  opt("May upgrade one Battle Pilgrim to a Standard Bearer", "+10 points"),
+  opt("May upgrade six Battle Pilgrim to a Grail Reliquae", "+30 points"),
+)
 
 #entry("HERRIMAULTS")
 #profile(
@@ -855,9 +884,11 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Independent, Scouts, Skirmishers")
 #field("OPTIONS", "")
 
-- May take light armour +0.5 point/model
-- May upgrade one Herrimault to a Leader +5 points
-- May upgrade one Herrimault to a Musician +5 points
+#options(
+  opt("May take light armour", "+0.5 point/model"),
+  opt("May upgrade one Herrimault to a Leader", "+5 points"),
+  opt("May upgrade one Herrimault to a Musician", "+5 points"),
+)
 
 #entry("BRIGANDS")
 #profile(
@@ -870,14 +901,17 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Independent")
 #field("OPTIONS", "")
 
-- May be upgraded to Ambushers (unless armed with missile weapons) +1 point/model
-- May replace great weapons with one of the following:
-  - Crossbows +2 points/model
-  - Handguns +2 points/model
-- May take medium armour +1 point/model
-- May upgrade one Brigand to a Leader +5 points
-- May upgrade one Brigand to a Musician +5 points
-- May upgrade one Brigand to a Standard Bearer +10 points
+#options(
+  opt("May be upgraded to Ambushers (unless armed with missile weapons)", "+1 point/model"),
+  optgroup("May replace great weapons with one of the following:",
+    opt("Crossbows", "+2 points/model"),
+    opt("Handguns", "+2 points/model"),
+  ),
+  opt("May take medium armour", "+1 point/model"),
+  opt("May upgrade one Brigand to a Leader", "+5 points"),
+  opt("May upgrade one Brigand to a Musician", "+5 points"),
+  opt("May upgrade one Brigand to a Standard Bearer", "+10 points"),
+)
 
 = RARE UNITS
 
@@ -894,10 +928,13 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Blessing of the Lady, The Grail Vow, Lance Formation, Purebred Warhorse")
 #field("OPTIONS", "")
 
-- May upgrade one Grail Knight to a Leader +5 points
-- May upgrade one Grail Knight to a Musician +5 points
-- May upgrade one Grail Knight to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 75 points
+#options(
+  opt("May upgrade one Grail Knight to a Leader", "+5 points"),
+  opt("May upgrade one Grail Knight to a Musician", "+5 points"),
+  optgroup("May upgrade one Grail Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "75 points"),
+  ),
+)
 
 #entry("HIPPOGRYPH KNIGHTS")
 #profile(
@@ -912,12 +949,15 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 #field("SPECIAL RULES", "Blessing of the Lady, Fly (8), The Knight's Vow")
 #field("OPTIONS", "")
 
-- May replace the Knight's Vow with the Crusader's Vow +3 points/model
-- May take barding +3 points/model
-- May upgrade one Hippogryph Knight to a Leader +5 points
-- May upgrade one Hippogryph Knight to a Musician +5 points
-- May upgrade one Hippogryph Knight to a Standard Bearer +10 points
-  - May take a Magic Standard worth up to 50 points
+#options(
+  opt("May replace the Knight's Vow with the Crusader's Vow", "+3 points/model"),
+  opt("May take barding", "+3 points/model"),
+  opt("May upgrade one Hippogryph Knight to a Leader", "+5 points"),
+  opt("May upgrade one Hippogryph Knight to a Musician", "+5 points"),
+  optgroup("May upgrade one Hippogryph Knight to a Standard Bearer", cost: "+10 points",
+    opt("May take a Magic Standard worth up to", "50 points"),
+  ),
+)
 
 #entry("BALLISTA")
 #profile(
@@ -936,8 +976,10 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 
 #field("OPTIONS", "")
 
-- May take an additional Peasant Crew +5 points
-- May upgrade one Peasant Crew to a Wall Warden +10 points
+#options(
+  opt("May take an additional Peasant Crew", "+5 points"),
+  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+)
 
 #field("NOTES", "")
 
@@ -964,8 +1006,10 @@ Defensive Stakes are treated as Defended Obstacles and remain on the table durin
 
 #field("OPTIONS", "")
 
-- May take an additional Peasant Crew +5 points
-- May upgrade one Peasant Crew to a Wall Warden +10 points
+#options(
+  opt("May take an additional Peasant Crew", "+5 points"),
+  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+)
 
 #entry("BOMBARD")
 #profile(
@@ -991,8 +1035,10 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May take an additional Peasant Crew +5 points
-- May upgrade one Peasant Crew to a Wall Warden +10 points
+#options(
+  opt("May take an additional Peasant Crew", "+5 points"),
+  opt("May upgrade one Peasant Crew to a Wall Warden", "+10 points"),
+)
 
 = SPECIAL CHARACTERS
 
@@ -1020,11 +1066,14 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May be mounted on one of the following:
-  - Warhorse +18 points
-  - Pegasus +30 points
-  - Royal Pegasus +45 points
-  - Beaquis +155 points
+#options(
+  optgroup("May be mounted on one of the following:",
+    opt("Warhorse", "+18 points"),
+    opt("Pegasus", "+30 points"),
+    opt("Royal Pegasus", "+45 points"),
+    opt("Beaquis", "+155 points"),
+  ),
+)
 
 #field("NOTES", "")
 
@@ -1091,10 +1140,13 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May be mounted on one of the following:
-  - Warhorse +18 points
-  - Tempete +150 points
-- May take Magic Items up to a total of 25 points
+#options(
+  optgroup("May be mounted on one of the following:",
+    opt("Warhorse", "+18 points"),
+    opt("Tempete", "+150 points"),
+  ),
+  opt("May take Magic Items up to a total of", "25 points"),
+)
 
 #entry("CECIL GASTONNE")
 #namecost("The Wyrm Slayer", "")
@@ -1128,9 +1180,11 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May take a heavy lance +4 points
-- May take a shield +2 points
-- May be mounted on a Warhorse +12 points
+#options(
+  opt("May take a heavy lance", "+4 points"),
+  opt("May take a shield", "+2 points"),
+  opt("May be mounted on a Warhorse", "+12 points"),
+)
 
 #field("SPECIAL RULES", "Blessing of the Lady, Lance Formation, Magic Resistance (3), The Knight’s Vow, Purebred")
 
@@ -1156,7 +1210,9 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May take Magic Items up to a total of 25 points
+#options(
+  opt("May take Magic Items up to a total of", "25 points"),
+)
 
 #field("NOTES", "")
 
@@ -1183,7 +1239,9 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May take Magic Items up to a total of 25 points
+#options(
+  opt("May take Magic Items up to a total of", "25 points"),
+)
 
 #entry("THE HERMIT KNIGHT OF MALMONT")
 #profile(
@@ -1231,7 +1289,9 @@ If a misfire is rolled, roll on the Black Powder Misfire Chart as normal, but su
 
 #field("OPTIONS", "")
 
-- May be mounted on Silvaron (Unicorn) +25 points
+#options(
+  opt("May be mounted on Silvaron (Unicorn)", "+25 points"),
+)
 
 #entry("LADY ELISE DUCHARD")
 #namecost("Prophetess of the Duke of Brionne", "")

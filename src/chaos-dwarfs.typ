@@ -189,80 +189,36 @@ its turn normally, as if it had not yet moved
 this turn.")))
 ]
 
-= THE LORE OF HASHUT
+#lore("THE LORE OF HASHUT")[
 
-#columns(2)[
-#namecost("KILLING FIRE", "")
-#namecost("Lore Attribute", "")
+#spell("KILLING FIRE", "Lore Attribute")[Each time a spell from the Lore of Hashut is successfully cast, all enemy units within 6" of the Wizard suffer D6 Strength 3 Hits with the Flaming Attacks special rule.]
 
-Each time a spell from the Lore of Hashut is successfully cast, all enemy units within 6" of the Wizard suffer D6 Strength 3 Hits with the Flaming Attacks special rule.
+#spell("BREATH OF HATRED", "Signature Spell", cast: "5+")[_Breath of Hatred_ is an *augment* spell with a range of 18". The target unit gains the Hatred special rule until the start of the caster's next Magic phase.]
 
-#namecost("BREATH OF HATRED", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("BURNING WRATH", 1, cast: "6+")[_Burning Wrath_ is a *magic missile* with a range of 12" and causes D6 Strength 6 hits with the Flaming Attacks special rule.]
 
-_Breath of Hatred_ is an *augment* spell with a range of 18". The target unit gains the Hatred special rule until the start of the caster's next Magic phase.
+#spell("DARK SUBJUGATION", 1, cast: "7+")[_Dark Subjugation_ is a *hex* spell with a range of 24". The target unit must pass a Leadership test with a \-3 penalty or suffer a permanent reduction of \-1 to their Leadership for the rest of the game (to a minimum of 2).]
 
-#namecost("BURNING WRATH", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("FISTS OF FIRE", 1, cast: "7+")[_Fists of Fire_ is an *augment* spell with a range of 18". The target gains +1 Strength and the Flaming Attacks special rule until the start of the caster's next Magic phase.]
 
-_Burning Wrath_ is a *magic missile* with a range of 12" and causes D6 Strength 6 hits with the Flaming Attacks special rule.
+#spell("FLAMING HIDE", 2, cast: "8+")[Remains in play. _Flaming Hide_ is an *augment* spell with a range of 18". While the spell is in effect, the target has the Blazing Body special rule.]
 
-#namecost("DARK SUBJUGATION", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("SEARING DETONATION", 2, cast: "8+")[_Searing Detonation_ is a *direct damage aura* spell with a range of 12". All enemy units within the caster's front arc suffer D6 Strength 4 Hits with the Flaming Attacks special rule.]
 
-_Dark Subjugation_ is a *hex* spell with a range of 24". The target unit must pass a Leadership test with a \-3 penalty or suffer a permanent reduction of \-1 to their Leadership for the rest of the game (to a minimum of 2).
+#spell("MAGMA POOL", 2, cast: "9+")[_Magma Pool_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.]
 
-#namecost("FISTS OF FIRE", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("CURSE OF HASHUT", 3, cast: "10+")[_Curse of Hashut_ is a *direct damage* spell with a range of 12". It targets a single enemy model of the caster's choice (even a character in a unit). The target suffers a number of hits equal to 2D6 minus their Toughness value. Hits from this spell Wound on a 4+ with the Ignores Armour saves special rule.]
 
-_Fists of Fire_ is an *augment* spell with a range of 18". The target gains +1 Strength and the Flaming Attacks special rule until the start of the caster's next Magic phase.
+#spell("DOOMROAR", 3, cast: "10+")[_Doomroar_ is an *augment/hex aura* spell with a range of 12". Until the start of the caster's next Magic phase, all friendly units within range roll an additional D6 for their Leadership test and discard the highest result, and all enemy units within range roll an additional D6 for their Leadership test and discard the lowest result.]
 
-#namecost("FLAMING HIDE", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("ASH CLOUD", 3, cast: "13+")[_Ash Cloud_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, all affected units within range suffer \-1 To Hit in close combat and with missile attacks, may not march or fly, and must re-roll successful dangerous terrain tests.]
 
-Remains in play. _Flaming Hide_ is an *augment* spell with a range of 18". While the spell is in effect, the target has the Blazing Body special rule.
+#spell("HELL HAMMER", 4, cast: "13+")[_Hell Hammer_ is a *direct damage area* spell that uses the line template. Place it 18" in length, directly away from the caster's front arc. Each model in the way (determined using the line template) suffer a Strength 6 hit with the Flaming Attacks and Multiple Wounds (D3) special rules. Any unit suffering casualties from this spell must immediately take a Panic test.]
 
-#namecost("SEARING DETONATION", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("LAVA STORM", 4, cast: "14+")[_Lava Storm_ is a *direct damage area* spell with a range of 12". Place D3 small round templates anywhere within range. All models touched by each template suffer a Strength 5 hit with the Flaming Attacks and the Multiple Wounds (D3) special rules.]
 
-_Searing Detonation_ is a *direct damage aura* spell with a range of 12". All enemy units within the caster's front arc suffer D6 Strength 4 Hits with the Flaming Attacks special rule.
-
-#namecost("MAGMA POOL", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Magma Pool_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.
-
-#namecost("CURSE OF HASHUT", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Curse of Hashut_ is a *direct damage* spell with a range of 12". It targets a single enemy model of the caster's choice (even a character in a unit). The target suffers a number of hits equal to 2D6 minus their Toughness value. Hits from this spell Wound on a 4+ with the Ignores Armour saves special rule.
-
-#namecost("DOOMROAR", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Doomroar_ is an *augment/hex aura* spell with a range of 12". Until the start of the caster's next Magic phase, all friendly units within range roll an additional D6 for their Leadership test and discard the highest result, and all enemy units within range roll an additional D6 for their Leadership test and discard the lowest result.
-
-#namecost("ASH CLOUD", "")
-#namecost("Level 3 Cast on 13+", "")
-
-_Ash Cloud_ is a *hex aura* spell with a range of 18". Until the start of the caster's next Magic phase, all affected units within range suffer \-1 To Hit in close combat and with missile attacks, may not march or fly, and must re-roll successful dangerous terrain tests.
-
-#namecost("HELL HAMMER", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Hell Hammer_ is a *direct damage area* spell that uses the line template. Place it 18" in length, directly away from the caster's front arc. Each model in the way (determined using the line template) suffer a Strength 6 hit with the Flaming Attacks and Multiple Wounds (D3) special rules. Any unit suffering casualties from this spell must immediately take a Panic test.
-
-#namecost("LAVA STORM", "")
-#namecost("Level 4 Cast on 14+", "")
-
-_Lava Storm_ is a *direct damage area* spell with a range of 12". Place D3 small round templates anywhere within range. All models touched by each template suffer a Strength 5 hit with the Flaming Attacks and the Multiple Wounds (D3) special rules.
-
-#namecost("FLAMES OF AZGORH", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Flames of Azgorh_ is a *direct damage area* spell with a range of 12" that uses the large round template. All models touched by the template suffer a Strength 5 hit with the Flaming Attacks and the Multiple Wounds (D3) special rules.
+#spell("FLAMES OF AZGORH", 4, cast: "15+")[_Flames of Azgorh_ is a *direct damage area* spell with a range of 12" that uses the large round template. All models touched by the template suffer a Strength 5 hit with the Flaming Attacks and the Multiple Wounds (D3) special rules.]
 ]
-
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Chaos Dwarfs. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[

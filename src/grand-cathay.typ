@@ -89,80 +89,38 @@ A unit with this special rule may re-roll failed Panic tests caused by friendly 
 #namecost("THREE-EYED GUN", "")
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Multiple Shots (3), Ponderous, Rapid Fire"))
 
-= THE LORE OF YIN
+#lore("THE LORE OF YIN")[
 
-#namecost("POWER OF YIN", "")
-#namecost("Lore Attribute", "")
+#spell("POWER OF YIN", "Lore Attribute")[Whenever a spell from the Lore of Yin is successfully cast, all enemy units within 6" of the caster suffer \-1 to their armour saves until the start of the caster's next magic phase.]
 
-Whenever a spell from the Lore of Yin is successfully cast, all enemy units within 6" of the caster suffer \-1 to their armour saves until the start of the caster's next magic phase.
+#spell("STORM OF SHADOWS", 1, cast: "6+")[_Storm of Shadows_ is a *hex* spell with a range of 24". The target unit suffer \-1 to their Movement and have their Line of Sight limited to 12" until the start of the caster's next Magic phase.]
 
-#namecost("STORM OF SHADOWS", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("CLOAK OF JET", 1, cast: "6+")[_Cloak of Jet_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, no enemy spells can target the unit.]
 
-_Storm of Shadows_ is a *hex* spell with a range of 24". The target unit suffer \-1 to their Movement and have their Line of Sight limited to 12" until the start of the caster's next Magic phase.
+#spell("MISSILE MIRROR", 2, cast: "7+")[_Missile Mirror_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, roll a D6 for every shot the target unit fires in the Shooting phase. On a 4+, that shot is instead resolved against the target unit. Attacks that use templates are not affected.]
 
-#namecost("CLOAK OF JET", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("BLOSSOM WIND", 3, cast: "10+")[_Blossom Wind_ is a *direct damage* spell with a range of 24" that causes 2D6 Strength 2 Hits with the Armour Piercing (1) special rule. In addition, the target unit suffer \-1 to its Weapon Skill and Ballistics skill until the start of the caster's next Magic phase.]
 
-_Cloak of Jet_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, no enemy spells can target the unit.
+#spell("TALONS OF NIGHT", 3, cast: "12+")[Remains in play. _Talons of Night_ is a *magical vortex* that uses the small round template. Any model touched by the template suffer a Strength 4 Hit with the Armour Piercing (1) special rule.]
 
-#namecost("MISSILE MIRROR", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("ANCESTRAL WARRIORS", 4, cast: "13+")[_Ancestral Warriors_ is a *direct damage* spell with a range of 18". The target unit suffers 5D6 Attacks with Weapon Skill 4 and Strength Hits 4, resolved as close combat attacks.]
+]
+#lore("THE LORE OF YANG")[
 
-_Missile Mirror_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, roll a D6 for every shot the target unit fires in the Shooting phase. On a 4+, that shot is instead resolved against the target unit. Attacks that use templates are not affected.
+#spell("STRENGTH OF YANG", "Lore Attribute")[Whenever a spell from the Lore of Yang is successfully cast, all friendly units within 6" of the caster gain the Armour Piercing (1) special rule until the start of the caster's next magic phase.]
 
-#namecost("BLOSSOM WIND", "")
-#namecost("Level 3 Cast on 10+", "")
+#spell("JADE SHIELD", 1, cast: "6+")[_Jade Shield_ is an *augment* spell with a range of 12". The target unit gains a Magical Ward (6+) until the start of the caster's next Magic phase.]
 
-_Blossom Wind_ is a *direct damage* spell with a range of 24" that causes 2D6 Strength 2 Hits with the Armour Piercing (1) special rule. In addition, the target unit suffer \-1 to its Weapon Skill and Ballistics skill until the start of the caster's next Magic phase.
+#spell("STONE GROUND STANCE", 1, cast: "6+")[_Stone Ground Stance_ is an *augment* spell with a range of 24". Until the start of the caster's next Magic phase, the target unit gains the Stubborn special rule (if they are already Stubborn, they instead become Unbreakable) and enemies charging them lose all charge bonuses.]
 
-#namecost("TALONS OF NIGHT", "")
-#namecost("Level 3 Cast on 12+", "")
+#spell("DRAGON'S BREATH", 2, cast: "7+")[_Dragon's Breath_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 5 Hit with the Flaming Attacks special rule.]
 
-Remains in play. _Talons of Night_ is a *magical vortex* that uses the small round template. Any model touched by the template suffer a Strength 4 Hit with the Armour Piercing (1) special rule.
+#spell("WALL OF WIND & FIRE", 3, cast: "10+")[_Wall of Wind & Fire_ is a *direct damage* spell with a range of 24" that causes 2D6 Strength 3 Hits with the Flaming Attacks special rule. In addition, the target unit suffer \-1 to Leadership until the start of the caster's next Magic phase.]
 
-#namecost("ANCESTRAL WARRIORS", "")
-#namecost("Level 4 Cast on 13+", "")
+#spell("MIGHT OF HEAVEN & EARTH", 3, cast: "11+")[_Might of Heaven & Earth_ is an *augment* spell with a range of 18". The target unit gains +1 Weapon Skill, +1 Strength, Flaming Attacks and Magical Attacks special rules until the start of the caster's next Magic phase.]
 
-_Ancestral Warriors_ is a *direct damage* spell with a range of 18". The target unit suffers 5D6 Attacks with Weapon Skill 4 and Strength Hits 4, resolved as close combat attacks.
-
-= THE LORE OF YANG
-
-#namecost("STRENGTH OF YANG", "")
-#namecost("Lore Attribute", "")
-
-Whenever a spell from the Lore of Yang is successfully cast, all friendly units within 6" of the caster gain the Armour Piercing (1) special rule until the start of the caster's next magic phase.
-
-#namecost("JADE SHIELD", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Jade Shield_ is an *augment* spell with a range of 12". The target unit gains a Magical Ward (6+) until the start of the caster's next Magic phase.
-
-#namecost("STONE GROUND STANCE", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Stone Ground Stance_ is an *augment* spell with a range of 24". Until the start of the caster's next Magic phase, the target unit gains the Stubborn special rule (if they are already Stubborn, they instead become Unbreakable) and enemies charging them lose all charge bonuses.
-
-#namecost("DRAGON'S BREATH", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Dragon's Breath_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 5 Hit with the Flaming Attacks special rule.
-
-#namecost("WALL OF WIND & FIRE", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Wall of Wind & Fire_ is a *direct damage* spell with a range of 24" that causes 2D6 Strength 3 Hits with the Flaming Attacks special rule. In addition, the target unit suffer \-1 to Leadership until the start of the caster's next Magic phase.
-
-#namecost("MIGHT OF HEAVEN & EARTH", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Might of Heaven & Earth_ is an *augment* spell with a range of 18". The target unit gains +1 Weapon Skill, +1 Strength, Flaming Attacks and Magical Attacks special rules until the start of the caster's next Magic phase.
-
-#namecost("CONSTELLATION OF THE DRAGON", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Constellation of the Dragon_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 5 Hit with the Multiple Wounds (D3) special rule.
-
+#spell("CONSTELLATION OF THE DRAGON", 4, cast: "13+")[_Constellation of the Dragon_ is a *direct damage area* spell with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 5 Hit with the Multiple Wounds (D3) special rule.]
+]
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Cathayans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[

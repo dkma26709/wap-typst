@@ -84,80 +84,36 @@ All models with this special rule may re-roll failed Dangerous Terrain tests.
 #namecost("VOLLEY GUN", "")
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Multiple Shots (D6), Ponderous"))
 
-= THE LORE OF THE DEEP
+#lore("THE LORE OF THE DEEP")[
 
-#columns(2)[
-#namecost("KISS OF THE DEEP", "")
-#namecost("Lore Attribute", "")
+#spell("KISS OF THE DEEP", "Lore Attribute")[Whenever a spell from the Lore of the Deep is cast on an enemy unit, that unit also suffers D6 Strength 1 Hits which Ignores Armour Saves in addition to the effects of the spell.]
 
-Whenever a spell from the Lore of the Deep is cast on an enemy unit, that unit also suffers D6 Strength 1 Hits which Ignores Armour Saves in addition to the effects of the spell.
+#spell("TIDECALL", "Signature Spell", cast: "6+")[_Tidecall_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.]
 
-#namecost("TIDECALL", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("BLOOD IN THE WATER", 1, cast: "5+")[_Blood in the Water_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all models in the target unit gets to immediately make an additional Attack for every unsaved Wound they cause in Close Combat. These Attacks can generate additional Attacks to a maximum of +2 Attacks per attacking model in the unit.]
 
-_Tidecall_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.
+#spell("COUNTER-CURRENT", 1, cast: "5+")[Remains in play. _Counter-Current_ is a *hex* spell with a range of 24". While the spell is in effect, the target halves all its movement (rounding up) while moving closer to the caster and while being within their front arc.]
 
-#namecost("BLOOD IN THE WATER", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("FOG OF THE DAMNED", 1, cast: "6+")[Remains in Play. _Fog of the Damned_ is a *hex* spell with a range of 24". While the spell is in effect, the target cannot gain combat resolution bonuses from Ranks or Outnumber.]
 
-_Blood in the Water_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all models in the target unit gets to immediately make an additional Attack for every unsaved Wound they cause in Close Combat. These Attacks can generate additional Attacks to a maximum of +2 Attacks per attacking model in the unit.
+#spell("PRESSURE OF THE DEEP", 2, cast: "6+")[_Pressure of the Deep_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves.]
 
-#namecost("COUNTER-CURRENT", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("ABYSSAL DARKNESS", 2, cast: "7+")[_Abyssal Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next Magic phase all missile attacks targeted at the Wizard and any unit they are with suffer a \-1 To Hit penalty, and enemies need to be within 18" to be able to draw Line of Sight to them.]
 
-Remains in play. _Counter-Current_ is a *hex* spell with a range of 24". While the spell is in effect, the target halves all its movement (rounding up) while moving closer to the caster and while being within their front arc.
+#spell("GAZE INTO THE ABYSS", 2, cast: "7+")[_Gaze Into the Abyss_ is a *hex* spell with a range of 24". The target unit suffers \-1 Weapon Skill, \-1 Initiative and \-2 Leadership until the start of the caster's next Magic Phase.]
 
-#namecost("FOG OF THE DAMNED", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("STEED OF TIDES", 3, cast: "9+")[_Steed of Tides_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any position on the battlefield within 3D6" of their original position (or within any water terrain feature on the battlefield), just like a summoning spell.]
 
-Remains in Play. _Fog of the Damned_ is a *hex* spell with a range of 24". While the spell is in effect, the target cannot gain combat resolution bonuses from Ranks or Outnumber.
+#spell("WATERY GRAVE", 3, cast: "9+")[_Watery Grave_ is a *hex* spell with a range of 24". The target unit counts as moving through dangerous terrain until the start of the caster's next Magic phase. For every 4" the unit moves while the spell is in effect, the chance of them failing the test increases by +1.]
 
-#namecost("PRESSURE OF THE DEEP", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("ARCANE CORRASION", 3, cast: "10+")[_Arcane Corrasion_ is a *magic missile* that causes a number of Strength 4 Hits depending on the distance to the target. If the target is within less than 12" it suffers D6 Hits. If the target is within 12" to 24" it suffers 2D6 Hits. If the target is within 24" to 36" it suffers 3D6 Hits.]
 
-_Pressure of the Deep_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves.
+#spell("DENIZENS OF THE DEEP", 4, cast: "12+")[_Denizens of the Deep_ is a *direct damage* spell with a range of 24" that causes 6D6 Strength 2 Hits.]
 
-#namecost("ABYSSAL DARKNESS", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("KRAKEN'S PULL", 4, cast: "12+")[Remains in Play. _Kraken's Pull_ is a *magical vortex* that uses the small round template. Any model touched by the template must pass a Strength test or suffer a Wound which Ignores Armour Saves.]
 
-_Abyssal Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next Magic phase all missile attacks targeted at the Wizard and any unit they are with suffer a \-1 To Hit penalty, and enemies need to be within 18" to be able to draw Line of Sight to them.
-
-#namecost("GAZE INTO THE ABYSS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Gaze Into the Abyss_ is a *hex* spell with a range of 24". The target unit suffers \-1 Weapon Skill, \-1 Initiative and \-2 Leadership until the start of the caster's next Magic Phase.
-
-#namecost("STEED OF TIDES", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Steed of Tides_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any position on the battlefield within 3D6" of their original position (or within any water terrain feature on the battlefield), just like a summoning spell.
-
-#namecost("WATERY GRAVE", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Watery Grave_ is a *hex* spell with a range of 24". The target unit counts as moving through dangerous terrain until the start of the caster's next Magic phase. For every 4" the unit moves while the spell is in effect, the chance of them failing the test increases by +1.
-
-#namecost("ARCANE CORRASION", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Arcane Corrasion_ is a *magic missile* that causes a number of Strength 4 Hits depending on the distance to the target. If the target is within less than 12" it suffers D6 Hits. If the target is within 12" to 24" it suffers 2D6 Hits. If the target is within 24" to 36" it suffers 3D6 Hits.
-
-#namecost("DENIZENS OF THE DEEP", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Denizens of the Deep_ is a *direct damage* spell with a range of 24" that causes 6D6 Strength 2 Hits.
-
-#namecost("KRAKEN'S PULL", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in Play. _Kraken's Pull_ is a *magical vortex* that uses the small round template. Any model touched by the template must pass a Strength test or suffer a Wound which Ignores Armour Saves.
-
-#namecost("VORPAL MAELSTROM", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.
+#spell("VORPAL MAELSTROM", 4, cast: "13+")[_Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.]
 ]
-
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Pirates of Sartosa. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[

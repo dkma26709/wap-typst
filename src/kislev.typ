@@ -71,228 +71,96 @@ The enemy may not pursue a unit disengaging from combat in this manner. After ma
 
 Models with this special rule do not suffer the normal \-1 penalty To Hit for firing at a charging enemy.
 
-= THE LORE OF ICE
+#lore("THE LORE OF ICE")[
 
-#columns(2)[
-#namecost("FROST SHIELD", "")
-#namecost("Lore Attribute", "")
+#spell("FROST SHIELD", "Lore Attribute")[For each spell the Wizard successfully casts from the Lore of Ice, the Wizard and any unit they are with gain the Natural Armour (6+) special rule until the start of their next Magic phase. However, this save cannot be used against Flaming Attacks.]
 
-For each spell the Wizard successfully casts from the Lore of Ice, the Wizard and any unit they are with gain the Natural Armour (6+) special rule until the start of their next Magic phase. However, this save cannot be used against Flaming Attacks.
+#spell("MIDWINTER'S KISS", "Signature Spell", cast: "7+")[_Midwinter’s Kiss_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 Hit with the Ice Attacks special rule.]
 
-#namecost("MIDWINTER'S KISS", "")
-#namecost("Signature Spell Cast on 7+", "")
+#spell("FORM OF THE FROSTFIEND", 1, cast: "6+")[Remains in play. _Form of the Frostfiend_ is an *augment* spell that may be cast on the Wizard itself if they are on foot. While active, they gain the Fly (9) and Terror special rules, +2 Strength, +2 Toughness and +3 Attacks. The effects of all magic items except talismans are ignored for the duration of this spell.]
 
-_Midwinter’s Kiss_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 Hit with the Ice Attacks special rule.
+#spell("CHILL VOICE", 1, cast: "7+")[Remains in play. _Chill Voice_ is an *augment* spell that may be cast on the Wizard itself. While the spell is in effect, the Wizard has +1 Leadership and the Inspiring Presence (12) special rule.]
 
-#namecost("FORM OF THE FROSTFIEND", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("FROSTBEAM", 1, cast: "7+")[_Frostbeam_ is a *direct damage area* spell that uses the line template. Place it 30" in length, directly away from the caster's front arc. Each model in the way suffers a Strength 4 hit with the Armour Piercing (1) and Ice Attacks special rules.]
 
-Remains in play. _Form of the Frostfiend_ is an *augment* spell that may be cast on the Wizard itself if they are on foot. While active, they gain the Fly (9) and Terror special rules, +2 Strength, +2 Toughness and +3 Attacks. The effects of all magic items except talismans are ignored for the duration of this spell.
+#spell("ICE SHEET", 2, cast: "7+")[_Ice Sheet_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target has all its movement halved and all models in it must take a Dangerous Terrain test if they move.]
 
-#namecost("CHILL VOICE", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("BRIDGE OF ICE", 2, cast: "8+")[_Bridge of Ice_ is a *conveyance* spell with a range of 18". The target may immediately make a move straight forward as if it were the Remaining Moves sub-phase.]
 
-Remains in play. _Chill Voice_ is an *augment* spell that may be cast on the Wizard itself. While the spell is in effect, the Wizard has +1 Leadership and the Inspiring Presence (12) special rule.
+#spell("FROST BLADES", 2, cast: "8+")[_Frost Blades_ is an *augment* spell with a range of 12". The target gains the Armour Piercing (1), Ice Attacks and Magical Attacks special rules until the start of the caster's next Magic phase.]
 
-#namecost("FROSTBEAM", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("PIERCING ICICLE", 3, cast: "8+")[_Piercing Icicle_ is a *magic missile* with a range of 24". It inflicts a single Strength 6 hit with the Multiple Wounds (D3) and Ice Attacks special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.]
 
-_Frostbeam_ is a *direct damage area* spell that uses the line template. Place it 30" in length, directly away from the caster's front arc. Each model in the way suffers a Strength 4 hit with the Armour Piercing (1) and Ice Attacks special rules.
+#spell("CHILL BLAST", 3, cast: "9+")[_Chill Blast_ is a *magic missile* with a range of 18" that causes D6 Strength 5 hits with the Ice Attacks and Ignores Armour saves special rules.]
 
-#namecost("ICE SHEET", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("DEATH FROST", 3, cast: "10+")[_Death Frost_ is a *direct damage* spell with a range of 12" and targets a single enemy model (even a character in a unit). The target must pass a Toughness test or suffer a Wound with the Multiple Wounds (D6) and Ignores Armour saves special rules. This is an Ice Attack.]
 
-_Ice Sheet_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target has all its movement halved and all models in it must take a Dangerous Terrain test if they move.
+#spell("GLACIAL BARRIER", 4, cast: "10+")[_Glacial Barrier_ is a *summoning* spell with a range of 24" that summons a wall (obstacle). This wall has a Line of Sight value of 3 and is treated as impassable terrain. If it is hit by a cannon, the centre hole of a stone thrower, a fire thrower or breath weapon with the Flaming Attacks special rule it is automatically destroyed.]
 
-#namecost("BRIDGE OF ICE", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("CRYSTAL SANCTUARY", 4, cast: "12+")[Remains in play. _Crystal Sanctuary_ is an *augment* spell that affects the Wizard and any unit they are with. While the spell is in effect, the unit gains the Magical Ward (4+) special rule. However, if it moves for any reason, this Magical Ward is lost.]
 
-_Bridge of Ice_ is a *conveyance* spell with a range of 18". The target may immediately make a move straight forward as if it were the Remaining Moves sub-phase.
-
-#namecost("FROST BLADES", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Frost Blades_ is an *augment* spell with a range of 12". The target gains the Armour Piercing (1), Ice Attacks and Magical Attacks special rules until the start of the caster's next Magic phase.
-
-#namecost("PIERCING ICICLE", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Piercing Icicle_ is a *magic missile* with a range of 24". It inflicts a single Strength 6 hit with the Multiple Wounds (D3) and Ice Attacks special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.
-
-#namecost("CHILL BLAST", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Chill Blast_ is a *magic missile* with a range of 18" that causes D6 Strength 5 hits with the Ice Attacks and Ignores Armour saves special rules.
-
-#namecost("DEATH FROST", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Death Frost_ is a *direct damage* spell with a range of 12" and targets a single enemy model (even a character in a unit). The target must pass a Toughness test or suffer a Wound with the Multiple Wounds (D6) and Ignores Armour saves special rules. This is an Ice Attack.
-
-#namecost("GLACIAL BARRIER", "")
-#namecost("Level 4 Cast on 10+", "")
-
-_Glacial Barrier_ is a *summoning* spell with a range of 24" that summons a wall (obstacle). This wall has a Line of Sight value of 3 and is treated as impassable terrain. If it is hit by a cannon, the centre hole of a stone thrower, a fire thrower or breath weapon with the Flaming Attacks special rule it is automatically destroyed.
-
-#namecost("CRYSTAL SANCTUARY", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in play. _Crystal Sanctuary_ is an *augment* spell that affects the Wizard and any unit they are with. While the spell is in effect, the unit gains the Magical Ward (4+) special rule. However, if it moves for any reason, this Magical Ward is lost.
-
-#namecost("HEART OF WINTER", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Heart of Winter_ is a *direct damage area* with a range of 18" that uses the small round template. All models under the template must pass a Toughness test or suffer one Wound which Ignores Armour saves. This is an Ice Attack. In addition, all models in the unit have all their movement halved until the start of the caster's next turn.
+#spell("HEART OF WINTER", 4, cast: "15+")[_Heart of Winter_ is a *direct damage area* with a range of 18" that uses the small round template. All models under the template must pass a Toughness test or suffer one Wound which Ignores Armour saves. This is an Ice Attack. In addition, all models in the unit have all their movement halved until the start of the caster's next turn.]
 ]
+#lore("THE LORE OF TEMPEST")[
 
-= THE LORE OF TEMPEST
+#spell("FREEZING WINDS", "Lore Attribute")[Every time a Wizard successfully casts a spell from the Lore of Tempest, all enemy units within 12" of the Wizard suffer a \-1 penalty to their Movement (to a minimum of 1) until the start of the caster's next Magic phase.]
 
-#columns(2)[
-#namecost("FREEZING WINDS", "")
-#namecost("Lore Attribute", "")
+#spell("SHARDSTORM", "Signature Spell", cast: "6+")[_Shardstorm_ is a *magic missile* spell with a range of 24". The target suffers 2D6 Strength 3 Hits.]
 
-Every time a Wizard successfully casts a spell from the Lore of Tempest, all enemy units within 12" of the Wizard suffer a \-1 penalty to their Movement (to a minimum of 1) until the start of the caster's next Magic phase.
+#spell("SWIFTWING", 1, cast: "6+")[_Swiftwing_ is an *augment* spell with a range of 18". The target gains +2 Movement, Devastating Charge and the Strider special rules until the start of the caster's next Magic phase.]
 
-#namecost("SHARDSTORM", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("WIND BLAST", 1, cast: "6+")[_Wind Blast_ is a *magic missile* with a range of 24". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain it stops 1" away and suffers D6 Strength 3 hits. If the target comes into contact with another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.]
 
-_Shardstorm_ is a *magic missile* spell with a range of 24". The target suffers 2D6 Strength 3 Hits.
+#spell("GUST OF TRUE FLIGHT", 1, cast: "7+")[_Gust of True Flight_ is an *augment* spell with a range of 24". Until the start of the caster's next Magic phase, the target gains +1 To Hit and +12" maximum range with missile weapons.]
 
-#namecost("SWIFTWING", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("HAILSTORM", 2, cast: "7+")[_Hailstorm_ is a *direct damage area* with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 3 Hit.]
 
-_Swiftwing_ is an *augment* spell with a range of 18". The target gains +2 Movement, Devastating Charge and the Strider special rules until the start of the caster's next Magic phase.
+#spell("CURSE OF THE MIDNIGHT WIND", 2, cast: "8+")[_Curse of the Midnight Wind_ is a *hex* spell with a range of 24". The target suffers a \-1 to their Weapon Skill, Ballistics Skill and Leadership until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before firing, or the shot(s) are lost. This is an Ice Attack.]
 
-#namecost("WIND BLAST", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("STORMCALL", 2, cast: "8+")[_Stormcall_ is a *direct damage area* with a range of 24" that uses the large round template. Roll a D6 for each model underneath the template; on the roll of a 5+, the model suffers a Strength 5 Hit with the Lightning Attacks special rule.]
 
-_Wind Blast_ is a *magic missile* with a range of 24". The target is 'pushed' 2D3" directly away from the caster (it does not change facing). If the target comes into contact with impassable terrain it stops 1" away and suffers D6 Strength 3 hits. If the target comes into contact with another unit it stops 1" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits.
+#spell("BITING WIND", 3, cast: "9+")[_Biting Wind_ is a *direct damage area* spell that uses the line template. Place it 18" in length, directly away from the caster's front arc. All models in each unit in the way suffer a Strength 2 hit.]
 
-#namecost("GUST OF TRUE FLIGHT", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("HAWKS OF MISKA", 3, cast: "9+")[_Hawks of Miska_ is a *hex* spell with a range of 18". The target must take a Panic test with a \-3 Leadership penalty.]
 
-_Gust of True Flight_ is an *augment* spell with a range of 24". Until the start of the caster's next Magic phase, the target gains +1 To Hit and +12" maximum range with missile weapons.
+#spell("THE HOWLER WIND", 3, cast: "9+")[_The Howler Wind_ is an *augment aura* spell with a range of 12". Until the start of the caster's next Magic phase, all missile attacks targeting friendly units within range suffer \-1 To Hit.]
 
-#namecost("HAILSTORM", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("GIFT OF THE WINTER WIND", 4, cast: "10+")[_Gift of the Winter Wind_ is a *hex* spell with a range of 24". The target must take a Leadership test on 3D6, suffering a Wound which Ignores Armour saves and Regeneration for every point by which the test is failed.]
 
-_Hailstorm_ is a *direct damage area* with a range of 24" that uses the small round template. All models underneath the template suffer a Strength 3 Hit.
+#spell("INVOCATION OF THE ICE STORM", 4, cast: "14+")[Remains in play. _Invocation of the Ice Storm_ is a *summoning* spell with a range of 24". Place a marker anywhere within range. While the spell is in effect, all units within 6" of the marker cannot draw Line of Sight to targets outside this area.]
 
-#namecost("CURSE OF THE MIDNIGHT WIND", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Curse of the Midnight Wind_ is a *hex* spell with a range of 24". The target suffers a \-1 to their Weapon Skill, Ballistics Skill and Leadership until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before firing, or the shot(s) are lost. This is an Ice Attack.
-
-#namecost("STORMCALL", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Stormcall_ is a *direct damage area* with a range of 24" that uses the large round template. Roll a D6 for each model underneath the template; on the roll of a 5+, the model suffers a Strength 5 Hit with the Lightning Attacks special rule.
-
-#namecost("BITING WIND", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Biting Wind_ is a *direct damage area* spell that uses the line template. Place it 18" in length, directly away from the caster's front arc. All models in each unit in the way suffer a Strength 2 hit.
-
-#namecost("HAWKS OF MISKA", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Hawks of Miska_ is a *hex* spell with a range of 18". The target must take a Panic test with a \-3 Leadership penalty.
-
-#namecost("THE HOWLER WIND", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_The Howler Wind_ is an *augment aura* spell with a range of 12". Until the start of the caster's next Magic phase, all missile attacks targeting friendly units within range suffer \-1 To Hit.
-
-#namecost("GIFT OF THE WINTER WIND", "")
-#namecost("Level 4 Cast on 10+", "")
-
-_Gift of the Winter Wind_ is a *hex* spell with a range of 24". The target must take a Leadership test on 3D6, suffering a Wound which Ignores Armour saves and Regeneration for every point by which the test is failed.
-
-#namecost("INVOCATION OF THE ICE STORM", "")
-#namecost("Level 4 Cast on 14+", "")
-
-Remains in play. _Invocation of the Ice Storm_ is a *summoning* spell with a range of 24". Place a marker anywhere within range. While the spell is in effect, all units within 6" of the marker cannot draw Line of Sight to targets outside this area.
-
-#namecost("ICESHARD BLIZZARD", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Iceshard Blizzard_ is a *magical vortex* that uses the small round template. Any model touched by the template suffers a Strength 3 Hit with the Ice Attacks special rule. In addition, all the unit's movement is halved and all non-magical missile attacks suffer \-1 To Hit until the start of the caster's next turn.
+#spell("ICESHARD BLIZZARD", 4, cast: "15+")[Remains in play. _Iceshard Blizzard_ is a *magical vortex* that uses the small round template. Any model touched by the template suffers a Strength 3 Hit with the Ice Attacks special rule. In addition, all the unit's movement is halved and all non-magical missile attacks suffer \-1 To Hit until the start of the caster's next turn.]
 ]
+#lore("THE LORE OF THE HAGS")[
 
-= THE LORE OF THE HAGS
+#spell("FATE OF INTERLOPERS", "Lore Attribute")[If a *hex* spell from the Lore of the Hags is successfully cast on an enemy unit, that unit must re-roll 6’s when rolling to Hit until the start of the casters next Magic phase.]
 
-#columns(2)[
-#namecost("FATE OF INTERLOPERS", "")
-#namecost("Lore Attribute", "")
+#spell("SUMMON SPIRITS", "Signature Spell", cast: "5+")[_Summon Spirits_ is a *magic missile* with a range of 24" and causes 2D6 Strength 2 Armour Piercing (1) hits.]
 
-If a *hex* spell from the Lore of the Hags is successfully cast on an enemy unit, that unit must re-roll 6’s when rolling to Hit until the start of the casters next Magic phase.
+#spell("FORM OF THE ANCIENT WIDOW", 1, cast: "6+")[Remains in play. _Form of the Ancient Widow_ is an *augment* spell that may be cast on the wizard itself if they are on foot. While active, she gains the Terror and Armour Piercing (1) special rules, +3 Strength, +2 Toughness and +3 Attacks. The effects of all magic items except talismans are ignored for the duration of this spell.]
 
-#namecost("SUMMON SPIRITS", "")
-#namecost("Signature spell Cast on 5+", "")
+#spell("HAUNTING HORROR", 1, cast: "7+")[_Haunting Horror_ is a *hex* spell with a range of 24". The target treats all units as causing Terror against them until the start of the casters next Magic phase.]
 
-_Summon Spirits_ is a *magic missile* with a range of 24" and causes 2D6 Strength 2 Armour Piercing (1) hits.
+#spell("WITCHBREW", 1, cast: "7+")[_Witchbrew_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 Hit with the Poisoned Attacks special rule.]
 
-#namecost("FORM OF THE ANCIENT WIDOW", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("THE FORBIDDEN FENS", 2, cast: "8+")[Remains in play. _The Forbidden Fens_ is a *hex* with a range of 24". While the spell is in effect, the target counts as moving through marshland.]
 
-Remains in play. _Form of the Ancient Widow_ is an *augment* spell that may be cast on the wizard itself if they are on foot. While active, she gains the Terror and Armour Piercing (1) special rules, +3 Strength, +2 Toughness and +3 Attacks. The effects of all magic items except talismans are ignored for the duration of this spell.
+#spell("FORTUNE TOLD", 2, cast: "8+")[_Fortune Told_ is an *augment* spell that may be cast on the wizard herself. Until the start of the caster’s next Magic phase, all models in the same unit as the caster gain a Magical Ward (6+) and may re-roll failed rolls To Hit in close combat and with missile weapons.]
 
-#namecost("HAUNTING HORROR", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("MALEDICTION OF MADNESS", 2, cast: "9+")[_Malediction of Madness_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target gains the Frenzy special rule, suffers a \-3 penalty to all Berserk Rage tests and suffer \-1 To Hit in both close combat and with missile weapons.]
 
-_Haunting Horror_ is a *hex* spell with a range of 24". The target treats all units as causing Terror against them until the start of the casters next Magic phase.
+#spell("CURSE OF THE ANCIENT WITCH", 3, cast: "10+")[_Curse of the Ancient Witch_ is a *hex* spell with a range of 24". The target must re-roll successful armour saves until the start of the caster’s next magic phase. In addition, roll a D6; on a 3+, choose another enemy unit within 6" of the initial target – this unit also suffers the effects of the spell. Keep rolling for further victims (each within 6" of the previous target) until you fail or there are no more viable targets.]
 
-#namecost("WITCHBREW", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("CURSED CAULDRON", 3, cast: "10+")[_Cursed Cauldron_ is a *direct damage area* spell with a range of 24" that uses the small round template. Place D3 templates anywhere within range. All models underneath each template suffer a Strength 3 Hit.]
 
-_Witchbrew_ is a *direct damage* spell. The caster makes a Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 Hit with the Poisoned Attacks special rule.
+#spell("VENGEANCE OF SPIRITS", 3, cast: "11+")[Remains in play. _Vengeance of Spirits_ is a *hex* spell with a range of 24". All models in the target unit suffer a Strength 1 Hit with the Ignores Armour saves special rule. While the spell is in effect, all models keep suffering Hits at the end of each subsequent Magic phase, with the Strength of these Hits getting increased by 1 every player turn.]
 
-#namecost("THE FORBIDDEN FENS", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("CURSED PLEDGE", 4, cast: "11+")[_Cursed Pledge_ is a *hex* spell with a range of 24". You may force the unit to do one of the following; make a move as if it were the Remaining Moves sub-phase or shoot with their missile weapons at a unit on their own side, as chosen by the caster. The target can refuse to do either of these things, but if it does, each model in it suffers a Hit which Wounds on a 4+. Saves are taken as normal.]
 
-Remains in play. _The Forbidden Fens_ is a *hex* with a range of 24". While the spell is in effect, the target counts as moving through marshland.
+#spell("HAG'S CURSE", 4, cast: "12+")[Remains in play. _Hag's Curse_ is a *hex* spell with a range of 24". The target suffers \-1 to all their Characteristics (to a minimum of 1). While the spell is in effect, the target suffers an additional \-1 to all their characteristics at the end of each Magic phase.]
 
-#namecost("FORTUNE TOLD", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Fortune Told_ is an *augment* spell that may be cast on the wizard herself. Until the start of the caster’s next Magic phase, all models in the same unit as the caster gain a Magical Ward (6+) and may re-roll failed rolls To Hit in close combat and with missile weapons.
-
-#namecost("MALEDICTION OF MADNESS", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Malediction of Madness_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target gains the Frenzy special rule, suffers a \-3 penalty to all Berserk Rage tests and suffer \-1 To Hit in both close combat and with missile weapons.
-
-#namecost("CURSE OF THE ANCIENT WITCH", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Curse of the Ancient Witch_ is a *hex* spell with a range of 24". The target must re-roll successful armour saves until the start of the caster’s next magic phase. In addition, roll a D6; on a 3+, choose another enemy unit within 6" of the initial target – this unit also suffers the effects of the spell. Keep rolling for further victims (each within 6" of the previous target) until you fail or there are no more viable targets.
-
-#namecost("CURSED CAULDRON", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Cursed Cauldron_ is a *direct damage area* spell with a range of 24" that uses the small round template. Place D3 templates anywhere within range. All models underneath each template suffer a Strength 3 Hit.
-
-#namecost("VENGEANCE OF SPIRITS", "")
-#namecost("Level 3 Cast on 11+", "")
-
-Remains in play. _Vengeance of Spirits_ is a *hex* spell with a range of 24". All models in the target unit suffer a Strength 1 Hit with the Ignores Armour saves special rule. While the spell is in effect, all models keep suffering Hits at the end of each subsequent Magic phase, with the Strength of these Hits getting increased by 1 every player turn.
-
-#namecost("CURSED PLEDGE", "")
-#namecost("Level 4 Cast on 11+", "")
-
-_Cursed Pledge_ is a *hex* spell with a range of 24". You may force the unit to do one of the following; make a move as if it were the Remaining Moves sub-phase or shoot with their missile weapons at a unit on their own side, as chosen by the caster. The target can refuse to do either of these things, but if it does, each model in it suffers a Hit which Wounds on a 4+. Saves are taken as normal.
-
-#namecost("HAG'S CURSE", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in play. _Hag's Curse_ is a *hex* spell with a range of 24". The target suffers \-1 to all their Characteristics (to a minimum of 1). While the spell is in effect, the target suffers an additional \-1 to all their characteristics at the end of each Magic phase.
-
-#namecost("CURSE OF SICKNESS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Curse of Sickness_ is a *direct damage* spell with a range of 24". All models in the unit must pass a Toughness test or suffer one Wound which Ignores Armour saves.
+#spell("CURSE OF SICKNESS", 4, cast: "15+")[_Curse of Sickness_ is a *direct damage* spell with a range of 24". All models in the unit must pass a Toughness test or suffer one Wound which Ignores Armour saves.]
 ]
-
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Kislevites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[

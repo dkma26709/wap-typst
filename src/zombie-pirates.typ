@@ -90,154 +90,66 @@ Models with this special rule must roll a D6 for every To Hit roll of 1 with mis
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (D6), Ponderous, Rapid Fire"))
 ]
 
-= THE LORE OF NECROMANCY
+#lore("THE LORE OF NECROMANCY")[
 
-#columns(2)[
-#namecost("THE CURSE OF UNDEATH", "")
-#namecost("Lore Attribute", "")
+#spell("THE CURSE OF UNDEATH", "Lore Attribute")[When a spell from the Lore of Necromancy is successfully cast, all Undead units (excluding mounts) within 6" of the caster regain 1 Wound (Core Units regain D3 Wounds) following the rules for _Invocation of Nehek._]
 
-When a spell from the Lore of Necromancy is successfully cast, all Undead units (excluding mounts) within 6" of the caster regain 1 Wound (Core Units regain D3 Wounds) following the rules for _Invocation of Nehek._
+#spell("INVOCATION OF NEHEK", "Signature Spell", cast: "6+")[_Invocation of Nehek_ is a *summoning* spell with a range of 18" that targets Undead (excluding mounts). The target immediately regains a number of Wounds as follows: Core Units gain 2D6 Wounds; Special Units (except Cavalry) gain D6 Wounds. Characters, Special Units that are Cavalry and Rare Units regain D3 Wounds per successful casting. Models gained are distributed as a summoning spell. Any characters in a unit can only be healed if targeted separately from the rest of the unit, in which case only they are healed.]
 
-#namecost("INVOCATION OF NEHEK", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("HAND OF DUST", 1, cast: "5+")[Remains in play. _Hand of Dust_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the caster gains an additional special attack in close combat that does not benefit from any other magic items or special rule. If this Attack Hits, the target suffers an automatic Wound with the Ignores Armour Saves and Multiple Wounds (D6) special rules.]
 
-_Invocation of Nehek_ is a *summoning* spell with a range of 18" that targets Undead (excluding mounts). The target immediately regains a number of Wounds as follows: Core Units gain 2D6 Wounds; Special Units (except Cavalry) gain D6 Wounds. Characters, Special Units that are Cavalry and Rare Units regain D3 Wounds per successful casting. Models gained are distributed as a summoning spell. Any characters in a unit can only be healed if targeted separately from the rest of the unit, in which case only they are healed.
+#spell("VANHEL'S DANSE MACABRE", 1, cast: "5+")[_Vanhel's Danse Macabre_ is a *conveyance* spell with a range of 24" that targets Undead (including mounts). The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).]
 
-#namecost("HAND OF DUST", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("HELLISH VIGOUR", 1, cast: "7+")[_Hellish Vigour_ is an *augment* spell with a range of 18". All Undead models (including mounts) in the unit gain the Always Strikes First special rule and may re-roll failed To Hit rolls in Close Combat until the start of the caster's next Magic phase.]
 
-Remains in play. _Hand of Dust_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the caster gains an additional special attack in close combat that does not benefit from any other magic items or special rule. If this Attack Hits, the target suffers an automatic Wound with the Ignores Armour Saves and Multiple Wounds (D6) special rules.
+#spell("FOUNTAINS OF BLOOD", 2, cast: "7+")[_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, Vampires gain a +1 to bonus to any The Red Thirst rolls for Wounds caused against this unit.]
 
-#namecost("VANHEL'S DANSE MACABRE", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("DEATHLY CABAL", 2, cast: "8+")[_Deathly Cabal_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target gains the Fear and Magical Ward (6+) special rules.]
 
-_Vanhel's Danse Macabre_ is a *conveyance* spell with a range of 24" that targets Undead (including mounts). The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).
+#spell("GAZE OF NAGASH", 2, cast: "9+")[_Gaze of Nagash_ is a *magic missile* with a range of 24" that causes 2D6 Strength 4 hits.]
 
-#namecost("HELLISH VIGOUR", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("RAISE DEAD", 3, cast: "9+")[_Raise Dead_ is a *summoning* spell with a range of 18" that brings a unit of Zombies into play. Roll 2D6+3. This is how many models comprise the new unit. The caster can choose to summon 2D6+3 Skeleton Warriors with shields instead. If they do so, the casting value is increased to 12+.]
 
-_Hellish Vigour_ is an *augment* spell with a range of 18". All Undead models (including mounts) in the unit gain the Always Strikes First special rule and may re-roll failed To Hit rolls in Close Combat until the start of the caster's next Magic phase.
+#spell("UNQUIET SPIRITS", 3, cast: "10+")[_Unquiet Spirits_ is a *direct damage* spell with a range of 24". The target suffers 3D6 Strength 2 hits with the Ignores Armour Saves special rule.]
 
-#namecost("FOUNTAINS OF BLOOD", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("MALEDICTION OF NAGASH", 3, cast: "11+")[_Malediction of Nagash_ is a *hex* spell with a range of 24". The target halves their Strength (rounding down) until the start of the caster's next Magic phase.]
 
-_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, Vampires gain a +1 to bonus to any The Red Thirst rolls for Wounds caused against this unit.
+#spell("SPIRITUAL VORTEX", 4, cast: "11+")[Remains in play. _Spiritual Vortex_ is a *summoning* spell with a range of 24" that summons the 5" template, which may be placed over an enemy unit. While the spell is in effect, the template counts as Dangerous Terrain, and enemy units within 6" of it suffer \-1 to their Leadership.]
 
-#namecost("DEATHLY CABAL", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("CURSE OF YEARS", 4, cast: "12+")[Remains in Play. _Curse of Years_ is a *hex* spell with a range of 18". When cast, roll a D6 for every model in the target unit – on a score of 6 the model suffers a Wound which Ignores Armour Saves. At the end of the next Magic phase, roll again for each model in the unit, they will suffer a Wound on a 5+, and so on, to a maximum of 2+.]
 
-_Deathly Cabal_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target gains the Fear and Magical Ward (6+) special rules.
-
-#namecost("GAZE OF NAGASH", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Gaze of Nagash_ is a *magic missile* with a range of 24" that causes 2D6 Strength 4 hits.
-
-#namecost("RAISE DEAD", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Raise Dead_ is a *summoning* spell with a range of 18" that brings a unit of Zombies into play. Roll 2D6+3. This is how many models comprise the new unit. The caster can choose to summon 2D6+3 Skeleton Warriors with shields instead. If they do so, the casting value is increased to 12+.
-
-#namecost("UNQUIET SPIRITS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Unquiet Spirits_ is a *direct damage* spell with a range of 24". The target suffers 3D6 Strength 2 hits with the Ignores Armour Saves special rule.
-
-#namecost("MALEDICTION OF NAGASH", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Malediction of Nagash_ is a *hex* spell with a range of 24". The target halves their Strength (rounding down) until the start of the caster's next Magic phase.
-
-#namecost("SPIRITUAL VORTEX", "")
-#namecost("Level 4 Cast on 11+", "")
-
-Remains in play. _Spiritual Vortex_ is a *summoning* spell with a range of 24" that summons the 5" template, which may be placed over an enemy unit. While the spell is in effect, the template counts as Dangerous Terrain, and enemy units within 6" of it suffer \-1 to their Leadership.
-
-#namecost("CURSE OF YEARS", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in Play. _Curse of Years_ is a *hex* spell with a range of 18". When cast, roll a D6 for every model in the target unit – on a score of 6 the model suffers a Wound which Ignores Armour Saves. At the end of the next Magic phase, roll again for each model in the unit, they will suffer a Wound on a 5+, and so on, to a maximum of 2+.
-
-#namecost("WIND OF UNDEATH", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit within range suffer 2D6 Strength 3 Hits which Ignores Armour Saves.
+#spell("WIND OF UNDEATH", 4, cast: "13+")[_Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit within range suffer 2D6 Strength 3 Hits which Ignores Armour Saves.]
 ]
+#lore("THE LORE OF THE DEEP")[
 
-= THE LORE OF THE DEEP
+#spell("KISS OF THE DEEP", "Lore Attribute")[Whenever a spell from the Lore of the Deep is cast on an enemy unit, that unit also suffers D6 Strength 1 Hits which Ignores Armour Saves in addition to the effects of the spell.]
 
-#columns(2)[
-#namecost("KISS OF THE DEEP", "")
-#namecost("Lore Attribute", "")
+#spell("TIDECALL", "Signature Spell", cast: "6+")[_Tidecall_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.]
 
-Whenever a spell from the Lore of the Deep is cast on an enemy unit, that unit also suffers D6 Strength 1 Hits which Ignores Armour Saves in addition to the effects of the spell.
+#spell("BLOOD IN THE WATER", 1, cast: "5+")[_Blood in the Water_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all models in the target unit gets to immediately make an additional Attack for every unsaved Wound they cause in Close Combat. These Attacks can generate additional Attacks to a maximum of +2 Attacks per attacking model in the unit.]
 
-#namecost("TIDECALL", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("COUNTER-CURRENT", 1, cast: "5+")[Remains in play. _Counter-Current_ is a *hex* spell with a range of 24". While the spell is in effect, the target halves all its movement (rounding up) while moving closer to the caster and while being within their front arc.]
 
-_Tidecall_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.
+#spell("FOG OF THE DAMNED", 1, cast: "6+")[Remains in Play. _Fog of the Damned_ is a *hex* spell with a range of 24". While the spell is in effect, the target cannot gain combat resolution bonuses from Ranks or Outnumber.]
 
-#namecost("BLOOD IN THE WATER", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("PRESSURE OF THE DEEP", 2, cast: "6+")[_Pressure of the Deep_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves.]
 
-_Blood in the Water_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all models in the target unit gets to immediately make an additional Attack for every unsaved Wound they cause in Close Combat. These Attacks can generate additional Attacks to a maximum of +2 Attacks per attacking model in the unit.
+#spell("ABYSSAL DARKNESS", 2, cast: "7+")[_Abyssal Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next Magic phase all missile attacks targeted at the Wizard and any unit they are with suffer a \-1 To Hit penalty, and enemies need to be within 18" to be able to draw Line of Sight to them.]
 
-#namecost("COUNTER-CURRENT", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("GAZE INTO THE ABYSS", 2, cast: "7+")[_Gaze Into the Abyss_ is a *hex* spell with a range of 24". The target unit suffers \-1 Weapon Skill, \-1 Initiative and \-2 Leadership until the start of the caster's next Magic Phase.]
 
-Remains in play. _Counter-Current_ is a *hex* spell with a range of 24". While the spell is in effect, the target halves all its movement (rounding up) while moving closer to the caster and while being within their front arc.
+#spell("STEED OF TIDES", 3, cast: "9+")[_Steed of Tides_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any position on the battlefield within 3D6" of their original position (or within any water terrain feature on the battlefield), just like a summoning spell.]
 
-#namecost("FOG OF THE DAMNED", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("WATERY GRAVE", 3, cast: "9+")[_Watery Grave_ is a *hex* spell with a range of 24". The target unit counts as moving through dangerous terrain until the start of the caster's next Magic phase. For every 4" the unit moves while the spell is in effect, the chance of them failing the test increases by +1.]
 
-Remains in Play. _Fog of the Damned_ is a *hex* spell with a range of 24". While the spell is in effect, the target cannot gain combat resolution bonuses from Ranks or Outnumber.
+#spell("ARCANE CORRASION", 3, cast: "10+")[_Arcane Corrasion_ is a *magic missile* that causes a number of Strength 4 Hits depending on the distance to the target. If the target is within less than 12" it suffers D6 Hits. If the target is within 12" to 24" it suffers 2D6 Hits. If the target is within 24" to 36" it suffers 3D6 Hits.]
 
-#namecost("PRESSURE OF THE DEEP", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("DENIZENS OF THE DEEP", 4, cast: "12+")[_Denizens of the Deep_ is a *direct damage* spell with a range of 24" that causes 6D6 Strength 2 Hits.]
 
-_Pressure of the Deep_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Toughness tests. Each failed Toughness test causes a Wound which Ignores Armour Saves.
+#spell("KRAKEN'S PULL", 4, cast: "12+")[Remains in Play. _Kraken's Pull_ is a *magical vortex* that uses the small round template. Any model touched by the template must pass a Strength test or suffer a Wound which Ignores Armour Saves.]
 
-#namecost("ABYSSAL DARKNESS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Abyssal Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next Magic phase all missile attacks targeted at the Wizard and any unit they are with suffer a \-1 To Hit penalty, and enemies need to be within 18" to be able to draw Line of Sight to them.
-
-#namecost("GAZE INTO THE ABYSS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Gaze Into the Abyss_ is a *hex* spell with a range of 24". The target unit suffers \-1 Weapon Skill, \-1 Initiative and \-2 Leadership until the start of the caster's next Magic Phase.
-
-#namecost("STEED OF TIDES", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Steed of Tides_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any position on the battlefield within 3D6" of their original position (or within any water terrain feature on the battlefield), just like a summoning spell.
-
-#namecost("WATERY GRAVE", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Watery Grave_ is a *hex* spell with a range of 24". The target unit counts as moving through dangerous terrain until the start of the caster's next Magic phase. For every 4" the unit moves while the spell is in effect, the chance of them failing the test increases by +1.
-
-#namecost("ARCANE CORRASION", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Arcane Corrasion_ is a *magic missile* that causes a number of Strength 4 Hits depending on the distance to the target. If the target is within less than 12" it suffers D6 Hits. If the target is within 12" to 24" it suffers 2D6 Hits. If the target is within 24" to 36" it suffers 3D6 Hits.
-
-#namecost("DENIZENS OF THE DEEP", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Denizens of the Deep_ is a *direct damage* spell with a range of 24" that causes 6D6 Strength 2 Hits.
-
-#namecost("KRAKEN'S PULL", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in Play. _Kraken's Pull_ is a *magical vortex* that uses the small round template. Any model touched by the template must pass a Strength test or suffer a Wound which Ignores Armour Saves.
-
-#namecost("VORPAL MAELSTROM", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.
+#spell("VORPAL MAELSTROM", 4, cast: "13+")[_Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.]
 ]
-
 = VAMPIRIC POWERS
 
 #columns(2)[

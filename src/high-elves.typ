@@ -98,80 +98,36 @@ Heavy armour. Models with dragon armour gain a Magical Ward (6+) and the Immunit
 
 The bearer gains the Natural Armour (6+) special rule against missile attacks.
 
-= THE LORE OF HIGH MAGIC
+#lore("THE LORE OF HIGH MAGIC")[
 
-#columns(2)[
-#namecost("SHIELD OF SAPHERY", "")
-#namecost("Lore Attribute", "")
+#spell("SHIELD OF SAPHERY", "Lore Attribute")[Each time a spell from the Lore of High Magic is successfully cast, the caster and their unit immediately gain a Magical Ward (6+) until the beginning of the caster's next Magic phase. This bonus is cumulative.]
 
-Each time a spell from the Lore of High Magic is successfully cast, the caster and their unit immediately gain a Magical Ward (6+) until the beginning of the caster's next Magic phase. This bonus is cumulative.
+#spell("DRAIN MAGIC", "Signature Spell", cast: "6+")[_Drain Magic_ can be cast on any unit (friend or foe) and has a range of 24". If the target is a friendly unit, Drain Magic is an *augment* spell. If the target is an enemy unit, Drain Magic is a *hex* spell. In either case, all Remains in Play spells affecting the unit are immediately dispelled, and spells lasting to the caster's next Magic phase immediately come to an end.]
 
-#namecost("DRAIN MAGIC", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("APOTHEOSIS", 1, cast: "5+")[_Apotheosis_ is an *augment* spell that targets a single model within 18". The target immediately regains a single lost Wound and gains the Fear special rule until the start of the caster's next Magic phase.]
 
-_Drain Magic_ can be cast on any unit (friend or foe) and has a range of 24". If the target is a friendly unit, Drain Magic is an *augment* spell. If the target is an enemy unit, Drain Magic is a *hex* spell. In either case, all Remains in Play spells affecting the unit are immediately dispelled, and spells lasting to the caster's next Magic phase immediately come to an end.
+#spell("HAND OF GLORY", 1, cast: "5+")[_Hand of Glory_ is an *augment* spell with a range of 18". The target's Weapon Skill, Ballistic Skill, Initiative or Movement (choose one) is increased by D3 until the start of the caster's next Magic phase.]
 
-#namecost("APOTHEOSIS", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("FORTUNE IS FICKLE", 1, cast: "6+")[_Fortune is Fickle_ is a *hex* spell with a range of 24" that targets an enemy wizard. Until the start of the caster's next Magic phase, whenever the targets roll a double when casting spells, that counts as a Miscast.]
 
-_Apotheosis_ is an *augment* spell that targets a single model within 18". The target immediately regains a single lost Wound and gains the Fear special rule until the start of the caster's next Magic phase.
+#spell("CURSE OF ARROW ATTRACTION", 2, cast: "7+")[_Curse of Arrow Attraction_ is a *hex* spell with a range of 24". Any missile attacks against the target may re-roll To Hit until the start of the caster's next Magic phase.]
 
-#namecost("HAND OF GLORY", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("FURY OF KHAINE", 2, cast: "7+")[_Fury of Khaine_ is a *magic missile* with a range of 18" that causes 2D6 Strength 4 hits.]
 
-_Hand of Glory_ is an *augment* spell with a range of 18". The target's Weapon Skill, Ballistic Skill, Initiative or Movement (choose one) is increased by D3 until the start of the caster's next Magic phase.
+#spell("COURAGE OF AENARION", 2, cast: "8+")[_Courage of Aenarion_ is an *augment aura* with a range of 6". Until the start of the caster's next Magic phase, all affected units gain the Stubborn special rule.]
 
-#namecost("FORTUNE IS FICKLE", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("GLAMOUR OF TECLIS", 3, cast: "8+")[Remains in Play. _Glamour of Teclis_ is a *hex* spell with a range of 24". While the spell is in play, the target unit must pass a Leadership test with an additional D6 (discarding the lowest result) if they attempt to move in their Movement phase. If the test is failed, the casting player may move the unit using the Random Movement (D6) special rule instead.]
 
-_Fortune is Fickle_ is a *hex* spell with a range of 24" that targets an enemy wizard. Until the start of the caster's next Magic phase, whenever the targets roll a double when casting spells, that counts as a Miscast.
+#spell("CORUSCATION OF FINREIR", 3, cast: "8+")[Remains in play. _Coruscation of Finreir_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard adds 12" to the casting range of all their spells (excluding auras) and their dispel range, can draw Line of Sight in any direction and counts as having a Line of Sight value of 5.]
 
-#namecost("CURSE OF ARROW ATTRACTION", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("WALK BETWEEN WORLDS", 3, cast: "8+")[_Walk Between Worlds_ is a *conveyance* spell with a range of 18". The target gains the Ethereal special rule until the end of the phase and can immediately move up to 10" as if it were the Remaining Moves sub-phase.]
 
-_Curse of Arrow Attraction_ is a *hex* spell with a range of 24". Any missile attacks against the target may re-roll To Hit until the start of the caster's next Magic phase.
+#spell("TEMPEST", 4, cast: "12+")[_Tempest_ is a *direct damage area* spell with a range of 30" that uses the large round template. All models hit by the template suffer a Strength 3 hit (models with the Fly special rule suffer a Strength 4 hit instead). Any unit under the template suffers a \-1 modifier to all To Hit rolls (both shooting and close combat) until the start of the caster's next Magic phase.]
 
-#namecost("FURY OF KHAINE", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("VAUL'S UNMAKING", 4, cast: "13+")[_Vaul's Unmaking_ is a *direct damage* spell with a range of 24" that targets a single enemy model (even a character in a unit). The target suffers a single Wound which Ignores Armour Saves on a dice roll greater than or equal to the model's unmodified armour save (excluding Natural Armour, models without an armour save cannot be wounded). The owning player must then reveal to the caster all the magic items possessed by the target (if any). One item of your choice is destroyed and cannot be used for the rest of the game.]
 
-_Fury of Khaine_ is a *magic missile* with a range of 18" that causes 2D6 Strength 4 hits.
-
-#namecost("COURAGE OF AENARION", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Courage of Aenarion_ is an *augment aura* with a range of 6". Until the start of the caster's next Magic phase, all affected units gain the Stubborn special rule.
-
-#namecost("GLAMOUR OF TECLIS", "")
-#namecost("Level 3 Cast on 8+", "")
-
-Remains in Play. _Glamour of Teclis_ is a *hex* spell with a range of 24". While the spell is in play, the target unit must pass a Leadership test with an additional D6 (discarding the lowest result) if they attempt to move in their Movement phase. If the test is failed, the casting player may move the unit using the Random Movement (D6) special rule instead.
-
-#namecost("CORUSCATION OF FINREIR", "")
-#namecost("Level 3 Cast on 8+", "")
-
-Remains in play. _Coruscation of Finreir_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the Wizard adds 12" to the casting range of all their spells (excluding auras) and their dispel range, can draw Line of Sight in any direction and counts as having a Line of Sight value of 5.
-
-#namecost("WALK BETWEEN WORLDS", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Walk Between Worlds_ is a *conveyance* spell with a range of 18". The target gains the Ethereal special rule until the end of the phase and can immediately move up to 10" as if it were the Remaining Moves sub-phase.
-
-#namecost("TEMPEST", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Tempest_ is a *direct damage area* spell with a range of 30" that uses the large round template. All models hit by the template suffer a Strength 3 hit (models with the Fly special rule suffer a Strength 4 hit instead). Any unit under the template suffers a \-1 modifier to all To Hit rolls (both shooting and close combat) until the start of the caster's next Magic phase.
-
-#namecost("VAUL'S UNMAKING", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Vaul's Unmaking_ is a *direct damage* spell with a range of 24" that targets a single enemy model (even a character in a unit). The target suffers a single Wound which Ignores Armour Saves on a dice roll greater than or equal to the model's unmodified armour save (excluding Natural Armour, models without an armour save cannot be wounded). The owning player must then reveal to the caster all the magic items possessed by the target (if any). One item of your choice is destroyed and cannot be used for the rest of the game.
-
-#namecost("FLAMES OF THE PHOENIX", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Flames of the Phoenix_ is a *direct damage* spell with a range of 24". Every model in the target unit takes a Strength 3 hit with the Flaming Attacks special rule. At the end of every subsequent Magic phase, every model in the target unit suffers another hit with the Flaming Attacks special rule, with the Strength of each Hit increasing by 1 every time.
+#spell("FLAMES OF THE PHOENIX", 4, cast: "15+")[Remains in play. _Flames of the Phoenix_ is a *direct damage* spell with a range of 24". Every model in the target unit takes a Strength 3 hit with the Flaming Attacks special rule. At the end of every subsequent Magic phase, every model in the target unit suffers another hit with the Flaming Attacks special rule, with the Strength of each Hit increasing by 1 every time.]
 ]
-
 = ELVEN HONOURS
 
 *Characters may be given one Elven Honour as detailed in the army list. Each Honour can be taken by more than one model in the army.*

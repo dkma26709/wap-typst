@@ -458,80 +458,36 @@ The point of a vampire is not how many he kills.
 _Nothing in this list can buy the Aura of Dark Majesty, that power being von Carstein's, so the stacking to watch is with the Hell Banner. It does much the same work at 40 points, on Line of Sight rather than in base contact, and the two together put an enemy at \-3 for as long as it stands in front of a Vampire character. The banner has no effect on models with Immunity (Psychology) and this rule has no such exemption, which is where the two part company. The book is inconsistent about it; a Leadership penalty reaches Break tests, which are not Psychology tests, so the reading without the exemption is the one that makes sense. Spiritual Vortex is a third \-1, within 6" of its template, for a Level 4 caster who has something better to do._]
 ]
 
-= THE LORE OF NECROMANCY
+#lore("THE LORE OF NECROMANCY")[
 
-#columns(2)[
-#namecost("THE CURSE OF UNDEATH", "")
-#namecost("Lore Attribute", "")
+#spell("THE CURSE OF UNDEATH", "Lore Attribute")[When a spell from the Lore of Necromancy is successfully cast, all Undead units (excluding mounts) within 6" of the caster regain 1 Wound (Core Units regain D3 Wounds) following the rules for _Invocation of Nehek._]
 
-When a spell from the Lore of Necromancy is successfully cast, all Undead units (excluding mounts) within 6" of the caster regain 1 Wound (Core Units regain D3 Wounds) following the rules for _Invocation of Nehek._
+#spell("INVOCATION OF NEHEK", "Signature Spell", cast: "6+")[_Invocation of Nehek_ is a *summoning* spell with a range of 18" that targets Undead (excluding mounts). The target immediately regains a number of Wounds as follows: Core Units gain 2D6 Wounds; Special Units (except Cavalry) gain D6 Wounds. Characters, Special Units that are Cavalry and Rare Units regain D3 Wounds per successful casting. Models gained are distributed as a summoning spell. Any characters in a unit can only be healed if targeted separately from the rest of the unit, in which case only they are healed.]
 
-#namecost("INVOCATION OF NEHEK", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("HAND OF DUST", 1, cast: "5+")[Remains in play. _Hand of Dust_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the caster gains an additional special attack in close combat that does not benefit from any other magic items or special rule. If this Attack Hits, the target suffers an automatic Wound with the Ignores Armour Saves and Multiple Wounds (D6) special rules.]
 
-_Invocation of Nehek_ is a *summoning* spell with a range of 18" that targets Undead (excluding mounts). The target immediately regains a number of Wounds as follows: Core Units gain 2D6 Wounds; Special Units (except Cavalry) gain D6 Wounds. Characters, Special Units that are Cavalry and Rare Units regain D3 Wounds per successful casting. Models gained are distributed as a summoning spell. Any characters in a unit can only be healed if targeted separately from the rest of the unit, in which case only they are healed.
+#spell("VANHEL'S DANSE MACABRE", 1, cast: "5+")[_Vanhel's Danse Macabre_ is a *conveyance* spell with a range of 24" that targets Undead (including mounts). The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).]
 
-#namecost("HAND OF DUST", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("HELLISH VIGOUR", 1, cast: "7+")[_Hellish Vigour_ is an *augment* spell with a range of 18". All Undead models (including mounts) in the unit gain the Always Strikes First special rule and may re-roll failed To Hit rolls in Close Combat until the start of the caster's next Magic phase.]
 
-Remains in play. _Hand of Dust_ is an *augment* spell that is cast on the Wizard itself. While the spell is in effect, the caster gains an additional special attack in close combat that does not benefit from any other magic items or special rule. If this Attack Hits, the target suffers an automatic Wound with the Ignores Armour Saves and Multiple Wounds (D6) special rules.
+#spell("FOUNTAINS OF BLOOD", 2, cast: "7+")[_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, a unit with The Red Thirst that slays one or more models in this unit increases its Thirst value by 2 rather than 1.]
 
-#namecost("VANHEL'S DANSE MACABRE", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("DEATHLY CABAL", 2, cast: "8+")[_Deathly Cabal_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target gains the Fear and Magical Ward (6+) special rules.]
 
-_Vanhel's Danse Macabre_ is a *conveyance* spell with a range of 24" that targets Undead (including mounts). The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).
+#spell("GAZE OF NAGASH", 2, cast: "9+")[_Gaze of Nagash_ is a *magic missile* with a range of 24" that causes 2D6 Strength 4 hits.]
 
-#namecost("HELLISH VIGOUR", "")
-#namecost("Level 1 Cast on 7+", "")
+#spell("RAISE DEAD", 3, cast: "9+")[_Raise Dead_ is a *summoning* spell with a range of 18" that brings a unit of Zombies into play. Roll 2D6+3. This is how many models comprise the new unit. The caster can choose to summon 2D6+3 Skeleton Warriors with shields instead. If they do so, the casting value is increased to 12+.]
 
-_Hellish Vigour_ is an *augment* spell with a range of 18". All Undead models (including mounts) in the unit gain the Always Strikes First special rule and may re-roll failed To Hit rolls in Close Combat until the start of the caster's next Magic phase.
+#spell("UNQUIET SPIRITS", 3, cast: "10+")[_Unquiet Spirits_ is a *direct damage* spell with a range of 24". The target suffers 3D6 Strength 2 hits with the Ignores Armour Saves special rule.]
 
-#namecost("FOUNTAINS OF BLOOD", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("MALEDICTION OF NAGASH", 3, cast: "11+")[_Malediction of Nagash_ is a *hex* spell with a range of 24". The target halves their Strength (rounding down) until the start of the caster's next Magic phase.]
 
-_Fountains of Blood_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, a unit with The Red Thirst that slays one or more models in this unit increases its Thirst value by 2 rather than 1.
+#spell("SPIRITUAL VORTEX", 4, cast: "11+")[Remains in play. _Spiritual Vortex_ is a *summoning* spell with a range of 24" that summons the 5" template. While the spell is in effect, the template counts as Dangerous Terrain, and enemy units within 6" of it suffer \-1 to their Leadership.]
 
-#namecost("DEATHLY CABAL", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("CURSE OF YEARS", 4, cast: "12+")[Remains in Play. _Curse of Years_ is a *hex* spell with a range of 18". When cast, roll a D6 for every model in the target unit – on a score of 6 the model suffers a Wound which Ignores Armour Saves. At the end of the next Magic phase, roll again for each model in the unit, they will suffer a Wound on a 5+, and so on, to a maximum of 2+.]
 
-_Deathly Cabal_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target gains the Fear and Magical Ward (6+) special rules.
-
-#namecost("GAZE OF NAGASH", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Gaze of Nagash_ is a *magic missile* with a range of 24" that causes 2D6 Strength 4 hits.
-
-#namecost("RAISE DEAD", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Raise Dead_ is a *summoning* spell with a range of 18" that brings a unit of Zombies into play. Roll 2D6+3. This is how many models comprise the new unit. The caster can choose to summon 2D6+3 Skeleton Warriors with shields instead. If they do so, the casting value is increased to 12+.
-
-#namecost("UNQUIET SPIRITS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Unquiet Spirits_ is a *direct damage* spell with a range of 24". The target suffers 3D6 Strength 2 hits with the Ignores Armour Saves special rule.
-
-#namecost("MALEDICTION OF NAGASH", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Malediction of Nagash_ is a *hex* spell with a range of 24". The target halves their Strength (rounding down) until the start of the caster's next Magic phase.
-
-#namecost("SPIRITUAL VORTEX", "")
-#namecost("Level 4 Cast on 11+", "")
-
-Remains in play. _Spiritual Vortex_ is a *summoning* spell with a range of 24" that summons the 5" template. While the spell is in effect, the template counts as Dangerous Terrain, and enemy units within 6" of it suffer \-1 to their Leadership.
-
-#namecost("CURSE OF YEARS", "")
-#namecost("Level 4 Cast on 12+", "")
-
-Remains in Play. _Curse of Years_ is a *hex* spell with a range of 18". When cast, roll a D6 for every model in the target unit – on a score of 6 the model suffers a Wound which Ignores Armour Saves. At the end of the next Magic phase, roll again for each model in the unit, they will suffer a Wound on a 5+, and so on, to a maximum of 2+.
-
-#namecost("WIND OF UNDEATH", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit within range suffer 2D6 Strength 3 Hits which Ignores Armour Saves.
+#spell("WIND OF UNDEATH", 4, cast: "13+")[_Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit within range suffer 2D6 Strength 3 Hits which Ignores Armour Saves.]
 ]
-
 = VAMPIRIC POWERS
 
 *In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*

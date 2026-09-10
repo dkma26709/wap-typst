@@ -113,88 +113,36 @@ All models with the Undead special rule have the Animated Construct, Fear, and U
 In addition to the normal rules for the army battle standard, units of Undead within 12" of their battle standard suffer D3 Wounds less than they normally would due to the Unstable special rule, or following the death of the army's Hierophant.
 ]
 
-= THE LORE OF NEHEKHARA
+#lore("THE LORE OF NEHEKHARA")[
 
-#columns(2)[
-#namecost("THE RESTLESS DEAD", "")
-#namecost("Lore Attribute", "")
+#spell("THE RESTLESS DEAD", "Lore Attribute")[Each time a Wizard successfully casts an *augment* or *conveyance* spell from the Lore of Nehekhara, the target of the spell immediately recovers a number of Wounds' worth of models, just like a summoning spell. Core Units (except Chariots) recover D6+1 Wounds. Special Units, Chariots and Monstrous Cavalry recover D3 Wounds. All other units recover 1 Wound.]
 
-Each time a Wizard successfully casts an *augment* or *conveyance* spell from the Lore of Nehekhara, the target of the spell immediately recovers a number of Wounds' worth of models, just like a summoning spell. Core Units (except Chariots) recover D6+1 Wounds. Special Units, Chariots and Monstrous Cavalry recover D3 Wounds. All other units recover 1 Wound.
+#spell("KHSAR'S INCANTATION OF THE DESERT WIND", "Signature Spell", cast: "5+")[_Khsar's Incantation of the Desert Wind_ is a *conveyance* spell with a range of 24". The target can immediately make a normal move as if it were the Remaining Moves sub-phase.]
 
-#namecost("KHSAR'S INCANTATION OF THE DESERT", "")
-#namecost("WIND", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("DJEDRA'S INCANTATION OF THE ETERNAL DEAD", 1, cast: "5+")[Remains in play. _Djedra's Incantation of the Eternal Dead_ is an *augment* spell that is cast on the Wizard itself (this can trigger _The Restless Dead_ for any unit they are with). While this spell is in effect, add +1 to the result of all Wounds recovered from the _The Restless Dead_ due to spells being cast by this Wizard.]
 
-_Khsar's Incantation of the Desert Wind_ is a *conveyance* spell with a range of 24". The target can immediately make a normal move as if it were the Remaining Moves sub-phase.
+#spell("SEKHUBI'S INCANTATION OF RETRIBUTION", 1, cast: "5+")[_Sekhubi's Incantation of Retribution_ is a *magic missile* with a range of 30" that causes D6 Strength 4 hits.]
 
-#namecost("DJEDRA'S INCANTATION OF THE ETERNAL", "")
-#namecost("DEAD", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("DJAF'S INCANTATION OF CURSED BLADES", 1, cast: "6+")[_Djaf's Incantation of Cursed Blades_ is an *augment* spell with a range of 18". The target unit's close combat Attacks gain the Killing Blow special rule until the start of your next Magic phase.]
 
-Remains in play. _Djedra's Incantation of the Eternal Dead_ is an *augment* spell that is cast on the Wizard itself (this can trigger _The Restless Dead_ for any unit they are with). While this spell is in effect, add +1 to the result of all Wounds recovered from the _The Restless Dead_ due to spells being cast by this Wizard.
+#spell("MERNEPTAH'S INCANTATION OF THE SCARAB SONG", 2, cast: "8+")[_Merneptah's Scroll of the Scarab Song_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models under the template suffer a Strength 1 hit with the Poisoned Attacks special rule.]
 
-#namecost("SEKHUBI'S INCANTATION OF", "")
-#namecost("RETRIBUTION", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("PTRA'S INCANTATION OF RIGHTEOUS SMITING", 2, cast: "8+")[_Ptra's Incantation of Righteous Smiting_ is an *augment* spell with a range of 18". All models in the target unit gain +1 Attack and may fire an additional shot with missile weapons (excluding artillery) until the start of the caster's next Magic phase.]
 
-_Sekhubi's Incantation of Retribution_ is a *magic missile* with a range of 30" that causes D6 Strength 4 hits.
+#spell("NERU'S INCANTATION OF PROTECTION", 2, cast: "10+")[_Neru's Incantation of Protection_ is an *augment* spell with a range of 18". The target unit gains a Magical Ward (5+) until the start of the caster's next Magic phase.]
 
-#namecost("DJAF'S INCANTATION OF CURSED BLADES", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("RETURN OF THE GOLDEN AGE", 3, cast: "10+")[_Return of the Golden Age_ is an *augment* spell with a range of 18". The target unit gains +1 Weapon Skill, Strength and Initiative until the start of the caster's next Magic phase.]
 
-_Djaf's Incantation of Cursed Blades_ is an *augment* spell with a range of 18". The target unit's close combat Attacks gain the Killing Blow special rule until the start of your next Magic phase.
+#spell("USIRIAN'S INCANTATION OF VENGEANCE", 3, cast: "10+")[_Usirian's Incantation of Vengeance_ is a *hex* spell with a range of 24". The target unit suffers -D3 to its Movement characteristic (to a minimum of 1) and treats all terrain (even open ground) as Dangerous Terrain, testing every time it moves (including when charging, fleeing, pursuing, moving compulsorily, etc.) until the start of the caster's next Magic phase.]
 
-#namecost("MERNEPTAH'S INCANTATION OF THE", "")
-#namecost("SCARAB SONG", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("NEFERRE'S INCANTATION OF QUAKING HORROR", 3, cast: "12+")[_Neferre's Incantation of Quaking Horror_ is a *hex* spell with a range of 24". The target halves their Leadership (after modifiers, rounding up) until the start of the caster's next Magic phase.]
 
-_Merneptah's Scroll of the Scarab Song_ is a *direct damage area* spell with a range of 24" that uses the large round template. All models under the template suffer a Strength 1 hit with the Poisoned Attacks special rule.
+#spell("USEKHP'S INCANTATION OF DESICCATION", 4, cast: "12+")[_Usekhp's Incantation of Desiccation_ is a *hex* spell with a range of 24". The target unit has \-1 Strength and \-1 Toughness (to a minimum of 1) until the start of the caster's next Magic phase.]
 
-#namecost("PTRA'S INCANTATION OF RIGHTEOUS", "")
-#namecost("SMITING", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("MANKARA'S INCANTATION OF URGENCY", 4, cast: "13+")[_Mankara's Incantation of Urgency_ is a *conveyance* spell with a range of 12". The target can immediately move using the Random Movement (3D6) special rule.]
 
-_Ptra's Incantation of Righteous Smiting_ is an *augment* spell with a range of 18". All models in the target unit gain +1 Attack and may fire an additional shot with missile weapons (excluding artillery) until the start of the caster's next Magic phase.
-
-#namecost("NERU'S INCANTATION OF PROTECTION", "")
-#namecost("Level 2 Cast on 10+", "")
-
-_Neru's Incantation of Protection_ is an *augment* spell with a range of 18". The target unit gains a Magical Ward (5+) until the start of the caster's next Magic phase.
-
-#namecost("RETURN OF THE GOLDEN AGE", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Return of the Golden Age_ is an *augment* spell with a range of 18". The target unit gains +1 Weapon Skill, Strength and Initiative until the start of the caster's next Magic phase.
-
-#namecost("USIRIAN'S INCANTATION OF VENGEANCE", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Usirian's Incantation of Vengeance_ is a *hex* spell with a range of 24". The target unit suffers -D3 to its Movement characteristic (to a minimum of 1) and treats all terrain (even open ground) as Dangerous Terrain, testing every time it moves (including when charging, fleeing, pursuing, moving compulsorily, etc.) until the start of the caster's next Magic phase.
-
-#namecost("NEFERRE'S INCANTATION OF QUAKING", "")
-#namecost("HORROR", "")
-#namecost("Level 3 Cast on 12+", "")
-
-_Neferre's Incantation of Quaking Horror_ is a *hex* spell with a range of 24". The target halves their Leadership (after modifiers, rounding up) until the start of the caster's next Magic phase.
-
-#namecost("USEKHP'S INCANTATION OF", "")
-#namecost("DESICCATION", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Usekhp's Incantation of Desiccation_ is a *hex* spell with a range of 24". The target unit has \-1 Strength and \-1 Toughness (to a minimum of 1) until the start of the caster's next Magic phase.
-
-#namecost("MANKARA'S INCANTATION OF URGENCY", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Mankara's Incantation of Urgency_ is a *conveyance* spell with a range of 12". The target can immediately move using the Random Movement (3D6) special rule.
-
-#namecost("SAKHMET'S INCANTATION OF THE", "")
-#namecost("SKULLSTORM", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Sakhmet's Incantation of the Skullstorm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit. Any unit that suffers one or more casualties must take an immediate Panic test.
+#spell("SAKHMET'S INCANTATION OF THE SKULLSTORM", 4, cast: "15+")[Remains in play. _Sakhmet's Incantation of the Skullstorm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit. Any unit that suffers one or more casualties must take an immediate Panic test.]
 ]
-
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Tomb Kings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
 #magic-item-section("weapon", first: true)[
