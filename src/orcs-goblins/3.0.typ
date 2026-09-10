@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "orcs-goblins",
   army: "Orcs & Goblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/orcs-goblins.png",
+  cover: "covers/orcs-goblins/3.0.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Orcs & Goblins",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/orcs-goblins.png",
+  art: "/assets/covers/orcs-goblins/3.0.png",
 )
 
 #colophon((

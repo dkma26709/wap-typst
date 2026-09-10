@@ -5,17 +5,16 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "albion",
   army: "Albion",
   version: "3.0",
   layout: "army",
-  cover: "covers/albion.png",
+  cover: "covers/albion/3.0.png",
   align: "order",
-  id: "albion-house",
-  base: "albion",
+  base: "albion/3.0",
   edition: "house",
 )
 
@@ -24,7 +23,7 @@
 #cover(
   title: "Albion",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/albion.png",
+  art: "/assets/covers/albion/3.0.png",
 )
 
 #colophon((

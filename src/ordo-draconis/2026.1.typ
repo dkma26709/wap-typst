@@ -23,7 +23,7 @@
 // Ankhara, the six Ordo items, the four Ordo powers and the closing two
 // chapters. See the colophon.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "ordo-draconis",

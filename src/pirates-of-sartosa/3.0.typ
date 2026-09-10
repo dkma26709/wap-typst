@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "pirates-of-sartosa",
   army: "Pirates of Sartosa",
   version: "3.0",
   layout: "army",
-  cover: "covers/pirates-of-sartosa.png",
+  cover: "covers/pirates-of-sartosa/3.0.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Pirates of Sartosa",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/pirates-of-sartosa.png",
+  art: "/assets/covers/pirates-of-sartosa/3.0.png",
 )
 
 #colophon((

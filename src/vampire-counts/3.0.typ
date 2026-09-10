@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "vampire-counts",
   army: "Vampire Counts",
   version: "3.0",
   layout: "army",
-  cover: "covers/vampire-counts.png",
+  cover: "covers/vampire-counts/3.0.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Vampire Counts",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/vampire-counts.png",
+  art: "/assets/covers/vampire-counts/3.0.png",
 )
 
 #colophon((

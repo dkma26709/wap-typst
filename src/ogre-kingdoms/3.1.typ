@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "ogre-kingdoms",
   army: "Ogre Kingdoms",
   version: "3.1",
   layout: "army",
-  cover: "covers/ogre-kingdoms.png",
+  cover: "covers/ogre-kingdoms/3.1.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Ogre Kingdoms",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/ogre-kingdoms.png",
+  art: "/assets/covers/ogre-kingdoms/3.1.png",
 )
 
 #colophon((

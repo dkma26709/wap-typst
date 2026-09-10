@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "lizardmen",
   army: "Lizardmen",
   version: "3.0",
   layout: "army",
-  cover: "covers/lizardmen.png",
+  cover: "covers/lizardmen/3.0.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Lizardmen",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/lizardmen.png",
+  art: "/assets/covers/lizardmen/3.0.png",
 )
 
 #colophon((

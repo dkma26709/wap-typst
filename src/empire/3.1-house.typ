@@ -5,17 +5,16 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "empire",
   army: "The Empire",
   version: "3.1",
   layout: "army",
-  cover: "covers/empire.png",
+  cover: "covers/empire/3.1.png",
   align: "order",
-  id: "empire-house",
-  base: "empire",
+  base: "empire/3.1",
   edition: "house",
 )
 
@@ -24,7 +23,7 @@
 #cover(
   title: "The Empire",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.1",
-  art: "/assets/covers/empire.png",
+  art: "/assets/covers/empire/3.1.png",
 )
 
 #colophon((
@@ -52,7 +51,7 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
 
 - *Support Charge:* A State Troop unit can declare a Support Charge against an enemy unit's unengaged arc, after your opponent has moved all of their charging units, as long as one or more enemy units has successfully completed a charge against the charged State Troop unit. If a Support Charge action is declared, the unit makes an out of sequence move that is resolved as it had just declared a charge against the charging unit. The enemy does not get to make any charge reactions against a Support Charge, but otherwise all the normal charging rules and bonuses apply.
 
-#diagram("/assets/figures/empire/img-0198.jpg", 0.463)
+#diagram("/assets/figures/empire/3.1/img-0198.jpg", 0.463)
 #namecost("CAVALRY HAMMER", "")
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Armour Piercing (1), Requires Two Hands"))
 #namecost("GRENADE LAUNCHING BLUNDERBUSS", "")

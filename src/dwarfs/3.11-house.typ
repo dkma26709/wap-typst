@@ -5,17 +5,16 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "dwarfs",
   army: "Dwarfs",
   version: "3.11",
   layout: "army",
-  cover: "covers/dwarfs.png",
+  cover: "covers/dwarfs/3.11.png",
   align: "order",
-  id: "dwarfs-house",
-  base: "dwarfs",
+  base: "dwarfs/3.11",
   edition: "house",
 )
 
@@ -24,7 +23,7 @@
 #cover(
   title: "Dwarfs",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.11",
-  art: "/assets/covers/dwarfs.png",
+  art: "/assets/covers/dwarfs/3.11.png",
 )
 
 #colophon((

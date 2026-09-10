@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "kislev",
   army: "Kislev",
   version: "3.1",
   layout: "army",
-  cover: "covers/kislev.png",
+  cover: "covers/kislev/3.1.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Kislev",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/kislev.png",
+  art: "/assets/covers/kislev/3.1.png",
 )
 
 #colophon((

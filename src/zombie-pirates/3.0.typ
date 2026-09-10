@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "zombie-pirates",
   army: "Zombie Pirates",
   version: "3.0",
   layout: "army",
-  cover: "covers/zombie-pirates.png",
+  cover: "covers/zombie-pirates/3.0.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Zombie Pirates",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/zombie-pirates.png",
+  art: "/assets/covers/zombie-pirates/3.0.png",
 )
 
 #colophon((

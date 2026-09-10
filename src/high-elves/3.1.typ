@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "high-elves",
   army: "High Elves",
   version: "3.1",
   layout: "army",
-  cover: "covers/high-elves.png",
+  cover: "covers/high-elves/3.1.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "High Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/high-elves.png",
+  art: "/assets/covers/high-elves/3.1.png",
 )
 
 #colophon((

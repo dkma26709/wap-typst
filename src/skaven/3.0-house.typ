@@ -5,17 +5,16 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "skaven",
   army: "Skaven",
   version: "3.0",
   layout: "army",
-  cover: "covers/skaven.png",
+  cover: "covers/skaven/3.0.png",
   align: "destruction",
-  id: "skaven-house",
-  base: "skaven",
+  base: "skaven/3.0",
   edition: "house",
 )
 
@@ -24,7 +23,7 @@
 #cover(
   title: "Skaven",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/skaven.png",
+  art: "/assets/covers/skaven/3.0.png",
 )
 
 #colophon((

@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "dogs-of-war",
   army: "Dogs of War",
   version: "3.1",
   layout: "army",
-  cover: "covers/dogs-of-war.png",
+  cover: "covers/dogs-of-war/3.1.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Dogs of War",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/dogs-of-war.png",
+  art: "/assets/covers/dogs-of-war/3.1.png",
 )
 
 #colophon((

@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "daemons-of-chaos",
   army: "Daemons of Chaos",
   version: "3.0",
   layout: "army",
-  cover: "covers/daemons-of-chaos.png",
+  cover: "covers/daemons-of-chaos/3.0.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Daemons of Chaos",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/daemons-of-chaos.png",
+  art: "/assets/covers/daemons-of-chaos/3.0.png",
 )
 
 #colophon((

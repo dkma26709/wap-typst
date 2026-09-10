@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "hobgoblins",
   army: "Hobgoblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/hobgoblins.png",
+  cover: "covers/hobgoblins/3.0.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Hobgoblins",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/hobgoblins.png",
+  art: "/assets/covers/hobgoblins/3.0.png",
 )
 
 #colophon((

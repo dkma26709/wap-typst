@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "chaos-dwarfs",
   army: "Chaos Dwarfs",
   version: "3.0",
   layout: "army",
-  cover: "covers/chaos-dwarfs.png",
+  cover: "covers/chaos-dwarfs/3.0.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Chaos Dwarfs",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/chaos-dwarfs.png",
+  art: "/assets/covers/chaos-dwarfs/3.0.png",
 )
 
 #colophon((

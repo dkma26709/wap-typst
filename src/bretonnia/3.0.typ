@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "bretonnia",
   army: "Bretonnia",
   version: "3.0",
   layout: "army",
-  cover: "covers/bretonnia.png",
+  cover: "covers/bretonnia/3.0.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Bretonnia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/bretonnia.png",
+  art: "/assets/covers/bretonnia/3.0.png",
 )
 
 #colophon((

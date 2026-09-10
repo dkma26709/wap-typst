@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "dark-elves",
   army: "Dark Elves",
   version: "3.1",
   layout: "army",
-  cover: "covers/dark-elves.png",
+  cover: "covers/dark-elves/3.1.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Dark Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/dark-elves.png",
+  art: "/assets/covers/dark-elves/3.1.png",
 )
 
 #colophon((

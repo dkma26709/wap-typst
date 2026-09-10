@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "grand-cathay",
   army: "Grand Cathay",
   version: "3.0",
   layout: "army",
-  cover: "covers/grand-cathay.png",
+  cover: "covers/grand-cathay/3.0.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Grand Cathay",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/grand-cathay.png",
+  art: "/assets/covers/grand-cathay/3.0.png",
 )
 
 #colophon((

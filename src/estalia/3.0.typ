@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "estalia",
   army: "Estalia",
   version: "3.0",
   layout: "army",
-  cover: "covers/estalia.png",
+  cover: "covers/estalia/3.0.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Estalia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/estalia.png",
+  art: "/assets/covers/estalia/3.0.png",
 )
 
 #colophon((
@@ -65,11 +65,11 @@ A Tercio Formation consists of a mix of models armed with pikes/polearms, handgu
 
 All models in the front rank, both flanks and rear may fire in the Shooting phase, even if they have moved this turn. This means that models in the front arc can fire forward, models in the left flank fire to the left, models in the right flank fire to right and models in the rear rank fire to the rear. Each arc may choose to fire at different targets if they wish.
 
-#diagram("/assets/figures/estalia/img-0128.png", 0.463)
+#diagram("/assets/figures/estalia/3.0/img-0128.png", 0.463)
 
 All models in the unit's front rank fight using hand weapons and bucklers. The remaining models fight using pikes/polearms. All attacks against the unit's front are resolved against the models armed with hand weapon and bucklers.
 
-#diagram("/assets/figures/estalia/img-0130.png", 0.385)
+#diagram("/assets/figures/estalia/3.0/img-0130.png", 0.385)
 
 If the unit has not moved in the last turn it counts as having no flanks or rear for the purpose of Disruption and combat resolution. However, for every flank or rear arc they are engaged in, they suffer \-1 to their rank bonus.
 

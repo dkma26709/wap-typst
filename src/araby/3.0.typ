@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "araby",
   army: "Araby",
   version: "3.0",
   layout: "army",
-  cover: "covers/araby.png",
+  cover: "covers/araby/3.0.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Araby",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/araby.png",
+  art: "/assets/covers/araby/3.0.png",
 )
 
 #colophon((

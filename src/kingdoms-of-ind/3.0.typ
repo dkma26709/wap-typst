@@ -5,14 +5,14 @@
 // Rules text, army design and points values are Mathias Eliasson's work.
 // Only the typesetting differs here - see the colophon below.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "kingdoms-of-ind",
   army: "Kingdoms of Ind",
   version: "3.0",
   layout: "army",
-  cover: "covers/kingdoms-of-ind.png",
+  cover: "covers/kingdoms-of-ind/3.0.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Kingdoms of Ind",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/kingdoms-of-ind.png",
+  art: "/assets/covers/kingdoms-of-ind/3.0.png",
 )
 
 #colophon((

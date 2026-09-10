@@ -7,7 +7,7 @@
 // ever from toxin sacs. Points are anchored against the Daemons of Chaos,
 // Beastmen and Lizardmen books and are expected to move with play.
 
-#import "template.typ": *
+#import "../template.typ": *
 
 #book-meta(
   slug: "tyranids",
