@@ -147,3 +147,147 @@ And among its options:
 **At the table.** Thirty Red Crested Skinks with great weapons come to 210 points, which is seven a model: three for the Skink, one for the crest, one for Sotek's Spawning and two for the weapon. Crest and Spawning together come to the same two points Tehenhauin's version charges for the crest alone, and the weapon to the same two. They fight at Weapon Skill 3 and Strength 5 in the first round, Strength 4 after it, with Toughness 2 and a 6+ save to keep them standing.
 """,
 ]
+
+
+[[proposal]]
+id     = "saurus-and-kroxigor-initiative-2"
+title  = "Saurus Warriors and Kroxigors strike at Initiative 2"
+status = "under discussion"
+
+summary = """
+Saurus Warriors and Kroxigors would move from Initiative 1 to Initiative 2. Nothing else on either profile changes. The reason is that neither is meant to be slow-witted; they are deliberate, and the book already says so everywhere except on these two entries.
+"""
+
+why = """
+Both sit a step below every other model of their own kind. Every Saurus profile in the book except the Core warrior is Initiative 2 or better, and that includes the same Saurus when he is sitting on a Cold One or an Aggradon. A Saurus does not learn to move faster by being handed a mount.
+
+The Kroxigor case is starker still, because the comparison is inside one creature type. A Kroxigor Ancient strikes at Initiative 2 and the Kroxigors he leads strike at 1, with nothing between them but age and a bigger stat line.
+
+Look outside the army and it reads worse. A Skeleton Warrior is a corpse held upright by necromancy and strikes at Initiative 2; a Sylvanian peasant, two points and no training whatever, strikes at 3. A Saurus Warrior costs thirteen, was spawned for nothing but war, and goes after both. The company the book keeps him in at Initiative 1 is zombies, trolls and mammoths.
+
+Anatomy is a fair objection, and measured against the human yardstick it argues for Initiative 2 rather than against it. Of the 137 plain human infantry entries in the Core and Special sections of the corpus, 86 strike at Initiative 3 and not one strikes at 1. A Saurus is heavier and more deliberate than a man, so a step below him is right. Two steps below him, level with a zombie and a mammoth, is not anatomy. It is an oversight.
+"""
+
+against = """
+Initiative 1 is doing real characterisation work elsewhere, and the principle behind this reaches a great deal further than two entries. Forty-three living profiles across the corpus sit at Initiative 1 or below, nine of them in this book, including the Slann Mage-Priest at 1 and Lord Kroak at 0.
+
+So there are two different proposals hiding here. Raising every living creature off Initiative 1 is a sweep across thirty-two books that would also quicken trolls and mammoths, which are slow on purpose, and the Slann, who is meant to be contemplating something else. Giants are not in that company, whatever their reputation: the ordinary Giant strikes at Initiative 3 and only the Bonegrinder variety is at 1. Raising these two instead is a judgement about Saurus and Kroxigor. Both are defensible, and they should not be argued as though they were one.
+"""
+
+cost = """
+Two digits, and a glance at whether the pair are still priced correctly afterwards. The Kroxigors will feel it, since much of what they fight is also slow. The Saurus Warriors barely will, because most of what they meet already strikes at 3 or 4 and will continue to strike first.
+"""
+
+examples = [
+  """
+**The ladder as the book prints it.** Every Saurus and Kroxigor profile in the army, in the order the army list puts them:
+
+|Model|Where|WS|I
+|Saurus Oldblood|Characters|6|3
+|Saurus Scar-Veteran|Characters|5|3
+|Kroxigor Ancient|Characters|5|2
+|Saurus Warrior|Core|3|1
+|Temple Guard|Special|4|2
+|Saurus on a Cold One|Special|4|2
+|Kroxigor|Special|3|1
+|Saurus on an Aggradon|Rare|4|2
+
+Two rows in that table are Initiative 1, and they are the two the rank and file actually stand in.
+
+**And here is what already strikes before them.** Every one of these is dead:
+
+|Model|Book|Points|I
+|Sylvanian peasant|Vampire Counts|2|3
+|Skeleton Warrior|Vampire Counts|3|2
+|Skeleton Warrior|Tomb Kings|4|2
+|Crypt Ghoul|Vampire Counts|7|3
+|Saurus Warrior|Lizardmen|13|1
+|Kroxigor|Lizardmen|47|1
+""",
+]
+
+
+[[proposal]]
+id     = "saurus-warriors-weapon-skill-4"
+title  = "Saurus Warriors should be Weapon Skill 4"
+status = "under discussion"
+
+summary = """
+Saurus Warriors would go from Weapon Skill 3 to Weapon Skill 4, at a point more per model. Every other Saurus in the book already fights at 4 or better, including the identical creature mounted on a Cold One.
+"""
+
+why = """
+The book contradicts itself on one creature. A Saurus on foot in a Core unit is Weapon Skill 3; the same Saurus riding a Cold One in Special is 4, riding an Aggradon in Rare is 4, and standing in the Temple Guard is 4. Only the version a list actually builds around is worse at fighting, and nothing in the book explains what the mount teaches him.
+
+The price is the easy part, because the corpus keeps quoting it. A point of Weapon Skill bundled with a second benefit costs two points a model in the Empire's Inner Circle Knights, in Orc Big 'Uns, in Goblin Little Big 'Uns and in this book's own Red Crested Skinks. On its own it is worth about one, which puts a Saurus Warrior at fourteen.
+
+The human yardstick says the same. Of the 137 plain human infantry entries across the corpus, 66 fight at Weapon Skill 3 and 50 at 4, so a Saurus Warrior currently fights exactly as well as an ordinary man with a spear and no better. Weapon Skill 4 puts him among the better human troops rather than above them, which is a modest claim for something spawned fully grown and knowing how to fight.
+
+Four is deliberately the smaller of the two readings. The lore argues for five, since a Saurus is hatched knowing how to fight and spends its life doing nothing else, and five would work perfectly well if the Scar-Veteran and the Oldblood moved up a point with it. The reason for four is not that five breaks anything.
+
+The reason for four is that it is the number the rest of the book already prints on every other Saurus, so it is the change that has to be argued for least. This proposal would rather be agreed to than be right.
+"""
+
+against = """
+The gap is what Temple Guard are sold on. At 17 points they currently buy a point of Weapon Skill, a point of Initiative, a polearm, Stubborn and the two Slann rules over a 13-point Saurus Warrior. Close the Weapon Skill and, if the Initiative proposal also passes, the Initiative, and four points is buying a polearm and Stubborn.
+
+A Core block at Weapon Skill 4, Strength 4, Toughness 4, two Attacks, Predatory Fighter and a 5+ Natural Armour for fourteen points is also simply very good, and this army already has no trouble winning the fights it chooses.
+"""
+
+cost = """
+One digit and one price. If the Initiative proposal is agreed as well then the two want pricing together rather than separately, because a fourteen-point Saurus Warrior at Weapon Skill 4 and Initiative 2 is a different unit from the one being amended twice.
+"""
+
+examples = [
+  """
+**What separates the two Saurus infantry entries.** As printed, and as this proposal would leave them:
+
+|Entry|Points|WS|I|Also carries
+|Saurus Warrior, as printed|13|3|1|Hand weapon
+|Saurus Warrior, proposed|14|4|1|Hand weapon
+|Temple Guard|17|4|2|Polearm, Stubborn, Slann rules
+
+The four points would still buy a polearm, Stubborn and the two rules that tie the unit to a Slann, which is a fair sale. Whether it is a four-point sale is the argument.
+""",
+]
+
+
+[[proposal]]
+id     = "kroxigor-stupidity-away-from-skinks"
+title  = "Kroxigor think better with Skinks about"
+status = "under discussion"
+
+summary = """
+A Kroxigor would cost three points less, at 44, and be subject to Stupidity in any turn it starts with no friendly Skink unit within 6 inches. Standing near Skinks it behaves exactly as it does today.
+"""
+
+why = """
+The book pairs the two everywhere except in the rules. Skink Skirmishers carry Skirmish Screen, written for no reason but to let Kroxigor walk through them, and those are the only two entries in the army that name each other at all.
+
+The mechanism needs no inventing either, because the corpus has written it twice. The Snotlings' Mimic keys off a friendly Orc or Goblin unit within 6 inches, and our own Tyranids' Synapse penalises any unit that is not within 12 inches of the right friendly model.
+
+What the discount buys is freedom of movement rather than a coin flip. The drawback is switched off by standing near a unit the list was always going to bring, so what it really costs is Kroxigor that must travel with their handlers instead of going where they please. The rulebook checks Stupidity only outside close combat, so it never bites once they arrive: this is entirely a rule about the approach.
+"""
+
+against = """
+The discount is anchored on unconditional Stupidity, which is not what this is. The corpus prices Stupidity away at three points a model, on the Skaven Rat Ogre's Brain Transplant, and that model is Stupid wherever it stands. A version a competent player switches off by keeping Skinks within six inches is worth less than the full three, so 44 is the generous reading and 45 the cautious one.
+
+It also collides with the Spawn-kin proposal at the front of this chapter. A Kroxigor standing inside a Skink Cohort is an inch from a Skink and would never test at all, taking the discount for nothing. That may be the intention, since it drives Kroxigor into the Cohort where the theme wants them, but the two cannot then be priced apart.
+"""
+
+cost = """
+A points value and one clause on the Kroxigors entry, plus a decision about whether the Kroxigor Ancient shares it. Worth knowing before agreeing it: Cold-blooded will not help. Stupidity here is a flat D6 against a table rather than a Leadership test, and Immunity (Psychology) covers only Panic, Fear and Terror, so the army's usual answer to wobbling does nothing at all against this.
+"""
+
+examples = [
+  """
+**What the roll actually does,** in any turn no Skinks are close enough:
+
+|D6|What happens
+|1|Lurches D6 inches straight forward, may only Hold if charged, no combat reform
+|2-3|Minus one to Weapon Skill, Ballistic Skill, Leadership and casting
+|4-6|Nothing at all
+
+Half the rolls do nothing, one in six is a real accident, and none of it is rolled at all while a Skink unit stands within six inches.
+""",
+]
