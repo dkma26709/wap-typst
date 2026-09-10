@@ -809,7 +809,9 @@ def main() -> None:
     args.outdir.mkdir(parents=True, exist_ok=True)
     data = build(args.pdf, args.outdir, slug)
 
+    # A slug is a book's id, `lizardmen/1.64`, so it may name a folder.
     target = args.outdir / f"{slug}.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
     stats = sum(
