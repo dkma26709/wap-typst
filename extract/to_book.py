@@ -306,8 +306,12 @@ def render(data: dict, book: dict, edition: dict | None = None) -> str:
     lines += book_meta(book)
     lines += ["", emit.front_matter(book, edition).rstrip()]
 
+    # A heading is markup, so it is escaped like any other prose. That went
+    # unnoticed for 44 books because no heading in them held a sigil; the 2.32
+    # rulebook has `ARMOUR PIERCING (*)`, where the lone asterisk opens a strong
+    # emphasis that never closes and the whole book fails to compile.
     for chapter in data["chapters"]:
-        lines += ["", f"= {chapter['title']}", ""]
+        lines += ["", f"= {esc(chapter['title'])}", ""]
         intro = chapter.get("intro", [])
         if intro:
             body = blocks_lines(intro, figures)
@@ -318,7 +322,7 @@ def render(data: dict, book: dict, edition: dict | None = None) -> str:
             if rules:
                 # The rulebook flows: a section takes a heading at its own depth
                 # and nothing claims a page of its own.
-                lines.append("=" * entry.get("level", 2) + " " + entry["name"])
+                lines.append("=" * entry.get("level", 2) + " " + esc(entry["name"]))
                 lines += body
                 continue
             body = wrap(body, two_column(entry["blocks"]))
