@@ -286,7 +286,13 @@
 // `side` widens the margins for the core rulebook, which is set in one column:
 // at the army books' measure a page of continuous prose runs to ~90 characters a
 // line, which is too long to read comfortably.
-#let book(title: "", side: 2.4cm, body) = {
+//
+// `size` is the other half of the same dial. The source books are set in 10pt
+// Times inside 2cm margins and run about 50 characters to the line; Libertinus
+// sets tighter, so matching the margin alone stretches the line to 55 and
+// matching the line alone leaves the block sitting too far in from the edge.
+// Only the two together land on the printed page's proportions.
+#let book(title: "", side: 2.4cm, size: 10.5pt, body) = {
   set document(title: title)
   set page(
     paper: "a4",
@@ -296,7 +302,7 @@
       #counter(page).display()
     ]),
   )
-  set text(font: body-font, size: 10.5pt, fill: ink, lang: "en", hyphenate: true)
+  set text(font: body-font, size: size, fill: ink, lang: "en", hyphenate: true)
   // Off deliberately. Generated books pass their text as string literals, which
   // Typst never substitutes; a hand-written book passes markup, which it would.
   // Leaving it on would curl every apostrophe in text the colophon promises is
