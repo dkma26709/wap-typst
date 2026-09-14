@@ -5593,3 +5593,72 @@ Nothing until a piece is picked, at which point it becomes a proposal of its own
 #field("For example", "")
 
 *The piece most ready to be written* is Wizard Level, because the argument already exists twice on this shelf. Splitting armour penetration out of Strength and splitting Weapon Skill into attack and defence both say that one number answering several questions can be tuned for none of them. Wizard Level answers four. Whether that makes it the right place to start or merely the easiest is worth deciding before anyone drafts it.
+#namecost("Wizards should bring their own power", "under discussion")
+
+The Winds of Magic would stop being rolled. There would be no power pool, no dispel pool and no channelling. Each Wizard would carry a reserve of their own instead - three dice per Wizard Level, plus one - spent only on their own spells and gone at the end of the phase.
+
+A casting attempt keeps its shape: name the spell, name the target, commit dice. What changes is what the dice do. Commit as many as you like from your own reserve, roll them all, and keep the highest three. The casting values printed throughout the book stay exactly as they are, and the casting bonus for Wizard Level goes, since the dice now carry it.
+
+Dispelling would go entirely. Every Wizard would print two new values in their entry - a _Dispel Value_ and a _Dispel Range_ - and an enemy Wizard within range subtracts their Dispel Value from the casting roll. The highest value in range applies, plus one for each further Wizard beyond the first. Nothing is rolled and nothing is declared. The interference is a consequence of where the models are standing.
+
+#field("Why", "")
+
+Every other phase is bought. Points buy models, models make attacks, and doubling the handguns doubles the shots. Magic is the exception: the power available is rolled off a table indexed by the size of the game, and what the wizards cost barely enters into it.
+
+The arithmetic is worse than it sounds. At 2,000 points the Winds are 4D3, averaging eight power dice whatever either army paid. Investment touches only channelling, at one expected die per three Wizard Levels. An army with a Level 4 and a Level 2 draws ten dice; double that to two Level 4s and two Level 2s and it draws twelve. Twice the points for twenty per cent more power, and eight more spells wanting a share of it.
+
+A reserve of the Wizard's own fixes that, and on its own it would break something worse. Dice thrown against a fixed casting value are a step function: below some count you reliably fail, above it you reliably succeed. Any system letting power accumulate therefore hands the magic-heavy army a different phase altogether, and tuning the generation curve never touches it.
+
+Keeping the highest three is what prevents it. Extra dice raise the floor and never the ceiling, which stays at eighteen however many are thrown. The fourth die is worth about one and three quarters; the eighth, about half a point. A Wizard who commits everything buys a better chance at the same game.
+
+That fixed ceiling is also what lets a subtraction mean anything at all. A Level 4 who could throw six dice and sum them would sit so far above his own casting values that no penalty could reach him, and the more an army spent the less any defence would matter. Capped at eighteen, with the hardest spells asking fifteen, every point of interference is felt at every level of investment - and felt hardest by the largest Wizard, who is reaching for the hardest spells.
+
+The subtraction denies nothing outright. A suppressed Wizard can still have his spell by committing more dice, out of a reserve that has to last the phase, at a miscast chance rising with every die. The defender sells a dilemma rather than a veto, and the arithmetic sharpens it: the returns on extra dice flatten out precisely when the caster is suppressed. Unsuppressed there is an obvious place to stop. Suppressed there is not.
+
+Separating Dispel Value and Dispel Range from Wizard Level is what keeps both ends honest. Level buys output and nothing else, defence is its own purchase, and a book can print a warding priest who casts poorly and a battle wizard who wards poorly without either being the other's inferior.
+
+#field("The argument against", "")
+
+This shelf already argues that magic should be redone in pieces, and that a single motion to redo it can only fail. This is that motion. Four of the six pieces move together here - the power, the Wizard Level, the opposed roll and the items - so a reader who objects to one has to vote down the rest.
+
+Part of that is answerable. Several of those pieces turned out to be welded rather than merely adjacent, and the constants are derived rather than chosen: keep two dice and a Level 4's own spells become arithmetically impossible, keep four and no subtraction reaches anybody; the Dispel Values have to sit between one and three because the dice stop at eighteen. None of that can be traded away piece by piece. It is an answer about three of the six, though, and the decomposition is still owed the rest.
+
+The plainer cost is that the opposing player now does nothing whatever during the magic phase. Spending dispel dice was the one moment the phase belonged to both players, and this sells it for a decision taken earlier, in the movement phase, where it cannot be taken back. That is a real loss, and calling it an improvement is the argument rather than the conclusion.
+
+The top of the spell list is fragile under it. Thirty-nine spells ask 15+, and against even moderate interference they stop being a play and become a prayer. Either that is the defensive Wizard finally having a job worth paying for, or it is six per cent of the spells on this shelf quietly leaving the game.
+
+#field("What it would take", "")
+
+The spells survive untouched, which is what makes this affordable at all: 646 spell entries, casting values from 5+ to 15+, and not one of them needs a new number. The ladder they already form - level 1 spells averaging 5.8, level 4 averaging 13.0 - is what the dice were fitted to.
+
+The damage falls on the items, and it is not small. Thirty of the army books reference the magic economy. Everything granting power or dispel dice grants a resource that would no longer exist: the Banner of Sorcery, the Jewel of the Dusk, the Hieratic Jar, the Covenant of Power, the Black Periapt, the Bileblade and a dozen more. Everything modifying a channelling roll loses the roll it modifies.
+
+Hardest are the rules keyed to the Winds themselves. The Black Coach's entire progression counts natural sixes on the Winds dice; the Chromatic Tome and Master of the Black Arts re-roll them. Those need rewriting rather than re-pricing.
+
+Every Wizard in every book then needs two printed values, and the points on all of them want revisiting once the phase has been played a few times. The sensible first cut is the rulebook and one army book.
+
+#field("For example", "")
+
+#namecost("WHAT A SPELL COSTS TO ATTEMPT", "")
+
+Dice a Level 4 would commit for a reasonable chance, and what the attempt risks:
+
+#minitable(("Spell", "Dice", "Cast", "Miscast"), ("6+, a signature", "2", "72%", "3%", "8+, level 2", "3", "84%", "7%", "10+, level 3", "4", "83%", "13%", "13+, level 4", "5", "66%", "20%", "15+, the hardest", "8", "71%", "40%"))
+
+#note[He spends most of the phase in the top three rows, at two to four dice and next to no risk, and feels the commitment only when he reaches past them. None of that gradient is written down anywhere: it is what the casting values already on the page do once the highest three dice are kept. One die caps the roll at six and two caps it at twelve, so what may be attempted follows from what is committed, and needs no rule of its own.]
+
+#namecost("WHAT INTERFERENCE BUYS", "")
+
+The same Level 4, five dice, reaching for a 13+ spell:
+
+#minitable(("Enemy Wizards in range", "Penalty", "His chance"), ("None", "0", "66%", "One, Dispel Value 1", "-1", "53%", "One, Dispel Value 2", "-2", "38%", "Two, Dispel Value 2", "-3", "23%"))
+
+#note[Halving an archmage costs one dedicated Wizard standing in the right place; reducing him to a third costs two of them. He is never stopped. He can still have the spell by committing eight dice instead of five, which is most of his reserve and a two-in-five chance of the miscast table - and that is the trade being sold.]
+
+#note[Range is the more expensive half of the purchase, and should be priced as such. A Wizard twelve inches from the fighting covers about an eighth of the table; at twenty-four inches he covers two fifths. Doubling the range more than triples what it reaches, so twelve inches belongs on an ordinary Wizard and twenty-four on somebody with a name.]
+
+#namecost("THE MODEL THE RULES ALREADY WANTED", "")
+
+Dwarfs have no Wizards, so their book had to borrow a profile to let them dispel at all: a Runelord "follows the rules for Level 4 Wizards for the purposes of channelling dispel dice and dispelling", and a Runesmith for Level 2. Neither of them casts anything.
+
+#note[Under this proposal he prints what he is. Wizard Level 0 - no spells, no reserve, nothing cast - with a Dispel Value of 3 and a Dispel Range of 18". The special rule goes, and the entry states the thing directly instead of pointing at rules for a kind of model the army does not have.]
