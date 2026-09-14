@@ -9,7 +9,7 @@
 // It is self-contained on purpose: an Ordo Draconis is played from this book
 // and no other. The chapters it shares with Vampire Counts 3.0 - the army
 // special rules, the Lore of Necromancy, the Vampiric Powers, the Magic Items,
-// and the twelve unit entries, three character entries and four mounts the list
+// and the eleven unit entries, three character entries and four mounts the list
 // keeps - are Mathias Eliasson's text, copied verbatim from src/vampire-counts.typ
 // and then altered only where this list removes an option. Every one of those
 // alterations is set out in WHAT WAS CHANGED at the back.
@@ -366,9 +366,9 @@ _The mounts clause changes almost nothing at the table, and is worth having anyw
 
 #namecost("WHAT THIS BOOK LEAVES OUT", "")
 
-Ten of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
+Eleven of *Vampire Counts*' thirty-three unit entries survive the choice, along with three of its thirteen character entries and none of its fifteen special characters. Those are the entries printed here, and an entry that is not printed is not available.
 
-No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems and the Necrofex Colossus are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. The *Vargheists* of that book are the feral get of the Bloodlines, and whoever keeps those, the Ordo does not: an order may keep a beast, and may not put a rank of the get in its line and call it a household, which is why the Varghulf stays and the get does not. The Vargheists printed here are a different animal wearing the name — the large kind of the keep's own bats — and vampires who arrive expecting the other thing are frequently surprised. The Dire Wolves go for the reason the mounts clause already gives: the animals of this order are alive, and it keeps no dead ones it did not first bury as men.
+No unit may be *Ghoul* and none may be *Spirit*: the ghoul-courts are Strigoi business and the ghosts are Sylvanian sorcery, and he has kept clear of both. No unit may be *Human*, though characters may be, because he forbids mortals dying in his line rather than mortals serving him. No unit may be a *Chariot*, a *Shrine* or a *War Machine*, an order of knights keeping neither an artillery train nor a rolling reliquary. The Flesh Golems are stitched work and the Zombie Dragon is a corpse, and the Ordo keeps a byre. The *Necrofex Colossus* stays, under a name that no longer describes what stands beneath it: nothing in this army was sewn together, and the things that walk under that heading here came up out of old ground the keep had moved onto, as the Porter did before them. The *Vargheists* of that book are the feral get of the Bloodlines, and whoever keeps those, the Ordo does not: an order may keep a beast, and may not put a rank of the get in its line and call it a household, which is why the Varghulf stays and the get does not. The Vargheists printed here are a different animal wearing the name — the large kind of the keep's own bats — and vampires who arrive expecting the other thing are frequently surprised. The Dire Wolves go for the reason the mounts clause already gives: the animals of this order are alive, and it keeps no dead ones it did not first bury as men.
 
 _What Was Changed_, at the back of this book, sets the whole of it out beside *Vampire Counts* 3.0.
 
@@ -1245,28 +1245,44 @@ _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs el
   ],
 )
 
-#unit("THE PORTER",
+#unit("NECROFEX COLOSSUS",
   before: [
-It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
+It is not what the name says. Nothing in this army was sewn together, and no
+part of the order's service was made: the keep works a circuit, every ground it
+has stood on had old stone in it before the keep came, and once in a long while
+something comes up with it. They are set at the gates of whatever the household
+is holding that season, and when it moves they come down and walk. The
+necromancers will work beside these. They will not work within sight of the one
+in the gate.
 
 #profile(
-  (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: 5, ld: 10, points: 280),
+  (name: "Necrofex Colossus", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: "*", ld: 8, points: 240),
 )
   ],
-  troop-type: "Monster (Animated Construct)",
-  base-size: "50x75, 60x100 or 100x150",
-  equipment: "Polearm, heavy armour",
-  special-rules: "Animated Construct, Regeneration (6+), Unstable",
-  special-rules-body: (
-    rule("Granite")[The Porter has +1 to its armour save and the Immunity (Multiple Wounds) special rule.],
-    rule("Obsidian")[The Porter has the Magic Resistance (2) special rule. In addition, enemy Wizards within 12" suffer a \-1 casting penalty.],
-  ),
-  notes: [
-- There is one Porter. No army may include more than one.
-- The Porter is not Undead. The Lore of Necromancy cannot mend it, the battle standard does not lessen what it loses to Unstable, and it owes no Necromancer under The Generals of Undeath.
-- An Animated Construct may never march, and the Porter is no part of the dead, so the General's presence does not lift the restriction.
+  troop-type: "Monster (Undead, Animated Construct)",
+  base-size: "50x100 or 100x150",
+  special-rules: "Regeneration (4+), Undead",
+  special-rules-body: [
+- *Vortex of Death:* Any Wizard attempting to cast spells from the Lore of Death or Lore of Necromancy within 12" of the Necrofex Colossus gains +1 to their Casting roll.
+- *Necrofex Colossus Special Attacks:* A creature of nightmarish power and massive stature, a Necrofex Colossus can make one of a number of attacks in close combat. When it is the Necrofex Colossus' turn to strike in close combat, roll a D6 and consult the table below to determine what kind of attack it will make:
 
-#note[_Terror, Stomp (D6) and a Line of Sight value of 5 are not written here because the Monster troop type grants all three. This is Grand Cathay's Terracotta Sentinel, printed at that book's prices with the granite and the obsidian bought in and the Yang rule left behind with the army rules that define it. Immunity (Multiple Wounds) is the granite doing what granite does: a cannon that finds it takes a chip rather than a D6 of Wounds, which is the only way something that covers six inches a turn survives owning the ground it stands on. The working is in the design chapter._]
+#chart((("D6", "Result"), ("1-2", "Batter and Slash: The Necrofex Colossus fights using the Random Attacks (D6+1) special rule."), ("3-4", "Impale: Select one model in base contact; that model, and all models in the same file, must pass an
+Initiative test or suffer a Strength 7 Hit with the Multiple Wounds (D6) special rule."), ("5-6", "Screams of the Damned: The Necrofex Colossus may make a Death Shriek into close combat. To
+resolve a Death Shriek, roll 2D6+3. For each point by which the result exceeds the target unit's
+Leadership, the target unit suffers 1 Wound which Ignores Armour Saves. Death Shriek is a non-
+physical Magical Attack and Wounds suffered from it are distributed as if from shooting.")))
+  ],
+  upgrades: (
+    rule("Corpse Killers")[After resolving its regular attacks, all enemy units in base contact with the Necrofex Colossus suffer D6 Strength 2 hits.],
+    rule("Dark Soul")[The Necrofex Colossus becomes a Level 1 Wizard who uses spells from the Lore of Death or Lore of Necromancy. However, should the Necrofex Colossus suffer a miscast, in addition to any other effect, the Necrofex Colossus permanently has its Toughness value reduced by 1, as the backlash of the miscast damages the very fabric that holds the horror together.],
+    rule("Scythes and Barbs")[The Necrofex Colossus' number of Random Attacks and Stomp hits may be re-rolled.],
+    rule("Vampire Blood")[The Necrofex Colossus gains the Regeneration (3+) special rule, but is also subject to the Berserk Rage part of Frenzy.],
+  ),
+  options: [
+- May take Scythes and Barbs +10 points
+- May take Vampire Blood +10 points
+- May take Corpse Killers +20 points
+- May take Dark Soul +45 points
   ],
 )
 
@@ -1284,6 +1300,43 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
   options: [
 - May take Infested +10 points
 - May take Rancid Maw +10 points
+  ],
+)
+
+= REGIMENTS OF RENOWN
+
+A Regiment of Renown is one named thing rather than a regiment raised from a
+pool. No army may field more than one of it, it is taken as a Rare choice, and
+it may only be taken in an Ordo Draconis. This book has one. The order did not
+recruit it, and could not have.
+
+#unit("THE PORTER",
+  solo: true,
+  first: true,
+  before: [
+It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
+
+#profile(
+  (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: "*", ld: 8, points: 280),
+)
+  ],
+  troop-type: "Monster (Animated Construct)",
+  base-size: "50x100 or 100x150",
+  equipment: "Polearm, heavy armour",
+  special-rules: "Animated Construct, Regeneration (6+), Unstable",
+  special-rules-body: (
+    rule("Granite")[The Porter has +1 to its armour save and the Immunity (Multiple Wounds) special rule.],
+    rule("Obsidian")[The Porter has the Magic Resistance (2) special rule. In addition, enemy Wizards within 12" suffer a \-1 casting penalty.],
+    rule("The Porter's Special Attacks")[When it is the Porter's turn to strike in close combat, roll a D6 and consult the table below to determine what kind of attack it makes:
+
+#chart((("D6", "Result"), ("1-2", "Batter and Slash: The Porter fights using the Random Attacks (D6+1) special rule."), ("3-4", "Impale: Select one model in base contact; that model, and all models in the same file, must pass an Initiative test or suffer a Strength 7 Hit with the Multiple Wounds (D6) special rule."), ("5-6", "Holds the Gate: Neither the Porter nor models in base contact with it fight if they have not already done so this round. The Porter automatically wins the combat by 2 points.")))],
+  ),
+  notes: [
+- There is one Porter. No army may include more than one, and it may only be taken in an Ordo Draconis.
+- The Porter is not Undead. The Lore of Necromancy cannot mend it, the battle standard does not lessen what it loses to Unstable, and it owes no Necromancer under The Generals of Undeath.
+- An Animated Construct may never march, and the Porter is no part of the dead, so the General's presence does not lift the restriction.
+
+#note[_Terror, Stomp (D6) and a Line of Sight value of 5 are not written here because the Monster troop type grants all three. This is the Necrofex Colossus of *Vampire Counts* 3.0 with a Toughness and a Weapon Skill added, the Undead taken off it and the granite and the obsidian bought in. Unstable is written back by hand, because that book's entry carries it through Undead and this one has no Undead to carry it. The working is in the design chapter._]
   ],
 )
 
@@ -1393,6 +1446,7 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
   ("Nightmare, Hellsteed, Abyssal Terror", "The Undead special rule is removed, and the keyword with it"),
   ("Varghulf", "Regeneration (4+) removed, and 135 points to 110. Special, as in that book"),
   ("Grave Guard, Black Knights, Terrorgheist", "Reproduced unchanged"),
+  ("Necrofex Colossus", "Profile, rules, upgrades and prices reproduced unchanged. The prose introducing it is new, and says the thing under the name is found stone rather than stitched work"),
   ("Skeleton Warriors, Zombies, Fell Bats, Bat Swarms", "Reproduced unchanged"),
   ("Skeletal Steed", "Reproduced unchanged"),
   ("The Lore of Necromancy", "Reproduced entire, and one clause of one spell is altered: Fountains of Blood now adds to a Thirst value rather than to a roll"),
@@ -1431,7 +1485,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries, and the wyrms are character mounts as well"),
   ("Blood Heralds", "Does not exist", "Rare, new entry, the Sworn profile winged and on foot, 45 points"),
-  ("The Porter", "Does not exist", "Rare, Grand Cathay's Terracotta Sentinel with the granite and the obsidian folded in, one only, 280 points"),
+  ("The Porter", "Does not exist", "Regiment of Renown, the Necrofex Colossus at Toughness 7 and Weapon Skill 4 with the Undead taken off and the granite and the obsidian folded in, one only, 280 points"),
   ("Great Wyrm", "Does not exist", "Character mount, new, Blood Dragon Lord only"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
@@ -1446,7 +1500,8 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Grave Guard, Black Knights, Terrorgheist", "Special, Special, Rare", "Unchanged"),
   ("Every Ghoul and every Spirit", "Core, Special and Rare", "Not in this book"),
   ("Every Chariot, Shrine and War Machine", "Core, Special and Rare", "Not in this book"),
-  ("Flesh Golems, Necrofex Colossus, Zombie Dragon", "Special, Rare, Rare", "Not in this book"),
+  ("Flesh Golems, Zombie Dragon", "Special, Rare", "Not in this book"),
+  ("Necrofex Colossus", "Rare", "Rare, reproduced entire, and found stone rather than stitched work"),
   ("Sylvanian Levy, Strigany, Skeleton Archers", "Core", "Not in this book"),
   ("Vargheists", "Special, Monstrous Infantry (Vampire), 50 points", "Special, the keep's own animal — Monstrous Beast (Chiropter), 30 points — sharing nothing but the name"),
   ("Lahmian Handmaidens", "Rare", "Not in this book"),
@@ -1536,13 +1591,19 @@ Thirty is a Fell Bat grown up, and the working runs from both ends. From below: 
 
 #field("The Porter", "")
 
-Two hundred and eighty is Grand Cathay's numbers: the Terracotta Sentinel at 235, the granite at 25, the obsidian at 20. One thing in the sum is ours, and it should be stated rather than found. That book sells its upgrades one to a sentinel, and this entry buys two and pays for both. The exclusivity there is a catalogue's — pick a variant off the shelf — and the Porter is not a variant of anything: it is one object that is both old granite and unquiet ground for sorcery, so it carries both natures at their full printed prices. The Yang rule stayed in Cathay with the army rules that define it, and so did the rest of the elemental menu — jade and warpstone are a catalogue, and a catalogue implies a workshop this order does not keep.
+Two hundred and eighty is the Necrofex Colossus of *Vampire Counts* 3.0 at 240, with a Toughness and a Weapon Skill added, the Undead taken off it, and the polearm, the heavy armour, the granite and the obsidian put on. Those removals and those additions do not cancel to anything honest, so the number is a judgement and not a sum. It is also the number the entry carried when it was built on a different chassis entirely, which is a coincidence and is written down as one rather than presented as a derivation.
 
-Priced with Cathay's numbers, and worse off here than they suggest. It is not Undead, so Invocation cannot mend it, the lore attribute passes over it, and the battle standard does not soften its crumble. It may never march, and the exception for the dead is written for the dead. Once wounded, it is wounded. And six inches a turn is a different price in this book than in that one. Grand Cathay shoots, so a sentinel that cannot hurry stands in a line the enemy must come to; the Ordo Draconis is forbidden every missile weapon it might have waited behind, and goes to the enemy at a pace the Porter does not share. The same statline is simply worth less in an army that has to cross the field. The Terrorgheist at 225 flies, screams, and is knit back together every magic phase; fifty-five points over it buy a Toughness, a Strength, an Attack, the granite's immunity and the obsidian's ground, and give up the air, the shriek and every form of repair this book contains. That is the right side of the line to err on for an entry there can only be one of.
+The chassis is that book's because the Porter stands in that book's company and should be priced against the things beside it. What the rebuild gives up is Leadership 10 for Leadership 8, which under Unbreakable is very nearly nothing, and five flat Attacks for a table. What it gains is Impale, which against a ranked block is worth a good deal more than a fifth Attack. Unstable is written back by hand, because the Colossus carries it through Undead and this entry has no Undead to carry it. Screams of the Damned came off for a reason that has nothing to do with points — the Terrorgheist in this book already shrieks — and Holds the Gate went in its place, which is the Giant's Yell and Bawl doing what a door does.
 
-Every other entry in this list is a relationship with terms: the household swore, the Wights answered the second question, the levy signed the roll, the herd is bought and paid for in sheep. The Porter agreed to nothing, and is permitted to be the exception because it was never asked — it was there before the order, before the keep, and before anybody now arguing about it. One is a mystery; two would be a product. That is why there is one, and why the prose never uses a plural.
+It is worse off here than the profile suggests, and deliberately so. It is not Undead, so Invocation cannot mend it, the lore attribute passes over it, and the battle standard does not soften its crumble. It may never march, and the exception for the dead is written for the dead. Once wounded, it is wounded. Six inches a turn is a different price in an army forbidden every missile weapon it might have waited behind, and which must go to the enemy at a pace the Porter does not share. The Terrorgheist at 225 flies, screams, and is knit back together every magic phase; fifty-five points over it buy a Toughness, a Strength, a 3+ save, the granite's immunity and the obsidian's ground, and give up the air, the shriek and every form of repair this book contains.
 
-And the borrowing runs in the right direction. The foundation is first-age work, older than the duchies and older than both realms that proclaim against the man living on it, and of the living races only the Lizardmen ever dealt with the hands that laid such courses. Cathay's sentinels are simply the nearest thing any human book prints. The entry is borrowed from *Grand Cathay* because that book printed the right statue, not because the stone is Cathayan.
+Every other entry in this list is a relationship with terms: the household swore, the Wights answered the second question, the levy signed the roll, the herd is bought and paid for in sheep. The Porter agreed to nothing, and is permitted to be the exception because it was never asked — it was there before the order, before the keep, and before anybody now arguing about it. It is not the only one of its kind, and that is worse rather than better: a thing made twice is a product, and a thing found twice is a pattern. The others came up out of ground the keep had moved onto, and are entered in this book under a borrowed name that does not fit them either. This one was already standing in the gate, and the prose never uses a plural of it.
+
+#field("The Necrofex Colossus", "")
+
+Reproduced from *Vampire Counts* 3.0 entire — profile, rules, upgrades, prices and the names on all four upgrades — and introduced by prose saying it is not the thing that book's name describes. The order keeps no workshop and buys nothing off a shelf: a catalogue of variants would imply one, and found stone implies only that the keep has been standing on old ground for a long time. The upgrade names are kept exactly as printed so that a reader holding both books can see at a glance that nothing in the entry moved.
+
+They are Undead and the Porter is not, and that one line is the whole difference between the common kind and the one from the foundation. Necromancy reaches the ones the keep picked up. It has never once reached the thing in the gate.
 
 #field("The drakes as character mounts", "")
 
