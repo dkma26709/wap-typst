@@ -34,6 +34,19 @@ typst compile --ignore-system-fonts --root . src/lizardmen/3.0.typ out/lizardmen
 # #book-meta — CI walks render.json and compiles nothing that is not in it.
 python emit.py
 
+# Export the whole edition as one JSON file for the army builder
+# (dkma26709/Warhammer_Calculator_Edition), into build/war.json. --check is
+# its gate: every record the source declares is in the file, every string
+# field is byte-identical to the source, and every line of exported text is
+# on the rendered page in out/ (so build first). Needs pymupdf for --check.
+python export.py --check
+
+# The bundle ships by copy, on a release, not from here: build/ is gitignored
+# and the builder commits its copy so its tests run against the file it ships.
+# The file's `source` field is the commit it came from. One command, so the
+# gate always runs before the file moves:
+python export.py --check --out ../Warhammer_Calculator_Edition/Warhammer/wwwroot/data/war/war.json
+
 # Import a new book (one-off, needs the source PDF; see "Never re-import").
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 python extract/to_book.py lizardmen
@@ -64,7 +77,7 @@ is no intermediate representation to keep in step, no manifest listing the
 books, and no generator to re-run. Adding a unit means copying the entry above
 it and editing the values.
 
-Three things read *out* of that, none write back into it:
+Four things read *out* of that, none write back into it:
 
 - **`emit.py`** runs `typst eval` against every book, querying its
   `<book-meta>` and counting its own headings, and writes the site's pages and
@@ -81,6 +94,15 @@ Three things read *out* of that, none write back into it:
 - **`extract/rule_nodes.py` / `item_nodes.py`** parse `src/rulebook/*.typ` into
   memory-graph nodes for an external consumer. They preserve hand-written
   `## Traps` sections across regeneration — don't clobber those.
+- **`export.py`** runs `typst eval` against every book and writes the edition
+  as one JSON file for the army builder. It parses no Typst: every record
+  (`unit`, `magic-item`, `upgrade`, `spell`, a `namecost` head) drops a
+  `<meta>` metadata element as it renders, and `balanced-columns` and
+  `two-columns` drop their body, so the chapters with no record form (an
+  army's special rules, the rulebook's prose) are cut at their heads from
+  that. The template is the schema: a new `UNIT_FIELDS` key is exported
+  without touching the script. The metadata is invisible on the page, and
+  a template change there must stay so — prove it with `render_glyphs.py`.
 
 **`extract/`** is the one-way import path: `extract.py` recovers structure from
 the PDFs, `batch.py` orchestrates extract → coverage → welds into `build/`, and
@@ -157,6 +179,8 @@ assumed:
 - Changed an edition's body → recompile it and its parent and run
   `check_editions.py`. A House edition's parent is its base book; a Proposals
   edition's is the House book where one exists.
+- Changed a record's metadata in `template.typ`, or `export.py` → `python
+  export.py --check` after the build, and confirm `check: ok`.
 - Changed anything under `extract/` → the gates need the source PDFs, which are
   not in the repo. If you don't have them, say so rather than reporting the
   change as verified.

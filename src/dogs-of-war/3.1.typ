@@ -1724,9 +1724,7 @@ If the attacks hits, it inflicts 2D6 Hits.
 #upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
 ]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

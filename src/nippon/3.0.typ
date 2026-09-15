@@ -1307,9 +1307,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
 #upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
 ]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

@@ -1426,15 +1426,12 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 
 = CREDITS
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-)
+#group("Written & Edited by:")
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#namecost("Mathias Eliasson", "")
+
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

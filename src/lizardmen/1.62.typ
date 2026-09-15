@@ -190,8 +190,6 @@ Once a model or unit with this special rule has inflicted one or more unsaved Wo
 
 #magic-weapon("BURNING BLADE OF CHOTEC", 15)[This weapon gives the wielder the Armour Piercing (2) and Flaming Attacks special rules.]
 
-#namecost("SACRIFICIAL HEART", "")
-
 
 
 #magic-weapon("CLOTH OF CHOTEC", 15)[Sling. All shots from this weapon have +1 Strength.]

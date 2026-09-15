@@ -995,10 +995,8 @@ She always knows _The Flock of Doom_ spell from the Lore of Beasts in addition t
 #upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
 ]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
 

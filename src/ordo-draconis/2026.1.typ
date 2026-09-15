@@ -1754,10 +1754,9 @@ The dead are still there, still cost two and a half points, and no longer excuse
 
 = CREDITS
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
+#group("Written & Edited by:")
+
+#namecost("Mathias Eliasson", "")
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
 
@@ -1766,5 +1765,3 @@ The dead are still there, still cost two and a half points, and no longer excuse
 #namecost("The Ordo Draconis", "")
 
 An Army of Infamy written for our own table, on top of Mathias Eliasson's *Vampire Counts* 3.0. Unofficial, non-commercial, and carrying no endorsement from him.
-  ],
-)

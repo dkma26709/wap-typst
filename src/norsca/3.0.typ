@@ -1046,9 +1046,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
 #upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
 ]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
