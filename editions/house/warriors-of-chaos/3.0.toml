@@ -1,0 +1,52 @@
+# Amendments to Warriors of Chaos 3.0.
+#
+# See editions/house/lizardmen/3.0.toml for the format.
+
+book = "warriors-of-chaos"
+
+
+[[change]]
+id      = "warriors-strike-twice"
+title   = "Chaos Warriors have two Attacks, at 14 points"
+chapter = "CORE UNITS"
+entry   = "WARRIORS"
+op      = "replace"
+why     = """
+A Chaos Warrior at one Attack is a Marauder in better armour. Everything the \
+unit is for — the elite infantry block that the rest of the army is built \
+around — argues for the second Attack, and the earlier line of the book gave \
+it to them. Thirteen points bought a body; fourteen buys the model the army \
+list already describes.
+"""
+
+original = """Warrior 4 5 3 4 4 1 4 1 8 13"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|4|5|3|4|4|1|4|2|8|14
+"""
+
+
+[[change]]
+id      = "marked-sorcerers-choose"
+title   = "A marked Sorcerer chooses among three lores"
+chapter = "CHARACTERS"
+entry   = "SORCERER"
+op      = "replace"
+why     = """
+As written the mark decides the lore outright, so a Sorcerer of Nurgle is a \
+Lore of Nurgle caster and nothing else — the mark is chosen for the army and \
+the caster gets no say. Three lores to a mark keeps the mark meaningful and \
+gives the player a decision at list-building: the god's own lore, or one of two \
+that suit him. Undivided is untouched and still picks freely.
+"""
+
+original = """A Soulflayer with the Mark of Tzeentch, Nurgle or Slaanesh must use the Lore of Tzeentch, Nurgle, or Slaanesh, respectively."""
+
+new = """
+A Sorcerer with a mark of chaos can choose:
+
+- Nurgle: Lore of Nurgle, Beasts, Death
+- Tzeentch: Lore of Tzeentch, Fire, Heavens
+- Slaanesh: Lore of Slaanesh, Shadow, Metal
+"""

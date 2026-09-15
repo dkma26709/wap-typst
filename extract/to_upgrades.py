@@ -16,23 +16,53 @@ import sys
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
+# Keyed by the book's path under src/, so a version of a book can name its own
+# chapters: the 1.x line calls the Beastmen's chapter GIFTS OF CHAOS where 3.0
+# calls it MUTATIONS & TRAITS, and only the Empire's house edition carries both
+# KNIGHTLY ORDERS and THE CULT OF ULRIC.
 CHAPTERS = {
-    "beastmen": ["MUTATIONS & TRAITS"],
-    "bretonnia": ["VIRTUES OF THE CHIVALRIC KNIGHT"],
-    "daemons-of-chaos": ["DAEMONIC GIFTS"],
-    "dark-elves": ["GIFTS OF KHAINE"],
-    "dogs-of-war": ["QUIRKS OF CHARACTER"],
-    "dwarfs": ["RUNIC ITEMS"],
-    "empire": ["KNIGHTLY ORDERS"],
-    "high-elves": ["ELVEN HONOURS"],
-    "lizardmen": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
-    "nippon": ["CLAN MON"],
-    "norsca": ["SAGAS"],
-    "ogre-kingdoms": ["BIG NAMES OF THE OGRES"],
-    "vampire-counts": ["VAMPIRIC POWERS"],
-    "warriors-of-chaos": ["GIFTS OF THE GODS"],
-    "wood-elves": ["FOREST SPITES"],
-    "zombie-pirates": ["VAMPIRIC POWERS"],
+    "beastmen/1.7": ["GIFTS OF CHAOS"],
+    "beastmen/3.0": ["MUTATIONS & TRAITS"],
+    "beastmen/3.0-house": ["MUTATIONS & TRAITS"],
+    "bretonnia/1.6": ["VIRTUES OF THE CHIVALRIC KNIGHT"],
+    "bretonnia/3.0": ["VIRTUES OF THE CHIVALRIC KNIGHT"],
+    "daemons-of-chaos/1.71": ["DAEMONIC GIFTS"],
+    "daemons-of-chaos/3.0": ["DAEMONIC GIFTS"],
+    "daemons-of-chaos/3.0-house": ["DAEMONIC GIFTS"],
+    "dark-elves/1.71": ["GIFTS OF KHAINE"],
+    "dark-elves/3.1": ["GIFTS OF KHAINE"],
+    "dogs-of-war/3.1": ["QUIRKS OF CHARACTER"],
+    "dwarfs/1.6": ["RUNIC ITEMS"],
+    "dwarfs/3.11": ["RUNIC ITEMS"],
+    "dwarfs/3.11-house": ["RUNIC ITEMS"],
+    "empire/1.6": ["KNIGHTLY ORDERS"],
+    "empire/3.1": ["KNIGHTLY ORDERS", "THE CULT OF ULRIC"],
+    "empire/3.1-house": ["KNIGHTLY ORDERS", "THE CULT OF ULRIC"],
+    "high-elves/1.6": ["ELVEN HONOURS"],
+    "high-elves/3.1": ["ELVEN HONOURS"],
+    "lizardmen/1.6": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/1.61": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/1.62": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/1.63": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/1.64": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/3.0": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/3.0-house": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
+    "lizardmen/3.0-proposal": ["BLESSED SPAWNINGS",
+                               "DISCIPLINES OF THE OLD ONES"],
+    "nippon/3.0": ["CLAN MON"],
+    "norsca/3.0": ["SAGAS"],
+    "ogre-kingdoms/1.6": ["BIG NAMES OF THE OGRES"],
+    "ogre-kingdoms/3.1": ["BIG NAMES OF THE OGRES"],
+    "ordo-draconis/2026.1": ["VAMPIRIC POWERS"],
+    "skaven/1.9": ["SKAVEN WARGEAR"],
+    "tyranids/1.0": ["BIOMORPHS", "HIVE FLEETS"],
+    "vampire-counts/1.71": ["VAMPIRIC POWERS"],
+    "vampire-counts/3.0": ["VAMPIRIC POWERS"],
+    "warriors-of-chaos/1.6": ["MUTATIONS & POWERS"],
+    "warriors-of-chaos/3.0": ["GIFTS OF THE GODS"],
+    "wood-elves/1.61": ["FOREST SPITES"],
+    "wood-elves/3.1": ["FOREST SPITES"],
+    "zombie-pirates/3.0": ["VAMPIRIC POWERS"],
 }
 
 STR = r'"((?:[^"\\]|\\.)*)"'
@@ -49,6 +79,13 @@ ONLY = re.compile(r'^([A-Z][^.]{0,70}?) only\. ')
 
 STOP = ("#namecost(", "#entry(", "#balanced-columns[", "]")
 
+# Column wrappers the chapter opens around a run of its own records. The 1.x
+# books use `#columns(2)[` where the 3.x books use `#balanced-columns[`, and a
+# wrapper the parser does not recognise is a bracket it opens and never closes:
+# Dwarfs 1.6 compiled to "unclosed delimiter" with the `]` stranded mid-chapter.
+# `upgrade-chapter` sets the columns itself, so both simply go.
+WRAPPERS = ("#balanced-columns[", "#columns(")
+
 
 def section_bounds(lines, title):
     start = lines.index("= " + title)
@@ -57,6 +94,27 @@ def section_bounds(lines, title):
                or lines[i].startswith("#magic-item-chapter")
                or lines[i].startswith("#upgrade-chapter("))
     return start, end
+
+
+def strip_wrappers(body):
+    """Drop the chapter's column wrappers, opener and matching close alike.
+
+    A wrapper left half-removed is worse than one left alone: the `]` that
+    closed it is then stranded in the middle of the chapter and the book stops
+    compiling. The close is found by counting, not assumed to be the next one.
+    """
+    out, depth, inside = [], 0, False
+    for line in body:
+        if not inside and line.startswith(WRAPPERS):
+            inside, depth = True, 0
+            continue
+        if inside:
+            if line.strip() == "]" and depth == 0:
+                inside = False
+                continue
+            depth += line.count("[") - line.count("]")
+        out.append(line)
+    return out
 
 
 def take_paragraphs(lines, i):
@@ -258,8 +316,13 @@ def convert(slug, problems, seen):
     lines = open(path, encoding="utf-8").read().split("\n")
     total = 0
     for title in reversed(CHAPTERS[slug]):
+        # A chapter already converted has no `= TITLE` heading left - it prints
+        # its own from upgrade-chapter - so it is done, not missing.
+        if ("= " + title) not in lines:
+            print("%-18s %-32s already records" % (slug, title))
+            continue
         start, end = section_bounds(lines, title)
-        body = lines[start + 1:end]
+        body = strip_wrappers(lines[start + 1:end])
         while body and body[-1] == "":
             body.pop()
         items = parse(body, problems, "%s/%s" % (slug, title))

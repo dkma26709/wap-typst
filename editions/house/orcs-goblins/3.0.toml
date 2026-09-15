@@ -1,0 +1,173 @@
+# Amendments to Orcs & Goblins 3.0.
+#
+# See editions/house/lizardmen/3.0.toml for the format.
+
+book = "orcs-goblins"
+
+
+[[change]]
+id      = "big-uns-are-their-own-entry"
+title   = "Big 'Uns are a unit again, not an upgrade"
+chapter = "CORE UNITS"
+entry   = "ORC BOYZ"
+op      = "replace"
+why     = """
+3.0 folds Big 'Uns into Orc Boyz as an upgrade: a Warboss lets one unit pay two \
+points a model for +1 Weapon Skill and Mighty Blow, and that unit then counts as \
+a Special choice. It reads cheaply and plays worse than it reads — the upgrade \
+is bought on a unit already chosen, so the decision is made twice and neither \
+time against the rest of the list.
+
+The earlier line of the book gave Big 'Uns and Boar Boy Big 'Uns entries of \
+their own, priced against the other Core units, and this restores that. Brutes \
+stay beside them: the two were never alternatives, and cutting one to make room \
+for the other is what 3.0 did rather than what it should have.
+
+Whether a Warboss should be required at all is a separate question and is not \
+settled — it stands as a proposal in the Proposals edition, not as a change here.
+"""
+
+original = """It stood on both ORC BOYZ and ORC BOAR BOYZ:
+
+For each Orc Warboss in your army, you may upgrade one unit of Orc Boys or Orc Boar Boyz of the same sub-species to Big 'Uns. Big 'Uns gain +1 Weapon Skill and the Mighty Blow (1) special rule. In addition, they count as Special Units.
+
+For each Orc Warboss in your army, you may upgrade one unit of Orc Boys or Orc Boar Boyz of the same sub-species to Big 'Uns. Big 'Uns gain +1 Weapon Skill and the Mighty Blow (1) special rule. In addition, they count as Special Units."""
+
+new = """
+BIG 'UNS and BOAR BOY BIG 'UNS become Core entries of their own, and the Big 'Uns
+upgrade rule is removed from Orc Boyz and Orc Boar Boyz. The two entries read:
+
+BIG 'UNS
+PROFILE
+M
+WS
+BS
+S
+T
+W
+I
+A
+LD
+POINTS
+Big 'Un
+4
+4
+3
+4
+4
+1
+2
+1
+7
+8.5
+UNIT SIZE: 15-45
+TROOP TYPE: Infantry (Common Orc)
+BASE SIZE: 25x25 or 30x30
+EQUIPMENT: Hand weapon
+SPECIAL RULES: Animosity, Size Matters, Mighty Blow (1)
+UPGRADES:
+• Big Stabbas: A unit of Savage Orc Boyz may be upgraded to include Big Stabbas. This is represented by including 
+one or more Big Stabba models in the unit. A Big Stabba is mounted on two Infantry bases and must be placed to 
+cover both the first and second rank of the unit, but is otherwise equipped like the rest of the unit. Each Big Stabba 
+model causes D3 Impact Hits with the Multiple Wounds (D3) special rule. Big Stabbas are always the last models to 
+be removed as casualties (excluding any Command Group models); the weapons are picked up by other Savage Orcs 
+in the unit should they be slain.
+• Big 'Uns: For each Orc Warboss in your army, you may take one unit of Big 'Uns or Boar Boy Big 'Uns as a core choice
+• Savage Orc: The model gains the Frenzy and Magical Ward (6+) special rules. This changes their Troop Type to 
+Infantry (Savage Orc).
+OPTIONS:
+• May be upgraded to Savage Orcs +3 points/model
+• May choose one of the following:
+• Additional hand weapons +1 point/model
+• Spears +1 point/model
+• Polearms (Common Big 'Uns only) +2 points/model
+• Great weapons +3 points/model
+• May take shields (unless armed with great weapons) +1 point/model
+• May choose one of the following:
+• Light armour (Common Big 'Uns only) +0.5 point/model
+• Medium armour (Common Big 'Uns only) +1.5 points/model
+• May upgrade two Savage Orcs to a Big Stabba for every 10 models in the unit +10 points/Big Stabba
+• May upgrade one Big 'Un to a Leader +5 points
+• May upgrade one Big 'Un to a Musician +5 points
+• May upgrade one Big 'Un to a Standard Bearer +10 points
+• May take a Magic Standard worth up to 50 points
+34
+
+BOAR BOY BIG 'UNS
+PROFILE
+M
+WS
+BS
+S
+T
+W
+I
+A
+LD
+POINTS
+Big 'Un
+4
+4
+3
+4
+4
+1
+2
+1
+7
+17
+War Boar
+7
+3
+0
+3
+4
+1
+3
+1
+3
+UNIT SIZE: 5-15
+TROOP TYPE: Cavalry (Common Orc)
+MOUNT: War Boar (Porcine)
+BASE SIZE: 25x50 or 30x60
+EQUIPMENT: Hand weapon
+SPECIAL RULES: Animosity, Natural Armour (6+), Size Matters, Mighty Blow (1), Tusker Charge (War Boar only)
+UPGRADES:
+• Big 'Uns: For each Orc Warboss in your army, you may take one unit of Big 'Uns or Boar Boy Big 'Uns as a core choice
+• Savage Orc: The model gains the Frenzy and Magical Ward (6+) special rules. This changes their Troop Type to 
+Cavalry (Savage Orc).
+OPTIONS:
+• May be upgraded to Savage Orcs +3 points/model
+• May choose one of the following:
+• Additional hand weapons (Savage Orcs only) +1 point/model
+• Light lances +1.5 points/model
+• May take shields (unless armed with additional hand weapons) +1 point/model
+• May choose one of the following:
+• Light armour (Common Big Un's only) +1 point/model
+• Medium armour (Common Big Un's only) +2 points/model
+• May upgrade one Boar Boy Big 'Un to a Leader +5 points
+• May upgrade one Boar Boy Big 'Un to a Musician +5 points
+• May upgrade one Boar Boy Big 'Uns to a Standard Bearer +10 points
+• May take a Magic Standard worth up to 50 points
+"""
+
+
+[[change]]
+id      = "black-orcs-strike-twice"
+title   = "Black Orcs have two Attacks, at 14 points"
+chapter = "SPECIAL UNITS"
+entry   = "BLACK ORCS"
+op      = "replace"
+why     = """
+The same argument as the Chaos Warrior next door, and for the same reason: an \
+elite unit that strikes once is heavy infantry in name only, and Black Orcs are \
+what the rest of an Orc army is arranged around. The second Attack is what \
+makes them worth the points and worth the Special slot.
+"""
+
+original = """Black Orc 4 4 3 4 4 1 2 1 8 13"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|4|4|3|4|4|1|2|2|8|14
+"""

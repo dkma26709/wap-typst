@@ -16,6 +16,7 @@ LABEL_TO_KEY = {
     "DISCIPLINES OF THE OLD ONES": "disciplines-of-the-old-ones",
     "GIFTS OF THE GODS": "gifts-of-the-gods", "MAGIC ITEMS": "magic-items",
     "GIFTS OF KHAINE": "gifts-of-khaine", "VAMPIRIC POWERS": "vampiric-powers",
+    "MUTATIONS & POWERS": "mutations-and-powers",
     "SPECIAL RULES": "special-rules", "UPGRADES": "upgrades",
     "OPTIONS": "options", "NOTES": "notes",
 }

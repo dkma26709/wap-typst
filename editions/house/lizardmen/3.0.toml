@@ -1,0 +1,165 @@
+# Amendments to Lizardmen 3.0.
+#
+# `original` is the anchor: the block's text, quoted from the book. Punctuation
+# and case are folded before matching, so a hyphen typed here will find an en
+# dash in the source, but the words must be exact. `until` extends the anchor
+# across consecutive blocks. Ops: replace, insert-after, insert-before, delete.
+#
+# In `new`, a blank line starts a new block and its first character decides the
+# kind: `- ` a list, `## ` a run-in heading, `@LABEL: value` a profile field,
+# `> ` the indented italic note that sits beneath a profile, and two
+# `|`-delimited lines a weapon profile — headings, then values.
+
+book = "lizardmen"
+
+
+[[change]]
+id      = "skink-cohort-poisoned-attacks"
+title   = "Skink Cohorts are not poisoned by default"
+chapter = "CORE UNITS"
+entry   = "SKINK COHORT"
+op      = "replace"
+why     = """
+Poisoned Attacks comes from Firefly Frog Venom, which is an upgrade the unit pays \
+two points a model for, and which grants the rule to missile attacks. A Skink \
+Cohort as it comes carries a hand weapon and a shield and has no missile attacks \
+to poison, so the rule sits in its profile doing nothing while implying the \
+upgrade is free. A Cohort that buys shortbows or javelins and then buys the venom \
+gains it, exactly as the Skirmishers and Chameleon Skinks beside it do.
+"""
+
+original = """SPECIAL RULES: Aquatic, Cold-blooded, Natural Armour (6+), Poisoned Attacks ("""
+
+new = """
+@SPECIAL RULES: Aquatic, Cold-blooded, Natural Armour (6+)
+"""
+
+
+[[change]]
+id      = "salamander-spout-flames"
+title   = "Spout Flames is Cumbersome"
+chapter = "SPECIAL UNITS"
+entry   = "SALAMANDER"
+op      = "replace"
+why     = """
+Slow to Fire is named here and defined nowhere in any of the books. Cumbersome — \
+a weapon that cannot be used to Stand and Shoot — is the rule it was reaching \
+for, and the one the rest of the set puts on weapons of this kind.
+"""
+
+original = """n/a 4 Flaming Attacks, Slow to Fire"""
+
+new = """
+|Range|Strength|Special Rules
+|n/a|4|Cumbersome, Flaming Attacks
+"""
+
+
+[[change]]
+id      = "ancient-salamander-spout-flames"
+title   = "The Ancient's Spout Flames, likewise"
+chapter = "RARE UNITS"
+entry   = "ANCIENT SALAMANDER"
+op      = "replace"
+why     = """
+The same weapon on a larger beast, and the same correction.
+"""
+
+original = """6" 5 Flaming Attacks, Slow to Fire"""
+
+new = """
+|Range|Strength|Special Rules
+|6"|5|Cumbersome, Flaming Attacks
+"""
+
+
+[[change]]
+id      = "temple-guard-palanquin-equipment"
+title   = "The Temple Guard Palanquin is armed"
+chapter = "CHARACTER MOUNTS"
+entry   = "TEMPLE GUARD PALANQUIN"
+op      = "insert-after"
+why     = """
+The entry gives the bearers a Weapon Skill, a Strength and eight Attacks, and \
+then never says what they are swinging. Most character mounts list no equipment \
+because they are beasts fighting with what they were born with, but this one is \
+four Temple Guard, and the books arm their counterparts: the Dwarfs' \
+Shieldbearers, who likewise carry a character into battle, are given a hand \
+weapon, as are the Anvil of Doom's crew, the Blood Throne's and the Halfling \
+Ogre Bodyguard.
+"""
+
+original = """BASE SIZE: 50x75 or 60x90"""
+
+new = """
+@EQUIPMENT: Hand weapon
+"""
+
+[[change]]
+id      = "slann-battle-standard-full-allowance"
+title   = "A Slann keeps its full allowance behind the Battle Standard"
+chapter = "CHARACTERS"
+entry   = "SLANN MAGE-PRIEST"
+op      = "replace"
+why     = """
+The Scar-Veteran, three entries later in the same chapter, may carry the Battle \
+Standard with a Magic Standard of no points limit in addition to any other Magic \
+Items they might have. The Slann alone paid for the privilege, halving its hundred \
+points to fifty, which left the army's most expensive character as the one that \
+could least afford to carry its banner. The two entries now read the same way.
+"""
+
+original = """The Battle Standard Bearer can have a magic banner with no points limit. However, a Slann carrying a magic standard can only take other magic items and/or Disciplines of the Old Ones up to a total of 50 points. A Slann carrying the Battle Standard may still be the Army General."""
+
+new = """
+The Battle Standard Bearer can have a magic banner with no points limit in addition to any other magic items and/or Disciplines of the Old Ones. A Slann carrying the Battle Standard may still be the Army General.
+"""
+
+[[change]]
+id      = "saurus-warriors-weapon-skill-4"
+title   = "Saurus Warriors strike as well as they are built"
+chapter = "CORE UNITS"
+entry   = "SAURUS WARRIORS"
+op      = "replace"
+why     = """
+Weapon Skill 3 put a Saurus Warrior on the same footing as a militiaman, which sits \
+oddly beside Strength 4, Toughness 4 and two Attacks. A point a model pays for the \
+difference.
+"""
+
+original = """Saurus Warrior 4 3 0 4 4 1 1 2 8 13"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|4|4|0|4|4|1|1|2|8|14
+"""
+
+[[change]]
+id      = "stegadon-200-points"
+title   = "A Stegadon costs five points more"
+chapter = "RARE UNITS"
+entry   = "STEGADON"
+op      = "replace"
+why     = """
+Impact Hits (D6+1) on a Monster with four Attacks and Stubborn is worth more than the \
+book charged for it.
+"""
+
+original = """Stegadon 6 3 0 5 6 5 2 4 6 195"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|6|3|0|5|6|5|2|4|6|200
+"""
+
+[[change]]
+id      = "arcanadon-no-impact-hits"
+title   = "An Arcanadon does not trample"
+chapter = "RARE UNITS"
+entry   = "ARCANADON"
+op      = "replace"
+why     = """
+The Arcanadon carries a bound spell and a crew of Skinks, and is priced as a platform \
+rather than as a charge. Impact Hits belong to the Stegadon beside it, which is the \
+entry built to run into things.
+"""

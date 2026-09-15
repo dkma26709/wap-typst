@@ -42,6 +42,12 @@
 #let RUNIN_GAP = 1.4em
 
 #let namecost(name, cost, above: RUNIN_GAP) = block(above: above, below: 0.2em, sticky: true, {
+  // Every other named thing in a book publishes itself under <meta>, so that a
+  // change can be checked by querying the document rather than by reading the
+  // page. This one did not, which left the army special rules - a chapter of
+  // every army book - invisible to that check: a rule could be dropped and no
+  // gate would know. Metadata prints nothing, so the page is unaffected.
+  [#metadata((kind: "named", name: name, cost: cost))<meta>]
   // Justification would stretch a two-word name across the whole column, so it
   // is switched off here and the name column sized to its content.
   set par(justify: false)
@@ -972,10 +978,13 @@
 // columns, as a lore is. The intro is set as it is given rather than `strong`
 // as a lore's is: the source bolds the paragraph in most of these chapters and
 // sets it plain in the Daemons', and a book says which by what it passes.
-#let upgrade-chapter(title, intro: none, body) = {
+#let upgrade-chapter(title, intro: none, whole: false, body) = {
   heading(level: 1, title)
   if intro != none { intro }
-  balanced-columns(body)
+  // `whole:` for a chapter whose records must not split across a column - the
+  // army special rules, where a head stranded at a column's foot reads as a
+  // rule with no body. A faction-upgrade chapter leaves it off and runs on.
+  balanced-columns(body, whole: whole)
 }
 
 // --- profiles ---------------------------------------------------------------
@@ -1166,14 +1175,18 @@
   // Book-specific lists of innate powers. Named rather than left free-form
   // because each is a fixed printed label recurring across a book's special
   // characters, and a free slot would admit a typo in the one place the
-  // vocabulary exists to catch one. All five sit between MAGIC and SPECIAL
-  // RULES, three of them ahead of MAGIC ITEMS and two behind it.
+  // vocabulary exists to catch one. All six sit between MAGIC and SPECIAL
+  // RULES, three of them ahead of MAGIC ITEMS and three behind it.
   (key: "daemonic-gifts", label: "DAEMONIC GIFTS"),
   (key: "disciplines-of-the-old-ones", label: "DISCIPLINES OF THE OLD ONES"),
   (key: "gifts-of-the-gods", label: "GIFTS OF THE GODS"),
   (key: "magic-items", label: "MAGIC ITEMS"),
   (key: "gifts-of-khaine", label: "GIFTS OF KHAINE"),
   (key: "vampiric-powers", label: "VAMPIRIC POWERS"),
+  // Warriors of Chaos 1.6 only, where four special characters carry it and the
+  // 3.0 book carries none. It is the sixth of these and was missing because no
+  // book in the 3.x line prints it - the 1.x import is what turned it up.
+  (key: "mutations-and-powers", label: "MUTATIONS & POWERS"),
   (key: "special-rules", label: "SPECIAL RULES"),
   (key: "upgrades", label: "UPGRADES"),
   (key: "options", label: "OPTIONS"),
@@ -1381,18 +1394,150 @@
   }
 }
 
+// --- the rulebook's own records ---------------------------------------------
+//
+// Three chapters of the rulebook are as regular as a unit entry and were being
+// written as raw `namecost` heads, which draw a name and publish nothing about
+// what the name introduces. `extract/rule_nodes.py` then recovered the
+// structure by matching that markup with a regex - its own docstring calls the
+// result "a parse, not a reconstruction". These say it outright instead, so the
+// query that reads a unit out of a book reads these too.
+//
+// Rulebook-only, unlike everything above: no army book has a scenario, a troop
+// type or a weapon profile of its own.
+
+// A weapon's profile is the same three columns in every entry, and 32 of the
+// 46 carry one - the armour and a few weapons are prose alone. Passing the
+// three values rather than a hand-written `minitable` means the columns cannot
+// drift between one weapon and the next, and that the army books' constant
+// references to these profiles have something to be checked against.
+#let weapon(name, range: none, strength: none, rules: none, body) = {
+  let where = "weapon " + name
+  let given = (range, strength, rules).filter(v => v != none)
+  assert(given.len() in (0, 3),
+    message: where + ": a profile is all three of range, strength and rules,"
+      + " or none of them - not " + str(given.len()))
+
+  [#metadata((
+    kind: "weapon", name: name, range: range, strength: strength, rules: rules,
+  ))<meta>]
+  namecost(name, "", above: RECORD_GAP)
+  if given.len() == 3 {
+    minitable(("Range", "Strength", "Special Rules"), (range, strength, rules))
+  }
+  body
+}
+
+// The seven parts of a scenario, in the order the chapter prints them - and the
+// chapter states the vocabulary itself: "Each pitched battle contains the
+// information you need to get set up and playing, broken down into the
+// following categories ... This format governs all Warhammer scenarios".
+// `deployment-table` is the eighth and Dawn Attack is the only battle with one.
+#let SCENARIO_FIELDS = (
+  (key: "armies", label: "THE ARMIES"),
+  (key: "battlefield", label: "THE BATTLEFIELD"),
+  (key: "deployment", label: "DEPLOYMENT"),
+  (key: "deployment-table", label: "DEPLOYMENT TABLE"),
+  (key: "first-turn", label: "FIRST TURN"),
+  (key: "game-length", label: "GAME LENGTH"),
+  (key: "victory-conditions", label: "VICTORY CONDITIONS"),
+  (key: "special-rules", label: "SCENARIO SPECIAL RULES"),
+)
+
+// The parts of a troop type. Unlike a scenario's, these are not all printed by
+// every entry - Infantry carries four of them and Chariots nine - so none is
+// required, and the vocabulary exists to catch a tenth rather than to demand
+// all nine.
+#let TROOP_TYPE_FIELDS = (
+  (key: "split-profile", label: "SPLIT PROFILE"),
+  (key: "armour-saves", label: "ARMOUR SAVES"),
+  (key: "character-mount", label: "CHARACTER MOUNT"),
+  (key: "ranks", label: "RANKS"),
+  (key: "supporting-attacks", label: "SUPPORTING ATTACKS"),
+  (key: "special-rules", label: "SPECIAL RULES"),
+  (key: "terrain", label: "TERRAIN"),
+  (key: "unit-strength", label: "UNIT STRENGTH"),
+  (key: "line-of-sight", label: "LINE OF SIGHT"),
+)
+
+// Both records are a level-2 heading and a run of named parts, which is what
+// `unit` is too - so they validate the same way and take the same `order:`
+// escape hatch. Eight of the twelve troop types print the canonical order
+// above; Monsters leads with SPECIAL RULES and Chariots has it sixth, so those
+// say so rather than the vocabulary pretending they agree.
+#let _record-chapter(kind, fields, name, args, required: ()) = {
+  let where = kind + " " + name
+  let keys = fields.map(f => f.key)
+  let labels = { let d = (:); for f in fields { d.insert(f.key, f.label) }; d }
+
+  let unknown = args.keys().filter(
+    k => k not in ("order", "intro") and k not in keys)
+  assert(unknown.len() == 0,
+    message: where + ": unknown field " + unknown.join(", ")
+      + " (known: " + keys.join(", ") + ")")
+  let missing = required.filter(k => k not in args)
+  assert(missing.len() == 0,
+    message: where + ": missing " + missing.join(", "))
+
+  let present = keys.filter(k => k in args)
+  let order = if "order" in args {
+    let o = args.order
+    let absent = present.filter(k => k not in o)
+    let extra = o.filter(k => k not in present)
+    assert(absent.len() == 0 and extra.len() == 0,
+      message: where + ": order"
+        + if absent.len() > 0 { " omits " + absent.join(", ") } else { "" }
+        + if extra.len() > 0 { " names unset " + extra.join(", ") } else { "" })
+    o
+  } else { present }
+
+  [#metadata((kind: kind, name: name, fields: order))<meta>]
+  heading(level: 2, name)
+  // The standing line before the parts - "The following rules apply to
+  // Cavalry:" - which every troop type prints and no scenario does. Named as
+  // `upgrade-chapter` and `magic-item-section` name theirs.
+  if "intro" in args { args.intro }
+  for k in order {
+    namecost(labels.at(k), "")
+    args.at(k)
+  }
+}
+
+#let scenario(name, ..named) = {
+  assert(named.pos().len() == 0,
+    message: "scenario " + name + ": fields are named, not positional")
+  // Six of the seven are required; `first-turn` is not, because the rulebook's
+  // 2.32 edition prints Dawn Attack without one - the scenario's own special
+  // rules decide who goes first there. 3.11 gives all six scenarios all seven.
+  _record-chapter("scenario", SCENARIO_FIELDS, name, named.named(),
+    required: ("armies", "battlefield", "deployment",
+               "game-length", "victory-conditions", "special-rules"))
+}
+
+// Named for the thing it is, though a unit entry also carries a `troop-type:`
+// field naming which of these it is. The two are the same concept from either
+// end - the rulebook defines Cavalry here, an army book says a unit is some -
+// and they never occur in the same position, one being a call and the other a
+// named argument.
+#let troop-type(name, ..named) = {
+  assert(named.pos().len() == 0,
+    message: "troop type " + name + ": fields are named, not positional")
+  _record-chapter("troop-type", TROOP_TYPE_FIELDS, name, named.named())
+}
+
 // --- front matter -----------------------------------------------------------
 
 // What the site needs to know about a book and cannot read off its pages:
-// where it files and what it is called. `..named` rather than a parameter list,
-// so an unknown key is an error and `align` never shadows Typst's own function
-// inside this scope.
+// where it files, what it is called, and whether it is Eliasson's or ours.
+// `..named` rather than a parameter list, so an unknown key is an error and
+// `align` never shadows Typst's own function inside this scope.
 #let BOOK_META_REQUIRED = ("slug", "army", "version", "layout")
-#let BOOK_META_OPTIONAL = ("cover", "align")
+#let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored",
+                          "id", "base", "edition")
 
 // An extracted book takes its allegiance from the rulebook's Alliance &
 // Alignment lists at import time; anything absent here simply has none.
-#let BOOK_META_DEFAULTS = (:)
+#let BOOK_META_DEFAULTS = (shelf: "base", authored: false)
 
 #let book-meta(..named) = {
   assert(named.pos().len() == 0,
@@ -1408,9 +1553,9 @@
   assert(m.layout in ("army", "rules"),
     message: "book-meta: layout must be \"army\" or \"rules\", not \"" + m.layout + "\"")
   // Built by walking the known keys rather than listing them a second time.
-  // Naming them twice once meant a key was accepted by the assert above and
-  // then silently dropped from what a reader could query - the assert passed
-  // and the data vanished.
+  // Naming them twice once meant `id`, `base` and `edition` were accepted here
+  // and then silently dropped from what a reader could query - the assert
+  // passed and the data vanished.
   let out = (:)
   for key in known {
     out.insert(key, m.at(key, default: BOOK_META_DEFAULTS.at(key, default: none)))
