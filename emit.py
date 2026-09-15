@@ -340,10 +340,15 @@ def card(href: str, title: str, meta: str, cover: str | None,
 
 
 def cover_of(book: dict) -> str | None:
-    """The art beside a book's PDF, which CI copies as `<id>-cover<ext>`."""
+    """The army's art, which CI publishes once at `covers/<army><ext>`.
+
+    Per army rather than per book: the illustration is the faction's, so every
+    version of an army shares it, and a copy beside each book would publish the
+    same 2.7MB picture eight times over for Lizardmen alone.
+    """
     if not book.get("cover"):
         return None
-    return f'{book["id"]}-cover{Path(book["cover"]).suffix}'
+    return book["cover"]
 
 
 def edition_label(book: dict) -> str:

@@ -11,7 +11,7 @@
   army: "Warriors of Chaos",
   version: "3.0",
   layout: "army",
-  cover: "covers/warriors-of-chaos/3.0.png",
+  cover: "covers/warriors-of-chaos.png",
   align: "destruction",
   base: "warriors-of-chaos/3.0",
   edition: "house",
@@ -22,7 +22,7 @@
 #cover(
   title: "Warriors of Chaos",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/warriors-of-chaos/3.0.png",
+  art: "/assets/covers/warriors-of-chaos.png",
 )
 
 #colophon((

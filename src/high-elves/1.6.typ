@@ -12,6 +12,7 @@
   army: "High Elves",
   version: "1.6",
   layout: "army",
+  cover: "covers/high-elves.png",
   align: "order",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "High Elves",
   subtitle: "Warhammer Armies Project · 1.6",
-  art: none,
+  art: "/assets/covers/high-elves.png",
 )
 
 #colophon((

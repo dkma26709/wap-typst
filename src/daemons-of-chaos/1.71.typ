@@ -12,6 +12,7 @@
   army: "Daemons of Chaos",
   version: "1.71",
   layout: "army",
+  cover: "covers/daemons-of-chaos.png",
   align: "destruction",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Daemons of Chaos",
   subtitle: "Warhammer Armies Project · 1.71",
-  art: none,
+  art: "/assets/covers/daemons-of-chaos.png",
 )
 
 #colophon((

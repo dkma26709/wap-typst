@@ -12,7 +12,7 @@
   army: "Orcs & Goblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/orcs-goblins/3.0.png",
+  cover: "covers/orcs-goblins.png",
   align: "destruction",
   base: "orcs-goblins/3.0",
   edition: "proposal",
@@ -23,7 +23,7 @@
 #cover(
   title: "Orcs & Goblins",
   subtitle: "Proposals 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/orcs-goblins/3.0.png",
+  art: "/assets/covers/orcs-goblins.png",
 )
 
 #colophon((

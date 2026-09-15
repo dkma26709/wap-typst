@@ -12,7 +12,7 @@
   army: "Beastmen",
   version: "3.0",
   layout: "army",
-  cover: "covers/beastmen/3.0.png",
+  cover: "covers/beastmen.png",
   align: "destruction",
   base: "beastmen/3.0",
   edition: "house",
@@ -23,7 +23,7 @@
 #cover(
   title: "Beastmen",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/beastmen/3.0.png",
+  art: "/assets/covers/beastmen.png",
 )
 
 #colophon((

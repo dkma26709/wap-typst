@@ -12,7 +12,7 @@
   army: "Araby",
   version: "3.0",
   layout: "army",
-  cover: "covers/araby/3.0.png",
+  cover: "covers/araby.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Araby",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/araby/3.0.png",
+  art: "/assets/covers/araby.png",
 )
 
 #colophon((

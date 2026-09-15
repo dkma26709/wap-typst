@@ -11,7 +11,7 @@
   army: "Ogre Kingdoms",
   version: "3.1",
   layout: "army",
-  cover: "covers/ogre-kingdoms/3.1.png",
+  cover: "covers/ogre-kingdoms.png",
   align: "destruction",
   base: "ogre-kingdoms/3.1",
   edition: "house",
@@ -22,7 +22,7 @@
 #cover(
   title: "Ogre Kingdoms",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.1",
-  art: "/assets/covers/ogre-kingdoms/3.1.png",
+  art: "/assets/covers/ogre-kingdoms.png",
 )
 
 #colophon((

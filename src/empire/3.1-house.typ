@@ -12,7 +12,7 @@
   army: "The Empire",
   version: "3.1",
   layout: "army",
-  cover: "covers/empire/3.1.png",
+  cover: "covers/empire.png",
   align: "order",
   base: "empire/3.1",
   edition: "house",
@@ -23,7 +23,7 @@
 #cover(
   title: "The Empire",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.1",
-  art: "/assets/covers/empire/3.1.png",
+  art: "/assets/covers/empire.png",
 )
 
 #colophon((

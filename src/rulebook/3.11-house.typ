@@ -12,7 +12,7 @@
   army: "The Game of Fantasy Battles",
   version: "3.11",
   layout: "rules",
-  cover: "covers/rulebook/3.11.png",
+  cover: "covers/rulebook.png",
   base: "rulebook/3.11",
   edition: "house",
 )
@@ -22,7 +22,7 @@
 #cover(
   title: "The Game of Fantasy Battles",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.11",
-  art: "/assets/covers/rulebook/3.11.png",
+  art: "/assets/covers/rulebook.png",
 )
 
 #colophon((

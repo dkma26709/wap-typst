@@ -12,7 +12,7 @@
   army: "Tomb Kings",
   version: "3.1",
   layout: "army",
-  cover: "covers/tomb-kings/3.1.png",
+  cover: "covers/tomb-kings.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Tomb Kings",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/tomb-kings/3.1.png",
+  art: "/assets/covers/tomb-kings.png",
 )
 
 #colophon((

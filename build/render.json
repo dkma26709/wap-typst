@@ -1,171 +1,171 @@
 [
  {
   "id": "albion/3.0",
-  "cover": "covers/albion/3.0.png"
+  "cover": "covers/albion.png"
  },
  {
   "id": "amazons/3.0",
-  "cover": "covers/amazons/3.0.png"
+  "cover": "covers/amazons.png"
  },
  {
   "id": "araby/3.0",
-  "cover": "covers/araby/3.0.png"
+  "cover": "covers/araby.png"
  },
  {
   "id": "beastmen/1.7",
-  "cover": null
+  "cover": "covers/beastmen.png"
  },
  {
   "id": "beastmen/3.0",
-  "cover": "covers/beastmen/3.0.png"
+  "cover": "covers/beastmen.png"
  },
  {
   "id": "bretonnia/1.6",
-  "cover": null
+  "cover": "covers/bretonnia.png"
  },
  {
   "id": "bretonnia/3.0",
-  "cover": "covers/bretonnia/3.0.png"
+  "cover": "covers/bretonnia.png"
  },
  {
   "id": "chaos-dwarfs/3.0",
-  "cover": "covers/chaos-dwarfs/3.0.png"
+  "cover": "covers/chaos-dwarfs.png"
  },
  {
   "id": "daemons-of-chaos/1.71",
-  "cover": null
+  "cover": "covers/daemons-of-chaos.png"
  },
  {
   "id": "daemons-of-chaos/3.0",
-  "cover": "covers/daemons-of-chaos/3.0.png"
+  "cover": "covers/daemons-of-chaos.png"
  },
  {
   "id": "dark-elves/1.71",
-  "cover": null
+  "cover": "covers/dark-elves.png"
  },
  {
   "id": "dark-elves/3.1",
-  "cover": "covers/dark-elves/3.1.png"
+  "cover": "covers/dark-elves.png"
  },
  {
   "id": "dogs-of-war/3.1",
-  "cover": "covers/dogs-of-war/3.1.png"
+  "cover": "covers/dogs-of-war.png"
  },
  {
   "id": "dwarfs/1.6",
-  "cover": null
+  "cover": "covers/dwarfs.png"
  },
  {
   "id": "dwarfs/3.11",
-  "cover": "covers/dwarfs/3.11.png"
+  "cover": "covers/dwarfs.png"
  },
  {
   "id": "estalia/3.0",
-  "cover": "covers/estalia/3.0.png"
+  "cover": "covers/estalia.png"
  },
  {
   "id": "grand-cathay/3.0",
-  "cover": "covers/grand-cathay/3.0.png"
+  "cover": "covers/grand-cathay.png"
  },
  {
   "id": "halflings/3.0",
-  "cover": "covers/halflings/3.0.png"
+  "cover": "covers/halflings.png"
  },
  {
   "id": "high-elves/1.6",
-  "cover": null
+  "cover": "covers/high-elves.png"
  },
  {
   "id": "high-elves/3.1",
-  "cover": "covers/high-elves/3.1.png"
+  "cover": "covers/high-elves.png"
  },
  {
   "id": "hobgoblins/3.0",
-  "cover": "covers/hobgoblins/3.0.png"
+  "cover": "covers/hobgoblins.png"
  },
  {
   "id": "kingdoms-of-ind/3.0",
-  "cover": "covers/kingdoms-of-ind/3.0.png"
+  "cover": "covers/kingdoms-of-ind.png"
  },
  {
   "id": "kislev/3.1",
-  "cover": "covers/kislev/3.1.png"
+  "cover": "covers/kislev.png"
  },
  {
   "id": "lizardmen/1.6",
-  "cover": null
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "lizardmen/1.61",
-  "cover": null
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "lizardmen/1.62",
-  "cover": null
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "lizardmen/1.63",
-  "cover": null
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "lizardmen/1.64",
-  "cover": null
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "lizardmen/3.0",
-  "cover": "covers/lizardmen/3.0.png"
+  "cover": "covers/lizardmen.png"
  },
  {
   "id": "nippon/3.0",
-  "cover": "covers/nippon/3.0.png"
+  "cover": "covers/nippon.png"
  },
  {
   "id": "norsca/3.0",
-  "cover": "covers/norsca/3.0.png"
+  "cover": "covers/norsca.png"
  },
  {
   "id": "ogre-kingdoms/1.6",
-  "cover": null
+  "cover": "covers/ogre-kingdoms.png"
  },
  {
   "id": "ogre-kingdoms/3.1",
-  "cover": "covers/ogre-kingdoms/3.1.png"
+  "cover": "covers/ogre-kingdoms.png"
  },
  {
   "id": "orcs-goblins/1.6",
-  "cover": null
+  "cover": "covers/orcs-goblins.png"
  },
  {
   "id": "orcs-goblins/3.0",
-  "cover": "covers/orcs-goblins/3.0.png"
+  "cover": "covers/orcs-goblins.png"
  },
  {
   "id": "pirates-of-sartosa/3.0",
-  "cover": "covers/pirates-of-sartosa/3.0.png"
+  "cover": "covers/pirates-of-sartosa.png"
  },
  {
   "id": "skaven/1.9",
-  "cover": null
+  "cover": "covers/skaven.png"
  },
  {
   "id": "skaven/3.0",
-  "cover": "covers/skaven/3.0.png"
+  "cover": "covers/skaven.png"
  },
  {
   "id": "empire/1.6",
-  "cover": null
+  "cover": "covers/empire.png"
  },
  {
   "id": "empire/3.1",
-  "cover": "covers/empire/3.1.png"
+  "cover": "covers/empire.png"
  },
  {
   "id": "rulebook/2.32",
-  "cover": null
+  "cover": "covers/rulebook.png"
  },
  {
   "id": "rulebook/3.11",
-  "cover": "covers/rulebook/3.11.png"
+  "cover": "covers/rulebook.png"
  },
  {
   "id": "ordo-draconis/2026.1",
@@ -173,11 +173,11 @@
  },
  {
   "id": "tomb-kings/1.6",
-  "cover": null
+  "cover": "covers/tomb-kings.png"
  },
  {
   "id": "tomb-kings/3.1",
-  "cover": "covers/tomb-kings/3.1.png"
+  "cover": "covers/tomb-kings.png"
  },
  {
   "id": "tyranids/1.0",
@@ -185,31 +185,31 @@
  },
  {
   "id": "vampire-counts/1.71",
-  "cover": null
+  "cover": "covers/vampire-counts.png"
  },
  {
   "id": "vampire-counts/3.0",
-  "cover": "covers/vampire-counts/3.0.png"
+  "cover": "covers/vampire-counts.png"
  },
  {
   "id": "warriors-of-chaos/1.6",
-  "cover": null
+  "cover": "covers/warriors-of-chaos.png"
  },
  {
   "id": "warriors-of-chaos/3.0",
-  "cover": "covers/warriors-of-chaos/3.0.png"
+  "cover": "covers/warriors-of-chaos.png"
  },
  {
   "id": "wood-elves/1.61",
-  "cover": null
+  "cover": "covers/wood-elves.png"
  },
  {
   "id": "wood-elves/3.1",
-  "cover": "covers/wood-elves/3.1.png"
+  "cover": "covers/wood-elves.png"
  },
  {
   "id": "zombie-pirates/3.0",
-  "cover": "covers/zombie-pirates/3.0.png"
+  "cover": "covers/zombie-pirates.png"
  },
  {
   "id": "albion/3.0-house",

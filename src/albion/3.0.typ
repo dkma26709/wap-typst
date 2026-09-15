@@ -12,7 +12,7 @@
   army: "Albion",
   version: "3.0",
   layout: "army",
-  cover: "covers/albion/3.0.png",
+  cover: "covers/albion.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Albion",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/albion/3.0.png",
+  art: "/assets/covers/albion.png",
 )
 
 #colophon((

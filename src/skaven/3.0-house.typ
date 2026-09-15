@@ -12,7 +12,7 @@
   army: "Skaven",
   version: "3.0",
   layout: "army",
-  cover: "covers/skaven/3.0.png",
+  cover: "covers/skaven.png",
   align: "destruction",
   base: "skaven/3.0",
   edition: "house",
@@ -23,7 +23,7 @@
 #cover(
   title: "Skaven",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/skaven/3.0.png",
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((

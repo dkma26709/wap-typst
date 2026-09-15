@@ -12,7 +12,7 @@
   army: "Kingdoms of Ind",
   version: "3.0",
   layout: "army",
-  cover: "covers/kingdoms-of-ind/3.0.png",
+  cover: "covers/kingdoms-of-ind.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Kingdoms of Ind",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/kingdoms-of-ind/3.0.png",
+  art: "/assets/covers/kingdoms-of-ind.png",
 )
 
 #colophon((

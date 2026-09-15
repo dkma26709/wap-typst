@@ -12,6 +12,7 @@
   army: "Beastmen",
   version: "1.7",
   layout: "army",
+  cover: "covers/beastmen.png",
   align: "destruction",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Beastmen",
   subtitle: "Warhammer Armies Project · 1.7",
-  art: none,
+  art: "/assets/covers/beastmen.png",
 )
 
 #colophon((

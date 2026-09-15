@@ -12,7 +12,7 @@
   army: "Halflings",
   version: "3.0",
   layout: "army",
-  cover: "covers/halflings/3.0.png",
+  cover: "covers/halflings.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Halflings",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/halflings/3.0.png",
+  art: "/assets/covers/halflings.png",
 )
 
 #colophon((

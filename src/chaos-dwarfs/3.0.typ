@@ -12,7 +12,7 @@
   army: "Chaos Dwarfs",
   version: "3.0",
   layout: "army",
-  cover: "covers/chaos-dwarfs/3.0.png",
+  cover: "covers/chaos-dwarfs.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Chaos Dwarfs",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/chaos-dwarfs/3.0.png",
+  art: "/assets/covers/chaos-dwarfs.png",
 )
 
 #colophon((

@@ -12,7 +12,7 @@
   army: "The Empire",
   version: "3.1",
   layout: "army",
-  cover: "covers/empire/3.1.png",
+  cover: "covers/empire.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "The Empire",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/empire/3.1.png",
+  art: "/assets/covers/empire.png",
 )
 
 #colophon((

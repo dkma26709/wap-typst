@@ -12,7 +12,7 @@
   army: "Vampire Counts",
   version: "3.0",
   layout: "army",
-  cover: "covers/vampire-counts/3.0.png",
+  cover: "covers/vampire-counts.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Vampire Counts",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/vampire-counts/3.0.png",
+  art: "/assets/covers/vampire-counts.png",
 )
 
 #colophon((

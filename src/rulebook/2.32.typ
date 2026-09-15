@@ -12,6 +12,7 @@
   army: "The Game of Fantasy Battles",
   version: "2.32",
   layout: "rules",
+  cover: "covers/rulebook.png",
 )
 
 #show: book.with(title: "Warhammer Armies Project — The Game of Fantasy Battles 2.32", side: 3.1cm)
@@ -19,7 +20,7 @@
 #cover(
   title: "The Game of Fantasy Battles",
   subtitle: "Warhammer Armies Project · 2.32",
-  art: none,
+  art: "/assets/covers/rulebook.png",
 )
 
 #colophon((

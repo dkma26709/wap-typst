@@ -12,7 +12,7 @@
   army: "Estalia",
   version: "3.0",
   layout: "army",
-  cover: "covers/estalia/3.0.png",
+  cover: "covers/estalia.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Estalia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/estalia/3.0.png",
+  art: "/assets/covers/estalia.png",
 )
 
 #colophon((

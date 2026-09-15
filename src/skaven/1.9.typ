@@ -12,6 +12,7 @@
   army: "Skaven",
   version: "1.9",
   layout: "army",
+  cover: "covers/skaven.png",
   align: "destruction",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Skaven",
   subtitle: "Warhammer Armies Project · 1.9",
-  art: none,
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((

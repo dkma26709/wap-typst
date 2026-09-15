@@ -12,7 +12,7 @@
   army: "The Game of Fantasy Battles",
   version: "3.11",
   layout: "rules",
-  cover: "covers/rulebook/3.11.png",
+  cover: "covers/rulebook.png",
 )
 
 #show: book.with(title: "Warhammer Armies Project — The Game of Fantasy Battles 3.11", side: 3.1cm)
@@ -20,7 +20,7 @@
 #cover(
   title: "The Game of Fantasy Battles",
   subtitle: "Warhammer Armies Project · 3.11",
-  art: "/assets/covers/rulebook/3.11.png",
+  art: "/assets/covers/rulebook.png",
 )
 
 #colophon((

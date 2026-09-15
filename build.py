@@ -16,7 +16,7 @@ A compile error stops the build: nothing new is started, the diagnostic is
 printed with the book's name, and the exit code is 1. Warnings are printed and
 do not fail the build - Typst's warnings are a reader's business, not CI's.
 
-`--site` copies the PDFs, each book's cover beside it as `<id>-cover.<ext>`,
+`--site` copies the PDFs, each army's cover once at `covers/<army>.<ext>`,
 and site/index.html into `_site/`, which is the tree check_site.py checks and
 the one the workflow uploads. Both `out/` and `_site/` are gitignored.
 """
@@ -81,11 +81,15 @@ def assemble_site(books: list[dict], out: Path, site: Path) -> None:
         target = site / f"{book['id']}.pdf"
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(out / f"{book['id']}.pdf", target)
+        # The cover is the army's, so it publishes once at the path every book
+        # of that army names - not beside each book, which for Lizardmen alone
+        # would be the same picture eight times.
         cover = book.get("cover")
         if cover and (ROOT / "assets" / cover).exists():
-            ext = Path(cover).suffix
-            shutil.copy(ROOT / "assets" / cover,
-                        site / f"{book['id']}-cover{ext}")
+            target = site / cover
+            if not target.exists():
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(ROOT / "assets" / cover, target)
     for page in sorted((ROOT / "site").rglob("*.html")):
         target = site / page.relative_to(ROOT / "site")
         target.parent.mkdir(parents=True, exist_ok=True)

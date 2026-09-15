@@ -12,6 +12,7 @@
   army: "Dark Elves",
   version: "1.71",
   layout: "army",
+  cover: "covers/dark-elves.png",
   align: "destruction",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Dark Elves",
   subtitle: "Warhammer Armies Project · 1.71",
-  art: none,
+  art: "/assets/covers/dark-elves.png",
 )
 
 #colophon((

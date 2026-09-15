@@ -12,7 +12,7 @@
   army: "Bretonnia",
   version: "3.0",
   layout: "army",
-  cover: "covers/bretonnia/3.0.png",
+  cover: "covers/bretonnia.png",
   align: "order",
 )
 
@@ -22,7 +22,7 @@
 #cover(
   title: "Bretonnia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/bretonnia/3.0.png",
+  art: "/assets/covers/bretonnia.png",
 )
 
 #colophon((

@@ -12,7 +12,7 @@
   army: "Warriors of Chaos",
   version: "3.0",
   layout: "army",
-  cover: "covers/warriors-of-chaos/3.0.png",
+  cover: "covers/warriors-of-chaos.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Warriors of Chaos",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/warriors-of-chaos/3.0.png",
+  art: "/assets/covers/warriors-of-chaos.png",
 )
 
 #colophon((

@@ -12,7 +12,7 @@
   army: "Amazons",
   version: "3.0",
   layout: "army",
-  cover: "covers/amazons/3.0.png",
+  cover: "covers/amazons.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Amazons",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/amazons/3.0.png",
+  art: "/assets/covers/amazons.png",
 )
 
 #colophon((

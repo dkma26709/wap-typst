@@ -12,7 +12,7 @@
   army: "Wood Elves",
   version: "3.1",
   layout: "army",
-  cover: "covers/wood-elves/3.1.png",
+  cover: "covers/wood-elves.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Wood Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/wood-elves/3.1.png",
+  art: "/assets/covers/wood-elves.png",
 )
 
 #colophon((

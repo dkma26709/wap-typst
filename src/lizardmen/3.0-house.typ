@@ -12,7 +12,7 @@
   army: "Lizardmen",
   version: "3.0",
   layout: "army",
-  cover: "covers/lizardmen/3.0.png",
+  cover: "covers/lizardmen.png",
   align: "order",
   base: "lizardmen/3.0",
   edition: "house",
@@ -23,7 +23,7 @@
 #cover(
   title: "Lizardmen",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/lizardmen/3.0.png",
+  art: "/assets/covers/lizardmen.png",
 )
 
 #colophon((

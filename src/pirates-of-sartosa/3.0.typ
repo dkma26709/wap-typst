@@ -12,7 +12,7 @@
   army: "Pirates of Sartosa",
   version: "3.0",
   layout: "army",
-  cover: "covers/pirates-of-sartosa/3.0.png",
+  cover: "covers/pirates-of-sartosa.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Pirates of Sartosa",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/pirates-of-sartosa/3.0.png",
+  art: "/assets/covers/pirates-of-sartosa.png",
 )
 
 #colophon((

@@ -12,6 +12,7 @@
   army: "Ogre Kingdoms",
   version: "1.6",
   layout: "army",
+  cover: "covers/ogre-kingdoms.png",
   align: "neutral",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Ogre Kingdoms",
   subtitle: "Warhammer Armies Project · 1.6",
-  art: none,
+  art: "/assets/covers/ogre-kingdoms.png",
 )
 
 #colophon((

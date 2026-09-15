@@ -12,7 +12,7 @@
   army: "Dogs of War",
   version: "3.1",
   layout: "army",
-  cover: "covers/dogs-of-war/3.1.png",
+  cover: "covers/dogs-of-war.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Dogs of War",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/dogs-of-war/3.1.png",
+  art: "/assets/covers/dogs-of-war.png",
 )
 
 #colophon((

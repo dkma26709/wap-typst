@@ -12,7 +12,7 @@
   army: "Zombie Pirates",
   version: "3.0",
   layout: "army",
-  cover: "covers/zombie-pirates/3.0.png",
+  cover: "covers/zombie-pirates.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Zombie Pirates",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/zombie-pirates/3.0.png",
+  art: "/assets/covers/zombie-pirates.png",
 )
 
 #colophon((

@@ -12,7 +12,7 @@
   army: "Kislev",
   version: "3.1",
   layout: "army",
-  cover: "covers/kislev/3.1.png",
+  cover: "covers/kislev.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Kislev",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/kislev/3.1.png",
+  art: "/assets/covers/kislev.png",
 )
 
 #colophon((

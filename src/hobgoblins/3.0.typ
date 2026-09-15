@@ -12,7 +12,7 @@
   army: "Hobgoblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/hobgoblins/3.0.png",
+  cover: "covers/hobgoblins.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Hobgoblins",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/hobgoblins/3.0.png",
+  art: "/assets/covers/hobgoblins.png",
 )
 
 #colophon((

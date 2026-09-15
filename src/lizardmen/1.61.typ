@@ -12,6 +12,7 @@
   army: "Lizardmen",
   version: "1.61",
   layout: "army",
+  cover: "covers/lizardmen.png",
   align: "order",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Lizardmen",
   subtitle: "Warhammer Armies Project · 1.61",
-  art: none,
+  art: "/assets/covers/lizardmen.png",
 )
 
 #colophon((
