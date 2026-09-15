@@ -68,17 +68,28 @@ def compile_one(exe: str, book_id: str, out: Path) -> tuple[str, int, str, float
 
 
 def assemble_site(books: list[dict], out: Path, site: Path) -> None:
-    """The tree the workflow uploads: PDFs, covers beside them, the index."""
+    """The tree the workflow uploads: PDFs, covers beside them, the pages.
+
+    An id is a path now - `albion/3.0`, not `albion` - so each book's folder is
+    made before anything is copied into it. And the site is more than one page:
+    an army page per army, the library page, and the shelf at the root.
+    """
     if site.exists():
         shutil.rmtree(site)
     site.mkdir(parents=True)
     for book in books:
-        shutil.copy(out / f"{book['id']}.pdf", site / f"{book['id']}.pdf")
+        target = site / f"{book['id']}.pdf"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(out / f"{book['id']}.pdf", target)
         cover = book.get("cover")
         if cover and (ROOT / "assets" / cover).exists():
             ext = Path(cover).suffix
-            shutil.copy(ROOT / "assets" / cover, site / f"{book['id']}-cover{ext}")
-    shutil.copy(ROOT / "site" / "index.html", site / "index.html")
+            shutil.copy(ROOT / "assets" / cover,
+                        site / f"{book['id']}-cover{ext}")
+    for page in sorted((ROOT / "site").rglob("*.html")):
+        target = site / page.relative_to(ROOT / "site")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(page, target)
 
 
 def main() -> None:

@@ -35,6 +35,9 @@ jobs:
           # that is there is a book this loop compiles.
           for id in $(jq -r '.[].id' build/render.json); do
             echo "::group::$id"
+            # An id is a path - `albion/3.0` - so its folder has to exist
+            # before typst can write the PDF into it.
+            mkdir -p "_site/$(dirname "$id")"
             # Bundled fonts only, so the CI render matches the local one exactly.
             typst compile --ignore-system-fonts --root . \
               "src/$id.typ" "_site/$id.pdf"
@@ -47,7 +50,9 @@ jobs:
             count=$((count + 1))
             echo "::endgroup::"
           done
-          cp site/index.html _site/index.html
+          # Every page, not only the front one: the site is the shelf at the
+          # root, the library page, and a page per army.
+          (cd site && find . -name '*.html' -exec cp --parents '{}' ../_site/ ';')
           echo "compiled $count books"
           du -sh _site
 
