@@ -12,7 +12,7 @@
   army: "Grand Cathay",
   version: "3.0",
   layout: "army",
-  cover: "covers/grand-cathay/3.0.png",
+  cover: "covers/grand-cathay.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Grand Cathay",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/grand-cathay/3.0.png",
+  art: "/assets/covers/grand-cathay.png",
 )
 
 #colophon((
@@ -45,49 +45,55 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Grand Cathayan army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Grand Cathayan units, and these are detailed here.
-
-#namecost("CELESTIAL FORGED ARMOUR", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Grand Cathayan army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Grand Cathayan units, and these are detailed here.])[
+#upgrade("CELESTIAL FORGED ARMOUR", none)[
 Models with this special rule gain a Magical Ward (6+).
+]
 
-#namecost("HARMONY", "")
-
+#upgrade("HARMONY", none)[
 Most of Grand Cathay's units are divided into two categories, Yin and/or Yang as described in the army list. Unless specified, models armed with missile weapons counts as Yin, and models armed with only close combat weapons counts as Yang.
 
 When a Yin unit is within 3" of non-fleeing Yang units with a combined Unit Strength 5 or more, they may re- roll 1's To Hit with missile weapons. When a Yang unit is within 3" of non-fleeing Yin units with a combined Unit Strength 5 or more, the Yang unit may re-roll 1's To Wound in close combat.
+]
 
-#namecost("MASTERY OF THE ELEMENTAL WINDS", "")
-
+#upgrade("MASTERY OF THE ELEMENTAL WINDS", none)[
 Models with this special rule gain a +1 casting bonus if there is one or more friendly non-fleeing models with this special rule within 12".
+]
 
-#namecost("WILL OF THE DRAGONS", "")
-
+#upgrade("WILL OF THE DRAGONS", none)[
 A unit with this special rule may re-roll failed Panic tests caused by friendly units breaking from combat or getting destroyed within 6" of them, or when it is fled through by a friendly unit.
+]
 
-#namecost("CELESTIAL BLADE", "")
+#upgrade("CELESTIAL BLADE", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "Parry (6+)"))
 
 #note[_A Celestial Blade gives the wielder +1 To Wound._]
+]
 
-#namecost("CRANE GUN", "")
+#upgrade("CRANE GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("18/36\"", "6", "Move or Fire*, Ponderous,"))
 
 #note[_\*Does not apply if mounted on a Chariot._]
+]
 
-#namecost("DRAGON FIRE PISTOLS", "")
+#upgrade("DRAGON FIRE PISTOLS", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("8/12\"", "5", "Armour Piercing (1), Flaming Attacks, Quick Shot"))
-#namecost("DRAGON FIRE BOMBS", "")
+]
+
+#upgrade("DRAGON FIRE BOMBS", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "5", "Armour Piercing (1), Flaming Attacks (non- physical), March & Shoot, Quick Shot"))
 
 #note[_Each Hit from a dragon fire bomb is multiplied into D3 Hits._]
+]
 
-#namecost("REPEATER CROSSBOW", "")
+#upgrade("REPEATER CROSSBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("12/18\"", "2", "Multiple Shots (3), Rapid Fire"))
-#namecost("THREE-EYED GUN", "")
+]
+
+#upgrade("THREE-EYED GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Multiple Shots (3), Ponderous, Rapid Fire"))
+]
+]
 
 #lore("THE LORE OF YIN")[
 
@@ -1576,19 +1582,14 @@ may also replace any number of spells from those lores with spells from the Lore
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

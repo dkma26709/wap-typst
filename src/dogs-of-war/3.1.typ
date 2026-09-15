@@ -12,7 +12,7 @@
   army: "Dogs of War",
   version: "3.1",
   layout: "army",
-  cover: "covers/dogs-of-war/3.1.png",
+  cover: "covers/dogs-of-war.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Dogs of War",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/dogs-of-war/3.1.png",
+  art: "/assets/covers/dogs-of-war.png",
 )
 
 #colophon((
@@ -45,98 +45,103 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Dogs of War army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Dogs of War units, and these are detailed here.
-
-#namecost("BACKSTABBERS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Dogs of War army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Dogs of War units, and these are detailed here.])[
+#upgrade("BACKSTABBERS", none)[
 A unit with this special rule that successfully restrains from pursuing after breaking an enemy unit in close combat causes D6 Strength 3 hits on the fleeing unit for every complete rank the Hobgoblin unit has (up to a maximum of 3). Resolve any casualties before moving the fleeing unit.
+]
 
-#namecost("COWARDLY DESPOILERS", "")
-
+#upgrade("COWARDLY DESPOILERS", none)[
 Models with this special rule gain +1 To Hit in the first round of combat if they successfully charge an enemy in the rear or flank.
+]
 
-#namecost("CUNNING RETREAT", "")
-
+#upgrade("CUNNING RETREAT", none)[
 When an enemy unit declares to fire at a unit with this special rule in their Shooting phase, it may choose to make a Feigned Flight move directly away from the enemy unit shooting at it. Once the unit has completed its move, the enemy unit may continue with its shooting as declared (provided they are still in range).
+]
 
-#namecost("DED SHOOTY", "")
-
+#upgrade("DED SHOOTY", none)[
 Mounted models with this special rule do not suffer penalties To Hit for Moving and Shooting and may Volley Fire even while moving.
+]
 
-#namecost("DUCK & WEAVE", "")
-
+#upgrade("DUCK & WEAVE", none)[
 Enemies attacking Infantry models with this special rule suffer \-1 To Hit in close combat.
+]
 
-#namecost("ELVEN GRACE", "")
-
+#upgrade("ELVEN GRACE", none)[
 Models with this special rule have the Dodge (6+) special rule in close combat. However, this cannot be used against enemies that attack before the model with Elven Grace.
+]
 
-#namecost("MERCENARIES", "")
-
+#upgrade("MERCENARIES", none)[
 Every time a unit with this special rule fails a Break test, roll on the Mercenary Loyalty table below and apply the results. This rule has no effect on a unit that is joined by the Army General or Paymaster.
 
 #chart((("D6", "Result"), ("1-3", "Wavering Loyalty: The unit flees as normal,
 and all models in the unit suffer a -1 modifier
 to their Leadership for the rest of the battle."), ("4-5", "Soldier On: The unit flees as normal."), ("6", "Stand Fast! The unit has the Disciplined
 special rule on their next Rally test.")))
-#chartlabel("OGRE CHARGE")
+]
 
+#upgrade("OGRE CHARGE", none)[
 The model has the Impact Hits (1) special rule. In addition, they add their current Rank Bonus to the Strength of the Impact Hits they inflict. In addition, they count as having one more rank than their actual number for the purpose of determining Steadfast in any turn that they charge.
+]
 
-#namecost("RACIAL DISTRUST", "")
-
+#upgrade("RACIAL DISTRUST", none)[
 Most models belong to a certain race as detailed in their Troop Type. This includes Human, Dwarf, Elf, Halfling, Ogre, Orc and Hobgoblin. Characters may only join units belonging to the same race. Only a Human character may be the Army General.
+]
 
-#namecost("RELENTLESS", "")
-
+#upgrade("RELENTLESS", none)[
 Units entirely composed of models with this special rule do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.
+]
 
-#namecost("RESOLUTE", "")
-
+#upgrade("RESOLUTE", none)[
 When taking Break tests, models with this special rule count as having lost the combat with 1 point fewer than they actually have.
+]
 
-#namecost("DWARFEN CROSSBOW", "")
+#upgrade("DWARFEN CROSSBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("30/36\"", "4", "Ponderous"))
-#namecost("DWARFEN PISTOL", "")
+]
+
+#upgrade("DWARFEN PISTOL", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/12\"", "5", "Quick Shot"))
-#namecost("ELVEN SHORTBOW", "")
+]
+
+#upgrade("ELVEN SHORTBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "3", "Armour Piercing (1), March & Shoot Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not marched. Cannot be used as a charge reaction._
+]
 
-#namecost("ELVEN LONGBOW", "")
+#upgrade("ELVEN LONGBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "3", "Armour Piercing (1), Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+]
 
-#namecost("GUT-PLATE", "")
-
+#upgrade("GUT-PLATE", none)[
 A model with a gut-plate gains a 6+ armour save against attacks to the front.
+]
 
-#namecost("IRONFIST", "")
-
+#upgrade("IRONFIST", none)[
 Buckler. If a model with an ironfist rolls a natural 6 when making a Parry save, it automatically inflicts an extra Hit back onto the model or unit that struck the blow.
+]
 
-#namecost("OGRE PISTOLS", "")
+#upgrade("OGRE PISTOLS", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (2)*, Quick Shot"))
 
 #note[_\*Requires a brace of Ogre pistols._]
+]
 
-#namecost("ORIENTAL LONGSWORD", "")
+#upgrade("ORIENTAL LONGSWORD", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "Parry (6+), Requires Two Hands"))
 
 #note[_An Oriental Longsword gives the wielder +1 To Wound._]
+]
 
-#namecost("PAVISE", "")
-
+#upgrade("PAVISE", none)[
 A Pavise has the following armour profile:
 
 #minitable(("Combat", "Missile", "Special Rules"), ("-", "+3/4+*", "-"))
 
 #note[_\*Only applies to missile attacks in the front arc._]
+]
 ]
 
 #lore("LORE OF BATTLE MAGIC")[
@@ -169,194 +174,62 @@ A Pavise has the following armour profile:
 
 #spell("MANACLE OF CALOE", 3, cast: "8+")[_Manacle of Caloe_ is a *hex* spell with a range of 24". The target unit has all its movement halved until the start of the caster's next Magic phase.]
 ]
-= QUIRKS OF CHARACTER
+#upgrade-chapter("QUIRKS OF CHARACTER", intro: [*Models can spend points on Quirks of Character, as detailed in the army list. The points cost below refer to the cost for characters. Characters and units may take up to two Quirks of Characters each. Core Units with two Quirks count as Special Units, and Special Units with two Quirks count as Rare Units. One character and one unit may take the same Quirk of Character, but each Quirk may otherwise only be taken once unless specified.*])[
+#upgrade("GRIZZLED WARRIOR", (("Characters", "25 points"),), only: "Infantry or Cavalry")[All successful To Wound rolls against this model must be re-rolled.]
 
-#columns(2)[
-*Models can spend points on Quirks of Character, as detailed in the army list. The points cost below refer to the cost for characters. Characters and units may take up to two Quirks of Characters each. Core Units with two Quirks count as Special Units, and Special Units with two Quirks count as Rare Units. One character and one unit may take the same Quirk of Character, but each Quirk may otherwise only be taken once unless specified.*
+#upgrade("CHARISMATIC LEADER", (("Characters", "25 points"),), only: "Army General")[The model gains the Inspiring Presence (6) special rule.]
 
-#namecost("GRIZZLED WARRIOR", "")
-#namecost("Characters", "25 points")
+#upgrade("GREEDY", (("Characters", "20 points"),), only: "Army General")[All friendly models using the Paymaster's Hold Your Ground ability may choose to re-roll just one of the dice when taking Break or Panic tests.]
 
-Infantry or Cavalry only. All successful To Wound rolls against this model must be re-rolled.
+#upgrade("EAGLE EYE", (("Characters", "20 points"),), only: "Character")[The model gains the Sniper special rule.]
 
-#namecost("CHARISMATIC LEADER", "")
-#namecost("Characters", "25 points")
+#upgrade("BEASTSLAYER", (("Characters", "15 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Multiple Wounds (2) special rule.]
 
-Army General only. The model gains the Inspiring Presence (6) special rule.
+#upgrade("BLOOD FEUD", (("Characters", "15 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model has the Hatred special rule.]
 
-#namecost("GREEDY", "")
-#namecost("Characters", "20 points")
+#upgrade("DEFIANT", (("Characters", "15 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Stubborn special rule.]
 
-Army General only. All friendly models using the Paymaster's Hold Your Ground ability may choose to re-roll just one of the dice when taking Break or Panic tests.
+#upgrade("EXECUTIONER", (("Characters", "15 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Killing Blow special rule.]
 
-#namecost("EAGLE EYE", "")
-#namecost("Characters", "20 points")
+#upgrade("FEARSOME REPUTATION", (("Characters", "15 points"), ("Infantry", "1 point per model"), ("Cavalry", "2 points per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Fear special rule.]
 
-Character only. The model gains the Sniper special rule.
+#upgrade("RANGER", (("Characters", "15 points"), ("Infantry", "1 point per model")), only: "Character on foot and Skirmishers")[The model gains the Scouts special rule.]
 
-#namecost("BEASTSLAYER", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("TACTICIAN", (("Characters", "15 points"),))[One per army. You may add +1 to the result when determining who chooses which side of the table to deploy on.]
 
-The model gains the Multiple Wounds (2) special rule.
+#upgrade("BERSERKER", (("Characters", "10 points"), ("Infantry", "1 point per model"), ("Cavalry", "2 points per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Frenzy special rule.]
 
-#namecost("BLOOD FEUD", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("BLADEMASTER", (("Characters", "10 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Parry (6+) special rule.]
 
-The model has the Hatred special rule.
+#upgrade("DIPLOMAT", (("Characters", "10 points"),), only: "Army General")[One unit of Dwarfs, Norse, Elves, Halflings, Ogres, Orcs or Hobgoblins may be taken as a Core Unit instead of a Special Unit, or as a Special Unit instead of a Rare Unit.]
 
-#namecost("DEFIANT", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("HARD HITTER", (("Characters", "10 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Mighty Blow (1) special rule.]
 
-The model gains the Stubborn special rule.
+#upgrade("POISONER", (("Characters", "10 points"), ("Infantry/Cavalry", "1 point per model")), only: "Character, Duellists, Hobgoblins or Elves")[The model gains the Poisoned Attacks special rule.]
 
-#namecost("EXECUTIONER", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("BATTLE-EAGER", (("Characters", "5 points"), ("Infantry", "0.5 point per model"), ("Cavalry", "1 points per model"), ("Monstrous Infantry", "1.5 points per model")))[The model gains the Vanguard special rule.]
 
-The model gains the Killing Blow special rule.
+#upgrade("DRILLED", (("Characters", "5 points"), ("Infantry", "0.5 point per model"), ("Cavalry", "1 points per model"), ("Monstrous Infantry", "1.5 points per model")))[The model gains the Disciplined special rule.]
 
-#namecost("FEARSOME REPUTATION", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry 1 point per model", "")
-#namecost("Cavalry 2 points per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("FEARLESS", (("Characters", "5 points"), ("Infantry", "1 point per model"), ("Cavalry", "2 points per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Immunity (Fear, Panic) special rule.]
 
-The model gains the Fear special rule.
+#upgrade("FLEET-FOOTED", (("Characters", "5 points"), ("Infantry/Cavalry", "1 point per model")))[The model gains the Swiftstride special rule.]
 
-#namecost("RANGER", "")
-#namecost("Characters", "15 points")
-#namecost("Infantry 1 point per model", "")
+#upgrade("FURIOUS CHARGER", (("Characters", "5 points"), ("Infantry", "0.5 point per model"), ("Cavalry", "1 points per model"), ("Monstrous Infantry", "1.5 points per model")))[The model gains the Devastating Charge special rule.]
 
-Character on foot and Skirmishers only. The model gains the Scouts special rule.
+#upgrade("MARKSMAN", (("Characters", "5 points"), ("Infantry/Cavalry", "0.5 point per model"), ("Monstrous Infantry", "1.5 points per model")))[The model does not suffer penalties for shooting at long range.]
 
-#namecost("TACTICIAN", "")
-#namecost("Characters", "15 points")
+#upgrade("PRECISION STRIKER", (("Characters", "5 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Armour Piercing (1) special rule.]
 
-One per army. You may add +1 to the result when determining who chooses which side of the table to deploy on.
+#upgrade("QUICK DRAW", (("Characters", "5 points"), ("Infantry/Cavalry", "1 point per model"), ("Monstrous Infantry", "3 points per model")))[The model gains the Rapid Fire special rule.]
 
-#namecost("BERSERKER", "")
-#namecost("Characters", "10 points")
-#namecost("Infantry 1 point per model", "")
-#namecost("Cavalry 2 points per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("RAIDER", (("Characters", "5 points"), ("Infantry", "1 point per model")), only: "Skirmishers and Fast Cavalry")[The model gains the Ambushers special rule.]
 
-The model gains the Frenzy special rule.
+#upgrade("STEADY AIM", (("Characters", "5 points"), ("Infantry", "0.5 point per model"), ("Cavalry", "1 point per model")))[The model does not suffer the normal To Hit penalty for moving & shooting.]
 
-#namecost("BLADEMASTER", "")
-#namecost("Characters", "10 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
+#upgrade("VETERAN", (("Infantry/Cavalry", "1 point per model"),), only: "Pikemen, Sellswords and Stradiots")[The model gains +1 Weapon Skill. This Quirk may be taken once per full 1000 points in your army.]
 
-The model gains the Parry (6+) special rule.
-
-#namecost("DIPLOMAT", "")
-#namecost("Characters", "10 points")
-
-Army General only. One unit of Dwarfs, Norse, Elves, Halflings, Ogres, Orcs or Hobgoblins may be taken as a Core Unit instead of a Special Unit, or as a Special Unit instead of a Rare Unit.
-
-#namecost("HARD HITTER", "")
-#namecost("Characters", "10 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
-
-The model gains the Mighty Blow (1) special rule.
-
-#namecost("POISONER", "")
-#namecost("Characters", "10 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-
-Character, Duellists, Hobgoblins or Elves only. The model gains the Poisoned Attacks special rule.
-
-#namecost("BATTLE-EAGER", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 0.5 point per model", "")
-#namecost("Cavalry 1 points per model", "")
-#namecost("Monstrous Infantry 1.5 points per model", "")
-
-The model gains the Vanguard special rule.
-
-#namecost("DRILLED", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 0.5 point per model", "")
-#namecost("Cavalry 1 points per model", "")
-#namecost("Monstrous Infantry 1.5 points per model", "")
-
-The model gains the Disciplined special rule.
-
-#namecost("FEARLESS", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 1 point per model", "")
-#namecost("Cavalry 2 points per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
-
-The model gains the Immunity (Fear, Panic) special rule.
-
-#namecost("FLEET-FOOTED", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-
-The model gains the Swiftstride special rule.
-
-#namecost("FURIOUS CHARGER", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 0.5 point per model", "")
-#namecost("Cavalry 1 points per model", "")
-#namecost("Monstrous Infantry 1.5 points per model", "")
-
-The model gains the Devastating Charge special rule.
-
-#namecost("MARKSMAN", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry/Cavalry 0.5 point per model", "")
-#namecost("Monstrous Infantry 1.5 points per model", "")
-
-The model does not suffer penalties for shooting at long range.
-
-#namecost("PRECISION STRIKER", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
-
-The model gains the Armour Piercing (1) special rule.
-
-#namecost("QUICK DRAW", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry/Cavalry 1 point per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
-
-The model gains the Rapid Fire special rule.
-
-#namecost("RAIDER", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 1 point per model", "")
-
-Skirmishers and Fast Cavalry only. The model gains the Ambushers special rule.
-
-#namecost("STEADY AIM", "")
-#namecost("Characters", "5 points")
-#namecost("Infantry 0.5 point per model", "")
-#namecost("Cavalry 1 point per model", "")
-
-The model does not suffer the normal To Hit penalty for moving & shooting.
-
-#namecost("VETERAN", "")
-#namecost("Infantry/Cavalry 1 point per model", "")
-
-Pikemen, Sellswords and Stradiots only. The model gains +1 Weapon Skill. This Quirk may be taken once per full 1000 points in your army.
-
-#namecost("WEALTHY", "")
-#namecost("Infantry 1 point per model", "")
-#namecost("Cavalry 2 points per model", "")
-#namecost("Monstrous Infantry 3 points per model", "")
-
-Model with light or medium armour only. The model counts its armour save as being 1 point higher than it actually is. This Quirk may be taken once per full 1000 points in your army.
+#upgrade("WEALTHY", (("Infantry", "1 point per model"), ("Cavalry", "2 points per model"), ("Monstrous Infantry", "3 points per model")), only: "Model with light or medium armour")[The model counts its armour save as being 1 point higher than it actually is. This Quirk may be taken once per full 1000 points in your army.]
 ]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dogs of War. These may be used in addition to the magic items found in the Warhammer rulebook.])
@@ -441,7 +314,7 @@ No saves are allowed against Wounds caused by this weapon.
 #talisman("SHARD OF MORRSLIEB", 5, common: true)[The model gains the Immunity (Killing Blow/Poisoned Attacks/Lore of Death) special rule.]
 ]
 
-#magic-item-section("arcane", columns: 2)[
+#magic-item-section("arcane")[
 #arcane-item("WINDCATCHER PRISM", 55, type: "Relic", bound: true)[This item contains the Signature Spells from all the eight Winds of Magic. Note that you may only attempt to cast one each Magic phase.]
 
 #arcane-item("THE WHITE SISTRUM", 50, type: "Relic")[The bearer gains +1 Power Dice at the start of your Magic phase. In addition, all enemy units within 6" suffer \-1 to their Leadership.]
@@ -1448,7 +1321,6 @@ of its turn normally, as if it had not yet moved this turn.")))
 )
 
 #unit("GIANT",
-  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -1845,19 +1717,14 @@ If the attacks hits, it inflicts 2D6 Hits.
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

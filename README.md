@@ -1,50 +1,50 @@
-# wap-typst
+# Warhammer Armies Revamped
 
-Re-typesets the [Warhammer Armies Project](https://www.warhammerarmiesproject.com/)
-army books from their published PDFs into [Typst](https://typst.app), and
-publishes the result to GitHub Pages.
+**Warhammer Armies Revamped (WAR)** is a new edition of Warhammer Fantasy
+Battles, built on version 3 of the
+[Warhammer Armies Project](https://www.warhammerarmiesproject.com/) army books.
+Its purpose is to realign the game on what makes Warhammer Fantasy Battles
+great to play.
 
-**30 army books, two of our own, and the core rulebook · 1,815 unit entries ·
-2,241 typeset pages**, plus nine amended editions of them.
+## Tenets
 
-The point is the *book*: proper stat tables, styled headings, real paragraph
-structure — not a scrape. Every book was imported with **no missing words at
-all**, verified against its source PDF at the time. That is a fact about the
-import, not a standing property: a book is hand-owned once imported, so it can
-be edited, and an edit is nobody's business but the editor's.
+**Balance is a tool for fun, not the end goal.** A balanced game is worth
+having because a lopsided one stops being fun. But a change that makes the
+game flatter, safer or more samey has not earned its place just because the
+numbers come out even.
+
+**Factions should feel unique.** An army should play like the people who field
+it: Dwarfs should feel like Dwarfs, Skaven like Skaven.
+
+## The books
+
+Sixty-four books, published as PDFs to GitHub Pages: thirty-three armies and
+the core rulebook, most of them in more than one version, and eleven editions
+of our own.
+
+The site leads with those eleven — the **house rules** we play and the
+**proposals** we are still arguing about — because they are what the project
+is for. The Armies Project itself is a click away under `/library/`, every
+army and every version we hold of it, re-typeset and otherwise untouched: the
+same rules, army lists and points values, in a new layout with new cover art.
+
+Which a reader is holding is never a guess. A book that reproduces its source
+says so in its colophon; one that departs from it says that instead, and names
+the version of the source it builds on.
 
 ## Attribution
 
-Unofficial and non-commercial. All rules text, army design and points values are
-the work of **Mathias Eliasson**, who writes and freely distributes the Warhammer
-Armies Project books. Only the typesetting differs here.
+Unofficial and non-commercial. The rules text, army design and points values
+descend from the Warhammer Armies Project, written and freely distributed by
+**Mathias Eliasson**, and are used with gratitude. Where this edition departs
+from his work, the changes are its own and not his.
 
 Warhammer, Warhammer Fantasy Battle and all associated names, races and places
-are trademarks of Games Workshop Limited. This project is unaffiliated with both
-and no challenge to their status is intended. Not for sale.
+are trademarks of Games Workshop Limited. This project is unaffiliated with
+both, and no challenge to their status is intended. Not for sale.
 
-**No illustration is taken out of a source PDF.** The rules text is Eliasson's
-and freely distributed; the artwork in the older books is neither his nor ours to
-republish, and this repository is public.
-
-A **diagram** is a different thing and does come across: a board, unit bases as
-coloured rectangles, measurement arrows — the rulebook's charge arcs and the
-Empire's formation diagram are these. So `batch.py` promotes no raster image into
-`assets/` unless `--art` asks it to, which is what a book with diagrams is
-imported with, and refuses even then above eighty images in a book. An army book
-on the line imported here holds two to eight — a parchment background, a flat
-block, at most one diagram — and the rulebook holds 49, because it places 46
-diagrams of its own. The illustrated editions of the same armies hold 126 to 529
-by the same count.
-
-Two things follow, both of which the numbers alone would not give:
-
-- **A one-colour image is not taken at all.** What these books offer as a cover
-  is a black mask over vector art that is not extractable, so all 34 covers
-  taken before that check existed are a single colour at 100%, and the blank
-  plate reads better than a black square.
-- **A book whose diagrams are absent says so at import**, rather than leaving a
-  difference from the source to be noticed later.
+The code is MIT and the books are CC BY-NC-SA 4.0; see [LICENSE](LICENSE) for
+the split and what each grant covers.
 
 ## Pipeline
 
@@ -93,21 +93,23 @@ version of it is not:
 
 | | holds | address |
 |---|---|---|
-| the overview | one card per army, at its current version | `/` |
+| the front page | our own editions: the house rules and the proposals | `/` |
+| the library | one card per army, at its current version | `/library/` |
 | an army's page | every version of it we hold, newest first, and our editions of them | `/lizardmen/` |
-| the editions' shelf | the house rules and the proposals, all armies together | `/house/` |
 
-An army's page sits in the folder its own books publish into, so `/lizardmen/`
-is beside `/lizardmen/3.0.pdf` and the address says what it holds. Which version
-is the current one is read from the version numbers rather than declared, so an
-imported book takes its place without being announced — `3.11` above `3.1`, which
-a string sort gets backwards.
+The front page is the editions because they are what the project is for and what
+a reader wants first; the Armies Project entire is one click down. An army's page
+sits in the folder its own books publish into, so `/lizardmen/` is beside
+`/lizardmen/3.0.pdf` and the address says what it holds. Which version is the
+current one is read from the version numbers rather than declared, so an imported
+book takes its place without being announced — `3.11` above `3.1`, which a string
+sort gets backwards.
 
-The overview can be filtered by allegiance and re-ordered alphabetically; it is
+The library can be filtered by allegiance and re-ordered alphabetically; it is
 built grouped and in source order, so it reads correctly before the script runs.
-There is no edition filter any more: an army's versions are on its own page, and
-the editions have a shelf of their own, since there is one version of each of
-those and nothing about them wants choosing between.
+There is no edition filter: an army's versions are on its own page, and the
+editions are the front page, since there is one version of each of those and
+nothing about them wants choosing between.
 
 Only the Typst and the cover art are committed, so CI needs the Typst compiler
 and nothing else — no Python, and never the source PDFs.

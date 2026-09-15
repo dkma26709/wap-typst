@@ -1,0 +1,62 @@
+# Amendments to Ogre Kingdoms 3.1.
+#
+# See editions/house/lizardmen/3.0.toml for the format.
+
+book = "ogre-kingdoms"
+
+
+[[change]]
+id      = "impale-becomes-impact-hits"
+title   = "Impale goes; the beasts that carried it take Impact Hits"
+chapter = "ARMY SPECIAL RULES"
+entry   = "IMPALE"
+op      = "delete"
+why     = """
+Impale is this book's own rule for a charging mount, and it says the mount gains \
+Mighty Blow. That is a wounding bonus applied to attacks the beast makes in its \
+own right, which is not what a Mournfang or a Rhinox does on the charge — it \
+runs something down. Impact Hits is the rule the rulebook already defines for \
+exactly that, so the seven entries carrying Impale take Impact Hits (D3) \
+instead and the local rule goes.
+
+The earlier line of the book had it this way, and losing one book-specific rule \
+in favour of one the rulebook states is worth having on its own.
+"""
+
+original = """IMPALE. A mount with this special rule has the Mighty Blow (1) special rule in any turn that it charges. The eight entries that named it read: Impale, Natural Armour (6+); Frenzy, Impale, Natural Armour (6+); Impale, Natural Armour (5+); Fear, Impale, Natural Armour (5+); Fear, Impale, Natural Armour (6+); Fear, Impale, Natural Armour (6+); Frenzy (Grimhorn Rhinox only), Impale, Natural Armour (5+); Frenzy (Iron Rhinox only), Impale (Iron Rhinox only), Natural Armour (3+)."""
+
+new = """
+The rule is removed. Eight entries named Impale and now name Impact Hits (D3):
+
+- Impact Hits (D3), Natural Armour (6+)
+- Frenzy, Impact Hits (D3), Natural Armour (6+)
+- Impact Hits (D3), Natural Armour (5+)
+- Fear, Impact Hits (D3), Natural Armour (5+)
+- Fear, Impact Hits (D3), Natural Armour (6+)
+- Fear, Impact Hits (D3), Natural Armour (6+)
+- Frenzy (Grimhorn Rhinox only), Impact Hits (D3), Natural Armour (5+)
+- Frenzy (Iron Rhinox only), Impact Hits (D3) (Iron Rhinox only), Natural Armour (3+)
+"""
+
+
+[[change]]
+id      = "stonehorn-earth-shattering-charge"
+title   = "The Stonehorn's charge rolls impact hits, at 260 points"
+chapter = "RARE UNITS"
+entry   = "STONEHORN"
+op      = "replace"
+why     = """
+Earth-shattering Charge gave the Stonehorn Devastating Charge and Mighty Blow, \
+which is the same wounding-bonus reading as Impale and does nothing to convey \
+six tonnes of animal arriving. Impact Hits (D6), with 2D6 rolled and the higher \
+taken on a successful charge, is what the charge is for, and it is a great deal \
+more frightening to stand in front of. Twenty-five points more says so.
+"""
+
+original = """A Stonehorn has the Devastating Charge and Mighty Blow (1) special rules in any turn that it charges. The Stonehorn cost 235 points."""
+
+new = """
+A Stonehorn has the Impact Hits (D6) special rule. When a Stonehorn makes a \
+successful charge, you may roll 2D6 when determining the number of Impact Hits, \
+and choose the highest result. The Stonehorn costs 260 points.
+"""

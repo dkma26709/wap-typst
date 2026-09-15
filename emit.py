@@ -340,10 +340,15 @@ def card(href: str, title: str, meta: str, cover: str | None,
 
 
 def cover_of(book: dict) -> str | None:
-    """The art beside a book's PDF, which CI copies as `<id>-cover<ext>`."""
+    """The army's art, which CI publishes once at `covers/<army><ext>`.
+
+    Per army rather than per book: the illustration is the faction's, so every
+    version of an army shares it, and a copy beside each book would publish the
+    same 2.7MB picture eight times over for Lizardmen alone.
+    """
     if not book.get("cover"):
         return None
-    return f'{book["id"]}-cover{Path(book["cover"]).suffix}'
+    return book["cover"]
 
 
 def edition_label(book: dict) -> str:
@@ -385,7 +390,8 @@ def overview(armies: dict[str, list[dict]], rules: dict[str, list[dict]],
             if len(versions) > 1:
                 meta += f" · {plural(len(versions), 'version')}"
             rows.append(card(
-                f"{current['slug']}/", current["army"], meta, cover_of(current),
+                f"{current['slug']}/", current["army"], meta,
+                cover_of(current), prefix="../",
                 data=f' data-align="{slug}"'
                      f' data-name="{html.escape(sort_name(current), quote=True)}"'))
 
@@ -398,7 +404,7 @@ def overview(armies: dict[str, list[dict]], rules: dict[str, list[dict]],
             if len(versions) > 1:
                 meta += f" · {plural(len(versions), 'version')}"
             cards.append(card(f"{current['slug']}/", current["army"], meta,
-                              cover_of(current)))
+                              cover_of(current), prefix="../"))
         core = f"""
   <section id="core">
   <h2 class="section">The Rules</h2>
@@ -413,16 +419,17 @@ def overview(armies: dict[str, list[dict]], rules: dict[str, list[dict]],
     if ours:
         shelf = f"""
   <p class="note">
-    Some books have an edition of our own beside the original: the
+    {ours} of these books have an edition of our own beside them: the
     <strong>house rules</strong> we play, and the <strong>proposals</strong> we
-    are still arguing about. There are {ours} of them, on
-    <a href="house/">a shelf of their own</a>. What an edition changed - and
-    what it only proposes - is set out in the back of it.
+    are still arguing about. Those are <a href="../">the front page</a>. What
+    an edition changed - and what it only proposes - is set out in the back
+    of it.
   </p>"""
 
     held = sum(len(v) for v in list(armies.values()) + list(rules.values()))
     entries = sum(v[0]["entries"] for v in armies.values())
-    body = f"""  <h1>Warhammer Armies Project</h1>
+    body = f"""  <p class="back"><a href="../">Warhammer Armies Revamped</a></p>
+  <h1>Warhammer Armies Project</h1>
   <p class="sub">{len(armies)} armies and the core rulebook, {held} books
   between them, {entries:,} unit entries, re-typeset with Typst.</p>
 {shelf}
@@ -466,7 +473,7 @@ def army_page(versions: list[dict], derived: dict[str, list[dict]],
 """
 
     order = ", newest first" if len(versions) > 1 else ""
-    body = f"""  <p class="back"><a href="../">All books</a></p>
+    body = f"""  <p class="back"><a href="../library/">All books</a></p>
   <h1>{html.escape(army)}</h1>
   <p class="sub">{plural(len(versions), 'version')} re-typeset with Typst{order}.</p>
 
@@ -479,11 +486,12 @@ def army_page(versions: list[dict], derived: dict[str, list[dict]],
 
 
 def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
-               editions: list[dict], css: str) -> str:
-    """Our own editions, on the one page, because they are what we play from.
+               editions: list[dict], css: str, held: int) -> str:
+    """Our own editions, and the site's front page: they are what we play from.
 
     A shelf is a section here rather than a filter: there is one version of each
-    of these, so nothing about them wants choosing between.
+    of these, so nothing about them wants choosing between. The Armies Project
+    itself is a click away, at /library/, with every version of every book.
     """
     by_shelf: dict[str, list[tuple[dict, dict]]] = {}
     for base, group in derived.items():
@@ -499,10 +507,11 @@ def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
             continue
         total += len(group)
         blurb = f'\n  <p class="note">{html.escape(edition["blurb"])}</p>' if edition.get("blurb") else ""
-        # An edition shares the cover of the book it derives from.
+        # An edition shares the cover of the book it derives from. This page is
+        # at the site root now, so the covers need no `../` to reach.
         cards = [card(f'{b["id"]}.pdf', b["army"],
                       f"{edition_label(b)} · {edition_tally(b)}",
-                      cover_of(base), prefix="../", alt=b["army"])
+                      cover_of(base), alt=b["army"])
                  for b, base in group]
         sections.append(f"""
   <h2 class="section">{html.escape(edition["label"])}</h2>{blurb}
@@ -511,12 +520,17 @@ def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
   </ul>
 """)
 
-    body = f"""  <p class="back"><a href="../">All books</a></p>
-  <h1>Ours</h1>
-  <p class="sub">{plural(total, 'book')} we have altered or proposed altering.
-  Everything else on this site reproduces its source exactly.</p>
-{"".join(sections)}"""
-    return shell("Ours — Warhammer Armies Project", body, css)
+    body = f"""  <h1>Warhammer Armies Revamped</h1>
+  <p class="sub">{plural(total, 'book')} we have altered or proposed altering —
+  the rules we play from. Everything else on this site reproduces its source
+  exactly.</p>
+{"".join(sections)}
+  <p class="note">
+    The Warhammer Armies Project itself is here in full: {held} books, every
+    army and the core rulebook, current and archived versions alike, on
+    <a href="library/">the library page</a>.
+  </p>"""
+    return shell("Warhammer Armies Revamped", body, css)
 
 
 # --- reading the books ------------------------------------------------------
@@ -709,19 +723,24 @@ def main() -> None:
 
     # One page per army, at the folder its books already publish into, so
     # /lizardmen/ sits beside /lizardmen/3.0.pdf and the URL says what it holds.
-    pages = {Path("index.html"): overview(armies, rules, align, derived, css)}
+    # Our own editions ARE the front page - they are what the site is for and
+    # what a reader wants first. The Armies Project entire is one click down at
+    # /library/, every army and every version of it.
+    held = sum(len(v) for v in list(armies.values()) + list(rules.values()))
+    pages = {Path("library") / "index.html":
+             overview(armies, rules, align, derived, css)}
     for group in list(armies.values()) + list(rules.values()):
         pages[Path(group[0]["slug"]) / "index.html"] = army_page(group, derived, css)
     if derived:
-        pages[Path("house") / "index.html"] = house_page(
-            derived, bases, list(editions.values()), css)
+        pages[Path("index.html")] = house_page(
+            derived, bases, list(editions.values()), css, held)
 
-    # An army called `house` would take the shelf's own address. None is, and
-    # this is the only place that could go unnoticed.
-    clash = set(armies) & {"house"}
+    # An army called `library` would take the library's own address. None is,
+    # and this is the only place that could go unnoticed.
+    clash = set(armies) & {"library"}
     if clash:
-        raise SystemExit(f"emit: {clash.pop()} collides with the editions shelf "
-                         f"at /house/ - one of them needs a different slug")
+        raise SystemExit(f"emit: {clash.pop()} collides with the library page "
+                         f"at /library/ - one of them needs a different slug")
 
     for path, text in pages.items():
         target = ROOT / "site" / path

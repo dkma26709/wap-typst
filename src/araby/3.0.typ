@@ -12,7 +12,7 @@
   army: "Araby",
   version: "3.0",
   layout: "army",
-  cover: "covers/araby/3.0.png",
+  cover: "covers/araby.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Araby",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/araby/3.0.png",
+  art: "/assets/covers/araby.png",
 )
 
 #colophon((
@@ -45,17 +45,15 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in an Araby army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Araby units, and these are detailed here.
-
-#namecost("TACTICAL WITHDRAWAL", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Araby army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Araby units, and these are detailed here.])[
+#upgrade("TACTICAL WITHDRAWAL", none)[
 Models with this rule may re-roll the lowest dice roll for their flee distance when choosing Flee as a charge reaction.
+]
 
-#namecost("ZEALOTRY", "")
-
+#upgrade("ZEALOTRY", none)[
 Units with this rule counts as having one rank more than they actually have when determining if they are Steadfast. In addition, they have the Cold-blooded special rule for any Break tests taken in the first round of combat.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Arabyans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -1078,20 +1076,15 @@ If the model is successfully picked up, it is then either dropped to the ground,
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

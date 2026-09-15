@@ -12,7 +12,7 @@
   army: "Ogre Kingdoms",
   version: "3.1",
   layout: "army",
-  cover: "covers/ogre-kingdoms/3.1.png",
+  cover: "covers/ogre-kingdoms.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Ogre Kingdoms",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/ogre-kingdoms/3.1.png",
+  art: "/assets/covers/ogre-kingdoms.png",
 )
 
 #colophon((
@@ -45,88 +45,90 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in an Ogre Kingdoms army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Ogre Kingdoms units, and these are detailed here.
-
-#namecost("BENEATH CONTEMPT", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Ogre Kingdoms army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Ogre Kingdoms units, and these are detailed here.])[
+#upgrade("BENEATH CONTEMPT", none)[
 Gnoblars have the Expendable special rule. In addition, even other Gnoblars treat them as being Expendable.
+]
 
-#namecost("BICKER", "")
-
+#upgrade("BICKER", none)[
 Roll a D6 at the beginning of each of your turns for each unit with this special rule that is not in combat or fleeing and has a Unit Strength of 5 or more. If a unit rolls a 1 it may not move in the Movement phase or shoot in the Shooting phase this turn.
+]
 
-#namecost("OGRE CHARGE", "")
-
+#upgrade("OGRE CHARGE", none)[
 Each model on foot with the Ogre Charge special rule that successfully charges an enemy has the Impact Hits (1) special rule. In addition, they add their current Rank Bonus to the Strength of the Impact Hits they inflict. In addition, they count as having one more rank than their actual number for the purpose of determining Steadfast in any turn that they charge.
+]
 
-#namecost("BLOOD VULTURE", "")
-
+#upgrade("BLOOD VULTURE", none)[
 A blood vulture is treated as a missile weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "4", "Sniper"))
 
 Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon Skill test to avoid being Hit.
+]
 
-#namecost("CHAINTRAP", "")
-
+#upgrade("CHAINTRAP", none)[
 A chaintrap has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "6", "Killing Blow, Quick Shot"))
-#namecost("GUT-PLATE", "")
+]
 
+#upgrade("GUT-PLATE", none)[
 A model with a gut-plate gains a 6+ armour save against attacks to the front.
+]
 
-#namecost("IRONFIST", "")
+#upgrade("IMPALE", none)[
+A mount with this special rule has the Mighty Blow (1) special rule in any turn that it charges.
+]
 
+#upgrade("IRONFIST", none)[
 Buckler. If a model with an ironfist rolls a natural 6 when making a Parry save, it automatically inflicts an extra Hit back onto the model or unit that struck the blow.
+]
 
-#namecost("HARPOON LAUNCHER", "")
-
+#upgrade("HARPOON LAUNCHER", none)[
 A harpoon launcher has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "5", "Multiple Wounds (D3), Ponderous"))
-#namecost("OGRE PISTOL", "")
+]
 
+#upgrade("OGRE PISTOL", none)[
 Ogre pistols have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (2)*, Quick Shot"))
 
 #note[_\*Requires a brace of Ogre pistols._]
+]
 
-#namecost("ORIENTAL LONGSWORD", "")
-
+#upgrade("ORIENTAL LONGSWORD", none)[
 Oriental longswords have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "Parry (6+)"))
 
 #note[_An Oriental Longsword gives the wielder +1 To Wound._]
+]
 
-#namecost("LUCK-GNOBLAR", "")
-
+#upgrade("LUCK-GNOBLAR", none)[
 One use only. An Ogre with a Luck-Gnoblar may re- roll a single armour or invulnerable save, once per battle.
+]
 
-#namecost("SWORD-GNOBLAR", "")
-
+#upgrade("SWORD-GNOBLAR", none)[
 An Ogre with a Sword-Gnoblar benefits from one extra Attack with Weapon Skill 2, Strength 2 and Initiative 2.
+]
 
-#namecost("TOOTH-GNOBLAR", "")
-
+#upgrade("TOOTH-GNOBLAR", none)[
 One use only. After attempting to cast a spell from the Lore of the Great Maw, a Butcher with a Tooth- Gnoblar may choose to sacrifice one to get +1 to his casting value.
+]
 
-#namecost("LOOK-OUT GNOBLAR", "")
-
+#upgrade("LOOK-OUT GNOBLAR", none)[
 Any character in a unit with a Look-out Gnoblar benefits from the 'Look Out Sir!' special rule as long as there are three rank and file models of the same troop type remaining in the unit.
+]
 
-#namecost("NAME-GNOBLAR", "")
-
+#upgrade("NAME-GNOBLAR", none)[
 For each Name-Gnoblar an Ogre has, he can choose an additional Big Name.
+]
 
-#namecost("SCALP-GNOBLAR", "")
-
+#upgrade("SCALP-GNOBLAR", none)[
 One use only. A Butcher with a Scalp-Gnoblar may re- roll a single dice when attempting to cast a spell from the Lore of the Great Maw.
+]
 ]
 
 #lore("THE LORE OF THE GREAT MAW")[
@@ -159,69 +161,37 @@ One use only. A Butcher with a Scalp-Gnoblar may re- roll a single dice when att
 
 #spell("THE GREAT MAW AWAKENS", 4, cast: "15+")[Remains in play. _The Great Maw Awakens_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must take an Initiative test. Models that pass the test suffer a Strength 3 hit. Models that fail the test suffer a Strength 7 hit with the Multiple Wounds (D6) special rule.]
 ]
-= BIG NAMES OF THE OGRES
+#upgrade-chapter("BIG NAMES OF THE OGRES", intro: [*Certain models are able to spend points on Big Names, as detailed in the army list. Each model may only take a single Big Name, unless specified. No big name may be taken more than once in the same army.*])[
+#upgrade("DEATHCHEATER", 20)[Starting from the end of the phase in which the character is down to their last Wound, they receive a 3+ invulnerable save.]
 
-*Certain models are able to spend points on Big Names, as detailed in the army list. Each model may only take a single Big Name, unless specified. No big name may be taken more than once in the same army.*
+#upgrade("MOUNTAINEATER", 20)[The character will never be wounded on a score better than a 3+. Hits that cause automatic Wounds are unaffected.]
 
-#namecost("DEATHCHEATER", "20 points")
+#upgrade("KINEATER", 20, only: "Tyrants")[Any friendly unit within 12" of the character may re-roll failed Panic tests.]
 
-Starting from the end of the phase in which the character is down to their last Wound, they receive a 3+ invulnerable save.
+#upgrade("BEASTKILLER", 15, only: "Hunters")[When making attacks against War Beasts, Monstrous Beasts, Monstrous Creatures or Monsters, the character gains +1 on his rolls To Wound. If the character is using a magic weapon, then he does not get this bonus.]
 
-#namecost("MOUNTAINEATER", "20 points")
+#upgrade("DAEMONKILLER", 15, only: "Tyrants")[The character causes Terror.]
 
-The character will never be wounded on a score better than a 3+. Hits that cause automatic Wounds are unaffected.
+#upgrade("GIANTBREAKER", 15)[The character gains +1 Strength. They may never refuse challenges, and neither they nor a unit they are with may choose to flee as a charge reaction.]
 
-#namecost("KINEATER", "20 points")
+#upgrade("GUTSLUGGER", 15)[The character gains +1 To Hit in close combat in any turn in which it did not charge.]
 
-Tyrants only. Any friendly unit within 12" of the character may re-roll failed Panic tests.
+#upgrade("MAWSEEKER", 15)[The character gains +1 Toughness and the Stupidity special rule.]
 
-#namecost("BEASTKILLER", "15 points")
+#upgrade("BRAWLERGUTS", 10, only: "Model on foot")[The character gains the Impact Hits (D3) special rule.]
 
-Hunters only. When making attacks against War Beasts, Monstrous Beasts, Monstrous Creatures or Monsters, the character gains +1 on his rolls To Wound. If the character is using a magic weapon, then he does not get this bonus.
+#upgrade("NECKWRINGER", 10)[Enemy Infantry in combat with this character cannot claim the bonus for Outnumbering their foe.]
 
-#namecost("DAEMONKILLER", "15 points")
+#upgrade("WALLCRUSHER", 10)[The character does one additional Impact Hit on a successful Ogre Charge. In addition, they ignore all the effects of obstacles when attacking units that are defending them.]
 
-Tyrants only. The character causes Terror.
+#upgrade("LONGSTRIDER", 5, only: "Model on foot")[The character gains +1 Movement.]
 
-#namecost("GIANTBREAKER", "15 points")
+#upgrade("MAGESWALLOWER", 5)[The character gains the Magical Attacks special rule.]
 
-The character gains +1 Strength. They may never refuse challenges, and neither they nor a unit they are with may choose to flee as a charge reaction.
+#upgrade("MONSTERWRESTLER", 5)[Monstrous Creatures and Monsters cannot use Stomp against this character or their unit.]
 
-#namecost("GUTSLUGGER", "15 points")
-
-The character gains +1 To Hit in close combat in any turn in which it did not charge.
-
-#namecost("MAWSEEKER", "15 points")
-
-The character gains +1 Toughness and the Stupidity special rule.
-
-#namecost("BRAWLERGUTS", "10 points")
-
-Model on foot only. The character gains the Impact Hits (D3) special rule.
-
-#namecost("NECKWRINGER", "10 points")
-
-Enemy Infantry in combat with this character cannot claim the bonus for Outnumbering their foe.
-
-#namecost("WALLCRUSHER", "10 points")
-
-The character does one additional Impact Hit on a successful Ogre Charge. In addition, they ignore all the effects of obstacles when attacking units that are defending them.
-
-#namecost("LONGSTRIDER", "5 points")
-
-Model on foot only. The character gains +1 Movement.
-
-#namecost("MAGESWALLOWER", "5 points")
-
-The character gains the Magical Attacks special rule.
-
-#namecost("MONSTERWRESTLER", "5 points")
-
-Monstrous Creatures and Monsters cannot use Stomp against this character or their unit.
-
-#namecost("STEEDEATER", "5 points")
-
-The character and any unit they are with gain the Swiftstride special rule when charging or pureeing enemy War Beasts and Cavalry.
+#upgrade("STEEDEATER", 5)[The character and any unit they are with gain the Swiftstride special rule when charging or pureeing enemy War Beasts and Cavalry.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Ogres. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -325,7 +295,7 @@ The character and any unit they are with gain the Swiftstride special rule when 
 #arcane-item("WIZARDFLESH APRON", 20, only: "Wizard with the Lore of the Great Maw", type: "Relic")[At the start of each of your Magic phases, the bearer of this item can pick one additional spell from the Lore of the Great Maw of those normally available to them and cast it this turn.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("TOKENS OF THE EVERWINTER", 30, one-use: true)[This can be used at the start of any round of close combat. For the duration of this turn, the model (but not any mount) gains +1 Strength as well as the Always Strikes First and Natural Armour (5+) special rules.]
 
 #enchanted-item("BRAND OF THE SVARD", 25, only: "Mounted model")[The bearer's mount gain +1 To Hit in close combat.]
@@ -571,7 +541,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   ),
   troop-type: "Monstrous Beast (Rhinocerine)",
   base-size: "50x100",
-  special-rules: "Impact Hits (D3), Natural Armour (6+)",
+  special-rules: "Impale, Natural Armour (6+)",
   notes: [
 - A model mounted on a Mournfang has a Unit Strength and Line of Sight value of 4.
   ],
@@ -583,7 +553,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   ),
   troop-type: "Monstrous Creature (Rhinocerine)",
   base-size: "50x100",
-  special-rules: "Frenzy, Impact Hits (D3), Natural Armour (6+)",
+  special-rules: "Frenzy, Impale, Natural Armour (6+)",
   notes: [
 - A model mounted on a Grimhorn Rhinox has a Unit Strength and Line of Sight value of 5.
   ],
@@ -790,7 +760,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   mount: "Mournfang (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, light armour, gut-plate",
-  special-rules: "Impact Hits (D3), Natural Armour (5+)",
+  special-rules: "Impale, Natural Armour (5+)",
   options: [
 - May choose one of the following:
   - Ironfists +3 points/model
@@ -878,7 +848,7 @@ At least one of them must choose their spells from the Lore of the Great Maw.
   drawn-by: "1 Young Rhinox (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, gut-plate",
-  special-rules: "Fear, Impact Hits (D3), Natural Armour (5+)",
+  special-rules: "Fear, Impale, Natural Armour (5+)",
   notes: [
 - A Rhinox Chariot has a Line of Sight value of 4.
   ],
@@ -923,7 +893,7 @@ If a misfire is rolled, roll a D6 and consult the Scraplauncher Misfire chart.
 Movement (2D6) special rule, and will move in a random direction."), ("3-4", "Splang! The Scraplauncher suffers one Wound which Ignores Armour Saves, and may not shoot this
 turn or in the controlling player's next turn."), ("5-6", "It's Mine! The Scraplauncher may not fire this turn.")))
   ],
-  special-rules: "Fear, Impact Hits (D3), Natural Armour (6+)",
+  special-rules: "Fear, Impale, Natural Armour (6+)",
   notes: [
 - A Scraplauncher has a Line of Sight value of 4.
   ],
@@ -950,7 +920,7 @@ The Skewerslinger does not suffer To Hit penalties for moving and shooting. If y
 #chart((("D6", "Result"), ("1", "Kerrr-unch! The Skewerslinger is destroyed."), ("2", "Groink?!? The Skewerslinger may not shoot this turn, and from now on it has the Random
 Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Splang! The Skewerslinger suffers one Wound which Ignores Armour Saves.")))
   ],
-  special-rules: "Fear, Impact Hits (D3), Natural Armour (6+)",
+  special-rules: "Fear, Impale, Natural Armour (6+)",
   notes: [
 - A Skewerslinger has a Line of Sight value of 4.
   ],
@@ -988,7 +958,7 @@ Movement (2D6) special rule, and will move in a random direction."), ("3-6", "Sp
   mount: "Grimhorn Rhinox (Rhinocerine)",
   base-size: "50x100",
   equipment: "Hand weapon, light armour, gut-plate",
-  special-rules: "Frenzy (Grimhorn Rhinox only), Impact Hits (D3), Natural Armour (5+)",
+  special-rules: "Frenzy (Grimhorn Rhinox only), Impale, Natural Armour (5+)",
   options: [
 - May choose one of the following:
   - Additional hand weapons +3 points/model
@@ -1037,7 +1007,7 @@ shoot this turn.")))
 
 #unit("STONEHORN",
   profiles: (
-    (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 260),
+    (name: "Stonehorn", m: 7, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 2, a: 5, ld: 5, points: 235),
     (name: "Beast Rider", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: "-", i: 2, a: 3, ld: 7, points: ""),
   ),
   troop-type: "Monster (Rhinocerine)",
@@ -1046,7 +1016,7 @@ shoot this turn.")))
   equipment: "Light lance, gut-plate (Beast Rider only)",
   special-rules: "Frenzy (Stonehorn only), Natural Armour (3+)",
   special-rules-body: (
-    rule("Earth-shattering Charge")[A Stonehorn has the Impact Hits (D6) special rule. When a Stonehorn makes a successful charge, you may roll 2D6 when determining the number of Impact Hits, and choose the highest result.],
+    rule("Earth-shattering Charge")[A Stonehorn has the Devastating Charge and Mighty Blow (1) special rules in any turn that it charges.],
     rule("Stone Skeleton")[If an attack with the Multiple Wounds special rule successfully wounds a Stonehorn, halve the number of Wounds inflicted (rounding up)],
   ),
   upgrades: (
@@ -1148,7 +1118,6 @@ another victim. Roll again on this table to see what happens.")))
 )
 
 #unit("SLAVE GIANT",
-  breakable: true,
   profiles: (
     (name: "Slave Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 155),
   ),
@@ -1227,7 +1196,7 @@ then choose another victim. Roll again on this table to see what the Giant does 
   magic-items: (
     rule("Ironskin Armor")[Magic Armour. Medium armour. The Ironskin Armor gives Ghark a Magical Ward (6+).],
   ),
-  special-rules: "Frenzy (Iron Rhinox only), Impact Hits (D3) (Iron Rhinox only), Natural Armour (3+)",
+  special-rules: "Frenzy (Iron Rhinox only), Impale (Iron Rhinox only), Natural Armour (3+)",
   special-rules-body: (
     rule("Iron Rhinox")[The Iron Rhinox has a Strength 2 Breath Weapon with the Armour Piercing (2) special rule.],
     rule("The Ironskin Tribe")[If Ghark is the Army General, Leadbelchers count as a Core Units instead of Special Units and Grimhorn Rhinox Riders count as a Special Units instead of Rare Units.],
@@ -1360,19 +1329,14 @@ Huntmaster)
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

@@ -12,7 +12,7 @@
   army: "The Game of Fantasy Battles",
   version: "3.11",
   layout: "rules",
-  cover: "covers/rulebook/3.11.png",
+  cover: "covers/rulebook.png",
   base: "rulebook/3.11",
   edition: "proposal",
 )
@@ -22,7 +22,7 @@
 #cover(
   title: "The Game of Fantasy Battles",
   subtitle: "Proposals 2026.1 · after Warhammer Armies Project 3.11",
-  art: "/assets/covers/rulebook/3.11.png",
+  art: "/assets/covers/rulebook.png",
 )
 
 #colophon((
@@ -2531,60 +2531,33 @@ Each model should be mounted on a base to determine the width and depth of the u
 
 In some cases, you might be using a model that requires a larger base than described. This is completely fine, as long as you try to keep it as close as possible to the normal approved base sizes. However, you may never have a base size that is smaller than the approved base sizes listed.
 
-== INFANTRY
-
-The following rules apply to Infantry:
-
-#namecost("RANKS", "")
-
-A unit of Infantry is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-An Infantry model may make up to one supporting attack.
-
-#namecost("UNIT STRENGTH", "")
-
-Infantry have a Unit Strength of 1.
-
-#namecost("LINE OF SIGHT", "")
-
-Infantry have a Line of Sight value of 1.
+#troop-type("INFANTRY",
+  intro: [The following rules apply to Infantry:],
+  ranks: [A unit of Infantry is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [An Infantry model may make up to one supporting attack.],
+  unit-strength: [Infantry have a Unit Strength of 1.],
+  line-of-sight: [Infantry have a Line of Sight value of 1.],
+)
 
 == MONSTROUS
 
-== INFANTRY
 
-The following rules apply to Monstrous Infantry:
-
-#namecost("RANKS", "")
-
-A unit of Monstrous Infantry is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Infantry model may make up to three supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("INFANTRY",
+  intro: [The following rules apply to Monstrous Infantry:],
+  ranks: [A unit of Monstrous Infantry is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.],
+  supporting-attacks: [A Monstrous Infantry model may make up to three supporting attacks.],
+  special-rules: [
 Monstrous Infantry are subject to the following special rules:
 
 - Fear
+],
+  unit-strength: [Monstrous Infantry have a Unit Strength of 2.],
+  line-of-sight: [Monstrous Infantry have a Line of Sight value of 2.],
+)
 
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Infantry have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Infantry have a Line of Sight value of 2.
-
-== CAVALRY
-
-The following rules apply to Cavalry:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("CAVALRY",
+  intro: [The following rules apply to Cavalry:],
+  split-profile: [
 Although a cavalry model has two sets of characteristics, one for the rider and one for the mount, it is treated in all respects as a single model – the rider cannot dismount. When moving, the cavalry model always uses the Movement characteristic of the mount, and never that of the rider.
 
 The rider and mount use their own Weapon Skill, Strength, Initiative and Attacks characteristics when they attack. Each can attack any opponent that the cavalry model is in base contact with.
@@ -2602,17 +2575,10 @@ Any equipment or magic items the model might otherwise have only apply to the ri
 Unless specified, any effect that would modify the model's characteristics or their dice rolls affect both the rider and mount.
 
 In some cases, you may find Cavalry models that do not have a split profile. The model counts as mounted for the purpose of using certain weapons, as described in the Weapons and Armour chapter.
-
-#namecost("RANKS", "")
-
-A unit of Cavalry is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Cavalry model can make one supporting attack from the rider. Mounts are not allowed to make supporting attacks. Cavalry without a split profile can make up to one supporting attack.
-
-#namecost("SPECIAL RULES", "")
-
+],
+  ranks: [A unit of Cavalry is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Cavalry model can make one supporting attack from the rider. Mounts are not allowed to make supporting attacks. Cavalry without a split profile can make up to one supporting attack.],
+  special-rules: [
 Cavalry are subject to the following special rules:
 
 Any special rules listed for Cavalry units only apply to the rider, unless they specifically mention the mount. There are, however, a few exceptions. If either the rider or the mount has one of the following special rules, then the whole model has it:
@@ -2631,63 +2597,37 @@ Any special rules listed for Cavalry units only apply to the rider, unless they 
 - Stubborn
 - Terror
 - Vanguard
-
-#namecost("TERRAIN", "")
-
-Cavalry have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills – see Battlefield Terrain for more details.
-
-#namecost("UNIT STRENGTH", "")
-
-Cavalry have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Cavalry have a Line of Sight value of 2.
+],
+  terrain: [Cavalry have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills – see Battlefield Terrain for more details.],
+  unit-strength: [Cavalry have a Unit Strength of 2.],
+  line-of-sight: [Cavalry have a Line of Sight value of 2.],
+)
 
 == MONSTROUS
 
-== CAVALRY
 
-All the Cavalry rules apply to Monstrous Cavalry. In addition, the following rules apply:
-
-#namecost("RANKS", "")
-
-A unit of Monstrous Cavalry is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Cavalry model can make one supporting attack from the rider. Mounts are not allowed to make supporting attacks. Monstrous Cavalry without a split profile can make up to three supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("CAVALRY",
+  intro: [All the Cavalry rules apply to Monstrous Cavalry. In addition, the following rules apply:],
+  ranks: [A unit of Monstrous Cavalry is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.],
+  supporting-attacks: [A Monstrous Cavalry model can make one supporting attack from the rider. Mounts are not allowed to make supporting attacks. Monstrous Cavalry without a split profile can make up to three supporting attacks.],
+  special-rules: [
 Monstrous Cavalry are subject to the following special rules:
 
 - Fear
+],
+  unit-strength: [Monstrous Cavalry have a Unit Strength of 3.],
+  line-of-sight: [Monstrous Cavalry have a Line of Sight value of 3.],
+)
 
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Cavalry have a Unit Strength of 3.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Cavalry have a Line of Sight value of 3.
-
-== SWARMS
-
-The following rules apply to Swarms:
-
-#namecost("RANKS", "")
-
+#troop-type("SWARMS",
+  intro: [The following rules apply to Swarms:],
+  ranks: [
 A unit of Swarms is required to be three or more models wide in order to have a complete rank.
 
 In addition, their fighting rank is three models rather than five.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Swarm model may make up to five supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+],
+  supporting-attacks: [A Swarm model may make up to five supporting attacks.],
+  special-rules: [
 Swarms are subject to the following special rules:
 
 - Expendable
@@ -2696,144 +2636,86 @@ Swarms are subject to the following special rules:
 - Vanguard
 
 Any Swarm base that is hit by a template attack suffers Multiple Wounds (D6) rather than 1.
+],
+  unit-strength: [Swarms have a Unit Strength of 3.],
+  line-of-sight: [Swarms have a Line of Sight value of 0.],
+)
 
-#namecost("UNIT STRENGTH", "")
-
-Swarms have a Unit Strength of 3.
-
-#namecost("LINE OF SIGHT", "")
-
-Swarms have a Line of Sight value of 0.
-
-== WAR BEASTS
-
-The following rules apply to War Beasts:
-
-#namecost("RANKS", "")
-
-A unit of War Beasts is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A War Beast model may make up to one supporting attack.
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("WAR BEASTS",
+  intro: [The following rules apply to War Beasts:],
+  ranks: [A unit of War Beasts is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [A War Beast model may make up to one supporting attack.],
+  special-rules: [
 War Beasts are subject to the following special rules:
 
 - Expendable
 - Independent
 - Vanguard
+],
+  character-mount: [Some characters can ride War Beasts, in which case the model uses the rules for Cavalry.],
+  unit-strength: [War Beasts have a Unit Strength of 1.],
+  line-of-sight: [War Beasts have a Line of Sight value of 1.],
+  order: ("ranks", "supporting-attacks", "special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride War Beasts, in which case the model uses the rules for Cavalry.
-
-#namecost("UNIT STRENGTH", "")
-
-War Beasts have a Unit Strength of 1.
-
-#namecost("LINE OF SIGHT", "")
-
-War Beasts have a Line of Sight value of 1.
-
-== MONSTROUS BEASTS
-
-The following rules apply to Monstrous Beasts:
-
-#namecost("RANKS", "")
-
-A unit of Monstrous Beasts is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Beast model may make up to three supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("MONSTROUS BEASTS",
+  intro: [The following rules apply to Monstrous Beasts:],
+  ranks: [A unit of Monstrous Beasts is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.],
+  supporting-attacks: [A Monstrous Beast model may make up to three supporting attacks.],
+  special-rules: [
 Monstrous Beasts are subject to the following special rules:
 
 - Fear
 - Independent
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride Monstrous Beasts, in which case the model uses the rules for Monstrous Cavalry.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Beasts have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Beasts have a Line of Sight value of 2.
+],
+  character-mount: [Some characters can ride Monstrous Beasts, in which case the model uses the rules for Monstrous Cavalry.],
+  unit-strength: [Monstrous Beasts have a Unit Strength of 2.],
+  line-of-sight: [Monstrous Beasts have a Line of Sight value of 2.],
+  order: ("ranks", "supporting-attacks", "special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
 == MONSTROUS
 
-== CREATURES
 
-The following rules apply to Monstrous Creatures:
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("CREATURES",
+  intro: [The following rules apply to Monstrous Creatures:],
+  special-rules: [
 Monstrous Creatures are subject to the following special rules:
 
 - Independent
 - Stomp (D3)
 - Terror
+],
+  character-mount: [Some characters can ride Monstrous Creatures. If a character has a ridden Monstrous Creature, the whole model is treated as having the troop type Monstrous Creature and thus follows all the rules for both characters and Monstrous Creature models including the Split Profile rules for Cavalry. A character on a ridden Monstrous Creature cannot join other units.],
+  unit-strength: [Monstrous Creatures have a Unit Strength of 4. Ridden Monstrous Creatures add the number of riders to their Unit Strength.],
+  line-of-sight: [Monstrous Creatures have a Line of Sight value of 3. Ridden Monstrous Creatures have a Line of Sight value of 4.],
+  order: ("special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride Monstrous Creatures. If a character has a ridden Monstrous Creature, the whole model is treated as having the troop type Monstrous Creature and thus follows all the rules for both characters and Monstrous Creature models including the Split Profile rules for Cavalry. A character on a ridden Monstrous Creature cannot join other units.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Creatures have a Unit Strength of 4. Ridden Monstrous Creatures add the number of riders to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Creatures have a Line of Sight value of 3. Ridden Monstrous Creatures have a Line of Sight value of 4.
-
-== MONSTERS
-
-The following rules apply to Monsters:
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("MONSTERS",
+  intro: [The following rules apply to Monsters:],
+  special-rules: [
 Monsters are subject to the following special rules:
 
 - Independent
 - Stomp (D6)
 - Terror
-
-#namecost("SPLIT PROFILE", "")
-
-Ridden Monsters follow all the Split Profile rules for Cavalry. The riders can shoot and cast magic missiles in 360° around them, rather than only firing at targets within their front arc. However; any artillery weapons can only fire in the model's forward arc as normal, unless specified. Any crew member that chooses to fire an artillery weapon cannot fire their own weapon in the same turn.
-
-#namecost("ARMOUR SAVES", "")
-
-Many Monsters have an armour save detailed in their army list entry, which is combined with any armour the riders might have.
-
-#namecost("CHARACTER MOUNT", "")
-
+],
+  split-profile: [Ridden Monsters follow all the Split Profile rules for Cavalry. The riders can shoot and cast magic missiles in 360° around them, rather than only firing at targets within their front arc. However; any artillery weapons can only fire in the model's forward arc as normal, unless specified. Any crew member that chooses to fire an artillery weapon cannot fire their own weapon in the same turn.],
+  armour-saves: [Many Monsters have an armour save detailed in their army list entry, which is combined with any armour the riders might have.],
+  character-mount: [
 Some Characters can ride Monsters. If a character has a ridden Monster, the whole model is treated as having the troop type Monster and thus follows all the rules for both characters and Monster models including the Split Profile rules above. A character on a ridden Monster cannot join other units.
 
 If the Monster includes any riders in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.
+],
+  unit-strength: [Monsters have a Unit Strength of double their original starting number of Wounds. Ridden Monsters add the number of riders to their Unit Strength.],
+  line-of-sight: [Monsters have a Line of Sight value of 5.],
+  order: ("special-rules", "split-profile", "armour-saves", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-#namecost("UNIT STRENGTH", "")
-
-Monsters have a Unit Strength of double their original starting number of Wounds. Ridden Monsters add the number of riders to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Monsters have a Line of Sight value of 5.
-
-== CHARIOTS
-
-The following rules apply to Chariots:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("CHARIOTS",
+  intro: [The following rules apply to Chariots:],
+  split-profile: [
 All the Split Profile rules for Cavalry rules apply to Chariots. In addition, the following rules apply:
 
 When moving, the chariot model always uses its own Movement characteristic. However, it may not pivot on the spot like other lone models without Reforming.
@@ -2841,25 +2723,12 @@ When moving, the chariot model always uses its own Movement characteristic. Howe
 Unlike cavalry, chariot mounts can only fight enemies to the front.
 
 The riders can shoot and cast magic missiles in 360° around them, rather than only firing at targets within their front arc. However; any artillery weapons can only fire in the model's forward arc as normal, unless specified. Any crew member that chooses to fire an artillery weapon cannot fire their own weapon in the same turn.
-
-#namecost("ARMOUR SAVES", "")
-
-Many chariots have an armour save detailed in their army list entry, which is combined with any armour the crew might have.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride chariots. If a character has taken a chariot as a mount, the whole model is treated as having the troop type 'Chariot' and follows all the rules for both characters and chariot models. If the chariot includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.
-
-#namecost("RANKS", "")
-
-A unit of Chariots is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-Chariots cannot make supporting attacks. However, Chariots in the second rank add +D3 Impact Hits to the chariots in the first rank.
-
-#namecost("SPECIAL RULES", "")
-
+],
+  armour-saves: [Many chariots have an armour save detailed in their army list entry, which is combined with any armour the crew might have.],
+  character-mount: [Some characters can ride chariots. If a character has taken a chariot as a mount, the whole model is treated as having the troop type 'Chariot' and follows all the rules for both characters and chariot models. If the chariot includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.],
+  ranks: [A unit of Chariots is required to be three or more models wide in order to have a complete rank. In addition, their fighting rank is three models rather than five.],
+  supporting-attacks: [Chariots cannot make supporting attacks. However, Chariots in the second rank add +D3 Impact Hits to the chariots in the first rank.],
+  special-rules: [
 Chariots are subject to the following special rules:
 
 - Impact Hits (D6)
@@ -2867,25 +2736,15 @@ Chariots are subject to the following special rules:
 Some chariots are equipped with scythes which add +1 Impact Hits. This will be specified in their entry.
 
 Just as with cavalry, we assume that special rules that apply to the mounts do not normally also apply to the chariot or its crew, and vice versa. Remember though that there are exceptions, as detailed under the rules for cavalry.
+],
+  terrain: [Chariots have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills – see Battlefield Terrain for more details.],
+  unit-strength: [Chariots have a Unit Strength equal to their starting number of Wounds (unless specified) and add the number of additional crew and/or mounts purchased to their Unit Strength.],
+  line-of-sight: [Chariots have a Line of Sight value of 2.],
+)
 
-#namecost("TERRAIN", "")
-
-Chariots have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills – see Battlefield Terrain for more details.
-
-#namecost("UNIT STRENGTH", "")
-
-Chariots have a Unit Strength equal to their starting number of Wounds (unless specified) and add the number of additional crew and/or mounts purchased to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Chariots have a Line of Sight value of 2.
-
-== SHRINES
-
-The following rules apply to Shrines:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("SHRINES",
+  intro: [The following rules apply to Shrines:],
+  split-profile: [
 All the Split Profile rules for Cavalry rules apply to Shrines. In addition, the following rules apply:
 
 Unlike most other units, a shrine may join other units of Infantry (except Skirmishers) following the rules for Characters and Units in the characters chapter. However, they may choose in which rank they wish to be placed, rather than being required to being in the front rank.
@@ -2893,48 +2752,27 @@ Unlike most other units, a shrine may join other units of Infantry (except Skirm
 When moving, the shrine model uses its own Movement characteristic.
 
 The riders can shoot and cast magic missiles in 360° around them, rather than only firing at targets within their front arc.
+],
+  armour-saves: [Some shrines have an armour save detailed in their army list entry, which is combined with any armour the crew might have.],
+  character-mount: [Some characters can be mounted upon shrines. If a character has taken a shrine as a mount, the whole model is treated as having the troop type 'Shrine' and follows all the rules for both characters and Shrine models. If the Shrine includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.],
+  terrain: [Shrines have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills.],
+  unit-strength: [Shrines have a Unit Strength equal to their starting number of Wounds.],
+  line-of-sight: [Shrines have a Line of Sight value of 1.],
+)
 
-#namecost("ARMOUR SAVES", "")
-
-Some shrines have an armour save detailed in their army list entry, which is combined with any armour the crew might have.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can be mounted upon shrines. If a character has taken a shrine as a mount, the whole model is treated as having the troop type 'Shrine' and follows all the rules for both characters and Shrine models. If the Shrine includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.
-
-#namecost("TERRAIN", "")
-
-Shrines have to take Dangerous Terrain tests if they march, charge, flee or pursue over anything other than open ground or hills.
-
-#namecost("UNIT STRENGTH", "")
-
-Shrines have a Unit Strength equal to their starting number of Wounds.
-
-#namecost("LINE OF SIGHT", "")
-
-Shrines have a Line of Sight value of 1.
-
-== WAR MACHINES
-
-The following rules apply to War Machines:
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("WAR MACHINES",
+  intro: [The following rules apply to War Machines:],
+  special-rules: [
 War Machines are subject to the following special rules:
 
 - Cumbersome
 - Move or Fire
 
 Unless specified, any special rules a war machine might have apply to both the war machine and the crew. For further information on war machines, see the War Machines chapter.
-
-#namecost("UNIT STRENGTH", "")
-
-War machines have a Unit Strength equal to their current number of crew.
-
-#namecost("LINE OF SIGHT", "")
-
-War machines have a Line of Sight value of 1.
-
+],
+  unit-strength: [War machines have a Unit Strength equal to their current number of crew.],
+  line-of-sight: [War machines have a Line of Sight value of 1.],
+)
 = WAR MACHINES
 
 War machine models that do not have bases do not use the usual convention of measuring to the model's base. When measuring to and from the war machine, measure to or from the body of the machine, by which we mean the central part of the chassis or the weapon itself.
@@ -3026,6 +2864,7 @@ Artillery weapons instead often have a minimum range, such as 12\-48". This mean
 == CLOSE COMBAT
 
 == WEAPONS
+
 #namecost("HAND WEAPON", "")
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "-"))
 
@@ -3073,75 +2912,64 @@ Artillery weapons instead often have a minimum range, such as 12\-48". This mean
 #note[_\*Mounted model only. A model with a heavy lance gains +2 Initiative and Mighty Blow in turns that the model charges, and only against the unit they charged._]
 
 == MISSILE WEAPONS
-#namecost("SHORTBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "3", "March & Shoot, Multiple Shots (2)*, Volley Fire"))
 
-\*_Only applies in turns the model has not marched. Cannot be used as a charge reaction._
+#weapon("SHORTBOW", range: "16/24\"", strength: "3", rules: "March & Shoot, Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not marched. Cannot be used as a charge reaction._]
 
-#namecost("LONGBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "3", "Multiple Shots (2)*, Volley Fire"))
+#weapon("LONGBOW", range: "24/36\"", strength: "3", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("GREATBOW", range: "28/42\"", strength: "As user +1", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-#namecost("GREATBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("28/42\"", "As user +1", "Multiple Shots (2)*, Volley Fire"))
+#weapon("CROSSBOW", range: "24/36\"", strength: "4", rules: "Ponderous")[]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("HANDGUN", range: "12/24\"", strength: "5", rules: "Ponderous")[]
 
-#namecost("CROSSBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Ponderous"))
-#namecost("HANDGUN", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Ponderous"))
-#namecost("SLING", "")
-#minitable(("Range", "Strength", "Special Rules"), ("15/30\"", "3", "Armour Piercing (1), Volley Fire"))
-#namecost("JAVELINS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("10/15\"", "As user", "Armour Piercing (1), March & Shoot, Quick Shot"))
-#namecost("BLOWPIPE", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "2", "March & Shoot, Multiple Shots (3), Poisoned Attacks"))
-#namecost("PISTOL", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Multiple Shots (2)*, Quick Shot"))
+#weapon("SLING", range: "15/30\"", strength: "3", rules: "Armour Piercing (1), Volley Fire")[]
 
-#note[_\*Requires a brace of pistols._]
+#weapon("JAVELINS", range: "10/15\"", strength: "As user", rules: "Armour Piercing (1), March & Shoot, Quick Shot")[]
 
-#namecost("BLUNDERBUSS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "4", "Multiple Shots (3), Rapid Fire, Quick Shot"))
+#weapon("BLOWPIPE", range: "6/12\"", strength: "2", rules: "March & Shoot, Multiple Shots (3), Poisoned Attacks")[]
 
-#note[_Blunderbusses do not suffer a penalty To Hit for using Stand & Shoot as a charge reaction._]
+#weapon("PISTOL", range: "6/12\"", strength: "5", rules: "Multiple Shots (2)*, Quick Shot")[#note[_\*Requires a brace of pistols._]]
 
-#namecost("GRENADES", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "4", "Armour Piercing (1), March & Shoot, Quick Shot"))
+#weapon("BLUNDERBUSS", range: "6/12\"", strength: "4", rules: "Multiple Shots (3), Rapid Fire, Quick Shot")[#note[_Blunderbusses do not suffer a penalty To Hit for using Stand & Shoot as a charge reaction._]]
 
-#note[_Each Hit from a grenade is multiplied into D3 Hits._]
+#weapon("GRENADES", range: "6/9\"", strength: "4", rules: "Armour Piercing (1), March & Shoot, Quick Shot")[#note[_Each Hit from a grenade is multiplied into D3 Hits._]]
 
-#namecost("THROWING WEAPONS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "As user", "March & Shoot, Multiple Shots (2), Quick Shot"))
-#namecost("THROWING AXES", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "As user +1", "March & Shoot, Quick Shot"))
+#weapon("THROWING WEAPONS", range: "6/9\"", strength: "As user", rules: "March & Shoot, Multiple Shots (2), Quick Shot")[]
+
+#weapon("THROWING AXES", range: "6/9\"", strength: "As user +1", rules: "March & Shoot, Quick Shot")[]
+
 
 == ARMOUR
 
+
+
 You will notice that there are two values in two categories below. "Combat" indicates the armour save the model will receive against close combat attacks, templates and direct damage spells, and "missile" indicates the armour save the model will receive against normal shooting attacks and magic missiles. The first value indicates the armour save modifier each piece of armour gives to the model’s total armour save, whereas the second value is the basic armour save given to the model by that particular piece of equipment.
 
-#namecost("LIGHT ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))
-#namecost("MEDIUM ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+2/5+", "+2/5+", "-"))
-#namecost("HEAVY ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+3/4+", "+3/4+", "-"))
-#namecost("SHIELDS", "")
+#weapon("LIGHT ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))]
+
+#weapon("MEDIUM ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+2/5+", "+2/5+", "-"))]
+
+#weapon("HEAVY ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+3/4+", "+3/4+", "-"))]
+
+#weapon("SHIELDS")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+*", "Parry (6+)**"))
 
 #note[_\*Models on foot armed with shields get an additional +1 to their armour save against missile attacks to their front. Shields do not add any armour against missile attacks to the rear. \*\*Only applies if used with a hand weapon._]
+]
 
-#namecost("BUCKLER", "")
+#weapon("BUCKLER")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+*", "Parry (6+)**"))
 
 #note[_\*Only applies to models on foot against missile attacks to the front. \*\*Only applies if used with a hand weapon._]
+]
 
-#namecost("BARDING", "")
+#weapon("BARDING")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))
 
 #note[_Mounts with barding suffer \-1 to their Movement characteristic._]
+]
+
 
 == ARTILLERY
 
@@ -3316,7 +3144,6 @@ If an arrow is rolled on the scatter dice, resolve the scatter as normal. If how
 Other than the aforementioned inaccuracy of the scatter, an indirect shot from a trajectory weapon is treated exactly according to the rules given for normal shots given above.
 
 Note that a trajectory weapon that moves and fires the same turn is always considered to fire indirectly.
-
 = COMMAND GROUPS
 
 #namecost("FIELDING COMMAND GROUPS", "")
@@ -4294,50 +4121,28 @@ Each pitched battle contains the information you need to get set up and playing,
 
 This format governs all Warhammer scenarios – not just the ones found in this volume.
 
-== BATTLELINE
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BATTLELINE",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter.],
+  deployment: [
 Roll off to see which player picks the half of the table they will deploy in. The opponent will deploy in the other half.
 
 Players then take it in turn to place units on the table, using the alternating units method of deployment. Units may be placed anywhere in their deployment zone that is more than 12" from the centre line.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player takes the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player takes the first turn.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/3.11/img-0601.jpg", 0.762)
+],
+)
 
-== DAWN ATTACK
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the "Fighting a Battle" chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("DAWN ATTACK",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the "Fighting a Battle" chapter.],
+  deployment: [
 Roll off to see which player picks the half of the table they will deploy in. The opponent will deploy in the other half.
 
 The player that won the roll off must deploy their entire army first. Before deploying each unit, roll a dice and refer to the Deployment table to see where the unit must deploy.
@@ -4345,93 +4150,50 @@ The player that won the roll off must deploy their entire army first. Before dep
 Units with the Scouts special rule do not roll on the table, and deploy using their own special rules after normal deployment is complete. Characters may either deploy on their own, rolling on the table like any other unit, or deploy as part of a unit they are allowed to join (state that the character will join the unit before rolling to see where the unit and character will deploy).
 
 Once the first player has deployed, their opponent must do likewise, rolling for each unit as described above.
-
-#namecost("DEPLOYMENT TABLE", "")
-
-*D6 Result: 1 Left Flank.* The entire unit must be placed in the player's half, more than 12" from the centre line, and within 18" of the narrow table edge on the player's left. *2 Right Flank.* The entire unit must be placed in the player's half, more than 12" from the centre line, and within 18" of the narrow table edge on the player's right. *3\-5 Centre.* The entire unit must be placed in the player's half, more than 12" from the centre line, and more than 18" from either narrow table edge. *6 Choose.* The entire unit must be placed in the player's half, anywhere more than 12" from the centre line.
-
-#namecost("FIRST TURN", "")
-
-After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  deployment-table: [*D6 Result: 1 Left Flank.* The entire unit must be placed in the player's half, more than 12" from the centre line, and within 18" of the narrow table edge on the player's left. *2 Right Flank.* The entire unit must be placed in the player's half, more than 12" from the centre line, and within 18" of the narrow table edge on the player's right. *3\-5 Centre.* The entire unit must be placed in the player's half, more than 12" from the centre line, and more than 18" from either narrow table edge. *6 Choose.* The entire unit must be placed in the player's half, anywhere more than 12" from the centre line.],
+  first-turn: [After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/3.11/img-0603.jpg", 0.754)
+],
+)
 
-== BATTLE FOR THE PASS
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter. It's worth keeping in mind when setting up the terrain that the battle will be fought down the length of the table, in a narrow pass with impassable mountains just off each of the long table edges.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BATTLE FOR THE PASS",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter. It's worth keeping in mind when setting up the terrain that the battle will be fought down the length of the table, in a narrow pass with impassable mountains just off each of the long table edges.],
+  deployment: [
 Roll off to see which player picks the half of the table they want to deploy in. The opponent deploys in the other half. Note that in this pitched battle the game is fought down the length of the table rather than across its width, as shown on the deployment map below.
 
 Units may be placed anywhere in their half that is more than 12" from the centre line.
 
 Players take it in turn to place units on the table, using the alternating unit method of deployment.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player receives the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player receives the first turn.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 *Bottleneck:* The long table edges count as impassable terrain. Following the normal rules, fleeing units can force a way through the impassable terrain and disappear from the table. Other units (including reinforcements) may not enter or leave via a long table edge unless they are Ethereal or a Flyer. This means that pursuing or overrunning units, other than Ethereals and Flyers, must stop 1" away from the long table edges.
 
 #diagram("/assets/figures/rulebook/3.11/img-0605.jpg", 0.759)
+],
+)
 
-== BLOOD AND GLORY
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the "Fighting a Battle" chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BLOOD AND GLORY",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the "Fighting a Battle" chapter.],
+  deployment: [
 Roll off to see which player chooses the half of the table they will deploy in. The opponent will deploy in the other half. Players then take it in turns to place units on the table, using the alternating units method of deployment.
 
 Units may be placed anywhere in their half of the table that is more than 9" from the centre line, and more than 9" away from either narrow table edge.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player receives the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The game ends at the end of the 6th game turn or as soon as an army breaks. An army immediately breaks when its Fortitude is equal to or less than its Breaking Point (see below).
-
-#namecost("VICTORY CONDITIONS", "")
-
-The first army to break the enemy wins the battle (see above). If neither army has broken by the end of the game, or if both were to break simultaneously, use victory points to determine the winner.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player receives the first turn.],
+  game-length: [The game ends at the end of the 6th game turn or as soon as an army breaks. An army immediately breaks when its Fortitude is equal to or less than its Breaking Point (see below).],
+  victory-conditions: [The first army to break the enemy wins the battle (see above). If neither army has broken by the end of the game, or if both were to break simultaneously, use victory points to determine the winner.],
+  special-rules: [
 *Breaking Point:* An army's breaking point is equal to one for every thousand points in the army, rounding any fractions up. So, an army of up to 1,000 points has a breaking point of one, an army worth 1,001 to 2,000 points has a breaking point of two, etc.
 
 *Fortitude:* Any army's fortitude is equal to the current number of standards in the army (including the battle standard), plus two for the General. Fleeing units and units that are only temporarily off-table still count.
@@ -4439,78 +4201,47 @@ The first army to break the enemy wins the battle (see above). If neither army h
 For example, a 2,000 point army (breaking point 2) has three unit standards, a battle standard, and a General, giving it a starting fortitude of six (3 + 1 + 2=6). It would break as soon as its fortitude was reduced to two.
 
 #diagram("/assets/figures/rulebook/3.11/img-0607.jpg", 0.75)
+],
+)
 
-== MEETING ENGAGEMENT
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("MEETING ENGAGEMENT",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter.],
+  deployment: [
 In this scenario the table is divided into two halves from corner to corner, as shown on the deployment map. The players roll off and the winner chooses the two opposite corners to be used and which half of the table each player will deploy in.
 
 The player that won the roll-off must deploy their entire army first. Before deploying the army, roll a dice for each separate unit, including each individual character and war machine. On a roll of 1 the unit must be held back as reserves (see the special rules for Reserves on the right). After all units have been rolled for, those that are not reserves can be deployed in their side's deployment zone, anywhere that is more than 6" away from the centre line.
 
 Once the first player had deployed, their opponent does likewise, in exactly the same manner.
-
-#namecost("FIRST TURN", "")
-
-After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 *Reserves:* Reserves are not deployed at the start of the battle. Instead they can enter play on any turn of their player's choosing, using the reinforcements rules. They may enter at any point on the long table edge of their deployment zone.
 
 #diagram("/assets/figures/rulebook/3.11/img-0609.jpg", 0.762)
+],
+)
 
-== THE WATCHTOWER
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
+#scenario("THE WATCHTOWER",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [
 Set up the watchtower as described below, and then set up any remaining terrain using the method described under the “Fighting a Battle” chapter. The watchtower counts as the first of the terrain pieces that must be set up.
 
 A building must be set up at the centre of the table. Any building model can be used, but a Warhammer Watchtower is ideal. If you don't have a building model, use any other terrain feature of your choice.
-
-#namecost("DEPLOYMENT", "")
-
-Roll off to see who controls the watchtower at the start of the battle. The player that controls the tower may deploy a single Core infantry unit of no more than 20 models in the tower if they wish to do so. The unit is not allowed to voluntarily leave the tower until after the first game turn of the battle has been completed. The opposing player then picks the half of the table they will deploy in. Players then take it in turn to place units on the table, starting with the player that doesn't control the watchtower, using the alternating units method of deployment. Units may be placed anywhere in their half that is more than 12" from the centre line.
-
-#namecost("FIRST TURN", "")
-
-The player that does not control the watchtower receives the first turn.
-
-#namecost("GAME LENGTH", "")
-
-Roll a D6 at the end of each game turn, starting with the end of game turn 4. Add the turn number to the dice roll. If the score is 10 or more, then the battle ends immediately. If the total is less than 10 then the battle continues for at least one more game turn.
-
-#namecost("VICTORY CONDITIONS", "")
-
-At the end of the battle, the side that controls the watchtower is the winner. The watchtower is controlled by calculating the amount of Unit Strength of all units within 6" of it that are not fleeing on each side. Any unit garrisoning Watchtower counts as double their Unit Strength (to a maximum of +20) for this purpose. The side with the highest Unit Strength is the winner. In the unlikely event that neither player can claim to control the watchtower, use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  deployment: [Roll off to see who controls the watchtower at the start of the battle. The player that controls the tower may deploy a single Core infantry unit of no more than 20 models in the tower if they wish to do so. The unit is not allowed to voluntarily leave the tower until after the first game turn of the battle has been completed. The opposing player then picks the half of the table they will deploy in. Players then take it in turn to place units on the table, starting with the player that doesn't control the watchtower, using the alternating units method of deployment. Units may be placed anywhere in their half that is more than 12" from the centre line.],
+  first-turn: [The player that does not control the watchtower receives the first turn.],
+  game-length: [Roll a D6 at the end of each game turn, starting with the end of game turn 4. Add the turn number to the dice roll. If the score is 10 or more, then the battle ends immediately. If the total is less than 10 then the battle continues for at least one more game turn.],
+  victory-conditions: [At the end of the battle, the side that controls the watchtower is the winner. The watchtower is controlled by calculating the amount of Unit Strength of all units within 6" of it that are not fleeing on each side. Any unit garrisoning Watchtower counts as double their Unit Strength (to a maximum of +20) for this purpose. The side with the highest Unit Strength is the winner. In the unlikely event that neither player can claim to control the watchtower, use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/3.11/img-0611.jpg", 0.756)
-
-= MAGIC ITEMS
-
-=== SELECTING MAGIC ITEMS
+],
+)
+#magic-item-chapter(intro: [=== SELECTING MAGIC ITEMS
 
 Each Warhammer Armies book describes in detail the many different kinds of magic items that each army can use. Here we shall examine the magic items that are commonly used by all races. Where a model has the option of choosing one or more magic items, it will be clearly stated in their army list entry, as will any restrictions on the magic items they can take.
 
@@ -4522,198 +4253,113 @@ Magic items are considered to be unique – you can only have one of each in you
 
 === BALANCE OF POWER
 
-Each model can normally only carry one of each type of magic item. Magic items are divided into six categories: Magic Weapons, Magic Armour, Talismans, Enchanted Items, Arcane Items and Magic Standards. A model can only ever choose one item from each category, unless specified.
+Each model can normally only carry one of each type of magic item. Magic items are divided into six categories: Magic Weapons, Magic Armour, Talismans, Enchanted Items, Arcane Items and Magic Standards. A model can only ever choose one item from each category, unless specified.])
 
-== MAGIC WEAPONS
-
+#magic-item-section("weapon", first: true, intro: [
 Unless otherwise stated, a magic weapon is treated as a hand weapon (replacing the model's regular hand weapon), and follows the rules for such. This means that a magic weapon can be used with both an additional hand weapon or shield/buckler following their normal rules. In the case of non-magical additional hand weapons, the +1 Attack does not benefit from any special rules from the magic weapon.
 
 In order for a model to be able to choose a particular piece of weapon (such as great weapon, polearm or two hand weapons) they must be able to pick this as a mundane option or have it as part of their default equipment, unless it is specified. Note that magic weapons that count as normal hand weapons may be taken by any model that can choose magic weapons.
 
 A character that has a magic close combat weapon cannot use any other close combat weapons. If a character has more than one magic weapon, they must choose which one to use at the start of the combat (unless a rule specifies that both can be used at the same time) – the chosen weapon must be used for the duration of the combat.
+])[
+#magic-weapon("GIANT BLADE", 45)[The wielder gains +3 Strength.]
 
-#namecost("GIANT BLADE", "45 points")
+#magic-weapon("SWORD OF BLOODSHED", 45)[The wielder gains +3 Attacks.]
 
-The wielder gains +3 Strength.
+#magic-weapon("SWORD OF POWER", 30)[The wielder gains +2 Strength.]
 
-#namecost("SWORD OF BLOODSHED", "45 points")
+#magic-weapon("SWORD OF STRIFE", 30)[The wielder gains +2 Attacks.]
 
-The wielder gains +3 Attacks.
+#magic-weapon("SWORD OF SWIFT SLAYING", 25)[The wielder gains the Always Strikes First special rule.]
 
-#namecost("SWORD OF POWER", "30 points")
+#magic-weapon("PARRYING BLADE", 20)[The wielder gains the Parry (5+) special rule.]
 
-The wielder gains +2 Strength.
+#magic-weapon("BLADE OF SEA GOLD", 15)[The wielder gains the Armour Piercing (3) special rule.]
 
-#namecost("SWORD OF STRIFE", "30 points")
+#magic-weapon("OGRE BLADE", 15)[The wielder gains the Multiple Wounds (D3) special rule.]
 
-The wielder gains +2 Attacks.
+#magic-weapon("HEADSMAN'S AXE", 15)[The wielder gains the Killing Blow special rule.]
 
-#namecost("SWORD OF SWIFT SLAYING", "25 points")
+#magic-weapon("SWORD OF STRIKING*", 15)[The wielder gains +1 To Hit.]
 
-The wielder gains the Always Strikes First special rule.
+#magic-weapon("SWORD OF MIGHT*", 15)[The wielder gains +1 Strength.]
 
-#namecost("PARRYING BLADE", "20 points")
+#magic-weapon("SWORD OF BATTLE*", 15)[The wielder gains +1 Attack.]
 
-The wielder gains the Parry (5+) special rule.
+#magic-weapon("SHRIEKING BLADE", 15)[The wielder gains the Fear special rule.]
 
-#namecost("BLADE OF SEA GOLD", "15 points")
+#magic-weapon("BERSERKER SWORD", 10)[The wielder gains the Frenzy special rule and can never lose their Frenzy.]
 
-The wielder gains the Armour Piercing (3) special rule.
+#magic-weapon("BLADE OF SLICING", 10)[The wielder gains the Armour Piercing (2) special rule.]
 
-#namecost("OGRE BLADE", "15 points")
+#magic-weapon("VENOM SWORD", 10)[The wielder gains the Poisoned Attacks special rule.]
 
-The wielder gains the Multiple Wounds (D3) special rule.
+#magic-weapon("BITING BLADE*", 5)[The wielder gains the Armour Piercing (1) special rule.]
 
-#namecost("HEADSMAN'S AXE", "15 points")
+#magic-weapon("BURNING BLADE*", 5)[The wielder gains the Flaming Attacks special rule.]
+]
 
-The wielder gains the Killing Blow special rule.
-
-#namecost("SWORD OF STRIKING*", "15 points")
-
-The wielder gains +1 To Hit.
-
-#namecost("SWORD OF MIGHT*", "15 points")
-
-The wielder gains +1 Strength.
-
-#namecost("SWORD OF BATTLE*", "15 points")
-
-The wielder gains +1 Attack.
-
-#namecost("SHRIEKING BLADE", "15 points")
-
-The wielder gains the Fear special rule.
-
-#namecost("BERSERKER SWORD", "10 points")
-
-The wielder gains the Frenzy special rule and can never lose their Frenzy.
-
-#namecost("BLADE OF SLICING", "10 points")
-
-The wielder gains the Armour Piercing (2) special rule.
-
-#namecost("VENOM SWORD", "10 points")
-
-The wielder gains the Poisoned Attacks special rule.
-
-#namecost("BITING BLADE*", "5 points")
-
-The wielder gains the Armour Piercing (1) special rule.
-
-#namecost("BURNING BLADE*", "5 points")
-
-The wielder gains the Flaming Attacks special rule.
-
-== MAGIC ARMOUR
-
+#magic-item-section("armour", intro: [
 Except where otherwise stated, magical suits of armour (light, medium or heavy) and bucklers/shields follow the same rules as mundane ones, but keep in mind that a model can only have one suit of armour and one buckler/shield, so if you give a model a magical suit of armour or a magical shield, it replaces any mundane equivalent already worn by the model.
 
 In order for a model to be able to choose a particular piece of armour (such as heavy armour or a shield) they must be able to pick this as a mundane option or have it as part of their default equipment.
 
 Magic armours that are not specified as suits or shields (such as helmets, gauntlets and so on) can always be worn by models that are allowed to wear any non- magical armour.
+])[
+#magic-armour("ARMOUR OF DESTINY", 60)[Heavy armour. The wearer gains the Magical Ward (4+) special rule.]
 
-#namecost("ARMOUR OF DESTINY", "60 points")
+#magic-armour("ARMOUR OF RESILIENCE", 40)[Heavy armour. The wearer gains +1 Toughness.]
 
-Heavy armour. The wearer gains the Magical Ward (4+) special rule.
+#magic-armour("ARMOUR OF SILVERED STEEL", 40)[Heavy armour. The wearer gains a 2+ armour save.]
 
-#namecost("ARMOUR OF RESILIENCE", "40 points")
+#magic-armour("ARMOUR OF FORTUNE", 35)[Medium armour. The wearer gains the Magical Ward (5+) special rule.]
 
-Heavy armour. The wearer gains +1 Toughness.
+#magic-armour("TRICKSTER'S HELM", 30)[Infantry, Monstrous Infantry or Cavalry only. The helmet gives the wearer a 6+ armour save. Any successful roll To Wound made against the wearer of the Trickster's Helm must be re-rolled.]
 
-#namecost("ARMOUR OF SILVERED STEEL", "40 points")
+#magic-armour("GLITTERING SCALES", 25)[Light armour. Enemy models suffer \-1 To Hit the wearer in close combat.]
 
-Heavy armour. The wearer gains a 2+ armour save.
+#magic-armour("SEAMLESS ARMOUR", 25)[Medium armour. This armour ignores negative modifiers to its save, meaning it cannot be reduced below 5+.]
 
-#namecost("ARMOUR OF FORTUNE", "35 points")
+#magic-armour("ALLEVIATING ARMOUR", 20)[Medium armour. The bearer gains the Regeneration (6+) special rule.]
 
-Medium armour. The wearer gains the Magical Ward (5+) special rule.
+#magic-armour("GAMBLER'S ARMOUR", 20)[Light armour. The wearer gains the Magical Ward (6+) special rule.]
 
-#namecost("TRICKSTER'S HELM", "30 points")
+#magic-armour("BEDAZZLING HELM", 20)[The helmet gives the wearer a 6+ armour save. Enemy models targeting the wearer in close combat must re- roll 6's To Hit against them.]
 
-Infantry, Monstrous Infantry or Cavalry only. The helmet gives the wearer a 6+ armour save. Any successful roll To Wound made against the wearer of the Trickster's Helm must be re-rolled.
+#magic-armour("SHIELD OF THE WARRIOR TRUE", 15)[Shield. The bearer gains the Magical Ward (5+) special rule against missile attacks.]
 
-#namecost("GLITTERING SCALES", "25 points")
+#magic-armour("DRAGONHELM", 10)[The helmet gives the wearer a 6+ armour save and the Immunity (Flaming Attacks) special rule.]
 
-Light armour. Enemy models suffer \-1 To Hit the wearer in close combat.
+#magic-armour("ENCHANTED SHIELD*", 10)[Shield. The bearer gains an additional +1 to their armour save against attacks to the front arc.]
 
-#namecost("SEAMLESS ARMOUR", "25 points")
+#magic-armour("CHARMED SHIELD*", 5)[Shield. One use only. The first hit suffered by the bearer is ignored on a roll of 2+.]
+]
 
-Medium armour. This armour ignores negative modifiers to its save, meaning it cannot be reduced below 5+.
-
-#namecost("ALLEVIATING ARMOUR", "20 points")
-
-Medium armour. The bearer gains the Regeneration (6+) special rule.
-
-#namecost("GAMBLER'S ARMOUR", "20 points")
-
-Light armour. The wearer gains the Magical Ward (6+) special rule.
-
-#namecost("BEDAZZLING HELM", "20 points")
-
-The helmet gives the wearer a 6+ armour save. Enemy models targeting the wearer in close combat must re- roll 6's To Hit against them.
-
-#namecost("SHIELD OF THE WARRIOR TRUE", "15 points")
-
-Shield. The bearer gains the Magical Ward (5+) special rule against missile attacks.
-
-#namecost("DRAGONHELM", "10 points")
-
-The helmet gives the wearer a 6+ armour save and the Immunity (Flaming Attacks) special rule.
-
-#namecost("ENCHANTED SHIELD*", "10 points")
-
-Shield. The bearer gains an additional +1 to their armour save against attacks to the front arc.
-
-#namecost("CHARMED SHIELD*", "5 points")
-
-Shield. One use only. The first hit suffered by the bearer is ignored on a roll of 2+.
-
-== TALISMANS
-
+#magic-item-section("talisman", intro: [
 The Talismans category includes items that offer protection for the bearer.
+])[
+#talisman("TALISMAN OF PRESERVATION", 40)[The bearer gains the Magical Ward (4+) special rule.]
 
-#namecost("TALISMAN OF PRESERVATION", "40 points")
+#talisman("OBSIDIAN LODESTONE", 30)[The bearer and any unit they join gain the Magic Resistance (3) special rule.]
 
-The bearer gains the Magical Ward (4+) special rule.
+#talisman("TALISMAN OF ENDURANCE", 25)[The bearer gains the Magical Ward (5+) special rule.]
 
-#namecost("OBSIDIAN LODESTONE", "30 points")
+#talisman("OBSIDIAN AMULET", 20)[The bearer and any unit they join gain the Magic Resistance (2) special rule.]
 
-The bearer and any unit they join gain the Magic Resistance (3) special rule.
+#talisman("DAWNSTONE*", 15)[Infantry, Monstrous Infantry or Cavalry only. The bearer may re-roll 1's when taking armour saves.]
 
-#namecost("TALISMAN OF ENDURANCE", "25 points")
+#talisman("OPAL AMULET*", 15)[One use only. The bearer gains the Magical Ward (2+) special rule against the first unsaved wound suffered by the bearer.]
 
-The bearer gains the Magical Ward (5+) special rule.
+#talisman("OBSIDIAN TRINKET*", 10)[The bearer and any unit they join gain the Magic Resistance (1) special rule.]
 
-#namecost("OBSIDIAN AMULET", "20 points")
+#talisman("SEED OF REBIRTH*", 10)[The bearer gains the Regeneration (6+) special rule.]
 
-The bearer and any unit they join gain the Magic Resistance (2) special rule.
+#talisman("TALISMAN OF PROTECTION*", 10)[The bearer gains the Magical Ward (6+) special rule.]
 
-#namecost("DAWNSTONE*", "15 points")
+#talisman("LUCKY TRINKET*", 5)[One use only. The bearer may re-roll a single failed armour or invulnerable save.]
+]
 
-Infantry, Monstrous Infantry or Cavalry only. The bearer may re-roll 1's when taking armour saves.
-
-#namecost("OPAL AMULET*", "15 points")
-
-One use only. The bearer gains the Magical Ward (2+) special rule against the first unsaved wound suffered by the bearer.
-
-#namecost("OBSIDIAN TRINKET*", "10 points")
-
-The bearer and any unit they join gain the Magic Resistance (1) special rule.
-
-#namecost("SEED OF REBIRTH*", "10 points")
-
-The bearer gains the Regeneration (6+) special rule.
-
-#namecost("TALISMAN OF PROTECTION*", "10 points")
-
-The bearer gains the Magical Ward (6+) special rule.
-
-#namecost("LUCKY TRINKET*", "5 points")
-
-One use only. The bearer may re-roll a single failed armour or invulnerable save.
-
-== ARCANE ITEMS
-
+#magic-item-section("arcane", intro: [
 Only a character with a Wizard level can carry Arcane Items. Unlike other magic item types, Wizards may take several Arcane Items, chosen from the categories below. A Wizard may not take more than one item from the same category.
 
 *Staffs* cover things like wands, staves, rods and sceptres, and usually provide bonuses to casting or dispelling.
@@ -4721,177 +4367,97 @@ Only a character with a Wizard level can carry Arcane Items. Unlike other magic 
 *Charms* include scrolls, stones and gems, and provide temporary effects with a limited number of uses.
 
 *Relics* include tomes, cloaks, rings and familiars, and provide magical abilities or utility effects.
+])[
+#arcane-item("WAND OF THE WINDS", 40)[Staff. The bearer of this item may re-roll one D3 when determining the Winds of Magic in each Magic phase.]
 
-#namecost("WAND OF THE WINDS", "40 points")
+#arcane-item("DESTROY MAGIC SCROLL", 35)[Charm. One use only. When an enemy cast a spell, the bearer may immediately counter its effects by using this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). In addition, roll a D6. On a 4+, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game.]
 
-Staff. The bearer of this item may re-roll one D3 when determining the Winds of Magic in each Magic phase.
+#arcane-item("FEEDBACK SCROLL", 35)[Charm. One use only. When an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard suffer 1 Wound which Ignores Armour Saves for every result of 5+ rolled.]
 
-#namecost("DESTROY MAGIC SCROLL", "35 points")
+#arcane-item("DISPEL SCROLL", 25)[Charm. One use only. When an enemy spell has been cast, the bearer can use it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that Remains in Play.]
 
-Charm. One use only. When an enemy cast a spell, the bearer may immediately counter its effects by using this item instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). In addition, roll a D6. On a 4+, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game.
+#arcane-item("SCROLL OF LEACHING", 25)[Charm. One use only. When an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell.]
 
-#namecost("FEEDBACK SCROLL", "35 points")
+#arcane-item("POWER FAMILIAR", 25)[Relic. The Familiar adds one Power Dice in each of your Magic phases.]
 
-Charm. One use only. When an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard suffer 1 Wound which Ignores Armour Saves for every result of 5+ rolled.
+#arcane-item("WAND OF JADE", 25)[Staff. The bearer gains +6" casting range to their spells (excluding auras).]
 
-#namecost("DISPEL SCROLL", "25 points")
+#arcane-item("WAND OF JET", 25)[Staff. The bearer gains +6" dispel range.]
 
-Charm. One use only. When an enemy spell has been cast, the bearer can use it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that Remains in Play.
+#arcane-item("CHANNELLING STAFF", 20)[Staff. The bearer rolls one additional dice whenever they attempt to channel power or dispel dice.]
 
-#namecost("SCROLL OF LEACHING", "25 points")
+#arcane-item("FORBIDDEN ROD", 20)[Staff. One use only. The Forbidden Rod adds +D6 dice to the power pool at the start of the caster's own Magic phase. However, it also inflicts 1 Wound which Ignores Armour Saves on the bearer.]
 
-Charm. One use only. When an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell.
+#arcane-item("WAND OF ONYX", 20)[Staff. The bearer gains a +1 casting bonus.]
 
-#namecost("POWER FAMILIAR", "25 points")
+#arcane-item("SCEPTRE OF STABILITY", 20)[Staff. The bearer gains a +1 dispel bonus.]
 
-Relic. The Familiar adds one Power Dice in each of your Magic phases.
+#arcane-item("ARCANE FAMILIAR*", 15)[Relic. The bearer can choose one Signature spell as an additional spell from any of the eight Winds of Magic in this book, even if they normally cannot choose that lore.]
 
-#namecost("WAND OF JADE", "25 points")
+#arcane-item("EARTHING ROD*", 15)[Staff. One use only. If the bearer suffers a miscast, they do not add the number of power dice used to the result.]
 
-Staff. The bearer gains +6" casting range to their spells (excluding auras).
+#arcane-item("POWER SCROLL*", 15)[Charm. One use only. This item can be used before the bearer makes a casting attempt. During that casting attempt, any roll of a double (except 1's) counts as a 6 for the purpose of resolving Ultimate Power.]
 
-#namecost("WAND OF JET", "25 points")
+#arcane-item("LUCKSTONE*", 10)[Charm. One use only. The bearer can re-roll all of the dice rolled to cast or dispel a spell. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.]
 
-Staff. The bearer gains +6" dispel range.
+#arcane-item("POWER STONE*", 10)[Charm. One use only. The bearer can declare that they are using the power stone immediately before casting a spell. If they do so, +D3 dice are added to the power dice that they are going to roll (you still need to roll at least one dice from the power pool). This allows a Wizard to use more than they are normally allowed to.]
 
-#namecost("CHANNELLING STAFF", "20 points")
+#arcane-item("SCROLL OF SHIELDING*", 10)[Charm. One use only. This item can be used when an enemy attempts to cast a spell targeting one of your units within dispel range. The target is granted Magic Resistance (3) against the spell.]
 
-Staff. The bearer rolls one additional dice whenever they attempt to channel power or dispel dice.
+#arcane-item("SPELL FAMILIAR*", 10)[Relic. The bearer knows one additional spell from those normally allowed to them.]
+]
 
-#namecost("FORBIDDEN ROD", "20 points")
-
-Staff. One use only. The Forbidden Rod adds +D6 dice to the power pool at the start of the caster's own Magic phase. However, it also inflicts 1 Wound which Ignores Armour Saves on the bearer.
-
-#namecost("WAND OF ONYX", "20 points")
-
-Staff. The bearer gains a +1 casting bonus.
-
-#namecost("SCEPTRE OF STABILITY", "20 points")
-
-Staff. The bearer gains a +1 dispel bonus.
-
-#namecost("ARCANE FAMILIAR*", "15 points")
-
-Relic. The bearer can choose one Signature spell as an additional spell from any of the eight Winds of Magic in this book, even if they normally cannot choose that lore.
-
-#namecost("EARTHING ROD*", "15 points")
-
-Staff. One use only. If the bearer suffers a miscast, they do not add the number of power dice used to the result.
-
-#namecost("POWER SCROLL*", "15 points")
-
-Charm. One use only. This item can be used before the bearer makes a casting attempt. During that casting attempt, any roll of a double (except 1's) counts as a 6 for the purpose of resolving Ultimate Power.
-
-#namecost("LUCKSTONE*", "10 points")
-
-Charm. One use only. The bearer can re-roll all of the dice rolled to cast or dispel a spell. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.
-
-#namecost("POWER STONE*", "10 points")
-
-Charm. One use only. The bearer can declare that they are using the power stone immediately before casting a spell. If they do so, +D3 dice are added to the power dice that they are going to roll (you still need to roll at least one dice from the power pool). This allows a Wizard to use more than they are normally allowed to.
-
-#namecost("SCROLL OF SHIELDING*", "10 points")
-
-Charm. One use only. This item can be used when an enemy attempts to cast a spell targeting one of your units within dispel range. The target is granted Magic Resistance (3) against the spell.
-
-#namecost("SPELL FAMILIAR*", "10 points")
-
-Relic. The bearer knows one additional spell from those normally allowed to them.
-
-== ENCHANTED ITEMS
-
+#magic-item-section("enchanted", intro: [
 The Enchanted Items category includes items that typically offer a utility ability for either the bearer or any unit they are with.
+])[
+#enchanted-item("RUBY RING OF RUIN", 35)[Bound spell. The Ruby Ring of Ruin contains the _Fireball_ spell from the Lore of Fire.]
 
-#namecost("RUBY RING OF RUIN", "35 points")
+#enchanted-item("BOOTS OF FLIGHT", 20)[Infantry only. The Boots of Flight give the wearer the Movement 10 and the Strider special rule.]
 
-Bound spell. The Ruby Ring of Ruin contains the _Fireball_ spell from the Lore of Fire.
+#enchanted-item("CROWN OF COMMAND", 20)[The Crown of Command gives the bearer and any unit they join the Disciplined special rule for as long as the bearer remains with the unit.]
 
-#namecost("BOOTS OF FLIGHT", "20 points")
+#enchanted-item("HEALING POTION*", 15)[One use only. The Healing Potion can be drunk at the start of the controlling player's turn. The model immediately recovers D3 Wounds (ignoring any additional Wounds from mounts) up to their starting value.]
 
-Infantry only. The Boots of Flight give the wearer the Movement 10 and the Strider special rule.
+#enchanted-item("POTION OF STRENGTH*", 10)[One use only. The Potion of Strength can be used at the start of any phase. The character gains +D3 Strength until the end of the turn.]
 
-#namecost("CROWN OF COMMAND", "20 points")
+#enchanted-item("POTION OF TOUGHNESS*", 10)[One use only. The Potion of Toughness can be used at the start of any phase. The character gains +D3 Toughness until the end of the turn.]
 
-The Crown of Command gives the bearer and any unit they join the Disciplined special rule for as long as the bearer remains with the unit.
+#enchanted-item("POTION OF SPEED*", 10)[One use only. The Potion of Speed can be used at the start of any phase. The character gains +D3 Attacks until the end of the turn.]
 
-#namecost("HEALING POTION*", "15 points")
+#enchanted-item("POTION OF FOOLHARDINESS*", 5)[One use only. The Potion of Foolhardiness can be drunk at the start of any phase. The character gains the Frenzy special rule until the end of the turn.]
 
-One use only. The Healing Potion can be drunk at the start of the controlling player's turn. The model immediately recovers D3 Wounds (ignoring any additional Wounds from mounts) up to their starting value.
+#enchanted-item("WARRIOR FAMILIAR*", 5)[The model gains an additional Strength 3 Attack. This does not benefit from any weapon, item or special rule used by the character. You may still take another Enchanted Item in addition to the Warrior Familiar, and it also does not count against the maximum points limit of magic items normally allowed for the character.]
+]
 
-#namecost("POTION OF STRENGTH*", "10 points")
-
-One use only. The Potion of Strength can be used at the start of any phase. The character gains +D3 Strength until the end of the turn.
-
-#namecost("POTION OF TOUGHNESS*", "10 points")
-
-One use only. The Potion of Toughness can be used at the start of any phase. The character gains +D3 Toughness until the end of the turn.
-
-#namecost("POTION OF SPEED*", "10 points")
-
-One use only. The Potion of Speed can be used at the start of any phase. The character gains +D3 Attacks until the end of the turn.
-
-#namecost("POTION OF FOOLHARDINESS*", "5 points")
-
-One use only. The Potion of Foolhardiness can be drunk at the start of any phase. The character gains the Frenzy special rule until the end of the turn.
-
-#namecost("WARRIOR FAMILIAR*", "5 points")
-
-The model gains an additional Strength 3 Attack. This does not benefit from any weapon, item or special rule used by the character. You may still take another Enchanted Item in addition to the Warrior Familiar, and it also does not count against the maximum points limit of magic items normally allowed for the character.
-
-== MAGIC STANDARDS
-
+#magic-item-section("standard", intro: [
 Some units are allowed to carry magic banners, as detailed in their army list entry. The only character permitted to carry a Magic Standard is the army's battle Standard Bearer.
 
 Standards can only be carried by a standard bearer, as shown in the army list in the relevant Warhammer Armies book.
+])[
+#magic-standard("BANNER OF DEFIANCE", 25)[A unit with this standard gains the Stubborn special rule.]
 
-#namecost("BANNER OF DEFIANCE", "25 points")
+#magic-standard("BANNER OF IRON RESOLVE", 25)[A unit with this standard gains the Immunity (Psychology) special rule.]
 
-A unit with this standard gains the Stubborn special rule.
+#magic-standard("RAMPAGER'S STANDARD", 25)[A unit with this standard can re-roll its charge distance dice.]
 
-#namecost("BANNER OF IRON RESOLVE", "25 points")
+#magic-standard("BANNER OF SWIFTNESS", 25)[A unit with this standard gains the Swiftstride special rule.]
 
-A unit with this standard gains the Immunity (Psychology) special rule.
+#magic-standard("RAZOR STANDARD", 25)[A unit with this standard gains the Armour Piercing (1) special rule.]
 
-#namecost("RAMPAGER'S STANDARD", "25 points")
+#magic-standard("RANGER'S STANDARD", 20)[A unit with this standard gains the Strider special rule.]
 
-A unit with this standard can re-roll its charge distance dice.
+#magic-standard("BANNER OF ETERNAL FLAME", 15)[A unit with this standard gains the Magical Attacks and Flaming Attacks special rules.]
 
-#namecost("BANNER OF SWIFTNESS", "25 points")
+#magic-standard("STANDARD OF DISCIPLINE", 15)[A unit with this standard has +1 Leadership, but cannot use the Inspiring Presence special rule. If a model with this special rule joins this unit, other units using their Inspiring Presence do not benefit from the +1 Leadership.]
 
-A unit with this standard gains the Swiftstride special rule.
+#magic-standard("STANDARD OF SHIELDING", 15)[A unit with this standard gains the Magical Ward (6+) special rule against missile attacks.]
 
-#namecost("RAZOR STANDARD", "25 points")
+#magic-standard("WAR BANNER*", 15)[A unit with this standard adds +1 to combat resolution.]
 
-A unit with this standard gains the Armour Piercing (1) special rule.
+#magic-standard("LICHBONE PENNANT*", 10)[A unit with this standard gains the Magic Resistance (1) special rule.]
 
-#namecost("RANGER'S STANDARD", "20 points")
-
-A unit with this standard gains the Strider special rule.
-
-#namecost("BANNER OF ETERNAL FLAME", "15 points")
-
-A unit with this standard gains the Magical Attacks and Flaming Attacks special rules.
-
-#namecost("STANDARD OF DISCIPLINE", "15 points")
-
-A unit with this standard has +1 Leadership, but cannot use the Inspiring Presence special rule. If a model with this special rule joins this unit, other units using their Inspiring Presence do not benefit from the +1 Leadership.
-
-#namecost("STANDARD OF SHIELDING", "15 points")
-
-A unit with this standard gains the Magical Ward (6+) special rule against missile attacks.
-
-#namecost("WAR BANNER*", "15 points")
-
-A unit with this standard adds +1 to combat resolution.
-
-#namecost("LICHBONE PENNANT*", "10 points")
-
-A unit with this standard gains the Magic Resistance (1) special rule.
-
-#namecost("GLEAMING PENNANT*", "5 points")
-
-One use only. A unit with this standard can re-roll one failed Leadership test.
-
+#magic-standard("GLEAMING PENNANT*", 5)[One use only. A unit with this standard can re-roll one failed Leadership test.]
+]
 #lore("THE LORE OF FIRE")[
 
 #spell("KINDLEFLAME", "Lore Attribute")[All of the spells in the Lore of Fire are Flaming Attacks. In addition, if a spell from the Lore of Fire inflicts hits on an enemy unit that has already been hit by a spell from the Lore of Fire in the same Magic phase (even if the spell was cast by a different Wizard) the spell inflicts an additional D3 Strength 4 hits on the unit.]
@@ -5143,49 +4709,6 @@ Remains in play. _Throne of Vines_ is an *augment* spell cast upon the Wizard. W
 
 #spell("THE PURPLE SUN OF XEREUS", 4, cast: "15+")[Remains in play. _The Purple Sun of Xereus_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must roll a D6 per Wound on their profile – on a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
 ]
-= OUR CHANGES
-
-This edition is the Warhammer Armies Project text with the changes below applied to it. Everything not listed here is unchanged. Each entry gives the rule as it was written, the rule as it now stands, and why it was changed.
-
-#namecost("Wizards know one spell more than their level", "MAGIC · WIZARDS & SPELLS")
-
-A Level 1 Wizard with a single spell is entirely predictable: the opponent knows what is coming, saves a dispel die for it, and the model spends the game as an expensive banner. One spell more gives every Wizard a choice to make in each Magic phase, and the lores can carry it — each has three spells at every level, so even a Level 1 Wizard picking two is choosing rather than taking what is left.
-
-#field("Was", "")
-
-#note[Each Wizard may choose a number of spells equal to their level.]
-
-#field("Now", "")
-
-Each Wizard may choose a number of spells equal to their level plus one. Any Signature spell they know is in addition to these, as described below.
-
-#namecost("Armies of Infamy", "CHOOSING YOUR ARMY")
-
-A book that wants to offer a second composition of itself has nowhere to say so, and no words to say it in. Moving an entry between categories, withholding one, adding one, laying a rule over the whole army: the rules already understand every part of what such a list does, and what was missing was permission to do all of it at once. One clause could not have been written in an army book at all. The minimum an army must spend on Core is set here, so only here can a list change what counts towards it.
-
-#field("Was", "")
-
-#note[Nothing. The rulebook had no notion of an alternative composition, so a book offering one had nowhere to define what it was.]
-
-#field("Now", "")
-
-*Some books offer a second way of building a force from them, called an Army of Infamy.*
-
-An Army of Infamy is chosen in place of the book's ordinary list rather than alongside it. It may move entries from one category to another, refuse you entries the book otherwise allows, add entries of its own, and lay one or more rules over the whole army. It may also change which units count towards the minimum an army must spend on Core units. Everything in the book that the Army of Infamy does not change applies as it is written.
-
-Both players should know which composition each army is using before deployment.
-
-#namecost("Cold-Blooded works on any Leadership test", "SPECIAL RULES · COLD-BLOODED")
-
-The rule named two kinds of test where it meant the category both belong to. A Psychology test is _a form of Leadership test_ by this book's own definition, and a Break test is one as well — the Break Test section opens "the losing unit in a combat must pass a Leadership test or flee". Naming members of a set invites the question of what happens at the ones left unnamed, so the rule now names the set.
-
-#field("Was", "")
-
-#note[takes a Psychology or Break test]
-
-#field("Now", "")
-
-takes a Leadership test
 
 = PROPOSALS
 

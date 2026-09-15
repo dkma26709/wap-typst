@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          # The covers live in Git LFS; the compile reads the real PNGs.
+          lfs: true
 
       - uses: typst-community/setup-typst@v5
 
@@ -28,9 +31,8 @@ jobs:
         run: |
           mkdir -p _site
           count=0
-          # emit.py writes build/render.json from the extraction manifest and the
-          # edition manifest together, so this loop covers both without needing
-          # to know which is which.
+          # emit.py writes build/render.json from the books in src/, so a book
+          # that is there is a book this loop compiles.
           for id in $(jq -r '.[].id' build/render.json); do
             echo "::group::$id"
             # An id is the book's path under src/ - `lizardmen/3.0` - so the
@@ -39,12 +41,14 @@ jobs:
             # Bundled fonts only, so the CI render matches the local one exactly.
             typst compile --ignore-system-fonts --root . \
               "src/$id.typ" "_site/$id.pdf"
-            # The cover keeps the source image's own extension. An edition shares
-            # the cover of the book it derives from, and so lists none of its own.
+            # The cover is the army's, not the book's, so it publishes once at
+            # the path every book of that army names. `cp -n` because several
+            # books name the same one and the picture runs to megabytes.
             cover=$(jq -r --arg i "$id" \
               '.[] | select(.id==$i) | .cover // empty' build/render.json)
             if [ -n "$cover" ] && [ -f "assets/$cover" ]; then
-              cp "assets/$cover" "_site/$id-cover.${cover##*.}"
+              mkdir -p "$(dirname "_site/$cover")"
+              cp -n "assets/$cover" "_site/$cover"
             fi
             count=$((count + 1))
             echo "::endgroup::"

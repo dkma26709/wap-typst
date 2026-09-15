@@ -199,13 +199,15 @@ def main() -> None:
             covers.mkdir(parents=True, exist_ok=True)
             src = args.build / data["image_dir"] / data["cover"]
             if src.exists():
-                # Keyed the way the book is - army then version - because two
-                # versions of one army have two covers and the same slug.
-                # Keep the source's own extension: images are copied without
+                # Keyed by ARMY, not by version: the illustration is the
+                # faction's, and every version of an army shares it. Keep the
+                # source's own extension - images are copied without
                 # re-encoding, and Typst picks the decoder from the suffix.
-                name = f"{slug}/{version}{src.suffix}"
-                (covers / name).parent.mkdir(parents=True, exist_ok=True)
-                (covers / name).write_bytes(src.read_bytes())
+                # An import does not overwrite art already held, which would
+                # otherwise let a newly imported version quietly replace it.
+                name = f"{slug}{src.suffix}"
+                if not (covers / name).exists():
+                    (covers / name).write_bytes(src.read_bytes())
                 cover_rel = f"covers/{name}"
 
         # Diagrams the book actually places, copied out of the extraction

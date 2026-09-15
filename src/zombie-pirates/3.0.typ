@@ -12,7 +12,7 @@
   army: "Zombie Pirates",
   version: "3.0",
   layout: "army",
-  cover: "covers/zombie-pirates/3.0.png",
+  cover: "covers/zombie-pirates.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Zombie Pirates",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/zombie-pirates/3.0.png",
+  art: "/assets/covers/zombie-pirates.png",
 )
 
 #colophon((
@@ -45,49 +45,48 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Zombie Pirate army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Zombie Pirate units, and these are detailed here.
-
-#namecost("THE GENERALS OF UNDEATH", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Zombie Pirate army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Zombie Pirate units, and these are detailed here.])[
+#upgrade("THE GENERALS OF UNDEATH", none)[
 If your army contains any Undead units, you must include at least one character that is a Wizard that uses the Lore of Necromancy.
+]
 
-#namecost("Slain General", "")
-
+#upgrade("Slain General", none)[
 At the end of the phase in which the General is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units on the battlefield must take a Leadership test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the Leadership test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack.
 
 If, at the start of any of your turns following the death of the General, there is one or more friendly Wizard Characters on the table who know spells from the Lore of Necromancy, no unit in the army needs to take this Leadership test while at least one of them remain.
+]
 
-#namecost("Battle Standards", "")
-
+#upgrade("Battle Standards", none)[
 In addition to the normal rules for the army Battle Standard, units of Undead within 12" of their Battle Standard suffer D3 Wounds less than they normally would due to the Unstable special rule, or following the death of the Army General.
+]
 
-#namecost("Characters and Units", "")
-
+#upgrade("Characters and Units", none)[
 Characters who are not Undead may join Undead units despite not being Unstable themselves. Mounted Characters ignore the Undead special rule of the mount. If an Undead unit would get destroyed as a result of Unstable, any remaining character(s) will need to take a Break test as normal the same phase, using the Leadership modifier that they lost the combat by.
+]
 
-#namecost("THE RED THIRST", "")
-
+#upgrade("THE RED THIRST", none)[
 Roll a D6 at the end of each Close Combat phase in which one or more models was slain by a Vampire with this special rule. On a 5+, the Vampire recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
+]
 
-#namecost("UNDEAD", "")
-
+#upgrade("UNDEAD", none)[
 All models with the Undead special rule have the Animated Construct, Fear, and Unstable special rules. In addition, they ignore the Independent special rule. However, they may make march moves if they are within the Army General's Inspiring Presence range or are joined by a character with the Lore of Necromancy.
+]
 
-#namecost("VAMPIRIC", "")
-
+#upgrade("VAMPIRIC", none)[
 Models with the Vampiric special rule have the Fear and Immunity (Psychology) special rules. In addition, models suffer a \-1 penalty To Wound rolls against them, unless they are using Magical Attacks or Flaming Attacks. However, Vampiric models treat all rivers as Deadly Terrain unless they are mounted.
+]
 
-#namecost("WATERLOGGED WEAPONS", "")
-
+#upgrade("WATERLOGGED WEAPONS", none)[
 Models with this special rule must roll a D6 for every To Hit roll of 1 with missile weapons that they make. On a 1\-3, resolve the Hit against the model itself. Artillery weapons deduct 1 from the result rolled on the Blackpowder Misfire Chart.
+]
 
-#namecost("SWIVEL GUN", "")
+#upgrade("SWIVEL GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("18/36\"", "6", "Multiple Wounds (D3), Ponderous"))
-#namecost("VOLLEY GUN", "")
+]
+
+#upgrade("VOLLEY GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (D6), Ponderous, Rapid Fire"))
+]
 ]
 
 #lore("THE LORE OF NECROMANCY")[
@@ -150,82 +149,42 @@ Models with this special rule must roll a D6 for every To Hit roll of 1 with mis
 
 #spell("VORPAL MAELSTROM", 4, cast: "13+")[_Vorpal Maelstrom_ is a *direct damage* spell. Place the large template anywhere within 18" of the Wizard; it then scatters D6". All models under the template suffer a Strength Hit equal to their Unit Strength plus 2. In addition, any surviving models will have their Movement value lowered by half until the start of the caster's next Magic Phase.]
 ]
-= VAMPIRIC POWERS
+#upgrade-chapter("VAMPIRIC POWERS", intro: [*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*])[
+#upgrade("RED FURY", 30)[For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.]
 
-#columns(2)[
-*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*
+#upgrade("UNHOLY REGENERATION", 30)[The model gains the Regeneration (4+) special rule.]
 
-#namecost("RED FURY", "30 points")
+#upgrade("CURSE OF THE REVENANT", 20)[The model has a 3+ invulnerable save when they have a single Wound remaining (if the model suffers multiple Wounds in a single turn, it is reduced to 1 Wound and may then attempt to take this invulnerable save).]
 
-For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.
+#upgrade("FOG OF DECEPTION", 20)[The Vampire and any unit they are in may re-deploy themselves wholly within 12" from their original location after all other units have been positioned, but before Scouts are placed on the table.]
 
-#namecost("UNHOLY REGENERATION", "30 points")
+#upgrade("FEAR INCARNATE", 20)[All enemy units in base contact with the model must pass a Leadership test at the start of each round of close combat or suffer \-1 To Hit this round.]
 
-The model gains the Regeneration (4+) special rule.
+#upgrade("FLYING HORROR", 20, only: "Model on foot")[Thе model gains the Fly (10) special rule.]
 
-#namecost("CURSE OF THE REVENANT", "20 points")
+#upgrade("VOICES FROM THE DEEP", 20)[When casting spells from the Lore of the Deep, the model may add a +D3 casting bonus once per Magic phase.]
 
-The model has a 3+ invulnerable save when they have a single Wound remaining (if the model suffers multiple Wounds in a single turn, it is reduced to 1 Wound and may then attempt to take this invulnerable save).
+#upgrade("FAR-REACHING WILL", 15)[The Vampire allows one unit of Zombie Deckhands to deploy as Ambushers.]
 
-#namecost("FOG OF DECEPTION", "20 points")
+#upgrade("SUPERNATURAL HORROR", 15)[The model gains the Terror special rule.]
 
-The Vampire and any unit they are in may re-deploy themselves wholly within 12" from their original location after all other units have been positioned, but before Scouts are placed on the table.
+#upgrade("SWASHBUCKLER", 15, only: "Model on foot")[The model has the Parry (6+) special rule. Whenever the model rolls a natural 6 when taking a Parry save, it automatically inflicts an extra Hit back onto the model or unit that struck the blow.]
 
-#namecost("FEAR INCARNATE", "20 points")
+#upgrade("TAUNTING CURSES", 15)[Whenever the Vampire successfully casts one or more spells on an enemy unit, that unit suffers \-1 to their Leadership until the start of your next Magic phase. In addition, when the Vampire issues a challenge, nominate an enemy character in the same close combat. That model must pass a Leadership test or be forced to accept the challenge.]
 
-All enemy units in base contact with the model must pass a Leadership test at the start of each round of close combat or suffer \-1 To Hit this round.
+#upgrade("TRANSFIX", 15)[At the beginning of the Close Combat phase, select one model in base contact with the Vampire. The victim must pass a Leadership test or be unable to attack in that Close Combat phase and all attacks directed against the victim will hit automatically.]
 
-#namecost("FLYING HORROR", "20 points")
+#upgrade("HORNSWAGGLE", 10)[At the beginning of the Close combat phase, roll a D6; on a 4+ the enemy unit will suffer \-1 to their Weapon Skill until the beginning of the next Close combat phase.]
 
-Model on foot only. Thе model gains the Fly (10) special rule.
+#upgrade("STORMCALL", 10)[The Vampire gains the _Storm of Cronos_ spell from the Lore of Heavens as a Bound Spell.]
 
-#namecost("VOICES FROM THE DEEP", "20 points")
+#upgrade("UNBENDING WILLPOWER", 10)[Units of Undead within 6" of one or more models with this power suffer one less Wound than they normally would due to the Unstable special rule or following the death of the army's General. Note that this is not cumulative with the Battle Standard.]
 
-When casting spells from the Lore of the Deep, the model may add a +D3 casting bonus once per Magic phase.
+#upgrade("WHARF RATS", 10)[All enemy units in base contact with the Vampire suffer D6 Strength 1 Attacks with the Always Strikes Last and Poisoned Attacks special rules in each round of Close Combat.]
 
-#namecost("FAR-REACHING WILL", "15 points")
+#upgrade("CLOYING MISTS", 5)[Enemy models in base contact with the model are reduced to Initiative 1.]
 
-The Vampire allows one unit of Zombie Deckhands to deploy as Ambushers.
-
-#namecost("SUPERNATURAL HORROR", "15 points")
-
-The model gains the Terror special rule.
-
-#namecost("SWASHBUCKLER", "15 points")
-
-Model on foot only. The model has the Parry (6+) special rule. Whenever the model rolls a natural 6 when taking a Parry save, it automatically inflicts an extra Hit back onto the model or unit that struck the blow.
-
-#namecost("TAUNTING CURSES", "15 points")
-
-Whenever the Vampire successfully casts one or more spells on an enemy unit, that unit suffers \-1 to their Leadership until the start of your next Magic phase. In addition, when the Vampire issues a challenge, nominate an enemy character in the same close combat. That model must pass a Leadership test or be forced to accept the challenge.
-
-#namecost("TRANSFIX", "15 points")
-
-At the beginning of the Close Combat phase, select one model in base contact with the Vampire. The victim must pass a Leadership test or be unable to attack in that Close Combat phase and all attacks directed against the victim will hit automatically.
-
-#namecost("HORNSWAGGLE", "10 points")
-
-At the beginning of the Close combat phase, roll a D6; on a 4+ the enemy unit will suffer \-1 to their Weapon Skill until the beginning of the next Close combat phase.
-
-#namecost("STORMCALL", "10 points")
-
-The Vampire gains the _Storm of Cronos_ spell from the Lore of Heavens as a Bound Spell.
-
-#namecost("UNBENDING WILLPOWER", "10 points")
-
-Units of Undead within 6" of one or more models with this power suffer one less Wound than they normally would due to the Unstable special rule or following the death of the army's General. Note that this is not cumulative with the Battle Standard.
-
-#namecost("WHARF RATS", "10 points")
-
-All enemy units in base contact with the Vampire suffer D6 Strength 1 Attacks with the Always Strikes Last and Poisoned Attacks special rules in each round of Close Combat.
-
-#namecost("CLOYING MISTS", "5 points")
-
-Enemy models in base contact with the model are reduced to Initiative 1.
-
-#namecost("HONOUR OR DEATH", "5 points")
-
-At the start of a challenge, the enemy character selected to take on the Vampire must take a Leadership test before any blows are struck. If failed, the enemy model will fight with Weapon Skill 1 for the remainder of the turn.
+#upgrade("HONOUR OR DEATH", 5)[At the start of a challenge, the enemy character selected to take on the Vampire must take a Leadership test before any blows are struck. If failed, the enemy model will fight with Weapon Skill 1 for the remainder of the turn.]
 ]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Zombie Pirates. These may be used in addition to the magic items found in the Warhammer rulebook.])
@@ -927,19 +886,14 @@ He may choose spells from both Lores in any combination as he wishes.
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

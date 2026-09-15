@@ -12,6 +12,7 @@
   army: "The Empire",
   version: "1.6",
   layout: "army",
+  cover: "covers/empire.png",
   align: "order",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "The Empire",
   subtitle: "Warhammer Armies Project · 1.6",
-  art: none,
+  art: "/assets/covers/empire.png",
 )
 
 #colophon((
@@ -44,13 +45,8 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in an Empire army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Empire units, and these are detailed here.
-
-#namecost("STATE TROOPS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Empire army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Empire units, and these are detailed here.])[
+#upgrade("STATE TROOPS", none)[
 State Troops are trained to support and protect each other in battle. If an enemy unit declares a charge against a State Troop unit, and that unit does not flee as a charge reaction, then all unengaged State Troop units within 3" can make either a *Support Fire* or a *Counter Charge* action by passing a Leadership test (which can be re-rolled if the unit has a Leader). These actions are declared immediately after their State Troops' charge reaction. If the charged State Troops unit does not get a charge reaction for any reason then the other State Troops units within range cannot make a Support Fire or a Counter Charge action.
 
 Additionally, a State Troop unit can only declare one Support Fire action, one Stand and Shoot reaction or one Counter Charge action per turn.
@@ -62,33 +58,39 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
 - *Counter Charge:* A State Troop unit can declare a Counter Charge against an enemy unit's unengaged arc, after your opponent has moved all of their charging units, as long as one or more enemy units has successfully completed a charge against the charged State Troop unit. If a Counter Charge action is declared, the unit makes an out of sequence move that is resolved as it had just declared a charge against the charging unit. The enemy does not get to make any charge reactions against a Counter Charge, but otherwise all the normal charging rules and bonuses apply.
 
 #diagram("/assets/figures/empire/1.6/img-0195.jpg", 0.463)
-#namecost("CAVALRY HAMMER", "")
+]
 
+#upgrade("CAVALRY HAMMER", none)[
 Cavalry hammers use the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Armour Piercing (1), Requires Two Hands"))
-#namecost("FULL PLATE ARMOUR", "")
+]
 
+#upgrade("FULL PLATE ARMOUR", none)[
 Full plate armour has the following armour profile:
 
 #minitable(("Combat", "Missile", "Special Rules"), ("+4/3+", "+4/3+", "-"))
-#namecost("GRENADE LAUNCHING BLUNDERBUSS", "")
+]
 
+#upgrade("GRENADE LAUNCHING BLUNDERBUSS", none)[
 Grenade launching blunderbusses have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18\"", "6", "Armour Piercing (1), Move or Fire, Ponderous"))
-#namecost("HOCHLAND LONG RIFLE", "")
+]
 
+#upgrade("HOCHLAND LONG RIFLE", none)[
 Hochland long rifles have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "4", "Armour Piercing (1), Ponderous, Sniper"))
-#namecost("REPEATER HANDGUN", "")
+]
 
+#upgrade("REPEATER HANDGUN", none)[
 Repeater handguns have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "4", "Armour Piercing (1), Multiple Shots (3), Ponderous, Rapid Fire"))
-#namecost("REPEATER PISTOL", "")
+]
 
+#upgrade("REPEATER PISTOL", none)[
 Repeater pistols have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Armour Piercing (1), Multiple Shots (3), Quick to Fire, Rapid Fire"))
@@ -97,335 +99,175 @@ Repeater pistols have the following profile:
 
 #note[_A repeater pistol can be used in combination with a regular pistol as a brace of pistols, in which case they fire Multiple Shots (4), but do not have Rapid Fire._]
 ]
-
-= KNIGHTLY ORDERS
-
-#columns(2)[
+]
+#upgrade-chapter("KNIGHTLY ORDERS")[
 *Units of Knights be upgraded to any one of the Knightly Orders below as detailed in the army list. A Grand Master or Chapter Master may only join a unit that belongs to the same Knightly Order. You may only field one Grand Master for each Knightly Order. Grand Masters and Chapter Masters must either be armed with a hand weapon or the same equipment as the rest of their unit.*
 
-#namecost("REIKSGUARD KNIGHTS", "")
-#namecost("Characters free", "")
-#namecost("Cavalry/Infantry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
+#upgrade("REIKSGUARD KNIGHTS", (("Characters", "free"), ("Cavalry/Infantry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms if mounted. The models have the Stubborn special rule. However, they may not take a regular Grand Master.]
 
-Must take heavy lances or polearms if mounted. The models have the Stubborn special rule. However, they may not take a regular Grand Master.
+#upgrade("KNIGHTS OF THE BLAZING SUN", (("Characters", "free"), ("Cavalry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms. Whenever a unit where the majority of models have this upgrade declare a charge, the unit being charged suffer \-1 Weapon Skill and Ballistic Skill for the duration of the turn.]
 
-#namecost("KNIGHTS OF THE BLAZING SUN", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
+#upgrade("KNIGHTS PANTHER", (("Characters", "free"), ("Cavalry", "1 point per model")))[Must take heavy lances or polearms. A unit where all models have this upgrade add an extra D3" to their charge distance.]
 
-Must take heavy lances or polearms. Whenever a unit where the majority of models have this upgrade declare a charge, the unit being charged suffer \-1 Weapon Skill and Ballistic Skill for the duration of the turn.
+#upgrade("KNIGHTS OF THE WHITE WOLF", (("Characters", "5 points"), ("Cavalry", "1 point per model")))[Must take cavalry hammers. The models have the Hatred special rule against enemy models with a lower Weapon Skill, Strength, Toughness or Leadership characteristic than they have. In addition, they have the Natural Armour (6+) special rule against missile attacks.]
 
-#namecost("KNIGHTS PANTHER", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
+#upgrade("BLACK GUARD OF MORR", (("Characters", "free"), ("Cavalry/Infantry", "1 point per model")))[Must take polearms on foot. The models have the Fear and Loner special rules.]
 
-Must take heavy lances or polearms. A unit where all models have this upgrade add an extra D3" to their charge distance.
+#upgrade("KNIGHTS GRIFFON", (("Characters", "free"), ("Cavalry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms. The unit may attempt to use a Swift Reform at the start of the turn instead of the Remaining Moves sub-phase. However, they will halve their Charge distance that turn if they do so. In addition, they may not choose Flee as a charge reaction, refuse a challenge and ignore Swiftstride when fleeing. KNIGHTS OF THE EVERLASTING LIGHT]
 
-#namecost("KNIGHTS OF THE WHITE WOLF", "")
-#namecost("Characters", "5 points")
-#namecost("Cavalry 1 point per model", "")
-
-Must take cavalry hammers. The models have the Hatred special rule against enemy models with a lower Weapon Skill, Strength, Toughness or Leadership characteristic than they have. In addition, they have the Natural Armour (6+) special rule against missile attacks.
-
-#namecost("BLACK GUARD OF MORR", "")
-#namecost("Characters free", "")
-#namecost("Cavalry/Infantry 1 point per model", "")
-
-Must take polearms on foot. The models have the Fear and Loner special rules.
-
-#namecost("KNIGHTS GRIFFON", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
-
-Must take heavy lances or polearms. The unit may attempt to use a Swift Reform at the start of the turn instead of the Remaining Moves sub-phase. However, they will halve their Charge distance that turn if they do so. In addition, they may not choose Flee as a charge reaction, refuse a challenge and ignore Swiftstride when fleeing. KNIGHTS OF THE EVERLASTING LIGHT
-
-#namecost("Characters", "10 points")
-#namecost("Cavalry 1 point per model", "")
-
-Must take heavy lances or great weapons. The models gain the Magical Attacks special rule and may re-roll failed armour saves in close combat. However, they must re-roll successful armour saves from missile attacks and successful Dangerous Terrain tests.
-
-#namecost("KNIGHTS OF SIGMAR'S BLOOD", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-
-Must take heavy lances or polearms. The models have the Inspiring Presence (6) special rule. However, they may not be upgraded to Inner Circle Knights.
-
-#namecost("KNIGHTS OF THE BLACK BEAR", "")
-#namecost("Characters free", "")
-#namecost("Cavalry free", "")
-
-Must take heavy lances or polearms. This unit always counts as having one more rank than it actually has for the purpose of determining Steadfast, and enemy units cannot claim the Outnumber bonus against it. However, it must re-roll successful Leadership tests for Marching when within 8" of enemy units, Redirecting a Charge, Reforming from Defeat after losing a round of close combat, Restraining from Pursuit or Swift Reform.
-
-#namecost("KNIGHTS OF THE TWIN-TAILED ORB", "")
-#namecost("Characters", "15 points")
-#namecost("Cavalry 2 points per model", "")
-
-The unit is armed with flails instead of heavy lances. The models have the Flaming Attacks and Frenzy special rules.
-
-#namecost("KNIGHTS ENCARMINE", "")
-#namecost("Characters", "10 points")
-#namecost("Cavalry free", "")
-
-The unit is armed with two hand weapons instead of heavy lances. The models may re-roll 1's To Hit in close combat and can Parry while mounted. However, they cannot gain any bonus from ranks (including Steadfast) or Disrupt enemy units.
-
-#namecost("SONS OF MANANN", "")
-#namecost("Characters", "15 points")
-#namecost("Cavalry 2 points per model", "")
-
-The unit is armed with polearms & shields instead of heavy lances. The models (but not their mounts) gain +1 To Hit in the first round of close combat.
+#upgrade("Characters", 10)[
 ]
 
-= MAGIC ITEMS
+#upgrade("Cavalry 1 point per model", none)[Must take heavy lances or great weapons. The models gain the Magical Attacks special rule and may re-roll failed armour saves in close combat. However, they must re-roll successful armour saves from missile attacks and successful Dangerous Terrain tests.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Empire. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#upgrade("KNIGHTS OF SIGMAR'S BLOOD", (("Characters", "free"), ("Cavalry", "1 point per model")))[Must take heavy lances or polearms. The models have the Inspiring Presence (6) special rule. However, they may not be upgraded to Inner Circle Knights.]
 
-#entry("MAGIC WEAPONS")
-#namecost("RUNEFANG", "60 points")
+#upgrade("KNIGHTS OF THE BLACK BEAR", (("Characters", "free"), ("Cavalry", "free")))[Must take heavy lances or polearms. This unit always counts as having one more rank than it actually has for the purpose of determining Steadfast, and enemy units cannot claim the Outnumber bonus against it. However, it must re-roll successful Leadership tests for Marching when within 8" of enemy units, Redirecting a Charge, Reforming from Defeat after losing a round of close combat, Restraining from Pursuit or Swift Reform.]
 
-Imperial General only. All hits from a Runefang wound automatically and Ignores Armour saves.
+#upgrade("KNIGHTS OF THE TWIN-TAILED ORB", (("Characters", "15 points"), ("Cavalry", "2 points per model")))[The unit is armed with flails instead of heavy lances. The models have the Flaming Attacks and Frenzy special rules.]
 
-#namecost("SWORD OF SIGISMUND", "40 points")
+#upgrade("KNIGHTS ENCARMINE", (("Characters", "10 points"), ("Cavalry", "free")))[The unit is armed with two hand weapons instead of heavy lances. The models may re-roll 1's To Hit in close combat and can Parry while mounted. However, they cannot gain any bonus from ranks (including Steadfast) or Disrupt enemy units.]
 
-The Sword of Sigismund gives the wielder +1 Strength and the Always Strikes First special rule.
+#upgrade("SONS OF MANANN", (("Characters", "15 points"), ("Cavalry", "2 points per model")))[The unit is armed with polearms & shields instead of heavy lances. The models (but not their mounts) gain +1 To Hit in the first round of close combat.]
+]
 
-#namecost("DAEMONSLAYER BLADE", "35 points")
+#magic-item-chapter(intro: [*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Empire. These may be used in addition to the magic items found in the Warhammer rulebook.*])
 
-Against Daemons, all attacks made with the Daemonslayer Blade gain +1 To Wound with the Multiple Wounds (D3) special rule.
+#magic-item-section("weapon", first: true)[
+#magic-weapon("RUNEFANG", 60)[Imperial General only. All hits from a Runefang wound automatically and Ignores Armour saves.]
 
-#namecost("SPEAR OF THE HIEROPHANT", "35 points")
+#magic-weapon("SWORD OF SIGISMUND", 40)[The Sword of Sigismund gives the wielder +1 Strength and the Always Strikes First special rule.]
 
-Light lance/spear. Against Daemons, Undead and Vampires, all attacks made with the Spear of the Hierophant gain +1 Strength and any successful Ward Saves must be re-rolled.
+#magic-weapon("DAEMONSLAYER BLADE", 35)[Against Daemons, all attacks made with the Daemonslayer Blade gain +1 To Wound with the Multiple Wounds (D3) special rule.]
 
-#namecost("SWORD OF FATE", "35 points")
+#magic-weapon("SPEAR OF THE HIEROPHANT", 35)[Light lance/spear. Against Daemons, Undead and Vampires, all attacks made with the Spear of the Hierophant gain +1 Strength and any successful Ward Saves must be re-rolled.]
 
-At the beginning of the battle, nominate one enemy Character; Monstrous Creature or Monster. The Sword of Fate will Wound that model on a 2+ with the Ignores Armour Saves and Multiple Wounds (D3) special rules.
+#magic-weapon("SWORD OF FATE", 35)[At the beginning of the battle, nominate one enemy Character; Monstrous Creature or Monster. The Sword of Fate will Wound that model on a 2+ with the Ignores Armour Saves and Multiple Wounds (D3) special rules.]
 
-#namecost("SWORD OF POWER", "35 points")
+#magic-weapon("SWORD OF POWER", 35)[The Sword of Power gives the wielder +2 Strength and the Armour Piercing (1) special rule.]
 
-The Sword of Power gives the wielder +2 Strength and the Armour Piercing (1) special rule.
+#magic-weapon("THE GRIFFON CLAW", 20)[The Griffon Claw gives the model +1 To Hit in close combat as well as the Armour Piercing (1) special rule.]
 
-#namecost("THE GRIFFON CLAW", "20 points")
+#magic-weapon("HAMMER OF JUDGEMENT", 20)[Models hit by the Hammer of Judgement must take a Toughness test for every Hit suffered. If the test is failed, the Hit Wounds automatically with the Ignores Armour Saves special rule. If the test is passed, roll to Wound and take armour saves as normal.]
 
-The Griffon Claw gives the model +1 To Hit in close combat as well as the Armour Piercing (1) special rule.
+#magic-weapon("THE MACE OF HELSTURM", 20)[Great weapon. Instead of attacking normally, the bearer can choose to forfeit all of his normal Attacks to make a single, special Attack. If this Attack hits, it is resolved at Strength 10 and has both the Flaming Attacks and Multiple Wounds (D3) special rules.]
 
-#namecost("HAMMER OF JUDGEMENT", "20 points")
+#magic-weapon("SWORD OF RIGHTEOUS STEEL", 20)[The Sword of Righteous Steel makes the wielder always Hit any opponent on roll of a 2+. In addition, any successful Parry saves must be re-rolled.]
 
-Models hit by the Hammer of Judgement must take a Toughness test for every Hit suffered. If the test is failed, the Hit Wounds automatically with the Ignores Armour Saves special rule. If the test is passed, roll to Wound and take armour saves as normal.
+#magic-weapon("BLESSED SWORD", 10)[All failed To Hit rolls made with the Blessed Sword may be re-rolled.]
 
-#namecost("THE MACE OF HELSTURM", "20 points")
+#magic-weapon("WYRMSLAYER SWORD", 10)[The Wyrmslayer Sword makes the wielder Wound on a 4+ or better, and ignores Natural Armour.]
+]
 
-Great weapon. Instead of attacking normally, the bearer can choose to forfeit all of his normal Attacks to make a single, special Attack. If this Attack hits, it is resolved at Strength 10 and has both the Flaming Attacks and Multiple Wounds (D3) special rules.
+#magic-item-section("armour")[
+#magic-armour("THE ARMOUR OF METEORIC IRON", 40)[The Armour of Meteoric Iron grants the wearer both a 1+ armour save and a 6+ Ward save.]
 
-#namecost("SWORD OF RIGHTEOUS STEEL", "20 points")
+#magic-armour("ARMOUR OF TARNUS", 35)[Light armour. The Armour of Tarnus gives the wearer a 5+ Ward Save. In addition, this armour can be chosen by Wizards even though they are not normally allowed to wear armour.]
 
-The Sword of Righteous Steel makes the wielder always Hit any opponent on roll of a 2+. In addition, any successful Parry saves must be re-rolled.
+#magic-armour("SHIELD OF THE MEDUSA", 10)[Shield. At the start of each round of close combat, the Shield of the Medusa causes one enemy model in base contact of your choosing to suffer a \-1 penalty to their Attack characteristic for the remainder of the close combat phase.]
+]
 
-#namecost("BLESSED SWORD", "10 points")
+#magic-item-section("talisman")[
+#talisman("SHROUD OF MAGNUS", 60)[This item gives the bearer a 5+ Ward save and the Magic Resistance (2) special rule. In addition, any unit joined by the character wearing the Shroud gain Immunity (Fear, Terror).]
 
-All failed To Hit rolls made with the Blessed Sword may be re-rolled.
+#talisman("AMULET OF THRICE-BLESSED COPPER", 35)[All enemy attacks targeting the model wearing the Amulet of Thrice-Blessed Copper suffer \-1 To Wound. In addition, the bearer gains the Immunity (Poisoned Attacks) special rule.]
 
-#namecost("WYRMSLAYER SWORD", "10 points")
+#talisman("ICON OF SIGMAR", 20)[Arch Lector only. The Icon of Sigmar gives its bearer +1 Toughness.]
 
-The Wyrmslayer Sword makes the wielder Wound on a 4+ or better, and ignores Natural Armour.
+#talisman("JADE AMULET", 20)[The Jade Amulet allows the wearer to ignore the first wounding Hit they suffer (after saves).]
 
-#entry("MAGIC ARMOUR")
-#namecost("THE ARMOUR OF METEORIC IRON", "40 points")
+#talisman("THE CRIMSON AMULET", 20)[The Crimson Amulet gives the wearer a 6+ Ward Save. In addition, they automatically pass any Characteristic tests they have to take.]
 
-The Armour of Meteoric Iron grants the wearer both a 1+ armour save and a 6+ Ward save.
+#talisman("SIGIL OF SIGMAR", 10)[The Sigil of Sigmar gives the bearer a 4+ Ward save against all enemy spells.]
+]
 
-#namecost("ARMOUR OF TARNUS", "35 points")
+#magic-item-section("arcane")[
+#arcane-item("GREY WAND", 40)[The Grey Wand gives the wielder a +D3 casting bonus. Roll for each spell casting attempt.]
 
-Light armour. The Armour of Tarnus gives the wearer a 5+ Ward Save. In addition, this armour can be chosen by Wizards even though they are not normally allowed to wear armour.
+#arcane-item("CHALICE OF FATE", 35)[The Chalice of Fate allows the Wizard to re-roll failed Channelling rolls.]
 
-#namecost("SHIELD OF THE MEDUSA", "10 points")
+#arcane-item("SEAL OF DESTRUCTION", 15)[One use only. After the bearer of the Seal of Destruction manages to successfully dispel an enemy spell, they may choose to use the Seal. If they do so, roll a D6. On a 4+, the spell cannot be used by that Wizard for the rest of the game.]
 
-Shield. At the start of each round of close combat, the Shield of the Medusa causes one enemy model in base contact of your choosing to suffer a \-1 penalty to their Attack characteristic for the remainder of the close combat phase.
+#arcane-item("SHEMTEK'S GRIMOIRE", 15)[One use only. This item can be used at the start of any enemy Magic Phase. Roll a D3, the result is the casting penalty all enemy Wizards suffer for the duration of this Magic Phase.]
 
-#entry("TALISMANS")
-#namecost("SHROUD OF MAGNUS", "60 points")
+#arcane-item("CRYSTAL BALL", 5)[The Crystal Ball allows the wearer to pick one enemy unit anywhere on the table at the start of each of your turns. Your opponent must reveal all Magic Items, Hidden models and the like that unit might have.]
+]
 
-This item gives the bearer a 5+ Ward save and the Magic Resistance (2) special rule. In addition, any unit joined by the character wearing the Shroud gain Immunity (Fear, Terror).
+#magic-item-section("enchanted")[
+#enchanted-item("VAN HORSTMANN'S SPECULUM", 35)[When the wearer fights in a challenge, he must 'swap' the Weapon Skill, Strength, Toughness, Initiative and Attacks characteristics on his profile with his enemy (but not the enemy's mount, if he has one). So, the wearer fights with his enemy's Strength, Toughness, Initiative and Attacks whilst his enemy fights with the wearer's Strength, Toughness, Initiative and Attacks. Note that you cannot choose not to use Van Horstmann's Speculum and you must swap all of the listed characteristics for the duration of the challenge, not just some of them.]
 
-#namecost("AMULET OF THRICE-BLESSED", "")
-#namecost("COPPER", "35 points")
+#enchanted-item("ALDRED'S CASKET OF SORCERY", 35)[Bound Spell (power level variable). At the start of each of his Magic phases, the bearer may remove and capture one randomly determined spell from an enemy Wizard within 12" of him on a roll of 4+. The bearer can then cast the captured spell in any of his own Magic phases by releasing it from the casket just like from a Bound Spell, whereupon the spell is then removed from the game. Any number of spells may be captured by the casket, and the bearer can cast each one once, either over several magic phases or all at the same time if they prefer. The power level of the spell cast by the casket will be equivalent to the normal casting value of the spell.]
 
-All enemy attacks targeting the model wearing the Amulet of Thrice-Blessed Copper suffer \-1 To Wound. In addition, the bearer gains the Immunity (Poisoned Attacks) special rule.
+#enchanted-item("DOOMFIRE RING", 35)[Bound Spell, Power Level 6. The Doomfire Ring contains the _Burning Head_ spell from the Lore of Fire.]
 
-#namecost("ICON OF SIGMAR", "20 points")
+#enchanted-item("EICHELBAUM'S SCROLL", 30)[Witch Hunter only. Once per turn, when an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell by using dispel dice. This gives them 3 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. This may also be used to dispel spells that Remains in Play. However, if the dispel attempt fails, the scroll is destroyed and cannot be used for the remainder of the battle.]
 
-Arch Lector only. The Icon of Sigmar gives its bearer +1 Toughness.
+#enchanted-item("HELSTURM'S STAFF", 30)[Arch Lector only. The model carrying Helsturm's Staff and any unit they join gain the Cold-blooded special rule.]
 
-#namecost("JADE AMULET", "20 points")
+#enchanted-item("BALESTORM ORB", 25)[Witch Hunter only. Enemy Wizards within 24" of the bearer suffer a \-1 penalty to cast spell.]
 
-The Jade Amulet allows the wearer to ignore the first wounding Hit they suffer (after saves).
+#enchanted-item("BRAZIER OF HOLY FLAME", 25)[The bearer of this item gains the Hold Your Ground (6) special rule.]
 
-#namecost("THE CRIMSON AMULET", "20 points")
+#enchanted-item("BLESSED SILVER HAMMER", 20)[Any enemy model with the Daemonic, Undead or Vampiric special rule in base contact suffers a Strength 4 Hit at the start of each round of close combat.]
 
-The Crimson Amulet gives the wearer a 6+ Ward Save. In addition, they automatically pass any Characteristic tests they have to take.
+#enchanted-item("RING OF ST. HORST", 20)[The model carrying the Ring of St. Horst and any unit they join may re-roll any failed Leadership test.]
 
-#namecost("SIGIL OF SIGMAR", "10 points")
+#enchanted-item("RING OF VOLANS", 20)[One use only. Bound Spell (power level variable). At the beginning of the game, choose one spells from any of the eight Winds of Magic as if the bearer were a Level 1 Wizard. That spell is bound within the Ring of Volans is automatically cast with a power level equal to the normal casting value of the spell, no power dice are required.]
 
-The Sigil of Sigmar gives the bearer a 4+ Ward save against all enemy spells.
+#enchanted-item("BOOK OF UNCOMMON PRAYER", 15)[The bearer may re-roll one dice when taking Leadership tests to use Battle Prayers of Sigmar.]
 
-#entry("ARCANE ITEMS")
-#namecost("GREY WAND", "40 points")
+#enchanted-item("BOOTS OF BOVVA", 15)[Model on foot only. The model wearing the Boots of Boova gains the Stomp special rule, but it only inflicts D3 hits rather than D6.]
 
-The Grey Wand gives the wielder a +D3 casting bonus. Roll for each spell casting attempt.
+#enchanted-item("ICON OF MAGNUS", 15)[The Icon of Magnus gives the bearer and any unit they are with the Immunity (Terror) special rule.]
 
-#namecost("CHALICE OF FATE", "35 points")
+#enchanted-item("THE POWDERS OF THRICE-DAMNED OSSK", 15)[Witch Hunter only. One use only. The Powders may be used immediately when an enemy Wizard miscasts. The Wizard must roll twice on the Miscast table, and you pick which result is used.]
 
-The Chalice of Fate allows the Wizard to re-roll failed Channelling rolls.
+#enchanted-item("RELIQUARY OF LECTOR OSTRANALD", 15)[Each time the bearer's unit suffers unsaved Wounds from a spell, the first D3 unsaved Wounds are absorbed by the Reliquary and have no effect (unsaved Wounds with the Multiple Wounds special rule still only count as one).]
 
-#namecost("SEAL OF DESTRUCTION", "15 points")
+#enchanted-item("SANCTIFIED SHARD OF LICHEBONE", 15)[Witch Hunter only. No Ward saves may be taken against close combat Attacks made by the bearer.]
 
-One use only. After the bearer of the Seal of Destruction manages to successfully dispel an enemy spell, they may choose to use the Seal. If they do so, roll a D6. On a 4+, the spell cannot be used by that Wizard for the rest of the game.
+#enchanted-item("THE SILVER HORN", 15)[Bound Spell, Power Level 3. The Silver Horn contains an *augment* spell that targets all fleeing friendly units within 24". The target units will automatically Rally.]
 
-#namecost("SHEMTEK'S GRIMOIRE", "15 points")
-
-One use only. This item can be used at the start of any enemy Magic Phase. Roll a D3, the result is the casting penalty all enemy Wizards suffer for the duration of this Magic Phase.
-
-#namecost("CRYSTAL BALL", "5 points")
-
-The Crystal Ball allows the wearer to pick one enemy unit anywhere on the table at the start of each of your turns. Your opponent must reveal all Magic Items, Hidden models and the like that unit might have.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("VAN HORSTMANN'S SPECULUM", "35 points")
-
-When the wearer fights in a challenge, he must 'swap' the Weapon Skill, Strength, Toughness, Initiative and Attacks characteristics on his profile with his enemy (but not the enemy's mount, if he has one). So, the wearer fights with his enemy's Strength, Toughness, Initiative and Attacks whilst his enemy fights with the wearer's Strength, Toughness, Initiative and Attacks. Note that you cannot choose not to use Van Horstmann's Speculum and you must swap all of the listed characteristics for the duration of the challenge, not just some of them.
-
-#namecost("ALDRED'S CASKET OF SORCERY", "35 points")
-
-Bound Spell (power level variable). At the start of each of his Magic phases, the bearer may remove and capture one randomly determined spell from an enemy Wizard within 12" of him on a roll of 4+. The bearer can then cast the captured spell in any of his own Magic phases by releasing it from the casket just like from a Bound Spell, whereupon the spell is then removed from the game. Any number of spells may be captured by the casket, and the bearer can cast each one once, either over several magic phases or all at the same time if they prefer. The power level of the spell cast by the casket will be equivalent to the normal casting value of the spell.
-
-#namecost("DOOMFIRE RING", "35 points")
-
-Bound Spell, Power Level 6. The Doomfire Ring contains the _Burning Head_ spell from the Lore of Fire.
-
-#namecost("EICHELBAUM'S SCROLL", "30 points")
-
-Witch Hunter only. Once per turn, when an enemy spell has been cast, the bearer can use this item instead of attempting to dispel the spell by using dispel dice. This gives them 3 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. This may also be used to dispel spells that Remains in Play. However, if the dispel attempt fails, the scroll is destroyed and cannot be used for the remainder of the battle.
-
-#namecost("HELSTURM'S STAFF", "30 points")
-
-Arch Lector only. The model carrying Helsturm's Staff and any unit they join gain the Cold-blooded special rule.
-
-#namecost("BALESTORM ORB", "25 points")
-
-Witch Hunter only. Enemy Wizards within 24" of the bearer suffer a \-1 penalty to cast spell.
-
-#namecost("BRAZIER OF HOLY FLAME", "25 points")
-
-The bearer of this item gains the Hold Your Ground (6) special rule.
-
-#namecost("BLESSED SILVER HAMMER", "20 points")
-
-Any enemy model with the Daemonic, Undead or Vampiric special rule in base contact suffers a Strength 4 Hit at the start of each round of close combat.
-
-#namecost("RING OF ST. HORST", "20 points")
-
-The model carrying the Ring of St. Horst and any unit they join may re-roll any failed Leadership test.
-
-#namecost("RING OF VOLANS", "20 points")
-
-One use only. Bound Spell (power level variable). At the beginning of the game, choose one spells from any of the eight Winds of Magic as if the bearer were a Level 1 Wizard. That spell is bound within the Ring of Volans is automatically cast with a power level equal to the normal casting value of the spell, no power dice are required.
-
-#namecost("BOOK OF UNCOMMON PRAYER", "15 points")
-
-The bearer may re-roll one dice when taking Leadership tests to use Battle Prayers of Sigmar.
-
-#namecost("BOOTS OF BOVVA", "15 points")
-
-Model on foot only. The model wearing the Boots of Boova gains the Stomp special rule, but it only inflicts D3 hits rather than D6.
-
-#namecost("ICON OF MAGNUS", "15 points")
-
-The Icon of Magnus gives the bearer and any unit they are with the Immunity (Terror) special rule.
-
-#namecost("THE POWDERS OF THRICE-DAMNED", "")
-#namecost("OSSK", "15 points")
-
-Witch Hunter only. One use only. The Powders may be used immediately when an enemy Wizard miscasts. The Wizard must roll twice on the Miscast table, and you pick which result is used.
-
-#namecost("RELIQUARY OF LECTOR", "")
-#namecost("OSTRANALD", "15 points")
-
-Each time the bearer's unit suffers unsaved Wounds from a spell, the first D3 unsaved Wounds are absorbed by the Reliquary and have no effect (unsaved Wounds with the Multiple Wounds special rule still only count as one).
-
-#namecost("SANCTIFIED SHARD OF LICHEBONE", "15 points")
-
-Witch Hunter only. No Ward saves may be taken against close combat Attacks made by the bearer.
-
-#namecost("THE SILVER HORN", "15 points")
-
-Bound Spell, Power Level 3. The Silver Horn contains an *augment* spell that targets all fleeing friendly units within 24". The target units will automatically Rally.
-
-#namecost("SKULL CHARM", "15 points")
-
-At the start of the game, roll a D6 and consult the chart below to determine which effect the Skull Charm has on the wearer.
+#enchanted-item("SKULL CHARM", 15)[At the start of the game, roll a D6 and consult the chart below to determine which effect the Skull Charm has on the wearer.
 
 #chart((("D6", "Result"), ("1-2", "+1 Weapon Skill"), ("3-4", "+1 Leadership"), ("5-6", "+1 Weapon Skill & Leadership")))
-#chartlabel("VON MECKLENBURG'S")
-#namecost("ENCHANTED SHOT", "15 points")
+#chartlabel("VON MECKLENBURG'S")]
 
-Witch Hunter with pistol only. Any shots fired from the bearer pistol(s) have the Magical Attacks special rule and automatically Wounds.
+#enchanted-item("ENCHANTED SHOT", 15)[Witch Hunter with pistol only. Any shots fired from the bearer pistol(s) have the Magical Attacks special rule and automatically Wounds.]
 
-#namecost("DAZH'S FLINT", "5 points")
+#enchanted-item("DAZH'S FLINT", 5)[The model bearing Dazh's Flint gains the Flaming Attacks special rule.]
 
-The model bearing Dazh's Flint gains the Flaming Attacks special rule.
+#enchanted-item("THE FANG OF ORSKA", 5)[Any War Beast, Monstrous Beast, Monstrous Creature or Monster attempting to strike blows against the bearer must first pass a Leadership test or automatically forfeit any attacks directed against the bearer.]
 
-#namecost("THE FANG OF ORSKA", "5 points")
+#enchanted-item("SHEEN OF TRUESILVER", 5)[At the end of any close combat in which a Monstrous Creature or Monster suffers one or more unsaved Wounds from the bearer's close combat attacks, it must take a Toughness test for each such Wound inflict, and loses a Wound (with no saves allowed) for each test failed.]
 
-Any War Beast, Monstrous Beast, Monstrous Creature or Monster attempting to strike blows against the bearer must first pass a Leadership test or automatically forfeit any attacks directed against the bearer.
-
-#namecost("SHEEN OF TRUESILVER", "5 points")
-
-At the end of any close combat in which a Monstrous Creature or Monster suffers one or more unsaved Wounds from the bearer's close combat attacks, it must take a Toughness test for each such Wound inflict, and loses a Wound (with no saves allowed) for each test failed.
-
-#namecost("SANCTIFIED SILVER BULLETS", "5 points")
-
-Witch Hunter with pistol(s) only. Any shots fired from the bearer pistol(s) have the Multiple Wounds (D3) special rule against Daemons, Undead and Vampires.
+#enchanted-item("SANCTIFIED SILVER BULLETS", 5)[Witch Hunter with pistol(s) only. Any shots fired from the bearer pistol(s) have the Multiple Wounds (D3) special rule against Daemons, Undead and Vampires.]
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("THE IMPERIAL BANNER", "65 points")
+#magic-item-section("standard")[
+#magic-standard("THE IMPERIAL BANNER", 65)[All units within 12" of this banner gain the Cold- blooded special rule.]
 
-All units within 12" of this banner gain the Cold- blooded special rule.
+#magic-standard("FLAG OF THE CONQUEROR", 50)[All friendly units with the State Troops or Militia special rules within 12" gain +1 to their Leadership.]
 
-#namecost("FLAG OF THE CONQUEROR", "50 points")
+#magic-standard("GRIFFON STANDARD", 50)[A unit bearing the Griffon Banner doubles any combat result bonus granted for having extra ranks. However, the unit carrying the Griffon Banner cannot pursue a fleeing enemy and must hold their ground instead.]
 
-All friendly units with the State Troops or Militia special rules within 12" gain +1 to their Leadership.
+#magic-standard("BANNER OF SIGISMUND", 50)[The unit carrying the Banner of Sigismund gains the Stubborn special rule. If the unit is already Stubborn, they instead become Unbreakable.]
 
-#namecost("GRIFFON STANDARD", "50 points")
+#magic-standard("BLACK SKULL OF THE CALIPH", 25)[The unit carrying the Black Skull of the Caliph, and all friendly units within 6" of it, gain the Immunity (Fear) special rule.]
 
-A unit bearing the Griffon Banner doubles any combat result bonus granted for having extra ranks. However, the unit carrying the Griffon Banner cannot pursue a fleeing enemy and must hold their ground instead.
-
-#namecost("BANNER OF SIGISMUND", "50 points")
-
-The unit carrying the Banner of Sigismund gains the Stubborn special rule. If the unit is already Stubborn, they instead become Unbreakable.
-
-#namecost("BLACK SKULL OF THE CALIPH", "25 points")
-
-The unit carrying the Black Skull of the Caliph, and all friendly units within 6" of it, gain the Immunity (Fear) special rule.
-
-#namecost("STEEL STANDARD", "20 points")
-
-Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores the Movement penalties from barding.
-
+#magic-standard("STEEL STANDARD", 20)[Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores the Movement penalties from barding.]
+]
 = LORDS
 
-#entry("IMPERIAL GENERAL", first: true)
-#profile(
-  (name: "Imperial General", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 100),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
-
+#unit("IMPERIAL GENERAL",
+  first: true,
+  profiles: (
+    (name: "Imperial General", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 100),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Spear +3 points
@@ -447,21 +289,22 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Griffon +125 points
   - Imperial Griffon +175 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "")
-
-- *Hold the Line:* If a model with this special rule is in a unit with the State Troops special rule, the unit has the Cold-blooded special rule when taking Break tests.
-
-#entry("WIZARD LORD")
-#profile(
-  (name: "Wizard Lord", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 165),
+  ],
+  special-rules: (
+    rule("Hold the Line")[If a model with this special rule is in a unit with the State Troops special rule, the unit has the Cold-blooded special rule when taking Break tests.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Wizard Lord is a Level 3 Wizard which can use spells from one of the eight Winds of Magic.")
-#field("OPTIONS", "")
 
+#unit("WIZARD LORD",
+  profiles: (
+    (name: "Wizard Lord", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 165),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Wizard Lord is a Level 3 Wizard which can use spells from one of the eight Winds of Magic.",
+  options: [
 - May be upgraded to a Level 4 Wizard +35 points
 - May be mounted on one of the following:
   - Warhorse +18 points
@@ -471,16 +314,17 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Griffon (Wizard with Lore of Beasts only) +125 points
   - Imperial Griffon (Wizard with Lore of Beasts only) +175 points
 - May take Magic Items up to a total of 100 points
-
-#entry("GRAND MASTER")
-#profile(
-  (name: "Grand Master", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 120),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, full plate armour")
-#field("OPTIONS", "")
 
+#unit("GRAND MASTER",
+  profiles: (
+    (name: "Grand Master", m: 4, ws: 6, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 120),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, full plate armour",
+  options: [
 - May be upgraded to a Knightly Order no points limit
 - May choose one of the following:
   - Additional hand weapon +3 points
@@ -494,24 +338,25 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Warhorse (with barding) +23 points
   - Demigryph (with barding) +53 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Immunity (Psychology),")
-
+  ],
+  special-rules: "Immunity (Psychology),",
+  special-rules-body: [
 - *Master of Battle*: If a model with this special rule is in a unit of Imperial Knights, Imperial Foot Knights or Demigryph Knights, the unit gains the Immunity (Psychology) special rule.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You must include at least one unit of Knights with the same Troop Type if your army includes a Grand Master. The Grand Master must join one of these units, and may never leave it.
-
-#entry("ARCH LECTOR OF SIGMAR")
-#profile(
-  (name: "Arch Lector", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 120),
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
 
+#unit("ARCH LECTOR OF SIGMAR",
+  profiles: (
+    (name: "Arch Lector", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 120),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Great weapon +6 points
@@ -521,28 +366,29 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Warhorse +18 points
   - The War Altar of Sigmar +150 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Magic Resistance (2)")
-
+  ],
+  special-rules: "Magic Resistance (2)",
+  special-rules-body: [
 - *Battle Prayers of Sigmar:* A model with this special rule knows the three Battle Prayers listed below. They may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and take immediate effect. A friendly unit can only be under the effect of one Battle Prayer at a time.
   - *Hammer of Sigmar:* The model and any unit they are with re-roll failed To Wound rolls in close combat until the start your next turn.
   - *Shield of Faith:* The model and any unit they are with gain a 6+ Ward save in close combat until the start your next turn.
   - *Soulfire:* The model and any unit they are with gain the Flaming and Magical Attacks special rules until the start your next turn. In addition, when cast, all enemy models in base contact with the Warrior Priest suffer a Strength 4 hit. Models with the Daemons, Undead and Vampires suffer a Strength 5 hit instead.
 - *Righteous Fury*: The model and any unit they are currently in have the Hatred special rule.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - You may not field more than 2 Arch Lectors in your army.
-
-#entry("WITCH HUNTER GENERAL")
-#profile(
-  (name: "Witch Hunter General", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 95),
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol")
-#field("OPTIONS", "")
 
+#unit("WITCH HUNTER GENERAL",
+  profiles: (
+    (name: "Witch Hunter General", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 95),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Great weapon +9 points
@@ -551,32 +397,33 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
 - May take light armour +2 points
 - May be mounted on a Warhorse +18 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Hatred (Chaos, Undead, Wizards), Magic Resistance (2)")
-
-- *Accusation:* After deployment, but before the first turn begins, select a single model in your opponent's army. The Witch Hunter may re-roll all failed To Hit against this model. Every hit he inflicts on that model with close combat or shooting attacks also has the Killing Blow special rule. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had the Sniper special rule.
-- *Grim Resolve:* Witch Hunters, and any unit they are in, have the Immunity (Fear) special rule.
-- *Tools of Judgement:* When attacking Daemons, Undead, Vampires or Wizards in close combat, a Witch Hunter has the Magical Attacks special rule and re-rolls failed rolls To Wound.
-
-#field("UPGRADES", "")
-
-- *Witch Hunter Retinue:* For every Witch Hunter General in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Hatred (Chaos, Undead, Wizards), Magic Resistance (2)",
+  special-rules-body: (
+    rule("Accusation")[After deployment, but before the first turn begins, select a single model in your opponent's army. The Witch Hunter may re-roll all failed To Hit against this model. Every hit he inflicts on that model with close combat or shooting attacks also has the Killing Blow special rule. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had the Sniper special rule.],
+    rule("Grim Resolve")[Witch Hunters, and any unit they are in, have the Immunity (Fear) special rule.],
+    rule("Tools of Judgement")[When attacking Daemons, Undead, Vampires or Wizards in close combat, a Witch Hunter has the Magical Attacks special rule and re-rolls failed rolls To Wound.],
+  ),
+  upgrades: (
+    rule("Witch Hunter Retinue")[For every Witch Hunter General in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.],
+  ),
+  notes: [
 - You may not field more than 3 Witch Hunter Generals in your army.
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "upgrades", "notes"),
+)
 
 = HEROES
 
-#entry("IMPERIAL CAPTAIN", first: true)
-#profile(
-  (name: "Imperial Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
-)
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
-
+#unit("IMPERIAL CAPTAIN",
+  first: true,
+  profiles: (
+    (name: "Imperial Captain", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - One Imperial Captain may carry the Battle Standard +25 points
 - May choose one of the following:
   - Additional hand weapon +2 points
@@ -597,38 +444,39 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Warhorse +12 points
   - Pegasus +20 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "")
-
-- *Hold the Line:* If a model with this special rule is in a unit with the State Troops special rule, the unit has the Cold-blooded special rule when taking Break tests.
-
-#field("UPGRADES", "")
-
-- *Battle Standard:* The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.
-
-#entry("BATTLE WIZARD")
-#profile(
-  (name: "Battle Wizard", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ],
+  special-rules: (
+    rule("Hold the Line")[If a model with this special rule is in a unit with the State Troops special rule, the unit has the Cold-blooded special rule when taking Break tests.],
+  ),
+  upgrades: (
+    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Wizard Lord is a Level 1 Wizard which can use spells from one of the eight Winds of Magic.")
-#field("OPTIONS", "")
 
+#unit("BATTLE WIZARD",
+  profiles: (
+    (name: "Battle Wizard", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Wizard Lord is a Level 1 Wizard which can use spells from one of the eight Winds of Magic.",
+  options: [
 - May be upgraded to a Level 2 Wizard +35 points
 - May be mounted on a Warhorse +12 points
 - May take Magic Items up to a total of 50 points
-
-#entry("CHAPTER MASTER")
-#profile(
-  (name: "Chapter Master", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 85),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, full plate armour")
-#field("OPTIONS", "")
 
+#unit("CHAPTER MASTER",
+  profiles: (
+    (name: "Chapter Master", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 85),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, full plate armour",
+  options: [
 - One Chapter Master may carry the Battle Standard +25 points
 - May be upgraded to a Knightly Order no points limit
 - May choose one of the following:
@@ -643,30 +491,30 @@ Cavalry or Monstrous Cavalry only. The unit carrying the Steel Standard ignores 
   - Warhorse (with barding) +23 points
   - Demigryph (with barding) +37 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Immunity (Psychology)")
-
+  ],
+  special-rules: "Immunity (Psychology)",
+  special-rules-body: [
 - *Master of Battle*: If a model with this special rule is in a unit of Imperial Knights, Imperial Foot Knights or Demigryph Knights, the unit gains the Immunity (Psychology) special rule.
-
-#field("UPGRADES", "")
-
-- *Battle Standard:* The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.
-
-#field("NOTES", "")
-
+  ],
+  upgrades: (
+    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.],
+  ),
+  notes: [
 - You must include at least one unit of Knights with the same Troop Type if your army includes a Chapter
 
 Master. The Chapter Master must join one of these units, and may never leave it.
-
-#entry("WARRIOR PRIEST OF SIGMAR")
-#profile(
-  (name: "Warrior Priest", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 95),
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "upgrades", "notes"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
 
+#unit("WARRIOR PRIEST OF SIGMAR",
+  profiles: (
+    (name: "Warrior Priest", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 95),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +2 points
   - Great weapon +6 points
@@ -674,24 +522,26 @@ Master. The Chapter Master must join one of these units, and may never leave it.
 - May take a shield +2 points
 - May be mounted on a Warhorse +12 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Magic Resistance (1)")
-
+  ],
+  special-rules: "Magic Resistance (1)",
+  special-rules-body: [
 - *Battle Prayers of Sigmar:* A model with this special rule knows the three Battle Prayers listed below. They may attempt to use one at the start of each of your turns by taking a Leadership test on their own unmodified Leadership. If passed, the prayer is answered and take immediate effect. A friendly unit can only be under the effect of one Battle Prayer at a time.
   - *Hammer of Sigmar:* The model and any unit they are with re-roll failed To Wound rolls in close combat until the start your next turn.
   - *Shield of Faith:* The model and any unit they are with gain a 6+ Ward save in close combat until the start your next turn.
   - *Soulfire:* The model and any unit they are with gain the Flaming and Magical Attacks special rules until the start your next turn. In addition, when cast, all enemy models in base contact with the Warrior Priest suffer a Strength 4 hit. Models with the Daemons, Undead and Vampires suffer a Strength 5 hit instead.
 - *Righteous Fury*: The model and any unit they are currently in have the Hatred special rule.
-
-#entry("WITCH HUNTER CAPTAIN")
-#profile(
-  (name: "Witch Hunter Captain", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 40),
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol")
-#field("OPTIONS", "")
 
+#unit("WITCH HUNTER CAPTAIN",
+  profiles: (
+    (name: "Witch Hunter Captain", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 40),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +2 points
   - Great weapon +6 points
@@ -700,25 +550,27 @@ Master. The Chapter Master must join one of these units, and may never leave it.
 - May take light armour +2 points
 - May be mounted on a Warhorse +12 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Hatred (Chaos, Undead, Wizards), Magic Resistance (1)")
-
-- *Accusation:* After deployment, but before the first turn begins, select a single model in your opponent's army. The Witch Hunter may re-roll all failed To Hit against this model. Every hit he inflicts on that model with close combat or shooting attacks also has the Killing Blow special rule. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had the Sniper special rule.
-- *Grim Resolve:* Witch Hunters, and any unit they are in, have the Immunity (Fear) special rule.
-- *Tools of Judgement:* When attacking Daemons, Undead, Vampires or Wizards in close combat, a Witch Hunter has the Magical Attacks special rule and re-rolls failed rolls To Wound.
-
-#field("UPGRADES", "")
-
-- *Witch Hunter Retinue:* For every Witch Hunter Captain in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.
-
-#entry("MASTER ENGINEER")
-#profile(
-  (name: "Master Engineer", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 45),
+  ],
+  special-rules: "Hatred (Chaos, Undead, Wizards), Magic Resistance (1)",
+  special-rules-body: (
+    rule("Accusation")[After deployment, but before the first turn begins, select a single model in your opponent's army. The Witch Hunter may re-roll all failed To Hit against this model. Every hit he inflicts on that model with close combat or shooting attacks also has the Killing Blow special rule. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had the Sniper special rule.],
+    rule("Grim Resolve")[Witch Hunters, and any unit they are in, have the Immunity (Fear) special rule.],
+    rule("Tools of Judgement")[When attacking Daemons, Undead, Vampires or Wizards in close combat, a Witch Hunter has the Magical Attacks special rule and re-rolls failed rolls To Wound.],
+  ),
+  upgrades: (
+    rule("Witch Hunter Retinue")[For every Witch Hunter Captain in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
 
+#unit("MASTER ENGINEER",
+  profiles: (
+    (name: "Master Engineer", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 45),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  equipment-body: [
 - *Pigeon bombs:* Pigeon bombs have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("∞", "4", "Armour Piercing (1), Slow to Fire"))
@@ -726,8 +578,8 @@ Master. The Chapter Master must join one of these units, and may never leave it.
 This item can be used in addition to any other missile weapon the Master Engineer might have. When a Master Engineer declares they will be using Pigeon Bombs, nominate any enemy model within Line of Sight, roll a D6 and consult the following chart:
 
 #chart((("D6", "Result"), ("1", "Oops! Centre the small round template over the Master Engineer and resolve the explosion."), ("2-4", "Boom! The Pigeon Bomb has no effect this turn."), ("5-6", "Huzzah! Centre the small round template over the target model and resolve the explosion.")))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May choose one of the following:
   - Repeater pistol +6 points
   - Repeater handgun +8 points
@@ -737,141 +589,149 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May take light armour +2 points
 - May be mounted on a Mechanical Steed +20 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "")
-
-- *Master of Ballistics:* One war machine that is within 3" of a Master Engineer can use his Ballistic Skill or re- roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of the Master Engineer are fired.
-- *'Stand Back, Sir!':* A Master Engineer that is within 3" of a war machine is allowed to take a 'Look Out, Sir!' roll just as if he was within 3" of a unit of five or more models of the same troop type as himself. If the roll is successful, the hit is instead resolved against the nearest friendly war machine.
+  ],
+  special-rules: (
+    rule("Master of Ballistics")[One war machine that is within 3" of a Master Engineer can use his Ballistic Skill or re- roll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this special rule at the start of each Shooting phase, before any such weapons within 3" of the Master Engineer are fired.],
+    rule("'Stand Back, Sir!'")[A Master Engineer that is within 3" of a war machine is allowed to take a 'Look Out, Sir!' roll just as if he was within 3" of a unit of five or more models of the same troop type as himself. If the roll is successful, the hit is instead resolved against the nearest friendly war machine.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
+)
 
 = CHARACTER MOUNTS
 
-#entry("WARHORSE", first: true)
-#profile(
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "War Beast (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
-
+#unit("WARHORSE",
+  first: true,
+  profiles: (
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: "-"),
+  ),
+  troop-type: "War Beast (Animal)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take barding +5 points
-
-#entry("PEGASUS")
-#profile(
-  (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("OPTIONS", "")
 
+#unit("PEGASUS",
+  profiles: (
+    (name: "Pegasus", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: "-"),
+  ),
+  troop-type: "War Beast (Animal)",
+  base-size: "25x50 or 30x60",
+  options: [
 - May take Iron-hard Hooves +5 points
 - May take Swift as the Wind +5 points
-
-#field("SPECIAL RULES", "Fly (9)")
-#field("UPGRADES", "")
-
-- *Iron-hard Hooves:* A Pegasus with this upgrade re-roils failed To Wound rolls.
-- *Swift as the Wind:* A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.
-
-#compact-entry("MECHANICAL STEED")[
-#profile(
-  (name: "Mechanical Steed", m: 7, ws: 1, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 1, ld: "-", points: "-"),
+  ],
+  special-rules: "Fly (9)",
+  upgrades: (
+    rule("Iron-hard Hooves")[A Pegasus with this upgrade re-roils failed To Wound rolls.],
+    rule("Swift as the Wind")[A Pegasus with this upgrade re-rolls any dice results of a 1 when determining its charge range.],
+  ),
+  order: ("troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "War Beast (Animated Construct)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("SPECIAL RULES", "Impact Hits (D3), Natural Armour (6+)")
-]
 
-#compact-entry("DEMIGRYPH")[
-#profile(
-  (name: "Demigryph", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: "-"),
+#unit("MECHANICAL STEED",
+  compact: true,
+  profiles: (
+    (name: "Mechanical Steed", m: 7, ws: 1, bs: 0, s: 4, t: 4, w: 1, i: 1, a: 1, ld: "-", points: "-"),
+  ),
+  troop-type: "War Beast (Animated Construct)",
+  base-size: "25x50 or 30x60",
+  special-rules: "Impact Hits (D3), Natural Armour (6+)",
 )
-#field("TROOP TYPE", "Monstrous Beast (Animal)")
-#field("BASE SIZE", "40x60, 50x75")
-]
 
-#entry("GRIFFON")
-#profile(
-  (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+#unit("DEMIGRYPH",
+  compact: true,
+  profiles: (
+    (name: "Demigryph", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Animal)",
+  base-size: "40x60, 50x75",
 )
-#field("TROOP TYPE", "Monstrous Creature (Animal)")
-#field("BASE SIZE", "50x50")
-#field("SPECIAL RULES", "Fly (8), Natural Armour (6+)")
-#field("OPTIONS", "")
 
+#unit("GRIFFON",
+  profiles: (
+    (name: "Griffon", m: 6, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 7, points: "-"),
+  ),
+  troop-type: "Monstrous Creature (Animal)",
+  base-size: "50x50",
+  special-rules: "Fly (8), Natural Armour (6+)",
+  options: [
 - May take Shredding Talons +5 points
 - May take Swooping Strike +5 points
-
-#field("UPGRADES", "")
-
-- *Shredding Talons:* The model gains the Armour Piercing (1) special rule.
-- *Swooping Strike:* The model gains the Devastating Charge special rule.
-
-#entry("IMPERIAL GRIFFON")
-#profile(
-  (name: "Imperial Griffon", m: 6, ws: 5, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 4, ld: 7, points: "-"),
+  ],
+  upgrades: (
+    rule("Shredding Talons")[The model gains the Armour Piercing (1) special rule.],
+    rule("Swooping Strike")[The model gains the Devastating Charge special rule.],
+  ),
+  order: ("troop-type", "base-size", "special-rules", "options", "upgrades"),
 )
-#field("TROOP TYPE", "Monster (Animal)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Fly (8), Natural Armour (6+)")
-#field("OPTIONS", "")
 
+#unit("IMPERIAL GRIFFON",
+  profiles: (
+    (name: "Imperial Griffon", m: 6, ws: 5, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 4, ld: 7, points: "-"),
+  ),
+  troop-type: "Monster (Animal)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Fly (8), Natural Armour (6+)",
+  options: [
 - May take barding +10 points
 - May take Razorbeak +5 points
 - May take Shrike Talons +5 points
 - May take Bloodroar +10 points
 - May take Two Heads +15 points
-
-#field("UPGRADES", "")
-
+  ],
+  upgrades: [
 - *Bloodroar*: Enemy units must roll an additional D6, discarding the lowest result, for Leadership tests caused by this beast's Terror special rule.
 - *Razorbeak*: The model gains the Armour Piercing (1) special rule.
 - *Shrike Talons*: The model gains the Mighty Blow (1) special rule in turns it charges.
 - *Two Heads*: The model gains +1 Attack.
-
-#entry("WAR ALTAR OF SIGMAR")
-#profile(
-  (name: "War Altar of Sigmar", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: "-"),
-  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "special-rules", "options", "upgrades"),
 )
-#field("TROOP TYPE", "Chariot (Armour save 5+)")
-#field("DRAWN BY", "2 Warhorses (Animal)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Barding")
-#field("MAGIC ITEMS", "")
 
-- *The Golden Griffon:* Enchanted Item. Innate bound spell (power level 6). The Golden Griffon contains the spell _Banishment_ from the Lore of Light.
-
-#field("OPTIONS", "")
-
+#unit("WAR ALTAR OF SIGMAR",
+  profiles: (
+    (name: "War Altar of Sigmar", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: "-"),
+    (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 5+)",
+  drawn-by: "2 Warhorses (Animal)",
+  base-size: "50x100 or 60x100",
+  equipment: "Barding",
+  magic-items: (
+    rule("The Golden Griffon")[Enchanted Item. Innate bound spell (power level 6). The Golden Griffon contains the spell _Banishment_ from the Lore of Light.],
+  ),
+  options: [
 - May take the Horn of Sigismund +25 points
-
-#field("SPECIAL RULES", "Stubborn")
-
-- *Divine Protection:* This model has a 4+ Ward save.
-- *Holy Fervour:* All friendly Human units benefit from the rider's Righteous Fury special rule whilst within 6" of the War Altar of Sigmar.
-- *The Power of Sigmar:* Any Battle Prayers of Sigmar cast by a model who is mounted on the War Altar of Sigmar also target all friendly units within 6".
-
-#field("UPGRADES", "")
-
-- *The Horn of Sigismund:* Enchanted Item. The War Altar of Sigmar gains the Terror special rule.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Stubborn",
+  special-rules-body: (
+    rule("Divine Protection")[This model has a 4+ Ward save.],
+    rule("Holy Fervour")[All friendly Human units benefit from the rider's Righteous Fury special rule whilst within 6" of the War Altar of Sigmar.],
+    rule("The Power of Sigmar")[Any Battle Prayers of Sigmar cast by a model who is mounted on the War Altar of Sigmar also target all friendly units within 6".],
+  ),
+  upgrades: (
+    rule("The Horn of Sigismund")[Enchanted Item. The War Altar of Sigmar gains the Terror special rule.],
+  ),
+  notes: [
 - The War Altar of Sigmar has a Line of Sight value of 4.
 - You may not field more than 1 War Altar of Sigmar in your army.
+  ],
+  order: ("troop-type", "drawn-by", "base-size", "equipment", "magic-items", "options", "special-rules", "upgrades", "notes"),
+)
 
 = CORE UNITS
 
-#entry("HALBERDIERS", first: true)
-#profile(
-  (name: "Halberdier", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
-)
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Polearm")
-#field("OPTIONS", "")
-
+#unit("HALBERDIERS",
+  first: true,
+  profiles: (
+    (name: "Halberdier", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Polearm",
+  options: [
 - May choose one of the following:
   - Light armour +0.5 point/model
   - Medium armour +1.5 points/model
@@ -881,19 +741,20 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Halberdier to a Musician +5 points
 - May upgrade one Halberdier to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
+)
 
-#field("SPECIAL RULES", "State Troops")
-
-#entry("SPEARMEN")
-
+#unit("SPEARMEN",
+  before: [
 *Profile M WS BS S T W I A Ld Points* Spearman 4 3 3 3 3 1 3 1 7 3.5
-
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Spear")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Spear",
+  options: [
 - May choose one of the following:
   - Shields +1 point/model
   - Replace spears with pikes +1.5 points/model
@@ -903,38 +764,40 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Spearman to a Musician +5 points
 - May upgrade one Spearman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "State Troops")
-
-#entry("SWORDSMEN")
-#profile(
-  (name: "Swordsman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 5),
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, shield")
-#field("OPTIONS", "")
 
+#unit("SWORDSMEN",
+  profiles: (
+    (name: "Swordsman", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, shield",
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Swordsman to a Leader +5 points
   - May take a pistol +3 points
 - May upgrade one Swordsman to a Musician +5 points
 - May upgrade one Swordsman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "State Troops")
-
-#entry("HANDGUNNERS")
-#profile(
-  (name: "Handgunner", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, handgun")
-#field("OPTIONS", "")
 
+#unit("HANDGUNNERS",
+  profiles: (
+    (name: "Handgunner", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, handgun",
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Handgunner to a Leader +5 points
   - May replace handgun with one of the following:
@@ -944,56 +807,59 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Handgunner to a Musician +5 points
 - May upgrade one Handgunner to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "State Troops")
-
-#entry("CROSSBOWMEN")
-#profile(
-  (name: "Crossbowman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, crossbow")
-#field("OPTIONS", "")
 
+#unit("CROSSBOWMEN",
+  profiles: (
+    (name: "Crossbowman", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 8),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, crossbow",
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Crossbowman to a Leader +5 points
 - May upgrade one Crossbowman to a Musician +5 points
 - May upgrade one Crossbowman to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "State Troops")
-
-#entry("ARCHERS")
-#profile(
-  (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 6),
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, bow")
-#field("OPTIONS", "")
 
+#unit("ARCHERS",
+  profiles: (
+    (name: "Archer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 6),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, bow",
+  options: [
 - May be upgraded to Skirmishers +1 point/model
 - May take light armour +0.5 point/model
 - May upgrade one Archer to a Leader +5 points
 - May upgrade one Archer to a Musician +5 points
 - May upgrade one Archer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
+  ],
+  special-rules: "State Troops",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
+)
 
-#field("SPECIAL RULES", "State Troops")
-
-#entry("FREE COMPANY MILITIA")
-
+#unit("FREE COMPANY MILITIA",
+  before: [
 *Profile M WS BS S T W I A Ld Points* Militia Fighter 4 3 3 3 3 1 3 1 6 3.5
-
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("OPTIONS", "")
-
+  ],
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  options: [
 - May be upgraded to Ambushers +1 point/model
 - May be upgraded to Skirmishers +1 point/model
 - May replace one hand weapon with one of the following:
@@ -1005,61 +871,65 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Militia Fighter to a Leader +5 points
 - May upgrade one Militia Fighter to a Musician +5 points
 - May upgrade one Militia Fighter to a Standard Bearer +10 points
-
-#field("SPECIAL RULES", "")
-
-- *Militia:* Models with this special rule can use the Support Fire and Counter Charge actions from the State Troops special rule.
-
-#entry("PISTOLIERS")
-#profile(
-  (name: "Pistolier", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 18),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: (
+    rule("Militia")[Models with this special rule can use the Support Fire and Counter Charge actions from the State Troops special rule.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Brace of pistols, medium armour")
-#field("OPTIONS", "")
 
+#unit("PISTOLIERS",
+  profiles: (
+    (name: "Pistolier", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 18),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5+",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Brace of pistols, medium armour",
+  options: [
 - May upgrade one Pistolier to a Leader +5 points
   - May replace one pistol with a repeater pistol +5 points
 - May upgrade one Pistolier to a Musician +5 points
-
-#field("SPECIAL RULES", "Fast Cavalry")
-
-#entry("DEMILANCERS")
-#profile(
-  (name: "Demilancer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 13),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: "Fast Cavalry",
+  order: ("unit-size", "troop-type", "mount", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Light lance, light armour, shield")
-#field("OPTIONS", "")
 
+#unit("DEMILANCERS",
+  profiles: (
+    (name: "Demilancer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 13),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5+",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Light lance, light armour, shield",
+  options: [
 - May take medium armour +1.5 point/model
 - May upgrade one Demilancer to a Leader +5 points
 - May upgrade one Demilancer to a Musician +5 points
 - May upgrade one Demilancer to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Fast Cavalry")
+  ],
+  special-rules: "Fast Cavalry",
+  order: ("unit-size", "troop-type", "mount", "base-size", "equipment", "options", "special-rules"),
+)
 
 = SPECIAL UNITS
 
-#entry("GREATSWORDS", first: true)
-#profile(
-  (name: "Greatsword", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 9),
-)
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Great weapon, light armour")
-#field("OPTIONS", "")
-
+#unit("GREATSWORDS",
+  first: true,
+  profiles: (
+    (name: "Greatsword", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 9),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Great weapon, light armour",
+  options: [
 - May choose one of the following:
   - Medium armour +1 point/model
   - Heavy armour +2.5 points/model
@@ -1067,21 +937,22 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Greatsword to a Musician +5 points
 - May upgrade one Greatsword to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("SPECIAL RULES", "State Troops, Stubborn")
-
-#entry("IMPERIAL KNIGHTS")
-#profile(
-  (name: "Imperial Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 18),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: "State Troops, Stubborn",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Heavy lance, heavy armour, barding")
-#field("OPTIONS", "")
 
+#unit("IMPERIAL KNIGHTS",
+  profiles: (
+    (name: "Imperial Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 18),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5+",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, barding",
+  options: [
 - May be upgraded to Inner Circle Knights (see notes) +2 points/model
 - May be upgraded to a Knightly Order no points limit
 - May replace heavy lances with one of the following:
@@ -1093,27 +964,27 @@ This item can be used in addition to any other missile weapon the Master Enginee
 - May upgrade one Imperial Knight to a Musician +5 points
 - May upgrade one Imperial Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("UPGRADES", "")
-
-- *Inner Circle Knights:* The model gains +1 Strength, +1 Initiative.
-
-#field("NOTES", "")
-
+  ],
+  upgrades: (
+    rule("Inner Circle Knights")[The model gains +1 Strength, +1 Initiative.],
+  ),
+  notes: [
 - For every Grand Master or Chapter Master that is included in your army, you may may upgrade one unit to Inner Circle Knights. In addition, you may take one unit of Imperial Knights (unless they have full plate
 
 armour or are Inner Circle Knights) as a Core Unit instead of a Special Unit.
-
-#entry("IMPERIAL FOOT KNIGHTS")
-#profile(
-  (name: "Imperial Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 10),
+  ],
+  order: ("unit-size", "troop-type", "mount", "base-size", "equipment", "options", "upgrades", "notes"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, heavy armour, shield")
-#field("OPTIONS", "")
 
+#unit("IMPERIAL FOOT KNIGHTS",
+  profiles: (
+    (name: "Imperial Knight", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 8, points: 10),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour, shield",
+  options: [
 - May be upgraded to Inner Circle Knights (see notes) +4 points/model
 - May be upgraded to a Knightly Order no points limit
 - May replace shields with one of the following:
@@ -1124,27 +995,27 @@ armour or are Inner Circle Knights) as a Core Unit instead of a Special Unit.
 - May upgrade one Imperial Knight to a Musician +5 points
 - May upgrade one Imperial Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("UPGRADES", "")
-
-- *Inner Circle Knights:* The model gains +1 Strength and full plate armour.
-
-#field("NOTES", "")
-
+  ],
+  upgrades: (
+    rule("Inner Circle Knights")[The model gains +1 Strength and full plate armour.],
+  ),
+  notes: [
 - For every Grand Master or Chapter Master that is included in your army, you may may upgrade one unit to Inner Circle Knights. In addition, you may take one unit of Imperial Foot Knights (unless they have full plate armour or are Inner Circle Knights) as a Core Unit instead of a Special Unit.
-
-#entry("OUTRIDERS")
-#profile(
-  (name: "Outrider", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 20),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "upgrades", "notes"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Cavalry (Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Repeater handgun, medium armour")
-#field("OPTIONS", "")
 
+#unit("OUTRIDERS",
+  profiles: (
+    (name: "Outrider", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 20),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  unit-size: "5+",
+  troop-type: "Cavalry (Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Repeater handgun, medium armour",
+  options: [
 - May take barding +1 point/model
 - May upgrade one Outrider to a Leader +5 points
   - May replace repeater handgun with one of the following:
@@ -1152,35 +1023,37 @@ armour or are Inner Circle Knights) as a Core Unit instead of a Special Unit.
 - Grenade launching blunderbuss free
 - Hochland long rifle +5 points
 - May upgrade one Outrider to a Musician +5 points
-
-#field("SPECIAL RULES", "Fast Cavalry")
-
-#entry("HUNTSMEN")
-#profile(
-  (name: "Huntsman", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 9),
+  ],
+  special-rules: "Fast Cavalry",
+  order: ("unit-size", "troop-type", "mount", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, bow")
-#field("OPTIONS", "")
 
+#unit("HUNTSMEN",
+  profiles: (
+    (name: "Huntsman", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 9),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, bow",
+  options: [
 - May replace bows with longbows +1 point/model
 - May upgrade one Huntsman to a Leader +5 points
 - May upgrade one Huntsman to a Musician +5 points
-
-#field("SPECIAL RULES", "Scouts, Skirmishers")
-
-#entry("SISTERS OF SIGMAR")
-#profile(
-  (name: "Sister of Sigmar", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ],
+  special-rules: "Scouts, Skirmishers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("SISTERS OF SIGMAR",
+  profiles: (
+    (name: "Sister of Sigmar", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: 5),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May be upgraded to Skirmishers free
 - May choose one of the following:
   - Bucklers +0.5 point/model
@@ -1194,47 +1067,51 @@ armour or are Inner Circle Knights) as a Core Unit instead of a Special Unit.
 - May upgrade one Sister of Sigmar to a Musician +5 points
 - May upgrade one Sister of Sigmar to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Hatred, Immunity (Fear), Magic Resistance (1)")
-
-- *Faith in Sigmar:* Any model in the unit gains +1 to their Leadership when attempting to use Battle Prayers of Sigmar for every 5 Sisters of Sigmar in the unit. In addition, if a unit of Sister of Sigmar is joined by a model with the Righteous Fury special rule, their Hatred special rule applies in every round of close combat.
-
-#entry("FLAGELLANTS")
-#profile(
-  (name: "Flagellant", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ],
+  special-rules: "Hatred, Immunity (Fear), Magic Resistance (1)",
+  special-rules-body: (
+    rule("Faith in Sigmar")[Any model in the unit gains +1 to their Leadership when attempting to use Battle Prayers of Sigmar for every 5 Sisters of Sigmar in the unit. In addition, if a unit of Sister of Sigmar is joined by a model with the Righteous Fury special rule, their Hatred special rule applies in every round of close combat.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("FLAGELLANTS",
+  profiles: (
+    (name: "Flagellant", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: 6),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May choose one of the following:
   - Additional hand weapons +1 point/model
   - Flails +2 points/model
 - May upgrade one Flagellant to a Leader +5 points
 - May upgrade one Flagellant to a Musician +5 points
 - May upgrade one Flagellant to a Standard Bearer +10 points
-
-#field("SPECIAL RULES", "Frenzy, Unbreakable")
-
+  ],
+  special-rules: "Frenzy, Unbreakable",
+  special-rules-body: [
 - *The End is Nigh!* If a unit of Flagellants is in base contact with an enemy unit at the start of any Close Combat phase, the Flagellants may immediately sacrifice D3 Wounds worth of models. Casualties inflicted in this way do not count towards combat resolution. The remaining models in the unit immediately gain one of the special rules listed below depend on the number of models removed. In addition, friendly units within 6" of Flagellants suffer \-1 to their Leadership, except other Flagellants, Warrior Priests, Arch Lectors and Sisters of Sigmar.
 
 #chart((("Models removed", "Result"), ("1", "Fanatical Fury: The unit re-rolls all failed rolls To Hit."), ("2", "Strength of the Penitent: The unit re-rolls all failed rolls To Hit and To Wound."), ("3", "Insensible to Pain: The unit gains +1 Toughness, and re-rolls all failed rolls To Hit
 and To Wound.")))
 
 - *Fanatical Zeal:* Arch Lectors and Warrior Priests of Sigmar may join units of Flagellants despite being them being Unbreakable. If they do so, they also become Unbreakable as long as there are any Flagellants remaining.
-
-#entry("IMPERIAL DWARFS")
-#profile(
-  (name: "Dwarf", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 5),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Dwarf)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("IMPERIAL DWARFS",
+  profiles: (
+    (name: "Dwarf", m: 3, ws: 4, bs: 3, s: 3, t: 4, w: 1, i: 2, a: 1, ld: 9, points: 5),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Dwarf)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Polearms +2 points/model
@@ -1249,22 +1126,24 @@ and To Wound.")))
 - May upgrade one Dwarf to a Musician +5 points
 - May upgrade one Dwarf to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Hatred (Orcs, Goblins, Skaven), Loner")
-
-- *Relentless:* Units entirely composed of models with this special rule do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.
-- *Resolute:* When taking Break tests, models with this special rule count as having lost the combat with 1 point fewer than they actually have.
-
-#entry("IMPERIAL HALFLINGS")
-#profile(
-  (name: "Halfling", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: 3),
+  ],
+  special-rules: "Hatred (Orcs, Goblins, Skaven), Loner",
+  special-rules-body: (
+    rule("Relentless")[Units entirely composed of models with this special rule do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.],
+    rule("Resolute")[When taking Break tests, models with this special rule count as having lost the combat with 1 point fewer than they actually have.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Halfling)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("IMPERIAL HALFLINGS",
+  profiles: (
+    (name: "Halfling", m: 4, ws: 2, bs: 4, s: 2, t: 2, w: 1, i: 5, a: 1, ld: 8, points: 3),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Halfling)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May choose one of the following:
   - Spears +0.5 point/model
   - Shortbows +3 points/model
@@ -1273,20 +1152,23 @@ and To Wound.")))
 - May upgrade one Halfling to a Musician +5 points
 - May upgrade one Halfling to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Loner")
-
-- *Duck & Weave:* Enemies attacking models with this special rule suffer \-1 To Hit in close combat.
-
-#entry("IMPERIAL OGRES")
-#profile(
-  (name: "Ogre", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 27),
+  ],
+  special-rules: "Loner",
+  special-rules-body: (
+    rule("Duck & Weave")[Enemies attacking models with this special rule suffer \-1 To Hit in close combat.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "3+")
-#field("TROOP TYPE", "Monstrous Infantry (Ogre)")
-#field("BASE SIZE", "40x40")
-#field("EQUIPMENT", "Hand weapons")
 
+#unit("IMPERIAL OGRES",
+  profiles: (
+    (name: "Ogre", m: 6, ws: 3, bs: 3, s: 4, t: 4, w: 3, i: 2, a: 3, ld: 7, points: 27),
+  ),
+  unit-size: "3+",
+  troop-type: "Monstrous Infantry (Ogre)",
+  base-size: "40x40",
+  equipment: "Hand weapons",
+  equipment-body: [
 - *Ogre Pistol:* Ogre pistols use the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "4", "Armour Piercing (1), Quick to Fire"))
@@ -1296,8 +1178,8 @@ In close combat, an Ogre pistol counts as an additional hand weapon that does no
 - *Ogre Handgun:* Ogre handguns use the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "5", "Armour Piercing (1), Ponderous"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May choose one of the following:
   - Bucklers +3 points/model
   - Ogre pistols +3 points/model
@@ -1309,68 +1191,75 @@ In close combat, an Ogre pistol counts as an additional hand weapon that does no
 - May upgrade one Ogre to a Musician +5 points
 - May upgrade one Ogre to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Loner, Natural Armour (6+)")
-
-- *Ogre Charge:* Each model with this special rule that successfully charges an enemy has the Impact Hits (1) special rule. Models with this special rule that are part of a unit with ranks add their current Rank Bonus to the Strength of the Impact Hits they inflict. In addition, they count as having one more rank than their actual number for the purpose of determining Steadfast in any turn that they charge.
-
-#entry("GREAT CANNON")
-#profile(
-  (name: "Great Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
+  special-rules: "Loner, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Ogre Charge")[Each model with this special rule that successfully charges an enemy has the Impact Hits (1) special rule. Models with this special rule that are part of a unit with ranks add their current Rank Bonus to the Strength of the Impact Hits they inflict. In addition, they count as having one more rank than their actual number for the purpose of determining Steadfast in any turn that they charge.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "War Machine (Great Cannon)")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("GREAT CANNON",
+  profiles: (
+    (name: "Great Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine (Great Cannon)",
+  crew: "3 Crew (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May take an additional crew +6 points
-
-#entry("MORTAR")
-#profile(
-  (name: "Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine (Mortar)")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("MORTAR",
+  profiles: (
+    (name: "Mortar", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine (Mortar)",
+  crew: "3 Crew (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May take an additional crew +6 points
+  ],
+)
 
 = RARE UNITS
 
-#entry("DEMIGRYPH KNIGHTS", first: true)
-#profile(
-  (name: "Inner Circle Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 68),
-  (name: "Demigryph", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: ""),
-)
-#field("UNIT SIZE", "3+")
-#field("TROOP TYPE", "Monstrous Cavalry (Human)")
-#field("MOUNT", "Demigryph (Animal)")
-#field("BASE SIZE", "40x60 or 50x75")
-#field("EQUIPMENT", "Polearm, full plate armour, shield, barding")
-#field("OPTIONS", "")
-
+#unit("DEMIGRYPH KNIGHTS",
+  first: true,
+  profiles: (
+    (name: "Inner Circle Knight", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 8, points: 68),
+    (name: "Demigryph", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 3, ld: 7, points: ""),
+  ),
+  unit-size: "3+",
+  troop-type: "Monstrous Cavalry (Human)",
+  mount: "Demigryph (Animal)",
+  base-size: "40x60 or 50x75",
+  equipment: "Polearm, full plate armour, shield, barding",
+  options: [
 - May be upgraded to a Knightly Order no points limit
 - May replace polearms with heavy lances +6 points/model
 - May upgrade one Inner Circle Knight to a Leader +5 points
 - May upgrade one Inner Circle Knight to a Musician +5 points
 - May upgrade one Inner Circle Knight to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#entry("HELBLASTER VOLLEY GUN")
-#profile(
-  (name: "Helblaster Volley Gun", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine (Organ Gun)")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
 
+#unit("HELBLASTER VOLLEY GUN",
+  profiles: (
+    (name: "Helblaster Volley Gun", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine (Organ Gun)",
+  crew: "3 Crew (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  equipment-body: [
 - *Helblaster Volley Gun:* A Helblaster volley gun uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24", "5", "Armour Piercing (1), Multiple Shots (Artillery Dice), Rapid Fire, Slow to Fire"))
@@ -1384,106 +1273,105 @@ If a May not Shoot result is rolled, this only applies to the current Artillery 
 If a Malfunction result is rolled, this only applies to the current and the next Artillery dice rolled (if this is the third Artillery dice rolled this turn, the first Artillery dice the next turn is wasted).
 
 If a Destroyed! result is rolled, all previously Artillery dice shots this turn are still resolved before the war machine is removed. After all Artillery dice are rolled, resolve the number of shots as normal
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional crew +6 points
-
-#entry("HELSTORM ROCKET BATTERY")
-#profile(
-  (name: "Helstorm Rocket Battery", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine (Rocket Launcher)")
-#field("CREW", "3 Crew (Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
 
+#unit("HELSTORM ROCKET BATTERY",
+  profiles: (
+    (name: "Helstorm Rocket Battery", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "War Machine (Rocket Launcher)",
+  crew: "3 Crew (Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  equipment-body: [
 - *Helstorm Rocket Battery:* A Helstorm Rocket Battery fires in the same manner as an ordinary Rocket Launcher, except that you scatter 3 templates from its target position rather than 1.
 
 When scattering any templates after the first, only the scatter dice is rolled; the result from the artillery dice first rolled applies to all shots fired that turn.
 
 In addition, all shots made with a Helstorm counts as being fired indirectly.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take an additional crew +6 points
-
-#entry("WAR WAGON")
-#profile(
-  (name: "War Wagon", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
-  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 4+)")
-#field("CREW", "6 (Human)")
-#field("DRAWN BY", "2 Warhorses (Animal)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Ball & chain, blunderbuss, Hochland long rifle, hook halberd, man catcher, repeater handgun, barding")
 
-- *Ball & Chain:* Flail. Each successful Hit with a ball & chain is multiplied into D3 Hits.
-- *Hook Halberd:* Polearm. Against Cavalry and Monstrous Cavalry, attacks made with a hook halberd gains +1 To Hit.
-- *Man Catcher:* A model armed with a man catcher has the Killing Blow special rule.
-
-#field("OPTIONS", "")
-
+#unit("WAR WAGON",
+  profiles: (
+    (name: "War Wagon", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+    (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 4+)",
+  crew: "6 (Human)",
+  drawn-by: "2 Warhorses (Animal)",
+  base-size: "50x100 or 60x100",
+  equipment: "Ball & chain, blunderbuss, Hochland long rifle, hook halberd, man catcher, repeater handgun, barding",
+  equipment-body: (
+    rule("Ball & Chain")[Flail. Each successful Hit with a ball & chain is multiplied into D3 Hits.],
+    rule("Hook Halberd")[Polearm. Against Cavalry and Monstrous Cavalry, attacks made with a hook halberd gains +1 To Hit.],
+    rule("Man Catcher")[A model armed with a man catcher has the Killing Blow special rule.],
+  ),
+  options: [
 - May choose one of the following:
   - Replace all equipment (except barding) with handguns +10 points
   - Replace 3 crew and all equipment (except barding) with a Mortar +40 points
 - May take light armour +15 points
 - May take two additional crew (if armed with handguns) +12 points
-
-#field("SPECIAL RULES", "")
-
-- *Mixed Weaponry:* Unless they are armed with handguns or a mortar, the crew of a War Wagon are each equipped with one of the following experimental weapons: ball & chain, blunderbuss, Hochland long rifle, hook halberd, man catcher, repeater handgun. You may not take multiples of the same weapon. Unlike other units, each crew model may choose to allocate their missile attack at a different target if they wish.
-- *Stable Platform:* The crew ignore the Ponderous special rule of any weapon they carry.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: (
+    rule("Mixed Weaponry")[Unless they are armed with handguns or a mortar, the crew of a War Wagon are each equipped with one of the following experimental weapons: ball & chain, blunderbuss, Hochland long rifle, hook halberd, man catcher, repeater handgun. You may not take multiples of the same weapon. Unlike other units, each crew model may choose to allocate their missile attack at a different target if they wish.],
+    rule("Stable Platform")[The crew ignore the Ponderous special rule of any weapon they carry.],
+  ),
+  notes: [
 - A War Wagon has a Unit Strength of 8 and Line of Sight value of 4.
 - You may take 1\-2 War Wagons a single Rare choice.
-
-#entry("LUMINARK OF HYSH")
-#profile(
-  (name: "Luminark of Hysh", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 120),
-  (name: "Acolyte", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
-  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "crew", "drawn-by", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Chariot (Armour save 5+)")
-#field("CREW", "2 Acolytes (Human)")
-#field("DRAWN BY", "2 Warhorses (Animal)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, barding")
-#field("SPECIAL RULES", "")
 
-- *Locus of Hysh:* For each friendly Luminark of Hysh on the battlefield at the start of the enemy magic phase, add 1 dice to your dispel pool.
-
-#field("UPGRADES", "")
-
-- *Aura of Protection:* The Luminark of Hysh and all friendly units within 6" of have a 6+ Ward save.
-- *Solheim's Bolt of Illumination:* Innate bound spell (power level 4). _Solheim's Bolt of Illumination_ is a *magic missile* with a range of 36". It causes a Strength 8 hit that has the Multiple Wounds (D3) and Flaming Attacks special rules, and penetrates ranks in the same manner as a shot from a bolt thrower. Armour saves are not permitted against Wounds caused by _Solheim's Bolt of Illumination._ If the target is a Daemon, Undead or Vampire, all failed To Wound rolls caused by this spell are re-rolled.
-
-#field("NOTES", "")
-
+#unit("LUMINARK OF HYSH",
+  profiles: (
+    (name: "Luminark of Hysh", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 120),
+    (name: "Acolyte", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+    (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 5+)",
+  crew: "2 Acolytes (Human)",
+  drawn-by: "2 Warhorses (Animal)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon, barding",
+  special-rules: (
+    rule("Locus of Hysh")[For each friendly Luminark of Hysh on the battlefield at the start of the enemy magic phase, add 1 dice to your dispel pool.],
+  ),
+  upgrades: (
+    rule("Aura of Protection")[The Luminark of Hysh and all friendly units within 6" of have a 6+ Ward save.],
+    rule("Solheim's Bolt of Illumination")[Innate bound spell (power level 4). _Solheim's Bolt of Illumination_ is a *magic missile* with a range of 36". It causes a Strength 8 hit that has the Multiple Wounds (D3) and Flaming Attacks special rules, and penetrates ranks in the same manner as a shot from a bolt thrower. Armour saves are not permitted against Wounds caused by _Solheim's Bolt of Illumination._ If the target is a Daemon, Undead or Vampire, all failed To Wound rolls caused by this spell are re-rolled.],
+  ),
+  notes: [
 - A Luminark of Hysh has a Line of Sight value of 4.
-
-#entry("CELESTIAL HURRICANUM")
-#profile(
-  (name: "Celestial Hurricanum", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 125),
-  (name: "Acolyte", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
-  (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 5+)")
-#field("CREW", "2 Acolytes (Human)")
-#field("DRAWN BY", "2 Warhorses (Animal)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, barding")
-#field("SPECIAL RULES", "")
 
-- *Locus of Azyr:* For each friendly Celestial Hurricanum on the battlefield at the start of your magic phase, add 1 dice to your power pool.
-
-#field("UPGRADES", "")
-
+#unit("CELESTIAL HURRICANUM",
+  profiles: (
+    (name: "Celestial Hurricanum", m: 7, ws: "-", bs: "-", s: 5, t: 5, w: 5, i: "-", a: "-", ld: "-", points: 125),
+    (name: "Acolyte", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+    (name: "Warhorse", m: "-", ws: 3, bs: 0, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 5+)",
+  crew: "2 Acolytes (Human)",
+  drawn-by: "2 Warhorses (Animal)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon, barding",
+  special-rules: (
+    rule("Locus of Azyr")[For each friendly Celestial Hurricanum on the battlefield at the start of your magic phase, add 1 dice to your power pool.],
+  ),
+  upgrades: [
 - *Portents of Battle:* The Hurricanum and all friendly units within 6" re-roll 1's when rolling to Hit.
 - *Storm of Shemtek:* Innate bound spell (power level 4). _Storm of Shemtek_ is a *direct damage* spell with a range of 24". Place the small round template over the target – it scatters D3". Then roll a D6 and consult the table below to see what effect it has. If the template hits a unit with the Fly special rule, it suffers D6 Strength 4 hits, in addition to any other effects (even if a Sudden Downpour is summoned).
 
@@ -1496,20 +1384,22 @@ casting player chooses the direction). If, by rotating the unit, it would come w
 impassable terrain, simply stop rotating the unit as soon as it moves to within 1\"."), ("4-5", "Lightning Strike: The model under the template's central hole suffers a Strength 6 hit. Other models
 hit by the template suffer a Strength 3 hit. This is a Lightning Attack."), ("6", "Meteor Strike: The model under the template's central hole suffers a Strength 6 hit with the Multiple
 Wounds (D6) Special rule. All other models hit by the template suffer a Strength 3 hit.")))
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Celestial Hurricanum has a Line of Sight value of 4.
-
-#entry("STEAM TANK")
-#profile(
-  (name: "Steam Tank", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 250),
-  (name: "Engineer Commander", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 1+)")
-#field("CREW", "1 Engineer Commander (Human)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("EQUIPMENT", "Hand weapon, repeater pistol, steam cannon, steam gun")
 
+#unit("STEAM TANK",
+  profiles: (
+    (name: "Steam Tank", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 10, i: "-", a: "-", ld: "-", points: 250),
+    (name: "Engineer Commander", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 1+)",
+  crew: "1 Engineer Commander (Human)",
+  base-size: "50x100 or 60x100",
+  equipment: "Hand weapon, repeater pistol, steam cannon, steam gun",
+  equipment-body: [
 - *Steam Cannon:* A steam cannon is a cannon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/24/36\"", "10", "Multiple Wounds (D6/D3)"))
@@ -1523,18 +1413,17 @@ If the first artillery dice rolls a misfire, the Steam Cannon does not fire and 
 - *Steam Gun:* The steam gun is a Breath Weapon attack that can be fired every turn. The steam gun's Strength is dependent on how many Steam Points (see Steam Engine below) that are expended. If you choose not to expend any Steam Points in the Steam Gun, you cannot fire it that turn.
 
 If you expend a single Steam Point, the Steam Gun has Strength 2 Breath Weapon with the Armour Piercing (1) special rule, which uses the Engineer Commander's Initiative. The Strength of the Breath Weapon is increased by 1 for each additional Steam Point expended in the Steam Gun.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take a Hochland long rifle +10 points
 - May be upgraded to one of the following:
   - Implacable free
   - Old Reliable free
   - Sigmar's Hammer free
   - Von Zeppel free
-
-#field("SPECIAL RULES", "Animated Construct, Terror")
-
+  ],
+  special-rules: "Animated Construct, Terror",
+  special-rules-body: [
 - *Steam Engine:* At the start of your turn, declare how many Steam Points your Steam Tank is generating – this can be any number between 0 and 5. After you have generated your Steam Points (if any), roll an artillery dice. If the result is greater than the Steam Tank's current number of Wounds, or if you roll a misfire, roll a D3 and then, for each Steam Point the Steam Tank currently has, add 1 to the result and consult the Steam Boiler Mishap chart.
 
 You can expend Steam Points in three ways: through the Steam Engine, or Steam Weapons. You can expend up to 3 Steam Points in each of these categories, as long as you have enough Steam Points remaining. Any Steam Points left unused at the end of your turn are lost.
@@ -1556,9 +1445,8 @@ Strength 4 hits, distributed as from shooting (roll for each unit). After resolv
 damage, the Steam Tank is removed as a casualty.")))
 
 - *Steel Behemoth:* A Steam Tank, and its crew, can shoot missile weapons with the Move or Fire special rule even if it moved in its Movement phase. In addition, a Steam Tank cannot overrun or pursue a fleeing enemy – it automatically restrains and is unable to perform combat reforms.
-
-#field("UPGRADES", "")
-
+  ],
+  upgrades: [
 - *Implacable:* The Implacable replaces the steam cannon and steam gun with a Mortar. If the first artillery dice rolls a misfire, the Mortar does not fire and the Steam Tank immediately loses D3 Wounds which Ignores Armour Saves. In addition, it also gains swivel guns with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "6", "Armour Piercing (1), Multiple Shots (2), Rapid Fire"))
@@ -1566,159 +1454,162 @@ damage, the Steam Tank is removed as a casualty.")))
 - *Old Reliable:* Old Reliable replaces the steam cannon with an Organ Gun. If you roll a misfire, the Organ Gun does not fire and the Steam Tank immediately loses D3 Wounds which Ignores Armour Saves.
 - *Sigmar's Hammer:* Sigmar's Hammer does not have a steam cannon or steam gun. When charging or using its grinding attack, the Sigmar's Hammer inflicts D6 hits per Steam point spent rather than D3. In addition, it may re-roll 1's when taking armour saves.
 - *Von Zeppel:* The von Zeppel replaces the steam gun with a Fighting Platform. This includes 6 Crew armed with Mixed Weaponry as described in the War Wagon's entry.
-
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Steam Tank has a Line of Sight value of 4.
 - You may not have more than 8 Steam Tanks in your army.
+  ],
+  order: ("troop-type", "crew", "base-size", "equipment", "options", "special-rules", "upgrades", "notes"),
+)
 
 = SPECIAL CHARACTERS (LORDS)
 
-#entry("KARL FRANZ", first: true)
-#namecost("The Emperor, Elector Count of Reikland, Prince of Altdorf", "")
-#profile(
-  (name: "Karl Franz", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 310),
-  (name: "Deathclaw (Imperial Griffon)", m: 6, ws: 6, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 5, ld: 8, points: ""),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
-
-- *Ghal Maraz:* Magic Weapon. Hits from Ghal Maraz Wound automatically with the Ignores Armour Saves and Multiple Wounds (D3) special rules.
-- *Dragon Tooth, the Reikland Runefang:* Magic Weapon. All hits from the Reikland Runefang Wound automatically with the Ignores Armour Saves special rule.
-- *The Emperor's Armour:* Magic Armour. Full plate armour. This armour allows Karl Franz to re-roll failed armour saves.
-- *The Silver Seal:* Talisman. The Silver Seal grants Karl Franz a Ward save (4+) and the Magic Resistance (2) special rule.
-
-#field("OPTIONS", "")
-
+#unit("KARL FRANZ",
+  first: true,
+  subtitle: "The Emperor, Elector Count of Reikland, Prince of Altdorf",
+  profiles: (
+    (name: "Karl Franz", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 310),
+    (name: "Deathclaw (Imperial Griffon)", m: 6, ws: 6, bs: 0, s: 6, t: 5, w: 5, i: 4, a: 5, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Ghal Maraz")[Magic Weapon. Hits from Ghal Maraz Wound automatically with the Ignores Armour Saves and Multiple Wounds (D3) special rules.],
+    rule("Dragon Tooth, the Reikland Runefang")[Magic Weapon. All hits from the Reikland Runefang Wound automatically with the Ignores Armour Saves special rule.],
+    rule("The Emperor's Armour")[Magic Armour. Full plate armour. This armour allows Karl Franz to re-roll failed armour saves.],
+    rule("The Silver Seal")[Talisman. The Silver Seal grants Karl Franz a Ward save (4+) and the Magic Resistance (2) special rule.],
+  ),
+  options: [
 - May replace Dragon Tooth with Ghal Maraz +15 points
 - May be mounted on one of the following:
   - Warhorse +18 points
   - Pegasus +30 points
   - Griffon +125 points
   - Deathclaw +210 points
-
-#field("SPECIAL RULES", "Hold the Line (see Imperial General), Immunity (Psychology)")
-
-- *Leader of Men:* The Emperor must be your Army General. He has Inspiring Presence (18) special rule in total, and any models using his Leadership may re-roll failed Panic tests. In addition, his Hold the Line special rule also affects units of Reiksguard Knights.
-- *Altdorf Company of Honor:* If Karl Franz is included in your army, you may upgrade one unit of Halberdiers to the Altdorf Company of Honor for +1 point per model. This unit has +1 Weapon Skill and +1 Initiative.
-- *The Carroburg Greatswords:* If Karl Franz is included in your army, you may upgrade one unit of Greatswords to Carroburg Greatswords for +0.5 point per model. This unit may re-roll failed Break tests.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Hold the Line (see Imperial General), Immunity (Psychology)",
+  special-rules-body: (
+    rule("Leader of Men")[The Emperor must be your Army General. He has Inspiring Presence (18) special rule in total, and any models using his Leadership may re-roll failed Panic tests. In addition, his Hold the Line special rule also affects units of Reiksguard Knights.],
+    rule("Altdorf Company of Honor")[If Karl Franz is included in your army, you may upgrade one unit of Halberdiers to the Altdorf Company of Honor for +1 point per model. This unit has +1 Weapon Skill and +1 Initiative.],
+    rule("The Carroburg Greatswords")[If Karl Franz is included in your army, you may upgrade one unit of Greatswords to Carroburg Greatswords for +0.5 point per model. This unit may re-roll failed Break tests.],
+  ),
+  notes: [
 - Deathclaw has the Bloodroar upgrade.
-
-#entry("KURT HELBORG")
-#namecost("Reiksmarshal of the Empire", "")
-#profile(
-  (name: "Kurt Helborg", m: 4, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 300),
-  (name: "Krieglust (Warhorse)", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "magic-items", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Krieglust (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Barding")
-#field("MAGIC ITEMS", "")
 
-- *Grudge Settler, the Solland Runefang:* Magic Weapon. All hits from the Solland Runefang Wound automatically with the Ignores Armour Saves special rule.
-- *Dawn Armour:* Magic Armour. Full plate armour. This armour ignores Strength penalties from attacks and Armour Piercing, so Kurt Helborg's armour save can never fall below 3+.
-- *Laurels of Victory:* Enchanted Item. Each unsaved Wound caused by Kurt Helborg is multiplied by 2 when calculating the combat result.
-- *Rod of Command:* Enchanted Item. One use only. The first time the character and his unit has to take a Break test, they automatically pass it.
-
-#field("SPECIAL RULES", "Immunity (Psychology), Master of Battle (see Grand Masters), Stubborn")
-
-- *The Emperor's Chosen:* If Kurt Helborg is included in your army, your must upgrade one unit of Reiksguard Knights to Inner Circle Knights. Kurt Helborg must join this unit, and may never leave it. The unit may re-roll failed Break tests for as long as he remains in it.
-
-#entry("VOLKMAR THE GRIM")
-#namecost("The Grand Theogonist", "")
-#profile(
-  (name: "Volkmar the Grim", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 195),
+#unit("KURT HELBORG",
+  subtitle: "Reiksmarshal of the Empire",
+  profiles: (
+    (name: "Kurt Helborg", m: 4, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 300),
+    (name: "Krieglust (Warhorse)", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Krieglust (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Barding",
+  magic-items: (
+    rule("Grudge Settler, the Solland Runefang")[Magic Weapon. All hits from the Solland Runefang Wound automatically with the Ignores Armour Saves special rule.],
+    rule("Dawn Armour")[Magic Armour. Full plate armour. This armour ignores Strength penalties from attacks and Armour Piercing, so Kurt Helborg's armour save can never fall below 3+.],
+    rule("Laurels of Victory")[Enchanted Item. Each unsaved Wound caused by Kurt Helborg is multiplied by 2 when calculating the combat result.],
+    rule("Rod of Command")[Enchanted Item. One use only. The first time the character and his unit has to take a Break test, they automatically pass it.],
+  ),
+  special-rules: "Immunity (Psychology), Master of Battle (see Grand Masters), Stubborn",
+  special-rules-body: (
+    rule("The Emperor's Chosen")[If Kurt Helborg is included in your army, your must upgrade one unit of Reiksguard Knights to Inner Circle Knights. Kurt Helborg must join this unit, and may never leave it. The unit may re-roll failed Break tests for as long as he remains in it.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Staff of Command:* Magic Weapon. As long as Volkmar the Grim is mounted upon the War Altar of Sigmar, all close combat attacks made with the Staff of Command are resolved at +2 Strength, at other times it gives +1 Strength.
-- *Jade Griffon:* Talisman. The Jade Griffon makes the bearer regain 1 Wound suffered earlier in the game at the start of each turn, up to their starting value.
-
-#field("OPTIONS", "")
-
+#unit("VOLKMAR THE GRIM",
+  subtitle: "The Grand Theogonist",
+  profiles: (
+    (name: "Volkmar the Grim", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 4, a: 2, ld: 9, points: 195),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Staff of Command")[Magic Weapon. As long as Volkmar the Grim is mounted upon the War Altar of Sigmar, all close combat attacks made with the Staff of Command are resolved at +2 Strength, at other times it gives +1 Strength.],
+    rule("Jade Griffon")[Talisman. The Jade Griffon makes the bearer regain 1 Wound suffered earlier in the game at the start of each turn, up to their starting value.],
+  ),
+  options: [
 - May be mounted on the War Altar of Sigmar +150 points
-
-#field("SPECIAL RULES", "Battle Prayers of Sigmar (see Arch-Lector), Magic Resistance (2), Righteous Fury (see Arch-")
-
+  ],
+  special-rules: "Battle Prayers of Sigmar (see Arch-Lector), Magic Resistance (2), Righteous Fury (see Arch-",
+  special-rules-body: [
 Lector)
 
 - *Grand Theogonist:* Volkmar the Grim may re-roll failed Leadership tests when using Battle Prayers. In addition, if Volkmar is your Army General, Flagellants count as Core Units rather than Special Units.
-
-#entry("BALTHASAR GELT")
-#namecost("The Supreme Patriarch, Arch-alchemist", "")
-#profile(
-  (name: "Balthasar Gelt", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 350),
-  (name: "Quicksilver (Pegasus)", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+  ],
+  order: ("troop-type", "base-size", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Quicksilver (Animal)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Hand weapon, Al-kahest")
 
+#unit("BALTHASAR GELT",
+  subtitle: "The Supreme Patriarch, Arch-alchemist",
+  profiles: (
+    (name: "Balthasar Gelt", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 350),
+    (name: "Quicksilver (Pegasus)", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Quicksilver (Animal)",
+  base-size: "40x40 or 50x50",
+  equipment: "Hand weapon, Al-kahest",
+  equipment-body: [
 - *Al-kahest:* Al-kahest is a missile weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6\"", "n/a", "Flaming Attacks, Ignores Armour Saves, Magical Attacks, Quick to Fire"))
 
 Al-kahest Wounds any target on a 4+.
-
-#field("MAGIC", "Balthasar Gelt is a Level 4 Wizard who uses spells from the Lore of Metal.")
-#field("MAGIC ITEMS", "")
-
-- *Staff of Volans:* Arcane Item. The Staff of Volans grants Balthasar Gelt a +2 casting bonus.
-- *Amulet of Sea Gold:* Talisman. The Amulet of Sea Gold grants Balthasar Gelt the Magic Resistance (1) special rule, and adds +1 to the Magic Resistance for each enemy wizard currently on the battlefield, up to a maximum of 3.
-- *Cloak of Molten Metal:* Talisman. The Cloak of Molten Metal grants Balthasar Gelt a 3+ Ward save against missile attacks.
-
-#field("SPECIAL RULES", "Fly (9), Loremaster (Lore of Metal)")
-
-#entry("THYRUS GORMANN")
-#namecost("High Wizard of the Bright Order", "")
-#profile(
-  (name: "Thyrus Gormann", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 350),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  magic: "Balthasar Gelt is a Level 4 Wizard who uses spells from the Lore of Metal.",
+  magic-items: (
+    rule("Staff of Volans")[Arcane Item. The Staff of Volans grants Balthasar Gelt a +2 casting bonus.],
+    rule("Amulet of Sea Gold")[Talisman. The Amulet of Sea Gold grants Balthasar Gelt the Magic Resistance (1) special rule, and adds +1 to the Magic Resistance for each enemy wizard currently on the battlefield, up to a maximum of 3.],
+    rule("Cloak of Molten Metal")[Talisman. The Cloak of Molten Metal grants Balthasar Gelt a 3+ Ward save against missile attacks.],
+  ),
+  special-rules: "Fly (9), Loremaster (Lore of Metal)",
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Barding")
-#field("MAGIC", "Thyrus Gormann is a Level 4 Wizard who uses spells from the Lore of Fire.")
-#field("MAGIC ITEMS", "")
 
-- *The Bright Sword:* Magic Weapon. This magic sword gives Thyrus +1 when rolling To Wound as well as Flaming Attacks.
-- *Firebrand Staff:* Arcane Item. Thyrus may add 12" to the range of his spells.
-- *The Fire Stone of Agni:* Arcane Item. Once per turn, Thyrus may add +2 Power Dice to casting one of his spells.
-- *The Blazing Ruby:* Talisman. The Blazing Ruby confers the Ward save (5+) and the Immunity (Flaming Attacks) special rules.
-
-#field("SPECIAL RULES", "Loremaster (Lore of Fire)")
-
-#entry("ELSPETH VON DRAKEN")
-#namecost("The Dark Lady of Nuln, the Graveyard Rose", "")
-#profile(
-  (name: "Elspeth von Draken", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 265),
-  (name: "Carmine Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
+#unit("THYRUS GORMANN",
+  subtitle: "High Wizard of the Bright Order",
+  profiles: (
+    (name: "Thyrus Gormann", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 350),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Barding",
+  magic: "Thyrus Gormann is a Level 4 Wizard who uses spells from the Lore of Fire.",
+  magic-items: (
+    rule("The Bright Sword")[Magic Weapon. This magic sword gives Thyrus +1 when rolling To Wound as well as Flaming Attacks.],
+    rule("Firebrand Staff")[Arcane Item. Thyrus may add 12" to the range of his spells.],
+    rule("The Fire Stone of Agni")[Arcane Item. Once per turn, Thyrus may add +2 Power Dice to casting one of his spells.],
+    rule("The Blazing Ruby")[Talisman. The Blazing Ruby confers the Ward save (5+) and the Immunity (Flaming Attacks) special rules.],
+  ),
+  special-rules: "Loremaster (Lore of Fire)",
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25 (Elspeth von Draken), 75x75 (Carmine Dragon)")
-#field("MAGIC", "Elspeth von Draken is a Level 4 Wizard who uses spells from the Lore of Death.")
-#field("MAGIC ITEMS", "")
 
-- *The Pale Scythe:* Magic Weapon. This weapon has the Killing Blow special rule and gives Elspeth von Draken a +1 dispel bonus.
-- *Death's Timekeeper:* Enchanted Item. Once per player turn, Elspeth von Draken can re-roll a single dice of your choice concerning her or the Carmine Dragon (this can include attacks, saving throws, magic dice and the Artillery dice used to determine the Carmine Dragon's Coruscating blast if desired). If this re-roll is not used, at the end of her player's turn Elspeth von Draken may recover a wound previously lost in the game.
-
-#field("OPTIONS", "")
-
+#unit("ELSPETH VON DRAKEN",
+  subtitle: "The Dark Lady of Nuln, the Graveyard Rose",
+  profiles: (
+    (name: "Elspeth von Draken", m: 4, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 265),
+    (name: "Carmine Dragon", m: 6, ws: 6, bs: 0, s: 6, t: 6, w: 6, i: 3, a: 5, ld: 8, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25 (Elspeth von Draken), 75x75 (Carmine Dragon)",
+  magic: "Elspeth von Draken is a Level 4 Wizard who uses spells from the Lore of Death.",
+  magic-items: (
+    rule("The Pale Scythe")[Magic Weapon. This weapon has the Killing Blow special rule and gives Elspeth von Draken a +1 dispel bonus.],
+    rule("Death's Timekeeper")[Enchanted Item. Once per player turn, Elspeth von Draken can re-roll a single dice of your choice concerning her or the Carmine Dragon (this can include attacks, saving throws, magic dice and the Artillery dice used to determine the Carmine Dragon's Coruscating blast if desired). If this re-roll is not used, at the end of her player's turn Elspeth von Draken may recover a wound previously lost in the game.],
+  ),
+  options: [
 - May be mounted on one of the following:
   - Warhorse +18 points
   - Carmine Dragon +320 points
-
-#field("SPECIAL RULES", "Fly (7) (Carmine Dragon only), Loremaster (Lore of Death), Natural Armour (3+) (Carmine")
-
+  ],
+  special-rules: "Fly (7) (Carmine Dragon only), Loremaster (Lore of Death), Natural Armour (3+) (Carmine",
+  special-rules-body: [
 Dragon only)
 
 - *Darkwalker:* Elspeth has Immunity (Psychology) and all To Wound rolls made against her suffer a \-1 penalty. However, she also suffers any extra effect that is listed as specifically damaging Undead.
@@ -1727,26 +1618,27 @@ Dragon only)
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "*", "Ignores Armour Saves, Magical Attacks, Multiple Wounds (D3), Slow to Fire"))
 
 This weapon has a Strength equivalent to 10 minus the target's Toughness.
-
-#entry("MARIUS LEITDORF")
-#namecost("Elector Count of Averland", "")
-#profile(
-  (name: "Marius Leitdorf", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 185),
-  (name: "Daisy (Warhorse)", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "magic", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Mothers Ruin, the Averland Runefang:* Magic Weapon. Two hand weapons. All hits from the Averland Runefang Wound automatically with the Ignores Armour Saves special rule.
-
-#field("OPTIONS", "")
-
+#unit("MARIUS LEITDORF",
+  subtitle: "Elector Count of Averland",
+  profiles: (
+    (name: "Marius Leitdorf", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 185),
+    (name: "Daisy (Warhorse)", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Mothers Ruin, the Averland Runefang")[Magic Weapon. Two hand weapons. All hits from the Averland Runefang Wound automatically with the Ignores Armour Saves special rule.],
+  ),
+  options: [
 - May be mounted on Daisy (with barding) +23 points
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "Hold the Line (see Imperial General)")
-
+  ],
+  special-rules: "Hold the Line (see Imperial General)",
+  special-rules-body: [
 - *The Mad Count:* At the start of every friendly turn, Marius Leitdorf must take a Leadership test on 3D6, discarding the lowest result. If passed, he behaves himself and acts normally this turn, otherwise roll a D6 and consult the table below:
 
 #chart((("D6", "Result"), ("1", "Lunatic Ravings: For the remainder of the turn, Marius is treated as though he has failed a Stupidity
@@ -1757,278 +1649,290 @@ rule for the rest of the game. This has no effect on units that have Immunity (P
 Stubborn special rule and must accept any challenge until he rolls on this table again.")))
 
 - *Knights of the Black Lynx:* If Marius Leitdorf is included in your army, you may upgrade one unit of Imperial Foot Knights to Knights of the Black Lynx for +1 point per model. This unit must take polearms and has the Ambushers special rule.
-
-#entry("ALDEBRAND LUDENHOF")
-#namecost("Elector Count of Hochland", "")
-#profile(
-  (name: "Aldebrand Ludenhof", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 170),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Full plate armour")
-#field("MAGIC ITEMS", "")
 
-- *Goblin Bane, the Hochland Runefang:* Magic Weapon. All hits from the Averland Runefang Wound automatically with the Ignores Armour Saves special rule.
-
-#field("OPTIONS", "")
-
+#unit("ALDEBRAND LUDENHOF",
+  subtitle: "Elector Count of Hochland",
+  profiles: (
+    (name: "Aldebrand Ludenhof", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 170),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Full plate armour",
+  magic-items: (
+    rule("Goblin Bane, the Hochland Runefang")[Magic Weapon. All hits from the Averland Runefang Wound automatically with the Ignores Armour Saves special rule.],
+  ),
+  options: [
 - May be mounted on a Warhorse +18 points
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "Hold the Line (see Imperial General)")
-
-- *Aldebrand's Hawk:* The hawk may target models using the Sniper special rule. The target must pass a Weapon Skill test or suffer a Strength 3 hit.
-- *Hergig Jaegerkorps:* If Aldebrand Ludenhof is included in your army, you may upgrade one unit of Huntsmen to Hergig Jaegerkorps for +3 pts per model. This unit is armed with Hochland Long Rifles (without the Sniper special rule) instead of bows.
-
-#entry("VALMIR VON RAUKOV")
-#namecost("Elector Count of Ostland", "")
-#profile(
-  (name: "Valmir von Raukov", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: "Hold the Line (see Imperial General)",
+  special-rules-body: (
+    rule("Aldebrand's Hawk")[The hawk may target models using the Sniper special rule. The target must pass a Weapon Skill test or suffer a Strength 3 hit.],
+    rule("Hergig Jaegerkorps")[If Aldebrand Ludenhof is included in your army, you may upgrade one unit of Huntsmen to Hergig Jaegerkorps for +3 pts per model. This unit is armed with Hochland Long Rifles (without the Sniper special rule) instead of bows.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
+#unit("VALMIR VON RAUKOV",
+  subtitle: "Elector Count of Ostland",
+  profiles: (
+    (name: "Valmir von Raukov", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: [
 - *Brain Wounder, the Ostland Runefang:* Magic Weapon. All hits from the Averland Runefang Wound automatically with the Ignores Armour Saves special rule.
 - *The Dragon Bow:* Magic Weapon. The Dragon Bow has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "5", "Multiple Shots (3), Volley Fire"))
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take a shield +3 points
 - May be mounted on a Warhorse +18 points
-
-#field("SPECIAL RULES", "Hold the Line (see Imperial General)")
-
-- *Hammer of the East:* Valmir von Raukov and any unit he joins has the Stubborn special rule in the first round of Close Combat.
-- *Fireloques of Ferlangen:* If Valmir von Raukov is included in your army, you may upgrade one unit of Handgunners to Fireloques of Ferlangen for +1 pt per model. This unit has the Stubborn special rule and ignore To Hit penalties for Stand & Shoot.
-
-#entry("MAGNUS THE PIOUS")
-#namecost("Saviour of the Empire, Bane of Chaos", "")
-#profile(
-  (name: "Magnus the Pious", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 180),
+  ],
+  special-rules: "Hold the Line (see Imperial General)",
+  special-rules-body: (
+    rule("Hammer of the East")[Valmir von Raukov and any unit he joins has the Stubborn special rule in the first round of Close Combat.],
+    rule("Fireloques of Ferlangen")[If Valmir von Raukov is included in your army, you may upgrade one unit of Handgunners to Fireloques of Ferlangen for +1 pt per model. This unit has the Stubborn special rule and ignore To Hit penalties for Stand & Shoot.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *The Gilded Armour:* Magic Armour. Heavy armour. Models attacking the wearer in close combat must pass a Strength test before rolling to hit for every Attack directed at the target. If the test is failed, the Attack is lost. Attacks that do not roll to Hit are unaffected.
-
-#field("OPTIONS", "")
-
+#unit("MAGNUS THE PIOUS",
+  subtitle: "Saviour of the Empire, Bane of Chaos",
+  profiles: (
+    (name: "Magnus the Pious", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 180),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("The Gilded Armour")[Magic Armour. Heavy armour. Models attacking the wearer in close combat must pass a Strength test before rolling to hit for every Attack directed at the target. If the test is failed, the Attack is lost. Attacks that do not roll to Hit are unaffected.],
+  ),
+  options: [
 - May be mounted on a Warhorse +18 points
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "Hold the Line (see Imperial General), Immunity (Psychology), Inspiring Presence (6), Righteous Fury (see Arch-Lector)")
-
-- *The Power of Sigmar:* Magnus the Pious has a 5+ Ward save and the Magic Resistance (2) special rule. In close combat Magnus may make a special Attack at Strength 10 with the Multiple Wounds (D3) special rule instead of his normal attacks.
-
-#entry("JOHANN VAN HAL & WILHELM HASBURG")
-#namecost("Witch Hunters", "")
-#profile(
-  (name: "Johann van Hal", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 130),
-  (name: "Wilhelm Hasburg", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 135),
+  ],
+  special-rules: "Hold the Line (see Imperial General), Immunity (Psychology), Inspiring Presence (6), Righteous Fury (see Arch-Lector)",
+  special-rules-body: (
+    rule("The Power of Sigmar")[Magnus the Pious has a 5+ Ward save and the Magic Resistance (2) special rule. In close combat Magnus may make a special Attack at Strength 10 with the Multiple Wounds (D3) special rule instead of his normal attacks.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Brace of pistols (Johann van Hal only)")
-#field("MAGIC ITEMS", "")
 
-- *Stake of Sigmar:* Johann van Hal only. Magic Weapon. The Stake of Sigmar doubles Johann's Strength when he is fighting against Daemons, Undead or Vampires. An unsaved wound caused by the Stake automatically slays Daemons, Undead or Vampires, with no saves allowed.
-- *Holy Staff:* Wilhelm Hasburg only. Magic Weapon. Great weapon. The staff will automatically Wound any Daemons, Skaven, Undead or Vampires.
-- *The Hammer of Witches:* Wilhelm Hasburg only. Talisman. Wilhelm and Johann gain the Magic Resistance (1) special rule against any spells from the Lore of Dark Magic, Necromancy, Nurgle, Slaanesh and Tzeentch.
-
-#field("SPECIAL RULES", "Accusation (Johann van Hal only, see Witch Hunter Captain), Battle Prayers of Sigmar")
-
+#unit("JOHANN VAN HAL & WILHELM HASBURG",
+  subtitle: "Witch Hunters",
+  profiles: (
+    (name: "Johann van Hal", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 130),
+    (name: "Wilhelm Hasburg", m: 4, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 135),
+  ),
+  troop-type: "Infantry (Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Brace of pistols (Johann van Hal only)",
+  magic-items: (
+    rule("Stake of Sigmar")[Johann van Hal only. Magic Weapon. The Stake of Sigmar doubles Johann's Strength when he is fighting against Daemons, Undead or Vampires. An unsaved wound caused by the Stake automatically slays Daemons, Undead or Vampires, with no saves allowed.],
+    rule("Holy Staff")[Wilhelm Hasburg only. Magic Weapon. Great weapon. The staff will automatically Wound any Daemons, Skaven, Undead or Vampires.],
+    rule("The Hammer of Witches")[Wilhelm Hasburg only. Talisman. Wilhelm and Johann gain the Magic Resistance (1) special rule against any spells from the Lore of Dark Magic, Necromancy, Nurgle, Slaanesh and Tzeentch.],
+  ),
+  special-rules: "Accusation (Johann van Hal only, see Witch Hunter Captain), Battle Prayers of Sigmar",
+  special-rules-body: [
 (Wilhelm Hasburg only, see Warrior Priest)*, Grim Resolve* (Johann van Hal only, see Witch Hunter Captain)*, Hatred (Chaos, Wizards)* (Johann van Hal only)*, Magic Resistance (2), Righteous Fury* (Wilhelm Hasburg only, see Warrior Priest)*, Tools of Judgement* (Johann van Hal only, see Witch Hunter Captain)
-
-#field("UPGRADES", "")
-
-- *Witch Hunter Retinue:* If Johann van Hal is in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.
-
-#entry("GOTREK & FELIX")
-#namecost("Legendary Adventurers", "")
-#profile(
-  (name: "Gotrek Gurnisson", m: 3, ws: 7, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 10, points: 270),
-  (name: "Felix Jaeger", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 90),
+  ],
+  upgrades: (
+    rule("Witch Hunter Retinue")[If Johann van Hal is in your army, you may upgrade one unit of Free Company Militia to a Witch Hunter Retinue for +1 point per model. The unit gains +1 Leadership, as well as the Hatred (Chaos, Undead, Wizards) and Tools of Judgement special rules.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Dwarf – Gotrek, Human – Felix)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour (Felix only)")
-#field("MAGIC ITEMS", "")
 
-- *Gotrek's Axe:* Magic Weapon. Gotrek only. For each of Gotrek's initial Attacks that Hit, he gains one extra Attack. In addition, Gotrek's axe also has the Ignore Armour saves special rule, and against enemies with Toughness 5 or more he may re-roll failed rolls To Wound.
-- *Wyrmslayer Blade:* Magic Weapon. Felix only. The Wyrmslayer Blade gives +2 Attacks. In addition, Felix must always declare a charge against a Dragon or Drake if it is possible to do so. Against Dragons and Drakes, the Wyrmslayer blade allows Felix to re-roll failed rolls To Hit and To Wound.
-
-#field("SPECIAL RULES", "Hatred (Orcs, Goblins, Skaven) (Gotrek only), Loner")
-
-- *Gotrek's Doom:* As long as Gotrek is alive, he and Felix have a 4+ Ward Save as well as the Magic Resistance (2) and Unbreakable special rules.
-- *Relentless:* Gotrek does not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.
-- *Daemon Slayer:* Gotrek always Wounds on a To Wound roll of 4+, unless he would need a lower result. Use his Strength to determine the armour save modifier for any successful Wounds. In addition, he has the Multiple Wounds (D3) special rule when attacking Monstrous Infantry, Monstrous Beasts, Monstrous Cavalry, Monstrous Creatures and Monsters. Finally, any Ward saves (except Dodge, Regeneration and Parry) successfully made against Attacks made by the model must be re-rolled.
-- *Deathblow:* If a model with this special rule is killed by normal Close Combat Attacks, it will immediately make a single Attack back against the unit or model that killed it before the Slayer is removed as a casualty.
+#unit("GOTREK & FELIX",
+  subtitle: "Legendary Adventurers",
+  profiles: (
+    (name: "Gotrek Gurnisson", m: 3, ws: 7, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 4, ld: 10, points: 270),
+    (name: "Felix Jaeger", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 90),
+  ),
+  troop-type: "Infantry (Special Character, Dwarf – Gotrek, Human – Felix)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour (Felix only)",
+  magic-items: (
+    rule("Gotrek's Axe")[Magic Weapon. Gotrek only. For each of Gotrek's initial Attacks that Hit, he gains one extra Attack. In addition, Gotrek's axe also has the Ignore Armour saves special rule, and against enemies with Toughness 5 or more he may re-roll failed rolls To Wound.],
+    rule("Wyrmslayer Blade")[Magic Weapon. Felix only. The Wyrmslayer Blade gives +2 Attacks. In addition, Felix must always declare a charge against a Dragon or Drake if it is possible to do so. Against Dragons and Drakes, the Wyrmslayer blade allows Felix to re-roll failed rolls To Hit and To Wound.],
+  ),
+  special-rules: "Hatred (Orcs, Goblins, Skaven) (Gotrek only), Loner",
+  special-rules-body: (
+    rule("Gotrek's Doom")[As long as Gotrek is alive, he and Felix have a 4+ Ward Save as well as the Magic Resistance (2) and Unbreakable special rules.],
+    rule("Relentless")[Gotrek does not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.],
+    rule("Daemon Slayer")[Gotrek always Wounds on a To Wound roll of 4+, unless he would need a lower result. Use his Strength to determine the armour save modifier for any successful Wounds. In addition, he has the Multiple Wounds (D3) special rule when attacking Monstrous Infantry, Monstrous Beasts, Monstrous Cavalry, Monstrous Creatures and Monsters. Finally, any Ward saves (except Dodge, Regeneration and Parry) successfully made against Attacks made by the model must be re-rolled.],
+    rule("Deathblow")[If a model with this special rule is killed by normal Close Combat Attacks, it will immediately make a single Attack back against the unit or model that killed it before the Slayer is removed as a casualty.],
+  ),
+)
 
 = SPECIAL CHARACTERS (HEROES)
 
-#entry("LUDWIG SCHWARZHELM", first: true)
-#namecost("The Emperor's Champion", "")
-#profile(
-  (name: "Ludwig Schwarzhelm", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 150),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Full plate armour")
-#field("MAGIC ITEMS", "")
-
-- *Sword of Justice:* Magic Weapon. Attacks made with the Sword of Justice have the Killing Blow special rule. In addition, all failed To Wound rolls made with the Sword of Justice are re-rolled.
-- *The Emperor's Standard:* Magic Standard. The Emperor's Standard gives Ludwig Schwarzhelm the Hold Your Ground (18) special rule in total.
-
-#field("OPTIONS", "")
-
+#unit("LUDWIG SCHWARZHELM",
+  first: true,
+  subtitle: "The Emperor's Champion",
+  profiles: (
+    (name: "Ludwig Schwarzhelm", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 150),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Full plate armour",
+  magic-items: (
+    rule("Sword of Justice")[Magic Weapon. Attacks made with the Sword of Justice have the Killing Blow special rule. In addition, all failed To Wound rolls made with the Sword of Justice are re-rolled.],
+    rule("The Emperor's Standard")[Magic Standard. The Emperor's Standard gives Ludwig Schwarzhelm the Hold Your Ground (18) special rule in total.],
+  ),
+  options: [
 - May be mounted on a Warhorse (with barding) +17 points
-
-#field("SPECIAL RULES", "")
-
-- *The Emperor's Bodyguard:* If Karl Franz suffers a Hit (before armour saves are taken) and Ludwig Schwarzhelm is in the same unit, roll a D6. On a 1, the Hit is resolved as normal, but on a 2+ the Wound is intercepted and reallocated to Ludwig Schwarzhelm. If Karl Franz suffers more than one Hit simultaneously, randomise between them to determine which Ludwig attempts to intercept first. No more than one Hit can be re-allocated to Ludwig Schwarzhelm in this way in each phase. Wounds suffered by Karl Franz in a challenge cannot be re-allocated.
-- *The Emperor's Herald:* If you take Ludwig Schwarzhelm, he must be your army's Battle Standard Bearer. Ludwig Schwarzhelm can never be your Army General.
-
-#entry("MARKUS WULFHART")
-#namecost("Huntmarshal of the Empire", "")
-#profile(
-  (name: "Markus Wulfhart", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 100),
+  ],
+  special-rules: (
+    rule("The Emperor's Bodyguard")[If Karl Franz suffers a Hit (before armour saves are taken) and Ludwig Schwarzhelm is in the same unit, roll a D6. On a 1, the Hit is resolved as normal, but on a 2+ the Wound is intercepted and reallocated to Ludwig Schwarzhelm. If Karl Franz suffers more than one Hit simultaneously, randomise between them to determine which Ludwig attempts to intercept first. No more than one Hit can be re-allocated to Ludwig Schwarzhelm in this way in each phase. Wounds suffered by Karl Franz in a challenge cannot be re-allocated.],
+    rule("The Emperor's Herald")[If you take Ludwig Schwarzhelm, he must be your army's Battle Standard Bearer. Ludwig Schwarzhelm can never be your Army General.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC ITEMS", "")
 
-- *The Amber Bow:* Magic Weapon. Longbow. All shots fired by the Amber Bow are resolved at Strength 4. Against Monsters, the Amber Bow always wounds on 4+ (unless it would normally need a lower result) and has the Multiple Wounds (D3) special rule.
-
-#field("OPTIONS", "")
-
+#unit("MARKUS WULFHART",
+  subtitle: "Huntmarshal of the Empire",
+  profiles: (
+    (name: "Markus Wulfhart", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 100),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic-items: (
+    rule("The Amber Bow")[Magic Weapon. Longbow. All shots fired by the Amber Bow are resolved at Strength 4. Against Monsters, the Amber Bow always wounds on 4+ (unless it would normally need a lower result) and has the Multiple Wounds (D3) special rule.],
+  ),
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "Hatred (Monstrous Creatures, Monsters), Immunity (Psychology), Scouts")
-
-- *Monster Hunter:* Models with this special rule re-roll all failed To Hit rolls when shooting at Monstrous Creatures or Monsters.
-- *Wulfhart's Hunters:* If your army includes Markus Wulfhart, one unit of Huntsmen may be upgraded to be Wulfhart's Hunters for +2 points/model. This unit gains the Monster Hunter and Immunity (Psychology) special rules.
-
-#entry("THEODORE BRUCKNER")
-#namecost("The Hand of Judgement, the Titan Headsman, Champion of Nuln", "")
-#profile(
-  (name: "Theodore Bruckner", m: 4, ws: 6, bs: 4, s: 5, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 190),
-  (name: "Reaper (Demigryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 6, points: ""),
+  ],
+  special-rules: "Hatred (Monstrous Creatures, Monsters), Immunity (Psychology), Scouts",
+  special-rules-body: (
+    rule("Monster Hunter")[Models with this special rule re-roll all failed To Hit rolls when shooting at Monstrous Creatures or Monsters.],
+    rule("Wulfhart's Hunters")[If your army includes Markus Wulfhart, one unit of Huntsmen may be upgraded to be Wulfhart's Hunters for +2 points/model. This unit gains the Monster Hunter and Immunity (Psychology) special rules.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "25x25 or 30x30 (Theodore Bruckner), 50x100 or 60x100 (Reaper)")
-#field("EQUIPMENT", "Pistol, full plate armour")
-#field("MAGIC ITEMS", "")
 
-- *Liarsbane:* Magic Weapon. Liarsbane give Bruckner +1 To Hit and To Wound in close combat.
-- *Stormlance:* Magic Weapon. Heavy lance. When charging, Bruckner has the Killing Blow special rule. At all other times, he will use Liarsbane instead.
-- *Baleflame Amulet:* Talisman. The amulet provides Bruckner with a Ward save (5+). In addition, if Bruckner is slain by a model in base contact, that model then immediately suffers D3 Wounds with the Ignores Armour saves special rule.
-
-#field("OPTIONS", "")
-
+#unit("THEODORE BRUCKNER",
+  subtitle: "The Hand of Judgement, the Titan Headsman, Champion of Nuln",
+  profiles: (
+    (name: "Theodore Bruckner", m: 4, ws: 6, bs: 4, s: 5, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 190),
+    (name: "Reaper (Demigryph)", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 6, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "25x25 or 30x30 (Theodore Bruckner), 50x100 or 60x100 (Reaper)",
+  equipment: "Pistol, full plate armour",
+  magic-items: (
+    rule("Liarsbane")[Magic Weapon. Liarsbane give Bruckner +1 To Hit and To Wound in close combat.],
+    rule("Stormlance")[Magic Weapon. Heavy lance. When charging, Bruckner has the Killing Blow special rule. At all other times, he will use Liarsbane instead.],
+    rule("Baleflame Amulet")[Talisman. The amulet provides Bruckner with a Ward save (5+). In addition, if Bruckner is slain by a model in base contact, that model then immediately suffers D3 Wounds with the Ignores Armour saves special rule.],
+  ),
+  options: [
 - May take Stormlance and be mounted on Reaper +135 points
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "")
-
-- *The Hand of Judgement:* Bruckner cannot be the Army General. In addition, while fighting in a Challenge, Bruckner has the Unbreakable special rule.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: (
+    rule("The Hand of Judgement")[Bruckner cannot be the Army General. In addition, while fighting in a Challenge, Bruckner has the Unbreakable special rule.],
+  ),
+  notes: [
 - Reaper is a Monster rather than a Monstrous Beast.
-
-#entry("LUTHOR HUSS")
-#namecost("Prophet of Sigmar", "")
-#profile(
-  (name: "Luthor Huss", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 175),
-  (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ],
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Human)")
-#field("MOUNT", "Warhorse (Animal)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Great weapon, heavy armour, barding")
-#field("SPECIAL RULES", "Battle Prayers of Sigmar (see Warrior Priest), Magic Resistance (1), Righteous Fury")
 
+#unit("LUTHOR HUSS",
+  subtitle: "Prophet of Sigmar",
+  profiles: (
+    (name: "Luthor Huss", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 175),
+    (name: "Warhorse", m: 8, ws: 3, bs: 0, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Human)",
+  mount: "Warhorse (Animal)",
+  base-size: "25x50 or 30x60",
+  equipment: "Great weapon, heavy armour, barding",
+  special-rules: "Battle Prayers of Sigmar (see Warrior Priest), Magic Resistance (1), Righteous Fury",
+  special-rules-body: [
 - *Chosen of Sigmar:* Luthor Huss has a 4+ Ward save. In addition, once per game, he may harness the very power of Sigmar. Luthor must declare that he is harnessing this power at the start of any Close Combat phase. Roll a D3 – Luthor adds this number to his Weapon Skill, Strength, Toughness, and Attacks characteristics until the end of the turn.
 - *Fiery Demagogue:* In addition to Hammer of Sigmar, Shield of Faith and Soulfire, Luthor Huss also knows the following Battle Prayer:
   - *Unbending Righteousness:* Luthor Huss and his unit gain the Stubborn special rule until the start of your next turn.
-
-#entry("VALTEN")
-#namecost("Champion of Sigmar", "")
-#profile(
-  (name: "Valten", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 4, ld: 9, points: 260),
-  (name: "Althandin (Elven Steed)", m: 9, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25 (Valten), 50x50 (Althandin)")
-#field("EQUIPMENT", "Two hand weapons")
-#field("MAGIC ITEMS", "")
 
-- *Ghal Maraz:* Magic Weapon. Hits from Ghal Maraz Wound automatically with the Ignores Armour Saves and Multiple Wounds (D3) special rules.
-- *Armour of the Heldenhammer:* Magic Armour. Full plate armour. The Armour of the Heldenhammer provides +1 armour save and Magic Resistance (2). No model in base contact may cast any spells.
-
-#field("OPTIONS", "")
-
+#unit("VALTEN",
+  subtitle: "Champion of Sigmar",
+  profiles: (
+    (name: "Valten", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 4, ld: 9, points: 260),
+    (name: "Althandin (Elven Steed)", m: 9, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 5, a: 2, ld: 7, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25 (Valten), 50x50 (Althandin)",
+  equipment: "Two hand weapons",
+  magic-items: (
+    rule("Ghal Maraz")[Magic Weapon. Hits from Ghal Maraz Wound automatically with the Ignores Armour Saves and Multiple Wounds (D3) special rules.],
+    rule("Armour of the Heldenhammer")[Magic Armour. Full plate armour. The Armour of the Heldenhammer provides +1 armour save and Magic Resistance (2). No model in base contact may cast any spells.],
+  ),
+  options: [
 - May replace two hand weapons with one of the following:
   - Ghal Maraz & heavy armour +70 points
   - Ghal Maraz & Armour of the Heldenhammer +115 points
 - May be mounted on one of the following:
   - Warhorse (with barding) +17 points
   - Althandin (with barding) +25 points
-
-#field("SPECIAL RULES", "")
-
-- *Against The Odds:* Enemy units can never gain the combat resolution bonus points for attacking in the flank or rear in a combat involving Valten. In addition, Valten and any unit he leads have Immunity (Psychology) and are Stubborn.
-- *Awesome Presence:* Wounds inflicted by Valten in close combat are counted towards the Empire combat resolution score of any combat within 12" of him, not just the one he is taking part in. However, Valten may never be the Army General.
-- *Iron Resolve:* Valten has a 5+ Ward save. If Valten is killed, take a Leadership test for him at the end of that phase. If he passes, his astounding strength of will allows him to ignore the wound and continue fighting. He remains alive on 1 Wound, and the wounds that killed him are discounted. The effects of combat resolution, are worked out after determining whether Valten recovers. This rule does not apply if he is fleeing and is run down by chargers or pursuers, or slain by a Killing Blow.
-
-#entry("BERTHA BESTRAUFRUNG")
-#namecost("High Matriarch of the Sisterhood of Sigmar", "")
-#profile(
-  (name: "Bertha Bestraufrung", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 140),
+  ],
+  special-rules: (
+    rule("Against The Odds")[Enemy units can never gain the combat resolution bonus points for attacking in the flank or rear in a combat involving Valten. In addition, Valten and any unit he leads have Immunity (Psychology) and are Stubborn.],
+    rule("Awesome Presence")[Wounds inflicted by Valten in close combat are counted towards the Empire combat resolution score of any combat within 12" of him, not just the one he is taking part in. However, Valten may never be the Army General.],
+    rule("Iron Resolve")[Valten has a 5+ Ward save. If Valten is killed, take a Leadership test for him at the end of that phase. If he passes, his astounding strength of will allows him to ignore the wound and continue fighting. He remains alive on 1 Wound, and the wounds that killed him are discounted. The effects of combat resolution, are worked out after determining whether Valten recovers. This rule does not apply if he is fleeing and is run down by chargers or pursuers, or slain by a Killing Blow.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Heavy armour")
-#field("MAGIC ITEMS", "")
 
-- *Sigmarite Hammers:* Magic Weapon. Two hand weapons. The Sigmarite Warhammers give Bertha the Armour Piercing (1) special rule. In addition, she gains +1 To Wound against Daemons, Undead or Vampires.
-- *Blessed Water:* Magic Weapon. One use only. Throwing weapon. If it hits, it inflicts one automatic Wound with the Ignores Armour Saves special rule against Daemons, Undead or Vampires.
-- *Holy Relic:* Talisman. One use only. The Holy Relic allows Bertha and any unit she joins to automatically pass the first Leadership they are required to make during the game.
-
-#field("SPECIAL RULES", "Battle Prayers of Sigmar (see Warrior Priest), Immunity (Fear), Magic Resistance (2), Righteous Fury")
-
-- *High Matriarch:* If Bertha Bestraufrung is included in your army, you must also include at least one unit of Sisters of Sigmar. Bertha Bestraufrung must join such a unit, and may not leave it. In addition, the unit becomes Stubborn while she remains with it.
-- *Sigmar's Handmaiden:* Bertha may re-roll failed Leadership tests when using Battle Prayers of Sigmar.
-
-#entry("JUBAL FALK")
-#namecost("Castellan-Engineer of Nuln", "")
-#profile(
-  (name: "Jubal Falk", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 60),
+#unit("BERTHA BESTRAUFRUNG",
+  subtitle: "High Matriarch of the Sisterhood of Sigmar",
+  profiles: (
+    (name: "Bertha Bestraufrung", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 140),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Heavy armour",
+  magic-items: (
+    rule("Sigmarite Hammers")[Magic Weapon. Two hand weapons. The Sigmarite Warhammers give Bertha the Armour Piercing (1) special rule. In addition, she gains +1 To Wound against Daemons, Undead or Vampires.],
+    rule("Blessed Water")[Magic Weapon. One use only. Throwing weapon. If it hits, it inflicts one automatic Wound with the Ignores Armour Saves special rule against Daemons, Undead or Vampires.],
+    rule("Holy Relic")[Talisman. One use only. The Holy Relic allows Bertha and any unit she joins to automatically pass the first Leadership they are required to make during the game.],
+  ),
+  special-rules: "Battle Prayers of Sigmar (see Warrior Priest), Immunity (Fear), Magic Resistance (2), Righteous Fury",
+  special-rules-body: (
+    rule("High Matriarch")[If Bertha Bestraufrung is included in your army, you must also include at least one unit of Sisters of Sigmar. Bertha Bestraufrung must join such a unit, and may not leave it. In addition, the unit becomes Stubborn while she remains with it.],
+    rule("Sigmar's Handmaiden")[Bertha may re-roll failed Leadership tests when using Battle Prayers of Sigmar.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Human)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, pistol, Hochland Long Rifle, medium armour.")
-#field("MAGIC ITEMS", "")
 
+#unit("JUBAL FALK",
+  subtitle: "Castellan-Engineer of Nuln",
+  profiles: (
+    (name: "Jubal Falk", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 60),
+  ),
+  troop-type: "Infantry (Special Character, Human)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, pistol, Hochland Long Rifle, medium armour.",
+  magic-items: [
 - *Mercurial Shot:* Enchanted Item. One use only. This is missile attack with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "6", "Armour piercing (1), Multiple Wounds (2), Sniper"))
 
 The Mercurial Shot can be used instead of firing normally.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take Magic Items up to a total of 25 points
-
-#field("SPECIAL RULES", "")
-
-- *Black Powder Discipline:* Jubal Falk may re-roll 1's To Hit with missile attacks.
-- *The Nuln Ironsides:* Jubal Falk must be accompanied by a unit of Handgunners chosen from the army list at a cost of 10 points per model. This unit has medium armour and may re-roll 1's To Hit with missile attacks. The unit must be given a Standard Bearer and Musician. Jubal Falk is the unit's Leader and may never choose to leave this unit.
+  ],
+  special-rules: (
+    rule("Black Powder Discipline")[Jubal Falk may re-roll 1's To Hit with missile attacks.],
+    rule("The Nuln Ironsides")[Jubal Falk must be accompanied by a unit of Handgunners chosen from the army list at a cost of 10 points per model. This unit has medium armour and may re-roll 1's To Hit with missile attacks. The unit must be given a Standard Bearer and Musician. Jubal Falk is the unit's Leader and may never choose to leave this unit.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "magic-items", "options", "special-rules"),
+)

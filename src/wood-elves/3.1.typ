@@ -12,7 +12,7 @@
   army: "Wood Elves",
   version: "3.1",
   layout: "army",
-  cover: "covers/wood-elves/3.1.png",
+  cover: "covers/wood-elves.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Wood Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/wood-elves/3.1.png",
+  art: "/assets/covers/wood-elves.png",
 )
 
 #colophon((
@@ -45,45 +45,40 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Wood Elf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Wood Elf units, and these are detailed here.
-
-#namecost("AMBUSH FROM THE WORLDROOTS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Wood Elf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Wood Elf units, and these are detailed here.])[
+#upgrade("AMBUSH FROM THE WORLDROOTS", none)[
 A Wood Elf army can always place an additional forest no more than 12" in diameter on the battlefield. This is done during deployment, before any units are deployed, and must be placed wholly in your half of the battlefield. Declare which type of forest it is when you place it. If you cannot fit the forest on your half of the table, move other terrain features by the shortest distance necessary so that the forest can be placed. If you still cannot place the forest, or if the scenario means that the Wood Elf army does not have a table half in which to deploy, this additional forest is not used in this battle.
+]
 
-#namecost("ASRAI ARCHERY", "")
-
+#upgrade("ASRAI ARCHERY", none)[
 Models with this rule do not suffer the normal \-1 To Hit penalty for moving and shooting.
+]
 
-#namecost("BLESSINGS OF THE ANCIENTS", "")
-
+#upgrade("BLESSINGS OF THE ANCIENTS", none)[
 A Wizard that has this rule and is within 6" of a forest gains a +1 casting and dispel bonus.
+]
 
-#namecost("ELVEN SHORTBOW", "")
-
+#upgrade("ELVEN SHORTBOW", none)[
 Elven shortbows have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "3", "Armour Piercing (1), March & Shoot, Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not marched. Cannot be used as a charge reaction_
+]
 
-#namecost("ELVEN LONGBOW", "")
-
+#upgrade("ELVEN LONGBOW", none)[
 Elven longbows have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "3", "Armour Piercing (1), Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+]
 
-#namecost("ELVEN GRACE", "")
-
+#upgrade("ELVEN GRACE", none)[
 Models with this rule have the Dodge (6+) special rule in close combat. However, this cannot be used against enemies that attack before the model with Elven Grace.
+]
 
-#namecost("ENCHANTED ARROWS", "")
-
+#upgrade("ENCHANTED ARROWS", none)[
 Some models in the Wood Elf army have the option to purchase enchanted arrows. If a model has enchanted arrows, they must use them when shooting with Elven shortbows or longbows. Note that a model can only have one kind of Enchanted Arrows.
 
 - *Arcane Bodkins:* Shooting attacks made with Arcane Bodkins have the Armour Piercing (1) special rule.
@@ -97,29 +92,29 @@ Some models in the Wood Elf army have the option to purchase enchanted arrows. I
 - *Swiftshiver Shards:* Shooting attacks made with Swiftshiver Shards allow the model to fire Multiple Shots even when moving (in case of longbows) or marching (in case of shortbows) that turn.
 
 - *Trueflight Arrows:* Shooting attacks made with Trueflight Arrows ignore all shooting modifiers that are not caused by magic items or spells.
+]
 
-#namecost("FOREST SPIRIT", "")
-
+#upgrade("FOREST SPIRIT", none)[
 A model with this rule has the Fear, Forest Strider, Immunity (Psychology), Magical Attacks and Magical Ward (5+) special rules. However, units of Forest Spirits may only be joined by characters that are also Forest Spirits and vice versa.
+]
 
-#namecost("FOREST STALKER", "")
-
+#upgrade("FOREST STALKER", none)[
 While inside a wood, models with this special rule are at an additional \-1 to be Hit with missile attacks. In addition, when using the Scouts special rule they may deploy within 12" of an enemy unit if they do so within a wood.
+]
 
-#namecost("LETHAL SHOT", "")
-
+#upgrade("LETHAL SHOT", none)[
 Models with this rule have the Killing Blow special rule with missile attacks from their Elven longbows or shortbows.
+]
 
-#namecost("MARTIAL MEMORIES", "")
-
+#upgrade("MARTIAL MEMORIES", none)[
 Models with this rule may re-roll 1's when rolling To Hit and To Wound in close combat.
+]
 
-#namecost("SAEARATH", "")
-
+#upgrade("SAEARATH", none)[
 Spear. Unless used with a shield in combat or when using the Mighty Blow (1) special rule from the weapon, a model armed with a saerath gains +1 Attack.
+]
 
-#namecost("SHADOW DANCES OF LOEC", "")
-
+#upgrade("SHADOW DANCES OF LOEC", none)[
 Models with this rule may choose one of the following Shadow Dances at the start of each round of close combat. This is done before Impact Hits are resolved. All models in the same unit must choose the same Shadow Dance. The effect of each Shadow Dance lasts until the end of that turn or until a new Shadow Dance is chosen. Models cannot choose the same Shadow Dance in two consecutive rounds of combat.
 
 - *Whirling Death:* The model gains the Armour Piercing (1) and Killing Blow special rules.
@@ -129,9 +124,9 @@ Models with this rule may choose one of the following Shadow Dances at the start
 - *The Shadows Coil:* All close combat attacks against the model suffer \-1 To Hit.
 
 - *Woven Mist:* The model gains the Always Strikes First special rule.
+]
 
-#namecost("TREE ASPECTS", "")
-
+#upgrade("TREE ASPECTS", none)[
 Models with this rule may choose one of the following Tree Aspects at the start of each round of close combat. This is done before Impact Hits are resolved. All models in the same unit must choose the same Tree Aspect. The effect of each Tree Aspect lasts until the end of that turn or until a new Tree Aspect is chosen. Models cannot choose the same Tree Aspect in two consecutive rounds of combat.
 
 - *Birch Aspect:* The model gains +1 Attack.
@@ -139,10 +134,11 @@ Models with this rule may choose one of the following Tree Aspects at the start 
 - *Oak Aspect:* The model gains +1 Toughness.
 
 - *Willow Aspect:* All close combat attacks against the model suffer \-1 To Hit.
+]
 
-#namecost("TREE WHACK", "")
-
+#upgrade("TREE WHACK", none)[
 A model with this rule can choose to make a single Tree Whack in place of making their normal close combat attacks. To resolve a Tree Whack, nominate an enemy model in base contact. That model must pass an Initiative test or suffer D6 Wounds which Ignores Armour Saves.
+]
 ]
 
 #lore("THE LORE OF ATHEL LOREN")[
@@ -175,56 +171,40 @@ A model with this rule can choose to make a single Tree Whack in place of making
 
 #spell("ARIEL'S BLESSING", 4, cast: "13+")[_Ariel's Blessing_ is an *augment* spell with a range of 18". The target gains the Regeneration (4+) special rule until the start of the caster's next Magic phase.]
 ]
-= FOREST SPITES
+#upgrade-chapter("FOREST SPITES", intro: [*Characters may choose Spites as detailed in the army list. Each Spite may only be chosen once per army.*])[
+#upgrade("A BLIGHT OF TERRORS", 25)[A character with a Blight of Terrors gains the Terror special rule.]
 
-*Characters may choose Spites as detailed in the army list. Each Spite may only be chosen once per army.*
+#upgrade("A CLUSTER OF RADIANTS", 25, only: "Forest Spirit")[A character with a Cluster of Radiants adds one extra dice to their Dispel pool in their opponent's Magic phase.]
 
-#namecost("A BLIGHT OF TERRORS", "25 points")
+#upgrade("AN ANNOYANCE OF NETLINGS", 20)[Any enemy attempting to strike a character with an Annoyance of Netlings in close combat will suffer \-1 To Hit.]
 
-A character with a Blight of Terrors gains the Terror special rule.
-
-#namecost("A CLUSTER OF RADIANTS", "25 points")
-
-Forest Spirit only. A character with a Cluster of Radiants adds one extra dice to their Dispel pool in their opponent's Magic phase.
-
-#namecost("AN ANNOYANCE OF NETLINGS", "20 points")
-
-Any enemy attempting to strike a character with an Annoyance of Netlings in close combat will suffer \-1 To Hit.
-
-#namecost("A MUSTER OF MALEVOLENTS", "20 points")
-
-A Muster of Malevolents is a shooting attack that can be used in addition to the models other shooting attacks. This cannot be used in combination with the Sniper special rule. It has the following profile:
+#upgrade("A MUSTER OF MALEVOLENTS", 20)[A Muster of Malevolents is a shooting attack that can be used in addition to the models other shooting attacks. This cannot be used in combination with the Sniper special rule. It has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "2", "Magical Attacks, Multiple Shots (D6), Poisoned Attacks, Quick Shot, Rapid Fire"))
-#namecost("HAGBANE SPITE", "20 points")
+]
 
-One use only. A Hagbane Spite can be used after an enemy Wizard has successfully cast a spell within 24" instead of dispelling it. When used, the enemy Wizard automatically suffers D3 Hits that Wound on a 4+ with the Ignores Armour Saves special rule.
+#upgrade("HAGBANE SPITE", 20, one-use: true)[A Hagbane Spite can be used after an enemy Wizard has successfully cast a spell within 24" instead of dispelling it. When used, the enemy Wizard automatically suffers D3 Hits that Wound on a 4+ with the Ignores Armour Saves special rule.]
 
-#namecost("A PAGEANT OF SHRIKES", "15 points")
-
-A Pageant of Shrikes is a shooting attack that can be used in addition to the model's other shooting attacks. It has the following profile:
+#upgrade("A PAGEANT OF SHRIKES", 15)[A Pageant of Shrikes is a shooting attack that can be used in addition to the model's other shooting attacks. It has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12/18\"", "4", "Cumbersome, Magical Attacks, Sniper"))
-#namecost("A BEFUDDLEMENT OF MISCHIEFS", "10 points")
+]
 
-Bound Spell (Level 2, cast on 7+). _A Befuddlement of Mischiefs_ is a *hex* spell with a range of 18". The target becomes subject to Stupidity until the start of your next Magic phase.
+#upgrade("A BEFUDDLEMENT OF MISCHIEFS", 10, bound: (level: 2, cast: "7+"))[_A Befuddlement of Mischiefs_ is a *hex* spell with a range of 18". The target becomes subject to Stupidity until the start of your next Magic phase.]
 
-#namecost("A LAMENTATION OF DESPAIRS", "10 points")
+#upgrade("A LAMENTATION OF DESPAIRS", 10, bound: (level: 2, cast: "7+"))[_Lamentation of Despairs_ is a *direct damage* spell with a range of 12" which can be used to target enemy Characters or Monsters, even within a unit. The targeted model must pass a Leadership test, or else suffer D3 Wounds which Ignores Armour saves.]
 
-Bound Spell (Level 2, cast on 7+). _Lamentation of Despairs_ is a *direct damage* spell with a range of 12" which can be used to target enemy Characters or Monsters, even within a unit. The targeted model must pass a Leadership test, or else suffer D3 Wounds which Ignores Armour saves.
-
-#namecost("A MURDER OF SPITES", "10 points")
-
-A Murder of Spites is a close combat attack that can be used in addition to the model's other attacks. It has the following profile:
+#upgrade("A MURDER OF SPITES", 10)[A Murder of Spites is a close combat attack that can be used in addition to the model's other attacks. It has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "2", "Magical Attacks, Poisoned Attacks, Random Attacks (D6)"))
-#namecost("A RESPLENDENCE OF LUMINESCENTS", "10 points")
+]
 
-A Resplendence of Luminescents gives the character and any unit they join Magical Attacks.
+#upgrade("A RESPLENDENCE OF LUMINESCENTS", 10)[A Resplendence of Luminescents gives the character and any unit they join Magical Attacks.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Wood Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2, first: true)[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("THE SPIRIT SWORD", 50)[Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy single model unit or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective Leadership values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded.]
 
 #magic-weapon("DAITH'S REAPER", 50)[All failed To Hit and To Wound rolls made with Daith's Reaper must be re-rolled, as must all successful armour saves taken against Wounds caused by this weapon.]
@@ -1564,13 +1544,10 @@ Tree-Revenants)*, Tree Aspects*
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]

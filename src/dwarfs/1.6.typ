@@ -12,6 +12,7 @@
   army: "Dwarfs",
   version: "1.6",
   layout: "army",
+  cover: "covers/dwarfs.png",
   align: "order",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Dwarfs",
   subtitle: "Warhammer Armies Project · 1.6",
-  art: none,
+  art: "/assets/covers/dwarfs.png",
 )
 
 #colophon((
@@ -44,51 +45,48 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-#namecost("ANCESTRAL GRUDGE", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true)[
+#upgrade("ANCESTRAL GRUDGE", none)[
 Dwarfs have the Hatred (Orcs, Goblins, Trolls, Skaven) special rule.
+]
 
-#namecost("RELENTLESS", "")
-
+#upgrade("RELENTLESS", none)[
 Units entirely composed of models with this special rule do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.
+]
 
-#namecost("RESOLUTE", "")
-
+#upgrade("RESOLUTE", none)[
 When taking Break tests, models with this special rule count as having lost the combat with 1 point fewer than they actually have.
+]
 
-#namecost("GROMRIL ARMOUR", "")
-
+#upgrade("GROMRIL ARMOUR", none)[
 Models with this special rule add +1 to their armour saves if they wear light, medium or heavy armour.
+]
 
-#namecost("DWARF-CRAFTED", "")
-
+#upgrade("DWARF-CRAFTED", none)[
 All handguns, pistols and crossbows (as well as any other weapons with this special rule) in a Dwarf army can re-roll 1's when rolling To Hit.
+]
 
-#namecost("FORGEFIRE", "")
-
+#upgrade("FORGEFIRE", none)[
 Models with this special rule and all friendly infantry models in a unit joined by one or more of them, gain the Armour Piercing (1) special rule for as long as they remain with the unit.
+]
 
-#namecost("OATH STONES", "")
-
+#upgrade("OATH STONES", none)[
 A model with an Oathstone gains the Magic Resistance (1) special rule. A unit that contains one or more models with an Oath Stone can never choose to flee as a charge reaction, cannot be disrupted and, if any of its models are armed with hand weapon and shield, they can make Parry saves against attacks made to their flanks and rear. In addition, a character with an Oath Stone must always accept a challenge. However, if a model on an Oathstone fails a Break Test, they are removed as a casualty.
+]
 
-#namecost("NATURAL RESISTANCE", "")
-
+#upgrade("NATURAL RESISTANCE", none)[
 When a Dwarf army attempts to dispel, they have a +2 bonus to all dispel attempts. This is cumulative with other dispel bonuses. Note that, if the Dwarfs are fighting alongside a Wizard for whatever reason, this bonus is lost.
+]
 
-#namecost("DEATHBLOW", "")
-
+#upgrade("DEATHBLOW", none)[
 If a model with this special rule is killed by normal Close Combat Attacks, it will immediately make a single Attack back against the unit or model that killed it before the Slayer is removed as a casualty.
+]
 
-#namecost("WARDS OF GRIMNIR", "")
-
+#upgrade("WARDS OF GRIMNIR", none)[
 A model with Wards of Grimnir have a Ward save (6+) against missile and the Magic Resistance (1) special rule.
+]
 
-#namecost("RUNE LORE", "")
-
+#upgrade("RUNE LORE", none)[
 Lords with this special rule follow the rules for a Level 4 Wizard for the purposes of channelling dispel dice and dispelling, and have the Magic Resistance (2) special rule.
 
 Heroes with this special rule follow the rules for a Level 2 Wizard for the purposes of channelling dispel dice and dispelling, and have the Magic Resistance (1) special rule.
@@ -99,109 +97,71 @@ In addition, a model with this special rule have the four Runes listed below. Th
 - *Rune of Stone and Steel:* The model and their unit gain a 6+ armour until the start of your next turn.
 - *Rune of Wrath and Ruin:* All enemy units in base contact with the model suffer 2D6 Strength 4 hits.
 - *Rune of Oath and Honour:* The model and their unit gain +3 to their Movement characteristic this turn.
+]
 
-#namecost("SLAYER", "")
-
+#upgrade("SLAYER", none)[
 Models with this special rule always Wound on a To Wound roll of 4+, unless they would need a lower result. Use the model's Strength to determine the armour save modifier for any successful Wounds. In addition, there are two forms of Slayers with the following additional rules:
 
 - *Giant Slayer:* The model has the Multiple Wounds (D3) special rule when attacking Monstrous Infantry, Monstrous Beasts or Monstrous Cavalry.
 - *Dragon Slayer:* The model has the Giant Slayer special rule. The model has the Multiple Wounds (D3) special rule when attacking Monstrous Creatures and Monsters.
 - *Daemon Slayer:* The model has the Dragon Slayer special rule. In addition, any Ward saves successfully made against Attacks made by the model must be re- rolled.
 ]
+]
+#magic-item-chapter(intro: [*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dwarfs. Dwarfs may not use magic items found in the Warhammer rulebook.*])
 
-= MAGIC ITEMS
+#magic-item-section("weapon", first: true)[
+#magic-weapon("HAMMER OF SMEDNIR", 45)[Each Hit with this weapon is multiplied into D3 Hits.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Dwarfs. Dwarfs may not use magic items found in the Warhammer rulebook.*
+#magic-weapon("RED AXE OF KARAK EIGHT PEAKS", 40)[Against all Orcs, Goblins and Skaven, this weapon allows its wielder to re-roll To Hit and To Wound rolls as well as cause Terror.]
 
-#entry("MAGIC WEAPONS")
-#namecost("HAMMER OF SMEDNIR", "45 points")
+#magic-weapon("HAMMER OF KARAK DRAZH", 20)[Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any enemy models that suffer one or more unsaved Wounds from it are subject to the Always Strikes Last special rule until the end of the next Close Combat phase.]
 
-Each Hit with this weapon is multiplied into D3 Hits.
+#magic-weapon("KRAGGIS' ANCESTRAL PICKAXE", 20)[Great weapon. The wielder of this weapon has the Armour Piercing (1) and Underground Advance (see Miners) special rules.]
+]
 
-#namecost("RED AXE OF KARAK EIGHT PEAKS", "40 points")
+#magic-item-section("armour")[
+#magic-armour("MAGNIFICENT ARMOUR OF BOREK BEETLEBROW", 35)[Heavy armour. This armour gives the wearer a Ward save (3+) against all attacks of Strength 6 or higher.]
 
-Against all Orcs, Goblins and Skaven, this weapon allows its wielder to re-roll To Hit and To Wound rolls as well as cause Terror.
+#magic-armour("EVER-BURNING HELMET OF GRUNGNI", 30)[This armour gives the wearer a 6+ armour save. All close combat attacks directed against the wearer must re-roll To Hit.]
 
-#namecost("HAMMER OF KARAK DRAZH", "20 points")
+#magic-armour("RUNIC BRACERS OF SKAVOR", 25)[This armour gives the wearer a 6+ armour save. The wearer gains the Regeneration (5+) special rule.]
 
-Attacks with the Hammer of Karak Drazh are resolved at +3 Initiative, and any enemy models that suffer one or more unsaved Wounds from it are subject to the Always Strikes Last special rule until the end of the next Close Combat phase.
+#magic-armour("HELMET OF THE ANVIL", 10)[This armour gives the wearer a 6+ armour save. In addition, their armour save cannot be worse than a 6+.]
+]
 
-#namecost("KRAGGIS' ANCESTRAL PICKAXE", "20 points")
+#magic-item-section("talisman")[
+#talisman("GOLDEN BANDS OF GRIMNIR", 45)[This item gives the wearer +1 Wound and the Magic Resistance (3) special rule.]
 
-Great weapon. The wielder of this weapon has the Armour Piercing (1) and Underground Advance (see Miners) special rules.
+#talisman("HEAVY METAL INGOT", 30)[This item allows the wielder to re-roll failed armour saves and ward saves in any turn they have not moved.]
+]
 
-#entry("MAGIC ARMOUR")
-#namecost("MAGNIFICENT ARMOUR OF BOREK BEETLEBROW", "35 points")
+#magic-item-section("enchanted")[
+#enchanted-item("FOCAL LENS OF MORGRIM", 40)[The bearer and any unit they join gain +1 To Hit with missile weapons.]
 
-Heavy armour. This armour gives the wearer a Ward save (3+) against all attacks of Strength 6 or higher.
+#enchanted-item("GOLDEN SCEPTRE OF NORGRIM", 40)[At the start of each of your turns, you may bestow either +1 Movement, +1 Strength or a 6+ Armour save onto the bearer and any unit he is with. Each bonus lasts until the start of your next turn.]
 
-#namecost("EVER-BURNING HELMET", "")
-#namecost("OF GRUNGNI", "30 points")
+#enchanted-item("RUNIC TABLET OF THUNGNI", 30)[The bearer and any unit they join gain the Armour Piercing (1) special rule.]
 
-This armour gives the wearer a 6+ armour save. All close combat attacks directed against the wearer must re-roll To Hit.
+#enchanted-item("SILVER HORN OF VENGEANCE", 30)[One use only. The Silver Horn of Vengeance can be used at the start of any friendly turn. Its wielder, and any friendly units within 6", have the Devastating Charge special rule until the start of their following turn. Additionally, once used, the blower of the Silver Horn of Vengeance, and any unit he joins, cause Fear in all Elves for the rest of the game.]
 
-#namecost("RUNIC BRACERS OF SKAVOR", "25 points")
+#enchanted-item("FIERY RING OF THORI", 35)[The Fiery Ring of Thori gives its bearer a Strength 4 Breath Weapon with the Flaming Attacks special rule.]
 
-This armour gives the wearer a 6+ armour save. The wearer gains the Regeneration (5+) special rule.
+#enchanted-item("TEARDROP OF GRUNGNI", 20)[One use only. This item can be used in any of your Shooting phases and has a 6" range. The target suffers D3 Strength 6 Hits. In addition, if the target is a lone model, it must halve all its Movement until the start of your next turn.]
 
-#namecost("HELMET OF THE ANVIL", "10 points")
+#enchanted-item("HEALING SALVE OF VALAYA", 15)[One use only. This item can be used at the start of the controlling player's turn. The model immediately recovers D3 Wounds up to their starting value.]
 
-This armour gives the wearer a 6+ armour save. In addition, their armour save cannot be worse than a 6+.
+#enchanted-item("RESOUNDING GROMRIL HORN", 10)[One use only. This item may be used at the start of any of your turns. Once used, all friendly units within 12" gain +1 to their Leadership for the duration of the turn.]
+]
 
-#entry("TALISMANS")
-#namecost("GOLDEN BANDS OF GRIMNIR", "45 points")
-
-This item gives the wearer +1 Wound and the Magic Resistance (3) special rule.
-
-#namecost("HEAVY METAL INGOT", "30 points")
-
-This item allows the wielder to re-roll failed armour saves and ward saves in any turn they have not moved.
-
-#entry("ENCHANTED ITEMS")
-#namecost("FOCAL LENS OF MORGRIM", "40 points")
-
-The bearer and any unit they join gain +1 To Hit with missile weapons.
-
-#namecost("GOLDEN SCEPTRE OF NORGRIM", "40 points")
-
-At the start of each of your turns, you may bestow either +1 Movement, +1 Strength or a 6+ Armour save onto the bearer and any unit he is with. Each bonus lasts until the start of your next turn.
-
-#namecost("RUNIC TABLET OF THUNGNI", "30 points")
-
-The bearer and any unit they join gain the Armour Piercing (1) special rule.
-
-#namecost("SILVER HORN OF VENGEANCE", "30 points")
-
-One use only. The Silver Horn of Vengeance can be used at the start of any friendly turn. Its wielder, and any friendly units within 6", have the Devastating Charge special rule until the start of their following turn. Additionally, once used, the blower of the Silver Horn of Vengeance, and any unit he joins, cause Fear in all Elves for the rest of the game.
-
-#namecost("FIERY RING OF THORI", "35 points")
-
-The Fiery Ring of Thori gives its bearer a Strength 4 Breath Weapon with the Flaming Attacks special rule.
-
-#namecost("TEARDROP OF GRUNGNI", "20 points")
-
-One use only. This item can be used in any of your Shooting phases and has a 6" range. The target suffers D3 Strength 6 Hits. In addition, if the target is a lone model, it must halve all its Movement until the start of your next turn.
-
-#namecost("HEALING SALVE OF VALAYA", "15 points")
-
-One use only. This item can be used at the start of the controlling player's turn. The model immediately recovers D3 Wounds up to their starting value.
-
-#namecost("RESOUNDING GROMRIL HORN", "10 points")
-
-One use only. This item may be used at the start of any of your turns. Once used, all friendly units within 12" gain +1 to their Leadership for the duration of the turn.
-
-#entry("MAGIC STANDARDS")
-#namecost("BANNER OF LOST HOLDS", "60 points")
-
-All models in a unit that carries the Banner of Lost Holds can re-roll failed To Wound rolls in close combat.
-
-= RUNIC ITEMS
-
+#magic-item-section("standard")[
+#magic-standard("BANNER OF LOST HOLDS", 60)[All models in a unit that carries the Banner of Lost Holds can re-roll failed To Wound rolls in close combat.]
+]
+#upgrade-chapter("RUNIC ITEMS")[
 Runic items are effectively magic items tailored to your own requirements by combining abilities. A Dwarf character can carry runic items, and the total points values of those runic items is limited as mentioned in the army list.
 
 It is important to remember that a runic item is no different from a magic item, and all the usual rules for magic items still apply. All the rules that apply to the possession and use of magic items also apply to runic items.
 
-#entry("CREATING A RUNIC ITEM")
+#group("CREATING A RUNIC ITEM")
 
 Unless otherwise noted, runes can be inscribed onto the following things: weapons, armour, talismans, standards, and war machines. Each of these has its own types of runes.
 
@@ -215,7 +175,7 @@ If a model is permitted to take a runic standard, they may choose banner runes f
 
 Dwarf war machines can be inscribed with engineering runes. Shot from a war machine with an engineering rune has the Magical Attacks special rule.
 
-#entry("RULES OF THE RUNES")
+#group("RULES OF THE RUNES")
 
 You may inscribe up to three runes onto an item, which will henceforth be considered magical. Runic magic items are subject to the following restrictions:
 
@@ -229,364 +189,233 @@ You may inscribe up to three runes onto an item, which will henceforth be consid
 
 5) Apart from the master runes other runes can be combined as you wish, to produce varied or cumulative effects. With the exception of master runes, runes can be used in multiples when specified, although whether their effects are simply added together or combine into a new power will be stated within the rune's rules. The point costs for cumulative runes can be stated as 5/10/20 for example, where the higher numbers are the cost for the second and/or third cumulative rune.
 
-#entry("WEAPON RUNES")
-#columns(2)[
-#namecost("MASTER RUNE OF SMITING", "35 points")
+#group("WEAPON RUNES")
 
-A weapon engraved with the Master Rune of Smiting has the Multiple Wounds (D6) special rule.
+#upgrade("MASTER RUNE OF SMITING", 35)[A weapon engraved with the Master Rune of Smiting has the Multiple Wounds (D6) special rule.]
 
-#namecost("MASTER RUNE OF DEATH", "30 points")
+#upgrade("MASTER RUNE OF DEATH", 30)[A weapon engraved with the Master Rune of Death grants its wielder the Heroic Killing Blow special rule.]
 
-A weapon engraved with the Master Rune of Death grants its wielder the Heroic Killing Blow special rule.
+#upgrade("MASTER RUNE OF DRAGON SLAYING", 30)[Against Dragons and Drakes, a weapon engraved with the Master Rune of Dragon Slaying will always wound on a To Wound roll of 2+ and has the Multiple Wounds (2) special rule.]
 
-#namecost("MASTER RUNE OF DRAGON", "")
-#namecost("SLAYING", "30 points")
+#upgrade("MASTER RUNE OF ALARIC THE MAD", 25)[A weapon engraved with the Master Rune of Alaric the Mad has the Ignores Armour Saves special rule.]
 
-Against Dragons and Drakes, a weapon engraved with the Master Rune of Dragon Slaying will always wound on a To Wound roll of 2+ and has the Multiple Wounds (2) special rule.
+#upgrade("MASTER RUNE OF SKALF BLACKHAMMER", 20)[A weapon engraved with the Master Rune of Skalf Blackhammer will Wound any model not in magic armour on a To Wound roll of 2+, regardless of the target's Toughness. Against models in magic armour, a roll of 3+ is required.]
 
-#namecost("MASTER RUNE OF ALARIC", "")
-#namecost("THE MAD", "25 points")
+#upgrade("MASTER RUNE OF BREAKING", 25)[If a model with a weapon engraved with the Master Rune of Breaking scores one or more successful hits against a model, the foe's weapon or armour is destroyed on a D6 roll of 2+ (roll once, regardless of the number of successful hits). If the foe has more than one piece of equipment (note that two hand weapons count as one), roll a D6 to randomly determine which one is destroyed.]
 
-A weapon engraved with the Master Rune of Alaric the Mad has the Ignores Armour Saves special rule.
+#upgrade("MASTER RUNE OF SNORRI SPANGELHELM", 25)[A weapon engraved with the Master Rune of Snorri Spangelhelm always hits on a To Hit roll of 2+.]
 
-#namecost("MASTER RUNE OF SKALF", "")
-#namecost("BLACKHAMMER", "20 points")
+#upgrade("MASTER RUNE OF SWIFTNESS", 25)[A weapon engraved with the Master Rune of Swiftness has the Always Strikes First special rule.]
 
-A weapon engraved with the Master Rune of Skalf Blackhammer will Wound any model not in magic armour on a To Wound roll of 2+, regardless of the target's Toughness. Against models in magic armour, a roll of 3+ is required.
+#upgrade("MASTER RUNE OF BANISHMENT", 20)[A weapon engraved with the Master Rune of Banishment may re-roll failed To Wound rolls against models with the Ethereal, Undead or Vampiric special rule.]
 
-#namecost("MASTER RUNE OF BREAKING", "25 points")
-
-If a model with a weapon engraved with the Master Rune of Breaking scores one or more successful hits against a model, the foe's weapon or armour is destroyed on a D6 roll of 2+ (roll once, regardless of the number of successful hits). If the foe has more than one piece of equipment (note that two hand weapons count as one), roll a D6 to randomly determine which one is destroyed.
-
-#namecost("MASTER RUNE OF SNORRI", "")
-#namecost("SPANGELHELM", "25 points")
-
-A weapon engraved with the Master Rune of Snorri Spangelhelm always hits on a To Hit roll of 2+.
-
-#namecost("MASTER RUNE OF SWIFTNESS", "25 points")
-
-A weapon engraved with the Master Rune of Swiftness has the Always Strikes First special rule.
-
-#namecost("MASTER RUNE OF BANISHMENT", "20 points")
-
-A weapon engraved with the Master Rune of Banishment may re-roll failed To Wound rolls against models with the Ethereal, Undead or Vampiric special rule.
-
-#namecost("MASTER RUNE OF FLIGHT", "20 points")
-
-A weapon engraved with the Master Rune of Flight can be thrown like a throwing weapon with a range of up to 12" which always hits on a roll of 2+. Roll To Wound as if the target had suffered a hit from the weapon in close combat.
+#upgrade("MASTER RUNE OF FLIGHT", 20)[A weapon engraved with the Master Rune of Flight can be thrown like a throwing weapon with a range of up to 12" which always hits on a roll of 2+. Roll To Wound as if the target had suffered a hit from the weapon in close combat.
 
 Any additional runes on the weapon will also take effect. After this, the weapon flies back to the wielder. A weapon with the Master Rune of Flight can also be used in close combat as normal.
+]
 
-#namecost("MASTER RUNE OF KRAGG", "")
-#namecost("THE GRIM", "5 points")
+#upgrade("MASTER RUNE OF KRAGG THE GRIM", 5)[This rune can only be placed on great weapons. It allows the great weapon to be inscribed with runes.]
 
-This rune can only be placed on great weapons. It allows the great weapon to be inscribed with runes.
-
-#namecost("RUNE OF DAEMON SLAYING 25/50/100 points", "")
-
-Against any model with the Daemonic special rule, a weapon engraved with a Rune of Daemon Slaying receives a +1 bonus To Hit and To Wound.
+#upgrade("RUNE OF DAEMON SLAYING", (25, 50, 100))[Against any model with the Daemonic special rule, a weapon engraved with a Rune of Daemon Slaying receives a +1 bonus To Hit and To Wound.
 
 Against any model with the Daemonic special rule, a weapon engraved with two Runes of Daemon Slaying receives a +1 bonus To Hit and To Wound and gains the Multiple Wounds (D3) special rule.
 
 Against any model with the Daemonic special rule, a weapon engraved with three Runes of Daemon Slaying hits and Wounds on a roll of 2+, has the Multiple Wounds (D3) special rule and no Ward saves can be taken against it.
+]
 
-#namecost("RUNE OF FIRE 5/35/55 points", "")
-
-A weapon engraved with a Rune of Fire has the Flaming Attacks special rule.
+#upgrade("RUNE OF FIRE", (5, 35, 55))[A weapon engraved with a Rune of Fire has the Flaming Attacks special rule.
 
 A weapon engraved with two Runes of Fire has the Flaming Attacks special rule, and grants its wielder a Strength 4 Breath Weapon with the Flaming Attacks special rule.
 
 A weapon engraved with three Runes of Fire has the Flaming Attacks special rule, and grants its wielder a Strength 4 Breath Weapon that has the Flaming Attacks and Multiple Wounds (D3) special rules.
+]
 
-#namecost("RUNE OF FURY 15/25/50 points", "")
-
-A weapon engraved with a Rune of Fury grants its wielder +1 Attack.
+#upgrade("RUNE OF FURY", (15, 25, 50))[A weapon engraved with a Rune of Fury grants its wielder +1 Attack.
 
 A weapon engraved with two Runes of Fury grants its wielder +1 Attack and the Frenzy special rule.
 
 A weapon engraved with three Runes of Fury grants its wielder +1 Attack and the Frenzy special rule and, after each successful roll To Hit and to Wound, it grants its user another Attack; roll To Hit and To Wound as normal. Attacks generated in this way do not generate further Attacks.
+]
 
-#namecost("RUNE OF STRIKING 10/30/40 points", "")
-
-A weapon engraved with a Rune of Striking grants its wielder +1 Weapon Skill.
+#upgrade("RUNE OF STRIKING", (10, 30, 40))[A weapon engraved with a Rune of Striking grants its wielder +1 Weapon Skill.
 
 A weapon engraved with two Runes of Striking grants its wielder +1 Weapon Skill and allows its wielder to re-roll failed To Hit rolls in close combat.
 
 A weapon engraved with three Runes of Striking grants its wielder Weapon Skill 10 and allows him to re-roll failed To Hit rolls in close combat.
+]
 
-#namecost("RUNE OF CLEAVING 5/20/35 points", "")
-
-A weapon engraved with a Rune of Cleaving has the Armour Piercing (1) special rule.
+#upgrade("RUNE OF CLEAVING", (5, 20, 35))[A weapon engraved with a Rune of Cleaving has the Armour Piercing (1) special rule.
 
 A weapon engraved with two Runes of Cleaving has the Armour Piercing (1) special rule, and additionally grants its wielder +1 Strength.
 
 A weapon engraved with three Runes of Cleaving has the Armour Piercing (1) special rule, and additionally grants its wielder +1 Strength and the Killing Blow special rule.
-
-#namecost("RUNE OF MIGHT 25/35 points", "")
-
-A weapon engraved with a Rune of Might doubles its wielder's Strength against foes of Toughness 5 or higher in close combat.
-
-A weapon engraved with two Runes of Might maintains the previous effect, and grants the Multiple Wounds (D3) special rule against foes of Toughness 5 or higher in close combat.
-
-#namecost("RUNE OF DISMAY 15/25 points", "")
-
-A weapon engraved with a Rune of Dismay grants its wielder the Fear special rule.
-
-A weapon engraved with two Runes of Dismay grants its wielder the Terror special rule.
-
-#namecost("RUNE OF PARRYING", "20 points")
-
-A weapon engraved with a Rune of Parrying causes all enemy models attempting to attack its wielder in close combat to suffer a \-1 penalty to their To Hit rolls.
-
-#namecost("GRUDGE RUNE", "20 points")
-
-For each Grudge Rune in your army, nominate one enemy character or monster at the beginning of the game. The wielder of a weapon engraved with a Grudge Rune gains +1 To Hit and can re-roll failed To Wound rolls in close combat when attacking the nominated model.
-
-#namecost("RUNE OF SPEED", "5 points")
-
-A weapon engraved with a Rune of Speed grants its wielder +1 Initiative. Each Rune of Speed adds +1 Initiative.
 ]
 
-#entry("ARMOUR RUNES")
-#namecost("MASTER RUNE OF ADAMANT", "50 points")
+#upgrade("RUNE OF MIGHT", (25, 35))[A weapon engraved with a Rune of Might doubles its wielder's Strength against foes of Toughness 5 or higher in close combat.
 
-A model wearing armour engraved with the Master Rune of Adamant has Toughness 10. This rune cannot be combined with any other armour runes.
+A weapon engraved with two Runes of Might maintains the previous effect, and grants the Multiple Wounds (D3) special rule against foes of Toughness 5 or higher in close combat.
+]
 
-#namecost("MASTER RUNE OF STEEL", "30 points")
+#upgrade("RUNE OF DISMAY", (15, 25))[A weapon engraved with a Rune of Dismay grants its wielder the Fear special rule.
 
-Enemies must re-roll successful To Wound roll against a model wearing armour engraved with the Master Rune of Steel.
+A weapon engraved with two Runes of Dismay grants its wielder the Terror special rule.
+]
 
-#namecost("MASTER RUNE OF GROMRIL", "20 points")
+#upgrade("RUNE OF PARRYING", 20)[A weapon engraved with a Rune of Parrying causes all enemy models attempting to attack its wielder in close combat to suffer a \-1 penalty to their To Hit rolls.]
 
-Armour engraved with the Master Rune of Gromril grants its wearer a 1+ armour save that cannot be improved upon in any way.
+#upgrade("GRUDGE RUNE", 20)[For each Grudge Rune in your army, nominate one enemy character or monster at the beginning of the game. The wielder of a weapon engraved with a Grudge Rune gains +1 To Hit and can re-roll failed To Wound rolls in close combat when attacking the nominated model.]
 
-#namecost("RUNE OF FORTITUDE 20/50/60 points", "")
+#upgrade("RUNE OF SPEED", 5)[A weapon engraved with a Rune of Speed grants its wielder +1 Initiative. Each Rune of Speed adds +1 Initiative.]
 
-Armour engraved with a Rune of Fortitude grants its wearer +1 Toughness.
+#group("ARMOUR RUNES")
+
+#upgrade("MASTER RUNE OF ADAMANT", 50)[A model wearing armour engraved with the Master Rune of Adamant has Toughness 10. This rune cannot be combined with any other armour runes.]
+
+#upgrade("MASTER RUNE OF STEEL", 30)[Enemies must re-roll successful To Wound roll against a model wearing armour engraved with the Master Rune of Steel.]
+
+#upgrade("MASTER RUNE OF GROMRIL", 20)[Armour engraved with the Master Rune of Gromril grants its wearer a 1+ armour save that cannot be improved upon in any way.]
+
+#upgrade("RUNE OF FORTITUDE", (20, 50, 60))[Armour engraved with a Rune of Fortitude grants its wearer +1 Toughness.
 
 Armour engraved with two Runes of Fortitude grants its wearer +1 Toughness and a Ward save (5+).
 
 Armour engraved with three Runes of Fortitude grants its wearer +1 Toughness, a Ward save (5+) and the Immunity (Multiple Wounds) special rule.
+]
 
-#namecost("RUNE OF IRON 15/35/45 points", "")
-
-Armour engraved with a Rune of Iron grants its wearer +1 Wound.
+#upgrade("RUNE OF IRON", (15, 35, 45))[Armour engraved with a Rune of Iron grants its wearer +1 Wound.
 
 Armour engraved with two Runes of Iron grants its wearer +1 Wound and +1 Toughness.
 
 Armour engraved with three Runes of Iron grants its wearer +1 Wound, +1 Toughness and the Regeneration (5+) special rule.
+]
 
-#namecost("RUNE OF RESISTANCE", "25 points")
+#upgrade("RUNE OF RESISTANCE", 25)[This rune allows the character to re-roll any failed armour saving throws.]
 
-This rune allows the character to re-roll any failed armour saving throws.
+#upgrade("RUNE OF SHIELDING", 15)[Armour engraved with a Rune of Shielding grants its wearer a Ward save (2+) against Wounds caused by missile attacks.]
 
-#namecost("RUNE OF SHIELDING", "15 points")
+#upgrade("RUNE OF PRESERVATION", 10)[Armour engraved with a Rune of Preservation grants the wearer the Immunity (Killing Blow/Heroic Killing Blow) special rule.]
 
-Armour engraved with a Rune of Shielding grants its wearer a Ward save (2+) against Wounds caused by missile attacks.
+#upgrade("RUNE OF IMPACT", 5)[Armour engraved with a Rune of Impact grants its wearer the Impact Hits (1) and Strength Bonus (1) special rules.]
 
-#namecost("RUNE OF PRESERVATION", "10 points")
+#upgrade("RUNE OF STONE", 5)[Armour engraved with a Rune of Stone adds +1 to its wearer's armour save.]
 
-Armour engraved with a Rune of Preservation grants the wearer the Immunity (Killing Blow/Heroic Killing Blow) special rule.
+#group("TALISMANIC RUNES")
 
-#namecost("RUNE OF IMPACT", "5 points")
+#upgrade("MASTER RUNE OF BALANCE", 50, only: "Runesmiths/Runelords")[During the enemy's Magic phase, this rune allows the owning player remove one power dice from his opponent's pool and add it to his own dispel pool.]
 
-Armour engraved with a Rune of Impact grants its wearer the Impact Hits (1) and Strength Bonus (1) special rules.
+#upgrade("MASTER RUNE OF KINGSHIP", 40, only: "Dwarf Lord")[The Master Rune of Kingship gives the Lord and the unit he is with the Stubborn and Immunity (Fear/Terror) special rules for as long as he remains with the unit. If he joins a unit of Hammerers, the unit becomes Unbreakable instead. If the model is not in a unit, it has no effect.]
 
-#namecost("RUNE OF STONE", "5 points")
+#upgrade("MASTER RUNE OF SPITE", 30)[Every time a model with the Master Rune of Spite is Hit in close combat, the model that struck the blow suffers a Strength 4 hit.]
 
-Armour engraved with a Rune of Stone adds +1 to its wearer's armour save.
+#upgrade("MASTER RUNE OF SPELLBINDING", 20)[A model with the Master Rune of Spellbinding gets a +1 bonus to all attempts to channel dispel dice.]
 
-#entry("TALISMANIC RUNES")
-#namecost("MASTER RUNE OF BALANCE", "50 points")
+#upgrade("MASTER RUNE OF CHALLENGE", 15, one-use: true)[The rune is used during the enemy turn before they declare charges. Nominate one enemy unit within 12" of the rune user. The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules. The enemy unit must either declare a charge against the rune user (and any unit he is with) or must flee in the Compulsory Movement phase as if it had failed a Panic test. The rune user (and any unit he is with) can only elect to Hold or Stand and Shoot. Any Terror tests are taken as normal. This rune has no effect on units that have Immunity (Psychology).]
 
-Runesmiths/Runelords only. During the enemy's Magic phase, this rune allows the owning player remove one power dice from his opponent's pool and add it to his own dispel pool.
+#upgrade("MASTER RUNE OF PASSAGE", 10)[A model with the Master Rune of Passage, and any unit he joins, automatically pass any Dangerous Terrain tests.]
 
-#namecost("MASTER RUNE OF KINGSHIP", "40 points")
-
-Dwarf Lord only. The Master Rune of Kingship gives the Lord and the unit he is with the Stubborn and Immunity (Fear/Terror) special rules for as long as he remains with the unit. If he joins a unit of Hammerers, the unit becomes Unbreakable instead. If the model is not in a unit, it has no effect.
-
-#namecost("MASTER RUNE OF SPITE", "30 points")
-
-Every time a model with the Master Rune of Spite is Hit in close combat, the model that struck the blow suffers a Strength 4 hit.
-
-#namecost("MASTER RUNE OF SPELLBINDING", "20 points")
-
-A model with the Master Rune of Spellbinding gets a +1 bonus to all attempts to channel dispel dice.
-
-#namecost("MASTER RUNE OF CHALLENGE", "15 points")
-
-One use only. The rune is used during the enemy turn before they declare charges. Nominate one enemy unit within 12" of the rune user. The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules. The enemy unit must either declare a charge against the rune user (and any unit he is with) or must flee in the Compulsory Movement phase as if it had failed a Panic test. The rune user (and any unit he is with) can only elect to Hold or Stand and Shoot. Any Terror tests are taken as normal. This rune has no effect on units that have Immunity (Psychology).
-
-#namecost("MASTER RUNE OF PASSAGE", "10 points")
-
-A model with the Master Rune of Passage, and any unit he joins, automatically pass any Dangerous Terrain tests.
-
-#namecost("RUNE OF WARDING 15/30/45 points", "")
-
-A model with a Rune of Warding has a Ward save (6+).
+#upgrade("RUNE OF WARDING", (15, 30, 45))[A model with a Rune of Warding has a Ward save (6+).
 
 A model with two Runes of Warding has a Ward save (5+).
 
 A model with three Runes of Warding has a Ward save (4+).
+]
 
-#namecost("RUNE OF SPELLBREAKING 25/35 points", "")
-
-Runesmiths/Runelords only. One use only. When a spell has been cast, a Runesmith or Runelord can use this rune to dispel it automatically, without the need to roll dispel dice. This rune cannot be used to dispel Remains in Play spells other than at the moment they are cast.
+#upgrade("RUNE OF SPELLBREAKING", (25, 35), only: "Runesmiths/Runelords", one-use: true)[When a spell has been cast, a Runesmith or Runelord can use this rune to dispel it automatically, without the need to roll dispel dice. This rune cannot be used to dispel Remains in Play spells other than at the moment they are cast.
 
 A second Rune of Spell breaking maintains the previous effect and, after the spell is dispelled, roll a D6; on a 4+, the enemy spell is lost to the Wizard casting it and cannot be cast by him for the rest of the game.
+]
 
-#namecost("RUNE OF FATE", "15 points")
+#upgrade("RUNE OF FATE", 15, one-use: true)[The model has a Ward save (2+) against the first unsaved Wound suffered.]
 
-One use only. The model has a Ward save (2+) against the first unsaved Wound suffered.
+#upgrade("RUNE OF BROTHERHOOD", 5)[May not be used by a character with an Oath stone or Shieldbearers. A character with this rune may either be deployed with a unit of Rangers utilising the Scouts special rule or join a unit of Miners utilising the Ambushers special rule.]
 
-#namecost("RUNE OF BROTHERHOOD", "5 points")
+#upgrade("RUNE OF THE FURNACE", 5)[A model with the Rune of the Furnace has the Immunity (Flaming Attacks) special rule.]
 
-May not be used by a character with an Oath stone or Shieldbearers. A character with this rune may either be deployed with a unit of Rangers utilising the Scouts special rule or join a unit of Miners utilising the Ambushers special rule.
+#upgrade("RUNE OF LUCK", 5, one-use: true)[A model with a Rune of Luck can re-roll a single To Hit roll, To Wound roll, armour save, ward save or characteristic test during the game.]
 
-#namecost("RUNE OF THE FURNACE", "5 points")
+#group("BANNER RUNES")
 
-A model with the Rune of the Furnace has the Immunity (Flaming Attacks) special rule.
+#upgrade("MASTER RUNE OF GROTH ONE-EYE", 75)[A standard bearing the Master Rune of Groth One-Eye confers the Stubborn special rule to the bearer's unit and all friendly Dwarf units within 12" of the bearer.]
 
-#namecost("RUNE OF LUCK", "5 points")
+#upgrade("MASTER RUNE OF STROMNI REDBEARD", 60)[A standard bearing the Master Rune of Stromni Redbeard confers a further +1 bonus to the bearer's unit's combat result score, and the combat result score of all other friendly Dwarf units within 12" of the bearer.]
 
-One use only. A model with a Rune of Luck can re-roll a single To Hit roll, To Wound roll, armour save, ward save or characteristic test during the game.
+#upgrade("MASTER RUNE OF GRUNGNI", 60)[A standard bearing the Master Rune of Grungni confers a Ward save (5+) against Wounds caused by missile attacks to any friendly units within 12" of the bearer.]
 
-#entry("BANNER RUNES")
-#columns(2)[
-#namecost("MASTER RUNE OF GROTH ONE-EYE", "75 points")
+#upgrade("MASTER RUNE OF GRIMNIR", 50, only: "Slayers")[Any friendly Slayer unit within 12" of the standard gains a Ward save (5+) against all missile attacks.]
 
-A standard bearing the Master Rune of Groth One-Eye confers the Stubborn special rule to the bearer's unit and all friendly Dwarf units within 12" of the bearer.
+#upgrade("MASTER RUNE OF VALAYA", 25)[A standard bearing the Master Rune of Valaya confers a +1 bonus upon all attempts to dispel magic by the owning player. Additionally, all Remains in Play spells are immediately dispelled on a D6 roll of 3+ at the start of each friendly Magic phase (roll separately for each Remains in Play spell).]
 
-#namecost("MASTER RUNE OF STROMNI", "")
-#namecost("REDBEARD", "60 points")
+#upgrade("MASTER RUNE OF FEAR", 25)[A standard bearing the Master Rune of Fear confers the Fear special rule to the bearer's unit.]
 
-A standard bearing the Master Rune of Stromni Redbeard confers a further +1 bonus to the bearer's unit's combat result score, and the combat result score of all other friendly Dwarf units within 12" of the bearer.
-
-#namecost("MASTER RUNE OF GRUNGNI", "60 points")
-
-A standard bearing the Master Rune of Grungni confers a Ward save (5+) against Wounds caused by missile attacks to any friendly units within 12" of the bearer.
-
-#namecost("MASTER RUNE OF GRIMNIR", "50 points")
-
-Slayers only. Any friendly Slayer unit within 12" of the standard gains a Ward save (5+) against all missile attacks.
-
-#namecost("MASTER RUNE OF VALAYA", "25 points")
-
-A standard bearing the Master Rune of Valaya confers a +1 bonus upon all attempts to dispel magic by the owning player. Additionally, all Remains in Play spells are immediately dispelled on a D6 roll of 3+ at the start of each friendly Magic phase (roll separately for each Remains in Play spell).
-
-#namecost("MASTER RUNE OF FEAR", "25 points")
-
-A standard bearing the Master Rune of Fear confers the Fear special rule to the bearer's unit.
-
-#namecost("RUNE OF BATTLE 20/40/60 points", "")
-
-A standard bearing a Rune of Battle confers a further +1 bonus to the bearer's unit's combat result score.
+#upgrade("RUNE OF BATTLE", (20, 40, 60))[A standard bearing a Rune of Battle confers a further +1 bonus to the bearer's unit's combat result score.
 
 A standard bearing two Runes of Battle confers a further +2 bonus to the bearer's unit's combat result score.
 
 A standard bearing three Runes of Battle confers a further +2 bonus to the bearer's unit's combat result score, and additionally confers the Fight in Extra Ranks (1) special rule to the bearer's unit.
+]
 
-#namecost("RUNE OF SLOWNESS 20/30/50 points", "")
-
-Any foes charging a unit including a standard bearing a Rune of Slowness subtract D3" from their charge distance (roll after their charge distance has been determined). If the enemy fails to make contact, all the rules for failed charges apply.
+#upgrade("RUNE OF SLOWNESS", (20, 30, 50))[Any foes charging a unit including a standard bearing a Rune of Slowness subtract D3" from their charge distance (roll after their charge distance has been determined). If the enemy fails to make contact, all the rules for failed charges apply.
 
 A second Rune of Slowness means a foe rolls 2D3 and must choose the highest dice when subtracting from his charge distance.
 
 A third Rune of Slowness maintains the previous effects and, should a foe contact the bearing unit, they have the Always Strikes Last special rule in the first round of combat.
+]
 
-#namecost("RUNE OF STOICISM", "50 points")
+#upgrade("RUNE OF STOICISM", 50)[A standard bearing the Rune of Stoicism confers the Stubborn special rule to the bearer's unit.]
 
-A standard bearing the Rune of Stoicism confers the Stubborn special rule to the bearer's unit.
-
-#namecost("RUNE OF SANCTUARY 10/20/30 points", "")
-
-A standard bearing a Rune of Sanctuary confers the Magic Resistance (1) special rule to the bearer's unit.
+#upgrade("RUNE OF SANCTUARY", (10, 20, 30))[A standard bearing a Rune of Sanctuary confers the Magic Resistance (1) special rule to the bearer's unit.
 
 A standard bearing two Runes of Sanctuary confers the Magic Resistance (2) special rule to the bearer's unit.
 
 A standard bearing three Runes of Sanctuary confers the Magic Resistance (3) special rule to the bearer's unit.
-
-#namecost("RUNE OF GUARDING", "30 points")
-
-Battle Standard Bearer only. The bearer of a standard with the Rune of Guarding has a Ward Save (5+).
-
-#namecost("RUNE OF COURAGE", "20 points")
-
-A standard bearing the Rune of Courage confers the Immunity (Psychology) special rule to the bearer's unit.
-
-#namecost("RUNE OF DETERMINATION", "15 points")
-
-One use only. The unit may take a Break test on a single D6 rather than 2D6.
-
-#namecost("RUNE OF KADRIN", "20 points")
-
-A standard bearing the Rune of Kadrin allow all models in the unit to re-roll all To Wound rolls of 1 with close combat and missile attacks.
-
-#namecost("STROLLAZ' RUNE", "10 points")
-
-A standard bearing Strollaz' Rune confers the Vanguard special rule to the bearer's unit.
-
-#namecost("ANCESTOR RUNE", "10 points")
-
-One use only. If the unit carrying a banner with this rune has to take a Break test, the rune is expended. The unit tests as if it were Stubborn.
-
-#namecost("RUNE OF FORGING", "25 points")
-
-Cannon only. A war machine engraved with a Rune of Forging can re-roll the artillery dice whenever a misfire result is rolled; however, you must accept the result of the second roll.
-
-#namecost("RUNE OF ACCURACY", "20 points")
-
-A war machine with engraved with a Rune of Accuracy has a +1 bonus To Hit. If it does not use Ballistic Skill To Hit, it can instead re-roll the scatter dice. May not be taken by an Organ Gun.
-
-#namecost("RUNE OF RELOADING", "20 points")
-
-A war machine engraved with a Rune of Reloading can shoot every turn, even if it has moved or rolled a misfire the previous turn.
-
-#namecost("FLAKKSON'S RUNE OF SEEKING", "15 points")
-
-Bolt Throwers only. A war machine engraved with Flakkson's Rune of Seeking gains +1 To Hit against any units with the Fly special rule.
-
-#namecost("RUNE OF FORTUNE", "10 points")
-
-If a machine has the Rune of Fortune the player may re-roll the result on the machine's Misfire chart.
-
-#namecost("STALWART RUNE 5/10 points", "")
-
-A war machine engraved with a Stalwart Rune confers a +1 bonus to its crew's combat result score.
-
-A war machine engraved with two Stalwart Runes confers a +1 bonus to its crew's combat result score, and its crew also gain the Stubborn special rule.
-
-#namecost("VALIANT RUNE", "5 points")
-
-The war machine crew gains the Stubborn special rule.
-
-#namecost("RUNE OF BURNING", "5 points")
-
-All shooting attacks from a war machine engraved with a Rune of Burning have the Flaming Attacks special rule.
 ]
 
-#entry("ENGINEERING RUNES")
-#namecost("MASTER RUNE OF IMMOLATION", "20 points")
+#upgrade("RUNE OF GUARDING", 30, only: "Battle Standard Bearer")[The bearer of a standard with the Rune of Guarding has a Ward Save (5+).]
 
-One use only. A Dwarf player can cause a war machine engraved with the Master Rune of Immolation to explode at the end of any round of combat before determining the combat results. Both the war machine and all its remaining crew are instantly removed from play, and each enemy unit in combat with the war machine suffers 2D6 magical Strength 4 hits with the Flaming Attacks special rule, allocated as for shooting. Any surviving enemy units who charged that turn may make an overrun move as normal. This rune will also be triggered automatically when the war machine loses its last Wound in close combat.
+#upgrade("RUNE OF COURAGE", 20)[A standard bearing the Rune of Courage confers the Immunity (Psychology) special rule to the bearer's unit.]
 
-#namecost("MASTER RUNE OF DEFENCE", "20 points")
+#upgrade("RUNE OF DETERMINATION", 15, one-use: true)[The unit may take a Break test on a single D6 rather than 2D6.]
 
-The war machine gains a Ward save (3+) against all missile attacks.
+#upgrade("RUNE OF KADRIN", 20)[A standard bearing the Rune of Kadrin allow all models in the unit to re-roll all To Wound rolls of 1 with close combat and missile attacks.]
 
-#namecost("MASTER RUNE OF SKEWERING", "20 points")
+#upgrade("STROLLAZ' RUNE", 10)[A standard bearing Strollaz' Rune confers the Vanguard special rule to the bearer's unit.]
 
-Bolt Thrower only. The Bolt Thrower always hits on a 3+ with no modifiers.
+#upgrade("ANCESTOR RUNE", 10, one-use: true)[If the unit carrying a banner with this rune has to take a Break test, the rune is expended. The unit tests as if it were Stubborn.]
 
-#namecost("MASTER RUNE OF DISGUISE", "15 points")
+#upgrade("RUNE OF FORGING", 25, only: "Cannon")[A war machine engraved with a Rune of Forging can re-roll the artillery dice whenever a misfire result is rolled; however, you must accept the result of the second roll.]
 
-A war machine engraved with the Master Rune of Disguise always counts as being in hard cover.
+#upgrade("RUNE OF ACCURACY", 20)[A war machine with engraved with a Rune of Accuracy has a +1 bonus To Hit. If it does not use Ballistic Skill To Hit, it can instead re-roll the scatter dice. May not be taken by an Organ Gun.]
 
-#namecost("RUNE OF PENETRATING 30/40 points", "")
+#upgrade("RUNE OF RELOADING", 20)[A war machine engraved with a Rune of Reloading can shoot every turn, even if it has moved or rolled a misfire the previous turn.]
 
-A war machine engraved with a Rune of Penetration increases the Strength of its shots by 1, to a maximum of 10.
+#upgrade("FLAKKSON'S RUNE OF SEEKING", 15, only: "Bolt Throwers")[A war machine engraved with Flakkson's Rune of Seeking gains +1 To Hit against any units with the Fly special rule.]
+
+#upgrade("RUNE OF FORTUNE", 10)[If a machine has the Rune of Fortune the player may re-roll the result on the machine's Misfire chart.]
+
+#upgrade("STALWART RUNE", (5, 10))[A war machine engraved with a Stalwart Rune confers a +1 bonus to its crew's combat result score.
+
+A war machine engraved with two Stalwart Runes confers a +1 bonus to its crew's combat result score, and its crew also gain the Stubborn special rule.
+]
+
+#upgrade("VALIANT RUNE", 5)[The war machine crew gains the Stubborn special rule.]
+
+#upgrade("RUNE OF BURNING", 5)[All shooting attacks from a war machine engraved with a Rune of Burning have the Flaming Attacks special rule.]
+
+#group("ENGINEERING RUNES")
+
+#upgrade("MASTER RUNE OF IMMOLATION", 20, one-use: true)[A Dwarf player can cause a war machine engraved with the Master Rune of Immolation to explode at the end of any round of combat before determining the combat results. Both the war machine and all its remaining crew are instantly removed from play, and each enemy unit in combat with the war machine suffers 2D6 magical Strength 4 hits with the Flaming Attacks special rule, allocated as for shooting. Any surviving enemy units who charged that turn may make an overrun move as normal. This rune will also be triggered automatically when the war machine loses its last Wound in close combat.]
+
+#upgrade("MASTER RUNE OF DEFENCE", 20)[The war machine gains a Ward save (3+) against all missile attacks.]
+
+#upgrade("MASTER RUNE OF SKEWERING", 20, only: "Bolt Thrower")[The Bolt Thrower always hits on a 3+ with no modifiers.]
+
+#upgrade("MASTER RUNE OF DISGUISE", 15)[A war machine engraved with the Master Rune of Disguise always counts as being in hard cover.]
+
+#upgrade("RUNE OF PENETRATING", (30, 40))[A war machine engraved with a Rune of Penetration increases the Strength of its shots by 1, to a maximum of 10.
 
 A war machine engraved with two Runes of Penetration increases the Strength of its shots by 1, to a maximum of 10, and allows the user to re-roll a single failed To Wound roll during the course of the battle. Note that in the case of a Grudge Thrower, this bonus increases the Strength of both Strength values in its profile.
+]
+]
 
 = LORDS
 

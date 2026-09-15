@@ -12,7 +12,7 @@
   army: "Tomb Kings",
   version: "3.1",
   layout: "army",
-  cover: "covers/tomb-kings/3.1.png",
+  cover: "covers/tomb-kings.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Tomb Kings",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/tomb-kings/3.1.png",
+  art: "/assets/covers/tomb-kings.png",
 )
 
 #colophon((
@@ -45,23 +45,18 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Tomb Kings army, along with the rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring 'army special rules' that apply to several Tomb Kings units, and these are detailed below.
-
-#namecost("ARROWS OF ASAPH", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Tomb Kings army, along with the rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring 'army special rules' that apply to several Tomb Kings units, and these are detailed below.])[
+#upgrade("ARROWS OF ASAPH", none)[
 Units with the Arrows of Asaph special rule ignore all shooting modifiers that are not caused by magic items or spells.
+]
 
-#namecost("CURSE OF THE NECROPOLIS", "")
-
+#upgrade("CURSE OF THE NECROPOLIS", none)[
 If a model with this special rule is removed from play, then the enemy unit responsible – by inflicting the final wound, for example – will immediately suffer D6 Strength 5 hits (if the model was a Tomb King), D6 Strength 4 hits (if the model was a Tomb Prince) or D3 Strength 3 Hits (if the model was a Mummy). Any Wounds caused have the Ignores Armour Saves special rule.
 
 If more than one unit is responsible for the destruction of the model with this special rule (it is destroyed by the combat result in a multiple combat due to its Unstable rule, for example), then all guilty units are affected. If the model is killed by a character, then only that model is cursed, and not the whole enemy unit.
+]
 
-#namecost("ENTOMBED BENEATH THE SANDS", "")
-
+#upgrade("ENTOMBED BENEATH THE SANDS", none)[
 A unit with this ability has the Ambushers special rule, with the following exceptions.
 
 When these units enter the battle in the Remaining Moves sub-phase, they do not move onto the board as reinforcements in the normal way. Instead, when a unit that is Entombed Beneath the Sands enters the battle, place a small marker (max 1" diameter) anywhere on the battlefield, but not in impassable terrain or within 1" of a deployed unit.
@@ -73,8 +68,9 @@ Once the final position of the marker is established, place the emerging unit in
 If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the unit does not emerge. Instead, remove the marker and roll on the Mishap table. If a unit emerges successfully, it may act normally this turn.
 
 If you have several units Entombed Beneath the Sands, then repeat this process, one unit at a time.
+]
 
-#namecost("ENTOMBED BENEATH THE SANDS", "")
+#upgrade("ENTOMBED BENEATH THE SANDS", none)[
 #chartlabel("MISHAP TABLE")
 #chart((("1-2", "Reclaimed by the Desert: The entire unit is
 destroyed and treated as casualties."), ("3-4", "Buried Too Deep: The unit is delayed and
@@ -84,8 +80,9 @@ the same process."), ("5-6", "Shifting Sands: The unit enters the
 battlefield from any point on a randomly
 determined board edge, moving on using the
 rules for reinforcements.")))
-#chartlabel("THE HIEROPHANT")
+]
 
+#upgrade("THE HIEROPHANT", none)[
 Your army must include at least one Wizard to be the army's Hierophant. If your army includes several Wizards, this will be the one with the highest Wizard Level. If two or more models have the highest Wizard Level, choose which of them will be the Hierophant. The Hierophant must use the Lore of Nehekhara.
 
 The Hierophant, and all models in the same unit, have the Regeneration (6+) special rule.
@@ -93,24 +90,25 @@ The Hierophant, and all models in the same unit, have the Regeneration (6+) spec
 At the end of the phase in which the Hierophant is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units (except characters) on the battlefield must take a Leadership test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the Leadership test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack.
 
 If, at the start of any of your turns following the death of the Hierophant, there is one or more friendly Wizard Characters on the table who know spells from the Lore of Nehekhara, then one of these models may be designated the new Hierophant by passing a Leadership test. If passed, they become the new Hierophant following all the normal rules, and no unit in the army needs to take the Leadership test to avoid losing Wounds while they remain alive.
+]
 
-#namecost("INDOMITABLE", "")
-
+#upgrade("INDOMITABLE", none)[
 Models with this special rule suffer 1 Wound less than they normally would due to the Unstable special rule, or following the death of the army's Hierophant.
+]
 
-#namecost("MY WILL BE DONE", "")
-
+#upgrade("MY WILL BE DONE", none)[
 Any unit of Undead accompanied by a model with this rule uses the character's unmodified Weapon Skill in place of its own (use the highest Weapon Skill if the unit is joined by several characters with this rule).
 
 If all characters with the My Will Be Done rule in the unit are killed, the unit immediately reverts to using its own Weapon Skill. This special rule has no effect on mounts or any other characters except Tomb Heralds – these always use their own Weapon Skill.
+]
 
-#namecost("UNDEAD", "")
-
+#upgrade("UNDEAD", none)[
 All models with the Undead special rule have the Animated Construct, Fear, and Unstable special rules. In addition, they ignore the Independent special rule. However, they may make march moves if they are within 6" of the Hierophant or are joined by a character with the My Will Be Done special rule.
+]
 
-#namecost("BANNER OF THE KING", "")
-
+#upgrade("BANNER OF THE KING", none)[
 In addition to the normal rules for the army battle standard, units of Undead within 12" of their battle standard suffer D3 Wounds less than they normally would due to the Unstable special rule, or following the death of the army's Hierophant.
+]
 ]
 
 #lore("THE LORE OF NEHEKHARA")[
@@ -1120,19 +1118,14 @@ Herald)*, Undead*
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

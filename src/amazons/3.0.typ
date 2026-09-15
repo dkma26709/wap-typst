@@ -12,7 +12,7 @@
   army: "Amazons",
   version: "3.0",
   layout: "army",
-  cover: "covers/amazons/3.0.png",
+  cover: "covers/amazons.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Amazons",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/amazons/3.0.png",
+  art: "/assets/covers/amazons.png",
 )
 
 #colophon((
@@ -45,68 +45,69 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in an Amazon army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Amazon units, and these are detailed here.
-
-#namecost("SACRIFICIAL HUNT", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Amazon army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Amazon units, and these are detailed here.])[
+#upgrade("SACRIFICIAL HUNT", none)[
 All models with this special rule may re-roll the distance they pursue a broken enemy from combat.
+]
 
-#namecost("GUERRILLA WARFARE", "")
-
+#upgrade("GUERRILLA WARFARE", none)[
 The following applies to models with this special rule:
+]
 
-#namecost("Serpent's Strike", "")
-
+#upgrade("Serpent's Strike", none)[
 Models with this rule gain the Devastating Charge special rule. In any turn in which they successfully charge an enemy unit in the flank or rear, they may re- roll 1's To Hit and To Wound.
+]
 
-#namecost("Predator's Feint", "")
-
+#upgrade("Predator's Feint", none)[
 In the first round of close combat in which a unit with this special rule does not win the combat or the enemy passes their Break test, it may choose to disengage from combat instead of taking a Break test or making a combat reform. Units affected by Frenzy cannot attempt to disengage from combat.
 
 If the unit chooses to disengage, it makes a Flee move as if it had broken from combat. However, this does not cause Panic for breaking within 6" of friendly units. The enemy unit may only choose to pursue if they won the combat.
 
 In addition, whenever a unit with this rule chooses Flee as a charge reaction or to disengage from combat, it gains +1 to its Flee distance.
+]
 
-#namecost("Hunter's Step", "")
-
+#upgrade("Hunter's Step", none)[
 Unless it charged, marched or fled during the Movement phase of its turn, a unit with the Fast Cavalry or Skirmishers special rules armed with missile weapons may move up to its Movement value directly backwards after resolving its missile attacks in its Shooting phase.
+]
 
-#namecost("KOKA", "")
-
+#upgrade("KOKA", none)[
 Models with this upgrade gain the Frenzy special rule, and they do not lose Frenzy by losing a round of combat.
+]
 
-#namecost("CLAW OF THE OLD ONES", "")
-
+#upgrade("CLAW OF THE OLD ONES", none)[
 Claws of the Old Ones are hand weapons with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Armour Piercing (2), Magical Attacks"))
-#namecost("PAIRED CLAWS OF THE OLD ONES", "")
+]
 
+#upgrade("PAIRED CLAWS OF THE OLD ONES", none)[
 Paired Claws of the Old Ones have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Armour Piercing (2), Magical Attacks, Requires Two Hands, Parry (6+)"))
 
 #note[_A model with paired Claws of the Old Ones gains +1 Attack._]
+]
 
-#namecost("SUN GAUNTLET", "")
-
+#upgrade("SUN GAUNTLET", none)[
 Sun Gauntlets have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("8/12\"", "4", "Armour Piercing (2), Magical Attacks, Quick to Fire"))
-#namecost("SUNSTAFF", "")
+]
 
+#upgrade("SUNSTAFF", none)[
 Sunstaffs have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18/24\"", "4", "Armour Piercing (2), Magical Attacks, Quick to Fire"))
-#namecost("AMULET OF THE MOON", "")
+]
 
+#upgrade("AMULET OF THE MOON", none)[
 All missile and close combat attacks targeting a model with an Amulet of the Moon suffer \-1 to Hit.
+]
 
-#namecost("ENCHANTED CHARMS", "")
-
+#upgrade("ENCHANTED CHARMS", none)[
 A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1) special rules.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Amazons. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -876,19 +877,14 @@ A model with Enchanted Charms has the Magical Ward (6+) and Magic Resistance (1)
   order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules"),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

@@ -12,7 +12,7 @@
   army: "The Empire",
   version: "3.1",
   layout: "army",
-  cover: "covers/empire/3.1.png",
+  cover: "covers/empire.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "The Empire",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/empire/3.1.png",
+  art: "/assets/covers/empire.png",
 )
 
 #colophon((
@@ -45,12 +45,8 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in an Empire army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Empire units, and these are detailed here.
-
-#namecost("STATE TROOPS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Empire army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Empire units, and these are detailed here.])[
+#upgrade("STATE TROOPS", none)[
 If an enemy unit declares a charge against a State Troop unit, and that unit chooses Hold or Stand & Shoot as a charge reaction, then all non-fleeing and unengaged State Troop units within 3" can make either a *Support Fire* or a *Support Charge* action by passing a Leadership test (which can be re-rolled if the unit has a Leader). If the charged State Troops unit does not get a charge reaction for any reason, then the other State Troops units within range cannot make a Support Fire or a Support Charge action.
 
 Additionally, a State Troop unit can only declare one Support Fire action, one Stand and Shoot reaction or one Support Charge action per turn.
@@ -62,42 +58,41 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
 - *Support Charge:* A State Troop unit can declare a Support Charge against an enemy unit's unengaged arc, after your opponent has moved all of their charging units, as long as one or more enemy units has successfully completed a charge against the charged State Troop unit. If a Support Charge action is declared, the unit makes an out of sequence move that is resolved as it had just declared a charge against the charging unit. The enemy does not get to make any charge reactions against a Support Charge, but otherwise all the normal charging rules and bonuses apply.
 
 #diagram("/assets/figures/empire/3.1/img-0198.jpg", 0.463)
-#namecost("CAVALRY HAMMER", "")
+]
+
+#upgrade("CAVALRY HAMMER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Armour Piercing (1), Requires Two Hands"))
-#namecost("GRENADE LAUNCHING BLUNDERBUSS", "")
+]
+
+#upgrade("GRENADE LAUNCHING BLUNDERBUSS", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "4", "Armour Piercing (1)"))
 
 Each Hit from a grenade launching blunderbuss is multiplied into D6 Hits.
+]
 
-#namecost("HOCHLAND LONG RIFLE", "")
+#upgrade("HOCHLAND LONG RIFLE", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("18/36\"", "5", "Move or Fire, Sniper"))
-#namecost("REPEATER HANDGUN", "")
+]
+
+#upgrade("REPEATER HANDGUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("12/24\"", "5", "Multiple Shots (3), Ponderous, Rapid Fire"))
-#namecost("REPEATER PISTOL", "")
+]
+
+#upgrade("REPEATER PISTOL", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Multiple Shots (3), Quick Shot, Rapid Fire"))
 
 #note[_A repeater pistol can be used in combination with a regular pistol as a brace of pistols, in which case they fire Multiple Shots (4), but do not have Rapid Fire._]
+]
+]
 
-#namecost("FULL PLATE", "")
-
-Models with heavy armor only. The model gains a +1 modifier to their armour save.
-
-= THE CULT OF ULRIC
-
-#columns(2)[
+#upgrade-chapter("THE CULT OF ULRIC")[
 You may choose to field your army as the Cult of Ulric. If you do, your Army General must have the Crush the Weak special rule. A Cult of Ulric army may not take magic items marked "Sigmarite only" or include Sisters of Sigmar. The following special rules apply to the Cult of Ulric:
 
-#namecost("CRUSH THE WEAK", "")
+#upgrade("CRUSH THE WEAK", none)[Models with this special rule have the Hatred special rule against enemy models with a lower Weapon Skill, Strength, Toughness or Leadership characteristic than they have.]
 
-Models with this special rule have the Hatred special rule against enemy models with a lower Weapon Skill, Strength, Toughness or Leadership characteristic than they have.
+#upgrade("WHITE WOLF CLOAK", none)[White Wolf Cloaks give the wearer the Natural Armour (6+) special rule against missile attacks.]
 
-#namecost("WHITE WOLF CLOAK", "")
-
-White Wolf Cloaks give the wearer the Natural Armour (6+) special rule against missile attacks.
-
-#namecost("PRIESTS OF ULRIC", "")
-
-High Priests/Warrior Priests of Ulric replace Arch Lectors/Warrior Priests of Sigmar. High Priests/Warrior Priests of Ulric follow all the rules for Arch Lectors/Warrior Priests of Sigmar with the following exceptions:
+#upgrade("PRIESTS OF ULRIC", none)[High Priests/Warrior Priests of Ulric replace Arch Lectors/Warrior Priests of Sigmar. High Priests/Warrior Priests of Ulric follow all the rules for Arch Lectors/Warrior Priests of Sigmar with the following exceptions:
 
 - High Priests/Warrior Priests of Ulric have the Crush the Weak and White Wolf Cloak special rules.
 
@@ -107,110 +102,48 @@ High Priests/Warrior Priests of Ulric replace Arch Lectors/Warrior Priests of Si
   - *Winter's Chill:* Any unit in base contact with the model suffer a \-1 to hit until the start of your next turn.
 
 - *Fury of Ulric:* Fury of Ulric replaces Righteous Fury. The Priest and any unit they join gain the Immunity (Psychology) special rule.
+]
 
-#namecost("THE WAR ALTAR OF ULRIC", "")
-
-The War Altar of Ulric replaces the War Altar of Sigmar. The War Altar of Ulric follows all the rules for the War Altar of Sigmar, with the following exceptions:
+#upgrade("THE WAR ALTAR OF ULRIC", none)[The War Altar of Ulric replaces the War Altar of Sigmar. The War Altar of Ulric follows all the rules for the War Altar of Sigmar, with the following exceptions:
 
 - *Icy Blast of Ulric*: Icy Blast of Ulric replaces the Golden Griffon. Enchanted Item. Bound Spell (Level 3, 9+ to cast). _Icy Blast of Ulric_ is a *magic missile* with a range of 18" that causes D6 Strength 5 Hits. In addition, the target unit suffers \-1 To Hit with missile weapons and in close combat as well as its Leadership until the start of the caster's next Magic phase. Missile weapons that do not use Ballistics Skull must roll a 4+ on a D6 before firing; if failed they may not shoot that phase.
 
 - *The Power of Ulric:* The Power of Ulric replaces the Power of Sigmar. Any Battle Prayers of Ulric cast by a model who is mounted on the War Altar of Ulric also target all friendly units within 6".
 
 - The Horn of Sigismund may not be taken.
-
-#namecost("WARRIORS OF ULRIC", "")
-
-Free Company Militia may be upgraded to Warriors of Ulric for +2 points per model. They have Weapon Skill 4 and Leadership 7. Crush the Weak replaces the Militia special rule. Warriors of Ulric may take great weapons for +3 points per model. They may not take pistols, bows or crossbows. They may take a Magic Standard worth up to 25 points and ignore the limitation on the number of Free Company Militia units you may take.
-
-#namecost("WINTER WOLF KNIGHTS", "")
-
-Winter Wolves (Canine) replace Demigryphs. They have Movement 9, but may not take barding.
-
-#namecost("WOLF KIN", "")
-
-Wolf Kin replace Flagellants for +3 points per model. They have Weapon Skill 4 and Leadership 8. Crush the Weak, Skirmishers and Stubborn replace The End is Nigh!, Fanatical Zeal, Prophecy of Doom and Unbreakable. They may take great weapons for +3 points per model. They may not take flails.
 ]
 
-= KNIGHTLY ORDERS
+#upgrade("WARRIORS OF ULRIC", none)[Free Company Militia may be upgraded to Warriors of Ulric for +2 points per model. They have Weapon Skill 4 and Leadership 7. Crush the Weak replaces the Militia special rule. Warriors of Ulric may take great weapons for +3 points per model. They may not take pistols, bows or crossbows. They may take a Magic Standard worth up to 25 points and ignore the limitation on the number of Free Company Militia units you may take.]
 
-#columns(2)[
-*Units of Knights may be upgraded to any one of the Knightly Orders below as detailed in the army list. A Grand Master or Chapter Master may only join a unit that belongs to the same Knightly Order. You may only field one Grand Master for each Knightly Order. Grand Masters and Chapter Masters must either be armed with a hand weapon or the same equipment as the rest of their unit.*
+#upgrade("WINTER WOLF KNIGHTS", none)[Winter Wolves (Canine) replace Demigryphs. They have Movement 9, but may not take barding.]
 
-#namecost("REIKSGUARD KNIGHTS", "")
-#namecost("Characters free", "")
-#namecost("Cavalry/Infantry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
+#upgrade("WOLF KIN", none)[Wolf Kin replace Flagellants for +3 points per model. They have Weapon Skill 4 and Leadership 8. Crush the Weak, Skirmishers and Stubborn replace The End is Nigh!, Fanatical Zeal, Prophecy of Doom and Unbreakable. They may take great weapons for +3 points per model. They may not take flails.]
+]
 
-Must take heavy lances or polearms if mounted. The models have the Stubborn special rule. However, they may not take a regular Grand Master.
+#upgrade-chapter("KNIGHTLY ORDERS", intro: [*Units of Knights may be upgraded to any one of the Knightly Orders below as detailed in the army list. A Grand Master or Chapter Master may only join a unit that belongs to the same Knightly Order. You may only field one Grand Master for each Knightly Order. Grand Masters and Chapter Masters must either be armed with a hand weapon or the same equipment as the rest of their unit.*])[
+#upgrade("REIKSGUARD KNIGHTS", (("Characters", "free"), ("Cavalry/Infantry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms if mounted. The models have the Stubborn special rule. However, they may not take a regular Grand Master.]
 
-#namecost("KNIGHTS OF THE BLAZING SUN", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
+#upgrade("KNIGHTS OF THE BLAZING SUN", (("Characters", "free"), ("Cavalry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms, as well as shields. Whenever a unit where the majority of models have this upgrade declare a charge, the unit being charged suffer \-1 Weapon Skill and Ballistic Skill for the duration of the turn.]
 
-Must take heavy lances or polearms, as well as shields. Whenever a unit where the majority of models have this upgrade declare a charge, the unit being charged suffer \-1 Weapon Skill and Ballistic Skill for the duration of the turn.
+#upgrade("KNIGHTS PANTHER", (("Characters", "free"), ("Cavalry", "1 point per model")))[Must take heavy lances or polearms. A unit where all models have this upgrade add an extra D3" to their charge distance.]
 
-#namecost("KNIGHTS PANTHER", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
+#upgrade("KNIGHTS OF THE WHITE WOLF", (("Characters", "10 points"), ("Cavalry/Infantry", "1 point per model"), ("Monstrous Cavalry", "free")))[Must take cavalry hammers. The models have the Crush the Weak and White Wolf Cloak special rules. Monstrous Cavalry replace polearms and shields with cavalry hammers and may only be taken in a Cult of Ulric army.]
 
-Must take heavy lances or polearms. A unit where all models have this upgrade add an extra D3" to their charge distance.
+#upgrade("BLACK GUARD OF MORR", (("Characters", "free"), ("Cavalry/Infantry", "free")))[Must take polearms on foot. The models have the Fear and Independent special rules.]
 
-#namecost("KNIGHTS OF THE WHITE WOLF", "")
-#namecost("Characters", "10 points")
-#namecost("Cavalry/Infantry 1 point per model", "")
-#namecost("Monstrous Cavalry free", "")
+#upgrade("KNIGHTS GRIFFON", (("Characters", "free"), ("Cavalry", "1 point per model"), ("Monstrous Cavalry", "3 points per model")))[Must take heavy lances or polearms. The models gain the Disciplined special rule. In addition, they may not choose Flee as a charge reaction, refuse a challenge and ignore Swiftstride when fleeing.]
 
-Must take cavalry hammers. The models have the Crush the Weak and White Wolf Cloak special rules. Monstrous Cavalry replace polearms and shields with cavalry hammers and may only be taken in a Cult of Ulric army.
+#upgrade("KNIGHTS OF THE EVERLASTING LIGHT", (("Characters", "10 points"), ("Cavalry", "1 point per model")))[Must take heavy lances or great weapons. The models gain the Magical Attacks special rule and may re-roll failed armour saves in close combat. However, they must re-roll successful armour saves from missile attacks and successful Dangerous Terrain tests.]
 
-#namecost("BLACK GUARD OF MORR", "")
-#namecost("Characters free", "")
-#namecost("Cavalry/Infantry free", "")
+#upgrade("KNIGHTS OF SIGMAR'S BLOOD", (("Characters", "free"), ("Cavalry", "1 point per model")))[Must take heavy lances or polearms. The models have the Inspiring Presence (6) special rule. However, they may not be upgraded to Inner Circle Knights.]
 
-Must take polearms on foot. The models have the Fear and Independent special rules.
+#upgrade("KNIGHTS OF THE BLACK BEAR", (("Characters", "free"), ("Cavalry", "free")))[Must take heavy lances or polearms. This unit always counts as having one more rank than it actually has for the purpose of determining Steadfast, and enemy units cannot claim the Outnumber bonus against it. However, it must re-roll successful Leadership tests for Marching when within 6" of enemy units, Redirecting a Charge, Reforming from Defeat after losing a round of close combat or Restraining from Pursuit.]
 
-#namecost("KNIGHTS GRIFFON", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-#namecost("Monstrous Cavalry 3 points per model", "")
+#upgrade("KNIGHTS OF THE TWIN-TAILED ORB", (("Characters", "15 points"), ("Cavalry", "2 points per model")))[The unit is armed with flails instead of heavy lances. The models have the Flaming Attacks and Frenzy special rules.]
 
-Must take heavy lances or polearms. The models gain the Disciplined special rule. In addition, they may not choose Flee as a charge reaction, refuse a challenge and ignore Swiftstride when fleeing.
+#upgrade("KNIGHTS ENCARMINE", (("Characters", "10 points"), ("Cavalry", "free")))[The unit is armed with two hand weapons instead of heavy lances. The models may re-roll 1's To Hit and failed Parry saves. However, they cannot gain any bonus from ranks (including Steadfast) or Disrupt enemy units.]
 
-#namecost("KNIGHTS OF THE EVERLASTING LIGHT", "")
-#namecost("Characters", "10 points")
-#namecost("Cavalry 1 point per model", "")
-
-Must take heavy lances or great weapons. The models gain the Magical Attacks special rule and may re-roll failed armour saves in close combat. However, they must re-roll successful armour saves from missile attacks and successful Dangerous Terrain tests.
-
-#namecost("KNIGHTS OF SIGMAR'S BLOOD", "")
-#namecost("Characters free", "")
-#namecost("Cavalry 1 point per model", "")
-
-Must take heavy lances or polearms. The models have the Inspiring Presence (6) special rule. However, they may not be upgraded to Inner Circle Knights.
-
-#namecost("KNIGHTS OF THE BLACK BEAR", "")
-#namecost("Characters free", "")
-#namecost("Cavalry free", "")
-
-Must take heavy lances or polearms. This unit always counts as having one more rank than it actually has for the purpose of determining Steadfast, and enemy units cannot claim the Outnumber bonus against it. However, it must re-roll successful Leadership tests for Marching when within 6" of enemy units, Redirecting a Charge, Reforming from Defeat after losing a round of close combat or Restraining from Pursuit.
-
-#namecost("KNIGHTS OF THE TWIN-TAILED ORB", "")
-#namecost("Characters", "15 points")
-#namecost("Cavalry 2 points per model", "")
-
-The unit is armed with flails instead of heavy lances. The models have the Flaming Attacks and Frenzy special rules.
-
-#namecost("KNIGHTS ENCARMINE", "")
-#namecost("Characters", "10 points")
-#namecost("Cavalry free", "")
-
-The unit is armed with two hand weapons instead of heavy lances. The models may re-roll 1's To Hit and failed Parry saves. However, they cannot gain any bonus from ranks (including Steadfast) or Disrupt enemy units.
-
-#namecost("SONS OF MANANN", "")
-#namecost("Characters", "15 points")
-#namecost("Cavalry 2 points per model", "")
-
-The unit is armed with polearms & shields instead of heavy lances. The models (but not their mounts) gain +1 To Hit in the first round of close combat.
+#upgrade("SONS OF MANANN", (("Characters", "15 points"), ("Cavalry", "2 points per model")))[The unit is armed with polearms & shields instead of heavy lances. The models (but not their mounts) gain +1 To Hit in the first round of close combat.]
 ]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Empire. These may be used in addition to the magic items found in the Warhammer rulebook.])
@@ -300,7 +233,7 @@ The unit is armed with polearms & shields instead of heavy lances. The models (b
 #arcane-item("WIZARD'S STAFF", 10, type: "Staff", common: true)[The bearer can use one more Power dice than they are normally allowed to from their Wizard Level.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("FOZZRIK'S FOLDING FORTRESS", 100)[After deployment zones have been agreed, but before the armies have been deployed, place a watchtower building no more than 10x10 cm in base size and a maximum of 3 floors in your deployment zone to represent the Folding Fortress. This is treated as a standard building. If you do not have a suitable building to place, you cannot use Fozzrik's Folding Fortress.]
 
 #enchanted-item("VAN HORSTMANN'S SPECULUM", 35)[When the wearer fights in a challenge, he must 'swap' the Weapon Skill, Strength, Toughness, Initiative and Attacks characteristics on his profile with his enemy (but not the enemy's mount, if he has one). So, the wearer fights with his enemy's Strength, Toughness, Initiative and Attacks whilst his enemy fights with the wearer's Strength, Toughness, Initiative and Attacks. Note that you cannot choose not to use Van Horstmann's Speculum and you must swap all of the listed characteristics for the duration of the challenge, not just some of them.]
@@ -480,7 +413,6 @@ The unit is armed with polearms & shields instead of heavy lances. The models (b
   - Medium armour +9 points
   - Heavy armour +18 points
 - May take a shield +5 points
-- May be upgraded with the Full Plate special rule for +6 points.
 - May be mounted on one of the following:
   - Warhorse +15 points
   - Pegasus +25 points
@@ -1481,7 +1413,6 @@ Wounds (D6) Special rule. All other models hit by the template suffer a Strength
 )
 
 #unit("STEAM TANK",
-  breakable: true,
   profiles: (
     (name: "Steam Tank", m: "*", ws: "-", bs: "-", s: 6, t: 7, w: 10, i: "-", a: "-", ld: "-", points: 250),
     (name: "Engineer Commander", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 1, ld: 7, points: ""),
@@ -2119,13 +2050,10 @@ If the weapon hits, it inflicts one automatic Wound against Daemons, Undead or V
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]

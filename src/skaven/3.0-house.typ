@@ -12,7 +12,7 @@
   army: "Skaven",
   version: "3.0",
   layout: "army",
-  cover: "covers/skaven/3.0.png",
+  cover: "covers/skaven.png",
   align: "destruction",
   base: "skaven/3.0",
   edition: "house",
@@ -23,11 +23,11 @@
 #cover(
   title: "Skaven",
   subtitle: "House Rules 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/skaven/3.0.png",
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((
-  "This is a MODIFIED edition. The rules text has been altered from the original in the places listed under Our Changes, and those alterations are not marked in the body. Do not take a rule here to be the author's wording without checking that chapter.",
+  "This is a MODIFIED edition. The rules text has been altered from the original, and those alterations are not marked in the body. Do not take a rule here to be the author's wording.",
   "The underlying work is the Warhammer Armies Project, written and freely distributed by Mathias Eliasson. All rules text, army design and points values are his; the amendments are ours alone, made for our own table, and carry no endorsement from him.",
   "Warhammer, Warhammer Fantasy Battle and all associated names, races and places are trademarks of Games Workshop Limited. This document is unofficial and unaffiliated, and no challenge to their status is intended.",
   "Typeset with Typst. Not for sale.",
@@ -35,66 +35,65 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.
-
-#namecost("CLAN ENMITY", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.])[
+#upgrade("CLAN ENMITY", none)[
 Units belonging to each of the Greater Clans (Pestilens, Eshin, Moulder, Skryre) may only be joined by characters from the same Clan. Characters from one of these Clans may not join a unit containing models from another Clan.
+]
 
-#namecost("GAS MASK", "")
-
+#upgrade("GAS MASK", none)[
 When a model with a gas mask is forced to take a Toughness test caused by any weapon or Magic Item in this army book, they get a +2 bonus for the test.
+]
 
-#namecost("LIFE IS CHEAP", "")
-
+#upgrade("LIFE IS CHEAP", none)[
 All Skaven models can voluntarily target missile attacks at enemy units engaged in close combat with other friendly units even if they are further than 4" away. However, if they do so, they will hit their own troops on To Hit rolls of both 1's and 2's rather than just 1's. In addition, the normal limitation of templates not being allowed to be placed over friendly troops does not apply.
+]
 
-#namecost("PLAGUE CENSER", "")
-
+#upgrade("PLAGUE CENSER", none)[
 Flail. At the start of each round of close combat, all enemy models in base contact with one or more models bearing a plague censer, as well the Censer Bearers themselves that are allowed to fight this round, must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.
+]
 
-#namecost("RAT HOUND BODYGUARD", "")
-
+#upgrade("RAT HOUND BODYGUARD", none)[
 A model with a Rat Hound upgrade can make an additional Weapon Skill 3, Strength 3, Initiative 3 Attack. However, on a To Hit roll of 1 from this attack, the Rat Hound will instead inflict an automatic hit on its owner.
+]
 
-#namecost("RATLING PISTOL", "")
+#upgrade("RATLING PISTOL", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Magical Attacks, Multiple Shots (3) Quick Shot, Rapid Fire, Unstable Ammunition"))
-#namecost("SCURRY AWAY", "")
+]
 
+#upgrade("SCURRY AWAY", none)[
 All models in the Skaven army roll an additional D6 and discard the lowest result when determining their flee distance.
+]
 
-#namecost("STRENGTH IN NUMBERS", "")
-
+#upgrade("STRENGTH IN NUMBERS", none)[
 Units with this special rule add +1 to its Leadership if it has Unit Strength 10 or more, +2 Leadership if it has Unit Strength 15 or more, and +3 Leadership if it has Unit Strength 20 or more. To calculate the Leadership of a unit with the Strength in Numbers rule, first determine the unit's Leadership as normal and then add the Leadership bonus of the unit to this value, up to a maximum Leadership of 10.
 
 Note that the Army General confers their basic Leadership and then units modify it with their own Unit Strength. Any bonus from the Unit Strength of the Army General's unit is not passed on to units within their Inspiring Presence range.
-
-#namecost("TAIL WEAPON", "")
-
-The model gains +1 Attack. Note that this attack does not gain any of the rules of other weapons the model might carry.
-
-#namecost("UNSTABLE AMMUNITION", "")
-
-Anytime a weapon that uses Unstable Ammunition scores a result of 1 on its roll To Hit, roll another dice. On a following roll of 1\-2 the gun misfires and the shooter suffer the hit themselves.
-
-#namecost("VERMINOUS VALOUR", "")
-
-If a Skaven player refuses a challenge, the unit may still use the model’s Leadership value, Inspiring Presence or Hold Your Ground special rules.
-
-#namecost("SMOKE BOMBS", "")
-
-A unit with Smoke Bombs may use them at the end of any Close Combat phase in which they take part. If they do so, the unit may disengage from combat by making a flee move. If they do so, the enemy cannot pursue them and they will rally automatically in their next turn.
-
-#namecost("WARPLOCK PISTOL", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Armour Piercing (1), Magical Attacks, Quick Shot, Unstable Ammunition"))
-#namecost("WHIP", "")
-
-A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.
 ]
 
+#upgrade("TAIL WEAPON", none)[
+The model gains +1 Attack. Note that this attack does not gain any of the rules of other weapons the model might carry.
+]
+
+#upgrade("UNSTABLE AMMUNITION", none)[
+Anytime a weapon that uses Unstable Ammunition scores a result of 1 on its roll To Hit, roll another dice. On a following roll of 1\-2 the gun misfires and the shooter suffer the hit themselves.
+]
+
+#upgrade("VERMINOUS VALOUR", none)[
+If a Skaven player refuses a challenge, the unit may still use the model’s Leadership value, Inspiring Presence or Hold Your Ground special rules.
+]
+
+#upgrade("SMOKE BOMBS", none)[
+A unit with Smoke Bombs may use them at the end of any Close Combat phase in which they take part. If they do so, the unit may disengage from combat by making a flee move. If they do so, the enemy cannot pursue them and they will rally automatically in their next turn.
+]
+
+#upgrade("WARPLOCK PISTOL", none)[
+#minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Armour Piercing (1), Magical Attacks, Quick Shot, Unstable Ammunition"))
+]
+
+#upgrade("WHIP", none)[
+A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.
+]
+]
 #lore("THE LORE OF RUIN")[
 
 #spell("MUSK OF FEAR", "Lore Attribute")[If one or more spells from the Lore of Ruin affects an enemy unit, the target suffers \-1 to their Leadership (to a minimum of 1) until the start of the caster's next magic phase.]
@@ -185,183 +184,100 @@ previous target to be affected by Plague.")))
 
 #spell("VEIL OF SHADOWS", 4, cast: "15+")[Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large round template. Any model touched by the template takes a Strength 4 hit, and the unit will count as being Disrupted for the remainder of the turn.]
 ]
-= MAGIC ITEMS
+#magic-item-chapter(intro: [*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.*])
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-item-section("weapon", first: true)[
+#magic-weapon("FELLBLADE", 85)[Clawlord only. This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful Magical Ward saves taken against Wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound which Ignores Armour Saves.]
 
-#entry("MAGIC WEAPONS")
-#columns(2)[
-#namecost("FELLBLADE", "85 points")
+#magic-weapon("ELECTRO-WHIP*", 40)[Clan Moulder only. Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.]
 
-Clawlord only. This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful Magical Ward saves taken against Wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound which Ignores Armour Saves.
+#magic-weapon("DWARF SLAYER", 35)[All attacks made with this weapon are resolved at +1 Strength and have the Multiple Wounds (2) special rule. Against all models from _Warhammer: Dwarfs_, all hits have the Armour Piercing (1) special rule and the wielder may re-roll all failed rolls To Wound.]
 
-#namecost("ELECTRO-WHIP*", "40 points")
+#magic-weapon("DESOLATE BLADE", 30)[The Desolate Blade gives the wielder +1 Strength and allows them to re-roll all failed rolls To Wound.]
 
-Clan Moulder only. Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.
+#magic-weapon("THE FUMIGATOUS", 30)[Clan Pestilens only. Plague Censer. All Toughness tests taken from this weapon suffer a +1 modifier.]
 
-#namecost("DWARF SLAYER", "35 points")
+#magic-weapon("LANGUISHER SWORD", 25)[The Languisher Sword causes all enemy models in base contact with the wielder to be subject to the Always Strikes Last special rule.]
 
-All attacks made with this weapon are resolved at +1 Strength and have the Multiple Wounds (2) special rule. Against all models from _Warhammer: Dwarfs_, all hits have the Armour Piercing (1) special rule and the wielder may re-roll all failed rolls To Wound.
+#magic-weapon("SHOCK-PROD*", 25)[Clan Moulder only. Polearm. A Shock-Prod gives the wielder the Lightning Attacks special rule.]
 
-#namecost("DESOLATE BLADE", "30 points")
+#magic-weapon("THE THREE FANGS", 25)[Two hand weapons & tail weapon. If the wielder of these weapons scores 3 or more Hits against a single model, all those hits automatically Wound with the Ignores Armour Saves special rule.]
 
-The Desolate Blade gives the wielder +1 Strength and allows them to re-roll all failed rolls To Wound.
+#magic-weapon("CURSED BLADE OF DELIRIUM", 20)[The Cursed Blade of Delirium causes all enemy models attempting to strike the wielder in close combat to suffer \-1 To Hit.]
 
-#namecost("THE FUMIGATOUS", "30 points")
+#magic-weapon("HEADSPLITTER", 20)[Clan Eshin only. Sling. Against models with Toughness 5+, Headsplitter automatically Wounds on the roll of a 2+ with the Ignores Armour Saves special rule.]
 
-Clan Pestilens only. Plague Censer. All Toughness tests taken from this weapon suffer a +1 modifier.
+#magic-weapon("SNAP-SNAP SNAREPOLE*", 20)[Clan Moulder only. Polearm. One enemy model in base contact of your choice suffer a \-1 penalty to their Attacks.]
 
-#namecost("LANGUISHER SWORD", "25 points")
+#magic-weapon("THINGS-CATCHER*", 20)[Clan Moulder only. Polearm. A Things-catcher gives the wielder the Killing Blow special rule.]
 
-The Languisher Sword causes all enemy models in base contact with the wielder to be subject to the Always Strikes Last special rule.
+#magic-weapon("BLADE OF BLACK FURY", 15)[The Blade of Black Fury gives the wielder +2 Initiative and +1 Attack.]
 
-#namecost("SHOCK-PROD*", "25 points")
+#magic-weapon("GNAWSHARD", 15)[Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon must pass a Toughness test at the start of each subsequent close combat phase for the rest of the game or suffer one Wound with no saves allowed.]
 
-Clan Moulder only. Polearm. A Shock-Prod gives the wielder the Lightning Attacks special rule.
+#magic-weapon("THINGS-BANE", 15)[This weapon gives the bearer the Multiple Wounds (2) special rule.]
 
-#namecost("THE THREE FANGS", "25 points")
+#magic-weapon("WEEPING BLADES*", 15)[Clan Eshin only. Two hand weapons. All attacks made by Weeping Blades have the Armour Piercing (1), Magical Attacks and Multiple Wounds (D3) special rules.]
 
-Two hand weapons & tail weapon. If the wielder of these weapons scores 3 or more Hits against a single model, all those hits automatically Wound with the Ignores Armour Saves special rule.
+#magic-weapon("WARPSTONE STARS*", 15)[#minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "As user", "Armour Piercing (1), Magical Attacks, Multiple Shots (2), Multiple Wounds (D3), Quick Shot"))]
 
-#namecost("CURSED BLADE OF DELIRIUM", "20 points")
+#magic-weapon("BROODING BLADE", 10)[Any model that suffers one or more unsaved Wounds from this weapon suffers 2D6 Strength 1 Hits with no saves allowed at the end of that round of close combat.]
 
-The Cursed Blade of Delirium causes all enemy models attempting to strike the wielder in close combat to suffer \-1 To Hit.
+#magic-weapon("LASH OF FANGS", 10)[Clan Moulder only. Whip. Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon are subject to the Stupidity special rule for the remainder of the game.]
 
-#namecost("HEADSPLITTER", "20 points")
-
-Clan Eshin only. Sling. Against models with Toughness 5+, Headsplitter automatically Wounds on the roll of a 2+ with the Ignores Armour Saves special rule.
-
-#namecost("SNAP-SNAP SNAREPOLE*", "20 points")
-
-Clan Moulder only. Polearm. One enemy model in base contact of your choice suffer a \-1 penalty to their Attacks.
-
-#namecost("THINGS-CATCHER*", "20 points")
-
-Clan Moulder only. Polearm. A Things-catcher gives the wielder the Killing Blow special rule.
-
-#namecost("BLADE OF BLACK FURY", "15 points")
-
-The Blade of Black Fury gives the wielder +2 Initiative and +1 Attack.
-
-#namecost("GNAWSHARD", "15 points")
-
-Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon must pass a Toughness test at the start of each subsequent close combat phase for the rest of the game or suffer one Wound with no saves allowed.
-
-#namecost("THINGS-BANE", "15 points")
-
-This weapon gives the bearer the Multiple Wounds (2) special rule.
-
-#namecost("WEEPING BLADES*", "15 points")
-
-Clan Eshin only. Two hand weapons. All attacks made by Weeping Blades have the Armour Piercing (1), Magical Attacks and Multiple Wounds (D3) special rules.
-
-#namecost("WARPSTONE STARS*", "15 points")
-#minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "As user", "Armour Piercing (1), Magical Attacks, Multiple Shots (2), Multiple Wounds (D3), Quick Shot"))
-#namecost("BROODING BLADE", "10 points")
-
-Any model that suffers one or more unsaved Wounds from this weapon suffers 2D6 Strength 1 Hits with no saves allowed at the end of that round of close combat.
-
-#namecost("LASH OF FANGS", "10 points")
-
-Clan Moulder only. Whip. Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon are subject to the Stupidity special rule for the remainder of the game.
-
-#namecost("WARPFORGED BLADE*", "10 points")
-
-Clan Skryre only. A Warpforged Blade gives the wielder the Ignores Armour Saves special rule.
+#magic-weapon("WARPFORGED BLADE*", 10)[Clan Skryre only. A Warpforged Blade gives the wielder the Ignores Armour Saves special rule.]
 ]
 
-#entry("MAGIC ARMOUR")
-#namecost("FOULHIDE", "30 points")
+#magic-item-section("armour")[
+#magic-armour("FOULHIDE", 30)[Medium armour. This armour gives the wearer the Regeneration (5+) special rule.]
 
-Medium armour. This armour gives the wearer the Regeneration (5+) special rule.
+#magic-armour("SHIELD OF DISTRACTION", 30)[Shield. The Shield of Distraction causes all enemies in base contact with the bearer to suffer \-1 Attack.]
 
-#namecost("SHIELD OF DISTRACTION", "30 points")
+#magic-armour("RUST ARMOUR", 25)[Medium armour. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the Wound is discounted, but the armour is completely destroyed.]
+]
 
-Shield. The Shield of Distraction causes all enemies in base contact with the bearer to suffer \-1 Attack.
+#magic-item-section("talisman")[
+#talisman("TENEBROUS CLOAK", 30)[The Tenebrous Cloak gives the wearer a Magical Ward (3+) against all missile attacks and spells.]
 
-#namecost("RUST ARMOUR", "25 points")
+#talisman("TWISTED CROWN OF THE HORNED RAT", 30)[The Twisted Crown of the Horned Rat gives the wearer the Regeneration (4+) special rule.]
 
-Medium armour. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the Wound is discounted, but the armour is completely destroyed.
+#talisman("RIVAL HIDE TALISMAN", 25)[The Rival Hide Talisman forces all enemies attempting to strike the wearer in close combat to re-roll successful rolls To Hit.]
 
-#entry("TALISMANS")
-#namecost("TENEBROUS CLOAK", "30 points")
+#talisman("SHADOW MAGNET TRINKET", 25)[All missile attacks targeted at the bearer or the unit they are with suffer \-1 To Hit.]
 
-The Tenebrous Cloak gives the wearer a Magical Ward (3+) against all missile attacks and spells.
+#talisman("WARPSTONE AMULET", 25)[The Amulet confers to the bearer a Magical Ward (4+). At the end of each of your turns, roll a D6. On the result of 1, the character suffers a Wound with no saves allowed.]
 
-#namecost("TWISTED CROWN OF THE HORNED RAT", "30 points")
+#talisman("AMULET OF DARKNESS", 15)[The Amulet of Darkness gives the wearer and any unit they join the Magical Resistance (1) special rule. In addition, if a spell or magic item that would normally force the wearer and any unit they are with to reveal any Magic Items or Hidden models, they only need to reveal the Amulet of Darkness.]
 
-The Twisted Crown of the Horned Rat gives the wearer the Regeneration (4+) special rule.
+#talisman("SUSPICIOUS STONE", 15)[This item gives the wearer a Magical Ward (6+) which may be re-rolled.]
 
-#namecost("RIVAL HIDE TALISMAN", "25 points")
+#talisman("WARPSCALE PENDANT*", 10)[The Warpscale Pendant gives the bearer the Immunity (Flaming Attacks, Lightning Attacks) and Magic Resistance (2) special rules. However, at the beginning of the game, the bearer must pass a Toughness test or suffer a Wound with no saves allowed.]
+]
 
-The Rival Hide Talisman forces all enemies attempting to strike the wearer in close combat to re-roll successful rolls To Hit.
+#magic-item-section("arcane")[
+#arcane-item("WARPSCROLL", 25)[Charm. One use only. Bound spell (Level 3, cast on 9+). The Warpscroll contains a *direct damage* spell with a range of 24". All models in the target unit suffer a Strength 3 Hit. If the unit suffers any casualties from the spell, they must also take a Panic test.]
 
-#namecost("SHADOW MAGNET TRINKET", "25 points")
+#arcane-item("WARPSTORM SCROLL", 25)[Charm. Bound Spell (Level 2, cast on 7+). One use only. The Warpstorm Scroll contains a *direct damage* spell that targets all units with the Fly special rule within 24". The target units suffer D6 Strength 6 Hits with the Lightning Attacks special rule.]
 
-All missile attacks targeted at the bearer or the unit they are with suffer \-1 To Hit.
+#arcane-item("ESOTERIC WARP RESONATOR", 20)[Clan Skryre only. Relic. The bearer of this item adds a free Power dice to their casting attempt whenever they attempt to cast the _Warp Lightning_ spell from the Lore of Ruin.]
 
-#namecost("WARPSTONE AMULET", "25 points")
+#arcane-item("STAFF OF RIGHTFUL SUPREMACY", 20)[Staff. All enemy Wizards within 12" of the bearer of this item suffer a \-1 casting penalty. In addition, if the bearer's dispel roll result is 13, the spell is automatically dispelled.]
 
-The Amulet confers to the bearer a Magical Ward (4+). At the end of each of your turns, roll a D6. On the result of 1, the character suffers a Wound with no saves allowed.
+#arcane-item("EYE OF THE HORNED RAT", 15)[Relic. The Eye of the Horned Rat may be used at the start of your Magic Phase. Roll a D6, on a 2+, add one dice to your power dice pool. On 1, remove one dice from your power dice pool.]
 
-#namecost("AMULET OF DARKNESS", "15 points")
+#arcane-item("SCRYING STONE", 10)[Charm. One use only. The bearer of the Scrying Stone gains a Magical Ward (2+) against their first wounding Hit suffered. However, if this Wound is saved the model gains the Stupidity rule for the remainder of the game.]
 
-The Amulet of Darkness gives the wearer and any unit they join the Magical Resistance (1) special rule. In addition, if a spell or magic item that would normally force the wearer and any unit they are with to reveal any Magic Items or Hidden models, they only need to reveal the Amulet of Darkness.
+#arcane-item("WARPSTONE TOKEN*", 10)[Charm. One use only. Multiples of this item may be taken by a single model. The model can choose to use one or more tokens whenever they cast a spell. For each token consumed, they add add an additional power dice to their casting attempt. This allows them to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed.]
+]
 
-#namecost("SUSPICIOUS STONE", "15 points")
+#magic-item-section("enchanted")[
+#enchanted-item("BRASS ORB", 40)[Clan Skryre only. One use only. The bearer can throw the Brass Orb in the Shooting phase. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". Models touched by the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules.]
 
-This item gives the wearer a Magical Ward (6+) which may be re-rolled.
+#enchanted-item("BILIOUS BELL", 30)[Clan Pestilens only. One use only. This item can be used at the start of any of your turns. When used, all enemy units within 18" of the bearer of this item suffer a Strength 3 Hit, enemy units within 12" suffer D3 Strength 4 Hits and enemy units within 6" suffer D6 Strength 5 Hits.]
 
-#namecost("WARPSCALE PENDANT*", "10 points")
+#enchanted-item("THE CUBE OF MISTS", 30)[Clan Eshin only. One use only. This item can be used at the start of any round of close combat. Once used, no enemy units in base contact with the bearer can make Supporting Attacks this round. In addition, all enemy models in the unit suffer \-1 To Hit.]
 
-The Warpscale Pendant gives the bearer the Immunity (Flaming Attacks, Lightning Attacks) and Magic Resistance (2) special rules. However, at the beginning of the game, the bearer must pass a Toughness test or suffer a Wound with no saves allowed.
-
-#entry("ARCANE ITEMS")
-#namecost("WARPSCROLL", "25 points")
-
-Charm. One use only. Bound spell (Level 3, cast on 9+). The Warpscroll contains a *direct damage* spell with a range of 24". All models in the target unit suffer a Strength 3 Hit. If the unit suffers any casualties from the spell, they must also take a Panic test.
-
-#namecost("WARPSTORM SCROLL", "25 points")
-
-Charm. Bound Spell (Level 2, cast on 7+). One use only. The Warpstorm Scroll contains a *direct damage* spell that targets all units with the Fly special rule within 24". The target units suffer D6 Strength 6 Hits with the Lightning Attacks special rule.
-
-#namecost("ESOTERIC WARP RESONATOR", "20 points")
-
-Clan Skryre only. Relic. The bearer of this item adds a free Power dice to their casting attempt whenever they attempt to cast the _Warp Lightning_ spell from the Lore of Ruin.
-
-#namecost("STAFF OF RIGHTFUL SUPREMACY", "20 points")
-
-Staff. All enemy Wizards within 12" of the bearer of this item suffer a \-1 casting penalty. In addition, if the bearer's dispel roll result is 13, the spell is automatically dispelled.
-
-#namecost("EYE OF THE HORNED RAT", "15 points")
-
-Relic. The Eye of the Horned Rat may be used at the start of your Magic Phase. Roll a D6, on a 2+, add one dice to your power dice pool. On 1, remove one dice from your power dice pool.
-
-#namecost("SCRYING STONE", "10 points")
-
-Charm. One use only. The bearer of the Scrying Stone gains a Magical Ward (2+) against their first wounding Hit suffered. However, if this Wound is saved the model gains the Stupidity rule for the remainder of the game.
-
-#namecost("WARPSTONE TOKEN*", "10 points")
-
-Charm. One use only. Multiples of this item may be taken by a single model. The model can choose to use one or more tokens whenever they cast a spell. For each token consumed, they add add an additional power dice to their casting attempt. This allows them to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("BRASS ORB", "40 points")
-
-Clan Skryre only. One use only. The bearer can throw the Brass Orb in the Shooting phase. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". Models touched by the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules.
-
-#namecost("BILIOUS BELL", "30 points")
-
-Clan Pestilens only. One use only. This item can be used at the start of any of your turns. When used, all enemy units within 18" of the bearer of this item suffer a Strength 3 Hit, enemy units within 12" suffer D3 Strength 4 Hits and enemy units within 6" suffer D6 Strength 5 Hits.
-
-#namecost("THE CUBE OF MISTS", "30 points")
-
-Clan Eshin only. One use only. This item can be used at the start of any round of close combat. Once used, no enemy units in base contact with the bearer can make Supporting Attacks this round. In addition, all enemy models in the unit suffer \-1 To Hit.
-
-#namecost("DOOMROCKET", "30 points")
-
-Clan Skryre only. One use only. A Doomrocket is a rocket launcher that uses the small template with the following profile:
+#enchanted-item("DOOMROCKET", 30)[Clan Skryre only. One use only. A Doomrocket is a rocket launcher that uses the small template with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-36\"", "5", "Cumbersome"))
 
@@ -375,30 +291,22 @@ normal."), ("2-5", "Stabilising Fin Lost: The template scatters
 hits as normal."), ("6", "It's a Dud: Resolve the shot as normal, but do
 not place the template. Any model directly
 below the impact spot suffers a single Strength
-5 hit.")))
-#namecost("FLESHGIFT VIAL", "30 points")
+5 hit.")))]
 
-Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:
+#enchanted-item("FLESHGIFT VIAL", 30)[Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:
 
 #chart((("D6", "Result"), ("1", "The bearer suffers 1 Wound with no saves
 allowed."), ("2-4", "One enemy unit in base contact suffer D3
 Wounds with no saves allowed."), ("5-6", "One enemy unit in base contact suffer D6
-Wounds with no saves allowed.")))
-#namecost("INFERNAL BOMB", "30 points")
+Wounds with no saves allowed.")))]
 
-Clan Eshin only. One use only. As long as they are not Hidden, the bearer can place an Infernal Bomb anywhere along their Movement path during the Remaining Movement phase. Place a marker where the bomb is placed. You may choose to detonate the bomb at the start of any Movement sub-phase by rolling a D6. On a roll of 1, nothing happens. On a 2+, the bomb will explode; place the large round template centred on the marker. Any model at the template's centre takes a single Strength 10 Hit with the Multiple Wounds (D6) special rule. Any models touched by the template suffer a Strength 3 hit with the Armour Piercing (1) special rule.
+#enchanted-item("INFERNAL BOMB", 30)[Clan Eshin only. One use only. As long as they are not Hidden, the bearer can place an Infernal Bomb anywhere along their Movement path during the Remaining Movement phase. Place a marker where the bomb is placed. You may choose to detonate the bomb at the start of any Movement sub-phase by rolling a D6. On a roll of 1, nothing happens. On a 2+, the bomb will explode; place the large round template centred on the marker. Any model at the template's centre takes a single Strength 10 Hit with the Multiple Wounds (D6) special rule. Any models touched by the template suffer a Strength 3 hit with the Armour Piercing (1) special rule.]
 
-#namecost("SKALM", "30 points")
+#enchanted-item("SKALM", 30)[One use only. Skalm can be used at the beginning of any phase in either player’s turn. The bearer recovers all Wounds suffered up to that point in the battle.]
 
-One use only. Skalm can be used at the beginning of any phase in either player’s turn. The bearer recovers all Wounds suffered up to that point in the battle.
+#enchanted-item("SCREECHSKULL TROPHIES", 30)[All enemy units within 6" of the bearer of this item must roll an additional D6 when taking Leadership tests and discard the lowest result.]
 
-#namecost("SCREECHSKULL TROPHIES", "30 points")
-
-All enemy units within 6" of the bearer of this item must roll an additional D6 when taking Leadership tests and discard the lowest result.
-
-#namecost("SKAVENBREW", "30 points")
-
-One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:
+#enchanted-item("SKAVENBREW", 30)[One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:
 
 #chart((("D6", "Result"), ("1", "Gone Bad: The unit takes D6 Strength 3
 automatic hits with the Ignores Armour save
@@ -408,123 +316,66 @@ special rule."), ("4-5", "Frenzied: The unit gains the Frenzy special
 rule."), ("6", "Rabid: The unit gains the Frenzy and Hatred
 special rules. At the start of each of your
 subsequent turns, the unit suffers D6
-automatic Wounds.")))
-#namecost("DEATH GLOBE", "25 points")
+automatic Wounds.")))]
 
-Clan Skryre only. One use only. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". All models touched by the template must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. If a 1 is rolled, centre the template on the model throwing the globe.
+#enchanted-item("DEATH GLOBE", 25)[Clan Skryre only. One use only. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". All models touched by the template must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. If a 1 is rolled, centre the template on the model throwing the globe.]
 
-#namecost("PIPES OF PIEBALD", "25 points")
+#enchanted-item("PIPES OF PIEBALD", 25)[All enemy units within 12" of the bearer of the Pipes of Piebald are subject to the Stupidity special rule.
 
-All enemy units within 12" of the bearer of the Pipes of Piebald are subject to the Stupidity special rule.
+#runin[SKRYRE]'#runin[S-BREATH BELLOWS 25 points] Clan Skryre only. One use only. This is a Breath Weapon Attack. Any model Hit must take a Toughness test or suffer a Wound which Ignores Armour saves.]
 
-#runin[SKRYRE]'#runin[S-BREATH BELLOWS 25 points] Clan Skryre only. One use only. This is a Breath Weapon Attack. Any model Hit must take a Toughness test or suffer a Wound which Ignores Armour saves.
+#enchanted-item("BLISTREVOUS, THE LIVING CYST", 20)[Clan Pestilens only. The bearer of this item gains the Frenzy and Hatred special rules. At the start of your second turn and onward, if you have any friendly Clan Pestilens character within 12" of the bearer, this item gets transferred to them instead.]
 
-#namecost("BLISTREVOUS, THE LIVING CYST", "20 points")
+#enchanted-item("FLAYPELT CLOAK", 20)[The bearer of this item may re-roll 1's To Hit and To Wound in Close Combat.]
 
-Clan Pestilens only. The bearer of this item gains the Frenzy and Hatred special rules. At the start of your second turn and onward, if you have any friendly Clan Pestilens character within 12" of the bearer, this item gets transferred to them instead.
+#enchanted-item("GNAWBOMB", 20)[Clan Eshin only. One use only. This item can be used at the start of any of your turns. When used, remove the bearer of this item and any unit they are with, but place a marker where the bearer was. In the Remaining Moves sub-phase of this turn, place the unit anywhere within 3D6" of the marker, just like a *summoning* spell.]
 
-#namecost("FLAYPELT CLOAK", "20 points")
+#enchanted-item("PORTENTS OF VERMINOUS DOOM", 20)[The Portents of Verminous Doom give the bearer the Fear special rule.]
 
-The bearer of this item may re-roll 1's To Hit and To Wound in Close Combat.
+#enchanted-item("RABID CROWN", 20)[Clan Moulder only. All friendly Clan Moulder units (except characters) within 6" of the bearer of this item may re-roll failed rolls To Wound.]
 
-#namecost("GNAWBOMB", "20 points")
+#enchanted-item("SNOUTGROVEL ROBES", 20)[All friendly units within 12" of the bearer of this item gain the Immunity (Fear) special rule.]
 
-Clan Eshin only. One use only. This item can be used at the start of any of your turns. When used, remove the bearer of this item and any unit they are with, but place a marker where the bearer was. In the Remaining Moves sub-phase of this turn, place the unit anywhere within 3D6" of the marker, just like a *summoning* spell.
+#enchanted-item("FARSKITTER CLOAK", 15)[Clan Eshin only. Bound spell (Level 1, cast on 5+). This item contains a *conveyance* spell that targets the bearer. The bearer is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.]
 
-#namecost("PORTENTS OF VERMINOUS DOOM", "20 points")
+#enchanted-item("WARPSTONE INNARDS", 15)[Mounted Clan Moulder model only. The bearer's mount gains +1 Strength and the Frenzy special rule. However, it must take a Toughness test at the start of each of your turns or suffer a Wound with no saves allowed.]
 
-The Portents of Verminous Doom give the bearer the Fear special rule.
+#enchanted-item("ASSASSINS-BANE RIGGING", 10)[Clan Eshin only. All enemy models that Attack this bearer of this item in close combat suffer a Strength 3 Hit for each Hit they inflict on the bearer.]
 
-#namecost("RABID CROWN", "20 points")
+#enchanted-item("RAT-TAIL SNAKE", 10)[Clan Moulder only. If an enemy model rolls a 6's To Hit against the bearer of this item, they immediately suffer a Strength 4 Hit.]
 
-Clan Moulder only. All friendly Clan Moulder units (except characters) within 6" of the bearer of this item may re-roll failed rolls To Wound.
+#enchanted-item("WARPSTONE CHARM", 10)[One use only. The Warpstone Charm allows the bearer to re-roll any one single dice roll that directly affects them.]
 
-#namecost("SNOUTGROVEL ROBES", "20 points")
-
-All friendly units within 12" of the bearer of this item gain the Immunity (Fear) special rule.
-
-#namecost("FARSKITTER CLOAK", "15 points")
-
-Clan Eshin only. Bound spell (Level 1, cast on 5+). This item contains a *conveyance* spell that targets the bearer. The bearer is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.
-
-#namecost("WARPSTONE INNARDS", "15 points")
-
-Mounted Clan Moulder model only. The bearer's mount gains +1 Strength and the Frenzy special rule. However, it must take a Toughness test at the start of each of your turns or suffer a Wound with no saves allowed.
-
-#namecost("ASSASSINS-BANE RIGGING", "10 points")
-
-Clan Eshin only. All enemy models that Attack this bearer of this item in close combat suffer a Strength 3 Hit for each Hit they inflict on the bearer.
-
-#namecost("RAT-TAIL SNAKE", "10 points")
-
-Clan Moulder only. If an enemy model rolls a 6's To Hit against the bearer of this item, they immediately suffer a Strength 4 Hit.
-
-#namecost("WARPSTONE CHARM", "10 points")
-
-One use only. The Warpstone Charm allows the bearer to re-roll any one single dice roll that directly affects them.
-
-#namecost("VIAL OF THE FULMINATOR", "5 points")
-
-Clan Skryre only. At the start of each of your Remaining Moves sub-phases, you may pick one friendly War Machine within 12" of the bearer. This War Machine may march this turn or move and shoot. However, if they do so, all remaining crew must pass a Toughness test or suffer a Wound with no saves allowed.
+#enchanted-item("VIAL OF THE FULMINATOR", 5)[Clan Skryre only. At the start of each of your Remaining Moves sub-phases, you may pick one friendly War Machine within 12" of the bearer. This War Machine may march this turn or move and shoot. However, if they do so, all remaining crew must pass a Toughness test or suffer a Wound with no saves allowed.]
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("SACRED STANDARD OF THE HORNED RAT", "75 points")
+#magic-item-section("standard")[
+#magic-standard("SACRED STANDARD OF THE HORNED RAT", 75)[All enemy units within 12" of this standard suffer a \-1 penalty to their Leadership and enemy units in base contact with the bearer of this banner must re-roll any successful Leadership tests.]
 
-All enemy units within 12" of this standard suffer a \-1 penalty to their Leadership and enemy units in base contact with the bearer of this banner must re-roll any successful Leadership tests.
+#magic-standard("STORM BANNER", 50)[One use only. This standard can be activated at the beginning of any player's turn. Within 24" of this standard, no model may use the Fly special rule and units are at \-2 to be Hit with non-magical missile attacks. All non-magical missile attacks that do not use Ballistics Skill to hit need to roll a 4+ on a D6 before they can attempt to fire if they are within 24" of the banner. Roll a D6 at the beginning of each following player turn – the effects of the banner will end on a D6 roll of 4+.]
 
-#namecost("STORM BANNER", "50 points")
+#magic-standard("ICON OF GREAT-TOTAL SUPREMACY", 35)[At the start of each of your turns, the unit carrying this standard regains D3 Infantry models slain previously during the game, just like a *summoning* spell.]
 
-One use only. This standard can be activated at the beginning of any player's turn. Within 24" of this standard, no model may use the Fly special rule and units are at \-2 to be Hit with non-magical missile attacks. All non-magical missile attacks that do not use Ballistics Skill to hit need to roll a 4+ on a D6 before they can attempt to fire if they are within 24" of the banner. Roll a D6 at the beginning of each following player turn – the effects of the banner will end on a D6 roll of 4+.
+#magic-standard("UMBRANNER", 35)[The unit carrying this standard gains a Magical Ward (4+) against non-magical missiles with Strength 4 or less.]
 
-#namecost("ICON OF GREAT-TOTAL", "")
-#namecost("SUPREMACY", "35 points")
+#magic-standard("GRAND BANNER OF CLAN SUPERIORITY", 30)[The unit carrying this standard gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.]
 
-At the start of each of your turns, the unit carrying this standard regains D3 Infantry models slain previously during the game, just like a *summoning* spell.
+#magic-standard("BANNER OF BURNING HATRED", 25)[The unit carrying this standard gains the Hatred special rule.]
 
-#namecost("UMBRANNER", "35 points")
+#magic-standard("PLAGUE BANNER", 25)[Plague Monks only. One use only. This standard may be activated at the start of any Close Combat phase. For the remainder of the phase all Plague Monk models in the unit may re-roll failed To Hit rolls and failed To Wound rolls.]
 
-The unit carrying this standard gains a Magical Ward (4+) against non-magical missiles with Strength 4 or less.
+#magic-standard("SHROUD OF DRIPPING DEATH", 25)[Clan Pestilens only. This standard causes all enemy models in base contact with the unit carrying it to suffer a Strength 2 Hit which Ignores Armour Saves at the start of every Close Combat phase.]
 
-#namecost("GRAND BANNER OF CLAN", "")
-#namecost("SUPERIORITY", "30 points")
+#magic-standard("BANNER OF THE UNDER-EMPIRE", 20)[This standard causes all enemy units in base contact with the unit carrying it to suffer 3D6 Strength 1 Hits at the start of every Close Combat phase.]
 
-The unit carrying this standard gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.
+#magic-standard("DWARF-HIDE BANNER", 20)[The unit carrying this standard gains the Hatred special rule against all Dwarfs.]
 
-#namecost("BANNER OF BURNING HATRED", "25 points")
+#magic-standard("BANNER OF THE SWARM", 15)[The unit carrying this standard gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.]
 
-The unit carrying this standard gains the Hatred special rule.
+#magic-standard("BANNER OF THE FOUR BLACK WINDS", 10)[Enemies cannot use the Fly special rule to charge the unit carrying this standard.]
 
-#namecost("PLAGUE BANNER", "25 points")
-
-Plague Monks only. One use only. This standard may be activated at the start of any Close Combat phase. For the remainder of the phase all Plague Monk models in the unit may re-roll failed To Hit rolls and failed To Wound rolls.
-
-#namecost("SHROUD OF DRIPPING DEATH", "25 points")
-
-Clan Pestilens only. This standard causes all enemy models in base contact with the unit carrying it to suffer a Strength 2 Hit which Ignores Armour Saves at the start of every Close Combat phase.
-
-#namecost("BANNER OF THE UNDER-EMPIRE", "20 points")
-
-This standard causes all enemy units in base contact with the unit carrying it to suffer 3D6 Strength 1 Hits at the start of every Close Combat phase.
-
-#namecost("DWARF-HIDE BANNER", "20 points")
-
-The unit carrying this standard gains the Hatred special rule against all Dwarfs.
-
-#namecost("BANNER OF THE SWARM", "15 points")
-
-The unit carrying this standard gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.
-
-#namecost("BANNER OF THE FOUR BLACK", "")
-#namecost("WINDS", "10 points")
-
-Enemies cannot use the Fly special rule to charge the unit carrying this standard.
-
-#namecost("BANNER OF VERMINOUS", "")
-#namecost("SCURRYING", "10 points")
-
-The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move.
-
+#magic-standard("BANNER OF VERMINOUS SCURRYING", 10)[The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move.]
+]
 = LORDS
 
 #unit("GREY SEER",
@@ -596,7 +447,6 @@ They may use a combination of spells from both Lores. In addition, they can also
 )
 
 #unit("VERMINLORD",
-  breakable: true,
   profiles: (
     (name: "Verminlord", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 450),
   ),
@@ -1375,7 +1225,6 @@ Attacks special rule."), ("6", "Power Failure: The Doom-flayer may not attack or
 )
 
 #unit("STORMFIEND",
-  breakable: true,
   profiles: (
     (name: "Stormfiend", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: 70),
   ),
@@ -2069,33 +1918,11 @@ cables out."), ("6", "Full Power: Ikit may immediately add D3 power dice to the 
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]
 
-= OUR CHANGES
-
-This edition is the Warhammer Armies Project text with the changes below applied to it. Everything not listed here is unchanged. Each entry gives the rule as it was written, the rule as it now stands, and why it was changed.
-
-#namecost("The Doomrocket gains Cumbersome", "MAGIC ITEMS · ENCHANTED ITEMS")
-
-Slow to Fire is named in eight weapon profiles across the books and defined 
-in none of them, so as written it asks the players to apply a rule that does 
-not exist. Cumbersome — a weapon that cannot be used to Stand and Shoot — is 
-what it was reaching for, and the reference is corrected to the rule the 
-rulebook actually carries.
-
-#field("Was", "")
-
-#note[Range 12\-36" · Strength 5 · Special Rules Slow to Fire]
-
-#field("Now", "")
-
-Range 12\-36" · Strength 5 · Special Rules Cumbersome

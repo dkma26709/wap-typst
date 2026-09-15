@@ -1,20 +1,27 @@
 """Hold an edition to the promise its colophon makes.
 
-While editions were generated, the changelog chapter and the change applied to
-the body came from one record, so they could not disagree. Now that an edition
-is a fork of its base book, kept in git, they can - and the House colophon makes
-a specific promise about that:
+While editions were generated, the changelog and the change applied to the body
+came from one record, so they could not disagree. Now that an edition is a fork
+of its base book, kept in git, they can - and the House colophon makes a
+specific promise about that:
 
-    "The rules text has been altered from the original in the places listed
-    under Our Changes, and those alterations are not marked in the body."
+    "The rules text has been altered from the original, and those alterations
+    are not marked in the body."
 
-So the changelog is the only place a reader learns what moved, and this checks
-it is complete. Every word the edition removes from its base, and every word it
-introduces, must appear in the changelog chapter. Edit the body without writing
+The reader is warned the body was altered and not told where, so the record is
+the only place the alterations are written down, and this checks it is complete.
+Every word the edition removes from its base, and every word it introduces, must
+appear in `editions/<slug>/<army>/<version>.toml`. Edit the body without writing
 the change up and the book starts lying; this fails instead.
 
+That record used to be a chapter at the back of the book, and this read the
+chapter's own pages. The chapter is gone - a book carries the rules, not its own
+history - so the same check now reads the TOML the change was always recorded
+in. The gate is otherwise unchanged; only where it looks for the changelog is.
+
 The Proposals edition promises the opposite - that nothing in the body has been
-touched - so there the body must match its parent's exactly.
+touched - so there the body must match its parent's exactly, and its proposals
+DO print, in a chapter `--chapter` names.
 
 Both checks read the rendered PDFs rather than the source, so they see the book
 as a reader does and need no knowledge of Typst escaping.
@@ -116,9 +123,16 @@ def page_words(page: pymupdf.Page) -> list[str]:
     but the clearance between the band and the lowest body line is 3pt, and a
     bare number is exactly what half the cells of a weapon profile hold - so a
     line goes only if it is inside the bottom margin AND is nothing but digits.
+
+    A word hyphenated across a line break is one word, and is rejoined before
+    the line is split. An edition reflows its base, so the two books break
+    different words in different places: without this the rulebook's House
+    edition reported 845 undocumented removals, led by `ing` 31 times, `re` 16
+    and `ment` 14 - fragments of words that never left the book at all.
     """
     band = page.rect.height - FOOTER_BAND
     kept: list[str] = []
+    pending = ""
     for block in page.get_text("dict")["blocks"]:
         if block["type"] != 0:
             continue
@@ -126,7 +140,28 @@ def page_words(page: pymupdf.Page) -> list[str]:
             text = "".join(span["text"] for span in line["spans"])
             if line["bbox"][1] >= band and text.strip().isdigit():
                 continue
+            if pending:
+                text, pending = pending + text.lstrip(), ""
+            # Typst breaks a word with a SOFT hyphen, not an ASCII one, and the
+            # soft hyphen was being stripped a line later - by which time the
+            # two halves were already two words.
+            #
+            # The two kinds of hyphen part company here. A soft one is Typst's
+            # and goes, so `move-` + `ment` is `movement`. A real one is the
+            # author's and STAYS, so `re-` + `roll` is `re-roll` and splits into
+            # the same two words the unbroken line gives - dropping it made
+            # `reroll`, which matched nothing and read as a word both lost and
+            # gained.
+            stripped = text.rstrip()
+            if stripped.endswith((SOFT, "-")) and len(stripped) > 1 \
+                    and stripped[-2].isalpha():
+                pending = (stripped[:-1] if stripped.endswith(SOFT)
+                           else stripped)
+                continue
             kept.extend(words(text.replace(SOFT, "")))
+    # A word left hanging at the foot of a page is still a word.
+    if pending:
+        kept.extend(words(pending.replace(SOFT, "")))
     return kept
 
 
@@ -141,12 +176,41 @@ def bag(pdf: Path, pages: range | None = None) -> Counter:
     return out
 
 
+def words_of(text: str) -> Counter:
+    """The same word bag, taken from a file rather than a rendered page.
+
+    `words` is what the PDF side uses, so a word written in the record and a
+    word printed in the book are folded the same way and compare directly.
+    """
+    return Counter(words(text.replace(SOFT, "")))
+
+
+def changes_toml(edition_pdf: Path) -> Path:
+    """Where an edition's changes are recorded, from the book's own path.
+
+    `out/lizardmen/3.0-house.pdf` -> `editions/house/lizardmen/3.0.toml`. The
+    edition's slug is the suffix on the file name, which is also how src/ names
+    the fork, so the two cannot drift apart without one of them failing to open.
+    """
+    army = edition_pdf.parent.name
+    version, _, slug = edition_pdf.stem.rpartition("-")
+    if not slug:
+        raise SystemExit(
+            f"check_editions: {edition_pdf.name} does not name an edition - "
+            f"expected <version>-<slug>.pdf, as in 3.0-house.pdf")
+    return ROOT / "editions" / slug / army / f"{version}.toml"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("edition_pdf", type=Path)
     ap.add_argument("parent_pdf", type=Path)
-    ap.add_argument("--chapter", default="OUR CHANGES",
-                    help="the chapter the edition documents itself in")
+    ap.add_argument("--chapter", default="PROPOSALS",
+                    help="the chapter a Proposals edition prints its proposals "
+                         "in, excluded from the body compared")
+    ap.add_argument("--changes", type=Path,
+                    help="the TOML the edition's changes are recorded in "
+                         "(default: derived from the edition's own path)")
     ap.add_argument("--identical-body", action="store_true",
                     help="for the Proposals edition, which promises the body is "
                          "untouched rather than merely documented")
@@ -180,7 +244,15 @@ def main() -> None:
             continue
         after = text[text.index("#outline("):]
         after = after[after.index(")") + 1:]
-        head = after.split(chr(10) + "= ", 1)[0]
+        # A chapter begins at a `= ` line OR at a record chapter that prints
+        # its own heading - upgrade-chapter, magic-item-chapter, lore. Looking
+        # only for `= ` made every book whose first chapter became a record
+        # look as though its whole body sat above the first chapter.
+        starts = [after.index(mark) for mark in
+                  (chr(10) + "= ", chr(10) + "#upgrade-chapter(",
+                   chr(10) + "#magic-item-chapter(", chr(10) + "#lore(")
+                  if mark in after]
+        head = after[:min(starts)] if starts else after
         stray = [l for l in head.splitlines()
                  if l.strip() and not l.strip().startswith("//")]
         if stray:
@@ -189,20 +261,25 @@ def main() -> None:
                 f"and its first chapter, which no comparison here would see: "
                 f"{stray[0][:60]!r}")
 
-    start = chapter_start(args.edition_pdf, args.chapter)
-    if start is None:
+    doc = pymupdf.open(args.edition_pdf)
+    # A House edition prints no chapter of its own, so its body runs to the end.
+    # A Proposals edition prints one, and it is excluded from the body compared.
+    start = chapter_start(args.edition_pdf, args.chapter) or doc.page_count
+    if args.identical_body and start == doc.page_count:
         raise SystemExit(
             f"check_editions: {args.edition_pdf.name} has no {args.chapter!r} "
-            f"chapter, so it documents none of its changes")
+            f"chapter, so there is nothing for --identical-body to exclude")
 
-    doc = pymupdf.open(args.edition_pdf)
     ebody = body_start(args.edition_pdf)
     pbody = body_start(args.parent_pdf)
     body = bag(args.edition_pdf, range(ebody, start))
-    documented = bag(args.edition_pdf, range(start, doc.page_count))
 
     print(f"{args.edition_pdf.name} against {args.parent_pdf.name}")
-    print(f"  body pages {ebody + 1}-{start}, {args.chapter} from page {start + 1}")
+    if start < doc.page_count:
+        print(f"  body pages {ebody + 1}-{start}, "
+              f"{args.chapter} from page {start + 1}")
+    else:
+        print(f"  body pages {ebody + 1}-{start}")
 
     if args.identical_body:
         # The parent's own trailing chapter is not part of the body compared.
@@ -222,6 +299,13 @@ def main() -> None:
               f"{'untouched, as the colophon promises' if ok else 'NOT untouched'}")
         sys.exit(0 if ok else 1)
 
+    record = args.changes or changes_toml(args.edition_pdf)
+    if not record.exists():
+        raise SystemExit(
+            f"check_editions: {args.edition_pdf.name} has no change record at "
+            f"{record}, so it documents none of its changes")
+    documented = words_of(record.read_text(encoding="utf-8"))
+
     parent = bag(args.parent_pdf,
                  range(pbody, pymupdf.open(args.parent_pdf).page_count))
     removed = parent - body
@@ -230,9 +314,9 @@ def main() -> None:
     undocumented_additions = added - documented
 
     print(f"  removed from the base: {sum(removed.values())} words, "
-          f"{sum(undocumented_removals.values())} of them not in {args.chapter}")
+          f"{sum(undocumented_removals.values())} of them not in {record.name}")
     print(f"  added to the base    : {sum(added.values())} words, "
-          f"{sum(undocumented_additions.values())} of them not in {args.chapter}")
+          f"{sum(undocumented_additions.values())} of them not in {record.name}")
     if undocumented_removals:
         print("    undocumented removals:", undocumented_removals.most_common(args.show))
     if undocumented_additions:
@@ -240,7 +324,7 @@ def main() -> None:
 
     ok = not undocumented_removals and not undocumented_additions
     print(f"\n{'OK' if ok else 'FAIL'}: every alteration is "
-          f"{'written up in ' + args.chapter if ok else 'NOT written up'}")
+          f"{'written up in ' + record.name if ok else 'NOT written up'}")
     sys.exit(0 if ok else 1)
 
 

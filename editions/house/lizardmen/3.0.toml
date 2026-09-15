@@ -109,6 +109,12 @@ points to fifty, which left the army's most expensive character as the one that 
 could least afford to carry its banner. The two entries now read the same way.
 """
 
+original = """The Battle Standard Bearer can have a magic banner with no points limit. However, a Slann carrying a magic standard can only take other magic items and/or Disciplines of the Old Ones up to a total of 50 points. A Slann carrying the Battle Standard may still be the Army General."""
+
+new = """
+The Battle Standard Bearer can have a magic banner with no points limit in addition to any other magic items and/or Disciplines of the Old Ones. A Slann carrying the Battle Standard may still be the Army General.
+"""
+
 [[change]]
 id      = "saurus-warriors-weapon-skill-4"
 title   = "Saurus Warriors strike as well as they are built"
@@ -121,6 +127,13 @@ oddly beside Strength 4, Toughness 4 and two Attacks. A point a model pays for t
 difference.
 """
 
+original = """Saurus Warrior 4 3 0 4 4 1 1 2 8 13"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|4|4|0|4|4|1|1|2|8|14
+"""
+
 [[change]]
 id      = "stegadon-200-points"
 title   = "A Stegadon costs five points more"
@@ -130,6 +143,13 @@ op      = "replace"
 why     = """
 Impact Hits (D6+1) on a Monster with four Attacks and Stubborn is worth more than the \
 book charged for it.
+"""
+
+original = """Stegadon 6 3 0 5 6 5 2 4 6 195"""
+
+new = """
+|M|WS|BS|S|T|W|I|A|Ld|Points
+|6|3|0|5|6|5|2|4|6|200
 """
 
 [[change]]

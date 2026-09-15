@@ -12,7 +12,7 @@
   army: "Hobgoblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/hobgoblins/3.0.png",
+  cover: "covers/hobgoblins.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Hobgoblins",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/hobgoblins/3.0.png",
+  art: "/assets/covers/hobgoblins.png",
 )
 
 #colophon((
@@ -45,36 +45,32 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Hobgoblin army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Hobgoblin units, and these are detailed here.
-
-#namecost("BACKSTABBERS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Hobgoblin army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Hobgoblin units, and these are detailed here.])[
+#upgrade("BACKSTABBERS", none)[
 A unit with this special rule that successfully restrains from pursuing after breaking an enemy unit in close combat causes D6 Strength 3 hits on the fleeing unit for every complete rank the Hobgoblin unit has (up to a maximum of 3). Resolve any casualties before moving the fleeing unit.
+]
 
-#namecost("COWARDLY DESPOILERS", "")
-
+#upgrade("COWARDLY DESPOILERS", none)[
 Models with this special rule gain +1 To Hit in the first round of combat if they successfully charge an enemy in the rear or flank.
+]
 
-#namecost("CUNNING RETREAT", "")
-
+#upgrade("CUNNING RETREAT", none)[
 When an enemy unit declares to fire at a unit with this special rule in their Shooting phase, it may choose to make a Feigned Flight move directly away from the enemy unit shooting at it. Once the unit has completed its move, the enemy unit may continue with its shooting as declared (provided they are still in range).
+]
 
-#namecost("DED SHOOTY", "")
-
+#upgrade("DED SHOOTY", none)[
 Mounted models with this special rule do not suffer penalties To Hit for Moving and Shooting and may Volley Fire even while moving. In addition, when using Fire and Flee, the unit can still use their Swiftstride special rule.
+]
 
-#namecost("HIIYAAARRGHH!", "")
-
+#upgrade("HIIYAAARRGHH!", none)[
 If a model with this special rule is your Army General, then once per game he may call a Hiiyaaarrghh! The Hiiyaaarrghh! may only be called if the model first declares a charge, and must be announced immediately after making the charge declaration, before any charge reaction takes place. In the turn a Hiiyaaarrghh! is called, every friendly Hobgoblin unit within 12" add +D3" to their charge move this turn. The Army General himself, and any unit he joins, adds +D6 to their charge move instead. In addition, every friendly unit within 12" of the Army General add their rank bonus to the result rolled on the Treacherous Gits table (to a maximum of 6).
+]
 
-#namecost("QUELL TREACHERY", "")
-
+#upgrade("QUELL TREACHERY", none)[
 Any friendly unit joined by a model with this special rule may re-roll failed Treachery tests.
+]
 
-#namecost("TREACHEROUS GITS", "")
-
+#upgrade("TREACHEROUS GITS", none)[
 Units with this special rule must test for Treachery in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Treachery, unless any of the following applies:
 
 - The unit has less than 5 models.
@@ -118,6 +114,8 @@ closest visible enemy unit, if it is possible to
 do so. If the unit cannot declare a charge then
 it may carry on with the rest of its turn
 normally, as if it had not yet moved this turn.")))
+]
+]
 
 #lore("LORE OF DA HIIYAAARRGHH!")[
 
@@ -737,7 +735,6 @@ If you roll a misfire, or if for any reason some of the models in the unit canno
 )
 
 #unit("GIANT",
-  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -911,20 +908,15 @@ then choose another victim. Roll again on this table to see what the Giant does 
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

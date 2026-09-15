@@ -62,13 +62,8 @@ An invasion does not begin with the swarm. It begins years before, quietly: pale
 
 The Great Devourer cannot be bargained with, bribed, converted or frightened, and it allies with no one, for the concept of an ally requires the concept of a future in which the other party is still alive. Every battle against it can be won. The war cannot, because the war is not, from the swarm's perspective, a war at all. It is a meal, interrupted.
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes the different units in a Tyranids army, along with their rules. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring 'army special rules' that apply to several Tyranids units, and these are detailed below.
-
-#namecost("TYRANID", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes the different units in a Tyranids army, along with their rules. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring 'army special rules' that apply to several Tyranids units, and these are detailed below.])[
+#upgrade("TYRANID", none)[
 Models with this rule have the Fear special rule and are Unbreakable. However, if a unit of Tyranids loses a round of close combat it must take a Hive Mind Instability test. This works like a normal Break test, except that for every point they fail the test by, the unit suffers one additional Wound with no saves allowed. Hive Mind Instability replaces Unstable where applicable.
 
 If characters are present in the unit, the controlling player first allocates Wounds to the unit (up to their current Wounds), then divides remaining Wounds as equally as possible amongst any characters.
@@ -76,15 +71,15 @@ If characters are present in the unit, the controlling player first allocates Wo
 The Hive Mind Instability test can use the Leadership of a Synapse creature (see below), Inspiring Presence, Hold Your Ground and/or be tested on unmodified Leadership if the unit is Stubborn or Steadfast as normal.
 
 A Tyranids army may never include allies of any kind, and Tyranid units may never be taken as allies by any other army — to the Great Devourer, everything that lives is biomass.
+]
 
-#namecost("SYNAPSE", "")
-
+#upgrade("SYNAPSE", none)[
 Synapse creatures carry the will of the Hive Mind, and the swarm around them moves with a single purpose. A Tyranid unit within 12" of one or more friendly Synapse creatures may use the highest Leadership among those Synapse creatures for any Leadership test it is required to take, including Hive Mind Instability tests, and does not take Instinctive Behaviour tests.
 
 Synapse creatures never take Instinctive Behaviour tests themselves. This rule is in addition to the Inspiring Presence of the Army General, which works as normal.
+]
 
-#namecost("SYNAPTIC ATTUNEMENT", "")
-
+#upgrade("SYNAPTIC ATTUNEMENT", none)[
 Each breed of synapse creature colours the will it carries: prey-hate from a Tyrant, patience from the Warriors, the scent of the hunt from a Broodlord. At the start of each friendly turn, each Tyranid unit that is not itself a Synapse creature and is within range of one or more friendly Synapse creatures becomes attuned to exactly one of them, chosen by the controlling player. Until the start of the next friendly turn, the unit gains the benefit listed below for its anchor; each gift is also named in brackets after the Synapse special rule in its creature's entry. Some anchors give no gift but draw on the broods bound to them instead — these are marked Communion, and are empowered while at least one unit is attuned to them. A unit can never benefit from more than one attunement at a time, and the Capillary Cluster grants no attunement — it is a beacon, not a mind.
 
 - Synapse (Hatred) — Hive Tyrant: The attuned unit has the Hatred special rule.
@@ -96,168 +91,132 @@ Each breed of synapse creature colours the will it carries: prey-hate from a Tyr
 - Synapse (Communion) — Tervigon: While at least one unit is attuned to the Tervigon, she may re-roll one of the dice when rolling for Brood Progenitor.
 - Synapse (Swiftstride) — Trygon Prime: The attuned unit has the Swiftstride special rule.
 - Synapse (Purpose) — Norn Emissary: The attuned unit has the Hatred special rule against the target of the Emissary's Singular Purpose.
+]
 
-#namecost("INSTINCTIVE BEHAVIOUR", "")
-
+#upgrade("INSTINCTIVE BEHAVIOUR", none)[
 Without the Hive Mind's grip, a Tyranid organism falls back on the appetites it was grown from. At the start of each friendly turn, each unit with this special rule that is not within 12" of a friendly Synapse creature and not engaged in close combat must take a Leadership test on its own Leadership. If the test is failed, the unit is governed by its instinct, shown in brackets after the rule, until the start of its next friendly turn:
 
 - Lurk: The unit is Unfocused, as the result of the same name on the Stupidity table: it suffers a \-1 penalty to its Weapon Skill, Ballistic Skill and Leadership.
 - Feed: The unit is subject to the rules for Frenzy (including the extra Attack), and automatically fails any Leadership test to restrain from charging.
+]
 
-#namecost("SHADOW IN THE WARP", "")
-
+#upgrade("SHADOW IN THE WARP", none)[
 The Hive Mind does not wield the Winds of Magic — it smothers them. A Tyranids army has no Wizards, never generates or receives power or dispel dice, and can never cast or dispel spells.
 
 However, while at least one friendly model with the Synapse special rule is on the battlefield, the opposing player rolls one fewer dice for the Winds of Magic. In addition, enemy Wizards within 12" of a friendly Synapse creature suffer a \-1 penalty to their casting rolls. This penalty is not cumulative, no matter how many Synapse creatures are nearby.
+]
 
-#namecost("THE SWARM FEEDS", "")
-
+#upgrade("THE SWARM FEEDS", none)[
 Nothing the swarm kills is wasted; it is carried down a thousand gullets back into the tide. At the end of any close combat phase in which a Tyranid unit with Instinctive Behaviour (Feed) destroyed an enemy unit, it feeds on the fallen: the unit immediately recovers D3 Wounds' worth of slain rank-and-file models, just like a summoning spell. Characters are never recovered this way.
+]
 
-#namecost("VANGUARD ORGANISMS", "")
-
+#upgrade("VANGUARD ORGANISMS", none)[
 The swarm's ambushers follow prey-scent trails laid down by the vanguard years before the invasion breaks. Tyranid units with the Ambushers special rule add +1 to the dice roll that determines whether they arrive.
+]
 
-#namecost("CAPILLARY CLUSTER", "50 points")
-
+#upgrade("CAPILLARY CLUSTER", 50)[
 The first towers of the reclamation, grown in the dark before the battle was ever offered. One per army. After deployment zones are determined, but before either army deploys, place a Capillary Cluster — a Mystical Monument up to 3" in diameter — anywhere within your own deployment zone. Friendly Tyranid units within 6" of the Cluster count as being within range of a Synapse creature with Leadership 8. The Cluster is not itself a Synapse creature for the purposes of Shadow in the Warp, and it cannot be attacked, harmed or moved.
+]
 
-#namecost("BIO-WEAPONS", "")
-
+#upgrade("BIO-WEAPONS", none)[
 Tyranid weapons are living things, grown for a single purpose and bonded to their bearer's flesh. The following weapons are carried by several units in this book:
+]
 
-#namecost("FLESHBORER", "")
+#upgrade("FLESHBORER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "4", "March & Shoot"))
-#namecost("DEVOURER", "")
+]
+
+#upgrade("DEVOURER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "3", "Multiple Shots (2)"))
-#namecost("DEATHSPITTER", "")
+]
+
+#upgrade("DEATHSPITTER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "4", "-"))
-#namecost("SCYTHING TALONS", "")
+]
 
+#upgrade("SCYTHING TALONS", none)[
 A model with scything talons may re-roll To Hit rolls of 1 in close combat.
+]
 
-#namecost("RENDING CLAWS", "")
-
+#upgrade("RENDING CLAWS", none)[
 Close combat attacks made with rending claws have the Armour Piercing (2) special rule.
+]
 
-#namecost("BROODLINE UPGRADES", "")
-
+#upgrade("BROODLINE UPGRADES", none)[
 Many entries in this book may purchase one or more of the following common upgrades, at the cost given in their entry. Each is a special rule in its own right, cumulative with other sources of the same rule as normal:
+]
 
-#namecost("TOXIN SACS", "")
-
+#upgrade("TOXIN SACS", none)[
 The model has the Poisoned Attacks special rule.
+]
 
-#namecost("ADRENAL GLANDS", "")
-
+#upgrade("ADRENAL GLANDS", none)[
 The model adds +1 to its Movement characteristic.
+]
 
-#namecost("REGENERATIVE TISSUES", "")
-
+#upgrade("REGENERATIVE TISSUES", none)[
 The model has the Regeneration (5+) special rule.
+]
 
-#namecost("WARP-STATIC CYSTS", "")
-
+#upgrade("WARP-STATIC CYSTS", none)[
 Enemy Wizards within 12" of a unit with warp-static cysts suffer the \-1 casting penalty from Shadow in the Warp as if the unit were a Synapse creature. This penalty is not cumulative with any other source of it.
+]
 
-#namecost("SWARM SYNCHRONY", "")
-
+#upgrade("SWARM SYNCHRONY", none)[
 The swarm carries no banners, blows no horns and salutes no champions — when the web holds and the mass is sufficient, a brood simply moves as the fingers of one hand. Tyranid units take no command groups of any kind. Instead, while a Tyranid unit is within range of a friendly Synapse creature and its Unit Strength is greater than the combined Unit Strength of the enemy units in base contact with it, it fights in perfect synchrony: the unit adds +1 to its combat result, and wins drawn rounds of close combat by 1 (this and an enemy Musician cancel each other out).
 
 Note that a unit within range of a Synapse creature already uses the Synapse creature's Leadership for its Leadership tests, including tests to march near the enemy and to counter-charge or redirect a charge — the web is leader and musician enough.
 ]
-
-= HIVE FLEETS
-
+]
+#upgrade-chapter("HIVE FLEETS")[
 No two tendrils of the Great Devourer hunt alike. If your Army General is a Synapse creature, your army belongs to one of the great hive fleets, chosen when you write your army roster and noted on it. Every unit in the army with the Tyranid special rule gains the fleet's adaptation for the whole battle.
 
-#namecost("HIVE FLEET BEHEMOTH", "")
+#upgrade("HIVE FLEET BEHEMOTH", none)[The first and bluntest of the hive fleets: it does not manoeuvre, it descends. Tyranid units may re-roll failed charge distance rolls.]
 
-The first and bluntest of the hive fleets: it does not manoeuvre, it descends. Tyranid units may re-roll failed charge distance rolls.
+#upgrade("HIVE FLEET KRAKEN", none)[Kraken strikes as a tide, flowing around strongpoints and arriving everywhere at once. Tyranid units add +1 to their Movement characteristic, to a maximum of 8.]
 
-#namecost("HIVE FLEET KRAKEN", "")
+#upgrade("HIVE FLEET LEVIATHAN", none)[Leviathan's synaptic web is denser than any other fleet's, and its swarms fight in silence and in step. The range of the Synapse special rule is increased by 3" for all friendly Synapse creatures.]
 
-Kraken strikes as a tide, flowing around strongpoints and arriving everywhere at once. Tyranid units add +1 to their Movement characteristic, to a maximum of 8.
+#upgrade("HIVE FLEET GORGON", none)[Gorgon's broods drip with adaptive toxins, re-brewed mid-battle to answer whatever they taste. Tyranid units have the Poisoned Attacks special rule during a turn in which they charged.]
 
-#namecost("HIVE FLEET LEVIATHAN", "")
+#upgrade("HIVE FLEET HYDRA", none)[Hydra spends its broods like water and grows them back faster than they fall. When a Tyranid unit of 10 or more models suffers Wounds from a failed Hive Mind Instability test, it suffers one fewer Wound (to a minimum of 0).]
 
-Leviathan's synaptic web is denser than any other fleet's, and its swarms fight in silence and in step. The range of the Synapse special rule is increased by 3" for all friendly Synapse creatures.
+#upgrade("HIVE FLEET KRONOS", none)[Kronos exists to silence the Warp itself, and the static of its coming blankets whole battlefields. The casting penalty from Shadow in the Warp applies to all enemy Wizards on the battlefield, not only those within 12" of a Synapse creature.]
+]
 
-#namecost("HIVE FLEET GORGON", "")
-
-Gorgon's broods drip with adaptive toxins, re-brewed mid-battle to answer whatever they taste. Tyranid units have the Poisoned Attacks special rule during a turn in which they charged.
-
-#namecost("HIVE FLEET HYDRA", "")
-
-Hydra spends its broods like water and grows them back faster than they fall. When a Tyranid unit of 10 or more models suffers Wounds from a failed Hive Mind Instability test, it suffers one fewer Wound (to a minimum of 0).
-
-#namecost("HIVE FLEET KRONOS", "")
-
-Kronos exists to silence the Warp itself, and the static of its coming blankets whole battlefields. The casting penalty from Shadow in the Warp applies to all enemy Wizards on the battlefield, not only those within 12" of a Synapse creature.
-
-= BIOMORPHS
-
+#upgrade-chapter("BIOMORPHS")[
 The Hive Mind does not forge trophies; it grows them. Characters may select Biomorphs up to the points allowance given in their entry. Each Biomorph may only be taken once per army, and no model may have more than three. Toxin sacs, adrenal glands and regenerative tissues are broodline upgrades listed on the entries themselves, and do not count against these limits.
 
-#namecost("MAW-CLAWS OF THE DEVOURER", "45 points")
+#upgrade("MAW-CLAWS OF THE DEVOURER", 45)[If the model kills an enemy character or Wizard in close combat, it immediately regains all Wounds lost earlier in the battle and gains the Hatred special rule for the rest of the battle.]
 
-If the model kills an enemy character or Wizard in close combat, it immediately regains all Wounds lost earlier in the battle and gains the Hatred special rule for the rest of the battle.
+#upgrade("SYNAPTIC AMPLIFIER", 40, only: "Synapse creatures")[The range of the model's Synapse special rule is increased by 6".]
 
-#namecost("SYNAPTIC AMPLIFIER", "40 points")
+#upgrade("WARP ABSORPTION NODE", 35)[The model, and any unit it has joined, gain the Magic Resistance (2) special rule. If the model already has Magic Resistance, increase its value by 1 instead.]
 
-Synapse creatures only. The range of the model's Synapse special rule is increased by 6".
+#upgrade("SCREAMING CYST", 35, only: "Synapse creatures")[Enemy Wizards within 12" of the model suffer a \-2 casting penalty from Shadow in the Warp, rather than \-1.]
 
-#namecost("WARP ABSORPTION NODE", "35 points")
+#upgrade("THE HORROR IN THE DARK", 30)[Enemy units in base contact with the model suffer a \-1 penalty to their Leadership, and must re-roll successful Fear and Terror tests caused by the model or its unit.]
 
-The model, and any unit it has joined, gain the Magic Resistance (2) special rule. If the model already has Magic Resistance, increase its value by 1 instead.
+#upgrade("BONDED EXOSKELETON", 30)[The model's Natural Armour is improved by one step, to a maximum of 2+.]
 
-#namecost("SCREAMING CYST", "35 points")
+#upgrade("ACID BLOOD", 25)[Each time the model suffers an unsaved Wound in close combat, the unit that caused it suffers D3 Strength 4 hits at the end of that phase.]
 
-Synapse creatures only. Enemy Wizards within 12" of the model suffer a \-2 casting penalty from Shadow in the Warp, rather than \-1.
+#upgrade("BIO-PLASMIC DISCHARGE", 25)[The model has a Breath Weapon, Strength 4, with the Armour Piercing (1) special rule.]
 
-#namecost("THE HORROR IN THE DARK", "30 points")
+#upgrade("MEMBRANOUS WINGS", 25)[Monstrous Infantry characters only, and only if the model cannot already fly. The model gains the Fly (8) special rule.]
 
-Enemy units in base contact with the model suffer a \-1 penalty to their Leadership, and must re-roll successful Fear and Terror tests caused by the model or its unit.
+#upgrade("TITANIC BULK", 25, only: "Monsters")[The model's Stomp becomes Stomp (D6+3).]
 
-#namecost("BONDED EXOSKELETON", "30 points")
+#upgrade("ADRENAL SURGE", 20)[The model has +1 Attack and +1 Initiative during any turn in which it charged.]
 
-The model's Natural Armour is improved by one step, to a maximum of 2+.
+#upgrade("CHAMELEONIC SKIN", 15)[Enemy missile attacks targeting the model suffer an additional \-1 To Hit modifier.]
 
-#namecost("ACID BLOOD", "25 points")
+#upgrade("HYPER-TOXIC ICHOR", 15)[The model has the Poisoned Attacks special rule.]
 
-Each time the model suffers an unsaved Wound in close combat, the unit that caused it suffers D3 Strength 4 hits at the end of that phase.
+#upgrade("SOPORIFIC SPORES", 15)[Enemy models in base contact with the model suffer a \-2 penalty to their Initiative.]
 
-#namecost("BIO-PLASMIC DISCHARGE", "25 points")
-
-The model has a Breath Weapon, Strength 4, with the Armour Piercing (1) special rule.
-
-#namecost("MEMBRANOUS WINGS", "25 points")
-
-Monstrous Infantry characters only, and only if the model cannot already fly. The model gains the Fly (8) special rule.
-
-#namecost("TITANIC BULK", "25 points")
-
-Monsters only. The model's Stomp becomes Stomp (D6+3).
-
-#namecost("ADRENAL SURGE", "20 points")
-
-The model has +1 Attack and +1 Initiative during any turn in which it charged.
-
-#namecost("CHAMELEONIC SKIN", "15 points")
-
-Enemy missile attacks targeting the model suffer an additional \-1 To Hit modifier.
-
-#namecost("HYPER-TOXIC ICHOR", "15 points")
-
-The model has the Poisoned Attacks special rule.
-
-#namecost("SOPORIFIC SPORES", "15 points")
-
-Enemy models in base contact with the model suffer a \-2 penalty to their Initiative.
-
-#namecost("FLESH HOOKS", "10 points")
-
-The model gains a shooting attack: range 4/8", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.
+#upgrade("FLESH HOOKS", 10)[The model gains a shooting attack: range 4/8", Strength 4, March & Shoot. In addition, the model strikes at +1 Initiative against models defending an obstacle.]
+]
 
 = CHARACTERS
 

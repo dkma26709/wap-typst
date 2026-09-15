@@ -12,7 +12,7 @@
   army: "Pirates of Sartosa",
   version: "3.0",
   layout: "army",
-  cover: "covers/pirates-of-sartosa/3.0.png",
+  cover: "covers/pirates-of-sartosa.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Pirates of Sartosa",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/pirates-of-sartosa/3.0.png",
+  art: "/assets/covers/pirates-of-sartosa.png",
 )
 
 #colophon((
@@ -45,16 +45,12 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Pirates of Sartosa army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Pirates of Sartosa units, and these are detailed here.
-
-#namecost("DIRTY FIGHTING", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Pirates of Sartosa army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Pirates of Sartosa units, and these are detailed here.])[
+#upgrade("DIRTY FIGHTING", none)[
 All models with this special rule gain +1 To Hit in the first round of close combat.
+]
 
-#namecost("MASTERS AND IDLERS", "")
-
+#upgrade("MASTERS AND IDLERS", none)[
 Masters and Idlers are upgrades for certain units, follow the rules for normal Command Group models. You may have one Master and Idler of each sort for every Pirate Captain or Pirate Lord in your army.
 
 - *Bosun:* A unit with a Bosun gains the Cold-Blooded special rule.
@@ -64,25 +60,32 @@ Masters and Idlers are upgrades for certain units, follow the rules for normal C
 - *Master Gunner:* A unit with a Master Gunner joined can re-roll 1's when rolling To Hit with blunderbusses, handguns and pistols. If he is part of a War Machine crew, that war machine may re-roll one Artillery Dice per game.
 
 - *Pilot:* A unit with a Pilot gains the Ambushers special rule.
+]
 
-#namecost("NAVAL BOMBARDMENT", "")
-
+#upgrade("NAVAL BOMBARDMENT", none)[
 Once per game, you may fire D3 Cannon shots in the shooting phase from the edge of your deployment zone for every full 1000 points of game size you are playing. Each shot is fired from a separate point within a 45° angle no more than 3" apart from each other, and with a Line of Sight value of 3. If a Misfire is rolled, count the result as a "May not Shoot".
+]
 
-#namecost("RACIAL DISTRUST", "")
-
+#upgrade("RACIAL DISTRUST", none)[
 Most models belong to a certain race as detailed in their Troop Type. This includes Human, Dwarf, Ogre and Orc. Characters may only join units belonging to the same race.
+]
 
-#namecost("SEA LEGS", "")
-
+#upgrade("SEA LEGS", none)[
 All models with this special rule may re-roll failed Dangerous Terrain tests.
+]
 
-#namecost("HARPOON LAUNCHER", "")
+#upgrade("HARPOON LAUNCHER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "5", "Multiple Wounds (D3), Ponderous"))
-#namecost("SWIVEL GUN", "")
+]
+
+#upgrade("SWIVEL GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("18/36\"", "6", "Ponderous"))
-#namecost("VOLLEY GUN", "")
+]
+
+#upgrade("VOLLEY GUN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Multiple Shots (D6), Ponderous"))
+]
+]
 
 #lore("THE LORE OF THE DEEP")[
 
@@ -1022,20 +1025,15 @@ Devastating Charge special rule until the start of your next turn.")))
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

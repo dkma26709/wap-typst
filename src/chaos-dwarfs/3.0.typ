@@ -12,7 +12,7 @@
   army: "Chaos Dwarfs",
   version: "3.0",
   layout: "army",
-  cover: "covers/chaos-dwarfs/3.0.png",
+  cover: "covers/chaos-dwarfs.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Chaos Dwarfs",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/chaos-dwarfs/3.0.png",
+  art: "/assets/covers/chaos-dwarfs.png",
 )
 
 #colophon((
@@ -45,68 +45,67 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Chaos Dwarf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Chaos Dwarf units, and these are detailed here.
-
-#namecost("BACKSTABBERS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Chaos Dwarf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Chaos Dwarf units, and these are detailed here.])[
+#upgrade("BACKSTABBERS", none)[
 A unit with this special rule that successfully restrains from pursuing after breaking an enemy unit in close combat causes D6 Strength 3 hits on the fleeing unit for every complete rank the Hobgoblin unit has (up to a maximum of 3). Resolve any casualties before moving the fleeing unit.
+]
 
-#namecost("BLACKSHARD ARMOUR", "")
-
+#upgrade("BLACKSHARD ARMOUR", none)[
 Models with this special rule have Immunity (Flaming Attacks) if they wear a light, medium or heavy armour.
+]
 
-#namecost("BLAZING BODY", "")
-
+#upgrade("BLAZING BODY", none)[
 All models with this special have Flaming Attacks and Immunity (Flaming Attacks). In addition, any model in base contact with a model with this special rule at the start of the Close Combat phase takes an automatic non-physical Strength 3 Hit with the Flaming Attacks special rule. In addition, any non-magical attacks suffer a \-1 Strength penalty against them.
+]
 
-#namecost("CONTEMPT", "")
-
+#upgrade("CONTEMPT", none)[
 Units with this special rule treat friendly Hobgoblins, Goblins, and Orcs as if they had the Expendable special rule.
+]
 
-#namecost("COWARDLY DESPOILERS", "")
-
+#upgrade("COWARDLY DESPOILERS", none)[
 Models with this special rule gain +1 To Hit in the first round of combat if they successfully charge an enemy in the rear or flank.
+]
 
-#namecost("DAEMONIC", "")
-
+#upgrade("DAEMONIC", none)[
 Models with this special rule have the Magical Attacks, Magical Ward (5+) and Unbreakable special rules.
 
 If a unit of Daemons loses a round of close combat it must take a Daemonic Instability test. This works like a normal Break test, except that for every point they fail the test by, the Daemon suffers one additional Wound with no saves allowed. The Daemonic Instability test can use Inspiring Presence and/or Hold Your Ground as normal.
+]
 
-#namecost("HELLBOUND", "")
-
+#upgrade("HELLBOUND", none)[
 Models with this special rule have the Fear, Magical Attacks and Magical Ward (6+) special rules. Additionally, once per game, an artillery weapon with this special rule may re-roll one scatter dice or one artillery dice. However, should a Hellbound model ever have to make a roll on a Misfire table, it suffers a \-1 modifier to the result.
+]
 
-#namecost("RELENTLESS", "")
-
+#upgrade("RELENTLESS", none)[
 Units entirely composed of models with this special rule do not need to pass a Leadership test in order to march, regardless of the proximity of enemy units.
+]
 
-#namecost("RESOLUTE", "")
-
+#upgrade("RESOLUTE", none)[
 When taking Break tests, models with this special rule count as having lost the combat with 1 point less than they actually have.
+]
 
-#namecost("SORCERER'S CURSE", "")
-
+#upgrade("SORCERER'S CURSE", none)[
 Whenever a model with this special rule suffers a Miscast during the game, after resolving the effects of the Miscast on them normally, they must pass a Toughness test or suffer a Wound with no saves allowed.
+]
 
-#namecost("FIREGLAIVE", "")
+#upgrade("FIREGLAIVE", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Requires Two Hands"))
 #minitable(("Range", "Strength", "Special Rules"), ("9/18\"", "5", "Ponderous"))
-#namecost("FLAMEHURLER", "")
+]
+
+#upgrade("FLAMEHURLER", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "4", "Armour Piercing (2), Flaming Attacks, Quick Shot"))
 
 #note[_Note that this not a physical attack._]
+]
 
-#namecost("NAPTHA BOMBS", "")
+#upgrade("NAPTHA BOMBS", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/9\"", "4", "Flaming Attacks, Ignores Armour Saves, Magical Attacks, March & Shoot, Quick Shot"))
 
 #note[_Note that this not a physical attack._]
+]
 
-#namecost("TREACHEROUS GITS", "")
-
+#upgrade("TREACHEROUS GITS", none)[
 Units with this special rule must test for Treachery in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Treachery, unless any of the following applies:
 
 - The unit has less than 5 models.
@@ -150,8 +149,9 @@ closest visible enemy unit, if it is possible to
 do so. If the unit cannot declare a charge then
 it may carry on with the rest of its turn
 normally, as if it had not yet moved this turn.")))
-#chartlabel("ANIMOSITY")
+]
 
+#upgrade("ANIMOSITY", none)[
 Units with this special rule must test for Animosity in the Charge sub-phase after all normal charges has been declared during each of your turns, by every unit that is subject to Animosity, unless any of the following applies:
 
 - The unit has less than 5 models.
@@ -187,6 +187,7 @@ possible to do so. If the unit cannot declare a
 charge then it may carry on with the rest of
 its turn normally, as if it had not yet moved
 this turn.")))
+]
 ]
 
 #lore("THE LORE OF HASHUT")[
@@ -1234,7 +1235,6 @@ Siege Cannons do not suffer any penalties To Hit for moving and shooting. If you
 )
 
 #unit("SIEGE GIANT",
-  breakable: true,
   profiles: (
     (name: "Siege Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 200),
   ),
@@ -1426,15 +1426,12 @@ Taurus)*, Fly (8), Fuelled by Fire* (see Bale Taurus)*, Immunity (Flaming Attack
 
 = CREDITS
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-)
+#group("Written & Edited by:")
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#namecost("Mathias Eliasson", "")
+
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

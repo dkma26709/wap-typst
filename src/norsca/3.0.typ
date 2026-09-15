@@ -12,7 +12,7 @@
   army: "Norsca",
   version: "3.0",
   layout: "army",
-  cover: "covers/norsca/3.0.png",
+  cover: "covers/norsca.png",
   align: "neutral",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Norsca",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/norsca/3.0.png",
+  art: "/assets/covers/norsca.png",
 )
 
 #colophon((
@@ -45,50 +45,31 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Norscan army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Norscan units, and these are detailed here.
-
-#namecost("BLOOD RAGE", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Norscan army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Norscan units, and these are detailed here.])[
+#upgrade("BLOOD RAGE", none)[
 Whenever a model with this special rule makes a successful charge (including Counter-Charge, Pursuit and Overrun), they are subject to Frenzy in the following round of close combat and count each of their ranks as double for the purpose of Steadfast.
+]
 
-#namecost("FUR CLOAK", "")
-
+#upgrade("FUR CLOAK", none)[
 A fur cloak gives the wearer the Natural Armour (6+) special rule against missile attacks.
+]
+]
 
-= SAGAS
+#upgrade-chapter("SAGAS", intro: [*Certain characters in the Norscan army can choose one of the Sagas on this page, as detailed in the army list. No Saga may be taken more than once per army (excluding Special Characters).*])[
+#upgrade("SAGA OF THE FEARLESS LEADER", 35)[The character and any unit they are with have the Cold- Blooded special rule.]
 
-*Certain characters in the Norscan army can choose one of the Sagas on this page, as detailed in the army list. No Saga may be taken more than once per army (excluding Special Characters).*
+#upgrade("SAGA OF THE EVER-VIGILANT", 30, only: "Model on foot with shield")[The character gains the Parry (6+) special rule, and enemies suffer \-1 To Hit the model in close combat.]
 
-#namecost("SAGA OF THE FEARLESS LEADER", "35 points")
+#upgrade("SAGA OF THE RELENTLESS WARRIOR", 30)[The character gains +1 Attack for every enemy model in base contact with them when it is their turn to strike, up to a maximum of +3.]
 
-The character and any unit they are with have the Cold- Blooded special rule.
+#upgrade("SAGA OF THE SHINING HERO", 25)[The model gains the Inspiring Presence (6) special rule.]
 
-#namecost("SAGA OF THE EVER-VIGILANT", "30 points")
+#upgrade("SAGA OF THE BEASTSLAYER", 20)[The model gains Immunity (Terror). In addition, they gain +1 To Hit and To Wound when fighting War Beasts, Monstrous Beasts or Monsters in close combat.]
 
-Model on foot with shield only. The character gains the Parry (6+) special rule, and enemies suffer \-1 To Hit the model in close combat.
+#upgrade("SAGA OF THE ETERNAL WARRIOR", 20)[Once this model is reduced to 0 Wounds, roll a D6; on a 4+ the model remains fighting with 1 Wound. This has no effect against Killing Blow or other attacks that would instantly kill the model.]
 
-#namecost("SAGA OF THE RELENTLESS", "")
-#namecost("WARRIOR", "30 points")
-
-The character gains +1 Attack for every enemy model in base contact with them when it is their turn to strike, up to a maximum of +3.
-
-#namecost("SAGA OF THE SHINING HERO", "25 points")
-
-The model gains the Inspiring Presence (6) special rule.
-
-#namecost("SAGA OF THE BEASTSLAYER", "20 points")
-
-The model gains Immunity (Terror). In addition, they gain +1 To Hit and To Wound when fighting War Beasts, Monstrous Beasts or Monsters in close combat.
-
-#namecost("SAGA OF THE ETERNAL WARRIOR", "20 points")
-
-Once this model is reduced to 0 Wounds, roll a D6; on a 4+ the model remains fighting with 1 Wound. This has no effect against Killing Blow or other attacks that would instantly kill the model.
-
-#namecost("SAGA OF THE GLORIOUS HUNTER", "15 points")
-
-Model on foot only. After deployment, but before the first turn begins, select a single character or monster in your opponent’s army. This is the character’s primary quarry. The character may re-roll all failed To Hit and To Wound rolls against his primary quarry in close combat and with missile attacks.
+#upgrade("SAGA OF THE GLORIOUS HUNTER", 15, only: "Model on foot")[After deployment, but before the first turn begins, select a single character or monster in your opponent’s army. This is the character’s primary quarry. The character may re-roll all failed To Hit and To Wound rolls against his primary quarry in close combat and with missile attacks.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Norscans. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -1058,19 +1039,14 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

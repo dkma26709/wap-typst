@@ -12,7 +12,7 @@
   army: "Kislev",
   version: "3.1",
   layout: "army",
-  cover: "covers/kislev/3.1.png",
+  cover: "covers/kislev.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Kislev",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/kislev/3.1.png",
+  art: "/assets/covers/kislev.png",
 )
 
 #colophon((
@@ -45,20 +45,16 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Kislev army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Kislev units, and these are detailed here.
-
-#namecost("BY OUR BLOOD", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Kislev army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several Kislev units, and these are detailed here.])[
+#upgrade("BY OUR BLOOD", none)[
 A unit with this special rule is Steadfast in the first round of close combat even if it has fewer ranks than the enemy. If the unit has more complete ranks after the first than all individual enemy units in base contact, it instead becomes Stubborn in the first round of close combat.
+]
 
-#namecost("FURY OF URSUN", "")
-
+#upgrade("FURY OF URSUN", none)[
 Models with this special rule must always pursue fleeing enemies in close combat.
+]
 
-#namecost("GLORIOUS CHARGE", "")
-
+#upgrade("GLORIOUS CHARGE", none)[
 All Cavalry models with this special rule cause Fear in any turn in which they charge.
 
 In addition, in any turn in which a Cavalry unit where the majority of models have this special rule makes a successful charge and wins the subsequent combat but does not break the enemy, they may attempt to disengage from the fight by passing a Leadership test.
@@ -66,10 +62,12 @@ In addition, in any turn in which a Cavalry unit where the majority of models ha
 If successful, the unit will make a flee move away from the enemy in a direction of your choice, as long as they do not flee through any units, in which case they must stop within 1".
 
 The enemy may not pursue a unit disengaging from combat in this manner. After making its flee move, the unit will automatically rally and reform at the end of their move. If this move would take the unit off the battlefield, treat this as the unit having pursued off the table.
+]
 
-#namecost("STEADY IN THE RANKS", "")
-
+#upgrade("STEADY IN THE RANKS", none)[
 Models with this special rule do not suffer the normal \-1 penalty To Hit for firing at a charging enemy.
+]
+]
 
 #lore("THE LORE OF ICE")[
 
@@ -1239,13 +1237,10 @@ Hunters)
   order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules", "options"),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]

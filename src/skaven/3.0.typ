@@ -12,7 +12,7 @@
   army: "Skaven",
   version: "3.0",
   layout: "army",
-  cover: "covers/skaven/3.0.png",
+  cover: "covers/skaven.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Skaven",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/skaven/3.0.png",
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((
@@ -45,64 +45,64 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.
-
-#namecost("CLAN ENMITY", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.])[
+#upgrade("CLAN ENMITY", none)[
 Units belonging to each of the Greater Clans (Pestilens, Eshin, Moulder, Skryre) may only be joined by characters from the same Clan. Characters from one of these Clans may not join a unit containing models from another Clan.
+]
 
-#namecost("GAS MASK", "")
-
+#upgrade("GAS MASK", none)[
 When a model with a gas mask is forced to take a Toughness test caused by any weapon or Magic Item in this army book, they get a +2 bonus for the test.
+]
 
-#namecost("LIFE IS CHEAP", "")
-
+#upgrade("LIFE IS CHEAP", none)[
 All Skaven models can voluntarily target missile attacks at enemy units engaged in close combat with other friendly units even if they are further than 4" away. However, if they do so, they will hit their own troops on To Hit rolls of both 1's and 2's rather than just 1's. In addition, the normal limitation of templates not being allowed to be placed over friendly troops does not apply.
+]
 
-#namecost("PLAGUE CENSER", "")
-
+#upgrade("PLAGUE CENSER", none)[
 Flail. At the start of each round of close combat, all enemy models in base contact with one or more models bearing a plague censer, as well the Censer Bearers themselves that are allowed to fight this round, must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.
+]
 
-#namecost("RAT HOUND BODYGUARD", "")
-
+#upgrade("RAT HOUND BODYGUARD", none)[
 A model with a Rat Hound upgrade can make an additional Weapon Skill 3, Strength 3, Initiative 3 Attack. However, on a To Hit roll of 1 from this attack, the Rat Hound will instead inflict an automatic hit on its owner.
+]
 
-#namecost("RATLING PISTOL", "")
+#upgrade("RATLING PISTOL", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Magical Attacks, Multiple Shots (3) Quick Shot, Rapid Fire, Unstable Ammunition"))
-#namecost("SCURRY AWAY", "")
+]
 
+#upgrade("SCURRY AWAY", none)[
 All models in the Skaven army roll an additional D6 and discard the lowest result when determining their flee distance.
+]
 
-#namecost("STRENGTH IN NUMBERS", "")
-
+#upgrade("STRENGTH IN NUMBERS", none)[
 Units with this special rule add +1 to its Leadership if it has Unit Strength 10 or more, +2 Leadership if it has Unit Strength 15 or more, and +3 Leadership if it has Unit Strength 20 or more. To calculate the Leadership of a unit with the Strength in Numbers rule, first determine the unit's Leadership as normal and then add the Leadership bonus of the unit to this value, up to a maximum Leadership of 10.
 
 Note that the Army General confers their basic Leadership and then units modify it with their own Unit Strength. Any bonus from the Unit Strength of the Army General's unit is not passed on to units within their Inspiring Presence range.
+]
 
-#namecost("TAIL WEAPON", "")
-
+#upgrade("TAIL WEAPON", none)[
 The model gains +1 Attack. Note that this attack does not gain any of the rules of other weapons the model might carry.
+]
 
-#namecost("UNSTABLE AMMUNITION", "")
-
+#upgrade("UNSTABLE AMMUNITION", none)[
 Anytime a weapon that uses Unstable Ammunition scores a result of 1 on its roll To Hit, roll another dice. On a following roll of 1\-2 the gun misfires and the shooter suffer the hit themselves.
+]
 
-#namecost("VERMINOUS VALOUR", "")
-
+#upgrade("VERMINOUS VALOUR", none)[
 If a Skaven player refuses a challenge, the unit may still use the model’s Leadership value, Inspiring Presence or Hold Your Ground special rules.
+]
 
-#namecost("SMOKE BOMBS", "")
-
+#upgrade("SMOKE BOMBS", none)[
 A unit with Smoke Bombs may use them at the end of any Close Combat phase in which they take part. If they do so, the unit may disengage from combat by making a flee move. If they do so, the enemy cannot pursue them and they will rally automatically in their next turn.
+]
 
-#namecost("WARPLOCK PISTOL", "")
+#upgrade("WARPLOCK PISTOL", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("6/12\"", "5", "Armour Piercing (1), Magical Attacks, Quick Shot, Unstable Ammunition"))
-#namecost("WHIP", "")
+]
 
+#upgrade("WHIP", none)[
 A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.
+]
 ]
 
 #lore("THE LORE OF RUIN")[
@@ -197,7 +197,7 @@ previous target to be affected by Plague.")))
 ]
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2, first: true)[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("FELLBLADE", 85, only: "Clawlord")[This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful Magical Ward saves taken against Wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound which Ignores Armour Saves.]
 
 #magic-weapon("ELECTRO-WHIP", 40, only: "Clan Moulder", common: true)[Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.]
@@ -281,7 +281,7 @@ previous target to be affected by Plague.")))
 #arcane-item("WARPSTONE TOKEN", 10, type: "Charm", one-use: true, common: true)[Multiples of this item may be taken by a single model. The model can choose to use one or more tokens whenever they cast a spell. For each token consumed, they add add an additional power dice to their casting attempt. This allows them to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("BRASS ORB", 40, only: "Clan Skryre", one-use: true)[The bearer can throw the Brass Orb in the Shooting phase. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". Models touched by the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules.]
 
 #enchanted-item("BILIOUS BELL", 30, only: "Clan Pestilens", one-use: true)[This item can be used at the start of any of your turns. When used, all enemy units within 18" of the bearer of this item suffer a Strength 3 Hit, enemy units within 12" suffer D3 Strength 4 Hits and enemy units within 6" suffer D6 Strength 5 Hits.]
@@ -462,7 +462,6 @@ They may use a combination of spells from both Lores. In addition, they can also
 )
 
 #unit("VERMINLORD",
-  breakable: true,
   profiles: (
     (name: "Verminlord", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 450),
   ),
@@ -1241,7 +1240,6 @@ Attacks special rule."), ("6", "Power Failure: The Doom-flayer may not attack or
 )
 
 #unit("STORMFIEND",
-  breakable: true,
   profiles: (
     (name: "Stormfiend", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: 70),
   ),
@@ -1935,13 +1933,10 @@ cables out."), ("6", "Full Power: Ikit may immediately add D3 power dice to the 
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]

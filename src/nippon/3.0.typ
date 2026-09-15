@@ -12,7 +12,7 @@
   army: "Nippon",
   version: "3.0",
   layout: "army",
-  cover: "covers/nippon/3.0.png",
+  cover: "covers/nippon.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Nippon",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/nippon/3.0.png",
+  art: "/assets/covers/nippon.png",
 )
 
 #colophon((
@@ -45,82 +45,63 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Nipponese army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Nipponese units, and these are detailed here.
-
-#namecost("DEATH BEFORE DISHONOUR", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Nipponese army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Nipponese units, and these are detailed here.])[
+#upgrade("DEATH BEFORE DISHONOUR", none)[
 Whenever a unit comprised wholly of models with this special rule is required to take a Break Test, they may choose to do so using the Cold-blooded special rule. However, if this test is failed, you must remove the entire unit as a casualty. The enemy then cannot pursue or overrun, but may reform as normal.
+]
 
-#namecost("WAY OF THE WARRIOR", "")
-
+#upgrade("WAY OF THE WARRIOR", none)[
 Models with this rule must always accept challenges. In addition, they ignore Panic caused by friendly units with the Loner special rule and with a lower unmodified Leadership value (excluding any characters) than them.
+]
 
-#namecost("CALTROPS", "")
-
+#upgrade("CALTROPS", none)[
 Caltrops may be used as a Stand and Shoot reaction in addition to any other missile weapons the model might have. All models in the enemy unit charging them has to take a Dangerous Terrain test as soon as it comes within 4" of the Ninja unit.
+]
 
-#namecost("GRAPPLING HOOKS", "")
-
+#upgrade("GRAPPLING HOOKS", none)[
 Models equipped with grappling hooks can move over impassable terrain like walls, rocks and buildings, but not water and the like. Note that they still may not end their move within impassable terrain.
+]
 
-#namecost("HORO CLOAK", "")
-
+#upgrade("HORO CLOAK", none)[
 Horo Cloaks have the following armour profile:
 
 #minitable(("Combat", "Missile", "Special Rules"), ("-", "+1/6+", "-"))
-#namecost("KATANA", "")
+]
 
+#upgrade("KATANA", none)[
 Katanas have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "Parry (6+), Requires Two Hands"))
 
 #note[_A katana gives the wielder +1 To Wound._]
+]
 
-#namecost("MANTLETS", "")
-
+#upgrade("MANTLETS", none)[
 Units with mantlets must place them on separate bases in front of the unit. Every model in the front rank must have a mantlet base in front of it, which must also be set up within the army's deployment zone. A unit with mantlets gains a 4+ armour save against missile attacks to its front arc (except template attacks). However, if the unit moves or reforms during the game, the mantlets are removed from play.
+]
 
-#namecost("SMOKE BOMBS", "")
-
+#upgrade("SMOKE BOMBS", none)[
 A unit with Smoke Bombs may use them at the end of any Close Combat phase in which they take part. If they do so, the unit may disengage from combat by making a flee move. If they do so, the enemy cannot pursue them and they will rally automatically in their next turn.
+]
+]
 
-= CLAN MON
+#upgrade-chapter("CLAN MON", intro: [*Characters and units that can take a Clan Mon are detailed in the army list. The cost below only applies to characters. You are not required to take Clan Mon on all units that can do so. You may not have multiple different Clan Mons in the same army.*])[
+#upgrade("MON OF THE HATTIGA CLAN", 20)[Each Shinobi adds +1 to deciding which table side to deploy on and whether or not to deploy Scouts first or second. In addition, Ninja, Kabuki Dolls and Shinobi gain +1 Attack in the first round of combat.]
 
-*Characters and units that can take a Clan Mon are detailed in the army list. The cost below only applies to characters. You are not required to take Clan Mon on all units that can do so. You may not have multiple different Clan Mons in the same army.*
+#upgrade("MON OF THE DAWATE CLAN", 15, only: "Models with great weapons")[Models with this Mon do not suffer any penalties to their Initiative if armed with great weapons.]
 
-#namecost("MON OF THE HATTIGA CLAN", "20 points")
+#upgrade("MON OF THE UESIGO CLAN", 15)[Warrior Monks with this Clan Mon gain the Stubborn special rule. Yamabushi may re-roll failed Leadership tests when using Prayers of the Kami.]
 
-Each Shinobi adds +1 to deciding which table side to deploy on and whether or not to deploy Scouts first or second. In addition, Ninja, Kabuki Dolls and Shinobi gain +1 Attack in the first round of combat.
+#upgrade("MON OF THE SHISUMA CLAN", 10, only: "Infantry")[Models with this Mon using katanas gain the Parry (6+) special rule.]
 
-#namecost("MON OF THE DAWATE CLAN", "15 points")
+#upgrade("MON OF THE TAKAI CLAN", 10, only: "Cavalry")[Models with this Mon may re-roll one dice when determining their charge distance, and re- roll 1's when rolling To Wound on the charge.]
 
-Models with great weapons only. Models with this Mon do not suffer any penalties to their Initiative if armed with great weapons.
+#upgrade("MON OF THE CHOTOSA CLAN", 5, only: "Models with longbows")[Models with this Mon may re-roll 1's when rolling to Hit with longbows.]
 
-#namecost("MON OF THE UESIGO CLAN", "15 points")
+#upgrade("MON OF THE HOJIZU CLAN", none, only: "War Machines")[War Machines with this Clan Mon may re-roll one failed To Hit roll or one Artillery Dice once per battle.]
 
-Warrior Monks with this Clan Mon gain the Stubborn special rule. Yamabushi may re-roll failed Leadership tests when using Prayers of the Kami.
-
-#namecost("MON OF THE SHISUMA CLAN", "10 points")
-
-Infantry only. Models with this Mon using katanas gain the Parry (6+) special rule.
-
-#namecost("MON OF THE TAKAI CLAN", "10 points")
-
-Cavalry only. Models with this Mon may re-roll one dice when determining their charge distance, and re- roll 1's when rolling To Wound on the charge.
-
-#namecost("MON OF THE CHOTOSA CLAN", "5 points")
-
-Models with longbows only. Models with this Mon may re-roll 1's when rolling to Hit with longbows.
-
-#namecost("MON OF THE HOJIZU CLAN", "")
-
-War Machines only. War Machines with this Clan Mon may re-roll one failed To Hit roll or one Artillery Dice once per battle.
-
-#namecost("MON OF THE ODARI CLAN", "")
-
-Ashigaru only. Models with this Mon gain +1 to their Leadership.
+#upgrade("MON OF THE ODARI CLAN", none, only: "Ashigaru")[Models with this Mon gain +1 to their Leadership.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Nipponese. These may be used in addition to the magic items found in the Warhammer rulebook. Any magic weapon that counts as a hand weapon follow the rules for katanas.])
 
@@ -1319,19 +1300,14 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

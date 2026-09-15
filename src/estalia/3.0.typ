@@ -12,7 +12,7 @@
   army: "Estalia",
   version: "3.0",
   layout: "army",
-  cover: "covers/estalia/3.0.png",
+  cover: "covers/estalia.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Estalia",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/estalia/3.0.png",
+  art: "/assets/covers/estalia.png",
 )
 
 #colophon((
@@ -45,22 +45,18 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in an Estalian army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Estalian units, and these are detailed here.
-
-#namecost("COUNTERMARCH FIRE", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Estalian army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Estalian units, and these are detailed here.])[
+#upgrade("COUNTERMARCH FIRE", none)[
 Models with this rule in the front rank of a unit ignore the Ponderous special rule (or treat Move and Fire as Ponderous instead) if they have another friendly model with the same special rule in base contact behind them.
+]
 
-#namecost("TACTICAL SUPREMACY", "")
-
+#upgrade("TACTICAL SUPREMACY", none)[
 All models with this rule have the Disciplined special rule.
 
 If the unit is charged during the Movement phase and chooses Hold as a charge reaction, it can attempt to change formation immediately before your opponent has moved any of their charging units, as long as it is not already engaged in close combat. To do so, the unit must take pass Leadership test – if successful, the unit can immediately make a swift reform as described in the Warhammer Rulebook.
+]
 
-#namecost("TERCIO FORMATION", "")
-
+#upgrade("TERCIO FORMATION", none)[
 A Tercio Formation consists of a mix of models armed with pikes/polearms, handguns/crossbows and bucklers. All models are treated as having the same equipment, though you should attempt to model the unit with appropriate equipment as much as possible.
 
 All models in the front rank, both flanks and rear may fire in the Shooting phase, even if they have moved this turn. This means that models in the front arc can fire forward, models in the left flank fire to the left, models in the right flank fire to right and models in the rear rank fire to the rear. Each arc may choose to fire at different targets if they wish.
@@ -72,10 +68,12 @@ All models in the unit's front rank fight using hand weapons and bucklers. The r
 #diagram("/assets/figures/estalia/3.0/img-0130.png", 0.385)
 
 If the unit has not moved in the last turn it counts as having no flanks or rear for the purpose of Disruption and combat resolution. However, for every flank or rear arc they are engaged in, they suffer \-1 to their rank bonus.
+]
 
-#namecost("Support Fire", "")
-
+#upgrade("Support Fire", none)[
 Units of Crossbowmen, Arquebusiers and Musketeers within 3" of a unit of Tercios may lend them support fire if the Tercio is charged by passing a Leadership test (which may be re-rolled with a Leader). This works out like a normal Stand and Shoot reaction, except that they do not suffer \-1 To Hit for shooting at a charging enemy. In addition; if they choose to Flee as a charge reaction this does not cause Panic to friendly units.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Estalians. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -1057,19 +1055,14 @@ Priest of Myrmidia)*, Magical Attacks, Magic Resistance (1), Tactical Supremacy*
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

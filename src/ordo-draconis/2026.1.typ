@@ -378,65 +378,60 @@ Both chapters are reproduced from *Vampire Counts* 3.0, less the parts of them a
 
 Where a gate still does work it is still printed. A Wight Lord is not a Blood Dragon and a Necromancer is neither, so an item that names one of the three goes on naming it. What is printed is what can be taken.
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in a Vampire Counts army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Vampire Counts units, and these are detailed here.
-
-#namecost("BLOODLINES", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Vampire Counts army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Vampire Counts units, and these are detailed here.])[
+#upgrade("BLOODLINES", none)[
 Most Vampires belong to a certain Bloodline, such as von Carstein, Necrach, Lahmian, Blood Dragon or Strigoi. Characters belonging to one Bloodline may not join units belonging to another Bloodline, nor may two characters from different Bloodlines join the same unit.
+]
 
-#namecost("THE GENERALS OF UNDEATH", "")
-
+#upgrade("THE GENERALS OF UNDEATH", none)[
 If your army contains any Undead units, you must include at least one character that is a Wizard that uses the Lore of Necromancy.
+]
 
-#namecost("Slain General", "")
-
+#upgrade("Slain General", none)[
 At the end of the phase in which the General is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units (excluding mounts) on the battlefield must take a Leadership test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the Leadership test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack.
 
 If, at the start of any of your turns following the death of the General, there is one or more friendly Wizard Characters on the table who know spells from the Lore of Necromancy, no unit in the army needs to take this Leadership test while at least one of them remain.
+]
 
-#namecost("Battle Standards", "")
-
+#upgrade("Battle Standards", none)[
 In addition to the normal rules for the army battle standard, units of Undead within 12" of their battle standard suffer D3 Wounds less than they normally would due to the Unstable special rule, or following the death of the army's General.
+]
 
-#namecost("Characters and Units", "")
-
+#upgrade("Characters and Units", none)[
 Characters who are not Undead may join Undead units despite not being Unstable themselves. Mounted Characters ignore the Undead special rule of the mount. If an Undead unit would get destroyed as a result of Unstable, any remaining character(s) will need to take a Break test as normal the same phase, using the Leadership modifier that they lost the combat by.
+]
 
-#namecost("DEATH SHRIEK", "")
-
+#upgrade("DEATH SHRIEK", none)[
 A Death Shriek is a special attack that can be used against a single unit in the Shooting phase, even if the model has marched, charged, or the target is engaged in close combat. This attack has a range of 8" and needs line of sight to its target. If the model is engaged in combat, its Death Shriek may target a unit in base contact.
 
 To resolve a Death Shriek, roll 2D6+3. For each point by which the result exceeds the target unit's Leadership, the target unit suffers 1 Wound which Ignores Armour Saves. Death Shriek is a non-physical Magical Attack and Wounds suffered from it are distributed as if from shooting.
+]
 
-#namecost("MASTER OF THE DEAD", "")
-
+#upgrade("MASTER OF THE DEAD", none)[
 A model with this special rule can use the _Invocation of Nehek_ spell from the Lore of Necromancy to increase units of Skeleton Warriors and Skeleton Archers beyond their starting size.
+]
 
-#namecost("SPECTRAL STEEDS", "")
-
+#upgrade("SPECTRAL STEEDS", none)[
 Mounted models with this special rule gain the Ethereal special rule for the purposes of movement only. They do not suffer the movement penalty for being barded. Whilst a unit with this special rule is joined by a character without the Spectral Steeds or Ethereal special rules, it loses this special rule.
+]
 
-#namecost("UNDEAD", "")
-
+#upgrade("UNDEAD", none)[
 All models with the Undead special rule have the Animated Construct, Fear, and Unstable special rules. However, they may make march moves if they are within the Army General's Inspiring Presence range or are joined by a character with the Lore of Necromancy.
+]
 
-#namecost("VAMPIRIC", "")
-
+#upgrade("VAMPIRIC", none)[
 Models with the Vampiric special rule have the Fear and Immunity (Psychology) special rules. In addition, models suffer \-1 To Wound rolls against them, unless they are using Magical Attacks or Flaming Attacks. However, Vampiric models treat all rivers as Deadly Terrain unless they are mounted.
+]
 
-#namecost("THE RED THIRST", "")
-
+#upgrade("THE RED THIRST", none)[
 Models with this special rule have a Thirst value, tracked separately for each unit and for each character. It begins the battle at 0, and can never fall below 0 or rise above 3.
 
 At the end of each Close Combat phase, a unit's Thirst value increases by 1 if one or more enemy models were slain by models with this special rule during that phase, and decreases by 1 if none were. While the value is 1 or more, those models have the Regeneration special rule: Regeneration (6+) at 1, Regeneration (5+) at 2 and Regeneration (4+) at 3. This is not cumulative with any other source of Regeneration.
 
 Models slain that are Animated Constructs, Daemons, Forest Spirits or Vampires do not count for this.
+]
 
-#namecost("THE OATH OF THE KEEP", "")
-
+#upgrade("THE OATH OF THE KEEP", none)[
 The lord holds his lands by his own hand and answers for them in person. Every vampire in the order swore it, and every vampire this list permits carries *Martial Honour* already, that being the Blood Dragon rule: they must always issue and accept challenges when possible. The oath adds nothing to it and never had to.
 
 - A Vampire character who slays an enemy character in a challenge immediately recovers a Wound, up to its starting value.
@@ -444,9 +439,9 @@ The lord holds his lands by his own hand and answers for them in person. Every v
 - Models slain while Fleeing or during a Pursuit do not increase a unit's Thirst value. Blood taken from the routed does not count.
 
 #note[_The clause about Flee is narrower than it reads, and it is worth knowing which half of the army it lands on. Unbreakable models may never choose Flee as a Charge Reaction in any case, and every Undead unit in this list is Unstable and therefore Unbreakable. So the oath binds the vampires, the bats and the living mounts and nothing else, which is to say it binds exactly those who swore it, and asks nothing of the dead that the dead were not already doing._]
+]
 
-#namecost("DREAD, NOT SLAUGHTER", "")
-
+#upgrade("DREAD, NOT SLAUGHTER", none)[
 The point of a vampire is not how many he kills.
 
 - No unit in the army may pursue a fleeing enemy. A unit that wins a close combat restrains without taking the Leadership test to do so, and may reform as though it had passed it. This overrides any rule that would compel a pursuit, Frenzy included. Overrunning is untouched: an enemy that has been wiped out has not fled.
@@ -457,7 +452,7 @@ The point of a vampire is not how many he kills.
 
 _Nothing in this list can buy the Aura of Dark Majesty, that power being von Carstein's, so the stacking to watch is with the Hell Banner. It does much the same work at 40 points, on Line of Sight rather than in base contact, and the two together put an enemy at \-3 for as long as it stands in front of a Vampire character. The banner has no effect on models with Immunity (Psychology) and this rule has no such exemption, which is where the two part company. The book is inconsistent about it; a Leadership penalty reaches Break tests, which are not Psychology tests, so the reading without the exemption is the one that makes sense. Spiritual Vortex is a third \-1, within 6" of its template, for a Level 4 caster who has something better to do._]
 ]
-
+]
 #lore("THE LORE OF NECROMANCY")[
 
 #spell("THE CURSE OF UNDEATH", "Lore Attribute")[When a spell from the Lore of Necromancy is successfully cast, all Undead units (excluding mounts) within 6" of the caster regain 1 Wound (Core Units regain D3 Wounds) following the rules for _Invocation of Nehek._]
@@ -488,94 +483,62 @@ _Nothing in this list can buy the Aura of Dark Majesty, that power being von Car
 
 #spell("WIND OF UNDEATH", 4, cast: "13+")[_Wind of Undeath_ is a *direct damage aura* spell with a range of 12". Each unit within range suffer 2D6 Strength 3 Hits which Ignores Armour Saves.]
 ]
-= VAMPIRIC POWERS
+#upgrade-chapter("VAMPIRIC POWERS", intro: [*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*])[
+#upgrade("RED FURY", 30)[For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.]
 
-*In this section you will find powers that can be bought for your Vampires. You cannot buy multiples of the same power for a single Vampire, but different Vampires in the same army can have the same powers if you wish.*
+#upgrade("FEAR INCARNATE", 20)[All enemy units in base contact with the model must pass a Leadership test at the start of each round of close combat or suffer \-1 To Hit this round.]
 
-#namecost("RED FURY", "30 points")
+#upgrade("FLYING HORROR", 20, only: "Model on foot")[Thе model gains the Fly (10) special rule and may join units of Fell Bats.]
 
-For each unsaved Wound caused by the model in close combat, it can immediately make an additional Attack (to a maximum of +3 Attacks). These additional Attacks do not benefit from Red Fury.
+#upgrade("DOOMRIDER", 20, only: "Cavalry")[The model and any Cavalry unit it is with can re-roll failed charge distances.]
 
-#namecost("FEAR INCARNATE", "20 points")
+#upgrade("DREAD KNIGHT", 20)[While fighting in a challenge, the model will gain +1 To Hit and To Wound.]
 
-All enemy units in base contact with the model must pass a Leadership test at the start of each round of close combat or suffer \-1 To Hit this round.
+#upgrade("WARRIOR PRIDE", 20, only: "Infantry or Cavalry")[The model can re-roll failed armour save results of 1.]
 
-#namecost("FLYING HORROR", "20 points")
+#upgrade("HEART PIERCING", 15)[The model can re-roll To Wound rolls of 1 in close combat.]
 
-Model on foot only. Thе model gains the Fly (10) special rule and may join units of Fell Bats.
+#upgrade("MASTER STRIKE", 15)[The model has the Killing Blow special rule.]
 
-#namecost("DOOMRIDER", "20 points")
+#upgrade("MIGHT OF ARMS", 15)[The model can re-roll To Hit rolls of 1 in close combat.]
 
-Cavalry only. The model and any Cavalry unit it is with can re-roll failed charge distances.
+#upgrade("STRENGTH OF STEEL", 10)[The model has the Devastating Charge and Mighty Blow (1) special rules.]
 
-#namecost("DREAD KNIGHT", "20 points")
+#upgrade("BLADEMASTER", 10)[The model gains the Parry (6+) special rule, even while mounted.]
 
-While fighting in a challenge, the model will gain +1 To Hit and To Wound.
+#upgrade("FURIOUS CHARGE", 10)[In any turn in which the model makes a successful charge, they have the Ignores Armour saves special rule.]
 
-#namecost("WARRIOR PRIDE", "20 points")
+#upgrade("HONOUR OR DEATH", 5)[After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.]
 
-Infantry or Cavalry only. The model can re-roll failed armour save results of 1.
+#group("THE ORDO'S POWERS")
 
-#namecost("HEART PIERCING", "15 points")
-
-The model can re-roll To Wound rolls of 1 in close combat.
-
-#namecost("MASTER STRIKE", "15 points")
-
-The model has the Killing Blow special rule.
-
-#namecost("MIGHT OF ARMS", "15 points")
-
-The model can re-roll To Hit rolls of 1 in close combat.
-
-#namecost("STRENGTH OF STEEL", "10 points")
-
-The model has the Devastating Charge and Mighty Blow (1) special rules.
-
-#namecost("BLADEMASTER", "10 points")
-
-The model gains the Parry (6+) special rule, even while mounted.
-
-#namecost("FURIOUS CHARGE", "10 points")
-
-In any turn in which the model makes a successful charge, they have the Ignores Armour saves special rule.
-
-#namecost("HONOUR OR DEATH", "5 points")
-
-After issuing or accepting a challenge with a model with this power, the enemy character must take a Leadership test. If failed, the enemy model will automatically refuse the challenge following the normal rules.
-
-#entry("THE ORDO'S POWERS")
 Five Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
 
-#namecost("KEPT GROUND", "25 points")
-
-_A lord who cannot garrison a dozen places learned long ago to be the garrison._
+#upgrade("KEPT GROUND", 25)[_A lord who cannot garrison a dozen places learned long ago to be the garrison._
 
 The model has the Hold Your Ground (6) special rule.
+]
 
-#namecost("ON THE TALLY", "20 points")
-
-_A knight fights differently when his deeds are being entered, and stops the day the hand stops._
+#upgrade("ON THE TALLY", 20)[_A knight fights differently when his deeds are being entered, and stops the day the hand stops._
 
 May not be the army's General. For as long as the army's General is alive, the model adds +1 to the combat resolution of any close combat they are part of.
+]
 
-#namecost("THE LONG WALK", "15 points")
-
-_He has stood on the far side of a volley once, and has been crossing that field ever since._
+#upgrade("THE LONG WALK", 15)[_He has stood on the far side of a volley once, and has been crossing that field ever since._
 
 The model has the Hatred special rule against any enemy unit containing one or more models armed with a missile weapon.
+]
 
-#namecost("DRINK DEEP", "15 points")
-
-_The tithe is taken by measure. The field is the one place the measure is waived._
+#upgrade("DRINK DEEP", 15)[_The tithe is taken by measure. The field is the one place the measure is waived._
 
 Roll a D6 at the end of each Close Combat phase in which one or more models was slain by the model. On a 5+, the model recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
+]
 
-#namecost("OLD ENOUGH", "10 points")
-
-_The blood finished with him long ago; a lucky stroke finds nothing left to end._
+#upgrade("OLD ENOUGH", 10)[_The blood finished with him long ago; a lucky stroke finds nothing left to end._
 
 The model gains the Immunity (Killing Blow, Multiple Wounds) special rule.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Vampire Counts. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -629,7 +592,7 @@ The model gains the Immunity (Killing Blow, Multiple Wounds) special rule.
 #talisman("WRISTBANDS OF BLACK GOLD", 25)[The Wristbands of Black Gold gives the wearer a Magical Ward (3+) against all missile attacks.]
 ]
 
-#magic-item-section("arcane", columns: 2)[
+#magic-item-section("arcane")[
 #arcane-item("THE DERMAL ROBE", 70, type: "Relic")[The wearer gains a +1 casting and dispel bonus. In addition, they gain +1 to their channelling rolls.]
 
 #arcane-item("SCEPTRE DE NOIROT", 40, type: "Staff")[The bearer of this item may re-roll one dice of their choice when determining the number of Zombies or Skeletons raised with the _Invocation of Nehek_ and _Raise Dead_ spells from the Lore of Necromancy.]
@@ -657,7 +620,7 @@ Shadow)"), ("2", "The Enfeebling Foe (Lore of Shadow)"), ("3", "The Withering (L
 #arcane-item("STAVE OF SUFFERING", 15, type: "Staff")[The bearer of this item gains a +1 casting bonus for each spell that has successfully inflicted one or more unsaved Wounds the same Magic Phase. This bonus is cumulative.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("MIDNIGHT AMULET", 40, one-use: true)[This item can be used in any of your Magic phases. Pick one enemy unit within 12"; that unit suffers D6 Strength 4 Hits multiplied by the number of the current game turn.]
 
 #enchanted-item("THE CASKET OF AGES", 35, bound: (level: 1, cast: "6+"))[The Casket of Ages contains a *direct damage* spell that targets one enemy model in base contact. The target model suffers one Wound which Ignores Armour Saves. If the Wound is not saved, the victim must pass a Toughness test or suffer an additional Wound with no saves allowed.]
@@ -1791,10 +1754,9 @@ The dead are still there, still cost two and a half points, and no longer excuse
 
 = CREDITS
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
+#group("Written & Edited by:")
+
+#namecost("Mathias Eliasson", "")
 #namecost("Based on Warhammer Fantasy by Games-Workshop", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
 
@@ -1803,5 +1765,3 @@ The dead are still there, still cost two and a half points, and no longer excuse
 #namecost("The Ordo Draconis", "")
 
 An Army of Infamy written for our own table, on top of Mathias Eliasson's *Vampire Counts* 3.0. Unofficial, non-commercial, and carrying no endorsement from him.
-  ],
-)

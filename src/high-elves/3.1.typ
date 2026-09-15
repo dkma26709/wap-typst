@@ -12,7 +12,7 @@
   army: "High Elves",
   version: "3.1",
   layout: "army",
-  cover: "covers/high-elves/3.1.png",
+  cover: "covers/high-elves.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "High Elves",
   subtitle: "Warhammer Armies Project · 3.1",
-  art: "/assets/covers/high-elves/3.1.png",
+  art: "/assets/covers/high-elves.png",
 )
 
 #colophon((
@@ -45,58 +45,61 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a High Elf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several High Elf units, and these are detailed here.
-
-#namecost("ELVEN GRACE", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a High Elf army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the Warhammer rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules' that apply to several High Elf units, and these are detailed here.])[
+#upgrade("ELVEN GRACE", none)[
 Models with this special rule have the Dodge (6+) special rule in close combat. However, this cannot be used against enemies that attack before the model with Elven Grace.
+]
 
-#namecost("FIERY BREATH", "")
-
+#upgrade("FIERY BREATH", none)[
 A model with this special rule has a Strength 4 Breath Weapon with the Flaming Attacks special rule.
+]
 
-#namecost("LILEATH'S BLESSING", "")
-
+#upgrade("LILEATH'S BLESSING", none)[
 A Wizard with this special rule gains a +1 dispel bonus.
+]
 
-#namecost("MARTIAL PROWESS", "")
-
+#upgrade("MARTIAL PROWESS", none)[
 Models with this special rule may re-roll all To Hit rolls of 1 when making close combat attacks.
+]
 
-#namecost("SWORDMASTER", "")
-
+#upgrade("SWORDMASTER", none)[
 Models with this special rule ignore Initiative penalties from great weapons and gain the Dodge (6+) special rule against non-magical missile attacks with Strength 3 or below (except templates).
+]
 
-#namecost("VALOUR OF AGES", "")
-
+#upgrade("VALOUR OF AGES", none)[
 Models with this special rule re-roll all failed Panic tests caused by Dark Elves.
+]
 
-#namecost("BOW OF AVELORN", "")
+#upgrade("BOW OF AVELORN", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "4", "Armour Piercing (1), Flaming Attacks, Magical Attacks, Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+]
 
-#namecost("ELVEN SHORTBOW", "")
+#upgrade("ELVEN SHORTBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("16/24\"", "3", "Armour Piercing (1), March & Shoot, Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not marched. Cannot be used as a charge reaction._
+]
 
-#namecost("ELVEN LONGBOW", "")
+#upgrade("ELVEN LONGBOW", none)[
 #minitable(("Range", "Strength", "Special Rules"), ("24/36\"", "3", "Armour Piercing (1), Multiple Shots (2)*, Volley Fire"))
 
 \*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+]
 
-#namecost("DRAGON ARMOUR", "")
-
+#upgrade("DRAGON ARMOUR", none)[
 Heavy armour. Models with dragon armour gain a Magical Ward (6+) and the Immunity (Flaming Attacks) special rule.
+]
 
-#namecost("ITHILMAR BARDING", "")
+#upgrade("ITHILMAR BARDING", none)[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))
-#namecost("LION CLOAK", "")
+]
 
+#upgrade("LION CLOAK", none)[
 The bearer gains the Natural Armour (6+) special rule against missile attacks.
+]
+]
 
 #lore("THE LORE OF HIGH MAGIC")[
 
@@ -128,53 +131,29 @@ The bearer gains the Natural Armour (6+) special rule against missile attacks.
 
 #spell("FLAMES OF THE PHOENIX", 4, cast: "15+")[Remains in play. _Flames of the Phoenix_ is a *direct damage* spell with a range of 24". Every model in the target unit takes a Strength 3 hit with the Flaming Attacks special rule. At the end of every subsequent Magic phase, every model in the target unit suffers another hit with the Flaming Attacks special rule, with the Strength of each Hit increasing by 1 every time.]
 ]
-= ELVEN HONOURS
+#upgrade-chapter("ELVEN HONOURS", intro: [*Characters may be given one Elven Honour as detailed in the army list. Each Honour can be taken by more than one model in the army.*])[
+#upgrade("ANOINTED OF ASURYAN", 50, only: "Model on foot")[The model gains a 4+ invulnerable save and the Immunity (Psychology) special rule. The model must take a polearm and may be mounted on a Flamespyre Phoenix (see Rare Units) for +200 points. In addition, all models in a unit that contains an Anointed of Asuryan may re-roll invulnerable save results of 1.]
 
-*Characters may be given one Elven Honour as detailed in the army list. Each Honour can be taken by more than one model in the army.*
+#upgrade("BLOOD OF CALEDOR", 35)[The model gains dragon armour and the Devastating Charge special rule. The model must be mounted on an Elven Steed with ithilmar barding or a Moon Dragon. Alternatively, if the model is a Prince, they may be mounted on a Star Dragon for +390 points. If the model is a Noble, they may be mounted on a Sun Dragon for +235 points.]
 
-#namecost("ANOINTED OF ASURYAN", "50 points")
+#upgrade("CHRACIAN HUNTER", 20, only: "Model on foot")[The model gains a lion cloak, the Forest Strider, Multiple Wounds (2) and Stubborn special rules. The model must take a great weapon and may be mounted on a White Lion Chariot (see Special Units), replacing one of the crew, for +95 points.]
 
-Model on foot only. The model gains a 4+ invulnerable save and the Immunity (Psychology) special rule. The model must take a polearm and may be mounted on a Flamespyre Phoenix (see Rare Units) for +200 points. In addition, all models in a unit that contains an Anointed of Asuryan may re-roll invulnerable save results of 1.
+#upgrade("COTHIQUE MARINER", 20, only: "Model on foot")[The model may not take heavy armour. The model and one unit of Rangers that they must deploy with gains the Ambushers special rule.]
 
-#namecost("BLOOD OF CALEDOR", "35 points")
+#upgrade("SHADOW STALKER", 20, only: "Model on foot")[The model must take an Elven shortbow or Elven longbow. They cannot take medium or heavy armour. They gain the Independent, Scouts and Sniper special rules.]
 
-The model gains dragon armour and the Devastating Charge special rule. The model must be mounted on an Elven Steed with ithilmar barding or a Moon Dragon. Alternatively, if the model is a Prince, they may be mounted on a Star Dragon for +390 points. If the model is a Noble, they may be mounted on a Sun Dragon for +235 points.
+#upgrade("BLADELORD", 15, only: "Model on foot")[The model must take a great weapon. The model gains the Killing Blow and Swordmaster special rules.]
 
-#namecost("CHRACIAN HUNTER", "20 points")
+#upgrade("ELLYRIAN OUTRIDER", 15, only: "Model on Elven Steed")[The model may not take heavy armour. The model and any unit of Ellyrian Reavers they join may flee, pursuit and charge distances.]
 
-Model on foot only. The model gains a lion cloak, the Forest Strider, Multiple Wounds (2) and Stubborn special rules. The model must take a great weapon and may be mounted on a White Lion Chariot (see Special Units), replacing one of the crew, for +95 points.
+#upgrade("PURE OF HEART", 15)[The model and any unit they join gain the Immunity (Panic) special rule. When fighting against Dark Elves in close combat, they gain Immunity (Psychology).]
 
-#namecost("COTHIQUE MARINER", "20 points")
+#upgrade("GUARDIAN OF YVRESSE", 10, only: "Model on foot")[The model must take a shield. If this model is in a unit of Sentinels or Wardens, that unit gains the Fight in Extra Ranks (1) special rule.]
 
-Model on foot only. The model may not take heavy armour. The model and one unit of Rangers that they must deploy with gains the Ambushers special rule.
+#upgrade("LOTHERN SEA HELM", 10, only: "Model on foot")[The model may take no other weapons besides spear, light lance and Elven shortbow, and may be mounted on a Lothern Skycutter (see Rare Units), replacing one of the crew, for +65 points. If a unit of Lothern Sea Guard contains one or more Sea Helms, they gain the Quick Shot special rule when making a Stand & Shoot charge reaction. In addition, the unit may then choose to do a Reform before moving the enemy unit.]
 
-#namecost("SHADOW STALKER", "20 points")
-
-Model on foot only. The model must take an Elven shortbow or Elven longbow. They cannot take medium or heavy armour. They gain the Independent, Scouts and Sniper special rules.
-
-#namecost("BLADELORD", "15 points")
-
-Model on foot only. The model must take a great weapon. The model gains the Killing Blow and Swordmaster special rules.
-
-#namecost("ELLYRIAN OUTRIDER", "15 points")
-
-Model on Elven Steed only. The model may not take heavy armour. The model and any unit of Ellyrian Reavers they join may flee, pursuit and charge distances.
-
-#namecost("PURE OF HEART", "15 points")
-
-The model and any unit they join gain the Immunity (Panic) special rule. When fighting against Dark Elves in close combat, they gain Immunity (Psychology).
-
-#namecost("GUARDIAN OF YVRESSE", "10 points")
-
-Model on foot only. The model must take a shield. If this model is in a unit of Sentinels or Wardens, that unit gains the Fight in Extra Ranks (1) special rule.
-
-#namecost("LOTHERN SEA HELM", "10 points")
-
-Model on foot only. The model may take no other weapons besides spear, light lance and Elven shortbow, and may be mounted on a Lothern Skycutter (see Rare Units), replacing one of the crew, for +65 points. If a unit of Lothern Sea Guard contains one or more Sea Helms, they gain the Quick Shot special rule when making a Stand & Shoot charge reaction. In addition, the unit may then choose to do a Reform before moving the enemy unit.
-
-#namecost("TIRANOC CHARIOT MASTER", "5 points")
-
-Model on Tiranoc Chariot only. The model may roll an additional D6 for their Impact Hits and pick the highest result. In addition, they may re-roll failed Dangerous Terrain tests.
+#upgrade("TIRANOC CHARIOT MASTER", 5, only: "Model on Tiranoc Chariot")[The model may roll an additional D6 for their Impact Hits and pick the highest result. In addition, they may re-roll failed Dangerous Terrain tests.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the High Elves. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -287,7 +266,7 @@ Model on Tiranoc Chariot only. The model may roll an additional D6 for their Imp
 #arcane-item("SPELL CROWN OF DUSK", 10, type: "Relic")[The bearer of this item gains access to a randomly generated Lvl 1 spell (which may be replaced by the Signature Spell) from the Lore of High Magic.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("RADIANT GEM OF HOETH", 35)[The bearer of the Radiant Gem of Hoeth becomes a Level 1 Wizard using the Lore of High Magic.]
 
 #enchanted-item("KHAINE'S RING OF FURY", 35, bound: true)[Khaine's Ring of Fury contains the _Fury of Khaine_ spell from the Lore of High Magic.]
@@ -1029,7 +1008,6 @@ Signature Spells from the Winds of Magic.
 )
 
 #unit("FLAMESPYRE PHOENIX",
-  breakable: true,
   profiles: (
     (name: "Flamespyre Phoenix", m: 2, ws: 5, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 4, ld: 8, points: 235),
     (name: "Frostheart Phoenix", m: 2, ws: 6, bs: 0, s: 5, t: 6, w: 5, i: 3, a: 3, ld: 9, points: ""),
@@ -1475,13 +1453,10 @@ Spells from the Winds of Magic.
   ],
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]

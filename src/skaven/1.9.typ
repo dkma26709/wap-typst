@@ -12,6 +12,7 @@
   army: "Skaven",
   version: "1.9",
   layout: "army",
+  cover: "covers/skaven.png",
   align: "destruction",
 )
 
@@ -20,7 +21,7 @@
 #cover(
   title: "Skaven",
   subtitle: "Warhammer Armies Project · 1.9",
-  art: none,
+  art: "/assets/covers/skaven.png",
 )
 
 #colophon((
@@ -44,496 +45,268 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.
-
-#namecost("CLAN ENMITY", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Skaven army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Skaven units, and these are detailed here.])[
+#upgrade("CLAN ENMITY", none)[
 Units belonging to each of the Greater Clans (Pestilens, Eshin, Moulder, Skryre) may only be joined by characters from the same Clan.
+]
 
-#namecost("LIFE IS CHEAP", "")
-
+#upgrade("LIFE IS CHEAP", none)[
 All Skaven models can voluntarily target ranged attacks at enemy units engaged in close combat with other friendly units even if they are further than 4" away. However, if they do so, they will hit their own troops on To Hit rolls of both 1's and 2's rather than just 1's. In addition, the normal limitation of templates not being allowed to be placed over friendly troops does not apply.
+]
 
-#namecost("SCURRY AWAY", "")
-
+#upgrade("SCURRY AWAY", none)[
 All models in the Skaven army roll an additional D6 and discard the lowest result when determining their flee distance.
+]
 
-#namecost("STRENGTH IN NUMBERS", "")
-
+#upgrade("STRENGTH IN NUMBERS", none)[
 Units with this special rule add +1 to its Leadership if it has Unit Strength 10 or more, +2 Leadership if it has Unit Strength 15 or more, and +3 Leadership if it has Unit Strength 20 or more. To calculate the Leadership of a unit with the Strength in Numbers rule, first determine the unit's Leadership as normal and then add the Leadership bonus of the unit to this value, up to a maximum Leadership of 10.
 
 Note that a Skaven General confers his basic Leadership and then units modify it with their own Unit Strength. Any bonus from the Unit Strength of the General's unit is not passed on to units within his Inspiring Presence range.
-
-#namecost("UNSTABLE AMMUNITION", "")
-
-Anytime a weapon that uses Unstable Ammunition scores a result of 1 on its roll To Hit, roll another dice. On a following roll of 1\-2 the gun misfires and the shooter suffers the hit themselves.
-
-#namecost("VERMINOUS VALOUR", "")
-
-If a Skaven player refuses a challenge, a Skaven character is placed in the back rank of the unit and may not attack, but the unit may still use the model’s Leadership value, Inspiring Presence or Hold Your Ground special rules.
-
-= THE LORE OF RUIN
-
-#columns(2)[
-#namecost("MUSK OF FEAR", "")
-#namecost("Lore Attribute", "")
-
-Whenever a spell from the Lore of Ruin is successfully cast, all enemy units within 6" of the caster suffer \-1 to their Leadership (to a minimum of 1) until the start of the caster's next magic phase.
-
-#namecost("WARP LIGHTNING", "")
-#namecost("Signature spell Cast on 5+", "")
-
-_Warp Lightning_ is a *magic missile* with a range of 24" that causes D3 Strength 5 hits with the Lightning Attacks special rule. If the number of hits rolled is a natural 1 (using a D6), then the caster suffers a Strength 5 hit instead of the target.
-
-#namecost("DEATH FRENZY", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Death Frenzy_ is an *augment* spell with a range of 18". The target unit gains the Frenzy special rule for the remainder of the game, though it can be lost as normal. This spell can be cast multiple times on the same target. If the unit already has the Frenzy special rule, it also suffers D3 Wounds with the Ignores Armour save special rule at the end of each Magic phase.
-
-#namecost("WARP POWER", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Warp Power_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Hit and To Wound until the start of the caster's next Magic phase. However, the target unit suffer D3 Wounds with the Ignores Armour save special rule when the spell ends.
-
-#namecost("WARP SHIELD", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Warp Shield_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit ignores a number of Hits from missile attacks equal to the casting result (to a maximum of 10). However, if the unit suffer more Hits than that, the spell ends after resolving the Hits and the unit suffers D6 Strength 3 Hits.
-
-#namecost("HOWLING WARPGALE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Howling Warpgale_ is an *augment* spell that is cast on the wizard itself. Until the start of the caster's next Magic phase, no units within 18" of the caster may use the Fly special rule, and all non-magical missile attacks suffer \-1 To Hit.
-
-#namecost("SPLINTER", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Splinter_ is a *hex* spell that targets all enemy units within 6". All target units must pass a Leadership test or suffer one Wound that Ignores Armour Saves for every point they failed the Leadership test by.
-
-#namecost("PIT OF THE UNDERWORLD", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Pit of the Underworld_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the Pit cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a 4+, the Pit opens. Place the large template over the centre of the marker. All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. After any casualties have been resolved the spell ends.
-
-#namecost("FLENSING RUIN", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Flensing Ruin_ is a *direct damage* spell with a range of 12" that targets a single model (even a character in a unit). The target suffers D3 Strength 6 Hits with the Lightning Attacks special rule.
-
-#namecost("MADNESS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Madness_ is a *hex* spell with a range of 24" that can be cast on an unengaged unit. The target unit will immediately turn on the spot and move 2D6" in a random direction as determined by the scatter dice. They will stop within 1" of any unit or impassable terrain.
-
-#namecost("WARPSTORM", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Warpstorm_ is a special type of spell that targets all units within 12", even if they are engaged in close combat. Roll a D6 for each unit within range. On a 4+, enemy units suffer D6 Strength 5 hits with the Lightning Attacks special rule. Friendly units are only affected on a 6.
-
-#namecost("CRACKS CALL", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Cracks Call_ is *a direct damage* spell. Extend a straight line, 24" in length, directly away from the caster. Each model in the way (determined using the line template) must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.
-
-#namecost("SCORCH", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Scorch_ is a *direct damage* spell. Place the large round template anywhere within 24" – it then scatters D6". All models under the template suffer a Strength 4 hit with the Flaming Attacks special rule. A unit that suffers one or more casualties from Scorch must take a Panic test.
 ]
 
-= THE LORE OF PLAGUE
+#upgrade("UNSTABLE AMMUNITION", none)[
+Anytime a weapon that uses Unstable Ammunition scores a result of 1 on its roll To Hit, roll another dice. On a following roll of 1\-2 the gun misfires and the shooter suffers the hit themselves.
+]
 
-#columns(2)[
-#namecost("PLAGUE RASH", "")
-#namecost("Lore Attribute", "")
+#upgrade("VERMINOUS VALOUR", none)[
+If a Skaven player refuses a challenge, a Skaven character is placed in the back rank of the unit and may not attack, but the unit may still use the model’s Leadership value, Inspiring Presence or Hold Your Ground special rules.
+]
+]
+#lore("THE LORE OF RUIN")[
+#spell("MUSK OF FEAR", "Lore Attribute")[Whenever a spell from the Lore of Ruin is successfully cast, all enemy units within 6" of the caster suffer \-1 to their Leadership (to a minimum of 1) until the start of the caster's next magic phase.]
 
-Whenever a spell from the Lore of Plague is successfully cast, all enemy units within 6" of the caster suffer \-1 to their Weapon Skill and Initiative (to a minimum of 1) until the start of the caster's next magic phase.
+#spell("WARP LIGHTNING", "Signature Spell", cast: "5+")[_Warp Lightning_ is a *magic missile* with a range of 24" that causes D3 Strength 5 hits with the Lightning Attacks special rule. If the number of hits rolled is a natural 1 (using a D6), then the caster suffers a Strength 5 hit instead of the target.]
 
-#namecost("PESTILENT BREATH", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("DEATH FRENZY", 1, cast: "6+")[_Death Frenzy_ is an *augment* spell with a range of 18". The target unit gains the Frenzy special rule for the remainder of the game, though it can be lost as normal. This spell can be cast multiple times on the same target. If the unit already has the Frenzy special rule, it also suffers D3 Wounds with the Ignores Armour save special rule at the end of each Magic phase.]
 
-_Pestilent Breath_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.
+#spell("WARP POWER", 1, cast: "6+")[_Warp Power_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Hit and To Wound until the start of the caster's next Magic phase. However, the target unit suffer D3 Wounds with the Ignores Armour save special rule when the spell ends.]
 
-#namecost("BLESS WITH FILTH", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("WARP SHIELD", 1, cast: "6+")[_Warp Shield_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit ignores a number of Hits from missile attacks equal to the casting result (to a maximum of 10). However, if the unit suffer more Hits than that, the spell ends after resolving the Hits and the unit suffers D6 Strength 3 Hits.]
 
-_Bless with Filth_ is an *augment* spell with a range of 18". The target gets the Poisoned Attacks special rule until the start of the caster's next Magic phase.
+#spell("HOWLING WARPGALE", 2, cast: "7+")[_Howling Warpgale_ is an *augment* spell that is cast on the wizard itself. Until the start of the caster's next Magic phase, no units within 18" of the caster may use the Fly special rule, and all non-magical missile attacks suffer \-1 To Hit.]
 
-#namecost("MANTLE OF CONTAGION", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("SPLINTER", 2, cast: "7+")[_Splinter_ is a *hex* spell that targets all enemy units within 6". All target units must pass a Leadership test or suffer one Wound that Ignores Armour Saves for every point they failed the Leadership test by.]
 
-_Mantle of Contagion_ is an *augment* spell with a range of 18". The target unit and any units in base contact with it suffer 2D6 Strength 3 hits with the Ignores Armour Saves special rule.
+#spell("PIT OF THE UNDERWORLD", 2, cast: "9+")[_Pit of the Underworld_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the Pit cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a 4+, the Pit opens. Place the large template over the centre of the marker. All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. After any casualties have been resolved the spell ends.]
 
-#namecost("VEIL OF FLIES", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("FLENSING RUIN", 3, cast: "10+")[_Flensing Ruin_ is a *direct damage* spell with a range of 12" that targets a single model (even a character in a unit). The target suffers D3 Strength 6 Hits with the Lightning Attacks special rule.]
 
-_Veil of Flies_ is an *augment* spell with a range of 18". All enemy units in base contact with the target unit suffer \-1 To Hit until the start of the caster's next Magic phase.
+#spell("MADNESS", 3, cast: "10+")[_Madness_ is a *hex* spell with a range of 24" that can be cast on an unengaged unit. The target unit will immediately turn on the spot and move 2D6" in a random direction as determined by the scatter dice. They will stop within 1" of any unit or impassable terrain.]
 
-#namecost("VERMINTIDE", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("WARPSTORM", 3, cast: "10+")[_Warpstorm_ is a special type of spell that targets all units within 12", even if they are engaged in close combat. Roll a D6 for each unit within range. On a 4+, enemy units suffer D6 Strength 5 hits with the Lightning Attacks special rule. Friendly units are only affected on a 6.]
 
-Remains in play. _Vermintide_ is a *magical vortex* that uses the large round template. Any model touched by the template suffers a Strength 1 hit.
+#spell("CRACKS CALL", 4, cast: "13+")[_Cracks Call_ is *a direct damage* spell. Extend a straight line, 24" in length, directly away from the caster. Each model in the way (determined using the line template) must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
 
-#namecost("WEEPING WOUNDS", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("SCORCH", 4, cast: "15+")[_Scorch_ is a *direct damage* spell. Place the large round template anywhere within 24" – it then scatters D6". All models under the template suffer a Strength 4 hit with the Flaming Attacks special rule. A unit that suffers one or more casualties from Scorch must take a Panic test.]
+]
+#lore("THE LORE OF PLAGUE")[
+#spell("PLAGUE RASH", "Lore Attribute")[Whenever a spell from the Lore of Plague is successfully cast, all enemy units within 6" of the caster suffer \-1 to their Weapon Skill and Initiative (to a minimum of 1) until the start of the caster's next magic phase.]
 
-Remains in play. _Weeping Wounds_ is a *hex* spell with a range of 24". The target unit suffer D6 Strength 2 hits with the Ignores Armour Saves special rule. While the spell is in effect, the target unit suffers an additional D6 Strength 2 hits with the Ignores Armour Saves special rule at the start of each subsequent Magic phase.
+#spell("PESTILENT BREATH", "Signature Spell", cast: "5+")[_Pestilent Breath_ is a *direct damage* spell. The caster makes a Strength 2 Breath Weapon Attack with the Ignores Armour Saves special rule. This may be cast in close combat, following the normal rules for Breath Weapons.]
 
-#namecost("CLOUD OF CORRUPTION", "")
-#namecost("Level 2 Cast on 10+", "")
+#spell("BLESS WITH FILTH", 1, cast: "5+")[_Bless with Filth_ is an *augment* spell with a range of 18". The target gets the Poisoned Attacks special rule until the start of the caster's next Magic phase.]
 
-_Cloud of Corruption_ is a *direct damage* spell with a range of 24". Place the large template anywhere within this range – it scatters D6". All models touched by the template suffer a Strength 2 Hit with the Ignores Armour Saves special rule.
+#spell("MANTLE OF CONTAGION", 1, cast: "5+")[_Mantle of Contagion_ is an *augment* spell with a range of 18". The target unit and any units in base contact with it suffer 2D6 Strength 3 hits with the Ignores Armour Saves special rule.]
 
-#namecost("PURULENT WORLD SORES", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("VEIL OF FLIES", 1, cast: "5+")[_Veil of Flies_ is an *augment* spell with a range of 18". All enemy units in base contact with the target unit suffer \-1 To Hit until the start of the caster's next Magic phase.]
 
-_Purulent World Sores_ is a *summoning* spell with a range of 18". This summons a normal marshland no more than 6" in diameter. In addition, all models within the marsh when it is summoned or who enter later suffer a Strength 1 Hit with the Ignores Armour Saves special rule.
+#spell("VERMINTIDE", 2, cast: "7+")[Remains in play. _Vermintide_ is a *magical vortex* that uses the large round template. Any model touched by the template suffers a Strength 1 hit.]
 
-#namecost("AIR OF PESTILENCE", "")
-#namecost("Level 3 Cast on 12+", "")
+#spell("WEEPING WOUNDS", 2, cast: "8+")[Remains in play. _Weeping Wounds_ is a *hex* spell with a range of 24". The target unit suffer D6 Strength 2 hits with the Ignores Armour Saves special rule. While the spell is in effect, the target unit suffers an additional D6 Strength 2 hits with the Ignores Armour Saves special rule at the start of each subsequent Magic phase.]
 
-_Air of Pestilence_ is a special type of spell that targets all units within 12", even if they are engaged in close combat. Roll a D6 for each unit; enemy units are affected on a 2+, friendly units are affected on a 4+, and models from Clan Pestilens (friend or foe) are affected on a roll of 5+. Each unit that is affected suffers 2D6 Strength 3 hits with the Ignores Armour save special rule. Roll separately for each unit.
+#spell("CLOUD OF CORRUPTION", 2, cast: "10+")[_Cloud of Corruption_ is a *direct damage* spell with a range of 24". Place the large template anywhere within this range – it scatters D6". All models touched by the template suffer a Strength 2 Hit with the Ignores Armour Saves special rule.]
 
-#namecost("PUTREFY", "")
-#namecost("Level 3 Cast on 11+", "")
+#spell("PURULENT WORLD SORES", 3, cast: "9+")[_Purulent World Sores_ is a *summoning* spell with a range of 18". This summons a normal marshland no more than 6" in diameter. In addition, all models within the marsh when it is summoned or who enter later suffer a Strength 1 Hit with the Ignores Armour Saves special rule.]
 
-_Putrefy_ is a *hex* spell with a range of 18". The target suffers \-1 to their Strength for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.
+#spell("AIR OF PESTILENCE", 3, cast: "12+")[_Air of Pestilence_ is a special type of spell that targets all units within 12", even if they are engaged in close combat. Roll a D6 for each unit; enemy units are affected on a 2+, friendly units are affected on a 4+, and models from Clan Pestilens (friend or foe) are affected on a roll of 5+. Each unit that is affected suffers 2D6 Strength 3 hits with the Ignores Armour save special rule. Roll separately for each unit.]
 
-#namecost("WITHER", "")
-#namecost("Level 4 Cast on 12+", "")
+#spell("PUTREFY", 3, cast: "11+")[_Putrefy_ is a *hex* spell with a range of 18". The target suffers \-1 to their Strength for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.]
 
-_Wither_ is a *hex* spell with a range of 18". The target suffers \-1 to their Toughness for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.
+#spell("WITHER", 4, cast: "12+")[_Wither_ is a *hex* spell with a range of 18". The target suffers \-1 to their Toughness for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.]
 
-#namecost("PLAGUE", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Plague_ is a *hex* spell with a range of 18". All models in the target unit must pass a Toughness test or suffer a Wound with the Ignores Armour save special rule. If cast on a unit engaged in close combat, all units in base contact (friend and foe) will be affected. After working out the effects of the spell and removing casualties, roll a D6 and consult the chart below and continue to apply the results until the spell ends or there are no more viable targets. A unit can only be the target of Plague once per Magic phase.
+#spell("PLAGUE", 4, cast: "15+")[_Plague_ is a *hex* spell with a range of 18". All models in the target unit must pass a Toughness test or suffer a Wound with the Ignores Armour save special rule. If cast on a unit engaged in close combat, all units in base contact (friend and foe) will be affected. After working out the effects of the spell and removing casualties, roll a D6 and consult the chart below and continue to apply the results until the spell ends or there are no more viable targets. A unit can only be the target of Plague once per Magic phase.
 
 #chart((("D6", "Result"), ("1", "Your opponent can decide to end the spell or
 choose any one unit within 6\" of a previous
 target to be affected by Plague."), ("2-4", "The spell ends."), ("5-6", "The casting player can decide to end the spell
 or choose any one unit within 6\" of a
-previous target to be affected by Plague.")))
+previous target to be affected by Plague.")))]
 ]
+#lore("THE LORE OF STEALTH")[
+#spell("TOXIC RAIN", "Lore Attribute")[Whenever a spell from the Lore of Stealth is successfully cast, all enemy units within 6" of the caster suffer a \-1 penalty to their armour saves until the start of the caster's next magic phase.]
 
-= THE LORE OF STEALTH
+#spell("WARP STARS", "Signature Spell", cast: "6+")[_Warp Stars_ is a *magic missile* with a range of 18" that causes D6 Strength 4 hits with the Armour Piercing (1) and Poisoned Attacks special rule.]
 
-#columns(2)[
-#namecost("TOXIC RAIN", "")
-#namecost("Lore Attribute", "")
+#spell("STICKYPAWS", 1, cast: "5+")[_Stickypaws_ is an *augment* spell with a range of 18" that can be cast on an Infantry unit. The target unit treats cliffs and buildings as open ground (note that it may not end its move within 1" of it as normal) until the start of the caster's next Magic phase.]
 
-Whenever a spell from the Lore of Stealth is successfully cast, all enemy units within 6" of the caster suffer a \-1 penalty to their armour saves until the start of the caster's next magic phase.
+#spell("ARMOUR OF DARKNESS", 1, cast: "6+")[_Armour of Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next turn, the caster and their unit gain a 6+ armour save and all missile fire directed at them suffer \-1 To Hit.]
 
-#namecost("WARP STARS", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("MARKED FOR DEATH", 1, cast: "6+")[_Marked for Death_ is a *hex* spell with a range of 24". All attacks against the target gain +1 To Hit until the start of the caster's next Magic phase.]
 
-_Warp Stars_ is a *magic missile* with a range of 18" that causes D6 Strength 4 hits with the Armour Piercing (1) and Poisoned Attacks special rule.
+#spell("BRITTLE BONE", 2, cast: "7+")[_Brittle Bone_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target unit must take a Dangerous Terrain test every time they attempt to charge, march, flee or pursue. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.]
 
-#namecost("STICKYPAWS", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("PELT OF THE ASSASSIN", 2, cast: "7+")[Remains in play. _Pelt of the Assassin_ is an *augment* spell with a range of 18". While the spell is in effect, no units can draw line of sight to this unit unless they are within 12" of it. However, if the target unit moves for any reason, the spell is immediately dispelled.]
 
-_Stickypaws_ is an *augment* spell with a range of 18" that can be cast on an Infantry unit. The target unit treats cliffs and buildings as open ground (note that it may not end its move within 1" of it as normal) until the start of the caster's next Magic phase.
+#spell("SHADOW STRIKE", 2, cast: "7+")[_Shadow Strike_ is a *direct damage* spell with a range of 24". The target unit must take 3D6 Weapon Skill tests. For every test that is failed, the unit suffers a Strength 4 Hit.]
 
-#namecost("ARMOUR OF DARKNESS", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("SWIFTSCAMPER", 3, cast: "9+")[_Swiftscamper_ is an *augment* spell with a range of 18". The target unit doubles its Movement rate (to a maximum of 10) and can re-roll their Charge, Flee and Pursuit results until the start of the caster's next Magic phase.]
 
-_Armour of Darkness_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next turn, the caster and their unit gain a 6+ armour save and all missile fire directed at them suffer \-1 To Hit.
+#spell("SKITTERLEAP", 3, cast: "10+")[_Skitterleap_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.]
 
-#namecost("MARKED FOR DEATH", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("BLACK WHIRLWIND", 3, cast: "10+")[_Black Whirlwind_ is a *direct damage* spell. Place the small round template anywhere within 24" – it then scatters D3". All models underneath the template suffer a Strength 3 hit. The unit then suffers \-1 to its Weapon Skill, Ballistic Skill and Initiative until the start of the caster's next Magic phase.]
 
-_Marked for Death_ is a *hex* spell with a range of 24". All attacks against the target gain +1 To Hit until the start of the caster's next Magic phase.
-
-#namecost("BRITTLE BONE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Brittle Bone_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, all models in the target unit must take a Dangerous Terrain test every time they attempt to charge, march, flee or pursue. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.
-
-#namecost("PELT OF THE ASSASSIN", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in play. _Pelt of the Assassin_ is an *augment* spell with a range of 18". While the spell is in effect, no units can draw line of sight to this unit unless they are within 12" of it. However, if the target unit moves for any reason, the spell is immediately dispelled.
-
-#namecost("SHADOW STRIKE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Shadow Strike_ is a *direct damage* spell with a range of 24". The target unit must take 3D6 Weapon Skill tests. For every test that is failed, the unit suffers a Strength 4 Hit.
-
-#namecost("SWIFTSCAMPER", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Swiftscamper_ is an *augment* spell with a range of 18". The target unit doubles its Movement rate (to a maximum of 10) and can re-roll their Charge, Flee and Pursuit results until the start of the caster's next Magic phase.
-
-#namecost("SKITTERLEAP", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Skitterleap_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 24" of their original position, just like a summoning spell.
-
-#namecost("BLACK WHIRLWIND", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Black Whirlwind_ is a *direct damage* spell. Place the small round template anywhere within 24" – it then scatters D3". All models underneath the template suffer a Strength 3 hit. The unit then suffers \-1 to its Weapon Skill, Ballistic Skill and Initiative until the start of the caster's next Magic phase.
-
-#namecost("VEIL OF SHADOWS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large round template. Any model touched by the template takes a Strength 4 hit, and the unit will count as being Disrupted for the remainder of the turn.
+#spell("VEIL OF SHADOWS", 4, cast: "15+")[Remains in Play. _Veil of Shadows_ is a *magical vortex* that uses the large round template. Any model touched by the template takes a Strength 4 hit, and the unit will count as being Disrupted for the remainder of the turn.]
 ]
+#upgrade-chapter("SKAVEN WARGEAR")[
+#group("WARLORD CLANS")
 
-= SKAVEN WARGEAR
+#upgrade("RAT HOUND BODYGUARD", none)[A model with a Rat Hound upgrade can make an additional Weapon Skill 3, Strength 3, Initiative 3 Attack. However, on a To Hit roll of 1 from this attack, the Rat Hound will instead inflict an automatic hit on its owner.]
 
-#entry("WARLORD CLANS", first: true)
-#namecost("RAT HOUND BODYGUARD", "")
-
-A model with a Rat Hound upgrade can make an additional Weapon Skill 3, Strength 3, Initiative 3 Attack. However, on a To Hit roll of 1 from this attack, the Rat Hound will instead inflict an automatic hit on its owner.
-
-#namecost("RATLING PISTOL", "")
-
-Ratling Pistols have the following profile:
+#upgrade("RATLING PISTOL", none)[Ratling Pistols have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Armour Piercing (1), Magical Attacks, Multiple Shots (3) Quick to Fire, Unstable Ammunition"))
 
 #note[_In close combat, a Ratling Pistol counts as an additional hand weapon that does not give the model the Parry special rule._]
+]
 
-#namecost("TAIL WEAPON", "")
+#upgrade("TAIL WEAPON", none)[The model gains +1 Attack. Note that this attack does not gain any of the rules of other weapons the model might carry.]
 
-The model gains +1 Attack. Note that this attack does not gain any of the rules of other weapons the model might carry.
-
-#namecost("WARPLOCK PISTOL", "")
-
-Warplock pistols have the following profile:
+#upgrade("WARPLOCK PISTOL", none)[Warplock pistols have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "5", "Armour Piercing (1), Magical Attacks, Quick to Fire, Unstable Ammunition"))
 
 #note[_In close combat, a Warplock pistol counts as an additional hand weapon that does not give the model the Parry special rule._]
+]
 
-#namecost("WARPSTONE TOKENS", "")
+#upgrade("WARPSTONE TOKENS", none)[A Wizard may choose to eat some warpstone to boost his powers. Before casting a spell announce which model is eating Warpstone Tokens. Each token can only be used once. For each token consumed, a Wizard can add an additional power dice to his casting attempt. This does allow users to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed.]
 
-A Wizard may choose to eat some warpstone to boost his powers. Before casting a spell announce which model is eating Warpstone Tokens. Each token can only be used once. For each token consumed, a Wizard can add an additional power dice to his casting attempt. This does allow users to roll more dice than is normally allowed by their level. A spell may be cast entirely with Warpstone Tokens if you wish. However, for every Warpstone generated dice that rolls a 1 the Wizard suffers a Wound with no saves allowed.
+#group("CLAN ESHIN")
 
-#entry("CLAN ESHIN")
-#namecost("SMOKE BOMBS", "")
+#upgrade("SMOKE BOMBS", none)[This item can be used if the bearer breaks from combat before the opponent has declared to pursue. Any units pursuing this model roll one D6 less than normal for their pursuit distance this turn.]
 
-This item can be used if the bearer breaks from combat before the opponent has declared to pursue. Any units pursuing this model roll one D6 less than normal for their pursuit distance this turn.
+#upgrade("WARPSTONE STARS", none)[Throwing weapon. Warpstone Stars have the Armour Piercing (1), Magical Attacks, and Multiple Wounds (D3) special rules.]
 
-#namecost("WARPSTONE STARS", "")
+#upgrade("WEEPING BLADES", none)[Two hand weapons. All attacks made by Weeping Blades have the Armour Piercing (1), Magical Attacks and Multiple Wounds (D3) special rules.]
 
-Throwing weapon. Warpstone Stars have the Armour Piercing (1), Magical Attacks, and Multiple Wounds (D3) special rules.
+#group("CLAN MOULDER")
 
-#namecost("WEEPING BLADES", "")
+#upgrade("SHOCK-PROD", none)[Polearm. A Shock-Prod gives the wielder the Lightning Attacks special rule.]
 
-Two hand weapons. All attacks made by Weeping Blades have the Armour Piercing (1), Magical Attacks and Multiple Wounds (D3) special rules.
+#upgrade("THINGS-CATCHER", none)[Polearm. A Things-catcher gives the wielder the Killing Blow special rule.]
 
-#entry("CLAN MOULDER")
-#namecost("SHOCK-PROD", "")
+#upgrade("WHIP", none)[A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.]
 
-Polearm. A Shock-Prod gives the wielder the Lightning Attacks special rule.
+#group("CLAN PESTILENS")
 
-#namecost("THINGS-CATCHER", "")
+#upgrade("PLAGUE CENSER", none)[Flail. At the start of each round of close combat, all enemy models in base contact with one or more models bearing a plague censer, as well the Censer Bearers themselves that are allowed to fight this round, must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.]
 
-Polearm. A Things-catcher gives the wielder the Killing Blow special rule.
+#upgrade("WARP-BLADES", none)[Warp-Blades give the bearer +1 casting bonus when using the _Warp Lightning_ spell from the Lore of Ruin.]
 
-#namecost("WHIP", "")
-
-A whip gives the wielder +1 Attack and the Fight in Extra Ranks (2) special rule. In addition, they may make supporting attacks equal to their Attack characteristic.
-
-#entry("CLAN PESTILENS")
-#namecost("PLAGUE CENSER", "")
-
-Flail. At the start of each round of close combat, all enemy models in base contact with one or more models bearing a plague censer, as well the Censer Bearers themselves that are allowed to fight this round, must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.
-
-#namecost("WARP-BLADES", "")
-
-Warp-Blades give the bearer +1 casting bonus when using the _Warp Lightning_ spell from the Lore of Ruin.
-
-#namecost("WARPMUSKET", "")
-
-A Warpmusket has the following profile:
+#upgrade("WARPMUSKET", none)[A Warpmusket has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "5", "Armour Piercing (1), Magical Attacks, Ponderous Unstable Ammunition"))
-#namecost("WARPVOLT OBLITERATOR", "")
+]
 
-A Warpvolt Obliterator has the following profile:
+#upgrade("WARPVOLT OBLITERATOR", none)[A Warpvolt Obliterator has the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("18\"", "5", "Lightning Attacks, Magical Attacks"))
+]
 
-#entry("CLAN SKRYRE")
-#namecost("GAS MASK", "")
+#group("CLAN SKRYRE")
 
-When a model with a gas mask is forced to take a Toughness test caused by any weapon or Magic Item in this army book, they get a +2 bonus for the test.
+#upgrade("GAS MASK", none)[When a model with a gas mask is forced to take a Toughness test caused by any weapon or Magic Item in this army book, they get a +2 bonus for the test.]
 
-#namecost("SUPERCHARGED WARP-POWER", "")
-#namecost("ACCUMULATOR", "")
+#upgrade("SUPERCHARGED WARP-POWER ACCUMULATOR", none)[A Supercharged Warp-Power Accumulator allows the bearer to cast spells with one more Power dice than they are normally allowed.]
 
-A Supercharged Warp-Power Accumulator allows the bearer to cast spells with one more Power dice than they are normally allowed.
+#upgrade("UPGRADED WARP-ENERGY CONDENSER", none)[An Upgraded Warp-Energy Condenser gives the wearer a +1 bonus when channelling Power dice.]
 
-#namecost("UPGRADED WARP-ENERGY CONDENSER", "")
+#upgrade("WARLOCK OPTICS", none)[A Warlock Engineer equipped with Warlock Optics gains +1 to their Ballistic Skill as well as the Sniper special rules.]
+]
 
-An Upgraded Warp-Energy Condenser gives the wearer a +1 bonus when channelling Power dice.
+#magic-item-chapter(intro: [*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.*])
 
-#namecost("WARLOCK OPTICS", "")
+#magic-item-section("weapon", first: true)[
+#magic-weapon("FELLBLADE", 85)[Warlord only. This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful ward saves taken against wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound with no armour save allowed.]
 
-A Warlock Engineer equipped with Warlock Optics gains +1 to their Ballistic Skill as well as the Sniper special rules.
+#magic-weapon("ELECTRO-WHIP", 40)[Clan Moulder only. Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.]
 
-= MAGIC ITEMS
+#magic-weapon("DWARF SLAYER", 35)[All attacks made with this weapon are resolved at +1 Strength and have the Multiple Wounds (2) special rule. Against all models from _Warhammer: Dwarfs_, all hits have the Armour Piercing (1) special rule and the wielder may re-roll all failed rolls To Wound.]
 
-*This section contains the rules for some of the most iconic and powerful magical artefacts used by the Skaven. These may be used in addition to the magic items found in the Warhammer rulebook.*
+#magic-weapon("DESOLATE BLADE", 30)[The Desolate Blade gives the wielder +1 Strength and allows them to re-roll all failed rolls To Wound.]
 
-#entry("MAGIC WEAPONS")
-#namecost("FELLBLADE", "85 points")
+#magic-weapon("THE FUMIGATOUS", 30)[Clan Pestilens only. Plague Censer. All Toughness tests taken from this weapon suffer a \-1 modifier.]
 
-Warlord only. This foul sword gives the bearer Strength 10 and the Multiple Wounds (D6) special rule, and successful ward saves taken against wounds inflicted by the bearer in close combat must be re-rolled. Roll a D6 at the end of each of the wielder's turns; on a 3+ there is no effect. On a roll of 1\-2 the wielder suffers 1 wound with no armour save allowed.
+#magic-weapon("LANGUISHER SWORD", 25)[The Languisher Sword causes all enemy models in base contact with the wielder to be subject to the Always Strikes Last special rule.]
 
-#namecost("ELECTRO-WHIP", "40 points")
+#magic-weapon("THE THREE FANGS", 25)[Two hand weapons & tail weapon. If the wielder of these weapons scores 3 or more Hits against a single model, all those hits automatically Wound with the Ignores Armour Saves special rule.]
 
-Clan Moulder only. Whip. An Electro-whip gives the wielder +D3 Attacks rather than 1 as well as the Lightning Attacks special rule.
+#magic-weapon("CURSED BLADE OF DELIRIUM", 20)[The Cursed Blade of Delirium causes all enemy models attempting to strike the wielder in close combat to suffer \-1 To Hit.]
 
-#namecost("DWARF SLAYER", "35 points")
+#magic-weapon("HEADSPLITTER", 20)[Clan Eshin only. Sling. Against models with Toughness 5+, Headsplitter automatically Wounds on the roll of a 2+ with the Ignores Armour Saves special rule.]
 
-All attacks made with this weapon are resolved at +1 Strength and have the Multiple Wounds (2) special rule. Against all models from _Warhammer: Dwarfs_, all hits have the Armour Piercing (1) special rule and the wielder may re-roll all failed rolls To Wound.
+#magic-weapon("SNAP-SNAP SNAREPOLE", 20)[Clan Moulder only. Things-catcher. One enemy model of your choice suffer a \-1 penalty to their Attacks.]
 
-#namecost("DESOLATE BLADE", "30 points")
+#magic-weapon("BLADE OF BLACK FURY", 15)[The Blade of Black Fury gives the wielder +2 Initiative and +1 Attack.]
 
-The Desolate Blade gives the wielder +1 Strength and allows them to re-roll all failed rolls To Wound.
+#magic-weapon("GNAWSHARD", 15)[Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon must pass a Toughness test at the start of each subsequent close combat phase for the rest of the game, or suffer one Wound with no saves allowed.]
 
-#namecost("THE FUMIGATOUS", "30 points")
+#magic-weapon("THINGS-BANE", 15)[This weapon gives the bearer the Multiple Wounds (2) special rule.]
 
-Clan Pestilens only. Plague Censer. All Toughness tests taken from this weapon suffer a \-1 modifier.
+#magic-weapon("BROODING BLADE", 10)[Any model that suffers one or more unsaved Wounds from this weapon suffers 2D6 Strength 1 Hits with no saves allowed at the end of that round of close combat.]
 
-#namecost("LANGUISHER SWORD", "25 points")
+#magic-weapon("LASH OF FANGS", 10)[Clan Moulder only. Whip. Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon are subject to the Stupidity special rule for the remainder of the game.]
 
-The Languisher Sword causes all enemy models in base contact with the wielder to be subject to the Always Strikes Last special rule.
+#magic-weapon("WARPFORGED BLADE", 10)[Clan Skryre only. A Warpforged Blade gives the wielder the Ignores Armour Saves special rule.]
+]
 
-#namecost("THE THREE FANGS", "25 points")
+#magic-item-section("armour")[
+#magic-armour("FOULHIDE", 30)[Medium armour. This armour gives the wearer the Regeneration (4+) special rule.]
 
-Two hand weapons & tail weapon. If the wielder of these weapons scores 3 or more Hits against a single model, all those hits automatically Wound with the Ignores Armour Saves special rule.
+#magic-armour("SHIELD OF DISTRACTION", 30)[Shield. The Shield of Distraction causes all enemies in base contact with the bearer to suffer \-1 Attack.]
 
-#namecost("CURSED BLADE OF DELIRIUM", "20 points")
+#magic-armour("RUST ARMOUR", 25)[Medium armour. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the Wound is discounted, but the armour is completely destroyed.]
+]
 
-The Cursed Blade of Delirium causes all enemy models attempting to strike the wielder in close combat to suffer \-1 To Hit.
+#magic-item-section("talisman")[
+#talisman("WARPSTONE AMULET", 30)[The Amulet confers to the bearer a 4+ Ward save. At the end of each of your turns, roll a D6. On the result of 1, the character suffers a Wound with no saves allowed.]
 
-#namecost("HEADSPLITTER", "20 points")
+#talisman("TENEBROUS CLOAK", 30)[The Tenebrous Cloak gives the wearer a 3+ Ward save against all missile attacks and spells.]
 
-Clan Eshin only. Sling. Against models with Toughness 5+, Headsplitter automatically Wounds on the roll of a 2+ with the Ignores Armour Saves special rule.
+#talisman("TWISTED CROWN OF THE HORNED RAT", 30)[The Twisted Crown of the Horned Rat gives the wearer the Regeneration (4+) special rule.]
 
-#namecost("SNAP-SNAP SNAREPOLE", "20 points")
+#talisman("RIVAL HIDE TALISMAN", 25)[The Rival Hide Talisman forces all enemies attempting to strike the wearer in close combat to re-roll successful rolls To Hit.]
 
-Clan Moulder only. Things-catcher. One enemy model of your choice suffer a \-1 penalty to their Attacks.
+#talisman("SHADOW MAGNET TRINKET", 25)[All missile attacks targeted at the bearer of the Shadow Magnet Trinket or the unit they are with suffer \-1 To Hit.]
 
-#namecost("BLADE OF BLACK FURY", "15 points")
+#talisman("SUSPICIOUS STONE", 20)[This item gives the wearer a 6+ Ward save which may be re-rolled.]
 
-The Blade of Black Fury gives the wielder +2 Initiative and +1 Attack.
+#talisman("WARPSCALE PENDANT", 15)[The Warpscale Pendant gives the bearer the Immunity (Flaming Attacks, Lightning Attacks) and Magic Resistance (2) special rules. However, at the beginning of the game, the bearer must pass a Toughness test or suffer a Wound with no saves allowed.]
 
-#namecost("GNAWSHARD", "15 points")
+#talisman("AMULET OF DARKNESS", 10)[The Amulet of Darkness gives the wearer the Magical Resistance (1) special rule. In addition, if a spell or magic item that would normally force the wearer and any unit they are with to reveal any Magic Items or Hidden models, they only need to reveal the Amulet of Darkness.]
+]
 
-Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon must pass a Toughness test at the start of each subsequent close combat phase for the rest of the game, or suffer one Wound with no saves allowed.
+#magic-item-section("arcane")[
+#arcane-item("STAFF OF RIGHTFUL SUPREMACY", 25)[All enemy Wizards within 12" of the bearer of this item suffer a \-1 casting penalty. In addition, if the bearer's dispel roll result is 13, the spell is automatically dispelled.]
 
-#namecost("THINGS-BANE", "15 points")
+#arcane-item("WARPSCROLL", 25)[One use only. Bound spell, Power Level 6. The Warpscroll contains a *direct damage* spell with a range of 24". It inflicts a Strength 3 Hit on all models in the unit. If the unit suffers any casualties from the spell, they must also take a Panic test.]
 
-This weapon gives the bearer the Multiple Wounds (2) special rule.
+#arcane-item("WARPSTORM SCROLL", 25)[Bound Spell, Power Level 5. One use only. The Warpstorm Scroll contains a *direct damage* spell that targets all units with the Fly special rule within 24". The target units suffer D6 Strength 6 Hits with the Lightning Attacks special rule.]
 
-#namecost("BROODING BLADE", "10 points")
+#arcane-item("ESOTERIC WARP RESONATOR", 20)[Clan Skryre only. The bearer of this item adds a free Power dice to their casting attempt whenever they attempt to cast the _Warp Lightning_ spell from the Lore of Ruin.]
 
-Any model that suffers one or more unsaved Wounds from this weapon suffers 2D6 Strength 1 Hits with no saves allowed at the end of that round of close combat.
+#arcane-item("EYE OF THE HORNED RAT", 15)[The Eye of the Horned Rat may be used at the start of your Magic Phase. Roll a D6, on a 2+, add one dice to your power dice pool. On 1, remove one dice from your power dice pool.]
 
-#namecost("LASH OF FANGS", "10 points")
+#arcane-item("SCRYING STONE", 10)[One use only. The bearer of the Scrying Stone gains a 2+ Ward save against their first wounding Hit suffered. However, if this Wound is saved the model gains the Stupidity rule for the remainder of the game.]
+]
 
-Clan Moulder only. Whip. Any character, Monstrous Creature or Monster that suffers one or more unsaved Wounds from this weapon are subject to the Stupidity special rule for the remainder of the game.
+#magic-item-section("enchanted")[
+#enchanted-item("BRASS ORB", 40)[Clan Skryre only. One use only. The bearer can throw the Brass Orb in the Shooting phase. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". Models touched by the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. This has the Magical Attacks special rule. If a 1 is rolled, centre the template on the model throwing the globe.]
 
-#namecost("WARPFORGED BLADE", "10 points")
+#enchanted-item("BILIOUS BELL", 30)[Clan Pestilens only. One use only. This item can be used at the start of any of your turns. When used, all enemy units within 18" of the bearer of this item suffer a Strength 3 Hit, enemy units within 12" suffer D3 Strength 4 Hits and enemy units within 6" suffer D6 Strength 5 Hits.]
 
-Clan Skryre only. A Warpforged Blade gives the wielder the Ignores Armour Saves special rule.
+#enchanted-item("THE CUBE OF MISTS", 30)[Clan Eshin only. One use only. This item can be used at the start of any round of close combat. Once used, no enemy models can make Supporting Attack this round. In addition, all enemy models in the unit suffer \-1 To Hit.]
 
-#entry("MAGIC ARMOUR")
-#namecost("FOULHIDE", "30 points")
-
-Medium armour. This armour gives the wearer the Regeneration (4+) special rule.
-
-#namecost("SHIELD OF DISTRACTION", "30 points")
-
-Shield. The Shield of Distraction causes all enemies in base contact with the bearer to suffer \-1 Attack.
-
-#namecost("RUST ARMOUR", "25 points")
-
-Medium armour. The first time the wearer is wounded by a Strength high enough to completely cancel his armour save, or is not permitted an armour save for any reason, the Wound is discounted, but the armour is completely destroyed.
-
-#entry("TALISMANS")
-#namecost("WARPSTONE AMULET", "30 points")
-
-The Amulet confers to the bearer a 4+ Ward save. At the end of each of your turns, roll a D6. On the result of 1, the character suffers a Wound with no saves allowed.
-
-#namecost("TENEBROUS CLOAK", "30 points")
-
-The Tenebrous Cloak gives the wearer a 3+ Ward save against all missile attacks and spells.
-
-#namecost("TWISTED CROWN OF THE HORNED RAT", "30 points")
-
-The Twisted Crown of the Horned Rat gives the wearer the Regeneration (4+) special rule.
-
-#namecost("RIVAL HIDE TALISMAN", "25 points")
-
-The Rival Hide Talisman forces all enemies attempting to strike the wearer in close combat to re-roll successful rolls To Hit.
-
-#namecost("SHADOW MAGNET TRINKET", "25 points")
-
-All missile attacks targeted at the bearer of the Shadow Magnet Trinket or the unit they are with suffer \-1 To Hit.
-
-#namecost("SUSPICIOUS STONE", "20 points")
-
-This item gives the wearer a 6+ Ward save which may be re-rolled.
-
-#namecost("WARPSCALE PENDANT", "15 points")
-
-The Warpscale Pendant gives the bearer the Immunity (Flaming Attacks, Lightning Attacks) and Magic Resistance (2) special rules. However, at the beginning of the game, the bearer must pass a Toughness test or suffer a Wound with no saves allowed.
-
-#namecost("AMULET OF DARKNESS", "10 points")
-
-The Amulet of Darkness gives the wearer the Magical Resistance (1) special rule. In addition, if a spell or magic item that would normally force the wearer and any unit they are with to reveal any Magic Items or Hidden models, they only need to reveal the Amulet of Darkness.
-
-#entry("ARCANE ITEMS")
-#namecost("STAFF OF RIGHTFUL SUPREMACY", "25 points")
-
-All enemy Wizards within 12" of the bearer of this item suffer a \-1 casting penalty. In addition, if the bearer's dispel roll result is 13, the spell is automatically dispelled.
-
-#namecost("WARPSCROLL", "25 points")
-
-One use only. Bound spell, Power Level 6. The Warpscroll contains a *direct damage* spell with a range of 24". It inflicts a Strength 3 Hit on all models in the unit. If the unit suffers any casualties from the spell, they must also take a Panic test.
-
-#namecost("WARPSTORM SCROLL", "25 points")
-
-Bound Spell, Power Level 5. One use only. The Warpstorm Scroll contains a *direct damage* spell that targets all units with the Fly special rule within 24". The target units suffer D6 Strength 6 Hits with the Lightning Attacks special rule.
-
-#namecost("ESOTERIC WARP RESONATOR", "20 points")
-
-Clan Skryre only. The bearer of this item adds a free Power dice to their casting attempt whenever they attempt to cast the _Warp Lightning_ spell from the Lore of Ruin.
-
-#namecost("EYE OF THE HORNED RAT", "15 points")
-
-The Eye of the Horned Rat may be used at the start of your Magic Phase. Roll a D6, on a 2+, add one dice to your power dice pool. On 1, remove one dice from your power dice pool.
-
-#namecost("SCRYING STONE", "10 points")
-
-One use only. The bearer of the Scrying Stone gains a 2+ Ward save against their first wounding Hit suffered. However, if this Wound is saved the model gains the Stupidity rule for the remainder of the game.
-
-#entry("ENCHANTED ITEMS")
-#columns(2)[
-#namecost("BRASS ORB", "40 points")
-
-Clan Skryre only. One use only. The bearer can throw the Brass Orb in the Shooting phase. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". Models touched by the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration. This has the Magical Attacks special rule. If a 1 is rolled, centre the template on the model throwing the globe.
-
-#namecost("BILIOUS BELL", "30 points")
-
-Clan Pestilens only. One use only. This item can be used at the start of any of your turns. When used, all enemy units within 18" of the bearer of this item suffer a Strength 3 Hit, enemy units within 12" suffer D3 Strength 4 Hits and enemy units within 6" suffer D6 Strength 5 Hits.
-
-#namecost("THE CUBE OF MISTS", "30 points")
-
-Clan Eshin only. One use only. This item can be used at the start of any round of close combat. Once used, no enemy models can make Supporting Attack this round. In addition, all enemy models in the unit suffer \-1 To Hit.
-
-#namecost("DOOMROCKET", "30 points")
-
-Clan Skryre only. One use only. A Doomrocket is a Rocket Launcher with the following profile:
+#enchanted-item("DOOMROCKET", 30)[Clan Skryre only. One use only. A Doomrocket is a Rocket Launcher with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-36\"", "5", "Slow to Fire"))
 
@@ -547,30 +320,22 @@ normal."), ("2-5", "Stabilising Fin Lost: The template scatters
 hits as normal."), ("6", "It's a Dud: Resolve the shot as normal, but do
 not place the template. Any model directly
 below the impact spot suffers a single Strength
-5 hit.")))
-#namecost("FLESHGIFT VIAL", "30 points")
+5 hit.")))]
 
-Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:
+#enchanted-item("FLESHGIFT VIAL", 30)[Clan Moulder only. One use only. This item can be used at the start of any Close Combat phase. Roll a D6 and consult the table below:
 
 #chart((("D6", "Result"), ("1", "The bearer suffers 1 Wound with no saves
 allowed."), ("2-4", "One enemy unit in base contact suffer D3
 Wounds with no saves allowed."), ("5-6", "One enemy unit in base contact suffer D6
-Wounds with no saves allowed.")))
-#namecost("INFERNAL BOMB", "30 points")
+Wounds with no saves allowed.")))]
 
-Clan Eshin only. One use only. As long as they are not Hidden, the bearer can place an Infernal Bomb anywhere along their Movement path during the Remaining Movement phase. Place a marker where the bomb is placed. You may choose to detonate the bomb at the start of any Movement sub-phase by rolling a D6. On a roll of 1, nothing happens. On a 2+, the bomb will explode; place the large round template centred on the marker. Any model at the template's centre takes a single Strength 10 Hit with the Multiple Wounds (D6) special rule. Any models touched by the template suffer a Strength 3 hit with the Armour Piercing (1) special rule.
+#enchanted-item("INFERNAL BOMB", 30)[Clan Eshin only. One use only. As long as they are not Hidden, the bearer can place an Infernal Bomb anywhere along their Movement path during the Remaining Movement phase. Place a marker where the bomb is placed. You may choose to detonate the bomb at the start of any Movement sub-phase by rolling a D6. On a roll of 1, nothing happens. On a 2+, the bomb will explode; place the large round template centred on the marker. Any model at the template's centre takes a single Strength 10 Hit with the Multiple Wounds (D6) special rule. Any models touched by the template suffer a Strength 3 hit with the Armour Piercing (1) special rule.]
 
-#namecost("SKALM", "30 points")
+#enchanted-item("SKALM", 30)[One use only. Skalm can be used at the beginning of any phase in either player’s turn. The bearer recovers all Wounds suffered up to that point in the battle.]
 
-One use only. Skalm can be used at the beginning of any phase in either player’s turn. The bearer recovers all Wounds suffered up to that point in the battle.
+#enchanted-item("SCREECHSKULL TROPHIES", 30)[All enemy units within 6" of the bearer of this item must roll an additional D6 when taking Leadership tests and discard the lowest result.]
 
-#namecost("SCREECHSKULL TROPHIES", "30 points")
-
-All enemy units within 6" of the bearer of this item must roll an additional D6 when taking Leadership tests and discard the lowest result.
-
-#namecost("SKAVENBREW", "30 points")
-
-One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:
+#enchanted-item("SKAVENBREW", 30)[One use only. This item can be used at the start of the game. Skavenbrew affects all rank-and-file models in the unit. Roll a D6 and consult the table below:
 
 #chart((("D6", "Result"), ("1", "Gone Bad: The unit takes D6 Strength 3
 automatic hits with the Ignores Armour save
@@ -580,151 +345,100 @@ special rule."), ("4-5", "Frenzied: The unit gains the Frenzy special
 rule."), ("6", "Rabid: The unit gains the Frenzy and Hatred
 special rules. At the start of each of your
 subsequent turns, the unit suffers D6
-automatic Wounds.")))
-#namecost("DEATH GLOBE", "25 points")
+automatic Wounds.")))]
 
-Clan Skryre only. One use only. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". All models touched by the template must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. If a 1 is rolled, centre the template on the model throwing the globe.
+#enchanted-item("DEATH GLOBE", 25)[Clan Skryre only. One use only. Place the small round template with its centre anywhere within 6" of the character and in his line of sight. The template then scatters D3". All models touched by the template must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. If a 1 is rolled, centre the template on the model throwing the globe.]
 
-#namecost("PIPES OF PIEBALD", "25 points")
+#enchanted-item("PIPES OF PIEBALD", 25)[All enemy units within 12" of the bearer of the Pipes of Piebald are subject to the Stupidity special rule.
 
-All enemy units within 12" of the bearer of the Pipes of Piebald are subject to the Stupidity special rule.
+#runin[SKRYRE]'#runin[S-BREATH BELLOWS 25 points] Clan Skryre only. One use only. This is a Breath Weapon Attack. Any model Hit must take a Toughness test or suffer a Wound which Ignores Armour saves.]
 
-#runin[SKRYRE]'#runin[S-BREATH BELLOWS 25 points] Clan Skryre only. One use only. This is a Breath Weapon Attack. Any model Hit must take a Toughness test or suffer a Wound which Ignores Armour saves.
+#enchanted-item("BLISTREVOUS, THE LIVING CYST", 20)[Clan Pestilens only. The bearer of this item gains the Frenzy and Hatred special rules. At the start of your second turn and onward, if you have any friendly Clan Pestilens character within 12" of the bearer, this item gets transferred to them instead.]
 
-#namecost("BLISTREVOUS, THE LIVING CYST", "20 points")
+#enchanted-item("FLAYPELT CLOAK", 20)[The bearer of this item may re-roll 1's To Hit and To Wound in Close Combat.]
 
-Clan Pestilens only. The bearer of this item gains the Frenzy and Hatred special rules. At the start of your second turn and onward, if you have any friendly Clan Pestilens character within 12" of the bearer, this item gets transferred to them instead.
+#enchanted-item("GNAWBOMB", 20)[Clan Eshin only. One use only. This item can be used at the start of any of your turns. When used, remove the bearer of this item and any unit they are with, but place a marker where the bearer was. In the Remaining Moves sub-phase of this turn, place the unit anywhere within 3D6" of the marker, just like a *summoning* spell.]
 
-#namecost("FLAYPELT CLOAK", "20 points")
+#enchanted-item("PORTENTS OF VERMINOUS DOOM", 20)[The Portents of Verminous Doom give the bearer the Fear special rule.]
 
-The bearer of this item may re-roll 1's To Hit and To Wound in Close Combat.
+#enchanted-item("RABID CROWN", 20)[Clan Moulder only. All friendly Clan Moulder units (except characters) within 6" of the bearer of this item may re-roll failed rolls To Wound.]
 
-#namecost("GNAWBOMB", "20 points")
+#enchanted-item("SNOUTGROVEL ROBES", 20)[All friendly units within 12" of the bearer of this item gain the Immunity (Fear) special rule.]
 
-Clan Eshin only. One use only. This item can be used at the start of any of your turns. When used, remove the bearer of this item and any unit they are with, but place a marker where the bearer was. In the Remaining Moves sub-phase of this turn, place the unit anywhere within 3D6" of the marker, just like a *summoning* spell.
+#enchanted-item("FARSKITTER CLOAK", 15)[Clan Eshin only. Bound spell, Power Level 3. This item contains the _Skitterleap_ spell from the Lore of Stealth. It can only be cast on the bearer of this item.]
 
-#namecost("PORTENTS OF VERMINOUS DOOM", "20 points")
+#enchanted-item("ASSASSINS-BANE RIGGING", 10)[Clan Eshin only. All enemy models that Attack this bearer of this item in close combat suffer a Strength 3 Hit for each Hit they inflict on the bearer.]
 
-The Portents of Verminous Doom give the bearer the Fear special rule.
+#enchanted-item("RAT-TAIL SNAKE", 10)[Clan Moulder only. If an enemy model rolls a 6's To Hit against the bearer of this item, they immediately suffer a Strength 4 Hit.]
 
-#namecost("RABID CROWN", "20 points")
+#enchanted-item("WARPSTONE CHARM", 10)[One use only. The Warpstone Charm allows the bearer to re-roll any one single dice roll that directly affects them.]
 
-Clan Moulder only. All friendly Clan Moulder units (except characters) within 6" of the bearer of this item may re-roll failed rolls To Wound.
-
-#namecost("SNOUTGROVEL ROBES", "20 points")
-
-All friendly units within 12" of the bearer of this item gain the Immunity (Fear) special rule.
-
-#namecost("FARSKITTER CLOAK", "15 points")
-
-Clan Eshin only. Bound spell, Power Level 3. This item contains the _Skitterleap_ spell from the Lore of Stealth. It can only be cast on the bearer of this item.
-
-#namecost("ASSASSINS-BANE RIGGING", "10 points")
-
-Clan Eshin only. All enemy models that Attack this bearer of this item in close combat suffer a Strength 3 Hit for each Hit they inflict on the bearer.
-
-#namecost("RAT-TAIL SNAKE", "10 points")
-
-Clan Moulder only. If an enemy model rolls a 6's To Hit against the bearer of this item, they immediately suffer a Strength 4 Hit.
-
-#namecost("WARPSTONE CHARM", "10 points")
-
-One use only. The Warpstone Charm allows the bearer to re-roll any one single dice roll that directly affects them.
-
-#namecost("VIAL OF THE FULMINATOR", "5 points")
-
-Clan Skryre only. At the start of each of your Remaining Moves sub-phases, you may pick one friendly War Machine within 12" of the bearer. This War Machine may march this turn or move and shoot. However, if they do so, all remaining crew must pass a Toughness test or suffer a Wound with no saves allowed.
+#enchanted-item("VIAL OF THE FULMINATOR", 5)[Clan Skryre only. At the start of each of your Remaining Moves sub-phases, you may pick one friendly War Machine within 12" of the bearer. This War Machine may march this turn or move and shoot. However, if they do so, all remaining crew must pass a Toughness test or suffer a Wound with no saves allowed.]
 ]
 
-#entry("MAGIC STANDARDS")
-#namecost("SACRED STANDARD OF THE HORNED RAT", "75 points")
+#magic-item-section("standard")[
+#magic-standard("SACRED STANDARD OF THE HORNED RAT", 75)[All enemy units within 12" of this standard suffer a \-1 penalty to their Leadership and enemy units in base contact with the bearer of this banner must re-roll any successful Leadership tests.]
 
-All enemy units within 12" of this standard suffer a \-1 penalty to their Leadership and enemy units in base contact with the bearer of this banner must re-roll any successful Leadership tests.
+#magic-standard("STORM BANNER", 50)[One use only.Tthis standard can be activated at the beginning of any player's turn. Within 24" of this standard, no model may use the Fly special rule and units are at \-2 to be Hit with non-magical missile attacks. All non-magical missile attacks that do not use Ballistics Skill to hit need to roll a 4+ on a D6 before they can attempt to fire if they are within 24" of the banner. Roll a D6 at the beginning of each following player turn – the effects of the banner will end on a D6 roll of 4+.]
 
-#namecost("STORM BANNER", "50 points")
+#magic-standard("UMBRANNER", 35)[The unit carrying this standard gains a 4+ Ward save against non-magical missiles with Strength 4 or less.]
 
-One use only.Tthis standard can be activated at the beginning of any player's turn. Within 24" of this standard, no model may use the Fly special rule and units are at \-2 to be Hit with non-magical missile attacks. All non-magical missile attacks that do not use Ballistics Skill to hit need to roll a 4+ on a D6 before they can attempt to fire if they are within 24" of the banner. Roll a D6 at the beginning of each following player turn – the effects of the banner will end on a D6 roll of 4+.
+#magic-standard("GRAND BANNER OF CLAN SUPERIORITY", 30)[The unit carrying this standard gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.]
 
-#namecost("UMBRANNER", "35 points")
+#magic-standard("BANNER OF BURNING HATRED", 25)[The unit carrying this standard gains the Hatred special rule.]
 
-The unit carrying this standard gains a 4+ Ward save against non-magical missiles with Strength 4 or less.
+#magic-standard("PLAGUE BANNER", 25)[Plague Monks only. One use only. This standard may be activated at the start of any Close Combat phase. For the remainder of the phase all Plague Monk models in the unit may re-roll failed To Hit rolls and failed To Wound rolls.]
 
-#namecost("GRAND BANNER OF CLAN", "")
-#namecost("SUPERIORITY", "30 points")
+#magic-standard("SHROUD OF DRIPPING DEATH", 25)[Clan Pestilens only. This standard causes all enemy models in base contact with the unit carrying it to suffer a Strength 2 Hit which Ignores Armour Saves at the start of every Close Combat phase.]
 
-The unit carrying this standard gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.
+#magic-standard("BANNER OF THE UNDER-EMPIRE", 20)[This standard causes all enemy units in base contact with the unit carrying it to suffer 3D6 Strength 1 Hits at the start of every Close Combat phase.]
 
-#namecost("BANNER OF BURNING HATRED", "25 points")
+#magic-standard("DWARF-HIDE BANNER", 20)[The unit carrying this standard gains the Hatred special rule against all units from _Warhammer: Dwarfs_.]
 
-The unit carrying this standard gains the Hatred special rule.
+#magic-standard("BANNER OF THE SWARM", 15)[The unit carrying this standard gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.]
 
-#namecost("PLAGUE BANNER", "25 points")
+#magic-standard("BANNER OF THE FOUR BLACK WINDS", 10)[Enemies cannot use the Fly special rule to charge the unit carrying this standard.]
 
-Plague Monks only. One use only. This standard may be activated at the start of any Close Combat phase. For the remainder of the phase all Plague Monk models in the unit may re-roll failed To Hit rolls and failed To Wound rolls.
-
-#namecost("SHROUD OF DRIPPING DEATH", "25 points")
-
-Clan Pestilens only. This standard causes all enemy models in base contact with the unit carrying it to suffer a Strength 2 Hit which Ignores Armour Saves at the start of every Close Combat phase.
-
-#namecost("BANNER OF THE UNDER-EMPIRE", "20 points")
-
-This standard causes all enemy units in base contact with the unit carrying it to suffer 3D6 Strength 1 Hits at the start of every Close Combat phase.
-
-#namecost("DWARF-HIDE BANNER", "20 points")
-
-The unit carrying this standard gains the Hatred special rule against all units from _Warhammer: Dwarfs_.
-
-#namecost("BANNER OF THE SWARM", "15 points")
-
-The unit carrying this standard gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.
-
-#namecost("BANNER OF THE FOUR BLACK", "")
-#namecost("WINDS", "10 points")
-
-Enemies cannot use the Fly special rule to charge the unit carrying this standard.
-
-#namecost("BANNER OF VERMINOUS", "")
-#namecost("SCURRYING", "10 points")
-
-The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move.
-
+#magic-standard("BANNER OF VERMINOUS SCURRYING", 10)[The unit carrying this standard can march three times their Movement value. However, if they do so, the unit suffers 2D6 Strength 3 Hits with no saves allowed after making their March move.]
+]
 = LORDS
 
-#entry("GREY SEER", first: true)
-#profile(
-  (name: "Grey Seer", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 5, a: 1, ld: 6, points: 200),
-)
-#field("TROOP TYPE", "Infantry (Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Grey Seer is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. They may use")
-
+#unit("GREY SEER",
+  first: true,
+  profiles: (
+    (name: "Grey Seer", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 5, a: 1, ld: 6, points: 200),
+  ),
+  troop-type: "Infantry (Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Grey Seer is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. They may use",
+  magic-body: [
 a combination of spells from both Lores. In addition, they can also choose the following spell:
 
 #namecost("CURSE OF THE HORNED RAT", "")
 #namecost("Level 4 Cast on 15+", "")
 
 _Curse of the Horned Rat_ is a *direct damage* spell with a range of 18" that targets Infantry. Up to 3D6 models in the unit suffers a Wound which Ignores Armour saves. If the whole unit is removed as casualties, replace them with a number of Clanrats (armed with hand weapons and no other equipment or upgrades) equal to the number of casualties, facing the same direction as before. The casting player now controls this unit. If the casting player does not have enough models to replace the entire unit, the rest are considered destroyed.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be mounted on one of the following:
   - War-litter +10 points
   - Screaming Bell +200 points
 - May take up to 5 Warpstone Tokens 10 points/token
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
-
-#entry("WARLORD")
-#profile(
-  (name: "Warlord", m: 5, ws: 6, bs: 4, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 7, points: 85),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
 
+#unit("WARLORD",
+  profiles: (
+    (name: "Warlord", m: 5, ws: 6, bs: 4, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 7, points: 85),
+  ),
+  troop-type: "Infantry (Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Polearm +8 points
@@ -743,37 +457,35 @@ _Curse of the Horned Rat_ is a *direct damage* spell with a range of 18" that ta
   - Rat Ogre Bonebreaker +75 points
   - Brood Horror +150 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
-
-#entry("VERMINLORD")
-#profile(
-  (name: "Verminlord", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 450),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Monster (Character, Daemon, Skaven)")
-#field("BASE SIZE", "50x50 or 100x50")
-#field("MAGIC ITEMS", "")
 
-- *Doom Glaive:* Magic Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule.
-
-#field("MAGIC", "A Verminlord is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. A Warpseer")
-
+#unit("VERMINLORD",
+  profiles: (
+    (name: "Verminlord", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 450),
+  ),
+  troop-type: "Monster (Character, Daemon, Skaven)",
+  base-size: "50x50 or 100x50",
+  magic-items: (
+    rule("Doom Glaive")[Magic Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule.],
+  ),
+  magic: "A Verminlord is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. A Warpseer",
+  magic-body: [
 and Warbringer uses spells from the Lore of Ruin, a Deceiver uses spells from the Lore of Stealth and a Corruptor uses spells from the Lore of Plague.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May be upgraded to one of the following
   - Corruptor +5 points
   - Deceiver +25 points
   - Warbringer +25 points
   - Warpseer +50 points
-
-#field("SPECIAL RULES", "")
-
-- *Daemonic:* A Verminlord has the Magical Attacks and Unbreakable special rules. In addition, they have a 5+ Ward save which gets reduced to a 6+ Ward save against Magical Attacks. However, if a Verminlord loses a round of close combat it must take a Daemonic Instability test. This works like a normal Break test, except that for every point it fails the test by, it suffers one additional Wound with no saves allowed. The Daemonic Instability test can use Inspiring Presence and/or Hold Your Ground as normal.
-
-#field("UPGRADES", "")
-
+  ],
+  special-rules: (
+    rule("Daemonic")[A Verminlord has the Magical Attacks and Unbreakable special rules. In addition, they have a 5+ Ward save which gets reduced to a 6+ Ward save against Magical Attacks. However, if a Verminlord loses a round of close combat it must take a Daemonic Instability test. This works like a normal Break test, except that for every point it fails the test by, it suffers one additional Wound with no saves allowed. The Daemonic Instability test can use Inspiring Presence and/or Hold Your Ground as normal.],
+  ),
+  upgrades: [
 - *Warpseer:* A Warpseer has the following:
   - *Master of Lightning:* A Verminlord Warpseer must choose all its spells from the Lore of Ruin, and can re- roll failed casting attempts when attempting to cast _Warp Lightning_.
   - *Scry-orb:* Enchanted Item. A Verminlord Warpseer gains a 6+ Ward Save while it carries this item. Once per game, in the Shooting phase, you may choose to throw the Scry-orb. If you do so, the bonus to its Ward Save is immediately lost for the rest of the game.
@@ -796,16 +508,18 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - *Warbringer:* A Warbringer has the following:
   - *Verminous Fury:* A Verminlord Warbringer must choose all its spells from the Lore of Ruin, and can re- roll failed casting attempts when attempting to cast _Death Frenzy_.
   - *Doom Glaive and Punch-dagger:* Magic Weapon. Two hand weapons. Attacks made with these weapons have the Killing Blow and Multiple Wounds (D3) special rules.
-
-#entry("MASTER ASSASSIN")
-#profile(
-  (name: "Master Assassin", m: 6, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 9, a: 4, ld: 8, points: 155),
+  ],
+  order: ("troop-type", "base-size", "magic-items", "magic", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("OPTIONS", "")
 
+#unit("MASTER ASSASSIN",
+  profiles: (
+    (name: "Master Assassin", m: 6, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 9, a: 4, ld: 8, points: 155),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  options: [
 - May replace hand weapons with Weeping Blades +20 points
 - May choose one of the following:
   - Blowpipe +6 points
@@ -813,34 +527,37 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - May take a tail weapon +5 points
 - May take smoke bombs +5 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Strength in Numbers, Scurry Away")
-
-- *Sensei:* A Master Assassin may be the Army General despite being Hidden. However, he can only pass on his Leadership value to other units if he is not Hidden.
-
-#entry("ESHIN SORCERER LORD")
-#profile(
-  (name: "Eshin Sorcerer Lord", m: 6, ws: 4, bs: 4, s: 3, t: 4, w: 3, i: 5, a: 1, ld: 6, points: 190),
+  ],
+  special-rules: "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Strength in Numbers, Scurry Away",
+  special-rules-body: (
+    rule("Sensei")[A Master Assassin may be the Army General despite being Hidden. However, he can only pass on his Leadership value to other units if he is not Hidden.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "An Eshin Sorcerer Lord is a Level 3 Wizard who uses spells from the Lore of Stealth.")
-#field("OPTIONS", "")
 
+#unit("ESHIN SORCERER LORD",
+  profiles: (
+    (name: "Eshin Sorcerer Lord", m: 6, ws: 4, bs: 4, s: 3, t: 4, w: 3, i: 5, a: 1, ld: 6, points: 190),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "An Eshin Sorcerer Lord is a Level 3 Wizard who uses spells from the Lore of Stealth.",
+  options: [
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Poisoned Attacks, Scurry Away, Strength in Numbers, Verminous Valour")
-
-#entry("MASTER MUTATOR")
-#profile(
-  (name: "Master Mutator", m: 6, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 3, ld: 7, points: 80),
+  ],
+  special-rules: "Poisoned Attacks, Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Moulder)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("OPTIONS", "")
 
+#unit("MASTER MUTATOR",
+  profiles: (
+    (name: "Master Mutator", m: 6, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 3, ld: 7, points: 80),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Moulder)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Whip +6 points
@@ -854,21 +571,23 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
   - Rat Ogre Bonebreaker +75 points
   - Brood Horror +150 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers")
-
-- *Leader of the Pack:* Models with this special rule may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units special rule, or be deployed in the front rank if they wish. All friendly Clan Moulder units within 6" of a Hero or 12" of a Lord with this special rule gain the Cold-blooded special rule.
-
-#entry("PLAGUELORD")
-#profile(
-  (name: "Plaguelord", m: 5, ws: 5, bs: 3, s: 4, t: 5, w: 3, i: 6, a: 3, ld: 7, points: 190),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers",
+  special-rules-body: (
+    rule("Leader of the Pack")[Models with this special rule may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units special rule, or be deployed in the front rank if they wish. All friendly Clan Moulder units within 6" of a Hero or 12" of a Lord with this special rule gain the Cold-blooded special rule.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Plaguelord is a Level 2 Wizard who uses spells from the Lore of Plague.")
-#field("OPTIONS", "")
 
+#unit("PLAGUELORD",
+  profiles: (
+    (name: "Plaguelord", m: 5, ws: 5, bs: 3, s: 4, t: 5, w: 3, i: 6, a: 3, ld: 7, points: 190),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Plaguelord is a Level 2 Wizard who uses spells from the Lore of Plague.",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Flail +6 points
@@ -878,19 +597,20 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
   - Great Pox Rat +20 points
   - Plague Furnace +150 points
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers")
-
-#entry("WARLOCK MASTER")
-#profile(
-  (name: "Warlock Master", m: 5, ws: 3, bs: 4, s: 3, t: 4, w: 3, i: 4, a: 1, ld: 6, points: 160),
+  ],
+  special-rules: "Frenzy, Scurry Away, Strength in Numbers",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Skryre)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("MAGIC", "A Warlock Master is a Level 3 Wizard who can use the spells from the Lore of Ruin.")
-#field("OPTIONS", "")
 
+#unit("WARLOCK MASTER",
+  profiles: (
+    (name: "Warlock Master", m: 5, ws: 3, bs: 4, s: 3, t: 4, w: 3, i: 4, a: 1, ld: 6, points: 160),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Skryre)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  magic: "A Warlock Master is a Level 3 Wizard who can use the spells from the Lore of Ruin.",
+  options: [
 - May take a polearm +2 points
 - May choose one of the following:
   - Warplock Pistol +6 points
@@ -907,20 +627,22 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - May take a tail weapon +3 points
 - May take up to 3 Warpstone Tokens 10 points/token
 - May take Magic Items up to a total of 100 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
+)
 
 = HEROES
 
-#entry("CHIEFTAIN", first: true)
-#profile(
-  (name: "Chieftain", m: 5, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 45),
-)
-#field("TROOP TYPE", "Infantry (Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
-
+#unit("CHIEFTAIN",
+  first: true,
+  profiles: (
+    (name: "Chieftain", m: 5, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 45),
+  ),
+  troop-type: "Infantry (Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - One Chieftain may carry the Battle Standard +25 points
 - May choose one of the following:
   - Additional hand weapon +2 points
@@ -934,21 +656,22 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - May take a tail weapon +5 points
 - May take a Rat Hound Bodyguard +3 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
-#field("UPGRADES", "")
-
-- *Battle Standard:* The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.
-
-#entry("ASSASSIN")
-#profile(
-  (name: "Assassin", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 7, points: 110),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  upgrades: (
+    rule("Battle Standard")[The Battle Standard Bearer can have a magic banner with no points limit. However, a model carrying a magic standard can only carry other magic items up to a total of 25 points.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("OPTIONS", "")
 
+#unit("ASSASSIN",
+  profiles: (
+    (name: "Assassin", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 7, points: 110),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  options: [
 - May replace hand weapons with Weeping Blades +20 points
 - May choose one of the following:
   - Blowpipe +5 points
@@ -956,33 +679,35 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - May take a tail weapon +5 points
 - May take smoke bombs +5 points
 - May Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Strength in Numbers, Scurry Away")
-
-#entry("ESHIN SORCERER")
-#profile(
-  (name: "Eshin Sorcerer", m: 6, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 5, points: 75),
+  ],
+  special-rules: "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Strength in Numbers, Scurry Away",
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "An Eshin Sorcerer is a Level 1 Wizard who uses spells from the Lore of Stealth.")
-#field("OPTIONS", "")
 
+#unit("ESHIN SORCERER",
+  profiles: (
+    (name: "Eshin Sorcerer", m: 6, ws: 4, bs: 4, s: 3, t: 3, w: 2, i: 5, a: 1, ld: 5, points: 75),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "An Eshin Sorcerer is a Level 1 Wizard who uses spells from the Lore of Stealth.",
+  options: [
 - May be upgraded to a Level 2 Wizard +35 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Poisoned Attacks, Scurry Away, Strength in Numbers, Verminous Valour")
-
-#entry("MASTER MOULDER")
-#profile(
-  (name: "Master Moulder", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 6, points: 30),
+  ],
+  special-rules: "Poisoned Attacks, Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Moulder)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("OPTIONS", "")
 
+#unit("MASTER MOULDER",
+  profiles: (
+    (name: "Master Moulder", m: 6, ws: 4, bs: 3, s: 4, t: 4, w: 2, i: 5, a: 2, ld: 6, points: 30),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Moulder)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +2 points
   - Whip +4 points
@@ -995,40 +720,43 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
   - Gnaw-beast +36 points
   - Rat Ogre Bonebreaker +75 points
 - May Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers")
-
-- *Leader of the Pack:* Models with this special rule may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units special rule, or be deployed in the front rank if they wish. All friendly Clan Moulder units within 6" of a Hero or 12" of a Lord with this special rule gain the Cold-blooded special rule.
-
-#entry("PLAGUE PRIEST")
-#profile(
-  (name: "Plague Priest", m: 5, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 2, ld: 6, points: 95),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers",
+  special-rules-body: (
+    rule("Leader of the Pack")[Models with this special rule may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units special rule, or be deployed in the front rank if they wish. All friendly Clan Moulder units within 6" of a Hero or 12" of a Lord with this special rule gain the Cold-blooded special rule.],
+  ),
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("MAGIC", "A Plague Priest is a Level 1 Wizard who uses spells from the Lore of Plague.")
-#field("OPTIONS", "")
 
+#unit("PLAGUE PRIEST",
+  profiles: (
+    (name: "Plague Priest", m: 5, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 2, ld: 6, points: 95),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  magic: "A Plague Priest is a Level 1 Wizard who uses spells from the Lore of Plague.",
+  options: [
 - May choose one of the following:
   - Additional hand weapon +3 points
   - Flail +6 points
   - Great weapon +9 points
   - Plague censer +18 points
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers")
-
-#entry("WARLOCK ENGINEER")
-#profile(
-  (name: "Warlock Engineer", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 1, ld: 5, points: 65),
+  ],
+  special-rules: "Frenzy, Scurry Away, Strength in Numbers",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Character, Skaven, Clan Skryre)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("MAGIC", "A Warlock Engineer is a Level 1 Wizard who can use the spells from the Lore of Ruin.")
-#field("OPTIONS", "")
 
+#unit("WARLOCK ENGINEER",
+  profiles: (
+    (name: "Warlock Engineer", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 1, ld: 5, points: 65),
+  ),
+  troop-type: "Infantry (Character, Skaven, Clan Skryre)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour",
+  magic: "A Warlock Engineer is a Level 1 Wizard who can use the spells from the Lore of Ruin.",
+  options: [
 - May be upgraded to a Level 2 Wizard +35 points
 - May take a polearm +2 points
 - May choose one of the following:
@@ -1046,60 +774,68 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
 - May take a tail weapon +2 points
 - May take a Warpstone Token 10 points
 - May Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "equipment", "magic", "options", "special-rules"),
+)
 
 = CHARACTER MOUNTS
 
-#entry("WAR-LITTER", first: true)
-#profile(
-  (name: "War-litter", m: 5, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 5, a: 4, ld: 5, points: "-"),
-)
-#field("TROOP TYPE", "Infantry (Skaven)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers.")
-#field("NOTES", "")
-
+#unit("WAR-LITTER",
+  first: true,
+  profiles: (
+    (name: "War-litter", m: 5, ws: 4, bs: 3, s: 4, t: "-", w: "-", i: 5, a: 4, ld: 5, points: "-"),
+  ),
+  troop-type: "Infantry (Skaven)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Scurry Away, Strength in Numbers.",
+  notes: [
 - A War-litter has a Line of Sight value of 2.
-
-#entry("GREAT POX RAT")
-#profile(
-  (name: "Great Pox Rat", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 2, points: "-"),
+  ],
 )
-#field("TROOP TYPE", "War Beast (Skaven)")
-#field("BASE SIZE", "20x40, 25x50, 40x40 or 50x50")
-#field("SPECIAL RULES", "Poisoned Attacks, Scurry Away")
 
-- *Skittering:* A model mounted on a Great Pox Rat is treated as an Infantry model for the purpose of 'Look Out, Sir!'.
-
-#compact-entry("GNAW-BEAST")[
-#profile(
-  (name: "Gnaw-beast", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 4, ld: 5, points: "-"),
+#unit("GREAT POX RAT",
+  profiles: (
+    (name: "Great Pox Rat", m: 7, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 2, points: "-"),
+  ),
+  troop-type: "War Beast (Skaven)",
+  base-size: "20x40, 25x50, 40x40 or 50x50",
+  special-rules: "Poisoned Attacks, Scurry Away",
+  special-rules-body: (
+    rule("Skittering")[A model mounted on a Great Pox Rat is treated as an Infantry model for the purpose of 'Look Out, Sir!'.],
+  ),
 )
-#field("TROOP TYPE", "Monstrous Beast (Skaven)")
-#field("BASE SIZE", "50x75")
-#field("SPECIAL RULES", "Scurry Away")
-]
 
-#compact-entry("RAT OGRE BONEBREAKER")[
-#profile(
-  (name: "Bonebreaker", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 3, a: 4, ld: 5, points: "-"),
+#unit("GNAW-BEAST",
+  compact: true,
+  profiles: (
+    (name: "Gnaw-beast", m: 8, ws: 4, bs: 0, s: 4, t: 4, w: 3, i: 4, a: 4, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Skaven)",
+  base-size: "50x75",
+  special-rules: "Scurry Away",
 )
-#field("TROOP TYPE", "Monstrous Beast (Skaven)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Scurry Away")
-]
 
-#entry("PLAGUE FURNACE")
-#profile(
-  (name: "Plague Furnace", m: 5, ws: "-", bs: "-", s: "-", t: 6, w: 6, i: "-", a: "-", ld: "-", points: "-"),
-  (name: "Plague Monk", m: "-", ws: 3, bs: "-", s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+#unit("RAT OGRE BONEBREAKER",
+  compact: true,
+  profiles: (
+    (name: "Bonebreaker", m: 6, ws: 4, bs: 0, s: 5, t: 5, w: 3, i: 3, a: 4, ld: 5, points: "-"),
+  ),
+  troop-type: "Monstrous Beast (Skaven)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Scurry Away",
 )
-#field("TROOP TYPE", "Shrine")
-#field("CREW", "1 Plague Monk (Skaven, Clan Pestilens)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Fear, Frenzy, Magic Resistance (2)")
 
+#unit("PLAGUE FURNACE",
+  profiles: (
+    (name: "Plague Furnace", m: 5, ws: "-", bs: "-", s: "-", t: 6, w: 6, i: "-", a: "-", ld: "-", points: "-"),
+    (name: "Plague Monk", m: "-", ws: 3, bs: "-", s: 3, t: "-", w: "-", i: 4, a: 1, ld: "-", points: ""),
+  ),
+  troop-type: "Shrine",
+  crew: "1 Plague Monk (Skaven, Clan Pestilens)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Fear, Frenzy, Magic Resistance (2)",
+  special-rules-body: [
 - *Altar of the Horned Rat:* This model and any unit it joins has the Stubborn special rule.
 - *Billowing Death:* Billowing Death follows the rules for Breath Weapons, but can be used in every turn. All models Hit must pass a Toughness test or suffer a Wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for this test.
 - *Wrecker Attack:* The Plague Furnace may inflict a special attack after all other attacks have been resolved, inflicting an Artillery dice's worth of Hits against a single enemy unit to their front. A roll of a Misfire means something has gone wrong; roll a D6 on the Plague Furnace Mishap chart below.
@@ -1110,20 +846,22 @@ Strength 5 hits."), ("3-5", "Bilious Cloud: Immediately work out a special Billo
 unit pushing the Plague Furnace."), ("6", "Maddening Fumes: Any unit pushing the Plague Furnace makes an additional full round of close
 combat attacks against any enemy unit in base contact. After this, they suffer D6 Wounds. Any
 casualties caused count towards combat resolution.")))
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Plague Furnace has a Line of Sight value of 5.
-
-#entry("SCREAMING BELL")
-#profile(
-  (name: "Screaming Bell", m: 5, ws: "-", bs: "-", s: "-", t: 6, w: 6, i: "-", a: "-", ld: "-", points: "-"),
-  (name: "Rat Ogre", m: "-", ws: 3, bs: "-", s: 5, t: "-", w: "-", i: 4, a: 3, ld: "-", points: ""),
+  ],
 )
-#field("TROOP TYPE", "Shrine")
-#field("CREW", "1 Rat Ogre (Skaven)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("SPECIAL RULES", "Fear, Magic Resistance (2), Ward save (4+)")
 
+#unit("SCREAMING BELL",
+  profiles: (
+    (name: "Screaming Bell", m: 5, ws: "-", bs: "-", s: "-", t: 6, w: 6, i: "-", a: "-", ld: "-", points: "-"),
+    (name: "Rat Ogre", m: "-", ws: 3, bs: "-", s: 5, t: "-", w: "-", i: 4, a: 3, ld: "-", points: ""),
+  ),
+  troop-type: "Shrine",
+  crew: "1 Rat Ogre (Skaven)",
+  base-size: "50x100 or 60x100",
+  special-rules: "Fear, Magic Resistance (2), Ward save (4+)",
+  special-rules-body: [
 - *Above the Masses:* The Grey Seer may use Verminous Valor to refuse a challenge, but is not moved to the back of the unit. The Grey Seer is not moved but cannot fight or be attacked for the duration of that round of close combat.
 - *Altar of the Horned Rat:* This model and any unit it joins has the Stubborn special rule.
 - *Tolling the Bell:* In your Magic phase, immediately after generating power dice, you can choose to ring the Screaming Bell. The owning player can choose to roll between 1\-3 D6's and consult the table below to see what effect it has. If any doubles are rolled, the unit pushing the Screaming Bell immediately takes D6 Strength 4 Hits in addition to the result on the chart. If a triple is rolled, the unit pushing the Bell immediately suffers 2D6 Strength 5 hits, and the Screaming Bell itself suffer a single Strength 5 hit in addition to the result on the chart. If the Screaming Bell suffers one or more wounds inflicted by a shooting attack with a Strength of 5 or more, it will immediately ring once using one D6, even if it is destroyed as a result of the attack.
@@ -1145,43 +883,46 @@ re-roll failed To Hit and To Wound rolls until the end of the player turn. Any f
 units within 12\" of the Screaming Bell and not in close combat can immediately move using
 the Random Movement (D6) special rule."), ("18", "Apocalyptic Doom: The Screaming Bell is destroyed. All models within 12\" take a Strength
 4 hit with the Ignores Armour saves special rule.")))
-#field("NOTES", "")
-
+  ],
+  notes: [
 - A Screaming Bell has a Line of Sight value of 5.
+  ],
+)
 
 = CORE UNITS
 
-#entry("CLANRATS", first: true)
-#profile(
-  (name: "Clanrat", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 4),
-)
-#field("UNIT SIZE", "20+")
-#field("TROOP TYPE", "Infantry (Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, light armour, shield")
-#field("OPTIONS", "")
-
+#unit("CLANRATS",
+  first: true,
+  profiles: (
+    (name: "Clanrat", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 4),
+  ),
+  unit-size: "20+",
+  troop-type: "Infantry (Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, light armour, shield",
+  options: [
 - May take spears +0.5 point/model
 - May upgrade one Clanrat to a Leader +5 points
 - May upgrade one Clanrat to a Musician +5 points
 - May upgrade one Clanrat to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Strength in Numbers",
+  notes: [
 - You may not have more units of any single Core Unit type than you have units of Clanrats.
-
-#entry("STORMVERMIN")
-#profile(
-  (name: "Stormvermin", m: 5, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 6, points: 6),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, medium armour")
-#field("OPTIONS", "")
 
+#unit("STORMVERMIN",
+  profiles: (
+    (name: "Stormvermin", m: 5, ws: 4, bs: 3, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 6, points: 6),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, medium armour",
+  options: [
 - May take polearms +2 points/model
 - May take shields +1 point/model
 - May take heavy armour +1.5 points/model
@@ -1190,153 +931,162 @@ the Random Movement (D6) special rule."), ("18", "Apocalyptic Doom: The Screamin
 - May upgrade one Stormvermin to a Musician +5 points
 - May upgrade one Stormvermin to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 50 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers")
-
-#entry("SKAVENSLAVES")
-#profile(
-  (name: "Skavenslave", m: 5, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 2, points: 2),
-  (name: "Pawleader", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 4, points: 15),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "20+")
-#field("TROOP TYPE", "Infantry (Skaven)")
-#field("HANDLERS", "1 Pawleader (Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon")
-#field("OPTIONS", "")
 
+#unit("SKAVENSLAVES",
+  profiles: (
+    (name: "Skavenslave", m: 5, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 2, points: 2),
+    (name: "Pawleader", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 4, points: 15),
+  ),
+  unit-size: "20+",
+  troop-type: "Infantry (Skaven)",
+  handlers: "1 Pawleader (Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon",
+  options: [
 - May take one of the following:
   - Spears +0.5 point/model
   - Shields +1 point/model
   - Polearms +2 points/model
   - Slings +2 points/model
 - May upgrade one Skavenslave to a Musician +5 points
-
-#field("SPECIAL RULES", "Expendable, Mixed Unit, Scurry Away, Strength in Numbers")
-
-- *Cornered Rats:* If a unit of Skavenslaves breaks from combat, any units that they flee through (friend or foe) immediately take D6 Strength 3 hits for each complete rank of 5 or more Skavenslaves left in the unit. The broken unit is then removed as casualties.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Expendable, Mixed Unit, Scurry Away, Strength in Numbers",
+  special-rules-body: (
+    rule("Cornered Rats")[If a unit of Skavenslaves breaks from combat, any units that they flee through (friend or foe) immediately take D6 Strength 3 hits for each complete rank of 5 or more Skavenslaves left in the unit. The broken unit is then removed as casualties.],
+  ),
+  notes: [
 - You must include 1 Pawleader for every 20 Skavenslaves in the unit.
-
-#compact-entry("RAT SWARMS")[
-#profile(
-  (name: "Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 25),
+  ],
+  order: ("unit-size", "troop-type", "handlers", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("UNIT SIZE", "2-10")
-#field("TROOP TYPE", "Swarm (Skaven)")
-#field("BASE SIZE", "40x40")
-]
 
-#entry("NIGHT RUNNERS")
-#profile(
-  (name: "Night Runner", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 5, points: 6),
+#unit("RAT SWARMS",
+  compact: true,
+  profiles: (
+    (name: "Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 25),
+  ),
+  unit-size: "2-10",
+  troop-type: "Swarm (Skaven)",
+  base-size: "40x40",
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("OPTIONS", "")
 
+#unit("NIGHT RUNNERS",
+  profiles: (
+    (name: "Night Runner", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 5, a: 1, ld: 5, points: 6),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  options: [
 - May replace throwing weapons with slings +2 points/model
 - May upgrade one Night Runner to a Leader +5 points
-
-#field("SPECIAL RULES", "Scurry Away, Skirmishers, Strength in Numbers")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Skirmishers, Strength in Numbers",
+  notes: [
 - If your army General is a Clan Eshin Character, the requirement to take Clanrats does not apply.
-
-#entry("GIANT RATS")
-#profile(
-  (name: "Giant Rat", m: 6, ws: 3, bs: 0, s: 2, t: 2, w: 1, i: 4, a: 1, ld: 3, points: 2),
-  (name: "Packmaster", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 5),
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "War Beast (Skaven, Clan Moulder)")
-#field("HANDLERS", "2 Packmasters (Skaven, Clan Moulder)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, whip, light armour (Packmaster only)")
-#field("SPECIAL RULES", "Fight in Extra Ranks (1), Mixed Unit, Scurry Away, Strength in Numbers")
-#field("NOTES", "")
 
+#unit("GIANT RATS",
+  profiles: (
+    (name: "Giant Rat", m: 6, ws: 3, bs: 0, s: 2, t: 2, w: 1, i: 4, a: 1, ld: 3, points: 2),
+    (name: "Packmaster", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 5),
+  ),
+  unit-size: "10+",
+  troop-type: "War Beast (Skaven, Clan Moulder)",
+  handlers: "2 Packmasters (Skaven, Clan Moulder)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, whip, light armour (Packmaster only)",
+  special-rules: "Fight in Extra Ranks (1), Mixed Unit, Scurry Away, Strength in Numbers",
+  notes: [
 - You must include 1 Packmaster for every 5 Giant Rat in the unit.
-
-#entry("PLAGUE MONKS")
-#profile(
-  (name: "Plague Monk", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: 8),
+  ],
 )
-#field("UNIT SIZE", "10+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons")
-#field("OPTIONS", "")
 
+#unit("PLAGUE MONKS",
+  profiles: (
+    (name: "Plague Monk", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: 8),
+  ),
+  unit-size: "10+",
+  troop-type: "Infantry (Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons",
+  options: [
 - May upgrade one Plague Monk to a Leader +5 points
 - May upgrade one Plague Monk to a Musician +5 points
 - May upgrade one Plague Monk to a Standard Bearer +10 points
   - May take a Magic Standard worth up to 25 points
-
-#field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Frenzy, Scurry Away, Strength in Numbers",
+  notes: [
 - If your army General is a Clan Pestilens Character, the requirement to take Clanrats does not apply.
+  ],
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
+)
 
 = SPECIAL UNITS
 
-#entry("GUTTER RUNNERS", first: true)
-#profile(
-  (name: "Gutter Runner", m: 6, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 6, points: 10),
-)
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-
-- *Snare-nets:* When it is their turn to attack, roll a D6 for each model armed with snare-nets. On a 2+, one enemy model in base contact is ensnared and suffers \-1 Attack for the remainder of the close combat phase.
-
-#field("OPTIONS", "")
-
+#unit("GUTTER RUNNERS",
+  first: true,
+  profiles: (
+    (name: "Gutter Runner", m: 6, ws: 4, bs: 4, s: 3, t: 3, w: 1, i: 6, a: 1, ld: 6, points: 10),
+  ),
+  unit-size: "5+",
+  troop-type: "Infantry (Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  equipment-body: (
+    rule("Snare-nets")[When it is their turn to attack, roll a D6 for each model armed with snare-nets. On a 2+, one enemy model in base contact is ensnared and suffers \-1 Attack for the remainder of the close combat phase.],
+  ),
+  options: [
 - May have Poisoned Attacks (excluding slings) +2 points/model
 - May take snare-nets +2 points/model
 - May replace throwing weapons with slings +2 points/model
 - May upgrade one Gutter Runner to a Leader +5 points
-
-#field("SPECIAL RULES", "Ambushers, Dodge (6+), Scurry Away, Strength in Numbers, Scouts, Skirmishers")
-
-#entry("WOLF RATS")
-#profile(
-  (name: "Wolf Rat", m: 8, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 4, points: 6),
+  ],
+  special-rules: "Ambushers, Dodge (6+), Scurry Away, Strength in Numbers, Scouts, Skirmishers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "War Beast (Skaven, Clan Moulder)")
-#field("BASE SIZE", "25x50")
-#field("OPTIONS", "")
 
+#unit("WOLF RATS",
+  profiles: (
+    (name: "Wolf Rat", m: 8, ws: 4, bs: 0, s: 4, t: 3, w: 1, i: 4, a: 1, ld: 4, points: 6),
+  ),
+  unit-size: "5+",
+  troop-type: "War Beast (Skaven, Clan Moulder)",
+  base-size: "25x50",
+  options: [
 - May take one of the following:
   - Pox Feeders +1 point/model
   - Warpstone Shard Teeth +1 point/model
   - Bloated Mutants +2 points/model
-
-#field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers")
-#field("UPGRADES", "")
-
-- *Bloated Mutants:* The Wolf Rats gain +1 Toughness but suffer \-1 to their Initiative.
-- *Pox Feeders:* The unit gains the Poisoned Attacks special rule.
-- *Warpstone Shard Teeth:* The unit gains the Armour Piercing (1) and Magical Attacks special rules.
-
-#entry("RAT OGRES")
-#profile(
-  (name: "Rat Ogre", m: 6, ws: 3, bs: 1, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 33),
-  (name: "Packmaster", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 5),
+  ],
+  special-rules: "Frenzy, Scurry Away, Strength in Numbers",
+  upgrades: (
+    rule("Bloated Mutants")[The Wolf Rats gain +1 Toughness but suffer \-1 to their Initiative.],
+    rule("Pox Feeders")[The unit gains the Poisoned Attacks special rule.],
+    rule("Warpstone Shard Teeth")[The unit gains the Armour Piercing (1) and Magical Attacks special rules.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("UNIT SIZE", "2+")
-#field("TROOP TYPE", "Monstrous Infantry (Skaven, Clan Moulder)")
-#field("HANDLERS", "1 Packmaster (Skaven, Clan Moulder)")
-#field("BASE SIZE", "40x40 or 50x50 (Rat Ogres), 20x20 or 25x25 (Packmasters)")
-#field("EQUIPMENT", "Hand weapon, whip, light armour (Packmaster only)")
-#field("OPTIONS", "")
 
+#unit("RAT OGRES",
+  profiles: (
+    (name: "Rat Ogre", m: 6, ws: 3, bs: 1, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 33),
+    (name: "Packmaster", m: 6, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 5),
+  ),
+  unit-size: "2+",
+  troop-type: "Monstrous Infantry (Skaven, Clan Moulder)",
+  handlers: "1 Packmaster (Skaven, Clan Moulder)",
+  base-size: "40x40 or 50x50 (Rat Ogres), 20x20 or 25x25 (Packmasters)",
+  equipment: "Hand weapon, whip, light armour (Packmaster only)",
+  options: [
 - May choose up to two of the following:
   - Brain Transplant +3 points/model
   - Extra Extremities +3 points/model
@@ -1344,99 +1094,105 @@ the Random Movement (D6) special rule."), ("18", "Apocalyptic Doom: The Screamin
   - Armoured +5 points/model
   - Resilient +6 points/model
   - Troll-blooded +6 points/model
-
-#field("SPECIAL RULES", "Frenzy, Mixed Unit, Scurry Away, Strength in Numbers, Stupidity")
-#field("UPGRADES", "")
-
-- *Armoured:* All Rat Ogres in the unit gain medium armour.
-- *Brain Transplant:* All Rat Ogres in the unit are no longer subject to Stupidity or Frenzy.
-- *Extra Extremities:* All Rat Ogres in the unit gain +1 Attack.
-- *Quadrupedal:* All Rat Ogres in the unit gain +1 Movement.
-- *Resilient:* All Rat Ogres in the unit gain +1 Toughness.
-- *Troll-blooded:* All Rat Ogres in the unit gain the Regeneration (5+) special rule.
-
-#field("NOTES", "")
-
+  ],
+  special-rules: "Frenzy, Mixed Unit, Scurry Away, Strength in Numbers, Stupidity",
+  upgrades: (
+    rule("Armoured")[All Rat Ogres in the unit gain medium armour.],
+    rule("Brain Transplant")[All Rat Ogres in the unit are no longer subject to Stupidity or Frenzy.],
+    rule("Extra Extremities")[All Rat Ogres in the unit gain +1 Attack.],
+    rule("Quadrupedal")[All Rat Ogres in the unit gain +1 Movement.],
+    rule("Resilient")[All Rat Ogres in the unit gain +1 Toughness.],
+    rule("Troll-blooded")[All Rat Ogres in the unit gain the Regeneration (5+) special rule.],
+  ),
+  notes: [
 - You must include 1 Packmaster for every 2 Rat Ogres in the unit.
-
-#entry("PLAGUE CENSER BEARERS")
-#profile(
-  (name: "Plague Censer Bearer", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: 13),
+  ],
+  order: ("unit-size", "troop-type", "handlers", "base-size", "equipment", "options", "special-rules", "upgrades", "notes"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Plague censer")
-#field("OPTIONS", "")
 
+#unit("PLAGUE CENSER BEARERS",
+  profiles: (
+    (name: "Plague Censer Bearer", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 1, i: 3, a: 1, ld: 5, points: 13),
+  ),
+  unit-size: "5+",
+  troop-type: "Infantry (Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  equipment: "Plague censer",
+  options: [
 - May upgrade one Plague Censer Bearer to a Leader +5 points
-
-#field("SPECIAL RULES", "Frenzy, Hatred, Scurry Away, Skirmishers, Strength in Numbers")
-
-- *Plague Disciples:* A unit of Plague Censer Bearers within 3" of a friendly units of Plague Monks may use the "Look Out, Sir" rule as if they were characters. In addition, if the Plague Censer Bearers are within 6" of a Plague Furnace they have the Stubborn special rule.
-
-#compact-entry("PLAGUE RAT SWARMS")[
-#profile(
-  (name: "Plague Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 30),
+  ],
+  special-rules: "Frenzy, Hatred, Scurry Away, Skirmishers, Strength in Numbers",
+  special-rules-body: (
+    rule("Plague Disciples")[A unit of Plague Censer Bearers within 3" of a friendly units of Plague Monks may use the "Look Out, Sir" rule as if they were characters. In addition, if the Plague Censer Bearers are within 6" of a Plague Furnace they have the Stubborn special rule.],
+  ),
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "2-10")
-#field("TROOP TYPE", "Swarm (Skaven, Clan Pestilens)")
-#field("BASE SIZE", "40x40")
-#field("SPECIAL RULES", "Poisoned Attacks")
-]
 
-#entry("WARPLOCK JEZZAILS")
-#profile(
-  (name: "Warplock Jezzail", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 20),
+#unit("PLAGUE RAT SWARMS",
+  compact: true,
+  profiles: (
+    (name: "Plague Rat Swarm", m: 6, ws: 3, bs: 0, s: 1, t: 1, w: 8, i: 4, a: 8, ld: 3, points: 30),
+  ),
+  unit-size: "2-10",
+  troop-type: "Swarm (Skaven, Clan Pestilens)",
+  base-size: "40x40",
+  special-rules: "Poisoned Attacks",
 )
-#field("UNIT SIZE", "3+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x25 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Warplock Jezzail, pavise")
 
+#unit("WARPLOCK JEZZAILS",
+  profiles: (
+    (name: "Warplock Jezzail", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 20),
+  ),
+  unit-size: "3+",
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x25 or 30x60",
+  equipment: "Hand weapon, Warplock Jezzail, pavise",
+  equipment-body: [
 - *Warplock Jezzail:* Warplock Jezzails have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "6", "Armour Piercing (1), Magical Attacks, Move or Fire, Unstable Ammunition"))
 
 - *Pavise:* A pavise gives the model a 4+ armour save against missile attacks to the front.
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May upgrade one Warplock Jezzail to a Leader +5 points
   - May take Warlock Optics +10 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers")
-
-#entry("POISONED WIND GLOBADIERS")
-#profile(
-  (name: "Poisoned Wind Globadier", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 8),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("UNIT SIZE", "5+")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Poisoned Wind Globes, gas mask")
 
+#unit("POISONED WIND GLOBADIERS",
+  profiles: (
+    (name: "Poisoned Wind Globadier", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: 8),
+  ),
+  unit-size: "5+",
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Poisoned Wind Globes, gas mask",
+  equipment-body: [
 - *Poisoned Wind Globes:* Poisoned Wind Globes have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("8\"", "n/a", "Ignores Armour saves, Magical Attacks, Quick to Fire"))
 
 Models hit by a Poisoned Wind Globe must pass a Toughness test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself instead (including when firing into close combat).
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - May take light armour +0.5 point/model
 - May upgrade one Poisoned Wind Globadier to a Leader +5 points
-
-#field("SPECIAL RULES", "Scurry Away, Skirmishers, Strength in Numbers")
-
-#entry("WARPFIRE THROWER")
-#profile(
-  (name: "Warpfire Thrower", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 65),
+  ],
+  special-rules: "Scurry Away, Skirmishers, Strength in Numbers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Warpfire Thrower")
 
+#unit("WARPFIRE THROWER",
+  profiles: (
+    (name: "Warpfire Thrower", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 65),
+  ),
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, Warpfire Thrower",
+  equipment-body: [
 - *Warpfire Thrower:* A Warpfire Thrower is a Fire Thrower with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("n/a", "5", "Flaming Attacks, Magical Attacks, Multiple Wounds (D3), Slow to Fire"))
@@ -1448,19 +1204,21 @@ In case a Misfire is rolled, roll a D6 and consult the Warpfire Thrower Misfire 
 template suffers a Hit from the Warpfire Thrower. After this, the Warpfire Thrower is removed from
 play as a casualty."), ("3-4", "Fuel Leak: The Weapon Team flees in random direction as decided by the scatter dice before
 exploding. After movement, the Warpfire Thrower explodes exactly as the Whompfff result above."), ("5-6", "Pppphhtt: The Warpfire Thrower may not fire this turn.")))
-#field("SPECIAL RULES", "Scurry Away, Weapon Team")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Weapon Team",
+  notes: [
 - Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units.
-
-#entry("RATLING GUN")
-#profile(
-  (name: "Ratling Gun", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 55),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Ratling Gun")
 
+#unit("RATLING GUN",
+  profiles: (
+    (name: "Ratling Gun", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 55),
+  ),
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, Ratling Gun",
+  equipment-body: [
 - *Ratling Gun:* A Ratling Gun is an Organ Gun with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "4", "Armour Piercing (1), Magical Attacks, Multiple Shots (Artillery Dice), Rapid Fire, Ponderous"))
@@ -1473,19 +1231,21 @@ removed from play as a casualty."), ("3-4", "Spins Wildly: Resolve the shots fro
 fires D6 shots at all units (roll separately for each one) within 24\" that you can draw Line of Sight to
 in all directions from the Ratling Gun."), ("5-6", "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is
 ignored.")))
-#field("SPECIAL RULES", "Scurry Away, Weapon Team")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Weapon Team",
+  notes: [
 - Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units.
-
-#entry("WARPVOLT SCOURGER")
-#profile(
-  (name: "Warpvolt Scourger", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 50),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Warpvolt Scourger")
 
+#unit("WARPVOLT SCOURGER",
+  profiles: (
+    (name: "Warpvolt Scourger", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 50),
+  ),
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, Warpvolt Scourger",
+  equipment-body: [
 - *Warpvolt Scourger:* A Warpvolt Scourger is an Artillery weapon with the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("24\"", "6", "Lightning Attacks, Magical Attacks, Multiple Shots (D6), Ponderous"))
@@ -1497,19 +1257,21 @@ If you roll a 1 when determining the number of shots fired, the Warpvolt Scourge
 the template suffers a Hit from the Warpvolt Scourger. After this, the Warpvolt Scourger is removed
 from play as a casualty."), ("3-4", "Short Circuit: All units within 6\" suffer D3 Hits from the Warpvolt Scourger. The Warpvolt
 Scourger suffer 1 Hit."), ("5-6", "Power Outage: The Warpvolt Scourger does not fire this turn.")))
-#field("SPECIAL RULES", "Scurry Away, Weapon Team")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Weapon Team",
+  notes: [
 - Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units.
-
-#entry("POISONED WIND MORTAR")
-#profile(
-  (name: "Poisoned Wind Mortar", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 60),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Poisoned Wind Mortar, gas mask")
 
+#unit("POISONED WIND MORTAR",
+  profiles: (
+    (name: "Poisoned Wind Mortar", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 60),
+  ),
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, Poisoned Wind Mortar, gas mask",
+  equipment-body: [
 - *Poisoned Wind Mortar:* A Poisoned Wind Mortar is a Mortar that uses the small template and the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("8-36\"", "n/a", "Ignores Armour Saves, Magical Attacks, Slow to Fire"))
@@ -1520,19 +1282,21 @@ Models hit by a Poisoned Wind Mortar must pass a Toughness test or suffer a Woun
 #chart((("D6", "Result"), ("1-2", "Foomph: Place the large round template over the Poisoned Wind Mortar. Any model touched by the
 template suffers a Hit from the Poisoned Wind Mortar. After this, the Poisoned Wind Mortar is
 removed from play as a casualty."), ("3-4", "Clogged: The Poisoned Wind Mortar may not fire this turn."), ("5-6", "Wildly off Target: The template scatters 3D6\" from its original position. Resolve any hits as normal.")))
-#field("SPECIAL RULES", "Scurry Away, Weapon Team")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away, Weapon Team",
+  notes: [
 - Each Warpfire Thrower, Ratling Gun, Warpvolt Scourger and Poisoned Wind Mortar counts as the same Special choice for the purpose of taking duplicate units.
-
-#entry("WARP-GRINDER")
-#profile(
-  (name: "Warp-grinder", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 30),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Skaven, Clan Skryre)")
-#field("BASE SIZE", "25x50 or 30x60")
-#field("EQUIPMENT", "Hand weapon, Warp-grinder")
 
+#unit("WARP-GRINDER",
+  profiles: (
+    (name: "Warp-grinder", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 5, points: 30),
+  ),
+  troop-type: "Infantry (Skaven, Clan Skryre)",
+  base-size: "25x50 or 30x60",
+  equipment: "Hand weapon, Warp-grinder",
+  equipment-body: [
 - *Warp-grinder:* A Warp-grinder uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "4", "Impact Hits (D3), Magical Attacks"))
@@ -1557,23 +1321,24 @@ they have the Always Strikes Last special rule for the remainder of the turn. Af
 grinder is removed from play as a casualty."), ("5-6", "Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18\" of the
 original position on the table and this is where the Warp-grinder and any unit deploying with it
 emerge. They cannot move or charge on the turn they emerge.")))
-#field("SPECIAL RULES", "Scurry Away, Weapon Team")
-
-#entry("DOOM-FLAYER")
-#profile(
-  (name: "Doom-flayer", m: 6, ws: "-", bs: "-", s: 4, t: 4, w: 2, i: "-", a: "-", ld: "-", points: 30),
-  (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 4, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: "Scurry Away, Weapon Team",
 )
-#field("TROOP TYPE", "Chariot (Armour save 6+, Skaven, Clan Skryre)")
-#field("CREW", "1 Crew (Skaven)")
-#field("BASE SIZE", "25x50, 30x60 or 50x50")
-#field("EQUIPMENT", "Hand weapon, light armour")
-#field("OPTIONS", "")
 
+#unit("DOOM-FLAYER",
+  profiles: (
+    (name: "Doom-flayer", m: 6, ws: "-", bs: "-", s: 4, t: 4, w: 2, i: "-", a: "-", ld: "-", points: 30),
+    (name: "Crew", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 4, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 6+, Skaven, Clan Skryre)",
+  crew: "1 Crew (Skaven)",
+  base-size: "25x50, 30x60 or 50x50",
+  equipment: "Hand weapon, light armour",
+  options: [
 - May take an additional crew +5 points
-
-#field("SPECIAL RULES", "Scurry Away")
-
+  ],
+  special-rules: "Scurry Away",
+  special-rules-body: [
 - *The Best Defence:* The Doom-flayer gains +2 to its armour save against all models attacking it from the front.
 - *Whirling Death:* Instead of attacking normally, the Doom-flayer causes one artillery dice worth of Impact Hits at the start of each close combat phase. In case a Misfire is rolled, roll a D6 and consult the Doom-flayer Mishap chart.
 
@@ -1582,32 +1347,37 @@ emerge. They cannot move or charge on the turn they emerge.")))
 suffers a Strength 4 Hit with the Armour Piercing (1) special rule. After this, the Doom-flayer is
 removed from play as a casualty."), ("3-5", "ZZZZzap: The Doom-flayer and all models in base contact take a Strength 4 Hit with the Lightning
 Attacks special rule."), ("6", "Power Failure: The Doom-flayer may not attack or use The Best Defence this turn.")))
+  ],
+  order: ("troop-type", "crew", "base-size", "equipment", "options", "special-rules"),
+)
 
 = RARE UNITS
 
-#entry("ESHIN TRIAD", first: true)
-#profile(
-  (name: "Assassin Adept", m: 6, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 7, a: 2, ld: 7, points: 35),
-)
-#field("UNIT SIZE", "3")
-#field("TROOP TYPE", "Infantry (Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, throwing weapons")
-#field("OPTIONS", "")
-
+#unit("ESHIN TRIAD",
+  first: true,
+  profiles: (
+    (name: "Assassin Adept", m: 6, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 7, a: 2, ld: 7, points: 35),
+  ),
+  unit-size: "3",
+  troop-type: "Infantry (Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, throwing weapons",
+  options: [
 - May take tail weapons +2 points/model
 - May take Smoke Bombs +5 points/model
-
-#field("SPECIAL RULES", "Ambushers, Dodge (5+), Scurry Away, Poisoned Attacks, Scouts, Skirmishers")
-
-#entry("STORMFIEND")
-#profile(
-  (name: "Stormfiend", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: 70),
+  ],
+  special-rules: "Ambushers, Dodge (5+), Scurry Away, Poisoned Attacks, Scouts, Skirmishers",
+  order: ("unit-size", "troop-type", "base-size", "equipment", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Monstrous Creature (Skaven, Clan Moulder)")
-#field("BASE SIZE", "50x50")
-#field("EQUIPMENT", "Hand weapon, light armour")
 
+#unit("STORMFIEND",
+  profiles: (
+    (name: "Stormfiend", m: 6, ws: 4, bs: 3, s: 5, t: 5, w: 4, i: 5, a: 4, ld: 7, points: 70),
+  ),
+  troop-type: "Monstrous Creature (Skaven, Clan Moulder)",
+  base-size: "50x50",
+  equipment: "Hand weapon, light armour",
+  equipment-body: [
 - *Doom-Flayer Gauntlets:* Doom-Flayer Gauntlets use the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "+2D3 Attacks, Impact Hits (D3)"))
@@ -1649,9 +1419,8 @@ Any failed To Wound rolls with Warpfire Projectors may be re-rolled. If the Warp
 #minitable(("Range", "Strength", "Special Rules"), ("8-36\"", "n/a", "Ignores Armour saves, Magical Attacks, Slow to Fire"))
 
 Models hit by a Plague Wind must pass a Toughness test or suffer a Wound. Successful tests must be re-rolled. Do not roll on the Stone Thrower Misfire chart if the Windlaunchers misfire. Instead, the template for the attack scatters 2D6"
-
-#field("OPTIONS", "")
-
+  ],
+  options: [
 - Must pick one of the following:
   - Doom-flayer Gauntlets +15 points
   - Grinderfists +20 points
@@ -1660,49 +1429,51 @@ Models hit by a Plague Wind must pass a Toughness test or suffer a Wound. Succes
   - Windlaunchers +50 points
   - Warpfire Projectors +60 points
 - May take medium armour (if armed with Doom-flayer Gauntlets, Shock Gauntlets or Grinderfists) +4 points
-
-#field("SPECIAL RULES", "Scurry Away")
-#field("NOTES", "")
-
+  ],
+  special-rules: "Scurry Away",
+  notes: [
 - You may take 1\-2 Stormfiends as a single Rare choice.
-
-#entry("BROOD HORROR")
-#profile(
-  (name: "Brood Horror", m: 8, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 5, ld: 6, points: 150),
+  ],
+  order: ("troop-type", "base-size", "equipment", "options", "special-rules", "notes"),
 )
-#field("TROOP TYPE", "Monster (Skaven, Clan Moulder)")
-#field("BASE SIZE", "50x100 or 60x100")
-#field("OPTIONS", "")
 
+#unit("BROOD HORROR",
+  profiles: (
+    (name: "Brood Horror", m: 8, ws: 3, bs: 0, s: 5, t: 5, w: 5, i: 4, a: 5, ld: 6, points: 150),
+  ),
+  troop-type: "Monster (Skaven, Clan Moulder)",
+  base-size: "50x100 or 60x100",
+  options: [
 - May take one of the following:
   - Skryre Claws +5 points
   - Rusted Armour +10 points
   - Lash Tail +15 points
   - Pestilent Breath +25 points
-
-#field("SPECIAL RULES", "Poisoned Attacks, Scurry Away")
-
-- *Foul Ichor:* If a Brood Horror is slain, all units in base contact with the Brood Horror suffer 2D6 Strength 2 hits, distributed as shooting attacks.
-
-#field("UPGRADES", "")
-
-- *Lash Tail:* The Brood Horror gains +1 Attack.
-- *Pestilent Breath:* The Brood Horror gains a Strength 2 Breath Weapon which Ignores Armour saves.
-- *Rusted Armour:* The Brood Horror gains medium armour.
-- *Skryre Claws:* The Brood Horror gains the Armour Piercing (1) and Magical Attacks special rule.
-
-#entry("HELL PIT ABOMINATION")
-#profile(
-  (name: "Hell Pit Abomination", m: "*", ws: 3, bs: 1, s: 6, t: 5, w: 6, i: 4, a: "*", ld: 8, points: 225),
+  ],
+  special-rules: "Poisoned Attacks, Scurry Away",
+  special-rules-body: (
+    rule("Foul Ichor")[If a Brood Horror is slain, all units in base contact with the Brood Horror suffer 2D6 Strength 2 hits, distributed as shooting attacks.],
+  ),
+  upgrades: (
+    rule("Lash Tail")[The Brood Horror gains +1 Attack.],
+    rule("Pestilent Breath")[The Brood Horror gains a Strength 2 Breath Weapon which Ignores Armour saves.],
+    rule("Rusted Armour")[The Brood Horror gains medium armour.],
+    rule("Skryre Claws")[The Brood Horror gains the Armour Piercing (1) and Magical Attacks special rule.],
+  ),
+  order: ("troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Monster (Skaven, Clan Moulder)")
-#field("BASE SIZE", "60x100")
-#field("OPTIONS", "")
 
+#unit("HELL PIT ABOMINATION",
+  profiles: (
+    (name: "Hell Pit Abomination", m: "*", ws: 3, bs: 1, s: 6, t: 5, w: 6, i: 4, a: "*", ld: 8, points: 225),
+  ),
+  troop-type: "Monster (Skaven, Clan Moulder)",
+  base-size: "60x100",
+  options: [
 - May take Warpstone Spikes +10 points
-
-#field("SPECIAL RULES", "Impact Hits (D6), Immunity (Psychology), Random Movement (3D6), Regeneration (4+), Stubborn")
-
+  ],
+  special-rules: "Impact Hits (D6), Immunity (Psychology), Random Movement (3D6), Regeneration (4+), Stubborn",
+  special-rules-body: [
 - *Shambling Horror:* If two or more 1's or any triples are rolled when the Abomination is making its Random Movement, do not move the Hell Pit Abomination; instead roll a D6 on the Berserk Abomination chart.
 
 #chartlabel("BERSERK ABOMINATION CHART")
@@ -1724,20 +1495,23 @@ using the Random Attacks (D6) special rule.")))
 #chartlabel("TOO HORRIBLE TO DIE CHART")
 #chart((("D6", "Result"), ("1-3", "Dead: The Hell Pit Abomination is removed from play as casualty."), ("4-5", "The Rats Emerge: All units in base contact with the Abomination take 2D6 Strength 2 Hits. The
 Hell Pit Abomination is then removed from play as a casualty."), ("6", "It's Alive: The Hell Pit Abomination remains alive with D3 Wounds left.")))
-#field("UPGRADES", "")
-
-- *Warpstone Spikes:* The Hell Pit Abomination gains the Magic Resistance (1) and Magical Attacks special rule.
-
-#entry("PLAGUECLAW CATAPULT")
-#profile(
-  (name: "Plagueclaw Catapult", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Plague Monk Crew", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ],
+  upgrades: (
+    rule("Warpstone Spikes")[The Hell Pit Abomination gains the Magic Resistance (1) and Magical Attacks special rule.],
+  ),
+  order: ("troop-type", "base-size", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "War Machine (Stone Thrower, Clan Pestilens)")
-#field("CREW", "3 Plague Monk Crew (Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Plagueclaw Catapult")
 
+#unit("PLAGUECLAW CATAPULT",
+  profiles: (
+    (name: "Plagueclaw Catapult", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Plague Monk Crew", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: "-", i: 3, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "War Machine (Stone Thrower, Clan Pestilens)",
+  crew: "3 Plague Monk Crew (Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Plagueclaw Catapult",
+  equipment-body: [
 - *Plagueclaw Catapult:* The Plagueclaw Catapult uses the large round temple and the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12-48\"", "2", "Ignores Armour Saves"))
@@ -1747,18 +1521,20 @@ Any unit that takes one or more wounds must immediately take a Panic test. In ca
 #chartlabel("PLAGUECLAW MISFIRE CHART")
 #chart((("D6", "Result"), ("1-2", "Twang: The war machine is destroyed and is removed from the battle."), ("3-5", "Suspiciously Off Target: The opposing player may reposition the template anywhere within 3D6\" of
 the intended target position."), ("6", "Accident: The Plagueclaw Catapult cannot fire this turn.")))
-#field("SPECIAL RULES", "Frenzy")
-
-#entry("WARP LIGHTNING CANNON")
-#profile(
-  (name: "Warp Lightning Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: "-", i: 4, a: 1, ld: 5, points: ""),
+  ],
+  special-rules: "Frenzy",
 )
-#field("TROOP TYPE", "War Machine (Great Cannon, Clan Skryre)")
-#field("CREW", "3 Crew (Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Hand weapon, Warp Lightning Cannon")
 
+#unit("WARP LIGHTNING CANNON",
+  profiles: (
+    (name: "Warp Lightning Cannon", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: "-", i: 4, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "War Machine (Great Cannon, Clan Skryre)",
+  crew: "3 Crew (Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, Warp Lightning Cannon",
+  equipment-body: [
 - *Warp Lightning Cannon:* The Warp Lightning Cannon uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("72\"", "Artillery", "Lightning Attacks, Magical Attacks, Multiple Wounds (D6)"))
@@ -1778,18 +1554,20 @@ The Warp Lightning Cannon cannot fire grapeshot.
 shot at maximum Strength (10) that emanates from the barrel and travels along the ground in a
 straight line 4D6\" before terminating in a large round template."), ("6", "Spluttering Fizzle: The Warp Lightning Cannon cannot fire this turn, but can shoot as normal next
 turn.")))
-
-#entry("RATLING WARPBLASTER")
-#profile(
-  (name: "Ratling Warpblaster", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
-  (name: "Crew", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ],
 )
-#field("TROOP TYPE", "War Machine (Organ Gun, Clan Skryre)")
-#field("CREW", "5 Crew (Skaven)")
-#field("BASE SIZE", "25x50, 30x60 or 50x50")
-#field("EQUIPMENT", "Hand weapon")
-#field("SPECIAL RULES", "Scurry Away")
 
+#unit("RATLING WARPBLASTER",
+  profiles: (
+    (name: "Ratling Warpblaster", m: "-", ws: "-", bs: "-", s: "-", t: 7, w: "-", i: "-", a: "-", ld: "-", points: 100),
+    (name: "Crew", m: 5, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 4, a: 1, ld: 5, points: ""),
+  ),
+  troop-type: "War Machine (Organ Gun, Clan Skryre)",
+  crew: "5 Crew (Skaven)",
+  base-size: "25x50, 30x60 or 50x50",
+  equipment: "Hand weapon",
+  special-rules: "Scurry Away",
+  special-rules-body: [
 - *Ratling Warpblaster:* A Ratling Warpblaster uses the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("36\"", "5", "Armour Piercing (1), Magical Attacks, Multiple Shots (Artillery Dice), Rapid Fire"))
@@ -1802,18 +1580,20 @@ removed from play as a casualty."), ("3-4", "Uncontrollable Recoil: Resolve the 
 Ratling Warpblaster fires D6 shots at all units (roll separately for each one) within the model's front
 arc that you can draw Line of Sight to."), ("5-6", "Bbbbrrrrrttt: Resolve the shots from the previous Artillery Dice rolled. The last Artillery Dice is
 ignored.")))
-
-#entry("DOOMWHEEL")
-#profile(
-  (name: "Doomwheel", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 175),
-  (name: "Warlock Engineer", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 4, a: 1, ld: 7, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Chariot (Armour save 4+, Skaven, Clan Skryre)")
-#field("CREW", "1 Warlock Engineer (Skaven)")
-#field("BASE SIZE", "50x100")
-#field("EQUIPMENT", "Hand weapon, scythes")
-#field("SPECIAL RULES", "Immunity (Psychology), Random Movement (3D6), Terror")
 
+#unit("DOOMWHEEL",
+  profiles: (
+    (name: "Doomwheel", m: "*", ws: "-", bs: "-", s: 6, t: 6, w: 5, i: "-", a: "-", ld: "-", points: 175),
+    (name: "Warlock Engineer", m: "-", ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 4, a: 1, ld: 7, points: ""),
+  ),
+  troop-type: "Chariot (Armour save 4+, Skaven, Clan Skryre)",
+  crew: "1 Warlock Engineer (Skaven)",
+  base-size: "50x100",
+  equipment: "Hand weapon, scythes",
+  special-rules: "Immunity (Psychology), Random Movement (3D6), Terror",
+  special-rules-body: [
 - *Grind Attack:* At the beginning of each round of combat in which it did not charge, the Doomwheel inflicts D3+1 Impact Hits.
 - *Loss of Control:* At the end of any phase in which a Doomwheel that is not in close combat or fleeing suffers a Wound, the Skaven player must take a Loss of Control test. Roll a D6 for each wound suffered in that phase. On the roll of one or more 1's, the Doomwheel goes immediately Out of Control (as detailed in the Doomwheel Misfire chart).
 - *Zzzzap:* In each friendly Shooting phase, even when engaged in close combat or when fleeing, the Doomwheel automatically unleashes bolts of warp lightning using the following profile:
@@ -1837,23 +1617,26 @@ casualty."), ("3-5", "Out of Control: If the Doomwheel is unengaged, it immediat
 determined by the scatter dice. If it hits any unit (friend or foe) the Doomwheel inflicts Impact Hits
 as normal and counts as charging if the unit is an enemy. In the case of a Doomwheel hitting a
 friendly unit, resolve Impact Hits immediately after contact and then move the Doomwheel back 1\"."), ("6", "Burst of Speed: The Doomwheel gains the Random Movement (4D6) special rule.")))
+  ],
+)
 
 = SPECIAL CHARACTERS (LORDS)
 
-#entry("GREY SEER THANQUOL", first: true)
-#namecost("Favoured agent of the Council of Thirteen", "")
-#profile(
-  (name: "Thanquol", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 6, a: 1, ld: 7, points: 320),
-  (name: "Boneripper", m: 6, ws: 3, bs: 1, s: 5, t: 5, w: 4, i: 1, a: 4, ld: 10, points: ""),
-  (name: "Boneripper Mk II", m: 6, ws: 3, bs: 1, s: 6, t: 5, w: 5, i: 1, a: 5, ld: 10, points: ""),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Skaven). Boneripper is Monstrous Infantry, Boneripper Mk II is")
-
+#unit("GREY SEER THANQUOL",
+  first: true,
+  subtitle: "Favoured agent of the Council of Thirteen",
+  profiles: (
+    (name: "Thanquol", m: 5, ws: 3, bs: 3, s: 3, t: 4, w: 3, i: 6, a: 1, ld: 7, points: 320),
+    (name: "Boneripper", m: 6, ws: 3, bs: 1, s: 5, t: 5, w: 4, i: 1, a: 4, ld: 10, points: ""),
+    (name: "Boneripper Mk II", m: 6, ws: 3, bs: 1, s: 6, t: 5, w: 5, i: 1, a: 5, ld: 10, points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Skaven). Boneripper is Monstrous Infantry, Boneripper Mk II is",
+  troop-type-body: [
 Monster.
-
-#field("BASE SIZE", "20x20 or 25x25 (Thanquol), 40x40 or 50x50 (Boneripper), 100x50 or 100x60 (Boneripper Mk II)")
-#field("EQUIPMENT", "Hand weapon, 5 Warpstone Tokens (Thanquol only), Warpfire Thrower (Boneripper and Boneripper")
-
+  ],
+  base-size: "20x20 or 25x25 (Thanquol), 40x40 or 50x50 (Boneripper), 100x50 or 100x60 (Boneripper Mk II)",
+  equipment: "Hand weapon, 5 Warpstone Tokens (Thanquol only), Warpfire Thrower (Boneripper and Boneripper",
+  equipment-body: [
 Mk II only)
 
 - *Warpfire Thrower:* Warpfire Throwers are Fire Throwers with the following profile:
@@ -1863,186 +1646,193 @@ Mk II only)
 Boneripper may fire one Warpfire Thrower each turn, while Boneripper Mk II can fire two Warpfire Throwers each turn. These attacks are completely resolved one at a time, and may be directed at different targets if desired. Boneripper Mk II may re-roll all failed rolls To Wound with them.
 
 Any failed To Wound rolls with Warpfire Projectors may be re-rolled. If the Warpfire Projector misfires, the weapon inflicts D6 automatic hits on the closest friendly unit in the firing unit's front arc that is within 12". If there are no eligible friendly units, the Warpfire Projector simply does not fire this turn.
-
-#field("MAGIC", "Thanquol is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. In addition, he")
-
+  ],
+  magic: "Thanquol is a Level 4 Wizard who uses spells from the Lore of Ruin and/or Lore of Plague. In addition, he",
+  magic-body: [
 can choose the _Curse of the Horned Rat_ spell.
-
-#field("MAGIC ITEMS", "")
-
-- *Amulet of the Horned One:* Talisman. As long as Thanquol has at least a single Wound remaining, at the beginning of each of his turns, Thanquol can use the amulet to heal himself. On a roll of 5+, Thanquol regains a single Wound.
-- *Staff of the Horned One:* Arcane Item. The Staff of the Horned One gives Thanquol an additional spell.
-
-#field("OPTIONS", "")
-
+  ],
+  magic-items: (
+    rule("Amulet of the Horned One")[Talisman. As long as Thanquol has at least a single Wound remaining, at the beginning of each of his turns, Thanquol can use the amulet to heal himself. On a roll of 5+, Thanquol regains a single Wound.],
+    rule("Staff of the Horned One")[Arcane Item. The Staff of the Horned One gives Thanquol an additional spell.],
+  ),
+  options: [
 - Must choose one of the following:
   - Be accompanied by Boneripper +160 points
   - Be mounted on Boneripper Mk II +320 points
 - May exchange Warpfire Thrower for Warpfire Braziers (Boneripper Mk II only) free
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour, Unbreakable (Bone-Ripper only)")
-
-- *Blessing of the Horned Rat:* Thanquol has a 4+ Ward Save. For every wound Thanquol saves, one friendly model within 6" (owning player's choice) takes a wound instead. Normal saves apply. If no friendly model is within 6" the Wound fails to deflect anywhere and is ignored.
-- *Bodyguard of Thanquol:* If, at the start of any friendly turn, Boneripper is not within 12" of Thanquol, he cannot do anything at all, and in combat he will be hit automatically and will not strike back. If the game ends while Boneripper is shut down, he counts as a casualty. If Thanquol is slain or flees off the table, Boneripper is removed as a casualty as well.
-- *Warpstone Addiction:* When casting a spell, if Thanquol rolls a 1 with any power dice generated by a Warpstone Token, he can re-roll the dice. The second result will cause a wound on a roll of 1 or a 2.
-
-#field("UPGRADES", "")
-
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour, Unbreakable (Bone-Ripper only)",
+  special-rules-body: (
+    rule("Blessing of the Horned Rat")[Thanquol has a 4+ Ward Save. For every wound Thanquol saves, one friendly model within 6" (owning player's choice) takes a wound instead. Normal saves apply. If no friendly model is within 6" the Wound fails to deflect anywhere and is ignored.],
+    rule("Bodyguard of Thanquol")[If, at the start of any friendly turn, Boneripper is not within 12" of Thanquol, he cannot do anything at all, and in combat he will be hit automatically and will not strike back. If the game ends while Boneripper is shut down, he counts as a casualty. If Thanquol is slain or flees off the table, Boneripper is removed as a casualty as well.],
+    rule("Warpstone Addiction")[When casting a spell, if Thanquol rolls a 1 with any power dice generated by a Warpstone Token, he can re-roll the dice. The second result will cause a wound on a roll of 1 or a 2.],
+  ),
+  upgrades: [
 - *Warpfire Braziers:* Warpfire Braziers have the following profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "+1", "Flaming Attacks, Magical Attacks, Multiple Wounds (D3)"))
 
 At the beginning of any Close Combat phase all models in base contact (friend or foe) with Boneripper Mk II must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests. Because Boneripper Mk II has four Warpfire Braziers, he may re-roll all failed rolls To Wound with them.
-
-#entry("QUEEK HEADTAKER")
-#namecost("Right Claw of Clan Mors", "")
-#profile(
-  (name: "Queek Headtaker", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 8, points: 225),
+  ],
+  order: ("troop-type", "base-size", "equipment", "magic", "magic-items", "options", "special-rules", "upgrades"),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Dwarf-Gouger:* Magic Weapon. Two hand weapons. Attacks with this weapon have the Ignores Armour saves special rule. In addition, against Dwarfs, it always wounds on a 2+.
-- *Warpstone Armour:* Magic Armour. Heavy armour. For each successful armour save made in close combat, the armour inflicts a Strength 5 hit against the enemy that struck the blow.
-- *The Foul Pendant:* Talisman. The Foul Pendant gives Queek the Ward Save (5+) special rule.
-
-#field("SPECIAL RULES", "Hatred (Dwarfs, Goblins, Orcs), Scurry Away, Strength in Numbers")
-
-- *The Red Guard:* Queek must be accompanied by a unit of Stormvermin chosen from the army list at a cost of +2 points per model. This unit has +1 Strength. Queek may never choose to leave this unit. No Grey Seers may join the unit.
-- *Trophy Heads:* Queek must issue or accept challenges whenever possible. When fighting in a challenge, Queek gains +1 To Hit and To Wound.
-
-#entry("SPINETAIL")
-#namecost("Warlord of Clan Klaw", "")
-#profile(
-  (name: "Spinetail", m: 5, ws: 6, bs: 4, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 7, points: 160),
+#unit("QUEEK HEADTAKER",
+  subtitle: "Right Claw of Clan Mors",
+  profiles: (
+    (name: "Queek Headtaker", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 8, points: 225),
+  ),
+  troop-type: "Infantry (Special Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Dwarf-Gouger")[Magic Weapon. Two hand weapons. Attacks with this weapon have the Ignores Armour saves special rule. In addition, against Dwarfs, it always wounds on a 2+.],
+    rule("Warpstone Armour")[Magic Armour. Heavy armour. For each successful armour save made in close combat, the armour inflicts a Strength 5 hit against the enemy that struck the blow.],
+    rule("The Foul Pendant")[Talisman. The Foul Pendant gives Queek the Ward Save (5+) special rule.],
+  ),
+  special-rules: "Hatred (Dwarfs, Goblins, Orcs), Scurry Away, Strength in Numbers",
+  special-rules-body: (
+    rule("The Red Guard")[Queek must be accompanied by a unit of Stormvermin chosen from the army list at a cost of +2 points per model. This unit has +1 Strength. Queek may never choose to leave this unit. No Grey Seers may join the unit.],
+    rule("Trophy Heads")[Queek must issue or accept challenges whenever possible. When fighting in a challenge, Queek gains +1 To Hit and To Wound.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Blade of Corruption:* Magic Weapon. Two hand weapons. The wielder of this sword always wounds on at least a 3+, regardless of the enemy's Toughness. For each wound suffered (after saves), the enemy model must pass a Toughness test or suffer an additional Wound, with no saves allowed.
-
-#field("OPTIONS", "")
-
+#unit("SPINETAIL",
+  subtitle: "Warlord of Clan Klaw",
+  profiles: (
+    (name: "Spinetail", m: 5, ws: 6, bs: 4, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 7, points: 160),
+  ),
+  troop-type: "Infantry (Special Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Blade of Corruption")[Magic Weapon. Two hand weapons. The wielder of this sword always wounds on at least a 3+, regardless of the enemy's Toughness. For each wound suffered (after saves), the enemy model must pass a Toughness test or suffer an additional Wound, with no saves allowed.],
+  ),
+  options: [
 - May take Magic Items up to a total of 50 points
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
-
-- *Spined Tail:* If Warlord Spinetail is in base contact with an enemy Infantry Character at the start of any close combat phase, he can attempt to throttle them with his tail. If he does, both you and your opponent roll a D6. If you roll the higher result, the enemy Character suffers one Wound which Ignores Armour Saves. If your result is at least double your opponent’s, that model suffers D3 Wounds which Ignores Armour Saves instead.
-- *Attack-attack:* Any unit joined by Spinetail may re-roll To Wound rolls of 1 in close combat.
-
-#entry("SKREECH VERMINKING")
-#namecost("The Rat King", "")
-#profile(
-  (name: "Skreech Verminking", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 470),
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  special-rules-body: (
+    rule("Spined Tail")[If Warlord Spinetail is in base contact with an enemy Infantry Character at the start of any close combat phase, he can attempt to throttle them with his tail. If he does, both you and your opponent roll a D6. If you roll the higher result, the enemy Character suffers one Wound which Ignores Armour Saves. If your result is at least double your opponent’s, that model suffers D3 Wounds which Ignores Armour Saves instead.],
+    rule("Attack-attack")[Any unit joined by Spinetail may re-roll To Wound rolls of 1 in close combat.],
+  ),
+  order: ("troop-type", "base-size", "magic-items", "options", "special-rules"),
 )
-#field("TROOP TYPE", "Mosnter (Special Character, Skaven)")
-#field("BASE SIZE", "100x50 or 100x60")
-#field("MAGIC", "Skreech Verminking is a Level 4 Wizard who uses spells from the Lore of Ruin, Lore of Plague and/or Lore")
 
+#unit("SKREECH VERMINKING",
+  subtitle: "The Rat King",
+  profiles: (
+    (name: "Skreech Verminking", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 470),
+  ),
+  troop-type: "Mosnter (Special Character, Skaven)",
+  base-size: "100x50 or 100x60",
+  magic: "Skreech Verminking is a Level 4 Wizard who uses spells from the Lore of Ruin, Lore of Plague and/or Lore",
+  magic-body: [
 of Stealth. In addition, he knows the _Curse of the Horned Rat_ spell.
-
-#field("MAGIC ITEMS", "")
-
-- *Doom Glaive:* Magic Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule.
-- *Plaguereaper:* Magic Weapon. Attacks made with these weapons have the Always Strikes First special rule. This replaces the Doom-glaive.
-
-#field("SPECIAL RULES", "Daemonic (see Verminlords)")
-
-- *Master of Ruin:* Skreech Verminking re-rolls failed casting attempts when attempting to cast _Curse of the Horned Rat._
-- *Ruinous Arsenal:* At the start of each round of Close Combat, you must declare which weapon Skreech Verminking is going to use for that turn.
-
-#entry("DEATHMASTER SNIKCH")
-#namecost("Chief Assassin of Clan Eshin", "")
-#profile(
-  (name: "Deathmaster Snikch", m: 6, ws: 8, bs: 6, s: 4, t: 4, w: 3, i: 10, a: 5, ld: 8, points: 280),
+  ],
+  magic-items: (
+    rule("Doom Glaive")[Magic Weapon. Attacks made with this weapon have the Multiple Wounds (D3) special rule.],
+    rule("Plaguereaper")[Magic Weapon. Attacks made with these weapons have the Always Strikes First special rule. This replaces the Doom-glaive.],
+  ),
+  special-rules: "Daemonic (see Verminlords)",
+  special-rules-body: (
+    rule("Master of Ruin")[Skreech Verminking re-rolls failed casting attempts when attempting to cast _Curse of the Horned Rat._],
+    rule("Ruinous Arsenal")[At the start of each round of Close Combat, you must declare which weapon Skreech Verminking is going to use for that turn.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Weeping Blades, Warpstars")
-#field("MAGIC ITEMS", "")
 
-- *Bands of Power:* Enchanted Item. Bound Spell (power level 4). The Bands of Power contain an *augment* spell that can be cast on Snikch himself. If cast, Snikch will double his Strength until the start of his next Magic phase.
-- *The Cloak of Shadows:* Talisman. Enemy units cannot charge or target Snikch with missile attacks or spells if they are more than 12" away from him. Within 12", he can only be charged or targeted by first rolling a 4+. If the test is failed, the unit may choose a new target as normal. This item has no effect as long as Snikch is Hidden.
-
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Scurry Away, Sensei (see Master Assassin)")
-
+#unit("DEATHMASTER SNIKCH",
+  subtitle: "Chief Assassin of Clan Eshin",
+  profiles: (
+    (name: "Deathmaster Snikch", m: 6, ws: 8, bs: 6, s: 4, t: 4, w: 3, i: 10, a: 5, ld: 8, points: 280),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Weeping Blades, Warpstars",
+  magic-items: (
+    rule("Bands of Power")[Enchanted Item. Bound Spell (power level 4). The Bands of Power contain an *augment* spell that can be cast on Snikch himself. If cast, Snikch will double his Strength until the start of his next Magic phase.],
+    rule("The Cloak of Shadows")[Talisman. Enemy units cannot charge or target Snikch with missile attacks or spells if they are more than 12" away from him. Within 12", he can only be charged or targeted by first rolling a 4+. If the test is failed, the unit may choose a new target as normal. This item has no effect as long as Snikch is Hidden.],
+  ),
+  special-rules: "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Scurry Away, Sensei (see Master Assassin)",
+  special-rules-body: [
 SPECIAL CHARACTERS
-
-#entry("THROT THE UNCLEAN")
-#namecost("Master Mutator of Clan Moulder", "")
-#profile(
-  (name: "Throt the Unclean", m: 5, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 7, points: 175),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Moulder)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC ITEMS", "")
 
-- *Creature-killer:* Magic Weapon. Things-catcher. The Creature-killer gives Throt the Heroic Killing Blow special rule.
-- *Whip of Domination:* Magic Weapon. Whip. This whip gives Throt +1 Attack. Any enemy unit that takes an unsaved wound from the Whip of Domination suffers a \-2 penalty to its Leadership for the remainder of the player turn.
-
-#field("SPECIAL RULES", "Fear, Leader of the Pack (see Master Mutators), Regeneration (4+), Scurry Away, Strength in")
-
+#unit("THROT THE UNCLEAN",
+  subtitle: "Master Mutator of Clan Moulder",
+  profiles: (
+    (name: "Throt the Unclean", m: 5, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 7, points: 175),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Moulder)",
+  base-size: "20x20 or 25x25",
+  magic-items: (
+    rule("Creature-killer")[Magic Weapon. Things-catcher. The Creature-killer gives Throt the Heroic Killing Blow special rule.],
+    rule("Whip of Domination")[Magic Weapon. Whip. This whip gives Throt +1 Attack. Any enemy unit that takes an unsaved wound from the Whip of Domination suffers a \-2 penalty to its Leadership for the remainder of the player turn.],
+  ),
+  special-rules: "Fear, Leader of the Pack (see Master Mutators), Regeneration (4+), Scurry Away, Strength in",
+  special-rules-body: [
 *Numbers*
 
 - *Extra Arm:* Throt may use both his Magic Weapons in each round of Close Combat.
 - *Master Controller:* Throt has the Inspiring Presence (6) special rule for all Clan Moulder units.
 - *Ravening Hunger:* At the start of each of his turns, Throt must pass a Toughness test or start to eat one model in base contact of your choosing. This model suffers 1 Wound which Ignores Armour Saves and does not allow Ward Saves. If this is not possible, Throt will suffer 1 Wound with no saves allowed.
-
-#entry("NURGLITCH")
-#namecost("Arch-Plaguelord of Clan Pestilens", "")
-#profile(
-  (name: "Nurglitch", m: 5, ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 3, ld: 7, points: 420),
-  (name: "Bilios", m: 5, ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 2, ld: 6, points: ""),
-  (name: "Pox (Great Pox Rat)", m: 6, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 2, points: ""),
+  ],
 )
-#field("TROOP TYPE", "Cavalry (Special Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("EQUIPMENT", "Plague Censer (Bilios only)")
-#field("MAGIC", "Nurglitch is a Level 3 Wizard who uses spells from the Lore of Plague. In addition, he always knows the Plague spell from that lore.")
-#field("MAGIC ITEMS", "")
 
-- *Blade of Nurglitch:* Magic Weapon. Enemy models lose 1 point of Toughness from their profile for each Wound they suffer from this blade.
-- *Bubonic Sceptre:* Arcane Item. Bound Spell, power level 5. The Bubonic Sceptre contains a *direct damage* spell with a range of 18". Roll a D6 for every model in the unit. For every roll of a 6, that unit suffers a wound with the Ignores Armour Saves special rule.
-
-#field("SPECIAL RULES", "Frenzy, Hatred, Scurry Away, Skittering (see Great Pox Rat), Strength in Numbers, Terror, Ward Save (5+)")
-
-- *The Passion of the Putrid:* No friendly Clan Pestilens units will lose their Frenzy whilst Nurglitch is still alive.
-- *Scion of Corruption:* Neither Nurglitch nor any unit he joins will ever suffer wounds from spells cast from the Lore of Plague or Lore of Nurgle. Furthermore, they automatically pass the test for the effects of Plague Censers.
-- *The Grim Ague:* Any non-Clan Pestilens unit within 6" of Nurglitch suffer \-1 to their Weapon Skill. Furthermore, any such model in base contact with Nurglitch at the end of any close combat phase automatically takes a Strength 4 hit with the Ignores Armour Saves special rule that counts towards combat resolution.
-
-#entry("LORD SKROLK")
-#namecost("Plaguelord of Clan Pestilens", "")
-#profile(
-  (name: "Lord Skrolk", m: 5, ws: 6, bs: 4, s: 4, t: 5, w: 3, i: 6, a: 4, ld: 7, points: 385),
+#unit("NURGLITCH",
+  subtitle: "Arch-Plaguelord of Clan Pestilens",
+  profiles: (
+    (name: "Nurglitch", m: 5, ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 3, ld: 7, points: 420),
+    (name: "Bilios", m: 5, ws: 3, bs: 3, s: 3, t: "-", w: "-", i: 3, a: 2, ld: 6, points: ""),
+    (name: "Pox (Great Pox Rat)", m: 6, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 5, a: 2, ld: 2, points: ""),
+  ),
+  troop-type: "Cavalry (Special Character, Skaven, Clan Pestilens)",
+  base-size: "40x40 or 50x50",
+  equipment: "Plague Censer (Bilios only)",
+  magic: "Nurglitch is a Level 3 Wizard who uses spells from the Lore of Plague. In addition, he always knows the Plague spell from that lore.",
+  magic-items: (
+    rule("Blade of Nurglitch")[Magic Weapon. Enemy models lose 1 point of Toughness from their profile for each Wound they suffer from this blade.],
+    rule("Bubonic Sceptre")[Arcane Item. Bound Spell, power level 5. The Bubonic Sceptre contains a *direct damage* spell with a range of 18". Roll a D6 for every model in the unit. For every roll of a 6, that unit suffers a wound with the Ignores Armour Saves special rule.],
+  ),
+  special-rules: "Frenzy, Hatred, Scurry Away, Skittering (see Great Pox Rat), Strength in Numbers, Terror, Ward Save (5+)",
+  special-rules-body: (
+    rule("The Passion of the Putrid")[No friendly Clan Pestilens units will lose their Frenzy whilst Nurglitch is still alive.],
+    rule("Scion of Corruption")[Neither Nurglitch nor any unit he joins will ever suffer wounds from spells cast from the Lore of Plague or Lore of Nurgle. Furthermore, they automatically pass the test for the effects of Plague Censers.],
+    rule("The Grim Ague")[Any non-Clan Pestilens unit within 6" of Nurglitch suffer \-1 to their Weapon Skill. Furthermore, any such model in base contact with Nurglitch at the end of any close combat phase automatically takes a Strength 4 hit with the Ignores Armour Saves special rule that counts towards combat resolution.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Skrolk is a Level 3 Wizard who uses spells from the Lore of Plague.")
-#field("MAGIC ITEMS", "")
 
+#unit("LORD SKROLK",
+  subtitle: "Plaguelord of Clan Pestilens",
+  profiles: (
+    (name: "Lord Skrolk", m: 5, ws: 6, bs: 4, s: 4, t: 5, w: 3, i: 6, a: 4, ld: 7, points: 385),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  magic: "Skrolk is a Level 3 Wizard who uses spells from the Lore of Plague.",
+  magic-items: [
 - *Rod of Corruption:* Magic Weapon. Plague Censer. Models hit by the rod must pass a single Toughness test (regardless of the number of hits) or instantly be removed as a casualty with no saves allowed. If the victim passes the Toughness test, roll To Wound as normal.
 - *The Liber Bubonicus:* Arcane Item. Bound Spell (power level 5). The Liber Bubonicus contains a *direct damage* spell with a range of 24". When cast, roll a D6 to see the effect:
 
 #chart((("D6", "Result"), ("1", "Squeaking, Squealing Nonsense: No effect."), ("2-4", "A Withering Pox: Each model in the unit suffers a Strength 1 hit with the Ignores Armour saves
 special rule."), ("5-6", "Death Plague: Each model in the unit suffers a Strength 2 hit with the Ignores Armour saves special
 rule.")))
-#field("SPECIAL RULES", "Frenzy, Scurry Away, Strength in Numbers, Terror")
-
-- *Aura of Pestilence:* Any units in base contact with Lord Skrolk that are not part of Clan Pestilens suffer \-1 To Hit.
-
-#entry("IKIT CLAW")
-#namecost("Chief Warlock of Clan Skryre", "")
-#profile(
-  (name: "Ikit Claw", m: 5, ws: 5, bs: 3, s: 5, t: 4, w: 3, i: 3, a: 2, ld: 7, points: 340),
+  ],
+  special-rules: "Frenzy, Scurry Away, Strength in Numbers, Terror",
+  special-rules-body: (
+    rule("Aura of Pestilence")[Any units in base contact with Lord Skrolk that are not part of Clan Pestilens suffer \-1 To Hit.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Skryre)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Ikit Claw is a Level 4 Wizard who can use the spells from the Lore of Ruin.")
-#field("EQUIPMENT", "Warp-Blades, Supercharged Warp-Power Accumulator, Upgraded Warp-Energy Condenser")
-#field("MAGIC ITEMS", "")
 
+#unit("IKIT CLAW",
+  subtitle: "Chief Warlock of Clan Skryre",
+  profiles: (
+    (name: "Ikit Claw", m: 5, ws: 5, bs: 3, s: 5, t: 4, w: 3, i: 3, a: 2, ld: 7, points: 340),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Skryre)",
+  base-size: "20x20 or 25x25",
+  magic: "Ikit Claw is a Level 4 Wizard who can use the spells from the Lore of Ruin.",
+  equipment: "Warp-Blades, Supercharged Warp-Power Accumulator, Upgraded Warp-Energy Condenser",
+  magic-items: [
 - *Storm Daemon:* Magic Weapon. Polearm. Attacks with this weapon have the Lightning Attacks special rule. In addition, the Storm Daemon contains a Bound Spell (power level 6). This is a *magic missile* with a range of 24" that causes an artillery dice worth of Strength 5 hits with the Lightning Attacks special rule. In the case of a misfire, no shots are fired, but instead, roll a D6 and consult the Storm Daemon Misfire Chart.
 
 #chartlabel("STORM DAEMON MISFIRE CHART")
@@ -2050,104 +1840,116 @@ rule.")))
 cables out."), ("6", "Full Power: Ikit may immediately add D3 power dice to the pool for the current Magic phase.")))
 
 - *Iron Frame:* Magic Armour. Medium armour. The suit gives Ikit +2 Strength (included in his profile) and a 5+ Ward Save. Once per game, Ikit can fire the warpfire projector housed in the device. This is Strength 5 Breath Weapon attack with the Flaming Attacks, Magical Attacks and Multiple Wounds (D3) special rules.
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
+  ],
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  order: ("troop-type", "base-size", "magic", "equipment", "magic-items", "special-rules"),
+)
 
 = SPECIAL CHARACTERS (HEROES)
 
-#entry("TRETCH CRAVENTAIL", first: true)
-#namecost("Chieftain of Clan Rictus", "")
-#profile(
-  (name: "Tretch Craventail", m: 5, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 110),
+#unit("TRETCH CRAVENTAIL",
+  first: true,
+  subtitle: "Chieftain of Clan Rictus",
+  profiles: (
+    (name: "Tretch Craventail", m: 5, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 110),
+  ),
+  troop-type: "Infantry (Special Character, Skaven)",
+  base-size: "20x20 or 25x25",
+  equipment: "Two hand weapons, light armour, tail weapon",
+  magic-items: (
+    rule("Lucky Skullhelm")[Magic Armour. The Skullhelm gives Tretch a 6+ armour save and a 4+ Ward save (4+). In addition, once per game he can re-roll a dice roll. The re-roll can be one of his To Hit, To Wound, armour or Ward save, Leadership test, or a Stay Here, I'll Get Help roll.],
+  ),
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour.",
+  special-rules-body: (
+    rule("Tretch's Raiders")[Tretch can choose one unit of Clanrats or Stormvermin in your army to deploy as Ambushers. If so, Tretch must deploy with this unit. In addition, he and his unit re-roll all failed To Hit rolls when attacking in the flank or rear.],
+    rule("Stay Here, I'll Get Help")[Once per friendly turn, at the start of any phase, Tretch can leave any unit he is with and make a move of 2D6" as if it was the Remaining Moves phase.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Two hand weapons, light armour, tail weapon")
-#field("MAGIC ITEMS", "")
 
-- *Lucky Skullhelm:* Magic Armour. The Skullhelm gives Tretch a 6+ armour save and a 4+ Ward save (4+). In addition, once per game he can re-roll a dice roll. The re-roll can be one of his To Hit, To Wound, armour or Ward save, Leadership test, or a Stay Here, I'll Get Help roll.
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour.")
-
-- *Tretch's Raiders:* Tretch can choose one unit of Clanrats or Stormvermin in your army to deploy as Ambushers. If so, Tretch must deploy with this unit. In addition, he and his unit re-roll all failed To Hit rolls when attacking in the flank or rear.
-- *Stay Here, I'll Get Help:* Once per friendly turn, at the start of any phase, Tretch can leave any unit he is with and make a move of 2D6" as if it was the Remaining Moves phase.
-
-#entry("VESKIT")
-#namecost("High Executioner of Clan Eshin", "")
-#profile(
-  (name: "Veskit", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 4, ld: 8, points: 165),
-)
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Eshin)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-
+#unit("VESKIT",
+  subtitle: "High Executioner of Clan Eshin",
+  profiles: (
+    (name: "Veskit", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 4, ld: 8, points: 165),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Eshin)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  equipment-body: [
 - *Eshin Fighting Claws:* Two hand weapons. These claws give Veskit the Armour Piercing (1) and Magical Attacks special rules. In addition, they have the following missile profile:
 
 #minitable(("Range", "Strength", "Special Rules"), ("12\"", "5", "Armour Piercing (1), Magical Attacks, Multiple Shots (2), Quick to Fire, Unstable Ammunition"))
-#field("SPECIAL RULES", "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Scurry Away, Sniper")
-
-- *No Pain:* Successful To Wound rolls against Veskit must be re-rolled.
-
-#entry("SKWEEL GNAWTOOTH")
-#namecost("Packmaster of Hell Pit", "")
-#profile(
-  (name: "Skweel Gnawtooth", m: 6, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 2, ld: 6, points: 85),
-  (name: "Gutsnagger (Rat Hound Bodyguard)", m: 6, ws: 3, bs: 0, s: 2, t: "-", w: "-", i: "-", a: 2, ld: "-", points: ""),
+  ],
+  special-rules: "Dodge (5+), Hidden, Poisoned Attacks, Scouts, Scurry Away, Sniper",
+  special-rules-body: (
+    rule("No Pain")[Successful To Wound rolls against Veskit must be re-rolled.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Moulder)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("EQUIPMENT", "Light armour")
-#field("MAGIC ITEMS", "")
 
-- *Warp-lash:* Magic Weapon. Whip. Warp-lash gives Skweel the Armour Piercing (1) and Multiple Wounds (2) special rules.
-
-#field("SPECIAL RULES", "Mixed Unit, Scurry Away!, Strength in Numbers, Verminous Valour.")
-
+#unit("SKWEEL GNAWTOOTH",
+  subtitle: "Packmaster of Hell Pit",
+  profiles: (
+    (name: "Skweel Gnawtooth", m: 6, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 2, ld: 6, points: 85),
+    (name: "Gutsnagger (Rat Hound Bodyguard)", m: 6, ws: 3, bs: 0, s: 2, t: "-", w: "-", i: "-", a: 2, ld: "-", points: ""),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Moulder)",
+  base-size: "20x20 or 25x25",
+  equipment: "Light armour",
+  magic-items: (
+    rule("Warp-lash")[Magic Weapon. Whip. Warp-lash gives Skweel the Armour Piercing (1) and Multiple Wounds (2) special rules.],
+  ),
+  special-rules: "Mixed Unit, Scurry Away!, Strength in Numbers, Verminous Valour.",
+  special-rules-body: [
 - *Exceptional Pack:* If you include Skweel Gnawtooth in your army, you must also include a unit of Giant Rats that he must join. After deploying Skweel into his unit, roll a D6 and consult the chart below to determine the Giant Rats' special attributes. Skweel will never leave his special pack and may never join another unit.
 
 #chart((("D6", "Result"), ("1-2", "Poisoned Attacks: The Giant Rats have the Poisoned Attacks special rule."), ("3-4", "Additional Attacks. The Giant Rats have +1 Attack."), ("5-6", "Regenerate: The Giant Rats have the Regeneration (4+) special rule.")))
-
-#entry("GHORITCH")
-#namecost("Castellan of Hell Pit", "")
-#profile(
-  (name: "Ghoritch", m: 6, ws: 6, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 5, ld: 7, points: 180),
+  ],
 )
-#field("TROOP TYPE", "Monstrous Infantry (Special Character, Skaven, Clan Moulder)")
-#field("BASE SIZE", "40x40 or 50x50")
-#field("SPECIAL RULES", "Armour Piercing (3), Leader of the Pack (see Master Mutators), Scurry Away, Strength in")
 
+#unit("GHORITCH",
+  subtitle: "Castellan of Hell Pit",
+  profiles: (
+    (name: "Ghoritch", m: 6, ws: 6, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 5, ld: 7, points: 180),
+  ),
+  troop-type: "Monstrous Infantry (Special Character, Skaven, Clan Moulder)",
+  base-size: "40x40 or 50x50",
+  special-rules: "Armour Piercing (3), Leader of the Pack (see Master Mutators), Scurry Away, Strength in",
+  special-rules-body: [
 *Numbers*
 
 - *Brain Transplant:* Ghoritch has the Frenzy special rule. If he ever loses his Frenzy, he will become subject to Stupidity for the rest of the game.
-
-#entry("MORBUS SANGUIS")
-#profile(
-  (name: "Morbus Sanguis", m: 5, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 2, ld: 6, points: 125),
+  ],
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Pestilens)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Morbus Sanguis is a Level 1 Wizard who uses spells from the Lore of Plague.")
-#field("MAGIC ITEMS", "")
 
-- *Censer Mace:* Magic Weapon. Great weapon. At the start of each round of close combat, all enemy models in base contact with Morbus Sanguis must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.
-
-#field("SPECIAL RULES", "Fear, Frenzy, Scurry Away, Strength in Numbers")
-
-- *Warp Fleas:* All models in base contact with Morbus suffer a \-1 To Hit penalty in close combat as they are distracted by the biting fleas.
-- *The Yellow Death:* If Morbus is included in your army, you may upgrade one unit of Plague Rats to Yellow Death Rats for +10 points per model. Yellow Death Rats have +1 Weapon Skill and Strength.
-
-#entry("KLAWMUNKAST")
-#profile(
-  (name: "Klawmunkast", m: 5, ws: 3, bs: 4, s: 3, t: 4, w: 3, i: 4, a: 1, ld: 6, points: 165),
+#unit("MORBUS SANGUIS",
+  profiles: (
+    (name: "Morbus Sanguis", m: 5, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 2, ld: 6, points: 125),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Pestilens)",
+  base-size: "20x20 or 25x25",
+  magic: "Morbus Sanguis is a Level 1 Wizard who uses spells from the Lore of Plague.",
+  magic-items: (
+    rule("Censer Mace")[Magic Weapon. Great weapon. At the start of each round of close combat, all enemy models in base contact with Morbus Sanguis must pass a Toughness test or suffer a single wound with the Ignores Armour Saves and Magical Attacks special rules. All Clan Pestilens models gain a +1 bonus for these tests.],
+  ),
+  special-rules: "Fear, Frenzy, Scurry Away, Strength in Numbers",
+  special-rules-body: (
+    rule("Warp Fleas")[All models in base contact with Morbus suffer a \-1 To Hit penalty in close combat as they are distracted by the biting fleas.],
+    rule("The Yellow Death")[If Morbus is included in your army, you may upgrade one unit of Plague Rats to Yellow Death Rats for +10 points per model. Yellow Death Rats have +1 Weapon Skill and Strength.],
+  ),
 )
-#field("TROOP TYPE", "Infantry (Special Character, Skaven, Clan Skryre)")
-#field("BASE SIZE", "20x20 or 25x25")
-#field("MAGIC", "Klawmunkast is a Level 2 Wizard who uses the Lore of Ruin.")
-#field("MAGIC ITEMS", "")
 
-- *Eye of Skraw:* Arcane Item. Bound Spell (Power Level 4). The Eye of Skraw contains the _Warp Lightning_ spell from the Lore of Ruin. Roll a D6 every time it is used. On a 1, the Eye of Skraw runs out of power and cannot be used for the rest of the battle. In addition, the Eye gives Klawmunkast a 6+ Ward save.
-
-#field("SPECIAL RULES", "Scurry Away, Strength in Numbers, Verminous Valour")
-
-- *Rodent Genius:* Any rolls on the Misfire table for all Clan Skryre units within 12" may be re-rolled.
-- *Warpstone Mutants:* If Klawmunkast is included in your army, you may upgrade one unit of Skavenslaves to Warpstone Mutants for +3 points per model. Warpstone Mutants have +1 Strength and Attacks.
+#unit("KLAWMUNKAST",
+  profiles: (
+    (name: "Klawmunkast", m: 5, ws: 3, bs: 4, s: 3, t: 4, w: 3, i: 4, a: 1, ld: 6, points: 165),
+  ),
+  troop-type: "Infantry (Special Character, Skaven, Clan Skryre)",
+  base-size: "20x20 or 25x25",
+  magic: "Klawmunkast is a Level 2 Wizard who uses the Lore of Ruin.",
+  magic-items: (
+    rule("Eye of Skraw")[Arcane Item. Bound Spell (Power Level 4). The Eye of Skraw contains the _Warp Lightning_ spell from the Lore of Ruin. Roll a D6 every time it is used. On a 1, the Eye of Skraw runs out of power and cannot be used for the rest of the battle. In addition, the Eye gives Klawmunkast a 6+ Ward save.],
+  ),
+  special-rules: "Scurry Away, Strength in Numbers, Verminous Valour",
+  special-rules-body: (
+    rule("Rodent Genius")[Any rolls on the Misfire table for all Clan Skryre units within 12" may be re-rolled.],
+    rule("Warpstone Mutants")[If Klawmunkast is included in your army, you may upgrade one unit of Skavenslaves to Warpstone Mutants for +3 points per model. Warpstone Mutants have +1 Strength and Attacks.],
+  ),
+)

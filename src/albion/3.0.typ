@@ -12,7 +12,7 @@
   army: "Albion",
   version: "3.0",
   layout: "army",
-  cover: "covers/albion/3.0.png",
+  cover: "covers/albion.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Albion",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/albion/3.0.png",
+  art: "/assets/covers/albion.png",
 )
 
 #colophon((
@@ -45,20 +45,16 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in an Albion army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Albion units, and these are detailed here.
-
-#namecost("BATTLE CRY", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Albion army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Albion units, and these are detailed here.])[
+#upgrade("BATTLE CRY", none)[
 All friendly unit joined by a model with this special rule may add D3" to their charge distance.
+]
 
-#namecost("WAR FURY", "")
-
+#upgrade("WAR FURY", none)[
 All models with this special rule re-roll 1's on their charge distances. In addition, whenever they declare a charge or pursue a fleeing enemy, the models gain the Hatred special for the duration of the turn.
+]
 
-#namecost("TRIBAL AFFILIATION", "")
-
+#upgrade("TRIBAL AFFILIATION", none)[
 Your army may be associated with one of the Tribes below. Having a Clan Affiliation will allow your army to use special abilities on the battlefield that reflects their famous Tribe. Certain units in your army may have a Tribal Affiliation, as detailed in the army list. However, you may not have multiple Tribal Affiliations in the same army.
 
 - *Falian:* Infantry models with this special rule may deploy as Ambushers, and get +1 To Hit in close combat when attacking enemies in their flank or rear.
@@ -68,6 +64,8 @@ Your army may be associated with one of the Tribes below. Having a Clan Affiliat
 - *Fir Domain:* Models with this special rule gain +1 armour save when using shields.
 
 - *Sessair:* Models with this special rule re-roll 1's when rolling To Wound in close combat.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Albionites. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -686,7 +684,6 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("GIANT",
-  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -742,7 +739,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("BONEGRINDER GIANT",
-  breakable: true,
   profiles: (
     (name: "Bonegrinder Giant", m: 10, ws: 3, bs: 3, s: 8, t: 8, w: 10, i: 1, a: "*", ld: 10, points: 380),
   ),
@@ -1003,19 +999,14 @@ She always knows _The Flock of Doom_ spell from the Lore of Beasts in addition t
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

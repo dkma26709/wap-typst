@@ -12,6 +12,7 @@
   army: "The Game of Fantasy Battles",
   version: "2.32",
   layout: "rules",
+  cover: "covers/rulebook.png",
 )
 
 #show: book.with(title: "Warhammer Armies Project — The Game of Fantasy Battles 2.32", side: 3.1cm)
@@ -19,7 +20,7 @@
 #cover(
   title: "The Game of Fantasy Battles",
   subtitle: "Warhammer Armies Project · 2.32",
-  art: none,
+  art: "/assets/covers/rulebook.png",
 )
 
 #colophon((
@@ -2563,78 +2564,37 @@ Each model should be mounted on a base to determine the width and depth of the u
 
 In some cases, you might be using a model that requires a larger base than described. This is completely fine, as long as you try to keep it as close as possible to the normal approved base sizes. However, you may never have a base size that is smaller than the approved base sizes listed.
 
-== INFANTRY
+#troop-type("INFANTRY",
+  intro: [The following rules apply to Infantry:],
+  ranks: [A unit of Infantry is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [An Infantry model may make up to one supporting attack.],
+  unit-strength: [Infantry have a Unit Strength of 1.],
+  line-of-sight: [Infantry have a Line of Sight value of 1.],
+)
 
-The following rules apply to Infantry:
-
-#namecost("RANKS", "")
-
-A unit of Infantry is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-An Infantry model may make up to one supporting attack.
-
-#namecost("UNIT STRENGTH", "")
-
-Infantry have a Unit Strength of 1.
-
-#namecost("LINE OF SIGHT", "")
-
-Infantry have a Line of Sight value of 1.
-
-== LARGE INFANTRY
-
-The following rules apply to Large Infantry:
-
-#namecost("RANKS", "")
-
-A unit of Large Infantry is required to be four or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Large Infantry model may make up to two supporting attacks.
-
-#namecost("UNIT STRENGTH", "")
-
-Large Infantry have a Unit Strength of 1.
-
-#namecost("LINE OF SIGHT", "")
-
-Large Infantry have a Line of Sight value of 1.
+#troop-type("LARGE INFANTRY",
+  intro: [The following rules apply to Large Infantry:],
+  ranks: [A unit of Large Infantry is required to be four or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Large Infantry model may make up to two supporting attacks.],
+  unit-strength: [Large Infantry have a Unit Strength of 1.],
+  line-of-sight: [Large Infantry have a Line of Sight value of 1.],
+)
 
 == MONSTROUS
 
-== INFANTRY
 
-The following rules apply to Monstrous Infantry:
+#troop-type("INFANTRY",
+  intro: [The following rules apply to Monstrous Infantry:],
+  ranks: [A unit of Monstrous Infantry is required to be three or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Monstrous Infantry model may make up to two supporting attacks.],
+  special-rules: [Monstrous Infantry are subject to the following special rules: Fear, Swiftstride.],
+  unit-strength: [Monstrous Infantry have a Unit Strength of 2.],
+  line-of-sight: [Monstrous Infantry have a Line of Sight value of 2.],
+)
 
-#namecost("RANKS", "")
-
-A unit of Monstrous Infantry is required to be three or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Infantry model may make up to two supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
-Monstrous Infantry are subject to the following special rules: Fear, Swiftstride.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Infantry have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Infantry have a Line of Sight value of 2.
-
-== CAVALRY
-
-The following rules apply to Cavalry:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("CAVALRY",
+  intro: [The following rules apply to Cavalry:],
+  split-profile: [
 Although a cavalry model has two sets of characteristics, one for the rider and one for the mount, it is treated in all respects as a single model – the rider cannot dismount. When moving, the cavalry model always uses the Movement characteristic of the mount, and never that of the rider.
 
 The rider and mount use their own Weapon Skill, Strength, Initiative and Attacks characteristics when they attack. Each can attack any opponent that the cavalry model is in base contact with.
@@ -2652,17 +2612,10 @@ Any equipment or magic items the model might otherwise have only apply to the ri
 Any effect that would modify the model's Characteristics affect both the rider and mount, unless specified.
 
 In some cases, you may find Cavalry models that do not have a split profile. In this case, treat the model as single entity that may make up to two supporting attacks. The model also counts as mounted for the purpose of using certain weapons, as described in the Weapons and Armour chapter, but counts as a model on foot for the purposes of using Parry.
-
-#namecost("RANKS", "")
-
-A unit of Cavalry is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Cavalry model can make one supporting attack from the rider, and one from the mount. Cavalry without a split profile can make up to two supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+],
+  ranks: [A unit of Cavalry is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Cavalry model can make one supporting attack from the rider, and one from the mount. Cavalry without a split profile can make up to two supporting attacks.],
+  special-rules: [
 Cavalry are subject to the following special rules: Impact Hits (1), Swiftstride.
 
 Note that the Impact Hits are resolved at the Strength of the mount, not the rider.
@@ -2682,179 +2635,84 @@ Any special rules listed for Cavalry units only apply to rider, unless they spec
 - Stubborn
 - Terror
 - Vanguard
-
-#namecost("TERRAIN", "")
-
-Cavalry have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.
-
-#namecost("UNIT STRENGTH", "")
-
-Cavalry have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Cavalry have a Line of Sight value of 2.
+],
+  terrain: [Cavalry have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.],
+  unit-strength: [Cavalry have a Unit Strength of 2.],
+  line-of-sight: [Cavalry have a Line of Sight value of 2.],
+)
 
 == MONSTROUS
 
-== CAVALRY
 
-All the cavalry rules apply to Monstrous Cavalry. In addition, the following rules apply:
+#troop-type("CAVALRY",
+  intro: [All the cavalry rules apply to Monstrous Cavalry. In addition, the following rules apply:],
+  ranks: [A unit of Monstrous Cavalry is required to be three or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Monstrous Cavalry model can make one supporting attack from the rider, and two from the mount. Monstrous Cavalry without a split profile can make up to three supporting attacks.],
+  special-rules: [Monstrous Cavalry are subject to the following special rules: Fear, Impact Hits (1), Swiftstride.],
+  unit-strength: [Monstrous Cavalry have a Unit Strength of 3.],
+  line-of-sight: [Monstrous Cavalry have a Line of Sight value of 3.],
+)
 
-#namecost("RANKS", "")
-
-A unit of Monstrous Cavalry is required to be three or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Cavalry model can make one supporting attack from the rider, and two from the mount. Monstrous Cavalry without a split profile can make up to three supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
-Monstrous Cavalry are subject to the following special rules: Fear, Impact Hits (1), Swiftstride.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Cavalry have a Unit Strength of 3.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Cavalry have a Line of Sight value of 3.
-
-== SWARMS
-
-The following rules apply to Swarms:
-
-#namecost("RANKS", "")
-
-A unit of Swarms is required to be three or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Swarm model may make up to five supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("SWARMS",
+  intro: [The following rules apply to Swarms:],
+  ranks: [A unit of Swarms is required to be three or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Swarm model may make up to five supporting attacks.],
+  special-rules: [
 Swarms are subject to the following special rules: Expendable, Skirmishers, Unstable.
 
 Other models can fire through them at targets behind them with no To Hit penalty. However, any Swarm base that is hit by a template attack suffers Multiple Wounds (D6) rather than 1.
+],
+  unit-strength: [Swarms have a Unit Strength of 3.],
+  line-of-sight: [Swarms have a Line of Sight value of 0.],
+)
 
-#namecost("UNIT STRENGTH", "")
+#troop-type("WAR BEASTS",
+  intro: [The following rules apply to War Beasts:],
+  ranks: [A unit of War Beasts is required to be five or more models wide in order to have a complete rank.],
+  supporting-attacks: [A War Beast model may make up to one supporting attack.],
+  special-rules: [War Beasts are subject to the following special rules: Expendable, Swiftstride, Vanguard.],
+  character-mount: [Some characters can ride war beasts, in which case the model uses the rules for cavalry.],
+  unit-strength: [War Beasts have a Unit Strength of 1.],
+  line-of-sight: [War Beasts have a Line of Sight value of 1.],
+  order: ("ranks", "supporting-attacks", "special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-Swarms have a Unit Strength of 3.
-
-#namecost("LINE OF SIGHT", "")
-
-Swarms have a Line of Sight value of 0.
-
-== WAR BEASTS
-
-The following rules apply to War Beasts:
-
-#namecost("RANKS", "")
-
-A unit of War Beasts is required to be five or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A War Beast model may make up to one supporting attack.
-
-#namecost("SPECIAL RULES", "")
-
-War Beasts are subject to the following special rules: Expendable, Swiftstride, Vanguard.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride war beasts, in which case the model uses the rules for cavalry.
-
-#namecost("UNIT STRENGTH", "")
-
-War Beasts have a Unit Strength of 1.
-
-#namecost("LINE OF SIGHT", "")
-
-War Beasts have a Line of Sight value of 1.
-
-== MONSTROUS BEASTS
-
-The following rules apply to Monstrous Beasts:
-
-#namecost("RANKS", "")
-
-A unit of Monstrous Beasts is required to be three or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-A Monstrous Beast model may make up to two supporting attacks.
-
-#namecost("SPECIAL RULES", "")
-
-Monstrous Beasts are subject to the following special rules: Fear, Swiftstride.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride monstrous beasts, in which case the model uses the rules for monstrous cavalry.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Beasts have a Unit Strength of 2.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Beasts have a Line of Sight value of 2.
+#troop-type("MONSTROUS BEASTS",
+  intro: [The following rules apply to Monstrous Beasts:],
+  ranks: [A unit of Monstrous Beasts is required to be three or more models wide in order to have a complete rank.],
+  supporting-attacks: [A Monstrous Beast model may make up to two supporting attacks.],
+  special-rules: [Monstrous Beasts are subject to the following special rules: Fear, Swiftstride.],
+  character-mount: [Some characters can ride monstrous beasts, in which case the model uses the rules for monstrous cavalry.],
+  unit-strength: [Monstrous Beasts have a Unit Strength of 2.],
+  line-of-sight: [Monstrous Beasts have a Line of Sight value of 2.],
+  order: ("ranks", "supporting-attacks", "special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
 == MONSTROUS
 
-== CREATURES
 
-The following rules apply to Monstrous Creatures:
+#troop-type("CREATURES",
+  intro: [The following rules apply to Monstrous Creatures:],
+  special-rules: [Monstrous Creatures are subject to the following special rules: Stomp (D3), Swiftstride, Terror.],
+  character-mount: [Some characters can ride Monstrous Creatures. If a character has a ridden Monstrous Creature, the whole model is treated as having the troop type Monstrous Creatures and thus follows all the rules for both characters and Monstrous Creature models including the Split Profile rules for Cavalry. A character on a ridden Monstrous Creature cannot join other units.],
+  unit-strength: [Monstrous Creatures have a Unit Strength of 4. Ridden Monstrous Creatures add the number of riders to their Unit Strength.],
+  line-of-sight: [Monstrous Creatures have a Line of Sight value of 3. Ridden Monstrous Creatures have a Line of Sight value of 4.],
+  order: ("special-rules", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-#namecost("SPECIAL RULES", "")
+#troop-type("MONSTERS",
+  intro: [The following rules apply to Monsters:],
+  special-rules: [Monsters are subject to the following special rules: Stomp (D6), Swiftstride, Terror.],
+  split-profile: [Ridden Monsters follow all the Split Profile rules for Cavalry. However, they may only have an armour save of a total of 2+ instead of the normal 1+. The riders can fire in 360 degrees around them, rather than only firing at targets within their front arc. This only applies to any missile weapons carried by the crew themselves, any missile weapons mounted on the Monster itself can only fire in the model's forward arc as normal. Any crew member that chooses to fire the mounted weapon cannot fire their own weapon in the same turn.],
+  character-mount: [Some characters can ride Monsters. If a character has a ridden Monster, the whole model is treated as having the troop type Monster and thus follows all the rules for both characters and Monster models including the Split Profile rules above. A character on a ridden Monster cannot join other units.],
+  unit-strength: [Monsters have a Unit Strength of double their original starting number of Wounds. Ridden Monsters add the number of riders to their Unit Strength.],
+  line-of-sight: [Monsters have a Line of Sight value of 5.],
+  order: ("special-rules", "split-profile", "character-mount", "unit-strength", "line-of-sight"),
+)
 
-Monstrous Creatures are subject to the following special rules: Stomp (D3), Swiftstride, Terror.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride Monstrous Creatures. If a character has a ridden Monstrous Creature, the whole model is treated as having the troop type Monstrous Creatures and thus follows all the rules for both characters and Monstrous Creature models including the Split Profile rules for Cavalry. A character on a ridden Monstrous Creature cannot join other units.
-
-#namecost("UNIT STRENGTH", "")
-
-Monstrous Creatures have a Unit Strength of 4. Ridden Monstrous Creatures add the number of riders to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Monstrous Creatures have a Line of Sight value of 3. Ridden Monstrous Creatures have a Line of Sight value of 4.
-
-== MONSTERS
-
-The following rules apply to Monsters:
-
-#namecost("SPECIAL RULES", "")
-
-Monsters are subject to the following special rules: Stomp (D6), Swiftstride, Terror.
-
-#namecost("SPLIT PROFILE", "")
-
-Ridden Monsters follow all the Split Profile rules for Cavalry. However, they may only have an armour save of a total of 2+ instead of the normal 1+. The riders can fire in 360 degrees around them, rather than only firing at targets within their front arc. This only applies to any missile weapons carried by the crew themselves, any missile weapons mounted on the Monster itself can only fire in the model's forward arc as normal. Any crew member that chooses to fire the mounted weapon cannot fire their own weapon in the same turn.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride Monsters. If a character has a ridden Monster, the whole model is treated as having the troop type Monster and thus follows all the rules for both characters and Monster models including the Split Profile rules above. A character on a ridden Monster cannot join other units.
-
-#namecost("UNIT STRENGTH", "")
-
-Monsters have a Unit Strength of double their original starting number of Wounds. Ridden Monsters add the number of riders to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Monsters have a Line of Sight value of 5.
-
-== CHARIOTS
-
-The following rules apply to Chariots:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("CHARIOTS",
+  intro: [The following rules apply to Chariots:],
+  split-profile: [
 In a similar manner to cavalry, a chariot has more than one set of characteristics, one for the beasts, one for the crew and one for the chariot itself, and is treated as a single model.
 
 When moving, the chariot model always uses its own Movement characteristic. However, it may not pivot on the spot like other lone models without Reforming. The crew and the creatures pulling the chariot use their own Weapon Skill, Strength, Initiative and Attacks characteristics when they attack. Each can attack any opponent that the chariot model is in base contact with, although the beasts can only fight enemies to the front.
@@ -2862,49 +2720,26 @@ When moving, the chariot model always uses its own Movement characteristic. Howe
 The Wounds and Toughness of the crew and the creatures are never used – hits are resolved against the chariot's Wounds and Toughness. It is the crew's Weapon Skill that is used for the purposes of the enemy rolling to hit, just as with cavalry.
 
 Any missile weapons use the Ballistic Skill of the crew when making Shooting attacks. The crew can fire in 360 degrees around them, rather than only firing at targets within their front arc. This only applies to any missile weapons carried by the crew themselves; any missile weapons mounted on the chariot itself can only fire in the model's forward arc as normal. Any crew member that chooses to fire the mounted weapon cannot fire their own weapon in the same turn.
-
-#namecost("ARMOUR SAVES", "")
-
-Many Chariots have an armour save detailed in their army list entry, which is combined with any armour the crew might have.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can ride Chariots. If a character has taken a Chariot as a mount, the whole model is treated as having the troop type 'Chariot' and follows all the rules for both characters and chariot models. A chariot mount otherwise follows all the rules for Cavalry in regard to Split Profile. If the Chariot includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.
-
-#namecost("RANKS", "")
-
-A unit of Chariots is required to be three or more models wide in order to have a complete rank.
-
-#namecost("SUPPORTING ATTACKS", "")
-
-Chariots cannot make supporting attacks. However, Chariots in the second rank add +D3 Impact Hits to the chariots in the first rank.
-
-#namecost("SPECIAL RULES", "")
-
+],
+  armour-saves: [Many Chariots have an armour save detailed in their army list entry, which is combined with any armour the crew might have.],
+  character-mount: [Some characters can ride Chariots. If a character has taken a Chariot as a mount, the whole model is treated as having the troop type 'Chariot' and follows all the rules for both characters and chariot models. A chariot mount otherwise follows all the rules for Cavalry in regard to Split Profile. If the Chariot includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.],
+  ranks: [A unit of Chariots is required to be three or more models wide in order to have a complete rank.],
+  supporting-attacks: [Chariots cannot make supporting attacks. However, Chariots in the second rank add +D3 Impact Hits to the chariots in the first rank.],
+  special-rules: [
 Chariots are subject to the following special rules: Impact Hits (D6), Swiftstride.
 
 Some chariots are equipped with massive scythes and instead have Impact Hits (D6+1). This will be specified in their entry.
 
 Just as with cavalry, we assume that special rules that apply to the mounts do not normally also apply to the chariot or its crew, and vice versa. Remember though that there are exceptions, as detailed under the rules for cavalry.
+],
+  terrain: [Chariots have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.],
+  unit-strength: [Chariots have a Unit Strength equal to their starting number of Wounds (unless specified) and add the number of additional crew and/or mounts purchased to their Unit Strength.],
+  line-of-sight: [Chariots have a Line of Sight value of 2.],
+)
 
-#namecost("TERRAIN", "")
-
-Chariots have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.
-
-#namecost("UNIT STRENGTH", "")
-
-Chariots have a Unit Strength equal to their starting number of Wounds (unless specified) and add the number of additional crew and/or mounts purchased to their Unit Strength.
-
-#namecost("LINE OF SIGHT", "")
-
-Chariots have a Line of Sight value of 2.
-
-== SHRINES
-
-The following rules apply to Shrines:
-
-#namecost("SPLIT PROFILE", "")
-
+#troop-type("SHRINES",
+  intro: [The following rules apply to Shrines:],
+  split-profile: [
 In a similar manner to a Chariot, a Shrine can often have more than one set of characteristics, one for the creatures pulling or carrying the Shrine, one for the crew and one for the shrine itself, and is treated as a single model.
 
 Unlike most other units, a shrine may join other units of Infantry (except Skirmishers) following the rules for Characters and Units in the Characters chapter.
@@ -2912,45 +2747,24 @@ Unlike most other units, a shrine may join other units of Infantry (except Skirm
 When moving, the shrine model uses its own Movement characteristic. The crew and the creatures pulling the Shrine use their own Weapon Skill, Strength, Initiative and Attacks characteristics when they attack. Each can attack any opponent that the shrine model is in base contact with. If the crew models have missile weapons, they use their own Ballistic Skill when making Shooting attacks.
 
 The Wounds and Toughness of the crew and the creatures are never used – hits are resolved against the shrine's Wounds and Toughness. It is the crew's Weapon Skill that is used for the purposes of the enemy rolling to hit, just as with cavalry.
+],
+  armour-saves: [Some Shrines have an armour save detailed in their army list entry, which is combined with any armour the crew might have.],
+  character-mount: [Some characters can be mounted upon shrines. If a character has taken a shrine as a mount, the whole model is treated as having the troop type 'Shrine' and follows all the rules for both characters and Shrine models. A Shrine mount otherwise follows all the rules for Cavalry in regard to Split Profile. If the Shrine includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.],
+  terrain: [Shrines have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.],
+  unit-strength: [Shrines have a Unit Strength equal to their starting number of Wounds.],
+  line-of-sight: [Shrines have a Line of Sight value of 1.],
+)
 
-#namecost("ARMOUR SAVES", "")
-
-Some Shrines have an armour save detailed in their army list entry, which is combined with any armour the crew might have.
-
-#namecost("CHARACTER MOUNT", "")
-
-Some characters can be mounted upon shrines. If a character has taken a shrine as a mount, the whole model is treated as having the troop type 'Shrine' and follows all the rules for both characters and Shrine models. A Shrine mount otherwise follows all the rules for Cavalry in regard to Split Profile. If the Shrine includes any crew in addition to the character, their armour saves are ignored when calculating the overall armour save of the model – only the character's own armour save is used.
-
-#namecost("TERRAIN", "")
-
-Shrines have to take Dangerous Terrain tests if they move march, charge, flee or pursue over anything other than open ground or hills – Battlefield Terrain for more details.
-
-#namecost("UNIT STRENGTH", "")
-
-Shrines have a Unit Strength equal to their starting number of Wounds.
-
-#namecost("LINE OF SIGHT", "")
-
-Shrines have a Line of Sight value of 1.
-
-== WAR MACHINES
-
-The following rules apply to War Machines:
-
-#namecost("SPECIAL RULES", "")
-
+#troop-type("WAR MACHINES",
+  intro: [The following rules apply to War Machines:],
+  special-rules: [
 War Machines are subject to the following special rule: Move or Fire.
 
 Unless specified, any special rules a War Machine might have apply to both the War Machine and the crew. For further information on War Machines, see the War Machines chapter.
-
-#namecost("UNIT STRENGTH", "")
-
-War Machines have a Unit Strength equal to their current number of crew.
-
-#namecost("LINE OF SIGHT", "")
-
-War Machines have a Line of Sight value of 1.
-
+],
+  unit-strength: [War Machines have a Unit Strength equal to their current number of crew.],
+  line-of-sight: [War Machines have a Line of Sight value of 1.],
+)
 = WAR MACHINES
 
 War machine models that do not have bases do not use the usual convention of measuring to the model's base. When measuring to and from the war machine, measure to or from the body of the machine, by which we mean the central part of the chassis or the weapon itself.
@@ -3038,6 +2852,7 @@ Each weapon has its own characteristic profile. There are three sections to a we
 == CLOSE COMBAT
 
 == WEAPONS
+
 #namecost("HAND WEAPON", "")
 #minitable(("Range", "Strength", "Special Rules"), ("Combat", "As user", "-"))
 
@@ -3076,83 +2891,66 @@ Each weapon has its own characteristic profile. There are three sections to a we
 #note[_\*Mounted model only. Only applies in turns that the model charges, and only against the unit they charged._]
 
 == MISSILE WEAPONS
-#namecost("SHORTBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("18\"", "3", "Multiple Shots (2)*, Volley Fire"))
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("SHORTBOW", range: "18\"", strength: "3", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-#namecost("BOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("24\"", "3", "Multiple Shots (2)*, Volley Fire"))
+#weapon("BOW", range: "24\"", strength: "3", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("LONGBOW", range: "30\"", strength: "3", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-#namecost("LONGBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("30\"", "3", "Multiple Shots (2)*, Volley Fire"))
+#weapon("WARBOW", range: "30\"", strength: "4", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("GREATBOW", range: "36\"", strength: "5", rules: "Multiple Shots (2)*, Volley Fire")[\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._]
 
-#namecost("WARBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("30\"", "4", "Multiple Shots (2)*, Volley Fire"))
+#weapon("CROSSBOW", range: "30\"", strength: "4", rules: "Ponderous")[]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("HANDGUN", range: "24\"", strength: "4", rules: "Armour Piercing (1), Ponderous")[]
 
-#namecost("GREATBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("36\"", "5", "Multiple Shots (2)*, Volley Fire"))
+#weapon("BLUNDERBUSS", range: "12\"", strength: "3", rules: "Armour Piercing (1), Multiple Shots (3), Quick to Fire, Rapid Fire")[#note[_Blunderbusses do not suffer any penalties To Hit for Stand and Shoot._]]
 
-\*_Only applies in turns the model has not moved. Cannot be used as a charge reaction._
+#weapon("PISTOL", range: "12\"", strength: "4", rules: "Armour Piercing (1), Multiple Shots (2)*, Quick to Fire")[#note[_In close combat, a pistol counts as an additional hand weapon that does not give the model the Parry special rule. \*Requires a brace of pistols._]]
 
-#namecost("CROSSBOW", "")
-#minitable(("Range", "Strength", "Special Rules"), ("30\"", "4", "Ponderous"))
-#namecost("HANDGUN", "")
-#minitable(("Range", "Strength", "Special Rules"), ("24\"", "4", "Armour Piercing (1), Ponderous"))
-#namecost("BLUNDERBUSS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12\"", "3", "Armour Piercing (1), Multiple Shots (3), Quick to Fire, Rapid Fire"))
+#weapon("JAVELINS", range: "12\"", strength: "As user", rules: "Armour Piercing (1), Quick to Fire, Volley Fire")[]
 
-#note[_Blunderbusses do not suffer any penalties To Hit for Stand and Shoot._]
+#weapon("THROWING WEAPONS", range: "8\"", strength: "As user", rules: "Multiple Shots (2), Quick to Fire")[]
 
-#namecost("PISTOL", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12\"", "4", "Armour Piercing (1), Multiple Shots (2)*, Quick to Fire"))
+#weapon("THROWING AXES", range: "6\"", strength: "As user +1", rules: "Quick to Fire")[]
 
-#note[_In close combat, a pistol counts as an additional hand weapon that does not give the model the Parry special rule. \*Requires a brace of pistols._]
+#weapon("SLING", range: "18\"", strength: "3", rules: "Armour Piercing (1), Multiple Shots (2)*")[\*_Only applies in turns the model has not moved. Cannot be used to Stand and Shoot._]
 
-#namecost("JAVELINS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12\"", "As user", "Armour Piercing (1), Quick to Fire, Volley Fire"))
-#namecost("THROWING WEAPONS", "")
-#minitable(("Range", "Strength", "Special Rules"), ("8\"", "As user", "Multiple Shots (2), Quick to Fire"))
-#namecost("THROWING AXES", "")
-#minitable(("Range", "Strength", "Special Rules"), ("6\"", "As user +1", "Quick to Fire"))
-#namecost("SLING", "")
-#minitable(("Range", "Strength", "Special Rules"), ("18\"", "3", "Armour Piercing (1), Multiple Shots (2)*"))
+#weapon("BLOWPIPE", range: "12\"", strength: "1", rules: "Multiple Shots (2), Poisoned Attacks, Quick to Fire, Rapid Fire")[]
 
-\*_Only applies in turns the model has not moved. Cannot be used to Stand and Shoot._
-
-#namecost("BLOWPIPE", "")
-#minitable(("Range", "Strength", "Special Rules"), ("12\"", "1", "Multiple Shots (2), Poisoned Attacks, Quick to Fire, Rapid Fire"))
 
 == ARMOUR
 
+
+
 You will notice that there are two values in two categories below. "Combat" indicates the armour save the model will receive against close combat attacks, templates and direct damage spells, and "missile" indicates the armour save the model will receive against normal shooting attacks and magic missiles. The first value indicates the armour save modifier each piece of armour gives to the model’s total armour save, whereas the second value is the basic armour save given to the model by that particular piece of equipment.
 
-#namecost("LIGHT ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))
-#namecost("MEDIUM ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+2/5+", "+2/5+", "-"))
-#namecost("HEAVY ARMOUR", "")
-#minitable(("Combat", "Missile", "Special Rules"), ("+3/4+", "+3/4+", "-"))
-#namecost("SHIELDS", "")
+#weapon("LIGHT ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-"))]
+
+#weapon("MEDIUM ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+2/5+", "+2/5+", "-"))]
+
+#weapon("HEAVY ARMOUR")[#minitable(("Combat", "Missile", "Special Rules"), ("+3/4+", "+3/4+", "-"))]
+
+#weapon("SHIELDS")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+*", "Parry (6+)**"))
 
 #note[_\*Models on foot armed with shields get an additional +1 to their armour save against missile attacks to their front. Shields do not add any armour against missile attacks to the rear. \*\*Only applies if used with a hand weapon._]
+]
 
-#namecost("BUCKLER", "")
+#weapon("BUCKLER")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+*", "Parry (6+)**"))
 
 #note[_\*Only applies to models on foot against missile attacks to the front. \*\*Only applies if used with a hand weapon._]
+]
 
-#namecost("BARDING", "")
+#weapon("BARDING")[
 #minitable(("Combat", "Missile", "Special Rules"), ("+1/6+", "+1/6+", "-1 Movement*"))
 
 #note[_\*Applies to mount's Movement characteristics._]
+]
+
 
 == ARTILLERY
 
@@ -3329,7 +3127,6 @@ If you wish to fire indirectly, declare that you will do so before taking the st
 If an arrow is rolled on the scatter dice, resolve the scatter as normal. If however, you roll a Hit! on the scatter dice, the shot does not land on target but merely scatters less – how much less depends greatly on the skill of the crew. The distance travelled is equal to the score shown on the artillery dice minus the crew's Ballistic Skill characteristic (to a minimum of zero!).
 
 Other than the aforementioned inaccuracy of the scatter, an indirect shot from a stone thrower is treated exactly according to the rules given for normal shots given above.
-
 = COMMAND GROUPS
 
 #namecost("FIELDING COMMAND GROUPS", "")
@@ -4296,50 +4093,28 @@ Each pitched battle contains the information you need to get set up and playing,
 
 This format governs all Warhammer scenarios – not just the ones found in this volume.
 
-== BATTLELINE
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BATTLELINE",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter.],
+  deployment: [
 Roll off to see which player picks the half of the table they will deploy in. The opponent will deploy in the other half.
 
 Players then take it in turn to place units on the table, using the alternating units method of deployment. Units may be placed anywhere in their deployment zone that is more than 12" from the centre line.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player takes the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player takes the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/2.32/img-0600.jpg", 0.762)
+],
+)
 
-== DAWN ATTACK
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the "Fighting a Battle" chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("DAWN ATTACK",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the "Fighting a Battle" chapter.],
+  deployment: [
 Roll off to see which player picks the half of the table they will deploy in. The opponent will deploy in the other half.
 
 The player that won the roll off must deploy their entire army first. Before deploying each unit, roll a dice and refer to the Deployment table to see where the unit must deploy.
@@ -4363,85 +4138,48 @@ the centre line.")))
 #chartlabel("FIRST TURN")
 
 After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/2.32/img-0602.jpg", 0.754)
+],
+)
 
-== BATTLE FOR THE PASS
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter. It's worth keeping in mind when setting up the terrain that the battle will be fought down the length of the table, in a narrow pass with impassable mountains just off each of the long table edges.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BATTLE FOR THE PASS",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter. It's worth keeping in mind when setting up the terrain that the battle will be fought down the length of the table, in a narrow pass with impassable mountains just off each of the long table edges.],
+  deployment: [
 Roll off to see which player picks the half of the table they want to deploy in. The opponent deploys in the other half. Note that in this pitched battle the game is fought down the length of the table rather than across its width, as shown on the deployment map below.
 
 Units may be placed anywhere in their half that is more than 12" from the centre line.
 
 Players take it in turn to place units on the table, using the alternating unit method of deployment.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player receives the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player receives the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 *Bottleneck:* The battle is being fought in a narrow pass enclosed by high cliffs. Because of this, the long table edges count as impassable terrain. Following the normal rules, fleeing units can force a way through the impassable terrain and disappear from the table. Other units (including reinforcements) may not enter or leave via a long table edge unless they are Ethereal or a Flyer. This means that pursuing or overrunning units, other than Ethereals and Flyers, must stop 1" away from the long table edges.
 
 #diagram("/assets/figures/rulebook/2.32/img-0604.jpg", 0.759)
+],
+)
 
-== BLOOD AND GLORY
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the "Fighting a Battle" chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("BLOOD AND GLORY",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the "Fighting a Battle" chapter.],
+  deployment: [
 Roll off to see which player chooses the half of the table they will deploy in. The opponent will deploy in the other half. Players then take it in turns to place units on the table, using the alternating units method of deployment.
 
 Units may be placed anywhere in their half of the table that is more than 9" from the centre line, and more than 9" away from either narrow table edge.
-
-#namecost("FIRST TURN", "")
-
-Roll off after deployment to see which player receives the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.
-
-#namecost("GAME LENGTH", "")
-
-The game ends at the end of the 6th game turn or as soon as an army breaks. An army immediately breaks when its Fortitude is equal to or less than its Breaking Point (see below).
-
-#namecost("VICTORY CONDITIONS", "")
-
-The first army to break the enemy wins the battle (see above). If neither army has broken by the end of the game, or if both were to break simultaneously, use victory points to determine the winner.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [Roll off after deployment to see which player receives the first turn. The player that finished deploying their army first adds +1 to their roll as per the normal rules.],
+  game-length: [The game ends at the end of the 6th game turn or as soon as an army breaks. An army immediately breaks when its Fortitude is equal to or less than its Breaking Point (see below).],
+  victory-conditions: [The first army to break the enemy wins the battle (see above). If neither army has broken by the end of the game, or if both were to break simultaneously, use victory points to determine the winner.],
+  special-rules: [
 *Breaking Point:* An army's breaking point is equal to one for every thousand points in the army, rounding any fractions up. So, an army of up to 1,000 points has a breaking point of one, an army worth 1,001 to 2,000 points has a breaking point of two, etc.
 
 *Fortitude:* Any army's fortitude is equal to the current number of standards in the army (including the battle standard), plus two for the General. Fleeing units and units that are only temporarily off-table still count.
@@ -4449,78 +4187,47 @@ The first army to break the enemy wins the battle (see above). If neither army h
 For example, a 2,000 point army (breaking point 2) has three unit standards, a battle standard, and a General, giving it a starting fortitude of six (3 + 1 + 2=6). It would break as soon as its fortitude was reduced to two.
 
 #diagram("/assets/figures/rulebook/2.32/img-0606.jpg", 0.75)
+],
+)
 
-== MEETING ENGAGEMENT
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
-Set up terrain as described under the “Fighting a Battle” chapter.
-
-#namecost("DEPLOYMENT", "")
-
+#scenario("MEETING ENGAGEMENT",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [Set up terrain as described under the “Fighting a Battle” chapter.],
+  deployment: [
 In this scenario the table is divided into two halves from corner to corner, as shown on the deployment map. The players roll off and the winner chooses the two opposite corners to be used and which half of the table each player will deploy in.
 
 The player that won the roll-off must deploy their entire army first. Before deploying the army, roll a dice for each separate unit, including each individual character and war machine. On a roll of 1 the unit must be held back as reserves (see the special rules for Reserves on the right). After all units have been rolled for, those that are not reserves can be deployed in their side's deployment zone, anywhere that is more than 6" away from the centre line.
 
 Once the first player had deployed, their opponent does likewise, in exactly the same manner.
-
-#namecost("FIRST TURN", "")
-
-After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.
-
-#namecost("GAME LENGTH", "")
-
-The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.
-
-#namecost("VICTORY CONDITIONS", "")
-
-Use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  first-turn: [After deployment, the player that set up second rolls a dice. On a roll of 6 they can choose who has the first turn. On a roll of 1\-5 the player that set up first chooses who has the first turn.],
+  game-length: [The battle will last for six game turns, or until a time limit agreed by the players is reached, whichever comes first.],
+  victory-conditions: [Use victory points to determine the winner of the battle.],
+  special-rules: [
 *Reserves:* Reserves are not deployed at the start of the battle. Instead they can enter play on any turn of their player's choosing, using the reinforcements rules. They may enter at any point on the long table edge of their deployment zone.
 
 #diagram("/assets/figures/rulebook/2.32/img-0608.jpg", 0.762)
+],
+)
 
-== THE WATCHTOWER
-#namecost("THE ARMIES", "")
-
-Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.
-
-#namecost("THE BATTLEFIELD", "")
-
+#scenario("THE WATCHTOWER",
+  armies: [Each player chooses their force using the army list from a Warhammer Armies book, to an equal points value agreed before the game.],
+  battlefield: [
 Set up the watchtower as described below, and then set up any remaining terrain using the method described under the “Fighting a Battle” chapter. The watchtower counts as the first of the terrain pieces that must be set up.
 
 A building must be set up at the centre of the table. Any building model can be used, but a Warhammer Watchtower is ideal. If you don't have a building model, use any other terrain feature of your choice.
-
-#namecost("DEPLOYMENT", "")
-
-Roll off to see who controls the watchtower at the start of the battle. The player that controls the tower may deploy a single Core infantry unit of no more than 20 models in the tower if they wish to do so. The unit is not allowed to voluntarily leave the tower until after the first game turn of the battle has been completed. The opposing player then picks the half of the table they will deploy in. Players then take it in turn to place units on the table, starting with the player that doesn't control the watchtower, using the alternating units method of deployment. Units may be placed anywhere in their half that is more than 12" from the centre line.
-
-#namecost("FIRST TURN", "")
-
-The player that does not control the watchtower receives the first turn.
-
-#namecost("GAME LENGTH", "")
-
-Roll a D6 at the end of each game turn, starting with the end of game turn 4. Add the turn number to the dice roll. If the score is 10 or more, then the battle ends immediately. If the total is less than 10 then the battle continues for at least one more game turn.
-
-#namecost("VICTORY CONDITIONS", "")
-
-At the end of the battle, the side that controls the watchtower is the winner. The watchtower is controlled by calculating the amount of Unit Strength of all units within 6" of it that are not fleeing on each side. Any unit garrisoning Watchtower counts as double their Unit Strength (to a maximum of +20) for this purpose. The side with the highest Unit Strength is the winner. In the unlikely event that neither player can claim to control the watchtower, use victory points to determine the winner of the battle.
-
-#namecost("SCENARIO SPECIAL RULES", "")
-
+],
+  deployment: [Roll off to see who controls the watchtower at the start of the battle. The player that controls the tower may deploy a single Core infantry unit of no more than 20 models in the tower if they wish to do so. The unit is not allowed to voluntarily leave the tower until after the first game turn of the battle has been completed. The opposing player then picks the half of the table they will deploy in. Players then take it in turn to place units on the table, starting with the player that doesn't control the watchtower, using the alternating units method of deployment. Units may be placed anywhere in their half that is more than 12" from the centre line.],
+  first-turn: [The player that does not control the watchtower receives the first turn.],
+  game-length: [Roll a D6 at the end of each game turn, starting with the end of game turn 4. Add the turn number to the dice roll. If the score is 10 or more, then the battle ends immediately. If the total is less than 10 then the battle continues for at least one more game turn.],
+  victory-conditions: [At the end of the battle, the side that controls the watchtower is the winner. The watchtower is controlled by calculating the amount of Unit Strength of all units within 6" of it that are not fleeing on each side. Any unit garrisoning Watchtower counts as double their Unit Strength (to a maximum of +20) for this purpose. The side with the highest Unit Strength is the winner. In the unlikely event that neither player can claim to control the watchtower, use victory points to determine the winner of the battle.],
+  special-rules: [
 None.
 
 #diagram("/assets/figures/rulebook/2.32/img-0610.jpg", 0.756)
-
-= MAGIC ITEMS
-
-=== SELECTING MAGIC ITEMS
+],
+)
+#magic-item-chapter(intro: [=== SELECTING MAGIC ITEMS
 
 Each Warhammer Armies book describes in detail the many different kinds of magic item that each army can use. Here we shall examine the magic items that are commonly used by all races. Where a model has the option of choosing one or more magic items, it will be clearly stated in their army list entry, as will any restrictions on the magic items they can take.
 
@@ -4532,700 +4239,351 @@ Magic items are considered to be unique – you can only have one of each in you
 
 === BALANCE OF POWER
 
-Usually, only characters can carry magic items. Each model can normally only carry one of each type of magic item. Magic items are divided into six categories: Magic Weapons, Magic Armour, Talismans, Enchanted Items, Arcane Items and Magic Standards. Each category covers a particular kind of item and 'family' of effects – Magic Weapons give bonuses to a model's fighting skill, for example, whilst Talismans provide protection. A model can only ever choose one item from each category, unless specified. The only exceptions to this rule are some special characters, who might well have two magical weapons, for example.
+Usually, only characters can carry magic items. Each model can normally only carry one of each type of magic item. Magic items are divided into six categories: Magic Weapons, Magic Armour, Talismans, Enchanted Items, Arcane Items and Magic Standards. Each category covers a particular kind of item and 'family' of effects – Magic Weapons give bonuses to a model's fighting skill, for example, whilst Talismans provide protection. A model can only ever choose one item from each category, unless specified. The only exceptions to this rule are some special characters, who might well have two magical weapons, for example.])
 
-== MAGIC WEAPONS
-
+#magic-item-section("weapon", first: true, intro: [
 Unless otherwise stated, a magic weapon is treated as a hand weapon (replacing the model's regular hand weapon), and follows the rules for such. This means that a magic weapon can be used with both an additional hand weapon or shield/buckler following their normal rules. In the case of non-magical additional hand weapons, the +1 Attack does not benefit from any special rules from the magic weapon.
 
 In order for a model to be able to choose a particular piece of weapon (such as great weapon, polearm or two hand weapons) they must be able to pick this as a mundane option or have it as part of their default equipment. Note that magic weapons that count as normal hand weapons may be taken by any model that can choose magic weapons.
 
 A character that has a magic close combat weapon cannot use any other close combat weapons. If a character has more than one magic weapon, they must choose which one to use at the start of the combat (unless a rule specifies that both can be used at the same time) – the chosen weapon must be used for the duration of the combat.
+])[
+#magic-weapon("DRAGON BLADE", 70)[Any successful To Hit rolls in close combat with this sword are multiplied into 2 Hits.]
 
-#namecost("DRAGON BLADE", "70 points")
+#magic-weapon("GIANT BLADE", 45)[Close combat attacks made with this sword are resolved at +3 Strength.]
 
-Any successful To Hit rolls in close combat with this sword are multiplied into 2 Hits.
+#magic-weapon("SWORD OF BLOODSHED", 45)[A character using this blade gains +3 on their Attacks characteristic.]
 
-#namecost("GIANT BLADE", "45 points")
+#magic-weapon("DRAGON SLAYING SWORD", 40)[The wielder gains the Heroic Killing Blow special rule.]
 
-Close combat attacks made with this sword are resolved at +3 Strength.
+#magic-weapon("FENCER'S BLADES", 30)[Two hand weapons. The bearer has Weapon Skill 10.]
 
-#namecost("SWORD OF BLOODSHED", "45 points")
+#magic-weapon("OGRE BLADE", 30)[Close combat attacks made with this sword are resolved at +2 Strength.]
 
-A character using this blade gains +3 on their Attacks characteristic.
+#magic-weapon("SWORD OF STRIFE", 30)[A character using this blade gains +2 on their Attacks characteristic.]
 
-#namecost("DRAGON SLAYING SWORD", "40 points")
+#magic-weapon("SWORD OF ANTI-HEROES", 30)[The wielder gains +1 Strength and +1 Attack for every enemy character in base contact with them or their unit. These bonuses are calculated at the start of each round of close combat and last until its end.]
 
-The wielder gains the Heroic Killing Blow special rule.
+#magic-weapon("OBSIDIAN BLADE", 25)[The wielder gains the Ignores Armour Saves special rule.]
 
-#namecost("FENCER'S BLADES", "30 points")
+#magic-weapon("SWORD OF SWIFT SLAYING", 25)[The wielder gains the Always Strikes First special rule.]
 
-Two hand weapons. The bearer has Weapon Skill 10.
+#magic-weapon("SWORD OF FORTITUDE", 20)[The character, and any unit they are with, gains the Immunity (Psychology) special rule.]
 
-#namecost("OGRE BLADE", "30 points")
+#magic-weapon("PARRYING BLADE", 20)[The wielder gains the Parry (5+) special rule.]
 
-Close combat attacks made with this sword are resolved at +2 Strength.
+#magic-weapon("BLADE OF SEA GOLD", 15)[The wielder gains the Armour Piercing (3) special rule.]
 
-#namecost("SWORD OF STRIFE", "30 points")
+#magic-weapon("BONE BLADE", 15)[The wielder gains the Multiple Wounds (D3) special rule.]
 
-A character using this blade gains +2 on their Attacks characteristic.
+#magic-weapon("HEADSMAN'S AXE", 15)[The wielder gains the Killing Blow special rule.]
 
-#namecost("SWORD OF ANTI-HEROES", "30 points")
+#magic-weapon("SWORD OF STRIKING", 15)[Attacks made with the Sword of Striking receive a +1 bonus to hit.]
 
-The wielder gains +1 Strength and +1 Attack for every enemy character in base contact with them or their unit. These bonuses are calculated at the start of each round of close combat and last until its end.
+#magic-weapon("SWORD OF MIGHT", 15)[Close combat attacks made with this sword are resolved at +1 Strength.]
 
-#namecost("OBSIDIAN BLADE", "25 points")
+#magic-weapon("SWORD OF BATTLE", 15)[A character using this blade gains +1 on their Attacks characteristic.]
 
-The wielder gains the Ignores Armour Saves special rule.
+#magic-weapon("SHRIEKING BLADE", 15)[The wielder gains the Fear special rile.]
 
-#namecost("SWORD OF SWIFT SLAYING", "25 points")
+#magic-weapon("BERSERKER SWORD", 10)[The wielder gains the Frenzy special rule and can never lose their Frenzy.]
 
-The wielder gains the Always Strikes First special rule.
+#magic-weapon("BLADE OF SLICING", 10)[The wielder gains the Armour Piercing (2) special rule.]
 
-#namecost("SWORD OF FORTITUDE", "20 points")
+#magic-weapon("RELIC SWORD", 10)[Attacks made with the Relic Sword will always wound on a 3+, unless they would normally need a lower result.]
 
-The character, and any unit they are with, gains the Immunity (Psychology) special rule.
+#magic-weapon("VENOM SWORD", 10)[The wielder gains the Poisoned Attacks special rule.]
 
-#namecost("PARRYING BLADE", "20 points")
+#magic-weapon("BITING BLADE", 5)[The wielder gains the Armour Piercing (1) special rule.]
 
-The wielder gains the Parry (5+) special rule.
+#magic-weapon("BURNING BLADE", 5)[The wielder gains the Flaming Attacks special rule.]
 
-#namecost("BLADE OF SEA GOLD", "15 points")
+#magic-weapon("TORMENTOR SWORD", 5)[A monster or character that suffers an unsaved wound from the Tormentor sword has the Stupidity special rule for the rest of the game.]
 
-The wielder gains the Armour Piercing (3) special rule.
+#magic-weapon("WARRIOR BANE", 5)[A monster or character that suffers unsaved wounds from Warrior Bane permanently loses one Attack for each unsaved wound (to a minimum of 1 Attack).]
+]
 
-#namecost("BONE BLADE", "15 points")
-
-The wielder gains the Multiple Wounds (D3) special rule.
-
-#namecost("HEADSMAN'S AXE", "15 points")
-
-The wielder gains the Killing Blow special rule.
-
-#namecost("SWORD OF STRIKING", "15 points")
-
-Attacks made with the Sword of Striking receive a +1 bonus to hit.
-
-#namecost("SWORD OF MIGHT", "15 points")
-
-Close combat attacks made with this sword are resolved at +1 Strength.
-
-#namecost("SWORD OF BATTLE", "15 points")
-
-A character using this blade gains +1 on their Attacks characteristic.
-
-#namecost("SHRIEKING BLADE", "15 points")
-
-The wielder gains the Fear special rile.
-
-#namecost("BERSERKER SWORD", "10 points")
-
-The wielder gains the Frenzy special rule and can never lose their Frenzy.
-
-#namecost("BLADE OF SLICING", "10 points")
-
-The wielder gains the Armour Piercing (2) special rule.
-
-#namecost("RELIC SWORD", "10 points")
-
-Attacks made with the Relic Sword will always wound on a 3+, unless they would normally need a lower result.
-
-#namecost("VENOM SWORD", "10 points")
-
-The wielder gains the Poisoned Attacks special rule.
-
-#namecost("BITING BLADE", "5 points")
-
-The wielder gains the Armour Piercing (1) special rule.
-
-#namecost("BURNING BLADE", "5 points")
-
-The wielder gains the Flaming Attacks special rule.
-
-#namecost("TORMENTOR SWORD", "5 points")
-
-A monster or character that suffers an unsaved wound from the Tormentor sword has the Stupidity special rule for the rest of the game.
-
-#namecost("WARRIOR BANE", "5 points")
-
-A monster or character that suffers unsaved wounds from Warrior Bane permanently loses one Attack for each unsaved wound (to a minimum of 1 Attack).
-
-== MAGIC ARMOUR
-
+#magic-item-section("armour", intro: [
 Except where otherwise stated, magical suits of armour (light, medium or heavy) and shields follow the same rules as mundane ones, but keep in mind that a model can only have one suit of armour and one shield, so if you give a model a magical suit of armour or a magical shield, it replaces any mundane equivalent already worn by the model.
 
 In order for a model to be able to choose a particular piece of armour (such as heavy armour or a shield) they must be able to pick this (or another armour that gives a better save value) as a mundane option or have it be part of their default equipment.
 
 Magic armours that are not specified as suits or shields (such as helmets, gauntlets and so on) can always be worn by models that are allowed to wear any non- magical armour.
+])[
+#magic-armour("ARMOUR OF DESTINY", 50)[Heavy armour. The wearer gains a Ward save (4+).]
 
-#namecost("ARMOUR OF DESTINY", "50 points")
+#magic-armour("ARMOUR OF FORTUNE", 35)[Medium armour. The wearer gains a Ward save (5+).]
 
-Heavy armour. The wearer gains a Ward save (4+).
+#magic-armour("TRICKSTER'S HELM", 30)[Model on foot only. The helmet gives the wearer a 6+ armour save. Any successful roll to wound made against the wearer of the Trickster's Helm must be re- rolled.]
 
-#namecost("ARMOUR OF FORTUNE", "35 points")
+#magic-armour("ARMOUR OF RESILIENCE", 25)[Heavy armour. wearer gains +1 Toughness.]
 
-Medium armour. The wearer gains a Ward save (5+).
+#magic-armour("ARMOUR OF SILVERED STEEL", 25)[Heavy armour. The Armour of Silvered Steel grants its wearer a 2+ armour save that cannot be improved by any means.]
 
-#namecost("TRICKSTER'S HELM", "30 points")
+#magic-armour("GLITTERING SCALES", 25)[Light armour. Enemy models suffer \-1 To Hit the wearer in close combat.]
 
-Model on foot only. The helmet gives the wearer a 6+ armour save. Any successful roll to wound made against the wearer of the Trickster's Helm must be re- rolled.
+#magic-armour("BEDAZZLING HELM", 20)[The helmet gives the wearer a 6+ armour save. Enemy models targeting the wearer in close combat must re- roll 6's To Hit against them.]
 
-#namecost("ARMOUR OF RESILIENCE", "25 points")
+#magic-armour("SHIELD OF PTOLOS", 20)[Shield. The bearer has a 1+ armour save against shooting attacks.]
 
-Heavy armour. wearer gains +1 Toughness.
+#magic-armour("HELM OF DISCORD", 20)[The helmet gives the wearer a 6+ armour save. In addition, at the start of each Close Combat phase, choose an enemy character in base contact with the bearer or his unit. That character must immediately take a Leadership test. If the test is failed, the victim cannot make attacks and is hit automatically in this Close Combat round.]
 
-#namecost("ARMOUR OF SILVERED STEEL", "25 points")
+#magic-armour("GAMBLER'S ARMOUR", 15)[Light armour. The Gambler's Armour grants the wearer a Ward save (6+).]
 
-Heavy armour. The Armour of Silvered Steel grants its wearer a 2+ armour save that cannot be improved by any means.
+#magic-armour("SHIELD OF THE WARRIOR TRUE", 15)[Shield. The bearer gains a Ward save (5+) against missile attacks.]
 
-#namecost("GLITTERING SCALES", "25 points")
+#magic-armour("SPELLSHIELD", 15)[Shield. The bearer gains Magic Resistance (1).]
 
-Light armour. Enemy models suffer \-1 To Hit the wearer in close combat.
+#magic-armour("DRAGONHELM", 10)[The helmet gives the wearer a 6+ armour save. The wearer has the Immunity (Flaming Attacks) special rule.]
 
-#namecost("BEDAZZLING HELM", "20 points")
+#magic-armour("ENCHANTED SHIELD", 10)[Shield. The bearer gains +2 to their armour save, rather than +1 that a normal shield would give.]
 
-The helmet gives the wearer a 6+ armour save. Enemy models targeting the wearer in close combat must re- roll 6's To Hit against them.
+#magic-armour("CHARMED SHIELD", 5)[Shield. One use only. The first hit suffered by the bearer of the Charmed Shield is ignored on a roll of 2+.]
+]
 
-#namecost("SHIELD OF PTOLOS", "20 points")
-
-Shield. The bearer has a 1+ armour save against shooting attacks.
-
-#namecost("HELM OF DISCORD", "20 points")
-
-The helmet gives the wearer a 6+ armour save. In addition, at the start of each Close Combat phase, choose an enemy character in base contact with the bearer or his unit. That character must immediately take a Leadership test. If the test is failed, the victim cannot make attacks and is hit automatically in this Close Combat round.
-
-#namecost("GAMBLER'S ARMOUR", "15 points")
-
-Light armour. The Gambler's Armour grants the wearer a Ward save (6+).
-
-#namecost("SHIELD OF THE WARRIOR TRUE", "15 points")
-
-Shield. The bearer gains a Ward save (5+) against missile attacks.
-
-#namecost("SPELLSHIELD", "15 points")
-
-Shield. The bearer gains Magic Resistance (1).
-
-#namecost("DRAGONHELM", "10 points")
-
-The helmet gives the wearer a 6+ armour save. The wearer has the Immunity (Flaming Attacks) special rule.
-
-#namecost("ENCHANTED SHIELD", "10 points")
-
-Shield. The bearer gains +2 to their armour save, rather than +1 that a normal shield would give.
-
-#namecost("CHARMED SHIELD", "5 points")
-
-Shield. One use only. The first hit suffered by the bearer of the Charmed Shield is ignored on a roll of 2+.
-
-== TALISMANS
-
+#magic-item-section("talisman", intro: [
 The Talismans category includes charms, amulets and other tokens of protection.
+])[
+#talisman("TALISMAN OF PRESERVATION", 45)[The Talisman of Preservation grants the bearer a Ward save (4+).]
 
-#namecost("TALISMAN OF PRESERVATION", "45 points")
+#talisman("OBSIDIAN LODESTONE", 30)[The Obsidian Lodestone grants Magic Resistance (3).]
 
-The Talisman of Preservation grants the bearer a Ward save (4+).
+#talisman("TALISMAN OF ENDURANCE", 30)[The Talisman of Endurance grants the bearer a Ward save (5+).]
 
-#namecost("OBSIDIAN LODESTONE", "30 points")
+#talisman("DAWNSTONE", 25)[Models on foot only. The bearer re-rolls failed armour saves.]
 
-The Obsidian Lodestone grants Magic Resistance (3).
+#talisman("OBSIDIAN AMULET", 20)[The Obsidian Amulet grants the bearer Magic Resistance (2).]
 
-#namecost("TALISMAN OF ENDURANCE", "30 points")
+#talisman("TALISMAN OF PROTECTION", 15)[The Talisman of Protection grants the bearer a Ward save (6+).]
 
-The Talisman of Endurance grants the bearer a Ward save (5+).
+#talisman("OPAL AMULET", 15)[One use only. The Opal Amulet bestows a Ward save (2+) against the first unsaved wound suffered by the bearer, after which its power fades and it cannot be used again during the game.]
 
-#namecost("DAWNSTONE", "25 points")
+#talisman("OBSIDIAN TRINKET", 10)[The Obsidian Trinket grants Magic Resistance (1).]
 
-Models on foot only. The bearer re-rolls failed armour saves.
+#talisman("SEED OF REBIRTH", 10)[The bearer of the Seed of Rebirth has the Regeneration (6+) special rule.]
 
-#namecost("OBSIDIAN AMULET", "20 points")
+#talisman("DRAGONBANE GEM", 5)[The bearer of the Dragonbane Gem has the Immunity (Flaming Attacks) special rule.]
 
-The Obsidian Amulet grants the bearer Magic Resistance (2).
+#talisman("LUCKY TRINKET", 5)[One use only. The Lucky Trinket allows the bearer to re-roll a single failed armour or Ward save.]
 
-#namecost("TALISMAN OF PROTECTION", "15 points")
+#talisman("PIDGEON PLUCKER PENDANT", 5)[This item grants the bearer a Ward save (4+) against wounds caused in close combat by models that have the Fly special rule.]
+]
 
-The Talisman of Protection grants the bearer a Ward save (6+).
-
-#namecost("OPAL AMULET", "15 points")
-
-One use only. The Opal Amulet bestows a Ward save (2+) against the first unsaved wound suffered by the bearer, after which its power fades and it cannot be used again during the game.
-
-#namecost("OBSIDIAN TRINKET", "10 points")
-
-The Obsidian Trinket grants Magic Resistance (1).
-
-#namecost("SEED OF REBIRTH", "10 points")
-
-The bearer of the Seed of Rebirth has the Regeneration (6+) special rule.
-
-#namecost("DRAGONBANE GEM", "5 points")
-
-The bearer of the Dragonbane Gem has the Immunity (Flaming Attacks) special rule.
-
-#namecost("LUCKY TRINKET", "5 points")
-
-One use only. The Lucky Trinket allows the bearer to re-roll a single failed armour or Ward save.
-
-#namecost("PIDGEON PLUCKER PENDANT", "5 points")
-
-This item grants the bearer a Ward save (4+) against wounds caused in close combat by models that have the Fly special rule.
-
-== ARCANE ITEMS
-
+#magic-item-section("arcane", intro: [
 Arcane items are items that enhance a Wizard's magical powers in some fashion. Only a character with a Wizard level can carry Arcane Items. Characters with no sensitivity to magical essences and mysteries will either find an Arcane Item useless and inert, or have their brains sucked out through their ears should they try to use it. Unlike other magic items; Wizards that are Lords can take up to two Arcane Items. If they do so, one of their Arcane items must be marked as "one use only". Note that they may not take two "one use only" items.
+])[
+#arcane-item("DESTROY MAGIC SCROLL", 35)[One use only. When an enemy cast a spell, the bearer may immediately counter its effects by reading the Destroy Magic Scroll to release the spell written upon it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). In addition, roll a D6. On a 4+, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game (note that this has no effect on Innate Bound spells).]
 
-#namecost("DESTROY MAGIC SCROLL", "35 points")
+#arcane-item("FEEDBACK SCROLL", 35)[One use only. When an enemy spell has been cast, a Wizard who has a Feedback Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard suffer 1 Wound which Ignores Armour Saves for every result of 5+ rolled.]
 
-One use only. When an enemy cast a spell, the bearer may immediately counter its effects by reading the Destroy Magic Scroll to release the spell written upon it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). In addition, roll a D6. On a 4+, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game (note that this has no effect on Innate Bound spells).
+#arcane-item("SIVEJIR'S HEX SCROLL", 35)[One use only. When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell's energy is transformed and redirected at the caster. The enemy wizard can resist the spell's effects by rolling equal to or under his wizard level on a D6. If failed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of their characteristics are reduced to 1 (except for his wounds, which are unaffected). Their controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to their normal form.]
 
-#namecost("FEEDBACK SCROLL", "35 points")
+#arcane-item("BOOK OF ASHUR", 30)[The Wizard gains the Loremaster special rule.]
 
-One use only. When an enemy spell has been cast, a Wizard who has a Feedback Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard suffer 1 Wound which Ignores Armour Saves for every result of 5+ rolled.
+#arcane-item("ROD OF POWER", 30)[At the end of each magic phase (yours and enemy's), you can save up to three unused power/dispel dice from the pool and store them in the rod. At the beginning of each successive magic phase (yours and enemy's), roll a dice. If the result is equal or higher to the number of dice stored, add them to the power/dispel dice pool, if the result is lower than the number of dice stored, they are lost.]
 
-#namecost("SIVEJIR'S HEX SCROLL", "35 points")
+#arcane-item("CHANNELLING STAFF", 20)[The Wizard rolls one additional dice whenever they attempt to channel power or dispel dice.]
 
-One use only. When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell's energy is transformed and redirected at the caster. The enemy wizard can resist the spell's effects by rolling equal to or under his wizard level on a D6. If failed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of their characteristics are reduced to 1 (except for his wounds, which are unaffected). Their controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to their normal form.
+#arcane-item("DISPEL SCROLL", 25)[One use only. When an enemy spell has been cast, a wizard who has a dispel scroll can read it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that Remains in Play.]
 
-#namecost("BOOK OF ASHUR", "30 points")
+#arcane-item("SCROLL OF LEACHING", 25)[One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Leeching can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell.]
 
-The Wizard gains the Loremaster special rule.
+#arcane-item("THE MYSTIC SHIELD OF BRAG", 25)[One use only. The Mystic Shield of Brag may be used against any enemy spell that directly targets any friendly unit. The enemy spell has no effect.]
 
-#namecost("ROD OF POWER", "30 points")
+#arcane-item("MYSTIC MAZE", 20)[One use only. The Mystic Maze may be used against any enemy spell that directly targets any friendly unit. Roll 3D6 measured from the centre of the unit; this is the distance the spell scatters in a random direction. Should the spell end up on another unit, this unit will become the target of the spell; otherwise the spell has no effect.]
 
-At the end of each magic phase (yours and enemy's), you can save up to three unused power/dispel dice from the pool and store them in the rod. At the beginning of each successive magic phase (yours and enemy's), roll a dice. If the result is equal or higher to the number of dice stored, add them to the power/dispel dice pool, if the result is lower than the number of dice stored, they are lost.
+#arcane-item("POWER FAMILIAR", 25)[The Familiar adds one Power Dice in each of your Magic phases.]
 
-#namecost("CHANNELLING STAFF", "20 points")
+#arcane-item("SCEPTRE OF STABILITY", 20)[The bearer gains a +1 dispel bonus.]
 
-The Wizard rolls one additional dice whenever they attempt to channel power or dispel dice.
+#arcane-item("WAND OF JET", 20)[The bearer gains a +1 casting bonus.]
 
-#namecost("DISPEL SCROLL", "25 points")
+#arcane-item("ARCANE FAMILIAR", 15)[The Wizard can choose one Signature spell as an additional spell from any of the eight Lores of Battle Magic in this book, even if they normally cannot choose that lore.]
 
-One use only. When an enemy spell has been cast, a wizard who has a dispel scroll can read it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dispel dice to attempt to dispel the spell, which cannot be combined with any other dispel dice (Ultimate Power applies as normal). This may also be used to dispel spells that Remains in Play.
+#arcane-item("EARTHING ROD", 15)[One use only. If the wizard suffers a miscast, they do not add the number of power dice used to the result.]
 
-#namecost("SCROLL OF LEACHING", "25 points")
+#arcane-item("FORBIDDEN ROD", 15)[One use only. The Forbidden Rod adds +D6 dice to the power pool at the start of the caster's own magic phase, but also inflicts 1 Wound which Ignores Armour Saves on the bearer.]
 
-One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Leeching can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell.
+#arcane-item("HYPNOTIC EYE SCROLL", 15)[One use only. The Hypnotic Eye Scroll can be used whenever an enemy wizard successfully casts a spell instead of attempting to dispel. The casting wizard must pass a Leadership test; if failed, you may choose the target of the spell just as if you had cast the spell yourself. If no target can be chosen, the spell has no effect. Note that the spell is still cast from the original Wizard as normal.]
 
-#namecost("THE MYSTIC SHIELD OF BRAG", "25 points")
+#arcane-item("POWER SCROLL", 15)[One use only. A Power Scroll can be used when the Wizard makes a casting attempt. During that casting attempt, any roll of a double (except 1's) counts as a 6 for the purpose of resolving Ultimate Power.]
 
-One use only. The Mystic Shield of Brag may be used against any enemy spell that directly targets any friendly unit. The enemy spell has no effect.
+#arcane-item("THE GEM OF TARANTO", 10)[One use only. The Gem of Taranto can be used whenever you successfully dispel an enemy spell (except Summoning or Innate Bound Spells). The bearer of the Gem will be able to cast the spell themselves (limited by their Wizard level as normal) for the remainder of the game, even if it is from a lore not normally available to them.]
 
-#namecost("MYSTIC MAZE", "20 points")
+#arcane-item("LUCKSTONE", 10)[One use only. The bearer can re-roll all of the dice rolled to cast or dispel a spell. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.]
 
-One use only. The Mystic Maze may be used against any enemy spell that directly targets any friendly unit. Roll 3D6 measured from the centre of the unit; this is the distance the spell scatters in a random direction. Should the spell end up on another unit, this unit will become the target of the spell; otherwise the spell has no effect.
+#arcane-item("POWER STONE", 10)[One use only. The Wizard can declare that they are using the power stone immediately before casting a spell. If they do so, +D3 dice are added to the power dice that they are going to roll (you still need to roll at least one dice from the power pool).]
 
-#namecost("POWER FAMILIAR", "25 points")
+#arcane-item("SCROLL OF SHIELDING", 10)[One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Shielding can read it instead of attempting to dispel the spell. The spell is cast as normal, but the target of the spell is granted Magic Resistance (3) against the spell.]
 
-The Familiar adds one Power Dice in each of your Magic phases.
+#arcane-item("SPELL FAMILIAR", 10)[The Wizard knows one additional spell from those normally allowed to them.]
 
-#namecost("SCEPTRE OF STABILITY", "20 points")
+#arcane-item("TRICKSTER'S SHARD", 10)[One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy wizard, roll a D6. On a 4+, that wizard suffers a Wound which Ignores Armour Saves.]
 
-The bearer gains a +1 dispel bonus.
+#arcane-item("WIZARD'S STAFF", 10)[The Wizard's Staff allows the bearer to use one more dice than they are normally allowed to when casting a spell (eg, a Wizard that can normally use up to two dice to cast spells will be able to use up to three dice).]
+]
 
-#namecost("WAND OF JET", "20 points")
-
-The bearer gains a +1 casting bonus.
-
-#namecost("ARCANE FAMILIAR", "15 points")
-
-The Wizard can choose one Signature spell as an additional spell from any of the eight Lores of Battle Magic in this book, even if they normally cannot choose that lore.
-
-#namecost("EARTHING ROD", "15 points")
-
-One use only. If the wizard suffers a miscast, they do not add the number of power dice used to the result.
-
-#namecost("FORBIDDEN ROD", "15 points")
-
-One use only. The Forbidden Rod adds +D6 dice to the power pool at the start of the caster's own magic phase, but also inflicts 1 Wound which Ignores Armour Saves on the bearer.
-
-#namecost("HYPNOTIC EYE SCROLL", "15 points")
-
-One use only. The Hypnotic Eye Scroll can be used whenever an enemy wizard successfully casts a spell instead of attempting to dispel. The casting wizard must pass a Leadership test; if failed, you may choose the target of the spell just as if you had cast the spell yourself. If no target can be chosen, the spell has no effect. Note that the spell is still cast from the original Wizard as normal.
-
-#namecost("POWER SCROLL", "15 points")
-
-One use only. A Power Scroll can be used when the Wizard makes a casting attempt. During that casting attempt, any roll of a double (except 1's) counts as a 6 for the purpose of resolving Ultimate Power.
-
-#namecost("THE GEM OF TARANTO", "10 points")
-
-One use only. The Gem of Taranto can be used whenever you successfully dispel an enemy spell (except Summoning or Innate Bound Spells). The bearer of the Gem will be able to cast the spell themselves (limited by their Wizard level as normal) for the remainder of the game, even if it is from a lore not normally available to them.
-
-#namecost("LUCKSTONE", "10 points")
-
-One use only. The bearer can re-roll all of the dice rolled to cast or dispel a spell. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.
-
-#namecost("POWER STONE", "10 points")
-
-One use only. The Wizard can declare that they are using the power stone immediately before casting a spell. If they do so, +D3 dice are added to the power dice that they are going to roll (you still need to roll at least one dice from the power pool).
-
-#namecost("SCROLL OF SHIELDING", "10 points")
-
-One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Shielding can read it instead of attempting to dispel the spell. The spell is cast as normal, but the target of the spell is granted Magic Resistance (3) against the spell.
-
-#namecost("SPELL FAMILIAR", "10 points")
-
-The Wizard knows one additional spell from those normally allowed to them.
-
-#namecost("TRICKSTER'S SHARD", "10 points")
-
-One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy wizard, roll a D6. On a 4+, that wizard suffers a Wound which Ignores Armour Saves.
-
-#namecost("WIZARD'S STAFF", "10 points")
-
-The Wizard's Staff allows the bearer to use one more dice than they are normally allowed to when casting a spell (eg, a Wizard that can normally use up to two dice to cast spells will be able to use up to three dice).
-
-== ENCHANTED ITEMS
-
+#magic-item-section("enchanted", intro: [
 The Enchanted Items category includes all manner of artefacts too unique or specific to be included in another category.
+])[
+#enchanted-item("FOZZRIK'S FOLDING FORTRESS", 100)[After deployment zones have been agreed, but before the armies have been deployed, place a watchtower building no more than 10x10 cm in base size and a maximum of 3 floors in your deployment zone to represent the Folding Fortress. This is treated as a standard building. If you do not have a suitable building to place, you cannot use Fozzrik's Folding Fortress.]
 
-#namecost("FOZZRIK'S FOLDING FORTRESS", "100 points")
+#enchanted-item("WIZARDING HAT", 50)[The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore from any of the Eight Lores of Magic at the start of the game. However, they also have the Stupidity special rule. Note that they may not choose any Arcane Items.]
 
-After deployment zones have been agreed, but before the armies have been deployed, place a watchtower building no more than 10x10 cm in base size and a maximum of 3 floors in your deployment zone to represent the Folding Fortress. This is treated as a standard building. If you do not have a suitable building to place, you cannot use Fozzrik's Folding Fortress.
+#enchanted-item("CROWN OF COMMAND", 40)[The Crown of Command gives the bearer and any unit they join the Stubborn special rule for as long as the bearer remains with the unit.]
 
-#namecost("WIZARDING HAT", "50 points")
+#enchanted-item("RUBY RING OF RUIN", 35)[Bound spell, Power level 4. The Ruby Ring of Ruin contains the _Fireball_ spell from the Lore of Fire.]
 
-The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore from any of the Eight Lores of Magic at the start of the game. However, they also have the Stupidity special rule. Note that they may not choose any Arcane Items.
+#enchanted-item("LIFESTONE OF ASHRAAZ", 30)[One use only. The Lifestone of Ashraaz can be used at the start of any close combat phase. The bearer can swap his current number Wounds with the current number of Wounds of any one enemy model in base contact. The effect lasts the remainder of the game.]
 
-#namecost("CROWN OF COMMAND", "40 points")
+#enchanted-item("ORB OF THUNDER", 30)[Bound Spell, Power Level 4. Remains in play. The Orb of Thunder contains a *hex* spell that effects all models with the Fly special rule. When cast, no models may use their Fly special rule and must move on the ground at their normal Movement rate.]
 
-The Crown of Command gives the bearer and any unit they join the Stubborn special rule for as long as the bearer remains with the unit.
+#enchanted-item("ARABYAN CARPET", 25)[Infantry models on foot only. The owner of this magical carpet has the Fly (10) special rule. However, they cannot join units.]
 
-#namecost("RUBY RING OF RUIN", "35 points")
+#enchanted-item("THE TERRIFYING MASK OF EEE!", 25)[The wearer of this mask causes Terror. However, other models can never use their Leadership.]
 
-Bound spell, Power level 4. The Ruby Ring of Ruin contains the _Fireball_ spell from the Lore of Fire.
+#enchanted-item("THE OTHER TRICKSTER'S SHARD", 25)[The bearer, and all units in base contact with them (friend and foe) must re-roll successful ward saves.]
 
-#namecost("LIFESTONE OF ASHRAAZ", "30 points")
+#enchanted-item("BOOTS OF FLIGHT", 20)[Model on foot only. The Boots of Flight gives the wearer Movement 10 as well as the Strider and Swiftstride special rules.]
 
-One use only. The Lifestone of Ashraaz can be used at the start of any close combat phase. The bearer can swap his current number Wounds with the current number of Wounds of any one enemy model in base contact. The effect lasts the remainder of the game.
+#enchanted-item("HEALING POTION", 15)[One use only. The Healing Potion can be drunk at the start of the controlling player's turn. The model immediately recovers D3 Wounds (ignoring any additional Wounds from mounts) up to their starting value.]
 
-#namecost("ORB OF THUNDER", "30 points")
+#enchanted-item("IRONCURSE ICON", 10)[The character (and any unit they are with) gain a Ward save (6+) against artillery weapons.]
 
-Bound Spell, Power Level 4. Remains in play. The Orb of Thunder contains a *hex* spell that effects all models with the Fly special rule. When cast, no models may use their Fly special rule and must move on the ground at their normal Movement rate.
+#enchanted-item("POTION OF STRENGTH", 10)[One use only. The Potion of Strength can be drunk at the start of any phase. The character gains +D3 Strength until the end of the turn.]
 
-#namecost("ARABYAN CARPET", "25 points")
+#enchanted-item("POTION OF TOUGHNESS", 10)[One use only. The Potion of Toughness can be drunk at the start of any phase. The character gains +D3 Toughness until the end of the turn.]
 
-Infantry models on foot only. The owner of this magical carpet has the Fly (10) special rule. However, they cannot join units.
+#enchanted-item("POTION OF SPEED", 10)[One use only. The Potion of Speed can be drunk at the start of any phase. The character gains +D3 Attacks until the end of the turn.]
 
-#namecost("THE TERRIFYING MASK OF EEE!", "25 points")
+#enchanted-item("POTION OF FOOLHARDINESS", 5)[One use only. The Potion of Foolhardiness can be drunk at the start of any phase. The character gains the Frenzy special rule until the end of the turn.]
 
-The wearer of this mask causes Terror. However, other models can never use their Leadership.
+#enchanted-item("WARRIOR FAMILIAR", 5)[The model gains an additional Strength 3 Attack. This does not benefit from any weapon, item or special rule used by the character. You may still take another Enchanted Item in addition to the Warrior Familiar, and it also does not count against the maximum points limit of magic items normally allowed for the character.]
+]
 
-#namecost("THE OTHER TRICKSTER'S SHARD", "25 points")
-
-The bearer, and all units in base contact with them (friend and foe) must re-roll successful ward saves.
-
-#namecost("BOOTS OF FLIGHT", "20 points")
-
-Model on foot only. The Boots of Flight gives the wearer Movement 10 as well as the Strider and Swiftstride special rules.
-
-#namecost("HEALING POTION", "15 points")
-
-One use only. The Healing Potion can be drunk at the start of the controlling player's turn. The model immediately recovers D3 Wounds (ignoring any additional Wounds from mounts) up to their starting value.
-
-#namecost("IRONCURSE ICON", "10 points")
-
-The character (and any unit they are with) gain a Ward save (6+) against artillery weapons.
-
-#namecost("POTION OF STRENGTH", "10 points")
-
-One use only. The Potion of Strength can be drunk at the start of any phase. The character gains +D3 Strength until the end of the turn.
-
-#namecost("POTION OF TOUGHNESS", "10 points")
-
-One use only. The Potion of Toughness can be drunk at the start of any phase. The character gains +D3 Toughness until the end of the turn.
-
-#namecost("POTION OF SPEED", "10 points")
-
-One use only. The Potion of Speed can be drunk at the start of any phase. The character gains +D3 Attacks until the end of the turn.
-
-#namecost("POTION OF FOOLHARDINESS", "5 points")
-
-One use only. The Potion of Foolhardiness can be drunk at the start of any phase. The character gains the Frenzy special rule until the end of the turn.
-
-#namecost("WARRIOR FAMILIAR", "5 points")
-
-The model gains an additional Strength 3 Attack. This does not benefit from any weapon, item or special rule used by the character. You may still take another Enchanted Item in addition to the Warrior Familiar, and it also does not count against the maximum points limit of magic items normally allowed for the character.
-
-== MAGIC STANDARDS
-
+#magic-item-section("standard", intro: [
 Some units are allowed to carry magic banners, as detailed in their army list entry. The only character permitted to carry a Magic Standard is the army's battle Standard Bearer.
 
 Standards can only be carried by a standard bearer, as shown in the army list in the relevant Warhammer Armies book.
+])[
+#magic-standard("BATTLE BANNER", 70)[A unit with this standard gains a +D6 Combat Resolution bonus (roll each time it is used).]
 
-#namecost("BATTLE BANNER", "70 points")
+#magic-standard("BANNER OF MIGHT", 55)[A unit with this standard gains +1 To Hit in the first round of close combat.]
 
-A unit with this standard gains a +D6 Combat Resolution bonus (roll each time it is used).
+#magic-standard("BANNER OF DEFIANCE", 40)[A unit with this standard gains the Stubborn special rule.]
 
-#namecost("BANNER OF MIGHT", "55 points")
+#magic-standard("WAILING BANNER", 40)[A unit with this standard gains the Terror special rule.]
 
-A unit with this standard gains +1 To Hit in the first round of close combat.
+#magic-standard("RAMPAGER'S STANDARD", 35)[A unit with this standard can re-roll its charge distance dice.]
 
-#namecost("BANNER OF DEFIANCE", "40 points")
+#magic-standard("BANNER OF IRON RESOLVE", 30)[A unit with this standard gains the Immunity (Psychology) special rule.]
 
-A unit with this standard gains the Stubborn special rule.
+#magic-standard("RAZOR STANDARD", 30)[A unit with this standard gains the Armour Piercing (1) special rule.]
 
-#namecost("WAILING BANNER", "40 points")
+#magic-standard("STANDARD OF SHIELDING", 25)[A unit with this standard gains a Ward save (6+) against missile attacks.]
 
-A unit with this standard gains the Terror special rule.
+#magic-standard("BANNER OF SWIFTNESS", 25)[A unit with this standard gains the Swiftstride special rule.]
 
-#namecost("RAMPAGER'S STANDARD", "35 points")
+#magic-standard("DREAD BANNER", 20)[A unit with this standard causes Fear.]
 
-A unit with this standard can re-roll its charge distance dice.
+#magic-standard("STANDARD OF ARCANE WARDING", 20)[A unit with this standard gains the Magic Resistance (2) special rule.]
 
-#namecost("BANNER OF IRON RESOLVE", "30 points")
+#magic-standard("WAR BANNER", 20)[A unit with this standard adds +1 to combat resolution.]
 
-A unit with this standard gains the Immunity (Psychology) special rule.
+#magic-standard("BANNER OF VALOUR", 15)[A unit with this standard gains the Immunity (Panic) special rule.]
 
-#namecost("RAZOR STANDARD", "30 points")
+#magic-standard("STANDARD OF DISCIPLINE", 15)[A unit with this standard has +1 Leadership, but cannot use the Inspiring Presence special rule. If a model with this special rule joins this unit, other units using their Inspiring Presence do not benefit from the +1 Leadership.]
 
-A unit with this standard gains the Armour Piercing (1) special rule.
+#magic-standard("BANNER OF COURAGE", 10)[A unit with this standard re-roll failed Break tests.]
 
-#namecost("STANDARD OF SHIELDING", "25 points")
+#magic-standard("BANNER OF ETERNAL FLAME", 10)[A unit with this standard gains the Magical Attacks and Flaming Attacks special rules.]
 
-A unit with this standard gains a Ward save (6+) against missile attacks.
+#magic-standard("LICHBONE PENNANT", 10)[A unit with this standard gains the Magic Resistance (1) special rule.]
 
-#namecost("BANNER OF SWIFTNESS", "25 points")
+#magic-standard("RANGER'S STANDARD", 10)[A unit with this standard gains the Strider special rule. If the unit is riding a mount, the mount benefit from the Strider special rule as well.]
 
-A unit with this standard gains the Swiftstride special rule.
+#magic-standard("BANNER OF DUTY", 5)[A unit with this standard automatically pass any Rally tests.]
 
-#namecost("DREAD BANNER", "20 points")
+#magic-standard("GLEAMING PENNANT", 5)[One use only. A unit with this standard can re-roll its first failed Leadership test.]
 
-A unit with this standard causes Fear.
+#magic-standard("SCARECROW BANNER", 5)[A unit with this standard causes Terror in models with the Fly special rule.]
+]
+#lore("THE LORE OF FIRE")[
+#spell("KINDLEFLAME", "Lore Attribute")[All of the spells in the Lore of Fire are Flaming Attacks. In addition, if a spell from the Lore of Fire inflicts hits on an enemy unit that has already been hit by a spell from the Lore of Fire in the same Magic phase (even if the spell was cast by a different Wizard) the spell inflicts an additional D6 Strength 4 hits on the unit.]
 
-#namecost("STANDARD OF ARCANE WARDING", "20 points")
+#spell("FIREBALL", "Signature Spell", cast: "6+")[_Fireball_ is a *magic missile* with a range of 30" that causes D6 Strength 4 hits.]
 
-A unit with this standard gains the Magic Resistance (2) special rule.
+#spell("CASCADING FIRE-CLOAK", 1, cast: "5+")[Remains in play. _Cascading Fire-Cloak_ is an *augment* spell with a range of 18". Each enemy unit in base contact with the target unit immediately suffers 2D6 Strength 4 hits at the end of each Magic phase.]
 
-#namecost("WAR BANNER", "20 points")
+#spell("BREATHE FIRE", 1, cast: "6+")[_Breathe Fire_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 hit.]
 
-A unit with this standard adds +1 to combat resolution.
+#spell("FLAMING SWORD OF RHUIN", 1, cast: "6+")[_Flaming Sword of Rhuin_ is an *augment* spell with a range of 18". The target unit (except mounts) has a +1 bonus when rolling To Wound with all shooting and close combat attacks until the start of the caster's next Magic phase. The target unit also counts as having both the Magical Attacks and Flaming Attacks special rules.]
 
-#namecost("BANNER OF VALOUR", "15 points")
+#spell("FIRES OF U'ZHUL", 2, cast: "6+")[_Fires of U'Zhul_ is a *magic missile* with a range of 18" and causes D6 Strength 5 hits.]
 
-A unit with this standard gains the Immunity (Panic) special rule.
+#spell("SWELTERING HEAT", 2, cast: "7+")[Remains in play. _Sweltering Heat_ is a *hex* spell with a range of 24". Whenever the target charges, pursues or flees, it rolls an extra D6 and discards the highest result. While the spell is active, it suffers D6 Strength 3 hits at the end of each Magic phase.]
 
-#namecost("STANDARD OF DISCIPLINE", "15 points")
+#spell("THE BURNING HEAD", 2, cast: "9+")[_The Burning Head_ is a *direct damage* spell. Extend a straight line, 12" in length, with its starting point anywhere within 18" from the caster. Each model in the way (determined using the line template) suffers a Strength 4 hit. A unit that suffers one or more casualties from the Burning Head must take a Panic test.]
 
-A unit with this standard has +1 Leadership, but cannot use the Inspiring Presence special rule. If a model with this special rule joins this unit, other units using their Inspiring Presence do not benefit from the +1 Leadership.
+#spell("FIERY BLAST", 3, cast: "9+")[_Fiery Blast_ is a *direct damage* spell. Place the small round template anywhere within 24" of the Wizard – it then scatters D3". All models under the template suffer a Strength 4 hit.]
 
-#namecost("BANNER OF COURAGE", "10 points")
+#spell("PIERCING BOLTS OF BURNING", 3, cast: "10+")[_Piercing Bolts of Burning_ is a *magic missile* with a range of 30" and causes D3 Strength 5 hits. Each hit pierces ranks in the same way as a Bolt Thrower.]
 
-A unit with this standard re-roll failed Break tests.
+#spell("FULMINATING FLAME CAGE", 3, cast: "11+")[_Fulminating Flame Cage_ is a *hex* spell with a range of 24". The target unit immediately suffers D6 Strength 4 hits. In addition, if the target unit moves during the Movement phase, flees or pursues, every model in the unit suffers an immediate Strength 4 hit and the spell ends. If the unit does not move during the Movement phase, flees or pursues, Fulminating Flame Cage automatically ceases at the start of the caster's next Magic phase.]
 
-#namecost("BANNER OF ETERNAL FLAME", "10 points")
+#spell("CONFLAGRATION OF DOOM", 4, cast: "12+")[_Conflagration of Doom_ is a *direct damage* spell with a range of 30" that causes D6 Strength 4 hits. Roll a D6, on a 2+ the unit suffers an additional D6 hits and you may roll a D6 again. Every time you roll an additional D6 the requirement increases by +1, so you require to roll a 3+ the second time, a 4+ the third time and so on (a 6 always succeed). Proceed to keep rolling a D6 until you fail, and then resolve all the Hits suffered.]
 
-A unit with this standard gains the Magical Attacks and Flaming Attacks special rules.
+#spell("FLAME STORM", 4, cast: "13+")[_Flame Storm_ is a *direct damage* spell. Place the small round template anywhere within 18" of the Wizard – it then moves D6" in a random direction determined by the scatter dice. All models touched by the template from its starting point to its end point suffer a Strength 4 hit.]
 
-#namecost("LICHBONE PENNANT", "10 points")
+#spell("MAGMA STORM", 4, cast: "15+")[Remains in play. _Magma Storm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit with the Multiple Wounds (D3) special rule.]
+]
+#lore("THE LORE OF METAL")[
+#spell("METALLIC ATTRACTION", "Lore Attribute")[A Wizard casting a spell from the Lore of Metal gains +1 to cast if the majority of the models in the target unit have a close combat armour save of 4+ or better (excluding Natural Armour). Roll a D6 in case of a tie.]
 
-A unit with this standard gains the Magic Resistance (1) special rule.
+#spell("GLITTERING ROBE", "Signature Spell", cast: "5+")[_Glittering Robe_ is an *augment* spell with a range of 18". The target unit gains a 6+ armour save until the start of the caster's next Magic phase.]
 
-#namecost("RANGER'S STANDARD", "10 points")
+#spell("SEARING DOOM", 1, cast: "5+")[_Searing Doom_ is a *magic missile* with a range of 24" that causes D3 hits with the Ignores Armour Saves and Flaming Attacks special rules. The To Wound score is equal to the unmodified close combat armour save of the target (excluding Natural Armour). Models without an armour save cannot be wounded.]
 
-A unit with this standard gains the Strider special rule. If the unit is riding a mount, the mount benefit from the Strider special rule as well.
+#spell("LAW OF GOLD", 1, cast: "6+")[_Law of Gold_ is a *hex* with a range of 24". The opposing player must reveal all Magic Items in the unit (if any). The casting player may then nominate one of these. Roll a D6; on 1\-4 that Magic Item cannot be used until the start of the caster's next Magic phase. On a 5+ that Magic Item cannot be used for the remainder of the game and will counts as a mundane item of its type.]
 
-#namecost("BANNER OF DUTY", "5 points")
+#spell("PLAGUE OF RUST", 1, cast: "6+")[_Plague of Rust_ is a *hex* with a range of 24". The target's armour save (excluding Natural Armour) is lowered by one point for the rest of the game. Plague of Rust can be repeatedly cast on the same target, reducing its armour save by a further \-1 each time.]
 
-A unit with this standard automatically pass any Rally tests.
+#spell("COMMANDMENT OF BRASS", 2, cast: "7+")[_Commandment of Brass_ is a *hex* with a range of 24". If the target is a War Machine or a Chariot, they cannot move (unless it fails a break test) until the start of the caster's next Magic phase. If the target has an Artillery weapon and/or is a War Machine it cannot shoot until the start of the caster's next Magic phase.]
 
-#namecost("GLEAMING PENNANT", "5 points")
+#spell("SILVER ARROWS OF ARHA", 2, cast: "7+")[_Silver Arrows of Arha_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits with the Armour Piercing (1) special rule.]
 
-One use only. A unit with this standard can re-roll its first failed Leadership test.
+#spell("ENCHANTED BLADES OF AIBAN", 2, cast: "8+")[_Enchanted Blades of Aiban_ is an *augment* spell with a range of 18". The target unit (except mounts) gains +1 To Hit, Armour Piercing (1) and the Magical Attacks special rules with all shooting and close combat attacks until the start of the caster's next Magic phase.]
 
-#namecost("SCARECROW BANNER", "5 points")
+#spell("GEHENNA'S GOLDEN HOUNDS", 3, cast: "8+")[_Gehenna's Golden Hounds_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D6 Strength 4 hits ("Look Out, Sir!" cannot be used).]
 
-A unit with this standard causes Terror in models with the Fly special rule.
+#spell("TRANSMUTATION OF LEAD", 3, cast: "9+")[_Transmutation of Lead_ is a *hex* with a range of 24". The target suffers \-1 To Hit in close combat and with missile weapons, \-1 Movement and \-1 Initiative until the start of the caster's next Magic phase.]
 
-= THE LORE OF FIRE
+#spell("THE GILDED CAGE", 3, cast: "11+")[_The Gilded Cage_ is a *hex* with a range of 24" that can be cast on an unengaged unit. Until the start of the caster's next Magic phase, the target gains the Unbreakable special rule, cannot move and is treated as impassable terrain for the purpose of movement.]
 
-#namecost("KINDLEFLAME", "")
-#namecost("Lore Attribute", "")
+#spell("QUICKSILVER SWORDS", 4, cast: "13+")[_Quicksilver Swords_ is an *augment* spell with a range of 18". The target unit gains the Ignores Armour Saves and Magical Attacks special rules until the start of the caster's next Magic phase.]
 
-All of the spells in the Lore of Fire are Flaming Attacks. In addition, if a spell from the Lore of Fire inflicts hits on an enemy unit that has already been hit by a spell from the Lore of Fire in the same Magic phase (even if the spell was cast by a different Wizard) the spell inflicts an additional D6 Strength 4 hits on the unit.
+#spell("METEORIC IRONCLAD", 4, cast: "15+")[_Meteoric Ironclad_ is an *augment* spell with a range of 18". The target unit gains a 4+ Ward save until the start of the caster's next Magic phase.]
 
-#namecost("FIREBALL", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("FINAL TRANSMUTATION", 4, cast: "15+")[_Final Transmutation_ is a *direct damage* spell with a range of 18". All models in the unit must roll a D6 per Wound on their profile – for each roll of a 5+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
+]
+#lore("THE LORE OF LIFE")[
+#spell("LIFEBLOOM", "Lore Attribute")[When a spell from the Lore of Life is successfully cast, the Wizard (or another friendly model within 6") instantly recovers a single Wound lost earlier in the battle.]
 
-_Fireball_ is a *magic missile* with a range of 30" that causes D6 Strength 4 hits.
+#spell("EARTH BLOOD", "Signature Spell", cast: "5+")[_Earth Blood_ is an *augment* spell with a range of 18". The target gains the Regeneration (6+) special rule until the start of the caster's next Magic phase.]
 
-#namecost("CASCADING FIRE-CLOAK", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("SHIELD OF THORNS", 1, cast: "5+")[Remains in play. _Shield of Thorns_ is an *augment* spell with a range of 18". While the spell is in effect, any enemy model who attempts to strike the target in close combat suffers a Strength 3 hit whenever they fail To Hit. Any Wounds caused count towards Combat Resolution.]
 
-Remains in play. _Cascading Fire-Cloak_ is an *augment* spell with a range of 18". Each enemy unit in base contact with the target unit immediately suffers 2D6 Strength 4 hits at the end of each Magic phase.
+#spell("AWAKENING OF THE WOOD", 1, cast: "6+")[_Awakening of the Wood_ is a *direct damage* spell with a range of 24" and causes D6 Strength 4 hits. If the target is within 6" of a forest, the number of hits is increased to 2D6.]
 
-#namecost("BREATHE FIRE", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("THE CLOAK OF DAIN", 1, cast: "7+")[_The Cloak of Dain_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the first D3 hits that the target suffers each Shooting and Close Combat phase are ignored. Roll to determine how many hits are ignored once the target suffers any hit that phase.]
 
-_Breathe Fire_ is a *direct damage* spell. The caster makes a Breath Weapon attack. This may be cast in close combat, following the normal rules for Breath Weapons. All models Hit suffer a Strength 4 hit.
+#spell("FLESH TO STONE", 2, cast: "7+")[_Flesh to Stone_ is an *augment* spell with a range of 18". The target gains +1 to its Toughness value until the start of the caster's next Magic phase.]
 
-#namecost("FLAMING SWORD OF RHUIN", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("LEAF FALL", 2, cast: "7+")[_Leaf Fall_ is an *augment* spell that is cast on the Wizard itself. All missile attacks targeted against friendly units within 6" of the caster suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.]
 
-_Flaming Sword of Rhuin_ is an *augment* spell with a range of 18". The target unit (except mounts) has a +1 bonus when rolling To Wound with all shooting and close combat attacks until the start of the caster's next Magic phase. The target unit also counts as having both the Magical Attacks and Flaming Attacks special rules.
+#spell("VERDANT APOTHEOSIS", 2, cast: "8+")[_Verdant Apotheosis_ is an *augment* spell with a range of 18" that can be cast on a single model. The target instantly recovers D3 Wounds suffered earlier in the battle.]
 
-#namecost("FIRES OF U'ZHUL", "")
-#namecost("Level 2 Cast on 6+", "")
-
-_Fires of U'Zhul_ is a *magic missile* with a range of 18" and causes D6 Strength 5 hits.
-
-#namecost("SWELTERING HEAT", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in play. _Sweltering Heat_ is a *hex* spell with a range of 24". Whenever the target charges, pursues or flees, it rolls an extra D6 and discards the highest result. While the spell is active, it suffers D6 Strength 3 hits at the end of each Magic phase.
-
-#namecost("THE BURNING HEAD", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_The Burning Head_ is a *direct damage* spell. Extend a straight line, 12" in length, with its starting point anywhere within 18" from the caster. Each model in the way (determined using the line template) suffers a Strength 4 hit. A unit that suffers one or more casualties from the Burning Head must take a Panic test.
-
-#namecost("FIERY BLAST", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Fiery Blast_ is a *direct damage* spell. Place the small round template anywhere within 24" of the Wizard – it then scatters D3". All models under the template suffer a Strength 4 hit.
-
-#namecost("PIERCING BOLTS OF BURNING", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Piercing Bolts of Burning_ is a *magic missile* with a range of 30" and causes D3 Strength 5 hits. Each hit pierces ranks in the same way as a Bolt Thrower.
-
-#namecost("FULMINATING FLAME CAGE", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Fulminating Flame Cage_ is a *hex* spell with a range of 24". The target unit immediately suffers D6 Strength 4 hits. In addition, if the target unit moves during the Movement phase, flees or pursues, every model in the unit suffers an immediate Strength 4 hit and the spell ends. If the unit does not move during the Movement phase, flees or pursues, Fulminating Flame Cage automatically ceases at the start of the caster's next Magic phase.
-
-#namecost("CONFLAGRATION OF DOOM", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Conflagration of Doom_ is a *direct damage* spell with a range of 30" that causes D6 Strength 4 hits. Roll a D6, on a 2+ the unit suffers an additional D6 hits and you may roll a D6 again. Every time you roll an additional D6 the requirement increases by +1, so you require to roll a 3+ the second time, a 4+ the third time and so on (a 6 always succeed). Proceed to keep rolling a D6 until you fail, and then resolve all the Hits suffered.
-
-#namecost("FLAME STORM", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Flame Storm_ is a *direct damage* spell. Place the small round template anywhere within 18" of the Wizard – it then moves D6" in a random direction determined by the scatter dice. All models touched by the template from its starting point to its end point suffer a Strength 4 hit.
-
-#namecost("MAGMA STORM", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _Magma Storm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffers a Strength 5 hit with the Multiple Wounds (D3) special rule.
-
-= THE LORE OF METAL
-
-#namecost("METALLIC ATTRACTION", "")
-#namecost("Lore Attribute", "")
-
-A Wizard casting a spell from the Lore of Metal gains +1 to cast if the majority of the models in the target unit have a close combat armour save of 4+ or better (excluding Natural Armour). Roll a D6 in case of a tie.
-
-#namecost("GLITTERING ROBE", "")
-#namecost("Signature Spell Cast on 5+", "")
-
-_Glittering Robe_ is an *augment* spell with a range of 18". The target unit gains a 6+ armour save until the start of the caster's next Magic phase.
-
-#namecost("SEARING DOOM", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Searing Doom_ is a *magic missile* with a range of 24" that causes D3 hits with the Ignores Armour Saves and Flaming Attacks special rules. The To Wound score is equal to the unmodified close combat armour save of the target (excluding Natural Armour). Models without an armour save cannot be wounded.
-
-#namecost("LAW OF GOLD", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Law of Gold_ is a *hex* with a range of 24". The opposing player must reveal all Magic Items in the unit (if any). The casting player may then nominate one of these. Roll a D6; on 1\-4 that Magic Item cannot be used until the start of the caster's next Magic phase. On a 5+ that Magic Item cannot be used for the remainder of the game and will counts as a mundane item of its type.
-
-#namecost("PLAGUE OF RUST", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Plague of Rust_ is a *hex* with a range of 24". The target's armour save (excluding Natural Armour) is lowered by one point for the rest of the game. Plague of Rust can be repeatedly cast on the same target, reducing its armour save by a further \-1 each time.
-
-#namecost("COMMANDMENT OF BRASS", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Commandment of Brass_ is a *hex* with a range of 24". If the target is a War Machine or a Chariot, they cannot move (unless it fails a break test) until the start of the caster's next Magic phase. If the target has an Artillery weapon and/or is a War Machine it cannot shoot until the start of the caster's next Magic phase.
-
-#namecost("SILVER ARROWS OF ARHA", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Silver Arrows of Arha_ is a *magic missile* with a range of 24" and causes 2D6 Strength 3 hits with the Armour Piercing (1) special rule.
-
-#namecost("ENCHANTED BLADES OF AIBAN", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Enchanted Blades of Aiban_ is an *augment* spell with a range of 18". The target unit (except mounts) gains +1 To Hit, Armour Piercing (1) and the Magical Attacks special rules with all shooting and close combat attacks until the start of the caster's next Magic phase.
-
-#namecost("GEHENNA'S GOLDEN HOUNDS", "")
-#namecost("Level 3 Cast on 8+", "")
-
-_Gehenna's Golden Hounds_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers D6 Strength 4 hits ("Look Out, Sir!" cannot be used).
-
-#namecost("TRANSMUTATION OF LEAD", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Transmutation of Lead_ is a *hex* with a range of 24". The target suffers \-1 To Hit in close combat and with missile weapons, \-1 Movement and \-1 Initiative until the start of the caster's next Magic phase.
-
-#namecost("THE GILDED CAGE", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_The Gilded Cage_ is a *hex* with a range of 24" that can be cast on an unengaged unit. Until the start of the caster's next Magic phase, the target gains the Unbreakable special rule, cannot move and is treated as impassable terrain for the purpose of movement.
-
-#namecost("QUICKSILVER SWORDS", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_Quicksilver Swords_ is an *augment* spell with a range of 18". The target unit gains the Ignores Armour Saves and Magical Attacks special rules until the start of the caster's next Magic phase.
-
-#namecost("METEORIC IRONCLAD", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Meteoric Ironclad_ is an *augment* spell with a range of 18". The target unit gains a 4+ Ward save until the start of the caster's next Magic phase.
-
-#namecost("FINAL TRANSMUTATION", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Final Transmutation_ is a *direct damage* spell with a range of 18". All models in the unit must roll a D6 per Wound on their profile – for each roll of a 5+ they suffer a Wound which Ignores Armour Saves and Regeneration.
-
-= THE LORE OF LIFE
-
-#namecost("LIFEBLOOM", "")
-#namecost("Lore Attribute", "")
-
-When a spell from the Lore of Life is successfully cast, the Wizard (or another friendly model within 6") instantly recovers a single Wound lost earlier in the battle.
-
-#namecost("EARTH BLOOD", "")
-#namecost("Signature Spell Cast on 5+", "")
-
-_Earth Blood_ is an *augment* spell with a range of 18". The target gains the Regeneration (6+) special rule until the start of the caster's next Magic phase.
-
-#namecost("SHIELD OF THORNS", "")
-#namecost("Level 1 Cast on 5+", "")
-
-Remains in play. _Shield of Thorns_ is an *augment* spell with a range of 18". While the spell is in effect, any enemy model who attempts to strike the target in close combat suffers a Strength 3 hit whenever they fail To Hit. Any Wounds caused count towards Combat Resolution.
-
-#namecost("AWAKENING OF THE WOOD", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Awakening of the Wood_ is a *direct damage* spell with a range of 24" and causes D6 Strength 4 hits. If the target is within 6" of a forest, the number of hits is increased to 2D6.
-
-#namecost("THE CLOAK OF DAIN", "")
-#namecost("Level 1 Cast on 7+", "")
-
-_The Cloak of Dain_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the first D3 hits that the target suffers each Shooting and Close Combat phase are ignored. Roll to determine how many hits are ignored once the target suffers any hit that phase.
-
-#namecost("FLESH TO STONE", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Flesh to Stone_ is an *augment* spell with a range of 18". The target gains +1 to its Toughness value until the start of the caster's next Magic phase.
-
-#namecost("LEAF FALL", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Leaf Fall_ is an *augment* spell that is cast on the Wizard itself. All missile attacks targeted against friendly units within 6" of the caster suffer a \-1 To Hit penalty until the start of the caster's next Magic phase.
-
-#namecost("VERDANT APOTHEOSIS", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Verdant Apotheosis_ is an *augment* spell with a range of 18" that can be cast on a single model. The target instantly recovers D3 Wounds suffered earlier in the battle.
-
-#namecost("THRONE OF VINES", "")
-#namecost("Level 3 Cast on 8+", "")
-
-Remains in play. _Throne of Vines_ is an *augment* spell cast upon the Wizard. While the spell is in effect, the Wizard's castings of the following spells have the benefits given below instead of their normal values (it does not change the effects of spells that have already been cast):
+#spell("THRONE OF VINES", 3, cast: "8+")[Remains in play. _Throne of Vines_ is an *augment* spell cast upon the Wizard. While the spell is in effect, the Wizard's castings of the following spells have the benefits given below instead of their normal values (it does not change the effects of spells that have already been cast):
 
 - Earth Blood grants Regeneration (5+).
 - Shield of Thorns causes Strength 4 hits.
@@ -5234,389 +4592,160 @@ Remains in play. _Throne of Vines_ is an *augment* spell cast upon the Wizard. W
 - The Cloak of Dain ignores the first D6 hits.
 - Verdant Apotheosis restores D3+1 Wounds.
 - Barkskin grants Natural Armour (4+).
-- Regrowth restores 2D6 Wound's worth of models.
+- Regrowth restores 2D6 Wound's worth of models.]
 
-#namecost("BARKSKIN", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("BARKSKIN", 3, cast: "9+")[_Barkskin_ is an *augment* spell with a range of 18". The target gains the Flammable and Natural Armour (5+) special rules until the start of the caster's next Magic phase.]
 
-_Barkskin_ is an *augment* spell with a range of 18". The target gains the Flammable and Natural Armour (5+) special rules until the start of the caster's next Magic phase.
+#spell("MISTRESS OF THE MARSH", 3, cast: "9+")[_Mistress of the Marsh_ is a *hex* with a range of 24". Any movement by the target unit counts as moving through marshland until the start of the caster's next Magic phase.]
 
-#namecost("MISTRESS OF THE MARSH", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("PARANOTH'S PATHWAY", 4, cast: "10+")[_Paranoth’s Pathway_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.]
 
-_Mistress of the Marsh_ is a *hex* with a range of 24". Any movement by the target unit counts as moving through marshland until the start of the caster's next Magic phase.
+#spell("REGROWTH", 4, cast: "11+")[_Regrowth_ is an *augment* spell with a range of 24". The target unit instantly recovers D6+1 Wounds' worth of models slain earlier in the battle, just like a summoning spell.]
 
-#namecost("PARANOTH'S PATHWAY", "")
-#namecost("Level 4 Cast on 10+", "")
+#spell("THE DWELLERS BELOW", 4, cast: "15+")[_The Dwellers Below_ is a *direct damage* spell. Place the large round template anywhere within 18" of the Wizard – it then scatters D6". All models under the template must pass a Strength test per Wound on their profile or suffer a Wound which Ignores Armour Saves and Regeneration.]
+]
+#lore("THE LORE OF BEASTS")[
+#spell("WILDHEART", "Lore Attribute")[A Wizard casting a spell from the Lore of Beasts gains +1 to cast if the target(s) contain one or more War Beast, Cavalry, Monstrous Beast, Monstrous Cavalry, Monstrous Creature, Monster, Chariot (chariots that are not drawn are not included), Swarm (Animal) or Beastman.]
 
-_Paranoth’s Pathway_ is a *conveyance* spell with a range of 18". The target is immediately picked up and may be moved to any point on the battlefield within 12" of its original position, just like a summoning spell.
+#spell("WYSSAN'S WILDFORM", "Signature Spell", cast: "5+")[_Wyssan's Wildform_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Wound in close combat until the start of the caster's next Magic phase.]
 
-#namecost("REGROWTH", "")
-#namecost("Level 4 Cast on 11+", "")
+#spell("THE FLOCK OF DOOM", 1, cast: "5+")[_The Flock of Doom_ is a *magic missile* with a range of 24" that causes 3D6 Strength 2 hits.]
 
-_Regrowth_ is an *augment* spell with a range of 24". The target unit instantly recovers D6+1 Wounds' worth of models slain earlier in the battle, just like a summoning spell.
+#spell("THE OX STANDS", 1, cast: "6+")[_The Ox Stands_ is an *augment* spell with a range of 18". The target gains the Immunity (Psychology) and Stubborn special rules until the start of the caster's next Magic phase.]
 
-#namecost("THE DWELLERS BELOW", "")
-#namecost("Level 4 Cast on 15+", "")
+#spell("PANN'S IMPENETRABLE PELT", 1, cast: "6+")[_Pann's Impenetrable Pelt_ is an *augment* spell with a range of 18". The target gains the Natural Armour (6+) special rule until the start of the caster's next Magic phase. This armour save can never be lowered below 6+ from modifiers while the spell is in effect.]
 
-_The Dwellers Below_ is a *direct damage* spell. Place the large round template anywhere within 18" of the Wizard – it then scatters D6". All models under the template must pass a Strength test per Wound on their profile or suffer a Wound which Ignores Armour Saves and Regeneration.
+#spell("THE EAGLE'S CRY", 2, cast: "7+")[_The Eagle's Cry_ is a *hex* spell with a range of 24". The target must take a Panic test. If passed, the unit suffers \-2 to their Movement characteristic until the start of the caster's next Magic phase.]
 
-= THE LORE OF BEASTS
+#spell("HUNTER'S MOONS", 2, cast: "7+")[Hunter's Moons is an *augment* spell that targets all friendly units within 12". The targets gain the Swiftstride special rule and may re-roll any failed charge or pursuit roll until the start of the caster's next Magic phase.]
 
-#namecost("WILDHEART", "")
-#namecost("Lore Attribute", "")
+#spell("THE VENGEFUL HOOD", 2, cast: "8+")[_The Vengeful Hood_ is an *augment* spell with a range of 18". The target gains a Ward save (6+) in close combat until the start of the caster's next Magic phase. For each successful Ward save roll of 6, the attacking model/unit suffers a Wound themselves (saves taken as normal using the Strength of the attacking model).]
 
-A Wizard casting a spell from the Lore of Beasts gains +1 to cast if the target(s) contain one or more War Beast, Cavalry, Monstrous Beast, Monstrous Cavalry, Monstrous Creature, Monster, Chariot (chariots that are not drawn are not included), Swarm (Animal) or Beastman.
+#spell("THE CURSE OF ANRAHEIR", 3, cast: "9+")[_The Curse of Anraheir_ is a *hex* spell with a range of 30". The target unit suffers a \-1 penalty to its To Hit rolls with both missile and close combat attacks until the start of the caster's next Magic phase. In addition, the unit treats all terrain (other than Impassable Terrain) as Dangerous Terrain. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.]
 
-#namecost("WYSSAN'S WILDFORM", "")
-#namecost("Signature Spell Cast on 5+", "")
+#spell("THE SAVAGE BEAST OF HORROS", 3, cast: "10+")[_The Savage Beast of Horros_ is an *augment* spell with a range of 18" that is cast on a character, Monstrous Creature or Monster, which can be the Wizard itself. The target model (but not any mount) gains +3 Strength and +3 Attacks until the start of the caster's next Magic phase.]
 
-_Wyssan's Wildform_ is an *augment* spell with a range of 18". The target unit may re-roll failed rolls To Wound in close combat until the start of the caster's next Magic phase.
+#spell("THE BEAST COWERS", 3, cast: "11+")[_The Beast Cowers_ is a *hex* spell with a range of 24". If the target contains any models mentioned in Wildheart, those models suffer \-1 to their Attack characteristic in close combat (only mounts are affected in the case of ridden models) and cannot declare charges or pursue until the start of the caster's next Magic phase.]
 
-#namecost("THE FLOCK OF DOOM", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("THE AMBER SPEAR", 4, cast: "12+")[_The Amber Spear_ is a *magic missile* with a range of 30". It inflicts a single Strength 7 hit with the Ignores Armour Saves and Multiple Wounds (D6) special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.]
 
-_The Flock of Doom_ is a *magic missile* with a range of 24" that causes 3D6 Strength 2 hits.
+#spell("THE WOLF HUNTS", 4, cast: "13+")[_The Wolf Hunts_ is a *conveyance* spell with a range of 18". The target immediately moves towards the nearest enemy unit within Line of Sight using the Random Movement (2D6) special rule – if no enemy units are within Line of Sight, they will move directly forward instead.]
 
-#namecost("THE OX STANDS", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("MERCIW'S MONSTROUS REGIMENT", 4, cast: "15+")[_Merciw's Monstrous Regiment_ is an *augment* spell with a range of 18". The target gains +1 Strength, Toughness and Attacks until the start of the caster's next Magic phase.]
+]
+#lore("THE LORE OF HEAVENS")[
+#spell("FANTASTIC FORESIGHT", "Lore Attribute")[When a Lore of Heavens is successfully cast, roll a D6; on a 4+ the Wizard can re-roll one dice to either change the casting result (including a miscast) or the number of Hits inflicted by a spell when they are casting further spells for the remainder of this Magic phase.]
 
-_The Ox Stands_ is an *augment* spell with a range of 18". The target gains the Immunity (Psychology) and Stubborn special rules until the start of the caster's next Magic phase.
+#spell("HARMONIC CONVERGENCE", "Signature Spell", cast: "6+")[_Harmonic Convergence_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit re-rolls all To Hit, To Wound and armour save rolls of 1.]
 
-#namecost("PANN'S IMPENETRABLE PELT", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("AZURE BLADES", 1, cast: "5+")[Remains in play. _Azure Blades_ is an *augment* spell with a range of 18". Any enemy unit in base contact with the target suffers 3D6 Strength 3 hits at the end of each Magic phase.]
 
-_Pann's Impenetrable Pelt_ is an *augment* spell with a range of 18". The target gains the Natural Armour (6+) special rule until the start of the caster's next Magic phase. This armour save can never be lowered below 6+ from modifiers while the spell is in effect.
+#spell("STAR TIDES EBB", 1, cast: "5+")[_Star Tides Ebb_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next magic phase, all spells that are not from the Lore of Heavens suffer a \-2 penalty to cast within 24" of the Wizard.]
 
-#namecost("THE EAGLE'S CRY", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("CERULEAN SHIELD", 1, cast: "6+")[_Cerulean Shield_ is an *augment* spell with a range of 18". The target gains a Ward save (4+) against non-magical missile attacks until the start of the caster's next Magic phase.]
 
-_The Eagle's Cry_ is a *hex* spell with a range of 24". The target must take a Panic test. If passed, the unit suffers \-2 to their Movement characteristic until the start of the caster's next Magic phase.
+#spell("SIGN OF AMUL", 2, cast: "6+")[_Sign of Amul_ is an *augment* spell that is cast on the Wizard itself. You may re-roll any 1 of your dice until the start of the caster's next magic phase. This bonus is lost if the Wizard is slain before the re-roll is used.]
 
-#namecost("HUNTER'S MOONS", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("CRYSTAL PRISON", 2, cast: "7+")[Remains in Play. _Crystal Prison_ is a *hex* spell with a range of 24". Choose a single enemy character, even in a unit. While the spell is in effect, the target cannot be harmed by any means and is Unbreakable. However, they also cannot move, shoot, fight in close combat or cast spells. If they are in a unit, the unit may still break and flee as normal, while the target remains in combat.]
 
-Hunter's Moons is an *augment* spell that targets all friendly units within 12". The targets gain the Swiftstride special rule and may re-roll any failed charge or pursuit roll until the start of the caster's next Magic phase.
+#spell("PORTENT OF DOOM", 2, cast: "8+")[_Portent of Doom_ is a *hex* spell with a range of 24". The target must re-roll all 6's when rolling To Hit, To Wound and armour saves until the start of the caster's next Magic phase.]
 
-#namecost("THE VENGEFUL HOOD", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("THE SAPPHIRE ARCH", 3, cast: "8+")[_The Sapphire Arch_ is a *conveyance* spell with a range of 24". The target is immediately picked up and removed from the battlefield. The next time a friendly Wizard casts this spell, the unit may emerge anywhere on the table, just like a summoning spell. If the unit has not emerged by the end of the game, it is removed as casualties.]
 
-_The Vengeful Hood_ is an *augment* spell with a range of 18". The target gains a Ward save (6+) in close combat until the start of the caster's next Magic phase. For each successful Ward save roll of 6, the attacking model/unit suffers a Wound themselves (saves taken as normal using the Strength of the attacking model).
+#spell("STORM OF CRONOS", 3, cast: "9+")[_Storm of Cronos_ is a *direct damage* spell that targets all enemy units within 18" of the Wizard's front arc. Each target suffers D6 Strength 4 hits.]
 
-#namecost("THE CURSE OF ANRAHEIR", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("URANNON'S THUNDERBOLT", 3, cast: "9+")[_Urannon's Thunderbolt_ is a *magic missile* with a range of 24" that causes D6 Strength 5 hits with the Lightning Attacks special rule.]
 
-_The Curse of Anraheir_ is a *hex* spell with a range of 30". The target unit suffers a \-1 penalty to its To Hit rolls with both missile and close combat attacks until the start of the caster's next Magic phase. In addition, the unit treats all terrain (other than Impassable Terrain) as Dangerous Terrain. Tests in terrain that is already Dangerous Terrain will fail the tests on a 1 or 2, rather than a 1.
+#spell("COMET OF CASANDORA", 4, cast: "12+")[_Comet of Casandora_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the comet cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a score of 1\-3 nothing happens, but place another marker on the first. On the score of a 4\-6 the comet strikes the spot. All units from either side that are within 2D6" of the marker takes 2D6 Strength 4 Hits. Add the number of markers on the comet to the distance, hits and Strength. After the comet has struck, the markers are removed and the spell ends.]
 
-#namecost("THE SAVAGE BEAST OF HORROS", "")
-#namecost("Level 3 Cast on 10+", "")
+#spell("CHAIN LIGHTNING", 4, cast: "13+")[_Chain Lightning_ is a *direct damage* spell with a range of 24" that causes D6 Strength 5 hits with the Lightning Attacks special rule. Once the damage has been resolved, roll a D6; on a 2+, another enemy unit within 6" of the initial target also suffers D6 hits. Keep rolling for further enemies within 6" of the previous unit. Every time a new unit is struck the requirement increases by +1, so you require to roll a 3+ the second time, a 4+ the third time and so on. Proceed to keep rolling a D6 until you fail or there are no more viable targets. A unit can only be the target of Chain Lightning once per Magic phase.]
 
-_The Savage Beast of Horros_ is an *augment* spell with a range of 18" that is cast on a character, Monstrous Creature or Monster, which can be the Wizard itself. The target model (but not any mount) gains +3 Strength and +3 Attacks until the start of the caster's next Magic phase.
+#spell("THORSEN'S THUNDERSTORM", 4, cast: "15+")[Remains in play. _Thorsen's Thunderstorm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffer a Strength 4 hit with the Lightning Attacks special rule.]
+]
+#lore("THE LORE OF LIGHT")[
+#spell("FOCUS ENERGY", "Lore Attribute")[If a Wizard using spells from the Lore of Light is not in close combat and has not moved during this turn, they gain +1 to cast. In addition, any damage caused by spells from this Lore has a +1 bonus To Wound against Daemons, Undead and Vampires.]
 
-#namecost("THE BEAST COWERS", "")
-#namecost("Level 3 Cast on 11+", "")
+#spell("SHEM'S BURNING GAZE", "Signature Spell", cast: "5+")[_Shem's Burning Gaze_ is a *magic missile* with a range of 24" that causes D6 Strength 4 hits with the Flaming Attacks special rule.]
 
-_The Beast Cowers_ is a *hex* spell with a range of 24". If the target contains any models mentioned in Wildheart, those models suffer \-1 to their Attack characteristic in close combat (only mounts are affected in the case of ridden models) and cannot declare charges or pursue until the start of the caster's next Magic phase.
+#spell("DAZZLING BRIGHTNESS", 1, cast: "6+")[_Dazzling Brightness_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target's Movement is halved (rounded up), and it suffers \-1 to its Weapon Skill and Ballistic Skill.]
 
-#namecost("THE AMBER SPEAR", "")
-#namecost("Level 4 Cast on 12+", "")
+#spell("HEALING ENERGY", 1, cast: "6+")[_Healing Energy_ is an *augment* spell with a range of 36" that can be cast on a single model. The target instantly recovers 1 Wound suffered earlier in the battle.]
 
-_The Amber Spear_ is a *magic missile* with a range of 30". It inflicts a single Strength 7 hit with the Ignores Armour Saves and Multiple Wounds (D6) special rules that penetrates ranks in the same manner as a shot from a Bolt Thrower.
+#spell("PHA'S PROTECTION", 1, cast: "6+")[_Pha's Protection_ is an *augment* spell with a range of 18". All attacks against the target unit (shooting or close combat) suffer a \-1 penalty To Hit until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before firing, or the shot(s) is lost.]
 
-#namecost("THE WOLF HUNTS", "")
-#namecost("Level 4 Cast on 13+", "")
+#spell("BIRONA'S TIMEWARP", 2, cast: "8+")[_Birona's Timewarp_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all of the target unit's Movement value is doubled and it gains the Swiftstride special rule. This can take their Movement value above 10.]
 
-_The Wolf Hunts_ is a *conveyance* spell with a range of 18". The target immediately moves towards the nearest enemy unit within Line of Sight using the Random Movement (2D6) special rule – if no enemy units are within Line of Sight, they will move directly forward instead.
+#spell("THE CLAW OF APEK", 2, cast: "8+")[_The Claw of Apek_ is a *direct damage* spell with a range of 18". Choose a single enemy model, even a character in a unit ("Look Out, Sir!" cannot be used). The target suffers D6 Attacks with Weapon Skill 4, Strength 4 and the Ignores Armour Saves special rule. These are resolved like close combat attacks.]
 
-#namecost("MERCIW'S MONSTROUS REGIMENT", "")
-#namecost("Level 4 Cast on 15+", "")
+#spell("THE SPEED OF LIGHT", 2, cast: "8+")[_The Speed of Light_ is an *augment* spell with a range of 18". The target unit gains the Always Strikes First special rule until the start of the caster's next Magic phase.]
 
-_Merciw's Monstrous Regiment_ is an *augment* spell with a range of 18". The target gains +1 Strength, Toughness and Attacks until the start of the caster's next Magic phase.
+#spell("CLEANSING FLARE", 3, cast: "9+")[_Cleansing Flare_ is a *direct damage* spell that targets all enemy units within 12" of the Wizard's front arc. Each target suffers D6 Strength 5 hits.]
 
-= THE LORE OF HEAVENS
+#spell("LIGHT OF BATTLE", 3, cast: "9+")[_Light of Battle_ is an *augment* spell with a range of 18". If fleeing, the target unit rallies immediately. Additionally, the target unit will pass all Leadership tests (including Break tests, regardless of modifiers) until the start of the caster's next Magic phase.]
 
-#namecost("FANTASTIC FORESIGHT", "")
-#namecost("Lore Attribute", "")
+#spell("BANISHMENT", 3, cast: "9+")[_Banishment_ is a *magic missile* with a range of 24" that causes 2D6 hits. The Strength of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12" of the caster (not counting the caster themself). Each additional Wizard added adds +2 to the casting difficulty.]
 
-When a Lore of Heavens is successfully cast, roll a D6; on a 4+ the Wizard can re-roll one dice to either change the casting result (including a miscast) or the number of Hits inflicted by a spell when they are casting further spells for the remainder of this Magic phase.
+#spell("NET OF AMYNTOK", 4, cast: "10+")[_Net of Amyntok_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, every time the target attempts to move in the Movement phase, shoot or cast one or more spells the target suffers D6 Strength 4 hits and must then pass a Strength test (using the Strength of the majority of models in the unit). If the test is passed, the target acts normally. If the test is failed, the unit is unable to perform the desired action, remaining in place.]
 
-#namecost("HARMONIC CONVERGENCE", "")
-#namecost("Signature Spell Cast on 6+", "")
+#spell("TIME AMOK", 4, cast: "14+")[_Time Amok_ is an *augment* spell with a range of 18". The target unit may perform all their shooting attacks or close combat attacks twice this turn. Resolve the first round of attacks completely before performing the second one.]
 
-_Harmonic Convergence_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit re-rolls all To Hit, To Wound and armour save rolls of 1.
+#spell("PILLAR OF RADIANCE", 4, cast: "15+")[_Pillar of Radiance_ is a *direct damage* spell. Place the large round template anywhere within 24" of the Wizard – it then scatters D6". All models under the template suffer a Strength 4 hit.]
+]
+#lore("THE LORE OF SHADOW")[
+#spell("STEED OF SHADOWS", "Lore Attribute")[After a spell from the Lore of Shadow is successfully cast and resolved, the casting Wizard can choose to immediately make a normal move using the Fly (10) special rule as if it were the Remaining Moves sub-phase.]
 
-#namecost("AZURE BLADES", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("MELKOTH'S MYSTIFYING MIASMA", "Signature Spell", cast: "5+")[_Melkoth's Mystifying Miasma_ is a *hex* spell with a range of 24". The target unit's Weapon Skill, Ballistic Skill, Initiative or Movement (you choose which) is reduced by D3 (to a minimum of 1) until the start of the caster's next Magic phase.]
 
-Remains in play. _Azure Blades_ is an *augment* spell with a range of 18". Any enemy unit in base contact with the target suffers 3D6 Strength 3 hits at the end of each Magic phase.
+#spell("CREEPING DARKNESS", 1, cast: "5+")[_Creeping Darkness_ is a *magic missile* with a range of 24" that causes 2D6 Strength 1 hits with the Ignores Armour Saves special rule.]
 
-#namecost("STAR TIDES EBB", "")
-#namecost("Level 1 Cast on 5+", "")
+#spell("THE ENFEEBLING FOE", 1, cast: "6+")[Remains in play. _The Enfeebling Foe_ is a *hex* spell with a range of 24". While the spell is in effect, all models in the target unit have their Strength reduced by 1 (to a minimum of 1).]
 
-_Star Tides Ebb_ is an *augment* spell that is cast on the Wizard itself. Until the start of the caster's next magic phase, all spells that are not from the Lore of Heavens suffer a \-2 penalty to cast within 24" of the Wizard.
+#spell("CLOAK OF MIDNIGHT", 1, cast: "6+")[_Cloak of Midnight_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all missile attacks against the target unit can only hit on a natural 6, and any templates that use scatter dice automatically scatter, even if a Hit is rolled.]
 
-#namecost("CERULEAN SHIELD", "")
-#namecost("Level 1 Cast on 6+", "")
+#spell("THE DANCE OF DESPAIR", 2, cast: "7+")[Remains in play. _The Dance of Despair_ is a *hex* spell with a range of 24". While the spell is in effect, the target must move straight forward using the Random Movement (2D6) special rule.]
 
-_Cerulean Shield_ is an *augment* spell with a range of 18". The target gains a Ward save (4+) against non-magical missile attacks until the start of the caster's next Magic phase.
+#spell("HORN OF ANDAR", 2, cast: "7+")[_Horn of Andar_ is a *hex* spell that targets all enemy units within 12". Each target suffers a \-1 penalty to their Leadership until the start of the caster's next Magic phase.]
 
-#namecost("SIGN OF AMUL", "")
-#namecost("Level 2 Cast on 6+", "")
+#spell("THE WITHERING", 2, cast: "7+")[Remains in play. _The Withering_ is a *hex* spell with a range of 24". While the spell is in effect, all models in the target unit have their Toughness reduced by 1 (to a minimum of 1).]
 
-_Sign of Amul_ is an *augment* spell that is cast on the Wizard itself. You may re-roll any 1 of your dice until the start of the caster's next magic phase. This bonus is lost if the Wizard is slain before the re-roll is used.
+#spell("CROWN OF TAIDRON", 3, cast: "9+")[_Crown of Taidron_ is a *hex* spell that targets all enemy units within 12". Each target suffers D6 Strength 4 Hits.]
 
-#namecost("CRYSTAL PRISON", "")
-#namecost("Level 2 Cast on 7+", "")
+#spell("UNSEEN LURKER", 3, cast: "10+")[_Unseen Lurker_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, units can only draw Line of Sight to the target if they are within 8", though the unit still blocks Line of Sight as normal.]
 
-Remains in Play. _Crystal Prison_ is a *hex* spell with a range of 24". Choose a single enemy character, even in a unit. While the spell is in effect, the target cannot be harmed by any means and is Unbreakable. However, they also cannot move, shoot, fight in close combat or cast spells. If they are in a unit, the unit may still break and flee as normal, while the target remains in combat.
+#spell("BRIDGE OF SHADOWS", 3, cast: "12+")[_Bridge of Shadows_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 18" of their original position, just like a summoning spell.]
 
-#namecost("PORTENT OF DOOM", "")
-#namecost("Level 2 Cast on 8+", "")
+#spell("OKKAM'S MINDRAZOR", 4, cast: "12+")[_Okkam's Mindrazor_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit (except mounts) use their Leadership instead of Strength when rolling To Wound with all close combat attacks (any Strength bonuses from weapons are ignored). Armour saves are taken and modified by the Attack's actual Strength value.]
 
-_Portent of Doom_ is a *hex* spell with a range of 24". The target must re-roll all 6's when rolling To Hit, To Wound and armour saves until the start of the caster's next Magic phase.
+#spell("THE PENUMBRAL PENDULUM", 4, cast: "13+")[_The Penumbral Pendulum_ is a *direct damage* spell. Extend a straight line, 18" in length, directly away from the caster. Each model in the way (determined using the line template) suffer a Strength 10 Hit with the Multiple Wounds (D3) special rule.]
 
-#namecost("THE SAPPHIRE ARCH", "")
-#namecost("Level 3 Cast on 8+", "")
+#spell("PIT OF SHADES", 4, cast: "15+")[_Pit of Shades_ is a *direct damage* spell. Place the small round template anywhere within 24" of the Wizard – it then scatters D3". All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
+]
+#lore("THE LORE OF DEATH")[
+#spell("LIFE LEECHING", "Lore Attribute")[When a Lore of Death spell is successfully cast, roll a D6 for each unsaved wound caused by the spell. For each 6+ rolled on these additional dice, the Wizard immediately adds a dice to their army's power pool (to a maximum of +3 dice per spell).]
 
-_The Sapphire Arch_ is a *conveyance* spell with a range of 24". The target is immediately picked up and removed from the battlefield. The next time a friendly Wizard casts this spell, the unit may emerge anywhere on the table, just like a summoning spell. If the unit has not emerged by the end of the game, it is removed as casualties.
+#spell("DARK HAND OF DEATH", "Signature Spell", cast: "6+")[_Dark Hand of Death_ is a *magic missile* with a range of 18" that causes D6 Strength 3 hits with the Ignores Armour Saves special rule.]
 
-#namecost("STORM OF CRONOS", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("DEATH DEALER", 1, cast: "5+")[_Death Dealer_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, any model that is slain in close combat may immediately make an additional Attack, even if they have already attacked this turn.]
 
-_Storm of Cronos_ is a *direct damage* spell that targets all enemy units within 18" of the Wizard's front arc. Each target suffers D6 Strength 4 hits.
+#spell("THE CARESS OF LANIPH", 1, cast: "6+")[_The Caress of Laniph_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Strength tests. Each failed Strength test causes a Wound which Ignores Armour Saves.]
 
-#namecost("URANNON'S THUNDERBOLT", "")
-#namecost("Level 3 Cast on 9+", "")
+#spell("SPIRIT LEECH", 1, cast: "6+")[_Spirit Leech_ is a *hex* spell with a range of 18" that targets a single enemy Monstrous Creature, Monster or character (even in a unit). Both caster and target roll a D6 and add their respective Leadership values. If the caster scores higher, the target suffers a \-1 penalty to their Strength and Toughness for the remainder of the battle.]
 
-_Urannon's Thunderbolt_ is a *magic missile* with a range of 24" that causes D6 Strength 5 hits with the Lightning Attacks special rule.
+#spell("THE CHOKING FOE", 2, cast: "8+")[Remains in play. _The Choking Foe_ is a *hex* spell with a range of 24". At the end of each Magic phase, the target must take a Leadership test, suffering a Wound which Ignores Armour Saves for every point by which the test is failed. Each subsequent test has a \-1 penalty which is cumulative, so the third test has a \-2 penalty, and so on.]
 
-#namecost("COMET OF CASANDORA", "")
-#namecost("Level 4 Cast on 12+", "")
+#spell("WIND OF DEATH", 2, cast: "8+")[_Wind of Death_ is a *magic missile* with a range of 18" that causes 2D6 Strength 4 hits.]
 
-_Comet of Casandora_ is a *summoning* spell with a range of 36". Place a suitable marker over the exact spot affected. Once cast, the comet cannot be dispelled. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a score of 1\-3 nothing happens, but place another marker on the first. On the score of a 4\-6 the comet strikes the spot. All units from either side that are within 2D6" of the marker takes 2D6 Strength 4 Hits. Add the number of markers on the comet to the distance, hits and Strength. After the comet has struck, the markers are removed and the spell ends.
+#spell("DRAIN LIFE", 2, cast: "9+")[_Drain Life_ is a *hex* spell that targets all enemy units within 12". Each target suffers D6 Strength 2 Hits with the Ignores Armour Saves special rule. For every unsaved To Wound roll of 6, the caster may restore 1 Wound lost earlier during the game.]
 
-#namecost("CHAIN LIGHTNING", "")
-#namecost("Level 4 Cast on 13+", "")
+#spell("SCYTHE OF SHYISH", 3, cast: "9+")[_Scythe of Shyish_ is a *direct damage* spell with range of 12". Each model in the unit's front rank suffers a Strength 5 Hit ("Look Out Sir!" may still be used).]
 
-_Chain Lightning_ is a *direct damage* spell with a range of 24" that causes D6 Strength 5 hits with the Lightning Attacks special rule. Once the damage has been resolved, roll a D6; on a 2+, another enemy unit within 6" of the initial target also suffers D6 hits. Keep rolling for further enemies within 6" of the previous unit. Every time a new unit is struck the requirement increases by +1, so you require to roll a 3+ the second time, a 4+ the third time and so on. Proceed to keep rolling a D6 until you fail or there are no more viable targets. A unit can only be the target of Chain Lightning once per Magic phase.
+#spell("DOOM AND DARKNESS", 3, cast: "10+")[Remains in play. _Doom and Darkness_ is a *hex* spell with a range of 24". The target suffers a \-3 penalty to its Leadership.]
 
-#namecost("THORSEN'S THUNDERSTORM", "")
-#namecost("Level 4 Cast on 15+", "")
+#spell("ASHES AND DUST", 3, cast: "11+")[_Ashes and Dust_ is a *direct damage* spell. Place the small round template anywhere within 18" of the Wizard – it then scatters D3". All models under the template suffer a Strength 3 hit with the Ignores Armour Saves special rule.]
 
-Remains in play. _Thorsen's Thunderstorm_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move suffer a Strength 4 hit with the Lightning Attacks special rule.
+#spell("THE FATE OF BJUNA", 4, cast: "12+")[_The Fate of Bjuna_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers a number of hits equal to the model's current number of Wounds. Each hit Wound on a 4+ with the Ignores Armour Saves special rule.]
 
-= THE LORE OF LIGHT
+#spell("SOULBLIGHT", 4, cast: "12+")[_Soulblight_ is a *hex* spell with a range of 24". The target has \-1 Strength and \-1 Toughness (to a minimum of 1) until the start of the caster's next Magic phase.]
 
-#namecost("FOCUS ENERGY", "")
-#namecost("Lore Attribute", "")
-
-If a Wizard using spells from the Lore of Light is not in close combat and has not moved during this turn, they gain +1 to cast. In addition, any damage caused by spells from this Lore has a +1 bonus To Wound against Daemons, Undead and Vampires.
-
-#namecost("SHEM'S BURNING GAZE", "")
-#namecost("Signature Spell Cast on 5+", "")
-
-_Shem's Burning Gaze_ is a *magic missile* with a range of 24" that causes D6 Strength 4 hits with the Flaming Attacks special rule.
-
-#namecost("DAZZLING BRIGHTNESS", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Dazzling Brightness_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, the target's Movement is halved (rounded up), and it suffers \-1 to its Weapon Skill and Ballistic Skill.
-
-#namecost("HEALING ENERGY", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Healing Energy_ is an *augment* spell with a range of 36" that can be cast on a single model. The target instantly recovers 1 Wound suffered earlier in the battle.
-
-#namecost("PHA'S PROTECTION", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Pha's Protection_ is an *augment* spell with a range of 18". All attacks against the target unit (shooting or close combat) suffer a \-1 penalty To Hit until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before firing, or the shot(s) is lost.
-
-#namecost("BIRONA'S TIMEWARP", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Birona's Timewarp_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all of the target unit's Movement value is doubled and it gains the Swiftstride special rule. This can take their Movement value above 10.
-
-#namecost("THE CLAW OF APEK", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_The Claw of Apek_ is a *direct damage* spell with a range of 18". Choose a single enemy model, even a character in a unit ("Look Out, Sir!" cannot be used). The target suffers D6 Attacks with Weapon Skill 4, Strength 4 and the Ignores Armour Saves special rule. These are resolved like close combat attacks.
-
-#namecost("THE SPEED OF LIGHT", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_The Speed of Light_ is an *augment* spell with a range of 18". The target unit gains the Always Strikes First special rule until the start of the caster's next Magic phase.
-
-#namecost("CLEANSING FLARE", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Cleansing Flare_ is a *direct damage* spell that targets all enemy units within 12" of the Wizard's front arc. Each target suffers D6 Strength 5 hits.
-
-#namecost("LIGHT OF BATTLE", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Light of Battle_ is an *augment* spell with a range of 18". If fleeing, the target unit rallies immediately. Additionally, the target unit will pass all Leadership tests (including Break tests, regardless of modifiers) until the start of the caster's next Magic phase.
-
-#namecost("BANISHMENT", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Banishment_ is a *magic missile* with a range of 24" that causes 2D6 hits. The Strength of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12" of the caster (not counting the caster themself). Each additional Wizard added adds +2 to the casting difficulty.
-
-#namecost("NET OF AMYNTOK", "")
-#namecost("Level 4 Cast on 10+", "")
-
-_Net of Amyntok_ is a *hex* spell with a range of 24". Until the start of the caster's next Magic phase, every time the target attempts to move in the Movement phase, shoot or cast one or more spells the target suffers D6 Strength 4 hits and must then pass a Strength test (using the Strength of the majority of models in the unit). If the test is passed, the target acts normally. If the test is failed, the unit is unable to perform the desired action, remaining in place.
-
-#namecost("TIME AMOK", "")
-#namecost("Level 4 Cast on 14+", "")
-
-_Time Amok_ is an *augment* spell with a range of 18". The target unit may perform all their shooting attacks or close combat attacks twice this turn. Resolve the first round of attacks completely before performing the second one.
-
-#namecost("PILLAR OF RADIANCE", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Pillar of Radiance_ is a *direct damage* spell. Place the large round template anywhere within 24" of the Wizard – it then scatters D6". All models under the template suffer a Strength 4 hit.
-
-= THE LORE OF SHADOW
-
-#namecost("STEED OF SHADOWS", "")
-#namecost("Lore Attribute", "")
-
-After a spell from the Lore of Shadow is successfully cast and resolved, the casting Wizard can choose to immediately make a normal move using the Fly (10) special rule as if it were the Remaining Moves sub-phase.
-
-#namecost("MELKOTH'S MYSTIFYING MIASMA", "")
-#namecost("Signature Spell Cast on 5+", "")
-
-_Melkoth's Mystifying Miasma_ is a *hex* spell with a range of 24". The target unit's Weapon Skill, Ballistic Skill, Initiative or Movement (you choose which) is reduced by D3 (to a minimum of 1) until the start of the caster's next Magic phase.
-
-#namecost("CREEPING DARKNESS", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Creeping Darkness_ is a *magic missile* with a range of 24" that causes 2D6 Strength 1 hits with the Ignores Armour Saves special rule.
-
-#namecost("THE ENFEEBLING FOE", "")
-#namecost("Level 1 Cast on 6+", "")
-
-Remains in play. _The Enfeebling Foe_ is a *hex* spell with a range of 24". While the spell is in effect, all models in the target unit have their Strength reduced by 1 (to a minimum of 1).
-
-#namecost("CLOAK OF MIDNIGHT", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Cloak of Midnight_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, all missile attacks against the target unit can only hit on a natural 6, and any templates that use scatter dice automatically scatter, even if a Hit is rolled.
-
-#namecost("THE DANCE OF DESPAIR", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in play. _The Dance of Despair_ is a *hex* spell with a range of 24". While the spell is in effect, the target must move straight forward using the Random Movement (2D6) special rule.
-
-#namecost("HORN OF ANDAR", "")
-#namecost("Level 2 Cast on 7+", "")
-
-_Horn of Andar_ is a *hex* spell that targets all enemy units within 12". Each target suffers a \-1 penalty to their Leadership until the start of the caster's next Magic phase.
-
-#namecost("THE WITHERING", "")
-#namecost("Level 2 Cast on 7+", "")
-
-Remains in play. _The Withering_ is a *hex* spell with a range of 24". While the spell is in effect, all models in the target unit have their Toughness reduced by 1 (to a minimum of 1).
-
-#namecost("CROWN OF TAIDRON", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Crown of Taidron_ is a *hex* spell that targets all enemy units within 12". Each target suffers D6 Strength 4 Hits.
-
-#namecost("UNSEEN LURKER", "")
-#namecost("Level 3 Cast on 10+", "")
-
-_Unseen Lurker_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, units can only draw Line of Sight to the target if they are within 8", though the unit still blocks Line of Sight as normal.
-
-#namecost("BRIDGE OF SHADOWS", "")
-#namecost("Level 3 Cast on 12+", "")
-
-_Bridge of Shadows_ is a *conveyance* spell with a range of 12". The target is immediately picked up and may be moved to any position on the battlefield within 18" of their original position, just like a summoning spell.
-
-#namecost("OKKAM'S MINDRAZOR", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Okkam's Mindrazor_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, the target unit (except mounts) use their Leadership instead of Strength when rolling To Wound with all close combat attacks (any Strength bonuses from weapons are ignored). Armour saves are taken and modified by the Attack's actual Strength value.
-
-#namecost("THE PENUMBRAL PENDULUM", "")
-#namecost("Level 4 Cast on 13+", "")
-
-_The Penumbral Pendulum_ is a *direct damage* spell. Extend a straight line, 18" in length, directly away from the caster. Each model in the way (determined using the line template) suffer a Strength 10 Hit with the Multiple Wounds (D3) special rule.
-
-#namecost("PIT OF SHADES", "")
-#namecost("Level 4 Cast on 15+", "")
-
-_Pit of Shades_ is a *direct damage* spell. Place the small round template anywhere within 24" of the Wizard – it then scatters D3". All models under the template must roll a D6 per Wound on their profile – for each roll of a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.
-
-= THE LORE OF DEATH
-
-#namecost("LIFE LEECHING", "")
-#namecost("Lore Attribute", "")
-
-When a Lore of Death spell is successfully cast, roll a D6 for each unsaved wound caused by the spell. For each 6+ rolled on these additional dice, the Wizard immediately adds a dice to their army's power pool (to a maximum of +3 dice per spell).
-
-#namecost("DARK HAND OF DEATH", "")
-#namecost("Signature Spell Cast on 6+", "")
-
-_Dark Hand of Death_ is a *magic missile* with a range of 18" that causes D6 Strength 3 hits with the Ignores Armour Saves special rule.
-
-#namecost("DEATH DEALER", "")
-#namecost("Level 1 Cast on 5+", "")
-
-_Death Dealer_ is an *augment* spell with a range of 18". Until the start of the caster's next Magic phase, any model that is slain in close combat may immediately make an additional Attack, even if they have already attacked this turn.
-
-#namecost("THE CARESS OF LANIPH", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_The Caress of Laniph_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target must take D6 Strength tests. Each failed Strength test causes a Wound which Ignores Armour Saves.
-
-#namecost("SPIRIT LEECH", "")
-#namecost("Level 1 Cast on 6+", "")
-
-_Spirit Leech_ is a *hex* spell with a range of 18" that targets a single enemy Monstrous Creature, Monster or character (even in a unit). Both caster and target roll a D6 and add their respective Leadership values. If the caster scores higher, the target suffers a \-1 penalty to their Strength and Toughness for the remainder of the battle.
-
-#namecost("THE CHOKING FOE", "")
-#namecost("Level 2 Cast on 8+", "")
-
-Remains in play. _The Choking Foe_ is a *hex* spell with a range of 24". At the end of each Magic phase, the target must take a Leadership test, suffering a Wound which Ignores Armour Saves for every point by which the test is failed. Each subsequent test has a \-1 penalty which is cumulative, so the third test has a \-2 penalty, and so on.
-
-#namecost("WIND OF DEATH", "")
-#namecost("Level 2 Cast on 8+", "")
-
-_Wind of Death_ is a *magic missile* with a range of 18" that causes 2D6 Strength 4 hits.
-
-#namecost("DRAIN LIFE", "")
-#namecost("Level 2 Cast on 9+", "")
-
-_Drain Life_ is a *hex* spell that targets all enemy units within 12". Each target suffers D6 Strength 2 Hits with the Ignores Armour Saves special rule. For every unsaved To Wound roll of 6, the caster may restore 1 Wound lost earlier during the game.
-
-#namecost("SCYTHE OF SHYISH", "")
-#namecost("Level 3 Cast on 9+", "")
-
-_Scythe of Shyish_ is a *direct damage* spell with range of 12". Each model in the unit's front rank suffers a Strength 5 Hit ("Look Out Sir!" may still be used).
-
-#namecost("DOOM AND DARKNESS", "")
-#namecost("Level 3 Cast on 10+", "")
-
-Remains in play. _Doom and Darkness_ is a *hex* spell with a range of 24". The target suffers a \-3 penalty to its Leadership.
-
-#namecost("ASHES AND DUST", "")
-#namecost("Level 3 Cast on 11+", "")
-
-_Ashes and Dust_ is a *direct damage* spell. Place the small round template anywhere within 18" of the Wizard – it then scatters D3". All models under the template suffer a Strength 3 hit with the Ignores Armour Saves special rule.
-
-#namecost("THE FATE OF BJUNA", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_The Fate of Bjuna_ is a *direct damage* spell with a range of 12" that targets a single enemy model (even a character in a unit). The target suffers a number of hits equal to the model's current number of Wounds. Each hit Wound on a 4+ with the Ignores Armour Saves special rule.
-
-#namecost("SOULBLIGHT", "")
-#namecost("Level 4 Cast on 12+", "")
-
-_Soulblight_ is a *hex* spell with a range of 24". The target has \-1 Strength and \-1 Toughness (to a minimum of 1) until the start of the caster's next Magic phase.
-
-#namecost("THE PURPLE SUN OF XEREUS", "")
-#namecost("Level 4 Cast on 15+", "")
-
-Remains in play. _The Purple Sun_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must roll a D6 per Wound on their profile – on a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.
+#spell("THE PURPLE SUN OF XEREUS", 4, cast: "15+")[Remains in play. _The Purple Sun_ is a *magical vortex* that uses the small round template. Any model touched by the template at any point during its move must roll a D6 per Wound on their profile – on a 4+ they suffer a Wound which Ignores Armour Saves and Regeneration.]
+]

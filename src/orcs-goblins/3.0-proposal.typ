@@ -12,7 +12,7 @@
   army: "Orcs & Goblins",
   version: "3.0",
   layout: "army",
-  cover: "covers/orcs-goblins/3.0.png",
+  cover: "covers/orcs-goblins.png",
   align: "destruction",
   base: "orcs-goblins/3.0",
   edition: "proposal",
@@ -23,7 +23,7 @@
 #cover(
   title: "Orcs & Goblins",
   subtitle: "Proposals 2026.1 · after Warhammer Armies Project 3.0",
-  art: "/assets/covers/orcs-goblins/3.0.png",
+  art: "/assets/covers/orcs-goblins.png",
 )
 
 #colophon((
@@ -35,13 +35,8 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-#columns(2)[
-This section of the book describes all the different units used in an Orc & Goblin army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Orc & Goblin units, and these are detailed here.
-
-#namecost("ANIMOSITY", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in an Orc & Goblin army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Orc & Goblin units, and these are detailed here.])[
+#upgrade("ANIMOSITY", none)[
 Units with this special rule must test for Animosity in the Charge sub-phase after all normal charges have been declared during each of your turns, unless any of the following applies:
 
 - The unit has fewer than 5 models.
@@ -80,45 +75,45 @@ this turn.")))
 #chartlabel("ARMED TO DA TEEF")
 
 If a model with this special rule has more than one weapon and/or a shield, they may choose which weapon combination they want to use at the start of each round of close combat.
+]
 
-#namecost("GREENSKIN RACES", "")
-
+#upgrade("GREENSKIN RACES", none)[
 Characters may only join units of the same race or sub- species (such as Common Orc, Savage Orc, Black Orc, Common Goblin, Forest Goblin, Night Goblin or Snotling). Black Orc characters may still join units of Common Orcs, however.
+]
 
-#namecost("FEAR ELVES", "")
-
+#upgrade("FEAR ELVES", none)[
 Models with this special rule treat all Elves as causing Fear against them.
+]
 
-#namecost("MAGIC MUSHROOMS", "")
-
+#upgrade("MAGIC MUSHROOMS", none)[
 A Wizard with this special rule may eat a Magic Mushroom once per Magic phase, before casting a spell. This adds another D6 to the casting result. This dice does not count as a power dice, and cannot contribute to Ultimate Power. However, if you roll a 1 on this dice you must roll a further D6. On a roll of 4+ nothing else happens, but on a roll of 1\-3 the Wizard suffers a Wound which Ignores Armour Saves, and the spell automatically fails.
+]
 
-#namecost("QUELL ANIMOSITY", "")
-
+#upgrade("QUELL ANIMOSITY", none)[
 If a model with this special rule is in a unit that fails an Animosity test, they immediately inflict D6 hits at their base Strength on their unit, distributed as shooting attacks. After removing casualties, the unit is treated as if the Animosity test was passed. These hits cannot be allocated to characters with this special rule, and do not cause a Panic test.
+]
 
-#namecost("SIZE MATTERS", "")
-
+#upgrade("SIZE MATTERS", none)[
 Models with this special rule treat Goblins and Snotlings of all types as Expendable.
+]
 
-#namecost("SPIDER VENOM", "")
-
+#upgrade("SPIDER VENOM", none)[
 A Wizard with this special rule may re-roll one dice per Magic phase when casting spells. However, any time they Miscast, they will also count as having failed a Stupidity test (if they survive).
+]
 
-#namecost("TUSKER CHARGE", "")
-
+#upgrade("TUSKER CHARGE", none)[
 Models with this special rule have the Mighty Blow (1) special rule in any turn that they charge.
+]
 
-#namecost("WAAAGH!", "")
-
+#upgrade("WAAAGH!", none)[
 If a model with this special rule is your Army General, then once per game he may call a Waaagh! The Waaagh! may only be called if the model first declares a charge, and must be announced immediately after making the charge declaration, before any charge reaction takes place. In the turn a Waaagh! is called, every combat involving friendly Orc units within 12" of the Army General adds +1 to its combat resolution for the rest of the player turn. The Army General himself, and any unit he joins, adds +D3 to their combat resolution instead. In addition, every friendly unit within 12" of the Army General add their rank bonus to the result rolled on the Animosity table (to a maximum of 6).
+]
 
-#namecost("WALL-CRAWLER", "")
-
+#upgrade("WALL-CRAWLER", none)[
 Models with this rule have the Forest Strider and Obstacle Strider special rules. In addition, they treat ungarrisoned buildings as open terrain for the purposes of movement. They may not finish their movement inside or on top of an ungarrisoned building.
+]
 
-#namecost("WAAAGH! MISCAST", "")
-
+#upgrade("WAAAGH! MISCAST", none)[
 If an Orc or Goblin Wizard rolls a Miscast, they roll on the following table instead of the normal Miscast Table used by other wizards:
 
 #chart((("D6", "Result"), ("1-3", "FZZZZZZAP! Resolve the effects as if the
@@ -147,7 +142,7 @@ template, removing the Wizard as casualty
 with no saves allowed. In addition, D3 dice
 are lost from the power pool.")))
 ]
-
+]
 #lore("LORE OF DA BIG WAAAGH!")[
 
 #spell("POWER OF DA WAAAGH!", "Lore Attribute")[A Wizard using this lore gains +1 to cast spells for each friendly Orc unit within 24" that is in close combat and has a Unit Strength of 10 of more. Conversely, a Wizard using this lore suffers \-1 to cast spells for each friendly Orc unit within 24" that is fleeing and has a Unit Strength of 10 or more.]
@@ -304,7 +299,7 @@ Remains in Play. _Curse of da Bad Moon_ is a *magical vortex* that uses the smal
 ]
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Orcs & Goblins. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2, first: true)[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("BATTLEAXE OF THE LAST BIG WAAAGH!", 85, only: "Orcs")[Roll a D6 at the start of each round of combat – the wielder of this weapon adds that number to both his Attacks and Strength in that round. However, the bearer's Weapon Skill is lowered by an amount equal to half the dice roll (i.e. 1\-2 = \-1 Weapon Skill, 3\-4 = \-2 Weapon Skill, and 5\-6 = \-3 Weapon Skill).]
 
 #magic-weapon("WARBOSS IRONCLAW'S WAAAGH! CLEAVA", 60, only: "Common Orcs")[All hits from Warboss Ironclaw's Waaagh! Cleava Wound automatically with the Ignores Armour Saves special rule.]
@@ -398,7 +393,7 @@ Remains in Play. _Curse of da Bad Moon_ is a *magical vortex* that uses the smal
 #magic-armour("SPITEFUL SHIELD", 10, only: "Goblins", type: "Shield")[For each To Hit roll of a 1 against the bearer in close combat, the Spiteful Shield inflicts a Strength 5 Hit against the model that struck the blow.]
 ]
 
-#magic-item-section("talisman", columns: 2)[
+#magic-item-section("talisman")[
 #talisman("HEADDRESS OF MANY EYES", 30, only: "Forest Goblin on foot")[The wearer can only be hit in close combat on To Hit rolls of a natural 6.]
 
 #talisman("AMULET OF PROTECTYNESS", 25)[Whenever the bearer of the Amulet of Protectyness suffers a Wound, they count as having the same armour and Ward save as the model that caused the Wound.]
@@ -434,7 +429,7 @@ Remains in Play. _Curse of da Bad Moon_ is a *magical vortex* that uses the smal
 #talisman("GLOWY HOWZIT", 10)[This item gives the bearer the Magical Ward (5+) special rule. At the end of each phase in which the model suffered 1 or more Wounds, roll a D6 for each failed Ward save roll they made. On the roll a 1, the Glowy Howzit cannot be used for the remainder of the game.]
 ]
 
-#magic-item-section("arcane", columns: 2)[
+#magic-item-section("arcane")[
 #arcane-item("STAFF OF SNEAKY STEALIN'", 60, only: "Goblins", type: "Staff")[At the start of each of your Magic phases, the Staff of Sneaky Stealin' allows you to remove one dice from the opponent's Dispel dice pool and add it to your own Power dice pool.]
 
 #arcane-item("SKULL WAND OF KALOTH", 50, type: "Staff")[The Skull Wand unleashes a curse on a single enemy model that is in base contact with the bearer at the start of the Close Combat phase. The victim must pass a Leadership test (using its own, unmodified, Leadership) or be slain instantly, with no save of any kind allowed. In addition, the bearer of the Skull Wand causes Terror.]
@@ -475,7 +470,7 @@ Remains in Play. _Curse of da Bad Moon_ is a *magical vortex* that uses the smal
 ]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("THE CROWN OF GORK", 40, only: "Common Orc")[All friendly units within 12" of the bearer may re-roll failed Animosity tests.]
 
 #enchanted-item("SQUIGRILER PIPES", 35, only: "Night Goblins")[This item may be used in your Remaining Moves sub-phase. When used, all Squig units within 18" will immediately make a Random Move (using their normal Random Movement) directly towards the bearer of this item. If they get into base contact with the bearer, it is immediately removed as a casualty.]
@@ -731,7 +726,6 @@ Little Waaagh!
 )
 
 #unit("GIANT RIVER TROLL HAG",
-  breakable: true,
   profiles: (
     (name: "Giant River Troll Hag", m: 5, ws: 3, bs: 1, s: 6, t: 5, w: 6, i: 1, a: "*", ld: 6, points: 270),
   ),
@@ -1031,7 +1025,6 @@ choose another victim. Roll again on this table to see what the Troll Hag does w
 )
 
 #unit("GOBLIN GITZ",
-  breakable: true,
   profiles: (
     (name: "Goblin", m: 4, ws: 2, bs: 3, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 6, points: 2),
     (name: "Nasty Skulker", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 1, i: 3, a: 1, ld: 6, points: ""),
@@ -1841,7 +1834,6 @@ Any unit hit by a Flinger suffer \-1 to its Movement, Weapon Skill, Ballistic Sk
 )
 
 #unit("GIANT",
-  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -1888,7 +1880,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("BONEGRINDER GIANT",
-  breakable: true,
   profiles: (
     (name: "Bonegrinder Giant", m: 10, ws: 3, bs: 3, s: 8, t: 8, w: 10, i: 1, a: "*", ld: 10, points: 385),
   ),
@@ -2357,16 +2348,13 @@ next turn."), ("6", "Glyph of Chamon: Trugg gains a 3+ armour save until the sta
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-#namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+#upgrade("Special thanks to all the people that have contributed with feedback and ideas", none)[]
+]
 
 = PROPOSALS
 

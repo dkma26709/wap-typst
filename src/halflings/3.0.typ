@@ -12,7 +12,7 @@
   army: "Halflings",
   version: "3.0",
   layout: "army",
-  cover: "covers/halflings/3.0.png",
+  cover: "covers/halflings.png",
   align: "order",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Halflings",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/halflings/3.0.png",
+  art: "/assets/covers/halflings.png",
 )
 
 #colophon((
@@ -45,29 +45,27 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Halfling army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Halfling units, and these are detailed here.
-
-#namecost("DUCK & WEAVE", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Halfling army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Halfling units, and these are detailed here.])[
+#upgrade("DUCK & WEAVE", none)[
 Enemies attacking Infantry models with this special rule suffer \-1 To Hit in close combat.
+]
 
-#namecost("HOMESTEADERS", "")
-
+#upgrade("HOMESTEADERS", none)[
 Units with this special rule are Stubborn so long as they are at least partially within their Deployment Zone.
+]
 
-#namecost("NATURAL RESISTANCE", "")
-
+#upgrade("NATURAL RESISTANCE", none)[
 When a Halfling army attempts to dispel, they have a +1 bonus to all dispel attempts.
+]
 
-#namecost("PIGGYBACK RIDERS", "")
-
+#upgrade("PIGGYBACK RIDERS", none)[
 Models with this upgrade gain the Fight in Extra Ranks (1) special rule.
+]
 
-#namecost("TRINKETS", "")
-
+#upgrade("TRINKETS", none)[
 Models with this special rule may take up two Talismans and/or Enchanted Items rather than just one of each.
+]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Halflings. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
@@ -138,7 +136,7 @@ Models with this special rule may take up two Talismans and/or Enchanted Items r
 #talisman("PIDGEON PLUCKER PENDANT", 5)[This item grants the bearer a Magical Ward (4+) against Wounds caused in close combat by models that have the Fly special rule.]
 ]
 
-#magic-item-section("enchanted", columns: 2)[
+#magic-item-section("enchanted")[
 #enchanted-item("WIZARDING HAT", 50)[The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore from any of the Winds of Magic from the _Warhammer Rulebook_ at the start of the game. However, they also have the Stupidity special rule. Note that they may not choose any Arcane Items.]
 
 #enchanted-item("OLORIN THE GREY'S KNICKKNACK", 45, bound: true)[This item contains both _The Enfeebling Foe_ and _The Withering_ spells from the Lore of Shadows. However, you may only attempt to cast one of these spells once per Magic phase.]
@@ -884,19 +882,14 @@ of your next turn."), ("3", "Sugary Sweets: The unit gains the Frenzy special ru
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Antti Sinivuori",
-  before: [
+#group("Additional Material:")
+
+#namecost("Antti Sinivuori", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)

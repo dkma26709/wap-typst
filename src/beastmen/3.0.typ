@@ -12,7 +12,7 @@
   army: "Beastmen",
   version: "3.0",
   layout: "army",
-  cover: "covers/beastmen/3.0.png",
+  cover: "covers/beastmen.png",
   align: "destruction",
 )
 
@@ -21,7 +21,7 @@
 #cover(
   title: "Beastmen",
   subtitle: "Warhammer Armies Project · 3.0",
-  art: "/assets/covers/beastmen/3.0.png",
+  art: "/assets/covers/beastmen.png",
 )
 
 #colophon((
@@ -45,28 +45,25 @@
 
 #outline(title: [Contents], depth: 2)
 
-= ARMY SPECIAL RULES
-
-This section of the book describes all the different units used in a Beastmen army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Beastmen units, and these are detailed here.
-
-#namecost("BEASTMEN BREEDS", "")
-
+#upgrade-chapter("ARMY SPECIAL RULES", whole: true, intro: [This section of the book describes all the different units used in a Beastmen army, along with any rules necessary to use them in your games of Warhammer. Where a model has a special rule that is explained in the _Warhammer_ rulebook, only the name of that rule is given. If a model has a special rule that is unique to it, that rule is detailed alongside its description. However, there are a number of commonly recurring ‘army special rules’ that apply to several Beastmen units, and these are detailed here.])[
+#upgrade("BEASTMEN BREEDS", none)[
 Beastmen are divided into Gors, Ungors, Centigors and Minotaurs. Characters may only join units of the same breed as themselves. In addition, Ungors do not cause Panic in any of the other breeds above.
+]
 
-#namecost("BLOODGREED", "")
-
+#upgrade("BLOODGREED", none)[
 Whenever a model with this special rule wins a round of close combat in which it has caused at least one unsaved Wound, it gains the Frenzy special rule until the end of the next close combat phase. However, they may never choose to Overrun. Bloodgreed has no effect against Animated Constructs, Daemons, Forest Spirits or Vampires.
+]
 
-#namecost("DRUNKEN", "")
-
+#upgrade("DRUNKEN", none)[
 Roll a D6 for each unit containing models with this special rule at the beginning of each of their turns and consult the table below to see what effect they have until the start of their next turn:
 
 #chart((("D6", "Result"), ("1-2", "Drunken Stupor: The unit is subject to the
 Stupidity special rule."), ("3-4", "Drunken Frenzy: The unit is subject to the
 Frenzy special rule."), ("5-6", "Drunken Bravado: The unit is subject to the
 Stubborn special rule.")))
-#chartlabel("MARKS OF CHAOS")
+]
 
+#upgrade("MARKS OF CHAOS", none)[
 Several characters and regiments in the Beastmen army have, or can purchase, one of the four Marks of Chaos detailed below. A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 - *Mark of Khorne:* Models with the Mark of Khorne have the Frenzy special rule.
@@ -76,18 +73,20 @@ Several characters and regiments in the Beastmen army have, or can purchase, one
 - *Mark of Slaanesh:* Models with the Mark of Slaanesh have the Immunity (Psychology) special rule and may re-roll the lowest dice on their charge and pursuit distances.
 
 - *Mark of Tzeentch:* Models with the Mark of Tzeentch have the Magical Ward (6+) and Magic Resistance (1) special rules.
+]
 
-#namecost("PRIMAL FURY", "")
-
+#upgrade("PRIMAL FURY", none)[
 At the beginning of each round of close combat, each engaged unit with the Primal Fury special rule must take a Leadership test. If the test is passed, that unit gains the Hatred special rule until the end of the close combat phase. In addition, if they passed the Leadership test and rolled a double, they also gain the Frenzy special rule until the end of the close combat phase.
+]
 
-#namecost("TUSKER CHARGE", "")
-
+#upgrade("TUSKER CHARGE", none)[
 Models with this special rule have the Mighty Blow (1) special rule in any turn that they charge.
+]
 
-#namecost("UNRULY", "")
-
+#upgrade("UNRULY", none)[
 All models with this special rule follow the Berserk Rage rules from Frenzy. In addition, if they are forced to charge as a result of a failed Berserk Rage test, they may re-roll failed charge distance results.
+]
+]
 
 #lore("THE LORE OF THE WILD")[
 
@@ -239,85 +238,47 @@ All models with this special rule follow the Berserk Rage rules from Frenzy. In 
 
 #spell("INFERNAL GATEWAY", 4, cast: "15+")[_Infernal Gateway_ is a *direct damage* spell with a range of 24". The target suffers 2D6 Strength 2D6 hits with the Flaming Attacks special rule. Roll for the Strength first. If an 11 or 12 is rolled when determining the spell’s Strength value, the hits are resolved at Strength 10, and the unit suffers 3D6 hits rather than 2D6.]
 ]
-= MUTATIONS & TRAITS
+#upgrade-chapter("MUTATIONS & TRAITS", intro: [*Below are Mutations & Traits that can be bought for your characters. Each can only be chosen once per army, and no model may choose more than three.*])[
+#upgrade("CROWN OF HORNS", 30, only: "General")[The character gains a Magical Ward (5+). In addition, any unit they join gains +1 to any Rally attempts they make.]
 
-*Below are Mutations & Traits that can be bought for your characters. Each can only be chosen once per army, and no model may choose more than three.*
+#upgrade("ROARING BRUTE", 30)[Enemy units within 6" of this character suffer \-1 to their Leadership.]
 
-#namecost("CROWN OF HORNS", "30 points")
+#upgrade("EATER OF HEROES", 25)[The character may re-roll To Hit and To Wound when fighting in challenges.]
 
-General only. The character gains a Magical Ward (5+). In addition, any unit they join gains +1 to any Rally attempts they make.
+#upgrade("RUNE OF THE BEAST ASCENDANT", 25, only: "Beastlord or Wargor")[Friendly units of Gors, Ungors and Bestigors within 6" of the character gain +1 Leadership.]
 
-#namecost("ROARING BRUTE", "30 points")
+#upgrade("INDOMITABLE BEAST", 20)[The character gains +1 Wound.]
 
-Enemy units within 6" of this character suffer \-1 to their Leadership.
+#upgrade("GNARLED HIDE", 15)[The character gains the Natural Armour (5+) special rule.]
 
-#namecost("EATER OF HEROES", "25 points")
+#upgrade("ORACLE OF THE DARK TONGUE", 15)[Enemy units in base contact with this character cannot use the Inspiring Presence special rule.]
 
-The character may re-roll To Hit and To Wound when fighting in challenges.
+#upgrade("RAMPANT JUGGERNAUT", 15)[The character gains the Devastating Charge and Mighty Blow (1) special rules in any turn that they make a successful charge.]
 
-#namecost("RUNE OF THE BEAST ASCENDANT", "25 points")
+#upgrade("MANY-LIMBED FIEND", 15)[The character gains +1 Attack.]
 
-Beastlord or Wargor only. Friendly units of Gors, Ungors and Bestigors within 6" of the character gain +1 Leadership.
+#upgrade("MUSCULAR MONSTROSITY", 15)[The character gains +1 Strength.]
 
-#namecost("INDOMITABLE BEAST", "20 points")
+#upgrade("GORGER", 10)[Every time the character rolls a 6 To Wound and slays a model, they regain one Wound lost previously during the game.]
 
-The character gains +1 Wound.
+#upgrade("GOUGE-TUSKS", 10)[The character gains the Armour Piercing (1) special rule.]
 
-#namecost("GNARLED HIDE", "15 points")
+#upgrade("RUNE OF THE INSATIABLE BEAST", 10)[The character can re-roll To Wound rolls of 1 in Close Combat.]
 
-The character gains the Natural Armour (5+) special rule.
+#upgrade("RUNE OF THE TRUE BEAST", 10)[War Beasts, Swarms and any mounts are not allowed to target the character in close combat, although any riders may attack as normal.]
 
-#namecost("ORACLE OF THE DARK TONGUE", "15 points")
+#upgrade("SLUG-SKIN", 10)[All enemy models in base contact with the character at the start of any round of close combat suffer a Strength 2 hit with the Poisoned Attacks special rule.]
 
-Enemy units in base contact with this character cannot use the Inspiring Presence special rule.
+#upgrade("MALEVOLENT DESPOILER", 5)[Enemy units in combat with this character gain no benefits from fighting behind Obstacles.]
 
-#namecost("RAMPANT JUGGERNAUT", "15 points")
+#upgrade("SHADOW-HIDE", 5, only: "Model on foot")[Enemy models targeting the character with missile attacks suffer a \-1 To Hit modifier.]
 
-The character gains the Devastating Charge and Mighty Blow (1) special rules in any turn that they make a successful charge.
-
-#namecost("MANY-LIMBED FIEND", "15 points")
-
-The character gains +1 Attack.
-
-#namecost("MUSCULAR MONSTROSITY", "15 points")
-
-The character gains +1 Strength.
-
-#namecost("GORGER", "10 points")
-
-Every time the character rolls a 6 To Wound and slays a model, they regain one Wound lost previously during the game.
-
-#namecost("GOUGE-TUSKS", "10 points")
-
-The character gains the Armour Piercing (1) special rule.
-
-#namecost("RUNE OF THE INSATIABLE BEAST", "10 points")
-
-The character can re-roll To Wound rolls of 1 in Close Combat.
-
-#namecost("RUNE OF THE TRUE BEAST", "10 points")
-
-War Beasts, Swarms and any mounts are not allowed to target the character in close combat, although any riders may attack as normal.
-
-#namecost("SLUG-SKIN", "10 points")
-
-All enemy models in base contact with the character at the start of any round of close combat suffer a Strength 2 hit with the Poisoned Attacks special rule.
-
-#namecost("MALEVOLENT DESPOILER", "5 points")
-
-Enemy units in combat with this character gain no benefits from fighting behind Obstacles.
-
-#namecost("SHADOW-HIDE", "5 points")
-
-Model on foot only. Enemy models targeting the character with missile attacks suffer a \-1 To Hit modifier.
-
-#namecost("UNCANNY SENSES", "5 points")
-
-The character gains +2 Initiative.
+#upgrade("UNCANNY SENSES", 5)[The character gains +2 Initiative.]
+]
 
 #magic-item-chapter(intro: [This section contains the rules for some of the most iconic and powerful magical artefacts used by the Beastmen. These may be used in addition to the magic items found in the Warhammer rulebook.])
 
-#magic-item-section("weapon", columns: 2, first: true)[
+#magic-item-section("weapon", first: true)[
 #magic-weapon("AXES OF KHORGOR", 40, type: "Two hand weapons")[The bearer may re-roll all failed rolls To Hit and To Wound in close combat. In addition, he gains the Armour Piercing (1) special rule.]
 
 #magic-weapon("AXE OF MEN", 40)[The Axe of Men gives the wielder the Killing Blow special rule. In addition, if the bearer kills an enemy character in a challenge, they and any unit they are with gain the Stubborn and Terror special rule for as long as they remain with the unit.]
@@ -1186,7 +1147,6 @@ If the target unit contains one or more models mentioned in Ghostsight, you may 
 )
 
 #unit("GIANT",
-  breakable: true,
   profiles: (
     (name: "Giant", m: 6, ws: 3, bs: 3, s: 6, t: 6, w: 6, i: 3, a: "*", ld: 10, points: 180),
   ),
@@ -1460,19 +1420,14 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
   ),
 )
 
-= CREDITS
+#upgrade-chapter("CREDITS", whole: true)[
+#group("Written & Edited by:")
 
-#unit("Written & Edited by:",
-  first: true,
-  subtitle: "Mathias Eliasson",
-  before: [
-#namecost("Based on Warhammer Fantasy by Games-Workshop", "")
-  ],
-)
+#namecost("Mathias Eliasson", "")
+#upgrade("Based on Warhammer Fantasy by Games-Workshop", none)[]
+]
 
-#unit("Additional Material:",
-  subtitle: "Stefan Wolf",
-  before: [
+#group("Additional Material:")
+
+#namecost("Stefan Wolf", "")
 #namecost("Special thanks to all the people that have contributed with feedback and ideas", "")
-  ],
-)
