@@ -11,8 +11,9 @@ footnote markers under a weapon table - so a bare run reports two dozen hits on
 an untouched corpus and teaches you to ignore it. Given a baseline render, only
 hits that are *new* are reported, which is the number that means something.
 
-Measured upstream, where this was written: a rulebook edition carried 24
-legitimate asterisks and two army books one each, all footnote markers.
+Measured on this corpus: `rulebook-proposal` carries 24 legitimate asterisks and
+`dwarfs-house` and `daemons-of-chaos-house` one each, all footnote markers
+present in their base books too.
 """
 
 from __future__ import annotations

@@ -21,12 +21,54 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).parent.parent
 TITLE = re.compile(r"^Warhammer\s*-\s*(.+?)\s+([\d.]+)$", re.I)
 
+# No raster image is taken out of a source PDF unless --art asks for it, and not
+# even then from a book that carries a quantity of them. The rules text is
+# Eliasson's and freely distributed; the illustrations in the older books are
+# neither his nor ours to republish, and this repository is public.
+#
+# The number is measured, not guessed, and the two ends are closer than they
+# look. An army book on the line this project imports holds two to eight images:
+# a parchment background repeated once per section, a flat black block, and at
+# most one diagram of unit bases. The rulebook holds 49, because its diagrams of
+# movement and charge arcs are its own and it places 46 of them - so a limit set
+# by the army books would refuse the one book whose pictures we do want.
+#
+# Above them, the illustrated editions of the same armies, counted the same way:
+# 126 for Norse 8th, 313 for Nippon 8th, 529 for Dwarfs 9th. So the gap to clear
+# is 49 to 126, and 80 sits between the two with about 1.6x in either direction.
+# --art being off by default is the protection; this is the backstop for the day
+# a directory holds both kinds of book, which is exactly what the source
+# directory holds.
+ART_LIMIT = 80
+
 # The core rulebook's filename carries its edition, which would otherwise become
 # part of both its title and its slug.
 ALIASES = {
     "the game of fantasy battles - 9th edition":
         ("The Game of Fantasy Battles", "rulebook"),
 }
+
+
+def flat(path: Path) -> bool:
+    """One colour, so it carries nothing.
+
+    What these books offer as a cover is a black mask over vector art that is
+    not extractable, and all 34 covers taken before this check went in are a
+    single colour at 100%. Taking one gains a black rectangle on the page and a
+    black square on the landing page, where the blank plate reads better.
+    """
+    if not path.exists():
+        return False
+    import pymupdf                                          # noqa: PLC0415
+
+    pix = pymupdf.Pixmap(str(path))
+    if pix.alpha or pix.n > 3:
+        pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
+    step = max(1, min(pix.width, pix.height) // 40)
+    seen = {pix.pixel(x, y)
+            for y in range(0, pix.height, step)
+            for x in range(0, pix.width, step)}
+    return len(seen) <= 1
 
 
 def parse_name(pdf: Path) -> tuple[str, str] | None:
@@ -67,6 +109,11 @@ def main() -> None:
                     help="drop books not named in this run. Off by default: the "
                          "manifest is merged, so adding one book does not "
                          "silently unpublish the rest")
+    ap.add_argument("--art", action="store_true",
+                    help="promote the book's raster images into assets/. OFF BY "
+                         "DEFAULT, and refused outright above "
+                         f"{ART_LIMIT} images in a book: the illustrations in "
+                         "these PDFs are not ours to republish")
     args = ap.parse_args()
 
     sources: list[Path] = []
@@ -89,12 +136,19 @@ def main() -> None:
         army, version = parsed
         alias = ALIASES.get(army.lower())
         army, slug = alias if alias else (army, slugify(army))
-        target = args.build / f"{slug}.json"
+        # A book's id is its army and its version together, as it is everywhere
+        # else. Keyed on the army alone, three versions of Lizardmen shared one
+        # extraction: the mtime skip below then found a JSON newer than the next
+        # PDF and never re-extracted, so 1.63 and 1.64 were checked against
+        # 1.62's text - and the manifest still gained an entry for each.
+        book_id = f"{slug}/{version}"
+        target = args.build / f"{book_id}.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
 
         if args.force or not target.exists() or target.stat().st_mtime < pdf.stat().st_mtime:
             code, out = capture([
                 ROOT / "extract" / "extract.py", pdf,
-                "-o", args.build, "--slug", slug,
+                "-o", args.build, "--slug", book_id,
             ])
             if code:
                 failures.append(f"{army}: extract failed\n{out}")
@@ -121,18 +175,36 @@ def main() -> None:
         missing = value(cov, "missing")
         welds = value(wel, "suspected welds")
 
+        # Nothing raster leaves the PDF without --art, and a book carrying more
+        # images than any book on this line does is refused even with it. The
+        # count is of what the extraction found, so it sees the whole PDF rather
+        # than only the images a page places.
+        art = args.art
+        if art and len(data.get("images", {})) > ART_LIMIT:
+            art = False
+            failures.append(
+                f"{army} {version}: --art refused - {len(data['images'])} images "
+                f"in the PDF, over the limit of {ART_LIMIT}. An army book on "
+                f"this line carries eight at most and the rulebook 49; this many "
+                f"means illustrations, which are not ours to republish. The book "
+                f"itself imported without them.")
+
         # Promote each book's cover illustration into assets/, where it serves as
         # both the Typst cover art and the landing-page thumbnail. The parchment
         # background is shared by the whole series, so it is only taken once.
         cover_rel = None
-        if data.get("cover"):
+        if art and data.get("cover") and not flat(
+                args.build / data["image_dir"] / data["cover"]):
             covers = ROOT / "assets" / "covers"
             covers.mkdir(parents=True, exist_ok=True)
             src = args.build / data["image_dir"] / data["cover"]
             if src.exists():
+                # Keyed the way the book is - army then version - because two
+                # versions of one army have two covers and the same slug.
                 # Keep the source's own extension: images are copied without
                 # re-encoding, and Typst picks the decoder from the suffix.
-                name = f"{slug}{src.suffix}"
+                name = f"{slug}/{version}{src.suffix}"
+                (covers / name).parent.mkdir(parents=True, exist_ok=True)
                 (covers / name).write_bytes(src.read_bytes())
                 cover_rel = f"covers/{name}"
 
@@ -144,8 +216,8 @@ def main() -> None:
             for b in pool if b["type"] == "figure"
         }
         figures = 0
-        if wanted:
-            dest = ROOT / "assets" / "figures" / slug
+        if art and wanted:
+            dest = ROOT / "assets" / "figures" / slug / version
             dest.mkdir(parents=True, exist_ok=True)
             for name in sorted(wanted):
                 src = args.build / data["image_dir"] / name
@@ -167,7 +239,7 @@ def main() -> None:
 
         # The parchment is shared by every book, so it is taken once. The name is
         # fixed because template.typ refers to it directly.
-        if data.get("background"):
+        if art and data.get("background"):
             src = args.build / data["image_dir"] / data["background"]
             parchment = ROOT / "assets" / "images" / f"parchment{src.suffix}"
             if src.exists() and not parchment.exists():
@@ -175,6 +247,7 @@ def main() -> None:
                 parchment.write_bytes(src.read_bytes())
 
         manifest.append({
+            "id": book_id,
             "slug": slug,
             "army": army,
             "version": version,
@@ -189,12 +262,15 @@ def main() -> None:
 
     catalogue = args.build / "books.json"
     if catalogue.exists():
-        seen = {b["slug"] for b in manifest}
+        # Merged on the id, not the army: two versions of one book are two
+        # entries, and a fresh run of 1.64 must not displace 3.0's.
+        seen = {b["id"] for b in manifest}
         prior = json.loads(catalogue.read_text(encoding="utf-8"))["books"]
         # A book this script cannot rebuild survives --replace: an authored one
         # never came out of a PDF run at all, and an imported one now owns its
         # own Typst, which a re-extraction would not reproduce.
-        kept = [b for b in prior if b["slug"] not in seen
+        kept = [b for b in prior
+                if b.get("id", f"{b['slug']}/{b['version']}") not in seen
                 and (not args.replace
                      or b.get("authored") or b.get("hand_written"))]
         if kept:

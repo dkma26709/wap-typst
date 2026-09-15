@@ -42,6 +42,14 @@ h1 {
   font-weight: 700;
 }
 .sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 
 .section {

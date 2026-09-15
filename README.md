@@ -46,21 +46,327 @@ both, and no challenge to their status is intended. Not for sale.
 The code is MIT and the books are CC BY-NC-SA 4.0; see [LICENSE](LICENSE) for
 the split and what each grant covers.
 
-## Working on the books
+## Pipeline
 
-Each book is one [Typst](https://typst.app) file at `src/<army>/<version>.typ`,
-importing the shared template. Editing a rule or a points value means editing
-that file and recompiling; nothing generates it and nothing else holds a copy.
-An edition sits beside the book it derives from — `src/lizardmen/3.0-house.typ`
-next to `src/lizardmen/3.0.typ` — so a change is a `git diff`.
-
-```bash
-python build.py                # compile every book into out/
-python build.py skaven/3.0     # or one, by its id
-python build.py --site         # and assemble _site/ as the workflow does
-python emit.py                 # rebuild the pages and build/render.json
-python check_site.py _site     # every link resolves, every book reachable
+```
+source PDF ─► extract ─► verify ─► src/<army>/<version>.typ ─► PDF
+                                   (yours from here on)
+           extract/batch.py + to_book.py                      typst
 ```
 
-[CLAUDE.md](CLAUDE.md) documents the template, the import pipeline and the
-verification gates in full.
+**`src/` is the whole of it.** A book is a single Typst file: its own front
+matter, its own metadata, its own text. Nothing generates it, nothing else holds
+a copy of it, and there is no intermediate representation to keep in step. Adding
+a unit means copying the entry above it and editing the values.
+
+**A book's identity is its path.** The army is the folder and the version is the
+file, so the same army at two versions is two books that cannot write over each
+other, and `ls src/lizardmen/` is the list of what we hold of it:
+
+```
+src/lizardmen/3.0.typ  3.0-house.typ  3.0-proposal.typ  1.64.typ
+```
+
+That path, minus the extension, is the book's **id** — `lizardmen/3.0` — and it
+is the one name the whole project uses: the file the publish workflow compiles,
+the URL the site links, the cover art under `assets/covers/<army>/<version>`, the
+figures under `assets/figures/<army>/<version>/`, and the record an edition keeps
+at `editions/<shelf>/<army>/<version>.toml`. No book states its own id, because
+where it sits already says it.
+
+A book is imported *once*. `extract/batch.py` reads a PDF, verifies the
+extraction, and stops there — deliberately writing no Typst, because a
+re-extraction that overwrote a book would throw away every edit made since.
+`extract/to_book.py <slug>` is the separate, deliberate step that writes the
+book, escaping the source text as it goes so no PDF prose can be read back as
+Typst syntax.
+
+`emit.py` then reads the books themselves, with `typst eval`, to build the site
+and `build/render.json` — the one list the publish workflow walks. Each book
+declares its own allegiance and counts its own entries, so there is no manifest
+to fall out of step with what is on disk.
+
+## The site
+
+Three kinds of page, because an army is the thing a reader is looking for and a
+version of it is not:
+
+| | holds | address |
+|---|---|---|
+| the front page | our own editions: the house rules and the proposals | `/` |
+| the library | one card per army, at its current version | `/library/` |
+| an army's page | every version of it we hold, newest first, and our editions of them | `/lizardmen/` |
+
+The front page is the editions because they are what the project is for and what
+a reader wants first; the Armies Project entire is one click down. An army's page
+sits in the folder its own books publish into, so `/lizardmen/` is beside
+`/lizardmen/3.0.pdf` and the address says what it holds. Which version is the
+current one is read from the version numbers rather than declared, so an imported
+book takes its place without being announced — `3.11` above `3.1`, which a string
+sort gets backwards.
+
+The library can be filtered by allegiance and re-ordered alphabetically; it is
+built grouped and in source order, so it reads correctly before the script runs.
+There is no edition filter: an army's versions are on its own page, and the
+editions are the front page, since there is one version of each of those and
+nothing about them wants choosing between.
+
+Only the Typst and the cover art are committed, so CI needs the Typst compiler
+and nothing else — no Python, and never the source PDFs.
+
+```bash
+# Extract and verify a directory of books. Writes no Typst: see below.
+python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
+
+# Import one into src/. From here on the file is yours.
+python extract/to_book.py lizardmen/3.0
+
+# Rebuild the landing page and the render list from the books
+python emit.py
+
+# Compile one. Bundled fonts only, so this matches the CI render exactly.
+# Render into a tree mirroring src/ — check_editions.py finds a book's source
+# from the folder its PDF is in.
+typst compile --ignore-system-fonts --root . \
+  src/lizardmen/3.0.typ out/lizardmen/3.0.pdf
+
+# Check a rendered book still carries every word of its source
+python extract/roundtrip.py lizardmen/3.0 --source "path/to/Warhammer - Lizardmen 3.0.pdf"
+```
+
+Every one of those names the book by its **id** — `lizardmen/3.0` — which is
+also where its extraction, its render and its Typst all sit, so none of these
+paths has to be assembled. `to_book.py` will still take a bare army name while
+the manifest holds one version of it; once it holds more, it says which ids it
+found rather than picking one.
+
+`batch.py` skips a book whose JSON is newer than its PDF, so re-runs are cheap;
+pass `--force` to re-extract everything.
+
+## Editions
+
+An **edition** is a book with our own amendments. It is a fork of that book, kept
+in git: `src/lizardmen/3.0-house.typ` beside `src/lizardmen/3.0.typ`, so what the
+edition changed is `git diff` between the two, and a new upstream version is a
+three-way merge rather than a set of quotations that have to still match.
+
+```
+src/lizardmen/3.0.typ  ──fork──►  3.0-house.typ  ──fork──►  3.0-proposal.typ
+      the book                  the rules we play      what we are arguing about
+```
+
+The faithful reproduction is untouched and keeps its own place on the site beside
+the amended one. `editions/<slug>/edition.toml` holds the edition's identity —
+its label, its version, and the colophon that is set into its books when they are
+written; `editions/<slug>/<army>/<version>.toml` records what each change was and
+why, for the day a new upstream version has to have them re-applied. That path is
+the book's own id, so a record and the book it is about are named the same thing
+by construction; `emit.py` refuses to build a page for an edition whose record is
+missing, since the tally it would print is "changes nothing".
+
+The changed rules are **not marked in the body**; an amended book is meant to
+read as a book. What an edition changed is set out in a chapter at the back,
+quoting the original wording, the new wording and the reason.
+
+That chapter is the only place a reader learns the body was altered, so it had
+better be complete — and since the change and its write-up are no longer produced
+from one record, that is checked rather than assumed:
+
+```bash
+# Every word this edition removes or introduces must appear in its changelog
+python extract/check_editions.py out/lizardmen/3.0-house.pdf out/lizardmen/3.0.pdf
+
+# A proposal alters nothing, so its body must match its parent exactly
+python extract/check_editions.py out/rulebook/3.11-proposal.pdf \
+  out/rulebook/3.11-house.pdf --identical-body --chapter PROPOSALS
+```
+
+## Proposals
+
+A **proposal** is a change described rather than made. It alters nothing; it is
+set out in a chapter at the back as what it would change, why, what it would
+cost, and what it would look like at the table — the argument to have before
+anyone writes it into the rules. Once agreed it is written into the body and moves
+to the changelog chapter.
+
+Because a proposal book is a fork that adds only that chapter, the promise its
+colophon makes — that the rules text is untouched — is checkable, and is checked,
+by the second command above, which reports nought words differing. The fork is of
+the house edition where the book has one, and of the book itself where it does
+not, so the parent passed to `check_editions.py` is whichever it was forked from,
+and `--chapter PROPOSALS` names the chapter to stop the comparison at.
+
+One proposal has been agreed and is gone from here. *An Army of Infamy: the Ordo
+Draconis* was the only entry in the Vampire Counts proposal book; it is now
+`src/ordo-draconis/2026.1.typ`, a book of its own on the House Rules shelf, and both the
+proposal book and its record under `editions/proposal/` were deleted when it
+landed. That is what agreeing a proposal looks like — it does not usually mean a
+new book, but this one changed too much of a list to be written as amendments to
+it.
+
+## How the extraction works
+
+The books are digitally authored, so structure is recoverable without guessing:
+
+| Signal | Meaning |
+|---|---|
+| PDF bookmark TOC | chapters and named entries, with page numbers |
+| `CaslonAntique` 36pt / 16pt / 12pt | chapter · entry · field label or run-in name |
+| `TimesNewRoman` 10pt (+Bold/Italic) | body text and inline emphasis |
+| stable x-coordinates | stat-table columns, recovered by snapping to header anchors |
+| blank lines | paragraph separators |
+
+No army-specific code: the same parser handles all thirty books, from Halflings
+(38 entries) to Warriors of Chaos (125).
+
+Three details cost the most effort and are worth knowing about:
+
+- **PyMuPDF splits a text line at every wide horizontal gap**, which is exactly
+  how a stat table is laid out — each cell becomes its own "line". `merged_lines`
+  re-joins lines sharing a baseline, inserting a space wherever the gap it closed
+  stood for one. Without that, prose in positioned columns welds together
+  (`direct damage` + `area spell` → `damagearea`).
+- **Whitespace is never classified by font.** The books occasionally set an
+  inter-word space in the display face; treating that as a field label files it
+  on the wrong side of a `LABEL: value` split and welds the value's words.
+- **Source text is escaped once, as the book is written.** PDF prose is full of
+  characters Typst reads as markup, so `to_book.py` escapes them at import and
+  the file is trusted from then on, because a person owns it. Two substitutions
+  had to be handled that no word count can see: Typst curls quotes in markup,
+  which would rewrite every apostrophe in text the colophon promises is
+  reproduced, so smart quotes are off; and it turns a hyphen before a digit into
+  a minus sign, which is 1,123 occurrences across the corpus.
+
+## Verification
+
+Three gates, because they catch different failures.
+
+`extract/coverage.py` compares the word multiset of the source PDF against the
+extraction. It runs at import time, at a **zero** tolerance — every book was
+imported with no missing words, so anything above zero is worth reading rather
+than tolerating. Apostrophes are tokenised identically on both sides, because the
+source routinely sets a possessive or infix as its own span (`Sotek` + `'s`,
+`K` + `'daai`) which this pipeline rejoins correctly.
+
+`extract/welds.py` looks for words *welded together* by a lost space —
+`damagearea`, `(6),Natural` — which a word count cannot see, since a weld removes
+a space rather than a word. Three separate instances of this bug reached the
+rendered page before the check existed.
+
+`extract/roundtrip.py` closes the loop: the source PDF against the **rendered**
+one, so it sees the finished book rather than a halfway house, and catches what
+the extraction check cannot — broken markup, mangled emphasis, a table that
+quietly lost a column. Reading words back out of our own typesetting needs two
+corrections, both of which otherwise report good work as loss. Typst hyphenates
+at a line break with a soft hyphen, so the halves are rejoined across it. And
+letter-spaced display text comes back with spaces inside it — `ANIMOSITY` arrives
+as `ANIMOSI TY` — which width alone cannot distinguish, since justification
+squeezes real body spaces just as narrow; inside a tracked span, though, the two
+separate cleanly.
+
+All three checks walk chart cells. They did not at first, and that mattered: a
+chart of dice scores is nearly invisible to a word count, because tokenising
+`6+/2+` yields `6` and `2` — digits that occur in abundance elsewhere and cancel
+out. The rulebook's to-hit chart was being rendered as a row of bold headings
+while coverage reported nothing missing.
+
+All three also need the source PDFs, which are not in this repository, so they
+answer "is this book faithful to what it came from" and can only be run by
+someone holding the originals. A different question arises far more often once a
+book is in: **did this change move anything it should not have?** Three further
+checks answer that from two renders and nothing else.
+
+`extract/render_text.py` reduces each book to one stream of letters — case
+folded, soft hyphens gone, words rejoined across the line breaks hyphenation put
+in them, every digit and mark discarded — and compares the two. Equality means no
+word moved. The obvious instrument, a word bag, is the wrong one: hyphenation
+shifts with pagination, so an untouched Bretonnia reports 36 words lost and 34
+gained, each of them half of a real word. `extract/render_glyphs.py` asks the
+stronger question, hashing every character's origin, size and font page by page,
+for a change that claims to be invisible on paper. `extract/render_artefacts.py`
+hunts markup that leaked onto the page, and takes `--against` a baseline render
+because the asterisk marking a common item and the footnote markers under a
+weapon table are legitimate — without it the sweep reports two dozen hits on an
+untouched corpus and teaches you to ignore it.
+
+```bash
+python extract/coverage.py "path/to/book.pdf" build/lizardmen/3.0.json
+python extract/welds.py build/lizardmen/3.0.json
+python extract/roundtrip.py lizardmen/3.0 --source "path/to/book.pdf"
+```
+
+A fourth gate is about the site rather than a book. `check_site.py` walks a
+built tree and checks two directions: that every internal link resolves, and
+that every PDF is linked from somewhere. The second is the one worth having —
+a book that compiles and publishes but is named by no page has shipped into a
+corner nobody can reach, which no link check going the other way would notice.
+It cannot see a link that resolves to the *wrong* page.
+
+```bash
+python check_site.py _site
+```
+
+**What none of them can see** is worth stating plainly, because it has bitten
+twice. A word bag notices a word *lost*; it does not notice a word *changed*, and
+it is blind to punctuation entirely. Both markup substitutions described above
+passed it, and so did a list item whose leading hyphen was emitted as a `1` in
+nine books at once. Geometry comparison against the previous render is what
+caught those.
+
+Nor can any of them see a change that renders identically and *means* something
+else. Text equality is not structural equality, and neither is glyph equality: an
+item name read as a section's subtitle keeps every word in place, at the same
+coordinates, in the same font, and only the record beneath it is wrong. That has
+happened too — `BEAST SLAYER, THE DRAKWALD` became a subtitle of Empire's
+`MAGIC WEAPONS` heading with `RUNEFANG` orphaned beside it, and every check
+above passed. A claim about structure wants `typst query <meta>`, not the page.
+
+Deliberately dropped from the comparison: each book's cover and its own contents
+page. The rendered books generate their own outline from the headings.
+
+## Two layouts
+
+Chosen from the content, not configured per title: a book with stat blocks is an
+army book, and one without is the rulebook.
+
+| | army books | core rulebook |
+|---|---|---|
+| pagination | every entry opens its own page | sections flow |
+| hierarchy | chapter → entry | chapter → section → subsection |
+| columns | per entry (see below) | single, with wider margins |
+| tables | stat lines, rebuilt from x-coordinates | ruled charts, read directly |
+| diagrams | none (the art is vector) | 46, placed in the flow |
+
+Heading depth is normalised per book rather than fixed to a font size. The army
+books use one display tier below the chapter, so that tier becomes level 2; the
+rulebook uses two (20pt and 16pt), so its larger tier takes level 2 and the
+smaller drops to level 3.
+
+## Known gaps
+
+- **The army books' interior artwork is not carried over.** Their illustrations
+  are vector drawings, not raster images — 13,708 drawing operations in Lizardmen
+  3.0 alone — of which only the parchment background and the cover are
+  extractable. Re-exporting the vector regions is not implemented. Covers *are*
+  carried, into `assets/covers/`. The core rulebook is different: its diagrams
+  are raster with known bounding boxes, so all 46 are placed in the flow at their
+  original proportion of the measure.
+- A multi-line diagram legend in the rulebook merges into one paragraph, since
+  the source separates its lines without a blank line between them.
+- `SACRIFICIAL HEART` in Lizardmen 3.0 has no description. That is a defect in
+  the source PDF, faithfully reproduced.
+
+## Layout
+
+**Every entry opens its own page** — each unit, character and magic-item section
+— so nothing straddles the space left over by whatever preceded it. The one
+exception is an entry consisting of *only* a stat line and a few fields, such as
+a character mount: a page of its own would be almost entirely empty, so these
+share one, set unbreakable so none of them straddles a boundary either.
+
+Entries containing stat blocks are single-column, since an eleven-column table
+cannot survive an 8cm measure and floating it would sever it from its unit.
+Entries above 3,000 characters of prose get two-column setting; shorter ones stay
+single-column so the second column is never left stranded empty. The column
+choice is made per entry rather than per chapter, because each entry has a full
+page of column height to fill or waste.

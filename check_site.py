@@ -1,8 +1,10 @@
 """Check a built site: every link resolves, and every book is reachable.
 
-The site is one page linking a PDF per book by relative path, and a relative
-path is exactly the thing that breaks silently: a dead href renders as a link,
-publishes as a link, and only fails when somebody clicks it.
+The site was one page for as long as it had one book per army. It is now an
+overview, a page per army and the editions' shelf, cross-linked by relative
+path, and a relative path is exactly the thing that breaks silently: a dead
+href renders as a link, publishes as a link, and only fails when somebody
+clicks it.
 
 Two directions, because they catch different failures.
 

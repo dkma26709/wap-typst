@@ -1358,9 +1358,10 @@
   // `compact` is the character mount: a stat line and two fields, which would
   // leave a page of its own empty, so it shares one.
   //
-  // `solo` opens a page of its own. Reserved for special characters, where the
-  // entry is the spread - a named lord with his own art, his own magic items and
-  // half a page of rules - and starting him halfway down a page under someone
+  // `solo` opens a page of its own. Reserved for special characters and for
+  // Regiments of Renown, where the entry is the spread - a named lord with his
+  // own art, his own magic items and half a page of rules, or a named thing
+  // there is only one of - and starting it halfway down a page under someone
   // else's options loses that.
   //
   // Everything else flows. Entries follow one another down the page and a new

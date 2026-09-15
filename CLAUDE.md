@@ -60,6 +60,22 @@ python extract/to_upgrades.py lizardmen/3.0
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json   # words lost
 python extract/welds.py build/lizardmen.json                         # words welded
 python extract/roundtrip.py lizardmen --source "path/to/book.pdf"    # rendered PDF vs source
+# Edition promises, checked against rendered PDFs (compile both first).
+# A House edition must write every change up in its TOML; a Proposals edition
+# must leave the body alone, and derives from the House book where one exists,
+# so that is the parent to compare it against - not the base book.
+python extract/check_editions.py out/lizardmen/3.0-house.pdf out/lizardmen/3.0.pdf
+python extract/check_editions.py out/rulebook/3.11-proposal.pdf   out/rulebook/3.11-house.pdf --identical-body
+
+# The edition as one JSON for an army builder, and its own check.
+python export.py --check
+
+# Did a change move anything it should not have? These read only two renders -
+# no source PDFs - so unlike the three gates above, anyone can run them. Render
+# the corpus before and after the change into two directories, then:
+python extract/render_text.py out-before out-after     # no word lost or gained
+python extract/render_glyphs.py out-before out-after   # no glyph moved at all
+python extract/render_artefacts.py out-after/*/*.pdf --against out-before
 ```
 
 `batch.py` skips a book whose JSON is newer than its PDF; `--force` re-extracts.
@@ -173,9 +189,14 @@ assumed:
   the `<meta>` inventory `typst query` reads out of the two renders. A gate that
   cannot see the new shape reports a clean conversion as a loss, so widen the
   gate before believing it.
-- Changed `#book-meta`, or added/removed/renamed a book → `python emit.py`, then
+- Changed extracted prose or any escaping → `render_artefacts.py --against` the
+  previous render. Without `--against` it reports the corpus's own footnote
+  asterisks and teaches you to ignore it.
+- Changed `#book-meta`, added/removed/renamed a book **or an entry, or edited
+  an `editions/*/<army>/<version>.toml`** → `python emit.py`, then
   `python build.py --site && python check_site.py _site`, and commit the
-  resulting pages and `build/render.json`.
+  resulting pages and `build/render.json`. The pages count entries out of the
+  books and change tallies out of those TOMLs, so both move with no book added.
 - Changed an edition's body → recompile it and its parent and run
   `check_editions.py`. A House edition's parent is its base book; a Proposals
   edition's is the House book where one exists.

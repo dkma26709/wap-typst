@@ -234,6 +234,13 @@ def block_lines(block: dict, neighbours: tuple, figures: str) -> list[str]:
         return [f"#chart({arr(rows)})"]
 
     if kind == "figure":
+        # An import takes no pictures out of the PDF unless batch.py was asked
+        # for them, so the file this would place may not be in the repository at
+        # all - and Typst fails on a missing image rather than leaving a gap.
+        # The rules text is unaffected: what these place are diagrams of unit
+        # bases, and the words explaining them are in the prose either way.
+        if not (ROOT / figures.lstrip("/") / block["file"]).exists():
+            return []
         return [f"#diagram({lit(figures + '/' + block['file'])}, {block['fraction']})"]
 
     raise SystemExit(f"to_book: unhandled block type {kind!r}")
@@ -261,7 +268,10 @@ def wrap(lines: list[str], columns: bool) -> list[str]:
     return ["#columns(2)["] + inner + ["]"]
 
 
-META_KEYS = ("slug", "army", "version", "layout", "cover", "align")
+# No `id`: a book's id is its path under src/, so stating it in the metadata
+# could only ever disagree with where the file actually is.
+META_KEYS = ("slug", "army", "version", "layout", "cover", "align", "shelf",
+             "authored", "base", "edition")
 
 
 def book_meta(book: dict) -> list[str]:
@@ -285,18 +295,23 @@ HEAD = [
 ]
 
 
-def render(data: dict, book: dict) -> str:
-    figures = f"/assets/figures/{book['slug']}"
+def render(data: dict, book: dict, edition: dict | None = None) -> str:
+    figures = f"/assets/figures/{book['slug']}/{book['version']}"
     rules = book.get("layout") == "rules"
 
     lines = [line.format(army=book["army"], version=book["version"])
              for line in HEAD]
-    lines += ["", '#import "template.typ": *', ""]
+    # A book sits one folder down, at src/<army>/<version>.typ.
+    lines += ["", '#import "../template.typ": *', ""]
     lines += book_meta(book)
-    lines += ["", emit.front_matter(book).rstrip()]
+    lines += ["", emit.front_matter(book, edition).rstrip()]
 
+    # A heading is markup, so it is escaped like any other prose. That went
+    # unnoticed for 44 books because no heading in them held a sigil; the 2.32
+    # rulebook has `ARMOUR PIERCING (*)`, where the lone asterisk opens a strong
+    # emphasis that never closes and the whole book fails to compile.
     for chapter in data["chapters"]:
-        lines += ["", f"= {chapter['title']}", ""]
+        lines += ["", f"= {esc(chapter['title'])}", ""]
         intro = chapter.get("intro", [])
         if intro:
             body = blocks_lines(intro, figures)
@@ -307,7 +322,7 @@ def render(data: dict, book: dict) -> str:
             if rules:
                 # The rulebook flows: a section takes a heading at its own depth
                 # and nothing claims a page of its own.
-                lines.append("=" * entry.get("level", 2) + " " + entry["name"])
+                lines.append("=" * entry.get("level", 2) + " " + esc(entry["name"]))
                 lines += body
                 continue
             body = wrap(body, two_column(entry["blocks"]))
@@ -326,30 +341,101 @@ def render(data: dict, book: dict) -> str:
     return chr(10).join(out).strip() + chr(10)
 
 
+ALIGN = re.compile(r'^\s*align:\s*"([^"]+)"', re.M)
+
+
+def inherited_align(slug: str) -> str | None:
+    """The allegiance another version of this army was given.
+
+    A book's allegiance comes from the rulebook's Alliance & Alignment lists
+    rather than from its own text, so a PDF cannot supply it and emit.py refuses
+    a book without one. Where we already hold a version of the army, the answer
+    has been settled once and need not be typed again.
+    """
+    for sibling in sorted((ROOT / "src" / slug).glob("*.typ")):
+        found = ALIGN.search(sibling.read_text(encoding="utf-8"))
+        if found:
+            return found.group(1)
+    return None
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("slug")
+    ap.add_argument("book", help="a book's id, `lizardmen/1.64`, or just the "
+                                 "army where the manifest holds one version")
     ap.add_argument("--manifest", type=Path, default=ROOT / "build" / "books.json")
     ap.add_argument("-o", "--out", type=Path,
-                    help="defaults to src/<id>.typ")
+                    help="defaults to src/<army>/<version>.typ")
+    ap.add_argument("--force", action="store_true",
+                    help="overwrite a book that is already imported, discarding "
+                         "every edit made to it since")
     args = ap.parse_args()
 
     books = json.loads(args.manifest.read_text(encoding="utf-8"))["books"]
-    book = next((b for b in books if b["slug"] == args.slug), None)
+    for entry in books:
+        entry.setdefault("id", f"{entry['slug']}/{entry['version']}")
+
+    # An army names its book while we hold one version of it, which is most of
+    # them; once we hold more it does not, and answering with whichever came
+    # first in the file would import the wrong book under the right name.
+    book = next((b for b in books if b["id"] == args.book), None)
     if book is None:
-        raise SystemExit(f"to_book: {args.slug} is not in the manifest")
-    book = dict(book, id=book["slug"])
-    source = ROOT / "build" / f"{args.slug}.json"
+        matches = [b for b in books if b["slug"] == args.book]
+        if len(matches) > 1:
+            raise SystemExit(
+                f"to_book: {args.book} is {len(matches)} books in the manifest - "
+                f"name one: {', '.join(sorted(b['id'] for b in matches))}")
+        if not matches:
+            raise SystemExit(f"to_book: {args.book} is not in the manifest")
+        book = matches[0]
+
+    source = ROOT / "build" / f"{book['id']}.json"
     if not source.exists():
         raise SystemExit(f"to_book: {source} does not exist")
 
     data = json.loads(source.read_text(encoding="utf-8"))
-    out = (args.out or ROOT / "src" / f"{book['slug']}.typ").resolve()
+    # The army is the folder and the version is the file, so importing a second
+    # version of a book lands beside the first rather than on top of it.
+    out = (args.out or ROOT / "src" / book["slug"] / f"{book['version']}.typ")
+    out = out.resolve()
+
+    # A book is imported once and owned by hand from then on, so this is the
+    # one command in the pipeline that can destroy work. It used to write
+    # whatever was there.
+    if out.exists() and not args.force:
+        where = out.relative_to(ROOT).as_posix() if out.is_relative_to(ROOT) else out
+        raise SystemExit(
+            f"to_book: {where} is already imported. Every edit made to it since "
+            f"would be lost, so this refuses rather than asks. Import a "
+            f"different version, or pass --force if overwriting is the intent.")
+
+    # Another version of the same army has already been given its allegiance.
+    align = book.get("align") or inherited_align(book["slug"])
+    if align:
+        book = dict(book, align=align)
+
+    out.parent.mkdir(parents=True, exist_ok=True)
     text = render(data, book)
     out.write_text(text, encoding="utf-8", newline=chr(10))
     entries = sum(len(c["entries"]) for c in data["chapters"])
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}  {len(text.splitlines())} lines, "
           f"{len(data['chapters'])} chapters, {entries} entries")
+    # The rulebook has no allegiance and is not asked for one, so saying it is
+    # missing would be a false alarm on the one book that cannot have it.
+    if align:
+        print(f"allegiance: {align}")
+    elif book.get("layout") != "rules":
+        print("allegiance: NONE - add align: to the book, emit.py will refuse it")
+
+    # Said rather than left to be noticed: a diagram the source places and this
+    # book does not is a visible difference from the PDF, whatever the reason.
+    wanted = sum(1 for c in data["chapters"]
+                 for pool in [c.get("intro", [])] + [e["blocks"] for e in c["entries"]]
+                 for b in pool if b["type"] == "figure")
+    dropped = wanted - text.count("#diagram(")
+    if dropped:
+        print(f"diagrams: {dropped} of {wanted} not placed - their images are "
+              f"not in assets/. Re-run batch.py --art to take them.")
 
 
 if __name__ == "__main__":
