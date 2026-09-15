@@ -18,13 +18,19 @@ it: Dwarfs should feel like Dwarfs, Skaven like Skaven.
 
 ## The books
 
-Thirty army books and the core rulebook, published as PDFs at
-[anders1222.github.io/warhammer-armies-revamped](https://anders1222.github.io/warhammer-armies-revamped/).
+Sixty-four books, published as PDFs to GitHub Pages: thirty-three armies and
+the core rulebook, most of them in more than one version, and eleven editions
+of our own.
 
-Version 1.0 of every book is the Warhammer Armies Project text, re-typeset:
-the same rules, army lists and points values, in a new layout with new cover
-art. The changes that make this its own edition come from here on, book by
-book, and each book's colophon names the version of the source it builds on.
+The site leads with those eleven — the **house rules** we play and the
+**proposals** we are still arguing about — because they are what the project
+is for. The Armies Project itself is a click away under `/library/`, every
+army and every version we hold of it, re-typeset and otherwise untouched: the
+same rules, army lists and points values, in a new layout with new cover art.
+
+Which a reader is holding is never a guess. A book that reproduces its source
+says so in its colophon; one that departs from it says that instead, and names
+the version of the source it builds on.
 
 ## Attribution
 
@@ -42,14 +48,18 @@ the split and what each grant covers.
 
 ## Working on the books
 
-Each book is one [Typst](https://typst.app) file in `src/`, importing the
-shared template. Editing a rule or a points value means editing that file and
-recompiling; nothing generates it and nothing else holds a copy.
+Each book is one [Typst](https://typst.app) file at `src/<army>/<version>.typ`,
+importing the shared template. Editing a rule or a points value means editing
+that file and recompiling; nothing generates it and nothing else holds a copy.
+An edition sits beside the book it derives from — `src/lizardmen/3.0-house.typ`
+next to `src/lizardmen/3.0.typ` — so a change is a `git diff`.
 
 ```bash
-python build.py            # compile every book into out/
-python build.py skaven     # or one
-python emit.py             # rebuild the site index after adding or renaming a book
+python build.py                # compile every book into out/
+python build.py skaven/3.0     # or one, by its id
+python build.py --site         # and assemble _site/ as the workflow does
+python emit.py                 # rebuild the pages and build/render.json
+python check_site.py _site     # every link resolves, every book reachable
 ```
 
 [CLAUDE.md](CLAUDE.md) documents the template, the import pipeline and the

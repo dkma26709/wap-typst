@@ -6,11 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Warhammer Armies Revamped (WAR): a new edition of Warhammer fantasy battles,
 built on the Warhammer Armies Project army books, which were re-typeset from
-their published PDFs into Typst and are published to GitHub Pages.
-`README.md` is being rewritten for the new edition and is empty for now; the
-old README, which explained *why* the pipeline is shaped the way it is, is in
-git history at commit f40f962. This file covers what you need to work in the
-repo without re-deriving it.
+their published PDFs into Typst and are published to GitHub Pages. The site
+leads with our own editions and holds the Armies Project entire under
+`/library/`. `README.md` states the edition's purpose and its tenets; this
+file covers what you need to work in the repo without re-deriving it.
 
 ## Commands
 
@@ -23,14 +22,14 @@ manifest and no test suite; the verification scripts below are the tests.
 # It is what CI does, with the same two flags, so a local render is the one
 # that will publish. A compile error stops it with the diagnostic, exit 1.
 python build.py
-python build.py skaven dwarfs     # two books
-python build.py --site            # and assemble _site/ for check_site.py
+python build.py skaven/3.0 dwarfs/3.11   # two books, by id
+python build.py --site                   # and assemble _site/ for check_site.py
 
 # Compile one book by hand. Both flags matter: --ignore-system-fonts makes the
 # local render byte-identical to CI's, --root . resolves the /assets paths.
-typst compile --ignore-system-fonts --root . src/lizardmen.typ out/lizardmen.pdf
+typst compile --ignore-system-fonts --root . src/lizardmen/3.0.typ out/lizardmen.pdf
 
-# Rebuild site/index.html and build/render.json from the books in src/.
+# Rebuild the site's pages and build/render.json from the books in src/.
 # Run this after adding, removing or renaming a book, or changing its
 # #book-meta — CI walks render.json and compiles nothing that is not in it.
 python emit.py
@@ -38,10 +37,11 @@ python emit.py
 # Import a new book (one-off, needs the source PDF; see "Never re-import").
 python extract/batch.py "path/to/Rules" "path/to/Warhammer - Lizardmen 3.0.pdf"
 python extract/to_book.py lizardmen
-# to_book.py still writes the #entry/#field sequence form. This rewrites those
-# entries as #unit(..) records; it renders identically, so the check is a
-# byte-compare of the PDF before and after.
-python extract/to_records.py src/lizardmen.typ
+# to_book.py writes the #entry/#field sequence form. These rewrite it as
+# records: the unit entries first, then the faction-upgrade chapter if the book
+# has one. Both keep every word, so the check is render_text.py either side.
+python extract/to_records.py src/lizardmen/3.0.typ
+python extract/to_upgrades.py lizardmen/3.0
 
 # The three verification gates. Zero tolerance on all of them.
 python extract/coverage.py "path/to/book.pdf" build/lizardmen.json   # words lost
@@ -53,25 +53,32 @@ python extract/roundtrip.py lizardmen --source "path/to/book.pdf"    # rendered 
 
 ## Architecture
 
-**`src/*.typ` is the source of truth and nothing regenerates it.** Each book is
-one self-contained Typst file — front matter, metadata, colophon, every entry —
-importing `src/template.typ`. There is no intermediate representation to keep
-in step, no manifest listing the books, and no generator to re-run. Adding a
-unit means copying the entry above it and editing the values.
+**`src/<army>/<version>.typ` is the source of truth and nothing regenerates
+it.** Each book is one self-contained Typst file — front matter, metadata,
+colophon, every entry — importing `src/template.typ`. The army is the folder
+and the version is the file, so `src/lizardmen/1.6.typ` and
+`src/lizardmen/3.0.typ` are two books of one army, and an edition sits beside
+its base as `3.0-house.typ`. A book's **id** is that path without the suffix —
+`lizardmen/3.0` — and is what render.json, the PDF and the site all use. There
+is no intermediate representation to keep in step, no manifest listing the
+books, and no generator to re-run. Adding a unit means copying the entry above
+it and editing the values.
 
 Three things read *out* of that, none write back into it:
 
-- **`emit.py`** runs `typst eval` against every `src/*.typ`, querying each
-  book's `<book-meta>` and counting its own headings, and writes
-  `site/index.html` and `build/render.json`. `site/index.html` is **generated
-  output** — edit `emit.py` and `site/style.css` (which it inlines), never the
-  HTML. Books declare their own allegiance, so emit fails loudly on a book with
-  no `align:` rather than silently filing it nowhere.
+- **`emit.py`** runs `typst eval` against every book, querying its
+  `<book-meta>` and counting its own headings, and writes the site's pages and
+  `build/render.json`. Those pages are **generated output** — edit `emit.py`
+  and `site/style.css` (which it inlines), never the HTML. The front page is
+  our own editions; `/library/` is the Armies Project entire; and each army has
+  a page of its own listing every version. Books declare their own allegiance,
+  so emit fails loudly on a book with no `align:` rather than silently filing
+  it nowhere.
 - **`.github/workflows/publish.yml`** walks `build/render.json` on push to
   `main` and compiles each id with the same two flags as above. It has only the
   Typst compiler — no Python, and never the source PDFs — so anything Python
   produces must be committed before it can ship.
-- **`extract/rule_nodes.py` / `item_nodes.py`** parse `src/rulebook.typ` into
+- **`extract/rule_nodes.py` / `item_nodes.py`** parse `src/rulebook/*.typ` into
   memory-graph nodes for an external consumer. They preserve hand-written
   `## Traps` sections across regeneration — don't clobber those.
 
@@ -80,11 +87,38 @@ the PDFs, `batch.py` orchestrates extract → coverage → welds into `build/`, 
 `to_book.py` is the separate deliberate step that writes Typst, escaping the PDF
 prose as it goes.
 
+**Editions** are forks kept in git: `src/lizardmen/3.0-house.typ` beside
+`src/lizardmen/3.0.typ`, so a change is a `git diff` and an upstream release is
+a three-way merge. `editions/<slug>/edition.toml` holds the edition's identity
+and colophon; `editions/<slug>/<army>/<version>.toml` records each change and
+why. Those TOMLs are what the site's tallies are read from, and they are the
+only place the reasoning is written down — the books themselves no longer carry
+a changelog chapter, so a change is stated in the record and applied in the
+body, and nowhere else.
+
+There are two editions. **House** is the rules we play, and its colophon warns
+that the body has been altered and the alterations are not marked. **Proposals**
+promises the opposite — an identical body to its parent, with the proposals set
+out in their own chapter at the back, none of them in force. A House edition's
+parent is its base book; a Proposals edition's is the House book where one
+exists. `extract/check_editions.py` holds both to their promise: a Proposals book's body
+must match its parent's exactly, and every word a House book adds to or removes
+from its base must appear in its TOML. The record is the only place a change is
+written down now, so a change made and not recorded fails there.
+
 ## Invariants worth not breaking
 
 - **IMPORTANT: never run `to_book.py` against a slug that already has a file in
   `src/`.** It overwrites, and a book is hand-owned from the moment it is
-  imported, so re-importing silently throws away every edit since.
+  imported, so re-importing silently throws away every edit since — including
+  the edition forks derived from it.
+- **A book states what it is in records, not in markup.** Units, magic items,
+  spells, faction upgrades, army special rules, weapons, scenarios and troop
+  types are all record calls that publish a `<meta>` marker and let the template
+  decide how they look. `#namecost` remains the head primitive those records are
+  drawn with, and a book calls it directly only for prose sub-headings — the
+  rulebook's four hundred. Reaching for it where a record exists puts the thing
+  on the page and outside every query.
 - **Smart quotes stay off** (`set smartquote(enabled: false)` in `book()`), and
   hyphens before digits are handled at import. Typst would otherwise curl every
   apostrophe and turn `-1` into a minus sign in text the colophon promises is
@@ -105,10 +139,24 @@ There is no test suite, so verification is per-change and must be run, not
 assumed:
 
 - Changed a book or `template.typ` → `python build.py` and confirm exit 0. A
-  template change affects all 31 books, and the whole corpus takes seconds, so
+  template change affects all 64 books, and the whole corpus takes seconds, so
   build all of it rather than the one book you touched.
-- Changed `#book-meta`, or added/removed/renamed a book → `python emit.py`, and
-  commit the resulting `site/index.html` and `build/render.json`.
+- Restated something without meaning to change it → render the corpus before and
+  after, then `render_text.py` on the two directories. It is the gate that has
+  caught every real loss in this repo: an item dropped, a heading gone from the
+  contents page, a chapter title lost. Blind to pagination by design.
+- Restructured a chapter — markup to records, or records to other records → the
+  page is *meant* to move, so `render_text` is the wrong instrument and
+  `render_glyphs` more so. What matters is that nothing left the book: compare
+  the `<meta>` inventory `typst query` reads out of the two renders. A gate that
+  cannot see the new shape reports a clean conversion as a loss, so widen the
+  gate before believing it.
+- Changed `#book-meta`, or added/removed/renamed a book → `python emit.py`, then
+  `python build.py --site && python check_site.py _site`, and commit the
+  resulting pages and `build/render.json`.
+- Changed an edition's body → recompile it and its parent and run
+  `check_editions.py`. A House edition's parent is its base book; a Proposals
+  edition's is the House book where one exists.
 - Changed anything under `extract/` → the gates need the source PDFs, which are
   not in the repo. If you don't have them, say so rather than reporting the
   change as verified.
