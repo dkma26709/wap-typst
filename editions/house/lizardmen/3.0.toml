@@ -163,3 +163,49 @@ The Arcanadon carries a bound spell and a crew of Skinks, and is priced as a pla
 rather than as a charge. Impact Hits belong to the Stegadon beside it, which is the \
 entry built to run into things.
 """
+
+
+
+[[change]]
+id      = "skink-cohort-spawn-kin"
+title   = "The Cohort gets its Kroxigor back"
+chapter = "CORE UNITS"
+entry   = "SKINK COHORT"
+op      = "insert-after"
+why     = """
+3.0 has no combined unit of the two, and the earlier line of the book did: a \
+Skink Cohort could take one Kroxigor for every eight Skinks, the Kroxigor \
+standing in the second rank and fighting over the heads of the Skinks in \
+front. The rule comes over as it was written, and it asks for nothing this \
+book does not already have — the Kroxigor is the Special Units entry at its \
+printed cost, with no profile, price or option of its own; the sentences that \
+seat it in the second rank and pull it forward when the front rank thins are \
+the ones this book already uses for Tetto'eko's palanquin; and counting the \
+unit's ranks as though the big bases were Skinks is how the rulebook already \
+seats a character on a larger base.
+
+Two words of the earlier text did have to change. Its "mixed unit" becomes \
+"combined unit", because Mixed Unit is a named rule in this edition's rulebook \
+and arrives with handlers attached, which is not what this is. Its Stomp \
+clause gains a clause, because a Stomp here may only target a unit whose \
+models have a Line of Sight value of 1 or less, and a single Kroxigor would \
+otherwise lift the whole Cohort out of a Monstrous Creature's reach.
+"""
+
+original = """SPECIAL RULES: Aquatic, Cold-blooded, Natural Armour (6+)"""
+
+new = """
+The entry gains the Spawn-kin rule beneath its special rules:
+
+## Spawn-kin
+
+Skink Cohorts may include one Kroxigor for every eight Skinks to form a combined unit. Kroxigor in the unit use the Kroxigors entry from Special Units in every respect, at its printed cost. When a combined unit deploys or reforms, these Kroxigor must be placed in the unit's second rank, displacing Skink models as necessary to the back rank. When deploying or reforming a combined unit, the width of the unit's front rank cannot be less than that of its second rank. If no more Kroxigor can fit in the unit's second rank, place the remaining Kroxigor in subsequent ranks. If the unit's front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).
+
+Whenever you are required to work out the combined unit's frontage or ranks (and therefore supporting attacks and rank bonus) count as if the footprint of the entire combined unit was filled with Skinks.
+
+Unless otherwise stated, close combat attacks can only target Kroxigor within a combined unit if an enemy model is either in base contact with a Kroxigor, or if an enemy model is in base contact with a Skink who is in turn in base contact with a Kroxigor. For the purposes of Stomp the unit counts as consisting of Skinks, and Stomp hits are always resolved against the Skinks (if all the Skinks are slain, any excess hits are lost). Missile and Impact Hits against a Skink Cohort that contains one or more Kroxigor are randomised by rolling a D6; on a 1-4, the hit is resolved against a Skink, on a 5-6 it is resolved against a Kroxigor. Casualties are always taken from the rearmost rank of the appropriate model type.
+
+and one line among its options:
+
+- May include one Kroxigor for every eight Skinks in the unit +47 points/model
+"""
