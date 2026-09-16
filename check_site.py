@@ -80,6 +80,14 @@ def main() -> None:
     orphans = [p.relative_to(root).as_posix()
                for p in sorted(root.rglob("*.pdf")) if p not in linked]
 
+    # And the same the other way for pages. The front page is the way in and is
+    # linked by nothing above it; everything else has to be reachable, or it has
+    # published into a corner with no route to it - which is exactly what an
+    # extended page would do if the listing that names it were ever dropped.
+    orphans += [p.relative_to(root).as_posix()
+                for p in pages
+                if p not in linked and p != root / "index.html"]
+
     print(f"{len(pages)} pages, {links} internal links, "
           f"{len(list(root.rglob('*.pdf')))} books")
 
@@ -88,7 +96,7 @@ def main() -> None:
         for page, raw in dead[:20]:
             print(f"  {page} -> {raw}")
     if orphans:
-        print(f"\n{len(orphans)} book(s) no page links to:")
+        print(f"\n{len(orphans)} file(s) no page links to:")
         for name in orphans[:20]:
             print(f"  {name}")
 

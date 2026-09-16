@@ -1540,6 +1540,83 @@
   _record-chapter("troop-type", TROOP_TYPE_FIELDS, name, named.named())
 }
 
+// --- proposals --------------------------------------------------------------
+//
+// A proposal is an argument rather than a change: nothing it describes is in
+// force, it anchors on nothing, and the books it would alter are untouched by
+// it. It is a record for the reason a unit entry is - so the document can be
+// counted and read without a regex over its markup.
+//
+// Only the summary is required, and it is required by being the body rather
+// than by an assert. The four sections under it are the shape a proposal
+// usually wants and not a form to be filled in: a proposal is read whole, so a
+// section carrying nothing reads worse than the same proposal without it. They
+// print in this order whichever order they are written.
+
+// Where this project publishes. A PDF has no relative base - a reader opens it
+// from a downloads folder, not from the site - so a link out of one has to be
+// absolute, and this is the only place in the repository that address is
+// written down. Read off the repository's Pages settings rather than derived:
+// `cname` is null, so the project-site form is the live one. If a custom domain
+// is ever set, this line is what has to move with it, and no gate can catch it
+// - check_site.py walks the built tree and can verify a path, never a host.
+#let SITE_URL = "https://dkma26709.github.io/wap-typst/"
+
+#let PROPOSAL_STATUS = ("under discussion", "talking point")
+
+// In print order, which is also the order a proposal is argued: what it would
+// do, why, what is said against it, what it would cost, and what it looks like.
+#let PROPOSAL_SECTIONS = (
+  ("why", "Why"),
+  ("against", "The argument against"),
+  ("cost", "What it would take"),
+  ("examples", "For example"),
+)
+
+#let proposal(name, status: "under discussion", why: none, against: none,
+              cost: none, examples: none, page: none, body) = {
+  let where = "proposal " + name
+  assert(status in PROPOSAL_STATUS,
+    message: where + ": status is one of " + PROPOSAL_STATUS.join(", ")
+      + " - not " + repr(status))
+  // A slug, because it is half of a URL and the name of a file. Anything else
+  // would publish to an address nobody could type.
+  if page != none {
+    assert(type(page) == str and page.match(regex("^[a-z0-9]+(-[a-z0-9]+)*$")) != none,
+      message: where + ": page is a lower-case slug like \"initiative\" -"
+        + " not " + repr(page))
+  }
+
+  let given = (why: why, against: against, cost: cost, examples: examples)
+
+  [#metadata((
+    kind: "proposal", name: name, status: status, summary: body,
+    why: why, against: against, cost: cost, examples: examples, page: page,
+  ))<meta>]
+  // The same head the proposals were drawn with before they were records, so
+  // nothing moves on the page: the name at the left, the status at the right,
+  // where a magic item puts its price.
+  namecost(name, status, above: RECORD_GAP)
+  body
+  for (key, label) in PROPOSAL_SECTIONS {
+    if given.at(key) != none {
+      field(label, "")
+      given.at(key)
+    }
+  }
+  // The working that would swamp the proposal if it were printed here: the
+  // survey a claim was measured from, the per-book tables. Set as the address
+  // in full rather than as a word carrying a link, because the commonest way
+  // to read this is on paper, where a link is a dead end and a URL is not.
+  if page != none {
+    let url = SITE_URL + "proposals/" + page + "/"
+    block(above: 0.6em, below: 0.2em, {
+      set text(size: 9pt)
+      [The working behind this, in full: #link(url)[#url]]
+    })
+  }
+}
+
 // --- front matter -----------------------------------------------------------
 
 // What the site needs to know about a book and cannot read off its pages:
@@ -1548,11 +1625,18 @@
 // `align` never shadows Typst's own function inside this scope.
 #let BOOK_META_REQUIRED = ("slug", "army", "version", "layout")
 #let BOOK_META_OPTIONAL = ("cover", "align", "shelf", "authored",
-                          "id", "base", "edition")
+                          "id", "base", "edition", "kind")
 
 // An extracted book takes its allegiance from the rulebook's Alliance &
 // Alignment lists at import time; anything absent here simply has none.
-#let BOOK_META_DEFAULTS = (shelf: "base", authored: false)
+//
+// `kind` separates the two things in src/ that are not the same shape. A
+// "book" is an army or the rules, belongs to an army, and has versions to
+// choose between. A "document" is ours, belongs to no army, derives from no
+// book and stands alone - the proposals are the first - so it takes a card on
+// the front page and no place in the library, which reproduces the Armies
+// Project and nothing else.
+#let BOOK_META_DEFAULTS = (shelf: "base", authored: false, kind: "book")
 
 #let book-meta(..named) = {
   assert(named.pos().len() == 0,

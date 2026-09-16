@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Initiative Ladder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:      #f7f8fa;
+    --raise:       #ffffff;
+    --sink:        #eef1f5;
+    --ink:         #14181f;
+    --ink-2:       #4a5261;
+    --ink-3:       #7b8494;
+    --rule:        #c9d0da;
+    --rule-soft:   #dfe4ea;
+    --accent:      #2f5d7c;
+    --accent-soft: #dce8f0;
+    --up:          #2e6b4f;
+    --up-soft:     #dcece3;
+    --down:        #8a4b2a;
+    --down-soft:   #f2e3d9;
+    --serif: "Spectral", Georgia, "Times New Roman", serif;
+    --mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+    --measure: 64ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #12151b;
+      --raise:       #1a1e26;
+      --sink:        #0d1015;
+      --ink:         #e6e9ef;
+      --ink-2:       #a2abbb;
+      --ink-3:       #6f7889;
+      --rule:        #333a46;
+      --rule-soft:   #262c36;
+      --accent:      #7fb4d6;
+      --accent-soft: #1d2c38;
+      --up:          #74c39b;
+      --up-soft:     #172a21;
+      --down:        #d59a72;
+      --down-soft:   #2c1f17;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:      #12151b;
+    --raise:       #1a1e26;
+    --sink:        #0d1015;
+    --ink:         #e6e9ef;
+    --ink-2:       #a2abbb;
+    --ink-3:       #6f7889;
+    --rule:        #333a46;
+    --rule-soft:   #262c36;
+    --accent:      #7fb4d6;
+    --accent-soft: #1d2c38;
+    --up:          #74c39b;
+    --up-soft:     #172a21;
+    --down:        #d59a72;
+    --down-soft:   #2c1f17;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  h1, h2, h3, h4 { text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: .7rem; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--accent);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); font-weight: 600; line-height: 1.1; margin: .6rem 0 0; }
+  .standfirst { max-width: var(--measure); color: var(--ink-2); margin-top: 1rem; font-size: 1.05rem; }
+
+  /* the stat line - the one device only this subject has */
+  .statline {
+    display: flex; gap: 0; margin: 2.2rem 0 0; overflow-x: auto;
+    border: 1px solid var(--rule); background: var(--raise); width: max-content; max-width: 100%;
+  }
+  .statline div {
+    font-family: var(--mono); font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+    padding: .5rem .85rem; border-right: 1px solid var(--rule-soft); color: var(--ink-3);
+  }
+  .statline div:last-child { border-right: 0; }
+  /* --raise is the page's lightest surface in either theme, so it reads on the accent both ways */
+  .statline div.on { background: var(--accent); color: var(--raise); }
+  .statline-cap { font-family: var(--mono); font-size: .72rem; color: var(--ink-3); margin-top: .5rem; }
+
+  section { margin-top: 3.4rem; }
+  .sec-head { border-top: 2px solid var(--ink); padding-top: .7rem; margin-bottom: 1.4rem; }
+  .sec-head h2 { font-size: 1.45rem; font-weight: 600; }
+  .sec-head p { color: var(--ink-2); max-width: var(--measure); margin-top: .4rem; }
+
+  /* settled decisions */
+  .decisions { display: grid; gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft);
+                grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .decisions > div { background: var(--raise); padding: 1rem 1.1rem; }
+  .decisions dt { font-family: var(--mono); font-size: .68rem; letter-spacing: .14em;
+                   text-transform: uppercase; color: var(--ink-3); }
+  .decisions dd { margin: .35rem 0 0; font-size: 1.5rem; font-family: var(--mono); font-weight: 600;
+                   font-variant-numeric: tabular-nums; }
+  .decisions dd small { font-family: var(--serif); font-size: .82rem; font-weight: 400;
+                         color: var(--ink-2); display: block; line-height: 1.45; margin-top: .2rem; }
+
+  /* the ladder */
+  .ladder { display: flex; flex-direction: column-reverse; gap: 0; }
+  .rung { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1.4rem;
+           padding: 1.3rem 0; border-top: 1px solid var(--rule-soft); }
+  .rung:first-child { border-bottom: 1px solid var(--rule-soft); }
+  .rung-no { font-family: var(--mono); font-size: 2.4rem; font-weight: 600; line-height: 1;
+              color: var(--accent); font-variant-numeric: tabular-nums; text-align: right; }
+  .rung-no .i { font-size: 1rem; color: var(--ink-3); vertical-align: .9rem; margin-right: .1rem; }
+  .rung-body h3 { font-size: 1.1rem; font-weight: 600; }
+  .rung-note { color: var(--ink-2); font-size: .95rem; margin-top: .2rem; max-width: var(--measure); }
+  .chips { list-style: none; padding: 0; margin: .8rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .chip { font-family: var(--mono); font-size: .78rem; padding: .28rem .55rem;
+           border: 1px solid var(--rule); background: var(--raise); color: var(--ink-2);
+           display: inline-flex; align-items: baseline; gap: .35rem; }
+  .chip .was { font-size: .68rem; color: var(--ink-3); }
+  .only { color: var(--accent); font-weight: 600; margin-left: .15rem; }
+  .chip .was::before { content: "was "; }
+  .chip.god { border-style: dashed; }
+
+  /* tables */
+  .scroll { overflow-x: auto; border: 1px solid var(--rule-soft); background: var(--raise); }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th { font-family: var(--mono); font-size: .66rem; font-weight: 600; letter-spacing: .12em;
+        text-transform: uppercase; color: var(--ink-3); text-align: left;
+        padding: .7rem .8rem; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  td { padding: .5rem .8rem; border-bottom: 1px solid var(--rule-soft); }
+  tr:last-child td { border-bottom: 0; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .num.strong { font-weight: 600; color: var(--accent); }
+  .dim { color: var(--ink-3); }
+  .nm { font-weight: 600; white-space: nowrap; }
+  .eg { color: var(--ink-3); font-size: .82rem; }
+  .d { font-family: var(--mono); font-size: .8rem; padding: .1rem .38rem; }
+  .d.up { background: var(--up-soft); color: var(--up); }
+  .d.down { background: var(--down-soft); color: var(--down); }
+  .d.hold { color: var(--ink-3); }
+
+
+  .rule-callout { margin-top: 1.2rem; padding: .9rem 1.1rem; border-left: 3px solid var(--accent);
+                   background: var(--accent-soft); color: var(--ink); font-size: .95rem;
+                   max-width: var(--measure); }
+
+  /* evidence chart */
+  .chart { display: grid; gap: .3rem; }
+  .bar-row { display: grid; grid-template-columns: 2.2rem 1fr 4.2rem; gap: .7rem; align-items: center; }
+  .pair { display: grid; gap: 2px; }
+  .legend { display: flex; gap: 1.2rem; margin-bottom: .8rem; font-family: var(--mono);
+             font-size: .72rem; color: var(--ink-3); }
+  .legend span { display: inline-flex; align-items: center; gap: .4rem; }
+  .sw { width: .85rem; height: .85rem; display: inline-block; }
+  .sw.now { background: var(--rule); }
+  .sw.next { background: var(--accent); }
+  .fill.now { background: var(--rule); }
+  .fill.next { background: var(--accent); }
+  .bv em { display: block; font-style: normal; color: var(--accent); }
+  .proj-caveat { margin-top: .8rem; padding: .8rem 1rem; border-left: 3px solid var(--rule);
+                  background: var(--sink); font-size: .92rem; color: var(--ink-2);
+                  max-width: var(--measure); }
+  .view { font-size: .95rem; font-weight: 600; margin: 2.2rem 0 .3rem; }
+  .view:first-of-type { margin-top: 1.4rem; }
+  .view-note { color: var(--ink-2); font-size: .9rem; margin-bottom: .9rem;
+                max-width: var(--measure); }
+  .proj-note { margin-top: 1.4rem; font-size: .93rem; color: var(--ink-2); max-width: var(--measure); }
+  .shift { display: grid; gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft);
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-top: 1.4rem; }
+  .shift > div { background: var(--raise); padding: .8rem 1rem; }
+  .shift dt { font-family: var(--mono); font-size: .66rem; letter-spacing: .12em;
+               text-transform: uppercase; color: var(--ink-3); }
+  .shift dd { margin: .3rem 0 0; font-family: var(--mono); font-size: 1.05rem; font-weight: 600;
+               font-variant-numeric: tabular-nums; }
+  .shift dd span { color: var(--ink-3); font-weight: 400; }
+  .bl, .bv { font-family: var(--mono); font-size: .76rem; color: var(--ink-3);
+              font-variant-numeric: tabular-nums; }
+  .bv { text-align: right; }
+  .track { background: var(--sink); height: .62rem; }
+  .fill { height: 100%; }
+
+  footer { margin-top: 4rem; border-top: 1px solid var(--rule-soft); padding-top: 1.2rem;
+            color: var(--ink-3); font-size: .84rem; max-width: var(--measure); }
+  code { font-family: var(--mono); font-size: .88em; background: var(--sink); padding: .08rem .3rem; }
+  a { color: var(--accent); }
+  a:focus-visible, li:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  @media (max-width: 600px) {
+    .rung { grid-template-columns: 3.4rem 1fr; gap: .9rem; }
+    .rung-no { font-size: 1.7rem; }
+  }
+</style>
+<style>
+  :root { color-scheme: light dark; }
+  html, body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Warhammer Armies Project · house rules</p>
+    <h1>The Initiative Ladder</h1>
+    <p class="standfirst">
+      Measured from 2,010 profile lines across 32 books: the whole rank-and-file roster
+      currently occupies five rungs of a ten-point scale, and nothing that is not a
+      character sits above I6. This is the proposed spread, with every value the table
+      settled marked as settled and everything else marked as an inference to argue with.
+    </p>
+    <div class="statline" role="img" aria-label="A profile line, with the Initiative column highlighted">
+      <div>M</div><div>WS</div><div>BS</div><div>S</div><div>T</div>
+      <div>W</div><div class="on">I</div><div>A</div><div>Ld</div>
+    </div>
+    <p class="statline-cap">One characteristic of ten. It sets strike order in close combat, and nothing else.</p>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>What is settled</h2>
+      <p>Decided in discussion. Everything downstream is derived from these.</p>
+    </div>
+    <dl class="decisions">
+      <div><dt>Human baseline</dt><dd>5<small>Was 3. Two rungs gained below, four above.</small></dd></div>
+      <div><dt>Top of the living roster</dt><dd>7<small>Elves and Slaaneshi daemons. 8–10 left free.</small></dd></div>
+      <div><dt>Character uplift</dt><dd>+2<small>Flat, not tapered. Biology limits how fast a human can get.</small></dd></div>
+      <div><dt>Printed ceiling</dt><dd>10<small>Weapons and charging may carry effective values past it.</small></dd></div>
+    </dl>
+    <p class="rule-callout"><strong>I1 is reserved.</strong> Nothing living sits there — it is for
+      the actually dead and the animated. A constraint rather than a placement: it forces every
+      living model currently at I1 to move, whatever its bulk.</p>
+    <p class="rule-callout"><strong>A raised beast goes to I1.</strong> A corpse animated by
+      someone else&rsquo;s will has no reactions of its own, whatever it was in life, so a Zombie
+      Dragon or a Bone Hydra drops to the floor rather than keeping its living class&rsquo;s
+      value. Undead that keep their own will — a Vampire, a Wight, a Tomb King — are placed on
+      their own merit instead.</p>
+    <p class="rule-callout"><strong>A baseline is not a cage.</strong> Every number here is where
+      its kind sits by default. An individual creature may deviate from it where the creature
+      earns the difference.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The ladder</h2>
+      <p>Read from the bottom. Forty species. Each chip carries the value it holds today, so the
+         distance travelled is visible at a glance. Daemons are dashed, since they follow their
+         god rather than a species.</p>
+    </div>
+    <div class="ladder">
+      <article class="rung" id="i1">
+        <div class="rung-no"><span class="i">I</span>1</div>
+        <div class="rung-body">
+          <h3>No nervous system</h3>
+          <p class="rung-note">A floor category. Nothing living may sit here, whatever its bulk.</p>
+          <ul class="chips"><li class="chip">Animated Construct<span class="was">1</span></li><li class="chip">Skeleton<span class="was">2</span></li><li class="chip">Zombie<span class="was">1</span></li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i2">
+        <div class="rung-no"><span class="i">I</span>2</div>
+        <div class="rung-body">
+          <h3>Inert or immense</h3>
+          <p class="rung-note">Slow through death, through mass, or through precedent — not through defect.</p>
+          <ul class="chips"><li class="chip">Giant<span class="was">3</span></li><li class="chip">Kroxigor<span class="was">1</span></li><li class="chip">Ogre<span class="was">2</span></li><li class="chip">Saurus<span class="was">2</span></li><li class="chip">Slann<span class='only'>&dagger;</span><span class="was">1</span></li><li class="chip">Troll<span class="was">1</span></li><li class="chip">Wight<span class="was">3</span></li><li class="chip god">Nurgle daemons</li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i3">
+        <div class="rung-no"><span class="i">I</span>3</div>
+        <div class="rung-body">
+          <h3>Stolid and graceless</h3>
+          <p class="rung-note">The rung that did not exist. Deliberate rather than damaged.</p>
+          <ul class="chips"><li class="chip">Chaos Beast<span class="was">2</span></li><li class="chip">Chaos Dwarf<span class="was">2</span></li><li class="chip">Dragon Ogre<span class="was">2</span></li><li class="chip">Dwarf<span class="was">2</span></li><li class="chip">Ghost<span class='only'>&dagger;</span><span class="was">3</span></li><li class="chip">Orc<span class='only'>&lowast;</span><span class="was">2</span></li><li class="chip">Spirit<span class="was">2</span></li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i4">
+        <div class="rung-no"><span class="i">I</span>4</div>
+        <div class="rung-body">
+          <h3>Brutish or small</h3>
+          <p class="rung-note">Aggressive without quickness, or small without speed.</p>
+          <ul class="chips"><li class="chip">Bull Centaur<span class="was">3</span></li><li class="chip">Centigor<span class="was">2</span></li><li class="chip">Elemental<span class="was">3</span></li><li class="chip">Gnoblar<span class="was">3</span></li><li class="chip">Gor<span class="was">3</span></li><li class="chip">Hobgoblin<span class="was">3</span></li><li class="chip">Minotaur<span class="was">3</span></li><li class="chip">Ungor<span class="was">3</span></li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i5">
+        <div class="rung-no"><span class="i">I</span>5</div>
+        <div class="rung-body">
+          <h3>Baseline</h3>
+          <p class="rung-note">The human anchor. Everything is defined against this rung.</p>
+          <ul class="chips"><li class="chip">Ghoul<span class="was">3</span></li><li class="chip">Goblin<span class='only'>&lowast;</span><span class="was">2</span></li><li class="chip">Halfling<span class="was">5</span></li><li class="chip">Human<span class="was">3</span></li><li class="chip">Snotling<span class="was">3</span></li><li class="chip god">Tzeentch daemons</li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i6">
+        <div class="rung-no"><span class="i">I</span>6</div>
+        <div class="rung-body">
+          <h3>Twitchy or predatory</h3>
+          <p class="rung-note">Faster than a man by nature rather than by training.</p>
+          <ul class="chips"><li class="chip">Forest Spirit<span class="was">5</span></li><li class="chip">Harpy<span class="was">5</span></li><li class="chip">Skaven<span class="was">4</span></li><li class="chip">Skink<span class="was">4</span></li><li class="chip">Vampire<span class="was">4</span></li><li class="chip">Werecreature<span class="was">5</span></li><li class="chip">Yhetee<span class="was">4</span></li><li class="chip god">Khorne daemons</li></ul>
+        </div>
+      </article>
+      <article class="rung" id="i7">
+        <div class="rung-no"><span class="i">I</span>7</div>
+        <div class="rung-body">
+          <h3>Supernaturally quick</h3>
+          <p class="rung-note">The top of the living roster. 8–10 is left for weapons, charging and characters.</p>
+          <ul class="chips"><li class="chip">Dark Elf<span class="was">5</span></li><li class="chip">High Elf<span class="was">5</span></li><li class="chip">Wood Elf<span class="was">5</span></li><li class="chip god">Slaanesh daemons</li></ul>
+        </div>
+      </article></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Daemons follow their god</h2>
+      <p>The ordering Nurgle &lt; Tzeentch &lt; Khorne &lt; Slaanesh is already printed in the
+         books — it is simply compressed into two rungs, so Tzeentch and Khorne share one and
+         the gap cannot be expressed.</p>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>God</th><th class="num">Current mode</th><th class="num">Current mean</th>
+          <th class="num">Proposed</th><th class="num">Δ</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="nm">Nurgle</td>
+          <td class="num">2</td>
+          <td class="num dim">3.2</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d hold">—</span></td>
+        </tr>
+        <tr>
+          <td class="nm">Tzeentch</td>
+          <td class="num">4</td>
+          <td class="num dim">4.0</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+        </tr>
+        <tr>
+          <td class="nm">Khorne</td>
+          <td class="num">4</td>
+          <td class="num dim">4.6</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+        </tr>
+        <tr>
+          <td class="nm">Slaanesh</td>
+          <td class="num">5</td>
+          <td class="num dim">5.8</td>
+          <td class="num strong">7</td>
+          <td class="num"><span class="d up">+2</span></td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Beasts and mounts</h2>
+      <p>Placed by nature, not by size &mdash; slower in general, but certainly not all of them,
+         so there is no blanket mass penalty. A mammoth is slow because mass is what it is, and a
+         boar is quick despite it.</p>
+      <p>The reptiles are the test of whether that holds together. Reptile, Draconid and Ophidian
+         are one family and now read as one: <strong>3</strong> for the armoured and slow, a
+         Turtigon or a Karkadrak; <strong>5</strong> for the hunting predators, dragons and wyrms
+         and wyverns; <strong>6</strong> for snakes, which strike faster than either. Three rungs
+         apart at most, ordered by how quickly each one actually strikes.</p>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Class</th><th class="num">Now</th><th class="num">Proposed</th>
+          <th class="num">&Delta;</th><th class="num">Lines</th><th>Covers</th>
+          <th>Undead members</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="nm">Crustacean</td>
+          <td class="num">1</td>
+          <td class="num strong">1</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">5</td>
+          <td class="eg">Deck Gunner, Rotting Leviathan, Rotting Promethean</td>
+          <td class="eg">Deck Gunner, Rotting Leviathan, Rotting Promethean, Zombie Gunner</td>
+        </tr>
+        <tr>
+          <td class="nm">Elephantine</td>
+          <td class="num">2</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">14</td>
+          <td class="eg">Beast Rider, Crew, Ice Mammoth</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Mastodon</td>
+          <td class="num">1</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">2</td>
+          <td class="eg">Crew, Mastodon</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Toad Dragon</td>
+          <td class="num">2</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Toad Dragon</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Vermian</td>
+          <td class="num">1</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Dread Maw</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Bovine</td>
+          <td class="num">3</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">6</td>
+          <td class="eg">Aurochs, Bale Taurus, Fire Bull</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Camelid</td>
+          <td class="num">3</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Camel</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Half Giant</td>
+          <td class="num">3</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Half Giant</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Reptile</td>
+          <td class="num">1</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Crew, Jungle Swarm, Karkadrak</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Rhinocerine</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Beast Rider, Grimhorn Rhinox, Mournfang</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Saurian</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">28</td>
+          <td class="eg">Aggradon, Carnosaur, Cold One</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Ungulate</td>
+          <td class="num">3</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Farm Animal</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Beastman</td>
+          <td class="num">4</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">31</td>
+          <td class="eg">Bagrar the Tamer, Garuda, Gorebull</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Beastmen</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">9</td>
+          <td class="eg">Bestigor, Centigor, Gor</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Fungoid</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Cave Squig, Colossal Squig, Great Cave Squig</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Hominid</td>
+          <td class="num">4</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Gorol</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Porcine</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Bestigor Crew, Brute, Grunta</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Primate</td>
+          <td class="num">2</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Almas</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Ursine</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Bear Tamer, Cragbeast, Great Bear</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Zoat</td>
+          <td class="num">4</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Zoat</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Arachnid</td>
+          <td class="num">2</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+3</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Arachnarok Spider, Forest Goblin, Giant Scorpion</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Canine</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">22</td>
+          <td class="eg">Balewolf, Giant Spinehound, Giant Wolf</td>
+          <td class="eg">Dire Wolf, Scurvy Dog</td>
+        </tr>
+        <tr>
+          <td class="nm">Centaur</td>
+          <td class="num">4</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Centaur</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Cervine</td>
+          <td class="num">4</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Elk, Great Stag, Preyton</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Chimeric</td>
+          <td class="num">4</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">21</td>
+          <td class="eg">Abyssal Terror, Chimera, Cockatrice</td>
+          <td class="eg">Abyssal Terror</td>
+        </tr>
+        <tr>
+          <td class="nm">Draconid</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">17</td>
+          <td class="eg">Black Dragon, Chaos Dragon, Forest Dragon</td>
+          <td class="eg">Necrolith Bone Dragon, Zombie Dragon</td>
+        </tr>
+        <tr>
+          <td class="nm">Equine</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">32</td>
+          <td class="eg">Arabyan Steed, Dark Pegasus, Dark Steed</td>
+          <td class="eg">Hellsteed, Nightmare</td>
+        </tr>
+        <tr>
+          <td class="nm">Human – Jora</td>
+          <td class="num">5</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">2</td>
+          <td class="eg">Bjorn, Jora</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Hydra</td>
+          <td class="num">1</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+4</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">Beastmaster Apprentice, War Hydra</td>
+          <td class="eg">Bone Hydra</td>
+        </tr>
+        <tr>
+          <td class="nm">Phorusrhacid</td>
+          <td class="num">4</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Culchan</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Sea Creature</td>
+          <td class="num">4</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">2</td>
+          <td class="eg">Beastmaster Apprentice, Kharibdyss</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Avian</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">10</td>
+          <td class="eg">Corpseripper Vulture, Flamespyre Phoenix, Frostheart Phoenix</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Avian-Equine</td>
+          <td class="num">5</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Royal Hippogryph</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Chiropter</td>
+          <td class="num">3</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+3</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Bat Swarm, Fell Bat, Vargheist</td>
+          <td class="eg">Terrorgheist</td>
+        </tr>
+        <tr>
+          <td class="nm">Feline</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">9</td>
+          <td class="eg">Beastmaster, Beastmistress, Bengal Tiger</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Feline-avian</td>
+          <td class="num">5</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Celestial Lion</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Ophidian</td>
+          <td class="num">1</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+5</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Amaxon Swamp Python, Coatl, Great Wyrm</td>
+          <td class="eg">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="nm">Rodent</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">6</td>
+          <td class="eg">Giant Rat, Gnaw-beast, Great Pox Rat</td>
+          <td class="eg">Rat Swarm</td>
+        </tr>
+        <tr>
+          <td class="nm">Elf</td>
+          <td class="num">5</td>
+          <td class="num strong">7</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">Aenur, Elf Captain, Elves</td>
+          <td class="eg">&mdash;</td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p class="proj-note">Two things to hold in mind reading this. <strong>A class contains its own
+      undead.</strong> Draconid covers Black Dragon and Zombie Dragon alike, Hydra covers War
+      Hydra and Bone Hydra, Chiropter covers Fell Bat and Terrorgheist &mdash; so the class value
+      is the living form, and the undead members named in the last column drop to the dead rungs
+      instead. And <strong>riders sit in their mount&rsquo;s class</strong>: a Beastmaster
+      Apprentice counts under Hydra, Crew under Mastodon, Beast Rider under Elephantine, because
+      the troop-type line describes the whole entry. So a class&rsquo;s current value is a rougher
+      reading than a species&rsquo;.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The full roster</h2>
+      <p>Forty species, and thirty-nine beast classes in the table above. An asterisk marks a species that gathers its sub-factions — those are cultures of a species, not kinds of it, and they share a rung. A dagger marks the two that appear only inside character entries, so their current value is a character's. Current values are the
+         modal Initiative of non-character Infantry, Cavalry and Monstrous Infantry entries.</p>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Species</th><th class="num">Now</th><th class="num">Proposed</th>
+          <th class="num">Δ</th><th class="num">Lines</th><th>Carried by</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="nm">Animated Construct</td>
+          <td class="num">1</td>
+          <td class="num strong">1</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">19</td>
+          <td class="eg">Ancient Sentinel, Fenbeast</td>
+        </tr>
+        <tr>
+          <td class="nm">Skeleton</td>
+          <td class="num">2</td>
+          <td class="num strong">1</td>
+          <td class="num"><span class="d down">-1</span></td>
+          <td class="num dim">9</td>
+          <td class="eg">Skeletal Steed, Skeleton Archer</td>
+        </tr>
+        <tr>
+          <td class="nm">Zombie</td>
+          <td class="num">1</td>
+          <td class="num strong">1</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">10</td>
+          <td class="eg">Animated Hulk, Bloated Corpse</td>
+        </tr>
+        <tr>
+          <td class="nm">Giant</td>
+          <td class="num">3</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d down">-1</span></td>
+          <td class="num dim">15</td>
+          <td class="eg">Agum the Watcher, Frost Giant</td>
+        </tr>
+        <tr>
+          <td class="nm">Kroxigor</td>
+          <td class="num">1</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">Kroxigor</td>
+        </tr>
+        <tr>
+          <td class="nm">Ogre</td>
+          <td class="num">2</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">45</td>
+          <td class="eg">Bubebolos (Toad Dragon), Bull</td>
+        </tr>
+        <tr>
+          <td class="nm">Saurus</td>
+          <td class="num">2</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">13</td>
+          <td class="eg">Aggradon, Cold One</td>
+        </tr>
+        <tr>
+          <td class="nm">Slann<span class="only">&dagger;</span></td>
+          <td class="num">1</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">6</td>
+          <td class="eg">Slann Mage-Priest, Zlaaq (Stegadon)</td>
+        </tr>
+        <tr>
+          <td class="nm">Troll</td>
+          <td class="num">1</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">9</td>
+          <td class="eg">Dankhold Troll, Dankhold Trollboss</td>
+        </tr>
+        <tr>
+          <td class="nm">Wight</td>
+          <td class="num">3</td>
+          <td class="num strong">2</td>
+          <td class="num"><span class="d down">-1</span></td>
+          <td class="num dim">12</td>
+          <td class="eg">Black Knight, Grave Guard</td>
+        </tr>
+        <tr>
+          <td class="nm">Chaos Beast</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">16</td>
+          <td class="eg">Fomoroid Crusher, Giant Spawn</td>
+        </tr>
+        <tr>
+          <td class="nm">Chaos Dwarf</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">21</td>
+          <td class="eg">Daemonsmith, Devastator</td>
+        </tr>
+        <tr>
+          <td class="nm">Dragon Ogre</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">5</td>
+          <td class="eg">Dragon Ogre</td>
+        </tr>
+        <tr>
+          <td class="nm">Dwarf</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">40</td>
+          <td class="eg">Burlok Damminson, Dwarf</td>
+        </tr>
+        <tr>
+          <td class="nm">Ghost<span class="only">&dagger;</span></td>
+          <td class="num">3</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">The Brine Wife, Vangheist</td>
+        </tr>
+        <tr>
+          <td class="nm">Orc<span class="only">&lowast;</span></td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">35</td>
+          <td class="eg">Common, Savage and Black Orcs</td>
+        </tr>
+        <tr>
+          <td class="nm">Spirit</td>
+          <td class="num">2</td>
+          <td class="num strong">3</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">13</td>
+          <td class="eg">Damned Knight, Hexwraith</td>
+        </tr>
+        <tr>
+          <td class="nm">Bull Centaur</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Bull Centaur, Bull Centaur Render</td>
+        </tr>
+        <tr>
+          <td class="nm">Centigor</td>
+          <td class="num">2</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">Centigor</td>
+        </tr>
+        <tr>
+          <td class="nm">Elemental</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">3</td>
+          <td class="eg">Sea Elemental, Wind Daemon</td>
+        </tr>
+        <tr>
+          <td class="nm">Gnoblar</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">5</td>
+          <td class="eg">Flinger, Groinbiter</td>
+        </tr>
+        <tr>
+          <td class="nm">Gor</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">15</td>
+          <td class="eg">Bestigor, Bray-Shaman</td>
+        </tr>
+        <tr>
+          <td class="nm">Hobgoblin</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">39</td>
+          <td class="eg">Giant Wolf, Great Shaman</td>
+        </tr>
+        <tr>
+          <td class="nm">Minotaur</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">4</td>
+          <td class="eg">Minotaur</td>
+        </tr>
+        <tr>
+          <td class="nm">Ungor</td>
+          <td class="num">3</td>
+          <td class="num strong">4</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">5</td>
+          <td class="eg">Ungor, Ungor Archers</td>
+        </tr>
+        <tr>
+          <td class="nm">Ghoul</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">7</td>
+          <td class="eg">Crypt Ghoul, Crypt Guard</td>
+        </tr>
+        <tr>
+          <td class="nm">Goblin<span class="only">&lowast;</span></td>
+          <td class="num">2</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+3</span></td>
+          <td class="num dim">36</td>
+          <td class="eg">Common, Night and Forest Goblins</td>
+        </tr>
+        <tr>
+          <td class="nm">Halfling</td>
+          <td class="num">5</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d hold">—</span></td>
+          <td class="num dim">29</td>
+          <td class="eg">Archer, Beekeeper</td>
+        </tr>
+        <tr>
+          <td class="nm">Human</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">625</td>
+          <td class="eg">Abdul Alhazred, Alchemist</td>
+        </tr>
+        <tr>
+          <td class="nm">Snotling</td>
+          <td class="num">3</td>
+          <td class="num strong">5</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">1</td>
+          <td class="eg">Snotlings</td>
+        </tr>
+        <tr>
+          <td class="nm">Forest Spirit</td>
+          <td class="num">5</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">26</td>
+          <td class="eg">Dryad, Gossamid Archer</td>
+        </tr>
+        <tr>
+          <td class="nm">Harpy</td>
+          <td class="num">5</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">2</td>
+          <td class="eg">Harpy</td>
+        </tr>
+        <tr>
+          <td class="nm">Skaven</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">64</td>
+          <td class="eg">Brood Horror, Brood Terror</td>
+        </tr>
+        <tr>
+          <td class="nm">Skink</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">21</td>
+          <td class="eg">Chameleon Skink, Great Crested Skink</td>
+        </tr>
+        <tr>
+          <td class="nm">Vampire</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">54</td>
+          <td class="eg">Blood Guard, Blood Knight</td>
+        </tr>
+        <tr>
+          <td class="nm">Werecreature</td>
+          <td class="num">5</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+1</span></td>
+          <td class="num dim">6</td>
+          <td class="eg">Skin Wolf, Ulfjarl</td>
+        </tr>
+        <tr>
+          <td class="nm">Yhetee</td>
+          <td class="num">4</td>
+          <td class="num strong">6</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">2</td>
+          <td class="eg">Rimespeaker, Yhetee</td>
+        </tr>
+        <tr>
+          <td class="nm">Dark Elf</td>
+          <td class="num">5</td>
+          <td class="num strong">7</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">46</td>
+          <td class="eg">Bleaksword, Bloodwrack Medusa</td>
+        </tr>
+        <tr>
+          <td class="nm">High Elf</td>
+          <td class="num">5</td>
+          <td class="num strong">7</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">52</td>
+          <td class="eg">Hawkeye, Mage</td>
+        </tr>
+        <tr>
+          <td class="nm">Wood Elf</td>
+          <td class="num">5</td>
+          <td class="num strong">7</td>
+          <td class="num"><span class="d up">+2</span></td>
+          <td class="num dim">39</td>
+          <td class="eg">Deepwood Scout, Eternal Guard</td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The evidence, and a guess at what follows</h2>
+      <p>Every Initiative value in the corpus — all 2,010 profile lines, characters and large
+         creatures included. Today I3 alone holds 31%, half the corpus sits in I1–I3, and the four
+         rungs from I7 up hold 7.6% between them, of which 147 of 152 lines are characters.</p>
+      <p class="proj-caveat">The second bar is <strong>a projection, not a result.</strong> It
+         remaps the 1,757 lines the ladder, the beast table and the rules below cover, adds the flat +2 to characters,
+         and leaves the other 253 — chariots and war machines, which take their crew&rsquo;s Initiative, and the Tyranids and divine avatars set aside — sitting where
+         they are. So it is right about the species and silent about everything still to be placed.</p>
+    </div>
+    <div class="legend">
+      <span><i class="sw now"></i>today</span>
+      <span><i class="sw next"></i>projected</span>
+    </div>
+
+    <h3 class="view">Troops only &mdash; 1,217 lines</h3>
+    <p class="view-note">Characters excluded, so the baselines stand on their own merit. This is
+      the view to judge the ladder by: today two thirds of every troop line sits in I1&ndash;I3,
+      and exactly three reach I7 &mdash; a Halfling outrider, an Eshin assassin and a Tyranid
+      Lictor. Nothing rank-and-file goes higher. The top three rungs belong to characters
+      entirely.</p>
+    <div class="chart"><div class="bar-row"><span class="bl">I1</span><div class="pair"><div class="track"><div class="fill now" style="width:11.5%"></div></div><div class="track"><div class="fill next" style="width:6.5%"></div></div></div><span class="bv">72<em>41</em></span></div><div class="bar-row"><span class="bl">I2</span><div class="pair"><div class="track"><div class="fill now" style="width:41.6%"></div></div><div class="track"><div class="fill next" style="width:31.4%"></div></div></div><span class="bv">261<em>197</em></span></div><div class="bar-row"><span class="bl">I3</span><div class="pair"><div class="track"><div class="fill now" style="width:74.5%"></div></div><div class="track"><div class="fill next" style="width:32.9%"></div></div></div><span class="bv">467<em>206</em></span></div><div class="bar-row"><span class="bl">I4</span><div class="pair"><div class="track"><div class="fill now" style="width:39.2%"></div></div><div class="track"><div class="fill next" style="width:14.4%"></div></div></div><span class="bv">246<em>90</em></span></div><div class="bar-row"><span class="bl">I5</span><div class="pair"><div class="track"><div class="fill now" style="width:21.9%"></div></div><div class="track"><div class="fill next" style="width:81.0%"></div></div></div><span class="bv">137<em>508</em></span></div><div class="bar-row"><span class="bl">I6</span><div class="pair"><div class="track"><div class="fill now" style="width:4.9%"></div></div><div class="track"><div class="fill next" style="width:18.5%"></div></div></div><span class="bv">31<em>116</em></span></div><div class="bar-row"><span class="bl">I7</span><div class="pair"><div class="track"><div class="fill now" style="width:0.5%"></div></div><div class="track"><div class="fill next" style="width:9.4%"></div></div></div><span class="bv">3<em>59</em></span></div><div class="bar-row"><span class="bl">I8</span><div class="pair"><div class="track"><div class="fill now" style="width:0.0%"></div></div><div class="track"><div class="fill next" style="width:0.0%"></div></div></div><span class="bv">0<em>0</em></span></div><div class="bar-row"><span class="bl">I9</span><div class="pair"><div class="track"><div class="fill now" style="width:0.0%"></div></div><div class="track"><div class="fill next" style="width:0.0%"></div></div></div><span class="bv">0<em>0</em></span></div><div class="bar-row"><span class="bl">I10</span><div class="pair"><div class="track"><div class="fill now" style="width:0.0%"></div></div><div class="track"><div class="fill next" style="width:0.0%"></div></div></div><span class="bv">0<em>0</em></span></div></div>
+    <dl class="shift">
+      <div><dt>I1–I3</dt><dd>66% <span>&rarr;</span> 36%</dd></div>
+      <div><dt>I4–I7</dt><dd>34% <span>&rarr;</span> 64%</dd></div>
+      <div><dt>Busiest rung</dt><dd>I3 <span>&rarr;</span> I5</dd></div>
+    </dl>
+
+    <h3 class="view">Everything &mdash; 2,010 lines</h3>
+    <p class="view-note">Characters and large creatures included, on the same scale, so the
+      troop bars above read as the subset they are.</p>
+    <div class="chart"><div class="bar-row"><span class="bl">I1</span><div class="pair"><div class="track"><div class="fill now" style="width:14.7%"></div></div><div class="track"><div class="fill next" style="width:6.5%"></div></div></div><span class="bv">92<em>41</em></span></div><div class="bar-row"><span class="bl">I2</span><div class="pair"><div class="track"><div class="fill now" style="width:49.6%"></div></div><div class="track"><div class="fill next" style="width:31.7%"></div></div></div><span class="bv">311<em>199</em></span></div><div class="bar-row"><span class="bl">I3</span><div class="pair"><div class="track"><div class="fill now" style="width:100.0%"></div></div><div class="track"><div class="fill next" style="width:33.3%"></div></div></div><span class="bv">627<em>209</em></span></div><div class="bar-row"><span class="bl">I4</span><div class="pair"><div class="track"><div class="fill now" style="width:62.2%"></div></div><div class="track"><div class="fill next" style="width:26.0%"></div></div></div><span class="bv">390<em>163</em></span></div><div class="bar-row"><span class="bl">I5</span><div class="pair"><div class="track"><div class="fill now" style="width:42.1%"></div></div><div class="track"><div class="fill next" style="width:89.8%"></div></div></div><span class="bv">264<em>563</em></span></div><div class="bar-row"><span class="bl">I6</span><div class="pair"><div class="track"><div class="fill now" style="width:27.6%"></div></div><div class="track"><div class="fill next" style="width:26.3%"></div></div></div><span class="bv">173<em>165</em></span></div><div class="bar-row"><span class="bl">I7</span><div class="pair"><div class="track"><div class="fill now" style="width:14.0%"></div></div><div class="track"><div class="fill next" style="width:77.2%"></div></div></div><span class="bv">88<em>484</em></span></div><div class="bar-row"><span class="bl">I8</span><div class="pair"><div class="track"><div class="fill now" style="width:6.2%"></div></div><div class="track"><div class="fill next" style="width:16.1%"></div></div></div><span class="bv">39<em>101</em></span></div><div class="bar-row"><span class="bl">I9</span><div class="pair"><div class="track"><div class="fill now" style="width:2.6%"></div></div><div class="track"><div class="fill next" style="width:13.6%"></div></div></div><span class="bv">16<em>85</em></span></div><div class="bar-row"><span class="bl">I10</span><div class="pair"><div class="track"><div class="fill now" style="width:1.4%"></div></div><div class="track"><div class="fill next" style="width:0.0%"></div></div></div><span class="bv">9<em>0</em></span></div></div>
+    <dl class="shift">
+      <div><dt>I1–I3</dt><dd>51% <span>&rarr;</span> 22%</dd></div>
+      <div><dt>I4–I7</dt><dd>46% <span>&rarr;</span> 68%</dd></div>
+      <div><dt>I8–I10</dt><dd>3% <span>&rarr;</span> 9%</dd></div>
+      <div><dt>Busiest rung</dt><dd>I3 <span>&rarr;</span> I5</dd></div>
+    </dl>
+    <p class="proj-note">The shape is the point. The tallest rung falls from 627 lines to 563, and
+      instead of one spike the corpus settles onto two plateaus — humans as troops at I5, and elves
+      alongside human characters at I7, since the flat +2 puts a hero on the elf rung. Whether a
+      human hero should react as quickly as an elf soldier is a fair question, and it is the one
+      the projection raises rather than answers.</p>
+  </section>
+
+  <footer>
+    Current values are the <em>most common</em> Initiative among a species' rank-and-file, not its
+    average — the average is pulled upward by characters, so Human averages 4.1 across every line
+    in the corpus and sits at 3 across the troops. Measured across all 32 army books.
+  </footer>
+</div>
+
+<p style="max-width:64ch;margin:0 auto 3rem;padding:0 1.5rem;font:400 .8rem/1.5 Spectral,Georgia,serif;color:#7b8494">
+  Talking points for the group, 2026-09-08. Nothing here is agreed beyond the table&rsquo;s own
+  decisions, and nothing has been applied to the books.
+</p>
+</body>
+</html>

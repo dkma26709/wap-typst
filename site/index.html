@@ -159,14 +159,53 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 
 footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
 footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
 </style>
 </head>
 <body>
 <main>
   <h1>Warhammer Armies Revamped</h1>
-  <p class="sub">14 books we have altered or proposed altering —
-  the rules we play from. Everything else on this site reproduces its source
-  exactly.</p>
+  <p class="sub">11 books we have altered — the rules we play
+  from. Everything else on this site reproduces its source exactly.</p>
 
   <h2 class="section">House Rules</h2>
   <p class="note">The Warhammer Armies Project rules with our own amendments applied.</p>
@@ -217,7 +256,7 @@ footer p { margin: .7rem 0; }
         <a href="lizardmen/3.0-house.pdf"><img src="covers/lizardmen.png" alt="Lizardmen cover" loading="lazy"></a>
         <div>
           <h2><a href="lizardmen/3.0-house.pdf">Lizardmen</a></h2>
-          <p>House Rules 2026.1 · 8 changes</p>
+          <p>House Rules 2026.1 · 9 changes</p>
         </div>
       </li>
       <li class="book">
@@ -250,30 +289,21 @@ footer p { margin: .7rem 0; }
       </li>
   </ul>
 
-  <h2 class="section">Proposals</h2>
-  <p class="note">The house rules, with the changes we are still arguing about set out in the back.</p>
+  <h2 class="section">Under discussion</h2>
+  <p class="note">Not rules, and nothing here is in force. Each proposal sets
+  out what it would change, why, and the best case against it.</p>
   <ul class="books core">
       <li class="book">
-        <a href="rulebook/3.11-proposal.pdf"><img src="covers/rulebook.png" alt="The Game of Fantasy Battles cover" loading="lazy"></a>
+        <a href="proposals/2026.1.pdf"><span class="nothumb"></span></a>
         <div>
-          <h2><a href="rulebook/3.11-proposal.pdf">The Game of Fantasy Battles</a></h2>
-          <p>Proposals 2026.1 · 13 proposals</p>
+          <h2><a href="proposals/2026.1.pdf">Proposals</a></h2>
+          <p>2026.1 · 16 proposals</p>
         </div>
       </li>
-      <li class="book">
-        <a href="lizardmen/3.0-proposal.pdf"><img src="covers/lizardmen.png" alt="Lizardmen cover" loading="lazy"></a>
-        <div>
-          <h2><a href="lizardmen/3.0-proposal.pdf">Lizardmen</a></h2>
-          <p>Proposals 2026.1 · 6 proposals</p>
-        </div>
-      </li>
-      <li class="book">
-        <a href="orcs-goblins/3.0-proposal.pdf"><img src="covers/orcs-goblins.png" alt="Orcs &amp; Goblins cover" loading="lazy"></a>
-        <div>
-          <h2><a href="orcs-goblins/3.0-proposal.pdf">Orcs &amp; Goblins</a></h2>
-          <p>Proposals 2026.1 · 1 proposal</p>
-        </div>
-      </li>
+  </ul>
+  <p class="note">The working behind some of them, in full:</p>
+  <ul class="plain">
+    <li><a href="proposals/initiative-ladder/">The Initiative Ladder</a></li>
   </ul>
 
   <p class="note">
