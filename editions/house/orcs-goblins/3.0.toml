@@ -23,8 +23,8 @@ their own, priced against the other Core units, and this restores that. Brutes \
 stay beside them: the two were never alternatives, and cutting one to make room \
 for the other is what 3.0 did rather than what it should have.
 
-Whether a Warboss should be required at all is a separate question and is not \
-settled — it stands as a proposal in the Proposals edition, not as a change here.
+Whether a Warboss should be required at all is a separate question, and is not \
+settled here.
 """
 
 original = """It stood on both ORC BOYZ and ORC BOAR BOYZ:
@@ -34,8 +34,9 @@ For each Orc Warboss in your army, you may upgrade one unit of Orc Boys or Orc B
 For each Orc Warboss in your army, you may upgrade one unit of Orc Boys or Orc Boar Boyz of the same sub-species to Big 'Uns. Big 'Uns gain +1 Weapon Skill and the Mighty Blow (1) special rule. In addition, they count as Special Units."""
 
 new = """
-BIG 'UNS and BOAR BOY BIG 'UNS become Core entries of their own, and the Big 'Uns
-upgrade rule is removed from Orc Boyz and Orc Boar Boyz. The two entries read:
+BIG 'UNS and BOAR BOY BIG 'UNS become Special entries of their own, one of which a
+Warboss may take as a Core choice, and the Big 'Uns upgrade rule is removed from
+Orc Boyz and Orc Boar Boyz. The two entries read:
 
 BIG 'UNS
 PROFILE
