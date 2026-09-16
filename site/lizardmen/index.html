@@ -159,6 +159,46 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 
 footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
 footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
 </style>
 </head>
 <body>
@@ -219,14 +259,7 @@ footer p { margin: .7rem 0; }
         <a href="../lizardmen/3.0-house.pdf"><img src="../covers/lizardmen.png" alt="Lizardmen cover" loading="lazy"></a>
         <div>
           <h2><a href="../lizardmen/3.0-house.pdf">House Rules 2026.1</a></h2>
-          <p>8 changes · after version 3.0</p>
-        </div>
-      </li>
-      <li class="book">
-        <a href="../lizardmen/3.0-proposal.pdf"><img src="../covers/lizardmen.png" alt="Lizardmen cover" loading="lazy"></a>
-        <div>
-          <h2><a href="../lizardmen/3.0-proposal.pdf">Proposals 2026.1</a></h2>
-          <p>6 proposals · after version 3.0</p>
+          <p>9 changes · after version 3.0</p>
         </div>
       </li>
   </ul>

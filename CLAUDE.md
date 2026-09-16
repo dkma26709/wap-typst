@@ -61,11 +61,10 @@ python extract/coverage.py "path/to/book.pdf" build/lizardmen.json   # words los
 python extract/welds.py build/lizardmen.json                         # words welded
 python extract/roundtrip.py lizardmen --source "path/to/book.pdf"    # rendered PDF vs source
 # Edition promises, checked against rendered PDFs (compile both first).
-# A House edition must write every change up in its TOML; a Proposals edition
-# must leave the body alone, and derives from the House book where one exists,
-# so that is the parent to compare it against - not the base book.
+# A House edition must write every change up in its TOML, against the base book
+# it derives from. (--identical-body has no caller since the Proposals forks
+# were retired; it still works if an edition ever promises an untouched body.)
 python extract/check_editions.py out/lizardmen/3.0-house.pdf out/lizardmen/3.0.pdf
-python extract/check_editions.py out/rulebook/3.11-proposal.pdf   out/rulebook/3.11-house.pdf --identical-body
 
 # The edition as one JSON for an army builder, and its own check.
 python export.py --check
@@ -134,15 +133,54 @@ only place the reasoning is written down — the books themselves no longer carr
 a changelog chapter, so a change is stated in the record and applied in the
 body, and nowhere else.
 
-There are two editions. **House** is the rules we play, and its colophon warns
-that the body has been altered and the alterations are not marked. **Proposals**
-promises the opposite — an identical body to its parent, with the proposals set
-out in their own chapter at the back, none of them in force. A House edition's
-parent is its base book; a Proposals edition's is the House book where one
-exists. `extract/check_editions.py` holds both to their promise: a Proposals book's body
-must match its parent's exactly, and every word a House book adds to or removes
-from its base must appear in its TOML. The record is the only place a change is
-written down now, so a change made and not recorded fails there.
+There is one edition. **House** is the rules we play, and its colophon warns
+that the body has been altered and the alterations are not marked; its parent is
+the base book it derives from. `extract/check_editions.py` holds it to that
+promise: every word a House book adds to or removes from its base must appear in
+its TOML. The record is the only place a change is written down now, so a change
+made and not recorded fails there.
+
+**Proposals are a document, not an edition.** `src/proposals/<version>.typ` holds
+all of them, a chapter per book they are about, and it forks nothing — a proposal
+alters no book, so there is no body to keep in step and no gate needed to police
+one. Each is a `#proposal(..)` record. Only the summary is required — it is the
+record's body — and `why`, `against`, `cost` and `examples` print in that order
+whichever order they are written, each only if given. The four are the shape a
+proposal usually wants rather than a form to fill in: it is read whole, so a
+section carrying nothing reads worse than its absence. It declares
+`kind: "document"`, which is what keeps it off the library page and gives it a
+card on the front page, and emit counts its proposals off its own records. When
+one is agreed it is written into a House edition as a `[[change]]` and **struck
+from the document** — leaving it standing is how the book comes to argue for
+what it already does.
+
+**A proposal may carry an extended page.** `page: "initiative"` on the record
+prints the address of `pages/initiative.typ`, published at
+`/proposals/initiative/`, and is where the working that would swamp the
+proposal goes — the survey a claim was measured from, the per-book tables.
+A page comes in two kinds and `emit.py` takes both. A **`.typ` page** is
+written in the project's own language and made to look like the rest of the
+site: `typst --features html --format html` renders it, only the `<body>` is
+kept, and that is wrapped in the site's shell. A **`.html` page** is a finished
+document that arrived with its own typography — `pages/initiative-ladder.html`
+is one — and publishes as itself, unwrapped; its `<title>` is what names it in
+the listing. `site/proposals/` is wholly generated and is pruned, so renaming
+a page's source removes its old address rather than publishing it for ever.
+
+Two consequences worth knowing before writing a `.typ` one:
+
+- **HTML export has no layout.** A page uses only the semantic part of the
+  template — headings, prose, lists, `minitable`. No `book()`, no `page()`, no
+  columns. Typst itself warns the exporter is incomplete on every run.
+- **`SITE_URL` in `template.typ` is the one place this project's address is
+  written down**, because a PDF has no relative base. It was read off the
+  repository's Pages settings, not derived. No gate can check it: `check_site.py`
+  walks the built tree and can verify a path, never a host. If a custom domain
+  is ever set, that line moves with it or every proposal prints a 404.
+
+Both directions are gated. `emit.py` fails if a proposal names a page that is
+not in `pages/`, and if a page in `pages/` is named by no proposal;
+`check_site.py` fails if any page on the site is linked from nowhere.
 
 ## Invariants worth not breaking
 
@@ -197,9 +235,15 @@ assumed:
   `python build.py --site && python check_site.py _site`, and commit the
   resulting pages and `build/render.json`. The pages count entries out of the
   books and change tallies out of those TOMLs, so both move with no book added.
-- Changed an edition's body → recompile it and its parent and run
-  `check_editions.py`. A House edition's parent is its base book; a Proposals
-  edition's is the House book where one exists.
+- Changed an edition's body → recompile it and its base book and run
+  `check_editions.py`; every change also needs its record in
+  `editions/house/<army>/<version>.toml`.
+- Changed `src/proposals/` or anything under `pages/` → compile it and run
+  `emit.py`, since the front page's proposal tally is counted out of the
+  document itself and the extended pages are rendered from `pages/`. Then
+  `python build.py --site && python check_site.py _site`. Promoted a
+  proposal into a House edition → strike it from the document in the same
+  change, and re-read the proposals beside it for numbers the promotion aged.
 - Changed a record's metadata in `template.typ`, or `export.py` → `python
   export.py --check` after the build, and confirm `check: ok`.
 - Changed anything under `extract/` → the gates need the source PDFs, which are

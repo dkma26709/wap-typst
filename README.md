@@ -18,15 +18,20 @@ it: Dwarfs should feel like Dwarfs, Skaven like Skaven.
 
 ## The books
 
-Sixty-four books, published as PDFs to GitHub Pages: thirty-three armies and
-the core rulebook, most of them in more than one version, and eleven editions
-of our own.
+Sixty-five documents, published as PDFs to GitHub Pages: thirty-three armies
+and the core rulebook, most of them in more than one version, eleven **house
+rules** editions of our own, and one document of **proposals**.
 
-The site leads with those eleven — the **house rules** we play and the
-**proposals** we are still arguing about — because they are what the project
-is for. The Armies Project itself is a click away under `/library/`, every
-army and every version we hold of it, re-typeset and otherwise untouched: the
-same rules, army lists and points values, in a new layout with new cover art.
+The site leads with those twelve, because they are what the project is for: the
+rules we play, and — separately, and in force nowhere — what we are still
+arguing about. The Armies Project itself is a click away under `/library/`,
+every army and every version we hold of it, re-typeset and otherwise untouched:
+the same rules, army lists and points values, in a new layout with new cover
+art.
+
+A proposal alters no book, so it forks none. All of them live in one document,
+a chapter per book they are about; when one is agreed it is written into a
+house edition and struck from there.
 
 Which a reader is holding is never a guess. A book that reproduces its source
 says so in its colophon; one that departs from it says that instead, and names
@@ -93,7 +98,7 @@ version of it is not:
 
 | | holds | address |
 |---|---|---|
-| the front page | our own editions: the house rules and the proposals | `/` |
+| the front page | the house rules, and the proposals document | `/` |
 | the library | one card per army, at its current version | `/library/` |
 | an army's page | every version of it we hold, newest first, and our editions of them | `/lizardmen/` |
 

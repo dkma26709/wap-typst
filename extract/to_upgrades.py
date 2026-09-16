@@ -47,8 +47,6 @@ CHAPTERS = {
     "lizardmen/1.64": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
     "lizardmen/3.0": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
     "lizardmen/3.0-house": ["BLESSED SPAWNINGS", "DISCIPLINES OF THE OLD ONES"],
-    "lizardmen/3.0-proposal": ["BLESSED SPAWNINGS",
-                               "DISCIPLINES OF THE OLD ONES"],
     "nippon/3.0": ["CLAN MON"],
     "norsca/3.0": ["SAGAS"],
     "ogre-kingdoms/1.6": ["BIG NAMES OF THE OGRES"],

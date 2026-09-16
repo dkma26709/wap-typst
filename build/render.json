@@ -236,10 +236,6 @@
   "cover": ""
  },
  {
-  "id": "lizardmen/3.0-proposal",
-  "cover": ""
- },
- {
   "id": "ogre-kingdoms/3.1-house",
   "cover": ""
  },
@@ -248,15 +244,7 @@
   "cover": ""
  },
  {
-  "id": "orcs-goblins/3.0-proposal",
-  "cover": ""
- },
- {
   "id": "rulebook/3.11-house",
-  "cover": ""
- },
- {
-  "id": "rulebook/3.11-proposal",
   "cover": ""
  },
  {
@@ -266,5 +254,9 @@
  {
   "id": "warriors-of-chaos/3.0-house",
   "cover": ""
+ },
+ {
+  "id": "proposals/2026.1",
+  "cover": null
  }
 ]

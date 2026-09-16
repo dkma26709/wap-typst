@@ -16,6 +16,7 @@ import argparse
 import html
 import json
 import os
+import shutil
 import subprocess
 import tomllib
 import re
@@ -486,7 +487,8 @@ def army_page(versions: list[dict], derived: dict[str, list[dict]],
 
 
 def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
-               editions: list[dict], css: str, held: int) -> str:
+               editions: list[dict], css: str, held: int,
+               documents: list[dict], extended: list[tuple[str, str]]) -> str:
     """Our own editions, and the site's front page: they are what we play from.
 
     A shelf is a section here rather than a filter: there is one version of each
@@ -520,10 +522,38 @@ def house_page(derived: dict[str, list[dict]], bases: dict[str, dict],
   </ul>
 """)
 
+    # The documents stand apart from the editions above rather than among them:
+    # an edition is a book with our changes written into it, and a document
+    # changes no book at all. One section, after the things that are in force.
+    if documents:
+        cards = [card(f'{d["id"]}.pdf', d["army"],
+                      f"{d['version']} · {plural(d['proposals'], 'proposal')}",
+                      None, alt=d["army"])
+                 for d in documents]
+        # The extended pages, listed beneath the document that names them.
+        # A proposal prints the address; this is the way in from the site.
+        working = ""
+        if extended:
+            items = chr(10).join(
+                f'    <li><a href="proposals/{slug}/">{html.escape(name)}</a></li>'
+                for slug, name in extended)
+            working = f"""
+  <p class="note">The working behind some of them, in full:</p>
+  <ul class="plain">
+{items}
+  </ul>"""
+        sections.append(f"""
+  <h2 class="section">Under discussion</h2>
+  <p class="note">Not rules, and nothing here is in force. Each proposal sets
+  out what it would change, why, and the best case against it.</p>
+  <ul class="books core">
+{chr(10).join(cards)}
+  </ul>{working}
+""")
+
     body = f"""  <h1>Warhammer Armies Revamped</h1>
-  <p class="sub">{plural(total, 'book')} we have altered or proposed altering —
-  the rules we play from. Everything else on this site reproduces its source
-  exactly.</p>
+  <p class="sub">{plural(total, 'book')} we have altered — the rules we play
+  from. Everything else on this site reproduces its source exactly.</p>
 {"".join(sections)}
   <p class="note">
     The Warhammer Armies Project itself is here in full: {held} books, every
@@ -543,7 +573,10 @@ TYPST = os.environ.get("TYPST", "typst")
 # are headings and drop no marker - and it is the book's own tally either way,
 # rather than a number recorded elsewhere and hoped to still be true.
 PROBE = ('(meta: query(<book-meta>).first().value, '
-         'entries: query(heading).filter(h => h.level >= 2).len())')
+         'entries: query(heading).filter(h => h.level >= 2).len(), '
+         'proposals: query(<meta>).filter(m => m.value.kind == "proposal").len(), '
+         'pages: query(<meta>).filter(m => m.value.kind == "proposal" '
+         'and m.value.page != none).map(m => m.value.page))')
 
 
 def read_book(path: Path) -> dict:
@@ -556,6 +589,13 @@ def read_book(path: Path) -> dict:
     probed = json.loads(out.stdout)
     book = dict(probed["meta"])
     book["entries"] = probed["entries"]
+    # Counted off the document's own records rather than recorded beside it.
+    # The proposals used to be written twice - once in the book and once in
+    # editions/proposal/ - and it was the second copy that went stale.
+    book["proposals"] = probed["proposals"]
+    # The extended pages this book names. Collected from the records rather
+    # than from the pages/ directory, so a page nothing links to is caught.
+    book["pages"] = probed["pages"]
     # A book's identity is where it sits: the army is the folder and the version
     # is the file, so `src/lizardmen/3.0-house.typ` is `lizardmen/3.0-house`.
     # The publish workflow compiles `src/<id>.typ` and the site links `<id>.pdf`,
@@ -565,25 +605,82 @@ def read_book(path: Path) -> dict:
     return book
 
 
-def read_books() -> tuple[list[dict], dict[str, list[dict]]]:
-    """Every book in src/, and which of them are editions of which.
+# Which of our shelves a book of our own belongs on. Declared here rather than
+# read off editions/, because the two are not the same set: an original book
+# can be unsettled without an edition existing to hold it - Tyranids is - and
+# the proposals are a document now, not an edition of anything.
+SHELVES = ("house", "proposal")
+
+# An extended page: the working a proposal would be swamped by, published as a
+# page of the site and named from the PDF. One Typst file per page under
+# pages/, compiled to HTML rather than to paper, so it takes only the semantic
+# part of the template - Typst's HTML export has no layout at all.
+PAGES = ROOT / "pages"
+BODY = re.compile(r"<body>(.*)</body>", re.S)
+
+
+def extended_page(path: Path, css: str) -> tuple[str, str]:
+    """One page's title and its finished HTML.
+
+    Two kinds, because the pages are not all the same animal. A `.typ` page is
+    written in the project's own language and wants to look like the rest of
+    the site, so Typst renders it and only the body is kept — the head, the
+    stylesheet and the footer are the site's, and every other page gets them
+    from the same place. A `.html` page is a finished document that arrived
+    with its own typography and its own argument to make, and is published as
+    itself; rewrapping it in the site's shell would fight its own styling and
+    win, which is not an improvement.
+    """
+    if path.suffix == ".html":
+        page = path.read_text(encoding="utf-8")
+        title = re.search(r"<title>(.*?)</title>", page, re.S)
+        if not title:
+            raise SystemExit(f"emit: pages/{path.name} has no <title>, which is "
+                             f"what names it in the listing that links to it")
+        return html.unescape(title.group(1).strip()), page
+
+    out = subprocess.run(
+        [TYPST, "compile", "--ignore-system-fonts", "--root", str(ROOT),
+         "--features", "html", "--format", "html", str(path), "-"],
+        capture_output=True, cwd=ROOT)
+    if out.returncode != 0:
+        raise SystemExit(f"emit: could not render {path.name}: "
+                         f"{out.stderr.decode('utf-8', 'replace').strip()}")
+    html_out = out.stdout.decode("utf-8")
+    found = BODY.search(html_out)
+    if not found:
+        raise SystemExit(f"emit: {path.name} rendered no body")
+    # The first heading is the page's title; the shell prints its own <title>
+    # and the body keeps the heading, as every other page on the site does.
+    title = re.search(r"<h2>(.*?)</h2>", found.group(1), re.S)
+    name = (html.unescape(re.sub("<[^>]+>", "", title.group(1))) if title
+            else path.stem)
+    return name, shell(name, found.group(1), css)
+
+
+def read_books() -> tuple[list[dict], dict[str, list[dict]], list[dict]]:
+    """Every book in src/, which of them are editions of which, and the
+    standalone documents.
 
     src/ is the catalogue now. A book that exists is a book that ships, so there
     is no manifest to fall out of step with what is on disk.
     """
-    books, derived = [], {}
+    books, derived, documents = [], {}, []
     for path in sorted(ROOT.glob("src/**/*.typ")):
         if path.name == "template.typ":
             continue
         book = read_book(path)
-        if book.get("edition"):
+        if book.get("kind") == "document":
+            documents.append(book)
+        elif book.get("edition"):
             derived.setdefault(book["base"], []).append(book)
         else:
             books.append(book)
     books.sort(key=lambda b: b["army"].casefold())
+    documents.sort(key=lambda b: b["army"].casefold())
     for group in derived.values():
         group.sort(key=lambda b: (b["edition"], b["id"]))
-    return books, derived
+    return books, derived, documents
 
 
 def read_editions() -> dict[str, dict]:
@@ -622,7 +719,7 @@ def read_editions() -> dict[str, dict]:
 def main() -> None:
     argparse.ArgumentParser(description=__doc__).parse_args()
 
-    books, derived = read_books()
+    books, derived, documents = read_books()
     editions = read_editions()
 
     # An edition names the book it derives from, and a base naming no book would
@@ -659,18 +756,18 @@ def main() -> None:
             book["changes"] = counted.get("changes", 0)
             book["proposals"] = counted.get("proposals", 0)
 
-    # A shelf that no edition defines would leave the card invisible under
-    # every filter setting, so it fails loudly here instead.
+    # A typo in a shelf name would file a book somewhere no reader looks, so it
+    # fails loudly here instead.
     for book in books:
         # A book that is simply itself says shelf "base"; the shelf of the
         # books' own text is spelled differently here, so normalise before
-        # checking that any other shelf is one an edition actually defines.
+        # checking that any other shelf is one this site knows.
         if book.get("shelf") in (None, "", "base"):
             book["shelf"] = None
         shelf = book.get("shelf")
-        if shelf and shelf not in editions:
+        if shelf and shelf not in SHELVES:
             raise SystemExit(f"emit: {book['slug']} files itself on unknown "
-                             f"shelf '{shelf}' — known: {sorted(editions)}")
+                             f"shelf '{shelf}' — known: {sorted(SHELVES)}")
 
     # Each book declares its own allegiance, baked in when it was imported from
     # the rulebook's Alliance & Alignment lists. Reading it here rather than
@@ -708,7 +805,8 @@ def main() -> None:
     bases = {b["id"]: b for b in books}
 
     render, owned = [], []
-    for book in books + [b for base in sorted(derived) for b in derived[base]]:
+    for book in (books + [b for base in sorted(derived) for b in derived[base]]
+                 + documents):
         # src/ is the catalogue: a book that is there is a book that ships.
         owned.append(book["id"])
         # An edition shares the cover art of the book it derives from, which
@@ -731,9 +829,47 @@ def main() -> None:
              overview(armies, rules, align, derived, css)}
     for group in list(armies.values()) + list(rules.values()):
         pages[Path(group[0]["slug"]) / "index.html"] = army_page(group, derived, css)
-    if derived:
+    # The extended pages. Both directions are checked, because they fail
+    # differently: a page a proposal names and that does not exist prints a URL
+    # into a PDF that 404s, and a page nothing names has published into a
+    # corner of the site with no way in. Neither shows up in a render.
+    declared = {slug: d["army"] for d in documents for slug in d["pages"]}
+    ondisk = ({p.stem: p for p in sorted(PAGES.iterdir())
+               if p.suffix in (".typ", ".html")} if PAGES.is_dir() else {})
+    missing = sorted(set(declared) - set(ondisk))
+    if missing:
+        raise SystemExit(
+            f"emit: a proposal names the extended page(s) {', '.join(missing)}, "
+            f"which are not in pages/ - the PDF would print a dead address")
+    stray = sorted(set(ondisk) - set(declared))
+    if stray:
+        raise SystemExit(
+            f"emit: pages/{stray[0]}.typ is named by no proposal, so nothing "
+            f"on the site or in a PDF would link to it")
+    extended = []
+    for slug, path in ondisk.items():
+        name, page_html = extended_page(path, css)
+        pages[Path("proposals") / slug / "index.html"] = page_html
+        extended.append((slug, name))
+
+    # Unlike site/<army>/, which holds pages for books somebody owns by hand,
+    # site/proposals/ is wholly this script's: one directory per file in pages/
+    # and nothing else. So a page whose source was renamed or dropped is pruned
+    # here rather than left to publish for ever. check_site.py catches it too,
+    # but only after the stale copy has already been assembled.
+    live = {ROOT / "site" / "proposals" / slug for slug in ondisk}
+    proposals_dir = ROOT / "site" / "proposals"
+    if proposals_dir.is_dir():
+        for stale in sorted(p for p in proposals_dir.iterdir()
+                            if p.is_dir() and p not in live):
+            shutil.rmtree(stale)
+            print(f"pruned site/proposals/{stale.name}/ - "
+                  f"pages/{stale.name} is gone")
+
+    if derived or documents:
         pages[Path("index.html")] = house_page(
-            derived, bases, list(editions.values()), css, held)
+            derived, bases, list(editions.values()), css, held, documents,
+            extended)
 
     # An army called `library` would take the library's own address. None is,
     # and this is the only place that could go unnoticed.
@@ -752,7 +888,8 @@ def main() -> None:
 
     count = sum(len(v) for v in derived.values())
     print(f"{len(owned)} book(s) own their own Typst and were left alone "
-          f"({len(books)} books, {count} derived editions)")
+          f"({len(books)} books, {count} derived editions, "
+          f"{len(documents)} document(s))")
     print(f"wrote {len(pages)} page(s) under site/ and build/render.json")
 
 

@@ -596,6 +596,13 @@ Riders)
   base-size: "20x20 or 25x25",
   equipment: "Hand weapon, shield",
   special-rules: "Aquatic, Cold-blooded, Natural Armour (6+)",
+  special-rules-body: (
+    rule("Spawn-kin")[Skink Cohorts may include one Kroxigor for every eight Skinks to form a combined unit. Kroxigor in the unit use the Kroxigors entry from Special Units in every respect, at its printed cost. When a combined unit deploys or reforms, these Kroxigor must be placed in the unit's second rank, displacing Skink models as necessary to the back rank. When deploying or reforming a combined unit, the width of the unit's front rank cannot be less than that of its second rank. If no more Kroxigor can fit in the unit's second rank, place the remaining Kroxigor in subsequent ranks. If the unit's front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).
+
+Whenever you are required to work out the combined unit's frontage or ranks (and therefore supporting attacks and rank bonus) count as if the footprint of the entire combined unit was filled with Skinks.
+
+Unless otherwise stated, close combat attacks can only target Kroxigor within a combined unit if an enemy model is either in base contact with a Kroxigor, or if an enemy model is in base contact with a Skink who is in turn in base contact with a Kroxigor. For the purposes of Stomp the unit counts as consisting of Skinks, and Stomp hits are always resolved against the Skinks (if all the Skinks are slain, any excess hits are lost). Missile and Impact Hits against a Skink Cohort that contains one or more Kroxigor are randomised by rolling a D6; on a 1\-4, the hit is resolved against a Skink, on a 5\-6 it is resolved against a Kroxigor. Casualties are always taken from the rearmost rank of the appropriate model type.],
+  ),
   options: [
 - May choose one of the following:
   - Spears +0.5 point/model
@@ -603,6 +610,7 @@ Riders)
   - Javelins +2 points/model
 - May take Firefly Frog Venom +2 points/model
 - May take a Blessed Spawning +1 point/model
+- May include one Kroxigor for every eight Skinks in the unit +47 points/model
 - May upgrade one Skink to a Leader +5 points
 - May upgrade one Skink to a Musician +5 points
 - May upgrade one Skink to a Standard Bearer +10 points
