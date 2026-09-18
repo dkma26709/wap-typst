@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Slann generations, measured</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>The Slann generations, measured</h2><h3>The ladder is already in the book, taken apart</h3><p>The Disciplines of the Old Ones are thirteen upgrades, 10 to 30 points, bought out of the Slann’s hundred-point allowance. Four of them are the 6th edition generation ladder, disassembled and given prices:</p><table><thead><tr><th>6TH EDITION GENERATION</th><th>SOLD IN THE BOOK TODAY AS</th><th>PRICE</th></tr></thead><tbody><tr><td>5th - combine spells across the lores it has access to</td><td>Wandering Deliberations</td><td>25</td></tr><tr><td>4th - cannot miscast</td><td>Soul of Stone, and only a plus or minus one nudge</td><td>25</td></tr><tr><td>2nd - a free die on every casting attempt</td><td>The Focused Rumination, and only once per phase</td><td>30</td></tr><tr><td>3rd - shutting down enemy magic</td><td>Becalming Cogitation and Harmonic Alignment, between them</td><td>25 and 30</td></tr></tbody></table><p>The first line is the one that matters most. A wizard in this edition selects one Lore of Magic and stays in it – the rulebook is explicit, and it is how every wizard in every book works. Combining spells across lores is not standard and never was here; it is a 25-point purchase with a penalty attached, and it is the thing that made an ordinary Slann a Slann.</p><h3>Why a ladder is the only way to make them the best casters</h3><p>Wizard Level is a hard ceiling. Across the thirty-three books there are 163 Level 4 wizards and nothing above, and the ceiling is structural rather than conventional: the rulebook numbers spells from 1 to 4 and lets a wizard take spells of their own level or lower, so a Level 5 would have nothing to reach for.</p><p>Nor is the Slann the most expensive caster on the shelf. Among generic Level 4 wizards:</p><table><thead><tr><th>POINTS</th><th>WIZARD</th></tr></thead><tbody><tr><td>190</td><td>Grey Seer</td></tr><tr><td>250</td><td>Daemon Prince</td></tr><tr><td>290</td><td>Liche Lord</td></tr><tr><td>360</td><td>Slann Mage-Priest</td></tr><tr><td>400</td><td>Greater Daemons</td></tr><tr><td>450</td><td>Verminlord</td></tr></tbody></table><p>And its +1 to cast and dispel is not unique either – Grand Cathay and Kingdoms of Ind both print the same bonus. So the Slann cannot be made the best caster in the setting by level, by price, or by the bonus it already carries. What no other book can answer is a Level 4 caster available in four grades, each better than the last, with the best of them priced beyond what an ordinary game can hold.</p><h3>The power pool is what actually limits a Slann</h3><p>The Winds of Magic are rolled by the size of the game, not by what was spent on wizards:</p><table><thead><tr><th>POINTS PLAYED</th><th>DICE ROLLED</th><th>POWER DICE</th></tr></thead><tbody><tr><td>under 2,000</td><td>2D3</td><td>2 to 6, average 4</td></tr><tr><td>2,000 to 2,999</td><td>4D3</td><td>4 to 12, average 8</td></tr><tr><td>3,000 to 3,999</td><td>6D3</td><td>6 to 18, average 12</td></tr></tbody></table><p>A lone Level 4 Slann channels a D6 per Wizard Level and gains a die on each 5+, which is another 1.33 expected. So it sees about nine power dice a phase at 2,000 points, and around five below that.</p><p>Now count what it has room for. A Wizard may use Wizard Level plus two dice on a spell, so six; it knows four spells; and each may be attempted once a turn. Twenty-four dice of appetite against nine of supply, and four and a half times its supply in a game under 2,000 points.</p><p>That is the whole of the diminishing return, and it has two consequences the ladder is built on. Paying more for a caster in this edition buys <strong>quality per cast</strong> and never <strong>more casts</strong>, which is why the Slann at 360 reads dear beside a Grey Seer at 190 who is also Level 4 and also combines his lores – the extra 170 buys a ward, three Leadership and seven more lores, not throughput. And it is why the rungs are not worth what their abilities suggest in isolation: the second generation is the only one that adds dice, and adding three or four to a pool of nine is a 32% to 43% increase in the army’s entire magic phase. The others improve casts the Slann was making anyway.</p><h3>The fourth generation: ignoring the first 1</h3><p>A miscast in this edition is two or more unmodified 1s among the dice rolled, counting every die however it was granted. Ignoring the first die that shows a 1 therefore means three are needed. Computed exactly over the whole dice space:</p><table><thead><tr><th>DICE THROWN</th><th>MISCAST TODAY</th><th>IGNORING THE FIRST 1</th><th>CHANGE</th></tr></thead><tbody><tr><td>2</td><td>2.8%</td><td>0%</td><td>gone</td></tr><tr><td>3</td><td>7.4%</td><td>0.5%</td><td>-94%</td></tr><tr><td>4</td><td>13.2%</td><td>1.6%</td><td>-88%</td></tr><tr><td>5</td><td>19.6%</td><td>3.5%</td><td>-82%</td></tr><tr><td>6</td><td>26.3%</td><td>6.2%</td><td>-76%</td></tr></tbody></table><p>This is better than the flat immunity the 6th edition rule granted, and the table is why. Immunity deletes the decision: a Slann that cannot miscast throws six dice at everything for the rest of its life. Ignoring one 1 leaves the Slann safe at two and three dice, where it will spend most of the game, and hands back a real 6.2% when it reaches for six. The risk returns exactly when the Slann gets greedy, which is the only place a miscast rule is interesting.</p><p>Soul of Stone is not made redundant by it. That discipline acts on the miscast you do suffer, by shifting the result on the table, so it remains worth buying and remains a different thing. It should cost less than 25 now that the generation has taken the commoner half of its job.</p><h3>The third generation: suppressing Ultimate Power</h3><p>Ultimate Power grants a free extra die for every natural 6, when casting and again when dispelling. Suppressing it inside 24″ costs an enemy wizard the following:</p><table><thead><tr><th>DICE THEY THROW</th><th>FREE DICE DENIED</th><th>CASTING VALUE LOST</th></tr></thead><tbody><tr><td>2</td><td>0.33</td><td>1.2</td></tr><tr><td>3</td><td>0.50</td><td>1.8</td></tr><tr><td>4</td><td>0.67</td><td>2.3</td></tr><tr><td>5</td><td>0.83</td><td>2.9</td></tr><tr><td>6</td><td>1.00</td><td>3.5</td></tr></tbody></table><p>It taxes commitment, which is the right shape for a mind that suppresses magic by being present rather than by rolling against it: the harder they push, the more it costs them, and on a four-dice cast 2.3 is roughly the difference between landing a level 3 spell reliably and not.</p><p>There is a small gift travelling the other way, and it should be known rather than discovered at the table. Free dice count toward miscasts, so denying them also spares the enemy wizard some risk:</p><table><thead><tr><th>DICE THEY THROW</th><th>THEIR MISCAST RISK NORMALLY</th><th>SUPPRESSED</th><th>SPARED</th></tr></thead><tbody><tr><td>2</td><td>3.3%</td><td>2.8%</td><td>0.5%</td></tr><tr><td>4</td><td>15.4%</td><td>13.2%</td><td>2.2%</td></tr><tr><td>6</td><td>30.0%</td><td>26.3%</td><td>3.7%</td></tr></tbody></table><p>At six dice they lose 3.5 of casting value and are spared 3.7 points of miscast chance. Clearly a net loss to them, but not a pure one.</p><p>The radius is 24″, and no convention is strained by it. The corpus uses three radii for magic effects and uses all of them freely – 12″ appears 150 times, 18″ forty-seven and 24″ forty-four – so the choice is not between a standard and a departure from it.</p><p>What settles it is the deployment rule. Units are placed more than 12″ from the centre line, so the two armies begin <strong>24″ apart</strong>. A 12″ bubble carried by a model with Movement 4 would spend the opening turns of the game unable to reach anything at all, and an 18″ one is still 6″ short at the start. 24″ is the distance at which the enemy army begins, and it is also the standard reach of a hex in this edition – Melkoth’s Mystifying Miasma, which reduces the very characteristics a Slann cares about, goes exactly that far.</p><p>Even at 24″ it is not a free hit. An enemy wizard deliberately sheltering behind its own line sits nearer 30″ from the Slann’s deployment zone, so the suppression has to be advanced into. That is the correct amount of work for it to cost.</p><h3>The second generation: a free die on every attempt</h3><table><thead><tr><th>OPTION</th><th>ADDS TO THE CASTING ROLL</th></tr></thead><tbody><tr><td>a free die on every attempt</td><td>+3.5</td></tr><tr><td>a further +1 to cast and dispel</td><td>+1.0</td></tr><tr><td>channelling on 4+ rather than 5+</td><td>+0.67 dice per phase, about +2.3 spread across all casts</td></tr></tbody></table><p>These are not the same order of magnitude, and the channelling route cannot carry a top tier on its own: even channelling on a 3+ reaches only +1.33 dice a phase against the free die’s fourteen points of casting value across four attempts.</p><p>Two things make the free die defensible at the top of the ladder rather than merely strong.</p><p>It cannot be spammed. The rulebook states that each Wizard may only attempt to cast each spell once per turn, and a Level 4 knows four spells. The attempts are hard-capped at four, and they must be four different spells. The free die makes four casts substantially better; it does not buy a dozen cheap ones.</p><p>And its danger is answered by the rung below it. An extra die carries a one-in-six chance of another 1, which is the thing that turns a large throw into a miscast – and the second generation inherits the fourth’s rule, which eats the first 1. The two tiers were built for each other, and the ladder being cumulative is what delivers the antidote before the poison.</p><h3>What it costs, and why nothing else needs to</h3><p>The 6th edition ladder balanced itself with two things this edition does not have: character slots, and a flat bounty of victory points on the Slann’s head. WAP has neither. Its composition rules are percentages – a minimum of 25% on Core, up to 35% on Characters, and no single character or unit costing more than 25% of the army – and victory points are proportional to what a model cost rather than flat.</p><p>That 25% cap is the gate, and it is a harder one than the bounty ever was. At 2,000 points no character may cost more than 500, so the upper generations are illegal in an ordinary game and legal in a large one, without a word being written to say so. And the opportunity cost bites before the game starts: a hundred victory points in a 2,000-point game is 5% of the total, while a hundred extra points of Slann is a hundred points of Saurus that were never bought, paid whether or not the Slann is ever threatened.</p><p>Nothing else should be taken from it. The obvious currency would be combat power, and the Slann has none to spend – its profile reads Attacks 0. The next obvious is presence, and that runs backwards: Lizardmen venerate the Slann, and the older the spawning the more fiercely, so an elder Slann commands more rather than less. The proposal therefore only adds, and the price list is the whole of the counterweight.</p><h3>Prices, and the reasoning behind them</h3><p>Priced off the book’s own worked examples – the Disciplines each generation absorbs – rather than by adding up what the abilities do:</p><table><thead><tr><th>GENERATION</th><th>POINTS</th><th>WHAT THE STEP BUYS</th><th>ANCHORED ON</th></tr></thead><tbody><tr><td>5th</td><td>340</td><td>the Slann as printed, with lore-combining made innate</td><td>below today's 360 - see the power pool, above</td></tr><tr><td>4th</td><td>375</td><td>ignores the first die showing a 1</td><td>Soul of Stone at 25, for a much stronger effect</td></tr><tr><td>3rd</td><td>440</td><td>enemy wizards within 24" lose Ultimate Power</td><td>Becalming Cogitation and Harmonic Alignment, 55 together</td></tr><tr><td>2nd</td><td>560</td><td>a free die on every casting attempt</td><td>the only rung that adds dice - see above</td></tr></tbody></table><p>Every one of these is arguable and none is measured. What is measured is that the 2nd generation at 560 needs a 2,240-point game to be legal, and the 3rd at 440 is legal from 1,760 – which is the intended shape rather than an accident.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

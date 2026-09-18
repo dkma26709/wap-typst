@@ -508,3 +508,53 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
 )[
   A Kroxigor would cost three points less, at 44, and be subject to Stupidity in any turn it starts with no friendly Skink unit within 6 inches. Standing near Skinks it behaves exactly as it does today.
 ]
+
+#proposal("The Slann return to their generations", status: "under discussion",
+  page: "slann-generations",
+  why: [
+  The Disciplines of the Old Ones are the generation ladder, taken apart and given prices. Wandering Deliberations at 25 points lets a Slann combine its spells across the winds, which is what an ordinary fifth-generation Slann simply did; Soul of Stone at 25 softens a miscast, where the fourth generation shrugged them off; The Focused Rumination at 30 grants one free casting die a phase, where the second generation had one on every attempt; and Becalming Cogitation and Harmonic Alignment between them are what the third generation did to enemy magic. The chapter is not a substitute for generations. It is generations, disassembled and sold.
+
+  The first of those is the one that stings. A Wizard in this edition selects one Lore of Magic and stays in it -- the rulebook says so plainly, and every wizard in every book works that way. Combining spells across lores is not standard here and never has been. It is a purchase, with a price and a penalty attached, and it is the thing that made an ordinary Slann a Slann.
+
+  The book also already writes its characters this way and makes one exception. Saurus Leaders is an Oldblood at 140 and a Scar-Veteran at 90; Skink Chiefs is a High Chief at 70 and a Chief at 35; Skink Priests is a High Priest at 165 and a Priest at 60. The Slann is the only character in the army that comes in one grade, and the word is already printed in the book besides -- Lord Kroak's own rule is called First Generation Spawning.
+
+  And a ladder is the only route to the claim the army wants to make. Wizard Level is a hard ceiling: 163 Level 4 wizards across the corpus and nothing above, because the rulebook numbers spells 1 to 4 and lets a Wizard take spells of their own level or lower, so a fifth level would have nothing to reach for. The Slann is not the most expensive caster either -- the Verminlord is 450 and each Greater Daemon 400 -- and its +1 to cast and dispel is printed in Grand Cathay and Kingdoms of Ind as well. It cannot be made the best caster in the setting by level, by price, or by the bonus it already has. What no other book can answer is the same caster in four grades, the best of them priced beyond what an ordinary game can hold.
+
+  The baseline comes down rather than up, and the rulebook is why. The Winds of Magic are rolled by the size of the game and not by what was spent on wizards -- 2D3 power dice below 2,000 points and 4D3 above -- so a lone Level 4 Slann sees about nine dice in a phase at 2,000 points and around five below it. It has room for twenty-four: six dice a cast, four spells, one attempt each. A caster in this edition is throttled by a pool the game hands out, so paying more for one buys quality per cast and never more casts. That is the diminishing return, it is why a 360-point Slann is dear beside a 190-point Grey Seer who also combines his lores, and it is why the only rung on this ladder that adds dice is the one at the top.
+  ],
+  against: [
+  It only adds. Every rung buys power and gives nothing back, and points are the whole of the counterweight. The 6th edition ladder did not work that way: each step up consumed another character slot and put a hundred victory points on the Slann's head. This edition has neither mechanism -- composition is percentages and victory points are proportional to what a model cost -- so the honest answer is that the 25% single-model cap does the gating instead. That is an answer about what is legal rather than about what happens in the game, and a model that simply gets better for money is a shape worth distrusting.
+
+  Nothing was found to take instead, which is itself worth recording. Combat power is the obvious currency and the Slann has none -- its profile reads Attacks 0. Presence is the next candidate and it runs backwards, because Lizardmen venerate the Slann and the older the spawning the more fiercely, so an elder Slann commands more rather than less.
+
+  Three of the four grades will rarely be seen. At 2,000 points no character may cost more than 500, so a second-generation Slann at 560 needs a 2,240-point game to be legal at all. That is intended, but it means most of this proposal is writing for games nobody at this table plays often.
+
+  It also leaves the Disciplines chapter needing a second pass. With four of its thirteen absorbed or repriced, what remains has to be rewritten from flat additions into things that bend the Slann in a direction -- and only one template for that survives in the chapter afterwards, since Wandering Deliberations is the other and it retires into the fifth generation.
+
+  Last, Lord Kroak contradicts the ladder on the page unless it is said out loud. His rule is First Generation Spawning and the ladder says the first generation cannot be fielded. The bar is on the living, and he is a mummified corpse who is barely present even in the lore -- but both entries have to say so or they argue with each other in print.
+  ],
+  cost: [
+  The Slann Mage-Priest entry becomes four profiles and four prices, in the shape Saurus Leaders and Skink Chiefs already use. Every Lizardmen list moves with it, because the baseline Slann goes from 360 to 340 -- down, despite gaining the lore-combining, for the reason set out below.
+
+  Wandering Deliberations retires into the fifth generation. Soul of Stone stays -- it acts on the miscast you do suffer rather than on whether you suffer one, so the fourth generation does not make it redundant -- but it costs less than 25 now that the commoner half of its job is innate. The Focused Rumination, Becalming Cogitation and Harmonic Alignment all stay purchasable, since a fifth-generation Slann may still want them.
+
+  The eleven remaining Disciplines want rewriting as bends rather than additions, which is a separate piece of work and the larger half of it.
+  ],
+  examples: [
+  *The ladder.* Each rung is cumulative on the ones below it:
+
+  #minitable(("Generation", "Points", "What it adds"), ("5th", "340", "the Slann as printed, combining its spells across any lore it has access to", "4th", "375", "ignores the first die showing a 1 in any casting roll", "3rd", "440", "enemy Wizards within 24\" gain no additional dice from Ultimate Power, casting or dispelling", "2nd", "560", "one free additional die on every casting attempt", "1st", "--", "cannot be fielded; none lives"))
+
+  *Why the fourth generation resists rather than is immune.* A miscast is two or more unmodified 1s, counting every die however granted, so ignoring the first 1 means three are needed:
+
+  #minitable(("Dice thrown", "Miscast today", "Fourth generation"), ("2", "2.8%", "0%", "4", "13.2%", "1.6%", "6", "26.3%", "6.2%"))
+
+  Flat immunity would delete the decision, because a Slann that cannot miscast throws six dice at everything for ever. This leaves it safe at the two and three dice where it spends most of the game and hands back a real risk when it reaches for six.
+
+  *What the third generation costs an enemy.* Ultimate Power grants a free die for every natural 6. Denied it, a wizard throwing four dice loses 0.67 dice and about 2.3 of casting value -- roughly the difference between landing a level 3 spell reliably and not. It taxes commitment, since the harder they push the more it takes. The 24" is the distance at which the enemy army begins: deployment places units more than 12" from the centre line, so a shorter bubble on a model with Movement 4 would reach nothing for the first turns of the game.
+
+  *Why the free die is safe at the top and not below it.* An extra die carries a one-in-six chance of another 1, which is what turns a large throw into a miscast. The second generation inherits the fourth's rule, which eats the first 1. The ladder being cumulative is what delivers the antidote before the poison, and it is also capped: the rulebook allows each Wizard one attempt per spell per turn, and a Level 4 knows four, so the free die improves four casts rather than buying a dozen cheap ones.
+  ],
+)[
+  The Slann Mage-Priest would come in grades, as every other character in the book already does. A fifth-generation Slann is the model printed today, with the combining of its spells across lores made innate rather than bought for 25 points. Above it each generation is cumulative: the fourth ignores the first die showing a 1 in any casting roll, the third denies Ultimate Power to enemy Wizards within 24", and the second adds a free die to every casting attempt. The first generation cannot be fielded, because in the lore none still lives.
+]
