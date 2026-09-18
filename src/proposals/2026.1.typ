@@ -193,35 +193,56 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
   The rival to the proposal above, and the opposite instinct. Rather than deriving the number from anything, each monster would simply print its own: how many Stomps it makes, and against what. A Stegadon might keep D6 against a Line of Sight value of 3 or less; a Carnosaur might make 2, and only against 2 or less. Where a monster wants more than one line, it gets more than one line.
 ]
 
-#proposal("Split Weapon Skill into attack and defence", status: "under discussion",
+#proposal("Rebuild Weapon Skill as two numbers and a gap", status: "under discussion",
+  page: "melee-skill",
   why: [
-  One number is answering two questions, and they are not the same question. A halberdier drilled to hold a line and a duellist trained to kill are both Weapon Skill 3, and there is no way to say that one is hard to hit while the other is good at hitting. Every model in the game is exactly as good at defending itself as it is at attacking, because one digit does both jobs.
+  One number is answering two questions, and they are not the same question. A halberdier drilled to hold a line and a duellist trained to kill are both Weapon Skill 3, and there is no way to say that one is hard to hit while the other is good at hitting. The book describes the characteristic in both roles in a single sentence without remarking on it: Weapon Skill defines how skilled a model is to fight in close combat, and a model at Weapon Skill 0 is unable to attack with its normal attacks or defend itself in close combat. Two jobs, named in one breath, carried by one digit.
 
-  The book already describes the stat in both roles without remarking on it. Weapon Skill "defines how skilled a model is to fight in close combat", and a model at Weapon Skill 0 "is unable to attack with its normal attacks or defend itself in close combat". Two jobs, named in one sentence, carried by one number.
+  The second complaint is the chart, and it is a measurement rather than a feeling. Weighted across the 2,007 profiles in the edition that carry a Weapon Skill, moving a model one rung changes the roll in two matchups out of five and changes nothing at all in the other three, as attacker and as defender alike. An attacker at Weapon Skill 5 hits Weapon Skill 5, 6, 7, 8, 9 and 10 on the same 4+. Ten rungs resolve into five results, and most of what resolution there is sits at the bottom of the chart where almost nothing stands.
 
-  The seam shows wherever two profiles meet. When a Cavalry model is attacked the rules say to use the highest Weapon Skill of rider or mount, so a knight is defended by whichever of the two is better at swinging a weapon. With a defensive value printed, the model would simply have one.
+  That would be survivable if the chart were at least regular, and it is not. The same advantage is priced differently depending on where it is taken: two rungs of advantage is a 2+ at Weapon Skill 3 against 1, and a 3+ at 5 against 3 and at 10 against 8. So the ladder cannot simply be respread to open the crowded bottom, because a profile that moves lands on whichever boundary happens to sit beneath it. Bump every profile in the corpus up a rung and 7% of matchups change, by no principle anybody could state.
 
-  This is the same argument as taking armour penetration out of Strength, and it deserves to be accepted or refused for the same reasons. A characteristic that answers two questions cannot be tuned for either of them.
+  Reading nothing but the gap repairs both at once. The chart becomes symmetric by construction and five rows replace a hundred cells, which is a chart a player can hold in their head. Absolute Weapon Skill then stops meaning anything mechanically, and that is the point rather than a side effect: shifting the whole ladder becomes a true no-op, so where the standard soldier sits is settled on what the numeral tells a reader instead of on what it quietly does.
+
+  The split is what makes a chart that coarse affordable. With one number, a designer who wants a model two rungs better at attacking must make it two rungs harder to hit as well, and with a step every two rungs there is no way to ask for less than that. With two, the model is placed where it was meant to land. The halves are not separate proposals that happen to agree -- each is what makes the other workable.
+
+  They also cost less together than apart. The standing objection to splitting the characteristic has always been that nothing can be inherited: somebody must decide, for every profile in the game, which half of its Weapon Skill it keeps and what the other half becomes. That objection holds only while the ladder is otherwise standing still. A respread visits all 2,007 profiles regardless, so doing the three at once is one pass rather than three.
   ],
   against: [
-  It is a new column on every profile in the game and a rewrite of the chart at the centre of the combat phase. Thirty-two books, and every statline in them.
+  Three changes arrive as one thing and cannot be refused in part. Somebody who wants the split and dislikes a step every two rungs has nowhere to stand, and the answer that they are inseparable is convenient as well as true.
 
-  The single stat is not only economy, it is a constraint that has kept close combat legible. One number, one comparison, and a player who knows their own Weapon Skill knows both halves of the fight. Splitting it doubles what has to be held in mind at the moment a player is already holding Strength, Toughness and Initiative.
+  Combat gets about a ninth less lethal. The average chance of a hit falls from 56.3% to 50.0%, with 38% of matchups harder and 1% easier. Every combat runs longer, which quietly rewards whoever brought more bodies and taxes the side that paid for quality. The 50.0% is forced rather than chosen -- a chart reading only the gap is symmetric under swapping the two models, so its mean is the middle of the die whatever the step size -- but a system-wide change in lethality should be argued for, not smuggled in inside a chart.
 
-  And unlike the armour penetration split, there is nothing for the second value to be inherited from. That proposal can read most of its numbers off the chart it replaces, so almost nothing moves on the table. This one asks somebody to decide, for every profile in the game, which half of its Weapon Skill it keeps and what the other half becomes.
+  And the flatness is not repaired. A step every two rungs leaves 63% of matchups unmoved by a rung, slightly worse than the 59% it replaces, because a step every two rungs means every other rung does nothing by definition. It shows up as promotions alternating in value: Weapon Skill 3 to 4 buys 4.4 points of hit chance where 4 to 5 buys 8.0. That is only tolerable if the ladder is laid out in even classes, so that one rung honestly means a shade and two mean a class -- which is the respread doing work the chart cannot do alone. One step every rung would cut the dead matchups to 34% and make every promotion worth the same, at the price of turning a two-rung gap into a 6+ and making this the loudest characteristic on the profile.
+
+  Last, the single number is not only economy. It is a constraint that has kept close combat legible: one value, one comparison, and a player who knows their own Weapon Skill knows both halves of the fight. Two columns double what has to be held in mind at the moment a player is already holding Strength, Toughness and Initiative.
   ],
   cost: [
-  A second characteristic on every profile in thirty-two books, and a new To Hit chart to cross the two. Every rule that reads or alters Weapon Skill then has to say which of them it means: Melkoth's Mystifying Miasma reduces it, Big 'Uns and Red Crested Skinks add to it, and each of those becomes a choice rather than a copy.
+  Two numbers on every profile in thirty-three books, 2,007 of them, and a new chart at the centre of the combat phase. Neither number can be read off the old one, because the placements are the respread.
 
-  The rules that reconcile two profiles want rewriting rather than adjusting. Cavalry take the highest Weapon Skill of rider and mount; war machine crews use their own. Both get simpler once a defensive number is printed, and both must be visited.
+  Every rule that reads or alters Weapon Skill must then say which of the two it means. Melkoth's Mystifying Miasma reduces it; Big 'Uns and Red Crested Skinks add to it; each becomes a choice rather than a copy. The rules that reconcile two profiles want rewriting rather than adjusting: Cavalry take the highest Weapon Skill of rider and mount, which leaves a knight defended by whichever of the two swings better, and war machine crews use their own.
+
+  Two decisions the formula forces. Unclamped it calls for an automatic hit wherever the gap reaches six, which is 0.6% of matchups. The rulebook does grant automatic hits, to magic missiles and Impact Hits and a number of special rules, but always by a rule that says so; one arriving out of the chart by arithmetic is a different thing, because a blow with no roll to make is a blow that no Weapon Skill and no modifier can ever touch. So it floors at 2+. At the other end it runs past 6+ and would bring the roll-a-6-then-roll-again machinery into close combat for the first time; capping at 6+ keeps the phase to a single roll.
   ],
   examples: [
-  *What the chart becomes.* Today it crosses Weapon Skill with Weapon Skill: equal numbers hit on 4+, an advantage hits on 3+, and more than double hits on 2+. Under this it crosses Melee Attack with Melee Defence and reads exactly the same way. What changes is that the two numbers are drawn from different columns of the profile, so a model may be good at one and poor at the other.
+  *The chart, entire.* Subtract the defender's Melee Defence from the attacker's Melee Attack and read the difference:
 
-  *Where it pays.* A Skink is Weapon Skill 2 and a Saurus Warrior Weapon Skill 3, and the difference is meant to be that the Saurus was spawned to fight and the Skink was not. Today that also makes the Skink easier to hit, which is not what anybody was describing. Give it a low Melee Attack and a respectable Melee Defence and it becomes the thing the artwork shows: quick, hard to pin down, and feeble when it does connect.
+  #minitable(("Melee Attack minus Melee Defence", "To Hit"), ("+4 or more", "2+", "+2 or +3", "3+", "\-1, 0 or +1", "4+", "\-2 or \-3", "5+", "\-4 or less", "6+"))
+
+  *The ladder it wants underneath it.* Four classes, two rungs apart, so that a class difference is always exactly one step of the chart: the untrained at 2, the trained soldier at 4, the veteran at 6, the hero at 8. Weapon Skill 1 keeps what it already means -- it holds six profiles in two thousand, and they are two Zombie entries, a Corpse Cart's dead, a palanquin-borne Slann, a Mechanical Steed and Kairos Fateweaver -- so it is where a model that does not fight goes. The odd rungs are the shading between the classes, and they are honest about it: one rung means a shade better and often nothing, two rungs mean a class above and always a step.
+
+  *Where it pays.* The Lizardmen have three castes and one characteristic to tell them apart with:
+
+  #minitable(("", "Melee Attack", "Melee Defence", "Reads as"), ("Skink", "2", "4", "cannot hurt you, hard to catch", "Kroxigor", "3", "2", "swings well enough, impossible to miss", "Saurus Warrior", "5", "4", "spawned for it"))
+
+  The Skink proves the case. At Weapon Skill 2 today it is both feeble and easy to kill, and only the first was ever the intention. The Kroxigor is the inverse and equally inexpressible: a builder pressed into war, strong enough that the swing lands and slow enough that anything trained hits it whenever it likes. Neither model can be written with a single number, at any value, because one number forces the two halves to agree.
+
+  Nothing already settled is disturbed by it. A Saurus at Weapon Skill 4 hits a Kroxigor at Weapon Skill 3 on a 3+ today and is hit back on a 4+; Melee Attack 5 against Melee Defence 2 is a 3+ and Melee Attack 3 against Melee Defence 4 is a 4+. What the split buys is the room to say something about the Skink standing beside them.
+
+  *One convention falls out of it.* A profile whose Melee Attack exceeds its Melee Defence by one fights its own kind on a 4+, and so does a profile where the two are equal, because the truncation absorbs the odd rung. So the gap between a model's own two numbers is the whole of what it says about itself: nothing or one is an ordinary fighter, two is aggressive, minus two is defensive.
   ],
 )[
-  Weapon Skill would become two characteristics: one for how well a model lands a blow, and one for how hard the model is to hit. The To Hit chart would cross the attacker's *Melee Attack* against the defender's *Melee Defence*, rather than crossing a single number with itself.
+  Weapon Skill would become two characteristics -- _Melee Attack_ for how well a model lands a blow, _Melee Defence_ for how hard it is to hit -- and the To Hit chart would read nothing but the difference between the attacker's Melee Attack and the defender's Melee Defence, one step for every two rungs of it. A hundred cells become five rows. The ladder is then respread against four classes set two rungs apart, so that a class difference is always one step and the rungs between them are shading.
 ]
 
 #proposal("Rider and mount should not add their hides together", status: "under discussion",

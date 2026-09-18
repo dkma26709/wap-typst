@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melee skill, measured</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>Melee skill, measured</h2><p>Three claims sit behind the proposal, and each of them is a number rather than an opinion. This page is where the numbers are.</p><p>Everything here is measured across the newest version of each of the thirty-three books in the edition, which between them carry 2,007 profiles with a Weapon Skill, and against the To Hit chart printed in the rulebook. Where a figure is weighted, it is weighted by how common each Weapon Skill actually is in that corpus, so that a matchup between two Weapon Skill 3 troops counts for as much as it happens.</p><h3>What the ladder looks like now</h3><p>Weapon Skill is better spread than Initiative is. All ten rungs are occupied, and the top half carries real weight rather than a handful of named characters.</p><table><thead><tr><th>WEAPON SKILL</th><th>PROFILES</th><th>SHARE</th></tr></thead><tbody><tr><td>1</td><td>6</td><td>0.3%</td></tr><tr><td>2</td><td>158</td><td>7.9%</td></tr><tr><td>3</td><td>700</td><td>34.9%</td></tr><tr><td>4</td><td>491</td><td>24.5%</td></tr><tr><td>5</td><td>273</td><td>13.6%</td></tr><tr><td>6</td><td>213</td><td>10.6%</td></tr><tr><td>7</td><td>102</td><td>5.1%</td></tr><tr><td>8</td><td>50</td><td>2.5%</td></tr><tr><td>9</td><td>11</td><td>0.5%</td></tr><tr><td>10</td><td>3</td><td>0.1%</td></tr></tbody></table><p>The bottom is where the crowding is. Weapon Skill 1 holds six profiles in two thousand – two Zombie entries, the Corpse Cart’s Restless Dead, a Slann carried on a palanquin, the Empire’s Mechanical Steed and Kairos Fateweaver. The rung does not mean <em>fights badly</em>; it means <em>does not fight</em>, and it is reserved for the dead, the borne and the mechanical.</p><p>That leaves exactly one rung between not fighting at all and being an ordinary soldier, and Weapon Skill 2 is carrying six different ideas at once: peasants, militia and slaves; Halflings; war machine crews; Skinks; and, at the other end of the scale entirely, the Cygor, the Dread Maw and the Arcanadon. A stitched corpse and a blind Beastmen monster share a rung because there is nowhere else for either of them to stand.</p><h3>What one rung of it is worth</h3><p>The chart is the reason the spread does not pay. Weighted across the corpus, moving a model one rung changes the roll in two matchups out of five, and changes nothing at all in the other three.</p><table><thead><tr><th>MOVING A MODEL ONE RUNG</th><th>CHANGES NOTHING IN</th></tr></thead><tbody><tr><td>as the defender</td><td>59% of matchups</td></tr><tr><td>as the attacker</td><td>60% of matchups</td></tr></tbody></table><p>That is not an average hiding a few flat spots. It is the shape of the chart. Read along any row and the results run in long identical stretches:</p><table><thead><tr><th>ATTACKER</th><th>DISTINCT RESULTS ACROSS ALL TEN TARGETS</th><th>ITS LONGEST FLAT RUN</th></tr></thead><tbody><tr><td>Weapon Skill 3</td><td>5</td><td>hits WS3, 4, 5 and 6 all on 4+</td></tr><tr><td>Weapon Skill 4</td><td>4</td><td>hits WS4 through WS8 all on 4+</td></tr><tr><td>Weapon Skill 5</td><td>3</td><td>hits WS5 through WS10 all on 4+</td></tr><tr><td>Weapon Skill 6</td><td>3</td><td>hits WS6 through WS10 all on 4+</td></tr></tbody></table><p>A swordmaster at Weapon Skill 6 hits a militiaman’s captain, a Chaos Lord and a Phoenix King with precisely the same roll. Ten rungs resolve into five results, and most of the resolution is at the bottom of the chart where almost nothing stands.</p><h3>Why the ladder cannot simply be respread</h3><p>The obvious repair is to move the profiles rather than the chart: shift the standard soldier up to Weapon Skill 4 and open the bottom rungs for degrees of the untrained. It does not work, for a reason that is easy to miss.</p><p>The chart is irregular. The same advantage is priced differently depending on where on the ladder it is taken. Two rungs of advantage is a 2+ at the bottom of the chart, a 3+ in the middle, and a 3+ at the top:</p><table><thead><tr><th>A TWO-RUNG ADVANTAGE</th><th>TO HIT</th></tr></thead><tbody><tr><td>Weapon Skill 3 against 1</td><td>2+</td></tr><tr><td>Weapon Skill 5 against 3</td><td>3+</td></tr><tr><td>Weapon Skill 8 against 6</td><td>3+</td></tr><tr><td>Weapon Skill 10 against 8</td><td>3+</td></tr></tbody></table><p>So a respread cannot be reasoned about. Move a profile up a rung and what happens to it depends on which boundary it happens to land on, not on any stated rule. Bump every profile in the corpus up one rung and 7% of matchups change – a small number, but an arbitrary one, arrived at by no principle and explicable to nobody.</p><p>The chart has to be fixed before the ladder can be.</p><h3>The chart proposed</h3><p>Subtract the defender’s Melee Defence from the attacker’s Melee Attack. Read the difference:</p><table><thead><tr><th>MELEE ATTACK MINUS MELEE DEFENCE</th><th>TO HIT</th></tr></thead><tbody><tr><td>+4 or more</td><td>2+</td></tr><tr><td>+2 or +3</td><td>3+</td></tr><tr><td>-1, 0 or +1</td><td>4+</td></tr><tr><td>-2 or -3</td><td>5+</td></tr><tr><td>-4 or less</td><td>6+</td></tr></tbody></table><p>That is the whole chart. A hundred cells become five rows, and the five rows can be held in the head, which the hundred cells never could.</p><p>It is symmetric by construction, because it reads nothing but the gap. The grid it generates, for comparison with the one it replaces:</p><table><thead><tr><th>MA \ MD</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead><tbody><tr><td>1</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td></tr><tr><td>2</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td></tr><tr><td>3</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td><td>6+</td><td>6+</td><td>6+</td></tr><tr><td>4</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td><td>6+</td><td>6+</td></tr><tr><td>5</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td><td>6+</td></tr><tr><td>6</td><td>2+</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td><td>6+</td></tr><tr><td>7</td><td>2+</td><td>2+</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td><td>5+</td></tr><tr><td>8</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td><td>5+</td></tr><tr><td>9</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td><td>4+</td></tr><tr><td>10</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>2+</td><td>3+</td><td>3+</td><td>4+</td><td>4+</td></tr></tbody></table><p>Two clamps are doing work in that grid and both are deliberate. Unclamped, the formula asks for an automatic hit wherever the gap reaches six – 0.6% of matchups as the corpus stands. The rulebook does grant automatic hits – to magic missiles, to Impact Hits, and to a number of special rules – but always by a rule that says so, and one arriving out of the chart by arithmetic is a different thing: a blow with no roll to make is a blow that no Weapon Skill and no modifier can ever touch. So the chart floors at 2+. At the far end it would run past 6+ and want the <em>roll a 6, then roll again</em> machinery the rulebook already uses for long shots and for Strength against high Toughness. Capping at 6+ instead keeps close combat to a single roll.</p><p>Because only the gap is read, where the ladder sits stops mattering. Shift every profile in the corpus up a rung and nothing whatever changes – not 7% of matchups, none of them. The question of whether the standard soldier should be Weapon Skill 3 or 4 becomes a question about what the numeral tells a reader, which is the right sort of question and the only kind this chart leaves open.</p><h3>What it costs</h3><p>Combat gets less lethal. Across the corpus the average chance of a hit falls from 56.3% to 50.0%: 38% of matchups get harder, 1% easier, and the rest are untouched.</p><table><thead><tr><th>CHART</th><th>AVERAGE HIT CHANCE</th><th>A RUNG CHANGES NOTHING IN</th></tr></thead><tbody><tr><td>today</td><td>56.3%</td><td>59% / 60%</td></tr><tr><td>one step every two rungs</td><td>50.0%</td><td>63% / 63%</td></tr><tr><td>one step every rung</td><td>50.0%</td><td>34% / 34%</td></tr></tbody></table><p>The 50.0% is forced rather than chosen. A chart that reads only the gap is symmetric under swapping the two models, so the average across any corpus is the middle of the die whatever the step size. Worth knowing before it is read as a coincidence.</p><p>The flatness, note, is not repaired. One step every two rungs leaves 63% of matchups unmoved by a rung, which is slightly worse than the 59% it replaces. That is inherent: a step every two rungs means every other rung does nothing, by definition. It shows up as promotions alternating in value:</p><table><thead><tr><th>PROMOTION</th><th>TODAY, HIT CHANCE GAINED</th><th>PROPOSED</th></tr></thead><tbody><tr><td>Weapon Skill 2 to 3</td><td>+6.7%</td><td>+5.9%</td></tr><tr><td>Weapon Skill 3 to 4</td><td>+7.2%</td><td>+4.4%</td></tr><tr><td>Weapon Skill 4 to 5</td><td>+5.5%</td><td>+8.0%</td></tr><tr><td>Weapon Skill 5 to 6</td><td>+2.3%</td><td>+6.3%</td></tr><tr><td>Weapon Skill 6 to 7</td><td>+7.6%</td><td>+8.5%</td></tr></tbody></table><p>Today’s column is erratic and the proposed column alternates. Neither is obviously better read as a list of numbers. What makes the second one defensible is the ladder underneath it, and that is the next section.</p><h3>The ladder</h3><p>The chart’s coarseness is only tolerable if the ladder is laid out to match it. Four classes, two rungs apart, so that a class difference is always one step of the chart:</p><table><thead><tr><th>RUNG</th><th>CLASS</th><th>WHO</th></tr></thead><tbody><tr><td>2</td><td>untrained</td><td>peasants, levies, crews, labourers, beasts that fight with their bodies</td></tr><tr><td>4</td><td>trained</td><td>the soldier a battle line is made of</td></tr><tr><td>6</td><td>veteran</td><td>the household guard, the elite of an army</td></tr><tr><td>8</td><td>hero</td><td>a lord, a champion, a monster bred for nothing else</td></tr></tbody></table><p>The odd rungs are the shading between them, and they are honest about being shading: one rung means <em>a shade better</em> and often nothing at all, two rungs mean <em>a class above</em> and always a step. That is a system a player can be told in one sentence, which the present chart is not.</p><p>Weapon Skill 1 keeps its meaning and empties further. It is where a model that does not fight goes, and under this ladder it stops being adjacent to the trained soldier by two rungs and starts being three below the untrained labourer, which is what the six profiles on it were always describing.</p><p>Nothing above is a placement pass. Four anchors are settled here; the two thousand profiles that have to be placed against them are not, and each one is an argument that can be had without disturbing the others.</p><h3>The split, and what it buys</h3><p>Two numbers rather than one: Melee Attack for how well a model lands a blow, Melee Defence for how hard the model is to hit.</p><p>The pairing is what makes a chart this coarse affordable. With a single number, a designer who wants a model two rungs better at attacking has to make it two rungs harder to hit as well, and with a step every two rungs there is no way to ask for less. With two numbers the model is simply placed where it was meant to land.</p><p>It also says things the present system cannot say at any value. A model at Melee Attack 4 and Melee Defence 6 is ordinary at landing blows and very hard to land one on – a duellist, a fencer, a skirmisher who is never quite where the blow falls. There is no Weapon Skill that describes that model, because one number forces the two halves to agree.</p><p>The Lizardmen are the worked example, because the army has three castes and one characteristic to tell them apart with:</p><table><thead><tr><th></th><th>MELEE ATTACK</th><th>MELEE DEFENCE</th><th>READS AS</th></tr></thead><tbody><tr><td>Skink</td><td>2</td><td>4</td><td>cannot hurt you, hard to catch</td></tr><tr><td>Kroxigor</td><td>3</td><td>2</td><td>swings well enough, impossible to miss</td></tr><tr><td>Saurus Warrior</td><td>5</td><td>4</td><td>spawned for it</td></tr></tbody></table><p>The Skink is the one that proves the case. At Weapon Skill 2 today it is both feeble and easy to kill, and only the first of those was ever the intention; the artwork and the prose describe something quick that cannot land a blow, which is Melee Attack 2 and Melee Defence 4. The Kroxigor is the inverse and equally inexpressible: a labourer pressed into war, strong enough that the swing lands and slow enough that anything trained will hit it whenever it likes.</p><p>The placement also preserves what has already been settled. Under the House edition today a Saurus at Weapon Skill 4 hits a Kroxigor at Weapon Skill 3 on a 3+, and the Kroxigor hits back on a 4+. Melee Attack 5 against Melee Defence 2 is a 3+, and Melee Attack 3 against Melee Defence 4 is a 4+. The relationship is unchanged; what the split buys is the room to say something about the Skink standing next to them.</p><p>One convention falls out and is worth writing down. A profile whose Melee Attack exceeds its Melee Defence by one fights its own kind on a 4+, and so does a profile where the two are equal – the truncation absorbs the odd rung. So the gap between a model’s own two numbers is the whole of what it says about itself: nothing or one is an ordinary fighter, two is aggressive, minus two is defensive. Two defensive models meeting each other grind at 5+ apiece, which is a consequence to want deliberately rather than to discover.</p><h3>The alternatives, measured</h3><p>Three other routes were measured before this one.</p><p><strong>Leave it alone.</strong> Defensible. The chart is flat and irregular, and neither has stopped a game. The cost of changing it is 2,007 profiles.</p><p><strong>Respread the ladder and keep the chart.</strong> This is the version that does not survive contact with the numbers. A uniform bump changes 7% of matchups by no rule anybody can state, and a non-uniform respread lands each profile on whichever irregular boundary sits beneath it. The chart has to move first.</p><p><strong>One step every rung instead of every two.</strong> This is the serious rival. It cuts the dead matchups from 63% to 34%, less than half what the present chart leaves, and every promotion becomes worth the same as every other, which removes the alternation entirely. What it costs is sharpness: a two-rung gap becomes a 6+ to hit, so a class difference nearly stops the fight, and Weapon Skill becomes the loudest characteristic on the profile by a distance. The same system at a different scale, with the classes one rung apart instead of two. It is a real fork and the case for it is not weak.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>
