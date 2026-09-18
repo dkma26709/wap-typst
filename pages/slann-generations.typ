@@ -199,12 +199,15 @@ being cumulative is what delivers the antidote before the poison.
 
 == What it costs, and why nothing else needs to
 
-The 6th edition ladder balanced itself with two things this edition does not
-have: character slots, and a flat bounty of victory points on the Slann's
-head. WAP has neither. Its composition rules are percentages -- a minimum of
-25% on Core, up to 35% on Characters, and no single character or unit costing
-more than 25% of the army -- and victory points are proportional to what a
-model cost rather than flat.
+The 6th edition ladder balanced itself with two things: character slots, and a
+bounty of victory points on the Slann's head. Only the first is genuinely
+absent here. Composition is percentages -- a minimum of 25% on Core, up to 35%
+on Characters, and no single character or unit costing more than 25% of the
+army -- so there is no slot to consume. But a victory-point bounty does exist
+in this edition, on a purchasable upgrade: the Dwarfs' Rune of the
+Dishonoured awards the enemy victory points equal to the bearer's entire cost
+if it survives the battle. So that half of the counterweight was available,
+and this proposal declines it rather than lacking it.
 
 That 25% cap is the gate, and it is a harder one than the bounty ever was. At
 2,000 points no character may cost more than 500, so the upper generations
