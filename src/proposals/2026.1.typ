@@ -245,6 +245,54 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
   Weapon Skill would become two characteristics -- _Melee Attack_ for how well a model lands a blow, _Melee Defence_ for how hard it is to hit -- and the To Hit chart would read nothing but the difference between the attacker's Melee Attack and the defender's Melee Defence, one step for every two rungs of it. A hundred cells become five rows. The ladder is then respread against four classes set two rungs apart, so that a class difference is always one step and the rungs between them are shading.
 ]
 
+#proposal("Kit should move melee skill, not only armour", status: "under discussion",
+  page: "melee-kit",
+  why: [
+  The weapons chapter can make a model hit harder, hit sooner and hit more often, and has no way whatever to make it harder to hit. That is half of what holding a shield is for, and the book has nowhere to put it, because the single Weapon Skill cannot be lowered by a great weapon without also making the model worse at swinging one.
+
+  So the weight of a weapon is priced in Initiative instead. A great weapon costs -2 Initiative, which is strike order rather than clumsiness: the penalty is severe on a Dark Elf and free on a Dwarf who was striking last regardless. The same weapon, the same drawback, and two entirely different prices paid, for no reason anybody designed.
+
+  Defence is armour and Parry, and both are saves that do not care who is holding them. A Parry of 6+ is worth the same 17% to a peasant and to a Phoenix King, which is a strange thing to say about a skill. And the book prints a single shield doing two jobs that do not belong together -- armour in close combat, and a further point against missiles to the front of a model on foot, which is a tower shield's trick bolted onto every shield in the game.
+
+  Splitting Weapon Skill opens all of this at once, and it would be a waste to split it and then leave the weapons chapter saying what it says today.
+  ],
+  against: [
+  It cannot stand on its own. Every line of it presumes Melee Attack and Melee Defence exist, so it is a rider on a proposal that may not be taken, and it should be read as one.
+
+  A shield stops being worth the same to everybody. A 6+ Parry save is 17% of the wounds that reach it whoever holds it; a point of Melee Defence is a step of the chart or nothing at all depending on the attacker's Melee Attack, so a Saurus at Melee Defence 4 and a Dwarf at 5 get different value from an identical shield. That is the same property every number on the profile has under the new chart, but it is new for equipment, and it is the sort of thing a player discovers at the table rather than reads.
+
+  It also adds a second thing to check at the moment of rolling. Today a player compares two Weapon Skills; here they compare two numbers, each of which may have been moved by what the two models are carrying and by the arc the blow comes from. The chart got much simpler and the inputs to it did not.
+
+  And the Melee Attack axis is licensed for exactly one weapon. That is either honest restraint or a rule written for a case that does not exist yet -- the nine close combat weapons differ by reach and by weight, which are a Melee Defence axis and a Strength axis, and only the flail is genuinely inaccurate. The clubs, maces, whips and rapiers that would use the axis properly are named hundreds of times in the books and have no rules of their own.
+  ],
+  cost: [
+  Every entry carrying a shield must say which class it is -- 1,306 mentions of shields and 138 of bucklers across the corpus -- though medium is a safe default and most of them are medium.
+
+  Parry stops being a save, which means rereading everything that grants one. The Parrying Blade grants Parry (5+), and a numbered save has no meaning once Parry is a characteristic modifier. Parry is currently cumulative with other sources of Parry, which needs a cap once it is a modifier instead: +2 total, which a spear and a shield already reach unaided.
+
+  The weapons chapter gains a Melee Defence line on nine entries, and Frenzy gains one. Nothing needs repricing: the flail is placed so that its standing against the great weapon is what it is today, which matters because fifteen armies carry flails, across twenty-nine of the books.
+  ],
+  examples: [
+  *The shield, in three classes.* The one shield the book prints is a medium shield with a tower shield's missile clause attached:
+
+  #minitable(("Class", "Armour", "Melee Defence", "Against missiles"), ("Light", "--", "+1", "--", "Medium", "+1", "+1", "--", "Heavy", "+1", "--", "+1 to the front, on foot"))
+
+  A light shield is bought for the blade-work and gives up the armour, a heavy one for the armour and gives up the blade-work.
+
+  *The kit ladder.* Measured against the ten profiles the split proposal settles, with a hand weapon and a medium shield as the yardstick:
+
+  #minitable(("Loadout", "Melee Defence", "Their chance to hit"), ("Spear and shield", "+2", "-7.3%", "Hand weapon and shield", "+1", "the yardstick", "Two hand weapons", "+1", "the yardstick", "Hand weapon alone, polearm, pike, heavy shield", "--", "+6.2%", "Flail", "-1, and -1 Melee Attack", "+12.0%", "Great weapon", "-2", "+18.3%"))
+
+  *Spear and pike stop being the same weapon.* A spear requires two hands only when bracing against a charge, so it keeps its shield and reaches +2 -- a full step harder to hit than the line beside it. A pike requires two hands always, gives the shield up, and buys three ranks of attacks with it. Defensive block or offensive one, which is a trade nothing else in the chapter offers.
+
+  *The flail is wild rather than heavy.* At -1 Melee Attack and -1 Melee Defence it costs a single point more than a great weapon in total and spends it somewhere else. Written as -3 Melee Defence instead it would be strictly worse than a great weapon and nobody would take one. A chain swung in a wide arc is hard to aim and hard to step inside, so missing more and blocking better is also the better description.
+
+  *A pair of modifiers is not worth two points.* Frenzy takes -1 Melee Defence and no Melee Attack bonus, because it already grants +1 Attack. Worth knowing why the pair was never tempting: a +1 Melee Attack and a -1 Melee Defence land on two different rolls -- one on the model's own, one on the enemy's -- so they can never combine into a step the way a shield traded for a great weapon does. Split modifiers are two soft nudges; only modifiers landing on the same roll add up.
+  ],
+)[
+  Equipment would move Melee Defence rather than only armour. Shields come in three classes -- light for the block, heavy for the armour, medium for both -- and Parry stops being an invulnerable save and becomes +1 Melee Defence, keeping the restrictions it already has against flank and rear attacks and against blows three or more Strength above the model's own. A weapon then states a Melee Defence modifier: a spear or a pike holds an enemy off, a great weapon or a flail leaves nothing to block with. A weapon modifies Melee Attack only where it is genuinely inaccurate, which today means the flail alone.
+]
+
 #proposal("Rider and mount should not add their hides together", status: "under discussion",
   why: [
   The paragraph disagrees with itself in consecutive sentences. One says that when attacking a Cavalry model you always use the highest Weapon Skill, Toughness and Wounds of rider or mount. The next says that if both have armour saves, these may be combined. Three characteristics take the better of the two and the fourth adds them together, and nothing anywhere says why the save is different.

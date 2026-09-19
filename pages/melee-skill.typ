@@ -219,9 +219,10 @@ that does not fight goes, and under this ladder it stops being adjacent to
 the trained soldier by two rungs and starts being three below the untrained
 labourer, which is what the six profiles on it were always describing.
 
-Nothing above is a placement pass. Four anchors are settled here; the
-two thousand profiles that have to be placed against them are not, and each
-one is an argument that can be had without disturbing the others.
+Nothing above is a placement pass. Four anchors are settled here, and nine
+species are placed against them in the section below; the two thousand
+profiles are not, and each one is an argument that can be had without
+disturbing the others.
 
 == The split, and what it buys
 
@@ -274,6 +275,50 @@ aggressive, minus two is defensive. Two defensive models meeting each other
 grind at 5+ apiece, which is a consequence to want deliberately rather than
 to discover.
 
+== The lattice
+
+Nine species are placed. They were settled one at a time, and they turned out
+to make a grid rather than a list -- which is worth seeing before anything
+else is placed against them.
+
+Read the pair as two independent things. Its *centre*, the average of the two
+numbers, is how good the model is at fighting. Its *gap*, Melee Attack minus
+Melee Defence, is what kind of fighter it is. One number can express the first
+and never the second.
+
+#minitable(
+  ("Species", "Melee Attack", "Melee Defence", "Centre", "Gap", "Reads as"),
+  ("High Elf", "4", "6", "5", "-2", "trained to not be where the blow falls",
+   "Wood Elf", "5", "5", "5", "0", "equally good at both halves",
+   "Dark Elf", "6", "4", "5", "+2", "trained to kill, and careless of the cost",
+   "Dwarf", "4", "5", "4.5", "-1", "immovable rather than quick",
+   "Saurus", "5", "4", "4.5", "+1", "spawned for it",
+   "human", "4", "4", "4", "0", "the baseline, and inferred rather than settled",
+   "Skaven", "3", "4", "3.5", "-1", "would rather not be here",
+   "Orc", "4", "3", "3.5", "+1", "swings first and asks later",
+   "Skink", "2", "4", "3", "-2", "cannot hurt you, hard to catch",
+   "Kroxigor", "3", "2", "2.5", "+1", "the swing lands, and so does theirs"),
+)
+
+The top three are what the split was for. Three elf kindreds of identical
+competence, differing only in character: the Asur defensive, the Asrai even,
+the Druchii aggressive. With one number they are all Weapon Skill 5, or they
+are unequally good at fighting, and there is no third answer. The same shape
+repeats twice further down -- Dwarf against Saurus, Skaven against Orc -- so
+the grammar is not a special pleading for elves.
+
+Two of these are inferences rather than decisions. The human at 4 and 4 is
+where the lattice puts it and nobody has argued it; every price in the edition
+is set against the human, so it is the one placement that should be settled
+first rather than last. And the Skink at 2 and 4 describes the skirmisher.
+Whether a drilled Cohort standing in a formed rank is the same model is a real
+question with a plausible answer either way -- the discipline of holding a line
+is not the slipperiness of refusing one -- and it is left open here.
+
+The rest of the roster is not placed. The Initiative respread needed forty
+species and thirty-nine beast classes; this needs the same, twice over, and
+each is an argument that can be had on its own.
+
 == The alternatives, measured
 
 Three other routes were measured before this one.
@@ -286,12 +331,31 @@ survive contact with the numbers. A uniform bump changes 7% of matchups by
 no rule anybody can state, and a non-uniform respread lands each profile on
 whichever irregular boundary sits beneath it. The chart has to move first.
 
-*One step every rung instead of every two.* This is the serious rival. It
-cuts the dead matchups from 63% to 34%, less than half what the present
-chart leaves, and every promotion becomes worth the same as every other,
-which removes the alternation entirely. What it costs is sharpness: a
-two-rung gap becomes a 6+ to hit, so a class difference nearly stops the
-fight, and Weapon Skill becomes the loudest characteristic on the profile
-by a distance. The same system at a different scale, with the classes one
-rung apart instead of two. It is a real fork and the case for it is not
-weak.
+*One step every rung instead of every two.* This was the serious rival, and
+the placements closed it. On the numbers alone it wins: it cuts the dead
+matchups from 63% to 34% and makes every promotion worth the same as every
+other, which removes the alternation entirely. What settles it against is
+the spread the placements actually use.
+
+The lattice above lives between Melee Attack 2 and 6. Feed a five-rung spread
+to a chart that steps every rung and it asks for nine distinct results; the
+chart has five, from 2+ to 6+, so the rest pile up at the ends:
+
+#minitable(
+  ("Chart", "Results wanted", "Results available", "Matchups at 2+ or 6+"),
+  ("one step every rung", "9", "5", "12 of 25",
+   "one step every two rungs", "5", "5", "2 of 25"),
+)
+
+Across the full ten-profile grid that is eighteen matchups needing a 6+ and
+fifteen needing a 2+ -- a High Elf an Orc can barely touch, a Kroxigor that
+everything trained hits on a 2+. Stepping every two rungs leaves the entire
+grid with one 6+ and one 2+ and everything else between 3+ and 5+.
+
+A five-rung spread with one-rung granularity is a two-rung-step design,
+whether or not it was built as one. The cost is the one already stated: a
+single rung of difference is visible against only about half of the corpus,
+so the Wood Elf at Melee Attack 5 and the Dark Elf at 6 hit differently
+against Melee Defence 2 and 4 and identically against 3, 5 and 6. Their
+three-way split survives because their gaps are two apart. The individual
+rung between them does not.
