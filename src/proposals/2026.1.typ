@@ -279,13 +279,13 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
 
   A light shield is bought for the blade-work and gives up the armour, a heavy one for the armour and gives up the blade-work.
 
-  *The kit ladder.* Measured against the ten profiles the split proposal settles, with a hand weapon and a medium shield as the yardstick:
+  *The kit ladder.* Measured against the eleven profiles the split proposal settles, with a hand weapon and a medium shield as the yardstick:
 
-  #minitable(("Loadout", "Melee Defence", "Their chance to hit"), ("Spear and shield", "+2", "-7.3%", "Hand weapon and shield", "+1", "the yardstick", "Two hand weapons", "+1", "the yardstick", "Hand weapon alone, polearm, pike, heavy shield", "--", "+6.2%", "Flail", "-1, and -1 Melee Attack", "+12.0%", "Great weapon", "-2", "+18.3%"))
+  #minitable(("Loadout", "Melee Defence", "Their chance to hit"), ("Spear and shield", "+2", "-6.6%", "Hand weapon and shield", "+1", "the yardstick", "Two hand weapons", "+1", "the yardstick", "Hand weapon alone, polearm, pike, heavy shield", "--", "+6.7%", "Flail", "-1, and -1 Melee Attack", "+13.1%", "Great weapon", "-2", "+19.3%"))
 
   *Spear and pike stop being the same weapon.* A spear requires two hands only when bracing against a charge, so it keeps its shield and reaches +2 -- a full step harder to hit than the line beside it. A pike requires two hands always, gives the shield up, and buys three ranks of attacks with it. Defensive block or offensive one, which is a trade nothing else in the chapter offers.
 
-  *The flail is wild rather than heavy.* At -1 Melee Attack and -1 Melee Defence it costs a single point more than a great weapon in total and spends it somewhere else. Written as -3 Melee Defence instead it would be strictly worse than a great weapon and nobody would take one. A chain swung in a wide arc is hard to aim and hard to step inside, so missing more and blocking better is also the better description.
+  *The flail is wild rather than heavy.* At -1 Melee Attack and -1 Melee Defence it costs almost exactly what a great weapon costs and spends it somewhere else. Written as -3 Melee Defence instead it would be strictly worse than a great weapon and nobody would take one. A chain swung in a wide arc is hard to aim and hard to step inside, so missing more and blocking better is also the better description.
 
   *A pair of modifiers is not worth two points.* Frenzy takes -1 Melee Defence and no Melee Attack bonus, because it already grants +1 Attack. Worth knowing why the pair was never tempting: a +1 Melee Attack and a -1 Melee Defence land on two different rolls -- one on the model's own, one on the enemy's -- so they can never combine into a step the way a shield traded for a great weapon does. Split modifiers are two soft nudges; only modifiers landing on the same roll add up.
   ],

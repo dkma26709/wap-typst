@@ -1,8 +1,7 @@
 // The working behind "Kit should move melee skill, not only armour", in the
 // rulebook chapter of the proposals document. It presumes the Melee Attack and
 // Melee Defence split proposed beside it, and every figure here is measured
-// against the nine species placements settled there plus the human baseline
-// those placements imply.
+// against the eleven species placements settled there.
 //
 // HTML export has no layout: headings, prose, lists and minitable only.
 
@@ -14,9 +13,9 @@ Splitting Weapon Skill leaves the weapons chapter with a characteristic it has
 never been able to touch. This page is the argument that it should, and the
 measurements behind where each weapon lands.
 
-Everything below is computed against the ten profiles settled in the split
-proposal -- Skink, Kroxigor, Skaven, Orc, human, Dwarf, High Elf, Saurus, Wood
-Elf, Dark Elf -- which between them generate a hundred matchups. The yardstick
+Everything below is computed against the eleven profiles settled in the split
+proposal -- Skink, Kroxigor, Skaven, Orc, human, Dwarf, Saurus, Chaos Warrior,
+High Elf, Wood Elf, Dark Elf -- which between them generate 121 matchups. The yardstick
 throughout is a hand weapon and a medium shield, because that is what most of
 the corpus carries.
 
@@ -113,15 +112,15 @@ army would want its own blade.
 
 #minitable(
   ("Loadout", "Melee Attack", "Melee Defence", "My hits", "Their hits"),
-  ("Spear and shield", "--", "+2", "--", "-7.3%",
+  ("Spear and shield", "--", "+2", "--", "-6.6%",
    "Hand weapon and shield", "--", "+1", "--", "the yardstick",
    "Two hand weapons", "--", "+1", "--", "the yardstick",
-   "Hand weapon alone", "--", "--", "--", "+6.2%",
-   "Hand weapon and heavy shield", "--", "--", "--", "+6.2%",
-   "Polearm", "--", "--", "--", "+6.2%",
-   "Pike", "--", "--", "--", "+6.2%",
-   "Great weapon", "--", "-2", "--", "+18.3%",
-   "Flail", "-1", "-1", "-7.3%", "+12.0%"),
+   "Hand weapon alone", "--", "--", "--", "+6.7%",
+   "Hand weapon and heavy shield", "--", "--", "--", "+6.7%",
+   "Polearm", "--", "--", "--", "+6.7%",
+   "Pike", "--", "--", "--", "+6.7%",
+   "Great weapon", "--", "-2", "--", "+19.3%",
+   "Flail", "-1", "-1", "-6.6%", "+13.1%"),
 )
 
 Four tiers, and each of them says something the book cannot say now.
@@ -141,7 +140,7 @@ new.
 
 *The great weapon's cost becomes legible.* Two points of Melee Defence, plus
 the shield it cannot carry, is three points against the yardstick and raises
-the enemy's hit chance by 18.3%. Today the same weapon's only drawback is an
+the enemy's hit chance by 19.3%. Today the same weapon's only drawback is an
 Initiative penalty that is free to half the models that take it.
 
 *Two hand weapons keep the defence rather than gaining attack.* The loadout
@@ -159,13 +158,13 @@ Initiative penalty, and it pays for that with a point it cannot afford.
 
 #minitable(
   ("The flail written as", "My hits", "Their hits", "Net"),
-  ("-1 MA, -2 MD", "-7.3%", "+18.3%", "-25.7%",
-   "-1 MA, -1 MD", "-7.3%", "+12.0%", "-19.3%",
-   "great weapon, for comparison", "--", "+18.3%", "-18.3%"),
+  ("-1 MA, -2 MD", "-6.6%", "+19.3%", "-25.9%",
+   "-1 MA, -1 MD", "-6.6%", "+13.1%", "-19.7%",
+   "great weapon, for comparison", "--", "+19.3%", "-19.3%"),
 )
 
-At -1 and -1 the flail costs a single point more than a great weapon in total
-and spends it in a different place: wild rather than heavy. That is worth more
+At -1 and -1 the flail costs almost exactly what a great weapon costs -- 19.7%
+against 19.3% -- and spends it in a different place: wild rather than heavy. That is worth more
 than the arithmetic, because it is also the better description. A chain swung
 in a wide arc is hard to aim and hard to step inside, so the flail should be
 the weapon that misses more and is blocked with better -- which is exactly
