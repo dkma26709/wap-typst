@@ -310,28 +310,45 @@ the grammar is not a special pleading for elves.
 
 == The lattice is not a power ranking
 
-It places melee skill and nothing else, and the Saurus is the demonstration.
-It sits at 5 and 4, below every elf on the board, and it still wins the fight
-man for man, because the rest of the profile is where its case is made:
+It places melee skill and nothing else. The Saurus is the demonstration: it
+sits at 5 and 4, below every elf on the board, and it still wins the fight.
+
+What it does not win on is the profile. The units it is measured against are
+S4 T4 to a model, and at equal points they are two Attacks apiece as well,
+because a second hand weapon costs one point and every one of them takes it:
 
 #minitable(
-  ("Rank and file", "M", "WS today", "S", "T", "I", "A", "Points"),
-  ("Saurus Warrior, House edition", "4", "4", "4", "4", "1", "2", "14",
-   "Eternal Guard", "5", "5", "3", "3", "5", "1", "10",
-   "Lothern Sea Guard", "5", "4", "3", "3", "5", "1", "14",
-   "Dreadspear", "5", "4", "3", "3", "5", "1", "10",
-   "Dwarf Warrior", "3", "4", "3", "4", "2", "1", "7"),
+  ("At about fourteen points", "MA", "MD", "S", "T", "A", "Armour", "Points"),
+  ("Saurus Warrior, hand weapon and shield", "5", "5", "4", "4", "2", "4+", "14",
+   "Chaos Warrior, two hand weapons", "6", "6", "4", "4", "2", "4+", "14",
+   "Black Orc, two hand weapons", "4", "4", "4", "4", "2", "5+", "14",
+   "Dwarf Longbeard, hand weapon and shield", "4", "6", "4", "4", "1", "3+", "15.5"),
 )
 
-Two Attacks where every one of them has one, a point of Strength over all of
-them, a Toughness only the Dwarf matches, and a 5+ natural armour none of them
-carries -- at the joint highest price on the list. A species engineered for war should
-come out ahead across the profile rather than at the top of every column, and
-melee skill is the column where the Saurus ought to lose: it is not quick, and
-it was never trained -- it was hatched knowing one thing. The Chaos Warrior
-reaches the same place from the other side, through marks and armour, and the
-elves through weapons, Attacks and speed. None of that is legible if the
-lattice is read as a ladder of who is best.
+What the Saurus has instead is Predatory Fighter, which turns each natural 6
+To Hit into another Attack, and a 5+ natural armour beneath the shield. Run
+the duel, one model against one model:
+
+#minitable(
+  ("Saurus against", "First round", "Every round after"),
+  ("Chaos Warrior, two hand weapons", "0.389 / 0.333", "0.389 / 0.333",
+   "Black Orc, two hand weapons", "0.486 / 0.556", "0.486 / 0.333",
+   "Dwarf Longbeard, hand weapon and shield", "0.292 / 0.250", "0.292 / 0.167",
+   "Dwarf Longbeard, great weapon", "0.519 / 0.625", "0.519 / 0.278"),
+)
+
+The margin over a Chaos Warrior is 1.17 to one, which is narrow, and against
+the two units carrying Mighty Blow the Saurus *loses the first round outright*
+and wins every round after it, because Mighty Blow is a first-round Strength
+bonus and Predatory Fighter is not.
+
+That shape is worth keeping deliberately. A species engineered for war need
+not be the best duellist on the shelf; it can be the one still standing on the
+third turn. It is why placing the Saurus below the elves in melee skill costs
+it nothing -- melee skill is the column it ought to lose, since it is neither
+quick nor trained, only hatched knowing one thing. The Chaos Warrior reaches
+the same place through marks and armour, and the elves through weapons, speed
+and Attacks. None of that is legible if the lattice is read as a ranking.
 
 == What is still open
 
