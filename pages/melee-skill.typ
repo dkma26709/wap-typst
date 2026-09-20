@@ -310,45 +310,53 @@ the grammar is not a special pleading for elves.
 
 == The lattice is not a power ranking
 
-It places melee skill and nothing else. The Saurus is the demonstration: it
-sits at 5 and 4, below every elf on the board, and it still wins the fight.
-
-What it does not win on is the profile. The units it is measured against are
-S4 T4 to a model, and at equal points they are two Attacks apiece as well,
-because a second hand weapon costs one point and every one of them takes it:
+It places melee skill and nothing else, and among the heavy infantry of the
+setting melee skill turns out to decide almost nothing. These are the House
+editions -- the rules actually played -- at fourteen points a model:
 
 #minitable(
-  ("At about fourteen points", "MA", "MD", "S", "T", "A", "Armour", "Points"),
+  ("At fourteen points", "MA", "MD", "S", "T", "A", "Armour", "Points"),
   ("Saurus Warrior, hand weapon and shield", "5", "5", "4", "4", "2", "4+", "14",
-   "Chaos Warrior, two hand weapons", "6", "6", "4", "4", "2", "4+", "14",
-   "Black Orc, two hand weapons", "4", "4", "4", "4", "2", "5+", "14",
-   "Dwarf Longbeard, hand weapon and shield", "4", "6", "4", "4", "1", "3+", "15.5"),
+   "Chaos Warrior, heavy armour", "6", "5", "4", "4", "2", "4+", "14",
+   "Black Orc, heavy armour and free shield", "4", "4", "4", "4", "2", "3+", "14",
+   "Dwarf Longbeard, heavy armour and shield", "4", "6", "4", "4", "1", "3+", "15.5"),
 )
 
-What the Saurus has instead is Predatory Fighter, which turns each natural 6
-To Hit into another Attack, and a 5+ natural armour beneath the shield. Run
-the duel, one model against one model:
+Every pairing in that table is a 4+ to hit, in both directions, under the
+proposed chart. The Melee Attack values run from 4 to 6 and the Melee Defence
+from 4 to 6, and no gap between any two of them is wide enough to move the
+roll. What separates these models is Strength, armour and Mighty Blow, and the
+duel bears it out:
 
 #minitable(
   ("Saurus against", "First round", "Every round after"),
-  ("Chaos Warrior, two hand weapons", "0.389 / 0.333", "0.389 / 0.333",
-   "Black Orc, two hand weapons", "0.486 / 0.556", "0.486 / 0.333",
-   "Dwarf Longbeard, hand weapon and shield", "0.292 / 0.250", "0.292 / 0.167",
+  ("Chaos Warrior", "0.389 / 0.333", "0.389 / 0.333",
+   "Black Orc", "0.292 / 0.556", "0.292 / 0.333",
+   "Dwarf Longbeard, shield", "0.292 / 0.250", "0.292 / 0.167",
    "Dwarf Longbeard, great weapon", "0.519 / 0.625", "0.519 / 0.278"),
 )
 
-The margin over a Chaos Warrior is 1.17 to one, which is narrow, and against
-the two units carrying Mighty Blow the Saurus *loses the first round outright*
-and wins every round after it, because Mighty Blow is a first-round Strength
-bonus and Predatory Fighter is not.
+The Saurus wins two of those and loses two. It beats the Chaos Warrior on
+Predatory Fighter, which turns each natural 6 To Hit into another Attack; it
+loses the first round to a great weapon and takes it back afterwards, because
+Mighty Blow is a first-round Strength bonus; and it loses to the Black Orc
+outright, in every round, because House gave that model heavy armour and a
+free shield and so a better save than the lizard bred for war has in its own
+scales.
 
-That shape is worth keeping deliberately. A species engineered for war need
-not be the best duellist on the shelf; it can be the one still standing on the
-third turn. It is why placing the Saurus below the elves in melee skill costs
-it nothing -- melee skill is the column it ought to lose, since it is neither
-quick nor trained, only hatched knowing one thing. The Chaos Warrior reaches
-the same place through marks and armour, and the elves through weapons, speed
-and Attacks. None of that is legible if the lattice is read as a ranking.
+None of which is a verdict on where the Saurus sits in the lattice. It sits at
+5 and 4, below every elf on the board, and that is the column it ought to lose
+-- it is neither quick nor trained, only hatched knowing one thing. The Chaos
+Warrior reaches its own place through marks and armour and the elves through
+weapons, speed and Attacks. A species engineered for war need not be the best
+duellist on the shelf, and reading the lattice as a ladder of who is best
+misses every one of those routes.
+
+It is also worth noting what the chart does to this group, because it is a
+real cost. Today a Longbeard at Weapon Skill 5 hits a Saurus at Weapon Skill 4
+on a 3+, and a Chaos Warrior likewise. Under the proposed chart both fall to a
+4+. The elite infantry of four armies converge on one number, and whether that
+is a simplification or a loss is a matter of taste rather than measurement.
 
 == What is still open
 
