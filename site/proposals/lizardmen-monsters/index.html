@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lizardmen monsters, one at a time</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>The Lizardmen monsters, one at a time</h2><p>Seven monsters, and until now the rulebook told you the same three things about every one of them: Line of Sight 5, Stomp (D6), Terror. Those come from the Monsters troop type and nothing in an entry ever contradicted them, so a Carnosaur and a Bastiladon saw the same distance and trod on the same things with the same weight.</p><p>This page is what happened when each of them was read against its own description and given a job. The method was the same every time: take the role from what the creature is, find the mechanism in rules the game already has, and price it off the book’s own worked examples.</p><h3>What the troop type says today</h3><table><thead><tr><th>TROOP TYPE</th><th>LINE OF SIGHT</th><th>STOMP</th><th>MAY STOMP</th></tr></thead><tbody><tr><td>Monsters</td><td>5</td><td>D6</td><td>Line of Sight 3 or less</td></tr><tr><td>Monstrous Creatures</td><td>3</td><td>D3</td><td>Line of Sight 1 or less</td></tr></tbody></table><p>Both also grant Independent and Terror, and neither changes. What changes is that an entry may now print its own Line of Sight, its own number of Stomps and its own reach – and that one of the seven prints <strong>none</strong>.</p><h3>The Carnosaur</h3><p>An apex predator that hunts other large beasts, delivered to its target by an Oldblood and uncontrollable from the moment it draws blood. Its blurb is unusually specific about what its jaws do: they <strong>hack through huge chunks of flesh on larger prey</strong>, and they are <strong>undeterred by the thickest hides or the toughest bony plates</strong>.</p><p>The first of those is Multiple Wounds (D3), which it already has. The second is Strength, and restoring the 7 it carried in eighth edition does it exactly, because Strength is the only characteristic that is worth nothing against small targets and everything against armoured ones:</p><table><thead><tr><th>TARGET TOUGHNESS</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr></thead><tbody><tr><td>Strength 6 wounds on</td><td>2+</td><td>2+</td><td>3+</td><td>4+</td><td>5+</td><td>6+</td></tr><tr><td>Strength 7 wounds on</td><td>2+</td><td>2+</td><td>2+</td><td>3+</td><td>4+</td><td>5+</td></tr></tbody></table><p>Identical against anything Toughness 4 or below, a full step better against everything above it, and the armour modifier goes from −3 to −4. What it does to the creature it hunts, before the Multiple Wounds multiplier:</p><table><thead><tr><th>CARNOSAUR INTO</th><th>STRENGTH 6</th><th>STRENGTH 7</th><th>CHANGE</th></tr></thead><tbody><tr><td>Dread Saurian</td><td>0.56</td><td>1.00</td><td>+80%</td></tr><tr><td>Bastiladon</td><td>0.89</td><td>1.48</td><td>+67%</td></tr><tr><td>Stegadon</td><td>1.33</td><td>1.78</td><td>+33%</td></tr><tr><td>Aggradon</td><td>1.67</td><td>1.67</td><td>--</td></tr><tr><td>Saurus Warrior</td><td>1.67</td><td>1.67</td><td>--</td></tr></tbody></table><p>The Bastiladon gaining second most is the clause landing precisely: the toughest bony plates in the book are the ones that stop mattering. And at Strength 7 against Natural Armour 2+ the Bastiladon keeps a 6+, which is the blurb’s own word – that armour <strong>sometimes</strong> thwarts the bite of a Carnosaur.</p><p><strong>Devastating Charge rather than a flat Attack.</strong> The Carnosaur is a pouncer, and the two differ in exactly one state:</p><table><thead><tr><th>SITUATION</th><th>ATTACKS</th></tr></thead><tbody><tr><td>charges, unblooded</td><td>5</td></tr><tr><td>later rounds, having drawn blood</td><td>5</td></tr><tr><td>charges while already blooded</td><td>6</td></tr><tr><td>charged by the enemy, unblooded</td><td>4</td></tr></tbody></table><p>A flat Attacks 5 would give it the same number in every one of those. Under Devastating Charge it is identical when charging and one lower only when standing still and unblooded – the ambushed predator, and nothing else. It also makes Blood Frenzy the engine rather than the decoration: the beast is at its best having killed, which is the blurb’s sentence.</p><p><strong>Stomp (1), and one Impact Hit.</strong> A Stomp of D6 reaching Line of Sight 3 was the Carnosaur’s best weapon against rank infantry and could never touch the Stegadons and Dread Saurians its lore names as prey, every one of which is a Monster out of Stomp range. One Stomp at reach 2 and one Impact Hit moves that damage from every round against the wrong targets to the instant it lands, on anything:</p><table><thead><tr><th>CARNOSAUR INTO</th><th>CHARGE, STOMP (2)</th><th>CHARGE, STOMP (1) + IMPACT (1)</th><th>LATER ROUNDS</th></tr></thead><tbody><tr><td>Empire Spearmen</td><td>4.44</td><td>4.44</td><td>3.89 to 3.06</td></tr><tr><td>Saurus Warriors</td><td>3.75</td><td>3.75</td><td>3.33 to 2.50</td></tr><tr><td>Stegadon</td><td>4.44</td><td>5.11</td><td>unchanged</td></tr><tr><td>Dread Saurian</td><td>2.50</td><td>3.00</td><td>unchanged</td></tr></tbody></table><p>Leadership rises from 5 to 7, which changes no die roll – a ridden monster uses the rider’s 8 – but stops the profile calling a creature <strong>far from dull-witted</strong> stupid. Bloodroar stops being a 15-point upgrade and becomes what a Carnosaur simply is. And the Scar-Veteran may ride one, as the lore has always said and the list has never allowed.</p><h3>The Stegadon</h3><p>A living siege engine whose blurb names three separate kills: <strong>foes not slain outright by the impact of its charge are crushed to bloody pulps by its sheer bulk or speared upon the ends of one of the Stegadon’s imposing spikes.</strong> The entry had a rule for the first and inherited one for the second.</p><p>Impact Hits stay. They are the one place in the corpus where momentum is genuinely the point, and the Stegadon is the creature that earns them. What changes is the balance between the charge and the weight: Attacks fall from 4 to 3, because its Attacks were never the point, and the Stomp becomes 2D3.</p><table><thead><tr><th>STEGADON INTO</th><th>CHARGE, TODAY</th><th>CHARGE, SETTLED</th><th>LATER, TODAY</th><th>LATER, SETTLED</th></tr></thead><tbody><tr><td>Empire Spearmen</td><td>8.89</td><td>8.75</td><td>5.14</td><td>5.00</td></tr><tr><td>Saurus Warriors</td><td>5.56</td><td>5.56</td><td>3.06</td><td>3.06</td></tr><tr><td>Kroxigor</td><td>5.93</td><td>5.83</td><td>3.43</td><td>3.33</td></tr><tr><td>Carnosaur</td><td>2.71</td><td>2.50</td><td>0.83</td><td>0.62</td></tr><tr><td>another Stegadon</td><td>1.99</td><td>1.81</td><td>0.74</td><td>0.56</td></tr></tbody></table><p>The 2D3 refunds the lost Attack almost exactly against anything it can tread on, and against the two things it cannot the Stegadon drops about a quarter. It stops being a generalist by arithmetic rather than by decree: untouched as a rank-flattener, measurably worse at duelling large beasts.</p><p>The spikes get no rule. They fold into the Stomp, and a fourth damage source on one entry is one too many.</p><p><strong>The Ancient keeps its Attacks.</strong> The upgrade grants +1 Strength and Natural Armour (6+), which stacks with the 4+ it already has to reach 3+ – the blurb’s <strong>bony plates become much harder as they age</strong> and its <strong>almost impenetrable suit of plate armour</strong>, exactly. But it also took an Attack, on a creature the same paragraph calls <strong>the most ferocious of their entire species</strong>. That comes off, the −1 Initiative stays, and the price goes from 30 to 45.</p><p><strong>Unstoppable Stampede buys the Stomp, not the charge.</strong> It currently grants Devastating Charge, which is the wrong rule twice over: it points at the Attacks the entry has just given up, and Devastating Charge is now the Carnosaur’s. As +1 Stomp it buys 0.83 wounds in every round against 0.56 in one – and a stampede is by name the thing that does not stop once started. That also separates the two upgrades cleanly: Sharpened Horns buys the charge, Unstoppable Stampede buys the grind.</p><h3>The Bastiladon</h3><p>A walking fortress whose true abilities, its blurb says, <strong>rely heavily on fighting on the defensive.</strong> The entry already carried two rules that say so and that nothing else in the corpus has: <strong>Impervious Defence</strong>, which denies an enemy any combat result bonus for taking it in the flank or rear, and <strong>Thunderous Bludgeon</strong>, one Attack a round resolved at Strength 10 with +1 To Hit into its own rear arc.</p><p>Weapon Skill falls from 3 to 2, and it sharpens both. At Weapon Skill 2 the Bastiladon hits a Weapon Skill 3 or 4 target on 4+ and the tail hits on 3+, so the bludgeon lands better than its ordinary blows did before. The defensive cost falls almost entirely on attackers who cannot hurt it:</p><table><thead><tr><th>ATTACKER WEAPON SKILL</th><th>HITS IT, WS3</th><th>HITS IT, WS2</th><th>CHANGE</th></tr></thead><tbody><tr><td>3</td><td>4+</td><td>3+</td><td>+33%</td></tr><tr><td>4</td><td>3+</td><td>3+</td><td>--</td></tr><tr><td>5</td><td>3+</td><td>2+</td><td>+25%</td></tr><tr><td>7</td><td>2+</td><td>2+</td><td>--</td></tr></tbody></table><p>Weapon Skill 4 is unchanged, and Weapon Skill 4 is the Carnosaur, the Dread Saurian, Saurus, Chaos Warriors and Black Orcs – everything that actually threatens it. What gains are Empire Spearmen at Strength 3 against Toughness 7 and a 2+ save.</p><p><strong>Layered Carapace</strong> is the new rule, and it is the blurb’s other sentence: <strong>even those blows that crack the outermost armour plates cannot penetrate deeply into the beast, due to the Bastiladon’s alternating layers of thick leathery skin and additional scales.</strong> An attack with Multiple Wounds has its Wounds halved, rounding up – the same shape as the Ogre Kingdoms Stonehorn’s Stone Skeleton, under the Bastiladon’s own name. With Toughness 7 beside it:</p><table><thead><tr><th>INTO THE BASTILADON</th><th>TODAY</th><th>SETTLED</th><th>CHANGE</th></tr></thead><tbody><tr><td>Carnosaur</td><td>2.96</td><td>1.48</td><td>-50%</td></tr><tr><td>Carnosaur, charging</td><td>3.70</td><td>1.85</td><td>-50%</td></tr><tr><td>Dread Saurian</td><td>6.67</td><td>3.56</td><td>-47%</td></tr><tr><td>Stegadon</td><td>0.33</td><td>0.17</td><td>-50%</td></tr></tbody></table><p>Its own output falls by a quarter against what it can tread on and by two thirds against what it now cannot, which pays for the defence and keeps it at 175 points.</p><h3>The Arcanadon</h3><p>Not a Thunder Lizard, but the closest thing a temple-city can field: a sauropod, and the only one in the army. That explains the entry – Weapon Skill 2 because it is a body with a neck rather than a fighter, and no Impact Hits because a long-necked browser has neither the acceleration nor the frame for momentum, which is why the House edition already took them off.</p><p>It gets three things and nothing else.</p><p><strong>Height.</strong> Line of Sight 7, the tallest thing the Lizardmen can put on the table, above the Dread Saurian’s 6. The rulebook makes that a real characteristic rather than a label: a model with a higher value sees and is seen over anything lower, and ignores the cover shorter models would grant. For a creature whose whole purpose is a bound spell and three javelins, that is the difference between having a target and not.</p><p><strong>A tread that reaches further than its height would suggest it should.</strong> Line of Sight 7 with a reach of 4 – one short of the pattern the others follow – because being tall is not the same as being able to step on something large.</p><p><strong>And a spell.</strong> Power of the Ancients contains <strong>Fiery Blast</strong>, which the rulebook prints as a Level 3 spell cast on 9+, and the entry has never said what it is bound at. Beside the other two devices in the army that is the heaviest of the three:</p><table><thead><tr><th>DEVICE</th><th>BOUND AS</th><th>COST</th></tr></thead><tbody><tr><td>Solar Engine, on the Bastiladon</td><td>Level 1, cast on 6+</td><td>+40</td></tr><tr><td>Engine of the Gods, on the Stegadon</td><td>Level 2, cast on 8+</td><td>+50</td></tr><tr><td>Power of the Ancients</td><td>Level 3, cast on 9+</td><td>the entry, at 195</td></tr></tbody></table><p>Attacks fall from 3 to 2. With Weapon Skill 2 its melee is between 0.44 and 0.83 wounds a round, which is a rounding error, and the Stomp of 2 is the whole of what it does. It stomps a great many things and not very often, which is what a plodding animal on pillar legs should do.</p><h3>The Troglodon</h3><p><strong>Pale Death</strong>, and one of Lustria’s deadliest hunters – and under the rules as printed it was a bad generalist. Six jobs on a 155-point model, none of them above average:</p><table><thead><tr><th>WHAT IT DID</th><th>WHAT THAT DELIVERED</th></tr></thead><tbody><tr><td>ranged anti-large, Spit Venom</td><td>one shot, 0.46 to 0.93 wounds</td></tr><tr><td>melee beast</td><td>0.73 to 1.46, the weakest of any monster in the book</td></tr><tr><td>magic conduit, Arcane Vassal</td><td>the Skink Priest's ability; the beast hosts it</td></tr><tr><td>channelling, the Divining Rod</td><td>one D6 on a 5+, 0.33 dice a phase</td></tr><tr><td>army buff, Primeval Roar</td><td>about 2.7 wounds, once per battle</td></tr><tr><td>Movement 7 and Aquatic</td><td>real, and nothing on its own</td></tr></tbody></table><p>Two of those belong to the Oracle rather than the beast and stay – a mount carrying a specialist is a platform, not a generalist. The rest concentrate into one sequence the rules already supported without saying so.</p><p><strong>Quick Shot is the design.</strong> The rulebook allows it when declaring a charge, immediately after rolling the charge distance: the Troglodon spits on the way in and then bites, which is the blurb’s order exactly. <strong>The predator is known to spit this toxic bile, which helps the Troglodon triangulate their victim’s location, as the fluid makes a distinctive sizzling sound as it sears flesh.</strong> <strong>Triangulate</strong> makes that a rule – a unit hit by Spit Venom is located, and the Troglodon re-rolls failed To Hit rolls against it for the rest of the turn. It fires only when the spit lands, which at Ballistic Skill 4 is two turns in three; a blind animal that misses stays blind.</p><p><strong>Pale Death is the venom, and it degrades rather than kills.</strong> Each unsaved Wound against a Character, Monstrous Creature or Monster inflicts −1 Strength and −1 Toughness – the same shape as the Blade of All-Frost and the Glaive of Putrefaction, both of which already restrict themselves to that tier. Against a Stegadon:</p><table><thead><tr><th>ROUND</th><th>ITS TOUGHNESS</th><th>ITS STRENGTH</th><th>WOUNDS DEALT</th><th>CUMULATIVE</th></tr></thead><tbody><tr><td>1</td><td>6</td><td>5</td><td>1.49</td><td>1.49</td></tr><tr><td>2</td><td>5</td><td>4</td><td>1.67</td><td>3.16</td></tr><tr><td>3</td><td>3</td><td>2</td><td>2.26</td><td>5.00</td></tr></tbody></table><p>Dead in three rounds rather than five, and by the third it is striking at 30% of its output – because a monster’s Stomp and Impact Hits both resolve at its own Strength, so the venom takes its damage away on three fronts at once. A Saurus Warrior’s output against the same target doubles as its Toughness falls.</p><p>That is deliberately not the Carnosaur’s job. The Carnosaur kills a monster; the Troglodon dissolves one. Multiple Wounds comes off the entry entirely, including off the spit, because it is the same venom in both and one toxin should do one thing. Predatory Fighter comes off too: thirteen entries in the army carry it and the other twelve are Saurus-caste or Saurus-kin, with the cavalry carrying it on the rider. And Primeval Roar becomes a Level 1 bound spell on a 6+, repeatable, which is where the Oracle’s magic belongs and which suits a buff the once-per-battle version was too small to justify.</p><h3>The Coatl</h3><p>A feathered serpent ten to twenty feet long, intelligent, sacred, and <strong>pacific creatures, as typified by their unwillingness to attack even Pygmies unless severely provoked.</strong> It is not an animal and it is not large. It is a Monstrous Creature.</p><p>That single change does most of the work. The troop type gives it Stomp (D3) at reach 1 rather than D6 at reach 3, and Line of Sight 3 rather than 5 – and then the entry prints <strong></strong>no Stomp at all<strong></strong>, because it is a snake and snakes do not tread on things. It is the only creature in the roster whose printed number is none, and it is the case that no rule deriving Stomps from size can ever express.</p><p><strong>Their bite is venomous</strong>, says the blurb, and the entry had no Poisoned Attacks. With that added and the trampling gone:</p><table><thead><tr><th>COATL INTO</th><th>AS PRINTED</th><th>SETTLED</th><th>CHANGE</th></tr></thead><tbody><tr><td>Empire Spearmen</td><td>5.14</td><td>2.22</td><td>-57%</td></tr><tr><td>Saurus Warriors</td><td>3.06</td><td>1.39</td><td>-55%</td></tr><tr><td>Kroxigor</td><td>3.43</td><td>1.85</td><td>-46%</td></tr><tr><td>Cold One Riders</td><td>2.44</td><td>1.11</td><td>-55%</td></tr><tr><td>Stegadon</td><td>0.74</td><td>1.11</td><td>+50%</td></tr><tr><td>Carnosaur</td><td>0.83</td><td>1.11</td><td>+33%</td></tr></tbody></table><p>It stops trampling and starts biting: halved against everything small, up by a third to a half against the large, because the venom takes Strength 5 from wounding Toughness 6 on a 5+ to a 4+.</p><p>Wounds fall to 4 and Natural Armour to 6+, which is what a feathered snake should have – its defence is Fly (8), Magic Resistance (3) and a −1 to be shot at, not surviving being hit. Averaged across the Strengths it meets, effective Wounds fall from 6.7 to 4.2.</p><p>Together those halve its damage and take two fifths of its staying power, and the two multiply: its combat power falls 63%, from 18.2 to 6.1. At the rate the settled Troglodon is priced, that body is worth 115 points, and the Level 2 Wizard, the flight and the Magic Resistance carry it to 175 – level with the other serpent in the army, doing the opposite job.</p><p><strong>Guardian of the Sacred Places needs no companion rule.</strong> The spell moves a forest 2D3″, and the blurb explains it: <strong>they alter the jungle around them to draw invaders away from the sacred places in which they dwell, and into the leech-infested swamps surrounding them.</strong> The disorientation the lore describes – <strong>the skies darken and the jungle shifts, and the invaders are soon hopelessly disoriented</strong> – is that spell and the Magical Storm together, already printed.</p><h3>The Dread Saurian</h3><p>The largest creature in the setting, and the one entry that is allowed to be good at everything, because it costs twice what anything else does and the composition rules ration it without a word being written: at 25% for Rare it is illegal below a 1,600-point game.</p><p>Twelve Wounds rather than ten, and a Stomp that reaches Line of Sight 4 rather than 3. Line of Sight drops from 7 to 6, below the Arcanadon – Line of Sight measures height and this is the <strong>largest</strong> thing in the setting rather than the tallest; a Thunder Lizard penetrates above the canopy where a Dread Saurian’s fins only brush the top of it.</p><table><thead><tr><th>DREAD SAURIAN INTO</th><th>REACH 3</th><th>REACH 4</th><th>CHANGE</th></tr></thead><tbody><tr><td>Empire Spearmen</td><td>6.25</td><td>6.25</td><td>--</td></tr><tr><td>Kroxigor</td><td>9.58</td><td>9.58</td><td>--</td></tr><tr><td>Carnosaur</td><td>5.00</td><td>7.92</td><td>+58%</td></tr><tr><td>Stegadon</td><td>6.67</td><td>6.67</td><td>--</td></tr><tr><td>another Dread Saurian</td><td>4.00</td><td>4.00</td><td>--</td></tr></tbody></table><p>Twelve Wounds buys it roughly a round against everything that threatens it: 4.0 to 4.8 rounds against a charging Carnosaur, 5.5 to 6.6 against a Stegadon.</p><p><strong>The roar becomes a rule.</strong> Enemy units within 12″ suffer −1 Leadership. The corpus prices that radius as a Daemon Prince’s – Be’lakor’s <strong>Dark Master</strong> is the same effect at the same range – while a 6″ version is a 20 to 30 point purchase on the Beastmen’s Roaring Brute and the Manbane Standard. And it compounds with what the model already has, since a Monster causes Terror and Terror is resolved by a Leadership test: the roar and the fear are the same event.</p><p>Its five relics are untouched. They are items the temple-city straps to the beast rather than facets of it – <strong>ceremonial titans carry the most precious relics of ancient days</strong> – which is why four of the five are defensive on a creature whose own profile is already the heaviest in the army, and why the Blazing Configuration granting Impact Hits says nothing about charging. It is Chotec’s fire, not momentum.</p><h3>The ladder that came out of it</h3><table><thead><tr><th></th><th>POINTS</th><th>LINE OF SIGHT</th><th>STOMPS</th><th>REACH</th><th>WHAT IT IS FOR</th></tr></thead><tbody><tr><td>Troglodon</td><td>175</td><td>4</td><td>1</td><td>2</td><td>dissolves large things with venom</td></tr><tr><td>Bastiladon</td><td>175</td><td>4</td><td>2</td><td>2</td><td>a fortress that breaks ribs</td></tr><tr><td>Coatl</td><td>175</td><td>3</td><td>--</td><td>--</td><td>a flying caster that bites</td></tr><tr><td>Carnosaur</td><td>190</td><td>4</td><td>1</td><td>2</td><td>pounces, then cannot be recalled</td></tr><tr><td>Arcanadon</td><td>195</td><td>7</td><td>2</td><td>4</td><td>the tallest thing on the field</td></tr><tr><td>Stegadon</td><td>200</td><td>5</td><td>2D3</td><td>3</td><td>flattens ranks on the charge</td></tr><tr><td>Dread Saurian</td><td>400</td><td>6</td><td>D6</td><td>4</td><td>the apex, tilted large</td></tr></tbody></table><p>Line of Sight runs from 3 to 7 where the troop type gave every one of them 5. Stomps run from none to D6. Four of the seven sit on a reach two below their own Line of Sight and the Arcanadon deliberately does not, which is why the reach is printed rather than derived.</p><h3>What it costs</h3><p>Seven entries in one book, and one of them – the Coatl – changes troop type, which touches its Unit Strength, what may tread on it and how a Skink High Priest riding it is resolved.</p><p>Four rules are new and none of them is a new mechanism: <strong>Layered Carapace</strong> is the Stonehorn’s Stone Skeleton, <strong>Pale Death</strong> is the Blade of All-Frost and the Glaive of Putrefaction, and the Dread Saurian’s roar is Be’lakor’s Dark Master. <strong>Triangulate</strong> is the furthest from its precedent – Stromfel’s Fin, a fifteen-point magic weapon in Pirates of Sartosa, re-rolls failed To Wound rolls against a unit that has already taken wounds. Triangulate keys on the model’s own shot rather than on any prior wounding, and re-rolls To Hit rather than To Wound, which makes it a variation on a rule the corpus already has.</p><p>Two prices move on entries beyond the monsters themselves, because the Carnosaur and the Coatl are also character mounts, and the Skink Priests entry carries both.</p><p>And the Monsters troop type stops being the last word. It still grants Line of Sight 5 and Stomp (D6) as the default, and an entry may now say otherwise – which is the whole of the change, and the reason a snake no longer tramples.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

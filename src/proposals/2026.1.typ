@@ -606,3 +606,45 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
 )[
   The Slann Mage-Priest would come in grades, as every other character in the book already does. A fifth-generation Slann is the model printed today, with the combining of its spells across lores made innate rather than bought for 25 points. Above it each generation is cumulative: the fourth ignores the first die showing a 1 in any casting roll, the third denies Ultimate Power to enemy Wizards within 24", and the second adds a free die to every casting attempt. The first generation cannot be fielded, because in the lore none still lives.
 ]
+
+#proposal("Every Lizardmen monster is given a job", status: "under discussion",
+  page: "lizardmen-monsters",
+  why: [
+  Seven monsters, and the rulebook says the same three things about every one of them. The Monsters troop type grants Line of Sight 5, Stomp (D6) and Terror, and nothing in any entry has ever contradicted it -- so a Carnosaur bred to hunt Stegadons and a Bastiladon that walks at the speed of a Saurus see the same distance and tread on the same things with the same weight. A ten-foot feathered serpent tramples a regiment for D6 automatic hits because it shares a troop type with a creature whose fins brush the jungle canopy.
+
+  The entries themselves are better than that and the trouble is that nothing holds them to it. The Carnosaur's own description says its jaws are undeterred by the thickest hides and the toughest bony plates, and its Strength is 6, which is precisely the value at which hides start mattering. The Bastiladon's says its true abilities rely on fighting on the defensive, and its best weapon against rank infantry was a Stomp it shares with everything. The Troglodon is called one of Lustria's deadliest hunters and carries six jobs of which none is above average. The Coatl has a bite the lore calls venomous and no Poisoned Attacks.
+
+  Every one of those is fixed with a rule the game already owns, or with a number the profile already has a column for. Not one rule in the whole pass is without a precedent somewhere in the corpus.
+  ],
+  against: [
+  It is seven entries in one book, and the argument for each is a judgement about what a creature is rather than a calculation anybody can check. The measurements say what a change does; they cannot say whether a Carnosaur ought to be Strength 7.
+
+  It also breaks the troop type's promise, which is a real cost. A player who learns that Monsters have Line of Sight 5 and Stomp (D6) currently knows it about all 160 of them; afterwards they know it about the ones that do not say otherwise, and every monster entry becomes a place to look. The saving is that the entry now tells them something worth reading.
+
+  And the Coatl is the awkward one. Moving it from Monster to Monstrous Creature changes its Unit Strength, changes what may tread on it, and leaves the ridden version needing a ruling the Monsters troop type spells out and the Monstrous Creatures one does not.
+  ],
+  cost: [
+  Seven entries in the Lizardmen book, and two of them are also character mounts, so the Skink Priests and Saurus Leaders entries move with them.
+
+  Three rules are new and each is borrowed: *Layered Carapace* is the Ogre Kingdoms Stonehorn's Stone Skeleton under another name, *Pale Death* is the Blade of All-Frost and the Glaive of Putrefaction, and the Dread Saurian's roar is Be'lakor's Dark Master at the same radius. *Triangulate* is the furthest from its precedent: Stromfel's Fin, a fifteen-point magic weapon in Pirates of Sartosa, already re-rolls failed To Wound rolls against a unit that has taken Wounds, and this keys on the model's own shot instead and re-rolls To Hit.
+
+  The Monsters troop type keeps its defaults and stops being the last word, which is the only rulebook change. Nothing else in any other army is touched, which is also the reason to do one book first.
+  ],
+  examples: [
+  *The seven, and what each now answers.* Every figure is expected unsaved Wounds a round, read off the House edition:
+
+  #minitable(("", "Points", "Line of Sight", "Stomps", "Reach", "For"), ("Troglodon", "175", "4", "1", "2", "dissolves large things with venom", "Bastiladon", "175", "4", "2", "2", "a fortress that breaks ribs", "Coatl", "175", "3", "--", "--", "a flying caster that bites", "Carnosaur", "190", "4", "1", "2", "pounces, then cannot be recalled", "Arcanadon", "195", "7", "2", "4", "the tallest thing on the field", "Stegadon", "200", "5", "2D3", "3", "flattens ranks on the charge", "Dread Saurian", "400", "6", "D6", "4", "the apex, tilted large"))
+
+  *Strength is the anti-large characteristic, and nobody had used it as one.* Restoring the Carnosaur to the Strength 7 it carried in eighth edition does exactly what its blurb promises, because it is worth nothing at all against small targets:
+
+  #minitable(("Target Toughness", "3", "4", "5", "6", "7", "8"), ("Strength 6 wounds on", "2+", "2+", "3+", "4+", "5+", "6+", "Strength 7 wounds on", "2+", "2+", "2+", "3+", "4+", "5+"))
+
+  Against a Dread Saurian that is +80%, against a Bastiladon +67%, against a Saurus Warrior nothing whatever. And at Strength 7 a Bastiladon's Natural Armour 2+ still saves on a 6, which is the blurb's own word: that armour *sometimes* thwarts the bite of a Carnosaur.
+
+  *A snake does not trample.* The Coatl prints no Stomp at all, which is the one answer no rule deriving the number from size can give -- and the reason this proposal settles the two rival stomp proposals in the rulebook chapter in favour of printing.
+
+  *Venom that degrades rather than kills.* The Troglodon's Pale Death gives each unsaved Wound on a Character, Monstrous Creature or Monster a -1 to Strength and Toughness. Against a Stegadon it is dead in three rounds rather than five, and by the third it is striking at 30% of its output -- because a monster's Stomp and its Impact Hits both resolve at its own Strength, so the venom takes its damage away on three fronts at once. That is deliberately not the Carnosaur's job: one kills a monster, the other dissolves it.
+  ],
+)[
+  Each of the seven Lizardmen monsters would state its own Line of Sight, its own number of Stomps and its own reach, in place of the Line of Sight 5 and Stomp (D6) the Monsters troop type gives them all -- and each would be given the one thing it is for. The Carnosaur returns to Strength 7 and pounces; the Stegadon trades Attacks for weight; the Bastiladon halves the Multiple Wounds that reach it; the Arcanadon becomes the tallest model on the table; the Troglodon poisons rather than kills; the Coatl becomes a Monstrous Creature that treads on nothing; and the Dread Saurian gains Wounds, reach and a roar. The troop type keeps its defaults and stops being the last word.
+]
