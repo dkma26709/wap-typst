@@ -649,6 +649,56 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
   Each of the seven Lizardmen monsters would state its own Line of Sight, its own number of Stomps and its own reach, in place of the Line of Sight 5 and Stomp (D6) the Monsters troop type gives them all -- and each would be given the one thing it is for. The Carnosaur returns to Strength 7 and pounces; the Stegadon trades Attacks for weight; the Bastiladon halves the Multiple Wounds that reach it; the Arcanadon becomes the tallest model on the table; the Troglodon poisons rather than kills; the Coatl becomes a Monstrous Creature that treads on nothing; and the Dread Saurian gains Wounds, reach and a roar. The troop type keeps its defaults and stops being the last word.
 ]
 
+= ORCS & GOBLINS
+
+Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where one stands.
+
+#proposal("Three greenskin monsters are given the thing they are for", status: "under discussion",
+  page: "greenskin-monsters",
+  why: [
+  None of the three is broken, and each has a different kind of gap between what its description says it is and what its entry lets it do.
+
+  The *Wyvern* is separated from a Dragon, in every account of it, by exactly one thing: the poisonous sting. Its entry expresses that as blanket Poisoned Attacks smeared across three undifferentiated Attacks, so the one feature that makes it not a dragon is a flat modifier on its bite. It is also filed as a Monster, and the corpus is unambiguous that Monsters have five Wounds or more and Monstrous Creatures have four -- every big winged character mount that is not a dragon is already a Monstrous Creature, from the Griffon to the Manticore to the Royal Hippogryph.
+
+  The *Arachnarok Spider* is "feared for its potent poison and ability to ensnare entire villages with its thick web", and it webs nothing whatever. The Lore of da Spider God has the web spells; the 40-point Catchweb Spidershrine grants its rider that lore. The signature ability belongs to the passenger.
+
+  The *Rogue Idol of Gork* is made of two things and its rules mention neither. It is a "massive embodiment of the power of the Waaagh!" that "will collapse when the Winds of Magic slacken", and its only contact with the magic phase is a 6+ ward. It is "crudely fashioned from heaped stones and battlefield debris", and it has no armour save of any kind.
+  ],
+  against: [
+  The Wyvern falls sixty-five points and loses a Wound, a Weapon Skill and two-fifths of its output against infantry. That is a large change to sell as a fix, and the honest description is that it stops being a generalist rather than that it stops being bad.
+
+  The Arachnarok gains a genuine anti-air tool in an army that has none, and the greenskins may not be the list that ought to have one. Grounding a flyer for a turn is close to removing it, because flyers carry dreadful Movement underneath -- Carrion 2, Terradon 2, Fell Bats 1.
+
+  And one of the three arguments here was tried and abandoned, which is a fair warning about the other two: cutting the Arachnarok's Attacks and stripping its blanket poison was measured as a flat 27-42% reduction against every target, reshaping nothing. That is recorded on the page rather than quietly dropped.
+  ],
+  cost: [
+  Three entries, plus the Warboss and Weirdnob entries that buy a Wyvern, plus Azhag the Slaughterer -- whose Skullmuncha carries the generic Wyvern's ten characteristics exactly, so his troop type moves with it and his 460 points want revisiting.
+
+  One rule is new, *Ensnaring Web*, and its debuff, duration and charge-range wording are each lifted from an existing entry. *Voracious* is the Beastmen Preyton's *Endless Malice* under another name. *Stone Construct* is the Tomb Kings proposal's own rule, used here a second time in a second army. The venom tail is the Manticore's *Venom Tail* upgrade with Multiple Wounds added.
+
+  All three depend on the rulebook proposal that lets an entry print its own Stomps and its own reach -- and on one of them printing none at all.
+  ],
+  examples: [
+  *The Wyvern trades a stomp it should never have had for a landing.* A Stomp happens every round; landing happens once, which is what Impact Hits are. Totals over a three-round combat:
+
+  #minitable(("", "Rank infantry", "Cavalry", "Elite infantry", "A monster"), ("As printed -- Stomp (D6) reach 3", "14.75", "14.75", "14.75", "4.00", "Stomp (2) reach 2", "12.00", "12.00", "10.25", "4.25", "Impact Hits (D3), no Stomp", "8.67", "8.67", "6.92", "5.25"))
+
+  Down 41% against infantry, up 31% against a monster, because Impact Hits carry no reach restriction and land on whatever it charged.
+
+  *Wounds are what separate the two troop types, and nothing else.* Not one Monster in the corpus is Toughness 5 with four Wounds; 30 of 35 Monstrous Creatures are. Base size proves nothing -- 99% of Monstrous Creature base entries sit on a size Monsters also use.
+
+  *The web stings hardest where the charge rules have a cliff.* Charge range is Movement plus 2D6 at Movement 6 or more, and Movement plus the highest of 2D6 below that. So two points off a Movement 6 or 7 unit costs a whole die:
+
+  #minitable(("Target", "Charge range now", "Webbed", "Lost"), ("Movement 4 infantry", "8.47", "6.47", "2.00", "Movement 6", "13.00", "8.47", "4.53", "Movement 7", "14.00", "9.47", "4.53", "Movement 8 cavalry", "15.00", "13.00", "2.00"))
+
+  373 of 1,418 profiles sit at Movement 6 or 7 -- 26% of the corpus, and the commonest monster speed in the game.
+
+  *A ward and a floored armour are the same number until they are not.* On the Rogue Idol's Toughness 7 and ten Wounds, a Magical Ward (6+) and a Natural Armour (6+) that never falls below 6+ both give 57.4 hits to kill. They differ only against attacks that Ignore Armour Saves, and against Heroic Killing Blow -- so the swap is made at 5+ rather than 6+, and Heroic Killing Blow becomes the clean answer to the Idol, as it already is to the stone of Nehekhara.
+  ],
+)[
+  The *Wyvern* becomes a Monstrous Creature at four Wounds, loses blanket Poisoned Attacks for a *Venom-drenched Tail* -- one additional Attack with Poisoned Attacks and Multiple Wounds (D3) -- trades its Stomp for *Impact Hits (D3)* since landing happens once, gains *Voracious* so that it stops to feed rather than pursuing, and falls from 160 to 95. The *Arachnarok Spider* gains *Ensnaring Web*, a damageless Quick Shot attack at 12" that costs the target two Movement and its ability to fly, and which can shorten a charge it reacts to; its Venom Surge loses its restriction to large targets, its Stomp drops to 2, and it rises to 265. The *Rogue Idol of Gork* exchanges its Magical Ward for *Stone Construct* at Natural Armour (5+), and gains *Embodiment of the Waaagh!*, repairing itself for each Orc unit fighting near it and coming apart when there are none, at 240 unchanged.
+]
+
 = TOMB KINGS
 
 Proposals for #emph[Tomb Kings 3.1]. The army has no House edition, so these are
@@ -673,7 +723,7 @@ against the base book.
   cost: [
   One new special rule of two sentences, and ten entries in one book. Nine of the ten keep the save value they have now and only change what kind of save it is; the Hierotitan gains a 6+ where it has never had anything.
 
-  Points move on seven of the ten, by 12% across the set. Nothing else in any other army is touched, though the same argument plainly reaches the Dwarfs' Rune Guardians and the Amazons' Ancient Sentinels and would be worth making there separately.
+  Points move on seven of the ten, by 12% across the set. Nothing else in any other army is touched, though the same argument plainly reaches the Dwarfs' Rune Guardians and the Amazons' Ancient Sentinels and would be worth making there separately. The rule has since been taken up by the Orcs & Goblins proposal for the Rogue Idol of Gork, which is the best evidence it is general rather than a Nehekharan convenience.
   ],
   examples: [
   *What the floor does, and where.* The Khemrian Warsphinx, Toughness 7 with a Natural Armour 5+, in expected unsaved Wounds per hit:
