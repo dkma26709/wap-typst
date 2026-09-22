@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stone, and what it is worth</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>Stone, and what it is worth</h2><p>A Tomb Kings army is mostly things that were carved rather than born. The book knows this and says so constantly – Ushabti are statues of the gods walking, the sphinxes are quarried whole, the Necrolith Colossus is a monument that got up – and then half of those entries buy armour from the same list a Skeleton Warrior does.</p><p>That is the whole of the complaint, and the whole of the proposal is to finish a conversion the book has already started.</p><h3>The book is already half-converted</h3><p>Ten entries in the army are made of stone or metal rather than flesh. They do not agree with each other about what that means.</p><table><thead><tr><th>ENTRY</th><th>TROOP TYPE</th><th>ARMOUR TODAY</th></tr></thead><tbody><tr><td>Tomb Scorpion</td><td>Monstrous Creature</td><td>Natural Armour (5+)</td></tr><tr><td>Necroserpent</td><td>Monstrous Beast</td><td>Natural Armour (5+)</td></tr><tr><td>Necropolis Knights</td><td>Monstrous Cavalry</td><td>Natural Armour (5+) and light armour</td></tr><tr><td>Khemric Titan</td><td>Monster</td><td>Natural Armour (5+)</td></tr><tr><td>Ushabti</td><td>Monstrous Infantry</td><td>Light armour</td></tr><tr><td>Sepulchral Stalkers</td><td>Monstrous Beast</td><td>Medium armour</td></tr><tr><td>Khemrian Warsphinx</td><td>Monster</td><td>Medium armour</td></tr><tr><td>Necrosphinx</td><td>Monster</td><td>Medium armour</td></tr><tr><td>Necrolith Colossus</td><td>Monster</td><td>Light armour</td></tr><tr><td>Hierotitan</td><td>Monster</td><td>None at all</td></tr></tbody></table><p>Four of them already do it the right way. Five wear armour like men. Two have nothing whatever, and one of those two is a Monster with six Wounds walking about with no save at all.</p><p>The Necropolis Knights are the entry to copy, because they are the only one that got the composition right: the stone serpent carries Natural Armour and the skeleton riding it wears light armour on top, and the two stack. That is exactly the shape the rest of the book wants.</p><p>Nor is this a Tomb Kings habit. The Amazons arrived at the same answer independently – Ancient Sentinels are <code>Animated Construct, Natural Armour (4+)</code> and carry no equipment but a hand weapon. The Dwarfs went the other way and put <strong>heavy armour</strong> on a rune-carved statue.</p><h3>The rule</h3><p>One line, and it borrows its wording from the rulebook, where Seamless Armour already says a save cannot be reduced below a stated value.</p><p><strong>Stone Construct.</strong> This model’s armour is Natural Armour and may not be removed or replaced. Its armour save can never be reduced below 6+, whatever the Strength of the attack.</p><p>What that does is unusually easy to state, because it does exactly one thing:</p><table><thead><tr><th>KHEMRIAN WARSPHINX, T7, NATURAL ARMOUR 5+</th><th>S3</th><th>S4</th><th>S5</th><th>S6</th><th>S7</th><th>S8</th><th>S9</th><th>S10</th></tr></thead><tbody><tr><td>Wounds per hit, as now</td><td>0.074</td><td>0.116</td><td>0.167</td><td>0.333</td><td>0.500</td><td>0.667</td><td>0.833</td><td>0.833</td></tr><tr><td>Wounds per hit, floored at 6+</td><td>0.074</td><td>0.116</td><td>0.139</td><td>0.278</td><td>0.417</td><td>0.556</td><td>0.694</td><td>0.694</td></tr><tr><td>Change</td><td>--</td><td>--</td><td>\-17%</td><td>\-17%</td><td>\-17%</td><td>\-17%</td><td>\-17%</td><td>\-17%</td></tr></tbody></table><p>Nothing at all below Strength 5, because below Strength 5 the save was never being stripped in the first place. A flat sixth off everything above it. A spear was never going to matter; a greatsword now chips the stone rather than shattering it, and so does a cannonball.</p><h3>Why not Toughness 8</h3><p>The first draft of this made every stone construct Toughness 8 with Natural Armour 5+, on the grounds that a statue ought to be harder to hurt than a man. Measured, that was a much larger change than it read as, and it was aimed in the wrong direction.</p><table><thead><tr><th>HITS TO KILL, AVERAGED OVER S3-S8</th><th>TODAY</th><th>AT T8 WITH NATURAL 5+</th><th>CHANGE</th></tr></thead><tbody><tr><td>Hierotitan</td><td>28.7</td><td>47.0</td><td>+64%</td></tr><tr><td>Necrolith Colossus</td><td>30.5</td><td>47.0</td><td>+54%</td></tr><tr><td>Khemrian Warsphinx</td><td>34.6</td><td>47.0</td><td>+36%</td></tr><tr><td>Necrosphinx</td><td>34.6</td><td>47.0</td><td>+36%</td></tr></tbody></table><p>Three things went wrong with it.</p><p><strong>The premise did not survive the chart.</strong> The stated worry was that low-Strength attacks are too effective against stone. They are not: Strength 3 against a Toughness 7 construct with a 5+ needs a 6 followed by a 3, which is 7.4% a hit and <strong>eighty-one hits</strong> to kill a Warsphinx. The To Wound chart’s two-roll boxes had already flattened the bottom of the range, so there was nothing left to fix there – and every candidate instrument therefore did its work at the top instead. Toughness 8 halves what Strength 6 achieves, and Strength 6 is heroes, other monsters, and any Strength 4 troops holding great weapons.</p><p><strong>The armour half did nothing.</strong> A Natural Armour 5+ is stripped entirely at Strength 5 and above, so on a Toughness 8 body it contributes against chaff and nothing else. The whole effect was the Toughness step wearing an armour costume.</p><p><strong>And Toughness 8 is not a value this game hands out.</strong> Across all thirty-two books there are four mobile models at Toughness 8, and every one of them is ten Wounds and around three hundred and fifty points:</p><table><thead><tr><th>EVERY TOUGHNESS 8 MODEL IN THE CORPUS</th><th>T</th><th>W</th><th>POINTS</th></tr></thead><tbody><tr><td>Bonegrinder Giant (Albion)</td><td>8</td><td>10</td><td>380</td></tr><tr><td>Bonegrinder Giant (Orcs and Goblins)</td><td>8</td><td>10</td><td>385</td></tr><tr><td>Khemric Titan (Tomb Kings)</td><td>8</td><td>10</td><td>320</td></tr><tr><td>Vorgaroth the Scarred (Warriors of Chaos)</td><td>8</td><td>10</td><td>-</td></tr></tbody></table><p>Adding four more at six Wounds and 205 to 250 points would have taken one army from one Toughness 8 model to five, at roughly half the going rate, and taken the crown off the Khemric Titan in its own book.</p><h3>Why not Toughness 6 for the Ushabti</h3><p>The second draft kept Toughness for the rank stone – Ushabti and the Dwarfs’ Rune Guardians to Toughness 6 – on the better argument that Monstrous Infantry is a badly compressed band and stone belongs at the top of it.</p><p>The compression is real, and worse than it looks. Of 58 non-character Monstrous Infantry entries in the corpus:</p><table><thead><tr><th>TOUGHNESS</th><th>ENTRIES</th><th>SHARE</th></tr></thead><tbody><tr><td>6</td><td>1</td><td>1.7%</td></tr><tr><td>5</td><td>13</td><td>22.4%</td></tr><tr><td>4</td><td>44</td><td>75.9%</td></tr></tbody></table><p>Three-quarters of everything on one rung, which is how a Troll, a Minotaur, an Irongut and a plain Ogre Bull all came to have the same Toughness. And the constructs are already pressed against the ceiling: five of the eight sit at Toughness 5, with a mean of 4.62 against flesh’s 4.20. They are distinguished as far as the scale allows and it is not far enough.</p><p>But the rung above is taken. Toughness 6 is where <strong>Monsters</strong> live – 104 of 185 Monster profiles, 56% of every monster in the corpus – and the tiers already step 3-4 for Infantry, 4-5 for Monstrous Infantry, 5 for Monstrous Creatures, 6 for Monsters. Putting a unit of nine Ushabti on the Monster rung makes them exactly as hard to wound as a Carnosaur, which does not open room so much as move the crowding up a floor into the band that is already fullest.</p><p>The measured comparison settled it, because the two instruments turn out to cost the same:</p><table><thead><tr><th>THE USHABTI BODY, W3, 42 POINTS AT A 6+</th><th>HITS TO KILL</th><th>CHANGE</th><th>FAIR PRICE</th></tr></thead><tbody><tr><td>Today: T5, light armour 6+</td><td>8.0</td><td>--</td><td>42</td></tr><tr><td>T5, Natural 6+ that cannot be stripped</td><td>8.9</td><td>+11%</td><td>45</td></tr><tr><td>T6, light armour 6+</td><td>11.2</td><td>+39%</td><td>58</td></tr><tr><td>T5, Natural 5+ that cannot be stripped</td><td>11.2</td><td>+39%</td><td>58</td></tr><tr><td>T6, Natural 5+</td><td>12.8</td><td>+60%</td><td>67</td></tr></tbody></table><p>Rows three and four are the same number. An unstrippable save is not the weaker instrument, it is the same instrument pointed somewhere else – and where it points matters. Toughness 6 says <strong>small blows bounce and big ones land as before</strong>. An unstrippable save says <strong>it chips at the same rate however hard you swing</strong>, which is the more granite thing to say, and it collides with nothing, because no troop type owns it.</p><p>What remains true is that Monstrous Infantry wants respreading. That is a better proposal than this one and a larger one, it belongs to the rulebook rather than to Nehekhara, and it does not need a stone rule to justify it. Worth recording in passing that Monstrous Creature is worse still: 52 of its 56 entries share one Toughness value.</p><h3>What it costs</h3><p>Every entry keeps the save value it has today. What changes is that the save is part of the model rather than strapped to it, and that it has a floor.</p><table><thead><tr><th>ENTRY</th><th>TODAY</th><th>BECOMES</th><th>DURABILITY</th><th>POINTS</th></tr></thead><tbody><tr><td>Ushabti</td><td>Light armour 6+</td><td>Natural Armour (6+)</td><td>+11%</td><td>42 to 45</td></tr><tr><td>Sepulchral Stalkers</td><td>Medium armour 5+</td><td>Natural Armour (5+)</td><td>+8%</td><td>48 to 50</td></tr><tr><td>Necropolis Knights</td><td>Natural 5+ and light armour</td><td>unchanged, floored</td><td>+5%</td><td>50, unchanged</td></tr><tr><td>Tomb Scorpion</td><td>Natural Armour (5+)</td><td>unchanged, floored</td><td>+6%</td><td>100 to 105</td></tr><tr><td>Necrolith Colossus</td><td>Light armour 6+</td><td>Natural Armour (6+)</td><td>+13%</td><td>210 to 235</td></tr><tr><td>Hierotitan</td><td>None at all</td><td>Natural Armour (6+)</td><td>+20%</td><td>205 to 245</td></tr><tr><td>Khemrian Warsphinx</td><td>Medium armour 5+</td><td>Natural Armour (5+)</td><td>+7%</td><td>225, unchanged</td></tr><tr><td>Necrosphinx</td><td>Medium armour 5+</td><td>Natural Armour (5+)</td><td>+7%</td><td>250 to 210</td></tr><tr><td>Khemric Titan</td><td>Natural Armour (5+)</td><td>unchanged, floored</td><td>+8%</td><td>320 to 345</td></tr><tr><td>Sehenesmet</td><td>None at all</td><td>Natural Armour (6+)</td><td>+20%</td><td>425, unchanged</td></tr></tbody></table><p>Two of those rows are not settled by this proposal alone and should be read with that in mind. The <strong>Necrosphinx</strong> falls forty points because the companion proposal takes its flight and most of its Stomp; the defensive gain here is the only thing pushing the other way. <strong>Sehenesmet</strong> stays at 425 because a special character is priced for his rules – Master Stone Shaper and The Stone Host of Quatar – and not for a 6+, and running the arithmetic on him mechanically produced 510, which is plainly wrong.</p><p>The <strong>Hierotitan</strong> is the largest mover and the one that most deserves it. It is the only Monster in the book with six Wounds and no armour save whatsoever, and the proposal gives it the same 6+ the Colossus has. Forty points for a save it should never have been without.</p><h3>What this does not do</h3><p>It does not touch Toughness anywhere. It does not touch the Skeletons, the Tomb Guard, the Mummies or any of the chariots, none of which are stone. It does not change how armour saves stack, and the Necropolis Knights keep their existing arrangement untouched – the serpent’s natural save has a floor and the rider’s worn armour does not, which is the correct answer and needs no extra wording.</p><p>And it does not make anything unkillable. A Dread Saurian, at Strength 8 with six Attacks and Multiple Wounds (D3), still kills any of the four Toughness 7 constructs in under two rounds – and the Khemric Titan, which has ten Wounds rather than six, in four. Heroic Killing Blow still ignores armour entirely and is therefore the built-in counter to all of it. And a cannonball still averages better than half a Wound a hit against a Warsphinx.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

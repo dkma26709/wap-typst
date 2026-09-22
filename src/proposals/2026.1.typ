@@ -648,3 +648,91 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
 )[
   Each of the seven Lizardmen monsters would state its own Line of Sight, its own number of Stomps and its own reach, in place of the Line of Sight 5 and Stomp (D6) the Monsters troop type gives them all -- and each would be given the one thing it is for. The Carnosaur returns to Strength 7 and pounces; the Stegadon trades Attacks for weight; the Bastiladon halves the Multiple Wounds that reach it; the Arcanadon becomes the tallest model on the table; the Troglodon poisons rather than kills; the Coatl becomes a Monstrous Creature that treads on nothing; and the Dread Saurian gains Wounds, reach and a roar. The troop type keeps its defaults and stops being the last word.
 ]
+
+= TOMB KINGS
+
+Proposals for #emph[Tomb Kings 3.1]. The army has no House edition, so these are
+against the base book.
+
+#proposal("Stone is not armour a man could take off", status: "under discussion",
+  page: "tomb-kings-stone",
+  why: [
+  Ten entries in this army were carved rather than born, and the book cannot decide what that means. Four of them -- the Tomb Scorpion, the Necroserpent, the Necropolis Knights and the Khemric Titan -- already carry Natural Armour and no worn plate. Five buy armour from the same list a Skeleton Warrior does: the Ushabti, the Sepulchral Stalkers, both sphinxes and the Necrolith Colossus. Two have no save whatever, and one of those is a Monster with six Wounds.
+
+  So this is not a principle being invented. It is a conversion the book began and left half-finished, and the Amazons reached the same answer without help -- Ancient Sentinels are Animated Construct with Natural Armour (4+) and no equipment but a hand weapon.
+
+  What stone should additionally mean is that the armour cannot be taken off it, and the rulebook already owns that wording: Seamless Armour says a save cannot be reduced below a stated value. Applied at 6+ it does precisely one thing, and does it evenly -- nothing at all below Strength 5, where the save was never being stripped, and a flat sixth off everything above. A spear was never going to matter. A greatsword now chips the stone rather than shattering it, and so does a cannonball.
+  ],
+  against: [
+  It is a defensive buff to ten entries in one army, and defensive buffs are the hardest kind to feel confident about, because the thing they change is how long an opponent's plan takes to work.
+
+  Two earlier and larger versions of it were measured and abandoned, which is a fair warning about the third. Toughness 8 for the constructs turned out to blunt heavy attacks half again as much as it blunted light ones, and would have put four six-Wound models into a club whose four existing members all have ten Wounds and cost around 350. Toughness 6 for the rank stone -- Ushabti and the Dwarfs' Rune Guardians -- collided with the Monster rung, where 104 of the corpus's 185 monsters live.
+
+  And it leaves the real problem standing. Monstrous Infantry is compressed to the point of uselessness, with 76% of 58 entries at Toughness 4 and a Troll sharing a rung with an Ogre Bull. This proposal does not fix that, and is careful not to pretend it does.
+  ],
+  cost: [
+  One new special rule of two sentences, and ten entries in one book. Nine of the ten keep the save value they have now and only change what kind of save it is; the Hierotitan gains a 6+ where it has never had anything.
+
+  Points move on seven of the ten, by 12% across the set. Nothing else in any other army is touched, though the same argument plainly reaches the Dwarfs' Rune Guardians and the Amazons' Ancient Sentinels and would be worth making there separately.
+  ],
+  examples: [
+  *What the floor does, and where.* The Khemrian Warsphinx, Toughness 7 with a Natural Armour 5+, in expected unsaved Wounds per hit:
+
+  #minitable(("", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"), ("As now", "0.074", "0.116", "0.167", "0.333", "0.500", "0.667", "0.833", "0.833", "Floored at 6+", "0.074", "0.116", "0.139", "0.278", "0.417", "0.556", "0.694", "0.694"))
+
+  Flat, and confined to the half of the range where a save currently evaporates.
+
+  *Why not Toughness 8.* Against a Toughness 7 construct with a 5+, Strength 3 already needs a 6 followed by a 3 -- 7.4% a hit, eighty-one hits to kill a Warsphinx. The chart's two-roll boxes had already dealt with chaff, so a Toughness step had nothing left to do at the bottom and did all its work at the top instead, halving what Strength 6 achieves.
+
+  *Why not Toughness 6 for the Ushabti.* Measured on the Ushabti body, an unstrippable 5+ at Toughness 5 and a plain 6+ at Toughness 6 are worth exactly the same -- 11.2 hits to kill either way, 58 points either way. They differ only in shape, and one of the two shapes stands on the rung the Monsters are already standing on.
+
+  *The prices.*
+
+  #minitable(("Entry", "Becomes", "Durability", "Points"), ("Ushabti", "Natural Armour (6+)", "+11%", "42 to 45", "Sepulchral Stalkers", "Natural Armour (5+)", "+8%", "48 to 50", "Necropolis Knights", "unchanged, floored", "+5%", "50, unchanged", "Tomb Scorpion", "unchanged, floored", "+6%", "100 to 105", "Necrolith Colossus", "Natural Armour (6+)", "+13%", "210 to 235", "Hierotitan", "Natural Armour (6+)", "+20%", "205 to 245", "Khemrian Warsphinx", "Natural Armour (5+)", "+7%", "225, unchanged", "Necrosphinx", "Natural Armour (5+)", "+7%", "250 to 210", "Khemric Titan", "unchanged, floored", "+8%", "320 to 345", "Sehenesmet", "Natural Armour (6+)", "+20%", "425, unchanged"))
+
+  The Necrosphinx falls because the companion proposal takes its flight; Sehenesmet holds because a special character is priced for his rules and not for a 6+.
+  ],
+)[
+  A new special rule, *Stone Construct*, would replace worn armour with Natural Armour of the same value on every entry in the army that is carved rather than born, and would set a floor under it: the save can never be reduced below 6+, whatever the Strength of the attack. Ten entries take it. Nine keep the save value they already have; the Hierotitan, a six-Wound Monster with no armour whatever, gains a 6+. Toughness is untouched everywhere.
+]
+
+#proposal("The two sphinxes stop being the same creature", status: "under discussion",
+  why: [
+  The Khemrian Warsphinx and the Necrosphinx have the same Movement, the same Weapon Skill, the same Toughness, the same Wounds, the same Initiative, the same Attacks, the same armour and the same Line of Sight. They differ by one point of Strength, one special rule and one crew. Twenty-five points apart, and the book offers no account of why you would field either.
+
+  Their descriptions are not vague about it. A Warsphinx is a siege animal that walks into ranks with four Tomb Guard shooting off its back; a Necrosphinx is a headsman, and Heroic Killing Blow is already on its profile saying so. One should be flattening regiments and the other should be removing a single large thing from the board.
+
+  Neither currently does its own job particularly well, and both do it in the same way: with Stomp (D6) at Line of Sight 5, which the Monsters troop type hands to all 185 monsters in the corpus and which is, for both of these, the largest single source of damage they have. The Necrosphinx kills monsters mostly by treading on them, which is a strange thing for a beheading engine to be doing.
+  ],
+  against: [
+  This is two entries redesigned on a reading of their flavour text, and flavour text is not a measurement. The arithmetic can say what a change does; it cannot say that a Warsphinx ought to stomp harder than it bites.
+
+  Taking flight from the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan is the most aggressive part of it and nothing is offered in return. The case is that a stone sphinx with small carved wings, a skeletal dragon and a two-hundred-ton monument are not credible flyers, and that the army keeps Carrion, the Tomb Barque, Prince Apophas and Arkhan -- so the ability does not leave the list, only the heavy end of it. The case against is simply that three entries get worse and are told to live with it.
+
+  And the Warsphinx keeps Line of Sight 5 while stomping only at reach 3, which is a combination no entry in the corpus currently prints. It is deliberate -- the platform is tall, the feet are not discriminating -- but it is a new shape.
+  ],
+  cost: [
+  Two entries, plus a line each on the Necrolith Bone Dragon and the Khemric Titan, plus the Tomb King and Tomb Prince entries that take a Warsphinx as a mount.
+
+  Both need an entry to be able to print its own Stomps and its own reach. Printing the number is already established practice: thirteen Tyranids entries carry a Stomp value in their special rules, from Stomp (D3) on a Trygon to Stomp (D6+1) on a Carnifex, and seven Giants override theirs conditionally when they jump up and down. Printing a *reach* has no precedent anywhere -- no entry in the corpus does it -- and that half rests on the rulebook proposal.
+
+  One rule is borrowed rather than new: Entombed Beneath the Sands is the Tomb Scorpion's own, already written and already in this book.
+  ],
+  examples: [
+  *The Khemrian Warsphinx, as it would print.* Weapon Skill 4 to 3 and Attacks 4 to 3, because it is a beast and not a swordsman; Stomp (2D3+1) in place of Stomp (D6), reaching Line of Sight 3 rather than 5. Average Stomps rise from 3.5 to 5 and become far more reliable, and it can no longer tread on anything large.
+
+  #minitable(("Expected unsaved Wounds a round", "Rank infantry", "Elite infantry", "A monster"), ("As printed", "6.47", "3.83", "1.86", "As proposed", "6.75", "4.39", "0.75"))
+
+  Better at both of its jobs, 60% worse at somebody else's. It stays at 225.
+
+  *Envenomed Sting, reworked.* Today it is +10 points for Poisoned Attacks on everything, which is a flat damage upgrade with no character. Instead: nominate one Attack before rolling To Hit; that Attack has Poisoned Attacks and Multiple Wounds (D3). The pattern is not invented -- the Arachnarok Spider's Venom Surge is the same rule at D6 -- and it gives the Warsphinx the one thing it lacked against anything large. Still +10. Fiery Roar is untouched at +30.
+
+  *The Necrosphinx, as it would print.* Attacks printed at 5, with the two hand weapons and their Parry (6+) struck, so the profile says what it does; Stomp (D3) at reach 3; Envenomed Sting removed, since a headsman does not need venom; and Fly removed. In its place, Entombed Beneath the Sands as a paid upgrade at +25 -- it is a statue that waits under the sand, which is what the Tomb Scorpion does and what the Dread Saurian pays 25 for in another book.
+
+  Heroic Killing Blow, its actual weapon, is untouched. 250 to 210.
+
+  *And nothing large leaves the ground.* Fly comes off the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan. What is left airborne in the army: Carrion at 20 points, the Tomb Barque at 125, Prince Apophas at 130 and Arkhan the Black at 340.
+  ],
+)[
+  The Warsphinx becomes the army's anti-rank engine and the Necrosphinx its headsman, where today they are the same model at two prices. The Warsphinx trades Weapon Skill and an Attack for Stomp (2D3+1) that reaches only Line of Sight 3, and its Envenomed Sting becomes one nominated Attack with Poisoned Attacks and Multiple Wounds (D3). The Necrosphinx prints its Attacks at 5 with the hand weapons struck, stomps D3 at reach 3, loses the Sting, and gains Entombed Beneath the Sands as a paid upgrade. Flight leaves all three of the army's heavy flyers -- the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan -- and nothing is given back.
+]
