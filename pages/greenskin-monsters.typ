@@ -100,18 +100,22 @@ separates the two troop types is *Wounds*:
    "Monster (n=114)", "0 (0%)", "23 (20%)"),
 )
 
-Not one Monster in the corpus is Toughness 5 with four Wounds. Monstrous
-Creatures have four; Monsters have five or more. So the Wyvern is a Monster
-because of its fifth Wound and nothing else -- and every big winged character
-mount in the corpus that is *not* a dragon is already a Monstrous Creature:
+Not one Monster in the corpus is Toughness 5 with four Wounds. That is a
+description of how the two troop types have been written, not a rule binding
+what they may be -- nothing stops a Monstrous Creature having five Wounds, and
+the Imperial Griffon in the Empire proposal keeps exactly that. But it does say
+the fifth Wound is the only thing putting the Wyvern among the Monsters, and
+every big winged character mount in the corpus that is *not* a dragon is
+already a Monstrous Creature:
 Griffon, Manticore, Royal Hippogryph, Celestial Lion, Abyssal Terror, Lammasu.
 The Monster-class flying mounts are the Star, Moon and Sun Dragons, the Great
 Wyrm and the Maw-krusha -- dragons and dragon-kin, and one Age of Sigmar
 import.
 
 Putting the Wyvern in the dragons' troop type is the rules agreeing with the
-misidentification. Moving it costs a Wound, which is what "on the smaller side"
-should cost.
+misidentification. The fourth Wound is then a separate decision rather than a
+consequence of the move -- it is what "on the smaller side" was judged to be
+worth, and the troop type would have permitted five.
 
 === Voracious
 

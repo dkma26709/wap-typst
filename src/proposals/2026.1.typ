@@ -491,6 +491,98 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
   Not a proposal but a decomposition. Redoing magic is six separable arguments wearing one name, and this sets them out so they can be taken one at a time. Nothing here proposes an answer to any of them.
 ]
 
+= CHAOS DWARFS
+
+Proposals for #emph[Chaos Dwarfs 3.0]. The army has no House edition, so these are against the base book.
+
+#proposal("The Kolossus is a furnace with something in it", status: "under discussion",
+  page: "faction-monsters",
+  why: [
+  A Kolossus is a Dwarf-shaped killing machine crewed from inside, built when a lord of House Khash willed that his sorcerers should create life from unliving materials. The Chaos Dwarfs make them by forcibly binding daemons into war machines -- hundreds of daemons to fuel one, and a hell-furnace that can only be lit with a blood sacrifice.
+
+  The entry's best rule is *Overdrive Switch*: +D3 Attacks a round at the cost of a Strength 6 hit for every natural 1 To Hit. It costs twenty points and is optional. A machine whose entire nature is the furious thing sealed inside it should not have "has a furious thing sealed inside it" on its options list.
+
+  It also buys *heavy armour* from the equipment list, which is the sixth construct in these passes found doing so -- the five Nehekharan ones are the others, while the Rogue Idol of Gork is the opposite case and buys no armour at all. And nothing whatever expresses the fire: hundreds of bound fire daemons, and a model can put its hands on the machine all day without being burned.
+  ],
+  against: [
+  The Furnace is a per-turn decision on an entry that already asks for several, and it is a decision that is trivial while the model is healthy -- at six Wounds a D6 can never beat it, so every fresh Kolossus stokes to three every turn without thinking. The interesting part only arrives once it has been hurt, which some games will never reach.
+
+  *Wreathed in Fire* is a passive that fires more often the worse the opponent is, which is unusual enough to be worth flagging as a risk rather than only as a virtue: against a Goblin horde it returns over two Wounds a round, and against a lone hero almost nothing.
+
+  And the entry still has no crew, though Dwarfs ride inside it and stand on firing platforms on its shoulders, and its Ballistic Skill 3 has nobody behind it. That is left undone deliberately -- it is a larger change than everything else here combined.
+  ],
+  cost: [
+  One entry in a book with no House edition, so the change is against the base book.
+
+  Two rules replace one option. *The Furnace of Hashut* is the Empire Steam Tank's *Steam Engine* at a monster's scale -- declare how hard you stoke it, roll against its current Wounds, suffer for it if the roll wins. *Wreathed in Fire* is Bretonnia's *Ironspike Shield* clause, which already inflicts a hit on any enemy rolling a natural 1 To Hit, at a monster's frequency rather than a character's.
+
+  Its heavy armour becomes Natural Armour at the same value, which changes no number. Its Stomp comes down from D6 at reach 3 to one at reach 2, which does.
+  ],
+  examples: [
+  *Stone is a body; plate is plate.* The obvious move was to give the Kolossus the *Stone Construct* rule the Nehekharan constructs and the Rogue Idol take, and rename it for a material they could share. The Empire Steam Tank says otherwise: the corpus's existing answer to a machine that is mostly armour prints the save in the troop type as Chariot (Armour save 2+) and lets it behave like armour. So the two cases split, *Stone Construct* needs no renaming, and the Kolossus takes plain Natural Armour (4+) -- the same value it has now, still stripped by Strength 7.
+
+  *The furnace gets more dangerous as the machine breaks.*
+
+  #minitable(("Wounds left", "6", "5", "4", "3", "2", "1"), ("Chance the daemons surge", "0%", "17%", "33%", "50%", "67%", "83%", "Self-hits at three Draughts", "0.00", "0.50", "1.00", "1.50", "2.00", "2.50"))
+
+  *And the fire punishes numbers rather than quality*, which is the exact complement of the bane maces at Armour Piercing (1):
+
+  #minitable(("Attacking it", "Attacks a round", "Wounds burned back"), ("Night Goblins, two ranks of ten", "20", "2.22", "Empire Halberdiers", "10", "1.11", "Ogres, three models", "9", "0.75", "Chaos Warriors", "10", "0.42", "A lone monster", "5", "0.09"))
+
+  *Net, over the four matchups:* down 25% unstoked, up 3% at full stoke -- so 250 points holds, because at three Draughts it does what it does today and the risk is what it pays to get there.
+  ],
+)[
+  The Kolossus's heavy armour becomes Natural Armour (4+) at the same value, because its plating is part of the machine -- but not the unstrippable kind a stone construct gets, since plate is still plate. *Overdrive Switch* stops being a twenty-point option and becomes *The Furnace of Hashut*: declare nought to three Draughts each turn for +1 Attack each, then roll a D6 and take a Strength 6 hit per Draught if it beats the Kolossus's current Wounds. A new rule, *Wreathed in Fire*, burns any enemy model that rolls a natural 1 To Hit against it. Its Stomp falls to one at reach 2. 250 points, unchanged.
+]
+
+= EMPIRE
+
+Proposals for #emph[The Empire 3.1], and for the House edition of it where one stands.
+
+#proposal("The Empire's only monster stops being a blank", status: "under discussion",
+  page: "faction-monsters",
+  why: [
+  The Empire fields two monstrous entries and both are Griffons, both character mounts, General or Beast Battle Wizard Lord only. There is no standalone monster in the book at all -- so whatever a Griffon is, that is what an Empire monster is. Its complete special rules line reads: Fly (8), Natural Armour (6+).
+
+  Every account of a Griffon defines it against the Manticore, and always the same way: efficient and precise hunters, neither merciful nor cruel, who "in contrast to monsters such as Manticores" do not kill "with excesses of savagery or frenetic fury" but with "controlled, measured motions and savage grace". The corpus renders the Manticore correctly -- Fly (8), Frenzy, Killing Blow, five flailing attacks that strike late and kill by luck. The creature it is supposed to be the opposite of has a 6+ save and nothing else.
+
+  That 6+ is not even a save. A Natural Armour 6+ is stripped at Strength 4 and above, so it works against Strength 3 and nothing else; removing it entirely costs seven percent.
+  ],
+  against: [
+  The Initiative and Weapon Skill this rests on bite in a narrower place than they look. Weapon Skill 6 buys nothing against Weapon Skill 4 -- both hit on 3+ -- and Initiative 5 and 6 are 13% and 9% of all profiles in the corpus, so the whole gain is against elves, elite infantry and other monsters. Against Orc, Dwarf and undead lines nothing changes at all.
+
+  Taking the Imperial Griffon from Monster to Monstrous Creature leaves the Empire with no Monster whatsoever. That reads as a statement about an army of men and machines, or as a gap, depending on the reader.
+
+  And the first draft of this gave the Griffon *Always Strikes First*, which the lore reads as though it were written for -- and which measured at +97% on the charge and 206 points. That is recorded on the page rather than quietly dropped, because it is a fair warning about how quickly precision rules compound.
+  ],
+  cost: [
+  Two entries, both character mounts, plus the Lord entries that buy them.
+
+  One new rule of a single line, *The Stoop*. Four options are struck -- *Shredding Talons*, *Razorbeak*, *Shrike Talons* and *Bloodroar* -- on the principle that an option should be something you can see on the model; barding and a second head survive, and *Swooping Strike* is folded in as Devastating Charge because the stoop is what a Griffon is.
+
+  Neither Griffon has a Stomp afterwards.
+  ],
+  examples: [
+  *The contrast, finally in the rules rather than only in the prose:*
+
+  #minitable(("", "Rules", "What it is"), ("Manticore", "Fly (8), Frenzy, Killing Blow", "five attacks, late, savage, kills by luck", "Griffon", "Fly (8), Devastating Charge, The Stoop", "four attacks, early, precise, kills by landing them"))
+
+  *What the Initiative buys, and where it stops:*
+
+  #minitable(("The Griffon's Initiative", "Strikes before", "Gained"), ("4, as printed", "51.3% of all profiles", "--", "5", "70.7%", "+19.4", "6", "83.8%", "+13.1", "7, when it charges", "92.4%", "+8.6"))
+
+  *And what it does:*
+
+  #minitable(("Expected unsaved Wounds", "Rank infantry", "Elite infantry", "Elves", "A monster"), ("As printed, charging", "2.22", "1.48", "1.67", "0.74", "As proposed, charging", "2.78", "1.85", "2.78", "0.93", "As proposed, later rounds", "2.22", "1.48", "2.22", "0.74"))
+
+  Better when it stoops, unchanged afterwards. *No Stomp for either Griffon*, and for the sharpest reason in these passes: a Stomp is automatic hits, the one attack where Weapon Skill never enters and no hit modifier applies. Handing a bucket of them to a monster whose entire identity is Weapon Skill 6 and Initiative 6 is self-defeating.
+
+  *The prices are not a rise.* A Griffon with both its options costs 135 today, and an Imperial Griffon with the three this proposal strikes costs 195 -- barding and Two Heads are extra in the old price and the new alike. What changes is that the character stops being sold separately.
+  ],
+)[
+  The Griffon loses its Natural Armour (6+), which only ever worked against Strength 3, and gains Weapon Skill 6, Initiative 6 and Devastating Charge, with *The Stoop* giving it +1 Initiative more in a turn it charges -- so it strikes before 92% of the corpus when it dives and hits harder for having aimed. Four invisible upgrades are struck and the two you can see on the model, barding and Two Heads, survive. Neither Griffon has a Stomp. The Imperial Griffon becomes a Monstrous Creature while keeping its fifth Wound and Strength 6, leaving the Empire fielding no Monster at all. 140 and 195 points.
+]
+
 = LIZARDMEN
 
 Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one stands.
@@ -658,7 +750,7 @@ Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where o
   why: [
   None of the three is broken, and each has a different kind of gap between what its description says it is and what its entry lets it do.
 
-  The *Wyvern* is separated from a Dragon, in every account of it, by exactly one thing: the poisonous sting. Its entry expresses that as blanket Poisoned Attacks smeared across three undifferentiated Attacks, so the one feature that makes it not a dragon is a flat modifier on its bite. It is also filed as a Monster, and the corpus is unambiguous that Monsters have five Wounds or more and Monstrous Creatures have four -- every big winged character mount that is not a dragon is already a Monstrous Creature, from the Griffon to the Manticore to the Royal Hippogryph.
+  The *Wyvern* is separated from a Dragon, in every account of it, by exactly one thing: the poisonous sting. Its entry expresses that as blanket Poisoned Attacks smeared across three undifferentiated Attacks, so the one feature that makes it not a dragon is a flat modifier on its bite. It is also filed as a Monster, and while nothing binds a troop type to a Wound count, the fifth Wound is the only thing putting it there: not one Monster in the corpus is Toughness 5 with four Wounds, and every big winged character mount that is not a dragon is already a Monstrous Creature, from the Griffon to the Manticore to the Royal Hippogryph.
 
   The *Arachnarok Spider* is "feared for its potent poison and ability to ensnare entire villages with its thick web", and it webs nothing whatever. The Lore of da Spider God has the web spells; the 40-point Catchweb Spidershrine grants its rider that lore. The signature ability belongs to the passenger.
 
@@ -785,4 +877,50 @@ against the base book.
   ],
 )[
   The Warsphinx becomes the army's anti-rank engine and the Necrosphinx its headsman, where today they are the same model at two prices. The Warsphinx trades Weapon Skill and an Attack for Stomp (2D3+1) that reaches only Line of Sight 3, and its Envenomed Sting becomes one nominated Attack with Poisoned Attacks and Multiple Wounds (D3). The Necrosphinx prints its Attacks at 5 with the hand weapons struck, stomps D3 at reach 3, loses the Sting, and gains Entombed Beneath the Sands as a paid upgrade. Flight leaves all three of the army's heavy flyers -- the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan -- and nothing is given back.
+]
+
+= WARRIORS OF CHAOS
+
+Proposals for #emph[Warriors of Chaos 3.0], and for the House edition of it where one stands.
+
+#proposal("The Chimera's anatomy stops being for sale", status: "under discussion",
+  page: "faction-monsters",
+  why: [
+  The Chimera's complete special rules line is Fly (8). Beneath it sits a hundred and twenty points of menu on a hundred-and-ninety-point body: Venomous Ooze +10, Fiend Tail +15, Iron-hard Skin +25, Flaming Breath +30, Regenerating Flesh +40.
+
+  This is the one creature in these passes whose flavour genuinely argues for varying between models -- Chimerae are "more susceptible than most monsters to the twisting power of Chaos" and "take many bizarre shapes". So the complaint is not that it has a menu. It is that the menu is miscategorised.
+
+  A Chimera is described as having "three distinct heads resembling a ram, a lion, and a dragon, with the dragon head capable of emitting noxious smoke and scorch", and "most Chimerae possess a fiendish tail that ends in a snapping maw possessed of an intelligence and hunger of its own". That is anatomy, and it costs 30 and 15 points. The iron skin and the regenerating flesh are the things the lore says actually vary, and they sit at the same counter. So the anatomy is optional and the mutations are compulsory if you want to win.
+
+  And six identical Attacks at Strength 5 is exactly what three different heads and a tail with its own appetite should not produce.
+  ],
+  against: [
+  Printing the breath and the tail raises the floor of a creature whose whole charm may be that no two are alike, and a player who liked building a cheap bare-bones Chimera loses that option.
+
+  The tail's separate Initiative is a shape the game defines and almost never uses -- two models in thirty-two books -- so it is closer to new machinery than the wording suggests, and it adds a second set of dice to resolve on a model that already has six Attacks and a breath weapon.
+
+  And the disagreement clause, forcing the tail onto a second unit, will sometimes be a straightforward tax on a player who charged carefully into one target.
+  ],
+  cost: [
+  One entry, printed identically in Beastmen and Warriors of Chaos, so both books move together.
+
+  One new rule, *A Fearsome Division of Labour*, which uses *Split Profiles and Striking Order* -- defined in the rulebook and used by two models in the whole corpus, Tehenhauin and one Tyranid. Two options are folded into the profile and three remain for sale. The Stomp comes down from D6 at reach 3 to D3 at reach 2.
+  ],
+  examples: [
+  *What is anatomy and what is mutation, by the lore's own wording:*
+
+  #minitable(("Option", "Cost", "What the lore says"), ("Flaming Breath", "+30", "the dragon head, in its physical description -- printed", "Fiend Tail", "+15", "MOST Chimerae possess one -- printed", "Venomous Ooze", "+10", "SOME sprout jaws that drip poison -- stays for sale", "Iron-hard Skin", "+25", "a mutation -- stays for sale", "Regenerating Flesh", "+40", "a mutation -- stays for sale"))
+
+  *A new angle for the attacks, because the old one is wearing thin.* Three passes have already answered "differentiate the attacks" with "nominate one Attack before rolling To Hit" -- the Warsphinx, the Arachnarok and the Wyvern. A fourth is a habit. The lore asks for something else anyway: "each head moves independently of the others, and while fierce disagreements can ensue about which prey to hunt, they can each do their job with a fearsome division of labour."
+
+  So the tail strikes at *Initiative 5* while the body strikes at its printed Initiative 2, resolved separately -- which finally gives that Initiative 2 a purpose, because a Chimera cut down by a fast enemy still gets its tail in. A maw with a hunger of its own does not wait for the rest of the animal.
+
+  *The result:*
+
+  #minitable(("Expected unsaved Wounds a round", "Rank infantry", "Elite infantry", "Cavalry", "A monster"), ("As printed, nothing bought (190)", "6.25", "3.61", "5.21", "0.83", "As printed, Tail and Breath bought (235)", "8.47", "4.72", "6.78", "1.25", "As proposed, both innate (220)", "7.22", "3.89", "5.74", "1.25"))
+
+  Up 21% on a bare Chimera, down 12% on one with the Tail and Breath already bought, which is the whole proposal in a line. A Chimera with all five options costs 310 today and keeps three of them afterwards.
+  ],
+)[
+  The Chimera's *Flaming Breath* and *Fiend Tail* stop being purchases and become what they are -- a dragon head in its physical description, and the tail-maw that most Chimerae have -- while *Venomous Ooze*, *Iron-hard Skin* and *Regenerating Flesh* stay for sale, because those are the things the lore says vary between one Chimera and the next. A new rule, *A Fearsome Division of Labour*, resolves the tail's Attack at Initiative 5 separately from the body's, and sends it against a different unit when the Chimera is fighting more than one. Its Stomp drops to D3 at reach 2. 190 becomes 220, and the Beastmen entry moves with it.
 ]
