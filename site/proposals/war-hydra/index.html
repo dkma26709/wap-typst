@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The War Hydra, and the candle problem</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>The War Hydra, and the candle problem</h2><p>The War Hydra is not under-designed. It is the most thoroughly <strong>degrading</strong> monster in the corpus – three separate rules already key off the damage it has taken, where a sweep for that phrasing finds only seven entries in thirty-two books carrying even one, and the runner-up carrying two:</p><ul><li><strong>Loss of Heads</strong> – one fewer Attack for every unsaved Wound it has lost</li><li><strong>Fiery Breath</strong> – “the Strength of this attack is equal to the War Hydra’s remaining Wounds”</li><li><strong>Spit Fire</strong> – Strength <strong>and</strong> Multiple Shots both equal to remaining Wounds</li></ul><p>Nothing else in thirty-two books commits to an idea that hard. The trouble is what the commitment produces, and it is the opposite of the creature’s own lore.</p><h3>The candle problem</h3><p>Stack two degrading scales on one attack and it does not decline, it extinguishes. Spit Fire’s shots and its Strength both fall with the Hydra’s Wounds, so:</p><table><thead><tr><th>WOUNDS LEFT</th><th>SPIT FIRE, AS PRINTED</th><th>EXPECTED WOUNDS IT INFLICTS ON RANK INFANTRY</th></tr></thead><tbody><tr><td>5</td><td>5 shots at Strength 5</td><td>2.78</td></tr><tr><td>4</td><td>4 shots at Strength 4</td><td>1.78</td></tr><tr><td>3</td><td>3 shots at Strength 3</td><td>0.83</td></tr><tr><td>2</td><td>2 shots at Strength 2</td><td>0.33</td></tr><tr><td>1</td><td>1 shot at Strength 1</td><td>0.09</td></tr></tbody></table><p>A wounded Hydra’s shooting is worth nine hundredths of a Wound. It has not degraded, it has gone out.</p><p>And every account of the creature says the exact reverse. “A foe’s only chance is to sever all the monster’s heads in quick succession; if even a single one remains, the remainder will swiftly grow back and devour the impudent attacker for his troubles.” The thing on one head is supposed to be the dangerous moment, not a formality.</p><p><strong>So the fix is to degrade one scale and not two.</strong> Fix the Strength at 4 and let only the shots fall, one per head:</p><table><thead><tr><th>WOUNDS LEFT</th><th>AS PRINTED</th><th>AS PROPOSED</th><th>WHOLE MODEL, VS PRINTED</th></tr></thead><tbody><tr><td>5</td><td>5 shots at S5</td><td>5 shots at S4</td><td>\-23%</td></tr><tr><td>3</td><td>3 shots at S3</td><td>3 shots at S4</td><td>\-6%</td></tr><tr><td>1</td><td>1 shot at S1</td><td>1 shot at S4</td><td>\-12%</td></tr></tbody></table><p>It gives up peak output and keeps its teeth all the way down, which is the creature the lore describes. Strength 4 is also where the corpus keeps this kind of attack: of 72 breath weapons across the books, 29 are at Strength 4, only 8 reach Strength 5 or above and exactly one reaches Strength 6.</p><p><strong>And it stops being a purchase.</strong> Spit Fire costs 10 points today, one of three breath options. A Hydra that belches fire is not an upgrade; the other two, <strong>Fiery Breath</strong> at 20 and <strong>Acid Breath</strong> at 30, are struck, because a Hydra that breathes three different ways is a menu again.</p><h3>Regeneration that fire cannot stop</h3><p>The rulebook’s Regeneration “may not be used against Flaming Attacks”, which makes a torch the Hydra’s off-switch – and the Hydra is itself a fire-breather, vulnerable to precisely what it does.</p><p>Our hybrid ruleset’s answer was a custom variant that fire does not negate, on the argument that the degrading Attacks <strong>are</strong> the vulnerability and a second one is not needed. The version proposed here goes further and makes it genuine healing rather than a delayed save:</p><p><strong>Multi-Headed Regrowth.</strong> At the end of each of your turns, roll a D6 for each Wound the War Hydra is missing. Each result of 5 or more restores one Wound.</p><p>Note what that is not: it is not conditional on having been wounded this phase, so a Hydra that disengages knits back up; and it heals faster the worse it is, because there are more missing Wounds to roll for. Heads grow back from stumps.</p><h4>Why once a turn and not twice</h4><p>The first draft of this rolled at the end of <strong>each player turn</strong> – twice a game turn. Simulated over sixty thousand games, that is not a monster:</p><table><thead><tr><th>ATTACKING IT</th><th>WOUNDS A GAME TURN</th><th>GAME TURNS TO KILL IT</th></tr></thead><tbody><tr><td>20 Empire Halberdiers</td><td>1.39</td><td>never</td></tr><tr><td>20 Saurus Warriors</td><td>1.39</td><td>never</td></tr><tr><td>5 Chaos Knights</td><td>2.50</td><td>4.6</td></tr><tr><td>A Carnosaur</td><td>2.78</td><td>3.1</td></tr><tr><td>A Dread Saurian</td><td>5.00</td><td>1.0</td></tr></tbody></table><p>A full regiment of Saurus Warriors grinding it for an entire game never takes it down. Halving the rate fixes it and two ways are arithmetically identical – once a game turn on a 5+, or twice on a 6+. The first is one roll rather than two.</p><h4>It is a trade rather than a buff, but not a flat one</h4><p>Simulated against the Regeneration (4+) it replaces – and giving Regeneration its best case, ignoring the Flaming exception entirely:</p><table><thead><tr><th>WOUNDS A GAME TURN</th><th>NO HEALING</th><th>REGROWTH 5+, ONCE A TURN</th><th>REGENERATION (4+)</th></tr></thead><tbody><tr><td>1</td><td>5.0</td><td>21.0</td><td>10.0</td></tr><tr><td>1.5</td><td>3.6</td><td>7.3</td><td>6.9</td></tr><tr><td>2</td><td>3.0</td><td>4.3</td><td>5.3</td></tr><tr><td>3</td><td>2.0</td><td>2.3</td><td>3.7</td></tr></tbody></table><p><strong>The two cross at about 1.5 Wounds a game turn.</strong> Above that the Regrowth is the weaker defence – against real pressure it heals more slowly than a save prevents. Below it the Regrowth is far stronger, because healing compounds when nothing is outpacing it: a Hydra being plinked at by archers recovers indefinitely, where a Hydra under a regiment does not.</p><p>That is the honest shape of the change, and it is worth knowing which half of it will be felt. What the rule buys either way is that no opponent can switch it off by packing a torch.</p><p>Flaming Attacks appear on 111 of 1,525 unit entries – 7.3% – but in 31 of the 32 armies. So the counter is available to everyone and carried by almost nothing, which is exactly the profile of a tech choice. Removing it is a real cost to counterplay, and worth naming as such rather than glossing.</p><h3>Heads are Wounds, and the wording has to say so</h3><p><strong>Loss of Heads</strong> currently reads “for each unsaved Wound the War Hydra has lost <strong>during the battle</strong>”. With Regrowth restoring Wounds, that phrasing never gives the head back – a Hydra healed to full would still be missing Attacks for wounds it no longer has.</p><p>One word fixes it: <strong>for each Wound it is currently missing</strong>. Heads come off and grow back with the Wounds they are.</p><h3>What the model settled that the lore could not</h3><p>The hybrid draft reads the Hydra as “serpentine and snake-bodied – sinuous more than armoured-fortress, low to the ground rather than upright-tower”, and prices Movement and armour down from that. The published artwork says otherwise: the Hydra is a heavy four-legged reptile with a broad low torso, clawed feet and a thick tail, and the snake is entirely in the five necks and heads.</p><p>That matters for one thing and one thing only, and it is not the stat line. It is the <strong>Stomp</strong>. The Coatl in the Lizardmen pass prints none at all on the ruling that “it does not trample anything at all – it is a snake”; a War Hydra plainly does, because it has four clawed feet and a great deal of weight over them. It takes <strong>Stomp (2) at reach 2</strong> – the Bastiladon’s number, for a heavy deliberate quadruped whose real damage is somewhere else entirely.</p><p>Movement 5 and Natural Armour 5+ are kept regardless, as a judgement about what the creature should be rather than a deduction from what it looks like.</p><h3>The War Hydra, as it would print</h3><table><thead><tr><th></th><th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>I</th><th>A</th><th>LD</th><th>POINTS</th></tr></thead><tbody><tr><td>As printed</td><td>6</td><td>4</td><td>4</td><td>5</td><td>5</td><td>5</td><td>2</td><td>8</td><td>6</td><td>200</td></tr><tr><td>As proposed</td><td>5</td><td>4</td><td>4</td><td>5</td><td>5</td><td>5</td><td>2</td><td>8</td><td>6</td><td>165</td></tr></tbody></table><p>Monster (Hydra), 50x100, <strong>no handlers</strong>. Natural Armour (5+). Stomp (2), reaching Line of Sight 2.</p><ul><li><strong>Loss of Heads:</strong> the War Hydra loses one Attack for each Wound it is currently missing.</li><li><strong>Multi-Headed Regrowth:</strong> at the end of each of your turns, roll a D6 for each Wound the War Hydra is missing. Each result of 5 or more restores one Wound.</li><li><strong>Spit Fire:</strong> Range 8/12″, Strength 4, Flaming Attacks, Multiple Shots (*), Quick Shot, Rapid Fire. The number of shots is equal to the War Hydra’s remaining Wounds – one gout of flame per head.</li></ul><p>The five trait upgrades stay: <strong>Bloodthirsty</strong> +5, <strong>Daerlythe’s Aura</strong> +5, <strong>Battle Lover</strong> +10, <strong>Chameleon Skin</strong> +10, <strong>Armour Plates</strong> +15. Unlike the Griffon’s struck options these are things a model can show – scales, plates, and in Chameleon Skin’s case literally how it is painted – and <strong>Armour Plates</strong> remains worth its 15 points even beside a base 5+, because Natural Armour combines with other Natural Armour and the two stack to a 4+.</p><h3>What it costs</h3><p>One entry in one book, which has no House edition, so the change is against the base book. Two Beastmaster Apprentices leave the entry, taking <strong>Elven Grace</strong>, <strong>Hatred (High Elves)</strong> and <strong>Murderous Prowess</strong> with them – the fraught-handler lore, “a Beastmaster must be quick with his lash lest he be devoured in the enemy’s stead”, goes unmodelled, as it already was.</p><p>Only one rule is new, and its idea is borrowed. <strong>Spit Fire</strong> is the book’s own, re-keyed and made standard. <strong>Loss of Heads</strong> changes by one word. <strong>Multi-Headed Regrowth</strong> takes our hybrid ruleset’s fire-proof regeneration and writes it in this system’s machinery – the once-a-turn timing, the 5+, and the one-roll-per-missing-Wound shape are this proposal’s, and are the parts that needed measuring. The Stomp is printed rather than inherited, which rests on the rulebook proposal that permits it.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -535,6 +535,52 @@ Proposals for #emph[Chaos Dwarfs 3.0]. The army has no House edition, so these a
   The Kolossus's heavy armour becomes Natural Armour (4+) at the same value, because its plating is part of the machine -- but not the unstrippable kind a stone construct gets, since plate is still plate. *Overdrive Switch* stops being a twenty-point option and becomes *The Furnace of Hashut*: declare nought to three Draughts each turn for +1 Attack each, then roll a D6 and take a Strength 6 hit per Draught if it beats the Kolossus's current Wounds. A new rule, *Wreathed in Fire*, burns any enemy model that rolls a natural 1 To Hit against it. Its Stomp falls to one at reach 2. 250 points, unchanged.
 ]
 
+= DARK ELVES
+
+Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are against the base book.
+
+#proposal("The War Hydra stops going out like a candle", status: "under discussion",
+  page: "war-hydra",
+  why: [
+  The War Hydra is not under-designed -- it is the most thoroughly degrading monster in the corpus. Three separate rules already key off the damage it has taken: *Loss of Heads* removes an Attack per Wound lost, and both *Fiery Breath* and *Spit Fire* scale their Strength with its remaining Wounds, Spit Fire scaling its number of shots as well.
+
+  That is the problem. Stack two degrading scales on one attack and it does not decline, it extinguishes. Spit Fire at full health is five shots at Strength 5; at one Wound it is one shot at Strength 1, worth nine hundredths of a Wound against rank infantry. The creature's own lore says the reverse -- "a foe's only chance is to sever all the monster's heads in quick succession; if even a single one remains, the remainder will swiftly grow back and devour the impudent attacker" -- so a Hydra down to its last head should be the dangerous moment rather than a formality.
+
+  The second complaint is smaller and older: Regeneration "may not be used against Flaming Attacks", which makes a torch the Hydra's off-switch. A fire-breathing monster is turned off by fire.
+  ],
+  against: [
+  Taking the flame-negation off Regeneration removes real counterplay. Flaming Attacks appear on only 7.3% of unit entries but in 31 of the 32 armies, which is the profile of a tech choice -- something every opponent can pack and almost nobody carries by default. Rewarding the player who brought the torch is good design, and this stops doing it.
+
+  The first draft of the healing rule was measured as unplayable: rolled at the end of every player turn, the Hydra out-heals 20 Saurus Warriors grinding it for an entire game. It is halved here, but a rule that needed halving once may need watching again.
+
+  And the two Beastmaster Apprentices leave the entry, taking three faction rules and the fraught-handler lore with them.
+  ],
+  cost: [
+  One entry in a book with no House edition, so the change is against the base book.
+
+  Only one rule is new. *Spit Fire* is the book's own, re-keyed and made standard rather than sold at 10 points. *Multi-Headed Regrowth* borrows our own hybrid ruleset's fire-proof regeneration, but its timing, threshold and per-missing-Wound shape are this proposal's. *Loss of Heads* changes by one word -- "has lost during the battle" becomes "is currently missing", without which a healed Hydra would never get its heads back.
+
+  Two of the three breath options are struck, the five trait upgrades all stay, and the Stomp is printed rather than inherited -- which rests on the rulebook proposal that permits it.
+  ],
+  examples: [
+  *The candle problem, and the one-scale fix.*
+
+  #minitable(("Wounds left", "As printed", "As proposed", "Whole model vs printed"), ("5", "5 shots at S5", "5 shots at S4", "-23%", "3", "3 shots at S3", "3 shots at S4", "-6%", "1", "1 shot at S1", "1 shot at S4", "-12%"))
+
+  It gives up peak output and keeps its teeth all the way down. Strength 4 is also where the corpus keeps this kind of attack -- of 72 breath and spit weapons across the books, 29 sit at Strength 4 and only 8 reach Strength 5 or above.
+
+  *Why the healing rolls once a game turn and not twice.* Simulated over sixty thousand games, rolling at the end of each player turn produces this:
+
+  #minitable(("Attacking it", "Wounds a game turn", "Game turns to kill it"), ("20 Empire Halberdiers", "1.39", "never", "20 Saurus Warriors", "1.39", "never", "5 Chaos Knights", "2.50", "4.6", "A Carnosaur", "2.78", "3.1", "A Dread Saurian", "5.00", "1.0"))
+
+  *And halved, it is a trade rather than a buff -- but not a flat one.* Simulated against the Regeneration (4+) it replaces, the two cross at about 1.5 Wounds a game turn: at 2 Wounds a turn the Hydra lasts 4.3 turns with Regrowth against 5.3 with Regeneration, so under real pressure the new rule is the weaker defence. At 1 Wound a turn it lasts 21.0 against 10.0, because healing compounds when nothing outpaces it. What it buys either way is that nobody can switch it off with a torch.
+
+  *The model settles the Stomp.* Our hybrid ruleset reads the Hydra as snake-bodied and low-slung. The artwork does not: it is a heavy four-legged reptile with a broad torso, clawed feet and a thick tail, and the snake is entirely in the five necks. So unlike the Coatl -- which prints no Stomp at all on the ruling that a snake tramples nothing -- the Hydra takes Stomp (2) at reach 2, the Bastiladon's number for a heavy deliberate quadruped whose real damage is elsewhere.
+  ],
+)[
+  The War Hydra's *Spit Fire* stops being a 10-point option and becomes what the creature does, with its Strength fixed at 4 and only its number of shots falling -- one gout per remaining head -- so that a Hydra on its last head still fires a real attack instead of a Strength 1 puff. *Fiery Breath* and *Acid Breath* are struck. Regeneration (4+) becomes *Multi-Headed Regrowth*: at the end of each of your turns, roll a D6 for each Wound it is missing and restore one on each 5 or more, and unlike Regeneration this works against Flaming Attacks. *Loss of Heads* is re-worded to "currently missing" so that regrown Wounds bring their heads back. It loses its two Beastmaster Apprentices, drops to Movement 5 and Natural Armour (5+), prints Stomp (2) at reach 2, and falls from 200 points to 165.
+]
+
 = EMPIRE
 
 Proposals for #emph[The Empire 3.1], and for the House edition of it where one stands.
