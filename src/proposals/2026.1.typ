@@ -625,6 +625,49 @@ Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are
   A new rule, *Untameable*, makes the Manticore take its Frenzy Leadership tests on its own Leadership 5 rather than its rider's 8 or 9 -- so the beast that "even their riders often struggle to control" actually is, in four turns out of six instead of one. It trades Weapon Skill 5 for a fifth Attack, which costs nothing on the To Hit chart except against Weapon Skill 4; prints Stomp (1) in place of the troop type's D3; and its *Venom Tail* upgrade becomes one additional Attack resolved separately at Initiative 8 with Poisoned Attacks and Multiple Wounds (D3), at 20 points rather than 15. Frenzy, Killing Blow and Fly are untouched. 150 points becomes 120, and the entry moves in all three books that print it.
 ]
 
+#proposal("The Avatar of Khaine kills with the wrong end", status: "under discussion",
+  why: [
+  The Avatar has the second-highest Weapon Skill of any monster in the corpus -- 6, behind only the Star Dragon -- along with Killing Blow and *Wrath of Khaine*, which grants a further Attack for every Killing Blow scored. Murder begetting murder, on a god of murder. It is one of the better-realised entries in the book.
+
+  And then it does most of its damage with its feet. Against rank infantry its Stomp is worth 2.92 unsaved Wounds a round and its five Attacks 2.78, so the troop type's default out-damages everything the entry was designed around.
+
+  Worse, the Stomp reads none of it. The rulebook is explicit that "unless specified, any special rules or bonuses that apply to the model's normal attacks do not apply to its Stomp" -- so the Avatar's Stomp ignores its Weapon Skill 6, cannot Killing Blow, and can never trigger *Wrath of Khaine*. Three of the four things that make it the Avatar of Khaine are switched off in the half of its output that does the most work.
+
+  Separately, it buys *heavy armour* from the equipment list, which is the seventh construct in these passes to do so -- the five Nehekharan ones and the Chaos Dwarf Kolossus are the others.
+  ],
+  against: [
+  Moving five Wounds of damage from an automatic-hit rule onto rolled Attacks makes the model swingier. A Stomp always lands; seven Attacks at Weapon Skill 6 usually do, and occasionally do not.
+
+  It also shifts the Avatar's damage towards large targets by about 40% and away from infantry by 13%, which is a change of role rather than a change of power -- a player who was fielding it to grind rank-and-file gets a different tool back.
+
+  And this is the fourth armour re-categorisation in the pass. The rule being applied is the Tomb Kings' *Stone Construct*, on the reading settled for the Necrosphinx: a metal *statue* takes the floored version, while the Chaos Dwarf Kolossus -- a metal *machine* with plating -- does not. That distinction is defensible but it is a distinction somebody has to remember.
+  ],
+  cost: [
+  One entry, in a book with no House edition, so the change is against the base book.
+
+  No new rules whatever. Three numbers move -- Attacks, the Stomp and its reach -- and the armour changes category without changing value. *Idol of Worship*, *Wrath of Khaine*, Hatred, Killing Blow, the Magical Ward and Unstable are all untouched.
+
+  The Stomp being printed rather than inherited rests on the rulebook proposal that permits it.
+  ],
+  examples: [
+  *The feet were beating the blade.* Against rank infantry, as printed:
+
+  #minitable(("", "Wounds a round"), ("Stomp (D6), the troop-type default", "2.92", "Its five Attacks at Weapon Skill 6", "2.78"))
+
+  *The trade, measured with Killing Blow and the Wrath cascade folded in:*
+
+  #minitable(("", "Rank infantry", "Elite infantry", "Ogres", "A monster"), ("As printed: A5, Stomp (D6) reach 3", "6.16", "6.16", "7.45", "5.19", "A7, Stomp (1) reach 1", "5.37", "5.37", "6.35", "7.26"))
+
+  Exactly neutral overall, and redistributed towards the large -- up 40% against a monster, down 13% against infantry -- because Attacks carry Killing Blow and feed *Wrath of Khaine*, and a Stomp does neither.
+
+  *Wrath of Khaine is also worth less than it reads.* "An additional Attack for each successful Killing Blow" sounds explosive; cascaded properly it turns five Attacks into about 5.5, because a Killing Blow needs a natural 6 To Wound on an attack that has already hit. It stays exactly as written -- the rule is fine, it is simply not the engine the entry appeared to have.
+
+  *And the armour change is nearly free.* Heavy armour and Natural Armour (4+) are the same number; the floor bites only from Strength 5 up and is worth 3%. The Magical Ward (5+) was always doing most of the defensive work, which is why the Avatar is already the seventh-best defensive value of 101 monsters at 265 points -- 53 hits to kill, against a corpus median of 8.37 points per hit-to-kill and the Avatar's 4.99.
+  ],
+)[
+  The Avatar of Khaine's Attacks rise from five to seven and its Stomp falls from the troop type's D6 at reach 3 to a single blow at reach 1, which is exactly neutral in total damage and moves it towards large targets, because its Attacks carry Killing Blow and feed *Wrath of Khaine* while its Stomp reads neither -- nor its Weapon Skill 6, the second-highest of any monster in the corpus. Its heavy armour becomes Natural Armour (4+) at the same value with the *Stone Construct* floor, on the reading that a metal statue is a body where a metal machine is plating. Nothing else changes and no rule is invented. 265 points, unchanged.
+]
+
 = EMPIRE
 
 Proposals for #emph[The Empire 3.1], and for the House edition of it where one stands.
