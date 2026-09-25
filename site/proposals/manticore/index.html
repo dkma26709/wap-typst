@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Manticore, and the rider who cannot hold it</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>The Manticore, and the rider who cannot hold it</h2><p>The Manticore is the creature the Empire’s Griffon is defined against. Every account of a Griffon draws the contrast explicitly – precise, measured, controlled, “in contrast to monsters such as Manticores” – and the corpus renders the Manticore’s half correctly: <strong>Fly (8), Frenzy, Killing Blow</strong>. Five attacks when frenzied, striking late, killing by luck. That is right and almost none of it changes here.</p><p>What changes is that its single most-quoted trait is written into the profile and then switched off by the troop-type rules in two books out of three.</p><h3>The rider problem</h3><p>“Even for creatures of Chaos, Manticores are particularly ferocious, and will launch themselves roaring into a bloody and brutal conflict. They’re so bloodthirsty, even their riders often struggle to control them.”</p><p>That is already modelled, and modelled well. Frenzy’s <strong>Berserk Rage</strong> forbids fleeing as a charge reaction, demands a Leadership test to choose any reaction but a counter-charge, and forces a charge at the nearest viable enemy unless a Leadership test is passed. On the Manticore’s <strong>Leadership 5</strong> those tests fail far more often than they pass.</p><p>Except that the rulebook also says, of a split profile: <strong>“The mount’s Leadership is never used, unless a spell or special rule states otherwise.”</strong></p><p>So in Dark Elves and in Warriors of Chaos, where the Manticore is a character mount, every Berserk Rage test is taken on the rider’s Leadership 8 or 9. The creature nobody can control becomes reliably controlled the moment somebody climbs on it. Its Leadership 5 is read in exactly one book – Beastmen, where it is a standalone Special choice.</p><table><thead><tr><th>BERSERK RAGE TESTED ON</th><th>LEADERSHIP</th><th>KEEPS CONTROL PER TEST</th><th>THROUGH BOTH TESTS</th><th>TURNS OF SIX IT STEERS ITSELF</th></tr></thead><tbody><tr><td>A Chaos Lord</td><td>9</td><td>83%</td><td>69%</td><td>1.0</td></tr><tr><td>A Dreadlord or Beastlord</td><td>8</td><td>72%</td><td>52%</td><td>1.7</td></tr><tr><td>The Manticore itself</td><td>5</td><td>28%</td><td>8%</td><td>4.3</td></tr></tbody></table><p><strong>Untameable.</strong> Leadership tests that the Manticore is required to take as a result of the Frenzy special rule always use its own Leadership, even when it is ridden.</p><p>The wording stays deliberately narrow – Frenzy tests only, not every Leadership test – and it needs no new machinery, because the rulebook’s own sentence ends “unless a spell or special rule states otherwise”. This is that special rule.</p><p>It is a pure drawback with nothing given back, and a large one: four turns in six the beast picks the target. It also hands the opponent a lever that costs them almost nothing – leave something cheap within charge range of a Manticore and it will go and eat that instead, whatever its rider had in mind.</p><h3>Seventy-two decorative Leaderships</h3><p>The Manticore’s case is the sharpest instance of something wider. Counting every monster entry that is bought as a character mount and prints a Leadership value, <strong>72 of them carry a number the split-profile rule guarantees is never read</strong> – the Arachnarok’s 3, the Carnosaur’s 5, the Zombie Dragon’s 4, the Aggradon’s 3.</p><p>Most of those are harmless: a number on the page that flavours the creature and costs nothing. The Manticore is the one where the number was load-bearing, and this proposal fixes only that one. Whether the other seventy-one want a general answer is a separate argument and a bigger one.</p><h3>Weapon Skill 5 buys less than it looks</h3><p>Trading a point of Weapon Skill for an Attack looks like a downgrade and mostly is not, because on the To Hit chart Weapon Skill 5 beats Weapon Skill 4 in only four columns out of ten: against Weapon Skill 2, 4, 9 and 10. The 9s and 10s are six tenths of one percent of the corpus and can be set aside. Weapon Skill 2 and Weapon Skill 4 cannot – they are 7.9% and 24.6% of all 2,011 profiles, a third of everything between them.</p><p>So the extra Attack is free against two thirds of the game and costs a step against the other third.</p><table><thead><tr><th>EXPECTED UNSAVED WOUNDS</th><th>RANK INFANTRY (WS3)</th><th>ELITE (WS4)</th><th>ELVES (WS5)</th><th>A MONSTER (WS4)</th></tr></thead><tbody><tr><td>WS5 with 4 Attacks, as printed</td><td>2.22</td><td>1.48</td><td>1.67</td><td>0.74</td></tr><tr><td>WS4 with 5 Attacks, proposed</td><td>2.78</td><td>1.39</td><td>2.08</td><td>0.69</td></tr><tr><td>Change</td><td>+25%</td><td>\-6%</td><td>+25%</td><td>\-6%</td></tr></tbody></table><p>Weighted by how common each Weapon Skill actually is across the corpus, that comes to about <strong>+14%</strong> – a real gain rather than the wash the unweighted average suggests, but not the free lunch a single-column reading would give.</p><p>It is also the right direction for the creature. The Empire proposal takes the Griffon <strong>up</strong> to Weapon Skill 6 as the precise hunter; the Manticore going down to 4 with a fifth claw is the same contrast drawn from the other end. Skill against savagery, and the numbers now say which is which.</p><h3>The venom tail, and a second use of a rule nobody uses</h3><p>“Some have manes of writhing serpents, others pelts of iron scales, and many sprout spiked tails with a poison strong enough to boil a man’s blood in his veins.”</p><p>That sentence is the Manticore’s option list almost item for item – <strong>Bloodrage</strong>, <strong>Iron-hard Skin</strong>, <strong>Venom Tail</strong> – so unlike the Griffon’s struck upgrades, this menu earns its place. What changes is only the tail, brought into line with the other venom tails this pass has written: the Wyvern’s, the Warsphinx’s sting and the Arachnarok’s <strong>Venom Surge</strong>.</p><p><strong>Venom Tail (+20).</strong> The Manticore has one additional Attack, resolved separately at <strong>Initiative 8</strong>, with the Poisoned Attacks and Multiple Wounds (D3) special rules.</p><p>Two things about that.</p><p><strong>Multiple Wounds makes it self-gating.</strong> Against a one-Wound model the rule does nothing whatever; against anything larger it doubles the tail’s output. So the upgrade is an anti-large purchase rather than a flat damage bump, which is what a poison that boils blood ought to buy.</p><table><thead><tr><th>THE TAIL ALONE</th><th>RANK INFANTRY</th><th>ELITE INFANTRY</th><th>ELVES</th><th>A MONSTER</th></tr></thead><tbody><tr><td>+1 Attack, Poisoned -- as printed</td><td>0.67</td><td>0.35</td><td>0.50</td><td>0.21</td></tr><tr><td>with Multiple Wounds (D3)</td><td>0.67</td><td>0.35</td><td>0.50</td><td>0.42</td></tr></tbody></table><p><strong>And it strikes on its own Initiative</strong>, which is the second use in this pass of <strong>Split Profiles and Striking Order</strong> – the rulebook shape that resolves a model’s Attacks at two or more Initiative values, and which two entries in thirty-two books use. The Chimera’s tail was the first. Twice is about the right frequency for machinery the game defines and nothing touches; a third would be a habit.</p><p>Initiative 8 puts the sting before 97% of the corpus. A scorpion tail whips over while the beast is still landing.</p><h3>Stomp</h3><p>A Monstrous Creature is granted Stomp (D3) at reach 1. A winged lion that pounces is not a trampler, and its damage is emphatically in the claws and jaws – so it prints <strong>Stomp (1)</strong>, at the same reach. One heavy paw coming down, rather than a creature that works by treading.</p><h3>What it does and what it costs</h3><table><thead><tr><th></th><th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>I</th><th>A</th><th>LD</th><th>POINTS</th></tr></thead><tbody><tr><td>As printed</td><td>6</td><td>5</td><td>0</td><td>5</td><td>5</td><td>4</td><td>5</td><td>4</td><td>5</td><td>150</td></tr><tr><td>As proposed</td><td>6</td><td>4</td><td>0</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>120</td></tr></tbody></table><p>Monstrous Creature (Chimeric). Fly (8), Frenzy, Killing Blow. Stomp (1), reaching Line of Sight 1. <strong>Untameable</strong>. Rending Fangs +5, Bloodrage +15, Iron-hard Skin +15, Venom Tail +20.</p><p>Melee and Stomp together fall about 13% – the Stomp coming down from D3 to a flat 1 costs more than the extra Attack gains – and <strong>Untameable</strong> is worth roughly fifteen points of that on its own, being a real loss of control in three more turns out of six with nothing offered in exchange.</p><p><strong>Killing Blow is untouched</strong>, and should be. It slays outright against Infantry, Cavalry and War Beasts, and against every other troop type it still “inflicts one Wound which Ignores Armour Saves and Regeneration” – so it degrades rather than switching off, which is a good match for a beast whose ferocity “often allows them to prevail over all but the largest foes”.</p><p>The entry is printed identically in Beastmen, Dark Elves and Warriors of Chaos, so all three move together. It is a Special-slot unit in the first and a character mount in the other two, which is why the rider problem exists in two of them and not the third.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

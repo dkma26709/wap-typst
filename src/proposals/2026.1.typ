@@ -581,6 +581,50 @@ Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are
   The War Hydra's *Spit Fire* stops being a 10-point option and becomes what the creature does, with its Strength fixed at 4 and only its number of shots falling -- one gout per remaining head -- so that a Hydra on its last head still fires a real attack instead of a Strength 1 puff. *Fiery Breath* and *Acid Breath* are struck. Regeneration (4+) becomes *Multi-Headed Regrowth*: at the end of each of your turns, roll a D6 for each Wound it is missing and restore one on each 5 or more, and unlike Regeneration this works against Flaming Attacks. *Loss of Heads* is re-worded to "currently missing" so that regrown Wounds bring their heads back. It loses its two Beastmaster Apprentices, drops to Movement 5 and Natural Armour (5+), prints Stomp (2) at reach 2, and falls from 200 points to 165.
 ]
 
+#proposal("The Manticore stops being tamed by whoever sits on it", status: "under discussion",
+  page: "manticore",
+  why: [
+  The Manticore is the creature the Empire's Griffon is defined against -- "in contrast to monsters such as Manticores" is quoted in every description of a Griffon -- and the corpus renders its half correctly. Fly (8), Frenzy and Killing Blow is five attacks when frenzied, striking late, killing by luck. Almost none of that wants changing.
+
+  What wants changing is that its most-quoted trait is written into the profile and then switched off. "They're so bloodthirsty, even their riders often struggle to control them" is modelled by Frenzy's Berserk Rage, which forces Leadership tests to decline a charge or choose any reaction but a counter-charge -- and on the Manticore's Leadership 5 those tests fail far more often than they pass.
+
+  But the rulebook says of a split profile that "the mount's Leadership is never used, unless a spell or special rule states otherwise". So in Dark Elves and Warriors of Chaos, where the Manticore is a character mount, every one of those tests is taken on the rider's Leadership 8 or 9. The beast nobody can control becomes reliably controlled the moment somebody climbs on it, and its own Leadership is read in exactly one book -- Beastmen, where it is a standalone Special choice.
+  ],
+  against: [
+  *Untameable* is a pure drawback with nothing given back, and a large one: on its own Leadership the Manticore picks its own target in four turns out of six rather than one. A player who wanted a flying character delivery system loses it, and gains a beast that will charge a twenty-point screening unit because that unit is nearest.
+
+  The Weapon Skill trade is the smaller worry but worth naming: dropping to 4 costs nothing against most of the table but does cost against the Weapon Skill 4 band, which is the commonest one in the game.
+
+  And the seventy-two-decorative-Leaderships finding this rests on is left unfixed everywhere else, which means the corpus keeps a rule that is load-bearing on one entry and ignorable on seventy-one others.
+  ],
+  cost: [
+  One entry, printed identically in Beastmen, Dark Elves and Warriors of Chaos, so all three books move together -- as a Special-slot unit in the first and a character mount in the other two.
+
+  One new rule of a single sentence, *Untameable*, which needs no new machinery because the rulebook's own split-profile clause ends "unless a spell or special rule states otherwise". The *Venom Tail* upgrade is brought into line with the other venom tails this pass has written and rises from 15 points to 20. Killing Blow, Frenzy and Fly are untouched, as are the other three upgrades.
+
+  The Stomp is printed rather than inherited, which rests on the rulebook proposal that permits it.
+  ],
+  examples: [
+  *What testing on its own Leadership actually does:*
+
+  #minitable(("Berserk Rage tested on", "Ld", "Keeps control per test", "Through both", "Turns of six it steers itself"), ("A Chaos Lord", "9", "83%", "69%", "1.0", "A Dreadlord or Beastlord", "8", "72%", "52%", "1.7", "The Manticore itself", "5", "28%", "8%", "4.3"))
+
+  It also hands the opponent a cheap lever: leave something expendable within charge range and the Manticore goes for it whatever its rider intended.
+
+  *Weapon Skill 5 buys less than it looks.* On the To Hit chart, Weapon Skill 5 beats 4 in four columns of ten -- against Weapon Skill 2, 4, 9 and 10. The 9s and 10s are 0.6% of the corpus; Weapon Skill 2 and 4 are 7.9% and 24.6%, a third of all profiles between them. So the fifth Attack is free against two thirds of the game and costs a step against the other third, which weights out at about +14%:
+
+  #minitable(("Expected unsaved Wounds", "Rank infantry (WS3)", "Elite (WS4)", "Elves (WS5)", "A monster (WS4)"), ("WS5 with 4 Attacks", "2.22", "1.48", "1.67", "0.74", "WS4 with 5 Attacks", "2.78", "1.39", "2.08", "0.69"))
+
+  The Empire proposal takes the Griffon up to Weapon Skill 6 as the precise hunter; the Manticore coming down to 4 with a fifth claw draws the same contrast from the other end.
+
+  *The venom tail self-gates.* Adding Multiple Wounds (D3) does nothing at all against a one-Wound model and doubles the tail's output against anything larger -- 0.21 to 0.42 against a monster, unchanged everywhere else. It is an anti-large purchase rather than a damage bump, which is what "a poison strong enough to boil a man's blood in his veins" should buy.
+
+  *And seventy-two monster entries print a Leadership nobody reads* -- the Arachnarok's 3, the Carnosaur's 5, the Zombie Dragon's 4. Most are harmless flavour. The Manticore is the one where the number was load-bearing, and this proposal fixes only that one.
+  ],
+)[
+  A new rule, *Untameable*, makes the Manticore take its Frenzy Leadership tests on its own Leadership 5 rather than its rider's 8 or 9 -- so the beast that "even their riders often struggle to control" actually is, in four turns out of six instead of one. It trades Weapon Skill 5 for a fifth Attack, which costs nothing on the To Hit chart except against Weapon Skill 4; prints Stomp (1) in place of the troop type's D3; and its *Venom Tail* upgrade becomes one additional Attack resolved separately at Initiative 8 with Poisoned Attacks and Multiple Wounds (D3), at 20 points rather than 15. Frenzy, Killing Blow and Fly are untouched. 150 points becomes 120, and the entry moves in all three books that print it.
+]
+
 = EMPIRE
 
 Proposals for #emph[The Empire 3.1], and for the House edition of it where one stands.
