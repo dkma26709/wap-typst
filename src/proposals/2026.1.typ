@@ -430,25 +430,40 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
   The eighty-two magic items the rulebook offers to every army would go, and each army book's own list would grow to cover the ground they leave. A magic item would then always be something a particular army has, rather than something anybody may buy.
 ]
 
-#proposal("Losing a fight should not always cost the unit", status: "talking point",
+#proposal("Losing a fight should not always cost the unit", status: "under discussion",
+  page: "giving-ground",
   why: [
-  As it stands the break test is binary and terminal. Pass and you hold, fail and you flee, and a pursuer who catches you removes the unit from the game. The most decisive moment in a battle is one 2D6 roll against a Leadership already reduced by the combat result.
+  The Break test is the most decisive roll in the game and it has two outcomes. A unit holds, or it flees and is very probably run down. Worse, past a certain margin it does not get the roll at all: "in case the penalty to the losing unit's Leadership is equal to or greater than their modified Leadership value, no test is taken and the unit will automatically break and flee from combat".
 
-  That makes a lost round and a lost unit the same event. A regiment that was pushed back hard, but was never actually broken in any sense a spectator would recognise, is gone. Giving ground as the normal outcome puts a losing fight back into the game instead of ending it.
+  So a Leadership 7 regiment that loses a round by seven is gone, with no dice thrown. It was at full strength a moment earlier, and the only thing that happened to it was arithmetic. A lost round and a lost unit are the same event.
+
+  The modifier is also in the wrong place. Subtracting the combat result from Leadership spends it before the dice are picked up, which is why a heavy defeat is not really a test. Adding it to the roll instead leaves the natural dice to say whether the unit routs and the modifier to say how far it is driven back, and that single move is what makes three outcomes possible where there were two.
   ],
   against: [
-  The current cycle is fast, decisive, and the reason manoeuvre pays. Breaking and pursuing is what makes a flank charge worth setting up and cavalry worth fielding; if losing costs ground rather than the unit, a deep block can simply grind, and the payoff for playing well shrinks.
+  It takes the combat result out of the break decision entirely. Once the natural roll is what decides routing, a unit that loses by seven breaks exactly as often as one that loses by one, and the margin only chooses between giving ground and falling back. Combat resolution is what a flank charge, a standard, an extra rank and Fear all pay out in, and after this they buy a better class of retreat rather than a destroyed enemy.
 
-  It also pulls on more threads than it looks. Steadfast exists precisely to stop a big unit breaking, Fear pays out in combat resolution, and victory points are scored for units destroyed and standards taken. Change the consequence of losing and all three want revisiting.
+  It is also a chapter rather than a rule. The Break test, Steadfast, Reforming from Defeat, Inspiring Presence, Panic, Rally, Fled Through, Unbreakable and the battlefield edge all move together, and three new rules join them. Nothing about that is reversible one piece at a time.
   ],
   cost: [
-  Unknown until the source wording is to hand, and that is the honest position. What has to be decided is a short list: how far a beaten unit gives ground, whether the winner may follow up or must, what happens when the fall-back is blocked by friends or terrain, whether breaking survives at all for a badly lost combat, and what becomes of Steadfast once holding the line is no longer the only alternative to routing.
+  Nine rules rewritten in the rulebook and three added. One printed worked example, under Inspiring Presence, is written wholly in subtract-from-Leadership arithmetic and has to go.
+
+  The army books come off lightly. Stubborn is the most widely bought rule affected, at 114 entries across 27 books, and its printed text survives unchanged because "a Stubborn unit is always Steadfast" still reads correctly after Steadfast is redefined. Unbreakable's 52 entries and Unstable's 31 are likewise unchanged on the page, since what moves is what those rules do rather than what they say.
+
+  The repricing question is real but narrow. Steadfast and Stubborn stop being a survival rule and become a positional one, so what those 114 entries are buying changes in character even though the words do not.
   ],
   examples: [
-  *The numbers this ruleset would reach for.* If it were built from what is already here rather than imported, the distance would be the combat result difference in inches, capped at the unit's Movement, with the winner choosing to follow up or hold. That uses only quantities the combat phase already computes, and it makes a heavy loss push further than a narrow one without adding a roll. Whether it matches the wording being borrowed is exactly the open question.
+  *The margin stops reaching the break line.* Leadership 7, by how much the round was lost:
+
+  #minitable(("Lost by", "Breaks today", "Breaks", "Falls back", "Gives ground"), ("1", "58.3%", "41.7%", "16.7%", "41.7%", "3", "83.3%", "41.7%", "41.7%", "16.7%", "5", "97.2%", "41.7%", "55.6%", "2.8%", "7", "100%, no test", "41.7%", "55.6%", "2.8%"))
+
+  *Where the relief actually falls.* Not on units holding their ranks: a Steadfast unit's break chance is identical before and after, because it already tested on unmodified Leadership. What changes is the regiment that has just lost Steadfast to a flank charge.
+
+  #minitable(("Leadership 7 block, flanked and disrupted, losing by 5", "Breaks"), ("today", "97.2%", "proposed", "41.7%", "proposed, within 12\" of the General", "27.8%"))
+
+  A flanked regiment today is not taking a test so much as being removed. Afterwards the flank charge still wins the round, still inflicts the casualties and still shoves the block backwards.
   ],
 )[
-  A beaten unit would give ground rather than break: fall back in good order, keep its formation, and fight on. Breaking and being run down would become the exception rather than the ordinary result of losing a round. This is the shape of the change and not a specification, because the text it comes from is not in this project.
+  A beaten unit would give ground rather than break. The combat result difference is added to the Break test roll instead of subtracted from Leadership, and the dice are then read twice: a natural roll over the unit's Leadership breaks it, a natural roll within Leadership but a modified result over it makes it Fall Back in Good Order, and a modified result within Leadership makes it Give Ground. Giving ground is two inches backwards with the winner free to follow up and fight on; falling back is a flee move that cannot be caught and rallies at its end. Steadfast becomes "ignores modifiers to the Break test roll", so a unit with the ranks never falls back and Stubborn's text needs no change at all. Inspiring Presence flattens to +1 Leadership, because a Goblin near his General should be braver than he was rather than as brave as an Orc. Panic splits the same way, at half the unit's starting Unit Strength.
 ]
 
 #proposal("Monsters should be designed around a role", status: "talking point",

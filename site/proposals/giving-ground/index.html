@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giving ground, and the cliff at the bottom of the Break test</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>Giving ground, and the cliff at the bottom of the Break test</h2><p>The Break test is the most decisive roll in the game and it has two outcomes. A unit holds, or it flees and is very probably run down. The rulebook prints the cliff explicitly:</p><p>“ Note that in case the penalty to the losing unit’s Leadership is equal to or greater than their modified Leadership value, no test is taken and the unit will automatically break and flee from combat. ”</p><p>So a Leadership 7 regiment that loses a round by seven is gone. No dice are rolled. It was at full strength a moment earlier and it is off the table now, and the only thing that happened was arithmetic.</p><p>This page is the working behind replacing that with three outcomes, and the measurements that decided each piece of it.</p><h3>The change in one line</h3><p>Today the combat result difference is subtracted from Leadership. The proposal adds it to the roll instead, and then reads the dice twice:</p><ul><li>natural roll greater than Leadership: the unit <strong>Breaks</strong> and flees</li><li>natural roll within Leadership, modified result over it: the unit <strong>Falls Back in Good Order</strong></li><li>modified result within Leadership, or a natural double 1: the unit <strong>Gives Ground</strong></li></ul><p>For pass-or-fail the two forms are arithmetically identical. Reading the dice twice is what produces the middle rungs, and it needs both a natural and a modified number to compare, which is why the modifier has to move.</p><h3>What moving it actually does</h3><p>The break decision now rests on the natural roll, and no modifier touches the natural roll. The margin by which a unit lost stops affecting whether it routs.</p><table><thead><tr><th>LEADERSHIP 7, LOST BY</th><th>BREAKS TODAY</th><th>BREAKS</th><th>FALLS BACK</th><th>GIVES GROUND</th></tr></thead><tbody><tr><td>1</td><td>58.3%</td><td>41.7%</td><td>16.7%</td><td>41.7%</td></tr><tr><td>3</td><td>83.3%</td><td>41.7%</td><td>41.7%</td><td>16.7%</td></tr><tr><td>5</td><td>97.2%</td><td>41.7%</td><td>55.6%</td><td>2.8%</td></tr><tr><td>7</td><td>100% (no test)</td><td>41.7%</td><td>55.6%</td><td>2.8%</td></tr></tbody></table><p>That third column is flat all the way down. A regiment losing by seven breaks exactly as often as one losing by one, and the margin decides only how far it is pushed.</p><p>This is the largest single consequence of the import and the strongest argument against it. Combat resolution is what a flank charge, a standard, an extra rank and Fear all pay out in. Under the proposal those still win the round and still push the enemy back, and they no longer decide whether the enemy survives it.</p><h3>Where the change lands, and where it does not</h3><p>The obvious reading is that this rescues big blocks. It does not: a Steadfast unit’s break chance is <strong>identical</strong> before and after, because Steadfast already tests on unmodified Leadership and the new form already ignores the modifier on the break line. Leadership 7 with ranks breaks 41.7% of the time it loses, under either set of rules.</p><p>What changes is what happens when a unit loses Steadfast.</p><table><thead><tr><th>LEADERSHIP 7 BLOCK, FLANKED AND DISRUPTED, LOSING BY 5</th><th>BREAKS</th></tr></thead><tbody><tr><td>today</td><td>97.2%</td></tr><tr><td>proposed</td><td>41.7%</td></tr><tr><td>proposed, within 12" of the General</td><td>27.8%</td></tr></tbody></table><p>A flanked regiment today is not really taking a test. It is being removed, and the dice are a formality. Afterwards the flank charge wins the round, inflicts the casualties and shoves the block backwards, and the block is still on the table to be finished off properly.</p><p>Monsters gain the same relief on the break line and stay fragile all the same, because what kills a monster is wounds. Five of them and no rank-and-file to spend means damage does the work that a failed Break test used to do, which is the honest way for a large expensive model to die.</p><h3>Steadfast: three readings, two of which fail</h3><p>Steadfast today reads:</p><p>“ If a defeated unit has a higher number of complete ranks after the first than all individual enemy units in base contact, it takes its Break test on its unmodified Leadership. ”</p><p>Once the modifier sits on the roll there is no negative Leadership modifier for that sentence to ignore, so it has to be re-expressed. Three readings were measured at Leadership 7.</p><table><thead><tr><th>READING OF STEADFAST</th><th>BREAKS</th><th>VERDICT</th></tr></thead><tbody><tr><td>Ignores modifiers to the roll</td><td>41.7%</td><td>Adopted</td></tr><tr><td>Improve the outcome one step on the ladder</td><td>0.0%</td><td>Unbreakable in disguise</td></tr><tr><td>Re-roll a failed Break test</td><td>17.4%</td><td>Duplicates the Battle Standard</td></tr></tbody></table><p>The middle one is worth recording because it is the tempting one. Expressing Steadfast as a move up the ladder – Break becomes Fall Back, Fall Back becomes Give Ground – speaks the new grammar and needs no arithmetic. The ladder has three rungs and Break is the bottom one, so shifting every result up by one means no roll can ever land on Break at all. It is not a weak Steadfast. It is Unbreakable with the name filed off.</p><p>The Old World hit the same wall and bounded its way out: its Stubborn may decline a Break test and Fall Back automatically, <strong>once per battle</strong>. That limit is what stops it being Unbreakable. This edition keeps Stubborn permanent and always-on, so the bounded form is unavailable and the first reading is the only one left standing.</p><p>Which leaves Steadfast doing a narrower and more accurate job. Give Ground is two inches and still in the fight; Fall Back in Good Order is disengaging and leaving the position. A Steadfast unit never does the second. It holds its ground or it breaks, which is what having more ranks than the enemy ought to mean.</p><p><strong>Stubborn needs no change whatever.</strong> Its text already reads “a Stubborn unit is always Steadfast, whether or not they have more ranks than their enemy or are disrupted”, and that sentence survives the redefinition intact. All 114 entries across 27 books that buy it are untouched in print.</p><h3>The General, and why a bonus beats a substitution</h3><p>Inspiring Presence today lets a unit use the General’s Leadership in place of its own. That is fine while the combat result erodes it – a Leadership 9 General is worth 6 to a unit that lost by three, so his bubble degrades exactly when it is needed. Move the modifier onto the roll and his Leadership arrives intact however badly the unit lost.</p><table><thead><tr><th>FORM OF INSPIRING PRESENCE</th><th>BREAKS</th><th>EXPECTED LOST ROUNDS BEFORE BREAKING</th></tr></thead><tbody><tr><td>None, bare Leadership 7</td><td>41.7%</td><td>2.4</td></tr><tr><td>+1 Leadership</td><td>27.8%</td><td>3.6</td></tr><tr><td>Use his Leadership 9</td><td>16.7%</td><td>6.0</td></tr><tr><td>Use his Leadership 10</td><td>8.3%</td><td>12.0</td></tr></tbody></table><p>The proposal takes the flat +1. The argument for it is not the arithmetic, which merely says the substitution is strong. It is that a Goblin standing near his General should be braver than he was, and a substitution makes him as brave as an Orc. Bravery borrowed from a commander is a nudge, not a transplant.</p><p>Two things fall out of the choice for free. The qualifier “unless specified (such as having to use their own unmodified Leadership)” can go, because a +1 is not a Leadership substitution and never collides with Steadfast. And the General’s own Leadership characteristic leaves the bubble entirely: a Leadership 10 General and a Leadership 7 General both grant +1. His characteristic still matters where he stands, through the highest-in-the-unit rule, and his presence is worth the same either way.</p><p>The rule stops being cumulative. Two sources of Inspiring Presence grant +1, not +2.</p><h3>The Battle Standard, and the only two levers there are</h3><p>Hold Your Ground re-rolls a failed Break test. Today that re-rolls a test already taken at a Leadership eaten down to 4, which is worth almost nothing – 1.20 expected rounds becomes 1.44. Under the proposal it re-rolls an un-eroded number, and squaring a small probability is a much better trade.</p><table><thead><tr><th>LEADERSHIP 7, LOST BY 3</th><th>BREAKS</th><th>OVER 2 LOST ROUNDS</th><th>OVER 3</th><th>OVER 4</th></tr></thead><tbody><tr><td>bare</td><td>41.7%</td><td>66.0%</td><td>80.2%</td><td>88.4%</td></tr><tr><td>+1 from the General</td><td>27.8%</td><td>47.8%</td><td>62.3%</td><td>72.8%</td></tr><tr><td>+1 and the re-roll</td><td>7.7%</td><td>14.8%</td><td>21.4%</td><td>27.5%</td></tr></tbody></table><p>Expected-rounds figures overstate this badly – the re-roll reads as worth nine extra rounds, and nothing fights for nine rounds. Over a realistic grind it is large and not absurd, and it sits alongside a broken unit no longer usually being a dead one.</p><p>Two alternatives were considered for flattening it and both were withdrawn for the same reason. Letting the Battle Standard reduce the combat result difference within range does nothing to anyone’s break chance, because the difference never touches the natural roll. Letting it stop units Falling Back has the same defect and is useless to precisely the Steadfast troops that already never fall back.</p><p>That turns out to be structural. Once the modifier sits on the roll, <strong>only two levers reach the break line</strong>: change the Leadership it is compared against, or roll the dice again. Everything else lands on the Give Ground and Fall Back boundary. So the two rules take one lever each – the General makes a unit harder to break, the Battle Standard insures it against the one bad roll – and if the Battle Standard proves too strong the lever to reach for is a usage limit, not a narrower effect.</p><h3>Panic, and a threshold measured in the wrong currency</h3><p>The import splits a failed Panic test by how much of the unit is left: above half it Falls Back in Good Order, at half or less it flees. Since Falling Back rallies automatically, most failed Panic tests stop leaving a fleeing unit on the table at all.</p><p>The source counts models. This edition counts Unit Strength, and the troop types chapter is the reason:</p><table><thead><tr><th>TROOP TYPE</th><th>UNIT STRENGTH</th></tr></thead><tbody><tr><td>Monsters</td><td>double their original starting number of Wounds</td></tr><tr><td>Chariots and Shrines</td><td>equal to their starting number of Wounds</td></tr><tr><td>Monstrous Creatures</td><td>4</td></tr><tr><td>War machines</td><td>equal to their current number of crew</td></tr></tbody></table><p>Every one of those but the last is a <strong>starting</strong> value that never degrades. A Dragon on its last wound still has the Unit Strength it deployed with, so a threshold measured in Unit Strength would never fire for it, and one measured in models would never fire either – a Lone Model is permanently one of one. That exemption would have reached 231 entries: 161 whose troop type names Monster and 70 naming Chariot, against 69 war machines the rulebook already excuses from fleeing.</p><p>Hence the split rule. Units measure Unit Strength; a Lone Model measures Wounds, and a Lone Model with a split profile measures its mount’s. Rally carries the identical defect at its own 25% threshold and takes the identical fix.</p><h3>What happens to the chain</h3><p>Two of the four Panic triggers stop firing on their own. <strong>Nearby Friend Breaks</strong> needs a unit to break, and one that falls back has not broken. <strong>Fled Through</strong> needs fleeing friends, and this edition’s Give Ground states that a unit which gives ground is not a fleeing unit.</p><p>A Fall Back move does still trigger it, and the test that follows resolves under the same threshold, so a healthy unit fled through falls back in its turn rather than routing. The cascade survives and degrades one step at a time instead of unzipping a battle line. The rulebook currently calls this “the most destructive form of panic”, which it will no longer be.</p><h3>The battlefield edge</h3><p>The Old World destroys a unit pushed off the table while Giving Ground, and leaves a unit that simply cannot move where it stands with no penalty at all. The first half is harsh in a way the rest of the import is not: a unit backed against the edge would die for losing a combat by one, having passed its Break test.</p><p>This edition replaces the edge rule outright, for fleeing and falling back as well as giving ground. A unit driven off the edge is destroyed if half or less of its starting Unit Strength remains, and otherwise stops at the edge and takes one Wound per inch it would have travelled beyond. Losing your back to the table edge still costs, and it costs in casualties rather than in one removal.</p><h3>What this touches in the books</h3><table><thead><tr><th>RULE NAMED IN THE ENTRY</th><th>ENTRIES</th><th>BOOKS</th></tr></thead><tbody><tr><td>Immunity (Psychology)</td><td>126</td><td>29</td></tr><tr><td>Stubborn</td><td>114</td><td>27</td></tr><tr><td>Unbreakable</td><td>52</td><td>19</td></tr><tr><td>Inspiring Presence</td><td>51</td><td>24</td></tr><tr><td>Unstable</td><td>31</td><td>15</td></tr><tr><td>Hold Your Ground</td><td>18</td><td>13</td></tr><tr><td>Steadfast</td><td>8</td><td>7</td></tr></tbody></table><p>Steadfast’s 8 is not a measure of its importance. It is granted by having more ranks than the enemy in front of you, so it is a comparison rather than a trait, and the only reason an entry has to name it is to change how the ranks are counted. That is what all eight do: Ogres and their several mercenary cousins count one rank more than they have in a turn they charge, Norsemen count each rank double, and Bretonnian Men-at-Arms count more ranks than they actually have. None of them is affected by this proposal, because the eligibility test those rules modify is the one part of Steadfast that does not move.</p><p>The reassuring number is Stubborn’s 114, because its printed text is unchanged. The rules that need rewriting are all in the rulebook: the Break test, Steadfast, Reforming from Defeat, Inspiring Presence, Panic, Rally, Fled Through, Unbreakable and the battlefield edge, plus three new entries for Give Ground, Fall Back in Good Order and Follow Up. One printed worked example, under Inspiring Presence, is written wholly in subtract-from-Leadership arithmetic and has to go.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>
