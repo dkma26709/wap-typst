@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a man-shaped statue does with its feet</title>
+<style>
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17130e;
+    --card: #1f1913;
+    --ink: #e8dcc6;
+    --muted: #a8977c;
+    --rule: #4a3d2c;
+    --accent: #c98a5e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+main { width: 100%; max-width: 62rem; }
+h1 {
+  margin: 0 0 .2rem;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sub { color: var(--muted); font-style: italic; margin: 0 0 2.5rem; }
+
+/* Above the title on every page but the overview, which is what it returns to. */
+.back { margin: 0 0 1.2rem; font-size: .82rem; letter-spacing: .08em;
+        text-transform: uppercase; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a::before { content: "\2190\00a0"; }
+.back a:hover { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+.section:first-of-type { margin-top: 0; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.6rem;
+  margin: -.4rem 0 1.2rem;
+}
+/* The markup ships these hidden and the script reveals them, so without it they
+   must stay hidden rather than offer buttons that do nothing. `display` above
+   would otherwise win over the attribute's own rule. */
+.controls[hidden] { display: none; }
+.set { display: flex; flex-wrap: wrap; gap: .3rem; }
+.controls button {
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button:hover { color: var(--ink); }
+.controls button[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.books li[hidden] { display: none; }
+.core { max-width: 34rem; }
+
+/* Spans the grid so a group reads as a band rather than as a card. */
+.head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.head span { color: var(--muted); font-size: .78rem; }
+.book {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+.note {
+  margin: -1.2rem 0 2rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+/* The extended pages. Until these there was no prose on the site - every page
+   was cards, and a card carries its own styling - so the ordinary tags had
+   never needed rules. `ul.plain` is a list of links with no bullets, used
+   where a list would otherwise read as a menu. */
+ul.plain { list-style: none; margin: -1rem 0 2rem; padding-left: .9rem; }
+ul.plain li { margin: .3rem 0; }
+
+main h3 {
+  margin: 2.2rem 0 .8rem;
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+  color: var(--ink);
+}
+main p { line-height: 1.55; max-width: 38rem; }
+main ul li { line-height: 1.55; max-width: 36rem; }
+main code {
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 1.4rem 0 2rem;
+  font-size: .92rem;
+}
+main th, main td {
+  padding: .35rem .9rem .35rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+main th {
+  font-weight: 600;
+  letter-spacing: .04em;
+  font-size: .82rem;
+  color: var(--muted);
+  border-bottom-width: 2px;
+}
+</style>
+</head>
+<body>
+<main>
+<h2>What a man-shaped statue does with its feet</h2><p>The Avatar of Khaine proposal turned on a small mechanical fact with a large consequence. A Stomp inflicts automatic hits, and the rulebook closes the rule with: <strong>“unless specified, any special rules or bonuses that apply to the model’s normal attacks do not apply to its Stomp.”</strong></p><p>So a Stomp reads no Weapon Skill, carries no special rules, and triggers nothing. On the Avatar – Weapon Skill 6, Killing Blow, and a rule that grants a further Attack for every Killing Blow – that meant the half of its output doing the most damage was the half that could do none of the three things the creature is for.</p><p>There is a second reason, and it is simpler: <strong>these are people-shaped</strong>. A Carnosaur has four feet and half a ton over each of them. A statue of a warrior has two, and walks upright on them. It can put one down on somebody. It cannot trample a regiment, whatever its troop type says.</p><p><strong>So a human-shaped construct prints Stomp (1), reaching Line of Sight 1</strong> – one heavy foot, on infantry, and its real damage somewhere else.</p><h3>Where the line sits</h3><p>Scale overrides shape, and the corpus makes the cut in an obvious place. A man-shaped thing of six Wounds on a 50mm base is a large man. A man-shaped thing of ten Wounds with limbs the size of tree trunks on a 150mm base is a building that walks.</p><table><thead><tr><th>HUMANOID CONSTRUCT</th><th>WOUNDS</th><th>STOMP</th></tr></thead><tbody><tr><td>Avatar of Khaine</td><td>5</td><td>1, at reach 1 -- settled</td></tr><tr><td>Terracotta Sentinel</td><td>6</td><td>1, at reach 1 -- this proposal</td></tr><tr><td>Necrofex Colossus</td><td>6</td><td>1, at reach 1 -- this proposal</td></tr><tr><td>The Porter</td><td>6</td><td>1, at reach 1 -- not yet taken</td></tr><tr><td>Necrolith Colossus</td><td>6</td><td>still the troop type's D6 at reach 3</td></tr><tr><td>Hierotitan</td><td>6</td><td>still the troop type's D6 at reach 3</td></tr><tr><td>Rogue Idol of Gork</td><td>10</td><td>D6 at reach 3 -- published, and correct</td></tr><tr><td>Khemric Titan</td><td>10</td><td>D6 at reach 3 -- untouched, and correct</td></tr></tbody></table><p>Two rows in that table are loose ends this proposal creates and does not close. The <strong>Necrolith Colossus</strong> and the <strong>Hierotitan</strong> are six-Wound humanoid statues that the Tomb Kings proposal changed the armour of and said nothing about the Stomp of. If the principle above is right they want Stomp (1) as well, and that proposal wants amending to say so.</p><h3>The Terracotta Sentinel</h3><p>“Sentinels often stand silent for centuries, watching over fields, cities, and rivers, or forming part of the Great Bastion itself, where their helms and weapons serve as battlements and buttresses.”</p><p>The Sentinel is a wall. It is Toughness 7 with six Wounds, Regeneration, and Weapon Skill 4 with a polearm at Initiative 1 – nothing about it is precise and nothing about it is fast. Where the Avatar earned its Attacks back because killing is the only thing it does, the Sentinel’s job is to be stood in front of something, so what it gets back is the ability to be stood in front of things.</p><p><strong>Battlements and Buttresses.</strong> A unit that charges the Terracotta Sentinel counts as making a disordered charge. It is nonetheless limited to a maximum of +2 combat result for extra ranks, as though it had charged.</p><p>Both halves come from the rulebook. A disordered charge is what the obstacle chapter already inflicts – “models charging a unit behind an obstacle count as making a disordered charge” – and a unit making one <strong>“is not subject to any rules that only apply when a unit charges”</strong>.</p><h4>Why that second sentence is not padding</h4><p>Without it the rule does almost nothing to the thing a wall most needs to stop. The rank bonus caps at +3 normally and at +2 for a unit that has charged; a disordered charger escapes its own cap and may claim the extra rank back:</p><table><thead><tr><th>CHARGING THE SENTINEL</th><th>COMBAT RESULT NORMALLY</th><th>DISORDERED</th><th>NET</th></tr></thead><tbody><tr><td>A monster, no ranks</td><td>+1</td><td>0</td><td>\-1</td></tr><tr><td>Two ranks of infantry</td><td>+3</td><td>+2</td><td>\-1</td></tr><tr><td>Three or more ranks</td><td>+3</td><td>+3</td><td>0</td></tr></tbody></table><p>A wall that stops heroes and lets hordes through is backwards, and one clause fixes it.</p><h4>And it is measurable, because of Unstable</h4><p>The Sentinel is <strong>Unstable</strong>: every point it loses the combat by costs it a Wound, with no saves of any kind. Combat resolution is therefore damage, and denying a charger its +1 is worth exactly one Wound on a six-Wound model, every time it is charged – which will be often, because it is a wall.</p><table><thead><tr><th>THE CHARGER IS DENIED</th><th>WOUNDS THE SENTINEL DOES NOT TAKE</th></tr></thead><tbody><tr><td>+1 combat result for charging</td><td>1.00, always</td></tr><tr><td>Impact Hits (D6) at Strength 5</td><td>0.41</td></tr><tr><td>Impact Hits (D3) at Strength 6</td><td>0.56</td></tr><tr><td>Devastating Charge</td><td>0.06</td></tr></tbody></table><h4>What it costs</h4><p>The Stomp coming down from the troop type’s D6 at reach 3 to a single blow at reach 1 is a <strong>32% cut</strong> in output – and unlike the Avatar there is nothing to convert it into, because the Sentinel has no Killing Blow and no cascade. Its heavy armour becomes Natural Armour (4+) at the same value with the <strong>Stone Construct</strong> floor, worth 3%.</p><p><strong>235 points becomes 190</strong>, and that number is a judgement rather than a calculation: everything else in these passes has been damage or durability on one model, and this is an effect on whoever charges it.</p><p>The four material upgrades are untouched. “Sentinels can be made of any stone, usually matching the land which they protect” is the lore endorsing a menu, and Jade, Obsidian, Warpstone and Granite are both variation the fiction supports and things you can see on the model – the two tests these passes have used.</p><h3>The Necrofex Colossus</h3><p>“A Necrofex Colossus is no mere mindless thrall, but possesses a deathly will and dark appetite of its own, often outlasting its creator or even proving their undoing should its master’s control slip even for a moment.”</p><p>Most of this creature is already well made. “Walking vortexes of deathly energies around which the souls of the damned howl” is <strong>Vortex of Death</strong> and <strong>Screams of the Damned</strong>, near enough word for word. What has no rule is the will.</p><h4>A will of its own</h4><p>The Vampire Counts Undead rule grants exactly one privilege: <strong>“they may make march moves if they are within the Army General’s Inspiring Presence range or are joined by a character with the Lore of Necromancy.”</strong> In this book, permission to march <strong>is</strong> what a necromancer’s control amounts to.</p><p><strong>A Will of Its Own.</strong> The Necrofex Colossus may make march moves whether or not it is within range of the Army General’s Inspiring Presence, and whether or not it is joined by a character with the Lore of Necromancy.</p><p>Twelve inches instead of six when it is operating alone, and the creature that outlasts its creator stops needing him to move.</p><h4>Deathly energies</h4><p><strong>Deathly Energies.</strong> At the end of each round of close combat, every enemy unit in base contact with the Necrofex Colossus suffers D3 hits at Strength 3 with the Armour Piercing (2) special rule.</p><p>This is a drain rather than a weapon, and the Armour Piercing is there so that plate does not simply ignore it – against Chaos Warriors it takes the aura from 0.22 Wounds through to 0.44. It is not an answer to heavy armour and is not meant as one: at Strength 3 the Strength contributes no save modifier at all, so nothing at this scale threatens a 3+.</p><p><strong>Corpse Killers</strong>, which already existed at +20 as “all enemy units in base contact suffer D6 Strength 2 hits”, becomes the upgrade that makes the drain D6 hits instead of D3. The anatomy is printed and the upgrade makes it bigger, which is the pattern the Chimera proposal settled on.</p><p><strong>Scythes and Barbs</strong> needs a word taken out. It re-rolls “the number of Random Attacks <strong>and Stomp hits</strong>”, and a flat Stomp of 1 has nothing to re-roll. It comes out level, because there are now 2D3+1 Random Attacks to re-roll instead of D6+1.</p><h4>The attack table, measured</h4><p>The Necrofex rolls a D6 each round: <strong>Batter and Slash</strong> on 1-2, <strong>Impale</strong> on 3-4, <strong>Screams of the Damned</strong> on 5-6. Those three are properly differentiated, which is more than the Giant’s two charts manage:</p><table><thead><tr><th>TARGET</th><th>BATTER AND SLASH</th><th>IMPALE</th><th>SCREAMS OF THE DAMNED</th><th>BEST</th></tr></thead><tbody><tr><td>Goblins, Ld6</td><td>1.88</td><td>2.78</td><td>4.03</td><td>Screams</td></tr><tr><td>Empire state troops, Ld7</td><td>1.88</td><td>1.67</td><td>3.11</td><td>Screams</td></tr><tr><td>Chaos Warriors, Ld8 I5 3+</td><td>1.56</td><td>0.42</td><td>2.28</td><td>Screams</td></tr><tr><td>Saurus, Initiative 1</td><td>1.88</td><td>2.78</td><td>2.28</td><td>Impale</td></tr><tr><td>Ogres, three Wounds each</td><td>1.88</td><td>5.00</td><td>2.28</td><td>Impale</td></tr><tr><td>A Dragon, Ld9</td><td>1.12</td><td>1.17</td><td>1.56</td><td>Screams</td></tr></tbody></table><p>Impale beats the slow and the multi-Wound; Screams beats low Leadership and ignores armour entirely. <strong>Batter and Slash never wins anything</strong> – it is the worst or joint-worst against all six, and it is a third of the table.</p><p>It goes to <strong>Random Attacks (2D3+1)</strong>: range 3 to 7 against D6+1′s 2 to 7, mean 5 against 4.5, and a third of rolls landing exactly on 5. The floor rises and the spread tightens, which suits a machine that does not tire.</p><h4>What it costs</h4><table><thead><tr><th></th><th>GOBLINS</th><th>EMPIRE</th><th>CHAOS WARRIORS</th><th>SAURUS</th><th>OGRES</th><th>A DRAGON</th></tr></thead><tbody><tr><td>As printed</td><td>5.81</td><td>5.13</td><td>3.85</td><td>5.23</td><td>5.97</td><td>1.28</td></tr><tr><td>As proposed</td><td>4.80</td><td>4.12</td><td>2.62</td><td>3.77</td><td>3.79</td><td>1.56</td></tr><tr><td>Change</td><td>\-17%</td><td>\-20%</td><td>\-32%</td><td>\-28%</td><td>\-37%</td><td>+21%</td></tr></tbody></table><p>Down against ranks and up against the large, which is the third time this pass has produced that shape from the same cause: a Stomp only ever reaches small things, so taking it away moves a creature’s weight towards big ones.</p><p><strong>240 points becomes 195</strong>, or 220 with Corpse Killers bought. The Zombie Pirates printing, which carries a Cannon Arm at 270, moves to about 220 on the same arithmetic.</p><h3>What it costs altogether</h3><p>Two entries, in two books with no House editions, so both changes are against base books – and the Necrofex is printed in three books, so Ordo Draconis and Zombie Pirates move with Vampire Counts.</p><p>Two new rules. <strong>Battlements and Buttresses</strong> is the obstacle chapter’s disordered charge with one clause closing a loophole in the rank bonus. <strong>Deathly Energies</strong> is <strong>Corpse Killers</strong> made innate and smaller, with Armour Piercing added so that armour does not shrug it off. <strong>A Will of Its Own</strong> is a negation of one clause of the Undead rule rather than a rule of its own.</p><p>And both rest on the rulebook proposal that lets an entry print its own Stomps, without which neither can be written at all.</p>
+  <hr>
+
+  <footer>
+    <p>
+      These are unofficial, non-commercial re-typesettings of the
+      <strong>Warhammer Armies Project</strong> army books, written and freely
+      distributed by Mathias Eliasson. All rules text, army design and points
+      values remain the work of their author; only the typesetting differs.
+    </p>
+    <p>
+      Editions marked as modified are the exception: those alter the rules text
+      itself. The alterations are ours, not the author's, and each book lists
+      them in full.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This site is unofficial
+      and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Built from Typst sources. Not for sale.</p>
+  </footer>
+</main>
+</body>
+</html>

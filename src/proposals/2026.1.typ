@@ -716,6 +716,52 @@ Proposals for #emph[The Empire 3.1], and for the House edition of it where one s
   The Griffon loses its Natural Armour (6+), which only ever worked against Strength 3, and gains Weapon Skill 6, Initiative 6 and Devastating Charge, with *The Stoop* giving it +1 Initiative more in a turn it charges -- so it strikes before 92% of the corpus when it dives and hits harder for having aimed. Four invisible upgrades are struck and the two you can see on the model, barding and Two Heads, survive. Neither Griffon has a Stomp. The Imperial Griffon becomes a Monstrous Creature while keeping its fifth Wound and Strength 6, leaving the Empire fielding no Monster at all. 140 and 195 points.
 ]
 
+= GRAND CATHAY
+
+Proposals for #emph[Grand Cathay 3.0]. The army has no House edition, so these are against the base book.
+
+#proposal("The Terracotta Sentinel becomes the wall it is described as", status: "under discussion",
+  page: "humanoid-constructs",
+  why: [
+  A Stomp inflicts automatic hits, and the rulebook closes that rule with "unless specified, any special rules or bonuses that apply to the model's normal attacks do not apply to its Stomp". It therefore reads no Weapon Skill and triggers nothing. There is a second and simpler reason a man-shaped statue should barely have one: it has two feet and walks upright on them. It can put one down on somebody; it cannot trample a regiment, whatever its troop type says.
+
+  So the Sentinel prints Stomp (1) at reach 1, as the Avatar of Khaine does. But where the Avatar earned its Attacks back because killing is the only thing it does, this creature is Weapon Skill 4 and Initiative 1 with a polearm -- nothing about it is precise and nothing about it is fast. Its job is to be stood in front of something, and the entry gives it no way to be better at that than any other monster.
+
+  The lore is unambiguous about what it is for: Sentinels "stand silent for centuries, watching over fields, cities, and rivers, or forming part of the Great Bastion itself, where their helms and weapons serve as battlements and buttresses". It is a wall, and nothing on the page says so.
+
+  It also buys heavy armour from the equipment list, which is the eighth construct in these passes to do so.
+  ],
+  against: [
+  Cutting the Stomp is a 32% reduction in output with nothing converted into, unlike the Avatar -- the Sentinel has no Killing Blow and no cascade for the damage to move into, so it is a straight cut paid for by a defensive rule.
+
+  And that defensive rule is the least measurable thing in these passes. Everything else here has been damage or durability on one model; *Battlements and Buttresses* is an effect on whoever charges it, and its value depends entirely on how often that happens. 190 points is a judgement rather than a calculation and is flagged as such.
+
+  The rule also needs a second clause to work at all, which is a sign it is fighting the rules rather than using them: a disordered charger escapes the cap limiting chargers to +2 ranks, so without that clause the rule does nothing to a deep infantry block -- a wall that stops heroes and lets hordes through.
+  ],
+  cost: [
+  One entry in a book with no House edition, so the change is against the base book.
+
+  One new rule, both halves drawn from the obstacle chapter. The heavy armour becomes Natural Armour (4+) at the same value with the *Stone Construct* floor, worth 3%. The four material upgrades -- Jade, Obsidian, Warpstone, Granite -- are untouched, because "Sentinels can be made of any stone, usually matching the land which they protect" is the lore endorsing a menu, and each is something you can see on the model.
+
+  The Stomp being printed rather than inherited rests on the rulebook proposal that permits it.
+  ],
+  examples: [
+  *Why the second clause is not padding.* The rank bonus caps at +3 normally and +2 for a unit that has charged, and a disordered charger escapes its own cap:
+
+  #minitable(("Charging the Sentinel", "Normally", "Disordered", "Net"), ("A monster, no ranks", "+1", "0", "-1", "Two ranks of infantry", "+3", "+2", "-1", "Three or more ranks", "+3", "+3", "0"))
+
+  *And it is measurable after all, because the Sentinel is Unstable.* Every point it loses the combat by costs it a Wound with no saves of any kind, so combat resolution is damage:
+
+  #minitable(("The charger is denied", "Wounds the Sentinel does not take"), ("+1 combat result for charging", "1.00, always", "Impact Hits (D6) at Strength 5", "0.41", "Impact Hits (D3) at Strength 6", "0.56", "Devastating Charge", "0.06"))
+
+  One Wound of a six-Wound model, every time it is charged -- which will be often, because it is a wall.
+
+  *Where the line sits on Stomps.* Scale overrides shape: a man-shaped thing of six Wounds on a 50mm base is a large man, and one of ten Wounds with limbs like tree trunks on a 150mm base is a building. That leaves the Rogue Idol of Gork and the Khemric Titan treading as published, and catches the Avatar, the Sentinel, the Necrofex Colossus and -- as a loose end this proposal creates and does not close -- the Necrolith Colossus and the Hierotitan, which the Tomb Kings proposal changed the armour of and said nothing about the Stomp of.
+  ],
+)[
+  The Terracotta Sentinel prints *Stomp (1)* at reach 1 in place of the troop type's D6 at reach 3, because a statue of a warrior has two feet and walks upright on them -- a 32% cut with no Killing Blow to convert it into. What it gains instead is the thing the lore says it is: *Battlements and Buttresses*, under which a unit charging it counts as making a disordered charge and is still capped at +2 combat result for ranks. Since the Sentinel is Unstable, that denies a full Wound every time it is charged. Its heavy armour becomes Natural Armour (4+) with the *Stone Construct* floor and its four material upgrades are untouched. 235 points becomes 190.
+]
+
 = LIZARDMEN
 
 Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one stands.
@@ -1010,6 +1056,52 @@ against the base book.
   ],
 )[
   The Warsphinx becomes the army's anti-rank engine and the Necrosphinx its headsman, where today they are the same model at two prices. The Warsphinx trades Weapon Skill and an Attack for Stomp (2D3+1) that reaches only Line of Sight 3, and its Envenomed Sting becomes one nominated Attack with Poisoned Attacks and Multiple Wounds (D3). The Necrosphinx prints its Attacks at 5 with the hand weapons struck, stomps D3 at reach 3, loses the Sting, and gains Entombed Beneath the Sands as a paid upgrade. Flight leaves all three of the army's heavy flyers -- the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan -- and nothing is given back.
+]
+
+= VAMPIRE COUNTS
+
+Proposals for #emph[Vampire Counts 3.0]. The army has no House edition, so these are against the base book.
+
+#proposal("The Necrofex Colossus needs nobody's permission", status: "under discussion",
+  page: "humanoid-constructs",
+  why: [
+  Most of this creature is already well made. "Walking vortexes of deathly energies around which the souls of the damned howl" is *Vortex of Death* and *Screams of the Damned*, near enough word for word, and its attack table is genuinely three-way where the Giant's two charts are not.
+
+  What has no rule is the will. "A Necrofex Colossus is no mere mindless thrall, but possesses a deathly will and dark appetite of its own, often outlasting its creator or even proving their undoing should its master's control slip even for a moment." The Vampire Counts Undead rule grants exactly one privilege -- march moves near the Army General or a character with the Lore of Necromancy -- so in this book, permission to march *is* what a necromancer's control amounts to. And the Necrofex needs it like everything else.
+
+  Two smaller things. It is a man-shaped construct with the troop type's Stomp (D6), where two feet walking upright should put one of them down rather than trample a regiment. And *Batter and Slash*, a third of its attack table, never wins anything: measured against six kinds of target it is the worst or joint-worst result against all of them.
+  ],
+  against: [
+  Taken together the Stomp and the table changes are a 19% cut, and the entry is printed in three books, so Ordo Draconis and Zombie Pirates move whether or not their owners wanted them to.
+
+  *Deathly Energies* also overlaps deliberately with *Corpse Killers*, which exists at +20 and does very nearly the same thing. Folding a paid upgrade into the profile and re-selling a bigger version of it is defensible -- it is what the Chimera proposal settled on -- but it is a pattern worth noticing rather than repeating indefinitely.
+
+  And *Batter and Slash* remains the weakest result on the table even after the change. The proposal raises the model rather than fixing the result, which is a choice and not an accident.
+  ],
+  cost: [
+  One entry printed identically in Vampire Counts and Ordo Draconis, and at 270 with a Cannon Arm in Zombie Pirates. None of the three has a House edition.
+
+  Two new rules, neither invented. *A Will of Its Own* negates one clause of the Undead rule. *Deathly Energies* is *Corpse Killers* made innate and smaller with Armour Piercing added, and *Corpse Killers* becomes the upgrade that makes it bigger. *Scythes and Barbs* needs a phrase removed: it re-rolls "the number of Random Attacks and Stomp hits", and a flat Stomp of 1 has nothing to re-roll.
+
+  The Stomp being printed rests on the rulebook proposal that permits it.
+  ],
+  examples: [
+  *The attack table is properly differentiated, except in one place:*
+
+  #minitable(("Target", "Batter and Slash", "Impale", "Screams of the Damned", "Best"), ("Goblins, Ld6", "1.88", "2.78", "4.03", "Screams", "Empire state troops, Ld7", "1.88", "1.67", "3.11", "Screams", "Chaos Warriors, Ld8 I5 3+", "1.56", "0.42", "2.28", "Screams", "Saurus, Initiative 1", "1.88", "2.78", "2.28", "Impale", "Ogres, three Wounds each", "1.88", "5.00", "2.28", "Impale", "A Dragon, Ld9", "1.12", "1.17", "1.56", "Screams"))
+
+  Impale beats the slow and the multi-Wound, Screams beats low Leadership and ignores armour -- and Batter and Slash beats nothing. It becomes *Random Attacks (2D3+1)*: mean 5 against 4.5, and the floor rises from two attacks to three.
+
+  *The drain is a drain, not an armour-killer.* At Strength 3 the Strength contributes no save modifier at all, so nothing at this scale threatens a 3+ save; the Armour Piercing (2) is there so that plate does not simply ignore it, taking the aura from 0.22 Wounds through to 0.44 against Chaos Warriors.
+
+  *And the whole model:*
+
+  #minitable(("", "Goblins", "Empire", "Chaos Warriors", "Saurus", "Ogres", "A Dragon"), ("As printed", "5.81", "5.13", "3.85", "5.23", "5.97", "1.28", "As proposed", "4.80", "4.12", "2.62", "3.77", "3.79", "1.56", "Change", "-17%", "-20%", "-32%", "-28%", "-37%", "+21%"))
+
+  Down against ranks and up against the large -- the third time in this pass that removing a Stomp has produced that shape, for the same reason each time: a Stomp only ever reaches small things.
+  ],
+)[
+  The Necrofex Colossus gains *A Will of Its Own*, letting it march without the Army General or a character of the Lore of Necromancy -- the only thing a necromancer's control means in this book, and the creature's own lore says it outlasts its creator. It gains *Deathly Energies*, a drain inflicting D3 Strength 3 hits with Armour Piercing (2) on every enemy unit in base contact at the end of each round of close combat, with *Corpse Killers* becoming the upgrade that raises that to D6. Its *Batter and Slash* result, which measured as the worst of its three against every target tried, becomes Random Attacks (2D3+1), and it prints *Stomp (1)* at reach 1 like the other man-shaped constructs. 240 points becomes 195, and the entry moves in all three books that print it.
 ]
 
 = WARRIORS OF CHAOS
