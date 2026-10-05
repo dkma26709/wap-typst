@@ -343,7 +343,7 @@ _Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon
 
 = CHOOSING AN ORDO DRACONIS
 
-An *Army of Infamy* is a second way to build a force from a book that already exists. What changes is which category a unit is chosen from, what the list refuses you, and one or two rules laid over the whole army. This one goes a step further in a single place: the knights it puts in Core are a lesser draft of the Blood Knight *Vampire Counts* prints, sold at that entry's price, and the printed profile is bought back as an upgrade that leaves Core behind.
+An *Army of Infamy* is a second way to build a force from a book that already exists. What changes is which category a unit is chosen from, what the list refuses you, and one or two rules laid over the whole army. This one goes a step further in a single place: the knights it puts in Core are a lesser draft of the Blood Knight *Vampire Counts* prints, sold at that entry's price, and the printed profile stands in Special as an entry of its own.
 
 The Ordo Draconis is the army *Warhammer Armies Project: Vampire Counts* is named after and cannot field: a vampire aristocracy that fights in its own person. Its knights ride and its household walks, its lord is a feudal protector rather than a butcher, and the dead are still raised as fodder, and no longer as the backbone. It gives up twenty-three of that book's thirty-three units to do it.
 
@@ -354,7 +354,6 @@ An Ordo Draconis is chosen from this book and no other. Both players should know
 - *The army's General must be a Blood Dragon Vampire character.*
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army. The only characters in this book are his brothers, the brothers who did not survive the offer, and the men he keeps, pays and does not consult.
 - *Only units with the Vampire or Chiropter keyword count towards the minimum points an army must spend on Core units.* The bats are the lord's own creatures and count as his household does. The Skeleton Warriors, the Skeleton Horsemen and the Zombies may be taken in any number Core permits, and buy you nothing towards the quarter.
-- *A unit upgraded to the Sworn is a Special choice rather than a Core one.*
 - *No model in the army may take a missile weapon*, and no Magic Item, upgrade or effect may give one to a model that does not have it. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
 - *Emmerich, Marshal of the Ordo Draconis* may only be taken in an Ordo Draconis. *Ankhara, the Widow of Gisoreux* may be taken here or in any army chosen from *Vampire Counts* 3.0.
 - *No other Special Character may be taken.* The von Carsteins intend to deal with him in due course, Lahmia has spent two centuries trying to get inside his household, the Strigoi find him funny, and Walach Harkon has never called him back to Blood Keep. None of them is going to stand in his line.
@@ -721,7 +720,7 @@ Talisman. Ordo Draconis only. No enemy unit that the bearer, or a unit the beare
 
 _The men who follow it took the blood at the Keep, while there was still time to choose, and nothing that has happened since has been new to them._
 
-Magic Standard. Ordo Draconis only. The Sworn only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains +1 Weapon Skill and +1 Initiative.
+Magic Standard. Ordo Draconis only. Sworn Blood Knights and Sworn Blood Guard only. May only be taken if your army includes a Blood Dragon Vampire Character. The unit carrying this standard gains +1 Weapon Skill and +1 Initiative.
 
 #namecost("THE STANDING RATION", "25 points")
 
@@ -919,7 +918,6 @@ The knights of the household as the Ordo fields them, which is not as the Bloodl
   equipment: "Heavy lance, heavy armour, shield, barding",
   special-rules: "The Red Thirst, Vampiric",
   options: [
-- May be upgraded to the Sworn +8 points/model
 - May upgrade one Blood Knight to a Leader +5 points
 - May upgrade one Blood Knight to a Musician +5 points
 - May upgrade one Blood Knight to a Standard Bearer +10 points
@@ -940,7 +938,6 @@ The household on foot, who fight that way because the walls are behind them. The
   equipment: "Hand weapon, heavy armour, shield",
   special-rules: "The Red Thirst, Vampiric",
   options: [
-- May be upgraded to the Sworn +5 points/model
 - May replace shields with two hand weapons free
 - May upgrade one Blood Guard to a Leader +5 points
 - May upgrade one Blood Guard to a Musician +5 points
@@ -1050,13 +1047,49 @@ The household on foot, who fight that way because the walls are behind them. The
 
 = SPECIAL UNITS
 
-#entry("THE SWORN", first: true)
+#unit("SWORN BLOOD KNIGHTS",
+  first: true,
+  lore: [
 The ones who have had it long enough for it to have finished with them. There is no ceremony and no promotion; a knight is simply older one year than he was the last, and at some point the household stops correcting men who assume he was always like that.
+  ],
+  profiles: (
+  (name: "Sworn Blood Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 44),
+  (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: ""),
+  ),
+  unit-size: "5-15",
+  troop-type: "Cavalry (Vampire)",
+  mount: "Nightmare (Equine)",
+  base-size: "25x50 or 30x60",
+  equipment: "Heavy lance, heavy armour, shield, barding",
+  special-rules: "The Red Thirst, Vampiric",
+  options: [
+- May upgrade one Sworn Blood Knight to a Leader +5 points
+- May upgrade one Sworn Blood Knight to a Musician +5 points
+- May upgrade one Sworn Blood Knight to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 75 points
+  ],
+)
 
-- A unit of *Blood Knights* may be upgraded to the *Sworn* at +8 points per model.
-- A unit of *Blood Guard* may be upgraded to the *Sworn* at +5 points per model.
-- The Sworn have Weapon Skill 6, Initiative 5 and 2 Attacks.
-- A unit of the Sworn is a *Special* choice rather than a Core one.
+#unit("SWORN BLOOD GUARD",
+  lore: [
+The household's oldest swords on foot, for the same reason the Blood Guard are: the walls are behind them.
+  ],
+  profiles: (
+  (name: "Sworn Blood Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 27),
+  ),
+  unit-size: "10-30",
+  troop-type: "Infantry (Vampire)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour, shield",
+  special-rules: "The Red Thirst, Vampiric",
+  options: [
+- May replace shields with two hand weapons free
+- May upgrade one Sworn Blood Guard to a Leader +5 points
+- May upgrade one Sworn Blood Guard to a Musician +5 points
+- May upgrade one Sworn Blood Guard to a Standard Bearer +10 points
+  - May take a Magic Standard worth up to 50 points
+  ],
+)
 
 #unit("GRAVE GUARD",
   profiles: (
@@ -1399,7 +1432,7 @@ This book is self-contained, so the chapters it shares with *Warhammer Armies Pr
 
 #chart((
   ("Entry", "What was done to it"),
-  ("Blood Knights", "Weapon Skill 6 to 5, Initiative 5 to 4, Attacks 2 to 1, at the printed price of 36 points. Core rather than Rare, no longer capped at one unit, and the Sworn upgrade added. The Nightmare loses the Undead special rule"),
+  ("Blood Knights", "Weapon Skill 6 to 5, Initiative 5 to 4, Attacks 2 to 1, at the printed price of 36 points. Core rather than Rare, no longer capped at one unit, and the printed profile moves to the Sworn Blood Knights in Special. The Nightmare loses the Undead special rule"),
   ("Skeleton Horsemen", "The option to replace shields with bows is removed. Light lances become an option in their own right rather than one of two"),
   ("Blood Dragons", "The Zombie Dragon mount option is removed. The Blood Wyrm, the Elder Wyrm and the Great Wyrm are added as mounts, the last of them a Lord's purchase"),
   ("Necromancers", "The Corpse Cart mount option is removed"),
@@ -1442,7 +1475,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("", "Vampire Counts 3.0", "The Ordo Draconis"),
   ("Blood Knights", "Rare, one unit below 3,000 points", "Core, at Weapon Skill 5, Initiative 4 and one Attack, for the same 36 points"),
   ("Blood Guard", "Does not exist", "Core, new entry, 22 points"),
-  ("The Sworn", "Does not exist", "An upgrade to either, carrying the printed Blood Knight profile, chosen from Special"),
+  ("Sworn Blood Knights, Sworn Blood Guard", "Do not exist", "Special, new entries, the printed Blood Knight profile mounted at 44 and on foot at 27"),
   ("The Banner of the First Sworn", "Does not exist", "Magic Standard, new"),
   ("Blood Wyrms, Elder Wyrm", "Do not exist", "Rare, new entries, and the wyrms are character mounts as well"),
   ("Blood Heralds", "Does not exist", "Rare, new entry, the Sworn profile winged and on foot, 45 points"),
@@ -1517,11 +1550,11 @@ A Chaos Warrior is 13 points, or 15 with a shield, for Weapon Skill 5, Strength 
 
 #field("The Sworn", "")
 
-The upgrade restores precisely what the Core entries give up, which is to say it buys the profile the book already prints for a Blood Knight, and the profile *Zombie Pirates* prints for a Depth Guard. Nothing here is new except the price and the category.
+The two entries restore precisely what the Core entries give up, which is to say they print the profile the book already prints for a Blood Knight, and the profile *Zombie Pirates* prints for a Depth Guard. Nothing here is new except the price and the category.
 
-The price is the Warriors of Chaos ladder. A Chaos Warrior is 13 points and a Chosen is 16 for a point of Weapon Skill, a point of Initiative, an Attack and two special rules, a little under a quarter again. Five points on 22 and eight on 36 are that same premium, charged for the characteristics without the special rules.
+The price is the Warriors of Chaos ladder. A Chaos Warrior is 13 points and a Chosen is 16 for a point of Weapon Skill, a point of Initiative, an Attack and two special rules, a little under a quarter again. Twenty-seven against 22 and 44 against 36 are that same premium, charged for the characteristics without the special rules.
 
-The category is the Empire's. Inner Circle Knights are upgraded at +2 points a model and may not then be taken as Core Units, and this is that clause with the arithmetic changed. It does more work here than it does there, because it is what stops the list upgrading its way out of its own restriction: the Sworn are Special, an army must spend a quarter of its points on Core, and only the vampires and the bats count towards that quarter. Whatever else an Ordo Draconis fields, a quarter of it is knights at Weapon Skill 5 with one Attack. There is no build that avoids it.
+The category is the Empire's, made structural. Inner Circle Knights are upgraded at +2 points a model and may not then be taken as Core Units; here the same models are simply printed in Special, so there is no clause to read and none to argue with. It does more work here than it does there, because it is what stops the list buying its way out of its own restriction: the Sworn are Special, an army must spend a quarter of its points on Core, and only the vampires and the bats count towards that quarter. Whatever else an Ordo Draconis fields, a quarter of it is knights at Weapon Skill 5 with one Attack. There is no build that avoids it.
 
 #field("Blood Wyrms", "")
 
@@ -1683,7 +1716,7 @@ The infantry figure is starker still. In those same books there is no rank-and-f
 
 Bretonnia is the defence and it does not cover everything. Knights of the Realm at 25 points are a Core choice with no cap on duplicates and no obligation to bring a peasant, which settles whether knights belong in the Core of a knightly order; Foot Knights in Special and Hippogryph Knights in Rare settle the rest of the ladder. What it does not settle is the payload. A Knight of the Realm is Weapon Skill 4, Strength 3 and one Attack, with the Lance Formation and the Blessing of the Lady behind him, and this list has no equivalent of either. The structural argument says the category is orthodox. It does not say the two are the same purchase.
 
-The Sworn leaving Core is load-bearing and it is thin. Everything holding this list down runs through one clause: the upgraded unit is Special, only the vampires and the bats count towards the minimum, and so a quarter of the army is always the lesser profile. Relax the quarter, or let the Sworn stay Core, and the structure comes apart in a sentence.
+The Sworn standing in Special is load-bearing. Everything holding this list down runs through two facts: the Sworn are Special entries, and only the vampires and the bats count towards the minimum, so a quarter of the army is always the lesser profile. Relax the quarter, or move the Sworn to Core, and the structure comes apart in a sentence.
 
 Twenty-one entries is a great deal to take away, and not all of it is theme. The ghouls, the ghosts and the sorcery-engines each have an argument behind them. The rest is narrowing for its own sake, and a Legion that could still field Crypt Horrors would play differently without playing worse.
 
@@ -1737,7 +1770,7 @@ That is 1,557. Thirty Zombies add 75 more and count towards nothing at all, bein
 
 The list rations characters one to a Blood Dragon, so that Necromancer is either the Lord himself or the slot the Wight Lord is standing in. The Lord is cheaper.
 
-*Or buy the years instead of the numbers.* Twenty-one Blood Guard at 462 and six Fell Bats at 72 are the Core, which is 534 and clears the quarter with thirty-four points in hand. Ten more Blood Guard upgraded to the Sworn at 270 leave Core to do it and sit in Special, where they are the only models in the army at Weapon Skill 6 with two Attacks.
+*Or buy the years instead of the numbers.* Twenty-one Blood Guard at 462 and six Fell Bats at 72 are the Core, which is 534 and clears the quarter with thirty-four points in hand. Ten Sworn Blood Guard at 270 sit in Special, where they are the only models in the army at Weapon Skill 6 with two Attacks.
 
 Five Blood Wyrms at 425 take the Rare allowance. A sixth at 510 would breach that allowance and the ceiling on any single unit in the same instant, both of them being the same quarter.
 
