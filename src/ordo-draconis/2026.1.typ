@@ -30,7 +30,7 @@
   army: "The Ordo Draconis",
   version: "2026.1",
   layout: "army",
-  align: "destruction",
+  align: "neutral",
   shelf: "house",
   authored: true,
 )
@@ -359,6 +359,7 @@ An Ordo Draconis is chosen from this book and no other. Both players should know
 - *Emmerich, Marshal of the Ordo Draconis* may only be taken in an Ordo Draconis. *Ankhara, the Widow of Gisoreux* may be taken here or in any army chosen from *Vampire Counts* 3.0.
 - *No other Special Character may be taken.* The von Carsteins intend to deal with him in due course, Lahmia has spent two centuries trying to get inside his household, the Strigoi find him funny, and Walach Harkon has never called him back to Blood Keep. None of them is going to stand in his line.
 - The mounts a Vampire may take are *not Undead*. The Nightmare, the Hellsteed and the Abyssal Terror are living things bound to their riders, and are printed here without that special rule. The Skeletal Steed is what a Wight rides and is left as *Vampire Counts* has it.
+- *The Ordo Draconis is a Non-Aligned force.* The rulebook's _Alliance & Alignment_ lists do not name it, and it does not take *Vampire Counts*' place among the Forces of Destruction: the order picks its wars itself.
 
 _The Generals of Undeath still applies, so an army that takes its fodder still owes a Necromancy Wizard for the privilege, which is the cost of the fodder, and is why it did not need a cap on top. With characters rationed one non-Blood-Dragon to a Blood Dragon, that Necromancer is bought with the same allowance a Wight King would have wanted, and a lord who wants both must be two lords._
 
@@ -1471,6 +1472,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Magic Items", "Eighty-six", "Sixty-one, and the Ordo's own seven"),
   ("Bows, crossbows, throwing weapons", "Options on five entries", "Not available"),
   ("Nightmare, Hellsteed, Abyssal Terror", "Undead mounts", "Not Undead"),
+  ("Alignment", "Forces of Destruction", "Non-Aligned"),
 ))
 
 = THE DESIGN
