@@ -805,6 +805,7 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 )
 
 #unit("NECROMANCERS",
+  art: "/assets/figures/ordo-draconis/necromancers.jpg",
   profiles: (
     (name: "Master Necromancer", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 160),
     (name: "Necromancer", m: 4, ws: 3, bs: 3, s: 3, t: 3, w: 2, i: 3, a: 1, ld: 7, points: 65),
@@ -951,6 +952,7 @@ The household on foot, who fight that way because the walls are behind them. The
 )
 
 #unit("SKELETON WARRIORS",
+  art: "/assets/figures/ordo-draconis/skeleton-warriors.jpg",
   profiles: (
     (name: "Skeleton Warrior", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 3),
   ),
@@ -1000,6 +1002,7 @@ The household on foot, who fight that way because the walls are behind them. The
 )
 
 #unit("ZOMBIES",
+  art: "/assets/figures/ordo-draconis/zombies.jpg",
   profiles: (
     (name: "Zombie", m: 4, ws: 1, bs: 0, s: 3, t: 3, w: 1, i: 1, a: 1, ld: 2, points: 2.5),
   ),
@@ -1018,6 +1021,7 @@ The household on foot, who fight that way because the walls are behind them. The
 )
 
 #unit("FELL BATS",
+  art: "/assets/figures/ordo-draconis/fell-bats.jpg",
   profiles: (
     (name: "Fell Bat", m: 1, ws: 3, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 5, points: 12),
   ),
@@ -1028,6 +1032,7 @@ The household on foot, who fight that way because the walls are behind them. The
 )
 
 #unit("BAT SWARMS",
+  art: "/assets/figures/ordo-draconis/bat-swarms.jpg",
   profiles: (
     (name: "Bat Swarm", m: 1, ws: 3, bs: 0, s: 2, t: 2, w: 6, i: 4, a: 6, ld: 3, points: 30),
   ),
@@ -1076,6 +1081,7 @@ The ones who have had it long enough for it to have finished with them. There is
 )
 
 #unit("BLACK KNIGHTS",
+  art: "/assets/figures/ordo-draconis/black-knights.jpg",
   profiles: (
     (name: "Black Knight", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 22),
     (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
@@ -1113,6 +1119,7 @@ The large kind of the keep's own bats, horse-sized and ill-tempered, that the ho
 )
 
 #unit("VARGHULF",
+  art: "/assets/figures/ordo-draconis/varghulf.jpg",
   profiles: (
     (name: "Varghulf", m: 8, ws: 5, bs: 0, s: 5, t: 5, w: 4, i: 4, a: 5, ld: 7, points: 110),
   ),
@@ -1178,6 +1185,7 @@ One of the Dam's oldest get, old before the Bloodlines were, and the knight who 
 )
 
 #unit("BLOOD HERALDS",
+  art: "/assets/figures/ordo-draconis/blood-heralds.jpg",
   lore: [
 The Sworn the household puts in the air. A keep that arrives where it likes keeps no couriers, and an order that will not shoot has no other reach. So the shops that blacken the plate make wings as well. Only a knight the blood has finished with is measured for a set, which is why there are never many.
   ],
@@ -1203,6 +1211,7 @@ _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs el
 )
 
 #unit("NECROFEX COLOSSUS",
+  art: "/assets/figures/ordo-draconis/necrofex-colossus.jpg",
   lore: [
 It is not what the name says. Nothing in this army was sewn together, and no
 part of the order's service was made: the keep works a circuit, every ground it
@@ -1243,6 +1252,7 @@ physical Magical Attack and Wounds suffered from it are distributed as if from s
 )
 
 #unit("TERRORGHEIST",
+  art: "/assets/figures/ordo-draconis/terrorgheist.jpg",
   profiles: (
     (name: "Terrorgheist", m: 6, ws: 3, bs: 0, s: 5, t: 6, w: 6, i: 3, a: 4, ld: 4, points: 225),
   ),
@@ -1267,6 +1277,7 @@ it may only be taken in an Ordo Draconis. This book has one. The order did not
 recruit it, and could not have.
 
 #unit("THE PORTER",
+  art: "/assets/figures/ordo-draconis/the-porter.jpg",
   first: true,
   lore: [
 It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
