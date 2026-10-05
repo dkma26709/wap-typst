@@ -300,20 +300,18 @@ still breaks. A magic-item section or lore is balanced without `whole:` and its
 records run on as before.
 
 **How an entry meets the page** is the entry's own declaration, and there are
-three answers. By default it **flows**: entries run one after another down the
-page and a new page starts when the last one is full, in an unbreakable block so
-an entry that does not fit moves whole rather than straddling. `solo: true` gives
-it a page of its own — every entry under `= SPECIAL CHARACTERS`, where the entry
-is the spread. `compact: true` is the character mount, a stat line and two fields
-that would leave a page of its own empty. An entry taller than a page has to
-break somewhere, and the template finds those by measuring: such an entry opens
-a page of its own and breaks where that page ends, instead of overflowing and
-losing its tail silently. There is no `breakable:` flag to write — it used to
-exist, went stale as the measure changed, and is now a compile error. A
-magic-item section decides for itself the same way: one that fits on a page is
-set as one unbreakable block that the page places where there is room, with
-`SECTION_GAP` above it, and one longer than a page opens a page. Nothing in a
-book says which.
+two answers. By default it **opens a page of its own**, as the source sets most
+of its entries (measured on one source PDF, Lizardmen 1.65: of 48 entries found,
+31 open a page, 7 are mounts, 10 short ones are paired by hand, and nothing
+flows); `first: true` on the first entry of a chapter keeps it on the chapter's
+title page, and an entry taller than a page runs on to the next. `compact: true` is the character mount, a stat line and two fields that
+would leave a page of its own empty, so it shares one. There is no `solo:` and
+no `breakable:` flag to write — both existed, under an earlier design where
+entries flowed down the page and shared it, and both are compile errors now so
+a book cannot carry a setting nothing reads. A magic-item section decides for
+itself by measuring: one that fits on a page is set as one unbreakable block
+that the page places where there is room, with `SECTION_GAP` above it, and one
+longer than a page opens a page. Nothing in a book says which.
 
 ## Commits
 

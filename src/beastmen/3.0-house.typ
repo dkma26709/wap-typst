@@ -1180,7 +1180,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 = SPECIAL CHARACTERS
 
 #unit("GORTHOR THE CRUEL",
-  solo: true,
   first: true,
   subtitle: "The Favoured of Chaos, Scion of the Dark Gods",
   profiles: (
@@ -1208,7 +1207,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("KHAZRAK ONE-EYE",
-  solo: true,
   profiles: (
     (name: "Khazrak One-Eye", m: 5, ws: 7, bs: 1, s: 5, t: 5, w: 3, i: 5, a: 4, ld: 9, points: 250),
     (name: "Redmaw (Chaos Warhound)", m: 7, ws: 4, bs: 0, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 6, points: ""),
@@ -1231,7 +1229,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("MORGHUR THE SHADOWGAVE",
-  solo: true,
   subtitle: "Master of Skulls",
   profiles: (
     (name: "Morghur", m: "*", ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 335),
@@ -1254,7 +1251,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("MALAGOR THE DARK OMEN",
-  solo: true,
   subtitle: "Crowfather, Despoiler of the Sacred, Harbinger of Disaster",
   profiles: (
     (name: "Malagor", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 320),
@@ -1281,7 +1277,6 @@ then choose another victim. Roll again on this table to see what the Giant does 
 )
 
 #unit("KRALMAW",
-  solo: true,
   subtitle: "The Prophet of Ruin",
   profiles: (
     (name: "Kralmaw", m: 5, ws: 5, bs: 3, s: 3, t: 4, w: 3, i: 4, a: 2, ld: 8, points: 295),
@@ -1308,7 +1303,6 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
 )
 
 #unit("MOLOKH SLUGTONGUE",
-  solo: true,
   subtitle: "The Famine-Fiend, the Barren One, Lord of the Black Harvest",
   profiles: (
     (name: "Molokh Slugtongue", m: 5, ws: 4, bs: 3, s: 3, t: 4, w: 2, i: 3, a: 1, ld: 7, points: 190),
@@ -1328,7 +1322,6 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
 )
 
 #unit("TAUROX THE BRASS BULL",
-  solo: true,
   subtitle: "Slaughterhorn, Bloodbeast, The Brazen One",
   profiles: (
     (name: "Taurox", m: 6, ws: 6, bs: 3, s: 6, t: 6, w: 5, i: 5, a: 6, ld: 8, points: 325),
@@ -1347,7 +1340,6 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
 )
 
 #unit("GHORROS WARHOOF",
-  solo: true,
   subtitle: "Sire of a Thousand Young",
   profiles: (
     (name: "Ghorros Warhoof", m: 8, ws: 5, bs: 3, s: 4, t: 5, w: 2, i: 3, a: 4, ld: 8, points: 160),
@@ -1367,7 +1359,6 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
 )
 
 #unit("UNGROL FOUR-HORN",
-  solo: true,
   subtitle: "Blackheart, Hornsthief, the Spurned One",
   profiles: (
     (name: "Ungrol Four-horn", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 7, points: 70),
@@ -1385,7 +1376,6 @@ Note that the Leering Spirit marker is ignored for the purposes of movement, com
 )
 
 #unit("MOONCLAW, SON OF MORRSLIEB",
-  solo: true,
   subtitle: "The Lunatic Prince, Child of the Gravid Orb",
   profiles: (
     (name: "Moonclaw", m: 5, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 200),

@@ -693,7 +693,6 @@ Place the small template where the cannon ball lands; then move the template the
 = SPECIAL CHARACTERS
 
 #unit("LUTHOR HARKON",
-  solo: true,
   first: true,
   subtitle: "Arch-Grand Commodore, Pirate King of the Vampire Coast, Emperor of Lustria",
   profiles: (
@@ -724,7 +723,6 @@ gains +1 To Hit and To Wound."), ("6", "The Pirate King: Luthor gains the Inspir
 )
 
 #unit("COUNT NOCTILUS",
-  solo: true,
   subtitle: "Captain of the Bloody Reaver, Admiral of the Dreadfleet",
   profiles: (
     (name: "Count Noctilus", m: 6, ws: 7, bs: 5, s: 6, t: 5, w: 3, i: 7, a: 4, ld: 10, points: 330),
@@ -755,7 +753,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("CYLOSTRA DIREFIN",
-  solo: true,
   subtitle: "Siren of the Storm",
   profiles: (
     (name: "Cylostra Direfin", m: 6, ws: 3, bs: 0, s: 4, t: 4, w: 3, i: 3, a: 1, ld: 8, points: 260),
@@ -776,7 +773,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("CAPTAIN DREKLA",
-  solo: true,
   subtitle: "The Silver Hook of Sartosa",
   profiles: (
     (name: "Captain Drekla", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 6, a: 3, ld: 9, points: 135),
@@ -795,7 +791,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("BLACK JENS",
-  solo: true,
   subtitle: "Chief Courtier and Chancellor to Luthor Harkon",
   profiles: (
     (name: "Black Jens", m: 4, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 3, ld: 7, points: 60),
@@ -813,7 +808,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("VANGHEIST",
-  solo: true,
   subtitle: "Captain of the Shadewraith",
   profiles: (
     (name: "Vangheist", m: 6, ws: 5, bs: 0, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 7, points: 170),
@@ -834,7 +828,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("SKRETCH HALF-DEAD",
-  solo: true,
   subtitle: "Captain of the Skabrus",
   profiles: (
     (name: "Skretch Half-Dead", m: 5, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 5, points: 80),
@@ -853,7 +846,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("RED HENRI",
-  solo: true,
   subtitle: "Captain of the Butcher Ship",
   profiles: (
     (name: "Red Henri", m: 4, ws: 4, bs: 0, s: 4, t: 5, w: 3, i: 2, a: 3, ld: 3, points: 90),
@@ -871,7 +863,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("KETERLYN, THE BRINE WIFE",
-  solo: true,
   subtitle: "The Syreen of the Cape Ruin",
   profiles: (
     (name: "The Brine Wife", m: 6, ws: 4, bs: 0, s: 3, t: 3, w: 2, i: 3, a: 2, ld: 6, points: 140),

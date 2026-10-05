@@ -1211,7 +1211,7 @@
 
 // The settings that are the entry itself rather than one of its fields.
 #let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
-                      "before", "after", "labels", "solo")
+                      "before", "after", "labels")
 
 // A named rule bullet - the `- *Impetuous:* ...` the corpus writes by hand - as a
 // record, the shape `magic-item` and `spell` already have. 872 entries carry one
@@ -1353,59 +1353,28 @@
   // marker below stays, since it is what a magic-item section drops too.
   [#metadata((kind: "unit", name: name, args: args))<meta>]
 
-  // Three ways an entry meets the page, and the entry says which it is.
+  // Two ways an entry meets the page, and the entry says which it is.
+  //
+  // By default it opens a page of its own: the name and the stat line at the
+  // head of a fresh page and the rules under them, with nothing of the entry
+  // before it above. That is how the source sets most of its entries. Measured
+  // on Lizardmen 1.65, the one source PDF to hand: of 48 entries found, 31
+  // open a page, 7 are mounts, and 10 short ones are set by hand under the
+  // entry before. Nothing in it flows. `first` keeps the first entry of a
+  // chapter on the chapter's title page. An entry taller than a page runs on
+  // to the next, as prose does.
   //
   // `compact` is the character mount: a stat line and two fields, which would
   // leave a page of its own empty, so it shares one.
   //
-  // `solo` opens a page of its own. Reserved for special characters and for
-  // Regiments of Renown, where the entry is the spread - a named lord with his
-  // own art, his own magic items and half a page of rules, or a named thing
-  // there is only one of - and starting it halfway down a page under someone
-  // else's options loses that.
-  //
-  // Everything else flows. Entries follow one another down the page and a new
-  // page starts when the last one is full, which is how the source sets its
-  // ordinary units and how a reader looks two of them up side by side. The block
-  // is unbreakable so an entry that does not fit moves whole rather than
-  // straddling. The entries taller than a page have to split somewhere, and
-  // unbreakable they would overflow the page and lose their tail silently; so
-  // each entry is measured against the page, and one taller than it opens a
-  // page of its own and breaks where that page ends. A page of its own, as a
-  // solo entry has, rather than the flow: left to flow, such an entry began
-  // under the foot of the entry before it and ran on over the page, so the
-  // reader met its stat line on one page and most of its rules on the next,
-  // with two units sharing the page it started on. Taller than a page, it
-  // fills that page anyway, so nothing is given up. Measured rather than
-  // declared: a `breakable: true` written into the book went stale when the
-  // measure changed and the entry came to fit, and then split for no reason.
+  // There is no `solo` and no `breakable` to write. Every entry has the page
+  // to itself, so a setting saying so would say nothing, and both are compile
+  // errors so a book cannot carry one that nothing reads.
   if args.at("compact", default: false) {
     compact-entry(name, body)
-  } else if args.at("solo", default: false) {
+  } else {
     entry(name, first: args.at("first", default: false))
     body
-  } else {
-    [#metadata((kind: "entry", name: name))<meta>]
-    context {
-      let inner = {
-        heading(level: 2, name)
-        body
-      }
-      let page-column = page.height - PAGE_MARGIN.top - PAGE_MARGIN.bottom
-      let height = measure(block(width: _measure-width(), inner)).height
-      let fits = height <= page-column
-      if not fits { pagebreak(weak: true) }
-      block(
-        breakable: not fits,
-        // Entries share a page now, so the gap between two of them is the only
-        // thing telling a reader where one unit stops and the next starts. At the
-        // old 1.6em that gap measured 12pt against the 10pt *inside* an entry,
-        // between a profile and its fields - which read as one long entry rather
-        // than two. 3.2em puts about three line-heights between them.
-        above: 3.2em, below: 0.6em,
-        inner,
-      )
-    }
   }
 }
 

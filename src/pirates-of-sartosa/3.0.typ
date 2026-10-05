@@ -856,7 +856,6 @@ If a Misfire is rolled, add \-1 to the result on the Blackpowder Misfire Chart.
 = SPECIAL CHARACTERS
 
 #unit("CARMEN SICILIERI",
-  solo: true,
   first: true,
   subtitle: "The Pirate Princess",
   profiles: (
@@ -876,7 +875,6 @@ If a Misfire is rolled, add \-1 to the result on the Blackpowder Misfire Chart.
 )
 
 #unit("JAEGO ROTH",
-  solo: true,
   subtitle: "Captain of the Heldenhammer",
   profiles: (
     (name: "Jaego Roth", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 185),
@@ -904,7 +902,6 @@ In close combat, a repeater pistol counts as an additional hand weapon that does
 )
 
 #unit("ARANESSA SALTSPITE",
-  solo: true,
   subtitle: "The Queen of Tides, Captain of the Swordfysh",
   profiles: (
     (name: "Aranessa Saltspite", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 230),
@@ -924,7 +921,6 @@ In close combat, a repeater pistol counts as an additional hand weapon that does
 )
 
 #unit("GIACCHINO DE FALCO",
-  solo: true,
   subtitle: "The Crazed Captain",
   profiles: (
     (name: "Giacchino de Falco", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 6, points: 100),
@@ -955,7 +951,6 @@ Devastating Charge special rule until the start of your next turn.")))
 )
 
 #unit("WILHELM SCHWARZ",
-  solo: true,
   subtitle: "Quartermaster of Great Renown",
   profiles: (
     (name: "Wilhelm Schwarz", m: 4, ws: 4, bs: 4, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 75),
@@ -981,7 +976,6 @@ Devastating Charge special rule until the start of your next turn.")))
 )
 
 #unit("FLEUR AND ESTELLA",
-  solo: true,
   subtitle: "Flint & Steel",
   profiles: (
     (name: "Estella", m: 4, ws: 6, bs: 4, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 60),
@@ -1006,7 +1000,6 @@ Devastating Charge special rule until the start of your next turn.")))
 )
 
 #unit("KRUSHER THE ANCHORMAN",
-  solo: true,
   profiles: (
     (name: "Krusher the Anchorman", m: 4, ws: 5, bs: 4, s: 5, t: 5, w: 4, i: 3, a: 4, ld: 8, points: 150),
     (name: "Giant Parrot", m: "-", ws: 2, bs: "-", s: 2, t: "-", w: "-", i: 2, a: 1, ld: "-", points: ""),

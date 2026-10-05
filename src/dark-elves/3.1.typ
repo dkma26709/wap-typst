@@ -1187,7 +1187,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 = SPECIAL CHARACTERS
 
 #unit("MALEKITH",
-  solo: true,
   first: true,
   subtitle: "The Witch King of Naggaroth",
   profiles: (
@@ -1223,7 +1222,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("MORATHI",
-  solo: true,
   subtitle: "The Hag Sorceress of Ghrond",
   profiles: (
     (name: "Morathi", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 335),
@@ -1254,7 +1252,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("MALUS DARKBLADE",
-  solo: true,
   subtitle: "Scion of Hag Graef",
   profiles: (
     (name: "Malus Darkblade", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 8, a: 4, ld: 10, points: 210),
@@ -1280,7 +1277,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("CRONE HELLEBRON",
-  solo: true,
   subtitle: "The Blood Queen of Har Ganeth",
   profiles: (
     (name: "Crone Hellebron", m: 5, ws: 7, bs: 7, s: 4, t: 3, w: 3, i: 9, a: 4, ld: 10, points: 280),
@@ -1306,7 +1302,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("RAKARTH",
-  solo: true,
   subtitle: "Beastlord of Clar Karond",
   profiles: (
     (name: "Rakarth", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 3, i: 6, a: 3, ld: 10, points: 445),
@@ -1329,7 +1324,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("KRETHUSA THE CRONESEER",
-  solo: true,
   subtitle: "Prophetess of Morai-Heg",
   profiles: (
     (name: "Krethusa", m: 5, ws: 5, bs: 4, s: 3, t: 3, w: 3, i: 6, a: 2, ld: 9, points: 295),
@@ -1349,7 +1343,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("KOURAN DARKHAND",
-  solo: true,
   subtitle: "Captain of the Black Guard",
   profiles: (
     (name: "Kouran Darkhand", m: 5, ws: 8, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 140),
@@ -1367,7 +1360,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("TULLARIS DREADBRINGER",
-  solo: true,
   subtitle: "The Hand of Khaine",
   profiles: (
     (name: "Tullaris Dreadbringer", m: 5, ws: 7, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 130),
@@ -1388,7 +1380,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("LOKHIR FELLHEART",
-  solo: true,
   subtitle: "Krakenlord of Karond Kar",
   profiles: (
     (name: "Lokhir Fellheart", m: 5, ws: 6, bs: 6, s: 4, t: 3, w: 2, i: 7, a: 3, ld: 9, points: 150),
@@ -1410,7 +1401,6 @@ Apprentice only)*, Mixed Unit, Murderous Prowess* (Beastmaster Apprentice only)*
 )
 
 #unit("SHADOWBLADE",
-  solo: true,
   subtitle: "Master of Assassins, the Death that Walks Unseen",
   profiles: (
     (name: "Shadowblade", m: 6, ws: 10, bs: 10, s: 4, t: 3, w: 2, i: 10, a: 3, ld: 9, points: 220),

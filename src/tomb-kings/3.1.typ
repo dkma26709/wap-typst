@@ -905,7 +905,6 @@ This is a Magical Attack.")))
 = SPECIAL CHARACTERS
 
 #unit("SETTRA THE IMPERISHABLE",
-  solo: true,
   first: true,
   subtitle: "God-King of Khemri, Ruler of Nehekhara",
   profiles: (
@@ -934,7 +933,6 @@ This is a Magical Attack.")))
 )
 
 #unit("HIGH QUEEN KHALIDA NEFERHER",
-  solo: true,
   subtitle: "Beloved of Asaph, Tomb Queen of the Eastern Deserts",
   profiles: (
     (name: "High Queen Khalida", m: 6, ws: 6, bs: 3, s: 5, t: 5, w: 4, i: 9, a: 5, ld: 10, points: 300),
@@ -956,7 +954,6 @@ This is a Magical Attack.")))
 )
 
 #unit("PRINCE TUTANKHANUT",
-  solo: true,
   subtitle: "The Golden Prince of Numas",
   profiles: (
     (name: "Tutankhanut", m: 4, ws: 5, bs: 4, s: 5, t: 5, w: 3, i: 3, a: 3, ld: 9, points: 115),
@@ -975,7 +972,6 @@ This is a Magical Attack.")))
 )
 
 #unit("PRINCE APOPHAS",
-  solo: true,
   subtitle: "The Cursed Scarab Lord",
   profiles: (
     (name: "Prince Apophas", m: 4, ws: 4, bs: 3, s: 4, t: 3, w: 4, i: 1, a: 5, ld: 8, points: 130),
@@ -993,7 +989,6 @@ This is a Magical Attack.")))
 )
 
 #unit("GRAND HIEROPHANT KHATEP",
-  solo: true,
   subtitle: "Liche Lord of Khemri",
   profiles: (
     (name: "Khatep", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 3, a: 2, ld: 9, points: 330),
@@ -1020,7 +1015,6 @@ This is a Magical Attack.")))
 )
 
 #unit("ARKHAN THE BLACK",
-  solo: true,
   subtitle: "The Liche King, Dark Lord of Nagash",
   profiles: (
     (name: "Arkhan the Black", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 9, points: 340),
@@ -1050,7 +1044,6 @@ He may choose spells from both Lores in any combination as he wishes.
 )
 
 #unit("THE HERALD NEKAPH",
-  solo: true,
   subtitle: "Emissary of Settra",
   profiles: (
     (name: "The Herald Nekaph", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 3, ld: 8, points: 110),
@@ -1078,7 +1071,6 @@ Herald)*, Undead*
 )
 
 #unit("SEHENESMET",
-  solo: true,
   subtitle: "Vizier of Quatar",
   profiles: (
     (name: "Sehenesmet", m: 6, ws: 3, bs: 2, s: 6, t: 7, w: 6, i: 3, a: 4, ld: 8, points: 425),
@@ -1098,7 +1090,6 @@ Herald)*, Undead*
 )
 
 #unit("RAMHOTEP THE VISIONARY",
-  solo: true,
   subtitle: "Necrotect of Quatar",
   profiles: (
     (name: "Ramhotep the Visionary", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 2, i: 3, a: 2, ld: 7, points: 100),

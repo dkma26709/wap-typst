@@ -1274,7 +1274,6 @@ it may only be taken in an Ordo Draconis. This book has one. The order did not
 recruit it, and could not have.
 
 #unit("THE PORTER",
-  solo: true,
   first: true,
   before: [
 It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
@@ -1306,7 +1305,6 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
 = SPECIAL CHARACTERS
 
 #unit("EMMERICH",
-  solo: true,
   first: true,
   before: [
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
@@ -1359,7 +1357,6 @@ _The Marshal is the book's own grammar for a general and is written the way four
 )
 
 #unit("ANKHARA",
-  solo: true,
   before: [
 The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
 

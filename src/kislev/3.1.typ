@@ -917,7 +917,6 @@ If a misfire is rolled, consult the Black Powder Misfire Chart.
 = SPECIAL CHARACTERS
 
 #unit("BORIS URSUS",
-  solo: true,
   first: true,
   subtitle: "The Red Tzar",
   profiles: (
@@ -944,7 +943,6 @@ If a misfire is rolled, consult the Black Powder Misfire Chart.
 )
 
 #unit("TZARINA KATARIN BOKHA",
-  solo: true,
   subtitle: "The Ice Queen, Bringer of Winter",
   profiles: (
     (name: "Tzarina Katarin", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 10, points: 380),
@@ -973,7 +971,6 @@ If a misfire is rolled, consult the Black Powder Misfire Chart.
 )
 
 #unit("KOSTALTYN",
-  solo: true,
   subtitle: "Supreme Patriarch of Ursun, Leader of the Great Orthodoxy",
   profiles: (
     (name: "Kostaltyn", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 170),
@@ -999,7 +996,6 @@ Patriarchs)*, Frenzy, Magic Resistance (1), Hatred (Chaos)*
 )
 
 #unit("YURI BARKHOV",
-  solo: true,
   subtitle: "Prince of Kislev",
   profiles: (
     (name: "Yuri Barkhov", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 185),
@@ -1020,7 +1016,6 @@ Patriarchs)*, Frenzy, Magic Resistance (1), Hatred (Chaos)*
 )
 
 #unit("TZAR SALTAN",
-  solo: true,
   subtitle: "The Bitter Ruler of Praag",
   profiles: (
     (name: "Tzar Saltan", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
@@ -1044,7 +1039,6 @@ Patriarchs)*, Frenzy, Magic Resistance (1), Hatred (Chaos)*
 )
 
 #unit("MOTHER OSTANKYA",
-  solo: true,
   subtitle: "The Crone of the Forest",
   profiles: (
     (name: "Mother Ostankya", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 9, points: 285),
@@ -1082,7 +1076,6 @@ knows the following:
 )
 
 #unit("IGOR THE TERRIBLE",
-  solo: true,
   subtitle: "Tyrant Tzar of Kislev",
   profiles: (
     (name: "Igor the Terrible", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 150),
@@ -1106,7 +1099,6 @@ knows the following:
 )
 
 #unit("MISKA THE SLAUGHTERER",
-  solo: true,
   subtitle: "Khan-Queen of Kislev",
   profiles: (
     (name: "Miska the Slaughterer", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 325),
@@ -1128,7 +1120,6 @@ knows the following:
 )
 
 #unit("NARYSKA LEYSA",
-  solo: true,
   subtitle: "The Golden Knight",
   profiles: (
     (name: "Naryska Leysa", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 180),
@@ -1151,7 +1142,6 @@ knows the following:
 )
 
 #unit("TORDIMIR LUBOVASYN",
-  solo: true,
   subtitle: "Commander of the Gryphon Legion",
   profiles: (
     (name: "Tordimir Lubovasyn", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 160),
@@ -1172,7 +1162,6 @@ knows the following:
 )
 
 #unit("STEPAN RASIN",
-  solo: true,
   subtitle: "Clan Chief of the Ungols",
   profiles: (
     (name: "Stepan Rasin", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 100),
@@ -1195,7 +1184,6 @@ knows the following:
 )
 
 #unit("ILJA OF MUROVA",
-  solo: true,
   subtitle: "The Great Bear",
   profiles: (
     (name: "Ilja of Murova", m: 4, ws: 5, bs: 5, s: 5, t: 5, w: 3, i: 5, a: 3, ld: 8, points: 130),
@@ -1213,7 +1201,6 @@ Hunters)
 )
 
 #unit("ULRIKA MAGDOVA STRAGHOV",
-  solo: true,
   profiles: (
     (name: "Ulrika Magdova Staghov", m: 6, ws: 6, bs: 5, s: 5, t: 4, w: 2, i: 7, a: 3, ld: 9, points: 220),
   ),

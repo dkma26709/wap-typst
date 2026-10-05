@@ -1490,7 +1490,6 @@ If you roll a misfire, the organ gun does not fire and the Steam Tank immediatel
 = SPECIAL CHARACTERS
 
 #unit("KARL FRANZ",
-  solo: true,
   first: true,
   subtitle: "The Emperor, Elector Count of Reikland, Prince of Altdorf",
   profiles: (
@@ -1525,7 +1524,6 @@ If you roll a misfire, the organ gun does not fire and the Steam Tank immediatel
 )
 
 #unit("KURT HELBORG",
-  solo: true,
   subtitle: "Reiksmarshal of the Empire",
   profiles: (
     (name: "Kurt Helborg", m: 4, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 290),
@@ -1550,7 +1548,6 @@ If you roll a misfire, the organ gun does not fire and the Steam Tank immediatel
 )
 
 #unit("LUDWIG SCHWARZHELM",
-  solo: true,
   subtitle: "The Emperor's Champion",
   profiles: (
     (name: "Ludwig Schwarzhelm", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 3, ld: 8, points: 160),
@@ -1573,7 +1570,6 @@ If you roll a misfire, the organ gun does not fire and the Steam Tank immediatel
 )
 
 #unit("BORIS TODBRINGER",
-  solo: true,
   subtitle: "Elector Count of Middenland",
   profiles: (
     (name: "Boris Todbringer", m: 4, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 260),
@@ -1596,7 +1592,6 @@ If you roll a misfire, the organ gun does not fire and the Steam Tank immediatel
 )
 
 #unit("ALDEBRAND LUDENHOF",
-  solo: true,
   subtitle: "Elector Count of Hochland",
   profiles: (
     (name: "Aldebrand Ludenhof", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
@@ -1626,7 +1621,6 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("VALMIR VON RAUKOV",
-  solo: true,
   subtitle: "Elector Count of Ostland",
   profiles: (
     (name: "Valmir von Raukov", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 190),
@@ -1653,7 +1647,6 @@ Rather than rolling to Hit using Ballistic Skill, the target must pass a Weapon 
 )
 
 #unit("MARIUS LEITDORF",
-  solo: true,
   subtitle: "Elector Count of Averland",
   profiles: (
     (name: "Marius Leitdorf", m: 4, ws: 7, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 185),
@@ -1685,7 +1678,6 @@ again.")))
 )
 
 #unit("MARKUS WULFHART",
-  solo: true,
   subtitle: "Huntmarshal of the Empire",
   profiles: (
     (name: "Markus Wulfhart", m: 4, ws: 5, bs: 6, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 8, points: 100),
@@ -1707,7 +1699,6 @@ again.")))
 )
 
 #unit("THEODORE BRUCKNER",
-  solo: true,
   subtitle: "The Hand of Judgement, the Titan Headsman, Champion of Nuln",
   profiles: (
     (name: "Theodore Bruckner", m: 4, ws: 6, bs: 4, s: 5, t: 4, w: 3, i: 5, a: 4, ld: 8, points: 180),
@@ -1734,7 +1725,6 @@ again.")))
 )
 
 #unit("BALTHASAR GELT",
-  solo: true,
   subtitle: "The Supreme Patriarch, Arch-alchemist",
   profiles: (
     (name: "Balthasar Gelt", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 310),
@@ -1766,7 +1756,6 @@ Al-kahest Wounds any target on a 4+.
 )
 
 #unit("THYRUS GORMANN",
-  solo: true,
   subtitle: "High Wizard of the Bright Order",
   profiles: (
     (name: "Thyrus Gormann", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 325),
@@ -1790,7 +1779,6 @@ Al-kahest Wounds any target on a 4+.
 )
 
 #unit("ELSPETH VON DRAKEN",
-  solo: true,
   subtitle: "The Dark Lady of Nuln, the Graveyard Rose",
   profiles: (
     (name: "Elspeth von Draken", m: 4, ws: 4, bs: 3, s: 3, t: 3, w: 3, i: 4, a: 2, ld: 8, points: 255),
@@ -1822,7 +1810,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("VOLKMAR THE GRIM",
-  solo: true,
   subtitle: "The Grand Theogonist",
   profiles: (
     (name: "Volkmar the Grim", m: 4, ws: 5, bs: 5, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 190),
@@ -1846,7 +1833,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("LUTHOR HUSS",
-  solo: true,
   subtitle: "Prophet of Sigmar",
   profiles: (
     (name: "Luthor Huss", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 200),
@@ -1870,7 +1856,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("MAGNUS THE PIOUS",
-  solo: true,
   subtitle: "Saviour of the Empire, Bane of Chaos",
   profiles: (
     (name: "Magnus the Pious", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 10, points: 160),
@@ -1891,7 +1876,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("EMIL VALGEIR",
-  solo: true,
   subtitle: "High Priest of Ar-Ulric",
   profiles: (
     (name: "Emil Valgeir", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 5, a: 3, ld: 9, points: 260),
@@ -1916,7 +1900,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("HANS VON LOWENHACKE",
-  solo: true,
   subtitle: "Mercenary Commander",
   profiles: (
     (name: "Hans von Löwenhacke", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 4, a: 4, ld: 9, points: 255),
@@ -1939,7 +1922,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("HARALD GEMUNSEN",
-  solo: true,
   subtitle: "Grand Master of the Knights Panther",
   profiles: (
     (name: "Harald Gemunsen", m: 4, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 9, points: 175),
@@ -1965,7 +1947,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("VALTEN",
-  solo: true,
   subtitle: "Champion of Sigmar",
   profiles: (
     (name: "Valten", m: 4, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 5, a: 4, ld: 9, points: 260),
@@ -1997,7 +1978,6 @@ This weapon has a Strength equivalent to 10 minus the target's Toughness.
 )
 
 #unit("BERTHA BESTRAUFRUNG",
-  solo: true,
   subtitle: "High Matriarch of the Sisterhood of Sigmar",
   profiles: (
     (name: "Bertha Bestraufrung", m: 4, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 4, a: 2, ld: 8, points: 140),
@@ -2028,7 +2008,6 @@ If the weapon hits, it inflicts one automatic Wound against Daemons, Undead or V
 )
 
 #unit("JUBAL FALK",
-  solo: true,
   subtitle: "Castellan-Engineer of Nuln",
   profiles: (
     (name: "Jubal Falk", m: 4, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 4, a: 2, ld: 8, points: 60),

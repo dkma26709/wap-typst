@@ -1494,7 +1494,6 @@ friendly unit, resolve Impact Hits immediately after contact and then move the D
 = SPECIAL CHARACTERS
 
 #unit("THANQUOL",
-  solo: true,
   first: true,
   subtitle: "Favoured Agent of the Council of Thirteen",
   profiles: (
@@ -1525,7 +1524,6 @@ He may use a combination of spells from both Lores. In addition, he can choose t
 )
 
 #unit("BONERIPPER",
-  solo: true,
   subtitle: "Bodyguard of Thanquol",
   profiles: (
     (name: "Boneripper", m: 6, ws: 3, bs: 1, s: 5, t: 5, w: 4, i: 1, a: 4, ld: 10, points: 160),
@@ -1566,7 +1564,6 @@ At the beginning of any Close Combat phase all models in base contact (friend or
 )
 
 #unit("QUEEK HEADTAKER",
-  solo: true,
   subtitle: "Right Claw of Clan Mors",
   profiles: (
     (name: "Queek Headtaker", m: 5, ws: 7, bs: 6, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 8, points: 220),
@@ -1586,7 +1583,6 @@ At the beginning of any Close Combat phase all models in base contact (friend or
 )
 
 #unit("KRITTOK FOULBLADE",
-  solo: true,
   subtitle: "Clawlord of Clan Verminus",
   profiles: (
     (name: "Krittok Foulblade", m: 5, ws: 6, bs: 5, s: 4, t: 4, w: 3, i: 6, a: 3, ld: 8, points: 180),
@@ -1608,7 +1604,6 @@ At the beginning of any Close Combat phase all models in base contact (friend or
 )
 
 #unit("SPINETAIL",
-  solo: true,
   subtitle: "Clawlord of Clan Klaw",
   profiles: (
     (name: "Spinetail", m: 5, ws: 6, bs: 4, s: 4, t: 4, w: 3, i: 7, a: 4, ld: 7, points: 160),
@@ -1630,7 +1625,6 @@ At the beginning of any Close Combat phase all models in base contact (friend or
 )
 
 #unit("TRETCH CRAVENTAIL",
-  solo: true,
   subtitle: "Clawleader of Clan Rictus",
   profiles: (
     (name: "Tretch Craventail", m: 5, ws: 5, bs: 4, s: 4, t: 4, w: 2, i: 6, a: 3, ld: 6, points: 105),
@@ -1649,7 +1643,6 @@ At the beginning of any Close Combat phase all models in base contact (friend or
 )
 
 #unit("SKREECH VERMINKING",
-  solo: true,
   subtitle: "The Rat King",
   profiles: (
     (name: "Skreech Verminking", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 470),
@@ -1679,7 +1672,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("VIZZIK SKOUR",
-  solo: true,
   subtitle: "Prophet of the Horned Rat",
   profiles: (
     (name: "Vizzik Skour", m: 8, ws: 8, bs: 4, s: 6, t: 6, w: 6, i: 10, a: 5, ld: 8, points: 620),
@@ -1709,7 +1701,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("DEATHMASTER SNIKCH",
-  solo: true,
   subtitle: "Chief Assassin of Clan Eshin",
   profiles: (
     (name: "Deathmaster Snikch", m: 6, ws: 8, bs: 6, s: 4, t: 4, w: 3, i: 10, a: 5, ld: 8, points: 280),
@@ -1725,7 +1716,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("VESKIT",
-  solo: true,
   subtitle: "High Executioner of Clan Eshin",
   profiles: (
     (name: "Veskit", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 4, ld: 8, points: 165),
@@ -1745,7 +1735,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("THROT THE UNCLEAN",
-  solo: true,
   subtitle: "Master Mutator of Clan Moulder",
   profiles: (
     (name: "Throt the Unclean", m: 5, ws: 6, bs: 3, s: 4, t: 4, w: 3, i: 6, a: 4, ld: 7, points: 175),
@@ -1767,7 +1756,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("SKWEEL GNAWTOOTH",
-  solo: true,
   subtitle: "Packmaster of Hell Pit",
   profiles: (
     (name: "Skweel Gnawtooth", m: 6, ws: 5, bs: 3, s: 4, t: 4, w: 2, i: 6, a: 2, ld: 6, points: 85),
@@ -1788,7 +1776,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("GHORITCH",
-  solo: true,
   subtitle: "Castellan of Hell Pit",
   profiles: (
     (name: "Ghoritch", m: 6, ws: 6, bs: 0, s: 5, t: 5, w: 4, i: 5, a: 5, ld: 7, points: 180),
@@ -1804,7 +1791,6 @@ He may use a combination of spells from both Lores. In addition, he knows the _C
 )
 
 #unit("NURGLITCH",
-  solo: true,
   subtitle: "Arch-Plaguelord of Clan Pestilens",
   profiles: (
     (name: "Nurglitch", m: 5, ws: 6, bs: 3, s: 4, t: 5, w: 3, i: 5, a: 3, ld: 7, points: 410),
@@ -1834,7 +1820,6 @@ Pox Rat), *Strength in Numbers, Terror,*
 )
 
 #unit("LORD SKROLK",
-  solo: true,
   subtitle: "Right-Claw of the Arch-Plaguelord",
   profiles: (
     (name: "Lord Skrolk", m: 5, ws: 6, bs: 4, s: 4, t: 5, w: 3, i: 6, a: 4, ld: 7, points: 320),
@@ -1857,7 +1842,6 @@ rule.")))
 )
 
 #unit("MORBUS SANGUIS",
-  solo: true,
   profiles: (
     (name: "Morbus Sanguis", m: 5, ws: 4, bs: 3, s: 4, t: 5, w: 2, i: 5, a: 2, ld: 6, points: 90),
   ),
@@ -1874,7 +1858,6 @@ rule.")))
 )
 
 #unit("IKIT CLAW",
-  solo: true,
   subtitle: "Chief Warlock of Clan Skryre",
   profiles: (
     (name: "Ikit Claw", m: 5, ws: 5, bs: 3, s: 4, t: 4, w: 3, i: 3, a: 2, ld: 7, points: 335),
@@ -1900,7 +1883,6 @@ cables out."), ("6", "Full Power: Ikit may immediately add D3 power dice to the 
 )
 
 #unit("KLAWMUNKAST",
-  solo: true,
   profiles: (
     (name: "Klawmunkast", m: 5, ws: 3, bs: 4, s: 3, t: 3, w: 2, i: 4, a: 1, ld: 6, points: 150),
   ),

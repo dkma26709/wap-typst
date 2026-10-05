@@ -404,7 +404,7 @@ def field_value(key: str, value):
 STAT_KEYS = {"m": "M", "ws": "WS", "bs": "BS", "s": "S", "t": "T", "w": "W",
              "i": "I", "a": "A", "ld": "Ld", "points": "points"}
 
-SETTINGS = ("first", "compact", "solo", "order", "labels", "profiles")
+SETTINGS = ("first", "compact", "order", "labels", "profiles")
 
 
 def profile_row(row: dict) -> dict:
@@ -435,9 +435,8 @@ def build_unit(ev: dict, chapter: str) -> dict:
                   "category": category_of(chapter)}
     if "subtitle" in args:
         unit["subtitle"] = args["subtitle"]
-    for flag in ("solo", "compact"):
-        if args.get(flag):
-            unit[flag] = True
+    if args.get("compact"):
+        unit["compact"] = True
     unit["profiles"] = [profile_row(r) for r in args.get("profiles", [])]
     for key, value in args.items():
         if key in SETTINGS or key == "subtitle":
