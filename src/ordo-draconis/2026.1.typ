@@ -883,16 +883,15 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 )
 
 #unit("GREAT WYRM",
-  before: [
+  lore: [
 The byres are cut into the keep's own rock, and a drake that outgrows its byre
 has to have a new one cut. The ledger records the expense, which is the only
 reason anybody can say how many there are. The Dam never had a byre; she came
 with the mountain.
-
-#profile(
-  (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 5, points: "-"),
-)
   ],
+  profiles: (
+  (name: "Great Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 6, w: 5, i: 3, a: 4, ld: 5, points: "-"),
+  ),
   troop-type: "Monster (Draconid)",
   base-size: "50x100 or 60x100",
   special-rules: "Fly (8), Natural Armour (4+)",
@@ -905,14 +904,13 @@ with the mountain.
 
 #unit("BLOOD KNIGHTS",
   first: true,
-  before: [
+  lore: [
 The knights of the household as the Ordo fields them, which is not as the Bloodlines remember them. Most of a man's power is the years he has had it, and these are the ones who took the blood this century.
-
-#profile(
+  ],
+  profiles: (
   (name: "Blood Knight", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 36),
   (name: "Nightmare", m: 8, ws: 3, bs: 0, s: 4, t: 4, w: 1, i: 2, a: 1, ld: 3, points: ""),
-)
-  ],
+  ),
   unit-size: "5-15",
   troop-type: "Cavalry (Vampire)",
   mount: "Nightmare (Equine)",
@@ -929,13 +927,12 @@ The knights of the household as the Ordo fields them, which is not as the Bloodl
 )
 
 #unit("BLOOD GUARD",
-  before: [
+  lore: [
 The household on foot, who fight that way because the walls are behind them. The same offer, the same century, and no horse.
-
-#profile(
-  (name: "Blood Guard", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 22),
-)
   ],
+  profiles: (
+  (name: "Blood Guard", m: 6, ws: 5, bs: 3, s: 5, t: 4, w: 1, i: 4, a: 1, ld: 8, points: 22),
+  ),
   unit-size: "10-30",
   troop-type: "Infantry (Vampire)",
   base-size: "20x20 or 25x25",
@@ -1100,13 +1097,12 @@ The ones who have had it long enough for it to have finished with them. There is
 )
 
 #unit("VARGHEISTS",
-  before: [
+  lore: [
 The large kind of the keep's own bats, horse-sized and ill-tempered, that the household puts where the fighting will be rather than asking it to arrive anywhere in a hurry. They are not the feral get of the Bloodlines that the rest of the world files under the name, and the order has never seen a reason to say so before the charge goes in.
-
-#profile(
-  (name: "Vargheist", m: 2, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 30),
-)
   ],
+  profiles: (
+  (name: "Vargheist", m: 2, ws: 3, bs: 0, s: 5, t: 4, w: 3, i: 4, a: 3, ld: 5, points: 30),
+  ),
   unit-size: "3-9",
   troop-type: "Monstrous Beast (Chiropter)",
   base-size: "40x40",
@@ -1132,14 +1128,13 @@ The large kind of the keep's own bats, horse-sized and ill-tempered, that the ho
 
 #unit("BLOOD WYRMS",
   first: true,
-  before: [
+  lore: [
 The Grand Master's own wing. Where a Blood Knight is given a horse, the knights of the inner circle are given something older, and the wyrms are alive.
-
-#profile(
+  ],
+  profiles: (
   (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 85),
   (name: "Blood Wyrm", m: 6, ws: 4, bs: 0, s: 5, t: 4, w: 4, i: 3, a: 3, ld: 4, points: ""),
-)
-  ],
+  ),
   unit-size: "3-6",
   troop-type: "Monstrous Cavalry (Vampire)",
   mount: "Blood Wyrm (Draconid)",
@@ -1162,14 +1157,13 @@ _Two things follow from the troop type rather than from anything written here, a
 )
 
 #unit("ELDER WYRM",
-  before: [
+  lore: [
 One of the Dam's oldest get, old before the Bloodlines were, and the knight who talked it into service rather than breaking it. The Dam herself is not this entry and never will be; she carries one man and appears in his.
-
-#profile(
+  ],
+  profiles: (
   (name: "Wyrm Knight", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 210),
   (name: "Elder Wyrm", m: 6, ws: 4, bs: 0, s: 6, t: 5, w: 4, i: 3, a: 4, ld: 5, points: ""),
-)
-  ],
+  ),
   troop-type: "Monstrous Creature (Vampire)",
   mount: "Elder Wyrm (Draconid)",
   base-size: "50x75 or 50x100",
@@ -1184,13 +1178,12 @@ One of the Dam's oldest get, old before the Bloodlines were, and the knight who 
 )
 
 #unit("BLOOD HERALDS",
-  before: [
+  lore: [
 The Sworn the household puts in the air. A keep that arrives where it likes keeps no couriers, and an order that will not shoot has no other reach. So the shops that blacken the plate make wings as well. Only a knight the blood has finished with is measured for a set, which is why there are never many.
-
-#profile(
-  (name: "Blood Herald", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 45),
-)
   ],
+  profiles: (
+  (name: "Blood Herald", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 45),
+  ),
   unit-size: "3-6",
   troop-type: "Monstrous Infantry (Vampire)",
   base-size: "40x40",
@@ -1210,7 +1203,7 @@ _Forty-five is a Sworn Blood Guard at 27, plus Terror, plus what flight costs el
 )
 
 #unit("NECROFEX COLOSSUS",
-  before: [
+  lore: [
 It is not what the name says. Nothing in this army was sewn together, and no
 part of the order's service was made: the keep works a circuit, every ground it
 has stood on had old stone in it before the keep came, and once in a long while
@@ -1218,11 +1211,10 @@ something comes up with it. They are set at the gates of whatever the household
 is holding that season, and when it moves they come down and walk. The
 necromancers will work beside these. They will not work within sight of the one
 in the gate.
-
-#profile(
-  (name: "Necrofex Colossus", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: "*", ld: 8, points: 240),
-)
   ],
+  profiles: (
+  (name: "Necrofex Colossus", m: 6, ws: 3, bs: 0, s: 6, t: 6, w: 6, i: 1, a: "*", ld: 8, points: 240),
+  ),
   troop-type: "Monster (Undead, Animated Construct)",
   base-size: "50x100 or 100x150",
   special-rules: "Regeneration (4+), Undead",
@@ -1276,13 +1268,12 @@ recruit it, and could not have.
 
 #unit("THE PORTER",
   first: true,
-  before: [
+  lore: [
 It stood in the gate of the foundation before there was a keep on it, and the gatehouse was built to fit it, because moving it was priced and declined. When the household rides out it comes down and walks with them, and nobody commands it. The men of the six duchies who have seen it in the line say the keep sent its door.
-
-#profile(
-  (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: "*", ld: 8, points: 280),
-)
   ],
+  profiles: (
+  (name: "The Porter", m: 6, ws: 4, bs: 0, s: 6, t: 7, w: 6, i: 1, a: "*", ld: 8, points: 280),
+  ),
   troop-type: "Monster (Animated Construct)",
   base-size: "50x100 or 100x150",
   equipment: "Polearm, heavy armour",
@@ -1307,14 +1298,13 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
 
 #unit("EMMERICH",
   first: true,
-  before: [
+  lore: [
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
-
-#profile(
+  ],
+  profiles: (
   (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
   (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 6, i: 2, a: 5, ld: 6, points: 320),
-)
-  ],
+  ),
   troop-type: "Infantry (Special Character, Vampire, Blood Dragon)",
   mount: "The Dam (Draconid)",
   base-size: "20x20 or 25x25, or 50x100 on the Dam",
@@ -1358,13 +1348,12 @@ _The Marshal is the book's own grammar for a general and is written the way four
 )
 
 #unit("ANKHARA",
-  before: [
+  lore: [
 The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
-
-#profile(
-  (name: "Ankhara", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 9, points: 160),
-)
   ],
+  profiles: (
+  (name: "Ankhara", m: 6, ws: 6, bs: 5, s: 4, t: 4, w: 2, i: 8, a: 3, ld: 9, points: 160),
+  ),
   troop-type: "Infantry (Special Character, Vampire, Lahmian)",
   base-size: "20x20 or 25x25",
   equipment: "Hand weapon",

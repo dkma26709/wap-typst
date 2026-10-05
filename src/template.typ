@@ -1211,7 +1211,31 @@
 
 // The settings that are the entry itself rather than one of its fields.
 #let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
-                      "before", "after", "labels")
+                      "before", "after", "labels", "art", "lore")
+
+// --- unit art and lore --------------------------------------------------------
+
+// The share of the page column a unit's picture may take. A piece taller than
+// that prints smaller rather than pushing the stat line onto a second page; a
+// wide piece takes the measure and stops well short of it.
+#let ART_HEIGHT = 0.36
+
+// A unit's picture, under the name and over the lore: the full measure wide,
+// or as wide as the height allows, centred. `measure` on an unsized image gives its own proportions, which is
+// all that is needed to choose between the two.
+#let _unit-art(path) = context {
+  let band = _measure-width()
+  let column = page.height - PAGE_MARGIN.top - PAGE_MARGIN.bottom
+  let natural = measure(image(path))
+  let width = calc.min(band, ART_HEIGHT * column * (natural.width / natural.height))
+  block(width: 100%, above: 0.6em, below: 0.9em, align(center, image(path, width: width)))
+}
+
+// The lore under the picture and over the profile: the body face, upright and
+// the full measure, a paragraph or two. Upright because italic is what this
+// book's design notes are set in, and the lore is the book speaking, not the
+// author aside.
+#let _unit-lore(body) = block(width: 100%, above: 0.4em, below: 1.0em, body)
 
 // A named rule bullet - the `- *Impetuous:* ...` the corpus writes by hand - as a
 // record, the shape `magic-item` and `spell` already have. 872 entries carry one
@@ -1337,6 +1361,8 @@
     // It is `namecost` with no cost, the same call a magic item's name is set
     // with, so a subtitle and an item head sit on the same baseline.
     if "subtitle" in args { namecost(args.subtitle, "", above: 0.9em) }
+    if "art" in args { _unit-art(args.art) }
+    if "lore" in args { _unit-lore(args.lore) }
     if "profiles" in args { profile(..args.profiles) }
     if "before" in args { args.before }
     for k in order {

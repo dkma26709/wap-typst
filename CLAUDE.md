@@ -279,6 +279,11 @@ option lines. Markup content is the label over that content verbatim. A field
 needing both — SPECIAL RULES naming four rules inline and then explaining a fifth
 — passes the string and puts the block in the companion `<field>-body`.
 
+An entry may open with a picture and a paragraph: `art:` is a path under
+`/assets/figures/<army>/` and `lore:` is prose, and the template sets them under
+the name and over the profile, the picture no taller than about a third of the
+page. The Ordo Draconis uses both; the converted books use neither.
+
 Four escape hatches, each used deliberately and each greppable: `subtitle:` for
 the run-in line under a special character's name; `order:` for the ~98 entries
 whose source genuinely deviates from the canonical field order; `labels:` where
