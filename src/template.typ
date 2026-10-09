@@ -1662,7 +1662,11 @@
 #let cover(title: "", subtitle: "", art: none) = page(footer: none, {
   v(1fr)
   align(center)[
-    #text(size: 50pt, weight: "bold", tracking: 0.12em)[#upper(title)]
+  // A cover title is centred and ragged: never justified, which on a line of
+  // two words opens a gulf between them, and never hyphenated mid-word. The
+  // subtitle keeps the book's justification, whose squeeze is what fits it.
+    #block[#set par(justify: false)
+      #text(size: 50pt, weight: "bold", tracking: 0.12em, hyphenate: false)[#upper(title)]]
     #v(0.2em)
     #line(length: 42%, stroke: 1.2pt + hair)
     #v(0.4em)
