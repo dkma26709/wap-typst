@@ -31,6 +31,7 @@
   version: "2026.1",
   layout: "army",
   align: "neutral",
+  cover: "covers/ordo-draconis.jpg",
   shelf: "house",
   authored: true,
 )
@@ -40,7 +41,7 @@
 #cover(
   title: "The Ordo Draconis",
   subtitle: "An Army of Infamy for Vampire Counts 3.0 · House Rules 2026.1",
-  art: none,
+  art: "/assets/covers/ordo-draconis.jpg",
 )
 
 #colophon((
@@ -731,6 +732,7 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 = CHARACTERS
 
 #unit("BLOOD DRAGONS",
+  art: "/assets/figures/ordo-draconis/blood-dragons.jpg",
   first: true,
   profiles: (
     (name: "Lord", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 215),
@@ -776,6 +778,7 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
 )
 
 #unit("WIGHT LORDS",
+  art: "/assets/figures/ordo-draconis/wight-lords.jpg",
   profiles: (
     (name: "Wight King", m: 4, ws: 6, bs: 3, s: 5, t: 5, w: 4, i: 4, a: 4, ld: 9, points: 140),
     (name: "Wight Lord", m: 4, ws: 5, bs: 3, s: 5, t: 5, w: 3, i: 4, a: 3, ld: 8, points: 100),
@@ -903,6 +906,7 @@ with the mountain.
 = CORE UNITS
 
 #unit("BLOOD KNIGHTS",
+  art: "/assets/figures/ordo-draconis/blood-knights.jpg",
   first: true,
   lore: [
 The knights of the household as the Ordo fields them, which is not as the Bloodlines remember them. Most of a man's power is the years he has had it, and these are the ones who took the blood this century.
@@ -926,6 +930,7 @@ The knights of the household as the Ordo fields them, which is not as the Bloodl
 )
 
 #unit("BLOOD GUARD",
+  art: "/assets/figures/ordo-draconis/blood-guard.jpg",
   lore: [
 The household on foot, who fight that way because the walls are behind them. The same offer, the same century, and no horse.
   ],
@@ -975,6 +980,7 @@ The household on foot, who fight that way because the walls are behind them. The
 )
 
 #unit("SKELETON HORSEMEN",
+  art: "/assets/figures/ordo-draconis/skeleton-horsemen.jpg",
   profiles: (
     (name: "Skeleton Horseman", m: 4, ws: 2, bs: 2, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 5, points: 9),
     (name: "Skeletal Steed", m: 8, ws: 2, bs: 0, s: 3, t: 3, w: 1, i: 2, a: 1, ld: 3, points: ""),
@@ -1048,6 +1054,7 @@ The household on foot, who fight that way because the walls are behind them. The
 = SPECIAL UNITS
 
 #unit("SWORN BLOOD KNIGHTS",
+  art: "/assets/figures/ordo-draconis/sworn-blood-knights.jpg",
   first: true,
   lore: [
 The ones who have had it long enough for it to have finished with them. There is no ceremony and no promotion; a knight is simply older one year than he was the last, and at some point the household stops correcting men who assume he was always like that.
@@ -1071,6 +1078,7 @@ The ones who have had it long enough for it to have finished with them. There is
 )
 
 #unit("SWORN BLOOD GUARD",
+  art: "/assets/figures/ordo-draconis/sworn-blood-guard.jpg",
   lore: [
 The oldest of the foot. They have had the blood as long as the Sworn on horse, and never had a horse, or gave it up to stand where the walls are. In this household that comes to the same thing. A century standing still makes a man the gate was built to hold. The Blood Guard call them the old men, and are careful where.
   ],
@@ -1092,6 +1100,7 @@ The oldest of the foot. They have had the blood as long as the Sworn on horse, a
 )
 
 #unit("GRAVE GUARD",
+  art: "/assets/figures/ordo-draconis/grave-guard.jpg",
   profiles: (
     (name: "Grave Guard", m: 4, ws: 3, bs: 3, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 6, points: 10),
   ),
@@ -1136,6 +1145,7 @@ The oldest of the foot. They have had the blood as long as the Sworn on horse, a
 )
 
 #unit("VARGHEISTS",
+  art: "/assets/figures/ordo-draconis/vargheists.jpg",
   lore: [
 The large kind of the keep's own bats, horse-sized and ill-tempered, that the household puts where the fighting will be rather than asking it to arrive anywhere in a hurry. They are not the feral get of the Bloodlines that the rest of the world files under the name, and the order has never seen a reason to say so before the charge goes in.
   ],
@@ -1167,6 +1177,7 @@ The large kind of the keep's own bats, horse-sized and ill-tempered, that the ho
 = RARE UNITS
 
 #unit("BLOOD WYRMS",
+  art: "/assets/figures/ordo-draconis/blood-wyrms.jpg",
   first: true,
   lore: [
 The Grand Master's own wing. Where a Blood Knight is given a horse, the knights of the inner circle are given something older, and the wyrms are alive.
@@ -1197,6 +1208,7 @@ _Two things follow from the troop type rather than from anything written here, a
 )
 
 #unit("ELDER WYRM",
+  art: "/assets/figures/ordo-draconis/elder-wyrm.jpg",
   lore: [
 One of the Dam's oldest get, old before the Bloodlines were, and the knight who talked it into service rather than breaking it. The Dam herself is not this entry and never will be; she carries one man and appears in his.
   ],
@@ -1341,6 +1353,7 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
 = SPECIAL CHARACTERS
 
 #unit("EMMERICH",
+  art: "/assets/figures/ordo-draconis/emmerich.jpg",
   first: true,
   lore: [
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
@@ -1392,6 +1405,7 @@ _The Marshal is the book's own grammar for a general and is written the way four
 )
 
 #unit("ANKHARA",
+  art: "/assets/figures/ordo-draconis/ankhara.jpg",
   lore: [
 The Widow of Gisoreux. Sent three times to place herself in a household with no rooms to be placed in, and she has never once reported that the thing cannot be done.
   ],
