@@ -763,7 +763,7 @@ Magic Standard. Ordo Draconis only. The unit carrying this standard never reduce
   - Nightmare +20 points
   - Hellsteed +25 points
   - Abyssal Terror +125 points
-  - Blood Wyrm +125 points
+  - Blood Wyrm +75 points
   - Elder Wyrm +140 points
   - Great Wyrm (Lord only) +215 points
 - One Kastellan may carry the Battle Standard +25 points
@@ -1180,7 +1180,7 @@ The Grand Master's own wing. Where a Blood Knight is given a horse, the knights 
   mount: "Blood Wyrm (Draconid)",
   base-size: "50x75",
   equipment: "Heavy lance, heavy armour, shield",
-  special-rules: "Devastating Charge, Fly (8), The Red Thirst, Vampiric",
+  special-rules: "Devastating Charge, The Red Thirst, Vampiric",
   options: [
 - May upgrade one Wyrm Knight to a Leader +5 points
 - May upgrade one Wyrm Knight to a Musician +5 points
@@ -1190,7 +1190,7 @@ The Grand Master's own wing. Where a Blood Knight is given a horse, the knights 
   notes: [
 - A Blood Wyrm taken as a character mount is a *Monstrous Beast*, so the character becomes *Monstrous Cavalry* and may join a unit of Blood Wyrms.
 
-#note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge and Fly (8) are the whole unit, and the book already has both. Note which half of the model each reaches: Fly is one of the rules the rulebook extends from rider to mount and Devastating Charge is not, so the wyrm flies and the knight alone gains the Attack on the charge: six between them, not seven._
+#note[_No breath weapon, deliberately: the Legion does not shoot, and six of them would have been a battery. Devastating Charge is the whole unit, and the book already has it. Note which half of the model it reaches: it is not one of the rules the rulebook extends from rider to mount, so the knight alone gains the Attack on the charge: six between them, not seven._
 
 _Two things follow from the troop type rather than from anything written here, and both matter. Monstrous Cavalry causes Fear by default and Vampiric causes Fear as well, and the rulebook turns two sources of Fear into *Terror*, so a Blood Wyrm causes Terror without this entry saying so, exactly as the Blood Heralds do. That is a reading rather than a certainty: the Fear rule says two or more different sources and illustrates them with special rules, spells and magic items rather than with troop types. If it is the wrong reading then neither entry causes Terror, so it wants settling once for both. And attacks against a Monstrous Cavalry model use the highest Toughness and Wounds from either rider or mount, so every model in the unit has four Wounds behind a 3+ save._]
   ],
@@ -1375,7 +1375,7 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
   - Nightmare +20 points
   - Hellsteed +25 points
   - Abyssal Terror +125 points
-  - Blood Wyrm +125 points
+  - Blood Wyrm +75 points
   - Elder Wyrm +140 points
   - Great Wyrm +215 points
   - The Dam +320 points
@@ -1558,7 +1558,7 @@ The category is the Empire's, made structural. Inner Circle Knights are upgraded
 
 #field("Blood Wyrms", "")
 
-Priced against the Morbheg Knights, the book's other Rare flying Monstrous Cavalry, at 35 points for a worse rider on a weaker mount with Fly (5), and against the High Elf Drakemaster, which is 200 points for one rider on one drake. Eighty-five is the answer to the second comparison rather than the first.
+Priced against the heavy Monstrous Cavalry that walks, since the wyrms do not fly. Skullcrushers are 80 for a Weapon Skill 5, Strength 4 rider on a three-Wound Juggernaut in Chaos Armour, and Mournfang are 68 for an Ogre on a Strength 5 beast. A Wyrm Knight is the better rider on the better mount, Weapon Skill 6 and Strength 5 over four Wounds, and loses to the Skullcrusher on armour alone. Eighty-five is that price with five on top.
 
 The arithmetic then does the rationing without a special rule. Both the Rare allowance and the ceiling on any single unit are a quarter of the army, so at 2,000 points five Blood Wyrms with a full command are 445 and fit, while six are 530 and do not. A full wing needs a game of 2,120 points or larger, and at that size it is still the only Rare choice the army can afford.
 
@@ -1602,9 +1602,9 @@ They are Undead and the Porter is not, and that one line is the whole difference
 
 #field("The drakes as character mounts", "")
 
-The herd was written as three unit entries and no way for a character to ride any of it, which left the Grand Master's own wing with no Grand Master in it. That was not a decision; it was an omission, and the rulebook fixes it without a special rule. A character on a Monstrous Beast is Monstrous Cavalry, a unit of Blood Wyrms is Monstrous Cavalry, both are flyers and neither has the higher Unit Strength, so a character on a Blood Wyrm may join them and a character on anything else in this book may not.
+The herd was written as three unit entries and no way for a character to ride any of it, which left the Grand Master's own wing with no Grand Master in it. That was not a decision; it was an omission, and the rulebook fixes it without a special rule. A character on a Monstrous Beast is Monstrous Cavalry, a unit of Blood Wyrms is Monstrous Cavalry and neither has the higher Unit Strength, so a character on a Blood Wyrm may join them, and a character on anything else in this book may not: on foot or on a horse he is Unit Strength 1 or 2 against the unit's 3, and on anything larger he is a Monstrous Creature or a Monster and joins nothing.
 
-One hundred and twenty-five for the Blood Wyrm, the Abyssal Terror's price, because that is the animal it sits beside: a Toughness worse, an Initiative better, and the troop type is the difference worth paying for. One hundred and forty for the Elder Wyrm, between the Terror at 125 and the Warriors of Chaos Manticore at 150, which is Monstrous Creature and Fly (8) like ours and carries Weapon Skill 5, Initiative 5, Frenzy and Killing Blow on top; ours has a point of Strength and nothing else, so it belongs under it.
+Seventy-five for the Blood Wyrm. It does not fly, so it sits beside the Juggernaut at 70 and the Demigryph at 40 rather than the Abyssal Terror. A Wound and a point of Strength over the Juggernaut, at the diminishing rate a mount that walks can command. One hundred and forty for the Elder Wyrm, between the Terror at 125 and the Warriors of Chaos Manticore at 150, which is Monstrous Creature and Fly (8) like ours and carries Weapon Skill 5, Initiative 5, Frenzy and Killing Blow on top; ours has a point of Strength and nothing else, so it belongs under it.
 
 Two hundred and fifteen for the Great Wyrm, and this is the new tier. The High Elf Sun Dragon is 235 as a mount for Toughness 5, 5 Wounds, Weapon Skill 5, Leadership 7, Fiery Breath and Natural Armour (3+). Ours trades the Weapon Skill and two of the Leadership for a point of Strength and a point of Toughness, gives up the breath, and drops an armour tier; against the Tomb Kings' Necrolith Bone Dragon, which is 235 for Toughness 6, 6 Wounds, 5 Attacks and no breath either, it is a Wound and an Attack short. Below both, and a Lord's purchase rather than a Kastellan's, which is the gate *Vampire Counts* itself puts on the Zombie Dragon when it writes Count only and Master only.
 
