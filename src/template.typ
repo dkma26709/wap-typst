@@ -1220,10 +1220,11 @@
 // wide piece takes the measure and stops well short of it.
 #let ART_HEIGHT = 0.36
 
-// A unit's picture, under the name and over the lore: the full measure wide,
+// A unit's picture, under the name and over the lore - or, called from
+// `after:`, closing the entry, as the Dam closes Emmerich's: the full measure wide,
 // or as wide as the height allows, centred. `measure` on an unsized image gives its own proportions, which is
 // all that is needed to choose between the two.
-#let _unit-art(path) = context {
+#let unit-art(path) = context {
   let band = _measure-width()
   let column = page.height - PAGE_MARGIN.top - PAGE_MARGIN.bottom
   let natural = measure(image(path))
@@ -1361,7 +1362,7 @@
     // It is `namecost` with no cost, the same call a magic item's name is set
     // with, so a subtitle and an item head sit on the same baseline.
     if "subtitle" in args { namecost(args.subtitle, "", above: 0.9em) }
-    if "art" in args { _unit-art(args.art) }
+    if "art" in args { unit-art(args.art) }
     if "lore" in args { _unit-lore(args.lore) }
     if "profiles" in args { profile(..args.profiles) }
     if "before" in args { args.before }
@@ -1661,10 +1662,10 @@
 // footer applies to this page alone instead of leaking into the whole document.
 #let cover(title: "", subtitle: "", art: none) = page(footer: none, {
   v(1fr)
-  align(center)[
   // A cover title is centred and ragged: never justified, which on a line of
   // two words opens a gulf between them, and never hyphenated mid-word. The
   // subtitle keeps the book's justification, whose squeeze is what fits it.
+  align(center)[
     #block[#set par(justify: false)
       #text(size: 50pt, weight: "bold", tracking: 0.12em, hyphenate: false)[#upper(title)]]
     #v(0.2em)

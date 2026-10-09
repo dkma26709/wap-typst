@@ -1402,6 +1402,7 @@ _Being a Level 2 who uses Necromancy, he also answers The Generals of Undeath in
 
 _The Marshal is the book's own grammar for a general and is written the way four other books write it. Malekith must be the Army General and has Inspiring Presence (6); so, in their own wording, do Khalil al\-Zahir, Salâh ad\-Dîn and Louen of Bretonnia, and two books sell the same effect as a 25\-point Magic Item restricted to the Army General. Inspiring Presence is cumulative, so his own 12" as General and this 6" make eighteen. The rulebook then adds another six inches to any model whose Line of Sight value is 4 or more, which a ridden Monstrous Creature is and a Monster is, so every mount in his list except the horses and the Blood Wyrm puts him at twenty\-four. That is worth knowing before any of them is bought._]
   ],
+  after: [#unit-art("/assets/figures/ordo-draconis/the-dam.jpg")],
 )
 
 #unit("ANKHARA",
