@@ -1072,7 +1072,7 @@ The ones who have had it long enough for it to have finished with them. There is
 
 #unit("SWORN BLOOD GUARD",
   lore: [
-The household's oldest swords on foot, for the same reason the Blood Guard are: the walls are behind them.
+The oldest of the foot. They have had the blood as long as the Sworn on horse, and never had a horse, or gave it up to stand where the walls are. In this household that comes to the same thing. A century standing still makes a man the gate was built to hold. The Blood Guard call them the old men, and are careful where.
   ],
   profiles: (
   (name: "Sworn Blood Guard", m: 6, ws: 6, bs: 3, s: 5, t: 4, w: 1, i: 5, a: 2, ld: 8, points: 27),
