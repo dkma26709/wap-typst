@@ -20,7 +20,7 @@
 // Ours: the Order chapter, the list rules, the reduced Blood Knight profile,
 // the Blood Guard, the Sworn, the Blood Wyrms, the Elder Wyrm, the Great Wyrm,
 // Emmerich,
-// Ankhara, the six Ordo items, the four Ordo powers and the closing two
+// Ankhara, Renard, the six Ordo items, the four Ordo powers and the closing two
 // chapters. See the colophon.
 
 #import "../template.typ": *
@@ -356,7 +356,7 @@ An Ordo Draconis is chosen from this book and no other. Both players should know
 - You may include *one character who is not a Blood Dragon for each Blood Dragon Vampire character* in the army. The only characters in this book are his brothers, the brothers who did not survive the offer, and the men he keeps, pays and does not consult.
 - *Only units with the Vampire or Chiropter keyword count towards the minimum points an army must spend on Core units.* The bats are the lord's own creatures and count as his household does. The Skeleton Warriors, the Skeleton Horsemen and the Zombies may be taken in any number Core permits, and buy you nothing towards the quarter.
 - *No model in the army may take a missile weapon*, and no Magic Item, upgrade or effect may give one to a model that does not have it. Death Shrieks and Breath Weapons are untouched: neither is a missile weapon, and a scream is not a volley.
-- *Emmerich, Marshal of the Ordo Draconis* may only be taken in an Ordo Draconis. *Ankhara, the Widow of Gisoreux* may be taken here or in any army chosen from *Vampire Counts* 3.0.
+- *Emmerich, Marshal of the Ordo Draconis* and *Sir Renard* may only be taken in an Ordo Draconis. *Ankhara, the Widow of Gisoreux* may be taken here or in any army chosen from *Vampire Counts* 3.0.
 - *No other Special Character may be taken.* The von Carsteins intend to deal with him in due course, Lahmia has spent two centuries trying to get inside his household, the Strigoi find him funny, and Walach Harkon has never called him back to Blood Keep. None of them is going to stand in his line.
 - The mounts a Vampire may take are *not Undead*. The Nightmare, the Hellsteed and the Abyssal Terror are living things bound to their riders, and are printed here without that special rule. The Skeletal Steed is what a Wight rides and is left as *Vampire Counts* has it.
 - *The Ordo Draconis is a Non-Aligned force, and is not Bound by Blood with an army chosen from Vampire Counts.* The rulebook's _Alliance & Alignment_ lists do not name it, and it does not take *Vampire Counts*' place among the Forces of Destruction. An Army of Infamy is drawn from a parent book, which is the kinship _Bound by Blood_ is written for, and this one does not claim it: Blood Keep never called him back, and nothing in Sylvania would stand in his line.
@@ -1439,6 +1439,37 @@ _She may be taken in an Ordo Draconis and in any other army chosen from *Vampire
   ],
 )
 
+#unit("RENARD",
+  lore: [
+He was the older man once. Renard was a senior knight of the order when Aymeric of Montfort came to it, and took the Blood after him, so the precedence between them crossed over and has stayed crossed. He still calls him Aymeric. He fights in the older school, with the shield kept, and where the Marshal steps off the line Renard holds it.
+  ],
+  profiles: (
+  (name: "Renard", m: 6, ws: 7, bs: 3, s: 5, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 130),
+  ),
+  troop-type: "Infantry (Special Character, Vampire, Blood Dragon)",
+  base-size: "20x20 or 25x25",
+  equipment: "Hand weapon, heavy armour, shield",
+  special-rules: "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric",
+  special-rules-body: (
+    rule("The Line")[Renard, and any unit he has joined, have the Stubborn special rule.],
+    rule("Captain Renard")[While Renard is the army's Battle Standard Bearer, his Hold Your Ground special rule has a range of 18" rather than 12".],
+  ),
+  options: [
+- May carry the Battle Standard +25 points
+- May take a heavy lance +10 points
+- May be mounted on a Nightmare +20 points
+  ],
+  notes: [
+- If Renard carries the Battle Standard, he can have a Magic Standard with no points limit.
+
+#note[_He is the Kastellan's profile and nothing else of the Kastellan's. He has no Wizard levels and no allowance for Vampiric Powers or Magic Items, and the two rules are the whole of the difference._
+
+_The Line is written for the unit because Stubborn is decided by the majority of a unit's models, so a Stubborn character alone would leave the unit he stood in exactly as it was. Stubborn makes a unit Steadfast whatever the ranks, and that is the gap in this army: its vampire units are small and expensive, and lose the count of ranks against nearly anything they fight. A unit with Renard in it takes its Break tests on its own Leadership however badly the round went._
+
+_He is not the General's alternative so much as his complement. Emmerich's Pass Held gives the unit he joins a second try at a Break test; Renard's unit rarely needs one. As the Battle Standard Bearer he cannot be the General, the rulebook saying so of every Battle Standard Bearer that is not told otherwise, and he cannot refuse a challenge, so the rulebook's penalty for a Battle Standard Bearer who refuses one never reaches him. The standard is always answered._]
+  ],
+)
+
 = WHAT WAS CHANGED
 
 This book is self-contained, so the chapters it shares with *Warhammer Armies Project: Vampire Counts* 3.0 are reproduced from it rather than referred to. Most of that text is untouched. Where this list removes an option, the option is gone from the entry rather than forbidden in a footnote, which makes the book playable straight through and makes the difference invisible in the body. This chapter is where a reader finds it.
@@ -1498,6 +1529,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Great Wyrm", "Does not exist", "Character mount, new, Blood Dragon Lord only"),
   ("Emmerich", "Does not exist", "Special Character, new entry, this list only"),
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
+  ("Renard", "Does not exist", "Special Character, new entry, this list only"),
   ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind, the Standing Ration", "Do not exist", "Magic Items, new"),
   ("Kept Ground, On the Tally, the Long Walk, Drink Deep, Old Enough", "Do not exist", "Vampiric Powers, new"),
   ("The Varghulf", "Special", "Special, without Regeneration (4+), at 110 points"),
@@ -1657,6 +1689,14 @@ The Warrant is the number to argue with. Lending the General's Leadership at 12"
 
 And the one thing deliberately not copied from Isabella: if Emmerich is slain, Ankhara gains no Hatred, no Frenzy and nothing else whatsoever. Neither of them would call that sentiment. Both would call it correct.
 
+#field("Renard", "")
+
+A special character should offer what the hero he is built on cannot, and a Kastellan carrying the Battle Standard offers very little in this army. The standard's Hold Your Ground re-rolls Panic and Break tests, and here Vampiric models take no Panic tests, the Undead pass their Break tests in any case, and the bats are Independent and may not use it. What is left is a second try at a failed Break test for the vampires, which Emmerich already gives the unit he stands in. Renard's answer is that his unit does not fail the test in the first place.
+
+Stubborn is a rule the corpus already prints for a character and his unit, in Tristan's wording in *Bretonnia* and in the Altar of the Horned Rat's in *Skaven*. The extra range of the standard is Ludwig Schwarzhelm's, whose standard gives him Hold Your Ground (18) in total.
+
+One hundred and thirty is the Kastellan's 100 and 5 for the shield, which are the purchases the army list would make, and 25 for the Line, which is what the rulebook charges for the Banner of Defiance and its Stubborn on one unit. Charging it is a judgement rather than a derivation. Emmerich's rules come free, as Walach's do, but the Line is a banner's work that occupies no banner slot and travels with him, and a list that comes out too cheap is the argument with the other players this one would rather not have. The longer reach of the standard is not charged, Kept Ground having set out how little Hold Your Ground buys here. Against the other books' heroes, he sits beside Ludwig at 160 and above Mehmed Agha at 120, who makes his Janissaries Stubborn by way of a talisman.
+
 #field("The Red Thirst", "")
 
 The rule as *Vampire Counts* prints it does nothing for this army. It recovers a Wound on a 5+, and a model with one Wound that loses it is not there to recover anything. Every rank in this list has one Wound: the Blood Knights, the Blood Guard, the Sworn and the Heralds. That book knew it. The Blood Knights and the Lahmian Handmaidens are its only two Vampiric entries at a single Wound, and the only two it never gave the rule to.
@@ -1755,6 +1795,8 @@ The number to watch is not his cost but the Marshal's reach: eighteen inches of 
 
 Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well. The Warrant is the other place to push: lending the General's Leadership at 12" is a Battle Standard's work and a Battle Standard is 25 points in the book, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190. Cutting it and dropping her to about 135 is the honest alternative.
 
+Renard is the stickiest thing in the list, and that is the objection to him. A regiment of Sworn with him in it tests on its own Leadership whatever the combat result, and as the Battle Standard Bearer he re-rolls a failure as well. The smaller version would make the Line hold only while he carries the standard, which would also give the standard something to do in this army.
+
 The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, Emmerich cannot be fielded below 2,760 points, so the largest creature this project has written will almost never be seen. The Great Wyrm is what answers that in practice, being a Lord's mount at 215 that fits from 2,340, and the honest reading is that the Dam has become a trophy for a size of game nobody plays. Either that is what a centrepiece is, or she wanted a price that could reach a table.
 
 And taking the missile weapons out is a real loss of options for very little in return. A handful of entries lose a line each, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
@@ -1769,7 +1811,7 @@ None of the five has a game behind it.
 
 #namecost("WHAT IT TOOK", "")
 
-A chapter of background, four new unit entries with an upgrade path shared between two of them, two special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, one category move, one reduced profile sold at the printed price, and a paragraph in the rulebook.
+A chapter of background, four new unit entries with an upgrade path shared between two of them, three special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, one category move, one reduced profile sold at the printed price, and a paragraph in the rulebook.
 
 That last is the part that was not about this list at all. The rulebook had no notion of an Army of Infamy, so the first one had to introduce the idea as well as the list, and _Choosing Your Army_ is where it went: a book may offer an alternative composition, both players should know which is in use before deployment, and such a composition may change which units count towards the Core minimum. That last clause is the one this list could not have been written without, since Choosing Your Army is where the quarter is set.
 
