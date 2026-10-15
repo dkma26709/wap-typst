@@ -86,7 +86,10 @@ def main() -> None:
     exe = typst()
     files = sorted(p for p in store.iterdir() if p.suffix.lower() in EXTENSIONS)
     stems = {slug(n) for n in entry_names(exe, src)}
-    claimed = [p for p in files if p.stem.removesuffix(".after") in stems]
+    # The template matches the file name exactly, so a claim must too: Renard.JPG
+    # is not renard.jpg to Typst, and counting it would leave the page bare.
+    claimed = [p for p in files if p.suffix in EXTENSIONS
+               and p.stem.removesuffix(".after") in stems]
     unclaimed = [p for p in files if p not in claimed]
     missing = sorted(stems - {p.stem for p in claimed})
 
@@ -94,7 +97,11 @@ def main() -> None:
     print(f"{args.book}: {opening} of {len(stems)} entries open on a picture, "
           f"{len(claimed) - opening} close on one")
     for p in unclaimed:
-        print(f"  no entry is named for {p.name}")
+        stem = p.stem.lower()
+        after = ".after" if stem.endswith(".after") else ""
+        fix = slug(stem.removesuffix(".after")) + after + p.suffix.lower()
+        note = f" - rename it {fix}" if fix.removesuffix(p.suffix.lower()).removesuffix(".after") in stems else ""
+        print(f"  no entry is named for {p.name}{note}")
     for p in claimed:
         dpi = printed_dpi(p)
         if dpi < DPI:
