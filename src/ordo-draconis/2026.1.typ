@@ -1444,7 +1444,7 @@ _She may be taken in an Ordo Draconis and in any other army chosen from *Vampire
 He was the older man once. Renard was a senior knight of the order when Aymeric of Montfort came to it, and took the Blood after him, so the precedence between them crossed over and has stayed crossed. He still calls him Aymeric. He fights in the older school, with the shield kept, and where the Marshal steps off the line Renard holds it.
   ],
   profiles: (
-  (name: "Renard", m: 6, ws: 7, bs: 3, s: 5, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 160),
+  (name: "Renard", m: 6, ws: 7, bs: 3, s: 5, t: 4, w: 2, i: 6, a: 4, ld: 9, points: 170),
   ),
   troop-type: "Infantry (Special Character, Vampire, Blood Dragon)",
   base-size: "20x20 or 25x25",
@@ -1452,7 +1452,7 @@ He was the older man once. Renard was a senior knight of the order when Aymeric 
   magic-items: (
     rule("The Shield Kept")[Magic Armour. Shield. The Parry (6+) this shield gives applies whatever weapon the bearer fights with, mounted or on foot. Every time the bearer makes a successful Parry save, he may immediately make an additional Attack back against the model that struck the blow.],
   ),
-  vampiric-powers: "Master Strike",
+  vampiric-powers: "Master Strike, Old Enough",
   special-rules: "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric",
   special-rules-body: (
     rule("The Line")[Renard, and any unit he has joined, have the Stubborn special rule.],
@@ -1469,6 +1469,8 @@ He was the older man once. Renard was a senior knight of the order when Aymeric 
 #note[_He is the Kastellan's profile and nothing else of the Kastellan's. He has no Wizard levels, and where a Kastellan chooses from the allowance, Renard carries what he has always carried._
 
 _The Shield Kept is how he fights: he holds, waits for the mistake, and then ends it. A shield gives Parry (6+) only alongside a hand weapon, and a heavy lance, once taken, is used at all times, so without the first sentence the lance he prefers in the saddle would take his Parry away. The shield gives the same Parry it always did, and extends it rather than adding a second source. Every blow it turns comes back as an Attack, rolled To Hit like any other, and Master Strike puts Killing Blow on those Attacks as well. Parry cannot be used against the flank or the rear, or against a blow struck at three or more Strength above his own, so the counter belongs to the front rank, and against anything of Strength 8 or more it does nothing at all._
+
+_Old Enough is what the household means by Sworn, and it answers the job he is given. The Battle Standard Bearer is a hundred victory points to whoever kills him in combat, and Martial Honour obliges him to accept every challenge, so the duellist an opponent sends may well carry Killing Blow. Against him it is an ordinary Wound, Heroic Killing Blow included. He has Killing Blow and is immune to it, which is the older school in a sentence._
 
 _The Line is written for the unit because Stubborn is decided by the majority of a unit's models, so a Stubborn character alone would leave the unit he stood in exactly as it was. Stubborn makes a unit Steadfast whatever the ranks, and that is the gap in this army: its vampire units are small and expensive, and lose the count of ranks against nearly anything they fight. A unit with Renard in it takes its Break tests on its own Leadership however badly the round went._
 
@@ -1701,7 +1703,7 @@ A special character should offer what the hero he is built on cannot, and a Kast
 
 Stubborn is a rule the corpus already prints for a character and his unit, in Tristan's wording in *Bretonnia* and in the Altar of the Horned Rat's in *Skaven*. The extra range of the standard is Ludwig Schwarzhelm's, whose standard gives him Hold Your Ground (18) in total.
 
-One hundred and sixty is the Kastellan's 100, 15 for Master Strike, 20 for the Shield Kept and 25 for the Line. The shield is two items the corpus already prices at 10 each: Blademaster sells Parry (6+) on horseback in this list, and the Laminate Shield in *Grand Cathay* sells the Attack back. The Ear of Beauty in *Albion* does both at Parry (5+) for 35, which sets a ceiling for it. Together with the power that is 35 of the Kastellan's 50, which is what the army list would charge him. The 25 for the Line is what the rulebook charges for the Banner of Defiance and its Stubborn on one unit. Charging it is a judgement rather than a derivation. Emmerich's rules come free, as Walach's do, but the Line is a banner's work that occupies no banner slot and travels with him, and a list that comes out too cheap is the argument with the other players this one would rather not have. The longer reach of the standard is not charged, Kept Ground having set out how little Hold Your Ground buys here. Against the other books' heroes, he sits beside Ludwig at 160 and above Mehmed Agha at 120, who makes his Janissaries Stubborn by way of a talisman.
+One hundred and seventy is the Kastellan's 100, 15 for Master Strike, 10 for Old Enough, 20 for the Shield Kept and 25 for the Line. The shield is two items the corpus already prices at 10 each: Blademaster sells Parry (6+) on horseback in this list, and the Laminate Shield in *Grand Cathay* sells the Attack back. The Ear of Beauty in *Albion* does both at Parry (5+) for 35, which sets a ceiling for it. With the two powers that is the Kastellan's whole allowance of 50, which is what the army list would charge him. The 25 for the Line is what the rulebook charges for the Banner of Defiance and its Stubborn on one unit. Charging it is a judgement rather than a derivation. Emmerich's rules come free, as Walach's do, but the Line is a banner's work that occupies no banner slot and travels with him, and a list that comes out too cheap is the argument with the other players this one would rather not have. The longer reach of the standard is not charged, Kept Ground having set out how little Hold Your Ground buys here. Against the other books' heroes, he sits just above Ludwig at 160 and well above Mehmed Agha at 120, who makes his Janissaries Stubborn by way of a talisman.
 
 #field("The Red Thirst", "")
 
@@ -1801,7 +1803,7 @@ The number to watch is not his cost but the Marshal's reach: eighteen inches of 
 
 Ankhara has the objection that every paired character has, which is that half of what she costs is spent on a rule that does nothing unless the other model is bought as well. The Warrant is the other place to push: lending the General's Leadership at 12" is a Battle Standard's work and a Battle Standard is 25 points in the book, which is most of her margin over the base rate, and Sekhar shows that a Lahmian special character can carry no Magic Items at all and still be worth 190. Cutting it and dropping her to about 135 is the honest alternative.
 
-Renard is the stickiest thing in the list, and that is the objection to him. A regiment of Sworn with him in it tests on its own Leadership whatever the combat result, and as the Battle Standard Bearer he re-rolls a failure as well. The smaller version would make the Line hold only while he carries the standard, which would also give the standard something to do in this army.
+Renard is the stickiest thing in the list, and that is the objection to him. A regiment of Sworn with him in it tests on its own Leadership whatever the combat result, and as the Battle Standard Bearer he re-rolls a failure as well. Old Enough takes away the quick answer to that, which is to kill him outright in a challenge. The smaller version would make the Line hold only while he carries the standard, which would also give the standard something to do in this army.
 
 The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, Emmerich cannot be fielded below 2,760 points, so the largest creature this project has written will almost never be seen. The Great Wyrm is what answers that in practice, being a Lord's mount at 215 that fits from 2,340, and the honest reading is that the Dam has become a trophy for a size of game nobody plays. Either that is what a centrepiece is, or she wanted a price that could reach a table.
 
