@@ -9,6 +9,10 @@ _site/
 # machine that builds the print PDF with print.py, and never published.
 art/
 
+# print.py frozen with PyInstaller, for a machine that will not run a script.
+# A local build product; the recipe is in print.py's docstring.
+print.exe
+
 # Per-book extracted artwork. Covers are promoted into assets/covers/, and the
 # parchment background into assets/images/; the rest is not used.
 build/images/

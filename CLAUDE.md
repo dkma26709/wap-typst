@@ -32,6 +32,9 @@ typst compile --ignore-system-fonts --root . src/lizardmen/3.0.typ out/lizardmen
 # The print edition of one book: the same book with its unit pictures laid in
 # from the local, gitignored store art/<army>/, into out/print/. It reports
 # misnamed pictures and any that would print below 300 dpi before compiling.
+# With no book named it builds every book whose army has a folder in art/.
+# print.exe (gitignored, recipe in print.py's docstring) is the same thing for
+# double-clicking on a machine that will not run a script.
 python print.py ordo-draconis/2026.1
 
 # Rebuild the site's pages and build/render.json from the books in src/.
