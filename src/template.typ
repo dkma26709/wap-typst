@@ -1211,20 +1211,43 @@
 
 // The settings that are the entry itself rather than one of its fields.
 #let _UNIT_SETTINGS = ("first", "compact", "profiles", "subtitle", "order",
-                      "before", "after", "labels", "art", "lore")
+                      "before", "after", "labels", "lore")
 
 // --- unit art and lore --------------------------------------------------------
+
+// Unit pictures belong to the print edition, never to a published book, so no
+// book names one. They live in a local store the repository ignores,
+// `art/<army>/`, one file per entry named for it - BLOOD KNIGHTS is
+// blood-knights.jpg - and `<name>.after.jpg` closes the entry instead of opening
+// it. `print.py` compiles a book with two inputs: the store's directory, and the
+// files it found there, because Typst cannot ask whether a file exists. With
+// neither input, which is how the site is built, no picture is ever read.
+#let _PRINT_DIR = sys.inputs.at("art-dir", default: none)
+#let _PRINT_FILES = sys.inputs.at("art-files", default: "").split(",").filter(f => f != "")
+
+// The file stem an entry's picture goes under. `print.py` applies the same rule
+// to tell the store's misnamed files from its matched ones.
+#let _art-slug(name) = lower(name).replace(regex("[^a-z0-9]+"), "-").trim("-")
+
+#let _print-art(name, suffix) = {
+  if _PRINT_DIR == none { return none }
+  let stem = _art-slug(name) + suffix
+  for ext in (".jpg", ".jpeg", ".png") {
+    if stem + ext in _PRINT_FILES { return _PRINT_DIR + "/" + stem + ext }
+  }
+  none
+}
 
 // The share of the page column a unit's picture may take. A piece taller than
 // that prints smaller rather than pushing the stat line onto a second page; a
 // wide piece takes the measure and stops well short of it.
 #let ART_HEIGHT = 0.36
 
-// A unit's picture, under the name and over the lore - or, called from
-// `after:`, closing the entry, as the Dam closes Emmerich's: the full measure wide,
-// or as wide as the height allows, centred. `measure` on an unsized image gives its own proportions, which is
-// all that is needed to choose between the two.
-#let unit-art(path) = context {
+// A unit's picture, under the name and over the lore, or closing the entry, as
+// the Dam closes Emmerich's: the full measure wide, or as wide as the height
+// allows, centred. `measure` on an unsized image gives its own proportions,
+// which is all that is needed to choose between the two.
+#let _unit-art(path) = context {
   let band = _measure-width()
   let column = page.height - PAGE_MARGIN.top - PAGE_MARGIN.bottom
   let natural = measure(image(path))
@@ -1362,7 +1385,8 @@
     // It is `namecost` with no cost, the same call a magic item's name is set
     // with, so a subtitle and an item head sit on the same baseline.
     if "subtitle" in args { namecost(args.subtitle, "", above: 0.9em) }
-    if "art" in args { unit-art(args.art) }
+    let opening-art = _print-art(name, "")
+    if opening-art != none { _unit-art(opening-art) }
     if "lore" in args { _unit-lore(args.lore) }
     if "profiles" in args { profile(..args.profiles) }
     if "before" in args { args.before }
@@ -1373,6 +1397,8 @@
       }
     }
     if "after" in args { args.after }
+    let closing-art = _print-art(name, ".after")
+    if closing-art != none { _unit-art(closing-art) }
   }
 
   // The entry as data: its name and every argument as written, so a reader

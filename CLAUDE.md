@@ -29,6 +29,11 @@ python build.py --site                   # and assemble _site/ for check_site.py
 # local render byte-identical to CI's, --root . resolves the /assets paths.
 typst compile --ignore-system-fonts --root . src/lizardmen/3.0.typ out/lizardmen.pdf
 
+# The print edition of one book: the same book with its unit pictures laid in
+# from the local, gitignored store art/<army>/, into out/print/. It reports
+# misnamed pictures and any that would print below 300 dpi before compiling.
+python print.py ordo-draconis/2026.1
+
 # Rebuild the site's pages and build/render.json from the books in src/.
 # Run this after adding, removing or renaming a book, or changing its
 # #book-meta — CI walks render.json and compiles nothing that is not in it.
@@ -279,10 +284,14 @@ option lines. Markup content is the label over that content verbatim. A field
 needing both — SPECIAL RULES naming four rules inline and then explaining a fifth
 — passes the string and puts the block in the companion `<field>-body`.
 
-An entry may open with a picture and a paragraph: `art:` is a path under
-`/assets/figures/<army>/` and `lore:` is prose, and the template sets them under
-the name and over the profile, the picture no taller than about a third of the
-page. The Ordo Draconis uses both; the converted books use neither.
+An entry may open with a paragraph: `lore:` is prose, set under the name and
+over the profile. **The published books carry no unit pictures** — the site is
+rules and covers only. Pictures belong to the print edition: they live in the
+gitignored store `art/<army>/`, one per entry named for it (`BLOOD KNIGHTS` is
+`blood-knights.jpg`, and `<name>.after.jpg` closes the entry), and only
+`print.py` lays them in, through two `sys.inputs` the site build never passes.
+No book names a picture, so there is no `art:` field; writing one is a compile
+error.
 
 Four escape hatches, each used deliberately and each greppable: `subtitle:` for
 the run-in line under a special character's name; `order:` for the ~98 entries

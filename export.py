@@ -404,7 +404,7 @@ def field_value(key: str, value):
 STAT_KEYS = {"m": "M", "ws": "WS", "bs": "BS", "s": "S", "t": "T", "w": "W",
              "i": "I", "a": "A", "ld": "Ld", "points": "points"}
 
-SETTINGS = ("first", "compact", "order", "labels", "profiles", "art")
+SETTINGS = ("first", "compact", "order", "labels", "profiles")
 
 
 def profile_row(row: dict) -> dict:
