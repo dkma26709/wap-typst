@@ -1332,6 +1332,70 @@ against the base book.
   The Warsphinx becomes the army's anti-rank engine and the Necrosphinx its headsman, where today they are the same model at two prices. The Warsphinx trades Weapon Skill and an Attack for Stomp (2D3+1) that reaches only Line of Sight 3, and its Envenomed Sting becomes one nominated Attack with Poisoned Attacks and Multiple Wounds (D3). The Necrosphinx prints its Attacks at 5 with the hand weapons struck, stomps D3 at reach 3, loses the Sting, and gains Entombed Beneath the Sands as a paid upgrade. Flight leaves all three of the army's heavy flyers -- the Necrosphinx, the Necrolith Bone Dragon and the Khemric Titan -- and nothing is given back.
 ]
 
+#proposal("King Nekhesh's Scorpion Legion wounds back", status: "under discussion",
+  why: [
+  Skeleton Warriors are there to be many, and at Weapon Skill 2 and Strength 3 they are kept for the bodies, never for the damage. The Scorpion Legion were the spears of a king who bred scorpions, and their blades carry the venom. They have Weapon Skill 3, Poisoned Attacks and light armour as standard.
+
+  Against Toughness 3 the poison turns a 4+ To Wound into a 3+, and the extra point of Weapon Skill lifts them off the bottom of the chart. They become a core unit an opponent has to treat as a threat rather than a speed bump.
+  ],
+  against: [
+  It is three small gains rather than one idea, which is acceptable on a core unit and would not be on anything else. _Total War: Warhammer_'s regiment also defends against charges; that half is left out, since the Empire's Grundel's Defenders already make it their job.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and no new rule.
+  ],
+)[
+  One unit of Skeleton Warriors with spears may become King Nekhesh's Scorpion Legion, 0-1 per army, for +2 points per model. They have Weapon Skill 3, Poisoned Attacks and light armour. The name and the venom are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Khepra Guard are rebuilt as fast as they are broken", status: "under discussion",
+  why: [
+  Tomb Guard are the army's elite and rely on what any elite relies on: light armour and a shield, a save that heavy blows take away. The Khepra Guard are bound with the scarab-magic of Khepra and carry no shields. They lose the shield and gain Regeneration (5+), an invulnerable save, so a great weapon or a cannonball that strips their armour does not strip this.
+
+  The job changes from a unit that hopes its armour holds to one that is hard to remove by any blow at all.
+  ],
+  against: [
+  Regeneration cannot be used against Flaming Attacks or Killing Blows, nor against wounds caused by the Unstable rule -- so it does nothing for the crumbling that every Undead unit suffers when it loses a combat. Against a fire-heavy army the Khepra Guard are worse than ordinary Tomb Guard, having given up their shields for nothing.
+  ],
+  cost: [
+  One upgrade record and no new rule.
+  ],
+)[
+  One unit of Tomb Guard may become the Khepra Guard, 0-1 per army, for +3 points per model. They may not take shields, and they gain Regeneration (5+). The name and the regeneration are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Chosen of the Gods shoot on the march", status: "under discussion",
+  why: [
+  Ushabti with greatbows are Strength 5 archers who must stand still to shoot properly: a greatbow's Multiple Shots (2) only applies in a turn the model has not moved. The Chosen of the Gods keep Multiple Shots (2) when they move, and their greatbows have Armour Piercing (1).
+
+  Arrows of Asaph already lets Ushabti ignore every shooting modifier that is not from a spell or magic item, including the \-1 for Multiple Shots. So the Chosen walk forward and put two Strength 5 arrows each into whatever they choose, every turn, at their full Ballistic Skill.
+  ],
+  against: [
+  This is strong. A unit of six moving and shooting twelve Strength 5 armour-piercing arrows a turn with no modifiers is a gunline on legs, and the price has to say so.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Ushabti armed with greatbows may become the Chosen of the Gods, 0-1 per army, for +8 points per model. Their greatbows have Armour Piercing (1) and keep Multiple Shots (2) in a turn they moved. The name and the arrows that split in the air are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("Usirian's Legion of the Netherworld walks through walls", status: "under discussion",
+  why: [
+  Every Skeleton in the book is a body that can be cut down. Usirian's Legion are warriors dragged back from the underworld half-made: they are Ethereal. That gives them Magical Attacks and a Magical Ward (3+), and lets them treat all terrain as open ground.
+
+  The job is entirely new for the army: an infantry unit that ordinary blows barely touch and that walks straight through the wood or the building the enemy hid behind. They remain Undead and Animated Constructs, so they still cannot march without the Hierophant and still crumble when they lose.
+  ],
+  against: [
+  A 3+ ward on a 4-point body is enormous, and the unit is capped at 20 models so that it stays a spearhead rather than a battle line. Even so, +6 points a model may be too little, and this is the regiment most likely to need repricing after the first game.
+  ],
+  cost: [
+  One upgrade record and no new rule. The unit-size cap is the only new restriction.
+  ],
+)[
+  One unit of 10-20 Skeleton Warriors may become Usirian's Legion of the Netherworld, 0-1 per army, for +6 points per model. They are Ethereal. The name and the ethereal bodies are both taken from the Legion of Legend in _Total War: Warhammer_.
+]
+
 = VAMPIRE COUNTS
 
 Proposals for #emph[Vampire Counts 3.0]. The army has no House edition, so these are against the base book.
