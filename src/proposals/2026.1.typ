@@ -1017,6 +1017,44 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
   Each of the seven Lizardmen monsters would state its own Line of Sight, its own number of Stomps and its own reach, in place of the Line of Sight 5 and Stomp (D6) the Monsters troop type gives them all -- and each would be given the one thing it is for. The Carnosaur returns to Strength 7 and pounces; the Stegadon trades Attacks for weight; the Bastiladon halves the Multiple Wounds that reach it; the Arcanadon becomes the tallest model on the table; the Troglodon poisons rather than kills; the Coatl becomes a Monstrous Creature that treads on nothing; and the Dread Saurian gains Wounds, reach and a roar. The troop type keeps its defaults and stops being the last word.
 ]
 
+= OGRE KINGDOMS
+
+Proposals for #emph[Ogre Kingdoms 3.1], and for the House edition of it where one stands.
+
+#proposal("The Sky-Striders bring the cold down with them", status: "under discussion",
+  why: [
+  Mournfang Cavalry hit hard and late. Both rider and beast are Initiative 2, so against almost anything with a sword they take the enemy's blows first and strike back with what is left. The Sky-Striders carry the frost of the high peaks: they have Ice Attacks, so every enemy model in base contact with them is subject to Always Strikes Last.
+
+  That turns the order of the fight around. The Mournfang still strike at Initiative 2, but the enemy now strikes after them, so the charge lands before the knights or elves it hits can answer.
+  ],
+  against: [
+  Striking first is worth a great deal on a unit with Strength 5 beasts and Impact Hits, and the rule works in every round, not only on the charge. The Yhetees carry Ice Attacks at 38 points a model as monstrous infantry, and this should cost well above the token rate the other regiments pay.
+
+  An enemy that already strikes last, or has Immunity (Ice Attacks), loses nothing. That includes every enemy within 6" of a friendly Thundertusk, whose Numbing Chill already makes them strike last, so the two do not stack.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and no new rule.
+  ],
+)[
+  One unit of Mournfang Cavalry may become the Sky-Striders, 0-1 per army, for +10 points per model. They gain Ice Attacks. The name and the frost are both taken from the regiment in _Total War: Warhammer_, whose attacks leave their target Frostbitten.
+]
+
+#proposal("The Boglars of the Mad Marshes throw dirty knives", status: "under discussion",
+  why: [
+  Gnoblars are Beneath Contempt -- Expendable, even to each other -- and a Groinbiter's Strength 2 wounds Toughness 3 on a 5+. A screen of them is there to be killed in the right place. The Boglars poison their blades: Poisoned Attacks is +1 To Wound, so the same knife wounds on a 4+, and a screen that skirmishes with something actually hurts it.
+  ],
+  against: [
+  It is still Strength 2, and armour is untouched -- Poisoned Attacks modifies the roll To Wound and nothing else. Against a Toughness 4 target the knives go from 6+ to 5+, which is real, but it is still a gnoblar.
+
+  _Total War: Warhammer_'s Boglars also regenerate. That half is left out: a regenerating screen is a different job, and a stranger one.
+  ],
+  cost: [
+  One upgrade record and no new rule.
+  ],
+)[
+  One unit of Groinbiters armed with throwing weapons may become the Boglars of the Mad Marshes, 0-1 per army, for +1 point per model. They gain Poisoned Attacks. The name and the poison are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = ORCS & GOBLINS
 
 Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where one stands.
