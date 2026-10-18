@@ -850,9 +850,11 @@ Proposals for #emph[The Empire 3.1], and for the House edition of it where one s
   Regeneration may not be used against Flaming Attacks, and Regeneration is named in 28 of the current army books. None of the Empire's war machines is printed with Flaming Attacks: the Helstorm hits hard and the Regenerating target saves against it like anything else.
 
   Flaming Attacks bring two smaller things with them. They cause Fear in War Beasts, Cavalry, Chariots and Flammable creatures, with \-1 Leadership on any Panic test the fire causes, and a Flammable target lets the attacker re-roll failed To Wound rolls.
+
+  The Sunmaker also carries a fourth rack. Where a Helstorm scatters three templates from its target position, the Sunmaker scatters four, on the same artillery dice, so the fire covers more of the unit it lands on.
   ],
   against: [
-  Against an army with nothing that regenerates or burns, this is a Helstorm with a Fear effect on horses. Total War's Sunmaker also fires more rockets, and that half is left out, because a battery that is simply better is not a regiment with a job.
+  Against an army with nothing that regenerates or burns, the fire is only a Fear effect on horses, and what remains is a Helstorm with one more template -- a third more hits for the price.
 
   The Great Cannon is the better-known machine and would carry the fire as easily. It is left to the Dwarfs, whose engineers are the obvious home for a renowned crew, and the Empire's renown stays in rockets and handguns.
   ],
@@ -860,7 +862,7 @@ Proposals for #emph[The Empire 3.1], and for the House edition of it where one s
   One upgrade record and no new rule. A flat price, as a war machine has no models to price by.
   ],
 )[
-  One Helstorm Rocket Battery may become the Sunmaker, 0-1 per army, for +15 points. Its rockets gain the Flaming Attacks special rule, so Regeneration cannot be used against them. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+  One Helstorm Rocket Battery may become the Sunmaker, 0-1 per army, for +35 points. It scatters four templates rather than three, and its rockets gain the Flaming Attacks special rule, so Regeneration cannot be used against them. The name, the fire and the extra rockets are all taken from the regiment in _Total War: Warhammer_.
 ]
 
 = GRAND CATHAY
@@ -1103,6 +1105,24 @@ Proposals for #emph[Ogre Kingdoms 3.1], and for the House edition of it where on
   ],
 )[
   One unit of Groinbiters armed with throwing weapons may become the Boglars of the Mad Marshes, 0-1 per army, for +1 point per model. They gain Poisoned Attacks. The name and the poison are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Snowhorn of Mourn strikes before anything can answer it", status: "under discussion",
+  why: [
+  A Stonehorn hits like a landslide and late: it is Initiative 2, so an enemy in base contact usually strikes it first. The Snowhorn is a Stonehorn grown out of the glaciers, and it gains Ice Attacks -- every enemy model in base contact with it is subject to Always Strikes Last. Its Frenzied Attacks and Earth-shattering Charge now land before the knights or the monster it hit can reply.
+
+  The Thundertusk already chills the air around it: its Numbing Chill makes every enemy unit within 6" strike last. The Snowhorn is the other half of the same cold -- not an aura that slows a whole flank, but a single beast that wins the exchange in front of it.
+  ],
+  against: [
+  A Stonehorn is Toughness 6 with Natural Armour (3+), and its Stone Skeleton halves wounds from Multiple Wounds. Making it strike first as well removes the one window an enemy had, which was to hurt it before it hurt them, and the price has to carry that.
+
+  Beside a Thundertusk the two do not stack: an enemy already striking last from the Numbing Chill loses nothing more. Nor does anything with Immunity (Ice Attacks).
+  ],
+  cost: [
+  One upgrade record and no new rule.
+  ],
+)[
+  One Stonehorn may become the Snowhorn of Mourn, 0-1 per army, for +40 points. It gains Ice Attacks. The name and the frost are both taken from the regiment in _Total War: Warhammer_.
 ]
 
 = ORCS & GOBLINS
