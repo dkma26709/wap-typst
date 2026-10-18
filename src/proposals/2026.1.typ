@@ -1123,18 +1123,18 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
 
 #proposal("The Pahuax Sentinels drop rocks that break armour", status: "under discussion",
   why: [
-  Terradon Riders drop rocks once a game: D3 Strength 4 hits per Terradon on a unit they flew over, which is enough to thin chaff and little else. The Pahuax Sentinels carry the sundering stones of their temple. Their Drop Rocks cause 2D3 hits per Terradon in place of D3, at Strength 5 with Magical Attacks, and the riders and their mounts have a Magical Ward (6+).
+  Terradon Riders drop rocks once a game: D3 Strength 4 hits per Terradon on a unit they flew over, which is enough to thin chaff and little else. The Pahuax Sentinels carry the sundering stones of their temple. Their Drop Rocks cause D3+1 hits per Terradon in place of D3, at Strength 5 with Magical Attacks, and the riders and their mounts have a Magical Ward (6+).
 
-  It is still once a game. What changes is what the rocks are for: a unit of six puts around twenty-four Strength 5 hits onto a unit of knights or a war machine's crew, and the Magical Attacks reach through a ward.
+  It is still once a game. What changes is what the rocks are for: a unit of six puts around eighteen Strength 5 hits onto a unit of knights or a war machine's crew, never fewer than twelve, and the Magical Attacks make any ward a point worse.
   ],
   against: [
-  Twelve D3 rolled at once is a large swing either way, and an opponent who sees the Sentinels coming will keep his best unit out from under their flight path. The ward is small, and mostly there so that the Sentinels survive the turn after they drop.
+  The +1 takes the worst of the swing out of the drop, so it is a weapon that can be planned around, and an opponent who sees the Sentinels coming will keep his best unit out from under their flight path. The ward is small, and mostly there so that the Sentinels survive the turn after they drop.
   ],
   cost: [
   One upgrade record. Drop Rocks keeps its wording; only its number of hits, its Strength and its Magical Attacks change.
   ],
 )[
-  One unit of Terradon Riders may become the Pahuax Sentinels, 0-1 per army, for +8 points per model. Their Drop Rocks cause 2D3 Strength 5 hits per Terradon with Magical Attacks, and the unit has a Magical Ward (6+). The name and the sundering rocks are both taken from the regiment in _Total War: Warhammer_.
+  One unit of Terradon Riders may become the Pahuax Sentinels, 0-1 per army, for +6 points per model. Their Drop Rocks cause D3+1 Strength 5 hits per Terradon with Magical Attacks, and the unit has a Magical Ward (6+). The name and the sundering rocks are both taken from the regiment in _Total War: Warhammer_.
 ]
 
 = OGRE KINGDOMS
