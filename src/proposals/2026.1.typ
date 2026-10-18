@@ -731,6 +731,88 @@ Proposals for #emph[The Empire 3.1], and for the House edition of it where one s
   The Griffon loses its Natural Armour (6+), which only ever worked against Strength 3, and gains Weapon Skill 6, Initiative 6 and Devastating Charge, with *The Stoop* giving it +1 Initiative more in a turn it charges -- so it strikes before 92% of the corpus when it dives and hits harder for having aimed. Four invisible upgrades are struck and the two you can see on the model, barding and Two Heads, survive. Neither Griffon has a Stomp. The Imperial Griffon becomes a Monstrous Creature while keeping its fifth Wound and Strength 6, leaving the Empire fielding no Monster at all. 140 and 195 points.
 ]
 
+#proposal("Grundel's Defenders take the charge out of a charge", status: "under discussion",
+  why: [
+  Spearmen are the cheapest State Troops in the book at 3.5 points, and pikes reach further, but no unit in the Empire's list takes anything away from a charge. A lance keeps what it gains on the charge, Devastating Charge still adds its Attack, and the charger still takes its +1 combat result.
+
+  The rulebook already has the sentence for this, written for war machines: enemies charging one lose all charge bonuses, including those from special rules. A regiment drilled to receive horse is the same idea carried by men with shields, and it gives the Spearmen a job the State Troops do not otherwise have.
+  ],
+  against: [
+  It is conditional three times over. The Defenders must be charged, in the front, and must Hold. A flank charge goes straight past the rule, and an opponent who sees the regiment can charge something else -- which is arguably the job done, and arguably a rule that never fires.
+
+  It also inherits the war-machine sentence's reading. Whether Impact Hits count as a charge bonus is settled wherever that sentence is settled, and not here.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter shaped like the Knightly Orders, and no new rule: the war machine's sentence, narrowed to the front arc and the Hold reaction.
+  ],
+)[
+  One unit of Spearmen with shields may become Grundel's Defenders, 0-1 per army, for +1 point per model. When they choose Hold against a charge to their front, the chargers lose all charge bonuses, including those from special rules. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Silver Bullets shoot what the State Troops cannot touch", status: "under discussion",
+  why: [
+  The enemies the Empire most fears are the ones its gunline is worst against. An Ethereal unit has a Magical Ward (3+), and Strength and armour piercing are both wasted on an invulnerable save. No unit in the book is printed with magical guns. Three special characters' weapons and the Luminark's bound spell shoot magically, and a Warrior Priest's _Soulfire_ lends Magical Attacks to the unit he is with, for a turn, if the prayer is answered.
+
+  Magical Attacks in the 3.11 rulebook are a \-1 to the target's Magical Ward. Against a 3+ ward that turns one wound in three getting through into one in two.
+  ],
+  against: [
+  It depends on the matchup. Against armies built on wards the regiment earns its price, and against most armies it is a unit of Handgunners that cost more. A list built for an unknown opponent may never take it, which is a fair reason to keep the price low.
+
+  A Warrior Priest standing in ordinary Handgunners already does this on a turn his prayer is answered, and brings Flaming Attacks with it. The regiment is the same effect every turn, without a character spent on it.
+  ],
+  cost: [
+  One upgrade record and no new rule. The price follows the Knights of the Everlasting Light, who pay 1 point a model for Magical Attacks and a re-rolled armour save in close combat, with drawbacks attached.
+  ],
+  examples: [
+  *Wounds that get through after the ward, per wounding hit:*
+
+  #minitable(("Magical Ward", "Handgunners", "The Silver Bullets"), ("3+, an Ethereal unit", "1 in 3", "1 in 2", "4+", "1 in 2", "2 in 3", "5+", "2 in 3", "5 in 6"))
+  ],
+)[
+  One unit of Handgunners may become the Silver Bullets, 0-1 per army, for +1 point per model. They gain the Magical Attacks special rule, so every Magical Ward they shoot at is a point worse. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("Zintler's Reiksguard break the block they hit", status: "under discussion",
+  why: [
+  Knights fail in one well-known way. They charge a deep block, win the fight, and the block is Steadfast, so it tests on its own Leadership whatever the result was and usually stays. A charge can win every round and still never break anything.
+
+  Total War gives its Royal Altdorf Gryphites a charge that costs the target Leadership as though it had been hit in the flank. Here that is a single point: a Steadfast unit Zintler's Reiksguard charged takes its Break test that turn at \-1 Leadership. Steadfast ignores negative combat resolution modifiers, and this is not one, so it applies.
+  ],
+  against: [
+  It is deliberately small. A Leadership 9 block still holds nearly three times in four, and the regiment has to win the fight before any of this matters. If play shows it is too timid, \-2 is the next step and the obvious one.
+
+  A Stubborn unit is always Steadfast, so it suffers this too. That is consistent, but it makes the regiment a rare answer to a Stubborn block, and it should be priced as one.
+  ],
+  cost: [
+  One upgrade record, for a unit already upgraded to Reiksguard Knights, and one line of rule. The regiment keeps the Order's Stubborn and its restrictions.
+  ],
+  examples: [
+  *A Steadfast unit's chance of passing its Break test:*
+
+  #minitable(("Leadership", "Charged by Knights", "Charged by Zintler's", "Change"), ("7", "58.3%", "41.7%", "-16.7", "8", "72.2%", "58.3%", "-13.9", "9", "83.3%", "72.2%", "-11.1", "10", "91.7%", "83.3%", "-8.3"))
+  ],
+)[
+  One unit of Reiksguard Knights may become Zintler's Reiksguard, 0-1 per army, for +1 point per model. In a turn they charge, a Steadfast unit they charged takes its Break test at \-1 Leadership. The name is the regiment's in _Total War: Warhammer_; the rule is taken from its Royal Altdorf Gryphites.
+]
+
+#proposal("The Sunmaker burns what will not stay dead", status: "under discussion",
+  why: [
+  Regeneration may not be used against Flaming Attacks, and Regeneration is named in 28 of the current army books. None of the Empire's war machines is printed with Flaming Attacks: the Helstorm hits hard and the Regenerating target saves against it like anything else.
+
+  Flaming Attacks bring two smaller things with them. They cause Fear in War Beasts, Cavalry, Chariots and Flammable creatures, with \-1 Leadership on any Panic test the fire causes, and a Flammable target lets the attacker re-roll failed To Wound rolls.
+  ],
+  against: [
+  Against an army with nothing that regenerates or burns, this is a Helstorm with a Fear effect on horses. Total War's Sunmaker also fires more rockets, and that half is left out, because a battery that is simply better is not a regiment with a job.
+
+  The Great Cannon is the better-known machine and would carry the fire as easily. It is left to the Dwarfs, whose engineers are the obvious home for a renowned crew, and the Empire's renown stays in rockets and handguns.
+  ],
+  cost: [
+  One upgrade record and no new rule. A flat price, as a war machine has no models to price by.
+  ],
+)[
+  One Helstorm Rocket Battery may become the Sunmaker, 0-1 per army, for +15 points. Its rockets gain the Flaming Attacks special rule, so Regeneration cannot be used against them. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = GRAND CATHAY
 
 Proposals for #emph[Grand Cathay 3.0]. The army has no House edition, so these are against the base book.
