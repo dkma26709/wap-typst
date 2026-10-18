@@ -1067,6 +1067,95 @@ Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where o
   The *Wyvern* becomes a Monstrous Creature at four Wounds, loses blanket Poisoned Attacks for a *Venom-drenched Tail* -- one additional Attack with Poisoned Attacks and Multiple Wounds (D3) -- trades its Stomp for *Impact Hits (D3)* since landing happens once, gains *Voracious* so that it stops to feed rather than pursuing, and falls from 160 to 95. The *Arachnarok Spider* gains *Ensnaring Web*, a damageless Quick Shot attack at 12" that costs the target two Movement and its ability to fly, and which can shorten a charge it reacts to; its Venom Surge loses its restriction to large targets, its Stomp drops to 2, and it rises to 265. The *Rogue Idol of Gork* exchanges its Magical Ward for *Stone Construct* at Natural Armour (5+), and gains *Embodiment of the Waaagh!*, repairing itself for each Orc unit fighting near it and coming apart when there are none, at 240 unchanged.
 ]
 
+#proposal("Da Warlord's Boyz open the tins", status: "under discussion",
+  why: [
+  Night Goblins are there to be many. At Strength 3 they take nothing off a save, so a unit of knights or Chaos Warriors can stand in front of sixty of them for a whole game. The book's answers are to bring something else -- Fanatics, Netters to blunt the enemy, Little Big 'Uns for one harder round -- and none of them makes the goblins themselves hurt armour.
+
+  Armour Piercing (1) does that, every round and not only the first, which is what keeps it clear of the Little Big 'Uns' Mighty Blow.
+  ],
+  against: [
+  It is a small number on a weak blow. Against a 3+ save it turns one wound in three into one in two, and the goblins still have to hit at Weapon Skill 2 first. It makes the mob a slow grinder, not a threat, and that may read as too little to be worth a name.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and no new rule.
+  ],
+  examples: [
+  *Wounds that get through the armour, per wounding hit at Strength 3:*
+
+  #minitable(("Armour save", "Night Goblins", "Da Warlord's Boyz"), ("3+", "1 in 3", "1 in 2", "4+", "1 in 2", "2 in 3", "5+", "2 in 3", "5 in 6"))
+  ],
+)[
+  One unit of Night Goblin Gitz may become Da Warlord's Boyz, 0-1 per army, for +1 point per model. They gain Armour Piercing (1). The name and the trick, blades that wear armour down, are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Hammer of Gork blinds what it lands on", status: "under discussion",
+  why: [
+  A Rock Lobba removes models. The army's own infantry is Weapon Skill 2 and 3, so what it most needs from a stone thrower is not one more dead elf but a unit of elves that fights worse when the Boyz arrive.
+
+  The book already prices this shape. The Arachnarok's Flinger is a stone thrower whose hit leaves the target worse until the end of its next turn, at +20 points. The Hammer of Gork does the same with one penalty in place of five.
+  ],
+  against: [
+  A stone thrower scatters, and a penalty that lands on the wrong unit, or on nothing, does nothing at all. The rule only pays when the throw lands on the unit the army is about to fight, which asks for a plan a goblin war machine rarely gets.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule, worded on the Flinger's.
+  ],
+)[
+  One Rock Lobba may become the Hammer of Gork, 0-1 per army, for +20 points. A unit hit by it suffers \-1 To Hit, in close combat and with shooting, until the end of its next turn. The name and the trick are both taken from the regiment in _Total War: Warhammer_, whose stones leave their target Blinded.
+]
+
+#proposal("The Broken Tusks Mob go looking for something big", status: "under discussion",
+  why: [
+  An Orc army meets large things with large things -- Giants, Trolls, an Arachnarok -- and its cavalry does what all cavalry does, which is hit infantry. The Broken Tusks are Boar Boy Big 'Uns who hunt the biggest thing on the field: +1 To Hit in close combat against anything with a Line of Sight value of 3 or more, which is Monstrous Cavalry and Monstrous Creatures at 3 and Monsters at 5.
+
+  Weapon Skill 4 against Weapon Skill 4 hits on a 4+, and this makes it a 3+: a third more hits, where they are needed most.
+  ],
+  against: [
+  At Line of Sight 2 the rule would cover every knight and chariot as well. That is a different regiment, anti-cavalry rather than anti-large, and a much stronger one, since cavalry is in every army and monsters are not. Set at 3, the regiment does nothing against an army with no large models, which is the usual cost of a specialist.
+
+  _Total War: Warhammer_'s Broken Tusks Mob gains only Encourage over its base unit, so the job here is ours and only the name is borrowed.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The thresholds are the rulebook's own Line of Sight values, so nothing new needs defining.
+  ],
+)[
+  One unit of Boar Boy Big 'Uns may become the Broken Tusks Mob, 0-1 per army, for +1 point per model. They gain +1 To Hit in close combat against models with a Line of Sight value of 3 or more.
+]
+
+#proposal("The Krimson Killerz carry an axe in each hand", status: "under discussion",
+  why: [
+  Black Orcs are the army's hammer, and _Armed to da Teef_ makes them pick a weapon each round: the great weapon to hit harder, or a second choppa to hit more often. The Krimson Killerz are the Black Orcs who stopped choosing. While using great weapons they gain +1 Attack, so they strike with the great weapon's Strength and Mighty Blow and three Attacks each.
+
+  This pushes the unit further in the direction it already goes rather than giving it a new one, and that is deliberate. Black Orcs are what the army is known for, and their regiment should be the best version of them.
+  ],
+  against: [
+  It is the closest thing in this set to a better copy. It changes how much the unit kills, not what it does, and a rank of Black Orcs at Strength 5 with three Attacks each is a great deal of killing for 16 points a model, so the price matters more here than anywhere else in the chapter.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The bonus is lent rather than built from a second weapon, so _Armed to da Teef_ and the weapon profiles are untouched.
+  ],
+)[
+  One unit of Black Orcs armed with great weapons may become the Krimson Killerz, 0-1 per army, for +2 points per model. While using their great weapons they gain +1 Attack. The name and the two axes are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Arachnarok Queen brings her brood", status: "under discussion",
+  why: [
+  The Arachnarok is a war platform: eight goblins, their bows, and a Flinger or a shrine on its back. The Queen is the spider herself, larger and trailing the little ones. She has ten Wounds in place of eight, and she does for the Spider Swarms what the Bastiladon's Ark of Sotek does for the Lizardmen's Jungle Swarms, worded the same way.
+
+  At the end of each friendly turn, nominate a unit of Spider Swarms within 6" of her and roll a D6. On a 4+ that unit gains one base, even beyond its starting size; a base that cannot be placed is lost. In any friendly Shooting phase, even if she marched, charged or is in combat, she may spit: every enemy unit within D6" takes 2D6 Strength 2 hits, distributed as for shooting.
+  ],
+  against: [
+  The brood needs a unit of Spider Swarms to feed, so the Queen asks for a second purchase before she does what she is for, as the Ark does. There is no cap, on the reading that the later bases arrive too late to matter, but a Queen beside a large Swarm unit early in a long game will grow it steadily.
+
+  She gives up the Flinger and the Spidershrine. A spider carrying all three would be a different regiment.
+  ],
+  cost: [
+  One upgrade record. Both rules are the Ark of Sotek's, already printed in the Lizardmen book, with Spider Swarms in place of Jungle Swarms.
+  ],
+)[
+  One Arachnarok Spider may become the Arachnarok Queen, 0-1 per army, for +40 points. She has 10 Wounds, adds a base to a nearby Spider Swarms unit on a 4+ at the end of each friendly turn, and may spit 2D6 Strength 2 hits at every enemy unit within D6". She may not take the Flinger or the Catchweb Spidershrine. She is larger, and spawns spiders, in _Total War: Warhammer_ too.
+]
+
 = TOMB KINGS
 
 Proposals for #emph[Tomb Kings 3.1]. The army has no House edition, so these are
