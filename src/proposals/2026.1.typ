@@ -550,6 +550,56 @@ Proposals for #emph[Chaos Dwarfs 3.0]. The army has no House edition, so these a
   The Kolossus's heavy armour becomes Natural Armour (4+) at the same value, because its plating is part of the machine -- but not the unstrippable kind a stone construct gets, since plate is still plate. *Overdrive Switch* stops being a twenty-point option and becomes *The Furnace of Hashut*: declare nought to three Draughts each turn for +1 Attack each, then roll a D6 and take a Strength 6 hit per Draught if it beats the Kolossus's current Wounds. A new rule, *Wreathed in Fire*, burns any enemy model that rolls a natural 1 To Hit against it. Its Stomp falls to one at reach 2. 250 points, unchanged.
 ]
 
+#proposal("Oglah Khan's Wolfboyz let nothing get away", status: "under discussion",
+  why: [
+  Wolf Raiders are Fast Cavalry with a cruel streak already written in: _Backstabbers_ hurts a unit they broke, and _Cowardly Despoilers_ rewards a charge into a flank or rear. What they lack is the catch. A broken enemy rolls its flee distance against their pursuit, dice for dice, and gets away whenever it rolls higher.
+
+  Oglah Khan's riders wear the Pelt of Wulfag. An enemy unit that flees from combat with them, or flees as a charge reaction to their charge, rolls one fewer D6 for its flee distance, to a minimum of one. The fleeing unit is a dice short against their pursuit, and is usually caught.
+  ],
+  against: [
+  It only matters once something flees, so against an army that holds its nerve -- Stubborn blocks, Unbreakable units, the Undead -- it does nothing at all.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule.
+  ],
+)[
+  One unit of Wolf Raiders may become Oglah Khan's Wolfboyz, 0-1 per army, for +2 points per model. An enemy unit fleeing from combat with them, or from their charge, rolls one fewer D6 for its flee distance, to a minimum of one. The name and the Pelt are both taken from the regiment in _Total War: Warhammer_, which slows the enemies it routs.
+]
+
+#proposal("The Granite Guard and Hashut's Dark Ravagers no longer wait for their masters", status: "under discussion",
+  why: [
+  The book already has two regiments of renown and does not call them that. The Granite Guard are Razers who hold as though behind a wall -- they count as fighting behind a defended obstacle in the first round of close combat, and suffer no \-1 To Hit when they Stand & Shoot. Hashut's Dark Ravagers are Bull Centaur Renders with Devastating Charge, a second hand weapon and throwing axes. Each is open only to an army that includes its master, Astragoth Ironhand and Shar'tor the Executioner.
+
+  Both are designed, both give their base unit a job it lacks, and both are among the units the army is known for. They should be available to an army without the character, as a Regiment of Renown.
+  ],
+  against: [
+  Each regiment is part of why its character is worth taking, and opening it up weakens that draw. The answer here is the price: with the character in the army, the existing upgrade stands at the existing price, and without him the regiment is 0-1 and costs more.
+  ],
+  cost: [
+  Two upgrade records, each restating a rule the book already prints, and a sentence on each character's entry saying his upgrade is the cheaper way to the same regiment.
+  ],
+)[
+  Without Astragoth, one unit of Razers with blunderbusses may become the Granite Guard, 0-1 per army, for +3 points per model rather than +2. Without Shar'tor, one unit of Bull Centaur Renders may become Hashut's Dark Ravagers, 0-1 per army, for +6 points per model rather than +5. The rules are the ones the book already prints; with the character in the army, his upgrade applies as it stands.
+]
+
+#proposal("The Quakefire Battery leaves its targets burning", status: "under discussion",
+  why: [
+  The Dreadquake Mortar shakes the ground under its target and leaves it slow and shaken. The Quakefire Battery sets it alight as well. Its shots gain Flaming Attacks, and any unit that suffers a hit from it becomes Flammable for the rest of the game.
+
+  Flammable means every Flaming Attack against the unit may re-roll failed rolls To Wound, and it means Flaming Attacks cause the unit Fear. Fire runs through the whole Chaos Dwarf book -- Doomfire, the Magma Cannon, the Deathshrieker, the K'daai's Blazing Body, the Blazing Beards -- and the Battery marks targets for all of it. The second shot at a burning unit is better than the first, and so is the Magma Cannon that follows.
+  ],
+  against: [
+  A mark that lasts the whole game is something to track, and a marker on the table is the honest way to do it. Units with Immunity (Flaming Attacks) are untouched, and a unit already Flammable gains nothing.
+
+  The mark is strong in the army that fields it. A unit that has been hit once fears every Flaming attacker and wounds more easily, so the price should be set against the army's fire rather than the mortar's own.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule, built from Flaming Attacks and Flammable as the rulebook defines them.
+  ],
+)[
+  One Dreadquake Mortar may become the Quakefire Battery, 0-1 per army, for +30 points. Its shots have Flaming Attacks, and any unit hit by it becomes Flammable for the rest of the game. _Total War: Warhammer_ fields the same idea as the Daemon's Tongue, whose shots set their targets burning.
+]
+
 = DARK ELVES
 
 Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are against the base book.
