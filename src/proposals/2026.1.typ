@@ -1069,6 +1069,74 @@ Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one st
   Each of the seven Lizardmen monsters would state its own Line of Sight, its own number of Stomps and its own reach, in place of the Line of Sight 5 and Stomp (D6) the Monsters troop type gives them all -- and each would be given the one thing it is for. The Carnosaur returns to Strength 7 and pounces; the Stegadon trades Attacks for weight; the Bastiladon halves the Multiple Wounds that reach it; the Arcanadon becomes the tallest model on the table; the Troglodon poisons rather than kills; the Coatl becomes a Monstrous Creature that treads on nothing; and the Dread Saurian gains Wounds, reach and a roar. The troop type keeps its defaults and stops being the last word.
 ]
 
+#proposal("The Legion of Chaqua holds a golden screen over the army", status: "under discussion",
+  why: [
+  Saurus Warriors are the army's killers and nothing else, while the Skinks and the monsters behind them are what the enemy's archers and guns are aimed at. The Legion of Chaqua carry the golden screen of the fabled city: enemy shooting at this unit, or at any friendly unit within 6" of it, suffers \-1 To Hit.
+
+  The job changes from a block that fights to a block that shelters the army while it advances. The Skink Cohorts, a Salamander or a Stegadon walking in its lee all arrive with fewer wounds on them.
+  ],
+  against: [
+  An area effect pins the army's shape around one block, and it does nothing against a weapon that ignores modifiers or rolls no dice To Hit -- the Tomb Kings' Arrows of Asaph, or any template.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule.
+  ],
+)[
+  One unit of Saurus Warriors with spears may become the Legion of Chaqua, 0-1 per army, for +3 points per model. Enemy shooting at the unit, or at any friendly unit within 6" of it, suffers \-1 To Hit. The name and the screen are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Pok-Hopak Cohort ride where they are pointed", status: "under discussion",
+  why: [
+  Cold One Riders are the army's hammer and its least reliable unit: a bad roll on the Stupidity table takes the unit out of your hands on the turn the charge was meant to land. The Pok-Hopak Cohort have bred the stupidity out of their mounts. They do not have Stupidity, and in a turn they charge an enemy in the flank or rear they gain Devastating Charge.
+
+  So they become the unit sent round a flank and trusted to arrive there, rather than the one placed in the centre and hoped for.
+  ],
+  against: [
+  Losing Stupidity is worth a great deal on its own, and on the army's heaviest cavalry it is the larger half of the regiment. The flank bonus is only one more Attack each on the charge, so the price is mostly for the reliability.
+
+  _Total War: Warhammer_'s regiment also has Vanguard deployment. That is left out: it changes when the Cold Ones arrive, not what they do.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Cold One Riders may become the Pok-Hopak Cohort, 0-1 per army, for +4 points per model. They do not have Stupidity, and in a turn they charge an enemy in the flank or rear they gain Devastating Charge. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Thunderous One calls lightning down on what holds it", status: "under discussion",
+  why: [
+  An Ancient Stegadon hits hardest on the charge and less after it; once a combat settles, its three Attacks and a Stomp are what remain. The Thunderous One carries the Judgement of the Uxmac. At the start of each Close Combat phase, every enemy unit in base contact with it suffers D6 Strength 6 hits with Magical Attacks.
+
+  The wording follows the Tomb Barque's Khepra Beetles, which do the same at 2D6 Strength 2. The job changes from a charge that must win at once to a beast that keeps hurting whatever is stuck to it, round after round.
+  ],
+  against: [
+  Strength 6 wounds most infantry on a 2+ and takes three points off their armour, and the hits come in every round with no roll To Hit. That is a great deal of damage the enemy cannot avoid except by not being in contact, and the price has to carry it.
+
+  It builds on the Stegadon as printed. If the monster proposal above is agreed and the Stegadon's profile changes, the Judgement is unaffected, but the price should be looked at again.
+  ],
+  cost: [
+  One upgrade record for a Stegadon with the Ancient upgrade, and one sentence of rule worded on the Khepra Beetles.
+  ],
+)[
+  One Stegadon with the Ancient upgrade may become the Thunderous One, 0-1 per army, for +50 points. At the start of each Close Combat phase, every enemy unit in base contact with it suffers D6 Strength 6 hits with Magical Attacks. The name and the lightning are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Pahuax Sentinels drop rocks that break armour", status: "under discussion",
+  why: [
+  Terradon Riders drop rocks once a game: D3 Strength 4 hits per Terradon on a unit they flew over, which is enough to thin chaff and little else. The Pahuax Sentinels carry the sundering stones of their temple. Their Drop Rocks cause 2D3 hits per Terradon in place of D3, at Strength 5 with Magical Attacks, and the riders and their mounts have a Magical Ward (6+).
+
+  It is still once a game. What changes is what the rocks are for: a unit of six puts around twenty-four Strength 5 hits onto a unit of knights or a war machine's crew, and the Magical Attacks reach through a ward.
+  ],
+  against: [
+  Twelve D3 rolled at once is a large swing either way, and an opponent who sees the Sentinels coming will keep his best unit out from under their flight path. The ward is small, and mostly there so that the Sentinels survive the turn after they drop.
+  ],
+  cost: [
+  One upgrade record. Drop Rocks keeps its wording; only its number of hits, its Strength and its Magical Attacks change.
+  ],
+)[
+  One unit of Terradon Riders may become the Pahuax Sentinels, 0-1 per army, for +8 points per model. Their Drop Rocks cause 2D3 Strength 5 hits per Terradon with Magical Attacks, and the unit has a Magical Ward (6+). The name and the sundering rocks are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = OGRE KINGDOMS
 
 Proposals for #emph[Ogre Kingdoms 3.1], and for the House edition of it where one stands.
