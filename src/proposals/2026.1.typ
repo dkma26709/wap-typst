@@ -1709,3 +1709,83 @@ Proposals for #emph[Warriors of Chaos 3.0], and for the House edition of it wher
 )[
   The Chimera's *Flaming Breath* and *Fiend Tail* stop being purchases and become what they are -- a dragon head in its physical description, and the tail-maw that most Chimerae have -- while *Venomous Ooze*, *Iron-hard Skin* and *Regenerating Flesh* stay for sale, because those are the things the lore says vary between one Chimera and the next. A new rule, *A Fearsome Division of Labour*, resolves the tail's Attack at Initiative 5 separately from the body's, and sends it against a different unit when the Chimera is fighting more than one. Its Stomp drops to D3 at reach 2. 190 becomes 220, and the Beastmen entry moves with it.
 ]
+
+#proposal("The Brutes of the Hound never stop", status: "under discussion",
+  why: [
+  Marauders with the Mark of Khorne are cheap and frenzied, and like every Marauder unit they break and run once the fight turns. The Brutes of the Hound are the Blood God's hounds in human shape: Marauders with the Mark of Khorne and additional hand weapons, and they are Unbreakable.
+
+  The job changes from a cheap charge to a cheap tarpit that charges. Frenzy drives them in, and nothing the enemy does to their Leadership drives them out.
+  ],
+  against: [
+  Unbreakable is a single keyword, which is acceptable on a core unit and is the reason this regiment sits on Marauders and not on anything dearer. Frenzy still drags them towards a charge, and holding them back takes a Leadership test they may fail.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, fixing a mark and a weapon the unit can already buy, and no new rule. The Mark of Chaos rules apply as they stand, so under a general with another mark the unit moves up a slot.
+  ],
+)[
+  One unit of Marauders may become the Brutes of the Hound, 0-1 per army, for 8 points per model. They have the Mark of Khorne and additional hand weapons, and they are Unbreakable. The name and the fearless fury are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Rotting Riders shrug off the blow", status: "under discussion",
+  why: [
+  Rot Knights are Nurgle's heavy cavalry, Toughness 5 on Toughness 5 beasts, and they kill slowly with Poisoned Attacks. The Rotting Riders carry the Blessings of the Fly Lord: close combat attacks against them suffer \-1 To Wound, and they cause Terror.
+
+  The job sharpens rather than changes: a unit that is already hard to hurt becomes the thing an enemy cannot remove at all in close combat, and it frightens what it rides at.
+  ],
+  against: [
+  Against Strength 4 a Rot Knight is wounded on a 5+ today and on a 6+ with this, which is a great deal on a unit that is already Toughness 5 throughout. The \-1 applies only in close combat, so shooting and magic remain the answer.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Rot Knights may become the Rotting Riders, 0-1 per army, for +15 points per model. They cause Terror, and close combat attacks against them suffer \-1 To Wound. The name, the Terror and the Blessings of the Fly Lord are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Mirror Guard will not let their lord be touched", status: "under discussion",
+  why: [
+  Chaos Warriors fight beside their lord, and his champion's challenge or the enemy's best fighter reaches him all the same. The Mirror Guard are Warriors with the Mark of Slaanesh, hand weapons and shields, vain to the last plate. Close combat attacks against a character in the unit suffer \-1 To Hit.
+
+  The mark already makes them immune to psychology and steadies their charge. What the regiment adds is a guard of honour: the lord they escort is harder to reach in the fight the unit is in.
+  ],
+  against: [
+  It only matters with a character in the unit, and only in close combat. A unit of Mirror Guard sent off alone is Slaaneshi Warriors with shields at a premium.
+  ],
+  cost: [
+  One upgrade record, fixing a mark and equipment the unit can already buy, and one sentence of rule.
+  ],
+)[
+  One unit of Chaos Warriors may become the Mirror Guard, 0-1 per army, for 20 points per model. They have the Mark of Slaanesh, hand weapons and shields, and close combat attacks against a character in the unit suffer \-1 To Hit. The name and the Supreme Vanity are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Followers of the Great Eagle ride on sorcery", status: "under discussion",
+  why: [
+  A Marauder Chariot is a fast, cheap hammer. The Followers of the Great Eagle are a chariot with the Mark of Tzeentch, already carrying the mark's Magical Ward (6+) and Magic Resistance (1). Their scythes and polearms burn with Flaming Attacks, and in any turn a friendly Wizard successfully cast a spell, their Magical Ward improves to 5+.
+
+  The job ties the chariot to the army's casters: it is strongest charging in beside a Tzeentch sorcerer, and the fire it carries denies Regeneration to whatever it hits.
+  ],
+  against: [
+  The ward depends on the magic phase going well, and a turn of failed casting leaves it at the mark's 6+. Flaming Attacks alone would be the bare keyword this set avoids; it is the ward that makes the regiment.
+  ],
+  cost: [
+  One upgrade record, fixing a mark the chariot can already buy, and one sentence of rule.
+  ],
+)[
+  One Marauder Chariot may become the Followers of the Great Eagle, 0-1 per army, for 115 points. It has the Mark of Tzeentch and Flaming Attacks, and in any turn a friendly Wizard successfully cast a spell its Magical Ward improves to 5+. The name, the warpflame and the Barrier Boost are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Summoners of Rage call their own storm", status: "under discussion",
+  why: [
+  Dragon Ogres are creatures of the storm, and the book says so: their *Storm Rage* gives them Immunity (Lightning Attacks) and drives them into Frenzy when lightning strikes them. Nothing in the book ever calls the lightning down. The Summoners of Rage carry a Bound Spell (Level 3, cast on 7+), _Call the Storm_: a *magic missile* with a range of 18" that causes 2D6 Strength 5 hits with Lightning Attacks. It may instead be cast on the Summoners themselves, who take no harm from it and gain Frenzy through their Storm Rage.
+
+  The job is a choice each turn: a bolt at the enemy, or the rage that turns the unit into the hammer.
+  ],
+  against: [
+  Lightning Attacks ignore armour except Natural Armour, so 2D6 Strength 5 hits on a unit of knights is a great deal of damage for a bound spell, and the casting value is what holds it in check. A Frenzied unit that declines to charge must pass a Leadership test or charge the nearest enemy, so calling the storm down on themselves gives up some control for the rage.
+  ],
+  cost: [
+  One upgrade record and one bound spell, built on Storm Rage as the book already prints it.
+  ],
+)[
+  One unit of Dragon Ogres may become the Summoners of Rage, 0-1 per army, for +40 points per unit. They carry _Call the Storm_, a Bound Spell (Level 3, cast on 7+): an 18" magic missile causing 2D6 Strength 5 Lightning hits, or cast on themselves to give them Frenzy through their Storm Rage. The name and the chain lightning are both taken from the regiment in _Total War: Warhammer_.
+]
