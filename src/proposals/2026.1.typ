@@ -1530,6 +1530,72 @@ Proposals for #emph[Vampire Counts 3.0]. The army has no House edition, so these
   The Necrofex Colossus gains *A Will of Its Own*, letting it march without the Army General or a character of the Lore of Necromancy -- the only thing a necromancer's control means in this book, and the creature's own lore says it outlasts its creator. It gains *Deathly Energies*, a drain inflicting D3 Strength 3 hits with Armour Piercing (2) on every enemy unit in base contact at the end of each round of close combat, with *Corpse Killers* becoming the upgrade that raises that to D6. Its *Batter and Slash* result, which measured as the worst of its three against every target tried, becomes Random Attacks (2D3+1), and it prints *Stomp (1)* at reach 1 like the other man-shaped constructs. 240 points becomes 195, and the entry moves in all three books that print it.
 ]
 
+#proposal("The Tithe are a wall, not a speed bump", status: "under discussion",
+  why: [
+  Zombies are among the cheapest bodies in the book and are used as one: Strength 3 wounds them on a 4+, and a unit exists to be in the way for a turn. The Tithe are the dead of a whole province, paid over at once. They have Toughness 4, so the same blow wounds on a 5+, and the unit may be 20 to 80 strong rather than 20 to 60.
+
+  The Newly Dead rule still lets the unit grow past its starting size, so a necromancer raising into the Tithe adds to a block that is already hard to grind down. The job changes from a unit that buys a turn to a wall that holds a flank.
+  ],
+  against: [
+  A Toughness 4 Zombie at 4 points is a large step for one of the army's cheapest models, and eighty of them raised further is a lot of table to clear. They are still Weapon Skill 1 and still crumble when they lose, so the wall holds by being hard to remove, not by winning.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and no new rule.
+  ],
+)[
+  One unit of Zombies may become the Tithe, 0-1 per army, for +1.5 points per model. They have Toughness 4 and a unit size of 20-80. The name, the size and the hardiness are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Sternsmen do not crumble", status: "under discussion",
+  why: [
+  Every Undead unit pays for losing a fight twice: once in the blows, and again in the Unstable wounds that follow, against which no save is allowed and Regeneration may not be used. Grave Guard are the army's elite infantry and crumble like the rest.
+
+  The Sternsmen have Regeneration (6+), and unlike any other Regeneration it may be taken against wounds caused by the Unstable rule. They are the one block in the army that resists its own weakness, an anvil that holds while the Vampires do the killing.
+  ],
+  against: [
+  This bends a rule that is central to how the Undead play, on purpose, and that is the case against it. The 6+ keeps it small -- one crumbling wound in six is saved -- and it is one unit.
+
+  _Total War: Warhammer_ gives its Sternsmen Regeneration and nothing more. The Unstable exception is ours, and is what makes them something other than the Tomb Kings' Khepra Guard.
+  ],
+  cost: [
+  One upgrade record, and one sentence that is an exception to the Regeneration rule's own exceptions.
+  ],
+)[
+  One unit of Grave Guard may become the Sternsmen, 0-1 per army, for +3 points per model. They have Regeneration (6+), which may be used against wounds caused by the Unstable rule. The name and the regeneration are taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Chillgheists freeze the ground they ride over", status: "under discussion",
+  why: [
+  Hexwraiths ride through units and kill with fire; they are Ethereal, Fast Cavalry and cause Terror. The Chillgheists bring a cold with them instead. They have Magic Resistance (1), and enemy units within 6" of them may not march.
+
+  A unit within 6" of an enemy already has to pass a Leadership test to march. Near the Chillgheists it cannot at all, so a fast, Ethereal unit that can park beside a flank holds that whole flank to its walking pace.
+  ],
+  against: [
+  Six inches is where the rulebook already asks for a test, so against a high-Leadership army the aura removes a test that was usually passed. If that proves too little, 12" is the obvious step, and it would make the regiment a real zone of cold rather than a refinement of a rule that is already there.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Hexwraiths may become the Chillgheists, 0-1 per army, for +6 points per model. They have Magic Resistance (1), and enemy units within 6" of them may not march. The name, the resistance and the slowing cold are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Direpack pull down the big ones", status: "under discussion",
+  why: [
+  Dire Wolves are Strength 3 with one Attack, sent after war machines and wizards hiding at the back. The Direpack hunt larger game. In a turn they charge a model with a Line of Sight value of 3 or more -- Monstrous Cavalry, Monstrous Creatures, Monsters -- they gain Devastating Charge and +1 Strength.
+
+  That is two Strength 4 Attacks each on the turn they land on a monster's flank, where an ordinary pack has one at Strength 3.
+  ],
+  against: [
+  It only works on the charge, and only against large targets, so against an army with none it does nothing. The Orcs & Goblins' Broken Tusks Mob already carries an anti-large rule; this one is narrower, being only on the charge, which keeps the two from reading as the same regiment.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The thresholds are the rulebook's own Line of Sight values.
+  ],
+)[
+  One unit of Dire Wolves may become the Direpack, 0-1 per army, for +2 points per model. In a turn they charge a model with a Line of Sight value of 3 or more, they gain Devastating Charge and +1 Strength. The name and the bonus against large prey are taken from the regiment in _Total War: Warhammer_.
+]
+
 = WARRIORS OF CHAOS
 
 Proposals for #emph[Warriors of Chaos 3.0], and for the House edition of it where one stands.
