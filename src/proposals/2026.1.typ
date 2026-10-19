@@ -506,6 +506,76 @@ Proposals for #emph[The Game of Fantasy Battles 3.11], and for the House edition
   Not a proposal but a decomposition. Redoing magic is six separable arguments wearing one name, and this sets them out so they can be taken one at a time. Nothing here proposes an answer to any of them.
 ]
 
+= BRETONNIA
+
+Proposals for #emph[Bretonnia 3.0]. The army has no House edition, so these are against the base book.
+
+#proposal("The Knights of the Lionhearted hold the whole line", status: "under discussion",
+  why: [
+  Bretonnia's peasants fight on the knights' courage: _The Peasant's Duty_ lets them treat every knight with a Chivalrous Vow as having Inspiring Presence (6). So the levy holds only while the knights stay close, and the knights are the army's hammer and want to ride off. The Knights of the Lionhearted cause Fear, and peasants count their Inspiring Presence as 12" rather than 6".
+
+  The job is the one the army lacks: a unit of knights that can charge while the peasant line behind it still borrows its Leadership.
+  ],
+  against: [
+  It does nothing for the knights themselves beyond the Fear, and an army light on peasants gets little from it. The 12" reaches only units with the Peasant's Duty, so it cannot become an aura for the whole army.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule, worded on the Peasant's Duty as the book prints it.
+  ],
+)[
+  One unit of Knights of the Realm may become the Knights of the Lionhearted, 0-1 per army, for +3 points per model. They cause Fear, and models with the Peasant's Duty count their Inspiring Presence as 12" rather than 6". The name, the Fear and the encouragement are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Defenders of the Fleur-de-lis arrive", status: "under discussion",
+  why: [
+  Knights Errant are the young knights who charge first, often before they are told to, and many of them never reach the enemy line. The Defenders of the Fleur-de-lis carry the silver shield. Their Blessing of the Lady improves by one: Magical Ward (5+), or (4+) against missile attacks, in place of the 6+ and 5+ every knight has.
+
+  The job is the Errants' own, done well: the impetuous charge that actually lands.
+  ],
+  against: [
+  A 4+ ward against shooting on core cavalry is a great deal, and against shooting it is a better ward than even the Grail Knights have, whose Grail Vow fixes theirs at 5+. They still lose the Blessing if they flee or refuse a challenge, as every knight does.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Knights Errant may become the Defenders of the Fleur-de-lis, 0-1 per army, for +3 points per model. Their Blessing of the Lady gives a Magical Ward (5+), improved to (4+) against missile attacks. The name and the silver shield are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Beastslayers of Bastonne meet the monster halberd-first", status: "under discussion",
+  why: [
+  Bretonnia answers monsters with its knights, and its infantry is a line to be held, not a weapon against anything large. The Beastslayers of Bastonne are Foot Knights with polearms who hunt the beasts of the forest. In the first round of a combat in which they were charged by a model with a Line of Sight value of 3 or more, they have Always Strikes First.
+
+  So a monster or a unit of Monstrous Cavalry that charges them takes the polearms before it swings, and the army gains an infantry answer to the things its knights would otherwise have to turn back for.
+  ],
+  against: [
+  It depends on being charged, which an opponent may decline. Against an army with nothing large it does nothing at all.
+
+  _Total War: Warhammer_'s regiment are Foot Squires, and this book's Squires are skirmishing archers, so the regiment sits on Foot Knights.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The thresholds are the rulebook's own Line of Sight values.
+  ],
+)[
+  One unit of Foot Knights armed with polearms may become the Beastslayers of Bastonne, 0-1 per army, for +2 points per model. In the first round of a combat in which they were charged by a model with a Line of Sight value of 3 or more, they have Always Strikes First. The name and the charge reflection are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Wardens of Montfort slow what they shoot", status: "under discussion",
+  why: [
+  Yeomen are the peasants' outriders, fast and lightly armed, and their bows do little to anything the knights would want to fight. The Wardens of Montfort tip their arrows with poison. Their shooting has Poisoned Attacks, and a unit that suffers an unsaved Wound from it suffers \-1 Movement until the end of its next turn.
+
+  The job is a hunter's: the Wardens ride out, slow the unit the enemy is pushing forward, and leave it a step short for the knights to catch.
+  ],
+  against: [
+  One inch is a small slowing, and it matters most against units whose charge range is already close to the line. Against an army that wants to stand still, it is Poisoned Attacks on a few bows.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Yeomen armed with shortbows or crossbows may become the Wardens of Montfort, 0-1 per army, for +3 points per model. Their shooting has Poisoned Attacks, and a unit that suffers an unsaved Wound from it suffers \-1 Movement until the end of its next turn. The name and the slowing poison are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = CHAOS DWARFS
 
 Proposals for #emph[Chaos Dwarfs 3.0]. The army has no House edition, so these are against the base book.
