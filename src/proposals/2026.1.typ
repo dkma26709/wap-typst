@@ -1332,6 +1332,74 @@ Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where o
   One Arachnarok Spider may become the Arachnarok Queen, 0-1 per army, for +40 points. She has 10 Wounds, adds a base to a nearby Spider Swarms unit on a 4+ at the end of each friendly turn, and may spit 2D6 Strength 2 hits at every enemy unit within D6". She may not take the Flinger or the Catchweb Spidershrine. She is larger, and spawns spiders, in _Total War: Warhammer_ too.
 ]
 
+= SKAVEN
+
+Proposals for #emph[Skaven 3.0], and for the House edition of it where one stands.
+
+#proposal("The Deathvermin are first to the empty throne", status: "under discussion",
+  why: [
+  Stormvermin are the Warlord's elite and a Skaven army's spine, and a Skaven army falls apart when its general does. The Deathvermin are the guard who were always waiting for that. They carry shields as standard, and if the Army General is slain or flees off the table, the unit's Leader gains Inspiring Presence (12) for the rest of the game.
+
+  The job is a second one alongside the first: an elite block that is also the army's fallback general, which is as Skaven a rule as the book could hold.
+  ],
+  against: [
+  The second half depends on losing the general. Against an opponent who never kills him, these are Stormvermin with shields at a premium, and the price has to be fair to that game as well as to the other.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule.
+  ],
+)[
+  One unit of Stormvermin may become the Deathvermin, 0-1 per army, for +2 points per model. They carry shields, and if the Army General is slain or flees off the table their Leader gains Inspiring Presence (12) for the rest of the game. The name and the power grab are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Pit Fighters of Hell's Deep get worse the longer they fight", status: "under discussion",
+  why: [
+  Rat Ogres hit hardest on the charge, with Frenzy's extra Attack; after that they are big rats in a long fight. The Pit Fighters were bred in the arenas of Hell's Deep and come alive once the blood is up. In each round of the same close combat after the first, they gain +1 Attack, to a maximum of +2.
+
+  The job changes from a charge that must break the enemy at once to a unit that wins the grinding fight the ordinary Rat Ogre loses.
+  ],
+  against: [
+  They keep their Stupidity; the Brain Transplant mutation already exists for anyone who wants it gone. An opponent who can break them or pull them out early never meets the third round.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Rat Ogres may become the Pit Fighters of Hell's Deep, 0-1 per army, for +6 points per model. In each round of the same close combat after the first they gain +1 Attack, to a maximum of +2. The name and the building rage are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Virulent Batteries leave the plague where it falls", status: "under discussion",
+  why: [
+  A Plagueclaw Catapult kills where it lands -- Strength 2 that ignores armour, under the large template -- and the ground is clean again a moment later. The Virulent Batteries throw a payload that lingers. Where the template lands it stays on the table until the start of your next turn, and any enemy unit that moves into it or starts its turn under it suffers D6 Strength 2 hits with Poisoned Attacks that ignore armour saves.
+
+  The job is new for the army: area denial. The cloud sits in the path the enemy meant to take, and he either walks through it or goes round.
+  ],
+  against: [
+  A template that stays put is something to track, and a scattered shot denies ground the enemy never meant to cross. The cloud is weak against Toughness 4 and above, so it denies ground to infantry far more than to anything large.
+  ],
+  cost: [
+  One upgrade record and two sentences of rule, using the catapult's own template and Strength.
+  ],
+)[
+  One Plagueclaw Catapult may become the Virulent Batteries, 0-1 per army, for +25 points. Its template stays where it lands until the start of your next turn, and any enemy unit that moves into it or starts its turn under it suffers D6 Strength 2 hits with Poisoned Attacks that ignore armour saves. The name and the lingering disease are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Thing-Thing chooses its moment", status: "under discussion",
+  why: [
+  The Hell Pit Abomination does not attack like other creatures: each turn it rolls a D6 on its Special Close Combat Attacks chart and does whatever it rolled. It is the army's signature beast and the least predictable thing in it. The Thing-Thing carries a Fluid Injection. Once per game, at the start of a Close Combat phase, it rolls twice on that chart and resolves both results.
+
+  For one turn of the player's choosing the Abomination stops being a single dice roll and becomes two.
+  ],
+  against: [
+  Two results are not two good results, and the chart can still give a weak pair. It is one use, so the price is for one turn of the game; the rest of the time this is an ordinary Abomination.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One Hell Pit Abomination may become the Thing-Thing, 0-1 per army, for +25 points. Once per game, at the start of a Close Combat phase, it rolls twice on its Special Close Combat Attacks chart and resolves both results. The name and the injection are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = TOMB KINGS
 
 Proposals for #emph[Tomb Kings 3.1]. The army has no House edition, so these are
