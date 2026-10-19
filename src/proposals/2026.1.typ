@@ -1051,6 +1051,76 @@ Proposals for #emph[Grand Cathay 3.0]. The army has no House edition, so these a
   The Terracotta Sentinel prints *Stomp (1)* at reach 1 in place of the troop type's D6 at reach 3, because a statue of a warrior has two feet and walks upright on them -- a 32% cut with no Killing Blow to convert it into. What it gains instead is the thing the lore says it is: *Battlements and Buttresses*, under which a unit charging it counts as making a disordered charge and is still capped at +2 combat result for ranks. Since the Sentinel is Unstable, that denies a full Wound every time it is charged. Its heavy armour becomes Natural Armour (4+) with the *Stone Construct* floor and its four material upgrades are untouched. 235 points becomes 190.
 ]
 
+= HIGH ELVES
+
+Proposals for #emph[High Elves 3.1]. The army has no House edition, so these are against the base book.
+
+#proposal("The Blades of Hoeth cut the shot from the air", status: "under discussion",
+  why: [
+  Swordmasters of Hoeth already deflect light arrows: their _Swordmaster_ rule gives Dodge (6+) against non-magical missile attacks of Strength 3 or less. Anything heavier -- a crossbow bolt, a handgun ball -- goes through. The Blades of Hoeth are the masters of the White Tower's art. They have Weapon Skill 7, and their Dodge improves to (5+) against missile attacks of any Strength, templates still excepted.
+
+  The job becomes crossing a gunline. A unit that walked into handguns at a loss now reaches them, and strikes at a Weapon Skill few enemies can match.
+  ],
+  against: [
+  A 5+ dodge against all non-template shooting on an elite unit that is already hard to fight is a great deal, and it does nothing against cannon, templates or magic, which become the answer.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, a point of Weapon Skill, and one sentence widening the Swordmaster rule.
+  ],
+)[
+  One unit of Swordmasters of Hoeth may become the Blades of Hoeth, 0-1 per army, for +5 points per model. They have Weapon Skill 7, and their Dodge improves to (5+) against missile attacks of any Strength, except templates. The name and the guarding blades are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Talons of Tor Caleda set the target alight", status: "under discussion",
+  why: [
+  Hawkeyes are the army's archers: Elven longbows at Strength 3 with Armour Piercing (1), in volleys. The Talons of Tor Caleda loose fire arrows. Their longbows have Flaming Attacks, and a unit hit by them becomes Flammable for the rest of the game, so every Flaming Attack against it may re-roll failed rolls To Wound and causes it Fear.
+
+  The first volley marks the target and the volleys that follow, theirs and the army's, burn it better. Fire also denies Regeneration, which a longbow alone never could.
+  ],
+  against: [
+  This is the third Flammable mark in this document, after the Chaos Dwarfs' Quakefire Battery and the Dwarfs' Dragonback Slayers. It is a good mechanic and no longer a new one, and it is worth only as much fire as the army brings to follow it up.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule, built from Flaming Attacks and Flammable as the rulebook defines them.
+  ],
+)[
+  One unit of Hawkeyes may become the Talons of Tor Caleda, 0-1 per army, for +3 points per model. Their longbows have Flaming Attacks, and a unit hit by them becomes Flammable for the rest of the game. The name, the fire and the flammable mark are all taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("Silak One-eye drains the strength from what strikes it", status: "under discussion",
+  why: [
+  The Merwyrm is a sea-serpent that bites, lashes with its tail and regenerates. Silak One-eye rises from the cold deep and brings the cold with it: enemy models in base contact with it suffer \-1 Strength.
+
+  The job turns towards the anvil. Every blow aimed at the Merwyrm lands a point weaker, on Toughness 5 with Natural Armour (3+) and Regeneration (4+), so it holds a fight the ordinary Merwyrm would only trade in.
+  ],
+  against: [
+  \-1 Strength takes a Strength 3 infantry unit from wounding Toughness 5 on a 6+ to a 6 followed by a 2+, which on top of the hide and the regeneration leaves little that can hurt it in close combat. _Total War: Warhammer_ names the ability Enfeebling Cold, but its effect could not be found, so the \-1 Strength is a reading of the name, not a translation.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One Merwyrm may become Silak One-eye, 0-1 per army, for +30 points. Enemy models in base contact with it suffer \-1 Strength. The name and the enfeebling cold are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Fireborn hunt the great beasts", status: "under discussion",
+  why: [
+  Dragon Princes once rode dragons, and now ride horses in dragon armour, which already gives them a Magical Ward (6+) and Immunity (Flaming Attacks). The Fireborn keep more of Caledor's fire. Their attacks have Flaming Attacks, their dragon armour's ward improves to (5+), and they gain +1 To Wound against models with a Line of Sight value of 3 or more.
+
+  The job is the one their ancestors had: the heavy cavalry that hunts monsters and Monstrous Cavalry. The fire denies Regeneration to the trolls and hydras they ride at.
+  ],
+  against: [
+  It is three gains on one unit, on the army's best heavy cavalry, and at Strength 3 the bonus To Wound matters most on the charge, when their lances give them the Strength to use it. Against an army with nothing large it is Flaming Attacks and a better ward.
+
+  _Total War: Warhammer_'s regiment of this name could not be read in detail, so the rules here are ours; only the name is borrowed.
+  ],
+  cost: [
+  One upgrade record and two sentences of rule. The thresholds are the rulebook's own Line of Sight values.
+  ],
+)[
+  One unit of Dragon Princes of Caledor may become the Fireborn, 0-1 per army, for +6 points per model. Their attacks have Flaming Attacks, their dragon armour gives a Magical Ward (5+), and they gain +1 To Wound against models with a Line of Sight value of 3 or more.
+]
+
 = LIZARDMEN
 
 Proposals for #emph[Lizardmen 3.0], and for the House edition of it where one stands.
