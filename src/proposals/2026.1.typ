@@ -803,6 +803,72 @@ Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are
   The Avatar of Khaine's Attacks rise from five to seven and its Stomp falls from the troop type's D6 at reach 3 to a single blow at reach 1, which is exactly neutral in total damage and moves it towards large targets, because its Attacks carry Killing Blow and feed *Wrath of Khaine* while its Stomp reads neither -- nor its Weapon Skill 6, the second-highest of any monster in the corpus. Its heavy armour becomes Natural Armour (4+) at the same value with the *Stone Construct* floor, on the reading that a metal statue is a body where a metal machine is plating. Nothing else changes and no rule is invented. 265 points, unchanged.
 ]
 
+#proposal("The Blades of the Blood Queen take heads on the charge", status: "under discussion",
+  why: [
+  Har Ganeth Executioners are the Dark Elves' headsmen: great weapons and Killing Blow, which slays outright on a To Wound roll of 6. The Blades of the Blood Queen are Khaine's chosen executioners. They have Frenzy, and in a turn they charge their Killing Blow triggers on a To Wound roll of 5+.
+
+  The job is theirs, done particularly well: a charge that takes heads, doubling the chance of the outright kill at the moment it matters.
+  ],
+  against: [
+  Killing Blow on a 5+ against a block of elite infantry or a character is brutal on the charge, and Frenzy makes the charge hard to hold back -- a frenzied unit that declines to charge must pass a Leadership test or charge the nearest enemy. After the first turn they are Executioners with Frenzy's extra Attack.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule.
+  ],
+)[
+  One unit of Har Ganeth Executioners may become the Blades of the Blood Queen, 0-1 per army, for +4 points per model. They have Frenzy, and in a turn they charge their Killing Blow triggers on a To Wound roll of 5+. The name and the frenzy are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Chill of Sontar freezes what it breathes on", status: "under discussion",
+  why: [
+  A War Hydra may breathe fire: _Fiery Breath_ is a Breath Weapon whose Strength is its remaining Wounds. The Chill of Sontar breathes frost instead. Its _Frost Breath_ is a Breath Weapon of the same Strength without Flaming Attacks, and a unit that suffers an unsaved Wound from it may not charge or march in its next turn. Enemy models in base contact with the Hydra suffer \-1 To Hit in close combat from the cold that hangs about it.
+
+  And a creature of ice is weaker still to fire. It is Flammable, so every Flaming Attack against it may re-roll failed rolls To Wound, on top of the rule that already denies its Regeneration (4+) against fire.
+  ],
+  against: [
+  A unit frozen in place for a turn is strong control, and the Strength falls with the Hydra's Wounds, so the breath weakens as it does. Against an army with fire the regiment is a liability: Flaming Attacks ignore its Regeneration and wound it more easily, and it may not take the fire-based breaths that would let it answer.
+
+  The proposal above, on the War Hydra's Loss of Heads, would sit alongside this one; the two touch different rules.
+  ],
+  cost: [
+  One upgrade record, a breath worded on Fiery Breath, and two sentences of rule.
+  ],
+)[
+  One War Hydra may become the Chill of Sontar, 0-1 per army, for +35 points, and may not take Spit Fire, Fiery Breath or Acid Breath. It has Frost Breath -- a Breath Weapon with Strength equal to its remaining Wounds, and a unit that suffers an unsaved Wound from it may not charge or march in its next turn. Enemy models in base contact suffer \-1 To Hit in close combat, and it is Flammable. The name and the frost are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Raven Heralds ride on wings", status: "under discussion",
+  why: [
+  Dark Riders are Fast Cavalry: scouts, raiders, and the army's way of reaching a war machine. The Raven Heralds are the Witch King's messengers, and ride on wings. They have Fly (9), and the unit is 5 to 10 strong rather than 5 to 15.
+
+  It is a single rule, but one that changes the whole job: Fast Cavalry that crosses any terrain and lands behind the line, which the Dark Elves otherwise field only as a character's Dark Pegasus.
+  ],
+  against: [
+  Flying Fast Cavalry with Deathrain crossbows can reach almost anything on the table on the first turn, which is why the unit size comes down. The regiment is a keyword, which is acceptable only because the keyword is the job.
+  ],
+  cost: [
+  One upgrade record and a unit-size limit.
+  ],
+)[
+  One unit of 5-10 Dark Riders may become the Raven Heralds, 0-1 per army, for +8 points per model. They have Fly (9). The name and the flight are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Bolt-fiends pick the shield wall apart", status: "under discussion",
+  why: [
+  Darkshards fire a hail of Strength 2 bolts from their Deathrain crossbows, and a shield wall -- which adds to its save, and adds again against shooting to its front -- shrugs most of them off. The Bolt-fiends' bolts are barbed to tear shields away: targets gain no armour save from shields against their Deathrain crossbows.
+
+  The job is narrow and clear: the unit sent against Spearmen, Sea Guard and Dwarf shields, where the ordinary Darkshards waste their volleys.
+  ],
+  against: [
+  Against an army without shields it does nothing at all. It is a specialist's rule on a core unit, which is where a specialist's rule is cheapest to carry.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule.
+  ],
+)[
+  One unit of Darkshards may become the Bolt-fiends, 0-1 per army, for +2 points per model. Targets gain no armour save from shields against their Deathrain crossbows. The name and the shieldbreaking are both taken from the regiment in _Total War: Warhammer_.
+]
+
 = DWARFS
 
 Proposals for #emph[Dwarfs 3.11], and for the House edition of it where one stands.
