@@ -855,20 +855,22 @@ Proposals for #emph[Dwarfs 3.11], and for the House edition of it where one stan
   One Gyrobomber may become the Skyhammer Squadron, 0-1 per army, for +30 points. Each Bombing Run drops two bombs on the target, each placed and scattered separately. The name and the heavier bombing are both taken from the regiment in _Total War: Warhammer_.
 ]
 
-#proposal("The Oathgun answers the charge", status: "under discussion",
+#proposal("The Thunderburst Gun explodes where it lands", status: "under discussion",
   why: [
-  A Dwarf cannon is the gunline's anchor and its weak point at once. Grapeshot is Cumbersome, so the crew cannot use it to Stand and Shoot, and anything that reaches the gun meets three crewmen and no shot. The engineering runes already cover a great deal -- Strength, accuracy, reloading, misfires, monsters, a ward -- and none of them covers this.
+  A cannonball lands and bounces on in one straight line: Strength 10 with Multiple Wounds (D6) on the model it lands on, then (D3) on one model per rank along the bounce. It is the most accurate shot in the army and, past the first model, the narrowest. The engineering runes already improve it in every direction a rune can -- Strength, accuracy, reloading, misfires, monsters -- and none of them changes what the shot does.
 
-  The Oathgun's grapeshot loses Cumbersome. When it is charged, the crew may Stand and Shoot with grapeshot: twelve inches of Strength 5 at the unit coming for them. The gun keeps its full allowance of engineering runes.
+  The Thunderburst Gun's shot does not bounce. It lands and hits as a normal cannon, and then it explodes: from the point where it landed, resolve three bounces, each with its own scatter dice for direction and its own artillery dice for length. A Hit on the scatter dice sends that bounce straight on along the line of fire, and a misfire on its artillery dice means that bounce does not happen. Each bounce hits models under it exactly as a normal bounce does, one per rank, at Strength 6 with Multiple Wounds (D3).
+
+  It is less accurate than a cannonball and has three chances to hit where a cannonball has one. Into a block the explosion goes three ways through it; into a monster the direct hit is untouched.
   ],
   against: [
-  Grapeshot rolls the artillery dice, so a Stand and Shoot can misfire with the enemy already on the way, and twelve inches means a charger from further out arrives before it is in range of anything but the last of its move.
+  Each bounce is Strength 6 rather than 10, so against Toughness 5 and above the bounces wound on a 2+ no longer, and against armour they lose four points of save modifier. The scatter dice can send a bounce back towards the gun's own lines, and the bounce rule hits any model under the line, friend or foe.
   ],
   cost: [
-  One upgrade record and one sentence of rule. The name is ours; _Total War: Warhammer_ has no Dwarf cannon regiment.
+  One upgrade record and a paragraph of rule, built entirely from the rulebook's cannon bounce. The name is ours; _Total War: Warhammer_ has no Dwarf cannon regiment.
   ],
 )[
-  One Cannon may become the Oathgun, 0-1 per army, for +25 points. Its grapeshot loses Cumbersome, so the crew may Stand and Shoot with it. It may still take engineering runes up to 50 points.
+  One Cannon may become the Thunderburst Gun, 0-1 per army, for +30 points. Its shot hits the model it lands on as a normal cannon and then, rather than bouncing, explodes into three bounces from that point -- each with its own scatter dice and artillery dice, each hitting at Strength 6 with Multiple Wounds (D3). It may still take engineering runes up to 50 points.
 ]
 
 = EMPIRE
