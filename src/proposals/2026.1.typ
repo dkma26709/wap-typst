@@ -839,20 +839,20 @@ Proposals for #emph[Dwarfs 3.11], and for the House edition of it where one stan
   One unit of Troll Slayers may become the Dragonback Slayers, 0-1 per army, for +2 points per model. They have Immunity (Flaming Attacks), and an enemy unit that suffers an unsaved Wound from them becomes Flammable for the rest of the game. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
 ]
 
-#proposal("The Skyhammer Squadron drops two bombs", status: "under discussion",
+#proposal("The Skyhammer Squadron drops three bombs", status: "under discussion",
   why: [
-  A Gyrobomber's Bombing Run drops one bomb under the large template on a unit it flew over. The Skyhammer Squadron carries a heavier rack: each Bombing Run drops two bombs on the same target, each placed and scattered separately, as the Helstorm scatters its templates.
+  A Gyrobomber's Bombing Run drops one bomb under the large template on a unit it flew over. The Skyhammer Squadron carries a heavier rack: each Bombing Run drops three bombs on the same target, each placed and scattered separately, as the Helstorm scatters its templates.
 
-  The job does not change -- the Gyrobomber was already the army's bomber -- but what it can do to a block of infantry roughly doubles.
+  Three separate scatters make the run less precise and more thorough. One bomb may drift off the unit, but three rarely all do, so the run spreads its damage across a block rather than staking everything on one landing.
   ],
   against: [
-  This is the closest thing in the Dwarf set to a better copy. It is here because the Gyrobomber is the army's only bomber, and _Total War: Warhammer_'s regiment is that bomber with more bombs.
+  This is the closest thing in the Dwarf set to a better copy. It is here because the Gyrobomber is the army's only bomber, and _Total War: Warhammer_'s regiment is that bomber with more bombs. Three misfire rolls per run are three chances for the Bomb Misfire chart.
   ],
   cost: [
   One upgrade record and one sentence of rule. The Bomb Misfire chart is rolled once per bomb.
   ],
 )[
-  One Gyrobomber may become the Skyhammer Squadron, 0-1 per army, for +30 points. Each Bombing Run drops two bombs on the target, each placed and scattered separately. The name and the heavier bombing are both taken from the regiment in _Total War: Warhammer_.
+  One Gyrobomber may become the Skyhammer Squadron, 0-1 per army, for +45 points. Each Bombing Run drops three bombs on the target, each placed and scattered separately. The name and the heavier bombing are both taken from the regiment in _Total War: Warhammer_.
 ]
 
 #proposal("The Thunderburst Gun explodes where it lands", status: "under discussion",
@@ -991,18 +991,18 @@ Proposals for #emph[The Empire 3.1], and for the House edition of it where one s
 
   Flaming Attacks bring two smaller things with them. They cause Fear in War Beasts, Cavalry, Chariots and Flammable creatures, with \-1 Leadership on any Panic test the fire causes, and a Flammable target lets the attacker re-roll failed To Wound rolls.
 
-  The Sunmaker also carries a fourth rack. Where a Helstorm scatters three templates from its target position, the Sunmaker scatters four, on the same artillery dice, so the fire covers more of the unit it lands on.
+  The Sunmaker also fires its rockets differently. Its four templates do not scatter around the target; they walk. Place the first over the target and centre each further template 3" beyond the last, along the line from the battery through the first. Then roll one scatter dice and one artillery dice, and all four templates move together by the result. The barrage rakes a deep formation from front to back, or two units standing in line.
   ],
   against: [
-  Against an army with nothing that regenerates or burns, the fire is only a Fear effect on horses, and what remains is a Helstorm with one more template -- a third more hits for the price.
+  A creeping barrage cannot be concentrated on one small unit, and because a single roll moves all four templates, it either lands well or misses together. Against an army with nothing that regenerates or burns, the fire is only a Fear effect on horses.
 
   The Great Cannon is the better-known machine and would carry the fire as easily. It is left to the Dwarfs, whose engineers are the obvious home for a renowned crew, and the Empire's renown stays in rockets and handguns.
   ],
   cost: [
-  One upgrade record and no new rule. A flat price, as a war machine has no models to price by.
+  One upgrade record and a paragraph of rule placing the templates. A flat price, as a war machine has no models to price by.
   ],
 )[
-  One Helstorm Rocket Battery may become the Sunmaker, 0-1 per army, for +35 points. It scatters four templates rather than three, and its rockets gain the Flaming Attacks special rule, so Regeneration cannot be used against them. The name, the fire and the extra rockets are all taken from the regiment in _Total War: Warhammer_.
+  One Helstorm Rocket Battery may become the Sunmaker, 0-1 per army, for +35 points. Its four templates are placed in a line, each 3" beyond the last along the line of fire, and scatter together on one roll; its rockets gain the Flaming Attacks special rule, so Regeneration cannot be used against them. The name, the fire and the extra rockets are all taken from the regiment in _Total War: Warhammer_.
 ]
 
 = GRAND CATHAY
@@ -1409,15 +1409,17 @@ Proposals for #emph[Orcs & Goblins 3.0], and for the House edition of it where o
   A Rock Lobba removes models. The army's own infantry is Weapon Skill 2 and 3, so what it most needs from a stone thrower is not one more dead elf but a unit of elves that fights worse when the Boyz arrive.
 
   The book already prices this shape. The Arachnarok's Flinger is a stone thrower whose hit leaves the target worse until the end of its next turn, at +20 points. The Hammer of Gork does the same with one penalty in place of five.
+
+  And its stone does not stop where it lands. It bounces on as a cannonball does, for one artillery dice in the direction it was travelling, and a misfire on that dice stops it. Models under the bounce are hit at Strength 3, one per rank. Every unit hit by the stone or its bounce suffers the penalty, so one throw can blind two units.
   ],
   against: [
-  A stone thrower scatters, and a penalty that lands on the wrong unit, or on nothing, does nothing at all. The rule only pays when the throw lands on the unit the army is about to fight, which asks for a plan a goblin war machine rarely gets.
+  A stone thrower scatters, and the bounce goes where the dice send it -- including back through the army's own lines, since a bounce hits any model under it. The penalty only pays when it lands on a unit the army is about to fight.
   ],
   cost: [
-  One upgrade record and one sentence of rule, worded on the Flinger's.
+  One upgrade record, one sentence of rule worded on the Flinger's, and the cannon's bounce from the rulebook.
   ],
 )[
-  One Rock Lobba may become the Hammer of Gork, 0-1 per army, for +20 points. A unit hit by it suffers \-1 To Hit, in close combat and with shooting, until the end of its next turn. The name and the trick are both taken from the regiment in _Total War: Warhammer_, whose stones leave their target Blinded.
+  One Rock Lobba may become the Hammer of Gork, 0-1 per army, for +30 points. Its stone bounces on as a cannonball does, hitting models under the bounce at Strength 3, and a unit hit by the stone or its bounce suffers \-1 To Hit, in close combat and with shooting, until the end of its next turn. The name and the trick are both taken from the regiment in _Total War: Warhammer_, whose stones leave their target Blinded.
 ]
 
 #proposal("The Broken Tusks Mob go looking for something big", status: "under discussion",
@@ -1660,20 +1662,25 @@ against the base book.
   One unit of Tomb Guard may become the Khepra Guard, 0-1 per army, for +3 points per model. They may not take shields, and they gain Regeneration (5+). The name and the regeneration are both taken from the regiment in _Total War: Warhammer_.
 ]
 
-#proposal("The Chosen of the Gods shoot on the march", status: "under discussion",
+#proposal("The Chosen of the Gods loose arrows that shatter", status: "under discussion",
   why: [
-  Ushabti with greatbows are Strength 5 archers who must stand still to shoot properly: a greatbow's Multiple Shots (2) only applies in a turn the model has not moved. The Chosen of the Gods keep Multiple Shots (2) when they move, and their greatbows have Armour Piercing (1).
+  Ushabti greatbows are Strength 5 arrows that strike whole wherever they land. The Chosen of the Gods loose arrows that shatter in the air on the way to their target: at long range, each hit from their greatbows becomes D3 hits at Strength 4, peppering the target with shards. At short range the arrow has not had time to break, and hits as a normal greatbow.
 
-  Arrows of Asaph already lets Ushabti ignore every shooting modifier that is not from a spell or magic item, including the \-1 for Multiple Shots. So the Chosen walk forward and put two Strength 5 arrows each into whatever they choose, every turn, at their full Ballistic Skill.
+  Arrows of Asaph already ignores the \-1 for long range, so the shatter band costs nothing to use. What it asks is a decision about where to stand: back at long range to pepper the horde, or in close to strike the monster whole.
   ],
   against: [
-  This is strong. A unit of six moving and shooting twelve Strength 5 armour-piercing arrows a turn with no modifiers is a gunline on legs, and the price has to say so.
+  The shards are a third better against light infantry, about even against armour and Ogres, and a fifth worse against a Toughness 6 monster, which shrugs them off. It is a sideways trade more than a gain, and the price is set to match.
   ],
   cost: [
-  One upgrade record and one sentence of rule.
+  One upgrade record and one sentence of rule, using the greatbow's own short and long range.
+  ],
+  examples: [
+  *Expected unsaved Wounds per Ushabti, standing still with two arrows:*
+
+  #minitable(("Target", "Short range, S5", "Long range, shattered"), ("Elf spearmen, T3 5+", "0.83", "1.11", "Knights, T3 2+", "0.42", "0.44", "Chaos Warriors, T4 3+", "0.44", "0.50", "Ogres, T4 W3 5+", "0.67", "0.83", "A monster, T6 W6 4+", "0.28", "0.22"))
   ],
 )[
-  One unit of Ushabti armed with greatbows may become the Chosen of the Gods, 0-1 per army, for +8 points per model. Their greatbows have Armour Piercing (1) and keep Multiple Shots (2) in a turn they moved. The name and the arrows that split in the air are both taken from the regiment in _Total War: Warhammer_.
+  One unit of Ushabti armed with greatbows may become the Chosen of the Gods, 0-1 per army, for +4 points per model. At long range, each hit from their greatbows becomes D3 hits at Strength 4; at short range they hit as normal. The name and the arrows that split in the air are both taken from the regiment in _Total War: Warhammer_.
 ]
 
 #proposal("Usirian's Legion of the Netherworld walks through walls", status: "under discussion",
