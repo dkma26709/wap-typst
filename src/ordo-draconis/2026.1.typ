@@ -148,6 +148,18 @@ The Ordo fights as an order of knights and nothing else. Its vampires ride, walk
 
 He offers the blood to knights and to nobody else. A man who has fought well in his service may be asked once, and may refuse without consequence. Those who accept join the household. Those who refuse are asked a second question at the end of their lives, and most of them say yes to that one. Dying is a thing a Bretonnian is brought up to do well. Being of no further use afterwards is not. They are the Wights, and they march behind the men who took the other offer. He does not turn peasants, and a vampire of his own household who is killed stays where he falls. He has never given a reason for the second of those.
 
+#runin[The harness]
+
+The plate is blackened, and it went on the tally as a saving. Bright harness in mountain wet wants a man and most of a day to keep. Blackened steel does not rust and does not need attending to. Six duchies read a statement into it, and he has never corrected them.
+
+The device is a white dragon on a black field, and the banners are black with it. The shield is black because the armour is, and the dragon is white so that it can be seen.
+
+#diagram("/assets/figures/ordo-draconis/device.png", 0.3)
+
+He gives that reason when asked, and it is the whole of it.
+
+The Wights wear the harness they wore alive, unattended since, the dragon worn through to the iron on every shield that carried one. The levy carry kit from stores, blackened like everything the keep issues, and no device at all, because a shield the order issued is not a shield a man owns.
+
 #runin[The roll]
 
 Nobody in the six duchies owes the order anything but blood, and a body is not blood. The muster roll is a separate page in the same hand, and it is not part of the terms. A man puts his own name on it while he is alive, at a visit, in front of whoever is doing the writing. Nothing is remitted for it. Nothing is asked of a village that puts nobody down.
@@ -340,7 +352,7 @@ The knights will discuss the warrant, the count and the four refusals, cheerfull
 
 Bretonnia has no view, because Bretonnia does not know. Sylvania has a view and it is wrong. The Ordo stopped correcting them about the order's own name, and it is not going to start with this.
 
-_Blood Keep, the Ordo Draconis and its black drake on a red field, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the files other realms keep on him, the sky in five sizes, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
+_Blood Keep, the Ordo Draconis, Walach Harkon's remaking of the order, and the Green Knight all belong to the setting. What is ours is the lord and his four names, the blackened harness and the white dragon on black, his arithmetic, the scattered agreements, the signal fire, the Dam and her herd, the keep that will not stand still and the mountain it was built on, the Porter in its gate, the ledger and every engagement in it, the files other realms keep on him, the sky in five sizes, the Lahmian and everything unwritten between them, and the Ordo's claim to its own name. That last one is deliberately a dispute: the surviving account credits Walach with taking the Keep and founding the order, and this book holds that the account is the one told by the vampires who inherited it. Walach gave the blood, so nothing printed in *Vampire Counts* 3.0 is contradicted._
 
 = CHOOSING AN ORDO DRACONIS
 
@@ -513,7 +525,7 @@ _Nothing in this list can buy the Aura of Dark Majesty, that power being von Car
 
 #group("THE ORDO'S POWERS")
 
-Five Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
+Six Vampiric Powers available only to a Vampire in an army chosen as an Ordo Draconis.
 
 #upgrade("KEPT GROUND", 25)[_A lord who cannot garrison a dozen places learned long ago to be the garrison._
 
@@ -533,6 +545,11 @@ The model has the Hatred special rule against any enemy unit containing one or m
 #upgrade("DRINK DEEP", 15)[_The tithe is taken by measure. The field is the one place the measure is waived._
 
 Roll a D6 at the end of each Close Combat phase in which one or more models was slain by the model. On a 5+, the model recovers a single Wound, up to their starting value (excluding additional Wounds from mounts). This does not work against Animated Constructs, Daemons, Forest Spirits or Vampires.
+]
+
+#upgrade("NOT IN THE TALLY", 15)[_The bats have never applied for a position, and keep station over one man anyway._
+
+Friendly units with the *Chiropter* keyword within 12" of the model may use its Leadership instead of their own, which the Independent special rule would otherwise forbid them. If the model is the Battle Standard Bearer, they may also use its Hold Your Ground special rule.
 ]
 
 #upgrade("OLD ENOUGH", 10)[_The blood finished with him long ago; a lucky stroke finds nothing left to end._
@@ -686,11 +703,11 @@ Shadow)"), ("2", "The Enfeebling Foe (Lore of Shadow)"), ("3", "The Withering (L
 #entry("THE ORDO'S ITEMS")
 Seven Magic Items available only to an army chosen as an Ordo Draconis, each following the rules for its own kind of item.
 
-#namecost("WEATHER OVER THE KEEP", "15 points")
+#namecost("WEATHER OVER THE KEEP", "10 points")
 
-_The bats have never applied for a position, and keep station over one man anyway._
+_Weather is not a thing one reports to a duke._
 
-Enchanted Item. Ordo Draconis only. Friendly units with the *Chiropter* keyword within 12" of the bearer may use the bearer's Leadership.
+Enchanted Item. Ordo Draconis only. The bearer must have the Not in the Tally Vampiric Power. Each range at which it lets units with the *Chiropter* keyword use the bearer's Leadership or Hold Your Ground is increased by 6".
 
 #namecost("THE SIGNAL FIRE", "30 points")
 
@@ -1142,7 +1159,7 @@ The large kind of the keep's own bats, horse-sized and ill-tempered, that the ho
   base-size: "40x40",
   special-rules: "Fly (8)",
   special-rules-body: [
-#note[_The parent book's Vargheist is Monstrous Infantry (Vampire) at 50: Frenzy, The Red Thirst, Vampiric, Weapon Skill 4, Leadership 7 and a walking pace of six. This is what is left when the Blood is taken out of the entry — the animal's Strength, Wounds and wings, a beast's Weapon Skill and Leadership, and a bat's gait, the family walking at one and two and living in the air. Monstrous Beasts carry Fear and Independent on their own account, and Not in the Tally already speaks to the second: the sky answers to Emmerich and nobody else. The working is in the design chapter._]
+#note[_The parent book's Vargheist is Monstrous Infantry (Vampire) at 50: Frenzy, The Red Thirst, Vampiric, Weapon Skill 4, Leadership 7 and a walking pace of six. This is what is left when the Blood is taken out of the entry — the animal's Strength, Wounds and wings, a beast's Weapon Skill and Leadership, and a bat's gait, the family walking at one and two and living in the air. Monstrous Beasts carry Fear and Independent on their own account, and Not in the Tally already speaks to the second: the sky answers to a vampire who keeps it, and to nobody else. The working is in the design chapter._]
   ],
 )
 
@@ -1336,7 +1353,7 @@ It stood in the gate of the foundation before there was a keep on it, and the ga
 Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may only be taken in an Ordo Draconis, and he is the only model in this book who may be given the Dam.
   ],
   profiles: (
-  (name: "Emmerich", m: 6, ws: 8, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 370),
+  (name: "Emmerich", m: 6, ws: 9, bs: 3, s: 6, t: 5, w: 3, i: 7, a: 5, ld: 10, points: 410),
   (name: "The Dam", m: 6, ws: 5, bs: 0, s: 7, t: 7, w: 6, i: 2, a: 5, ld: 6, points: 320),
   ),
   troop-type: "Infantry (Special Character, Vampire, Blood Dragon)",
@@ -1349,14 +1366,13 @@ Marshal of the Ordo Draconis, and the lord the Order chapter is about. He may on
 - Shadow
   ],
   magic-items: (
-    rule("The Marshal's Blade")[Magic Weapon. Hand weapon. While Emmerich is fighting in a challenge, the Marshal's Blade has the Heroic Killing Blow special rule. Outside a challenge it is an ordinary hand weapon and does nothing at all.],
-    rule("The Hauberk of the Ordo")[Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (6+).],
+    rule("The Marshal's Blade")[Magic Weapon. Hand weapon. At the start of any close combat, Emmerich may take the Marshal's Blade in both hands, and once he has he keeps it there for the rest of the battle: it gains +1 Strength and the Requires Two Hands special rule. While Emmerich is fighting in a challenge, the Marshal's Blade has the Heroic Killing Blow special rule.],
+    rule("The Hauberk of the Ordo")[Magic Armour. Heavy armour. This item gives the wearer a Magical Ward (5+).],
   ),
-  vampiric-powers: "Blademaster, Dread Knight",
+  vampiric-powers: "Blademaster, Dread Knight, Not in the Tally, Old Enough",
   special-rules: "Martial Honour (see Blood Dragons), The Red Thirst, Vampiric",
   special-rules-body: (
     rule("The Marshal")[Emmerich must be the army's General. He has the *Inspiring Presence (6)* special rule.],
-    rule("Not in the Tally")[Friendly units with the *Chiropter* keyword may use Emmerich's Inspiring Presence and Hold Your Ground special rules, which the Independent special rule would otherwise forbid them.],
     rule("The Pass Held")[Emmerich, and any unit he has joined, may re-roll failed Break tests.],
     rule("The Arithmetic")[Emmerich may never join a unit with the *Undead* special rule.],
   ),
@@ -1514,7 +1530,7 @@ What stayed is what somebody in this army can still be handed. A gate naming a V
   ("Ankhara", "Does not exist", "Special Character, new entry, and available to any Vampire Counts army"),
   ("Renard", "Does not exist", "Special Character, new entry, this list only"),
   ("Weather Over the Keep, the Signal Fire, the Muster Roll, the Witnessed Oath, the Road Behind, the Standing Ration", "Do not exist", "Magic Items, new"),
-  ("Kept Ground, On the Tally, the Long Walk, Drink Deep, Old Enough", "Do not exist", "Vampiric Powers, new"),
+  ("Kept Ground, On the Tally, the Long Walk, Drink Deep, Not in the Tally, Old Enough", "Do not exist", "Vampiric Powers, new"),
   ("The Varghulf", "Special", "Special, without Regeneration (4+), at 110 points"),
   ("The Red Thirst", "A Wound recovered on a 5+", "A Thirst value that rises and falls with the feeding, granting Regeneration (6+) at 1, (5+) at 2 and (4+) at 3"),
   ("The Armour of Blood", "30 points", "20 points, and requires Drink Deep"),
@@ -1612,7 +1628,7 @@ The novelty is worth stating rather than hiding. No entry in the thirty-one book
 
 #field("Vargheists", "")
 
-Thirty is a Fell Bat grown up, and the working runs from both ends. From below: twelve buys the middling bat, and the large one is a Strength, a Toughness, a Wound, an Attack and Fear over it at two and a half times the price. From above: the parent book's Vargheist is 50, and this entry takes off Vampiric, The Red Thirst, Frenzy's extra Attack, a point of Weapon Skill, two of Leadership and four of walking pace, which is most of what the 50 was buying. What is left is the animal, and the animal is 30 — Leadership 5 and Independent besides, so it panics like an animal too, unless the man the sky answers to is on the field.
+Thirty is a Fell Bat grown up, and the working runs from both ends. From below: twelve buys the middling bat, and the large one is a Strength, a Toughness, a Wound, an Attack and Fear over it at two and a half times the price. From above: the parent book's Vargheist is 50, and this entry takes off Vampiric, The Red Thirst, Frenzy's extra Attack, a point of Weapon Skill, two of Leadership and four of walking pace, which is most of what the 50 was buying. What is left is the animal, and the animal is 30 — Leadership 5 and Independent besides, so it panics like an animal too, unless a vampire who keeps it is near.
 
 #field("The Porter", "")
 
@@ -1642,13 +1658,13 @@ And the wyrms do not get smaller as they get further from a dragon. The Great Wy
 
 #field("Emmerich", "")
 
-The price is the part worth arguing with. Adding up the items, powers and rules comes to 435, and that is not how the book prices anything. Konrad is 215 for a Magical Ward (5+), a Multiple Wounds (2) weapon and Red Fury. Vlad is 450 for a Level 3 with a Magical Ward (4+), a resurrection on a 2+ and 60 points of Vampiric Powers. Mannfred is 565 for a Level 4 who is a Loremaster in two Lores at once, with four Magic Items, before a 245-point Zombie Dragon is added. Strip the mounts out and Walach's half is about 470, Zacharias's about 475 and Vhordrai's about 370. And in every case the signature army rule is free: Walach's Grand Master, Mannfred's Drakenhof Guard and Vhordrai's Fist of Abhorash are all given away with the character.
+The price is the part worth arguing with. Adding up the items, powers and rules comes to 475, and that is not how the book prices anything. Konrad is 215 for a Magical Ward (5+), a Multiple Wounds (2) weapon and Red Fury. Vlad is 450 for a Level 3 with a Magical Ward (4+), a resurrection on a 2+ and 60 points of Vampiric Powers. Mannfred is 565 for a Level 4 who is a Loremaster in two Lores at once, with four Magic Items, before a 245-point Zombie Dragon is added. Strip the mounts out and Walach's half is about 470, Zacharias's about 475 and Vhordrai's about 370. And in every case the signature army rule is free: Walach's Grand Master, Mannfred's Drakenhof Guard and Vhordrai's Fist of Abhorash are all given away with the character.
 
-So this follows the book. Three hundred and seventy is 215 for a Blood Dragon Lord, 70 for the second level, 5 for the shield, 30 of Vampiric Powers and 50 of Magic Items - the same purchases a Blood Dragon Lord could make from the army list. The two Lores, the Marshal, the Pass Held and the Arithmetic are the character, and are not charged for, exactly as they are not charged for on Walach. A Blood Dragon Lord who spends his full 100 points on powers and items reaches 390, so Emmerich is twenty points under the most expensive one you could build. That is the fair objection to the entry, and it is the same objection every special character in the book invites.
+So this follows the book. Four hundred and ten is 215 for a Blood Dragon Lord, 70 for the second level, 5 for the shield, 55 of Vampiric Powers and 65 of Magic Items - the same purchases a Blood Dragon Lord could make from the army list, except that no Lord may make 120 points of them. The Hauberk's Magical Ward (5+) is fifteen of those, the step from a Talisman of Protection to a Talisman of Endurance. The point of Weapon Skill over a Lord, the two Lores, the Marshal, the Pass Held and the Arithmetic are the character, and are not charged for, exactly as Walach's Weapon Skill 9 and his Grand Master are not. A Blood Dragon Lord who spends his full 100 points on powers and items reaches 390, so Emmerich is twenty points over the most expensive one you could build, and that is the intent: the Marshal is more than the list can make, not a cheaper way to make it.
 
 What it is worth is set by the same thing the Pass Held answers below. Break tests are not Psychology tests, so Vampiric's Immunity (Psychology) never reaches them, and testing on his Leadership 10 rather than a unit's own 8 is the only general remedy this list has. The Pass Held fixes one unit outright; the Marshal decides how far the lesser version carries.
 
-The Marshal's Blade is 25 against Bretonnia's own scale, where the Lance of Artois is 15 points for Killing Blow restricted to turns in which the model charges and the Virtuous Lance is 25 for rather more. The restriction here is narrower than it looks, since Martial Honour puts him in a challenge whenever one can be had, and the Heroic part only earns its keep against a character on a Monster, where ordinary Killing Blow inflicts one Wound instead of removing the model. Whether a weapon that is inert outside a challenge is characterful or is a trap laid for the player is the question to settle.
+The Marshal's Blade is 25 against Bretonnia's own scale, where the Lance of Artois is 15 points for Killing Blow restricted to turns in which the model charges and the Virtuous Lance is 25 for rather more. The restriction here is narrower than it looks, since Martial Honour puts him in a challenge whenever one can be had, and the Heroic part only earns its keep against a character on a Monster, where ordinary Killing Blow inflicts one Wound instead of removing the model. Outside a challenge it is a hand weapon until he decides otherwise. Taken in both hands it gains a polearm's Strength, and the price is the shield in close combat: its +1 to the save and its Parry (6+). Blademaster's Parry stays, and Requires Two Hands leaves the shield working against shooting and magic. The choice cannot be undone in the battle, and that is what makes it one: a lord who could change his grip at every combat would simply take the better of the two each time. It is not priced separately, because the one-way choice is the cost.
 
 The Pass Held is the rule that answers this list's own argument. Why an Army of Infamy, above, sets out that Vampiric models are the only part of a Vampire Counts army that can be broken and the only part its magic cannot mend. A re-roll on Break tests for the unit he is standing in fixes precisely that, for precisely one unit, and the Arithmetic then forbids him from doing it for the fodder. The two clauses are one rule read from either end.
 
@@ -1660,7 +1676,7 @@ Six Wounds and 5 Attacks, one under a Star Dragon on each, so that the distance 
 
 Pricing the army's centrepiece up rather than down is deliberate. A list that turns out too cheap is an argument with the other players; a list that turns out too dear is an evening's arithmetic.
 
-Six hundred and ninety mounted sits above Vhordrai at 615 and below Zacharias at 720, which is the right neighbourhood. The Lords allowance is a quarter of the army, so on the Dam he wants a game of 2,760 points or larger, where on foot he is legal from 1,480, on a Nightmare from 1,560 and on a Great Wyrm from 2,340. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
+Seven hundred and thirty mounted sits above Vhordrai at 615 and Zacharias at 720 and below Mannfred on his Zombie Dragon at 810, which is the right neighbourhood. The Lords allowance is a quarter of the army, so on the Dam he wants a game of 2,920 points or larger, where on foot he is legal from 1,640, on a Nightmare from 1,720 and on a Great Wyrm from 2,500. That is the argument for the Dam being an option rather than fixed: at 2,000 points he can be fielded on foot and lead a line, and the biggest drake in the setting can wait for a bigger table.
 
 #field("Ankhara", "")
 
@@ -1674,7 +1690,7 @@ And the one thing deliberately not copied from Isabella: if Emmerich is slain, A
 
 #field("Renard", "")
 
-A special character should offer what the hero he is built on cannot, and a Kastellan carrying the Battle Standard offers very little in this army. The standard's Hold Your Ground re-rolls Panic and Break tests, and here Vampiric models take no Panic tests, the Undead pass their Break tests in any case, and the bats are Independent and may not use it. What is left is a second try at a failed Break test for the vampires, which Emmerich already gives the unit he stands in. Renard's answer is that his unit does not fail the test in the first place.
+A special character should offer what the hero he is built on cannot, and a Kastellan carrying the Battle Standard offers very little in this army. The standard's Hold Your Ground re-rolls Panic and Break tests, and here Vampiric models take no Panic tests, the Undead pass their Break tests in any case, and the bats are Independent and may use it only if the bearer has Not in the Tally. What is left is a second try at a failed Break test for the vampires, which Emmerich already gives the unit he stands in. Renard's answer is that his unit does not fail the test in the first place.
 
 Stubborn is a rule the corpus already prints for a character and his unit, in Tristan's wording in *Bretonnia* and in the Altar of the Horned Rat's in *Skaven*. The extra range of the standard is Ludwig Schwarzhelm's, whose standard gives him Hold Your Ground (18) in total.
 
@@ -1700,15 +1716,17 @@ Base contact rather than a radius, because that is where dread belongs. A 12" ra
 
 #field("The Ordo's powers", "")
 
-The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These five are aimed at that, and none of them is new to the game.
+The powers chapter came out of the pruning as thirteen entries, eleven of them ways to kill the man in front of you. What it had lost was everything reaching past the model's own base, which is a strange shape for a list whose own argument is that its vampires break and its magic cannot mend them. These six are aimed at that, and none of them is new to the game.
 
-Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. The bats need Emmerich for it. Independent models may never use Hold Your Ground, and both bat entries carry Independent from their troop type, so without Not in the Tally the one group that wants this power is the one group that cannot be given it. That is precisely the hole Why an Army of Infamy digs and then leaves open. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
+Kept Ground is Hold Your Ground (6), and it buys less here than in any book that has it. Undead units are Unstable, therefore Unbreakable, and pass Break tests automatically; Vampiric models carry Immunity (Psychology) and take no Panic tests at all. So in this army the power is a Break-test re-roll for the vampires and nothing else, plus Panic cover for the bats, who are the only models in the list with neither rule. The bats cannot have it. Independent models may never use Hold Your Ground, and both bat entries carry Independent from their troop type, so the one group that wants this power is the one group that cannot be given it. Not in the Tally opens that door for the Battle Standard Bearer alone, whose Hold Your Ground is the army's own, and leaves it shut for this. The price is the book's own, since the Infernal Standard sells the same rule for 25 points in the chapter after this one, and Dogs of War sells a general Inspiring Presence (6) for the same.
 
 On the Tally is Bretonnia's Virtue of Duty at Bretonnia's price, down to the clause barring the General from taking it. Combat resolution is the currency this list actually spends: it cannot run down what it breaks, so winning the shove and standing on the ground afterwards is the whole of how it scores.
 
 The Long Walk answers the matchup The Argument Against names as the one this list was built to lose. Bare Hatred is 15 points as a Dogs of War Quirk, and Bretonnia's Virtue of Noble Disdain is 15 for the same against missile troops with a Panic clause bundled in that would be dead here.
 
 Old Enough is Monstrous Mass, which this list cut along with the Strigoi, at the price the Strigoi paid for it. A vampire with three Wounds is not worn down in a challenge it may not refuse; it is removed once, by a Killing Blow or a Multiple Wounds weapon. Bretonnia charges 10 for the Mantle of the Damsel Elena, which is the same rule against Killing Blow and Poisoned Attacks.
+
+Not in the Tally is a power rather than an item so that any vampire can keep the bats, and not only the one carrying the right trinket. Twelve inches of Leadership to one keyword of Leadership 5 chaff is a narrow effect, so 15, and its reach is short on purpose: the bats have to be flown near the man they answer to. On the Battle Standard Bearer it lends Hold Your Ground as well, because that is the post that holds the army's nerve and the bats are the only models in the list with any nerve to lose. The General gets nothing extra, since the General's own Inspiring Presence was never the bats' to use.
 
 Drink Deep is the rule this book took away, sold back to the models it still works for. The Red Thirst now grants Regeneration instead of a Wound, which is worth having on a regiment and worth less on a lord with three Wounds and a challenge he may not refuse. The Scabbing Plate is the anchor at 35 points, being heavy armour and an automatic Wound back on an easier trigger. Fifteen for the same recovery on a 5+, with no armour and nothing else attached, sits where that leaves it.
 
@@ -1724,7 +1742,7 @@ The Standing Ration is the household issuing blood the field did not provide. Tw
 
 One item for each of the three keywords this list cares about, each priced against the book rather than against the other two.
 
-Weather Over the Keep is the Helm of Commandment read the other way round. That item is 25 points for a 6+ armour save and, while the wearer is out of combat, the loan of their Weapon Skill to one Undead unit within 12". In an Ordo Draconis the beneficiaries of that loan are the fodder, so the list opens a gap exactly where a household item should be. Lending Leadership to one keyword of Leadership 5 chaff is the narrower effect, so 15. It also gives the Chiropter clause something to do at the table rather than only in the list-building: his bats borrow his nerve.
+Weather Over the Keep is six inches more of Not in the Tally, and nothing on its own. A unit that has fled is still using the bearer's Leadership to rally if it is within range of him, so the reach is what a Rally test wants as well as a Panic test, and no separate re-roll was needed. Ten is a judgement, set under the power's fifteen because it is the smaller part of the effect.
 
 The Signal Fire is the one number here with nothing underneath it, since the book sells no deployment rule at any price. Thirty is reasoning rather than precedent: above the Pendant of the Fell Wind, which is 25 points for a permanent point of Movement on a character and any unit they are with, because a wing of Blood Wyrms arriving behind the line is worth more than that, and discounted for the two turns it spends off the table.
 
@@ -1772,7 +1790,7 @@ The Core-minimum clause is the cleanest thing here, and the keywords in it are d
 
 The difference is that it does not pay. Fell Bats are Leadership 5 at Toughness 3 with no armour save and no Undead rule, so they break and they panic where a knight would have held, and an all-bat Core is legal and bad, which is a different thing from legal and better.
 
-Emmerich is open to the objection every special character is. He is a better Blood Dragon Lord than the army list can build for less money: 370 against the 390 a Lord reaches when his full hundred points of powers and items are spent, with two Lores of Magic, three rules and a drawback on top. That is what a special character is for, and it is no worse than Walach, who is Weapon Skill 9 with a Magical Ward (5+).
+Emmerich is open to the objection every special character is. He is a better Blood Dragon Lord than the army list can build: 410 against the 390 a Lord reaches when his full hundred points of powers and items are spent, for 120 points of them, a point of Weapon Skill, two Lores of Magic, two rules and a drawback. That is what a special character is for, and it is no worse than Walach, who has the same Weapon Skill 9 and Magical Ward (5+) at about 470 on foot.
 
 The number to watch is not his cost but the Marshal's reach: eighteen inches of Leadership 10 on foot is generous, and the twenty-four he reaches on any of the larger mounts is a forty-eight-inch circle, arrived at through a rulebook clause about Line of Sight values rather than through anything written in his entry.
 
@@ -1780,11 +1798,11 @@ Ankhara has the objection that every paired character has, which is that half of
 
 Renard is the stickiest thing in the list, and that is the objection to him. A regiment of Sworn with him in it tests on its own Leadership whatever the combat result, and as the Battle Standard Bearer he re-rolls a failure as well. Old Enough takes away the quick answer to that, which is to kill him outright in a challenge. The smaller version would make the Line hold only while he carries the standard, which would also give the standard something to do in this army.
 
-The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, Emmerich cannot be fielded below 2,760 points, so the largest creature this project has written will almost never be seen. The Great Wyrm is what answers that in practice, being a Lord's mount at 215 that fits from 2,340, and the honest reading is that the Dam has become a trophy for a size of game nobody plays. Either that is what a centrepiece is, or she wanted a price that could reach a table.
+The Dam has the opposite problem and the move to 320 has sharpened it. Mounted, Emmerich cannot be fielded below 2,920 points, so the largest creature this project has written will almost never be seen. The Great Wyrm is what answers that in practice, being a Lord's mount at 215 that fits from 2,500, and the honest reading is that the Dam has become a trophy for a size of game nobody plays. Either that is what a centrepiece is, or she wanted a price that could reach a table.
 
 And taking the missile weapons out is a real loss of options for very little in return. A handful of entries lose a line each, in service of a theme rather than a mechanism. A Legion that could still bring crossbow-armed peasants would play almost identically.
 
-The five items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: fifteen points to make bats braver is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges.
+The five items are the newest thing in the chapter and the least tested. Weather Over the Keep is safe and probably dull: ten points to make bats braver at a greater distance is a purchase most lists will skip until everything else is bought. The Signal Fire is the one to attack, because 30 is a guess wearing the clothes of arithmetic, and a wing of Blood Wyrms arriving on a board edge on turn two, behind a gunline that has spent two turns shooting the household instead, may be worth a great deal more than any figure in this chapter. The Witnessed Oath is a Magical Ward (5+) on the model most likely to be in a challenge, in an army whose own rule forces it into challenges.
 
 And the Banner of the First Sworn puts Weapon Skill 7 and Initiative 6 on a regiment for 35 points, which is above the line where most things in the game stop hitting it on 3s; the Cathay and Araby anchors say the price is right, and neither of them was pricing it onto a 44-point model.
 
@@ -1794,7 +1812,7 @@ None of the five has a game behind it.
 
 #namecost("WHAT IT TOOK", "")
 
-A chapter of background, four new unit entries with an upgrade path shared between two of them, three special characters, seven Magic Items, five Vampiric Powers, one army rule rewritten, one requirement, one category move, one reduced profile sold at the printed price, and a paragraph in the rulebook.
+A chapter of background, four new unit entries with an upgrade path shared between two of them, three special characters, seven Magic Items, six Vampiric Powers, one army rule rewritten, one requirement, one category move, one reduced profile sold at the printed price, and a paragraph in the rulebook.
 
 That last is the part that was not about this list at all. The rulebook had no notion of an Army of Infamy, so the first one had to introduce the idea as well as the list, and _Choosing Your Army_ is where it went: a book may offer an alternative composition, both players should know which is in use before deployment, and such a composition may change which units count towards the Core minimum. That last clause is the one this list could not have been written without, since Choosing Your Army is where the quarter is set.
 
