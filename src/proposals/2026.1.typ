@@ -733,6 +733,74 @@ Proposals for #emph[Dark Elves 3.1]. The army has no House edition, so these are
   The Avatar of Khaine's Attacks rise from five to seven and its Stomp falls from the troop type's D6 at reach 3 to a single blow at reach 1, which is exactly neutral in total damage and moves it towards large targets, because its Attacks carry Killing Blow and feed *Wrath of Khaine* while its Stomp reads neither -- nor its Weapon Skill 6, the second-highest of any monster in the corpus. Its heavy armour becomes Natural Armour (4+) at the same value with the *Stone Construct* floor, on the reading that a metal statue is a body where a metal machine is plating. Nothing else changes and no rule is invented. 265 points, unchanged.
 ]
 
+= DWARFS
+
+Proposals for #emph[Dwarfs 3.11], and for the House edition of it where one stands.
+
+#proposal("The Peak Gate Guard leave the armour broken", status: "under discussion",
+  why: [
+  Hammerers are the King's guard and the army's armour-breakers: great weapons with Armour Piercing (1) on a Stubborn block. What they break stays with them. The Peak Gate Guard leave it broken for everyone else: an enemy unit that suffers an unsaved Wound from them in close combat suffers \-1 to its armour saves until the end of its next turn.
+
+  The job grows from killing armour to opening it for the line. Warriors or Longbeards who join the fight a turn later strike at a worse save than the enemy had when the Hammerers arrived.
+  ],
+  against: [
+  The penalty helps the Hammerers themselves only from the next turn, so most of its value goes to the units beside them. An army that fields the Guard alone gets little from it.
+  ],
+  cost: [
+  One upgrade record in a new Regiments of Renown chapter, and one sentence of rule.
+  ],
+)[
+  One unit of Hammerers may become the Peak Gate Guard, 0-1 per army, for +3 points per model. An enemy unit that suffers an unsaved Wound from them in close combat suffers \-1 to its armour saves until the end of its next turn. The name and the sundered armour are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Dragonback Slayers mark their quarry for the fire", status: "under discussion",
+  why: [
+  Troll Slayers wound anything on a 4+ and go looking for the biggest thing on the field to die against. The Dragonback Slayers have hunted dragons and carry the fire with them. They have Immunity (Flaming Attacks), and an enemy unit that suffers an unsaved Wound from them becomes Flammable for the rest of the game.
+
+  Flammable means every Flaming Attack against the unit may re-roll failed rolls To Wound. The Irondrakes' drakeguns and the Miners' blasting charges both carry Flaming Attacks, so the Slayers mark a monster for the army's fire as well as fighting it.
+  ],
+  against: [
+  This is the Chaos Dwarfs' Quakefire mark delivered in melee, and it is worth only as much fire as the army brings. A Dwarf list with no Irondrakes or Miners gets a Flammable target and nothing to burn it with.
+  ],
+  cost: [
+  One upgrade record and two sentences of rule, built from Flammable as the rulebook defines it.
+  ],
+)[
+  One unit of Troll Slayers may become the Dragonback Slayers, 0-1 per army, for +2 points per model. They have Immunity (Flaming Attacks), and an enemy unit that suffers an unsaved Wound from them becomes Flammable for the rest of the game. The name and the trick are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Skyhammer Squadron drops two bombs", status: "under discussion",
+  why: [
+  A Gyrobomber's Bombing Run drops one bomb under the large template on a unit it flew over. The Skyhammer Squadron carries a heavier rack: each Bombing Run drops two bombs on the same target, each placed and scattered separately, as the Helstorm scatters its templates.
+
+  The job does not change -- the Gyrobomber was already the army's bomber -- but what it can do to a block of infantry roughly doubles.
+  ],
+  against: [
+  This is the closest thing in the Dwarf set to a better copy. It is here because the Gyrobomber is the army's only bomber, and _Total War: Warhammer_'s regiment is that bomber with more bombs.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The Bomb Misfire chart is rolled once per bomb.
+  ],
+)[
+  One Gyrobomber may become the Skyhammer Squadron, 0-1 per army, for +30 points. Each Bombing Run drops two bombs on the target, each placed and scattered separately. The name and the heavier bombing are both taken from the regiment in _Total War: Warhammer_.
+]
+
+#proposal("The Oathgun answers the charge", status: "under discussion",
+  why: [
+  A Dwarf cannon is the gunline's anchor and its weak point at once. Grapeshot is Cumbersome, so the crew cannot use it to Stand and Shoot, and anything that reaches the gun meets three crewmen and no shot. The engineering runes already cover a great deal -- Strength, accuracy, reloading, misfires, monsters, a ward -- and none of them covers this.
+
+  The Oathgun's grapeshot loses Cumbersome. When it is charged, the crew may Stand and Shoot with grapeshot: twelve inches of Strength 5 at the unit coming for them. The gun keeps its full allowance of engineering runes.
+  ],
+  against: [
+  Grapeshot rolls the artillery dice, so a Stand and Shoot can misfire with the enemy already on the way, and twelve inches means a charger from further out arrives before it is in range of anything but the last of its move.
+  ],
+  cost: [
+  One upgrade record and one sentence of rule. The name is ours; _Total War: Warhammer_ has no Dwarf cannon regiment.
+  ],
+)[
+  One Cannon may become the Oathgun, 0-1 per army, for +25 points. Its grapeshot loses Cumbersome, so the crew may Stand and Shoot with it. It may still take engineering runes up to 50 points.
+]
+
 = EMPIRE
 
 Proposals for #emph[The Empire 3.1], and for the House edition of it where one stands.
