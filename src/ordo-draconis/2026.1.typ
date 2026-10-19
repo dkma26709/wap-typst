@@ -1690,7 +1690,7 @@ And the one thing deliberately not copied from Isabella: if Emmerich is slain, A
 
 #field("Renard", "")
 
-A special character should offer what the hero he is built on cannot, and a Kastellan carrying the Battle Standard offers very little in this army. The standard's Hold Your Ground re-rolls Panic and Break tests, and here Vampiric models take no Panic tests, the Undead pass their Break tests in any case, and the bats are Independent and may use it only if the bearer has Not in the Tally. What is left is a second try at a failed Break test for the vampires, which Emmerich already gives the unit he stands in. Renard's answer is that his unit does not fail the test in the first place.
+A special character should offer what the hero he is built on cannot, and a Kastellan carrying the Battle Standard offers very little in this army. The standard's Hold Your Ground re-rolls Panic and Break tests, and here Vampiric models take no Panic tests and the Undead pass their Break tests in any case. What is left is a second try at a failed Break test for the vampires, which Emmerich already gives the unit he stands in. Renard's answer is that his unit does not fail the test in the first place.
 
 Stubborn is a rule the corpus already prints for a character and his unit, in Tristan's wording in *Bretonnia* and in the Altar of the Horned Rat's in *Skaven*. The extra range of the standard is Ludwig Schwarzhelm's, whose standard gives him Hold Your Ground (18) in total.
 
