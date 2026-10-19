@@ -1772,18 +1772,18 @@ Proposals for #emph[Vampire Counts 3.0]. The army has no House edition, so these
 
 #proposal("The Chillgheists freeze the ground they ride over", status: "under discussion",
   why: [
-  Hexwraiths ride through units and kill with fire; they are Ethereal, Fast Cavalry and cause Terror. The Chillgheists bring a cold with them instead. They have Magic Resistance (1), and enemy units within 6" of them may not march.
+  Hexwraiths ride through units and kill with fire; they are Ethereal, Fast Cavalry and cause Terror. The Chillgheists bring a cold with them instead. They have Magic Resistance (1), and enemy units within 12" of them may not march.
 
-  A unit within 6" of an enemy already has to pass a Leadership test to march. Near the Chillgheists it cannot at all, so a fast, Ethereal unit that can park beside a flank holds that whole flank to its walking pace.
+  A unit within 6" of an enemy already has to pass a Leadership test to march. Near the Chillgheists it cannot march at all, and from twice that distance, so a fast, Ethereal unit that can park beside a flank holds that whole flank to its walking pace.
   ],
   against: [
-  Six inches is where the rulebook already asks for a test, so against a high-Leadership army the aura removes a test that was usually passed. If that proves too little, 12" is the obvious step, and it would make the regiment a real zone of cold rather than a refinement of a rule that is already there.
+  Twelve inches of no marching is a large zone, and on a unit that moves through other units and is hard to pin down it can freeze the centre of a battle line. The aura is the regiment, so the price has to be set by what it denies rather than by the Hexwraiths underneath.
   ],
   cost: [
   One upgrade record and one sentence of rule.
   ],
 )[
-  One unit of Hexwraiths may become the Chillgheists, 0-1 per army, for +6 points per model. They have Magic Resistance (1), and enemy units within 6" of them may not march. The name, the resistance and the slowing cold are all taken from the regiment in _Total War: Warhammer_.
+  One unit of Hexwraiths may become the Chillgheists, 0-1 per army, for +8 points per model. They have Magic Resistance (1), and enemy units within 12" of them may not march. The name, the resistance and the slowing cold are all taken from the regiment in _Total War: Warhammer_.
 ]
 
 #proposal("The Direpack pull down the big ones", status: "under discussion",
